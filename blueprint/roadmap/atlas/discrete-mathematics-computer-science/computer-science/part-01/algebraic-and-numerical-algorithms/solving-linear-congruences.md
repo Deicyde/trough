@@ -8,7 +8,7 @@ proof: formalized
 
 # Solving linear congruences
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html).
 
 ## Modular linear equation solver
 
@@ -24,7 +24,7 @@ times the Euclidean algorithm, started from $(r, r') = (n, a)$, replaces $(r, r'
 $(r' \bmod r, r)$ before $r$ becomes $0$: six arithmetic operations per such step, one
 divisibility test, four setup operations and three operations per returned residue.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver`, a definition declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver`, a definition declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver).
 
 ## Output of the modular linear equation solver
 
@@ -35,7 +35,7 @@ returned by the modular linear equation solver on $a$, $b$, $n$ is $[x_0, x_1, \
 with $x_i = \bigl((y \cdot (b / d)) \bmod n + i \cdot (n / d)\bigr) \bmod n$, where $r \bmod n$
 denotes the least nonnegative residue of $r$; otherwise it is the empty list.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-ret).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-ret).
 
 ## The solver returns exactly the solutions below $n$
 
@@ -43,7 +43,7 @@ Let $a > 0$ and $n > 0$ be natural
 numbers and $b$ an integer. A natural number $x$ occurs in the output of the modular linear
 equation solver on $a$, $b$, $n$ if and only if $x < n$ and $a x \equiv b \pmod{n}$.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_mem_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-mem-iff).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_mem_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-mem-iff).
 
 ## The solver returns no repeated residues
 
@@ -51,7 +51,7 @@ For natural numbers $a > 0$ and $n > 0$ and an
 integer $b$, the entries of the output of the modular linear equation solver on $a$, $b$, $n$ are
 pairwise distinct.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_nodup`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-nodup).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_nodup`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-nodup).
 
 ## Number of residues returned by the solver
 
@@ -59,7 +59,7 @@ For natural numbers $a > 0$ and $n > 0$ and an
 integer $b$, the output of the modular linear equation solver on $a$, $b$, $n$ has $\gcd(a, n)$
 entries if $\gcd(a, n)$ divides $b$, and no entries otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_length`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-length).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_length`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-length).
 
 ## The solver returns nothing exactly when $\gcd(a, n) \nmid b$
 
@@ -67,7 +67,7 @@ For natural numbers $a > 0$
 and $n > 0$ and an integer $b$, the modular linear equation solver on $a$, $b$, $n$ returns the
 empty array if and only if $\gcd(a, n)$ does not divide $b$.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_empty_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-empty-iff).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_empty_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-empty-iff).
 
 ## Cost bounds for the modular linear equation solver
 
@@ -78,7 +78,7 @@ $1 + c \le T \le 6(2 \lfloor \log_2 n \rfloor + 2) + 1 + c$.
 
 The cost counts arithmetic events, so this is the $O(\log n + \gcd(a, n))$ bound of the source.
 
-Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-time-boun).
+Formalized by `Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/NumberTheory/ModularLinearEquation.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html#modular-linear-equation-solver-time-boun).
 
 ## Depends on
 
@@ -87,4 +87,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Solving linear congruences](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/solving-linear-congruences)

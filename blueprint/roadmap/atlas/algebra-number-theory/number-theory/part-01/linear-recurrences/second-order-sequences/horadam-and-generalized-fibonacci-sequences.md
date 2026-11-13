@@ -8,7 +8,7 @@ proof: formalized
 
 # Horadam and generalized Fibonacci sequences
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html).
 
 ## Generalized Catalan identity for Horadam sequences
 
@@ -28,7 +28,7 @@ version is not claimed.
 
 - Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Proposition "Generalized Catalan Identity," lines 111–126 of <https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex>.
 
-Formalized by `MetaMathlibExt.horadam_generalized_catalan_identity`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HoradamGeneralizedCatalanIdentity.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HoradamGeneralizedCatalanIdentity.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#horadam-generalized-catalan-identity).
+Formalized by `MetaMathlibExt.horadam_generalized_catalan_identity`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HoradamGeneralizedCatalanIdentity.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HoradamGeneralizedCatalanIdentity.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#horadam-generalized-catalan-identity).
 
 ## Binet formula for generalized Fibonacci sequences
 
@@ -38,7 +38,7 @@ $s = \sqrt{p^2 + 4}$, and let $\alpha = (p + s)/2$ and $\beta = (p - s)/2$, the 
 $z^2 - pz - 1$. Then for every $n \ge 0$,
 $W_n = \frac{W_1 - W_0 \beta}{s} \alpha^n + \frac{W_0 \alpha - W_1}{s} \beta^n$.
 
-Formalized by `MetaMathlibExt.generalizedFibonacci_binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-binet).
+Formalized by `MetaMathlibExt.generalizedFibonacci_binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-binet).
 
 ## Mixed identity for generalized Fibonacci sequences
 
@@ -47,7 +47,7 @@ $W, F : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{k+2} = p W_{k+1} + W_k$ and
 $F_{k+2} = p F_{k+1} + F_k$ for every integer $k$, with $F_0 = 0$ and $F_1 = 1$. Then for all
 integers $m$ and $n$, $F_{m-2} W_{n-2} - F_{m-3} W_{n-1} = (-1)^{m-1} W_{n-m+1}$.
 
-Formalized by `MetaMathlibExt.generalizedFibonacci_mixed_identity`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-mixed-identity).
+Formalized by `MetaMathlibExt.generalizedFibonacci_mixed_identity`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-mixed-identity).
 
 ## Cassini identity for generalized Fibonacci sequences
 
@@ -56,7 +56,7 @@ $p \in R$, and let $(W_k)_{k \ge 0}$ be a sequence in $R$ with $W_{k+2} = p W_{k
 all $k \ge 0$. Then for every $n \ge 0$,
 $W_n W_{n+2} - W_{n+1}^2 = (-1)^n (W_0^2 + p W_0 W_1 - W_1^2)$.
 
-Formalized by `MetaMathlibExt.generalizedFibonacci_cassini`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-cassini).
+Formalized by `MetaMathlibExt.generalizedFibonacci_cassini`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-cassini).
 
 ## Ratio limit for generalized Fibonacci sequences
 
@@ -65,7 +65,7 @@ $(W_k)_{k \ge 0}$ be a real sequence with $W_0 \ge 0$, $W_1 > 0$ and
 $W_{k+2} = p W_{k+1} + W_k$ for all $k \ge 0$. Then $W_{k+1}/W_k$ tends to
 $(p + \sqrt{p^2 + 4})/2$ as $k \to \infty$.
 
-Formalized by `MetaMathlibExt.generalizedFibonacci_tendsto_ratio`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-tendsto-ratio).
+Formalized by `MetaMathlibExt.generalizedFibonacci_tendsto_ratio`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-tendsto-ratio).
 
 ## Binet, Cassini, mixed identity and ratio limit for generalized Fibonacci sequences
 
@@ -85,7 +85,7 @@ hypotheses; in particular the mixed identity holds for all integers $m$ and $n$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas, and Mohammed Mekkaoui, "Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers," Journal of Integer Sequences 29 (2026), Article 26.2.5, preliminary-results lemma, lines 192–200, https://cs.uwaterloo.ca/journals/JIS/VOL29/Djellas/djellas7.tex
 
-Formalized by `MetaMathlibExt.generalizedFibonacci_binet_cassini_and_ratio_limit`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-binet-cassini-and).
+Formalized by `MetaMathlibExt.generalizedFibonacci_binet_cassini_and_ratio_limit`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedFibonacciIdentities.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html#generalized-fibonacci-binet-cassini-and).
 
 ## Depends on
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Horadam and generalized Fibonacci sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/horadam-and-generalized-fibonacci-sequences)

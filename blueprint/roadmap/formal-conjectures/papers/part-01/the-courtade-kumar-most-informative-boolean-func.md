@@ -57,7 +57,7 @@ statement: formalized
 >   Courtade–Kumar Conjecture and Multibit Extensions*,
 >   [arXiv:2609.26444](https://arxiv.org/abs/2609.26444).
 
-*Quoted from [FormalConjectures/Paper/CourtadeKumar.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CourtadeKumar.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/CourtadeKumar.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CourtadeKumar.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved. It also has 2 test statements and 4 API statements, counted here but not shown.
 
@@ -73,7 +73,7 @@ theorem courtade_kumar (n : ℕ) (f : Cube n → Bool) (p : ℝ) (hp₀ : 0 ≤ 
     mutualInfo f p ≤ 1 - binEntropyBits p
 ```
 
-Category `research solved`; AMS [94 Information and communication, circuits](../../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/Paper/CourtadeKumar.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CourtadeKumar.lean#L119).
+Category `research solved`; AMS [94 Information and communication, circuits](../../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/Paper/CourtadeKumar.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CourtadeKumar.lean#L119).
 
 ## `CourtadeKumar.variants.courtade_kumar_random_variable`
 
@@ -111,7 +111,7 @@ theorem courtade_kumar_random_variable :
       InformationTheory.mutualInformationBits μ (f ∘ X) Y ≤ 1 - binEntropyBits p
 ```
 
-Category `research solved`; AMS [94 Information and communication, circuits](../../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/Paper/CourtadeKumar.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CourtadeKumar.lean#L164).
+Category `research solved`; AMS [94 Information and communication, circuits](../../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/Paper/CourtadeKumar.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CourtadeKumar.lean#L164).
 
 ## Depends on
 
@@ -119,5 +119,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/CourtadeKumar.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CourtadeKumar.lean)
+- [FormalConjectures/Paper/CourtadeKumar.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CourtadeKumar.lean)
 - [arXiv:2609.24931](https://arxiv.org/abs/2609.24931)

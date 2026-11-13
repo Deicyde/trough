@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.17 Closed immersions between smooth schemes
 
-Section 37.17 of the Stacks Project, [Tag 0H1G](https://stacks.math.columbia.edu/tag/0H1G). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.17 of the Stacks Project, [Tag 0H1G](https://stacks.math.columbia.edu/tag/0H1G). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FUE, a lemma
 
 [Tag 0FUE](https://stacks.math.columbia.edu/tag/0FUE) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_etale_coordinateSubspaceEmbedding_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SmoothClosedImmersionCoordinates.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SmoothClosedImmersionCoordinates.lean#L1010).
+**`Stacks.AlgebraicGeometry.exists_etale_coordinateSubspaceEmbedding_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SmoothClosedImmersionCoordinates.lean, line 1009](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SmoothClosedImmersionCoordinates.lean#L1009).
 
 > **Stacks Project, Tag 0FUE.** Let `S` be a scheme and let `i : Y ⟶ X` be a closed immersion
 > of schemes smooth over `S`. For every `y : Y` there are integers `m, n ≥ 0`, an open
@@ -45,7 +45,7 @@ theorem exists_etale_coordinateSubspaceEmbedding_isPullback
 
 [Tag 0H1H](https://stacks.math.columbia.edu/tag/0H1H) in the Stacks Project.
 
-**`Stacks.MoreMorphisms.coordinateEmbedding_ker_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L139). The attribute's comment: “ideal of the center”.
+**`Stacks.MoreMorphisms.coordinateEmbedding_ker_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L139). The attribute's comment: “ideal of the center”.
 
 > The scheme-theoretic centre is cut out by exactly the last `n` coordinates.
 
@@ -54,7 +54,7 @@ public theorem coordinateEmbedding_ker_eq_span :
     coordinateRingIdeal R m n = RingHom.ker (coordinateProjection R m n)
 ```
 
-**`Stacks.MoreMorphisms.coordinateChart_equiv_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L406). The attribute's comment: “polynomial affine blowup charts”.
+**`Stacks.MoreMorphisms.coordinateChart_equiv_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L406). The attribute's comment: “polynomial affine blowup charts”.
 
 > The `i`-th standard blowup chart is polynomial affine space, with its original coordinates
 > given by `x_k`, `y_i`, and `y_j = y_i t_j`.
@@ -76,7 +76,7 @@ public theorem coordinateChart_equiv_polynomial :
           X (Sum.inr (Sum.inl ())) * X (Sum.inr (Sum.inr ⟨j, h⟩)))
 ```
 
-**`Stacks.MoreMorphisms.coordinateChart_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L435). The attribute's comment: “equation of the exceptional divisor in each chart”.
+**`Stacks.MoreMorphisms.coordinateChart_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowup.lean#L435). The attribute's comment: “equation of the exceptional divisor in each chart”.
 
 > On the `i`-th affine chart, the exceptional ideal is generated by the single coordinate
 > `y_i`.
@@ -89,7 +89,7 @@ public theorem coordinateChart_exceptionalIdeal (i : Fin n) :
         (X (Sum.inr i)))}
 ```
 
-**`Stacks.MoreMorphisms.blowUp_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowupSmooth.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowupSmooth.lean#L548). The attribute's comment: “smoothness of the blowup”.
+**`Stacks.MoreMorphisms.blowUp_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowupSmooth.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateBlowupSmooth.lean#L548). The attribute's comment: “smoothness of the blowup”.
 
 > **Stacks Project, Tag 0H1H.** The blowup of affine `(m + n)`-space along the coordinate
 > affine `m`-subspace is smooth over the base ring.
@@ -103,7 +103,7 @@ public theorem blowUp_smooth (_hn : 0 < n) :
       Spec.map (CommRingCat.ofHom (C : R →+* MvPolynomial (Fin m ⊕ Fin n) R)))
 ```
 
-**`Stacks.MoreMorphisms.exceptionalDivisor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateExceptionalSmooth.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateExceptionalSmooth.lean#L552). The attribute's comment: “smoothness of the exceptional divisor”.
+**`Stacks.MoreMorphisms.exceptionalDivisor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateExceptionalSmooth.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateExceptionalSmooth.lean#L553). The attribute's comment: “smoothness of the exceptional divisor”.
 
 > The exceptional divisor of the blowup of affine `(m + n)`-space along the coordinate affine
 > `m`-subspace is smooth over the base ring.
@@ -118,7 +118,7 @@ public theorem exceptionalDivisor_smooth (_hn : 0 < n) :
       Spec.map (CommRingCat.ofHom (C : R →+* MvPolynomial (Fin m ⊕ Fin n) R)))
 ```
 
-**`Stacks.MoreMorphisms.exists_coordinateReesPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean#L43). The attribute's comment: “the Rees algebra is A[T]/(y\_i T\_j - y\_j T\_i)”.
+**`Stacks.MoreMorphisms.exists_coordinateReesPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean#L43). The attribute's comment: “the Rees algebra is A[T]/(y\_i T\_j - y\_j T\_i)”.
 
 > The Rees algebra of `A = R[x₁,…,x_m,y₁,…,y_n]` with respect to the ideal `(y₁,…,y_n)` is
 > `A[T₁,…,T_n]/(y_i T_j − y_j T_i)`, with `T_i` going to the degree-one element `y_i`.
@@ -134,7 +134,7 @@ public theorem exists_coordinateReesPresentation :
           Polynomial.monomial 1 (X (Sum.inr j))
 ```
 
-**`Stacks.MoreMorphisms.coordinateEmbedding_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateSubspace.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateSubspace.lean#L78). The attribute's comment: “coordinate closed immersion”.
+**`Stacks.MoreMorphisms.coordinateEmbedding_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateSubspace.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateSubspace.lean#L78). The attribute's comment: “coordinate closed immersion”.
 
 > The coordinate affine subspace is closed in the ambient affine space.
 
@@ -147,7 +147,7 @@ public theorem coordinateEmbedding_isClosedImmersion (R : Type*) [CommRing R] (m
 
 [Tag 0FUT](https://stacks.math.columbia.edu/tag/0FUT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.smooth_exceptionalDivisor_isoProjectiveBundle_twistOne_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalProjectiveBundle.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalProjectiveBundle.lean#L408). The attribute's comment: “all four assertions, for a closed immersion of schemes smooth over the base”.
+**`Stacks.AlgebraicGeometry.smooth_exceptionalDivisor_isoProjectiveBundle_twistOne_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalProjectiveBundle.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalProjectiveBundle.lean#L408). The attribute's comment: “all four assertions, for a closed immersion of schemes smooth over the base”.
 
 > **Stacks Project, Tag 0FUT.**  Let `S` be a scheme and let `i : Z ⟶ X` be a closed immersion
 > of schemes smooth over `S`, with ideal sheaf `ℐ = ker(i) ⊂ 𝒪_X`.  Let `b : X' ⟶ X` be the blowup
@@ -188,7 +188,7 @@ theorem smooth_exceptionalDivisor_isoProjectiveBundle_twistOne_of_isClosedImmers
                     (exceptionalIdealModule i.ker))
 ```
 
-**`Stacks.AlgebraicGeometry.smooth_blowUpToBase_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/SmoothCentre.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/SmoothCentre.lean#L377). The attribute's comment: “smoothness of the blowup”. References: SGA 7 II (2.1), “more general”; SGA 7 XVIII (2.1), “Smoothness of tilde X”; SGA 7 XVIII (3.1), “more general”.
+**`Stacks.AlgebraicGeometry.smooth_blowUpToBase_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/SmoothCentre.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/SmoothCentre.lean#L377). The attribute's comment: “smoothness of the blowup”. References: SGA 7 II (2.1), “more general”; SGA 7 XVIII (2.1), “Smoothness of tilde X”; SGA 7 XVIII (3.1), “more general”.
 
 > **Stacks Project, Tag 0FUT**, first assertion. Let `S` be a scheme and let `i : Z ⟶ X` be a
 > closed immersion of schemes smooth over `S`. Then the blowup of `X` in `Z` is smooth over `S`.
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.17, Tag 0H1G](https://stacks.math.columbia.edu/tag/0H1G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

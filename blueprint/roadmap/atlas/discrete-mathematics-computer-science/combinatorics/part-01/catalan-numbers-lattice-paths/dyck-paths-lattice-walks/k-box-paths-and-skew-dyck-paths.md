@@ -7,7 +7,7 @@ statement: formalized
 
 # k-box paths and skew Dyck paths
 
-35 results, 22 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html).
+35 results, 22 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html).
 
 ## Skew Dyck steps
 
@@ -18,7 +18,7 @@ $U = (1,1)$, the down step $D = (1,-1)$ and the left step $L = (-1,-1)$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 1.
 
-Formalized by `MetaMathlibExt.SkewDyckStep`, an inductive type declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-dyck-step).
+Formalized by `MetaMathlibExt.SkewDyckStep`, an inductive type declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-dyck-step).
 
 ## Skew Dyck words
 
@@ -31,7 +31,7 @@ $U$s.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 1.
 
-Formalized by `MetaMathlibExt.IsSkewDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#is-skew-dyck-word).
+Formalized by `MetaMathlibExt.IsSkewDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#is-skew-dyck-word).
 
 ## Skew Dyck paths of semilength $m$
 
@@ -44,7 +44,7 @@ together than $U$s.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 1.
 
-Formalized by `MetaMathlibExt.skewDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-dyck-words).
+Formalized by `MetaMathlibExt.skewDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-dyck-words).
 
 ## Three skew Dyck paths of semilength $2$
 
@@ -57,7 +57,7 @@ They are $UUDD$, $UDUD$ and $UUDL$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 1.
 
-Formalized by `MetaMathlibExt.card_skewDyckWords_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-skew-dyck-words-two).
+Formalized by `MetaMathlibExt.card_skewDyckWords_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-skew-dyck-words-two).
 
 ## Occurrences of a factor in a skew Dyck word
 
@@ -71,7 +71,7 @@ being counted; in particular the empty word has factor count $|w| + 1$ in $w$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 1.
 
-Formalized by `MetaMathlibExt.skewFactorCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-factor-count).
+Formalized by `MetaMathlibExt.skewFactorCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-factor-count).
 
 ## The $k$-box factor
 
@@ -82,7 +82,7 @@ Dyck steps: one step $U$, then $k$ steps $D$, then one step $L$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 3.
 
-Formalized by `MetaMathlibExt.boxFactor`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-factor).
+Formalized by `MetaMathlibExt.boxFactor`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-factor).
 
 ## $k$-box paths
 
@@ -95,7 +95,7 @@ consists of the empty path alone.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 3.
 
-Formalized by `MetaMathlibExt.kBoxPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths).
+Formalized by `MetaMathlibExt.kBoxPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths).
 
 ## The $1$-box path of size $1$
 
@@ -105,7 +105,7 @@ The only $1$-box path of size $1$ is $UUDL$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 3.
 
-Formalized by `MetaMathlibExt.kBoxPaths_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-one-one).
+Formalized by `MetaMathlibExt.kBoxPaths_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-one-one).
 
 ## Box words
 
@@ -123,7 +123,7 @@ list it is $D^k L$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 2.
 
-Formalized by `MetaMathlibExt.boxWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-word).
+Formalized by `MetaMathlibExt.boxWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-word).
 
 ## The box word for $k = 1$ and $a = (3, 2)$
 
@@ -134,7 +134,7 @@ $U^{a_1} D^k L D \, U^{a_2} D^k L$ equals $UUUDLDUUDL$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 2.
 
-Formalized by `MetaMathlibExt.boxWord_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-word-one-three-two).
+Formalized by `MetaMathlibExt.boxWord_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#box-word-one-three-two).
 
 ## $k$-Dyck words
 
@@ -150,7 +150,7 @@ $D^{(k)} = (k,-k)$, this says that the path ends on the $x$-axis and never goes 
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
 
-Formalized by `MetaMathlibExt.IsKDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#is-kdyck-word).
+Formalized by `MetaMathlibExt.IsKDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#is-kdyck-word).
 
 ## $k$-Dyck paths of size $n$
 
@@ -163,7 +163,7 @@ $k$ times as many $U$s as $D^{(k)}$s.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
 
-Formalized by `MetaMathlibExt.kDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-dyck-words).
+Formalized by `MetaMathlibExt.kDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-dyck-words).
 
 ## Three $2$-Dyck paths of size $2$
 
@@ -173,7 +173,7 @@ The number of $2$-Dyck paths of size $2$ is $3$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
 
-Formalized by `MetaMathlibExt.card_kDyckWords_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-dyck-words-two-two).
+Formalized by `MetaMathlibExt.card_kDyckWords_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-dyck-words-two-two).
 
 ## Augmentation of a $k$-Dyck word
 
@@ -187,7 +187,7 @@ replacing each letter $D^{(k)}$ by $U D^{k-1} L D$, where $D^{k-1}$ means $k - 1
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
 
-Formalized by `MetaMathlibExt.augmentKDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augment-kdyck-word).
+Formalized by `MetaMathlibExt.augmentKDyckWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augment-kdyck-word).
 
 ## Augmented $k$-Dyck paths
 
@@ -207,7 +207,7 @@ The definition is used for $k \ge 2$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 2.
 
-Formalized by `MetaMathlibExt.augmentedKDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-paths).
+Formalized by `MetaMathlibExt.augmentedKDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-paths).
 
 ## Returns of a skew Dyck word
 
@@ -220,7 +220,7 @@ prefixes of $w$ that contain as many $U$ steps as $D$ and $L$ steps together.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 3.
 
-Formalized by `MetaMathlibExt.skewReturns`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-returns).
+Formalized by `MetaMathlibExt.skewReturns`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-returns).
 
 ## Long ascents of a skew Dyck word
 
@@ -232,7 +232,7 @@ count of $w$ is the number of long ascents of $w$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 7.
 
-Formalized by `MetaMathlibExt.skewLongAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-long-ascents).
+Formalized by `MetaMathlibExt.skewLongAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-long-ascents).
 
 ## Returns and long ascents of an example skew Dyck path
 
@@ -245,7 +245,7 @@ This is the source's example of a skew Dyck path.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Figure 1.
 
-Formalized by `MetaMathlibExt.skewReturns_skewLongAscents_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-returns-skew-long-ascents-example).
+Formalized by `MetaMathlibExt.skewReturns_skewLongAscents_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#skew-returns-skew-long-ascents-example).
 
 ## Generating function of augmented $k$-Dyck paths
 
@@ -261,7 +261,7 @@ $$
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 6.
 
-Formalized by `MetaMathlibExt.augmentedKDyckGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-gf).
+Formalized by `MetaMathlibExt.augmentedKDyckGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-gf).
 
 ## Generating function of $k$-box paths by returns
 
@@ -275,7 +275,7 @@ $F_k(t, x) = \sum_{n \ge 1} \sum_{\mu \in B_n^{(k)}} t^{\operatorname{ret}(\mu)}
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 6.
 
-Formalized by `MetaMathlibExt.kBoxReturnGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-return-gf).
+Formalized by `MetaMathlibExt.kBoxReturnGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-return-gf).
 
 ## Long-ascent generating function of $k$-box paths
 
@@ -293,7 +293,7 @@ in $\mathbb{Z}[t][[x]]$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 7.
 
-Formalized by `MetaMathlibExt.kBoxLongAscentGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-long-ascent-gf).
+Formalized by `MetaMathlibExt.kBoxLongAscentGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-long-ascent-gf).
 
 ## Long-ascent generating function of augmented $k$-Dyck paths
 
@@ -312,7 +312,7 @@ in $\mathbb{Z}[t][[x]]$. Its constant term is $1$, coming from the empty path.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Section 7.
 
-Formalized by `MetaMathlibExt.augmentedKDyckLongAscentGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-long-ascent-gf).
+Formalized by `MetaMathlibExt.augmentedKDyckLongAscentGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#augmented-kdyck-long-ascent-gf).
 
 ## Minimal semilength of skew Dyck paths with $n$ box factors
 
@@ -325,7 +325,7 @@ $U D^k L$ has semilength at least $(k+2)n - 1$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 1 (`jis-2024-24.2.4-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.min_semilength_boxFactor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#min-semilength-box-factor).
+Stated but not proved: `MetaMathlibExt.min_semilength_boxFactor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#min-semilength-box-factor).
 
 ## Structure of $k$-box paths
 
@@ -340,7 +340,7 @@ has more $D$s and $L$s together than $U$s, then $w_k(a)$ is a $k$-box path of si
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 2 (`jis-2024-24.2.4-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.kBoxPaths_structure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-structure).
+Stated but not proved: `MetaMathlibExt.kBoxPaths_structure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-structure).
 
 ## Decomposition of $k$-box paths
 
@@ -352,7 +352,7 @@ for some augmented $(k+1)$-Dyck paths $\mu_1, \ldots, \mu_{k+1}$, each of some s
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 4 (`jis-2024-24.2.4-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.kBoxPaths_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-decomposition).
+Stated but not proved: `MetaMathlibExt.kBoxPaths_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-decomposition).
 
 ## Number of $k$-box paths of size $n$
 
@@ -376,7 +376,7 @@ with $n - 1$ nodes; that identification is not part of this statement.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Theorem 5 (`jis-2024-24.2.4-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.card_kBoxPaths` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths).
+Stated but not proved: `MetaMathlibExt.card_kBoxPaths` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths).
 
 ## Counting tailed $k$-box paths
 
@@ -389,7 +389,7 @@ $(n-1) \cdot T = \binom{(k+2)(n-1)}{n-2}$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 7 (`jis-2024-24.2.4-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.card_tailed_kBoxPaths` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-tailed-k-box-paths).
+Stated but not proved: `MetaMathlibExt.card_tailed_kBoxPaths` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-tailed-k-box-paths).
 
 ## Functional equation for the returns generating function
 
@@ -405,7 +405,7 @@ $$\bigl(1 - t x G_{k+1}^{k+1}\bigr) F_k = t x G_{k+1}^k.$$
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 8 (`jis-2024-24.2.4-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.kBoxReturnGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-return-gf-eq).
+Stated but not proved: `MetaMathlibExt.kBoxReturnGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-return-gf-eq).
 
 ## Number of $k$-box paths with $j$ returns
 
@@ -426,7 +426,7 @@ $$
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Theorem 9 (`jis-2024-24.2.4-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.card_kBoxPaths_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths-returns).
+Stated but not proved: `MetaMathlibExt.card_kBoxPaths_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths-returns).
 
 ## Mean and variance of the number of returns of $k$-box paths
 
@@ -444,7 +444,7 @@ $$\frac{(k+2)((k+2)n-1)((2k+1)(k+1)n-2)(n-1)}{(k+1)^2((k+1)n+1)^2((k+1)n+2)}.$$
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Corollary 11 (`jis-2024-24.2.4-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.kBoxPaths_returns_mean_variance` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-returns-mean-variance).
+Stated but not proved: `MetaMathlibExt.kBoxPaths_returns_mean_variance` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-returns-mean-variance).
 
 ## Long-ascent functional equations for $k$-box paths
 
@@ -469,7 +469,7 @@ The source's displayed sum for $\acute G_k$ omits the empty path; here $\acute G
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 12 (`jis-2024-24.2.4-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.kBoxLongAscentGF_functional_equations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-long-ascent-gf-functional-equation).
+Stated but not proved: `MetaMathlibExt.kBoxLongAscentGF_functional_equations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-long-ascent-gf-functional-equation).
 
 ## Number of $k$-box paths with $j$ long ascents
 
@@ -487,7 +487,7 @@ For $j > n$ both sides vanish.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Theorem 13 (`jis-2024-24.2.4-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.card_kBoxPaths_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths-long-ascents).
+Stated but not proved: `MetaMathlibExt.card_kBoxPaths_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#card-k-box-paths-long-ascents).
 
 ## Second polygonal numbers count box paths with two long ascents
 
@@ -504,7 +504,7 @@ paths.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Theorem 15 (`jis-2024-24.2.4-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.second_polygonal_eq_card_kBoxPaths_two_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#second-polygonal-eq-card-k-box-paths-two).
+Stated but not proved: `MetaMathlibExt.second_polygonal_eq_card_kBoxPaths_two_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#second-polygonal-eq-card-k-box-paths-two).
 
 ## Long ascents of box paths: sum and sum of squares
 
@@ -527,7 +527,7 @@ the cleared form reads $0 = 0$.
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Lemma 17 (`jis-2024-24.2.4-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.sum_kBoxPaths_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#sum-k-box-paths-long-ascents).
+Stated but not proved: `MetaMathlibExt.sum_kBoxPaths_longAscents` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#sum-k-box-paths-long-ascents).
 
 ## Mean and variance of long ascents in $k$-box paths
 
@@ -550,7 +550,7 @@ When $k = n = 1$ the variance is $0$, and the last fraction reads $0/0$, which i
 
 - Zhang and Zhuang, *A Subfamily of Skew Dyck Paths Related to `k`-ary Trees*, Journal of Integer Sequences 27 (2024), Article 24.2.4, Proposition 18 (`jis-2024-24.2.4-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.kBoxPaths_longAscents_mean_variance` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-long-ascents-mean-variance).
+Stated but not proved: `MetaMathlibExt.kBoxPaths_longAscents_mean_variance` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KBoxPathsWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html#k-box-paths-long-ascents-mean-variance).
 
 ## Depends on
 
@@ -559,4 +559,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: k-box paths and skew Dyck paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/k-box-paths-and-skew-dyck-paths)

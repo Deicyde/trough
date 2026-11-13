@@ -20,7 +20,7 @@ statement: formalized
 > - [KST54] Kővári, T. and Sós, V. T. and Turán, P., *On a problem of K. Zarankiewicz*.
 >   Colloq. Math. (1954), 50-57.
 
-*Quoted from [FormalConjectures/ErdosProblems/573.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/573.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/573.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/573.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/573](https://www.erdosproblems.com/573).
 
@@ -46,7 +46,7 @@ theorem erdos_573 :
       fun n : ℕ ↦ ((n : ℝ) / 2) ^ (3 / 2 : ℝ)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/573.lean#L65).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/573.lean#L65).
 
 ## `Erdos573.erdos_573.variants.c4_c5`
 
@@ -64,7 +64,7 @@ theorem erdos_573.variants.c4_c5 :
       (cycleExtremalNumber {4, 5} n : ℝ) ≤ ((n : ℝ) / 2) ^ (3 / 2 : ℝ) + C * n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/573.lean#L77).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/573.lean#L77).
 
 ## `Erdos573.erdos_573.variants.kst`
 
@@ -85,7 +85,7 @@ theorem erdos_573.variants.kst :
       fun n : ℕ ↦ ((n : ℝ) / 2) ^ (3 / 2 : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/573.lean#L91).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/573.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/573.lean#L91).
 
 ## Depends on
 
@@ -93,5 +93,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/573.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/573.lean)
+- [FormalConjectures/ErdosProblems/573.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/573.lean)
 - [erdosproblems.com/573](https://www.erdosproblems.com/573)

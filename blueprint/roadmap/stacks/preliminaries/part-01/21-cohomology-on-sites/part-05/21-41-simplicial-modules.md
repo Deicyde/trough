@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.41 Simplicial modules
 
-Section 21.41 of the Stacks Project, [Tag 09D0](https://stacks.math.columbia.edu/tag/09D0). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.41 of the Stacks Project, [Tag 09D0](https://stacks.math.columbia.edu/tag/09D0). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09D0, the section
 
 [Tag 09D0](https://stacks.math.columbia.edu/tag/09D0) in the Stacks Project.
 
-**`Stacks.SimplicialModules.derivedProjectionLowerShriekIsoMooreComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplex.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplex.lean#L496). The attribute's comment: “Lπ\_!(ℱ\_•) is represented by the alternating-face-map complex s(ℱ\_•) of the simplicial abelian sheaf ℱ\_•, for every abelian sheaf on Δ × C — in particular for the underlying abelian sheaf of a simplicial A\_•-module over any simplicial sheaf of rings A\_•, the Lπ\_! of the section being the abelian one of Remark 09CY. Proved from Stacks 08PJ's two inputs as the source directs: the acyclicity of π\_! and the Moore computation over Δ”.
+**`Stacks.SimplicialModules.derivedProjectionLowerShriekIsoMooreComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplex.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplex.lean#L496). The attribute's comment: “Lπ\_!(ℱ\_•) is represented by the alternating-face-map complex s(ℱ\_•) of the simplicial abelian sheaf ℱ\_•, for every abelian sheaf on Δ × C — in particular for the underlying abelian sheaf of a simplicial A\_•-module over any simplicial sheaf of rings A\_•, the Lπ\_! of the section being the abelian one of Remark 09CY. Proved from Stacks 08PJ's two inputs as the source directs: the acyclicity of π\_! and the Moore computation over Δ”.
 
 > **Stacks 09D0.** Let `(C, J)` be a small site and let `Δ × C` carry the topology inherited
 > from `(C, J)` along the projection `π : Δ × C ⥤ C`. For every sheaf of abelian groups `ℱ` on
@@ -45,7 +45,7 @@ def derivedProjectionLowerShriekIsoMooreComplex
           (Sheaf J AddCommGrpCat.{w})).obj ((fibrewise J AddCommGrpCat.{w}).obj F))
 ```
 
-**`Stacks.SimplicialModules.derivedProjectionLowerShriekIsoMooreComplexModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplexModules.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplexModules.lean#L236). The attribute's comment: “the MODULE-coefficient representation: for a simplicial sheaf of O-modules ℱ\_•, equivalently a sheaf of π^\{-1}O-modules on Δ × C, Lπ\_!(ℱ\_•) is represented by the associated chain complex s(ℱ\_•) in D(O). This is the form in which the untagged paragraph of Section 09D0 is used by Tag 09DH, whose triangle lives in D(ℬ); the abelian registration beside it, derivedProjectionLowerShriekIsoMooreComplex, cannot reach it because derived lower shriek does not commute with forgetting the module structure”.
+**`Stacks.SimplicialModules.derivedProjectionLowerShriekIsoMooreComplexModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplexModules.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/DerivedProjectionMooreComplexModules.lean#L236). The attribute's comment: “the MODULE-coefficient representation: for a simplicial sheaf of O-modules ℱ\_•, equivalently a sheaf of π^\{-1}O-modules on Δ × C, Lπ\_!(ℱ\_•) is represented by the associated chain complex s(ℱ\_•) in D(O). This is the form in which the untagged paragraph of Section 09D0 is used by Tag 09DH, whose triangle lives in D(ℬ); the abelian registration beside it, derivedProjectionLowerShriekIsoMooreComplex, cannot reach it because derived lower shriek does not commute with forgetting the module structure”.
 
 > **Stacks 09D0 at module coefficients.** Let `(C, J)` be a small site, let `O` be a sheaf of
 > rings on it and let `Δ × C` carry the topology inherited from `(C, J)` along the projection
@@ -77,7 +77,7 @@ def derivedProjectionLowerShriekIsoMooreComplexModules
           (SheafOfModules.{w} O)).obj ((fibrewiseMod C J O).obj F))
 ```
 
-**`Stacks.SimplicialModules.simplicialSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSheafEquivalence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSheafEquivalence.lean#L362). The attribute's comment: “a simplicial sheaf on C is the same thing as a sheaf on Δ × C for the topology inherited along π”.
+**`Stacks.SimplicialModules.simplicialSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSheafEquivalence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSheafEquivalence.lean#L362). The attribute's comment: “a simplicial sheaf on C is the same thing as a sheaf on Δ × C for the topology inherited along π”.
 
 > **Stacks 09D0.** A sheaf on `Δ × C` *is* a simplicial sheaf on `C`: levelwise restriction to
 > the fibres and uncurrying are an equivalence of categories.
@@ -92,7 +92,7 @@ def simplicialSheafEquivalence (A : Type u₁) [Category.{v₁} A] :
 
 [Tag 09D1](https://stacks.math.columbia.edu/tag/09D1) in the Stacks Project.
 
-**`Stacks.SimplicialModules.SimplicialModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModules.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModules.lean#L50).
+**`Stacks.SimplicialModules.SimplicialModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModules.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModules.lean#L50).
 
 > A simplicial module over a simplicial sheaf of rings `A` is a presheaf of modules over the
 > associated ring presheaf on `Δ × C` whose underlying abelian-group presheaf is a sheaf for the
@@ -102,7 +102,7 @@ def simplicialSheafEquivalence (A : Type u₁) [Category.{v₁} A] :
 abbrev SimplicialModule (A : SimplicialObject (Sheaf J RingCat.{r}))
 ```
 
-**`Stacks.SimplicialModules.ringSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModulesAbelian.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModulesAbelian.lean#L275). The attribute's comment: “the sheaf of rings on Δ × C associated to A\_•”.
+**`Stacks.SimplicialModules.ringSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModulesAbelian.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialModulesAbelian.lean#L275). The attribute's comment: “the sheaf of rings on Δ × C associated to A\_•”.
 
 > **Stacks 09D1.** The sheaf of rings on `Δ × C` associated to a simplicial sheaf of rings.
 > The sheaf condition is `isSheaf_associatedRingPresheaf`.
@@ -116,7 +116,7 @@ def ringSheaf :
 
 [Tag 09D2](https://stacks.math.columbia.edu/tag/09D2) in the Stacks Project.
 
-**`Stacks.SimplicialModules.isIso_derivedBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/LowerShriekBaseChange.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/LowerShriekBaseChange.lean#L330).
+**`Stacks.SimplicialModules.isIso_derivedBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/LowerShriekBaseChange.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/LowerShriekBaseChange.lean#L330).
 
 > Let `C` be a site and `A_• ⟶ B_•` a homomorphism of simplicial sheaves of (commutative) rings
 > on `C`. If `Lπ_!A_• ⟶ Lπ_!B_•` is an isomorphism in `D(C)`, then the canonical map
@@ -126,7 +126,7 @@ def ringSheaf :
 theorem isIso_derivedBaseChangeComparison : IsIso (derivedBaseChangeComparison J φ)
 ```
 
-**`Stacks.SimplicialModules.isIso_derivedLowerShriekHomology_map_of_fibrewise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean#L146). The attribute's comment: “the reduction to the fibre categories Δ × U”.
+**`Stacks.SimplicialModules.isIso_derivedLowerShriekHomology_map_of_fibrewise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean#L148). The attribute's comment: “the reduction to the fibre categories Δ × U”.
 
 > **The reduction of Stacks 09D2 to the fibre categories.** Let `C` be a site and let
 > `π : Δ × C ⥤ C` be the projection. A morphism `a` of abelian sheaves on `Δ × C` which induces an
@@ -154,7 +154,7 @@ theorem isIso_derivedLowerShriekHomology_map_of_fibrewise
     IsIso (((simplicialSituation B).derivedAbelianLowerShriekHomology n).map a)
 ```
 
-**`Stacks.SimplicialModules.isIso_derivedLowerShriekHomology_map_of_fibrewise_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean#L172). The attribute's comment: “the reduction to the fibre categories Δ × U”.
+**`Stacks.SimplicialModules.isIso_derivedLowerShriekHomology_map_of_fibrewise_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplicialSiteLowerShriek.lean#L175). The attribute's comment: “the reduction to the fibre categories Δ × U”.
 
 > **The reduction of Stacks 09D2 to the fibre categories**, with no hypothesis. Let `C` be a
 > site and let `π : Δ × C ⥤ C` be the projection. A morphism `a` of abelian sheaves on `Δ × C`
@@ -162,7 +162,8 @@ theorem isIso_derivedLowerShriekHomology_map_of_fibrewise
 > inverted by `L_nπ_!`.
 >
 > Both acyclicity statements of Stacks 08PJ are discharged rather than carried:
-> `StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/ProjectionLowerShriekAcyclic.lean` proves Stacks 0D6X along the projection of a fibred category,
+> `StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/ProjectionLowerShriekAcyclic.lean`
+> proves Stacks 0D6X along the projection of a fibred category,
 > hence `FibredCategorySituation.abelianLowerShriekAcyclic` and the instance giving `Lπ_!`, and
 > `StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/UliftFreeCoverGenerators.lean` proves
 > `FibredCategorySituation.abelianLowerShriekGeneratorsAcyclic`, from which the acyclicity of the
@@ -184,7 +185,7 @@ theorem isIso_derivedLowerShriekHomology_map_of_fibrewise_unconditional (n : ℕ
 
 [Tag 09D3](https://stacks.math.columbia.edu/tag/09D3) in the Stacks Project.
 
-**`Stacks.SimplicialModules.augmentedDerivedLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L149). The attribute's comment: “the functor `Lπ_! : D(A_•) ⟶ D(O)`, the composition of `- ⊗^L_{A_•} O` with the functor `Lπ_! : D(Δ × C, π^{-1}O) ⟶ D(O)` of Remark 09CY”.
+**`Stacks.SimplicialModules.augmentedDerivedLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L149). The attribute's comment: “the functor `Lπ_! : D(A_•) ⟶ D(O)`, the composition of `- ⊗^L_{A_•} O` with the functor `Lπ_! : D(Δ × C, π^{-1}O) ⟶ D(O)` of Remark 09CY”.
 
 > **Remark 09D3, the functor.** For an augmentation `ε : A_• ⟶ O` of a simplicial sheaf of rings
 > by a sheaf of rings, `Lπ_! : D(A_•) ⥤ D(O)` is the composite of derived base change
@@ -197,7 +198,7 @@ def augmentedDerivedLowerShriek (ε : CommAugmentation J A O) :
       DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf O))
 ```
 
-**`Stacks.SimplicialModules.augmentedDerivedLowerShriek_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L157). The attribute's comment: “`Lπ_! : D(A_•) ⟶ D(O)` is a functor of triangulated categories: it commutes with the shift”.
+**`Stacks.SimplicialModules.augmentedDerivedLowerShriek_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L157). The attribute's comment: “`Lπ_! : D(A_•) ⟶ D(O)` is a functor of triangulated categories: it commutes with the shift”.
 
 > **Remark 09D3, exactness: the functor commutes with the shift.**
 
@@ -206,7 +207,7 @@ instance augmentedDerivedLowerShriek_commShift (ε : CommAugmentation J A O) :
     (augmentedDerivedLowerShriek J ε).CommShift ℤ
 ```
 
-**`Stacks.SimplicialModules.augmentedDerivedLowerShriek_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L164). The attribute's comment: “`Lπ_! : D(A_•) ⟶ D(O)` is an exact functor of triangulated categories”.
+**`Stacks.SimplicialModules.augmentedDerivedLowerShriek_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L164). The attribute's comment: “`Lπ_! : D(A_•) ⟶ D(O)` is an exact functor of triangulated categories”.
 
 > **Remark 09D3, exactness: `Lπ_! : D(A_•) ⥤ D(O)` is an exact functor of triangulated
 > categories**, as a composite of two exact functors.
@@ -216,7 +217,7 @@ instance augmentedDerivedLowerShriek_isTriangulated (ε : CommAugmentation J A O
     (augmentedDerivedLowerShriek J ε).IsTriangulated
 ```
 
-**`Stacks.SimplicialModules.augmentedDerivedLowerShriekForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L398). The attribute's comment: “the `O`-module structure on `Lπ_!(K)`: under the hypothesis that `ε` induces a quasi-isomorphism `s(A_•) ⟶ O`, the canonical, functorial identification of `Lπ_!(K)` with `Lπ_!(K ⊗^L_{A_•} O)` of Lemma 09D2, read as the underlying complex of abelian sheaves of the object `Lπ_!(K)` of `D(O)`”.
+**`Stacks.SimplicialModules.augmentedDerivedLowerShriekForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedDerivedLowerShriek.lean#L398). The attribute's comment: “the `O`-module structure on `Lπ_!(K)`: under the hypothesis that `ε` induces a quasi-isomorphism `s(A_•) ⟶ O`, the canonical, functorial identification of `Lπ_!(K)` with `Lπ_!(K ⊗^L_{A_•} O)` of Lemma 09D2, read as the underlying complex of abelian sheaves of the object `Lπ_!(K)` of `D(O)`”.
 
 > **Remark 09D3, the `O`-module structure on `Lπ_!(K)`.** Let `ε : A_• ⟶ O` be an augmentation
 > inducing a quasi-isomorphism `s(A_•) ⟶ O`. For `K` in `D(A_•)`, `Lπ_!(K)` is canonically and
@@ -233,7 +234,7 @@ def augmentedDerivedLowerShriekForgetIso (ε : CommAugmentation J A O)
       moduleDerivedLowerShriek J A
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L155). The attribute's comment: “the functor Lπ\_! : D(A\_•) ⟶ D(O). Two inputs of the source are carried as explicit parameters, the library not yet having them: `base` is derived extension of scalars `- ⊗^L_{A_•} O`, introduced in the untagged prose before Lemma 09D2, and `proj` is the functor Lπ\_! : D(π^\{-1}O) ⟶ D(O) of Tag 09CY, which is Tag 08PC part (3) for modules and is reduced in this library to the acyclicity statement of Tag 0794 at the class of direct sums of the j\_\{U!} O\_U; see the implementation notes for what that still owes”.
+**`Stacks.SimplicialModules.augmentedLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L155). The attribute's comment: “the functor Lπ\_! : D(A\_•) ⟶ D(O). Two inputs of the source are carried as explicit parameters, the library not yet having them: `base` is derived extension of scalars `- ⊗^L_{A_•} O`, introduced in the untagged prose before Lemma 09D2, and `proj` is the functor Lπ\_! : D(π^\{-1}O) ⟶ D(O) of Tag 09CY, which is Tag 08PC part (3) for modules and is reduced in this library to the acyclicity statement of Tag 0794 at the class of direct sums of the j\_\{U!} O\_U; see the implementation notes for what that still owes”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings:
 > `Lπ_! : D(A_•) ⟶ D(O)`, the composite of derived extension of scalars along the augmentation
@@ -248,7 +249,7 @@ def augmentedLowerShriek (_ε : Augmentation J A O)
     DerivedCategory (SimplicialModule.{w, v, u, r} J A) ⥤ DerivedCategory D
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L166). The attribute's comment: “the functor commutes with the shift”.
+**`Stacks.SimplicialModules.augmentedLowerShriek_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L166). The attribute's comment: “the functor commutes with the shift”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings commutes
 > with the shift.
@@ -262,7 +263,7 @@ instance augmentedLowerShriek_commShift (ε : Augmentation J A O)
     (augmentedLowerShriek J ε base proj).CommShift ℤ
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L177). The attribute's comment: “the functor is exact”.
+**`Stacks.SimplicialModules.augmentedLowerShriek_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L177). The attribute's comment: “the functor is exact”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings is an
 > exact functor of triangulated categories.
@@ -277,7 +278,7 @@ instance augmentedLowerShriek_isTriangulated (ε : Augmentation J A O)
     (augmentedLowerShriek J ε base proj).IsTriangulated
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L210). The attribute's comment: “the functor Lπ\_! : D(A\_•) ⟶ D(O), at the target D(O) the source names and with the abelian structure and the derived category of both categories of simplicial modules discharged rather than assumed. Two inputs of the source are carried as explicit parameters, the library not yet having them: `base` is derived extension of scalars `- ⊗^L_{A_•} O`, introduced in the untagged prose before Lemma 09D2, and `proj` is the functor Lπ\_! : D(π^\{-1}O) ⟶ D(O) of Tag 09CY, whose underived half is `Stacks.SimplicialModules.moduleLowerShriek` and whose total left derived functor is part (3) of Tag 08PC, open here”.
+**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L210). The attribute's comment: “the functor Lπ\_! : D(A\_•) ⟶ D(O), at the target D(O) the source names and with the abelian structure and the derived category of both categories of simplicial modules discharged rather than assumed. Two inputs of the source are carried as explicit parameters, the library not yet having them: `base` is derived extension of scalars `- ⊗^L_{A_•} O`, introduced in the untagged prose before Lemma 09D2, and `proj` is the functor Lπ\_! : D(π^\{-1}O) ⟶ D(O) of Tag 09CY, whose underived half is `Stacks.SimplicialModules.moduleLowerShriek` and whose total left derived functor is part (3) of Tag 08PC, open here”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings,
 > `Lπ_! : D(A_•) ⟶ D(O)` with `D(O)` the derived category of the sheaves of `O`-modules on `C`,
@@ -298,7 +299,7 @@ def augmentedLowerShriek_derivedTarget (_ε : Augmentation J A O)
       DerivedCategory (SheafOfModules.{max u v r w} O)
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L222). The attribute's comment: “the functor commutes with the shift, at the target D(O) the source names”.
+**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L222). The attribute's comment: “the functor commutes with the shift, at the target D(O) the source names”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings commutes
 > with the shift, at the target `D(O)`.
@@ -313,7 +314,7 @@ instance augmentedLowerShriek_derivedTarget_commShift (ε : Augmentation J A O)
     (augmentedLowerShriek_derivedTarget.{w} J ε base proj).CommShift ℤ
 ```
 
-**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L234). The attribute's comment: “the functor is exact, at the target D(O) the source names”.
+**`Stacks.SimplicialModules.augmentedLowerShriek_derivedTarget_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/AugmentedLowerShriek.lean#L234). The attribute's comment: “the functor is exact, at the target D(O) the source names”.
 
 > **Stacks 09D3.** Derived lower shriek along an augmented simplicial sheaf of rings is an
 > exact functor of triangulated categories, at the target `D(O)`.
@@ -336,4 +337,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.41, Tag 09D0](https://stacks.math.columbia.edu/tag/09D0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

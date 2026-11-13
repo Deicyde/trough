@@ -7,7 +7,7 @@ statement: formalized
 
 # Wythoff's game
 
-62 results, 35 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html).
+62 results, 35 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html).
 
 ## Grundy numbers of Wythoff's game with an extra move
 
@@ -26,7 +26,7 @@ variants are classical Wythoff's game.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (the move sets `M₁, M₂, M₃, M₄, M₄'` and the Grundy numbers `𝒢₁`, `𝒢₂`).
 
-Formalized by `MetaMathlibExt.wythoffExtraMoveGrundy`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-extra-move-grundy).
+Formalized by `MetaMathlibExt.wythoffExtraMoveGrundy`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-extra-move-grundy).
 
 ## Grundy numbers of Wythoff's game with a pass
 
@@ -42,7 +42,7 @@ with an extra move.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (Grundy numbers `𝒢₁`).
 
-Formalized by `MetaMathlibExt.wythoffPassGrundy`, an abbreviation declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy).
+Formalized by `MetaMathlibExt.wythoffPassGrundy`, an abbreviation declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy).
 
 ## Grundy numbers of Wythoff's game plus one stone
 
@@ -56,7 +56,7 @@ $(0, 0, 1)$.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (Grundy numbers `𝒢₂`).
 
-Formalized by `MetaMathlibExt.wythoffPlusStoneGrundy`, an abbreviation declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-plus-stone-grundy).
+Formalized by `MetaMathlibExt.wythoffPlusStoneGrundy`, an abbreviation declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-plus-stone-grundy).
 
 ## The set $A$
 
@@ -68,7 +68,7 @@ $(x, y, 0)$ of the set $A$ in the source, with the third coordinate dropped.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4 (the set `A`, Definition 12).
 
-Formalized by `MetaMathlibExt.wythoffPassSetA`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-a).
+Formalized by `MetaMathlibExt.wythoffPassSetA`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-a).
 
 ## The set $B$
 
@@ -80,7 +80,7 @@ positions $(x, y, 1)$ of the set $B$ in the source, with the third coordinate dr
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4 (the set `B`).
 
-Formalized by `MetaMathlibExt.wythoffPassSetB`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-b).
+Formalized by `MetaMathlibExt.wythoffPassSetB`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-b).
 
 ## The set $C$
 
@@ -92,7 +92,7 @@ positions $(x, y, 1)$ of the set $C$ in the source, with the third coordinate dr
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4 (the set `C`).
 
-Formalized by `MetaMathlibExt.wythoffPassSetC`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-c).
+Formalized by `MetaMathlibExt.wythoffPassSetC`, a definition declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-c).
 
 ## Mex recursion for the Grundy numbers of Wythoff's game with an extra move
 
@@ -108,7 +108,7 @@ or $x + y > 0$, also differs from the Grundy number of $(x, y, 0)$.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 1 (Grundy numbers as mex over moves).
 
-Formalized by `MetaMathlibExt.wythoffExtraMoveGrundy_eq`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-extra-move-grundy-eq).
+Formalized by `MetaMathlibExt.wythoffExtraMoveGrundy_eq`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-extra-move-grundy-eq).
 
 ## The terminal position of Wythoff's game with a pass
 
@@ -122,7 +122,7 @@ terminal position.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (`M₄(x, y, p) = ∅` if `x + y = 0`).
 
-Formalized by `MetaMathlibExt.wythoffPassGrundy_zero_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-zero-zero).
+Formalized by `MetaMathlibExt.wythoffPassGrundy_zero_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-zero-zero).
 
 ## Wythoff's game plus one stone at $(0, 0, 1)$
 
@@ -134,7 +134,7 @@ $\mathcal{G}_2(0, 0, 1) = 1$: its only move is to the terminal position $(0, 0, 
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 3 (`M₄'(x, y, 1) = {(x, y, 0)}`).
 
-Formalized by `MetaMathlibExt.wythoffPlusStoneGrundy_zero_zero_true`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-plus-stone-grundy-zero-zero-true).
+Formalized by `MetaMathlibExt.wythoffPlusStoneGrundy_zero_zero_true`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-plus-stone-grundy-zero-zero-true).
 
 ## The sets $B$ and $C$ have nine elements each
 
@@ -147,7 +147,7 @@ natural numbers each have exactly $9$ elements.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4.
 
-Formalized by `MetaMathlibExt.wythoffPassSetB_card_wythoffPassSetC_card`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-b-card-wythoff-pass-set).
+Formalized by `MetaMathlibExt.wythoffPassSetB_card_wythoffPassSetC_card`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-b-card-wythoff-pass-set).
 
 ## The set $A$ has seven elements
 
@@ -159,7 +159,7 @@ exactly $7$ elements.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Section 4.
 
-Formalized by `MetaMathlibExt.wythoffPassSetA_card`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-a-card).
+Formalized by `MetaMathlibExt.wythoffPassSetA_card`, a theorem declared in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-set-a-card).
 
 ## Wythoff's theorem
 
@@ -175,7 +175,7 @@ $\varphi = (1 + \sqrt{5})/2$ is the golden ratio.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 2, quoting Wythoff.
 
-Stated but not proved: `MetaMathlibExt.wythoffGrundy_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-grundy-eq-zero-iff).
+Stated but not proved: `MetaMathlibExt.wythoffGrundy_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-grundy-eq-zero-iff).
 
 ## Grundy-one positions of Wythoff's game lie near P-positions
 
@@ -190,7 +190,7 @@ number $1$ lies within Euclidean distance $\sqrt{20}$ of a P-position.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.wythoffGrundy_one_near_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-grundy-one-near-zero).
+Stated but not proved: `MetaMathlibExt.wythoffGrundy_one_near_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-grundy-one-near-zero).
 
 ## P-positions of Wythoff's game with a pass for $x, y \le 8$
 
@@ -209,7 +209,7 @@ $\mathcal{G}_2(x, y, 1) = 0$ if and only if $(x, y) \in C$.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.wythoffPass_pPositions_le_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-p-positions-le-eight).
+Stated but not proved: `MetaMathlibExt.wythoffPass_pPositions_le_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-p-positions-le-eight).
 
 ## Moves into the sets $B$ and $C$ away from the corner
 
@@ -232,7 +232,7 @@ with the third coordinate dropped.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.wythoffPass_moves_meet_setB_setC` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-moves-meet-set-b-set-c).
+Stated but not proved: `MetaMathlibExt.wythoffPass_moves_meet_setB_setC` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-moves-meet-set-b-set-c).
 
 ## Moves from a large position meet $B$ exactly when they meet $C$
 
@@ -251,7 +251,7 @@ $(x, y, 1)$ of Wythoff's game with a pass, with the third coordinate dropped.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.wythoffPass_moves_meet_setB_iff_setC` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-moves-meet-set-b-iff-set-c).
+Stated but not proved: `MetaMathlibExt.wythoffPass_moves_meet_setB_iff_setC` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-moves-meet-set-b-iff-set-c).
 
 ## Pass versus a pile of one stone in Wythoff's game
 
@@ -266,7 +266,7 @@ available pass has the same P-positions as Wythoff's game plus a pile of one sto
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.wythoffPassGrundy_eq_zero_iff_plusStone` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-eq-zero-iff-plus-sto).
+Stated but not proved: `MetaMathlibExt.wythoffPassGrundy_eq_zero_iff_plusStone` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-eq-zero-iff-plus-sto).
 
 ## Away from the corner, P-positions with a pass are Wythoff's Grundy-one positions
 
@@ -280,7 +280,7 @@ $\mathcal{G}_1(x, y, 1) = 0$ if and only if $\mathcal{G}_1(x, y, 0) = 1$.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.wythoffPassGrundy_true_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-true-eq-zero-iff).
+Stated but not proved: `MetaMathlibExt.wythoffPassGrundy_true_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-grundy-true-eq-zero-iff).
 
 ## P-positions with the pass available lie near Wythoff P-positions
 
@@ -295,7 +295,7 @@ Euclidean distance $\sqrt{20}$ of $(x, y)$.
 
 - Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.wythoffPass_pPosition_near_wythoff_pPosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffPassWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-p-position-near-wythoff-p-p).
+Stated but not proved: `MetaMathlibExt.wythoffPass_pPosition_near_wythoff_pPosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffPassWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffPassWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-pass-p-position-near-wythoff-p-p).
 
 ## Moves of Wythoff's game with terminal positions
 
@@ -310,7 +310,7 @@ positive number of tokens from one pile, or the same positive number from both p
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, the game `K^ℓ` of Theorem 17 (`jis-2026-26.1.6-thm-17`): Wythoff's moves with terminal positions `{(x, y) | x + y ≤ ℓ}`.
 
-Formalized by `MetaMathlibExt.wythoffTerminalMove`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-move).
+Formalized by `MetaMathlibExt.wythoffTerminalMove`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-move).
 
 ## No moves from terminal positions
 
@@ -322,7 +322,7 @@ move from a position $(x, y)$ with $x + y \le \ell$ to any position.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, terminal positions of `K^ℓ` (Theorem 17).
 
-Formalized by `MetaMathlibExt.not_wythoffTerminalMove_of_terminal`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#not-wythoff-terminal-move-of-terminal).
+Formalized by `MetaMathlibExt.not_wythoffTerminalMove_of_terminal`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#not-wythoff-terminal-move-of-terminal).
 
 ## A move to the origin in $K^0$
 
@@ -333,7 +333,7 @@ terminal), there is a move from the position $(1, 0)$ to the position $(0, 0)$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Wythoff's moves (Theorem 17).
 
-Formalized by `MetaMathlibExt.wythoffTerminalMove_zero_one_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-move-zero-one-zero).
+Formalized by `MetaMathlibExt.wythoffTerminalMove_zero_one_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-move-zero-one-zero).
 
 ## The mex sequence of Wythoff's game with terminal positions
 
@@ -348,7 +348,7 @@ $b_0 = 2\ell + 2$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17, equation (mexdef) (`jis-2026-26.1.6-thm-17`).
 
-Formalized by `MetaMathlibExt.wythoffMexA`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a).
+Formalized by `MetaMathlibExt.wythoffMexA`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a).
 
 ## The companion of the mex sequence
 
@@ -360,7 +360,7 @@ terminal). Its companion sequence is $b_n = a_n + n + \ell + 1$ for every natura
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17, equation (mexdef).
 
-Formalized by `MetaMathlibExt.wythoffMexB`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-b).
+Formalized by `MetaMathlibExt.wythoffMexB`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-b).
 
 ## The term $a_0$ of the mex sequence
 
@@ -372,7 +372,7 @@ terminal) satisfies $a_0 = \ell + 1$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17 (`(a₀, b₀) = (ℓ + 1, 2ℓ + 2)`).
 
-Formalized by `MetaMathlibExt.wythoffMexA_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a-zero).
+Formalized by `MetaMathlibExt.wythoffMexA_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a-zero).
 
 ## The term $a_1$ of the mex sequence
 
@@ -387,7 +387,7 @@ $a_0 + \ell + 1 = 2\ell + 2$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17, equation (mexdef).
 
-Formalized by `MetaMathlibExt.wythoffMexA_one`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a-one).
+Formalized by `MetaMathlibExt.wythoffMexA_one`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-a-one).
 
 ## The term $b_0$ of the companion sequence
 
@@ -399,7 +399,7 @@ with $x + y \le \ell$ are terminal) satisfies $b_0 = 2\ell + 2$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17 (`(a₀, b₀) = (ℓ + 1, 2ℓ + 2)`).
 
-Formalized by `MetaMathlibExt.wythoffMexB_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-b-zero).
+Formalized by `MetaMathlibExt.wythoffMexB_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-b-zero).
 
 ## Predicted P-positions of $K^\ell$
 
@@ -413,7 +413,7 @@ together with the pairs $(a_n, b_n)$ and $(b_n, a_n)$ for $n \ge 0$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17.
 
-Formalized by `MetaMathlibExt.wythoffTerminalPSet`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-pset).
+Formalized by `MetaMathlibExt.wythoffTerminalPSet`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-pset).
 
 ## Terminal positions lie in the predicted P-position set
 
@@ -426,7 +426,7 @@ $x + y \le \ell$ are terminal).
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17.
 
-Formalized by `MetaMathlibExt.mem_wythoffTerminalPSet_of_terminal`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#mem-wythoff-terminal-pset-of-terminal).
+Formalized by `MetaMathlibExt.mem_wythoffTerminalPSet_of_terminal`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#mem-wythoff-terminal-pset-of-terminal).
 
 ## The Komak sequence $g$
 
@@ -444,7 +444,7 @@ $\varphi + 1$). In particular $g(0) = 1$ and $g(1) = 0$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fg` (arXiv:2512.11601v1).
 
-Formalized by `MetaMathlibExt.komakG`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g).
+Formalized by `MetaMathlibExt.komakG`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g).
 
 ## Value of the Komak sequence at 0
 
@@ -455,7 +455,7 @@ $g(0) = 1$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fg`.
 
-Formalized by `MetaMathlibExt.komakG_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-zero).
+Formalized by `MetaMathlibExt.komakG_zero`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-zero).
 
 ## Value of the Komak sequence at 1
 
@@ -467,7 +467,7 @@ $g(1) = 0$: with $\varphi$ the golden ratio, $\lfloor \varphi \rfloor = 1 =
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fg` and Table `tab:gh`.
 
-Formalized by `MetaMathlibExt.komakG_one`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-one).
+Formalized by `MetaMathlibExt.komakG_one`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-one).
 
 ## Greedy Fibonacci digits
 
@@ -482,7 +482,7 @@ booleans true and false.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep` (greedy representation).
 
-Formalized by `MetaMathlibExt.fibGreedyDigits`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-greedy-digits).
+Formalized by `MetaMathlibExt.fibGreedyDigits`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-greedy-digits).
 
 ## Fibonacci digit count
 
@@ -498,7 +498,7 @@ representation of $n$, the least $k$ with $n < F_k$, which exists since $n < F_n
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep` (greedy representation).
 
-Formalized by `MetaMathlibExt.fibDigitCount`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-digit-count).
+Formalized by `MetaMathlibExt.fibDigitCount`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-digit-count).
 
 ## Greedy Fibonacci representation
 
@@ -515,7 +515,7 @@ and false.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep`.
 
-Formalized by `MetaMathlibExt.fibRep`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-rep).
+Formalized by `MetaMathlibExt.fibRep`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-rep).
 
 ## Greedy Fibonacci representations of 0, 2, 4, 7 and 12
 
@@ -528,7 +528,7 @@ $\mathrm{rep}_F(4) = 101$, $\mathrm{rep}_F(7) = 1010$ and $\mathrm{rep}_F(12) = 
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Definition `def:fib_rep` and Table `tab:K1`.
 
-Formalized by `MetaMathlibExt.fibRep_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-rep-examples).
+Formalized by `MetaMathlibExt.fibRep_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#fib-rep-examples).
 
 ## Fibonacci-automatic sequences
 
@@ -543,7 +543,7 @@ $\mathrm{rep}_F(n)$ with $\delta$, most significant digit first.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Section 2 (Fibonacci-automatic sequences, DFAO fed with `rep_F(n)`).
 
-Formalized by `MetaMathlibExt.IsFibonacciAutomatic`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic).
+Formalized by `MetaMathlibExt.IsFibonacciAutomatic`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic).
 
 ## Constant sequences are Fibonacci-automatic
 
@@ -554,7 +554,7 @@ sequence $n \mapsto c$ is Fibonacci-automatic.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Section 2 (Fibonacci-automatic sequences).
 
-Formalized by `MetaMathlibExt.isFibonacciAutomatic_const`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic-const).
+Formalized by `MetaMathlibExt.isFibonacciAutomatic_const`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic-const).
 
 ## A prefix of the fourth iterate of $f_1$
 
@@ -567,7 +567,7 @@ $f_1^4(0)$ are $0, 1, 2, 3, 4, 3$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, table after Proposition 22.
 
-Formalized by `MetaMathlibExt.morphIterate_wythoffTerminal_one_example`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#morph-iterate-wythoff-terminal-one-examp).
+Formalized by `MetaMathlibExt.morphIterate_wythoffTerminal_one_example`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#morph-iterate-wythoff-terminal-one-examp).
 
 ## Larsson's set $R_2$
 
@@ -581,7 +581,7 @@ $(2\lfloor n\varphi^2 \rfloor + 2, 2\lfloor n\varphi \rfloor + 2)$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 26.
 
-Formalized by `MetaMathlibExt.larssonSetTwo`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-two).
+Formalized by `MetaMathlibExt.larssonSetTwo`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-two).
 
 ## Sample positions in Larsson's set $R_2$
 
@@ -592,7 +592,7 @@ $(2, 2)$ belong to Larsson's set $R_2$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 26.
 
-Formalized by `MetaMathlibExt.larssonSetTwo_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-two-examples).
+Formalized by `MetaMathlibExt.larssonSetTwo_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-two-examples).
 
 ## Larsson's set $R_3$
 
@@ -604,7 +604,7 @@ $(2n + 2, n)$ for all $n \ge 0$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 28.
 
-Formalized by `MetaMathlibExt.larssonSetThree`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-three).
+Formalized by `MetaMathlibExt.larssonSetThree`, a definition declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-three).
 
 ## Sample positions in Larsson's set $R_3$
 
@@ -615,7 +615,7 @@ $(3, 1)$ belong to Larsson's set $R_3$.
 
 - Antoine Renard and Michel Rigo, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 28.
 
-Formalized by `MetaMathlibExt.larssonSetThree_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-three-examples).
+Formalized by `MetaMathlibExt.larssonSetThree_examples`, a theorem declared in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#larsson-set-three-examples).
 
 ## P-positions of Wythoff's game with terminal positions
 
@@ -633,7 +633,7 @@ so the non-terminal P-positions of $K^\ell$ are exactly the pairs $(a_n, b_n)$ a
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 17 (`jis-2026-26.1.6-thm-17`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-p-positions).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-p-positions).
 
 ## P-positions of $K^1$
 
@@ -651,7 +651,7 @@ and absorbing set is the set of P-positions, so $P$ is the set of P-positions of
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 15 (`jis-2026-26.1.6-prop-15`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-p-positions).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-p-positions).
 
 ## P-positions of Wythoff's game when positions of total at most 2 are terminal
 
@@ -668,7 +668,7 @@ to a position in $P$, and from every position not in $P$ some move of $K^2$ lead
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 16 (`jis-2026-26.1.6-prop-16`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_two_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-two-p-positions).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_two_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-two-p-positions).
 
 ## Structure of the mex sequences of $K^\ell$
 
@@ -684,7 +684,7 @@ $b_{n+1} - b_n \in \{2, 3\}$ and $b_{n+1} - b_n = (a_{n+1} - a_n) + 1$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Lemma 18 (`jis-2026-26.1.6-lem-18`).
 
-Stated but not proved: `MetaMathlibExt.wythoffMex_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-properties).
+Stated but not proved: `MetaMathlibExt.wythoffMex_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-properties).
 
 ## Golden-ratio formula for the mex sequences
 
@@ -700,7 +700,7 @@ $b_n = \lfloor (n + \ell)\varphi^2 \rfloor + \lambda_n + 1$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Corollary 19 (`jis-2026-26.1.6-cor-19`).
 
-Stated but not proved: `MetaMathlibExt.wythoffMex_floor_goldenRatio` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-floor-golden-ratio).
+Stated but not proved: `MetaMathlibExt.wythoffMex_floor_goldenRatio` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-floor-golden-ratio).
 
 ## Growth of the mex sequences of $K^\ell$
 
@@ -714,7 +714,7 @@ $b_n / n \to \varphi^2$ as $n \to \infty$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Corollary 20 (`jis-2026-26.1.6-cor-20`).
 
-Stated but not proved: `MetaMathlibExt.wythoffMex_tendsto_goldenRatio` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-tendsto-golden-ratio).
+Stated but not proved: `MetaMathlibExt.wythoffMex_tendsto_goldenRatio` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-mex-tendsto-golden-ratio).
 
 ## Komak's description of the P-positions of $K^2$
 
@@ -735,7 +735,7 @@ which are P-positions since no move leaves them; they are included here.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 2 (`jis-2026-26.1.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.komak_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-p-positions).
+Stated but not proved: `MetaMathlibExt.komak_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-p-positions).
 
 ## Hofstadter recursion for the Komak sequence
 
@@ -752,7 +752,7 @@ as in the source's table of values; the value is corrected to $g(1) = 0$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 4 (`jis-2026-26.1.6-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.komakG_hofstadter` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-hofstadter).
+Stated but not proved: `MetaMathlibExt.komakG_hofstadter` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#komak-g-hofstadter).
 
 ## The Komak sequence $g$ is Fibonacci-automatic
 
@@ -766,7 +766,7 @@ for $g$ is not part of the statement.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 6 (`jis-2026-26.1.6-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.isFibonacciAutomatic_komakG` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic-komak-g).
+Stated but not proved: `MetaMathlibExt.isFibonacciAutomatic_komakG` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#is-fibonacci-automatic-komak-g).
 
 ## Fibonacci characterization of the P-positions of $K^1$
 
@@ -789,7 +789,7 @@ positions are therefore listed separately.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 12 (`jis-2026-26.1.6-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_fibRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-fib-rep).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_fibRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-fib-rep).
 
 ## Golden-ratio formula for Wythoff's game with terminal positions up to total 3
 
@@ -808,7 +808,7 @@ P-positions with $a_n < b_n$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 13 (`jis-2026-26.1.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.exists_fibonacciAutomatic_wythoffTerminal_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#exists-fibonacci-automatic-wythoff-termi).
+Stated but not proved: `MetaMathlibExt.exists_fibonacciAutomatic_wythoffTerminal_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#exists-fibonacci-automatic-wythoff-termi).
 
 ## Golden-ratio formula for Wythoff's game with terminal positions up to total 4
 
@@ -829,7 +829,7 @@ not start with $1$); $g_4$ is therefore existentially quantified.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 14 (`jis-2026-26.1.6-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.exists_fibonacciAutomatic_wythoffTerminal_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#exists-fibonacci-automatic-wythoff-termi-2).
+Stated but not proved: `MetaMathlibExt.exists_fibonacciAutomatic_wythoffTerminal_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#exists-fibonacci-automatic-wythoff-termi-2).
 
 ## Morphic coding of the Wythoff mex pairs at level one
 
@@ -852,7 +852,7 @@ letter at $b_n$ is coded $b$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 22 (`jis-2026-26.1.6-prop-22`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-morphic).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_one_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-one-morphic).
 
 ## Morphic coding of the Wythoff mex pairs at level two
 
@@ -877,7 +877,7 @@ letter at $b_n$ is coded $b$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 23 (`jis-2026-26.1.6-prop-23`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_two_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-two-morphic).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_two_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-two-morphic).
 
 ## Morphic coding of the Wythoff mex pairs at level three
 
@@ -904,7 +904,7 @@ letter at $b_n$ is coded $b$.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Proposition 24 (`jis-2026-26.1.6-prop-24`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_three_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-three-morphic).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_three_morphic` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-three-morphic).
 
 ## Larsson's P-positions of Blocking Wythoff Nim with one blocked option
 
@@ -923,7 +923,7 @@ forbid one option.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 26 (`jis-2026-26.1.6-thm-26`).
 
-Stated but not proved: `MetaMathlibExt.blockingWythoff_two_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-two-p-positions).
+Stated but not proved: `MetaMathlibExt.blockingWythoff_two_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-two-p-positions).
 
 ## Larsson's P-positions of Blocking Wythoff Nim with two blocked options
 
@@ -941,7 +941,7 @@ forbid two options.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 28 (`jis-2026-26.1.6-thm-28`).
 
-Stated but not proved: `MetaMathlibExt.blockingWythoff_three_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-three-p-positions).
+Stated but not proved: `MetaMathlibExt.blockingWythoff_three_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-three-p-positions).
 
 ## No redundant move in $K^\ell$ for $1 \le \ell \le 4$
 
@@ -960,7 +960,7 @@ moves are removed, removing the moves by $v$ changes the set of P-positions.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 30 (`jis-2026-26.1.6-thm-30`).
 
-Stated but not proved: `MetaMathlibExt.wythoffTerminal_no_redundant_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-no-redundant-move).
+Stated but not proved: `MetaMathlibExt.wythoffTerminal_no_redundant_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#wythoff-terminal-no-redundant-move).
 
 ## Blocking Wythoff Nim with one or two blocked options has no redundant move
 
@@ -984,7 +984,7 @@ options.
 
 - Antoine Renard and Michel Rigo, *Variants of Wythoff Game With Terminal Positions or Blocking Maneuvers*, Journal of Integer Sequences 29 (2026), Article 26.1.6, Theorem 31 (`jis-2026-26.1.6-thm-31`).
 
-Stated but not proved: `MetaMathlibExt.blockingWythoff_no_redundant_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-no-redundant-move).
+Stated but not proved: `MetaMathlibExt.blockingWythoff_no_redundant_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WythoffTerminalPositionsWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html#blocking-wythoff-no-redundant-move).
 
 ## Depends on
 
@@ -993,4 +993,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Wythoff's game](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/wythoff-s-game/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/wythoff-s-game)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/wythoff-s-game)

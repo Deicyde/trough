@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 66.19 Points of the small étale… to 66.33 Morphisms towards schemes
+# 66.19 Points of the small étale… to 66.29 Quasi-coherent sheaves on…
 
 - [66.19 Points of the small étale site](66-19-points-of-the-small-etale-site.md)
 - [66.20 Supports of abelian sheaves](66-20-supports-of-abelian-sheaves.md)
@@ -15,7 +15,3 @@ navigation: transparent
 - [66.27 Étale localization](66-27-etale-localization.md)
 - [66.28 Recovering morphisms](66-28-recovering-morphisms.md)
 - [66.29 Quasi-coherent sheaves on algebraic spaces](66-29-quasi-coherent-sheaves-on-algebraic-spaces.md)
-- [66.30 Properties of modules](66-30-properties-of-modules.md)
-- [66.31 Locally projective modules](66-31-locally-projective-modules.md)
-- [66.32 Quasi-coherent sheaves and presentations](66-32-quasi-coherent-sheaves-and-presentations.md)
-- [66.33 Morphisms towards schemes](66-33-morphisms-towards-schemes.md)

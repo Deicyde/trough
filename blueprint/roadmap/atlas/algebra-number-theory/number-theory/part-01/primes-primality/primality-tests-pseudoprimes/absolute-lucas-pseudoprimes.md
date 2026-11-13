@@ -7,7 +7,7 @@ statement: formalized
 
 # Absolute Lucas pseudoprimes
 
-30 results, 12 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html).
+30 results, 12 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html).
 
 ## Jacobi symbols of a discriminant $D$ agree at odd primes congruent modulo $D$
 
@@ -23,7 +23,7 @@ with the Kronecker symbol.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.jacobiSym_prime_add_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#jacobi-sym-prime-add-mul-eq).
+Stated but not proved: `MetaMathlibExt.jacobiSym_prime_add_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#jacobi-sym-prime-add-mul-eq).
 
 ## Ballot's Lemma 2: three divisibilities as one congruence
 
@@ -41,7 +41,7 @@ $$c_1 c_2 c_3 \mid g (\varepsilon_3 c_1 c_2 + \varepsilon_2 c_1 c_3 + \varepsilo
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.mul_dvd_prod_sub_sign_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#mul-dvd-prod-sub-sign-iff).
+Stated but not proved: `MetaMathlibExt.mul_dvd_prod_sub_sign_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#mul-dvd-prod-sub-sign-iff).
 
 ## $D$-Carmichael number
 
@@ -59,7 +59,7 @@ vacuous.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Section 1 (definition of absolute Lucas `D`-pseudoprimes, after [17]).
 
-Formalized by `MetaMathlibExt.IsDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael).
+Formalized by `MetaMathlibExt.IsDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael).
 
 ## $D$-Carmichael numbers are not prime
 
@@ -70,7 +70,7 @@ if $n$ is a $D$-Carmichael number, then $n$ is not prime.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.IsDCarmichael.not_prime`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-prime).
+Formalized by `MetaMathlibExt.IsDCarmichael.not_prime`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-prime).
 
 ## $9$ is not a $5$-Carmichael number
 
@@ -82,7 +82,7 @@ $U(1, -1)$ has $F_8 = 21$, which $9$ does not divide.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.not_isDCarmichael_five_nine`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-dcarmichael-five-nine).
+Formalized by `MetaMathlibExt.not_isDCarmichael_five_nine`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-dcarmichael-five-nine).
 
 ## Extended digit sum
 
@@ -97,7 +97,7 @@ For $p \le 1$ the definition gives $s_p(n) = n$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, equation (6).
 
-Formalized by `MetaMathlibExt.lucasDigitSum`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#lucas-digit-sum).
+Formalized by `MetaMathlibExt.lucasDigitSum`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#lucas-digit-sum).
 
 ## The extended digit sum of $6601$ in base $7$ for $D = 5$
 
@@ -110,7 +110,7 @@ $s_7(6601) = -5 + 1 - 5 + 2 = -7$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, equation (6) and the example `m = 6601`.
 
-Formalized by `MetaMathlibExt.lucasDigitSum_five_seven_6601`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#lucas-digit-sum-five-seven-6601).
+Formalized by `MetaMathlibExt.lucasDigitSum_five_seven_6601`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#lucas-digit-sum-five-seven-6601).
 
 ## Primary $D$-Carmichael number
 
@@ -128,7 +128,7 @@ $p \mid n$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Definition 3.
 
-Formalized by `MetaMathlibExt.IsPrimaryDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-primary-dcarmichael).
+Formalized by `MetaMathlibExt.IsPrimaryDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-primary-dcarmichael).
 
 ## Secondary $D$-Carmichael number
 
@@ -147,7 +147,7 @@ $p \mid n$ and $|d_p| > 1$ for some.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Definition 3.
 
-Formalized by `MetaMathlibExt.IsSecondaryDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-secondary-dcarmichael).
+Formalized by `MetaMathlibExt.IsSecondaryDCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-secondary-dcarmichael).
 
 ## Primary $D$-Carmichael numbers are $D$-Carmichael
 
@@ -158,7 +158,7 @@ number $n$, if $n$ is a primary $D$-Carmichael number, then $n$ is a $D$-Carmich
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Definition 3.
 
-Formalized by `MetaMathlibExt.IsPrimaryDCarmichael.isDCarmichael`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-2).
+Formalized by `MetaMathlibExt.IsPrimaryDCarmichael.isDCarmichael`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-2).
 
 ## Carmichael numbers of a signature
 
@@ -172,7 +172,7 @@ $\left(\frac{D}{p_i}\right) = \varepsilon_i$ for all $i$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Definition 4.
 
-Formalized by `MetaMathlibExt.IsSignatureCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-signature-carmichael).
+Formalized by `MetaMathlibExt.IsSignatureCarmichael`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-signature-carmichael).
 
 ## $4$ is not a signature Carmichael number
 
@@ -183,7 +183,7 @@ $4$ is not a $\sigma$-Carmichael number, because $4$ is not squarefree.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Definition 4.
 
-Formalized by `MetaMathlibExt.not_isSignatureCarmichael_four`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-signature-carmichael-four).
+Formalized by `MetaMathlibExt.not_isSignatureCarmichael_four`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-signature-carmichael-four).
 
 ## Universal $D$-forms
 
@@ -202,7 +202,7 @@ used with $D < 0$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Section 1 (definition of a universal `D`-form).
 
-Formalized by `MetaMathlibExt.IsUniversalLinearDForm`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-universal-linear-dform).
+Formalized by `MetaMathlibExt.IsUniversalLinearDForm`, a definition declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-universal-linear-dform).
 
 ## $x(x+1)$ is never a universal form
 
@@ -215,7 +215,7 @@ divides every value of the product.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Section 1 (definition of a universal `D`-form).
 
-Formalized by `MetaMathlibExt.not_isUniversalLinearDForm_mul_succ`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-universal-linear-dform-mul-succ).
+Formalized by `MetaMathlibExt.not_isUniversalLinearDForm_mul_succ`, a theorem declared in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#not-is-universal-linear-dform-mul-succ).
 
 ## Williams' Korselt criterion for $D$-Carmichael numbers
 
@@ -232,7 +232,7 @@ assumed composite; it is assumed coprime to $D$ as in the definition.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isDCarmichael_iff_korselt` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-iff-korselt).
+Stated but not proved: `MetaMathlibExt.isDCarmichael_iff_korselt` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-iff-korselt).
 
 ## Prime $k$-tuples give infinitely many primary Carmichael numbers (Wagstaff)
 
@@ -249,7 +249,7 @@ base-$p$ digits of $n$ equals $p$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.infinite_primary_carmichael_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-carmichael-of-prime-ktu).
+Stated but not proved: `MetaMathlibExt.infinite_primary_carmichael_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-carmichael-of-prime-ktu).
 
 ## Korselt criterion for $\sigma$-Carmichael numbers
 
@@ -264,7 +264,7 @@ $p_i - \varepsilon_i \mid n - \varepsilon_\sigma$ for every $i$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isSignatureCarmichael_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-signature-carmichael-iff).
+Stated but not proved: `MetaMathlibExt.isSignatureCarmichael_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-signature-carmichael-iff).
 
 ## Two-prime-factor $D$-Carmichael numbers
 
@@ -287,7 +287,7 @@ $10x + 9$ both prime.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.twoFactor_isDCarmichael` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#two-factor-is-dcarmichael).
+Stated but not proved: `MetaMathlibExt.twoFactor_isDCarmichael` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#two-factor-is-dcarmichael).
 
 ## Chernick-type universal forms for three prime factors
 
@@ -308,7 +308,7 @@ Being $D$-Carmichael includes the condition $D \equiv 0$ or $1 \pmod 4$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.isUniversalLinearDForm_chernick` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-universal-linear-dform-chernick).
+Stated but not proved: `MetaMathlibExt.isUniversalLinearDForm_chernick` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-universal-linear-dform-chernick).
 
 ## Prime $k$-tuples give primary $5$-Carmichael numbers of every three-term signature
 
@@ -325,7 +325,7 @@ $\left(\frac{5}{p}\right)$ is the Jacobi symbol.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.infinite_primary_fiveCarmichael_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-five-carmichael-of-prim).
+Stated but not proved: `MetaMathlibExt.infinite_primary_fiveCarmichael_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-five-carmichael-of-prim).
 
 ## The $D$-Carmichael numbers of the form $3qr$
 
@@ -339,7 +339,7 @@ $(D \mid 3) = (D' \mid 3)$, $(D \mid q) = (D' \mid q)$ and $(D \mid r) = (D' \mi
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.threeQR_isDCarmichael_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#three-qr-is-dcarmichael-iff).
+Stated but not proved: `MetaMathlibExt.threeQR_isDCarmichael_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#three-qr-is-dcarmichael-iff).
 
 ## Primary and secondary $5$-Carmichael numbers from prime quadruples
 
@@ -358,7 +358,7 @@ $q$, $r$ and $s$ all prime.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.primaryFiveCarmichael_pairs_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#primary-five-carmichael-pairs-of-prime-k).
+Stated but not proved: `MetaMathlibExt.primaryFiveCarmichael_pairs_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#primary-five-carmichael-pairs-of-prime-k).
 
 ## Primary and secondary $13$-Carmichael numbers from prime quadruples
 
@@ -379,7 +379,7 @@ $r$ and $s$ all prime.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.primaryThirteenCarmichael_pairs_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#primary-thirteen-carmichael-pairs-of-pri).
+Stated but not proved: `MetaMathlibExt.primaryThirteenCarmichael_pairs_of_primeKTuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#primary-thirteen-carmichael-pairs-of-pri).
 
 ## Universal $5$- and $13$-forms from prime quadruples
 
@@ -407,7 +407,7 @@ with the $13$-form of Theorem 9) fix it as $5$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.universal_fiveThirteen_forms` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#universal-five-thirteen-forms).
+Stated but not proved: `MetaMathlibExt.universal_fiveThirteen_forms` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#universal-five-thirteen-forms).
 
 ## Schinzel's Hypothesis H gives numbers that are primary $5$- and $(-11)$-Carmichael
 
@@ -425,7 +425,7 @@ $\left(\frac{-11}{p_2}\right) = 1$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.infinite_primary_five_negEleven_of_schinzelH` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-five-neg-eleven-of-schi).
+Stated but not proved: `MetaMathlibExt.infinite_primary_five_negEleven_of_schinzelH` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#infinite-primary-five-neg-eleven-of-schi).
 
 ## Bi-Carmichael numbers for signatures of opposite signs
 
@@ -442,7 +442,7 @@ signature $\sigma$ and $D'$-Carmichael with signature $\sigma'$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.isDCarmichael_opposite_signs` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-opposite-signs).
+Stated but not proved: `MetaMathlibExt.isDCarmichael_opposite_signs` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-opposite-signs).
 
 ## Three-prime-factor $D$-Carmichael numbers have a single Jacobi sign
 
@@ -455,7 +455,7 @@ $\left(\frac{D}{n}\right) = \left(\frac{D'}{n}\right)$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.jacobiSym_eq_of_isDCarmichael_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#jacobi-sym-eq-of-is-dcarmichael-three).
+Stated but not proved: `MetaMathlibExt.jacobiSym_eq_of_isDCarmichael_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#jacobi-sym-eq-of-is-dcarmichael-three).
 
 ## Ballot's Lemma 3: the three divisibilities persist modulo $c_1 c_2 c_3$
 
@@ -477,7 +477,7 @@ $2 \nmid 24 - 1$.
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.mul_dvd_prod_sub_sign_of_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#mul-dvd-prod-sub-sign-of-mod-eq).
+Stated but not proved: `MetaMathlibExt.mul_dvd_prod_sub_sign_of_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#mul-dvd-prod-sub-sign-of-mod-eq).
 
 ## Divisibility conditions for $D$-Carmichael numbers $3qr$
 
@@ -491,7 +491,7 @@ $r = 3q + 2\gamma$ if $\gamma = -\alpha\beta$, and $2r = 3q + \gamma$ if $\gamma
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.threeQR_isDCarmichael_divisibility` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#three-qr-is-dcarmichael-divisibility).
+Stated but not proved: `MetaMathlibExt.threeQR_isDCarmichael_divisibility` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#three-qr-is-dcarmichael-divisibility).
 
 ## Williams' characterization of two-prime $D$-Carmichael numbers
 
@@ -504,7 +504,7 @@ $\left(\frac{D}{p_2}\right) = 1$, where $\left(\frac{D}{p}\right)$ is the Jacobi
 
 - Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.isDCarmichael_mul_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-mul-iff).
+Stated but not proved: `MetaMathlibExt.isDCarmichael_mul_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AbsoluteLucasPseudoprimesWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html#is-dcarmichael-mul-iff).
 
 ## Depends on
 
@@ -513,4 +513,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Absolute Lucas pseudoprimes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/absolute-lucas-pseudoprimes)

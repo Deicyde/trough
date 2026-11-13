@@ -8,13 +8,13 @@ proof: formalized
 
 # 95.14 Classifying torsors
 
-Section 95.14 of the Stacks Project, [Tag 036Z](https://stacks.math.columbia.edu/tag/036Z). 9 tags here are carried by 46 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 95.14 of the Stacks Project, [Tag 036Z](https://stacks.math.columbia.edu/tag/036Z). 9 tags here are carried by 46 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04UJ, a subsection
 
 [Tag 04UJ](https://stacks.math.columbia.edu/tag/04UJ) in the Stacks Project.
 
-**`SheafOfGroups.Torsors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L88). The attribute's comment: “the objects of 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
+**`SheafOfGroups.Torsors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L88). The attribute's comment: “the objects of 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
 
 > **Stacks 04UJ.** An object of the category `𝒢-Torsors` of torsors under a sheaf of groups
 > `𝒢` on a site `(C, J)`: an object `U` of `C` together with a `𝒢|_U`-torsor on the localized
@@ -24,7 +24,7 @@ Section 95.14 of the Stacks Project, [Tag 036Z](https://stacks.math.columbia.edu
 structure SheafOfGroups.Torsors (𝒢 : SheafOfGroups.{w} (C := C) J)
 ```
 
-**`SheafOfGroups.Torsors.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L134). The attribute's comment: “the morphisms of 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
+**`SheafOfGroups.Torsors.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L134). The attribute's comment: “the morphisms of 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
 
 > **Stacks 04UJ.** A morphism `(U, F) ⟶ (V, H)` of the category `𝒢-Torsors`: a morphism
 > `f : U ⟶ V` of `C` together with an isomorphism `α : f^{-1}H ⟶ F` of `𝒢|_U`-torsors. The
@@ -36,7 +36,7 @@ structure SheafOfGroups.Torsors (𝒢 : SheafOfGroups.{w} (C := C) J)
 structure Hom (T T' : Torsors.{t} 𝒢)
 ```
 
-**`SheafOfGroups.Torsors.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L198). The attribute's comment: “the category 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
+**`SheafOfGroups.Torsors.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L198). The attribute's comment: “the category 𝒢-Torsors”. References: SGA 1 XIII (1.3), “partial”.
 
 > **Stacks 04UJ.** The torsors under a sheaf of groups `𝒢` on a site `(C, J)` form a category
 > `𝒢-Torsors`: morphisms compose by composing `f` and `α`.
@@ -45,7 +45,7 @@ structure Hom (T T' : Torsors.{t} 𝒢)
 instance instCategory : Category (Torsors.{t} 𝒢)
 ```
 
-**`SheafOfGroups.Torsors.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L209). The attribute's comment: “the functor p to the site”. References: SGA 1 XIII (1.3), “partial”.
+**`SheafOfGroups.Torsors.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L209). The attribute's comment: “the functor p to the site”. References: SGA 1 XIII (1.3), “partial”.
 
 > **Stacks 04UJ.** The functor `p : 𝒢-Torsors ⥤ C` sending a pair `(U, F)` to `U`, which is
 > how `𝒢-Torsors` is regarded as a category over the site.
@@ -54,7 +54,7 @@ instance instCategory : Category (Torsors.{t} 𝒢)
 def projection : Torsors.{t} 𝒢 ⥤ C
 ```
 
-**`SheafOfGroups.Torsors.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L275). The attribute's comment: “the fibre categories are groupoids”.
+**`SheafOfGroups.Torsors.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CategoryOfTorsors.lean#L275). The attribute's comment: “the fibre categories are groupoids”.
 
 > **Stacks 04UJ.** A morphism of `𝒢-Torsors` whose morphism `f` of the site is an isomorphism
 > is itself an isomorphism. Every morphism of a fibre category of `p : 𝒢-Torsors ⥤ C` lies over an
@@ -69,7 +69,7 @@ theorem isIso_of_isIso_base : IsIso m
 
 [Tag 04UK](https://stacks.math.columbia.edu/tag/04UK) in the Stacks Project.
 
-**`SheafOfGroups.Torsors.projection_effectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean#L590). The attribute's comment: “condition (3): descent data are effective”. References: EGA IV (16.5.15), “more general”.
+**`SheafOfGroups.Torsors.projection_effectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean#L590). The attribute's comment: “condition (3): descent data are effective”. References: EGA IV (16.5.15), “more general”.
 
 > **Stacks 04UK**, condition (3) of Stacks 02ZI: every descent datum for
 > `p : 𝒢-Torsors ⥤ C` relative to a `J`-covering family with genuine fibre-product overlaps is
@@ -110,7 +110,7 @@ theorem projection_effectiveDescent {U : C} {I : Type s} (V : I → C) (f : ∀ 
     D.IsEffective
 ```
 
-**`SheafOfGroups.Torsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean#L719). References: SGA 3 IV (4.5.13), “special case”.
+**`SheafOfGroups.Torsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/EffectiveDescent.lean#L719). References: SGA 3 IV (4.5.13), “special case”.
 
 > **Stacks 04UK.** The functor `p : 𝒢-Torsors ⥤ C` of Stacks 04UJ is a stack in groupoids
 > over the site `(C, J)`: it is fibred in groupoids, its `Isom` presheaves are sheaves, and every
@@ -121,7 +121,7 @@ theorem projection_isStackInGroupoids :
     Functor.IsStackInGroupoids.{s} (projection : Torsors.{max u v s t} 𝒢 ⥤ C) J
 ```
 
-**`SheafOfGroups.Torsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/FiberedInGroupoids.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/FiberedInGroupoids.lean#L188). The attribute's comment: “condition (1): p is fibred in groupoids”. References: SGA 4 XVIII (1.2.1), “partial”.
+**`SheafOfGroups.Torsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/FiberedInGroupoids.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/FiberedInGroupoids.lean#L188). The attribute's comment: “condition (1): p is fibred in groupoids”. References: SGA 4 XVIII (1.2.1), “partial”.
 
 > **Stacks 04UK**, condition (1) of Stacks 02ZI. The functor `p : 𝒢-Torsors ⥤ C` of
 > Stacks 04UJ is fibred in groupoids: a morphism `f : V ⟶ U` of `C` lifts to the morphism
@@ -134,7 +134,7 @@ theorem projection_isFiberedInGroupoids :
     (projection : Torsors.{t} 𝒢 ⥤ C).IsFiberedInGroupoids
 ```
 
-**`SheafOfGroups.Torsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/IsomSheaf.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/IsomSheaf.lean#L45). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
+**`SheafOfGroups.Torsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/IsomSheaf.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/StackOfTorsors/IsomSheaf.lean#L45). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
 
 > **Stacks 04UK**, condition (2) of Stacks 02ZI: the presheaves `Isom(x, y)` on `C/U` are
 > sheaves. For two torsors `x` and `y` over the same object `U` of `C` and a covering family
@@ -169,7 +169,7 @@ theorem projection_isomIsSheaf {U : C} (x y : Torsors.{t} 𝒢)
 
 [Tag 04UL](https://stacks.math.columbia.edu/tag/04UL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SheafTorsors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L123). The attribute's comment: “the objects of 𝒢/ℬ-Torsors”.
+**`AlgebraicGeometry.Space.SheafTorsors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L123). The attribute's comment: “the objects of 𝒢/ℬ-Torsors”.
 
 > **Stacks 04UL.** An object of the category `𝒢/ℬ-Torsors`: an object `U` of the big fppf site
 > of `S`, a section `b : U ⟶ ℬ` of `ℬ` over `U`, and a `U ×_{b, ℬ} 𝒢`-torsor `F` over `U`.
@@ -178,7 +178,7 @@ theorem projection_isomIsSheaf {U : C} (x y : Torsors.{t} 𝒢)
 structure SheafTorsors
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L272). The attribute's comment: “the morphisms of 𝒢/ℬ-Torsors”.
+**`AlgebraicGeometry.Space.SheafTorsors.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L272). The attribute's comment: “the morphisms of 𝒢/ℬ-Torsors”.
 
 > **Stacks 04UL.** A morphism `(U, b, F) ⟶ (U', b', F')` of `𝒢/ℬ-Torsors`: a morphism
 > `f : U ⟶ U'` with `b = b' ∘ f` together with an equivariant identification of `F` with
@@ -188,7 +188,7 @@ structure SheafTorsors
 structure Hom (T T' : SheafTorsors G)
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L323). The attribute's comment: “the category 𝒢/ℬ-Torsors”.
+**`AlgebraicGeometry.Space.SheafTorsors.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L323). The attribute's comment: “the category 𝒢/ℬ-Torsors”.
 
 > **Stacks 04UL.** The torsors for a group object `𝒢` over a sheaf `ℬ` form a category
 > `𝒢/ℬ-Torsors`: morphisms compose by composing `f` and the identification of the total
@@ -198,7 +198,7 @@ structure Hom (T T' : SheafTorsors G)
 instance instCategory : Category (SheafTorsors G)
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L336). The attribute's comment: “the functor p to the site”.
+**`AlgebraicGeometry.Space.SheafTorsors.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L336). The attribute's comment: “the functor p to the site”.
 
 > **Stacks 04UL.** The functor `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` sending `(U, b, F)` to `U`,
 > which is how `𝒢/ℬ-Torsors` is regarded as a category over the big fppf site of `S`.
@@ -207,7 +207,7 @@ instance instCategory : Category (SheafTorsors G)
 def projection : SheafTorsors G ⥤ BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L391). The attribute's comment: “the fibre categories are groupoids”.
+**`AlgebraicGeometry.Space.SheafTorsors.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfSheafTorsors.lean#L391). The attribute's comment: “the fibre categories are groupoids”.
 
 > **Stacks 04UL.** A morphism of `𝒢/ℬ-Torsors` whose morphism `f` of the big fppf site is an
 > isomorphism is itself an isomorphism. Every morphism of a fibre category of
@@ -223,7 +223,7 @@ theorem isIso_of_isIso_base : IsIso φ
 
 [Tag 04UM](https://stacks.math.columbia.edu/tag/04UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SheafTorsors.projection_effectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean, line 1392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean#L1392). The attribute's comment: “condition (3): descent data are effective”.
+**`AlgebraicGeometry.Space.SheafTorsors.projection_effectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean, line 1392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean#L1392). The attribute's comment: “condition (3): descent data are effective”.
 
 > **Stacks 04UM.** Condition (3) of Stacks 02ZI for the functor
 > `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UL: every descent datum of `𝒢/ℬ-Torsors`
@@ -251,7 +251,7 @@ theorem projection_effectiveDescent
         D.IsEffective
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean, line 1789](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean#L1789).
+**`AlgebraicGeometry.Space.SheafTorsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean, line 1789](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/SheafTorsorsEffectiveDescent.lean#L1789).
 
 > **Stacks 04UM.** The functor `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UL is a stack in
 > groupoids over the big fppf site of `S`: the three conditions of Stacks 02ZI, namely
@@ -266,7 +266,7 @@ theorem projection_isStackInGroupoids
     Functor.IsStackInGroupoids.{w} (projection G) (BigFppfOver.topology 𝒞 S hS)
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean#L612). The attribute's comment: “condition (1): p is fibred in groupoids”.
+**`AlgebraicGeometry.Space.SheafTorsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean#L612). The attribute's comment: “condition (1): p is fibred in groupoids”.
 
 > **Stacks 04UM.** Condition (1) of Stacks 02ZI for the functor
 > `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UL: `p` is fibred in groupoids. Every morphism
@@ -277,7 +277,7 @@ theorem projection_isStackInGroupoids
 theorem projection_isFiberedInGroupoids : (projection G).IsFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.Space.SheafTorsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean#L1011). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
+**`AlgebraicGeometry.Space.SheafTorsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfSheafTorsors.lean#L1011). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
 
 > **Stacks 04UM.** Condition (2) of Stacks 02ZI for the functor
 > `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UL: for two objects `(U, b, F)` and `(U, b', F')`
@@ -307,7 +307,7 @@ theorem projection_isomIsSheaf
 
 [Tag 04UN](https://stacks.math.columbia.edu/tag/04UN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.TorsorsFor.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L280). The attribute's comment: “the morphisms of G-Principal, stated for an arbitrary trivializing covering property”.
+**`AlgebraicGeometry.Space.TorsorsFor.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L280). The attribute's comment: “the morphisms of G-Principal, stated for an arbitrary trivializing covering property”.
 
 > A morphism `(U, b, X) ⟶ (U', b', X')` of torsors: a morphism `f : U ⟶ U'` over `B` together
 > with an equivariant identification of `X` with `U ×_{f, U'} X'`.
@@ -316,7 +316,7 @@ theorem projection_isomIsSheaf
 structure Hom (T T' : TorsorsFor hB G P)
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L331). The attribute's comment: “the category G-Principal, whose composition is stated for an arbitrary trivializing covering property”.
+**`AlgebraicGeometry.Space.TorsorsFor.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L331). The attribute's comment: “the category G-Principal, whose composition is stated for an arbitrary trivializing covering property”.
 
 > The torsors under a group algebraic space `G` over `B` which are trivialized by a family
 > satisfying `P` form a category: morphisms compose by composing `f` and the identification of the
@@ -326,7 +326,7 @@ structure Hom (T T' : TorsorsFor hB G P)
 instance instCategory : Category (TorsorsFor hB G P)
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories of p : G-Principal ⥤ (Sch/S)\_fppf are groupoids, by the assertion for an arbitrary trivializing covering property”.
+**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories of p : G-Principal ⥤ (Sch/S)\_fppf are groupoids, by the assertion for an arbitrary trivializing covering property”.
 
 > A morphism of torsors whose morphism `f` of the big fppf site is an isomorphism is itself an
 > isomorphism. Every morphism of a fibre category of the functor `p` to the site lies over an
@@ -338,7 +338,7 @@ instance instCategory : Category (TorsorsFor hB G P)
 theorem isIso_of_isIso_base : IsIso φ
 ```
 
-**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean#L89). The attribute's comment: “the objects of G-Principal”.
+**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean#L90). The attribute's comment: “the objects of G-Principal”.
 
 > **Stacks 04UN.** An object of the category `G-Principal`: an object `U` of the big fppf site
 > of `S`, a morphism `b : U ⟶ B`, and a principal homogeneous space `X` over `U` under
@@ -348,7 +348,7 @@ theorem isIso_of_isIso_base : IsIso φ
 abbrev PrincipalHomogeneousSpaces
 ```
 
-**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean#L109). The attribute's comment: “the functor p to the site”.
+**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfPrincipalHomogeneousSpaces.lean#L110). The attribute's comment: “the functor p to the site”.
 
 > **Stacks 04UN.** The functor `p : G-Principal ⥤ (Sch/S)_fppf` sending `(U, b, X)` to `U`,
 > which is how `G-Principal` is regarded as a category over the big fppf site of `S`.
@@ -362,7 +362,7 @@ abbrev PrincipalHomogeneousSpaces.projection :
 
 [Tag 04UP](https://stacks.math.columbia.edu/tag/04UP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.isStackInGroupoids_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean#L742). The attribute's comment: “p : G-Principal ⥤ (Sch/S)\_fppf is a stack in groupoids once principal homogeneous spaces descend along fppf coverings as in (1)-(4)”.
+**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.isStackInGroupoids_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean#L742). The attribute's comment: “p : G-Principal ⥤ (Sch/S)\_fppf is a stack in groupoids once principal homogeneous spaces descend along fppf coverings as in (1)-(4)”.
 
 > **Stacks 04UP.** If principal homogeneous spaces satisfy effective descent along the
 > coverings of `(Sch/S)_fppf` (items (1)–(4) of the remark,
@@ -402,7 +402,7 @@ theorem isStackInGroupoids_of_descent (h : PrincipalHomogeneousSpaceDescent.{w} 
 
 [Tag 04UR](https://stacks.math.columbia.edu/tag/04UR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FppfTorsors`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L145). The attribute's comment: “the objects of G-Torsors”.
+**`AlgebraicGeometry.Space.FppfTorsors`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L145). The attribute's comment: “the objects of G-Torsors”.
 
 > **Stacks 04UR.** An object of the category `G-Torsors`: an object `U` of the big fppf site
 > of `S`, a morphism `b : U ⟶ B`, and an fppf torsor `X` over `U` under `G_U = U ×_{b, B} G`.
@@ -411,7 +411,7 @@ theorem isStackInGroupoids_of_descent (h : PrincipalHomogeneousSpaceDescent.{w} 
 abbrev FppfTorsors
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L280). The attribute's comment: “the morphisms of G-Torsors”.
+**`AlgebraicGeometry.Space.TorsorsFor.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L280). The attribute's comment: “the morphisms of G-Torsors”.
 
 > A morphism `(U, b, X) ⟶ (U', b', X')` of torsors: a morphism `f : U ⟶ U'` over `B` together
 > with an equivariant identification of `X` with `U ×_{f, U'} X'`.
@@ -420,7 +420,7 @@ abbrev FppfTorsors
 structure Hom (T T' : TorsorsFor hB G P)
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L331). The attribute's comment: “the category G-Torsors”.
+**`AlgebraicGeometry.Space.TorsorsFor.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L331). The attribute's comment: “the category G-Torsors”.
 
 > The torsors under a group algebraic space `G` over `B` which are trivialized by a family
 > satisfying `P` form a category: morphisms compose by composing `f` and the identification of the
@@ -430,7 +430,7 @@ structure Hom (T T' : TorsorsFor hB G P)
 instance instCategory : Category (TorsorsFor hB G P)
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories are groupoids”.
+**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories are groupoids”.
 
 > A morphism of torsors whose morphism `f` of the big fppf site is an isomorphism is itself an
 > isomorphism. Every morphism of a fibre category of the functor `p` to the site lies over an
@@ -442,7 +442,7 @@ instance instCategory : Category (TorsorsFor hB G P)
 theorem isIso_of_isIso_base : IsIso φ
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L415). The attribute's comment: “the functor p to the site”.
+**`AlgebraicGeometry.Space.FppfTorsors.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L415). The attribute's comment: “the functor p to the site”.
 
 > **Stacks 04UR.** The functor `p : G-Torsors ⥤ (Sch/S)_fppf` sending `(U, b, X)` to `U`,
 > which is how `G-Torsors` is regarded as a category over the big fppf site of `S`.
@@ -455,7 +455,7 @@ abbrev projection : FppfTorsors hB G ⥤ BigFppfOver 𝒞 S hS
 
 [Tag 04US](https://stacks.math.columbia.edu/tag/04US) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FppfTorsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean#L182). The attribute's comment: “condition (1): p is fibred in groupoids”.
+**`AlgebraicGeometry.Space.FppfTorsors.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean#L182). The attribute's comment: “condition (1): p is fibred in groupoids”.
 
 > Condition (1) of Stacks 02ZI for the functor `p : G-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UR:
 > `p` is fibred in groupoids.
@@ -464,7 +464,7 @@ abbrev projection : FppfTorsors hB G ⥤ BigFppfOver 𝒞 S hS
 theorem projection_isFiberedInGroupoids : (projection hB G).IsFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean#L270). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
+**`AlgebraicGeometry.Space.FppfTorsors.projection_isomIsSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/StackOfFppfTorsors.lean#L270). The attribute's comment: “condition (2): the Isom presheaves are sheaves”.
 
 > Condition (2) of Stacks 02ZI for the functor `p : G-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UR:
 > for two objects `(U, b, X)` and `(U, b', X')` over the same object of the big fppf site of `S`,
@@ -487,7 +487,7 @@ theorem projection_isomIsSheaf
       xr yr xrij yrij
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.hasEffectiveDescent_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L108). The attribute's comment: “condition (3): effectivity of descent, with nothing carried”.
+**`AlgebraicGeometry.Space.FppfTorsors.hasEffectiveDescent_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L108). The attribute's comment: “condition (3): effectivity of descent, with nothing carried”.
 
 > **Stacks 04US**, condition (3) of Stacks 026F for `p : G-Torsors ⥤ (Sch/S)_fppf`, with
 > nothing carried: every descent datum relative to a covering sieve of the big fppf site of `S` is
@@ -508,7 +508,7 @@ theorem hasEffectiveDescent_projection (hB : IsAlgebraicSpace 𝒞 S hS B)
     Functor.HasEffectiveDescent (projection hB G) (BigFppfOver.topology 𝒞 S hS)
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.projection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L126). The attribute's comment: “the three conditions of Stacks 026F together, with nothing carried”.
+**`AlgebraicGeometry.Space.FppfTorsors.projection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L126). The attribute's comment: “the three conditions of Stacks 026F together, with nothing carried”.
 
 > **Stacks 04US**, with nothing carried: the projection
 > `p : G-Torsors ⥤ (Sch/S)_fppf` of Stacks 04UR is a stack over the big fppf site of `S`, in the
@@ -525,7 +525,7 @@ theorem projection_isStack (hB : IsAlgebraicSpace 𝒞 S hS B)
     Functor.IsStack (projection hB G) (BigFppfOver.topology 𝒞 S hS)
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L146). The attribute's comment: “the stack in groupoids in the rendering of Stacks 02ZI, with nothing carried”.
+**`AlgebraicGeometry.Space.FppfTorsors.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L146). The attribute's comment: “the stack in groupoids in the rendering of Stacks 02ZI, with nothing carried”.
 
 > **Stacks 04US**, with nothing carried, in the rendering of Stacks 02ZI: the projection
 > `p : G-Torsors ⥤ (Sch/S)_fppf` is a stack in groupoids over the big fppf site of `S`.
@@ -539,7 +539,7 @@ theorem projection_isStackInGroupoids (hB : IsAlgebraicSpace 𝒞 S hS B)
     Functor.IsStackInGroupoids.{w} (projection hB G) (BigFppfOver.topology 𝒞 S hS)
 ```
 
-**`AlgebraicGeometry.Space.torsorProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L232). The attribute's comment: “condition (1) for the TorsorObj rendering, with nothing carried”.
+**`AlgebraicGeometry.Space.torsorProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L232). The attribute's comment: “condition (1) for the TorsorObj rendering, with nothing carried”.
 
 > **Stacks 04US**, condition (1) of Stacks 02ZI for the second rendering of the category of
 > fppf `G`-torsors: `AlgebraicGeometry.Space.torsorProjection` is fibred in groupoids.
@@ -552,7 +552,7 @@ theorem torsorProjection_isFiberedInGroupoids :
     (torsorProjection hB G).IsFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.Space.torsorProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L244). The attribute's comment: “the stack property for the TorsorObj rendering, with nothing carried”.
+**`AlgebraicGeometry.Space.torsorProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L244). The attribute's comment: “the stack property for the TorsorObj rendering, with nothing carried”.
 
 > **Stacks 04US** in full, with nothing carried, for the second rendering of the category of
 > fppf `G`-torsors: `AlgebraicGeometry.Space.torsorProjection` is a stack over the big fppf site
@@ -570,7 +570,7 @@ theorem torsorProjection_isStack :
 
 [Tag 04UT](https://stacks.math.columbia.edu/tag/04UT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FppfTorsors.comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L167). The attribute's comment: “the comparison functor”.
+**`AlgebraicGeometry.Space.FppfTorsors.comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L167). The attribute's comment: “the comparison functor”.
 
 > The comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` which associates to a triple `(U, b, X)`
 > the triple `(U, b, 𝒳)` where `𝒳` is `X` viewed as a sheaf.
@@ -580,7 +580,7 @@ def comparison (hB : IsAlgebraicSpace 𝒞 S hS B) (G : GroupAlgebraicSpace 𝒞
     FppfTorsors hB G ⥤ SheafTorsors G.obj
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.comparison_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L191). The attribute's comment: “the comparison functor lies over the site”.
+**`AlgebraicGeometry.Space.FppfTorsors.comparison_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L191). The attribute's comment: “the comparison functor lies over the site”.
 
 > The comparison functor is a 1-morphism of categories over the big fppf site of `S`: it
 > sends a triple `(U, b, X)` to a triple with the same base object `U` and a morphism to a
@@ -592,7 +592,7 @@ theorem comparison_comp_projection (hB : IsAlgebraicSpace 𝒞 S hS B)
     comparison hB G ⋙ SheafTorsors.projection G.obj = projection hB G
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.instFaithfulComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L199). The attribute's comment: “the comparison functor is faithful”.
+**`AlgebraicGeometry.Space.FppfTorsors.instFaithfulComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L199). The attribute's comment: “the comparison functor is faithful”.
 
 > The comparison functor is faithful: a morphism of `G-Torsors` is determined by the
 > morphism of `𝒢/ℬ-Torsors` it becomes.
@@ -601,7 +601,7 @@ theorem comparison_comp_projection (hB : IsAlgebraicSpace 𝒞 S hS B)
 instance instFaithfulComparison : (comparison hB G).Faithful
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.instFullComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L206). The attribute's comment: “the comparison functor is full”.
+**`AlgebraicGeometry.Space.FppfTorsors.instFullComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L206). The attribute's comment: “the comparison functor is full”.
 
 > The comparison functor is full: a morphism of `𝒢/ℬ-Torsors` between torsors of algebraic
 > spaces is already a morphism of `G-Torsors`.
@@ -610,7 +610,7 @@ instance instFaithfulComparison : (comparison hB G).Faithful
 instance instFullComparison : (comparison hB G).Full
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.isEquivalenceOverComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L203). The attribute's comment: “the hypothesis-carrying form, taking hdesc — effectivity of descent for G-Torsors, condition (3) of Stacks 02ZI in Stacks 04US. That hypothesis is PROVED, as `FppfTorsors.hasEffectiveDescent_projection`, and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
+**`AlgebraicGeometry.Space.FppfTorsors.isEquivalenceOverComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L204). The attribute's comment: “the hypothesis-carrying form, taking hdesc — effectivity of descent for G-Torsors, condition (3) of Stacks 02ZI in Stacks 04US. That hypothesis is PROVED, as `FppfTorsors.hasEffectiveDescent_projection`, and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
 
 > If every descent datum of fppf torsors of algebraic spaces along a covering sieve of the big
 > fppf site of `S` is effective (`hdesc`, condition (3) of Stacks 02ZI for
@@ -629,7 +629,7 @@ noncomputable def isEquivalenceOverComparison (hB : IsAlgebraicSpace 𝒞 S hS B
       (comparison hB G)
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L220). The attribute's comment: “the hypothesis-carrying form of the criterion Stacks 046N, taking the two stack conditions Stacks 04US and Stacks 04UM as hsource and htarget. BOTH are proved — `FppfTorsors.projection_isStack` and `SheafTorsors.projection_isStackInGroupoids` — and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
+**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L221). The attribute's comment: “the hypothesis-carrying form of the criterion Stacks 046N, taking the two stack conditions Stacks 04US and Stacks 04UM as hsource and htarget. BOTH are proved — `FppfTorsors.projection_isStack` and `SheafTorsors.projection_isStackInGroupoids` — and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
 
 > If both `p : G-Torsors ⥤ (Sch/S)_fppf` and `p : 𝒢/ℬ-Torsors ⥤ (Sch/S)_fppf` are stacks over
 > the big fppf site of `S` (Stacks 04US and Stacks 04UM), then the comparison functor is an
@@ -644,7 +644,7 @@ theorem nonempty_isEquivalenceOver_comparison_of_isStack (hB : IsAlgebraicSpace 
       (comparison hB G))
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.isEquivalenceOverComparisonOfAlgebraic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L295). The attribute's comment: “the hypothesis-carrying form, taking halg — algebraicity of the total space of every 𝒢/ℬ-torsor sheaf, which `isAlgebraicSpace_total_of_isEquivalenceOver` shows the tag's conclusion in turn implies, so the two are equivalent. halg is PROVED, via `isBootstrapAlgebraicSpaceAlongFlatSurjection`, and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
+**`AlgebraicGeometry.Space.FppfTorsors.isEquivalenceOverComparisonOfAlgebraic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L296). The attribute's comment: “the hypothesis-carrying form, taking halg — algebraicity of the total space of every 𝒢/ℬ-torsor sheaf, which `isAlgebraicSpace_total_of_isEquivalenceOver` shows the tag's conclusion in turn implies, so the two are equivalent. halg is PROVED, via `isBootstrapAlgebraicSpaceAlongFlatSurjection`, and the form carrying nothing is `FppfTorsors.nonempty_isEquivalenceOver_comparison`”.
 
 > The comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` is an equivalence of stacks in groupoids
 > over the big fppf site of `S` as soon as every torsor of sheaves has an algebraic space as total
@@ -658,7 +658,7 @@ noncomputable def isEquivalenceOverComparisonOfAlgebraic
       (comparison hB G)
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison_iff_isAlgebraicSpace_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L347). The attribute's comment: “the equivalence holds exactly when every 𝒢/ℬ-torsor sheaf has an algebraic space as total space; the tag asserts the left-hand side, which this does not prove unconditionally”.
+**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison_iff_isAlgebraicSpace_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonEquivalence.lean#L348). The attribute's comment: “the equivalence holds exactly when every 𝒢/ℬ-torsor sheaf has an algebraic space as total space; the tag asserts the left-hand side, which this does not prove unconditionally”.
 
 > The comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` is an equivalence of stacks in groupoids
 > over the big fppf site of `S` if and only if every `𝒢/ℬ`-torsor sheaf has an algebraic space as
@@ -672,7 +672,7 @@ theorem nonempty_isEquivalenceOver_comparison_iff_isAlgebraicSpace_total
       ∀ T : SheafTorsors G.obj, IsAlgebraicSpace 𝒞 S hS T.total.left
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.isFibredOneMorphism_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean#L45). The attribute's comment: “the comparison functor is a 1-morphism of fibred categories”.
+**`AlgebraicGeometry.Space.FppfTorsors.isFibredOneMorphism_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean#L45). The attribute's comment: “the comparison functor is a 1-morphism of fibred categories”.
 
 > The comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` is a 1-morphism of fibred categories over
 > the big fppf site of `S`: it lies over the site and preserves strongly cartesian morphisms.
@@ -684,7 +684,7 @@ theorem isFibredOneMorphism_comparison (hB : IsAlgebraicSpace 𝒞 S hS B)
       (comparison hB G)
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean#L67). The attribute's comment: “the equivalence of stacks in groupoids, with nothing carried”.
+**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean#L67). The attribute's comment: “the equivalence of stacks in groupoids, with nothing carried”.
 
 > **Stacks 04UT**, with nothing carried, and with it the `𝒢/ℬ-Torsors` leg of **Stacks
 > 0CQJ**: the comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` is an equivalence of stacks in
@@ -708,4 +708,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 95.14, Tag 036Z](https://stacks.math.columbia.edu/tag/036Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

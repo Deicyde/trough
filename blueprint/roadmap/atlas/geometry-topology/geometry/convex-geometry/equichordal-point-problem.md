@@ -7,14 +7,14 @@ statement: formalized
 
 # Equichordal point problem
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html).
 
 ## Euclidean plane for the equichordal point problem
 
 The Euclidean plane is the space
 $\mathbb{R}^2$ of pairs of real numbers with the Euclidean inner product and norm.
 
-Formalized by `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.Plane`, an abbreviation declared in [WantedExt/Geometry/EquichordalWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/EquichordalWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#plane).
+Formalized by `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.Plane`, an abbreviation declared in [WantedExt/Geometry/EquichordalWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/EquichordalWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#plane).
 
 ## Equichordal point
 
@@ -28,7 +28,7 @@ equals $L$.
 The open segment condition makes $P + a u$ and $P - b u$ the endpoints of the chord through $P$
 in direction $u$, ruling out other boundary crossings for nonconvex star-shaped domains.
 
-Formalized by `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.IsEquichordalPoint`, a definition declared in [WantedExt/Geometry/EquichordalWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/EquichordalWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#is-equichordal-point).
+Formalized by `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.IsEquichordalPoint`, a definition declared in [WantedExt/Geometry/EquichordalWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/EquichordalWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#is-equichordal-point).
 
 ## Equichordal point theorem
 
@@ -40,7 +40,7 @@ points $P \ne Q$ of the plane such that both $P$ and $Q$ are equichordal points 
 
 - M. R. Rychlik, A complete solution to the equichordal point problem of Fujiwara, Blaschke, Rothe and Weizenböck, Invent. Math. 129 (1997). Listed as §205 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §205. Problem `equichordal_point_unique` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.equichordal_point_unique` is written with `theorem_wanted` in [WantedExt/Geometry/EquichordalWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/EquichordalWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#equichordal-point-unique).
+Stated but not proved: `MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.equichordal_point_unique` is written with `theorem_wanted` in [WantedExt/Geometry/EquichordalWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/EquichordalWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html#equichordal-point-unique).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Equichordal point problem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/equichordal-point-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/convex-geometry/equichordal-point-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/convex-geometry/equichordal-point-problem)

@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/33](https://www.erdosproblems.com/33)
 
-*Quoted from [FormalConjectures/ErdosProblems/33.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/33.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/33.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/33.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/33](https://www.erdosproblems.com/33).
 
@@ -28,7 +28,7 @@ theorem erdos_33 : ⨅ A : {A : Set ℕ | AdditiveBasisCondition A}, Filter.atTo
     (A.1 ∩ Icc 1 N).ncard / (√N : EReal)) = erdos_33.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/33.lean#L47).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/33.lean#L47).
 
 ## `Erdos33.erdos_33.variants.one_mem_lowerBounds`
 
@@ -44,7 +44,7 @@ theorem erdos_33.variants.one_mem_lowerBounds :
       (A.1 ∩ Icc 1 N).ncard / (√N : EReal))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/33.lean#L59).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/33.lean#L59).
 
 ## `Erdos33.erdos_33.variants.vanDoorn`
 
@@ -60,7 +60,7 @@ theorem erdos_33.variants.vanDoorn :
     (A.1 ∩ Icc 1 N).ncard / (√N : EReal)) ≤ ↑(2 * (φ ^ ((5 : ℝ) / 2)))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/33.lean#L72).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/33.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/33.lean#L72).
 
 ## Depends on
 
@@ -68,5 +68,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/33.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/33.lean)
+- [FormalConjectures/ErdosProblems/33.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/33.lean)
 - [erdosproblems.com/33](https://www.erdosproblems.com/33)

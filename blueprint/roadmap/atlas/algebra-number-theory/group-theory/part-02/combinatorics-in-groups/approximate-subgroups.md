@@ -7,7 +7,7 @@ statement: formalized
 
 # Approximate subgroups
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html).
 
 ## Breuillard–Green–Tao structure theorem for approximate subgroups
 
@@ -24,7 +24,7 @@ product set $(AA^{-1})^C$, $F$ has at most $C$ elements, and $A \subseteq FH$.
 
 - S. Machado, *Topics in Geometric Group Theory* lecture notes, <https://sites.google.com/view/simonmachado/teaching>, Theorem 4.4; original B. Breuillard, B. Green, T. Tao, *The structure of approximate groups*, Publ. Math. IHÉS 116 (2012).
 
-Stated but not proved: `MetaMathlibExt.breuillard_green_tao_approximate_subgroup` is written with `theorem_wanted` in [WantedExt/GroupTheory/ApproximateSubgroupStructureWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ApproximateSubgroupStructureWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html#breuillard-green-tao-approximate-subgrou).
+Stated but not proved: `MetaMathlibExt.breuillard_green_tao_approximate_subgroup` is written with `theorem_wanted` in [WantedExt/GroupTheory/ApproximateSubgroupStructureWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ApproximateSubgroupStructureWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html#breuillard-green-tao-approximate-subgrou).
 
 ## Breuillard–Green–Tao theorem (small doubling form)
 
@@ -42,7 +42,7 @@ $a_1 N, \dots, a_C N$ of $N$.
 
 - S. Machado, *Topics in Geometric Group Theory* lecture notes, <https://sites.google.com/view/simonmachado/teaching>, Theorem 1.8; original B. Breuillard, B. Green, T. Tao, *The structure of approximate groups*, Publ. Math. IHÉS 116 (2012).
 
-Stated but not proved: `MetaMathlibExt.breuillard_green_tao_small_doubling` is written with `theorem_wanted` in [WantedExt/GroupTheory/BreuillardGreenTaoSmallDoublingWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BreuillardGreenTaoSmallDoublingWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html#breuillard-green-tao-small-doubling).
+Stated but not proved: `MetaMathlibExt.breuillard_green_tao_small_doubling` is written with `theorem_wanted` in [WantedExt/GroupTheory/BreuillardGreenTaoSmallDoublingWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BreuillardGreenTaoSmallDoublingWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html#breuillard-green-tao-small-doubling).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Approximate subgroups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/combinatorics-in-groups/approximate-subgroups)

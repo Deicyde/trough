@@ -7,7 +7,7 @@ statement: formalized
 
 # Fubini numbers modulo an integer
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html).
 
 ## Falling factorial in terms of signed Stirling numbers
 
@@ -22,7 +22,7 @@ holds, where $s(n, k)$ is the signed Stirling number of the first kind.
 
 - Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Proposition 2 (`jis-2025-25.4.1-prop-2`).
 
-Stated but not proved: `MetaMathlibExt.descPochhammer_eq_sum_signedStirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#desc-pochhammer-eq-sum-signed-stirling-f).
+Stated but not proved: `MetaMathlibExt.descPochhammer_eq_sum_signedStirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#desc-pochhammer-eq-sum-signed-stirling-f).
 
 ## A Carmichael congruence for all residues modulo $K$
 
@@ -35,7 +35,7 @@ $a^R \equiv a^{\lambda(K) + R} \pmod K$ for every natural number $a < K$.
 
 - Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Proposition 4 (`jis-2025-25.4.1-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.pow_add_carmichael_modEq_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#pow-add-carmichael-mod-eq-of-lt).
+Stated but not proved: `MetaMathlibExt.pow_add_carmichael_modEq_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#pow-add-carmichael-mod-eq-of-lt).
 
 ## Eventual periodicity of the Fubini numbers modulo $K$
 
@@ -48,7 +48,7 @@ satisfy $F(n + \lambda(K)) \equiv F(n) \pmod K$ for every natural number $n \ge 
 
 - Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary 10 (`jis-2025-25.4.1-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.fubiniNumber_add_carmichael_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#fubini-number-add-carmichael-mod-eq).
+Stated but not proved: `MetaMathlibExt.fubiniNumber_add_carmichael_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#fubini-number-add-carmichael-mod-eq).
 
 ## Eventual periods of the Fubini numbers modulo an odd number
 
@@ -62,7 +62,7 @@ eventual period of the Fubini numbers modulo $K$ is exactly $\lambda(K)$.
 
 - Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary 11 (`jis-2025-25.4.1-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.fubiniNumber_eventuallyPeriodic_iff_carmichael_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#fubini-number-eventually-periodic-iff-ca).
+Stated but not proved: `MetaMathlibExt.fubiniNumber_eventuallyPeriodic_iff_carmichael_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#fubini-number-eventually-periodic-iff-ca).
 
 ## Eventual periodicity of the $r$-Fubini numbers modulo $K$
 
@@ -79,7 +79,7 @@ $F_r(n + \lambda(K)) \equiv F_r(n) \pmod K$ for every natural number $n \ge r - 
 
 - Benjamin Schreyer, *Rigged Horse Numbers and their Modular Periodicity*, Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary 12 (`jis-2025-25.4.1-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.rFubini_add_carmichael_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#r-fubini-add-carmichael-mod-eq).
+Stated but not proved: `MetaMathlibExt.rFubini_add_carmichael_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RiggedHorseNumbersWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html#r-fubini-add-carmichael-mod-eq).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fubini numbers modulo an integer](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/fubini-numbers-modulo-an-integer)

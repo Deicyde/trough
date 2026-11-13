@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.22 Localization of morphisms of ringed topoi
 
-Section 18.22 of the Stacks Project, [Tag 04J6](https://stacks.math.columbia.edu/tag/04J6). 4 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.22 of the Stacks Project, [Tag 04J6](https://stacks.math.columbia.edu/tag/04J6). 4 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04IF, a lemma
 
 [Tag 04IF](https://stacks.math.columbia.edu/tag/04IF) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.localizedSmallModelMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalizedMorphism.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalizedMorphism.lean#L89). The attribute's comment: “the localized morphism of ringed topoi of a morphism of the small étale ringed topoi of two schemes, obtained by transporting the morphism through the `Type u` equi-universe models of the two small étale ringed topoi, to which the statement at `RingedTopos.{u, u, u}` applies”.
+**`AlgebraicGeometry.SmallEtale.localizedSmallModelMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalizedMorphism.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalizedMorphism.lean#L89). The attribute's comment: “the localized morphism of ringed topoi of a morphism of the small étale ringed topoi of two schemes, obtained by transporting the morphism through the `Type u` equi-universe models of the two small étale ringed topoi, to which the statement at `RingedTopos.{u, u, u}` applies”.
 
 > **Stacks 04IF for the small étale ringed topoi of schemes.**  Let
 > `ψ : (S_étale, 𝒪_S) ⟶ (T_étale, 𝒪_T)` be a morphism of the small étale ringed topoi of two
@@ -40,7 +40,7 @@ def localizedSmallModelMorphism
       ((smallModelRingedTopos B T hT).localizedRingedTopos G)
 ```
 
-**`AlgebraicGeometry.localizedOverOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/OpenLocalization.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/OpenLocalization.lean#L178). The attribute's comment: “the localization of a morphism of ringed topoi at the sheaf represented by an open subscheme `V` of the target, for the small étale ringed topoi of two schemes: the morphism of ringed topoi from the localization of the source at the inverse image of that sheaf to the localization of the target at it, with the structure map of 04IF. This is the instance of 04IF at `RingedTopos.{u, u + 1, u}`, the universes of the small étale ringed topos, which is what the Zariski gluing of 04I7 restricts along; it is *not* a morphism between the small étale ringed topoi of two open subschemes, that identification being 04IE for the étale site, which is not carried”.
+**`AlgebraicGeometry.localizedOverOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/OpenLocalization.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/OpenLocalization.lean#L178). The attribute's comment: “the localization of a morphism of ringed topoi at the sheaf represented by an open subscheme `V` of the target, for the small étale ringed topoi of two schemes: the morphism of ringed topoi from the localization of the source at the inverse image of that sheaf to the localization of the target at it, with the structure map of 04IF. This is the instance of 04IF at `RingedTopos.{u, u + 1, u}`, the universes of the small étale ringed topos, which is what the Zariski gluing of 04I7 restricts along; it is *not* a morphism between the small étale ringed topoi of two open subschemes, that identification being 04IE for the étale site, which is not carried”.
 
 > **Stacks 04IF for the small étale ringed topoi: the restriction of a morphism of ringed
 > topoi to a pair of opens.**
@@ -75,7 +75,7 @@ def localizedOverOpen (X Y : B.Scheme)
           (openRepresentable'.{u, u} B Y.obj Y.property V)))
 ```
 
-**`AlgebraicGeometry.Space.localizedSmallModelMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLocalizedMorphism.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLocalizedMorphism.lean#L85). The attribute's comment: “the localized morphism of ringed topoi of a morphism of the small étale ringed topoi of two algebraic spaces, obtained by transporting the morphism through the `Type u` equi-universe models of the two small étale ringed topoi, to which the statement at `RingedTopos.{u, u, u}` applies”.
+**`AlgebraicGeometry.Space.localizedSmallModelMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLocalizedMorphism.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLocalizedMorphism.lean#L85). The attribute's comment: “the localized morphism of ringed topoi of a morphism of the small étale ringed topoi of two algebraic spaces, obtained by transporting the morphism through the `Type u` equi-universe models of the two small étale ringed topoi, to which the statement at `RingedTopos.{u, u, u}` applies”.
 
 > **Stacks 04IF for the small étale ringed topoi of algebraic spaces.**  Let
 > `ψ : (X_étale, 𝒪_X) ⟶ (Y_étale, 𝒪_Y)` be a morphism of the small étale ringed topoi of two
@@ -101,7 +101,7 @@ def localizedSmallModelMorphism
         (structureSheaf B S hS Y.1 Y.2)).localizedRingedTopos G)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.localizationCompPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/ModulePushforwardLocalization.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/ModulePushforwardLocalization.lean#L1011). The attribute's comment: “f'\_* j\_F^* = j\_G^* f\_*, on sheaves of modules”.
+**`Stacks.Sheaves.RingedToposModules.localizationCompPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/ModulePushforwardLocalization.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/ModulePushforwardLocalization.lean#L1011). The attribute's comment: “f'\_* j\_F^* = j\_G^* f\_*, on sheaves of modules”.
 
 > **Stacks 04IF, the clause `f'_* j_F^* = j_G^* f_*` on sheaves of modules.** For a morphism
 > of ringed topoi `f : (Sh(C), O) ⟶ (Sh(D), O')`, a sheaf of sets `G` on `D` and `F = f^{-1}G`,
@@ -129,7 +129,7 @@ noncomputable def localizationCompPushforwardModulesIso :
           (Y.localizationMorphism G).toRingedToposModulesHom
 ```
 
-**`AlgebraicGeometry.RingedToposHom.localizedRingedToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean#L504). The attribute's comment: “the square of 04IF as a 2-isomorphism of ringed topoi”.
+**`AlgebraicGeometry.RingedToposHom.localizedRingedToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean#L504). The attribute's comment: “the square of 04IF as a 2-isomorphism of ringed topoi”.
 
 > **Stacks 04IF**: the square of Stacks 04IF as a 2-isomorphism of ringed topoi.
 >
@@ -148,7 +148,7 @@ noncomputable def localizedRingedToposSquare (G : Y.Topos) :
         f (X.localizationMorphism (f.toToposHom.inverseImage.obj G)))
 ```
 
-**`AlgebraicGeometry.RingedToposHom.localizedInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L275). The attribute's comment: “the characterization (f')^\{-1}(H → G) = (f^\{-1}H → F) of f'”.
+**`AlgebraicGeometry.RingedToposHom.localizedInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L275). The attribute's comment: “the characterization (f')^\{-1}(H → G) = (f^\{-1}H → F) of f'”.
 
 > **Stacks 04IF**, the rule characterizing `f'`: read through the identifications of the two
 > localizations with their slice topoi, the inverse image of `f'` is `Over.post f⁻¹`, that is
@@ -163,7 +163,7 @@ noncomputable def localizedInverseImageIso :
       (Y.localizationEquivalence G).functor ⋙ Over.post f.toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedToposHom.inverseImageCompLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L289). The attribute's comment: “commutativity of the square, on inverse images”.
+**`AlgebraicGeometry.RingedToposHom.inverseImageCompLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L289). The attribute's comment: “commutativity of the square, on inverse images”.
 
 > **Stacks 04IF**, commutativity of the square on inverse images: `f⁻¹ ⋙ j\_F⁻¹ = j\_G⁻¹ ⋙
 > (f')⁻¹`. Concretely, the inverse image of a sheaf `H` on `D`, localized at `F`, is the inverse
@@ -178,7 +178,7 @@ noncomputable def inverseImageCompLocalizationIso :
         (localizedToposMorphism f G).inverseImage
 ```
 
-**`AlgebraicGeometry.RingedToposHom.localizationCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L315). The attribute's comment: “f'\_* j\_F^\{-1} = j\_G^\{-1} f\_*, on sheaves of sets”.
+**`AlgebraicGeometry.RingedToposHom.localizationCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L315). The attribute's comment: “f'\_* j\_F^\{-1} = j\_G^\{-1} f\_*, on sheaves of sets”.
 
 > **Stacks 04IF**: `f'_* j_F⁻¹ = j_G⁻¹ f_*`, on sheaves of sets.
 >
@@ -194,7 +194,7 @@ noncomputable def localizationCompPushforwardIso :
       f.toToposHom.pushforward ⋙ (Y.localizationMorphism G).toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedToposHom.localized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L365). The attribute's comment: “the localized morphism of ringed topoi (f', (f')^sharp)”.
+**`AlgebraicGeometry.RingedToposHom.localized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L365). The attribute's comment: “the localized morphism of ringed topoi (f', (f')^sharp)”.
 
 > **Stacks 04IF.** The **localized morphism of ringed topoi**
 > `(f', (f')♯) : (Sh(C)/F, O_F) ⟶ (Sh(D)/G, O'_G)`, with `F = f⁻¹G`.
@@ -210,7 +210,7 @@ noncomputable def localized :
       (Y.localizedRingedTopos G)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.localized_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L730). The attribute's comment: “commutativity of the square as a square of ringed topoi: the comparison of inverse images is compatible with the structure maps”.
+**`AlgebraicGeometry.RingedToposHom.localized_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposMorphismLocalization.lean#L730). The attribute's comment: “commutativity of the square as a square of ringed topoi: the comparison of inverse images is compatible with the structure maps”.
 
 > **Stacks 04IF**: the square of Stacks 04IF is a square of *ringed* topoi — the comparison of
 > inverse images carries the structure map of `f` restricted to the site of elements of `f⁻¹G` to
@@ -240,7 +240,7 @@ theorem localized_fSharpInverseImage_forget :
 
 [Tag 04J7](https://stacks.math.columbia.edu/tag/04J7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedComparisonTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/LocalizedRepresentableKey/TransposedComparison.lean, line 758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/LocalizedRepresentableKey/TransposedComparison.lean#L758). The attribute's comment: “the diagrams of 04J0 and 04IF agree via the identifications of 04J3, as a 2-isomorphism of morphisms of ringed topoi”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedComparisonTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/LocalizedRepresentableKey/TransposedComparison.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/LocalizedRepresentableKey/TransposedComparison.lean#L758). The attribute's comment: “the diagrams of 04J0 and 04IF agree via the identifications of 04J3, as a 2-isomorphism of morphisms of ringed topoi”.
 
 > **Stacks 04J7.** The diagrams of Stacks 04J0 and Stacks 04IF agree, via the identifications of
 > Stacks 04J3: the square commutes: the composite
@@ -272,7 +272,7 @@ noncomputable def Hom.localizedComparisonTwoIso :
         (f.compareMid V))
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentableInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L299). The attribute's comment: “the two localized morphisms have the same inverse image, via the identifications of 04J3”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentableInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L300). The attribute's comment: “the two localized morphisms have the same inverse image, via the identifications of 04J3”.
 
 > **Stacks 04J7**, on inverse images.  Read through the identifications of Stacks 04J3 of
 > `Sh(D/V)` with the localization of the ringed topos at `h_V^#` and of `Sh(C/U)` with the
@@ -291,7 +291,7 @@ noncomputable def Hom.localizedRepresentableInverseImageIso :
         (X.representableLocalizationEquivalence (f.u.obj V)).functor
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentablePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L318). The attribute's comment: “the two localized morphisms have the same direct image”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentablePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L319). The attribute's comment: “the two localized morphisms have the same direct image”.
 
 > **Stacks 04J7**, on direct images.  Read through the same identifications, the direct image
 > of Stacks 04IF's localized morphism is the direct image of Stacks 04J0's localized morphism.  The
@@ -307,7 +307,7 @@ noncomputable def Hom.localizedRepresentablePushforwardIso :
         (f.localizedRingedToposHom V).toToposHom.pushforward
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentable_forgetFSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L346). The attribute's comment: “the two maps (f')^sharp agree, each being the restriction j^\{-1}(f^sharp) of the structure map of f along its own localization morphism”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedRepresentable_forgetFSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableMorphismLocalization.lean#L347). The attribute's comment: “the two maps (f')^sharp agree, each being the restriction j^\{-1}(f^sharp) of the structure map of f along its own localization morphism”.
 
 > **Stacks 04J7**, on structure maps: the two `(f')^♯` are the same formula, each being the
 > restriction `j^{-1}(f^♯)` of the structure map of `f` along its own localization morphism — along
@@ -341,7 +341,7 @@ theorem Hom.localizedRepresentable_forgetFSharp :
 
 [Tag 04J8](https://stacks.math.columbia.edu/tag/04J8) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalityInverseImageSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L168). The attribute's comment: “the naturality square of the last assertion, on inverse images”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalityInverseImageSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L168). The attribute's comment: “the naturality square of the last assertion, on inverse images”.
 
 > **Stacks 04J8**, the naturality square on inverse images:
 > `(j_{F'/F})⁻¹ ∘ (f_s)⁻¹ ≅ (f_{s'})⁻¹ ∘ (j_{G'/G})⁻¹`.
@@ -363,7 +363,7 @@ noncomputable def relocalizedNaturalityInverseImageSquare
         (f.relocalized s')).toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalityToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L194). The attribute's comment: “the naturality square of the last assertion, as a square of topoi”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalityToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L194). The attribute's comment: “the naturality square of the last assertion, as a square of topoi”.
 
 > **Stacks 04J8**, the naturality square as a square of *topoi*: the comparison of the two direct
 > images conjugate to `relocalizedNaturalityInverseImageSquare`.
@@ -379,7 +379,7 @@ noncomputable def relocalizedNaturalityToposSquare
         (X.relocalizationMorphism a)).toToposHom.pushforward
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalitySquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L530). The attribute's comment: “the final assertion: for `b`, `a`, `s'` with the compatibility square, the induced square of ringed topoi on the slices commutes”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedNaturalitySquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedNaturalitySquare.lean#L531). The attribute's comment: “the final assertion: for `b`, `a`, `s'` with the compatibility square, the induced square of ringed topoi on the slices commutes”.
 
 > **Stacks 04J8**, the naturality square of the last assertion as a square of *ringed* topoi:
 > ```
@@ -398,7 +398,7 @@ noncomputable def relocalizedNaturalitySquare
         (Z := Y.localizedRingedTopos G) (f.relocalized s) (X.relocalizationMorphism a))
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L193). The attribute's comment: “the morphism (f\_s, f\_s^sharp), and its factorization as the morphism of 04IF after the relocalization morphism of 04J4”.
+**`AlgebraicGeometry.RingedToposHom.relocalized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L193). The attribute's comment: “the morphism (f\_s, f\_s^sharp), and its factorization as the morphism of 04IF after the relocalization morphism of 04J4”.
 
 > **Stacks 04J8.** The morphism of ringed topoi
 > `(f_s, f_s♯) : (Sh(C)/F, O_F) ⟶ (Sh(D)/G, O'_G)` attached to a morphism of ringed topoi
@@ -413,7 +413,7 @@ noncomputable def relocalized :
     RingedToposHom (X.localizedRingedTopos F) (Y.localizedRingedTopos G)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedInverseImageSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L224). The attribute's comment: “commutativity of the localization square, on inverse images”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedInverseImageSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L224). The attribute's comment: “commutativity of the localization square, on inverse images”.
 
 > **Stacks 04J8**, commutativity of the localization square on inverse images:
 > `f⁻¹ ⋙ j_F⁻¹ ≅ j_G⁻¹ ⋙ (f_s)⁻¹`.
@@ -429,7 +429,7 @@ noncomputable def relocalizedInverseImageSquare :
         (Y.localizationMorphism G) (f.relocalized s)).toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L252). The attribute's comment: “commutativity of the localization square, as a square of topoi”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedToposSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L252). The attribute's comment: “commutativity of the localization square, as a square of topoi”.
 
 > **Stacks 04J8**, commutativity of the localization square as a square of *topoi*: the
 > comparison of the two direct images conjugate to `relocalizedInverseImageSquare`.
@@ -445,7 +445,7 @@ noncomputable def relocalizedToposSquare :
         (X.localizationMorphism F)).toToposHom.pushforward
 ```
 
-**`AlgebraicGeometry.RingedToposHom.relocalizedRingedSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L309). The attribute's comment: “commutativity of the localization square as a square of ringed topoi”.
+**`AlgebraicGeometry.RingedToposHom.relocalizedRingedSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RingedToposRelocalizedMorphism.lean#L309). The attribute's comment: “commutativity of the localization square as a square of ringed topoi”.
 
 > **Stacks 04J8**, commutativity of the localization square as a square of *ringed* topoi.
 >
@@ -474,7 +474,7 @@ noncomputable def relocalizedRingedSquare :
 
 [Tag 04J9](https://stacks.math.columbia.edu/tag/04J9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalized_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean#L872). The attribute's comment: “the relocalized morphism of 04J1 and the relocalized morphism of 04J8 have the same structure map: each is the structure map of its own `f'` restricted along its own relocalization, the relocalization contributing the identity, so that the assertion reduces to the one of 04J7”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalized_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean, line 872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismComparison.lean#L872). The attribute's comment: “the relocalized morphism of 04J1 and the relocalized morphism of 04J8 have the same structure map: each is the structure map of its own `f'` restricted along its own relocalization, the relocalization contributing the identity, so that the assertion reduces to the one of 04J7”.
 
 > **Stacks 04J9**, on structure maps: the two relocalized morphisms have the same structure
 > map, each being the structure map of its own localized morphism `f'` restricted along its own
@@ -503,7 +503,7 @@ theorem Hom.relocalized_fSharpInverseImage_forget :
           (f.ringedToposHom.localized (representableSheaf Y V)).fSharpInverseImage)
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalizedCompInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismInverseImage.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismInverseImage.lean#L137). The attribute's comment: “on inverse images: the relocalized morphism of 04J1 and the relocalized morphism of 04J8 have the same inverse image, through the identifications of 04J3 at `U` and at `V`, the comparison being pasted from 04J5 and 04J7 on inverse images. The upgrade of this comparison to a 2-isomorphism of ringed topoi, and the agreement of the two localization squares under it, are not established here”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalizedCompInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismInverseImage.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedMorphismInverseImage.lean#L137). The attribute's comment: “on inverse images: the relocalized morphism of 04J1 and the relocalized morphism of 04J8 have the same inverse image, through the identifications of 04J3 at `U` and at `V`, the comparison being pasted from 04J5 and 04J7 on inverse images. The upgrade of this comparison to a 2-isomorphism of ringed topoi, and the agreement of the two localization squares under it, are not established here”.
 
 > The relocalized morphism of Stacks 04J1 followed by the identification of Stacks 04J3 at `V`,
 > and the relocalized morphism of Stacks 04J8 preceded by the identification of Stacks 04J3 at `U`,
@@ -523,7 +523,7 @@ noncomputable def Hom.relocalizedCompInverseImageIso :
         (representableLocalizationRingedMorphism X U)).toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalizedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedTriangleComparison.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedTriangleComparison.lean#L555). The attribute's comment: “the commutative diagrams of 04J1 and of 04J8 agree via the identifications of 04J3”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalizedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedTriangleComparison.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RelocalizedTriangleComparison.lean#L555). The attribute's comment: “the commutative diagrams of 04J1 and of 04J8 agree via the identifications of 04J3”.
 
 > **Stacks 04J9.** The commutative diagram of Stacks 04J1 and the commutative diagram of
 > Stacks 04J8 agree via the identifications of Stacks 04J3: there is a 2-isomorphism
@@ -534,7 +534,7 @@ noncomputable def Hom.relocalizedCompInverseImageIso :
 theorem Hom.relocalizedComparison : f.RelocalizedComparisonStatement c
 ```
 
-**`AlgebraicGeometry.RingedSite.representableRelocalizationSheafMapCompInverseImageIso_hom_app_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableRelocalizationCoherence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableRelocalizationCoherence.lean#L397). The attribute's comment: “the comparison of 04J5 on inverse images is the one determined by 04J3 at U and at V”.
+**`AlgebraicGeometry.RingedSite.representableRelocalizationSheafMapCompInverseImageIso_hom_app_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableRelocalizationCoherence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/RepresentableRelocalizationCoherence.lean#L397). The attribute's comment: “the comparison of 04J5 on inverse images is the one determined by 04J3 at U and at V”.
 
 > **Stacks 04J5's comparison of inverse images is the one Stacks 04J3 prescribes.** The
 > component of the comparison of the relocalization of the ringed topos along `h_f^#` with the
@@ -570,4 +570,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.22, Tag 04J6](https://stacks.math.columbia.edu/tag/04J6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

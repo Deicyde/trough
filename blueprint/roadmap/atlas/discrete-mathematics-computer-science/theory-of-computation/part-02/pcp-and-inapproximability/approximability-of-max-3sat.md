@@ -7,7 +7,7 @@ statement: formalized
 
 # Approximability of MAX-3SAT
 
-12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html).
+12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html).
 
 ## Nondegenerate 3-clauses
 
@@ -16,7 +16,7 @@ index $v \in \mathbb{N}$ and polarity $s$, is nondegenerate if it has exactly th
 its variable indices are pairwise distinct, and it contains no complementary pair, that is, no
 two literals $(v, s)$ and $(v, \lnot s)$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadNondegenerate`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-nondegenerate).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadNondegenerate`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-nondegenerate).
 
 ## Value of a MAX-3SAT assignment
 
@@ -32,14 +32,14 @@ The bitstring $u$ gives the number of variables in unary. Since degenerate and m
 instances get value $0$, the $7/8$ random-assignment bound holds on every instance with nonzero
 value.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-val).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-val).
 
 ## Optimum of a MAX-3SAT instance
 
 The MAX-3SAT optimum of a bitstring $x$ is the maximum,
 over all bitstrings $a$ of length $|x|$, of the MAX-3SAT value of $a$ on $x$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadOpt`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-opt).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastadOpt`, a definition declared in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-opt).
 
 ## Hastad: optimal inapproximability of MAX-3SAT
 
@@ -53,7 +53,7 @@ the MAX-3SAT optimum of $x$.
 
 - J. Håstad, "Some optimal inapproximability results", Journal of the ACM 48 (2001), 798-859 (STOC 1997).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastad_max3sat_inapproximability` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-max3sat-inapproximability).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Hastad.hastad_max3sat_inapproximability` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/HastadWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/HastadWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#hastad-max3sat-inapproximability).
 
 ## The MAX-3SAT objective
 
@@ -71,7 +71,7 @@ padding an assignment with trailing false bits, or padding an assignment of leng
 $|u|$ with arbitrary trailing bits, does not change its value as long as its length stays at
 most $|x|$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max3SATVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#max3-satval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max3SATVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#max3-satval).
 
 ## NPO problems
 
@@ -89,7 +89,7 @@ Feasible solutions on every instance are needed for completeness: an L-reduction
 with no feasible solutions on some instance would have to map a feasible target output back to
 a feasible source solution that does not exist.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.NPOProblem`, a structure declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#npoproblem).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.NPOProblem`, a structure declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#npoproblem).
 
 ## Optimum of an NPO problem
 
@@ -101,7 +101,7 @@ Since every feasible solution has length at most $b(|x|)$, every instance has a 
 solution, and $v$ is nonnegative and equals $0$ on infeasible solutions, this is the maximum of
 $v(x, s)$ over the feasible solutions $s$ for $x$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.optVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#opt-val).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.optVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#opt-val).
 
 ## Membership in APX
 
@@ -110,7 +110,7 @@ $\rho \ge 1$ and a polynomial-time computable map $A$ from bitstrings to bitstri
 every instance $x$, the solution $A(x)$ is feasible for $x$ in $M$ and its value is at least
 $\mathrm{opt}_M(x) / \rho$, where $\mathrm{opt}_M(x)$ is the optimum of $M$ on $x$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.APX`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#apx).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.APX`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#apx).
 
 ## L-reductions
 
@@ -126,7 +126,7 @@ $\mathrm{opt}_{M_1}(x) - v_{M_1}(x, g(x, s)) \le
 
 This is the L-reduction of Papadimitriou and Yannakakis, with polynomial-time maps $f$ and $g$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.LReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#lreduces).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.LReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#lreduces).
 
 ## MAXSNP problems
 
@@ -149,7 +149,7 @@ predicate $\mathrm{acc}$ inspects bits of the solution. The counting equation is
 for feasible solutions, because padding a solution with false bits preserves the window count
 while sufficiently long paddings are infeasible.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.MAXSNPProblem`, a structure declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#maxsnpproblem).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.MAXSNPProblem`, a structure declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#maxsnpproblem).
 
 ## MAXSNP-completeness
 
@@ -157,7 +157,7 @@ A MAXSNP problem $M$ is MAXSNP-complete when its underlying NPO
 problem is in APX and, for every MAXSNP problem $M'$, the underlying NPO problem of $M'$
 L-reduces to the underlying NPO problem of $M$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.MAXSNPComplete`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#maxsnpcomplete).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.MAXSNPComplete`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#maxsnpcomplete).
 
 ## MAX-3SAT is MAXSNP-complete
 
@@ -169,7 +169,7 @@ the underlying NPO problem of every MAXSNP problem L-reduces to it.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max_three_sat_maxsnp_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#max-three-sat-maxsnp-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxThreeSATMAXSNPComplete.max_three_sat_maxsnp_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxThreeSATMAXSNPCompleteWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html#max-three-sat-maxsnp-complete).
 
 ## Depends on
 
@@ -178,4 +178,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Approximability of MAX-3SAT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/pcp-and-inapproximability/approximability-of-max-3sat)

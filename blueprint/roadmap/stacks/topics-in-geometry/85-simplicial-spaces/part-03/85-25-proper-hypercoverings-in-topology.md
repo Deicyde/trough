@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.25 Proper hypercoverings in topology
 
-Section 85.25 of the Stacks Project, [Tag 09XA](https://stacks.math.columbia.edu/tag/09XA). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.25 of the Stacks Project, [Tag 09XA](https://stacks.math.columbia.edu/tag/09XA). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DAF, a lemma
 
 [Tag 0DAF](https://stacks.math.columbia.edu/tag/0DAF) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.comparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/ComparisonSquare.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercovering/ComparisonSquare.lean#L277).
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.comparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/ComparisonSquare.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercovering/ComparisonSquare.lean#L277).
 
 > **Stacks Tag 0DAF.** Let `U` be a simplicial object of `LC` and let `a : U → X` be an
 > augmentation. There is a commutative diagram of topoi
@@ -40,7 +40,7 @@ def comparisonSquarePushforwardIso :
       (qcAugmentation.{x} S U a).pushforward ⋙ (qcTopologicalMorphism.{u, w, 0} S X).pushforward
 ```
 
-**`Stacks.Topology.Simplicial.qcSmallBottomMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L203). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh(LC\_qc/X) → Sh(X) of the diagram”.
+**`Stacks.Topology.Simplicial.qcSmallBottomMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L203). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh(LC\_qc/X) → Sh(X) of the diagram”.
 
 > **The bottom horizontal arrow of the diagram of Tag 0DAF**, the comparison morphism of topoi
 > `h₋₁ = a_X : Sh(LC_qc/X) → Sh(X)` of Section 09WY, with `Sh(LC_qc/X)` read as the sheaves on the
@@ -52,7 +52,7 @@ def qcSmallBottomMorphism :
       (Sheaf (Opens.grothendieckTopology X.obj.obj) (Type u))
 ```
 
-**`Stacks.Topology.Simplicial.qcComparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 711](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L711). The attribute's comment: “the commutative diagram of topoi, on direct images”.
+**`Stacks.Topology.Simplicial.qcComparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 711](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L711). The attribute's comment: “the commutative diagram of topoi, on direct images”.
 
 > **Tag 0DAF.** The diagram of topoi
 > ```
@@ -69,7 +69,7 @@ def qcComparisonSquarePushforwardIso :
         (qcZariskiAugmentation S X U a).pushforward
 ```
 
-**`Stacks.Topology.Simplicial.qcComparisonSquareInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L722). The attribute's comment: “the commutative diagram of topoi, on inverse images”.
+**`Stacks.Topology.Simplicial.qcComparisonSquareInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L722). The attribute's comment: “the commutative diagram of topoi, on inverse images”.
 
 > **Tag 0DAF**, on inverse images: `a_qc⁻¹ ∘ h₋₁⁻¹ ≅ h⁻¹ ∘ a⁻¹`. The inverse images are left
 > adjoint to the direct images, so this is the conjugate of
@@ -82,7 +82,7 @@ def qcComparisonSquareInverseImageIso :
       qcSmallTopologicalInverseImage S X ⋙ (qcAugmentationMorphism S X U a).inverseImage
 ```
 
-**`Stacks.Topology.Simplicial.exists_qcComparisonSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L763). The attribute's comment: “for an arbitrary simplicial object U of LC and augmentation a : U → X: a site LC\_qc containing X and the U\_n exists, and for it the diagram of topoi commutes”.
+**`Stacks.Topology.Simplicial.exists_qcComparisonSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L763). The attribute's comment: “for an arbitrary simplicial object U of LC and augmentation a : U → X: a site LC\_qc containing X and the U\_n exists, and for it the diagram of topoi commutes”.
 
 > **Tag 0DAF for an arbitrary simplicial object of `LC`.** Let `U` be a simplicial object of
 > `LC` and let `a : U → X` be an augmentation. Then a site `LC_qc` of Tag 09X2 can be chosen
@@ -115,7 +115,7 @@ theorem exists_qcComparisonSquare (Y : SimplicialObject LocallyQuasiCompactHausd
             (qcLiftAugmentation S b hY hT)).inverseImage)
 ```
 
-**`Stacks.Topology.Simplicial.qcSmallComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean#L477). The attribute's comment: “the upper horizontal arrow h : Sh((LC\_qc/U)\_total) → Sh(U\_Zar) of the diagram”.
+**`Stacks.Topology.Simplicial.qcSmallComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean#L477). The attribute's comment: “the upper horizontal arrow h : Sh((LC\_qc/U)\_total) → Sh(U\_Zar) of the diagram”.
 
 > **The upper horizontal arrow of the diagram of Tag 0DAF**, the morphism of topoi
 > `h : Sh((LC_qc/U)_total) ⟶ Sh(U_Zar)` of the comparison functor, with `(LC_qc/U)_total` formed
@@ -132,7 +132,7 @@ def qcSmallComparisonMorphism :
 
 [Tag 0DAG](https://stacks.math.columbia.edu/tag/0DAG) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.ProperHypercovering.inverseImage_fullyFaithful_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean#L221). The attribute's comment: “sheaves of sets”.
+**`Stacks.Topology.Simplicial.ProperHypercovering.inverseImage_fullyFaithful_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean#L221). The attribute's comment: “sheaves of sets”.
 
 > **Stacks 0DAG, sheaves of sets.** Let `U` be a simplicial object of `LC` and `a : U ⟶ X` an
 > augmentation which is a proper hypercovering of `X`. Then `a^{-1} : Sh(X) ⥤ Sh(U_Zar)` is fully
@@ -149,7 +149,7 @@ theorem inverseImage_fullyFaithful_of_isHypercovering
       (∀ G, IsCartesian (U Y) G → IsIso ((augmentationTopoi Y X a).adj.counit.app G))
 ```
 
-**`Stacks.Topology.Simplicial.ProperHypercovering.abelianInverseImage_fullyFaithful_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean#L238). The attribute's comment: “sheaves of abelian groups”.
+**`Stacks.Topology.Simplicial.ProperHypercovering.abelianInverseImage_fullyFaithful_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercoveringFullyFaithful.lean#L238). The attribute's comment: “sheaves of abelian groups”.
 
 > **Stacks 0DAG, sheaves of abelian groups.** Let `U` be a simplicial object of `LC` and
 > `a : U ⟶ X` an augmentation which is a proper hypercovering of `X`. Then
@@ -170,7 +170,7 @@ theorem abelianInverseImage_fullyFaithful_of_isHypercovering
 
 [Tag 09XS](https://stacks.math.columbia.edu/tag/09XS) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.ProperHypercovering.isIso_derivedAdjunction_unit_app_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedUnit.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedUnit.lean#L556).
+**`Stacks.Topology.Simplicial.ProperHypercovering.isIso_derivedAdjunction_unit_app_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedUnit.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedUnit.lean#L556).
 
 > Let `U` be a simplicial object of the category `LC` of Hausdorff, locally quasi-compact spaces
 > and let `a : U → X` be an augmentation. If `a : U → X` gives a proper hypercovering of `X`, then
@@ -204,7 +204,7 @@ theorem isIso_derivedAdjunction_unit_app_of_isHypercovering
 
 [Tag 09XC](https://stacks.math.columbia.edu/tag/09XC) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.ProperHypercovering.derivedGlobalSectionsIsoOfIsHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedDescent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedDescent.lean#L134).
+**`Stacks.Topology.Simplicial.ProperHypercovering.derivedGlobalSectionsIsoOfIsHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedDescent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedDescent.lean#L134).
 
 > **Stacks Project, Tag 09XC.** Let `U` be a simplicial object of `LC` and let `a : U → X` be an
 > augmentation. If `U` is a proper hypercovering of `X`, then
@@ -238,7 +238,7 @@ def derivedGlobalSectionsIsoOfIsHypercovering
 
 [Tag 0DAH](https://stacks.math.columbia.edu/tag/0DAH) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.ProperHypercovering.derivedInverseImage_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedEquivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedEquivalence.lean#L85).
+**`Stacks.Topology.Simplicial.ProperHypercovering.derivedInverseImage_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedEquivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercovering/DerivedEquivalence.lean#L85).
 
 > **Stacks Project, Tag 0DAH.** Let `U` be a simplicial object of the category `LC` of Hausdorff,
 > locally quasi-compact spaces and let `a : U → X` be an augmentation. Let `𝒜 ⊂ Ab(U_Zar)` denote
@@ -272,7 +272,7 @@ theorem derivedInverseImage_equivalence
 
 [Tag 09XB](https://stacks.math.columbia.edu/tag/09XB) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.properHypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/SpectralSequence.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ProperHypercovering/SpectralSequence.lean#L340).
+**`Stacks.Topology.Simplicial.properHypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ProperHypercovering/SpectralSequence.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Simplicial/ProperHypercovering/SpectralSequence.lean#L340).
 
 > Let `U` be a simplicial object of the category `LC` of Hausdorff, locally quasi-compact spaces
 > and let `a : U → X` be an augmentation. Let `F` be an abelian sheaf on `X` and let `F_n` be its
@@ -300,4 +300,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.25, Tag 09XA](https://stacks.math.columbia.edu/tag/09XA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Convolution
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html).
 
 ## Convolution of an integrable and a bounded function is uniformly continuous
 
@@ -25,7 +25,7 @@ is uniformly continuous on $\mathbb{R}^d$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_15`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.ConvolutionIntegrableBoundedUniformWanted.uniformContinuous_convolution_integrable_bounded` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ConvolutionIntegrableBoundedUniformWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ConvolutionIntegrableBoundedUniformWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#uniform-continuous-convolution-integrabl).
+Stated but not proved: `MathlibExt.MeasureTheory.ConvolutionIntegrableBoundedUniformWanted.uniformContinuous_convolution_integrable_bounded` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ConvolutionIntegrableBoundedUniformWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ConvolutionIntegrableBoundedUniformWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#uniform-continuous-convolution-integrabl).
 
 ## Integrability of the convolution integrand
 
@@ -39,7 +39,7 @@ $(x, y) \mapsto f(x - y)\, g(y)$ is Lebesgue integrable on $\mathbb{R}^{2d}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_72`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.ConvolutionIntegrandIntegrableEuclideanWanted.integrable_comp_sub_mul_of_integrable_fin_append` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ConvolutionIntegrandIntegrableEuclideanWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ConvolutionIntegrandIntegrableEuclideanWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#integrable-comp-sub-mul-of-integrable-fi).
+Stated but not proved: `MathlibExt.MeasureTheory.ConvolutionIntegrandIntegrableEuclideanWanted.integrable_comp_sub_mul_of_integrable_fin_append` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ConvolutionIntegrandIntegrableEuclideanWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ConvolutionIntegrandIntegrableEuclideanWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#integrable-comp-sub-mul-of-integrable-fi).
 
 ## Exponential kernel approximate identity
 
@@ -57,7 +57,7 @@ where $n$ runs through the natural numbers and the integrals are with respect to
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_96`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.ExponentialKernelApproxIdentityWanted.tendsto_mul_integral_integral_exp_neg_two_mul_abs_sub` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ExponentialKernelApproxIdentityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ExponentialKernelApproxIdentityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#tendsto-mul-integral-integral-exp-neg-tw).
+Stated but not proved: `MathlibExt.MeasureTheory.ExponentialKernelApproxIdentityWanted.tendsto_mul_integral_integral_exp_neg_two_mul_abs_sub` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ExponentialKernelApproxIdentityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ExponentialKernelApproxIdentityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html#tendsto-mul-integral-integral-exp-neg-tw).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convolution](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convolution/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/integration/convolution)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/integration/convolution)

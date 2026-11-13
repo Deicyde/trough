@@ -7,7 +7,7 @@ statement: formalized
 
 # Goodman–Goodman circle covering theorem
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html).
 
 ## Erdős Problem 1121 (circle covering)
 
@@ -22,7 +22,7 @@ $B(c_i, r_i)$ are nonseparable, there is a point $z$ such that the closed disc
 $B(z, r_1 + \dots + r_n)$ contains every $B(c_i, r_i)$. Second, the same holds in
 $\mathbb{R}^d$ for every natural number $d$, with closed balls in place of discs.
 
-Formalized by `MathlibExt.Geometry.ErdosProblem1121Wanted.conjecture`, a definition declared in [WantedExt/Geometry/ErdosProblem1121Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ErdosProblem1121Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html#conjecture).
+Formalized by `MathlibExt.Geometry.ErdosProblem1121Wanted.conjecture`, a definition declared in [WantedExt/Geometry/ErdosProblem1121Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ErdosProblem1121Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html#conjecture).
 
 ## Circle covering theorem (Erdős Problem 1121)
 
@@ -40,7 +40,7 @@ extended it to convex bodies.
 
 - Goodman and Goodman [GoGo45] (planar case and higher dimensions), per erdosproblems.com/1121, https://www.erdosproblems.com/1121.
 
-Stated but not proved: `MathlibExt.Geometry.ErdosProblem1121Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Geometry/ErdosProblem1121Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ErdosProblem1121Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Geometry.ErdosProblem1121Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Geometry/ErdosProblem1121Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ErdosProblem1121Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Goodman–Goodman circle covering theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/packings-and-coverings/goodman-goodman-circle-covering-theorem)

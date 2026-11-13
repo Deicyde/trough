@@ -7,7 +7,7 @@ statement: formalized
 
 # Height one multiple zeta values
 
-11 results, 4 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html).
+11 results, 4 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html).
 
 ## Height one multiple zeta function
 
@@ -25,7 +25,7 @@ converges for $\operatorname{Re} s > 1$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Section 1.
 
-Formalized by `MetaMathlibExt.heightOneMultipleZeta`, a definition declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta).
+Formalized by `MetaMathlibExt.heightOneMultipleZeta`, a definition declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta).
 
 ## Height one multiple zeta function of depth one
 
@@ -37,7 +37,7 @@ zeta function: $\zeta(s, \{1\}^0) = \sum_{n \ge 0} (n + 1)^{-s}$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Section 1.
 
-Formalized by `MetaMathlibExt.heightOneMultipleZeta_zero`, a theorem declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta-zero).
+Formalized by `MetaMathlibExt.heightOneMultipleZeta_zero`, a theorem declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta-zero).
 
 ## Multiple Hurwitz zeta function
 
@@ -53,7 +53,7 @@ $\operatorname{Re} r < \operatorname{Re} s$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Section 2, Equation (2.2).
 
-Formalized by `MetaMathlibExt.multipleHurwitzZeta`, a definition declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#multiple-hurwitz-zeta).
+Formalized by `MetaMathlibExt.multipleHurwitzZeta`, a definition declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#multiple-hurwitz-zeta).
 
 ## Multiple Hurwitz zeta function of order zero
 
@@ -64,7 +64,7 @@ Hurwitz zeta function of order $0$ is identically one: $\zeta_0(s) = 1$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Section 2, Equation (2.2).
 
-Formalized by `MetaMathlibExt.multipleHurwitzZeta_zero`, a theorem declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#multiple-hurwitz-zeta-zero).
+Formalized by `MetaMathlibExt.multipleHurwitzZeta_zero`, a theorem declared in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#multiple-hurwitz-zeta-zero).
 
 ## Expansion of the multiple Hurwitz zeta function in height one multiple zeta values
 
@@ -78,7 +78,7 @@ $\sum_{j \ge 0} \zeta(s, \{1\}^j) \, (r - 1)^j$ is summable with sum $\zeta_r(s)
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-mul-pow).
+Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-mul-pow).
 
 ## Height one multiple zeta series weighted by powers of a natural number
 
@@ -99,7 +99,7 @@ coefficient is $B_j^{(-n)}(-1)$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_mul_nat_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-mul-nat).
+Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_mul_nat_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-mul-nat).
 
 ## Height one multiple zeta series weighted by powers of a negative integer
 
@@ -120,7 +120,7 @@ harmonic number (Equation (2.18)).
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.tsum_heightOneMultipleZeta_mul_neg_nat_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#tsum-height-one-multiple-zeta-mul-neg-na).
+Stated but not proved: `MetaMathlibExt.tsum_heightOneMultipleZeta_mul_neg_nat_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#tsum-height-one-multiple-zeta-mul-neg-na).
 
 ## Generalized Goldbach series for height one multiple zeta values
 
@@ -138,7 +138,7 @@ sum $\frac{H_{k,k}}{k} - \frac{1}{2 \, k! \, k}$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_goldbach` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-goldbac).
+Stated but not proved: `MetaMathlibExt.hasSum_heightOneMultipleZeta_goldbach` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-height-one-multiple-zeta-goldbac).
 
 ## Expansion of the hyperharmonic zeta function in height one multiple zeta values
 
@@ -154,7 +154,7 @@ summable with sum the hyperharmonic zeta function $\sigma(r, s) = \sum_{m \ge 1}
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 3, second equality.
 
-Stated but not proved: `MetaMathlibExt.hasSum_succ_mul_heightOneMultipleZeta_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-succ-mul-height-one-multiple-zet).
+Stated but not proved: `MetaMathlibExt.hasSum_succ_mul_heightOneMultipleZeta_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#has-sum-succ-mul-height-one-multiple-zet).
 
 ## Shifted alternating series of height one multiple zeta values
 
@@ -168,7 +168,7 @@ $\int_0^1 (1 - r)^{k+1} \, \zeta_r(p + 2) \, dr$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.tendsto_alternating_heightOneMultipleZeta_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#tendsto-alternating-height-one-multiple).
+Stated but not proved: `MetaMathlibExt.tendsto_alternating_heightOneMultipleZeta_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#tendsto-alternating-height-one-multiple).
 
 ## Linear Laurent coefficient of the height one multiple zeta function
 
@@ -193,7 +193,7 @@ with Euler's constant $\gamma$, so $-F'(1) = \gamma_1$.
 
 - Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.heightOneMultipleZeta_laurent_linear_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta-laurent-linear).
+Stated but not proved: `MetaMathlibExt.heightOneMultipleZeta_laurent_linear_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HeightOneMultipleZetaSeriesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html#height-one-multiple-zeta-laurent-linear).
 
 ## Depends on
 
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Height one multiple zeta values](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/height-one-multiple-zeta-values)

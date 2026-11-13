@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.16 Critère de platitude par fibres
 
-Section 37.16 of the Stacks Project, [Tag 039A](https://stacks.math.columbia.edu/tag/039A). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.16 of the Stacks Project, [Tag 039A](https://stacks.math.columbia.edu/tag/039A). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 039B, a theorem
 
 [Tag 039B](https://stacks.math.columbia.edu/tag/039B) in the Stacks Project.
 
-**`Stacks.Flatness.isFlatOverBaseAndFiberAt_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean#L703). The attribute's comment: “Noetherian fibrewise criterion”. References: EGA IV (11.3.10), “1°) a) ⇔ b)”.
+**`Stacks.Flatness.isFlatOverBaseAndFiberAt_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean#L702). The attribute's comment: “Noetherian fibrewise criterion”. References: EGA IV (11.3.10), “1°) a) ⇔ b)”.
 
 > For morphisms `f : X ⟶ Y` and `g : Y ⟶ S` of locally Noetherian schemes and a coherent
 > `𝒪_X`-module `F` with nonzero stalk at `x`, flatness over the base together with flatness on the
@@ -37,7 +37,7 @@ public theorem isFlatOverBaseAndFiberAt_iff_of_isLocallyNoetherian {X Y S : Sche
 
 [Tag 039C](https://stacks.math.columbia.edu/tag/039C) in the Stacks Project.
 
-**`Stacks.Flatness.isFlatOverBaseAndFiberAt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean#L634). The attribute's comment: “fibrewise criterion”. References: EGA IV (11.3.10), “2°) a) ⇔ b)”.
+**`Stacks.Flatness.isFlatOverBaseAndFiberAt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseFiber.lean#L633). The attribute's comment: “fibrewise criterion”. References: EGA IV (11.3.10), “2°) a) ⇔ b)”.
 
 > At a point where a quasi-coherent module of finite presentation has nonzero stalk, flatness
 > over the base together with flatness on the fibre is equivalent to flatness of the intermediate
@@ -55,7 +55,7 @@ public theorem isFlatOverBaseAndFiberAt_iff {X Y S : Scheme.{u}}
     IsFlatOverBaseAndFiberAt f g F x ↔ IsFlatOverIntermediateAt f g F x
 ```
 
-**`Stacks.Flatness.isOpen_isFlatOverBaseAndFiberAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseOpenLocus.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseOpenLocus.lean#L93). The attribute's comment: “openness of the common locus”. References: EGA IV (11.3.10), “2°) open locus”.
+**`Stacks.Flatness.isOpen_isFlatOverBaseAndFiberAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseOpenLocus.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseOpenLocus.lean#L93). The attribute's comment: “openness of the common locus”. References: EGA IV (11.3.10), “2°) open locus”.
 
 > **Stacks Project, Tag 039C.** The set of points of the support of a quasi-coherent module of
 > finite presentation at which the two equivalent conditions of the fibrewise criterion for
@@ -74,7 +74,7 @@ public theorem isOpen_isFlatOverBaseAndFiberAt {X Y S : Scheme.{u}}
 
 [Tag 039D](https://stacks.math.columbia.edu/tag/039D) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_of_flat_fiberHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L130). The attribute's comment: “flatness of the morphism”.
+**`AlgebraicGeometry.flat_of_flat_fiberHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L130). The attribute's comment: “flatness of the morphism”.
 
 > **Stacks Project, Tag 039D.** Let `f : X ⟶ Y` be a morphism of schemes over a base `S`, given
 > by `g : Y ⟶ S`. If `S`, `X`, `Y` are locally Noetherian, `X` is flat over `S` and every induced
@@ -87,7 +87,7 @@ public theorem flat_of_flat_fiberHom {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y �
     Flat f
 ```
 
-**`AlgebraicGeometry.flat_of_flat_fiberHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L141). The attribute's comment: “flatness of the intermediate scheme over the base”.
+**`AlgebraicGeometry.flat_of_flat_fiberHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L141). The attribute's comment: “flatness of the intermediate scheme over the base”.
 
 > **Stacks Project, Tag 039D.** In the situation of
 > `AlgebraicGeometry.flat_of_flat_fiberHom`, if `f` is in addition surjective then `Y` is flat over
@@ -104,7 +104,7 @@ public theorem flat_of_flat_fiberHom_of_surjective {X Y S : Scheme.{u}} (f : X �
 
 [Tag 039E](https://stacks.math.columbia.edu/tag/039E) in the Stacks Project.
 
-**`Stacks.Flatness.flat_of_flat_fiberHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean#L220). The attribute's comment: “flatness of the morphism”. References: EGA IV (20.5.7), “partial”; SGA 1 I (5.9), “partial”.
+**`Stacks.Flatness.flat_of_flat_fiberHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean#L220). The attribute's comment: “flatness of the morphism”. References: EGA IV (20.5.7), “partial”; SGA 1 I (5.9), “partial”.
 
 > **Stacks Project, Tag 039E.** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes with
 > `X` locally of finite presentation and flat over `S`, with `Y` locally of finite type over `S`,
@@ -119,7 +119,7 @@ public theorem flat_of_flat_fiberHom {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y �
     AlgebraicGeometry.Flat f
 ```
 
-**`Stacks.Flatness.flat_of_flat_fiberHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean#L232). The attribute's comment: “flatness of the target over the base”.
+**`Stacks.Flatness.flat_of_flat_fiberHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FibrewiseMorphism.lean#L232). The attribute's comment: “flatness of the target over the base”.
 
 > **Stacks Project, Tag 039E.** In the situation of
 > `Stacks.Flatness.flat_of_flat_fiberHom`, if `f` is moreover surjective then `Y` is flat
@@ -137,7 +137,7 @@ public theorem flat_of_flat_fiberHom_of_surjective {X Y S : Scheme.{u}} (f : X �
 
 [Tag 05VJ](https://stacks.math.columbia.edu/tag/05VJ) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_setOf_isFlatOverAt_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L318). The attribute's comment: “open locus”.
+**`AlgebraicGeometry.isOpen_setOf_isFlatOverAt_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L318). The attribute's comment: “open locus”.
 
 > **Stacks Project, Tag 05VJ (open locus).** For a morphism `f : X ⟶ Y` of schemes over a base
 > with `X` locally of finite presentation over the base and `Y` locally of finite type over it, the
@@ -152,7 +152,7 @@ public theorem isOpen_setOf_isFlatOverAt_of_locallyOfFiniteType {X Y S : Scheme.
     IsOpen {x : X | IsFlatOverAt f.toLRSHom.toShHom F x}
 ```
 
-**`AlgebraicGeometry.setOf_isFlatOverAt_modulePullback_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L335). The attribute's comment: “base change”.
+**`AlgebraicGeometry.setOf_isFlatOverAt_modulePullback_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L335). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 05VJ (base change).** For a morphism `f : X ⟶ Y` of schemes over a base
 > `S` with `X` locally of finite presentation over `S` and `Y` locally of finite type over `S`, and
@@ -177,7 +177,7 @@ public theorem setOf_isFlatOverAt_modulePullback_of_isFlatOver
 
 [Tag 05VK](https://stacks.math.columbia.edu/tag/05VK) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_setOf_isFlatAt_of_locallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L159). The attribute's comment: “open locus”. References: SGA 3 VIB (1.3), “partial”; SGA 3 X (4.4), “partial”; SGA 3 XV (7.2), “partial”.
+**`AlgebraicGeometry.isOpen_setOf_isFlatAt_of_locallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L159). The attribute's comment: “open locus”. References: SGA 3 VIB (1.3), “partial”; SGA 3 X (4.4), “partial”; SGA 3 XV (7.2), “partial”.
 
 > **Stacks Project, Tag 05VK (open locus).** For a morphism `f : X ⟶ Y` of schemes over a base
 > with `X` locally of finite presentation over the base and `Y` locally of finite type over it, the
@@ -192,7 +192,7 @@ public theorem isOpen_setOf_isFlatAt_of_locallyOfFinitePresentation_comp {X Y S 
     IsOpen {x : X | IsFlatAt f.toLRSHom.toShHom x}
 ```
 
-**`AlgebraicGeometry.setOf_isFlatAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L173). The attribute's comment: “base change”. References: EGA IV (20.5.7), “more general”; SGA 3 VIB (2.5), “flatness clause”; SGA 3 XV (7.2), “partial”.
+**`AlgebraicGeometry.setOf_isFlatAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FibrewiseCriterion.lean#L173). The attribute's comment: “base change”. References: EGA IV (20.5.7), “more general”; SGA 3 VIB (2.5), “flatness clause”; SGA 3 XV (7.2), “partial”.
 
 > **Stacks Project, Tag 05VK (base change).** For a morphism `f : X ⟶ Y` of schemes over a base
 > `S` with `X` locally of finite presentation and flat over `S` and `Y` locally of finite type over
@@ -212,7 +212,7 @@ public theorem setOf_isFlatAt_baseChange {X Y S S' X' Y' : Scheme.{u}} {f : X �
 
 [Tag 080Q](https://stacks.math.columbia.edu/tag/080Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_iso_free_over_of_flat_over_at_of_flat_fiber_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FlatFibreFiniteFree.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiberRank/FlatFibreFiniteFree.lean#L178).
+**`AlgebraicGeometry.Scheme.Modules.exists_iso_free_over_of_flat_over_at_of_flat_fiber_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FlatFibreFiniteFree.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiberRank/FlatFibreFiniteFree.lean#L178).
 
 > **Stacks Project, Tag 080Q.** Let `f : X ⟶ S` be a morphism of finite presentation and let
 > `F` be a finitely presented `𝒪_X`-module. If `F` is flat over `S` at `x` and the stalk at `x` of
@@ -238,7 +238,7 @@ theorem exists_iso_free_over_of_flat_over_at_of_flat_fiber_stalk {X S : Scheme.{
 
 [Tag 0CZR](https://stacks.math.columbia.edu/tag/0CZR) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isOpen_freeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean#L85). The attribute's comment: “openness”.
+**`AlgebraicGeometry.Scheme.Modules.isOpen_freeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean#L85). The attribute's comment: “openness”.
 
 > **Stacks Project, Tag 0CZR (openness).** The locus of points at which a sheaf of modules on
 > a scheme is free of finite rank on a neighbourhood is open: the trivialising neighbourhood of a
@@ -249,7 +249,7 @@ public theorem isOpen_freeLocus {X : Scheme.{u}} (F : X.Modules) :
     IsOpen (freeLocus F)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.freeLocus_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean#L197). The attribute's comment: “base change”.
+**`AlgebraicGeometry.Scheme.Modules.freeLocus_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiberRank/FreeLocusBaseChange.lean#L197). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0CZR (base change).** Let `f : X ⟶ S` be locally of finite presentation
 > and let `F` be a finitely presented `𝒪_X`-module flat over `S`. The formation of the locus of
@@ -272,4 +272,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.16, Tag 039A](https://stacks.math.columbia.edu/tag/039A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

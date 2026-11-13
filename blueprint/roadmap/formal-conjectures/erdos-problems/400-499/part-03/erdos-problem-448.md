@@ -21,7 +21,7 @@ statement: formalized
 > - [Te13] Tenenbaum, Gérald, *Some of Erdős' unconventional problems in number theory, thirty-four
 >   years later.* Erdős Centennial, Bolyai Soc. Math. Stud. **25** (2013), 651–681.
 
-*Quoted from [FormalConjectures/ErdosProblems/448.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/448.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/448](https://www.erdosproblems.com/448).
 
@@ -58,7 +58,7 @@ theorem erdos_448 :
       {n : ℕ | (tauPlus n : ℝ) < ε * (n.divisors.card : ℝ)}.HasDensity 1
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean#L86).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean#L86).
 
 ## `Erdos448.erdos_448.variants.erdos_tenenbaum`
 
@@ -77,7 +77,7 @@ theorem erdos_448.variants.erdos_tenenbaum :
       (𝓝[>] (0 : ℝ)) (𝓝 (1 : ℝ))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean#L97).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean#L97).
 
 ## `Erdos448.erdos_448.variants.hall_tenenbaum_upper_bound`
 
@@ -93,7 +93,7 @@ theorem erdos_448.variants.hall_tenenbaum_upper_bound :
       =O[𝓝[>] (0 : ℝ)] (fun ε : ℝ => ε * Real.log (2 / ε))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean#L109).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean#L109).
 
 ## `Erdos448.erdos_448.variants.hall_tenenbaum_distribution`
 
@@ -112,7 +112,7 @@ theorem erdos_448.variants.hall_tenenbaum_distribution :
         {n : ℕ | (tauPlus n : ℝ) / (n.divisors.card : ℝ) ≤ z}.HasDensity (F z)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean#L121).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean#L121).
 
 ## `Erdos448.erdos_448.variants.ford`
 
@@ -135,7 +135,7 @@ theorem erdos_448.variants.ford :
           / Real.log (Real.log (x : ℝ)) ^ ((3 : ℝ) / 2))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean#L133).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/448.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean#L133).
 
 ## Depends on
 
@@ -143,5 +143,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/448.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/448.lean)
+- [FormalConjectures/ErdosProblems/448.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/448.lean)
 - [erdosproblems.com/448](https://www.erdosproblems.com/448)

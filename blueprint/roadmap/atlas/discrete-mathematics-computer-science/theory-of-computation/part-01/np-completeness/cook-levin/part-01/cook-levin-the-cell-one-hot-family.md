@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: the cell one-hot family
 
-49 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html).
+49 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html).
 
 ## The family (pure specification)
 
@@ -19,7 +19,7 @@ literals on the variables $v_B, v_{B+1}, \dots, v_{B+g-1}$, in this order, each 
 of its variable index and the sign true; these are the literals of the clause
 $v_B \lor \dots \lor v_{B+g-1}$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.aloLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#alo-lits).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.aloLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#alo-lits).
 
 ## At-most-one literals for a pair
 
@@ -28,7 +28,7 @@ negative literals on the variables $v_{B+x}$ and $v_{B+y}$, in this order, each 
 its variable index and the sign false; these are the literals of the clause
 $\neg v_{B+x} \lor \neg v_{B+y}$. It is used for pairs $x < y$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.amoLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#amo-lits).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.amoLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#amo-lits).
 
 ## At-most-one clauses of the first rows of a cell
 
@@ -38,7 +38,7 @@ $y' = 0, 1, \dots, y - 1$ in turn and within each for $x = 0, 1, \dots, y' - 1$ 
 dense clause over $V$ variables built from the literals $\lnot p_{B + x}$ and $\lnot p_{B + y'}$:
 its slot $i < V$ holds the literal on $p_i$ if there is one and is empty otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.rowsCNF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rows-cnf).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.rowsCNF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rows-cnf).
 
 ## One-hot clauses of a cell
 
@@ -48,7 +48,7 @@ at-most-one clauses $\neg v_{B+x} \lor \neg v_{B+y}$ for $x < y < g$, ordered by
 $x$. Each clause is written densely over the $V$ variables $v_0, \dots, v_{V-1}$; literals on
 variables of index at least $V$ are dropped.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.cellCNF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-cnf).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.cellCNF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-cnf).
 
 ## The one-hot cell family
 
@@ -61,7 +61,7 @@ $\lnot v_{B+x} \lor \lnot v_{B+y}$ for $x < y < g$, ordered by $y$ and then by $
 is written densely, with one slot for each of the $V$ variables. The family is the CNF formula
 listing these clauses, with the cells ordered by $t$, then $k$, then $j$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-family).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-family).
 
 ## Counters of the one-hot generator
 
@@ -69,7 +69,7 @@ The finite type of the nineteen unit counters of the
 one-hot clause generator: Tn, Ti, Kc, Kd, Hs, Hi, Gc, HG, Wc, Vc, TW, KB, CB, P, Q, tmp, md,
 c1 and c2.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ck).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ck).
 
 ## Clause kinds of a one-hot cell
 
@@ -77,7 +77,7 @@ For a natural number $g$, a clause kind of a cell with
 $g$ symbol codes is either the at-least-one kind, or the at-most-one kind of a pair $(x, y)$ of
 symbol codes $x, y < g$ (not necessarily ordered).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cl).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cl).
 
 ## Number of literals of a one-hot clause kind
 
@@ -85,7 +85,7 @@ The number of literals of the at-least-one
 clause kind of a cell with $g$ symbol codes is $g$, and that of every at-most-one clause kind
 $\mathrm{amo}(x, y)$ is $2$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.nl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#nl).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.nl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#nl).
 
 ## Offset of a literal in a one-hot clause
 
@@ -93,7 +93,7 @@ The offset from the cell base of literal $l$ of a
 clause kind is $l$ for the at-least-one clause, and for the at-most-one clause
 $\mathrm{amo}(x, y)$ it is $x$ when $l = 0$ and $y$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.off`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#off).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.off`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#off).
 
 ## Literal sign of a clause kind
 
@@ -101,14 +101,14 @@ For a clause kind $c$ of a cell, $\mathrm{sg}(c)$ is the
 sign shared by all literals of $c$: true (positive) for the at-least-one clause and false
 (negative) for every at-most-one clause $\mathrm{amo}(x, y)$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#sg).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#sg).
 
 ## Well-formed clause kinds
 
 A clause kind of a cell is well formed when it is the
 at-least-one clause, or an at-most-one clause $\mathrm{amo}(x, y)$ with $x < y$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.WF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#wf).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.CL.WF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#wf).
 
 ## Stages of the one-hot precomputation
 
@@ -120,7 +120,7 @@ four stages of a multiplication routine in each of the three multiplications
 $HG := HG + H_s G_c$, $W_c := W_c + K_c \cdot HG$ and $V_c := V_c + T_n W_c$, where $H_s$ is the
 height counter and $HG$ and $V_c$ are further counters of the generator.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ps).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ps).
 
 ## Stages of the one-hot literal routine
 
@@ -129,7 +129,7 @@ that emits one literal are: two copy stages, the offset stage, the decrement sta
 comparison stage, for each ordering $o$ (less, equal, greater) two restore stages $r(o)$ and
 $r_B(o)$, the gap stage, the failure stage, the slot stage and the drain stage.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ls).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#ls).
 
 ## Control labels of the one-hot generator
 
@@ -146,7 +146,7 @@ halting label.
 The type is finite: each field ranges over a finite type (a stage, a clause kind of a cell with
 $g$ symbol codes, or an index below $g$).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#gl).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#gl).
 
 ## Entry label of a one-hot literal routine
 
@@ -156,7 +156,7 @@ of the routine emitting literal $l$ of $c$ if $l < g$, and the halting label oth
 
 The generator never uses it with $l \ge g$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-l).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-l).
 
 ## Label after a literal routine of the one-hot generator
 
@@ -166,7 +166,7 @@ $l, l+1, \dots$ of $c$ have been emitted (literals are emitted from the last one
 first): if $l = 0$, the final stage of clause $c$, which emits the leading run of empty slots;
 otherwise the routine for literal $l - 1$ of $c$, or the halting label when $l - 1 \ge g$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#after).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#after).
 
 ## Entry label of an at-most-one clause
 
@@ -175,7 +175,7 @@ numbers $x$ and $y$ with $x < y < g$, the generator label at which the emission 
 at-most-one clause for the pair $(x, y)$ of the current cell begins; for any other pair it is the
 halting label, a case the generator never uses.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.pr`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pr).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.pr`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pr).
 
 ## Entry label for the first rows of a cell
 
@@ -188,7 +188,7 @@ label $\mathrm{done}$.
 From here, for $y \le g$, the generator emits the clauses of the rows below $y$, then the
 at-least-one clause.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.yDone`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#y-done).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.yDone`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#y-done).
 
 ## One-hot generator: the label after a clause
 
@@ -200,7 +200,7 @@ $\mathrm{amo}(x - 1, y)$ when $x - 1 < y < g$, and the halting label otherwise. 
 $c = \mathrm{amo}(0, y)$, it is the start of the at-least-one clause when $y \le 1$, and the start
 of clause $\mathrm{amo}(y - 2, y - 1)$ when $y \ge 2$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#next-c).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#next-c).
 
 ## One-hot generator: the routine for one literal
 
@@ -218,7 +218,7 @@ two-bit slot encoding of the sign of $c$ ($10$ if positive, $11$ if negative) to
 empties $Q$, and goes to the routine for literal $l - 1$ of $c$, or to the end of clause $c$ when
 $l = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-p).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-p).
 
 ## The one-hot generator
 
@@ -234,7 +234,7 @@ loops finish it halts.
 On halting, the output stack holds the encoding of the one-hot cell family in front of its
 original contents.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#prog).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#prog).
 
 ## The one-hot generator as a finite multi-stack machine
 
@@ -248,7 +248,7 @@ program.
 This bundling only checks the finiteness conditions; the generator also reads the height bound
 from the height counter, which a bundled machine with a single input stack does not record.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-tm).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-tm).
 
 ## Literals of a one-hot clause kind
 
@@ -258,7 +258,7 @@ at-least-one kind, the pairs $(B + x, \mathrm{true})$ for $x = 0, \dots, g - 1$ 
 order; for the at-most-one kind of the pair $(x, y)$, the two pairs $(B + x, \mathrm{false})$
 and $(B + y, \mathrm{false})$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.clits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clits).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.clits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clits).
 
 ## Boundary before a literal of a cell clause
 
@@ -266,7 +266,7 @@ For $V, B \in \mathbb{N}$, a clause kind $c$
 and an index $l$, the number $B + o_l$ if $l$ is less than the number of literals of $c$, where
 $o_l$ is the offset of literal $l$ of $c$ from the cell base, and $V$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#bnd).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#bnd).
 
 ## Empty scratch counters of the one-hot generator
 
@@ -276,7 +276,7 @@ $Q$, $\mathit{tmp}$, $\mathit{md}$, $c_1$ and $c_2$ all have value $0$ under $F$
 
 These are the counters that are empty whenever a clause starts.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rest).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rest).
 
 ## Run of one literal routine (one-hot generator)
 
@@ -292,14 +292,14 @@ literal $l$ of $c$ (the routine for literal $l - 1$, or the final stage of $c$ i
 flag false, counters $F$ except $P = q$, and output $s \cdot (01)^{\gamma} \cdot o$, where $s$ is
 the two-bit slot code of the sign of $c$ ($10$ if positive, $11$ if negative).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-run).
 
 ## Per-literal step cost of the one-hot generator
 
 For a natural number $V$, the cost of
 emitting one literal, apart from the gap loop, is $6V + 9$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-e).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lit-e).
 
 ## Step budget for one one-hot clause
 
@@ -307,7 +307,7 @@ For natural numbers $g$ and $V$, the step budget for
 one clause is $V(3V + 6) + g(6V + 9) + 3V + 4$, where $6V + 9$ is the per-literal cost apart
 from the gap loop.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clause-b).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clause-b).
 
 ## Run of the literal routines of a clause (one-hot generator)
 
@@ -327,7 +327,7 @@ steps from the label after literal $l$ of $c$, with flag $v$, counters $F$ excep
 output $E(b_l, \lambda_l) \cdot 00 \cdot o$, to the final stage of $c$, with flag $v'$, counters
 $F$ except $P = b_0$ and output $E(b_0, \lambda_0) \cdot 00 \cdot o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lits-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#lits-run).
 
 ## One clause of the one-hot generator
 
@@ -342,7 +342,7 @@ clause $c$, with state $v$, counters $F$ and output $o$, to the label that follo
 with state false, the same counters $F$, and output the encoding of the dense clause over $V$
 variables whose literals are those of $c$ in the cell with base $B$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clause-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#clause-run).
 
 ## Generator run over one row of at-most-one clauses
 
@@ -358,7 +358,7 @@ the pair $(x, y)$ with flag $v$, output stack $o$ and each counter $c$ holding $
 within $(x + 1) \beta$ steps the label $\mathrm{yDone}(y)$ (Y Done) with flag false, the same
 counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#row-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#row-run).
 
 ## Generator run over the first rows and the at-least-one clause
 
@@ -375,7 +375,7 @@ at the label $\mathrm{yDone}(y)$ (Y Done) with flag $v$, output stack $o$ and ea
 holding $F(c)$, reaches within $(1 + y^2) \beta$ steps the label $\mathrm{jd}$ (which drains
 $CB$) with flag false, the same counters, and output stack $e_y \, o$ (concatenation).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rows-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#rows-run).
 
 ## Step bound for one cell
 
@@ -384,7 +384,7 @@ $2V + 2 + (H(2g + 3) + H + 2) + (1 + g^2)\, b + V + 1$, where $b$ is the step bo
 clause for $g$ and $V$. It bounds the steps of one iteration of the one-hot generator's loop over
 cell depths.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.cellB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-b).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.cellB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-b).
 
 ## Generator run for one cell
 
@@ -397,7 +397,7 @@ body of the depth loop with flag $v$, counters $F$ and output $o$ to the head of
 with flag false, counters $F$ and output the encoding of the one-hot clauses of the cell with
 base $B$ over $V$ variables followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.cell_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.cell_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#cell-run).
 
 ## Encoded one-hot clauses of one stack at one time step
 
@@ -407,7 +407,7 @@ $j = 0, \dots, H - 1$ of the bit encodings of the one-hot clauses of the cell wh
 cell variable of $L$ for stack $k$, depth $j$, symbol code $0$ at time $t$, written densely over
 the $V$ variables of $L$ for $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.blkK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#blk-k).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.blkK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#blk-k).
 
 ## Encoded one-hot clauses of one time step
 
@@ -415,7 +415,7 @@ For a layout $L$ with $K$ stacks, natural
 numbers $T, H$ and a time step $t$, the concatenation over the stacks $k = 0, \dots, K - 1$ of the
 encoded one-hot clauses of stack $k$ at time step $t$ (for $T$ and $H$).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.blkT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#blk-t).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.blkT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#blk-t).
 
 ## Step budget for one stack iteration of the one-hot generator
 
@@ -424,7 +424,7 @@ $K$, $H$ and $V$, let $c = V(3V + 6) + g(6V + 9) + 3V + 4$ be the step budget fo
 and $C = 2V + 2 + (H(2g + 3) + H + 2) + (1 + g^2)c + V + 1$ the step budget for one cell. The
 budget is $1 + (2V + 2) + (K(2Hg + 3) + K + 2) + (H(C + 1) + H + 2) + V + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.kBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#k-body-b).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.kBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#k-body-b).
 
 ## One stack iteration of the one-hot generator
 
@@ -445,7 +445,7 @@ one-stack-iteration step budget at $(g, K, H, V)$ from the label that starts the
 stack loop, with state $v$, counters $F$ and output $o$, to the head of the stack loop, with
 state false, the same counters $F$, and output $w_0 w_1 \cdots w_{H-1}$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.kbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#kbody-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.kbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#kbody-run).
 
 ## Step budget for one time step of the one-hot generator
 
@@ -455,7 +455,7 @@ numbers, $W = A + K H g$ the row width and $V = (T + 1) W$ the number of variabl
 $\kappa$ be the step budget of one iteration of the $k$ loop for $g$, $K$, $H$ and $V$. The
 budget is $T(2W + 3) + T + 2 + \bigl(K(\kappa + 1) + K + 2\bigr) + V + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.tBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#t-body-b).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.tBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#t-body-b).
 
 ## Generator run over one time step
 
@@ -477,7 +477,7 @@ the stage computing $TW := t W$ with flag $v$, output stack $o$ and each counter
 $F(c)$, reaches within the time-step budget of $L$, $T$ and $H$ (T Body B) steps the head of the
 time loop with flag false, the same counters, and output stack $E \, o$ (concatenation).
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.tbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#tbody-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.tbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#tbody-run).
 
 ## Initial counters of the one-hot generator
 
@@ -485,7 +485,7 @@ For natural numbers $T$ and $H$, the initial
 counter values are $T$ on the counter $\mathrm{Tn}$, $H$ on the counter $\mathrm{Hs}$, and $0$
 on every other counter.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#init-f).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#init-f).
 
 ## Counter values after the one-hot precomputation
 
@@ -494,7 +494,7 @@ $A$, $K$ stacks and $g$ symbol codes, and bounds $T$ and $H$, let $W = A + KHg$.
 precomputation the generator's counters hold $T_n = T + 1$, $H_s = H$, $G_c = g$, $HG = Hg$,
 $W_c = W$, $K_c = K$ and $V_c = (T + 1)W$, and every other counter holds $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pre-f).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pre-f).
 
 ## Step budget of the one-hot precomputation
 
@@ -503,7 +503,7 @@ $K$ stacks and $g$ symbol codes, bounds $T$ and $H$, and row width $W = A + KHg$
 steps allotted to the generator's precomputation is
 $4 + (H(2g + 3) + H + 2) + (K(2Hg + 3) + K + 2) + ((T + 1)(2W + 3) + (T + 1) + 2)$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pre-b).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#pre-b).
 
 ## Explicit time bound of the one-hot generator
 
@@ -515,7 +515,7 @@ both for $L$, $T$ and $H$.
 This bound is at most $668\,(A + K + g + 1)^7 (T + H + 1)^6$, where $A$ is the label block size,
 $K$ the number of stacks and $g$ the number of symbol codes of $L$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 697](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L697). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-bound).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 697](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L697). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-bound).
 
 ## Correctness of the one-hot generator, with its explicit time bound
 
@@ -527,7 +527,7 @@ within $\beta(T, H)$ steps, where $\beta$ is the generator's explicit step bound
 halting label, in some internal state, with the output stack holding the encoding of the one-hot
 cell family for $T$ and $H$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.oh_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-run).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.oh_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-run).
 
 ## Time bound of the one-hot generator on a uniform layout
 
@@ -539,7 +539,7 @@ is at most $668\, k^7 y^6$.
 Every monomial of the bound is at most $k^7 y^6$, and the coefficients sum to $668$, the value
 of the bound at $k = y = 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-bound-uni).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-bound-uni).
 
 ## Constant of the one-hot time bound
 
@@ -547,7 +547,7 @@ For a layout $L$ with label block size $A$, $K$ stacks
 and $g$ symbol codes, the constant of the one-hot generator's time bound is
 $668\,(A + K + g + 1)^7$; it does not depend on the window depth of $L$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-c).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-c).
 
 ## The one-hot time bound as a polynomial
 
@@ -557,7 +557,7 @@ $c\,(X + 1)^6$ with natural-number coefficients. For natural numbers $T$ and $H$
 $X = T + H$ is $c\,(T + H + 1)^6$, the bound on the number of steps of the one-hot generator
 started on $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.ohPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 814](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L814). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-poly).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.ohPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 814](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L814). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-poly).
 
 ## Polynomial time bound for the one-hot generator
 
@@ -569,7 +569,7 @@ counter holding $H$ in unary, and every other counter empty. Then within $c\,(T 
 steps it reaches its halting label, in some internal state, with the output stack holding the
 encoding of the one-hot cell family for $T$ and $H$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.OneHot.oh_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 820](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L820). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-time).
+Formalized by `Cslib.Complexity.CookLevin.OneHot.oh_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/OneHot.lean, line 820](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/OneHot.lean#L820). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html#oh-time).
 
 ## Depends on
 
@@ -578,4 +578,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: the cell one-hot family](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-cell-one-hot-family)

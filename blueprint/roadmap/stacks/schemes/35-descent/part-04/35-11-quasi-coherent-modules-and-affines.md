@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.11 Quasi-coherent modules and affines
 
-Section 35.11 of the Stacks Project, [Tag 0GZT](https://stacks.math.columbia.edu/tag/0GZT). 4 tags here are carried by 95 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.11 of the Stacks Project, [Tag 0GZT](https://stacks.math.columbia.edu/tag/0GZT). 4 tags here are carried by 95 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GZU, an equation
 
 [Tag 0GZU](https://stacks.math.columbia.edu/tag/0GZU) in the Stacks Project.
 
-**`AlgebraicGeometry.zariski_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L273). The attribute's comment: “Zariski site”.
+**`AlgebraicGeometry.zariski_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L273). The attribute's comment: “Zariski site”.
 
 > **Stacks 0GZU, Zariski site.** The affine-to-big morphism of ringed topoi over the big
 > Zariski site of `S` is an equivalence of ringed topoi: its inverse image is an equivalence and
@@ -31,7 +31,7 @@ public theorem zariski_affineToBigRingedToposEquivalence
     f.toToposHom.inverseImage.IsEquivalence ∧ IsIso f.fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.etale_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L287). The attribute's comment: “étale site”.
+**`AlgebraicGeometry.etale_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L287). The attribute's comment: “étale site”.
 
 > **Stacks 0GZU, étale site.** The affine-to-big morphism of ringed topoi over the big étale
 > site of `S` is an equivalence of ringed topoi: its inverse image is an equivalence and its
@@ -48,7 +48,7 @@ public theorem etale_affineToBigRingedToposEquivalence
     f.toToposHom.inverseImage.IsEquivalence ∧ IsIso f.fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.smooth_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L301). The attribute's comment: “smooth site”.
+**`AlgebraicGeometry.smooth_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L301). The attribute's comment: “smooth site”.
 
 > **Stacks 0GZU, smooth site.** The affine-to-big morphism of ringed topoi over the big smooth
 > site of `S` is an equivalence of ringed topoi: its inverse image is an equivalence and its
@@ -65,7 +65,7 @@ public theorem smooth_affineToBigRingedToposEquivalence
     f.toToposHom.inverseImage.IsEquivalence ∧ IsIso f.fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.syntomic_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L315). The attribute's comment: “syntomic site”.
+**`AlgebraicGeometry.syntomic_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L315). The attribute's comment: “syntomic site”.
 
 > **Stacks 0GZU, syntomic site.** The affine-to-big morphism of ringed topoi over the big
 > syntomic site of `S` is an equivalence of ringed topoi: its inverse image is an equivalence and
@@ -82,7 +82,7 @@ public theorem syntomic_affineToBigRingedToposEquivalence
     f.toToposHom.inverseImage.IsEquivalence ∧ IsIso f.fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.fppf_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L329). The attribute's comment: “fppf site”.
+**`AlgebraicGeometry.fppf_affineToBigRingedToposEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineRingedToposEquivalence.lean#L329). The attribute's comment: “fppf site”.
 
 > **Stacks 0GZU, fppf site.** The affine-to-big morphism of ringed topoi over the big fppf
 > site of `S` is an equivalence of ringed topoi: its inverse image is an equivalence and its
@@ -103,7 +103,7 @@ public theorem fppf_affineToBigRingedToposEquivalence
 
 [Tag 0GZV](https://stacks.math.columbia.edu/tag/0GZV) in the Stacks Project.
 
-**`AlgebraicGeometry.bigAffineZariski_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L210). The attribute's comment: “(8) ⇒ (1) on the big affine Zariski category”.
+**`AlgebraicGeometry.bigAffineZariski_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L210). The attribute's comment: “(8) ⇒ (1) on the big affine Zariski category”.
 
 > **Stacks 0GZV, condition (8) implies condition (1), on `(Aff/S)_Zar`.**
 
@@ -116,7 +116,7 @@ public theorem bigAffineZariski_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (bigAffineZariskiToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L238). The attribute's comment: “(8) ⇒ (1) on the big affine étale category”.
+**`AlgebraicGeometry.bigAffineEtale_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L238). The attribute's comment: “(8) ⇒ (1) on the big affine étale category”.
 
 > **Stacks 0GZV, condition (8) implies condition (1), on `(Aff/S)_étale`.**
 
@@ -129,7 +129,7 @@ public theorem bigAffineEtale_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (bigAffineEtaleToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L266). The attribute's comment: “(8) ⇒ (1) on the big affine smooth category”.
+**`AlgebraicGeometry.bigAffineSmooth_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L266). The attribute's comment: “(8) ⇒ (1) on the big affine smooth category”.
 
 > **Stacks 0GZV, condition (8) implies condition (1), on `(Aff/S)_smooth`.**
 
@@ -142,7 +142,7 @@ public theorem bigAffineSmooth_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (bigAffineSmoothToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L294). The attribute's comment: “(8) ⇒ (1) on the big affine syntomic category”.
+**`AlgebraicGeometry.bigAffineSyntomic_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L294). The attribute's comment: “(8) ⇒ (1) on the big affine syntomic category”.
 
 > **Stacks 0GZV, condition (8) implies condition (1), on `(Aff/S)_syntomic`.**
 
@@ -155,7 +155,7 @@ public theorem bigAffineSyntomic_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (bigAffineSyntomicToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L325). The attribute's comment: “(8) ⇒ (1) on the big affine fppf category”.
+**`AlgebraicGeometry.bigAffineFppf_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AffineSiteAssociatedModuleCartesian.lean#L325). The attribute's comment: “(8) ⇒ (1) on the big affine fppf category”.
 
 > **Stacks 0GZV, condition (8) implies condition (1).** The presheaf `𝒢ᵃ` of Section 35.8
 > attached to a quasi-coherent `𝒪_S`-module `𝒢` has all its base-change comparisons
@@ -171,7 +171,7 @@ public theorem bigAffineFppf_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (bigAffineFppfToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.fullyFaithfulBigAffineFppfAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L205). The attribute's comment: “(8) at τ = fppf, uniqueness of 𝒢”.
+**`AlgebraicGeometry.fullyFaithfulBigAffineFppfAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L206). The attribute's comment: “(8) at τ = fppf, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8) at `τ = fppf`.** The functor
 > `𝒢 ↦ 𝒢^a|_{(Aff/S)_fppf}` from the quasi-coherent `𝒪_S`-modules to the `𝒪_Aff`-modules on
@@ -184,7 +184,7 @@ public noncomputable def fullyFaithfulBigAffineFppfAssociatedModuleQcoh :
     (bigAffineFppfAssociatedModuleQcoh B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L214). The attribute's comment: “(8) at τ = fppf, uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffineFppf_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L215). The attribute's comment: “(8) at τ = fppf, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8) at `τ = fppf`**, read as a uniqueness
 > statement: two quasi-coherent `𝒪_S`-modules whose associated modules have isomorphic
@@ -198,7 +198,7 @@ public theorem bigAffineFppf_iso_of_associatedModuleQcoh_restriction_iso
     Nonempty (G₁.obj ≅ G₂.obj)
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_of_isRestrictedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L249). The attribute's comment: “(8) ⇒ (7) at τ = fppf”.
+**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_of_isRestrictedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L250). The attribute's comment: “(8) ⇒ (7) at τ = fppf”.
 
 > **Stacks 0GZV, (8) ⇒ (7) at `τ = fppf`.** The module on `(Sch/S)_fppf` that condition (7)
 > asks for is `𝒢^a` itself, which is quasi-coherent there by Stacks 03DV (1).
@@ -211,7 +211,7 @@ public theorem bigAffineFppf_isRestrictionOfQuasicoherent_of_isRestrictedAssocia
     BigAffineFppf.IsRestrictionOfQuasicoherent B S hS F
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isRestrictedAssociatedModule_of_isRestrictionOfQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L266). The attribute's comment: “(7) ⇒ (8) at τ = fppf, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffineFppf_isRestrictedAssociatedModule_of_isRestrictionOfQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L267). The attribute's comment: “(7) ⇒ (8) at τ = fppf, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (7) ⇒ (8) at `τ = fppf`**, with the uniqueness of `𝒢` included. The module
 > `𝓜` on `(Sch/S)_fppf` given by condition (7) is quasi-coherent, hence isomorphic to `𝒢^a` for a
@@ -228,7 +228,7 @@ public theorem bigAffineFppf_isRestrictedAssociatedModule_of_isRestrictionOfQuas
     BigAffineFppf.IsRestrictedAssociatedModule B S hS F
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_iff_isRestrictedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L280). The attribute's comment: “(7) ⇔ (8) at τ = fppf”.
+**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_iff_isRestrictedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteAssociatedModuleUnique.lean#L281). The attribute's comment: “(7) ⇔ (8) at τ = fppf”.
 
 > **Stacks 0GZV, conditions (7) and (8) are equivalent at `τ = fppf`**, which is how the
 > source reads them off each other from Descent, Proposition 03DX.
@@ -241,7 +241,7 @@ public theorem bigAffineFppf_isRestrictionOfQuasicoherent_iff_isRestrictedAssoci
       BigAffineFppf.IsRestrictedAssociatedModule B S hS F
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L195). The attribute's comment: “(1) ⇒ the sheaf conjunct of (6), at τ = fppf”.
+**`AlgebraicGeometry.bigAffineFppf_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L195). The attribute's comment: “(1) ⇒ the sheaf conjunct of (6), at τ = fppf”.
 
 > **Stacks 0GZV, condition (1) implies the sheaf conjunct of condition (6).** A presheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_fppf` all of whose base-change comparisons
@@ -258,7 +258,7 @@ public theorem bigAffineFppf_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineFppf.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L232). The attribute's comment: “(1) ⇒ the sheaf conjunct of (2), at τ = Zariski”.
+**`AlgebraicGeometry.bigAffineZariski_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L232). The attribute's comment: “(1) ⇒ the sheaf conjunct of (2), at τ = Zariski”.
 
 > **Stacks 0GZV, condition (1) implies the sheaf conjunct of condition (2).** A presheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_Zar` all of whose base-change comparisons
@@ -275,7 +275,7 @@ public theorem bigAffineZariski_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineZariski.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L269). The attribute's comment: “(1) ⇒ the sheaf conjunct of (3), at τ = étale”.
+**`AlgebraicGeometry.bigAffineEtale_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L269). The attribute's comment: “(1) ⇒ the sheaf conjunct of (3), at τ = étale”.
 
 > **Stacks 0GZV, condition (1) implies the sheaf conjunct of condition (3).** A presheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_étale` all of whose base-change comparisons
@@ -292,7 +292,7 @@ public theorem bigAffineEtale_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineEtale.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L306). The attribute's comment: “(1) ⇒ the sheaf conjunct of (4), at τ = smooth”.
+**`AlgebraicGeometry.bigAffineSmooth_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L306). The attribute's comment: “(1) ⇒ the sheaf conjunct of (4), at τ = smooth”.
 
 > **Stacks 0GZV, condition (1) implies the sheaf conjunct of condition (4).** A presheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_smooth` all of whose base-change comparisons
@@ -309,7 +309,7 @@ public theorem bigAffineSmooth_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineSmooth.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L347). The attribute's comment: “(1) ⇒ the sheaf conjunct of (5), at τ = syntomic”.
+**`AlgebraicGeometry.bigAffineSyntomic_isSheaf_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCartesianSheaf.lean#L347). The attribute's comment: “(1) ⇒ the sheaf conjunct of (5), at τ = syntomic”.
 
 > **Stacks 0GZV, condition (1) implies the sheaf conjunct of condition (5).** A presheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_syntomic` all of whose base-change comparisons
@@ -326,7 +326,7 @@ public theorem bigAffineSyntomic_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineSyntomic.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.fullyFaithfulBigAffineAssociatedModuleQcohOf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L351). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
+**`AlgebraicGeometry.fullyFaithfulBigAffineAssociatedModuleQcohOf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L351). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8), at every `τ`.** The functor
 > `𝒢 ↦ 𝒢^a|_{(Aff/S)_τ}` from the quasi-coherent `𝒪_S`-modules to the `𝒪_Aff`-modules on
@@ -339,7 +339,7 @@ public noncomputable def fullyFaithfulBigAffineAssociatedModuleQcohOf (τ : Site
     (bigAffineAssociatedModuleQcohOf B S hS τ).FullyFaithful
 ```
 
-**`AlgebraicGeometry.bigAffine_iso_of_associatedModuleQcohOf_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L360). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_iso_of_associatedModuleQcohOf_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L360). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8) at every `τ`**, read as a uniqueness
 > statement: two quasi-coherent `𝒪_S`-modules whose associated modules have isomorphic
@@ -353,7 +353,7 @@ public theorem bigAffine_iso_of_associatedModuleQcohOf_restriction_iso (τ : Sit
     Nonempty (G₁.obj ≅ G₂.obj)
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L411). The attribute's comment: “(8) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L411). The attribute's comment: “(8) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (8) ⇒ (7) at every `τ`.** The module on `(Sch/S)_τ` that condition (7) asks
 > for is `𝒢^a` itself, which is quasi-coherent there by Stacks 03DV (1).
@@ -366,7 +366,7 @@ public theorem bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociate
     BigAffineFppf.IsRestrictionOfQuasicoherentOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L429). The attribute's comment: “(1) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L429). The attribute's comment: “(1) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (1) ⇒ (7) at every `τ`.** A sheaf of `𝒪_Aff`-modules on `(Aff/S)_τ` all of
 > whose base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms corresponds, under the
@@ -385,7 +385,7 @@ public theorem bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso (�
     BigAffineFppf.IsRestrictionOfQuasicoherentOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L445). The attribute's comment: “(7) ⇒ (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L445). The attribute's comment: “(7) ⇒ (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (7) ⇒ (1) at every `τ`.** The restriction to `(Aff/S)_τ` of the quasi-coherent
 > module given by condition (7) is quasi-coherent, hence cartesian by Stacks 0H04.
@@ -399,7 +399,7 @@ public theorem bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf 
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineRingedSiteOf B S hS τ) F f)
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L466). The attribute's comment: “(1) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L466). The attribute's comment: “(1) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (1) ⇒ (8) at every `τ`**, with the uniqueness of `𝒢` included.
 >
@@ -419,7 +419,7 @@ public theorem bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso (�
     BigAffineFppf.IsRestrictedAssociatedModuleOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L487). The attribute's comment: “(7) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L487). The attribute's comment: “(7) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (7) ⇒ (8) at every `τ`**, with the uniqueness of `𝒢` included.  The route is
 > (7) ⇒ (1) ⇒ (8); in particular clause (1) of Descent, Proposition 03DX at `τ` is not used.
@@ -432,7 +432,7 @@ public theorem bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasic
     BigAffineFppf.IsRestrictedAssociatedModuleOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_iff_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L499). The attribute's comment: “(7) ⇔ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_iff_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L499). The attribute's comment: “(7) ⇔ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, conditions (7) and (8) are equivalent, at every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`**, which is how the source reads them off each
@@ -446,7 +446,7 @@ public theorem bigAffine_isRestrictionOfQuasicoherentOf_iff_isRestrictedAssociat
       BigAffineFppf.IsRestrictedAssociatedModuleOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean#L142). The attribute's comment: “(1) ⇒ (7) at τ = fppf”.
+**`AlgebraicGeometry.bigAffineFppf_isRestrictionOfQuasicoherent_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean#L142). The attribute's comment: “(1) ⇒ (7) at τ = fppf”.
 
 > **Stacks 0GZV, (1) ⇒ (7) at `τ = fppf`.** A sheaf of `𝒪_Aff`-modules on `(Aff/S)_fppf` all
 > of whose base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms corresponds, under
@@ -466,7 +466,7 @@ public theorem bigAffineFppf_isRestrictionOfQuasicoherent_of_canonicalMap_isIso
     BigAffineFppf.IsRestrictionOfQuasicoherent B S hS F
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isRestrictedAssociatedModule_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean#L161). The attribute's comment: “(1) ⇒ (8) at τ = fppf, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffineFppf_isRestrictedAssociatedModule_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteModuleComparisonLemma.lean#L161). The attribute's comment: “(1) ⇒ (8) at τ = fppf, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (1) ⇒ (8) at `τ = fppf`**, with the uniqueness of `𝒢` included. A sheaf of
 > `𝒪_Aff`-modules on `(Aff/S)_fppf` all of whose base-change maps are isomorphisms is the
@@ -485,7 +485,7 @@ public theorem bigAffineFppf_isRestrictedAssociatedModule_of_canonicalMap_isIso
     BigAffineFppf.IsRestrictedAssociatedModule B S hS F
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L66). The attribute's comment: “(1) ⇒ (2) in full, for a presheaf of modules”.
+**`AlgebraicGeometry.bigAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L67). The attribute's comment: “(1) ⇒ (2) in full, for a presheaf of modules”.
 
 > **Stacks 0GZV, condition (1) implies condition (2) in full.** A presheaf of `𝒪_Aff`-modules
 > on `(Aff/S)_Zar` all of whose base-change comparisons `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are
@@ -505,7 +505,7 @@ public theorem bigAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_cartesian
           (bigAffineZariskiRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L84). The attribute's comment: “(1) ⇒ (3) in full, for a presheaf of modules”.
+**`AlgebraicGeometry.bigAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L85). The attribute's comment: “(1) ⇒ (3) in full, for a presheaf of modules”.
 
 > **Stacks 0GZV, condition (1) implies condition (3) in full.** A presheaf of `𝒪_Aff`-modules
 > on `(Aff/S)_étale` all of whose base-change comparisons `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are
@@ -525,7 +525,7 @@ public theorem bigAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_cartesian
           (bigAffineEtaleRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L102). The attribute's comment: “(1) ⇒ (4) in full, for a presheaf of modules”.
+**`AlgebraicGeometry.bigAffineSmooth_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L103). The attribute's comment: “(1) ⇒ (4) in full, for a presheaf of modules”.
 
 > **Stacks 0GZV, condition (1) implies condition (4) in full.** A presheaf of `𝒪_Aff`-modules
 > on `(Aff/S)_smooth` all of whose base-change comparisons `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are
@@ -545,7 +545,7 @@ public theorem bigAffineSmooth_isSheaf_and_isQuasicoherentOnSite_of_cartesian
           (bigAffineSmoothRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L120). The attribute's comment: “(1) ⇒ (5) in full, for a presheaf of modules”.
+**`AlgebraicGeometry.bigAffineSyntomic_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L121). The attribute's comment: “(1) ⇒ (5) in full, for a presheaf of modules”.
 
 > **Stacks 0GZV, condition (1) implies condition (5) in full.** A presheaf of `𝒪_Aff`-modules
 > on `(Aff/S)_syntomic` all of whose base-change comparisons `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are
@@ -565,7 +565,7 @@ public theorem bigAffineSyntomic_isSheaf_and_isQuasicoherentOnSite_of_cartesian
           (bigAffineSyntomicRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L138). The attribute's comment: “(1) ⇒ (6) in full, for a presheaf of modules”.
+**`AlgebraicGeometry.bigAffineFppf_isSheaf_and_isQuasicoherentOnSite_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSitePresheafConditions.lean#L139). The attribute's comment: “(1) ⇒ (6) in full, for a presheaf of modules”.
 
 > **Stacks 0GZV, condition (1) implies condition (6) in full.** A presheaf of `𝒪_Aff`-modules
 > on `(Aff/S)_fppf` all of whose base-change comparisons `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are
@@ -585,7 +585,7 @@ public theorem bigAffineFppf_isSheaf_and_isQuasicoherentOnSite_of_cartesian
           (bigAffineFppfRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L302). The attribute's comment: “(6) ⇒ (1), from the quasi-coherence conjunct of (6)”.
+**`AlgebraicGeometry.bigAffineFppf_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L302). The attribute's comment: “(6) ⇒ (1), from the quasi-coherence conjunct of (6)”.
 
 > **Stacks 0GZV, condition (6) implies condition (1).** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_fppf` which is quasi-coherent on the ringed site `((Aff/S)_fppf, 𝒪_Aff)` has all its
@@ -600,7 +600,7 @@ theorem bigAffineFppf_isIso_canonicalMap_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineFppfRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L372). The attribute's comment: “(2) ⇒ (1), from the quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.bigAffineZariski_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L372). The attribute's comment: “(2) ⇒ (1), from the quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZV, condition (2) implies condition (1).** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_Zar` which is quasi-coherent on the ringed site `((Aff/S)_Zar, 𝒪_Aff)` has all its
@@ -615,7 +615,7 @@ theorem bigAffineZariski_isIso_canonicalMap_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineZariskiRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L390). The attribute's comment: “(3) ⇒ (1), from the quasi-coherence conjunct of (3)”.
+**`AlgebraicGeometry.bigAffineEtale_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L390). The attribute's comment: “(3) ⇒ (1), from the quasi-coherence conjunct of (3)”.
 
 > **Stacks 0GZV, condition (3) implies condition (1).** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_étale` which is quasi-coherent on the ringed site `((Aff/S)_étale, 𝒪_Aff)` has all its
@@ -630,7 +630,7 @@ theorem bigAffineEtale_isIso_canonicalMap_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineEtaleRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L408). The attribute's comment: “(4) ⇒ (1), from the quasi-coherence conjunct of (4)”.
+**`AlgebraicGeometry.bigAffineSmooth_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L408). The attribute's comment: “(4) ⇒ (1), from the quasi-coherence conjunct of (4)”.
 
 > **Stacks 0GZV, condition (4) implies condition (1).** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_smooth` which is quasi-coherent on the ringed site `((Aff/S)_smooth, 𝒪_Aff)` has all its
@@ -645,7 +645,7 @@ theorem bigAffineSmooth_isIso_canonicalMap_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineSmoothRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L426). The attribute's comment: “(5) ⇒ (1), from the quasi-coherence conjunct of (5)”.
+**`AlgebraicGeometry.bigAffineSyntomic_isIso_canonicalMap_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L426). The attribute's comment: “(5) ⇒ (1), from the quasi-coherence conjunct of (5)”.
 
 > **Stacks 0GZV, condition (5) implies condition (1).** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_syntomic` which is quasi-coherent on the ringed site `((Aff/S)_syntomic, 𝒪_Aff)` has all
@@ -660,7 +660,7 @@ theorem bigAffineSyntomic_isIso_canonicalMap_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineSyntomicRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L447). The attribute's comment: “(1) ⇔ (6), for a sheaf of modules”.
+**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L447). The attribute's comment: “(1) ⇔ (6), for a sheaf of modules”.
 
 > **Stacks 0GZV, (1) ⇔ (6), for a sheaf of modules.** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_fppf` is quasi-coherent on the ringed site `((Aff/S)_fppf, 𝒪_Aff)` exactly when all of
@@ -679,7 +679,7 @@ theorem bigAffineFppf_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineFppfRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L464). The attribute's comment: “(1) ⇔ (2), for a sheaf of modules”.
+**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L464). The attribute's comment: “(1) ⇔ (2), for a sheaf of modules”.
 
 > **Stacks 0GZV, (1) ⇔ (2), for a sheaf of modules.** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_Zar` is quasi-coherent on the ringed site `((Aff/S)_Zar, 𝒪_Aff)` exactly when all of
@@ -698,7 +698,7 @@ theorem bigAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineZariskiRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L481). The attribute's comment: “(1) ⇔ (3), for a sheaf of modules”.
+**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L481). The attribute's comment: “(1) ⇔ (3), for a sheaf of modules”.
 
 > **Stacks 0GZV, (1) ⇔ (3), for a sheaf of modules.** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_étale` is quasi-coherent on the ringed site `((Aff/S)_étale, 𝒪_Aff)` exactly when all of
@@ -717,7 +717,7 @@ theorem bigAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineEtaleRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L498). The attribute's comment: “(1) ⇔ (4), for a sheaf of modules”.
+**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L498). The attribute's comment: “(1) ⇔ (4), for a sheaf of modules”.
 
 > **Stacks 0GZV, (1) ⇔ (4), for a sheaf of modules.** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_smooth` is quasi-coherent on the ringed site `((Aff/S)_smooth, 𝒪_Aff)` exactly when all of
@@ -736,7 +736,7 @@ theorem bigAffineSmooth_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineSmoothRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L515). The attribute's comment: “(1) ⇔ (5), for a sheaf of modules”.
+**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteQuasicoherentCartesian.lean#L515). The attribute's comment: “(1) ⇔ (5), for a sheaf of modules”.
 
 > **Stacks 0GZV, (1) ⇔ (5), for a sheaf of modules.** A sheaf of `𝒪_Aff`-modules on
 > `(Aff/S)_syntomic` is quasi-coherent on the ringed site `((Aff/S)_syntomic, 𝒪_Aff)` exactly when
@@ -755,7 +755,7 @@ theorem bigAffineSyntomic_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineSyntomicRingedSite B S hS) M f)
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L506). The attribute's comment: “(1) ⇒ (2), quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L507). The attribute's comment: “(1) ⇒ (2), quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZV, condition (2).** A sheaf of modules on `(Aff/S)_Zar` whose base-change maps
 > `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the ringed site
@@ -771,7 +771,7 @@ public theorem bigAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L518). The attribute's comment: “(7) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.bigAffineZariski_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L519). The attribute's comment: “(7) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZV, condition (2).** The restriction to `(Aff/S)_Zar` of a quasi-coherent module
 > on the ringed site `((Sch/S)_Zar, 𝒪)` is quasi-coherent on `((Aff/S)_Zar, 𝒪_Aff)`.
@@ -789,7 +789,7 @@ public theorem bigAffineZariski_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L534). The attribute's comment: “(1) ⇒ (3), quasi-coherence conjunct of (3)”.
+**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L535). The attribute's comment: “(1) ⇒ (3), quasi-coherence conjunct of (3)”.
 
 > **Stacks 0GZV, condition (3).** A sheaf of modules on `(Aff/S)_étale` whose base-change maps
 > `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the ringed site
@@ -805,7 +805,7 @@ public theorem bigAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L547). The attribute's comment: “(7) ⇒ (3) at τ = étale, quasi-coherence conjunct of (3)”.
+**`AlgebraicGeometry.bigAffineEtale_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L548). The attribute's comment: “(7) ⇒ (3) at τ = étale, quasi-coherence conjunct of (3)”.
 
 > **Stacks 0GZV, condition (3).** The restriction to `(Aff/S)_étale` of a quasi-coherent
 > module on the ringed site `((Sch/S)_étale, 𝒪)` is quasi-coherent on
@@ -824,7 +824,7 @@ public theorem bigAffineEtale_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L563). The attribute's comment: “(1) ⇒ (4), quasi-coherence conjunct of (4)”.
+**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L564). The attribute's comment: “(1) ⇒ (4), quasi-coherence conjunct of (4)”.
 
 > **Stacks 0GZV, condition (4).** A sheaf of modules on `(Aff/S)_smooth` whose base-change
 > maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the ringed site
@@ -840,7 +840,7 @@ public theorem bigAffineSmooth_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L576). The attribute's comment: “(7) ⇒ (4) at τ = smooth, quasi-coherence conjunct of (4)”.
+**`AlgebraicGeometry.bigAffineSmooth_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L577). The attribute's comment: “(7) ⇒ (4) at τ = smooth, quasi-coherence conjunct of (4)”.
 
 > **Stacks 0GZV, condition (4).** The restriction to `(Aff/S)_smooth` of a quasi-coherent
 > module on the ringed site `((Sch/S)_smooth, 𝒪)` is quasi-coherent on
@@ -859,7 +859,7 @@ public theorem bigAffineSmooth_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L592). The attribute's comment: “(1) ⇒ (5), quasi-coherence conjunct of (5)”.
+**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L593). The attribute's comment: “(1) ⇒ (5), quasi-coherence conjunct of (5)”.
 
 > **Stacks 0GZV, condition (5).** A sheaf of modules on `(Aff/S)_syntomic` whose base-change
 > maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the ringed site
@@ -875,7 +875,7 @@ public theorem bigAffineSyntomic_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L605). The attribute's comment: “(7) ⇒ (5) at τ = syntomic, quasi-coherence conjunct of (5)”.
+**`AlgebraicGeometry.bigAffineSyntomic_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L606). The attribute's comment: “(7) ⇒ (5) at τ = syntomic, quasi-coherence conjunct of (5)”.
 
 > **Stacks 0GZV, condition (5).** The restriction to `(Aff/S)_syntomic` of a quasi-coherent
 > module on the ringed site `((Sch/S)_syntomic, 𝒪)` is quasi-coherent on
@@ -894,7 +894,7 @@ public theorem bigAffineSyntomic_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L621). The attribute's comment: “(1) ⇒ (6), quasi-coherence conjunct of (6)”.
+**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L622). The attribute's comment: “(1) ⇒ (6), quasi-coherence conjunct of (6)”.
 
 > **Stacks 0GZV, condition (6).** A sheaf of modules on `(Aff/S)_fppf` whose base-change maps
 > `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the ringed site
@@ -910,7 +910,7 @@ public theorem bigAffineFppf_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 633](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L633). The attribute's comment: “(7) ⇒ (6) at τ = fppf, quasi-coherence conjunct of (6)”.
+**`AlgebraicGeometry.bigAffineFppf_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L634). The attribute's comment: “(7) ⇒ (6) at τ = fppf, quasi-coherence conjunct of (6)”.
 
 > **Stacks 0GZV, condition (6).** The restriction to `(Aff/S)_fppf` of a quasi-coherent module
 > on the ringed site `((Sch/S)_fppf, 𝒪)` is quasi-coherent on `((Aff/S)_fppf, 𝒪_Aff)`.
@@ -932,7 +932,7 @@ public theorem bigAffineFppf_isQuasicoherentOnSite_restriction
 
 [Tag 0GZW](https://stacks.math.columbia.edu/tag/0GZW) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L181). The attribute's comment: “Zariski case”.
+**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L181). The attribute's comment: “Zariski case”.
 
 > The morphism of ringed topoi `(Sh(S_{affine, Zar}), 𝒪_affine) ⟶ (Sh(S_Zar), 𝒪)` given by the
 > inclusion of the affine objects of the small Zariski site of `S`, with structure morphism the
@@ -943,7 +943,7 @@ public noncomputable def ringedToposHom :
     RingedToposHom (ringedTopos B S hS) (SmallZariski.ringedTopos B S hS)
 ```
 
-**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L190). The attribute's comment: “Zariski case”.
+**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L190). The attribute's comment: “Zariski case”.
 
 > The inverse image of the equivalence is restriction along the inclusion of the affine objects,
 > on the nose.
@@ -955,7 +955,7 @@ public theorem ringedToposHom_inverseImage :
         (topology B S hS) (SmallZariski.topology B S hS)
 ```
 
-**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_inverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L199). The attribute's comment: “Zariski case”.
+**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_inverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L199). The attribute's comment: “Zariski case”.
 
 > The underlying morphism of topoi is an equivalence of topoi: its inverse image, restriction
 > along the inclusion of the affine objects, is an equivalence of categories of sheaves.
@@ -965,7 +965,7 @@ public theorem ringedToposHom_inverseImage_isEquivalence :
     (ringedToposHom B S hS).toToposHom.inverseImage.IsEquivalence
 ```
 
-**`AlgebraicGeometry.SmallAffineZariski.isIso_ringedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L215). The attribute's comment: “Zariski case”.
+**`AlgebraicGeometry.SmallAffineZariski.isIso_ringedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L215). The attribute's comment: “Zariski case”.
 
 > The structure morphism `g⁻¹𝒪 ⟶ 𝒪_affine` is an isomorphism, so the morphism of ringed topoi is
 > an equivalence of ringed topoi and not merely a morphism whose underlying morphism of topoi is an
@@ -976,7 +976,7 @@ public theorem isIso_ringedToposHom_fSharpInverseImage :
     IsIso (ringedToposHom B S hS).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L223). The attribute's comment: “Zariski case”.
+**`AlgebraicGeometry.SmallAffineZariski.ringedToposHom_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L223). The attribute's comment: “Zariski case”.
 
 > The structure morphism is the canonical one: on underlying sheaves of sets it is the identity
 > of the restriction of the underlying sheaf of sets of `𝒪`, so `𝒪_affine` really is `𝒪` restricted
@@ -992,7 +992,7 @@ public theorem ringedToposHom_fSharpInverseImage_forget :
           (SmallZariski.ringedTopos B S hS).O))
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L328). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L328). The attribute's comment: “étale case”.
 
 > The morphism of ringed topoi `(Sh(S_{affine, étale}), 𝒪_affine) ⟶ (Sh(S_étale), 𝒪)` given by
 > the inclusion of the affine objects of the small étale site of `S`, with structure morphism the
@@ -1003,7 +1003,7 @@ public noncomputable def ringedToposHom :
     RingedToposHom (ringedTopos B S hS) (SmallEtale.ringedTopos B S hS)
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L337). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L337). The attribute's comment: “étale case”.
 
 > The inverse image of the equivalence is restriction along the inclusion of the affine objects,
 > on the nose.
@@ -1015,7 +1015,7 @@ public theorem ringedToposHom_inverseImage :
         (topology B S hS) (SmallEtale.topology B S hS)
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_inverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L346). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_inverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L346). The attribute's comment: “étale case”.
 
 > The underlying morphism of topoi is an equivalence of topoi: its inverse image, restriction
 > along the inclusion of the affine objects, is an equivalence of categories of sheaves.
@@ -1025,7 +1025,7 @@ public theorem ringedToposHom_inverseImage_isEquivalence :
     (ringedToposHom B S hS).toToposHom.inverseImage.IsEquivalence
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.isIso_ringedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L362). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.SmallAffineEtale.isIso_ringedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L362). The attribute's comment: “étale case”.
 
 > The structure morphism `g⁻¹𝒪 ⟶ 𝒪_affine` is an isomorphism, so the morphism of ringed topoi is
 > an equivalence of ringed topoi and not merely a morphism whose underlying morphism of topoi is an
@@ -1036,7 +1036,7 @@ public theorem isIso_ringedToposHom_fSharpInverseImage :
     IsIso (ringedToposHom B S hS).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L370). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.SmallAffineEtale.ringedToposHom_fSharpInverseImage_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineRingedTopos.lean#L370). The attribute's comment: “étale case”.
 
 > The structure morphism is the canonical one: on underlying sheaves of sets it is the identity
 > of the restriction of the underlying sheaf of sets of `𝒪`, so `𝒪_affine` really is `𝒪` restricted
@@ -1056,7 +1056,7 @@ public theorem ringedToposHom_fSharpInverseImage_forget :
 
 [Tag 0GZX](https://stacks.math.columbia.edu/tag/0GZX) in the Stacks Project.
 
-**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L366). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L367). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZX, Zariski case.** A sheaf of modules on the small affine Zariski site of `S`
 > whose base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on
@@ -1072,7 +1072,7 @@ public theorem smallAffineZariski_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L379). The attribute's comment: “(3) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L380). The attribute's comment: “(3) ⇒ (2) at τ = Zariski, quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZX, Zariski case.** The restriction to the small affine Zariski site of `S` of a
 > quasi-coherent module on the ringed site `(S_Zar, 𝒪)` is quasi-coherent on
@@ -1091,7 +1091,7 @@ public theorem smallAffineZariski_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L395). The attribute's comment: “(1) ⇒ (2) at τ = étale, quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L396). The attribute's comment: “(1) ⇒ (2) at τ = étale, quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZX, étale case.** A sheaf of modules on the small affine étale site of `S` whose
 > base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are all isomorphisms is quasi-coherent on the
@@ -1107,7 +1107,7 @@ public theorem smallAffineEtale_isQuasicoherentOnSite_of_canonicalMap_isIso
     F.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L408). The attribute's comment: “(3) ⇒ (2) at τ = étale, quasi-coherence conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffines.lean#L409). The attribute's comment: “(3) ⇒ (2) at τ = étale, quasi-coherence conjunct of (2)”.
 
 > **Stacks 0GZX, étale case.** The restriction to the small affine étale site of `S` of a
 > quasi-coherent module on the ringed site `(S_étale, 𝒪)` is quasi-coherent on
@@ -1126,7 +1126,7 @@ public theorem smallAffineEtale_isQuasicoherentOnSite_restriction
         M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_exists_isQuasicoherentOnSite_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L125). The attribute's comment: “(2) ⇒ (3) at τ = étale”.
+**`AlgebraicGeometry.smallAffineEtale_exists_isQuasicoherentOnSite_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L125). The attribute's comment: “(2) ⇒ (3) at τ = étale”.
 
 > A sheaf of modules on the small affine étale site of `S` which is quasi-coherent on the ringed
 > site `(S_{affine, étale}, 𝒪_affine)` is the restriction of a quasi-coherent `𝒪`-module on
@@ -1141,7 +1141,7 @@ public theorem smallAffineEtale_exists_isQuasicoherentOnSite_restriction_iso
       Nonempty ((smallAffineEtaleModuleRestriction B S hS).obj N ≅ F)
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_essImage_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L142). The attribute's comment: “(4) at τ = étale, existence of 𝒢”.
+**`AlgebraicGeometry.smallAffineEtale_essImage_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L142). The attribute's comment: “(4) at τ = étale, existence of 𝒢”.
 
 > A sheaf of modules `𝓕` on the small affine étale site of `S` which is quasi-coherent on the
 > ringed site `(S_{affine, étale}, 𝒪_affine)` lies in the essential image of the functor
@@ -1155,7 +1155,7 @@ public theorem smallAffineEtale_essImage_associatedModuleQcoh
     (smallAffineEtaleAssociatedModuleQcoh B S hS).essImage F
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_exists_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L161). The attribute's comment: “(1) ⇒ (4) at τ = étale, existence of 𝒢”.
+**`AlgebraicGeometry.smallAffineEtale_exists_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L161). The attribute's comment: “(1) ⇒ (4) at τ = étale, existence of 𝒢”.
 
 > A sheaf of modules on the small affine étale site of `S` all of whose base-change maps
 > `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is isomorphic to `𝒢ᵃ|_{S_{affine, étale}}` for a
@@ -1171,7 +1171,7 @@ public theorem smallAffineEtale_exists_associatedModuleQcoh_restriction_iso
       Nonempty ((smallAffineEtaleAssociatedModuleQcoh B S hS).obj G ≅ F)
 ```
 
-**`AlgebraicGeometry.isEquivalence_smallAffineEtaleModuleRestrictionQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L206). The attribute's comment: “(2) ⇔ (3) at τ = étale”.
+**`AlgebraicGeometry.isEquivalence_smallAffineEtaleModuleRestrictionQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L206). The attribute's comment: “(2) ⇔ (3) at τ = étale”.
 
 > Restriction to the affine objects is an equivalence
 > `QCoh(S_étale, 𝒪) ≌ QCoh(S_{affine, étale}, 𝒪_affine)` between the categories of quasi-coherent
@@ -1182,7 +1182,7 @@ public theorem isEquivalence_smallAffineEtaleModuleRestrictionQcoh :
     (smallAffineEtaleModuleRestrictionQcoh B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isEquivalence_smallAffineEtaleAssociatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L249). The attribute's comment: “(2) ⇔ (4) at τ = étale”.
+**`AlgebraicGeometry.isEquivalence_smallAffineEtaleAssociatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L249). The attribute's comment: “(2) ⇔ (4) at τ = étale”.
 
 > The functor `𝒢 ↦ 𝒢ᵃ|_{S_{affine, étale}}` is an equivalence from the quasi-coherent
 > `𝒪_S`-modules onto the quasi-coherent modules on the ringed site `(S_{affine, étale}, 𝒪_affine)`:
@@ -1193,7 +1193,7 @@ public theorem isEquivalence_smallAffineEtaleAssociatedModuleQcohOnSite :
     (smallAffineEtaleAssociatedModuleQcohOnSite B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.smallAffineEtaleAssociatedModuleQcohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L260). The attribute's comment: “(2) ⇔ (4) at τ = étale”.
+**`AlgebraicGeometry.smallAffineEtaleAssociatedModuleQcohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesExists.lean#L260). The attribute's comment: “(2) ⇔ (4) at τ = étale”.
 
 > The equivalence of categories `QCoh(𝒪_S) ≌ QCoh(S_{affine, étale}, 𝒪_affine)` with functor
 > `𝒢 ↦ 𝒢ᵃ|_{S_{affine, étale}}`.
@@ -1206,7 +1206,7 @@ public noncomputable def smallAffineEtaleAssociatedModuleQcohEquivalence :
           (smallAffineEtaleRingedSite B S hS).O)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_isSheaf_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L68). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, sheaf conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineZariski_isSheaf_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L68). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, sheaf conjunct of (2)”.
 
 > A presheaf of `𝒪_affine`-modules on the small affine Zariski site of `S` all of whose
 > base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is a sheaf.
@@ -1221,7 +1221,7 @@ theorem smallAffineZariski_isSheaf_of_baseChange_isIso
     Presheaf.IsSheaf (smallAffineZariskiRingedSite B S hS).J F.presheaf
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isSheaf_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L80). The attribute's comment: “(1) ⇒ (2) at τ = étale, sheaf conjunct of (2)”.
+**`AlgebraicGeometry.smallAffineEtale_isSheaf_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L80). The attribute's comment: “(1) ⇒ (2) at τ = étale, sheaf conjunct of (2)”.
 
 > A presheaf of `𝒪_affine`-modules on the small affine étale site of `S` all of whose base-change
 > maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is a sheaf.
@@ -1236,7 +1236,7 @@ theorem smallAffineEtale_isSheaf_of_baseChange_isIso
     Presheaf.IsSheaf (smallAffineEtaleRingedSite B S hS).J F.presheaf
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L110). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, for a presheaf of modules”.
+**`AlgebraicGeometry.smallAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L110). The attribute's comment: “(1) ⇒ (2) at τ = Zariski, for a presheaf of modules”.
 
 > A presheaf of `𝒪_affine`-modules on the small affine Zariski site of `S` all of whose
 > base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is a sheaf, and the resulting sheaf
@@ -1255,7 +1255,7 @@ theorem smallAffineZariski_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso
           (smallAffineZariskiRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L127). The attribute's comment: “(1) ⇒ (2) at τ = étale, for a presheaf of modules”.
+**`AlgebraicGeometry.smallAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L127). The attribute's comment: “(1) ⇒ (2) at τ = étale, for a presheaf of modules”.
 
 > A presheaf of `𝒪_affine`-modules on the small affine étale site of `S` all of whose base-change
 > maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is a sheaf, and the resulting sheaf of modules
@@ -1274,7 +1274,7 @@ theorem smallAffineEtale_isSheaf_and_isQuasicoherentOnSite_of_baseChange_isIso
           (smallAffineEtaleRingedSite B S hS).O)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_canonicalMap_isIso_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L146). The attribute's comment: “(2) ⇒ (1) at τ = Zariski”.
+**`AlgebraicGeometry.smallAffineZariski_canonicalMap_isIso_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L146). The attribute's comment: “(2) ⇒ (1) at τ = Zariski”.
 
 > If a sheaf of modules on the small affine Zariski site of `S` is quasi-coherent on the ringed
 > site `(S_{affine, Zar}, 𝒪_affine)`, then its base-change map `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` along
@@ -1290,7 +1290,7 @@ theorem smallAffineZariski_canonicalMap_isIso_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (smallAffineZariskiRingedSite B S hS) F f)
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_canonicalMap_isIso_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L165). The attribute's comment: “(2) ⇒ (1) at τ = étale”.
+**`AlgebraicGeometry.smallAffineEtale_canonicalMap_isIso_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L165). The attribute's comment: “(2) ⇒ (1) at τ = étale”.
 
 > If a sheaf of modules on the small affine étale site of `S` is quasi-coherent on the ringed
 > site `(S_{affine, étale}, 𝒪_affine)`, then its base-change map `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` along
@@ -1306,7 +1306,7 @@ theorem smallAffineEtale_canonicalMap_isIso_of_isQuasicoherentOnSite
     IsIso (Stacks.SheafOfModules.canonicalMap (smallAffineEtaleRingedSite B S hS) F f)
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L186). The attribute's comment: “(1) ⇔ (2) at τ = Zariski, for a sheaf of modules”.
+**`AlgebraicGeometry.smallAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L186). The attribute's comment: “(1) ⇔ (2) at τ = Zariski, for a sheaf of modules”.
 
 > A sheaf of modules on the small affine Zariski site of `S` is quasi-coherent on the ringed site
 > `(S_{affine, Zar}, 𝒪_affine)` exactly when all of its base-change maps
@@ -1322,7 +1322,7 @@ theorem smallAffineZariski_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (smallAffineZariskiRingedSite B S hS) F f)
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L201). The attribute's comment: “(1) ⇔ (2) at τ = étale, for a sheaf of modules”.
+**`AlgebraicGeometry.smallAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesSheaf.lean#L201). The attribute's comment: “(1) ⇔ (2) at τ = étale, for a sheaf of modules”.
 
 > A sheaf of modules on the small affine étale site of `S` is quasi-coherent on the ringed site
 > `(S_{affine, étale}, 𝒪_affine)` exactly when all of its base-change maps
@@ -1338,7 +1338,7 @@ theorem smallAffineEtale_isQuasicoherentOnSite_iff_canonicalMap_isIso
         IsIso (Stacks.SheafOfModules.canonicalMap (smallAffineEtaleRingedSite B S hS) F f)
 ```
 
-**`AlgebraicGeometry.fullyFaithfulSmallAffineEtaleAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean#L114). The attribute's comment: “(4) at τ = étale, uniqueness of 𝒢”.
+**`AlgebraicGeometry.fullyFaithfulSmallAffineEtaleAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean#L114). The attribute's comment: “(4) at τ = étale, uniqueness of 𝒢”.
 
 > **Stacks 0GZX, the uniqueness of `𝒢` in condition (4) at `τ = étale`.**  The functor
 > `𝒢 ↦ 𝒢ᵃ|_{S_{affine, étale}}` from the quasi-coherent `𝒪_S`-modules to the `𝒪_affine`-modules on
@@ -1350,7 +1350,7 @@ public noncomputable def fullyFaithfulSmallAffineEtaleAssociatedModuleQcoh :
     (smallAffineEtaleAssociatedModuleQcoh B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean#L123). The attribute's comment: “(4) at τ = étale, uniqueness of 𝒢”.
+**`AlgebraicGeometry.smallAffineEtale_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesUnique.lean#L123). The attribute's comment: “(4) at τ = étale, uniqueness of 𝒢”.
 
 > **Stacks 0GZX, the uniqueness of `𝒢` in condition (4) at `τ = étale`**, read as a
 > uniqueness statement: two quasi-coherent `𝒪_S`-modules whose associated modules have isomorphic
@@ -1364,7 +1364,7 @@ public theorem smallAffineEtale_iso_of_associatedModuleQcoh_restriction_iso
     Nonempty (G₁.obj ≅ G₂.obj)
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_exists_isQuasicoherentOnSite_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L239). The attribute's comment: “(2) ⇒ (3) at τ = Zariski”.
+**`AlgebraicGeometry.smallAffineZariski_exists_isQuasicoherentOnSite_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L239). The attribute's comment: “(2) ⇒ (3) at τ = Zariski”.
 
 > A sheaf of modules on the small affine Zariski site of `S` which is quasi-coherent on the
 > ringed site `(S_{affine, Zar}, 𝒪_affine)` is the restriction of a quasi-coherent `𝒪`-module on
@@ -1379,7 +1379,7 @@ public theorem smallAffineZariski_exists_isQuasicoherentOnSite_restriction_iso
       Nonempty ((smallAffineZariskiModuleRestriction B S hS).obj N ≅ F)
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_essImage_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L261). The attribute's comment: “(4) at τ = Zariski, existence of 𝒢”.
+**`AlgebraicGeometry.smallAffineZariski_essImage_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L261). The attribute's comment: “(4) at τ = Zariski, existence of 𝒢”.
 
 > A sheaf of modules `𝓕` on the small affine Zariski site of `S` which is quasi-coherent on the
 > ringed site `(S_{affine, Zar}, 𝒪_affine)` comes from a quasi-coherent `𝒪_S`-module `𝒢` by the
@@ -1394,7 +1394,7 @@ public theorem smallAffineZariski_essImage_associatedModuleQcoh
     (smallAffineZariskiAssociatedModuleQcoh B S hS).essImage F
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_exists_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L279). The attribute's comment: “(1) ⇒ (4) at τ = Zariski, existence of 𝒢”.
+**`AlgebraicGeometry.smallAffineZariski_exists_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L279). The attribute's comment: “(1) ⇒ (4) at τ = Zariski, existence of 𝒢”.
 
 > A sheaf of modules `𝓕` on the small affine Zariski site of `S` all of whose base-change maps
 > `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms is isomorphic to `𝒢ᵃ|_{S_{affine, Zar}}` for a
@@ -1410,7 +1410,7 @@ public theorem smallAffineZariski_exists_associatedModuleQcoh_restriction_iso
       Nonempty ((smallAffineZariskiAssociatedModuleQcoh B S hS).obj G ≅ F)
 ```
 
-**`AlgebraicGeometry.isEquivalence_smallAffineZariskiModuleRestrictionQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L323). The attribute's comment: “(2) ⇔ (3) at τ = Zariski”.
+**`AlgebraicGeometry.isEquivalence_smallAffineZariskiModuleRestrictionQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L323). The attribute's comment: “(2) ⇔ (3) at τ = Zariski”.
 
 > The equivalence of ringed topoi (0GZW) induces an equivalence
 > `QCoh(S_Zar, 𝒪) ≌ QCoh(S_{affine, Zar}, 𝒪_affine)` between the categories of quasi-coherent
@@ -1421,7 +1421,7 @@ public theorem isEquivalence_smallAffineZariskiModuleRestrictionQcoh :
     (smallAffineZariskiModuleRestrictionQcoh B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isEquivalence_smallAffineZariskiAssociatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L364). The attribute's comment: “(2) ⇔ (4) at τ = Zariski”.
+**`AlgebraicGeometry.isEquivalence_smallAffineZariskiAssociatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L364). The attribute's comment: “(2) ⇔ (4) at τ = Zariski”.
 
 > The functor `𝒢 ↦ 𝒢ᵃ|_{S_{affine, Zar}}` is an equivalence from the quasi-coherent
 > `𝒪_S`-modules onto the quasi-coherent modules on the ringed site `(S_{affine, Zar}, 𝒪_affine)`:
@@ -1432,7 +1432,7 @@ public theorem isEquivalence_smallAffineZariskiAssociatedModuleQcohOnSite :
     (smallAffineZariskiAssociatedModuleQcohOnSite B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.smallAffineZariskiAssociatedModuleQcohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L375). The attribute's comment: “(2) ⇔ (4) at τ = Zariski”.
+**`AlgebraicGeometry.smallAffineZariskiAssociatedModuleQcohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiExists.lean#L375). The attribute's comment: “(2) ⇔ (4) at τ = Zariski”.
 
 > The equivalence of categories `QCoh(𝒪_S) ≌ QCoh(S_{affine, Zar}, 𝒪_affine)` whose functor
 > is `𝒢 ↦ 𝒢ᵃ|_{S_{affine, Zar}}`.
@@ -1445,7 +1445,7 @@ public noncomputable def smallAffineZariskiAssociatedModuleQcohEquivalence :
           (smallAffineZariskiRingedSite B S hS).O)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.fullyFaithfulSmallAffineZariskiAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean#L83). The attribute's comment: “(4) at τ = Zariski, uniqueness of 𝒢”.
+**`AlgebraicGeometry.fullyFaithfulSmallAffineZariskiAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean#L83). The attribute's comment: “(4) at τ = Zariski, uniqueness of 𝒢”.
 
 > The functor `𝒢 ↦ 𝒢ᵃ|_{S_{affine, Zar}}` from the quasi-coherent `𝒪_S`-modules to the
 > `𝒪_affine`-modules on `S_{affine, Zar}` is fully faithful.
@@ -1455,7 +1455,7 @@ public noncomputable def fullyFaithfulSmallAffineZariskiAssociatedModuleQcoh :
     (smallAffineZariskiAssociatedModuleQcoh B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean#L91). The attribute's comment: “(4) at τ = Zariski, uniqueness of 𝒢”.
+**`AlgebraicGeometry.smallAffineZariski_iso_of_associatedModuleQcoh_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentModulesAndAffinesZariskiUnique.lean#L91). The attribute's comment: “(4) at τ = Zariski, uniqueness of 𝒢”.
 
 > Two quasi-coherent `𝒪_S`-modules whose associated modules have isomorphic restrictions to the
 > small affine Zariski site of `S` are isomorphic.
@@ -1468,7 +1468,7 @@ public theorem smallAffineZariski_iso_of_associatedModuleQcoh_restriction_iso
     Nonempty (G₁.obj ≅ G₂.obj)
 ```
 
-**`AlgebraicGeometry.smallAffineZariski_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean#L104). The attribute's comment: “(4) ⇒ (1) at τ = Zariski”.
+**`AlgebraicGeometry.smallAffineZariski_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean#L104). The attribute's comment: “(4) ⇒ (1) at τ = Zariski”.
 
 > **Stacks 0GZX, condition (4) implies condition (1) at `τ = Zariski`.** The presheaf `𝒢ᵃ` of
 > Descent, Section 35.8 attached to a quasi-coherent `𝒪_S`-module `𝒢` has all its base-change
@@ -1484,7 +1484,7 @@ public theorem smallAffineZariski_isIso_restrictionBaseChange_associatedModule
       (associatedModulePresheaf S G (smallAffineZariskiToOver B S hS)) f)
 ```
 
-**`AlgebraicGeometry.smallAffineEtale_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean#L135). The attribute's comment: “(4) ⇒ (1) at τ = étale”.
+**`AlgebraicGeometry.smallAffineEtale_isIso_restrictionBaseChange_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SmallAffineSiteAssociatedModuleCartesian.lean#L135). The attribute's comment: “(4) ⇒ (1) at τ = étale”.
 
 > **Stacks 0GZX, condition (4) implies condition (1) at `τ = étale`.** The presheaf `𝒢ᵃ` of
 > Descent, Section 35.8 attached to a quasi-coherent `𝒪_S`-module `𝒢` has all its base-change
@@ -1507,4 +1507,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.11, Tag 0GZT](https://stacks.math.columbia.edu/tag/0GZT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

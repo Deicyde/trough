@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/continuous.md",
@@ -777,7 +777,7 @@
    "declaration": "MeasureTheory.integrable_mul_iff_of_normalized_smul",
    "lean": {
     "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
-    "line": 123,
+    "line": 148,
     "kind": "theorem",
     "sorry": false
    }
@@ -813,7 +813,7 @@
    "declaration": "MeasureTheory.integral_mul_eq_of_normalized_smul",
    "lean": {
     "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
-    "line": 189,
+    "line": 214,
     "kind": "theorem",
     "sorry": false
    }
@@ -825,7 +825,7 @@
    "declaration": "MeasureTheory.integral_mul_eq_of_normalized_subgroup",
    "lean": {
     "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
-    "line": 234,
+    "line": 259,
     "kind": "theorem",
     "sorry": false
    }
@@ -837,7 +837,7 @@
    "declaration": "MeasureTheory.lintegral_mul_eq_of_normalized_smul",
    "lean": {
     "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
-    "line": 63,
+    "line": 131,
     "kind": "theorem",
     "sorry": false
    }

@@ -2,10 +2,8 @@
 navigation: transparent
 ---
 
-# 76.19 Formally smooth morphisms to 76.32 Catenary algebraic spaces
+# 76.21 The naive cotangent… to 76.35 Applications of Zariski's…
 
-- [76.19 Formally smooth morphisms](76-19-formally-smooth-morphisms.md)
-- [76.20 Smoothness over a Noetherian base](76-20-smoothness-over-a-noetherian-base.md)
 - [76.21 The naive cotangent complex](76-21-the-naive-cotangent-complex.md)
 - [76.22 Openness of the flat locus](76-22-openness-of-the-flat-locus.md)
 - [76.23 Critère de platitude par fibres](76-23-critere-de-platitude-par-fibres.md)
@@ -18,3 +16,6 @@ navigation: transparent
 - [76.30 Connected components of fibres](76-30-connected-components-of-fibres.md)
 - [76.31 Dimension of fibres](76-31-dimension-of-fibres.md)
 - [76.32 Catenary algebraic spaces](76-32-catenary-algebraic-spaces.md)
+- [76.33 Étale localization of morphisms](76-33-etale-localization-of-morphisms.md)
+- [76.34 Zariski's Main Theorem](76-34-zariskis-main-theorem.md)
+- [76.35 Applications of Zariski's Main Theorem, I](76-35-applications-of-zariskis-main-theorem-i.md)

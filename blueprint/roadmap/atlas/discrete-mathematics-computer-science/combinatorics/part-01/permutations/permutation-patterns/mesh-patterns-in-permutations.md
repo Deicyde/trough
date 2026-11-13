@@ -8,7 +8,7 @@ proof: formalized
 
 # Mesh patterns in permutations
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html).
 
 ## Product formula from the mesh-pattern recurrence
 
@@ -26,7 +26,7 @@ the mesh-pattern counting polynomial.
 
 - Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary, line 194, with the recurrence and base value from Theorem, line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
 
-Formalized by `MetaMathlibExt.meshPatternGeneratingFunction_eq_factorial_mul_prod_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-generating-function-eq-fact).
+Formalized by `MetaMathlibExt.meshPatternGeneratingFunction_eq_factorial_mul_prod_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-generating-function-eq-fact).
 
 ## Product formula from the mesh-pattern recurrence, real case
 
@@ -41,7 +41,7 @@ $$P(n, k, x) = (k-1)! \prod_{i=0}^{n-k} (x + k - 1 + i).$$
 
 - Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary, line 194, with the recurrence and base value from Theorem, line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
 
-Formalized by `MetaMathlibExt.meshPatternGeneratingFunction_eq_factorial_mul_prod`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-generating-function-eq-fact-2).
+Formalized by `MetaMathlibExt.meshPatternGeneratingFunction_eq_factorial_mul_prod`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternGeneratingFunction.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-generating-function-eq-fact-2).
 
 ## Mesh-pattern match
 
@@ -51,7 +51,7 @@ number. A position $i$ is a mesh-pattern match of $\sigma$ with parameter $r$ wh
 $\sigma(t) < \sigma(i)$ for every position $t < i$ and at least $r - 1$ positions $t$ with
 $i < t < p$ have $\sigma(t) > \sigma(i)$.
 
-Formalized by `MetaMathlibExt.MatchPred`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#match-pred).
+Formalized by `MetaMathlibExt.MatchPred`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#match-pred).
 
 ## Mesh-pattern zero condition
 
@@ -59,7 +59,7 @@ Let $\sigma$ be a permutation of $m$ elements, with positions
 numbered $1, \dots, m$, and let $r$ be a natural number. The zero condition holds for $\sigma$
 with parameter $r$ when some position $p \ge r$ holds the largest value of $\sigma$.
 
-Formalized by `MetaMathlibExt.ZeroPred`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#zero-pred).
+Formalized by `MetaMathlibExt.ZeroPred`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#zero-pred).
 
 ## Canonical mesh-pattern statistic
 
@@ -68,7 +68,7 @@ positions numbered $1, \dots, m$, and let $r$ be a natural number. The statistic
 the number of mesh-pattern matches of $\sigma$ with parameter $r$, plus $1$ if the mesh-pattern
 zero condition holds, that is, if the largest value of $\sigma$ sits at a position $p \ge r$.
 
-Formalized by `MetaMathlibExt.meshN`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-n).
+Formalized by `MetaMathlibExt.meshN`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-n).
 
 ## Mesh-pattern counting polynomial
 
@@ -76,7 +76,7 @@ For natural numbers $m$ and $r$, the polynomial
 $P_{m,r}(X) \in \mathbb{N}[X]$ is the sum of $X^{N_r(\sigma)}$ over all permutations $\sigma$ of
 $m$ elements, where $N_r(\sigma)$ is the canonical mesh-pattern statistic with parameter $r$.
 
-Formalized by `MetaMathlibExt.PolyN`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#poly-n).
+Formalized by `MetaMathlibExt.PolyN`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#poly-n).
 
 ## Stirling-type recursion for the mesh-pattern counting polynomial
 
@@ -95,7 +95,7 @@ $P_{k-1,k}(X) = (k-1)!$.
 
 - Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Theorem, line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
 
-Formalized by `MetaMathlibExt.meshPatternCount_stirlingRecursion`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-stirling-recursion).
+Formalized by `MetaMathlibExt.meshPatternCount_stirlingRecursion`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternStirlingRecursion.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-stirling-recursion).
 
 ## Distribution of the canonical mesh-pattern statistic
 
@@ -109,7 +109,7 @@ $N_k(\sigma) = j$ equals $(k-1)!\, c_{k-1}(n, j + k - 1)$, where the unsigned $r
 number of the first kind $c_r(n, m)$ is the coefficient of $X^m$ in
 $X^r (X + r)(X + r + 1) \cdots (X + n - 1)$.
 
-Formalized by `MetaMathlibExt.meshPatternCount_eq_factorial_mul_rStirlingNumber_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-eq-factorial-mul-r-st).
+Formalized by `MetaMathlibExt.meshPatternCount_eq_factorial_mul_rStirlingNumber_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-eq-factorial-mul-r-st).
 
 ## Counting permutations by mesh-pattern matches
 
@@ -126,7 +126,7 @@ $X^r (X + r)(X + r + 1) \cdots (X + n - 1)$.
 
 - Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers", Journal of Integer Sequences 18 (2015), Article 15.10.1, Theorem `thm:rstir`, line 201, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
 
-Formalized by `MetaMathlibExt.meshPatternCount_eq_factorial_mul_rStirlingNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-eq-factorial-mul-r-st-2).
+Formalized by `MetaMathlibExt.meshPatternCount_eq_factorial_mul_rStirlingNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MeshPatternRStirling.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html#mesh-pattern-count-eq-factorial-mul-r-st-2).
 
 ## Depends on
 
@@ -135,4 +135,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mesh patterns in permutations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/mesh-patterns-in-permutations)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Bernoulli percolation in the inverse-temperature parametrization
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html).
 
 ## A. The parametrization
 
@@ -17,13 +17,13 @@ proof: formalized
 The bond-percolation edge probability `p(β) = 1 - exp(-βJ)` attached to coupling `J` at inverse
 temperature `β`.
 
-Formalized by `StatMech.Sharpness.pBeta`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html#p-beta).
+Formalized by `StatMech.Sharpness.pBeta`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html#p-beta).
 
 ## Auxiliary critical inverse temperature from $\tilde p_c$
 
 The auxiliary critical inverse temperature `β̃_c = -log(1 - p̃_c)/J`, so that `p(β̃_c) = p̃_c`.
 
-Formalized by `StatMech.Sharpness.betaTildeC`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html#beta-tilde-c).
+Formalized by `StatMech.Sharpness.betaTildeC`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/PhyslibExt/CondensedMatter/IsingModel/Sharpness/SharpnessBeta.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html#beta-tilde-c).
 
 ## Depends on
 
@@ -32,4 +32,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli percolation in the inverse-temperature parametrization](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/percolation/sharpness/bernoulli-percolation-in-the-inverse-temperature)

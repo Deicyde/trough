@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.55 Injective abelian groups
 
-Section 15.55 of the Stacks Project, [Tag 01D6](https://stacks.math.columbia.edu/tag/01D6). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.55 of the Stacks Project, [Tag 01D6](https://stacks.math.columbia.edu/tag/01D6). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01D7, a lemma
 
 [Tag 01D7](https://stacks.math.columbia.edu/tag/01D7) in the Stacks Project.
 
-**`AddCommGrpCat.injective_iff_divisible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Injective/Criteria.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Injective/Criteria.lean#L114).
+**`AddCommGrpCat.injective_iff_divisible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Injective/Criteria.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Injective/Criteria.lean#L114).
 
 > **Stacks 01D7.** An abelian group is an injective object in the category of abelian groups
 > if and only if it is divisible.
@@ -35,4 +35,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.55, Tag 01D6](https://stacks.math.columbia.edu/tag/01D6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

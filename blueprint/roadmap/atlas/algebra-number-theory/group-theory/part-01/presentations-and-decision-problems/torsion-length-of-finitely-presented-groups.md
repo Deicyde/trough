@@ -7,7 +7,7 @@ statement: formalized
 
 # Torsion length of finitely presented groups
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html).
 
 ## Torsion series
 
@@ -20,7 +20,7 @@ This is the preimage of $\mathrm{Tor}_1(G / \mathrm{Tor}_i(G))$, the normal clos
 elements of $G / \mathrm{Tor}_i(G)$, since normal closures commute with the quotient map and
 $\mathrm{Tor}_i(G)$ lies in that set.
 
-Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.torsionSeries`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#torsion-series).
+Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.torsionSeries`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#torsion-series).
 
 ## Torsion length greater than two
 
@@ -32,7 +32,7 @@ $n > 0$ in $\mathrm{Tor}_2(G)$.
 Then $G / \mathrm{Tor}_1(G)$ is not torsion-free either, so neither $1$ nor $2$ is the torsion
 length of $G$.
 
-Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.TorsionLengthGtTwo`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#torsion-length-gt-two).
+Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.TorsionLengthGtTwo`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#torsion-length-gt-two).
 
 ## Kourovka Problem 19.23 (Chiodo–Vyas), finitely presented form
 
@@ -41,7 +41,7 @@ a finitely presented soluble group $G$ of torsion length greater than $2$, that 
 $G / \mathrm{Tor}_2(G)$ is not torsion-free, where $\mathrm{Tor}_2(G)$ is the second term of the
 torsion series of $G$.
 
-Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.existsFinitelyPresentedSolubleTorsionLengthGtTwo`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#exists-finitely-presented-soluble-torsio).
+Formalized by `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.existsFinitelyPresentedSolubleTorsionLengthGtTwo`, a definition declared in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#exists-finitely-presented-soluble-torsio).
 
 ## Finitely presented soluble groups of torsion length greater than two
 
@@ -56,7 +56,7 @@ torsion length n (their torsion length counts G₀ = G, G_{n+1} = G_n / Tor(G_n)
 with the Notebook's for n ≥ 1); Kourovka Archive, Problem 19.23: Yes, such groups exist,
 https://arxiv.org/abs/2112.14546.
 
-Stated but not proved: `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.existsFinitelyPresentedSolubleTorsionLengthGtTwo_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#exists-finitely-presented-soluble-torsio-2).
+Stated but not proved: `MathlibExt.GroupTheory.SolubleTorsionLengthKourovka19Problem23Wanted.existsFinitelyPresentedSolubleTorsionLengthGtTwo_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SolubleTorsionLengthKourovka19Problem23Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html#exists-finitely-presented-soluble-torsio-2).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Torsion length of finitely presented groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/torsion-length-of-finitely-presented-groups)

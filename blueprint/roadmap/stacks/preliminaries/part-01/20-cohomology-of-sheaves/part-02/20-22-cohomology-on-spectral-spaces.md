@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.22 Cohomology on spectral spaces
 
-Section 20.22 of the Stacks Project, [Tag 0A3C](https://stacks.math.columbia.edu/tag/0A3C). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.22 of the Stacks Project, [Tag 0A3C](https://stacks.math.columbia.edu/tag/0A3C). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A3D, a lemma
 
 [Tag 0A3D](https://stacks.math.columbia.edu/tag/0A3D) in the Stacks Project.
 
-**`Stacks.Topology.isIso_cohomologyOfGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean#L534). The attribute's comment: “cohomology\_of\_neighbourhoods”.
+**`Stacks.Topology.isIso_cohomologyOfGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean#L534). The attribute's comment: “cohomology\_of\_neighbourhoods”.
 
 > Let `X` be a spectral space, let `F` be an abelian sheaf on `X`,
 > let `E ⊆ X` be quasi-compact and let `W` be the set of points of `X` which specialize to a point
@@ -30,7 +30,7 @@ theorem isIso_cohomologyOfGeneralizationsMap (hE : IsCompact E)
     IsIso (cohomologyOfGeneralizationsMap E F p)
 ```
 
-**`Stacks.Topology.isIso_cohomologyOfComplementGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean#L340). The attribute's comment: “cohomology\_of\_complements”.
+**`Stacks.Topology.isIso_cohomologyOfComplementGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean#L340). The attribute's comment: “cohomology\_of\_complements”.
 
 > **[Stacks, Tag 0A3D] (2).** Let `X` be a spectral space, let `F` be an abelian sheaf on `X`,
 > let `E ⊆ X` be quasi-compact and constructible and let `W` be the set of points of `X` which
@@ -50,7 +50,7 @@ theorem isIso_cohomologyOfComplementGeneralizationsMap (hE : Topology.IsConstruc
 
 [Tag 0A3E](https://stacks.math.columbia.edu/tag/0A3E) in the Stacks Project.
 
-**`Stacks.Topology.higherDirectImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/HigherDirectImageStalk.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/HigherDirectImageStalk.lean#L369).
+**`Stacks.Topology.higherDirectImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/HigherDirectImageStalk.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/HigherDirectImageStalk.lean#L369).
 
 > Let `f : X ⟶ Y` be a spectral map of spectral spaces, let `y` be a point of `Y`, let `E` be the
 > set of points of `Y` specializing to `y` and let `F` be a sheaf of abelian groups on `X`. Then for
@@ -74,7 +74,7 @@ def higherDirectImageStalkIso (hf : IsSpectralMap f) (p : ℕ)
 
 [Tag 0A3F](https://stacks.math.columbia.edu/tag/0A3F) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.cohomology_subsingleton_of_isProfiniteStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean#L352). The attribute's comment: “sheaf cohomology as Ext out of the constant sheaf”.
+**`Stacks.CohomologyVanishing.cohomology_subsingleton_of_isProfiniteStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean#L352). The attribute's comment: “sheaf cohomology as Ext out of the constant sheaf”.
 
 > **Stacks 0A3F.** On a profinite space every positive-degree sheaf cohomology group of every
 > abelian sheaf vanishes.
@@ -97,7 +97,7 @@ theorem cohomology_subsingleton_of_isProfiniteStacks
     (q : ℕ) (hq : 0 < q) : Subsingleton (Sheaf.H.{w', w, u, u} F q)
 ```
 
-**`Stacks.CohomologyVanishing.isZero_abelianSheafCohomology_of_isProfiniteStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/ProfiniteSpaces.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/ProfiniteSpaces.lean#L184).
+**`Stacks.CohomologyVanishing.isZero_abelianSheafCohomology_of_isProfiniteStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/ProfiniteSpaces.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/ProfiniteSpaces.lean#L184).
 
 > **Stacks 0A3F.** If `X` is profinite, then every positive-degree cohomology group of
 > every abelian sheaf on `X` is zero.
@@ -115,12 +115,13 @@ theorem isZero_abelianSheafCohomology_of_isProfiniteStacks
 
 [Tag 0A3G](https://stacks.math.columbia.edu/tag/0A3G) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.cohomology_subsingleton_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean#L767). The attribute's comment: “clause (1) for dimension zero”.
+**`Stacks.CohomologyVanishing.cohomology_subsingleton_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/AboveTheDimension.lean#L769). The attribute's comment: “clause (1) for dimension zero”.
 
 > **Stacks 0A3G, clause (1) in dimension zero.** Let `X` be a spectral space of Krull dimension
 > `0` and let `F` be an abelian sheaf on `X`. Then `H^q(X, F) = 0` for every `q > 0`.
 >
-> This is the base case of the induction on the dimension in Stacks 0A3G: a zero-dimensional spectral space is profinite
+> This is the base case of the induction on the dimension in Stacks 0A3G: a zero-dimensional spectral
+> space is profinite
 > (`isProfiniteStacks_of_topologicalKrullDim_eq_zero`), and on a profinite space positive-degree
 > cohomology vanishes (`cohomology_subsingleton_of_isProfiniteStacks`).
 >
@@ -137,7 +138,7 @@ theorem cohomology_subsingleton_of_topologicalKrullDim_eq_zero
     Subsingleton (Sheaf.H.{w', w, u, u} F q)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L203). The attribute's comment: “clause (1): on a spectral space, sheaf cohomology vanishes above the dimension”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L203). The attribute's comment: “clause (1): on a spectral space, sheaf cohomology vanishes above the dimension”.
 
 > Let `Y` be a spectral space of Krull dimension at most `d` and let `G` be an abelian sheaf on
 > `Y`. Then `H^q(Y, G) = 0` for every `q > d`.
@@ -152,7 +153,7 @@ theorem subsingleton_sheafH_of_topologicalKrullDim_le :
         Subsingleton (Sheaf.H.{u, u, u, u} G q)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_above_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L242). The attribute's comment: “clause (1): on a spectral space of Krull dimension at most d, sheaf cohomology vanishes in every degree above d. The same statement as the induction carrier subsingleton\_sheafH\_of\_topologicalKrullDim\_le, whose explicit HasSheafify and HasExt arguments are instance arguments here”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_above_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L242). The attribute's comment: “clause (1): on a spectral space of Krull dimension at most d, sheaf cohomology vanishes in every degree above d. The same statement as the induction carrier subsingleton\_sheafH\_of\_topologicalKrullDim\_le, whose explicit HasSheafify and HasExt arguments are instance arguments here”.
 
 > Let `Y` be a spectral space of Krull dimension at most `d` and let `G` be an abelian sheaf on
 > `Y`. Then `H^q(Y, G) = 0` for every `q > d`.
@@ -167,7 +168,7 @@ theorem subsingleton_sheafH_above_topologicalKrullDim {Y : Type u} [TopologicalS
     Subsingleton (Sheaf.H.{u, u, u, u} G q)
 ```
 
-**`Stacks.CohomologyVanishing.surjective_cohomologyPresheaf_map_top_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L310). The attribute's comment: “clause (2): surjectivity of the restriction H^d(X,F) → H^d(U,F) for U quasi-compact open”.
+**`Stacks.CohomologyVanishing.surjective_cohomologyPresheaf_map_top_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L310). The attribute's comment: “clause (2): surjectivity of the restriction H^d(X,F) → H^d(U,F) for U quasi-compact open”.
 
 > Let `X` be a spectral space of Krull dimension at most `d` and let `F` be an abelian sheaf on
 > `X`. Then the restriction `H^d(X, F) → H^d(U, F)` is surjective for every quasi-compact open
@@ -182,7 +183,7 @@ theorem surjective_cohomologyPresheaf_map_top_of_topologicalKrullDim_le
       ((F.cohomologyPresheaf d).map (homOfLE (show U ≤ ⊤ from le_top)).op)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_and_surjective_and_subsingleton_supported_of_topologicalKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesFullStatement.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesFullStatement.lean#L91). The attribute's comment: “the whole proposition: (1) sheaf cohomology on a spectral space of Krull dimension d vanishes above degree d, (2) restriction to a quasi-compact open is surjective in degree d, and (3) cohomology with support in a constructible closed subset vanishes above degree d”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_and_surjective_and_subsingleton_supported_of_topologicalKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesFullStatement.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesFullStatement.lean#L91). The attribute's comment: “the whole proposition: (1) sheaf cohomology on a spectral space of Krull dimension d vanishes above degree d, (2) restriction to a quasi-compact open is surjective in degree d, and (3) cohomology with support in a constructible closed subset vanishes above degree d”.
 
 > **[Stacks, Tag 0A3G].** Let `X` be a spectral space of Krull dimension `d` and let `F` be an
 > abelian sheaf on `X`. Then
@@ -213,7 +214,7 @@ theorem subsingleton_sheafH_and_surjective_and_subsingleton_supported_of_topolog
         Subsingleton (((supportedSectionsEvaluation Z ⊤).rightDerived q).obj F))
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_rightDerived_supportedSections_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSupportVanishing.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSupportVanishing.lean#L130). The attribute's comment: “clause (3): cohomology with support in a constructible closed subset vanishes above the dimension”.
+**`Stacks.CohomologyVanishing.subsingleton_rightDerived_supportedSections_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSupportVanishing.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSupportVanishing.lean#L130). The attribute's comment: “clause (3): cohomology with support in a constructible closed subset vanishes above the dimension”.
 
 > **[Stacks, Tag 0A3G], clause (3).** Let `X` be a spectral space of Krull dimension at most
 > `d`, let `F` be an abelian sheaf on `X` and let `Z` be a constructible closed subset of `X`.
@@ -241,4 +242,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.22, Tag 0A3C](https://stacks.math.columbia.edu/tag/0A3C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

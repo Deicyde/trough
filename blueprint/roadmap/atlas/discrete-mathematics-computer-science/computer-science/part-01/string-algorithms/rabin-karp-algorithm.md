@@ -8,7 +8,7 @@ proof: formalized
 
 # Rabin–Karp algorithm
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html).
 
 ## Rabin–Karp string matching
 
@@ -25,7 +25,7 @@ The cost counts each executed multiplication, addition, subtraction and modulus 
 the residues and $d^{m-1} \bmod q$, and each borrow test, residue equality test and symbol
 equality test; shift-offset arithmetic and all other operations are free.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches).
 
 ## Rabin–Karp and naive matching return the same offsets
 
@@ -34,7 +34,7 @@ $q > 0$ and lists of natural numbers $P$ and $T$, the list of offsets returned b
 matching of $P$ in $T$ with base $d$ and modulus $q$ equals the list returned by naive matching
 of $P$ in $T$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_ret_eq_naiveMatches`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-ret-eq-naive-matches).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_ret_eq_naiveMatches`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-ret-eq-naive-matches).
 
 ## Exact cost of Rabin–Karp matching
 
@@ -52,7 +52,7 @@ $$(8m - 1) + (r + 1) + 7r + B + \sum_{s \le r,\ h(P) = h(T_{s..})} c_s.$$
 The terms count the setup, one hash comparison per alignment, the rolling hash updates, one
 extra addition per borrow, and the symbol comparisons that verify hash hits.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-eq).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-eq).
 
 ## Correctness of Rabin–Karp matching
 
@@ -62,7 +62,7 @@ Rabin–Karp matching of $P$ in $T$ with base $d$ and modulus $q$ reports the of
 only if $P$ matches $T$ at $s$, that is, $s \le |T|$ and $P$ is a prefix of the suffix of $T$
 that starts at position $s$ (counting from $0$).
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.mem_rabinKarpMatches_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#mem-rabin-karp-matches-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.mem_rabinKarpMatches_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#mem-rabin-karp-matches-iff).
 
 ## Rabin–Karp reports offsets in increasing order
 
@@ -70,7 +70,7 @@ For every base $d$, modulus $q > 0$ and
 lists of natural numbers $P$ and $T$, the offsets returned by Rabin–Karp matching of $P$ in $T$
 form a strictly increasing list; in particular no offset is reported twice.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_pairwise`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-pairwise).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_pairwise`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-pairwise).
 
 ## Rabin–Karp matching with the empty pattern
 
@@ -78,7 +78,7 @@ For every base $d$, modulus $q > 0$ and
 list of natural numbers $T$, Rabin–Karp matching of the empty pattern in $T$ returns the list
 $[0, 1, \dots, |T|]$ of all offsets from $0$ to $|T|$ in increasing order, at counted cost $0$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-nil-pattern).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-nil-pattern).
 
 ## Cost bound for Rabin–Karp matching
 
@@ -90,7 +90,7 @@ $H$ be the number of hash hits, the offsets $s \le r$ with $h(P) = h(T_{s..})$. 
 Rabin–Karp matching of $P$ in $T$ with base $d$ and modulus $q$ has counted cost at most
 $(8m - 1) + (9(r + 1) - 8) + mH$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-le).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-le).
 
 ## Rabin–Karp matching with a pattern longer than the text
 
@@ -101,7 +101,7 @@ $T$ returns no offsets, at counted cost exactly $1 + 2(|P| - 1) + 6|T|$.
 This cost is the work of computing the high-place power and the Horner setup steps attempted
 before the text runs out.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_of_length_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-of-length-lt).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_of_length_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-of-length-lt).
 
 ## Exact cost of Rabin–Karp matching on repeated-symbol words
 
@@ -116,7 +116,7 @@ $$(8m - 1) + (n - m + 1) + 7(n - m) + (n - m)\beta + m(n - m + 1).$$
 
 The last term is $m$ symbol comparisons at each of the $n - m + 1$ alignments.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-replicate).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-time-replicate).
 
 ## Rabin–Karp offsets on repeated-symbol words
 
@@ -125,7 +125,7 @@ $a \in \mathbb{N}$ and natural numbers $m \le n$, Rabin–Karp matching of the p
 text $a^n$ (the lists of $m$ and of $n$ copies of $a$) returns $[0, 1, \dots, n - m]$, that is,
 every shift in increasing order, including overlapping ones.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_ret_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 635](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-ret-replicate).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_ret_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 635](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-ret-replicate).
 
 ## Matching cost of Rabin–Karp on repeated-symbol words
 
@@ -137,7 +137,7 @@ truncated at $0$. Then $m(n - m + 1) \le C \le 10\,m(n - m + 1)$.
 
 The subtracted $8m - 1$ is the preprocessing cost, so the bounds do not depend on it.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_matching_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-matching-time-replica).
+Formalized by `Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_matching_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/RabinKarp.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html#rabin-karp-matches-matching-time-replica).
 
 ## Depends on
 
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rabin–Karp algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/string-algorithms/rabin-karp-algorithm)

@@ -8,7 +8,7 @@ proof: formalized
 
 # String matching with finite automata
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html).
 
 ## Transition table of the string-matching automaton
 
@@ -26,7 +26,7 @@ for each move to a smaller candidate, and one for each table entry written.
 
 - CLRS fourth edition section 32.3, decreasing-candidate row-major construction.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition).
 
 ## Correctness of the string-matching transition table
 
@@ -35,7 +35,7 @@ over the alphabet $\{0, \dots, A-1\}$ and write $P_k$ for its prefix of length $
 state $q \le m$ and symbol $a < A$, the entry at index $qA + a$ of the transition table of $P$
 is the greatest $k \le m$ such that $P_k$ is a suffix of the word $P_q a$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition-spec).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition-spec).
 
 ## Cost bound for the string-matching transition table
 
@@ -45,7 +45,7 @@ $2A(m+1)^3$.
 
 The cost counts executed candidates, symbol comparisons, failed decrements and table writes.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition-time-le).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeTransition_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#compute-transition-time-le).
 
 ## String-matching automaton
 
@@ -55,7 +55,7 @@ with states $\{0, \dots, m\}$, input symbols $\{0, \dots, A-1\}$, start state $0
 $\{m\}$, and transition from state $q$ on symbol $a$ given by the entry at index $qA + a$ of the
 transition table of $P$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.patternAutomaton`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#pattern-automaton).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.patternAutomaton`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#pattern-automaton).
 
 ## The string-matching automaton tracks the longest matched prefix
 
@@ -65,7 +65,7 @@ For every word $w$ over this alphabet, the state that the string-matching automa
 reaches from its start state after reading $w$ is the greatest $k \le m$ such that $P_k$ is a
 suffix of $w$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.patternAutomaton_state`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#pattern-automaton-state).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.patternAutomaton_state`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#pattern-automaton-state).
 
 ## Finite-automaton string matcher
 
@@ -81,7 +81,7 @@ each reported shift.
 The table is computed once, before the single pass over the text, and the scan does not reset
 after a match, so overlapping occurrences are reported.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches).
 
 ## Exact cost of the finite-automaton matcher
 
@@ -90,7 +90,7 @@ alphabet $\{0, \dots, A-1\}$, where $T$ has length $n$, the cost of the finite-a
 on $P$ and $T$ equals the cost of computing the transition table of $P$, plus $2n$, plus the
 number of shifts the matcher returns.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches-time).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches-time).
 
 ## Correctness of the finite-automaton matcher
 
@@ -101,7 +101,7 @@ the list returned by the naive string matcher.
 So it is the complete increasing list of zero-based shifts at which $P$ occurs in $T$, including
 overlapping occurrences and, for the empty pattern, every boundary.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches-ret).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/FiniteAutomaton.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html#finite-automaton-matches-ret).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: String matching with finite automata](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/string-algorithms/string-matching-with-finite-automata)

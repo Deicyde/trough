@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.PicardSituation, AlgebraicGeometry.Space.PicardSituation.picardPresheaf, AlgebraicGeometry.Space.PicardSituation.picardFunctor, AlgebraicGeometry.Space.PicardSituation.fibreIsoClassEquiv, AlgebraicGeometry.Space.PicardSituation.isoClassPresheafIsoPicardPresheaf, AlgebraicGeometry.Space.PicardSituation.isIso_sheafifyLift_toPicardFunctorOfIsoClasses, AlgebraicGeometry.Space.PicardSituation.exact_picardSequence, AlgebraicGeometry.Space.PicardSituation.injective_basePicardPullback
+lean: AlgebraicGeometry.Space.PicardSituation, AlgebraicGeometry.Space.PicardSituation.picardPresheaf, AlgebraicGeometry.Space.PicardSituation.picardFunctor, AlgebraicGeometry.Space.PicardSituation.fibreIsoClassEquiv, AlgebraicGeometry.Space.PicardSituation.isoClassPresheafIsoPicardPresheaf, AlgebraicGeometry.Space.PicardSituation.isIso_sheafifyLift_toPicardFunctorOfIsoClasses, AlgebraicGeometry.Space.PicardSituation.exact_picardSequence, AlgebraicGeometry.Space.PicardSituation.picardSequence_splitExact
 statement: formalized
 proof: formalized
 ---
 
 # 99.11 The Picard functor
 
-Section 99.11 of the Stacks Project, [Tag 0D24](https://stacks.math.columbia.edu/tag/0D24). 9 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.11 of the Stacks Project, [Tag 0D24](https://stacks.math.columbia.edu/tag/0D24). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D25, a situation
 
 [Tag 0D25](https://stacks.math.columbia.edu/tag/0D25) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L316). The attribute's comment: “the standing data”.
+**`AlgebraicGeometry.Space.PicardSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L311). The attribute's comment: “the standing data”.
 
 > **Stacks 0D25.**  The standing data of the relative Picard functor: a morphism
 > `f : X ⟶ base` of algebraic spaces over the scheme `S`.
@@ -23,7 +23,7 @@ Section 99.11 of the Stacks Project, [Tag 0D24](https://stacks.math.columbia.edu
 structure PicardSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.picardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L368). The attribute's comment: “the presheaf of Picard groups of the base changes”.
+**`AlgebraicGeometry.Space.PicardSituation.picardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L363). The attribute's comment: “the presheaf of Picard groups of the base changes”.
 
 > **Stacks 0D25.**  The presheaf `T ↦ Pic(X_T)` on the schemes over the base, whose fppf
 > sheafification is the relative Picard functor.  Its action on a morphism of test schemes is
@@ -33,7 +33,7 @@ structure PicardSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contain
 def picardPresheaf : (s.SchemesOver)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L402). The attribute's comment: “the relative Picard functor”. References: SGA 6 X (2.4), “definition of Pic\_\{X/B}”; SGA 6 XIII (3.1).
+**`AlgebraicGeometry.Space.PicardSituation.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L397). The attribute's comment: “the relative Picard functor”. References: SGA 6 X (2.4), “definition of Pic\_\{X/B}”; SGA 6 XIII (3.1).
 
 > **Stacks 0D25.**  The *relative Picard functor* `Pic_{X/base} : (Sch/base)ᵒᵖ ⥤ Sets`: the
 > fppf sheafification of the presheaf `T ↦ Pic(X_T)` of isomorphism classes of invertible modules
@@ -47,7 +47,7 @@ def picardFunctor : (s.SchemesOver)ᵒᵖ ⥤ Type (u + 1)
 
 [Tag 0D26](https://stacks.math.columbia.edu/tag/0D26) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation.fibreIsoClassEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L227). The attribute's comment: “ONLY the identification of Ob(Picardstack\_\{X/B,T})/≅ with Pic(X\_T) at one test scheme; the sheafification statement is isIso\_sheafifyLift\_toPicardFunctorOfIsoClasses”.
+**`AlgebraicGeometry.Space.PicardSituation.fibreIsoClassEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L227). The attribute's comment: “ONLY the identification of Ob(Picardstack\_\{X/B,T})/≅ with Pic(X\_T) at one test scheme; the sheafification statement is isIso\_sheafifyLift\_toPicardFunctorOfIsoClasses”.
 
 > **`Ob(Picardstack_{X/B, T})/≅` is `Pic(X_T)`.** The isomorphism class of an object of the
 > fibre of the Picard stack over `T` goes to the class in `Pic(X_T)` of its invertible module.
@@ -58,7 +58,7 @@ def fibreIsoClassEquiv (T : s.SchemesOver) :
         ((picardProjection (modulePushforwardCoherence B S hS) s).Fiber T)) ≃ s.picardAt T
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.isoClassPresheafIsoPicardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L294). The attribute's comment: “ONLY the identification of the presheaf T ↦ Ob(Picardstack\_\{X/B,T})/≅ with the presheaf T ↦ Pic(X\_T); the sheafification statement is isIso\_sheafifyLift\_toPicardFunctorOfIsoClasses”.
+**`AlgebraicGeometry.Space.PicardSituation.isoClassPresheafIsoPicardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L294). The attribute's comment: “ONLY the identification of the presheaf T ↦ Ob(Picardstack\_\{X/B,T})/≅ with the presheaf T ↦ Pic(X\_T); the sheafification statement is isIso\_sheafifyLift\_toPicardFunctorOfIsoClasses”.
 
 > **The presheaf `T ↦ Ob(Picardstack_{X/B, T})/≅` is the presheaf `T ↦ Pic(X_T)`.** At each
 > test scheme it is `AlgebraicGeometry.Space.PicardSituation.fibreIsoClassEquiv`.
@@ -69,7 +69,7 @@ def isoClassPresheafIsoPicardPresheaf :
       s.picardPresheaf
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.isIso_sheafifyLift_toPicardFunctorOfIsoClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L318). The attribute's comment: “the relative Picard functor is the fppf sheafification of the presheaf of isomorphism classes of objects of the fibres of the Picard stack”.
+**`AlgebraicGeometry.Space.PicardSituation.isIso_sheafifyLift_toPicardFunctorOfIsoClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorSheafification.lean#L318). The attribute's comment: “the relative Picard functor is the fppf sheafification of the presheaf of isomorphism classes of objects of the fibres of the Picard stack”.
 
 > In Situation 0D25 the relative Picard functor `Pic_{X/B}` is the fppf
 > sheafification of the presheaf `T ↦ Ob(Picardstack_{X/B, T})/≅` of isomorphism classes of objects
@@ -87,7 +87,7 @@ theorem isIso_sheafifyLift_toPicardFunctorOfIsoClasses :
 
 [Tag 0D27](https://stacks.math.columbia.edu/tag/0D27) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation.exact_picardSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardExactSequence.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardExactSequence.lean#L98).
+**`AlgebraicGeometry.Space.PicardSituation.exact_picardSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardExactSequence.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardExactSequence.lean#L98). The attribute's comment: “the exact sequence 0 → Pic(T) → Pic(X\_T) → Pic\_\{X/B}(T)”.
 
 > **Stacks 0D27.**  In Situation 0D25, if `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an isomorphism for every
 > scheme `T` over the base, then for every such `T` the sequence
@@ -102,23 +102,11 @@ theorem exact_picardSequence (h : s.StructureSheafMapIso) (T : s.SchemesOver) :
         x ∈ Set.range (s.basePicardPullback T)
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.injective_basePicardPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L460). The attribute's comment: “exactness at the Picard group of the test scheme, conditional on the unit of the Stacks 03LU adjunction being an isomorphism at an invertible module”.
-
-> **Stacks 0D27, exactness at `Pic(T)`.**  If `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an isomorphism for
-> every scheme `T` over the base, then pullback along `f_T` is an injection `Pic(T) ⟶ Pic(X_T)`:
-> an invertible `𝒪_T`-module is determined up to isomorphism by its inverse image on `X_T`.
-
-```lean
-theorem injective_basePicardPullback (hu : ModulePushforwardUnitIso B S hS)
-    (h : s.StructureSheafMapIso) (T : s.SchemesOver) :
-    Function.Injective (s.basePicardPullback T)
-```
-
 ## Tag 0D28, a lemma
 
 [Tag 0D28](https://stacks.math.columbia.edu/tag/0D28) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation.picardSequence_splitExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitExact.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitExact.lean#L268).
+**`AlgebraicGeometry.Space.PicardSituation.picardSequence_splitExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitExact.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitExact.lean#L268).
 
 > In Situation 0D25 let `σ : B ⟶ X` be a section of `f`, and assume that
 > `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an isomorphism for every scheme `T` over `B`.  Then for every `T`
@@ -151,7 +139,7 @@ theorem picardSequence_splitExact (hstr : s.StructureSheafMapIso) (T : s.Schemes
         s.picardClassMap T (x : s.picardAt T))
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.leftInverse_sectionPicardPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L253). The attribute's comment: “auxiliary: the splitting by σ\_T^* for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
+**`AlgebraicGeometry.Space.PicardSituation.leftInverse_sectionPicardPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L255). The attribute's comment: “auxiliary: the splitting by σ\_T^* for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
 
 > **Stacks 0D28, the splitting.**  Pullback of Picard classes along the section
 > `σ_T : T ⟶ X_T` of the base change retracts pullback along the projection `f_T : X_T ⟶ T`:
@@ -167,7 +155,7 @@ theorem leftInverse_sectionPicardPullback (hc : ModulePushforwardCoherence B S h
     Function.LeftInverse (sectionPicardPullback σ hσ T) (s.basePicardPullback T)
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.injective_basePicardPullback_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L267). The attribute's comment: “auxiliary: exactness at Pic(T) for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
+**`AlgebraicGeometry.Space.PicardSituation.injective_basePicardPullback_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L270). The attribute's comment: “auxiliary: exactness at Pic(T) for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
 
 > **Stacks 0D28, exactness at `Pic(T)`.**  In Situation 0D25 with a section `σ : B ⟶ X` of `f`,
 > pullback along the projection `f_T : X_T ⟶ T` of the base change is an injection
@@ -183,7 +171,7 @@ theorem injective_basePicardPullback_of_section (hc : ModulePushforwardCoherence
     Function.Injective (s.basePicardPullback T)
 ```
 
-**`AlgebraicGeometry.Space.PicardSituation.existsUnique_add_sectionPicardPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L293). The attribute's comment: “auxiliary: the direct sum decomposition for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
+**`AlgebraicGeometry.Space.PicardSituation.existsUnique_add_sectionPicardPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardSequenceSplitting.lean#L297). The attribute's comment: “auxiliary: the direct sum decomposition for an arbitrary 03LU coherence datum; the full statement, with no hypothesis, is picardSequence\_splitExact”.
 
 > **Stacks 0D28, the direct sum decomposition.**  The splitting makes `Pic(X_T)` the direct sum
 > of the image of `Pic(T)` under `f_T^*` and the kernel of `σ_T^*`: every Picard class on `X_T` is
@@ -205,44 +193,14 @@ theorem existsUnique_add_sectionPicardPullback_eq_zero (hc : ModulePushforwardCo
 
 [Tag 0D29](https://stacks.math.columbia.edu/tag/0D29) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.sectionedPicardCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L380). The attribute's comment: “the rigidified category Picardstack\_\{X/B, sigma}, conditional on the pseudofunctoriality of the restriction along the section”.
-
-> **Stacks 0D29, the category `Picardstack_{X/B, σ}`.**  The objects are the quadruples
-> `(T, h, L, α)` and the morphisms are the morphisms of `Picardstack_{X/B}` compatible with the
-> trivialisations; the identities and the composition are those of `Picardstack_{X/B}`.
-
-```lean
-def sectionedPicardCategory (hc : ModulePushforwardCoherence B S hS)
-    (ht : SectionTransportCoherence hc σ hσ) :
-    Category.{u + 1} (PicardSituation.SectionedPicardObject σ hσ)
-```
-
-**`AlgebraicGeometry.Space.forgetTrivializationBased`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L480). The attribute's comment: “the functor forgetting the trivialization along the section, as a functor over the big fppf site”.
-
-> **Stacks 0D29, the functor `Picardstack_{X/B, σ} ⟶ Picardstack_{X/B}`** forgetting the
-> trivialisation along the section, as a functor over the big fppf site of `S`.
-
-```lean
-def forgetTrivializationBased (hc : ModulePushforwardCoherence B S hS)
-    (ht : SectionTransportCoherence hc σ hσ) :
-    sectionedPicardBasedCategory hc ht ⥤ᵇ picardBasedCategory hc s
-```
-
-**`AlgebraicGeometry.Space.forgetTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L504). The attribute's comment: “the 1-morphism of categories fibred in groupoids forgetting the trivialization along the section”.
-
-> **Stacks 0D29, the 1-morphism `Picardstack_{X/B, σ} ⟶ Picardstack_{X/B}`** of the 2-category
-> of categories fibred in groupoids over the big fppf site of `S`.
-
-```lean
-def forgetTrivialization (hc : ModulePushforwardCoherence B S hS)
-    (ht : SectionTransportCoherence hc σ hσ) :
-    sectionedPicardCFG hc ht ⟶ picardCFG hc s
-```
-
-**`AlgebraicGeometry.Space.sectionedPicardCFG_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionedIsStack.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionedIsStack.lean#L541).
+**`AlgebraicGeometry.Space.sectionedPicardCFG_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionedIsStack.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionedIsStack.lean#L546). The attribute's comment: “the full statement: Picardstack\_\{X/B,sigma} is a stack in groupoids over (Sch/S)\_fppf, for any section sigma of f”.
 
 > **Stacks 0D29.** In Situation 0D25, given a section `σ` of `f : X ⟶ B`, the rigidified
-> Picard stack `Picardstack_{X/B, σ}` is a stack in groupoids over `(Sch/S)_fppf`.
+> Picard stack `Picardstack_{X/B, σ}` is a stack in groupoids over `(Sch/S)_fppf`. The category
+> is built from the pseudofunctoriality of Stacks 03LU
+> (`AlgebraicGeometry.Space.modulePushforwardCoherence`) and the coherence of the restriction along
+> the section (`AlgebraicGeometry.Space.sectionTransportCoherence`), both proved in the library, so
+> the statement carries no hypothesis beyond the section.
 
 ```lean
 theorem sectionedPicardCFG_isStackInGroupoids (s : PicardSituation B S hS) (σ : s.base ⟶ s.X)
@@ -256,7 +214,7 @@ theorem sectionedPicardCFG_isStackInGroupoids (s : PicardSituation B S hS) (σ :
 
 [Tag 0D2A](https://stacks.math.columbia.edu/tag/0D2A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.forgetTrivialization_representable_surjective_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardForgetTrivializationRepresentable.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardForgetTrivializationRepresentable.lean#L475).
+**`AlgebraicGeometry.Space.forgetTrivialization_representable_surjective_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardForgetTrivializationRepresentable.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardForgetTrivializationRepresentable.lean#L475).
 
 > In Situation 0D25, let `σ : B ⟶ X` be a section.  The 1-morphism
 > `Picardstack_{X/B, σ} ⟶ Picardstack_{X/B}` forgetting the trivialisation is representable,
@@ -286,7 +244,7 @@ theorem forgetTrivialization_representable_surjective_smooth :
               (sectionTransportCoherence (modulePushforwardCoherence B S hS) σ hσ)) hf
 ```
 
-**`AlgebraicGeometry.Space.forgetTrivializationFibreEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L528). The attribute's comment: “ONLY the fibre identification the proof rests on: the fibre of Picardstack\_\{X/B,sigma} -> Picardstack\_\{X/B} over (T,h,L) is the set of trivializations O\_T = sigma\_T^*L, that is Isom\_T(O\_T, sigma\_T^*L). NONE of the three clauses - representable, surjective, smooth - is proved; see the implementation notes of this file for the three obstructions”.
+**`AlgebraicGeometry.Space.forgetTrivializationFibreEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L523). The attribute's comment: “ONLY the fibre identification the proof rests on: the fibre of Picardstack\_\{X/B,sigma} -> Picardstack\_\{X/B} over (T,h,L) is the set of trivializations O\_T = sigma\_T^*L, that is Isom\_T(O\_T, sigma\_T^*L). NONE of the three clauses - representable, surjective, smooth - is proved; see the implementation notes of this file for the three obstructions”.
 
 > **The fibre of the 1-morphism of Stacks 0D2A is the set of trivialisations along the
 > section.**  The objects of `Picardstack_{X/B, σ}` lying over an object `(T, h, L)` of
@@ -301,7 +259,7 @@ def forgetTrivializationFibreEquiv (A : PicardObject s) :
       {A' : PicardSituation.SectionedPicardObject σ hσ // A'.toPicardObject = A}
 ```
 
-**`AlgebraicGeometry.Space.exists_sectionedPicardObject_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L549). The attribute's comment: “ONLY the object-level content of clause (2): an object (T,h,L) of Picardstack\_\{X/B} lifts along the 1-morphism of this tag exactly when sigma\_T^*[L] = 0 in Pic(T). The three clauses themselves - representable, surjective and smooth in the sense of Stacks 02ZW and 03YK - are NOT proved; see the implementation notes of this file”.
+**`AlgebraicGeometry.Space.exists_sectionedPicardObject_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L544). The attribute's comment: “ONLY the object-level content of clause (2): an object (T,h,L) of Picardstack\_\{X/B} lifts along the 1-morphism of this tag exactly when sigma\_T^*[L] = 0 in Pic(T). The three clauses themselves - representable, surjective and smooth in the sense of Stacks 02ZW and 03YK - are NOT proved; see the implementation notes of this file”.
 
 > **An object of `Picardstack_{X/B}` lies in the image of the 1-morphism of Stacks 0D2A exactly
 > when the class of its invertible module is killed by `σ_T^*`.**  By the fibre identification a
@@ -319,7 +277,7 @@ theorem exists_sectionedPicardObject_iff (A : PicardObject s) :
 
 [Tag 0D2B](https://stacks.math.columbia.edu/tag/0D2B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation.sectionPicardPullback_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSection.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSection.lean#L253). The attribute's comment: “the index set of the disjoint union: the kernel of σ\_T^* on Pic(X\_T) is exactly the set of classes of the invertible modules admitting a trivialisation along σ\_T, i.e. of those underlying an object of Picardstack\_\{X/B, σ}. The fibred-in-setoids conclusion and the injectivity of the description are NOT proved: both need the global units of the structure sheaf of an algebraic space, which this development does not carry”.
+**`AlgebraicGeometry.Space.PicardSituation.sectionPicardPullback_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSection.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSection.lean#L253). The attribute's comment: “the index set of the disjoint union: the kernel of σ\_T^* on Pic(X\_T) is exactly the set of classes of the invertible modules admitting a trivialisation along σ\_T, i.e. of those underlying an object of Picardstack\_\{X/B, σ}. The fibred-in-setoids conclusion and the injectivity of the description are NOT proved: both need the global units of the structure sheaf of an algebraic space, which this development does not carry”.
 
 > **The elements of the kernel of `σ_T^*` are exactly the Picard classes of the invertible
 > `𝒪_{X_T}`-modules carrying a trivialisation along `σ_T`.**
@@ -347,7 +305,7 @@ theorem sectionPicardPullback_eq_zero_iff (σ : s.base ⟶ s.X) (hσ : σ ≫ s.
             structureModule (s.baseSpaceAt T))
 ```
 
-**`AlgebraicGeometry.Space.sectionedPicardCFG_isFiberedInSetoids_and_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionSetoid.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionSetoid.lean#L437).
+**`AlgebraicGeometry.Space.sectionedPicardCFG_isFiberedInSetoids_and_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionSetoid.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSectionSetoid.lean#L437).
 
 > In Situation 0D25, let `σ` be a section of `f : X ⟶ B` and assume that
 > `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an isomorphism for every test scheme `T` over `B`.  Then
@@ -380,7 +338,7 @@ theorem sectionedPicardCFG_isFiberedInSetoids_and_isoClassEquiv {s : PicardSitua
 
 [Tag 0D2C](https://stacks.math.columbia.edu/tag/0D2C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpaceOver_picardFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorIsAlgebraicSpace.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorIsAlgebraicSpace.lean#L93). The attribute's comment: “the full statement: f flat (hflat), of finite presentation (hfp) and proper (hproper), and O\_T -> f\_\{T,*}O\_\{X\_T} an isomorphism for every scheme T over the base (hstr); Pic\_\{X/B} is an algebraic space over B”.
+**`AlgebraicGeometry.Space.isAlgebraicSpaceOver_picardFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorIsAlgebraicSpace.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctorIsAlgebraicSpace.lean#L93). The attribute's comment: “the full statement: f flat (hflat), of finite presentation (hfp) and proper (hproper), and O\_T -> f\_\{T,*}O\_\{X\_T} an isomorphism for every scheme T over the base (hstr); Pic\_\{X/B} is an algebraic space over B”.
 
 > **The Picard functor is an algebraic space.**  Let `S` be a scheme and
 > `f : X ⟶ Y` a morphism of algebraic spaces over `S` such that
@@ -402,7 +360,7 @@ theorem isAlgebraicSpaceOver_picardFunctor {X Y : AlgebraicSpaces B S hS} (f : X
 
 [Tag 0D2D](https://stacks.math.columbia.edu/tag/0D2D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardSituation.isImmersion_picardEqualizer_and_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardDiagonalImmersion.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardDiagonalImmersion.lean#L244).
+**`AlgebraicGeometry.Space.PicardSituation.isImmersion_picardEqualizer_and_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardDiagonalImmersion.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardDiagonalImmersion.lean#L244).
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S` which is flat, of finite
 > presentation and proper, such that `𝒪_T ⟶ f_{T,*}𝒪_{X_T}` is an isomorphism for every scheme `T`
@@ -436,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.11, Tag 0D24](https://stacks.math.columbia.edu/tag/0D24)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

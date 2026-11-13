@@ -7,7 +7,7 @@ statement: formalized
 
 # Princess and the Roses game
 
-34 results, 15 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html).
+34 results, 15 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html).
 
 ## Equivalence of impartial games via their sum
 
@@ -19,7 +19,7 @@ which both $G$ and $H$ are at their starting positions is a P-position.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.impartialGame_equiv_iff_isP_gameSum` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#impartial-game-equiv-iff-is-p-game-sum).
+Stated but not proved: `MetaMathlibExt.impartialGame_equiv_iff_isP_gameSum` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#impartial-game-equiv-iff-is-p-game-sum).
 
 ## P-positions are the games of Sprague–Grundy value zero
 
@@ -32,7 +32,7 @@ $n = 0$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.isP_start_iff_of_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#is-p-start-iff-of-equiv-nim-heap).
+Stated but not proved: `MetaMathlibExt.isP_start_iff_of_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#is-p-start-iff-of-equiv-nim-heap).
 
 ## Mex rule for Sprague–Grundy values
 
@@ -47,7 +47,7 @@ Sprague–Grundy values of the games $G_q$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.spragueGrundyValue_eq_mex_options` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#sprague-grundy-value-eq-mex-options).
+Stated but not proved: `MetaMathlibExt.spragueGrundyValue_eq_mex_options` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#sprague-grundy-value-eq-mex-options).
 
 ## The Princess and the Roses game
 
@@ -65,7 +65,7 @@ does not change the game.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 2.1.
 
-Formalized by `MetaMathlibExt.princessRoses`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses).
+Formalized by `MetaMathlibExt.princessRoses`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses).
 
 ## Options in Princess and the Roses
 
@@ -80,7 +80,7 @@ otherwise.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 2.1.
 
-Formalized by `MetaMathlibExt.mem_slowANimMoves_one_two`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-slow-anim-moves-one-two).
+Formalized by `MetaMathlibExt.mem_slowANimMoves_one_two`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-slow-anim-moves-one-two).
 
 ## In two-pile Princess and the Roses, $(1, 1)$ moves to $(0, 0)$
 
@@ -92,7 +92,7 @@ from each pile.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 2.1.
 
-Formalized by `MetaMathlibExt.zero_zero_mem_princessRoses_moves_one_one`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#zero-zero-mem-princess-roses-moves-one-o).
+Formalized by `MetaMathlibExt.zero_zero_mem_princessRoses_moves_one_one`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#zero-zero-mem-princess-roses-moves-one-o).
 
 ## Lim's theorem on five-pile P&R
 
@@ -107,7 +107,7 @@ Positions with fewer piles are the cases with trailing zero piles.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_five_piles_isP_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-five-piles-is-p-iff).
+Stated but not proved: `MetaMathlibExt.princessRoses_five_piles_isP_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-five-piles-is-p-iff).
 
 ## Sprague–Grundy values of two-pile Princess and the Roses
 
@@ -120,7 +120,7 @@ $b$ is even, $n = 2$ if $a$ and $b$ are both odd, and $n = 3$ if $a$ is even and
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_two_piles_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-two-piles-equiv-nim-heap).
+Stated but not proved: `MetaMathlibExt.princessRoses_two_piles_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-two-piles-equiv-nim-heap).
 
 ## Sprague–Grundy values of three-pile Princess and the Roses
 
@@ -138,7 +138,7 @@ $(O, E, O)$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Corollary 10.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_three_piles_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-three-piles-equiv-nim-hea).
+Stated but not proved: `MetaMathlibExt.princessRoses_three_piles_equiv_nimHeap` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-three-piles-equiv-nim-hea).
 
 ## Adding to the three largest piles of four-pile P&R
 
@@ -151,7 +151,7 @@ Sprague–Grundy value.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_four_piles_equiv_add_three_largest` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-four-piles-equiv-add-thre).
+Stated but not proved: `MetaMathlibExt.princessRoses_four_piles_equiv_add_three_largest` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-four-piles-equiv-add-thre).
 
 ## Moves of simplified P&R
 
@@ -167,7 +167,7 @@ together with the fourth.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoveList`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-move-list).
+Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoveList`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-move-list).
 
 ## Options in simplified Princess and the Roses
 
@@ -182,7 +182,7 @@ in non-increasing order: $a - r_1 \ge b - r_2 \ge c - r_3 \ge d - r_4$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Sections 2.2 and 3.1.
 
-Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves).
+Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves).
 
 ## Characterization of simplified P&R options
 
@@ -197,7 +197,7 @@ $(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Sections 2.2 and 3.1.
 
-Formalized by `MetaMathlibExt.mem_simplifiedPrincessRosesMoves`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-simplified-princess-roses-moves).
+Formalized by `MetaMathlibExt.mem_simplifiedPrincessRosesMoves`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-simplified-princess-roses-moves).
 
 ## Simplified P&R moves decrease the number of objects
 
@@ -209,7 +209,7 @@ in simplified Princess and the Roses, then $a' + b' + c' + d' < a + b + c + d$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves-rank-lt).
+Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves-rank-lt).
 
 ## A terminal position of simplified P&R
 
@@ -220,7 +220,7 @@ position $(3, 3, 3, 0)$ has no options.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves_three_three_three_zero`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves-three-th).
+Formalized by `MetaMathlibExt.simplifiedPrincessRosesMoves_three_three_three_zero`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses-moves-three-th).
 
 ## Simplified Princess and the Roses
 
@@ -235,7 +235,7 @@ $a + b + c + d$, and whose start position is $p$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.simplifiedPrincessRoses`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses).
+Formalized by `MetaMathlibExt.simplifiedPrincessRoses`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#simplified-princess-roses).
 
 ## Four-pile P&R is equivalent to simplified P&R
 
@@ -248,7 +248,7 @@ Sprague–Grundy value.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_equiv_simplifiedPrincessRoses` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-equiv-simplified-princess).
+Stated but not proved: `MetaMathlibExt.princessRoses_equiv_simplifiedPrincessRoses` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-equiv-simplified-princess).
 
 ## Moves of P&R Helper
 
@@ -262,7 +262,7 @@ $(0, -1, -1)$ and $(0, 0, -1)$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.princessRosesHelperMoveList`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-move-list).
+Formalized by `MetaMathlibExt.princessRosesHelperMoveList`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-move-list).
 
 ## Options in P&R Helper
 
@@ -276,7 +276,7 @@ $x - u \le y - v \le z - w$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.princessRosesHelperMoves`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves).
+Formalized by `MetaMathlibExt.princessRosesHelperMoves`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves).
 
 ## Characterization of P&R Helper options
 
@@ -290,7 +290,7 @@ $(1, 2, 1)$, $(1, 1, 2)$, $(0, 1, 0)$, $(0, 1, 1)$ and $(0, 0, 1)$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.mem_princessRosesHelperMoves`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-princess-roses-helper-moves).
+Formalized by `MetaMathlibExt.mem_princessRosesHelperMoves`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#mem-princess-roses-helper-moves).
 
 ## P&R Helper moves decrease the coordinate sum
 
@@ -302,7 +302,7 @@ game, then $x' + y' + z' < x + y + z$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.princessRosesHelperMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves-rank-lt).
+Formalized by `MetaMathlibExt.princessRosesHelperMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves-rank-lt).
 
 ## Small P&R Helper positions
 
@@ -313,7 +313,7 @@ options, and the options of $(1, 1, 1)$ are exactly $(0, 0, 0)$ and $(0, 1, 1)$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.princessRosesHelperMoves_small`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves-small).
+Formalized by `MetaMathlibExt.princessRosesHelperMoves_small`, a theorem declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-moves-small).
 
 ## The P&R Helper game
 
@@ -328,7 +328,7 @@ starts at $p$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Section 3.1.
 
-Formalized by `MetaMathlibExt.princessRosesHelper`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper).
+Formalized by `MetaMathlibExt.princessRosesHelper`, a definition declared in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper).
 
 ## Four-pile P&R reduces to P&R Helper
 
@@ -340,7 +340,7 @@ $[d, b - c + d, a - c + d]$; that is, the two have the same Sprague–Grundy val
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.princessRoses_equiv_princessRosesHelper` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-equiv-princess-roses-help).
+Stated but not proved: `MetaMathlibExt.princessRoses_equiv_princessRosesHelper` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-equiv-princess-roses-help).
 
 ## P&R Helper positions of Sprague–Grundy value 0
 
@@ -352,7 +352,7 @@ has Sprague–Grundy value $0$) if and only if $x$, $y$ and $z$ are all even.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, first bullet.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_zero_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-zer).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_zero_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-zer).
 
 ## P&R Helper positions of Sprague–Grundy value 1 on regions U and R
 
@@ -368,7 +368,7 @@ and $z > x + 1$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `1` on `U ∪ R`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_one_iff_of_lt_add` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-one).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_one_iff_of_lt_add` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-one).
 
 ## P&R Helper positions of Sprague–Grundy value 2 on region U
 
@@ -393,7 +393,7 @@ $s \equiv 6 \pmod 8$ and $z = x + y - 2$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `2` on `U`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_two_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-two).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_two_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-two).
 
 ## P&R Helper positions of Sprague–Grundy value 3 on region U
 
@@ -417,7 +417,7 @@ and $x + y - z \le 3$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `3` on `U`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_three_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-thr).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_three_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-thr).
 
 ## P&R Helper positions of Sprague–Grundy value 4 on region U
 
@@ -441,7 +441,7 @@ $z = x + 5$ and $x \equiv 1 \pmod 8$; $y = x + 1$, $z = x + 6$ and $x \equiv 1 \
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `4` on `U`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_four_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-fou).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_four_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-fou).
 
 ## Sprague–Grundy value $5$ of P&R Helper on region $U$
 
@@ -461,7 +461,7 @@ the following holds:
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, value `5` on `U`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_five_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-fiv).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_five_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-fiv).
 
 ## P&R Helper positions of Sprague–Grundy value 6 or 7 on region U
 
@@ -475,7 +475,7 @@ the Nim heap of size $7$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, values `6` and `7` on `U`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_six_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-six).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_six_iff_of_mem_U` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-six).
 
 ## Sprague–Grundy values of P&R Helper on region R
 
@@ -491,7 +491,7 @@ $n = 5$, $x$ is odd and $s \equiv 2 \pmod 4$.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, region `R`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_R` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_R` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff).
 
 ## Sprague–Grundy values of P&R Helper on region L
 
@@ -507,7 +507,7 @@ are odd and $y$ is even; $n = 5$, $x$ is odd and $y$ and $z$ are even.
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, region `L`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_L` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff-2).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_L` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff-2).
 
 ## Sprague–Grundy values of P&R Helper on region D
 
@@ -523,7 +523,7 @@ $6$ to (odd, odd, even) and $7$ to (odd, odd, odd).
 
 - Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, region `D`.
 
-Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_D` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff-3).
+Stated but not proved: `MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_D` is written with `theorem_wanted` in [WantedExt/GameTheory/PrincessAndRosesWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PrincessAndRosesWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html#princess-roses-helper-equiv-nim-heap-iff-3).
 
 ## Depends on
 
@@ -532,4 +532,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Princess and the Roses game](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/princess-and-the-roses-game)

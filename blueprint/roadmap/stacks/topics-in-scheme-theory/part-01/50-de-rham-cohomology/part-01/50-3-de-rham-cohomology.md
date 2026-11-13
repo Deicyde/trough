@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.3 de Rham cohomology
 
-Section 50.3 of the Stacks Project, [Tag 0FL6](https://stacks.math.columbia.edu/tag/0FL6). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.3 of the Stacks Project, [Tag 0FL6](https://stacks.math.columbia.edu/tag/0FL6). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FL6, the section
 
 [Tag 0FL6](https://stacks.math.columbia.edu/tag/0FL6) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L513). The attribute's comment: “the definition `H^i_dR(X/S) = H^i(RΓ(X, Ω^•_{X/S}))`”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L513). The attribute's comment: “the definition `H^i_dR(X/S) = H^i(RΓ(X, Ω^•_{X/S}))`”.
 
 > **Relative de Rham cohomology** `H^i_{dR}(X/S)` of a morphism of schemes: the `i`-th
 > cohomology of the derived global sections of the relative de Rham complex.
@@ -23,7 +23,7 @@ Section 50.3 of the Stacks Project, [Tag 0FL6](https://stacks.math.columbia.edu/
 noncomputable abbrev deRhamCohomology (p : X ⟶ S) (i : ℤ) : AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyBaseModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L529). The attribute's comment: “the `H^0(S, 𝒪_S)`-module structure on `H^i_dR(X/S)`”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyBaseModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L529). The attribute's comment: “the `H^0(S, 𝒪_S)`-module structure on `H^i_dR(X/S)`”.
 
 > **Relative de Rham cohomology is a module over `H^0(S, 𝒪_S)`**: the de Rham complex is a
 > complex of `p^{-1}𝒪_S`-modules, so its hypercohomology is a module over `Γ(X, p^{-1}𝒪_S)`, and
@@ -34,7 +34,7 @@ noncomputable def deRhamCohomologyBaseModule (p : X ⟶ S) (i : ℤ) :
     ModuleCat.{u} (S.sheaf.obj.obj (Opposite.op ⊤))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamDerivedSectionsPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L540). The attribute's comment: “the pullback map `f^* : RΓ(X, Ω^•_{X/S}) ⟶ RΓ(X', Ω^•_{X'/S'})`”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamDerivedSectionsPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L540). The attribute's comment: “the pullback map `f^* : RΓ(X, Ω^•_{X/S}) ⟶ RΓ(X', Ω^•_{X'/S'})`”.
 
 > **The pullback map `f^* : RΓ(X, Ω^•_{X/S}) ⟶ RΓ(X', Ω^•_{X'/S'})`** of a commutative square
 > of schemes: derived global sections of the canonical map of de Rham complexes, followed by the
@@ -53,7 +53,7 @@ noncomputable def deRhamDerivedSectionsPullback (hcomm : f ≫ p = p' ≫ g) :
             (SheafOfModules.deRhamDifferential (deRhamAlgebras p'))))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L561). The attribute's comment: “the pullback map `f^* : H^i_dR(X/S) ⟶ H^i_dR(X'/S')`”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Functoriality.lean#L561). The attribute's comment: “the pullback map `f^* : H^i_dR(X/S) ⟶ H^i_dR(X'/S')`”.
 
 > **The pullback map `f^* : H^i_{dR}(X/S) ⟶ H^i_{dR}(X'/S')`** of a commutative square of
 > schemes: the map induced on cohomology by the pullback map on derived global sections.
@@ -67,7 +67,7 @@ noncomputable def deRhamCohomologyPullback (hcomm : f ≫ p = p' ≫ g) (i : ℤ
 
 [Tag 0FLW](https://stacks.math.columbia.edu/tag/0FLW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamSectionsComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamComplexComparison.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamComplexComparison.lean#L270). The attribute's comment: “Γ(Spec A, Ω^•) ≅ Ω^•\_\{A/R} as a cochain complex of R-modules; not derived”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamSectionsComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamComplexComparison.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamComplexComparison.lean#L270). The attribute's comment: “Γ(Spec A, Ω^•) ≅ Ω^•\_\{A/R} as a cochain complex of R-modules; not derived”.
 
 > **[Stacks Project, Tag 0FLW] at the level of complexes.** For a morphism of affine schemes
 > `Spec φ : Spec A ⟶ Spec R`, the global relative differential forms of `Spec φ` are the algebraic
@@ -90,7 +90,7 @@ noncomputable def deRhamCohomologyPullback (hcomm : f ≫ p = p' ≫ g) (i : ℤ
 def deRhamSectionsComplexIso : ringDeRhamComplex φ ≅ deRhamSectionsComplex φ
 ```
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.derivedDeRhamSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean#L252). The attribute's comment: “RΓ(Spec A, Ω^•) ≅ Ω^•\_\{A/R} in D(R)”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.derivedDeRhamSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean#L252). The attribute's comment: “RΓ(Spec A, Ω^•) ≅ Ω^•\_\{A/R} in D(R)”.
 
 > **[Stacks Project, Tag 0FLW], the derived statement.** For a morphism of affine schemes
 > `Spec φ : Spec A ⟶ Spec R` the algebraic de Rham complex `Ω^•_{A/R}` computes the derived global
@@ -115,7 +115,7 @@ def derivedDeRhamSectionsIso :
       (derivedDeRhamSections φ).obj (DerivedCategory.Q.obj (deRhamComplexInt φ))
 ```
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamCohomologyIsoInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean#L274). The attribute's comment: “H^i\_dR(Spec A/Spec R) ≅ H^i(Ω^•\_\{A/R})”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamCohomologyIsoInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamDerived.lean#L274). The attribute's comment: “H^i\_dR(Spec A/Spec R) ≅ H^i(Ω^•\_\{A/R})”.
 
 > **[Stacks Project, Tag 0FLW], the cohomology statement.** De Rham cohomology of a morphism of
 > affine schemes is the cohomology of the algebraic de Rham complex:
@@ -127,7 +127,7 @@ def deRhamCohomologyIsoInt (i : ℤ) :
       deRhamCohomologyOver φ i
 ```
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.differentialFormsSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean#L174). The attribute's comment: “degreewise only: `⋀^p_A Ω[A⁄R] ≅ Γ(Spec A, Ω^p)` for every `p`; no differential”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.differentialFormsSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean#L174). The attribute's comment: “degreewise only: `⋀^p_A Ω[A⁄R] ≅ Γ(Spec A, Ω^p)` for every `p`; no differential”.
 
 > **The global relative differential `p`-forms of `Spec φ : Spec A ⟶ Spec R` are
 > `⋀^p_A Ω[A⁄R]`, as `A`-modules.** The sheaf of relative differential `p`-forms is the
@@ -143,7 +143,7 @@ noncomputable def differentialFormsSectionsIso (p : ℕ) :
       moduleSpecΓFunctor.obj (Scheme.Hom.relativeDifferentialForms (Spec.map φ) (p : ℤ))
 ```
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamComplex_d_zero_one_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean#L250). The attribute's comment: “the degree-zero differential square only; no differential in positive degree”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.deRhamComplex_d_zero_one_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/DeRhamSections.lean#L250). The attribute's comment: “the degree-zero differential square only; no differential in positive degree”.
 
 > **The first differential of the relative de Rham complex of `Spec φ`, read on global
 > sections, is the universal derivation of `A` over `R`.** On the degree-zero form `b · 1` attached
@@ -166,7 +166,7 @@ theorem deRhamComplex_d_zero_one_apply (b : ↥((Spec A).sheaf.obj.obj (op ⊤))
 
 [Tag 0FLX](https://stacks.math.columbia.edu/tag/0FLX) in the Stacks Project.
 
-**`Stacks.DeRhamDirectImage.isQuasicoherent_homology_derivedDeRhamDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean#L328).
+**`Stacks.DeRhamDirectImage.isQuasicoherent_homology_derivedDeRhamDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean#L328).
 
 > **Stacks Project, Tag 0FLX.** For a quasi-compact and quasi-separated morphism of schemes
 > `p : X ⟶ S` the derived direct image `Rp_*Ω^•_{X/S}` of the relative de Rham complex is an
@@ -179,7 +179,7 @@ theorem isQuasicoherent_homology_derivedDeRhamDirectImage [QuasiCompact f] [Quas
       (derivedDeRhamDirectImage f)).IsQuasicoherent
 ```
 
-**`Stacks.DeRhamDirectImage.derivedCategoryB_derivedDeRhamDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean#L379).
+**`Stacks.DeRhamDirectImage.derivedCategoryB_derivedDeRhamDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/DerivedDirectImage.lean#L379).
 
 > **Stacks Project, Tag 0FLX.** `Rp_*Ω^•_{X/S}` is an object of `D_QCoh(𝒪_S)`, in the
 > membership form: the object property on `D(𝒪_S)` cutting out the complexes with quasi-coherent
@@ -197,7 +197,7 @@ theorem derivedCategoryB_derivedDeRhamDirectImage [QuasiCompact f] [QuasiSeparat
 
 [Tag 0FLY](https://stacks.math.columbia.edu/tag/0FLY) in the Stacks Project.
 
-**`AlgebraicGeometry.DeRhamCoherentDirectImage.derivedCategoryB_derivedDeRhamDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoherentDirectImage.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoherentDirectImage.lean#L277).
+**`AlgebraicGeometry.DeRhamCoherentDirectImage.derivedCategoryB_derivedDeRhamDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoherentDirectImage.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoherentDirectImage.lean#L277).
 
 > **[Stacks, Tag 0FLY].** For a proper morphism `p : X ⟶ S` with `S` locally Noetherian,
 > `Rp_*Ω^•_{X/S}` is an object of `D_Coh(𝒪_S)`.
@@ -218,7 +218,7 @@ theorem derivedCategoryB_derivedDeRhamDirectImage_of_isProper
 
 [Tag 0FLZ](https://stacks.math.columbia.edu/tag/0FLZ) in the Stacks Project.
 
-**`AlgebraicGeometry.DeRhamCohomologyDirectImage.moduleFinite_deRhamCohomologyBaseModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomologyDirectImage.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomologyDirectImage.lean#L437).
+**`AlgebraicGeometry.DeRhamCohomologyDirectImage.moduleFinite_deRhamCohomologyBaseModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomologyDirectImage.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomologyDirectImage.lean#L437).
 
 > **[Stacks, Tag 0FLZ].** Let `A` be a Noetherian ring and let `X` be a proper scheme over
 > `S = Spec A`. Then `H^i_{dR}(X/S)` is a finite `A`-module, for every `i`.
@@ -242,7 +242,7 @@ theorem moduleFinite_deRhamCohomologyBaseModule_of_isProper [IsNoetherianRing A]
 
 [Tag 0FM0](https://stacks.math.columbia.edu/tag/0FM0) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperSmoothDeRham.isIso_derivedBaseChangeMap_deRhamComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamBaseChange.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamBaseChange.lean#L552). The attribute's comment: “formation of Rf\_*Omega^bullet\_X/S commutes with arbitrary change of base: for a proper smooth f and any cartesian square the derived base change map of Tag 08HY along the inverse-image ringed spaces, followed by the canonical map of de Rham complexes, is an isomorphism”.
+**`AlgebraicGeometry.ProperSmoothDeRham.isIso_derivedBaseChangeMap_deRhamComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamBaseChange.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamBaseChange.lean#L552). The attribute's comment: “formation of Rf\_*Omega^bullet\_X/S commutes with arbitrary change of base: for a proper smooth f and any cartesian square the derived base change map of Tag 08HY along the inverse-image ringed spaces, followed by the canonical map of de Rham complexes, is an isomorphism”.
 
 > **Base change for `Rf_*Ω^•_{X/S}`.** Let `f : X ⟶ S` be a proper smooth morphism of schemes
 > and let
@@ -277,7 +277,7 @@ theorem isIso_derivedBaseChangeMap_deRhamComplex (hsq : IsPullback g' f' f g) [I
         (deRhamBaseChangeComparison g' f' f g hsq.w))
 ```
 
-**`AlgebraicGeometry.ProperSmoothDeRham.isPerfect_derivedPushforward_deRhamComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamPerfect.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamPerfect.lean#L177). The attribute's comment: “Rf\_*Omega^bullet\_X/S is a perfect object of D(O\_S) for a proper smooth f: the derived direct image of the relative de Rham complex along (X, f^\{-1}O\_S) -> S”.
+**`AlgebraicGeometry.ProperSmoothDeRham.isPerfect_derivedPushforward_deRhamComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamPerfect.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothDeRhamPerfect.lean#L177). The attribute's comment: “Rf\_*Omega^bullet\_X/S is a perfect object of D(O\_S) for a proper smooth f: the derived direct image of the relative de Rham complex along (X, f^\{-1}O\_S) -> S”.
 
 > **[Stacks, Tag 0FM0], perfectness of `Rf_*Ω^•_{X/S}`.** For a proper smooth morphism of
 > schemes `f : X ⟶ S`, the derived direct image of the relative de Rham complex along
@@ -296,7 +296,7 @@ theorem isPerfect_derivedPushforward_deRhamComplex [IsProper f] [Smooth f] :
         (DerivedCategory.Q.obj (deRhamComplexInt f)))
 ```
 
-**`AlgebraicGeometry.ProperSmoothDeRham.isIso_derivedBaseChangeMap_forms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean#L122). The attribute's comment: “formation of Rf\_*Omega^p\_X/S commutes with arbitrary change of base: for a proper smooth f and any cartesian square the derived base change map of Tag 08HY at Omega^p\_X/S followed by Rf'\_* of the canonical map L(g')^*Omega^p\_X/S -> Omega^p\_X'/S' is an isomorphism”.
+**`AlgebraicGeometry.ProperSmoothDeRham.isIso_derivedBaseChangeMap_forms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean#L122). The attribute's comment: “formation of Rf\_*Omega^p\_X/S commutes with arbitrary change of base: for a proper smooth f and any cartesian square the derived base change map of Tag 08HY at Omega^p\_X/S followed by Rf'\_* of the canonical map L(g')^*Omega^p\_X/S -> Omega^p\_X'/S' is an isomorphism”.
 
 > **Base change for `Rf_*Ω^p_{X/S}`.** Let `f : X ⟶ S` be a proper smooth morphism of schemes
 > and let
@@ -325,7 +325,7 @@ theorem isIso_derivedBaseChangeMap_forms {g' : X' ⟶ X} {f' : X' ⟶ S'} {f : X
         (formsBaseChangeComparison g' f' f g hsq.w p))
 ```
 
-**`AlgebraicGeometry.ProperSmoothDeRham.isPerfect_derivedPushforward_forms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean#L197). The attribute's comment: “Rf\_*Omega^p\_X/S is a perfect object of D(O\_S) for a proper smooth f, for every p >= 0, over an arbitrary base”.
+**`AlgebraicGeometry.ProperSmoothDeRham.isPerfect_derivedPushforward_forms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProperSmoothFormsDirectImage.lean#L197). The attribute's comment: “Rf\_*Omega^p\_X/S is a perfect object of D(O\_S) for a proper smooth f, for every p >= 0, over an arbitrary base”.
 
 > **Perfectness of `Rf_*Ω^p_{X/S}`.** For a proper smooth morphism of schemes `f : X ⟶ S`
 > the derived direct image `Rf_*Ω^p_{X/S}` is a perfect object of `D(𝒪_S)`. Perfectness is local
@@ -346,4 +346,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.3, Tag 0FL6](https://stacks.math.columbia.edu/tag/0FL6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

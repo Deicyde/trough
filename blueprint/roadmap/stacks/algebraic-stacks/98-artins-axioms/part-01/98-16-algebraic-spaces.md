@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.16 Algebraic spaces
 
-Section 98.16 of the Stacks Project, [Tag 07Y0](https://stacks.math.columbia.edu/tag/07Y0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.16 of the Stacks Project, [Tag 07Y0](https://stacks.math.columbia.edu/tag/07Y0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07Y1, a proposition
 
 [Tag 07Y1](https://stacks.math.columbia.edu/tag/07Y1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ArtinAxiomsAlgebraicSpace.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ArtinAxiomsAlgebraicSpace.lean#L442).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ArtinAxiomsAlgebraicSpace.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ArtinAxiomsAlgebraicSpace.lean#L442).
 
 > **Stacks 07Y1 (Artin's axioms for algebraic spaces).** Let `S` be a locally Noetherian scheme
 > and `F` a set-valued functor on the big fppf site of `S`. Assume that
@@ -74,7 +74,7 @@ theorem isAlgebraicSpace_of_artinAxioms [IsLocallyNoetherian S]
 
 [Tag 07Y2](https://stacks.math.columbia.edu/tag/07Y2) in the Stacks Project.
 
-**`Deformation.Artin.isAlgebraicSpace_of_injective_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/AlgebraicSpaceCriterionInjective.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/AlgebraicSpaceCriterionInjective.lean#L358).
+**`Deformation.Artin.isAlgebraicSpace_of_injective_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/AlgebraicSpaceCriterionInjective.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/AlgebraicSpaceCriterionInjective.lean#L358).
 
 > **Stacks 07Y2.** Let `S` be a locally Noetherian scheme and `a : F ⟶ G` a transformation of
 > functors `(Sch/S)_{fppf}^{opp} ⟶ Sets`. Assume that
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.16, Tag 07Y0](https://stacks.math.columbia.edu/tag/07Y0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

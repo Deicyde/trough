@@ -1,6 +1,6 @@
 # 82 Chow Groups of Spaces
 
-Chapter 82 of the Stacks Project, *Chow Groups of Spaces*, [Tag 0EDQ](https://stacks.math.columbia.edu/tag/0EDQ): the 31 sections of its 32 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 103 tags are carried by 277 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
+Chapter 82 of the Stacks Project, *Chow Groups of Spaces*, [Tag 0EDQ](https://stacks.math.columbia.edu/tag/0EDQ): the 31 sections of its 32 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 103 tags are carried by 268 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
 
 ## [82.2 Setup to 82.18 Intersecting with an…](part-01/README.md)
 

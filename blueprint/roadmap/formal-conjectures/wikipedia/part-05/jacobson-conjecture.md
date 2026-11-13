@@ -17,7 +17,7 @@ statement: formalized
 >   J. London Math. Soc. Series 2, 15 (1): 41–47
 >   https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/jlms/s2-15.1.41
 
-*Quoted from [FormalConjectures/Wikipedia/Jacobson.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Jacobson.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Jacobson.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Jacobson.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open, 1 solved and 1 textbook result.
 
@@ -35,7 +35,7 @@ theorem jacobson_conjecture :
       JacobsonConjectureFor R
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Jacobson.lean#L51).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Jacobson.lean#L51).
 
 ## `Jacobson.jacobson_conjecture_of_comm_ring`
 
@@ -48,7 +48,7 @@ theorem jacobson_conjecture_of_comm_ring (R : Type u) [CommRing R] [IsNoetherian
     JacobsonConjectureFor R
 ```
 
-Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Jacobson.lean#L58).
+Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Jacobson.lean#L58).
 
 ## `Jacobson.jacobson_conjecture_of_right_noetherian`
 
@@ -63,7 +63,7 @@ theorem jacobson_conjecture_of_right_noetherian :
     ¬ ∀ (R : Type) [Ring R] [IsRightNoetherianRing R], JacobsonConjectureFor R
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Jacobson.lean#L66).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Jacobson.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Jacobson.lean#L66).
 
 ## Depends on
 
@@ -71,5 +71,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Jacobson.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Jacobson.lean)
+- [FormalConjectures/Wikipedia/Jacobson.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Jacobson.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Jacobson's_conjecture)

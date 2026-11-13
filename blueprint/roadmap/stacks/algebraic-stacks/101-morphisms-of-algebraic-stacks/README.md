@@ -1,6 +1,6 @@
 # 101 Morphisms of Algebraic Stacks
 
-Chapter 101 of the Stacks Project, *Morphisms of Algebraic Stacks*, [Tag 04XM](https://stacks.math.columbia.edu/tag/04XM): the 49 sections of its 51 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 281 tags are carried by 690 declarations of the repository (all in StacksFrontier) and 9 registered declarations.
+Chapter 101 of the Stacks Project, *Morphisms of Algebraic Stacks*, [Tag 04XM](https://stacks.math.columbia.edu/tag/04XM): the 49 sections of its 51 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 281 tags are carried by 645 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
 
 ## [101.3 Properties of diagonals to 101.6 Higher diagonals](part-01/README.md)
 
@@ -9,7 +9,7 @@ Chapter 101 of the Stacks Project, *Morphisms of Algebraic Stacks*, [Tag 04XM](h
 - [101.5 Inertia stacks](part-01/101-5-inertia-stacks.md)
 - [101.6 Higher diagonals](part-01/101-6-higher-diagonals.md)
 
-## [101.7 Quasi-compact morphisms to 101.22 The Deligne-Mumford locus](part-02/README.md)
+## [101.7 Quasi-compact morphisms to 101.26 Flat at a point](part-02/README.md)
 
 - [101.7 Quasi-compact morphisms](part-02/101-7-quasi-compact-morphisms.md)
 - [101.8 Noetherian algebraic stacks](part-02/101-8-noetherian-algebraic-stacks.md)
@@ -27,13 +27,13 @@ Chapter 101 of the Stacks Project, *Morphisms of Algebraic Stacks*, [Tag 04XM](h
 - [101.20 Presentations and properties of algebraic stacks](part-02/101-20-presentations-and-properties-of-algebraic.md)
 - [101.21 Special presentations of algebraic stacks](part-02/101-21-special-presentations-of-algebraic-stacks.md)
 - [101.22 The Deligne-Mumford locus](part-02/101-22-the-deligne-mumford-locus.md)
+- [101.23 Locally quasi-finite morphisms](part-02/101-23-locally-quasi-finite-morphisms.md)
+- [101.24 Quasi-finite morphisms](part-02/101-24-quasi-finite-morphisms.md)
+- [101.25 Flat morphisms](part-02/101-25-flat-morphisms.md)
+- [101.26 Flat at a point](part-02/101-26-flat-at-a-point.md)
 
-## [101.23 Locally quasi-finite… to 101.37 Proper morphisms](part-03/README.md)
+## [101.27 Morphisms of finite… to 101.44 Local complete…](part-03/README.md)
 
-- [101.23 Locally quasi-finite morphisms](part-03/101-23-locally-quasi-finite-morphisms.md)
-- [101.24 Quasi-finite morphisms](part-03/101-24-quasi-finite-morphisms.md)
-- [101.25 Flat morphisms](part-03/101-25-flat-morphisms.md)
-- [101.26 Flat at a point](part-03/101-26-flat-at-a-point.md)
 - [101.27 Morphisms of finite presentation](part-03/101-27-morphisms-of-finite-presentation.md)
 - [101.28 Gerbes](part-03/101-28-gerbes.md)
 - [101.29 Stratification by gerbes](part-03/101-29-stratification-by-gerbes.md)
@@ -45,16 +45,16 @@ Chapter 101 of the Stacks Project, *Morphisms of Algebraic Stacks*, [Tag 04XM](h
 - [101.35 Étale morphisms](part-03/101-35-etale-morphisms.md)
 - [101.36 Unramified morphisms](part-03/101-36-unramified-morphisms.md)
 - [101.37 Proper morphisms](part-03/101-37-proper-morphisms.md)
+- [101.38 Scheme theoretic image](part-03/101-38-scheme-theoretic-image.md)
+- [101.39 Valuative criteria](part-03/101-39-valuative-criteria.md)
+- [101.40 Valuative criterion for second diagonal](part-03/101-40-valuative-criterion-for-second-diagonal.md)
+- [101.41 Valuative criterion for the diagonal](part-03/101-41-valuative-criterion-for-the-diagonal.md)
+- [101.42 Valuative criterion for universal closedness](part-03/101-42-valuative-criterion-for-universal-closedn.md)
+- [101.43 Valuative criterion for properness](part-03/101-43-valuative-criterion-for-properness.md)
+- [101.44 Local complete intersection morphisms](part-03/101-44-local-complete-intersection-morphisms.md)
 
-## [101.38 Scheme theoretic image to 101.51 Residual gerbes](part-04/README.md)
+## [101.45 Stabilizer preserving… to 101.51 Residual gerbes](part-04/README.md)
 
-- [101.38 Scheme theoretic image](part-04/101-38-scheme-theoretic-image.md)
-- [101.39 Valuative criteria](part-04/101-39-valuative-criteria.md)
-- [101.40 Valuative criterion for second diagonal](part-04/101-40-valuative-criterion-for-second-diagonal.md)
-- [101.41 Valuative criterion for the diagonal](part-04/101-41-valuative-criterion-for-the-diagonal.md)
-- [101.42 Valuative criterion for universal closedness](part-04/101-42-valuative-criterion-for-universal-closedn.md)
-- [101.43 Valuative criterion for properness](part-04/101-43-valuative-criterion-for-properness.md)
-- [101.44 Local complete intersection morphisms](part-04/101-44-local-complete-intersection-morphisms.md)
 - [101.45 Stabilizer preserving morphisms](part-04/101-45-stabilizer-preserving-morphisms.md)
 - [101.46 Normalization](part-04/101-46-normalization.md)
 - [101.47 Points and specializations](part-04/101-47-points-and-specializations.md)

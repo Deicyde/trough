@@ -7,7 +7,7 @@ statement: formalized
 
 # Capacity of Catalan words
 
-62 results, 31 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html).
+62 results, 31 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html).
 
 ## A recursion for binomial sums of odd-indexed Fibonacci numbers
 
@@ -24,7 +24,7 @@ in the summation bounds are nonnegative.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_fib_odd_eq_choose_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#sum-choose-mul-fib-odd-eq-choose-add-sum).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_fib_odd_eq_choose_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#sum-choose-mul-fib-odd-eq-choose-add-sum).
 
 ## A double-sum identity for even-indexed Fibonacci numbers
 
@@ -38,7 +38,7 @@ $$F_{2n} = \sum_{j=1}^{n} \sum_{m=0}^{n-j} \binom{n-m-1}{j-1} F_{2m-1}.$$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.fib_two_mul_eq_sum_sum_choose_mul_fib_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#fib-two-mul-eq-sum-sum-choose-mul-fib-od).
+Stated but not proved: `MetaMathlibExt.fib_two_mul_eq_sum_sum_choose_mul_fib_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#fib-two-mul-eq-sum-sum-choose-mul-fib-od).
 
 ## Capacity of a word
 
@@ -55,7 +55,7 @@ the first and last columns hold no water.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, definition of capacity.
 
-Formalized by `MetaMathlibExt.wordCapacity`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-capacity).
+Formalized by `MetaMathlibExt.wordCapacity`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-capacity).
 
 ## Area of a word
 
@@ -66,7 +66,7 @@ $w_1 + \cdots + w_n$ of its letters, the area of its bargraph.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of the area statistic.
 
-Formalized by `MetaMathlibExt.wordArea`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-area).
+Formalized by `MetaMathlibExt.wordArea`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-area).
 
 ## Capacity of the word $122341123212323$
 
@@ -78,7 +78,7 @@ Shattuck's Figure 1).
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, Figure 1.
 
-Formalized by `MetaMathlibExt.wordCapacity_figure_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-capacity-figure-one).
+Formalized by `MetaMathlibExt.wordCapacity_figure_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#word-capacity-figure-one).
 
 ## Catalan words
 
@@ -92,7 +92,7 @@ Every letter of a Catalan word of length $n$ is at most $n$, so $\mathcal{A}_n$ 
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, definition of Catalan words.
 
-Formalized by `MetaMathlibExt.catalanWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words).
+Formalized by `MetaMathlibExt.catalanWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words).
 
 ## Smooth words
 
@@ -106,7 +106,7 @@ The letters of a smooth word of length $n$ are at most $n$, so $\mathcal{R}_n$ i
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, definition of smooth words.
 
-Formalized by `MetaMathlibExt.smoothWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words).
+Formalized by `MetaMathlibExt.smoothWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words).
 
 ## Characterization of Catalan words
 
@@ -121,7 +121,7 @@ In particular, the bound $w_k \le n$ on the letters is automatic.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, definition of Catalan words.
 
-Formalized by `MetaMathlibExt.mem_catalanWords_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#mem-catalan-words-iff).
+Formalized by `MetaMathlibExt.mem_catalanWords_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#mem-catalan-words-iff).
 
 ## Characterization of smooth words
 
@@ -137,7 +137,7 @@ $w_k \le n$ on the letters is automatic.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, definition of smooth words.
 
-Formalized by `MetaMathlibExt.mem_smoothWords_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#mem-smooth-words-iff).
+Formalized by `MetaMathlibExt.mem_smoothWords_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#mem-smooth-words-iff).
 
 ## Restricted smooth words
 
@@ -149,7 +149,7 @@ are both equal to $1$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of restricted smooth words.
 
-Formalized by `MetaMathlibExt.restrictedSmoothWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words).
+Formalized by `MetaMathlibExt.restrictedSmoothWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words).
 
 ## Words ending in a given letter
 
@@ -161,7 +161,7 @@ in $S$ whose last letter $w_n$ is $k$. When $n = 0$ this set is empty.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `𝒜_{n,i}`.
 
-Formalized by `MetaMathlibExt.wordsEndingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#words-ending-in).
+Formalized by `MetaMathlibExt.wordsEndingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#words-ending-in).
 
 ## Words with all letters at most a bound
 
@@ -174,7 +174,7 @@ those whose largest letter is $k$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `ℬ_{n,i}`.
 
-Formalized by `MetaMathlibExt.wordsBoundedBy`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#words-bounded-by).
+Formalized by `MetaMathlibExt.wordsBoundedBy`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#words-bounded-by).
 
 ## Capacity distribution
 
@@ -187,7 +187,7 @@ capacity of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `a(n, i; q)`.
 
-Formalized by `MetaMathlibExt.capacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-dist).
+Formalized by `MetaMathlibExt.capacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-dist).
 
 ## Area distribution
 
@@ -200,7 +200,7 @@ sum of its letters.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `c(m, j, ℓ; q)`.
 
-Formalized by `MetaMathlibExt.areaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#area-dist).
+Formalized by `MetaMathlibExt.areaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#area-dist).
 
 ## Capacity distribution of Catalan words with a given last letter
 
@@ -213,7 +213,7 @@ where $\mathrm{cap}(w)$ is the capacity of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `a(n, i; q)`.
 
-Formalized by `MetaMathlibExt.catalanCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist).
+Formalized by `MetaMathlibExt.catalanCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist).
 
 ## Capacity distribution of Catalan words ending in their largest letter
 
@@ -226,7 +226,7 @@ letter is $i$ and all of whose letters are at most $i$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `b(n, i; q)`.
 
-Formalized by `MetaMathlibExt.catalanMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist).
+Formalized by `MetaMathlibExt.catalanMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist).
 
 ## Capacity distribution of smooth words by last letter
 
@@ -238,7 +238,7 @@ words of length $n$ whose last letter is $i$ and $\operatorname{cap}(w)$ is the 
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of `r(n, i; q)`.
 
-Formalized by `MetaMathlibExt.smoothCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist).
+Formalized by `MetaMathlibExt.smoothCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist).
 
 ## Capacity distribution of smooth words ending in their largest letter
 
@@ -251,7 +251,7 @@ $i$, and $\operatorname{cap}(w)$ is the capacity of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of `s(n, i; q)`.
 
-Formalized by `MetaMathlibExt.smoothMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist).
+Formalized by `MetaMathlibExt.smoothMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist).
 
 ## Capacity distribution of restricted smooth words with a given last letter
 
@@ -265,7 +265,7 @@ capacity of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of `r*(n, i; q)`.
 
-Formalized by `MetaMathlibExt.restrictedSmoothCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-capacity-dist).
+Formalized by `MetaMathlibExt.restrictedSmoothCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-capacity-dist).
 
 ## Capacity distribution of restricted smooth words ending in their largest letter
 
@@ -279,7 +279,7 @@ at most $i$, and $\mathrm{cap}(w)$ is the capacity of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of `s*(n, i; q)`.
 
-Formalized by `MetaMathlibExt.restrictedSmoothMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-max-end-capacity-dist).
+Formalized by `MetaMathlibExt.restrictedSmoothMaxEndCapacityDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-max-end-capacity-dist).
 
 ## Words with unit-bounded rises ending in their maximum
 
@@ -292,7 +292,7 @@ is $j$. It is empty when $m = 0$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `𝒞_{m,j}`.
 
-Formalized by `MetaMathlibExt.catalanGrowthWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-words).
+Formalized by `MetaMathlibExt.catalanGrowthWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-words).
 
 ## Area distribution of words with unit-bounded rises, by first letter
 
@@ -307,7 +307,7 @@ words $w$, where $\mathrm{area}(w)$ is the sum of the letters of $w$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `c(m, j, ℓ; q)`.
 
-Formalized by `MetaMathlibExt.catalanGrowthAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist).
+Formalized by `MetaMathlibExt.catalanGrowthAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist).
 
 ## Area distribution of smooth words from $j$ to $j$
 
@@ -321,7 +321,7 @@ $t(m, j; q) = \sum_{w \in \mathcal{T}_{m,j}} q^{w_1 + \cdots + w_m}$ in $\mathbb
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 3, definition of `𝒯_{m,j}` and `t(m, j; q)`.
 
-Formalized by `MetaMathlibExt.smoothPlateauAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist).
+Formalized by `MetaMathlibExt.smoothPlateauAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist).
 
 ## Capacity distribution at $q = 1$
 
@@ -333,7 +333,7 @@ number of words in $S$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `a(n, i; q)`.
 
-Formalized by `MetaMathlibExt.capacityDist_eval_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-dist-eval-one).
+Formalized by `MetaMathlibExt.capacityDist_eval_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-dist-eval-one).
 
 ## Area distribution at $q = 1$
 
@@ -345,7 +345,7 @@ number of words in $S$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 2, definition of `c(m, j, ℓ; q)`.
 
-Formalized by `MetaMathlibExt.areaDist_eval_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#area-dist-eval-one).
+Formalized by `MetaMathlibExt.areaDist_eval_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#area-dist-eval-one).
 
 ## Catalan and smooth words of length four
 
@@ -357,7 +357,7 @@ Catalan number $C_4$, $13 = C_4 - 1$, and $7$ is the central trinomial coefficie
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 1, examples.
 
-Formalized by `MetaMathlibExt.card_catalanWords_four_smoothWords_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#card-catalan-words-four-smooth-words-fou).
+Formalized by `MetaMathlibExt.card_catalanWords_four_smoothWords_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#card-catalan-words-four-smooth-words-fou).
 
 ## Recurrence for the area distribution by first letter
 
@@ -375,7 +375,7 @@ and $c(1, j, \ell; q)$ equals $q^{\ell}$ if $j = \ell$ and $0$ otherwise.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.catalanGrowthAreaDist_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist-succ).
+Stated but not proved: `MetaMathlibExt.catalanGrowthAreaDist_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist-succ).
 
 ## Denominator polynomials for the area of words with unit-bounded rises
 
@@ -388,7 +388,7 @@ $d_j = (1 - xq^j)\, d_{j-1} - x^2 q^{2j-1} d_{j-3}$ for $j \ge 3$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 3, recurrence (4).
 
-Formalized by `MetaMathlibExt.catalanGrowthDen`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-den).
+Formalized by `MetaMathlibExt.catalanGrowthDen`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-den).
 
 ## The area denominators have constant term one
 
@@ -402,7 +402,7 @@ Consequently every $d_j(x; q)$ is invertible as a power series in $x$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 3, recurrence (4).
 
-Formalized by `MetaMathlibExt.constantCoeff_catalanGrowthDen`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-catalan-growth-den).
+Formalized by `MetaMathlibExt.constantCoeff_catalanGrowthDen`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-catalan-growth-den).
 
 ## Area generating function of words with unit-bounded rises, by first letter
 
@@ -425,7 +425,7 @@ The term for $n = 0$ is zero, since there are no words of length $0$ that end wi
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.catalanGrowthAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist-gen-fun).
+Stated but not proved: `MetaMathlibExt.catalanGrowthAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-area-dist-gen-fun).
 
 ## Area generating function of words with unit-bounded rises ending in their maximum
 
@@ -445,7 +445,7 @@ $$\sum_{n \ge 0} c(n, j; q)\, x^n =
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.catalanGrowthWords_areaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-words-area-dist-gen-fun).
+Stated but not proved: `MetaMathlibExt.catalanGrowthWords_areaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-growth-words-area-dist-gen-fun).
 
 ## Dilating and inverting a power series
 
@@ -458,7 +458,7 @@ $\sum_{n \ge 0} q^{jn} f_n(q^{-1}) x^n$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 4.
 
-Formalized by `MetaMathlibExt.dilateInvertSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#dilate-invert-series).
+Formalized by `MetaMathlibExt.dilateInvertSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#dilate-invert-series).
 
 ## Dilating and inverting a power series preserves constant term one
 
@@ -470,7 +470,7 @@ the power series $f(q^j x; 1/q)$ in $x$ over $\mathbb{Z}[q, q^{-1}]$ also has co
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 4.
 
-Formalized by `MetaMathlibExt.constantCoeff_dilateInvertSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-dilate-invert-series).
+Formalized by `MetaMathlibExt.constantCoeff_dilateInvertSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-dilate-invert-series).
 
 ## Generating function for the capacity of Catalan words ending in their largest letter
 
@@ -492,7 +492,7 @@ d_{m-1}(q^j x; 1/q)\Bigr)^{-1}.$$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.catalanMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist-gen-fun).
+Stated but not proved: `MetaMathlibExt.catalanMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist-gen-fun).
 
 ## Recurrence for the capacity distribution on Catalan words
 
@@ -514,7 +514,7 @@ where $c(m, i-1; 1/q)$ is the image of $c(m, i-1)$ under $q \mapsto q^{-1}$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.catalanCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-recurrence).
+Stated but not proved: `MetaMathlibExt.catalanCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-recurrence).
 
 ## Recurrence for the capacity of Catalan words ending in their largest letter
 
@@ -533,7 +533,7 @@ $$b(n, i; q) = b(n-1, i; q) + b(n-1, i-1; q) +
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.catalanMaxEndCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist-recurrence).
+Stated but not proved: `MetaMathlibExt.catalanMaxEndCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-max-end-capacity-dist-recurrence).
 
 ## Boundary values of the capacity distributions on Catalan words
 
@@ -547,7 +547,7 @@ $a(n, n) = b(n, 1) = b(n, n) = 1$, and if $n \ge 2$ then $a(n, 1) = a(n - 1)$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.catalanCapacityDist_boundary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-boundary).
+Stated but not proved: `MetaMathlibExt.catalanCapacityDist_boundary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-boundary).
 
 ## Generating function of Catalan words by last letter
 
@@ -560,7 +560,7 @@ integer coefficients, $\sum_{n \ge 0} a_{n,i} x^n = x^i C(x)^i$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.catalanWordsEndingIn_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-ending-in-gen-fun).
+Stated but not proved: `MetaMathlibExt.catalanWordsEndingIn_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-ending-in-gen-fun).
 
 ## Maximum capacity of Catalan words
 
@@ -574,7 +574,7 @@ case $m = 0$ is included.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.catalanWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-nat-degree).
+Stated but not proved: `MetaMathlibExt.catalanWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-nat-degree).
 
 ## Number of Catalan words of maximum capacity
 
@@ -588,7 +588,7 @@ $3 \mid n$, and exactly one does otherwise.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.catalanWords_capacity_leadingCoeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-leading-coeff).
+Stated but not proved: `MetaMathlibExt.catalanWords_capacity_leadingCoeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-leading-coeff).
 
 ## Subleading coefficient of the capacity distribution of Catalan words
 
@@ -602,7 +602,7 @@ $d_n = 2m$ if $n = 3m$, $d_n = m + 1$ if $n = 3m + 1$ and $d_n = m + 2$ if $n = 
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.catalanWords_capacity_subleading_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-subleading-coeff).
+Stated but not proved: `MetaMathlibExt.catalanWords_capacity_subleading_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-capacity-subleading-coeff).
 
 ## Zero-capacity Catalan words with a given last letter
 
@@ -620,7 +620,7 @@ where $F_k$ is the $k$-th Fibonacci number ($F_1 = F_2 = 1$) and $F_{-1} = 1$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.catalanCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-eval-zero).
+Stated but not proved: `MetaMathlibExt.catalanCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-capacity-dist-eval-zero).
 
 ## Catalan words of capacity zero
 
@@ -638,7 +638,7 @@ The value $1$ for $n = 1$ is $F_{2n-3}$ under the convention $F_{-1} = 1$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.catalanWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-zero-capacity-count).
+Stated but not proved: `MetaMathlibExt.catalanWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#catalan-words-zero-capacity-count).
 
 ## Recurrence for the area distribution of smooth words from $j$ to $j$
 
@@ -654,7 +654,7 @@ and for every $k \ge 1$, $t(k, 1; q) = t(1, k; q) = q^k$ (Mansour and Shattuck's
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.smoothPlateauAreaDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist-recurrence).
+Stated but not proved: `MetaMathlibExt.smoothPlateauAreaDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist-recurrence).
 
 ## Area polynomial of restricted smooth words between two top letters
 
@@ -669,7 +669,7 @@ $\mathbb{Z}[q]$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Section 4, definition of `t*(m, j; q)`.
 
-Formalized by `MetaMathlibExt.restrictedSmoothPlateauAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-plateau-area-dist).
+Formalized by `MetaMathlibExt.restrictedSmoothPlateauAreaDist`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-plateau-area-dist).
 
 ## Continued-fraction denominators
 
@@ -684,7 +684,7 @@ Lemma 8 takes $B = 1 - qx$ and Lemma 10 takes $B = 1$; the value $K_0$ is unused
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemmas 8 and 10.
 
-Formalized by `MetaMathlibExt.capacityContinuedFractionDen`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-continued-fraction-den).
+Formalized by `MetaMathlibExt.capacityContinuedFractionDen`, a definition declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#capacity-continued-fraction-den).
 
 ## Continued-fraction denominators have constant term one
 
@@ -700,7 +700,7 @@ used to define $K_k$ are genuine inverses.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemmas 8 and 10.
 
-Formalized by `MetaMathlibExt.constantCoeff_capacityContinuedFractionDen`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-capacity-continued-fracti).
+Formalized by `MetaMathlibExt.constantCoeff_capacityContinuedFractionDen`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#constant-coeff-capacity-continued-fracti).
 
 ## Continued fraction for smooth words from $j$ to $j$ by area
 
@@ -720,7 +720,7 @@ and for $j = 1$ it is $qx / (1 - qx)$. The term $m = 0$ vanishes.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.smoothPlateauAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist-gen-fun).
+Stated but not proved: `MetaMathlibExt.smoothPlateauAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-plateau-area-dist-gen-fun).
 
 ## Continued fraction for the area series of restricted smooth words
 
@@ -740,7 +740,7 @@ For example, $T^*_1 = qx$ and $T^*_2 = q^2 x / (1 - q^2 x - q^3 x^2)$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothPlateauAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-plateau-area-dist-gen).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothPlateauAreaDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-plateau-area-dist-gen).
 
 ## Recurrence for the capacity distribution of smooth words by last letter
 
@@ -761,7 +761,7 @@ $$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.smoothCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 568](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L568). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-recurrence).
+Stated but not proved: `MetaMathlibExt.smoothCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 568](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L568). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-recurrence).
 
 ## Recurrence for the capacity distribution of smooth words ending in their largest letter
 
@@ -780,7 +780,7 @@ $$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.smoothMaxEndCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist-recurrence).
+Stated but not proved: `MetaMathlibExt.smoothMaxEndCapacityDist_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist-recurrence).
 
 ## Boundary values of the capacity distributions of smooth words
 
@@ -794,7 +794,7 @@ $r(n, 1; q) = r(n - 1, 1; q) + r(n - 1, 2; q)$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.smoothCapacityDist_boundary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-boundary).
+Stated but not proved: `MetaMathlibExt.smoothCapacityDist_boundary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-boundary).
 
 ## Generating function of smooth words ending in their largest letter
 
@@ -816,7 +816,7 @@ The factor for $j = 0$ is $(1 - x)^{-1}$, since $t(m, 0; q) = 0$ for every $m$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.smoothMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist-gen-fun).
+Stated but not proved: `MetaMathlibExt.smoothMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-max-end-capacity-dist-gen-fun).
 
 ## Generating function for restricted smooth words ending in their largest letter
 
@@ -840,7 +840,7 @@ where each denominator has constant term $1$ and so is invertible.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-max-end-capacity-dist-2).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothMaxEndCapacityDist_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-max-end-capacity-dist-2).
 
 ## Maximum capacity of smooth words
 
@@ -856,7 +856,7 @@ $4m + p$ (Mansour and Shattuck's Theorem 5).
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.smoothWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words-capacity-nat-degree).
+Stated but not proved: `MetaMathlibExt.smoothWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words-capacity-nat-degree).
 
 ## Zero-capacity smooth words with a given last letter
 
@@ -868,7 +868,7 @@ capacity distribution $r(n, i; q)$, equals $\sum_{j=i-2}^{n-2} \binom{n-2}{j}$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.smoothCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-eval-zero).
+Stated but not proved: `MetaMathlibExt.smoothCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-capacity-dist-eval-zero).
 
 ## Number of smooth words of capacity zero
 
@@ -885,7 +885,7 @@ so that case is stated separately.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.smoothWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words-zero-capacity-count).
+Stated but not proved: `MetaMathlibExt.smoothWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#smooth-words-zero-capacity-count).
 
 ## Maximum capacity of restricted smooth words
 
@@ -899,7 +899,7 @@ $5 \le p \le 7$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-capacity-nat-deg).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_capacity_natDegree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-capacity-nat-deg).
 
 ## Number of restricted smooth words of maximum capacity
 
@@ -915,7 +915,7 @@ $p = 5$, $c_n = m + 2$ for $p = 6$ and $c_n = 1$ for $p \in \{1, 2, 4, 7\}$.
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_capacity_leadingCoeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-capacity-leading).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_capacity_leadingCoeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-capacity-leading).
 
 ## Zero-capacity restricted smooth words with a given last letter
 
@@ -930,7 +930,7 @@ $$r^*(n, i; 0) = \sum_{j=i-3}^{n-3} \binom{n-3}{j}.$$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-capacity-dist-eval-zer).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothCapacityDist_eval_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-capacity-dist-eval-zer).
 
 ## Zero-capacity restricted smooth words
 
@@ -946,7 +946,7 @@ $n \le 2$, $r^{\ast}(3) = 3$ and $r^{\ast}(n) = (n + 2)\, 2^{n-4}$ for $n \ge 4$
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-zero-capacity-co).
+Stated but not proved: `MetaMathlibExt.restrictedSmoothWords_zero_capacity_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#restricted-smooth-words-zero-capacity-co).
 
 ## Restricted smooth words are counted by grand Motzkin numbers
 
@@ -958,7 +958,7 @@ the central trinomial coefficient: the coefficient of $X^{n-1}$ in $(1 + X + X^2
 
 - Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSmoothWords` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#card-restricted-smooth-words).
+Stated but not proved: `MetaMathlibExt.card_restrictedSmoothWords` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CatalanWordsCapacityWanted.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html#card-restricted-smooth-words).
 
 ## Depends on
 
@@ -967,4 +967,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Capacity of Catalan words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/capacity-of-catalan-words)

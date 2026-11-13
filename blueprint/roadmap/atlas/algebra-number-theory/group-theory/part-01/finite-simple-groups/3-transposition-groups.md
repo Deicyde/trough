@@ -7,7 +7,7 @@ statement: formalized
 
 # 3-transposition groups
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html).
 
 ## Set of 3-transpositions
 
@@ -16,7 +16,7 @@ is closed under conjugation ($g d g^{-1} \in D$ for all $g \in G$ and $d \in D$)
 is an involution ($d \ne 1$ and $d^2 = 1$), and for all $d, e \in D$ the product $de$ has order
 at most $3$, that is, $de = 1$, $(de)^2 = 1$ or $(de)^3 = 1$.
 
-Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.IsThreeTranspositionSet`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#is-three-transposition-set).
+Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.IsThreeTranspositionSet`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#is-three-transposition-set).
 
 ## Locally finite group, via finite subsets
 
@@ -24,7 +24,7 @@ A group $G$ is locally finite when every finite
 subset $S \subseteq G$ generates a finite subgroup; equivalently, every finitely generated subgroup
 of $G$ is finite.
 
-Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.IsLocallyFinite`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#is-locally-finite).
+Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.IsLocallyFinite`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#is-locally-finite).
 
 ## Sozutov's question on 3-transposition groups (Kourovka 12.76)
 
@@ -32,7 +32,7 @@ The statement that for
 every group $G$ and every set $D$ of 3-transpositions of $G$ that generates $G$, the group $G$ is
 locally finite.
 
-Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.threeTranspositionGroupLocallyFinite`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#three-transposition-group-locally-finite).
+Formalized by `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.threeTranspositionGroupLocallyFinite`, a definition declared in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#three-transposition-group-locally-finite).
 
 ## Groups generated by 3-transpositions are locally finite
 
@@ -47,7 +47,7 @@ The Kourovka Archive answers 12.76 "Yes, it is" (H. Cuypers and J. I. Hall, 1992
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 12.76 (A. I. Sozutov); resolution: H. Cuypers and J. I. Hall, in: Groups, combinatorics and geometry (Durham, 1990), London Math. Soc. Lecture Note Ser. 165, Cambridge Univ. Press, 1992, 121-138, Kourovka Archive, Problem 12.76: Yes, it is.
 
-Stated but not proved: `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.threeTranspositionGroupLocallyFinite_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#three-transposition-group-locally-finite-2).
+Stated but not proved: `MathlibExt.GroupTheory.ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.threeTranspositionGroupLocallyFinite_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeTranspositionLocallyFiniteKourovka12Problem76Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html#three-transposition-group-locally-finite-2).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: 3-transposition groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-simple-groups/3-transposition-groups)

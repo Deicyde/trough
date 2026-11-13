@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.7 The desingularization lemma
 
-Section 16.7 of the Stacks Project, [Tag 07CQ](https://stacks.math.columbia.edu/tag/07CQ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.7 of the Stacks Project, [Tag 07CQ](https://stacks.math.columbia.edu/tag/07CQ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07CR, a lemma
 
 [Tag 07CR](https://stacks.math.columbia.edu/tag/07CR) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/DesingularizationLemma.lean, line 956](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/DesingularizationLemma.lean#L956).
+**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/DesingularizationLemma.lean, line 956](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/DesingularizationLemma.lean#L956).
 
 > **The desingularization lemma.** Let `R` be Noetherian, let `Λ` be an `R`-algebra in which
 > the annihilators of `π` and of `π²` agree, and let `A` be an `R`-algebra of finite presentation
@@ -47,7 +47,7 @@ theorem exists_finitePresentation_factorization_singularIdeal
 
 [Tag 07CT](https://stacks.math.columbia.edu/tag/07CT) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/CommonDesingularization.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/CommonDesingularization.lean#L200).
+**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/CommonDesingularization.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/CommonDesingularization.lean#L200).
 
 > **Stacks 07CT.** A strictly standard element and a factorization modulo its fourth power
 > yield a common finitely presented factorization `A → B ← D` over `Λ` with
@@ -83,7 +83,7 @@ theorem exists_finitePresentation_factorization_singularIdeal_le
 
 [Tag 07F0](https://stacks.math.columbia.edu/tag/07F0) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_finitePresentation_factorization_smoothAway_singularIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/DesingularizationLifting.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/DesingularizationLifting.lean#L146).
+**`Stacks.Smoothing.exists_finitePresentation_factorization_smoothAway_singularIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/DesingularizationLifting.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/DesingularizationLifting.lean#L146).
 
 > **Stacks 07F0.** Let `R` be Noetherian, let `Λ` be an `R`-algebra and let `π ∈ R` be an
 > element with `Ann_R(π) = Ann_R(π²)` and `Ann_Λ(π) = Ann_Λ(π²)`. Let `A → Λ` be an `R`-algebra
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.7, Tag 07CQ](https://stacks.math.columbia.edu/tag/07CQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

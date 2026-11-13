@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.13 Colimits of quasi-coherent modules
 
-Section 78.13 of the Stacks Project, [Tag 0GPN](https://stacks.math.columbia.edu/tag/0GPN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.13 of the Stacks Project, [Tag 0GPN](https://stacks.math.columbia.edu/tag/0GPN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GPP, a lemma
 
 [Tag 0GPP](https://stacks.math.columbia.edu/tag/0GPP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule.forgetAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofree.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofree.lean#L507).
+**`AlgebraicGeometry.Space.QuasicoherentModule.forgetAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofree.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofree.lean#L507).
 
 > **Stacks 0GPP.**  Let `(U, R, s, t, c)` be a groupoid in algebraic spaces with `s` (and hence
 > `t = s ∘ i`) flat, quasi-compact and quasi-separated.  For a quasi-coherent `𝒪_U`-module `𝒢` the
@@ -31,7 +31,7 @@ def forgetAdjunction : forgetQuasicoherent G ⊣ cofree G hsflat hsqc hsqs
 
 [Tag 0GPQ](https://stacks.math.columbia.edu/tag/0GPQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule.forgetAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofreeUnit.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofreeUnit.lean#L58).
+**`AlgebraicGeometry.Space.QuasicoherentModule.forgetAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofreeUnit.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentCofreeUnit.lean#L58).
 
 > **Stacks 0GPQ.**  Let `(U, R, s, t, c)` be a groupoid in algebraic spaces with `s` flat,
 > quasi-compact and quasi-separated (then so is `t = s ∘ i`), and let
@@ -55,7 +55,7 @@ theorem forgetAdjunction_unit_app (M : QuasicoherentModule B S hS G) :
 
 [Tag 0GPR](https://stacks.math.columbia.edu/tag/0GPR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_intersectionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentIntersectionPushforwardCoherence.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentIntersectionPushforwardCoherence.lean#L149).
+**`AlgebraicGeometry.Space.isCoherent_intersectionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentIntersectionPushforwardCoherence.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentIntersectionPushforwardCoherence.lean#L149).
 
 > **Stacks 0GPR.**  Let `f : Y ⟶ X` be a morphism of algebraic spaces over a scheme `S`, let
 > `F` be a quasi-coherent `𝒪_X`-module, let `G` be an `𝒪_Y`-module and let `φ : G ⟶ f^*F` be a map
@@ -88,7 +88,7 @@ theorem isCoherent_intersectionPushforward (f : Y ⟶ X)
 
 [Tag 0GPS](https://stacks.math.columbia.edu/tag/0GPS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule.exists_filtered_diagram_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/CoherentColimit.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/CoherentColimit.lean#L625).
+**`AlgebraicGeometry.Space.QuasicoherentModule.exists_filtered_diagram_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/CoherentColimit.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/CoherentColimit.lean#L669).
 
 > **Stacks 0GPS.**  Let `(U, R, s, t, c)` be a groupoid in algebraic spaces over `B` such that
 > `U` and `R` are Noetherian and `s` and `t` are flat, quasi-compact and quasi-separated.  Then every
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.13, Tag 0GPN](https://stacks.math.columbia.edu/tag/0GPN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

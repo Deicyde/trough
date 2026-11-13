@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.34 Characterizing pseudo-coherent complexes, II
 
-Section 36.34 of the Stacks Project, [Tag 0CSE](https://stacks.math.columbia.edu/tag/0CSE). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.34 of the Stacks Project, [Tag 0CSE](https://stacks.math.columbia.edu/tag/0CSE). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CSF, a lemma
 
 [Tag 0CSF](https://stacks.math.columbia.edu/tag/0CSF) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.exists_boundedAboveFiniteFree_of_isPseudoCoherent_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RestrictScalars/FiniteFreeAlgebra.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RestrictScalars/FiniteFreeAlgebra.lean#L104).
+**`StacksDraft.PseudoCoherence.exists_boundedAboveFiniteFree_of_isPseudoCoherent_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RestrictScalars/FiniteFreeAlgebra.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RestrictScalars/FiniteFreeAlgebra.lean#L104).
 
 > **Stacks 0CSF.** If a derived right `R`-module is pseudo-coherent over `A`, where `R` is a
 > possibly noncommutative `A`-algebra which is finite free over `A`, then it is represented by a
@@ -36,7 +36,7 @@ theorem exists_boundedAboveFiniteFree_of_isPseudoCoherent_restrictScalars
 
 [Tag 0CSG](https://stacks.math.columbia.edu/tag/0CSG) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpacePseudoCoherent.isPseudoCoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProjectiveSpacePseudoCoherent/Equivalences.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ProjectiveSpacePseudoCoherent/Equivalences.lean#L61).
+**`AlgebraicGeometry.ProjectiveSpacePseudoCoherent.isPseudoCoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProjectiveSpacePseudoCoherent/Equivalences.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProjectiveSpacePseudoCoherent/Equivalences.lean#L61).
 
 > **[Stacks, Tag 0CSG].** Let `A` be a ring, `n ≥ 0` and `K ∈ D_QCoh(𝒪_{ℙⁿ_A})`. The following
 > are equivalent:
@@ -89,7 +89,7 @@ theorem isPseudoCoherent_tfae :
 
 [Tag 0CSH](https://stacks.math.columbia.edu/tag/0CSH) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherent_derivedGlobalSectionsOver_tensor_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/DerivedSectionsTensorPseudoCoherence.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/DerivedSectionsTensorPseudoCoherence.lean#L370).
+**`AlgebraicGeometry.isPseudoCoherent_derivedGlobalSectionsOver_tensor_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/DerivedSectionsTensorPseudoCoherence.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/DerivedSectionsTensorPseudoCoherence.lean#L370).
 
 > **[Stacks, Tag 0CSH].** Let `A` be a ring, let `X` be a quasi-compact and quasi-separated
 > scheme over `A` (the structure morphism being `f : X ⟶ Spec A`), and let `K ∈ D^-_QCoh(𝒪_X)`,
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.34, Tag 0CSE](https://stacks.math.columbia.edu/tag/0CSE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

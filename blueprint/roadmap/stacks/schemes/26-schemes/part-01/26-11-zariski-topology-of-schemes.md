@@ -8,7 +8,7 @@ proof: formalized
 
 # 26.11 Zariski topology of schemes
 
-Section 26.11 of the Stacks Project, [Tag 01IR](https://stacks.math.columbia.edu/tag/01IR). 8 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 26.11 of the Stacks Project, [Tag 01IR](https://stacks.math.columbia.edu/tag/01IR). 8 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01IS, a lemma
 
@@ -16,8 +16,8 @@ Section 26.11 of the Stacks Project, [Tag 01IR](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.instQuasiSoberCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instQuasiSoberCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L170) (StacksFrontier): “existence of generic points of irreducible closed subsets (quasi-sober)”. References: EGA I (2.1.5), “partial”; SGA 4 VIII (7.9.3), “partial”.
-- [`AlgebraicGeometry.instT0SpaceCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instT0SpaceCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L172) (StacksFrontier): “uniqueness of generic points (T0)”. References: EGA I (1.1.8), “more general”; EGA I (2.1.4).
+- [`AlgebraicGeometry.instQuasiSoberCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instQuasiSoberCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L170) (StacksFrontier): “existence of generic points of irreducible closed subsets (quasi-sober)”. References: EGA I (2.1.5), “partial”; SGA 4 VIII (7.9.3), “partial”.
+- [`AlgebraicGeometry.instT0SpaceCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instT0SpaceCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L172) (StacksFrontier): “uniqueness of generic points (T0)”. References: EGA I (1.1.8), “more general”; EGA I (2.1.4).
 
 ## Tag 01IT, a lemma
 
@@ -25,7 +25,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.isBasis_affineOpens`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.isBasis_affineOpens#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L175) (StacksFrontier). References: EGA I (2.1.3); EGA I (10.4.3), “special case”.
+- [`AlgebraicGeometry.Scheme.isBasis_affineOpens`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.isBasis_affineOpens#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L175) (StacksFrontier). References: EGA I (2.1.3); EGA I (10.4.3), “special case”.
 
 ## Tag 01IV, a lemma
 
@@ -33,8 +33,8 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.instPrespectralSpaceCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instPrespectralSpaceCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L177) (StacksFrontier): “the underlying space of a scheme is prespectral”. References: SGA 4 VI (2.4.7), “partial”.
-- [`instLocallyCompactSpaceOfPrespectralSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instLocallyCompactSpaceOfPrespectralSpace#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L179) (StacksFrontier): “a prespectral space is locally quasi-compact”.
+- [`AlgebraicGeometry.instPrespectralSpaceCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instPrespectralSpaceCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L177) (StacksFrontier): “the underlying space of a scheme is prespectral”. References: SGA 4 VI (2.4.7), “partial”.
+- [`instLocallyCompactSpaceOfPrespectralSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instLocallyCompactSpaceOfPrespectralSpace#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L179) (StacksFrontier): “a prespectral space is locally quasi-compact”.
 
 ## Tag 01IW, a lemma
 
@@ -42,13 +42,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.exists_basicOpen_le_affine_inter`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.exists_basicOpen_le_affine_inter#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardOpenTwoAffines.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardOpenTwoAffines.lean#L22) (StacksFrontier): “the common standard open is `X.basicOpen f = X.basicOpen g`, affine as a standard open of the affine open `U`”.
+- [`AlgebraicGeometry.exists_basicOpen_le_affine_inter`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.exists_basicOpen_le_affine_inter#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardOpenTwoAffines.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardOpenTwoAffines.lean#L22) (StacksFrontier): “the common standard open is `X.basicOpen f = X.basicOpen g`, affine as a standard open of the affine open `U`”.
 
 ## Tag 01IX, a lemma
 
 [Tag 01IX](https://stacks.math.columbia.edu/tag/01IX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.exists_isStandardOpenCover_basicOpen_eq_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardRefinement.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardRefinement.lean#L44).
+**`AlgebraicGeometry.Scheme.exists_isStandardOpenCover_basicOpen_eq_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardRefinement.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Affine/StandardRefinement.lean#L44).
 
 > Every affine open has a finite standard open cover each of whose members is also a standard
 > open in a member of a given affine open cover of the ambient scheme.
@@ -69,7 +69,7 @@ theorem exists_isStandardOpenCover_basicOpen_eq_of_iSup_eq_top
 
 [Tag 0F1A](https://stacks.math.columbia.edu/tag/0F1A) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.isRestriction_iff_isSheafOnAffineBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean#L618). The attribute's comment: “equivalence of (1) and (2)”. References: EGA 0 (3.2.2), “affine basis of a scheme”.
+**`AlgebraicGeometry.Scheme.isRestriction_iff_isSheafOnAffineBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean#L618). The attribute's comment: “equivalence of (1) and (2)”. References: EGA 0 (3.2.2), “affine basis of a scheme”.
 
 > A presheaf on the affine opens is (up to isomorphism) the restriction of a sheaf
 > if and only if it is a sheaf on the affine-open basis.
@@ -82,7 +82,7 @@ theorem isRestriction_iff_isSheafOnAffineBasis (X : Scheme.{u})
       IsSheafOnBasis X.affineOpens F
 ```
 
-**`AlgebraicGeometry.Scheme.isSheafOnAffineBasis_iff_standardPairs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean#L642). The attribute's comment: “equivalence of (2) and (3)”.
+**`AlgebraicGeometry.Scheme.isSheafOnAffineBasis_iff_standardPairs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean, line 642](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Affine/SheafOnBasis.lean#L642). The attribute's comment: “equivalence of (2) and (3)”.
 
 > A presheaf on the affine-open basis is a sheaf exactly when its section set on the
 > empty open is a singleton and compatible sections glue uniquely across every standard
@@ -120,13 +120,13 @@ theorem isSheafOnAffineBasis_iff_standardPairs (X : Scheme.{u})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.instIsAffineOfFiniteOfDiscreteTopologyCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsAffineOfFiniteOfDiscreteTopologyCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L123) (StacksFrontier): “the statement”.
+- [`AlgebraicGeometry.instIsAffineOfFiniteOfDiscreteTopologyCarrierCarrierCommRingCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsAffineOfFiniteOfDiscreteTopologyCarrierCarrierCommRingCat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L123) (StacksFrontier): “the statement”.
 
 ## Tag 01IY, an example
 
 [Tag 01IY](https://stacks.math.columbia.edu/tag/01IY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_valuationRing_with_spectrum_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L495). The attribute's comment: “valuation ring with the specified prime spectrum”.
+**`AlgebraicGeometry.exists_valuationRing_with_spectrum_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L495). The attribute's comment: “valuation ring with the specified prime spectrum”.
 
 > There is a valuation ring whose spectrum is a countable strictly increasing chain
 > of prime ideals, with one further maximal ideal above all of them.
@@ -147,7 +147,7 @@ theorem exists_valuationRing_with_spectrum_chain :
                   (q = IsLocalRing.closedPoint R) ∨ (∃ n, q = p n))
 ```
 
-**`AlgebraicGeometry.puncturedSpectrum_no_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L537). The attribute's comment: “the punctured spectrum has no closed points”.
+**`AlgebraicGeometry.puncturedSpectrum_no_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L537). The attribute's comment: “the punctured spectrum has no closed points”.
 
 > Removing the unique closed point from a local spectrum with the indicated
 > unbounded chain of other primes gives an open subscheme without closed points.
@@ -166,7 +166,7 @@ theorem puncturedSpectrum_no_closed_points
       ¬ IsClosed ({x} : Set _)
 ```
 
-**`AlgebraicGeometry.exists_scheme_without_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L565). The attribute's comment: “existence of a scheme without closed points”.
+**`AlgebraicGeometry.exists_scheme_without_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/NoClosedPoints.lean#L565). The attribute's comment: “existence of a scheme without closed points”.
 
 > A nonempty scheme may have no closed points.
 
@@ -182,4 +182,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 26.11, Tag 01IR](https://stacks.math.columbia.edu/tag/01IR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

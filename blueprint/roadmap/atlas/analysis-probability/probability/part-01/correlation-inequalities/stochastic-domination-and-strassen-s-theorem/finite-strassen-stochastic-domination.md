@@ -8,14 +8,14 @@ proof: formalized
 
 # Finite Strassen stochastic domination
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html).
 
 ## Finite upper sets
 
 A finite subset $U$ of a preordered set $\alpha$ is an upper set (is
 upward closed) if for all $x, y \in \alpha$ with $x \in U$ and $x \le y$, also $y \in U$.
 
-Formalized by `MathlibExt.Probability.StrassenCouplingWanted.IsUpperSet`, a definition declared in [MathlibExt/Probability/StrassenCoupling.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrassenCoupling.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#is-upper-set).
+Formalized by `MathlibExt.Probability.StrassenCouplingWanted.IsUpperSet`, a definition declared in [MathlibExt/Probability/StrassenCoupling.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrassenCoupling.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#is-upper-set).
 
 ## Strassen's theorem on a finite poset, equal-mass form
 
@@ -28,7 +28,7 @@ for all $x, y \in \alpha$, $\sum_{y \in \alpha} \pi(x, y) = p(x)$ for every $x \
 $\sum_{x \in \alpha} \pi(x, y) = q(y)$ for every $y \in \alpha$, and $\pi(x, y) = 0$ whenever
 $x \not\le y$.
 
-Formalized by `MathlibExt.Probability.StrassenCouplingWanted.forall_isUpperSet_sum_le_iff_exists_coupling`, a theorem declared in [MathlibExt/Probability/StrassenCoupling.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrassenCoupling.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#forall-is-upper-set-sum-le-iff-exists-co).
+Formalized by `MathlibExt.Probability.StrassenCouplingWanted.forall_isUpperSet_sum_le_iff_exists_coupling`, a theorem declared in [MathlibExt/Probability/StrassenCoupling.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrassenCoupling.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#forall-is-upper-set-sum-le-iff-exists-co).
 
 ## Strassen's theorem on a finite poset
 
@@ -45,7 +45,7 @@ $x \not\le y$.
 
 - V. Strassen, "The Existence of Probability Measures with Given Marginals", Ann. Math. Statist. 36 (1965), 423-439, DOI 10.1214/aoms/1177700153.
 
-Formalized by `MathlibExt.Probability.StrassenCouplingWanted.strassen_coupling_finite_poset`, a theorem declared in [MathlibExt/Probability/StrassenCoupling.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrassenCoupling.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#strassen-coupling-finite-poset).
+Formalized by `MathlibExt.Probability.StrassenCouplingWanted.strassen_coupling_finite_poset`, a theorem declared in [MathlibExt/Probability/StrassenCoupling.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrassenCoupling.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html#strassen-coupling-finite-poset).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finite Strassen stochastic domination](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/finite-strassen-stochastic-domination)

@@ -1,6 +1,6 @@
 # 63 More Étale Cohomology
 
-Chapter 63 of the Stacks Project, *More Étale Cohomology*, [Tag 0F4U](https://stacks.math.columbia.edu/tag/0F4U): the 15 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 95 tags are carried by 299 declarations of the repository (all in StacksFrontier) and 14 registered declarations.
+Chapter 63 of the Stacks Project, *More Étale Cohomology*, [Tag 0F4U](https://stacks.math.columbia.edu/tag/0F4U): the 15 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 95 tags are carried by 300 declarations of the repository (all in StacksFrontier) and 14 registered declarations.
 
 ## [63.2 Growing sections to 63.5 Weightings and trace maps…](part-01/README.md)
 

@@ -21,7 +21,7 @@ statement: formalized
 >     "Schmidt's game, fractals, and numbers normal to no base."
 >     Mathematical Research Letters 17.2 (2010): 307-321.
 
-*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 4 solved.
 
@@ -38,7 +38,7 @@ theorem problem_10_53 :
       ∃ b : ℕ, 2 ≤ b ∧ baseEntropy b ξ < (Real.log b : EReal)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 50](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L50).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 50](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L50).
 
 ## `Bugeaud53.problem_10_53.variants.all_bases`
 
@@ -54,7 +54,7 @@ theorem problem_10_53.variants.all_bases :
       ∀ b : ℕ, 2 ≤ b → baseEntropy b ξ < (Real.log b : EReal)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L61).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L61).
 
 ## `Bugeaud53.problem_10_53.variants.uncountable`
 
@@ -70,7 +70,7 @@ theorem problem_10_53.variants.uncountable :
       ∀ b : ℕ, 2 ≤ b → baseEntropy b ξ < (Real.log b : EReal)}.Countable
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L72).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L72).
 
 ## `Bugeaud53.problem_10_53.variants.temur`
 
@@ -96,7 +96,7 @@ theorem problem_10_53.variants.temur :
       ∀ b : ℕ, 2 ≤ b → baseEntropy b ξ < (Real.log b : EReal)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L87).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean#L87).
 
 ## Depends on
 
@@ -104,5 +104,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean)
+- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_53.lean)
 - [Tem26](https://arxiv.org/abs/2609.16362)

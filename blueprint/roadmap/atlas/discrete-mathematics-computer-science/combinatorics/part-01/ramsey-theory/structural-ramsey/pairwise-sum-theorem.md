@@ -7,7 +7,7 @@ statement: formalized
 
 # Pairwise sum theorem
 
-8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html).
+8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html).
 
 ## Hindman's finite sums theorem
 
@@ -20,7 +20,7 @@ monochromatic.
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.exists_infinite_finiteSums_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-infinite-finite-sums-monochromati).
+Stated but not proved: `MetaMathlibExt.exists_infinite_finiteSums_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-infinite-finite-sums-monochromati).
 
 ## Pairwise sum theorem
 
@@ -32,7 +32,7 @@ is monochromatic.
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.exists_infinite_pairwiseSums_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-infinite-pairwise-sums-monochroma).
+Stated but not proved: `MetaMathlibExt.exists_infinite_pairwiseSums_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-infinite-pairwise-sums-monochroma).
 
 ## Disjoint infinite sets with monochromatic union and sumset
 
@@ -44,7 +44,7 @@ that $A \cup B \cup (A + B)$ is monochromatic, where $A + B = \{a + b : a \in A,
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.exists_disjoint_infinite_union_add_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-disjoint-infinite-union-add-monoc).
+Stated but not proved: `MetaMathlibExt.exists_disjoint_infinite_union_add_monochromatic` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-disjoint-infinite-union-add-monoc).
 
 ## Interleaved sequences and tensor products of ultrafilters
 
@@ -61,7 +61,7 @@ $X \in V_1 \otimes V_2$ and $X \in V_2 \otimes V_1$.
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.exists_interleaved_sequences_iff_mem_tensor` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-interleaved-sequences-iff-mem-ten).
+Stated but not proved: `MetaMathlibExt.exists_interleaved_sequences_iff_mem_tensor` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#exists-interleaved-sequences-iff-mem-ten).
 
 ## Partition regular families and ultrafilters
 
@@ -74,7 +74,7 @@ that every $A \in U$ contains some member of $\mathcal{F}$ ($U$ is a PR-witness 
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.1, quoting Hindman and Strauss, Theorem 5.7.
 
-Stated but not proved: `MetaMathlibExt.weaklyPartitionRegular_iff_exists_ultrafilter` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#weakly-partition-regular-iff-exists-ultr).
+Stated but not proved: `MetaMathlibExt.weaklyPartitionRegular_iff_exists_ultrafilter` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#weakly-partition-regular-iff-exists-ultr).
 
 ## PR-witnesses of the finite sums family
 
@@ -90,7 +90,7 @@ only if $U$ lies in the closure of the set of idempotents $\{V \in \beta\mathbb{
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.3, quoting Hindman and Strauss, Lemma 5.19.
 
-Stated but not proved: `MetaMathlibExt.finiteSums_witness_iff_mem_closure_idempotents` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#finite-sums-witness-iff-mem-closure-idem).
+Stated but not proved: `MetaMathlibExt.finiteSums_witness_iff_mem_closure_idempotents` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#finite-sums-witness-iff-mem-closure-idem).
 
 ## Ramsey's witnesses are the closure of tensor squares
 
@@ -108,7 +108,7 @@ ultrafilters $U$ on $\mathbb{N}$.
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.5.
 
-Stated but not proved: `MetaMathlibExt.ramseyWitness_iff_mem_closure_tensor_squares` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#ramsey-witness-iff-mem-closure-tensor-sq).
+Stated but not proved: `MetaMathlibExt.ramseyWitness_iff_mem_closure_tensor_squares` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#ramsey-witness-iff-mem-closure-tensor-sq).
 
 ## PR-witnesses of the pairwise sum family
 
@@ -125,7 +125,7 @@ $(a, b) \mapsto b$ and under the sum map $(a, b) \mapsto a + b$ all equal $U$.
 
 - Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.6.
 
-Stated but not proved: `MetaMathlibExt.pairwiseSums_witness_iff_exists_ramseyWitness` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#pairwise-sums-witness-iff-exists-ramsey).
+Stated but not proved: `MetaMathlibExt.pairwiseSums_witness_iff_exists_ramseyWitness` is written with `theorem_wanted` in [WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PairwiseSumTheoremWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html#pairwise-sums-witness-iff-exists-ramsey).
 
 ## Depends on
 
@@ -134,4 +134,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pairwise sum theorem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/pairwise-sum-theorem)

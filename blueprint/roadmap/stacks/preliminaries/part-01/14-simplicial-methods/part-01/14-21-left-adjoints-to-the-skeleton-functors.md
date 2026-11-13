@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.21 Left adjoints to the skeleton functors
 
-Section 14.21 of the Stacks Project, [Tag 018K](https://stacks.math.columbia.edu/tag/018K). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.21 of the Stacks Project, [Tag 018K](https://stacks.math.columbia.edu/tag/018K). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 018L, a lemma
 
 [Tag 018L](https://stacks.math.columbia.edu/tag/018L) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseLeftKanExtension`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L146). References: SGA 4 V (7.1.0), “existence of i\_\{n!}”.
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseLeftKanExtension`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L146). References: SGA 4 V (7.1.0), “existence of i\_\{n!}”.
 
 > **Stacks 018L**.
 > An `m`-truncated simplicial object `U` of a category `C` with finite colimits has a pointwise
@@ -32,7 +32,7 @@ public instance hasPointwiseLeftKanExtension (m : ℕ) (U : SimplicialObject.Tru
 
 [Tag 018M](https://stacks.math.columbia.edu/tag/018M) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.underCocone_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 873](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L873).
+**`CategoryTheory.SimplicialObject.Truncated.underCocone_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 873](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L873).
 
 > **Stacks 018M**.
 > Let `C` be a category and let `U` be an `m`-truncated simplicial object of `C`. For an object
@@ -47,7 +47,7 @@ theorem underCocone_isColimit : Nonempty (IsColimit (underCocone U n))
 
 [Tag 018N](https://stacks.math.columbia.edu/tag/018N) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.isIso_lanAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/SkeletonTruncationUnit.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/SkeletonTruncationUnit.lean#L40).
+**`CategoryTheory.SimplicialObject.Truncated.isIso_lanAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/SkeletonTruncationUnit.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/SkeletonTruncationUnit.lean#L40).
 
 > Let `C` be a category with finite colimits and let `U` be an `m`-truncated simplicial object
 > of `C`. The unit `U ⟶ sk_m i_{m!} U` of the adjunction `i_{m!} ⊣ sk_m`, where
@@ -65,7 +65,7 @@ theorem isIso_lanAdjunction_unit_app (m : ℕ) (U : SimplicialObject.Truncated C
 
 [Tag 018O](https://stacks.math.columbia.edu/tag/018O) in the Stacks Project.
 
-**`SSet.Truncated.mem_degenerate_sk_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 933](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L933).
+**`SSet.Truncated.mem_degenerate_sk_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 933](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L933).
 
 > **Stacks 018O**.
 > For an `m`-truncated simplicial set `U` and `n > m`, every `n`-simplex of
@@ -81,7 +81,7 @@ theorem mem_degenerate_sk_obj (m : ℕ) (U : SSet.Truncated m) (n : ℕ) (hn : m
 
 [Tag 018P](https://stacks.math.columbia.edu/tag/018P) in the Stacks Project.
 
-**`SSet.exists_iso_skeleton_hom_ι_eq_skAdj_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L285).
+**`SSet.exists_iso_skeleton_hom_ι_eq_skAdj_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L285).
 
 > **Stacks 018P**.
 > For a simplicial set `X` and `n : ℕ`, the canonical morphism `i_{n!} sk_n X ⟶ X`, i.e. the counit
@@ -99,7 +99,7 @@ public theorem exists_iso_skeleton_hom_ι_eq_skAdj_counit (X : SSet.{u}) (n : �
 
 [Tag 018R](https://stacks.math.columbia.edu/tag/018R) in the Stacks Project.
 
-**`SSet.Subcomplex.isPushout_boundary_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L416).
+**`SSet.Subcomplex.isPushout_boundary_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L416).
 
 > **Stacks 018R**.
 > Let `U` be a simplicial subset of a simplicial set
@@ -122,7 +122,7 @@ public theorem isPushout_boundary_ι {V : SSet.{u}} {U : V.Subcomplex} {n : ℕ}
 
 [Tag 018S](https://stacks.math.columbia.edu/tag/018S) in the Stacks Project.
 
-**`SSet.Subcomplex.exists_monotone_sup_ofSimplex_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L536).
+**`SSet.Subcomplex.exists_monotone_sup_ofSimplex_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L536).
 
 > **Stacks 018S**.
 > Let `U` be a simplicial subset of a simplicial set `V` such that only finitely
@@ -146,7 +146,7 @@ public theorem exists_monotone_sup_ofSimplex_eq_top {V : SSet.{u}} (U : V.Subcom
 
 [Tag 018T](https://stacks.math.columbia.edu/tag/018T) in the Stacks Project.
 
-**`AlgebraicTopology.NormalizedMooreComplex.objX_sk_obj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L585).
+**`AlgebraicTopology.NormalizedMooreComplex.objX_sk_obj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L585).
 
 > **Stacks 018T**.
 > Let `A` be an abelian category and let `U` be an `m`-truncated simplicial object of `A`. For
@@ -166,7 +166,7 @@ public theorem objX_sk_obj_eq_bot {m : ℕ}
 
 [Tag 018U](https://stacks.math.columbia.edu/tag/018U) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.isLeast_subobject_mk_skAdj_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L664).
+**`CategoryTheory.SimplicialObject.isLeast_subobject_mk_skAdj_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L664).
 
 > **Stacks 018U**.
 > Let `U` be a simplicial object of an abelian category `A` and let `n : ℕ`.
@@ -186,7 +186,7 @@ public theorem isLeast_subobject_mk_skAdj_counit_app (U : SimplicialObject A) (n
 
 [Tag 018V](https://stacks.math.columbia.edu/tag/018V) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.nonempty_representableBy_hom_sk_stdSimplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 795](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L795). The attribute's comment: “stated in an arbitrary degree `m`, the source's display being the case `m = n + 1`, and as representability of the presheaf that the source's `Hom(-, V)₀` represents, so that neither finite coproducts nor Tag 017L is needed”.
+**`CategoryTheory.SimplicialObject.nonempty_representableBy_hom_sk_stdSimplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 795](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L795). The attribute's comment: “stated in an arbitrary degree `m`, the source's display being the case `m = n + 1`, and as representability of the presheaf that the source's `Hom(-, V)₀` represents, so that neither finite coproducts nor Tag 017L is needed”.
 
 > **Stacks 018V**.
 > Let `V` be a simplicial object of a category `C` and let `n m : ℕ`, and assume the `n`-th
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.21, Tag 018K](https://stacks.math.columbia.edu/tag/018K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

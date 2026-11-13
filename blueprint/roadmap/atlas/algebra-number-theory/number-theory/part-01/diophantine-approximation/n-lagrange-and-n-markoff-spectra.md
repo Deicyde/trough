@@ -7,7 +7,7 @@ statement: formalized
 
 # n-Lagrange and n-Markoff spectra
 
-24 results, 8 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html).
+24 results, 8 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html).
 
 ## $n$-Lagrange approximability
 
@@ -23,7 +23,7 @@ tending to $\xi$. For $n = 1$ this is the classical Lagrange approximability $\l
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (3).
 
-Formalized by `MetaMathlibExt.nLagrangeApproximability`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-approximability).
+Formalized by `MetaMathlibExt.nLagrangeApproximability`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-approximability).
 
 ## The $1$-Lagrange approximability is the classical one
 
@@ -40,7 +40,7 @@ equals $1$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equations (1) and (3).
 
-Formalized by `MetaMathlibExt.nLagrangeApproximability_one`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-approximability-one).
+Formalized by `MetaMathlibExt.nLagrangeApproximability_one`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-approximability-one).
 
 ## $n$-Markoff approximability
 
@@ -56,7 +56,7 @@ when $\xi$ or $\xi'$ is rational, counts as $0$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (4).
 
-Formalized by `MetaMathlibExt.nMarkoffApproximability`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-approximability).
+Formalized by `MetaMathlibExt.nMarkoffApproximability`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-approximability).
 
 ## Symmetry of the $n$-Markoff approximability
 
@@ -68,7 +68,7 @@ $\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (4).
 
-Formalized by `MetaMathlibExt.nMarkoffApproximability_comm`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-approximability-comm).
+Formalized by `MetaMathlibExt.nMarkoffApproximability_comm`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-approximability-comm).
 
 ## $n$-Lagrange spectrum
 
@@ -81,7 +81,7 @@ count. For $n = 1$ this is the classical Lagrange spectrum $L$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (3).
 
-Formalized by `MetaMathlibExt.nLagrangeSpectrum`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum).
+Formalized by `MetaMathlibExt.nLagrangeSpectrum`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum).
 
 ## Membership in the $n$-Lagrange spectrum
 
@@ -93,7 +93,7 @@ for some irrational real number $\xi$, where $\lambda_n$ is the $n$-Lagrange app
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (3).
 
-Formalized by `MetaMathlibExt.mem_nLagrangeSpectrum`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#mem-n-lagrange-spectrum).
+Formalized by `MetaMathlibExt.mem_nLagrangeSpectrum`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#mem-n-lagrange-spectrum).
 
 ## The $n$-Markoff spectrum
 
@@ -108,7 +108,7 @@ $\xi \ne \xi'$. For $n = 1$ this is the classical Markoff spectrum $M$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (4).
 
-Formalized by `MetaMathlibExt.nMarkoffSpectrum`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-spectrum).
+Formalized by `MetaMathlibExt.nMarkoffSpectrum`, a definition declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-spectrum).
 
 ## Membership in the $n$-Markoff spectrum
 
@@ -121,7 +121,7 @@ approximability.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Introduction, equation (4).
 
-Formalized by `MetaMathlibExt.mem_nMarkoffSpectrum`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#mem-n-markoff-spectrum).
+Formalized by `MetaMathlibExt.mem_nMarkoffSpectrum`, a theorem declared in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#mem-n-markoff-spectrum).
 
 ## Convergents and the Lagrange approximability
 
@@ -138,7 +138,7 @@ approximability $\lambda_1(\xi)$ equals $\limsup_{k \to \infty} c_k$, taken in t
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 4, parts (a) and (c), quoted from Cusick and Flahive, Appendix 1.
 
-Stated but not proved: `MetaMathlibExt.convergent_quality_and_lagrange_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#convergent-quality-and-lagrange-limsup).
+Stated but not proved: `MetaMathlibExt.convergent_quality_and_lagrange_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#convergent-quality-and-lagrange-limsup).
 
 ## Real numbers with a common continued fraction prefix are close
 
@@ -154,7 +154,7 @@ has one. Then $|\xi - \xi'| \le 2^{1-k}$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Lemma 5, quoted from Cusick and Flahive, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.abs_sub_le_of_contFrac_prefix_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#abs-sub-le-of-cont-frac-prefix-eq).
+Stated but not proved: `MetaMathlibExt.abs_sub_le_of_contFrac_prefix_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#abs-sub-le-of-cont-frac-prefix-eq).
 
 ## The $n$-approximabilities as maxima over divisors
 
@@ -168,7 +168,7 @@ of $n$ and the maxima are taken in the extended reals.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.nApproximability_eq_sup_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-approximability-eq-sup-divisors).
+Stated but not proved: `MetaMathlibExt.nApproximability_eq_sup_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-approximability-eq-sup-divisors).
 
 ## Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra
 
@@ -182,7 +182,7 @@ classical Lagrange and Markoff spectra.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Corollary 7, equations (8) and (9).
 
-Stated but not proved: `MetaMathlibExt.nSpectrum_subset_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-spectrum-subset-of-dvd).
+Stated but not proved: `MetaMathlibExt.nSpectrum_subset_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-spectrum-subset-of-dvd).
 
 ## The $n$-Lagrange spectrum lies in the $n$-Markoff spectrum, with attained suprema
 
@@ -199,7 +199,7 @@ $$\frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|} = \alpha.$$
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.nLagrangeSpectrum_subset_nMarkoffSpectrum_attained` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum-subset-n-markoff-spe).
+Stated but not proved: `MetaMathlibExt.nLagrangeSpectrum_subset_nMarkoffSpectrum_attained` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum-subset-n-markoff-spe).
 
 ## Attained suprema in the $n$-Markoff spectrum
 
@@ -215,7 +215,7 @@ $$\frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|} = \alpha.$$
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.nMarkoffSpectrum_attained` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-spectrum-attained).
+Stated but not proved: `MetaMathlibExt.nMarkoffSpectrum_attained` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-markoff-spectrum-attained).
 
 ## The $n$-Markoff spectrum is closed
 
@@ -226,7 +226,7 @@ $M_n$ is a closed subset of $\mathbb{R}$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.isClosed_nMarkoffSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#is-closed-n-markoff-spectrum).
+Stated but not proved: `MetaMathlibExt.isClosed_nMarkoffSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#is-closed-n-markoff-spectrum).
 
 ## Common minimum of the $n$-Lagrange and $n$-Markoff spectra
 
@@ -238,7 +238,7 @@ and of the $n$-Markoff spectrum $M_n$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.exists_isLeast_nLagrangeSpectrum_nMarkoffSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#exists-is-least-n-lagrange-spectrum-n-ma).
+Stated but not proved: `MetaMathlibExt.exists_isLeast_nLagrangeSpectrum_nMarkoffSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#exists-is-least-n-lagrange-spectrum-n-ma).
 
 ## Scaled classical spectra lie in the $n$-spectra
 
@@ -252,7 +252,7 @@ $n L_1 \subseteq L_n$ and $n M_1 \subseteq M_n$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.smul_spectrum_subset_nSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#smul-spectrum-subset-n-spectrum).
+Stated but not proved: `MetaMathlibExt.smul_spectrum_subset_nSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#smul-spectrum-subset-n-spectrum).
 
 ## Hall's ray in the $n$-Lagrange spectrum
 
@@ -266,7 +266,7 @@ $M_n$ is the $n$-Markoff spectrum.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 14.
 
-Stated but not proved: `MetaMathlibExt.hall_ray_nLagrangeSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#hall-ray-n-lagrange-spectrum).
+Stated but not proved: `MetaMathlibExt.hall_ray_nLagrangeSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#hall-ray-n-lagrange-spectrum).
 
 ## The $n$-Lagrange spectrum is closed
 
@@ -277,7 +277,7 @@ $L_n$ is a closed subset of $\mathbb{R}$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 19.
 
-Stated but not proved: `MetaMathlibExt.isClosed_nLagrangeSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#is-closed-n-lagrange-spectrum).
+Stated but not proved: `MetaMathlibExt.isClosed_nLagrangeSpectrum` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#is-closed-n-lagrange-spectrum).
 
 ## The $n$-Lagrange spectrum is the closure of its quadratic-irrational values
 
@@ -291,7 +291,7 @@ the $n$-Lagrange spectrum $L_n$ is the closure of $P_n$ in $\mathbb{R}$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 20.
 
-Stated but not proved: `MetaMathlibExt.nLagrangeSpectrum_eq_closure_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum-eq-closure-quadratic).
+Stated but not proved: `MetaMathlibExt.nLagrangeSpectrum_eq_closure_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#n-lagrange-spectrum-eq-closure-quadratic).
 
 ## Isolated minimum of the $p$-Lagrange spectrum for primes below 2000
 
@@ -307,7 +307,7 @@ This is Conjecture 1 of the source for primes below 2000.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Theorem 2, with Conjecture 1.
 
-Stated but not proved: `MetaMathlibExt.min_nLagrangeSpectrum_isolated_sqrt_rat_of_prime_lt_2000` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#min-n-lagrange-spectrum-isolated-sqrt-ra).
+Stated but not proved: `MetaMathlibExt.min_nLagrangeSpectrum_isolated_sqrt_rat_of_prime_lt_2000` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#min-n-lagrange-spectrum-isolated-sqrt-ra).
 
 ## The prime $67$ and continued fraction digits $1$ and $2$
 
@@ -322,7 +322,7 @@ if $p = 67$.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.no_eventually_one_two_contFrac_pair_iff_eq_67` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#no-eventually-one-two-cont-frac-pair-iff).
+Stated but not proved: `MetaMathlibExt.no_eventually_one_two_contFrac_pair_iff_eq_67` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#no-eventually-one-two-cont-frac-pair-iff).
 
 ## Markoff points in the $p$-Lagrange spectrum
 
@@ -340,7 +340,7 @@ a square in $\mathbb{Q}$, then $p$ is a principal norm.
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 26; the printed `λ_p ∈ L_p` is read as `λ_z ∈ L_p`, as in the proof.
 
-Stated but not proved: `MetaMathlibExt.markoff_point_mem_nLagrangeSpectrum_iff_principal_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#markoff-point-mem-n-lagrange-spectrum-if).
+Stated but not proved: `MetaMathlibExt.markoff_point_mem_nLagrangeSpectrum_iff_principal_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#markoff-point-mem-n-lagrange-spectrum-if).
 
 ## Congruence conditions for Markoff points in the $p$-Lagrange spectrum
 
@@ -359,7 +359,7 @@ Part (f) of the source, for $10\sqrt{26}/17$, is omitted: as printed it fails at
 
 - Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Corollary 27.
 
-Stated but not proved: `MetaMathlibExt.markoff_points_mem_nLagrangeSpectrum_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#markoff-points-mem-n-lagrange-spectrum-i).
+Stated but not proved: `MetaMathlibExt.markoff_points_mem_nLagrangeSpectrum_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NLagrangeSpectrumWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html#markoff-points-mem-n-lagrange-spectrum-i).
 
 ## Depends on
 
@@ -368,4 +368,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: n-Lagrange and n-Markoff spectra](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/n-lagrange-and-n-markoff-spectra)

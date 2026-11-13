@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.27 Quasi-finite morphisms
 
-Section 67.27 of the Stacks Project, [Tag 03XI](https://stacks.math.columbia.edu/tag/03XI). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.27 of the Stacks Project, [Tag 03XI](https://stacks.math.columbia.edu/tag/03XI). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03XJ, a definition
 
 [Tag 03XJ](https://stacks.math.columbia.edu/tag/03XJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L97). The attribute's comment: “part (1): locally quasi-finite morphisms”.
+**`AlgebraicGeometry.Space.IsLocallyQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L97). The attribute's comment: “part (1): locally quasi-finite morphisms”.
 
 > **Stacks 03XJ, part (1).** A morphism of algebraic spaces over `S` is *locally
 > quasi-finite* when every commuting square of étale scheme charts induces a scheme morphism
@@ -24,7 +24,7 @@ Section 67.27 of the Stacks Project, [Tag 03XI](https://stacks.math.columbia.edu
 abbrev IsLocallyQuasiFinite (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L105). The attribute's comment: “part (3): quasi-finite morphisms”.
+**`AlgebraicGeometry.Space.IsQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L105). The attribute's comment: “part (3): quasi-finite morphisms”.
 
 > **Stacks 03XJ, part (3).** A morphism of algebraic spaces over `S` is *quasi-finite*
 > when it is locally quasi-finite and quasi-compact.
@@ -33,7 +33,7 @@ abbrev IsLocallyQuasiFinite (f : X ⟶ Y) : Prop
 abbrev IsQuasiFinite (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiFiniteAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L124). The attribute's comment: “part (2): quasi-finite at a point”.
+**`AlgebraicGeometry.Space.IsQuasiFiniteAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteType.lean#L124). The attribute's comment: “part (2): quasi-finite at a point”.
 
 > **Stacks 03XJ, part (2).** A morphism of algebraic spaces over `S` is *quasi-finite at*
 > a point `x` of its source when some open subspace of the source containing `x` is locally
@@ -47,7 +47,7 @@ abbrev IsQuasiFiniteAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 0ABM](https://stacks.math.columbia.edu/tag/0ABM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L321). The attribute's comment: “part (3): locally quasi-finite”.
+**`AlgebraicGeometry.Space.IsLocallyQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L321). The attribute's comment: “part (3): locally quasi-finite”.
 
 > The base change of a locally quasi-finite morphism of algebraic spaces over `S` along an
 > arbitrary morphism of algebraic spaces is locally quasi-finite.
@@ -65,7 +65,7 @@ theorem IsLocallyQuasiFinite.of_isPullback
     IsLocallyQuasiFinite B S hS p
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L338). The attribute's comment: “part (4): quasi-finite”.
+**`AlgebraicGeometry.Space.IsQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L338). The attribute's comment: “part (4): quasi-finite”.
 
 > The base change of a quasi-finite morphism of algebraic spaces over `S` along an arbitrary
 > morphism of algebraic spaces is quasi-finite.
@@ -80,7 +80,7 @@ theorem IsQuasiFinite.of_isPullback
     IsQuasiFinite B S hS p
 ```
 
-**`AlgebraicGeometry.Space.isOpen_setOf_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L195). The attribute's comment: “part (1): the quasi-finite locus is open”.
+**`AlgebraicGeometry.Space.isOpen_setOf_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L195). The attribute's comment: “part (1): the quasi-finite locus is open”.
 
 > **Stacks 0ABM, part (1).** The set of points at which a morphism of algebraic spaces over
 > `S` is quasi-finite is open in the point space of Tag 03BU. Applied to a base change `f'` of
@@ -93,7 +93,7 @@ theorem isOpen_setOf_isQuasiFiniteAt (f : X ⟶ Y) :
     IsOpen {x | IsQuasiFiniteAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.setOf_isQuasiFiniteAt_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L238). The attribute's comment: “part (2): the locus commutes with base change”. References: SGA 3 V (7.4), “more general”.
+**`AlgebraicGeometry.Space.setOf_isQuasiFiniteAt_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L238). The attribute's comment: “part (2): the locus commutes with base change”. References: SGA 3 V (7.4), “more general”.
 
 > **Stacks 0ABM, part (2).** For a morphism of algebraic spaces over `S` which is locally of
 > finite type, the locus of quasi-finiteness of a base change is the inverse image of the locus
@@ -119,7 +119,7 @@ theorem setOf_isQuasiFiniteAt_eq_preimage_of_isPullback
       pointsMap B S hS X₁.1 g'.hom ⁻¹' {x | IsQuasiFiniteAt B S hS f.hom x}
 ```
 
-**`AlgebraicGeometry.Space.setOf_isQuasiFiniteAt_eq_preimage_of_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocusBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocusBaseChange.lean#L111). The attribute's comment: “part (2): the quasi-finite locus commutes with base change”.
+**`AlgebraicGeometry.Space.setOf_isQuasiFiniteAt_eq_preimage_of_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocusBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocusBaseChange.lean#L111). The attribute's comment: “part (2): the quasi-finite locus commutes with base change”.
 
 > In a cartesian square of presheaves over `S` whose corners `X`, `Y` and `Z` are algebraic
 > spaces, with `f` locally of finite type, the locus in the source of the base change of `f` where
@@ -143,7 +143,7 @@ theorem setOf_isQuasiFiniteAt_eq_preimage_of_isPullback'
 
 [Tag 03XK](https://stacks.math.columbia.edu/tag/03XK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L76). The attribute's comment: “locally quasi-finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L76). The attribute's comment: “locally quasi-finite”.
 
 > **Stacks 03XK**, the locally quasi-finite case: the composite of two locally quasi-finite
 > morphisms of algebraic spaces over `S` is locally quasi-finite.
@@ -160,7 +160,7 @@ theorem isLocallyQuasiFinite_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
     IsLocallyQuasiFinite B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L94). The attribute's comment: “quasi-finite”.
+**`AlgebraicGeometry.Space.isQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L94). The attribute's comment: “quasi-finite”.
 
 > **Stacks 03XK**, the quasi-finite case: the composite of two quasi-finite morphisms of
 > algebraic spaces over `S` is quasi-finite.
@@ -180,7 +180,7 @@ theorem isQuasiFinite_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03XL](https://stacks.math.columbia.edu/tag/03XL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L321). The attribute's comment: “locally quasi-finite”.
+**`AlgebraicGeometry.Space.IsLocallyQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L321). The attribute's comment: “locally quasi-finite”.
 
 > The base change of a locally quasi-finite morphism of algebraic spaces over `S` along an
 > arbitrary morphism of algebraic spaces is locally quasi-finite.
@@ -198,7 +198,7 @@ theorem IsLocallyQuasiFinite.of_isPullback
     IsLocallyQuasiFinite B S hS p
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L338). The attribute's comment: “quasi-finite”.
+**`AlgebraicGeometry.Space.IsQuasiFinite.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteBaseChange.lean#L338). The attribute's comment: “quasi-finite”.
 
 > The base change of a quasi-finite morphism of algebraic spaces over `S` along an arbitrary
 > morphism of algebraic spaces is quasi-finite.
@@ -213,7 +213,7 @@ theorem IsQuasiFinite.of_isPullback
     IsQuasiFinite B S hS p
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L109). The attribute's comment: “locally quasi-finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L109). The attribute's comment: “locally quasi-finite”.
 
 > **Stacks 03XL**, the locally quasi-finite case: being locally quasi-finite is stable under
 > base change.
@@ -229,7 +229,7 @@ instance isLocallyQuasiFinite_isStableUnderBaseChange :
         IsLocallyQuasiFinite B S hS f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFinite_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L125). The attribute's comment: “quasi-finite”.
+**`AlgebraicGeometry.Space.isQuasiFinite_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteMorphismProperty.lean#L125). The attribute's comment: “quasi-finite”.
 
 > **Stacks 03XL**, the quasi-finite case: being quasi-finite is stable under base change.
 >
@@ -246,7 +246,7 @@ instance isQuasiFinite_isStableUnderBaseChange :
 
 [Tag 06RW](https://stacks.math.columbia.edu/tag/06RW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_forall_discreteTopology_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 1426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L1426).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_forall_discreteTopology_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 1427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L1427).
 
 > **Stacks 06RW.** A morphism of algebraic spaces over `S` which is locally of finite type is
 > locally quasi-finite exactly when, for every field-valued point of its target, the point space
@@ -277,7 +277,7 @@ theorem isLocallyQuasiFinite_iff_forall_discreteTopology_fibre
 
 [Tag 040Z](https://stacks.math.columbia.edu/tag/040Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyQuasiFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L781).
+**`AlgebraicGeometry.Space.locallyQuasiFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 782](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L782).
 
 > **Stacks 040Z.** Nine criteria for a morphism of algebraic spaces over `S` to be locally
 > quasi-finite: pointwise quasi-finiteness, local quasi-finiteness of every base change to a
@@ -319,7 +319,7 @@ theorem locallyQuasiFinite_tfae {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03XM](https://stacks.math.columbia.edu/tag/03XM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L498).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L499).
 
 > **Stacks 03XM.** An immersion of algebraic spaces over `S` is locally quasi-finite.
 >
@@ -336,7 +336,7 @@ theorem isLocallyQuasiFinite_of_isImmersion {X Y : (BigFppfOver B S hS)ᵒᵖ �
 
 [Tag 03XN](https://stacks.math.columbia.edu/tag/03XN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L417).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L418).
 
 > **Stacks 03XN.** If a composite of morphisms of algebraic spaces over `S` is locally
 > quasi-finite, then so is its first factor.
@@ -362,7 +362,7 @@ theorem isLocallyQuasiFinite_of_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 
 [Tag 0ABN](https://stacks.math.columbia.edu/tag/0ABN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_setOf_mapsTo_and_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L399).
+**`AlgebraicGeometry.Space.finite_setOf_mapsTo_and_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteLocus.lean#L399).
 
 > **Stacks 0ABN.** For a morphism of algebraic spaces over `S` of finite type, only finitely
 > many points of the source lying over a fixed point of the target are points at which the
@@ -395,7 +395,7 @@ theorem finite_setOf_mapsTo_and_isQuasiFiniteAt
 
 [Tag 0463](https://stacks.math.columbia.edu/tag/0463) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L550). The attribute's comment: “local quasi-finiteness”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L551). The attribute's comment: “local quasi-finiteness”.
 
 > **Stacks 0463**, the local quasi-finiteness clause: a monomorphism of algebraic spaces over
 > `S` which is locally of finite type is locally quasi-finite.
@@ -414,7 +414,7 @@ theorem isLocallyQuasiFinite_of_mono {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
     IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean#L218). The attribute's comment: “separatedness”.
+**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean#L218). The attribute's comment: “separatedness”.
 
 > **Stacks 042N.** A monomorphism of presheaves on the big fppf site of `S` is a separated
 > morphism of algebraic spaces over `S`: its relative diagonal is an isomorphism, and an
@@ -429,7 +429,7 @@ theorem isSeparated_of_mono {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (m : F
     IsSeparated B S hS m
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L243).
+**`AlgebraicGeometry.Space.isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L243).
 
 > **Stacks 0463.** A monomorphism of algebraic spaces over `S` which is locally of finite type
 > is separated and locally quasi-finite.
@@ -450,7 +450,7 @@ theorem isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono (f : X �
     IsSeparated B S hS f ∧ IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L148). The attribute's comment: “separatedness”.
+**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L148). The attribute's comment: “separatedness”.
 
 > **Stacks 042N.** A monomorphism of algebraic spaces over `S` is separated: its relative
 > diagonal is an isomorphism, and an isomorphism is a closed immersion.
@@ -470,4 +470,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.27, Tag 03XI](https://stacks.math.columbia.edu/tag/03XI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

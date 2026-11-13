@@ -7,7 +7,7 @@ statement: formalized
 
 # Equations over free groups
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html).
 
 ## Kourovka Problem 14.48 (equations over free groups in finite quotients)
 
@@ -19,7 +19,7 @@ substituting $g_i$ for $x_i$ sends $w$ to $1$, then there is a normal subgroup $
 in $F$ such that no $h_0, \dots, h_{n-1} \in F / N$ are such that substituting $h_i$ for $x_i$ and
 mapping the coefficients of $w$ to their images in $F / N$ sends $w$ to $1$.
 
-Formalized by `MathlibExt.GroupTheory.FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.unsolvableEquationUnsolvableInFiniteQuotient`, a definition declared in [WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html#unsolvable-equation-unsolvable-in-finite).
+Formalized by `MathlibExt.GroupTheory.FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.unsolvableEquationUnsolvableInFiniteQuotient`, a definition declared in [WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html#unsolvable-equation-unsolvable-in-finite).
 
 ## An unsolvable equation over a free group that is solvable in every finite quotient
 
@@ -38,7 +38,7 @@ some equation over a free group has no solution in it but has a solution in ever
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.48 (L. Comerford); resolution: T. Coulbois and A. Khelif, Proc. Amer. Math. Soc. 127 (1999), no. 4, 963-965, Kourovka Archive, Problem 14.48 (answer: No, not always).
 
-Stated but not proved: `MathlibExt.GroupTheory.FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.unsolvableEquationUnsolvableInFiniteQuotient_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html#unsolvable-equation-unsolvable-in-finite-2).
+Stated but not proved: `MathlibExt.GroupTheory.FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.unsolvableEquationUnsolvableInFiniteQuotient_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupEquationFiniteQuotientKourovka14Problem48Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html#unsolvable-equation-unsolvable-in-finite-2).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Equations over free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/varieties-and-equations/equations-over-free-groups)

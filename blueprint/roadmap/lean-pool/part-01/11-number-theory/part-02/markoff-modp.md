@@ -10,7 +10,7 @@ proof: formalized
 
 > Lean 4 formalization of strong approximation for the Markoff surface modulo sufficiently large primes. The primary source is Bourgain-Gamburd-Sarnak.
 
-*Quoted from the card [LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/markoff-modp.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/markoff-modp.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`BGS.Markoff.reduction_surjective_of_explicitBound`](https://leanpool.github.io/lean-pool/LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.html#BGS.Markoff.reduction_surjective_of_explicitBound) (theorem; a main declaration), declared in [LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.lean#L44): “For primes exceeding the explicit bound, reduction of integral Markoff points to the Markoff surface modulo p is surjective as specified by the theorem.”
+- [`BGS.Markoff.reduction_surjective_of_explicitBound`](https://leanpool.github.io/lean-pool/LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.html#BGS.Markoff.reduction_surjective_of_explicitBound) (theorem; a main declaration), declared in [LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.lean, line 44](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/MarkoffModP/BGS/Markoff/Assembly/ReductionSurjectivity.lean#L44): “For primes exceeding the explicit bound, reduction of integral Markoff points to the Markoff surface modulo p is surjective as specified by the theorem.”
 
 ## Project
 
@@ -29,9 +29,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 11D25.
-- In Lean Pool: [LeanPool/MarkoffModP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MarkoffModP), from the card [LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/markoff-modp.yaml).
+- In Lean Pool: [LeanPool/MarkoffModP](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/MarkoffModP), from the card [LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/markoff-modp.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/markoff-modp.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/MarkoffModP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MarkoffModP)
+- [Lean Pool at 701389c0: LeanPool/projects/markoff-modp.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/markoff-modp.yaml)
+- [Lean Pool at 701389c0: LeanPool/MarkoffModP](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/MarkoffModP)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Complex Hessian
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html).
 
 ## Real Hessian
 
@@ -20,7 +20,7 @@ and applying the result to $b$.
 
 As usual in Mathlib, a derivative that does not exist is taken to be zero.
 
-Formalized by `MetaMathlibExt.realHessian`, a definition declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ComplexHessian.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#real-hessian).
+Formalized by `MetaMathlibExt.realHessian`, a definition declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ComplexHessian.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#real-hessian).
 
 ## Complex Hessian
 
@@ -38,7 +38,7 @@ When $u$ is of class $C^2$, in real coordinates $z_j = x_j + i y_j$ this is
 $\partial^2 u / \partial z_j \partial \bar z_k =
 (u_{x_j x_k} + u_{y_j y_k} + i (u_{x_j y_k} - u_{y_j x_k})) / 4$.
 
-Formalized by `MetaMathlibExt.complexHessian`, a definition declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ComplexHessian.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#complex-hessian).
+Formalized by `MetaMathlibExt.complexHessian`, a definition declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ComplexHessian.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#complex-hessian).
 
 ## Constant functions have zero real Hessian
 
@@ -46,7 +46,7 @@ For every real constant $c$, the function
 $u : \mathbb{C}^n \to \mathbb{R}$ with constant value $c$ has real Hessian $D^2u(z)(a, b) = 0$ for
 all $z, a, b \in \mathbb{C}^n$.
 
-Formalized by `MetaMathlibExt.realHessian_const`, a theorem declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ComplexHessian.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#real-hessian-const).
+Formalized by `MetaMathlibExt.realHessian_const`, a theorem declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ComplexHessian.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#real-hessian-const).
 
 ## Constant functions have zero complex Hessian
 
@@ -54,7 +54,7 @@ For every real constant $c$, the function
 $u : \mathbb{C}^n \to \mathbb{R}$ with constant value $c$ has complex Hessian equal to the zero
 $n \times n$ matrix at every point $z \in \mathbb{C}^n$.
 
-Formalized by `MetaMathlibExt.complexHessian_const`, a theorem declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ComplexHessian.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#complex-hessian-const).
+Formalized by `MetaMathlibExt.complexHessian_const`, a theorem declared in [MathlibExt/Analysis/Complex/ComplexHessian.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ComplexHessian.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html#complex-hessian-const).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Complex Hessian](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/complex-hessian)

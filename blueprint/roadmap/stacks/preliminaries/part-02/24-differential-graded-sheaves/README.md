@@ -1,6 +1,6 @@
 # 24 Differential Graded Sheaves
 
-Chapter 24 of the Stacks Project, *Differential Graded Sheaves*, [Tag 0FQS](https://stacks.math.columbia.edu/tag/0FQS): the 31 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 105 tags are carried by 290 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
+Chapter 24 of the Stacks Project, *Differential Graded Sheaves*, [Tag 0FQS](https://stacks.math.columbia.edu/tag/0FQS): the 31 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 105 tags are carried by 356 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
 
 ## [24.3 Sheaves of graded algebras to 24.23 Flat resolutions](part-01/README.md)
 

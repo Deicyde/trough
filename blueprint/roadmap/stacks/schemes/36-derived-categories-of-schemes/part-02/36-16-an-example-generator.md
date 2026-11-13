@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.16 An example generator
 
-Section 36.16 of the Stacks Project, [Tag 0BQQ](https://stacks.math.columbia.edu/tag/0BQQ). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.16 of the Stacks Project, [Tag 0BQQ](https://stacks.math.columbia.edu/tag/0BQQ). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BQR, a lemma
 
 [Tag 0BQR](https://stacks.math.columbia.edu/tag/0BQR) in the Stacks Project.
 
-**`Stacks.AmpleNonvanishing.exists_nonzero_hypercohomology_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/Derived.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/Derived.lean#L223). The attribute's comment: “the general derived statement: K is an arbitrary nonzero object of D\_QCoh(O\_X), the tensor product is the derived one of Tag 06YH with a tensor power of L in degree zero, and the cohomology is the derived hypercohomology of Tag 08JA in degree p. The hypothesis is stated at the locally small model of D(O\_X), the only model Tag 08DB is available at, and the conclusion at the standard model, the only model Tag 08JA is available at; the object in the conclusion is K itself, Stacks.Injectives.grothendieckModelEquiv being the identity on objects. The degree-zero module case, which this does not subsume because it carries an explicit witness, is the separate carrier Stacks.AmpleNonvanishingChart.exists\_twistedSection\_restrict\_eq\_tensorSection”.
+**`Stacks.AmpleNonvanishing.exists_nonzero_hypercohomology_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/Derived.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/Derived.lean#L223). The attribute's comment: “the general derived statement: K is an arbitrary nonzero object of D\_QCoh(O\_X), the tensor product is the derived one of Tag 06YH with a tensor power of L in degree zero, and the cohomology is the derived hypercohomology of Tag 08JA in degree p. The hypothesis is stated at the locally small model of D(O\_X), the only model Tag 08DB is available at, and the conclusion at the standard model, the only model Tag 08JA is available at; the object in the conclusion is K itself, Stacks.Injectives.grothendieckModelEquiv being the identity on objects. The degree-zero module case, which this does not subsume because it carries an explicit witness, is the separate carrier Stacks.AmpleNonvanishingChart.exists\_twistedSection\_restrict\_eq\_tensorSection”.
 
 > **[Stacks, Tag 0BQR].** Let `X` be a scheme, `L` an ample invertible `𝒪_X`-module and `K` a
 > **nonzero** object of `D_QCoh(𝒪_X)`. Then there are an exponent `n` and a degree `p` with
@@ -45,7 +45,7 @@ theorem exists_nonzero_hypercohomology_tensorPower (X : Scheme.{u}) (L : X.Modul
                 (ComplexShape.up ℤ) 0).obj (tensorPowModule X L (n : ℤ)))))))
 ```
 
-**`Stacks.AmpleNonvanishingChart.exists_twistedSection_restrict_eq_tensorSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/TwistedSectionChart.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/TwistedSectionChart.lean#L141). The attribute's comment: “run at a quasi-coherent module rather than at an object of D\_QCoh(O\_X) in a degree: Gamma(X, F tensor L^p) is nonzero, witnessed by an explicit tau. The derived-category form is a separate assertion; see the module docstring”.
+**`Stacks.AmpleNonvanishingChart.exists_twistedSection_restrict_eq_tensorSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/TwistedSectionChart.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/TwistedSectionChart.lean#L141). The attribute's comment: “run at a quasi-coherent module rather than at an object of D\_QCoh(O\_X) in a degree: Gamma(X, F tensor L^p) is nonzero, witnessed by an explicit tau. The derived-category form is a separate assertion; see the module docstring”.
 
 > **[Stacks, Tag 0BQR] for a quasi-coherent module.** For `L` an ample invertible `𝒪_X`-module
 > and `F` a nonzero quasi-coherent `𝒪_X`-module there are an exponent `p`, a global section `σ` of
@@ -73,7 +73,7 @@ theorem exists_twistedSection_restrict_eq_tensorSection {X : Scheme.{u}} (L : X.
 
 [Tag 0BQS](https://stacks.math.columbia.edu/tag/0BQS) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjKoszulComplex.acyclic_koszulComplex_and_locallyFree_koszulTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjKoszulComplex/LocallyFree.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjKoszulComplex/LocallyFree.lean#L152).
+**`Stacks.AlgebraicGeometry.ProjKoszulComplex.acyclic_koszulComplex_and_locallyFree_koszulTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjKoszulComplex/LocallyFree.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjKoszulComplex/LocallyFree.lean#L152).
 
 > **Stacks 0BQS.** Let `A` be a ring and `X = P^n_A = Proj A[X₀, …, Xₙ]`. For every integer `a`
 > there is an exact complex of vector bundles
@@ -105,7 +105,7 @@ theorem acyclic_koszulComplex_and_locallyFree_koszulTerm (j : ℕ) :
 
 [Tag 0A9V](https://stacks.math.columbia.edu/tag/0A9V) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ExampleGenerator.twist_mem_gen_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean#L116). The attribute's comment: “each of the twists O, O(-1), …, O(-n) lies in the subcategory generated by E”.
+**`Stacks.AlgebraicGeometry.ExampleGenerator.twist_mem_gen_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean#L116). The attribute's comment: “each of the twists O, O(-1), …, O(-n) lies in the subcategory generated by E”.
 
 > Each of the `n + 1` displayed twists is a direct summand of `E`, hence lies in `⟨E⟩`.
 
@@ -114,7 +114,7 @@ theorem twist_mem_gen_of_le (i : Fin (n + 1)) :
     twist A n (-(i : ℤ)) ∈ gen (twistSum A n)
 ```
 
-**`Stacks.AlgebraicGeometry.ExampleGenerator.twist_neg_mem_gen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean#L227). The attribute's comment: “the subcategory generated by E contains every twist O(-m), m ≥ 0”.
+**`Stacks.AlgebraicGeometry.ExampleGenerator.twist_neg_mem_gen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/Koszul.lean#L227). The attribute's comment: “the subcategory generated by E contains every twist O(-m), m ≥ 0”.
 
 > **Every twist `𝒪_X(-m)`, `m ≥ 0`, lies in `⟨E⟩`.** For `X = P^n_A` and
 > `E = 𝒪_X ⊕ 𝒪_X(-1) ⊕ ⋯ ⊕ 𝒪_X(-n)`, every twist `𝒪_X(-m)` with `m ≥ 0` lies in the subcategory
@@ -128,7 +128,7 @@ theorem twist_mem_gen_of_le (i : Fin (n + 1)) :
 theorem twist_neg_mem_gen (m : ℕ) : twist A n (-(m : ℤ)) ∈ gen (twistSum A n)
 ```
 
-**`Stacks.AlgebraicGeometry.ExampleGenerator.isWeakTriangulatedGenerator_twistSumDerivedQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/KoszulQuasiCoherent.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/KoszulQuasiCoherent.lean#L151).
+**`Stacks.AlgebraicGeometry.ExampleGenerator.isWeakTriangulatedGenerator_twistSumDerivedQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/KoszulQuasiCoherent.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/KoszulQuasiCoherent.lean#L151).
 
 > Let `A` be a ring and `X = P^n_A`. Then `E = 𝒪_X ⊕ 𝒪_X(-1) ⊕ ⋯ ⊕ 𝒪_X(-n)` is a generator
 > of `D_QCoh(𝒪_X)` in the sense of [Stacks, Tag 09SJ]: every object of `D_QCoh(𝒪_X)` receiving
@@ -139,7 +139,7 @@ theorem isWeakTriangulatedGenerator_twistSumDerivedQCoh :
     (ObjectProperty.singleton (twistSumDerivedQCoh A n)).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.AlgebraicGeometry.ExampleGenerator.isWeakTriangulatedGenerator_twistSumQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/QuasiCoherentGenerator.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/QuasiCoherentGenerator.lean#L278). The attribute's comment: “the generator conclusion of Definition 09SJ(3) for D\_QCoh(O\_X), with no hypothesis beyond the tag's. The generation step on the whole of D(O\_X) is Stacks.AlgebraicGeometry.ExampleGenerator.twist\_neg\_mem\_gen”.
+**`Stacks.AlgebraicGeometry.ExampleGenerator.isWeakTriangulatedGenerator_twistSumQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/QuasiCoherentGenerator.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/ExampleGenerator/QuasiCoherentGenerator.lean#L278). The attribute's comment: “the generator conclusion of Definition 09SJ(3) for D\_QCoh(O\_X), with no hypothesis beyond the tag's. The generation step on the whole of D(O\_X) is Stacks.AlgebraicGeometry.ExampleGenerator.twist\_neg\_mem\_gen”.
 
 > **[Stacks, Tag 0A9V] on `D_QCoh(𝒪_X)`.** For `X = P^n_A` the object
 > `E = 𝒪_X ⊕ 𝒪_X(-1) ⊕ ⋯ ⊕ 𝒪_X(-n)` in degree zero is a weak generator of `D_QCoh(𝒪_X)`.
@@ -160,7 +160,7 @@ theorem isWeakTriangulatedGenerator_twistSumQCoh :
 
 [Tag 0BQT](https://stacks.math.columbia.edu/tag/0BQT) in the Stacks Project.
 
-**`Stacks.Duality.DerivedPushforward.conditions_of_multiplicativeClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/GeneratorClauses.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/GeneratorClauses.lean#L365). The attribute's comment: “the clause that the three conditions hold when f is affine, when f is an open immersion, and when f is a composition of such”.
+**`Stacks.Duality.DerivedPushforward.conditions_of_multiplicativeClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/GeneratorClauses.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/GeneratorClauses.lean#L365). The attribute's comment: “the clause that the three conditions hold when f is affine, when f is an open immersion, and when f is a composition of such”.
 
 > **[Stacks, Tag 0BQT]: the three conditions hold when `f` is affine, when `f` is an open
 > immersion, and when `f` is a composition of such.** Let `f : X ⟶ Y` be a finite composite of
@@ -191,7 +191,7 @@ theorem conditions_of_multiplicativeClosure {X Y : Scheme.{u}} [CompactSpace X]
         ).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_restrictedTwistSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/ProjectiveImmersionGenerator.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/ProjectiveImmersionGenerator.lean#L167). The attribute's comment: “the second consequence drawn from the remark: for X a quasi-compact locally closed subscheme of P^n\_A, the object O\_X ⊕ O\_X(-1) ⊕ … ⊕ O\_X(-n) is a generator for D\_QCoh(O\_X)”.
+**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_restrictedTwistSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/ProjectiveImmersionGenerator.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/ProjectiveImmersionGenerator.lean#L167). The attribute's comment: “the second consequence drawn from the remark: for X a quasi-compact locally closed subscheme of P^n\_A, the object O\_X ⊕ O\_X(-1) ⊕ … ⊕ O\_X(-n) is a generator for D\_QCoh(O\_X)”.
 
 > For `i : W ⟶ P^n_A` an immersion with `W` quasi-compact, the object
 > `𝒪_W ⊕ 𝒪_W(-1) ⊕ ⋯ ⊕ 𝒪_W(-n)`, placed in degree zero, generates `D_QCoh(𝒪_W)`.
@@ -201,7 +201,7 @@ theorem isWeakTriangulatedGenerator_restrictedTwistSum [IsImmersion i] [CompactS
     (ObjectProperty.singleton (restrictedTwistSum i)).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Duality.DerivedPushforward.tfae_isZero_quasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean#L197).
+**`Stacks.Duality.DerivedPushforward.tfae_isZero_quasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean#L197).
 
 > **[Stacks, Tag 0BQT].** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > schemes with `Y` quasi-compact, and let `E` be a weak generator of `D_QCoh(𝒪_Y)` — the object
@@ -235,7 +235,7 @@ theorem tfae_isZero_quasiCoherentDerivedPushforward
         ).IsWeakTriangulatedGenerator].TFAE
 ```
 
-**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_quasiCoherentDerivedPullback_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean#L257). The attribute's comment: “the conditions hold for an affine morphism: the case of a morphism Spec φ of affine schemes, where Lf^* carries a generator to a generator”.
+**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_quasiCoherentDerivedPullback_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/PullbackGenerator.lean#L257). The attribute's comment: “the conditions hold for an affine morphism: the case of a morphism Spec φ of affine schemes, where Lf^* carries a generator to a generator”.
 
 > **[Stacks, Tag 0BQT] for a morphism of affine schemes: `L(Spec φ)^*` carries a generator to a
 > generator.** Let `φ : R ⟶ S` be a map of commutative rings and let `E` be a weak generator of
@@ -255,7 +255,7 @@ theorem isWeakTriangulatedGenerator_quasiCoherentDerivedPullback_specMap
       ).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_derivedStructureSheaf_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiAffineGenerator.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiAffineGenerator.lean#L165). The attribute's comment: “the first consequence drawn from the remark: if X is a quasi-affine scheme then the structure sheaf O\_X is a generator for D\_QCoh(O\_X)”.
+**`Stacks.Duality.DerivedPushforward.isWeakTriangulatedGenerator_derivedStructureSheaf_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiAffineGenerator.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiAffineGenerator.lean#L165). The attribute's comment: “the first consequence drawn from the remark: if X is a quasi-affine scheme then the structure sheaf O\_X is a generator for D\_QCoh(O\_X)”.
 
 > **[Stacks, Tag 0BQT]: if `X` is a quasi-affine scheme then `𝒪_X` generates
 > `D_QCoh(𝒪_X)`.** This is the first consequence the source draws from its remark.
@@ -280,4 +280,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.16, Tag 0BQQ](https://stacks.math.columbia.edu/tag/0BQQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

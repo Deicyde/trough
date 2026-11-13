@@ -7,7 +7,7 @@ statement: formalized
 
 # Overpartitions with even parts distinct
 
-33 results, 15 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html).
+33 results, 15 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html).
 
 ## Generating function of $(j, k)$-overpartition pairs with even parts distinct
 
@@ -23,7 +23,7 @@ $(q^4; q^4)_\infty^2 (-q^j; q^k)_\infty^2 / (q; q)_\infty^2$. It is used for $k 
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
 
-Formalized by `MetaMathlibExt.overpartitionPairEvenDistinctGF`, a definition declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-gf).
+Formalized by `MetaMathlibExt.overpartitionPairEvenDistinctGF`, a definition declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-gf).
 
 ## The number of $(j, k)$-overpartition pairs with even parts distinct
 
@@ -39,7 +39,7 @@ each distinct part congruent to $j$ modulo $k$ may be overlined.
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
 
-Formalized by `MetaMathlibExt.overpartitionPairEvenDistinct`, a definition declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct).
+Formalized by `MetaMathlibExt.overpartitionPairEvenDistinct`, a definition declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct).
 
 ## Cleared form of the generating function of $(j, k)$-overpartition pairs with even parts distinct
 
@@ -55,7 +55,7 @@ $G_{j,k} \cdot (q; q)_\infty^2 = (q^4; q^4)_\infty^2 (-q^j; q^k)_\infty^2$.
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
 
-Formalized by `MetaMathlibExt.overpartitionPairEvenDistinctGF_mul_qEulerProduct_sq`, a theorem declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-gf-mul).
+Formalized by `MetaMathlibExt.overpartitionPairEvenDistinctGF_mul_qEulerProduct_sq`, a theorem declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-gf-mul).
 
 ## The count of overpartition pairs of $0$ with even parts distinct
 
@@ -67,7 +67,7 @@ with even parts distinct equals $1$ (the pair of empty overpartitions).
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Section 1, Equation (2).
 
-Formalized by `MetaMathlibExt.overpartitionPairEvenDistinct_zero`, a theorem declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-zero).
+Formalized by `MetaMathlibExt.overpartitionPairEvenDistinct_zero`, a theorem declared in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-zero).
 
 ## Paksok–Saikia congruences for $(3, 3)$-overpartition pairs (Theorem 1)
 
@@ -89,7 +89,7 @@ second congruence is $53319$, and $\mathrm{bped}_{3,3}(53319) \equiv 4 \pmod{8}$
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_three_three_congr_neg_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-three-t).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_three_three_congr_neg_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-three-t).
 
 ## Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 2)
 
@@ -114,7 +114,7 @@ $\mathrm{bped}_{3,3}(14737) \equiv 8 \pmod{16}$, $\mathrm{bped}_{3,3}(1637) \equ
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_two_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_two_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n).
 
 ## Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 3)
 
@@ -139,7 +139,7 @@ $\mathrm{bped}_{3,3}(15637) \equiv 8 \pmod{16}$, $\mathrm{bped}_{3,3}(1737) \equ
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_two_nineteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-2).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_two_nineteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-2).
 
 ## Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 4)
 
@@ -165,7 +165,7 @@ $m = 1$ the printed argument is $12715$, and $\mathrm{bped}_{3,3}(12715) \equiv 
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_one_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-3).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_one_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-3).
 
 ## Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 5)
 
@@ -188,7 +188,7 @@ $\mathrm{bped}_{3,3}(13987) \equiv 4 \pmod{8}$.
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_three_thirteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-4).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_three_thirteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-congr-n-4).
 
 ## Paksok–Saikia congruences for $(3, 6)$-overpartition pairs (Theorem 6)
 
@@ -208,7 +208,7 @@ so $p \ge 5$ is assumed. The paper's unused quantifier $\beta$ is dropped.
 
 - Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_three_six_congr_neg_one_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-three-s).
+Stated but not proved: `MetaMathlibExt.overpartitionPairEvenDistinct_three_six_congr_neg_one_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionPairsEvenPartsDistinctWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#overpartition-pair-even-distinct-three-s).
 
 ## Ramanujan's 5-dissection of Euler's product
 
@@ -224,7 +224,7 @@ $f_1 = f_{25} \left( R(q^5)^{-1} - q - q^2 R(q^5) \right)$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.qPochhammerInf_five_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-pochhammer-inf-five-dissection).
+Stated but not proved: `MetaMathlibExt.qPochhammerInf_five_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-pochhammer-inf-five-dissection).
 
 ## Ramanujan's 7-dissection of Euler's product
 
@@ -240,7 +240,7 @@ $f_1 = f_{49} \left( B(q^7)/C(q^7) - q A(q^7)/B(q^7) - q^2 + q^5 C(q^7)/A(q^7) \
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.qPochhammerInf_seven_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-pochhammer-inf-seven-dissection).
+Stated but not proved: `MetaMathlibExt.qPochhammerInf_seven_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-pochhammer-inf-seven-dissection).
 
 ## The generating series for $\mathrm{ped}_{9,9}$
 
@@ -261,7 +261,7 @@ each part divisible by $9$ may be overlined.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equations (2) and (22).
 
-Formalized by `MetaMathlibExt.pedNineNineSeries`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-series).
+Formalized by `MetaMathlibExt.pedNineNineSeries`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-series).
 
 ## The partition function $\mathrm{ped}_{9,9}$
 
@@ -277,7 +277,7 @@ $n$ with even parts distinct.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equations (2) and (22).
 
-Formalized by `MetaMathlibExt.pedNineNine`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine).
+Formalized by `MetaMathlibExt.pedNineNine`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine).
 
 ## The generating series for $\mathrm{ped}_{9,18}$
 
@@ -298,7 +298,7 @@ each part congruent to $9$ modulo $18$ may be overlined.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equations (2) and (77).
 
-Formalized by `MetaMathlibExt.pedNineEighteenSeries`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-series).
+Formalized by `MetaMathlibExt.pedNineEighteenSeries`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-series).
 
 ## The partition function $\mathrm{ped}_{9,18}$
 
@@ -314,7 +314,7 @@ $n$ with even parts distinct.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equations (2) and (77).
 
-Formalized by `MetaMathlibExt.pedNineEighteen`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen).
+Formalized by `MetaMathlibExt.pedNineEighteen`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen).
 
 ## Generating function identity for $\mathrm{ped}_{9,9}$
 
@@ -329,7 +329,7 @@ $$f_1 f_9 \sum_{n \ge 0} \mathrm{ped}_{9,9}(n) q^n = f_4 f_{18}.$$
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equation (22).
 
-Formalized by `MetaMathlibExt.pedNineNine_generatingFunction`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-generating-function).
+Formalized by `MetaMathlibExt.pedNineNine_generatingFunction`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-generating-function).
 
 ## Product identity for the (9, 18)-overpartition generating function
 
@@ -342,7 +342,7 @@ $f_1 f_9 f_{36} \sum_{n \ge 0} \mathrm{ped}_{9,18}(n) q^n = f_4 f_{18}^2$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equation (77).
 
-Formalized by `MetaMathlibExt.pedNineEighteen_generatingFunction`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-generating-function).
+Formalized by `MetaMathlibExt.pedNineEighteen_generatingFunction`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-generating-function).
 
 ## Values of $\mathrm{ped}_{9,9}$ and $\mathrm{ped}_{9,18}$ at $0$
 
@@ -358,7 +358,7 @@ Both values count the empty overpartition.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, equations (22) and (77).
 
-Formalized by `MetaMathlibExt.pedNineNine_zero_and_pedNineEighteen_zero`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-zero-and-ped-nine-eighteen).
+Formalized by `MetaMathlibExt.pedNineNine_zero_and_pedNineEighteen_zero`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-zero-and-ped-nine-eighteen).
 
 ## Chan's matrix
 
@@ -374,7 +374,7 @@ to $0$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Section 2 (from H. C. Chan, Int. J. Number Theory 6 (2010), (11)-(19)).
 
-Formalized by `MetaMathlibExt.chanCubicMatrix`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#chan-cubic-matrix).
+Formalized by `MetaMathlibExt.chanCubicMatrix`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#chan-cubic-matrix).
 
 ## First six rows of Chan's matrix
 
@@ -388,7 +388,7 @@ the $i$th listed row, and $m_{i,j} = 0$ for $1 \le i < j \le 6$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Section 2.
 
-Formalized by `MetaMathlibExt.chanCubicMatrix_first_rows`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#chan-cubic-matrix-first-rows).
+Formalized by `MetaMathlibExt.chanCubicMatrix_first_rows`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#chan-cubic-matrix-first-rows).
 
 ## Coefficient vectors from Chan's matrix
 
@@ -410,7 +410,7 @@ The formalization indexes the vectors from $0$: its value at $(\alpha, i)$ is $x
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Section 2, equations (3)-(4), and Theorem 8.
 
-Formalized by `MetaMathlibExt.cubicCoeffVector`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#cubic-coeff-vector).
+Formalized by `MetaMathlibExt.cubicCoeffVector`, a definition declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#cubic-coeff-vector).
 
 ## Initial values of the cubic coefficient vectors
 
@@ -423,7 +423,7 @@ $(x_{2,1}, \dots, x_{2,5}) = (3, 81, 729, 0, 0)$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 8.
 
-Formalized by `MetaMathlibExt.cubicCoeffVector_one_two`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#cubic-coeff-vector-one-two).
+Formalized by `MetaMathlibExt.cubicCoeffVector_one_two`, a theorem declared in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#cubic-coeff-vector-one-two).
 
 ## The 2-dissection of $f_1^4$
 
@@ -439,7 +439,7 @@ $f_1^4 = \frac{f_4^{10}}{f_2^2 f_8^4} - 4q \frac{f_2^2 f_8^4}{f_4^2}$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Lemma 1, (7).
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_fourth_two_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-euler-product-fourth-two-dissection).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_fourth_two_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-euler-product-fourth-two-dissection).
 
 ## A 3-dissection of a quotient of Euler products
 
@@ -453,7 +453,7 @@ $f_1^2 / f_2 = f_9^2 / f_{18} - 2q f_3 f_{18}^2 / (f_6 f_9)$ with denominators c
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Lemma 3, (11).
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_sq_div_three_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-euler-product-sq-div-three-dissection).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_sq_div_three_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#q-euler-product-sq-div-three-dissection).
 
 ## Congruences modulo 32 for $\mathrm{ped}_{9,9}$
 
@@ -483,7 +483,7 @@ $16 f_1 f_6^3$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.pedNineNine_congruences_mod_thirtyTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-congruences-mod-thirty-two).
+Stated but not proved: `MetaMathlibExt.pedNineNine_congruences_mod_thirtyTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-congruences-mod-thirty-two).
 
 ## Congruences modulo 16 for $\mathrm{ped}_{9,9}$
 
@@ -523,7 +523,7 @@ $8 f_1^5$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.pedNineNine_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-congruences-mod-sixteen).
+Stated but not proved: `MetaMathlibExt.pedNineNine_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-congruences-mod-sixteen).
 
 ## Further congruences modulo 16 for $\mathrm{ped}_{9,9}$
 
@@ -560,7 +560,7 @@ $8 f_1^5$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.pedNineNine_more_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-more-congruences-mod-sixte).
+Stated but not proved: `MetaMathlibExt.pedNineNine_more_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-nine-more-congruences-mod-sixte).
 
 ## Congruences modulo 64 for (9, 18)-overpartitions with even parts distinct
 
@@ -585,7 +585,7 @@ The paper states (73) with $12 f_1^4 f_3^6 / f_2^2$ on the right; here $f_2^2$ i
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_sixtyFour` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-sixty).
+Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_sixtyFour` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-sixty).
 
 ## Congruences modulo 32 for (9, 18)-overpartitions with even parts distinct
 
@@ -616,7 +616,7 @@ All divisions by $4$ are exact.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_thirtyTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-thirty).
+Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_thirtyTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-thirty).
 
 ## Congruences modulo 16 and 8 for (9, 18)-overpartitions with even parts distinct
 
@@ -643,7 +643,7 @@ All divisions by $4$ are exact.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-sixtee).
+Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_sixteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-sixtee).
 
 ## Congruences modulo 9 and 27 for (9, 18)-overpartitions with even parts distinct
 
@@ -657,7 +657,7 @@ $\mathrm{ped}_{9,18}(729n + 547)$ are divisible by $27$.
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_nine_twentySeven` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-nine-t).
+Stated but not proved: `MetaMathlibExt.pedNineEighteen_congruences_mod_nine_twentySeven` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-congruences-mod-nine-t).
 
 ## Congruences modulo 27 for (9, 18)-overpartitions from the cubic coefficient vectors
 
@@ -682,7 +682,7 @@ The quotient $f_3 f_6 / (f_1 f_2)$ is the generating function of 3-regular cubic
 
 - Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.pedNineEighteen_cubicCoeffVector_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-cubic-coeff-vector-con).
+Stated but not proved: `MetaMathlibExt.pedNineEighteen_cubicCoeffVector_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PedOverpartitionsDissectionsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html#ped-nine-eighteen-cubic-coeff-vector-con).
 
 ## Depends on
 
@@ -691,4 +691,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Overpartitions with even parts distinct](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overpartitions-with-even-parts-distinct)

@@ -7,7 +7,7 @@ statement: formalized
 
 # α-Stirling matrices
 
-50 results, 33 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html).
+50 results, 43 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html).
 
 ## Entries of the α-Stirling matrix
 
@@ -26,7 +26,7 @@ $\hat S_{i,j} = \hat S_{i-1,j-1} + \alpha_j \hat S_{i-1,j}$ for $i, j \ge 2$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4, equation (a-1).
 
-Formalized by `MetaMathlibExt.alphaStirlingEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry).
+Formalized by `MetaMathlibExt.alphaStirlingEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry).
 
 ## Entries of the shifted α-Stirling matrix
 
@@ -46,7 +46,7 @@ $P_{i,j} = P_{i,j-1} + \alpha_j P_{i-1,j}$ for $i, j \ge 2$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4.
 
-Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry).
+Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry).
 
 ## Entries of the α-upper matrix
 
@@ -66,7 +66,7 @@ $0$, and $\mathsf{U}_{i,j} = \mathsf{U}_{i,j-1} + \alpha_{i-1} \mathsf{U}_{i-1,j
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 2, equation (u-1-2).
 
-Formalized by `MetaMathlibExt.alphaUpperEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry).
+Formalized by `MetaMathlibExt.alphaUpperEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry).
 
 ## Recurrence for the α-Stirling entries
 
@@ -78,7 +78,7 @@ all $i, j \ge 0$, $s_{i+1,j+1} = s_{i,j} + \alpha_{j+2} s_{i,j+1}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, equation (a-1).
 
-Formalized by `MetaMathlibExt.alphaStirlingEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry-succ-succ).
+Formalized by `MetaMathlibExt.alphaStirlingEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry-succ-succ).
 
 ## First column of the α-Stirling entries
 
@@ -90,7 +90,7 @@ $s_{i,0} = \alpha_1$ for every $i \ge 0$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, equation (a-1).
 
-Formalized by `MetaMathlibExt.alphaStirlingEntry_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry-zero-right).
+Formalized by `MetaMathlibExt.alphaStirlingEntry_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-entry-zero-right).
 
 ## Recurrence for the shifted α-Stirling entries
 
@@ -105,7 +105,7 @@ $$\mathsf{S}_{i+1,j+1} = \mathsf{S}_{i+1,j} + \alpha_{j+2} \mathsf{S}_{i,j+1}.$$
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4.
 
-Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry-succ-succ).
+Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry-succ-succ).
 
 ## First row of the shifted α-Stirling matrix
 
@@ -118,7 +118,7 @@ $j$, $\mathsf{S}_{0,j} = \alpha_1$; that is, the first row is constant, equal to
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4.
 
-Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry-zero-left).
+Formalized by `MetaMathlibExt.shiftedAlphaStirlingEntry_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-entry-zero-left).
 
 ## Recurrence for the α-upper entries
 
@@ -131,7 +131,7 @@ $u_{i+1,j+1} = u_{i+1,j} + \alpha_{i+1} u_{i,j} + (\alpha_{j+2} - \alpha_{i+1}) 
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, equation (u-1-2).
 
-Formalized by `MetaMathlibExt.alphaUpperEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-succ-succ).
+Formalized by `MetaMathlibExt.alphaUpperEntry_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-succ-succ).
 
 ## Small α-upper entries
 
@@ -147,7 +147,7 @@ $\mathsf{U}_{2,3} = \alpha_2 + \alpha_3$, as in the paper's display of $\mathsf{
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 2.
 
-Formalized by `MetaMathlibExt.alphaUpperEntry_one_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-one-one-one-two).
+Formalized by `MetaMathlibExt.alphaUpperEntry_one_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-one-one-one-two).
 
 ## The α-Stirling matrix
 
@@ -160,7 +160,7 @@ $0, 1, \dots, n - 1$, whose $(i, j)$ entry is $s_{i,j}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4.
 
-Formalized by `MetaMathlibExt.alphaStirlingMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-matrix).
+Formalized by `MetaMathlibExt.alphaStirlingMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-stirling-matrix).
 
 ## Shifted α-Stirling matrix
 
@@ -175,7 +175,7 @@ $\mathsf{S}_{i+1,j+1} = \mathsf{S}_{i+1,j} + \alpha_{j+2} \mathsf{S}_{i,j+1}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 1.4.
 
-Formalized by `MetaMathlibExt.shiftedAlphaStirlingMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-matrix).
+Formalized by `MetaMathlibExt.shiftedAlphaStirlingMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-matrix).
 
 ## The α-upper matrix
 
@@ -188,7 +188,7 @@ $0, 1, \dots, n - 1$, whose $(i, j)$ entry is $u_{i,j}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 2.
 
-Formalized by `MetaMathlibExt.alphaUpperMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-matrix).
+Formalized by `MetaMathlibExt.alphaUpperMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-matrix).
 
 ## α-upper entries are complete homogeneous symmetric polynomials
 
@@ -206,7 +206,7 @@ $j \ge i \ge 1$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Lemma 1 (`jis-2026-26.5.4-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.alphaUpperEntry_eq_hsymm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-eq-hsymm).
+Stated but not proved: `MetaMathlibExt.alphaUpperEntry_eq_hsymm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#alpha-upper-entry-eq-hsymm).
 
 ## Determinant of the α-upper matrix
 
@@ -218,7 +218,7 @@ $\mathsf{U}_\alpha(n)$ is $\det \mathsf{U}_\alpha(n) = \prod_{i=1}^{n} \alpha_i^
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Lemma 1 (`jis-2026-26.5.4-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.det_alphaUpperMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-alpha-upper-matrix).
+Stated but not proved: `MetaMathlibExt.det_alphaUpperMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-alpha-upper-matrix).
 
 ## LU decomposition of the shifted α-Stirling matrix
 
@@ -238,7 +238,7 @@ sides scale by $\alpha_1$ and $\mathsf{U}_\alpha(n)$ does not depend on $\alpha_
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 2 (`jis-2026-26.5.4-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.shiftedAlphaStirlingMatrix_eq_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-matrix-eq-mul).
+Stated but not proved: `MetaMathlibExt.shiftedAlphaStirlingMatrix_eq_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#shifted-alpha-stirling-matrix-eq-mul).
 
 ## Determinant of the shifted $\alpha$-Stirling matrix
 
@@ -253,7 +253,7 @@ $\det \mathsf{S}_\alpha(n) = \prod_{j=1}^{n} \alpha_j^{\,j-1}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 2 (`jis-2026-26.5.4-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.det_shiftedAlphaStirlingMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-shifted-alpha-stirling-matrix).
+Stated but not proved: `MetaMathlibExt.det_shiftedAlphaStirlingMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-shifted-alpha-stirling-matrix).
 
 ## Pascal diagonal matrices
 
@@ -266,7 +266,7 @@ is $\binom{m+b}{b}$ for every $b$ with $b + m < n$, and all its other entries ar
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 3.
 
-Formalized by `MetaMathlibExt.pascalDiagonalMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-diagonal-matrix).
+Formalized by `MetaMathlibExt.pascalDiagonalMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-diagonal-matrix).
 
 ## The zeroth Pascal diagonal matrix is the identity
 
@@ -280,7 +280,7 @@ for every $n \ge 0$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 3.
 
-Formalized by `MetaMathlibExt.pascalDiagonalMatrix_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-diagonal-matrix-zero).
+Formalized by `MetaMathlibExt.pascalDiagonalMatrix_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-diagonal-matrix-zero).
 
 ## First-column sequence for exponentials of Pascal diagonal matrices
 
@@ -295,7 +295,7 @@ $i \ne 1$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 3.
 
-Formalized by `MetaMathlibExt.pascalExpFirstColumn`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column).
+Formalized by `MetaMathlibExt.pascalExpFirstColumn`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column).
 
 ## First term of the Pascal first-column sequence
 
@@ -306,7 +306,7 @@ sequence $\alpha^{(k)}$ satisfies $\alpha^{(k)}_1 = 1$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 3.
 
-Formalized by `MetaMathlibExt.pascalExpFirstColumn_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-one).
+Formalized by `MetaMathlibExt.pascalExpFirstColumn_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-one).
 
 ## Vanishing terms of the Pascal first-column sequence
 
@@ -317,7 +317,7 @@ with $2 \le i \le k$, the first-column sequence $\alpha^{(k)}$ satisfies $\alpha
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 3.
 
-Formalized by `MetaMathlibExt.pascalExpFirstColumn_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-of-le).
+Formalized by `MetaMathlibExt.pascalExpFirstColumn_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-of-le).
 
 ## Recurrence for the Pascal first-column sequence
 
@@ -329,7 +329,7 @@ $\alpha^{(k)}_i = \binom{i-2}{k-1} \alpha^{(k)}_{i-k}$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 3.
 
-Formalized by `MetaMathlibExt.pascalExpFirstColumn_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-of-lt).
+Formalized by `MetaMathlibExt.pascalExpFirstColumn_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#pascal-exp-first-column-of-lt).
 
 ## Exponential of a Pascal diagonal matrix
 
@@ -352,7 +352,7 @@ $ki \ge n$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 3 (`jis-2026-26.5.4-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.exp_pascalDiagonalMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#exp-pascal-diagonal-matrix).
+Stated but not proved: `MetaMathlibExt.exp_pascalDiagonalMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#exp-pascal-diagonal-matrix).
 
 ## Factorial matrix of a power series
 
@@ -369,7 +369,7 @@ triangular matrix $M(f)$ of Moghaddamfar, Salehy and Salehy.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 3.
 
-Formalized by `MetaMathlibExt.powerSeriesFactorialMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix).
+Formalized by `MetaMathlibExt.powerSeriesFactorialMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix).
 
 ## Diagonal of the factorial matrix of a power series
 
@@ -383,7 +383,7 @@ equals the constant coefficient $[t^0] f$ of $f$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Section 3.
 
-Formalized by `MetaMathlibExt.powerSeriesFactorialMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix-apply-self).
+Formalized by `MetaMathlibExt.powerSeriesFactorialMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix-apply-self).
 
 ## Multiplicativity of the factorial matrix of a power series
 
@@ -401,7 +401,7 @@ infinite matrix $M(h)$, this is equivalent to $M(f) M(g) = M(fg)$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Lemma 5 (`jis-2026-26.5.4-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.powerSeriesFactorialMatrix_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix-mul).
+Stated but not proved: `MetaMathlibExt.powerSeriesFactorialMatrix_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#power-series-factorial-matrix-mul).
 
 ## Banded Hessenberg–Toeplitz determinants and linear recurrences
 
@@ -420,7 +420,7 @@ and also for $n = 0$.
 
 - A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *A Generalization of the Pascal and Stirling Matrices*, Journal of Integer Sequences 29 (2026), Article 26.5.4, Theorem 7 (`jis-2026-26.5.4-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.det_hessenbergToeplitz_eq_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-hessenberg-toeplitz-eq-recurrence).
+Stated but not proved: `MetaMathlibExt.det_hessenbergToeplitz_eq_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PascalStirlingGeneralizationWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#det-hessenberg-toeplitz-eq-recurrence).
 
 ## Entries of the Stirling-like matrix $S_\alpha$
 
@@ -430,7 +430,7 @@ $i, j$ are defined recursively by $S_{1,j} = \alpha_{j-1}$ for $j \ge 1$, $S_{i,
 $i \ge 2$, $S_{i,j} = S_{i-1,j-1} + j \, S_{i-1,j}$ for $i, j \ge 2$, and $S_{i,j} = 0$ when
 $i = 0$ or $j = 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-entry).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeEntry`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-entry).
 
 ## Entries of the matrix $U_\alpha$
 
@@ -443,7 +443,7 @@ $$U_{i,j} = U_{i-1,j-1} + (j - i + 1)\, U_{i-1,j}.$$
 
 Entries with $i = 0$ or $j = 0$ are set to $0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry).
 
 ## The sum $\Psi_\alpha(k)$
 
@@ -451,7 +451,7 @@ For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$ of
 rationals and a natural number $k$, $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \frac{\alpha_l}{(k-1-l)!}$;
 in particular $\Psi_\alpha(0) = 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.psi`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#psi).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.psi`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#psi).
 
 ## The sum $\Omega(\alpha, j)$
 
@@ -461,7 +461,7 @@ $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$, where
 $m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ is the falling factorial; in particular
 $\Omega(\alpha, 0) = 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.omega`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#omega).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.omega`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#omega).
 
 ## The sum $\Lambda(\alpha, k_1, k_2)$
 
@@ -475,7 +475,7 @@ $$
 
 where differences of natural numbers are truncated at $0$ (this matters only when $k_2 < k_1$).
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.lambda`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#lambda).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.lambda`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#lambda).
 
 ## Entries of the matrix $R_\alpha$
 
@@ -485,7 +485,7 @@ $\frac{(-1)^{j-i}}{(j-i)!} \Psi_\alpha(i)$ if $i \le j$ and $0$ if $i > j$, wher
 $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \frac{\alpha_l}{(k-1-l)!}$. The matrix $R_\alpha$ uses the
 indices $i, j \ge 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-entry).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rEntry`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-entry).
 
 ## Entries of the matrix $\tilde R_\alpha$
 
@@ -496,7 +496,7 @@ $i > j$, where $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \a
 $m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ is the falling factorial, $0 - 1$ is read as $0$, and
 division by $0$ gives $0$. The matrix $\tilde R_\alpha$ uses the indices $i, j \ge 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-entry).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeEntry`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-entry).
 
 ## Stirling-like matrix
 
@@ -506,7 +506,7 @@ with rows and columns indexed by $1, \dots, n$, whose $(i, j)$ entry is $S_{i,j}
 $S_{1,j} = \alpha_{j-1}$ for $j \ge 1$, $S_{i,1} = \alpha_0$ for $i \ge 2$, and
 $S_{i,j} = S_{i-1,j-1} + j \, S_{i-1,j}$ for $i, j \ge 2$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix).
 
 ## The matrix $U_\alpha(n)$
 
@@ -516,7 +516,7 @@ $(i, j)$ entry, for $1 \le i, j \le n$, is $U_{i,j}$, where $U_{1,j} = \alpha_{j
 $j \ge 1$, $U_{i,1} = 0$ for $i \ge 2$, and $U_{i,j} = U_{i-1,j-1} + (j - i + 1) \, U_{i-1,j}$
 for $i, j \ge 2$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-matrix).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uMatrix`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-matrix).
 
 ## The matrix $R_\alpha(n)$
 
@@ -526,7 +526,7 @@ $(i, j)$ entry, for $1 \le i, j \le n$, is $\frac{(-1)^{j-i}}{(j-i)!} \Psi_\alph
 $i \le j$ and $0$ if $i > j$, where
 $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \frac{\alpha_l}{(k-1-l)!}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-matrix).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rMatrix`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-matrix).
 
 ## The matrix $\tilde R_\alpha(n)$
 
@@ -538,7 +538,7 @@ $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$,
 $m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ is the falling factorial, and division by $0$ gives
 $0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-matrix).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-matrix).
 
 ## Stirling matrix of the second kind
 
@@ -547,14 +547,14 @@ second kind $S(n)$ is the $n \times n$ rational matrix, with rows and columns in
 $1, \dots, n$, whose $(i, j)$ entry is the Stirling number of the second kind $S(i, j)$, the
 number of partitions of an $i$-element set into $j$ nonempty blocks.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingMatrix2`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-matrix2).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingMatrix2`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-matrix2).
 
 ## The Vandermonde matrix $V(n)$
 
 For $n \in \mathbb{N}$, $V(n)$ is the $n \times n$ rational
 matrix whose entry in row $i$ and column $j$ ($1 \le i, j \le n$) is $V_{i,j} = j^{i-1}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.vandermondeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#vandermonde-matrix).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.vandermondeMatrix`, a definition declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#vandermonde-matrix).
 
 ## Explicit formula for the entries of $U_\alpha$
 
@@ -570,7 +570,7 @@ for all $1 \le i \le j$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Lemma 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_lambda` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry-eq-lambda).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_lambda`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry-eq-lambda).
 
 ## The matrix $U_\alpha$ is upper triangular
 
@@ -584,7 +584,7 @@ natural numbers $j < i$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Lemma 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_zero_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry-eq-zero-of-lt).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_zero_of_lt`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#u-entry-eq-zero-of-lt).
 
 ## Column sums of the matrix $R_\alpha$
 
@@ -597,7 +597,7 @@ $R_{i,j} = 0$ for $i > j$. Then for every $j \ge 1$, $\sum_{i=1}^{j} R_{i,j} = \
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Lemma 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_rEntry_col` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-r-entry-col).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_rEntry_col`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-r-entry-col).
 
 ## Two factorizations of the Stirling-like matrix
 
@@ -618,7 +618,7 @@ $S_\alpha(n) = V(n) \, R_\alpha(n)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Theorem 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_decomp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix-decomp).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_decomp`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix-decomp).
 
 ## Determinant of the Stirling-like matrix
 
@@ -633,7 +633,7 @@ $\det S_\alpha(n) = \prod_{j=1}^{n} \Omega(\alpha, j)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Theorem 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_det` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix-det).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_det`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#stirling-like-matrix-det).
 
 ## Second-kind Stirling transform of the $\Lambda$ coefficients
 
@@ -650,7 +650,7 @@ $$\sum_{k=1}^{\min(i,j)} S(i,k) \, \Lambda(\alpha, k, j) =
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Proposition 5.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_lambda` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-stirling-second-lambda).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_lambda`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-stirling-second-lambda).
 
 ## The inverse of the matrix $R_\alpha(n)$
 
@@ -669,7 +669,7 @@ $\tilde R_\alpha(n) = R_\alpha(n)^{-1}$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Lemma 7.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix_eq_inv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-matrix-eq-inv).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix_eq_inv`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#r-tilde-matrix-eq-inv).
 
 ## Stirling and falling-factorial sum of the $\Lambda$ coefficients
 
@@ -688,7 +688,7 @@ $$\sum_{k_1=1}^{i} \sum_{k_2=k_1}^{j} S(i,k_1) \, (j-1)^{\underline{k_2-1}} \,
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Proposition 8.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_descFactorial_lambda` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-stirling-second-desc-factorial-lambd).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_descFactorial_lambda`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 700](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L700). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-stirling-second-desc-factorial-lambd).
 
 ## First-kind Stirling formula for $\Lambda(\alpha, i, j)$
 
@@ -707,7 +707,7 @@ equals $\Lambda(\alpha, i, j)$ if $i \le j$ and $0$ if $i > j$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Proposition 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-signed-psi-eq).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_eq`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-signed-psi-eq).
 
 ## Kronecker-delta identity for signed Stirling numbers of the first kind
 
@@ -722,7 +722,7 @@ $$\sum_{k_1=1}^{i} \sum_{k_2=1}^{j}
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, "Some Identities Involving Stirling Numbers Arising from Matrix Decompositions", Corollary 10.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_eq_delta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-signed-eq-delta).
+Formalized by `MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_eq_delta`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean, line 828](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean#L828). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html#sum-signed-eq-delta).
 
 ## Depends on
 
@@ -731,4 +731,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: α-Stirling matrices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/stirling-matrices)

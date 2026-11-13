@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 15.106 Weakly étale ring maps to 15.122 Determinants of…
+# 15.106 Weakly étale ring maps to 15.121 Perfect complexes and…
 
 - [15.106 Weakly étale ring maps](15-106-weakly-etale-ring-maps.md)
 - [15.107 Weakly étale algebras over fields](15-107-weakly-etale-algebras-over-fields.md)
@@ -20,4 +20,3 @@ navigation: transparent
 - [15.119 Picard groups of rings](15-119-picard-groups-of-rings.md)
 - [15.120 Determinants](15-120-determinants.md)
 - [15.121 Perfect complexes and K-groups](15-121-perfect-complexes-and-k-groups.md)
-- [15.122 Determinants of endomorphisms of finite length modules](15-122-determinants-of-endomorphisms-of-finite-l.md)

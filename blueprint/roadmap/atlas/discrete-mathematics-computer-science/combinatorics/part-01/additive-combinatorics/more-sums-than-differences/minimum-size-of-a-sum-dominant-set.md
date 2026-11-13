@@ -8,7 +8,7 @@ proof: formalized
 
 # Minimum size of a sum-dominant set
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html).
 
 ## Chu's theorem for arbitrary finite sets of integers
 
@@ -18,7 +18,7 @@ $A - A = \{a - b : a, b \in A\}$ is the difference set of $A$.
 
 This is Chu's theorem without the assumption that the elements of $A$ are nonnegative.
 
-Formalized by `MetaMathlibExt.card_add_le_card_sub_of_card_lt_six`, a theorem declared in [MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean, line 1116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean#L1116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html#card-add-le-card-sub-of-card-lt-six).
+Formalized by `MetaMathlibExt.card_add_le_card_sub_of_card_lt_six`, a theorem declared in [MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean, line 1116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean#L1116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html#card-add-le-card-sub-of-card-lt-six).
 
 ## Chu's theorem: sets with fewer than six elements are not sum-dominant
 
@@ -34,7 +34,7 @@ bound holds for every finite set of integers with fewer than six elements.
 
 - Hùng Việt Chu, "When Sets Are Not Sum-Dominant," Journal of Integer Sequences 22 (2019), Article 19.3.7, Theorem, lines 126–128, https://cs.uwaterloo.ca/journals/JIS/VOL22/Chu/chu5.tex
 
-Formalized by `MetaMathlibExt.no_small_sum_dominant`, a theorem declared in [MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean, line 1140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean#L1140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html#no-small-sum-dominant).
+Formalized by `MetaMathlibExt.no_small_sum_dominant`, a theorem declared in [MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean, line 1140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/NoSmallSumDominantSet.lean#L1140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html#no-small-sum-dominant).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimum size of a sum-dominant set](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/minimum-size-of-a-sum-dominant-set)

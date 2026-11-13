@@ -7,7 +7,7 @@ statement: formalized
 
 # Factorials bounded by powers of the golden ratio
 
-21 results, 12 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html).
+21 results, 12 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html).
 
 ## Golden factorial exponent
 
@@ -22,7 +22,7 @@ number $n!$ is never a power of $\varphi$ for $n \ge 2$, and $\alpha(1) = 1$.
 
 - Aleksandar Petojević, Marjana Gorjanac Ranitović, Dragan Rastovac and Milinko Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2, definition (4).
 
-Formalized by `MetaMathlibExt.goldenFactorialExponent`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent).
+Formalized by `MetaMathlibExt.goldenFactorialExponent`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent).
 
 ## Every factorial is at most a positive power of the golden ratio
 
@@ -36,7 +36,7 @@ golden factorial exponent of $n$, is nonempty.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2, definition (4).
 
-Formalized by `MetaMathlibExt.exists_goldenRatio_pow_ge_factorial`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#exists-golden-ratio-pow-ge-factorial).
+Formalized by `MetaMathlibExt.exists_goldenRatio_pow_ge_factorial`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#exists-golden-ratio-pow-ge-factorial).
 
 ## Defining property of the golden factorial exponent
 
@@ -49,7 +49,7 @@ $n! \le \varphi^{\alpha(n)}$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2, definition (4).
 
-Formalized by `MetaMathlibExt.goldenFactorialExponent_mem`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-mem).
+Formalized by `MetaMathlibExt.goldenFactorialExponent_mem`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-mem).
 
 ## Minimality of the golden factorial exponent
 
@@ -62,7 +62,7 @@ then $\alpha(n) \le m$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2, definition (4).
 
-Formalized by `MetaMathlibExt.goldenFactorialExponent_le`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-le).
+Formalized by `MetaMathlibExt.goldenFactorialExponent_le`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-le).
 
 ## Golden factorial exponent of $1$
 
@@ -74,7 +74,7 @@ $\alpha(1) = 1$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Table 3.
 
-Formalized by `MetaMathlibExt.goldenFactorialExponent_one`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-one).
+Formalized by `MetaMathlibExt.goldenFactorialExponent_one`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-one).
 
 ## Golden factorial exponent of $2$
 
@@ -88,7 +88,7 @@ This holds because $\varphi < 2 \le \varphi^2 = \varphi + 1$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Table 3.
 
-Formalized by `MetaMathlibExt.goldenFactorialExponent_two`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-two).
+Formalized by `MetaMathlibExt.goldenFactorialExponent_two`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-two).
 
 ## Alternating-sign Fibonacci sequence
 
@@ -100,7 +100,7 @@ $d_{m+2} = d_{m+1} + d_m + (-1)^{m+2}$ for every natural number $m$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2 (definition before Lemma 3).
 
-Formalized by `MetaMathlibExt.alternatingSignFibonacci`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci).
+Formalized by `MetaMathlibExt.alternatingSignFibonacci`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci).
 
 ## Recurrence of the alternating-sign Fibonacci sequence
 
@@ -111,7 +111,7 @@ the alternating-sign Fibonacci sequence $d$ satisfies $d_{m+2} = d_{m+1} + d_m +
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 2.2.
 
-Formalized by `MetaMathlibExt.alternatingSignFibonacci_add_two`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci-add-two).
+Formalized by `MetaMathlibExt.alternatingSignFibonacci_add_two`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci-add-two).
 
 ## First values of the alternating-sign Fibonacci sequence
 
@@ -122,7 +122,7 @@ sequence $d$ satisfies $d_0 = 0$, $d_1 = 1$, $d_2 = 2$, $d_3 = 2$ and $d_4 = 5$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Example 5.
 
-Formalized by `MetaMathlibExt.alternatingSignFibonacci_small_values`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci-small-values).
+Formalized by `MetaMathlibExt.alternatingSignFibonacci_small_values`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#alternating-sign-fibonacci-small-values).
 
 ## Kurepa's partial integral
 
@@ -140,7 +140,7 @@ agrees with $\frac{t^n - 1}{t - 1}$ for $t \ne 1$, and the singularity at $t = 1
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 1 (the function `!z(x)`) and Sections 3.1-3.3.
 
-Formalized by `MetaMathlibExt.kurepaPartialIntegral`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral).
+Formalized by `MetaMathlibExt.kurepaPartialIntegral`, a definition declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral).
 
 ## Kurepa's partial integral vanishes at zero
 
@@ -151,7 +151,7 @@ integral $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ satisfies $K_n(0)
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 1.
 
-Formalized by `MetaMathlibExt.kurepaPartialIntegral_zero`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-zero).
+Formalized by `MetaMathlibExt.kurepaPartialIntegral_zero`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-zero).
 
 ## Increment bounds for the golden factorial exponent
 
@@ -166,7 +166,7 @@ $$\alpha(n-1) + \lfloor \log_\varphi n \rfloor \le \alpha(n) \le
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 2 (`jis-2024-24.5.7-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.goldenFactorialExponent_succ_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-succ-bounds).
+Stated but not proved: `MetaMathlibExt.goldenFactorialExponent_succ_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#golden-factorial-exponent-succ-bounds).
 
 ## Counting integers by their golden-ratio logarithm
 
@@ -179,7 +179,7 @@ $\lfloor \log_\varphi n \rfloor = m$ equals $d(m)$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 3 (`jis-2024-24.5.7-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.ncard_floor_logb_goldenRatio_eq_alternatingSignFibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#ncard-floor-logb-golden-ratio-eq-alterna).
+Stated but not proved: `MetaMathlibExt.ncard_floor_logb_goldenRatio_eq_alternatingSignFibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#ncard-floor-logb-golden-ratio-eq-alterna).
 
 ## Existence of the Lambert sequences
 
@@ -197,7 +197,7 @@ $c = 4/(7m)$ for an integer $m \ge 1$ it is the paper's $A_{n,m}$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Section 3.1 (the lower branch `W₋₁` defining `a n` and `A n m`).
 
-Formalized by `MetaMathlibExt.exists_lambertSequence`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#exists-lambert-sequence).
+Formalized by `MetaMathlibExt.exists_lambertSequence`, a theorem declared in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#exists-lambert-sequence).
 
 ## The golden factorial exponent exceeds the Lambert sequence
 
@@ -217,7 +217,7 @@ is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Theorem 6 (`jis-2024-24.5.7-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.lambertSequence_lt_goldenFactorialExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#lambert-sequence-lt-golden-factorial-exp).
+Stated but not proved: `MetaMathlibExt.lambertSequence_lt_goldenFactorialExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#lambert-sequence-lt-golden-factorial-exp).
 
 ## A linear lower bound for the Lambert sequence
 
@@ -236,7 +236,7 @@ real branch of the Lambert W function.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 8 (`jis-2024-24.5.7-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.two_mul_sub_four_lt_lambertSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#two-mul-sub-four-lt-lambert-sequence).
+Stated but not proved: `MetaMathlibExt.two_mul_sub_four_lt_lambertSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#two-mul-sub-four-lt-lambert-sequence).
 
 ## Partial exponential sums at the Lambert sequence
 
@@ -258,7 +258,7 @@ is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Lemma 9 (`jis-2024-24.5.7-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_div_factorial_lt_lambertSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#sum-pow-div-factorial-lt-lambert-sequenc).
+Stated but not proved: `MetaMathlibExt.sum_pow_div_factorial_lt_lambertSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#sum-pow-div-factorial-lt-lambert-sequenc).
 
 ## Lambert bounds for the left factorial
 
@@ -280,7 +280,7 @@ is its $b(n)$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Theorem 10 (`jis-2024-24.5.7-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_lambertSequence_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-lambert-sequence).
+Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_lambertSequence_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-lambert-sequence).
 
 ## Left factorial bounds at the golden factorial exponent
 
@@ -294,7 +294,7 @@ golden ratio. Then $\beta(n) = K_n(\alpha(n))$ satisfies $\beta(n) < {!n} < \bet
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Theorem 12 (`jis-2024-24.5.7-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_goldenFactorialExponent_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-golden-factorial).
+Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_goldenFactorialExponent_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-golden-factorial).
 
 ## Two-parameter Lambert bounds for the left factorial
 
@@ -316,7 +316,7 @@ $K_n(A)$ is its $B(n, m)$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Theorem 14 (`jis-2024-24.5.7-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_lambertSequence_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-lambert-sequence-2).
+Stated but not proved: `MetaMathlibExt.kurepaPartialIntegral_lambertSequence_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#kurepa-partial-integral-lambert-sequence-2).
 
 ## Floor formulas for the left factorial
 
@@ -336,7 +336,7 @@ $\lfloor K_n(A) + \frac{1}{m} \rfloor = {!n}$.
 
 - Petojević, Gorjanac Ranitović, Rastovac and Mandić, *The Golden Ratio, Factorials, and the Lambert W Function*, Journal of Integer Sequences 27 (2024), Article 24.5.7, Corollary 15 (`jis-2024-24.5.7-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.leftFactorial_eq_floor_kurepaPartialIntegral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#left-factorial-eq-floor-kurepa-partial-i).
+Stated but not proved: `MetaMathlibExt.leftFactorial_eq_floor_kurepaPartialIntegral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GoldenRatioLeftFactorialLambertWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html#left-factorial-eq-floor-kurepa-partial-i).
 
 ## Depends on
 
@@ -345,4 +345,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Factorials bounded by powers of the golden ratio](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/factorials-bounded-by-powers-of-the-golden-ratio)

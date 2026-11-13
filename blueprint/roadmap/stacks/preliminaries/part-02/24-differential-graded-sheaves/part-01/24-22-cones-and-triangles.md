@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.22 Cones and triangles
 
-Section 24.22 of the Stacks Project, [Tag 0FS3](https://stacks.math.columbia.edu/tag/0FS3). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.22 of the Stacks Project, [Tag 0FS3](https://stacks.math.columbia.edu/tag/0FS3). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FS4, a lemma
 
 [Tag 0FS4](https://stacks.math.columbia.edu/tag/0FS4) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.hasZeroObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L740). The attribute's comment: “axiom\_a”.
+**`SheafOfModules.DifferentialGradedModule.hasZeroObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L740). The attribute's comment: “axiom\_a”.
 
 > The zero differential graded module has unique homogeneous maps to and from every object in
 > every degree.
@@ -30,7 +30,7 @@ theorem hasZeroObject :
           Subsingleton ((dgCategoryData A).category.Hom M Z n))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.hasBinaryBiproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 856](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L856). The attribute's comment: “axiom\_a”.
+**`SheafOfModules.DifferentialGradedModule.hasBinaryBiproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 856](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L856). The attribute's comment: “axiom\_a”.
 
 > Any two right differential graded modules admit a differential graded direct sum with closed
 > degree-zero structure maps.
@@ -41,7 +41,7 @@ theorem hasBinaryBiproducts
     Nonempty (DGCategory.BinaryBiproductData (dgCategoryData A).category M N)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shiftAxiomB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean, line 1421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean#L1421). The attribute's comment: “axiom\_b”.
+**`SheafOfModules.DifferentialGradedModule.shiftAxiomB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean, line 1421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean#L1421). The attribute's comment: “axiom\_b”.
 
 > The canonical DG shifts and Hom-complex shift isomorphisms for sheaf DG modules.
 
@@ -53,7 +53,7 @@ noncomputable def shiftAxiomB : CanonicalShiftAxiomB.{u, v, w} A
 
 [Tag 0FS5](https://stacks.math.columbia.edu/tag/0FS5) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.shiftPackage_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L324). The attribute's comment: “fixed shifted module for the canonical cone projection”.
+**`SheafOfModules.DifferentialGradedModule.shiftPackage_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L324). The attribute's comment: “fixed shifted module for the canonical cone projection”.
 
 > The degree-one shift of a right differential graded module exists with
 > the unchanged right action.
@@ -63,7 +63,7 @@ theorem shiftPackage_nonempty {A : DifferentialGradedAlgebra.{t, a} R}
     (K : DifferentialGradedModule.{t, a, m} A) : Nonempty (ShiftPackage K)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.conePackage_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 613](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L613). The attribute's comment: “existence of the cone with its canonical maps”.
+**`SheafOfModules.DifferentialGradedModule.conePackage_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L613). The attribute's comment: “existence of the cone with its canonical maps”.
 
 > The mapping-cone construction exists with its componentwise action and
 > canonical inclusion and projection.
@@ -73,7 +73,7 @@ theorem conePackage_nonempty {A : DifferentialGradedAlgebra.{t, a} R}
     {K L : DifferentialGradedModule.{t, a, m} A} (f : K ⟶ L) : Nonempty (ConePackage f)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.conePackage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L695). The attribute's comment: “the cone construction”.
+**`SheafOfModules.DifferentialGradedModule.conePackage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCone.lean#L695). The attribute's comment: “the cone construction”.
 
 > The cone and its canonical maps, characterized by the
 > mapping-cone complex and the direct-sum action.
@@ -87,7 +87,7 @@ noncomputable def conePackage {A : DifferentialGradedAlgebra.{t, a} R}
 
 [Tag 0FS6](https://stacks.math.columbia.edu/tag/0FS6) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.coneSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomC.lean, line 861](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomC.lean#L861).
+**`SheafOfModules.DifferentialGradedModule.coneSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomC.lean, line 861](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomC.lean#L861).
 
 > The differential graded category of right sheaf modules admits cones whose connecting
 > arrows are the shifts of the original morphisms, using the fixed axiom (B) shift.
@@ -104,7 +104,7 @@ theorem coneSituation {X : AlgebraicGeometry.RingedSite.{u, u, u}}
 
 [Tag 0FS7](https://stacks.math.columbia.edu/tag/0FS7) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instHasShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L702). The attribute's comment: “part (1): the shift functors”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instHasShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L702). The attribute's comment: “part (1): the shift functors”.
 
 > The translation functors of the homotopy category of right differential graded modules,
 > lifted from the differential graded shifts along the identification of the two homotopy
@@ -114,7 +114,7 @@ theorem coneSituation {X : AlgebraicGeometry.RingedSite.{u, u, u}}
 noncomputable instance instHasShift : HasShift (HomotopyCategory.{u, v, w} A) ℤ
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instPretriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L727). The attribute's comment: “the pre-triangulated structure”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instPretriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L727). The attribute's comment: “the pre-triangulated structure”.
 
 > The homotopy category of right differential graded modules is pretriangulated.
 
@@ -123,7 +123,7 @@ noncomputable instance instPretriangulated :
     Pretriangulated (HomotopyCategory.{u, v, w} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instIsTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L734).
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.instIsTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 734](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L734).
 
 > **Tag 0FS7.** The homotopy category of right differential graded modules over a sheaf of
 > differential graded algebras on a ringed site is a triangulated category.
@@ -132,7 +132,7 @@ noncomputable instance instPretriangulated :
 instance instIsTriangulated : IsTriangulated (HomotopyCategory.{u, v, w} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.distinguished_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 795](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L795). The attribute's comment: “part (2): the distinguished triangles”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.distinguished_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 795](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L795). The attribute's comment: “part (2): the distinguished triangles”.
 
 > A triangle of the homotopy category of right differential graded modules is distinguished
 > exactly when it is isomorphic to the triangle built from an admissible short exact sequence of
@@ -156,7 +156,7 @@ theorem distinguished_iff (T : Pretriangulated.Triangle (HomotopyCategory.{u, v,
               (dgConeSituation A).shift E)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.shiftFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L828). The attribute's comment: “part (1): the shift functors are those of Section 24.20”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.shiftFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryTriangulated.lean#L828). The attribute's comment: “part (1): the shift functors are those of Section 24.20”.
 
 > The degree-one translation of the homotopy category is the shift of differential graded
 > modules of Stacks 0FS5.
@@ -171,7 +171,7 @@ theorem shiftFunctor_obj (M : DifferentialGradedModule.{u, v, w} A) :
 
 [Tag 0FS8](https://stacks.math.columbia.edu/tag/0FS8) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.coneIdentity_hom_equiv_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeIdentity.lean, line 944](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeIdentity.lean#L944).
+**`SheafOfModules.DifferentialGradedModule.coneIdentity_hom_equiv_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeIdentity.lean, line 944](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeIdentity.lean#L944).
 
 > A morphism from the identity cone is uniquely specified by a pair of global
 > sections `(x,y)` with `x = d y`; the equivalence evaluates at the canonical
@@ -204,7 +204,7 @@ theorem coneIdentity_hom_equiv_sections (A : DifferentialGradedAlgebra.{t, a} R)
 
 [Tag 0FS9](https://stacks.math.columbia.edu/tag/0FS9) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.isGrothendieckAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedGrothendieck.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedGrothendieck.lean#L129).
+**`SheafOfModules.DifferentialGradedModule.isGrothendieckAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedGrothendieck.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedGrothendieck.lean#L129).
 
 > **Stacks Project, Tag 0FS9.** Let `(C, O)` be a ringed site and let `(A, d)` be a
 > differential graded `O`-algebra. The category `Mod(A, d)` of right differential graded
@@ -227,4 +227,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.22, Tag 0FS3](https://stacks.math.columbia.edu/tag/0FS3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

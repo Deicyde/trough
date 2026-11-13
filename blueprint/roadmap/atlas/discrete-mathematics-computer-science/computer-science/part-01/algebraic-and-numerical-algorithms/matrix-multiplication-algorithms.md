@@ -8,7 +8,7 @@ proof: formalized
 
 # Matrix multiplication algorithms
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html).
 
 ## Rectangular matrix accumulation
 
@@ -19,7 +19,7 @@ accumulator $C$: for $i < p$, then $j < r$, then $k < q$, each in increasing ord
 $C_{ij}$ by $C_{ij} + A_{ik} B_{kj}$. It returns the final matrix together with a cost pair
 (scalar multiplications, scalar additions), charging one of each for every such update.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate).
+Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate).
 
 ## Square matrix accumulation
 
@@ -29,7 +29,7 @@ matrix accumulation on $A$, $B$, $C$ is rectangular matrix accumulation on $A$, 
 three dimensions equal to $n$: it adds $AB$ to the accumulator $C$ and returns the result with
 its cost pair (scalar multiplications, scalar additions).
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate).
 
 ## Entries of rectangular matrix accumulation
 
@@ -39,7 +39,7 @@ matrices over $\alpha$, stored as vectors of rows. For all $i < p$ and $j < r$, 
 of the matrix returned by rectangular matrix accumulation on $A$, $B$, $C$ is
 $C_{ij} + \sum_{k < q} A_{ik} B_{kj}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-apply).
+Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-apply).
 
 ## Rectangular matrix accumulation computes $C + AB$
 
@@ -49,7 +49,7 @@ matrices over $\alpha$, stored as vectors of rows. The matrix returned by rectan
 accumulation on $A$, $B$, $C$ equals $C + AB$, where $AB$ is the matrix product,
 $(AB)_{ij} = \sum_{k < q} A_{ik} B_{kj}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-ret).
 
 ## Operation count of rectangular matrix accumulation
 
@@ -59,7 +59,7 @@ $p \times r$ matrices over $\alpha$. Rectangular matrix accumulation on $A$, $B$
 $(pqr, pqr)$: it charges exactly $pqr$ scalar multiplications and exactly $pqr$ scalar
 additions.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-time).
 
 ## Rectangular matrix accumulation with zero inner dimension
 
@@ -68,7 +68,7 @@ addition and a multiplication. If $A$ is a $p \times 0$ matrix, $B$ a $0 \times 
 a $p \times r$ matrix over $\alpha$, then rectangular matrix accumulation on $A$, $B$, $C$ returns
 $C$ unchanged at cost $(0, 0)$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_zero_inner`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-zero-inner).
+Formalized by `Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_zero_inner`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#rectangular-matrix-accumulate-zero-inner).
 
 ## Square matrix accumulation computes $C + AB$
 
@@ -77,7 +77,7 @@ monoid with a multiplication, and let $A$, $B$, $C$ be $n \times n$ matrices ove
 as vectors of rows. The matrix returned by square matrix accumulation on $A$, $B$, $C$ equals
 $C + AB$, where $AB$ is the matrix product, $(AB)_{ij} = \sum_{k < n} A_{ik} B_{kj}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate-ret).
 
 ## Operation count of square matrix accumulation
 
@@ -86,7 +86,7 @@ and a multiplication, and let $A$, $B$, $C$ be $n \times n$ matrices over $\alph
 accumulation on $A$, $B$, $C$ has cost $(n^3, n^3)$: it charges exactly $n^3$ scalar
 multiplications and exactly $n^3$ scalar additions.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Multiply.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Multiply.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#matrix-accumulate-time).
 
 ## Recursive matrix multiply-accumulate
 
@@ -107,7 +107,7 @@ additions.
 
 Only these two operations are charged; calls, indexing and allocation are free.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate).
+Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate).
 
 ## Entries of the recursive matrix multiply-accumulate
 
@@ -118,7 +118,7 @@ indices running from $0$ to $n - 1$. For all indices $i, j < n$, entry $(i, j)$ 
 returned by the recursive multiply-accumulate procedure on $A$, $B$, $C$ equals
 $c_{ij} + \sum_{t < n} a_{it} b_{tj}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-apply).
+Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-apply).
 
 ## Correctness of the recursive matrix multiply-accumulate
 
@@ -129,7 +129,7 @@ from $0$ to $n - 1$. Viewed as a matrix, the result returned by the recursive mu
 procedure on $A$, $B$, $C$ equals $C + AB$, where $AB$ is the matrix product with entries
 $(AB)_{ij} = \sum_{t < n} a_{it} b_{tj}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-ret).
 
 ## Operation count of the recursive matrix multiply-accumulate
 
@@ -141,7 +141,7 @@ Since $8^k = n^3$, each count is the cube of the dimension.
 
 Calls, indexing and allocation are uncharged.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.recursiveMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Recursive.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Recursive.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html#recursive-matrix-accumulate-time).
 
 ## Depends on
 
@@ -150,4 +150,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Matrix multiplication algorithms](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/matrix-multiplication-algorithms)

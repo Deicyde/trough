@@ -10,7 +10,7 @@ proof: formalized
 
 > Proves that every simple graph on n ≥ 4 vertices with 2(n−2) edges has algebraic connectivity at most 2, attained by the complete bipartite graph K₂,ₙ₋₂. Develops Laplacian test-vector bounds, sparse cut certificates, and non-backtracking walk estimates used in the proof.
 
-*Quoted from the card [LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/acmax-conjecture.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/acmax-conjecture.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,12 +18,12 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`ACMax.acmax_conjecture`](https://leanpool.github.io/lean-pool/LeanPool/ACMax.html#ACMax.acmax_conjecture) (theorem; a main declaration), declared in [LeanPool/ACMax.lean, line 42](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax.lean#L42): “For n ≥ 4, the algebraic connectivity of K₂,ₙ₋₂ is 2, and every simple graph on Fin n with exactly 2(n−2) edges has algebraic connectivity at most 2. Algebraic connectivity is the second-smallest eigenvalue of the combinatorial Laplacian, defined using Mathlib's ordered spectrum.”
-- [`ACMax.algConn_mul_sq_le`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/RayleighUpper.html#ACMax.algConn_mul_sq_le) (theorem), declared in [LeanPool/ACMax/Spectral/RayleighUpper.lean, line 29](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax/Spectral/RayleighUpper.lean#L29): “For a graph on any nonempty finite vertex type and any real vector whose coordinates sum to zero, algebraic connectivity times the squared norm is at most the Laplacian quadratic form.”
-- [`ACMax.algConn_le_two_of_testvector`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/TestVector.html#ACMax.algConn_le_two_of_testvector) (theorem), declared in [LeanPool/ACMax/Spectral/TestVector.lean, line 31](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax/Spectral/TestVector.lean#L31): “A nonzero real vector with coordinate sum zero and Laplacian quadratic form at most twice its squared norm certifies algebraic connectivity at most 2.”
-- [`ACMax.algConn_completeBipartite_two`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/AlgConnK2.html#ACMax.algConn_completeBipartite_two) (theorem), declared in [LeanPool/ACMax/Spectral/AlgConnK2.lean, line 24](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax/Spectral/AlgConnK2.lean#L24): “For n ≥ 4, the complete bipartite graph with parts of sizes 2 and n−2 has algebraic connectivity exactly 2.”
+- [`ACMax.acmax_conjecture`](https://leanpool.github.io/lean-pool/LeanPool/ACMax.html#ACMax.acmax_conjecture) (theorem; a main declaration), declared in [LeanPool/ACMax.lean, line 42](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax.lean#L42): “For n ≥ 4, the algebraic connectivity of K₂,ₙ₋₂ is 2, and every simple graph on Fin n with exactly 2(n−2) edges has algebraic connectivity at most 2. Algebraic connectivity is the second-smallest eigenvalue of the combinatorial Laplacian, defined using Mathlib's ordered spectrum.”
+- [`ACMax.algConn_mul_sq_le`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/RayleighUpper.html#ACMax.algConn_mul_sq_le) (theorem), declared in [LeanPool/ACMax/Spectral/RayleighUpper.lean, line 29](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax/Spectral/RayleighUpper.lean#L29): “For a graph on any nonempty finite vertex type and any real vector whose coordinates sum to zero, algebraic connectivity times the squared norm is at most the Laplacian quadratic form.”
+- [`ACMax.algConn_le_two_of_testvector`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/TestVector.html#ACMax.algConn_le_two_of_testvector) (theorem), declared in [LeanPool/ACMax/Spectral/TestVector.lean, line 31](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax/Spectral/TestVector.lean#L31): “A nonzero real vector with coordinate sum zero and Laplacian quadratic form at most twice its squared norm certifies algebraic connectivity at most 2.”
+- [`ACMax.algConn_completeBipartite_two`](https://leanpool.github.io/lean-pool/LeanPool/ACMax/Spectral/AlgConnK2.html#ACMax.algConn_completeBipartite_two) (theorem), declared in [LeanPool/ACMax/Spectral/AlgConnK2.lean, line 24](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax/Spectral/AlgConnK2.lean#L24): “For n ≥ 4, the complete bipartite graph with parts of sizes 2 and n−2 has algebraic connectivity exactly 2.”
 
 ## Project
 
@@ -33,9 +33,9 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 05C50, 05C35.
-- In Lean Pool: [LeanPool/ACMax](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax), from the card [LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/acmax-conjecture.yaml).
+- In Lean Pool: [LeanPool/ACMax](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax), from the card [LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/acmax-conjecture.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/acmax-conjecture.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/ACMax](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ACMax)
+- [Lean Pool at 701389c0: LeanPool/projects/acmax-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/acmax-conjecture.yaml)
+- [Lean Pool at 701389c0: LeanPool/ACMax](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/ACMax)

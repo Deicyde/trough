@@ -7,7 +7,7 @@ statement: formalized
 
 # Matching in general graphs
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html).
 
 ## General matching decision problem
 
@@ -19,7 +19,7 @@ every pair $(u, v)$ in $E$ has $u < n$, $v < n$ and $u \neq v$, and some sublist
 the property that any two different pairs $(u_1, v_1)$ and $(u_2, v_2)$ in $M$ share no
 element: $u_1, v_1 \notin \{u_2, v_2\}$. Bitstrings that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MatchingInP.matchingDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html#matching-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MatchingInP.matchingDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html#matching-dec).
 
 ## General matching is in P (Edmonds' blossom algorithm)
 
@@ -32,7 +32,7 @@ bitstring, whether $E$ contains at least $K$ distinct pairwise vertex-disjoint e
 
 - J. Edmonds, "Paths, trees, and flowers", Canadian Journal of Mathematics 17 (1965), 449-467.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MatchingInP.matching_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html#matching-in-p).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MatchingInP.matching_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MatchingInPWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html#matching-in-p).
 
 ## Depends on
 
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Matching in general graphs](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/matching-in-general-graphs)

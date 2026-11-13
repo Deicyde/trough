@@ -7,7 +7,7 @@ statement: formalized
 
 # Goldreich–Levin theorem
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html).
 
 ## Serialized circuit gates
 
@@ -17,7 +17,7 @@ kind of the gate, and a list $r$ of natural numbers, its references.
 These pairs are read through the shared (kind, references) encoding of gates of flat Boolean
 circuits.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.GLGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#glgate).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.GLGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#glgate).
 
 ## Gate values of a serialized circuit
 
@@ -29,7 +29,7 @@ list of gate values of the flat Boolean circuit on $n$ inputs whose $j$-th gate 
 A pair $(0, [i])$ with $i \ge n$ decodes to the constant false, so an input index out of range
 reads as false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-circuit-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-circuit-eval).
 
 ## Outputs of a serialized circuit
 
@@ -37,7 +37,7 @@ For a list $C$ of serialized gates, a list $a$ of Booleans
 and a natural number $k$, the outputs of $C$ on $a$ are the last $k$ entries of the gate values of
 $C$ on $a$, or all of them when $C$ has fewer than $k$ gates.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glCircuitOutputs`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-circuit-outputs).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glCircuitOutputs`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-circuit-outputs).
 
 ## Inversion success probability of a circuit
 
@@ -46,7 +46,7 @@ $\pi$ from $n$-bit strings to $n$-bit strings, the inversion success probability
 $\pi$ is the rational number $N / 2^n$, where $N$ is the number of $n$-bit strings $x$ such that
 the outputs of $C$ on input $\pi(x)$, taken as its last $n$ gate values, are exactly $x$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.invertSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#invert-succ).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.invertSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#invert-succ).
 
 ## Inner product modulo 2
 
@@ -54,14 +54,14 @@ For $n$-bit strings $x$ and $r$, their inner product modulo 2 is
 true if and only if the number of indices $i < n$ with $x_i$ and $r_i$ both true is odd, that is,
 $\langle x, r \rangle = \sum_{i < n} x_i r_i \bmod 2$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.xorDot`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#xor-dot).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.xorDot`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#xor-dot).
 
 ## Concatenation of two bitstrings
 
 For $n$-bit strings $y$ and $r$, their concatenation is the
 $2n$-bit string whose bit $i$ is $y_i$ for $i < n$ and $r_{i - n}$ for $n \le i < 2n$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glPair`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-pair).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.glPair`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#gl-pair).
 
 ## Prediction success probability for the inner-product bit
 
@@ -72,7 +72,7 @@ $(x, r)$ of $n$-bit strings such that $C$ has at least one gate and the value of
 the concatenation of $\pi(x)$ and $r$, a $2n$-bit input, equals the inner product of $x$ and $r$
 modulo 2.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.predictSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#predict-succ).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.predictSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#predict-succ).
 
 ## Goldreich-Levin: hardcore predicate from one-way permutations
 
@@ -93,7 +93,7 @@ inner product modulo 2.
 
 - O. Goldreich and L. A. Levin, "A hard-core predicate for all one-way functions", Proceedings of the Twenty-First Annual ACM Symposium on Theory of Computing (STOC 1989), 25-32.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.goldreich_levin` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#goldreich-levin).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GoldreichLevin.goldreich_levin` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldreichLevinWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html#goldreich-levin).
 
 ## Depends on
 
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Goldreich–Levin theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/goldreich-levin-theorem)

@@ -7,7 +7,7 @@ statement: formalized
 
 # ε-light vertex sets
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html).
 
 ## ε-light vertex sets
 
@@ -17,7 +17,7 @@ $G$ and $L_S$ the real Laplacian matrix of the graph on $V$ whose edges are the 
 both endpoints in $S$. The set $S$ is $\varepsilon$-light in $G$ if $\varepsilon L - L_S$ is
 positive semidefinite.
 
-Formalized by `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.IsEpsilonLight`, a definition declared in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#is-epsilon-light).
+Formalized by `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.IsEpsilonLight`, a definition declared in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#is-epsilon-light).
 
 ## The large ε-light subset property
 
@@ -26,7 +26,7 @@ such that for every natural number $n$, every simple graph $G$ on the vertex set
 $\{0, \dots, n-1\}$ and every real number $\varepsilon$ with $0 < \varepsilon < 1$, some set $S$
 of vertices that is $\varepsilon$-light in $G$ has at least $c \varepsilon n$ elements.
 
-Formalized by `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.epsilonLightSubsetExists`, a definition declared in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#epsilon-light-subset-exists).
+Formalized by `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.epsilonLightSubsetExists`, a definition declared in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#epsilon-light-subset-exists).
 
 ## Every graph has a large ε-light vertex set
 
@@ -44,7 +44,7 @@ Appendix B.6 of the source proves this, with $c = 1/42$, as Lemma B.1 (stated fo
 
 - First Proof authors, arXiv:2602.05192v2, Appendix B.6 (Lemma B.1), https://arxiv.org/html/2602.05192v2.
 
-Stated but not proved: `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.epsilonLightSubsetExists_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#epsilon-light-subset-exists-holds).
+Stated but not proved: `MathlibExt.Combinatorics.EpsilonLightSubsetWanted.epsilonLightSubsetExists_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EpsilonLightSubsetWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html#epsilon-light-subset-exists-holds).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: ε-light vertex sets](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/light-vertex-sets)

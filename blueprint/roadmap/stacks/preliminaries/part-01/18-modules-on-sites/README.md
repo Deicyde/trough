@@ -1,6 +1,6 @@
 # 18 Modules on Sites
 
-Chapter 18 of the Stacks Project, *Modules on Sites*, [Tag 03A4](https://stacks.math.columbia.edu/tag/03A4): the 43 sections of its 45 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 196 tags are carried by 745 declarations of the repository (all in StacksFrontier) and 94 registered declarations.
+Chapter 18 of the Stacks Project, *Modules on Sites*, [Tag 03A4](https://stacks.math.columbia.edu/tag/03A4): the 43 sections of its 45 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 196 tags are carried by 740 declarations of the repository (all in StacksFrontier) and 91 registered declarations.
 
 ## [18.2 Abelian presheaves to 18.20 Localization of morphisms…](part-01/README.md)
 

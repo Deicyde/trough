@@ -7,7 +7,7 @@ statement: formalized
 
 # Inapproximability of MAX-CUT
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html).
 
 ## Vertex count of a MAX-CUT instance
 
@@ -18,7 +18,7 @@ $x$ of length $|x|$, is $\lfloor \sqrt{|x|} \rfloor$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutN`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-n).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutN`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-n).
 
 ## Feasible MAX-CUT solutions
 
@@ -30,7 +30,7 @@ so that $s$ has one bit per vertex.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutFeas`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-feas).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutFeas`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-feas).
 
 ## Value of a MAX-CUT solution
 
@@ -44,7 +44,7 @@ and $j$ of $s$ differ; otherwise the value is $0$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-val).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCutVal`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-val).
 
 ## MAX-CUT as an optimization problem
 
@@ -60,7 +60,7 @@ on the length of feasible solutions is $p(m) = m$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCut`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.maxCut`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut).
 
 ## MAX-CUT has no PTAS unless P = NP
 
@@ -71,7 +71,7 @@ optimization problem MAX-CUT does not admit a polynomial-time approximation sche
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440 (MAX-CUT is MAXSNP-complete, hence APX-hard); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11 (APX-hardness rules out a PTAS unless P = NP).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.max_cut_no_ptas` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-no-ptas).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxCutNoPTAS.max_cut_no_ptas` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxCutNoPTASWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html#max-cut-no-ptas).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Inapproximability of MAX-CUT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/pcp-and-inapproximability/inapproximability-of-max-cut)

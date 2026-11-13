@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: RingHom.isKoszulRegularIdeal_ker_of_surjective_mvPolynomial, RingHom.IsLocalCompleteIntersection, RingHom.isLocalCompleteIntersection_of_localization_away, RingHom.isKoszulRegular_relation_of_isRelativeGlobalCompleteIntersection, RingHom.syntomic_iff_flat_and_isLocalCompleteIntersection, RingHom.cotangentMap_toComp_injective_of_isLocalCompleteIntersection, RingHom.cotangentMap_toComp_injective_of_isFilteredColimit_isLocalCompleteIntersection, Algebra.naiveCotangentComplex_quasiIso_henselization_and_strictHenselization
+lean: RingHom.isKoszulRegularIdeal_ker_of_surjective_mvPolynomial, RingHom.IsLocalCompleteIntersection, RingHom.isLocalCompleteIntersection_of_localization_away, RingHom.isKoszulRegular_relation_of_isRelativeGlobalCompleteIntersection, RingHom.syntomic_iff_flat_and_isLocalCompleteIntersection, RingHom.cotangentMap_toComp_injective_of_isLocalCompleteIntersection, NaiveCotangent.jacobiZariski_exact_of_isLocalCompleteIntersection, NaiveCotangent.injective_onH₁_nlExtensionBaseChangeMap_of_isLocalCompleteIntersection
 statement: formalized
 proof: formalized
 ---
 
 # 15.34 Local complete intersection maps
 
-Section 15.34 of the Stacks Project, [Tag 07CY](https://stacks.math.columbia.edu/tag/07CY). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.34 of the Stacks Project, [Tag 07CY](https://stacks.math.columbia.edu/tag/07CY). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07CZ, a lemma
 
 [Tag 07CZ](https://stacks.math.columbia.edu/tag/07CZ) in the Stacks Project.
 
-**`RingHom.isKoszulRegularIdeal_ker_of_surjective_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean#L688).
+**`RingHom.isKoszulRegularIdeal_ker_of_surjective_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean#L687).
 
 > The kernel of every finite polynomial presentation is a Koszul-regular ideal if the kernel
 > of one such presentation is Koszul-regular.
@@ -33,7 +33,7 @@ public theorem isKoszulRegularIdeal_ker_of_surjective_mvPolynomial
 
 [Tag 07D0](https://stacks.math.columbia.edu/tag/07D0) in the Stacks Project.
 
-**`RingHom.IsLocalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean#L94).
+**`RingHom.IsLocalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Defs.lean#L94).
 
 > A ring homomorphism is a local complete intersection if it is of finite type and some finite
 > polynomial presentation has Koszul-regular kernel.
@@ -47,7 +47,7 @@ public def IsLocalCompleteIntersection {A : Type u} {B : Type v}
 
 [Tag 07D1](https://stacks.math.columbia.edu/tag/07D1) in the Stacks Project.
 
-**`RingHom.isLocalCompleteIntersection_of_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L692).
+**`RingHom.isLocalCompleteIntersection_of_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L692).
 
 > **Stacks 07D1.** If finitely many elements `g j` generate the unit ideal of `S` and every
 > composite from `R` to the localization `S_{g j}` is a local complete intersection, then the
@@ -66,7 +66,7 @@ public theorem isLocalCompleteIntersection_of_localization_away
 
 [Tag 07D2](https://stacks.math.columbia.edu/tag/07D2) in the Stacks Project.
 
-**`RingHom.isKoszulRegular_relation_of_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 1298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L1298).
+**`RingHom.isKoszulRegular_relation_of_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 1298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L1298).
 
 > The relations in a polynomial presentation of a relative global complete intersection form a
 > Koszul-regular sequence in the polynomial ring.
@@ -83,7 +83,7 @@ public theorem isKoszulRegular_relation_of_isRelativeGlobalCompleteIntersection
 
 [Tag 07D3](https://stacks.math.columbia.edu/tag/07D3) in the Stacks Project.
 
-**`RingHom.syntomic_iff_flat_and_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 1693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L1693).
+**`RingHom.syntomic_iff_flat_and_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean, line 1692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/Criteria.lean#L1692).
 
 > **Stacks 07D3.** A ring homomorphism is syntomic if and only if it is flat and a local
 > complete intersection.
@@ -99,7 +99,7 @@ public theorem syntomic_iff_flat_and_isLocalCompleteIntersection
 
 [Tag 07D4](https://stacks.math.columbia.edu/tag/07D4) in the Stacks Project.
 
-**`RingHom.cotangentMap_toComp_injective_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean#L249).
+**`RingHom.cotangentMap_toComp_injective_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean#L248). The attribute's comment: “the injectivity of C ⊗\_B I/I² → K/K²”.
 
 > Let `A → B → C` be ring maps, let `α : A[x_s] → B` and
 > `β : B[y₁, ..., yₘ] → C` be presentations, and write `K` for the kernel of the induced
@@ -120,11 +120,76 @@ public theorem cotangentMap_toComp_injective_of_isLocalCompleteIntersection
       ((Extension.Cotangent.map (β.toComp α).toExtensionHom).liftBaseChange C)
 ```
 
+**`NaiveCotangent.jacobiZariski_exact_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariskiExact.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariskiExact.lean#L77).
+
+> **Stacks 07D4.** Let `A → B → C` be ring maps with `B → C` a local complete intersection,
+> let `α : A[x_s] → B` be a presentation with kernel `I`, let `β : B[y₁, …, yₘ] → C` be a
+> presentation with kernel `J`, and let `γ = β.comp α : A[x_s, y_t] → C` be the induced
+> presentation, with kernel `K`. Then the canonical diagram, whose vertical maps are the
+> differentials of `NL(α) ⊗_B C`, `NL(γ)` and `NL(β)`, commutes, and both of its rows
+> ```
+> 0 ⟶ C ⊗_B Ω_{A[x]/A} ⟶ Ω_{A[x,y]/A} ⊗ C ⟶ Ω_{B[y]/B} ⊗ C ⟶ 0
+> 0 ⟶   C ⊗_B I/I²     ⟶       K/K²        ⟶      J/J²      ⟶ 0
+> ```
+> are exact. In particular the six-term sequence of Stacks 00S2 can be completed with a zero on
+> the left: the sequence
+> ```
+> 0 → H₁(NL(α) ⊗_B C) → H₁(NL(γ)) → H₁(NL(β)) --δ--> H₀(NL(α) ⊗_B C) → H₀(NL(γ)) → H₀(NL(β)) → 0
+> ```
+> is exact, that is
+> `0 → H₁(NL_{B/A} ⊗_B C) → H₁(L_{C/A}) → H₁(L_{C/B}) → Ω_{B/A} ⊗_B C → Ω_{C/A} → Ω_{C/B} → 0`,
+> with `δ` the connecting map `NaiveCotangent.jacobiZariskiConnecting`.
+
+```lean
+theorem jacobiZariski_exact_of_isLocalCompleteIntersection {S : Type w} {m : ℕ}
+    (α : Generators A B S) (β : Generators B C (Fin m))
+    (h : RingHom.IsLocalCompleteIntersection (algebraMap B C)) :
+    -- the two squares of the canonical diagram commute
+    ((NL (β.comp α)).d ∘ₗ (nlToComp β α).f₁ = (nlToComp β α).f₀ ∘ₗ (nlBaseChange C α).d ∧
+      (NL β).d ∘ₗ (nlOfComp β α).f₁ = (nlOfComp β α).f₀ ∘ₗ (NL (β.comp α)).d) ∧
+    -- the row of Kähler differentials is exact
+    (Injective (nlToComp β α).f₀ ∧ Exact (nlToComp β α).f₀ (nlOfComp β α).f₀ ∧
+      Surjective (nlOfComp β α).f₀) ∧
+    -- the row of conormal modules is exact
+    (Injective (nlToComp β α).f₁ ∧ Exact (nlToComp β α).f₁ (nlOfComp β α).f₁ ∧
+      Surjective (nlOfComp β α).f₁) ∧
+    -- the six-term sequence of Stacks 00S2, completed with a zero on the left, is exact
+    (Injective (nlToComp β α).onH₁ ∧
+      Exact (nlToComp β α).onH₁ (nlOfComp β α).onH₁ ∧
+      Exact (nlOfComp β α).onH₁ (jacobiZariskiConnecting β α) ∧
+      Exact (jacobiZariskiConnecting β α) (nlToComp β α).onH₀ ∧
+      Exact (nlToComp β α).onH₀ (nlOfComp β α).onH₀ ∧
+      Surjective (nlOfComp β α).onH₀)
+```
+
+**`NaiveCotangent.injective_onH₁_nlExtensionBaseChangeMap_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/LciLocalizedInjective.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/LciLocalizedInjective.lean#L326). The attribute's comment: “the zero on the left of the 00S2 sequence, over the canonical presentations”.
+
+> **Stacks 07D4, read on `H₁` over the canonical presentations.**  For ring maps `A → B → C`
+> with `B → C` a local complete intersection homomorphism, the canonical map
+>
+> `NL_{B/A} ⊗_B C ⟶ NL_{C/A}`
+>
+> of two-term complexes of `C`-modules is injective on `H₁`.  Together with the six-term exact
+> sequence of Stacks 00S2 this puts a zero at the left of that sequence.
+>
+> The statement holds for every morphism of extensions inducing the comparison, any two being
+> homotopic.  Stacks 07D4 gives injectivity of the whole degree-`1` component for the presentation
+> `β.comp α` induced by the canonical presentation `α` of `B` over `A` and a finite presentation
+> `β` of `C` over `B`; the comparison of that presentation with the canonical presentation of `C`
+> over `A` is a quasi-isomorphism by Stacks 00S1 (4), and injectivity on `H₁` is inherited.
+
+```lean
+theorem injective_onH₁_nlExtensionBaseChangeMap_of_isLocalCompleteIntersection
+    (h : RingHom.IsLocalCompleteIntersection (algebraMap B C))
+    (hom : (Generators.self A B).toExtension.Hom (Generators.self A C).toExtension) :
+    Function.Injective (nlExtensionBaseChangeMap (T := C) hom).onH₁
+```
+
 ## Tag 07D5, a lemma
 
 [Tag 07D5](https://stacks.math.columbia.edu/tag/07D5) in the Stacks Project.
 
-**`RingHom.cotangentMap_toComp_injective_of_isFilteredColimit_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean#L792).
+**`RingHom.cotangentMap_toComp_injective_of_isFilteredColimit_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean, line 793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariski.lean#L793). The attribute's comment: “The conormal form: injectivity of `C ⊗_B I/I² → K/K²`, the one assertion of the source beyond Stacks 00S2. The complete statement, both exact rows and the seven-term sequence, is `RingHom.jacobiZariski_exact_of_isFilteredColimit_isLocalCompleteIntersection`.”.
 
 > Let `A → B → C` be ring maps and suppose that `B → C` is exhibited as a filtered
 > colimit of local complete intersection homomorphisms, with `eB`, `eC`, and `hcomm` identifying
@@ -147,11 +212,48 @@ public theorem cotangentMap_toComp_injective_of_isFilteredColimit_isLocalComplet
       ((Extension.Cotangent.map (β.toComp α).toExtensionHom).liftBaseChange C)
 ```
 
+**`RingHom.jacobiZariski_exact_of_isFilteredColimit_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariskiColimit.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RingMap/JacobiZariskiColimit.lean#L74). The attribute's comment: “The complete conclusion of 07D4 for a filtered colimit of lci maps: both exact rows of the conormal/differential diagram and the seven-term Jacobi-Zariski sequence with a zero on the left, for the naive cotangent complexes of the three presentations.”.
+
+> **Stacks 07D5.** Let `A → B → C` be ring maps and suppose that `B → C` is a filtered
+> colimit of local complete intersection homomorphisms, exhibited by a directed system `sys` of
+> ring maps each of which is a local complete intersection, together with `eB`, `eC` and `hcomm`
+> identifying the system's colimit map with `B → C`. Let `α : A[x_s] → B` and `β : B[y_t] → C` be
+> presentations and `γ = β.comp α` the induced presentation of `C` over `A`. Then the conclusion
+> of Stacks 07D4 holds:
+>
+> * the degree-`0` row `0 → C ⊗_B Ω_{A[x]/A} → Ω_{A[x,y]/A} ⊗ C → Ω_{B[y]/B} ⊗ C → 0` and the
+>   degree-`1` row `0 → C ⊗_B I/I² → K/K² → J/J² → 0` of the canonical diagram are exact;
+> * the sequence
+>   `0 → H₁(NL(α) ⊗_B C) → H₁(NL(γ)) → H₁(NL(β)) → H₀(NL(α) ⊗_B C) → H₀(NL(γ)) → H₀(NL(β)) → 0`
+>   is exact, its connecting map being `NaiveCotangent.jacobiZariskiConnecting β α`.
+
+```lean
+public theorem jacobiZariski_exact_of_isFilteredColimit_isLocalCompleteIntersection
+    {A : Type u₁} {B : Type u₂} [CommRing A] [CommRing B] [Algebra A B]
+    {C : Type u₃} [CommRing C] [Algebra A C] [Algebra B C] [IsScalarTower A B C]
+    {S : Type w} {T : Type w'} (α : Generators A B S) (β : Generators B C T)
+    {J : Type u₄} [Preorder J] [IsDirectedOrder J] [Nonempty J]
+    (sys : RingMapSystemUnbundled.{u₅} J)
+    (eB : sys.Rinf ≃+* B) (eC : sys.Sinf ≃+* C)
+    (hcomm : eC.toRingHom.comp sys.gInf = (algebraMap B C).comp eB.toRingHom)
+    (h : ∀ i : J, RingHom.IsLocalCompleteIntersection (sys.g i)) :
+    (Injective (nlToComp β α).f₀ ∧ Exact (nlToComp β α).f₀ (nlOfComp β α).f₀ ∧
+        Surjective (nlOfComp β α).f₀) ∧
+      (Injective (nlToComp β α).f₁ ∧ Exact (nlToComp β α).f₁ (nlOfComp β α).f₁ ∧
+        Surjective (nlOfComp β α).f₁) ∧
+      Injective (nlToComp β α).onH₁ ∧
+      Exact (nlToComp β α).onH₁ (nlOfComp β α).onH₁ ∧
+      Exact (nlOfComp β α).onH₁ (jacobiZariskiConnecting β α) ∧
+      Exact (jacobiZariskiConnecting β α) (nlToComp β α).onH₀ ∧
+      Exact (nlToComp β α).onH₀ (nlOfComp β α).onH₀ ∧
+      Surjective (nlOfComp β α).onH₀
+```
+
 ## Tag 0D08, a lemma
 
 [Tag 0D08](https://stacks.math.columbia.edu/tag/0D08) in the Stacks Project.
 
-**`Algebra.naiveCotangentComplex_quasiIso_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean#L602).
+**`Algebra.naiveCotangentComplex_quasiIso_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean#L602).
 
 > Let `A → B` be a local homomorphism of local rings. For the induced local map between
 > henselizations and the induced local map between strict henselizations associated to a compatible
@@ -190,7 +292,7 @@ public theorem
       QuasiIso (Algebra.naiveCotangentComplexBaseChangeComparison A Ash B Bsh)
 ```
 
-**`Algebra.naiveCotangentComplex_quasiIso_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean#L672). The attribute's comment: “the henselization-of-pairs case, which Stacks 0DZC's proof cites 0D08 for although 0D08's own statement is about the local and strict henselizations of a local ring: the input to the source's proof is that both vertical maps are filtered colimits of étale maps, which `ind_henselization` supplies for the henselization of a pair”.
+**`Algebra.naiveCotangentComplex_quasiIso_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Henselization.lean#L672). The attribute's comment: “the henselization-of-pairs case, which Stacks 0DZC's proof cites 0D08 for although 0D08's own statement is about the local and strict henselizations of a local ring: the input to the source's proof is that both vertical maps are filtered colimits of étale maps, which `ind_henselization` supplies for the henselization of a pair”.
 
 > **Stacks 0D08 for the henselization of a pair.** Let `P` be an algebra over a commutative
 > ring `k`, let `J ⊆ P` be an ideal and let `(Pʰ, Jʰ)` be the henselization of the pair `(P, J)`,
@@ -227,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.34, Tag 07CY](https://stacks.math.columbia.edu/tag/07CY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

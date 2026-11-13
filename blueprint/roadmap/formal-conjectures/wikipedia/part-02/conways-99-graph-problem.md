@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_99-graph_problem)
 
-*Quoted from [FormalConjectures/Wikipedia/Conway99Graph.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Conway99Graph.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Conway99Graph.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Conway99Graph.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 textbook results. It also has 3 test statements and 1 API statement, counted here but not shown.
 
@@ -23,7 +23,7 @@ Textbook result, proved here.
 lemma completeGraphIsClique (s : Finset V) : (⊤ : SimpleGraph V).IsClique s
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 38](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Conway99Graph.lean#L38).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 38](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Conway99Graph.lean#L38).
 
 ## `Conway99Graph.completeGraph_cliqueSet`
 
@@ -36,7 +36,7 @@ lemma completeGraph_cliqueSet :
     (⊤ : SimpleGraph V).cliqueSet (Fintype.card V) = {Set.univ.toFinset}
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Conway99Graph.lean#L45).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Conway99Graph.lean#L45).
 
 ## `Conway99Graph.conway99Graph`
 
@@ -54,7 +54,7 @@ theorem conway99Graph : ∃ G : SimpleGraph (Fin 99),
     G.LocallyLinear ∧ NonEdgesAreDiagonals G
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Conway99Graph.lean#L67).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/Conway99Graph.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Conway99Graph.lean#L67).
 
 ## Depends on
 
@@ -62,5 +62,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Conway99Graph.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Conway99Graph.lean)
+- [FormalConjectures/Wikipedia/Conway99Graph.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Conway99Graph.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_99-graph_problem)

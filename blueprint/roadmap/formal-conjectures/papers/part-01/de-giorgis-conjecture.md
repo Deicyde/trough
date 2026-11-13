@@ -35,7 +35,7 @@ statement: formalized
 > * [Del Pino, Kowalczyk, Wei](http://dx.doi.org/10.4007/annals.2011.174.3.3),
 >   Annals of Mathematics 174 (2011) shows that the condition $n ≤ 8$ is sharp.
 
-*Quoted from [FormalConjectures/Paper/DeGiorgi.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/DeGiorgi.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 10 research or textbook statements: 6 open and 4 solved.
 
@@ -49,7 +49,7 @@ Open: stated without proof.
 theorem DeGiorgi_le_eight (hn : n ≤ 8) : (DeGiorgi_conclusion n)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L94).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L94).
 
 ## `DeGiorgi.DeGiorgi_ge_nine`
 
@@ -61,7 +61,7 @@ Solved: stated here without proof.
 theorem DeGiorgi_ge_nine (hn : n ≥ 9) : ¬(DeGiorgi_conclusion n)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L101).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L101).
 
 ## `DeGiorgi.DeGiorgi_one`
 
@@ -73,7 +73,7 @@ Proved here.
 theorem DeGiorgi_one : (DeGiorgi_conclusion 1)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L108).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L108).
 
 ## `DeGiorgi.DeGiorgi_two`
 
@@ -85,7 +85,7 @@ Solved: stated here without proof.
 theorem DeGiorgi_two : (DeGiorgi_conclusion 2)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L128).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L128).
 
 ## `DeGiorgi.DeGiorgi_three`
 
@@ -97,7 +97,7 @@ Solved: stated here without proof.
 theorem DeGiorgi_three : (DeGiorgi_conclusion 3)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L135).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L135).
 
 ## `DeGiorgi.DeGiorgi_four`
 
@@ -109,7 +109,7 @@ Open: stated without proof.
 theorem DeGiorgi_four : (DeGiorgi_conclusion 4)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 142](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L142).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 142](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L142).
 
 ## `DeGiorgi.DeGiorgi_five`
 
@@ -121,7 +121,7 @@ Open: stated without proof.
 theorem DeGiorgi_five : (DeGiorgi_conclusion 5)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L149).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L149).
 
 ## `DeGiorgi.DeGiorgi_six`
 
@@ -133,7 +133,7 @@ Open: stated without proof.
 theorem DeGiorgi_six : (DeGiorgi_conclusion 6)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L156).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L156).
 
 ## `DeGiorgi.DeGiorgi_seven`
 
@@ -145,7 +145,7 @@ Open: stated without proof.
 theorem DeGiorgi_seven : (DeGiorgi_conclusion 7)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 163](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L163).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 163](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L163).
 
 ## `DeGiorgi.DeGiorgi_eight`
 
@@ -157,7 +157,7 @@ Open: stated without proof.
 theorem DeGiorgi_eight : (DeGiorgi_conclusion 8)
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 170](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean#L170).
+Category `research open`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Paper/DeGiorgi.lean, line 170](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean#L170).
 
 ## Depends on
 
@@ -165,5 +165,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/DeGiorgi.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DeGiorgi.lean)
+- [FormalConjectures/Paper/DeGiorgi.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DeGiorgi.lean)
 - [Ghoussoub, Gui](https://doi.org/10.1007/s002080050196)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Ducci sequences
 
-6 results, 1 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html).
+6 results, 1 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html).
 
 ## Ducci coefficients
 
@@ -19,7 +19,7 @@ For $1 \le s \le n$, $a_{r,s}$ is the coefficient of $x_s$ in the first entry of
 the Ducci map $D$ on $\mathbb{Z}_m^n$ sends $(x_1, \dots, x_n)$ to
 $(x_1 + x_2, x_2 + x_3, \dots, x_n + x_1)$.
 
-Formalized by `MathlibExt.NumberTheory.DucciWanted.ducciCoeff`, a definition declared in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff).
+Formalized by `MathlibExt.NumberTheory.DucciWanted.ducciCoeff`, a definition declared in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff).
 
 ## Binomial coefficients $\binom{p^k - 1}{j}$ modulo $p$
 
@@ -31,7 +31,7 @@ $\binom{p^k - 1}{j} \equiv (-1)^j \pmod{p}$.
 
 - Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_one_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#choose-prime-pow-sub-one-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_one_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#choose-prime-pow-sub-one-mod).
 
 ## Binomial coefficients $\binom{p^k - p^{k-1}}{j}$ modulo $p$
 
@@ -44,7 +44,7 @@ $\binom{p^k - p^{k-1}}{j} \equiv 0 \pmod{p}$.
 
 - Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#choose-prime-pow-sub-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#choose-prime-pow-sub-mod).
 
 ## Vanishing of Ducci coefficients modulo $p$
 
@@ -59,7 +59,7 @@ $a^{(n)}_{c p^k, s} \equiv 0 \pmod{p}$.
 
 - Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducciCoeff_vanish_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff-vanish-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducciCoeff_vanish_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff-vanish-mod).
 
 ## Reduction of Ducci coefficients modulo $p$
 
@@ -74,7 +74,7 @@ $a^{(n)}_{c p^k,\, b p^k + 1} \equiv a^{(n_1)}_{c,\, b + 1} \pmod{p}$.
 
 - Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducciCoeff_reduce_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff-reduce-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducciCoeff_reduce_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-coeff-reduce-mod).
 
 ## Ducci predecessor criterion for even length
 
@@ -88,7 +88,7 @@ $y_{n+1} = y_1$), if and only if $x_1 - x_2 + x_3 - \cdots + x_{n-1} - x_n = 0$ 
 
 - Mark L. Lewis and Shannon M. Tefft, "The Maximum Length for Ducci Sequences on `ℤ_m^n` when `n` is Even", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducci_pred_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DucciSequenceWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-pred-iff).
+Stated but not proved: `MathlibExt.NumberTheory.DucciWanted.ducci_pred_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DucciSequenceWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DucciSequenceWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html#ducci-pred-iff).
 
 ## Depends on
 
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ducci sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/ducci-sequences)

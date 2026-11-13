@@ -1,6 +1,6 @@
 # 89 Resolution of Surfaces Revisited
 
-Chapter 89 of the Stacks Project, *Resolution of Surfaces Revisited*, [Tag 0BH6](https://stacks.math.columbia.edu/tag/0BH6): the 8 sections of its 9 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 27 tags are carried by 77 declarations of the repository (all in StacksFrontier).
+Chapter 89 of the Stacks Project, *Resolution of Surfaces Revisited*, [Tag 0BH6](https://stacks.math.columbia.edu/tag/0BH6): the 8 sections of its 9 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 27 tags are carried by 72 declarations of the repository (all in StacksFrontier).
 
 - [89.2 Modifications](89-2-modifications.md)
 - [89.3 Strategy](89-3-strategy.md)

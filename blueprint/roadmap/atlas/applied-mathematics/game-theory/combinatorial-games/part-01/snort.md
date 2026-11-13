@@ -7,7 +7,7 @@ statement: formalized
 
 # Snort
 
-38 results, 20 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html).
+38 results, 20 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html).
 
 ## Snort positions with a move bound
 
@@ -22,7 +22,7 @@ position $(B, A \cup \{v\})$ that the opponent, now to move with move bound $k$,
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1 (rules of Snort).
 
-Formalized by `MetaMathlibExt.snortMoverWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-mover-wins).
+Formalized by `MetaMathlibExt.snortMoverWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-mover-wins).
 
 ## First player wins Snort
 
@@ -36,7 +36,7 @@ coloured.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1.
 
-Formalized by `MetaMathlibExt.SnortFirstPlayerWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins).
+Formalized by `MetaMathlibExt.SnortFirstPlayerWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins).
 
 ## Second-player win in Snort
 
@@ -53,7 +53,7 @@ draws; hence this says that the second player has a winning strategy.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1.
 
-Formalized by `MetaMathlibExt.SnortSecondPlayerWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins).
+Formalized by `MetaMathlibExt.SnortSecondPlayerWins`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins).
 
 ## Snort response pairs
 
@@ -69,7 +69,7 @@ vertices, so the bound never cuts the game short.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 3 (response pair).
 
-Formalized by `MetaMathlibExt.IsSnortResponsePair`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-snort-response-pair).
+Formalized by `MetaMathlibExt.IsSnortResponsePair`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-snort-response-pair).
 
 ## Oppositions
 
@@ -81,7 +81,7 @@ involutive automorphism moving every vertex outside its closed neighbourhood.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1 (after Kakihara).
 
-Formalized by `MetaMathlibExt.IsOpposition`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposition).
+Formalized by `MetaMathlibExt.IsOpposition`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposition).
 
 ## Opposable graphs
 
@@ -93,7 +93,7 @@ to $v$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1.
 
-Formalized by `MetaMathlibExt.IsOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable).
+Formalized by `MetaMathlibExt.IsOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable).
 
 ## Almost opposable graph
 
@@ -106,7 +106,7 @@ outside $S$ is opposable.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 4 (almost opposable graphs).
 
-Formalized by `MetaMathlibExt.IsAlmostOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable).
+Formalized by `MetaMathlibExt.IsAlmostOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable).
 
 ## Compatibly almost opposable graphs
 
@@ -120,7 +120,7 @@ $\alpha(x) = f(x)$ for every vertex $x \notin S$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 4 (compatibly almost opposable graphs).
 
-Formalized by `MetaMathlibExt.IsCompatiblyAlmostOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable).
+Formalized by `MetaMathlibExt.IsCompatiblyAlmostOpposable`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable).
 
 ## Opposition matchings
 
@@ -135,7 +135,7 @@ $K_4$, a $4$-cycle, or just the two matching edges.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 2 (opposition matchings).
 
-Formalized by `MetaMathlibExt.IsOppositionMatching`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposition-matching).
+Formalized by `MetaMathlibExt.IsOppositionMatching`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposition-matching).
 
 ## Graph product given by a Boolean formula
 
@@ -149,7 +149,7 @@ $\varphi(g_1 g_2 \in E(G), h_1 h_2 \in E(H), g_1 = g_2, h_1 = h_2)$ is true.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 2 (graph products `GφH`).
 
-Formalized by `MetaMathlibExt.formulaProduct`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#formula-product).
+Formalized by `MetaMathlibExt.formulaProduct`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#formula-product).
 
 ## Strong product of graphs
 
@@ -163,7 +163,7 @@ an edge of $H$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 2 (table of products).
 
-Formalized by `MetaMathlibExt.strongProd`, an abbreviation declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#strong-prod).
+Formalized by `MetaMathlibExt.strongProd`, an abbreviation declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#strong-prod).
 
 ## Firework of a graph
 
@@ -175,7 +175,7 @@ $n$ of which are adjacent only to $u$ and the other $n$ adjacent only to $v$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 3 (the `n`-firework).
 
-Formalized by `MetaMathlibExt.firework`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#firework).
+Formalized by `MetaMathlibExt.firework`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#firework).
 
 ## Strong grid
 
@@ -189,7 +189,7 @@ $|x_i - y_i| \le 1$ for every $i$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 3 (strong grids).
 
-Formalized by `MetaMathlibExt.strongGrid`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#strong-grid).
+Formalized by `MetaMathlibExt.strongGrid`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#strong-grid).
 
 ## Cartesian grid
 
@@ -203,7 +203,7 @@ $P_{n_1} \square \cdots \square P_{n_k}$ of the paths $P_{n_i}$ on $n_i$ vertice
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 4 (Cartesian grids).
 
-Formalized by `MetaMathlibExt.cartesianGrid`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#cartesian-grid).
+Formalized by `MetaMathlibExt.cartesianGrid`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#cartesian-grid).
 
 ## King's graph
 
@@ -216,7 +216,7 @@ $|i - i'| \le 1$ and $|j - j'| \le 1$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 5.
 
-Formalized by `MetaMathlibExt.kingGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#king-graph).
+Formalized by `MetaMathlibExt.kingGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#king-graph).
 
 ## Knight's graph
 
@@ -229,7 +229,7 @@ $|i - i'| = 1$ and $|j - j'| = 2$, or $|i - i'| = 2$ and $|j - j'| = 1$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 5 (proof of Theorem 9).
 
-Formalized by `MetaMathlibExt.knightGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#knight-graph).
+Formalized by `MetaMathlibExt.knightGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#knight-graph).
 
 ## Bishop's graph
 
@@ -242,7 +242,7 @@ $|i - i'| = |j - j'|$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 5 (proof of Theorem 10).
 
-Formalized by `MetaMathlibExt.bishopGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#bishop-graph).
+Formalized by `MetaMathlibExt.bishopGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#bishop-graph).
 
 ## Queen's graph
 
@@ -255,7 +255,7 @@ or $j = j'$, or $|i - i'| = |j - j'|$; that is, when they share a row, a column 
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 5.
 
-Formalized by `MetaMathlibExt.queenGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#queen-graph).
+Formalized by `MetaMathlibExt.queenGraph`, a definition declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#queen-graph).
 
 ## Snort on two vertices
 
@@ -266,7 +266,7 @@ the second player wins Snort on the graph with two vertices and no edges.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 1; characteristic check of `snortMoverWins`.
 
-Formalized by `MetaMathlibExt.snort_two_vertices`, a theorem declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-two-vertices).
+Formalized by `MetaMathlibExt.snort_two_vertices`, a theorem declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-two-vertices).
 
 ## Snort on the $2 \times 2$ queen's and rook's graphs
 
@@ -278,7 +278,7 @@ player wins Snort on the rook's graph of the $2 \times 2$ board (the Peaceable R
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Section 5; characteristic check of `queenGraph` and `SimpleGraph.rookGraph`.
 
-Formalized by `MetaMathlibExt.snort_two_by_two`, a theorem declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-two-by-two).
+Formalized by `MetaMathlibExt.snort_two_by_two`, a theorem declared in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-two-by-two).
 
 ## The second player wins Snort on opposable graphs
 
@@ -289,7 +289,7 @@ opposable, then the second player wins Snort on $G$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Lemma 1 (Kakihara, Proposition 3.6).
 
-Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_of_isOpposable` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-of-is-opposable).
+Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_of_isOpposable` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-of-is-opposable).
 
 ## Oppositions and opposition matchings
 
@@ -300,7 +300,7 @@ complement $\overline{G}$ has an opposition matching.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isOpposable_iff_exists_oppositionMatching` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-iff-exists-opposition-match).
+Stated but not proved: `MetaMathlibExt.isOpposable_iff_exists_oppositionMatching` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-iff-exists-opposition-match).
 
 ## Gluing oppositions of blocks
 
@@ -318,7 +318,7 @@ $u, f(u), w, f(w)$ induce $C_4$, $2K_2$ or $4K_1$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isOpposable_of_blocks` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-of-blocks).
+Stated but not proved: `MetaMathlibExt.isOpposable_of_blocks` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-of-blocks).
 
 ## Formula products with an opposable first factor
 
@@ -334,7 +334,7 @@ false, false, false, true). If $G$ is opposable, then $G \varphi H$ is opposable
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isOpposable_formulaProduct` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-formula-product).
+Stated but not proved: `MetaMathlibExt.isOpposable_formulaProduct` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-formula-product).
 
 ## Standard products with an opposable first factor
 
@@ -351,7 +351,7 @@ $h_1h_2 \notin E(H)$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.isOpposable_products` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-products).
+Stated but not proved: `MetaMathlibExt.isOpposable_products` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-opposable-products).
 
 ## Fireworks preserve second-player wins in Snort
 
@@ -365,7 +365,7 @@ second player wins Snort on the $n$-firework of $G$ at $(u, v)$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_firework` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-firework).
+Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_firework` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-firework).
 
 ## Arbitrarily large trees on which the second player wins Snort
 
@@ -376,7 +376,7 @@ $N$ there is a tree $T$ on $n \ge N$ vertices such that the second player wins S
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.exists_large_tree_snortSecondPlayerWins` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#exists-large-tree-snort-second-player-wi).
+Stated but not proved: `MetaMathlibExt.exists_large_tree_snortSecondPlayerWins` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#exists-large-tree-snort-second-player-wi).
 
 ## Almost opposable graphs are first-player wins in Snort
 
@@ -387,7 +387,7 @@ that is almost opposable, the first player wins Snort on $G$.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_of_isAlmostOpposable` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-of-is-almost-opp).
+Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_of_isAlmostOpposable` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-of-is-almost-opp).
 
 ## Strong products of compatibly almost opposable graphs
 
@@ -399,7 +399,7 @@ opposable.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.isCompatiblyAlmostOpposable_strongProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable-strong-pr).
+Stated but not proved: `MetaMathlibExt.isCompatiblyAlmostOpposable_strongProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable-strong-pr).
 
 ## Strong products with a graph that has a universal vertex
 
@@ -411,7 +411,7 @@ vertex of $H$, then the strong product $G \boxtimes H$ is almost opposable.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.isAlmostOpposable_strongProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable-strong-prod).
+Stated but not proved: `MetaMathlibExt.isAlmostOpposable_strongProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable-strong-prod).
 
 ## Cartesian products of compatibly almost opposable graphs
 
@@ -425,7 +425,7 @@ $G \square H$ is compatibly almost opposable.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.isCompatiblyAlmostOpposable_boxProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable-box-prod).
+Stated but not proved: `MetaMathlibExt.isCompatiblyAlmostOpposable_boxProd` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-compatibly-almost-opposable-box-prod).
 
 ## Almost opposability of strong grids
 
@@ -437,7 +437,7 @@ paths $P_{n_i}$ on $n_i$ vertices, is almost opposable.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.isAlmostOpposable_strongGrid` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable-strong-grid).
+Stated but not proved: `MetaMathlibExt.isAlmostOpposable_strongGrid` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#is-almost-opposable-strong-grid).
 
 ## Opposability of Cartesian grids
 
@@ -450,7 +450,7 @@ most one of $n_1, \dots, n_k$ is even, and $G$ is opposable if more than one of 
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.cartesianGrid_opposability` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#cartesian-grid-opposability).
+Stated but not proved: `MetaMathlibExt.cartesianGrid_opposability` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#cartesian-grid-opposability).
 
 ## First player wins Peaceable Kings
 
@@ -461,7 +461,7 @@ first player wins Snort on the king's graph of the $n \times m$ board (the Peace
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_kingGraph` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-king-graph).
+Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_kingGraph` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-king-graph).
 
 ## Snort on the knight's graph
 
@@ -473,7 +473,7 @@ Knights game) if and only if $n$ is even or $m$ is even.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_knightGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-knight-graph-if).
+Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_knightGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-knight-graph-if).
 
 ## Second player wins Peaceable Bishops exactly when a side is even
 
@@ -485,7 +485,7 @@ board (the Peaceable Bishops game) if and only if $n$ or $m$ is even.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_bishopGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-bishop-graph-if).
+Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_bishopGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-bishop-graph-if).
 
 ## Snort on the rook's graph
 
@@ -497,7 +497,7 @@ Rooks game) if and only if $n$ and $m$ are both even.
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_rookGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-rook-graph-iff).
+Stated but not proved: `MetaMathlibExt.snortSecondPlayerWins_rookGraph_iff` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-second-player-wins-rook-graph-iff).
 
 ## First player wins Peaceable Queens on boards with an odd side
 
@@ -509,7 +509,7 @@ queen's graph of the $n \times m$ board (the Peaceable Queens game).
 
 - Ashmore, Austin, Davies, Dyer, Kellough, *On Graph Automorphisms Related to SNORT*, INTEGERS 26 (2026), Article G2, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_queenGraph` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-queen-graph).
+Stated but not proved: `MetaMathlibExt.snortFirstPlayerWins_queenGraph` is written with `theorem_wanted` in [WantedExt/GraphTheory/SnortOppositionsWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/SnortOppositionsWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html#snort-first-player-wins-queen-graph).
 
 ## Depends on
 
@@ -518,4 +518,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Snort](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/snort/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/snort)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/snort)

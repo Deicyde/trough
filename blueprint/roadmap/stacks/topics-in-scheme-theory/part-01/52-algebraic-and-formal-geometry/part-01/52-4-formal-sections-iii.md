@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.4 Formal sections, III
 
-Section 52.4 of the Stacks Project, [Tag 0EI9](https://stacks.math.columbia.edu/tag/0EI9). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 52.4 of the Stacks Project, [Tag 0EI9](https://stacks.math.columbia.edu/tag/0EI9). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EIA, a lemma
 
 [Tag 0EIA](https://stacks.math.columbia.edu/tag/0EIA) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_pow_linearMaps_sum_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IdealPowerSplitting.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IdealPowerSplitting.lean#L561).
+**`Stacks.LocalCohomology.exists_pow_linearMaps_sum_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IdealPowerSplitting.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IdealPowerSplitting.lean#L561).
 
 > **Stacks Project, Tag 0EIA.** Let `I = (f_1, …, f_r)` be an ideal of a Noetherian ring `A`
 > with `cd(A, I) = 1`. Then there are `c ≥ 1` and `A`-linear maps `φ_j : I^c → A` such that
@@ -35,7 +35,7 @@ theorem exists_pow_linearMaps_sum_eq_self
 
 [Tag 0EIB](https://stacks.math.columbia.edu/tag/0EIB) in the Stacks Project.
 
-**`Stacks.ReesAlgebra.extendLinearMaps`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L297). The attribute's comment: “the extended graded algebra map”.
+**`Stacks.ReesAlgebra.extendLinearMaps`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L297). The attribute's comment: “the extended graded algebra map”.
 
 > The graded `A`-algebra map `reesAlgebra J →ₐ[A] A[Xᵢ]` extending a finite family `φ` of
 > `A`-linear maps `J →ₗ[A] A`.
@@ -45,7 +45,7 @@ public noncomputable def extendLinearMaps (J : Ideal A) (φ : Fin r → J →ₗ
     reesAlgebra J →ₐ[A] MvPolynomial (Fin r) A
 ```
 
-**`Stacks.ReesAlgebra.extendLinearMaps_degreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L303). The attribute's comment: “the degree-one formula”.
+**`Stacks.ReesAlgebra.extendLinearMaps_degreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L303). The attribute's comment: “the degree-one formula”.
 
 > The extension sends an element of `J` in degree one to the linear form `∑ⱼ φ j x · Xⱼ`.
 
@@ -55,7 +55,7 @@ public theorem extendLinearMaps_degreeOne (J : Ideal A) (φ : Fin r → J →ₗ
       ∑ j, MvPolynomial.C (φ j x) * MvPolynomial.X j
 ```
 
-**`Stacks.ReesAlgebra.extendLinearMaps_homogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L320). The attribute's comment: “preservation of grading”.
+**`Stacks.ReesAlgebra.extendLinearMaps_homogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L320). The attribute's comment: “preservation of grading”.
 
 > The extension sends an element of the Rees algebra supported in degree `n` to a homogeneous
 > polynomial of total degree `n`.
@@ -66,7 +66,7 @@ public theorem extendLinearMaps_homogeneous (J : Ideal A) (φ : Fin r → J →�
     (extendLinearMaps J φ p).IsHomogeneous n
 ```
 
-**`Stacks.ReesAlgebra.extendLinearMaps_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L351). The attribute's comment: “uniqueness”.
+**`Stacks.ReesAlgebra.extendLinearMaps_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L351). The attribute's comment: “uniqueness”.
 
 > An algebra map out of the Rees algebra with the prescribed degree-one component is the
 > extension.
@@ -78,7 +78,7 @@ public theorem extendLinearMaps_unique (J : Ideal A) (φ : Fin r → J →ₗ[A]
     Ψ = extendLinearMaps J φ
 ```
 
-**`Stacks.ReesAlgebra.aeval_extendLinearMaps_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L365). The attribute's comment: “the composite is the inclusion”.
+**`Stacks.ReesAlgebra.aeval_extendLinearMaps_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendLinearMaps.lean#L365). The attribute's comment: “the composite is the inclusion”.
 
 > If the maps `φ` split the inclusion of `I ^ c` into `A` against the generators `f` of `I`,
 > then evaluating the extension at the `f j` in degree one is the inclusion
@@ -101,7 +101,7 @@ public theorem aeval_extendLinearMaps_eq (I : Ideal A) (c : ℕ) (f : Fin r → 
 
 [Tag 0EIC](https://stacks.math.columbia.edu/tag/0EIC) in the Stacks Project.
 
-**`Stacks.ReesAlgebra.exists_unique_extendLinearMaps_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendToModule.lean, line 831](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ReesAlgebra/ExtendToModule.lean#L831).
+**`Stacks.ReesAlgebra.exists_unique_extendLinearMaps_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ReesAlgebra/ExtendToModule.lean, line 826](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ReesAlgebra/ExtendToModule.lean#L826).
 
 > The degreewise graded map extending the maps on a power of `I`.
 
@@ -142,7 +142,7 @@ public theorem exists_unique_extendLinearMaps_module
 
 [Tag 0EH6](https://stacks.math.columbia.edu/tag/0EH6) in the Stacks Project.
 
-**`Stacks.Coherent.existsUnique_gradedSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/GradedSplittingCharts.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/GradedSplittingCharts.lean#L264).
+**`Stacks.Coherent.existsUnique_gradedSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/GradedSplittingCharts.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/GradedSplittingCharts.lean#L264).
 
 > **Stacks Project, Tag 0EH6.** Let `I = (f₁, …, f_r)` be an ideal of a Noetherian ring `A`
 > with `cd(A, I) = 1`, let `φ_j : I ^ c ⟶ A` split the inclusion against the generators, let `X`
@@ -178,7 +178,7 @@ public theorem existsUnique_gradedSplitting (A : Type u) [CommRing A] [IsNoether
 
 [Tag 0EH7](https://stacks.math.columbia.edu/tag/0EH7) in the Stacks Project.
 
-**`Stacks.Algebraization.AdicInverseSystem.limitIntCohomologyTopology_eq_adicModuleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/LimitTopologyIsAdic.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/LimitTopologyIsAdic.lean#L640).
+**`Stacks.Algebraization.AdicInverseSystem.limitIntCohomologyTopology_eq_adicModuleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/LimitTopologyIsAdic.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/LimitTopologyIsAdic.lean#L640).
 
 > **Stacks Project, Tag 0EH7.** Let `I` be an ideal of a Noetherian ring `A`, let `X` be a
 > Noetherian scheme over `Spec A` and let `… ⟶ F_3 ⟶ F_2 ⟶ F_1` be an inverse system of coherent
@@ -214,7 +214,7 @@ public theorem limitIntCohomologyTopology_eq_adicModuleTopology [IsNoetherianRin
 
 [Tag 0EH8](https://stacks.math.columbia.edu/tag/0EH8) in the Stacks Project.
 
-**`Stacks.Examples.NonAdicLimit.truncationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L158). The attribute's comment: “A/I^n is the polynomial chart k[x,y][s,t]/((xs - yt) + (s,t)^n): the truncation that makes the chart isomorphism true, where its untruncated form A[1/x] = k[x^\{±1},y][[t]] is false”.
+**`Stacks.Examples.NonAdicLimit.truncationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L158). The attribute's comment: “A/I^n is the polynomial chart k[x,y][s,t]/((xs - yt) + (s,t)^n): the truncation that makes the chart isomorphism true, where its untruncated form A[1/x] = k[x^\{±1},y][[t]] is false”.
 
 > **The truncation of `A`, Stacks 0EH8.** `A ⧸ Iⁿ` is the *polynomial* chart
 > `k[x,y][s,t] ⧸ ((xs − yt) + (s,t)ⁿ)`: modulo `Iⁿ = (s,t)ⁿ` only the coefficients in total degree
@@ -233,7 +233,7 @@ def truncationEquiv (n : ℕ) :
       (exampleRing k ⧸ adicIdeal k ^ n)
 ```
 
-**`Stacks.Examples.NonAdicLimit.chartTruncationEquivX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L300). The attribute's comment: “the truncated chart isomorphism A[1/x]/I^n = k[x^\{±1},y][t]/(t^n), sending s to (y/x)t; the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is false”.
+**`Stacks.Examples.NonAdicLimit.chartTruncationEquivX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L300). The attribute's comment: “the truncated chart isomorphism A[1/x]/I^n = k[x^\{±1},y][t]/(t^n), sending s to (y/x)t; the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is false”.
 
 > **The truncated chart isomorphism of Stacks 0EH8, on `D(x)`.**
 >
@@ -259,7 +259,7 @@ def chartTruncationEquivX (n : ℕ) :
       truncPoly (coeffAwayX k) n
 ```
 
-**`Stacks.Examples.NonAdicLimit.chartTruncationEquivY`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L351). The attribute's comment: “the truncated chart isomorphism A[1/y]/I^n = k[x,y^\{±1}][s]/(s^n), sending t to (x/y)s; the D(y) twin of the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is likewise false”.
+**`Stacks.Examples.NonAdicLimit.chartTruncationEquivY`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L351). The attribute's comment: “the truncated chart isomorphism A[1/y]/I^n = k[x,y^\{±1}][s]/(s^n), sending t to (x/y)s; the D(y) twin of the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is likewise false”.
 
 > **The truncated chart isomorphism of Stacks 0EH8, on `D(y)`.**
 >
@@ -290,7 +290,7 @@ def chartTruncationEquivY (n : ℕ) :
       truncPoly (coeffAwayY k) n
 ```
 
-**`Stacks.Examples.NonAdicLimit.notMemAdicIdealSmulFormalLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitNotAdic.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitNotAdic.lean#L580). The attribute's comment: “g^e is never in I*M, so the limit topology on M differs from the I-adic one and the cd = 1 hypothesis of Stacks 0EH7 is sharp”.
+**`Stacks.Examples.NonAdicLimit.notMemAdicIdealSmulFormalLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitNotAdic.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitNotAdic.lean#L580). The attribute's comment: “g^e is never in I*M, so the limit topology on M differs from the I-adic one and the cd = 1 hypothesis of Stacks 0EH7 is sharp”.
 
 > **`gᵉ ∉ I·M`, the last clause of Stacks 0EH8.** Each power of the rational function
 > `g = t/x = s/y` is a formal section tending to zero in the limit topology on
@@ -310,7 +310,7 @@ def chartTruncationEquivY (n : ℕ) :
 theorem notMemAdicIdealSmulFormalLimit (e : ℕ) : NotMemAdicIdealSmulFormalLimit k e
 ```
 
-**`Stacks.Examples.NonAdicLimit.notMem_or_notMem_of_adicIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L237). The attribute's comment: “the open neighbourhood V of V(I·O\_X) in X on which t/x = s/y is regular is D(x) ∪ D(y)”.
+**`Stacks.Examples.NonAdicLimit.notMem_or_notMem_of_adicIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L237). The attribute's comment: “the open neighbourhood V of V(I·O\_X) in X on which t/x = s/y is regular is D(x) ∪ D(y)”.
 
 > **The neighbourhood `V` of Stacks 0EH8.** At every point of `X = Spec(A) ∖ V(𝔞)` at which
 > `I` vanishes, one of `x`, `y` is invertible: `V(I𝒪_X) ⊆ D(x) ∪ D(y)`. So `D(x) ∪ D(y)` is the
@@ -323,7 +323,7 @@ theorem notMem_or_notMem_of_adicIdeal_le (p : PrimeSpectrum (exampleRing k))
     coordX k ∉ p.asIdeal ∨ coordY k ∉ p.asIdeal
 ```
 
-**`Stacks.Examples.NonAdicLimit.coordX_mul_rationalFunctionAwayX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L266). The attribute's comment: “the chart t/x of the rational function g, regular on D(x)”.
+**`Stacks.Examples.NonAdicLimit.coordX_mul_rationalFunctionAwayX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L266). The attribute's comment: “the chart t/x of the rational function g, regular on D(x)”.
 
 > **`g = t/x` on `D(x)`.**
 
@@ -334,7 +334,7 @@ theorem coordX_mul_rationalFunctionAwayX :
       algebraMap (exampleRing k) (Localization.Away (coordX k)) (coordT k)
 ```
 
-**`Stacks.Examples.NonAdicLimit.coordY_mul_rationalFunctionAwayY`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L274). The attribute's comment: “the chart s/y of the rational function g, regular on D(y)”.
+**`Stacks.Examples.NonAdicLimit.coordY_mul_rationalFunctionAwayY`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L274). The attribute's comment: “the chart s/y of the rational function g, regular on D(y)”.
 
 > **`g = s/y` on `D(y)`.**
 
@@ -345,7 +345,7 @@ theorem coordY_mul_rationalFunctionAwayY :
       algebraMap (exampleRing k) (Localization.Away (coordY k)) (coordS k)
 ```
 
-**`Stacks.Examples.NonAdicLimit.rationalFunctionAway_eq_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L284). The attribute's comment: “t/x = s/y: the two charts agree wherever x and y are both invertible”.
+**`Stacks.Examples.NonAdicLimit.rationalFunctionAway_eq_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L284). The attribute's comment: “t/x = s/y: the two charts agree wherever x and y are both invertible”.
 
 > **The two charts are the same rational function.** In any `A`-algebra in which `x` and `y`
 > are both invertible, an element solving `x·gx = t` and an element solving `y·gy = s` are
@@ -363,7 +363,7 @@ theorem rationalFunctionAway_eq_of_isUnit {R : Type*} [CommRing R] [Algebra (exa
     gx = gy
 ```
 
-**`Stacks.Examples.NonAdicLimit.pow_rationalFunctionAwayX_mem_map_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L316). The attribute's comment: “g^e dies modulo I^n for n ≤ e, on the chart D(x)”.
+**`Stacks.Examples.NonAdicLimit.pow_rationalFunctionAwayX_mem_map_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L316). The attribute's comment: “g^e dies modulo I^n for n ≤ e, on the chart D(x)”.
 
 > **`gᵉ → 0`, on the chart `D(x)`.** The `e`-th power of `t/x` lies in `Iⁿ·A[1/x]` for every
 > `n ≤ e`, because `tᵉ ∈ Iⁿ`.
@@ -374,7 +374,7 @@ theorem pow_rationalFunctionAwayX_mem_map_pow (e n : ℕ) (hne : n ≤ e) :
       (adicIdeal k ^ n).map (algebraMap (exampleRing k) (Localization.Away (coordX k)))
 ```
 
-**`Stacks.Examples.NonAdicLimit.pow_rationalFunctionAwayY_mem_map_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L324). The attribute's comment: “g^e dies modulo I^n for n ≤ e, on the chart D(y)”.
+**`Stacks.Examples.NonAdicLimit.pow_rationalFunctionAwayY_mem_map_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L324). The attribute's comment: “g^e dies modulo I^n for n ≤ e, on the chart D(y)”.
 
 > **`gᵉ → 0`, on the chart `D(y)`.** The `e`-th power of `s/y` lies in `Iⁿ·A[1/y]` for every
 > `n ≤ e`, because `sᵉ ∈ Iⁿ`.
@@ -385,7 +385,7 @@ theorem pow_rationalFunctionAwayY_mem_map_pow (e n : ℕ) (hne : n ≤ e) :
       (adicIdeal k ^ n).map (algebraMap (exampleRing k) (Localization.Away (coordY k)))
 ```
 
-**`Stacks.Examples.NonAdicLimit.cohomologicalDimension_adicIdeal_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L456). The attribute's comment: “cd(A, I) = 2, so the cd = 1 hypothesis of Stacks 0EH7 is sharp”.
+**`Stacks.Examples.NonAdicLimit.cohomologicalDimension_adicIdeal_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L456). The attribute's comment: “cd(A, I) = 2, so the cd = 1 hypothesis of Stacks 0EH7 is sharp”.
 
 > **`cd(A, I) = 2`.** The ideal `I = (s,t)` of `A = k[x,y][[s,t]]/(xs - yt)` has
 > cohomological dimension two: at most two because `I` has two generators (Stacks 0DX9), and at
@@ -400,7 +400,7 @@ theorem cohomologicalDimension_adicIdeal_eq_two :
     cohomologicalDimension (exampleRing k) (adicIdeal k) (adicIdeal_fg k) = 2
 ```
 
-**`Stacks.Examples.NonAdicLimit.sectionG`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L726). The attribute's comment: “the section g”.
+**`Stacks.Examples.NonAdicLimit.sectionG`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L726). The attribute's comment: “the section g”.
 
 > **`g` as a genuine section of `𝒪_X` over `V = D(x) ∪ D(y)`.** The rational function
 > `g = t/x = s/y` of Stacks 0EH8 is regular on the neighbourhood `V` of `V(I𝒪_X)`: it is glued
@@ -412,7 +412,7 @@ noncomputable def sectionG :
     (puncturedSpectrum k).presheaf.obj (Opposite.op (nearVanishingOpen k).openSet)
 ```
 
-**`Stacks.Examples.NonAdicLimit.formalSectionG`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 931](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L931). The attribute's comment: “each power g^e gives an element of M = lim H⁰(X, ℱₙ)”.
+**`Stacks.Examples.NonAdicLimit.formalSectionG`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L931). The attribute's comment: “each power g^e gives an element of M = lim H⁰(X, ℱₙ)”.
 
 > **`gᵉ` as a formal section, Stacks 0EH8's element of `M = lim H⁰(X, 𝒪_X/IⁿM)`.** The
 > image of `sectionGFormal k e` under the canonical comparison `comparisonAt` at the
@@ -424,7 +424,7 @@ noncomputable def formalSectionG (e : ℕ) :
       (formalModule k)))
 ```
 
-**`Stacks.Examples.NonAdicLimit.tendsto_formalSectionG_atTop_nhds_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 993](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L993). The attribute's comment: “g^e → 0 as e → ∞ in the limit topology on M”.
+**`Stacks.Examples.NonAdicLimit.tendsto_formalSectionG_atTop_nhds_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 993](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L993). The attribute's comment: “g^e → 0 as e → ∞ in the limit topology on M”.
 
 > **`gᵉ → 0` in the limit topology, Stacks 0EH8.** For each `n`, `gᵉ` already dies in the
 > tower's `n`-th term as soon as `e ≥ n`, by `sectionG_pow_mem_idealPowerMultiple`.
@@ -442,4 +442,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.4, Tag 0EI9](https://stacks.math.columbia.edu/tag/0EI9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

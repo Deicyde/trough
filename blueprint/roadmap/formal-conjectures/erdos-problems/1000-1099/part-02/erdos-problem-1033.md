@@ -17,7 +17,7 @@ statement: formalized
 >   Congr. Numer. (1985), 81--86.
 > - [Fa88] Fan, Genghua, *Degree sum for a triangle in a graph*. J. Graph Theory (1988), 249--263.
 
-*Quoted from [FormalConjectures/ErdosProblems/1033.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1033.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1033](https://www.erdosproblems.com/1033).
 
@@ -25,7 +25,7 @@ The file states 4 research or textbook statements: 4 solved.
 
 ## `Erdos1033.erdos_1033`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-03-000006](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-03-000006).
 
 > Let $h(n)$ be such that every graph on $n$ vertices with $>n^2/4$ many edges contains a triangle
 > whose vertices have degrees summing to at least $h(n)$. Estimate $h(n)$. In particular, is it
@@ -50,7 +50,7 @@ theorem erdos_1033 :
           (2 * (Real.sqrt 3 - 1) - ε) * n ≤ ∑ v ∈ t, (G.degree v : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean#L56).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean#L57).
 
 ## `Erdos1033.erdos_1033.variants.three_halves`
 
@@ -66,7 +66,7 @@ theorem erdos_1033.variants.three_halves :
       ∃ t, G.IsNClique 3 t ∧ 3 * n ≤ 2 * ∑ v ∈ t, G.degree v
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean#L69).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean#L70).
 
 ## `Erdos1033.erdos_1033.variants.fan`
 
@@ -81,7 +81,7 @@ theorem erdos_1033.variants.fan (n : ℕ) (G : SimpleGraph (Fin n)) [DecidableRe
     ∃ t, G.IsNClique 3 t ∧ 21 * n ≤ 16 * ∑ v ∈ t, G.degree v
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean#L79).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean#L80).
 
 ## `Erdos1033.erdos_1033.variants.erdos_laskar`
 
@@ -97,7 +97,7 @@ theorem erdos_1033.variants.erdos_laskar :
       ∀ t, G.IsNClique 3 t → ∑ v ∈ t, (G.degree v : ℝ) ≤ 2 * (Real.sqrt 3 - 1) * n + C
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean#L91).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/1033.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean#L92).
 
 ## Depends on
 
@@ -105,5 +105,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1033.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1033.lean)
+- [FormalConjectures/ErdosProblems/1033.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1033.lean)
 - [erdosproblems.com/1033](https://www.erdosproblems.com/1033)

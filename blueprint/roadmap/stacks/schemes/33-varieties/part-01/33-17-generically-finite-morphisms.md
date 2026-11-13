@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.17 Generically finite morphisms
 
-Section 33.17 of the Stacks Project, [Tag 0AB5](https://stacks.math.columbia.edu/tag/0AB5). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.17 of the Stacks Project, [Tag 0AB5](https://stacks.math.columbia.edu/tag/0AB5). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AB6, a lemma
 
 [Tag 0AB6](https://stacks.math.columbia.edu/tag/0AB6) in the Stacks Project.
 
-**`AlgebraicGeometry.quasiFiniteAt_of_target_stalk_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean#L157).
+**`AlgebraicGeometry.quasiFiniteAt_of_target_stalk_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean#L157).
 
 > **Stacks Project, Tag 0AB6.** A locally finite type morphism which is generically
 > quasi-finite is quasi-finite above a point with Noetherian local ring of dimension at most
@@ -43,7 +43,7 @@ theorem quasiFiniteAt_of_target_stalk_dimension_le_one
 
 [Tag 0AB7](https://stacks.math.columbia.edu/tag/0AB7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFinite_morphismRestrict_of_ringKrullDim_stalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean#L190).
+**`AlgebraicGeometry.exists_isFinite_morphismRestrict_of_ringKrullDim_stalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiFiniteCodimensionOne.lean#L190).
 
 > **Stacks Project, Tag 0AB7.** A proper morphism which is generically quasi-finite is finite
 > over a neighbourhood of a point whose local ring is Noetherian of dimension at most one.
@@ -66,7 +66,7 @@ theorem exists_isFinite_morphismRestrict_of_ringKrullDim_stalk_le_one
 
 [Tag 0BFP](https://stacks.math.columbia.edu/tag/0BFP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isIso_restrict_of_finite_fiber_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L369). The attribute's comment: “finite\_fibre\_normal”. References: EGA III (4.4.9), “proper case”.
+**`AlgebraicGeometry.exists_isIso_restrict_of_finite_fiber_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L369). The attribute's comment: “finite\_fibre\_normal”. References: EGA III (4.4.9), “proper case”.
 
 > **Stacks Project, Tag 0BFP (finite fibre, normal local ring).**
 > Let `f : Y ⟶ X` be a proper birational morphism, where `X` is Noetherian and `Y`
@@ -81,7 +81,7 @@ public theorem exists_isIso_restrict_of_finite_fiber_of_normal
     ∃ U : X.Opens, x ∈ U ∧ IsIso (f ∣_ U)
 ```
 
-**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_quasiFiniteAt_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L729). The attribute's comment: “quasi\_finite\_point\_normal”. References: EGA III (4.4.9), “proper case”.
+**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_quasiFiniteAt_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L729). The attribute's comment: “quasi\_finite\_point\_normal”. References: EGA III (4.4.9), “proper case”.
 
 > **Stacks Project, Tag 0BFP (quasi-finite point over a normal point).** The maximal open
 > over which a proper birational morphism with reduced source is an isomorphism contains every
@@ -97,7 +97,7 @@ public theorem mem_maximal_isomorphism_open_of_quasiFiniteAt_of_isNormal
     x ∈ U
 ```
 
-**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusCodimensionZero.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusCodimensionZero.lean#L127). The attribute's comment: “item (1): a point of codimension zero, a generic point of a component”.
+**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusCodimensionZero.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusCodimensionZero.lean#L127). The attribute's comment: “item (1): a point of codimension zero, a generic point of a component”.
 
 > **Stacks Project, Tag 0BFP (codimension zero).**
 > Let `f : Y ⟶ X` be a proper birational morphism, where `X` is Noetherian and `Y` is reduced. The
@@ -113,7 +113,7 @@ public theorem mem_maximal_isomorphism_open_of_mem_genericPoints
     x ∈ U
 ```
 
-**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusDVR.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusDVR.lean#L101). The attribute's comment: “item (2): a codimension-one point whose local ring is a discrete valuation ring”.
+**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusDVR.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocusDVR.lean#L101). The attribute's comment: “item (2): a codimension-one point whose local ring is a discrete valuation ring”.
 
 > Let `f : Y ⟶ X` be a proper birational morphism, where `X` is Noetherian and `Y` is reduced.
 > The maximal open over which `f` is an isomorphism contains every point whose local ring is a
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.17, Tag 0AB5](https://stacks.math.columbia.edu/tag/0AB5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

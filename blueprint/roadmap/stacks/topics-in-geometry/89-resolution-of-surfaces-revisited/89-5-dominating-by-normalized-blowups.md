@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.IsNormalizedBlowupAtClosedPoint, AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper, AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper_of_isNagata, AlgebraicGeometry.Space.NormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalNormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalNormalizedBlowupFactorization_iff, Stacks.Examples.NormalizedBlowupsNotEtaleLocal.not_stacks0BHL
+lean: AlgebraicGeometry.Space.IsNormalizedBlowupAtClosedPoint, AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper_of_isNagata, AlgebraicGeometry.Space.NormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalNormalizedBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalNormalizedBlowupFactorization_iff, Stacks.Examples.NormalizedBlowupsNotEtaleLocal.not_stacks0BHL, AlgebraicGeometry.Space.exists_normalizedBlowUpChain_dominating
 statement: formalized
 proof: formalized
 ---
 
 # 89.5 Dominating by normalized blowups
 
-Section 89.5 of the Stacks Project, [Tag 0BHI](https://stacks.math.columbia.edu/tag/0BHI). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.5 of the Stacks Project, [Tag 0BHI](https://stacks.math.columbia.edu/tag/0BHI). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BHJ, a definition
 
 [Tag 0BHJ](https://stacks.math.columbia.edu/tag/0BHJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsNormalizedBlowupAtClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L185).
+**`AlgebraicGeometry.Space.IsNormalizedBlowupAtClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L185).
 
 > **Stacks 0BHJ.** A morphism `f : X'' ⟶ X` of algebraic spaces **is the normalized blowing up
 > of `X` at the closed point `z`** when it is the composition of the normalization of a blowing up
@@ -38,29 +38,7 @@ def IsNormalizedBlowupAtClosedPoint {X Y : AlgebraicSpaces B S hS}
 
 [Tag 0BHK](https://stacks.math.columbia.edu/tag/0BHK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPoint.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPoint.lean#L221). The attribute's comment: “all four assertions — the normalized blowing up is an algebraic space, it is normal, it is Nagata, and it is proper over X — with properness of the blowing up X' ⟶ X itself, which is Stacks 085Z, as the named hypothesis hproperBlowup”.
-
-> **Stacks 0BHK.**  If `X` is Nagata, then the normalized blowing up of `X` at a closed point
-> `z` is a normal Nagata algebraic space proper over `X`.
->
-> All four assertions of the source are listed: `X''` is an algebraic space over `S`, it is
-> normal, it is Nagata, and the normalized blowing up `X'' ⟶ X` is proper.
->
-> The hypothesis `hproperBlowup` is properness of the blowing up `X' ⟶ X`, which is Stacks 085Z;
-> see the "what is assumed" section of the module documentation.
-
-```lean
-theorem isNormal_and_isNagata_and_isProper
-    (hNagata : HasEtaleLocalProperty B S hS X.obj (fun T : Scheme.{u} => IsNagataScheme T))
-    (hproperBlowup : IsProper B S hS N.proj.hom) :
-    IsAlgebraicSpace B S hS N.space.obj ∧
-      HasEtaleLocalProperty B S hS N.space.obj
-        (fun T : Scheme.{u} => _root_.AlgebraicGeometry.IsNormal T) ∧
-      HasEtaleLocalProperty B S hS N.space.obj (fun T : Scheme.{u} => IsNagataScheme T) ∧
-      IsProper B S hS N.hom.hom
-```
-
-**`AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper_of_isNagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPointProper.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPointProper.lean#L133).
+**`AlgebraicGeometry.Space.NormalizedBlowupAtClosedPoint.isNormal_and_isNagata_and_isProper_of_isNagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPointProper.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupAtClosedPointProper.lean#L134). The attribute's comment: “the lemma in full, with NOTHING carried: for a Nagata X, every normalized blowing up of X at a closed point is an algebraic space, normal, Nagata, and proper over X”.
 
 > **Stacks 0BHK.**  If `X` is Nagata, then the normalized blowing up of `X` at a closed point
 > `z` is a normal Nagata algebraic space proper over `X`.
@@ -89,7 +67,7 @@ theorem isNormal_and_isNagata_and_isProper_of_isNagata
 
 [Tag 0BHL](https://stacks.math.columbia.edu/tag/0BHL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizedBlowupFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L427). The attribute's comment: “the condition asserted on both sides of the equivalence: a factorization of the given morphism as a finite sequence of normalized blowings up at closed points lying over the given set of points. The equivalence itself is not proved: its proof is the argument of Tag 0BHF, which this library does carry, together with a comparison of a normalization with an étale base change of it, which it does not.”.
+**`AlgebraicGeometry.Space.NormalizedBlowupFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L427). The attribute's comment: “the condition asserted on both sides of the equivalence: a factorization of the given morphism as a finite sequence of normalized blowings up at closed points lying over the given set of points. The equivalence itself is not proved: its proof is the argument of Tag 0BHF, which this library does carry, together with a comparison of a normalization with an étale base change of it, which it does not.”.
 
 > **A factorization of `f : Y ⟶ X` as a sequence of normalized blowings up at closed points
 > lying over the set of points `T ⊆ |X|`**: a tower
@@ -108,7 +86,7 @@ structure NormalizedBlowupFactorization (B : BigFppfSite.{u}) (S : Scheme.{u})
     (f : Y ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L526). The attribute's comment: “the left-hand side of the equivalence: the factorization of the morphism to X by normalized blowings up at closed points lying over \{x₁, …, xₙ}”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L526). The attribute's comment: “the left-hand side of the equivalence: the factorization of the morphism to X by normalized blowings up at closed points lying over \{x₁, …, xₙ}”.
 
 > **Stacks 0BHL**, the condition on the morphism to `X`: `f : Y ⟶ X` factors as
 >
@@ -121,7 +99,7 @@ structure NormalizedBlowupFactorization (B : BigFppfSite.{u}) (S : Scheme.{u})
 abbrev GlobalNormalizedBlowupFactorization {Y : AlgebraicSpaces B S hS} (f : Y ⟶ D.space)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L538). The attribute's comment: “the right-hand side of the equivalence: the factorization of the morphism to the i-th elementary étale neighborhood by normalized blowings up at closed points lying over uᵢ”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L538). The attribute's comment: “the right-hand side of the equivalence: the factorization of the morphism to the i-th elementary étale neighborhood by normalized blowings up at closed points lying over uᵢ”.
 
 > **Stacks 0BHL**, the condition on the morphism to the `i`th étale neighborhood:
 > `gᵢ : Yᵢ ⟶ Uᵢ` factors as
@@ -136,7 +114,7 @@ abbrev LocalNormalizedBlowupFactorization (i : Fin n) {Y : AlgebraicSpaces B S h
     (g : Y ⟶ D.neighborhoodSpace i)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalNormalizedBlowupFactorization_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPointsEquivalence.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPointsEquivalence.lean#L249). The attribute's comment: “corrected (erratum): with X normal; false as written without it, the normalized blowup normalizes the whole space (counterexamples to both directions in the module documentation); otherwise the full statement, under the source's hypotheses”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalNormalizedBlowupFactorization_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPointsEquivalence.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPointsEquivalence.lean#L249). The attribute's comment: “corrected (erratum): with X normal; false as written without it, the normalized blowup normalizes the whole space (counterexamples to both directions in the module documentation); otherwise the full statement, under the source's hypotheses”.
 
 > **Stacks 0BHL, for normal `X`.** Let `X, xᵢ, Uᵢ ⟶ X, uᵢ` be as in Stacks 0BHA and let
 > `f : Y ⟶ X` correspond to `gᵢ : Yᵢ ⟶ Uᵢ` under the functor `F` of Stacks 0BHA. Assume that `X`
@@ -161,7 +139,7 @@ theorem nonempty_globalNormalizedBlowupFactorization_iff
           D.neighborhoodSpace i))
 ```
 
-**`Stacks.Examples.NormalizedBlowupsNotEtaleLocal.not_stacks0BHL`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/NormalizedBlowupsNotEtaleLocal.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/NormalizedBlowupsNotEtaleLocal.lean#L555). The attribute's comment: “refutation of the published statement: false without X normal; at X = Spec(Z/36Z), two closed points with non-reduced local rings, g₁ the normalized blowing up of U₁ at u₁ and g₂ = id are sequences of normalized blowings up, but the f corresponding to them is not, a nonempty sequence having a normal source and the empty one being an isomorphism”.
+**`Stacks.Examples.NormalizedBlowupsNotEtaleLocal.not_stacks0BHL`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/NormalizedBlowupsNotEtaleLocal.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/NormalizedBlowupsNotEtaleLocal.lean#L555). The attribute's comment: “refutation of the published statement: false without X normal; at X = Spec(Z/36Z), two closed points with non-reduced local rings, g₁ the normalized blowing up of U₁ at u₁ and g₂ = id are sequences of normalized blowings up, but the f corresponding to them is not, a nonempty sequence having a normal source and the empty one being an isomorphism”.
 
 > **Stacks 0BHL is false as published.** The source asserts, for every scheme `S`, every
 > decent algebraic space `X` over `S` satisfying the equivalent conditions of Stacks 0BB1, every
@@ -194,7 +172,7 @@ theorem not_stacks0BHL :
 
 [Tag 0BHM](https://stacks.math.columbia.edu/tag/0BHM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_normalizedBlowUpChain_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurfaceTransfer/DominatingNormalizedBlowups.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurfaceTransfer/DominatingNormalizedBlowups.lean#L167).
+**`AlgebraicGeometry.Space.exists_normalizedBlowUpChain_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurfaceTransfer/DominatingNormalizedBlowups.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurfaceTransfer/DominatingNormalizedBlowups.lean#L167).
 
 > **Stacks 0BHM.** Let `S` be a scheme, let `X` be a Noetherian Nagata algebraic space over
 > `S` with `dim(X) = 2`, and let `f : Y ⟶ X` be a proper birational morphism. Then there is a
@@ -238,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.5, Tag 0BHI](https://stacks.math.columbia.edu/tag/0BHI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.12 Quasi-coherent sheaves on groupoids
 
-Section 78.12 of the Stacks Project, [Tag 0440](https://stacks.math.columbia.edu/tag/0440). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.12 of the Stacks Project, [Tag 0440](https://stacks.math.columbia.edu/tag/0440). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0441, a definition
 
 [Tag 0441](https://stacks.math.columbia.edu/tag/0441) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentModules.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentModules.lean#L392).
+**`AlgebraicGeometry.Space.QuasicoherentModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentModules.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentModules.lean#L392).
 
 > **Stacks 0441.**  A quasi-coherent module on a groupoid in algebraic spaces `(U, R, s, t, c)`
 > over `A`: a quasi-coherent `𝒪_U`-module `ℱ` together with a morphism `α : t^*ℱ ⟶ s^*ℱ` of
@@ -29,7 +29,7 @@ structure QuasicoherentModule (G : GroupoidInAlgebraicSpaces B S hS A)
 
 [Tag 077W](https://stacks.math.columbia.edu/tag/077W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule.isIso_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentTransition.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentTransition.lean#L347).
+**`AlgebraicGeometry.Space.QuasicoherentModule.isIso_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentTransition.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentTransition.lean#L347).
 
 > The transition morphism `α : t^*ℱ ⟶ s^*ℱ` of a quasi-coherent module on a groupoid in
 > algebraic spaces is an isomorphism.
@@ -42,7 +42,7 @@ theorem isIso_alpha (M : QuasicoherentModule 𝒞 S hS G) : IsIso M.alpha
 
 [Tag 0442](https://stacks.math.columbia.edu/tag/0442) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.groupoidQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidQuasicoherentPullbackFunctor.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidQuasicoherentPullbackFunctor.lean#L216). The attribute's comment: “the inverse image functor on quasi-coherent modules”.
+**`AlgebraicGeometry.Space.groupoidQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidQuasicoherentPullbackFunctor.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidQuasicoherentPullbackFunctor.lean#L216). The attribute's comment: “the inverse image functor on quasi-coherent modules”.
 
 > **Stacks 0442.**  The inverse image along a morphism `f` of groupoids in algebraic spaces is
 > a functor `QCoh(U', R', s', t', c') ⥤ QCoh(U, R, s, t, c)`: it sends a quasi-coherent module
@@ -55,7 +55,7 @@ def groupoidQuasicoherentPullback :
     QuasicoherentModule B S hS G' ⥤ QuasicoherentModule B S hS G
 ```
 
-**`AlgebraicGeometry.Space.groupoidModulePullbackTransition_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean#L514). The attribute's comment: “the unit law for the transition morphism of the inverse image”.
+**`AlgebraicGeometry.Space.groupoidModulePullbackTransition_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean#L514). The attribute's comment: “the unit law for the transition morphism of the inverse image”.
 
 > **The unit law for the transition morphism of the inverse image.**  If the transition
 > morphism `α` of a module on the target groupoid restricts along the unit arrow to the canonical
@@ -77,7 +77,7 @@ theorem groupoidModulePullbackTransition_unit (φ : Hom G G')
         ((identityArrow_comp_target G).trans (identityArrow_comp_source G).symm)
 ```
 
-**`AlgebraicGeometry.Space.groupoidModulePullbackTransition_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean#L564). The attribute's comment: “the cocycle law for the transition morphism of the inverse image”.
+**`AlgebraicGeometry.Space.groupoidModulePullbackTransition_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPullback.lean#L564). The attribute's comment: “the cocycle law for the transition morphism of the inverse image”.
 
 > **The cocycle law for the transition morphism of the inverse image.**  If the transition
 > morphism `α` of a module on the target groupoid satisfies the cocycle law on the space of
@@ -104,7 +104,7 @@ theorem groupoidModulePullbackTransition_cocycle (φ : Hom G G')
 
 [Tag 0GPM](https://stacks.math.columbia.edu/tag/0GPM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.groupoidQuasicoherentPullbackPushforwardAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPushforwardAdjunction.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPushforwardAdjunction.lean#L391).
+**`AlgebraicGeometry.Space.groupoidQuasicoherentPullbackPushforwardAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPushforwardAdjunction.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentPushforwardAdjunction.lean#L391).
 
 > **Stacks 0GPM.**  Let `f : (U, R, s, t, c) ⟶ (U', R', s', t', c')` be a morphism of
 > groupoids in algebraic spaces over `A` such that `f : U ⟶ U'` is quasi-compact and
@@ -125,7 +125,7 @@ def groupoidQuasicoherentPullbackPushforwardAdjunction :
 
 [Tag 077X](https://stacks.math.columbia.edu/tag/077X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentModule_hasColimits_of_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentColimits.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentColimits.lean#L408).
+**`AlgebraicGeometry.Space.quasicoherentModule_hasColimits_of_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentColimits.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentColimits.lean#L408).
 
 > **Stacks 077X.**  The category of quasi-coherent modules on a groupoid in algebraic spaces
 > has colimits, indexed by the categories of the universe of the schemes.
@@ -146,7 +146,7 @@ theorem quasicoherentModule_hasColimits_of_closure (B : BigFppfSite.{u}) (S : Sc
 
 [Tag 06VZ](https://stacks.math.columbia.edu/tag/06VZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentModule.abelian_of_closure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentAbelian.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentAbelian.lean#L631).
+**`AlgebraicGeometry.Space.QuasicoherentModule.abelian_of_closure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentAbelian.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentAbelian.lean#L632).
 
 > **Stacks 06VZ.**  If the source and the target of a groupoid in algebraic spaces
 > `(U, R, s, t, c)` over `A` are flat, the quasi-coherent modules on it form an abelian category.
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.12, Tag 0440](https://stacks.math.columbia.edu/tag/0440)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

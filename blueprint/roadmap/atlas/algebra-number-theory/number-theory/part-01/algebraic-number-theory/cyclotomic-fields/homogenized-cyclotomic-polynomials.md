@@ -8,7 +8,7 @@ proof: formalized
 
 # Homogenized cyclotomic polynomials
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html).
 
 ## Homogenized cyclotomic value
 
@@ -26,7 +26,7 @@ polynomial.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Section 2 (notation `Φ_n(a, b)`, Lemma 3 and the explicit values in the proof of Theorem 1).
 
-Formalized by `MetaMathlibExt.homogenizedCyclotomic`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic).
+Formalized by `MetaMathlibExt.homogenizedCyclotomic`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic).
 
 ## Homogenized cyclotomic value of index one
 
@@ -37,7 +37,7 @@ homogenized cyclotomic value $\Phi_1(a, b)$ equals $a - b$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (v) (the case `n = 1`).
 
-Formalized by `MetaMathlibExt.homogenizedCyclotomic_one`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-one).
+Formalized by `MetaMathlibExt.homogenizedCyclotomic_one`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-one).
 
 ## Homogenized cyclotomic value of index two
 
@@ -48,7 +48,7 @@ homogenized cyclotomic value $\Phi_2(a, b)$ equals $a + b$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (v) (the case `n = 2`).
 
-Formalized by `MetaMathlibExt.homogenizedCyclotomic_two`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-two).
+Formalized by `MetaMathlibExt.homogenizedCyclotomic_two`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-two).
 
 ## Homogenized cyclotomic value with second argument one
 
@@ -60,7 +60,7 @@ value at $a$ of the $n$-th cyclotomic polynomial with integer coefficients.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Section 2 (notation `Φ_n(a, b)`).
 
-Formalized by `MetaMathlibExt.homogenizedCyclotomic_one_right`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-one-right).
+Formalized by `MetaMathlibExt.homogenizedCyclotomic_one_right`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-one-right).
 
 ## Homogenized cyclotomic value in a field
 
@@ -74,7 +74,7 @@ and $a/b$ are computed in $K$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Section 2 (notation `Φ_n(a, b)`).
 
-Formalized by `MetaMathlibExt.homogenizedCyclotomic_cast`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-cast).
+Formalized by `MetaMathlibExt.homogenizedCyclotomic_cast`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/HomogenizedCyclotomic.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html#homogenized-cyclotomic-cast).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Homogenized cyclotomic polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/homogenized-cyclotomic-polynomials)

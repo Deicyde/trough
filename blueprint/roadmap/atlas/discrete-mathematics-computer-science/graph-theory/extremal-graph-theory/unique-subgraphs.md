@@ -7,7 +7,7 @@ statement: formalized
 
 # Unique subgraphs
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html).
 
 ## Unique subgraph
 
@@ -16,7 +16,7 @@ unique subgraph of $H$ if exactly one subgraph of $H$ is isomorphic to $G$. Here
 $H$ means a spanning subgraph: a graph on $V$ all of whose edges are edges of $H$ (not
 necessarily induced).
 
-Formalized by `SimpleGraph.IsUniqueSubgraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#is-unique-subgraph).
+Formalized by `SimpleGraph.IsUniqueSubgraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#is-unique-subgraph).
 
 ## Number of unique subgraphs
 
@@ -31,7 +31,7 @@ these classes. In particular, isomorphic copies do not inflate the count: if two
 spanning subgraphs of $H$ are isomorphic, neither is a unique subgraph of $H$, so neither is
 counted.
 
-Formalized by `SimpleGraph.uniqueSubgraphCount`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#unique-subgraph-count).
+Formalized by `SimpleGraph.uniqueSubgraphCount`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/SubgraphIsomorphism.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#unique-subgraph-count).
 
 ## Many unique subgraphs (Erdős Problem 426)
 
@@ -41,7 +41,7 @@ subgraph of $H$ (its unique subgraphs). The statement is that there is a real co
 such that for infinitely many $n$ some graph $H$ on $n$ vertices has
 $u(H) \ge c \cdot 2^{\binom{n}{2}} / n!$.
 
-Formalized by `MathlibExt.GraphTheory.ErdosProblem426Wanted.conjecture`, a definition declared in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#conjecture).
+Formalized by `MathlibExt.GraphTheory.ErdosProblem426Wanted.conjecture`, a definition declared in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#conjecture).
 
 ## Negation of the Erdős Problem 426 statement
 
@@ -50,7 +50,7 @@ $u(H)$ be the number of spanning subgraphs of $H$ that are isomorphic to no othe
 subgraph of $H$. This is the proposition that there is no real constant $c > 0$ such that for
 infinitely many $n$ some graph $H$ on $n$ vertices has $u(H) \ge c \cdot 2^{\binom{n}{2}} / n!$.
 
-Formalized by `MathlibExt.GraphTheory.ErdosProblem426Wanted.disprovedForm`, a definition declared in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#disproved-form).
+Formalized by `MathlibExt.GraphTheory.ErdosProblem426Wanted.disprovedForm`, a definition declared in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#disproved-form).
 
 ## Erdős Problem 426 is false (Bradač–Christoph)
 
@@ -63,7 +63,7 @@ many $n$ some graph $H$ on $n$ vertices has $u(H) \ge c \cdot 2^{\binom{n}{2}} /
 
 - Bradač and Christoph [BrCh24] (f(n) = o(2^C(n,2)/n!)), per erdosproblems.com/426, https://www.erdosproblems.com/426.
 
-Stated but not proved: `MathlibExt.GraphTheory.ErdosProblem426Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.GraphTheory.ErdosProblem426Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/GraphTheory/ErdosProblem426Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/ErdosProblem426Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Unique subgraphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/extremal-graph-theory/unique-subgraphs)

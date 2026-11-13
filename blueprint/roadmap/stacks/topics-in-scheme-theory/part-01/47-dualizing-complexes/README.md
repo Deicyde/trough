@@ -1,6 +1,6 @@
 # 47 Dualizing Complexes
 
-Chapter 47 of the Stacks Project, *Dualizing Complexes*, [Tag 08XG](https://stacks.math.columbia.edu/tag/08XG): the 25 sections of its 27 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 166 tags are carried by 337 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
+Chapter 47 of the Stacks Project, *Dualizing Complexes*, [Tag 08XG](https://stacks.math.columbia.edu/tag/08XG): the 25 sections of its 27 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 167 tags are carried by 340 declarations of the repository (all in StacksFrontier) and 21 registered declarations.
 
 ## [47.2 Essential surjections and… to 47.18 The local duality theorem](part-01/README.md)
 

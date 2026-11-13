@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.19 The Čech-to-cohomology spectral sequence
 
-Section 59.19 of the Stacks Project, [Tag 03OU](https://stacks.math.columbia.edu/tag/03OU). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.19 of the Stacks Project, [Tag 03OU](https://stacks.math.columbia.edu/tag/03OU). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03OV, a lemma
 
 [Tag 03OV](https://stacks.math.columbia.edu/tag/03OV) in the Stacks Project.
 
-**`CategoryTheory.sheafToPresheaf_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/InjectiveSheafVanishing.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/InjectiveSheafVanishing.lean#L48). The attribute's comment: “the forgetful functor from sheaves to presheaves preserves injectives”. References: SGA 4 V (3.1), “special case”.
+**`CategoryTheory.sheafToPresheaf_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/InjectiveSheafVanishing.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/InjectiveSheafVanishing.lean#L48). The attribute's comment: “the forgetful functor from sheaves to presheaves preserves injectives”. References: SGA 4 V (3.1), “special case”.
 
 > The inclusion of sheaves into presheaves preserves injective objects.
 
@@ -28,7 +28,7 @@ theorem sheafToPresheaf_preservesInjectiveObjects {C : Type u} [Category.{v} C]
 
 [Tag 03OW](https://stacks.math.columbia.edu/tag/03OW) in the Stacks Project.
 
-**`Stacks.CechComparison.exists_cechToCohomology_spectralSequence_pageTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/Basic.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/Basic.lean#L241). The attribute's comment: “the spectral sequence and its second page”. References: SGA 4 V (7.4.0), “Čech covering case”; SGA 4 V (3.2), “R = sieve of a family”.
+**`Stacks.CechComparison.exists_cechToCohomology_spectralSequence_pageTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/Basic.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/Basic.lean#L242). The attribute's comment: “the spectral sequence and its second page”. References: SGA 4 V (7.4.0), “Čech covering case”; SGA 4 V (3.2), “R = sieve of a family”.
 
 > **Stacks Project, Tag 03OW: the Čech-to-cohomology spectral sequence, with its second
 > page.**  For a covering family `𝒰 = E` of an object `U` of a site `C` and an abelian sheaf `F`
@@ -55,7 +55,7 @@ theorem exists_cechToCohomology_spectralSequence_pageTwo (F : Sheaf J AddCommGrp
         (fun n => (((sheafIncl J) ⋙ cechZeroFunctor E).rightDerivedPlus n).obj F)
 ```
 
-**`Stacks.CechComparison.exists_cechToCohomology_spectralSequence_abutsTo_sheafCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SheafCohomologyAbutment.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SheafCohomologyAbutment.lean#L105). References: SGA 4 V (3.2), “special case”.
+**`Stacks.CechComparison.exists_cechToCohomology_spectralSequence_abutsTo_sheafCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SheafCohomologyAbutment.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SheafCohomologyAbutment.lean#L105). References: SGA 4 V (3.2), “special case”.
 
 > **Stacks Project, Tag 03OW.**  Let `C` be a site, `𝒰 = E = {U_i → U}_{i ∈ I}` a covering of
 > `U ∈ Ob(C)` (the family generates a covering sieve of `U`) and `F` an abelian sheaf on `C`.  There
@@ -92,4 +92,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.19, Tag 03OU](https://stacks.math.columbia.edu/tag/03OU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

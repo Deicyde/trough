@@ -7,7 +7,7 @@ statement: formalized
 
 # Mean values of products of modular inverses
 
-18 results, 5 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html).
+18 results, 5 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html).
 
 ## The modular product sum $S_k(n, m)$
 
@@ -25,7 +25,7 @@ to $n$ and $\bar{a} \in \{1, \dots, n\}$ is the inverse of $a$ modulo $n$.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, equation (2).
 
-Formalized by `MetaMathlibExt.modularProductSum`, a definition declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum).
+Formalized by `MetaMathlibExt.modularProductSum`, a definition declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum).
 
 ## The modular product sum $S_2(3, 1)$
 
@@ -37,7 +37,7 @@ are $(1, 1)$ and $(2, 2)$, and $1 \cdot 1 + 2 \cdot 2 = 5$.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, equation (2).
 
-Formalized by `MetaMathlibExt.modularProductSum_two_three_one`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-three-one).
+Formalized by `MetaMathlibExt.modularProductSum_two_three_one`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-three-one).
 
 ## The modular product sum $S_1(5, 3)$
 
@@ -48,7 +48,7 @@ the only $a \in \{1, \dots, 5\}$ coprime to $5$ with $a \equiv 3 \pmod 5$ is $a 
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, equation (2).
 
-Formalized by `MetaMathlibExt.modularProductSum_one_five_three`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-one-five-three).
+Formalized by `MetaMathlibExt.modularProductSum_one_five_three`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-one-five-three).
 
 ## Xu–Zhang constant
 
@@ -64,7 +64,7 @@ For $q = 1$, and by convention for $q = 0$, there are no prime factors, so $C_0 
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, equation (4), quoting Z. Xu and W. Zhang, *Fourth power mean of character sums*, Acta Arith. 135 (2008), Lemma 9.
 
-Formalized by `MetaMathlibExt.xuZhangConstant`, a definition declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#xu-zhang-constant).
+Formalized by `MetaMathlibExt.xuZhangConstant`, a definition declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#xu-zhang-constant).
 
 ## Xu–Zhang constant at a prime
 
@@ -76,7 +76,7 @@ $$C_p = 1 + \frac{2p^3 + p^2 - 1}{(p^2 + 1)(p^2 + p + 1)} - \frac{1}{p^2 + p + 1
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, equation (4).
 
-Formalized by `MetaMathlibExt.xuZhangConstant_prime`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#xu-zhang-constant-prime).
+Formalized by `MetaMathlibExt.xuZhangConstant_prime`, a theorem declared in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#xu-zhang-constant-prime).
 
 ## Explicit estimate for the modular product sum $S_k(n, m)$
 
@@ -93,7 +93,7 @@ The paper also assumes $m \ge 1$, which follows from $\gcd(m, n) = 1$ and $n \ge
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.modularProductSum_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-explicit-estimate).
+Stated but not proved: `MetaMathlibExt.modularProductSum_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-explicit-estimate).
 
 ## Estimate for the modular product sum $S_k(n, m)$ at odd moduli
 
@@ -109,7 +109,7 @@ C_k \, n^{3(k-2)/2} \varphi(n)^3 (\log n)^{k-4} (\log \log n)^2.$$
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.modularProductSum_odd_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-odd-estimate).
+Stated but not proved: `MetaMathlibExt.modularProductSum_odd_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-odd-estimate).
 
 ## Explicit estimate for the modular product sum $S_2(n, m)$
 
@@ -125,7 +125,7 @@ n^2 \sigma_{1/2}(n) \bigl(\tau(n) \log(en)\bigr)^2 + \frac{n \varphi(n)}{4}.$$
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.modularProductSum_two_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-explicit-estimat).
+Stated but not proved: `MetaMathlibExt.modularProductSum_two_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-explicit-estimat).
 
 ## Mean square of the error in the modular product sum $S_2(n, m)$
 
@@ -142,7 +142,7 @@ $$\left| \sum_{1 \le m \le n,\ \gcd(m, n) = 1}
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.modularProductSum_two_mean_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-mean-square).
+Stated but not proved: `MetaMathlibExt.modularProductSum_two_mean_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-mean-square).
 
 ## Large values of the error in the modular product sum $S_2(n, m)$
 
@@ -157,7 +157,7 @@ $$\left| S_2(n, m) - \frac{n^2 \varphi(n)}{4} \right| \ge c \, n^{3/2} \varphi(n
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.modularProductSum_two_error_large` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-error-large).
+Stated but not proved: `MetaMathlibExt.modularProductSum_two_error_large` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#modular-product-sum-two-error-large).
 
 ## Xu–Zhang twisted fourth moment of weighted character sums
 
@@ -175,7 +175,7 @@ where $\chi$ runs over the complex Dirichlet characters modulo $q$ with $\chi(-1
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 1 (journal PDF p. 4), quoting Z. Xu and W. Zhang, *Fourth power mean of character sums*, Acta Arith. 135 (2008), Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.odd_character_twisted_weighted_sum_fourth_moment` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#odd-character-twisted-weighted-sum-fourt).
+Stated but not proved: `MetaMathlibExt.odd_character_twisted_weighted_sum_fourth_moment` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#odd-character-twisted-weighted-sum-fourt).
 
 ## Fourth moment of weighted odd character sums
 
@@ -192,7 +192,7 @@ $\varphi$ is Euler's totient function.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.odd_character_weighted_sum_fourth_moment` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#odd-character-weighted-sum-fourth-moment).
+Stated but not proved: `MetaMathlibExt.odd_character_weighted_sum_fourth_moment` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#odd-character-weighted-sum-fourth-moment).
 
 ## Bound for a weighted Kloosterman-type sum
 
@@ -209,7 +209,7 @@ where $\tau(n)$ is the number of positive divisors of $n$.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.weighted_kloosterman_sum_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#weighted-kloosterman-sum-bound).
+Stated but not proved: `MetaMathlibExt.weighted_kloosterman_sum_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#weighted-kloosterman-sum-bound).
 
 ## Weighted sum of an additive character
 
@@ -222,7 +222,7 @@ $$\sum_{b=1}^{q-1} b\, e_q(-kb) = -\frac{q}{1 - e_q(-k)}.$$
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.sum_mul_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-mul-additive-character).
+Stated but not proved: `MetaMathlibExt.sum_mul_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-mul-additive-character).
 
 ## Weighted additive character sum over reduced residues
 
@@ -238,7 +238,7 @@ $$\sum_{1 \le b \le n,\ \gcd(b, n) = 1} b \, e_n(-kb)
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.coprime_sum_mul_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#coprime-sum-mul-additive-character).
+Stated but not proved: `MetaMathlibExt.coprime_sum_mul_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#coprime-sum-mul-additive-character).
 
 ## Splitting a sum by greatest common divisor
 
@@ -254,7 +254,7 @@ both sides are empty sums.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.sum_Icc_eq_sum_divisors_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-icc-eq-sum-divisors-coprime).
+Stated but not proved: `MetaMathlibExt.sum_Icc_eq_sum_divisors_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-icc-eq-sum-divisors-coprime).
 
 ## Sum of reciprocal distances from roots of unity to 1
 
@@ -268,7 +268,7 @@ $$\sum_{0 \le a < q,\ q \nmid a\ell} \frac{1}{|1 - e_q(s a \ell)|} \le
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.sum_inv_norm_one_sub_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-inv-norm-one-sub-additive-character).
+Stated but not proved: `MetaMathlibExt.sum_inv_norm_one_sub_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-inv-norm-one-sub-additive-character).
 
 ## Gcd-weighted sum of reciprocal distances from roots of unity to 1
 
@@ -284,7 +284,7 @@ where $\sigma_{1/2}(n) = \sum_{\delta \mid n} \sqrt{\delta}$.
 
 - O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.sum_sqrt_gcd_div_norm_one_sub_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-sqrt-gcd-div-norm-one-sub-additive-c).
+Stated but not proved: `MetaMathlibExt.sum_sqrt_gcd_div_norm_one_sub_additive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModularInverseProductMeanWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html#sum-sqrt-gcd-div-norm-one-sub-additive-c).
 
 ## Depends on
 
@@ -293,4 +293,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mean values of products of modular inverses](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums/mean-values-of-products-of-modular-inverses)

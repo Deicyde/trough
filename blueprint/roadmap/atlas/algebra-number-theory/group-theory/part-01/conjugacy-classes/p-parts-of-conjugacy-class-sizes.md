@@ -7,7 +7,7 @@ statement: formalized
 
 # p-parts of conjugacy class sizes
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html).
 
 ## Groups with a normal p-complement
 
@@ -15,7 +15,7 @@ A group $G$ has a normal $p$-complement when it has a
 normal subgroup $N$ and a Sylow $p$-subgroup $P$ that are complements of each other: every element
 of $G$ can be written uniquely as $nq$ with $n \in N$ and $q \in P$.
 
-Formalized by `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.HasNormalPComplement`, a definition declared in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#has-normal-pcomplement).
+Formalized by `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.HasNormalPComplement`, a definition declared in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#has-normal-pcomplement).
 
 ## Gorshkov's problem on maximal p-parts of class sizes
 
@@ -28,7 +28,7 @@ normal $p$-complement.
 
 This is Kourovka Notebook Problem 20.27 (I. B. Gorshkov).
 
-Formalized by `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.maximalClassSizePElementGivesNormalComplement`, a definition declared in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#maximal-class-size-pelement-gives-normal).
+Formalized by `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.maximalClassSizePElementGivesNormalComplement`, a definition declared in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#maximal-class-size-pelement-gives-normal).
 
 ## A maximal p-part of a class size does not force a normal p-complement
 
@@ -49,7 +49,7 @@ normal $2$-complement.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.27 (I. B. Gorshkov); resolution: B. Sambale, letter of 16 February 2022, recorded in the Kourovka Notebook (21st issue), Problem 20.27: "No, not necessarily, a counterexample is given by SmallGroup(192,945)", https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.maximalClassSizePElementGivesNormalComplement_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#maximal-class-size-pelement-gives-normal-2).
+Stated but not proved: `MathlibExt.GroupTheory.MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.maximalClassSizePElementGivesNormalComplement_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalClassSizePElementNormalComplementKourovka20Problem27Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html#maximal-class-size-pelement-gives-normal-2).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: p-parts of conjugacy class sizes](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/conjugacy-classes/p-parts-of-conjugacy-class-sizes)

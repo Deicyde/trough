@@ -7,7 +7,7 @@ statement: formalized
 
 # Central binomial sums with harmonic numbers
 
-19 results, 3 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html).
+19 results, 3 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html).
 
 ## Weighted central binomial sum
 
@@ -25,7 +25,7 @@ harmonic numbers) gives the paper's sums $S_r(n)$, $S_r^O(n)$, $S_r^H(n)$ and $S
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, equations (1), (8), (9), (10).
 
-Formalized by `MetaMathlibExt.centralBinomPowSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum).
+Formalized by `MetaMathlibExt.centralBinomPowSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum).
 
 ## The weighted central binomial sum at zero
 
@@ -38,7 +38,7 @@ the convention $0^0 = 1$.
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, equations (1), (8)-(10).
 
-Formalized by `MetaMathlibExt.centralBinomPowSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-zero).
+Formalized by `MetaMathlibExt.centralBinomPowSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-zero).
 
 ## Adding one term to the weighted central binomial sum
 
@@ -52,7 +52,7 @@ $$S_r^a(n+1) = S_r^a(n) + \binom{2n+2}{n+1} 4^{-(n+1)} (n+1)^r a_{n+1}.$$
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, equations (1), (8)-(10).
 
-Formalized by `MetaMathlibExt.centralBinomPowSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-succ).
+Formalized by `MetaMathlibExt.centralBinomPowSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-succ).
 
 ## Recurrence for central binomial sums with odd harmonic numbers
 
@@ -72,7 +72,7 @@ $$(2r+1) S_r^O(n) = n^r c_n \big((2n+1) O_n + 1\big) - S_r(n) +
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-recur).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-recur).
 
 ## Recurrence for central binomial sums with harmonic numbers
 
@@ -93,7 +93,7 @@ $$(2r+1) S_r^H(n) = n^r (2n+1)\, c_n (H_n + 1) + 2(-1)^r - S_r(n) +
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-recursion).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-recursion).
 
 ## Recurrence for central binomial sums with harmonic numbers of even index
 
@@ -118,7 +118,7 @@ $$S_1^{2H}(n) = \frac{1}{9} c_n \big(3n(2n+1) H_{2n} - 4n^2 + 7n + 3\big) - \fra
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_two_mul_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-two-mul-r).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_two_mul_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-two-mul-r).
 
 ## Odd harmonic central binomial sums for powers one to three
 
@@ -141,7 +141,7 @@ $$S_3^O(n) = (2n+1)\, c_n \frac{n}{105} \Big((15n^2 + 18n + 2) O_{n+1} -
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_one_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-one-t).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_one_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-one-t).
 
 ## Central binomial sums with harmonic numbers for powers one to three
 
@@ -165,7 +165,7 @@ $$S_3^H(n) = \frac{1}{7} (2n+1)\, c_n \Big(\frac{n}{15} (15n^2 + 18n + 2) H_n -
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_one_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-one-two-t).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_harmonic_one_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-harmonic-one-two-t).
 
 ## Stirling numbers from derivatives of powers of one minus the exponential
 
@@ -187,7 +187,7 @@ $$\frac{d^r}{dx^r} (1 - e^x)^k e^{vx} \Big|_{x=0} = \sum_{p=0}^{k} (-1)^p \binom
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.iteratedDeriv_one_sub_exp_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#iterated-deriv-one-sub-exp-pow).
+Stated but not proved: `MetaMathlibExt.iteratedDeriv_one_sub_exp_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#iterated-deriv-one-sub-exp-pow).
 
 ## Power sums of $\binom{t}{k}(H_t - H_{t-k})$ in r-Stirling form
 
@@ -205,7 +205,7 @@ $$\sum_{k=0}^{n} (-1)^k k^r \binom{t}{k} (H_t - H_{t-k}) =
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_harmonic_diff_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-harmonic-diff-r-stirling).
+Stated but not proved: `MetaMathlibExt.sum_choose_harmonic_diff_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-harmonic-diff-r-stirling).
 
 ## Power sums of $\binom{t}{k}(H_t - H_{t-k})$ for exponents up to three
 
@@ -225,7 +225,7 @@ These are the cases $r = 0, 1, 2, 3$ of the paper's Theorem 4.
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_harmonic_diff_pow_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-harmonic-diff-pow-le-three).
+Stated but not proved: `MetaMathlibExt.sum_choose_harmonic_diff_pow_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-harmonic-diff-pow-le-three).
 
 ## Odd harmonic central binomial sums via r-Stirling numbers
 
@@ -244,7 +244,7 @@ $S_1^O(n) = \frac{n(2n+1)}{3} \binom{2n}{n} 4^{-n} \big(O_{n+1} - \frac{1}{3}\bi
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_eq_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-eq-r).
+Stated but not proved: `MetaMathlibExt.centralBinomPowSum_oddHarmonic_eq_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#central-binom-pow-sum-odd-harmonic-eq-r).
 
 ## Central binomial sums weighted by $1 - O_{k-1}$, in r-Stirling form
 
@@ -265,7 +265,7 @@ $$\sum_{k=1}^{n} \frac{\binom{2k}{k}}{4^k (2k-1)} (1 - O_{k-1}) = \frac{\binom{2
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sum_centralBinom_one_sub_oddHarmonic_eq_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-central-binom-one-sub-odd-harmonic-e).
+Stated but not proved: `MetaMathlibExt.sum_centralBinom_one_sub_oddHarmonic_eq_rStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-central-binom-one-sub-odd-harmonic-e).
 
 ## Power-weighted convolution of $4^k$ with $\binom{2m}{m} O_m$
 
@@ -282,7 +282,7 @@ $$\sum_{k=0}^{n} 4^k \binom{2(n-k)}{n-k} k^r O_{n-k} =
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_four_pow_centralBinom_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-four-pow-central-binom-odd-harmonic).
+Stated but not proved: `MetaMathlibExt.sum_four_pow_centralBinom_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-four-pow-central-binom-odd-harmonic).
 
 ## Power-weighted convolution of $4^k$ with $\binom{2m}{m} (1 - O_{m-1})/(2m-1)$
 
@@ -299,7 +299,7 @@ $$\sum_{k=0}^{n-1} \frac{4^k}{2(n-k)-1} \binom{2(n-k)}{n-k} k^r (1 - O_{n-k-1}) 
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sum_four_pow_centralBinom_one_sub_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-four-pow-central-binom-one-sub-odd-h).
+Stated but not proved: `MetaMathlibExt.sum_four_pow_centralBinom_one_sub_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-four-pow-central-binom-one-sub-odd-h).
 
 ## Alternating reciprocal central binomial sum with $O_{n+1} - O_{k+1}$
 
@@ -317,7 +317,7 @@ $$\sum_{k=0}^{n} \frac{(-1)^k}{2k+1} \binom{n}{k} \frac{4^k}{\binom{2k}{k}} k^r
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.sum_alternating_inv_centralBinom_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-alternating-inv-central-binom-odd-ha).
+Stated but not proved: `MetaMathlibExt.sum_alternating_inv_centralBinom_oddHarmonic_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-alternating-inv-central-binom-odd-ha).
 
 ## Alternating reciprocal central binomial sum with $O_n - O_k$
 
@@ -339,7 +339,7 @@ $1 - O_{-1} = 0$, so it is dropped here.
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.sum_alternating_inv_centralBinom_oddHarmonic_sub_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-alternating-inv-central-binom-odd-ha-2).
+Stated but not proved: `MetaMathlibExt.sum_alternating_inv_centralBinom_oddHarmonic_sub_eq_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-alternating-inv-central-binom-odd-ha-2).
 
 ## Power sums of $\binom{t}{n-k}(H_t - H_{t-n+k})$ in Stirling form
 
@@ -357,7 +357,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{t}{n-k} k^r (H_t - H_{t-n+k}) =
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_sub_harmonic_diff_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-sub-harmonic-diff-stirling).
+Stated but not proved: `MetaMathlibExt.sum_choose_sub_harmonic_diff_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-sub-harmonic-diff-stirling).
 
 ## Power sums of $\binom{n-t}{n-k}(H_{k-t} - H_{n-t})$ in Stirling form
 
@@ -375,7 +375,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n-t}{n-k} k^r (H_{k-t} - H_{n-t}) =
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_sub_harmonic_diff_stirling_dual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-sub-harmonic-diff-stirling-du).
+Stated but not proved: `MetaMathlibExt.sum_choose_sub_harmonic_diff_stirling_dual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomHarmonicSumsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html#sum-choose-sub-harmonic-diff-stirling-du).
 
 ## Depends on
 
@@ -384,4 +384,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Central binomial sums with harmonic numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-sums-with-harmonic-numbers)

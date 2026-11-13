@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.AdicSystem.ArtinReesHomology.exists_uniform_adic_homology_comparison, Stacks.PseudoCoherent.AdicCompletion.pseudoCoherent_mittagLeffler_and_adicCompletion_iso_limit_derivedReduction, Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_proIsomorphic_adicReduction, Stacks.AdicSystem.HomComparison.hom_isom_quotient_systems_mittagLeffler_and_completion, Stacks.AdicSystem.CompletionIsomorphism.adicCompletion_linearEquiv_of_quotient_linearEquiv, Stacks.Modules.AdicSystem.AdicModuleSystem.delayedCategory, Stacks.AdicModuleSystem.IsomorphismCriterion.isIso_homOfRepresentative_iff, Stacks.AdicSystem.ExtDelayedIso.extAdicQuotientSystem_iso_extOfAdicQuotientsSystem
+lean: Stacks.AdicSystem.ArtinReesHomology.exists_uniform_adic_homology_comparison, Stacks.PseudoCoherent.AdicCompletion.pseudoCoherent_mittagLeffler_and_isIso_adicCompletionToLimitDerivedReduction, Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_proIsomorphic_adicReduction, Stacks.AdicSystem.HomComparison.hom_isom_quotient_systems_mittagLeffler_and_completion, Stacks.AdicSystem.CompletionIsomorphism.adicCompletion_linearEquiv_of_quotient_linearEquiv, Stacks.Modules.AdicSystem.AdicModuleSystem.delayedCategory, Stacks.AdicModuleSystem.IsomorphismCriterion.isIso_homOfRepresentative_iff, Stacks.AdicSystem.ExtDelayedIso.extAdicQuotientSystem_iso_extOfAdicQuotientsSystem
 statement: formalized
 proof: formalized
 ---
 
 # 15.102 Systems of modules
 
-Section 15.102 of the Stacks Project, [Tag 0EGT](https://stacks.math.columbia.edu/tag/0EGT). 11 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.102 of the Stacks Project, [Tag 0EGT](https://stacks.math.columbia.edu/tag/0EGT). 11 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EGU, a lemma
 
 [Tag 0EGU](https://stacks.math.columbia.edu/tag/0EGU) in the Stacks Project.
 
-**`Stacks.AdicSystem.ArtinReesHomology.exists_uniform_adic_homology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Homology/QuotientComparison.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Homology/QuotientComparison.lean#L152).
+**`Stacks.AdicSystem.ArtinReesHomology.exists_uniform_adic_homology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Homology/QuotientComparison.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Homology/QuotientComparison.lean#L152).
 
 > **Stacks 0EGU.** For a complex of finite modules over a Noetherian ring, homology after
 > reduction modulo `I ^ n` and the quotients by `I ^ n` of the original homology are canonically
@@ -93,15 +93,16 @@ theorem exists_uniform_adic_homology_comparison
 
 [Tag 0EGV](https://stacks.math.columbia.edu/tag/0EGV) in the Stacks Project.
 
-**`Stacks.PseudoCoherent.AdicCompletion.pseudoCoherent_mittagLeffler_and_adicCompletion_iso_limit_derivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/PseudoCoherentHomology.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/PseudoCoherentHomology.lean#L377).
+**`Stacks.PseudoCoherent.AdicCompletion.pseudoCoherent_mittagLeffler_and_isIso_adicCompletionToLimitDerivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/DerivedReductionCompletion.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/DerivedReductionCompletion.lean#L550).
 
-> **Stacks 0EGV (Kollár--Kovács).** If `K` is a pseudo-coherent object of `D(A)` for a
-> Noetherian ring `A`, then in every degree the cohomology of its reductions modulo the positive
-> powers of `I` is Mittag--Leffler, and its inverse limit is the `I`-adic completion of the
-> cohomology of `K`.
+> **Stacks 0EGV (Kollár--Kovács), canonical form.** Let `I` be an ideal of a Noetherian ring
+> `A` and `K` a pseudo-coherent object of `D(A)`, and set `Kₙ = K ⊗ᴸ[A] A/Iⁿ⁺¹`. Then for every `i`
+> the inverse system `Hⁱ(Kₙ)` is Mittag--Leffler, and the canonical map
+> `lim Hⁱ(K)/IⁿHⁱ(K) ⟶ lim Hⁱ(Kₙ)`, induced by the reduction maps `K ⟶ Kₙ`
+> (`adicCompletionToLimitDerivedReduction`), is an isomorphism.
 
 ```lean
-theorem pseudoCoherent_mittagLeffler_and_adicCompletion_iso_limit_derivedReduction
+theorem pseudoCoherent_mittagLeffler_and_isIso_adicCompletionToLimitDerivedReduction
     (A : Type u) [CommRing A] [IsNoetherianRing A] (I : Ideal A)
     (K : DerivedCategory (ModuleCat.{u} A))
     (T : CochainComplex.DerivedTensor.DerivedTensorProduct A)
@@ -110,19 +111,14 @@ theorem pseudoCoherent_mittagLeffler_and_adicCompletion_iso_limit_derivedReducti
       (((NoetherianAdicCompletion.idealPowerQuotientSystem I ⋙ T.tensor.obj K) ⋙
           DerivedCategory.homologyFunctor (ModuleCat.{u} A) i) ⋙
         forget (ModuleCat.{u} A)).IsMittagLeffler ∧
-      Nonempty
-        (ModuleCat.of A
-            (AdicCompletion I
-              ((DerivedCategory.homologyFunctor (ModuleCat.{u} A) i).obj K)) ≅
-          limit ((NoetherianAdicCompletion.idealPowerQuotientSystem I ⋙ T.tensor.obj K) ⋙
-            DerivedCategory.homologyFunctor (ModuleCat.{u} A) i))
+      IsIso (adicCompletionToLimitDerivedReduction I T K i)
 ```
 
 ## Tag 0G9M, a lemma
 
 [Tag 0G9M](https://stacks.math.columbia.edu/tag/0G9M) in the Stacks Project.
 
-**`Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_proIsomorphic_adicReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean, line 2873](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean#L2873).
+**`Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_proIsomorphic_adicReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean, line 2878](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean#L2878).
 
 > **Stacks Project, Tag 0G9M.** Let `I` be an ideal of a Noetherian ring `A` and let `M` be a
 > bounded complex of finite `A`-modules.  Then `M` admits a bounded-above resolution `p : P -> M`
@@ -158,7 +154,7 @@ public theorem derivedReduction_proIsomorphic_adicReduction
 
 [Tag 09BB](https://stacks.math.columbia.edu/tag/09BB) in the Stacks Project.
 
-**`Stacks.AdicSystem.HomComparison.hom_isom_quotient_systems_mittagLeffler_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean#L588). References: EGA 0 (7.3.4), “Hom^ ≅ Hom(M^,N^)”; EGA 0 (7.8.2), “canonical isomorphism”.
+**`Stacks.AdicSystem.HomComparison.hom_isom_quotient_systems_mittagLeffler_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean#L588). References: EGA 0 (7.3.4), “Hom^ ≅ Hom(M^,N^)”; EGA 0 (7.8.2), “canonical isomorphism”.
 
 > **Stacks 09BB.** Homomorphisms and isomorphisms between the adic quotients of two
 > finite modules form Mittag--Leffler systems.  The canonical comparison from the adic
@@ -229,7 +225,7 @@ public theorem hom_isom_quotient_systems_mittagLeffler_and_completion
 
 [Tag 09BC](https://stacks.math.columbia.edu/tag/09BC) in the Stacks Project.
 
-**`Stacks.AdicSystem.CompletionIsomorphism.adicCompletion_linearEquiv_of_quotient_linearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean#L672).
+**`Stacks.AdicSystem.CompletionIsomorphism.adicCompletion_linearEquiv_of_quotient_linearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Hom/MittagLeffler.lean#L672).
 
 > **Stacks 09BC.** If all quotients of two finite modules by powers of an ideal
 > are linearly equivalent, then their adic completions are linearly equivalent over
@@ -251,7 +247,7 @@ public theorem adicCompletion_linearEquiv_of_quotient_linearEquiv
 
 [Tag 0EGW](https://stacks.math.columbia.edu/tag/0EGW) in the Stacks Project.
 
-**`Stacks.Modules.AdicSystem.AdicModuleSystem.delayedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Category.lean, line 991](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Category.lean#L991).
+**`Stacks.Modules.AdicSystem.AdicModuleSystem.delayedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Category.lean, line 991](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Category.lean#L991).
 
 > **Stacks 0EGW.** Systems of finite `A ⧸ I ^ n`-modules, with morphisms represented by
 > maps `I ^ c Eₙ → Fₙ / Fₙ[I ^ c]` modulo increasing `c`, form a category. Composition is
@@ -265,7 +261,7 @@ public noncomputable def delayedCategory : CategoryData (A := A) (I := I)
 
 [Tag 0EGX](https://stacks.math.columbia.edu/tag/0EGX) in the Stacks Project.
 
-**`Stacks.AdicModuleSystem.IsomorphismCriterion.isIso_homOfRepresentative_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Category.lean, line 1415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Category.lean#L1415).
+**`Stacks.AdicModuleSystem.IsomorphismCriterion.isIso_homOfRepresentative_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Category.lean, line 1415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Category.lean#L1415).
 
 > **Stacks 0EGX.** A delayed representative induces an isomorphism in the category of
 > systems if and only if, eventually, the kernels and cokernels of all its component maps are
@@ -286,7 +282,7 @@ public theorem isIso_homOfRepresentative_iff (r : HomRepresentative E F) :
 
 [Tag 0EGY](https://stacks.math.columbia.edu/tag/0EGY) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtDelayedIso.extAdicQuotientSystem_iso_extOfAdicQuotientsSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/DelayedIso.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Ext/DelayedIso.lean#L853).
+**`Stacks.AdicSystem.ExtDelayedIso.extAdicQuotientSystem_iso_extOfAdicQuotientsSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/DelayedIso.lean, line 853](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Ext/DelayedIso.lean#L853).
 
 > **Stacks 0EGY.** For finite modules over a Noetherian ring, the system of adic
 > quotients of `Ext` is isomorphic, in the category of delayed morphisms, to the system of
@@ -305,7 +301,7 @@ public theorem extAdicQuotientSystem_iso_extOfAdicQuotientsSystem
 
 [Tag 0EGZ](https://stacks.math.columbia.edu/tag/0EGZ) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtComparison.exists_eventually_extOfAdicQuotients_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/Comparison.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Ext/Comparison.lean#L473).
+**`Stacks.AdicSystem.ExtComparison.exists_eventually_extOfAdicQuotients_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/Comparison.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Ext/Comparison.lean#L478). The attribute's comment: “corrected: the maps are defined on I^c-multiples and their kernels and cokernels are killed by a possibly larger power I^d; the single exponent claimed by Stacks fails”.
 
 > **Stacks 0EGZ.** There are powers `I ^ c` and `I ^ d` such that, for `m ≫ n ≫ 0`, canonical
 > maps from `I ^ c Ext_{A_m}^i(M_m,N_m) / I ^ n Ext_{A_m}^i(M_m,N_m)` to
@@ -313,9 +309,13 @@ public theorem extAdicQuotientSystem_iso_extOfAdicQuotientsSystem
 > by `I ^ d`. The displayed factorization characterizes these maps in terms of mutually
 > inverse representatives of the isomorphism of Tag 0EGY.
 >
-> The source's single exponent is split: maps are defined on I^c-multiples, and their
-> kernel/cokernel are annihilated by some possibly larger power I^d; with one exponent the
-> claim fails, e.g. for A = k[x,y,z,w]/(xy), I = (x,y,z,w), M = N = A/(x), i = 2.
+> This is the corrected form of the remark. As printed, Stacks asks for one exponent `c` that
+> both defines the maps and annihilates their kernels and cokernels; that is false, for any
+> choice of maps (see `errata.md`): for `A = k[x, y, z]`, `I = (x, y, z)`, `M = A / (x)`,
+> `N = A / (x²)` and `i = 0` it is refuted by
+> `ExtComparisonCounterexample.not_exists_extOfAdicQuotients_comparison_one_exponent`.
+> Here the maps live on `I ^ c`-multiples with `c` the total delay of the two representatives,
+> and their kernels and cokernels are annihilated by a possibly larger power `I ^ d`.
 
 ```lean
 public theorem exists_eventually_extOfAdicQuotients_comparison (I : Ideal A) (M N : Type v)
@@ -357,11 +357,36 @@ public theorem exists_eventually_extOfAdicQuotients_comparison (I : Ideal A) (M 
                 LinearMap.range (comparison n m hn hnm)) (↑(I ^ d) : Set A)
 ```
 
+**`Stacks.AdicSystem.ExtComparisonCounterexample.not_exists_extOfAdicQuotients_comparison_one_exponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/ComparisonCounterexample.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Ext/ComparisonCounterexample.lean#L627). The attribute's comment: “counterexample: for A = k[x, y, z], I = (x, y, z), M = A/(x), N = A/(x²), i = 0, no c and no maps I^c E\_m / I^n E\_m → E\_n / E\_n[I^c] have kernel killed by I^c”.
+
+> **Stacks 0EGZ is false as stated.** Remark 0EGZ asserts a single `c ≥ 0` such that for
+> `m ≫ n ≫ 0` there are maps `I ^ c Eₘ / I ^ n Eₘ → Eₙ / Eₙ[I ^ c]`, with
+> `Eₙ = Ext^i_{Aₙ}(Mₙ, Nₙ)`, whose kernel and cokernel are annihilated by `I ^ c`. For
+> `A = k[x, y, z]`, `I = (x, y, z)`, `M = A / (x)`, `N = A / (x²)` and `i = 0` no such `c` exists,
+> whatever maps are allowed: even the kernel condition alone fails. The corrected statement, with
+> the kernel and cokernel killed by a possibly larger power, is
+> `Stacks.AdicSystem.ExtComparison.exists_eventually_extOfAdicQuotients_comparison`.
+
+```lean
+public theorem not_exists_extOfAdicQuotients_comparison_one_exponent (k : Type u) [Field k] :
+    let A := MvPolynomial (Fin 3) k
+    let I : Ideal A := idealOfVars (Fin 3) k
+    let M := A ⧸ Ideal.span {(X 0 : A)}
+    let N := A ⧸ Ideal.span {(X 0 : A) ^ 2}
+    let F := extOfAdicQuotientsSystem I M N 0
+    ¬ ∃ c : ℕ, ∀ᶠ n : ℕ+ in atTop, ∀ᶠ m : ℕ+ in atTop, n ≤ m →
+      ∃ f : (powerPart F m c ⧸ (powerPart F m (n : ℕ)).comap (powerPart F m c).subtype) →ₗ[A]
+          underlying F n ⧸ torsionPart F n c,
+        Module.IsTorsionBySet A (LinearMap.ker f) (↑(I ^ c) : Set A) ∧
+        Module.IsTorsionBySet A
+          ((underlying F n ⧸ torsionPart F n c) ⧸ LinearMap.range f) (↑(I ^ c) : Set A)
+```
+
 ## Tag 0EH2, an example
 
 [Tag 0EH2](https://stacks.math.columbia.edu/tag/0EH2) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtCounterexample.extTwo_not_preserved_by_adicQuotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/Counterexample.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Ext/Counterexample.lean#L742).
+**`Stacks.AdicSystem.ExtCounterexample.extTwo_not_preserved_by_adicQuotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/Counterexample.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Ext/Counterexample.lean#L742).
 
 > **Stacks 0EH2.** For `A = k[[x, y]] / (xy)` and `M = A / (y)`, the periodic
 > resolution computes `Ext_A^2(M, N)` as `N[y] / xN`.  At the finite level the numerator
@@ -436,20 +461,30 @@ public theorem extTwo_not_preserved_by_adicQuotients (k : Type u) [Field k] :
 
 [Tag 0EH0](https://stacks.math.columbia.edu/tag/0EH0) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtFlatBaseChange.limit_ext_quotient_iso_limit_ext_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/FlatBaseChange.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Ext/FlatBaseChange.lean#L687).
+**`Stacks.AdicSystem.ExtFlatBaseChange.limit_ext_quotient_iso_limit_ext_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Ext/FlatBaseChange.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Ext/FlatBaseChange.lean#L1151). The attribute's comment: “canonical maps, pinned down by the injective comparison `extQuotientToBase`; `M`, `N` finite `B`-modules (the source's A-modules is a typo)”.
 
-> **Stacks 0EH0.** Let `A → B` be a flat map of Noetherian rings, let `I` be an
-> ideal of `A`, and let `M` and `N` be finite `B`-modules. If `M` is flat over `A`, the
-> canonical reduction maps from the `I`-adic quotients of `Ext_B(M, N)` to the Ext groups over
-> `B / I ^ n B` are compatible with all transition maps and induce an isomorphism on inverse
-> limits.
+> **Stacks 0EH0.** Let `A → B` be a flat map of Noetherian rings, let `I ⊆ A` be an ideal and
+> let `M`, `N` be finite `B`-modules; put `B_n = B / I^n B`, `M_n = M / I^n M`, `N_n = N / I^n N`.
+> If `M` is flat over `A`, then for every `i`
+> `lim_n Ext^i_B(M, N) / I^n Ext^i_B(M, N) = lim_n Ext^i_{B_n}(M_n, N_n)`.
 >
-> The maps are given simultaneously in every degree. Their identity, composition, reduction,
-> and quotient-factorization laws record the canonical inverse-system structure. The induced
-> map on limits is an isomorphism of `A`-modules.
+> The identification is the one induced by the canonical maps. Write
+> `ρ_n : Ext^i_{B_n}(M_n, N_n) → Ext^i_B(M, N_n)` for restriction of scalars along `B → B_n`
+> followed by precomposition with `M → M_n` (`extQuotientToBase`); the first clause says that
+> `ρ_n` is injective. The canonical reduction `Ext^i_B(M, N) → Ext^i_{B_n}(M_n, N_n)` is therefore
+> the unique map `r_n` with `ρ_n ∘ r_n` equal to postcomposition with `N → N_n`, and the canonical
+> transition `Ext^i_{B_{n+1}}(M_{n+1}, N_{n+1}) → Ext^i_{B_n}(M_n, N_n)` is the unique map `t_n`
+> with `ρ_n ∘ t_n` equal to `ρ_{n+1}` followed by `N_{n+1} → N_n`. The second clause gives these
+> maps, `A`-linear, a factorization `f_n` of `r_n` through `E / I^n E`, and says that the `f_n`
+> induce an isomorphism from the limit of the `I`-adic quotients of `E = Ext^i_B(M, N)` (along the
+> canonical maps `E / I^{n+1} E → E / I^n E`) to the limit of the `Ext^i_{B_n}(M_n, N_n)` along the
+> `t_n`.
+>
+> `M` and `N` are lifted to a common universe with `ULift`, and `M_n` is written as the quotient
+> `ULift M ⧸ I^n B • ULift M`.
 
 ```lean
-public theorem limit_ext_quotient_iso_limit_ext_baseChange
+public theorem limit_ext_quotient_iso_limit_ext_canonical
     {A : Type uA} {B : Type uB} {M : Type uM} {N : Type uN}
     [CommRing A] [CommRing B] [Algebra A B]
     [AddCommGroup M] [Module A M] [Module B M] [IsScalarTower A B M]
@@ -458,47 +493,34 @@ public theorem limit_ext_quotient_iso_limit_ext_baseChange
     [Module.Finite B M] [Module.Finite B N] [Module.Flat A M]
     (I : Ideal A) :
     let J := I.map (algebraMap A B)
-    let E : ℕ → Type (max uA uB uM uN) := fun i =>
-      Ext (ModuleCat.of B (ULift.{max uA uB uM uN} M))
-        (ModuleCat.of B (ULift.{max uA uB uM uN} N)) i
-    let _ : ∀ i, Module A (E i) := fun i =>
-      Module.compHom (E i) (algebraMap A B)
-    let Q : ℕ → ℕ → Type (max uA uB uM uN) := fun i n =>
-      E i ⧸ I ^ n • (⊤ : Submodule A (E i))
-    let Bn : ℕ → Type uB := fun n => B ⧸ J ^ n
-    let Mn : ℕ → Type uM := fun n =>
-      M ⧸ J ^ n • (⊤ : Submodule B M)
-    let Nn : ℕ → Type uN := fun n =>
-      N ⧸ J ^ n • (⊤ : Submodule B N)
+    let X := ModuleCat.of B (ULift.{max uA uB uM uN} M)
+    let Y := ModuleCat.of B (ULift.{max uA uB uM uN} N)
+    let E : ℕ → Type (max uA uB uM uN) := fun i => Ext X Y i
+    let _ : ∀ i, Module A (E i) := fun i => Module.compHom (E i) (algebraMap A B)
     let En : ℕ → ℕ → Type (max uA uB uM uN) := fun i n =>
-      Ext (ModuleCat.of (Bn n) (ULift.{max uA uB uM uN} (Mn n)))
-        (ModuleCat.of (Bn n) (ULift.{max uA uB uM uN} (Nn n))) i
+      Ext (ModuleCat.of (B ⧸ J ^ n) (X ⧸ J ^ n • (⊤ : Submodule B X)))
+        (ModuleCat.of (B ⧸ J ^ n) (Y ⧸ J ^ n • (⊤ : Submodule B Y))) i
     let _ : ∀ i n, Module A (En i n) := fun i n =>
-      Module.compHom (En i n) (algebraMap A (Bn n))
-    ∃ (extTransition : ∀ i m n, n ≤ m → En i m →ₗ[A] En i n)
-      (reduction : ∀ i n, E i →ₗ[A] En i n)
-      (comparison : ∀ i n, Q i n →ₗ[A] En i n),
-      (∀ i n, extTransition i n n le_rfl = LinearMap.id) ∧
-      (∀ i k m n (hkm : m ≤ k) (hmn : n ≤ m),
-        (extTransition i m n hmn).comp (extTransition i k m hkm) =
-          extTransition i k n (hmn.trans hkm)) ∧
-      (∀ i m n (hmn : n ≤ m),
-        (extTransition i m n hmn).comp (reduction i m) = reduction i n) ∧
-      (∀ i n,
-        (comparison i n).comp (I ^ n • (⊤ : Submodule A (E i))).mkQ = reduction i n) ∧
-      (∀ i m n (hmn : n ≤ m),
-        (extTransition i m n hmn).comp (comparison i m) =
-          (comparison i n).comp (Submodule.factorPow I (E i) hmn)) ∧
+      Module.compHom (En i n) (algebraMap A (B ⧸ J ^ n))
+    (∀ i n, Function.Injective (extQuotientToBase (J ^ n) X Y i)) ∧
+    ∃ (reduction : ∀ i n, E i →ₗ[A] En i n)
+      (transition : ∀ i n, En i (n + 1) →ₗ[A] En i n)
+      (comparison : ∀ i n, (E i ⧸ I ^ n • (⊤ : Submodule A (E i))) →ₗ[A] En i n),
+      (∀ i n (x : E i), extQuotientToBase (J ^ n) X Y i (reduction i n x) =
+        x.comp (Ext.mk₀ (toRestrictQuotient (J ^ n) Y)) (add_zero i)) ∧
+      (∀ i n (y : En i (n + 1)), extQuotientToBase (J ^ n) X Y i (transition i n y) =
+        (extQuotientToBase (J ^ (n + 1)) X Y i y).comp
+          (Ext.mk₀ (restrictQuotientFactor (Ideal.pow_le_pow_right n.le_succ) Y)) (add_zero i)) ∧
+      (∀ i n, (comparison i n).comp (I ^ n • (⊤ : Submodule A (E i))).mkQ = reduction i n) ∧
       ∀ i,
         let Qsys : Functor ℕᵒᵖ (ModuleCat.{max uA uB uM uN} A) :=
           Functor.ofOpSequence
-            (X := fun n => ModuleCat.of A (Q i n))
+            (X := fun n => ModuleCat.of A (E i ⧸ I ^ n • (⊤ : Submodule A (E i))))
             (fun n => ModuleCat.ofHom (Submodule.factorPowSucc I (E i) n))
         let Esys : Functor ℕᵒᵖ (ModuleCat.{max uA uB uM uN} A) :=
           Functor.ofOpSequence
             (X := fun n => ModuleCat.of A (En i n))
-            (fun n => ModuleCat.ofHom
-              (extTransition i (n + 1) n n.le_succ))
+            (fun n => ModuleCat.ofHom (transition i n))
         ∃ e : limit Qsys ≅ limit Esys,
           ∀ n, e.hom ≫ limit.π Esys (op n) =
             limit.π Qsys (op n) ≫ ModuleCat.ofHom (comparison i n)
@@ -511,4 +533,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.102, Tag 0EGT](https://stacks.math.columbia.edu/tag/0EGT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

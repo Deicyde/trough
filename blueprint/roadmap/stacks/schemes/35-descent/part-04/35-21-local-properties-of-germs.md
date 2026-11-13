@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.21 Local properties of germs
 
-Section 35.21 of the Stacks Project, [Tag 04QT](https://stacks.math.columbia.edu/tag/04QT). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.21 of the Stacks Project, [Tag 04QT](https://stacks.math.columbia.edu/tag/04QT). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04N1, a definition
 
 [Tag 04N1](https://stacks.math.columbia.edu/tag/04N1) in the Stacks Project.
 
-**`AlgebraicGeometry.GermOfScheme.IsEtaleLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L52). The attribute's comment: “etale”.
+**`AlgebraicGeometry.GermOfScheme.IsEtaleLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L52). The attribute's comment: “etale”.
 
 > A property of germs is étale local if it has the same truth value at the source and target
 > of every étale morphism of germs.
@@ -23,7 +23,7 @@ Section 35.21 of the Stacks Project, [Tag 04QT](https://stacks.math.columbia.edu
 abbrev GermOfScheme.IsEtaleLocal (P : GermOfScheme.{u} → Prop) : Prop
 ```
 
-**`AlgebraicGeometry.GermOfScheme.IsSmoothLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L59). The attribute's comment: “smooth”.
+**`AlgebraicGeometry.GermOfScheme.IsSmoothLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L59). The attribute's comment: “smooth”.
 
 > A property of germs is smooth local if it has the same truth value at the source and
 > target of every smooth morphism of germs.
@@ -36,7 +36,7 @@ abbrev GermOfScheme.IsSmoothLocal (P : GermOfScheme.{u} → Prop) : Prop
 
 [Tag 04N4](https://stacks.math.columbia.edu/tag/04N4) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleLocalDimension.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleLocalDimension.lean#L149).
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleLocalDimension.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleLocalDimension.lean#L149).
 
 > **Stacks Project, Tag 04N4.** An étale morphism preserves the local Krull dimension at
 > corresponding points.
@@ -51,7 +51,7 @@ theorem topologicalKrullDimAt_eq_of_etale
 
 [Tag 04N8](https://stacks.math.columbia.edu/tag/04N8) in the Stacks Project.
 
-**`AlgebraicGeometry.ringKrullDim_stalk_eq_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleStalkDimension.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleStalkDimension.lean#L43). References: EGA IV (17.6.4).
+**`AlgebraicGeometry.ringKrullDim_stalk_eq_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleStalkDimension.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleStalkDimension.lean#L43). References: EGA IV (17.6.4).
 
 > **Stacks Project, Tag 04N8.** An étale morphism preserves the Krull dimension of local
 > rings at corresponding points.
@@ -65,7 +65,7 @@ theorem ringKrullDim_stalk_eq_of_etale {U V : Scheme.{u}} (f : U ⟶ V) [Etale f
 
 [Tag 0AH7](https://stacks.math.columbia.edu/tag/0AH7) in the Stacks Project.
 
-**`AlgebraicGeometry.isRegularLocalRing_stalk_iff_of_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/RegularGerm.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/RegularGerm.lean#L48).
+**`AlgebraicGeometry.isRegularLocalRing_stalk_iff_of_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/RegularGerm.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/RegularGerm.lean#L48).
 
 > **Stacks Project, Tag 0AH7.** For an étale morphism of schemes, the local ring at a
 > point of the source is regular if and only if the local ring at its image is regular.
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.21, Tag 04QT](https://stacks.math.columbia.edu/tag/04QT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Base-b digitwise binomial and multinomial coefficients
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html).
 
 ## The $b$-ary binomial coefficient
 
@@ -17,7 +17,7 @@ with base-$b$ digits $n_l$ and $k_l$, taken to be $0$ beyond the last digit (wit
 digits). The $b$-ary binomial coefficient of $n$ and $k$ is $\prod_{l=0}^{m-1} \binom{n_l}{k_l}$,
 where $m$ is the larger of the numbers of base-$b$ digits of $n$ and of $k$.
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient).
 
 ## Digitwise product formula for the $b$-ary binomial coefficient
 
@@ -27,7 +27,7 @@ digit, and with $0$ having no digits), and let $L$ be at least the number of bas
 $n$ and at least the number of base-$b$ digits of $k$. Then the $b$-ary binomial coefficient of
 $n$ and $k$ equals $\prod_{i=0}^{L-1} \binom{n_i}{k_i}$.
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_eq_prod_getD`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-eq-prod-get-d).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_eq_prod_getD`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialCoefficient.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-eq-prod-get-d).
 
 ## Generating function of the $b$-ary binomial coefficients
 
@@ -44,7 +44,7 @@ $$
 
 - Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (equation eq:barybinomialgeneratingfunction), lines 322–329, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-generating-fu).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-generating-fu).
 
 ## Generating function of digitwise binomial products
 
@@ -65,7 +65,7 @@ and $k$ whenever $k \le n$.
 
 - Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (equation eq:barybinomialgeneratingfunction), lines 322–329, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
 
-Formalized by `MetaMathlibExt.base_digits_binomial_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#base-digits-binomial-generating-function).
+Formalized by `MetaMathlibExt.base_digits_binomial_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialGeneratingFunction.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#base-digits-binomial-generating-function).
 
 ## Digit-product formula for $b$-ary binomial coefficients
 
@@ -78,7 +78,7 @@ $$\prod_{i=0}^{L-1} \binom{\lfloor n / b^i \rfloor \bmod b}{\lfloor k / b^i \rfl
 the product over the positions $i < L$ of the binomial coefficients of the $i$-th base-$b$ digits
 of $n$ and $k$.
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_eq_prod_div_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-eq-prod-div-p).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_eq_prod_div_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-eq-prod-div-p).
 
 ## Symmetry of $b$-ary binomial coefficients
 
@@ -86,7 +86,7 @@ Let $b \ge 2$ and write $\binom{n}{k}_b$ for
 the $b$-ary binomial coefficient. For all natural numbers $k \le n$,
 $\binom{n}{k}_b = \binom{n}{n-k}_b$.
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_symm`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-symm).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_symm`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-symm).
 
 ## Pascal's recurrence for $b$-ary binomial coefficients
 
@@ -95,7 +95,7 @@ $\binom{n}{k}_b$ for the $b$-ary binomial coefficient. For all natural numbers $
 $0 < k \le n$ and $\binom{n}{k}_b \ne 0$,
 $\binom{n}{k}_b = \binom{n-1}{k-1}_b + \binom{n-1}{k}_b$.
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_pascal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-pascal).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_pascal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-pascal).
 
 ## Symmetry and Pascal's recurrence for $b$-ary binomial coefficients
 
@@ -110,7 +110,7 @@ $C_b(n, k) = C_b(n - 1, k - 1) + C_b(n - 1, k)$.
 
 - Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (Symmetry and recurrence), equation, lines 432–445, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
 
-Formalized by `MetaMathlibExt.baryBinomial_symmetry_and_pascal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#bary-binomial-symmetry-and-pascal).
+Formalized by `MetaMathlibExt.baryBinomial_symmetry_and_pascal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryBinomialSymmetryPascal.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#bary-binomial-symmetry-and-pascal).
 
 ## Chu–Vandermonde identity for $b$-ary binomial coefficients
 
@@ -122,7 +122,7 @@ $l$. Then for every natural number $r$,
 
 $$\binom{m+n}{r}_b = \sum_{k=0}^{r} \binom{m}{k}_b \binom{n}{r-k}_b.$$
 
-Formalized by `MetaMathlibExt.bAryBinomialCoefficient_chu_vandermonde`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-chu-vandermon).
+Formalized by `MetaMathlibExt.bAryBinomialCoefficient_chu_vandermonde`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-binomial-coefficient-chu-vandermon).
 
 ## $b$-ary Chu–Vandermonde identity
 
@@ -140,7 +140,7 @@ The product $C(x, y)$ is the $b$-ary binomial coefficient $\binom{x}{y}_b$.
 
 - Lin Jiu and Christophe Vignat, "On Binomial Identities in Arbitrary Bases," Journal of Integer Sequences 19 (2016), Article 16.5.5, Theorem (equation bChuVandermonde), lines 371–377, https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu4.tex
 
-Formalized by `MetaMathlibExt.bary_chu_vandermonde`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#bary-chu-vandermonde).
+Formalized by `MetaMathlibExt.bary_chu_vandermonde`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BAryChuVandermonde.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#bary-chu-vandermonde).
 
 ## Base-$b$ digit of a natural number
 
@@ -157,7 +157,7 @@ single digit $n$, and for $b = 1$ the digits of $n$ are $n$ ones.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.tex, lines 349-359.
 
-Formalized by `MetaMathlibExt.bAryDigit`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-digit).
+Formalized by `MetaMathlibExt.bAryDigit`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-digit).
 
 ## Rank-$l$ base-$b$ digits of a list
 
@@ -165,7 +165,7 @@ For natural numbers $b$ and $l$ and a list
 $(k_1, \dots, k_m)$ of natural numbers, this is the list $((k_1)_l, \dots, (k_m)_l)$, where
 $(k_i)_l$ is the rank-$l$ base-$b$ digit of $k_i$.
 
-Formalized by `MetaMathlibExt.bAryLowerDigits`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-lower-digits).
+Formalized by `MetaMathlibExt.bAryLowerDigits`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-lower-digits).
 
 ## Multinomial coefficient with a prescribed top
 
@@ -173,7 +173,7 @@ For a natural number $t$ and a list
 $(a_1, \dots, a_m)$ of natural numbers, the multinomial factor of $t$ over $(a_1, \dots, a_m)$ is
 $\frac{t!}{a_1! \cdots a_m!}$ if $a_1 + \dots + a_m = t$, and $0$ otherwise.
 
-Formalized by `MetaMathlibExt.ordinaryMultinomialFactor`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#ordinary-multinomial-factor).
+Formalized by `MetaMathlibExt.ordinaryMultinomialFactor`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#ordinary-multinomial-factor).
 
 ## Digitwise $b$-ary multinomial factor
 
@@ -182,7 +182,7 @@ $(k_1, \dots, k_m)$ of natural numbers, let $n_l$ and $(k_i)_l$ be the rank-$l$ 
 of $n$ and $k_i$. The factor at rank $l$ is $\frac{n_l!}{(k_1)_l! \cdots (k_m)_l!}$ if
 $(k_1)_l + \dots + (k_m)_l = n_l$, and $0$ otherwise.
 
-Formalized by `MetaMathlibExt.bAryMultinomialFactor`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial-factor).
+Formalized by `MetaMathlibExt.bAryMultinomialFactor`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial-factor).
 
 ## Digit-length bound for the $b$-ary multinomial coefficient
 
@@ -194,7 +194,7 @@ Every nonzero base-$b$ digit of $n$ and of each $k_i$ has rank below the bound, 
 rank the digitwise $b$-ary multinomial factor equals $1$; this plays the role of the source's
 sufficiently large $N$.
 
-Formalized by `MetaMathlibExt.bAryMultinomialBound`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial-bound).
+Formalized by `MetaMathlibExt.bAryMultinomialBound`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial-bound).
 
 ## The $b$-ary multinomial coefficient
 
@@ -210,7 +210,7 @@ otherwise.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Jiu/jiu3.tex, lines 349-359.
 
-Formalized by `MetaMathlibExt.bAryMultinomial`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial).
+Formalized by `MetaMathlibExt.bAryMultinomial`, a definition declared in [MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BAryMultinomialCoefficient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html#b-ary-multinomial).
 
 ## Depends on
 
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Base-b digitwise binomial and multinomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/base-b-digitwise-binomial-and-multinomial-coeffi)

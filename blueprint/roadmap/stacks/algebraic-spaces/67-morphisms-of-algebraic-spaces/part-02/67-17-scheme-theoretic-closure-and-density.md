@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.17 Scheme theoretic closure and density
 
-Section 67.17 of the Stacks Project, [Tag 0831](https://stacks.math.columbia.edu/tag/0831). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.17 of the Stacks Project, [Tag 0831](https://stacks.math.columbia.edu/tag/0831). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0832, a lemma
 
 [Tag 0832](https://stacks.math.columbia.edu/tag/0832) in the Stacks Project.
 
-**`AlgebraicGeometry.isSchemeTheoreticallyDense_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/DensePreimageQuasiFinite.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/DensePreimageQuasiFinite.lean#L322). References: EGA IV (20.5.7), “special case”.
+**`AlgebraicGeometry.isSchemeTheoreticallyDense_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/DensePreimageQuasiFinite.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/DensePreimageQuasiFinite.lean#L322). References: EGA IV (20.5.7), “special case”.
 
 > **Stacks 0832.** The inverse image of a scheme-theoretically dense open subscheme under a
 > morphism of schemes which is flat, locally of finite presentation and locally quasi-finite is
@@ -31,7 +31,7 @@ public theorem isSchemeTheoreticallyDense_preimage {X S : Scheme.{u}} (f : X ⟶
 
 [Tag 0833](https://stacks.math.columbia.edu/tag/0833) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_exists_surjective_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/ChartCriterion.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/ChartCriterion.lean#L183).
+**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_exists_surjective_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/ChartCriterion.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/ChartCriterion.lean#L183).
 
 > **Stacks 0833.** Let `U` be an open subspace of an algebraic space `X` over a scheme `S`
 > contained in a big fppf site `B`. Then `U` is scheme-theoretically dense in `X` -- the
@@ -91,7 +91,7 @@ theorem isSchemeTheoreticallyDense_iff_exists_surjective_etale_chart
 
 [Tag 0834](https://stacks.math.columbia.edu/tag/0834) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticClosure`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L38). The attribute's comment: “part (1): the scheme-theoretic closure of an open subspace”.
+**`AlgebraicGeometry.Space.schemeTheoreticClosure`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L38). The attribute's comment: “part (1): the scheme-theoretic closure of an open subspace”.
 
 > **Stacks 0834, part (1).** The *scheme-theoretic closure* of a subspace `U` of an algebraic
 > space `X` over `S` is the scheme-theoretic image of Stacks 082X of its inclusion.
@@ -100,7 +100,7 @@ theorem isSchemeTheoreticallyDense_iff_exists_surjective_etale_chart
 abbrev schemeTheoreticClosure (U : Subfunctor X) : Subfunctor X
 ```
 
-**`AlgebraicGeometry.Space.IsSchemeTheoreticallyDense`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L49). The attribute's comment: “part (2): scheme-theoretic density of an open subspace”. References: EGA IV (11.10.2), “single open subspace”.
+**`AlgebraicGeometry.Space.IsSchemeTheoreticallyDense`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L49). The attribute's comment: “part (2): scheme-theoretic density of an open subspace”. References: EGA IV (11.10.2), “single open subspace”.
 
 > **Stacks 0834, part (2).** An open subspace `U` of an algebraic space `X` over `S` is
 > *scheme-theoretically dense in `X`* when, for every étale morphism `φ : V ⟶ X` of algebraic
@@ -117,7 +117,7 @@ def IsSchemeTheoreticallyDense (U : Subfunctor X) : Prop
 
 [Tag 0835](https://stacks.math.columbia.edu/tag/0835) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_schemeTheoreticClosure_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticDensity.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticDensity.lean#L114).
+**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_schemeTheoreticClosure_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticDensity.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticDensity.lean#L115).
 
 > Let `S` be a scheme contained in a big fppf site `B`, let `X` be an algebraic space over `S`
 > and let `U ⊆ X` be an open subspace. If the inclusion `U ⟶ X` is quasi-compact, then `U` is
@@ -135,7 +135,7 @@ theorem isSchemeTheoreticallyDense_iff_schemeTheoreticClosure_eq_top
 
 [Tag 0836](https://stacks.math.columbia.edu/tag/0836) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_mono_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L118).
+**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_iff_mono_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L118).
 
 > **Stacks 0836.** Let `j : U ⟶ X` be an open immersion of algebraic spaces over a scheme
 > `S` contained in a big fppf site `B`. Then `U` is scheme-theoretically dense in `X` if and only
@@ -168,7 +168,7 @@ theorem isSchemeTheoreticallyDense_iff_mono_fSharp (hX : IsAlgebraicSpace B S hS
 
 [Tag 0837](https://stacks.math.columbia.edu/tag/0837) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L229).
+**`AlgebraicGeometry.Space.isSchemeTheoreticallyDense_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticDensity/Density.lean#L229).
 
 > **Stacks 0837.** If `U` and `V` are scheme-theoretically dense open subspaces of an
 > algebraic space `X` over a scheme `S` contained in a big fppf site `B`, then so is `U ∩ V`.
@@ -191,7 +191,7 @@ theorem isSchemeTheoreticallyDense_inf (hX : IsAlgebraicSpace B S hS X) (U V : S
 
 [Tag 088G](https://stacks.math.columbia.edu/tag/088G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenImmersion_and_dense_toSchemeTheoreticImage_of_qc_or_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImmersionDenseOpenInSchemeTheoreticImage.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ImmersionDenseOpenInSchemeTheoreticImage.lean#L74).
+**`AlgebraicGeometry.Space.isOpenImmersion_and_dense_toSchemeTheoreticImage_of_qc_or_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImmersionDenseOpenInSchemeTheoreticImage.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ImmersionDenseOpenInSchemeTheoreticImage.lean#L74).
 
 > **Stacks 088G.** Let `S` be a scheme and let `h : Z ⟶ X` be an immersion of algebraic
 > spaces over `S`.  Assume either that `h` is quasi-compact or that `Z` is reduced, and let
@@ -227,7 +227,7 @@ theorem isOpenImmersion_and_dense_toSchemeTheoreticImage_of_qc_or_reduced
 
 [Tag 084N](https://stacks.math.columbia.edu/tag/084N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_eq_on_of_schemeTheoreticImageSubfunctor_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparatedEqualizer.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparatedEqualizer.lean#L161).
+**`AlgebraicGeometry.Space.eq_of_eq_on_of_schemeTheoreticImageSubfunctor_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparatedEqualizer.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparatedEqualizer.lean#L161).
 
 > **Stacks 084N.** Let `X` and `Y` be algebraic spaces over an algebraic space `T` with
 > structure morphisms `p : X ⟶ T` and `q : Y ⟶ T`, and let `f, g : X ⟶ Y` be morphisms over `T`.
@@ -255,4 +255,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.17, Tag 0831](https://stacks.math.columbia.edu/tag/0831)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

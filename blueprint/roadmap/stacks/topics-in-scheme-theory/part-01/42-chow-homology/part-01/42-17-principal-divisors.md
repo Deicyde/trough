@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.17 Principal divisors
 
-Section 42.17 of the Stacks Project, [Tag 02RN](https://stacks.math.columbia.edu/tag/02RN). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.17 of the Stacks Project, [Tag 02RN](https://stacks.math.columbia.edu/tag/02RN). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02RO, a definition
 
 [Tag 02RO](https://stacks.math.columbia.edu/tag/02RO) in the Stacks Project.
 
-**`Stacks.Chow.principalDivisorCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisor.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisor.lean#L62). References: EGA IV (21.6.7), “cyc(div(f))”.
+**`Stacks.Chow.principalDivisorCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisor.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisor.lean#L62). References: EGA IV (21.6.7), “cyc(div(f))”.
 
 > The principal divisor `div(f) = ∑_Z ord_Z(f) [Z]` of a rational function on an integral
 > scheme `X` of delta-dimension `n` locally of finite type over the base, as an element of the
@@ -31,7 +31,7 @@ def principalDivisorCycle (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.
 
 [Tag 02RR](https://stacks.math.columbia.edu/tag/02RR) in the Stacks Project.
 
-**`Stacks.Chow.flatPullback_principalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackPrincipalDivisorIntegral.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackPrincipalDivisorIntegral.lean#L82).
+**`Stacks.Chow.flatPullback_principalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackPrincipalDivisorIntegral.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackPrincipalDivisorIntegral.lean#L82).
 
 > Let `C = (S, δ)` be the base situation of chapter 42, let `X` and `Y` be integral and
 > locally of finite type over `S` with `n = dim_δ(Y)`, and let `f : X ⟶ Y` be flat of relative
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.17, Tag 02RN](https://stacks.math.columbia.edu/tag/02RN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

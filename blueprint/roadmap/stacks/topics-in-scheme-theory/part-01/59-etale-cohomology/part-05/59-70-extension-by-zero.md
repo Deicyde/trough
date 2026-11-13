@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.70 Extension by zero
 
-Section 59.70 of the Stacks Project, [Tag 03S2](https://stacks.math.columbia.edu/tag/03S2). 10 tags here are carried by 51 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.70 of the Stacks Project, [Tag 03S2](https://stacks.math.columbia.edu/tag/03S2). 10 tags here are carried by 51 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03S3, a definition
 
 [Tag 03S3](https://stacks.math.columbia.edu/tag/03S3) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.extensionByZeroSets`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L308). The attribute's comment: “sets: the left adjoint of restriction”.
+**`Stacks.EtaleCohomology.extensionByZeroSets`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L308). The attribute's comment: “sets: the left adjoint of restriction”.
 
 > **Stacks Project, Tag 03S3 (1).** Extension by zero `j_!^{Sh}` on sheaves of sets of the
 > small étale sites of an étale morphism `j : U ⟶ X`: the left adjoint of restriction, realised as
@@ -26,7 +26,7 @@ abbrev extensionByZeroSets :
       Sheaf X.smallEtaleTopology (Type (max (u + 1) v))
 ```
 
-**`Stacks.EtaleCohomology.extensionByZeroSetsAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L317). The attribute's comment: “sets: the left adjoint of restriction”.
+**`Stacks.EtaleCohomology.extensionByZeroSetsAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L317). The attribute's comment: “sets: the left adjoint of restriction”.
 
 > **Stacks Project, Tag 03S3 (1).** Extension by zero is left adjoint to restriction, on
 > sheaves of sets.
@@ -36,7 +36,7 @@ def extensionByZeroSetsAdj :
     extensionByZeroSets.{u, v} j ⊣ etaleRestrictionSets.{u, v} j
 ```
 
-**`Stacks.EtaleCohomology.extensionByZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L351). The attribute's comment: “abelian: the left adjoint of restriction”.
+**`Stacks.EtaleCohomology.extensionByZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L351). The attribute's comment: “abelian: the left adjoint of restriction”.
 
 > **Stacks Project, Tag 03S3 (2).** Extension by zero `j_!` on abelian sheaves of the small
 > étale sites of an étale morphism `j : U ⟶ X`: the left adjoint of restriction, realised as the
@@ -48,7 +48,7 @@ abbrev extensionByZero [HasSheafify X.smallEtaleTopology AddCommGrpCat.{max (u +
       Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}
 ```
 
-**`Stacks.EtaleCohomology.extensionByZeroAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L360). The attribute's comment: “abelian: the left adjoint of restriction”.
+**`Stacks.EtaleCohomology.extensionByZeroAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Basic.lean#L360). The attribute's comment: “abelian: the left adjoint of restriction”.
 
 > **Stacks Project, Tag 03S3 (2).** Extension by zero is left adjoint to restriction, on
 > abelian sheaves.
@@ -58,7 +58,7 @@ def extensionByZeroAdj [HasSheafify X.smallEtaleTopology AddCommGrpCat.{max (u +
     extensionByZero.{u, v} j ⊣ etaleRestriction.{u, v} j
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L91). The attribute's comment: “abelian\_extension\_by\_zero”.
+**`AlgebraicGeometry.abelianExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L91). The attribute's comment: “abelian\_extension\_by\_zero”.
 
 > **Stacks 03S3, part (2).** Extension by zero of abelian étale sheaves along the étale
 > morphism `U ⟶ X`: the sheafification of `V ↦ ⨁_{V → U} F(V → U)`, realised as the sheaf
@@ -71,7 +71,7 @@ public def abelianExtensionByZero :
       Sheaf (SmallEtale.topology B X hX) AddCommGrpCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L106). The attribute's comment: “abelian\_extension\_by\_zero”. References: SGA 4 XVII (6.2.11), “f\_! ⊣ f^* (abelian)”; SGA 4 IV (11.3.1), “étale site, Ab”.
+**`AlgebraicGeometry.abelianExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L106). The attribute's comment: “abelian\_extension\_by\_zero”. References: SGA 4 XVII (6.2.11), “f\_! ⊣ f^* (abelian)”; SGA 4 IV (11.3.1), “étale site, Ab”.
 
 > **Stacks 03S3, part (2).** Extension by zero is left adjoint to restriction, which is
 > the property characterising it.
@@ -81,7 +81,7 @@ public def abelianExtensionByZeroAdjunction :
     abelianExtensionByZero B X hX U ⊣ abelianRestriction B X hX U
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L171). The attribute's comment: “module\_extension\_by\_zero”. References: SGA 4 XVII (6.2.11), “f\_! ⊣ f^* (Λ-modules)”; SGA 4 IV (11.3.1), “étale site, Λ-modules”.
+**`AlgebraicGeometry.moduleExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Adjunction.lean#L171). The attribute's comment: “module\_extension\_by\_zero”. References: SGA 4 XVII (6.2.11), “f\_! ⊣ f^* (Λ-modules)”; SGA 4 IV (11.3.1), “étale site, Λ-modules”.
 
 > **Stacks 03S3, part (3).** Extension by zero of sheaves of modules is left adjoint to
 > restriction.
@@ -91,7 +91,7 @@ public def moduleExtensionByZeroAdjunction :
     moduleExtensionByZero B X hX U Λ ⊣ moduleRestriction B X hX U Λ
 ```
 
-**`AlgebraicGeometry.moduleOpenExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean#L147). The attribute's comment: “module\_extension\_by\_zero”.
+**`AlgebraicGeometry.moduleOpenExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean#L147). The attribute's comment: “module\_extension\_by\_zero”.
 
 > Extension by zero along an open immersion is left adjoint to restriction.
 
@@ -101,7 +101,7 @@ public def moduleOpenExtensionByZeroAdjunction
     moduleOpenExtensionByZero B X hX U Λ ⊣ moduleRestriction B X hX U Λ
 ```
 
-**`AlgebraicGeometry.setExtensionByEmpty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean#L85). The attribute's comment: “sheaves\_of\_sets”.
+**`AlgebraicGeometry.setExtensionByEmpty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean#L85). The attribute's comment: “sheaves\_of\_sets”.
 
 > **Stacks 03S3, part (1).** Extension by the empty set of étale sheaves of sets along the
 > étale morphism `U ⟶ X`: the sheafification of `V ↦ ⨿_{V → U} F(V → U)`, realised as the sheaf
@@ -114,7 +114,7 @@ public def setExtensionByEmpty :
       Sheaf (SmallEtale.topology B X hX) (Type (max (u + 1) v))
 ```
 
-**`AlgebraicGeometry.setExtensionByEmptyAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean#L99). The attribute's comment: “sheaves\_of\_sets”.
+**`AlgebraicGeometry.setExtensionByEmptyAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Sets.lean#L99). The attribute's comment: “sheaves\_of\_sets”.
 
 > **Stacks 03S3, part (1).** Restriction of étale sheaves of sets along `U ⟶ X` has a left
 > adjoint, namely extension by the empty set. This adjunction is the property characterising
@@ -125,7 +125,7 @@ public def setExtensionByEmptyAdjunction :
     setExtensionByEmpty.{u, v} B X hX U ⊣ setRestriction.{u, v} B X hX U
 ```
 
-**`AlgebraicGeometry.Space.abelianEtaleExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L71). The attribute's comment: “extension by zero of abelian sheaves”.
+**`AlgebraicGeometry.Space.abelianEtaleExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L71). The attribute's comment: “extension by zero of abelian sheaves”.
 
 > **Extension by zero of abelian étale sheaves** along an étale morphism `f : X ⟶ Y` of
 > algebraic spaces: the left adjoint of restriction, constructed as the sheafification of the
@@ -137,7 +137,7 @@ def abelianEtaleExtensionByZero (f : X ⟶ Y) (hf : IsEtale B S hS f.hom) :
       Sheaf (SmallEtale.topology B S hS Y.1) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.Space.abelianEtaleExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L80). The attribute's comment: “the adjunction”.
+**`AlgebraicGeometry.Space.abelianEtaleExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L80). The attribute's comment: “the adjunction”.
 
 > **Extension by zero is left adjoint to restriction** for abelian étale sheaves along an
 > étale morphism of algebraic spaces.
@@ -151,7 +151,7 @@ def abelianEtaleExtensionByZeroAdjunction (f : X ⟶ Y) (hf : IsEtale B S hS f.h
 
 [Tag 0F4K](https://stacks.math.columbia.edu/tag/0F4K) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_sigmaDesc_extensionByZeroSummandInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L376). The attribute's comment: “the presheaf formula (j\_\{p!} F)(V) = ⨁\_\{φ : V → U} F(V →^φ U)”.
+**`Stacks.EtaleCohomology.isIso_sigmaDesc_extensionByZeroSummandInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L376). The attribute's comment: “the presheaf formula (j\_\{p!} F)(V) = ⨁\_\{φ : V → U} F(V →^φ U)”.
 
 > **Stacks Project, Tag 0F4K.** The sections of the presheaf `j_{p!} F` over a scheme `V` étale
 > over `X` are the direct sum, over the morphisms `φ : V ⟶ U` over `X`, of the sections of `F` over
@@ -166,7 +166,7 @@ theorem isIso_sigmaDesc_extensionByZeroSummandInclusion (F : (U.Etale)ᵒᵖ ⥤
       (fun φ => extensionByZeroSummandInclusion j F φ))
 ```
 
-**`Stacks.EtaleCohomology.extensionByZeroPresheafSectionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L411). The attribute's comment: “the presheaf formula (j\_\{p!} F)(V) = ⨁\_\{φ : V → U} F(V →^φ U)”.
+**`Stacks.EtaleCohomology.extensionByZeroPresheafSectionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L411). The attribute's comment: “the presheaf formula (j\_\{p!} F)(V) = ⨁\_\{φ : V → U} F(V →^φ U)”.
 
 > **Stacks Project, Tag 0F4K.** The direct-sum formula for the sections of the presheaf
 > `j_{p!} F` over a scheme `V` étale over `X`, as an isomorphism.
@@ -177,7 +177,7 @@ def extensionByZeroPresheafSectionIso (F : (U.Etale)ᵒᵖ ⥤ A) (V : X.Etale) 
       (extensionByZeroPresheaf j F).obj (op V)
 ```
 
-**`Stacks.EtaleCohomology.extensionByZero_obj_eq_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L458). The attribute's comment: “j\_! F is the sheafification of j\_\{p!} F”.
+**`Stacks.EtaleCohomology.extensionByZero_obj_eq_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Formula.lean#L458). The attribute's comment: “j\_! F is the sheafification of j\_\{p!} F”.
 
 > **Stacks Project, Tag 0F4K.** Extension by zero of an abelian sheaf is the sheafification of
 > the presheaf `j_{p!} F` whose sections are given by the direct-sum formula.
@@ -191,7 +191,7 @@ theorem extensionByZero_obj_eq_sheafify
         (extensionByZeroPresheaf j F.obj)
 ```
 
-**`Stacks.Sites.ExtensionByZero.isIso_lanSigmaDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroExactness.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroExactness.lean#L110).
+**`Stacks.Sites.ExtensionByZero.isIso_lanSigmaDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroExactness.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroExactness.lean#L110).
 
 > **Stacks 0F4K.** The left Kan extension along `(Over.forget U).op` is, over `V`, the
 > coproduct of the values of `F` at the objects `φ : V ⟶ U` of `C/U`, the comparison map being
@@ -214,7 +214,7 @@ theorem isIso_lanSigmaDesc
 
 [Tag 03S4](https://stacks.math.columbia.edu/tag/03S4) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.extensionByZeroDirectSumAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FormulaAdjunction.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FormulaAdjunction.lean#L202). The attribute's comment: “the sheafification of the direct-sum presheaf j\_\{p!} is a left adjoint of j^\{-1}”.
+**`Stacks.EtaleCohomology.extensionByZeroDirectSumAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FormulaAdjunction.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FormulaAdjunction.lean#L202). The attribute's comment: “the sheafification of the direct-sum presheaf j\_\{p!} is a left adjoint of j^\{-1}”.
 
 > **Stacks Project, Tag 03S4.** Extension by zero, defined as the sheafification of the
 > presheaf `j_{p!}` whose sections over a scheme `V` étale over `X` are the direct sum
@@ -234,7 +234,7 @@ def extensionByZeroDirectSumAdj :
 
 [Tag 03S5](https://stacks.math.columbia.edu/tag/03S5) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L105). The attribute's comment: “left exactness of j\_! in a big étale site”.
+**`AlgebraicGeometry.abelianExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L105). The attribute's comment: “left exactness of j\_! in a big étale site”.
 
 > Extension by zero of abelian étale sheaves preserves finite limits.
 
@@ -243,7 +243,7 @@ public instance abelianExtensionByZero_preservesFiniteLimits :
     PreservesFiniteLimits (abelianExtensionByZero B X hX U)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZero_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L111). The attribute's comment: “right exactness of j\_! in a big étale site”.
+**`AlgebraicGeometry.abelianExtensionByZero_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L111). The attribute's comment: “right exactness of j\_! in a big étale site”.
 
 > Extension by zero of abelian étale sheaves preserves finite colimits.
 
@@ -252,7 +252,7 @@ public instance abelianExtensionByZero_preservesFiniteColimits :
     PreservesFiniteColimits (abelianExtensionByZero B X hX U)
 ```
 
-**`Stacks.EtaleCohomology.etaleModuleExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CompactlySupportedCohomologyZero.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CompactlySupportedCohomologyZero.lean#L224). The attribute's comment: “left exactness of j\_! for module coefficients”.
+**`Stacks.EtaleCohomology.etaleModuleExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CompactlySupportedCohomologyZero.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CompactlySupportedCohomologyZero.lean#L224). The attribute's comment: “left exactness of j\_! for module coefficients”.
 
 > **Stacks Project, Tag 03S5** for module coefficients: extension by zero of sheaves of
 > `Λ`-modules on small étale sites preserves finite limits.  It is additive, preserves
@@ -263,7 +263,7 @@ instance etaleModuleExtensionByZero_preservesFiniteLimits :
     PreservesFiniteLimits (etaleModuleExtensionByZero.{u, r} Λ j)
 ```
 
-**`Stacks.EtaleCohomology.extensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L212). The attribute's comment: “left exactness of j\_!”.
+**`Stacks.EtaleCohomology.extensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L212). The attribute's comment: “left exactness of j\_!”.
 
 > Extension by zero preserves finite limits.
 
@@ -273,7 +273,7 @@ instance extensionByZero_preservesFiniteLimits
     PreservesFiniteLimits (extensionByZero.{u, v} j)
 ```
 
-**`Stacks.EtaleCohomology.extensionByZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L222). The attribute's comment: “j\_! is an exact functor”.
+**`Stacks.EtaleCohomology.extensionByZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L222). The attribute's comment: “j\_! is an exact functor”.
 
 > Extension by zero along an étale morphism of schemes is an exact functor on
 > abelian sheaves of the small étale sites.
@@ -284,7 +284,7 @@ theorem extensionByZero_exact
     exactFunctor _ _ (extensionByZero.{u, v} j)
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleExactness.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleExactness.lean#L106). The attribute's comment: “left exactness of j\_! for sheaves of modules on the small etale sites of Tag 021B”.
+**`AlgebraicGeometry.moduleExtensionByZero_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleExactness.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleExactness.lean#L106). The attribute's comment: “left exactness of j\_! for sheaves of modules on the small etale sites of Tag 021B”.
 
 > **Stacks 03S5 for sheaves of modules, on the sites of Tag 021B.** Extension by zero of
 > sheaves of `Λ`-modules along an object `U` of the small étale site of `X` preserves finite
@@ -299,7 +299,7 @@ public instance moduleExtensionByZero_preservesFiniteLimits :
     PreservesFiniteLimits (moduleExtensionByZero B X hX U Λ)
 ```
 
-**`AlgebraicGeometry.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L535). The attribute's comment: “stalk formula”.
+**`AlgebraicGeometry.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L535). The attribute's comment: “stalk formula”.
 
 > **Stacks 03S5.** The stalk at a geometric point `x` of `X` of the extension by zero of an
 > abelian étale sheaf on `U` is the direct sum of its stalks at the lifts of `x` to `U`.
@@ -311,7 +311,7 @@ public def stalkExtensionByZeroIso
       (∐ fun p : geometricPointLifts B X hX U x => liftedStalk B X hX U x F p)
 ```
 
-**`AlgebraicGeometry.stalkExtensionByZeroIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L546). The attribute's comment: “germ computation”.
+**`AlgebraicGeometry.stalkExtensionByZeroIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L546). The attribute's comment: “germ computation”.
 
 > **Stacks 03S5.** The stalk isomorphism sends the germ of a section over an étale
 > neighbourhood `W ⟶ U`, viewed in the extension by zero through the adjunction unit, to its
@@ -328,17 +328,17 @@ public theorem stalkExtensionByZeroIso_germ
     (q : (geometricPointFiber B X hX x).obj ((smallEtalePostcompose B X hX U).obj W))
     (hq : q.1 = w.1) (s : F.obj.obj (op W)) :
     (stalkExtensionByZeroIso B X hX U x F).hom
-      ((colimit.ι ((CategoryOfElements.π (geometricPointFiber B X hX x)).op ⋙
+      ((colimit.ι ((Functor.Elements.π (geometricPointFiber B X hX x)).op ⋙
           ((abelianExtensionByZero B X hX U).obj F).obj)
           (op (Functor.elementsMk _ ((smallEtalePostcompose B X hX U).obj W) q)))
         (((abelianExtensionByZeroAdjunction B X hX U).unit.app F).hom.app (op W) s)) =
       (Sigma.ι (fun p : geometricPointLifts B X hX U x => liftedStalk B X hX U x F p) p)
-        ((colimit.ι ((CategoryOfElements.π (geometricPointFiber B U.obj.left.1
+        ((colimit.ι ((Functor.Elements.π (geometricPointFiber B U.obj.left.1
             U.obj.left.property (geometricPointOfLift B X hX U x p))).op ⋙ F.obj)
           (op (Functor.elementsMk _ W w))) s)
 ```
 
-**`AlgebraicGeometry.stalkExtensionByZeroIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L577). The attribute's comment: “naturality”.
+**`AlgebraicGeometry.stalkExtensionByZeroIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L577). The attribute's comment: “naturality”.
 
 > **Stacks 03S5.** The stalk decomposition of extension by zero is natural in the abelian
 > sheaf.
@@ -347,16 +347,16 @@ public theorem stalkExtensionByZeroIso_germ
 public theorem stalkExtensionByZeroIso_naturality
     {F G : Sheaf (SmallEtale.topology B U.obj.left.1 U.obj.left.property) AddCommGrpCat.{u + 1}}
     (f : F ⟶ G) :
-    colimMap (Functor.whiskerLeft (CategoryOfElements.π (geometricPointFiber B X hX x)).op
+    colimMap (Functor.whiskerLeft (Functor.Elements.π (geometricPointFiber B X hX x)).op
         ((abelianExtensionByZero B X hX U).map f).hom) ≫
         (stalkExtensionByZeroIso B X hX U x G).hom =
       (stalkExtensionByZeroIso B X hX U x F).hom ≫
         Limits.Sigma.map (fun p : geometricPointLifts B X hX U x =>
-          colimMap (Functor.whiskerLeft (CategoryOfElements.π (geometricPointFiber
+          colimMap (Functor.whiskerLeft (Functor.Elements.π (geometricPointFiber
             B U.obj.left.1 U.obj.left.property (geometricPointOfLift B X hX U x p))).op f.hom))
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L594). The attribute's comment: “exactness”.
+**`AlgebraicGeometry.abelianExtensionByZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L594). The attribute's comment: “exactness”.
 
 > **Stacks 03S5.** Extension by zero of abelian sheaves along an étale morphism is exact.
 > Under the equivalence of the small étale site of `U` with the localization of the small étale
@@ -372,7 +372,7 @@ public theorem abelianExtensionByZero_exact :
 
 [Tag 0F70](https://stacks.math.columbia.edu/tag/0F70) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.directImageRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L263). The attribute's comment: “the isomorphism j^\{-1} j\_* F → F”.
+**`Stacks.EtaleCohomology.directImageRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/Exactness.lean#L263). The attribute's comment: “the isomorphism j^\{-1} j\_* F → F”.
 
 > For an étale monomorphism `j : U ⟶ X`, the natural isomorphism `j^{-1} j_* F ≅ F` for
 > abelian sheaves `F` on the small étale site of `U`, given by the counit of `j^{-1} ⊣ j_*`.
@@ -382,7 +382,7 @@ def directImageRestrictionIso :
     etaleDirectImage.{u, v} j ⋙ etaleRestriction.{u, v} j ≅ 𝟭 _
 ```
 
-**`AlgebraicGeometry.abelianDirectImageAdjunction_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/DirectImage.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/DirectImage.lean#L90). The attribute's comment: “direct\_image\_counit”.
+**`AlgebraicGeometry.abelianDirectImageAdjunction_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/DirectImage.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/DirectImage.lean#L90). The attribute's comment: “direct\_image\_counit”.
 
 > **Stacks 0F70.** Along an open immersion `U ⟶ X` the counit of the adjunction between
 > restriction and direct image is an isomorphism: an abelian étale sheaf on `U` is recovered from
@@ -395,7 +395,7 @@ public theorem abelianDirectImageAdjunction_counit_isIso :
     IsIso (abelianDirectImageAdjunction B X hX U).counit
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean#L63). The attribute's comment: “extension\_by\_zero\_unit”.
+**`AlgebraicGeometry.abelianExtensionByZeroAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/OpenImmersion.lean#L63). The attribute's comment: “extension\_by\_zero\_unit”.
 
 > Along an open immersion `U ⟶ X` the unit of the extension-by-zero adjunction is an
 > isomorphism: an abelian étale sheaf on `U` is recovered from its extension by zero by
@@ -407,7 +407,7 @@ public theorem abelianExtensionByZeroAdjunction_unit_isIso
     IsIso ((abelianExtensionByZeroAdjunction B X hX U).unit.app F)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroAdjunction_hom_isIso_of_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroCharacterization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroCharacterization.lean#L226). The attribute's comment: “extension\_by\_zero\_characterization: uniqueness”.
+**`AlgebraicGeometry.abelianExtensionByZeroAdjunction_hom_isIso_of_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroCharacterization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroCharacterization.lean#L226). The attribute's comment: “extension\_by\_zero\_characterization: uniqueness”.
 
 > **Stacks 0F70.** An abelian étale sheaf on `X` whose restriction to the open subscheme `U`
 > is identified with `F` and whose stalks at the geometric points of `X` outside `U` vanish is
@@ -427,7 +427,7 @@ public theorem abelianExtensionByZeroAdjunction_hom_isIso_of_stalk_isZero
     IsIso (((abelianExtensionByZeroAdjunction B X hX U).homEquiv F G).symm e.hom)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZero_stalk_isZero_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L677). The attribute's comment: “extension\_by\_zero\_characterization: zero stalks”.
+**`AlgebraicGeometry.abelianExtensionByZero_stalk_isZero_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L677). The attribute's comment: “extension\_by\_zero\_characterization: zero stalks”.
 
 > **Stacks 0F70.** The extension by zero of an abelian étale sheaf on `U` has zero stalk at
 > every geometric point of `X` outside the image of `U`: by the stalk formula the stalk is the
@@ -440,7 +440,7 @@ public theorem abelianExtensionByZero_stalk_isZero_of_not_mem_range
     IsZero (etaleStalk B X hX x ((abelianExtensionByZero B X hX U).obj F).obj)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZero_stalk_isZero_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L677). The attribute's comment: “extension\_by\_zero\_characterization”.
+**`AlgebraicGeometry.abelianExtensionByZero_stalk_isZero_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroStalk.lean#L677). The attribute's comment: “extension\_by\_zero\_characterization”.
 
 > **Stacks 0F70.** The extension by zero of an abelian étale sheaf on `U` has zero stalk at
 > every geometric point of `X` outside the image of `U`: by the stalk formula the stalk is the
@@ -457,7 +457,7 @@ public theorem abelianExtensionByZero_stalk_isZero_of_not_mem_range
 
 [Tag 03S6](https://stacks.math.columbia.edu/tag/03S6) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianExtensionByZeroBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean#L182). The attribute's comment: “abelian sheaves”.
+**`AlgebraicGeometry.abelianExtensionByZeroBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean#L182). The attribute's comment: “abelian sheaves”.
 
 > **Stacks 03S6, abelian sheaves.** Extension by zero of abelian étale sheaves commutes
 > with base change: for `f : Y ⟶ X` and `j : V ⟶ X` étale with base change `j' : V' ⟶ Y` and
@@ -481,7 +481,7 @@ public noncomputable def abelianExtensionByZeroBaseChangeIso
         (SmallEtale.topology B Y.1 Y.property)
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean#L214). The attribute's comment: “sheaves of modules”.
+**`AlgebraicGeometry.moduleExtensionByZeroBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange.lean#L214). The attribute's comment: “sheaves of modules”.
 
 > **Stacks 03S6, sheaves of modules.** Extension by zero of étale sheaves of `Λ`-modules
 > commutes with base change, by the same adjunction argument as for abelian sheaves.
@@ -508,7 +508,7 @@ public noncomputable def moduleExtensionByZeroBaseChangeIso
 
 [Tag 0F4L](https://stacks.math.columbia.edu/tag/0F4L) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianExtensionByZeroToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 887](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L887). The attribute's comment: “abelian natural map”.
+**`AlgebraicGeometry.abelianExtensionByZeroToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 887](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L887). The attribute's comment: “abelian natural map”.
 
 > The canonical map from extension by zero to the direct image of abelian sheaves along the étale
 > morphism `U ⟶ X`. On the summand of the presheaf extension indexed by `φ : V ⟶ U` it extends a
@@ -525,7 +525,7 @@ public noncomputable def abelianExtensionByZeroToPushforward :
         (SmallEtale.topology B U.obj.left.1 U.obj.left.property)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 924](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L924). The attribute's comment: “abelian injectivity”.
+**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 924](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L924). The attribute's comment: “abelian injectivity”.
 
 > For a separated étale morphism, every component of the canonical map from extension by zero to
 > the direct image of abelian sheaves is a monomorphism.
@@ -537,7 +537,7 @@ public theorem abelianExtensionByZeroToPushforward_mono
     Mono ((abelianExtensionByZeroToPushforward B X hX U).app F)
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L946). The attribute's comment: “abelian graph restriction”.
+**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 946](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L946). The attribute's comment: “abelian graph restriction”.
 
 > On the summand indexed by `W ⟶ U`, the canonical map restricts along the graph `W ⟶ W ×_X U` to
 > the original section.
@@ -556,7 +556,7 @@ public theorem abelianExtensionByZeroToPushforward_graph
           B X hX U).unit.app F).hom.app (Opposite.op W) s)) = s
 ```
 
-**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_graph_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 967](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L967). The attribute's comment: “abelian complementary vanishing”.
+**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_graph_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 967](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L967). The attribute's comment: “abelian complementary vanishing”.
 
 > The image of the summand indexed by `W ⟶ U` restricts to zero along every morphism into
 > `W ×_X U` whose image avoids the graph of `W`.
@@ -578,7 +578,7 @@ public theorem abelianExtensionByZeroToPushforward_graph_compl
           B X hX U).unit.app F).hom.app (Opposite.op W) s)) = 0
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 993](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L993). The attribute's comment: “module natural map”.
+**`AlgebraicGeometry.moduleExtensionByZeroToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 993](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L993). The attribute's comment: “module natural map”.
 
 > The canonical map from extension by zero to the direct image of sheaves of `Λ`-modules along
 > the étale morphism `U ⟶ X`, constructed exactly as in the abelian case.
@@ -594,7 +594,7 @@ public noncomputable def moduleExtensionByZeroToPushforward
         (SmallEtale.topology B U.obj.left.1 U.obj.left.property)
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1032](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1032). The attribute's comment: “module injectivity”.
+**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1032](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1032). The attribute's comment: “module injectivity”.
 
 > For a separated étale morphism, every component of the canonical map from extension by zero to
 > the direct image of sheaves of `Λ`-modules is a monomorphism.
@@ -607,7 +607,7 @@ public theorem moduleExtensionByZeroToPushforward_mono
     Mono ((moduleExtensionByZeroToPushforward B X hX U Λ).app F)
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1064). The attribute's comment: “module graph restriction”.
+**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1064). The attribute's comment: “module graph restriction”.
 
 > On the summand indexed by `W ⟶ U`, the canonical map for sheaves of modules restricts along the
 > graph `W ⟶ W ×_X U` to the original section.
@@ -627,7 +627,7 @@ public theorem moduleExtensionByZeroToPushforward_graph
           B X hX U Λ).unit.app F).hom.app (Opposite.op W) s)) = s
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_graph_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1086). The attribute's comment: “module complementary vanishing”.
+**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_graph_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Pushforward.lean#L1086). The attribute's comment: “module complementary vanishing”.
 
 > The image of the summand indexed by `W ⟶ U` restricts to zero along every morphism into
 > `W ×_X U` whose image avoids the graph of `W`, for sheaves of modules.
@@ -654,7 +654,7 @@ public theorem moduleExtensionByZeroToPushforward_graph_compl
 
 [Tag 03S7](https://stacks.math.columbia.edu/tag/03S7) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean#L272). The attribute's comment: “abelian sheaves”.
+**`AlgebraicGeometry.abelianExtensionByZeroToPushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean#L272). The attribute's comment: “abelian sheaves”.
 
 > **Stacks 03S7.** For a finite étale morphism, the canonical map from extension by zero to
 > the direct image is an isomorphism on abelian sheaves.
@@ -664,7 +664,7 @@ public theorem abelianExtensionByZeroToPushforward_isIso :
     IsIso (abelianExtensionByZeroToPushforward B X hX U)
 ```
 
-**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean#L322). The attribute's comment: “sheaves of modules”.
+**`AlgebraicGeometry.moduleExtensionByZeroToPushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/FinitePushforward.lean#L322). The attribute's comment: “sheaves of modules”.
 
 > **Stacks 03S7.** For a finite étale morphism, the canonical map from extension by zero to
 > the direct image is an isomorphism on sheaves of `Λ`-modules.
@@ -678,7 +678,7 @@ public theorem moduleExtensionByZeroToPushforward_isIso (Λ : Type v) [Ring Λ] 
 
 [Tag 095L](https://stacks.math.columbia.edu/tag/095L) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.openClosedShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean#L46). The attribute's comment: “the canonical short complex”.
+**`Stacks.EtaleCohomology.openClosedShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean#L46). The attribute's comment: “the canonical short complex”.
 
 > The short complex `j_! j^{-1} F ⟶ F ⟶ i_* i^{-1} F` built from the counit of `j_! ⊣ j^{-1}` and
 > the unit of `i^{-1} ⊣ i_*`, for a closed subscheme `i : Z ⟶ X` and the open immersion `j : U ⟶ X`
@@ -689,7 +689,7 @@ def openClosedShortComplex :
     ShortComplex (Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})
 ```
 
-**`Stacks.EtaleCohomology.openClosedShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean#L57). The attribute's comment: “short exactness”.
+**`Stacks.EtaleCohomology.openClosedShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ClosedComplement.lean#L57). The attribute's comment: “short exactness”.
 
 > For a closed immersion `i : Z ⟶ X` and the open immersion `j : U ⟶ X` of its complement, the
 > short complex `0 ⟶ j_! j^{-1} F ⟶ F ⟶ i_* i^{-1} F ⟶ 0` is short exact.
@@ -699,7 +699,7 @@ theorem openClosedShortComplex_shortExact :
     (openClosedShortComplex.{u, v} i j hij F).ShortExact
 ```
 
-**`Stacks.EtaleCohomology.shortExact_etaleModuleExtensionByZero_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean#L256). The attribute's comment: “module coefficients”. References: SGA 4 IV (14.6), “(14.6.1)”; SGA 4 VIII (6.5), “partial”.
+**`Stacks.EtaleCohomology.shortExact_etaleModuleExtensionByZero_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean#L256). The attribute's comment: “module coefficients”. References: SGA 4 IV (14.6), “(14.6.1)”; SGA 4 VIII (6.5), “partial”.
 
 > **Stacks Project, Tag 095L** for module coefficients.  Let `X` be a scheme, let `i : Z ⟶ X`
 > be a closed immersion and let `j : U ⟶ X` be an open immersion whose image is the complement of
@@ -719,7 +719,7 @@ theorem shortExact_etaleModuleExtensionByZero_directImage (Λ : Type r) [Ring Λ
         ((etaleModuleInverseImageAdj.{u, r} Λ i).unit.app F) h).ShortExact
 ```
 
-**`Stacks.EtaleCohomology.shortExact_extensionByZero_etaleAbelianDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/OpenClosedSequence.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/OpenClosedSequence.lean#L400). References: SGA 4 VIII (6.5), “partial”.
+**`Stacks.EtaleCohomology.shortExact_extensionByZero_etaleAbelianDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/OpenClosedSequence.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/OpenClosedSequence.lean#L400). References: SGA 4 VIII (6.5), “partial”.
 
 > **Stacks Project, Tag 095L.** Let `X` be a scheme, let `i : Z ⟶ X` be a closed immersion and
 > let `j : U ⟶ X` be an open immersion whose image is the complement of the image of `i`.  For
@@ -743,7 +743,7 @@ theorem shortExact_extensionByZero_etaleAbelianDirectImage {Z U X : Scheme.{u}} 
 
 [Tag 0GJ1](https://stacks.math.columbia.edu/tag/0GJ1) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.directImageExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FiniteDirectImage.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FiniteDirectImage.lean#L136). The attribute's comment: “at the coefficients AddCommGrpCat.\{u+1}, on Mathlib's small etale sites”.
+**`Stacks.EtaleCohomology.directImageExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FiniteDirectImage.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/FiniteDirectImage.lean#L136). The attribute's comment: “at the coefficients AddCommGrpCat.\{u+1}, on Mathlib's small etale sites”.
 
 > **Stacks Project, Tag 0GJ1.** For a cartesian square `j' ≫ f = g ≫ j` of schemes with `f`
 > finite and `j` an open immersion, `f_* ∘ j'_! ≅ j_! ∘ g_*` as functors from abelian sheaves on
@@ -755,7 +755,7 @@ def directImageExtensionByZeroIso :
       etaleAbelianDirectImage.{u, 0} g ⋙ extensionByZero.{u, 0} j
 ```
 
-**`AlgebraicGeometry.extensionByZeroFinitePushforwardCartesianIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroFinitePushforwardCartesian.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroFinitePushforwardCartesian.lean#L186).
+**`AlgebraicGeometry.extensionByZeroFinitePushforwardCartesianIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroFinitePushforwardCartesian.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroFinitePushforwardCartesian.lean#L186).
 
 > **Stacks 0GJ1.** For a cartesian square `g ≫ j = j' ≫ f` of schemes of a big étale site
 > with `f` finite and `j : V ⟶ Y` an open immersion, the functors `j_! ∘ g_*` and `f_* ∘ j'_!`
@@ -788,4 +788,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.70, Tag 03S2](https://stacks.math.columbia.edu/tag/03S2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

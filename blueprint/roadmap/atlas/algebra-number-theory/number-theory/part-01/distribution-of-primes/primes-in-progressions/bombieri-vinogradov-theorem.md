@@ -7,7 +7,7 @@ statement: formalized
 
 # Bombieri–Vinogradov theorem
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html).
 
 ## Residue-class error of Chebyshev's function
 
@@ -20,7 +20,7 @@ Euler's totient function.
 
 - S. Baier and L. Zhao, *Bombieri-Vinogradov Type Theorem for Sparse Sets of Moduli*, arXiv:math/0602116, classical theorem display (1.1).
 
-Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovResidueError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-residue-error).
+Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovResidueError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-residue-error).
 
 ## Maximal residue-class error
 
@@ -32,7 +32,7 @@ and $0$ if there is no such $a$.
 
 - S. Baier and L. Zhao, *Bombieri-Vinogradov Type Theorem for Sparse Sets of Moduli*, arXiv:math/0602116, inner maximum of display (1.1).
 
-Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxResidueError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-max-residue-error).
+Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxResidueError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-max-residue-error).
 
 ## Maximal residue-class error up to a level
 
@@ -44,7 +44,7 @@ natural numbers $y \le x$.
 
 - S. Baier and L. Zhao, *Bombieri-Vinogradov Type Theorem for Sparse Sets of Moduli*, arXiv:math/0602116, maximum over `y ≤ x` in display (1.1).
 
-Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxUpToError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-max-up-to-error).
+Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxUpToError`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-max-up-to-error).
 
 ## Bombieri–Vinogradov sum
 
@@ -59,7 +59,7 @@ When $A > -5$ and $x \ge 3$, the condition $q \le x$ follows from the other one.
 
 - S. Baier and L. Zhao, *Bombieri-Vinogradov Type Theorem for Sparse Sets of Moduli*, arXiv:math/0602116, outer sum of display (1.1).
 
-Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovSum`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-sum).
+Formalized by `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovSum`, a definition declared in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov-sum).
 
 ## Bombieri–Vinogradov theorem
 
@@ -78,7 +78,7 @@ logarithmic-integral term depending on $x$.
 
 - S. Baier and L. Zhao, *Bombieri-Vinogradov Type Theorem for Sparse Sets of Moduli*, arXiv:math/0602116, classical theorem display (1.1), source lines 54–62.
 
-Stated but not proved: `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradov` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov).
+Stated but not proved: `MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradov` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/BombieriVinogradovWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html#bombieri-vinogradov).
 
 ## Depends on
 
@@ -87,4 +87,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bombieri–Vinogradov theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/bombieri-vinogradov-theorem)

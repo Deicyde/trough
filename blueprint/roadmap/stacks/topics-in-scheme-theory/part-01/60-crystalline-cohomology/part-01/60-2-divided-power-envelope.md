@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.2 Divided power envelope
 
-Section 60.2 of the Stacks Project, [Tag 07H7](https://stacks.math.columbia.edu/tag/07H7). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.2 of the Stacks Project, [Tag 07H7](https://stacks.math.columbia.edu/tag/07H7). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07H8, a lemma
 
 [Tag 07H8](https://stacks.math.columbia.edu/tag/07H8) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166).
+**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166).
 
 > The divided power envelope of an ideal containing the extension of the base divided power
 > ideal. Its fields give the structural divided power morphism and the functorial universal Hom
@@ -30,7 +30,7 @@ public noncomputable def dividedPowerEnvelope (A : DividedPowerRing.{u}) {B : Ty
 
 [Tag 07H9](https://stacks.math.columbia.edu/tag/07H9) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166). The attribute's comment: “the divided power envelope D\_\{B,gamma}(J) of J in B relative to (A, I, gamma)”.
+**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166). The attribute's comment: “the divided power envelope D\_\{B,gamma}(J) of J in B relative to (A, I, gamma)”.
 
 > The divided power envelope of an ideal containing the extension of the base divided power
 > ideal. Its fields give the structural divided power morphism and the functorial universal Hom
@@ -46,7 +46,7 @@ public noncomputable def dividedPowerEnvelope (A : DividedPowerRing.{u}) {B : Ty
 
 [Tag 07HA](https://stacks.math.columbia.edu/tag/07HA) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope_factorization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L287).
+**`Crystalline.dividedPowerEnvelope_factorization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L287).
 
 > The divided power envelope `D` of an ideal `J ⊆ B` factors the quotient map of `B` by `J`
 > as `B ⟶ D ⟶ B ⧸ J` through maps over `A`: the canonical map from `B` carries `J` into the
@@ -72,7 +72,7 @@ public lemma dividedPowerEnvelope_factorization (A : DividedPowerRing.{u}) {B : 
 
 [Tag 07HB](https://stacks.math.columbia.edu/tag/07HB) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope_quotient`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L381).
+**`Crystalline.dividedPowerEnvelope_quotient`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L381).
 
 > For a surjection `B' → B`, the canonical map from the divided power envelope of the
 > inverse image of `J` to the divided power envelope of `J` is surjective, and its kernel is
@@ -104,7 +104,7 @@ public lemma dividedPowerEnvelope_quotient
 
 [Tag 07HC](https://stacks.math.columbia.edu/tag/07HC) in the Stacks Project.
 
-**`Crystalline.surjectiveDividedPowerPolynomialMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PolynomialPresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PolynomialPresentation.lean#L57). The attribute's comment: “surjection”.
+**`Crystalline.surjectiveDividedPowerPolynomialMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PolynomialPresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PolynomialPresentation.lean#L57). The attribute's comment: “surjection”.
 
 > The divided power polynomial ring maps onto the envelope of an ideal generated
 > by the coefficient divided power ideal and the chosen variables.
@@ -125,7 +125,7 @@ public noncomputable def surjectiveDividedPowerPolynomialMap
         Function.Surjective ψ }
 ```
 
-**`Crystalline.ker_surjectiveDividedPowerPolynomialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PresentationKernel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PresentationKernel.lean#L95). The attribute's comment: “kernel”.
+**`Crystalline.ker_surjectiveDividedPowerPolynomialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PresentationKernel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/PresentationKernel.lean#L95). The attribute's comment: “kernel”.
 
 > The kernel of the surjection from the divided power polynomial algebra to the divided
 > power envelope is generated by variable relations and divided powers of linear relations.
@@ -144,7 +144,7 @@ public theorem ker_surjectiveDividedPowerPolynomialMap
 
 [Tag 07KE](https://stacks.math.columbia.edu/tag/07KE) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelopeAddVariables`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/AddVariables.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/AddVariables.lean#L76).
+**`Crystalline.dividedPowerEnvelopeAddVariables`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/AddVariables.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/AddVariables.lean#L76).
 
 > The divided power envelope of a polynomial algebra along the extended ideal and the
 > variables is canonically the divided power polynomial algebra over the original envelope.
@@ -172,7 +172,7 @@ public theorem dividedPowerEnvelopeAddVariables (f : A →+* B) (J : Ideal B)
 
 [Tag 07HD](https://stacks.math.columbia.edu/tag/07HD) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/EnvelopeBaseChange.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/EnvelopeBaseChange.lean#L306).
+**`Crystalline.dividedPowerEnvelope_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/EnvelopeBaseChange.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/EnvelopeBaseChange.lean#L306).
 
 > A divided power envelope commutes with base change when the base change is flat modulo the
 > base divided power ideal and its first Tor with that quotient vanishes.
@@ -199,7 +199,7 @@ public theorem dividedPowerEnvelope_baseChange [Algebra B B'] (f : A →+* B) (J
 
 [Tag 07HE](https://stacks.math.columbia.edu/tag/07HE) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope_baseChange_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/BaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/BaseChange.lean#L53).
+**`Crystalline.dividedPowerEnvelope_baseChange_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/BaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/BaseChange.lean#L53).
 
 > A divided power envelope commutes with a flat extension modulo the divided
 > power ideals, provided the target ideal is the extension of the source ideal
@@ -230,7 +230,7 @@ public theorem dividedPowerEnvelope_baseChange_of_flat_quotient
 
 [Tag 07HF](https://stacks.math.columbia.edu/tag/07HF) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope_tensor_equiv_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Support/EnvelopeBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Support/EnvelopeBaseChange.lean#L159).
+**`Crystalline.dividedPowerEnvelope_tensor_equiv_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Support/EnvelopeBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Support/EnvelopeBaseChange.lean#L159).
 
 > The quotient presentation of a divided power envelope after extension of its
 > coefficient ring. The formula on pure tensors identifies the displayed equivalence
@@ -264,4 +264,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.2, Tag 07H7](https://stacks.math.columbia.edu/tag/07H7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

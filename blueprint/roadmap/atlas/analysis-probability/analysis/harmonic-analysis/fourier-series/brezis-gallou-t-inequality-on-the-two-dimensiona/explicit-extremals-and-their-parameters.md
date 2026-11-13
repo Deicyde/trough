@@ -8,7 +8,7 @@ proof: formalized
 
 # Explicit extremals and their parameters
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html).
 
 ## Finite extremal parameters
 
@@ -18,7 +18,7 @@ $\mu < -1$ or $\mu > 0$.
 The endpoints $\mu = -1$ and $\mu = \infty$ are not finite extremal parameters; the extremal
 parameter domain adds them separately.
 
-Formalized by `TorusSobolev.FiniteExtremalParameter`, an abbreviation declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#finite-extremal-parameter).
+Formalized by `TorusSobolev.FiniteExtremalParameter`, an abbreviation declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#finite-extremal-parameter).
 
 ## Extremal parameters
 
@@ -30,7 +30,7 @@ standing for the endpoint $\mu = \infty$.
 Together these cover the parameter domain $(-\infty, -1] \cup (0, \infty]$, the two endpoints
 being represented by limiting coefficient families rather than by values of $\mu$.
 
-Formalized by `TorusSobolev.ExtremalParameter`, an inductive type declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#extremal-parameter).
+Formalized by `TorusSobolev.ExtremalParameter`, an inductive type declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#extremal-parameter).
 
 ## Kernel-admissible extremal parameters
 
@@ -42,7 +42,7 @@ $|k|^2 \neq 0$ for every nonzero frequency $k$.
 
 These conditions make every reciprocal in the extremal coefficients well defined.
 
-Formalized by `TorusSobolev.KernelAdmissible`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#kernel-admissible).
+Formalized by `TorusSobolev.KernelAdmissible`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#kernel-admissible).
 
 ## Extremal coefficients
 
@@ -55,7 +55,7 @@ the biharmonic parameter, then $c_p(0) = 0$ and $c_p(k) = 2\pi / |k|^4$ for $k \
 
 The values are real and do not depend on the proof of admissibility.
 
-Formalized by `TorusSobolev.extremalCoefficient`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#extremal-coefficient).
+Formalized by `TorusSobolev.extremalCoefficient`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#extremal-coefficient).
 
 ## Explicit extremals
 
@@ -68,7 +68,7 @@ for every $k \in \mathbb{Z}^2$, and
 $u(x) = \frac{1}{2\pi} \sum_{k \in \mathbb{Z}^2} a \, c_p(k) \, e^{i k \cdot x}$ for every
 $x \in \mathbb{T}$.
 
-Formalized by `TorusSobolev.IsExplicitExtremal`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#is-explicit-extremal).
+Formalized by `TorusSobolev.IsExplicitExtremal`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#is-explicit-extremal).
 
 ## Same extremal orbit
 
@@ -77,7 +77,7 @@ $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$ lie in the same extremal orbit when
 real number $a \neq 0$ and a point $x_0 \in \mathbb{T}$ such that $v(x) = a \, u(x - x_0)$ for
 every $x \in \mathbb{T}$.
 
-Formalized by `TorusSobolev.SameExtremalOrbit`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#same-extremal-orbit).
+Formalized by `TorusSobolev.SameExtremalOrbit`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/Extremals.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html#same-extremal-orbit).
 
 ## Depends on
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Explicit extremals and their parameters](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/explicit-extremals-and-their-parameters)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.14 Formally unramified morphisms
 
-Section 76.14 of the Stacks Project, [Tag 04G6](https://stacks.math.columbia.edu/tag/04G6). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.14 of the Stacks Project, [Tag 04G6](https://stacks.math.columbia.edu/tag/04G6). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04G7, a definition
 
 [Tag 04G7](https://stacks.math.columbia.edu/tag/04G7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallyUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L90). The attribute's comment: “formally unramified morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally unramified”.
+**`AlgebraicGeometry.Space.FormallyUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L90). The attribute's comment: “formally unramified morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally unramified”.
 
 > **Stacks 049S, part (3).** Every commutative affine square against a
 > square-zero closed immersion admits at most one lift.
@@ -28,7 +28,7 @@ public abbrev FormallyUnramified {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type v} (
 
 [Tag 04G8](https://stacks.math.columbia.edu/tag/04G8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_iff_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean#L102). The attribute's comment: “equivalence of (1) and (2)”.
+**`AlgebraicGeometry.Space.formallyUnramified_iff_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean#L102). The attribute's comment: “equivalence of (1) and (2)”.
 
 > **Stacks 04G8, the equivalence of (1) and (2).** A morphism of algebraic spaces over `S` is
 > formally unramified exactly when the morphism of schemes underlying every commuting square of
@@ -43,7 +43,7 @@ public theorem formallyUnramified_iff_etaleCharts
         (@_root_.AlgebraicGeometry.FormallyUnramified.{u} : MorphismProperty Scheme.{u}) f
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_iff_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean#L119). The attribute's comment: “equivalence of (1) and (3)”.
+**`AlgebraicGeometry.Space.formallyUnramified_iff_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedChartCriterion.lean#L119). The attribute's comment: “equivalence of (1) and (3)”.
 
 > **Stacks 04G8, the equivalence of (1) and (3).** A morphism of algebraic spaces over `S` is
 > formally unramified exactly when there is one commuting square of étale scheme charts, both
@@ -68,7 +68,7 @@ public theorem formallyUnramified_iff_surjectiveEtaleChart
           ((BigFppfOver.toScheme B S hS).map ψ)
 ```
 
-**`AlgebraicGeometry.Space.holdsOnEveryEtaleChart_of_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean#L561). The attribute's comment: “condition (1) implies condition (2)”.
+**`AlgebraicGeometry.Space.holdsOnEveryEtaleChart_of_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean#L561). The attribute's comment: “condition (1) implies condition (2)”.
 
 > **Stacks 04G8, condition (1) implies condition (2).** A formally unramified morphism of
 > presheaves on the big fppf site of `S` is formally unramified on every commuting square of
@@ -84,7 +84,7 @@ theorem holdsOnEveryEtaleChart_of_formallyUnramified (B : BigFppfSite.{u}) (S : 
       (@_root_.AlgebraicGeometry.FormallyUnramified.{u} : MorphismProperty Scheme.{u}) f
 ```
 
-**`AlgebraicGeometry.Space.exists_surjectiveEtaleChart_of_holdsOnEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean#L578). The attribute's comment: “condition (2) implies condition (3)”.
+**`AlgebraicGeometry.Space.exists_surjectiveEtaleChart_of_holdsOnEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleCharts.lean#L578). The attribute's comment: “condition (2) implies condition (3)”.
 
 > **Stacks 04G8, condition (2) implies condition (3).** If a morphism of algebraic spaces
 > over `S` is formally unramified on every commuting square of étale scheme charts, then
@@ -114,7 +114,7 @@ theorem exists_surjectiveEtaleChart_of_holdsOnEveryEtaleChart (B : BigFppfSite.{
         ((BigFppfOver.toScheme B S hS).map h)
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleDescent.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleDescent.lean#L491). The attribute's comment: “condition (3) implies condition (1)”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleDescent.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedEtaleDescent.lean#L491). The attribute's comment: “condition (3) implies condition (1)”.
 
 > **Stacks 04G8, condition (3) implies condition (1).** If a morphism `f` out of an algebraic
 > space over `S` has one commuting square of surjective étale scheme charts whose chart morphism is
@@ -152,7 +152,7 @@ theorem formallyUnramified_of_surjectiveEtaleChart (B : BigFppfSite.{u}) (S : Sc
 
 [Tag 05ZY](https://stacks.math.columbia.edu/tag/05ZY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallyUnramified.lifts_unique_of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedThickenings.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedThickenings.lean#L132).
+**`AlgebraicGeometry.Space.FormallyUnramified.lifts_unique_of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedThickenings.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedThickenings.lean#L132).
 
 > **Stacks 05ZY.** A formally unramified morphism `f : X ⟶ Y` of algebraic spaces over `S`
 > admits at most one dotted arrow in a solid square over a first-order thickening `T ⊂ T'` of
@@ -176,13 +176,13 @@ theorem FormallyUnramified.lifts_unique_of_firstOrderThickening
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.formallyUnramified_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L64) (StacksFrontier).
+- [`AlgebraicGeometry.Space.formallyUnramified_comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L64) (StacksFrontier).
 
 ## Tag 0600, a lemma
 
 [Tag 0600](https://stacks.math.columbia.edu/tag/0600) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean#L53). References: EGA IV (17.1.3), “more general”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean#L53). References: EGA IV (17.1.3), “more general”.
 
 > **Stacks 0600.** A base change of a formally unramified morphism of algebraic spaces is
 > formally unramified: in a cartesian square with `f` formally unramified, the opposite side `p`
@@ -205,7 +205,7 @@ theorem formallyUnramified_of_isPullback
 
 [Tag 04G9](https://stacks.math.columbia.edu/tag/04G9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_iff_isZero_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedSheafOfDifferentials.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedSheafOfDifferentials.lean#L268). References: EGA IV (17.2.1), “more general”.
+**`AlgebraicGeometry.Space.formallyUnramified_iff_isZero_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedSheafOfDifferentials.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedSheafOfDifferentials.lean#L268). References: EGA IV (17.2.1), “more general”.
 
 > **Stacks 04G9.** A morphism `f : X ⟶ Y` of algebraic spaces over `S` is formally unramified
 > exactly when its sheaf of differentials `Ω_{X/Y}` is a zero object.
@@ -227,7 +227,7 @@ theorem formallyUnramified_iff_isZero_sheafOfDifferentials {X Y : AlgebraicSpace
 
 [Tag 04GA](https://stacks.math.columbia.edu/tag/04GA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_tfae_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedSheafOfDifferentials.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedSheafOfDifferentials.lean#L111).
+**`AlgebraicGeometry.Space.isUnramified_tfae_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedSheafOfDifferentials.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedSheafOfDifferentials.lean#L111).
 
 > **Stacks 04GA.**  For a morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S` the
 > following are equivalent:
@@ -252,7 +252,7 @@ theorem isUnramified_tfae_sheafOfDifferentials (f : X ⟶ Y) :
 
 [Tag 05W6](https://stacks.math.columbia.edu/tag/05W6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L243). The attribute's comment: “separated and locally quasi-finite, from condition (3)”.
+**`AlgebraicGeometry.Space.isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L243). The attribute's comment: “separated and locally quasi-finite, from condition (3)”.
 
 > **Stacks 0463.** A monomorphism of algebraic spaces over `S` which is locally of finite type
 > is separated and locally quasi-finite.
@@ -273,7 +273,7 @@ theorem isSeparated_isLocallyQuasiFinite_of_isLocallyOfFiniteType_mono (f : X �
     IsSeparated B S hS f ∧ IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_mono_iff_isUnramified_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L261). The attribute's comment: “conditions (1) and (2)”. References: EGA IV (17.2.6), “(b) => (a)”.
+**`AlgebraicGeometry.Space.isUnramified_mono_iff_isUnramified_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L261). The attribute's comment: “conditions (1) and (2)”. References: EGA IV (17.2.6), “(b) => (a)”.
 
 > **Stacks 05W6, conditions (1) and (2).** A morphism of algebraic spaces over `S` is
 > unramified and a monomorphism if and only if it is unramified and universally injective.
@@ -291,7 +291,7 @@ theorem isUnramified_mono_iff_isUnramified_universallyInjective
       (IsUnramified B S hS f ∧ UniversallyInjective B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_mono_iff_universallyInjective_locallyOfFiniteType_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L287). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.Space.isUnramified_mono_iff_universallyInjective_locallyOfFiniteType_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoCriteria.lean#L287). The attribute's comment: “conditions (1) and (4)”.
 
 > **Stacks 05W6, conditions (1) and (4).** A morphism of algebraic spaces over `S` is
 > unramified and a monomorphism if and only if it is universally injective, locally of finite
@@ -318,7 +318,7 @@ theorem isUnramified_mono_iff_universallyInjective_locallyOfFiniteType_formallyU
         FormallyUnramified (B := B) (S := S) (hS := hS) f)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_mono_iff_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonomorphism.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonomorphism.lean#L202). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isUnramified_mono_iff_isLocallyOfFiniteType_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonomorphism.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonomorphism.lean#L202). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 05W6, conditions (1) and (3).** A morphism of algebraic spaces over `S` is
 > unramified and a monomorphism if and only if it is locally of finite type and a monomorphism.
@@ -329,7 +329,7 @@ theorem isUnramified_mono_iff_isLocallyOfFiniteType_mono
     (IsUnramified B S hS f ∧ Mono f) ↔ (IsLocallyOfFiniteType B S hS f ∧ Mono f)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_mono_tfae_and_relativelyRepresentable_isSeparated_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoRepresentable.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoRepresentable.lean#L89).
+**`AlgebraicGeometry.Space.isUnramified_mono_tfae_and_relativelyRepresentable_isSeparated_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoRepresentable.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedMonoRepresentable.lean#L89).
 
 > **Stacks 05W6.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`. The
 > following are equivalent:
@@ -363,7 +363,7 @@ theorem isUnramified_mono_tfae_and_relativelyRepresentable_isSeparated_isLocally
 
 [Tag 05W8](https://stacks.math.columbia.edu/tag/05W8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedImmersion_conditions_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCriteria.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCriteria.lean#L153). References: SGA 3 V (4.1.3).
+**`AlgebraicGeometry.Space.closedImmersion_conditions_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCriteria.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCriteria.lean#L153). References: SGA 3 V (4.1.3).
 
 > The five equivalent conditions characterizing closed immersions of algebraic spaces.
 
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.14, Tag 04G6](https://stacks.math.columbia.edu/tag/04G6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

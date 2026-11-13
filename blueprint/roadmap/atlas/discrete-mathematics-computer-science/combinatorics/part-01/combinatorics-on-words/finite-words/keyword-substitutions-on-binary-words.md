@@ -7,7 +7,7 @@ statement: formalized
 
 # Keyword substitutions on binary words
 
-21 results, 12 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html).
+21 results, 12 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html).
 
 ## Applicability of a keyword
 
@@ -20,7 +20,7 @@ $u_i u_{i+1} \cdots u_{i+m}$ of $u$ equals $a$ or the letterwise negation of $a$
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (definition of substitutions involving the keyword).
 
-Formalized by `MetaMathlibExt.KeywordApplicable`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-applicable).
+Formalized by `MetaMathlibExt.KeywordApplicable`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-applicable).
 
 ## Simple map
 
@@ -38,7 +38,7 @@ numbering.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (simple maps).
 
-Formalized by `MetaMathlibExt.keywordSimpleMap`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map).
+Formalized by `MetaMathlibExt.keywordSimpleMap`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map).
 
 ## A simple map that is not applicable is the identity
 
@@ -50,7 +50,7 @@ $u$ unchanged: $\varphi_i(u) = u$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (simple maps).
 
-Formalized by `MetaMathlibExt.keywordSimpleMap_of_not_applicable`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-of-not-applicable).
+Formalized by `MetaMathlibExt.keywordSimpleMap_of_not_applicable`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-of-not-applicable).
 
 ## An applicable simple map negates its window
 
@@ -64,7 +64,7 @@ $i \le j \le i + m$, and $\varphi_i(u)_j = u_j$ otherwise.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (simple maps).
 
-Formalized by `MetaMathlibExt.keywordSimpleMap_apply_of_applicable`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-apply-of-applicable).
+Formalized by `MetaMathlibExt.keywordSimpleMap_apply_of_applicable`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-apply-of-applicable).
 
 ## Keyword equivalence of binary words
 
@@ -76,7 +76,7 @@ of simple maps of $a$, possibly the empty composition, sends $u$ to $v$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (equivalence relation induced by the keyword).
 
-Formalized by `MetaMathlibExt.KeywordEquiv`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv).
+Formalized by `MetaMathlibExt.KeywordEquiv`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv).
 
 ## Reflexivity of keyword equivalence
 
@@ -87,7 +87,7 @@ $u$, we have $u \sim_a u$: the empty composition of simple maps sends $u$ to its
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.1 (equivalence relation induced by the keyword).
 
-Formalized by `MetaMathlibExt.keywordEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv-refl).
+Formalized by `MetaMathlibExt.keywordEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv-refl).
 
 ## Substitution graph
 
@@ -103,7 +103,7 @@ the letterwise negation of $a$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 3.2 (graph structure within equivalence classes).
 
-Formalized by `MetaMathlibExt.keywordGraph`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph).
+Formalized by `MetaMathlibExt.keywordGraph`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph).
 
 ## Adjacency in the keyword substitution graph
 
@@ -116,7 +116,7 @@ to $v$ or sends $v$ to $u$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 3.2 (graph structure within equivalence classes).
 
-Formalized by `MetaMathlibExt.keywordGraph_adj`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-adj).
+Formalized by `MetaMathlibExt.keywordGraph_adj`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-adj).
 
 ## Action of a list of simple maps
 
@@ -132,7 +132,7 @@ The paper writes this list as $(\varphi_{j_r}, \dots, \varphi_{j_1})$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.2 (action by lists of simple maps).
 
-Formalized by `MetaMathlibExt.keywordListApply`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-list-apply).
+Formalized by `MetaMathlibExt.keywordListApply`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-list-apply).
 
 ## Lists of simple maps acting completely
 
@@ -146,7 +146,7 @@ $1 \le q \le r$. In particular the empty list acts completely on every word.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.2 (action by lists of simple maps).
 
-Formalized by `MetaMathlibExt.KeywordActsCompletely`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-acts-completely).
+Formalized by `MetaMathlibExt.KeywordActsCompletely`, a definition declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-acts-completely).
 
 ## The empty list of simple maps acts trivially
 
@@ -157,7 +157,7 @@ $u$, applying the empty list of simple maps of $a$ to $u$ returns $u$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.2 (action by lists of simple maps).
 
-Formalized by `MetaMathlibExt.keywordListApply_nil`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-list-apply-nil).
+Formalized by `MetaMathlibExt.keywordListApply_nil`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-list-apply-nil).
 
 ## Complete action of a one-element list
 
@@ -169,7 +169,7 @@ $\varphi_j$ of $a$ changes $u$, that is, $\varphi_j(u) \ne u$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Section 2.2 (action by lists of simple maps).
 
-Formalized by `MetaMathlibExt.keywordActsCompletely_singleton`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-acts-completely-singleton).
+Formalized by `MetaMathlibExt.keywordActsCompletely_singleton`, a theorem declared in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-acts-completely-singleton).
 
 ## Keyword classes are counted by partial sums of $m$-step Fibonacci numbers
 
@@ -183,7 +183,7 @@ classes of the relation $\sim_a$ on binary words of length $n$ is $F_0 + F_1 + \
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Theorem 1 (`jis-2025-25.6.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.card_quot_keywordEquiv_eq_sum_mStepFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#card-quot-keyword-equiv-eq-sum-m-step-fi).
+Stated but not proved: `MetaMathlibExt.card_quot_keywordEquiv_eq_sum_mStepFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#card-quot-keyword-equiv-eq-sum-m-step-fi).
 
 ## Keyword equivalence is stable under concatenation
 
@@ -196,7 +196,7 @@ $uw \sim_a vw$, and $u \sim_a v$ if and only if $wu \sim_a wv$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Lemma 6 (`jis-2025-25.6.6-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.keywordEquiv_append_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv-append-iff).
+Stated but not proved: `MetaMathlibExt.keywordEquiv_append_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-equiv-append-iff).
 
 ## Parity of the smallest index in a non-commuting list
 
@@ -215,7 +215,7 @@ times in $l$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Lemma 8 (`jis-2025-25.6.6-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.even_count_min_of_keywordActsCompletely` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#even-count-min-of-keyword-acts-completel).
+Stated but not proved: `MetaMathlibExt.even_count_min_of_keywordActsCompletely` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#even-count-min-of-keyword-acts-completel).
 
 ## Recurrence for partial sums of $m$-step Fibonacci numbers
 
@@ -229,7 +229,7 @@ and only if $S_n = 2^n$ for $0 \le n \le m$ and $S_n = 2 S_{n-1} - S_{n-m-1}$ fo
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Lemma 9 (`jis-2025-25.6.6-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.sum_mStepFibonacci_iff_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#sum-m-step-fibonacci-iff-recurrence).
+Stated but not proved: `MetaMathlibExt.sum_mStepFibonacci_iff_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#sum-m-step-fibonacci-iff-recurrence).
 
 ## Keywords with equally many singleton classes
 
@@ -244,7 +244,7 @@ of that suffix.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Proposition 10 (`jis-2025-25.6.6-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.card_singleton_classes_eq_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#card-singleton-classes-eq-iff).
+Stated but not proved: `MetaMathlibExt.card_singleton_classes_eq_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#card-singleton-classes-eq-iff).
 
 ## When two simple maps commute
 
@@ -261,7 +261,7 @@ In the paper's numbering, which counts letters from $1$, the hypothesis reads $i
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Proposition 12 (`jis-2025-25.6.6-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.keywordSimpleMap_comm_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-comm-iff).
+Stated but not proved: `MetaMathlibExt.keywordSimpleMap_comm_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-simple-map-comm-iff).
 
 ## Keyword symmetries of the substitution graph
 
@@ -279,7 +279,7 @@ even positions. The paper states this for $n \ge 1$; it also holds at $n = 0$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Proposition 15 (`jis-2025-25.6.6-prop-15`).
 
-Stated but not proved: `MetaMathlibExt.keywordGraph_neg_rev_seminegation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-neg-rev-seminegation).
+Stated but not proved: `MetaMathlibExt.keywordGraph_neg_rev_seminegation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-neg-rev-seminegation).
 
 ## Intertwining bijections preserve distances in the substitution graph
 
@@ -296,7 +296,7 @@ extended graph distance between $f(u)$ and $f(v)$ in $\mathcal{G}_n^{(b)}$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Lemma 16 (`jis-2025-25.6.6-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.keywordGraph_edist_eq_of_intertwining` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-edist-eq-of-intertwining).
+Stated but not proved: `MetaMathlibExt.keywordGraph_edist_eq_of_intertwining` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-edist-eq-of-intertwining).
 
 ## The substitution graph is bipartite
 
@@ -310,7 +310,7 @@ The paper states this for $n \ge 1$; it also holds at $n = 0$.
 
 - Erik Bates, Blan Morrison, Mason Rogers, Arianna Serafini and Anav Sood, *A New Combinatorial Interpretation of Partial Sums of m-Step Fibonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.6.6, Proposition 17 (`jis-2025-25.6.6-prop-17`).
 
-Stated but not proved: `MetaMathlibExt.keywordGraph_isBipartite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-is-bipartite).
+Stated but not proved: `MetaMathlibExt.keywordGraph_isBipartite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/KeywordSubstitutionClassesWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html#keyword-graph-is-bipartite).
 
 ## Depends on
 
@@ -319,4 +319,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Keyword substitutions on binary words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/keyword-substitutions-on-binary-words)

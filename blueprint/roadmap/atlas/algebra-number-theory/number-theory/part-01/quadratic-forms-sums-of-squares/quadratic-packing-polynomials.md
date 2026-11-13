@@ -7,7 +7,7 @@ statement: formalized
 
 # Quadratic packing polynomials
 
-19 results, 10 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html).
+19 results, 10 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html).
 
 ## Lattice points of a sector
 
@@ -20,7 +20,7 @@ of $\mathbb{R}^2$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 1 (definition of `S(α)` and `I(α)`).
 
-Formalized by `MetaMathlibExt.sectorLatticePoints`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#sector-lattice-points).
+Formalized by `MetaMathlibExt.sectorLatticePoints`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#sector-lattice-points).
 
 ## The origin is a lattice point of every sector
 
@@ -31,7 +31,7 @@ origin $(0, 0)$ lies in the set $I(\alpha)$ of lattice points of the sector of s
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 1 (definition of `I(α)`).
 
-Formalized by `MetaMathlibExt.zero_mem_sectorLatticePoints`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#zero-mem-sector-lattice-points).
+Formalized by `MetaMathlibExt.zero_mem_sectorLatticePoints`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#zero-mem-sector-lattice-points).
 
 ## Quadratic packing polynomial
 
@@ -45,7 +45,7 @@ $\mathbb{N}_0 = \{0, 1, 2, \dots\}$ of natural numbers.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Definition 1.
 
-Formalized by `MetaMathlibExt.IsQuadraticPackingPolynomial`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial).
+Formalized by `MetaMathlibExt.IsQuadraticPackingPolynomial`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial).
 
 ## Quadratic packing polynomials take natural-number values
 
@@ -57,7 +57,7 @@ $P(x, y)$ is a natural number.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Definition 1.
 
-Formalized by `MetaMathlibExt.IsQuadraticPackingPolynomial.exists_nat_eq`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#exists-nat-eq).
+Formalized by `MetaMathlibExt.IsQuadraticPackingPolynomial.exists_nat_eq`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#exists-nat-eq).
 
 ## Staircases of a rational sector
 
@@ -72,7 +72,7 @@ If $m = 0$, the slope $n/m$ is read as $0$ and $l$ as $\gcd(0, n) = n$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 2 (definition of the staircases `J_i`).
 
-Formalized by `MetaMathlibExt.sectorStaircase`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#sector-staircase).
+Formalized by `MetaMathlibExt.sectorStaircase`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#sector-staircase).
 
 ## The origin lies on the zeroth staircase
 
@@ -83,7 +83,7 @@ $(0, 0)$ lies on the staircase $J_0$ of the sector of slope $n/m$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 2 (definition of the staircases `J_i`).
 
-Formalized by `MetaMathlibExt.zero_mem_sectorStaircase_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#zero-mem-sector-staircase-zero).
+Formalized by `MetaMathlibExt.zero_mem_sectorStaircase_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#zero-mem-sector-staircase-zero).
 
 ## First height of a staircase
 
@@ -95,7 +95,7 @@ $J_i$, that is, the height of its first step; it is $0$ if $J_i$ is empty.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 3 (definition of `ȳ_i`).
 
-Formalized by `MetaMathlibExt.staircaseFirstHeight`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#staircase-first-height).
+Formalized by `MetaMathlibExt.staircaseFirstHeight`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#staircase-first-height).
 
 ## The zeroth staircase starts at height zero
 
@@ -107,7 +107,7 @@ lies on $J_0$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 3 (definition of `ȳ_i`).
 
-Formalized by `MetaMathlibExt.staircaseFirstHeight_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#staircase-first-height-zero).
+Formalized by `MetaMathlibExt.staircaseFirstHeight_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#staircase-first-height-zero).
 
 ## Step difference
 
@@ -125,7 +125,7 @@ depend on the base point, which is how the source defines $k$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Section 2 (definition of `k`).
 
-Formalized by `MetaMathlibExt.consecutiveStepDifference`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#consecutive-step-difference).
+Formalized by `MetaMathlibExt.consecutiveStepDifference`, a definition declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#consecutive-step-difference).
 
 ## Step difference of the slope-$12/7$ example
 
@@ -138,7 +138,7 @@ $P(1, 2) - P(0, 0) = 3$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Example 10.
 
-Formalized by `MetaMathlibExt.consecutiveStepDifference_example_twelve_sevenths`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#consecutive-step-difference-example-twel).
+Formalized by `MetaMathlibExt.consecutiveStepDifference_example_twelve_sevenths`, a theorem declared in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#consecutive-step-difference-example-twel).
 
 ## Form of a quadratic packing polynomial on a sector (Gjaldbæk)
 
@@ -155,7 +155,7 @@ In particular $\alpha$ is rational.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_sector_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-sector-form).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_sector_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-sector-form).
 
 ## Stanton's form of a quadratic packing polynomial on a rational sector
 
@@ -173,7 +173,7 @@ $$
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_rational_sector_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-rational-se).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_rational_sector_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-rational-se).
 
 ## The slope-$12/7$ example on the sheared sector
 
@@ -186,7 +186,7 @@ packing polynomial on $\hat I(12/7)$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Example 10 and Figure 3.
 
-Stated but not proved: `MetaMathlibExt.isQuadraticPackingPolynomial_sheared_example_twelve_sevenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial-sheared).
+Stated but not proved: `MetaMathlibExt.isQuadraticPackingPolynomial_sheared_example_twelve_sevenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial-sheared).
 
 ## First step value and sheared form of a quadratic packing polynomial
 
@@ -206,7 +206,7 @@ for every quadratic packing polynomial.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_first_step_value` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-first-step).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_first_step_value` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-first-step).
 
 ## Staircase congruence for quadratic packing polynomials
 
@@ -220,7 +220,7 @@ difference $P(q) - P(p)$ is an integer multiple of $k$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_staircase_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-staircase-c).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_staircase_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-staircase-c).
 
 ## Height of the first step of the k-th staircase
 
@@ -233,7 +233,7 @@ first height of the staircase $J_k$ is $\bar y_k = n/l - 1$.
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_staircaseFirstHeight` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-staircase-f).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_staircaseFirstHeight` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-staircase-f).
 
 ## Sheared criterion for quadratic packing polynomials
 
@@ -253,7 +253,7 @@ The divisibility $n/l \mid l$ is a standing assumption of the source, made expli
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.isQuadraticPackingPolynomial_sheared_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial-sheared-2).
+Stated but not proved: `MetaMathlibExt.isQuadraticPackingPolynomial_sheared_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#is-quadratic-packing-polynomial-sheared-2).
 
 ## Constant term of a quadratic packing polynomial on a rational sector
 
@@ -266,7 +266,7 @@ of $P$ for $m, n$ is a positive integer $k$, then $P(0, 0) = \frac{l^2}{n} (k - 
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_constant_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-constant-te).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_constant_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-constant-te).
 
 ## Step-difference form of a quadratic packing polynomial on a rational sector
 
@@ -281,7 +281,7 @@ and for all real $x, y$ one has $P(x + \frac{m - 1}{n} y, y) =
 
 - Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_necessary_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-necessary-f).
+Stated but not proved: `MetaMathlibExt.quadraticPackingPolynomial_necessary_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticPackingPolynomialsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html#quadratic-packing-polynomial-necessary-f).
 
 ## Depends on
 
@@ -290,4 +290,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Quadratic packing polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/quadratic-packing-polynomials)

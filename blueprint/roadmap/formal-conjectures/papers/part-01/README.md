@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# The Auslander-Reiten conjecture to Gourevitch's series identity
+# Fanelli–Moscardelli conjecture… to Main conjecture on fusible…
 
+- [Fanelli–Moscardelli conjecture on approximate roommates stability](fanelli-moscardelli-conjecture-on-approximate-ro.md)
 - [The Auslander-Reiten conjecture](the-auslander-reiten-conjecture.md)
 - [The Bollobás–Eldridge–Catlin conjecture on graph packing (1978)](the-bollobas-eldridge-catlin-conjecture-on-graph.md)
 - [Decidability of reachability for branching vector addition systems](decidability-of-reachability-for-branching-vecto.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Euclidean Ramsey configurations on a circle](euclidean-ramsey-configurations-on-a-circle.md)
 - [Is a finite locally free group scheme killed by its order?](is-a-finite-locally-free-group-scheme-killed-by.md)
 - [Main conjecture on fusible numbers](main-conjecture-on-fusible-numbers.md)
-- [Gourevitch's series identity](gourevitchs-series-identity.md)

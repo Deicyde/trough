@@ -8,7 +8,7 @@ proof: formalized
 
 # Keith numbers
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html).
 
 ## Keith sequence prefix
 
@@ -21,7 +21,7 @@ This is the recurrence used for Keith numbers.
 
 - Martin Klazar and Florian Luca, *Counting Keith Numbers*, Journal of Integer Sequences 10 (2007), Definition in the introduction.
 
-Formalized by `MetaMathlibExt.keithSequencePrefix`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/KeithNumber.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#keith-sequence-prefix).
+Formalized by `MetaMathlibExt.keithSequencePrefix`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/KeithNumber.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#keith-sequence-prefix).
 
 ## Keith sequence
 
@@ -30,7 +30,7 @@ sequence of $d$ is the sequence $(a_m)_{m \ge 0}$ with $a_m = d_m$ for $m < k$ a
 $a_m = \sum_{i=m-k}^{m-1} a_i$ for $m \ge k$: after the initial entries, each term is the sum of
 the preceding $k$ terms.
 
-Formalized by `MetaMathlibExt.keithSequence`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/KeithNumber.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#keith-sequence).
+Formalized by `MetaMathlibExt.keithSequence`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/KeithNumber.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#keith-sequence).
 
 ## Keith number with given digits
 
@@ -44,7 +44,7 @@ of $d$ indexed from $0$ (so $N$ occurs after the initial digits).
 
 - Martin Klazar and Florian Luca, *Counting Keith Numbers*, Journal of Integer Sequences 10 (2007), Definition in the introduction.
 
-Formalized by `MetaMathlibExt.IsKeithNumberWithDigits`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/KeithNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#is-keith-number-with-digits).
+Formalized by `MetaMathlibExt.IsKeithNumberWithDigits`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/KeithNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#is-keith-number-with-digits).
 
 ## Keith number
 
@@ -58,7 +58,7 @@ sum of the preceding $k$ terms.
 
 - Martin Klazar and Florian Luca, *Counting Keith Numbers*, Journal of Integer Sequences 10 (2007), Definition in the introduction.
 
-Formalized by `MetaMathlibExt.IsKeithNumber`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/KeithNumber.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#is-keith-number).
+Formalized by `MetaMathlibExt.IsKeithNumber`, a definition declared in [MathlibExt/NumberTheory/KeithNumber.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/KeithNumber.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html#is-keith-number).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Keith numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/keith-numbers)

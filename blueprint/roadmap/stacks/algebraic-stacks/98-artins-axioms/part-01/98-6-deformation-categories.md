@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.6 Deformation categories
 
-Section 98.6 of the Stacks Project, [Tag 07WT](https://stacks.math.columbia.edu/tag/07WT). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.6 of the Stacks Project, [Tag 07WT](https://stacks.math.columbia.edu/tag/07WT). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07WU, a lemma
 
 [Tag 07WU](https://stacks.math.columbia.edu/tag/07WU) in the Stacks Project.
 
-**`Deformation.Artin.isDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean, line 1184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean#L1184).
+**`Deformation.Artin.isDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean, line 1184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean#L1184).
 
 > **Stacks Project, Tag 07WU.** The predeformation category of a
 > finite-type field-valued point in a fibred category satisfying (RS) is a
@@ -46,7 +46,7 @@ public theorem isDeformationCategory_predeformationCategory
 
 [Tag 07WV](https://stacks.math.columbia.edu/tag/07WV) in the Stacks Project.
 
-**`Deformation.Artin.schlessingerConditionS1_isomorphismClasses_of_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Basic.lean#L57). The attribute's comment: “condition (S1) for isomorphism classes”.
+**`Deformation.Artin.schlessingerConditionS1_isomorphismClasses_of_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Basic.lean#L57). The attribute's comment: “condition (S1) for isomorphism classes”.
 
 > The functor of isomorphism classes associated to a deformation category
 > satisfies Schlessinger's condition (S1).
@@ -58,11 +58,11 @@ public theorem schlessingerConditionS1_isomorphismClasses_of_isDeformationCatego
       (ArtinianLocalAlgCat.{u, max v w, w} Λ k))
     (h𝓕 : IsDeformationCategory 𝓕.p) :
     SchlessingerConditionS1
-      (CategoryOfElements.π
+      (Functor.Elements.π
         (isomorphismClassesData 𝓕 h𝓕.predeformation.cofibered).classes)
 ```
 
-**`Deformation.Artin.schlessingerConditionS2_isomorphismClasses_of_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Basic.lean#L73). The attribute's comment: “condition (S2) for isomorphism classes”.
+**`Deformation.Artin.schlessingerConditionS2_isomorphismClasses_of_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Basic.lean#L73). The attribute's comment: “condition (S2) for isomorphism classes”.
 
 > The functor of isomorphism classes associated to a deformation category
 > satisfies Schlessinger's condition (S2).
@@ -74,14 +74,14 @@ public theorem schlessingerConditionS2_isomorphismClasses_of_isDeformationCatego
       (ArtinianLocalAlgCat.{u, max v w, w} Λ k))
     (h𝓕 : IsDeformationCategory 𝓕.p) :
     SchlessingerConditionS2
-      (CategoryOfElements.π
+      (Functor.Elements.π
         (isomorphismClassesData 𝓕 h𝓕.predeformation.cofibered).classes)
 ```
 
 Declarations registered for the tag:
 
-- [`Deformation.schlessingerConditionS1_of_satisfiesRS`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L270), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Basic.lean#L47) (StacksFrontier): “condition (S1) for the deformation category”.
-- [`Deformation.schlessingerConditionS2_of_satisfiesRS`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L343), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Basic.lean#L49) (StacksFrontier): “condition (S2) for the deformation category”.
+- [`Deformation.schlessingerConditionS1_of_satisfiesRS`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L270), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Basic.lean#L47) (StacksFrontier): “condition (S1) for the deformation category”.
+- [`Deformation.schlessingerConditionS2_of_satisfiesRS`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L343), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Basic.lean#L49) (StacksFrontier): “condition (S2) for the deformation category”.
 
 ## Depends on
 
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.6, Tag 07WT](https://stacks.math.columbia.edu/tag/07WT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

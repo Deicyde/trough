@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.14 Decent spaces
 
-Section 68.14 of the Stacks Project, [Tag 047Y](https://stacks.math.columbia.edu/tag/047Y). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.14 of the Stacks Project, [Tag 047Y](https://stacks.math.columbia.edu/tag/047Y). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BB6, a lemma
 
 [Tag 0BB6](https://stacks.math.columbia.edu/tag/0BB6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isLocallyNoetherian_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/NoetherianQuasiSeparated.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/NoetherianQuasiSeparated.lean#L574).
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isLocallyNoetherian_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/NoetherianQuasiSeparated.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/NoetherianQuasiSeparated.lean#L574).
 
 > A locally Noetherian decent algebraic space is quasi-separated.
 
@@ -32,7 +32,7 @@ theorem isAbsolutelyQuasiSeparated_of_isLocallyNoetherian_of_isDecentSpace
 
 [Tag 047Z](https://stacks.math.columbia.edu/tag/047Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_subsingleton_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean#L253). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isRepresentable_of_subsingleton_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean#L254). The attribute's comment: “part (1)”.
 
 > **Stacks 047Z, part (1).** A decent algebraic space over `S` whose point set is a singleton
 > is a scheme.
@@ -43,7 +43,7 @@ theorem isRepresentable_of_subsingleton_points (hX : IsAlgebraicSpace B S hS X)
     (hsub : Subsingleton (points B S hS X)) : X.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.exists_iso_yoneda_spec_of_subsingleton_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean#L340). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_iso_yoneda_spec_of_subsingleton_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/SinglePointSpace.lean#L341). The attribute's comment: “part (2)”.
 
 > **Stacks 047Z, part (2).** A reduced decent algebraic space over `S` whose point set is a
 > singleton is the spectrum of a field.
@@ -62,9 +62,13 @@ theorem exists_iso_yoneda_spec_of_subsingleton_points (hX : IsAlgebraicSpace B S
 
 [Tag 049D](https://stacks.math.columbia.edu/tag/049D) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAlgebraicSpace.isRepresentable_of_isRepresentable_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean#L167).
+**`AlgebraicGeometry.IsAlgebraicSpace.isRepresentable_of_isRepresentable_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean#L173).
 
-> An algebraic space over `S` whose reduction is a scheme is a scheme.
+> **Stacks 049D, Stacks 07VU.** Let `S` be a scheme and let `X` be an algebraic space over
+> `S`. If `X_red` is a scheme, then `X` is a scheme.
+>
+> The inclusion of the reduction is a closed immersion bijective on points, so
+> `AlgebraicGeometry.Space.isRepresentable_of_isClosedImmersion_of_bijective` applies.
 
 ```lean
 theorem isRepresentable_of_isRepresentable_reduction {X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
@@ -75,13 +79,13 @@ theorem isRepresentable_of_isRepresentable_reduction {X : (BigFppfOver B S hS)�
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_reduction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean#L337), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean#L363) (StacksFrontier): “an algebraic space whose reduction is a scheme is a scheme, granted the same three hypotheses `h09YA`, `h07SQ` and `hFinitePresentation` that the Stacks 07VU attribute of this declaration records.”.
+- [`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_reduction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean#L329), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijection.lean#L355) (StacksFrontier): “an algebraic space whose reduction is a scheme is a scheme, granted the three hypotheses `h09YA`, `h07SQ` and `hFinitePresentation` of the conditional form of Stacks 07VT.”.
 
 ## Tag 07U5, a lemma
 
 [Tag 07U5](https://stacks.math.columbia.edu/tag/07U5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_singleton_class_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean#L278). The attribute's comment: “with decency read as condition (alpha) of Stacks 03JX”.
+**`AlgebraicGeometry.Space.isClosed_singleton_class_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean#L278). The attribute's comment: “with decency read as condition (alpha) of Stacks 03JX”.
 
 > Let `X` be an algebraic space over a scheme `S` above every point of which every étale
 > chart of `X` by an affine scheme has a finite fibre, which is condition `(α)` of Stacks 03JX —
@@ -106,7 +110,7 @@ theorem isClosed_singleton_class_of_isAlgebraic_residueField
 
 [Tag 08AL](https://stacks.math.columbia.edu/tag/08AL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_fieldMorphism_of_moduleFinite_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean#L313). The attribute's comment: “finite morphism”.
+**`AlgebraicGeometry.Space.isFinite_fieldMorphism_of_moduleFinite_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean#L313). The attribute's comment: “finite morphism”.
 
 > **Stacks 08AL, the finite case.** Let `X` be a decent algebraic space over a scheme `S` and
 > let `p` be a field-valued point of `X` with field of definition `k`, so a commutative diagram
@@ -122,7 +126,7 @@ theorem isFinite_fieldMorphism_of_moduleFinite_residueField (hX : IsAlgebraicSpa
     IsFinite B S hS (fieldMorphism B S hS X p)
 ```
 
-**`AlgebraicGeometry.Space.isClosedImmersion_fieldMorphism_of_isIso_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean#L341). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.Space.isClosedImmersion_fieldMorphism_of_isIso_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteFieldValuedPoint.lean#L341). The attribute's comment: “closed immersion”.
 
 > **Stacks 08AL, the closed-immersion case.** Let `X` be a decent algebraic space over a
 > scheme `S` and let `p` be a field-valued point of `X` with field of definition `k`, so a
@@ -142,7 +146,7 @@ theorem isClosedImmersion_fieldMorphism_of_isIso_residueField (hX : IsAlgebraicS
 
 [Tag 0AHB](https://stacks.math.columbia.edu/tag/0AHB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_fieldValuedPoint_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean#L504).
+**`AlgebraicGeometry.Space.exists_fieldValuedPoint_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ClosedPoints.lean#L504).
 
 > A closed point of a decent algebraic space `X` over a scheme `S` is represented by a closed
 > immersion from the spectrum of a field: there is a field-valued point of `X` whose class is the
@@ -164,4 +168,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.14, Tag 047Y](https://stacks.math.columbia.edu/tag/047Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

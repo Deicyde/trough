@@ -8,21 +8,21 @@ proof: formalized
 
 # Restricted Gaussian partitions
 
-13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html).
+13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html).
 
 ## Gaussian partition
 
 A Gaussian partition is represented by its list of subspace
 dimensions, which is a nonincreasing list of natural numbers.
 
-Formalized by `MetaMathlibExt.GaussianPartition`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#gaussian-partition).
+Formalized by `MetaMathlibExt.GaussianPartition`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#gaussian-partition).
 
 ## Block
 
 A block is a pair $(d, m)$ of natural numbers, read as a part size $d$ of an integer
 partition together with its multiplicity $m$. No condition is imposed on a single block.
 
-Formalized by `MetaMathlibExt.Block`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#block).
+Formalized by `MetaMathlibExt.Block`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#block).
 
 ## Branch step
 
@@ -30,7 +30,7 @@ A branch step is a triple $(a, b, c)$ of natural numbers. It describes one
 simultaneous split level: for the ambient parameter $q$, $c$ copies of the parent dimension
 $a + b$ become $c$ copies of $a$ and $c q^a$ copies of $b$.
 
-Formalized by `MetaMathlibExt.BranchStep`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-step).
+Formalized by `MetaMathlibExt.BranchStep`, a structure declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-step).
 
 ## Basic block multiplicity
 
@@ -39,7 +39,7 @@ $(d_0, m_0), \dots, (d_{k-1}, m_{k-1})$ a list of blocks, and put $p_i = \sum_{j
 The basic multiplicity of block $i$ is $N_i = \sum_{j=0}^{m_i - 1} q^{p_i + j d_i}$ when $i < k$,
 and $N_i = 0$ when $i \ge k$.
 
-Formalized by `MetaMathlibExt.basicCount`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#basic-count).
+Formalized by `MetaMathlibExt.basicCount`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#basic-count).
 
 ## First-split exponent
 
@@ -48,7 +48,7 @@ put $p_i = \sum_{j < i} m_j d_j$. The first-split exponent of block $i$ is
 $u_i = p_i + (m_i - 1) d_i$ when $i < k$, where $m_i - 1$ is taken to be $0$ if $m_i = 0$, and
 $u_i = 0$ when $i \ge k$.
 
-Formalized by `MetaMathlibExt.branchBoundExp`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-bound-exp).
+Formalized by `MetaMathlibExt.branchBoundExp`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-bound-exp).
 
 ## Removing the first occurrences of an entry
 
@@ -59,7 +59,7 @@ of entries different from $x$ that come before the $c$-th entry equal to $x$, in
 $l$, and the part of $l$ after that entry. If $l$ has fewer than $c$ entries equal to $x$, there
 is no result.
 
-Formalized by `MetaMathlibExt.removeFirstNPos`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#remove-first-npos).
+Formalized by `MetaMathlibExt.removeFirstNPos`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#remove-first-npos).
 
 ## Split replacement in a dimension list
 
@@ -72,7 +72,7 @@ follow in their original order. For $c = 0$ the list is unchanged.
 
 No sorting is performed.
 
-Formalized by `MetaMathlibExt.applySplit`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#apply-split).
+Formalized by `MetaMathlibExt.applySplit`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#apply-split).
 
 ## Final dimensions of a block
 
@@ -85,7 +85,7 @@ $s_t = (a_t, b_t, c_t)$, which replaces $c_t$ copies of $a_t + b_t$ by $c_t$ cop
 $c_t q^{a_t}$ copies of $b_t$. It is undefined when $C$ has no entry at index $i$ or when one of
 these split replacements is undefined.
 
-Formalized by `MetaMathlibExt.blockFinalDims`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#block-final-dims).
+Formalized by `MetaMathlibExt.blockFinalDims`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#block-final-dims).
 
 ## Stage segments of a restricted Gaussian partition
 
@@ -105,7 +105,7 @@ segment of block $i$ if $h = i$ (all steps of $C_i$ if it has at most $k + 1$, a
 is no chain $C_i$); and the basic segment of block $h$ if $h > i$. They are undefined if $F_h$ is
 missing for some block $h < i$ or one of these steps fails.
 
-Formalized by `MetaMathlibExt.stageSegments`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#stage-segments).
+Formalized by `MetaMathlibExt.stageSegments`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#stage-segments).
 
 ## Adjacently valid chain
 
@@ -115,7 +115,7 @@ $1 \le j < r$ we have $a_{j+1} + b_{j+1} = a_j$, $1 \le b_{j+1} \le a_{j+1}$ and
 $1 \le c_{j+1} \le c_j$. Only consecutive steps are related, and nothing is required of the first
 step alone; in particular every chain with at most one step is adjacently valid.
 
-Formalized by `MetaMathlibExt.ChainAdjValid`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#chain-adj-valid).
+Formalized by `MetaMathlibExt.ChainAdjValid`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#chain-adj-valid).
 
 ## Valid branch
 
@@ -127,7 +127,7 @@ $r \ge 1$, the first step satisfies $1 \le b_1 \le a_1$, $a_1 + b_1 = d_i$ and
 $1 \le c_1 \le q^{u_i} - 1$ (subtraction truncated at $0$), $N_i \ne 1$, and the chain is
 adjacently valid.
 
-Formalized by `MetaMathlibExt.BranchValid`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-valid).
+Formalized by `MetaMathlibExt.BranchValid`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#branch-valid).
 
 ## Restricted Gaussian partition
 
@@ -157,7 +157,7 @@ concatenation of $F_1, \dots, F_{i-1}$, the result of applying the first $k + 1$
 to the basic segment of block $i$, and the basic segments of blocks $i + 1, \dots, \ell$ is
 nonincreasing. Finally, the dimension list of $G$ is $F_1 \cdots F_\ell$.
 
-Formalized by `MetaMathlibExt.IsRestrictedGaussianPartition`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#is-restricted-gaussian-partition).
+Formalized by `MetaMathlibExt.IsRestrictedGaussianPartition`, a definition declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#is-restricted-gaussian-partition).
 
 ## Basic ancestors are restricted
 
@@ -171,7 +171,7 @@ restricted Gaussian partition for $q$ and $n$.
 
 The witness realizes every block with an empty branch.
 
-Formalized by `MetaMathlibExt.basic_ancestor_is_restricted`, a theorem declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#basic-ancestor-is-restricted).
+Formalized by `MetaMathlibExt.basic_ancestor_is_restricted`, a theorem declared in [MathlibExt/Combinatorics/RestrictedGaussianPartition.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RestrictedGaussianPartition.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html#basic-ancestor-is-restricted).
 
 ## Depends on
 
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Restricted Gaussian partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/restricted-gaussian-partitions)

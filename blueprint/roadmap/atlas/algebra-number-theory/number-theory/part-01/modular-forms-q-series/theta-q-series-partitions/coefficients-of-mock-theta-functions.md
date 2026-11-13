@@ -7,7 +7,7 @@ statement: formalized
 
 # Coefficients of mock theta functions
 
-22 results, 8 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html).
+22 results, 8 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html).
 
 ## The eighth-order mock theta function $v(q)$
 
@@ -24,7 +24,7 @@ with $n \le m$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (4).
 
-Formalized by `MetaMathlibExt.mockThetaV`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v).
+Formalized by `MetaMathlibExt.mockThetaV`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v).
 
 ## The sixth-order mock theta function $\sigma(q)$
 
@@ -40,7 +40,7 @@ summands with $n \le m$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (2).
 
-Formalized by `MetaMathlibExt.mockThetaSigma`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma).
+Formalized by `MetaMathlibExt.mockThetaSigma`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma).
 
 ## The sixth-order mock theta function $\lambda$
 
@@ -59,7 +59,7 @@ $n \le m$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (3).
 
-Formalized by `MetaMathlibExt.mockThetaLambda`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda).
+Formalized by `MetaMathlibExt.mockThetaLambda`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda).
 
 ## First coefficients of the mock theta function $v$
 
@@ -71,7 +71,7 @@ $P_v(0) = 0$ and $P_v(1) = 1$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (4).
 
-Formalized by `MetaMathlibExt.coeff_mockThetaV_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-v-zero-one).
+Formalized by `MetaMathlibExt.coeff_mockThetaV_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-v-zero-one).
 
 ## First coefficients of the mock theta function $\sigma$
 
@@ -83,7 +83,7 @@ Then $P_\sigma(0) = 0$ and $P_\sigma(1) = 1$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (2).
 
-Formalized by `MetaMathlibExt.coeff_mockThetaSigma_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-sigma-zero-one).
+Formalized by `MetaMathlibExt.coeff_mockThetaSigma_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-sigma-zero-one).
 
 ## First coefficients of the mock theta function $\lambda$
 
@@ -95,7 +95,7 @@ Then $P_\lambda(0) = 1$ and $P_\lambda(1) = -1$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (3).
 
-Formalized by `MetaMathlibExt.coeff_mockThetaLambda_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-lambda-zero-one).
+Formalized by `MetaMathlibExt.coeff_mockThetaLambda_zero_one`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-mock-theta-lambda-zero-one).
 
 ## Ramanujan's theta function at monomial arguments
 
@@ -115,7 +115,7 @@ $(q; q)_\infty = \prod_{k \ge 1} (1 - q^k)$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Section 2 (definition of `f(c, d)`, Equations (10) and (11)).
 
-Formalized by `MetaMathlibExt.ramanujanThetaMonomial`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#ramanujan-theta-monomial).
+Formalized by `MetaMathlibExt.ramanujanThetaMonomial`, a definition declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#ramanujan-theta-monomial).
 
 ## First coefficients of Ramanujan's theta function $\psi$
 
@@ -128,7 +128,7 @@ are $1$, $1$, $0$, $1$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Equation (10).
 
-Formalized by `MetaMathlibExt.coeff_ramanujanThetaMonomial_one_one_three`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-ramanujan-theta-monomial-one-one-t).
+Formalized by `MetaMathlibExt.coeff_ramanujanThetaMonomial_one_one_three`, a theorem declared in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#coeff-ramanujan-theta-monomial-one-one-t).
 
 ## The p-dissection of Ramanujan's psi function
 
@@ -144,7 +144,7 @@ The paper quotes this from Cui and Gu, Theorem 2.1.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.ramanujanPsi_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#ramanujan-psi-p-dissection).
+Stated but not proved: `MetaMathlibExt.ramanujanPsi_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#ramanujan-psi-p-dissection).
 
 ## The $p$-dissection of $f_1$
 
@@ -167,7 +167,7 @@ $-(p-1)/2 \le t \le (p-1)/2$ and $t \ne c$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.eulerProduct_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#euler-product-p-dissection).
+Stated but not proved: `MetaMathlibExt.eulerProduct_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#euler-product-p-dissection).
 
 ## The $p$-dissection of $f_1^3$
 
@@ -187,7 +187,7 @@ $0 \le k \le p - 1$ and $k \ne (p-1)/2$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.eulerProduct_cube_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#euler-product-cube-p-dissection).
+Stated but not proved: `MetaMathlibExt.eulerProduct_cube_p_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#euler-product-cube-p-dissection).
 
 ## Generating function for the odd-indexed coefficients of $v(q)$
 
@@ -201,7 +201,7 @@ $\sum_{n \ge 0} P_v(2n+1) q^n = f_4^3 / (f_1 f_2)$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-odd-generating-function).
+Stated but not proved: `MetaMathlibExt.mockThetaV_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-odd-generating-function).
 
 ## The coefficients of $q^{6n+5}$ in $v(q)$ are divisible by 3
 
@@ -213,7 +213,7 @@ $P_v(6n+5) \equiv 0 \pmod 3$ for every $n \ge 0$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 2 (i).
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_coeff_six_mul_add_five_mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-coeff-six-mul-add-five-mod).
+Stated but not proved: `MetaMathlibExt.mockThetaV_coeff_six_mul_add_five_mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-coeff-six-mul-add-five-mod).
 
 ## Infinite family of congruences modulo 2 for $v(q)$
 
@@ -235,7 +235,7 @@ where $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, so that $\psi(q) \psi(q^2) = f_2 
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 2 (ii), Equations (21) and (22).
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_congruences_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-congruences-mod-two).
+Stated but not proved: `MetaMathlibExt.mockThetaV_congruences_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-congruences-mod-two).
 
 ## Infinite family of congruences modulo 6 for $v(q)$
 
@@ -254,7 +254,7 @@ The divisions by $4$ are exact since $p^2 \equiv 1 \pmod 8$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 2 (iii), Equations (23) and (24).
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_congruences_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-congruences-mod-six).
+Stated but not proved: `MetaMathlibExt.mockThetaV_congruences_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-congruences-mod-six).
 
 ## Sum formula for the odd-indexed coefficients of $v(q)$
 
@@ -268,7 +268,7 @@ $P_v(2n+1) = \sum_{m \ge 0,\ m(m+1) \le n} b_4^1\bigl(n - m(m+1)\bigr)$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_odd_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-odd-eq-sum-regular).
+Stated but not proved: `MetaMathlibExt.mockThetaV_odd_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-odd-eq-sum-regular).
 
 ## Sum formula for the coefficients of $q^{6n+5}$ in $v(q)$
 
@@ -283,7 +283,7 @@ $P_v(6n+5) = 3 b_6^3(n) + 3 \sum_{m \ge 1,\ 2m(3m+1) \le n} (-1)^m b_6^3\bigl(n 
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.mockThetaV_six_mul_add_five_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-six-mul-add-five-eq-sum-reg).
+Stated but not proved: `MetaMathlibExt.mockThetaV_six_mul_add_five_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-v-six-mul-add-five-eq-sum-reg).
 
 ## Generating function for the odd-indexed coefficients of $\sigma(q)$
 
@@ -297,7 +297,7 @@ $\sum_{n \ge 0} P_\sigma(2n+1) q^n = f_2^2 f_6^2 / (f_1^2 f_3)$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.mockThetaSigma_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-odd-generating-function).
+Stated but not proved: `MetaMathlibExt.mockThetaSigma_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-odd-generating-function).
 
 ## Congruences modulo 2 for the mock theta function $\sigma$
 
@@ -327,7 +327,7 @@ $p^2 \equiv 1 \pmod{24}$.
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.mockThetaSigma_congruences_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-congruences-mod-two).
+Stated but not proved: `MetaMathlibExt.mockThetaSigma_congruences_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-congruences-mod-two).
 
 ## Sum formula for the odd-indexed coefficients of $\sigma(q)$
 
@@ -341,7 +341,7 @@ $P_\sigma(2n+1) = \sum_{m \ge 0,\ (3m^2+3m)/2 \le n} b_2^2\bigl(n - (3m^2+3m)/2\
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.mockThetaSigma_odd_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-odd-eq-sum-regular).
+Stated but not proved: `MetaMathlibExt.mockThetaSigma_odd_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-sigma-odd-eq-sum-regular).
 
 ## Even-index coefficients of the mock theta function $\lambda$
 
@@ -358,7 +358,7 @@ $$
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.mockThetaLambda_even_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda-even-eq-sum-regular).
+Stated but not proved: `MetaMathlibExt.mockThetaLambda_even_eq_sum_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda-even-eq-sum-regular).
 
 ## Coefficients of the mock theta function $\lambda$ at indices $6n+2$
 
@@ -378,7 +378,7 @@ $$
 
 - Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.mockThetaLambda_six_mul_add_two_eq_sum_overpartition` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda-six-mul-add-two-eq-sum).
+Stated but not proved: `MetaMathlibExt.mockThetaLambda_six_mul_add_two_eq_sum_overpartition` is written with `theorem_wanted` in [WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MockThetaCoefficientsWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html#mock-theta-lambda-six-mul-add-two-eq-sum).
 
 ## Depends on
 
@@ -387,4 +387,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Coefficients of mock theta functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/coefficients-of-mock-theta-functions)

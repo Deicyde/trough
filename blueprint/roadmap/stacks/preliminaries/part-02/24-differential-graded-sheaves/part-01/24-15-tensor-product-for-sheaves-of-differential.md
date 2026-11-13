@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.15 Tensor product for sheaves of differential graded modules
 
-Section 24.15 of the Stacks Project, [Tag 0FRM](https://stacks.math.columbia.edu/tag/0FRM). 1 tag here is carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.15 of the Stacks Project, [Tag 0FRM](https://stacks.math.columbia.edu/tag/0FRM). 1 tag here is carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FRM, the section
 
 [Tag 0FRM](https://stacks.math.columbia.edu/tag/0FRM) in the Stacks Project.
 
-**`SheafOfModules.RelativeTensor.dgTensorOpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedOppositeTensor.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedOppositeTensor.lean#L324). The attribute's comment: “the relative tensor product of the opposite algebra, interchanged”.
+**`SheafOfModules.RelativeTensor.dgTensorOpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedOppositeTensor.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedOppositeTensor.lean#L324). The attribute's comment: “the relative tensor product of the opposite algebra, interchanged”.
 
 > **The relative tensor product read over the opposite algebra.** Interchanging the two
 > factors and twisting by the Koszul sign identifies `P ⊗_{A.op} M.opLeft` with
@@ -24,7 +24,7 @@ Section 24.15 of the Stacks Project, [Tag 0FRM](https://stacks.math.columbia.edu
 noncomputable def dgTensorOpIso : dgTensor P M.opLeft ≅ dgTensor M P.unopLeft
 ```
 
-**`SheafOfModules.RelativeTensor.dgTensorSumDiff_balance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L301). The attribute's comment: “the differential is well defined: it kills `xa ⊗ y - x ⊗ ay`”.
+**`SheafOfModules.RelativeTensor.dgTensorSumDiff_balance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L301). The attribute's comment: “the differential is well defined: it kills `xa ⊗ y - x ⊗ ay`”.
 
 > The signed differential of the direct sums is compatible with the balance maps: this is the
 > two Leibniz rules, and it is what makes the differential descend to `P ⊗_A N`.
@@ -35,7 +35,7 @@ theorem dgTensorSumDiff_balance (n : ℤ) :
       relationSumDiff P N n ≫ balanceMap (gP P) (gN N) (n + 1)
 ```
 
-**`SheafOfModules.RelativeTensor.dgTensorDiffPre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L382). The attribute's comment: “the differential `d (x ⊗ y) = dx ⊗ y + (-1)^{deg x} x ⊗ dy`”.
+**`SheafOfModules.RelativeTensor.dgTensorDiffPre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L382). The attribute's comment: “the differential `d (x ⊗ y) = dx ⊗ y + (-1)^{deg x} x ⊗ dy`”.
 
 > The differential of degree `n` of the relative tensor product `P ⊗_A N`, as a morphism of
 > presheaves of modules: the descent of the signed differential to the cokernel of the balance
@@ -46,7 +46,7 @@ noncomputable def dgTensorDiffPre (n : ℤ) :
     gradedTensorPre (gP P) (gN N) n ⟶ gradedTensorPre (gP P) (gN N) (n + 1)
 ```
 
-**`SheafOfModules.RelativeTensor.dgTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L419). The attribute's comment: “the relative tensor product as a complex of `O`-modules”.
+**`SheafOfModules.RelativeTensor.dgTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L419). The attribute's comment: “the relative tensor product as a complex of `O`-modules”.
 
 > The relative tensor product `P ⊗_A N` of a right differential graded `A`-module with a left
 > differential graded `A`-module, as a cochain complex of sheaves of modules.
@@ -55,7 +55,7 @@ noncomputable def dgTensorDiffPre (n : ℤ) :
 noncomputable def dgTensor : CochainComplex (SheafOfModules.{m} (toRingCat J Osharp)) ℤ
 ```
 
-**`SheafOfModules.RelativeTensor.dgTensorFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L585). The attribute's comment: “the functor `- ⊗_A N` to complexes of `O`-modules”.
+**`SheafOfModules.RelativeTensor.dgTensorFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensor.lean#L585). The attribute's comment: “the functor `- ⊗_A N` to complexes of `O`-modules”.
 
 > The functor `- ⊗_A N` from right differential graded `A`-modules to complexes of
 > `O`-modules, for a fixed left differential graded `A`-module `N`.
@@ -66,7 +66,7 @@ noncomputable def dgTensorFunctor :
       CochainComplex (SheafOfModules.{m} (toRingCat J Osharp)) ℤ
 ```
 
-**`SheafOfModules.RelativeTensor.dgUnitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean#L135). The attribute's comment: “the unit isomorphism A ⊗\_A N ≅ N of complexes, for A the regular right module”.
+**`SheafOfModules.RelativeTensor.dgUnitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean#L135). The attribute's comment: “the unit isomorphism A ⊗\_A N ≅ N of complexes, for A the regular right module”.
 
 > **The unit isomorphism of the relative tensor product of differential graded modules**:
 > `A ⊗_A N ≅ N` as cochain complexes of sheaves of modules, for `A` a sheaf of differential graded
@@ -77,7 +77,7 @@ noncomputable def dgUnitorIso :
     dgTensor (DifferentialGradedModule.regularModule A) N ≅ N.complex
 ```
 
-**`SheafOfModules.LocalBalancedBilinear`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensor.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensor.lean#L270). The attribute's comment: “local balanced bilinear families, the universal property of the tensor product”.
+**`SheafOfModules.LocalBalancedBilinear`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensor.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensor.lean#L270). The attribute's comment: “local balanced bilinear families, the universal property of the tensor product”.
 
 > An `A`-balanced bilinear family of degree `n` over `U`, from a right differential graded
 > `A`-module `M` and a differential graded `(A, B)`-bimodule `N` to a right differential graded
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.15, Tag 0FRM](https://stacks.math.columbia.edu/tag/0FRM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

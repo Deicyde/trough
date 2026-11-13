@@ -7,7 +7,7 @@ statement: formalized
 
 # Hilbert spaces: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/index.html).
 
 Geometry of inner product spaces: nearest-point projections, orthonormal and Hilbert bases, separability and ℓ², frames and Riesz bases, weak convergence (Opial, Radon–Riesz), Kirszbraun extension, derivatives of the norm, representer theorems; operators on Hilbert spaces go to Operator theory, analytic RKHS to Complex analysis.
 
@@ -27,7 +27,7 @@ The normalized Legendre polynomials form such a basis.
 - E. Kreyszig, *Introductory Functional Analysis with Applications*, Wiley, 1978, §3.6 ("Total Orthonormal Sets and Sequences") and §3.7 ("Legendre, Hermite and Laguerre Polynomials": the normalized Legendre polynomials are a total orthonormal sequence in `L²[-1, 1]`).
 - https://en.wikipedia.org/wiki/Legendre_polynomials#Orthogonality_and_completeness
 
-Stated but not proved: `MathlibExt.Analysis.InnerProductSpace.OrthogonalPolynomialHilbertBasisWanted.orthogonalPolynomial_hilbertBasis` is written with `theorem_wanted` in [WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/index.html#orthogonal-polynomial-hilbert-basis).
+Stated but not proved: `MathlibExt.Analysis.InnerProductSpace.OrthogonalPolynomialHilbertBasisWanted.orthogonalPolynomial_hilbertBasis` is written with `theorem_wanted` in [WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/InnerProductSpace/OrthogonalPolynomialHilbertBasisWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/index.html#orthogonal-polynomial-hilbert-basis).
 
 ## Depends on
 
@@ -36,4 +36,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hilbert spaces](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/hilbert-spaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/hilbert-spaces)

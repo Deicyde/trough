@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.28 Purity of ramification locus
 
-Section 58.28 of the Stacks Project, [Tag 0EA1](https://stacks.math.columbia.edu/tag/0EA1). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.28 of the Stacks Project, [Tag 0EA1](https://stacks.math.columbia.edu/tag/0EA1). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EA2, a lemma
 
 [Tag 0EA2](https://stacks.math.columbia.edu/tag/0EA2) in the Stacks Project.
 
-**`AlgebraicGeometry.DualizingDivisor.eq_top_of_isMinimalResolution_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/MinimalResolution.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/MinimalResolution.lean#L68). The attribute's comment: “second sentence: if f is a minimal resolution, then E = 0”.
+**`AlgebraicGeometry.DualizingDivisor.eq_top_of_isMinimalResolution_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/MinimalResolution.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/MinimalResolution.lean#L68). The attribute's comment: “second sentence: if f is a minimal resolution, then E = 0”.
 
 > **[Stacks, Tag 0EA2], second sentence.** Let `A` be a Noetherian normal local domain of
 > dimension two which is Nagata and has a dualizing module `ω_A`, and let `f : X ⟶ Spec(A)` be a
@@ -43,7 +43,7 @@ theorem eq_top_of_isMinimalResolution_of_relativeDualizingModule_iso (A : Type u
     E = ⊤
 ```
 
-**`AlgebraicGeometry.DualizingDivisor.definesRationalSingularity_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean#L380). The attribute's comment: “first sentence: if ω\_X ≅ O\_X(E) for an effective Cartier divisor E supported on the exceptional fibre of a resolution, then A defines a rational singularity”.
+**`AlgebraicGeometry.DualizingDivisor.definesRationalSingularity_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean#L386). The attribute's comment: “first sentence: if ω\_X ≅ O\_X(E) for an effective Cartier divisor E supported on the exceptional fibre of a resolution, then A defines a rational singularity”.
 
 > **[Stacks, Tag 0EA2], first sentence.** Let `A` be a Noetherian normal local domain of
 > dimension two which is Nagata, has a dualizing module `ω_A`, and has a resolution of
@@ -84,7 +84,7 @@ theorem definesRationalSingularity_of_relativeDualizingModule_iso (A : Type u) [
 
 [Tag 0EA3](https://stacks.math.columbia.edu/tag/0EA3) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleAt_of_etaleAt_outside_closure_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamification/EtaleAtDimensionTwo.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamification/EtaleAtDimensionTwo.lean#L52).
+**`AlgebraicGeometry.etaleAt_of_etaleAt_outside_closure_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamification/EtaleAtDimensionTwo.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamification/EtaleAtDimensionTwo.lean#L52).
 
 > **Stacks Project, Tag 0EA3.** Let `f : X ⟶ Spec A` be a morphism (locally) of finite type and
 > `x ∈ X`. Assume `A` is an excellent regular local ring, `𝒪_{X, x}` is normal of dimension `2`,
@@ -102,7 +102,7 @@ theorem etaleAt_of_etaleAt_outside_closure_of_ringKrullDim_eq_two {A : Type u} [
 
 [Tag 0EA4](https://stacks.math.columbia.edu/tag/0EA4) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleAt_of_etaleAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamificationLocus/Induction.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamificationLocus/Induction.lean#L378). The attribute's comment: “the whole lemma: hypotheses (1) `𝒪_{X,x}` normal of dimension `≥ 1`, (2) `𝒪_{Y,f x}` regular, (3) `f` locally of finite type, (4) `f` étale at every `x' ⤳ x` with `dim 𝒪_{X,x'} = 1`; the conclusion is `EtaleAt f x`.”. References: EGA IV (21.12.14), “more general”; SGA 1 X (3.1), “more general”.
+**`AlgebraicGeometry.etaleAt_of_etaleAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamificationLocus/Induction.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityRamificationLocus/Induction.lean#L378). The attribute's comment: “the whole lemma: hypotheses (1) `𝒪_{X,x}` normal of dimension `≥ 1`, (2) `𝒪_{Y,f x}` regular, (3) `f` locally of finite type, (4) `f` étale at every `x' ⤳ x` with `dim 𝒪_{X,x'} = 1`; the conclusion is `EtaleAt f x`.”. References: EGA IV (21.12.14), “more general”; SGA 1 X (3.1), “more general”.
 
 > **[Stacks, Tag 0EA4], purity of the ramification locus.** Let `f : X ⟶ Y` be a morphism of
 > locally Noetherian schemes, let `x : X` and `y = f x`, and assume that (1) `𝒪_{X,x}` is normal of
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.28, Tag 0EA1](https://stacks.math.columbia.edu/tag/0EA1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Descents, peaks and valleys of parking functions
 
-34 results, 7 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html).
+34 results, 7 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html).
 
 ## Total number of descents over parking functions
 
@@ -24,7 +24,7 @@ $f(i)$ are at least $k$. This is equivalent to the source's sorted-preference fo
 
 - Paul R. F. Schumacher, "Descents in Parking Functions," Journal of Integer Sequences 21 (2018), Article 18.2.3, Theorem, line 180, https://cs.uwaterloo.ca/journals/JIS/VOL21/Schumacher/schu5.tex
 
-Formalized by `MetaMathlibExt.total_descents_over_parking_functions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotalDescentsParkingFunctions.lean, line 881](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotalDescentsParkingFunctions.lean#L881). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#total-descents-over-parking-functions).
+Formalized by `MetaMathlibExt.total_descents_over_parking_functions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotalDescentsParkingFunctions.lean, line 881](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotalDescentsParkingFunctions.lean#L881). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#total-descents-over-parking-functions).
 
 ## Descent generating function of parking functions
 
@@ -49,7 +49,7 @@ middle sum is empty, so $n \ge 1$ is assumed, as in the paper.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorems 1 and 2 (`jis-2024-24.8.6-thm-1`, `jis-2024-24.8.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descent_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-gen-fun).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descent_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-gen-fun).
 
 ## Descent sets versus reflected ascent sets of parking functions
 
@@ -64,7 +64,7 @@ $I$ equals the number of parking functions of length $n$ with ascent set $J$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Proposition 6 (`jis-2024-24.8.6-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-eq-asc).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-eq-asc).
 
 ## Descent sets and ascent sets of parking functions are equidistributed
 
@@ -79,7 +79,7 @@ functions of length $n$ with ascent set $I$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Corollary 15 (`jis-2024-24.8.6-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-eq-asc-2).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-eq-asc-2).
 
 ## Reflection symmetry of descent sets of parking functions
 
@@ -93,7 +93,7 @@ functions of length $n$ with descent set $I$ equals the number with descent set 
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 16 (`jis-2024-24.8.6-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-reflec).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_card_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-card-reflec).
 
 ## Counting parking functions with a given descent set by their content
 
@@ -108,7 +108,7 @@ letters is the multiset of entries of $\beta$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 17 (`jis-2024-24.8.6-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.sum_ndpf_multisetDescent_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#sum-ndpf-multiset-descent-eq).
+Stated but not proved: `MetaMathlibExt.sum_ndpf_multisetDescent_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#sum-ndpf-multiset-descent-eq).
 
 ## Recursion for parking functions with a given descent set
 
@@ -128,7 +128,7 @@ number of words of length $m$ whose multiset of letters is $X$ and whose descent
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 18 (`jis-2024-24.8.6-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-recursion).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-recursion).
 
 ## Parking functions with descent set $\{1, \dots, k\}$
 
@@ -141,7 +141,7 @@ equals $\frac{1}{n}\binom{n}{k}\binom{2n-k}{n-k-1}$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Proposition 24 (`jis-2024-24.8.6-prop-24`).
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_initial_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-initial-car).
+Stated but not proved: `MetaMathlibExt.parkingFunction_descentSet_initial_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#parking-function-descent-set-initial-car).
 
 ## Peakless-tieless parking functions are counted by the Catalan numbers
 
@@ -155,7 +155,7 @@ length $n$ is the Catalan number $C_n$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Corollary 31 (`jis-2024-24.8.6-cor-31`).
 
-Stated but not proved: `MetaMathlibExt.card_peakless_tieless_parkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-parking-function).
+Stated but not proved: `MetaMathlibExt.card_peakless_tieless_parkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-parking-function).
 
 ## Peakless-tieless parking functions by last entry
 
@@ -173,7 +173,7 @@ This is the Catalan-triangle entry $T(n-1, i-1)$ of OEIS A009766.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Corollary 32 (`jis-2024-24.8.6-cor-32`).
 
-Stated but not proved: `MetaMathlibExt.card_peakless_tieless_parkingFunction_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-parking-function-l).
+Stated but not proved: `MetaMathlibExt.card_peakless_tieless_parkingFunction_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-parking-function-l).
 
 ## Valleyless-tieless parking functions are counted by the Fine numbers
 
@@ -191,7 +191,7 @@ of index $n + 2$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 33 (`jis-2024-24.8.6-thm-33`).
 
-Stated but not proved: `MetaMathlibExt.card_valleyless_tieless_parkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-valleyless-tieless-parking-function).
+Stated but not proved: `MetaMathlibExt.card_valleyless_tieless_parkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-valleyless-tieless-parking-function).
 
 ## Prepending $1$ to valleyless-tieless parking functions
 
@@ -207,7 +207,7 @@ with $b_1 = 1$ and $b_{n+1} > 1$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 34 (`jis-2024-24.8.6-lem-34`).
 
-Stated but not proved: `MetaMathlibExt.valleyless_tieless_prepend_one_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#valleyless-tieless-prepend-one-bij-on).
+Stated but not proved: `MetaMathlibExt.valleyless_tieless_prepend_one_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#valleyless-tieless-prepend-one-bij-on).
 
 ## First and last entries of peakless-tieless parking functions
 
@@ -222,7 +222,7 @@ $n \ge 0$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 40 (`jis-2024-24.8.6-lem-40`).
 
-Stated but not proved: `MetaMathlibExt.peakless_tieless_ends_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-ends-card).
+Stated but not proved: `MetaMathlibExt.peakless_tieless_ends_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-ends-card).
 
 ## Peakless-tieless parking functions with first entry below the last
 
@@ -238,7 +238,7 @@ In the indexing of OEIS A000957, $F(n + 1)$ is the term of index $n + 2$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 41 (`jis-2024-24.8.6-thm-41`).
 
-Stated but not proved: `MetaMathlibExt.card_peakless_tieless_first_lt_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-first-lt-last).
+Stated but not proved: `MetaMathlibExt.card_peakless_tieless_first_lt_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-tieless-first-lt-last).
 
 ## Peakless parking functions with $n - 1$ ties
 
@@ -251,7 +251,7 @@ $a_i = a_{i+1}$).
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 42 (`jis-2024-24.8.6-lem-42`).
 
-Stated but not proved: `MetaMathlibExt.card_peakless_parkingFunction_max_ties` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-parking-function-max-ties).
+Stated but not proved: `MetaMathlibExt.card_peakless_parkingFunction_max_ties` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-parking-function-max-ties).
 
 ## Every statistic encoding comes from a parking function
 
@@ -266,7 +266,7 @@ when $n = 0$) is the statistic encoding of some parking function of length $n$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 48 (`jis-2024-24.8.6-thm-48`).
 
-Stated but not proved: `MetaMathlibExt.exists_parkingFunction_statEnc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-parking-function-stat-enc).
+Stated but not proved: `MetaMathlibExt.exists_parkingFunction_statEnc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-parking-function-stat-enc).
 
 ## Uniquely encoded parking functions have steps of at most one and no gaps
 
@@ -282,7 +282,7 @@ if $p$ is a value of $f$ then so is $q$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 49 (`jis-2024-24.8.6-lem-49`).
 
-Stated but not proved: `MetaMathlibExt.unique_statEnc_adjacent_and_downward_closed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-adjacent-and-downward-cl).
+Stated but not proved: `MetaMathlibExt.unique_statEnc_adjacent_and_downward_closed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-adjacent-and-downward-cl).
 
 ## The sorted rearrangement of a uniquely encoded parking function
 
@@ -299,7 +299,7 @@ block may be empty).
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 50 (`jis-2024-24.8.6-lem-50`).
 
-Stated but not proved: `MetaMathlibExt.unique_statEnc_sorted_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-sorted-form).
+Stated but not proved: `MetaMathlibExt.unique_statEnc_sorted_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-sorted-form).
 
 ## Valley plateaus of a uniquely encoded parking function equal $1$
 
@@ -316,7 +316,7 @@ $\alpha_j < \alpha_{j+1}$, then $\alpha_k = 1$ for every $k$ with $i \le k \le j
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 51 (`jis-2024-24.8.6-lem-51`).
 
-Stated but not proved: `MetaMathlibExt.unique_statEnc_valley_plateau_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-valley-plateau-eq-one).
+Stated but not proved: `MetaMathlibExt.unique_statEnc_valley_plateau_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-stat-enc-valley-plateau-eq-one).
 
 ## Statistic encodings with a unique parking function
 
@@ -331,7 +331,7 @@ $A$'s followed by $T$'s or of $T$'s followed by $D$'s (either block may be empty
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 52 (`jis-2024-24.8.6-thm-52`).
 
-Stated but not proved: `MetaMathlibExt.unique_parkingFunction_statEnc_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-parking-function-stat-enc-iff).
+Stated but not proved: `MetaMathlibExt.unique_parkingFunction_statEnc_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#unique-parking-function-stat-enc-iff).
 
 ## Tie-and-value map
 
@@ -350,7 +350,7 @@ decreasing order followed by its value set in increasing order.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, the function `φ` of Theorem 30 (`jis-2024-24.8.6-thm-30`), defined as in arXiv:2312.16786v1, Definition 4.2.
 
-Formalized by `MetaMathlibExt.peaklessTielessOfNondecreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing).
+Formalized by `MetaMathlibExt.peaklessTielessOfNondecreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing).
 
 ## Example of the tie-and-value map
 
@@ -362,7 +362,7 @@ $\varphi(1, 1, 2, 3, 4, 4) = (6, 2, 1, 2, 3, 4)$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, the function `φ` of Theorem 30, Example (arXiv:2312.16786v1, Example 4.3).
 
-Formalized by `MetaMathlibExt.peaklessTielessOfNondecreasing_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing-exampl).
+Formalized by `MetaMathlibExt.peaklessTielessOfNondecreasing_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing-exampl).
 
 ## Nondecreasing and peakless-tieless parking functions are in bijection
 
@@ -376,7 +376,7 @@ with $a_{i-1} < a_i > a_{i+1}$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Theorem 30 (`jis-2024-24.8.6-thm-30`; arXiv:2312.16786v1, Theorem 4.4).
 
-Stated but not proved: `MetaMathlibExt.peaklessTielessOfNondecreasing_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing-bij-on).
+Stated but not proved: `MetaMathlibExt.peaklessTielessOfNondecreasing_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#peakless-tieless-of-nondecreasing-bij-on).
 
 ## Fuel-bounded ascent-to-descent rearrangement
 
@@ -397,7 +397,7 @@ Every recursive call is on a strictly shorter word, so fuel $N = m$ never runs o
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Definition `nu` (Section 2).
 
-Formalized by `MetaMathlibExt.ascentToDescentRearrangementAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-aux).
+Formalized by `MetaMathlibExt.ascentToDescentRearrangementAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-aux).
 
 ## Ascent-to-descent rearrangement
 
@@ -411,7 +411,7 @@ Every recursive call of $\nu_N$ is on a strictly shorter word, so the fuel $m$ n
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Definition `nu` (Section 2).
 
-Formalized by `MetaMathlibExt.ascentToDescentRearrangement`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement).
+Formalized by `MetaMathlibExt.ascentToDescentRearrangement`, a definition declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement).
 
 ## Words of length at most one are fixed by the ascent-to-descent rearrangement
 
@@ -423,7 +423,7 @@ ascent-to-descent rearrangement.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Definition `nu`, Case 0.
 
-Formalized by `MetaMathlibExt.ascentToDescentRearrangement_of_length_le_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-of-lengt).
+Formalized by `MetaMathlibExt.ascentToDescentRearrangement_of_length_le_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-of-lengt).
 
 ## Example of the ascent-to-descent rearrangement
 
@@ -438,7 +438,7 @@ and $\nu(3\,1\,2\,1)$ under Case 1.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Example following Definition `nu`.
 
-Formalized by `MetaMathlibExt.ascentToDescentRearrangement_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-example).
+Formalized by `MetaMathlibExt.ascentToDescentRearrangement_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-example).
 
 ## Ascents of a word are the descents of its rearrangement
 
@@ -453,7 +453,7 @@ rearrangement.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 11 (`jis-2024-24.8.6-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.ascList_eq_desList_ascentToDescentRearrangement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#asc-list-eq-des-list-ascent-to-descent-r).
+Stated but not proved: `MetaMathlibExt.ascList_eq_desList_ascentToDescentRearrangement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#asc-list-eq-des-list-ascent-to-descent-r).
 
 ## The ascent-to-descent rearrangement is injective
 
@@ -467,7 +467,7 @@ each fixed word.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 13 (`jis-2024-24.8.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.ascentToDescentRearrangement_injective` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-injectiv).
+Stated but not proved: `MetaMathlibExt.ascentToDescentRearrangement_injective` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-injectiv).
 
 ## The ascent-to-descent rearrangement matches ascent and descent sets
 
@@ -483,7 +483,7 @@ $\mathrm{Des}(x) = I$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Proposition 10 (`jis-2024-24.8.6-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.ascentToDescentRearrangement_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-bij-on).
+Stated but not proved: `MetaMathlibExt.ascentToDescentRearrangement_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#ascent-to-descent-rearrangement-bij-on).
 
 ## Flicking valleyless-tieless parking functions
 
@@ -506,7 +506,7 @@ display.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Proposition 37 (`jis-2024-24.8.6-prop-37`).
 
-Stated but not proved: `MetaMathlibExt.valleyless_tieless_flick_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#valleyless-tieless-flick-bij-on).
+Stated but not proved: `MetaMathlibExt.valleyless_tieless_flick_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#valleyless-tieless-flick-bij-on).
 
 ## Gudmundsson's bijection between Dyck words and standard Young tableaux
 
@@ -525,7 +525,7 @@ is $U$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 22 (Gudmundsson, Theorem 6) (`jis-2024-24.8.6-lem-22`).
 
-Stated but not proved: `MetaMathlibExt.exists_dyckWord_standardYoungTableau_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-dyck-word-standard-young-tableau).
+Stated but not proved: `MetaMathlibExt.exists_dyckWord_standardYoungTableau_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-dyck-word-standard-young-tableau).
 
 ## Dyck words and nondecreasing parking functions
 
@@ -542,7 +542,7 @@ before the $i$th $U$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 23 (`jis-2024-24.8.6-lem-23`).
 
-Stated but not proved: `MetaMathlibExt.exists_dyckWord_nondecreasing_parkingFunction_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-dyck-word-nondecreasing-parking-f).
+Stated but not proved: `MetaMathlibExt.exists_dyckWord_nondecreasing_parkingFunction_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#exists-dyck-word-nondecreasing-parking-f).
 
 ## Peakless parking functions with $n - 2$ ties
 
@@ -560,7 +560,7 @@ $\sum_{i=1}^{n-1} i$.
 
 - Ari Cruz, Pamela E. Harris, Kimberly J. Harry, Jan Kretschmann, Matt McClinton, Alex Moon, John O. Museus and Eric Redmon, *On Some Discrete Statistics of Parking Functions*, Journal of Integer Sequences 27 (2024), Article 24.8.6, Lemma 43 (`jis-2024-24.8.6-lem-43`).
 
-Stated but not proved: `MetaMathlibExt.card_peakless_parkingFunction_ties_eq_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-parking-function-ties-eq-s).
+Stated but not proved: `MetaMathlibExt.card_peakless_parkingFunction_ties_eq_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ParkingFunctionStatisticsWanted.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html#card-peakless-parking-function-ties-eq-s).
 
 ## Depends on
 
@@ -569,4 +569,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Descents, peaks and valleys of parking functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/parking-functions/descents-peaks-and-valleys-of-parking-functions)

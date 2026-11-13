@@ -7,7 +7,7 @@ statement: formalized
 
 # Natural proofs barrier
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html).
 
 ## Encoded gates
 
@@ -15,7 +15,7 @@ An encoded gate of a flat Boolean circuit is a pair $(k, r)$ of a natural
 number $k$ (its kind) and a list $r$ of natural numbers (its references), in the shared encoding
 of gates as (kind, references) pairs.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NPGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#npgate).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NPGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#npgate).
 
 ## Evaluation of an encoded circuit
 
@@ -25,7 +25,7 @@ list of the values of all $m$ gates, in order: each pair is decoded to a gate of
 circuit on $n$ inputs, and the resulting circuit is evaluated with input $i$ set to $a_i$. An
 input pair $(0, [i])$ with $i \ge n$ decodes to the constant false, so it reads as false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.npCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#np-circuit-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.npCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#np-circuit-eval).
 
 ## Truth table
 
@@ -34,7 +34,7 @@ $2^n$ values $g(x^{(0)}), g(x^{(1)}), \dots, g(x^{(2^n - 1)})$, where for $i < 2
 $x^{(i)}$ has bit $j$ equal to the $j$-th binary digit $\lfloor i / 2^j \rfloor \bmod 2$ of $i$
 (bit $0$ being the least significant), for every $j < n$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.truthTable`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#truth-table).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.truthTable`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#truth-table).
 
 ## Natural property
 
@@ -46,7 +46,7 @@ if and only if the evaluation of the circuit on the truth table of $g$ has last 
 Large: there is a natural number $c$ such that $|C_n| \ge 2^{2^n} / 2^{cn}$ for every $n$, that is,
 $C_n$ contains at least a $2^{-cn}$ fraction of the $2^{2^n}$ Boolean functions on $n$ bits.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NaturalProperty`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#natural-property).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.NaturalProperty`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#natural-property).
 
 ## The decision problem of a family of Boolean functions
 
@@ -55,7 +55,7 @@ $f = (f_n)_{n \in \mathbb{N}}$, where $f_n$ is a Boolean function on $n$ bits, t
 problem that maps a bitstring $x = x_0 x_1 \cdots x_{n-1}$ of length $n$ to
 $f_n(x_0, \dots, x_{n-1})$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.langOfFamily`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#lang-of-family).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.langOfFamily`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#lang-of-family).
 
 ## Usefulness against P/poly
 
@@ -65,7 +65,7 @@ $f = (f_n)_{n \in \mathbb{N}}$ of Boolean functions $f_n$ on $n$ bits such that 
 infinitely many $n$, the decision problem of $f$ is not in P/poly. Equivalently, if the decision
 problem of a family $f$ is in P/poly, then $f_n \in C_n$ for only finitely many $n$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.UsefulAgainstPPoly`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#useful-against-ppoly).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.UsefulAgainstPPoly`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#useful-against-ppoly).
 
 ## Keyed function families in P/poly
 
@@ -76,7 +76,7 @@ coefficients such that for every $n$ some circuit, given as a list of at most $p
 gates, computes $F_n$: for all $k$ and $x$, the evaluation of the circuit on the bitstring $kx$ of
 length $n^2 + n$ (the bits of $k$ followed by the bits of $x$) has last gate value $F_n(k, x)$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.PRFInPPoly`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#prfin-ppoly).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.PRFInPPoly`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#prfin-ppoly).
 
 ## Security of a keyed function family against truth-table distinguishers
 
@@ -98,7 +98,7 @@ computed by circuits of size polynomial in the truth-table size $2^n$ tells a un
 member of the family from a uniformly random Boolean function with advantage at most $2^{-cn}$
 for all large $n$, for every $c$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.PRFSecure`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#prfsecure).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.PRFSecure`, a definition declared in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#prfsecure).
 
 ## Razborov-Rudich: the natural proofs barrier
 
@@ -113,7 +113,7 @@ is both natural and useful against P/poly.
 
 - A. A. Razborov and S. Rudich, "Natural proofs", Journal of Computer and System Sciences 55 (1997), 24-35 (Proceedings of the Twenty-Sixth Annual ACM Symposium on Theory of Computing, STOC 1994, 18-27).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.razborov_rudich_natural_proofs` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#razborov-rudich-natural-proofs).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NaturalProofs.razborov_rudich_natural_proofs` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NaturalProofsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html#razborov-rudich-natural-proofs).
 
 ## Depends on
 
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Natural proofs barrier](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/natural-proofs-barrier)

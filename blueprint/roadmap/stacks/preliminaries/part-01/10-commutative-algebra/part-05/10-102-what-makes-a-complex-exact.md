@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.102 What makes a complex exact?
 
-Section 10.102 of the Stacks Project, [Tag 00MR](https://stacks.math.columbia.edu/tag/00MR). 9 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.102 of the Stacks Project, [Tag 00MR](https://stacks.math.columbia.edu/tag/00MR). 9 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00MS, a situation
 
 [Tag 00MS](https://stacks.math.columbia.edu/tag/00MS) in the Stacks Project.
 
-**`BoundedFreeComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/BoundedFreeComplex.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/FiniteFreeComplex/BoundedFreeComplex.lean#L35). References: SGA 4½ Rapport (4.11).
+**`BoundedFreeComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/BoundedFreeComplex.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/FiniteFreeComplex/BoundedFreeComplex.lean#L35). References: SGA 4½ Rapport (4.11).
 
 > A complex `0 → R^{n_e} → R^{n_{e-1}} → ⋯ → R^{n_0}` of finite free `R`-modules, as in
 > Stacks Situation 10.102.1 (tag 00MS). The ranks are given by `n : ℕ → ℕ` with `n i = 0` for
@@ -29,7 +29,7 @@ structure BoundedFreeComplex (R : Type*) [CommRing R]
 
 [Tag 00MT](https://stacks.math.columbia.edu/tag/00MT) in the Stacks Project.
 
-**`exists_splitOff_elementaryComplex_of_hasInvertibleCoeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/SplitOffElementary.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/FiniteFreeComplex/SplitOffElementary.lean#L801).
+**`exists_splitOff_elementaryComplex_of_hasInvertibleCoeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/SplitOffElementary.lean, line 801](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/FiniteFreeComplex/SplitOffElementary.lean#L801).
 
 > Let `R` be a ring and `C` a complex of finite free `R`-modules `C_j = R^{n_j}`. If the
 > differential `φ_i` has an invertible matrix coefficient, then `n_i ≥ 1`, `n_{i-1} ≥ 1`, and there
@@ -50,7 +50,7 @@ theorem exists_splitOff_elementaryComplex_of_hasInvertibleCoeff {R : Type*} [Com
 
 [Tag 00MY](https://stacks.math.columbia.edu/tag/00MY) in the Stacks Project.
 
-**`exists_trivial_iso_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/TrivialIsoOfExact.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/FiniteFreeComplex/TrivialIsoOfExact.lean#L802).
+**`exists_trivial_iso_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/TrivialIsoOfExact.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/FiniteFreeComplex/TrivialIsoOfExact.lean#L802).
 
 > Let `R` be a Noetherian local ring whose maximal ideal `m` is an associated prime of `R`, i.e.
 > `R` has depth `0`. Then every complex of finite free `R`-modules
@@ -71,7 +71,7 @@ theorem exists_trivial_iso_of_exact
 
 [Tag 00MU](https://stacks.math.columbia.edu/tag/00MU) in the Stacks Project.
 
-**`LinearMap.exists_trivialDecomposition_of_injective_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Artinian/FreeComplex.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Artinian/FreeComplex.lean#L501).
+**`LinearMap.exists_trivialDecomposition_of_injective_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Artinian/FreeComplex.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Artinian/FreeComplex.lean#L501).
 
 > **An exact complex of finite free modules over an Artinian local ring is a direct sum of
 > trivial complexes.** Let `R` be an Artinian local ring and let
@@ -98,7 +98,7 @@ public theorem LinearMap.exists_trivialDecomposition_of_injective_of_exact
 
 [Tag 00MV](https://stacks.math.columbia.edu/tag/00MV) in the Stacks Project.
 
-**`Stacks.DeterminantalRank.exteriorRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L103). The attribute's comment: “(1)”.
+**`Stacks.DeterminantalRank.exteriorRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L103). The attribute's comment: “(1)”.
 
 > The rank of `φ = mulVecLin A`: the largest `r ≤ min m n` such that the `r`-th exterior
 > power `⋀^r φ` is nonzero. Since `⋀^r φ = 0` for `r > min m n`, and `⋀^0 φ = id ≠ 0` for
@@ -108,7 +108,7 @@ public theorem LinearMap.exists_trivialDecomposition_of_injective_of_exact
 noncomputable def exteriorRank (A : Matrix (Fin n) (Fin m) R) : ℕ
 ```
 
-**`Stacks.DeterminantalRank.detIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L109). The attribute's comment: “(2)”.
+**`Stacks.DeterminantalRank.detIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L109). The attribute's comment: “(2)”.
 
 > The determinantal ideal `I(φ)`: the ideal generated by the `rank × rank` minors of `A`.
 > When `rank = 0` the only minor is the empty minor `det (A.submatrix _ _) = 1`, so `I(φ) = R`.
@@ -121,7 +121,7 @@ noncomputable def detIdeal (A : Matrix (Fin n) (Fin m) R) : Ideal R
 
 [Tag 00MW](https://stacks.math.columbia.edu/tag/00MW) in the Stacks Project.
 
-**`StacksComplex.rank_eq_rIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L478). The attribute's comment: “(1)”.
+**`StacksComplex.rank_eq_rIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L478). The attribute's comment: “(1)”.
 
 > If the complex is isomorphic to a direct sum of trivial complexes,
 > then for `1 ≤ i ≤ e` the rank of `φ_i` (which is `d (i-1)`, or equivalently `d k` with
@@ -133,7 +133,7 @@ theorem rank_eq_rIndex (C : Complex R e) (hC : IsoToSumOfTrivials C)
     (rank (C.d k) : ℤ) = rIndex C (k + 1)
 ```
 
-**`StacksComplex.rank_add_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L489). The attribute's comment: “(2)”.
+**`StacksComplex.rank_add_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L489). The attribute's comment: “(2)”.
 
 > If the complex is isomorphic to a direct sum of trivial complexes, then for `1 ≤ i ≤ e-1`,
 > `rank(φ_{i+1}) + rank(φ_i) = n_i`. In the indexing `d j = φ_{j+1}`, with `k = i-1`
@@ -145,7 +145,7 @@ theorem rank_add_rank (C : Complex R e) (hC : IsoToSumOfTrivials C)
     rank (C.d (k + 1)) + rank (C.d k) = C.n (k + 1)
 ```
 
-**`StacksComplex.minorIdeal_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L527). The attribute's comment: “(3)”.
+**`StacksComplex.minorIdeal_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/SumOfTrivials.lean#L527). The attribute's comment: “(3)”.
 
 > If the complex is isomorphic to a direct sum of trivial complexes, then for `1 ≤ i ≤ e`,
 > the ideal `I(φ_i)` is the unit ideal `R`. In the indexing `d k = φ_{k+1}` with `0 ≤ k ≤ e-1`,
@@ -161,7 +161,7 @@ theorem minorIdeal_eq_top (C : Complex R e) (hC : IsoToSumOfTrivials C)
 
 [Tag 00MZ](https://stacks.math.columbia.edu/tag/00MZ) in the Stacks Project.
 
-**`tag_00MZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/ReductionModNonzerodivisor.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/FiniteFreeComplex/ReductionModNonzerodivisor.lean#L65).
+**`tag_00MZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/FiniteFreeComplex/ReductionModNonzerodivisor.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/FiniteFreeComplex/ReductionModNonzerodivisor.lean#L65).
 
 > Let `R` be a commutative local ring with maximal ideal `m`, and let
 > `φ : R^{n (•+1)} → R^{n •}` be a complex of finite free modules ending at position
@@ -184,7 +184,7 @@ theorem tag_00MZ (R : Type*) [CommRing R] [IsLocalRing R]
 
 [Tag 00N0](https://stacks.math.columbia.edu/tag/00N0) in the Stacks Project.
 
-**`Module.one_le_depth_homology_of_forall_le_depth_of_isGreatest_not_exactAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Acyclicity.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Acyclicity.lean#L205).
+**`Module.one_le_depth_homology_of_forall_le_depth_of_isGreatest_not_exactAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Acyclicity.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Acyclicity.lean#L205).
 
 > **Acyclicity lemma.** Let `R` be a Noetherian local ring and let
 > `0 → M_e → M_{e-1} → ⋯ → M_0` be a complex of finite `R`-modules, presented as a chain complex
@@ -206,7 +206,7 @@ public theorem Module.one_le_depth_homology_of_forall_le_depth_of_isGreatest_not
 
 [Tag 00N1](https://stacks.math.columbia.edu/tag/00N1) in the Stacks Project.
 
-**`LinearMap.injective_and_exact_iff_forall_rank_eq_and_le_depth_minors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/ExactnessCriterion/Converse.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/ExactnessCriterion/Converse.lean#L699).
+**`LinearMap.injective_and_exact_iff_forall_rank_eq_and_le_depth_minors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/ExactnessCriterion/Converse.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/ExactnessCriterion/Converse.lean#L699).
 
 > **Buchsbaum–Eisenbud exactness criterion.** A complex
 > `0 → R^{n_{e+1}} →[φ e] R^{n_e} → ⋯ → R^{n_1} →[φ 0] R^{n_0}` of finite free modules over a
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.102, Tag 00MR](https://stacks.math.columbia.edu/tag/00MR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

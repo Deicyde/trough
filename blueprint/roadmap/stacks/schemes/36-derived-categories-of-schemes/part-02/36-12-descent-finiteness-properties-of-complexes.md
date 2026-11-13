@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.12 Descent finiteness properties of complexes
 
-Section 36.12 of the Stacks Project, [Tag 09UC](https://stacks.math.columbia.edu/tag/09UC). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.12 of the Stacks Project, [Tag 09UC](https://stacks.math.columbia.edu/tag/09UC). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09UD, a lemma
 
 [Tag 09UD](https://stacks.math.columbia.edu/tag/09UD) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.FlatDescent.hasTorAmplitude_derivedPullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatSurjectiveDescent.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatSurjectiveDescent.lean#L229).
+**`Stacks.Cohomology.TorAmplitude.FlatDescent.hasTorAmplitude_derivedPullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatSurjectiveDescent.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatSurjectiveDescent.lean#L229).
 
 > Let `f : X ⟶ Y` be a surjective flat morphism of locally ringed spaces, let `E` be an
 > object of `D(𝒪_Y)` and let `a, b` be integers.  Then `E` has Tor amplitude in `[a, b]` if and
@@ -34,7 +34,7 @@ theorem hasTorAmplitude_derivedPullback_iff {X Y : LocallyRingedSpace.{u}} (f : 
 
 [Tag 09UE](https://stacks.math.columbia.edu/tag/09UE) in the Stacks Project.
 
-**`Stacks.Cohomology.PseudoCoherence.FpqcDescent.isPseudoCoherentFrom_iff_forall_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FpqcDescent.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FpqcDescent.lean#L595).
+**`Stacks.Cohomology.PseudoCoherence.FpqcDescent.isPseudoCoherentFrom_iff_forall_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FpqcDescent.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FpqcDescent.lean#L595).
 
 > **Stacks 09UE.**
 
@@ -52,7 +52,7 @@ public theorem isPseudoCoherentFrom_iff_forall_fpqc {X : Scheme.{u}} {I : Type v
 
 [Tag 09UF](https://stacks.math.columbia.edu/tag/09UF) in the Stacks Project.
 
-**`Stacks.Cohomology.PseudoCoherence.FlatDescent.isPseudoCoherentFrom_iff_forall_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FppfDescent.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FppfDescent.lean#L441).
+**`Stacks.Cohomology.PseudoCoherence.FlatDescent.isPseudoCoherentFrom_iff_forall_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FppfDescent.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FppfDescent.lean#L441).
 
 > Let `{f_i : X_i ⟶ X}` be an fppf covering of schemes, let `E` be an object of `D(𝒪_X)` and
 > let `m` be an integer. Then `E` is `m`-pseudo-coherent if and only if each `Lf_i^*E` is
@@ -72,7 +72,7 @@ public theorem isPseudoCoherentFrom_iff_forall_fppf {X : Scheme.{u}} {I : Type v
 
 [Tag 09UG](https://stacks.math.columbia.edu/tag/09UG) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectComplexes.FpqcDescent.isPerfect_iff_forall_isPerfect_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/FpqcDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/FpqcDescent.lean#L157).
+**`Stacks.Cohomology.PerfectComplexes.FpqcDescent.isPerfect_iff_forall_isPerfect_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/FpqcDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/FpqcDescent.lean#L157).
 
 > **Stacks 09UG.** Let `{f_i : Y_i ⟶ X}` be an fpqc covering of schemes and let
 > `E ∈ D(𝒪_X)`. Then `E` is perfect if and only if each derived pullback `Lf_i^*E` is perfect.
@@ -91,7 +91,7 @@ public theorem isPerfect_iff_forall_isPerfect_derivedPullback {X : Scheme.{u}} {
 
 [Tag 09VA](https://stacks.math.columbia.edu/tag/09VA) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean#L116). The attribute's comment: “E m-pseudo-coherent implies Ri\_*E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “necessity: E ⇒ Ri\_*E”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean#L116). The attribute's comment: “E m-pseudo-coherent implies Ri\_*E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “necessity: E ⇒ Ri\_*E”.
 
 > **The forward half of Stacks 09VA.** Let `i : Z ⟶ X` be a morphism of ringed spaces whose
 > underlying continuous map is a closed immersion and such that `i_*𝒪_Z` is pseudo-coherent as an
@@ -114,7 +114,7 @@ public theorem isPseudoCoherentFrom_derivedPushforwardOXMod
     IsPseudoCoherentFrom ((derivedPushforwardOXMod i hi).obj E) m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean#L372). The attribute's comment: “Ri\_*E m-pseudo-coherent implies E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “sufficiency: Ri\_*E ⇒ E”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean#L372). The attribute's comment: “Ri\_*E m-pseudo-coherent implies E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “sufficiency: Ri\_*E ⇒ E”.
 
 > **The converse half of Stacks 09VA.** Let `i : Z ⟶ X` be a morphism of ringed spaces whose
 > underlying continuous map is a closed embedding and such that `i_*𝒪_Z` is pseudo-coherent as an
@@ -150,7 +150,7 @@ public theorem isPseudoCoherentFrom_of_derivedPushforwardOXMod {Z X : RingedSpac
 
 [Tag 09VB](https://stacks.math.columbia.edu/tag/09VB) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherentFrom_iff_derivedPushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePushforwardDescent.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePushforwardDescent.lean#L74).
+**`AlgebraicGeometry.isPseudoCoherentFrom_iff_derivedPushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePushforwardDescent.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePushforwardDescent.lean#L74).
 
 > Let `f : X ⟶ Y` be a finite morphism of schemes such that `f_*𝒪_X` is pseudo-coherent as an
 > `𝒪_Y`-module, that is, such that the object of `D(𝒪_Y)` it determines in degree zero is
@@ -178,4 +178,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.12, Tag 09UC](https://stacks.math.columbia.edu/tag/09UC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

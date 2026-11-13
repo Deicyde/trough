@@ -8,7 +8,7 @@ proof: formalized
 
 # Gale–Shapley algorithm
 
-30 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html).
+30 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html).
 
 ## Preferences
 
@@ -18,7 +18,7 @@ A permutation $\sigma$ of $\{0, \dots, n-1\}$, read as a
 ranking ($\sigma(k)$ is the $k$-th choice, $\sigma(0)$ the best), gives the strict total order on
 $\{0, \dots, n-1\}$ in which $a$ is preferred to $b$ when $\sigma^{-1}(a) < \sigma^{-1}(b)$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.toOrder`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#to-order).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.toOrder`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#to-order).
 
 ## Proposers' preferences from rankings
 
@@ -27,7 +27,7 @@ the $n$ receivers ($\sigma_m(k)$ is the choice of $m$ of rank $k$, rank $0$ the 
 proposers' preference profile assigns to $m$ the strict total order in which $m$ prefers $w$ to
 $w'$ when $\sigma_m^{-1}(w) < \sigma_m^{-1}(w')$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.mprefs`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#mprefs).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.mprefs`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#mprefs).
 
 ## Receivers' preference profile from rankings
 
@@ -36,7 +36,7 @@ $\sigma_w$ of the $n$ proposers (a permutation of $\{0, \dots, n-1\}$, with $\si
 choice), the receivers' preference profile assigns to $w$ the preference order of $\sigma_w$: $w$
 prefers $a$ to $b$ when $\sigma_w^{-1}(a) < \sigma_w^{-1}(b)$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.wprefs`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#wprefs).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.wprefs`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#wprefs).
 
 ## Deferred-acceptance state
 
@@ -45,21 +45,21 @@ receivers, both numbered $0, \dots, n-1$, records for each proposer a natural nu
 proposals he has made (his next proposal goes to his choice of that rank), and for each receiver
 either the proposer she currently holds or that she holds nobody.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.State`, a structure declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#state).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.State`, a structure declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#state).
 
 ## Initial state of deferred acceptance
 
 The initial state with $n$ proposers and
 $n$ receivers: every proposer has made $0$ proposals and no receiver holds anyone.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.init`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#init).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.init`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#init).
 
 ## Free proposer
 
 A proposer $m$ is free in a state $s$ of deferred acceptance when no
 receiver holds $m$ in $s$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.Free`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#free).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.Free`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#free).
 
 ## Receiver's holder after a proposal
 
@@ -67,7 +67,7 @@ In a state $s$ of deferred acceptance, the proposer
 whom receiver $w$ holds after proposer $m$ proposes to her is $m$ if she holds nobody in $s$ or
 ranks $m$ strictly better than her current holder $m'$ in her ranking, and $m'$ otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#new-holder).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#new-holder).
 
 ## A proposal
 
@@ -79,7 +79,7 @@ holds $m$ if she held nobody or ranks $m$ strictly above the proposer she held, 
 holder otherwise; all other counts and holders are unchanged. If $k \ge n$, the state is
 unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.propose`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#propose).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.propose`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#propose).
 
 ## Choosing the next proposer
 
@@ -87,7 +87,7 @@ In a state $s$ of deferred acceptance with proposers
 $0, 1, \dots, n-1$, the chooser returns the least proposer $m$ who is free in $s$ and has made
 fewer than $n$ proposals in $s$, or no proposer if there is none.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.chooser`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#chooser).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.chooser`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#chooser).
 
 ## Running deferred acceptance
 
@@ -97,7 +97,7 @@ if no proposer is both free (held by no receiver) and has made fewer than $n$ pr
 returns $s$; otherwise the lowest-numbered such proposer makes a proposal, and the run continues
 from the resulting state with budget $f - 1$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.run`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#run).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.run`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#run).
 
 ## Deferred acceptance
 
@@ -112,7 +112,7 @@ holder she ranks better, or him if she held no one.
 These $n^2$ steps always suffice: in the resulting state no proposer is both free and has made
 fewer than $n$ proposals.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.galeShapley`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gale-shapley).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.galeShapley`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gale-shapley).
 
 ## Invariant of deferred acceptance
 
@@ -127,7 +127,7 @@ some $m'$ with $\tau_w^{-1}(m') \le \tau_w^{-1}(m)$; and for such $m$ and $k$, i
 does not hold $m$, then no perfect matching that is stable for the preferences given by the
 rankings matches $m$ with $\sigma_m(k)$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.Inv`, a structure declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#inv).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.Inv`, a structure declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#inv).
 
 ## A stable matching has no blocking pair
 
@@ -138,7 +138,7 @@ that is stable for the preferences given by these rankings, there are no propose
 receiver $w$ with $\sigma_m^{-1}(w) < \sigma_m^{-1}(\nu(m))$ and
 $\tau_w^{-1}(m) < \tau_w^{-1}(\nu^{-1}(w))$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.not_blocking`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#not-blocking).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.not_blocking`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#not-blocking).
 
 ## Rejected proposals bound stable partners
 
@@ -150,7 +150,7 @@ preferences given by the rankings, let $m$ be a proposer, and let $b$ be a natur
 the number of proposals $m$ has made in $s$. If for every rank $k < b$ the receiver $\sigma_m(k)$
 does not hold $m$ in $s$, then $\sigma_m^{-1}(\nu(m)) \ge b$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.le_rank_of_rejected`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#le-rank-of-rejected).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.le_rank_of_rejected`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#le-rank-of-rejected).
 
 ## Cases of the receiver's new holder
 
@@ -161,7 +161,7 @@ after $m$ proposes to her; or $w$ holds some $y$ in $s$ with $\tau_w^{-1}(m) < \
 and holds $m$ after $m$ proposes to her; or $w$ holds some $y$ in $s$ with
 $\tau_w^{-1}(m) \ge \tau_w^{-1}(y)$ and holds $y$ after $m$ proposes to her.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder_cases`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#new-holder-cases).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder_cases`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#new-holder-cases).
 
 ## Remaining proposals
 
@@ -169,7 +169,7 @@ For a state $s$ of deferred acceptance with $n$ proposers and $n$
 receivers, in which each proposer $m$ has made $k_m$ proposals, the number of proposals still
 available is $\sum_{m} \max(n - k_m, 0)$, the sum running over all $n$ proposers.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.remaining`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#remaining).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.remaining`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#remaining).
 
 ## A proposal adds one to the proposal count
 
@@ -178,7 +178,7 @@ receivers. If proposer $m$ has made fewer than $n$ proposals in a state $s$ of d
 acceptance, then after $m$ proposes, the total number of proposals made by all proposers is one
 more than in $s$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_propose`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#sum-next-propose).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_propose`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#sum-next-propose).
 
 ## Deferred acceptance makes at most n² proposals
 
@@ -188,7 +188,7 @@ acceptance the numbers of proposals made by the proposers sum to at most $n \cdo
 
 No proposer proposes more than $n$ times.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_galeShapley_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#sum-next-gale-shapley-le).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_galeShapley_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#sum-next-gale-shapley-le).
 
 ## When deferred acceptance stops, every proposer is held
 
@@ -198,7 +198,7 @@ acceptance that satisfies the invariant of deferred acceptance for these ranking
 that no proposer is both free in $s$ and has made fewer than $n$ proposals in $s$. Then every
 proposer is held by some receiver in $s$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.held_of_done`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#held-of-done).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.held_of_done`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#held-of-done).
 
 ## Every receiver holds someone once every proposer is held
 
@@ -206,7 +206,7 @@ Let $s$ be a state of deferred
 acceptance with $n$ proposers and $n$ receivers. If every proposer is held by some receiver in
 $s$, then every receiver holds some proposer in $s$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.holds_of_held`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#holds-of-held).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.holds_of_held`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#holds-of-held).
 
 ## Receiver's partner
 
@@ -214,7 +214,7 @@ In a state $s$ of deferred acceptance with $n$ proposers and $n$
 receivers, both numbered $0, \dots, n-1$, the partner of a receiver $w$ is the proposer she holds
 in $s$; if she holds nobody, it is the proposer numbered $w$ (a default value).
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.partnerW`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#partner-w).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.partnerW`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#partner-w).
 
 ## Proposer's partner
 
@@ -223,13 +223,13 @@ receivers, both numbered $0, \dots, n-1$, the partner of a proposer $m$ is the l
 receiver that holds $m$ in $s$; if no receiver holds $m$, it is the receiver numbered $m$
 (a default value).
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.partnerM`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#partner-m).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.partnerM`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#partner-m).
 
 ## The Gale-Shapley matching
 
 Each proposer with the receiver who holds him at the end.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching).
 
 ## A proposer's final partner is his last proposal
 
@@ -240,7 +240,7 @@ $m$ has made in the final state of deferred acceptance. Then $p_m \ge 1$, and th
 partner $\mu(m)$ of $m$ has rank $p_m - 1$ in his ranking, that is,
 $\sigma_m^{-1}(\mu(m)) = p_m - 1$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_rank_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-rank-gs-matching).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_rank_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-rank-gs-matching).
 
 ## The Gale-Shapley matching is stable
 
@@ -248,21 +248,21 @@ For $n$ proposers and $n$ receivers, each with a
 ranking of the other side, the perfect matching computed by deferred acceptance is stable for the
 strict preferences given by these rankings.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.isStable_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#is-stable-gs-matching).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.isStable_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#is-stable-gs-matching).
 
 ## Proposer-optimality
 
 No stable matching gives a proposer a partner he prefers to his
 Gale-Shapley partner.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching_proposer_optimal`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 556](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L556). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching-proposer-optimal).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching_proposer_optimal`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 556](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L556). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching-proposer-optimal).
 
 ## Receiver-pessimality
 
 No stable matching gives a receiver a partner she likes less than
 her Gale-Shapley partner.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching_receiver_pessimal`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching-receiver-pessimal).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching_receiver_pessimal`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#gs-matching-receiver-pessimal).
 
 ## Rank under a strict total order
 
@@ -270,7 +270,7 @@ For a strict total order $<$ on $\{0, \dots, n-1\}$, the
 rank of an element $a$ is the number of elements $b$ with $b < a$ (the elements preferred to $a$),
 as an element of $\{0, \dots, n-1\}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.orderRank`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#order-rank).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.orderRank`, a definition declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#order-rank).
 
 ## Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking
 
@@ -280,7 +280,7 @@ such that, for all $a$ and $b$, $a \prec b$ holds exactly when $\sigma^{-1}(a) <
 
 Hence the Gale-Shapley algorithm on rankings applies to every preference on $\{0, \dots, n-1\}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_toOrder_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-to-order-eq).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_toOrder_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-to-order-eq).
 
 ## Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers
 
@@ -296,7 +296,7 @@ and $\tau$ is stable for these preferences and proposer-optimal: for every perfe
 that is stable for these preferences and every proposer $m$, it is not the case that
 $\nu(m) \lt _m \mu(m)$.
 
-Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_rankings_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-rankings-gs-matching).
+Formalized by `Cslib.Algorithms.Lean.Matching.GaleShapley.exists_rankings_gsMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matching/GaleShapley.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html#exists-rankings-gs-matching).
 
 ## Depends on
 
@@ -305,4 +305,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gale–Shapley algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/gale-shapley-algorithm)

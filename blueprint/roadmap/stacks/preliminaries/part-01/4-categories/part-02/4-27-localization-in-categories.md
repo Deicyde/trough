@@ -8,7 +8,7 @@ proof: formalized
 
 # 4.27 Localization in categories
 
-Section 4.27 of the Stacks Project, [Tag 04VB](https://stacks.math.columbia.edu/tag/04VB). 20 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 19 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.27 of the Stacks Project, [Tag 04VB](https://stacks.math.columbia.edu/tag/04VB). 20 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 18 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04VC, a definition
 
@@ -16,9 +16,9 @@ Section 4.27 of the Stacks Project, [Tag 04VB](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`MorphismProperty.IsMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.IsMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L77) (StacksFrontier): “LMS1 = RMS1: identities and composites of elements of S lie in S”.
-- [`MorphismProperty.HasLeftCalculusOfFractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.HasLeftCalculusOfFractions#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L79) (StacksFrontier): “left multiplicative system: LMS1, LMS2 (exists\_leftFraction), LMS3 (ext)”.
-- [`MorphismProperty.HasRightCalculusOfFractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.HasRightCalculusOfFractions#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L81) (StacksFrontier): “right multiplicative system: RMS1, RMS2 (exists\_rightFraction), RMS3 (ext)”.
+- [`MorphismProperty.IsMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.IsMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L75) (StacksFrontier): “LMS1 = RMS1: identities and composites of elements of S lie in S”.
+- [`MorphismProperty.HasLeftCalculusOfFractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.HasLeftCalculusOfFractions#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L77) (StacksFrontier): “left multiplicative system: LMS1, LMS2 (exists\_leftFraction), LMS3 (ext)”.
+- [`MorphismProperty.HasRightCalculusOfFractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.HasRightCalculusOfFractions#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L79) (StacksFrontier): “right multiplicative system: RMS1, RMS2 (exists\_rightFraction), RMS3 (ext)”.
 
 ## Tag 04VD, a lemma
 
@@ -26,12 +26,12 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`MorphismProperty.LeftFraction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L83) (StacksFrontier): “the pairs (f : X → Y', s : Y → Y') with s ∈ S”.
-- [`CategoryTheory.MorphismProperty.LeftFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L85) (StacksFrontier): “the relation on pairs”.
-- [`MorphismProperty.equivalenceLeftFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.equivalenceLeftFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L86) (StacksFrontier): “(1) the relation is an equivalence relation”.
-- [`MorphismProperty.LeftFraction.comp₀_rel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.comp₀_rel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L88) (StacksFrontier): “(2) the class of the composite does not depend on the square chosen by LMS2”.
-- [`MorphismProperty.LeftFraction.Localization.Hom.comp_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.Hom.comp_eq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L90) (StacksFrontier): “(2) composition of classes is computed on representatives”.
-- [`MorphismProperty.LeftFraction.Localization.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L92) (StacksFrontier): “(3) the category S⁻¹C”.
+- [`MorphismProperty.LeftFraction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L81) (StacksFrontier): “the pairs (f : X → Y', s : Y → Y') with s ∈ S”.
+- [`CategoryTheory.MorphismProperty.LeftFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L83) (StacksFrontier): “the relation on pairs”.
+- [`MorphismProperty.equivalenceLeftFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.equivalenceLeftFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L84) (StacksFrontier): “(1) the relation is an equivalence relation”.
+- [`MorphismProperty.LeftFraction.comp₀_rel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.comp₀_rel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L86) (StacksFrontier): “(2) the class of the composite does not depend on the square chosen by LMS2”.
+- [`MorphismProperty.LeftFraction.Localization.Hom.comp_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.Hom.comp_eq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L88) (StacksFrontier): “(2) composition of classes is computed on representatives”.
+- [`MorphismProperty.LeftFraction.Localization.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L90) (StacksFrontier): “(3) the category S⁻¹C”.
 
 ## Tag 0BM2, a definition
 
@@ -39,14 +39,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.LeftFraction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L106) (StacksFrontier): “the pair `(f : X ⟶ Y', s : Y ⟶ Y')` with `s ∈ S`”.
-- [`CategoryTheory.MorphismProperty.LeftFraction.Localization.Hom.mk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction.Localization.Hom.mk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L108) (StacksFrontier): “its equivalence class `s⁻¹f`, a morphism `X ⟶ Y` of `S⁻¹C`”.
+- [`CategoryTheory.MorphismProperty.LeftFraction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L104) (StacksFrontier): “the pair `(f : X ⟶ Y', s : Y ⟶ Y')` with `s ∈ S`”.
+- [`CategoryTheory.MorphismProperty.LeftFraction.Localization.Hom.mk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction.Localization.Hom.mk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L106) (StacksFrontier): “its equivalence class `s⁻¹f`, a morphism `X ⟶ Y` of `S⁻¹C`”.
 
 ## Tag 04VE, a lemma
 
 [Tag 04VE](https://stacks.math.columbia.edu/tag/04VE) in the Stacks Project.
 
-**`CategoryTheory.Localization.exists_common_leftFraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/CommonDenominator.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/CommonDenominator.lean#L141).
+**`CategoryTheory.Localization.exists_common_leftFraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/CommonDenominator.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/CommonDenominator.lean#L141).
 
 > **Stacks 04VE**.
 > Let `W : MorphismProperty C` have left calculus of fractions and let `L` be a
@@ -71,38 +71,44 @@ theorem exists_common_leftFraction
 
 [Tag 04VF](https://stacks.math.columbia.edu/tag/04VF) in the Stacks Project.
 
-**`map_eq_iff_leftFractionRel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/Equality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/Equality.lean#L55).
+**`leftFraction_map_eq_tfae_of_same_denominator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/Equality.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/Equality.lean#L77). The attribute's comment: “Mathlib's `LeftFraction` `(f, s)` is the Stacks fraction `s⁻¹f`; the localization `S⁻¹𝒞` is represented by any localization functor `L` at `W`.”.
 
-> **Stacks 04VF.** For a left multiplicative system `W` on `C` and a localization functor
-> `L : C ⥤ D` at `W`, two left fractions `φ ψ : X ⟶ Y` have the same image in `D` if and only if
-> `LeftFractionRel φ ψ`, i.e. if and only if they agree after postcomposition with a suitable
-> morphism of `W`.
+> **Stacks 04VF.** Let `W` be a left multiplicative system on `C` and `L : C ⥤ D` a
+> localization functor at `W`. For `f g : X ⟶ Y'` and `s : Y ⟶ Y'` in `W`, the following are
+> equivalent:
+> 1. the left fractions `(f, s)` and `(g, s)` define the same morphism `L.obj X ⟶ L.obj Y`;
+> 2. there is `t : Y' ⟶ Y''` in `W` with `f ≫ t = g ≫ t`;
+> 3. there is `a : Y' ⟶ Y''` with `s ≫ a ∈ W` and `f ≫ a = g ≫ a`.
 
 ```lean
-theorem map_eq_iff_leftFractionRel {C D : Type*} [Category C] [Category D] (L : C ⥤ D)
-    {W : MorphismProperty C} [W.HasLeftCalculusOfFractions] [L.IsLocalization W]
-    {X Y : C} (φ ψ : W.LeftFraction X Y) :
-    φ.map L (Localization.inverts _ _) = ψ.map L (Localization.inverts _ _) ↔
-      LeftFractionRel φ ψ
+theorem leftFraction_map_eq_tfae_of_same_denominator {C D : Type*} [Category C] [Category D]
+    (L : C ⥤ D) {W : MorphismProperty C} [W.HasLeftCalculusOfFractions] [L.IsLocalization W]
+    {X Y Y' : C} (f g : X ⟶ Y') (s : Y ⟶ Y') (hs : W s) :
+    List.TFAE
+      [(LeftFraction.mk f s hs).map L (Localization.inverts _ _) =
+          (LeftFraction.mk g s hs).map L (Localization.inverts _ _),
+        ∃ (Y'' : C) (t : Y' ⟶ Y''), W t ∧ f ≫ t = g ≫ t,
+        ∃ (Y'' : C) (a : Y' ⟶ Y''), W (s ≫ a) ∧ f ≫ a = g ≫ a]
 ```
 
 ## Tag 05Q0, a remark
 
 [Tag 05Q0](https://stacks.math.columbia.edu/tag/05Q0) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.isColimitUnderHomCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/HomAsColimit.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/HomAsColimit.lean#L128). The attribute's comment: “the displayed formula 05Q1: the morphisms X ⟶ Y of the localization are the filtered colimit of the sets Mor\_C(X, Y') over the objects (s : Y ⟶ Y') of Y/S, at the tautological cocone whose leg at s sends f to the left fraction s⁻¹ f”. References: SGA 4 VI (6.5).
+**`CategoryTheory.MorphismProperty.isFiltered_under_and_nonempty_isColimit_underHomCoconeULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/HomAsFilteredColimit.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/HomAsFilteredColimit.lean#L60). The attribute's comment: “Mathlib's W.Under ⊤ Y is the category Y/S, and HasLeftCalculusOfFractions is LMS1-LMS3; the filteredness of Y/S is isFiltered\_under\_of\_hasLeftCalculusOfFractions and formula 05Q1 is isColimitUnderHomCoconeULift, for any localization L of C at W”.
 
-> **Morphisms of `W⁻¹C` as a colimit over `Y/S`**: for a left multiplicative system `W` on `C`,
-> a localization functor `L : C ⥤ D` of `C` at `W` and objects `X`, `Y` of `C`, the morphisms
-> `L.obj X ⟶ L.obj Y` of `W⁻¹C` are the colimit `colim_{(s : Y ⟶ Y') ∈ Y/S} Mor_C(X, Y')`, in the
-> sense that the tautological cocone `underHomCocone`, whose leg at `s` sends `f` to the left
-> fraction `s⁻¹ f`, is a colimit cocone.
-> The index category `Y/S` is filtered by
-> `MorphismProperty.isFiltered_under_of_hasLeftCalculusOfFractions`, so this exhibits the morphisms
-> of `W⁻¹C` as a filtered colimit of morphisms of `C`.
+> **Stacks 05Q0**: let `W` be a left multiplicative system on `C`, let `L : C ⥤ D` be a
+> localization functor of `C` at `W`, and let `X`, `Y` be objects of `C`. Then the category `Y/S`
+> (Mathlib's `W.Under ⊤ Y`) of the morphisms `s : Y ⟶ Y'` of `W`, with morphisms the commutative
+> triangles `s ≫ a = t` for arbitrary `a`, is filtered, and the morphisms `L.obj X ⟶ L.obj Y` of
+> `W⁻¹C` are the filtered colimit `colim_{(s : Y ⟶ Y') ∈ Y/S} Mor_C(X, Y')` (formula 05Q1): the
+> cocone `underHomCoconeULift`, whose leg at `s` sends `f : X ⟶ Y'` to the left fraction `s⁻¹ f`,
+> is a colimit cocone. Both sides are lifted by `ULift` to a common universe, so no condition
+> relates the universe of the morphisms of `D` to that of the morphisms of `C`.
 
 ```lean
-noncomputable def isColimitUnderHomCocone (X Y : C) : IsColimit (W.underHomCocone L X Y)
+theorem isFiltered_under_and_nonempty_isColimit_underHomCoconeULift (X Y : C) :
+    IsFiltered (W.Under ⊤ Y) ∧ Nonempty (IsColimit (W.underHomCoconeULift L X Y))
 ```
 
 ## Tag 04VG, a lemma
@@ -111,18 +117,18 @@ noncomputable def isColimitUnderHomCocone (X Y : C) : IsColimit (W.underHomCocon
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.LeftFraction.Localization.Q`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction.Localization.Q#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L94) (StacksFrontier): “(1) the functor Q”. References: SGA 4 VI (6.5); SGA 4½ Etat 0 (2.3.1).
-- [`MorphismProperty.LeftFraction.Localization.Q_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.Q_map#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L95) (StacksFrontier): “(1) Q sends f to the class of (f, id)”.
-- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.inverts`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.inverts#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L97) (StacksFrontier): “(2) Q(s) is an isomorphism for s ∈ S”.
-- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.lift#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L99) (StacksFrontier): “(3) existence of H”.
-- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.fac`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.fac#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L101) (StacksFrontier): “(3) H ∘ Q = G”.
-- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.uniq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.uniq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L103) (StacksFrontier): “(3) uniqueness of H”.
+- [`CategoryTheory.MorphismProperty.LeftFraction.Localization.Q`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.LeftFraction.Localization.Q#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L92) (StacksFrontier): “(1) the functor Q”. References: SGA 4 VI (6.5); SGA 4½ Etat 0 (2.3.1).
+- [`MorphismProperty.LeftFraction.Localization.Q_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.Q_map#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L93) (StacksFrontier): “(1) Q sends f to the class of (f, id)”.
+- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.inverts`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.inverts#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L95) (StacksFrontier): “(2) Q(s) is an isomorphism for s ∈ S”.
+- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.lift#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L97) (StacksFrontier): “(3) existence of H”.
+- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.fac`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.fac#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L99) (StacksFrontier): “(3) H ∘ Q = G”.
+- [`MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.uniq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MorphismProperty.LeftFraction.Localization.StrictUniversalPropertyFixedTarget.uniq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L101) (StacksFrontier): “(3) uniqueness of H”.
 
 ## Tag 05Q2, a lemma
 
 [Tag 05Q2](https://stacks.math.columbia.edu/tag/05Q2) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.Q_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/Commutation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/Commutation.lean#L53). References: SGA 5 V (2.3.4), “first assertion”.
+**`CategoryTheory.MorphismProperty.Q_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/Commutation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/Commutation.lean#L53). References: SGA 5 V (2.3.4), “first assertion”.
 
 > **Stacks 05Q2.** For a left multiplicative system `W` on `C`, the localization functor
 > `Q : C ⥤ W⁻¹C` commutes with finite colimits. This does not assert that `W⁻¹C` has finite
@@ -138,7 +144,7 @@ theorem Q_preservesFiniteColimits
 
 [Tag 05Q3](https://stacks.math.columbia.edu/tag/05Q3) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.exists_leftFraction_lift_of_commSq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/LiftSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/LiftSquare.lean#L116).
+**`CategoryTheory.MorphismProperty.exists_leftFraction_lift_of_commSq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/LiftSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/LiftSquare.lean#L116).
 
 > **Stacks 05Q3**.
 > A commutative square in the left localisation `W⁻¹C` between images of
@@ -165,7 +171,7 @@ lemma exists_leftFraction_lift_of_commSq
 
 [Tag 04VH](https://stacks.math.columbia.edu/tag/04VH) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.RightFraction.comp_rel_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L174). The attribute's comment: “(2)”. References: SGA 4 VI (6.5), “6.5 c)”.
+**`CategoryTheory.MorphismProperty.RightFraction.comp_rel_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L173). The attribute's comment: “(2)”. References: SGA 4 VI (6.5), “6.5 c)”.
 
 > **Stacks 04VH (2)**.
 > The canonical composition of representatives respects the equivalence relation
@@ -180,7 +186,7 @@ theorem RightFraction.comp_rel_comp [W.HasRightCalculusOfFractions] {X Y Z : C}
     RightFractionRel (RightFraction.comp W φ ψ) (RightFraction.comp W φ' ψ')
 ```
 
-**`CategoryTheory.MorphismProperty.RightLocalization.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L272). The attribute's comment: “(3)”. References: SGA 4 VI (6.5).
+**`CategoryTheory.MorphismProperty.RightLocalization.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L271). The attribute's comment: “(3)”. References: SGA 4 VI (6.5).
 
 > **Stacks 04VH (3)**.
 > The objects of the right-fractions model `W⁻¹C` are the objects of `C`, the hom-sets are
@@ -195,13 +201,13 @@ noncomputable instance RightLocalization.category [W.HasRightCalculusOfFractions
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.equivalenceRightFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.equivalenceRightFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L52) (StacksFrontier): “(1)”.
+- [`CategoryTheory.MorphismProperty.equivalenceRightFractionRel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.equivalenceRightFractionRel#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Defs.lean#L51) (StacksFrontier): “(1)”.
 
 ## Tag 0BM3, a definition
 
 [Tag 0BM3](https://stacks.math.columbia.edu/tag/0BM3) in the Stacks Project.
 
-**`RightLocalizationAsFraction.fInvS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Morphism.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Morphism.lean#L69).
+**`RightLocalizationAsFraction.fInvS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Morphism.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Morphism.lean#L69).
 
 > Given a morphism `f : X' ⟶ Y` and a morphism `s : X' ⟶ X` with `s ∈ W` (where
 > `W` is a right multiplicative system, i.e. has a right calculus of fractions),
@@ -220,7 +226,7 @@ noncomputable def fInvS [W.HasRightCalculusOfFractions]
 
 [Tag 04VI](https://stacks.math.columbia.edu/tag/04VI) in the Stacks Project.
 
-**`CategoryTheory.Localization.exists_common_rightFraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/CommonDenominator.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/CommonDenominator.lean#L169). References: SGA 4½ Etat 0 (2.3.2), “partial”.
+**`CategoryTheory.Localization.exists_common_rightFraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/CommonDenominator.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/CommonDenominator.lean#L169). References: SGA 4½ Etat 0 (2.3.2), “partial”.
 
 > **Stacks 04VI** (common right denominator).
 >
@@ -244,26 +250,31 @@ theorem exists_common_rightFraction
 
 [Tag 04VJ](https://stacks.math.columbia.edu/tag/04VJ) in the Stacks Project.
 
-**`map_eq_iff_rightFractionRel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Equality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Equality.lean#L55).
+**`CategoryTheory.MorphismProperty.RightFraction.map_mk_eq_map_mk_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Equality.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Equality.lean#L79).
 
-> **Stacks 04VJ.** For a right multiplicative system `W` on `C` and a localization functor
-> `L : C ⥤ D` at `W`, two right fractions `φ ψ : X ⟶ Y` have the same image in `D` if and only if
-> `RightFractionRel φ ψ`, i.e. if and only if they agree after precomposition with a suitable
-> morphism of `W`.
+> **Stacks 04VJ.** Let `W` be a right multiplicative system on `C` and `L : C ⥤ D` a
+> localization functor at `W`. For two right fractions `(f : X' ⟶ Y, s : X' ⟶ X)` and
+> `(g : X' ⟶ Y, s : X' ⟶ X)` with the same denominator `s`, the following are equivalent:
+> 1. their images in `D` are equal;
+> 2. there is a morphism `t : X'' ⟶ X'` in `W` with `t ≫ f = t ≫ g`;
+> 3. there is a morphism `a : X'' ⟶ X'` with `a ≫ f = a ≫ g` and `a ≫ s` in `W`.
 
 ```lean
-theorem map_eq_iff_rightFractionRel {C D : Type*} [Category C] [Category D] (L : C ⥤ D)
+theorem map_mk_eq_map_mk_tfae {C D : Type*} [Category C] [Category D] (L : C ⥤ D)
     {W : MorphismProperty C} [W.HasRightCalculusOfFractions] [L.IsLocalization W]
-    {X Y : C} (φ ψ : W.RightFraction X Y) :
-    φ.map L (Localization.inverts _ _) = ψ.map L (Localization.inverts _ _) ↔
-      RightFractionRel φ ψ
+    {X Y X' : C} (s : X' ⟶ X) (hs : W s) (f g : X' ⟶ Y) :
+    List.TFAE
+      [(RightFraction.mk s hs f).map L (Localization.inverts _ _) =
+          (RightFraction.mk s hs g).map L (Localization.inverts _ _),
+        ∃ (X'' : C) (t : X'' ⟶ X'), W t ∧ t ≫ f = t ≫ g,
+        ∃ (X'' : C) (a : X'' ⟶ X'), a ≫ f = a ≫ g ∧ W (a ≫ s)]
 ```
 
 ## Tag 05Q4, a remark
 
 [Tag 05Q4](https://stacks.math.columbia.edu/tag/05Q4) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.isCofiltered_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean#L66).
+**`CategoryTheory.MorphismProperty.isCofiltered_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean#L66).
 
 > **Stacks 05Q4**, first claim: for a right multiplicative system `W` on `C` and an
 > object `X` of `C`, the category `S/X = W.Over ⊤ X` of `W`-morphisms to `X` is cofiltered
@@ -273,7 +284,7 @@ theorem map_eq_iff_rightFractionRel {C D : Type*} [Category C] [Category D] (L :
 theorem isCofiltered_over (X : C) : (𝟭 (W.Over ⊤ X)).IsCofiltered
 ```
 
-**`CategoryTheory.MorphismProperty.isColimitOverHomCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean#L147). References: SGA 4½ Etat 0 (2.3.2); SGA 5 V (2.3.3), “Hom-set clause”.
+**`CategoryTheory.MorphismProperty.isColimitOverHomCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/LeftFraction/AsColimit.lean#L147). References: SGA 4½ Etat 0 (2.3.2); SGA 5 V (2.3.3), “Hom-set clause”.
 
 > **Stacks 05Q4**, second claim: for a right multiplicative system `W` on `C`, a
 > localization functor `L : C ⥤ D` of `C` at `W` and objects `X`, `Y` of `C`, the
@@ -291,45 +302,41 @@ noncomputable def isColimitOverHomCocone (X Y : C) : IsColimit (W.overHomCocone 
 
 [Tag 04VK](https://stacks.math.columbia.edu/tag/04VK) in the Stacks Project.
 
-**`Q04VK`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean#L64). The attribute's comment: “(1)”. References: SGA 5 V (2.3), “functor p : E → E(S⁻¹)”; SGA 4½ Etat 0 (2.3.1).
+**`CategoryTheory.MorphismProperty.RightLocalization.Q`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean#L80). The attribute's comment: “(1)”.
 
-> The canonical localization functor `Q04VK : 𝓒 ⥤ S⁻¹𝓒` (Stacks Tag 04VK (1)).
-> This is the Mathlib functor `LeftFraction.Localization.Q`.
-
-```lean
-noncomputable def Q04VK : 𝓒 ⥤ LeftFraction.Localization S
-```
-
-**`Q_isIso_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean#L81). The attribute's comment: “(2)”.
-
-> Stacks 04VK (2): For any `s ∈ S` the morphism `Q04VK(s)` is an isomorphism
-> in `S⁻¹𝓒`.
+> **Stacks 04VK (1)**: the functor `Q : C ⥤ S⁻¹C` into the category of right fractions,
+> the identity on objects and sending `f : X ⟶ Y` to the class of the pair `(f, 𝟙 X)`.
 
 ```lean
-theorem Q_isIso_of_mem {X Y : 𝓒} (s : X ⟶ Y) (hs : S s) :
-    IsIso ((Q04VK S).map s)
+noncomputable def Q : C ⥤ RightLocalization W
 ```
 
-**`exists_unique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/UniversalProperty.lean#L92). The attribute's comment: “(3)”. References: SGA 5 V (2.3), “left calc. of fractions”; SGA 4½ Etat 0 (2.3.1), “partial”; SGA 4½ Etat 0 (Problem2), “partial”.
+**`CategoryTheory.MorphismProperty.RightLocalization.isIso_Q_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean#L104). The attribute's comment: “(2)”.
 
-> Stacks 04VK (3) — combined statement: for any functor `G : 𝓒 ⥤ 𝓓`
-> inverting `S`, there exists a *unique* functor `H : S⁻¹𝓒 ⥤ 𝓓` such that
-> `H ∘ Q04VK = G`.
+> **Stacks 04VK (2)**: for `s ∈ W`, the morphism `Q s` is an isomorphism of
+> `RightLocalization W`; its inverse is the class of the pair `(𝟙 X, s)`.
 
 ```lean
-theorem exists_unique_lift (G : 𝓒 ⥤ 𝓓) (hG : S.IsInvertedBy G) :
-    ∃! H : LeftFraction.Localization S ⥤ 𝓓, (Q04VK S) ⋙ H = G
+theorem isIso_Q_map {X Y : C} (s : X ⟶ Y) (hs : W s) :
+    IsIso ((RightLocalization.Q W).map s)
 ```
 
-Declarations registered for the tag:
+**`CategoryTheory.MorphismProperty.RightLocalization.existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/UniversalProperty.lean#L192). The attribute's comment: “(3)”.
 
-- [`CategoryTheory.Functor.q_isLocalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.q_isLocalization#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks04VK.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Stacks04VK.lean#L10) (StacksFrontier). References: SGA 4½ Etat 0 (2.3.1), “partial”; SGA 4½ Etat 0 (2.3.2), “partial”.
+> **Stacks 04VK (3)**: every functor `G : C ⥤ D` inverting the right multiplicative system
+> `W` factors as `G = Q ⋙ H` for a unique functor `H : RightLocalization W ⥤ D` out of the
+> category of right fractions.
+
+```lean
+theorem existsUnique_lift (G : C ⥤ D) (hG : W.IsInvertedBy G) :
+    ∃! H : RightLocalization W ⥤ D, RightLocalization.Q W ⋙ H = G
+```
 
 ## Tag 05Q6, a lemma
 
 [Tag 05Q6](https://stacks.math.columbia.edu/tag/05Q6) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.Q_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Commutation.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/Commutation.lean#L354).
+**`CategoryTheory.MorphismProperty.Q_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/Commutation.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/Commutation.lean#L354).
 
 > **Stacks 05Q6.** For a right multiplicative system `W` on `C`, the localization functor
 > `Q : C ⥤ W⁻¹C` commutes with finite limits. This does not assert that `W⁻¹C` has finite
@@ -346,7 +353,7 @@ theorem Q_preservesFiniteLimits
 
 [Tag 05Q7](https://stacks.math.columbia.edu/tag/05Q7) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.exists_rightFraction_lift_of_commSq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/LiftSquare.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/RightFraction/LiftSquare.lean#L59).
+**`CategoryTheory.MorphismProperty.exists_rightFraction_lift_of_commSq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/RightFraction/LiftSquare.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/RightFraction/LiftSquare.lean#L59).
 
 > **Stacks 05Q7.**
 > Let `W : MorphismProperty C` admit a right calculus of fractions and let
@@ -377,7 +384,7 @@ theorem exists_rightFraction_lift_of_commSq
 
 [Tag 04VL](https://stacks.math.columbia.edu/tag/04VL) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.leftFractionEquivRightFraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Comparison.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Comparison.lean#L68). References: SGA 4½ Etat 0 (2.3.1), “partial”.
+**`CategoryTheory.MorphismProperty.leftFractionEquivRightFraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Comparison.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Comparison.lean#L68). References: SGA 4½ Etat 0 (2.3.1), “partial”.
 
 > **Stacks 04VL.**
 > The category of left fractions `LeftFraction.Localization W` and the category of right
@@ -392,7 +399,7 @@ noncomputable def leftFractionEquivRightFraction :
     LeftFraction.Localization W ≌ (LeftFraction.Localization W.op)ᵒᵖ
 ```
 
-**`CategoryTheory.MorphismProperty.compLeftFractionEquivRightFractionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Comparison.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Comparison.lean#L76).
+**`CategoryTheory.MorphismProperty.compLeftFractionEquivRightFractionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Comparison.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Comparison.lean#L76).
 
 > **Stacks 04VL.** The canonical equivalence of 04VL is *canonical*: it is compatible
 > with the two localisation functors out of `C`, i.e. it identifies a morphism written as a
@@ -408,7 +415,7 @@ noncomputable def compLeftFractionEquivRightFractionFunctor :
 
 [Tag 05Q8](https://stacks.math.columbia.edu/tag/05Q8) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.IsSaturated`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Defs.lean#L49).
+**`CategoryTheory.MorphismProperty.IsSaturated`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Defs.lean#L49).
 
 > `W` is a *saturated multiplicative system* when it is a multiplicative system — MS1 together
 > with the two Ore conditions MS2 and the two cancellation conditions MS3, i.e. both a left and a
@@ -423,7 +430,7 @@ structure IsSaturated (W : MorphismProperty C) : Prop
 
 [Tag 05Q9](https://stacks.math.columbia.edu/tag/05Q9) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.invertedClosure_eq_satClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L172).
+**`CategoryTheory.MorphismProperty.invertedClosure_eq_satClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L172).
 
 > `Ŝ = S'`: a morphism becomes invertible in the localization exactly
 > when it has a `W`-partner on each side.
@@ -432,7 +439,7 @@ structure IsSaturated (W : MorphismProperty C) : Prop
 theorem invertedClosure_eq_satClosure : W.invertedClosure = W.satClosure
 ```
 
-**`CategoryTheory.MorphismProperty.le_invertedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L180).
+**`CategoryTheory.MorphismProperty.le_invertedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L180).
 
 > `W ≤ Ŝ`: every morphism of `W` is inverted by `Q`.
 
@@ -440,7 +447,7 @@ theorem invertedClosure_eq_satClosure : W.invertedClosure = W.satClosure
 theorem le_invertedClosure : W ≤ W.invertedClosure
 ```
 
-**`CategoryTheory.MorphismProperty.isSaturated_invertedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L255).
+**`CategoryTheory.MorphismProperty.isSaturated_invertedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L255).
 
 > `Ŝ` is itself a saturated multiplicative system: it has a left and a right calculus of
 > fractions and satisfies MS4.
@@ -449,7 +456,7 @@ theorem le_invertedClosure : W ≤ W.invertedClosure
 theorem isSaturated_invertedClosure : IsSaturated W.invertedClosure
 ```
 
-**`CategoryTheory.MorphismProperty.invertedClosure_le_of_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L272).
+**`CategoryTheory.MorphismProperty.invertedClosure_le_of_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L272).
 
 > `Ŝ` is the *smallest* saturated multiplicative system containing `W`:
 > it is contained in every saturated multiplicative system containing `W`.
@@ -459,7 +466,7 @@ theorem invertedClosure_le_of_isSaturated (W' : MorphismProperty C)
     (hW' : IsSaturated W') (hWW' : W ≤ W') : W.invertedClosure ≤ W'
 ```
 
-**`CategoryTheory.MorphismProperty.IsSaturated.invertedClosure_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L278).
+**`CategoryTheory.MorphismProperty.IsSaturated.invertedClosure_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/Saturated/Closure.lean#L278).
 
 > If `W` is already saturated then `Ŝ = W`.
 
@@ -475,4 +482,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.27, Tag 04VB](https://stacks.math.columbia.edu/tag/04VB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

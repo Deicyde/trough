@@ -8,7 +8,7 @@ proof: formalized
 
 # Eigenvalue inequalities and perturbation: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html).
 
 Courant–Fischer, Weyl, Ky Fan, Cauchy interlacing, Schur–Horn, Eckart–Young, Bauer–Fike, Peierls–Klein for self-adjoint operators; statements only about finite matrices move to LinearAlgebra.
 
@@ -26,7 +26,7 @@ $n \times n$ matrix $D$ such that $\operatorname{Re} \langle b_i, T b_i \rangle 
 
 - I. Schur, 1923, Über eine Klasse von Mittelbildungen mit Anwendungen auf die Determinantentheorie; A. Horn, Doubly Stochastic Matrices and the Diagonal of a Rotation Matrix, Amer. J. Math. 76 (1954), 620–630, DOI 10.2307/2372705.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.SchurHorn.schur_diagonal_eigenvalues_doublyStochastic`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/SchurHorn.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/SchurHorn.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html#schur-diagonal-eigenvalues-doubly-stocha).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.SchurHorn.schur_diagonal_eigenvalues_doublyStochastic`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/SchurHorn.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/SchurHorn.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html#schur-diagonal-eigenvalues-doubly-stocha).
 
 ## Eckart–Young theorem in operator norm
 
@@ -41,7 +41,7 @@ and indexed from $0$, and $\sigma_j(T) = 0$ for $j \ge \dim E$.
 
 - C. Eckart and G. Young, The Approximation of One Matrix by Another of Lower Rank, Psychometrika 1 (1936), 211-218, DOI 10.1007/BF02288367; unitary-invariant extension L. Mirsky, QJM 11 (1960), DOI 10.1093/qmath/11.1.50.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.EckartYoungWanted.eckartYoung_best_rank_approx_operator_norm`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/EckartYoung.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/EckartYoung.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html#eckart-young-best-rank-approx-operator-n).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.EckartYoungWanted.eckartYoung_best_rank_approx_operator_norm`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/EckartYoung.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/EckartYoung.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html#eckart-young-best-rank-approx-operator-n).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Eigenvalue inequalities and perturbation](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/eigenvalue-inequalities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/eigenvalue-inequalities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/eigenvalue-inequalities)

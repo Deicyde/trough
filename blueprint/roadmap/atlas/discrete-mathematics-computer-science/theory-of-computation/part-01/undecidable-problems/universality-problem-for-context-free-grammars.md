@@ -8,7 +8,7 @@ proof: formalized
 
 # Universality problem for context-free grammars
 
-36 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html).
+36 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html).
 
 ## Index codes and list languages
 
@@ -18,7 +18,7 @@ The code of an index $i \in \mathbb{N}$ is the bit word
 $\mathbf{t}\,\mathbf{f}^i$ of length $i + 1$: the bit $\mathbf{t}$ (true) followed by $i$ copies
 of the bit $\mathbf{f}$ (false); with $|$ for true and $1$ for false, it is the word $|\,1^i$.
 
-Formalized by `Cslib.Decidability.Grammar.bitCode`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-code).
+Formalized by `Cslib.Decidability.Grammar.bitCode`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-code).
 
 ## Concatenated code of an index sequence
 
@@ -27,7 +27,7 @@ of natural numbers, its code is the bit word $c(i_1)\,c(i_2) \cdots c(i_n)$, the
 the unary codes $c(i) = \mathbf{t}\,\mathbf{f}^i$ of its entries; the empty sequence has the
 empty code.
 
-Formalized by `Cslib.Decidability.Grammar.bitCodes`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes).
+Formalized by `Cslib.Decidability.Grammar.bitCodes`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes).
 
 ## List word of an index sequence
 
@@ -39,7 +39,7 @@ sequence $i_1, \dots, i_n$ is the word $w_{i_1} \cdots w_{i_n}\, c(i_n) \cdots c
 $\alpha \oplus \mathrm{Bool}$, where $c(i)$ is the unary code of $i$: the bit $\mathrm{true}$
 followed by $i$ bits $\mathrm{false}$.
 
-Formalized by `Cslib.Decidability.Grammar.listWord`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#list-word).
+Formalized by `Cslib.Decidability.Grammar.listWord`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#list-word).
 
 ## List language of a PCP instance
 
@@ -50,7 +50,7 @@ $\alpha \oplus \mathrm{Bool}$ of all words $w_{i_1} \cdots w_{i_n}\, c(i_n) \cdo
 $n \ge 1$ and $i_1, \dots, i_n < m$, where $c(i)$ is the unary code of $i$: the bit
 $\mathrm{true}$ followed by $i$ bits $\mathrm{false}$.
 
-Formalized by `Cslib.Decidability.Grammar.listLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#list-lang).
+Formalized by `Cslib.Decidability.Grammar.listLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#list-lang).
 
 ## Concatenated index codes are uniquely decodable
 
@@ -59,7 +59,7 @@ $I = (i_1, \dots, i_n)$ of natural numbers write $c(I) = c(i_1) \cdots c(i_n)$, 
 $c(i) = \mathbf{t}\,\mathbf{f}^i$ is the unary code of $i$. If $I$ and $J$ are finite sequences of
 natural numbers with $c(I) = c(J)$, then $I = J$.
 
-Formalized by `Cslib.Decidability.Grammar.bitCodes_injective`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes-injective).
+Formalized by `Cslib.Decidability.Grammar.bitCodes_injective`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes-injective).
 
 ## A PCP instance is solvable exactly when its top and bottom list languages meet
 
@@ -67,7 +67,7 @@ A list $P$
 of dominoes has a PCP solution if and only if some word belongs both to the list language of the
 top words of $P$ and to the list language of the bottom words of $P$.
 
-Formalized by `Cslib.Decidability.Grammar.pcp_iff_exists_mem_listLang`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#pcp-iff-exists-mem-list-lang).
+Formalized by `Cslib.Decidability.Grammar.pcp_iff_exists_mem_listLang`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#pcp-iff-exists-mem-list-lang).
 
 ## Encoded nonterminal
 
@@ -75,7 +75,7 @@ For a type $\alpha$ and a natural number $A$, the nonterminal $A$ as a
 symbol of an encoded grammar over the alphabet $\alpha \oplus \mathrm{Bool}$, that is, the element
 $\mathrm{inl}\, A$ of $\mathbb{N} \oplus (\alpha \oplus \mathrm{Bool})$.
 
-Formalized by `Cslib.Decidability.Grammar.uNt`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-nt).
+Formalized by `Cslib.Decidability.Grammar.uNt`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-nt).
 
 ## Encoded letter terminal
 
@@ -83,7 +83,7 @@ For a letter $a \in \alpha$, the terminal $a$ of the alphabet
 $\alpha \oplus \mathrm{Bool}$ as a symbol of an encoded grammar, that is, the element
 $\mathrm{inr}(\mathrm{inl}\, a)$ of $\mathbb{N} \oplus (\alpha \oplus \mathrm{Bool})$.
 
-Formalized by `Cslib.Decidability.Grammar.uLetter`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-letter).
+Formalized by `Cslib.Decidability.Grammar.uLetter`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-letter).
 
 ## Encoded bit terminal
 
@@ -91,14 +91,14 @@ For a type $\alpha$ and a bit $b$, the terminal $b$ of the alphabet
 $\alpha \oplus \mathrm{Bool}$ as a symbol of an encoded grammar, that is, the element
 $\mathrm{inr}(\mathrm{inr}\, b)$ of $\mathbb{N} \oplus (\alpha \oplus \mathrm{Bool})$.
 
-Formalized by `Cslib.Decidability.Grammar.uBit`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-bit).
+Formalized by `Cslib.Decidability.Grammar.uBit`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#u-bit).
 
 ## List of all letters
 
 For a finite alphabet $\alpha$, the list of all letters of $\alpha$,
 each appearing exactly once, in some fixed but unspecified order.
 
-Formalized by `Cslib.Decidability.Grammar.allLetters`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#all-letters).
+Formalized by `Cslib.Decidability.Grammar.allLetters`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#all-letters).
 
 ## The letters other than a given letter
 
@@ -106,7 +106,7 @@ For a letter $a$ of a finite alphabet with decidable
 equality, the list of all letters $b$ of the alphabet with $b \ne a$, in the order of a fixed
 enumeration of the alphabet.
 
-Formalized by `Cslib.Decidability.Grammar.others`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#others).
+Formalized by `Cslib.Decidability.Grammar.others`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#others).
 
 ## Domino-independent productions of the universality grammar
 
@@ -128,7 +128,7 @@ words, and for $N_7$ the concatenated codes of indices below $k$. The start prod
 with left side $N_0$) generate the malformed words and the two mismatch nonterminals $N_1$ and
 $N_2$.
 
-Formalized by `Cslib.Decidability.Grammar.baseRules`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#base-rules).
+Formalized by `Cslib.Decidability.Grammar.baseRules`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#base-rules).
 
 ## The mismatch productions
 
@@ -142,7 +142,7 @@ $A \to w\,N_4\,\mathrm{code}(i)$, which peel $w$ off, and, for each proper prefi
 $A \to u\,N_7\,\mathrm{code}(i)$ and $A \to u\,a\,N_3\,N_7\,\mathrm{code}(i)$ for every letter $a$
 other than the letter of $w$ following $u$, which stop matching.
 
-Formalized by `Cslib.Decidability.Grammar.mismatchRules`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-rules).
+Formalized by `Cslib.Decidability.Grammar.mismatchRules`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-rules).
 
 ## The universality grammar
 
@@ -154,7 +154,7 @@ productions of the bottom words of $P$ with nonterminal $2$.
 
 Its language is the union of the complements of the top and bottom list languages of $P$.
 
-Formalized by `Cslib.Decidability.Grammar.univGrammar`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#univ-grammar).
+Formalized by `Cslib.Decidability.Grammar.univGrammar`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#univ-grammar).
 
 ## Words of letters
 
@@ -162,7 +162,7 @@ For an alphabet $\alpha$, the language of words of letters is the set of
 all words over $\alpha \oplus \mathrm{Bool}$ whose symbols all lie in $\alpha$, that is, the words
 over $\alpha$ (including the empty word) viewed as words over $\alpha \oplus \mathrm{Bool}$.
 
-Formalized by `Cslib.Decidability.Grammar.lettersLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#letters-lang).
+Formalized by `Cslib.Decidability.Grammar.lettersLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#letters-lang).
 
 ## Nonempty words of letters
 
@@ -171,7 +171,7 @@ letters is the set of all nonempty words over $\alpha \oplus \mathrm{Bool}$ whos
 in $\alpha$, that is, the nonempty words over $\alpha$ viewed as words over
 $\alpha \oplus \mathrm{Bool}$.
 
-Formalized by `Cslib.Decidability.Grammar.letters1Lang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#letters1-lang).
+Formalized by `Cslib.Decidability.Grammar.letters1Lang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#letters1-lang).
 
 ## Words of bits
 
@@ -179,7 +179,7 @@ For an alphabet $\alpha$, the language over the disjoint union of $\alpha$
 and the bits $\{\mathbf{t}, \mathbf{f}\}$ consisting of the words in which every symbol is a bit,
 including the empty word.
 
-Formalized by `Cslib.Decidability.Grammar.bitsLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bits-lang).
+Formalized by `Cslib.Decidability.Grammar.bitsLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bits-lang).
 
 ## Codes of index sequences below $k$
 
@@ -189,7 +189,7 @@ the bit words $c(j_1) \cdots c(j_n)$ with $n \ge 0$ and $j_1, \dots, j_n < k$, w
 $c(j) = \mathbf{t}\,\mathbf{f}^j$ is the unary code of $j$. In particular it contains the empty
 word.
 
-Formalized by `Cslib.Decidability.Grammar.codesLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#codes-lang).
+Formalized by `Cslib.Decidability.Grammar.codesLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#codes-lang).
 
 ## The mismatch language
 
@@ -200,7 +200,7 @@ consists of the words $x\,\mathrm{code}(i_n) \cdots \mathrm{code}(i_1)$ where $x
 letters and $i_1, \dots, i_n$ with $n \ge 1$ are indices below $|P|$ such that
 $x \ne w_{i_1} \cdots w_{i_n}$.
 
-Formalized by `Cslib.Decidability.Grammar.mismatchLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-lang).
+Formalized by `Cslib.Decidability.Grammar.mismatchLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-lang).
 
 ## Malformed words
 
@@ -212,7 +212,7 @@ followed by a nonempty word of bits whose first bit is $1$; some bit is immediat
 letter; or it contains the block $|\,1^k$ (the bit $|$ followed by $k$ bits $1$) as a contiguous
 factor.
 
-Formalized by `Cslib.Decidability.Grammar.malformedLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#malformed-lang).
+Formalized by `Cslib.Decidability.Grammar.malformedLang`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#malformed-lang).
 
 ## Intended languages of the nonterminals of the universality grammar
 
@@ -225,7 +225,7 @@ of letters; $4$ to the nonempty words of letters; $5$ to the words of bits; $6$ 
 words; $7$ to the codes of index sequences with all indices below $|P|$; and every other number
 to the empty language.
 
-Formalized by `Cslib.Decidability.Grammar.univVal`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#univ-val).
+Formalized by `Cslib.Decidability.Grammar.univVal`, a definition declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#univ-val).
 
 ## Evaluating a form with one nonterminal
 
@@ -234,7 +234,7 @@ nonterminal. For terminal words $u$ and $v$, a nonterminal $A$ and a word $w$, t
 in the language that $V$ assigns to the sentential form $u\,A\,v$ if and only if $w = u z v$ for
 some $z \in V(A)$.
 
-Formalized by `Cslib.Decidability.Grammar.mem_evalForm_one`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-eval-form-one).
+Formalized by `Cslib.Decidability.Grammar.mem_evalForm_one`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-eval-form-one).
 
 ## Evaluating a form with two nonterminals
 
@@ -243,7 +243,7 @@ nonterminal. For terminal words $u$, $v$ and $x$, nonterminals $A$ and $B$ and a
 word $w$ lies in the language that $V$ assigns to the sentential form $u\,A\,v\,B\,x$ if and
 only if $w = u z_1 v z_2 x$ for some $z_1 \in V(A)$ and $z_2 \in V(B)$.
 
-Formalized by `Cslib.Decidability.Grammar.mem_evalForm_two`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-eval-form-two).
+Formalized by `Cslib.Decidability.Grammar.mem_evalForm_two`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-eval-form-two).
 
 ## The intended languages form a valuation of the universality grammar
 
@@ -253,7 +253,7 @@ assignment of intended languages to the nonterminals of the universality grammar
 valuation of that grammar: for every production $A \to \gamma$, the language that $\gamma$ denotes
 under the assignment is contained in the language assigned to $A$.
 
-Formalized by `Cslib.Decidability.Grammar.isValuation_univVal`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 525](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L525). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#is-valuation-univ-val).
+Formalized by `Cslib.Decidability.Grammar.isValuation_univVal`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 525](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L525). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#is-valuation-univ-val).
 
 ## A word that does not start with $w$ leaves $w$ at some position
 
@@ -261,7 +261,7 @@ Let $w$ and $x$ be words over an alphabet $\alpha$ such that $w$ is not a prefix
 there is a position $m < |w|$ with the following property: writing $w = u\,c\,r$ with $|u| = m$
 and $c \in \alpha$, either $x = u$, or $x = u\,a\,y$ for some letter $a \ne c$ and some word $y$.
 
-Formalized by `Cslib.Decidability.Grammar.exists_mismatch_of_not_prefix`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#exists-mismatch-of-not-prefix).
+Formalized by `Cslib.Decidability.Grammar.exists_mismatch_of_not_prefix`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#exists-mismatch-of-not-prefix).
 
 ## Membership in the mismatch productions
 
@@ -275,7 +275,7 @@ $A \to w\,N_4\,\mathrm{code}(i)$; for each $m < |w|$, with $u$ the prefix of $w$
 $A \to u\,N_7\,\mathrm{code}(i)$; and, for each such $m$ and each letter $a$ different from the
 letter of $w$ following $u$, $A \to u\,a\,N_3\,N_7\,\mathrm{code}(i)$.
 
-Formalized by `Cslib.Decidability.Grammar.mem_mismatchRules`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-mismatch-rules).
+Formalized by `Cslib.Decidability.Grammar.mem_mismatchRules`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mem-mismatch-rules).
 
 ## Every mismatched word is derivable from the mismatch nonterminal
 
@@ -288,7 +288,7 @@ $i_1, \dots, i_n$ of indices below $|P|$ and every word $x$ of letters with
 $x \ne w_{i_1} \cdots w_{i_n}$, the word $x\,\mathrm{code}(i_n) \cdots \mathrm{code}(i_1)$ is
 derivable from $A$ in the universality grammar of $P$.
 
-Formalized by `Cslib.Decidability.Grammar.mismatch_mem`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-mem).
+Formalized by `Cslib.Decidability.Grammar.mismatch_mem`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#mismatch-mem).
 
 ## The language of the universality grammar
 
@@ -305,7 +305,7 @@ contains $c(m)$ as a contiguous factor; or it equals $x\, c(i_n) \cdots c(i_1)$ 
 over $\alpha$ and indices $i_1, \dots, i_n < m$ with $n \ge 1$ such that
 $x \ne t_{i_1} \cdots t_{i_n}$ or $x \ne b_{i_1} \cdots b_{i_n}$.
 
-Formalized by `Cslib.Decidability.Grammar.language_univGrammar`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 765](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#language-univ-grammar).
+Formalized by `Cslib.Decidability.Grammar.language_univGrammar`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 765](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#language-univ-grammar).
 
 ## No right symbol directly precedes a left symbol in a left-then-right word
 
@@ -316,7 +316,7 @@ $\alpha$ and all words $Y$ over $\beta$, we have $u\,b\,a\,v \ne X\,Y$: a word o
 followed by a word over $\beta$ never has a symbol of $\beta$ immediately followed by a symbol of
 $\alpha$.
 
-Formalized by `Cslib.Decidability.Grammar.append_inr_inl_ne`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#append-inr-inl-ne).
+Formalized by `Cslib.Decidability.Grammar.append_inr_inl_ne`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#append-inr-inl-ne).
 
 ## A bit inside a word of letters followed by bits starts a suffix of the bits
 
@@ -326,7 +326,7 @@ words over $\alpha$ and over $\beta$ as words over the disjoint union $\alpha \o
 $u\,b\,z = X\,Y$ for words $u, z$ over $\alpha \oplus \beta$, a bit $b$, a word $X$ of letters and a
 word $Y$ of bits, then there are words $Y_1, Y_2$ of bits with $Y = Y_1 Y_2$ and $b\,z = Y_2$.
 
-Formalized by `Cslib.Decidability.Grammar.exists_suffix_of_inr`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 804](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L804). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#exists-suffix-of-inr).
+Formalized by `Cslib.Decidability.Grammar.exists_suffix_of_inr`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 804](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L804). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#exists-suffix-of-inr).
 
 ## Codes of indices below $k$ contain no code of $k$
 
@@ -335,7 +335,7 @@ $J = (j_1, \dots, j_n)$ be a finite sequence of natural numbers with $j_1, \dots
 $c(i) = \mathbf{t}\,\mathbf{f}^i$ for the unary code of $i$ and $c(J) = c(j_1) \cdots c(j_n)$. Then
 there are no bit words $Y$ and $Z$ with $c(J) = Y\,c(k)\,Z$.
 
-Formalized by `Cslib.Decidability.Grammar.bitCodes_ne_append_bitCode`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 843](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L843). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes-ne-append-bit-code).
+Formalized by `Cslib.Decidability.Grammar.bitCodes_ne_append_bitCode`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 843](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L843). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#bit-codes-ne-append-bit-code).
 
 ## Malformed words are in no list language
 
@@ -346,7 +346,7 @@ bits that is malformed with respect to $|P|$ (it has no bits, its first bit is a
 followed by a letter, or it contains the factor $|\,1^{|P|}$) does not belong to the list
 language of $s$ for $P$.
 
-Formalized by `Cslib.Decidability.Grammar.not_mem_listLang_of_malformed`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 872](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L872). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#not-mem-list-lang-of-malformed).
+Formalized by `Cslib.Decidability.Grammar.not_mem_listLang_of_malformed`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 872](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L872). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#not-mem-list-lang-of-malformed).
 
 ## Mismatched words are not in the list language
 
@@ -354,7 +354,7 @@ Let $P$ be a list of dominoes and $s$ a map
 from dominoes to words (in use, the top or the bottom). No word of the mismatch language of $s$
 for $P$ belongs to the list language of $s$ for $P$.
 
-Formalized by `Cslib.Decidability.Grammar.not_mem_listLang_of_mismatch`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 900](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#not-mem-list-lang-of-mismatch).
+Formalized by `Cslib.Decidability.Grammar.not_mem_listLang_of_mismatch`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 900](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#not-mem-list-lang-of-mismatch).
 
 ## Every word is malformed or well formed
 
@@ -364,7 +364,7 @@ $w = x\, c(j_1) \cdots c(j_n)$ for a word $x$ over $\alpha$ and a nonempty seque
 $j_1, \dots, j_n < k$, where $c(j)$ is the unary code of $j$: the bit $\mathrm{true}$ followed by
 $j$ bits $\mathrm{false}$.
 
-Formalized by `Cslib.Decidability.Grammar.malformed_or_wellFormed`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 933](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L933). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#malformed-or-well-formed).
+Formalized by `Cslib.Decidability.Grammar.malformed_or_wellFormed`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 933](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L933). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#malformed-or-well-formed).
 
 ## The universality grammar generates every word exactly when PCP has no solution
 
@@ -373,7 +373,7 @@ $\alpha$ be a finite alphabet with decidable equality and let $P$ be a list of d
 $\alpha$. The universality grammar of $P$ generates every word over $\alpha \oplus \mathrm{Bool}$
 if and only if the Post correspondence problem $P$ has no solution.
 
-Formalized by `Cslib.Decidability.Grammar.forall_mem_language_univGrammar_iff`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#forall-mem-language-univ-grammar-iff).
+Formalized by `Cslib.Decidability.Grammar.forall_mem_language_univGrammar_iff`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#forall-mem-language-univ-grammar-iff).
 
 ## The complement of PCP many-one reduces to universality of context-free grammars
 
@@ -384,7 +384,7 @@ encoded context-free grammar $G_P$ over the alphabet $\alpha \oplus \mathrm{Bool
 of $\alpha$ together with two bits) such that $P$ has no PCP solution if and only if $G_P$
 generates every word over $\alpha \oplus \mathrm{Bool}$.
 
-Formalized by `Cslib.Decidability.Grammar.manyOneReducible_not_pcp_univ`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 1095](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/PCPUniversality.lean#L1095). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#many-one-reducible-not-pcp-univ).
+Formalized by `Cslib.Decidability.Grammar.manyOneReducible_not_pcp_univ`, a theorem declared in [CSLibExt/Computability/Decidability/PCPUniversality.lean, line 1095](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/PCPUniversality.lean#L1095). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html#many-one-reducible-not-pcp-univ).
 
 ## Depends on
 
@@ -393,4 +393,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Universality problem for context-free grammars](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/undecidable-problems/universality-problem-for-context-free-grammars)

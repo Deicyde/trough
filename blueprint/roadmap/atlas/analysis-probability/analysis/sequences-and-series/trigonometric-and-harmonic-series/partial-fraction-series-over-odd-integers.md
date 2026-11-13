@@ -8,7 +8,7 @@ proof: formalized
 
 # Partial-fraction series over odd integers
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html).
 
 ## Difference series over $2k+1 \pm a$ that are polynomials on $(-\pi, \pi)$
 
@@ -29,7 +29,7 @@ $\sum_{0 \le j < r/2} (-1)^j C_{r-2j-1}(a) \frac{x^{2j+1}}{(2j+1)!}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 1, pp. 233–235.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry1Logratio.ramanujan_part1_ch9_entry1_logratio`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry1Logratio.lean, line 1630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry1Logratio.lean#L1630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html#ramanujan-part1-ch9-entry1-logratio).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry1Logratio.ramanujan_part1_ch9_entry1_logratio`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry1Logratio.lean, line 1621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry1Logratio.lean#L1621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html#ramanujan-part1-ch9-entry1-logratio).
 
 ## Sum series over $2k+1 \pm a$ on $(0, \pi)$
 
@@ -52,7 +52,7 @@ $\sum_{0 \le j < (r-1)/2} (-1)^j D_{r-1-2j}(a) \frac{x^{2j+1}}{(2j+1)!} +
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry2.ramanujan_part1_ch9_entry2`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry2.lean, line 1505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry2.lean#L1505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html#ramanujan-part1-ch9-entry2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry2.ramanujan_part1_ch9_entry2`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry2.lean, line 1505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry2.lean#L1505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html#ramanujan-part1-ch9-entry2).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Partial-fraction series over odd integers](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/partial-fraction-series-over-odd-integers)

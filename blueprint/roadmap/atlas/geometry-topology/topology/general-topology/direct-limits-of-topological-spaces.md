@@ -8,7 +8,7 @@ proof: formalized
 
 # Direct limits of topological spaces
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html).
 
 ## Generating relation of a direct limit
 
@@ -18,7 +18,7 @@ forming a directed system ($f_{ii}$ is the identity and $f_{jk} \circ f_{ij} = f
 $i \le j \le k$). This relation on the disjoint union $\bigsqcup_{i \in I} X_i$ relates
 $(i, x)$ to $(j, f_{ij}(x))$ for all $i \le j$ and $x \in X_i$, and relates no other pairs.
 
-Formalized by `TopologicalSpace.DirectLimit.Rel`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#rel).
+Formalized by `TopologicalSpace.DirectLimit.Rel`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#rel).
 
 ## Direct limit equivalence relation
 
@@ -28,7 +28,7 @@ directed system. This is the smallest equivalence relation on the disjoint union
 $\bigsqcup_{i \in I} X_i$ that relates $(i, x)$ to $(j, f_{ij}(x))$ for all $i \le j$ and
 $x \in X_i$.
 
-Formalized by `TopologicalSpace.DirectLimit.directLimitSetoid`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#direct-limit-setoid).
+Formalized by `TopologicalSpace.DirectLimit.directLimitSetoid`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#direct-limit-setoid).
 
 ## Direct limit of topological spaces
 
@@ -43,7 +43,7 @@ The directed-system laws and the continuity of the transition maps are hypothese
 construction: the underlying quotient does not use them, but without them it need not be a
 direct limit of topological spaces.
 
-Formalized by `TopologicalSpace.DirectLimit.Space`, an abbreviation declared in [MathlibExt/Topology/DirectLimit.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#space).
+Formalized by `TopologicalSpace.DirectLimit.Space`, an abbreviation declared in [MathlibExt/Topology/DirectLimit.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#space).
 
 ## Canonical map into the direct limit
 
@@ -52,7 +52,7 @@ topological spaces over a preorder $I$ with continuous transition maps
 $f_{ij} : X_i \to X_j$. For $i \in I$, the canonical map $\iota_i : X_i \to \varinjlim X_i$
 into the direct limit sends $x$ to the class of $(i, x)$.
 
-Formalized by `TopologicalSpace.DirectLimit.of`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of).
+Formalized by `TopologicalSpace.DirectLimit.of`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of).
 
 ## Canonical maps into the direct limit are continuous
 
@@ -61,7 +61,7 @@ directed system of topological spaces over a preorder $I$ with continuous transi
 $f_{ij} : X_i \to X_j$. For every $i \in I$, the canonical map
 $\iota_i : X_i \to \varinjlim X_i$ into the direct limit is continuous.
 
-Formalized by `TopologicalSpace.DirectLimit.of_continuous`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of-continuous).
+Formalized by `TopologicalSpace.DirectLimit.of_continuous`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of-continuous).
 
 ## Canonical maps commute with the transition maps
 
@@ -70,7 +70,7 @@ system of topological spaces over a preorder $I$ with continuous transition maps
 $f_{ij} : X_i \to X_j$. The canonical maps $\iota_i : X_i \to \varinjlim X_i$ into the direct
 limit satisfy $\iota_j(f_{ij}(x)) = \iota_i(x)$ for all $i \le j$ and $x \in X_i$.
 
-Formalized by `TopologicalSpace.DirectLimit.of_comp`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of-comp).
+Formalized by `TopologicalSpace.DirectLimit.of_comp`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#of-comp).
 
 ## Map out of the direct limit
 
@@ -81,7 +81,7 @@ $\psi_i : X_i \to Y$ with $\psi_j(f_{ij}(x)) = \psi_i(x)$ for all $i \le j$ and 
 induces the map $\varinjlim X_i \to Y$ from the direct limit that sends the class of $(i, x)$
 to $\psi_i(x)$.
 
-Formalized by `TopologicalSpace.DirectLimit.lift`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#lift).
+Formalized by `TopologicalSpace.DirectLimit.lift`, a definition declared in [MathlibExt/Topology/DirectLimit.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#lift).
 
 ## The induced map out of the direct limit is continuous
 
@@ -92,7 +92,7 @@ $\psi_i : X_i \to Y$ are continuous and satisfy $\psi_j(f_{ij}(x)) = \psi_i(x)$ 
 $i \le j$ and $x \in X_i$, then the induced map $\varinjlim X_i \to Y$ from the direct limit,
 sending the class of $(i, x)$ to $\psi_i(x)$, is continuous.
 
-Formalized by `TopologicalSpace.DirectLimit.lift_continuous`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/DirectLimit.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#lift-continuous).
+Formalized by `TopologicalSpace.DirectLimit.lift_continuous`, a theorem declared in [MathlibExt/Topology/DirectLimit.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/DirectLimit.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html#lift-continuous).
 
 ## Depends on
 
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Direct limits of topological spaces](https://deicyde.github.io/atlas-lean/roadmap/Topology/general-topology/direct-limits-of-topological-spaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/general-topology/direct-limits-of-topological-spaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/general-topology/direct-limits-of-topological-spaces)

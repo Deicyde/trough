@@ -7,7 +7,7 @@ statement: formalized
 
 # Equationally Noetherian groups
 
-10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html).
+10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html).
 
 ## Evaluation of an equation at an assignment (Kourovka 14.20)
 
@@ -17,7 +17,7 @@ $x = (x_0, \dots, x_{n-1}) \in G^n$, evaluation at $x$ is the group homomorphism
 from the free product of $G$ and $F_n$ that is the identity on $G$ and sends $t_i$ to $x_i$ for
 each $i < n$; it sends an equation $w \in G * F_n$ over $G$ to its value $w(x)$ at $x$.
 
-Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.evalEquation`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#eval-equation).
+Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.evalEquation`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#eval-equation).
 
 ## Solution set of a system of equations (Kourovka 14.20)
 
@@ -27,7 +27,7 @@ of equations over $G$ is the set of assignments $x = (x_0, \dots, x_{n-1}) \in G
 $w(x) = 1$ for every $w \in S$, where $w(x)$ is the image of $w$ under the homomorphism
 $G * F_n \to G$ that is the identity on $G$ and sends $t_i$ to $x_i$.
 
-Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.solutions`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#solutions).
+Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.solutions`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#solutions).
 
 ## Equationally Noetherian groups (Kourovka 14.20)
 
@@ -39,7 +39,7 @@ subset $S_0 \subseteq S$ with the same solution set as $S$. Here the solution se
 equations is the set of assignments $x = (x_0, \dots, x_{n-1}) \in G^n$ at which every equation in
 it evaluates to $1$.
 
-Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.EquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#equationally-noetherian).
+Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.EquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#equationally-noetherian).
 
 ## Kourovka Problem 14.20 (free products of equationally Noetherian groups)
 
@@ -49,7 +49,7 @@ Equation Property), then their free product $G * H$ is equationally Noetherian.
 
 Kourovka Notebook Problem 14.20 is due to G. Baumslag, A. G. Myasnikov and V. N. Remeslennikov.
 
-Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.freeProductEquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#free-product-equationally-noetherian).
+Formalized by `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.freeProductEquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#free-product-equationally-noetherian).
 
 ## Free products of equationally Noetherian groups are equationally Noetherian
 
@@ -63,7 +63,7 @@ elementary theory of free products of groups, preprint, arXiv:1012.0044 (2010), 
 Notebook (21st issue) marks 14.20 solved (Yes, it does), citing this preprint,
 https://arxiv.org/abs/1012.0044.
 
-Stated but not proved: `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.freeProductEquationallyNoetherian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#free-product-equationally-noetherian-hol).
+Stated but not proved: `MathlibExt.GroupTheory.FreeProductEquationallyNoetherianKourovka14Problem20Wanted.freeProductEquationallyNoetherian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeProductEquationallyNoetherianKourovka14Problem20Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#free-product-equationally-noetherian-hol).
 
 ## Evaluating an equation at an assignment
 
@@ -74,7 +74,7 @@ $a = (a_0, \dots, a_{n-1}) \in G^n$, evaluation at $a$ is the group homomorphism
 $G * F(x_0, \dots, x_{n-1}) \to G$ that is the identity on $G$ and sends each unknown $x_i$ to
 $a_i$.
 
-Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.evalEquation`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#eval-equation-2).
+Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.evalEquation`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#eval-equation-2).
 
 ## Solution set of a system of equations
 
@@ -84,7 +84,7 @@ product $G * F(x_0, \dots, x_{n-1})$ of $G$ with the free group on $x_0, \dots, 
 solution set of $S$ is the set of assignments $a \in G^n$ at which every $w \in S$ evaluates to
 $1$.
 
-Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.solutions`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#solutions-2).
+Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.solutions`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#solutions-2).
 
 ## The Noetherian Equation Property
 
@@ -94,7 +94,7 @@ in the unknowns $x_0, \dots, x_{n-1}$, that is, every subset $S$ of the free pro
 $G * F(x_0, \dots, x_{n-1})$ of $G$ with the free group on $x_0, \dots, x_{n-1}$, there is a
 finite subset $S_0 \subseteq S$ whose solution set in $G^n$ equals the solution set of $S$.
 
-Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.EquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#equationally-noetherian-2).
+Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.EquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#equationally-noetherian-2).
 
 ## Kourovka Problem 14.19 (hyperbolic groups and the Noetherian Equation Property)
 
@@ -105,7 +105,7 @@ $G^n$ as some finite subsystem.
 
 The problem is due to G. Baumslag, A. G. Myasnikov and V. N. Remeslennikov.
 
-Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.hyperbolicGroupEquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#hyperbolic-group-equationally-noetherian).
+Formalized by `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.hyperbolicGroupEquationallyNoetherian`, a definition declared in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#hyperbolic-group-equationally-noetherian).
 
 ## Hyperbolic groups are equationally Noetherian
 
@@ -120,7 +120,7 @@ hyperbolic groups, and Sela had proved the torsion-free case.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 14.19 (G. Baumslag, A. G. Myasnikov, V. N. Remeslennikov); resolution: R. Weidmann and C. Reinfeldt, Ann. Math. Blaise Pascal 26 (2019), no. 2, 125-214, the Kourovka Notebook (21st issue) marks 14.19 solved (Yes); the torsion-free case is due to Z. Sela, Proc. London Math. Soc. 99 (2009), 217-273.
 
-Stated but not proved: `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.hyperbolicGroupEquationallyNoetherian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#hyperbolic-group-equationally-noetherian-2).
+Stated but not proved: `MathlibExt.GroupTheory.HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.hyperbolicGroupEquationallyNoetherian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HyperbolicEquationallyNoetherianKourovka14Problem19Wanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html#hyperbolic-group-equationally-noetherian-2).
 
 ## Depends on
 
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Equationally Noetherian groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/varieties-and-equations/equationally-noetherian-groups)

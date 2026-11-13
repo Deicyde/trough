@@ -15,7 +15,7 @@ statement: formalized
 > ℝⁿ⁺² with infinite VCₙ dimension (even more strongly, which n-shatters an infinite set),
 > and conjectures that every convex set in ℝⁿ⁺¹ has finite VCₙ dimension.
 
-*Quoted from [FormalConjectures/Other/VCDimConvex.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/VCDimConvex.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 8 research or textbook statements: 3 open and 5 solved.
 
@@ -29,7 +29,7 @@ Solved: stated here without proof.
 lemma hasAddVCDimAtMost_three_of_convex_r2 {C : Set ℝ²} (hC : Convex ℝ C) : HasAddVCDimAtMost C 3
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L42).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L42).
 
 ## `VCDimConvex.exists_infinite_convex_r3_shatters`
 
@@ -42,7 +42,7 @@ lemma exists_infinite_convex_r3_shatters :
     ∃ A C : Set ℝ³, A.Infinite ∧ Convex ℝ C ∧ Shatters {t +ᵥ C | t : ℝ³} A
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L47).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L47).
 
 ## `VCDimConvex.exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost`
 
@@ -55,7 +55,7 @@ lemma exists_convex_rn_add_two_vc_n_forall_not_hasAddVCNDimAtMost (n : ℕ) :
     ∃ C : Set (Fin (n + 2) → ℝ), Convex ℝ C ∧ ∀ d, ¬ HasAddVCNDimAtMost C n d
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L54).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L54).
 
 ## `VCDimConvex.hasAddVCNDimAtMost_two_one_of_convex_r3`
 
@@ -70,7 +70,7 @@ lemma hasAddVCNDimAtMost_two_one_of_convex_r3 :
       HasAddVCNDimAtMost C 2 1
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L65).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L65).
 
 ## `VCDimConvex.hasAddVCNDimAtMost_two_two_of_convex_r3`
 
@@ -83,7 +83,7 @@ lemma hasAddVCNDimAtMost_two_two_of_convex_r3 {C : Set ℝ³} (hC : Convex ℝ C
     HasAddVCNDimAtMost C 2 2
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L71).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L71).
 
 ## `VCDimConvex.exists_hasAddVCNDimAtMost_n_of_convex_rn_add_one`
 
@@ -100,7 +100,7 @@ lemma exists_hasAddVCNDimAtMost_n_of_convex_rn_add_one (n : ℕ) (hn : 1 ≤ n) 
     ∃ d : ℕ, ∀ C : Set (Fin (n + 1) → ℝ), Convex ℝ C → HasAddVCNDimAtMost C n d
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L84).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L84).
 
 ## `VCDimConvex.exists_exponential_bound_hasAddVCNDimAtMost_n_of_convex_rn_add_one`
 
@@ -117,7 +117,7 @@ lemma exists_exponential_bound_hasAddVCNDimAtMost_n_of_convex_rn_add_one :
       ∀ C : Set (Fin (n + 1) → ℝ), Convex ℝ C → HasAddVCNDimAtMost C n (c ^ n)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L93).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L93).
 
 ## `VCDimConvex.hasAddVCNDimAtMost_n_two_of_convex_rn_add_one`
 
@@ -132,7 +132,7 @@ lemma hasAddVCNDimAtMost_n_two_of_convex_rn_add_one :
       Convex ℝ C → HasAddVCNDimAtMost C n 3
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean#L100).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [52 Convex and discrete geometry](../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Other/VCDimConvex.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean#L100).
 
 ## Depends on
 
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/VCDimConvex.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/VCDimConvex.lean)
+- [FormalConjectures/Other/VCDimConvex.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/VCDimConvex.lean)

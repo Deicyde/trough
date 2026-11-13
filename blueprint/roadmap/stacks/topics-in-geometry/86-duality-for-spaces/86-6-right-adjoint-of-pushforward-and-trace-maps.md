@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.6 Right adjoint of pushforward and trace maps
 
-Section 86.6 of the Stacks Project, [Tag 0E5K](https://stacks.math.columbia.edu/tag/0E5K). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.6 of the Stacks Project, [Tag 0E5K](https://stacks.math.columbia.edu/tag/0E5K). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E5L, a lemma
 
 [Tag 0E5L](https://stacks.math.columbia.edu/tag/0E5L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L148).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L148).
 
 > **Stacks 0E5L.**  The trace maps and the base change maps agree: `Lg^*` of the trace
 > `Rf_* a K ⟶ K` is the base change map `β` at `a K`, followed by `Rf'_*` of the map `α` of
@@ -41,7 +41,7 @@ theorem quasicoherentDerivedRightAdjointBaseChangeMap_trace (K) :
 
 [Tag 0E5M](https://stacks.math.columbia.edu/tag/0E5M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L170).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L170).
 
 > **Stacks 0E5M.**  The units and the base change maps agree: `L(g')^*` of the unit
 > `K ⟶ a (Rf_* K)`, followed by the map `α` of Stacks 0E5D at `Rf_* K` and by `a'` of the base
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.6, Tag 0E5K](https://stacks.math.columbia.edu/tag/0E5K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

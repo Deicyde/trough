@@ -8,7 +8,7 @@ proof: formalized
 
 # Highly homogeneous permutation groups
 
-14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html).
+14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html).
 
 ## Strict betweenness
 
@@ -16,7 +16,7 @@ Let $\alpha$ be a type with a relation $<$ and let $a, b, c \in \alpha$.
 Then $b$ lies strictly between $a$ and $c$ when either $a < b$ and $b < c$, or $c < b$ and
 $b < a$.
 
-Formalized by `MetaMathlibExt.isBetween`, a definition declared in [MathlibExt/GroupTheory/Permutation/Betweenness.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/Betweenness.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-between).
+Formalized by `MetaMathlibExt.isBetween`, a definition declared in [MathlibExt/GroupTheory/Permutation/Betweenness.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/Betweenness.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-between).
 
 ## The betweenness automorphism group of a linear order
 
@@ -27,7 +27,7 @@ $\alpha$ consisting of the permutations $\sigma$ such that, for all $a, b, c \in
 strictly between $a$ and $c$ if and only if $\sigma(b)$ lies strictly between $\sigma(a)$ and
 $\sigma(c)$.
 
-Formalized by `MetaMathlibExt.betweennessAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Betweenness.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/Betweenness.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#betweenness-aut-subgroup).
+Formalized by `MetaMathlibExt.betweennessAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Betweenness.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/Betweenness.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#betweenness-aut-subgroup).
 
 ## The automorphism group of a circular order
 
@@ -37,7 +37,7 @@ is the subgroup of the group of permutations of $\alpha$ consisting of the permu
 such that, for all $a, b, c \in \alpha$, $\operatorname{btw}(a, b, c)$ holds if and only if
 $\operatorname{btw}(\sigma(a), \sigma(b), \sigma(c))$ holds.
 
-Formalized by `MetaMathlibExt.circularOrderAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/CircularOrder.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CircularOrder.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-order-aut-subgroup).
+Formalized by `MetaMathlibExt.circularOrderAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/CircularOrder.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CircularOrder.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-order-aut-subgroup).
 
 ## Highly homogeneous permutation groups
 
@@ -46,7 +46,7 @@ $\alpha$. Then $G$ is highly homogeneous when, for every natural number $k$, it 
 on the $k$-element subsets of $\alpha$: for any two $k$-element subsets $X$ and $Y$ of $\alpha$
 there is some $g \in G$ with $g(X) = Y$.
 
-Formalized by `MetaMathlibExt.IsHighlyHomogeneous`, a definition declared in [MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-highly-homogeneous).
+Formalized by `MetaMathlibExt.IsHighlyHomogeneous`, a definition declared in [MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-highly-homogeneous).
 
 ## The full symmetric group is highly homogeneous
 
@@ -55,7 +55,7 @@ permutations of $\alpha$ is highly homogeneous: for every natural number $k$, an
 subset of $\alpha$ can be carried to any other $k$-element subset of $\alpha$ by some permutation
 of $\alpha$.
 
-Formalized by `MetaMathlibExt.isHighlyHomogeneous_top`, a theorem declared in [MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-highly-homogeneous-top).
+Formalized by `MetaMathlibExt.isHighlyHomogeneous_top`, a theorem declared in [MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/HighlyHomogeneous.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#is-highly-homogeneous-top).
 
 ## Order automorphism group
 
@@ -64,7 +64,7 @@ automorphism group of $\alpha$ is the subgroup of the group of permutations of $
 consisting of the permutations $\sigma$ such that for all $a, b \in \alpha$, $a < b$ holds if and
 only if $\sigma(a) < \sigma(b)$ holds.
 
-Formalized by `MetaMathlibExt.orderAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Order.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/Order.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#order-aut-subgroup).
+Formalized by `MetaMathlibExt.orderAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Order.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/Order.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#order-aut-subgroup).
 
 ## Pointwise convergence topology on permutations
 
@@ -74,7 +74,7 @@ sending a permutation $\sigma$ to the underlying function $\sigma \colon \alpha 
 $\alpha$ carries the discrete topology and the space of functions $\alpha \to \alpha$ carries the
 product topology.
 
-Formalized by `Equiv.Perm.pointwiseTopology`, an abbreviation declared in [MathlibExt/GroupTheory/Permutation/PointwiseTopology.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/PointwiseTopology.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#pointwise-topology).
+Formalized by `Equiv.Perm.pointwiseTopology`, an abbreviation declared in [MathlibExt/GroupTheory/Permutation/PointwiseTopology.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/PointwiseTopology.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#pointwise-topology).
 
 ## The betweenness group of the rationals is closed and highly homogeneous
 
@@ -90,7 +90,7 @@ number $k$ it has a single orbit on the $k$-element subsets of $\mathbb{Q}$.
 
 - Daniele A. Gewurz and Francesca Merola, "Sequences realized as Parker vectors of oligomorphic permutation groups," Journal of Integer Sequences 6, <https://cs.uwaterloo.ca/journals/JIS/VOL6/Gewurz/gewurz22.tex>, lines 331–359. The source identifies `B` (also `∂C*`) as the rational-order permutations preserving or reversing order and calls Cameron's five representatives closed and highly homogeneous, glossed as one orbit on `k`-sets for all `k`. The source cites Peter J. Cameron, "Transitivity of permutation groups on unordered sets," Math. Z. 148 (1976), 127–139. Interpretation boundary: only the `B` representative is asserted, not exhaustive classification, uniqueness, or conjugacy.
 
-Formalized by `MetaMathlibExt.CameronBetweennessGroupWanted.betweennessAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronBetweennessGroup.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CameronBetweennessGroup.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#betweenness-aut-subgroup-is-closed-and-h).
+Formalized by `MetaMathlibExt.CameronBetweennessGroupWanted.betweennessAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronBetweennessGroup.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CameronBetweennessGroup.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#betweenness-aut-subgroup-is-closed-and-h).
 
 ## The automorphism group of a countably infinite dense circular order is closed and highly homogeneous
 
@@ -109,7 +109,7 @@ a single orbit on the $k$-element subsets of $\alpha$.
 
 - Daniele A. Gewurz and Francesca Merola, "Sequences realized as Parker vectors of oligomorphic permutation groups," JIS 6, https://cs.uwaterloo.ca/journals/JIS/VOL6/Gewurz/gewurz22.tex, lines 331–359. Interpretation boundary: only Cameron group C is asserted, with standard countable dense infinite circular-order hypotheses, not exhaustive classification, uniqueness, or conjugacy.
 
-Formalized by `MetaMathlibExt.CameronCircularOrderGroupWanted.circularOrderAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronCircularOrderGroup.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CameronCircularOrderGroup.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-order-aut-subgroup-is-closed-an).
+Formalized by `MetaMathlibExt.CameronCircularOrderGroupWanted.circularOrderAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronCircularOrderGroup.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CameronCircularOrderGroup.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-order-aut-subgroup-is-closed-an).
 
 ## The order-automorphism group of the rationals is closed and highly homogeneous
 
@@ -124,7 +124,7 @@ a single orbit on the $k$-element subsets of $\mathbb{Q}$.
 
 - Daniele A. Gewurz and Francesca Merola, "Sequences realized as Parker vectors of oligomorphic permutation groups," JIS 6, https://cs.uwaterloo.ca/journals/JIS/VOL6/Gewurz/gewurz22.tex, lines 331-359. Primary source, cited there: Peter J. Cameron, "Transitivity of permutation groups on unordered sets," *Mathematische Zeitschrift* 148(2) (1976), 127--139, DOI 10.1007/BF01214702.
 
-Formalized by `MetaMathlibExt.CameronOrderGroupWanted.orderAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronOrderGroup.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CameronOrderGroup.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#order-aut-subgroup-is-closed-and-highly).
+Formalized by `MetaMathlibExt.CameronOrderGroupWanted.orderAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronOrderGroup.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CameronOrderGroup.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#order-aut-subgroup-is-closed-and-highly).
 
 ## The symmetric group of the rationals is closed and highly homogeneous
 
@@ -141,7 +141,7 @@ usual topology play no role.
 
 - Daniele A. Gewurz and Francesca Merola, *Sequences realized as Parker vectors of oligomorphic permutation groups*, Journal of Integer Sequences 6, source lines 331--359 at https://cs.uwaterloo.ca/journals/JIS/VOL6/Gewurz/gewurz22.tex. Peter J. Cameron, "Transitivity of permutation groups on unordered sets," *Mathematische Zeitschrift* 148(2) (1976), 127--139, DOI 10.1007/BF01214702. Scope: this proves only Cameron's representative S, not Cameron's exhaustive classification, uniqueness, conjugacy, Parker-sequence claims, or the other four representatives.
 
-Formalized by `MetaMathlibExt.cameron_symmetricGroup_closed_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronSymmetricGroup.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CameronSymmetricGroup.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#cameron-symmetric-group-closed-highly-ho).
+Formalized by `MetaMathlibExt.cameron_symmetricGroup_closed_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronSymmetricGroup.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CameronSymmetricGroup.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#cameron-symmetric-group-closed-highly-ho).
 
 ## Separation of pairs in a circular order
 
@@ -151,7 +151,7 @@ $x$ and $z$ going around the circle). For $a, b, c, d \in \alpha$, the pairs $a,
 separate each other when either $\operatorname{sbtw}(a, c, b)$ and $\operatorname{sbtw}(b, d, a)$
 both hold, or $\operatorname{sbtw}(a, d, b)$ and $\operatorname{sbtw}(b, c, a)$ both hold.
 
-Formalized by `MetaMathlibExt.circularSeparates`, a definition declared in [MathlibExt/GroupTheory/Permutation/Separation.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/Separation.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-separates).
+Formalized by `MetaMathlibExt.circularSeparates`, a definition declared in [MathlibExt/GroupTheory/Permutation/Separation.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/Separation.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#circular-separates).
 
 ## Separation-preserving permutation group
 
@@ -161,7 +161,7 @@ consisting of the permutations $\sigma$ such that for all $a, b, c, d \in \alpha
 $a, b$ and $c, d$ separate each other if and only if the pairs $\sigma(a), \sigma(b)$ and
 $\sigma(c), \sigma(d)$ separate each other.
 
-Formalized by `MetaMathlibExt.separationAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Separation.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/Separation.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#separation-aut-subgroup).
+Formalized by `MetaMathlibExt.separationAutSubgroup`, a definition declared in [MathlibExt/GroupTheory/Permutation/Separation.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/Separation.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#separation-aut-subgroup).
 
 ## The separation group of a countably infinite dense circular order is closed and highly homogeneous
 
@@ -179,7 +179,7 @@ $\alpha$.
 
 - Daniele A. Gewurz and Francesca Merola, "Sequences realized as Parker vectors of oligomorphic permutation groups," Journal of Integer Sequences 6, <https://cs.uwaterloo.ca/journals/JIS/VOL6/Gewurz/gewurz22.tex>, lines 331–359. The source identifies `D` (also `C*`) as the cyclic-order permutations preserving or reversing the order and calls Cameron's five representatives closed and highly homogeneous, glossed as one orbit on `k`-sets for all `k`. The source cites Peter J. Cameron, "Transitivity of permutation groups on unordered sets," Math. Z. 148 (1976), 127–139. Interpretation boundary: only the `D` representative is asserted, not exhaustive classification, uniqueness, or conjugacy. The explicit countability, infinitude, and circular-density hypotheses select the intended countable dense circular order.
 
-Formalized by `MetaMathlibExt.CameronSeparationGroupWanted.separationAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronSeparationGroup.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/Permutation/CameronSeparationGroup.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#separation-aut-subgroup-is-closed-and-hi).
+Formalized by `MetaMathlibExt.CameronSeparationGroupWanted.separationAutSubgroup_isClosed_and_highlyHomogeneous`, a theorem declared in [MathlibExt/GroupTheory/Permutation/CameronSeparationGroup.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/Permutation/CameronSeparationGroup.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html#separation-aut-subgroup-is-closed-and-hi).
 
 ## Depends on
 
@@ -188,4 +188,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Highly homogeneous permutation groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/permutation-groups/infinite-permutation-groups/highly-homogeneous-permutation-groups)

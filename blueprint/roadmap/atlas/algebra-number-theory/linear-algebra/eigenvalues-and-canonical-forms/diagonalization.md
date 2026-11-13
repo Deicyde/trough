@@ -8,7 +8,7 @@ proof: formalized
 
 # Diagonalization
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html).
 
 ## Eigenbasis of a semisimple endomorphism with split characteristic polynomial
 
@@ -29,7 +29,7 @@ article *Lemme des noyaux*, <https://fr.wikipedia.org/wiki/Lemme_des_noyaux>.
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 1.3.12.
 
-Formalized by `MathlibExt.LinearAlgebra.DiagonalizationWanted.exists_eigenbasis_of_isSemisimple_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Diagonalization.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Diagonalization.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html#exists-eigenbasis-of-is-semisimple-of-sp).
+Formalized by `MathlibExt.LinearAlgebra.DiagonalizationWanted.exists_eigenbasis_of_isSemisimple_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Diagonalization.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Diagonalization.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html#exists-eigenbasis-of-is-semisimple-of-sp).
 
 ## Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial
 
@@ -47,7 +47,7 @@ change-of-basis matrix from the standard basis gives the diagonal form.
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 1.3.12.
 
-Formalized by `MathlibExt.LinearAlgebra.DiagonalizationWanted.exists_diagonal_similar_of_splits_of_squarefree_minpoly`, a theorem declared in [MathlibExt/LinearAlgebra/Diagonalization.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Diagonalization.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html#exists-diagonal-similar-of-splits-of-squ).
+Formalized by `MathlibExt.LinearAlgebra.DiagonalizationWanted.exists_diagonal_similar_of_splits_of_squarefree_minpoly`, a theorem declared in [MathlibExt/LinearAlgebra/Diagonalization.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Diagonalization.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html#exists-diagonal-similar-of-splits-of-squ).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Diagonalization](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/diagonalization)

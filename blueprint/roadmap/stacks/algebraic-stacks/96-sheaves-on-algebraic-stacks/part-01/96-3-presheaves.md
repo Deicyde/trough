@@ -8,7 +8,7 @@ proof: formalized
 
 # 96.3 Presheaves
 
-Section 96.3 of the Stacks Project, [Tag 06TI](https://stacks.math.columbia.edu/tag/06TI). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.3 of the Stacks Project, [Tag 06TI](https://stacks.math.columbia.edu/tag/06TI). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06TJ, a definition
 
@@ -16,13 +16,13 @@ Section 96.3 of the Stacks Project, [Tag 06TI](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.category`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.category#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch96.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch96.lean#L15) (StacksFrontier): “(1), (2) and PSh(X): presheaves on the underlying category of X, the functor category Xᵒᵖ ⥤ Type (morphisms are natural transformations)”. References: SGA 4 I (1.1.1).
+- [`CategoryTheory.Functor.category`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.category#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch96.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch96.lean#L15) (StacksFrontier): “(1), (2) and PSh(X): presheaves on the underlying category of X, the functor category Xᵒᵖ ⥤ Type (morphisms are natural transformations)”. References: SGA 4 I (1.1.1).
 
 ## Tag 06TK, an equation
 
 [Tag 06TK](https://stacks.math.columbia.edu/tag/06TK) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.presheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L77). The attribute's comment: “presheaf pullback f^p, pushforward \{}\_pf, and the adjunction f^p ⊣ \{}\_pf”.
+**`AlgebraicGeometry.BigFppfOver.presheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L77). The attribute's comment: “presheaf pullback f^p, pushforward \{}\_pf, and the adjunction f^p ⊣ \{}\_pf”.
 
 > **Stacks 06TK**, the pullback and pushforward of presheaves and their adjointness. For a
 > 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf category of `S`, the
@@ -36,7 +36,7 @@ noncomputable def presheafAdjunction :
       (CatFiberedInGroupoids.homFunctor G).op.ran
 ```
 
-**`AlgebraicGeometry.BigFppfOver.presheafPushforwardObjObjIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L87). The attribute's comment: “the formula (\{}\_pf F)(y) = lim\_\{f(x) -> y} F(x) for the pushforward”.
+**`AlgebraicGeometry.BigFppfOver.presheafPushforwardObjObjIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L87). The attribute's comment: “the formula (\{}\_pf F)(y) = lim\_\{f(x) -> y} F(x) for the pushforward”.
 
 > **Stacks 06TK**, the formula `({}_pG ℱ)(y) = lim_{G(x) → y} ℱ(x)` for the pushforward of a
 > presheaf of sets `ℱ` on `𝒳` along a 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over
@@ -55,7 +55,7 @@ noncomputable def presheafPushforwardObjObjIsoLimit (ℱ : 𝒳.val.objᵒᵖ �
 
 [Tag 06TL](https://stacks.math.columbia.edu/tag/06TL) in the Stacks Project.
 
-**`CategoryTheory.Functor.ranOpCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L188). The attribute's comment: “the canonical isomorphism of pushforwards”.
+**`CategoryTheory.Functor.ranOpCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L188). The attribute's comment: “the canonical isomorphism of pushforwards”.
 
 > **Stacks 06TL**: the canonical isomorphism `{}_p(g ∘ f) ≅ {}_pg ∘ {}_pf` of functors
 > `PSh(𝒳) ⥤ PSh(𝒵)`, namely the comparison of the two right adjoints `{}_p(g ∘ f)` and
@@ -65,7 +65,7 @@ noncomputable def presheafPushforwardObjObjIsoLimit (ℱ : 𝒳.val.objᵒᵖ �
 noncomputable def ranOpCompIso : (f ⋙ g).op.ran (H := A) ≅ f.op.ran ⋙ g.op.ran
 ```
 
-**`CategoryTheory.Functor.homEquiv_comp_ranOpCompIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L196). The attribute's comment: “compatibility of the canonical isomorphism with adjointness”.
+**`CategoryTheory.Functor.homEquiv_comp_ranOpCompIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L196). The attribute's comment: “compatibility of the canonical isomorphism with adjointness”.
 
 > **Stacks 06TL**: the isomorphism `{}_p(g ∘ f) ≅ {}_pg ∘ {}_pf` is compatible with adjointness
 > of `(f^p, {}_pf)`, `(g^p, {}_pg)` and `((g ∘ f)^p, {}_p(g ∘ f))`: the square of hom-set bijections
@@ -81,13 +81,13 @@ theorem homEquiv_comp_ranOpCompIso_hom_app (K : Zᵒᵖ ⥤ A) (F : Xᵒᵖ ⥤ 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.whiskeringLeft_obj_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.whiskeringLeft_obj_comp#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L208) (StacksFrontier): “pullback of presheaves along a composite: `(g ∘ f)^p = f^p ∘ g^p`, at `F = f.op`, `G = g.op`”.
+- [`CategoryTheory.Functor.whiskeringLeft_obj_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.whiskeringLeft_obj_comp#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafComp.lean#L208) (StacksFrontier): “pullback of presheaves along a composite: `(g ∘ f)^p = f^p ∘ g^p`, at `F = f.op`, `G = g.op`”.
 
 ## Tag 06TM, a lemma
 
 [Tag 06TM](https://stacks.math.columbia.edu/tag/06TM) in the Stacks Project.
 
-**`CategoryTheory.CatFiberedInGroupoids.isIso_underlyingNatTrans_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L109). The attribute's comment: “invertibility of the two-morphism”.
+**`CategoryTheory.CatFiberedInGroupoids.isIso_underlyingNatTrans_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L109). The attribute's comment: “invertibility of the two-morphism”.
 
 > **Stacks 06TM.** Every component of a two-morphism of categories fibred in groupoids lies
 > over an identity, hence is invertible.
@@ -97,7 +97,7 @@ theorem isIso_underlyingNatTrans_app {f g : 𝒳 ⟶ 𝒴} (t : f ⟶ g) (x : �
     IsIso (t.hom.toNatTrans.app x)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L145). The attribute's comment: “canonical isomorphism on restriction functors”.
+**`CategoryTheory.CatFiberedInGroupoids.pullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L145). The attribute's comment: “canonical isomorphism on restriction functors”.
 
 > **Stacks 06TM.** Pullback of presheaves along the isomorphism of functors underlying a
 > two-morphism, contravariant in the two-morphism.
@@ -110,7 +110,7 @@ noncomputable def pullbackIso :
         (homFunctorOp f)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L155). The attribute's comment: “pointwise description of restriction”.
+**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L155). The attribute's comment: “pointwise description of restriction”.
 
 > **Stacks 06TM.** On a presheaf and an object, the restriction comparison is evaluation on
 > the component of the given two-morphism.
@@ -121,7 +121,7 @@ theorem pullbackIso_hom_app (P : 𝒴.based.objᵒᵖ ⥤ A) (x : 𝒳.based.obj
       P.map (t.hom.toNatTrans.app x).op
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L163). The attribute's comment: “vertical composition on restriction”.
+**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L163). The attribute's comment: “vertical composition on restriction”.
 
 > **Stacks 06TM.** Vertical composition of two-morphisms becomes composition of the induced
 > restriction isomorphisms, in reverse order.
@@ -131,7 +131,7 @@ theorem pullbackIso_trans {h : 𝒳 ⟶ 𝒴} (s : g ⟶ h) :
     pullbackIso A (t ≫ s) = pullbackIso A s ≪≫ pullbackIso A t
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L176). The attribute's comment: “horizontal composition on restriction”.
+**`CategoryTheory.CatFiberedInGroupoids.pullbackIso_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L176). The attribute's comment: “horizontal composition on restriction”.
 
 > **Stacks 06TM.** The restriction comparison for a horizontal composite acts pointwise by
 > the two component maps, in the contravariant order.
@@ -146,7 +146,7 @@ theorem pullbackIso_hcomp {𝒵 : CatFiberedInGroupoids.{v₀, v₁, u₀, u₁}
         P.map ((CatFiberedInGroupoids.homFunctor h).map (t.hom.toNatTrans.app x)).op
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L225). The attribute's comment: “canonical isomorphism on right adjoints”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L225). The attribute's comment: “canonical isomorphism on right adjoints”.
 
 > **Stacks 06TM.** Direct image of presheaves along the isomorphism of functors underlying a
 > two-morphism, obtained as the adjoint mate of the pullback isomorphism.
@@ -157,7 +157,7 @@ noncomputable def pushforwardIso :
       (homFunctorOp g).ran (H := A)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L234). The attribute's comment: “compatibility with adjunction”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L234). The attribute's comment: “compatibility with adjunction”.
 
 > **Stacks 06TM.** The direct-image comparison is the mate of the restriction comparison,
 > expressing compatibility with both adjunctions.
@@ -170,7 +170,7 @@ theorem pushforwardIso_hom :
         (pullbackIso A t).hom
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L243). The attribute's comment: “vertical composition on right adjoints”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L243). The attribute's comment: “vertical composition on right adjoints”.
 
 > **Stacks 06TM.** Vertical composition of two-morphisms becomes composition of the
 > corresponding direct-image isomorphisms.
@@ -182,7 +182,7 @@ theorem pushforwardIso_trans {h : 𝒳 ⟶ 𝒴} (s : g ⟶ h)
     pushforwardIso A (t ≫ s) = pushforwardIso A t ≪≫ pushforwardIso A s
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L256). The attribute's comment: “horizontal composition on right adjoints”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIso_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Presheaves.lean#L256). The attribute's comment: “horizontal composition on right adjoints”.
 
 > **Stacks 06TM.** The direct-image comparison for a horizontal composite, after identifying
 > direct images of composites with successive direct images, is the horizontal composite of the
@@ -216,7 +216,7 @@ theorem pushforwardIso_hcomp {𝒵 : CatFiberedInGroupoids.{v₀, v₁, u₀, u�
         (pushforwardIso A s)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L77). The attribute's comment: “canonical isomorphism of direct images of presheaves of sets”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L77). The attribute's comment: “canonical isomorphism of direct images of presheaves of sets”.
 
 > **Stacks 06TM.** The canonical isomorphism `{}_pt : {}_pf ≅ {}_pg` of direct images of
 > presheaves of sets induced by a two-morphism `t : f ⟶ g`, namely the mate of the restriction
@@ -229,7 +229,7 @@ noncomputable def pushforwardIsoOfSets :
     (homFunctorOp f).ran (H := Type (max u₁ v₁ w)) ≅ (homFunctorOp g).ran
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L85). The attribute's comment: “compatibility with adjointness, for presheaves of sets”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L85). The attribute's comment: “compatibility with adjointness, for presheaves of sets”.
 
 > **Stacks 06TM.** The isomorphism `{}_pt` of direct images of presheaves of sets is
 > compatible with adjointness of `(f^p, {}_pf)` and `(g^p, {}_pg)`: it is the conjugate of
@@ -243,7 +243,7 @@ theorem pushforwardIsoOfSets_hom :
         (pullbackIso (Type (max u₁ v₁ w)) t).hom
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L95). The attribute's comment: “vertical composition on direct images of presheaves of sets”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L95). The attribute's comment: “vertical composition on direct images of presheaves of sets”.
 
 > **Stacks 06TM.** Vertical composition of two-morphisms becomes composition of the induced
 > isomorphisms of direct images of presheaves of sets.
@@ -253,7 +253,7 @@ theorem pushforwardIsoOfSets_trans {h : 𝒳 ⟶ 𝒴} (s : g ⟶ h) :
     pushforwardIsoOfSets.{w} (t ≫ s) = pushforwardIsoOfSets.{w} t ≪≫ pushforwardIsoOfSets s
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L103). The attribute's comment: “horizontal composition on direct images of presheaves of sets”.
+**`CategoryTheory.CatFiberedInGroupoids.pushforwardIsoOfSets_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PresheavesOfSets.lean#L103). The attribute's comment: “horizontal composition on direct images of presheaves of sets”.
 
 > **Stacks 06TM.** The isomorphism of direct images of presheaves of sets induced by a
 > horizontal composite of two-morphisms, after identifying direct images along composites with
@@ -278,4 +278,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.3, Tag 06TI](https://stacks.math.columbia.edu/tag/06TI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

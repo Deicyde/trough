@@ -8,7 +8,7 @@ proof: formalized
 
 # Asymptotic expansion of the Catalan numbers
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html).
 
 ## Bernoulli-polynomial expansion from a logarithmic difference equation
 
@@ -24,7 +24,7 @@ as $n \to \infty$.
 
 The normalization $u_n \to 0$ fixes the otherwise undetermined additive constant.
 
-Formalized by `Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#tendsto-pow-mul-sub-bernoulli-sum-of-log).
+Formalized by `Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#tendsto-pow-mul-sub-bernoulli-sum-of-log).
 
 ## All-orders logarithmic expansion of the Catalan numbers at a real shift
 
@@ -36,7 +36,7 @@ Then for every natural number $M$,
 $(n + c)^M \left(\log\left(C_n \sqrt{\pi (n + c)^3} / 4^n\right) -
 \sum_{j=0}^{M-1} a_j (n + c)^{-(j+1)}\right) \to 0$ as $n \to \infty$.
 
-Formalized by `tendsto_pow_mul_log_catalan_sub_bernoulli_sum`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#tendsto-pow-mul-log-catalan-sub-bernoull).
+Formalized by `tendsto_pow_mul_log_catalan_sub_bernoulli_sum`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#tendsto-pow-mul-log-catalan-sub-bernoull).
 
 ## Stirling-type asymptotic expansions of the Catalan numbers
 
@@ -60,7 +60,7 @@ Telescoping its Bernoulli-polynomial expansion yields both all-orders formulas.
 
 - Neven Elezović, "Asymptotic Expansions of Central Binomial Coefficients and Catalan Numbers," Journal of Integer Sequences 17 (2014), Article 14.2.1, Catalan Stirling-type theorem (unlabeled, equation 42), lines 626–637, https://cs.uwaterloo.ca/journals/JIS/VOL17/Elezovic/elezovic5.tex
 
-Formalized by `MetaMathlibExt.catalan_stirling_asymptotic_expansions`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#catalan-stirling-asymptotic-expansions).
+Formalized by `MetaMathlibExt.catalan_stirling_asymptotic_expansions`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean, line 1582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/CatalanAsymptoticExpansion.lean#L1582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#catalan-stirling-asymptotic-expansions).
 
 ## Uniqueness of the even-power shift in Catalan asymptotics
 
@@ -83,7 +83,7 @@ first logarithmic coefficient gives uniqueness, following Elezović.
 
 - Neven Elezović, "Asymptotic Expansions of Central Binomial Coefficients and Catalan Numbers," Journal of Integer Sequences 17 (2014), Article 14.2.1, Corollary, lines 568–578, https://cs.uwaterloo.ca/journals/JIS/VOL17/Elezovic/elezovic5.tex
 
-Formalized by `MetaMathlibExt.catalan_odd_terms_shift_unique`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanOddTermsShift.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/CatalanOddTermsShift.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#catalan-odd-terms-shift-unique).
+Formalized by `MetaMathlibExt.catalan_odd_terms_shift_unique`, a theorem declared in [MathlibExt/Analysis/Asymptotics/CatalanOddTermsShift.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/CatalanOddTermsShift.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html#catalan-odd-terms-shift-unique).
 
 ## Depends on
 
@@ -92,4 +92,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotic expansion of the Catalan numbers](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansion-of-the-catalan-numbers)

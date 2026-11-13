@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.13 Closed immersions of ringed spaces
 
-Section 17.13 of the Stacks Project, [Tag 01C1](https://stacks.math.columbia.edu/tag/01C1). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.13 of the Stacks Project, [Tag 01C1](https://stacks.math.columbia.edu/tag/01C1). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01C2, a definition
 
 [Tag 01C2](https://stacks.math.columbia.edu/tag/01C2) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.IsClosedImmersion`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean#L69).
+**`Stacks.ClosedImmersion.IsClosedImmersion`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean#L69).
 
 > **Stacks Project, Tag 01C2.** A morphism of ringed spaces is a closed immersion when its
 > underlying continuous map is a closed embedding, its map on structure sheaves is surjective,
@@ -24,7 +24,7 @@ Section 17.13 of the Stacks Project, [Tag 01C1](https://stacks.math.columbia.edu
 class IsClosedImmersion {X Z : RingedSpace.{u, u}} (i : Z ⟶ X) : Prop
 ```
 
-**`AlgebraicGeometry.SheafOfModules.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion.lean#L71).
+**`AlgebraicGeometry.SheafOfModules.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion.lean#L71).
 
 > **Stacks Project, Tag 01C2.** A morphism of ringed spaces is a closed immersion when its
 > underlying continuous map is a closed embedding, its map on structure sheaves is surjective,
@@ -38,7 +38,7 @@ abbrev IsClosedImmersion {X Z : RingedSpace.{u, u}} (i : Z ⟶ X) : Prop
 
 [Tag 01C3](https://stacks.math.columbia.edu/tag/01C3) in the Stacks Project.
 
-**`ClosedImmersionSheaves.exists_local_cokernel_presentation_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion/QuasicoherentPushforward.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion/QuasicoherentPushforward.lean#L374).
+**`ClosedImmersionSheaves.exists_local_cokernel_presentation_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion/QuasicoherentPushforward.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ClosedImmersion/QuasicoherentPushforward.lean#L374).
 
 > **Stacks Project, Tag 01C3.** The pushforward of a quasi-coherent module along a
 > closed immersion is locally a cokernel of quasi-coherent modules.
@@ -57,7 +57,7 @@ theorem exists_local_cokernel_presentation_pushforward
 
 [Tag 01C4](https://stacks.math.columbia.edu/tag/01C4) in the Stacks Project.
 
-**`Stacks.RingedSpace.isFiniteType_modulePushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Generators/ClosedEmbeddingFiniteType.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Generators/ClosedEmbeddingFiniteType.lean#L361).
+**`Stacks.RingedSpace.isFiniteType_modulePushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Generators/ClosedEmbeddingFiniteType.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Generators/ClosedEmbeddingFiniteType.lean#L361).
 
 > **Stacks Project, Tag 01C4.** Pushforward along a closed embedding of ringed spaces with a
 > surjective map on structure sheaves preserves and reflects finite type sheaves of modules.
@@ -75,7 +75,7 @@ theorem isFiniteType_modulePushforward_iff
 
 [Tag 08KS](https://stacks.math.columbia.edu/tag/08KS) in the Stacks Project.
 
-**`Stacks.Tag08KS.modulePushforward_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L121). The attribute's comment: “full\_faithfulness”.
+**`Stacks.Tag08KS.modulePushforward_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L121). The attribute's comment: “full\_faithfulness”.
 
 > **Stacks Project, Tag 08KS.** Pushforward of sheaves of modules along a morphism of ringed
 > spaces whose underlying continuous map is a closed embedding and whose comorphism of structure
@@ -88,7 +88,7 @@ theorem modulePushforward_fullyFaithful
     Nonempty (modulePushforward i).FullyFaithful
 ```
 
-**`Stacks.Tag08KS.modulePushforward_full`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L157). The attribute's comment: “full\_faithfulness”.
+**`Stacks.Tag08KS.modulePushforward_full`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L157). The attribute's comment: “full\_faithfulness”.
 
 > **Stacks Project, Tag 08KS.** Pushforward of sheaves of modules along a closed immersion of
 > ringed spaces is full.
@@ -100,7 +100,7 @@ theorem modulePushforward_full
     (modulePushforward i).Full
 ```
 
-**`Stacks.Tag08KS.modulePushforward_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L166). The attribute's comment: “full\_faithfulness”.
+**`Stacks.Tag08KS.modulePushforward_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Bridge/Basic.lean#L166). The attribute's comment: “full\_faithfulness”.
 
 > **Stacks Project, Tag 08KS.** Pushforward of sheaves of modules along a closed immersion of
 > ringed spaces is faithful.
@@ -112,7 +112,7 @@ theorem modulePushforward_faithful
     (modulePushforward i).Faithful
 ```
 
-**`Stacks.Tag08KS.modulePushforward_essImage_iff_kernelIdeal_annihilates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/EssentialImage.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Bridge/EssentialImage.lean#L463). The attribute's comment: “essential\_image”.
+**`Stacks.Tag08KS.modulePushforward_essImage_iff_kernelIdeal_annihilates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Bridge/EssentialImage.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Bridge/EssentialImage.lean#L463). The attribute's comment: “essential\_image”.
 
 > **Stacks Project, Tag 08KS.** The essential image of pushforward along a morphism of ringed
 > spaces whose underlying continuous map is a closed embedding and whose comorphism of structure
@@ -126,7 +126,7 @@ theorem modulePushforward_essImage_iff_kernelIdeal_annihilates
     (modulePushforward i).essImage G ↔ IsAnnihilatedByKernelIdeal i G
 ```
 
-**`Stacks.ClosedImmersion.preservesFiniteLimits_modulePushforward`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean#L116). The attribute's comment: “exactness only; full faithfulness and the essential image are not covered”.
+**`Stacks.ClosedImmersion.preservesFiniteLimits_modulePushforward`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean#L116). The attribute's comment: “exactness only; full faithfulness and the essential image are not covered”.
 
 > **Stacks Project, Tag 08KS.** Pushforward of sheaves of modules is left exact, being a
 > right adjoint.
@@ -137,7 +137,7 @@ instance preservesFiniteLimits_modulePushforward
     PreservesFiniteLimits (modulePushforward i)
 ```
 
-**`Stacks.ClosedImmersion.preservesFiniteColimits_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean#L187). The attribute's comment: “exactness only; full faithfulness and the essential image are not covered”.
+**`Stacks.ClosedImmersion.preservesFiniteColimits_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/DerivedPushforwardComparison.lean#L187). The attribute's comment: “exactness only; full faithfulness and the essential image are not covered”.
 
 > **Stacks Project, Tag 08KS.** Pushforward of sheaves of modules along a morphism of ringed
 > spaces whose underlying continuous map is a closed embedding is right exact.
@@ -150,7 +150,7 @@ theorem preservesFiniteColimits_modulePushforward {Z X : RingedSpace.{u, u}} (i 
     PreservesFiniteColimits (modulePushforward i)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.fullyFaithfulModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean#L193). The attribute's comment: “full faithfulness”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.fullyFaithfulModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean#L193). The attribute's comment: “full faithfulness”.
 
 > **[Stacks, Tag 08KS], full faithfulness.** The direct image
 > `i_* : Mod(𝒪_Z) ⥤ Mod(𝒪_X)` along a homeomorphism onto a closed subset with surjective
@@ -160,7 +160,7 @@ theorem preservesFiniteColimits_modulePushforward {Z X : RingedSpace.{u, u}} (i 
 noncomputable def fullyFaithfulModulePushforward : (modulePushforward S.i).FullyFaithful
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforward_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean#L202). The attribute's comment: “the essential image”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforward_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Basic.lean#L202). The attribute's comment: “the essential image”.
 
 > **[Stacks, Tag 08KS], the essential image.** An `𝒪_X`-module `𝒢` is a direct image
 > `i_* ℱ` exactly when `ℐ𝒢 = 0`, i.e. when every section of the kernel ideal `ℐ = ker i^♯` over
@@ -173,7 +173,7 @@ theorem modulePushforward_essImage_iff (M : SheafOfModules.{u} (structureSheafRi
         ∀ m : M.val.obj (op U), a • m = 0
 ```
 
-**`AlgebraicGeometry.Space.essImage_modulePushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleEssentialImage.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleEssentialImage.lean#L330). The attribute's comment: “essential image of the direct image: exactly the annihilated modules”.
+**`AlgebraicGeometry.Space.essImage_modulePushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleEssentialImage.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleEssentialImage.lean#L330). The attribute's comment: “essential image of the direct image: exactly the annihilated modules”.
 
 > **The essential-image clause of Stacks 08KS for algebraic spaces.** For a closed immersion
 > `i : Z ⟶ X` of algebraic spaces over `S`, an `𝒪_X`-module is isomorphic to a direct image along
@@ -191,7 +191,7 @@ theorem essImage_modulePushforward_iff (i : Z ⟶ X) (hi : IsClosedImmersion B S
     (modulePushforward B S hS i).essImage M ↔ AnnihilatedByKerIdeal B S hS i M
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L192). The attribute's comment: “full faithfulness of the direct image, for algebraic spaces”.
+**`AlgebraicGeometry.Space.fullyFaithfulModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L192). The attribute's comment: “full faithfulness of the direct image, for algebraic spaces”.
 
 > Direct image of `𝒪`-modules along a closed immersion `f : X ⟶ Y` of algebraic spaces is
 > fully faithful.
@@ -218,7 +218,7 @@ def fullyFaithfulModulePushforward (f : X ⟶ Y) (hf : IsClosedImmersion B S hS 
     (modulePushforward B S hS f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.exactFunctor_modulePushforward_of_isClosedImmersion_viaAlmostCocontinuity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforwardRightExact.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforwardRightExact.lean#L303). The attribute's comment: “the exactness clause of the direct image, for algebraic spaces”.
+**`AlgebraicGeometry.Space.exactFunctor_modulePushforward_of_isClosedImmersion_viaAlmostCocontinuity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforwardRightExact.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforwardRightExact.lean#L303). The attribute's comment: “the exactness clause of the direct image, for algebraic spaces”.
 
 > **[Stacks, Tag 08KS], the exactness clause, for algebraic spaces, unconditionally.** The
 > direct image `i_* : Mod(𝒪_Z) ⥤ Mod(𝒪_X)` of Stacks 03LU along a closed immersion of algebraic
@@ -247,7 +247,7 @@ theorem exactFunctor_modulePushforward_of_isClosedImmersion_viaAlmostCocontinuit
 
 [Tag 0G6N](https://stacks.math.columbia.edu/tag/0G6N) in the Stacks Project.
 
-**`Stacks.SupportedSectionsCounterexample.exists_epi_not_epi_supportedSectionsOnClosedFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean#L471). The attribute's comment: “H\_Z does not preserve epimorphisms in general”.
+**`Stacks.SupportedSectionsCounterexample.exists_epi_not_epi_supportedSectionsOnClosedFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean#L471). The attribute's comment: “H\_Z does not preserve epimorphisms in general”.
 
 > The functor `H_Z : Mod(𝒪_X) ⥤ Mod(𝒪_X|_Z)` of sections supported on a closed subset does not
 > preserve epimorphisms in general: on the two-point Sierpinski space with `Z` the closed point,
@@ -261,7 +261,7 @@ theorem exists_epi_not_epi_supportedSectionsOnClosedFunctor_map :
       Epi φ ∧ ¬ Epi ((supportedSectionsOnClosedFunctor X Z hZ).map φ)
 ```
 
-**`Stacks.SupportedSectionsCounterexample.exists_not_preservesFiniteColimits_supportedSectionsOnClosedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean#L486). The attribute's comment: “H\_Z is not exact in general”.
+**`Stacks.SupportedSectionsCounterexample.exists_not_preservesFiniteColimits_supportedSectionsOnClosedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SupportedSectionsCounterexample/Basic.lean#L486). The attribute's comment: “H\_Z is not exact in general”.
 
 > The functor `H_Z : Mod(𝒪_X) ⥤ Mod(𝒪_X|_Z)` of sections supported on a closed subset is left
 > exact
@@ -275,7 +275,7 @@ theorem exists_not_preservesFiniteColimits_supportedSectionsOnClosedFunctor :
       ¬ PreservesFiniteColimits (supportedSectionsOnClosedFunctor X Z hZ)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.supportedSectionsOnClosedFunctor_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/LocalCohomologySheaves.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/LocalCohomologySheaves.lean#L97). The attribute's comment: “left exactness of H\_Z”.
+**`Stacks.Cohomology.SupportedComplexes.supportedSectionsOnClosedFunctor_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/LocalCohomologySheaves.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/LocalCohomologySheaves.lean#L97). The attribute's comment: “left exactness of H\_Z”.
 
 > `H_Z` preserves finite limits. It is right adjoint to pushforward along the inclusion of
 > `Z` (Stacks 0G6P), and a right adjoint preserves all limits.
@@ -286,7 +286,7 @@ instance supportedSectionsOnClosedFunctor_preservesFiniteLimits (X : RingedSpace
     PreservesFiniteLimits (supportedSectionsOnClosedFunctor X Z hZ)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.supportedSectionsOnClosedForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean#L147). The attribute's comment: “abelian compatibility”.
+**`Stacks.Cohomology.SupportedComplexes.supportedSectionsOnClosedForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean#L147). The attribute's comment: “abelian compatibility”.
 
 > **Stacks 0G6N, abelian compatibility.** Let `Z` be a closed subset of a ringed space `X`.
 > Taking the sections of an `𝒪_X`-module supported on `Z`, realized as a sheaf of `𝒪_X|_Z`-modules
@@ -302,7 +302,7 @@ def supportedSectionsOnClosedForgetIso (hZ : IsClosed Z) :
         ClosedImmersionSheaves.supportedSectionsOnClosedFunctor Z hZ
 ```
 
-**`Stacks.SheafOfModules.SupportedSections.supportedSectionsOnClosedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean#L279). The attribute's comment: “H\_Z as a functor Mod(O\_X) ⥤ Mod(O\_X|\_Z)”.
+**`Stacks.SheafOfModules.SupportedSections.supportedSectionsOnClosedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean#L279). The attribute's comment: “H\_Z as a functor Mod(O\_X) ⥤ Mod(O\_X|\_Z)”.
 
 > **Stacks 0G6N.** The functor `H_Z : Mod(𝒪_X) ⥤ Mod(𝒪_X|_Z)` of sections supported on a
 > closed subset `Z`, realized as a sheaf of modules on `Z`. It is characterised, up to the
@@ -317,7 +317,7 @@ noncomputable def supportedSectionsOnClosedFunctor (X : RingedSpace.{u, u}) (Z :
         (ClosedImmersionSheaves.closedSubsetInclusion Z)))
 ```
 
-**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L203). The attribute's comment: “the sheaf of sections supported on Z”.
+**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L203). The attribute's comment: “the sheaf of sections supported on Z”.
 
 > The sheaf of sections of `F` supported on `Z`, equipped with its canonical inclusion into
 > `F`. On each open set the inclusion is injective and its range is precisely the set of
@@ -335,7 +335,7 @@ noncomputable def supportedSectionsSheaf {X : RingedSpace.{u, u}}
                 Z ∩ ((unop U : Opens X.carrier) : Set X.carrier)}
 ```
 
-**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheafι_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L254). The attribute's comment: “the supported sections form a submodule sheaf”.
+**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheafι_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L254). The attribute's comment: “the supported sections form a submodule sheaf”.
 
 > **Stacks 0G6N.** The sections supported on `Z` form a *submodule* sheaf of `F`: their
 > inclusion is a monomorphism of sheaves of modules.
@@ -346,7 +346,7 @@ instance supportedSectionsSheafι_mono {X : RingedSpace.{u, u}}
     Mono (supportedSectionsSheafι Z F)
 ```
 
-**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheaf_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L263). The attribute's comment: “the subsheaf is supported on Z”.
+**`Stacks.SheafOfModules.SupportedSections.supportedSectionsSheaf_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L263). The attribute's comment: “the subsheaf is supported on Z”.
 
 > **Stacks 0G6N.** The sheaf of sections supported on `Z` is itself supported on `Z`.
 
@@ -357,7 +357,7 @@ theorem supportedSectionsSheaf_supp_subset {X : RingedSpace.{u, u}}
       (supportedSectionsSheaf Z F).1).supp ⊆ Z
 ```
 
-**`Stacks.SheafOfModules.SupportedSections.hom_to_supportedSectionsSheaf_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L281). The attribute's comment: “maximality of the subsheaf among subsheaves supported on Z”.
+**`Stacks.SheafOfModules.SupportedSections.hom_to_supportedSectionsSheaf_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsSheaf.lean#L281). The attribute's comment: “maximality of the subsheaf among subsheaves supported on Z”.
 
 > **Stacks 0G6N.** Maximality of the subsheaf of sections supported on `Z`: any morphism
 > into `F` from a sheaf of modules which is supported on `Z` factors through it. The
@@ -375,7 +375,7 @@ theorem hom_to_supportedSectionsSheaf_of_supp_subset {X : RingedSpace.{u, u}}
 
 [Tag 0G6P](https://stacks.math.columbia.edu/tag/0G6P) in the Stacks Project.
 
-**`Stacks.SheafOfModules.SupportedSections.modulePushforward_supportedSectionsOnClosed_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean#L369).
+**`Stacks.SheafOfModules.SupportedSections.modulePushforward_supportedSectionsOnClosed_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/SupportedSectionsAdjunction.lean#L369).
 
 > **Stacks 0G6P.** For a closed subset `Z` of a ringed space `X`, with the restricted
 > structure sheaf `𝒪_X|_Z`, pushforward of modules along the inclusion `i : (Z, 𝒪_X|_Z) ⟶ X` is
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.13, Tag 01C1](https://stacks.math.columbia.edu/tag/01C1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

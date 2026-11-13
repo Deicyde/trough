@@ -7,14 +7,14 @@ statement: formalized
 
 # Shannon capacity of a graph
 
-77 results, 49 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html).
+77 results, 49 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html).
 
 ## Positive block lengths
 
 The type of positive integers, that is, of natural numbers $n$
 with $1 \le n$, used as the block lengths of codes.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.PositiveNat`, an abbreviation declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#positive-nat).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.PositiveNat`, an abbreviation declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#positive-nat).
 
 ## Independent codes for the modular cycle
 
@@ -26,7 +26,7 @@ in the $n$-th strong power of the cycle graph $C_q$.
 
 The source uses odd $q \ge 7$; the definition is stated for every $q$.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.IsCycleCode`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#is-cycle-code).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.IsCycleCode`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#is-cycle-code).
 
 ## Cycle codes
 
@@ -34,14 +34,14 @@ For natural numbers $q$ and $n$, a cycle code of length $n$ modulo $q$ is a
 finite set of words of length $n$ over $\mathbb{Z}/q\mathbb{Z}$ that is an independent code for
 the $q$-cycle.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.CycleCode`, an abbreviation declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.CycleCode`, an abbreviation declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code).
 
 ## Finitely many cycle codes of each length
 
 For every nonzero natural number $q$ and every
 natural number $n$, there are only finitely many cycle codes of length $n$ modulo $q$.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCode_finite`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-finite).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCode_finite`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-finite).
 
 ## Rate of a cycle code
 
@@ -49,7 +49,7 @@ For a natural number $q$, a positive integer $n$ and a cycle code
 $A$ of length $n$ modulo $q$, the rate of $A$ is $|A|^{1/n}$, the $n$-th root of the number of
 codewords of $A$, taken in the extended nonnegative reals $[0, \infty]$.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCodeRate`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-rate).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCodeRate`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-rate).
 
 ## Shannon capacity of the modular cycle
 
@@ -57,7 +57,7 @@ For a natural number $q$, the Shannon capacity of
 the $q$-cycle is the supremum, in $[0, \infty]$, of the rates $|A|^{1/n}$ over all positive
 integers $n$ and all cycle codes $A$ of length $n$ modulo $q$.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.shannonCapacityCycle`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon-capacity-cycle).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.shannonCapacityCycle`, a definition declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon-capacity-cycle).
 
 ## Code rates are at most the cycle capacity
 
@@ -65,7 +65,7 @@ For every natural number $q$, every positive
 integer $n$ and every cycle code $A$ of length $n$ modulo $q$, the rate of $A$ is at most the
 Shannon capacity of the $q$-cycle.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCodeRate_le_shannonCapacity`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-rate-le-shannon-capacity).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCodeRate_le_shannonCapacity`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-code-rate-le-shannon-capacity).
 
 ## Codes give lower bounds on the cycle capacity
 
@@ -74,7 +74,7 @@ with $n \ge 1$. If some finite set of words of length $n$ over $\mathbb{Z}/q\mat
 independent code for the $q$-cycle and has exactly $M$ elements, then $M^{1/n}$ is at most the
 Shannon capacity of the $q$-cycle, as an inequality in $[0, \infty]$.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleConstruction_implies_lowerBound`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/CycleCode.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-construction-implies-lower-bound).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleConstruction_implies_lowerBound`, a theorem declared in [MathlibExt/Combinatorics/Coding/CycleCode.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/CycleCode.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#cycle-construction-implies-lower-bound).
 
 ## Polak–Schrijver code of size 367 for the 7-cycle
 
@@ -86,7 +86,7 @@ exactly $367$ elements.
 
 - Polak--Schrijver, arXiv:1808.07438, the fifth-power 367-word construction.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#polak-schrijver-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#polak-schrijver-lower-bound).
 
 ## Shannon's upper bound for the capacity of the 7-cycle
 
@@ -97,7 +97,7 @@ $7$-cycle is at most $7/2$.
 
 - Shannon (1956), the fractional-clique-cover upper bound.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.shannon1956UpperBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon1956-upper-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.shannon1956UpperBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon1956-upper-bound).
 
 ## Lovász's theta value for the 7-cycle
 
@@ -111,7 +111,7 @@ Approximate decimal displays of this number in the source are not asserted as eq
 
 - Lovász (1979), as printed in BPZ, arXiv:2607.29681.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.lovaszThetaCycleSeven`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#lovasz-theta-cycle-seven).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.lovaszThetaCycleSeven`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#lovasz-theta-cycle-seven).
 
 ## Lovász's upper bound for the capacity of the 7-cycle
 
@@ -122,7 +122,7 @@ $7$-cycle is at most $\frac{7 \cos(\pi/7)}{1 + \cos(\pi/7)}$, as an inequality i
 
 - Lovász (1979); the closed form is also printed in the retained BPZ primary.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.lovasz1979UpperBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#lovasz1979-upper-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.lovasz1979UpperBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#lovasz1979-upper-bound).
 
 ## Baumert et al. lower bound for the capacity of the 7-cycle
 
@@ -133,7 +133,7 @@ $7$-cycle is at least $343^{1/5}$, as an inequality in $[0, \infty]$.
 
 - Baumert--McEliece--Rodemich--Rumsey--Stanley--Taylor (1971), exact rate row.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bmrrst1971LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bmrrst1971-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bmrrst1971LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bmrrst1971-lower-bound).
 
 ## Vesel–Žerovnik lower bound for the capacity of the 7-cycle
 
@@ -144,7 +144,7 @@ $7$-cycle is at least $108^{1/4}$.
 
 - Vesel--Žerovnik (2002), exact rate row; no unprinted code is supplied.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.veselZerovnik2002LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#vesel-zerovnik2002-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.veselZerovnik2002LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#vesel-zerovnik2002-lower-bound).
 
 ## Mathew–Östergård lower bound for the capacity of the 7-cycle
 
@@ -155,7 +155,7 @@ $7$-cycle is at least $350^{1/5}$, as an inequality in $[0, \infty]$.
 
 - Mathew--Östergård (2017), exact rate row; no unprinted code is supplied.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.mathewOstergard2017LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#mathew-ostergard2017-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.mathewOstergard2017LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#mathew-ostergard2017-lower-bound).
 
 ## Polak–Schrijver lower bound for the capacity of the 7-cycle
 
@@ -166,7 +166,7 @@ $7$-cycle is at least $367^{1/5}$, as an inequality in $[0, \infty]$.
 
 - Polak--Schrijver, arXiv:1808.07438, exact fifth-root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverRateLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#polak-schrijver-rate-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverRateLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#polak-schrijver-rate-lower-bound).
 
 ## Itty–Rosin–Carstensen–Reichman lower bound for the capacity of the 7-cycle
 
@@ -177,7 +177,7 @@ capacity of the $7$-cycle is at least $134753^{1/10}$, as an inequality in $[0, 
 
 - Itty--Rosin--Carstensen--Reichman, arXiv:2607.21517, exact tenth-root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.ittyRosinCarstensenReichman2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#itty-rosin-carstensen-reichman2026-lower).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.ittyRosinCarstensenReichman2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#itty-rosin-carstensen-reichman2026-lower).
 
 ## Itty–Rosin–Carstensen–Reichman code of dimension 10 for the 7-cycle
 
@@ -189,7 +189,7 @@ $7$-cycle and has exactly $134753$ elements.
 
 - Itty--Rosin--Carstensen--Reichman, arXiv:2607.21517, tenth-power construction.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.ittyRosinCarstensenReichman2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#itty-rosin-carstensen-reichman2026-const).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.ittyRosinCarstensenReichman2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#itty-rosin-carstensen-reichman2026-const).
 
 ## BPZ profiles
 
@@ -202,7 +202,7 @@ quadruple.
 
 - BPZ, arXiv:2607.29681, valid-tuple profiles.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.BPZProfile`, a structure declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpzprofile).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.BPZProfile`, a structure declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpzprofile).
 
 ## Product of BPZ profiles
 
@@ -218,7 +218,7 @@ The product is arithmetic on the four coordinates only; it does not supply an in
 
 - BPZ, arXiv:2607.29681, the profile product.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.BPZProfile.star`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#star).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.BPZProfile.star`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#star).
 
 ## Iterated squaring of BPZ profiles
 
@@ -231,7 +231,7 @@ squaring $k$ times under $\star$.
 
 - BPZ, arXiv:2607.29681, iterated profile products.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzProfileSquareIter`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-profile-square-iter).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzProfileSquareIter`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-profile-square-iter).
 
 ## Gao's code size in dimension 200
 
@@ -244,7 +244,7 @@ the cardinality Gao prints for a code of length $200$ for the $7$-cycle.
 
 - Gao, arXiv:2607.27869, the printed M40 value.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026M40`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-m40).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026M40`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-m40).
 
 ## Gao's code of dimension 200 for the 7-cycle
 
@@ -257,7 +257,7 @@ exactly $M_{40}$ elements.
 
 - Gao, arXiv:2607.27869, exact dimension-200 construction.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-construction).
 
 ## Gao's lower bound for the capacity of the 7-cycle
 
@@ -269,7 +269,7 @@ $7$-cycle is at least $M_{40}^{1/200}$, as an inequality in $[0, \infty]$.
 
 - Gao, arXiv:2607.27869, exact dimension-200 root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.gao2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#gao2026-lower-bound).
 
 ## Buys–Polak–Zuiddam one-block profile for the 7-cycle
 
@@ -282,7 +282,7 @@ Only these four integers are recorded, not BPZ's five-dimensional construction b
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi1).
 
 ## Buys–Polak–Zuiddam two-block profile for the 7-cycle
 
@@ -294,7 +294,7 @@ $8$, $367$ and $322$, and $\star$ is the Buys–Polak–Zuiddam (BPZ) profile pr
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi2).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi2).
 
 ## Three-block BPZ seven-cycle profile
 
@@ -308,7 +308,7 @@ two-block profile.
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi3).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi3).
 
 ## Five-block BPZ seven-cycle profile
 
@@ -322,7 +322,7 @@ the one-, two- and three-block profiles.
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi5`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi5).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi5`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi5).
 
 ## Buys–Polak–Zuiddam ten-block profile for the 7-cycle
 
@@ -333,7 +333,7 @@ is the five-block 7-cycle profile and $\star$ is the Buys–Polak–Zuiddam (BPZ
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi10`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi10).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi10`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi10).
 
 ## Buys–Polak–Zuiddam twenty-block profile for the 7-cycle
 
@@ -345,7 +345,7 @@ profile product.
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi20`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi20).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi20`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi20).
 
 ## Forty-block BPZ seven-cycle profile
 
@@ -360,7 +360,7 @@ $\pi_{20} = \pi_{10} \star \pi_{10}$.
 
 - BPZ, arXiv:2607.29681, seven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi40`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi40).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi40`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi40).
 
 ## Code coordinate of the forty-block BPZ seven-cycle profile
 
@@ -374,7 +374,7 @@ $4089635995108338053456272492117641008738901835089431264388780413340766441486608
 
 - BPZ, arXiv:2607.29681, forty-block seven-cycle recursion.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi40_code`, a theorem declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi40-code).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi40_code`, a theorem declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c7-pi40-code).
 
 ## Buys–Polak–Zuiddam code for the 7-cycle in length 200
 
@@ -387,7 +387,7 @@ $7$-cycle and has exactly $M$ elements.
 
 - BPZ, arXiv:2607.29681, the exact forty-block dimension-200 construction.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleSevenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-seven-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleSevenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-seven-construction).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the 7-cycle
 
@@ -399,7 +399,7 @@ $M^{1/200}$ is at most the Shannon capacity of the $7$-cycle, as an inequality i
 
 - BPZ, arXiv:2607.29681, the exact dimension-200 root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleSevenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-seven-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleSevenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-seven-lower-bound).
 
 ## Tandon's dimension-500 code size
 
@@ -416,7 +416,7 @@ $$
 
 - Tandon, arXiv:2608.30273, the printed Mstar value.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026Mstar`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-mstar).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026Mstar`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-mstar).
 
 ## Tandon's dimension-500 code for the 7-cycle
 
@@ -428,7 +428,7 @@ $\mathbb{Z}/7\mathbb{Z}$ with exactly $M^*$ codewords.
 
 - Tandon, arXiv:2608.30273, exact dimension-500 construction.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026Construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-construction).
 
 ## Tandon's lower bound for the capacity of the 7-cycle
 
@@ -439,7 +439,7 @@ dimension-500 code size. The Shannon capacity of the $7$-cycle is at least $(M^*
 
 - Tandon, arXiv:2608.30273, exact dimension-500 root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.tandon2026LowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#tandon2026-lower-bound).
 
 ## One-block BPZ profile for the 11-cycle
 
@@ -454,7 +454,7 @@ checked here.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi1).
 
 ## Two-block BPZ profile for the 11-cycle
 
@@ -466,7 +466,7 @@ eleven-cycle profile.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi2).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi2).
 
 ## Three-block BPZ profile for the 11-cycle
 
@@ -478,7 +478,7 @@ their one-block and two-block eleven-cycle profiles.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi3).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi3).
 
 ## Four-block BPZ profile for the 11-cycle
 
@@ -490,7 +490,7 @@ eleven-cycle profile.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi4`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi4).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi4`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi4).
 
 ## Seven-block BPZ profile for the 11-cycle
 
@@ -502,7 +502,7 @@ their three-block and four-block eleven-cycle profiles.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi7`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi7).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi7`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi7).
 
 ## Eight-block BPZ profile of the eleven-cycle
 
@@ -514,7 +514,7 @@ eleven-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi8`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi8).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi8`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi8).
 
 ## Fourteen-block BPZ profile for the 11-cycle
 
@@ -526,7 +526,7 @@ seven-block eleven-cycle profile.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi14`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi14).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi14`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi14).
 
 ## Fifteen-block BPZ profile for the 11-cycle
 
@@ -538,7 +538,7 @@ are their seven-block and eight-block eleven-cycle profiles.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi15`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi15).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi15`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi15).
 
 ## Twenty-nine-block BPZ profile for the 11-cycle
 
@@ -550,7 +550,7 @@ $\pi_{14}$ and $\pi_{15}$ are their fourteen-block and fifteen-block eleven-cycl
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi29`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi29).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi29`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi29).
 
 ## Fifty-eight-block BPZ profile for the 11-cycle
 
@@ -562,7 +562,7 @@ $\pi_{29}$ is their twenty-nine-block eleven-cycle profile.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi58`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi58).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi58`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c11-pi58).
 
 ## One-block BPZ profile of the thirteen-cycle
 
@@ -576,7 +576,7 @@ BPZ describe it as their one-block six-dimensional thirteen-cycle profile.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi1).
 
 ## Two-block BPZ profile of the thirteen-cycle
 
@@ -588,7 +588,7 @@ thirteen-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi2).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi2`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi2).
 
 ## Three-block BPZ profile of the thirteen-cycle
 
@@ -600,7 +600,7 @@ BPZ profiles of the thirteen-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi3).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi3`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi3).
 
 ## Four-block BPZ profile of the thirteen-cycle
 
@@ -612,7 +612,7 @@ thirteen-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi4`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi4).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi4`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi4).
 
 ## Five-block BPZ profile of the thirteen-cycle
 
@@ -624,7 +624,7 @@ BPZ profiles of the thirteen-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi5`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi5).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi5`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi5).
 
 ## Nine-block BPZ profile of the thirteen-cycle
 
@@ -636,7 +636,7 @@ BPZ profiles of the thirteen-cycle and $\star$ is the BPZ profile product.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi9`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi9).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi9`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi9).
 
 ## Seventy-two-block BPZ profile of the thirteen-cycle
 
@@ -651,7 +651,7 @@ This is the final profile of BPZ's thirteen-cycle construction.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi72`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi72).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi72`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c13-pi72).
 
 ## One-block BPZ profile of the fifteen-cycle
 
@@ -665,7 +665,7 @@ BPZ describe it as their one-block four-dimensional fifteen-cycle profile.
 
 - BPZ, arXiv:2607.29681, fifteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC15Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c15-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC15Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c15-pi1).
 
 ## BPZ profile of the fifteen-cycle after ten squarings
 
@@ -680,7 +680,7 @@ This is the final profile of BPZ's fifteen-cycle construction.
 
 - BPZ, arXiv:2607.29681, fifteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC15Pi1024`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c15-pi1024).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC15Pi1024`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c15-pi1024).
 
 ## Buys–Polak–Zuiddam one-block profile for the 19-cycle
 
@@ -694,7 +694,7 @@ Only these four integers are recorded, not BPZ's four-dimensional construction b
 
 - BPZ, arXiv:2607.29681, nineteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC19Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c19-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC19Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c19-pi1).
 
 ## Buys–Polak–Zuiddam 4096-block profile for the 19-cycle
 
@@ -708,7 +708,7 @@ $p_0$ twelve times.
 
 - BPZ, arXiv:2607.29681, nineteen-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC19Pi4096`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c19-pi4096).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC19Pi4096`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c19-pi4096).
 
 ## Buys–Polak–Zuiddam one-block profile for the 21-cycle
 
@@ -722,7 +722,7 @@ Only these four integers are recorded, not BPZ's four-dimensional construction b
 
 - BPZ, arXiv:2607.29681, twenty-one-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC21Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c21-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC21Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c21-pi1).
 
 ## Buys–Polak–Zuiddam 1024-block profile for the 21-cycle
 
@@ -736,7 +736,7 @@ $p_0$ ten times.
 
 - BPZ, arXiv:2607.29681, twenty-one-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC21Pi1024`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c21-pi1024).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC21Pi1024`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c21-pi1024).
 
 ## Buys–Polak–Zuiddam one-block profile for the 23-cycle
 
@@ -750,7 +750,7 @@ Only these four integers are recorded, not BPZ's four-dimensional construction b
 
 - BPZ, arXiv:2607.29681, twenty-three-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC23Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c23-pi1).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC23Pi1`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c23-pi1).
 
 ## Buys–Polak–Zuiddam 512-block profile for the 23-cycle
 
@@ -764,7 +764,7 @@ $p_0$ nine times.
 
 - BPZ, arXiv:2607.29681, twenty-three-cycle construction.
 
-Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC23Pi512`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c23-pi512).
+Formalized by `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC23Pi512`, a definition declared in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz-c23-pi512).
 
 ## Buys–Polak–Zuiddam code for the eleven-cycle in dimension 174
 
@@ -777,7 +777,7 @@ code for the $11$-cycle and has exactly $\max(c, 0)$ elements.
 
 - BPZ, arXiv:2607.29681, eleven-cycle construction in dimension 174.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleElevenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-eleven-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleElevenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-eleven-construction).
 
 ## Buys–Polak–Zuiddam code for the 13-cycle in length 432
 
@@ -790,7 +790,7 @@ for the $13$-cycle and has exactly $M$ elements.
 
 - BPZ, arXiv:2607.29681, thirteen-cycle construction in dimension 432.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleThirteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-thirteen-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleThirteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-thirteen-construction).
 
 ## Buys–Polak–Zuiddam code for the fifteen-cycle in dimension 4096
 
@@ -803,7 +803,7 @@ for the $15$-cycle and has exactly $\max(c, 0)$ elements.
 
 - BPZ, arXiv:2607.29681, fifteen-cycle construction in dimension 4096.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleFifteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-fifteen-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleFifteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-fifteen-construction).
 
 ## Buys–Polak–Zuiddam code for the nineteen-cycle in dimension 16384
 
@@ -816,7 +816,7 @@ code for the $19$-cycle and has exactly $\max(c, 0)$ elements.
 
 - BPZ, arXiv:2607.29681, nineteen-cycle construction in dimension 16384.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleNineteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-nineteen-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleNineteenConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-nineteen-construction).
 
 ## Buys–Polak–Zuiddam code for the 21-cycle in length 4096
 
@@ -829,7 +829,7 @@ code for the $21$-cycle and has exactly $M$ elements.
 
 - BPZ, arXiv:2607.29681, twenty-one-cycle construction in dimension 4096.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyOneConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-one-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyOneConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-one-construction).
 
 ## Buys–Polak–Zuiddam code for the 23-cycle in length 2048
 
@@ -842,7 +842,7 @@ code for the $23$-cycle and has exactly $M$ elements.
 
 - BPZ, arXiv:2607.29681, twenty-three-cycle construction in dimension 2048.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyThreeConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-three-construction).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyThreeConstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-three-construction).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the eleven-cycle
 
@@ -855,7 +855,7 @@ $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact eleven-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleElevenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-eleven-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleElevenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-eleven-lower-bound).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the 13-cycle
 
@@ -868,7 +868,7 @@ $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact thirteen-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleThirteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-thirteen-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleThirteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-thirteen-lower-bound).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the fifteen-cycle
 
@@ -881,7 +881,7 @@ in $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact fifteen-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleFifteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-fifteen-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleFifteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-fifteen-lower-bound).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the 19-cycle
 
@@ -894,7 +894,7 @@ inequality in $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact nineteen-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleNineteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-nineteen-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleNineteenLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-nineteen-lower-bound).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the 21-cycle
 
@@ -907,7 +907,7 @@ inequality in $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact twenty-one-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyOneLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-one-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyOneLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-one-lower-bound).
 
 ## Buys–Polak–Zuiddam lower bound for the capacity of the 23-cycle
 
@@ -920,7 +920,7 @@ inequality in $[0, \infty]$.
 
 - BPZ, arXiv:2607.29681, exact twenty-three-cycle root rate.
 
-Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyThreeLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-three-lower-bound).
+Stated but not proved: `MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyThreeLowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Coding/CycleShannonBoundsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#bpz2026-cycle-twenty-three-lower-bound).
 
 ## Strong power of a graph
 
@@ -930,7 +930,7 @@ the words $x = (x_1, \dots, x_k) \in V^k$ of length $k$, in which two words $x$ 
 adjacent (confusable) when $x \neq y$ and for every $i$ either $x_i = y_i$ or $x_i$ and $y_i$ are
 adjacent in $G$.
 
-Formalized by `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.strongPower`, a definition declared in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#strong-power).
+Formalized by `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.strongPower`, a definition declared in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#strong-power).
 
 ## Shannon capacity of a graph
 
@@ -939,7 +939,7 @@ $\theta$ be a real number. For $k \ge 1$ let $G^{\boxtimes k}$ be the $k$-th str
 and $\alpha(G^{\boxtimes k})$ its independence number. The graph $G$ has Shannon capacity $\theta$
 when $\alpha(G^{\boxtimes k})^{1/k} \to \theta$ as $k \to \infty$.
 
-Formalized by `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.HasShannonCapacity`, a definition declared in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#has-shannon-capacity).
+Formalized by `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.HasShannonCapacity`, a definition declared in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#has-shannon-capacity).
 
 ## Lovász's theorem: the Shannon capacity of the pentagon
 
@@ -952,7 +952,7 @@ as $k \to \infty$.
 
 - Knill, *Some fundamental theorems in mathematics*, §238. Problem `shannon_capacity_pentagon` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.shannon_capacity_pentagon` is written with `theorem_wanted` in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon-capacity-pentagon).
+Stated but not proved: `MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.shannon_capacity_pentagon` is written with `theorem_wanted` in [WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ShannonCapacityPentagonWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html#shannon-capacity-pentagon).
 
 ## Depends on
 
@@ -961,4 +961,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shannon capacity of a graph](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-invariants-and-labelings/shannon-capacity-of-a-graph)

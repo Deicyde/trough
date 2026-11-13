@@ -8,7 +8,7 @@ proof: formalized
 
 # Series with odd harmonic numbers
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html).
 
 ## Ramanujan's series identity with odd harmonic numbers (Entry 34)
 
@@ -23,7 +23,7 @@ their sums are equal.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry34Zeta3doublesum.ramanujan_part1_ch9_entry34_zeta3doublesum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry34Zeta3doublesum.lean, line 1302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry34Zeta3doublesum.lean#L1302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html#ramanujan-part1-ch9-entry34-zeta3doubles).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry34Zeta3doublesum.ramanujan_part1_ch9_entry34_zeta3doublesum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry34Zeta3doublesum.lean, line 1302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry34Zeta3doublesum.lean#L1302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html#ramanujan-part1-ch9-entry34-zeta3doubles).
 
 ## Ramanujan's odd harmonic series identity
 
@@ -40,7 +40,7 @@ $$F\left(\frac{x}{2-x}\right) = \frac{(\log(1-x))^2}{8} + \frac{\operatorname{Li
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 8, pp. 249–250.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry8Arcsin.ramanujan_part1_ch9_entry8_arcsin`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry8Arcsin.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry8Arcsin.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html#ramanujan-part1-ch9-entry8-arcsin).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry8Arcsin.ramanujan_part1_ch9_entry8_arcsin`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry8Arcsin.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry8Arcsin.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html#ramanujan-part1-ch9-entry8-arcsin).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Series with odd harmonic numbers](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-with-odd-harmonic-numbers)

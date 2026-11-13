@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.32 Tricks in positive characteristic
 
-Section 58.32 of the Stacks Project, [Tag 0G1E](https://stacks.math.columbia.edu/tag/0G1E). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.32 of the Stacks Project, [Tag 0G1E](https://stacks.math.columbia.edu/tag/0G1E). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G1F, a lemma
 
 [Tag 0G1F](https://stacks.math.columbia.edu/tag/0G1F) in the Stacks Project.
 
-**`Stacks.Etale.exists_etalePresentation_nonfiniteGeneratorNumber_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/NonfiniteGenerators.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/NonfiniteGenerators.lean#L421).
+**`Stacks.Etale.exists_etalePresentation_nonfiniteGeneratorNumber_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/NonfiniteGenerators.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/NonfiniteGenerators.lean#L421).
 
 > In positive characteristic, an étale presentation of a finite étale algebra whose
 > nonfinite-generator invariant is positive can be replaced by a compatible étale presentation
@@ -50,7 +50,7 @@ theorem exists_etalePresentation_nonfiniteGeneratorNumber_lt
 
 [Tag 0G1G](https://stacks.math.columbia.edu/tag/0G1G) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtale_to_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverAffineSpace.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverAffineSpace.lean#L82).
+**`AlgebraicGeometry.exists_finiteEtale_to_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverAffineSpace.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverAffineSpace.lean#L82).
 
 > An affine scheme étale over affine space in positive characteristic admits a
 > (possibly different) finite étale morphism to the same affine space.
@@ -68,7 +68,7 @@ theorem exists_finiteEtale_to_affineSpace
 
 [Tag 0G1H](https://stacks.math.columbia.edu/tag/0G1H) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtale_openClosed_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverClosedSubschemeOfAffineSpace.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverClosedSubschemeOfAffineSpace.lean#L166).
+**`AlgebraicGeometry.exists_finiteEtale_openClosed_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverClosedSubschemeOfAffineSpace.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleOverClosedSubschemeOfAffineSpace.lean#L166).
 
 > **Stacks Project, Tag 0G1H.** In positive characteristic, a finite étale cover of a closed
 > subscheme of affine space is an open-and-closed part of the restriction of a finite étale cover
@@ -91,7 +91,7 @@ theorem exists_finiteEtale_openClosed_pullback
 
 [Tag 0G1I](https://stacks.math.columbia.edu/tag/0G1I) in the Stacks Project.
 
-**`AlgebraicGeometry.injective_etaleFundamentalGroupMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ClosedImmersionPositiveCharacteristic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ClosedImmersionPositiveCharacteristic.lean#L294).
+**`AlgebraicGeometry.injective_etaleFundamentalGroupMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ClosedImmersionPositiveCharacteristic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ClosedImmersionPositiveCharacteristic.lean#L294).
 
 > **Stacks Project, Tag 0G1I.** A closed immersion of connected affine schemes over `𝐅_p`
 > induces an injection on étale fundamental groups. Being a scheme over `𝐅_p` is spelled as
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.32, Tag 0G1E](https://stacks.math.columbia.edu/tag/0G1E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

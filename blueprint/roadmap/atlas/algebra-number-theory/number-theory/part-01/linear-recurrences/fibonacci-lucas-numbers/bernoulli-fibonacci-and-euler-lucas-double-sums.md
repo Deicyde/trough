@@ -7,28 +7,28 @@ statement: formalized
 
 # Bernoulli–Fibonacci and Euler–Lucas double sums
 
-25 results, 5 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html).
+25 results, 5 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html).
 
 ## The square root of five
 
 This is the real number $\sqrt{5}$, the nonnegative real square
 root of $5$.
 
-Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sqrt5`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sqrt5).
+Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sqrt5`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sqrt5).
 
 ## The golden ratio $\alpha$
 
 The golden ratio is the real number
 $\alpha = (1 + \sqrt{5})/2$.
 
-Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibAlpha`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#fib-alpha).
+Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibAlpha`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#fib-alpha).
 
 ## The conjugate golden ratio $\beta$
 
 The real number $\beta = (1 - \sqrt{5})/2$, the
 conjugate of the golden ratio $(1 + \sqrt{5})/2$.
 
-Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibBeta`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#fib-beta).
+Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibBeta`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#fib-beta).
 
 ## Euler numbers
 
@@ -39,7 +39,7 @@ $E_0 = 1$, $E_2 = -1$, $E_4 = 5$.
 
 These are the Euler (secant) numbers, with exponential generating function $2/(e^t + e^{-t})$.
 
-Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.eulerSecNumber`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#euler-sec-number).
+Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.eulerSecNumber`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#euler-sec-number).
 
 ## Genocchi–Lucas coefficients
 
@@ -57,7 +57,7 @@ These are the inner coefficients of the corrected Theorem 11 of Bensaci, Boumahd
 "Finite Sums Involving Fibonacci and Lucas Numbers"; the paper's printed coefficient omits the
 last term.
 
-Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.genLucasCoeff`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#gen-lucas-coeff).
+Formalized by `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.genLucasCoeff`, a definition declared in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#gen-lucas-coeff).
 
 ## Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
@@ -74,7 +74,7 @@ $$
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-fib-beta-pow-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-fib-beta-pow-eq-sum).
 
 ## A vanishing double sum of Bernoulli and Fibonacci numbers
 
@@ -92,7 +92,7 @@ the factor $\beta^{-n}$ in place of $(-\beta)^{m-n}$, which makes the sum equal 
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_bernoulli_fib_neg_fibBeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-bernoulli-fib-neg-fib-beta).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_bernoulli_fib_neg_fibBeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-bernoulli-fib-neg-fib-beta).
 
 ## Bernoulli–Fibonacci double sum with weights $(-2)^n$
 
@@ -107,7 +107,7 @@ $$\sum_{n=0}^{m} \sum_{k=0}^{n} (-2)^n (\sqrt{5})^k \binom{n}{k} \binom{m}{n} B_
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_neg_two_pow_bernoulli_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-neg-two-pow-bernoulli-fib).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_neg_two_pow_bernoulli_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-neg-two-pow-bernoulli-fib).
 
 ## Derivatives of the Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
@@ -131,7 +131,7 @@ through by $m^{\underline{s}}$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.descFactorial_mul_add_fibBeta_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#desc-factorial-mul-add-fib-beta-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.descFactorial_mul_add_fibBeta_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#desc-factorial-mul-add-fib-beta-pow).
 
 ## Euler–Lucas expansion of $(x + 1/2)^m$
 
@@ -148,7 +148,7 @@ $$
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_half_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-half-pow-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_half_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-half-pow-eq-sum).
 
 ## The alternating Euler–Lucas double sum vanishes
 
@@ -165,7 +165,7 @@ The hypothesis $m \ge 1$ is needed: for $m = 0$ the sum is $2$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_neg_one_pow_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-neg-one-pow-euler-sec-lucas).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_neg_one_pow_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-neg-one-pow-euler-sec-lucas).
 
 ## A double sum of Euler and Lucas numbers equal to two
 
@@ -180,7 +180,7 @@ E_k L_{n-k} = 2.$$
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas).
 
 ## Powers of the golden ratio from Euler and Lucas numbers
 
@@ -195,7 +195,7 @@ $$\sum_{n=0}^{m} \sum_{k=0}^{n} \left(\frac{\sqrt{5}}{2}\right)^{k+m-n} \binom{n
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas_eq_two_fibAlpha_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas-eq-two-fib-alpha-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas_eq_two_fibAlpha_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas-eq-two-fib-alpha-pow).
 
 ## Powers of the conjugate golden ratio from Euler and Lucas numbers
 
@@ -210,7 +210,7 @@ $$\sum_{n=0}^{m} \sum_{k=0}^{n} (-1)^{m-n} \left(\frac{\sqrt{5}}{2}\right)^{k+m-
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas_eq_two_fibBeta_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas-eq-two-fib-beta-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_eulerSec_lucas_eq_two_fibBeta_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-euler-sec-lucas-eq-two-fib-beta-pow).
 
 ## A binomial sum of Euler and Lucas numbers
 
@@ -224,7 +224,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} \left(\frac{\sqrt{5}}{2}\right)^{k} E_k L_{n-k} = 
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 10.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_choose_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-choose-euler-sec-lucas).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_choose_eulerSec_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-choose-euler-sec-lucas).
 
 ## Genocchi–Lucas expansion of $(x + \beta)^m$
 
@@ -251,7 +251,7 @@ instead of $1$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 11.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum_genLucasCoeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-fib-beta-pow-eq-sum-gen-lucas-coeff).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum_genLucasCoeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-fib-beta-pow-eq-sum-gen-lucas-coeff).
 
 ## A vanishing sum of the corrected Genocchi–Lucas coefficients
 
@@ -271,7 +271,7 @@ of $(-\beta)^{m-n}$ and without the last term of $c_n$, the sum at $m = 2$ is $-
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 12.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_neg_fibBeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-gen-lucas-coeff-neg-fib-beta).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_neg_fibBeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-gen-lucas-coeff-neg-fib-beta).
 
 ## A weighted sum of the corrected Genocchi–Lucas coefficients
 
@@ -295,7 +295,7 @@ it is $12\sqrt{5}/5$, not $2\sqrt{5}/5$).
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_weighted` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-gen-lucas-coeff-weighted).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_weighted` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-gen-lucas-coeff-weighted).
 
 ## Genocchi–Lucas sum for powers of the conjugate golden ratio
 
@@ -314,7 +314,7 @@ for even $n \ge 2$; at $n = 1$ it gives $1$ instead of $2 \beta = 1 - \sqrt{5}$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 14.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genocchi_lucas_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-genocchi-lucas-add).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genocchi_lucas_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-genocchi-lucas-add).
 
 ## Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$
 
@@ -339,7 +339,7 @@ $x = \sqrt{5}$, $m = 2$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 15.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_mul_fibBeta_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-mul-fib-beta-pow-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_mul_fibBeta_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#add-mul-fib-beta-pow-eq-sum).
 
 ## A multinomial sum of Bernoulli and Fibonacci numbers equal to one
 
@@ -362,7 +362,7 @@ $\ell_1!\, \ell_2!$; with that coefficient the sum at $m = 2$ is $8/3$, not $1$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Corollary 17.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_bernoulli_fib_two_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-bernoulli-fib-two-eq-one).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_bernoulli_fib_two_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#sum-bernoulli-fib-two-eq-one).
 
 ## Euler–Lucas multinomial expansion of $(x + q/2)^m$
 
@@ -386,7 +386,7 @@ factors $\ell_i!$.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 18.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.two_pow_mul_add_half_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#two-pow-mul-add-half-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.two_pow_mul_add_half_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#two-pow-mul-add-half-pow).
 
 ## Multinomial Genocchi–Lucas expansion of $(x + q\beta)^m$
 
@@ -418,7 +418,7 @@ multinomial coefficient and no correction terms, the identity fails already at $
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 20.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.two_sqrt5_pow_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#two-sqrt5-pow-mul-add).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.two_sqrt5_pow_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#two-sqrt5-pow-mul-add).
 
 ## Iterated forward differences of a power as an alternating binomial sum
 
@@ -436,7 +436,7 @@ allowed.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Lemma 21.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.iterate_forwardDiff_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#iterate-forward-diff-pow-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.iterate_forwardDiff_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#iterate-forward-diff-pow-eq-sum).
 
 ## Genocchi numbers via Stirling numbers of the second kind
 
@@ -453,7 +453,7 @@ where $S(n-1, j)$ are the Stirling numbers of the second kind.
 
 - Fatima Zohra Bensaci, Rachid Boumahdi, and Laala Khaldi, "Finite Sums Involving Fibonacci and Lucas Numbers", Theorem 22.
 
-Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.genocchiNumber_div_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#genocchi-number-div-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.genocchiNumber_div_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteSumsFibLucasWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html#genocchi-number-div-eq-sum).
 
 ## Depends on
 
@@ -462,4 +462,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli–Fibonacci and Euler–Lucas double sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/bernoulli-fibonacci-and-euler-lucas-double-sums)

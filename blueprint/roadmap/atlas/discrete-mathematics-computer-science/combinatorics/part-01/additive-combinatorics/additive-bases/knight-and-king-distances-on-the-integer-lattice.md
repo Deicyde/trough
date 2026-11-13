@@ -7,7 +7,7 @@ statement: formalized
 
 # Knight and king distances on the integer lattice
 
-14 results, 11 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html).
+14 results, 11 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html).
 
 ## Knight moves
 
@@ -22,7 +22,7 @@ $(b, -a)$ and $(-b, -a)$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `N_{a,b}`.
 
-Formalized by `MetaMathlibExt.knightMoves`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-moves).
+Formalized by `MetaMathlibExt.knightMoves`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-moves).
 
 ## King moves
 
@@ -35,7 +35,7 @@ $$K = \{(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)\}.$
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `K`.
 
-Formalized by `MetaMathlibExt.kingMoves`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#king-moves).
+Formalized by `MetaMathlibExt.kingMoves`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#king-moves).
 
 ## Piece distance on the integer lattice
 
@@ -51,7 +51,7 @@ Points other than the origin that are not a sum of moves from $A$ therefore have
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `A(x,y)`.
 
-Formalized by `MetaMathlibExt.pieceDistance`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance).
+Formalized by `MetaMathlibExt.pieceDistance`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance).
 
 ## Max-norm ball
 
@@ -63,7 +63,7 @@ points $(x, y)$ with $\max(|x|, |y|) \le h$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `B_h`.
 
-Formalized by `MetaMathlibExt.maxNormBall`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#max-norm-ball).
+Formalized by `MetaMathlibExt.maxNormBall`, a definition declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#max-norm-ball).
 
 ## Piece distance from a minimal fold
 
@@ -76,7 +76,7 @@ $h \ge 1$ with $p \in hA$ satisfies $n \le h$, then the piece distance of $p$ fo
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `A(x,y)`.
 
-Formalized by `MetaMathlibExt.pieceDistance_eq_of_mem_of_forall`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-eq-of-mem-of-forall).
+Formalized by `MetaMathlibExt.pieceDistance_eq_of_mem_of_forall`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-eq-of-mem-of-forall).
 
 ## King distance is the max norm
 
@@ -87,7 +87,7 @@ piece distance of $p$ for the king's move set $K$ is $\max(|x|, |y|)$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definitions of `A(x,y)` and `K`.
 
-Formalized by `MetaMathlibExt.pieceDistance_kingMoves`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-king-moves).
+Formalized by `MetaMathlibExt.pieceDistance_kingMoves`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-king-moves).
 
 ## The knight reaches $(1,2)$ in one move
 
@@ -99,7 +99,7 @@ distance of the point $(1,2)$ for $N$ is $1$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of the usual knight following the definition of `N_{a,b}`.
 
-Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-two).
+Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-two).
 
 ## The knight needs three moves to reach $(1,0)$
 
@@ -111,7 +111,7 @@ piece distance of the point $(1,0)$ for $N$ is $3$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), characteristic value for the usual knight.
 
-Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-zero).
+Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-zero).
 
 ## The usual knight reaches (1, 1) in two moves
 
@@ -122,7 +122,7 @@ $N_{1,2} = \{(\pm 1, \pm 2), (\pm 2, \pm 1)\}$, the piece distance of the point 
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), characteristic value for the usual knight.
 
-Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-one).
+Formalized by `MetaMathlibExt.pieceDistance_knightMoves_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-one-one).
 
 ## The knight's distance to the origin is zero
 
@@ -136,7 +136,7 @@ This holds by the definition of piece distance, which sets the distance at the o
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `A(0,0)`.
 
-Formalized by `MetaMathlibExt.pieceDistance_knightMoves_zero_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-zero-zero).
+Formalized by `MetaMathlibExt.pieceDistance_knightMoves_zero_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#piece-distance-knight-moves-zero-zero).
 
 ## Number of points in the max-norm ball
 
@@ -147,7 +147,7 @@ $B_h = \{(x, y) \in \mathbb{Z}^2 : \max(|x|, |y|) \le h\}$ has exactly $(2h+1)^2
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), definition of `B_h`.
 
-Formalized by `MetaMathlibExt.card_maxNormBall`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#card-max-norm-ball).
+Formalized by `MetaMathlibExt.card_maxNormBall`, a theorem declared in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#card-max-norm-ball).
 
 ## Uniform bound for knight distance on a box
 
@@ -161,7 +161,7 @@ $N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\}$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.knight_distance_uniform_on_box` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-distance-uniform-on-box).
+Stated but not proved: `MetaMathlibExt.knight_distance_uniform_on_box` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-distance-uniform-on-box).
 
 ## Knight distance asymptotics
 
@@ -177,7 +177,7 @@ $|d_{a,b}(x, y) - (x + y)/(a + b)| \le Mb$.
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.knight_distance_asymptotics` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-distance-asymptotics).
+Stated but not proved: `MetaMathlibExt.knight_distance_asymptotics` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-distance-asymptotics).
 
 ## Velocity formula for the (a, b)-knight
 
@@ -195,7 +195,7 @@ $$\lim_{h \to \infty} \frac{2h}{3} \, \bar{d}(h)^{-1} = \frac{2(a+b)b^2}{a^2 + 3
 
 - Christian Táfula, *Knights Are 24/13 Times Faster than the King*, The Fibonacci Quarterly 62(3) (2024), Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.knight_velocity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-velocity-formula).
+Stated but not proved: `MetaMathlibExt.knight_velocity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/KnightKingVelocityWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html#knight-velocity-formula).
 
 ## Depends on
 
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Knight and king distances on the integer lattice](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/additive-bases/knight-and-king-distances-on-the-integer-lattice)

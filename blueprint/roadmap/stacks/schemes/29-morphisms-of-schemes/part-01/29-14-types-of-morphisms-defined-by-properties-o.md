@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.14 Types of morphisms defined by properties of ring maps
 
-Section 29.14 of the Stacks Project, [Tag 01SQ](https://stacks.math.columbia.edu/tag/01SQ). 9 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.14 of the Stacks Project, [Tag 01SQ](https://stacks.math.columbia.edu/tag/01SQ). 9 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01SR, a definition
 
 [Tag 01SR](https://stacks.math.columbia.edu/tag/01SR) in the Stacks Project.
 
-**`RingHom.StacksPropertyIsLocal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L71). The attribute's comment: “(1) local, all three conditions (a), (b), (c)”.
+**`RingHom.StacksPropertyIsLocal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L71). The attribute's comment: “(1) local, all three conditions (a), (b), (c)”.
 
 > A property of commutative-ring homomorphisms is local if it is preserved
 > by simultaneous principal localization, passes from a map `R_f → A` to the
@@ -28,14 +28,14 @@ structure StacksPropertyIsLocal
 
 Declarations registered for the tag:
 
-- [`RingHom.IsStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L100) (StacksFrontier): “(2) stable under base change, in the pushout formulation”.
-- [`RingHom.StableUnderComposition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.StableUnderComposition#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L102) (StacksFrontier): “(3) stable under composition”.
+- [`RingHom.IsStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L100) (StacksFrontier): “(2) stable under base change, in the pushout formulation”.
+- [`RingHom.StableUnderComposition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.StableUnderComposition#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L102) (StacksFrontier): “(3) stable under composition”.
 
 ## Tag 01SS, a definition
 
 [Tag 01SS](https://stacks.math.columbia.edu/tag/01SS) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L109).
+**`AlgebraicGeometry.locallyOfType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/Defs.lean#L109).
 
 > A morphism of schemes is locally of type `P` if every point of its source lies in
 > an affine open mapping into an affine open of the target on whose rings of sections
@@ -50,7 +50,7 @@ abbrev locallyOfType (P : ∀ {R S : Type u} [CommRing R] [CommRing S],
 
 [Tag 01ST](https://stacks.math.columbia.edu/tag/01ST) in the Stacks Project.
 
-**`AlgebraicGeometry.appLE_of_locallyOfType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L149).
+**`AlgebraicGeometry.appLE_of_locallyOfType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L149).
 
 > If `f` is locally of type `P` for a local property `P`, then `P` holds for the ring map
 > `𝒪_S(V) → 𝒪_X(U)` of any affine opens `U ⊆ X`, `V ⊆ S` with `f(U) ⊆ V`.
@@ -65,7 +65,7 @@ theorem appLE_of_locallyOfType (hP : RingHom.StacksPropertyIsLocal P) {f : X ⟶
 
 [Tag 01SU](https://stacks.math.columbia.edu/tag/01SU) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfType_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L158). The attribute's comment: “moreover: restriction to open subschemes”.
+**`AlgebraicGeometry.locallyOfType_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L158). The attribute's comment: “moreover: restriction to open subschemes”.
 
 > If `f` is locally of type `P` for a local property `P`, then so is its restriction
 > `U → V` to any opens `U ⊆ X`, `V ⊆ S` with `f(U) ⊆ V`.
@@ -76,7 +76,7 @@ theorem locallyOfType_resLE (hP : RingHom.StacksPropertyIsLocal P) {f : X ⟶ S}
     locallyOfType P (f.resLE V U e)
 ```
 
-**`AlgebraicGeometry.locallyOfType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L167). The attribute's comment: “equivalence of (1), (2), (3) and (4)”.
+**`AlgebraicGeometry.locallyOfType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L167). The attribute's comment: “equivalence of (1), (2), (3) and (4)”.
 
 > For a local property `P`, being locally of type `P` can be checked on all pairs of affine
 > opens, on open coverings of target and preimages, or on affine such coverings.
@@ -92,7 +92,7 @@ theorem locallyOfType_tfae (hP : RingHom.StacksPropertyIsLocal P) (f : X ⟶ S) 
         (⨆ U ∈ 𝒰, U.1) = f ⁻¹ᵁ V.1 ∧ ∀ U ∈ 𝒰, ∃ e : U.1 ≤ f ⁻¹ᵁ V.1, P (f.appLE V U e).hom]
 ```
 
-**`AlgebraicGeometry.locallyOfType_tfae_and_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L226).
+**`AlgebraicGeometry.locallyOfType_tfae_and_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L226).
 
 > The whole statement: for a local property `P`, the four characterizations of being locally
 > of type `P` agree, and being locally of type `P` passes to restrictions to open subschemes.
@@ -114,7 +114,7 @@ theorem locallyOfType_tfae_and_resLE (hP : RingHom.StacksPropertyIsLocal P) (f :
 
 [Tag 01SV](https://stacks.math.columbia.edu/tag/01SV) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L241).
+**`AlgebraicGeometry.locallyOfType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocallyOfType.lean#L241).
 
 > For a local property `P` stable under composition, a composition of morphisms locally of
 > type `P` is locally of type `P`.
@@ -131,13 +131,13 @@ theorem locallyOfType_comp (hP : RingHom.StacksPropertyIsLocal P)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.HasRingHomProperty.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.HasRingHomProperty.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L189) (StacksFrontier).
+- [`AlgebraicGeometry.HasRingHomProperty.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.HasRingHomProperty.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L192) (StacksFrontier).
 
 ## Tag 01SX, a lemma
 
 [Tag 01SX](https://stacks.math.columbia.edu/tag/01SX) in the Stacks Project.
 
-**`RingHom.isOpenImmersion_localizationAwayPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L118). The attribute's comment: “part (2) (open immersion), locality condition (1)(a) of 01SR only: the criterion is preserved by simultaneous principal localization. Part (2) itself is false; see not\_stacksPropertyIsLocal\_isOpenImmersion”.
+**`RingHom.isOpenImmersion_localizationAwayPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L120). The attribute's comment: “part (2) (open immersion) as printed: locality condition (1)(a) of 01SR holds for the criterion R\_f → A\_f, which is preserved by simultaneous principal localization”.
 
 > Locality condition (1)(a): the affine open-immersion criterion is preserved by
 > simultaneous principal localization. This is base change along `R → R_r`.
@@ -148,7 +148,7 @@ theorem isOpenImmersion_localizationAwayPreserves :
       (fun {R A : Type u} [CommRing R] [CommRing A] (φ : R →+* A) ↦ φ.IsOpenImmersion)
 ```
 
-**`RingHom.isOpenImmersion_compPrincipalLocalizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L128). The attribute's comment: “part (2) (open immersion), locality condition (1)(b) of 01SR only: `P (R_f → A) ⟹ P (R → A_a)`. Part (2) itself is false; see not\_stacksPropertyIsLocal\_isOpenImmersion”.
+**`RingHom.isOpenImmersion_compPrincipalLocalizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L129). The attribute's comment: “part (2) (open immersion) as printed: locality condition (1)(b) of 01SR holds for the criterion R\_f → A\_f, `P (R_f → A) ⟹ P (R → A_a)`”.
 
 > Locality condition (1)(b): if `R_f → A` satisfies the affine open-immersion criterion then
 > so does the induced composite `R → A_a`.
@@ -161,7 +161,7 @@ theorem isOpenImmersion_compPrincipalLocalizations
     ((algebraMap A Aa).comp (g.comp (algebraMap R Rf))).IsOpenImmersion
 ```
 
-**`RingHom.not_ofLocalizationFiniteSpanTarget_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L231). The attribute's comment: “refutation of part (2) (open immersion): locality condition (1)(c) of 01SR fails for the criterion, the witness being the diagonal `k → k × k` of a field, whose two localizations at the coordinate idempotents are bijective while the diagonal itself is not a principal localization”.
+**`RingHom.not_ofLocalizationFiniteSpanTarget_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L232). The attribute's comment: “part (2) (open immersion) as printed: locality condition (1)(c) of 01SR fails for the criterion R\_f → A\_f, the witness being the diagonal `k → k × k` of a field, whose two localizations at the coordinate idempotents are bijective while the diagonal itself is not a principal localization”.
 
 > The affine open-immersion criterion does not descend from a finite principal open cover of
 > the target: this is the third locality condition of `RingHom.StacksPropertyIsLocal`.
@@ -172,7 +172,7 @@ theorem not_ofLocalizationFiniteSpanTarget_isOpenImmersion :
       (fun {R S : Type u} [CommRing R] [CommRing S] (φ : R →+* S) ↦ φ.IsOpenImmersion)
 ```
 
-**`RingHom.not_stacksPropertyIsLocal_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L244). The attribute's comment: “refutation of part (2) (open immersion): the criterion is NOT a local property of ring maps, so part (2) is false as stated. Conditions (1)(a) and (1)(b) of 01SR do hold and are the two carriers above; (1)(c) fails by not\_ofLocalizationFiniteSpanTarget\_isOpenImmersion. Parts (1), (3), (4) and (5) of the tag are true and carried in LocalRingIso, ReducedFibers, FiberDimension and NoetherianTarget”.
+**`RingHom.not_stacksPropertyIsLocal_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersionNotLocal.lean#L246). The attribute's comment: “refutation of part (2) (open immersion): the criterion is NOT a local property of ring maps, so part (2) is false as stated: conditions (1)(a) and (1)(b) of 01SR hold (isOpenImmersion\_localizationAwayPreserves, isOpenImmersion\_compPrincipalLocalizations) and (1)(c) fails (not\_ofLocalizationFiniteSpanTarget\_isOpenImmersion). The corrected part (2), with R\_f → A\_a for some a ∉ 𝔮, is local: stacksPropertyIsLocal\_isLocalIso. Parts (1), (3), (4) and (5) are carried in LocalRingIso, ReducedFibers, FiberDimension and NoetherianTarget”.
 
 > The affine open-immersion criterion is not a local property of commutative-ring
 > homomorphisms.
@@ -183,7 +183,7 @@ theorem not_stacksPropertyIsLocal_isOpenImmersion :
       (fun {R S : Type u} [CommRing R] [CommRing S] (φ : R →+* S) ↦ φ.IsOpenImmersion)
 ```
 
-**`RingHom.fiberDimensionLE_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/FiberDimension.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/FiberDimension.lean#L127). The attribute's comment: “fibre\_dimension\_bound\_is\_local”.
+**`RingHom.fiberDimensionLE_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/FiberDimension.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/FiberDimension.lean#L127). The attribute's comment: “fibre\_dimension\_bound\_is\_local”.
 
 > A uniform bound on the Krull dimensions of the fibres is a local property of
 > commutative-ring homomorphisms.
@@ -196,7 +196,20 @@ theorem fiberDimensionLE_propertyIsLocal (n : ℕ) :
         ∀ (p : Ideal R) [p.IsPrime], ringKrullDim (p.Fiber S) ≤ (n : WithBot ℕ∞))
 ```
 
-**`RingHom.localRingHom_bijective_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L230). The attribute's comment: “isomorphism\_on\_local\_rings\_is\_local”.
+**`RingHom.stacksPropertyIsLocal_isLocalIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalIso.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalIso.lean#L88). The attribute's comment: “part (2) (open immersion), in the corrected form recorded in errata.md: for every prime 𝔮 of A there are f ∈ R and a ∈ A ∖ 𝔮 with R\_f → A\_a an isomorphism (Mathlib's Algebra.IsLocalIso); this property is local. Part (2) as printed, with R\_f → A\_f, is false: see not\_stacksPropertyIsLocal\_isOpenImmersion”.
+
+> Stacks Tag 01SX, part (2) in corrected form: being a local isomorphism (every prime `𝔮` of
+> `A` has some `a ∈ A ∖ 𝔮` and `f ∈ R` with `R_f → A_a` an isomorphism) is a local property of
+> ring maps.
+
+```lean
+theorem stacksPropertyIsLocal_isLocalIso :
+    RingHom.StacksPropertyIsLocal
+      (fun {R S : Type u} [CommRing R] [CommRing S] (φ : R →+* S) ↦
+        @Algebra.IsLocalIso R S _ _ φ.toAlgebra)
+```
+
+**`RingHom.localRingHom_bijective_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L230). The attribute's comment: “isomorphism\_on\_local\_rings\_is\_local”.
 
 > Having isomorphisms on the local rings at every prime of the target is a
 > local property of ring homomorphisms.
@@ -210,7 +223,7 @@ theorem localRingHom_bijective_propertyIsLocal :
             (Localization.localRingHom (Ideal.comap f q) q f rfl))
 ```
 
-**`RingHom.noetherianTarget_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean#L37). The attribute's comment: “noetherian\_target\_is\_local”.
+**`RingHom.noetherianTarget_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean#L37). The attribute's comment: “noetherian\_target\_is\_local”.
 
 > Having Noetherian target is local for commutative-ring homomorphisms.
 
@@ -221,7 +234,7 @@ theorem noetherianTarget_propertyIsLocal :
         IsNoetherianRing S)
 ```
 
-**`RingHom.reducedFibers_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/ReducedFibers.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/ReducedFibers.lean#L152). The attribute's comment: “reduced\_fibres\_is\_local”.
+**`RingHom.reducedFibers_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/ReducedFibers.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/ReducedFibers.lean#L152). The attribute's comment: “reduced\_fibres\_is\_local”.
 
 > Having reduced fibres is local for ring homomorphisms.
 
@@ -234,7 +247,7 @@ theorem reducedFibers_propertyIsLocal :
 
 [Tag 01SY](https://stacks.math.columbia.edu/tag/01SY) in the Stacks Project.
 
-**`RingHom.isOpenImmersion_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean#L229). The attribute's comment: “open\_immersion\_base\_change”. References: EGA I (4.3.2), “affine open immersions”; EGA I (4.5.5), “(iii), special case”; SGA 1 VIII (5.5), “special case”.
+**`RingHom.isOpenImmersion_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean#L229). The attribute's comment: “open\_immersion\_base\_change”. References: EGA I (4.3.2), “affine open immersions”; EGA I (4.5.5), “(iii), special case”; SGA 1 VIII (5.5), “special case”.
 
 > The principal-localization criterion for an affine open immersion is
 > stable under arbitrary base change of commutative rings.
@@ -246,7 +259,7 @@ theorem isOpenImmersion_isStableUnderBaseChange :
         φ.IsOpenImmersion)
 ```
 
-**`RingHom.localRingHom_bijective_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L368). The attribute's comment: “local\_rings\_base\_change”.
+**`RingHom.localRingHom_bijective_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L368). The attribute's comment: “local\_rings\_base\_change”.
 
 > Isomorphisms on local rings at every prime of the target are preserved by
 > arbitrary base change of commutative rings.
@@ -264,7 +277,7 @@ theorem localRingHom_bijective_isStableUnderBaseChange :
 
 [Tag 01SZ](https://stacks.math.columbia.edu/tag/01SZ) in the Stacks Project.
 
-**`RingHom.isOpenImmersion_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean#L268). The attribute's comment: “open\_immersion\_composition”.
+**`RingHom.isOpenImmersion_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/AffineOpenImmersion.lean#L268). The attribute's comment: “open\_immersion\_composition”.
 
 > Being an isomorphism on some principal neighborhood of each target prime
 > is stable under composition of commutative-ring homomorphisms.
@@ -276,7 +289,7 @@ theorem isOpenImmersion_stableUnderComposition :
         φ.IsOpenImmersion)
 ```
 
-**`RingHom.localRingHom_bijective_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L381). The attribute's comment: “local\_rings\_composition”.
+**`RingHom.localRingHom_bijective_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/LocalRingIso.lean#L381). The attribute's comment: “local\_rings\_composition”.
 
 > The property that all induced maps on local rings are isomorphisms is
 > stable under composition.
@@ -290,7 +303,7 @@ theorem localRingHom_bijective_stableUnderComposition :
             (Localization.localRingHom (Ideal.comap f q) q f rfl))
 ```
 
-**`RingHom.noetherianTarget_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean#L54). The attribute's comment: “noetherian\_target\_composition”.
+**`RingHom.noetherianTarget_stableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/RingMapProperty/NoetherianTarget.lean#L54). The attribute's comment: “noetherian\_target\_composition”.
 
 > Having Noetherian target is stable under composition of commutative-ring
 > homomorphisms.
@@ -307,4 +320,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.14, Tag 01SQ](https://stacks.math.columbia.edu/tag/01SQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

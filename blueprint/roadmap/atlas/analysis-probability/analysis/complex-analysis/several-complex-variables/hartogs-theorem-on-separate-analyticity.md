@@ -8,7 +8,7 @@ proof: formalized
 
 # Hartogs' theorem on separate analyticity
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html).
 
 ## Sub-mean-value inequality for the positive logarithm of a holomorphic function
 
@@ -20,7 +20,7 @@ $$\log^+ |f(c)| \le \frac{1}{2\pi} \int_0^{2\pi} \log^+ |f(c + R e^{i\theta})| \
 
 where $\log^+ t = \max(0, \log t)$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_posLog_norm_le_circleAverage`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-pos-log-norm-le-circle-average).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_posLog_norm_le_circleAverage`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-pos-log-norm-le-circle-average).
 
 ## Osgood's lemma at the origin
 
@@ -31,7 +31,7 @@ complex differentiable on all of $\mathbb{C}$ for every $z \in E$. If there is a
 with $|f(z, w)| \le M$ whenever $\|z\| \le 1$ and $|w| \le 1$, then $f$, as a function on
 $E \times \mathbb{C}$, is complex differentiable at $(0, 0)$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_uncurry_of_separately_differentiable_of_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-at-uncurry-of-separately).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_uncurry_of_separately_differentiable_of_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-at-uncurry-of-separately).
 
 ## Osgood's lemma for functions bounded on open sets
 
@@ -44,7 +44,7 @@ $|f(z, w)| \le M$ for all $z \in U$ and $w \in V$. Then $f$, as a function on
 $E \times \mathbb{C}$, is complex differentiable at every point $(z_0, w_0)$ with $z_0 \in U$ and
 $w_0 \in V$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_uncurry_of_separately_differentiable_of_locally_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-at-uncurry-of-separately-2).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_uncurry_of_separately_differentiable_of_locally_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-at-uncurry-of-separately-2).
 
 ## Holomorphic dependence of Cauchy coefficients on a parameter
 
@@ -61,7 +61,7 @@ $$a_k(z) = \frac{1}{2\pi i} \oint_{|w - w_0| = B/2} \frac{f(z, w)}{(w - w_0)^{k+
 
 is a complex differentiable function of $z$ on the open ball $\|z - z_0\| < A/2$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableOn_cauchyCoefficient_of_separately_differentiable_of_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-on-cauchy-coefficient-of).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableOn_cauchyCoefficient_of_separately_differentiable_of_bounded`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#differentiable-on-cauchy-coefficient-of).
 
 ## Cauchy's estimate for Taylor coefficients
 
@@ -75,7 +75,7 @@ $$a_k = \frac{1}{2\pi i} \oint_{|w - c| = R} \frac{f(w)}{(w - c)^{k+1}} \, dw,$$
 
 satisfies $|a_k| \le M R^{-k}$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.norm_cauchyCoefficient_le`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#norm-cauchy-coefficient-le).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.norm_cauchyCoefficient_le`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#norm-cauchy-coefficient-le).
 
 ## Iterated integral over a polydisc
 
@@ -94,7 +94,7 @@ $$I(u, c, R) = \int_{D_0} \cdots \int_{D_{n-1}} u(z_0, \dots, z_{n-1}) \, dz_{n-
 
 Each integral is a Bochner integral, taken to be $0$ when the integrand is not integrable.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogsPolydiscIntegral`, a definition declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 875](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L875). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-polydisc-integral).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogsPolydiscIntegral`, a definition declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 875](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L875). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-polydisc-integral).
 
 ## Sub-mean-value inequality on a polydisc
 
@@ -110,7 +110,7 @@ $$u(x) \le \frac{1}{2\pi} \int_0^{2\pi} u(x_{j \leftarrow x_j + r e^{i\theta}}) 
 Then $(\pi R^2)^n \, u(c) \le I(u, c, R)$, where $\pi R^2$ is the area of a disc of radius $R$
 and $I(u, c, R)$ is the iterated polydisc integral of $u$ about $c$ with radius $R$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogsPolydisc_submean`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 939](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L939). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-polydisc-submean).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogsPolydisc_submean`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 939](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L939). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-polydisc-submean).
 
 ## Hartogs' lemma for sub-mean-value functions
 
@@ -130,7 +130,7 @@ $$u_k(x) \le \frac{1}{2\pi} \int_0^{2\pi} u_k(x_{j \leftarrow x_j + r e^{i\theta
 Then for every $\varepsilon > 0$ there is $K$ such that $u_k(x) \le \varepsilon$ for all
 $k \ge K$ and all $x \in \overline{P}(c, R/4)$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_eventually_uniform_of_submean`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 1335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L1335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-eventually-uniform-of-submean).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_eventually_uniform_of_submean`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 1335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L1335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-eventually-uniform-of-submean).
 
 ## Hartogs' theorem on separate analyticity
 
@@ -150,7 +150,7 @@ then makes the Cauchy expansion in the last variable converge locally uniformly.
 
 - Hartogs separate analyticity (Osgood–Hartogs); see Hörmander; Lean is scalar-valued entire separately holomorphic via Function.update slices implies jointly Differentiable ℂ, finite-dimensional ℂⁿ specialization.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_separate_analyticity`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 1794](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L1794). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-separate-analyticity).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_separate_analyticity`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean, line 1794](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsSeparateAnalyticity.lean#L1794). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html#hartogs-separate-analyticity).
 
 ## Depends on
 
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hartogs' theorem on separate analyticity](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-theorem-on-separate-analyticity)

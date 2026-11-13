@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.21 The étale topos
 
-Section 59.21 of the Stacks Project, [Tag 04HP](https://stacks.math.columbia.edu/tag/04HP). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.21 of the Stacks Project, [Tag 04HP](https://stacks.math.columbia.edu/tag/04HP). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04HQ, a definition
 
 [Tag 04HQ](https://stacks.math.columbia.edu/tag/04HQ) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean#L45). The attribute's comment: “part (1): the small étale topos”.
+**`AlgebraicGeometry.smallEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean#L45). The attribute's comment: “part (1): the small étale topos”.
 
 > **Stacks 04HQ, part (1).** The small étale topos of `S` is the category of set-valued
 > sheaves on the small étale site of `S`.
@@ -23,7 +23,7 @@ Section 59.21 of the Stacks Project, [Tag 04HP](https://stacks.math.columbia.edu
 public abbrev smallEtaleTopos
 ```
 
-**`AlgebraicGeometry.bigEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean#L50). The attribute's comment: “part (3): the big étale topos”.
+**`AlgebraicGeometry.bigEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleTopos.lean#L50). The attribute's comment: “part (3): the big étale topos”.
 
 > **Stacks 04HQ, part (3), the étale case.** The big étale topos of `S` is the category of
 > set-valued sheaves on the big étale site over `S`.
@@ -32,7 +32,7 @@ public abbrev smallEtaleTopos
 public abbrev bigEtaleTopos
 ```
 
-**`AlgebraicGeometry.smallZariskiTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L55). The attribute's comment: “part (2): the small Zariski topos”.
+**`AlgebraicGeometry.smallZariskiTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L55). The attribute's comment: “part (2): the small Zariski topos”.
 
 > **Stacks 04HQ, part (2).** The small Zariski topos of `S` is the category of set-valued
 > sheaves on the small Zariski site of `S`.
@@ -42,7 +42,7 @@ public abbrev smallZariskiTopos (B : BigZariskiSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.bigZariskiTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L61). The attribute's comment: “part (3): the big Zariski topos”.
+**`AlgebraicGeometry.bigZariskiTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L61). The attribute's comment: “part (3): the big Zariski topos”.
 
 > **Stacks 04HQ, part (3), the Zariski case.** The big Zariski topos of `S` is the
 > category of set-valued sheaves on the big Zariski site over `S`.
@@ -52,7 +52,7 @@ public abbrev bigZariskiTopos (B : BigZariskiSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.bigSmoothTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L67). The attribute's comment: “part (3): the big smooth topos”.
+**`AlgebraicGeometry.bigSmoothTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L67). The attribute's comment: “part (3): the big smooth topos”.
 
 > **Stacks 04HQ, part (3), the smooth case.** The big smooth topos of `S` is the category
 > of set-valued sheaves on the big smooth site over `S`.
@@ -62,7 +62,7 @@ public abbrev bigSmoothTopos (B : BigSmoothSite.{u}) (S : Scheme.{u})
     (hS : S.size < B.cutoff)
 ```
 
-**`AlgebraicGeometry.bigSyntomicTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L73). The attribute's comment: “part (3): the big syntomic topos”.
+**`AlgebraicGeometry.bigSyntomicTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L73). The attribute's comment: “part (3): the big syntomic topos”.
 
 > **Stacks 04HQ, part (3), the syntomic case.** The big syntomic topos of `S` is the
 > category of set-valued sheaves on the big syntomic site over `S`.
@@ -72,7 +72,7 @@ public abbrev bigSyntomicTopos (B : BigSyntomicSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.bigFppfTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L79). The attribute's comment: “part (3): the big fppf topos”.
+**`AlgebraicGeometry.bigFppfTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Topoi.lean#L79). The attribute's comment: “part (3): the big fppf topos”.
 
 > **Stacks 04HQ, part (3), the fppf case.** The big fppf topos of `S` is the category of
 > set-valued sheaves on the big fppf site over `S`.
@@ -86,7 +86,7 @@ public abbrev bigFppfTopos (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 0958](https://stacks.math.columbia.edu/tag/0958) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleToposEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L390). The attribute's comment: “equivalence of small étale topoi”.
+**`AlgebraicGeometry.smallEtaleToposEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L390). The attribute's comment: “equivalence of small étale topoi”.
 
 > The canonical equivalence between the small étale topoi obtained from two
 > big étale sites containing the same scheme.
@@ -99,7 +99,7 @@ public noncomputable def smallEtaleToposEquiv
       smallEtaleTopos.{u, max (u + 1) v} B₂ S h₂
 ```
 
-**`AlgebraicGeometry.smallEtaleToposEquiv_sections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L402). The attribute's comment: “comparison on common affine étale objects”.
+**`AlgebraicGeometry.smallEtaleToposEquiv_sections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L402). The attribute's comment: “comparison on common affine étale objects”.
 
 > On affine étale objects represented in both small sites, the comparison
 > equivalence agrees with restriction along their identification over `S`. This
@@ -122,7 +122,7 @@ public noncomputable def smallEtaleToposEquiv_sections
         (Opposite.op X₁.obj)
 ```
 
-**`AlgebraicGeometry.smallEtaleToposEquiv_sections_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L429). The attribute's comment: “naturality on common affine étale objects”.
+**`AlgebraicGeometry.smallEtaleToposEquiv_sections_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L429). The attribute's comment: “naturality on common affine étale objects”.
 
 > The section comparison commutes with restrictions along a morphism of
 > common affine étale objects.
@@ -156,7 +156,7 @@ public theorem smallEtaleToposEquiv_sections_natural
         (smallEtaleToposEquiv_sections.{u, v} B₁ B₂ S h₁ h₂ X₁ X₂ eX).hom.app F
 ```
 
-**`AlgebraicGeometry.smallEtaleToposEquiv_refl`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L483). The attribute's comment: “identity comparison”.
+**`AlgebraicGeometry.smallEtaleToposEquiv_refl`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L483). The attribute's comment: “identity comparison”.
 
 > Comparing a small étale topos with itself is naturally isomorphic to the
 > identity functor.
@@ -169,7 +169,7 @@ public noncomputable def smallEtaleToposEquiv_refl
       𝟭 (smallEtaleTopos.{u, max (u + 1) v} B S h)
 ```
 
-**`AlgebraicGeometry.smallEtaleToposEquiv_trans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L493). The attribute's comment: “composition of comparisons”.
+**`AlgebraicGeometry.smallEtaleToposEquiv_trans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleToposIndependence.lean#L493). The attribute's comment: “composition of comparisons”.
 
 > The equivalence for two successive changes of big étale site agrees,
 > naturally in sheaves, with the equivalence for the direct change.
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.21, Tag 04HP](https://stacks.math.columbia.edu/tag/04HP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

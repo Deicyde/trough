@@ -7,7 +7,7 @@ statement: formalized
 
 # Large prime factors of shifted primes
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html).
 
 ## Baker–Harman: shifted primes with a large prime factor
 
@@ -25,7 +25,7 @@ prime in $(x^\theta, x]$ qualifies and these number $(1 + o(1)) x / \log x$.
 
 - Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 1, quoted there from Baker and Harman.
 
-Stated but not proved: `MetaMathlibExt.exists_card_maxPrimeFac_prime_add_gt_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#exists-card-max-prime-fac-prime-add-gt-r).
+Stated but not proved: `MetaMathlibExt.exists_card_maxPrimeFac_prime_add_gt_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#exists-card-max-prime-fac-prime-add-gt-r).
 
 ## Large prime divisors of shifted primes
 
@@ -39,7 +39,7 @@ The condition $q \le x$ is automatic, since $q \mid p - 1$ with $p \le x$ forces
 
 - Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_rpow_div_log_le_mul_card_prime_dvd_prime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#exists-rpow-div-log-le-mul-card-prime-dv).
+Stated but not proved: `MetaMathlibExt.exists_rpow_div_log_le_mul_card_prime_dvd_prime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#exists-rpow-div-log-le-mul-card-prime-dv).
 
 ## Runs of constant Carmichael values
 
@@ -56,7 +56,7 @@ $F_f(x)$ is the largest $k$ for which $f(n+1) = \cdots = f(n+k)$ has a solution 
 
 - Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.carmichael_constant_run_length_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#carmichael-constant-run-length-is-big-o).
+Stated but not proved: `MetaMathlibExt.carmichael_constant_run_length_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#carmichael-constant-run-length-is-big-o).
 
 ## Pollack–Pomerance–Treviño: nonincreasing runs of Euler's function
 
@@ -75,7 +75,7 @@ $n + k \le x$.
 
 - Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 1, quoted there from Pollack, Pomerance, and Treviño.
 
-Stated but not proved: `MetaMathlibExt.totient_nonincreasing_run_length_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#totient-nonincreasing-run-length-is-equi).
+Stated but not proved: `MetaMathlibExt.totient_nonincreasing_run_length_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ShiftedPrimeLargestFactorWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html#totient-nonincreasing-run-length-is-equi).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Large prime factors of shifted primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/large-prime-factors-of-shifted-primes)

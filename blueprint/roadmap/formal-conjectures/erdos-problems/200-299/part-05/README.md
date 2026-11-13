@@ -9,5 +9,6 @@ navigation: transparent
 - [Erdős Problem 294](erdos-problem-294.md)
 - [Erdős Problem 295](erdos-problem-295.md)
 - [Erdős Problem 296](erdos-problem-296.md)
+- [Erdős Problem 297](erdos-problem-297.md)
 - [Erdős Problem 298](erdos-problem-298.md)
 - [Erdős Problem 299](erdos-problem-299.md)

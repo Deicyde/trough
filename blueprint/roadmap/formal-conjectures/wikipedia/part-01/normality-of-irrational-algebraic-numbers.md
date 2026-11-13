@@ -30,7 +30,7 @@ statement: formalized
 >   expansions." Experimental Mathematics 10.2 (2001): 175-190.
 >   https://projecteuclid.org/journals/experimental-mathematics/volume-10/issue-2/On-the-random-character-of-fundamental-constant-expansions/em/999188630.full
 
-*Quoted from [FormalConjectures/Wikipedia/AlgebraicNormality.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlgebraicNormality.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/AlgebraicNormality.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlgebraicNormality.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open. It also has 1 API statement, counted here but not shown.
 
@@ -45,7 +45,7 @@ theorem irrational_algebraic_absolutely_normal :
     ∀ x : ℝ, IsIrrationalAlgebraic x → IsAbsolutelyNormal x
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [41 Approximations and expansions](../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/Wikipedia/AlgebraicNormality.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlgebraicNormality.lean#L59).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [41 Approximations and expansions](../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/Wikipedia/AlgebraicNormality.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlgebraicNormality.lean#L59).
 
 ## `AlgebraicNormality.irrational_algebraic_normal_in_some_base`
 
@@ -59,7 +59,7 @@ theorem irrational_algebraic_normal_in_some_base :
     ∀ x : ℝ, IsIrrationalAlgebraic x → ∃ b : ℕ, 2 ≤ b ∧ IsNormalInBase b x
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [41 Approximations and expansions](../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/Wikipedia/AlgebraicNormality.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlgebraicNormality.lean#L66).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [41 Approximations and expansions](../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/Wikipedia/AlgebraicNormality.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlgebraicNormality.lean#L66).
 
 ## Depends on
 
@@ -67,5 +67,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/AlgebraicNormality.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlgebraicNormality.lean)
+- [FormalConjectures/Wikipedia/AlgebraicNormality.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlgebraicNormality.lean)
 - [Wikipedia: Normal number](https://en.wikipedia.org/wiki/Normal_number)

@@ -26,7 +26,7 @@ statement: formalized
 > - [The-Anh Vu-Le, Lean 4 proof of Squares in Circles](https://github.com/vltanh/lean4-squares-in-circles)
 > - [Kenta Kitamura, Lean proof of the exact three-square minimum for Formal Conjectures](https://github.com/KitaKen1/three-squares-in-a-circle-lean/blob/87bd2b6915933cf608a3cae6263c2500fe81f7ec/lean/ThreeSquares/Compressed/Main.lean#L216-L219)
 
-*Quoted from [FormalConjectures/Wikipedia/SquarePacking.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SquarePacking.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 10 research or textbook statements: 4 open, 1 solved and 5 textbook results. It also has 1 test statement, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem eleven_square_packing_in_square_bound :
     Nonempty (Packing 11 UnitSquare (Square 3.877084))
 ```
 
-Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L109).
+Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L109).
 
 ## `SquarePacking.least_eleven_square_packing_in_square`
 
@@ -59,7 +59,7 @@ theorem least_eleven_square_packing_in_square :
       least_eleven_square_packing_in_square.answer
 ```
 
-Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L121).
+Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L121).
 
 ## `SquarePacking.seventeen_square_packing_in_square_bound`
 
@@ -74,7 +74,7 @@ theorem seventeen_square_packing_in_square_bound :
     Nonempty (Packing 17 UnitSquare (Square 4.6756))
 ```
 
-Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L132).
+Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L132).
 
 ## `SquarePacking.least_seventeen_square_packing_in_square`
 
@@ -90,7 +90,7 @@ theorem least_seventeen_square_packing_in_square :
       least_seventeen_square_packing_in_square.answer
 ```
 
-Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L144).
+Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L144).
 
 ## `SquarePacking.three_square_packing_in_circle_bound`
 
@@ -105,7 +105,7 @@ theorem three_square_packing_in_circle_bound :
     Nonempty (Packing 3 UnitSquare (Circle ((5 * NNReal.sqrt 17) / 16)))
 ```
 
-Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L155).
+Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L155).
 
 ## `SquarePacking.least_three_square_packing_in_circle`
 
@@ -128,7 +128,7 @@ theorem least_three_square_packing_in_circle :
       least_three_square_packing_in_circle.answer
 ```
 
-Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L177).
+Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L177).
 
 ## `SquarePacking.twenty_one_circle_packing_in_square_bound`
 
@@ -143,7 +143,7 @@ theorem twenty_one_circle_packing_in_square_bound :
     Nonempty (Packing 21 UnitCircle (Square 9.359))
 ```
 
-Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 188](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L188).
+Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 188](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L188).
 
 ## `SquarePacking.least_twenty_one_circle_packing_in_square`
 
@@ -157,7 +157,7 @@ theorem least_twenty_one_circle_packing_in_square :
       least_twenty_one_circle_packing_in_square.answer
 ```
 
-Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 198](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L198).
+Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 198](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L198).
 
 ## `SquarePacking.fifteen_circle_packing_in_circle_bound`
 
@@ -177,7 +177,7 @@ theorem fifteen_circle_packing_in_circle_bound :
         4 * NNReal.sqrt (1 + 2 / NNReal.sqrt 5)))))
 ```
 
-Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 212](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L212).
+Category `textbook`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 212](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L212).
 
 ## `SquarePacking.least_fifteen_circle_packing_in_circle`
 
@@ -196,7 +196,7 @@ theorem least_fifteen_circle_packing_in_circle :
       least_fifteen_circle_packing_in_circle.answer
 ```
 
-Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean#L229).
+Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SquarePacking.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean#L229).
 
 ## Depends on
 
@@ -204,5 +204,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SquarePacking.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SquarePacking.lean)
+- [FormalConjectures/Wikipedia/SquarePacking.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SquarePacking.lean)
 - [Wikipedia on packing of squares](https://en.wikipedia.org/wiki/Square_packing)

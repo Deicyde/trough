@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.15 Exactness of pushforward
 
-Section 18.15 of the Stacks Project, [Tag 04BC](https://stacks.math.columbia.edu/tag/04BC). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.15 of the Stacks Project, [Tag 04BC](https://stacks.math.columbia.edu/tag/04BC). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04DA, a lemma
 
 [Tag 04DA](https://stacks.math.columbia.edu/tag/04DA) in the Stacks Project.
 
-**`main_statement_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean#L163).
+**`main_statement_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean#L163).
 
 > **Statement 1 (Equivalence).** Let `f : Sh(C) → Sh(D)` be a morphism of
 > topoi. The following are equivalent:
@@ -27,7 +27,7 @@ theorem main_statement_equivalence (f : MorphismOfTopoiAb JC JD) :
     (∀ F : AbSh JC, Epi (f.counit F)) ↔ f.ReflectsSurjections
 ```
 
-**`main_statement_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean#L177).
+**`main_statement_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardFaithful.lean#L177).
 
 > **Statement 2 (Faithfulness).** If the equivalent conditions of Statement 1
 > hold (we phrase the hypothesis via condition (1): the counit is surjective for
@@ -42,7 +42,7 @@ theorem main_statement_faithful (f : MorphismOfTopoiAb JC JD)
 
 [Tag 04DB](https://stacks.math.columbia.edu/tag/04DB) in the Stacks Project.
 
-**`Stacks.Topos.AbelianPushforward.abelianPushforward_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardExact.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardExact.lean#L254).
+**`Stacks.Topos.AbelianPushforward.abelianPushforward_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardExact.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/AbelianPushforwardExact.lean#L254).
 
 > **Stacks 04DB.** Let `f : Sh(C) ⟶ Sh(D)` be a morphism of topoi and assume at least one of
 >
@@ -71,7 +71,7 @@ theorem abelianPushforward_exact [HasSheafify J (Type w)]
 
 [Tag 04BD](https://stacks.math.columbia.edu/tag/04BD) in the Stacks Project.
 
-**`CategoryTheory.Functor.exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L329). The attribute's comment: “part (1)”.
+**`CategoryTheory.Functor.exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L329). The attribute's comment: “part (1)”.
 
 > **Stacks 04BD (1).** Let `f : D → C` be a morphism of sites associated to the continuous
 > functor `v : C ⥤ D`, and assume `v` is almost cocontinuous. Then the direct image
@@ -97,7 +97,7 @@ public theorem exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous
       (v.sheafPushforwardContinuous AddCommGrpCat.{max uC vC uD vD} J K)
 ```
 
-**`CategoryTheory.Functor.exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous_of_smallCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L354). The attribute's comment: “part (1), for small sites”.
+**`CategoryTheory.Functor.exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous_of_smallCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L354). The attribute's comment: “part (1), for small sites”.
 
 > **Stacks 04BD (1)** for sites that are small categories, with sheaves of abelian groups in the
 > site's own universe: the setting of the source, in which the hypotheses are exactly the source's,
@@ -113,7 +113,7 @@ public theorem exactFunctor_sheafPushforwardContinuous_of_isAlmostCocontinuous_o
       (v.sheafPushforwardContinuous AddCommGrpCat.{u} J K)
 ```
 
-**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L423). The attribute's comment: “part (2)”.
+**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L423). The attribute's comment: “part (2)”.
 
 > **Stacks 04BD (2).** Let `f : D → C` be a morphism of sites associated to the continuous
 > functor `v : C ⥤ D` with `v` almost cocontinuous, and let `f^♯ : S ⟶ f_* R` make `f` a morphism of
@@ -142,7 +142,7 @@ public theorem exactFunctor_pushforward_of_isAlmostCocontinuous
       (SheafOfModules.pushforward φ)
 ```
 
-**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L446). The attribute's comment: “part (2)”.
+**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L446). The attribute's comment: “part (2)”.
 
 > **Stacks 04BD (2)** with the four sheafification hypotheses replaced by the single universe
 > inequality they follow from: the module universe `m` dominates both sites. This is the sharpest
@@ -164,7 +164,7 @@ public theorem exactFunctor_pushforward_of_isAlmostCocontinuous_of_univLE
       (SheafOfModules.pushforward φ)
 ```
 
-**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous_of_smallCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L476). The attribute's comment: “part (2), for small sites”.
+**`Stacks.SheafOfModules.PushforwardRightExact.exactFunctor_pushforward_of_isAlmostCocontinuous_of_smallCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardRightExact.lean#L476). The attribute's comment: “part (2), for small sites”.
 
 > **Stacks 04BD (2)** for sites that are small categories, with the sheaf of rings and the
 > sheaves of modules in the site's own universe: the setting of the source, in which the hypotheses
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.15, Tag 04BC](https://stacks.math.columbia.edu/tag/04BC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

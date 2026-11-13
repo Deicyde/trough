@@ -7,7 +7,7 @@ statement: formalized
 
 # Nagell–Ljunggren equation
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html).
 
 ## The Nagell–Ljunggren cube equation for $n \equiv 5 \pmod 6$
 
@@ -20,7 +20,7 @@ $1$, this says that $(x^n - 1)/(x - 1) = y^3$ has no such integer solution.
 
 - Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_no_solution_of_mod_six_eq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-no-solution-of-mod).
+Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_no_solution_of_mod_six_eq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-no-solution-of-mod).
 
 ## The Nagell–Ljunggren cube equation for $x \equiv 2, 3, 5, 6 \pmod 9$
 
@@ -36,7 +36,7 @@ every $x$ gives the solution $y = 1$.
 
 - Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_no_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-no-solution).
+Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_no_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-no-solution).
 
 ## Ljunggren's theorem on the Nagell–Ljunggren equation
 
@@ -50,7 +50,7 @@ of $(3, 11, 5, 2)$, $(7, 20, 4, 2)$, $(18, 7, 3, 3)$ and $(-19, 7, 3, 3)$.
 
 - Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Theorem 1, quoting Ljunggren.
 
-Stated but not proved: `MetaMathlibExt.nagell_ljunggren_solutions_of_conditions` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-solutions-of-conditions).
+Stated but not proved: `MetaMathlibExt.nagell_ljunggren_solutions_of_conditions` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NagellLjunggrenCubeResiduesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-solutions-of-conditions).
 
 ## Structure of a further solution of the Nagell–Ljunggren equation
 
@@ -67,7 +67,7 @@ The source attributes the result to Bugeaud and Mihăilescu and to its reference
 
 - Tran Duc Son, *On the Nagell--Ljunggren Equation \frac{x^{5}-1}{x-1}=y^{3}*, INTEGERS 26 (2026), Article A44, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.nagell_ljunggren_exponent_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-exponent-structure).
+Stated but not proved: `MetaMathlibExt.nagell_ljunggren_exponent_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-exponent-structure).
 
 ## The Nagell–Ljunggren cube equation when $5 \mid n$
 
@@ -78,7 +78,7 @@ $x \ge 2$, $y \ge 2$ and $n \ge 3$ with $5 \mid n$ such that $(x^n - 1)/(x - 1) 
 
 - Tran Duc Son, *On the Nagell--Ljunggren Equation \frac{x^{5}-1}{x-1}=y^{3}*, INTEGERS 26 (2026), Article A44, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_of_five_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-of-five-dvd).
+Stated but not proved: `MetaMathlibExt.nagell_ljunggren_cube_of_five_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NagellLjunggrenFiveCubeWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html#nagell-ljunggren-cube-of-five-dvd).
 
 ## Depends on
 
@@ -87,4 +87,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nagell–Ljunggren equation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/exponential-diophantine/nagell-ljunggren-equation)

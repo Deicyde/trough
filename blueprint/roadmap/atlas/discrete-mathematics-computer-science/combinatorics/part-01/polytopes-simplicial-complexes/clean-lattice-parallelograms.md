@@ -7,7 +7,7 @@ statement: formalized
 
 # Clean lattice parallelograms
 
-31 results, 14 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html).
+31 results, 14 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html).
 
 ## The integer lattice in the plane
 
@@ -18,7 +18,7 @@ $(a, b)$ with $a, b \in \mathbb{Z}$; they form the image of $\mathbb{Z}^2$ in $\
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 1.
 
-Formalized by `MetaMathlibExt.latticePoints`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lattice-points).
+Formalized by `MetaMathlibExt.latticePoints`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lattice-points).
 
 ## Parallelogram spanned by two vectors
 
@@ -29,7 +29,7 @@ spanned by $u$ and $v$ is the set $\{s u + t v : 0 \le s \le 1,\ 0 \le t \le 1\}
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 1.1.
 
-Formalized by `MetaMathlibExt.latticeParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lattice-parallelogram).
+Formalized by `MetaMathlibExt.latticeParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lattice-parallelogram).
 
 ## The parallelogram $P_{a,n}$
 
@@ -42,7 +42,7 @@ $n \ge 1$ it is the parallelogram with vertices $(0, 0)$, $(1, 0)$, $(a, n)$ and
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 2.
 
-Formalized by `MetaMathlibExt.stdCleanParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram).
+Formalized by `MetaMathlibExt.stdCleanParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram).
 
 ## Integer affine maps of the plane
 
@@ -57,7 +57,7 @@ puts no condition on $\det M$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 1.1.
 
-Formalized by `MetaMathlibExt.unimodularMap`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodular-map).
+Formalized by `MetaMathlibExt.unimodularMap`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodular-map).
 
 ## Unimodularly equivalent sets
 
@@ -73,7 +73,7 @@ condition $T(P_1) = T(P_2)$ is a typo for $T(P_1) = P_2$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 1.1.
 
-Formalized by `MetaMathlibExt.UnimodularlyEquivalent`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodularly-equivalent).
+Formalized by `MetaMathlibExt.UnimodularlyEquivalent`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodularly-equivalent).
 
 ## Unimodular equivalence is reflexive
 
@@ -84,7 +84,7 @@ equivalent to itself (take the identity matrix and the zero translation).
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 1.1.
 
-Formalized by `MetaMathlibExt.unimodularlyEquivalent_refl`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodularly-equivalent-refl).
+Formalized by `MetaMathlibExt.unimodularlyEquivalent_refl`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#unimodularly-equivalent-refl).
 
 ## Clean lattice parallelogram
 
@@ -96,7 +96,7 @@ boundary of the parallelogram are exactly $0$, $u$, $v$ and $u + v$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 2 (definition after Reznick).
 
-Formalized by `MetaMathlibExt.IsCleanParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#is-clean-parallelogram).
+Formalized by `MetaMathlibExt.IsCleanParallelogram`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#is-clean-parallelogram).
 
 ## Interior lattice points of $P_{a,n}$ on a vertical line
 
@@ -110,7 +110,7 @@ points in the interior of $P_{a,n}$ on the line $x = k$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 2.
 
-Formalized by `MetaMathlibExt.stdColumn`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column).
+Formalized by `MetaMathlibExt.stdColumn`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column).
 
 ## Point reflection between the two triangles of a parallelogram
 
@@ -126,7 +126,7 @@ The map sends $s u + t v$ to $(1 - s) u + (1 - t) v$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.antidiagonal_triangle_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#antidiagonal-triangle-bij-on).
+Stated but not proved: `MetaMathlibExt.antidiagonal_triangle_bijOn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#antidiagonal-triangle-bij-on).
 
 ## Unimodular equivalences between the parallelograms $P_{b,n}$
 
@@ -140,7 +140,7 @@ unimodularly equivalent to each of $P_{n-a,n}$, $P_{a',n}$ and $P_{n-a',n}$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.stdCleanParallelogram_unimodularlyEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram-unimodularly-equ).
+Stated but not proved: `MetaMathlibExt.stdCleanParallelogram_unimodularlyEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram-unimodularly-equ).
 
 ## Clean parallelograms are unimodularly equivalent to standard ones
 
@@ -155,7 +155,7 @@ For area $1$ (the unit square) there is no such $a$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.cleanParallelogram_unimodularlyEquivalent_std` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#clean-parallelogram-unimodularly-equival).
+Stated but not proved: `MetaMathlibExt.cleanParallelogram_unimodularlyEquivalent_std` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#clean-parallelogram-unimodularly-equival).
 
 ## Interior lattice points of a standard clean parallelogram
 
@@ -169,7 +169,7 @@ $\langle k(n - a)/n \rangle \, (1, 0) + (k/n) \, (a, n)$ for $k = 1, \dots, n - 
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.interior_stdCleanParallelogram_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-std-clean-parallelogram-lattice).
+Stated but not proved: `MetaMathlibExt.interior_stdCleanParallelogram_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-std-clean-parallelogram-lattice).
 
 ## The point reflection symmetry of $P_{a,n}$
 
@@ -184,7 +184,7 @@ $d((x, y), (x', y')) = \max(|x - x'|, |y - y'|)$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.stdCleanParallelogram_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram-symmetry).
+Stated but not proved: `MetaMathlibExt.stdCleanParallelogram_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-clean-parallelogram-symmetry).
 
 ## Lowest and highest interior lattice points of $P_{a,n}$ on each vertical line
 
@@ -202,7 +202,7 @@ $\lceil (a - 1) n / a \rceil$ and the greatest is $n - 1$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.stdColumn_least_greatest` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column-least-greatest).
+Stated but not proved: `MetaMathlibExt.stdColumn_least_greatest` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column-least-greatest).
 
 ## Lowest and highest interior lattice points of $P_{a,n}$ on paired vertical lines
 
@@ -219,7 +219,7 @@ and only if $(k, y_L)$ does.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.stdColumn_low_add_high` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column-low-add-high).
+Stated but not proved: `MetaMathlibExt.stdColumn_low_add_high` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#std-column-low-add-high).
 
 ## Number of steps of Euclid's algorithm
 
@@ -231,7 +231,7 @@ the number of division steps on $(v, u \bmod v)$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 5.3 (division steps of the Euclidean algorithm).
 
-Formalized by `MetaMathlibExt.euclidSteps`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#euclid-steps).
+Formalized by `MetaMathlibExt.euclidSteps`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#euclid-steps).
 
 ## Euclid's algorithm on small inputs
 
@@ -242,7 +242,7 @@ on $(2, 1)$, two division steps on $(3, 2)$ and five division steps on $(13, 8)$
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 5.3.
 
-Formalized by `MetaMathlibExt.euclidSteps_small_values`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#euclid-steps-small-values).
+Formalized by `MetaMathlibExt.euclidSteps_small_values`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#euclid-steps-small-values).
 
 ## Lamé's theorem (1844)
 
@@ -256,7 +256,7 @@ $v = F_{N+1}$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.lame_euclidSteps_minimal` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lame-euclid-steps-minimal).
+Stated but not proved: `MetaMathlibExt.lame_euclidSteps_minimal` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#lame-euclid-steps-minimal).
 
 ## Convergent vectors of a continued fraction
 
@@ -274,7 +274,7 @@ value is set to $v_0$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 3 (CF algorithm).
 
-Formalized by `MetaMathlibExt.convergentVec`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec).
+Formalized by `MetaMathlibExt.convergentVec`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec).
 
 ## Partial quotients of a rational number
 
@@ -288,7 +288,7 @@ number $i$, the $i$-th partial quotient of $x$ is $q_i$ when $i \le m$ and $0$ w
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 3.
 
-Formalized by `MetaMathlibExt.partialQuotient`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#partial-quotient).
+Formalized by `MetaMathlibExt.partialQuotient`, a definition declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#partial-quotient).
 
 ## Initial convergent vectors
 
@@ -300,7 +300,7 @@ $v_0 = (1, \lfloor x \rfloor)$, and its zeroth partial quotient is $q_0 = \lfloo
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 3 (CF algorithm, Step 1 and Step 2).
 
-Formalized by `MetaMathlibExt.convergentVec_initial`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-initial).
+Formalized by `MetaMathlibExt.convergentVec_initial`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-initial).
 
 ## Recurrence for convergent vectors
 
@@ -313,7 +313,7 @@ before $q_{i+2}$), then $q_{i+2} = b$ and $v_{i+2} = v_i + b \, v_{i+1}$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Section 3 (CF algorithm, Step 3).
 
-Formalized by `MetaMathlibExt.convergentVec_recurrence`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-recurrence).
+Formalized by `MetaMathlibExt.convergentVec_recurrence`, a theorem declared in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-recurrence).
 
 ## The last partial quotient of $n/a$ is at least $2$
 
@@ -327,7 +327,7 @@ $q_m \ge 2$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.partialQuotient_last_ge_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#partial-quotient-last-ge-two).
+Stated but not proved: `MetaMathlibExt.partialQuotient_last_ge_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#partial-quotient-last-ge-two).
 
 ## Lattice points of the parallelogram of two consecutive convergent vectors
 
@@ -342,7 +342,7 @@ point of $\mathbb{Z}^2$ equals $s v_i + t v_{i+1}$ for some integers $s$ and $t$
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.convergentVec_parallelogram_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-parallelogram-lattice-poi).
+Stated but not proved: `MetaMathlibExt.convergentVec_parallelogram_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-parallelogram-lattice-poi).
 
 ## Distances of the convergent vectors to the line $y = (n / a) x$
 
@@ -361,7 +361,7 @@ $(\beta, \alpha) \ne v_{i-1}, v_i$ satisfies $d(\beta, \alpha) > d(v_{i-1})$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.convergentVec_dist_strictAnti` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-dist-strict-anti).
+Stated but not proved: `MetaMathlibExt.convergentVec_dist_strictAnti` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-dist-strict-anti).
 
 ## Convergent vectors in the quarters of $P_{a,n}$
 
@@ -382,7 +382,7 @@ These points form the sets $V_1$ and $V_2$ of the paper.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.convergentVec_mem_quarters` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-mem-quarters).
+Stated but not proved: `MetaMathlibExt.convergentVec_mem_quarters` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-mem-quarters).
 
 ## Lattice points of the triangle with vertices $0$, $v_{i-2}$, $v_i$
 
@@ -398,7 +398,7 @@ vertices lies on the segment $[v_{i-2}, v_i]$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.convergentVec_triangle_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-triangle-lattice-points).
+Stated but not proved: `MetaMathlibExt.convergentVec_triangle_latticePoints` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-triangle-lattice-points).
 
 ## A determinant of three convergent vectors
 
@@ -413,7 +413,7 @@ $(-1)^{i+1} q_i q_{i+1} q_{i+2}$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.convergentVec_det_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-det-three).
+Stated but not proved: `MetaMathlibExt.convergentVec_det_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#convergent-vec-det-three).
 
 ## Vertices of the interior hull of a standard clean parallelogram
 
@@ -430,7 +430,7 @@ and $w - v_i$ for even $i$ with $0 \le i < m$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.extremePoints_interiorHull_stdCleanParallelogram` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#extreme-points-interior-hull-std-clean-p).
+Stated but not proved: `MetaMathlibExt.extremePoints_interiorHull_stdCleanParallelogram` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#extreme-points-interior-hull-std-clean-p).
 
 ## Vertices and area of the interior hull of a standard clean parallelogram
 
@@ -446,7 +446,7 @@ and $q_0 + q_1 + \dots + q_m = \mathrm{area}(P_{a,n}) - \mathrm{area}(H)$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.interiorHull_stdCleanParallelogram_vertices_area` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-hull-std-clean-parallelogram-ve).
+Stated but not proved: `MetaMathlibExt.interiorHull_stdCleanParallelogram_vertices_area` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-hull-std-clean-parallelogram-ve).
 
 ## Clean interior hulls and Fibonacci numbers
 
@@ -461,7 +461,7 @@ and either $a = F_{k-1}$ or $a = F_{k-2}$.
 
 - Gabriel Khan, Mizan R. Khan, Riaz R. Khan, and Peng Zhao, *A Geometric Relationship between Continued Fractions and Clean Lattice Parallelograms*, INTEGERS 26 (2026), Article A10, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.interiorHull_stdCleanParallelogram_clean_iff_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-hull-std-clean-parallelogram-cl).
+Stated but not proved: `MetaMathlibExt.interiorHull_stdCleanParallelogram_clean_iff_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CleanLatticeParallelogramWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html#interior-hull-std-clean-parallelogram-cl).
 
 ## Depends on
 
@@ -470,4 +470,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Clean lattice parallelograms](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/clean-lattice-parallelograms)

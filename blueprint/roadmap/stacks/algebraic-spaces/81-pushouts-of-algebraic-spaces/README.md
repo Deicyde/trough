@@ -1,6 +1,6 @@
 # 81 Pushouts of Algebraic Spaces
 
-Chapter 81 of the Stacks Project, *Pushouts of Algebraic Spaces*, [Tag 0AHT](https://stacks.math.columbia.edu/tag/0AHT): the 12 sections of its 14 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 65 tags are carried by 129 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 81 of the Stacks Project, *Pushouts of Algebraic Spaces*, [Tag 0AHT](https://stacks.math.columbia.edu/tag/0AHT): the 12 sections of its 14 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 65 tags are carried by 117 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 - [81.3 Colimits of algebraic spaces](81-3-colimits-of-algebraic-spaces.md)
 - [81.4 Descending étale sheaves](81-4-descending-etale-sheaves.md)

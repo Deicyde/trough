@@ -7,7 +7,7 @@ statement: formalized
 
 # Reciprocal sums of squares of gibonacci polynomials
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html).
 
 ## A telescoping series of powers of gibonacci polynomial ratios
 
@@ -30,7 +30,7 @@ positive integers.
 
 - Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_gibonacciPoly_pow_ratio_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-gibonacci-poly-pow-ratio-telesco).
+Stated but not proved: `MetaMathlibExt.hasSum_gibonacciPoly_pow_ratio_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-gibonacci-poly-pow-ratio-telesco).
 
 ## Series over a family of Fibonacci polynomial squares
 
@@ -50,7 +50,7 @@ integer; the statement is made for real $x > 0$, which contains the positive int
 
 - Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_fibPoly_sq_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-fib-poly-sq-family).
+Stated but not proved: `MetaMathlibExt.hasSum_fibPoly_sq_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-fib-poly-sq-family).
 
 ## Series over a family of Lucas polynomial squares
 
@@ -72,7 +72,7 @@ integer; the statement is made for real $x > 0$, which contains the positive int
 
 - Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_lucasPoly_sq_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-lucas-poly-sq-family).
+Stated but not proved: `MetaMathlibExt.hasSum_lucasPoly_sq_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GibonacciPolynomialSquareFamilyWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#has-sum-lucas-poly-sq-family).
 
 ## Reciprocal sums of shifted squares of Fibonacci and Lucas polynomials (Koshy–Gao, Theorem 2.1)
 
@@ -103,7 +103,7 @@ here the summation index is shifted to start at $n = 0$.
 
 - Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), Article koshy12202023, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_sq_sub_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#tsum-gibonacci-poly-sq-sub-family).
+Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_sq_sub_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#tsum-gibonacci-poly-sq-sub-family).
 
 ## Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials (Koshy–Gao, Theorem 3.1)
 
@@ -135,7 +135,7 @@ at $n = 0$.
 
 - Thomas Koshy and Zhenguang Gao, *Sums Involving a Family of Jacobsthal Polynomial Squares*, The Fibonacci Quarterly 62 (2024), Article koshy12202023, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.tsum_jacobsthalPoly_sq_sub_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#tsum-jacobsthal-poly-sq-sub-family).
+Stated but not proved: `MetaMathlibExt.tsum_jacobsthalPoly_sq_sub_family` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/JacobsthalPolynomialSquareFamilySumsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html#tsum-jacobsthal-poly-sq-sub-family).
 
 ## Depends on
 
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reciprocal sums of squares of gibonacci polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/reciprocal-sums-of-squares-of-gibonacci-polynomi)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.33 Blowing up
 
-Section 31.33 of the Stacks Project, [Tag 01OF](https://stacks.math.columbia.edu/tag/01OF). 14 tags here are carried by 43 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.33 of the Stacks Project, [Tag 01OF](https://stacks.math.columbia.edu/tag/01OF). 14 tags here are carried by 43 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01OG, a definition
 
 [Tag 01OG](https://stacks.math.columbia.edu/tag/01OG) in the Stacks Project.
 
-**`AlgebraicGeometry.blowUp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L63). The attribute's comment: “blowup morphism”. References: EGA II (8.1.3), “qcoh ideal case”; EGA IV (19.4.1), “X'=Proj(⊕J^n)”.
+**`AlgebraicGeometry.blowUp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L63). The attribute's comment: “blowup morphism”. References: EGA II (8.1.3), “qcoh ideal case”; EGA IV (19.4.1), “X'=Proj(⊕J^n)”.
 
 > **Stacks Project, Tag 01OG.** The blowup of `X` in the quasi-coherent ideal `I`: the
 > relative `Proj` of the Rees algebra `⨁ₙ Iⁿ`.
@@ -23,7 +23,7 @@ Section 31.33 of the Stacks Project, [Tag 01OF](https://stacks.math.columbia.edu
 public noncomputable abbrev blowUp {X : Scheme.{u}} (I : X.IdealSheafData) : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.blowUpToBase`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L71). The attribute's comment: “blowup morphism”. References: EGA II (8.1.3), “qcoh ideal case”; EGA IV (19.4.1), “structural morphism f”.
+**`AlgebraicGeometry.blowUpToBase`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L71). The attribute's comment: “blowup morphism”. References: EGA II (8.1.3), “qcoh ideal case”; EGA IV (19.4.1), “structural morphism f”.
 
 > **Stacks Project, Tag 01OG.** The blowup morphism: the structure morphism of the blowup of
 > `X` in `I` to `X`.
@@ -33,7 +33,7 @@ public noncomputable abbrev blowUpToBase {X : Scheme.{u}} (I : X.IdealSheafData)
     blowUp I ⟶ X
 ```
 
-**`AlgebraicGeometry.exceptionalIdeal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L77). The attribute's comment: “exceptional ideal sheaf”.
+**`AlgebraicGeometry.exceptionalIdeal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L77). The attribute's comment: “exceptional ideal sheaf”.
 
 > The inverse-image ideal defining the exceptional divisor.
 
@@ -42,7 +42,7 @@ public noncomputable abbrev exceptionalIdeal {X : Scheme.{u}} (I : X.IdealSheafD
     (blowUp I).IdealSheafData
 ```
 
-**`AlgebraicGeometry.exceptionalDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L84). The attribute's comment: “exceptional divisor scheme”. References: EGA IV (19.4.1), “Y'=f^\{-1}(Y)”; SGA 7 XVIII (2.1).
+**`AlgebraicGeometry.exceptionalDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L84). The attribute's comment: “exceptional divisor scheme”. References: EGA IV (19.4.1), “Y'=f^\{-1}(Y)”; SGA 7 XVIII (2.1).
 
 > **Stacks Project, Tag 01OG.** The exceptional divisor is the inverse image of the
 > closed subscheme cut out by `I`.
@@ -52,7 +52,7 @@ public noncomputable abbrev exceptionalDivisor {X : Scheme.{u}} (I : X.IdealShea
     Scheme.{u}
 ```
 
-**`Stacks.Blowup.exists_reesAlgebraData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebraSheaf.lean, line 805](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebraSheaf.lean#L805). The attribute's comment: “Rees algebra sheaf”.
+**`Stacks.Blowup.exists_reesAlgebraData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebraSheaf.lean, line 805](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebraSheaf.lean#L805). The attribute's comment: “Rees algebra sheaf”.
 
 > **Stacks Project, Tag 01OG.** A graded sheaf with the canonical affine-local description
 > of `⨁ₙ Iⁿ` exists.
@@ -62,7 +62,7 @@ public theorem exists_reesAlgebraData {X : Scheme.{u}} (I : X.IdealSheafData) :
     Nonempty (ReesAlgebraData I)
 ```
 
-**`Stacks.Blowup.blowUp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L233). The attribute's comment: “the blowup as a scheme”. References: EGA II (8.1.3); EGA IV (19.4.1); SGA 6 VII (1.8).
+**`Stacks.Blowup.blowUp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L233). The attribute's comment: “the blowup as a scheme”. References: EGA II (8.1.3); EGA IV (19.4.1); SGA 6 VII (1.8).
 
 > The blowup of a scheme `S` in a quasi-coherent sheaf of ideals
 > `ℐ`: the relative `Proj` of the Rees algebra `⨁_{n ≥ 0} ℐⁿ`.
@@ -71,7 +71,7 @@ public theorem exists_reesAlgebraData {X : Scheme.{u}} (I : X.IdealSheafData) :
 def blowUp : Scheme.{u}
 ```
 
-**`Stacks.Blowup.blowUpToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L237). The attribute's comment: “the blowup morphism”.
+**`Stacks.Blowup.blowUpToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L237). The attribute's comment: “the blowup morphism”.
 
 > The structure morphism of the blowup to its base.
 
@@ -79,7 +79,7 @@ def blowUp : Scheme.{u}
 def blowUpToBase : blowUp ℐ ⟶ S
 ```
 
-**`Stacks.Blowup.isPullback_blowUpChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L256). The attribute's comment: “the affine charts of the blowup”.
+**`Stacks.Blowup.isPullback_blowUpChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L256). The attribute's comment: “the affine charts of the blowup”.
 
 > The blowup restricted to an affine open `U` of the base is `Proj` of the Rees algebra of
 > `ℐ(U)`: the chart over `U` is the preimage of `U` under the blowup morphism.
@@ -90,7 +90,7 @@ theorem isPullback_blowUpChart (U : S.affineOpens) :
       U (reesBase ℐ U)) (blowUpChart ℐ U) U.1.ι (blowUpToBase ℐ)
 ```
 
-**`Stacks.Blowup.exceptionalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L269). The attribute's comment: “the exceptional ideal sheaf”.
+**`Stacks.Blowup.exceptionalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L269). The attribute's comment: “the exceptional ideal sheaf”.
 
 > The ideal sheaf of the exceptional divisor: the inverse image of `ℐ` under the blowup
 > morphism.
@@ -99,7 +99,7 @@ theorem isPullback_blowUpChart (U : S.affineOpens) :
 def exceptionalIdeal : (blowUp ℐ).IdealSheafData
 ```
 
-**`Stacks.Blowup.exceptionalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L274). The attribute's comment: “the exceptional divisor”. References: SGA 7 XVIII (2.1).
+**`Stacks.Blowup.exceptionalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L274). The attribute's comment: “the exceptional divisor”. References: SGA 7 XVIII (2.1).
 
 > The exceptional divisor of the blowup: the closed subscheme of the blowup cut out by the
 > inverse image of `ℐ`.
@@ -112,7 +112,7 @@ def exceptionalDivisor : Scheme.{u}
 
 [Tag 0804](https://stacks.math.columbia.edu/tag/0804) in the Stacks Project.
 
-**`Stacks.Blowup.reesAwayEquivAffineBlowup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean#L229). The attribute's comment: “the chart D₊(a⁽¹⁾) is Spec of the affine blowup algebra”.
+**`Stacks.Blowup.reesAwayEquivAffineBlowup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean#L229). The attribute's comment: “the chart D₊(a⁽¹⁾) is Spec of the affine blowup algebra”.
 
 > **Stacks Project, Tag 0804.** For `a ∈ I` the standard affine chart of `Proj` of the Rees
 > algebra at the degree-one element `a⁽¹⁾` is the affine blowup algebra `R[I/a]`: the degree-zero
@@ -126,7 +126,7 @@ def reesAwayEquivAffineBlowup (ha : a ∈ I) :
     Away (reesGrading I) (reesDegOne I ha) ≃+* affineBlowup I a
 ```
 
-**`Stacks.Blowup.iSup_opensRange_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean#L409). The attribute's comment: “b⁻¹(U) is covered by the spectra of the affine blowup algebras”.
+**`Stacks.Blowup.iSup_opensRange_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AffineChart.lean#L409). The attribute's comment: “b⁻¹(U) is covered by the spectra of the affine blowup algebras”.
 
 > **Stacks Project, Tag 0804, second assertion.** Let `b : X' ⟶ S` be the blowup of a scheme
 > `S` in a quasi-coherent sheaf of ideals `ℐ`, and let `U` be an affine open of `S`. Then `b⁻¹(U)`
@@ -143,7 +143,7 @@ theorem iSup_opensRange_blowUpAffineChart (U : S.affineOpens) :
       = blowUpToBase ℐ ⁻¹ᵁ (U : S.Opens)
 ```
 
-**`AlgebraicGeometry.affineBlowupStandardOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L539). The attribute's comment: “affine blowup algebra chart”.
+**`AlgebraicGeometry.affineBlowupStandardOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L539). The attribute's comment: “affine blowup algebra chart”.
 
 > The standard affine chart of the Rees projective spectrum is canonically the
 > spectrum of the affine blowup algebra.
@@ -159,7 +159,7 @@ public noncomputable def affineBlowupStandardOpenIso {X : Scheme.{u}}
         (reesDegreeOne I U a).1).toScheme
 ```
 
-**`AlgebraicGeometry.affineBlowupStandardOpenIso_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L558). The attribute's comment: “affine blowup chart over the base”.
+**`AlgebraicGeometry.affineBlowupStandardOpenIso_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L558). The attribute's comment: “affine blowup chart over the base”.
 
 > The affine blowup chart is an isomorphism over the affine base: its structure
 > map is induced by the canonical inclusion of the ring into its blowup algebra.
@@ -180,7 +180,7 @@ public theorem affineBlowupStandardOpenIso_over {X : Scheme.{u}}
         U.2.isoSpec.inv
 ```
 
-**`AlgebraicGeometry.affineBlowupStandardOpenIso_fraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L585). The attribute's comment: “canonical affine blowup fractions”.
+**`AlgebraicGeometry.affineBlowupStandardOpenIso_fraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L585). The attribute's comment: “canonical affine blowup fractions”.
 
 > On the standard chart at `a`, a degree-one section `b` divided by `a`
 > corresponds to the generating fraction `b/a` in the affine blowup algebra.
@@ -207,7 +207,7 @@ public theorem affineBlowupStandardOpenIso_fraction {X : Scheme.{u}}
         ⟨(a : X.presheaf.obj (.op U.1)), Submonoid.mem_powers _⟩
 ```
 
-**`AlgebraicGeometry.blownUpAffine_chart_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L699). The attribute's comment: “affine chart covering”.
+**`AlgebraicGeometry.blownUpAffine_chart_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L699). The attribute's comment: “affine chart covering”.
 
 > Degree-one Rees elements give an affine open cover of the inverse image of
 > an affine open under the blowup morphism.
@@ -224,7 +224,7 @@ public theorem blownUpAffine_chart_cover {X : Scheme.{u}} (I : X.IdealSheafData)
       (blowUpToBase I ⁻¹ᵁ U.1).1
 ```
 
-**`Stacks.Blowup.isPullback_blowUpChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L256). The attribute's comment: “the canonical identification of b⁻¹(U) with Proj of the Rees algebra”.
+**`Stacks.Blowup.isPullback_blowUpChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesSheafData.lean#L256). The attribute's comment: “the canonical identification of b⁻¹(U) with Proj of the Rees algebra”.
 
 > The blowup restricted to an affine open `U` of the base is `Proj` of the Rees algebra of
 > `ℐ(U)`: the chart over `U` is the preimage of `U` under the blowup morphism.
@@ -237,13 +237,13 @@ theorem isPullback_blowUpChart (U : S.affineOpens) :
 
 Declarations registered for the tag:
 
-- [`Stacks.RelativeProj.Situation.relativeProjChart_isPullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProj/Charts/Descent.lean#L334), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L56) (StacksFrontier): “canonical local projective-spectrum identification”.
+- [`Stacks.RelativeProj.Situation.relativeProjChart_isPullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/Charts/Descent.lean#L334), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/AffineCharts.lean#L56) (StacksFrontier): “canonical local projective-spectrum identification”.
 
 ## Tag 0805, a lemma
 
 [Tag 0805](https://stacks.math.columbia.edu/tag/0805) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isPullback_blowUpToBase_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FlatBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FlatBaseChange.lean#L55).
+**`AlgebraicGeometry.exists_isPullback_blowUpToBase_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FlatBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FlatBaseChange.lean#L55).
 
 > **Stacks Project, Tag 0805.** Blowing up commutes with flat base change: for a flat
 > `g : X₁ ⟶ X₂` and a quasi-coherent ideal `I` on `X₂`, the blowup of `X₁` in the inverse image
@@ -260,7 +260,7 @@ theorem exists_isPullback_blowUpToBase_comap {X₁ X₂ : Scheme.{u}} (g : X₁ 
 
 [Tag 02OS](https://stacks.math.columbia.edu/tag/02OS) in the Stacks Project.
 
-**`Stacks.Blowup.isEffectiveCartierDivisor_exceptionalIdeal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean#L572). The attribute's comment: “exceptional\_effective\_cartier”. References: EGA IV (19.4.1).
+**`Stacks.Blowup.isEffectiveCartierDivisor_exceptionalIdeal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean#L572). The attribute's comment: “exceptional\_effective\_cartier”. References: EGA IV (19.4.1).
 
 > **Stacks Project, Tag 02OS part (2).** For a scheme `X` and a quasi-coherent ideal sheaf
 > `I`, the exceptional divisor of the blowup of `X` in `I` — the inverse image of the closed
@@ -274,7 +274,7 @@ instance isEffectiveCartierDivisor_exceptionalIdeal {X : Scheme.{u}} (I : X.Idea
     Stacks.Divisors.IsEffectiveCartierDivisor (exceptionalIdeal I)
 ```
 
-**`Stacks.Blowup.ideal_exceptionalIdeal_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L259). The attribute's comment: “the exceptional ideal is generated by one section on an affine chart”.
+**`Stacks.Blowup.ideal_exceptionalIdeal_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L259). The attribute's comment: “the exceptional ideal is generated by one section on an affine chart”.
 
 > **Stacks Project, Tag 02OS, second assertion, affine-local form.** On the affine open of the
 > blowup underlying the chart `Spec Γ(S, U)[ℐ(U)/a]`, the exceptional ideal is generated by
@@ -293,7 +293,7 @@ theorem ideal_exceptionalIdeal_blowUpAffineChart (U : S.affineOpens)
       Ideal.span {exceptionalChartSection ℐ U ha}
 ```
 
-**`Stacks.Blowup.exceptionalChartSection_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L280). The attribute's comment: “the generator on an affine chart is a nonzerodivisor”.
+**`Stacks.Blowup.exceptionalChartSection_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L280). The attribute's comment: “the generator on an affine chart is a nonzerodivisor”.
 
 > **Stacks Project, Tag 02OS, second assertion, affine-local form.** The generator of the
 > exceptional ideal on an affine chart of the blowup is a nonzerodivisor.
@@ -307,7 +307,7 @@ theorem exceptionalChartSection_mem_nonZeroDivisors (U : S.affineOpens)
       nonZeroDivisors Γ(blowUp ℐ, blowUpAffineChart ℐ U ha ''ᵁ ⊤)
 ```
 
-**`Stacks.Blowup.exists_span_eq_ideal_exceptionalIdeal_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L299). The attribute's comment: “the exceptional ideal is generated by a nonzerodivisor on an affine chart”.
+**`Stacks.Blowup.exists_span_eq_ideal_exceptionalIdeal_blowUpAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L299). The attribute's comment: “the exceptional ideal is generated by a nonzerodivisor on an affine chart”.
 
 > **Stacks Project, Tag 02OS, second assertion, affine-local form.** On the affine open of the
 > blowup underlying the chart `Spec Γ(S, U)[ℐ(U)/a]`, the exceptional ideal is generated by a
@@ -325,7 +325,7 @@ theorem exists_span_eq_ideal_exceptionalIdeal_blowUpAffineChart (U : S.affineOpe
           (isAffineOpen_top _).image_of_isOpenImmersion _⟩ = Ideal.span {t}
 ```
 
-**`Stacks.Blowup.isLocallyPrincipal_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L317). The attribute's comment: “the exceptional divisor is a locally principal closed subscheme”.
+**`Stacks.Blowup.isLocallyPrincipal_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalChart.lean#L317). The attribute's comment: “the exceptional divisor is a locally principal closed subscheme”.
 
 > **Stacks Project, Tag 02OS, second assertion, local principality.** The exceptional divisor
 > of the blowup of a scheme in a quasi-coherent sheaf of ideals is a locally principal closed
@@ -342,7 +342,7 @@ theorem isLocallyPrincipal_exceptionalIdeal :
     Stacks.Divisors.IsLocallyPrincipal (exceptionalIdeal ℐ)
 ```
 
-**`AlgebraicGeometry.isIso_blowUp_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean#L234). The attribute's comment: “isomorphism\_off\_center”. References: SGA 7 XVIII (2.1), “more general”.
+**`AlgebraicGeometry.isIso_blowUp_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean#L234). The attribute's comment: “isomorphism\_off\_center”. References: SGA 7 XVIII (2.1), “more general”.
 
 > **Stacks Project, Tag 02OS.** The blowup of a scheme in a quasi-coherent ideal sheaf is an
 > isomorphism over the open complement of the closed subscheme the ideal cuts out.
@@ -352,7 +352,7 @@ public theorem isIso_blowUp_restrict_compl_support (I : X.IdealSheafData) :
     IsIso (blowUpToBase I ∣_ (⟨I.supportᶜ, I.support.isClosed.isOpen_compl⟩ : X.Opens))
 ```
 
-**`AlgebraicGeometry.twistOneIsoExceptionalIdealModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistOneExceptionalIdeal.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/TwistOneExceptionalIdeal.lean#L155). The attribute's comment: “part (3)”. References: EGA IV (19.4.1), “(1)”.
+**`AlgebraicGeometry.twistOneIsoExceptionalIdealModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistOneExceptionalIdeal.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/TwistOneExceptionalIdeal.lean#L155). The attribute's comment: “part (3)”. References: EGA IV (19.4.1), “(1)”.
 
 > **[Stacks, Tag 02OS] part (3).** For a scheme `X` and a quasi-coherent sheaf of ideals `ℐ` on
 > it, the twisting sheaf `𝒪_{X'}(1)` of the blowup `b : X' ⟶ X` of `X` in `ℐ` is the ideal sheaf
@@ -371,7 +371,7 @@ def twistOneIsoExceptionalIdealModule : blowUpTwist I 1 ≅ exceptionalIdealModu
 
 [Tag 0806](https://stacks.math.columbia.edu/tag/0806) in the Stacks Project.
 
-**`Stacks.Blowup.isTerminal_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ClassifyingMorphism.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ClassifyingMorphism.lean#L478). References: EGA IV (19.4.1); SGA 6 XIII (7.1.4), “more general”.
+**`Stacks.Blowup.isTerminal_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ClassifyingMorphism.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ClassifyingMorphism.lean#L478). References: EGA IV (19.4.1); SGA 6 XIII (7.1.4), “more general”.
 
 > **Stacks Project, Tag 0806. The universal property of blowing up.** The blowup of a scheme
 > `X` in a quasi-coherent ideal sheaf `ℐ` is a final object of the category `C` of schemes over
@@ -405,7 +405,7 @@ theorem isTerminal_blowUp {X : Scheme.{u}} (I : X.IdealSheafData) :
         (⟨Over.mk (AlgebraicGeometry.blowUpToBase I), h⟩ : CartierOver I))
 ```
 
-**`AlgebraicGeometry.existsUnique_lift_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean#L87). The attribute's comment: “the terminality of the blowup read as a unique factorization: a morphism along which the inverse image of the centre is an effective Cartier divisor factors through the blowup in exactly one way”.
+**`AlgebraicGeometry.existsUnique_lift_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean#L87). The attribute's comment: “the terminality of the blowup read as a unique factorization: a morphism along which the inverse image of the centre is an effective Cartier divisor factors through the blowup in exactly one way”.
 
 > **The universal property of blowing up, Stacks tag 0806, as a unique factorization.**  A
 > morphism `f : Y ⟶ X` along which the inverse image of the centre is an effective Cartier divisor
@@ -422,7 +422,7 @@ theorem existsUnique_lift_blowUpToBase {X : Scheme.{u}} (I : X.IdealSheafData) {
 
 [Tag 0BFL](https://stacks.math.columbia.edu/tag/0BFL) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_affineBlowupStandardOpen_iff_exceptionalIdeal_stalk_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ChartMembership.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ChartMembership.lean#L360).
+**`AlgebraicGeometry.mem_affineBlowupStandardOpen_iff_exceptionalIdeal_stalk_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ChartMembership.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ChartMembership.lean#L360).
 
 > A point of a blowup lies in the standard affine chart at `a` if and only if
 > the image of `a` generates the exceptional ideal in its local ring.
@@ -449,7 +449,7 @@ public theorem mem_affineBlowupStandardOpen_iff_exceptionalIdeal_stalk_eq_span
 
 [Tag 0807](https://stacks.math.columbia.edu/tag/0807) in the Stacks Project.
 
-**`Stacks.Blowup.isIso_blowUpToBase_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CartierCentre.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CartierCentre.lean#L56).
+**`Stacks.Blowup.isIso_blowUpToBase_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CartierCentre.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CartierCentre.lean#L56).
 
 > **[Stacks, Tag 0807].** Blowing up a scheme in an effective Cartier divisor does not change
 > it: the blowup morphism is an isomorphism.
@@ -469,7 +469,7 @@ public theorem isIso_blowUpToBase_of_isEffectiveCartierDivisor {X : Scheme.{u}}
 
 [Tag 0808](https://stacks.math.columbia.edu/tag/0808) in the Stacks Project.
 
-**`AlgebraicGeometry.isReduced_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Reduced.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Reduced.lean#L53).
+**`AlgebraicGeometry.isReduced_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Reduced.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Reduced.lean#L53).
 
 > **Stacks Project, Tag 0808.** The blowup of a reduced scheme in a quasi-coherent ideal is
 > reduced.
@@ -482,7 +482,7 @@ theorem isReduced_blowUp [IsReduced X] : IsReduced (blowUp I)
 
 [Tag 02ND](https://stacks.math.columbia.edu/tag/02ND) in the Stacks Project.
 
-**`AlgebraicGeometry.isIntegral_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Integral.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Integral.lean#L134). References: EGA II (8.1.4), “(i) integrality, blowup”.
+**`AlgebraicGeometry.isIntegral_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Integral.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Integral.lean#L134). References: EGA II (8.1.4), “(i) integrality, blowup”.
 
 > **Stacks Project, Tag 02ND.** The blowup of an integral scheme in a nonzero quasi-coherent
 > ideal is integral.
@@ -495,7 +495,7 @@ theorem isIntegral_blowUp (hI : I ≠ ⊥) : IsIntegral (blowUp I)
 
 [Tag 0BFM](https://stacks.math.columbia.edu/tag/0BFM) in the Stacks Project.
 
-**`AlgebraicGeometry.bijOn_genericPoints_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/GenericPoints.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/GenericPoints.lean#L82).
+**`AlgebraicGeometry.bijOn_genericPoints_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/GenericPoints.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/GenericPoints.lean#L82).
 
 > The blowup morphism restricts to a bijection from the generic
 > points of the irreducible components of the blowup onto the generic points of those irreducible
@@ -510,7 +510,7 @@ theorem bijOn_genericPoints_blowUpToBase {X : Scheme.{u}} (I : X.IdealSheafData)
 
 [Tag 0809](https://stacks.math.columbia.edu/tag/0809) in the Stacks Project.
 
-**`AlgebraicGeometry.isPullbackDefined_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean#L293). The attribute's comment: “effective Cartier divisors”. References: SGA 7 X (2.6), “partial”.
+**`AlgebraicGeometry.isPullbackDefined_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean#L293). The attribute's comment: “effective Cartier divisors”. References: SGA 7 X (2.6), “partial”.
 
 > **Stacks Project, Tag 0809.** Every effective Cartier divisor on a scheme has a defined
 > pullback along the blowup of the scheme in any quasi-coherent ideal.
@@ -521,7 +521,7 @@ theorem isPullbackDefined_blowUpToBase (D : X.IdealSheafData)
     Stacks.Divisors.IsPullbackDefined (blowUpToBase I) D
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean#L334). The attribute's comment: “meromorphic functions”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/RegularPullback.lean#L334). The attribute's comment: “meromorphic functions”.
 
 > **Stacks Project, Tag 0809.** Pullbacks of meromorphic functions are defined along the
 > blowup of a scheme in any quasi-coherent ideal.
@@ -535,7 +535,7 @@ theorem pullbacksMeromorphicSections_blowUpToBase :
 
 [Tag 080A](https://stacks.math.columbia.edu/tag/080A) in the Stacks Project.
 
-**`AlgebraicGeometry.blowUpMulIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean#L139). The attribute's comment: “canonical isomorphism”.
+**`AlgebraicGeometry.blowUpMulIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean#L139). The attribute's comment: “canonical isomorphism”.
 
 > **Stacks Project, Tag 080A.** Blowing up `X` in `I` and then in the inverse image of `J` is
 > canonically, over `X`, the blowup of `X` in `I * J`.
@@ -546,7 +546,7 @@ def blowUpMulIso :
       Over.mk (blowUpToBase (I * J))
 ```
 
-**`AlgebraicGeometry.blowUpMulIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean#L149). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.blowUpMulIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Product.lean#L149). The attribute's comment: “uniqueness”.
 
 > The isomorphism of Stacks tag 080A is the unique isomorphism of these two blowups over
 > `X`: both are terminal in the same category.
@@ -561,7 +561,7 @@ theorem blowUpMulIso_unique
 
 [Tag 02NS](https://stacks.math.columbia.edu/tag/02NS) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isInvertibleModule_isRelativelyAmple_blowUpTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowupTwist.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowupTwist.lean#L88). The attribute's comment: “part (2): `𝒪_{X'}(1)` is a `b`-relatively ample invertible sheaf”. References: EGA II (4.6.18), “special case”; EGA III (2.3.4), “(i), special case”.
+**`AlgebraicGeometry.exists_isInvertibleModule_isRelativelyAmple_blowUpTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowupTwist.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowupTwist.lean#L88). The attribute's comment: “part (2): `𝒪_{X'}(1)` is a `b`-relatively ample invertible sheaf”. References: EGA II (4.6.18), “special case”; EGA III (2.3.4), “(i), special case”.
 
 > **Stacks Project, Tag 02NS, part (2).** Let `ℐ ⊆ 𝒪_X` be a quasi-coherent sheaf of ideals of
 > finite type and `b : X' ⟶ X` the blowup of `X` in `ℐ`. Then `𝒪_{X'}(1)` is a `b`-relatively
@@ -579,7 +579,7 @@ public theorem exists_isInvertibleModule_isRelativelyAmple_blowUpTwist (hI : I.I
       Stacks.RelativeAmple.IsRelativelyAmple (blowUpToBase I) (blowUpTwist I 1)
 ```
 
-**`AlgebraicGeometry.isProjective_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/Projective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/Projective.lean#L76). The attribute's comment: “part (1): `b : X' ⟶ X` is a projective morphism”. References: EGA IV (19.4.1).
+**`AlgebraicGeometry.isProjective_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/Projective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/Projective.lean#L76). The attribute's comment: “part (1): `b : X' ⟶ X` is a projective morphism”. References: EGA IV (19.4.1).
 
 > The blowup of a scheme in a quasi-coherent sheaf of ideals of finite type is a projective
 > morphism.
@@ -589,24 +589,31 @@ public theorem isProjective_blowUpToBase (hI : I.IsFiniteType) :
     IsProjective (blowUpToBase I)
 ```
 
-**`AlgebraicGeometry.isRelativelyAmple_twist_reesSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/TwistAmple.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/TwistAmple.lean#L152). The attribute's comment: “part (2): `𝒪_{X'}(1)` is a `b`-relatively ample invertible sheaf, for the twist glued from the chart twists along a transition datum for Tag 01NO (3) and (4), which is carried as the hypothesis `Stacks.RelativeProj.Situation.TwistTransition`”.
+**`AlgebraicGeometry.isProjective_blowUpToBase_and_isRelativelyAmple_blowUpTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ProjectiveAmple.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/ProjectiveAmple.lean#L43). The attribute's comment: “(1) `b` is projective and (2) `𝒪_{X'}(1)` is a `b`-relatively ample invertible sheaf”.
 
-> **Stacks Project, Tag 02NS, part (2).** The twisting sheaf `𝒪_{X'}(1)` of the blowup of a
-> scheme in a quasi-coherent sheaf of ideals of finite type is a relatively ample invertible sheaf
-> for the blowup morphism: over an affine open `V` of the base the blowup is the `Proj` of the Rees
-> algebra of `ℐ(V)`, the twist restricts there to the absolute `𝒪(1)`, and that is ample.
+> **Stacks Project, Tag 02NS.** Let `X` be a scheme, `ℐ ⊆ 𝒪_X` a quasi-coherent sheaf of ideals
+> of finite type and `b : X' ⟶ X` the blowup of `X` in `ℐ`. Then
+> 1. `b : X' ⟶ X` is a projective morphism (Tag 01W8), and
+> 2. `𝒪_{X'}(1)` is a `b`-relatively ample invertible sheaf: it is invertible, and with that
+>    invertibility it is ample relative to `b` (Tag 01VH).
+>
+> The twist `𝒪_{X'}(1)` is `AlgebraicGeometry.blowUpTwist`, the first twisting sheaf of the relative
+> `Proj` of the Rees algebra `⨁_{d ≥ 0} ℐ^d`, which restricts on the chart over every affine open of
+> the base to the absolute `𝒪(1)` there (`AlgebraicGeometry.blowUpTwistChartIso`).
 
 ```lean
-public theorem isRelativelyAmple_twist_reesSituation (hI : I.IsFiniteType)
-    (t : (reesSituation I).TwistTransition 1) :
-    Stacks.RelativeAmple.IsRelativelyAmple (blowUpToBase I) (Situation.twist t)
+public theorem isProjective_blowUpToBase_and_isRelativelyAmple_blowUpTwist
+    (hI : I.IsFiniteType) :
+    IsProjective (blowUpToBase I) ∧
+      ∃ _ : Stacks.Ample.IsInvertibleModule (blowUp I) (blowUpTwist I 1),
+        Stacks.RelativeAmple.IsRelativelyAmple (blowUpToBase I) (blowUpTwist I 1)
 ```
 
 ## Tag 080B, a lemma
 
 [Tag 080B](https://stacks.math.columbia.edu/tag/080B) in the Stacks Project.
 
-**`AlgebraicGeometry.finitePresentation_mul_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentre.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentre.lean#L137). The attribute's comment: “the centre Y is of finite presentation. Y is the explicit product I * J of the first centre with the second-centre ideal that Stacks Lemma 31.32.5, Tag 0803, supplies, and a product of a finitely presented centre with a centre of finite type is finitely presented”.
+**`AlgebraicGeometry.finitePresentation_mul_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentre.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentre.lean#L137). The attribute's comment: “the centre Y is of finite presentation. Y is the explicit product I * J of the first centre with the second-centre ideal that Stacks Lemma 31.32.5, Tag 0803, supplies, and a product of a finitely presented centre with a centre of finite type is finitely presented”.
 
 > The product of a finitely presented centre with a centre of finite type is again a finitely
 > presented centre: by [Stacks, Tag 01TV] both statements say that the ideal is finitely generated
@@ -620,7 +627,7 @@ theorem finitePresentation_mul_subschemeι (I J : X.IdealSheafData)
     FinitePresentation (I * J).subschemeι
 ```
 
-**`AlgebraicGeometry.exists_centre_supportSet_eq_and_nonempty_blowUpCompositionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L74).
+**`AlgebraicGeometry.exists_centre_supportSet_eq_and_nonempty_blowUpCompositionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L74).
 
 > **Stacks Project, Tag 080B.** Let `X` be a quasi-compact and quasi-separated scheme, let `I`
 > be a finitely presented centre on `X` with blowup `b : X' ⟶ X`, and let `Z'` be a finitely
@@ -641,7 +648,7 @@ theorem exists_centre_supportSet_eq_and_nonempty_blowUpCompositionIso
         Nonempty (Over.mk (blowUpToBase Z' ≫ blowUpToBase I) ≅ Over.mk (blowUpToBase Y))
 ```
 
-**`AlgebraicGeometry.exists_centre_supportSet_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L90). The attribute's comment: “part (1), the support of the centre”.
+**`AlgebraicGeometry.exists_centre_supportSet_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L90). The attribute's comment: “part (1), the support of the centre”.
 
 > **The support of the centre of [Stacks, Tag 080B].** There is a finitely presented centre
 > `Y` on `X` with `Supp Y = Supp I ∪ b(Supp Z')`.
@@ -654,7 +661,7 @@ theorem exists_centre_supportSet_eq [CompactSpace X] [QuasiSeparatedSpace X]
       Y.supportSet = I.supportSet ∪ (blowUpToBase I).base '' Z'.supportSet
 ```
 
-**`AlgebraicGeometry.exists_centre_nonempty_blowUpCompositionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L103). The attribute's comment: “part (2), the composite of the two blowups is the blowup in the centre”.
+**`AlgebraicGeometry.exists_centre_nonempty_blowUpCompositionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CompositeCentreExistence.lean#L103). The attribute's comment: “part (2), the composite of the two blowups is the blowup in the centre”.
 
 > **The composite of two blowups is a blowup, [Stacks, Tag 080B].** There is a finitely
 > presented centre `Y` on `X` for which blowing `X` up in `Y` is the two-step blowup
@@ -675,4 +682,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.33, Tag 01OF](https://stacks.math.columbia.edu/tag/01OF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

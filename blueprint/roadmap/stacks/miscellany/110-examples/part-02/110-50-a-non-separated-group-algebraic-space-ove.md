@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.50 A non-separated group algebraic space over a field
 
-Section 110.50 of the Stacks Project, [Tag 06E9](https://stacks.math.columbia.edu/tag/06E9). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.50 of the Stacks Project, [Tag 06E9](https://stacks.math.columbia.edu/tag/06E9). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06EA, a lemma
 
 [Tag 06EA](https://stacks.math.columbia.edu/tag/06EA) in the Stacks Project.
 
-**`Stacks.Examples.NonSeparatedGroupSpace.exists_isFiniteType_groupAlgebraicSpace_not_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/NonSeparatedGroupSpace.lean, line 823](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/NonSeparatedGroupSpace.lean#L823).
+**`Stacks.Examples.NonSeparatedGroupSpace.exists_isFiniteType_groupAlgebraicSpace_not_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/NonSeparatedGroupSpace.lean, line 823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/NonSeparatedGroupSpace.lean#L823).
 
 > **Stacks Project, Tag 06EA.** Over a field of characteristic zero there is a group
 > algebraic space of finite type over the field which is neither separated, nor quasi-separated,
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.50, Tag 06E9](https://stacks.math.columbia.edu/tag/06E9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

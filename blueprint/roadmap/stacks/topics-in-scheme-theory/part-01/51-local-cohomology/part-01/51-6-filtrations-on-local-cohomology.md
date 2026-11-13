@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.6 Filtrations on local cohomology
 
-Section 51.6 of the Stacks Project, [Tag 0EHV](https://stacks.math.columbia.edu/tag/0EHV). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.6 of the Stacks Project, [Tag 0EHV](https://stacks.math.columbia.edu/tag/0EHV). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EF8, a lemma
 
 [Tag 0EF8](https://stacks.math.columbia.edu/tag/0EF8) in the Stacks Project.
 
-**`Stacks.LocalCohomology.nonempty_exactSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ExactSequence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ExactSequence.lean#L369). The attribute's comment: “the exact sequence”.
+**`Stacks.LocalCohomology.nonempty_exactSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ExactSequence.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ExactSequence.lean#L370). The attribute's comment: “the exact sequence”.
 
 > **Stacks 0EF8, the exact sequence.** Let `A` be a Noetherian ring, let `T ⊆ Spec(A)` be
 > stable under specialization and let `T' ⊆ T` be the set of primes of `T` that are not minimal in
@@ -29,7 +29,7 @@ theorem nonempty_exactSequenceData (A : Type u) [CommRing A] [IsNoetherianRing A
     Nonempty (ExactSequenceData.{u, v} A T M i)
 ```
 
-**`Stacks.LocalCohomology.range_changeOfSupport_eq_localizationKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean#L91). The attribute's comment: “exactness at local cohomology with support in T”.
+**`Stacks.LocalCohomology.range_changeOfSupport_eq_localizationKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean#L91). The attribute's comment: “exactness at local cohomology with support in T”.
 
 > **Exactness at local cohomology with support in `T`.** Over a Noetherian ring, a class in
 > `Hⁱ_T(K)` is the image of a class supported in the nonminimal primes of `T` if and only if it
@@ -48,7 +48,7 @@ theorem range_changeOfSupport_eq_localizationKernel
           (localCohomologyWithSupportIn.{u, v} A T K i) p.asIdeal.primeCompl) x = 0
 ```
 
-**`Stacks.LocalCohomology.kernel_changeOfSupport_eq_closedSupportImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean#L127). The attribute's comment: “exactness at local cohomology with support in the nonminimal primes T'”.
+**`Stacks.LocalCohomology.kernel_changeOfSupport_eq_closedSupportImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/LocalizationKernel.lean#L127). The attribute's comment: “exactness at local cohomology with support in the nonminimal primes T'”.
 
 > **Exactness at local cohomology with support in the nonminimal primes.** Over a Noetherian
 > ring, a class in `Hⁱ_{T'}(K)` dies in `Hⁱ_T(K)` if and only if it is the image of a class with
@@ -71,7 +71,7 @@ theorem kernel_changeOfSupport_eq_closedSupportImages
           (changeOfSupport A Set.inter_subset_left K i).hom y = 0
 ```
 
-**`PrimeSpectrum.stableUnderSpecialization_nonminimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/NonminimalPrimes.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/NonminimalPrimes.lean#L75). The attribute's comment: “T' is stable under specialization”.
+**`PrimeSpectrum.stableUnderSpecialization_nonminimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/NonminimalPrimes.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/NonminimalPrimes.lean#L75). The attribute's comment: “T' is stable under specialization”.
 
 > The nonminimal primes of a subset of the prime spectrum stable under specialization are
 > again stable under specialization.
@@ -85,7 +85,7 @@ theorem stableUnderSpecialization_nonminimalPrimes (hT : StableUnderSpecializati
 
 [Tag 0EF9](https://stacks.math.columbia.edu/tag/0EF9) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyWithSupportIn_map_eq_zero_of_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ProZero.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ProZero.lean#L452).
+**`Stacks.LocalCohomology.localCohomologyWithSupportIn_map_eq_zero_of_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ProZero.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/ProZero.lean#L452).
 
 > Let `A` be a Noetherian ring of finite Krull dimension, let `T ⊆ Spec(A)` be stable under
 > specialization and let `{M_n}` be an inverse system of `A`-modules. If for every `m` the
@@ -116,7 +116,7 @@ theorem localCohomologyWithSupportIn_map_eq_zero_of_local
 
 [Tag 0EFA](https://stacks.math.columbia.edu/tag/0EFA) in the Stacks Project.
 
-**`Stacks.LocalCohomology.eventually_injective_image_localCohomologyWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/StableImage.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/StableImage.lean#L593).
+**`Stacks.LocalCohomology.eventually_injective_image_localCohomologyWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/StableImage.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MinimalPrimeFiltration/StableImage.lean#L593).
 
 > **Stacks 0EFA.** Let `A` be a Noetherian ring of finite dimension, let `T ⊆ Spec(A)` be
 > stable under specialization and let `{M_n}` be an inverse system of `A`-modules. If for every `m`
@@ -172,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.6, Tag 0EHV](https://stacks.math.columbia.edu/tag/0EHV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

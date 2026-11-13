@@ -8,7 +8,7 @@ proof: formalized
 
 # Median Genocchi numbers
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html).
 
 ## Genocchi numbers via Bernoulli numbers
 
@@ -16,7 +16,7 @@ For a natural number $n$, the Genocchi number $G_n$
 is the rational number $G_n = 2(1 - 2^n) B_n$, where $B_n$ is the $n$-th Bernoulli number with the
 convention $B_1 = -\tfrac{1}{2}$.
 
-Formalized by `MetaMathlibExt.genocchiNumberViaBernoulli`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#genocchi-number-via-bernoulli).
+Formalized by `MetaMathlibExt.genocchiNumberViaBernoulli`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#genocchi-number-via-bernoulli).
 
 ## Odd-indexed median Genocchi numbers
 
@@ -29,7 +29,7 @@ $$H_{2n+1} = \sum_{k=0}^{\lfloor (n-1)/2 \rfloor} \binom{n}{2k+1} G_{2n-2k}.$$
 
 These values carry signs: $H_3 = -1$ and $H_5 = 2$.
 
-Formalized by `MetaMathlibExt.medianGenocchiOdd`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#median-genocchi-odd).
+Formalized by `MetaMathlibExt.medianGenocchiOdd`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MedianGenocchiNumber.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#median-genocchi-odd).
 
 ## Divisibility of the median Genocchi numbers
 
@@ -48,7 +48,7 @@ this finite sum instead of his continued fraction.
 
 - Kwang-Wu Chen, *An Interesting Lemma for Regular C-fractions*, Journal of Integer Sequences 6 (2003), Article 03.4.8: <https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.tex>.
 
-Formalized by `MetaMathlibExt.medianGenocchiOdd_divisibility`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiDivisibility.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MedianGenocchiDivisibility.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#median-genocchi-odd-divisibility).
+Formalized by `MetaMathlibExt.medianGenocchiOdd_divisibility`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MedianGenocchiDivisibility.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MedianGenocchiDivisibility.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html#median-genocchi-odd-divisibility).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Median Genocchi numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/median-genocchi-numbers)

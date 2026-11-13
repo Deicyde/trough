@@ -8,7 +8,7 @@ proof: formalized
 
 # Hankel determinants of Catalan sums
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html).
 
 ## Layman's Catalan-sum Hankel determinant, including the empty matrix
 
@@ -18,7 +18,7 @@ every natural number $n$, the determinant of the $n \times n$ integer matrix who
 is $C_{i+j+1} + C_{i+j+2}$ for $0 \le i, j \le n-1$ equals $F_{2n+2}$. For $n = 0$ the matrix is
 empty and both sides equal $1$.
 
-Formalized by `MetaMathlibExt.layman_catalan_sum_hankel_det_unrestricted`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html#layman-catalan-sum-hankel-det-unrestrict).
+Formalized by `MetaMathlibExt.layman_catalan_sum_hankel_det_unrestricted`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html#layman-catalan-sum-hankel-det-unrestrict).
 
 ## Layman's Catalan-sum Hankel determinant
 
@@ -31,7 +31,7 @@ $0 \le i, j \le n-1$ equals $F_{2n+2}$.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL16/Bouras/bouras4.tex>, lines 109–117.
 
-Formalized by `MetaMathlibExt.layman_catalan_sum_hankel_det`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html#layman-catalan-sum-hankel-det).
+Formalized by `MetaMathlibExt.layman_catalan_sum_hankel_det`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LaymanCatalanHankel.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html#layman-catalan-sum-hankel-det).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hankel determinants of Catalan sums](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-determinants-of-catalan-sums)

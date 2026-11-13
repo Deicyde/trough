@@ -8,7 +8,7 @@ proof: formalized
 
 # 46.3 Adequate functors
 
-Section 46.3 of the Stacks Project, [Tag 06US](https://stacks.math.columbia.edu/tag/06US). 20 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 46.3 of the Stacks Project, [Tag 06US](https://stacks.math.columbia.edu/tag/06US). 20 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06Z4, a definition
 
@@ -16,13 +16,13 @@ Section 46.3 of the Stacks Project, [Tag 06US](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AdequateFunctor.ModuleValuedFunctor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L52), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L572) (StacksFrontier): “module-valued functors and their morphisms”.
+- [`AdequateFunctor.ModuleValuedFunctor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L53), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L563) (StacksFrontier): “module-valued functors and their morphisms”.
 
 ## Tag 06UT, a definition
 
 [Tag 06UT](https://stacks.math.columbia.edu/tag/06UT) in the Stacks Project.
 
-**`AdequateFunctor.IsAdequate`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L476). The attribute's comment: “part (1)”.
+**`AdequateFunctor.IsAdequate`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L467). The attribute's comment: “part (1)”.
 
 > A module-valued functor is adequate if it is the kernel of the base changes of a map of
 > `A`-modules.
@@ -33,7 +33,7 @@ public abbrev IsAdequate {A : Type u} [CommRing A]
     (F : ModuleValuedFunctorOn.{w} ι) : Prop
 ```
 
-**`AdequateFunctor.IsLinearlyAdequate`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L488). The attribute's comment: “part (2)”.
+**`AdequateFunctor.IsLinearlyAdequate`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Defs.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Defs.lean#L479). The attribute's comment: “part (2)”.
 
 > A module-valued functor is linearly adequate if it is the kernel of a morphism between
 > the module-valued functors associated to two finite free modules.
@@ -48,7 +48,7 @@ public abbrev IsLinearlyAdequate {A : Type u} [CommRing A]
 
 [Tag 06UU](https://stacks.math.columbia.edu/tag/06UU) in the Stacks Project.
 
-**`AdequateFunctor.isColimit_mapCocone_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Colimit.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Colimit.lean#L616).
+**`AdequateFunctor.isColimit_mapCocone_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Colimit.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Colimit.lean#L602).
 
 > An adequate functor sends filtered colimits of commutative algebras to colimits of
 > its underlying additive groups.
@@ -68,7 +68,7 @@ public theorem isColimit_mapCocone_of_isAdequate
 
 [Tag 06UW](https://stacks.math.columbia.edu/tag/06UW) in the Stacks Project.
 
-**`AdequateFunctor.moduleValuedFunctorBaseChangeMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean#L313).
+**`AdequateFunctor.moduleValuedFunctorBaseChangeMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean#L310).
 
 > An adequate functor on a chosen algebra domain commutes with flat base change
 > along every morphism in that domain.
@@ -85,7 +85,7 @@ public theorem moduleValuedFunctorBaseChangeMap_bijective {A : Type u} [CommRing
 
 [Tag 06UX](https://stacks.math.columbia.edu/tag/06UX) in the Stacks Project.
 
-**`AdequateFunctor.exists_coproduct_linearlyAdequate_surjective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Colimit.lean, line 1150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Colimit.lean#L1150).
+**`AdequateFunctor.exists_coproduct_linearlyAdequate_surjective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Colimit.lean, line 1138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Colimit.lean#L1138).
 
 > An adequate functor is a pointwise quotient of a direct sum of
 > linearly adequate functors.
@@ -104,7 +104,7 @@ public lemma exists_coproduct_linearlyAdequate_surjective
           ∀ X, Function.Surjective (f.app X)
 ```
 
-**`AdequateFunctor.exists_jointlyEpi_isLinearlyAdequate`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L212). The attribute's comment: “the linearly adequate functors jointly cover an adequate functor”.
+**`AdequateFunctor.exists_jointlyEpi_isLinearlyAdequate`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L212). The attribute's comment: “the linearly adequate functors jointly cover an adequate functor”.
 
 > Every adequate module-valued functor carries a jointly epimorphic family of morphisms from
 > linearly adequate functors.
@@ -119,7 +119,7 @@ public lemma exists_jointlyEpi_isLinearlyAdequate
           (∀ j, g j ≫ a = g j ≫ b) → a = b
 ```
 
-**`AdequateFunctor.isSeparating_adequateOfLinearPresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L183). The attribute's comment: “the linearly adequate functors separate the adequate functors”.
+**`AdequateFunctor.isSeparating_adequateOfLinearPresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L183). The attribute's comment: “the linearly adequate functors separate the adequate functors”.
 
 > The linearly adequate functors form a separating family for the adequate functors: by
 > [Stacks, Tag 06UX] every adequate functor is a pointwise quotient of a direct sum of linearly
@@ -134,7 +134,7 @@ public lemma isSeparating_adequateOfLinearPresentation :
 
 [Tag 06UY](https://stacks.math.columbia.edu/tag/06UY) in the Stacks Project.
 
-**`AdequateFunctor.Laurent.weightSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L94).
+**`AdequateFunctor.Laurent.weightSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L94).
 
 > The weight-`k` part of `F(B)` consists of those elements whose images under the constant
 > and grading maps differ by multiplication by `T k`.
@@ -149,7 +149,7 @@ public def weightSpace (A B : Type u) [CommRing A] [CommRing B] [Algebra A B]
 
 [Tag 06UZ](https://stacks.math.columbia.edu/tag/06UZ) in the Stacks Project.
 
-**`AdequateFunctor.Laurent.existsUnique_finsupp_weightSpace_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1004). The attribute's comment: “part (1)”.
+**`AdequateFunctor.Laurent.existsUnique_finsupp_weightSpace_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1003). The attribute's comment: “part (1)”.
 
 > Every element of the value of a flat-base-change-compatible module-valued functor on a
 > graded algebra has a unique finite decomposition into elements of its integer weight spaces.
@@ -163,7 +163,7 @@ public lemma existsUnique_finsupp_weightSpace_eq (A B : Type u) [CommRing A] [Co
       (∀ k, y k ∈ weightSpace A B F 𝒜 k) ∧ y.sum (fun _ z ↦ z) = x
 ```
 
-**`AdequateFunctor.Laurent.map_degreeZeroProjection_mem_weightSpace_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1049). The attribute's comment: “part (2)”.
+**`AdequateFunctor.Laurent.map_degreeZeroProjection_mem_weightSpace_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1048](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1048). The attribute's comment: “part (2)”.
 
 > The endomorphism induced by projection of a graded algebra onto degree zero takes every
 > element of the functor's value into its weight-zero space.
@@ -181,7 +181,7 @@ public lemma map_degreeZeroProjection_mem_weightSpace_zero (A B : Type u) [CommR
 
 [Tag 06V0](https://stacks.math.columbia.edu/tag/06V0) in the Stacks Project.
 
-**`AdequateFunctor.exists_lift_from_finite_free_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/FiniteFreeLift/LargeAndDomainLift.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/FiniteFreeLift/LargeAndDomainLift.lean#L253).
+**`AdequateFunctor.exists_lift_from_finite_free_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/FiniteFreeLift/LargeAndDomainLift.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/FiniteFreeLift/LargeAndDomainLift.lean#L252).
 
 > **Stacks Lemma 06V0.** A morphism from the kernel of a morphism between finite free
 > module-valued functors to a module-valued functor extends to the middle finite free functor.
@@ -203,7 +203,7 @@ public theorem exists_lift_from_finite_free_kernel
 
 [Tag 06V1](https://stacks.math.columbia.edu/tag/06V1) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_cokernel_to_moduleExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/CokernelToExtension.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/CokernelToExtension.lean#L220).
+**`AdequateFunctor.isAdequate_cokernel_to_moduleExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/CokernelToExtension.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/CokernelToExtension.lean#L219).
 
 > The cokernel of a map from an adequate functor to the functor of a module
 > is adequate.
@@ -221,7 +221,7 @@ public theorem isAdequate_cokernel_to_moduleExtension
 
 [Tag 06V2](https://stacks.math.columbia.edu/tag/06V2) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_cokernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Cokernels.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Cokernels.lean#L82).
+**`AdequateFunctor.isAdequate_cokernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Cokernels.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Cokernels.lean#L82).
 
 > Cokernels of morphisms between adequate functors are adequate.
 
@@ -236,7 +236,7 @@ public lemma isAdequate_cokernel {A : Type u} [CommRing A]
 
 [Tag 06V3](https://stacks.math.columbia.edu/tag/06V3) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Kernels.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Kernels.lean#L132).
+**`AdequateFunctor.isAdequate_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Kernels.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Kernels.lean#L130).
 
 > The kernel of a map of adequate module-valued functors is adequate.
 
@@ -251,7 +251,7 @@ public lemma isAdequate_kernel {A : Type u} [CommRing A]
 
 [Tag 06V4](https://stacks.math.columbia.edu/tag/06V4) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_coproduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean#L153). The attribute's comment: “direct sums”.
+**`AdequateFunctor.isAdequate_coproduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean#L154). The attribute's comment: “direct sums”.
 
 > **Stacks Lemma 06V4, direct sums.** A direct sum of adequate functors is adequate.
 
@@ -262,7 +262,7 @@ public lemma isAdequate_coproduct {ι : Type i} [Small.{max u v w} ι]
     IsAdequate (𝟭 _) (∐ F)
 ```
 
-**`AdequateFunctor.isAdequate_colimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean#L164). The attribute's comment: “colimits”.
+**`AdequateFunctor.isAdequate_colimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Colimits.lean#L165). The attribute's comment: “colimits”.
 
 > **Stacks Lemma 06V4, colimits.** A colimit of adequate functors is adequate.
 
@@ -278,7 +278,7 @@ public lemma isAdequate_colimit {J : Type j} [Category.{k} J]
 
 [Tag 06V5](https://stacks.math.columbia.edu/tag/06V5) in the Stacks Project.
 
-**`AdequateFunctor.Laurent.naturalTransformation_lifts_of_units_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1086).
+**`AdequateFunctor.Laurent.naturalTransformation_lifts_of_units_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Laurent.lean, line 1085](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Laurent.lean#L1085).
 
 > An additive natural transformation of module-valued functors which commutes
 > with multiplication by units is induced by a morphism of module-valued
@@ -313,7 +313,7 @@ public theorem naturalTransformation_lifts_of_units_of_flatBaseChange
 
 [Tag 06V6](https://stacks.math.columbia.edu/tag/06V6) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_of_moduleExtension_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1615).
+**`AdequateFunctor.isAdequate_of_moduleExtension_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1600).
 
 > **Stacks 06V6.** Let `A` be a ring and let `0 → M → G → L → 0` be a short exact sequence of
 > module-valued functors on `Alg_A`, where `M` is the functor `B ↦ B ⊗[A] M` of an `A`-module `M`
@@ -332,7 +332,27 @@ public lemma isAdequate_of_moduleExtension_shortExact {A : Type u} [CommRing A]
 
 [Tag 06V7](https://stacks.math.columbia.edu/tag/06V7) in the Stacks Project.
 
-**`AdequateFunctor.weightOne_eq_add_images`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 624](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L624). The attribute's comment: “degree-one generation by the two factors”.
+**`AdequateFunctor.projective_of_isLinearlyAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting06V7Large.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting06V7Large.lean#L292). The attribute's comment: “L is a projective object of the abelian category of adequate functors”.
+
+> **Stacks 06V7**, the conclusion: a linearly adequate functor `L` is a projective object of
+> the abelian category `(AdequateFunctor.adequate A).FullSubcategory` of adequate functors on the
+> commutative `A`-algebras.
+>
+> An epimorphism `e : E ⟶ X` of adequate functors is an epimorphism of module-valued functors,
+> because adequate functors are closed under cokernels (Stacks 06V2). Given `f : L ⟶ X`, the
+> pullback `P = E ×_X L` maps onto `L` with kernel isomorphic to `Ker(e)`, which is adequate by
+> Stacks 06V3; so `0 → Ker(e) → P → L → 0` splits by
+> `AdequateFunctor.exists_retraction_of_shortExact_large`, and a section `L ⟶ P` followed by the
+> projection to `E` lifts `f` through `e`.
+
+```lean
+public theorem projective_of_isLinearlyAdequate {A : Type u} [CommRing A]
+    (L : (adequate.{u, v, max u v w} A).FullSubcategory)
+    (hL : IsLinearlyAdequate (𝟭 _) L.obj) :
+    Projective L
+```
+
+**`AdequateFunctor.weightOne_eq_add_images`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L616). The attribute's comment: “degree-one generation by the two factors”.
 
 > The weight-one part over the symmetric algebra on two copies of a finitely
 > presented module is the sum of the images from each copy.
@@ -358,7 +378,7 @@ public lemma weightOne_eq_add_images {A M : Type u} [CommRing A]
         z₂ = F.map ((CommAlgCat.ofHom p₂).op.op) y ∧ z = z₁ + z₂
 ```
 
-**`AdequateFunctor.weightOne_images_disjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L699). The attribute's comment: “directness of the degree-one sum”.
+**`AdequateFunctor.weightOne_images_disjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L691). The attribute's comment: “directness of the degree-one sum”.
 
 > The two factor images in weight one have zero intersection.
 
@@ -367,9 +387,7 @@ public lemma weightOne_images_disjoint {A M : Type u} [CommRing A]
     [AddCommGroup M] [Module A M] [Module.FinitePresentation A M]
     (F : Laurent.ModuleValuedFunctor A) (hF : AdequateFunctor.IsAdequate (𝟭 _) F)
     (𝒜 : ℕ → Submodule A (SymmetricAlgebra A M)) [GradedAlgebra 𝒜]
-    (ℬ : ℕ → Submodule A (SymmetricAlgebra A (M × M))) [GradedAlgebra ℬ]
-    (h𝒜 : ∀ m, SymmetricAlgebra.ι A M m ∈ 𝒜 1)
-    (hℬ : ∀ m, SymmetricAlgebra.ι A (M × M) m ∈ ℬ 1) :
+    (ℬ : ℕ → Submodule A (SymmetricAlgebra A (M × M))) [GradedAlgebra ℬ] :
     let p₁ : SymmetricAlgebra A M →ₐ[A] SymmetricAlgebra A (M × M) :=
       SymmetricAlgebra.lift ((SymmetricAlgebra.ι A (M × M)).comp (LinearMap.inl A M M))
     let p₂ : SymmetricAlgebra A M →ₐ[A] SymmetricAlgebra A (M × M) :=
@@ -383,7 +401,7 @@ public lemma weightOne_images_disjoint {A M : Type u} [CommRing A]
         x = 0 ∧ y = 0
 ```
 
-**`AdequateFunctor.exists_retraction_of_shortExact_of_baseChange_weightOne`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1564). The attribute's comment: “splitting under flat base change and weight-one decomposition”.
+**`AdequateFunctor.exists_retraction_of_shortExact_of_baseChange_weightOne`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1549). The attribute's comment: “splitting under flat base change and weight-one decomposition”.
 
 > An extension of a linearly adequate functor splits if its kernel functor
 > commutes with flat base change and has a direct weight-one coproduct decomposition.
@@ -400,7 +418,7 @@ public lemma exists_retraction_of_shortExact_of_baseChange_weightOne
     ∃ r : E ⟶ F, i ≫ r = 𝟙 F
 ```
 
-**`AdequateFunctor.exists_retraction_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1589). The attribute's comment: “splitting of extensions”.
+**`AdequateFunctor.exists_retraction_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 1574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L1574). The attribute's comment: “splitting of extensions”.
 
 > **Stacks 06V7.** An extension of a linearly adequate functor by an adequate functor admits a
 > retraction onto its kernel term. An adequate functor commutes with flat base change by
@@ -419,13 +437,13 @@ public lemma exists_retraction_of_shortExact {A : Type u} [CommRing A]
 
 Declarations registered for the tag:
 
-- [`AdequateFunctor.moduleValuedFunctorBaseChangeMap_bijective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean#L313), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L77) (StacksFrontier): “flat base change for adequate functors”.
+- [`AdequateFunctor.moduleValuedFunctorBaseChangeMap_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/BaseChange.lean#L310), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Adequate/Splitting.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Splitting.lean#L77) (StacksFrontier): “flat base change for adequate functors”.
 
 ## Tag 06V8, a lemma
 
 [Tag 06V8](https://stacks.math.columbia.edu/tag/06V8) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Extensions.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Extensions.lean#L107).
+**`AdequateFunctor.isAdequate_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Extensions.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Extensions.lean#L107).
 
 > **Stacks Lemma 06V8.** Let `A` be a ring and let `0 → F → G → H → 0` be a short exact
 > sequence of module-valued functors on `Alg_A`. If `F` and `H` are adequate, so is `G`.
@@ -441,7 +459,7 @@ public lemma isAdequate_of_shortExact {A : Type u} [CommRing A]
 
 [Tag 06V9](https://stacks.math.columbia.edu/tag/06V9) in the Stacks Project.
 
-**`AdequateFunctor.IsAdequate.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Restriction.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Restriction.lean#L242).
+**`AdequateFunctor.IsAdequate.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Restriction.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Restriction.lean#L241).
 
 > An adequate functor stays adequate after restriction along a ring homomorphism,
 > with its values lifted to include the source ring universe.
@@ -459,7 +477,7 @@ public theorem IsAdequate.restrict (f : A →+* A')
 
 [Tag 06VA](https://stacks.math.columbia.edu/tag/06VA) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_pushforward`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Pushforward.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Pushforward.lean#L76).
+**`AdequateFunctor.isAdequate_pushforward`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Pushforward.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Pushforward.lean#L76).
 
 > Adequacy is preserved by extension of the base ring in the argument.
 
@@ -474,7 +492,7 @@ public lemma isAdequate_pushforward
 
 [Tag 06VB](https://stacks.math.columbia.edu/tag/06VB) in the Stacks Project.
 
-**`AdequateFunctor.adequateFunctorProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Products/Equivalence.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Products/Equivalence.lean#L544).
+**`AdequateFunctor.adequateFunctorProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Products/Equivalence.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Products/Equivalence.lean#L539).
 
 > Adequate module-valued functors over a finite product of rings correspond to families of
 > adequate module-valued functors over its factors. The inverse equivalence has a componentwise
@@ -497,7 +515,7 @@ public noncomputable def adequateFunctorProductEquivalence (n : ℕ)
 
 [Tag 06VH](https://stacks.math.columbia.edu/tag/06VH) in the Stacks Project.
 
-**`AdequateFunctor.isAdequate_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Descent.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Descent.lean#L586).
+**`AdequateFunctor.isAdequate_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Descent.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateFunctors/Descent.lean#L586).
 
 > Adequacy descends through an exact Čech equalizer.
 
@@ -521,4 +539,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 46.3, Tag 06US](https://stacks.math.columbia.edu/tag/06US)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

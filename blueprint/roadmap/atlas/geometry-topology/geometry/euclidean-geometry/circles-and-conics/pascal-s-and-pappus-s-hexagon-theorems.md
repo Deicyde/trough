@@ -7,7 +7,7 @@ statement: formalized
 
 # Pascal's and Pappus's hexagon theorems
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html).
 
 ## Pascal's theorem in an affine plane
 
@@ -26,21 +26,21 @@ lines $v_2 v_3$ and $v_5 v_0$, then $q_1$, $q_2$, $q_3$ are collinear.
 
 - https://en.wikipedia.org/wiki/Pascal%27s_theorem.
 
-Formalized by `MetaMathlibExt.pascal_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/PascalTheorem.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/PascalTheorem.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#pascal-theorem).
+Formalized by `MetaMathlibExt.pascal_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/PascalTheorem.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/PascalTheorem.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#pascal-theorem).
 
 ## Same projective point
 
 Two vectors $v, w \in \mathbb{R}^3$ represent the same point of the
 real projective plane when $w = c v$ for some real number $c \ne 0$.
 
-Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.SamePoint`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PascalPappusWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#same-point).
+Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.SamePoint`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PascalPappusWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#same-point).
 
 ## Points on a conic
 
 For a real $3 \times 3$ matrix $M$, a vector $v \in \mathbb{R}^3$ lies on
 the conic $x^\top M x = 0$ when $v^\top M v = 0$.
 
-Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.OnConic`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PascalPappusWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#on-conic).
+Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.OnConic`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PascalPappusWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#on-conic).
 
 ## Meet of two lines
 
@@ -51,7 +51,7 @@ is the vector $(a \times b) \times (c \times d)$.
 When $a \times b$ and $c \times d$ are nonzero and not proportional, this vector represents the
 intersection point of the two projective lines.
 
-Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.meet`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PascalPappusWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#meet).
+Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.meet`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PascalPappusWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#meet).
 
 ## Collinear projective points
 
@@ -59,7 +59,7 @@ Writing $\cdot$ and $\times$ for the dot and cross products
 on $\mathbb{R}^3$, three vectors $p, q, r \in \mathbb{R}^3$ represent collinear points of the
 real projective plane when their triple product vanishes: $p \cdot (q \times r) = 0$.
 
-Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.Collinear3`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PascalPappusWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#collinear3).
+Formalized by `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.Collinear3`, a definition declared in [WantedExt/Geometry/PascalPappusWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PascalPappusWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#collinear3).
 
 ## Pascal's theorem for real projective conics
 
@@ -75,7 +75,7 @@ $a_1 b_2 a_3 b_1 a_2 b_3$. Then $p$, $q$ and $r$ are collinear: $p \cdot (q \tim
 
 - B. Pascal, *Essay pour les coniques* (1640). Knill, *Some fundamental theorems in mathematics*, §146. Problem `pascal` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.pascal` is written with `theorem_wanted` in [WantedExt/Geometry/PascalPappusWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PascalPappusWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#pascal).
+Stated but not proved: `MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.pascal` is written with `theorem_wanted` in [WantedExt/Geometry/PascalPappusWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PascalPappusWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html#pascal).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pascal's and Pappus's hexagon theorems](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/pascal-s-and-pappus-s-hexagon-theorems)

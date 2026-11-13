@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.26 Reduced fibres
 
-Section 37.26 of the Stacks Project, [Tag 0574](https://stacks.math.columbia.edu/tag/0574). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.26 of the Stacks Project, [Tag 0574](https://stacks.math.columbia.edu/tag/0574). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0575, a lemma
 
 [Tag 0575](https://stacks.math.columbia.edu/tag/0575) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_forall_not_isReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean#L614). References: EGA IV (9.7.2), “more general”.
+**`AlgebraicGeometry.exists_open_forall_not_isReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean#L614). References: EGA IV (9.7.2), “more general”.
 
 > **Stacks Project, Tag 0575.** If the generic fibre of a finite type morphism to an
 > irreducible scheme is nonreduced, then every fibre over a suitable nonempty open subset of
@@ -34,7 +34,7 @@ theorem exists_open_forall_not_isReduced_fiber
 
 [Tag 0576](https://stacks.math.columbia.edu/tag/0576) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyReduced_fiber_set_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean#L641).
+**`AlgebraicGeometry.geometricallyReduced_fiber_set_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Reduced.lean#L641).
 
 > The locus of geometrically reduced fibres commutes with arbitrary base change.
 
@@ -50,7 +50,7 @@ theorem geometricallyReduced_fiber_set_eq_preimage_of_isPullback
 
 [Tag 0577](https://stacks.math.columbia.edu/tag/0577) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_forall_not_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/NonReducedGenericFibre.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/NonReducedGenericFibre.lean#L43).
+**`AlgebraicGeometry.exists_open_forall_not_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/NonReducedGenericFibre.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/NonReducedGenericFibre.lean#L43).
 
 > If the generic fibre of a finite type morphism to an irreducible scheme is not geometrically
 > reduced, then every fibre over a suitable nonempty open subset of the target is not geometrically
@@ -70,7 +70,7 @@ theorem exists_open_forall_not_geometricallyReduced_fiber
 
 [Tag 0578](https://stacks.math.columbia.edu/tag/0578) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_opens_nonempty_geometricallyReduced_morphismRestrict_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L707).
+**`AlgebraicGeometry.exists_opens_nonempty_geometricallyReduced_morphismRestrict_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L707).
 
 > **Stacks Project, Tag 0578.** Let `f : X ⟶ Y` be a morphism of finite type onto an
 > irreducible scheme with generic point `η`. If the fibre of `f` over `η` is geometrically reduced,
@@ -101,7 +101,7 @@ theorem exists_opens_nonempty_geometricallyReduced_morphismRestrict_of_finiteTyp
 
 [Tag 0579](https://stacks.math.columbia.edu/tag/0579) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstructible_geometricallyReduced_fiber_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Fibres/ReducedFibreLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Fibres/ReducedFibreLocus.lean#L164). The attribute's comment: “affine Noetherian case: `X` and `S` affine with `S` locally Noetherian. The source states the lemma for an arbitrary quasi-compact morphism locally of finite presentation.”. References: EGA IV (9.9.3), “affine Noeth., reduced”; EGA IV (9.9.5), “reduced fibres, affine”; EGA IV (9.7.7), “(iii), affine Noeth.”.
+**`AlgebraicGeometry.isLocallyConstructible_geometricallyReduced_fiber_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Fibres/ReducedFibreLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Fibres/ReducedFibreLocus.lean#L164). The attribute's comment: “affine Noetherian case: `X` and `S` affine with `S` locally Noetherian. The source states the lemma for an arbitrary quasi-compact morphism locally of finite presentation.”. References: EGA IV (9.9.3), “affine Noeth., reduced”; EGA IV (9.9.5), “reduced fibres, affine”; EGA IV (9.7.7), “(iii), affine Noeth.”.
 
 > **The affine Noetherian case of Stacks 0579.** For a morphism `g : X ⟶ S` of finite
 > presentation between affine schemes with `S` locally Noetherian, the set of points of `S` whose
@@ -120,7 +120,7 @@ theorem isLocallyConstructible_geometricallyReduced_fiber_of_isAffine {X S : Sch
     IsLocallyConstructible {y : S | GeometricallyReduced (g.fiberToSpecResidueField y)}
 ```
 
-**`AlgebraicGeometry.isLocallyConstructible_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L610). References: EGA IV (9.7.7), “more general”.
+**`AlgebraicGeometry.isLocallyConstructible_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L610). References: EGA IV (9.7.7), “more general”.
 
 > **Stacks Project, Tag 0579.** Let `f : X ⟶ Y` be a quasi-compact morphism of schemes which
 > is locally of finite presentation. Then the set of points of `Y` whose fibre is geometrically
@@ -142,7 +142,7 @@ theorem isLocallyConstructible_geometricallyReduced_fiber {X Y : Scheme.{u}} (f 
 
 [Tag 0C0D](https://stacks.math.columbia.edu/tag/0C0D) in the Stacks Project.
 
-**`AlgebraicGeometry.isReduced_of_isProper_over_dvr_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean#L572). The attribute's comment: “total space”.
+**`AlgebraicGeometry.isReduced_of_isProper_over_dvr_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean#L572). The attribute's comment: “total space”.
 
 > **Stacks Project, Tag 0C0D (total space).** A proper scheme over a discrete valuation
 > ring is reduced if every irreducible component dominates the base and the special fibre is
@@ -157,7 +157,7 @@ theorem isReduced_of_isProper_over_dvr_of_isReduced_specialFiber
     IsReduced X
 ```
 
-**`AlgebraicGeometry.isReduced_genericFiber_of_isProper_over_dvr_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean#L592). The attribute's comment: “generic fibre”.
+**`AlgebraicGeometry.isReduced_genericFiber_of_isProper_over_dvr_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/ProperOverDvr.lean#L592). The attribute's comment: “generic fibre”.
 
 > **Stacks Project, Tag 0C0D (generic fibre).** A proper scheme over a discrete valuation
 > ring has reduced generic fibre if every irreducible component dominates the base and the
@@ -176,7 +176,7 @@ theorem isReduced_genericFiber_of_isProper_over_dvr_of_isReduced_specialFiber
 
 [Tag 0C0E](https://stacks.math.columbia.edu/tag/0C0E) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L527).
+**`AlgebraicGeometry.isOpen_geometricallyReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibre/OpenLocus.lean#L527).
 
 > **Stacks Project, Tag 0C0E.** The geometrically reduced fibres of a flat, proper, finitely
 > presented morphism form an open locus in the base.
@@ -195,4 +195,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.26, Tag 0574](https://stacks.math.columbia.edu/tag/0574)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

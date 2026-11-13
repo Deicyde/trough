@@ -8,7 +8,7 @@ proof: formalized
 
 # Labeled directed graphs
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html).
 
 ## Labeled directed graph
 
@@ -17,7 +17,7 @@ label set $L$ consists of a source map $s : E \to V$, a target map $t : E \to V$
 map $\ell : E \to L$; the edge $e$ goes from $s(e)$ to $t(e)$ and carries the label $\ell(e)$.
 Loops and parallel edges are allowed.
 
-Formalized by `MetaMathlibExt.LabeledDigraph`, a structure declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#labeled-digraph).
+Formalized by `MetaMathlibExt.LabeledDigraph`, a structure declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#labeled-digraph).
 
 ## Extensionality for labeled directed graphs
 
@@ -25,7 +25,7 @@ Two labeled directed graphs $G$ and $H$
 with the same vertex set, edge set and label set are equal if they have the same source map,
 the same target map and the same label map.
 
-Formalized by `MetaMathlibExt.LabeledDigraph.ext`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#ext).
+Formalized by `MetaMathlibExt.LabeledDigraph.ext`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#ext).
 
 ## Restriction of a labeled directed graph
 
@@ -35,7 +35,7 @@ $p$ is the labeled directed graph with label set $L$ whose vertices are the vert
 with $p(v)$, whose edges are the edges of $G$ whose source and target both satisfy $p$, and in
 which each edge has the same source, target and label as in $G$.
 
-Formalized by `MetaMathlibExt.LabeledDigraph.restrict`, a definition declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict).
+Formalized by `MetaMathlibExt.LabeledDigraph.restrict`, a definition declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict).
 
 ## Source of an edge in a restriction
 
@@ -44,7 +44,7 @@ on its vertices, and $e$ an edge of $G$ whose source and target satisfy $p$, vie
 the restriction of $G$ to $p$. The source of $e$ in the restriction, viewed as a vertex of $G$,
 is the source of $e$ in $G$.
 
-Formalized by `MetaMathlibExt.LabeledDigraph.restrict_src`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-src).
+Formalized by `MetaMathlibExt.LabeledDigraph.restrict_src`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-src).
 
 ## Target of an edge in a restriction
 
@@ -53,7 +53,7 @@ on its vertices, and $e$ an edge of $G$ whose source and target satisfy $p$, vie
 the restriction of $G$ to $p$. The target of $e$ in the restriction, viewed as a vertex of $G$,
 is the target of $e$ in $G$.
 
-Formalized by `MetaMathlibExt.LabeledDigraph.restrict_tgt`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-tgt).
+Formalized by `MetaMathlibExt.LabeledDigraph.restrict_tgt`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-tgt).
 
 ## Label of an edge in a restriction
 
@@ -61,7 +61,7 @@ Let $G$ be a labeled directed graph, $p$ a predicate
 on its vertices, and $e$ an edge of $G$ whose source and target satisfy $p$, viewed as an edge of
 the restriction of $G$ to $p$. The label of $e$ in the restriction is its label in $G$.
 
-Formalized by `MetaMathlibExt.LabeledDigraph.restrict_label`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-label).
+Formalized by `MetaMathlibExt.LabeledDigraph.restrict_label`, a theorem declared in [MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/LabeledDigraph.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html#restrict-label).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Labeled directed graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/directed-graphs/labeled-directed-graphs)

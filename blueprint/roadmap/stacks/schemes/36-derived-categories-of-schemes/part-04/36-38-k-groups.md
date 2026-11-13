@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.38 K-groups
 
-Section 36.38 of the Stacks Project, [Tag 0FDE](https://stacks.math.columbia.edu/tag/0FDE). 9 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.38 of the Stacks Project, [Tag 0FDE](https://stacks.math.columbia.edu/tag/0FDE). 9 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FDF, a lemma
 
 [Tag 0FDF](https://stacks.math.columbia.edu/tag/0FDF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_addEquiv_coherentKZero_K0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L77). The attribute's comment: “the identification K₀(Coh(𝒪\_X)) = K₀(D^b\_Coh(𝒪\_X)), the source's second equality. The source's middle group K₀(D^b(Coh(𝒪\_X))) is `AlgebraicGeometry.exists_addEquiv_coherentKZero_K0_bounded`”. References: SGA 6 IV (2.4), “special case”; SGA 6 IV (3.2.3), “more general”.
+**`AlgebraicGeometry.exists_addEquiv_coherentKZero_K0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L77). The attribute's comment: “the identification K₀(Coh(𝒪\_X)) = K₀(D^b\_Coh(𝒪\_X)), the source's second equality. The source's middle group K₀(D^b(Coh(𝒪\_X))) is `AlgebraicGeometry.exists_addEquiv_coherentKZero_K0_bounded`”. References: SGA 6 IV (2.4), “special case”; SGA 6 IV (3.2.3), “more general”.
 
 > **Stacks Project, Tag 0FDF.** The Grothendieck group `K'₀(X)` of coherent sheaves on a scheme
 > `X` is the zeroth `K`-group of `D^b_Coh(𝒪_X)`, the bounded objects of `D(𝒪_X)` with coherent
@@ -39,7 +39,7 @@ theorem exists_addEquiv_coherentKZero_K0 (X : Scheme.{u})
             e (KZero.mk _ F) = QuotientAddGroup.mk (FreeAbelianGroup.of K)
 ```
 
-**`AlgebraicGeometry.exists_addEquiv_coherentKZero_K0_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean#L62). The attribute's comment: “the identification K₀(Coh(𝒪\_X)) = K₀(D^b(Coh(𝒪\_X))), the source's first equality”. References: SGA 6 IV (1.5), “(1.5.3), special case”.
+**`AlgebraicGeometry.exists_addEquiv_coherentKZero_K0_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean#L62). The attribute's comment: “the identification K₀(Coh(𝒪\_X)) = K₀(D^b(Coh(𝒪\_X))), the source's first equality”. References: SGA 6 IV (1.5), “(1.5.3), special case”.
 
 > **Stacks Project, Tag 0FDF.** The Grothendieck group `K'₀(X)` of coherent sheaves on a scheme
 > `X` is the zeroth `K`-group of `D^b(Coh(𝒪_X))`, the bounded derived category of the abelian
@@ -59,7 +59,7 @@ theorem exists_addEquiv_coherentKZero_K0_bounded (X : Scheme.{u})
             DerivedCategory.Bounded (Stacks.SheafOfModules.CoherentModules X.ringCatSheaf)))
 ```
 
-**`AlgebraicGeometry.exists_addEquiv_K0_bounded_K0_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean#L82). The attribute's comment: “the identification K₀(D^b(Coh(𝒪\_X))) = K₀(D^b\_Coh(𝒪\_X)) of the source's two outer groups”.
+**`AlgebraicGeometry.exists_addEquiv_K0_bounded_K0_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupBoundedCoherent.lean#L82). The attribute's comment: “the identification K₀(D^b(Coh(𝒪\_X))) = K₀(D^b\_Coh(𝒪\_X)) of the source's two outer groups”.
 
 > **Stacks Project, Tag 0FDF.** For a scheme `X` the two outer groups of the chain of Tag 0FDF
 > agree: the zeroth `K`-group of `D^b(Coh(𝒪_X))`, the bounded derived category of the abelian
@@ -94,7 +94,7 @@ theorem exists_addEquiv_K0_bounded_K0_boundedCoherent (X : Scheme.{u})
 
 [Tag 0FDG](https://stacks.math.columbia.edu/tag/0FDG) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L58). The attribute's comment: “(1) D\_perf(𝒪\_X) is TRIANGULATED in D(𝒪\_X) — the adjective of Definition 0FDG (1) that makes `K₀` of the subcategory defined at all, `CategoryTheory.Pretriangulated.K0` taking a `[Pretriangulated]` instance. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”. References: SGA 6 I (5.8.4), “special case”; SGA 6 III (4.2), “Identity-morphism case”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L58). The attribute's comment: “(1) D\_perf(𝒪\_X) is TRIANGULATED in D(𝒪\_X) — the adjective of Definition 0FDG (1) that makes `K₀` of the subcategory defined at all, `CategoryTheory.Pretriangulated.K0` taking a `[Pretriangulated]` instance. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”. References: SGA 6 I (5.8.4), “special case”; SGA 6 III (4.2), “Identity-morphism case”.
 
 > **Perfect objects form a triangulated subcategory of `D(O_X)`.** This is the ringed-space
 > statement `Stacks.Cohomology.PerfectTriangulatedSubcategory.isTriangulated_isPerfect`, read on the
@@ -106,7 +106,7 @@ instance perfectDerivedProperty_isTriangulated (X : Scheme.{u}) :
       fun K => IsPerfect (X := X.toRingedSpace) K).IsTriangulated
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L109). The attribute's comment: “(1) D\_perf(𝒪\_X) is STRICTLY FULL in D(𝒪\_X) — the first of the three adjectives Definition 0FDG (1) attaches to the subcategory whose K-group it names. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L109). The attribute's comment: “(1) D\_perf(𝒪\_X) is STRICTLY FULL in D(𝒪\_X) — the first of the three adjectives Definition 0FDG (1) attaches to the subcategory whose K-group it names. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”.
 
 > **Perfect objects form a strictly full subcategory of `D(O_X)`.**
 
@@ -116,7 +116,7 @@ instance perfectDerivedProperty_isClosedUnderIsomorphisms (X : Scheme.{u}) :
       (fun K : DerivedCategory X.Modules => IsPerfect (X := X.toRingedSpace) K)
 ```
 
-**`AlgebraicGeometry.coherentModulesAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L58). The attribute's comment: “coherent\_abelian”. References: SGA 6 II (2.2.1), “Coh(S) abelian”.
+**`AlgebraicGeometry.coherentModulesAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L58). The attribute's comment: “coherent\_abelian”. References: SGA 6 II (2.2.1), “Coh(S) abelian”.
 
 > **Stacks Project, Tag 0FDG.** Coherent sheaves of modules on a scheme form an abelian
 > category.
@@ -126,7 +126,7 @@ noncomputable instance coherentModulesAbelian (X : Scheme.{u}) :
     Abelian (Stacks.SheafOfModules.CoherentModules X.ringCatSheaf)
 ```
 
-**`AlgebraicGeometry.CoherentKZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L65). The attribute's comment: “coherent\_k0”. References: SGA 6 X (1.1); SGA 6 IV (2.2), “K\_•(A\_X)\_naif”.
+**`AlgebraicGeometry.CoherentKZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroup.lean#L65). The attribute's comment: “coherent\_k0”. References: SGA 6 X (1.1); SGA 6 IV (2.2), “K\_•(A\_X)\_naif”.
 
 > **Stacks Project, Tag 0FDG (2).** The Grothendieck group `K'₀(X)` of coherent sheaves on a
 > scheme `X`.
@@ -135,7 +135,7 @@ noncomputable instance coherentModulesAbelian (X : Scheme.{u}) :
 noncomputable abbrev CoherentKZero (X : Scheme.{u}) : Type _
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean#L80). The attribute's comment: “(1) D\_perf(𝒪\_X) is SATURATED in D(𝒪\_X) — the third of the three adjectives Definition 0FDG (1) attaches to the subcategory whose K-group it names, and the only one the definition does not consume as an instance. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean#L79). The attribute's comment: “(1) D\_perf(𝒪\_X) is SATURATED in D(𝒪\_X) — the third of the three adjectives Definition 0FDG (1) attaches to the subcategory whose K-group it names, and the only one the definition does not consume as an instance. The definitional clause itself is `AlgebraicGeometry.PerfectKZero`”.
 
 > **`D_perf(𝒪_X)` is a saturated subcategory of `D(𝒪_X)`**: both summands of a perfect
 > biproduct are perfect. This is Tag 08CS, read on the ringed space underlying `X` at the standard
@@ -148,7 +148,7 @@ theorem perfectDerivedProperty_isSaturated (X : Scheme.{u}) :
       fun K => IsPerfect (X := X.toRingedSpace) K).IsSaturated
 ```
 
-**`AlgebraicGeometry.PerfectKZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean#L105). The attribute's comment: “(1) the DEFINITIONAL clause: K₀(X) := K₀(D\_perf(𝒪\_X)). Being a definition this states nothing on its own; the three adjectives the source attaches to D\_perf(𝒪\_X) are the assertional part of (1) and are registered separately, on `perfectDerivedProperty_isClosedUnderIsomorphisms` (strictly full), `perfectDerivedProperty_isTriangulated` (triangulated) and `perfectDerivedProperty_isSaturated` (saturated)”.
+**`AlgebraicGeometry.PerfectKZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupPerfect.lean#L104). The attribute's comment: “(1) the DEFINITIONAL clause: K₀(X) := K₀(D\_perf(𝒪\_X)). Being a definition this states nothing on its own; the three adjectives the source attaches to D\_perf(𝒪\_X) are the assertional part of (1) and are registered separately, on `perfectDerivedProperty_isClosedUnderIsomorphisms` (strictly full), `perfectDerivedProperty_isTriangulated` (triangulated) and `perfectDerivedProperty_isSaturated` (saturated)”.
 
 > **Stacks Project, Tag 0FDG (1).** The *Grothendieck group* `K₀(X)` of a scheme `X`: the
 > zeroth `K`-group of the strictly full, saturated, triangulated subcategory `D_perf(𝒪_X)` of
@@ -162,7 +162,7 @@ abbrev PerfectKZero (X : Scheme.{u}) : Type _
 
 [Tag 0FDH](https://stacks.math.columbia.edu/tag/0FDH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.affineCoherentKZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean#L325). The attribute's comment: “affine\_k0\_prime”.
+**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.affineCoherentKZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean#L325). The attribute's comment: “affine\_k0\_prime”.
 
 > The coherent Grothendieck group of `Spec R` is canonically isomorphic to
 > the Grothendieck group of finite `R`-modules.
@@ -172,7 +172,7 @@ def affineCoherentKZeroEquiv (R : Type u) [CommRing R] [IsNoetherianRing R] :
     AlgebraicGeometry.CoherentKZero (Spec (CommRingCat.of R)) ≃+ KPrime0 R
 ```
 
-**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.affineCoherentKZeroEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean#L332). The attribute's comment: “affine\_k0\_prime”.
+**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.affineCoherentKZeroEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Basic.lean#L332). The attribute's comment: “affine\_k0\_prime”.
 
 > The affine comparison sends the class of a coherent sheaf associated to a
 > finite module to the class of that module.
@@ -186,7 +186,7 @@ theorem affineCoherentKZeroEquiv_mk (R : Type u) [CommRing R] [IsNoetherianRing 
     affineCoherentKZeroEquiv R (KZero.mk _ F) = M.cls
 ```
 
-**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.exists_addEquiv_K0_perfectDerivedCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Perfect.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Perfect.lean#L185). The attribute's comment: “affine\_k0”. References: SGA 6 0 (3.1), “special case”; SGA 6 VII (2.6), “special case”.
+**`Stacks.AlgebraicGeometry.GrothendieckGroupAffine.exists_addEquiv_K0_perfectDerivedCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Perfect.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupAffine/Perfect.lean#L185). The attribute's comment: “affine\_k0”. References: SGA 6 0 (3.1), “special case”; SGA 6 VII (2.6), “special case”.
 
 > **[Stacks, Tag 0FDH], the clause `K₀(Spec R) = K₀(R)`.** For a commutative ring `R` the
 > Grothendieck group `K₀(Spec R) = K₀(D_perf(𝒪_{Spec R}))` of the affine scheme `Spec R` is
@@ -220,7 +220,7 @@ theorem exists_addEquiv_K0_perfectDerivedCategory_spec :
 
 [Tag 0FDI](https://stacks.math.columbia.edu/tag/0FDI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_addEquiv_K0_coherentKZero_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RegularKGroupComparison.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RegularKGroupComparison.lean#L88). References: SGA 6 IV (2.5), “(i), special case”.
+**`AlgebraicGeometry.exists_addEquiv_K0_coherentKZero_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RegularKGroupComparison.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RegularKGroupComparison.lean#L88). References: SGA 6 IV (2.5), “(i), special case”.
 
 > **[Stacks, Tag 0FDI].** Let `X` be a Noetherian regular scheme. Then the canonical map
 > `K₀(X) ⟶ K'₀(X)` from the Grothendieck group of perfect complexes to the Grothendieck group of
@@ -252,7 +252,7 @@ theorem exists_addEquiv_K0_coherentKZero_of_isRegular (X : Scheme.{u}) [IsNoethe
 
 [Tag 0FDJ](https://stacks.math.columbia.edu/tag/0FDJ) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.bijective_comparisonAddHom_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonBijectiveUnconditional.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonBijectiveUnconditional.lean#L143). References: SGA 6 0 (3.1), “more general”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.bijective_comparisonAddHom_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonBijectiveUnconditional.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonBijectiveUnconditional.lean#L143). References: SGA 6 0 (3.1), “more general”.
 
 > **Stacks Project, Tag 0FDJ.**  On a quasi-compact and quasi-separated scheme with the
 > resolution property the canonical homomorphism `K₀(Vect(X)) ⟶ K₀(X) = K₀(D_perf(𝒪_X))`, which
@@ -278,7 +278,7 @@ theorem bijective_comparisonAddHom_of_hasResolutionProperty (X : Scheme.{u}) [Co
     Function.Bijective (comparisonAddHom X)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.surjective_comparisonAddHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonSurjective.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonSurjective.lean#L577). The attribute's comment: “surjectivity of `K₀(Vect(X)) ⟶ K₀(X)`, for a Noetherian scheme in place of an arbitrary quasi-compact one: the affine diagonal that the proof needs is deduced from the resolution property by the Noetherian case of Tag 0F8C”. References: SGA 6 IV (2.9), “(i)”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.surjective_comparisonAddHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonSurjective.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparisonSurjective.lean#L577). The attribute's comment: “surjectivity of `K₀(Vect(X)) ⟶ K₀(X)`, for a Noetherian scheme in place of an arbitrary quasi-compact one: the affine diagonal that the proof needs is deduced from the resolution property by the Noetherian case of Tag 0F8C”. References: SGA 6 IV (2.9), “(i)”.
 
 > **The surjectivity half of [Stacks, Tag 0FDJ].** On a Noetherian, quasi-separated scheme with
 > the resolution property the canonical homomorphism `K₀(Vect(X)) ⟶ K₀(X) = K₀(D_perf(𝒪_X))`, which
@@ -309,7 +309,7 @@ theorem surjective_comparisonAddHom_of_isNoetherian (X : Scheme.{u})
 
 [Tag 0FDK](https://stacks.math.columbia.edu/tag/0FDK) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedCategoryBBounded_coherentModules_derivedTensor_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L127). The attribute's comment: “the bifunctor D\_perf × D^b\_Coh ⟶ D^b\_Coh”.
+**`AlgebraicGeometry.derivedCategoryBBounded_coherentModules_derivedTensor_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L127). The attribute's comment: “the bifunctor D\_perf × D^b\_Coh ⟶ D^b\_Coh”.
 
 > **Stacks Project, Tag 0FDK.** Let `X` be a Noetherian scheme. The derived tensor product of a
 > perfect object of `D(𝒪_X)` with an object of `D^b_Coh(𝒪_X)` is an object of `D^b_Coh(𝒪_X)`: the
@@ -327,7 +327,7 @@ theorem derivedCategoryBBounded_coherentModules_derivedTensor_of_isPerfect
       (((TorFormula.derivedTensor X).obj K).obj L)
 ```
 
-**`AlgebraicGeometry.exists_derivedTensorProduct_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L227). The attribute's comment: “K₀(D^b\_Coh(𝒪\_X)) is a module over the Grothendieck ring K₀(D\_perf(𝒪\_X))”.
+**`AlgebraicGeometry.exists_derivedTensorProduct_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L227). The attribute's comment: “K₀(D^b\_Coh(𝒪\_X)) is a module over the Grothendieck ring K₀(D\_perf(𝒪\_X))”.
 
 > **Stacks Project, Tag 0FDK.** Let `X` be a Noetherian scheme. The zeroth `K`-group
 > `K₀(D^b_Coh(𝒪_X))` of the cohomologically bounded objects of `D(𝒪_X)` with coherent cohomology
@@ -356,7 +356,7 @@ theorem exists_derivedTensorProduct_module :
             (boundedCoherentAtScheme X).FullSubcategory)
 ```
 
-**`AlgebraicGeometry.exists_module_coherentKZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L254). The attribute's comment: “K'₀(X) is a module over the Grothendieck ring K₀(X)”. References: SGA 6 IV (3.2.3).
+**`AlgebraicGeometry.exists_module_coherentKZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/CoherentKGroupModule.lean#L254). The attribute's comment: “K'₀(X) is a module over the Grothendieck ring K₀(X)”. References: SGA 6 IV (3.2.3).
 
 > **Stacks Project, Tag 0FDK.** Let `X` be a Noetherian scheme. The Grothendieck group
 > `K'₀(X)` of coherent `𝒪_X`-modules is a module over the Grothendieck ring
@@ -392,7 +392,7 @@ theorem exists_module_coherentKZero :
             (boundedCoherentAtScheme X).FullSubcategory)
 ```
 
-**`AlgebraicGeometry.RingedSpace.exists_derivedTensorProduct_commRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectKGroupRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectKGroupRing.lean#L187). The attribute's comment: “perfect\_k\_ring”. References: SGA 6 IV (2.7), “b) ring str. on K'”.
+**`AlgebraicGeometry.RingedSpace.exists_derivedTensorProduct_commRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectKGroupRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectKGroupRing.lean#L187). The attribute's comment: “perfect\_k\_ring”. References: SGA 6 IV (2.7), “b) ring str. on K'”.
 
 > **Stacks Project, Tag 0FDK.** The Grothendieck group `K₀(D_perf(𝒪_X))` of the perfect
 > objects of `D(𝒪_X)` carries a commutative ring structure whose additive group is the one it
@@ -420,7 +420,7 @@ theorem exists_derivedTensorProduct_commRing :
         r.one = K0.cls ⟨_, h⟩)
 ```
 
-**`AlgebraicGeometry.existsUnique_comparisonRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparison.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparison.lean#L321). The attribute's comment: “vector\_bundle\_comparison\_ring\_map”. References: SGA 6 IV (2.7), “b) K'\_naif→K' ring”.
+**`AlgebraicGeometry.existsUnique_comparisonRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparison.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleComparison.lean#L321). The attribute's comment: “vector\_bundle\_comparison\_ring\_map”. References: SGA 6 IV (2.7), “b) K'\_naif→K' ring”.
 
 > There is a unique ring homomorphism from the Grothendieck ring of vector bundles on a scheme
 > `X` to the Grothendieck ring of perfect objects of `D(𝒪_X)` which sends the class of a finite
@@ -442,7 +442,7 @@ theorem existsUnique_comparisonRingHom :
         f (VectorBundleKZero.classOf X M) = K0.cls ⟨_, h⟩
 ```
 
-**`AlgebraicGeometry.VectorBundleKZero.exists_tensorProduct_commRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleKGroup.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleKGroup.lean#L588). The attribute's comment: “vector\_bundle\_grothendieck\_ring”. References: SGA 6 IV (2.7), “b) K'\_naif ring str.”.
+**`AlgebraicGeometry.VectorBundleKZero.exists_tensorProduct_commRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleKGroup.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/VectorBundleKGroup.lean#L588). The attribute's comment: “vector\_bundle\_grothendieck\_ring”. References: SGA 6 IV (2.7), “b) K'\_naif ring str.”.
 
 > **Stacks Project, Tag 0FDK.** `K₀(Vect(X))` carries a commutative ring structure whose
 > additive group is the one it already has, whose multiplication is the tensor product of finite
@@ -463,7 +463,7 @@ theorem exists_tensorProduct_commRing (X : Scheme.{u}) :
 
 [Tag 0FDL](https://stacks.math.columbia.edu/tag/0FDL) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L611). The attribute's comment: “the map f\_* : K'₀(X) ⟶ K'₀(Y). All three of the source's reasons for well definedness are proved: coherence of the R ⁱ f\_* ℱ (Tag 02O5), local finiteness of the nonzero ones, and the long exact sequence of the R ⁱ f\_* with its terms collected by the parity of the degree (`hasParityHexagons`). The remark's quasi-compact restatement f\_*[ℱ] = ∑ (-1)ⁱ [R ⁱ f\_* ℱ] = [Rf\_* ℱ] is `AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_finsum` and `AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_derivedClass`”. References: SGA 6 0 (3.1); SGA 6 X (1.1.8).
+**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L611). The attribute's comment: “the map f\_* : K'₀(X) ⟶ K'₀(Y). All three of the source's reasons for well definedness are proved: coherence of the R ⁱ f\_* ℱ (Tag 02O5), local finiteness of the nonzero ones, and the long exact sequence of the R ⁱ f\_* with its terms collected by the parity of the degree (`hasParityHexagons`). The remark's quasi-compact restatement f\_*[ℱ] = ∑ (-1)ⁱ [R ⁱ f\_* ℱ] = [Rf\_* ℱ] is `AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_finsum` and `AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_derivedClass`”. References: SGA 6 0 (3.1); SGA 6 X (1.1.8).
 
 > **[Stacks, Tag 0FDL]: proper pushforward on `K'₀`.** For a proper morphism `f : X ⟶ Y` of
 > locally Noetherian schemes, the homomorphism `f_* : K'₀(X) ⟶ K'₀(Y)` of Grothendieck groups of
@@ -478,7 +478,7 @@ def properPushforward (f : X ⟶ Y) [IsLocallyNoetherian X] [IsLocallyNoetherian
     CoherentKZero X →+ CoherentKZero Y
 ```
 
-**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L621). The attribute's comment: “the value f\_*[ℱ] = [⨁ R ²ⁱ f\_* ℱ] - [⨁ R ²ⁱ⁺¹ f\_* ℱ] of f\_* on the class of a coherent sheaf, the first assertion of the remark”.
+**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L621). The attribute's comment: “the value f\_*[ℱ] = [⨁ R ²ⁱ f\_* ℱ] - [⨁ R ²ⁱ⁺¹ f\_* ℱ] of f\_* on the class of a coherent sheaf, the first assertion of the remark”.
 
 > **[Stacks, Tag 0FDL]: the value of `f_*` on the class of a coherent sheaf.** For coherent
 > `𝒪_Y`-modules `E` and `O` isomorphic to `⨁_{i ≥ 0} R ²ⁱ f_* ℱ` and `⨁_{i ≥ 0} R ²ⁱ⁺¹ f_* ℱ`,
@@ -495,7 +495,7 @@ theorem properPushforward_mk (f : X ⟶ Y) [IsLocallyNoetherian X] [IsLocallyNoe
     properPushforward f (KZero.mk _ F) = KZero.mk _ E - KZero.mk _ O
 ```
 
-**`AlgebraicGeometry.ProperPushforwardKZero.existsUnique_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L645). The attribute's comment: “the existence and uniqueness of the map f\_* : K'₀(X) ⟶ K'₀(Y) with the value the remark prescribes on the class of a coherent sheaf”.
+**`AlgebraicGeometry.ProperPushforwardKZero.existsUnique_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforward.lean#L645). The attribute's comment: “the existence and uniqueness of the map f\_* : K'₀(X) ⟶ K'₀(Y) with the value the remark prescribes on the class of a coherent sheaf”.
 
 > **[Stacks, Tag 0FDL].** For a proper morphism `f : X ⟶ Y` of locally Noetherian schemes there
 > is exactly one homomorphism `f_* : K'₀(X) ⟶ K'₀(Y)` with
@@ -516,7 +516,7 @@ theorem existsUnique_properPushforward (f : X ⟶ Y) [IsLocallyNoetherian X]
           φ (KZero.mk _ F) = KZero.mk _ E - KZero.mk _ O
 ```
 
-**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L286). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = ∑ (-1)ⁱ [R ⁱ f\_* ℱ] of the remark”.
+**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L284). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = ∑ (-1)ⁱ [R ⁱ f\_* ℱ] of the remark”.
 
 > **[Stacks, Tag 0FDL]: the quasi-compact restatement `f_*[ℱ] = ∑ (−1)ⁱ [R ⁱ f_* ℱ]`.** For a
 > proper morphism `f : X ⟶ Y` of locally Noetherian schemes with `Y` quasi-compact, the proper
@@ -536,7 +536,7 @@ theorem properPushforward_mk_eq_finsum (f : X ⟶ Y) [IsLocallyNoetherian X]
       ∑ᶠ i : ℕ, ((i : ℤ).negOnePow : ℤ) • KZero.mk _ (coherentHigherDirectImage f F i)
 ```
 
-**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_derivedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L659). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = [Rf\_* ℱ] of the remark, under the identification K'₀(Y) = K₀(D^b\_Coh(𝒪\_Y)) of Tag 0FDF”.
+**`AlgebraicGeometry.ProperPushforwardKZero.properPushforward_mk_eq_derivedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L656). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = [Rf\_* ℱ] of the remark, under the identification K'₀(Y) = K₀(D^b\_Coh(𝒪\_Y)) of Tag 0FDF”.
 
 > **[Stacks, Tag 0FDL]: the quasi-compact restatement `f_*[ℱ] = [Rf_* ℱ]`.** For a proper
 > morphism `f : X ⟶ Y` of locally Noetherian schemes with `Y` quasi-compact and a coherent
@@ -570,7 +570,7 @@ theorem properPushforward_mk_eq_derivedClass (f : X ⟶ Y) [IsLocallyNoetherian 
             e (properPushforward f (KZero.mk _ F)) = Pretriangulated.K0.cls E
 ```
 
-**`AlgebraicGeometry.ProperPushforwardKZero.exists_addEquiv_properPushforward_eq_derivedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L685). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = [Rf\_* ℱ] of the remark, with the identification K'₀(Y) = K₀(D^b\_Coh(𝒪\_Y)) of Tag 0FDF exhibited”.
+**`AlgebraicGeometry.ProperPushforwardKZero.exists_addEquiv_properPushforward_eq_derivedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/GrothendieckGroupProperPushforwardDerived.lean#L682). The attribute's comment: “the quasi-compact restatement f\_*[ℱ] = [Rf\_* ℱ] of the remark, with the identification K'₀(Y) = K₀(D^b\_Coh(𝒪\_Y)) of Tag 0FDF exhibited”.
 
 > **[Stacks, Tag 0FDL]: the quasi-compact restatement `f_*[ℱ] = [Rf_* ℱ]`**, with the
 > identification `K'₀(Y) = K₀(D^b_Coh(𝒪_Y))` of [Stacks, Tag 0FDF] exhibited.
@@ -598,7 +598,7 @@ theorem exists_addEquiv_properPushforward_eq_derivedClass (f : X ⟶ Y) [IsLocal
 
 [Tag 0FDM](https://stacks.math.columbia.edu/tag/0FDM) in the Stacks Project.
 
-**`AlgebraicGeometry.properPushforward_perfectCoherentSMul_perfectPullbackKZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProjectionFormulaKZero/ProjectionFormula.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ProjectionFormulaKZero/ProjectionFormula.lean#L153).
+**`AlgebraicGeometry.properPushforward_perfectCoherentSMul_perfectPullbackKZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProjectionFormulaKZero/ProjectionFormula.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProjectionFormulaKZero/ProjectionFormula.lean#L153).
 
 > **[Stacks, Tag 0FDM]: the projection formula on `K`-groups.** Let `f : X ⟶ Y` be a proper
 > morphism of locally Noetherian schemes. Then
@@ -634,7 +634,7 @@ theorem properPushforward_perfectCoherentSMul_perfectPullbackKZero {X Y : Scheme
 
 [Tag 0FDN](https://stacks.math.columbia.edu/tag/0FDN) in the Stacks Project.
 
-**`AlgebraicGeometry.supportedPerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L62). The attribute's comment: “supported\_perfect\_definition”.
+**`AlgebraicGeometry.supportedPerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L62). The attribute's comment: “supported\_perfect\_definition”.
 
 > The strictly full subcategory of perfect derived objects whose every cohomology sheaf
 > is set-theoretically supported on a closed subscheme.
@@ -644,7 +644,7 @@ public abbrev supportedPerfectDerivedCategory {X Z : Scheme.{u}} (i : Z ⟶ X)
     [IsClosedImmersion i] [HasDerivedCategory.{d} (OXMod.{u} X.toRingedSpace)]
 ```
 
-**`AlgebraicGeometry.isClosedUnderIsomorphisms_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L81). The attribute's comment: “strict fullness of the supported perfect subcategory”.
+**`AlgebraicGeometry.isClosedUnderIsomorphisms_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L81). The attribute's comment: “strict fullness of the supported perfect subcategory”.
 
 > **Supported perfect objects form a strictly full subcategory.** Perfectness only depends on
 > the isomorphism class, and an isomorphism of derived objects induces an isomorphism of each
@@ -661,7 +661,7 @@ instance isClosedUnderIsomorphisms_supportedPerfect {X Z : Scheme.{u}} (i : Z �
               Set.range i.base)
 ```
 
-**`AlgebraicGeometry.isTriangulated_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L103). The attribute's comment: “triangulatedness of the supported perfect subcategory”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
+**`AlgebraicGeometry.isTriangulated_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L103). The attribute's comment: “triangulatedness of the supported perfect subcategory”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
 
 > **Perfect complexes supported on a closed subscheme form a triangulated subcategory** of the
 > derived category of `O_X`-modules: the subcategory `D_{Z, perf}(O_X)` contains a zero object, is
@@ -682,7 +682,7 @@ instance isTriangulated_supportedPerfect {X Z : Scheme.{u}} (i : Z ⟶ X)
               Set.range i.base)
 ```
 
-**`AlgebraicGeometry.exists_supportedPerfect_not_exists_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean#L580). The attribute's comment: “in general `K_0(D_{Z, perf}(O_X))` has no unit: for `X = Spec ℤ` and `Z = Spec(ℤ/2)` the multiplication given by the derived tensor product exists, and no multiplication on `K_0(D_{Z, perf}(O_X))` distributive over its addition and computing the derived tensor product on classes has a unit”.
+**`AlgebraicGeometry.exists_supportedPerfect_not_exists_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean#L583). The attribute's comment: “in general `K_0(D_{Z, perf}(O_X))` has no unit: for `X = Spec ℤ` and `Z = Spec(ℤ/2)` the multiplication given by the derived tensor product exists, and no multiplication on `K_0(D_{Z, perf}(O_X))` distributive over its addition and computing the derived tensor product on classes has a unit”.
 
 > **In general `K₀(D_{Z, perf}(𝒪_X))` has no unit.** There are a scheme `X` and a closed
 > subscheme `Z` for which `K₀(D_{Z, perf}(𝒪_X))` carries a multiplication — a non-unital
@@ -706,7 +706,7 @@ theorem exists_supportedPerfect_not_exists_unit :
           ¬ ∃ e, ∀ a, r.mul e a = a
 ```
 
-**`AlgebraicGeometry.exists_supportedPerfect_nonUnitalCommRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean#L271). The attribute's comment: “the multiplication on `K_0(D_{Z, perf}(O_X))` given by the derived tensor product, together with its associativity and commutativity -- the fields of `NonUnitalCommRing`. Stated at the standard derived-category model, which the source does not fix. The absence of a unit in general is `AlgebraicGeometry.exists_supportedPerfect_not_exists_unit`; the definition of the subcategory and its three adjectives are in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean` and `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean`”.
+**`AlgebraicGeometry.exists_supportedPerfect_nonUnitalCommRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean#L273). The attribute's comment: “the multiplication on `K_0(D_{Z, perf}(O_X))` given by the derived tensor product, together with its associativity and commutativity -- the fields of `NonUnitalCommRing`. Stated at the standard derived-category model, which the source does not fix. The absence of a unit in general is `AlgebraicGeometry.exists_supportedPerfect_not_exists_unit`; the definition of the subcategory and its three adjectives are in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean` and `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean`”.
 
 > **Stacks Project, Tag 0FDN.** The `K`-group `K₀(D_{Z, perf}(𝒪_X))` of the perfect objects
 > of `D(𝒪_X)` supported on a closed subscheme `Z` carries a non-unital commutative ring
@@ -723,7 +723,7 @@ theorem exists_supportedPerfect_nonUnitalCommRing :
           r.mul (K0.cls K) (K0.cls L) = K0.cls (supportedPerfectTensorObj i K L)
 ```
 
-**`AlgebraicGeometry.isSaturated_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean#L68). The attribute's comment: “saturation of the supported perfect subcategory -- the adjective `saturated` of the source, which is closure under direct summands (Tag 05RB). The two other adjectives, strict fullness and triangulatedness, and the definition of the subcategory itself, are in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean`. The multiplication on `K_0(D_{Z, perf}(O_X))` is in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean` and the absence of a unit in general in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean`”.
+**`AlgebraicGeometry.isSaturated_supportedPerfect`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Saturation.lean#L69). The attribute's comment: “saturation of the supported perfect subcategory -- the adjective `saturated` of the source, which is closure under direct summands (Tag 05RB). The two other adjectives, strict fullness and triangulatedness, and the definition of the subcategory itself, are in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean`. The multiplication on `K_0(D_{Z, perf}(O_X))` is in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Ring.lean` and the absence of a unit in general in `StacksFrontier/AlgebraicGeometry/Perfect/KGroups/NoUnit.lean`”.
 
 > **Perfect complexes supported on a closed subscheme form a saturated subcategory** of
 > `D(O_X)`: if a binary biproduct is perfect with all its cohomology sheaves supported on `Z`,
@@ -751,4 +751,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.38, Tag 0FDE](https://stacks.math.columbia.edu/tag/0FDE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

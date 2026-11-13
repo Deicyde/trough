@@ -7,7 +7,7 @@ statement: formalized
 
 # Perrin numbers that are Perrin squares
 
-13 results, 4 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html).
+13 results, 4 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html).
 
 ## Perrin sequence at negative indices
 
@@ -20,7 +20,7 @@ $R_0 = 3$, $R_{-1} = -1$, $R_{-2} = 1$ and $R_{-(n+3)} = R_{-n} - R_{-(n+2)}$ fo
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorems 2–4.
 
-Formalized by `MetaMathlibExt.perrinNeg`, a definition declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg).
+Formalized by `MetaMathlibExt.perrinNeg`, a definition declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg).
 
 ## The Perrin sequence and its backward extension fit together at index zero
 
@@ -33,7 +33,7 @@ index $0$: $R_2 = R_0 + R_{-1}$ and $R_1 = R_{-1} + R_{-2}$.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorems 2–4.
 
-Formalized by `MetaMathlibExt.perrinNeg_bridge`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-bridge).
+Formalized by `MetaMathlibExt.perrinNeg_bridge`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-bridge).
 
 ## Perrin recurrence at negative indices
 
@@ -44,7 +44,7 @@ to negative indices. For every natural number $n$, $R_{-n} = R_{-(n+2)} + R_{-(n
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorems 2–4.
 
-Formalized by `MetaMathlibExt.perrinNeg_rec`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-rec).
+Formalized by `MetaMathlibExt.perrinNeg_rec`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-rec).
 
 ## Some values of the Perrin sequence at negative indices
 
@@ -56,7 +56,7 @@ $R_{-1} = R_{-7} = R_{-11} = R_{-29} = -1$ and $R_{-2} = 1$.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorems 2 and 4.
 
-Formalized by `MetaMathlibExt.perrinNeg_small_values`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-small-values).
+Formalized by `MetaMathlibExt.perrinNeg_small_values`, a theorem declared in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-small-values).
 
 ## Perrin numbers that are squares of Perrin numbers
 
@@ -68,7 +68,7 @@ $n = m = 1$ (where $R_1 = 0 = R_1^2$).
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.perrinSequence_eq_sq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-sequence-eq-sq-iff).
+Stated but not proved: `MetaMathlibExt.perrinSequence_eq_sq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-sequence-eq-sq-iff).
 
 ## Negative-index Perrin numbers equal to plus or minus a Perrin square
 
@@ -81,7 +81,7 @@ that is, $R_{-5} = 4 = R_2^2 = R_4^2$ and $R_{-18} = 25 = R_5^2 = R_6^2$.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.perrinNeg_eq_pm_perrinSequence_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-eq-pm-perrin-sequence-sq).
+Stated but not proved: `MetaMathlibExt.perrinNeg_eq_pm_perrinSequence_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-eq-pm-perrin-sequence-sq).
 
 ## No positive-index Perrin number is the square of a negative-index one
 
@@ -93,7 +93,7 @@ extension to negative indices. For all positive integers $n$ and $m$, $R_n \ne R
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.perrinSequence_ne_perrinNeg_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-sequence-ne-perrin-neg-sq).
+Stated but not proved: `MetaMathlibExt.perrinSequence_ne_perrinNeg_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-sequence-ne-perrin-neg-sq).
 
 ## Negative-index Perrin numbers equal to plus or minus a negative-index Perrin square
 
@@ -110,7 +110,7 @@ $R_{-5} = 4 = R_{-3}^2 = R_{-6}^2 = R_{-20}^2$ and $R_{-18} = 25 = R_{-8}^2 = R_
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.perrinNeg_eq_pm_perrinNeg_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-eq-pm-perrin-neg-sq).
+Stated but not proved: `MetaMathlibExt.perrinNeg_eq_pm_perrinNeg_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-eq-pm-perrin-neg-sq).
 
 ## The only zero of the two-sided Perrin sequence
 
@@ -123,7 +123,7 @@ Thus $R_1 = 0$ is the only zero of the sequence $(R_k)_{k \in \mathbb{Z}}$.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.perrin_zero_unique` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-zero-unique).
+Stated but not proved: `MetaMathlibExt.perrin_zero_unique` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-zero-unique).
 
 ## Size of the Perrin numbers at negative indices
 
@@ -139,7 +139,7 @@ The source quotes this bound from Bravo, Bravo and Luca.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.perrinNeg_abs_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-abs-bounds).
+Stated but not proved: `MetaMathlibExt.perrinNeg_abs_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#perrin-neg-abs-bounds).
 
 ## Matveev's lower bound for two logarithms (complex case)
 
@@ -157,7 +157,7 @@ $$|\Lambda| > \exp\bigl(-9.20483 \cdot 10^{11} \, D^2 A_1 A_2 (1 + \log D)(1 + \
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.matveev_two_logs_complex_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#matveev-two-logs-complex-lower-bound).
+Stated but not proved: `MetaMathlibExt.matveev_two_logs_complex_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#matveev-two-logs-complex-lower-bound).
 
 ## Lower bound for $|x - p/q|$ from bounded partial quotients
 
@@ -178,7 +178,7 @@ grows, the two forms are equivalent.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.one_div_partialQuotient_bound_lt_abs_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#one-div-partial-quotient-bound-lt-abs-su).
+Stated but not proved: `MetaMathlibExt.one_div_partialQuotient_bound_lt_abs_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#one-div-partial-quotient-bound-lt-abs-su).
 
 ## Convergents minimize $|p - qx|$ up to their denominator
 
@@ -193,7 +193,7 @@ This is Theorem 182 of Hardy and Wright.
 
 - Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.abs_convergent_num_sub_lt_of_le_den` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#abs-convergent-num-sub-lt-of-le-den).
+Stated but not proved: `MetaMathlibExt.abs_convergent_num_sub_lt_of_le_den` is written with `theorem_wanted` in [WantedExt/NumberTheory/PerrinSquaresWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PerrinSquaresWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html#abs-convergent-num-sub-lt-of-le-den).
 
 ## Depends on
 
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Perrin numbers that are Perrin squares](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/perrin-numbers-that-are-perrin-squares)

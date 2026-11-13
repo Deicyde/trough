@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 37.68 Relative morphisms to 37.81 The extensive criterion…
+# 37.67 Pushouts in the category… to 37.81 The extensive criterion…
 
+- [37.67 Pushouts in the category of schemes, II](37-67-pushouts-in-the-category-of-schemes-ii.md)
 - [37.68 Relative morphisms](37-68-relative-morphisms.md)
 - [37.69 Characterizing pseudo-coherent complexes, III](37-69-characterizing-pseudo-coherent-complexes-i.md)
 - [37.70 Descent finiteness properties of complexes](37-70-descent-finiteness-properties-of-complexes.md)

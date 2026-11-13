@@ -7,7 +7,7 @@ statement: formalized
 
 # Free subgroups of one-relator groups
 
-8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html).
+8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html).
 
 ## Kourovka Problem 20.41: one-relator groups with free infinite-index subgroups
 
@@ -26,7 +26,7 @@ These presentations are the fundamental groups of the closed orientable surface 
 the closed non-orientable surface of genus $k$; compact surfaces with boundary have free
 fundamental groups.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.oneRelatorInfiniteIndexFreeIsFreeOrSurface`, a definition declared in [WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-free).
+Formalized by `MathlibExt.GroupTheory.OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.oneRelatorInfiniteIndexFreeIsFreeOrSurface`, a definition declared in [WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-free).
 
 ## Kourovka Problem 20.41 has a positive answer
 
@@ -47,7 +47,7 @@ fundamental groups.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.41 (L. Ciobanu, B. Fine, G. Rosenberger); resolution: H. Wilton, Surface groups among cubulated hyperbolic and one-relator groups, preprint, arXiv:2406.02121 (2024, v3 2026), Theorem D: an infinite one-relator group that is neither free nor a surface group has a subgroup of infinite index that is not free (a non-cyclic one-relator group has at least two generators and is infinite); Kourovka Notebook (21st issue), Problem 20.41: Yes, it is true, https://arxiv.org/abs/2406.02121.
 
-Stated but not proved: `MathlibExt.GroupTheory.OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.oneRelatorInfiniteIndexFreeIsFreeOrSurface_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-free-2).
+Stated but not proved: `MathlibExt.GroupTheory.OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.oneRelatorInfiniteIndexFreeIsFreeOrSurface_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorInfiniteIndexFreeKourovka20Problem41Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-free-2).
 
 ## One-relator groups with finitely many generators
 
@@ -56,7 +56,7 @@ for some $n \ge 0$ and some element $r$ of the free group on $x_1, \dots, x_n$, 
 to the group $\langle x_1, \dots, x_n \mid r \rangle$ with generators $x_1, \dots, x_n$ and the
 single relator $r$.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.IsOneRelatorGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#is-one-relator-group).
+Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.IsOneRelatorGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#is-one-relator-group).
 
 ## Orientable surface relator
 
@@ -65,7 +65,7 @@ the element $[a_1, b_1] [a_2, b_2] \cdots [a_g, b_g]$ of the free group on the $
 $a_1, \dots, a_g, b_1, \dots, b_g$, where $[a, b] = a b a^{-1} b^{-1}$; for $g = 0$ it is the
 identity.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.orientableSurfaceRelator`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#orientable-surface-relator).
+Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.orientableSurfaceRelator`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#orientable-surface-relator).
 
 ## Non-orientable surface relator
 
@@ -73,7 +73,7 @@ For $k \ge 0$, the non-orientable surface relator of genus
 $k$ is the element $a_1^2 a_2^2 \cdots a_k^2$ of the free group on the $k$ generators
 $a_1, \dots, a_k$; for $k = 0$ it is the identity.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.nonorientableSurfaceRelator`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#nonorientable-surface-relator).
+Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.nonorientableSurfaceRelator`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#nonorientable-surface-relator).
 
 ## Surface groups
 
@@ -86,7 +86,7 @@ These are the standard one-relator presentations of the fundamental groups of th
 orientable surfaces of genus $g \ge 1$ and the closed non-orientable surfaces of genus $k \ge 2$,
 that is, of the closed aspherical surfaces.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.IsSurfaceGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#is-surface-group).
+Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.IsSurfaceGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#is-surface-group).
 
 ## Kourovka Problem 20.22 (statement)
 
@@ -98,7 +98,7 @@ isomorphic to $\langle a_1, b_1, \dots, a_g, b_g \mid [a_1, b_1] \cdots [a_g, b_
 $g \ge 1$, where $[a, b] = a b a^{-1} b^{-1}$, or to
 $\langle a_1, \dots, a_k \mid a_1^2 \cdots a_k^2 \rangle$ for some $k \ge 2$.
 
-Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.oneRelatorInfiniteIndexFreeIsSurfaceGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-surfa).
+Formalized by `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.oneRelatorInfiniteIndexFreeIsSurfaceGroup`, a definition declared in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-surfa).
 
 ## Wilton's theorem (Kourovka Problem 20.22)
 
@@ -114,7 +114,7 @@ for some $k \ge 2$.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.22 (B. Fine, G. Rosenberger, L. Wienke); resolution: H. Wilton, Surface groups among cubulated hyperbolic and one-relator groups, preprint, arXiv:2406.02121 (2024), Theorem D: an infinite one-relator group that is neither free nor a surface group has a subgroup of infinite index that is not free; the Kourovka Notebook (21st issue) marks 20.22 solved, https://arxiv.org/abs/2406.02121.
 
-Stated but not proved: `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.oneRelatorInfiniteIndexFreeIsSurfaceGroup_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-surfa-2).
+Stated but not proved: `MathlibExt.GroupTheory.OneRelatorSurfaceGroupKourovka20Problem22Wanted.oneRelatorInfiniteIndexFreeIsSurfaceGroup_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OneRelatorSurfaceGroupKourovka20Problem22Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html#one-relator-infinite-index-free-is-surfa-2).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Free subgroups of one-relator groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/free-subgroups-of-one-relator-groups)

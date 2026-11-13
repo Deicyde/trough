@@ -7,7 +7,7 @@ statement: formalized
 
 # Antimultiplicative arithmetic functions
 
-7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html).
+7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html).
 
 ## Antimultiplicative arithmetical functions
 
@@ -19,7 +19,7 @@ for every prime $p$ and every integer $k \ge 1$.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Section 2.
 
-Formalized by `MetaMathlibExt.IsAntimultiplicative`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#is-antimultiplicative).
+Formalized by `MetaMathlibExt.IsAntimultiplicative`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#is-antimultiplicative).
 
 ## The Dirichlet identity is antimultiplicative
 
@@ -31,7 +31,7 @@ $\delta(1) = 1$ and $\delta(n) = 0$ for $n \ne 1$, is antimultiplicative.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Section 2.
 
-Formalized by `MetaMathlibExt.isAntimultiplicative_one`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#is-antimultiplicative-one).
+Formalized by `MetaMathlibExt.isAntimultiplicative_one`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#is-antimultiplicative-one).
 
 ## Antimultiplicative functions vanish at primes
 
@@ -43,7 +43,7 @@ every prime $p$.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Section 2.
 
-Formalized by `MetaMathlibExt.IsAntimultiplicative.apply_prime`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#apply-prime).
+Formalized by `MetaMathlibExt.IsAntimultiplicative.apply_prime`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#apply-prime).
 
 ## Multiplicative and antimultiplicative units form subgroups
 
@@ -57,7 +57,7 @@ $U_M \cap U_A = \{\delta\}$, where $\delta$ is the Dirichlet identity.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.dirichletUnits_multiplicative_antimultiplicative_subgroups` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-units-multiplicative-antimulti).
+Stated but not proved: `MetaMathlibExt.dirichletUnits_multiplicative_antimultiplicative_subgroups` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-units-multiplicative-antimulti).
 
 ## Unique splitting into multiplicative and antimultiplicative parts
 
@@ -74,7 +74,7 @@ $U_1 = U_M \oplus U_A$.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_multiplicative_mul_antimultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#exists-unique-multiplicative-mul-antimul).
+Stated but not proved: `MetaMathlibExt.existsUnique_multiplicative_mul_antimultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#exists-unique-multiplicative-mul-antimul).
 
 ## Rearick's real power and its vector space laws
 
@@ -95,7 +95,7 @@ multiplication.
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.dirichletRealPower_vectorSpace` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-real-power-vector-space).
+Stated but not proved: `MetaMathlibExt.dirichletRealPower_vectorSpace` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-real-power-vector-space).
 
 ## Real powers preserve multiplicativity and antimultiplicativity
 
@@ -114,7 +114,7 @@ vector space of all real arithmetical functions $f$ with $f(1) = 1$, whose direc
 
 - Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.dirichletRealPower_multiplicative_antimultiplicative_subspaces` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-real-power-multiplicative-anti).
+Stated but not proved: `MetaMathlibExt.dirichletRealPower_multiplicative_antimultiplicative_subspaces` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ArithmeticFunctionPerpendicularityWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html#dirichlet-real-power-multiplicative-anti).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Antimultiplicative arithmetic functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/antimultiplicative-arithmetic-functions)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_isDerivedComplete_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_isDerivedComplete_and_baseChange_iso, Stacks.DerivedLimit.AdicSystem.isDerivedComplete_and_reduction_isIso_of_isDerivedLimit, Stacks.InverseSystem.AdicCompletionCohomology.adicCompletion_homology_iso_limit_derivedReduction
+lean: StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_isDerivedComplete_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_and_baseChange_iso, StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_isDerivedComplete_and_baseChange_iso, Stacks.DerivedLimit.AdicSystem.isDerivedComplete_and_reduction_isIso_of_isDerivedLimit, Stacks.InverseSystem.AdicCompletionCohomology.isIso_adicCompletionToLimitHomology, Stacks.PseudoCoherent.AdicCompletion.isIso_adicCompletionToLimitDerivedReduction
 statement: formalized
 proof: formalized
 ---
 
 # 15.99 Taking limits of complexes
 
-Section 15.99 of the Stacks Project, [Tag 09B6](https://stacks.math.columbia.edu/tag/09B6). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.99 of the Stacks Project, [Tag 09B6](https://stacks.math.columbia.edu/tag/09B6). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CQF, a lemma
 
 [Tag 0CQF](https://stacks.math.columbia.edu/tag/0CQF) in the Stacks Project.
 
-**`StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/DerivedLimit.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/DerivedLimit.lean#L412).
+**`StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/DerivedLimit.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/DerivedLimit.lean#L411).
 
 > **Stacks 0CQF.** Suppose a tower of rings has surjective transition maps with locally
 > nilpotent kernels, and its derived module objects are preserved by the base-change maps induced
@@ -63,7 +63,7 @@ public theorem derivedLimit_isPseudoCoherent_and_baseChange_iso
 
 [Tag 09AV](https://stacks.math.columbia.edu/tag/09AV) in the Stacks Project.
 
-**`StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_isDerivedComplete_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/AdicallyComplete.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/AdicallyComplete.lean#L257).
+**`StacksDraft.DerivedInverseLimit.derivedLimit_isPseudoCoherent_isDerivedComplete_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/AdicallyComplete.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/PseudoCoherent/AdicallyComplete.lean#L257).
 
 > **Stacks 09AV.** Let `A` be `I`-adically complete and let `Kₙ n` be a derived object over
 > `A ⧸ I ^ (n + 1)`. Suppose `Kₙ 0` is pseudo-coherent and every transition map becomes an
@@ -108,7 +108,7 @@ public theorem derivedLimit_isPseudoCoherent_isDerivedComplete_and_baseChange_is
 
 [Tag 0CQG](https://stacks.math.columbia.edu/tag/0CQG) in the Stacks Project.
 
-**`StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean#L269).
+**`StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean#L269).
 
 > Suppose a tower of rings has surjective transition maps with locally nilpotent kernels, and
 > its derived module objects are preserved by the base-change maps induced by their transitions.
@@ -156,7 +156,7 @@ public theorem derivedLimit_isPerfect_and_baseChange_iso
 
 [Tag 09AW](https://stacks.math.columbia.edu/tag/09AW) in the Stacks Project.
 
-**`StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_isDerivedComplete_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean#L339).
+**`StacksDraft.DerivedInverseLimit.derivedLimit_isPerfect_isDerivedComplete_and_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/Perfect.lean#L339).
 
 > Let `A` be `I`-adically complete and let `Kₙ n` be a derived object over
 > `A ⧸ I ^ (n + 1)`. Suppose `Kₙ 0` is perfect and every transition map becomes an isomorphism
@@ -200,7 +200,7 @@ public theorem derivedLimit_isPerfect_isDerivedComplete_and_baseChange_iso
 
 [Tag 09AU](https://stacks.math.columbia.edu/tag/09AU) in the Stacks Project.
 
-**`Stacks.DerivedLimit.AdicSystem.isDerivedComplete_and_reduction_isIso_of_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean#L1345).
+**`Stacks.DerivedLimit.AdicSystem.isDerivedComplete_and_reduction_isIso_of_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean, line 1349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean#L1349).
 
 > **Stacks 09AU.** Let `A` be Noetherian and `I` an ideal. Suppose that `F` is an inverse
 > system in `D(A)` whose `n`-th member is the restriction of an object `Kq n` of
@@ -254,15 +254,38 @@ public theorem isDerivedComplete_and_reduction_isIso_of_isDerivedLimit
 
 [Tag 0EGS](https://stacks.math.columbia.edu/tag/0EGS) in the Stacks Project.
 
-**`Stacks.InverseSystem.AdicCompletionCohomology.adicCompletion_homology_iso_limit_derivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicSystem.lean#L207).
+**`Stacks.InverseSystem.AdicCompletionCohomology.isIso_adicCompletionToLimitHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicCompletionComparison.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Limits/AdicCompletionComparison.lean#L490). The attribute's comment: “The equality `lim Hⁱ(K)/IⁿHⁱ(K) = lim Hⁱ(Kₙ)` is the statement that the canonical map induced by the reduction maps `K → Kₙ` is an isomorphism; positive powers of `I` are indexed by `n + 1`.”.
 
 > **Stacks 0EGS (Kollár--Kovács).** Let `I` be an ideal of a Noetherian ring `A` and
-> `K ∈ D(A)`. Suppose that every cohomology module of `K` is finite and, in every degree, the
-> cohomology inverse system of `K ⊗ᴸ[A] A/Iⁿ` is Mittag--Leffler. Then the inverse limit of
-> `Hⁱ(K ⊗ᴸ[A] A/Iⁿ)` is isomorphic to the `I`-adic completion of `Hⁱ(K)` for every `i`.
+> `K ∈ D(A)`, and set `Kₙ = K ⊗ᴸ[A] A/Iⁿ⁺¹`. Suppose that every cohomology module `Hⁱ(K)` is
+> finite and that, in every degree, the system `Hⁱ(Kₙ)` is Mittag--Leffler. Then for every `i` the
+> canonical map `lim Hⁱ(K)/Iⁿ⁺¹Hⁱ(K) ⟶ lim Hⁱ(Kₙ)`, induced by the reduction maps `K ⟶ Kₙ`, is an
+> isomorphism.
 
 ```lean
-public theorem adicCompletion_homology_iso_limit_derivedReduction
+public theorem isIso_adicCompletionToLimitHomology
+    (A : Type u) [CommRing A] [IsNoetherianRing A] (I : Ideal A)
+    (K : DerivedCategory (ModuleCat.{u} A))
+    (T : CochainComplex.DerivedTensor.DerivedTensorProduct A)
+    (hK : ∀ i : ℤ,
+      Module.Finite A ((DerivedCategory.homologyFunctor (ModuleCat.{u} A) i).obj K))
+    (hML : ∀ i : ℤ,
+      (((idealPowerQuotientSystem I ⋙ T.tensor.obj K) ⋙
+          DerivedCategory.homologyFunctor (ModuleCat.{u} A) i) ⋙
+        forget (ModuleCat.{u} A)).IsMittagLeffler) :
+    ∀ i : ℤ, IsIso (adicCompletionToLimitHomology I T K i)
+```
+
+**`Stacks.PseudoCoherent.AdicCompletion.isIso_adicCompletionToLimitDerivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/DerivedReductionCompletion.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/DerivedReductionCompletion.lean#L473).
+
+> **Stacks 0EGS (Kollár--Kovács), canonical form.** Let `I` be an ideal of a Noetherian ring
+> `A` and `K ∈ D(A)`, and set `Kₙ = K ⊗ᴸ[A] A/Iⁿ⁺¹`. Suppose that every cohomology module `Hⁱ(K)` is
+> finite and that, in every degree, the inverse system `Hⁱ(Kₙ)` is Mittag--Leffler. Then for every
+> `i` the canonical map `lim Hⁱ(K)/IⁿHⁱ(K) ⟶ lim Hⁱ(Kₙ)`, induced by the reduction maps
+> `K ⟶ Kₙ` (`adicCompletionToLimitDerivedReduction`), is an isomorphism.
+
+```lean
+theorem isIso_adicCompletionToLimitDerivedReduction
     (A : Type u) [CommRing A] [IsNoetherianRing A] (I : Ideal A)
     (K : DerivedCategory (ModuleCat.{u} A))
     (T : CochainComplex.DerivedTensor.DerivedTensorProduct A)
@@ -272,13 +295,7 @@ public theorem adicCompletion_homology_iso_limit_derivedReduction
       (((NoetherianAdicCompletion.idealPowerQuotientSystem I ⋙ T.tensor.obj K) ⋙
           DerivedCategory.homologyFunctor (ModuleCat.{u} A) i) ⋙
         forget (ModuleCat.{u} A)).IsMittagLeffler) :
-    ∀ i : ℤ,
-      Nonempty
-        (ModuleCat.of A
-            (AdicCompletion I
-              ((DerivedCategory.homologyFunctor (ModuleCat.{u} A) i).obj K)) ≅
-          limit ((NoetherianAdicCompletion.idealPowerQuotientSystem I ⋙ T.tensor.obj K) ⋙
-            DerivedCategory.homologyFunctor (ModuleCat.{u} A) i))
+    ∀ i : ℤ, IsIso (adicCompletionToLimitDerivedReduction I T K i)
 ```
 
 ## Depends on
@@ -288,4 +305,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.99, Tag 09B6](https://stacks.math.columbia.edu/tag/09B6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

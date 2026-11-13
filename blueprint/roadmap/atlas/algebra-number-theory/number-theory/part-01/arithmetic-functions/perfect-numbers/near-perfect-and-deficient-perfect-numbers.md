@@ -7,7 +7,7 @@ statement: formalized
 
 # Near-perfect and deficient-perfect numbers
 
-52 results, 8 proved and 44 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html).
+52 results, 8 proved and 44 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html).
 
 ## $(k,\ell)$-deficient-perfect with a given divisor
 
@@ -16,7 +16,7 @@ and $d$, the number $n$ is $[k,\ell]$-deficient-perfect with divisor $d$ when $d
 divisor of $n$ ($d \mid n$ and $d < n$) and $\sigma_k(n) + d^k = n^k + \ell n$, where
 $\sigma_k(n) = \sum_{e \mid n} e^k$ is the sum of the $k$-th powers of the divisors of $n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.KLDeficientPerfectWith`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kldeficient-perfect-with).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.KLDeficientPerfectWith`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kldeficient-perfect-with).
 
 ## $(k,\ell)$-deficient-perfect numbers
 
@@ -24,7 +24,7 @@ For natural numbers $k$, $\ell$ and $n$, write
 $\sigma_k(n) = \sum_{e \mid n} e^k$. The number $n$ is $[k,\ell]$-deficient-perfect when there is a
 divisor $d$ of $n$ with $d < n$ such that $\sigma_k(n) + d^k = n^k + \ell n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsKLDeficientPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsKLDeficientPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect).
 
 ## $(k,\ell)$-near-perfect with a given divisor
 
@@ -33,7 +33,7 @@ $d$, the number $n$ is $[k,\ell]$-near-perfect with divisor $d$ when $d$ is a pr
 $n$ ($d \mid n$ and $d < n$) and $\sigma_k(n) = n^k + d^k + \ell n$, where
 $\sigma_k(n) = \sum_{e \mid n} e^k$ is the sum of the $k$-th powers of the divisors of $n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.KLNearPerfectWith`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#klnear-perfect-with).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.KLNearPerfectWith`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#klnear-perfect-with).
 
 ## $(k,\ell)$-near-perfect numbers
 
@@ -41,7 +41,7 @@ For natural numbers $k$, $\ell$ and $n$, write
 $\sigma_k(n) = \sum_{e \mid n} e^k$. The number $n$ is $[k,\ell]$-near-perfect when there is a
 divisor $d$ of $n$ with $d < n$ such that $\sigma_k(n) = n^k + d^k + \ell n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsKLNearPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-klnear-perfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsKLNearPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-klnear-perfect).
 
 ## Deficient $F_k$-perfect numbers
 
@@ -50,7 +50,7 @@ $\sigma_k(n) = \sum_{e \mid n} e^k$. The number $n$ is deficient $F_k$-perfect w
 $[k,3]$-deficient-perfect, that is, when there is a divisor $d$ of $n$ with $d < n$ such that
 $\sigma_k(n) + d^k = n^k + 3n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsDeficientFkPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fk-perfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsDeficientFkPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fk-perfect).
 
 ## Near $F_k$-perfect numbers
 
@@ -61,7 +61,7 @@ $\sigma_k(n) = \sum_{e \mid n} e^k$ is the sum of the $k$-th powers of the divis
 
 No condition $k > 1$ is imposed here; the results that need it assume it.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsNearFkPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-near-fk-perfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsNearFkPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-near-fk-perfect).
 
 ## Deficient $F$-perfect numbers
 
@@ -70,7 +70,7 @@ $\sigma_2(n) = \sum_{e \mid n} e^2$. The number $n$ is deficient $F$-perfect whe
 $[2,3]$-deficient-perfect, that is, when there is a divisor $d$ of $n$ with $d < n$ such that
 $\sigma_2(n) + d^2 = n^2 + 3n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsDeficientFPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsDeficientFPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect).
 
 ## Near $F$-perfect numbers
 
@@ -79,7 +79,7 @@ $[2,3]$-near-perfect, that is, when some proper divisor $d$ of $n$ ($d \mid n$ a
 satisfies $\sigma_2(n) = n^2 + d^2 + 3n$, where $\sigma_2(n) = \sum_{e \mid n} e^2$ is the sum
 of the squares of the divisors of $n$.
 
-Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsNearFPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-near-fperfect).
+Formalized by `MathlibExt.NumberTheory.FkPerfectWanted.IsNearFPerfect`, a definition declared in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-near-fperfect).
 
 ## Odd primes are not $(k,\ell)$-deficient-perfect
 
@@ -90,7 +90,7 @@ natural numbers $k$ and $\ell$, $p$ is not $[k,\ell]$-deficient-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Proposition 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLDeficientPerfect_of_prime_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-kldeficient-perfect-of-prime-odd).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLDeficientPerfect_of_prime_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-kldeficient-perfect-of-prime-odd).
 
 ## $2$ is $(k,1)$-deficient-perfect
 
@@ -103,7 +103,7 @@ The divisor is $d = 1$, since $1 + 2^k + 1^k = 2^k + 1 \cdot 2$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-two).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-two).
 
 ## No prime is deficient $F$-perfect
 
@@ -114,7 +114,7 @@ $F$-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFPerfect_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fperfect-of-prime).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFPerfect_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fperfect-of-prime).
 
 ## Primes are not $(k,\ell)$-near-perfect
 
@@ -125,7 +125,7 @@ $\ell \ge 1$ and let $p$ be a prime. Then $p$ is not $[k,\ell]$-near-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Proposition 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-of-prime).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-of-prime).
 
 ## No prime power is deficient $F$-perfect or near $F$-perfect
 
@@ -139,7 +139,7 @@ sum of the squares of the divisors of $n$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.prime_pow_not_fPerfect` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#prime-pow-not-f-perfect).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.prime_pow_not_fPerfect` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#prime-pow-not-f-perfect).
 
 ## Prime powers that are $(2,\ell)$-near-perfect
 
@@ -152,7 +152,7 @@ $\sigma_2(p^a) = (p^a)^2 + d^2 + \ell p^a$ if and only if $a = 2$, $\ell = 1$ an
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_prime_pow_two_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-prime-pow-two-iff).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_prime_pow_two_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-prime-pow-two-iff).
 
 ## $(2,\ell)$-deficient-perfect prime powers (corrected)
 
@@ -167,7 +167,7 @@ $p = 2$, $a = 1$, $\ell = 1$, $d = 1$ (the number $2$ of Corollary 1).
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_two_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-prime-pow-two-imp).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_two_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-prime-pow-two-imp).
 
 ## Prime powers that are $(k,\ell)$-near-perfect
 
@@ -185,7 +185,7 @@ printed form is the case $a = k$ of the identity $\sum_{i=1}^{a-1} p^{ik} = \ell
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_prime_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-prime-pow-iff).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_prime_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-prime-pow-iff).
 
 ## $(k,\ell)$-deficient-perfect prime powers for $k \ge 2$
 
@@ -197,7 +197,7 @@ $p = 2$ and $a = 1$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-prime-pow-imp).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-kldeficient-perfect-prime-pow-imp).
 
 ## Prime powers that are $(1,\ell)$-deficient-perfect with a given divisor
 
@@ -212,7 +212,7 @@ This is the $k = 1$ part of Theorem 5 of the source.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klDeficientPerfectWith_one_prime_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-deficient-perfect-with-one-prime-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klDeficientPerfectWith_one_prime_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-deficient-perfect-with-one-prime-pow).
 
 ## Twice an odd prime is not $(k,\ell)$-near-perfect
 
@@ -223,7 +223,7 @@ with $\ell \ge 1$ and let $p$ be an odd prime. Then $2p$ is not $[k,\ell]$-near-
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-two-mul-prime).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-two-mul-prime).
 
 ## Deficient $F$-perfect numbers of the form $2^a p$
 
@@ -236,7 +236,7 @@ The number $6$ is indeed deficient $F$-perfect, with $d = 2$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isDeficientFPerfect_two_pow_mul_prime_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect-two-pow-mul-prime).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isDeficientFPerfect_two_pow_mul_prime_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect-two-pow-mul-prime).
 
 ## $2^a p$ is not $(k,\ell)$-deficient-perfect with divisor $1$ or $p$
 
@@ -251,7 +251,7 @@ divisor $p$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_klDeficientPerfectWith_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-kl-deficient-perfect-with-two-pow-mu).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_klDeficientPerfectWith_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-kl-deficient-perfect-with-two-pow-mu).
 
 ## No near $F$-perfect number of the form $2^a p$
 
@@ -264,7 +264,7 @@ divisors of $n$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_pow_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-pow-mul-prime).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_pow_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-pow-mul-prime).
 
 ## No $(2,\ell)$-near-perfect number of the form $2^a p$
 
@@ -276,7 +276,7 @@ $[2,\ell]$-near-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 10.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-two-two-pow-mul).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-klnear-perfect-two-two-pow-mul).
 
 ## For $a \ge 2$, $2^a p$ is not $(k,\ell)$-near-perfect with divisor $1$ or $p$
 
@@ -291,7 +291,7 @@ divisor $p$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 11.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_klNearPerfectWith_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-kl-near-perfect-with-two-pow-mul).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_klNearPerfectWith_two_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-kl-near-perfect-with-two-pow-mul).
 
 ## The only deficient $F$-perfect number of the form $2p^a$ is $6$
 
@@ -305,7 +305,7 @@ The divisor for $6$ is $d = 2$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 12.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isDeficientFPerfect_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect-two-mul-prime-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isDeficientFPerfect_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-deficient-fperfect-two-mul-prime-pow).
 
 ## No near $F$-perfect number of the form $2p^a$
 
@@ -318,7 +318,7 @@ divisors of $n$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-mul-prime-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-mul-prime-pow).
 
 ## The only $(1,\ell)$-near-perfect number of the form $2p^a$ is $18$
 
@@ -334,7 +334,7 @@ The divisor for $18$ is $d = 3$. This is part 1 of Theorem 14 of the source.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 14.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLNearPerfect_one_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-klnear-perfect-one-two-mul-prime-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.isKLNearPerfect_one_two_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#is-klnear-perfect-one-two-mul-prime-pow).
 
 ## A divisibility condition for near-perfect numbers $2p^a$
 
@@ -350,7 +350,7 @@ This is part 2 of Theorem 14 of the source.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 14.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_two_mul_prime_pow_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-two-mul-prime-pow-i).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_two_mul_prime_pow_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#kl-near-perfect-with-two-mul-prime-pow-i).
 
 ## No near $F$-perfect number of the form $2^a p^b$ with $b$ even
 
@@ -363,7 +363,7 @@ $\sigma_2(n)$ is the sum of the squares of the divisors of $n$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 15.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_pow_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-pow-mul-prime-p).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_pow_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fperfect-two-pow-mul-prime-p).
 
 ## No deficient $F_k$-perfect number $p_1^a p_2$ with distinct odd primes
 
@@ -375,7 +375,7 @@ $p_1^a p_2$ is not deficient $F_k$-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 16.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-prime-pow-mu).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-prime-pow-mu).
 
 ## No near $F_k$-perfect number of the form $p_1^a p_2$
 
@@ -386,7 +386,7 @@ distinct odd primes and let $a$ be a natural number. Then $p_1^a p_2$ is not nea
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 17.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-prime-pow-mul).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-prime-pow-mul).
 
 ## No deficient $F_k$-perfect number of the form $2p^a$ for $k > 2$
 
@@ -397,7 +397,7 @@ an odd prime and let $a$ be a natural number. Then $2p^a$ is not deficient $F_k$
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 18.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_two_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-two-mul-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_two_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-two-mul-pow).
 
 ## No deficient $F_k$-perfect number $p_1^a p_2^b$ with $a + b$ odd or $a, b$ both odd
 
@@ -411,7 +411,7 @@ $\sigma_k(n) + d^k = n^k + 3n$, where $\sigma_k(n) = \sum_{e \mid n} e^k$.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 19.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-pow-mul-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-pow-mul-pow).
 
 ## No near $F_k$-perfect number $p_1^a p_2^b$ with $a + b$ odd or $a, b$ both odd
 
@@ -423,7 +423,7 @@ $a + b$ is odd or both $a$ and $b$ are odd. Then $p_1^a p_2^b$ is not near $F_k$
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 20.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-pow-mul-pow).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-pow-mul-pow).
 
 ## No product of distinct odd primes is deficient $F_k$-perfect
 
@@ -434,7 +434,7 @@ finite set of odd primes. Then $\prod_{p \in s} p$ is not deficient $F_k$-perfec
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 21.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-prod-primes).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-deficient-fk-perfect-prod-primes).
 
 ## No product of distinct odd primes is near $F_k$-perfect
 
@@ -445,7 +445,7 @@ finite set of odd primes. Then $\prod_{p \in s} p$ is not near $F_k$-perfect.
 
 - Flora Jeba S, Anirban Roy, Pankaj Jyoti Mahanta, and Manjil P. Saikia, "On Near `F_k`-Perfect and Deficient `F_k`-Perfect Numbers", Theorem 22.
 
-Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FkPerfectWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-prod-primes).
+Stated but not proved: `MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/FkPerfectWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FkPerfectWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-is-near-fk-perfect-prod-primes).
 
 ## $2$-near perfect numbers of the form $2^k p$
 
@@ -465,7 +465,7 @@ printed ($k = 3$, $a = b = 1$ gives the prime $p = 11$ in situation 2, but $d_1 
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-cases).
+Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-cases).
 
 ## $2$-near perfect numbers of the form $2^k p^2$
 
@@ -478,7 +478,7 @@ $2$-near perfect with omitted divisors $d_1, d_2$), then $n$ is $18$, $36$ or $2
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq).
+Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq).
 
 ## Square values of the discriminant $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$
 
@@ -490,7 +490,7 @@ integer, then $k = a = 1$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.eq_one_of_isSquare_discriminant` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#eq-one-of-is-square-discriminant).
+Stated but not proved: `MetaMathlibExt.eq_one_of_isSquare_discriminant` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#eq-one-of-is-square-discriminant).
 
 ## Divisibility constraints on odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$
 
@@ -503,7 +503,7 @@ divides $2^k - 1$ and $p + 1$ divides $2^b - 2$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.dvd_of_two_near_perfect_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#dvd-of-two-near-perfect-eq-six).
+Stated but not proved: `MetaMathlibExt.dvd_of_two_near_perfect_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#dvd-of-two-near-perfect-eq-six).
 
 ## No odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$ for $2 \le b \le k - 1$
 
@@ -515,7 +515,7 @@ let $p$ be an odd natural number. Then $(2^{k+1} - 1)(p^2 + p + 1) \ne 2^{k+1} p
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.not_two_near_perfect_eq_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-two-near-perfect-eq-seven).
+Stated but not proved: `MetaMathlibExt.not_two_near_perfect_eq_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-two-near-perfect-eq-seven).
 
 ## Sum and parity of the omitted divisors of a $2$-near perfect $2^k p^2$
 
@@ -528,7 +528,7 @@ $d_1 + d_2 = -p^2 + (2^{k+1} - 1) p + (2^{k+1} - 1)$, and $d_1$ and $d_2$ have o
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.omitted_divisors_sum_two_pow_mul_prime_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#omitted-divisors-sum-two-pow-mul-prime-s).
+Stated but not proved: `MetaMathlibExt.omitted_divisors_sum_two_pow_mul_prime_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#omitted-divisors-sum-two-pow-mul-prime-s).
 
 ## Odd solutions $p$ of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p^2 + 1$ divide $2^k - 1$
 
@@ -540,7 +540,7 @@ such that $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p^2 + 1$. Then $p$ div
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.dvd_of_two_near_perfect_eq_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#dvd-of-two-near-perfect-eq-twelve).
+Stated but not proved: `MetaMathlibExt.dvd_of_two_near_perfect_eq_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#dvd-of-two-near-perfect-eq-twelve).
 
 ## Odd solutions $p$ of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p^2 + 1$ satisfy $p + 1 \mid 2^b + 2$
 
@@ -553,7 +553,7 @@ $p + 1$ divides $2^b + 2$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.succ_dvd_of_two_near_perfect_eq_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#succ-dvd-of-two-near-perfect-eq-twelve).
+Stated but not proved: `MetaMathlibExt.succ_dvd_of_two_near_perfect_eq_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#succ-dvd-of-two-near-perfect-eq-twelve).
 
 ## Strongly $2$-near perfect numbers of the form $2^k p$
 
@@ -567,7 +567,7 @@ that is, $p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#strong-two-near-perfect-two-pow-mul-prim).
+Stated but not proved: `MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#strong-two-near-perfect-two-pow-mul-prim).
 
 ## Prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$ satisfy $k < 2a$
 
@@ -583,7 +583,7 @@ This follows from the equation for $p$ by taking $d = 2^a$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.lt_two_mul_of_strong_two_near_perfect_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#lt-two-mul-of-strong-two-near-perfect-fo).
+Stated but not proved: `MetaMathlibExt.lt_two_mul_of_strong_two_near_perfect_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#lt-two-mul-of-strong-two-near-perfect-fo).
 
 ## If $b \ge 1$ and $2^b + 1$ divides $3 \cdot 2^a + 1$, then $b = 2$
 
@@ -597,7 +597,7 @@ assumed here. The hypothesis is needed: for $b = 0$, $2^0 + 1 = 2$ divides $3 \c
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.eq_two_of_two_pow_add_one_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#eq-two-of-two-pow-add-one-dvd).
+Stated but not proved: `MetaMathlibExt.eq_two_of_two_pow_add_one_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#eq-two-of-two-pow-add-one-dvd).
 
 ## $2$-near perfect $2^k p^2$ whose omitted divisors are powers of $2$
 
@@ -612,7 +612,7 @@ $1$ and $2$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca).
+Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca).
 
 ## No $2$-near perfect $2^k p^2$ with omitted divisors $2^i$ and $p$ or $p^2$
 
@@ -625,7 +625,7 @@ function; that is, $n$ is not $2$-near perfect with omitted divisors $2^i$ and $
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.not_two_near_perfect_two_pow_mul_prime_sq_case_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-two-near-perfect-two-pow-mul-prime-s).
+Stated but not proved: `MetaMathlibExt.not_two_near_perfect_two_pow_mul_prime_sq_case_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#not-two-near-perfect-two-pow-mul-prime-s).
 
 ## $2$-near perfect $2^k p^2$ with omitted divisors $1$ and $2^b p^2$
 
@@ -638,7 +638,7 @@ $2$-near perfect with omitted divisors $1$ and $2^b p^2$), then $n = 36$ and $2^
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca-2).
+Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca-2).
 
 ## $2$-near perfect $2^k p^2$ with omitted divisors $p^m$ and $2^b p^j$
 
@@ -652,7 +652,7 @@ $2^b p^j$), then $n = 200$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca-3).
+Stated but not proved: `MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#two-near-perfect-two-pow-mul-prime-sq-ca-3).
 
 ## Classification of prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$
 
@@ -669,7 +669,7 @@ That hypothesis follows from the equation for $p$ by taking $d = 2^a$.
 
 - Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#strong-two-near-perfect-two-pow-mul-prim-2).
+Stated but not proved: `MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoNearPerfectWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoNearPerfectWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html#strong-two-near-perfect-two-pow-mul-prim-2).
 
 ## Depends on
 
@@ -678,4 +678,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Near-perfect and deficient-perfect numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/near-perfect-and-deficient-perfect-numbers)

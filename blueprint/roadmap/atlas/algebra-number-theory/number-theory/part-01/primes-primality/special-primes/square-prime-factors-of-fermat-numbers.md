@@ -7,7 +7,7 @@ statement: formalized
 
 # Square prime factors of Fermat numbers
 
-11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html).
+11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html).
 
 ## Warren–Bray congruence for prime divisors of Fermat numbers
 
@@ -19,7 +19,7 @@ $2^{(p-1)/2} \equiv 1 \pmod{F_n}$. This result is due to Warren and Bray (1967).
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 2, citing Warren and Bray.
 
-Stated but not proved: `MetaMathlibExt.two_pow_half_modEq_one_fermatNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#two-pow-half-mod-eq-one-fermat-number).
+Stated but not proved: `MetaMathlibExt.two_pow_half_modEq_one_fermatNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#two-pow-half-mod-eq-one-fermat-number).
 
 ## Squared prime factors of Fermat numbers
 
@@ -31,7 +31,7 @@ $2^{p-1} \equiv 1 \pmod{p^2}$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 3, citing Křížek, Luca, and Somer.
 
-Stated but not proved: `MetaMathlibExt.sq_dvd_fermatNumber_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-fermat-number-iff).
+Stated but not proved: `MetaMathlibExt.sq_dvd_fermatNumber_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-fermat-number-iff).
 
 ## Squared prime factors of Fermat numbers via Wieferich primes and orders
 
@@ -48,7 +48,7 @@ of $2$ modulo $p$ is $2^{n+1}$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 5, Equation (11).
 
-Stated but not proved: `MetaMathlibExt.sq_dvd_fermatNumber_iff_wieferich_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-fermat-number-iff-wieferich-order).
+Stated but not proved: `MetaMathlibExt.sq_dvd_fermatNumber_iff_wieferich_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-fermat-number-iff-wieferich-order).
 
 ## Greatest common divisors of generalized Fermat numbers
 
@@ -67,7 +67,7 @@ $\gcd(4, 4) = 4$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.gcd_pow_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#gcd-pow-pow-add-one).
+Stated but not proved: `MetaMathlibExt.gcd_pow_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#gcd-pow-pow-add-one).
 
 ## Monotonicity of the number of prime factors of generalized Fermat numbers
 
@@ -83,7 +83,7 @@ $\varphi_n(2, 2)$ and its list of values of $\varphi_n(2, 2)$ are not stated her
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.monotone_cardFactors_pow_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#monotone-card-factors-pow-pow-add-one).
+Stated but not proved: `MetaMathlibExt.monotone_cardFactors_pow_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#monotone-card-factors-pow-pow-add-one).
 
 ## Smaller iterated powers are not congruent to one
 
@@ -95,7 +95,7 @@ natural number $t < n$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.not_pow_pow_modEq_one_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#not-pow-pow-mod-eq-one-of-lt).
+Stated but not proved: `MetaMathlibExt.not_pow_pow_modEq_one_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#not-pow-pow-mod-eq-one-of-lt).
 
 ## Squared prime factors of generalized Fermat numbers
 
@@ -110,7 +110,7 @@ $a^{p-1} \equiv 1 \pmod{p^2}$ and $\operatorname{ord}_p(a) = 2b^n$, then $p^2$ d
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sq_dvd_pow_pow_add_one_wieferich` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-pow-pow-add-one-wieferich).
+Stated but not proved: `MetaMathlibExt.sq_dvd_pow_pow_add_one_wieferich` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-pow-pow-add-one-wieferich).
 
 ## Squared prime factors of $a^{2^n} + 1$
 
@@ -126,7 +126,7 @@ The source assumes $a \ge 2$; for $a = 1$ both sides are false.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sq_dvd_pow_two_pow_add_one_iff_wieferich` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-pow-two-pow-add-one-iff-wieferich).
+Stated but not proved: `MetaMathlibExt.sq_dvd_pow_two_pow_add_one_iff_wieferich` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#sq-dvd-pow-two-pow-add-one-iff-wieferich).
 
 ## Wieferich primes to base $a$ via multiplicative orders
 
@@ -142,7 +142,7 @@ The source assumes $a \ge 2$; both sides also hold for $a = 1$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Lemma 1 (iii).
 
-Stated but not proved: `MetaMathlibExt.pow_sub_one_modEq_one_sq_iff_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#pow-sub-one-mod-eq-one-sq-iff-order-of-e).
+Stated but not proved: `MetaMathlibExt.pow_sub_one_modEq_one_sq_iff_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#pow-sub-one-mod-eq-one-sq-iff-order-of-e).
 
 ## Divisibility of later generalized Fermat numbers
 
@@ -159,7 +159,7 @@ $k = 1$, $2$ divides both $F_0(3, 2) = 4$ and $F_1(3, 2) = 10$.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.dvd_pow_pow_add_one_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#dvd-pow-pow-add-one-shift).
+Stated but not proved: `MetaMathlibExt.dvd_pow_pow_add_one_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#dvd-pow-pow-add-one-shift).
 
 ## Start of the period of generalized Fermat numbers modulo the square of a prime
 
@@ -178,7 +178,7 @@ the index of the last term of the pre-period when $b$ is even.
 
 - Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.isLeast_periodic_start_pow_pow_add_one_mod_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#is-least-periodic-start-pow-pow-add-one).
+Stated but not proved: `MetaMathlibExt.isLeast_periodic_start_pow_pow_add_one_mod_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/JakobczykFermatWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JakobczykFermatWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html#is-least-periodic-start-pow-pow-add-one).
 
 ## Depends on
 
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Square prime factors of Fermat numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/special-primes/square-prime-factors-of-fermat-numbers)

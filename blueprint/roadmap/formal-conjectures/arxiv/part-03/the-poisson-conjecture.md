@@ -44,7 +44,7 @@ statement: formalized
 > so that the canonical bracket reads $\{X_i, X_{i+n}\} = 1$; see
 > `MvPolynomial.poissonBracket`.
 
-*Quoted from [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 1 open and 5 solved. It also has 3 test statements and 2 API statements, counted here but not shown.
 
@@ -62,7 +62,7 @@ Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html
 theorem poisson_conjecture : ¬ ∀ n, PoissonConjectureFor K n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L124).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L124).
 
 ## `Arxiv.«math.0608009».poisson_conjecture.variants.dimension_one`
 
@@ -77,7 +77,7 @@ Open: stated without proof.
 theorem poisson_conjecture.variants.dimension_one : PoissonConjectureFor K 1
 ```
 
-Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L134).
+Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L134).
 
 ## `Arxiv.«math.0608009».poisson_conjecture.variants.dimension_two`
 
@@ -101,7 +101,7 @@ Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html
 theorem poisson_conjecture.variants.dimension_two : ¬ PoissonConjectureFor K 2
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L154).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L154).
 
 ## `Arxiv.«math.0608009».poisson_conjecture.variants.dimension_three`
 
@@ -119,7 +119,7 @@ Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html
 theorem poisson_conjecture.variants.dimension_three : ¬ PoissonConjectureFor K 3
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L168).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L168).
 
 ## `Arxiv.«math.0608009».poisson_conjecture.variants.dimension_ge_two`
 
@@ -133,7 +133,7 @@ theorem poisson_conjecture.variants.dimension_ge_two (n : ℕ) (hn : 2 ≤ n) :
     ¬ PoissonConjectureFor K n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L177).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L177).
 
 ## `Arxiv.«math.0608009».poisson_conjecture.variants.jacobian_implication`
 
@@ -147,7 +147,7 @@ theorem poisson_conjecture.variants.jacobian_implication (n : ℕ)
     (h : JacobianConjectureProp K (Fin (2 * n))) : PoissonConjectureFor K n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 187](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L187).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean, line 187](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean#L187).
 
 ## Depends on
 
@@ -155,5 +155,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean)
+- [FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean)
 - [arxiv/math.0608009](https://arxiv.org/abs/math/0608009)

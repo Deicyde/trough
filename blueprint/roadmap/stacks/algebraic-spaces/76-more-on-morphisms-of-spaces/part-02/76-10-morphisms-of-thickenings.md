@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.10 Morphisms of thickenings
 
-Section 76.10 of the Stacks Project, [Tag 0CG4](https://stacks.math.columbia.edu/tag/0CG4). 3 tags here are carried by 44 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.10 of the Stacks Project, [Tag 0CG4](https://stacks.math.columbia.edu/tag/0CG4). 3 tags here are carried by 44 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09ZY, a lemma
 
 [Tag 09ZY](https://stacks.math.columbia.edu/tag/09ZY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAffineHom_iff_isAffineHom_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L309). The attribute's comment: “part (1): affine”.
+**`AlgebraicGeometry.Space.isAffineHom_iff_isAffineHom_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L309). The attribute's comment: “part (1): affine”.
 
 > **Stacks 09ZY, part (1).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is affine if and only if the morphism on the ambient spaces
@@ -27,7 +27,7 @@ theorem isAffineHom_iff_isAffineHom_of_isThickening_unconditional
     IsAffineHom B S hS f.left ↔ IsAffineHom B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.isIntegralHom_iff_isIntegralHom_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L320). The attribute's comment: “part (5): integral”.
+**`AlgebraicGeometry.Space.isIntegralHom_iff_isIntegralHom_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L320). The attribute's comment: “part (5): integral”.
 
 > **Stacks 09ZY, part (5).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is integral if and only if the morphism on the ambient spaces
@@ -40,7 +40,7 @@ theorem isIntegralHom_iff_isIntegralHom_of_isThickening_unconditional
     IsIntegralHom B S hS f.left ↔ IsIntegralHom B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_and_isQuasiSeparated_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L331). The attribute's comment: “part (6): separated, and quasi-separated”.
+**`AlgebraicGeometry.Space.isSeparated_iff_and_isQuasiSeparated_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L331). The attribute's comment: “part (6): separated, and quasi-separated”.
 
 > **Stacks 09ZY, part (6).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is separated if and only if the morphism on the ambient spaces
@@ -54,7 +54,7 @@ theorem isSeparated_iff_and_isQuasiSeparated_iff_of_isThickening
       (IsQuasiSeparated B S hS f.left ↔ IsQuasiSeparated B S hS f.right)
 ```
 
-**`AlgebraicGeometry.Space.universallyInjective_iff_universallyInjective_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L344). The attribute's comment: “part (7): universally injective”.
+**`AlgebraicGeometry.Space.universallyInjective_iff_universallyInjective_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L344). The attribute's comment: “part (7): universally injective”.
 
 > **Stacks 09ZY, part (7).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is universally injective if and only if the morphism on the
@@ -67,7 +67,7 @@ theorem universallyInjective_iff_universallyInjective_of_isThickening
     UniversallyInjective B S hS f.left ↔ UniversallyInjective B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.universallyOpen_iff_universallyOpen_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L355). The attribute's comment: “part (8): universally open”.
+**`AlgebraicGeometry.Space.universallyOpen_iff_universallyOpen_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L355). The attribute's comment: “part (8): universally open”.
 
 > **Stacks 09ZY, part (8).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is universally open if and only if the morphism on the ambient
@@ -80,7 +80,7 @@ theorem universallyOpen_iff_universallyOpen_of_isThickening
     UniversallyOpen B S hS f.left ↔ UniversallyOpen B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_iff_relativelyRepresentable_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L366). The attribute's comment: “part (9): representable”.
+**`AlgebraicGeometry.Space.relativelyRepresentable_iff_relativelyRepresentable_of_isThickening_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismProperties.lean#L366). The attribute's comment: “part (9): representable”.
 
 > **Stacks 09ZY, part (9).** In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is representable if and only if the morphism on the ambient
@@ -93,7 +93,7 @@ theorem relativelyRepresentable_iff_relativelyRepresentable_of_isThickening_unco
     yoneda.relativelyRepresentable f.left ↔ yoneda.relativelyRepresentable f.right
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_iff_isSurjective_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Morphisms.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Morphisms.lean#L53). The attribute's comment: “surjective”.
+**`AlgebraicGeometry.Space.isSurjective_iff_isSurjective_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Morphisms.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Morphisms.lean#L53). The attribute's comment: “surjective”.
 
 > In a morphism of thickenings of algebraic spaces over `S` the
 > map on the closed subspaces is surjective if and only if the map on the ambient spaces is.
@@ -106,7 +106,7 @@ theorem isSurjective_iff_isSurjective_of_isThickening
     IsSurjective B S hS f.left ↔ IsSurjective B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_iff_isQuasiSeparated_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/QuasiSeparatedTransfer.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/QuasiSeparatedTransfer.lean#L152). The attribute's comment: “part (6): the quasi-separated half”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_iff_isQuasiSeparated_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/QuasiSeparatedTransfer.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/QuasiSeparatedTransfer.lean#L153). The attribute's comment: “part (6): the quasi-separated half”.
 
 > **Stacks 09ZY, the quasi-separated half of part (6).** In a morphism of thickenings of
 > algebraic spaces over `S` the morphism on the closed subspaces is quasi-separated if and only if
@@ -123,7 +123,7 @@ theorem isQuasiSeparated_iff_isQuasiSeparated_of_isThickening
     IsQuasiSeparated B S hS f.left ↔ IsQuasiSeparated B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_iff_universallyClosed_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L223). The attribute's comment: “part (4): universally closed”.
+**`AlgebraicGeometry.Space.universallyClosed_iff_universallyClosed_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L223). The attribute's comment: “part (4): universally closed”.
 
 > In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is universally closed if and only if the morphism on the
@@ -136,7 +136,7 @@ theorem universallyClosed_iff_universallyClosed_of_isThickening
     UniversallyClosed B S hS f.left ↔ UniversallyClosed B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_iff_isQuasiCompact_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L234). The attribute's comment: “part (3): quasi-compact”.
+**`AlgebraicGeometry.Space.isQuasiCompact_iff_isQuasiCompact_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L234). The attribute's comment: “part (3): quasi-compact”.
 
 > In a morphism of thickenings of algebraic spaces over `S` the
 > morphism on the closed subspaces is quasi-compact if and only if the morphism on the ambient
@@ -149,7 +149,7 @@ theorem isQuasiCompact_iff_isQuasiCompact_of_isThickening
     IsQuasiCompact B S hS f.left ↔ IsQuasiCompact B S hS f.right
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_isSeparated_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L244). The attribute's comment: “part (6): the separated half only, not quasi-separated”.
+**`AlgebraicGeometry.Space.isSeparated_iff_isSeparated_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SeparatedAndClosed.lean#L244). The attribute's comment: “part (6): the separated half only, not quasi-separated”.
 
 > In a morphism of thickenings of algebraic spaces over `S` the morphism on the closed
 > subspaces is separated if and only if the morphism on the ambient spaces is.
@@ -165,7 +165,7 @@ theorem isSeparated_iff_isSeparated_of_isThickening
 
 [Tag 09ZZ](https://stacks.math.columbia.edu/tag/09ZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/CartesianFiniteOrderMorphism.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/CartesianFiniteOrderMorphism.lean#L281). The attribute's comment: “part (2), locally of finite type; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/CartesianFiniteOrderMorphism.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/CartesianFiniteOrderMorphism.lean#L281). The attribute's comment: “part (2), locally of finite type; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (2).** Local finite type is invariant under a cartesian morphism of
 > thickenings of algebraic spaces whose target thickening is of finite order: the map between the
@@ -180,7 +180,7 @@ theorem isLocallyOfFiniteType_iff (M : CartesianFiniteOrderMorphismOfThickenings
     IsLocallyOfFiniteType B S hS M.f ↔ IsLocallyOfFiniteType B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean#L146). The attribute's comment: “part (3), locally quasi-finite; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean#L146). The attribute's comment: “part (3), locally quasi-finite; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (3).** Local quasi-finiteness is invariant under a cartesian morphism of
 > thickenings of algebraic spaces whose target thickening is of finite order: the map between the
@@ -195,7 +195,7 @@ theorem isLocallyQuasiFinite_iff (M : CartesianFiniteOrderMorphismOfThickenings 
     IsLocallyQuasiFinite B S hS M.f ↔ IsLocallyQuasiFinite B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean#L168). The attribute's comment: “part (6), unramified; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismEtaleLocal.lean#L168). The attribute's comment: “part (6), unramified; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (6).** Unramifiedness is invariant under a cartesian morphism of
 > thickenings of algebraic spaces whose target thickening is of finite order: the map between the
@@ -210,7 +210,7 @@ theorem isUnramified_iff (M : CartesianFiniteOrderMorphismOfThickenings B S hS) 
     IsUnramified B S hS M.f ↔ IsUnramified B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L248). The attribute's comment: “part (7), proper; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L249). The attribute's comment: “part (7), proper; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (7).** Properness is invariant under a cartesian morphism of thickenings
 > of algebraic spaces whose target thickening is of finite order.
@@ -224,7 +224,7 @@ theorem isUnramified_iff (M : CartesianFiniteOrderMorphismOfThickenings B S hS) 
 theorem isProper_iff : IsProper B S hS M.f ↔ IsProper B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L272). The attribute's comment: “part (8), finite; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L273). The attribute's comment: “part (8), finite; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (8).** Finiteness is invariant under a cartesian morphism of thickenings
 > of algebraic spaces whose target thickening is of finite order.
@@ -237,7 +237,7 @@ theorem isProper_iff : IsProper B S hS M.f ↔ IsProper B S hS M.f'
 theorem isFinite_iff : IsFinite B S hS M.f ↔ IsFinite B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L313). The attribute's comment: “part (1), closed immersion; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L314). The attribute's comment: “part (1), closed immersion; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (1).** Being a closed immersion is invariant under a cartesian morphism
 > of thickenings of algebraic spaces whose target thickening is of finite order.
@@ -255,7 +255,7 @@ theorem isClosedImmersion_iff :
     IsClosedImmersion B S hS M.f ↔ IsClosedImmersion B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L419). The attribute's comment: “part (10), immersion; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismImmersions.lean#L420). The attribute's comment: “part (10), immersion; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (10).** Being an immersion is invariant under a cartesian morphism of
 > thickenings of algebraic spaces whose target thickening is of finite order.
@@ -270,7 +270,7 @@ theorem isClosedImmersion_iff :
 theorem isImmersion_iff : IsImmersion B S hS M.f ↔ IsImmersion B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismMonomorphism.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismMonomorphism.lean#L299). The attribute's comment: “part (9), monomorphism; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismMonomorphism.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismMonomorphism.lean#L300). The attribute's comment: “part (9), monomorphism; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (9).** Being a monomorphism is invariant under a cartesian morphism of
 > thickenings of algebraic spaces whose target thickening is of finite order: the map between the
@@ -286,7 +286,7 @@ theorem isImmersion_iff : IsImmersion B S hS M.f ↔ IsImmersion B S hS M.f'
 theorem mono_iff : Mono M.f ↔ Mono M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismRelativeDimension.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismRelativeDimension.lean#L139). The attribute's comment: “part (4), locally of finite type of relative dimension d, stated as the conjunction of local finite type and relative dimension d which is what that property means; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismRelativeDimension.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FiniteOrderMorphismRelativeDimension.lean#L139). The attribute's comment: “part (4), locally of finite type of relative dimension d, stated as the conjunction of local finite type and relative dimension d which is what that property means; the finite-order hypothesis is on the TARGET thickening Y ⊆ Y', which is strictly stronger than the source hypothesis X ⊆ X' in the tag's text, so this is a weaker theorem than the tag announces. It is the hypothesis the tag's own proof uses: it reduces to Tag 09ZW, which puts finite order on the target, and says 'by induction on the order of the thickening we may assume that Y ⊆ Y' is a first order thickening'. Cartesianness plus target finite order gives source finite order by Tag 09ZX, but not conversely”.
 
 > **Stacks 09ZZ, part (4).** Being locally of finite type of relative dimension `d` is
 > invariant under a cartesian morphism of thickenings of algebraic spaces whose target thickening
@@ -307,7 +307,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff
       (IsLocallyOfFiniteType B S hS M.f' ∧ HasRelativeDimension d B S hS M.f')
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L324). The attribute's comment: “part (2): f is locally of finite type iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L324). The attribute's comment: “part (2): f is locally of finite type iff f' is”.
 
 > **Stacks 09ZZ, part (2).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is locally of finite
@@ -318,7 +318,7 @@ theorem isLocallyOfFiniteType_iff (M : CartesianSourceFiniteOrderMorphismOfThick
     IsLocallyOfFiniteType B S hS M.f ↔ IsLocallyOfFiniteType B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L335). The attribute's comment: “part (3): f is locally quasi-finite iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L335). The attribute's comment: “part (3): f is locally quasi-finite iff f' is”.
 
 > **Stacks 09ZZ, part (3).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is locally quasi-finite
@@ -329,7 +329,7 @@ theorem isLocallyQuasiFinite_iff (M : CartesianSourceFiniteOrderMorphismOfThicke
     IsLocallyQuasiFinite B S hS M.f ↔ IsLocallyQuasiFinite B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L346). The attribute's comment: “part (6): f is unramified iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L346). The attribute's comment: “part (6): f is unramified iff f' is”.
 
 > **Stacks 09ZZ, part (6).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is unramified exactly
@@ -340,7 +340,7 @@ theorem isUnramified_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B 
     IsUnramified B S hS M.f ↔ IsUnramified B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L376). The attribute's comment: “part (4): f is locally of finite type of relative dimension d iff f' is, the property being the conjunction of local finite type and relative dimension d”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L376). The attribute's comment: “part (4): f is locally of finite type of relative dimension d iff f' is, the property being the conjunction of local finite type and relative dimension d”.
 
 > **Stacks 09ZZ, part (4).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is locally of finite
@@ -353,7 +353,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff
       (IsLocallyOfFiniteType B S hS M.f' ∧ HasRelativeDimension d B S hS M.f')
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isZero_sheafOfDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L413). The attribute's comment: “part (5): Ω\_\{X/Y} = 0 iff Ω\_\{X'/Y'} = 0, for the sheaves of differentials of Tag 04CT”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isZero_sheafOfDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L413). The attribute's comment: “part (5): Ω\_\{X/Y} = 0 iff Ω\_\{X'/Y'} = 0, for the sheaves of differentials of Tag 04CT”.
 
 > **Stacks 09ZZ, part (5).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the sheaf of differentials `Ω_{X/Y}` of the map between
@@ -370,7 +370,7 @@ theorem isZero_sheafOfDifferentials_iff
       IsZero (sheafOfDifferentials B S hS M.ambientHom)
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L98). The attribute's comment: “part (7): f is proper iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L98). The attribute's comment: “part (7): f is proper iff f' is”.
 
 > **Stacks 09ZZ, part (7).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is proper exactly when
@@ -381,7 +381,7 @@ theorem isProper_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B S hS
     IsProper B S hS M.f ↔ IsProper B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L114). The attribute's comment: “part (8): f is finite iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L114). The attribute's comment: “part (8): f is finite iff f' is”.
 
 > **Stacks 09ZZ, part (8).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is finite exactly when
@@ -392,7 +392,7 @@ theorem isFinite_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B S hS
     IsFinite B S hS M.f ↔ IsFinite B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L140). The attribute's comment: “part (1): f is a closed immersion iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L140). The attribute's comment: “part (1): f is a closed immersion iff f' is”.
 
 > **Stacks 09ZZ, part (1).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is a closed immersion
@@ -408,7 +408,7 @@ theorem isClosedImmersion_iff (M : CartesianSourceFiniteOrderMorphismOfThickenin
     IsClosedImmersion B S hS M.f ↔ IsClosedImmersion B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L226). The attribute's comment: “part (10): f is an immersion iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L226). The attribute's comment: “part (10): f is an immersion iff f' is”.
 
 > **Stacks 09ZZ, part (10).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is an immersion exactly
@@ -423,7 +423,7 @@ theorem isImmersion_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B S
     IsImmersion B S hS M.f ↔ IsImmersion B S hS M.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L304). The attribute's comment: “part (9): f is a monomorphism iff f' is”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphismImmersions.lean#L304). The attribute's comment: “part (9): f is a monomorphism iff f' is”.
 
 > **Stacks 09ZZ, part (9).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the map between the smaller spaces is a monomorphism
@@ -442,7 +442,7 @@ theorem mono_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B S hS) :
 
 [Tag 0BPJ](https://stacks.math.columbia.edu/tag/0BPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L110). The attribute's comment: “locally\_quasi\_finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L110). The attribute's comment: “locally\_quasi\_finite”.
 
 > **Stacks 0BPJ, part (1).** Being locally quasi-finite is invariant under a cartesian
 > morphism of thickenings of algebraic spaces whose two component maps are locally of finite
@@ -454,7 +454,7 @@ theorem isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings
     IsLocallyQuasiFinite B S hS T.f ↔ IsLocallyQuasiFinite B S hS T.f'
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L125). The attribute's comment: “vanishing\_differentials”.
+**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L125). The attribute's comment: “vanishing\_differentials”.
 
 > **Stacks 0BPJ, part (4).** In a cartesian morphism of thickenings of algebraic spaces whose
 > two component maps are locally of finite type, the module of relative differentials of `f`
@@ -473,7 +473,7 @@ theorem formallyUnramifiedCharts_iff_of_cartesianMorphismOfThickenings
         (@_root_.AlgebraicGeometry.FormallyUnramified.{u} : MorphismProperty Scheme.{u}) T.f'
 ```
 
-**`AlgebraicGeometry.Space.locallyQuasiFiniteProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean#L66). The attribute's comment: “part (1): locally quasi-finite, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.locallyQuasiFiniteProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean#L66). The attribute's comment: “part (1): locally quasi-finite, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (1), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -492,7 +492,7 @@ theorem locallyQuasiFiniteProperty_iff_of_cartesianSquareOfThickeningHoms
     locallyQuasiFiniteProperty B S hS f ↔ locallyQuasiFiniteProperty B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean#L85). The attribute's comment: “part (4): vanishing relative differentials, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalPropertiesPointTest.lean#L85). The attribute's comment: “part (4): vanishing relative differentials, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (4), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -516,7 +516,7 @@ theorem formallyUnramifiedCharts_iff_of_cartesianSquareOfThickeningHoms
           MorphismProperty Scheme.{u}) f'.hom
 ```
 
-**`AlgebraicGeometry.Space.properProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean#L60). The attribute's comment: “part (8): proper, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.properProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean#L60). The attribute's comment: “part (8): proper, at the Section 04XB point test”.
 
 > Let `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over
 > `S` with `f` and `f'` locally of finite type and `X = Y ×_{Y'} X'`. Then `f` is proper if and
@@ -530,7 +530,7 @@ theorem properProperty_iff_of_cartesianSquareOfThickeningHoms
     properProperty B S hS f ↔ properProperty B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.finiteMorphismProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean#L81). The attribute's comment: “part (2): finite, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.finiteMorphismProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/ProperFinite.lean#L81). The attribute's comment: “part (2): finite, at the Section 04XB point test”.
 
 > Let `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over
 > `S` with `f` and `f'` locally of finite type and `X = Y ×_{Y'} X'`. Then `f` is finite if and
@@ -544,7 +544,7 @@ theorem finiteMorphismProperty_iff_of_cartesianSquareOfThickeningHoms
     finiteMorphismProperty B S hS f ↔ finiteMorphismProperty B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L102). The attribute's comment: “part (8): f is proper iff f' is”.
+**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L103). The attribute's comment: “part (8): f is proper iff f' is”.
 
 > **Stacks 0BPJ, part (8).** In a cartesian morphism of thickenings of algebraic spaces whose
 > two component maps are locally of finite type, the map between the smaller spaces is proper
@@ -555,7 +555,7 @@ theorem isProper_iff (T : CartesianLocallyFiniteTypeMorphismOfThickenings B S hS
     IsProper B S hS T.f ↔ IsProper B S hS T.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L118). The attribute's comment: “part (2): f is finite iff f' is”.
+**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L119). The attribute's comment: “part (2): f is finite iff f' is”.
 
 > **Stacks 0BPJ, part (2).** In a cartesian morphism of thickenings of algebraic spaces whose
 > two component maps are locally of finite type, the map between the smaller spaces is finite
@@ -566,7 +566,7 @@ theorem isFinite_iff (T : CartesianLocallyFiniteTypeMorphismOfThickenings B S hS
     IsFinite B S hS T.f ↔ IsFinite B S hS T.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L209). The attribute's comment: “part (6): f is a monomorphism iff f' is”.
+**`AlgebraicGeometry.Space.CartesianLocallyFiniteTypeMorphismOfThickenings.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L210). The attribute's comment: “part (6): f is a monomorphism iff f' is”.
 
 > **Stacks 0BPJ, part (6).** In a cartesian morphism of thickenings of algebraic spaces whose
 > two component maps are locally of finite type, the map between the smaller spaces is a
@@ -581,7 +581,7 @@ theorem mono_iff (T : CartesianLocallyFiniteTypeMorphismOfThickenings B S hS) :
     Mono T.f ↔ Mono T.f'
 ```
 
-**`AlgebraicGeometry.Space.closedImmersionProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L141). The attribute's comment: “part (3): closed immersion, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.closedImmersionProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L141). The attribute's comment: “part (3): closed immersion, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (3), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -596,7 +596,7 @@ theorem closedImmersionProperty_iff_of_cartesianSquareOfThickeningHoms
     closedImmersionProperty B S hS f ↔ closedImmersionProperty B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.immersionProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L287). The attribute's comment: “part (7): immersion, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.immersionProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L287). The attribute's comment: “part (7): immersion, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (7), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -611,7 +611,7 @@ theorem immersionProperty_iff_of_cartesianSquareOfThickeningHoms
     immersionProperty B S hS f ↔ immersionProperty B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.mono_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L344). The attribute's comment: “part (6): monomorphism, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.mono_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L344). The attribute's comment: “part (6): monomorphism, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (6), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -653,7 +653,7 @@ theorem mono_iff_of_cartesianSquareOfThickeningHoms
     Mono f ↔ Mono f'
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Unramified.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Unramified.lean#L118). The attribute's comment: “unramified”.
+**`AlgebraicGeometry.Space.isUnramified_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Unramified.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Unramified.lean#L118). The attribute's comment: “unramified”.
 
 > Being unramified is invariant under a cartesian morphism of thickenings of algebraic spaces
 > whose two component maps are locally of finite type.
@@ -664,7 +664,7 @@ theorem isUnramified_iff_of_cartesianMorphismOfThickenings
     IsUnramified B S hS T.f ↔ IsUnramified B S hS T.f'
 ```
 
-**`AlgebraicGeometry.Space.unramifiedMorphismProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/UnramifiedPointTest.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/UnramifiedPointTest.lean#L60). The attribute's comment: “part (5): unramified, at the Section 04XB point test”.
+**`AlgebraicGeometry.Space.unramifiedMorphismProperty_iff_of_cartesianSquareOfThickeningHoms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/UnramifiedPointTest.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/UnramifiedPointTest.lean#L60). The attribute's comment: “part (5): unramified, at the Section 04XB point test”.
 
 > **Stacks 0BPJ, part (5), at the point test of Section 04XB.** Let
 > `(f, f') : (X ⊂ X') → (Y ⊂ Y')` be a morphism of thickenings of algebraic spaces over `S` with
@@ -690,8 +690,8 @@ theorem unramifiedMorphismProperty_iff_of_cartesianSquareOfThickeningHoms
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isClosedImmersion_iff_of_cartesianMorphismOfThickenings`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L167), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L222) (StacksFrontier): “part (3): f is a closed immersion iff f' is”.
-- [`AlgebraicGeometry.Space.isImmersion_iff_of_cartesianMorphismOfThickenings`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L271), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L225) (StacksFrontier): “part (7): f is an immersion iff f' is”.
+- [`AlgebraicGeometry.Space.isClosedImmersion_iff_of_cartesianMorphismOfThickenings`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L167), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L223) (StacksFrontier): “part (3): f is a closed immersion iff f' is”.
+- [`AlgebraicGeometry.Space.isImmersion_iff_of_cartesianMorphismOfThickenings`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesImmersions.lean#L271), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/SpacesFiniteProperMono.lean#L226) (StacksFrontier): “part (7): f is an immersion iff f' is”.
 
 ## Depends on
 
@@ -700,4 +700,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.10, Tag 0CG4](https://stacks.math.columbia.edu/tag/0CG4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

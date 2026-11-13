@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.55 Vanishing of finite higher direct images
 
-Section 59.55 of the Stacks Project, [Tag 03QN](https://stacks.math.columbia.edu/tag/03QN). 6 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.55 of the Stacks Project, [Tag 03QN](https://stacks.math.columbia.edu/tag/03QN). 6 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03QO, a lemma
 
 [Tag 03QO](https://stacks.math.columbia.edu/tag/03QO) in the Stacks Project.
 
-**`Stacks.StrictlyHenselian.subsingleton_etaleCohomology_smallEtaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSmallEtaleVanishing.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSmallEtaleVanishing.lean#L92). The attribute's comment: “vanishing of positive-degree étale cohomology, on the small étale site”.
+**`Stacks.StrictlyHenselian.subsingleton_etaleCohomology_smallEtaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSmallEtaleVanishing.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSmallEtaleVanishing.lean#L92). The attribute's comment: “vanishing of positive-degree étale cohomology, on the small étale site”.
 
 > Positive-degree étale cohomology of an abelian sheaf on the small étale site of the
 > spectrum of a strictly henselian local ring vanishes.
@@ -28,7 +28,7 @@ public theorem subsingleton_etaleCohomology_smallEtaleTopology
     Subsingleton (Sheaf.H.{w, u + 1} F p)
 ```
 
-**`Stacks.StrictlyHenselian.isIso_globalSectionsToEtaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L560). The attribute's comment: “global sections equal the closed geometric stalk”. References: SGA 4 VIII (8.6), “strictly henselian, n=0”.
+**`Stacks.StrictlyHenselian.isIso_globalSectionsToEtaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L561). The attribute's comment: “global sections equal the closed geometric stalk”. References: SGA 4 VIII (8.6), “strictly henselian, n=0”.
 
 > For a strictly henselian local ring, the canonical global-sections-to-stalk
 > map is an isomorphism for every sheaf of sets.
@@ -44,7 +44,7 @@ public theorem isIso_globalSectionsToEtaleStalk
     IsIso (globalSectionsToEtaleStalk B R hS s F)
 ```
 
-**`Stacks.StrictlyHenselian.globalSections_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L647). The attribute's comment: “exactness of global sections”.
+**`Stacks.StrictlyHenselian.globalSections_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L648). The attribute's comment: “exactness of global sections”.
 
 > Global sections of abelian étale sheaves on a strictly henselian local
 > scheme are exact. As a right adjoint, this functor already preserves limits.
@@ -59,7 +59,7 @@ public instance globalSections_preservesFiniteColimits
         AddCommGrpCat.{u + 1})
 ```
 
-**`Stacks.StrictlyHenselian.subsingleton_etaleCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L665). The attribute's comment: “vanishing of positive-degree étale cohomology”. References: SGA 4 VIII (8.6), “strictly henselian, p≥1”.
+**`Stacks.StrictlyHenselian.subsingleton_etaleCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianVanishing.lean#L666). The attribute's comment: “vanishing of positive-degree étale cohomology”. References: SGA 4 VIII (8.6), “strictly henselian, p≥1”.
 
 > Positive-degree étale cohomology of an abelian sheaf over a strictly
 > henselian local scheme vanishes.
@@ -80,7 +80,7 @@ public theorem subsingleton_etaleCohomology
 
 [Tag 03QP](https://stacks.math.columbia.edu/tag/03QP) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.etalePushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L264). The attribute's comment: “exactness of direct image along a finite morphism”.
+**`AlgebraicGeometry.SmallEtale.etalePushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L264). The attribute's comment: “exactness of direct image along a finite morphism”.
 
 > Direct image of abelian étale sheaves along a finite morphism is exact.
 
@@ -89,7 +89,7 @@ public theorem etalePushforward_exact_of_isFinite :
     exactFunctor _ _ (etalePushforward.{u, u + 1} B fbar)
 ```
 
-**`AlgebraicGeometry.finitePushforwardStalkToProduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 691](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L691). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”.
+**`AlgebraicGeometry.finitePushforwardStalkToProduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L691). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”.
 
 > **Stacks Project, Tag 03QP, part (1), sheaves of sets.** For a finite morphism the
 > comparison map from the stalk of a direct image to the product of the stalks over the lifts of
@@ -103,7 +103,7 @@ public theorem finitePushforwardStalkToProduct_bijective
     Function.Bijective (finitePushforwardStalkToProduct B f y F)
 ```
 
-**`AlgebraicGeometry.finitePushforwardStalkEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L709). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”. References: SGA 4 VIII (5.5), “partial”.
+**`AlgebraicGeometry.finitePushforwardStalkEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L709). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”. References: SGA 4 VIII (5.5), “partial”.
 
 > **Stacks Project, Tag 03QP, part (1), sheaves of sets.** The stalk at a geometric point `y`
 > of the direct image of a sheaf of sets along a finite morphism is the product of the stalks of
@@ -123,7 +123,7 @@ public def finitePushforwardStalkEquiv
           (geometricPointLift (B.inclusion.map f) y x) F.obj)
 ```
 
-**`AlgebraicGeometry.finitePushforwardStalkEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L726). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”.
+**`AlgebraicGeometry.finitePushforwardStalkEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/Bijectivity.lean#L726). The attribute's comment: “part (1): the stalk of a finite pushforward, for sheaves of sets”.
 
 > **Stacks Project, Tag 03QP, part (1), sheaves of sets.** Each component of the product
 > decomposition of the stalk is the canonical stalk map at the corresponding lift.
@@ -142,7 +142,7 @@ public theorem finitePushforwardStalkEquiv_apply
       finitePushforwardStalkComponent B f y F x z
 ```
 
-**`AlgebraicGeometry.stalkPushforwardIsoDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L560). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
+**`AlgebraicGeometry.stalkPushforwardIsoDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L560). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
 
 > The stalk of a finite direct image is canonically the direct sum of its
 > stalks at the geometric lifts.
@@ -162,7 +162,7 @@ public noncomputable def stalkPushforwardIsoDirectSum
             (B.inclusion.map f) y x) F.obj
 ```
 
-**`AlgebraicGeometry.stalkPushforwardIsoDirectSum_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L601). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
+**`AlgebraicGeometry.stalkPushforwardIsoDirectSum_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L601). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
 
 > On each component, the finite direct-image stalk decomposition takes a
 > section over a neighborhood of `y` to its germ at a lift `x`, after pulling
@@ -184,7 +184,7 @@ public theorem stalkPushforwardIsoDirectSum_germ
     (hX : V.2.1 ≫ (SmallEtale.toScheme B X.1 X.property).map t ≫
         B.inclusion.map (pullback.snd U.1.obj.hom f) = x.1) :
     colimit.ι
-        ((CategoryOfElements.π (geometricPointFiber B Y.1 Y.property y)).op ⋙
+        ((Functor.Elements.π (geometricPointFiber B Y.1 Y.property y)).op ⋙
           (((smallEtaleBaseChange B f).sheafPushforwardContinuous
             AddCommGrpCat.{u + 1}
             (SmallEtale.topology B Y.1 Y.property)
@@ -194,13 +194,13 @@ public theorem stalkPushforwardIsoDirectSum_germ
       (by classical exact Limits.Sigma.π _ x) =
     F.obj.map t.op ≫
       colimit.ι
-        ((CategoryOfElements.π (geometricPointFiber B X.1 X.property
+        ((Functor.Elements.π (geometricPointFiber B X.1 X.property
           (geometricPointLift
             (B.inclusion.map f) y x))).op ⋙ F.obj)
     (op V)
 ```
 
-**`AlgebraicGeometry.stalkPushforwardIsoDirectSum_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L635). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
+**`AlgebraicGeometry.stalkPushforwardIsoDirectSum_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardStalk/DirectSum.lean#L635). The attribute's comment: “part (1): the stalk of a finite pushforward, for abelian sheaves”.
 
 > The finite direct-sum decomposition is natural in the abelian sheaf.
 
@@ -222,7 +222,7 @@ public theorem stalkPushforwardIsoDirectSum_natural
               (B.inclusion.map f) y x) α)
 ```
 
-**`Stacks.EtaleCohomology.isZero_rightDerived_smallEtalePushforwardAb_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralHigherDirectImage.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralHigherDirectImage.lean#L55). The attribute's comment: “part (2): vanishing of the positive higher direct images”. References: SGA 4 Vbis (4.3.4); SGA 4½ Arcata (2.3.6).
+**`Stacks.EtaleCohomology.isZero_rightDerived_smallEtalePushforwardAb_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralHigherDirectImage.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralHigherDirectImage.lean#L55). The attribute's comment: “part (2): vanishing of the positive higher direct images”. References: SGA 4 Vbis (4.3.4); SGA 4½ Arcata (2.3.6).
 
 > **The positive higher direct images along an integral morphism vanish.** For a finite
 > morphism this is the acyclicity half of Stacks Project Tag 03QP, finiteness implying
@@ -235,7 +235,7 @@ public theorem isZero_rightDerived_smallEtalePushforwardAb_of_isIntegralHom
     IsZero (((smallEtalePushforwardAb f).rightDerived q).obj F)
 ```
 
-**`Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L167). The attribute's comment: “part (2) at the coefficients of proper base change”. References: SGA 4 VIII (5.5), “more general”; SGA 4 VIII (5.6); SGA 4 Vbis (4.3.4); SGA 4 XII (5.3bis), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XVII (4.3.1), “special case”; SGA 4½ Arcata (2.3.6).
+**`Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L167). The attribute's comment: “part (2) at the coefficients of proper base change”. References: SGA 4 VIII (5.5), “more general”; SGA 4 VIII (5.6); SGA 4 Vbis (4.3.4); SGA 4 XII (5.3bis), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XVII (4.3.1), “special case”; SGA 4½ Arcata (2.3.6).
 
 > **Stacks 03QP, part (2), at the coefficients of the proper base change development.** The
 > positive higher direct images of an abelian sheaf along an integral morphism of schemes vanish:
@@ -251,7 +251,7 @@ public theorem isZero_rightDerived_etaleAbelianDirectImage_of_isIntegralHom
     IsZero (((etaleAbelianDirectImage.{u, v} f).rightDerived q).obj F)
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.isZero_rightDerived_modulePushforward_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean#L156). The attribute's comment: “part (2), for sheaves of Λ-modules on the small étale sites of Tag 021B”. References: SGA 4 VIII (5.5), “more general”; SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4 XIV (1.11), “partial”; SGA 4½ Arcata (2.3.6), “more general”.
+**`Stacks.EtaleCohomology.TorsionModules.isZero_rightDerived_modulePushforward_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean#L156). The attribute's comment: “part (2), for sheaves of Λ-modules on the small étale sites of Tag 021B”. References: SGA 4 VIII (5.5), “more general”; SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4 XIV (1.11), “partial”; SGA 4½ Arcata (2.3.6), “more general”.
 
 > **Stacks 03QP, part (2), for sheaves of `Λ`-modules on the small étale sites of Stacks
 > 021B.** For `f` with integral underlying morphism of schemes — a finite morphism, for instance —
@@ -271,7 +271,7 @@ theorem isZero_rightDerived_modulePushforward_of_isIntegralHom
 
 [Tag 0959](https://stacks.math.columbia.edu/tag/0959) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_smallEtaleBaseChangeNatTrans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardBaseChange.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardBaseChange.lean#L709).
+**`AlgebraicGeometry.isIso_smallEtaleBaseChangeNatTrans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardBaseChange.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FinitePushforwardBaseChange.lean#L709).
 
 > Consider a cartesian square
 > ```
@@ -292,7 +292,7 @@ theorem isIso_smallEtaleBaseChangeNatTrans
     IsIso ((smallEtaleBaseChangeNatTrans B g' f' f g h).app F)
 ```
 
-**`Stacks.EtaleCohomology.isIso_smallEtaleBaseChangeAb_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleBaseChangeAbFinite.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleBaseChangeAbFinite.lean#L307). The attribute's comment: “for abelian sheaves, at the comparison `smallEtaleBaseChangeAb` of [Stacks, Tag 0F02]; the morphism is finite, not merely integral, so this is 0959 and not 0EYP”.
+**`Stacks.EtaleCohomology.isIso_smallEtaleBaseChangeAb_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleBaseChangeAbFinite.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleBaseChangeAbFinite.lean#L307). The attribute's comment: “for abelian sheaves, at the comparison `smallEtaleBaseChangeAb` of [Stacks, Tag 0F02]; the morphism is finite, not merely integral, so this is 0959 and not 0EYP”.
 
 > **Base change of an abelian direct image along a finite morphism, at the comparison
 > `Stacks.EtaleCohomology.smallEtaleBaseChangeAb`.** For a cartesian square
@@ -328,7 +328,7 @@ public theorem isIso_smallEtaleBaseChangeAb_of_isFinite {Y Y' T T' : Scheme.{u}}
 
 [Tag 0EYP](https://stacks.math.columbia.edu/tag/0EYP) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_smallEtaleBaseChangeNatTrans_of_isIntegralHom_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardBaseChangeLimitUnconditional.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardBaseChangeLimitUnconditional.lean#L621). References: SGA 4 VIII (5.5), “more general”.
+**`AlgebraicGeometry.isIso_smallEtaleBaseChangeNatTrans_of_isIntegralHom_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardBaseChangeLimitUnconditional.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardBaseChangeLimitUnconditional.lean#L622). References: SGA 4 VIII (5.5), “more general”.
 
 > **Stacks Project, Tag 0EYP.** Consider a cartesian square
 > ```
@@ -366,7 +366,7 @@ theorem isIso_smallEtaleBaseChangeNatTrans_of_isIntegralHom_univ
 
 [Tag 09Z2](https://stacks.math.columbia.edu/tag/09Z2) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_cechSheafSpectralSequence_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteDescent/SpectralSequenceFunctorial.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteDescent/SpectralSequenceFunctorial.lean#L476).
+**`Stacks.EtaleCohomology.exists_cechSheafSpectralSequence_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteDescent/SpectralSequenceFunctorial.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteDescent/SpectralSequenceFunctorial.lean#L476).
 
 > **[Stacks, Tag 09Z2].** Let `f : X ⟶ Y` be a surjective finite morphism of schemes, let
 > `f_n : X_n ⟶ Y` be the structure map of the `(n + 1)`-fold fibre product of `X` over `Y`, and for
@@ -419,7 +419,7 @@ public theorem exists_cechSheafSpectralSequence_functorial [IsFinite f] [Surject
                               (hFil p (p + 1) n F (by omega))))
 ```
 
-**`AlgebraicGeometry.mono_smallEtaleUnitAb_of_isFinite_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteSurjectiveAbelianUnit.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteSurjectiveAbelianUnit.lean#L100). The attribute's comment: “exactness at `ℱ` of `0 → ℱ → ℱ₀ → ℱ₁ → ⋯`, i.e. injectivity of the augmentation `ℱ ⟶ ℱ₀ = f_*f^{-1}ℱ`; exactness in the higher degrees and the spectral sequence are not proved here”.
+**`AlgebraicGeometry.mono_smallEtaleUnitAb_of_isFinite_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteSurjectiveAbelianUnit.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteSurjectiveAbelianUnit.lean#L100). The attribute's comment: “exactness at `ℱ` of `0 → ℱ → ℱ₀ → ℱ₁ → ⋯`, i.e. injectivity of the augmentation `ℱ ⟶ ℱ₀ = f_*f^{-1}ℱ`; exactness in the higher degrees and the spectral sequence are not proved here”.
 
 > **Stacks 09Z2, exactness at `ℱ`.** For a finite surjective morphism of schemes the unit
 > `ℱ ⟶ f_* f^{-1}ℱ` of the inverse-image/direct-image adjunction on abelian sheaves on the small
@@ -439,7 +439,7 @@ public theorem mono_smallEtaleUnitAb_of_isFinite_of_surjective
 
 [Tag 09Z3](https://stacks.math.columbia.edu/tag/09Z3) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.globalSectionsPullback_isEqualizer_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/FiniteSurjectiveDescent.lean, line 1344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/FiniteSurjectiveDescent.lean#L1344). The attribute's comment: “the displayed equality `Γ(Y, 𝒢) = Equalizer (Γ(X₀, f₀⁻¹𝒢) ⇉ Γ(X₁, f₁⁻¹𝒢))`, for a finite surjective `f : X ⟶ Y` and a sheaf of sets `𝒢` on the small étale site of `Y`, with `X₀ = X`, `f₀ = f`, `X₁ = X ×_Y X` and `f₁` the structure morphism of `X₁`: the canonical comparison on global sections is injective with image exactly the equalizer”. References: SGA 1 XIII (1.11), “partial”.
+**`Stacks.EtaleCohomology.globalSectionsPullback_isEqualizer_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/FiniteSurjectiveDescent.lean, line 1344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/FiniteSurjectiveDescent.lean#L1344). The attribute's comment: “the displayed equality `Γ(Y, 𝒢) = Equalizer (Γ(X₀, f₀⁻¹𝒢) ⇉ Γ(X₁, f₁⁻¹𝒢))`, for a finite surjective `f : X ⟶ Y` and a sheaf of sets `𝒢` on the small étale site of `Y`, with `X₀ = X`, `f₀ = f`, `X₁ = X ×_Y X` and `f₁` the structure morphism of `X₁`: the canonical comparison on global sections is injective with image exactly the equalizer”. References: SGA 1 XIII (1.11), “partial”.
 
 > **[Stacks, Tag 09Z3].**  Let `f : X ⟶ Y` be a finite surjective morphism of schemes and let
 > `𝒢` be a sheaf of sets on the small étale site of `Y`.  The first two levels of the Čech nerve of
@@ -475,4 +475,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.55, Tag 03QN](https://stacks.math.columbia.edu/tag/03QN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

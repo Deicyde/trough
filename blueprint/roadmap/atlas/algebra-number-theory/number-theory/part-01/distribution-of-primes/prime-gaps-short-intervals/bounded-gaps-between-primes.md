@@ -7,7 +7,7 @@ statement: formalized
 
 # Bounded gaps between primes
 
-25 results, 14 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html).
+25 results, 14 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html).
 
 ## Subpower bound
 
@@ -19,7 +19,7 @@ $x \to \infty$.
 
 - Polymath8b, arXiv:1407.4897v4, Definition 1.6.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.SubpowerBound`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#subpower-bound).
+Formalized by `WantedExt.NumberTheory.Polymath8b.SubpowerBound`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#subpower-bound).
 
 ## Support in a dyadic interval
 
@@ -31,7 +31,7 @@ $N \in \mathbb{R}$ if every $n$ with $\alpha(n) \ne 0$ satisfies $n \ge 1$ and $
 
 - Polymath8b v4, Claim 2.6.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.DyadicSupport`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#dyadic-support).
+Formalized by `WantedExt.NumberTheory.Polymath8b.DyadicSupport`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#dyadic-support).
 
 ## Divisor–logarithm bound for a family of sequences
 
@@ -49,7 +49,7 @@ neither on $x$ nor on $n$.
 
 - Polymath8b v4, Claim 2.6.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.DivisorLogBound`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#divisor-log-bound).
+Formalized by `WantedExt.NumberTheory.Polymath8b.DivisorLogBound`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#divisor-log-bound).
 
 ## Siegel–Walfisz hypothesis for a family of sequences
 
@@ -70,7 +70,7 @@ and $\tau(m)$ is the number of positive divisors of $m$.
 
 - Polymath8b v4, Claim 2.6 and its uniformity footnote.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.SiegelWalfisz`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#siegel-walfisz).
+Formalized by `WantedExt.NumberTheory.Polymath8b.SiegelWalfisz`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#siegel-walfisz).
 
 ## Elliott–Halberstam estimate at level $\theta$
 
@@ -89,7 +89,7 @@ class modulo $q$ coprime to $q$.
 
 - Polymath8b v4, Claim 2.2.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.ElliottHalberstamAt`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#elliott-halberstam-at).
+Formalized by `WantedExt.NumberTheory.Polymath8b.ElliottHalberstamAt`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#elliott-halberstam-at).
 
 ## Generalized Elliott–Halberstam estimate at level $\theta$
 
@@ -114,7 +114,7 @@ convolution $\alpha_x \star \beta_x$ up to $Q(x)$ is at most $C x / (\log x)^A$.
 
 - Polymath8b v4, Claim 2.6.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.GeneralizedElliottHalberstamAt`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#generalized-elliott-halberstam-at).
+Formalized by `WantedExt.NumberTheory.Polymath8b.GeneralizedElliottHalberstamAt`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#generalized-elliott-halberstam-at).
 
 ## Elliott–Halberstam conjecture (dyadic form)
 
@@ -125,7 +125,7 @@ $\theta$ holds for every real number $\theta$ with $0 < \theta < 1$.
 
 - Polymath8b v4, Theorems 1.1 and 1.3 and Claim 2.2.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.ElliottHalberstam`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#elliott-halberstam).
+Formalized by `WantedExt.NumberTheory.Polymath8b.ElliottHalberstam`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#elliott-halberstam).
 
 ## Generalized Elliott–Halberstam conjecture (dyadic form)
 
@@ -137,7 +137,7 @@ $0 < \theta < 1$.
 
 - Polymath8b v4, Theorem 1.4 and Claim 2.6.
 
-Formalized by `WantedExt.NumberTheory.Polymath8b.GeneralizedElliottHalberstam`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#generalized-elliott-halberstam).
+Formalized by `WantedExt.NumberTheory.Polymath8b.GeneralizedElliottHalberstam`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsHypotheses.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#generalized-elliott-halberstam).
 
 ## Zhang's 2014 bound on prime gaps
 
@@ -149,7 +149,7 @@ liminf is taken in $\mathbb{N} \cup \{\infty\}$.
 
 - Zhang, Annals of Mathematics 179 (2014), 1121-1174; Polymath8b v4, Theorem 1.2.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.zhang2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#zhang2014-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.zhang2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#zhang2014-upper-bound).
 
 ## Polymath8a bound 4680 on small prime gaps
 
@@ -161,7 +161,7 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 - Polymath, Algebra & Number Theory 8 (2014), 2067-2199; Polymath8b v4, Introduction.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8a2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8a2014-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8a2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8a2014-upper-bound).
 
 ## Maynard's bound 600 on small prime gaps
 
@@ -175,7 +175,7 @@ The bound was also obtained independently by Tao.
 
 - Maynard, Annals of Mathematics 181 (2015), 383-413; Polymath8b v4, Theorem 1.3(i).
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.maynard2015UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#maynard2015-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.maynard2015UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#maynard2015-upper-bound).
 
 ## Polymath8b bound 246 on small prime gaps
 
@@ -190,7 +190,7 @@ is unresolved.
 
 - Polymath8b, arXiv:1407.4897v4, Theorem 1.4(i), DOI 10.1186/s40687-014-0012-7.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8b2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8b2014-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8b2014UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8b2014-upper-bound).
 
 ## Zhang's 2026 bound of 240 on prime gaps
 
@@ -202,7 +202,7 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 - Zhang, Zenodo 10.5281/zenodo.22135842, 28 August 2026, as quoted in constants/88a.md.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.zhang2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#zhang2026-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.zhang2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#zhang2026-upper-bound).
 
 ## OpenAI's bound 186 on small prime gaps
 
@@ -214,7 +214,7 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 - OpenAI, Improved short gaps between primes, 30 August 2026, quoted in constants/88a.md.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.openai2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#openai2026-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.openai2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#openai2026-upper-bound).
 
 ## Stadlmann's bound 240 on small prime gaps
 
@@ -226,7 +226,7 @@ taken in $\mathbb{N} \cup \{\infty\}$.
 
 - Stadlmann, arXiv:2608.31126, 31 August 2026, as quoted in constants/88a.md.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.stadlmann2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#stadlmann2026-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.stadlmann2026UpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#stadlmann2026-upper-bound).
 
 ## Maynard's bound under Elliott–Halberstam
 
@@ -239,7 +239,7 @@ where the liminf is taken in $\mathbb{N} \cup \{\infty\}$.
 
 - Maynard (2015); Polymath8b v4, Theorem 1.3(iii).
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.maynardElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#maynard-elliott-halberstam-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.maynardElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#maynard-elliott-halberstam-upper-bound).
 
 ## Goldston–Pintz–Yıldırım bound under Elliott–Halberstam
 
@@ -253,7 +253,7 @@ $\mathbb{N} \cup \{\infty\}$.
 
 - Goldston-Pintz-Yıldırım (2009); Polymath8b v4, Theorem 1.1.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.gpyElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#gpy-elliott-halberstam-upper-bound).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.gpyElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#gpy-elliott-halberstam-upper-bound).
 
 ## Polymath8b bound under the generalized Elliott–Halberstam conjecture
 
@@ -267,7 +267,7 @@ $\mathbb{N} \cup \{\infty\}$.
 
 - Polymath8b v4, Theorem 1.4(xii); the 2015 erratum correction is unavailable.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8bGeneralizedElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8b-generalized-elliott-halbersta).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.polymath8bGeneralizedElliottHalberstamUpperBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#polymath8b-generalized-elliott-halbersta).
 
 ## Two primes in infinitely many translates of an admissible 40-tuple
 
@@ -282,7 +282,7 @@ A negative integer or zero is never counted as prime.
 
 - OpenAI (2026), Theorem 1.1, as quoted in the 186 row of constants/88a.md.
 
-Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.openai2026DHL` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#openai2026-dhl).
+Stated but not proved: `WantedExt.NumberTheory.PrimeGapBounds.openai2026DHL` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#openai2026-dhl).
 
 ## The forty shifts behind the bound 186
 
@@ -295,7 +295,7 @@ order.
 
 - OpenAI (2026), equation (1.3).
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.shifts186`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#shifts186).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.shifts186`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#shifts186).
 
 ## The explicit 40-tuple for the gap bound 186
 
@@ -308,7 +308,7 @@ $h = (h_0, \dots, h_{39})$ whose entries, in order, are $0, 2, 6, 12, 20, 26, 30
 
 - OpenAI (2026), equation (1.3), and the 186 row of constants/88a.md.
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186`, a definition declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186).
 
 ## The explicit 40-tuple has distinct entries
 
@@ -320,7 +320,7 @@ pairwise distinct: $h_i = h_j$ implies $i = j$.
 
 - the explicit tuple in OpenAI (2026), equation (1.3).
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_injective`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-injective).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_injective`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-injective).
 
 ## The entries of the explicit 40-tuple lie between 0 and 186
 
@@ -332,7 +332,7 @@ Then $0 \le h_i \le 186$ for every $i \in \{0, \dots, 39\}$.
 
 - the explicit tuple in OpenAI (2026), equation (1.3).
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_bounds`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-bounds).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_bounds`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-bounds).
 
 ## The explicit 40-tuple has diameter 186
 
@@ -344,7 +344,7 @@ $\{h_0, \dots, h_{39}\}$ minus the smallest value in it equals $186$.
 
 - OpenAI (2026), equation (1.3), as quoted in constants/88a.md.
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_diameter`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-diameter).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_diameter`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-diameter).
 
 ## The explicit 40-tuple is admissible
 
@@ -357,7 +357,7 @@ not $p$.
 
 - OpenAI (2026), equation (1.3).
 
-Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_admissible`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-admissible).
+Formalized by `WantedExt.NumberTheory.PrimeGapBounds.tuple186_admissible`, a theorem declared in [WantedExt/NumberTheory/PrimeGapBoundsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeGapBoundsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html#tuple186-admissible).
 
 ## Depends on
 
@@ -366,4 +366,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bounded gaps between primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/bounded-gaps-between-primes)

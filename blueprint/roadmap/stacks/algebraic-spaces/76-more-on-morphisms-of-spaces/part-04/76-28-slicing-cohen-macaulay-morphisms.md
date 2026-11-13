@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.28 Slicing Cohen-Macaulay morphisms
 
-Section 76.28 of the Stacks Project, [Tag 06LV](https://stacks.math.columbia.edu/tag/06LV). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.28 of the Stacks Project, [Tag 06LV](https://stacks.math.columbia.edu/tag/06LV). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06LW, a lemma
 
 [Tag 06LW](https://stacks.math.columbia.edu/tag/06LW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFlat_vanishingSubfunctor_of_isRegular_geometricFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSliceFlatnessEnlargement.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreSliceFlatnessEnlargement.lean#L117). The attribute's comment: “the flatness half of the conclusion”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFlat_vanishingSubfunctor_of_isRegular_geometricFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSliceFlatnessEnlargement.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreSliceFlatnessEnlargement.lean#L117). The attribute's comment: “the flatness half of the conclusion”.
 
 > **Stacks 06LW, the flatness half of the conclusion.**  Let `g : X ⟶ Y` be a morphism of
 > algebraic spaces over `S` which is flat and locally of finite presentation, let
@@ -53,7 +53,7 @@ theorem exists_isOpenSubspace_isFlat_vanishingSubfunctor_of_isRegular_geometricF
         IsFlat B S hS (((vanishingSubfunctor B S hS X fs).preimage W.ι).ι ≫ W.ι ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_vanishingSubfunctor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L229). The attribute's comment: “locally of finite presentation, given it for V(f₁,…,f\_r) ⟶ X”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_vanishingSubfunctor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L229). The attribute's comment: “locally of finite presentation, given it for V(f₁,…,f\_r) ⟶ X”.
 
 > If `X ⟶ Y` is locally of finite presentation and the closed immersion of the subspace
 > `V(f₁, …, f_r) ⊆ X` cut out by global regular functions `f₁, …, f_r` is locally of finite
@@ -68,7 +68,7 @@ theorem isLocallyOfFinitePresentation_vanishingSubfunctor_comp (X Y : AlgebraicS
     IsLocallyOfFinitePresentation B S hS ((vanishingSubfunctor B S hS X f).ι ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.exists_openSubspace_isFlat_isLocallyOfFinitePresentation_vanishingSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L281).
+**`AlgebraicGeometry.Space.exists_openSubspace_isFlat_isLocallyOfFinitePresentation_vanishingSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L281).
 
 > Let `X ⟶ Y` be flat and locally of finite presentation, let a cartesian square exhibit `F`
 > as the fibre `X ×_Y Spec(k)` over a field-valued point of `Y`, and let `z` be a geometric point of
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.28, Tag 06LV](https://stacks.math.columbia.edu/tag/06LV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

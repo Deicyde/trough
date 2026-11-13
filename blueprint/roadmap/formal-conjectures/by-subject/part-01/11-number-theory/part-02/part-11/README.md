@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Prime numbers at the beginning… to $a(n) = (\text{smallest prime}…
+# Sum of next $n$ primes to Maximum exponent in the prime…
 
+- [Sum of next $n$ primes](../../../../../oeis/part-02/sum-of-next-n-primes.md)
+- [Least prime $\ge n$](../../../../../oeis/part-02/least-prime-ge-n.md)
 - [Prime numbers at the beginning of the 20th century](../../../../../oeis/part-02/prime-numbers-at-the-beginning-of-the-20th-centu.md)
 - [$a(n)$ is the integer whose decimal digits are the first $n+1$ decimal digits of $\pi$](../../../../../oeis/part-02/a-n-is-the-integer-whose-decimal-digits-are-the.md)
 - [Denominator of sum of reciprocals of divisors](../../../../../oeis/part-02/denominator-of-sum-of-reciprocals-of-divisors.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Nearest integer to $n/\sqrt{2}$](../../../../../oeis/part-03/nearest-integer-to-n-sqrt-2.md)
 - [Asymptotics of subsets of $\{1, 2, \dots, n\}$ with integer average](../../../../../oeis/part-03/asymptotics-of-subsets-of-1-2-dots-n-with-intege.md)
 - [Maximum exponent in the prime factorization of $n$](../../../../../oeis/part-03/maximum-exponent-in-the-prime-factorization-of-n.md)
-- [Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$](../../../../../oeis/part-03/expansion-of-g-f-1-sqrt-1-4x-4x-2-2-1-x.md)
-- [$a(n) = (\text{smallest prime} > n^2) - n^2$](../../../../../oeis/part-03/a-n-smallest-prime-n-2-n-2.md)

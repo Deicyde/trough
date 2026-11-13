@@ -7,7 +7,7 @@ statement: formalized
 
 # Repdigit concatenations in balancing numbers
 
-21 results, 15 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html).
+21 results, 15 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html).
 
 ## Balancing numbers
 
@@ -18,7 +18,7 @@ defined by $B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 6 B_{n+1} - B_n$ for all $n$.
 
 - standard definition used in "Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits" (Integers 2025, A15); the values `B_2 = 6`, `B_3 = 35` are those displayed in its Theorem 2.
 
-Formalized by `MetaMathlibExt.balancingNum`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num).
+Formalized by `MetaMathlibExt.balancingNum`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num).
 
 ## The balancing number $B_2$ is $6$
 
@@ -28,7 +28,7 @@ The balancing number $B_2$ equals $6$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 2.
 
-Formalized by `MetaMathlibExt.balancingNum_two`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-two).
+Formalized by `MetaMathlibExt.balancingNum_two`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-two).
 
 ## The balancing number $B_3$ is $35$
 
@@ -38,7 +38,7 @@ The balancing number $B_3$ equals $35$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 2.
 
-Formalized by `MetaMathlibExt.balancingNum_three`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-three).
+Formalized by `MetaMathlibExt.balancingNum_three`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-three).
 
 ## Lucas-balancing numbers (shifted indexing)
 
@@ -53,7 +53,7 @@ number $c_{n-1}$, where $c_0 = 1$, $c_1 = 3$ and $c_{n+2} = 6 c_{n+1} - c_n$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 3.
 
-Formalized by `MetaMathlibExt.lucasBalancingNum`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num).
+Formalized by `MetaMathlibExt.lucasBalancingNum`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num).
 
 ## The Lucas-balancing number $C_2$ is $3$
 
@@ -64,7 +64,7 @@ $C_0 = 3$, $C_1 = 1$ and $C_{n+2} = 6C_{n+1} - C_n$, we have $C_2 = 3$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 3.
 
-Formalized by `MetaMathlibExt.lucasBalancingNum_two`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-two).
+Formalized by `MetaMathlibExt.lucasBalancingNum_two`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-two).
 
 ## The Lucas-balancing number $C_3$ is $17$
 
@@ -75,7 +75,7 @@ $C_0 = 3$, $C_1 = 1$ and $C_{n+2} = 6C_{n+1} - C_n$, we have $C_3 = 17$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 3.
 
-Formalized by `MetaMathlibExt.lucasBalancingNum_three`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-three).
+Formalized by `MetaMathlibExt.lucasBalancingNum_three`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-three).
 
 ## Decimal repdigits
 
@@ -87,7 +87,7 @@ the positive integer whose decimal expansion consists of $m$ copies of the digit
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Section 1 (definition of repdigit).
 
-Formalized by `MetaMathlibExt.IsRepdigit`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit).
+Formalized by `MetaMathlibExt.IsRepdigit`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit).
 
 ## Eleven is a repdigit
 
@@ -97,7 +97,7 @@ The number $11$ is a repdigit.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 2.
 
-Formalized by `MetaMathlibExt.isRepdigit_eleven`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-eleven).
+Formalized by `MetaMathlibExt.isRepdigit_eleven`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-eleven).
 
 ## Nonzero single digits are repdigits
 
@@ -108,7 +108,7 @@ repdigit.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Section 1 (definition of repdigit).
 
-Formalized by `MetaMathlibExt.isRepdigit_of_le`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-of-le).
+Formalized by `MetaMathlibExt.isRepdigit_of_le`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-of-le).
 
 ## Concatenations of two decimal repdigits
 
@@ -126,7 +126,7 @@ repdigits.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemmas 3 and 5.
 
-Formalized by `MetaMathlibExt.IsConcatTwoRepdigits`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-two-repdigits).
+Formalized by `MetaMathlibExt.IsConcatTwoRepdigits`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-two-repdigits).
 
 ## Concatenations of three decimal repdigits
 
@@ -144,7 +144,7 @@ Equivalently, the decimal expansion of $n$ has exactly three runs of equal digit
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemmas 4 and 6.
 
-Formalized by `MetaMathlibExt.IsConcatThreeRepdigits`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-three-repdigits).
+Formalized by `MetaMathlibExt.IsConcatThreeRepdigits`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-three-repdigits).
 
 ## $35$ is a concatenation of two repdigits
 
@@ -155,7 +155,7 @@ of the one-digit blocks $3$ and $5$, is a concatenation of two repdigits.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3.
 
-Formalized by `MetaMathlibExt.isConcatTwoRepdigits_thirtyFive`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-two-repdigits-thirty-five).
+Formalized by `MetaMathlibExt.isConcatTwoRepdigits_thirtyFive`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-two-repdigits-thirty-five).
 
 ## $204$ is a concatenation of three repdigits
 
@@ -166,7 +166,7 @@ consists of the one-digit blocks $2$, $0$ and $4$, is a concatenation of three r
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 4.
 
-Formalized by `MetaMathlibExt.isConcatThreeRepdigits_twoZeroFour`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-three-repdigits-two-zero-four).
+Formalized by `MetaMathlibExt.isConcatThreeRepdigits_twoZeroFour`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-concat-three-repdigits-two-zero-four).
 
 ## Differences of two repdigits
 
@@ -177,7 +177,7 @@ there are repdigits $a$ and $b$ with $a = n + b$, that is, $n = a - b$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorems 2 and 3.
 
-Formalized by `MetaMathlibExt.IsRepdigitDiff`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-diff).
+Formalized by `MetaMathlibExt.IsRepdigitDiff`, a definition declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-diff).
 
 ## Six is a difference of two repdigits
 
@@ -188,7 +188,7 @@ $6 = 11 - 5$, where $11$ and $5$ are repdigits.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 2.
 
-Formalized by `MetaMathlibExt.isRepdigitDiff_six`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-diff-six).
+Formalized by `MetaMathlibExt.isRepdigitDiff_six`, a theorem declared in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#is-repdigit-diff-six).
 
 ## Balancing numbers that are concatenations of two repdigits
 
@@ -199,7 +199,7 @@ if the balancing number $B_k$ is a concatenation of two repdigits, then $B_k = 3
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.balancingNum_concatTwoRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-concat-two-repdigits).
+Stated but not proved: `MetaMathlibExt.balancingNum_concatTwoRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-concat-two-repdigits).
 
 ## Balancing numbers that are concatenations of three repdigits
 
@@ -211,7 +211,7 @@ $B_k = 1189$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.balancingNum_concatThreeRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-concat-three-repdigits).
+Stated but not proved: `MetaMathlibExt.balancingNum_concatThreeRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-concat-three-repdigits).
 
 ## Lucas-balancing numbers that are concatenations of two repdigits
 
@@ -224,7 +224,7 @@ different repeated digit, then $C_k = 17$ or $C_k = 577$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.lucasBalancingNum_concatTwoRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-concat-two-repdigits).
+Stated but not proved: `MetaMathlibExt.lucasBalancingNum_concatTwoRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-concat-two-repdigits).
 
 ## Lucas-balancing numbers that are concatenations of three repdigits
 
@@ -237,7 +237,7 @@ blocks have different digits, then $C_k = 3363$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.lucasBalancingNum_concatThreeRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-concat-three-repdigi).
+Stated but not proved: `MetaMathlibExt.lucasBalancingNum_concatThreeRepdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-concat-three-repdigi).
 
 ## Balancing numbers that are differences of two repdigits
 
@@ -252,7 +252,7 @@ differences of two repdigits.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.balancingNum_repdigitDiff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-repdigit-diff).
+Stated but not proved: `MetaMathlibExt.balancingNum_repdigitDiff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#balancing-num-repdigit-diff).
 
 ## Lucas-balancing numbers that are differences of two repdigits
 
@@ -267,7 +267,7 @@ $C_1 = 1 = 2 - 1$.
 
 - Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.lucasBalancingNum_repdigitDiff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-repdigit-diff).
+Stated but not proved: `MetaMathlibExt.lucasBalancingNum_repdigitDiff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BalancingRepdigitWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BalancingRepdigitWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html#lucas-balancing-num-repdigit-diff).
 
 ## Depends on
 
@@ -276,4 +276,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Repdigit concatenations in balancing numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-concatenations-in-balancing-numbers)

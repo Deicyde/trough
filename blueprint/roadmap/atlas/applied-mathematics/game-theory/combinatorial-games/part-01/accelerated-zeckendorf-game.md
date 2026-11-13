@@ -7,7 +7,7 @@ statement: formalized
 
 # Accelerated Zeckendorf game
 
-22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html).
+22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html).
 
 ## Moves of the Accelerated Zeckendorf Game
 
@@ -27,7 +27,7 @@ $2m$ copies of $F_i$ by $m$ copies each of $F_{i-2}$ and $F_{i+1}$.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Definition 1.2.
 
-Formalized by `MetaMathlibExt.AccelZeckMove`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move).
+Formalized by `MetaMathlibExt.AccelZeckMove`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move).
 
 ## Two ones combine into a two in the Accelerated Zeckendorf Game
 
@@ -40,7 +40,7 @@ Zeckendorf Game.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Definition 1.2.
 
-Formalized by `MetaMathlibExt.accelZeckMove_single_one_two`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move-single-one-two).
+Formalized by `MetaMathlibExt.accelZeckMove_single_one_two`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move-single-one-two).
 
 ## No move from the empty state
 
@@ -51,7 +51,7 @@ any state.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Definition 1.2.
 
-Formalized by `MetaMathlibExt.not_accelZeckMove_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#not-accel-zeck-move-zero).
+Formalized by `MetaMathlibExt.not_accelZeckMove_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#not-accel-zeck-move-zero).
 
 ## Complete Accelerated Zeckendorf Games
 
@@ -64,7 +64,7 @@ $g_L$. The states after $g_L$ play no role.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Definition 1.2.
 
-Formalized by `MetaMathlibExt.IsAccelZeckGame`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#is-accel-zeck-game).
+Formalized by `MetaMathlibExt.IsAccelZeckGame`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#is-accel-zeck-game).
 
 ## The complete game on $0$
 
@@ -75,7 +75,7 @@ complete Accelerated Zeckendorf Game on $0$ with $0$ moves.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Definition 1.2.
 
-Formalized by `MetaMathlibExt.isAccelZeckGame_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#is-accel-zeck-game-zero).
+Formalized by `MetaMathlibExt.isAccelZeckGame_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#is-accel-zeck-game-zero).
 
 ## Losing states of the Accelerated Zeckendorf Game
 
@@ -88,7 +88,7 @@ to a losing state. In particular every state from which no move is possible is l
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 2.2 (rules (1)-(4) for winning and losing states).
 
-Formalized by `MetaMathlibExt.AccelZeckLosing`, an inductive type declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-losing).
+Formalized by `MetaMathlibExt.AccelZeckLosing`, an inductive type declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-losing).
 
 ## Winning states of the Accelerated Zeckendorf Game
 
@@ -101,7 +101,7 @@ a winning state.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 2.2 (rules (1)-(4) for winning and losing states).
 
-Formalized by `MetaMathlibExt.AccelZeckWinning`, an inductive type declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning).
+Formalized by `MetaMathlibExt.AccelZeckWinning`, an inductive type declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning).
 
 ## Characterization of winning states
 
@@ -112,7 +112,7 @@ takes $s$ to a losing state.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 2.2, rules (3)-(4).
 
-Formalized by `MetaMathlibExt.accelZeckWinning_iff`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning-iff).
+Formalized by `MetaMathlibExt.accelZeckWinning_iff`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning-iff).
 
 ## Terminal states are losing in the Accelerated Zeckendorf Game
 
@@ -123,7 +123,7 @@ Accelerated Zeckendorf Game from which no move is possible is a losing state.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 2.2, rule (1).
 
-Formalized by `MetaMathlibExt.accelZeckLosing_of_terminal`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-losing-of-terminal).
+Formalized by `MetaMathlibExt.accelZeckLosing_of_terminal`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-losing-of-terminal).
 
 ## The first player wins the game on $2$
 
@@ -136,7 +136,7 @@ The winning move is $1 \cdot C_1$, which reaches the terminal state with one cop
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 2.2 (Player 1 wins for `n = 2`).
 
-Formalized by `MetaMathlibExt.accelZeckWinning_single_one_two`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning-single-one-two).
+Formalized by `MetaMathlibExt.accelZeckWinning_single_one_two`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-winning-single-one-two).
 
 ## Zeckendorf decomposition as a game state
 
@@ -152,7 +152,7 @@ $i \in \{i_1, \dots, i_r\}$ and $s(i) = 0$ otherwise.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 1.1 and Theorem 1.3.
 
-Formalized by `MetaMathlibExt.zeckendorfState`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state).
+Formalized by `MetaMathlibExt.zeckendorfState`, a definition declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state).
 
 ## The Zeckendorf state of zero is empty
 
@@ -163,7 +163,7 @@ state, with no copies of any Fibonacci number.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 1.1.
 
-Formalized by `MetaMathlibExt.zeckendorfState_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state-zero).
+Formalized by `MetaMathlibExt.zeckendorfState_zero`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state-zero).
 
 ## The Zeckendorf state of $4$
 
@@ -174,7 +174,7 @@ and one copy of $F_1$, reflecting the Zeckendorf decomposition $4 = F_3 + F_1 = 
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Section 1.1.
 
-Formalized by `MetaMathlibExt.zeckendorfState_four`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state-four).
+Formalized by `MetaMathlibExt.zeckendorfState_four`, a theorem declared in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#zeckendorf-state-four).
 
 ## The Accelerated Zeckendorf Game terminates at the Zeckendorf decomposition
 
@@ -193,7 +193,7 @@ $$L \le \frac{3 + \sqrt 5}{2} n - IZ(n) - \frac{1 + \sqrt 5}{2} Z(n).$$
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.accelZeckGame_terminates_at_zeckendorf` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-terminates-at-zeckendorf).
+Stated but not proved: `MetaMathlibExt.accelZeckGame_terminates_at_zeckendorf` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-terminates-at-zeckendorf).
 
 ## Sharp lower bound on the length of an Accelerated Zeckendorf Game
 
@@ -208,7 +208,7 @@ game on $n$ has exactly $k - 1$ moves.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.accelZeckGame_sharp_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-sharp-lower-bound).
+Stated but not proved: `MetaMathlibExt.accelZeckGame_sharp_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-sharp-lower-bound).
 
 ## Lower bound on the length of an Accelerated Zeckendorf Game
 
@@ -222,7 +222,7 @@ to a state from which no move is possible) has at least $k - 1$ moves.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.accelZeckGame_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-lower-bound).
+Stated but not proved: `MetaMathlibExt.accelZeckGame_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-lower-bound).
 
 ## Moving a Fibonacci number of pairs in the Accelerated Zeckendorf Game
 
@@ -238,7 +238,7 @@ $F_p$ and $F_{i-1}$ copies of $F_{p+1}$.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.accelZeckMove_fib_combine` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move-fib-combine).
+Stated but not proved: `MetaMathlibExt.accelZeckMove_fib_combine` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-move-fib-combine).
 
 ## Sharp lower bound for the Accelerated Zeckendorf Game on a Fibonacci number
 
@@ -252,7 +252,7 @@ $F_k$ has exactly $k - 1$ moves.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Lemma 2.3.
 
-Stated but not proved: `MetaMathlibExt.accelZeckGame_sharp_lower_bound_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-sharp-lower-bound-fib).
+Stated but not proved: `MetaMathlibExt.accelZeckGame_sharp_lower_bound_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-game-sharp-lower-bound-fib).
 
 ## Unique winning first move
 
@@ -264,7 +264,7 @@ player has a winning strategy in the game on $n$, exactly one first move preserv
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Proposition 1.5.
 
-Stated but not proved: `MetaMathlibExt.accelZeck_unique_winning_first_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-unique-winning-first-move).
+Stated but not proved: `MetaMathlibExt.accelZeck_unique_winning_first_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-unique-winning-first-move).
 
 ## Accelerated Zeckendorf Game: Conjecture 1.7 implies Conjecture 1.6
 
@@ -279,7 +279,7 @@ Game on $n$) is winning.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Theorem 1.8 (with Conjectures 1.6 and 1.7).
 
-Stated but not proved: `MetaMathlibExt.accelZeck_conjecture17_implies_conjecture16` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-conjecture17-implies-conjectu).
+Stated but not proved: `MetaMathlibExt.accelZeck_conjecture17_implies_conjecture16` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-conjecture17-implies-conjectu).
 
 ## Accelerated Zeckendorf Game: Conjecture 1.7 in its first five cases
 
@@ -293,7 +293,7 @@ $k$ copies of $F_3$ and $n - 3k$ copies of $F_1$ is losing.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Lemma 1.9.
 
-Stated but not proved: `MetaMathlibExt.accelZeck_conjecture17_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-conjecture17-le-five).
+Stated but not proved: `MetaMathlibExt.accelZeck_conjecture17_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-conjecture17-le-five).
 
 ## Unique losing move from $k$ copies of $F_2$ for odd $k$
 
@@ -308,7 +308,7 @@ and every losing state reached in one move from $S$ equals $T$.
 
 - Diego Garcia-Fernandezsesma, Steven J. Miller, Thomas Rascon, Risa Vandegrift, and Ajmain Yamin, *The Accelerated Zeckendorf Game*, The Fibonacci Quarterly 62 (2024), no. 1, Article milleretal04072023, Lemma 2.4.
 
-Stated but not proved: `MetaMathlibExt.accelZeck_odd_unique_losing_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-odd-unique-losing-move).
+Stated but not proved: `MetaMathlibExt.accelZeck_odd_unique_losing_move` is written with `theorem_wanted` in [WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AcceleratedZeckendorfGameWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html#accel-zeck-odd-unique-losing-move).
 
 ## Depends on
 
@@ -317,4 +317,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Accelerated Zeckendorf game](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/accelerated-zeckendorf-game)

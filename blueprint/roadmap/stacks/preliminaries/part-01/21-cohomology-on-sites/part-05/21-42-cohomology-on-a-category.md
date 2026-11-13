@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.42 Cohomology on a category
 
-Section 21.42 of the Stacks Project, [Tag 08RY](https://stacks.math.columbia.edu/tag/08RY). 2 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.42 of the Stacks Project, [Tag 08RY](https://stacks.math.columbia.edu/tag/08RY). 2 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08RZ, an example
 
 [Tag 08RZ](https://stacks.math.columbia.edu/tag/08RZ) in the Stacks Project.
 
-**`Stacks.CategoryCohomology.cochainReplacement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L226). The attribute's comment: “the cochain replacement”.
+**`Stacks.CategoryCohomology.cochainReplacement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L226). The attribute's comment: “the cochain replacement”.
 
 > The functorial cosimplicial cochain replacement of an abelian presheaf.
 
@@ -25,7 +25,7 @@ noncomputable def cochainReplacement
       IsCochainReplacement C K}
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementComplex_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L332). The attribute's comment: “left exactness of the replacement”.
+**`Stacks.CategoryCohomology.cochainReplacementComplex_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L334). The attribute's comment: “left exactness of the replacement”.
 
 > The cochain replacement preserves finite limits, degree by degree.
 
@@ -35,7 +35,7 @@ theorem cochainReplacementComplex_preservesFiniteLimits
     PreservesFiniteLimits (cochainReplacementComplex C)
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementComplex_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L340). The attribute's comment: “right exactness of the replacement”.
+**`Stacks.CategoryCohomology.cochainReplacementComplex_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L342). The attribute's comment: “right exactness of the replacement”.
 
 > The cochain replacement preserves finite colimits, degree by degree.
 
@@ -45,7 +45,7 @@ theorem cochainReplacementComplex_preservesFiniteColimits
     PreservesFiniteColimits (cochainReplacementComplex C)
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L410). The attribute's comment: “cohomological delta functor”.
+**`Stacks.CategoryCohomology.cochainReplacementDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L412). The attribute's comment: “cohomological delta functor”.
 
 > The homology functors of the replacement, with their natural connecting
 > morphisms, form a cohomological delta functor.
@@ -58,7 +58,7 @@ noncomputable def cochainReplacementDeltaFunctor
         HomologicalComplex.homologyFunctor AddCommGrpCat.{max u v} (ComplexShape.up ℕ) n}
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementZeroHomologyIsoLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L562). The attribute's comment: “degree-zero cohomology”.
+**`Stacks.CategoryCohomology.cochainReplacementZeroHomologyIsoLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L564). The attribute's comment: “degree-zero cohomology”.
 
 > The zeroth cohomology of the replacement is naturally the limit of the
 > presheaf.
@@ -72,7 +72,7 @@ theorem cochainReplacementZeroHomologyIsoLimit
         (lim : (Cᵒᵖ ⥤ AddCommGrpCat.{max u v}) ⥤ AddCommGrpCat.{max u v}))
 ```
 
-**`Stacks.CategoryCohomology.pointSimplicialReplacement_contractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L652). The attribute's comment: “contractibility of the point simplicial replacement”.
+**`Stacks.CategoryCohomology.pointSimplicialReplacement_contractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L654). The attribute's comment: “contractibility of the point simplicial replacement”.
 
 > The simplicial set of chains `U₀ ⟶ ⋯ ⟶ Uₙ` equipped with a map
 > `U ⟶ U₀` is the nerve of the under-category of `U`, and is simplicially
@@ -85,7 +85,7 @@ theorem pointSimplicialReplacement_contractible
       SimplicialObject.homotopyEquivalences (Type u) f
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementPointIsoNerve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L808). The attribute's comment: “point-pushforward replacement as maps from the nerve”.
+**`Stacks.CategoryCohomology.cochainReplacementPointIsoNerve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L810). The attribute's comment: “point-pushforward replacement as maps from the nerve”.
 
 > The degree-`n` replacement of the point-pushforward of `A` is the group
 > of maps from the `n`-simplices of the nerve of `Under U` to `A`. These
@@ -111,7 +111,7 @@ theorem cochainReplacementPointIsoNerve
           ((e n).hom s) ((nerve (Under U)).δ i x)
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementPointAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 871](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L871). The attribute's comment: “point-pushforward acyclicity”.
+**`Stacks.CategoryCohomology.cochainReplacementPointAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 873](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L873). The attribute's comment: “point-pushforward acyclicity”.
 
 > Pushforward from a point of the chaotic site is acyclic for the cochain
 > replacement in every positive degree.
@@ -126,7 +126,7 @@ theorem cochainReplacementPointAcyclic
           ((GrothendieckTopology.pointBot U).skyscraperSheafFunctor.obj A))))
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementPointProductAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 965](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L965). The attribute's comment: “product acyclicity”.
+**`Stacks.CategoryCohomology.cochainReplacementPointProductAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 968](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L968). The attribute's comment: “product acyclicity”.
 
 > A product of pushforwards from points is acyclic in positive degrees.
 
@@ -142,7 +142,7 @@ theorem cochainReplacementPointProductAcyclic
             ((GrothendieckTopology.pointBot (U i)).skyscraperSheafFunctor.obj (A i)))))
 ```
 
-**`Stacks.CategoryCohomology.presheafEmbedsInPointProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L990). The attribute's comment: “embedding into a product of point pushforwards”.
+**`Stacks.CategoryCohomology.presheafEmbedsInPointProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 993](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L993). The attribute's comment: “embedding into a product of point pushforwards”.
 
 > Every abelian presheaf embeds in a product of point-pushforwards.
 
@@ -157,7 +157,7 @@ theorem presheafEmbedsInPointProduct
         Mono f
 ```
 
-**`Stacks.CategoryCohomology.cochainReplacementHomologyIsoSiteCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L1033). The attribute's comment: “right-derived global sections”.
+**`Stacks.CategoryCohomology.cochainReplacementHomologyIsoSiteCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean, line 1036](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/CochainReplacement.lean#L1036). The attribute's comment: “right-derived global sections”.
 
 > The cohomology of the cochain replacement computes the right-derived
 > functors of global sections on the chaotic site.
@@ -178,7 +178,7 @@ theorem cochainReplacementHomologyIsoSiteCohomology
 
 [Tag 08S0](https://stacks.math.columbia.edu/tag/08S0) in the Stacks Project.
 
-**`Stacks.CategoryExt.extCochainComplexBifunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L340). The attribute's comment: “the cochain bifunctor”.
+**`Stacks.CategoryExt.extCochainComplexBifunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L340). The attribute's comment: “the cochain bifunctor”.
 
 > **Stacks 08S0.** The cochain complex computing homomorphisms of `O`-modules, as a bifunctor
 > contravariant in the source module and covariant in the target module.
@@ -189,7 +189,7 @@ def extCochainComplexBifunctor (C : Type u) [SmallCategory C] (O : Cᵒᵖ ⥤ R
       CochainComplex AddCommGrpCat.{max u m} ℕ
 ```
 
-**`Stacks.CategoryExt.extCochainComplex_d_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L368). The attribute's comment: “the alternating differential”.
+**`Stacks.CategoryExt.extCochainComplex_d_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L368). The attribute's comment: “the alternating differential”.
 
 > The differential of `K^•(G, F)` is the alternating sum of the coface maps.
 
@@ -201,7 +201,7 @@ lemma extCochainComplex_d_apply (n : ℕ) (φ : extCochain G F n)
         (extCochainSimplexMap G F (SimplexCategory.δ i) φ x s)
 ```
 
-**`Stacks.CategoryExt.extCochainComplex_d_zero_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L397). The attribute's comment: “the degree-zero differential”.
+**`Stacks.CategoryExt.extCochainComplex_d_zero_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L397). The attribute's comment: “the degree-zero differential”.
 
 > The degree-zero differential of `K^•(G, F)`: on an arrow `U₀ ⟶ U₁` it is
 > `ρ^{U₁}_{U₀} ∘ φ_{U₁} - φ_{U₀} ∘ ρ^{U₁}_{U₀}`.
@@ -214,7 +214,7 @@ lemma extCochainComplex_d_zero_apply (φ : extCochain G F 0) (x : ComposableArro
     (extCochainComplex G F).d 0 1 φ x s = p - q
 ```
 
-**`Stacks.CategoryExt.extCochainComplex_d_one_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L419). The attribute's comment: “the degree-one differential”.
+**`Stacks.CategoryExt.extCochainComplex_d_one_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L419). The attribute's comment: “the degree-one differential”.
 
 > The degree-one differential of `K^•(G, F)`: on a string `U₀ ⟶ U₁ ⟶ U₂` it is
 > `φ_{U₀ → U₁} ∘ ρ^{U₂}_{U₁} - φ_{U₀ → U₂} + ρ^{U₁}_{U₀} ∘ φ_{U₁ → U₂}`.
@@ -228,7 +228,7 @@ lemma extCochainComplex_d_one_apply (φ : extCochain G F 1) (x : ComposableArrow
     (extCochainComplex G F).d 1 2 φ x s = p - q + r
 ```
 
-**`Stacks.CategoryExt.extCochainComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L592). The attribute's comment: “degree-zero cohomology”.
+**`Stacks.CategoryExt.extCochainComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplex.lean#L592). The attribute's comment: “degree-zero cohomology”.
 
 > **Stacks 08S0.** The degree-zero cohomology of `K^•(G, F)` is the group of homomorphisms
 > of `O`-modules from `G` to `F`.
@@ -238,7 +238,7 @@ def extCochainComplexHomologyZeroIso (G F : PresheafOfModules.{m} O) :
     (extCochainComplex G F).homology 0 ≅ AddCommGrpCat.of (G ⟶ F)
 ```
 
-**`Stacks.CategoryExt.shortExact_extCochainComplexShortComplexRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L367). The attribute's comment: “exactness in the second variable”.
+**`Stacks.CategoryExt.shortExact_extCochainComplexShortComplexRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L367). The attribute's comment: “exactness in the second variable”.
 
 > Exactness in the second variable: if `G` is projective at every object, the
 > cochain complex carries a short exact sequence of targets to a short exact sequence of
@@ -250,7 +250,7 @@ lemma shortExact_extCochainComplexShortComplexRight
     (extCochainComplexShortComplexRight G S).ShortExact
 ```
 
-**`Stacks.CategoryExt.shortExact_extCochainComplexShortComplexLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L378). The attribute's comment: “exactness in the first variable, when F(U) is injective over O(V) for every arrow U ⟶ V”.
+**`Stacks.CategoryExt.shortExact_extCochainComplexShortComplexLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L378). The attribute's comment: “exactness in the first variable, when F(U) is injective over O(V) for every arrow U ⟶ V”.
 
 > Exactness in the first variable: if the target stays injective after
 > restriction of scalars along every arrow, the cochain complex carries a short exact sequence of
@@ -264,7 +264,7 @@ lemma shortExact_extCochainComplexShortComplexLeft
     (extCochainComplexShortComplexLeft F S).ShortExact
 ```
 
-**`Stacks.CategoryExt.extAddEquivCohomology_of_objectwiseProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 855](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L855). The attribute's comment: “objectwise-projective case, every degree”.
+**`Stacks.CategoryExt.extAddEquivCohomology_of_objectwiseProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 855](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L855). The attribute's comment: “objectwise-projective case, every degree”.
 
 > Case (1): if the first module is projective at every object, the cochain
 > complex computes all its `Ext` groups: `Ext^n_O(G, F) ≅ H^n(K^•(G, F))` for every `n`.
@@ -275,7 +275,7 @@ def extAddEquivCohomology_of_objectwiseProjective (G F : PresheafOfModules.{max 
     Abelian.zExt G F (n : ℤ) ≃+ (extCochainComplex G F).homology n
 ```
 
-**`Stacks.CategoryExt.extAddEquivCohomology_of_arrowwiseInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L1123). The attribute's comment: “case (2), every degree, F(U) injective over O(V) for every arrow U ⟶ V; objectwise injectivity does not suffice, see Stacks.CategoryExt.ArrowCounterexample.injective\_obj\_and\_not\_nonempty\_extAddEquiv\_two”.
+**`Stacks.CategoryExt.extAddEquivCohomology_of_arrowwiseInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L1123). The attribute's comment: “case (2), every degree, F(U) injective over O(V) for every arrow U ⟶ V; objectwise injectivity does not suffice, see Stacks.CategoryExt.ArrowCounterexample.injective\_obj\_and\_not\_nonempty\_extAddEquiv\_two”.
 
 > Case (2): if each section of the second module remains injective after
 > restriction of scalars along every arrow, the cochain complex computes all `Ext` groups into it:
@@ -293,7 +293,7 @@ def extAddEquivCohomology_of_arrowwiseInjective (G F : PresheafOfModules.{max u 
     Abelian.zExt G F (n : ℤ) ≃+ (extCochainComplex G F).homology n
 ```
 
-**`Stacks.CategoryExt.ArrowCounterexample.injective_obj_and_not_nonempty_extAddEquiv_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexCounterexample.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexCounterexample.lean#L495). The attribute's comment: “the counterexample: objectwise injectivity of F does not suffice in case (2)”.
+**`Stacks.CategoryExt.ArrowCounterexample.injective_obj_and_not_nonempty_extAddEquiv_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexCounterexample.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexCounterexample.lean#L495). The attribute's comment: “the counterexample: objectwise injectivity of F does not suffice in case (2)”.
 
 > **Stacks 08S0**, the counterexample to case (2) with objectwise injectivity. On the category
 > `false ⟶ true` with `O(true) = ℤ`, `O(false) = ℤ/2`, the module `F = target` has
@@ -308,7 +308,7 @@ theorem injective_obj_and_not_nonempty_extAddEquiv_two :
         (extCochainComplex source target).homology 2)
 ```
 
-**`Stacks.CategoryExt.isLimitExtCochainComplexFanOfDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean#L212). The attribute's comment: “direct sums in the first variable become products”.
+**`Stacks.CategoryExt.isLimitExtCochainComplexFanOfDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean#L212). The attribute's comment: “direct sums in the first variable become products”.
 
 > **Stacks 08S0.** The cochain bifunctor transforms direct sums in the first variable into
 > products: if the cofan `c` exhibits its point as the direct sum of a family `Gι` of `O`-modules,
@@ -323,7 +323,7 @@ def isLimitExtCochainComplexFanOfDirectSum {ι : Type t} [Small.{m} ι]
       (fun i ↦ (extCochainComplexBifunctor C O).map ((c.inj i).op, 𝟙 F)))
 ```
 
-**`Stacks.CategoryExt.isLimitExtCochainComplexFanOfProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean#L225). The attribute's comment: “products in the second variable”.
+**`Stacks.CategoryExt.isLimitExtCochainComplexFanOfProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexProducts.lean#L225). The attribute's comment: “products in the second variable”.
 
 > **Stacks 08S0.** The cochain bifunctor commutes with products in the second variable: if the
 > fan `c` exhibits its point as the product of a family `Fι` of `O`-modules, then the maps which
@@ -345,4 +345,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.42, Tag 08RY](https://stacks.math.columbia.edu/tag/08RY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

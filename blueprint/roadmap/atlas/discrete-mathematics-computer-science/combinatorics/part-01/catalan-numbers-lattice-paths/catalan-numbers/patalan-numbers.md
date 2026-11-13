@@ -8,7 +8,7 @@ proof: formalized
 
 # Patalan numbers
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html).
 
 ## Binomial coefficient with rational upper argument
 
@@ -23,7 +23,7 @@ numbers.
 
 - Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Richardson/rich2.tex>.
 
-Formalized by `MetaMathlibExt.patalanGeneralizedBinomial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#patalan-generalized-binomial).
+Formalized by `MetaMathlibExt.patalanGeneralizedBinomial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#patalan-generalized-binomial).
 
 ## Admissible parameters for the (p,q)-Patalan numbers
 
@@ -34,7 +34,7 @@ $(p,q)$-Patalan numbers is a pair of natural numbers $p$ and $q$ with $p > 1$ an
 
 - Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Richardson/rich2.tex>.
 
-Formalized by `MetaMathlibExt.PQPatalanParams`, a structure declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pqpatalan-params).
+Formalized by `MetaMathlibExt.PQPatalanParams`, a structure declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pqpatalan-params).
 
 ## The (p,q)-Patalan numbers
 
@@ -47,7 +47,7 @@ binomial coefficient with rational upper argument $r$.
 
 - Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Richardson/rich2.tex>.
 
-Formalized by `MetaMathlibExt.pqPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pq-patalan-number).
+Formalized by `MetaMathlibExt.pqPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PQPatalanNumbers.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pq-patalan-number).
 
 ## The (p,q)-super Patalan numbers
 
@@ -61,7 +61,7 @@ argument $r$.
 
 - Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3.
 
-Formalized by `MetaMathlibExt.pqSuperPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pq-super-patalan-number).
+Formalized by `MetaMathlibExt.pqSuperPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#pq-super-patalan-number).
 
 ## Super Patalan numbers of order p
 
@@ -71,7 +71,7 @@ is, the rational number $(-1)^j p^{2(i+j)} \binom{i - 1/p}{i+j}$, where
 $\binom{r}{k} = r(r-1)\cdots(r-k+1)/k!$ is the binomial coefficient with rational upper
 argument $r$.
 
-Formalized by `MetaMathlibExt.superPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#super-patalan-number).
+Formalized by `MetaMathlibExt.superPatalanNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PQSuperPatalanNumbers.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html#super-patalan-number).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Patalan numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/patalan-numbers)

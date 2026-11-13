@@ -8,7 +8,7 @@ proof: formalized
 
 # 18.34 Finite order differential operators
 
-Section 18.34 of the Stacks Project, [Tag 09CQ](https://stacks.math.columbia.edu/tag/09CQ). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.34 of the Stacks Project, [Tag 09CQ](https://stacks.math.columbia.edu/tag/09CQ). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09CR, a definition
 
@@ -16,13 +16,13 @@ Section 18.34 of the Stacks Project, [Tag 09CQ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L71) (StacksFrontier).
+- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L71) (StacksFrontier).
 
 ## Tag 09CS, a lemma
 
 [Tag 09CS](https://stacks.math.columbia.edu/tag/09CS) in the Stacks Project.
 
-**`DiffOp.isGlobalDiffOpOfOrder_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L523). References: EGA IV (16.8.9), “more general”; EGA IV (16.8.10), “more general”; SGA 3 VIIA (1.2), “sheaf, deviations of id”; SGA 3 VIIA (1.4), “partial”; SGA 6 II (AppII.1.2.4), “more general”.
+**`DiffOp.isGlobalDiffOpOfOrder_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L523). References: EGA IV (16.8.9), “more general”; EGA IV (16.8.10), “more general”; SGA 3 VIIA (1.2), “sheaf, deviations of id”; SGA 3 VIIA (1.4), “partial”; SGA 6 II (AppII.1.2.4), “more general”.
 
 > The composition of a differential operator of order `k` with a differential operator
 > of order `k'` is a differential operator of order `k + k'`.
@@ -44,7 +44,7 @@ theorem isGlobalDiffOpOfOrder_comp (φ : O₁ ⟶ O₂)
 
 [Tag 09CT](https://stacks.math.columbia.edu/tag/09CT) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.existsUnique_descDiffOp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L187). The attribute's comment: “unique-factorization form”. References: EGA IV (16.8.3), “(16.8.3.1)”; SGA 6 II (AppII.1.2.3); SGA 6 II (AppII.1.2.2), “(1.2.2.1)”.
+**`AlgebraicGeometry.SheafOfModules.existsUnique_descDiffOp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L187). The attribute's comment: “unique-factorization form”. References: EGA IV (16.8.3), “(16.8.3.1)”; SGA 6 II (AppII.1.2.3); SGA 6 II (AppII.1.2.2), “(1.2.2.1)”.
 
 > **Stacks 09CT**, in unique-factorization form: every differential operator of order at
 > most `k` out of `F` factors through the universal one by a unique morphism of sheaves of
@@ -58,7 +58,7 @@ theorem existsUnique_descDiffOp
       postcomp (universalDiffOp.{v, u, w, m} phi F k) f = D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.differentialOperatorsFunctor_isCorepresentable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L571). References: EGA IV (16.8.3), “(16.8.3.1)”; SGA 6 II (AppII.1.2.3); SGA 6 II (AppII.1.2.2), “(1.2.2.1)”.
+**`AlgebraicGeometry.SheafOfModules.differentialOperatorsFunctor_isCorepresentable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L571). References: EGA IV (16.8.3), “(16.8.3.1)”; SGA 6 II (AppII.1.2.3); SGA 6 II (AppII.1.2.2), “(1.2.2.1)”.
 
 > Differential operators of order at most `k` out of a fixed module sheaf are
 > represented by a sheaf of modules (the sheaf of principal parts).
@@ -73,7 +73,7 @@ noncomputable instance differentialOperatorsFunctor_isCorepresentable (phi : O�
 
 [Tag 09CU](https://stacks.math.columbia.edu/tag/09CU) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164). The attribute's comment: “the module of principal parts of order k”. References: SGA 6 II (AppII.1.2.2), “P^n\_\{X/S}(E)”.
+**`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164). The attribute's comment: “the module of principal parts of order k”. References: SGA 6 II (AppII.1.2.2), “P^n\_\{X/S}(E)”.
 
 > The sheaf of principal parts `Pᵏ_{O₂/O₁}(F)`: the sheaf of modules corepresenting the
 > functor of differential operators of order at most `k` out of `F`.
@@ -88,7 +88,7 @@ noncomputable abbrev moduleOfPrincipalParts
 
 [Tag 09CV](https://stacks.math.columbia.edu/tag/09CV) in the Stacks Project.
 
-**`Stacks.Sheaves.PrincipalParts.principalPartsSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean#L697). References: EGA IV (16.4.24), “(ii)”.
+**`Stacks.Sheaves.PrincipalParts.principalPartsSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean#L697). References: EGA IV (16.4.24), “(ii)”.
 
 > **Stacks Project, Tag 0G3U**, which read as a statement about the sheaf of principal parts
 > is **Tag 09CV**. Let `φ : O₁ ⟶ O₂` be a morphism of presheaves of
@@ -139,7 +139,7 @@ noncomputable def principalPartsSheafification [HasWeakSheafify J CommRingCat.{u
 
 [Tag 09CW](https://stacks.math.columbia.edu/tag/09CW) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.exists_shortExact_principalPartsSequence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsJet.lean, line 1178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsJet.lean#L1178). The attribute's comment: “field 8 ALONE: the short exact sequence of the principal-parts sequence, now”. References: SGA 6 II (AppII.1.2.4), “n = 1”.
+**`AlgebraicGeometry.SheafOfModules.exists_shortExact_principalPartsSequence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsJet.lean, line 1178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsJet.lean#L1178). The attribute's comment: “field 8 ALONE: the short exact sequence of the principal-parts sequence, now”. References: SGA 6 II (AppII.1.2.4), “n = 1”.
 
 > **The sequence of principal parts is a short exact sequence.**
 
@@ -153,7 +153,7 @@ theorem exists_shortExact_principalPartsSequence' :
           (underlyingRingSheafMapOfSite φ) 1).app F) h).ShortExact
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceStructure.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceStructure.lean#L190). The attribute's comment: “the tag's OWN assertion: a functorial first-principal-parts sequence exists, i.e. the eight-field record is inhabited. The individual clauses of field 8 are carried separately in `PrincipalPartsJet.lean` and `PrincipalPartsSequence.lean`.”. References: SGA 6 II (AppII.1.2.4), “n = 1”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceStructure.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceStructure.lean#L190). The attribute's comment: “the tag's OWN assertion: a functorial first-principal-parts sequence exists, i.e. the eight-field record is inhabited. The individual clauses of field 8 are carried separately in `PrincipalPartsJet.lean` and `PrincipalPartsSequence.lean`.”. References: SGA 6 II (AppII.1.2.4), “n = 1”.
 
 > The functorial short exact sequence of first principal parts exists.
 
@@ -166,7 +166,7 @@ theorem principalPartsSequence_nonempty (O₁ O₂ : Sheaf J CommRingCat.{w})
 
 [Tag 09CX](https://stacks.math.columbia.edu/tag/09CX) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L255). The attribute's comment: “maps”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L255). The attribute's comment: “maps”.
 
 > **Stacks 09CX.** The map on order-`k` principal parts induced by a commutative square of
 > sheaves of rings together with a compatible linear map of module sheaves.
@@ -184,7 +184,7 @@ noncomputable def principalPartsMapOfSquare
         (moduleOfPrincipalParts.{v, u, w, m} φ' F' k)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_universalOperator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L282). The attribute's comment: “maps”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_universalOperator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L282). The attribute's comment: “maps”.
 
 > The induced map sends each universal local generator to the generator associated to its
 > image under the module map.
@@ -197,7 +197,7 @@ theorem principalPartsMapOfSquare_universalOperator (k : ℕ) (X : Cᵒᵖ) (s :
         ((uF.val.app X).hom s)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_comp_orderReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L323). The attribute's comment: “maps”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_comp_orderReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L323). The attribute's comment: “maps”.
 
 > The induced maps commute with the canonical maps reducing the order from `k + 1` to `k`.
 
@@ -210,7 +210,7 @@ theorem principalPartsMapOfSquare_comp_orderReduction (k : ℕ) :
           (principalPartsOrderReduction.{v, u, w, m} φ' F' k)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L407). The attribute's comment: “composition of the maps”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsMapOfSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsChangeOfRings.lean#L407). The attribute's comment: “composition of the maps”.
 
 > **Stacks 09CX.** The map on principal parts associated to two successive compatible squares
 > is the composite of their maps on principal parts.
@@ -235,7 +235,7 @@ theorem principalPartsMapOfSquare_comp
           (principalPartsMapOfSquare.{v, u, w, m} φ' φ'' α' β' h' F' F'' uF' k)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_naturality_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean#L280). The attribute's comment: “sequence naturality: the projection square”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_naturality_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean#L280). The attribute's comment: “sequence naturality: the projection square”.
 
 > **Stacks 09CX.** The change-of-rings maps on first principal parts are compatible with the
 > projections of the short exact sequences of Tag 09CW: the right-hand square of the naturality
@@ -258,7 +258,7 @@ theorem principalPartsSequence_naturality_projection
         (underlyingRingSheafMapOfSite φ) 1).app F ≫ uF
 ```
 
-**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_naturality_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean#L658). The attribute's comment: “sequence naturality: the inclusion square”.
+**`AlgebraicGeometry.SheafOfModules.principalPartsSequence_naturality_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSequenceNaturality.lean#L658). The attribute's comment: “sequence naturality: the inclusion square”.
 
 > **Stacks 09CX.** The change-of-rings maps on first principal parts are compatible with the
 > inclusions of the short exact sequences of Tag 09CW: the left-hand square of the naturality
@@ -286,4 +286,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.34, Tag 09CQ](https://stacks.math.columbia.edu/tag/09CQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

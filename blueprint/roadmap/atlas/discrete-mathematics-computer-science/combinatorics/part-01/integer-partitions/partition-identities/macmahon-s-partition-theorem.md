@@ -8,7 +8,7 @@ proof: formalized
 
 # MacMahon's partition theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html).
 
 ## Andrews' generalization of MacMahon's partition theorem
 
@@ -28,7 +28,7 @@ partitions into distinct parts are equinumerous, applied with $q$ replaced by $q
 
 - Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem `andthm` (Andrews' generalization), source lines 113–115, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.tex>. The paper attributes the result to Andrews.
 
-Formalized by `MetaMathlibExt.andrews_macmahon_partition_identity`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/AndrewsMacMahonPartition.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Partition/AndrewsMacMahonPartition.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html#andrews-macmahon-partition-identity).
+Formalized by `MetaMathlibExt.andrews_macmahon_partition_identity`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/AndrewsMacMahonPartition.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Partition/AndrewsMacMahonPartition.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html#andrews-macmahon-partition-identity).
 
 ## MacMahon's partition theorem
 
@@ -43,7 +43,7 @@ partition.
 
 - Beaullah Mugwangwavari and Darlison Nyirenda, "A Note on the Andrews-Ericksson-Petrov-Romick Bijection for MacMahon's Partition Theorem", Journal of Integer Sequences 24 (2021), Article 21.5.6, Theorem `MacMahon`, source lines 88–97 with the displayed statement at lines 91–93, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Nyirenda/nyir26.tex>. The paper attributes the theorem to P. A. MacMahon, *Combinatory Analysis*, Vol. 2 (1916).
 
-Formalized by `MetaMathlibExt.macmahon_multiplicity_one_free`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/MacMahonMultiplicityOneFree.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Partition/MacMahonMultiplicityOneFree.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html#macmahon-multiplicity-one-free).
+Formalized by `MetaMathlibExt.macmahon_multiplicity_one_free`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/MacMahonMultiplicityOneFree.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Partition/MacMahonMultiplicityOneFree.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html#macmahon-multiplicity-one-free).
 
 ## Depends on
 
@@ -52,4 +52,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: MacMahon's partition theorem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/macmahon-s-partition-theorem)

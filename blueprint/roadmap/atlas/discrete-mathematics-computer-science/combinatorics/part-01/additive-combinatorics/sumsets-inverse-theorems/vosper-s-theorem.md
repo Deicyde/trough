@@ -8,7 +8,7 @@ proof: formalized
 
 # Vosper's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html).
 
 ## Arithmetic progressions with a common difference
 
@@ -23,7 +23,7 @@ and different lengths.
 
 - Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem [Vosper] `theo_Vosper` condition (iii), lines 256–267, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.tex>: "`A` and `B` are arithmetic progressions with the same common difference".
 
-Formalized by `MetaMathlibExt.AreFiniteArithmeticProgressionsWithCommonDifference`, a definition declared in [MathlibExt/Combinatorics/Additive/CommonDifferenceProgressions.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/CommonDifferenceProgressions.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html#are-finite-arithmetic-progressions-with).
+Formalized by `MetaMathlibExt.AreFiniteArithmeticProgressionsWithCommonDifference`, a definition declared in [MathlibExt/Combinatorics/Additive/CommonDifferenceProgressions.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/CommonDifferenceProgressions.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html#are-finite-arithmetic-progressions-with).
 
 ## Vosper's theorem
 
@@ -40,7 +40,7 @@ with $A = \{a_0 + n d : 0 \le n < |A|\}$ and $B = \{b_0 + n d : 0 \le n < |B|\}$
 
 - Fabián Arias, Jerson Borja, and Samuel Anaya, *Counting Integers Representable as Sums of k-th Powers Modulo n*, Journal of Integer Sequences 26 (2023), Article 23.8.1, Theorem [Vosper] `theo_Vosper`, lines 256–267, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Borja/borja4.tex>.
 
-Formalized by `MetaMathlibExt.vosper_eq_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/VosperTheorem.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/VosperTheorem.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html#vosper-eq-iff).
+Formalized by `MetaMathlibExt.vosper_eq_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/VosperTheorem.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/VosperTheorem.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html#vosper-eq-iff).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Vosper's theorem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/vosper-s-theorem)

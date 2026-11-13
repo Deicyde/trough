@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.15 Algebraic stacks, overhauled
 
-Section 94.15 of the Stacks Project, [Tag 04T0](https://stacks.math.columbia.edu/tag/04T0). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.15 of the Stacks Project, [Tag 04T0](https://stacks.math.columbia.edu/tag/04T0). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04T1, a lemma
 
 [Tag 04T1](https://stacks.math.columbia.edu/tag/04T1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_smoothSurjectivePresentation_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationLift.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresentationLift.lean#L190).
+**`AlgebraicGeometry.Stack.exists_smoothSurjectivePresentation_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationLift.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationLift.lean#L190).
 
 > **Stacks 04T1.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `y : (Sch/V)_fppf ⟶ 𝒴` be surjective and smooth. Then there are a scheme `U` over `S`, a
@@ -46,7 +46,7 @@ theorem exists_smoothSurjectivePresentation_lift
 
 [Tag 04Y5](https://stacks.math.columbia.edu/tag/04Y5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.faithful_homFunctor_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L63). The attribute's comment: “the implication (3) ⟹ (2)”.
+**`AlgebraicGeometry.Stack.faithful_homFunctor_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L63). The attribute's comment: “the implication (3) ⟹ (2)”.
 
 > A 1-morphism of categories fibred in groupoids over the big fppf site of `S` which is
 > representable by algebraic spaces has faithful underlying functor.
@@ -58,7 +58,7 @@ theorem faithful_homFunctor_of_isRepresentableByAlgebraicSpaces
     (CatFiberedInGroupoids.homFunctor f).Faithful
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.faithful_homFunctor_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L79). The attribute's comment: “the implication (3) ⟹ (2) for algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.faithful_homFunctor_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L79). The attribute's comment: “the implication (3) ⟹ (2) for algebraic stacks”.
 
 > A 1-morphism of algebraic stacks over `S` which is representable by algebraic spaces has
 > faithful underlying functor.
@@ -70,7 +70,7 @@ theorem faithful_homFunctor_of_isRepresentableByAlgebraicSpaces
     (CatFiberedInGroupoids.homFunctor f.hom).Faithful
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.faithful_homFunctor_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean#L119).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.faithful_homFunctor_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean#L119).
 
 > **Stacks 04Y5.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -99,13 +99,13 @@ theorem faithful_homFunctor_tfae {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S h
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsFiberedInGroupoids.faithful_iff_forall_fiber`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L207), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L55) (StacksFrontier): “the equivalence of parts (1) and (2)”.
+- [`CategoryTheory.Functor.IsFiberedInGroupoids.faithful_iff_forall_fiber`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L208), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentable.lean#L55) (StacksFrontier): “the equivalence of parts (1) and (2)”.
 
 ## Tag 05UL, a lemma
 
 [Tag 05UL](https://stacks.math.columbia.edu/tag/05UL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_smoothPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationAlgebraicStack.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationAlgebraicStack.lean#L82).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_smoothPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationAlgebraicStack.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationAlgebraicStack.lean#L82).
 
 > **Stacks 05UL.** A stack in groupoids over the big fppf site of `S` which receives a
 > 1-morphism from a category representable by an algebraic space that is representable by
@@ -127,7 +127,7 @@ theorem isAlgebraicStack_of_smoothPresentation (v : 𝒰 ⟶ 𝒳)
 
 [Tag 05UM](https://stacks.math.columbia.edu/tag/05UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_source_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean#L145).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_source_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean#L145).
 
 > **Stacks 05UM.** If a 1-morphism `j : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big
 > fppf site of `S` is representable by algebraic spaces and `𝒴` is an algebraic stack over `S`,
@@ -154,7 +154,7 @@ theorem isAlgebraicStack_source_of_isRepresentableByAlgebraicSpaces (j : 𝒳 �
 
 [Tag 05UN](https://stacks.math.columbia.edu/tag/05UN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStack_and_isAlgebraicStack_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean#L188).
+**`AlgebraicGeometry.Stack.isStack_and_isAlgebraicStack_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismAlgebraicStack.lean#L188).
 
 > **Stacks 05UN.** Let `j : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the
 > big fppf site of `S` which is representable by algebraic spaces. If `𝒴` is a stack in groupoids
@@ -171,7 +171,7 @@ theorem isStack_and_isAlgebraicStack_of_isRepresentableByAlgebraicSpaces (j : �
       (IsAlgebraicStack.{u, w} B S hS 𝒴.val → IsAlgebraicStack.{u, w} B S hS 𝒳.val)
 ```
 
-**`AlgebraicGeometry.Stack.isStack_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean, line 808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean#L808). The attribute's comment: “the stack-in-groupoids clause”.
+**`AlgebraicGeometry.Stack.isStack_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean, line 808](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean#L808). The attribute's comment: “the stack-in-groupoids clause”.
 
 > **Stacks 05UN, the stack-in-groupoids clause.** A category fibred in groupoids over the big
 > fppf site of `S` admitting a 1-morphism representable by algebraic spaces into a stack in
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.15, Tag 04T0](https://stacks.math.columbia.edu/tag/04T0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

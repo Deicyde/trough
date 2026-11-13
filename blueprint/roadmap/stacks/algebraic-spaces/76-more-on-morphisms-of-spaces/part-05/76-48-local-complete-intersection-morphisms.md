@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.48 Local complete intersection morphisms
 
-Section 76.48 of the Stacks Project, [Tag 06C3](https://stacks.math.columbia.edu/tag/06C3). 13 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.48 of the Stacks Project, [Tag 06C3](https://stacks.math.columbia.edu/tag/06C3). 13 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06C4, a definition
 
 [Tag 06C4](https://stacks.math.columbia.edu/tag/06C4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocalCompleteIntersection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean#L77). The attribute's comment: “part (1): local complete intersection morphisms”.
+**`AlgebraicGeometry.Space.IsLocalCompleteIntersection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean#L77). The attribute's comment: “part (1): local complete intersection morphisms”.
 
 > **Stacks 06C4, part (1).** A morphism of algebraic spaces over `S` is a *local complete
 > intersection morphism*, or a *Koszul morphism*, when every commuting square of étale scheme
@@ -24,7 +24,7 @@ Section 76.48 of the Stacks Project, [Tag 06C3](https://stacks.math.columbia.edu
 abbrev IsLocalCompleteIntersection (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.KoszulAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean#L86). The attribute's comment: “part (2): Koszul at a point”.
+**`AlgebraicGeometry.Space.KoszulAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection.lean#L86). The attribute's comment: “part (2): Koszul at a point”.
 
 > **Stacks 06C4, part (2).** A morphism of algebraic spaces over `S` is *Koszul at* a
 > point `x` of its source when it is a local complete intersection morphism on an open
@@ -38,7 +38,7 @@ abbrev KoszulAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 06C5](https://stacks.math.columbia.edu/tag/06C5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isKoszulRegularImmersion_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ImmersionIntoSmooth.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ImmersionIntoSmooth.lean#L236).
+**`AlgebraicGeometry.Space.isKoszulRegularImmersion_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ImmersionIntoSmooth.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ImmersionIntoSmooth.lean#L236).
 
 > **Stacks 06C5.** Let `f : X ⟶ Y` be a local complete intersection morphism of algebraic
 > spaces over `S`, let `p : P ⟶ Y` be smooth, let `a : U ⟶ X` be étale and let `i : U ⟶ P` be an
@@ -59,7 +59,7 @@ theorem isKoszulRegularImmersion_of_isLocalCompleteIntersection (B : BigFppfSite
 
 [Tag 06C6](https://stacks.math.columbia.edu/tag/06C6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L56). The attribute's comment: “part (1): locally of finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L56). The attribute's comment: “part (1): locally of finite presentation”.
 
 > **Stacks 06C6, part (1).** A local complete intersection morphism of algebraic spaces over
 > `S` is locally of finite presentation.
@@ -71,7 +71,7 @@ theorem isLocallyOfFinitePresentation_of_isLocalCompleteIntersection (B : BigFpp
     IsLocallyOfFinitePresentation B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L66). The attribute's comment: “part (2): pseudo-coherent”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L66). The attribute's comment: “part (2): pseudo-coherent”.
 
 > **Stacks 06C6, part (2).** A local complete intersection morphism of algebraic spaces over
 > `S` is pseudo-coherent.
@@ -83,7 +83,7 @@ theorem isPseudoCoherent_of_isLocalCompleteIntersection (B : BigFppfSite.{u})
     IsPseudoCoherent B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isPerfect_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L76). The attribute's comment: “part (3): perfect”.
+**`AlgebraicGeometry.Space.isPerfect_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Perfect.lean#L76). The attribute's comment: “part (3): perfect”.
 
 > **Stacks 06C6, part (3).** A local complete intersection morphism of algebraic spaces over
 > `S` is perfect.
@@ -99,7 +99,7 @@ theorem isPerfect_of_isLocalCompleteIntersection (B : BigFppfSite.{u})
 
 [Tag 06C7](https://stacks.math.columbia.edu/tag/06C7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FlatBaseChange.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FlatBaseChange.lean#L109).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FlatBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FlatBaseChange.lean#L110).
 
 > A flat base change of a local complete intersection morphism of algebraic spaces is a local
 > complete intersection morphism: if `f : X ⟶ Y` is Koszul and `g : Y' ⟶ Y` is flat, then the
@@ -117,7 +117,7 @@ public theorem isLocalCompleteIntersection_pullback_snd
 
 [Tag 06C8](https://stacks.math.columbia.edu/tag/06C8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Composition.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Composition.lean#L36).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Composition.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Composition.lean#L36).
 
 > A composition of local complete intersection morphisms of algebraic spaces over `S` is a
 > local complete intersection morphism: if `f : X ⟶ Y` and `g : Y ⟶ Z` are local complete
@@ -138,7 +138,7 @@ public theorem isLocalCompleteIntersection_comp (B : BigFppfSite.{u}) (S : Schem
 
 [Tag 06C9](https://stacks.math.columbia.edu/tag/06C9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_iff_isFlat_and_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L148).
+**`AlgebraicGeometry.Space.isSyntomic_iff_isFlat_and_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L148).
 
 > **Stacks 06C9.** A morphism of algebraic spaces over `S` is syntomic if and only if it is
 > flat and a local complete intersection morphism.
@@ -155,7 +155,7 @@ theorem isSyntomic_iff_isFlat_and_isLocalCompleteIntersection (f : X ⟶ Y) :
 
 [Tag 0CHK](https://stacks.math.columbia.edu/tag/0CHK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_of_isKoszulRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RegularImmersionLocalCompleteIntersection.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RegularImmersionLocalCompleteIntersection.lean#L73).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_of_isKoszulRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RegularImmersionLocalCompleteIntersection.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RegularImmersionLocalCompleteIntersection.lean#L73).
 
 > **Stacks 0CHK.** A Koszul-regular immersion of algebraic spaces over `S` is a local complete
 > intersection morphism.
@@ -170,7 +170,7 @@ theorem isLocalCompleteIntersection_of_isKoszulRegularImmersion (i : X ⟶ Y)
 
 [Tag 0CHL](https://stacks.math.columbia.edu/tag/0CHL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_of_comp_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/SmoothPermanence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/SmoothPermanence.lean#L105).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_of_comp_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/SmoothPermanence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/SmoothPermanence.lean#L105).
 
 > Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of algebraic spaces over `S` with `g` smooth.
 > If the composite `f ≫ g` is a local complete intersection morphism, then so is `f`.
@@ -189,7 +189,7 @@ public theorem isLocalCompleteIntersection_of_comp_of_isSmooth
 
 [Tag 0CHM](https://stacks.math.columbia.edu/tag/0CHM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FpqcLocalAtTarget.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FpqcLocalAtTarget.lean#L210).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FpqcLocalAtTarget.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/FpqcLocalAtTarget.lean#L211).
 
 > **Stacks 0CHM.** The property of being a local complete intersection morphism of algebraic
 > spaces over `S` is local on the base for the fpqc topology of Stacks 03YH: a morphism is Koszul
@@ -207,7 +207,7 @@ theorem isLocalCompleteIntersection_isLocalAtTarget_fpqc :
 
 [Tag 0CHN](https://stacks.math.columbia.edu/tag/0CHN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalCompleteIntersection_isLocalAtSource_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Locality.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Locality.lean#L127).
+**`AlgebraicGeometry.Space.isLocalCompleteIntersection_isLocalAtSource_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Locality.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Locality.lean#L127).
 
 > **Stacks 0CHN.** The property of being a local complete intersection morphism of algebraic
 > spaces over `S` is local on the source for the syntomic topology of Stacks 03YH.
@@ -229,7 +229,7 @@ public theorem isLocalCompleteIntersection_isLocalAtSource_syntomic :
 
 [Tag 06CA](https://stacks.math.columbia.edu/tag/06CA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.koszulOpenSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L88). The attribute's comment: “part (1): the open subspace of Koszul points”.
+**`AlgebraicGeometry.Space.koszulOpenSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L88). The attribute's comment: “part (1): the open subspace of Koszul points”.
 
 > **Stacks 06CA, part (1).** The open subspace `U(f) ⊂ X` of the Koszul points of a
 > morphism `f : X ⟶ Y` of algebraic spaces: the subfunctor of the source whose sections are
@@ -239,7 +239,7 @@ public theorem isLocalCompleteIntersection_isLocalAtSource_syntomic :
 def koszulOpenSubspace (f : X ⟶ Y) : Subfunctor X
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_ι_koszulOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L94). The attribute's comment: “part (1): the open subspace of Koszul points”.
+**`AlgebraicGeometry.Space.range_pointsMap_ι_koszulOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L94). The attribute's comment: “part (1): the open subspace of Koszul points”.
 
 > **Stacks 06CA, part (1).** The point set of `U(f)` is the set of points at which `f` is
 > Koszul.
@@ -250,7 +250,7 @@ theorem range_pointsMap_ι_koszulOpenSubspace (f : X ⟶ Y) :
       (koszulOpenSubspace B S hS X f).ι) = {x | KoszulAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_koszulOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L101). The attribute's comment: “part (1): the open subspace of Koszul points”.
+**`AlgebraicGeometry.Space.isOpenSubspace_koszulOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L101). The attribute's comment: “part (1): the open subspace of Koszul points”.
 
 > **Stacks 06CA, part (1).** `U(f)` is an open subspace of the source.
 
@@ -259,7 +259,7 @@ theorem isOpenSubspace_koszulOpenSubspace (hX : IsAlgebraicSpace B S hS X) (f : 
     IsOpenSubspace B S hS (koszulOpenSubspace B S hS X f)
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_range_pointsMap_eq_setOf_koszulAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L110). The attribute's comment: “part (1): the open subspace of Koszul points”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_range_pointsMap_eq_setOf_koszulAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocus.lean#L110). The attribute's comment: “part (1): the open subspace of Koszul points”.
 
 > **Stacks 06CA, part (1).** There is an open subspace of the source of a morphism of
 > algebraic spaces whose point set is exactly the set of points at which the morphism is
@@ -272,7 +272,7 @@ theorem exists_isOpenSubspace_range_pointsMap_eq_setOf_koszulAt
       Set.range (pointsMap B S hS U.toFunctor U.ι) = {x | KoszulAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.koszulOpenSubspace_pullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusBaseChange.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusBaseChange.lean#L385). The attribute's comment: “part (2): base change of the Koszul open subspace”.
+**`AlgebraicGeometry.Space.koszulOpenSubspace_pullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusBaseChange.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusBaseChange.lean#L393). The attribute's comment: “part (2): base change of the Koszul open subspace”.
 
 > **Stacks 06CA, part (2).** The open subspace `U(f')` of the Koszul points of the base change
 > `f'` of `f` along an arbitrary `Z' ⟶ Z` is the inverse image of `U(f)` under the projection
@@ -296,7 +296,7 @@ theorem koszulOpenSubspace_pullbackMap
       (koszulOpenSubspace B S hS X f).preimage (pullback.fst p z)
 ```
 
-**`AlgebraicGeometry.Space.koszulLocusStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L92). The attribute's comment: “part (2) in the pointwise form the hypothesis of Stacks 06CE asks for”.
+**`AlgebraicGeometry.Space.koszulLocusStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L92). The attribute's comment: “part (2) in the pointwise form the hypothesis of Stacks 06CE asks for”.
 
 > **The base-change assertion of Stacks 06CA holds.** For a commutative triangle of algebraic
 > spaces over `S` with `p` and `q` flat and locally of finite presentation, the base change of `f`
@@ -315,26 +315,7 @@ theorem koszulLocusStableUnderBaseChange : KoszulLocusStableUnderBaseChange B S 
 
 [Tag 06CB](https://stacks.math.columbia.edu/tag/06CB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOnSite_conormalSheaf_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Conormal.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Conormal.lean#L255). The attribute's comment: “the conormal sheaf is finite locally free”.
-
-> **Stacks 06CB, second clause.**  For a local complete intersection morphism `f : X ⟶ Y` of
-> algebraic spaces over `S` which is formally unramified, the conormal sheaf `𝒞_{X/Y}` of
-> Stacks 0607 is finite locally free on the small étale site of `X`.
->
-> Formal unramifiedness is a field of the universal first-order thickening, and the statement is
-> about an arbitrary one.  The hypothesis `hcmp` is the comparison with the scheme-level
-> Stacks 06B9 which this library lacks; see the section *What is not proved here* of this file.
-
-```lean
-public theorem isFiniteLocallyFreeOnSite_conormalSheaf_of_isLocalCompleteIntersection
-    {X Y : AlgebraicSpaces B S hS} {f : X ⟶ Y}
-    (t : UniversalFirstOrderThickening B S hS f)
-    (hf : IsLocalCompleteIntersection B S hS f.hom)
-    (hcmp : RepresentableConormalSheafComparison B S hS) :
-    SheafOfModules.IsFiniteLocallyFreeOnSite (conormalSheaf B S hS t)
-```
-
-**`AlgebraicGeometry.Space.unramified_iff_formallyUnramified_and_isFiniteLocallyFreeOnSite_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalFiniteLocallyFree.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalFiniteLocallyFree.lean#L107).
+**`AlgebraicGeometry.Space.unramified_iff_formallyUnramified_and_isFiniteLocallyFreeOnSite_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalFiniteLocallyFree.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalFiniteLocallyFree.lean#L107). The attribute's comment: “unramified iff formally unramified; then the conormal sheaf is finite locally free”.
 
 > **Stacks 06CB.**  Let `f : X ⟶ Y` be a local complete intersection morphism of algebraic
 > spaces over `S`.  Then `f` is unramified if and only if it is formally unramified, and in this
@@ -351,23 +332,11 @@ theorem unramified_iff_formallyUnramified_and_isFiniteLocallyFreeOnSite_conormal
         SheafOfModules.IsFiniteLocallyFreeOnSite (conormalSheaf B S hS t)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_iff_formallyUnramified_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Unramified.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/Unramified.lean#L53). The attribute's comment: “the equivalence: unramified iff formally unramified”.
-
-> A local complete intersection morphism of algebraic spaces over `S` is unramified if and
-> only if it is formally unramified.
-
-```lean
-public theorem isUnramified_iff_formallyUnramified_of_isLocalCompleteIntersection
-    (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B S hS Y) {f : X ⟶ Y}
-    (hf : IsLocalCompleteIntersection B S hS f) :
-    IsUnramified B S hS f ↔ FormallyUnramified f
-```
-
 ## Tag 06CC, a lemma
 
 [Tag 06CC](https://stacks.math.columbia.edu/tag/06CC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalSequence_shortExact_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalShortExactUnconditional.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalShortExactUnconditional.lean#L411).
+**`AlgebraicGeometry.Space.conormalSequence_shortExact_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalShortExactUnconditional.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalShortExactUnconditional.lean#L411).
 
 > **Stacks 06CC.**  Let `Z ⟶ Y ⟶ X` be formally unramified morphisms of algebraic spaces over a
 > scheme `S`, presented by universal first-order thickenings `Z ⊂ X₁` and `Y ⊂ X₂` over `X`, let
@@ -411,4 +380,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.48, Tag 06C3](https://stacks.math.columbia.edu/tag/06C3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

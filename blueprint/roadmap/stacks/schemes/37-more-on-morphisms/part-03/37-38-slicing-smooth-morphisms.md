@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.38 Slicing smooth morphisms
 
-Section 37.38 of the Stacks Project, [Tag 055S](https://stacks.math.columbia.edu/tag/055S). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.38 of the Stacks Project, [Tag 055S](https://stacks.math.columbia.edu/tag/055S). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 057C, a lemma
 
 [Tag 057C](https://stacks.math.columbia.edu/tag/057C) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_smooth_effectiveCartierDivisor_of_nonzero_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSlice/SmoothDivisor.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSlice/SmoothDivisor.lean#L693). References: SGA 1 II (4.12), “dF(x)≠0 ⇒ Y smooth”.
+**`Stacks.AlgebraicGeometry.exists_smooth_effectiveCartierDivisor_of_nonzero_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSlice/SmoothDivisor.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSlice/SmoothDivisor.lean#L693). References: SGA 1 II (4.12), “dF(x)≠0 ⇒ Y smooth”.
 
 > **Stacks Project, Tag 057C.** A local equation with nonzero relative
 > differential cuts out a smooth effective Cartier divisor near the point.
@@ -42,7 +42,7 @@ public theorem exists_smooth_effectiveCartierDivisor_of_nonzero_differential
 
 [Tag 057D](https://stacks.math.columbia.edu/tag/057D) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_smooth_divisor_of_nonzero_differential_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean#L267).
+**`Stacks.AlgebraicGeometry.exists_smooth_divisor_of_nonzero_differential_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean#L267).
 
 > **Stacks Project, Tag 057D.**  Let `f : X ⟶ S` be smooth at `x`, with image `s = f x`.  If
 > the map `Ω_{X_s/s,x} ⊗_{𝒪_{X_s,x}} κ(x) ⟶ Ω_{κ(x)/κ(s)}` has a nonzero kernel, then there is an
@@ -71,7 +71,7 @@ public theorem exists_smooth_divisor_of_nonzero_differential_kernel
 
 [Tag 057E](https://stacks.math.columbia.edu/tag/057E) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.not_exists_etale_lift_through_inseparableClosedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/InseparableSliceObstruction.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/InseparableSliceObstruction.lean#L297).
+**`Stacks.AlgebraicGeometry.not_exists_etale_lift_through_inseparableClosedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/InseparableSliceObstruction.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/InseparableSliceObstruction.lean#L297).
 
 > **No étale lift through an inseparable closed point.**  Let `k` be a field of characteristic
 > `p > 0` and let `a ∈ k` not be a `p`-th power, so that `k` is imperfect.  For the closed point `w`
@@ -90,7 +90,7 @@ theorem not_exists_etale_lift_through_inseparableClosedPoint {k : Type u} [Field
 
 [Tag 057F](https://stacks.math.columbia.edu/tag/057F) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_smooth_divisor_of_separable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean#L465).
+**`Stacks.AlgebraicGeometry.exists_smooth_divisor_of_separable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/SmoothSliceCriteria.lean#L465).
 
 > **Stacks Project, Tag 057F.**  Let `f : X ⟶ S` be smooth at `x`, with image `s = f x`.  If
 > the residue field extension `κ(x)/κ(s)` is separable and `x` is not a generic point of the fibre
@@ -115,7 +115,7 @@ public theorem exists_smooth_divisor_of_separable_residueField
 
 [Tag 057G](https://stacks.math.columbia.edu/tag/057G) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_etale_immersion_with_singleton_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EtaleSlice.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EtaleSlice.lean#L504). References: EGA IV (17.16.3), “Clause (i)”; SGA 3 XI (1.10), “more general”.
+**`Stacks.AlgebraicGeometry.exists_etale_immersion_with_singleton_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EtaleSlice.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EtaleSlice.lean#L504). References: EGA IV (17.16.3), “Clause (i)”; SGA 3 XI (1.10), “more general”.
 
 > **Stacks Project, Tag 057G.**  Let `f : X ⟶ S` be a morphism of schemes, `x : X` a point with
 > image `s = f x`.  If `f` is smooth at `x`, if `x` is a closed point of the fibre `X_s`, and if the
@@ -138,7 +138,7 @@ public theorem exists_etale_immersion_with_singleton_fiber
 
 [Tag 055U](https://stacks.math.columbia.edu/tag/055U) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_lift_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/EtaleLocalSection.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/EtaleLocalSection.lean#L241).
+**`AlgebraicGeometry.exists_etaleNeighborhood_lift_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/EtaleLocalSection.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/EtaleLocalSection.lean#L241).
 
 > **Stacks Project, Tag 055U.** A smooth morphism admits an étale local section through any
 > point of its image.
@@ -153,7 +153,7 @@ theorem exists_etaleNeighborhood_lift_of_smooth {X S : Scheme.{u}}
 
 [Tag 055V](https://stacks.math.columbia.edu/tag/055V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_cover_refining_smooth_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothRefinement.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothRefinement.lean#L49).
+**`AlgebraicGeometry.exists_etale_cover_refining_smooth_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothRefinement.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothRefinement.lean#L49).
 
 > **Stacks Project, Tag 055V.** Every smooth covering of a scheme is refined by an étale
 > covering.
@@ -169,7 +169,7 @@ public theorem exists_etale_cover_refining_smooth_cover {S : Scheme.{u}}
 
 [Tag 0EY4](https://stacks.math.columbia.edu/tag/0EY4) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleCover_factors_affine_smooth_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SlicingSmooth/AffineConnectedCover.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SlicingSmooth/AffineConnectedCover.lean#L176).
+**`AlgebraicGeometry.exists_etaleCover_factors_affine_smooth_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SlicingSmooth/AffineConnectedCover.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SlicingSmooth/AffineConnectedCover.lean#L176).
 
 > A smooth morphism of schemes admits an étale covering of its source each member of which maps
 > to the base through an étale morphism, the first factor being a smooth morphism of affine schemes
@@ -191,4 +191,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.38, Tag 055S](https://stacks.math.columbia.edu/tag/055S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

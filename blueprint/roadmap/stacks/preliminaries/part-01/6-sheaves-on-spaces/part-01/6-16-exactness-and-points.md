@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.16 Exactness and points
 
-Section 6.16 of the Stacks Project, [Tag 007S](https://stacks.math.columbia.edu/tag/007S). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 6.16 of the Stacks Project, [Tag 007S](https://stacks.math.columbia.edu/tag/007S). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 007T, a lemma
 
 [Tag 007T](https://stacks.math.columbia.edu/tag/007T) in the Stacks Project.
 
-**`Stacks.Topology.SheafStalk.mono_iff_stalk_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L44). The attribute's comment: “(1)”.
+**`Stacks.Topology.SheafStalk.mono_iff_stalk_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L44). The attribute's comment: “(1)”.
 
 > A morphism of sheaves of sets is a monomorphism in the category of
 > sheaves if and only if it is injective on stalks at every point.
@@ -24,7 +24,7 @@ theorem mono_iff_stalk_injective {X : TopCat.{u}} {F G : TopCat.Sheaf (Type u) X
     (φ : F ⟶ G) : Mono φ ↔ ∀ x : X, Function.Injective (stalkMap φ x)
 ```
 
-**`Stacks.Topology.SheafStalk.epi_iff_stalk_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L89). The attribute's comment: “(2)”.
+**`Stacks.Topology.SheafStalk.epi_iff_stalk_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L89). The attribute's comment: “(2)”.
 
 > A morphism of sheaves of sets is an epimorphism in the category of
 > sheaves if and only if it is surjective on stalks at every point.
@@ -34,7 +34,7 @@ theorem epi_iff_stalk_surjective {X : TopCat.{u}} {F G : TopCat.Sheaf (Type u) X
     (φ : F ⟶ G) : Epi φ ↔ ∀ x : X, Function.Surjective (stalkMap φ x)
 ```
 
-**`Stacks.Topology.SheafStalk.isIso_iff_stalk_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L96). The attribute's comment: “(3)”.
+**`Stacks.Topology.SheafStalk.isIso_iff_stalk_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Stalk.lean#L96). The attribute's comment: “(3)”.
 
 > A morphism of sheaves of sets is an isomorphism if and only if it is
 > bijective on stalks at every point.
@@ -48,7 +48,7 @@ theorem isIso_iff_stalk_bijective {X : TopCat.{u}} {F G : TopCat.Sheaf (Type u) 
 
 [Tag 007U](https://stacks.math.columbia.edu/tag/007U) in the Stacks Project.
 
-**`SheafInjectiveSurjective.presheaf_mono_iff_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L69). The attribute's comment: “(2)”.
+**`SheafInjectiveSurjective.presheaf_mono_iff_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L69). The attribute's comment: “(2)”.
 
 > **Stacks 007U (2).** A morphism of presheaves of sets is injective in the sense of the
 > tag — injective on sections over every open — exactly when it is a monomorphism of
@@ -60,7 +60,7 @@ theorem presheaf_mono_iff_injective {F G : TopCat.Presheaf (Type u) X} (φ : F �
     Mono φ ↔ ∀ U : (Opens X)ᵒᵖ, Function.Injective (φ.app U)
 ```
 
-**`SheafInjectiveSurjective.presheaf_epi_iff_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L82). The attribute's comment: “(3)”.
+**`SheafInjectiveSurjective.presheaf_epi_iff_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L82). The attribute's comment: “(3)”.
 
 > **Stacks 007U (3).** A morphism of presheaves of sets is surjective in the sense of the
 > tag — surjective on sections over every open — exactly when it is an epimorphism of
@@ -75,7 +75,7 @@ theorem presheaf_epi_iff_surjective {F G : TopCat.Presheaf (Type u) X} (φ : F �
     Epi φ ↔ ∀ U : (Opens X)ᵒᵖ, Function.Surjective (φ.app U)
 ```
 
-**`SheafInjectiveSurjective.sheaf_mono_iff_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L97). The attribute's comment: “(4)”.
+**`SheafInjectiveSurjective.sheaf_mono_iff_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L97). The attribute's comment: “(4)”.
 
 > **Stacks 007U (4).** A morphism of sheaves of sets is injective in the sense of the tag —
 > injective on sections over every open — exactly when it is a monomorphism of sheaves.
@@ -90,7 +90,7 @@ theorem sheaf_mono_iff_injective {F G : TopCat.Sheaf (Type u) X} (φ : F ⟶ G) 
     Mono φ ↔ ∀ U : (Opens X)ᵒᵖ, Function.Injective (φ.hom.app U)
 ```
 
-**`SheafInjectiveSurjective.isLocallySurjective_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L115). The attribute's comment: “(5)”.
+**`SheafInjectiveSurjective.isLocallySurjective_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L115). The attribute's comment: “(5)”.
 
 > **Stacks 007U (5).** A morphism `φ : F ⟶ G` of presheaves of sets on `X` is locally
 > surjective exactly when for every open `U` and every section `t` of `G` over `U` there is an
@@ -115,35 +115,30 @@ theorem isLocallySurjective_iff_exists_cover {F G : TopCat.Presheaf (Type u) X} 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Subfunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Subfunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L48) (StacksFrontier): “A subpresheaf of a presheaf of sets `G` on `X`: `Subfunctor G` is a subset `F U ⊆ G U` for each object `U`, required to be carried into itself by every restriction map of `G`, which is the tag's condition. Instantiating the ambient category at `(Opens X)ᵒᵖ` gives subpresheaves on a topological space.”. References: SGA 3 I (1.2); SGA 3 IV (4.1.1), “more general”.
-- [`CategoryTheory.Subfunctor.toFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Subfunctor.toFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L57) (StacksFrontier): “The subpresheaf viewed as a presheaf in its own right, with the restriction maps induced by those of `G`. A subsheaf of a sheaf is a subpresheaf whose `toFunctor` is again a sheaf.”. References: SGA 3 I (1.2).
+- [`CategoryTheory.Subfunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Subfunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L48) (StacksFrontier): “A subpresheaf of a presheaf of sets `G` on `X`: `Subfunctor G` is a subset `F U ⊆ G U` for each object `U`, required to be carried into itself by every restriction map of `G`, which is the tag's condition. Instantiating the ambient category at `(Opens X)ᵒᵖ` gives subpresheaves on a topological space.”. References: SGA 3 I (1.2); SGA 3 IV (4.1.1), “more general”.
+- [`CategoryTheory.Subfunctor.toFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Subfunctor.toFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Defs.lean#L57) (StacksFrontier): “The subpresheaf viewed as a presheaf in its own right, with the restriction maps induced by those of `G`. A subsheaf of a sheaf is a subpresheaf whose `toFunctor` is again a sheaf.”. References: SGA 3 I (1.2).
 
 ## Tag 0H7H, a lemma
 
 [Tag 0H7H](https://stacks.math.columbia.edu/tag/0H7H) in the Stacks Project.
 
-**`StacksDefinitionInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Basic.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/Basic.lean#L136). References: SGA 4 IV (6.4.3), “sheaves on a space”; SGA 3 I (1.2), “special case”; SGA 4 IV (8.4.1), “fourth conjunct”.
+**`presheaf_sheaf_epi_mono_iff_surjective_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/Basic.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/Basic.lean#L181).
 
-> **Stacks 0H7H, full statement.**
+> **Stacks 0H7H.** Let `X : TopCat`.
 >
-> Let `X : TopCat`.
->
-> 1. For a morphism `f : F ⟶ G` of presheaves of types on `X`:
->    - `f` is a monomorphism iff each component `f.app U` is injective;
->    - `f` is an epimorphism iff each component `f.app U` is surjective.
-> 2. For a morphism `f : F ⟶ G` of sheaves of types on `X`:
->    - `f` is a monomorphism iff each component `f.1.app U` is injective,
->      iff `f` is injective on every stalk;
->    - `f` is an epimorphism iff `f` is surjective on every stalk.
->
-> The Stacks notion of "injective map of sheaves" is "injective on every open set", and the
-> Stacks notion of "surjective map of sheaves" is "surjective on every stalk"
-> (cf. Stacks tag 008Q).  With those Stacks definitions, the two parts above show that
-> in `Sh(X)` the epimorphisms are exactly the surjective maps of sheaves and the
-> monomorphisms are exactly the injective maps of sheaves.
+> 1. A morphism `f : F ⟶ G` of presheaves of types on `X` is a monomorphism (resp. an
+>    epimorphism) iff it is injective (resp. surjective) on every open set, i.e. iff it is an
+>    injective (resp. surjective) map of presheaves (Stacks 007U (2), (3)).
+> 2. A morphism `f : F ⟶ G` of sheaves of types on `X`
+>    - is a monomorphism iff it is injective on every open set (an injective map of sheaves,
+>      Stacks 007U (4)), iff it is injective on every stalk;
+>    - is an epimorphism iff it is locally surjective (a surjective map of sheaves,
+>      Stacks 007U (5); `TopCat.Presheaf.IsLocallySurjective` is that notion by
+>      `SheafInjectiveSurjective.isLocallySurjective_iff_exists_cover`), iff it is surjective
+>      on every stalk.
 
 ```lean
-theorem StacksDefinitionInjective :
+theorem presheaf_sheaf_epi_mono_iff_surjective_injective :
     -- Part (1): presheaves
     (∀ {F G : TopCat.Presheaf (Type u) X} (f : F ⟶ G),
         Mono f ↔ ∀ U : (Opens X)ᵒᵖ, Function.Injective (f.app U)) ∧
@@ -156,6 +151,8 @@ theorem StacksDefinitionInjective :
         Mono f ↔ ∀ x : X,
           Function.Injective ((TopCat.Presheaf.stalkFunctor (Type u) x).map f.1)) ∧
     (∀ {F G : TopCat.Sheaf (Type u) X} (f : F ⟶ G),
+        Epi f ↔ TopCat.Presheaf.IsLocallySurjective f.1) ∧
+    (∀ {F G : TopCat.Sheaf (Type u) X} (f : F ⟶ G),
         Epi f ↔ ∀ x : X,
           Function.Surjective ((TopCat.Presheaf.stalkFunctor (Type u) x).map f.1))
 ```
@@ -164,7 +161,7 @@ theorem StacksDefinitionInjective :
 
 [Tag 007W](https://stacks.math.columbia.edu/tag/007W) in the Stacks Project.
 
-**`ExactnessPoints.exists_unique_hom_of_stalkHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/AlgebraicStructure.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/EpiMono/AlgebraicStructure.lean#L232).
+**`ExactnessPoints.exists_unique_hom_of_stalkHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/EpiMono/AlgebraicStructure.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/EpiMono/AlgebraicStructure.lean#L232).
 
 > **Stacks 007W (Lemma 6.15.6).** Let `X` be a topological space, let `(C, F)` be a type of
 > algebraic structure, let `𝓕` and `𝓖` be sheaves on `X` with values in `C`, and let
@@ -193,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.16, Tag 007S](https://stacks.math.columbia.edu/tag/007S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 23.2 Divided powers
 
-Section 23.2 of the Stacks Project, [Tag 07GK](https://stacks.math.columbia.edu/tag/07GK). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 23.2 of the Stacks Project, [Tag 07GK](https://stacks.math.columbia.edu/tag/07GK). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07GL, a definition
 
@@ -16,13 +16,13 @@ Section 23.2 of the Stacks Project, [Tag 07GK](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`DividedPowers`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch23.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch23.lean#L34) (StacksFrontier).
+- [`DividedPowers`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch23.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch23.lean#L34) (StacksFrontier).
 
 ## Tag 07GM, a lemma
 
 [Tag 07GM](https://stacks.math.columbia.edu/tag/07GM) in the Stacks Project.
 
-**`DividedPowers.instSubsingletonDividedPowers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L75). The attribute's comment: “uniqueness”.
+**`DividedPowers.instSubsingletonDividedPowers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L75). The attribute's comment: “uniqueness”.
 
 > A divided power structure on an ideal in a ring torsion-free as a `ℤ`-module is unique.
 
@@ -31,7 +31,7 @@ public instance instSubsingletonDividedPowers {A : Type*} [CommRing A]
     [Module.IsTorsionFree ℤ A] (I : Ideal A) : Subsingleton (_root_.DividedPowers I)
 ```
 
-**`DividedPowers.exists_dividedPowers_iff_factorial_mul_eq_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L94). The attribute's comment: “factorial\_criterion”.
+**`DividedPowers.exists_dividedPowers_iff_factorial_mul_eq_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L94). The attribute's comment: “factorial\_criterion”.
 
 > Over a torsion-free commutative ring, maps on an ideal are divided power operations if and
 > only if their products with the corresponding factorials are the corresponding powers.
@@ -46,7 +46,7 @@ public theorem exists_dividedPowers_iff_factorial_mul_eq_pow
         (n.factorial : A) * (γ n x : A) = (x : A) ^ n
 ```
 
-**`DividedPowers.nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L194). The attribute's comment: “generator\_criterion”.
+**`DividedPowers.nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L194). The attribute's comment: “generator\_criterion”.
 
 > Let `I` be an ideal in a torsion-free commutative ring. Then `I` admits a divided power
 > structure if and only if it has a set of ideal generators `s` such that, for every `x ∈ s` and
@@ -63,13 +63,13 @@ public lemma nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul
 
 Declarations registered for the tag:
 
-- [`DividedPowers.factorial_mul_dpow_eq_pow`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.factorial_mul_dpow_eq_pow#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L71) (StacksFrontier): “factorial\_identity”.
+- [`DividedPowers.factorial_mul_dpow_eq_pow`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.factorial_mul_dpow_eq_pow#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L71) (StacksFrontier): “factorial\_identity”.
 
 ## Tag 07GN, an example
 
 [Tag 07GN](https://stacks.math.columbia.edu/tag/07GN) in the Stacks Project.
 
-**`DividedPowers.exists_dividedPowers_span_natCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Extend/IntegersAtPrime.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Extend/IntegersAtPrime.lean#L169).
+**`DividedPowers.exists_dividedPowers_span_natCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Extend/IntegersAtPrime.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Extend/IntegersAtPrime.lean#L169).
 
 > If `A` is a `ℤ_(p)`-algebra, the ideal generated by `p` has the divided power structure
 > given by
@@ -93,7 +93,7 @@ public theorem exists_dividedPowers_span_natCast
 
 [Tag 07GP](https://stacks.math.columbia.edu/tag/07GP) in the Stacks Project.
 
-**`DividedPowers.exists_dividedPowers_of_axioms_on_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L563).
+**`DividedPowers.exists_dividedPowers_of_axioms_on_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L563).
 
 > The product and iteration axioms for divided powers need only be checked on a set of
 > generators of the ideal, provided the other divided power axioms hold everywhere.
@@ -120,7 +120,7 @@ public theorem exists_dividedPowers_of_axioms_on_generators
 
 [Tag 07GQ](https://stacks.math.columbia.edu/tag/07GQ) in the Stacks Project.
 
-**`DividedPowers.existsUnique_on_ideal_add`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L766). The attribute's comment: “part (2)”.
+**`DividedPowers.existsUnique_on_ideal_add`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 766](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L766). The attribute's comment: “part (2)”.
 
 > Divided power structures which agree on the intersection of their ideals extend uniquely
 > to the sum of the ideals.
@@ -137,13 +137,13 @@ public lemma existsUnique_on_ideal_add {A : Type*} [CommRing A] {I J : Ideal A}
 
 Declarations registered for the tag:
 
-- [`DividedPowers.coincide_on_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.coincide_on_smul#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L704) (StacksFrontier): “part (1)”.
+- [`DividedPowers.coincide_on_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.coincide_on_smul#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L704) (StacksFrontier): “part (1)”.
 
 ## Tag 07GR, a lemma
 
 [Tag 07GR](https://stacks.math.columbia.edu/tag/07GR) in the Stacks Project.
 
-**`DividedPowers.locallyNilpotent_iff_isNilpotent_natCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Nilpotent.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Nilpotent.lean#L46).
+**`DividedPowers.locallyNilpotent_iff_isNilpotent_natCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Nilpotent.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/Nilpotent.lean#L46).
 
 > Let `p` be a prime number, let `γ` be a divided power structure on an ideal `I` of a
 > commutative ring `A`, and assume `p` is nilpotent in `A ⧸ I`. Then `I` is locally nilpotent,
@@ -162,4 +162,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 23.2, Tag 07GK](https://stacks.math.columbia.edu/tag/07GK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Palindromes in arithmetic progressions
 
-13 results, 6 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html).
+13 results, 6 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html).
 
 ## Two floor-function identities
 
@@ -23,7 +23,7 @@ These are parts (iii) and (v) of the cited lemma; its remaining parts are not re
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Phakhinkon Napp Phunphayap and Prapanpong Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Lemma 6 (`jis-2024-24.4.8-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.floor_add_floor_neg_and_floor_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#floor-add-floor-neg-and-floor-add-eq).
+Stated but not proved: `MetaMathlibExt.floor_add_floor_neg_and_floor_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#floor-add-floor-neg-and-floor-add-eq).
 
 ## Palindromes in an arithmetic progression
 
@@ -36,7 +36,7 @@ digits reads the same in both directions.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Section 1.
 
-Formalized by `MetaMathlibExt.palindromeAPCount`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount).
+Formalized by `MetaMathlibExt.palindromeAPCount`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount).
 
 ## Palindromic half copy
 
@@ -50,7 +50,7 @@ lower digits mirror them. For $m = 0$, which has no digits, $C_b(0) = 0$.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Definition 1.
 
-Formalized by `MetaMathlibExt.palindromicHalfCopy`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindromic-half-copy).
+Formalized by `MetaMathlibExt.palindromicHalfCopy`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindromic-half-copy).
 
 ## Digit-sum congruence count
 
@@ -64,7 +64,7 @@ number of natural numbers $x_1$ with $x \le x_1 < y$ and $x_1 \equiv r \pmod q$.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Definition 3.
 
-Formalized by `MetaMathlibExt.digitSumCongruenceCount`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count).
+Formalized by `MetaMathlibExt.digitSumCongruenceCount`, a definition declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count).
 
 ## Two small palindrome counts
 
@@ -77,7 +77,7 @@ up to $9$ being $1$, $3 = (11)_2$, $5 = (101)_2$, $7 = (111)_2$ and $9 = (1001)_
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Section 1.
 
-Formalized by `MetaMathlibExt.palindromeAPCount_small`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-small).
+Formalized by `MetaMathlibExt.palindromeAPCount_small`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-small).
 
 ## Palindromic half copies of $5570$ in bases $5$ and $8$
 
@@ -89,7 +89,7 @@ $C_5(m) = (134431)_5 = 5616$ and $C_8(m) = (12721)_8 = 5585$.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Definition 1 (example).
 
-Formalized by `MetaMathlibExt.palindromicHalfCopy_example`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindromic-half-copy-example).
+Formalized by `MetaMathlibExt.palindromicHalfCopy_example`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindromic-half-copy-example).
 
 ## A small value of the digit-sum congruence count
 
@@ -101,7 +101,7 @@ natural numbers with $x_1, x_2 < 3$ have even sum.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Definition 3.
 
-Formalized by `MetaMathlibExt.digitSumCongruenceCount_small`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count-small).
+Formalized by `MetaMathlibExt.digitSumCongruenceCount_small`, a theorem declared in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count-small).
 
 ## Counting digit tuples by their sum modulo a divisor of the base minus one
 
@@ -132,7 +132,7 @@ $$N_b(k, q, r, 1, a) = \frac{(a - 1)(b^{k-1} - 1)}{q} + \lfloor a/q \rfloor +
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.digitSumCongruenceCount_of_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count-of-mod-eq-one).
+Stated but not proved: `MetaMathlibExt.digitSumCongruenceCount_of_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#digit-sum-congruence-count-of-mod-eq-one).
 
 ## Palindromes in residue classes modulo a divisor of the base
 
@@ -162,7 +162,7 @@ $$A_b(m, q, r) = \frac{b \alpha}{q} +
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.palindromeAPCount_of_dvd_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-of-dvd-base).
+Stated but not proved: `MetaMathlibExt.palindromeAPCount_of_dvd_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-of-dvd-base).
 
 ## Counting palindromes up to $m$ and by parity
 
@@ -186,7 +186,7 @@ $A_b(m, 2, 1) = b\alpha/2 + \lceil (a_k - 1)/2 \rceil b^{\lfloor k/2 \rfloor} +
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.palindromeCount_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-count-closed-form).
+Stated but not proved: `MetaMathlibExt.palindromeCount_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-count-closed-form).
 
 ## Palindromes in residue classes modulo a divisor of the base minus one
 
@@ -233,7 +233,7 @@ odd, and $2(b^{k/2} - 1)/q + \lfloor a_{k/2}/q \rfloor + m_3^* - [r = 0] +
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.palindromeAPCount_of_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-of-mod-eq-one).
+Stated but not proved: `MetaMathlibExt.palindromeAPCount_of_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-of-mod-eq-one).
 
 ## Palindromes up to a power of the base in residue classes
 
@@ -255,7 +255,7 @@ even. All these identities hold as identities of rational numbers.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Corollary 11.
 
-Stated but not proved: `MetaMathlibExt.palindromeAPCount_base_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-base-pow).
+Stated but not proved: `MetaMathlibExt.palindromeAPCount_base_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#palindrome-apcount-base-pow).
 
 ## Palindromes in residue classes: a logarithmic error bound
 
@@ -273,7 +273,7 @@ where $\log$ is the natural logarithm.
 
 - K. Onphaeng, T. Khemaratchatakumthorn, P. N. Phunphayap and P. Pongsriiam, *Exact Formulas for the Number of Palindromes in Certain Arithmetic Progressions*, Journal of Integer Sequences 27 (2024), Article 24.4.8, Corollary 12.
 
-Stated but not proved: `MetaMathlibExt.abs_palindromeAPCount_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#abs-palindrome-apcount-sub-le).
+Stated but not proved: `MetaMathlibExt.abs_palindromeAPCount_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PalindromesArithmeticProgressionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html#abs-palindrome-apcount-sub-le).
 
 ## Depends on
 
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Palindromes in arithmetic progressions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/palindromes-in-arithmetic-progressions)

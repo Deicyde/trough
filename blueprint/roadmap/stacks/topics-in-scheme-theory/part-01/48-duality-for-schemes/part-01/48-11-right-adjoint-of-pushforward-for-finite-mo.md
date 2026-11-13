@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.11 Right adjoint of pushforward for finite morphisms
 
-Section 48.11 of the Stacks Project, [Tag 0AWZ](https://stacks.math.columbia.edu/tag/0AWZ). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.11 of the Stacks Project, [Tag 0AWZ](https://stacks.math.columbia.edu/tag/0AWZ). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BUZ, a lemma
 
 [Tag 0BUZ](https://stacks.math.columbia.edu/tag/0BUZ) in the Stacks Project.
 
-**`AlgebraicGeometry.sections_rightAdjoint_restrictionToStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean#L139). The attribute's comment: “sections on an affine open”.
+**`AlgebraicGeometry.sections_rightAdjoint_restrictionToStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean#L139). The attribute's comment: “sections on an affine open”.
 
 > **Stacks Project, Tag 0BUZ (sections on an affine open).** If `f : Y ⟶ X` is
 > affine and `U ⊆ X` is affine, sections over `U` of the internal-Hom right adjoint
@@ -32,13 +32,13 @@ public noncomputable def sections_rightAdjoint_restrictionToStructureSheaf
 
 Declarations registered for the tag:
 
-- [`RingedSpaceModuleAdjunction.restrictScalarsHomAdjunction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean#L438), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean#L90) (StacksFrontier): “the adjunction”.
+- [`RingedSpaceModuleAdjunction.restrictScalarsHomAdjunction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean#L438), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/AffineSections.lean#L90) (StacksFrontier): “the adjunction”.
 
 ## Tag 0BV0, a lemma
 
 [Tag 0BV0](https://stacks.math.columbia.edu/tag/0BV0) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedRestriction_adj_derivedHomSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean#L195).
+**`AlgebraicGeometry.derivedRestriction_adj_derivedHomSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean#L195).
 
 > **Stacks 0BV0.** For a morphism of schemes `f : Y ⟶ X`, the derived internal-Hom functor
 > `R ℰom(f₊ 𝒪_Y, -) : D(𝒪_X) ⥤ D(f₊ 𝒪_Y)` is right adjoint to the functor `D(f₊ 𝒪_Y) ⥤ D(𝒪_X)`
@@ -53,7 +53,7 @@ public theorem derivedRestriction_adj_derivedHomSheaf :
 
 [Tag 0BV1](https://stacks.math.columbia.edu/tag/0BV1) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedHomSheaf_comp_derivedRestriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean#L291).
+**`AlgebraicGeometry.derivedHomSheaf_comp_derivedRestriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/ConstructedDerivedAdjunction.lean#L291).
 
 > **Stacks 0BV1.** Following `R ℰom(f₊ 𝒪_Y, -)` by the functor `D(f₊ 𝒪_Y) ⥤ D(𝒪_X)` induced
 > by restriction of scalars gives `R ℰom_{𝒪_X}(f₊ 𝒪_Y, -)`. The displayed compatibility with the
@@ -71,7 +71,7 @@ public theorem derivedHomSheaf_comp_derivedRestriction_iso :
 
 [Tag 0AX2](https://stacks.math.columbia.edu/tag/0AX2) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedHomSheaf_finite_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteTwistedInverseImage.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteTwistedInverseImage.lean#L482).
+**`AlgebraicGeometry.derivedHomSheaf_finite_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteTwistedInverseImage.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteTwistedInverseImage.lean#L482).
 
 > **Stacks, Tag 0AX2.** Let `f : Y ⟶ X` be a finite pseudo-coherent morphism of schemes. The
 > functor `R ℰom(f₊ 𝒪_Y, -) : D(𝒪_X) ⥤ D(f₊ 𝒪_Y)` maps `D⁺_QCoh(𝒪_X)` into `D⁺_QCoh(f₊ 𝒪_Y)`.
@@ -103,7 +103,7 @@ theorem derivedHomSheaf_finite_pseudoCoherent [IsFinite f] [PseudoCoherent f] :
               (pushforwardRingModelEquiv f).functor)
 ```
 
-**`AlgebraicGeometry.pseudoCoherent_of_isFinite_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteOverNoetherian.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteOverNoetherian.lean#L35). The attribute's comment: “parenthetical remark: a finite morphism of Noetherian schemes is pseudo-coherent”.
+**`AlgebraicGeometry.pseudoCoherent_of_isFinite_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteOverNoetherian.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteOverNoetherian.lean#L35). The attribute's comment: “parenthetical remark: a finite morphism of Noetherian schemes is pseudo-coherent”.
 
 > A finite morphism `f : Y ⟶ X` to a locally
 > Noetherian scheme is pseudo-coherent; in particular a finite morphism of Noetherian schemes is
@@ -114,7 +114,7 @@ theorem pseudoCoherent_of_isFinite_of_isLocallyNoetherian {X Y : Scheme.{u}}
     [IsLocallyNoetherian X] (f : Y ⟶ X) [IsFinite f] : PseudoCoherent f
 ```
 
-**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_pushforwardStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L92). The attribute's comment: “the preservation clause with quasi-coherence read over 𝒪\_X rather than over f\_* 𝒪\_Y; the commutative-diagram clause is not proved”.
+**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_pushforwardStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L92). The attribute's comment: “the preservation clause with quasi-coherence read over 𝒪\_X rather than over f\_* 𝒪\_Y; the commutative-diagram clause is not proved”.
 
 > For a finite pseudo-coherent morphism `f : Y ⟶ X`, the derived internal Hom
 > `R𝓗om_{𝒪_X}(f_* 𝒪_Y, -)` carries `D⁺_QCoh(𝒪_X)` into `D⁺_QCoh(𝒪_X)`.
@@ -130,7 +130,7 @@ theorem derivedCategoryBPlus_derivedSheafHom_pushforwardStructureSheaf (f : Y �
           ((Scheme.Modules.pushforward f).obj (SheafOfModules.unit Y.ringCatSheaf))))).obj K)
 ```
 
-**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L114). The attribute's comment: “the preservation clause, for a derived sheaf-Hom functor given together with its identification of Tag 0BV1; the commutative-diagram clause is not proved”.
+**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L114). The attribute's comment: “the preservation clause, for a derived sheaf-Hom functor given together with its identification of Tag 0BV1; the commutative-diagram clause is not proved”.
 
 > Let `f : Y ⟶ X` be a finite pseudo-coherent morphism of schemes and let
 > `derivedSheafHom : D(𝒪_X) ⥤ D(f_* 𝒪_Y)` be a functor whose composite with restriction of scalars
@@ -159,7 +159,7 @@ theorem derivedCategoryBPlus_derivedSheafHom_of_pseudoCoherent (f : Y ⟶ X) [Is
 
 [Tag 0AX3](https://stacks.math.columbia.edu/tag/0AX3) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_pushforwardRightAdjointToDerivedInternalHom_and_comp_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FiniteTraceDerivedInternalHomIso.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FiniteTraceDerivedInternalHomIso.lean#L461). The attribute's comment: “the whole remark, for every right adjoint a of Rf\_* on D\_QCoh and every adjunction exhibiting it: the comparison map Rf\_* a(K) ⟶ R Eom\_\{O\_X}(f\_* O\_Y, K) of Tag 0AX2 is an isomorphism (the left equality of the square) and, followed by the map induced by O\_X ⟶ f\_* O\_Y, it is the trace Tr\_\{f, K}. Stated for f finite and X locally Noetherian, which contains the source's finite morphism of Noetherian schemes, and K in D\_QCoh^+(O\_X)”.
+**`AlgebraicGeometry.isIso_pushforwardRightAdjointToDerivedInternalHom_and_comp_evaluationOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FiniteTraceDerivedInternalHomIso.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FiniteTraceDerivedInternalHomIso.lean#L490). The attribute's comment: “the whole remark, for every right adjoint a of Rf\_* on D\_QCoh and every adjunction exhibiting it: the comparison map Rf\_* a(K) ⟶ R Eom\_\{O\_X}(f\_* O\_Y, K) of Tag 0AX2 is an isomorphism (the left equality of the square) and, followed by the map R Eom\_\{O\_X}(f\_* O\_Y, K) ⟶ K induced by O\_X ⟶ f\_* O\_Y (the right derived functor of evaluation at 1), it is the trace Tr\_\{f, K}. Stated for f finite and X locally Noetherian, which contains the source's finite morphism of Noetherian schemes, and K in D\_QCoh^+(O\_X)”.
 
 > **Stacks Project, Tag 0AX3 (Remark 48.11.5).** Let `f : Y ⟶ X` be a finite morphism of
 > schemes with `X` locally Noetherian — in particular a finite morphism of Noetherian schemes —
@@ -173,18 +173,21 @@ theorem derivedCategoryBPlus_derivedSheafHom_of_pseudoCoherent (f : Y ⟶ X) [Is
 > ```
 >
 > the left edge — the comparison map `Rf_* a(K) ⟶ R ℰom_{𝒪_X}(f₊ 𝒪_Y, K)` of
-> [Stacks, Tag 0AX2] — is an isomorphism, so that it is the identification the source draws as an
-> equality, and the square commutes: that isomorphism followed by the map
-> `R ℰom_{𝒪_X}(f₊ 𝒪_Y, K) ⟶ K` induced by `𝒪_X ⟶ f₊ 𝒪_Y` is the trace map `Tr_{f, K}`, the counit
-> of `Rf_* ⊣ a`.
+> [Stacks, Tag 0AX2], the transpose of the trace along the adjunction of [Stacks, Tag 0BV0]
+> obtained by deriving `restriction of scalars ⊣ ℰom_{𝒪_X}(f₊ 𝒪_Y, -)` — is an isomorphism, so
+> that it is the identification the source draws as an equality, and the square commutes: that
+> isomorphism followed by the map `R ℰom_{𝒪_X}(f₊ 𝒪_Y, K) ⟶ K` induced by `𝒪_X ⟶ f₊ 𝒪_Y` is the
+> trace map `Tr_{f, K}`, the counit of `Rf_* ⊣ a`.  The lower arrow is
+> `AlgebraicGeometry.derivedInternalHomPushforwardEvaluationOne`, the right derived functor of the
+> evaluation at `1`, `ℰom_{𝒪_X}(f₊ 𝒪_Y, F) ⟶ F`, `φ ↦ φ(1)`.
 
 ```lean
-theorem isIso_pushforwardRightAdjointToDerivedInternalHom_and_comp_evaluation
+theorem isIso_pushforwardRightAdjointToDerivedInternalHom_and_comp_evaluationOne
     [IsLocallyNoetherian X] (K : quasiCoherentDerivedCategory X)
     (hK : DerivedCategoryB.IsBoundedBelow K.obj) :
     IsIso (pushforwardRightAdjointToDerivedInternalHom f adj K) ∧
       pushforwardRightAdjointToDerivedInternalHom f adj K ≫
-          (derivedInternalHomPushforwardEvaluation f).app K.obj =
+          (derivedInternalHomPushforwardEvaluationOne f).app K.obj =
         (adj.counit.app K).hom
 ```
 
@@ -195,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.11, Tag 0AWZ](https://stacks.math.columbia.edu/tag/0AWZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

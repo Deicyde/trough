@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.8 Models
 
-Section 55.8 of the Stacks Project, [Tag 0C2R](https://stacks.math.columbia.edu/tag/0C2R). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.8 of the Stacks Project, [Tag 0C2R](https://stacks.math.columbia.edu/tag/0C2R). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C2R, the section
 
 [Tag 0C2R](https://stacks.math.columbia.edu/tag/0C2R) in the Stacks Project.
 
-**`Stacks.Models.IsModelHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L91). The attribute's comment: “a morphism of models X ⟶ X' for V: a morphism of schemes over R which induces the identity on V”.
+**`Stacks.Models.IsModelHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L91). The attribute's comment: “a morphism of models X ⟶ X' for V: a morphism of schemes over R which induces the identity on V”.
 
 > **A morphism of models** `X ⟶ X'` for `V` (Section 0C2R): a morphism of schemes over `R`
 > which induces the identity on `V`, i.e. carries the identification `V ≅ X_K` to `V ≅ X'_K`.
@@ -26,7 +26,7 @@ def IsModelHom {V X X' : Scheme.{u}} (p : X ⟶ Spec (CommRingCat.of R))
     (e' : V ≅ pullback p' (genericPointInclusion R K)) (φ : X ⟶ X') : Prop
 ```
 
-**`Stacks.Models.IsProperModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L124). The attribute's comment: “a proper model: a model whose structure morphism X ⟶ Spec R is proper”.
+**`Stacks.Models.IsProperModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L124). The attribute's comment: “a proper model: a model whose structure morphism X ⟶ Spec R is proper”.
 
 > **A proper model** of `V` (Section 0C2R): a model whose structure morphism is proper.
 
@@ -36,7 +36,7 @@ def IsProperModel [IsDomain R] [IsDiscreteValuationRing R] [IsFractionRing R K]
     (e : V ≅ pullback p (genericPointInclusion R K)) : Prop
 ```
 
-**`Stacks.Models.IsRegularModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L131). The attribute's comment: “a regular model: a model which is a regular scheme”.
+**`Stacks.Models.IsRegularModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L131). The attribute's comment: “a regular model: a model which is a regular scheme”.
 
 > **A regular model** of `V` (Section 0C2R): a model whose total space is a regular scheme.
 
@@ -46,7 +46,7 @@ def IsRegularModel [IsDomain R] [IsDiscreteValuationRing R] [IsFractionRing R K]
     (e : V ≅ pullback p (genericPointInclusion R K)) : Prop
 ```
 
-**`Stacks.Models.IsModel.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L278). The attribute's comment: “base change X ↦ X ×\_\{Spec R} Spec R' along an extension of discrete valuation rings sends models of V over R to models of V' = V ×\_\{Spec K} Spec K' over R'”.
+**`Stacks.Models.IsModel.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L288). The attribute's comment: “base change X ↦ X ×\_\{Spec R} Spec R' along an extension of discrete valuation rings sends models of V over R to models of V' = V ×\_\{Spec K} Spec K' over R'”.
 
 > **Base change of a model** (Section 0C2R). Let `R ⊆ R'` be an extension of discrete
 > valuation rings with induced extension `K'/K` of fraction fields. If `X` is a model of the
@@ -62,7 +62,7 @@ theorem IsModel.baseChange {V X : Scheme.{u}} {v : V ⟶ Spec (CommRingCat.of K)
       (baseChangeGenericFiberIso (R' := R') (K' := K') p e h.2.2.2)
 ```
 
-**`Stacks.Models.IsModelHom.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L305). The attribute's comment: “base change sends morphisms of models of V over R to morphisms of models of V' over R'”.
+**`Stacks.Models.IsModelHom.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L317). The attribute's comment: “base change sends morphisms of models of V over R to morphisms of models of V' over R'”.
 
 > **Base change of a morphism of models** (Section 0C2R): the base change of a morphism of
 > models of `V` over `R` is a morphism of models of `V'` over `R'`.
@@ -82,7 +82,7 @@ theorem IsModelHom.baseChange {V X X' : Scheme.{u}} {v : V ⟶ Spec (CommRingCat
       (baseChangeMap (R' := R') p p' φ hφ.1)
 ```
 
-**`Stacks.Models.Model.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L336). The attribute's comment: “the functor from models for V over R to models for V' over R' sending X to X ×\_\{Spec R} Spec R'”.
+**`Stacks.Models.Model.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L348). The attribute's comment: “the functor from models for V over R to models for V' over R' sending X to X ×\_\{Spec R} Spec R'”.
 
 > **The base change functor** (Section 0C2R): for an extension of discrete valuation rings
 > `R ⊆ R'` with induced extension `K'/K` of fraction fields, `X ↦ X ×_{Spec R} Spec R'` is a
@@ -95,13 +95,13 @@ def Model.baseChange (V : Scheme.{u}) (v : V ⟶ Spec (CommRingCat.of K)) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Models.IsModel`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L68) (StacksFrontier): “a model for V: a flat finite type morphism X ⟶ Spec R endowed with an isomorphism V ⟶ X\_K”.
+- [`Stacks.Models.IsModel`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L68) (StacksFrontier): “a model for V: a flat finite type morphism X ⟶ Spec R endowed with an isomorphism V ⟶ X\_K”.
 
 ## Tag 0C2S, a lemma
 
 [Tag 0C2S](https://stacks.math.columbia.edu/tag/0C2S) in the Stacks Project.
 
-**`Stacks.Models.schemeTheoreticImage_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L229).
+**`Stacks.Models.schemeTheoreticImage_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L229).
 
 > **Stacks Project, Tag 0C2S.** The scheme-theoretic image of a closed immersion of
 > algebraic `K`-schemes in an `R`-model of its target is an `R`-model of its source.
@@ -124,7 +124,7 @@ theorem schemeTheoreticImage_isModel {V₁ V₂ X₂ : Scheme.{u}}
 
 [Tag 0C2T](https://stacks.math.columbia.edu/tag/0C2T) in the Stacks Project.
 
-**`Stacks.Models.isFinite_normalization_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L237). The attribute's comment: “finiteness of the normalization”.
+**`Stacks.Models.isFinite_normalization_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L237). The attribute's comment: “finiteness of the normalization”.
 
 > **Stacks Project, Tag 0C2T (finiteness of the normalization).** The normalization of a model,
 > over a discrete valuation ring, of a geometrically normal scheme over its fraction field is a
@@ -140,7 +140,7 @@ theorem isFinite_normalization_of_isModel {V X : Scheme.{u}}
     IsFinite (Scheme.normalization X hfinX)
 ```
 
-**`Stacks.Models.exists_iso_baseChange_normalization_adicCompletion_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L253). The attribute's comment: “normalization commutes with completion”.
+**`Stacks.Models.exists_iso_baseChange_normalization_adicCompletion_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L253). The attribute's comment: “normalization commutes with completion”.
 
 > **Stacks Project, Tag 0C2T (normalization commutes with completion).** For a model, over a
 > discrete valuation ring `R`, of a geometrically normal scheme over the fraction field of `R`, the
@@ -166,7 +166,7 @@ theorem exists_iso_baseChange_normalization_adicCompletion_of_isModel {V X : Sch
         α.hom ≫ Scheme.normalization Y hfinY = νhat
 ```
 
-**`Stacks.Models.isNormalRing_adicCompletion_stalk_normalization_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L283). The attribute's comment: “completions of the local rings are normal”.
+**`Stacks.Models.isNormalRing_adicCompletion_stalk_normalization_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/Normalization.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/Normalization.lean#L283). The attribute's comment: “completions of the local rings are normal”.
 
 > **Stacks Project, Tag 0C2T (completions of the local rings are normal).** At every point of
 > the normalization of a model, over a discrete valuation ring, of a geometrically normal scheme
@@ -189,7 +189,7 @@ theorem isNormalRing_adicCompletion_stalk_normalization_of_isModel {V X : Scheme
 
 [Tag 0C2U](https://stacks.math.columbia.edu/tag/0C2U) in the Stacks Project.
 
-**`Stacks.Models.exists_isResolution_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/RegularProperModelExists.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/RegularProperModelExists.lean#L378). The attribute's comment: “existence of a resolution”.
+**`Stacks.Models.exists_isResolution_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/RegularProperModelExists.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Models/RegularProperModelExists.lean#L378). The attribute's comment: “existence of a resolution”.
 
 > **Stacks Project, Tag 0C2U (existence of a resolution).** Let `X` be a model over a discrete
 > valuation ring `R` of a smooth curve `C` over the fraction field `K`. Then `X` is integral and
@@ -207,7 +207,7 @@ theorem exists_isResolution_of_isModel {C X : Scheme.{u}} (c : C ⟶ Spec (.of K
     ∃ (_ : IsIntegral X) (_ : IsNoetherian X) (Y : Scheme.{u}) (f : Y ⟶ X), IsResolution f
 ```
 
-**`AlgebraicGeometry.isModel_comp_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean#L272). The attribute's comment: “resolution\_is\_model”.
+**`AlgebraicGeometry.isModel_comp_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean#L272). The attribute's comment: “resolution\_is\_model”.
 
 > **Stacks Project, Tag 0C2U.** A resolution of singularities of a model of a smooth curve is
 > again a model of that curve.
@@ -221,7 +221,7 @@ theorem isModel_comp_of_isResolution {C X Y : Scheme.{u}} (c : C ⟶ Spec (.of K
       Stacks.Models.IsModel c (f ≫ p) eY
 ```
 
-**`AlgebraicGeometry.exists_isResolution_and_isModel_comp_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/ModelsResolutionExistence.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/ModelsResolutionExistence.lean#L186).
+**`AlgebraicGeometry.exists_isResolution_and_isModel_comp_of_isModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/ModelsResolutionExistence.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/ModelsResolutionExistence.lean#L186).
 
 > **Stacks Project, Tag 0C2U.** Let `X` be a model of a smooth curve `C` over `K`. Then `X` is
 > a Noetherian integral scheme, there exists a resolution of singularities of `X`, and any
@@ -243,7 +243,7 @@ theorem exists_isResolution_and_isModel_comp_of_isModel {C X : Scheme.{u}}
 
 [Tag 0C2V](https://stacks.math.columbia.edu/tag/0C2V) in the Stacks Project.
 
-**`Stacks.Models.IsMinimalModel`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModel.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModel.lean#L79). The attribute's comment: “a minimal model of a smooth projective curve”.
+**`Stacks.Models.IsMinimalModel`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModel.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModel.lean#L79). The attribute's comment: “a minimal model of a smooth projective curve”.
 
 > **Stacks Project, Tag 0C2V.** A *minimal model* of a smooth projective curve `C` over `K`
 > with `H⁰(C, 𝒪_C) = K` is a regular, proper model `X ⟶ Spec(R)` of `C` such that `X` contains no
@@ -259,7 +259,7 @@ public structure IsMinimalModel {C X : Scheme.{u}} (c : C ⟶ Spec (.of K)) [IsC
 
 [Tag 0CD9](https://stacks.math.columbia.edu/tag/0CD9) in the Stacks Project.
 
-**`Stacks.Models.exists_exceptionalContractionSequence_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean#L139).
+**`Stacks.Models.exists_exceptionalContractionSequence_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean#L139).
 
 > **Stacks Project, Tag 0CD9.** Let `C` be a smooth projective curve over `K` with
 > `H⁰(C, 𝒪_C) = K`. If `X` is a regular proper model for `C`, then there is a sequence of morphisms
@@ -286,7 +286,7 @@ theorem exists_exceptionalContractionSequence_isMinimalModel {C X : Scheme.{u}}
 
 [Tag 0C2W](https://stacks.math.columbia.edu/tag/0C2W) in the Stacks Project.
 
-**`Stacks.Models.exists_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean#L165). References: SGA 7 I (3.5), “partial”.
+**`Stacks.Models.exists_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelExistence.lean#L165). References: SGA 7 I (3.5), “partial”.
 
 > **Stacks Project, Tag 0C2W.** Let `C` be a smooth projective curve over `K` with
 > `H⁰(C, 𝒪_C) = K`. A minimal model of `C` exists.
@@ -312,4 +312,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.8, Tag 0C2R](https://stacks.math.columbia.edu/tag/0C2R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

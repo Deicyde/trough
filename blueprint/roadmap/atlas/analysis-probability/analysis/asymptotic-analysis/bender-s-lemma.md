@@ -8,7 +8,7 @@ proof: formalized
 
 # Bender's lemma
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html).
 
 ## Bender's lemma without a radius condition on the second series
 
@@ -23,7 +23,7 @@ $n \to \infty$.
 Unlike Bender's original lemma, nothing is assumed about the radius of convergence of
 $\sum_n b_n z^n$.
 
-Formalized by `MathlibExt.Analysis.Asymptotics.BenderProductCoefficient.bender_product_coefficient_asymptotic_general`, a theorem declared in [MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html#bender-product-coefficient-asymptotic-ge).
+Formalized by `MathlibExt.Analysis.Asymptotics.BenderProductCoefficient.bender_product_coefficient_asymptotic_general`, a theorem declared in [MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html#bender-product-coefficient-asymptotic-ge).
 
 ## Bender's lemma on coefficients of a product of power series
 
@@ -44,7 +44,7 @@ even product coefficients stay nonzero.
 
 - Dennis E. Davenport, Louis W. Shapiro, Lara K. Pudwell, and Leon C. Woodson, "The Boundary of Ordered Trees," Journal of Integer Sequences 18 (2015). Source file: <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davenport/dav3.tex> (Bender's lemma, lines 521-523). It follows from `bender_product_coefficient_asymptotic_general`; the hypothesis `hB` is unused and keeps the source's shape.
 
-Formalized by `MathlibExt.Analysis.Asymptotics.BenderProductCoefficient.bender_product_coefficient_asymptotic`, a theorem declared in [MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html#bender-product-coefficient-asymptotic).
+Formalized by `MathlibExt.Analysis.Asymptotics.BenderProductCoefficient.bender_product_coefficient_asymptotic`, a theorem declared in [MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/BenderProductCoefficient.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html#bender-product-coefficient-asymptotic).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bender's lemma](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/bender-s-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis/bender-s-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis/bender-s-lemma)

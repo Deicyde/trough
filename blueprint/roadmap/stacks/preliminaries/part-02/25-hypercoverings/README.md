@@ -1,6 +1,6 @@
 # 25 Hypercoverings
 
-Chapter 25 of the Stacks Project, *Hypercoverings*, [Tag 01FX](https://stacks.math.columbia.edu/tag/01FX): the 11 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 53 tags are carried by 114 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
+Chapter 25 of the Stacks Project, *Hypercoverings*, [Tag 01FX](https://stacks.math.columbia.edu/tag/01FX): the 11 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 53 tags are carried by 107 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
 
 - [25.2 Semi-representable objects](25-2-semi-representable-objects.md)
 - [25.3 Hypercoverings](25-3-hypercoverings.md)

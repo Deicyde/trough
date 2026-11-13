@@ -7,7 +7,7 @@ statement: formalized
 
 # Sidon sets and perfect difference sets
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html).
 
 ## Perfect difference sets modulo $v$
 
@@ -15,7 +15,7 @@ A set $B \subseteq \mathbb{N}$ is a perfect difference
 set modulo a natural number $v$ when every nonzero residue $x$ modulo $v$ satisfies
 $x \equiv a - b \pmod{v}$ for exactly one ordered pair $(a, b)$ of elements of $B$.
 
-Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.IsPerfectDifferenceSetMod`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#is-perfect-difference-set-mod).
+Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.IsPerfectDifferenceSetMod`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#is-perfect-difference-set-mod).
 
 ## Erdős Problem 707
 
@@ -23,7 +23,7 @@ The proposition that for every finite Sidon set $A \subseteq \mathbb{N}$
 there are a prime $p$ and a set $B \subseteq \mathbb{N}$ with $A \subseteq B$ such that $B$ is a
 perfect difference set modulo $p^2 + p + 1$.
 
-Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPrimePerfectDifferenceSet`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-prime-perfect-differenc).
+Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPrimePerfectDifferenceSet`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-prime-perfect-differenc).
 
 ## Erdős Problem 707, weak form
 
@@ -33,7 +33,7 @@ with $A \subseteq B$ such that $B$ is a perfect difference set modulo $m^2 + m +
 
 This weakens Erdős Problem 707 by allowing any $m \ge 1$ in place of a prime $p$.
 
-Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPerfectDifferenceSet`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-perfect-difference-set).
+Formalized by `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPerfectDifferenceSet`, a definition declared in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-perfect-difference-set).
 
 ## Erdős Problem 707 is false
 
@@ -53,7 +53,7 @@ formalized in Lean); erdosproblems.com/707 lists the problem as disproved.
 
 - T. F. Bloom, Erdős Problems, Problem #707, https://www.erdosproblems.com/707 (status DISPROVED (LEAN)); resolution: B. Alexeev and D. G. Mixon, Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof, arXiv:2510.19804 (2025); M. Hall, Jr., Cyclic projective planes, Duke Math. J. 14 (1947), 1079-1090, abstract of arXiv:2510.19804: {1, 2, 4, 8, 13} is a finite Sidon set contained in no finite perfect difference set; erdosproblems.com/707: {1, 2, 4, 8} cannot be extended to a perfect difference set modulo p² + p + 1 for any prime p, and Hall's {1, 3, 9, 10, 13} cannot be extended to any perfect difference set, https://arxiv.org/abs/2510.19804.
 
-Stated but not proved: `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPrimePerfectDifferenceSet_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-prime-perfect-differenc-2).
+Stated but not proved: `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPrimePerfectDifferenceSet_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-prime-perfect-differenc-2).
 
 ## The weak form of Erdős Problem 707 is false
 
@@ -73,7 +73,7 @@ difference set, and Hall (1947) proved the same for $\{1, 3, 9, 10, 13\}$.
 
 - T. F. Bloom, Erdős Problems, Problem #707, https://www.erdosproblems.com/707 (status DISPROVED (LEAN)); resolution: B. Alexeev and D. G. Mixon, Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof, arXiv:2510.19804 (2025); M. Hall, Jr., Cyclic projective planes, Duke Math. J. 14 (1947), 1079-1090, abstract of arXiv:2510.19804: {1, 2, 4, 8, 13} is a finite Sidon set contained in no finite perfect difference set; erdosproblems.com/707: {1, 2, 4, 8} cannot be extended to a perfect difference set modulo p² + p + 1 for any prime p, and Hall's {1, 3, 9, 10, 13} cannot be extended to any perfect difference set, https://arxiv.org/abs/2510.19804.
 
-Stated but not proved: `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPerfectDifferenceSet_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-perfect-difference-set-2).
+Stated but not proved: `MathlibExt.Combinatorics.SidonPerfectDifferenceSetErdosProblem707Wanted.sidonExtendsToPerfectDifferenceSet_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonPerfectDifferenceSetErdosProblem707Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html#sidon-extends-to-perfect-difference-set-2).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sidon sets and perfect difference sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-and-perfect-difference-sets)

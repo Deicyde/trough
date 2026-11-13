@@ -7,7 +7,7 @@ statement: formalized
 
 # Jensen's inequality for integrals
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html).
 
 ## Upper bound for the integral of the logarithm of a probability density over a set
 
@@ -29,7 +29,7 @@ $\mathbb{R}\cup\{-\infty\}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_82`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted.setIntegral_log_le_measure_mul_log_inv_measure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SetIntegralLogDensityBoundWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/SetIntegralLogDensityBoundWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html#set-integral-log-le-measure-mul-log-inv).
+Stated but not proved: `MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted.setIntegral_log_le_measure_mul_log_inv_measure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SetIntegralLogDensityBoundWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/SetIntegralLogDensityBoundWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html#set-integral-log-le-measure-mul-log-inv).
 
 ## Two-sided bound for the integral of the square root of one plus a square
 
@@ -45,7 +45,7 @@ $$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_66`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.SqrtOnePlusSqIntegralBoundsWanted.sqrt_one_add_sq_integral_le_and_le_one_add` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SqrtOnePlusSqIntegralBoundsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/SqrtOnePlusSqIntegralBoundsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html#sqrt-one-add-sq-integral-le-and-le-one-a).
+Stated but not proved: `MathlibExt.MeasureTheory.SqrtOnePlusSqIntegralBoundsWanted.sqrt_one_add_sq_integral_le_and_le_one_add` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SqrtOnePlusSqIntegralBoundsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/SqrtOnePlusSqIntegralBoundsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html#sqrt-one-add-sq-integral-le-and-le-one-a).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Jensen's inequality for integrals](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/integration/jensen-s-inequality-for-integrals)

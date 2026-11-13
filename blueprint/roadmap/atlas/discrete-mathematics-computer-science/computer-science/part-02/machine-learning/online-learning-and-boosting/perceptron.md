@@ -8,7 +8,7 @@ proof: formalized
 
 # Perceptron
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html).
 
 ## Sign of a Boolean label
 
@@ -16,7 +16,7 @@ For a commutative ring $K$, the sign of a Boolean label $y$ is
 the element $\operatorname{sign}(y) \in K$ equal to $1$ if $y$ is true and to $-1$ if $y$ is
 false.
 
-Formalized by `Cslib.MachineLearning.Perceptron.sign`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#sign).
+Formalized by `Cslib.MachineLearning.Perceptron.sign`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#sign).
 
 ## Perceptron step
 
@@ -28,7 +28,7 @@ $\operatorname{sign}(y)\,(w \cdot x) \le 0$, that is, $w$ does not classify the 
 correctly, the step returns $(w + \operatorname{sign}(y)\,x,\ m + 1)$ and counts a mistake;
 otherwise it returns $(w, m)$ unchanged.
 
-Formalized by `Cslib.MachineLearning.Perceptron.step`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#step).
+Formalized by `Cslib.MachineLearning.Perceptron.step`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#step).
 
 ## Perceptron run
 
@@ -38,7 +38,7 @@ $x \in K^\iota$ and $y$ a Boolean, from weights $w \in K^\iota$ with $m \in \mat
 far is the pair of final weights and final mistake count obtained by applying the perceptron step
 to each example of $L$ in order, starting from the state $(w, m)$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.run`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run).
+Formalized by `Cslib.MachineLearning.Perceptron.run`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run).
 
 ## Perceptron training
 
@@ -49,7 +49,7 @@ otherwise it trains on $D$ for $m$ passes from the weights the pass produced. So
 passes until one makes no mistake, for at most $n$ passes, and returns the weights of that pass,
 or nothing if every pass made a mistake.
 
-Formalized by `Cslib.MachineLearning.Perceptron.train`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train).
+Formalized by `Cslib.MachineLearning.Perceptron.train`, a definition declared in [CSLibExt/MachineLearning/Perceptron.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train).
 
 ## The starting mistake count only shifts the final count
 
@@ -60,7 +60,7 @@ number $m$, the perceptron run over $L$ from $w$ with $m$ mistakes so far ends w
 as the run from $w$ with $0$ mistakes so far, and with mistake count $m + c$, where $c$ is the final
 mistake count of the run from $w$ with $0$ mistakes so far.
 
-Formalized by `Cslib.MachineLearning.Perceptron.run_eq`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run-eq).
+Formalized by `Cslib.MachineLearning.Perceptron.run_eq`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run-eq).
 
 ## A mistake-free pass classifies every example
 
@@ -71,7 +71,7 @@ Boolean, and let $w \in K^\iota$. If the perceptron run over $L$ from weights $w
 so far ends with mistake count $0$, then every example $(x, y)$ in $L$ satisfies
 $0 < \operatorname{sign}(y)\,(w \cdot x)$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.classifies_of_run_eq_zero`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#classifies-of-run-eq-zero).
+Formalized by `Cslib.MachineLearning.Perceptron.classifies_of_run_eq_zero`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#classifies-of-run-eq-zero).
 
 ## Invariant of the perceptron run
 
@@ -84,7 +84,7 @@ $m \in \mathbb{N}$ satisfy $m \gamma \le u \cdot w$ and $w \cdot w \le m R^2$, a
 perceptron run over $L$ from $w$ with $m$ mistakes so far end with weights $w'$ and mistake count
 $m'$. Then $m' \gamma \le u \cdot w'$ and $w' \cdot w' \le m' R^2$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.run_invariant`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run-invariant).
+Formalized by `Cslib.MachineLearning.Perceptron.run_invariant`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#run-invariant).
 
 ## Novikoff's perceptron mistake bound
 
@@ -96,7 +96,7 @@ $\gamma \le \operatorname{sign}(y)\,(u \cdot x)$ and $x \cdot x \le R^2$. If the
 over $L$ from the zero weights with $0$ mistakes so far ends with mistake count $k$, then
 $k \gamma^2 \le (u \cdot u) R^2$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.mistakes_mul_sq_le`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#mistakes-mul-sq-le).
+Formalized by `Cslib.MachineLearning.Perceptron.mistakes_mul_sq_le`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#mistakes-mul-sq-le).
 
 ## Novikoff's mistake bound over an ordered field
 
@@ -109,7 +109,7 @@ over $L$ from the zero weights with $0$ mistakes so far ends with mistake count 
 $k \le (u \cdot u) R^2 / \gamma^2$; for a unit vector $u$ this is the textbook bound
 $R^2 / \gamma^2$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.mistakes_le_div`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#mistakes-le-div).
+Formalized by `Cslib.MachineLearning.Perceptron.mistakes_le_div`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#mistakes-le-div).
 
 ## Trained weights classify every example
 
@@ -120,7 +120,7 @@ every natural number $n$ and all weights $w, v \in K^\iota$, if training on $L$ 
 most $n$ passes returns $v$, then every example $(x, y)$ in $L$ satisfies
 $0 < \operatorname{sign}(y)\,(v \cdot x)$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.train_classifies`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train-classifies).
+Formalized by `Cslib.MachineLearning.Perceptron.train_classifies`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train-classifies).
 
 ## Every failed training pass adds a mistake
 
@@ -131,7 +131,7 @@ training on $L$ from $w$ with at most $n$ passes returns no weights, then the pe
 $w$ with $0$ mistakes so far over the concatenation of $n$ copies of $L$ ends with a mistake count
 of at least $n$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.le_run_of_train_eq_none`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#le-run-of-train-eq-none).
+Formalized by `Cslib.MachineLearning.Perceptron.le_run_of_train_eq_none`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#le-run-of-train-eq-none).
 
 ## The perceptron converges
 
@@ -144,7 +144,7 @@ $\gamma \le s(y)\,(u \cdot x)$ and $x \cdot x \le R^2$. Then for every natural n
 $(u \cdot u) R^2 < n \gamma^2$, perceptron training on $D$ from the zero weights with at most $n$
 passes returns some weights $v$, and $0 < s(y)\,(v \cdot x)$ for every example $(x, y)$ of $D$.
 
-Formalized by `Cslib.MachineLearning.Perceptron.train_converges`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Perceptron.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train-converges).
+Formalized by `Cslib.MachineLearning.Perceptron.train_converges`, a theorem declared in [CSLibExt/MachineLearning/Perceptron.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Perceptron.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html#train-converges).
 
 ## Depends on
 
@@ -153,4 +153,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Perceptron](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/online-learning-and-boosting/perceptron)

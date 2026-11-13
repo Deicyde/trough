@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.6 Descent of finiteness properties of modules
 
-Section 74.6 of the Stacks Project, [Tag 060T](https://stacks.math.columbia.edu/tag/060T). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.6 of the Stacks Project, [Tag 060T](https://stacks.math.columbia.edu/tag/060T). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 060U, a lemma
 
 [Tag 060U](https://stacks.math.columbia.edu/tag/060U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteType_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L344). The attribute's comment: “finite type read on the restriction to every etale scheme chart; at the module universe of the structure rings”.
+**`AlgebraicGeometry.Space.isFiniteType_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L344). The attribute's comment: “finite type read on the restriction to every etale scheme chart; at the module universe of the structure rings”.
 
 > **Stacks 060U.** A quasi-coherent module on an algebraic space whose inverse image along
 > every member of an fpqc covering is of finite type is itself of finite type, finite type being
@@ -37,7 +37,7 @@ theorem isFiniteType_of_pullback_fpqc
 
 [Tag 060V](https://stacks.math.columbia.edu/tag/060V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentation_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFinitePresentation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFinitePresentation.lean#L42).
+**`AlgebraicGeometry.Space.isFinitePresentation_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFinitePresentation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFinitePresentation.lean#L42).
 
 > Let `F` be a quasi-coherent `𝒪_X`-module on an algebraic space `X` and let
 > `{f_i : X_i → X}` be an fpqc covering such that each `f_i^* F` is an `𝒪_{X_i}`-module of finite
@@ -56,7 +56,7 @@ theorem isFinitePresentation_of_pullback_fpqc {I : Type v} {X : AlgebraicSpaces 
 
 [Tag 060W](https://stacks.math.columbia.edu/tag/060W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L371). The attribute's comment: “flatness read on the restriction to every etale scheme chart; at the module universe of the structure rings”.
+**`AlgebraicGeometry.Space.isFlat_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L371). The attribute's comment: “flatness read on the restriction to every etale scheme chart; at the module universe of the structure rings”.
 
 > **Stacks 060W.** A quasi-coherent module on an algebraic space whose inverse image along
 > every member of an fpqc covering is flat is itself flat, flatness being read on the restriction
@@ -81,7 +81,7 @@ theorem isFlat_of_pullback_fpqc
 
 [Tag 060X](https://stacks.math.columbia.edu/tag/060X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOnSite_of_pullback_isFpqcCovering_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcDescentQuasicoherent.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcDescentQuasicoherent.lean#L47).
+**`AlgebraicGeometry.Space.isFiniteLocallyFreeOnSite_of_pullback_isFpqcCovering_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcDescentQuasicoherent.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcDescentQuasicoherent.lean#L47).
 
 > Let `X` be an algebraic space over `S`, let `𝓕` be a quasi-coherent `𝒪_X`-module and let
 > `{f i : X i ⟶ X}` be an fpqc covering of `X` such that every pullback `(f i)^*𝓕` is finite locally
@@ -101,7 +101,7 @@ theorem isFiniteLocallyFreeOnSite_of_pullback_isFpqcCovering_of_isQuasicoherentO
 
 [Tag 060Y](https://stacks.math.columbia.edu/tag/060Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyProjective_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L399). The attribute's comment: “local projectivity in the chartwise sense of Tag 060R; at the module universe of the structure rings”.
+**`AlgebraicGeometry.Space.isLocallyProjective_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/ModuleFiniteness.lean#L399). The attribute's comment: “local projectivity in the chartwise sense of Tag 060R; at the module universe of the structure rings”.
 
 > **Stacks 060Y.** A quasi-coherent module on an algebraic space whose inverse image along
 > every member of an fpqc covering is locally projective is itself locally projective, in the
@@ -123,7 +123,7 @@ theorem isLocallyProjective_of_pullback_fpqc
 
 [Tag 060Z](https://stacks.math.columbia.edu/tag/060Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteType_iff_smallBaseChangePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardFiniteType.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardFiniteType.lean#L302).
+**`AlgebraicGeometry.Space.isFiniteType_iff_smallBaseChangePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardFiniteType.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardFiniteType.lean#L302).
 
 > For a finite morphism `f : X ⟶ Y` of algebraic spaces a quasi-coherent `𝒪_X`-module `F` is
 > of finite type if and only if its direct image `f_*F` is.
@@ -141,7 +141,7 @@ theorem isFiniteType_iff_smallBaseChangePushforward_of_isQuasicoherentOnSite
 
 [Tag 0610](https://stacks.math.columbia.edu/tag/0610) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentation_iff_smallBaseChangePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartSchemeFinitePresentationDescent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartSchemeFinitePresentationDescent.lean#L166).
+**`AlgebraicGeometry.Space.isFinitePresentation_iff_smallBaseChangePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartSchemeFinitePresentationDescent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartSchemeFinitePresentationDescent.lean#L166).
 
 > For a finite morphism `f : X ⟶ Y` of finite presentation of algebraic spaces a quasi-coherent
 > `𝒪_X`-module `F` is of finite presentation if and only if its direct image `f_*F` is.
@@ -162,4 +162,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.6, Tag 060T](https://stacks.math.columbia.edu/tag/060T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

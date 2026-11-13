@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.37 Modifications
 
-Section 31.37 of the Stacks Project, [Tag 0AYN](https://stacks.math.columbia.edu/tag/0AYN). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.37 of the Stacks Project, [Tag 0AYN](https://stacks.math.columbia.edu/tag/0AYN). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AYP, a lemma
 
 [Tag 0AYP](https://stacks.math.columbia.edu/tag/0AYP) in the Stacks Project.
 
-**`Stacks.ProjectiveBundleSplitting.exists_modification_hasInvertibleFiltration'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleSplitting/InvertibleFiltration.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundleSplitting/InvertibleFiltration.lean#L47).
+**`Stacks.ProjectiveBundleSplitting.exists_modification_hasInvertibleFiltration'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleSplitting/InvertibleFiltration.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleSplitting/InvertibleFiltration.lean#L47).
 
 > **Stacks Project, Tag 0AYP.** Let `X` be an integral scheme and `ℰ` a finite locally free
 > `𝒪_X`-module of rank `r`. There is a modification `f : X' ⟶ X` such that `f^*ℰ` has a filtration
@@ -36,7 +36,7 @@ theorem exists_modification_hasInvertibleFiltration' (r : ℕ) (X : Scheme.{u}) 
 
 [Tag 0C4V](https://stacks.math.columbia.edu/tag/0C4V) in the Stacks Project.
 
-**`Stacks.Divisors.exists_proper_modification_resolving_partialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Modification/RationalMap.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Modification/RationalMap.lean#L63).
+**`Stacks.Divisors.exists_proper_modification_resolving_partialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Modification/RationalMap.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Modification/RationalMap.lean#L63).
 
 > **Stacks Project, Tag 0C4V.** An `S`-rational map from a Noetherian scheme to a scheme
 > proper over `S` extends to an `S`-morphism after a proper modification which is unchanged over
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.37, Tag 0AYN](https://stacks.math.columbia.edu/tag/0AYN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

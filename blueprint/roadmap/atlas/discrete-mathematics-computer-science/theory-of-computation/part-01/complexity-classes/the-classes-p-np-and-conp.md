@@ -8,7 +8,7 @@ proof: formalized
 
 # The classes P, NP and coNP
 
-15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html).
+15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html).
 
 ## Bitstring encodings
 
@@ -23,7 +23,7 @@ and returns $a$.
 
 - a class version of Mathlib's `Computability.Encoding` specialized to the alphabet `Bool`, inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.BitstringEncoding`, a class declared in [MathlibExt/Computability/Complexity.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bitstring-encoding).
+Formalized by `MetaMathlibExt.BitstringEncoding`, a class declared in [MathlibExt/Computability/Complexity.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bitstring-encoding).
 
 ## Encoding function of a bitstring encoding
 
@@ -31,7 +31,7 @@ For a type $\alpha$ with a canonical bitstring
 encoding, the bitstring encoding of $a \in \alpha$ is the finite list of booleans that this
 encoding assigns to $a$.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.bitEncode`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-encode).
+Formalized by `MetaMathlibExt.BitstringEncoding.bitEncode`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-encode).
 
 ## Decoding function of a bitstring encoding
 
@@ -39,7 +39,7 @@ For a type $\alpha$ with a canonical bitstring
 encoding, bitstring decoding is the decoding function of that encoding: it sends each finite list
 of booleans either to an element of $\alpha$ or to failure.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.bitDecode`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-decode).
+Formalized by `MetaMathlibExt.BitstringEncoding.bitDecode`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-decode).
 
 ## Decoding inverts bitstring encoding
 
@@ -47,7 +47,7 @@ Let $\alpha$ be a type with a canonical bitstring
 encoding. For every $a \in \alpha$, decoding the bitstring encoding of $a$ succeeds and returns
 $a$.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode`, a theorem declared in [MathlibExt/Computability/Complexity.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-decode-bit-encode).
+Formalized by `MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode`, a theorem declared in [MathlibExt/Computability/Complexity.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#bit-decode-bit-encode).
 
 ## Self-delimiting form of a bitstring
 
@@ -56,7 +56,7 @@ $(b_1, \dots, b_n)$ is $(\mathrm{true}, b_1, \dots, \mathrm{true}, b_n, \mathrm{
 bit is preceded by $\mathrm{true}$ and the block is terminated by $\mathrm{false}$. In
 particular the empty bitstring becomes $(\mathrm{false})$.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.delimit`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#delimit).
+Formalized by `MetaMathlibExt.BitstringEncoding.delimit`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#delimit).
 
 ## Parsing one self-delimiting block
 
@@ -65,7 +65,7 @@ $0$. Reading a list of bits from the front, a $0$ ends the block, and a $1$ foll
 contributes $b$ to the payload. The result is the payload together with the rest of the list
 after the terminating $0$. Parsing fails if the list runs out before a terminating $0$ is read.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.undelimit`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit).
+Formalized by `MetaMathlibExt.BitstringEncoding.undelimit`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit).
 
 ## Bounded parsing of self-delimiting blocks
 
@@ -76,7 +76,7 @@ $s$, then parses the remaining list with bound $m$, and returns the first payloa
 payloads of the rest. It fails if either step fails. So the parse succeeds exactly when $s$ is
 the concatenation of at most $n$ self-delimiting blocks, and it returns their payloads in order.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.undelimitBlocksAux`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit-blocks-aux).
+Formalized by `MetaMathlibExt.BitstringEncoding.undelimitBlocksAux`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit-blocks-aux).
 
 ## Parsing a list of booleans into self-delimiting blocks
 
@@ -86,7 +86,7 @@ at most as many blocks as the length of $s$, and returns the list of payloads in
 if some block fails to parse. The bound never binds, since every block uses at least one bit.
 So the parse succeeds exactly when $s$ is a concatenation of self-delimiting blocks.
 
-Formalized by `MetaMathlibExt.BitstringEncoding.undelimitBlocks`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit-blocks).
+Formalized by `MetaMathlibExt.BitstringEncoding.undelimitBlocks`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#undelimit-blocks).
 
 ## Decision problems
 
@@ -97,7 +97,7 @@ A decision problem is a function from finite lists of booleans
 
 - inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.ComplexityTheory.DecisionProblem`, an abbreviation declared in [MathlibExt/Computability/Complexity.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#decision-problem).
+Formalized by `MetaMathlibExt.ComplexityTheory.DecisionProblem`, an abbreviation declared in [MathlibExt/Computability/Complexity.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#decision-problem).
 
 ## Complexity classes
 
@@ -107,7 +107,7 @@ A complexity class is a set of decision problems.
 
 - inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.ComplexityTheory.DecisionComplexityClass`, an abbreviation declared in [MathlibExt/Computability/Complexity.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#decision-complexity-class).
+Formalized by `MetaMathlibExt.ComplexityTheory.DecisionComplexityClass`, an abbreviation declared in [MathlibExt/Computability/Complexity.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#decision-complexity-class).
 
 ## Polynomial-time computability under given encodings
 
@@ -126,7 +126,7 @@ every other stack empty and its internal state equal to its initial state.
 
 - inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTimeWithEncoding`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#is-poly-time-with-encoding).
+Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTimeWithEncoding`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#is-poly-time-with-encoding).
 
 ## Polynomial-time computable functions
 
@@ -139,7 +139,7 @@ $\beta$.
 
 - inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#is-poly-time).
+Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#is-poly-time).
 
 ## The complexity class P
 
@@ -147,7 +147,7 @@ P is the set of decision problems (functions from lists of
 booleans to booleans) that are computable in polynomial time by a deterministic multi-stack
 Turing machine, with respect to the canonical bitstring encodings of inputs and outputs.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.P`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#p).
+Formalized by `MetaMathlibExt.ComplexityTheory.P`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#p).
 
 ## The complexity class NP
 
@@ -159,7 +159,7 @@ whose length is at most $p$ evaluated at the length of $x$ and for which $R(x, w
 
 Polynomial time is measured with respect to the canonical bitstring encodings.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.NP`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#np).
+Formalized by `MetaMathlibExt.ComplexityTheory.NP`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#np).
 
 ## The class coNP
 
@@ -170,7 +170,7 @@ problem that accepts exactly the bitstrings that $L$ rejects, belongs to NP.
 
 - inlined from FormalConjectures (absent from Mathlib).
 
-Formalized by `MetaMathlibExt.ComplexityTheory.coNP`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/Complexity.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#co-np).
+Formalized by `MetaMathlibExt.ComplexityTheory.coNP`, a definition declared in [MathlibExt/Computability/Complexity.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/Complexity.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html#co-np).
 
 ## Depends on
 
@@ -179,4 +179,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: The classes P, NP and coNP](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/complexity-classes/the-classes-p-np-and-conp)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.4 Sections with finite support
 
-Section 63.4 of the Stacks Project, [Tag 0F6E](https://stacks.math.columbia.edu/tag/0F6E). 15 tags here are carried by 87 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.4 of the Stacks Project, [Tag 0F6E](https://stacks.math.columbia.edu/tag/0F6E). 15 tags here are carried by 88 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F6E, the section
 
 [Tag 0F6E](https://stacks.math.columbia.edu/tag/0F6E) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isFiniteSupport_iff_exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L123). The attribute's comment: “the footnote: a support is finite over the base exactly when it is proper”.
+**`AlgebraicGeometry.SmallEtale.isFiniteSupport_iff_exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L123). The attribute's comment: “the footnote: a support is finite over the base exactly when it is proper”.
 
 > **Stacks 0F6E, the footnote.** For a locally quasi-finite `f`, a subset of `X_V` is an
 > eligible support of the finite-support direct image — the range of an immersion finite over
@@ -35,18 +35,18 @@ public theorem isFiniteSupport_iff_exists_isProper
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SmallEtale.FiniteSupport`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L233), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L140) (StacksFrontier): “the eligible supports, locally closed and finite over the base”.
-- [`AlgebraicGeometry.SmallEtale.finiteSupport_closedWithin`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L251), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L143) (StacksFrontier): “closedness of one eligible support in another”.
-- [`AlgebraicGeometry.SmallEtale.finiteSupportSections`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L146) (StacksFrontier): “the group of finite-support sections, as a colimit of supported sections”.
-- [`AlgebraicGeometry.SmallEtale.exists_finiteSupport_sum`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L336), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L149) (StacksFrontier): “a finite-support section as a finite formal sum of supported sections”.
-- [`AlgebraicGeometry.SmallEtale.finiteSupportPresheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L853), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L152) (StacksFrontier): “the restriction maps, assembling the groups into a presheaf”.
-- [`AlgebraicGeometry.SmallEtale.finiteSupportPushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L966), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L155) (StacksFrontier): “the finite-support direct image presheaf as a functor”.
+- [`AlgebraicGeometry.SmallEtale.FiniteSupport`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L233), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L140) (StacksFrontier): “the eligible supports, locally closed and finite over the base”.
+- [`AlgebraicGeometry.SmallEtale.finiteSupport_closedWithin`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L251), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L143) (StacksFrontier): “closedness of one eligible support in another”.
+- [`AlgebraicGeometry.SmallEtale.finiteSupportSections`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L146) (StacksFrontier): “the group of finite-support sections, as a colimit of supported sections”.
+- [`AlgebraicGeometry.SmallEtale.exists_finiteSupport_sum`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L336), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L149) (StacksFrontier): “a finite-support section as a finite formal sum of supported sections”.
+- [`AlgebraicGeometry.SmallEtale.finiteSupportPresheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L851), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L152) (StacksFrontier): “the restriction maps, assembling the groups into a presheaf”.
+- [`AlgebraicGeometry.SmallEtale.finiteSupportPushforward`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L964), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportProper.lean#L155) (StacksFrontier): “the finite-support direct image presheaf as a functor”.
 
 ## Tag 0F6J, an equation
 
 [Tag 0F6J](https://stacks.math.columbia.edu/tag/0F6J) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.exists_finiteSupport_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L336). The attribute's comment: “the formal sum presentation”.
+**`AlgebraicGeometry.SmallEtale.exists_finiteSupport_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L336). The attribute's comment: “the formal sum presentation”.
 
 > **Stacks 0F6J.** Every section with finite support over `V` is a finite formal sum
 > `s = ∑ (Z_i, s_i)`, where each `Z_i` is a support finite over `V` and `s_i ∈ H_{Z_i}(F)`,
@@ -67,7 +67,7 @@ public theorem exists_finiteSupport_sum
 
 [Tag 0F6M](https://stacks.math.columbia.edu/tag/0F6M) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.FiniteSupport`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L233). The attribute's comment: “the index of the colimit”.
+**`AlgebraicGeometry.SmallEtale.FiniteSupport`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L233). The attribute's comment: “the index of the colimit”.
 
 > **Stacks 0F6M.** The partially ordered set of supports of `X_V` which are finite over
 > `V`.
@@ -76,7 +76,7 @@ public theorem exists_finiteSupport_sum
 public abbrev FiniteSupport (V : SmallEtale B Y.obj Y.property)
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupport_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L240). The attribute's comment: “local closedness of the supports”.
+**`AlgebraicGeometry.SmallEtale.finiteSupport_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L240). The attribute's comment: “local closedness of the supports”.
 
 > The support of a subscheme finite over `V` is locally closed, so the group `H_Z(F)` of
 > Stacks 0F6F is defined for it.
@@ -86,7 +86,7 @@ public theorem finiteSupport_isLocallyClosed (V : SmallEtale B Y.obj Y.property)
     (E : FiniteSupport B f V) : IsLocallyClosed E.1
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupport_closedWithin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L251). The attribute's comment: “closedness of the transition inclusions”.
+**`AlgebraicGeometry.SmallEtale.finiteSupport_closedWithin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L251). The attribute's comment: “closedness of the transition inclusions”.
 
 > One support finite over `V` contained in another is closed in it. This is the relation
 > making the transition maps of Stacks 0F6F available on the index, and in the source it is the
@@ -99,7 +99,7 @@ public theorem finiteSupport_closedWithin (V : SmallEtale B Y.obj Y.property)
     IsClosed ((Subtype.val : E'.1 → _) ⁻¹' E.1)
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L297). The attribute's comment: “the diagram of supported sections”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L297). The attribute's comment: “the diagram of supported sections”.
 
 > **Stacks 0F6M.** The diagram `Z ↦ H_Z(F)` of supported sections over the supports finite
 > over `V`, with the transition maps of Stacks 0F6F along the inclusions.
@@ -111,7 +111,7 @@ public def finiteSupportDiagram
     FiniteSupport B f V ⥤ AddCommGrpCat.{v}
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L326). The attribute's comment: “the colimit formula”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L326). The attribute's comment: “the colimit formula”.
 
 > **Stacks 0F6M.** The abelian group of sections with finite support over `V`, namely the
 > colimit of `H_Z(F)` over the supports finite over `V`.
@@ -123,7 +123,7 @@ public abbrev finiteSupportSections
     [Small.{v} (FiniteSupport B f V)] : AddCommGrpCat.{v}
 ```
 
-**`AlgebraicGeometry.SmallEtale.isFiniteSupport_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L349). The attribute's comment: “base change of the supports”.
+**`AlgebraicGeometry.SmallEtale.isFiniteSupport_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L349). The attribute's comment: “base change of the supports”.
 
 > **Stacks 0F6M.** The inverse image of a support finite over `V` along a morphism
 > `V' ⟶ V` of the small étale site of `Y` is a support finite over `V'`.
@@ -135,7 +135,7 @@ public theorem isFiniteSupport_preimage {V V' : SmallEtale B Y.obj Y.property} (
       ((smallEtaleBaseChange B f).map g)).base ⁻¹' E.1)
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L460). The attribute's comment: “base change of supported sections”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L458). The attribute's comment: “base change of supported sections”.
 
 > **Stacks 0F6M.** Base change of a support finite over `V` and of its supported sections
 > along a morphism `V' ⟶ V` of the small étale site of `Y`. The support is the set-theoretic
@@ -148,7 +148,7 @@ public def finiteSupportBaseChange
     (E : FiniteSupport B f V) : FiniteSupportBaseChange B f F g E
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportPresheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L853). The attribute's comment: “the finite-support presheaf”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportPresheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L851). The attribute's comment: “the finite-support presheaf”.
 
 > **Stacks 0F6M.** The abelian presheaf `V ↦ colim_Z H_Z(F)` on the small étale site of
 > `Y`, with base change of supports as its restriction maps.
@@ -160,7 +160,7 @@ public abbrev finiteSupportPresheaf
     (SmallEtale B Y.obj Y.property)ᵒᵖ ⥤ AddCommGrpCat.{v}
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 966](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L966). The attribute's comment: “the finite-support direct image functor”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean, line 964](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupport.lean#L964). The attribute's comment: “the finite-support direct image functor”.
 
 > **Stacks 0F6M.** The direct image with finite support, as a functor from abelian sheaves
 > on the small étale site of `X` to abelian presheaves on the small étale site of `Y`. Its
@@ -180,7 +180,7 @@ public def finiteSupportPushforward
 
 [Tag 0F6N](https://stacks.math.columbia.edu/tag/0F6N) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L196). The attribute's comment: “functor comparison of the two models of f\_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L196). The attribute's comment: “functor comparison of the two models of f\_!”.
 
 > The two models of the direct image with compact support agree: the
 > sheafification of the finite-support direct image presheaf is the proper-support subsheaf of
@@ -192,7 +192,7 @@ public def fShriekFunctorIsoProperSupport [IsSeparated (B.inclusion.map g)]
     fShriekFunctor.{u, v} B g ≅ properSupportFunctor.{u, max (u + 1) v} B g
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportPushforward.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportPushforward.lean#L211). References: SGA 4 XVII (6.3.16), “colimit formula”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportPushforward.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportPushforward.lean#L211). References: SGA 4 XVII (6.3.16), “colimit formula”.
 
 > For a separated, locally finite type and locally quasi-finite morphism `f` of a big étale
 > site, the finite-support direct image presheaf `f_{p!}` of [Stacks, Tag 0F6M] is isomorphic to
@@ -228,7 +228,22 @@ public def finiteSupportPushforwardIso (B : BigEtaleSite.{u}) {X Y : B.Scheme} (
 
 [Tag 0F6P](https://stacks.math.columbia.edu/tag/0F6P) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.surjective_finiteSupportStalkToFiberStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkGeometric.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkGeometric.lean#L598). The attribute's comment: “surjectivity of the germ decomposition”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkFunctorIso.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkFunctorIso.lean#L53). The attribute's comment: “the germ decomposition as an isomorphism of functors on `Ab(X_étale)`”.
+
+> **Stacks 0F6P.** For a locally quasi-finite morphism `f : X ⟶ Y` and a geometric point `ȳ`
+> of `Y`, functorially in the abelian sheaf `F` on the small étale site of `X`, the stalk at `ȳ` of
+> the finite-support direct image `f_{p!}F` is the direct sum of the stalks of `F` over the
+> geometric points of `X` lying over `ȳ`: `(f_{p!}F)_ȳ ≅ ⊕_{f(x̄) = ȳ} F_x̄`. The component at `F`
+> is `finiteSupportStalkIso`.
+
+```lean
+public def finiteSupportStalkFunctorIso :
+    (finiteSupportPushforward B f hsmall).1 ⋙
+        etaleStalkPresheafFunctor B Y.obj Y.property s AddCommGrpCat.{max u v} ≅
+      fiberStalksFunctor.{u, v} B f s
+```
+
+**`AlgebraicGeometry.SmallEtale.surjective_finiteSupportStalkToFiberStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkGeometric.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkGeometric.lean#L598). The attribute's comment: “surjectivity of the germ decomposition”.
 
 > **The surjectivity half of Stacks 0F6P.** The germ decomposition map
 > `(f_{p!}F)_ȳ ⟶ ⊕_{f(x̄) = ȳ} F_x̄` is surjective.
@@ -239,7 +254,7 @@ public theorem surjective_finiteSupportStalkToFiberStalks
     Function.Surjective (finiteSupportStalkToFiberStalks B f s F hsmall)
 ```
 
-**`AlgebraicGeometry.SmallEtale.injective_finiteSupportStalkToFiberStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean, line 962](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean#L962). The attribute's comment: “injectivity of the germ decomposition”.
+**`AlgebraicGeometry.SmallEtale.injective_finiteSupportStalkToFiberStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean, line 962](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean#L962). The attribute's comment: “injectivity of the germ decomposition”.
 
 > **The injectivity half of Stacks 0F6P.** The germ decomposition map
 > `(f_{p!}F)_ȳ ⟶ ⊕_{f(x̄) = ȳ} F_x̄` is injective.
@@ -253,7 +268,7 @@ public theorem injective_finiteSupportStalkToFiberStalks :
     Function.Injective (finiteSupportStalkToFiberStalks B f s F hsmall)
 ```
 
-**`AlgebraicGeometry.SmallEtale.finiteSupportStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean, line 995](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean#L995). The attribute's comment: “the germ decomposition is an isomorphism”.
+**`AlgebraicGeometry.SmallEtale.finiteSupportStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean, line 995](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkIso.lean#L995). The attribute's comment: “the germ decomposition is an isomorphism”.
 
 > **Stacks 0F6P.** For a locally quasi-finite morphism `f : X ⟶ Y`, the stalk of the
 > finite-support direct image `f_{p!}F` at a geometric point `ȳ` of `Y` is the direct sum of the
@@ -270,7 +285,7 @@ public def finiteSupportStalkIso :
 
 [Tag 0F6Q](https://stacks.math.columbia.edu/tag/0F6Q) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L412). The attribute's comment: “canonical natural presheaf map”.
+**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L419). The attribute's comment: “canonical natural presheaf map”.
 
 > **Stacks 0F6Q.** The canonical map `j_{p!} ⟶ f_{p!}` from the presheaf extension by zero
 > along the étale morphism `U ⟶ X` to the finite-support direct image presheaf, natural in the
@@ -282,7 +297,7 @@ public def etaleExtensionToFiniteSupport :
     abelianPresheafExtensionByZero B X hX U ⟶ etaleFiniteSupportPresheaf B X hX U
 ```
 
-**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport_on_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L456). The attribute's comment: “graph-support formula on generators”.
+**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport_on_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L463). The attribute's comment: “graph-support formula on generators”.
 
 > **Stacks 0F6Q.** The value of the canonical map on a generator of the presheaf extension
 > by zero: the section of `F` over an étale object `W → U`, viewed in the summand of `j_{p!}F`
@@ -302,7 +317,7 @@ public theorem etaleExtensionToFiniteSupport_on_graph
         (etaleGraphFiniteSupport B X hX U W) (etaleGraphSection B X hX U F W s)
 ```
 
-**`AlgebraicGeometry.SmallEtale.graphSupportedSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L530). The attribute's comment: “graph supports”.
+**`AlgebraicGeometry.SmallEtale.graphSupportedSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Comparison.lean#L537). The attribute's comment: “graph supports”.
 
 > **Stacks 0F6Q, the graph supports.** For an étale object `W → U` the graph of `W → U` is
 > an open immersion `W ⟶ U ×_X W` whose image is a support finite over `W`, and a section of an
@@ -313,7 +328,7 @@ public def graphSupportedSection (W : SmallEtale B U.obj.left.1 U.obj.left.prope
     GraphSupportedSectionData B X hX U W
 ```
 
-**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport_sheafify_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Stalk.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Stalk.lean#L511). The attribute's comment: “isomorphism after sheafification”.
+**`AlgebraicGeometry.SmallEtale.etaleExtensionToFiniteSupport_sheafify_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Stalk.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportExtensionByZero/Stalk.lean#L511). The attribute's comment: “isomorphism after sheafification”.
 
 > **Stacks 0F6Q.** The canonical map `j_{p!}F ⟶ f_{p!}F` becomes an isomorphism after
 > sheafification: it is an isomorphism on every geometric stalk, both sides becoming the direct
@@ -333,7 +348,7 @@ public theorem etaleExtensionToFiniteSupport_sheafify_isIso
 
 [Tag 0F6R](https://stacks.math.columbia.edu/tag/0F6R) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalk.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalk.lean#L141).
+**`AlgebraicGeometry.SmallEtale.fShriekFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalk.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalk.lean#L141).
 
 > **Stacks 0F6R.** The direct image with compact support `f_!` of a locally quasi-finite
 > morphism, on abelian sheaves on the small étale sites: the sheafification of the finite-support
@@ -349,7 +364,7 @@ public def fShriekFunctor :
 
 [Tag 0F5F](https://stacks.math.columbia.edu/tag/0F5F) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L78). The attribute's comment: “part (1), stalk decomposition”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L78). The attribute's comment: “part (1), stalk decomposition”.
 
 > **Stacks 0F5F, part (1).** The stalk of the direct image with compact support `f_!F` of a
 > locally quasi-finite morphism at a geometric point `ȳ` of `Y` is the direct sum of the stalks of
@@ -362,7 +377,7 @@ public def fShriekStalkIso (s : GeometricPoint Y.obj)
       AddCommGrpCat.of (fiberStalks.{u, max (u + 1) v} B f s F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkIso_comp_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L90). The attribute's comment: “part (1), canonical comparison”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkIso_comp_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L90). The attribute's comment: “part (1), canonical comparison”.
 
 > **Stacks 0F5F, part (1).** The stalk decomposition of `f_!F` is the canonical one: the
 > comparison of the stalk of `f_!F` with the stalk of the finite-support direct image presheaf
@@ -373,7 +388,7 @@ public def fShriekStalkIso (s : GeometricPoint Y.obj)
 public theorem fShriekStalkIso_comp_sheafification (s : GeometricPoint Y.obj)
     (F : Sheaf (SmallEtale.topology B X.obj X.property) AddCommGrpCat.{max (u + 1) v}) :
     colim.map (Functor.whiskerLeft
-        (CategoryOfElements.π (geometricPointFiber B Y.obj Y.property s)).op
+        (Functor.Elements.π (geometricPointFiber B Y.obj Y.property s)).op
         (toSheafify (SmallEtale.topology B Y.obj Y.property)
           ((finiteSupportPushforward.{u, max (u + 1) v} B f
             (fun _ => inferInstance)).1.obj F))) ≫
@@ -381,7 +396,7 @@ public theorem fShriekStalkIso_comp_sheafification (s : GeometricPoint Y.obj)
       (finiteSupportStalkIso.{u, max (u + 1) v} B f s F fun _ => inferInstance).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L105). The attribute's comment: “part (1), functoriality”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L105). The attribute's comment: “part (1), functoriality”.
 
 > **Stacks 0F5F, part (1).** The stalk decomposition of the direct image with compact support is
 > natural in the abelian sheaf: a morphism of sheaves on `X` acts on the direct sum of stalks over
@@ -392,13 +407,13 @@ public theorem fShriekStalkIso_natural (s : GeometricPoint Y.obj)
     {F G : Sheaf (SmallEtale.topology B X.obj X.property) AddCommGrpCat.{max (u + 1) v}}
     (φ : F ⟶ G) :
     colim.map (Functor.whiskerLeft
-        (CategoryOfElements.π (geometricPointFiber B Y.obj Y.property s)).op
+        (Functor.Elements.π (geometricPointFiber B Y.obj Y.property s)).op
         ((fShriekFunctor.{u, v} B f).map φ).1) ≫ (fShriekStalkIso.{u, v} B f s G).hom =
       (fShriekStalkIso.{u, v} B f s F).hom ≫
         AddCommGrpCat.ofHom (fiberStalksMap.{u, max (u + 1) v} B f s φ)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L370). The attribute's comment: “part (2), exactness”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L370). The attribute's comment: “part (2), exactness”.
 
 > **Stacks 0F5F, part (2).** The direct image with compact support of a locally quasi-finite
 > morphism is an exact functor on abelian étale sheaves.
@@ -411,7 +426,7 @@ public theorem fShriekFunctor_exact :
     exactFunctor _ _ (fShriekFunctor.{u, v} B f)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctor_preservesCoproductsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L392). The attribute's comment: “part (2), direct sums”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctor_preservesCoproductsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkDecomposition.lean#L392). The attribute's comment: “part (2), direct sums”.
 
 > **Stacks 0F5F, part (2).** The direct image with compact support of a locally quasi-finite
 > morphism commutes with arbitrary direct sums of abelian étale sheaves.
@@ -421,7 +436,7 @@ public theorem fShriekFunctor_preservesCoproductsOfShape (I : Type (max (u + 1) 
     PreservesColimitsOfShape (Discrete I) (fShriekFunctor.{u, v} B f)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkFunctorDecomposition.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkFunctorDecomposition.lean#L51). The attribute's comment: “part (1), stalk decomposition as an isomorphism of functors”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkFunctorDecomposition.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekStalkFunctorDecomposition.lean#L51). The attribute's comment: “part (1), stalk decomposition as an isomorphism of functors”.
 
 > **Stacks 0F5F, part (1), as an isomorphism of functors.** The composite of the direct image
 > with compact support `f_!` with the stalk functor at a geometric point `ȳ` of `Y` is the
@@ -440,7 +455,7 @@ public def fShriekStalkFunctorIso (s : GeometricPoint Y.obj) :
 
 [Tag 0F6S](https://stacks.math.columbia.edu/tag/0F6S) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.shriekLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean#L137). The attribute's comment: “covariance along an inclusion of opens of the source”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.shriekLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean#L137). The attribute's comment: “covariance along an inclusion of opens of the source”.
 
 > **The Čech face map.** For an inclusion `V ≤ W` of open subschemes of `X`, the covariance map
 > `(j_V ≫ f)_!((-)|_V) ⟶ (j_W ≫ f)_!((-)|_W)` of Stacks 0F6S for the open immersion `V ⟶ W`.
@@ -451,7 +466,7 @@ public def shriekLE {V W : (B.inclusion.obj X).Opens} (h : V ≤ W) :
       openShriekPushforward.{u, v} B (openSchemeι B W) f
 ```
 
-**`AlgebraicGeometry.SmallEtale.ofHom_of_comp_fShriekStalkIso_openCovariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverStalkCovariance.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverStalkCovariance.lean#L164). The attribute's comment: “part (1), stalk compatibility on the stalk decomposition of Stacks 0F5F”.
+**`AlgebraicGeometry.SmallEtale.ofHom_of_comp_fShriekStalkIso_openCovariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverStalkCovariance.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverStalkCovariance.lean#L164). The attribute's comment: “part (1), stalk compatibility on the stalk decomposition of Stacks 0F5F”.
 
 > **Stacks 0F6S, part (1)**, on the stalk decompositions of Stacks 0F5F: on the direct sums of
 > stalks over the geometric fibres the covariance map of the direct images with compact support is
@@ -476,7 +491,7 @@ public theorem ofHom_of_comp_fShriekStalkIso_openCovariance
             (openFiberPoint B j f s y))
 ```
 
-**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean#L466). The attribute's comment: “covariance, presheaf map”.
+**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean#L466). The attribute's comment: “covariance, presheaf map”.
 
 > The canonical covariance map of finite-support direct-image presheaves for an open
 > subscheme of the source. Its generator formula and the canonical extension of supported
@@ -490,7 +505,7 @@ public def openCovariancePresheafMap :
       OpenCovariancePresheafMapSpec B j f α}
 ```
 
-**`AlgebraicGeometry.SmallEtale.openCovarianceShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean#L506). The attribute's comment: “covariance”.
+**`AlgebraicGeometry.SmallEtale.openCovarianceShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovariance/PresheafMap.lean#L506). The attribute's comment: “covariance”.
 
 > Sheafifying the canonical presheaf map gives covariance of the direct image with compact
 > support under an open immersion of the source.
@@ -500,7 +515,7 @@ public def openCovarianceShriekMap :
     openShriekPushforward.{u, v} B j f ⟶ fShriekFunctor.{u, v} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.mono_openCovarianceShriekMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceInjectivity.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceInjectivity.lean#L199). The attribute's comment: “part (4), injectivity for a separated morphism”.
+**`AlgebraicGeometry.SmallEtale.mono_openCovarianceShriekMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceInjectivity.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceInjectivity.lean#L199). The attribute's comment: “part (4), injectivity for a separated morphism”.
 
 > **Stacks 0F6S, part (4), for a separated morphism.** The covariance map of the direct images
 > with compact support attached to an open subscheme of the source is a monomorphism: it is the
@@ -512,7 +527,7 @@ public theorem mono_openCovarianceShriekMap_app :
     Mono ((openCovarianceShriekMap.{u, v} B j f).app F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap_comp_finiteSupportPushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceSeparated.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceSeparated.lean#L261). The attribute's comment: “part (2), agreement with the map of Stacks 0F53 through Stacks 0F6N”.
+**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap_comp_finiteSupportPushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceSeparated.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceSeparated.lean#L261). The attribute's comment: “part (2), agreement with the map of Stacks 0F53 through Stacks 0F6N”.
 
 > **Stacks 0F6S, part (2).** For a separated morphism the covariance map of finite-support
 > direct-image presheaves attached to an open subscheme of the source is the extension by zero of
@@ -527,7 +542,7 @@ public theorem openCovariancePresheafMap_comp_finiteSupportPushforwardIso :
         (openInclusionShriekMap.{u, max (u + 1) v} B j f F).val.hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_covarianceSectionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L293). The attribute's comment: “part (1), stalk compatibility on a generator, summand in the open”.
+**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_covarianceSectionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L293). The attribute's comment: “part (1), stalk compatibility on a generator, summand in the open”.
 
 > **Stacks Project, Tag 0F6S part (1)** on a colimit generator, in a summand indexed by a point
 > of the geometric fibre of `j ≫ f`: the germ of the extended section at the image point is the
@@ -550,7 +565,7 @@ public theorem fiberStalkComponent_covarianceSectionMap
           ((openRestriction.{u, v} B j).obj F) V u E a x)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_covarianceSectionMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L402). The attribute's comment: “part (1), stalk compatibility on a generator, summand outside the open”.
+**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_covarianceSectionMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L402). The attribute's comment: “part (1), stalk compatibility on a generator, summand outside the open”.
 
 > **Stacks Project, Tag 0F6S part (1)** on a colimit generator, in a summand outside the image
 > of the geometric fibre of `j ≫ f`: the germ of the extended section vanishes there, the extended
@@ -570,7 +585,7 @@ public theorem fiberStalkComponent_covarianceSectionMap_eq_zero
       (covarianceSectionMap B j f F V E D hD a) y = 0
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_openFiberPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L552). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands in the open”.
+**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_openFiberPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L552). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands in the open”.
 
 > **Stacks Project, Tag 0F6S part (1)** for the finite-support direct-image presheaves, in a
 > summand indexed by a point of the geometric fibre of `j ≫ f`: on the stalk decompositions of
@@ -599,7 +614,7 @@ public theorem fiberStalks_openCovarianceStalkMap_openFiberPoint
             ((openRestriction.{u, v} B j).obj F)) x)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L590). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands outside the open”.
+**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalk.lean#L590). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands outside the open”.
 
 > **Stacks Project, Tag 0F6S part (1)** for the finite-support direct-image presheaves, in a
 > summand outside the image of the geometric fibre of `j ≫ f`: on the stalk decompositions of
@@ -622,7 +637,7 @@ public theorem fiberStalks_openCovarianceStalkMap_eq_zero
       fiberStalks.{u, max (u + 1) v} B f s F) y = 0
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L152). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands in the open, any element”.
+**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L152). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands in the open, any element”.
 
 > **Stacks 0F6S, part (1)** on an arbitrary element of the stalk: on the stalk decompositions of
 > Stacks 0F6P the covariance map carries the component at a point of the geometric fibre of `j ≫ f`
@@ -644,7 +659,7 @@ public theorem fiberStalks_openCovarianceStalkMap_apply
             ((openRestriction.{u, v} B j).obj F)) x)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_apply_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L173). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands outside, any element”.
+**`AlgebraicGeometry.SmallEtale.fiberStalks_openCovarianceStalkMap_apply_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L173). The attribute's comment: “part (1), stalk compatibility, presheaf form, summands outside, any element”.
 
 > **Stacks 0F6S, part (1)** on an arbitrary element of the stalk, in a summand outside the image
 > of the geometric fibre of `j ≫ f`: the component of the image vanishes there.
@@ -661,7 +676,7 @@ public theorem fiberStalks_openCovarianceStalkMap_apply_eq_zero
       fiberStalks.{u, max (u + 1) v} B f s F) y = 0
 ```
 
-**`AlgebraicGeometry.SmallEtale.mono_openCovarianceShriekMap_app_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L275). The attribute's comment: “part (4), injectivity”.
+**`AlgebraicGeometry.SmallEtale.mono_openCovarianceShriekMap_app_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceStalkInjectivity.lean#L275). The attribute's comment: “part (4), injectivity”.
 
 > **Stacks Project, Tag 0F6S, part (4)**, in its unrestricted form: for an open immersion
 > `j : X' ⟶ X` and a morphism `f : X ⟶ Y` locally of finite type and locally quasi-finite, with no
@@ -677,7 +692,7 @@ public theorem mono_openCovarianceShriekMap_app_general :
     Mono ((openCovarianceShriekMap.{u, v} B j f).app F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean, line 860](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean#L860). The attribute's comment: “part (3), transitivity, presheaf form”.
+**`AlgebraicGeometry.SmallEtale.openCovariancePresheafMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean, line 860](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean#L860). The attribute's comment: “part (3), transitivity, presheaf form”.
 
 > **Stacks 0F6S, part (3).** Transitivity of covariance for the finite-support direct-image
 > presheaves: for nested open subschemes of the source, the covariance map of the composite open
@@ -693,7 +708,7 @@ public theorem openCovariancePresheafMap_comp :
       (openCovariancePresheafMap.{u, v} B (j ≫ k) f).val
 ```
 
-**`AlgebraicGeometry.SmallEtale.openCovarianceShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean, line 926](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean#L926). The attribute's comment: “part (3), transitivity”.
+**`AlgebraicGeometry.SmallEtale.openCovarianceShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean, line 926](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/OpenCovarianceTransitivity.lean#L926). The attribute's comment: “part (3), transitivity”.
 
 > **Stacks 0F6S, part (3).** Transitivity of covariance after sheafification: for nested open
 > subschemes of the source, the covariance map of the direct image with compact support along the
@@ -712,7 +727,7 @@ public theorem openCovarianceShriekMap_comp :
 
 [Tag 0F5H](https://stacks.math.columbia.edu/tag/0F5H) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean#L296). The attribute's comment: “the complex, functorial in the abelian sheaf”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverComplex.lean#L296). The attribute's comment: “the complex, functorial in the abelian sheaf”.
 
 > **Stacks 0F5H.** The Čech complex of an open covering `X = ⋃_{i ∈ I} X_i` for the direct
 > image with compact support along a locally quasi-finite morphism `f : X ⟶ Y`: a complex
@@ -725,7 +740,7 @@ public theorem openCovarianceShriekMap_comp :
 public def cechComplex : ChainComplex (ShriekCat.{u, v} B X Y) ℕ
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverExactness.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverExactness.lean#L427). The attribute's comment: “exactness of the complex”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverExactness.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverExactness.lean#L427). The attribute's comment: “exactness of the complex”.
 
 > **Stacks 0F5H, exactness.** For a family of open subschemes covering `X`, the Čech complex
 > `⋯ ⟶ ⊕_{i₀} f_{i₀,!}(F|_{X_{i₀}}) ⟶ f_!F ⟶ 0` of an abelian sheaf `F` on the small étale site of
@@ -741,7 +756,7 @@ public theorem cechComplexObj_acyclic (hU : (⨆ i, U i) = ⊤)
 
 [Tag 0F5I](https://stacks.math.columbia.edu/tag/0F5I) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.exists_isSeparated_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L97). The attribute's comment: “the covering with every restriction separated, by affine opens”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.exists_isSeparated_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L97). The attribute's comment: “the covering with every restriction separated, by affine opens”.
 
 > **Stacks 0F5I.** A locally quasi-finite morphism `f : X ⟶ Y` admits an open covering
 > `X = ⋃_{i ∈ I} X_i` such that every restriction `f_{i₀…i_p} : X_{i₀…i_p} ⟶ Y` is separated: the
@@ -755,7 +770,7 @@ public theorem exists_isSeparated_openCover :
           IsSeparated (B.inclusion.map (openSchemeι B (coverOpen B V t) ≫ f))
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechFamilyIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L121). The attribute's comment: “each term is the construction of Section 0F4W, the restrictions being separated”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechFamilyIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L121). The attribute's comment: “each term is the construction of Section 0F4W, the restrictions being separated”.
 
 > **Stacks 0F5I.** Along a covering by affine opens the term of the Čech complex at a tuple of
 > indices is the proper-support direct image of Section 0F4W: the restriction `f_{i₀…i_p}` is
@@ -770,7 +785,7 @@ public def cechFamilyIsoProperSupport (hU : ∀ i, IsAffineOpen (U i)) {n : ℕ}
         properSupportFunctor.{u, max (u + 1) v} B (openSchemeι B (coverOpen B U t) ≫ f)
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L150). The attribute's comment: “f\_! F is the cokernel of the penultimate map of the complex of Stacks 0F5H”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L150). The attribute's comment: “f\_! F is the cokernel of the penultimate map of the complex of Stacks 0F5H”.
 
 > **Stacks 0F5I.** For an open covering of `X` and an abelian sheaf `F` on the small étale site
 > of `X`, the sheaf `f_! F` is the cokernel of the penultimate differential of the Čech complex of
@@ -785,7 +800,7 @@ public def cechComplexObj_isColimit_cokernel (hU : (⨆ i, U i) = ⊤)
       ((cechComplexObj.{u, v} B f U F).d_comp_d 2 1 0))
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L185). The attribute's comment: “the functor f\_! is that cokernel, the alternative construction”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L185). The attribute's comment: “the functor f\_! is that cokernel, the alternative construction”.
 
 > **Stacks 0F5I.** The alternative construction of the functor `f_!` for a locally quasi-finite
 > morphism: for an open covering of `X` the functor `f_!` is the cokernel, in the category of
@@ -803,7 +818,7 @@ public def cechComplex_isColimit_cokernel (hU : (⨆ i, U i) = ⊤) :
 
 [Tag 0F78](https://stacks.math.columbia.edu/tag/0F78) in the Stacks Project.
 
-**`AlgebraicGeometry.sheafifiedPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L66). The attribute's comment: “canonical map”.
+**`AlgebraicGeometry.sheafifiedPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L66). The attribute's comment: “canonical map”.
 
 > **Stacks 0F78.** The map from the sheafification of `G` to the small-étale direct image of
 > the sheafification of `G'` induced by a map `α : G ⟶ g_* G'` of abelian presheaves.
@@ -818,7 +833,7 @@ public def sheafifiedPushforwardMap
         (SmallEtale.topology B T.obj T.property).sheafify G'
 ```
 
-**`AlgebraicGeometry.sheafifiedPushforwardMap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L84). The attribute's comment: “commutative square”.
+**`AlgebraicGeometry.sheafifiedPushforwardMap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L84). The attribute's comment: “commutative square”.
 
 > **Stacks 0F78.** The induced map commutes with the two sheafification maps.
 
@@ -833,7 +848,7 @@ public theorem sheafifiedPushforwardMap_comm
         ((SmallEtale.topology B T.obj T.property).toSheafify G')
 ```
 
-**`AlgebraicGeometry.sheafifiedPushforwardMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L97). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.sheafifiedPushforwardMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L97). The attribute's comment: “uniqueness”.
 
 > **Stacks 0F78.** The commutative square of the previous result determines the induced map
 > uniquely.
@@ -852,7 +867,7 @@ public theorem sheafifiedPushforwardMap_unique
     β = sheafifiedPushforwardMap B g G G' α
 ```
 
-**`AlgebraicGeometry.sheafifiedPushforwardAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L113). The attribute's comment: “adjoint map”.
+**`AlgebraicGeometry.sheafifiedPushforwardAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L113). The attribute's comment: “adjoint map”.
 
 > **Stacks 0F78.** The induced map transported through the adjunction between the small-étale
 > inverse image and direct image along `g`.
@@ -871,7 +886,7 @@ public def sheafifiedPushforwardAdjoint
         (SmallEtale.topology B T.obj T.property).sheafify_isSheaf G'⟩
 ```
 
-**`AlgebraicGeometry.sheafifiedPushforwardMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L137). The attribute's comment: “geometric stalk formula”.
+**`AlgebraicGeometry.sheafifiedPushforwardMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SheafifiedPushforward.lean#L137). The attribute's comment: “geometric stalk formula”.
 
 > **Stacks 0F78.** The germ, at a lift `p'` of a geometric point of `T`, of a section of `G`
 > over an étale neighborhood `U` of the image point is carried by the adjoint map to the germ
@@ -883,25 +898,25 @@ public theorem sheafifiedPushforwardMap_stalk
     (G' : (SmallEtale B T.obj T.property)ᵒᵖ ⥤ AddCommGrpCat.{u + 1})
     (α : G ⟶ (smallEtaleBaseChange B g).op ⋙ G')
     (s' : GeometricPoint T.obj)
-    [HasColimit ((CategoryOfElements.π
+    [HasColimit ((Functor.Elements.π
       (geometricPointFiber B T.obj T.property s')).op ⋙
         (((smallEtaleBaseChange B g).sheafPullback AddCommGrpCat.{u + 1}
           (SmallEtale.topology B S.obj S.property)
           (SmallEtale.topology B T.obj T.property)).obj
             ⟨(SmallEtale.topology B S.obj S.property).sheafify G,
               (SmallEtale.topology B S.obj S.property).sheafify_isSheaf G⟩).obj)]
-    [HasColimit ((CategoryOfElements.π
+    [HasColimit ((Functor.Elements.π
       (geometricPointFiber B T.obj T.property s')).op ⋙
         (SmallEtale.topology B T.obj T.property).sheafify G')] :
     let F : Sheaf (SmallEtale.topology B S.obj S.property) AddCommGrpCat.{u + 1} :=
       ⟨(SmallEtale.topology B S.obj S.property).sheafify G,
         (SmallEtale.topology B S.obj S.property).sheafify_isSheaf G⟩
-    let D := (CategoryOfElements.π
+    let D := (Functor.Elements.π
       (geometricPointFiber B T.obj T.property s')).op ⋙
         (((smallEtaleBaseChange B g).sheafPullback AddCommGrpCat.{u + 1}
           (SmallEtale.topology B S.obj S.property)
           (SmallEtale.topology B T.obj T.property)).obj F).obj
-    let D' := (CategoryOfElements.π
+    let D' := (Functor.Elements.π
       (geometricPointFiber B T.obj T.property s')).op ⋙
         (SmallEtale.topology B T.obj T.property).sheafify G'
     ∀ (U : SmallEtale B S.obj S.property)
@@ -914,7 +929,7 @@ public theorem sheafifiedPushforwardMap_stalk
               (SmallEtale.topology B T.obj T.property)).unit.app F).hom.app (op U) ≫
             colimit.ι D (op (Functor.elementsMk _ ((smallEtaleBaseChange B g).obj U) p')) ≫
             colim.map (Functor.whiskerLeft
-              ((CategoryOfElements.π
+              ((Functor.Elements.π
                 (geometricPointFiber B T.obj T.property s')).op)
               (sheafifiedPushforwardAdjoint B g G G' α).hom)) =
           α.app (op U) ≫
@@ -927,7 +942,7 @@ public theorem sheafifiedPushforwardMap_stalk
 
 [Tag 0F5J](https://stacks.math.columbia.edu/tag/0F5J) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fiberPointBaseChange_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L102). The attribute's comment: “the bijection of geometric fibres induced by the horizontal morphism”.
+**`AlgebraicGeometry.SmallEtale.fiberPointBaseChange_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L102). The attribute's comment: “the bijection of geometric fibres induced by the horizontal morphism”.
 
 > **Stacks 0F5J.** For a cartesian square, `p` induces a bijection from the geometric fibre
 > of `f'` over a geometric point `t` of `Y'` onto the geometric fibre of `f` over the image of
@@ -939,7 +954,7 @@ public theorem fiberPointBaseChange_bijective (sq : IsPullback p f' f g)
     Function.Bijective (fiberPointBaseChange B p f' f g sq t)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalkBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L149). The attribute's comment: “the identification of the stalks over corresponding points of the fibres”.
+**`AlgebraicGeometry.SmallEtale.fiberStalkBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L149). The attribute's comment: “the identification of the stalks over corresponding points of the fibres”.
 
 > **Stacks 0F5J.** The stalk of the inverse image `p⁻¹F` at a point `x` of the geometric
 > fibre of `f'` is the stalk of `F` at the corresponding point of the geometric fibre of `f`.
@@ -956,7 +971,7 @@ public def fiberStalkBaseChangeIso (sq : IsPullback p f' f g) (t : GeometricPoin
         ((abPullback.{u, v} B p).obj F).obj
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalksBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L164). The attribute's comment: “the comparison of the two direct sums of stalks over the geometric fibres”.
+**`AlgebraicGeometry.SmallEtale.fiberStalksBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L164). The attribute's comment: “the comparison of the two direct sums of stalks over the geometric fibres”.
 
 > **Stacks 0F5J.** The direct sums of stalks over the two geometric fibres agree: the fibres
 > are in bijection through `p`, and over corresponding points the stalks of `F` and of `p⁻¹F`
@@ -969,7 +984,7 @@ public def fiberStalksBaseChangeEquiv (sq : IsPullback p f' f g) (t : GeometricP
       fiberStalks.{u, max (u + 1) v} B f' t ((abPullback.{u, v} B p).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalksBaseChangeEquiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L190). The attribute's comment: “functoriality in the sheaf of the comparison of the direct sums of stalks”.
+**`AlgebraicGeometry.SmallEtale.fiberStalksBaseChangeEquiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L190). The attribute's comment: “functoriality in the sheaf of the comparison of the direct sums of stalks”.
 
 > **Stacks 0F5J.** The comparison of the two direct sums of stalks is functorial in the
 > abelian sheaf: it intertwines the map induced on the direct sum of stalks over the geometric
@@ -987,7 +1002,7 @@ public theorem fiberStalksBaseChangeEquiv_natural (sq : IsPullback p f' f g)
         (fiberStalksBaseChangeEquiv B p f' f g sq t F w)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L232). The attribute's comment: “the base-change isomorphism on the stalk at a geometric point of the base”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L232). The attribute's comment: “the base-change isomorphism on the stalk at a geometric point of the base”.
 
 > **Stacks 0F5J.** The base-change comparison on stalks: for a geometric point `t` of `Y'`
 > the stalk of `g⁻¹f_!F` at `t` is the stalk of `f'_!p⁻¹F` at `t`. It is obtained from the stalk
@@ -1004,7 +1019,7 @@ public def fShriekStalkBaseChangeIso (sq : IsPullback p f' f g) (t : GeometricPo
         ((fShriekFunctor.{u, v} B f').obj ((abPullback.{u, v} B p).obj F)).obj
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkBaseChangeIso_comp_fShriekStalkIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L250). The attribute's comment: “compatibility of the stalkwise comparison with the decompositions of 0F5F”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkBaseChangeIso_comp_fShriekStalkIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChange.lean#L250). The attribute's comment: “compatibility of the stalkwise comparison with the decompositions of 0F5F”.
 
 > **Stacks 0F5J.** The precise compatibility of the stalkwise base-change comparison with the
 > stalk decompositions of Stacks 0F5F: the square whose horizontal arrows are those
@@ -1025,7 +1040,7 @@ public theorem fShriekStalkBaseChangeIso_comp_fShriekStalkIso (sq : IsPullback p
           (fiberStalksBaseChangeEquiv B p f' f g sq t F).toAddMonoidHom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_fiberBaseChangeSectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L215). The attribute's comment: “the germ of a base-changed supported section at a point of the geometric fibre”.
+**`AlgebraicGeometry.SmallEtale.fiberStalkComponent_fiberBaseChangeSectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L215). The attribute's comment: “the germ of a base-changed supported section at a point of the geometric fibre”.
 
 > **Stacks 0F5J.** The germ at a point of the geometric fibre of `f'` of the base change of a
 > supported section is the germ of the section at the corresponding point of the geometric fibre
@@ -1046,7 +1061,7 @@ public theorem fiberStalkComponent_fiberBaseChangeSectionsMap
           (fiberPointBaseChange B p f' f g sq t x))
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeDiagramMap_comp_fiberStalkHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L338). The attribute's comment: “the germ decompositions exchanged by the base-change map on supported sections”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeDiagramMap_comp_fiberStalkHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L338). The attribute's comment: “the germ decompositions exchanged by the base-change map on supported sections”.
 
 > **Stacks 0F5J.** The germ decompositions of Stacks 0F5F on the two sides of the square are
 > exchanged by the base-change map on supported sections and the comparison of the direct sums of
@@ -1064,7 +1079,7 @@ public theorem fiberBaseChangeDiagramMap_comp_fiberStalkHom
           (fiberStalksBaseChangeEquiv.{u, u + 1} B p f' f g sq t F)).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L593). The attribute's comment: “the base-change map on the stalk at a geometric point, through the 0F5F decompositions”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L593). The attribute's comment: “the base-change map on the stalk at a geometric point, through the 0F5F decompositions”.
 
 > **Stacks 0F5J.** On the stalk at a geometric point `t` of `Y'` the base-change map is the
 > base-change comparison of stalks: the identification of the stalk of an inverse image, the stalk
@@ -1083,7 +1098,7 @@ public theorem fShriekBaseChangeMap_stalk :
           (fiberStalksBaseChangeEquiv.{u, u + 1} B p f' f g sq t F)).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap_stalk_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 662](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L662). The attribute's comment: “the stalk of the base-change map is the stalkwise base-change isomorphism”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap_stalk_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L662). The attribute's comment: “the stalk of the base-change map is the stalkwise base-change isomorphism”.
 
 > **Stacks 0F5J.** The base-change map is, on the stalk at a geometric point of `Y'`, the
 > base-change isomorphism of stalks of `StacksFrontier.AlgebraicGeometry.Etale.FShriekBaseChange`.
@@ -1095,7 +1110,7 @@ public theorem fShriekBaseChangeMap_stalk_eq :
       (fShriekStalkBaseChangeIso.{u, u + 1} B p f' f g sq t F).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.isIso_fShriekBaseChangeMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L684). The attribute's comment: “the base-change map is an isomorphism”.
+**`AlgebraicGeometry.SmallEtale.isIso_fShriekBaseChangeMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L684). The attribute's comment: “the base-change map is an isomorphism”.
 
 > **Stacks 0F5J.** The base-change map `g⁻¹f_!F ⟶ f'_!(p⁻¹F)` is an isomorphism: it is an
 > isomorphism on the stalk at every geometric point of `Y'`, both sides becoming the direct sum of
@@ -1107,7 +1122,7 @@ public instance isIso_fShriekBaseChangeMap :
     IsIso (fShriekBaseChangeMap.{u} B p f' f g sq F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L703). The attribute's comment: “the isomorphism g⁻¹f\_!F ≅ f'\_!(p⁻¹F), functorial in F”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L703). The attribute's comment: “the isomorphism g⁻¹f\_!F ≅ f'\_!(p⁻¹F), functorial in F”.
 
 > **Stacks 0F5J.** For a cartesian square with `f` locally quasi-finite there is an
 > isomorphism `g⁻¹f_!F ≅ f'_!(p⁻¹F)`, functorial in the abelian sheaf `F` on the small étale site
@@ -1120,7 +1135,7 @@ public def fShriekBaseChangeNatIso :
       abPullback.{u, u + 1} B p ⋙ fShriekFunctor.{u, u + 1} B f'
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L722). The attribute's comment: “the isomorphism agrees with the stalk descriptions of 0F5F”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L722). The attribute's comment: “the isomorphism agrees with the stalk descriptions of 0F5F”.
 
 > **Stacks 0F5J.** The base-change isomorphism agrees with the stalk descriptions of
 > Stacks 0F5F: on the stalk at a geometric point `t` of `Y'` it is the identification of the stalk
@@ -1141,7 +1156,7 @@ public theorem fShriekBaseChangeNatIso_stalk (t : GeometricPoint Y'.obj)
           (fiberStalksBaseChangeEquiv.{u, u + 1} B p f' f g sq t F)).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_fShriekBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 751](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L751). The attribute's comment: “the isomorphism, functorial in the sheaf and compatible with the 0F5F stalk descriptions”.
+**`AlgebraicGeometry.SmallEtale.exists_fShriekBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L751). The attribute's comment: “the isomorphism, functorial in the sheaf and compatible with the 0F5F stalk descriptions”.
 
 > **Stacks 0F5J.** For a cartesian square of a big étale site with `f` locally quasi-finite
 > there is an isomorphism `g⁻¹f_!F ≅ f'_!(p⁻¹F)`, functorial in `F` in the abelian sheaves on the
@@ -1171,7 +1186,7 @@ public theorem exists_fShriekBaseChangeIso :
               (fiberStalksBaseChangeEquiv.{u, u + 1} B p f' f g sq t F)).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangePresheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L232). The attribute's comment: “the map c of abelian presheaves”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangePresheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L232). The attribute's comment: “the map c of abelian presheaves”.
 
 > **Stacks 0F5J.** The map `c` of the proof: the map of abelian presheaves on the small étale
 > site of `Y` from the finite-support direct image `f_{p!}F` to the direct image along `g` of
@@ -1185,7 +1200,7 @@ public def fiberBaseChangePresheafMap
         ((fShriekFunctor.{u, u + 1} B f').obj ((abPullback.{u, u + 1} B p).obj F)).obj
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L281). The attribute's comment: “the base-change map of sheaves, before it is shown to be an isomorphism”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L281). The attribute's comment: “the base-change map of sheaves, before it is shown to be an isomorphism”.
 
 > **Stacks 0F5J.** The base-change map `g⁻¹f_!F ⟶ f'_!(p⁻¹F)` of abelian sheaves on the small
 > étale site of `Y'`: the map `c` of the source, sheafified and transposed through the
@@ -1198,7 +1213,7 @@ public def fShriekBaseChangeMap
       (fShriekFunctor.{u, u + 1} B f').obj ((abPullback.{u, u + 1} B p).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L380). The attribute's comment: “functoriality in the sheaf of the base-change map of sheaves”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeMap.lean#L380). The attribute's comment: “functoriality in the sheaf of the base-change map of sheaves”.
 
 > **Stacks 0F5J.** The base-change map `g⁻¹f_!F ⟶ f'_!(p⁻¹F)` is functorial in `F`: it is a
 > morphism of functors on abelian sheaves on the small étale site of `X`.
@@ -1209,7 +1224,7 @@ public def fShriekBaseChangeNatTrans :
       abPullback.{u, u + 1} B p ⋙ fShriekFunctor.{u, u + 1} B f'
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeRestriction.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeRestriction.lean#L362). The attribute's comment: “naturality in the test object of the map c”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeRestriction.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeRestriction.lean#L362). The attribute's comment: “naturality in the test object of the map c”.
 
 > **Stacks 0F5J.** The base-change map on finite-support sections is compatible with the
 > restriction maps of the finite-support direct image presheaves: restricting a section to a
@@ -1225,7 +1240,7 @@ public theorem fiberBaseChangeColimitMap_restriction :
           ((smallEtaleBaseChange B g).map i)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L461). The attribute's comment: “the base change of a support finite over the test object”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L461). The attribute's comment: “the base change of a support finite over the test object”.
 
 > **Stacks 0F5J.** The base change of a support finite over `V` along the cartesian square:
 > the inverse image of the support under the comparison of the two étale base changes. It is
@@ -1237,7 +1252,7 @@ public def fiberBaseChangeSupport (sq : IsPullback p f' f g)
     FiniteSupport B f' (baseChange B g V)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L614). The attribute's comment: “the pullback map H\_Z(F) ⟶ H\_\{Z'}(p⁻¹F) on supported sections”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L614). The attribute's comment: “the pullback map H\_Z(F) ⟶ H\_\{Z'}(p⁻¹F) on supported sections”.
 
 > **Stacks 0F5J.** The pullback map on supported sections: a section of `F` supported on a
 > support `E` finite over `V` is carried by the unit of the inverse-image adjunction to a section
@@ -1255,7 +1270,7 @@ public def fiberBaseChangeSectionsMap (sq : IsPullback p f' f g)
           (fiberBaseChangeSupport B p f' f g sq V E))
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L796). The attribute's comment: “compatibility of the pullback map with the transitions of the colimit”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L796). The attribute's comment: “compatibility of the pullback map with the transitions of the colimit”.
 
 > **Stacks 0F5J.** The pullback map on supported sections is compatible with the transition
 > maps of Stacks 0F6H: enlarging the support commutes with base change. This is what makes the
@@ -1285,7 +1300,7 @@ public theorem fiberBaseChangeSectionsMap_transition (sq : IsPullback p f' f g)
         (fiberBaseChangeSectionsMap B p f' f g sq V E F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap_sheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 851](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L851). The attribute's comment: “functoriality in the sheaf of the pullback map on supported sections”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap_sheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L851). The attribute's comment: “functoriality in the sheaf of the pullback map on supported sections”.
 
 > **Stacks 0F5J.** The pullback map on supported sections is functorial in the abelian
 > sheaf: a morphism of sheaves on `X` acts on the pullbacks through its inverse image.
@@ -1306,7 +1321,7 @@ public theorem fiberBaseChangeSectionsMap_sheafMap (sq : IsPullback p f' f g)
         (fiberBaseChangeSectionsMap B p f' f g sq V E F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 917](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L917). The attribute's comment: “the map c on finite-support sections over a test object”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 917](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L917). The attribute's comment: “the map c on finite-support sections over a test object”.
 
 > **Stacks 0F5J.** The base-change map on finite-support sections over an étale test object
 > `V` of `Y`: the generator of a support `Z` carrying a section `s` goes to the generator of the
@@ -1320,7 +1335,7 @@ public def fiberBaseChangeColimitMap (sq : IsPullback p f' f g)
       finiteSupportSections B f' ((abPullback.{u, v} B p).obj F) (baseChange B g V)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 940](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L940). The attribute's comment: “functoriality in the sheaf of the map c over a test object”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeColimitMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 940](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L940). The attribute's comment: “functoriality in the sheaf of the map c over a test object”.
 
 > **Stacks 0F5J.** The base-change map on finite-support sections over an étale test object
 > is functorial in the abelian sheaf.
@@ -1341,7 +1356,7 @@ public theorem fiberBaseChangeColimitMap_natural (sq : IsPullback p f' f g)
 
 [Tag 0F79](https://stacks.math.columbia.edu/tag/0F79) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean#L70). The attribute's comment: “part (b), compatibility with the base change isomorphisms of 0F5J and 0F55”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean#L70). The attribute's comment: “part (b), compatibility with the base change isomorphisms of 0F5J and 0F55”.
 
 > **Stacks 0F79, part (b).** For a base change `b : Z₁ ⟶ Z`, with cartesian squares
 > `X₁ = X ×_Y Y₁` and `Y₁ = Y ×_Z Z₁`, the isomorphism `(g ∘ f)_! ≅ g_! ∘ f_!` of Stacks 0F79 is
@@ -1369,7 +1384,7 @@ public theorem fShriekCompProperIso_baseChange :
           ((fShriekBaseChangeNatIso.{u} B a f₁ f b' sq₁).hom.app F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso_eq_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean#L108). The attribute's comment: “part (c), the isomorphism of 0F50 via the identifications of 0F6N for f' separated”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso_eq_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportCompat.lean#L108). The attribute's comment: “part (c), the isomorphism of 0F50 via the identifications of 0F6N for f' separated”.
 
 > **Stacks 0F79, part (c).** If `f` is separated as well, the isomorphism
 > `(g ∘ f)_! ≅ g_! ∘ f_!` of Stacks 0F79 is the isomorphism `(g ∘ f)_! = g_! ∘ f_!` of
@@ -1386,7 +1401,7 @@ public theorem fShriekCompProperIso_eq_of_isSeparated [IsSeparated (B.inclusion.
           (properSupportFunctor.{u, max (u + 1) v} B g)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean#L592). The attribute's comment: “the canonical isomorphism g\_! ∘ f'\_! ≅ f\_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean#L592). The attribute's comment: “the canonical isomorphism g\_! ∘ f'\_! ≅ f\_!”.
 
 > **Stacks 0F79.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of a big étale site with `f`
 > and `f ≫ g` locally quasi-finite (locally of finite type and locally quasi-finite) and `g`
@@ -1404,7 +1419,7 @@ public def fShriekCompProperIso :
       fShriekFunctor.{u, v} B f ⋙ properSupportFunctor.{u, max (u + 1) v} B g
 ```
 
-**`AlgebraicGeometry.SmallEtale.sepCompShriekMap_openCovariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportOpen.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportOpen.lean#L400). The attribute's comment: “part (a), compatibility with covariance for open embeddings, Remarks 0F53, 0F6S”.
+**`AlgebraicGeometry.SmallEtale.sepCompShriekMap_openCovariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportOpen.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportOpen.lean#L400). The attribute's comment: “part (a), compatibility with covariance for open embeddings, Remarks 0F53, 0F6S”.
 
 > **Stacks 0F79, part (a).** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be as in Stacks 0F79, let
 > `jY : Y₁ ⟶ Y` be an open immersion, and let `X₁ = X ×_Y Y₁` with projections `jX : X₁ ⟶ X` and
@@ -1442,7 +1457,7 @@ public theorem sepCompShriekMap_openCovariance :
 
 [Tag 0F6T](https://stacks.math.columbia.edu/tag/0F6T) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompBaseChange.lean#L164). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompBaseChange.lean#L164). The attribute's comment: “part (5)”.
 
 > **Stacks 0F6T, part (5).** For a diagram with both squares cartesian
 > ```
@@ -1476,7 +1491,7 @@ public theorem fShriekCompIso_baseChange :
           (fShriekFunctor.{u, u + 1} B g')
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L136). The attribute's comment: “the canonical isomorphism (g ∘ f)\_! ≅ g\_! ∘ f\_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L136). The attribute's comment: “the canonical isomorphism (g ∘ f)\_! ≅ g\_! ∘ f\_!”.
 
 > **Stacks 0F6T.** For composable locally quasi-finite morphisms `f : X ⟶ Y` and `g : Y ⟶ Z`
 > there is a canonical isomorphism of functors `(g ∘ f)_! ≅ g_! ∘ f_!` on abelian étale sheaves:
@@ -1489,7 +1504,7 @@ public def fShriekCompIso :
     fShriekFunctor.{u, v} B (f ≫ g) ≅ fShriekFunctor.{u, v} B f ⋙ fShriekFunctor.{u, v} B g
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L153). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L153). The attribute's comment: “part (3)”.
 
 > **Stacks 0F6T, part (3).** At a geometric point `z̄` of `Z`, the isomorphism
 > `((g ∘ f)_!F)_z̄ ≅ (g_!f_!F)_z̄` followed by the stalk decomposition
@@ -1508,7 +1523,7 @@ public theorem fShriekCompIso_stalk (s : GeometricPoint Z.obj)
       AddCommGrpCat.ofHom (compFiberStalksMap B f g s F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L275). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L275). The attribute's comment: “part (4)”.
 
 > **Stacks 0F6T, part (4).** For a third locally quasi-finite morphism `h : Z ⟶ T` the two
 > isomorphisms `(h ∘ g ∘ f)_! ≅ h_! ∘ g_! ∘ f_!` obtained from the composition isomorphisms agree:
@@ -1524,7 +1539,7 @@ public theorem fShriekCompIso_assoc :
         Functor.whiskerRight (fShriekCompIso B f g).hom (fShriekFunctor.{u, v} B h)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso_eq_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean#L463). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso_eq_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean#L463). The attribute's comment: “part (1)”.
 
 > **Stacks 0F6T, part (1).** If `f` and `g` are separated, the isomorphism
 > `(g ∘ f)_! ≅ g_! ∘ f_!` agrees with the identification `g_! f_! = (g ∘ f)_!` of proper-support
@@ -1542,7 +1557,7 @@ public theorem fShriekCompIso_eq_of_isSeparated :
           (fShriekFunctorIsoProperSupport.{u, v} B g).symm
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso_generator_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean#L787). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso_generator_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean, line 787](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompSeparated.lean#L787). The attribute's comment: “part (2)”.
 
 > **Stacks 0F6T, part (2).** If `g` is separated, the isomorphism `(g ∘ f)_! ≅ g_! ∘ f_!`
 > agrees with the isomorphism of Stacks 0F79: read in the proper-support model of `g_!` through
@@ -1577,4 +1592,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.4, Tag 0F6E](https://stacks.math.columbia.edu/tag/0F6E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

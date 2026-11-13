@@ -13,7 +13,7 @@ statement: formalized
 >  - [Sp57] Specker, Ernst, Teilmengen von Mengen mit Relationen. Comment. Math. Helv. (1957), 302-314.
 >  - [La73] Larson, Jean A., A short proof of a partition theorem for the ordinal {$\omega \sp{\omega }$}. Ann. Math. Logic (1973/74), 129-145.
 
-*Quoted from [FormalConjectures/ErdosProblems/590.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/590.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/590](https://www.erdosproblems.com/590).
 
@@ -30,7 +30,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 theorem erdos_590 : OrdinalCardinalRamsey (ω ^ ω) (ω ^ ω) 3
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean#L44).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean#L44).
 
 ## `Erdos590.erdos_590.variants.two`
 
@@ -43,7 +43,7 @@ Solved: stated here without proof.
 theorem erdos_590.variants.two : OrdinalCardinalRamsey (ω ^ 2) (ω ^ 2) 3
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean#L52).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean#L52).
 
 ## `Erdos590.erdos_590.variants.ge_three_false`
 
@@ -57,7 +57,7 @@ theorem erdos_590.variants.ge_three_false {n : ℕ} (h : 3 ≤ n) :
     ¬ OrdinalCardinalRamsey (ω ^ n) (ω ^ n) 3
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean#L60).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean#L60).
 
 ## `Erdos590.erdos_590.variants.finite_cardinal`
 
@@ -71,7 +71,7 @@ Solved: stated here without proof.
 theorem erdos_590.variants.finite_cardinal (m : ℕ) : OrdinalCardinalRamsey (ω ^ ω) (ω ^ ω) m
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean#L70).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/ErdosProblems/590.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean#L70).
 
 ## Depends on
 
@@ -79,5 +79,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/590.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/590.lean)
+- [FormalConjectures/ErdosProblems/590.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/590.lean)
 - [erdosproblems.com/590](https://www.erdosproblems.com/590)

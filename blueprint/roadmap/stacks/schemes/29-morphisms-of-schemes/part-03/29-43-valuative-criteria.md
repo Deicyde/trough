@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.43 Valuative criteria
 
-Section 29.43 of the Stacks Project, [Tag 0BX4](https://stacks.math.columbia.edu/tag/0BX4). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.43 of the Stacks Project, [Tag 0BX4](https://stacks.math.columbia.edu/tag/0BX4). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0894, a lemma
 
 [Tag 0894](https://stacks.math.columbia.edu/tag/0894) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyClosed_of_unique_lift_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean#L542). The attribute's comment: “universally closed conclusion”.
+**`AlgebraicGeometry.universallyClosed_of_unique_lift_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean#L542). The attribute's comment: “universally closed conclusion”.
 
 > **Stacks 0894, universally closed part.**
 > Let `f : X ⟶ S` and `h : U ⟶ X` be quasi-compact morphisms of schemes and suppose that
@@ -32,7 +32,7 @@ public lemma universallyClosed_of_unique_lift_of_denseRange
     AlgebraicGeometry.UniversallyClosed f
 ```
 
-**`AlgebraicGeometry.isSeparated_of_unique_lift_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean#L606). The attribute's comment: “separated conclusion”.
+**`AlgebraicGeometry.isSeparated_of_unique_lift_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefined.lean#L606). The attribute's comment: “separated conclusion”.
 
 > **Stacks 0894, separated part.**
 > Under the hypotheses of the refined valuative criterion, a quasi-separated morphism `f` is
@@ -54,7 +54,7 @@ public lemma isSeparated_of_unique_lift_of_denseRange
 
 [Tag 0895](https://stacks.math.columbia.edu/tag/0895) in the Stacks Project.
 
-**`AlgebraicGeometry.refinedValuative_unique_iff_hasLift_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean#L55). The attribute's comment: “uniqueness of the dotted arrows is guaranteed when f is separated”.
+**`AlgebraicGeometry.refinedValuative_unique_iff_hasLift_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean#L55). The attribute's comment: “uniqueness of the dotted arrows is guaranteed when f is separated”.
 
 > If `f` is separated, the dotted arrows in the refined valuative criterion are automatically
 > unique: every valuative square for `f` whose generic-point map factors through `h` has a unique
@@ -69,7 +69,7 @@ public theorem refinedValuative_unique_iff_hasLift_of_isSeparated
       g ≫ h = D.i₁ → D.commSq.HasLift)
 ```
 
-**`AlgebraicGeometry.exists_hasLift_of_denseRange_not_universallyClosed_not_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean#L355). The attribute's comment: “the uniqueness assumption of Lemma 0894 is necessary”.
+**`AlgebraicGeometry.exists_hasLift_of_denseRange_not_universallyClosed_not_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/ValuativeCriterionRefinedNecessity.lean#L355). The attribute's comment: “the uniqueness assumption of Lemma 0894 is necessary”.
 
 > The uniqueness of the dotted arrows in the refined valuative criterion
 > `universallyClosed_of_unique_lift_of_denseRange` cannot be dropped. There are quasi-compact
@@ -91,7 +91,7 @@ public theorem exists_hasLift_of_denseRange_not_universallyClosed_not_isSeparate
 
 [Tag 0BX6](https://stacks.math.columbia.edu/tag/0BX6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L257). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii), X reduced case”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L257). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii), X reduced case”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type and the source is reduced with finitely many irreducible
@@ -118,7 +118,7 @@ lemma exists_open_morphism_inducing_localHom_of_isReduced
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L282). The attribute's comment: “local\_extension, Y locally of finite type and X integral”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L282). The attribute's comment: “local\_extension, Y locally of finite type and X integral”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type over the base and the source is integral.
@@ -143,7 +143,7 @@ lemma exists_open_morphism_inducing_localHom_of_isIntegral
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L305). The attribute's comment: “local\_extension, Y locally of finite type and X locally Noetherian”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L305). The attribute's comment: “local\_extension, Y locally of finite type and X locally Noetherian”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type over the base and the source is locally Noetherian.
@@ -168,7 +168,7 @@ lemma exists_open_morphism_inducing_localHom_of_isLocallyNoetherian
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean#L270). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii)”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean#L270). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii)”.
 
 > **Stacks Project, Tag 0BX6 (local extension), finite-presentation case.** A compatible
 > local homomorphism of local rings is induced by a morphism on an open neighbourhood.
@@ -193,7 +193,7 @@ public lemma exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentati
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_eq_of_stalkMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean#L176). The attribute's comment: “local\_uniqueness”. References: EGA I (6.5.1), “(i)”.
+**`AlgebraicGeometry.exists_open_eq_of_stalkMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean#L176). The attribute's comment: “local\_uniqueness”. References: EGA I (6.5.1), “(i)”.
 
 > Two morphisms over a scheme which agree on the local ring at a point agree on some open
 > neighbourhood of that point, provided the target is locally of finite type over the base, or
@@ -218,7 +218,7 @@ theorem exists_open_eq_of_stalkMap_eq
 
 [Tag 0BX7](https://stacks.math.columbia.edu/tag/0BX7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209).
+**`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209).
 
 > **Stacks Project, Tag 0BX7.** A morphism from an open subscheme extends across a point
 > whose local ring is a valuation ring, provided the target is proper over the base and the
@@ -246,4 +246,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.43, Tag 0BX4](https://stacks.math.columbia.edu/tag/0BX4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

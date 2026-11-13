@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.20 Divided power Poincaré lemma
 
-Section 60.20 of the Stacks Project, [Tag 07LB](https://stacks.math.columbia.edu/tag/07LB). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.20 of the Stacks Project, [Tag 07LB](https://stacks.math.columbia.edu/tag/07LB). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07LC, a lemma
 
 [Tag 07LC](https://stacks.math.columbia.edu/tag/07LC) in the Stacks Project.
 
-**`Crystalline.CompletedPoincare.completedDeRham_tensor_augmentation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L802). The attribute's comment: “completed\_exactness”.
+**`Crystalline.CompletedPoincare.completedDeRham_tensor_augmentation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L802). The attribute's comment: “completed\_exactness”.
 
 > **Stacks Project, Tag 07LC, completed case.**  The first map `M → M ⊗̂_A D` of the
 > completed divided power de Rham complex of `P = A⟨x_w⟩` with coefficients in a `p`-adically
@@ -26,7 +26,7 @@ public theorem completedDeRham_tensor_augmentation_injective
     Function.Injective (augmentation p A W (canonicalCompletedDividedPowers p A W) M)
 ```
 
-**`Crystalline.CompletedPoincare.completedDeRham_tensor_exact_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 817](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L817). The attribute's comment: “completed\_exactness”.
+**`Crystalline.CompletedPoincare.completedDeRham_tensor_exact_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 817](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L817). The attribute's comment: “completed\_exactness”.
 
 > **Stacks Project, Tag 07LC, completed case.**  The completed divided power de Rham complex
 > of `P = A⟨x_w⟩` with coefficients in a `p`-adically complete `A`-module `M` is exact at
@@ -39,7 +39,7 @@ public theorem completedDeRham_tensor_exact_augmentation
       (differential p A W (canonicalCompletedDividedPowers p A W) M 0)
 ```
 
-**`Crystalline.CompletedPoincare.completedDeRham_tensor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L828). The attribute's comment: “completed\_exactness”.
+**`Crystalline.CompletedPoincare.completedDeRham_tensor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedExactness.lean#L828). The attribute's comment: “completed\_exactness”.
 
 > **Stacks Project, Tag 07LC, completed case.**  The completed divided power de Rham complex
 > of `P = A⟨x_w⟩` with coefficients in a `p`-adically complete `A`-module `M` is exact at
@@ -52,7 +52,7 @@ public theorem completedDeRham_tensor_exact
       (differential p A W (canonicalCompletedDividedPowers p A W) M (i + 1))
 ```
 
-**`Crystalline.dividedPowerPolynomialDeRham_tensor_augmentation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L71). The attribute's comment: “ordinary\_exactness”.
+**`Crystalline.dividedPowerPolynomialDeRham_tensor_augmentation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L71). The attribute's comment: “ordinary\_exactness”.
 
 > **The divided power Poincaré lemma, exactness at the coefficient module.**  For a ring `A`,
 > a family of variables `W` and the divided power polynomial algebra `P = A⟨x_w : w ∈ W⟩` with its
@@ -71,7 +71,7 @@ public theorem dividedPowerPolynomialDeRham_tensor_augmentation_injective
       ((augmentedDividedPowerDeRhamDifferential A W 0).hom.lTensor M)
 ```
 
-**`Crystalline.dividedPowerPolynomialDeRham_tensor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L106). The attribute's comment: “ordinary\_exactness”.
+**`Crystalline.dividedPowerPolynomialDeRham_tensor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L106). The attribute's comment: “ordinary\_exactness”.
 
 > **The divided power Poincaré lemma.**  For a ring `A`, a family of variables `W` and the
 > divided power polynomial algebra `P = A⟨x_w : w ∈ W⟩` with its canonical divided powers, the
@@ -91,7 +91,7 @@ public theorem dividedPowerPolynomialDeRham_tensor_exact
       ((augmentedDividedPowerDeRhamDifferential A W (n + 1)).hom.lTensor M)
 ```
 
-**`Crystalline.CompletedPoincare.exists_continuousDividedPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L698). The attribute's comment: “completed\_exactness”.
+**`Crystalline.CompletedPoincare.exists_continuousDividedPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L698). The attribute's comment: “completed\_exactness”.
 
 > The canonical divided powers of `P` admit a continuous extension to the closure of its
 > augmentation ideal in `D`.
@@ -101,7 +101,7 @@ public theorem exists_continuousDividedPowers :
     Nonempty (ContinuousDividedPowers p A W)
 ```
 
-**`Crystalline.CompletedPoincare.continuousDividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L739). The attribute's comment: “completed\_exactness”.
+**`Crystalline.CompletedPoincare.continuousDividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerPoincare/CompletedRing.lean#L739). The attribute's comment: “completed\_exactness”.
 
 > The continuous extension of the canonical divided powers is unique.
 
@@ -114,7 +114,7 @@ public theorem continuousDividedPowers_unique
 
 [Tag 07LD](https://stacks.math.columbia.edu/tag/07LD) in the Stacks Project.
 
-**`Crystalline.DividedPowerPolynomial.stacks07LD`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincareModuleQuasiIso.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincareModuleQuasiIso.lean#L710). The attribute's comment: “both clauses: the comparison of de Rham complexes for P = B⟨x\_w⟩ on any family of variables is a quasi-isomorphism, for a B-module with integrable connection and, over the p-adic completions D and D', for a D-module with integrable connection”.
+**`Crystalline.DividedPowerPolynomial.stacks07LD`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincareModuleQuasiIso.lean, line 708](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincareModuleQuasiIso.lean#L708). The attribute's comment: “both clauses: the comparison of de Rham complexes for P = B⟨x\_w⟩ on any family of variables is a quasi-isomorphism, for a B-module with integrable connection and, over the p-adic completions D and D', for a D-module with integrable connection”.
 
 > **[Stacks, Lemma 60.19.2, Tag 07LD].**
 >
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.20, Tag 07LB](https://stacks.math.columbia.edu/tag/07LB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

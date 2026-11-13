@@ -8,7 +8,7 @@ proof: formalized
 
 # Dual lattices
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html).
 
 ## A spanning submodule localizes to the whole space
 
@@ -20,7 +20,7 @@ $M \hookrightarrow V$, is the localization of the $A$-module $M$ at the non-zero
 Concretely, every non-zero-divisor $s$ of $A$ acts bijectively on $V$, and every $v \in V$
 satisfies $s v \in M$ for some non-zero-divisor $s$ of $A$.
 
-Formalized by `Submodule.isLocalizedModule_subtype_of_span_eq_top`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#is-localized-module-subtype-of-span-eq-t).
+Formalized by `Submodule.isLocalizedModule_subtype_of_span_eq_top`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#is-localized-module-subtype-of-span-eq-t).
 
 ## Surjectivity of the dual pairing
 
@@ -31,7 +31,7 @@ spans $V$ over $K$. Then the map from
 $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$ to $\operatorname{Hom}_A(M, A)$
 sending $x$ to the functional $y \mapsto B(x, y)$ is surjective.
 
-Formalized by `LinearMap.BilinForm.dualSubmoduleToDual_surjective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-to-dual-surjective).
+Formalized by `LinearMap.BilinForm.dualSubmoduleToDual_surjective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-to-dual-surjective).
 
 ## Bijectivity of the dual pairing
 
@@ -42,7 +42,7 @@ spans $V$ over $K$. Then the map from
 $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$ to $\operatorname{Hom}_A(M, A)$
 sending $x$ to the functional $y \mapsto B(x, y)$ is bijective.
 
-Formalized by `LinearMap.BilinForm.dualSubmoduleToDual_bijective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-to-dual-bijective).
+Formalized by `LinearMap.BilinForm.dualSubmoduleToDual_bijective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-to-dual-bijective).
 
 ## The dual of a lattice is finitely generated
 
@@ -53,7 +53,7 @@ generated $A$-submodule of $V$ that spans $V$ over $K$. Then the dual submodule
 $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$ is a finitely generated
 $A$-submodule of $V$.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_fg`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-fg).
+Formalized by `LinearMap.BilinForm.dualSubmodule_fg`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-fg).
 
 ## The dual of a finitely generated submodule spans
 
@@ -63,7 +63,7 @@ let $B$ be a bilinear form on $V$. If $M$ is a finitely generated $A$-submodule 
 dual submodule $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$ spans $V$ over
 $K$.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_span_eq_top`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-span-eq-top).
+Formalized by `LinearMap.BilinForm.dualSubmodule_span_eq_top`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-span-eq-top).
 
 ## The dual of a lattice is a lattice
 
@@ -73,7 +73,7 @@ $B$ be a nondegenerate bilinear form on $V$. If $M$ is an $A$-lattice in $V$, th
 generated $A$-submodule that spans $V$ over $K$, then so is its dual submodule
 $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-is-lattice).
+Formalized by `LinearMap.BilinForm.dualSubmodule_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-is-lattice).
 
 ## The dual lattice and the dual module
 
@@ -85,7 +85,7 @@ $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$. Then $M^\vee$ i
 in $V$, and the map $M^\vee \to \operatorname{Hom}_A(M, A)$ sending $x$ to the functional
 $y \mapsto B(x, y)$ is bijective.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_isLattice_and_dualSubmoduleToDual_bijective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-is-lattice-and-dual-submo).
+Formalized by `LinearMap.BilinForm.dualSubmodule_isLattice_and_dualSubmoduleToDual_bijective`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-is-lattice-and-dual-submo).
 
 ## The dual submodule is the dual module
 
@@ -97,7 +97,7 @@ $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$. This is the iso
 $A$-modules $M^\vee \cong \operatorname{Hom}_A(M, A)$ that sends $x$ to the functional
 $y \mapsto B(x, y)$.
 
-Formalized by `LinearMap.BilinForm.dualSubmoduleLinearEquiv`, a definition declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-linear-equiv).
+Formalized by `LinearMap.BilinForm.dualSubmoduleLinearEquiv`, a definition declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLattice.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-linear-equiv).
 
 ## Double dual of a reflexive lattice
 
@@ -111,7 +111,7 @@ $\{x \in V : B(y, x) \in A \text{ for all } y \in M^\vee\} = M$.
 This is the lattice analogue of the corresponding statement for the $A$-span of a $K$-basis of
 $V$: no basis is needed when $M$ is reflexive as an $A$-module.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_flip_dualSubmodule_of_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-flip-dual-submodule-of-is).
+Formalized by `LinearMap.BilinForm.dualSubmodule_flip_dualSubmodule_of_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-flip-dual-submodule-of-is).
 
 ## Double dual of a lattice over a Dedekind domain
 
@@ -129,7 +129,7 @@ torsion-free module is flat, hence projective, hence reflexive.
 
 - ATLAS NumberTheoryI, Proposition 5.16.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_dualSubmodule_of_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-dual-submodule-of-is-latt).
+Formalized by `LinearMap.BilinForm.dualSubmodule_dualSubmodule_of_isLattice`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLatticeReflexive.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-dual-submodule-of-is-latt).
 
 ## Dual submodules commute with localization
 
@@ -142,7 +142,7 @@ $A_S = \{a/s : a \in A,\ s \in S\} \subseteq K$ be the localization of $A$ at $S
 finitely generated $A$-submodule $M$ of $V$, the dual over $A_S$ of the $A_S$-span of $M$ equals
 the $A_S$-span of the dual $M^\vee_A$ of $M$ over $A$.
 
-Formalized by `LinearMap.BilinForm.dualSubmodule_span_localization`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLocalization.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/BilinearForm/DualLocalization.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-span-localization).
+Formalized by `LinearMap.BilinForm.dualSubmodule_span_localization`, a theorem declared in [MathlibExt/LinearAlgebra/BilinearForm/DualLocalization.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/BilinearForm/DualLocalization.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html#dual-submodule-span-localization).
 
 ## Depends on
 
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dual lattices](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices)

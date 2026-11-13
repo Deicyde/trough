@@ -8,7 +8,7 @@ proof: formalized
 
 # Random walks: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/index.html).
 
 Sums of i.i.d. steps as processes: the drift/oscillation dichotomy, limsup and liminf of partial sums, tail measurability of asymptotic events, the strong Markov property of i.i.d. sequences at stopping times, and ballot theorems.
 
@@ -28,7 +28,7 @@ $\binom{p+q}{q}$ sequences with exactly $p$ votes for A.
 
 - *Bertrand's ballot theorem*, Wikipedia, https://en.wikipedia.org/wiki/Bertrand%27s_ballot_theorem.
 
-Formalized by `MetaMathlibExt.bertrand_ballot`, a theorem declared in [MathlibExt/Probability/BertrandBallot.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/BertrandBallot.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/index.html#bertrand-ballot).
+Formalized by `MetaMathlibExt.bertrand_ballot`, a theorem declared in [MathlibExt/Probability/BertrandBallot.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/BertrandBallot.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/index.html#bertrand-ballot).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Random walks](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/random-walks)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/random-walks)

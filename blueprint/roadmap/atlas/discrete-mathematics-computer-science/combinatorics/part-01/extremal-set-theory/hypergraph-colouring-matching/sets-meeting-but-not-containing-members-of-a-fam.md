@@ -7,7 +7,7 @@ statement: formalized
 
 # Sets meeting but not containing members of a family
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html).
 
 ## Sets meeting but not containing the members of a family
 
@@ -15,7 +15,7 @@ For a finite family $F$ of finite
 sets of natural numbers with union $X$, this is the finite set of all $B \subseteq X$ that meet
 every member of $F$ and contain none of them.
 
-Formalized by `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.transversalNonCoverSets`, a definition declared in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#transversal-non-cover-sets).
+Formalized by `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.transversalNonCoverSets`, a definition declared in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#transversal-non-cover-sets).
 
 ## Erdős Problem 1027 (sets meeting but not containing members of a family)
 
@@ -25,7 +25,7 @@ $F$ of finite sets of natural numbers, each of size $n$, with $|F| \le c \cdot 2
 $X$, has at least $\delta \cdot 2^{|X|}$ subsets $B \subseteq X$ that meet every member of $F$ and
 contain none of them.
 
-Formalized by `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.manyTransversalNonCoverSets`, a definition declared in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#many-transversal-non-cover-sets).
+Formalized by `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.manyTransversalNonCoverSets`, a definition declared in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#many-transversal-non-cover-sets).
 
 ## Erdős Problem 1027 holds
 
@@ -38,7 +38,7 @@ subsets $B \subseteq X$ that meet every member of $F$ and contain none of them.
 
 - T. F. Bloom, Erdős Problems, Problem #1027, https://www.erdosproblems.com/1027 (status PROVED); resolution: K. Chan, proof in the erdosproblems.com/1027 comments; formal proof plby/lean-proofs, erdosproblems.com/1027: 'This is true, and a proof was given in the comment section by Koishi Chan', https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1027.lean#L209.
 
-Stated but not proved: `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.manyTransversalNonCoverSets_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#many-transversal-non-cover-sets-holds).
+Stated but not proved: `MathlibExt.Combinatorics.TransversalNonCoverSetsErdosProblem1027Wanted.manyTransversalNonCoverSets_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TransversalNonCoverSetsErdosProblem1027Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html#many-transversal-non-cover-sets-holds).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sets meeting but not containing members of a family](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/sets-meeting-but-not-containing-members-of-a-fam)

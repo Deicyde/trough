@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.3 Radicial morphisms
 
-Section 76.3 of the Stacks Project, [Tag 0480](https://stacks.math.columbia.edu/tag/0480). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.3 of the Stacks Project, [Tag 0480](https://stacks.math.columbia.edu/tag/0480). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0481, a definition
 
 [Tag 0481](https://stacks.math.columbia.edu/tag/0481) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRadicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L153).
+**`AlgebraicGeometry.Space.IsRadicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L154).
 
 > **Stacks 0481.** A morphism of algebraic spaces over `S` is *radicial* if for every
 > field `k` in the chosen site and every `k`-valued point of the target, the reduction of the
@@ -32,7 +32,7 @@ def IsRadicial (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0482](https://stacks.math.columbia.edu/tag/0482) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_of_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L338). References: EGA I (3.5.11), “radicial => univ. inj.”.
+**`AlgebraicGeometry.Space.universallyInjective_of_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L340). References: EGA I (3.5.11), “radicial => univ. inj.”.
 
 > **Stacks 0482.** A radicial morphism of algebraic spaces is universally injective.
 >
@@ -55,7 +55,7 @@ theorem universallyInjective_of_isRadicial
 
 [Tag 0483](https://stacks.math.columbia.edu/tag/0483) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalGaloisQuotient.universallyInjective_galoisQuotientToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L349). The attribute's comment: “universally injective”.
+**`AlgebraicGeometry.RationalGaloisQuotient.universallyInjective_galoisQuotientToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L350). The attribute's comment: “universally injective”.
 
 > **Stacks 0483.** The Galois quotient of `Spec ℚ̄` is universally injective over `Spec ℚ`,
 > although it is not radicial.
@@ -72,7 +72,7 @@ theorem universallyInjective_galoisQuotientToBase :
     Space.UniversallyInjective B base hS (galoisQuotientToBase B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isRadicial_galoisQuotientToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L171). The attribute's comment: “not radicial”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isRadicial_galoisQuotientToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L171). The attribute's comment: “not radicial”.
 
 > **Stacks 0483.** The structure morphism of the Galois quotient of `Spec ℚ̄` to `Spec ℚ` is
 > *not* radicial.
@@ -94,7 +94,7 @@ theorem not_isRadicial_galoisQuotientToBase :
       (galoisQuotientToBase B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.universallyInjective_and_not_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L213). The attribute's comment: “the two halves together, over a big fppf site containing the two spectra”.
+**`AlgebraicGeometry.RationalGaloisQuotient.universallyInjective_and_not_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L213). The attribute's comment: “the two halves together, over a big fppf site containing the two spectra”.
 
 > **Stacks 0483.** The structure morphism of the Galois quotient of `Spec ℚ̄` to `Spec ℚ` is
 > universally injective but is not radicial: for algebraic spaces, unlike for schemes,
@@ -112,7 +112,7 @@ theorem universallyInjective_and_not_isRadicial :
         (galoisQuotientToBase B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.exists_universallyInjective_not_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L234).
+**`AlgebraicGeometry.RationalGaloisQuotient.exists_universallyInjective_not_isRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientNotRadicial.lean#L234).
 
 > **Stacks 0483.** Universal injectivity is not equivalent to radicialness for morphisms of
 > algebraic spaces: there are a big fppf site over `Spec ℚ`, an algebraic space over `Spec ℚ` in
@@ -139,7 +139,7 @@ theorem exists_universallyInjective_not_isRadicial :
 
 [Tag 0484](https://stacks.math.columbia.edu/tag/0484) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L545). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L548). The attribute's comment: “part (1)”.
 
 > **Stacks 0484, part (1).** A universally injective decent morphism of algebraic spaces over
 > `S` is radicial.
@@ -159,7 +159,7 @@ theorem isRadicial_of_universallyInjective_of_isDecent
     IsRadicial B S hS hX hY f
 ```
 
-**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L588). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 591](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L591). The attribute's comment: “part (2)”.
 
 > **Stacks 0484, part (2).** A universally injective quasi-separated morphism of algebraic
 > spaces over `S` is radicial: a quasi-separated morphism is very reasonable, hence reasonable,
@@ -175,7 +175,7 @@ theorem isRadicial_of_universallyInjective_of_isQuasiSeparated
     IsRadicial B S hS hX hY f
 ```
 
-**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L607). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isRadicial_of_universallyInjective_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L610). The attribute's comment: “part (3)”.
 
 > **Stacks 0484, part (3).** A universally injective locally separated morphism of algebraic
 > spaces over `S` is radicial.
@@ -198,7 +198,7 @@ theorem isRadicial_of_universallyInjective_of_isLocallySeparated
 
 [Tag 049E](https://stacks.math.columbia.edu/tag/049E) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isWeaklyRadicial_galoisQuotientBaseChangeToCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean#L439). The attribute's comment: “the base change of Example 0483 to ℚ̄ is weakly radicial”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isWeaklyRadicial_galoisQuotientBaseChangeToCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean#L439). The attribute's comment: “the base change of Example 0483 to ℚ̄ is weakly radicial”.
 
 > **Stacks 049E.** The base change `X_ℚ̄ ⟶ Spec ℚ̄` of the morphism of Stacks 0483 is weakly
 > radicial.
@@ -215,7 +215,7 @@ theorem isWeaklyRadicial_galoisQuotientBaseChangeToCover :
       (isAlgebraicSpace_yoneda B base hS _) (galoisQuotientBaseChangeToCover B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isRadicial_galoisQuotientBaseChangeToCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean#L546). The attribute's comment: “the base change of Example 0483 to ℚ̄ is not radicial”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isRadicial_galoisQuotientBaseChangeToCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotientBaseChange.lean#L546). The attribute's comment: “the base change of Example 0483 to ℚ̄ is not radicial”.
 
 > **Stacks 049E.** The base change `X_ℚ̄ ⟶ Spec ℚ̄` of the morphism of Stacks 0483 is not
 > radicial.
@@ -235,7 +235,7 @@ theorem not_isRadicial_galoisQuotientBaseChangeToCover :
       (isAlgebraicSpace_yoneda B base hS _) (galoisQuotientBaseChangeToCover B hS hU)
 ```
 
-**`AlgebraicGeometry.Space.IsWeaklyRadicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L629). The attribute's comment: “the definition of a weakly radicial morphism”.
+**`AlgebraicGeometry.Space.IsWeaklyRadicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L632). The attribute's comment: “the definition of a weakly radicial morphism”.
 
 > **Stacks 049E.** A morphism of algebraic spaces over `S` is *weakly radicial* if for every
 > field `K` in the chosen site and every `K`-valued point of the target, the point set of the fibre
@@ -249,7 +249,7 @@ def IsWeaklyRadicial (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
     (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.surjective_app_of_isWeaklyRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L703). The attribute's comment: “surjectivity on k-points for k algebraically closed”.
+**`AlgebraicGeometry.Space.surjective_app_of_isWeaklyRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L706). The attribute's comment: “surjectivity on k-points for k algebraically closed”.
 
 > **Stacks 049E.** A weakly radicial morphism of algebraic spaces over `S` is surjective on
 > `k`-valued points for every algebraically closed field `k` in the chosen site.
@@ -272,7 +272,7 @@ theorem surjective_app_of_isWeaklyRadicial
       (Over.mk (⟨s⟩ : B.obj hk ⟶ B.obj hS) : BigFppfOver B S hS)))
 ```
 
-**`AlgebraicGeometry.Space.isWeaklyRadicial_of_universallyInjective_of_hasPropertyBeta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L762). The attribute's comment: “analogue of 0484: (β) + universally injective + surjective ⇒ weakly radicial”.
+**`AlgebraicGeometry.Space.isWeaklyRadicial_of_universallyInjective_of_hasPropertyBeta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L765). The attribute's comment: “corrected form of the analogue of 0484, with surjectivity added”.
 
 > **Stacks 049E, the analogue of Stacks 0484.** A surjective, universally injective morphism
 > of algebraic spaces over `S` with property `(β)` is weakly radicial.
@@ -300,7 +300,7 @@ theorem isWeaklyRadicial_of_universallyInjective_of_hasPropertyBeta
     IsWeaklyRadicial B S hS hX hY f
 ```
 
-**`AlgebraicGeometry.Space.exists_universallyInjective_hasPropertyBeta_not_isWeaklyRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L820). The attribute's comment: “the analogue of Lemma 0484 without surjectivity is false: a counterexample”.
+**`AlgebraicGeometry.Space.exists_universallyInjective_hasPropertyBeta_not_isWeaklyRadicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean, line 823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Radicial.lean#L823). The attribute's comment: “the analogue of Lemma 0484 without surjectivity is false: a counterexample”.
 
 > **Stacks 049E, the analogue of Stacks 0484 as stated is false.** As soon as the site
 > contains the spectrum of a field, there is a universally injective morphism of algebraic
@@ -324,7 +324,7 @@ theorem exists_universallyInjective_hasPropertyBeta_not_isWeaklyRadicial
 
 [Tag 0AGE](https://stacks.math.columbia.edu/tag/0AGE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_of_injective_pointsMap_pullback_of_isEtale_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveEtaleCriterion.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveEtaleCriterion.lean#L449).
+**`AlgebraicGeometry.Space.universallyInjective_of_injective_pointsMap_pullback_of_isEtale_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveEtaleCriterion.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveEtaleCriterion.lean#L451).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, and assume that for every étale morphism `V ⟶ Y` from a scheme `V` the
@@ -347,4 +347,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.3, Tag 0480](https://stacks.math.columbia.edu/tag/0480)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

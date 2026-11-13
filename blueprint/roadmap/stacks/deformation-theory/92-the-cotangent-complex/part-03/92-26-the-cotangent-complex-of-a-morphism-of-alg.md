@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.26 The cotangent complex of a morphism of algebraic spaces
 
-Section 92.26 of the Stacks Project, [Tag 08VC](https://stacks.math.columbia.edu/tag/08VC). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.26 of the Stacks Project, [Tag 08VC](https://stacks.math.columbia.edu/tag/08VC). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08VD, a definition
 
 [Tag 08VD](https://stacks.math.columbia.edu/tag/08VD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cotangentComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/CotangentComplex.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/CotangentComplex.lean#L114).
+**`AlgebraicGeometry.Space.cotangentComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/CotangentComplex.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/CotangentComplex.lean#L114).
 
 > **Stacks Project, Tag 08VD.** The cotangent complex `L_{X/Y}` of a morphism `f : X ⟶ Y` of
 > algebraic spaces over a scheme `S`: the cotangent complex of the canonical morphism of ringed
@@ -28,7 +28,7 @@ noncomputable abbrev cotangentComplex (f : X ⟶ Y) :
     CochainComplex (smallEtaleModulesULift B S hS X) ℤ
 ```
 
-**`AlgebraicGeometry.Space.cotangentComplexDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/CotangentComplex.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/CotangentComplex.lean#L123). The attribute's comment: “the derived object”.
+**`AlgebraicGeometry.Space.cotangentComplexDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/CotangentComplex.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/CotangentComplex.lean#L123). The attribute's comment: “the derived object”.
 
 > **Stacks Project, Tag 08VD.** The cotangent complex `L_{X/Y}` regarded as an object of the
 > derived category `D(𝒪_X)`.
@@ -43,7 +43,7 @@ noncomputable abbrev cotangentComplexDerived (f : X ⟶ Y)
 
 [Tag 08VE](https://stacks.math.columbia.edu/tag/08VE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.etaleRestrictionCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/EtaleRestriction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/EtaleRestriction.lean#L395).
+**`AlgebraicGeometry.Space.etaleRestrictionCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/EtaleRestriction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/EtaleRestriction.lean#L395).
 
 > For a commutative diagram of algebraic spaces over a scheme `S`
 >
@@ -75,7 +75,7 @@ noncomputable def etaleRestrictionCotangentComplexIso {p : U ⟶ X} {f : X ⟶ Y
 
 [Tag 08VF](https://stacks.math.columbia.edu/tag/08VF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasiIso_representedCotangentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean#L303). The attribute's comment: “the canonical map `ε^*L_{X₀/Y₀} ⟶ L_{X/Y}` is a quasi-isomorphism, for the morphism of algebraic spaces represented by a morphism `T₁ ⟶ T₂` of the big fppf site over `S` (so `X` and `Y` are represented by the schemes `X₀`, `Y₀` underlying `T₁`, `T₂`); `ε` is the comparison of Section 071P (`representedToZariskiRingedToposHom`), `L_{X₀/Y₀}` the cotangent complex of Definition 08T2 lifted to the universe of the small étale site, `ε^*` the degreewise pullback of sheaves of modules along `ε`. The map is `representedCotangentComparison`; its transpose is the functoriality of the cotangent complex over the square of Remark 08GH (`towerCotangentUnit_comp_representedBaseChangedComparison`)”.
+**`AlgebraicGeometry.Space.quasiIso_representedCotangentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean#L303). The attribute's comment: “the canonical map `ε^*L_{X₀/Y₀} ⟶ L_{X/Y}` is a quasi-isomorphism, for the morphism of algebraic spaces represented by a morphism `T₁ ⟶ T₂` of the big fppf site over `S` (so `X` and `Y` are represented by the schemes `X₀`, `Y₀` underlying `T₁`, `T₂`); `ε` is the comparison of Section 071P (`representedToZariskiRingedToposHom`), `L_{X₀/Y₀}` the cotangent complex of Definition 08T2 lifted to the universe of the small étale site, `ε^*` the degreewise pullback of sheaves of modules along `ε`. The map is `representedCotangentComparison`; its transpose is the functoriality of the cotangent complex over the square of Remark 08GH (`towerCotangentUnit_comp_representedBaseChangedComparison`)”.
 
 > **Stacks 08VF.** Let `f : X ⟶ Y` be the morphism of algebraic spaces over `S` represented by
 > a morphism `T₁ ⟶ T₂` of the big fppf site, so that `X` and `Y` are representable by the schemes
@@ -94,7 +94,7 @@ theorem quasiIso_representedCotangentComparison :
     QuasiIso (representedCotangentComparison B S hS h)
 ```
 
-**`AlgebraicGeometry.Space.representedCotangentComplexDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean#L323). The attribute's comment: “the canonical identification `ε^*L_{X₀/Y₀} ≅ L_{X/Y}` in `D(𝒪_X)`, for the morphism of algebraic spaces represented by a morphism `T₁ ⟶ T₂` of the big fppf site over `S`, as the image in the derived category of the canonical map `representedCotangentComparison`; any derived category of `Mod(𝒪_X)` may be used”.
+**`AlgebraicGeometry.Space.representedCotangentComplexDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/RepresentableComparison.lean#L323). The attribute's comment: “the canonical identification `ε^*L_{X₀/Y₀} ≅ L_{X/Y}` in `D(𝒪_X)`, for the morphism of algebraic spaces represented by a morphism `T₁ ⟶ T₂` of the big fppf site over `S`, as the image in the derived category of the canonical map `representedCotangentComparison`; any derived category of `Mod(𝒪_X)` may be used”.
 
 > **Stacks 08VF.** The canonical identification `L_{X/Y} = ε^*L_{X₀/Y₀}` in `D(𝒪_X)`, for the
 > morphism `f : X ⟶ Y` of algebraic spaces represented by a morphism `T₁ ⟶ T₂` of the big fppf
@@ -114,7 +114,7 @@ noncomputable def representedCotangentComplexDerivedIso
 
 [Tag 08VG](https://stacks.math.columbia.edu/tag/08VG) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.cotangentComplexOverConstantRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/ConstantBaseRing.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/ConstantBaseRing.lean#L255). The attribute's comment: “an isomorphism in `D(𝒪_X)` rather than an equality of complexes, as the source's own proof produces. `L_{X/Spec(Λ)}` is the cotangent complex of the morphism of ringed topoi (Tag 08SU) and `L_{𝒪_X/Λ̲}` is the cotangent complex of `Λ̲ ⟶ 𝒪_X` with `Λ̲` the constant sheaf of Mathlib's `constantSheaf`, so no identification of `Λ̲` with an iterated inverse image is used. TWO carried hypotheses, both inputs of the source's argument and neither the conclusion: (1) the short exact sequence `S`, `hS`, `e₁`, `e₂`, `e₃` giving the fundamental triangle of Tag 08SZ for the tower `Λ̲ ⟶ G⁻¹𝒪_Y ⟶ 𝒪_X`, carried in the same shape and for the same reason as in Tag 08V1 (the sheaf-level analogue of Tag 08SD is absent here); (2) `hv`, the acyclicity of the FIRST vertex `L_{G⁻¹𝒪_Y/Λ̲} ⊗ 𝒪_X`, which is the source's `L_q = 0` for `q : Spec(Λ)_étale ⟶ (*, Λ)` pulled back to `X` — `firstVertexOverInverseImageBaseIso` proves that a first vertex over an inverse-image base is `G^*G⁻¹L_{𝒪_Y/Λ_Y}` — and which the source obtains from Tags 04K5, 08T0, 04KF and 08R2, none of which this library has in a form applying to acyclicity of a complex of sheaves of modules on a site. The conclusion's two objects do not occur in either hypothesis. What is proved: the passage from the short exact sequence to a distinguished triangle, the identification of the first vertex over an inverse-image base through Tag 08SV, and the degeneration of the triangle. The first vertex carries the DEGREEWISE extension of scalars, as in Tag 08V1”.
+**`AlgebraicGeometry.RingedToposHom.cotangentComplexOverConstantRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/ConstantBaseRing.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/ConstantBaseRing.lean#L255). The attribute's comment: “an isomorphism in `D(𝒪_X)` rather than an equality of complexes, as the source's own proof produces. `L_{X/Spec(Λ)}` is the cotangent complex of the morphism of ringed topoi (Tag 08SU) and `L_{𝒪_X/Λ̲}` is the cotangent complex of `Λ̲ ⟶ 𝒪_X` with `Λ̲` the constant sheaf of Mathlib's `constantSheaf`, so no identification of `Λ̲` with an iterated inverse image is used. TWO carried hypotheses, both inputs of the source's argument and neither the conclusion: (1) the short exact sequence `S`, `hS`, `e₁`, `e₂`, `e₃` giving the fundamental triangle of Tag 08SZ for the tower `Λ̲ ⟶ G⁻¹𝒪_Y ⟶ 𝒪_X`, carried in the same shape and for the same reason as in Tag 08V1 (the sheaf-level analogue of Tag 08SD is absent here); (2) `hv`, the acyclicity of the FIRST vertex `L_{G⁻¹𝒪_Y/Λ̲} ⊗ 𝒪_X`, which is the source's `L_q = 0` for `q : Spec(Λ)_étale ⟶ (*, Λ)` pulled back to `X` — `firstVertexOverInverseImageBaseIso` proves that a first vertex over an inverse-image base is `G^*G⁻¹L_{𝒪_Y/Λ_Y}` — and which the source obtains from Tags 04K5, 08T0, 04KF and 08R2, none of which this library has in a form applying to acyclicity of a complex of sheaves of modules on a site. The conclusion's two objects do not occur in either hypothesis. What is proved: the passage from the short exact sequence to a distinguished triangle, the identification of the first vertex over an inverse-image base through Tag 08SV, and the degeneration of the triangle. The first vertex carries the DEGREEWISE extension of scalars, as in Tag 08V1”.
 
 > **Stacks 08VG.** Let `Λ` be a commutative ring and let `X` be a space over `Λ`, with
 > structure morphism `G : X ⟶ Y` of ringed topoi and with `b : Λ̲ ⟶ G⁻¹𝒪_Y` the `Λ`-algebra
@@ -142,7 +142,7 @@ def cotangentComplexOverConstantRingIso
     G.cotangentComplexDerived ≅ DerivedCategory.Q.obj (cotangentComplexOverBase G b)
 ```
 
-**`AlgebraicGeometry.Space.cotangentComplexOverConstantSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/ConstantBaseRing.lean, line 759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/ConstantBaseRing.lean#L759). The attribute's comment: “an isomorphism in `D(𝒪_X)`, as the source's proof produces. `Λ̲` is Mathlib's `constantSheaf` with value `Λ` on `X_et`, and `Λ̲ ⟶ 𝒪_X` is the canonical map, adjoint to the structure map `Λ → Γ(X, 𝒪_X)`, global sections being taken at the terminal object of the spaces-étale site of `X` (Stacks 03G1). Both cotangent complexes are formed after lifting sections to universe `u + 1` (`SheafOfModules.sheafULift`), the universe in which Tag 08VD defines `L_{X/Spec Λ}`.”.
+**`AlgebraicGeometry.Space.cotangentComplexOverConstantSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/ConstantBaseRing.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/ConstantBaseRing.lean#L759). The attribute's comment: “an isomorphism in `D(𝒪_X)`, as the source's proof produces. `Λ̲` is Mathlib's `constantSheaf` with value `Λ` on `X_et`, and `Λ̲ ⟶ 𝒪_X` is the canonical map, adjoint to the structure map `Λ → Γ(X, 𝒪_X)`, global sections being taken at the terminal object of the spaces-étale site of `X` (Stacks 03G1). Both cotangent complexes are formed after lifting sections to universe `u + 1` (`SheafOfModules.sheafULift`), the universe in which Tag 08VD defines `L_{X/Spec Λ}`.”.
 
 > Let `Λ` be a ring and `X` an algebraic space over `Λ`, with structure morphism
 > `p : X ⟶ Spec Λ`. Let `Λ̲` be the constant sheaf with value `Λ` on `X_et` and `Λ̲ ⟶ 𝒪_X` its
@@ -174,4 +174,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.26, Tag 08VC](https://stacks.math.columbia.edu/tag/08VC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

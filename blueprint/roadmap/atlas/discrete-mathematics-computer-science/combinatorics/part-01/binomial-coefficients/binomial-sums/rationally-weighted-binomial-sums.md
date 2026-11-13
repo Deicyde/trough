@@ -7,7 +7,7 @@ statement: formalized
 
 # Rationally weighted binomial sums
 
-17 results, 1 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html).
+17 results, 1 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html).
 
 ## Scherk's identity
 
@@ -22,7 +22,7 @@ $$\sum_{k=0}^{N} k^r a_k x^k = \sum_{i=0}^{r} S(r, i) \, x^i f^{(i)}(x).$$
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.1, equation (2.1).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_coeff_eq_sum_stirlingSecond_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-coeff-eq-sum-stirling-second).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_coeff_eq_sum_stirlingSecond_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-coeff-eq-sum-stirling-second).
 
 ## Scherk's identity with $s$-rising factorials
 
@@ -45,7 +45,7 @@ The powers of $x$ have real exponents, which is why $x > 0$ is assumed.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.1, equation (2.2).
 
-Stated but not proved: `MetaMathlibExt.sum_risingStep_mul_coeff_eq_sum_hsuShiue_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-rising-step-mul-coeff-eq-sum-hsu-shi).
+Stated but not proved: `MetaMathlibExt.sum_risingStep_mul_coeff_eq_sum_hsuShiue_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-rising-step-mul-coeff-eq-sum-hsu-shi).
 
 ## Stirling numbers of the second kind with three blocks
 
@@ -59,7 +59,7 @@ The source states this for $r \ge 3$; both sides vanish at $r = 1$ and $r = 2$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Proposition 2.2.
 
-Formalized by `MetaMathlibExt.stirlingSecond_three_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#stirling-second-three-eq).
+Formalized by `MetaMathlibExt.stirlingSecond_three_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#stirling-second-three-eq).
 
 ## Greenstreet's identity
 
@@ -71,7 +71,7 @@ $$\sum_{k=1}^{N} (-1)^k \binom{N}{k} 2^{N-k} k^2 = N^2 - 2N.$$
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_mul_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-two-pow-mul-sq).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_mul_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-two-pow-mul-sq).
 
 ## Polynomially weighted Fibonacci sums via derivatives
 
@@ -87,7 +87,7 @@ $$\sum_{k=0}^{N} h(k) F_k x^k = \sum_{r=0}^{t} A_r \sum_{i=0}^{r} S(r, i) \, x^i
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.4.
 
-Stated but not proved: `MetaMathlibExt.sum_poly_mul_fib_pow_eq_sum_stirlingSecond_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-fib-pow-eq-sum-stirling-sec).
+Stated but not proved: `MetaMathlibExt.sum_poly_mul_fib_pow_eq_sum_stirlingSecond_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-fib-pow-eq-sum-stirling-sec).
 
 ## Power-weighted binomial sums of Fibonacci numbers
 
@@ -103,7 +103,7 @@ where the terms with $i > N$ vanish because $(N)_i = 0$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-fib).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-fib).
 
 ## Power-weighted binomial sums of Lucas numbers
 
@@ -120,7 +120,7 @@ where the terms with $i > N$ vanish because $(N)_i = 0$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_lucasNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-lucas-number).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_lucasNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-lucas-number).
 
 ## Power-weighted binomial sums of a second-order linear recurrence
 
@@ -138,7 +138,7 @@ where the terms with $i > N$ vanish because $(N)_i = 0$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_secondOrder` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-second-order).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_secondOrder` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-second-order).
 
 ## Weighted binomial Fibonacci sums for the powers one to four
 
@@ -166,7 +166,7 @@ Every term with a negative Fibonacci index has coefficient zero.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.6.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_fib_small` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-fib-small).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_choose_mul_fib_small` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-pow-mul-choose-mul-fib-small).
 
 ## Polynomially weighted binomial Fibonacci sums
 
@@ -190,7 +190,7 @@ The source's hypotheses $N, t > 0$ and $t \le N/2$ are not needed and are droppe
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.7.
 
-Stated but not proved: `MetaMathlibExt.sum_poly_mul_choose_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-choose-mul-fib).
+Stated but not proved: `MetaMathlibExt.sum_poly_mul_choose_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-choose-mul-fib).
 
 ## Polynomially weighted binomial sums of powers of a second-order sequence
 
@@ -216,7 +216,7 @@ and positivity of $r$, $N$, $t$ is dropped.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 2.8.
 
-Stated but not proved: `MetaMathlibExt.sum_poly_mul_choose_mul_secondOrder_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-choose-mul-second-order-pow).
+Stated but not proved: `MetaMathlibExt.sum_poly_mul_choose_mul_secondOrder_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-poly-mul-choose-mul-second-order-pow).
 
 ## Binomial sums with rising-factorial denominators
 
@@ -232,7 +232,7 @@ The source writes $\binom{n}{k}$ for $\binom{N}{k}$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 3.1, equation (3.1).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_pow_div_ascFactorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-mul-pow-div-asc-factorial).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_pow_div_ascFactorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-mul-pow-div-asc-factorial).
 
 ## Rising-factorial weighted sums via iterated antiderivatives
 
@@ -252,7 +252,7 @@ The source assumes $s > 0$; for $s = 0$ the identity reads $f(x) = I_0(x)$.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Theorem 3.1, equation (3.2).
 
-Stated but not proved: `MetaMathlibExt.sum_coeff_mul_pow_div_ascFactorial_eq_antideriv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-coeff-mul-pow-div-asc-factorial-eq-a).
+Stated but not proved: `MetaMathlibExt.sum_coeff_mul_pow_div_ascFactorial_eq_antideriv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-coeff-mul-pow-div-asc-factorial-eq-a).
 
 ## Epsteen's identity
 
@@ -264,7 +264,7 @@ $$\sum_{k=0}^{n} \frac{1}{k+1} \binom{n}{k} = \frac{2^{n+1} - 1}{n+1}.$$
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-div-succ).
+Stated but not proved: `MetaMathlibExt.sum_choose_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-div-succ).
 
 ## Finkel's identity
 
@@ -277,7 +277,7 @@ $$\sum_{k=1}^{n} (-1)^{k-1} \frac{1}{k} \binom{n}{k} = H_n.$$
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_div_eq_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-div-eq-harmonic).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_div_eq_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-div-eq-harmonic).
 
 ## Binomial sums weighted by $x^k/k^2$
 
@@ -292,7 +292,7 @@ $$\sum_{k=1}^{n} \binom{n}{k} \frac{x^k}{k^2} =
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_pow_div_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-mul-pow-div-sq).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_pow_div_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-choose-mul-pow-div-sq).
 
 ## Alternating binomial sum with inverse-square weights
 
@@ -307,7 +307,7 @@ This is the case $x = -1$ of identity (3.6) of the source.
 
 - Andreea M. Stănică, Gabriela N. Stănică, and Pantelimon Stănică, *An Evaluation of Rationally Weighted Binomial Sums Via Some Differential and Integral Operators*, The Fibonacci Quarterly 62 (2024), Article 62-1/stanica09202023, Corollary 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_div_sq_eq_sum_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-div-sq-eq-sum-har).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_div_sq_eq_sum_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationallyWeightedBinomialSumsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html#sum-neg-one-pow-choose-div-sq-eq-sum-har).
 
 ## Depends on
 
@@ -316,4 +316,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rationally weighted binomial sums](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/rationally-weighted-binomial-sums)

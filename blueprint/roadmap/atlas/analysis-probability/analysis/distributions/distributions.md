@@ -7,7 +7,7 @@ statement: formalized
 
 # Distributions: its own results
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html).
 
 Test functions, Schwartz functions, tempered distributions and distributional derivatives: principal values, Plemelj limits, Dirac comb, partitions of unity.
 
@@ -22,7 +22,7 @@ $\varepsilon \to 0^+$, the integrals being taken with respect to Lebesgue measur
 
 - F. Friedlander and M. Joshi, *Introduction to the Theory of Distributions*, Ch. 2.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.CauchyPrincipalValueWanted.cauchyPrincipalValue_exists` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#cauchy-principal-value-exists).
+Stated but not proved: `MathlibExt.Analysis.Distribution.CauchyPrincipalValueWanted.cauchyPrincipalValue_exists` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#cauchy-principal-value-exists).
 
 ## Smooth partitions of unity subordinate to a finite open cover
 
@@ -37,7 +37,7 @@ is contained in $U_i$, and $\sum_{i \in \iota} \varphi_i(x) = 1$ for every $x \i
 
 - <https://en.wikipedia.org/wiki/Partition_of_unity>.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.TestFunctionPartitionOfUnityWanted.testFunction_partitionOfUnity` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/TestFunctionPartitionOfUnityWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/TestFunctionPartitionOfUnityWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#test-function-partition-of-unity).
+Stated but not proved: `MathlibExt.Analysis.Distribution.TestFunctionPartitionOfUnityWanted.testFunction_partitionOfUnity` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/TestFunctionPartitionOfUnityWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/TestFunctionPartitionOfUnityWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#test-function-partition-of-unity).
 
 ## The Dirac comb is a tempered distribution
 
@@ -50,7 +50,7 @@ for every complex-valued Schwartz function $g$ on $\mathbb{R}$.
 
 - <https://en.wikipedia.org/wiki/Dirac_comb>.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.TemperedExamplesWanted.diracComb_toTemperedDistribution` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/TemperedExamplesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/TemperedExamplesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#dirac-comb-to-tempered-distribution).
+Stated but not proved: `MathlibExt.Analysis.Distribution.TemperedExamplesWanted.diracComb_toTemperedDistribution` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/TemperedExamplesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/TemperedExamplesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html#dirac-comb-to-tempered-distribution).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Distributions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/distributions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/distributions)

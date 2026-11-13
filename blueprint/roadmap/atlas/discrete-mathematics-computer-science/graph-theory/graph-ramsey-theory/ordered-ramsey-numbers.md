@@ -7,7 +7,7 @@ statement: formalized
 
 # Ordered Ramsey numbers
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html).
 
 ## Ordered embedding
 
@@ -20,7 +20,7 @@ carries its natural order.
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.IsOrderedEmbedding`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#is-ordered-embedding).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.IsOrderedEmbedding`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#is-ordered-embedding).
 
 ## Red ordered copy
 
@@ -34,7 +34,7 @@ adjacent in $G$ whenever $a$ and $b$ are adjacent in $H$. The copy need not be i
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.HasRedOrderedCopy`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#has-red-ordered-copy).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.HasRedOrderedCopy`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#has-red-ordered-copy).
 
 ## Blue ordered copy
 
@@ -49,7 +49,7 @@ edges of the blue graph, the complement of $G$. The copy need not be induced.
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.HasBlueOrderedCopy`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#has-blue-ordered-copy).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.HasBlueOrderedCopy`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#has-blue-ordered-copy).
 
 ## Ordered Ramsey property
 
@@ -64,7 +64,7 @@ those of $G$, contains a monochromatic ordered copy of $(H, \lt _H)$.
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.OrderedRamseyProp`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#ordered-ramsey-prop).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.OrderedRamseyProp`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#ordered-ramsey-prop).
 
 ## Ordered Ramsey number
 
@@ -78,7 +78,7 @@ monochromatic ordered copy of $(H, \lt _H)$. It is $0$ if no such $N$ exists.
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.orderedRamseyNumber`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#ordered-ramsey-number).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.orderedRamseyNumber`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#ordered-ramsey-number).
 
 ## Order-robust ordered Ramsey conjecture for 100-regular graphs
 
@@ -94,7 +94,7 @@ This is the AIM question asking whether such a $c$ exists, stated as a claim.
 
 - [AIM-COMBINATORICS-0079] Order-robust ordered Ramsey numbers of regular graphs (aim-combinatorics-notes.json notes[78], Source item 32, Section: Ordered Ramsey numbers, Workshop: Graph Ramsey theory, https://www.overleaf.com/read/mnvcscjjysvg).
 
-Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#conjecture).
 
 ## The order-robust ordered Ramsey conjecture holds
 
@@ -114,7 +114,7 @@ ordering; for $d = 100$ this exceeds $n^{1+c}$ for any $c < 49/100$ and all larg
 
 - M. Balko, V. Jelínek and P. Valtr, On ordered Ramsey numbers of bounded-degree graphs, arXiv:1606.05628, https://arxiv.org/abs/1606.05628.
 
-Stated but not proved: `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.OrderRobustOrderedRamseyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/OrderRobustOrderedRamseyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ordered Ramsey numbers](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-ramsey-theory/ordered-ramsey-numbers)

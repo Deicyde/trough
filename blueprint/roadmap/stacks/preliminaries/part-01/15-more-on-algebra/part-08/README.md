@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 15.123 A regular local ring is… to 15.130 Big projective modules…
+# 15.122 Determinants of… to 15.130 Big projective modules…
 
+- [15.122 Determinants of endomorphisms of finite length modules](15-122-determinants-of-endomorphisms-of-finite-l.md)
 - [15.123 A regular local ring is a UFD](15-123-a-regular-local-ring-is-a-ufd.md)
 - [15.124 Determinants of complexes](15-124-determinants-of-complexes.md)
 - [15.125 Extensions of valuation rings](15-125-extensions-of-valuation-rings.md)

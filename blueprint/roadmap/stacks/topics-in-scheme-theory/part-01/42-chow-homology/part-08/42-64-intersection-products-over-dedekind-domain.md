@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.IsDedekindChowBase.intersectionProduct_assoc, Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_of_smooth_of_equidimensional, Stacks.Chow.IsDedekindChowBase.chowGroupRestrict_chowCohomologyCapFundamentalClass_mulId
+lean: Stacks.Chow.IsDedekindChowBase.intersectionProduct_assoc, Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_of_smooth_of_equidimensional, Stacks.Chow.IsDedekindChowBase.chowGroupRestrict_chowCohomologyCapFundamentalClass_mulId, Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_and_mulId
 statement: formalized
 proof: formalized
 ---
 
 # 42.64 Intersection products over Dedekind domains
 
-Section 42.64 of the Stacks Project, [Tag 0FC9](https://stacks.math.columbia.edu/tag/0FC9). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.64 of the Stacks Project, [Tag 0FC9](https://stacks.math.columbia.edu/tag/0FC9). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FCA, a lemma
 
 [Tag 0FCA](https://stacks.math.columbia.edu/tag/0FCA) in the Stacks Project.
 
-**`Stacks.Chow.IsDedekindChowBase.intersectionProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/IntersectionProductDedekindAssociativity.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/IntersectionProductDedekindAssociativity.lean#L635). The attribute's comment: “the whole statement (α·β)·γ = α·(β·γ) in CH\_*(Y ×\_X Z ×\_X W) for X smooth over a base as in section 42.63 (zero-dimensional components allowed), of arbitrary relative dimension, Y, Z, W locally of finite type over X and arbitrary α, β, γ; the product is Δ^!(α × β) with Δ^! the Gysin class of the diagonal of Stacks 0FBR and × the exterior product of Stacks 0FC4, formed on the open and closed parts of X of constant relative dimension as in section 42.64, bivariant classes those of `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.IsDedekindChowBase.intersectionProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/IntersectionProductDedekindAssociativity.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/IntersectionProductDedekindAssociativity.lean#L635). The attribute's comment: “the whole statement (α·β)·γ = α·(β·γ) in CH\_*(Y ×\_X Z ×\_X W) for X smooth over a base as in section 42.63 (zero-dimensional components allowed), of arbitrary relative dimension, Y, Z, W locally of finite type over X and arbitrary α, β, γ; the product is Δ^!(α × β) with Δ^! the Gysin class of the diagonal of Stacks 0FBR and × the exterior product of Stacks 0FC4, formed on the open and closed parts of X of constant relative dimension as in section 42.64, bivariant classes those of `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FCA.** Let `(S, δ)` be as in section 42.63: `S` locally Noetherian with an open
 > covering by spectra of Dedekind domains, `δ = 0` at closed points and `δ = 1` elsewhere. Let `X`
@@ -65,7 +65,7 @@ theorem IsDedekindChowBase.intersectionProduct_assoc [Smooth sX] (n m l : ℤ)
 
 [Tag 0FCB](https://stacks.math.columbia.edu/tag/0FCB) in the Stacks Project.
 
-**`Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_of_smooth_of_equidimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean#L160). The attribute's comment: “first clause, in full: S as in section 42.63 with field components allowed, X smooth over S and equidimensional of dimension d (every irreducible component of δ-dimension d); bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_of_smooth_of_equidimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean#L161). The attribute's comment: “first clause, in full: S as in section 42.63 with field components allowed, X smooth over S and equidimensional of dimension d (every irreducible component of δ-dimension d); bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FCB, first clause.** Let `(S, δ)` be a base as in section 42.63 of the Stacks Project
 > (locally the spectrum of a Dedekind domain, fields allowed; `δ = 0` at closed points and `1`
@@ -85,7 +85,7 @@ theorem chowCohomologyCapFundamentalClass_bijective_of_smooth_of_equidimensional
       (chowCohomologyCapFundamentalClass C (gysinSystemOfInvertible C) sX d p)
 ```
 
-**`Stacks.Chow.IsDedekindChowBase.chowGroupRestrict_chowCohomologyCapFundamentalClass_mulId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean#L237). The attribute's comment: “second clause, corrected form: Θ(a · b) = Θ(a) · Θ(b) on the part X₁ of X over the one-dimensional part of S (all of X when S has no zero-dimensional component), with the intersection product of section 42.64 formed with the Gysin class Δ^! of the diagonal; over a zero-dimensional component the clause is false as stated, see `Stacks.Chow.not_chowCohomologyCapFundamentalClass_mulId_fieldChowSituation`; S as in section 42.63 with field components allowed, X smooth and equidimensional of dimension e + 1”.
+**`Stacks.Chow.IsDedekindChowBase.chowGroupRestrict_chowCohomologyCapFundamentalClass_mulId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekind.lean#L238). The attribute's comment: “second clause, corrected form: Θ(a · b) = Θ(a) · Θ(b) on the part X₁ of X over the one-dimensional part of S (all of X when S has no zero-dimensional component), with the intersection product of section 42.64 formed with the Gysin class Δ^! of the diagonal; over a zero-dimensional component the clause is false as stated, see `Stacks.Chow.not_chowCohomologyCapFundamentalClass_mulId_fieldChowSituation`; S as in section 42.63 with field components allowed, X smooth and equidimensional of dimension e + 1”.
 
 > **Stacks 0FCB, second clause**, corrected form: over the one-dimensional part of the base. Let
 > `(S, δ)` be a base as in section 42.63 (field components allowed), and let `X` be smooth over `S`
@@ -135,6 +135,82 @@ theorem chowGroupRestrict_chowCohomologyCapFundamentalClass_mulId (e : ℕ)
                     b)))))
 ```
 
+**`Stacks.Chow.IsDedekindChowBase.chowCohomologyCapFundamentalClass_bijective_and_mulId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekindStatement.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomologyDedekindStatement.lean#L70). The attribute's comment: “the whole tag: Θ is bijective in every degree, for S as in section 42.63 (a field is a Dedekind domain, so field components are part of the source's hypothesis) and X smooth and equidimensional of dimension d (δ-dimension of every irreducible component); the second clause in corrected form, Θ(a · b) = Θ(a) · Θ(b) on the part X₁ of X over the one-dimensional part of S (all of X when S has no zero-dimensional component), with the product Δ^!(α × β) of section 42.64; and the formal counterexample to the second clause as printed, S = X = Spec k, where the exterior product of section 42.63 vanishes, also stated as `Stacks.Chow.not_chowCohomologyCapFundamentalClass_mulId_fieldChowSituation`”.
+
+> **Stacks 0FCB.** Let `(S, δ)` be a base as in section 42.63 of the Stacks Project (locally the
+> spectrum of a Dedekind domain, a field being one; `δ = 0` at closed points and `1` elsewhere), and
+> let `X` be smooth over `S`, equidimensional of dimension `d`: every irreducible component of `X`
+> has δ-dimension `d`. Write `Θ : c ↦ c ∩ [X]_d`. Then
+>
+> 1. `Θ : A^p(X) ⟶ CH_{d-p}(X)` is bijective for every `p ∈ ℤ`;
+> 2. if `d = e + 1`, then `Θ(a · b)|_{X₁} = Θ(a)|_{X₁} · Θ(b)|_{X₁}` on the open and closed part
+>    `X₁` of `X` over the one-dimensional part of `S`, the intersection product of section 42.64
+>    being formed with the Gysin class `Δ^!` of the diagonal of `X₁` (Stacks 0FBR); `X₁ = X` when
+>    `S` has no zero-dimensional component;
+> 3. the second clause as printed fails over a field `k`: for `S = X = Spec k`, `d = 0`, one has
+>    `Θ(1 · 1) ≠ 0`, whereas the intersection product of section 42.64 vanishes on
+>    `CH_0(X) ⊗ CH_0(X)` for every class of the diagonal.
+
+```lean
+theorem chowCohomologyCapFundamentalClass_bijective_and_mulId (d : ℕ)
+    (hd : ∀ V : irreducibleComponents X,
+      deltaDimension C sX ⟨V, V.2.1, isClosed_of_mem_irreducibleComponents _ V.2⟩ = d) :
+    (∀ p : ℤ, Function.Bijective
+      (chowCohomologyCapFundamentalClass C (gysinSystemOfInvertible C) sX d p)) ∧
+    (∀ (e : ℕ) (hde : d = e + 1) (p q : ℤ)
+      (a : chowCohomologyComponent C (gysinSystemOfInvertible C) sX p)
+      (b : chowCohomologyComponent C (gysinSystemOfInvertible C) sX q),
+      chowGroupRestrict C sX ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+          (hS.oneDimensionalPartPreimage sX).ι rfl ((e : ℤ) + 1 - (p + q))
+          (chowCohomologyCapFundamentalClass C (gysinSystemOfInvertible C) sX (e + 1) (p + q)
+            (a.mulId C sX b)) =
+        chowGroupDegreeEquiv C ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+          (by ring : ((e : ℤ) + 1 - p) + ((e : ℤ) + 1 - q) - 1 - e = (e + 1) - (p + q))
+          (chowGroupSelfProductUnitCollapse C ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+            (((e : ℤ) + 1 - p) + ((e : ℤ) + 1 - q) - 1 - e)
+            (hS.intersectionProduct (gysinSystemOfInvertible C)
+              ((hS.oneDimensionalPartPreimage sX).ι ≫ sX) (𝟙 _) (𝟙 _) e
+              (bivariantClassCongrBase C (gysinSystemOfInvertible C)
+                (pullback.diagonal ((hS.oneDimensionalPartPreimage sX).ι ≫ sX))
+                (diagonal_comp_selfProductStructure C ((hS.oneDimensionalPartPreimage sX).ι ≫ sX))
+                rfl e (diagonalGysinClass C ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+                  ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+                  (hS.relativeDimension_oneDimensionalPartPreimage sX e
+                    (fun V ↦ (hd V).trans (by exact_mod_cast hde)))))
+              ((e : ℤ) + 1 - p) ((e : ℤ) + 1 - q)
+              (chowGroupCongr C (Category.id_comp _).symm ((e : ℤ) + 1 - p)
+                (chowGroupRestrict C sX ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+                  (hS.oneDimensionalPartPreimage sX).ι rfl ((e : ℤ) + 1 - p)
+                  (chowCohomologyCapFundamentalClass C (gysinSystemOfInvertible C) sX (e + 1) p a))
+                ⊗ₜ[ℤ] chowGroupCongr C (Category.id_comp _).symm ((e : ℤ) + 1 - q)
+                  (chowGroupRestrict C sX ((hS.oneDimensionalPartPreimage sX).ι ≫ sX)
+                    (hS.oneDimensionalPartPreimage sX).ι rfl ((e : ℤ) + 1 - q)
+                    (chowCohomologyCapFundamentalClass C (gysinSystemOfInvertible C) sX (e + 1) q
+                      b)))))) ∧
+    (∀ (k : Type u) [Field k],
+      chowCohomologyCapFundamentalClass (fieldChowSituation k)
+          (gysinSystemOfInvertible (fieldChowSituation k)) (𝟙 (fieldChowSituation k).S) 0 (0 + 0)
+          ((bivariantIdentityClassOfInvertible (fieldChowSituation k)
+            (𝟙 (fieldChowSituation k).S)).mulId (fieldChowSituation k)
+            (𝟙 (fieldChowSituation k).S)
+            (bivariantIdentityClassOfInvertible (fieldChowSituation k)
+              (𝟙 (fieldChowSituation k).S))) ≠ 0 ∧
+        ∀ (c : BivariantClass (fieldChowSituation k)
+            (gysinSystemOfInvertible (fieldChowSituation k)) (𝟙 (fieldChowSituation k).S)
+            (selfProductStructure (fieldChowSituation k) (𝟙 (fieldChowSituation k).S))
+            (pullback.diagonal (𝟙 (fieldChowSituation k).S))
+            (diagonal_comp_selfProductStructure (fieldChowSituation k)
+              (𝟙 (fieldChowSituation k).S)) 0)
+          (t : TensorProduct ℤ
+            (chowGroup (fieldChowSituation k)
+              (𝟙 (fieldChowSituation k).S ≫ 𝟙 (fieldChowSituation k).S) 0)
+            (chowGroup (fieldChowSituation k)
+              (𝟙 (fieldChowSituation k).S ≫ 𝟙 (fieldChowSituation k).S) 0)),
+          (isDedekindChowBase_fieldChowSituation k).intersectionProduct
+            (gysinSystemOfInvertible (fieldChowSituation k)) (𝟙 (fieldChowSituation k).S)
+            (𝟙 (fieldChowSituation k).S) (𝟙 (fieldChowSituation k).S) 0 c 0 0 t = 0)
+```
+
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -142,4 +218,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.64, Tag 0FC9](https://stacks.math.columbia.edu/tag/0FC9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

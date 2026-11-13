@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.3 Linear series
 
-Section 53.3 of the Stacks Project, [Tag 0CCM](https://stacks.math.columbia.edu/tag/0CCM). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.3 of the Stacks Project, [Tag 0CCM](https://stacks.math.columbia.edu/tag/0CCM). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CCN, a definition
 
 [Tag 0CCN](https://stacks.math.columbia.edu/tag/0CCN) in the Stacks Project.
 
-**`AlgebraicGeometry.LinearSeries`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L82).
+**`AlgebraicGeometry.LinearSeries`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L82).
 
 > A linear series of degree `d` and dimension `r` on a proper scheme of dimension at most one
 > over a field: an invertible sheaf of degree `d` together with an `(r + 1)`-dimensional space of
@@ -29,7 +29,7 @@ structure LinearSeries (k : Type u) [Field k] {X : Scheme.{u}}
 
 [Tag 0CCP](https://stacks.math.columbia.edu/tag/0CCP) in the Stacks Project.
 
-**`Stacks.LinearSeriesMorphism.exists_hom_over_and_hom_pullback_twistingSheafAtUniverse_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeriesMorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSeriesMorphism.lean#L309).
+**`Stacks.LinearSeriesMorphism.exists_hom_over_and_hom_pullback_twistingSheafAtUniverse_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeriesMorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSeriesMorphism.lean#L309).
 
 > **Stacks Project, Tag 0CCP.** Let `k` be a field, `X` a nonsingular proper curve over `k` and
 > `(ℒ, V)` a `𝔤^r_d` on `X`. Then there are a morphism `φ : X ⟶ ℙ^r_k` of varieties over `k` — a
@@ -58,7 +58,7 @@ theorem exists_hom_over_and_hom_pullback_twistingSheafAtUniverse_of_isRegular [I
 
 [Tag 0CCQ](https://stacks.math.columbia.edu/tag/0CCQ) in the Stacks Project.
 
-**`AlgebraicGeometry.linearSeries_nonempty_of_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L98).
+**`AlgebraicGeometry.linearSeries_nonempty_of_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L98).
 
 > A linear series of degree `d` and dimension `r` yields one of degree `d` and dimension `s` for
 > every `s ≤ r`.
@@ -76,7 +76,7 @@ lemma linearSeries_nonempty_of_le
 
 [Tag 0CCR](https://stacks.math.columbia.edu/tag/0CCR) in the Stacks Project.
 
-**`Stacks.LinearSeriesMorphism.degreeOver_le_or_constant_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PencilDegree.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PencilDegree.lean#L534). The attribute's comment: “the whole tag. `the morphism of Lemma 53.3.2` is rendered by the property that characterizes it: the data of Tag 0CCP exists for `(ℒ, V)`, and every datum of that shape satisfies the alternative. `factors through a closed point` is rendered as constancy of the morphism with closed image, nothing being asked of the residue field of that point, and `H⁰(X, 𝒪_X) ≠ k` as `1 < Module.rank k H⁰(X, 𝒪_X)`”.
+**`Stacks.LinearSeriesMorphism.degreeOver_le_or_constant_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PencilDegree.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PencilDegree.lean#L534). The attribute's comment: “the whole tag. `the morphism of Lemma 53.3.2` is rendered by the property that characterizes it: the data of Tag 0CCP exists for `(ℒ, V)`, and every datum of that shape satisfies the alternative. `factors through a closed point` is rendered as constancy of the morphism with closed image, nothing being asked of the residue field of that point, and `H⁰(X, 𝒪_X) ≠ k` as `1 < Module.rank k H⁰(X, 𝒪_X)`”.
 
 > **Stacks Project, Tag 0CCR.** Let `k` be a field, `X` a nonsingular proper curve over `k`,
 > and `(ℒ, V)` a `𝔤¹_d` on `X`. Then the morphism `φ : X ⟶ 𝐏¹_k` of [Stacks, Tag 0CCP] either
@@ -151,7 +151,7 @@ theorem degreeOver_le_or_constant_of_isRegular (k : Type u) [Field k]
 
 [Tag 0CCS](https://stacks.math.columbia.edu/tag/0CCS) in the Stacks Project.
 
-**`AlgebraicGeometry.linearSeries_dimension_le_degree_and_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 810](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L810). The attribute's comment: “both assertions, under the source's own hypotheses. Tag 02O6 at the structure sheaf, Tag 0B5T clause (4) and the ampleness of `ℒ` that the latter consumes are all proved here. `0 < d` is assumed for the equality clause because the source's statement is false at `r = d = 0`, by `AlgebraicGeometry.exists_counterexample_to_displayed_statement_of_tag_0CCS_at_zero`”.
+**`AlgebraicGeometry.linearSeries_dimension_le_degree_and_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSeries.lean#L811). The attribute's comment: “both assertions, under the source's own hypotheses. Tag 02O6 at the structure sheaf, Tag 0B5T clause (4) and the ampleness of `ℒ` that the latter consumes are all proved here. `0 < d` is assumed for the equality clause because the source's statement is false at `r = d = 0`, by `AlgebraicGeometry.exists_counterexample_to_displayed_statement_of_tag_0CCS_at_zero`”.
 
 > Let `X` be a proper curve over a field `k` with `H⁰(X, 𝒪_X) = k`, spelled as invertibility of
 > the canonical map from `k`. If `X` has a `𝔤^r_d`, then `r ≤ d`, and if moreover `0 < d` and
@@ -169,7 +169,7 @@ theorem linearSeries_dimension_le_degree_and_genus_eq_zero {k : Type u} [Field k
 
 [Tag 0CCT](https://stacks.math.columbia.edu/tag/0CCT) in the Stacks Project.
 
-**`Stacks.Divisors.LinearlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L77). The attribute's comment: “the classical definition of linear equivalence: 𝒪\_X(D) ≅ 𝒪\_X(D')”.
+**`Stacks.Divisors.LinearlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L77). The attribute's comment: “the classical definition of linear equivalence: 𝒪\_X(D) ≅ 𝒪\_X(D')”.
 
 > **Stacks Project, Tag 0CCT.** Two effective Cartier divisors `D, D' ⊆ X` are *linearly
 > equivalent* when `𝒪_X(D) ≅ 𝒪_X(D')` as `𝒪_X`-modules.
@@ -178,7 +178,7 @@ theorem linearSeries_dimension_le_degree_and_genus_eq_zero {k : Type u} [Field k
 def LinearlyEquivalent (D D' : X.IdealSheafData) : Prop
 ```
 
-**`Stacks.Divisors.completeLinearSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L126). The attribute's comment: “the complete linear system |D|: the effective Cartier divisors linearly equivalent to D”.
+**`Stacks.Divisors.completeLinearSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L126). The attribute's comment: “the complete linear system |D|: the effective Cartier divisors linearly equivalent to D”.
 
 > **Stacks Project, Tag 0CCT.** The *complete linear system*, or *complete linear series*,
 > `|D|` of an effective Cartier divisor `D ⊆ X`: the set of effective Cartier divisors `E ⊆ X`
@@ -188,7 +188,7 @@ def LinearlyEquivalent (D D' : X.IdealSheafData) : Prop
 def completeLinearSystem (D : X.IdealSheafData) : Set X.IdealSheafData
 ```
 
-**`Stacks.LinearSystemScheme.completeLinearSystem_eq_closedPoints_abelMapFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean#L287). The attribute's comment: “|D| is the set of closed points of the fibre of gamma\_d : Hilb^d -> Pic over the point of O\_X(D); this gives |D| a natural scheme structure”.
+**`Stacks.LinearSystemScheme.completeLinearSystem_eq_closedPoints_abelMapFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean#L287). The attribute's comment: “|D| is the set of closed points of the fibre of gamma\_d : Hilb^d -> Pic over the point of O\_X(D); this gives |D| a natural scheme structure”.
 
 > **Stacks Project, Tag 0CCT.** Let `X` be a smooth projective curve over an algebraically
 > closed field `k` and `D ⊆ X` an effective Cartier divisor of degree `d`. The fibre
@@ -237,7 +237,7 @@ theorem completeLinearSystem_eq_closedPoints_abelMapFibre {d : ℕ}
               (sectionOf k (B.inclusion.map g) (Stacks.Divisors.modulesInvertibleSheaf D) s)
 ```
 
-**`Stacks.LinearSystemScheme.isLinearSystem_iff_exists_eq_iSup_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearEquations/Basic.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearEquations/Basic.lean#L183). The attribute's comment: “a linear system on X is a closed subvariety L of |D| which can be cut out by linear equations, the ideal sheaf of L being generated by linear forms”.
+**`Stacks.LinearSystemScheme.isLinearSystem_iff_exists_eq_iSup_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearEquations/Basic.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearEquations/Basic.lean#L184). The attribute's comment: “a linear system on X is a closed subvariety L of |D| which can be cut out by linear equations, the ideal sheaf of L being generated by linear forms”.
 
 > **Stacks Project, Tag 0CCT.** A closed subscheme `L ⊆ |D|` is a linear system exactly when it
 > is a closed subvariety cut out by linear equations: `L` is integral, and its ideal sheaf is
@@ -262,7 +262,7 @@ theorem isLinearSystem_iff_exists_eq_iSup_zeroScheme
         IsIntegral L.subscheme
 ```
 
-**`Stacks.LinearSystemScheme.IsLinearSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L210). The attribute's comment: “a linear system on X is a closed subvariety L of |D| which can be cut out by linear equations”.
+**`Stacks.LinearSystemScheme.IsLinearSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L210). The attribute's comment: “a linear system on X is a closed subvariety L of |D| which can be cut out by linear equations”.
 
 > A *linear system* (or *linear series*) on `X` is a closed subvariety `L ⊆ |D|` which can be
 > cut out by linear equations: `L` is the closed subscheme `V₊(E)` of a space `E` of linear forms
@@ -272,7 +272,7 @@ theorem isLinearSystem_iff_exists_eq_iSup_zeroScheme
 structure IsLinearSystem (L : (linearSystemScheme k f D).IdealSheafData) : Prop
 ```
 
-**`Stacks.LinearSystemScheme.IsLinearSystem.exists_eq_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L278). The attribute's comment: “if L has dimension r, then L = P(V^dual) where V is a linear subspace of H^0(X, O\_X(D)) of dimension r + 1”.
+**`Stacks.LinearSystemScheme.IsLinearSystem.exists_eq_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L279). The attribute's comment: “if L has dimension r, then L = P(V^dual) where V is a linear subspace of H^0(X, O\_X(D)) of dimension r + 1”.
 
 > If a linear system `L ⊆ |D|` has dimension `r`, then `L = 𝐏(V^∨)` for a linear subspace
 > `V ⊆ H⁰(X, 𝒪_X(D))` of dimension `r + 1`: `L` is the image of the closed immersion
@@ -292,7 +292,7 @@ theorem IsLinearSystem.exists_eq_projectiveSpace {L : (linearSystemScheme k f D)
           φ.inv ≫ L.subschemeι = subspaceImmersion k f D V
 ```
 
-**`Stacks.LinearSystemScheme.IsLinearSystem.linearSeries`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L319). The attribute's comment: “the classical linear series L in |D| corresponds to the linear series (O\_X(D), V)”.
+**`Stacks.LinearSystemScheme.IsLinearSystem.linearSeries`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L320). The attribute's comment: “the classical linear series L in |D| corresponds to the linear series (O\_X(D), V)”.
 
 > The linear series `(𝒪_X(D), V)` of [Stacks, Tag 0CCN] corresponding to a linear system
 > `L ⊆ |D|` of dimension `r`, with `L = 𝐏(V^∨)` as in
@@ -306,7 +306,7 @@ def IsLinearSystem.linearSeries {L : (linearSystemScheme k f D).IdealSheafData}
     LinearSeries k f (topologicalKrullDim_le_one k f) d r
 ```
 
-**`Stacks.LinearSystemScheme.completeLinearSystem_iso_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean#L217). The attribute's comment: “|D| is isomorphic to P^m\_k with m + 1 = h^0(O\_X(D)); canonically |D| = P(H^0(X, O\_X(D))^dual)”.
+**`Stacks.LinearSystemScheme.completeLinearSystem_iso_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean#L217). The attribute's comment: “|D| is isomorphic to P^m\_k with m + 1 = h^0(O\_X(D)); canonically |D| = P(H^0(X, O\_X(D))^dual)”.
 
 > Let `X` be a smooth projective curve over an algebraically closed field `k`, `D ⊆ X` an
 > effective Cartier divisor of degree `d`, and `m` the integer with `m + 1 = h⁰(𝒪_X(D))`. The scheme
@@ -342,7 +342,7 @@ theorem completeLinearSystem_iso_projectiveSpace {d m : ℕ}
             (sectionOf k f (Stacks.Divisors.modulesInvertibleSheaf D) s)
 ```
 
-**`Stacks.Divisors.linearlyEquivalent_iff_weilDivisorClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/WeilDivisorClass.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/WeilDivisorClass.lean#L147). The attribute's comment: “D and D' are linearly equivalent iff their Weil divisors have the same class in Cl(X)”.
+**`Stacks.Divisors.linearlyEquivalent_iff_weilDivisorClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/WeilDivisorClass.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/WeilDivisorClass.lean#L147). The attribute's comment: “D and D' are linearly equivalent iff their Weil divisors have the same class in Cl(X)”.
 
 > **Stacks Project, Tag 0CCT.** Let `X` be a smooth projective curve over an algebraically
 > closed field `k`. Two effective Cartier divisors `D, D' ⊆ X` are linearly equivalent exactly
@@ -368,4 +368,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.3, Tag 0CCM](https://stacks.math.columbia.edu/tag/0CCM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.12 Relative morphisms
 
-Section 99.12 of the Stacks Project, [Tag 0D19](https://stacks.math.columbia.edu/tag/0D19). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.12 of the Stacks Project, [Tag 0D19](https://stacks.math.columbia.edu/tag/0D19). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D1A, a lemma
 
 [Tag 0D1A](https://stacks.math.columbia.edu/tag/0D1A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.graphTransformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L414). The attribute's comment: “the graph transformation”.
+**`AlgebraicGeometry.Space.graphTransformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L414). The attribute's comment: “the graph transformation”.
 
 > **Stacks 0D1A.** The *graph transformation* `Mor_Q(Z, X) ⟶ Hilb_{Z ×_Q X / Q}`: it carries a
 > relative morphism `(a, b)` at a test scheme `T` to the graph of `b`, a closed subspace of
@@ -30,7 +30,7 @@ def graphTransformation (hsep : IsSeparated B S hS x) (hfp : IsFinitePresentatio
       hilbertPresheaf (graphAmbientMap B S hS z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.graphTransformation_app_family_Z`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L449). The attribute's comment: “the transformation is the graph”.
+**`AlgebraicGeometry.Space.graphTransformation_app_family_Z`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L449). The attribute's comment: “the transformation is the graph”.
 
 > **Stacks 0D1A.** The graph transformation maps a relative morphism to its graph: the closed
 > subspace of the family it produces is the range of the graph map.
@@ -44,7 +44,7 @@ theorem graphTransformation_app_family_Z (hsep : IsSeparated B S hS x)
       Subfunctor.range (graphMap (relativeHomSections B S hS Z X Q z x hZ hX hQ T p))
 ```
 
-**`AlgebraicGeometry.Space.graphTransformation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L461). The attribute's comment: “injectivity”.
+**`AlgebraicGeometry.Space.graphTransformation_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/GraphOfRelativeMorphism.lean#L461). The attribute's comment: “injectivity”.
 
 > **Stacks 0D1A.** The graph transformation is injective at every test scheme: two relative
 > morphisms with the same graph have the same first component, and then
@@ -62,7 +62,7 @@ theorem graphTransformation_injective (hsep : IsSeparated B S hS x)
 
 [Tag 0D1B](https://stacks.math.columbia.edu/tag/0D1B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.graphTransformation_relative_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsOpenInHilbert.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsOpenInHilbert.lean#L415).
+**`AlgebraicGeometry.Space.graphTransformation_relative_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsOpenInHilbert.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsOpenInHilbert.lean#L416).
 
 > The graph transformation `Mor_Q(Z, X) ⟶ Hilb_{Z ×_Q X / Q}` is representable by open
 > immersions.
@@ -81,7 +81,7 @@ theorem graphTransformation_relative_isOpenImmersion (hsep : IsSeparated B S hS 
 
 [Tag 0D1C](https://stacks.math.columbia.edu/tag/0D1C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean#L198). The attribute's comment: “algebraicity”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean#L198). The attribute's comment: “algebraicity”.
 
 > **Stacks 0D1C**, algebraicity. For `x` of finite presentation and separated and `z` of finite
 > presentation, flat and proper, the relative morphism functor `Mor_Q(Z, X)` is an algebraic space
@@ -99,7 +99,7 @@ theorem isAlgebraicSpace_relativeHom (hx_fp : IsFinitePresentation B S hS x)
     IsAlgebraicSpace B S hS (relativeHom B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_relativeHomProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean#L216). The attribute's comment: “local finite presentation over the base”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_relativeHomProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpace.lean#L216). The attribute's comment: “local finite presentation over the base”.
 
 > **Stacks 0D1C**, local finite presentation over the base. For `x` of finite presentation and
 > separated and `z` of finite presentation, flat and proper, the projection
@@ -119,7 +119,7 @@ theorem isLocallyOfFinitePresentation_relativeHomProjection
       (relativeHomProjection B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpaceUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpaceUnconditional.lean#L59).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpaceUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismAlgebraicSpaceUnconditional.lean#L59).
 
 > Let `z : Z ⟶ Q` and `x : X ⟶ Q` be morphisms of algebraic spaces over `S`. Assume `x` is of
 > finite presentation and separated, and `z` is of finite presentation, flat and proper. Then
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.12, Tag 0D19](https://stacks.math.columbia.edu/tag/0D19)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 37.50 Projective schemes
 
-Section 37.50 of the Stacks Project, [Tag 0B44](https://stacks.math.columbia.edu/tag/0B44). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.50 of the Stacks Project, [Tag 0B44](https://stacks.math.columbia.edu/tag/0B44). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B44, the section
 
@@ -16,19 +16,19 @@ Section 37.50 of the Stacks Project, [Tag 0B44](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isProjective_tfae_of_exists_isAmple`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L376), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L23) (StacksFrontier): “the characterizations of projectivity over a base with an ample invertible sheaf”.
-- [`AlgebraicGeometry.ProjectiveSchemesOver.baseChange`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L243), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L25) (StacksFrontier): “base change”.
-- [`AlgebraicGeometry.isProjective_comp_of_hasAmpleInvertibleSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L259), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L26) (StacksFrontier): “composition”.
-- [`AlgebraicGeometry.isProjective_pullback_snd_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L277), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L27) (StacksFrontier): “fibre products”.
-- [`AlgebraicGeometry.isProjective_of_isFinite_of_hasAmpleInvertibleSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L348), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L28) (StacksFrontier): “finite morphisms”.
-- [`AlgebraicGeometry.projectiveOver_isClosedUnderFiniteCoproducts`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L444), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L30) (StacksFrontier): “finite disjoint unions”.
-- [`Stacks.AmpleFibreLimit.exists_mem_isRelativelyAmple_of_isAmple_fibre`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean#L473), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L32) (StacksFrontier): “projectivity spreads out from a fibre”.
+- [`AlgebraicGeometry.isProjective_tfae_of_exists_isAmple`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L376), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L23) (StacksFrontier): “the characterizations of projectivity over a base with an ample invertible sheaf”.
+- [`AlgebraicGeometry.ProjectiveSchemesOver.baseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L243), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L25) (StacksFrontier): “base change”.
+- [`AlgebraicGeometry.isProjective_comp_of_hasAmpleInvertibleSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L259), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L26) (StacksFrontier): “composition”.
+- [`AlgebraicGeometry.isProjective_pullback_snd_comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L277), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L27) (StacksFrontier): “fibre products”.
+- [`AlgebraicGeometry.isProjective_of_isFinite_of_hasAmpleInvertibleSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L348), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L28) (StacksFrontier): “finite morphisms”.
+- [`AlgebraicGeometry.projectiveOver_isClosedUnderFiniteCoproducts`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L444), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L30) (StacksFrontier): “finite disjoint unions”.
+- [`Stacks.AmpleFibreLimit.exists_mem_isRelativelyAmple_of_isAmple_fibre`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean#L474), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemesSection.lean#L32) (StacksFrontier): “projectivity spreads out from a fibre”.
 
 ## Tag 0B45, a lemma
 
 [Tag 0B45](https://stacks.math.columbia.edu/tag/0B45) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_sheafGradedAlgebra_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L245). The attribute's comment: “clause (8), reached from clause (1)”.
+**`AlgebraicGeometry.exists_sheafGradedAlgebra_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L245). The attribute's comment: “clause (8), reached from clause (1)”.
 
 > **Stacks Tag 0B45, clause (1) implies clause (8).** A projective morphism exhibits its source
 > as the relative homogeneous spectrum of a quasi-coherent graded `𝒪_S`-algebra generated in degree
@@ -52,7 +52,7 @@ theorem exists_sheafGradedAlgebra_of_isProjective {X S : Scheme.{u}} {f : X ⟶ 
         ∃ e : X ≅ (relativeProj A).scheme, e.hom ≫ (relativeProj A).toBase = f
 ```
 
-**`AlgebraicGeometry.isProjective_tfae_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L376).
+**`AlgebraicGeometry.isProjective_tfae_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveOverAmpleBase.lean#L376).
 
 > **Stacks Project, Tag 0B45.** Let `S` be a scheme carrying an ample invertible module and let
 > `f : X ⟶ S` be a morphism of schemes. The following are equivalent:
@@ -109,7 +109,7 @@ theorem isProjective_tfae_of_exists_isAmple
 
 [Tag 0B46](https://stacks.math.columbia.edu/tag/0B46) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSchemesOver.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L243). The attribute's comment: “base change”.
+**`AlgebraicGeometry.ProjectiveSchemesOver.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L243). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0B46, clause (1).** For a morphism of bases `g : S' ⟶ S`, base change
 > along `g` is a functor `P_S ⥤ P_{S'}`: the fibre product `S' ×_S X` of a scheme `X` projective
@@ -125,7 +125,7 @@ def ProjectiveSchemesOver.baseChange
     {S S' : Scheme.{u}} (g : S' ⟶ S) : ProjectiveSchemesOver S ⥤ ProjectiveSchemesOver S'
 ```
 
-**`AlgebraicGeometry.isProjective_comp_of_hasAmpleInvertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L259). The attribute's comment: “composition”.
+**`AlgebraicGeometry.isProjective_comp_of_hasAmpleInvertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L259). The attribute's comment: “composition”.
 
 > **Stacks Project, Tag 0B46, clause (2).** Let `S` carry an ample invertible sheaf. If
 > `f : X ⟶ S` is projective and `g : Y ⟶ X` is projective, then `g ≫ f : Y ⟶ S` is projective.
@@ -143,7 +143,7 @@ theorem isProjective_comp_of_hasAmpleInvertibleSheaf
     IsProjective (g ≫ f)
 ```
 
-**`AlgebraicGeometry.isProjective_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L277). The attribute's comment: “fibre products”.
+**`AlgebraicGeometry.isProjective_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L277). The attribute's comment: “fibre products”.
 
 > **Stacks Project, Tag 0B46, clause (3). `P_S` is closed under fibre products over `S`.** For
 > `f : X ⟶ S` and `g : Y ⟶ S` projective and `S` carrying an ample invertible sheaf, the structure
@@ -159,7 +159,7 @@ theorem isProjective_pullback_snd_comp
     IsProjective (pullback.snd f g ≫ g)
 ```
 
-**`AlgebraicGeometry.isProjective_of_isFinite_of_hasAmpleInvertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L348). The attribute's comment: “finite morphisms”.
+**`AlgebraicGeometry.isProjective_of_isFinite_of_hasAmpleInvertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L348). The attribute's comment: “finite morphisms”.
 
 > **Stacks Project, Tag 0B46, clause (5).** A finite morphism `f : X ⟶ S` over a base carrying
 > an ample invertible sheaf is projective, so `X` is an object of `P_S`.
@@ -176,7 +176,7 @@ theorem isProjective_of_isFinite_of_hasAmpleInvertibleSheaf {X S : Scheme.{u}} (
     [IsFinite f] (hS : HasAmpleInvertibleSheaf.{u} S) : IsProjective f
 ```
 
-**`AlgebraicGeometry.projectiveOver_isClosedUnderFiniteCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L444). The attribute's comment: “finite disjoint unions”. References: EGA II (5.5.6), “special case”.
+**`AlgebraicGeometry.projectiveOver_isClosedUnderFiniteCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/ProjectiveSchemes.lean#L444). The attribute's comment: “finite disjoint unions”. References: EGA II (5.5.6), “special case”.
 
 > **Stacks Project, Tag 0B46, clause (4). `P_S` is closed under finite disjoint unions**, for
 > `S` carrying an ample invertible sheaf. This includes the empty disjoint union.
@@ -196,7 +196,7 @@ theorem projectiveOver_isClosedUnderFiniteCoproducts (S : Scheme.{u})
 
 [Tag 0D2S](https://stacks.math.columbia.edu/tag/0D2S) in the Stacks Project.
 
-**`Stacks.AmpleFibreLimit.exists_mem_isRelativelyAmple_of_isAmple_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean#L473). References: EGA IV (9.6.4).
+**`Stacks.AmpleFibreLimit.exists_mem_isRelativelyAmple_of_isAmple_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFibreLimit/Basic.lean#L474). References: EGA IV (9.6.4).
 
 > **[Stacks, Tag 0D2S].**  Let `f : X ⟶ S` be a proper morphism of schemes, let `ℒ` be an
 > invertible `𝒪_X`-module and let `y` be a point of `S` such that `ℒ_y` is ample on the fibre `X_y`.
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.50, Tag 0B44](https://stacks.math.columbia.edu/tag/0B44)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

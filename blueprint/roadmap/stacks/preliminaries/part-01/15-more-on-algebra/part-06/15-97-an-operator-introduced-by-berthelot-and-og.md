@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Eta.DerivedFunctor.eta_commutes_shift_but_not_triangulated, Stacks.Decalage.Cohomology.tag_0F7P_iso, Stacks.Eta.QuasiIsoPreservation.quasiIso_etaPow_of_quasiIso, Stacks.Eta.GoodBaseChange.quasiIso_etaMap, Stacks.Eta.DerivedDescent.exists_additive_derived_eta, Stacks.Eta.Reduction.exists_boundary_subcomplex_of_etaQuotient, Stacks.EtaComplex.FractionalPowerBockstein.powerBocksteinOperator_eq_connectingHom_comp_reduction, EtaPow.Bockstein.bocksteinComplex
+lean: Stacks.Eta.DerivedFunctor.eta_commutes_shift_but_not_triangulated, Stacks.Decalage.Cohomology.bijective_etaCohomologyTorsionMap, Stacks.Eta.QuasiIsoPreservation.quasiIso_etaPow_of_quasiIso, Stacks.Eta.GoodBaseChange.quasiIso_etaMap, Stacks.Eta.DerivedDescent.exists_additive_derived_eta, Stacks.Eta.Reduction.exists_boundary_subcomplex_of_etaQuotient, Stacks.EtaComplex.FractionalPowerBockstein.powerBocksteinOperator_eq_connectingHom_comp_reduction, EtaPow.Bockstein.bocksteinComplex
 statement: formalized
 proof: formalized
 ---
 
 # 15.97 An operator introduced by Berthelot and Ogus
 
-Section 15.97 of the Stacks Project, [Tag 0F7N](https://stacks.math.columbia.edu/tag/0F7N). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.97 of the Stacks Project, [Tag 0F7N](https://stacks.math.columbia.edu/tag/0F7N). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GSN, an example
 
 [Tag 0GSN](https://stacks.math.columbia.edu/tag/0GSN) in the Stacks Project.
 
-**`Stacks.Eta.DerivedFunctor.eta_commutes_shift_but_not_triangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 908](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Derived.lean#L908).
+**`Stacks.Eta.DerivedFunctor.eta_commutes_shift_but_not_triangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Derived.lean#L908).
 
 > **Stacks 0GSN.** The cone triangle of multiplication by `f` on `A` in degree
 > one is distinguished. Its eta cone is homotopic to zero. If `f` is not a unit,
@@ -40,24 +40,27 @@ theorem eta_commutes_shift_but_not_triangulated
 
 [Tag 0F7P](https://stacks.math.columbia.edu/tag/0F7P) in the Stacks Project.
 
-**`Stacks.Decalage.Cohomology.tag_0F7P_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Cohomology.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Cohomology.lean#L466).
+**`Stacks.Decalage.Cohomology.bijective_etaCohomologyTorsionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Cohomology.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Cohomology.lean#L470). The attribute's comment: “the map H^i(M)/H^i(M)[f] → H^i(η\_f M), [z] ↦ [f^i z], is bijective, for every complex of f-torsion free modules; i = j + 1, and f need not be a nonzerodivisor on A”.
 
-> **Stacks Tag 0F7P (isomorphism form).** Multiplication by `f^{j+1}` descends to a canonical
-> isomorphism `H^{j+1}(M^•) / H^{j+1}(M^•)[f] ≅ H^{j+1}(η_f M^•)`.
+> **The canonical isomorphism of Tag 0F7P.** For a complex `M^•` of `f`-torsion free
+> `A`-modules, the map `H^{j+1}(M^•) / H^{j+1}(M^•)[f] → H^{j+1}(η_f M^•)` (with
+> `H^{j+1}(M^•)[f] = ker (ξ ↦ f • ξ)` the `f`-torsion) sending the class of a
+> cocycle `z` to the class of `f^{j+1} z` is bijective, i.e. an isomorphism of `A`-modules.  The
+> source's index `i` is `j + 1` here, and every `i ∈ ℤ` arises.
 
 ```lean
-theorem tag_0F7P_iso (C : FTFComplex A f) (j : ℤ) :
-    ∃ (Φ : Hcohom C j →ₗ[A] Heta C j)
-      (e : (Hcohom C j ⧸ LinearMap.ker Φ) ≃ₗ[A] Heta C j),
-      (∀ ξ : Hcohom C j, ξ ∈ LinearMap.ker Φ ↔ f • ξ = 0) ∧
-      (∀ ξ : Hcohom C j, e (Submodule.Quotient.mk ξ) = Φ ξ)
+theorem bijective_etaCohomologyTorsionMap (j : ℤ) :
+    Function.Bijective (etaCohomologyTorsionMap C j) ∧
+      ∀ z : Zc C j,
+        etaCohomologyTorsionMap C j (Submodule.Quotient.mk (Submodule.Quotient.mk z)) =
+          Submodule.Quotient.mk (⟨fpowZ C j z, fpowZ_mem_Zeta C j z⟩ : Zeta C j)
 ```
 
 ## Tag 0F7Q, a lemma
 
 [Tag 0F7Q](https://stacks.math.columbia.edu/tag/0F7Q) in the Stacks Project.
 
-**`Stacks.Eta.QuasiIsoPreservation.quasiIso_etaPow_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 1076](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Derived.lean#L1076).
+**`Stacks.Eta.QuasiIsoPreservation.quasiIso_etaPow_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 1076](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Derived.lean#L1076).
 
 > **Stacks 0F7Q.** The Berthelot--Ogus décalage of a quasi-isomorphism of
 > complexes of `f`-torsion-free modules is a quasi-isomorphism.
@@ -71,7 +74,7 @@ theorem quasiIso_etaPow_of_quasiIso
     QuasiIso ((underlyingComplex f).map (E.functor.map g))
 ```
 
-**`Stacks.Eta.GoodBaseChange.quasiIso_etaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean#L318). The attribute's comment: “stated for `EtaComplex.etaObject`”.
+**`Stacks.Eta.GoodBaseChange.quasiIso_etaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean#L317). The attribute's comment: “stated for `EtaComplex.etaObject`”.
 
 > The décalage `EtaComplex.etaMap f φ` of a quasi-isomorphism `φ` between complexes of
 > `f`-torsion-free `A`-modules is a quasi-isomorphism.
@@ -88,7 +91,7 @@ theorem quasiIso_etaMap (f : A) (hf : f ∈ nonZeroDivisors A)
 
 [Tag 0F7R](https://stacks.math.columbia.edu/tag/0F7R) in the Stacks Project.
 
-**`Stacks.Eta.DerivedDescent.exists_additive_derived_eta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 1385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Derived.lean#L1385).
+**`Stacks.Eta.DerivedDescent.exists_additive_derived_eta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Derived.lean, line 1385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Derived.lean#L1385).
 
 > **Stacks 0F7R.** For a nonzerodivisor `f`, the Berthelot--Ogus décalage
 > descends to an additive endofunctor of the derived category. On every complex
@@ -111,7 +114,7 @@ theorem exists_additive_derived_eta
 
 [Tag 0F7S](https://stacks.math.columbia.edu/tag/0F7S) in the Stacks Project.
 
-**`Stacks.Eta.Reduction.exists_boundary_subcomplex_of_etaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L688).
+**`Stacks.Eta.Reduction.exists_boundary_subcomplex_of_etaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L688).
 
 > **Stacks 0F7S.** Modulo a nonzerodivisor `f`, the eta complex has an acyclic
 > subcomplex with degree-`i` term `B^(i+1) ⊕ B^i`, and the quotient complex has the
@@ -192,7 +195,7 @@ theorem exists_boundary_subcomplex_of_etaQuotient
 
 [Tag 0GSP](https://stacks.math.columbia.edu/tag/0GSP) in the Stacks Project.
 
-**`Stacks.EtaComplex.FractionalPowerBockstein.powerBocksteinOperator_eq_connectingHom_comp_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L1133).
+**`Stacks.EtaComplex.FractionalPowerBockstein.powerBocksteinOperator_eq_connectingHom_comp_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L1133).
 
 > **Stacks 0GSP.** For the actual fractional power ideals in `A[1/f]`, the Bockstein
 > operator for the successive-quotient row equals the connecting morphism of the unquotiented
@@ -218,7 +221,7 @@ theorem powerBocksteinOperator_eq_connectingHom_comp_reduction
 
 [Tag 0GSQ](https://stacks.math.columbia.edu/tag/0GSQ) in the Stacks Project.
 
-**`EtaPow.Bockstein.bocksteinComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 1239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L1239).
+**`EtaPow.Bockstein.bocksteinComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 1239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L1239).
 
 > **Stacks 0GSQ.** The complex `Hᵇ(M/f)` has term
 > `Hⁱ(M ⊗ fⁱA/fⁱ⁺¹A)` in degree `i` and the canonical Bockstein map as its differential.
@@ -234,7 +237,7 @@ def bocksteinComplex (f : A) (hf : f ∈ nonZeroDivisors A)
 
 [Tag 0F7T](https://stacks.math.columbia.edu/tag/0F7T) in the Stacks Project.
 
-**`Stacks.EtaComplex.ModNonzerodivisor.etaTensorMod_to_bockstein_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2099](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L2099).
+**`Stacks.EtaComplex.ModNonzerodivisor.etaTensorMod_to_bockstein_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2099](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L2099).
 
 > **Stacks 0F7T.** If `f` is a nonzerodivisor and every term of `M` is
 > `f`-torsion-free, the canonical map from `η_f M ⊗_A A/fA` to the Bockstein
@@ -253,7 +256,7 @@ theorem etaTensorMod_to_bockstein_quasiIso
 
 [Tag 0F7Y](https://stacks.math.columbia.edu/tag/0F7Y) in the Stacks Project.
 
-**`Stacks.Eta.BocksteinVanishing.cyclesReduction_epi_iff_powerBocksteinOperator_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L2471).
+**`Stacks.Eta.BocksteinVanishing.cyclesReduction_epi_iff_powerBocksteinOperator_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L2471).
 
 > **Stacks 0F7Y.** For a complex of `f`-torsion-free modules, reduction from cycles
 > modulo `f²` to cycles modulo `f` is surjective if and only if the corresponding Bockstein
@@ -280,7 +283,7 @@ theorem cyclesReduction_epi_iff_powerBocksteinOperator_eq_zero
 
 [Tag 0F7Z](https://stacks.math.columbia.edu/tag/0F7Z) in the Stacks Project.
 
-**`Stacks.Eta.ReductionDirectSum.etaQuotient_range_eq_prod_of_cyclesReduction_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Reduction.lean#L2667).
+**`Stacks.Eta.ReductionDirectSum.etaQuotient_range_eq_prod_of_cyclesReduction_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Reduction.lean, line 2667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Reduction.lean#L2667).
 
 > **Stacks 0F7Z.** If cycles modulo `f` lift to cycles modulo `f²`, the canonical
 > map `(1, dⁱ)` embeds the degree-`i` eta term modulo `f` as a product of a submodule
@@ -331,7 +334,7 @@ theorem etaQuotient_range_eq_prod_of_cyclesReduction_surjective
 
 [Tag 0F7U](https://stacks.math.columbia.edu/tag/0F7U) in the Stacks Project.
 
-**`EtaDecalage.etaFetaG_eq_etaFG_cochainComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Composition.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Composition.lean#L295).
+**`EtaDecalage.etaFetaG_eq_etaFG_cochainComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Composition.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Composition.lean#L295).
 
 > For a cochain complex `M^•` of `A`-modules, the cochain complexes `η_f (η_g M^•)` and
 > `η_{fg} M^•` in `CochainComplex (ModuleCat A) ℤ` are equal.
@@ -349,7 +352,7 @@ theorem etaFetaG_eq_etaFG_cochainComplex (hdd : ∀ i, (d (i + 1)).comp (d i) = 
 
 [Tag 0GSR](https://stacks.math.columbia.edu/tag/0GSR) in the Stacks Project.
 
-**`Stacks.Eta.BaseChange.algebraMap_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/BaseChange.lean#L168). The attribute's comment: “g is a nonzerodivisor”.
+**`Stacks.Eta.BaseChange.algebraMap_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/BaseChange.lean#L168). The attribute's comment: “g is a nonzerodivisor”.
 
 > **Statement 1.** If `f` is a nonzerodivisor in `A` and `A → B` is flat, then its image
 > `g = algebraMap A B f` is a nonzerodivisor in `B`.
@@ -359,7 +362,7 @@ theorem algebraMap_mem_nonZeroDivisors (f : A) [Module.Flat A B] (hf : f ∈ non
     (algebraMap A B f) ∈ nonZeroDivisors B
 ```
 
-**`Stacks.Eta.BaseChange.isSMulRegular_baseChange_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/BaseChange.lean#L176). The attribute's comment: “the base change is g-torsion free”.
+**`Stacks.Eta.BaseChange.isSMulRegular_baseChange_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/BaseChange.lean#L176). The attribute's comment: “the base change is g-torsion free”.
 
 > **Statement 2.** For `A → B` flat and `M^•` a complex of `f`-torsion free `A`-modules, each
 > base-changed term `M^i ⊗_A B` is `g`-torsion free, where `g = algebraMap A B f`.
@@ -370,7 +373,7 @@ theorem isSMulRegular_baseChange_X (f : A) [Module.Flat A B] (M : CochainComplex
     IsSMulRegular (B ⊗[A] (M.X i : Type _)) (algebraMap A B f)
 ```
 
-**`Stacks.Eta.BaseChange.etaBaseChangeTerm_eq_fetaTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/BaseChange.lean#L706). The attribute's comment: “eta commutes with the base change”.
+**`Stacks.Eta.BaseChange.etaBaseChangeTerm_eq_fetaTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/BaseChange.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/BaseChange.lean#L705). The attribute's comment: “eta commutes with the base change”.
 
 > **Statement 3.** With the identification of Definition 4,
 > `η_f M^• ⊗_A B = η_g (M^• ⊗_A B)` as complexes of `g`-torsion free `B`-modules.
@@ -398,7 +401,7 @@ theorem etaBaseChangeTerm_eq_fetaTerm (f : A) [Module.Flat A B] (M : CochainComp
             1)
 ```
 
-**`Stacks.Eta.GoodBaseChange.isIso_etaBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChangeFlat.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/GoodBaseChangeFlat.lean#L122). The attribute's comment: “the comparison `B ⊗_A (η_f K) ⟶ η_g (B ⊗_A K)` is an isomorphism of complexes, for a flat ring map and an arbitrary cochain complex”.
+**`Stacks.Eta.GoodBaseChange.isIso_etaBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChangeFlat.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/GoodBaseChangeFlat.lean#L122). The attribute's comment: “the comparison `B ⊗_A (η_f K) ⟶ η_g (B ⊗_A K)` is an isomorphism of complexes, for a flat ring map and an arbitrary cochain complex”.
 
 > **More on Algebra, Tag 0GSR as an isomorphism of complexes.**  Let `A → B` be a flat map of
 > commutative rings, let `f ∈ A` with image `g = algebraMap A B f`, and let `K` be a cochain
@@ -426,4 +429,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.97, Tag 0F7N](https://stacks.math.columbia.edu/tag/0F7N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Junta approximation of monotone Boolean functions
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html).
 
 ## The Servedio–Tan–Verbin conjecture
 
@@ -22,7 +22,7 @@ $x \in \{0,1\}^n$.
 The junta size $(\deg f + 2)^C$ expresses a polynomial bound in $\deg f$: every polynomial in
 $d \ge 0$ is at most $(d + 2)^C$ for some $C$.
 
-Formalized by `MathlibExt.Combinatorics.MonotoneJuntaApproximationAMR127Problem0022Wanted.servedioTanVerbinConjecture`, a definition declared in [WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html#servedio-tan-verbin-conjecture).
+Formalized by `MathlibExt.Combinatorics.MonotoneJuntaApproximationAMR127Problem0022Wanted.servedioTanVerbinConjecture`, a definition declared in [WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html#servedio-tan-verbin-conjecture).
 
 ## The Servedio–Tan–Verbin conjecture is false
 
@@ -44,7 +44,7 @@ conjecture as resolved in the negative by Kane.
 
 - R. O'Donnell, Open Problems in Analysis of Boolean Functions (2012), arXiv:1204.6447, Problem 24 (Servedio–Tan–Verbin Conjecture); resolution: D. M. Kane, A low-depth monotone function that is not an approximate junta, arXiv:1206.6541 (2012); recorded as "RESOLVED (in the negative) by Daniel Kane, 2012" in O'Donnell's list, Problem 24, Kane, Theorem 2: there is a constant ε > 0 such that for every d there are k = exp(Ω(√d)) and a monotone f : {0,1}ⁿ → {0,1} computed by a depth-d decision tree (so deg f ≤ d) that disagrees with every k-junta on at least an ε-fraction of inputs, https://arxiv.org/abs/1206.6541.
 
-Stated but not proved: `MathlibExt.Combinatorics.MonotoneJuntaApproximationAMR127Problem0022Wanted.servedioTanVerbinConjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html#servedio-tan-verbin-conjecture-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.MonotoneJuntaApproximationAMR127Problem0022Wanted.servedioTanVerbinConjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonotoneJuntaApproximationAMR127Problem0022Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html#servedio-tan-verbin-conjecture-refuted).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Junta approximation of monotone Boolean functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/boolean-functions/junta-approximation-of-monotone-boolean-function)

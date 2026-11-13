@@ -8,7 +8,7 @@ proof: formalized
 
 # 37.41 Étale localization of quasi-finite morphisms
 
-Section 37.41 of the Stacks Project, [Tag 04HF](https://stacks.math.columbia.edu/tag/04HF). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.41 of the Stacks Project, [Tag 04HF](https://stacks.math.columbia.edu/tag/04HF). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02LJ, an equation
 
@@ -16,13 +16,13 @@ Section 37.41 of the Stacks Project, [Tag 04HF](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsPullback.of_hasPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback.of_hasPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L69) (StacksFrontier): “the cartesian square X\_U = U ×\_S X of the basic diagram”.
+- [`CategoryTheory.IsPullback.of_hasPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback.of_hasPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch37.lean#L69) (StacksFrontier): “the cartesian square X\_U = U ×\_S X of the basic diagram”.
 
 ## Tag 02LK, a lemma
 
 [Tag 02LK](https://stacks.math.columbia.edu/tag/02LK) in the Stacks Project.
 
-**`Stacks.Flatness.exists_etaleNeighborhood_finiteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean#L392). The attribute's comment: “existence”. References: EGA IV (18.12.1).
+**`Stacks.Flatness.exists_etaleNeighborhood_finiteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean#L392). The attribute's comment: “existence”. References: EGA IV (18.12.1).
 
 > A locally finite type morphism becomes finite near a point isolated in its fibre after an
 > elementary étale base change.
@@ -33,7 +33,7 @@ theorem exists_etaleNeighborhood_finiteAt {X S : Scheme.{u}} (f : X ⟶ S)
     Nonempty (FiniteNeighborhoodAt f x)
 ```
 
-**`Stacks.Flatness.isFiniteNeighborhoodAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean#L578). The attribute's comment: “elementary étale refinement”.
+**`Stacks.Flatness.isFiniteNeighborhoodAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FiniteNeighborhood.lean#L578). The attribute's comment: “elementary étale refinement”.
 
 > The pullback of a finite neighbourhood along any further elementary étale neighbourhood is
 > again a finite neighbourhood: finite over the new base, with a unique distinguished-fibre point
@@ -57,7 +57,7 @@ theorem isFiniteNeighborhoodAt_baseChange {X S : Scheme.{u}} (f : X ⟶ S) (x : 
 
 [Tag 02LL](https://stacks.math.columbia.edu/tag/02LL) in the Stacks Project.
 
-**`Stacks.Flatness.exists_etaleNeighborhood_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean#L147).
+**`Stacks.Flatness.exists_etaleNeighborhood_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean#L147).
 
 > **Stacks Project, Tag 02LL.** Several isolated points of one fibre can simultaneously be
 > made finite over a single elementary étale neighbourhood of the base point.
@@ -76,7 +76,7 @@ theorem exists_etaleNeighborhood_finite_opens_of_isolated_fiber_points
       (∀ i, IsIso (((V i).ι ≫ pullback.fst f U.toBase).residueFieldMap (v i)))
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/FiniteNeighborhood.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/FiniteNeighborhood.lean#L297).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/FiniteNeighborhood.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/FiniteNeighborhood.lean#L297).
 
 > **Stacks Project, Tag 02LL.** Several isolated points in one fibre can
 > simultaneously be made finite over an elementary étale neighborhood.
@@ -98,7 +98,7 @@ public theorem exists_elementaryEtaleNeighborhood_finite_opens_of_isolated_fiber
 
 [Tag 02LM](https://stacks.math.columbia.edu/tag/02LM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/QuasiFiniteEtaleLocalisation.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/QuasiFiniteEtaleLocalisation.lean#L318). References: EGA IV (18.12.1), “more general”.
+**`AlgebraicGeometry.exists_etale_finite_opens_of_isolated_fiber_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/QuasiFiniteEtaleLocalisation.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/QuasiFiniteEtaleLocalisation.lean#L317). References: EGA IV (18.12.1), “more general”.
 
 > **Stacks Project, Tag 02LM.** Finitely many distinct isolated points of a fibre of a morphism
 > locally of finite type have, after a single étale base change, finite open neighbourhoods meeting
@@ -136,7 +136,7 @@ theorem exists_etale_finite_opens_of_isolated_fiber_points
 
 [Tag 02LN](https://stacks.math.columbia.edu/tag/02LN) in the Stacks Project.
 
-**`Stacks.Flatness.exists_etaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean#L329). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “more general”.
+**`Stacks.Flatness.exists_etaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/IsolatedPointsDecomposition.lean#L329). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “more general”.
 
 > **Stacks Project, Tag 02LN.** Finitely many distinct isolated points of a fibre of a
 > separated morphism locally of finite type split into separate finite open-and-closed pieces
@@ -165,7 +165,7 @@ theorem exists_etaleNeighborhood_decomposition
           ∀ i, (j none ≫ pullback.fst f U.toBase) y ≠ x i)
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean#L239). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “more general”.
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean#L239). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “more general”.
 
 > **Stacks Project, Tag 02LN.** Finitely many distinct isolated points of a
 > fibre of a separated morphism locally of finite type split into separate finite
@@ -198,7 +198,7 @@ public theorem exists_elementaryEtaleNeighborhood_decomposition
 
 [Tag 02LO](https://stacks.math.columbia.edu/tag/02LO) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_purelyInseparable_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/PurelyInseparableDecomposition.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/PurelyInseparableDecomposition.lean#L65). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “partial”.
+**`AlgebraicGeometry.exists_etaleNeighborhood_purelyInseparable_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/PurelyInseparableDecomposition.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/PurelyInseparableDecomposition.lean#L65). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3), “partial”.
 
 > **Stacks Project, Tag 02LO.** Finitely many pairwise distinct isolated points of a fibre of
 > a separated morphism locally of finite type split into finite open-and-closed pieces after an
@@ -235,7 +235,7 @@ public theorem exists_etaleNeighborhood_purelyInseparable_decomposition
 
 [Tag 02LP](https://stacks.math.columbia.edu/tag/02LP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_isCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean#L461). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_isCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleLocalizationQuasiFinite/Decomposition.lean#L461). References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3).
 
 > **Stacks Project, Tag 02LP.** After an elementary étale base change, the isolated
 > part of a fibre of a separated morphism locally of finite type splits off as a finite
@@ -257,7 +257,7 @@ public theorem exists_elementaryEtaleNeighborhood_isCompl
           IsEmpty ((W.ι ≫ pullback.snd f U.toBase).fiber U.point))
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtale_isCompl_not_quasiFiniteAt_of_finite_isolatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean#L251). The attribute's comment: “the main assertion: `V ⟶ U` is finite and `W_u` has no isolated point”. References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3).
+**`AlgebraicGeometry.exists_elementaryEtale_isCompl_not_quasiFiniteAt_of_finite_isolatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean#L251). The attribute's comment: “the main assertion: `V ⟶ U` is finite and `W_u` has no isolated point”. References: EGA IV (18.12.1), “separated case”; EGA IV (18.12.3).
 
 > **Stacks Project, Tag 02LP**, the main assertion. Let `f : X ⟶ S` be separated and locally of
 > finite type and let `s : S` be such that the fibre `X_s` has only finitely many isolated points,
@@ -279,7 +279,7 @@ theorem exists_elementaryEtale_isCompl_not_quasiFiniteAt_of_finite_isolatedPoint
           ¬ (pullback.snd f g).QuasiFiniteAt (W.ι.base w)
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtale_isCompl_isEmpty_fiber_of_finite_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean#L296). The attribute's comment: “the final assertion: `W_u = ∅` when the fibre over `s` is finite”. References: EGA IV (18.12.1), “separated, finite fibre”; EGA IV (18.12.3).
+**`AlgebraicGeometry.exists_elementaryEtale_isCompl_isEmpty_fiber_of_finite_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/SplitFiniteFibre.lean#L296). The attribute's comment: “the final assertion: `W_u = ∅` when the fibre over `s` is finite”. References: EGA IV (18.12.1), “separated, finite fibre”; EGA IV (18.12.3).
 
 > **Stacks Project, Tag 02LP**, the final assertion. Let `f : X ⟶ S` be separated and locally of
 > finite type with finite fibre over `s : S`. Then there is an elementary étale neighbourhood
@@ -304,4 +304,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.41, Tag 04HF](https://stacks.math.columbia.edu/tag/04HF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

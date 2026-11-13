@@ -8,14 +8,14 @@ proof: formalized
 
 # Catalan's constant
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html).
 
 ## Catalan's constant
 
 Catalan's constant is the real number
 $G = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$.
 
-Formalized by `Real.catalanConstant`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant).
+Formalized by `Real.catalanConstant`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant).
 
 ## The series for Catalan's constant converges absolutely
 
@@ -23,14 +23,14 @@ The series
 $\sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$ converges absolutely: its terms are bounded in
 absolute value by $\frac{1}{(n+1)^2}$, and $\sum_{n=0}^{\infty} \frac{1}{(n+1)^2}$ converges.
 
-Formalized by `Real.summable_catalanConstant_terms`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#summable-catalan-constant-terms).
+Formalized by `Real.summable_catalanConstant_terms`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#summable-catalan-constant-terms).
 
 ## Catalan's constant as a series
 
 Catalan's constant $G$ equals
 $\sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$.
 
-Formalized by `Real.catalanConstant_eq_tsum`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant-eq-tsum).
+Formalized by `Real.catalanConstant_eq_tsum`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant-eq-tsum).
 
 ## The series for Catalan's constant converges to it
 
@@ -38,7 +38,7 @@ The series
 $\sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$ converges unconditionally, and its sum is Catalan's
 constant $G$.
 
-Formalized by `Real.hasSum_catalanConstant`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#has-sum-catalan-constant).
+Formalized by `Real.hasSum_catalanConstant`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/CatalanConstant.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#has-sum-catalan-constant).
 
 ## Infinite products for exponentials of Catalan's constant
 
@@ -73,7 +73,7 @@ followed by the arctangent power series, evaluate it in terms of $G$.
 
 - Yasuyuki Kachi and Pavlos Tzermias, "Infinite Products Involving ζ(3) and Catalan's Constant," Journal of Integer Sequences 15 (2012), Article 12.9.4, Proposition, equations, lines 147–165, https://cs.uwaterloo.ca/journals/JIS/VOL15/Tzermias/tzermias2.tex
 
-Formalized by `MetaMathlibExt.catalan_constant_product_formulas`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstantProducts.lean, line 1544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/CatalanConstantProducts.lean#L1544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant-product-formulas).
+Formalized by `MetaMathlibExt.catalan_constant_product_formulas`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/CatalanConstantProducts.lean, line 1544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/CatalanConstantProducts.lean#L1544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html#catalan-constant-product-formulas).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Catalan's constant](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/series-for-constants/catalan-s-constant)

@@ -18,7 +18,7 @@ statement: formalized
 > Here $nK = K + \cdots + K$ ($n$ times) is the $n$-fold sumset of $K$, written `n • K` for `n : ℕ`
 > with `open scoped Pointwise`.
 
-*Quoted from [FormalConjectures/GreensOpenProblems/54.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/54.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/54.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/54.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -41,7 +41,7 @@ theorem green_54 :
     (0.01 : ℝ≥0∞) ≤ gaussianMeasureInf C
 ```
 
-Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/GreensOpenProblems/54.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/54.lean#L57).
+Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/GreensOpenProblems/54.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/54.lean#L57).
 
 ## `Green54.green_54_known_case`
 
@@ -55,7 +55,7 @@ theorem green_54_known_case : ¬ (∀ K : Set (ℕ → ℝ), IsCompact K → Bal
     (0.01 : ℝ≥0∞) ≤ gaussianMeasureInf C)
 ```
 
-Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/GreensOpenProblems/54.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/54.lean#L67).
+Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/GreensOpenProblems/54.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/54.lean#L67).
 
 ## Depends on
 
@@ -63,5 +63,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/54.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/54.lean)
+- [FormalConjectures/GreensOpenProblems/54.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/54.lean)
 - [Ben Green's Open Problem 54](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.54)

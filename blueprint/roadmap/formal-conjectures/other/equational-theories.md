@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [Equational Theories project site](https://teorth.github.io/equational_theories/implications/?677&finite)
 
-*Quoted from [FormalConjectures/Other/EquationalTheories_677_255.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/EquationalTheories_677_255.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved.
 
@@ -24,7 +24,7 @@ theorem Equation255_not_implies_Equation677 :
     ∃ (G : Type) (_ : Magma G), Equation255 G ∧ ¬ Equation677 G
 ```
 
-Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 41](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean#L41).
+Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 41](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean#L41).
 
 ## `EquationalTheories_677_255.Equation677_not_implies_Equation255`
 
@@ -37,7 +37,7 @@ theorem Equation677_not_implies_Equation255 :
     ∃ (G : Type) (_ : Magma G), Equation677 G ∧ ¬ Equation255 G
 ```
 
-Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean#L48).
+Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean#L48).
 
 ## `EquationalTheories_677_255.Finite.Equation255_not_implies_Equation677`
 
@@ -50,7 +50,7 @@ theorem Finite.Equation255_not_implies_Equation677 :
     ∃ (G : Type) (_ : Magma G), Finite G ∧ Equation255 G ∧ ¬ Equation677 G
 ```
 
-Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean#L54).
+Category `research solved`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean#L54).
 
 ## `EquationalTheories_677_255.Finite.Equation677_implies_Equation255`
 
@@ -69,7 +69,7 @@ theorem Finite.Equation677_implies_Equation255 :
     ∀ (G : Type) (_ : Magma G), Finite G → Equation677 G → Equation255 G
 ```
 
-Category `research open`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean#L67).
+Category `research open`; AMS [08 General algebraic systems](../by-subject/part-01/08-general-algebraic-systems/README.md). Declared in [FormalConjectures/Other/EquationalTheories_677_255.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean#L67).
 
 ## Depends on
 
@@ -77,5 +77,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/EquationalTheories_677_255.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/EquationalTheories_677_255.lean)
+- [FormalConjectures/Other/EquationalTheories_677_255.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/EquationalTheories_677_255.lean)
 - [Equational Theories project site](https://teorth.github.io/equational_theories/implications/?677&finite)

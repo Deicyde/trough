@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.8 Rings
 
-Section 93.8 of the Stacks Project, [Tag 0DY0](https://stacks.math.columbia.edu/tag/0DY0). 11 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 93.8 of the Stacks Project, [Tag 0DY0](https://stacks.math.columbia.edu/tag/0DY0). 11 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DY1, an example
 
 [Tag 0DY1](https://stacks.math.columbia.edu/tag/0DY1) in the Stacks Project.
 
-**`Deformation.Examples.ringDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L182). The attribute's comment: “ring\_deformation\_category”.
+**`Deformation.Examples.ringDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L182). The attribute's comment: “ring\_deformation\_category”.
 
 > The category of deformations of the `k`-algebra `P`: flat algebras over Artinian local
 > bases equipped with a base-change map to `(k, P)`.
@@ -23,7 +23,7 @@ Section 93.8 of the Stacks Project, [Tag 0DY0](https://stacks.math.columbia.edu/
 abbrev ringDeformationCategory (P : Type w) [CommRing P] [Algebra k P]
 ```
 
-**`Deformation.Examples.flatAlgebraCategory_projection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L189). The attribute's comment: “flat\_algebra\_category\_cofibered”.
+**`Deformation.Examples.flatAlgebraCategory_projection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L189). The attribute's comment: “flat\_algebra\_category\_cofibered”.
 
 > Base change makes the projection from flat algebras to their Artinian bases cofibered in
 > groupoids.
@@ -36,17 +36,17 @@ theorem flatAlgebraCategory_projection_isCofiberedInGroupoids
 
 Declarations registered for the tag:
 
-- [`FlatAlgebraCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L271) (StacksFrontier): “flat\_algebra\_category”.
-- [`FlatAlgebraCategory.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L272) (StacksFrontier): “flat\_algebra\_category”.
-- [`FlatAlgebraCategory.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L273) (StacksFrontier): “flat\_algebra\_category”.
-- [`FlatAlgebraCategory.projection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.projection#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L274) (StacksFrontier): “flat\_algebra\_category”.
-- [`residueFieldAlgebra`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/SemiLocal.lean#L47), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L275) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L271) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L272) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L273) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.projection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.projection#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L274) (StacksFrontier): “flat\_algebra\_category”.
+- [`residueFieldAlgebra`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/SemiLocal.lean#L47), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L275) (StacksFrontier): “flat\_algebra\_category”.
 
 ## Tag 0DY2, a lemma
 
 [Tag 0DY2](https://stacks.math.columbia.edu/tag/0DY2) in the Stacks Project.
 
-**`Deformation.Examples.flatAlgebraCategory_projection_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean#L348). The attribute's comment: “Rim–Schlessinger condition”.
+**`Deformation.Examples.flatAlgebraCategory_projection_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean#L348). The attribute's comment: “Rim–Schlessinger condition”.
 
 > Flat algebras over Artinian local bases satisfy the Rim–Schlessinger condition.
 
@@ -56,7 +56,7 @@ theorem flatAlgebraCategory_projection_satisfiesRS
     SatisfiesRS (FlatAlgebraCategory.projection (Λ := Λ) (k := k))
 ```
 
-**`Deformation.Examples.ringDeformationCategory_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean#L357). The attribute's comment: “deformation category”.
+**`Deformation.Examples.ringDeformationCategory_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RimSchlessinger/FibreProduct/Deformations.lean#L357). The attribute's comment: “deformation category”.
 
 > Deformations of any `k`-algebra form a deformation category.
 
@@ -73,7 +73,7 @@ theorem ringDeformationCategory_isDeformationCategory
 
 [Tag 0DY3](https://stacks.math.columbia.edu/tag/0DY3) in the Stacks Project.
 
-**`Deformation.Examples.exists_infinitesimalAutomorphismGroupMulEquivDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsInfinitesimalAutomorphisms.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsInfinitesimalAutomorphisms.lean#L399). The attribute's comment: “infinitesimal automorphisms”. References: SGA 1 III (6.1), “special case”; SGA 3 VIIA (1.5), “partial”.
+**`Deformation.Examples.exists_infinitesimalAutomorphismGroupMulEquivDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsInfinitesimalAutomorphisms.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsInfinitesimalAutomorphisms.lean#L399). The attribute's comment: “infinitesimal automorphisms”. References: SGA 1 III (6.1), “special case”; SGA 3 VIIA (1.5), “partial”.
 
 > **Stacks 0DY3.** The infinitesimal automorphisms of the deformation category of a
 > commutative `k`-algebra `P` are the `k`-derivations of `P` into itself.
@@ -115,7 +115,7 @@ public theorem exists_infinitesimalAutomorphismGroupMulEquivDerivation
                       (c.symm (TrivSqZeroExt.inl y)))).snd)
 ```
 
-**`Deformation.Examples.ringDeformationTangentSpaceLinearEquivExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean#L285). The attribute's comment: “the tangent space”. References: SGA 7 VI (4.16), “(b), special case”.
+**`Deformation.Examples.ringDeformationTangentSpaceLinearEquivExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean#L285). The attribute's comment: “the tangent space”. References: SGA 7 VI (4.16), “(b), special case”.
 
 > **Stacks 0DY3, the tangent space.** Let `k` be a field and `P` a `k`-algebra. The tangent
 > space of the deformation category of `P` of Stacks 0DY1, with the canonical `k`-vector-space
@@ -141,7 +141,7 @@ public theorem exists_infinitesimalAutomorphismGroupMulEquivDerivation
 public def ringDeformationTangentSpaceLinearEquivExtOne :
     letI : Fact (IsPredeformationCategory (ringDeformationBasedCategory Λ k P).p) :=
       ⟨(ringDeformationCategory_isDeformationCategory P).predeformation⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π
       (isomorphismClasses (ringDeformationBasedCategory Λ k P)
         isCofiberedInGroupoids_ringDeformationProjection))) :=
       ⟨schlessingerConditionS2_ringDeformation Λ k P⟩
@@ -151,7 +151,7 @@ public def ringDeformationTangentSpaceLinearEquivExtOne :
       ≃ₗ[k] naiveCotangentExtOne k P P
 ```
 
-**`Deformation.Examples.ringDeformationTangentSpaceLinearEquivExtOne_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean#L319). The attribute's comment: “the tangent space”.
+**`Deformation.Examples.ringDeformationTangentSpaceLinearEquivExtOne_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceEquivTangent.lean#L319). The attribute's comment: “the tangent space”.
 
 > **The identification of Stacks 0DY3 is the classification of Stacks 0GPT.** On the
 > isomorphism class of a point of the fibre over the square-zero extension `k ⊕ k` of
@@ -167,7 +167,7 @@ public theorem ringDeformationTangentSpaceLinearEquivExtOne_apply
       isCofiberedInGroupoids_ringDeformationProjection).obj (FGModuleCat.of k k)) :
     letI : Fact (IsPredeformationCategory (ringDeformationBasedCategory Λ k P).p) :=
       ⟨(ringDeformationCategory_isDeformationCategory P).predeformation⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π
       (isomorphismClasses (ringDeformationBasedCategory Λ k P)
         isCofiberedInGroupoids_ringDeformationProjection))) :=
       ⟨schlessingerConditionS2_ringDeformation Λ k P⟩
@@ -180,7 +180,7 @@ public theorem ringDeformationTangentSpaceLinearEquivExtOne_apply
 
 [Tag 0DZL](https://stacks.math.columbia.edu/tag/0DZL) in the Stacks Project.
 
-**`Deformation.Examples.existsUnique_ringDeformationClass_artinianDualNumbers_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/RingsSmooth.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/RingsSmooth.lean#L701).
+**`Deformation.Examples.existsUnique_ringDeformationClass_artinianDualNumbers_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/RingsSmooth.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/RingsSmooth.lean#L701).
 
 > **Stacks 0DZL.** For a smooth algebra `P` over a field `k`, the tangent space of the
 > deformation category of `P` is zero: the flat deformations of `P` over the dual numbers
@@ -200,7 +200,7 @@ public theorem existsUnique_ringDeformationClass_artinianDualNumbers_of_smooth
 
 [Tag 0DY4](https://stacks.math.columbia.edu/tag/0DY4) in the Stacks Project.
 
-**`Deformation.Examples.finiteDimensional_naiveCotangentExtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceFinite.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceFinite.lean#L524). The attribute's comment: “part (2) for the Ext group”. References: SGA 7 VI (4.14), “more general”.
+**`Deformation.Examples.finiteDimensional_naiveCotangentExtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceFinite.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsTangentSpaceFinite.lean#L524). The attribute's comment: “part (2) for the Ext group”. References: SGA 7 VI (4.14), “more general”.
 
 > **Stacks 0DY4(2)** for the Ext module. Let `k` be a field and `P` a `k`-algebra of finite
 > type which is smooth over `k` outside a finite set of primes. Then the first Ext module
@@ -218,7 +218,7 @@ theorem finiteDimensional_naiveCotangentExtOne (k P : Type w) [Field k] [CommRin
     FiniteDimensional k (Stacks.Deformation.naiveCotangentExtOne k P P)
 ```
 
-**`Algebra.finiteDimensional_derivation_iff_ringKrullDim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Derivation/FiniteDimensional.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Derivation/FiniteDimensional.lean#L250). The attribute's comment: “part (1)”.
+**`Algebra.finiteDimensional_derivation_iff_ringKrullDim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Derivation/FiniteDimensional.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Derivation/FiniteDimensional.lean#L250). The attribute's comment: “part (1)”.
 
 > **Stacks 0DY4(1).** For a `k`-algebra `P` of finite type over a field, the `k`-derivations
 > of `P` into itself are a finite-dimensional `k`-vector space if and only if `P` has Krull
@@ -236,7 +236,7 @@ theorem finiteDimensional_derivation_iff_ringKrullDim_le_zero
 
 [Tag 0ET4](https://stacks.math.columbia.edu/tag/0ET4) in the Stacks Project.
 
-**`Deformation.Examples.exists_hull_isomorphismClasses_ringDeformation_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHull.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsHull.lean#L172).
+**`Deformation.Examples.exists_hull_isomorphismClasses_ringDeformation_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHull.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsHull.lean#L172).
 
 > Let `Λ → k` be a classical base, let `P` be a `k`-algebra of finite type, and suppose
 > `Spec(P) → Spec(k)` is smooth except at a finite number of points. Then the functor of fibrewise
@@ -248,7 +248,7 @@ public theorem exists_hull_isomorphismClasses_ringDeformation_of_finiteType
     [Algebra.FiniteType k P]
     (hsmooth : {q : PrimeSpectrum P | ¬ Algebra.IsSmoothAt k q.asIdeal}.Finite)
     (hΛ : IsClassical Λ k) :
-    ∃ ξ : FormalObject (CategoryOfElements.π (Deformation.isomorphismClasses
+    ∃ ξ : FormalObject (Functor.Elements.π (Deformation.isomorphismClasses
         (BasedCategory.ofFunctor (ringDeformationProjection Λ k P))
         (isPredeformationCategory_ringDeformationProjection (Λ := Λ) (k := k) P).cofibered)),
       IsVersal (categoryOfElements_projection_isCofibered (Deformation.isomorphismClasses
@@ -267,7 +267,7 @@ public theorem exists_hull_isomorphismClasses_ringDeformation_of_finiteType
 
 [Tag 0DYS](https://stacks.math.columbia.edu/tag/0DYS) in the Stacks Project.
 
-**`Deformation.Examples.localizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Localization.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Localization.lean#L446).
+**`Deformation.Examples.localizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Localization.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Localization.lean#L446).
 
 > Localization at `S` gives a natural functor from deformations of `P` to deformations of
 > `S⁻¹P`, with the canonical localization map on every flat algebra.
@@ -281,7 +281,7 @@ noncomputable def localizationFunctor (S : Submonoid P) :
 
 [Tag 0DYT](https://stacks.math.columbia.edu/tag/0DYT) in the Stacks Project.
 
-**`Deformation.Examples.henselizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Henselization.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Henselization.lean#L527).
+**`Deformation.Examples.henselizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Henselization.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Henselization.lean#L527).
 
 > **Stacks 0DYT.** For a `k`-algebra `P` and an ideal `J ⊆ P`, henselization along the
 > inverse image of `J` is a functor from the deformation category of `P` to that of the
@@ -296,7 +296,7 @@ noncomputable def henselizationFunctor :
 
 [Tag 0DYU](https://stacks.math.columbia.edu/tag/0DYU) in the Stacks Project.
 
-**`Deformation.Examples.strictHenselizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/StrictHenselization/Functor.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/StrictHenselization/Functor.lean#L780).
+**`Deformation.Examples.strictHenselizationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/StrictHenselization/Functor.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/StrictHenselization/Functor.lean#L779).
 
 > **Stacks 0DYU.** Let `P` be a local `k`-algebra and let `Pˢʰ` be a strict henselization of
 > `P` with respect to a separable algebraic closure of its residue field. There is a natural
@@ -313,7 +313,7 @@ noncomputable def strictHenselizationFunctor
 
 [Tag 0DYV](https://stacks.math.columbia.edu/tag/0DYV) in the Stacks Project.
 
-**`Deformation.Examples.adicCompletionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Completion.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Completion.lean#L1069).
+**`Deformation.Examples.adicCompletionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Completion.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Completion.lean#L1069).
 
 > **The completion functor on deformations, Stacks 0DYV.** Completion at the inverse image of
 > `J` is a functor over `𝒞_Λ` together with the identification of its fibres with the adic
@@ -329,7 +329,7 @@ public noncomputable def adicCompletionFunctor [IsNoetherianRing P] :
 
 [Tag 0DY5](https://stacks.math.columbia.edu/tag/0DY5) in the Stacks Project.
 
-**`Deformation.Examples.hypersurface_finiteDimensional_infinitesimalAutomorphisms_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHypersurface.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsHypersurface.lean#L67). The attribute's comment: “part (1)”.
+**`Deformation.Examples.hypersurface_finiteDimensional_infinitesimalAutomorphisms_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHypersurface.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsHypersurface.lean#L67). The attribute's comment: “part (1)”.
 
 > **Stacks 0DY5(1).** Let `k` be a field, `n` a number of variables and `f` a nonzero formal
 > power series in `k[[x_1, …, x_n]]` lying in the square of the ideal generated by the variables,
@@ -365,7 +365,7 @@ public theorem hypersurface_finiteDimensional_infinitesimalAutomorphisms_iff
           (FiniteDimensional k G ↔ n = 1)
 ```
 
-**`Deformation.Examples.hypersurface_finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHypersurfaceTangentSpaceFinite.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/RingsHypersurfaceTangentSpaceFinite.lean#L326). The attribute's comment: “part (2)”.
+**`Deformation.Examples.hypersurface_finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/RingsHypersurfaceTangentSpaceFinite.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/RingsHypersurfaceTangentSpaceFinite.lean#L329). The attribute's comment: “part (2)”.
 
 > **Stacks 0DY5(2).** Let `k` be a field, `f` a nonzero formal power series in
 > `k[[x_1, …, x_n]]` lying in the square of the ideal generated by the variables, and
@@ -377,20 +377,19 @@ public theorem hypersurface_finiteDimensional_infinitesimalAutomorphisms_iff
 > The tangent space is `Ext¹_P(NL_{P/k}, P)` by the tangent-space clause of Stacks 0DY3, that
 > group is the conormal cokernel of the canonical presentation of `P` by Stacks 0GPU, and the
 > cokernel is finite dimensional by
-> `Deformation.Examples.finiteDimensional_conormalCokernel_hypersurface`.
+> `Deformation.Examples.finiteDimensional_conormalCokernel_hypersurface`. The source's
+> hypotheses that `f` is nonzero and lies in the square of the ideal of the variables are not
+> used, so the statement omits them.
 
 ```lean
 theorem hypersurface_finiteDimensional_tangentSpace {Λ : Type u} [CommRing Λ] [Algebra Λ k]
-    (hf : f ≠ 0)
-    (hord : f ∈ (Ideal.span (Set.range
-      (MvPowerSeries.X : Fin n → MvPowerSeries (Fin n) k))) ^ 2)
     (hjac : (Ideal.span ({f} ∪ Set.range
       (fun i : Fin n ↦ MvPowerSeries.pderiv (R := k) i f))).radical =
       Ideal.span (Set.range (MvPowerSeries.X : Fin n → MvPowerSeries (Fin n) k))) :
     letI : Fact (IsPredeformationCategory
         (ringDeformationBasedCategory Λ k (Hypersurface n f)).p) :=
       ⟨(ringDeformationCategory_isDeformationCategory (Hypersurface n f)).predeformation⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π
       (isomorphismClasses (ringDeformationBasedCategory Λ k (Hypersurface n f))
         isCofiberedInGroupoids_ringDeformationProjection))) :=
       ⟨schlessingerConditionS2_ringDeformation Λ k (Hypersurface n f)⟩
@@ -406,4 +405,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.8, Tag 0DY0](https://stacks.math.columbia.edu/tag/0DY0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.15 Glueing and squishing
 
-Section 53.15 of the Stacks Project, [Tag 0C1H](https://stacks.math.columbia.edu/tag/0C1H). 6 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.15 of the Stacks Project, [Tag 0C1H](https://stacks.math.columbia.edu/tag/0C1H). 6 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C1I, a lemma
 
 [Tag 0C1I](https://stacks.math.columbia.edu/tag/0C1I) in the Stacks Project.
 
-**`Algebra.algEquiv_prod_or_dualNumber_of_natCard_subalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean#L270).
+**`Algebra.algEquiv_prod_or_dualNumber_of_natCard_subalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean#L270).
 
 > **Stacks Project, Tag 0C1I.** An algebra over an algebraically closed field with exactly
 > two subalgebras is isomorphic, as an algebra, either to the product algebra or to the dual
@@ -27,7 +27,7 @@ theorem algEquiv_prod_or_dualNumber_of_natCard_subalgebra_eq_two
     Nonempty (A ≃ₐ[k] k × k) ∨ Nonempty (A ≃ₐ[k] DualNumber k)
 ```
 
-**`Algebra.algEquiv_prod_or_dualNumber_of_no_intermediateSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean#L285).
+**`Algebra.algEquiv_prod_or_dualNumber_of_no_intermediateSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SubalgebraClassification.lean#L285).
 
 > **Stacks Project, Tag 0C1I.** An algebra over an algebraically closed field with no proper
 > intermediate subalgebra is either the product algebra or the algebra of dual numbers.
@@ -44,7 +44,7 @@ theorem algEquiv_prod_or_dualNumber_of_no_intermediateSubalgebra
 
 [Tag 0C1J](https://stacks.math.columbia.edu/tag/0C1J) in the Stacks Project.
 
-**`AlgebraicGeometry.IsGlueingTwoPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean#L142). The attribute's comment: “glueing\_two\_points”.
+**`AlgebraicGeometry.IsGlueingTwoPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean#L142). The attribute's comment: “glueing\_two\_points”.
 
 > A morphism of algebraic `k`-schemes glues the distinct rational points `a` and `b` if
 > they have the same image, the morphism is finite and is an isomorphism off that image, and
@@ -57,7 +57,7 @@ def IsGlueingTwoPoints {k : Type u} [Field k] [IsAlgClosed k]
     (f : X' ⟶ X) (a b : Spec (.of k) ⟶ X') : Prop
 ```
 
-**`Stacks.GlueSquishUnits.isShortExact_units_of_isGlueingTwoPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingUnitsSequence.lean, line 839](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingUnitsSequence.lean#L839). The attribute's comment: “the units short exact sequence”.
+**`Stacks.GlueSquishUnits.isShortExact_units_of_isGlueingTwoPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingUnitsSequence.lean, line 839](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingUnitsSequence.lean#L839). The attribute's comment: “the units short exact sequence”.
 
 > **The short exact sequence of sheaves of units of a glueing of two rational points.**
 > If `f : X' ⟶ X` glues the distinct rational points `a` and `b` of `X'` to the point
@@ -105,7 +105,7 @@ theorem isShortExact_units_of_isGlueingTwoPoints {k : Type u} [Field k] [IsAlgCl
 
 [Tag 0C1K](https://stacks.math.columbia.edu/tag/0C1K) in the Stacks Project.
 
-**`Stacks.SquishSheafSequence.shortExact_units_of_isSquishingTangentVector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L671). The attribute's comment: “the units short exact sequence”.
+**`Stacks.SquishSheafSequence.shortExact_units_of_isSquishingTangentVector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L671). The attribute's comment: “the units short exact sequence”.
 
 > **The short exact sequence of sheaves of units of the squishing of a tangent vector.**
 > If `f : X' ⟶ X` squishes the tangent vector `ϑ` of `X'` to the rational point `x` of `X`, then
@@ -132,7 +132,7 @@ theorem shortExact_units_of_isSquishingTangentVector {k : Type u} [Field k] [IsA
       (unitsPushforwardMap_comp_epsilonLogDerivSheafHom f θ h)).ShortExact
 ```
 
-**`AlgebraicGeometry.IsSquishingTangentVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean#L77). The attribute's comment: “squishing\_tangent\_vector”.
+**`AlgebraicGeometry.IsSquishingTangentVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean#L77). The attribute's comment: “squishing\_tangent\_vector”.
 
 > A morphism of algebraic `k`-schemes squishes a tangent vector if that vector is a closed
 > immersion which is contracted to a rational point, the morphism is finite and an isomorphism
@@ -145,7 +145,7 @@ def IsSquishingTangentVector {k : Type u} [Field k] [IsAlgClosed k]
     (f : X' ⟶ X) (θ : Spec (.of (DualNumber k)) ⟶ X') : Prop
 ```
 
-**`Stacks.SquishSheafSequence.shortExact_of_isSquishingTangentVector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L185). The attribute's comment: “the short exact sequence of sheaves”.
+**`Stacks.SquishSheafSequence.shortExact_of_isSquishingTangentVector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L185). The attribute's comment: “the short exact sequence of sheaves”.
 
 > **The short exact sequence of sheaves attached to the squishing of a tangent vector.**
 >
@@ -180,7 +180,7 @@ theorem shortExact_of_isSquishingTangentVector {k : Type u} [Field k] [IsAlgClos
 
 [Tag 0C1L](https://stacks.math.columbia.edu/tag/0C1L) in the Stacks Project.
 
-**`Stacks.GlueSquishFactor.algEquiv_prod_or_dualNumber_of_minimal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L351). The attribute's comment: “the local algebra of a minimal step”.
+**`Stacks.GlueSquishFactor.algEquiv_prod_or_dualNumber_of_minimal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L352). The attribute's comment: “the local algebra of a minimal step”.
 
 > **The local algebra of a minimal step of [Stacks, Tag 0C1L].** Let `k` be an algebraically
 > closed field, let `A` be a local `k`-algebra whose residue field is `k` (hypothesis `hres`: every
@@ -208,7 +208,7 @@ theorem algEquiv_prod_or_dualNumber_of_minimal (k : Type u) (A B : Type v) [Fiel
       Nonempty ((B ⧸ (IsLocalRing.maximalIdeal A).map (algebraMap A B)) ≃ₐ[k] DualNumber k)
 ```
 
-**`Stacks.GlueSquishFactor.IsElementaryStep`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L550). The attribute's comment: “the elementary modifications”.
+**`Stacks.GlueSquishFactor.IsElementaryStep`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L551). The attribute's comment: “the elementary modifications”.
 
 > **One step of the factorization of [Stacks, Tag 0C1L]**: a morphism of algebraic
 > `k`-schemes which either glues two rational points ([Stacks, Tag 0C1J]) or squishes a tangent
@@ -219,7 +219,7 @@ def IsElementaryStep {k : Type u} [Field k] [IsAlgClosed k] {Y' Y : Over (Spec (
     (f : Y' ⟶ Y) : Prop
 ```
 
-**`Stacks.GlueSquishFactor.IsElementaryChain`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L570). The attribute's comment: “the factorization, as an inductive predicate”.
+**`Stacks.GlueSquishFactor.IsElementaryChain`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/ElementaryFactorization.lean#L571). The attribute's comment: “the factorization, as an inductive predicate”.
 
 > **The conclusion of [Stacks, Tag 0C1L], as a predicate on one morphism.** `f` is a composite
 > of finitely many elementary modifications and isomorphisms, which is the content of the source's
@@ -231,7 +231,7 @@ inductive IsElementaryChain (k : Type u) [Field k] [IsAlgClosed k] :
     {Y' Y : Over (Spec (.of k))} → (Y' ⟶ Y) → Prop
 ```
 
-**`Stacks.GlueSquishFactor.toIntermediateOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L136). The attribute's comment: “the intermediate factorization attached to a subalgebra”.
+**`Stacks.GlueSquishFactor.toIntermediateOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L136). The attribute's comment: “the intermediate factorization attached to a subalgebra”.
 
 > **The morphism `X' ⟶ Spec_X(A)` over `X` attached to a morphism `ψ : A ⟶ f_* 𝒪_{X'}` of
 > `𝒪_X`-algebras.** It is the morphism corresponding to `ψ` under the universal property of the
@@ -241,7 +241,7 @@ inductive IsElementaryChain (k : Type u) [Field k] [IsAlgClosed k] :
 def toIntermediateOver : Over.mk f ⟶ Over.mk (relativeSpecToBase A)
 ```
 
-**`Stacks.GlueSquishFactor.toIntermediate_comp_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L155). The attribute's comment: “the intermediate factorization attached to a subalgebra”.
+**`Stacks.GlueSquishFactor.toIntermediate_comp_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L155). The attribute's comment: “the intermediate factorization attached to a subalgebra”.
 
 > **The factorization of `f` attached to a morphism `ψ : A ⟶ f_* 𝒪_{X'}`.** The morphism
 > `X' ⟶ Spec_X(A)` of `Stacks.GlueSquishFactor.toIntermediate`, followed by the structure morphism
@@ -252,7 +252,7 @@ theorem toIntermediate_comp_relativeSpecToBase :
     toIntermediate f A ψ ≫ relativeSpecToBase A = f
 ```
 
-**`Stacks.GlueSquishFactor.isoRelativeSpecOfAffine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L226). The attribute's comment: “every affine intermediate factorization comes from a subalgebra”.
+**`Stacks.GlueSquishFactor.isoRelativeSpecOfAffine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L226). The attribute's comment: “every affine intermediate factorization comes from a subalgebra”.
 
 > **A scheme affine over `X` is the relative spectrum of its algebra of functions over `X`.**
 > For `g : Y ⟶ X` affine, the comparison morphism `Y ⟶ Spec_X(g_* 𝒪_Y)` is an isomorphism of
@@ -264,7 +264,7 @@ def isoRelativeSpecOfAffine :
     Over.mk g ≅ Over.mk (relativeSpecToBase (pushforwardAlgebra g))
 ```
 
-**`Stacks.GlueSquishFactor.toIntermediateOver_factorizationAlgebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L245). The attribute's comment: “every affine intermediate factorization comes from a subalgebra”.
+**`Stacks.GlueSquishFactor.toIntermediateOver_factorizationAlgebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/IntermediateFactorization.lean#L245). The attribute's comment: “every affine intermediate factorization comes from a subalgebra”.
 
 > **Every intermediate factorization with affine second half comes from an algebra.** For a
 > factorization `f = u ≫ g` with `g` affine, the comparison isomorphism
@@ -278,7 +278,7 @@ theorem toIntermediateOver_factorizationAlgebraHom :
       (Over.homMk u hu : Over.mk f ⟶ Over.mk g) ≫ toRelativeSpecOfAffine g
 ```
 
-**`Stacks.GlueSquishFactor.exists_split_of_algebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean#L315). The attribute's comment: “the splitting attached to a finite intermediate subalgebra”.
+**`Stacks.GlueSquishFactor.exists_split_of_algebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean#L315). The attribute's comment: “the splitting attached to a finite intermediate subalgebra”.
 
 > **The splitting step of [Stacks, Tag 0C1L].** Let `f : X' ⟶ X` be a finite morphism of
 > schemes over a base `S` with `𝒪_X ⊂ f_*𝒪_{X'}` which is an isomorphism over an open `U` of `X`,
@@ -319,7 +319,7 @@ theorem exists_split_of_algebraHom {S : Scheme.{u}} {W' W : Over S} (f : W' ⟶ 
           s ∈ Set.range (p.left.appLE (q.left ⁻¹ᵁ V) (f.left ⁻¹ᵁ V) hle).hom
 ```
 
-**`Stacks.GlueSquishFactor.exists_split_isAlmostIso_of_algebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean#L364). The attribute's comment: “the splitting, read against the hypotheses of the lemma”.
+**`Stacks.GlueSquishFactor.exists_split_isAlmostIso_of_algebraHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SplittingStep.lean#L364). The attribute's comment: “the splitting, read against the hypotheses of the lemma”.
 
 > **The splitting step of [Stacks, Tag 0C1L], read against the hypotheses of the lemma.** An
 > almost isomorphism of algebraic `k`-schemes and a finite quasi-coherent `𝒪_X`-subalgebra `𝒜` of
@@ -344,7 +344,7 @@ theorem exists_split_isAlmostIso_of_algebraHom {k : Type u} [Field k] [IsAlgClos
           s ∈ Set.range (p.left.appLE (q.left ⁻¹ᵁ V) (f.left ⁻¹ᵁ V) hle).hom
 ```
 
-**`Stacks.GlueSquishFactor.IsAlmostIso.isElementaryChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingProducer.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingProducer.lean#L615).
+**`Stacks.GlueSquishFactor.IsAlmostIso.isElementaryChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingProducer.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingProducer.lean#L615).
 
 > **[Stacks, Tag 0C1L].** A finite morphism of algebraic `k`-schemes which is injective on
 > structure sheaves and an isomorphism away from a finite set of points is a composite of glueings
@@ -359,7 +359,7 @@ theorem IsAlmostIso.isElementaryChain {k : Type u} [Field k] [IsAlgClosed k]
 
 [Tag 0C1M](https://stacks.math.columbia.edu/tag/0C1M) in the Stacks Project.
 
-**`Stacks.GluePicard.surjective_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean#L99). The attribute's comment: “surjectivity”.
+**`Stacks.GluePicard.surjective_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean#L99). The attribute's comment: “surjectivity”.
 
 > **Pullback of invertible modules along the glueing of two rational points is surjective on
 > Picard groups.** The glueing is finite and is an isomorphism away from a single point, so
@@ -373,7 +373,7 @@ theorem surjective_schemePullbackClassHom {k : Type u} [Field k] [IsAlgClosed k]
     Function.Surjective (Stacks.Picard.schemePullbackClassHom f)
 ```
 
-**`Stacks.GluePicard.exists_globalUnit_sectionAt_eq_of_ne_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean#L224). The attribute's comment: “the lifting criterion for vanishing at points on different components”.
+**`Stacks.GluePicard.exists_globalUnit_sectionAt_eq_of_ne_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicard.lean#L224). The attribute's comment: “the lifting criterion for vanishing at points on different components”.
 
 > **The first map of the sequence of Stacks Tag 0C1M is zero when the two glued points lie
 > on different connected components of `X'`**, in the form that the connecting homomorphism
@@ -394,7 +394,7 @@ theorem exists_globalUnit_sectionAt_eq_of_ne_connectedComponents
         AlgebraicGeometry.sectionAt b ⊤ (Opens.mem_top _) (s : Γ(X', ⊤)) = 1
 ```
 
-**`Stacks.GluePicard.schemePullbackClassHom_eq_zero_iff_exists_picardGluingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L154). The attribute's comment: “exactness at Pic(X): the kernel of pullback is the image of k^*”.
+**`Stacks.GluePicard.schemePullbackClassHom_eq_zero_iff_exists_picardGluingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L154). The attribute's comment: “exactness at Pic(X): the kernel of pullback is the image of k^*”.
 
 > **Exactness at `Pic(X)` of the sequence of [Stacks, Tag 0C1M].** For `k` algebraically
 > closed and `f : X' ⟶ X` the glueing of the two rational points `a` and `b` of `X'`, a Picard
@@ -411,7 +411,7 @@ theorem schemePullbackClassHom_eq_zero_iff_exists_picardGluingHom {k : Type u} [
       ∃ c : Additive kˣ, picardGluingHom f a b h c = L
 ```
 
-**`Stacks.GluePicard.exact_picardGluingHom_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L179). The attribute's comment: “exactness at Pic(X): the kernel of pullback is the image of k^*”.
+**`Stacks.GluePicard.exact_picardGluingHom_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L179). The attribute's comment: “exactness at Pic(X): the kernel of pullback is the image of k^*”.
 
 > **Exactness at `Pic(X)` of the sequence of [Stacks, Tag 0C1M]**, in the `Function.Exact`
 > spelling: the kernel of pullback of Picard classes is the range of the gluing homomorphism.
@@ -424,7 +424,7 @@ theorem exact_picardGluingHom_schemePullbackClassHom {k : Type u} [Field k] [IsA
     Function.Exact (picardGluingHom f a b h) (Stacks.Picard.schemePullbackClassHom f)
 ```
 
-**`Stacks.GluePicard.picardGluingHom_eq_zero_of_ne_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L253). The attribute's comment: “the first map is zero if a and b are on different connected components of X'”.
+**`Stacks.GluePicard.picardGluingHom_eq_zero_of_ne_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardExactness.lean#L253). The attribute's comment: “the first map is zero if a and b are on different connected components of X'”.
 
 > **The first map of the sequence of [Stacks, Tag 0C1M] is zero when the two glued points lie
 > on different connected components of `X'`.**
@@ -439,7 +439,7 @@ theorem picardGluingHom_eq_zero_of_ne_connectedComponents {k : Type u} [Field k]
     picardGluingHom f a b h = 0
 ```
 
-**`Stacks.GluePicard.picardGluingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean#L343). The attribute's comment: “the gluing homomorphism”.
+**`Stacks.GluePicard.picardGluingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean#L343). The attribute's comment: “the gluing homomorphism”.
 
 > **Stacks Project, Tag 0C1M.** The gluing homomorphism `k^* ⟶ Pic(X)`.
 
@@ -451,7 +451,7 @@ def picardGluingHom {k : Type u} [Field k] [IsAlgClosed k]
     Additive kˣ →+ Stacks.Picard.ofScheme X
 ```
 
-**`Stacks.GluePicard.injective_picardGluingHom_of_connectedComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean#L559). The attribute's comment: “injectivity if X' is proper and the two points lie on the same connected component”.
+**`Stacks.GluePicard.injective_picardGluingHom_of_connectedComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingPicardSequence.lean#L559). The attribute's comment: “injectivity if X' is proper and the two points lie on the same connected component”.
 
 > **Stacks Project, Tag 0C1M.** The gluing homomorphism is injective when `X'` is proper and
 > the two glued points lie on the same connected component of `X'`: a scalar in its kernel is the
@@ -473,7 +473,7 @@ theorem injective_picardGluingHom_of_connectedComponents_eq
 
 [Tag 0C1N](https://stacks.math.columbia.edu/tag/0C1N) in the Stacks Project.
 
-**`Stacks.SquishPicard.picardPullback_zero_and_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L97). The attribute's comment: “the Picard pullback homomorphism”.
+**`Stacks.SquishPicard.picardPullback_zero_and_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L97). The attribute's comment: “the Picard pullback homomorphism”.
 
 > Pullback of Picard classes is a homomorphism of abelian groups.
 
@@ -486,7 +486,7 @@ theorem picardPullback_zero_and_add {X' X : Scheme.{u}} (f : X' ⟶ X) :
             Stacks.Picard.schemePullbackClassHom f y
 ```
 
-**`Stacks.SquishPicard.surjective_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L107). The attribute's comment: “surjectivity”.
+**`Stacks.SquishPicard.surjective_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L107). The attribute's comment: “surjectivity”.
 
 > Pullback along the squishing of a tangent vector is surjective on Picard groups.
 
@@ -498,7 +498,7 @@ theorem surjective_schemePullbackClassHom {k : Type u} [Field k] [IsAlgClosed k]
     Function.Surjective (Stacks.Picard.schemePullbackClassHom f)
 ```
 
-**`Stacks.SquishPicard.epsilonCoefficientAt_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L240). The attribute's comment: “the lifting criterion for injectivity on a proper reduced scheme”.
+**`Stacks.SquishPicard.epsilonCoefficientAt_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L240). The attribute's comment: “the lifting criterion for injectivity on a proper reduced scheme”.
 
 > **The first map of the sequence of Stacks Tag 0C1N is injective when `X'` is proper and
 > reduced**, in the form that the connecting homomorphism consumes: the `ε`-coefficient along the
@@ -519,7 +519,7 @@ theorem epsilonCoefficientAt_eq_zero_of_isProper_of_isReduced
     AlgebraicGeometry.epsilonCoefficientAt θ ⊤ trivial s = 0
 ```
 
-**`Stacks.SquishPicard.epsilonCoefficientAt_unit_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L258). The attribute's comment: “the lifting criterion for injectivity on a proper reduced scheme”.
+**`Stacks.SquishPicard.epsilonCoefficientAt_unit_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicard.lean#L258). The attribute's comment: “the lifting criterion for injectivity on a proper reduced scheme”.
 
 > The criterion of `Stacks.SquishPicard.epsilonCoefficientAt_eq_zero_of_isProper_of_isReduced`
 > for a global unit: the logarithmic `ε`-derivative of a unit on a proper reduced `X'` vanishes, so
@@ -535,7 +535,7 @@ theorem epsilonCoefficientAt_unit_eq_zero_of_isProper_of_isReduced
     AlgebraicGeometry.epsilonCoefficientAt θ ⊤ trivial (s : Γ(X', ⊤)) = 0
 ```
 
-**`Stacks.SquishSheafSequence.schemePullbackClassHom_eq_zero_iff_exists_picardTangentHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean#L222). The attribute's comment: “exactness”.
+**`Stacks.SquishSheafSequence.schemePullbackClassHom_eq_zero_iff_exists_picardTangentHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean#L222). The attribute's comment: “exactness”.
 
 > **Exactness at `Pic(X)` of the sequence of [Stacks, Tag 0C1N].**  For `k` algebraically
 > closed and `f : X' ⟶ X` the squishing of the tangent vector `θ` of `X'`, a Picard class of `X`
@@ -551,7 +551,7 @@ theorem schemePullbackClassHom_eq_zero_iff_exists_picardTangentHom (f : X' ⟶ X
       ∃ a : k, picardTangentHom f θ h a = L
 ```
 
-**`Stacks.SquishSheafSequence.exact_picardTangentHom_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean#L246). The attribute's comment: “exactness”.
+**`Stacks.SquishSheafSequence.exact_picardTangentHom_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardExactness.lean#L246). The attribute's comment: “exactness”.
 
 > **Exactness at `Pic(X)` of the sequence of [Stacks, Tag 0C1N]**, in the `Function.Exact`
 > spelling: the kernel of pullback of Picard classes is the range of the tangent homomorphism.
@@ -563,7 +563,7 @@ theorem exact_picardTangentHom_schemePullbackClassHom (f : X' ⟶ X)
     Function.Exact (picardTangentHom f θ h) (Stacks.Picard.schemePullbackClassHom f)
 ```
 
-**`Stacks.SquishSheafSequence.picardTangentHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 901](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L901). The attribute's comment: “the tangent homomorphism”.
+**`Stacks.SquishSheafSequence.picardTangentHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 901](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L901). The attribute's comment: “the tangent homomorphism”.
 
 > **The tangent homomorphism `(k, +) ⟶ Pic(X)` of [Stacks, Tag 0C1N].** It is the connecting
 > homomorphism of the short exact sequence of sheaves of units of a squishing, read through the
@@ -577,7 +577,7 @@ def picardTangentHom {k : Type u} [Field k] [IsAlgClosed k] {X' X : Scheme.{u}}
     (h : AlgebraicGeometry.IsSquishingTangentVector f θ) : k →+ Stacks.Picard.ofScheme X
 ```
 
-**`Stacks.SquishSheafSequence.injective_picardTangentHom_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 975](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L975). The attribute's comment: “injectivity on a proper reduced scheme”.
+**`Stacks.SquishSheafSequence.injective_picardTangentHom_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean, line 975](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingPicardSequence.lean#L975). The attribute's comment: “injectivity on a proper reduced scheme”.
 
 > **The tangent homomorphism is injective when `X'` is proper and reduced.** A scalar in its
 > kernel is the logarithmic `ε`-derivative of a unit on `X'`, and on a proper reduced `X'` the
@@ -593,7 +593,7 @@ theorem injective_picardTangentHom_of_isProper_of_isReduced {k : Type u} [Field 
     Function.Injective (picardTangentHom f θ h)
 ```
 
-**`Stacks.SquishSheafSequence.epsilonLogDerivSheafHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L435). The attribute's comment: “the quotient map of the sequence of sheaves of units”.
+**`Stacks.SquishSheafSequence.epsilonLogDerivSheafHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L435). The attribute's comment: “the quotient map of the sequence of sheaves of units”.
 
 > **The quotient map of the units sequence is the logarithmic `ε`-derivative** on the units of
 > the sections over every neighbourhood of the contracted point.
@@ -608,7 +608,7 @@ theorem epsilonLogDerivSheafHom_app {k : Type u} [Field k] {X' X : Scheme.{u}} (
         (epsilonLogDeriv θ (f ⁻¹ᵁ U) hx s)
 ```
 
-**`Stacks.SquishSheafSequence.epsilonLogDeriv_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L451). The attribute's comment: “vanishing of the logarithmic derivative on a proper reduced scheme”.
+**`Stacks.SquishSheafSequence.epsilonLogDeriv_eq_zero_of_isProper_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingUnitsSequence.lean#L451). The attribute's comment: “vanishing of the logarithmic derivative on a proper reduced scheme”.
 
 > **On a proper reduced `X'` the logarithmic `ε`-derivative of a global unit vanishes**, so the
 > arrow to `(k, +)` of the units sequence of [Stacks, Tag 0C1N] kills the global units and the
@@ -633,4 +633,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.15, Tag 0C1H](https://stacks.math.columbia.edu/tag/0C1H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

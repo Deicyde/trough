@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.29 Derived pushforward
 
-Section 24.29 of the Stacks Project, [Tag 0FTM](https://stacks.math.columbia.edu/tag/0FTM). 10 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.29 of the Stacks Project, [Tag 0FTM](https://stacks.math.columbia.edu/tag/0FTM). 10 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FTN, a lemma
 
 [Tag 0FTN](https://stacks.math.columbia.edu/tag/0FTN) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.exists_rightDerivedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRightDerivedExtension.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRightDerivedExtension.lean#L342).
+**`SheafOfModules.DifferentialGradedModule.exists_rightDerivedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRightDerivedExtension.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRightDerivedExtension.lean#L342).
 
 > Let `X` be a ringed site and let `(A, d)` be a sheaf of differential graded algebras on it.
 > Every functor `T : K(Mod(A, d)) ⥤ D` out of the homotopy category of right differential graded
@@ -40,7 +40,7 @@ theorem exists_rightDerivedExtension
 
 [Tag 0FTP](https://stacks.math.columbia.edu/tag/0FTP) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedSheafHom_isRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean#L66). The attribute's comment: “(1) derived internal hom”.
+**`SheafOfModules.DifferentialGradedModule.derivedSheafHom_isRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean#L66). The attribute's comment: “(1) derived internal hom”.
 
 > **Stacks Project, Tag 0FTP (1): the derived internal hom.** Let `(C, O)` be a ringed site, let
 > `𝒜`, `ℬ` be sheaves of differential graded `O`-algebras and let `𝒩` be a differential graded
@@ -59,7 +59,7 @@ theorem derivedSheafHom_isRightDerivedFunctor {X : AlgebraicGeometry.RingedSite.
         IsIso ((derivedSheafHomUnit N).app ((HomotopyCategory.quotient B).obj I))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedToposPushforward_isRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean#L83). The attribute's comment: “(2) derived pushforward”.
+**`SheafOfModules.DifferentialGradedModule.derivedToposPushforward_isRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedInternalHomPushforward.lean#L83). The attribute's comment: “(2) derived pushforward”.
 
 > **Stacks Project, Tag 0FTP (2): the derived pushforward.** Let
 > `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a morphism of ringed topoi, let `𝒜` be a sheaf of
@@ -87,7 +87,7 @@ theorem derivedToposPushforward_isRightDerivedFunctor
 
 [Tag 0FTQ](https://stacks.math.columbia.edu/tag/0FTQ) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedTensorProductSheafHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHom.lean#L176). References: SGA 5 IIIB (5.2), “more general”.
+**`SheafOfModules.DifferentialGradedModule.derivedTensorProductSheafHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHom.lean#L176). References: SGA 5 IIIB (5.2), “more general”.
 
 > **Stacks 0FTQ**: let `(C, O)` be a ringed site, let `𝒜` and `ℬ` be sheaves of differential
 > graded `O`-algebras and let `𝒩` be a differential graded `(𝒜, ℬ)`-bimodule. Then the derived
@@ -105,7 +105,7 @@ def derivedTensorProductSheafHomAdjunction : derivedTensorProduct N ⊣ derivedS
 
 [Tag 0FTR](https://stacks.math.columbia.edu/tag/0FTR) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedPullbackRingedToposAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPullbackAdjunction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPullbackAdjunction.lean#L117).
+**`SheafOfModules.DifferentialGradedModule.derivedPullbackRingedToposAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPullbackAdjunction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPullbackAdjunction.lean#L117).
 
 > **Stacks Project, Tag 0FTR.** Let `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a morphism of
 > ringed topoi, let `A` be a differential graded `O_C`-algebra, let `B` be a differential graded
@@ -126,7 +126,7 @@ def derivedPullbackRingedToposAdjunction :
 
 [Tag 0FTS](https://stacks.math.columbia.edu/tag/0FTS) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.exists_isTriangulated_homotopyToposPushforwardSheafHomTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomExact.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomExact.lean#L428).
+**`SheafOfModules.DifferentialGradedModule.exists_isTriangulated_homotopyToposPushforwardSheafHomTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomExact.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomExact.lean#L428).
 
 > **Stacks 0FTS.** Let `(f, f♯) : (Sh(𝒞), O_𝒞) ⟶ (Sh(𝒟), O_𝒟)` be a morphism of ringed topoi,
 > let `𝒜` and `𝒜'` be sheaves of differential graded `O_𝒞`-algebras, let `ℬ` be a sheaf of
@@ -170,7 +170,7 @@ theorem exists_isTriangulated_homotopyToposPushforwardSheafHomTopos
 
 [Tag 0FTT](https://stacks.math.columbia.edu/tag/0FTT) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.exists_iso_derivedToposPushforwardSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomDerived.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomDerived.lean#L346).
+**`SheafOfModules.DifferentialGradedModule.exists_iso_derivedToposPushforwardSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomDerived.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushforwardSheafHomDerived.lean#L346).
 
 > **Stacks 0FTT.** Let `(f, f♯) : (Sh(𝒞), O_𝒞) ⟶ (Sh(𝒟), O_𝒟)` be a morphism of ringed topoi,
 > let `𝒜` and `𝒜'` be sheaves of differential graded `O_𝒞`-algebras, let `ℬ` be a sheaf of
@@ -200,7 +200,7 @@ theorem exists_iso_derivedToposPushforwardSheafHom
 
 [Tag 0FTU](https://stacks.math.columbia.edu/tag/0FTU) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedToposPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardComp.lean, line 624](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardComp.lean#L624).
+**`SheafOfModules.DifferentialGradedModule.derivedToposPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardComp.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardComp.lean#L624).
 
 > **Stacks Tag 0FTU.** Let `(f, f♯) : (Sh(C), O) ⟶ (Sh(C'), O')` and
 > `(g, g♯) : (Sh(C'), O') ⟶ (Sh(C''), O'')` be morphisms of ringed topoi. Let `A`, `A'` and `A''`
@@ -259,7 +259,7 @@ theorem derivedToposPushforward_comp
 
 [Tag 0FTV](https://stacks.math.columbia.edu/tag/0FTV) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedSheafHomTensorBimoduleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHomTensor.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHomTensor.lean#L70).
+**`SheafOfModules.DifferentialGradedModule.derivedSheafHomTensorBimoduleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHomTensor.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedSheafHomTensor.lean#L70).
 
 > **Stacks 0FTV**: let `(C, O)` be a ringed site, let `𝒜`, `𝒜'`, `𝒜''` be sheaves of
 > differential graded `O`-algebras, let `𝒩` be a differential graded `(𝒜, 𝒜')`-bimodule and `𝒩'` a
@@ -286,7 +286,7 @@ def derivedSheafHomTensorBimoduleIso
 
 [Tag 0FTW](https://stacks.math.columbia.edu/tag/0FTW) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedToposPushforwardForgetIsoTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardForget.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardForget.lean#L644).
+**`SheafOfModules.DifferentialGradedModule.derivedToposPushforwardForgetIsoTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardForget.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedPushforwardForget.lean#L644).
 
 > **Stacks Project, Tag 0FTW.** Let `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a morphism of
 > ringed topoi, let `A` be a sheaf of differential graded `O_C`-algebras, `B` one of
@@ -317,7 +317,7 @@ noncomputable def derivedToposPushforwardForgetIsoTopos
 
 [Tag 0FTX](https://stacks.math.columbia.edu/tag/0FTX) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.cohomologyAddEquivDerivedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCohomologyDerivedHom.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCohomologyDerivedHom.lean#L620).
+**`SheafOfModules.DifferentialGradedModule.cohomologyAddEquivDerivedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCohomologyDerivedHom.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCohomologyDerivedHom.lean#L638).
 
 > Let `(C, O)` be a ringed site, `A` a sheaf of differential graded `O`-algebras, `M` a right
 > differential graded `A`-module and `n` an integer. Then `H^n(C, M) = Hom_{D(A, d)}(A, M[n])`,
@@ -348,4 +348,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.29, Tag 0FTM](https://stacks.math.columbia.edu/tag/0FTM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

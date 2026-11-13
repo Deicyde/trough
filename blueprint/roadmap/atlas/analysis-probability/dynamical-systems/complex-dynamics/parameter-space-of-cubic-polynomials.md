@@ -7,7 +7,7 @@ statement: formalized
 
 # Parameter space of cubic polynomials
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html).
 
 ## Cubic family
 
@@ -18,7 +18,7 @@ $f_\lambda : \mathbb{C} \to \mathbb{C}$ is given by $f_\lambda(z) = \lambda z^2 
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.cubicFamily`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#cubic-family).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.cubicFamily`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#cubic-family).
 
 ## Critical points of the cubic family
 
@@ -30,7 +30,7 @@ complex derivative $0$ at $c$, that is, $f_\lambda'(c) = 0$.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsCriticalPoint`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-critical-point).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsCriticalPoint`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-critical-point).
 
 ## Basin of attraction of zero
 
@@ -43,7 +43,7 @@ $n$-th iterate of $f_\lambda$.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.basinOfZero`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#basin-of-zero).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.basinOfZero`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#basin-of-zero).
 
 ## Immediate basin of zero
 
@@ -58,7 +58,7 @@ in the basin of zero.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsImmediateBasin`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-immediate-basin).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsImmediateBasin`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-immediate-basin).
 
 ## Parameters with both critical points in the immediate basin
 
@@ -74,7 +74,7 @@ the immediate basin of zero.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.parameterSet`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#parameter-set).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.parameterSet`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#parameter-set).
 
 ## Parameter components
 
@@ -89,7 +89,7 @@ $U$.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsParameterComponent`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-parameter-component).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsParameterComponent`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-parameter-component).
 
 ## Jordan curves in the plane
 
@@ -101,7 +101,7 @@ $\mathbb{C}$ whose image is exactly $S$.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsJordanCurve`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-jordan-curve).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsJordanCurve`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#is-jordan-curve).
 
 ## McMullen's question on Jordan boundaries of cubic parameter components
 
@@ -117,7 +117,7 @@ The source poses this as an open question.
 
 - [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.
 
-Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#conjecture).
+Formalized by `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture`, a definition declared in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#conjecture).
 
 ## Roesch's theorem on the boundaries of cubic parameter components
 
@@ -136,7 +136,7 @@ onto the parameter component.
 
 - Pascale Roesch, Hyperbolic components of polynomials with a fixed critical point of maximal order, Ann. Sci. Ecole Norm. Sup. (4) 40 (2007), arXiv:math/0612172, https://arxiv.org/abs/math/0612172.
 
-Stated but not proved: `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Parameter space of cubic polynomials](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex, Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex_normalizedDualizingComplex, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_of_upperShriek, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_normalizedDualizingComplex, Stacks.Duality.neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek, Stacks.Duality.neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek_unconditional, Stacks.Duality.fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat_unconditional
+lean: Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex, Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex_normalizedDualizingComplex, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_of_upperShriek, Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_normalizedDualizingComplex, Stacks.Duality.exists_fibreDim_eq_and_neg_le_of_nontrivial_stalk_homology_upperShriek, Stacks.Duality.fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat_unconditional, Stacks.Duality.hasTorAmplitude_derivedScalarRestriction_upperShriek
 statement: formalized
 proof: formalized
 ---
 
 # 48.21 Dimension functions
 
-Section 48.21 of the Stacks Project, [Tag 0BV4](https://stacks.math.columbia.edu/tag/0BV4). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.21 of the Stacks Project, [Tag 0BV4](https://stacks.math.columbia.edu/tag/0BV4). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AWL, a lemma
 
 [Tag 0AWL](https://stacks.math.columbia.edu/tag/0AWL) in the Stacks Project.
 
-**`Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedAtClosedPointCharts.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedAtClosedPointCharts.lean#L78).
+**`Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedAtClosedPointCharts.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedAtClosedPointCharts.lean#L79).
 
 > **Stacks Project, Tag 0AWL (Lemma 48.21.1).** Let `S` be a Noetherian scheme with a
 > dualizing complex `ω_S^•`, let `p : X ⟶ S` be of finite type, and let `ω_X^•` be normalized
@@ -41,7 +41,7 @@ theorem isNormalizedDualizingComplex_derivedStalkOfComplex
       Dualizing.IsNormalizedDualizingComplex.{u, u} (derivedStalkOfComplex x E)
 ```
 
-**`Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean#L98).
+**`Stacks.Duality.isNormalizedDualizingComplex_derivedStalkOfComplex_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean#L98).
 
 > **[Stacks, Tag 0AWL].** Let `S` be a Noetherian scheme with a dualizing complex `ω_S^•`, let
 > `X` be of finite type over `S` and `ω_X^•` the dualizing complex normalized relative to `ω_S^•`.
@@ -68,7 +68,7 @@ theorem isNormalizedDualizingComplex_derivedStalkOfComplex_normalizedDualizingCo
 
 [Tag 0AWM](https://stacks.math.columbia.edu/tag/0AWM) in the Stacks Project.
 
-**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingDimensionFunction.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingDimensionFunction.lean#L204). The attribute's comment: “RESTRICTED: three inputs are explicit hypotheses. That the shift functions of the two dualizing complexes are dimension functions is the unproved half of Tag 0AWF, carried as dimension functions delta\_S and delta\_X together with hdS and hdX. That f carries closed points to closed points -- the source's reduction to a proper f, through Nagata compactification and Tag 0AUC -- is hClosedImage. The identity at a closed point over a closed point, Tag 0AWL, is hClosedPoint; 0AWL itself is proved, but the bridge from normalized stalks to a value of associatedShiftFunction is not. What is proved is the body of the lemma: universal catenarity of S from Tag 0AWF, then that the difference of the two functions is determined by its values at closed points, by Tag 02JW and Tag 02IB and Tag 02IL, and that the transcendence degree vanishes at a closed point, by Tag 01TF”.
+**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingDimensionFunction.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingDimensionFunction.lean#L208). The attribute's comment: “RESTRICTED: three inputs are explicit hypotheses. That the shift functions of the two dualizing complexes are dimension functions is the unproved half of Tag 0AWF, carried as dimension functions delta\_S and delta\_X together with hdS and hdX. That f carries closed points to closed points -- the source's reduction to a proper f, through Nagata compactification and Tag 0AUC -- is hClosedImage. The identity at a closed point over a closed point, Tag 0AWL, is hClosedPoint; 0AWL itself is proved, but the bridge from normalized stalks to a value of associatedShiftFunction is not. What is proved is the body of the lemma: universal catenarity of S from Tag 0AWF, then that the difference of the two functions is determined by its values at closed points, by Tag 02JW and Tag 02IB and Tag 02IL, and that the transcendence degree vanishes at a closed point, by Tag 01TF”.
 
 > **Stacks Project, Tag 0AWM.** Let `S` be a Noetherian scheme and let `ω_S^•` be a dualizing
 > complex. Let `f : X ⟶ S` be of finite type and let `ω_X^•` be the dualizing complex normalized
@@ -116,7 +116,7 @@ theorem associatedShiftFunction_sub_eq_trdeg {X S : Scheme.{u}}
       (Cardinal.toNat (Algebra.trdeg (S.residueField (f x)) (X.residueField x)) : ℤ)
 ```
 
-**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_of_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DimensionFunctionTrdegCharts.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DimensionFunctionTrdegCharts.lean#L117).
+**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_of_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DimensionFunctionTrdegCharts.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DimensionFunctionTrdegCharts.lean#L117).
 
 > **Stacks Project, Tag 0AWM (Lemma 48.21.2).** Let `S` be a Noetherian scheme with a
 > dualizing complex `ω_S^•`, let `p : X ⟶ S` be of finite type, and let `ω_X^•` be normalized
@@ -141,7 +141,7 @@ theorem associatedShiftFunction_sub_eq_trdeg_of_upperShriek
       (Cardinal.toNat (Algebra.trdeg (S.residueField (p x)) (X.residueField x)) : ℤ)
 ```
 
-**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean#L120).
+**`Stacks.Duality.associatedShiftFunction_sub_eq_trdeg_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/NormalizedDualizingComplexNagataCharts.lean#L120).
 
 > **[Stacks, Tag 0AWM].** Let `S` be a Noetherian scheme with a dualizing complex `ω_S^•`, let
 > `p : X ⟶ S` be of finite type and `ω_X^•` the dualizing complex normalized relative to `ω_S^•`.
@@ -162,73 +162,32 @@ theorem associatedShiftFunction_sub_eq_trdeg_normalizedDualizingComplex (x : X) 
 
 [Tag 0BV5](https://stacks.math.columbia.edu/tag/0BV5) in the Stacks Project.
 
-**`Stacks.Duality.neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimension.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimension.lean#L240). The attribute's comment: “the implication H^i(f^! 𝒪\_Y)\_x ≠ 0 ⟹ -dim\_x(X\_y) ≤ i, in full and with no affineness on X or Y. f^! is Tag 0A9Y, Stacks.Duality.upperShriek, of the compactification j (Tag 0F41); 𝒪\_Y is DerivedPushforward.derivedStructureSheaf; 'H^i(-)\_x ≠ 0' is Nontrivial on the stalk at x of the i-th cohomology sheaf; and dim\_x(X\_y) is topologicalKrullDimAt on the scheme-theoretic fibre, named by the hypothesis hd identifying it with a natural number d, as Tag 0E9P also does. ONE hypothesis is carried, h0BV2: on an affine open U ∋ x inside the preimage of an affine open V of Y, the restriction of f^!𝒪\_Y to U is the associated sheaf of the algebraic upper shriek, along a polynomial presentation of f.appLE V U, of Γ(Y, V) in degree zero. That is clause (b) of Tag 0BV2, the affine formula, which the repository's Tag 0BV2 (Stacks.Duality.restrictedUpperShriekIsoOfOpenSquare) explicitly does not claim because Tag 0AA1 (f^! = Lf^*[1] for A^1\_V -> V) is absent here; it is carried in the same shape as Tag 0B6U (a) carries it. h0BV2 asserts only an isomorphism, with no degree bound in it: the bound is Tag 0E9P (Dualizing.upperShriekFunctor\_neg\_relativeDimensionAt\_le\_of\_nontrivial\_localizedHomology), transported to the chart by the two dictionaries proved in this file and in Stacks.Flatness.topologicalKrullDimAt\_fiber\_eq\_relativeDimensionAt. Tag 0E9Q is not used here, and the source does not use it for 0BV5; it is present in the library at the ring level, under StacksFrontier/RingTheory/Dualizing/UpperShriek/, and is consumed by the flat refinement in StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlat.lean. The upper bound i ≤ 0 and the tor-amplitude statement of Tag 0BV6, for f flat, are NOT claimed”.
-
-> **Stacks Project, Tag 0BV5 (Lemma 48.21.1).** In Situation 48.16.1, let `f : X ⟶ Y` be a
-> morphism of `FTS S` and let `x ∈ X` with image `y ∈ Y`. Then
->
->   `H^i(f^!𝒪_Y)_x ≠ 0  ⟹  -dim_x(X_y) ≤ i`,
->
-> the local dimension `dim_x(X_y)` of the scheme-theoretic fibre being named by the hypothesis
-> `hd` that identifies it with a natural number `d`.
->
-> The affine identification of `f^!𝒪_Y` of Remark [Stacks, Tag 0BV2] is the carried hypothesis
-> `h0BV2`; it names an isomorphism on an affine chart through `x` and asserts nothing about any
-> degree. The bound itself is [Stacks, Tag 0E9P] for the algebraic upper shriek, moved
-> to the chart by the stalk dictionary
-> `Stacks.Duality.nontrivial_stalk_homology_iff_nontrivial_localizedHomology` and the
-> fibre-dimension dictionary `Stacks.Flatness.topologicalKrullDimAt_fiber_eq_relativeDimensionAt`,
-> both proved.
-
-```lean
-theorem neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek (x : X.left)
-    (h0BV2 : ∃ (U : X.left.Opens) (hU : IsAffineOpen U) (V : Y.left.Opens)
-      (_hV : IsAffineOpen V) (hUV : U ≤ f.left ⁻¹ᵁ V), x ∈ U ∧
-      ∃ p : Dualizing.PolynomialPresentation (f.left.appLE V U hUV).hom,
-        Nonempty ((Scheme.Modules.restrictFunctor U.ι).mapDerivedCategory.obj
-            (((upperShriek f j).obj (derivedStructureSheaf Y.left)).obj) ≅
-          (tilde.functor Γ(X.left, U) ⋙
-            Scheme.Modules.restrictFunctor hU.isoSpec.hom).mapDerivedCategory.obj
-              (p.upperShriekFunctor.{u, u}.obj (structureModel (Y := Y) V))))
-    (d : ℕ)
-    (hd : topologicalKrullDimAt (f.left.fiber (f.left x)) (f.left.asFiber x) =
-      (d : WithBot ℕ∞))
-    (i : ℤ)
-    (hi : Nontrivial (((DerivedCategory.homologyFunctor X.left.Modules i).obj
-      (((upperShriek f j).obj
-        (derivedStructureSheaf Y.left)).obj)).presheaf.stalk x)) :
-    -(d : ℤ) ≤ i
-```
-
-**`Stacks.Duality.neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionCharts.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionCharts.lean#L96).
+**`Stacks.Duality.exists_fibreDim_eq_and_neg_le_of_nontrivial_stalk_homology_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFinite.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFinite.lean#L64). The attribute's comment: “f^! is Stacks.Duality.upperShriek of any compactification j; O\_Y is DerivedPushforward.derivedStructureSheaf; H^i(-)\_x ≠ 0 is Nontrivial on the stalk at x of the i-th cohomology sheaf; dim\_x(X\_y) is topologicalKrullDimAt of the scheme-theoretic fibre at x, shown to be a natural number d, and the conclusion is -d ≤ i”.
 
 > **Stacks Project, Tag 0BV5 (Lemma 48.21.3).** In Situation 48.16.1 let `f : X ⟶ Y` be a
 > morphism of `FTS S` and let `x ∈ X` with image `y ∈ Y`. Then
 >
 >   `H^i(f^!𝒪_Y)_x ≠ 0  ⟹  -dim_x(X_y) ≤ i`,
 >
-> for every compactification `j` defining `f^!`; the local dimension `dim_x(X_y)` of the fibre is
-> named by the hypothesis `hd` identifying it with a natural number `d`. The chart description of
-> `f^!𝒪_Y` is `Stacks.Duality.upperShriekStructureSheafCharts`, and on a chart the bound is
-> [Stacks, Tag 0E9P].
+> for every compactification `j` defining `f^!`. The local dimension `dim_x(X_y)` of the fibre
+> (`topologicalKrullDimAt` of the scheme-theoretic fibre at `x`) is a natural number `d`, since the
+> fibre is of finite type over the residue field of `y`, and the conclusion is `-d ≤ i`.
 
 ```lean
-theorem neg_fibreDim_le_of_nontrivial_stalk_homology_upperShriek_unconditional
-    (x : X.left) (d : ℕ)
-    (hd : topologicalKrullDimAt (f.left.fiber (f.left x)) (f.left.asFiber x) =
-      (d : WithBot ℕ∞))
-    (i : ℤ)
+theorem exists_fibreDim_eq_and_neg_le_of_nontrivial_stalk_homology_upperShriek
+    (x : X.left) (i : ℤ)
     (hi : Nontrivial (((DerivedCategory.homologyFunctor X.left.Modules i).obj
       (((upperShriek f j).obj
         (derivedStructureSheaf Y.left)).obj)).presheaf.stalk x)) :
-    -(d : ℤ) ≤ i
+    ∃ d : ℕ, topologicalKrullDimAt (f.left.fiber (f.left x)) (f.left.asFiber x) =
+      (d : WithBot ℕ∞) ∧ -(d : ℤ) ≤ i
 ```
 
 ## Tag 0BV6, a lemma
 
 [Tag 0BV6](https://stacks.math.columbia.edu/tag/0BV6) in the Stacks Project.
 
-**`Stacks.Duality.fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean#L69). The attribute's comment: “first assertion: the bounds -dim\_x(X\_y) <= i <= 0 on nonzero stalks”.
+**`Stacks.Duality.fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean#L77). The attribute's comment: “first assertion: the bounds -dim\_x(X\_y) <= i <= 0 on nonzero stalks”.
 
 > **Stacks Project, Tag 0BV6 (Lemma 48.21.4), the first assertion.** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a flat morphism of `FTS S` and let `x ∈ X` with image `y ∈ Y`. Then
@@ -251,7 +210,7 @@ theorem fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat_uncondi
     -(d : ℤ) ≤ i ∧ i ≤ 0
 ```
 
-**`Stacks.Duality.hasTorAmplitude_derivedScalarRestriction_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean#L110). The attribute's comment: “second assertion: Tor amplitude in [-d, 0] over f^\{-1}O\_Y when all fibres have dimension at most d”.
+**`Stacks.Duality.hasTorAmplitude_derivedScalarRestriction_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlatCharts.lean#L118). The attribute's comment: “second assertion: Tor amplitude in [-d, 0] over f^\{-1}O\_Y when all fibres have dimension at most d”.
 
 > **Stacks Project, Tag 0BV6 (Lemma 48.21.4), the second assertion.** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a flat morphism of `FTS S` all of whose fibres have dimension at most `d`. Then
@@ -271,61 +230,40 @@ theorem hasTorAmplitude_derivedScalarRestriction_upperShriek [Flat f.left] (d : 
       (-(d : ℤ)) 0
 ```
 
-Declarations registered for the tag:
-
-- [`Stacks.Duality.fibreDim_bounds_of_nontrivial_stalk_homology_upperShriek_of_flat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlat.lean#L186), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlat.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFibreDimensionFlat.lean#L287) (StacksFrontier): “THE FIRST ASSERTION, both halves, BUT UNDER AN ASSUMED PREREQUISITE TAG, and NOT the tor-amplitude assertion. Proved: for f flat and x over y, if the stalk at x of H^i(f^! O\_Y) is nontrivial then -dim\_x(X\_y) <= i <= 0, with no affineness on X or Y and flatness an instance. ASSUMED: h0BV2, the affine-chart description of f^! O\_Y, which is clause (b) of Stacks 0BV2 and rests on Stacks 0AA1 (f^! = Lf^*[1] for A^1\_V -> V). Tag 0AA1 is not proved in this library; this result becomes unconditional by composing with a proof of it. Note the same hypothesis is carried in the identical shape by the statements of Tags 0BV5 and 0B6U and by Duality/UpperShriekBounded.lean, so discharging 0AA1 unconditionalises those too. NOT PROVED: f^! O\_Y has tor-amplitude in [-d,0] in D(X, f-inverse O\_Y). Only its O\_Y instance is proved, the vanishing of the cohomology SHEAVES outside [-d,0], as isZero\_homology\_upperShriek\_derivedStructureSheaf\_of\_notMem\_Icc below; the ring-level version at base is itself conditional on Tag 0BZV and the chart-to-sheaf assembly is absent.”.
-
 ## Tag 0E9V, a lemma
 
 [Tag 0E9V](https://stacks.math.columbia.edu/tag/0E9V) in the Stacks Project.
 
-**`Stacks.Duality.propertySkModule_modulesStalk_homology_upperShriek_of_residueTrdeg_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeCharts.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeCharts.lean#L318). The attribute's comment: “the (S\_2) property of the stalk H^\{-r}(f^! O\_Y)\_x as an O\_\{X,x}-module”.
+**`Stacks.Duality.neg_le_and_propertySkModule_stalk_homology_upperShriek_of_residueTrdeg_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeSerre.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeSerre.lean#L53). The attribute's comment: “both conclusions: the vanishing H^i(f^! O\_Y)\_x nonzero implies -r <= i, and the (S\_2) property of the stalk H^\{-r}(f^! O\_Y)\_x as an O\_\{X,x}-module”.
 
-> **Stacks Project, Tag 0E9V (Lemma 48.21.5), the `(S₂)` clause.** Under the hypotheses of the
-> tag, the stalk `H^{-r}(f^!𝒪_Y)_x` satisfies `(S₂)` as an `𝒪_{X,x}`-module, for every
-> compactification `j` defining `f^!`. On a chart the stalk is the localization of
-> `H^{-r}(ω^•_{A/R})` at the prime of `x`, which is `(S₂)` by the ring-level [Stacks, Tag 0E9R].
+> **Stacks Project, Tag 0E9V (Lemma 48.21.5).** In Situation [Stacks, Tag 0F42], let
+> `f : X ⟶ Y` be a morphism of `FTS S` and let `x ∈ X` with image `y = f x`.  Assume `𝒪_{Y, y}` is
+> Cohen–Macaulay and `trdeg_{κ(f ξ)} κ(ξ) ≤ r` for every generic point `ξ` of an irreducible
+> component of `X` containing `x`.  Then `H^i(f^!𝒪_Y)_x ≠ 0` implies `-r ≤ i`, and the stalk
+> `H^{-r}(f^!𝒪_Y)_x` is `(S₂)` as an `𝒪_{X,x}`-module (it is a finite `𝒪_{X,x}`-module by
+> `module_finite_modulesStalk_homology_upperShriek`).  Here `f^!` is `upperShriek f j` for any
+> compactification `j`.
 
 ```lean
-theorem propertySkModule_modulesStalk_homology_upperShriek_of_residueTrdeg_le
+theorem neg_le_and_propertySkModule_stalk_homology_upperShriek_of_residueTrdeg_le
     (x : X.left) (r : ℕ)
     (hCM : IsCohenMacaulayLocalRing (Y.left.presheaf.stalk (f.left.base x)))
     (htrdeg : ∀ ξ : X.left, closure {ξ} ∈ irreducibleComponents X.left → x ∈ closure {ξ} →
       Stacks.Chow.residueTrdeg f.left ξ ≤ (r : Cardinal)) :
+    (∀ i : ℤ, Nontrivial (((DerivedCategory.homologyFunctor X.left.Modules i).obj
+        (((upperShriek f j).obj (derivedStructureSheaf Y.left)).obj)).presheaf.stalk x) →
+        -(r : ℤ) ≤ i) ∧
     letI := module_finite_modulesStalk_homology_upperShriek f j x (-(r : ℤ))
     PropertySkModule (X.left.presheaf.stalk x) ((modulesStalkFunctor x).obj
       ((DerivedCategory.homologyFunctor X.left.Modules (-(r : ℤ))).obj
         (((upperShriek f j).obj (derivedStructureSheaf Y.left)).obj))) 2
 ```
 
-**`Stacks.Duality.neg_le_of_nontrivial_stalk_homology_upperShriek_of_residueTrdeg_le_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeVanishing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegreeVanishing.lean#L53). The attribute's comment: “the vanishing: H^i(f^! O\_Y)\_x nonzero implies -r <= i”.
-
-> **Stacks Project, Tag 0E9V (Lemma 48.21.4), the vanishing.** If `𝒪_{Y, f x}` is
-> Cohen–Macaulay and the residue transcendence degree of `f` is at most `r` at every generic point
-> of a component of `X` through `x`, then `H^i(f^!𝒪_Y)_x ≠ 0` implies `-r ≤ i`, for every `j`.
-
-```lean
-theorem neg_le_of_nontrivial_stalk_homology_upperShriek_of_residueTrdeg_le_unconditional
-    (x : X.left) (r : ℕ)
-    (hCM : IsCohenMacaulayLocalRing (Y.left.presheaf.stalk (f.left.base x)))
-    (htrdeg : ∀ ξ : X.left, closure {ξ} ∈ irreducibleComponents X.left → x ∈ closure {ξ} →
-      Stacks.Chow.residueTrdeg f.left ξ ≤ (r : Cardinal))
-    (i : ℤ)
-    (hi : Nontrivial (((DerivedCategory.homologyFunctor X.left.Modules i).obj
-      (((upperShriek f j).obj
-        (derivedStructureSheaf Y.left)).obj)).presheaf.stalk x)) :
-    -(r : ℤ) ≤ i
-```
-
-Declarations registered for the tag:
-
-- [`Stacks.Duality.neg_le_of_nontrivial_stalk_homology_upperShriek_of_residueTrdeg_le`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegree.lean#L351), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegree.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekTranscendenceDegree.lean#L429) (StacksFrontier): “THE VANISHING BOUND ONLY; the tag is NOT proved. Proved: in the stated situation, if the stalk at x of H^i(f^! O\_Y) is nontrivial then -r <= i. NOT PROVED: the second conclusion, that the stalk H^\{-r}(f^! O\_Y)\_x is (S\_2) as an O\_\{X,x}-module -- nothing about (S\_2) is stated in this file, and the module-level stalk dictionary it needs does not exist in the library (only the abelian-group version does). TWO HYPOTHESES ARE CARRIED, neither dischargeable here. h0BV2 is clause (b) of Stacks 0BV2, the affine formula for f^! O\_Y, which needs Stacks 0AA1 (f^! = Lf^*[1] for A^1\_V -> V), absent from this repository; the library's Stacks 0BV2 explicitly declines clause (b). NOTE IT IS CARRIED IN A STRENGTHENED FORM relative to the library's Stacks 0BV5 and 0B6U, which take one chart: here it must be COFINAL in neighbourhoods of x, which is what permits the chart shrinking. h0E9R is clause (1) of Stacks 0E9R at the SHARP bound r, whereas the library's subsingleton\_localizedModule\_homology\_relativeDualizingComplex gives only the crude bound (the number of variables); the sharp bound needs the dimension formula of Stacks 0BAE via the duality formula of Stacks 0E9L localized at a maximal ideal. Stacks 0E9L itself is proved in general as Dualizing.PolynomialPresentation.nonempty\_upperShriekFunctor\_natIso\_dualizingDerivedHom; the passage to the localization is the base change of Stacks 0BZV, conditional in this library.”.
-
 ## Tag 0BV7, a lemma
 
 [Tag 0BV7](https://stacks.math.columbia.edu/tag/0BV7) in the Stacks Project.
 
-**`Stacks.Duality.exists_isCoherent_isFlatOver_iso_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFinite.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFinite.lean#L141).
+**`Stacks.Duality.exists_isCoherent_isFlatOver_iso_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFinite.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFinite.lean#L141).
 
 > **Stacks Project, Tag 0BV7 (Lemma 48.21.6).** In Situation 48.16.1 let `f : X ⟶ Y` be a
 > morphism of `FTS S`. If `f` is flat and quasi-finite, then `f^!𝒪_Y = ω_{X/Y}[0]` for some
@@ -346,7 +284,7 @@ theorem exists_isCoherent_isFlatOver_iso_single [Flat f.left] [LocallyQuasiFinit
 
 [Tag 0BV8](https://stacks.math.columbia.edu/tag/0BV8) in the Stacks Project.
 
-**`Stacks.Duality.exists_isCoherent_isFlatOver_iso_shift_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L70).
+**`Stacks.Duality.exists_isCoherent_isFlatOver_iso_shift_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L70).
 
 > Let `S` be Noetherian and `f : X ⟶ Y` a Cohen–Macaulay morphism of `FTS S`. Then
 > `f^!𝒪_Y = ω_{X/Y}[d]` for a coherent `𝒪_X`-module `ω_{X/Y}` flat over `Y`, where `d` is the
@@ -371,7 +309,7 @@ theorem exists_isCoherent_isFlatOver_iso_shift_upperShriek
 
 [Tag 0BV9](https://stacks.math.columbia.edu/tag/0BV9) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.newShriekStructureSheaf_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekRelativeDualizingComplex.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekRelativeDualizingComplex.lean#L98). The attribute's comment: “Lemmas 0BV5, 0BV6 (both assertions), 0BV7 and 0BV8 with f^! replaced by f\_new^! = D\_X o Lf^* o D\_Y, for every morphism of schemes of finite type over a Noetherian base with a dualizing complex, separated or not”.
+**`Stacks.Duality.NormalizedOnOpens.newShriekStructureSheaf_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekRelativeDualizingComplex.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekRelativeDualizingComplex.lean#L98). The attribute's comment: “Lemmas 0BV5, 0BV6 (both assertions), 0BV7 and 0BV8 with f^! replaced by f\_new^! = D\_X o Lf^* o D\_Y, for every morphism of schemes of finite type over a Noetherian base with a dualizing complex, separated or not”.
 
 > **Stacks Project, Tag 0BV9 (Remark 48.21.7).** Let `S` be a Noetherian scheme endowed with a
 > dualizing complex `ω_S^•`, and let `f : X ⟶ Y` be a morphism of schemes of finite type over `S`,
@@ -446,4 +384,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.21, Tag 0BV4](https://stacks.math.columbia.edu/tag/0BV4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Nim
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html).
 
 ## Bouton's move properties in Nim
 
@@ -28,7 +28,7 @@ N-positions.
 
 - Tanya Khovanova and Joshua Xiong, "Nim Fractals", Journal of Integer Sequences 17 (2014), theorem lines 155–159, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex.
 
-Formalized by `MetaMathlibExt.BoutonNim.bouton_nim_p_positions`, a theorem declared in [MathlibExt/GameTheory/BoutonNim.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GameTheory/BoutonNim.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html#bouton-nim-p-positions).
+Formalized by `MetaMathlibExt.BoutonNim.bouton_nim_p_positions`, a theorem declared in [MathlibExt/GameTheory/BoutonNim.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GameTheory/BoutonNim.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html#bouton-nim-p-positions).
 
 ## Nim-sum zero via the last pile
 
@@ -45,7 +45,7 @@ exactly the P-positions, is Bouton's theorem.
 
 - Tanya Khovanova and Joshua Xiong, "Nim Fractals," Journal of Integer Sequences 17 (2014), Article 14.7.8, Corollary, lines 163–165, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex
 
-Formalized by `MetaMathlibExt.nim_sum_eq_zero_iff_last_eq_xor_fold`, a theorem declared in [MathlibExt/GameTheory/NimSumLastPile.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GameTheory/NimSumLastPile.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html#nim-sum-eq-zero-iff-last-eq-xor-fold).
+Formalized by `MetaMathlibExt.nim_sum_eq_zero_iff_last_eq_xor_fold`, a theorem declared in [MathlibExt/GameTheory/NimSumLastPile.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GameTheory/NimSumLastPile.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html#nim-sum-eq-zero-iff-last-eq-xor-fold).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nim](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/nim)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/nim)

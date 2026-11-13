@@ -7,7 +7,7 @@ statement: formalized
 
 # Partitions with designated summands
 
-23 results, 4 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html).
+23 results, 4 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html).
 
 ## Generating function of odd designated-summand partitions
 
@@ -22,7 +22,7 @@ designated summands into odd parts.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Section 2, eq. (1) (quoting G. E. Andrews, R. P. Lewis, and J. Lovejoy, *Partitions with designated summands*, Acta Arith. 105 (2002)).
 
-Formalized by `MetaMathlibExt.oddDesignatedSummandsSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-series).
+Formalized by `MetaMathlibExt.oddDesignatedSummandsSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-series).
 
 ## The odd designated-summand partition function
 
@@ -36,7 +36,7 @@ $n$ with designated summands in which all parts are odd.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Sections 1-2, eq. (1).
 
-Formalized by `MetaMathlibExt.oddDesignatedSummandsCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count).
+Formalized by `MetaMathlibExt.oddDesignatedSummandsCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count).
 
 ## Generating function for partitions with designated summands into odd parts
 
@@ -50,7 +50,7 @@ $f_1 f_3 f_{12} \sum_{n \ge 0} PD_2(n) q^n = f_4 f_6^2$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Section 2, eq. (1).
 
-Formalized by `MetaMathlibExt.oddDesignatedSummandsCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-generating).
+Formalized by `MetaMathlibExt.oddDesignatedSummandsCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-generating).
 
 ## Odd designated-summand partitions of zero
 
@@ -61,7 +61,7 @@ satisfies $\mathrm{PD}_2(0) = 1$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Section 2, eq. (1).
 
-Formalized by `MetaMathlibExt.oddDesignatedSummandsCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-zero).
+Formalized by `MetaMathlibExt.oddDesignatedSummandsCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-zero).
 
 ## The 2-dissection of $f_1 f_3$
 
@@ -79,7 +79,7 @@ through by $f_2 f_4^2 f_6 f_8^2 f_{12}^2 f_{24}^2$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.f1_mul_f3_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#f1-mul-f3-two-dissection).
+Stated but not proved: `MetaMathlibExt.f1_mul_f3_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#f1-mul-f3-two-dissection).
 
 ## $\mathrm{PD}_2(2^\alpha (4n + 3))$ is divisible by 4
 
@@ -91,7 +91,7 @@ numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (4n + 3)) \equiv 0 \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_four_mul_add_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-pow-mu).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_four_mul_add_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-pow-mu).
 
 ## $\mathrm{PD}_2(2^\alpha (8n + 7))$ is divisible by 8
 
@@ -103,7 +103,7 @@ numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (8n + 7)) \equiv 0 \pmod 8$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_eight_mul_add_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-pow-mu-2).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_eight_mul_add_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-pow-mu-2).
 
 ## The 2-dissection of the generating function of $\mathrm{PD}_2$
 
@@ -121,7 +121,7 @@ cleared.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-dissec).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-dissec).
 
 ## The 4-dissection of the generating function of $PD_2$
 
@@ -142,7 +142,7 @@ cleared.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-disse).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-disse).
 
 ## The 2-dissection of $\mathrm{PD}_2$ modulo 4
 
@@ -160,7 +160,7 @@ with its denominator cleared, and $\sum_{k} \mathrm{PD}_2(2k + 1) q^k \equiv f_6
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-dissec-2).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_two_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-two-dissec-2).
 
 ## Congruences modulo 4 for $\mathrm{PD}_2$ at $4n + 3$, $6n + 3$ and $6n + 5$
 
@@ -173,7 +173,7 @@ $\mathrm{PD}_2(6n + 5)$ are all congruent to $0$ modulo $4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_odd_args_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-odd-args-m).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_odd_args_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-odd-args-m).
 
 ## $PD_2(4n)$ and $PD_2(4n+2)$ modulo 4
 
@@ -192,7 +192,7 @@ modulo $4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-disse-2).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-disse-2).
 
 ## $PD_2(8n+6)$ is divisible by 4
 
@@ -204,7 +204,7 @@ $PD_2(8n + 6) \equiv 0 \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_mul_add_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-mul).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_mul_add_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-mul).
 
 ## $PD_2(8n)$ and $PD_2(8n+4)$ modulo 4
 
@@ -221,7 +221,7 @@ $\sum_{n \ge 0} PD_2(8n + 4) q^n \equiv f_6^2$ coefficientwise modulo $4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-diss).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_dissection_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-diss).
 
 ## $\mathrm{PD}_2(16n + 12)$ is divisible by 4
 
@@ -233,7 +233,7 @@ $\mathrm{PD}_2(16n + 12) \equiv 0 \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_add_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_add_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu).
 
 ## The internal congruence $PD_2(4n) \equiv PD_2(n) \pmod 4$
 
@@ -245,7 +245,7 @@ $PD_2(4n) \equiv PD_2(n) \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_mul_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-mul-m).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_mul_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-mul-m).
 
 ## $PD_2(4^\alpha (6n+5))$ is divisible by 4
 
@@ -257,7 +257,7 @@ $PD_2(4^\alpha (6n + 5)) \equiv 0 \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_pow_mul_six_mul_add_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-pow-m).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_four_pow_mul_six_mul_add_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-four-pow-m).
 
 ## $PD_2(8n+7)$ is divisible by 8
 
@@ -269,7 +269,7 @@ $PD_2(8n + 7) \equiv 0 \pmod 8$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_mul_add_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-mul-2).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_eight_mul_add_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-eight-mul-2).
 
 ## $\mathrm{PD}_2(16n + 14)$ is divisible by 8
 
@@ -281,7 +281,7 @@ $\mathrm{PD}_2(16n + 14) \equiv 0 \pmod 8$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_add_fourteen` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu-2).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_add_fourteen` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu-2).
 
 ## $\mathrm{PD}_2(32n + 28)$ is divisible by 8
 
@@ -293,7 +293,7 @@ $\mathrm{PD}_2(32n + 28) \equiv 0 \pmod 8$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_thirtyTwo_mul_add_twentyEight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-thirty-two).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_thirtyTwo_mul_add_twentyEight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-thirty-two).
 
 ## $\mathrm{PD}_2(64n + 56)$ is divisible by 8
 
@@ -305,7 +305,7 @@ $\mathrm{PD}_2(64n + 56) \equiv 0 \pmod 8$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixtyFour_mul_add_fiftySix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixty-four).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixtyFour_mul_add_fiftySix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixty-four).
 
 ## Internal congruence $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$
 
@@ -317,7 +317,7 @@ is odd. For every natural number $n$, $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu-3).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-sixteen-mu-3).
 
 ## $PD_2(48n+26)$ is divisible by 4
 
@@ -329,7 +329,7 @@ $PD_2(48n + 26) \equiv 0 \pmod 4$.
 
 - James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_fortyEight_mul_add_twentySix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-forty-eigh).
+Stated but not proved: `MetaMathlibExt.oddDesignatedSummandsCount_fortyEight_mul_add_twentySix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OddDesignatedSummandsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html#odd-designated-summands-count-forty-eigh).
 
 ## Depends on
 
@@ -338,4 +338,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Partitions with designated summands](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-designated-summands)

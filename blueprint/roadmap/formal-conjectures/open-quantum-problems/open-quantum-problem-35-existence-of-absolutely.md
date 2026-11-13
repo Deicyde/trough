@@ -68,7 +68,7 @@ statement: formalized
 > As demonstration, we show that the Bell states with $n=2$ and GHZ states with $n=3$ are
 > AME states, and the GHZ state with $n=4$ is not an AME state.
 
-*Quoted from [FormalConjectures/OpenQuantumProblems/35.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OpenQuantumProblems/35.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 29 research or textbook statements: 10 open and 19 solved. It also has 6 test statements and 27 API statements, counted here but not shown.
 
@@ -82,7 +82,7 @@ Proved here.
 theorem ame_2_exists {d : ℕ} (hd : 2 ≤ d) : ExistsAME 2 d
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 646](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L646).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 646](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L646).
 
 ## `OpenQuantumProblem35.ame_3_exists`
 
@@ -94,7 +94,7 @@ Proved here.
 theorem ame_3_exists {d : ℕ} (hd : 2 ≤ d) : ExistsAME 3 d
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 651](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L651).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 651](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L651).
 
 ## `OpenQuantumProblem35.ame_2_2_exists`
 
@@ -106,7 +106,7 @@ Proved here.
 theorem ame_2_2_exists : ExistsAME 2 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 716](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L716).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 716](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L716).
 
 ## `OpenQuantumProblem35.ame_3_2_exists`
 
@@ -118,7 +118,7 @@ Proved here.
 theorem ame_3_2_exists : ExistsAME 3 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 721](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L721).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 721](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L721).
 
 ## `OpenQuantumProblem35.ame_5_2_exists`
 
@@ -130,7 +130,7 @@ Solved: stated here; a Lean proof is at [https://github.com/zblore/fc-ame-5-2/bl
 theorem ame_5_2_exists : ExistsAME 5 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 728](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L728).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 728](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L728).
 
 ## `OpenQuantumProblem35.ame_6_2_exists`
 
@@ -142,7 +142,7 @@ Solved: stated here; a Lean proof is at [https://github.com/zblore/fc-ame-6-2/bl
 theorem ame_6_2_exists : ExistsAME 6 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 735](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L735).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 735](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L735).
 
 ## `OpenQuantumProblem35.ame_4_2_not_exists`
 
@@ -154,11 +154,11 @@ Solved: stated here; a Lean proof is at [https://github.com/zblore/fc-ame-4-2/bl
 theorem ame_4_2_not_exists : ¬ ExistsAME 4 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 742](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L742).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 742](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L742).
 
 ## `OpenQuantumProblem35.ame_7_2_not_exists`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010).
 
 > Source-backed benchmark statement: no $\mathrm{AME}(7,2)$ state exists; see Huber--Gühne--Siewert (2017) and the OQP page.
 
@@ -166,11 +166,11 @@ Solved: stated here without proof.
 theorem ame_7_2_not_exists : ¬ ExistsAME 7 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 747](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L747).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 748](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L748).
 
 ## `OpenQuantumProblem35.ame_7_exists_iff`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010).
 
 > For a physical local dimension $d \ge 2$, a seven-party AME state exists exactly when
 > $d \ge 3$. The hypothesis excludes the degenerate dimension $d = 1$, for which the unique
@@ -183,7 +183,7 @@ Solved: stated here without proof.
 theorem ame_7_exists_iff (d : ℕ) (hd : 2 ≤ d) : ExistsAME 7 d ↔ 3 ≤ d
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 757](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L757).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 759](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L759).
 
 ## `OpenQuantumProblem35.ame_4_3_exists`
 
@@ -195,7 +195,7 @@ Solved: stated here; a Lean proof is at [https://github.com/AllenGrahamHart/Form
 theorem ame_4_3_exists : ExistsAME 4 3
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 764](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L764).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 766](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L766).
 
 ## `OpenQuantumProblem35.ame_4_6_exists`
 
@@ -207,7 +207,7 @@ Solved: stated here; a Lean proof is at [https://github.com/zblore/fc-ame-4-6/bl
 theorem ame_4_6_exists : ExistsAME 4 6
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 771](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L771).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 773](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L773).
 
 ## `OpenQuantumProblem35.ame_7_6_open`
 
@@ -221,7 +221,7 @@ theorem ame_7_6_open :
     ExistsAME 7 6
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 779](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L779).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 781](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L781).
 
 ## `OpenQuantumProblem35.ame_7_10_open`
 
@@ -235,7 +235,7 @@ theorem ame_7_10_open :
     ExistsAME 7 10
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 786](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L786).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 788](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L788).
 
 ## `OpenQuantumProblem35.ame_8_4_open`
 
@@ -248,7 +248,7 @@ theorem ame_8_4_open :
     ExistsAME 8 4
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 792](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L792).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 794](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L794).
 
 ## `OpenQuantumProblem35.ame_8_6_open`
 
@@ -261,7 +261,7 @@ theorem ame_8_6_open :
     ExistsAME 8 6
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 798](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L798).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 800](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L800).
 
 ## `OpenQuantumProblem35.ame_8_10_open`
 
@@ -274,7 +274,7 @@ theorem ame_8_10_open :
     ExistsAME 8 10
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 804](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L804).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 806](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L806).
 
 ## `OpenQuantumProblem35.ame_9_6_open`
 
@@ -291,7 +291,7 @@ theorem ame_9_6_open :
     ExistsAME 9 6
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 817](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L817).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 819](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L819).
 
 ## `OpenQuantumProblem35.ame_9_10_open`
 
@@ -308,7 +308,7 @@ theorem ame_9_10_open :
     ExistsAME 9 10
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 832](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L832).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 834](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L834).
 
 ## `OpenQuantumProblem35.ame_10_6_open`
 
@@ -321,7 +321,7 @@ theorem ame_10_6_open :
     ExistsAME 10 6
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 838](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L838).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 840](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L840).
 
 ## `OpenQuantumProblem35.ame_10_10_open`
 
@@ -334,7 +334,7 @@ theorem ame_10_10_open :
     ExistsAME 10 10
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 844](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L844).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 846](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L846).
 
 ## `OpenQuantumProblem35.ame_11_3_open`
 
@@ -347,7 +347,7 @@ theorem ame_11_3_open :
     ExistsAME 11 3
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 850](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L850).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 852](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L852).
 
 ## `OpenQuantumProblem35.ame_11_4_open`
 
@@ -369,7 +369,7 @@ theorem ame_11_4_open :
     ExistsAME 11 4
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 868](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L868).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 870](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L870).
 
 ## `OpenQuantumProblem35.ame_11_5_open`
 
@@ -384,7 +384,7 @@ theorem ame_11_5_open :
     ExistsAME 11 5
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 879](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L879).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 881](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L881).
 
 ## `OpenQuantumProblem35.ame_11_6_open`
 
@@ -397,7 +397,7 @@ theorem ame_11_6_open :
     ExistsAME 11 6
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 885](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L885).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 887](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L887).
 
 ## `OpenQuantumProblem35.ame_11_10_open`
 
@@ -414,7 +414,7 @@ theorem ame_11_10_open :
     ExistsAME 11 10
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 899](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L899).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 901](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L901).
 
 ## `OpenQuantumProblem35.ame_12_5_open`
 
@@ -431,7 +431,7 @@ theorem ame_12_5_open :
     ExistsAME 12 5
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 909](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L909).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 911](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L911).
 
 ## `OpenQuantumProblem35.ame_12_6_open`
 
@@ -444,7 +444,7 @@ theorem ame_12_6_open :
     ExistsAME 12 6
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 915](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L915).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 917](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L917).
 
 ## `OpenQuantumProblem35.ame_12_10_open`
 
@@ -457,7 +457,7 @@ theorem ame_12_10_open :
     ExistsAME 12 10
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 921](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L921).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 923](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L923).
 
 ## `OpenQuantumProblem35.oqp_35`
 
@@ -470,7 +470,7 @@ theorem oqp_35 :
     {nd : ℕ × ℕ | 2 ≤ nd.1 ∧ 2 ≤ nd.2 ∧ ExistsAME nd.1 nd.2} = oqp_35.answer
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 931](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean#L931).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/35.lean, line 933](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean#L933).
 
 ## Depends on
 
@@ -478,5 +478,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OpenQuantumProblems/35.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/35.lean)
+- [FormalConjectures/OpenQuantumProblems/35.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/35.lean)
 - [https://oqp.iqoqi.oeaw.ac.at/existence-of-absolutely-maximally-entangled-pure-states](https://oqp.iqoqi.oeaw.ac.at/existence-of-absolutely-maximally-entangled-pure-states)

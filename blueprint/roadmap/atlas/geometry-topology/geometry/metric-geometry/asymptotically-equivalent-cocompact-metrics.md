@@ -7,7 +7,7 @@ statement: formalized
 
 # Asymptotically equivalent cocompact metrics
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html).
 
 ## Cocompact asymptotically equivalent length-space pair
 
@@ -31,7 +31,7 @@ $|d_1(x, y) / d_2(x, y) - 1| < \varepsilon$ for all $x, y \in M$ with $d_1(x, y)
 For complete metric spaces the approximate-midpoint property is equivalent to being a length
 space.
 
-Formalized by `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.OWR1319022Data`, a structure declared in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#owr1319022-data).
+Formalized by `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.OWR1319022Data`, a structure declared in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#owr1319022-data).
 
 ## Bounded-difference conjecture for cocompact asymptotically equivalent metrics
 
@@ -44,7 +44,7 @@ is a real number $C$ such that $|d_1(x, y) - d_2(x, y)| \le C$ for all $x, y \in
 
 - open question of [OWR-1319-022] (Geometric Group Theory, Hyperbolic Dynamics and Symplectic Geometry (2007), Oberwolfach Reports, DOI 10.4171/owr/2006/33, pp. 1991--2058).
 
-Formalized by `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.conjecture`, a definition declared in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#conjecture).
+Formalized by `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.conjecture`, a definition declared in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#conjecture).
 
 ## Negative answer to the cocompact asymptotic-metrics question
 
@@ -62,7 +62,7 @@ yet their difference is unbounded.
 
 - E. Le Donne, L. Nalon, S. Nicolussi Golo, S.-Y. Ryoo, Asymptotics of Riemannian Lie groups with nilpotency step 2, arXiv preprint (2025), arXiv:2503.00560, https://arxiv.org/abs/2503.00560.
 
-Stated but not proved: `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/CocompactAsymptoticallyEquivalentMetricsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotically equivalent cocompact metrics](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/metric-geometry/asymptotically-equivalent-cocompact-metrics)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.26 More on dualizing complexes
 
-Section 47.26 of the Stacks Project, [Tag 0E49](https://stacks.math.columbia.edu/tag/0E49). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.26 of the Stacks Project, [Tag 0E49](https://stacks.math.columbia.edu/tag/0E49). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E4A, a lemma
 
 [Tag 0E4A](https://stacks.math.columbia.edu/tag/0E4A) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FaithfullyFlatDescent.lean, line 933](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FaithfullyFlatDescent.lean#L933).
+**`Dualizing.isDualizingComplex_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FaithfullyFlatDescent.lean, line 933](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FaithfullyFlatDescent.lean#L933).
 
 > **Stacks Project, Tag 0E4A.** If a complex becomes dualizing after faithfully flat
 > base change between Noetherian rings, then it was already dualizing.
@@ -35,7 +35,7 @@ public theorem isDualizingComplex_of_faithfullyFlat
 
 [Tag 0E4D](https://stacks.math.columbia.edu/tag/0E4D) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_syntomic_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L322). The attribute's comment: “case (1): A → B syntomic and surjective on spectra”.
+**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_syntomic_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L321). The attribute's comment: “case (1): A → B syntomic and surjective on spectra”.
 
 > **Stacks Project, Tag 0E4D, case (1).**  Let `φ : A → B` be a syntomic homomorphism of
 > Noetherian rings which is surjective on spectra.  Then `K` in `D(A)` is a dualizing complex for
@@ -59,7 +59,7 @@ theorem isDualizingComplex_iff_derivedExtensionScalars_of_syntomic_unconditional
       IsDualizingComplex ((derivedExtensionScalarsGeneral.{u, u, u} f).functor.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_faithfullyFlat_lci_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L344). The attribute's comment: “case (2): A → B faithfully flat and a local complete intersection”.
+**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_faithfullyFlat_lci_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L343). The attribute's comment: “case (2): A → B faithfully flat and a local complete intersection”.
 
 > **Stacks Project, Tag 0E4D, case (2).**  Let `φ : A → B` be a faithfully flat local complete
 > intersection homomorphism of Noetherian rings.  Then `K` in `D(A)` is a dualizing complex for `A`
@@ -77,7 +77,7 @@ theorem isDualizingComplex_iff_derivedExtensionScalars_of_faithfullyFlat_lci_unc
       IsDualizingComplex ((derivedExtensionScalarsGeneral.{u, u, u} f).functor.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_gorensteinFibres_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L365). The attribute's comment: “case (3): A → B faithfully flat of finite type with Gorenstein fibres”.
+**`Dualizing.isDualizingComplex_iff_derivedExtensionScalars_of_gorensteinFibres_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/SyntomicBaseChangeUnconditional.lean#L364). The attribute's comment: “case (3): A → B faithfully flat of finite type with Gorenstein fibres”.
 
 > **Stacks Project, Tag 0E4D, case (3).**  Let `A → B` be a faithfully flat homomorphism of
 > finite type of Noetherian rings and assume every fibre `B ⊗_A κ(q)` is Gorenstein.  Then `K` in
@@ -105,7 +105,7 @@ theorem isDualizingComplex_iff_derivedExtensionScalars_of_gorensteinFibres_uncon
 
 [Tag 0E4E](https://stacks.math.columbia.edu/tag/0E4E) in the Stacks Project.
 
-**`Dualizing.exists_isInjectiveHull_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Complex/More.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Complex/More.lean#L730).
+**`Dualizing.exists_isInjectiveHull_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Complex/More.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Complex/More.lean#L727).
 
 > Under a flat local homomorphism of Noetherian local rings whose target maximal ideal is
 > extended from the source, the base change of an injective hull of the source residue field is an
@@ -130,7 +130,7 @@ theorem exists_isInjectiveHull_tensorProduct
 
 [Tag 0E4F](https://stacks.math.columbia.edu/tag/0E4F) in the Stacks Project.
 
-**`Module.tensorProduct_injective_of_flat_of_map_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/InjectiveBaseChange.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/InjectiveBaseChange.lean#L574).
+**`Module.tensorProduct_injective_of_flat_of_map_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/InjectiveBaseChange.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/InjectiveBaseChange.lean#L573).
 
 > **Stacks Project, Tag 0E4F.** A flat map of Noetherian rings for which, locally at every
 > prime of the target, that prime is generated by its contraction preserves injective modules
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.26, Tag 0E49](https://stacks.math.columbia.edu/tag/0E49)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Siegel–Walfisz theorem
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html).
 
 ## Siegel–Walfisz theorem for Chebyshev's function in residue classes
 
@@ -26,7 +26,7 @@ The constants may depend on $N$, but not on $x$, $q$, or $a$.
 
 - P. Holdridge, *Random Diophantine Equations in the Primes*, arXiv:2305.06306v2, Theorem 4.2, citing H. Davenport, *Multiplicative Number Theory*, 2nd ed., revised by H. L. Montgomery, Springer, 1980, Chapter 22.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimeCounting.SiegelWalfiszWanted.siegel_walfisz` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/SiegelWalfiszWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/SiegelWalfiszWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html#siegel-walfisz).
+Stated but not proved: `MathlibExt.NumberTheory.PrimeCounting.SiegelWalfiszWanted.siegel_walfisz` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/SiegelWalfiszWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/SiegelWalfiszWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html#siegel-walfisz).
 
 ## Siegel–Walfisz theorem for primes in arithmetic progressions
 
@@ -45,7 +45,7 @@ from $2$, as in the source, rather than as the principal value from $0$.
 
 - A. Guo, *Exceptional sets for compositions involving Euler's function, the divisor-sum function and Dedekind's function*, arXiv:2608.19972v1, Lemma `siegel`, `main.tex` lines 289–295.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimeCounting.UniformPrimeCountingWanted.uniform_prime_counting_arithmetic_progression` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/UniformPrimeCountingWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/UniformPrimeCountingWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html#uniform-prime-counting-arithmetic-progre).
+Stated but not proved: `MathlibExt.NumberTheory.PrimeCounting.UniformPrimeCountingWanted.uniform_prime_counting_arithmetic_progression` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/UniformPrimeCountingWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/UniformPrimeCountingWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html#uniform-prime-counting-arithmetic-progre).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Siegel–Walfisz theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/siegel-walfisz-theorem)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Finite-place completion tensor product maps
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html).
 
 ## Component at a place of the completion tensor product map
 
@@ -20,7 +20,7 @@ homomorphism extending $K \to L$. This is the $K_v$-algebra homomorphism
 $K_v \otimes_K L \to L_w$ sending $x \otimes y$ to $\iota_w(x)\, y$, where $y \in L$ is viewed in
 $L_w$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.completionTensorProductComponent`, a definition declared in [MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html#completion-tensor-product-component).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.completionTensorProductComponent`, a definition declared in [MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html#completion-tensor-product-component).
 
 ## The completion tensor product map
 
@@ -33,7 +33,7 @@ $K_v \otimes_K L \to \prod_{w \mid v} L_w$ sending $x \otimes y$ to $(\iota_w(x)
 $y \in L$ is viewed in each $L_w$ and the product runs over the finite places of $L$ lying over
 $v$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.completionTensorProductMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html#completion-tensor-product-map).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.completionTensorProductMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Completion/FinitePlacesOverTensorProduct.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html#completion-tensor-product-map).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finite-place completion tensor product maps](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/completions-of-number-fields-at-finite-places/finite-place-completion-tensor-product-maps)

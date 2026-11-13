@@ -7,7 +7,7 @@ statement: formalized
 
 # Repdigit products of k-Fibonacci numbers
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html).
 
 ## Products of two $k$-Fibonacci numbers that are repdigits
 
@@ -23,7 +23,7 @@ $k = 3$.
 
 - Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_mul_eq_repdigit_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#k-fibonacci-mul-eq-repdigit-iff).
+Stated but not proved: `MetaMathlibExt.kFibonacci_mul_eq_repdigit_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#k-fibonacci-mul-eq-repdigit-iff).
 
 ## Index bound for repdigit products of $k$-Fibonacci numbers
 
@@ -38,7 +38,7 @@ $n < 1.64 \cdot 10^{29} k^8 (\log k)^5$, where $\log$ is the natural logarithm.
 
 - Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_repdigit_index_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#k-fibonacci-repdigit-index-lt).
+Stated but not proved: `MetaMathlibExt.kFibonacci_repdigit_index_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#k-fibonacci-repdigit-index-lt).
 
 ## Partial-quotient lower bound for rational approximation
 
@@ -55,7 +55,7 @@ Taking $A = \max(a_0, \dots, a_{N+1})$ gives the strongest bound.
 
 - Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.one_div_partialQuotient_bound_mul_lt_abs_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#one-div-partial-quotient-bound-mul-lt-ab).
+Stated but not proved: `MetaMathlibExt.one_div_partialQuotient_bound_mul_lt_abs_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciRepdigitProductWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html#one-div-partial-quotient-bound-mul-lt-ab).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Repdigit products of k-Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/repdigit-products-of-k-fibonacci-numbers)

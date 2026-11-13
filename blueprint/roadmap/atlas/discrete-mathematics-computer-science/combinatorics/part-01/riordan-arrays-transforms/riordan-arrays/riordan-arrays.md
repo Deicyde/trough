@@ -8,7 +8,7 @@ proof: formalized
 
 # Riordan arrays and number triangles: its own results
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html).
 
 Riordan arrays and their A- and Z-sequences, inverses, triple factorizations, pseudo-involutions and total positivity, the Pascal and Pell matrices as Riordan arrays, Barry's triangles, triangular recurrence arrays extended to negative rows, and diagonal or row sums of triangles.
 
@@ -23,7 +23,7 @@ $$F_r(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n-k}{k} r^k.$$
 
 - Paul Barry and Aoife Hennessy, *Notes on a Family of Riordan Arrays and Associated Integer Hankel Transforms*, Journal of Integer Sequences 12 (2009), Article 09.5.3.
 
-Formalized by `MetaMathlibExt.rFibonacciNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RParameterGeneralizedFibonacciSequence.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RParameterGeneralizedFibonacciSequence.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#r-fibonacci-number).
+Formalized by `MetaMathlibExt.rFibonacciNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RParameterGeneralizedFibonacciSequence.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RParameterGeneralizedFibonacciSequence.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#r-fibonacci-number).
 
 ## Constant term and row sum of a shifted array
 
@@ -39,7 +39,7 @@ $p(1) = \sum_{k=0}^{n} A^{(r)}_{n,k} = A^{(r+1)}_{n,0}$.
 
 - José Agapito, Ângela Mestre, Maria M. Torres, and Pasquale Petrullo, "On One-Parameter Catalan Arrays," Journal of Integer Sequences 18 (2015), Article 15.5.1, Corollary (equations eqColumn0Rr and eqRowsumsRr), lines 240–245, https://cs.uwaterloo.ca/journals/JIS/VOL18/Agapito/agapito2.tex
 
-Formalized by `MetaMathlibExt.shiftedRiordanArray_constantTerm_and_sumCoefficients`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ShiftedRiordanArrayRowSums.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ShiftedRiordanArrayRowSums.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#shifted-riordan-array-constant-term-and).
+Formalized by `MetaMathlibExt.shiftedRiordanArray_constantTerm_and_sumCoefficients`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ShiftedRiordanArrayRowSums.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ShiftedRiordanArrayRowSums.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#shifted-riordan-array-constant-term-and).
 
 ## Diagonal sums of an array
 
@@ -51,7 +51,7 @@ If $a$ is a lower-triangular array with $a_{i,j}$ in row $i$ and column $j$, the
 along rising diagonals. For a Riordan array $(g, f)$, whose column $j$ has generating function
 $g(x) f(x)^j$, the sequence $(d_n)$ has generating function $g(x) / (1 - x f(x))$.
 
-Formalized by `MetaMathlibExt.diagonalSums`, a definition declared in [MathlibExt/Combinatorics/Enumerative/DiagonalSumsOfARiordanOrTriangularArray.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/DiagonalSumsOfARiordanOrTriangularArray.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#diagonal-sums).
+Formalized by `MetaMathlibExt.diagonalSums`, a definition declared in [MathlibExt/Combinatorics/Enumerative/DiagonalSumsOfARiordanOrTriangularArray.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/DiagonalSumsOfARiordanOrTriangularArray.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#diagonal-sums).
 
 ## Peart–Woodson triple factorization of Riordan arrays
 
@@ -80,7 +80,7 @@ $(g, f) = (P_b \ast C_\lambda) \ast F_{\varepsilon,\delta}$.
 - Cameron and Nkwanta, Riordan multiplication at lines 113–117 and the dot-diagram recursions at lines 124–138.
 - Naiomi T. Cameron and Asamoah Nkwanta, *On Some (Pseudo) Involutions in the Riordan Group*, Journal of Integer Sequences 8 (2005), Article 05.3.7, Triple Factorization theorem due to Peart and Woodson, line 339, reused in the proof at line 373, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Cameron/cameron46.tex>.
 
-Formalized by `MetaMathlibExt.triple_factorization_of_dot_diagram`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TripleFactorization.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TripleFactorization.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#triple-factorization-of-dot-diagram).
+Formalized by `MetaMathlibExt.triple_factorization_of_dot_diagram`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TripleFactorization.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TripleFactorization.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#triple-factorization-of-dot-diagram).
 
 ## Twin Powers Theorem for pseudo-involutions
 
@@ -102,7 +102,7 @@ $$x^n B_h(x^n)^2 = x B_f(x)^2 \, P\bigl(x B_f(x)^2\bigr)^2.$$
 
 - Alexander Burstein and Louis W. Shapiro, "Pseudo-Involutions in the Riordan Group," Journal of Integer Sequences 25 (2022), Article 22.3.6, The Twin Powers Theorem, lines 1129–1146, https://cs.uwaterloo.ca/journals/JIS/VOL25/Burstein/burstein14.tex
 
-Formalized by `MetaMathlibExt.twin_powers`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TwinPowers.lean, line 1144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TwinPowers.lean#L1144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#twin-powers).
+Formalized by `MetaMathlibExt.twin_powers`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TwinPowers.lean, line 1144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TwinPowers.lean#L1144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html#twin-powers).
 
 ## Depends on
 
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Riordan arrays and number triangles](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays)

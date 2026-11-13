@@ -8,7 +8,7 @@ proof: formalized
 
 # Strong Markov property of i.i.d. sequences
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html).
 
 ## Post-stopping-time sequence
 
@@ -18,7 +18,7 @@ $(Y_k)_{k \in \mathbb{N}}$ of maps from $\Omega$ to $S$ given by
 $Y_k(\omega) = X_{T(\omega)+k+1}(\omega)$. When $T$ is a stopping time, this is the sequence of
 observations immediately after time $T$.
 
-Formalized by `ProbabilityTheory.postStoppingTimeSeq`, a definition declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#post-stopping-time-seq).
+Formalized by `ProbabilityTheory.postStoppingTimeSeq`, a definition declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#post-stopping-time-seq).
 
 ## Shifted terms of an identically distributed sequence
 
@@ -28,7 +28,7 @@ space $S$ such that $X_i$ and $X_j$ are identically distributed under $\mu$ for 
 for all $n, k \in \mathbb{N}$ the map $X_{n+k+1}$ has the same distribution under $\mu$ as
 $X_0$.
 
-Formalized by `ProbabilityTheory.identDistrib_tail`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#ident-distrib-tail).
+Formalized by `ProbabilityTheory.identDistrib_tail`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#ident-distrib-tail).
 
 ## A stopping-time event is independent of a later observation
 
@@ -41,7 +41,7 @@ $T : \Omega \to \mathbb{N}$ be a stopping time for $(\mathcal{F}_n)$. Then for a
 $n, k \in \mathbb{N}$ and every measurable set $A \subseteq S$,
 $\mu(\{T = n\} \cap X_{n+k+1}^{-1}(A)) = \mu(\{T = n\})\,\mu(X_{n+k+1}^{-1}(A))$.
 
-Formalized by `ProbabilityTheory.indep_stopping_time_tail`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#indep-stopping-time-tail).
+Formalized by `ProbabilityTheory.indep_stopping_time_tail`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#indep-stopping-time-tail).
 
 ## Level sets of a stopping time are measurable
 
@@ -50,7 +50,7 @@ filtration on a measurable space $\Omega$ and let $T : \Omega \to \mathbb{N}$ be
 for $(\mathcal{F}_n)$. Then for every $n \in \mathbb{N}$ the set $\{\omega : T(\omega) = n\}$ is
 measurable in the σ-algebra of $\Omega$.
 
-Formalized by `ProbabilityTheory.measurableSet_stoppingTime_eq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#measurable-set-stopping-time-eq).
+Formalized by `ProbabilityTheory.measurableSet_stoppingTime_eq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#measurable-set-stopping-time-eq).
 
 ## The post-stopping-time sequence is a.e. measurable
 
@@ -61,7 +61,7 @@ $\mu$-almost-everywhere measurable, and let $T : \Omega \to \mathbb{N}$ be a sto
 $(\mathcal{F}_n)$. Then for every $k \in \mathbb{N}$ the map
 $\omega \mapsto X_{T(\omega)+k+1}(\omega)$ is $\mu$-almost-everywhere measurable.
 
-Formalized by `ProbabilityTheory.aemeasurable_postStoppingTimeSeq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#aemeasurable-post-stopping-time-seq).
+Formalized by `ProbabilityTheory.aemeasurable_postStoppingTimeSeq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#aemeasurable-post-stopping-time-seq).
 
 ## Strong Markov property for i.i.d. sequences: the law after a stopping time
 
@@ -74,7 +74,7 @@ by $X_0, \dots, X_n$, and let $T : \Omega \to \mathbb{N}$ be a stopping time for
 $(\mathcal{F}_n)$. Then for every $k \in \mathbb{N}$ the map
 $\omega \mapsto X_{T(\omega)+k+1}(\omega)$ has the same distribution under $\mu$ as $X_0$.
 
-Formalized by `ProbabilityTheory.strong_markov_iid_identDistrib`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-ident-distrib).
+Formalized by `ProbabilityTheory.strong_markov_iid_identDistrib`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-ident-distrib).
 
 ## A stopping-time event is independent of finitely many later observations
 
@@ -89,7 +89,7 @@ $n \in \mathbb{N}$, every finite set $F \subseteq \mathbb{N}$ and all sets $A_k 
 $\mu(\{T = n\} \cap \bigcap_{k \in F} X_{n+k+1}^{-1}(A_k)) =
 \mu(\{T = n\}) \prod_{k \in F} \mu(X_{n+k+1}^{-1}(A_k))$.
 
-Formalized by `ProbabilityTheory.indep_stopping_time_tail_finset`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#indep-stopping-time-tail-finset).
+Formalized by `ProbabilityTheory.indep_stopping_time_tail_finset`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#indep-stopping-time-tail-finset).
 
 ## Preimage measures of a post-stopping-time variable
 
@@ -102,7 +102,7 @@ $T : \Omega \to \mathbb{N}$ be a stopping time for $(\mathcal{F}_n)$. Then for e
 $k \in \mathbb{N}$ and every measurable set $A \subseteq S$,
 $\mu(\{\omega : X_{T(\omega)+k+1}(\omega) \in A\}) = \mu(X_0^{-1}(A))$.
 
-Formalized by `ProbabilityTheory.postStoppingTimeSeq_preimage_eq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#post-stopping-time-seq-preimage-eq).
+Formalized by `ProbabilityTheory.postStoppingTimeSeq_preimage_eq`, a lemma declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#post-stopping-time-seq-preimage-eq).
 
 ## Strong Markov property for i.i.d. sequences: independence after a stopping time
 
@@ -115,7 +115,7 @@ by $X_0, \dots, X_n$, and let $T : \Omega \to \mathbb{N}$ be a stopping time for
 $(\mathcal{F}_n)$. Then the maps $Y_k(\omega) = X_{T(\omega)+k+1}(\omega)$, $k \in \mathbb{N}$,
 are mutually independent under $\mu$.
 
-Formalized by `ProbabilityTheory.strong_markov_iid_iIndepFun`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-i-indep-fun).
+Formalized by `ProbabilityTheory.strong_markov_iid_iIndepFun`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-i-indep-fun).
 
 ## Strong Markov property for i.i.d. sequences: the post-stopping-time sequence is i.i.d
 
@@ -129,7 +129,7 @@ post-stopping-time sequence $Y_k(\omega) = X_{T(\omega)+k+1}(\omega)$, $k \in \m
 again i.i.d. with the law of $X_0$: each $Y_k$ has the same distribution under $\mu$ as $X_0$,
 and $(Y_k)_{k \in \mathbb{N}}$ is mutually independent under $\mu$.
 
-Formalized by `ProbabilityTheory.strong_markov_iid_postStoppingTimeSeq`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIID.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-post-stopping-time-seq).
+Formalized by `ProbabilityTheory.strong_markov_iid_postStoppingTimeSeq`, a theorem declared in [MathlibExt/Probability/StrongMarkovIID.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIID.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-post-stopping-time-seq).
 
 ## Strong Markov property (independence from the past)
 
@@ -141,7 +141,7 @@ $T : \Omega \to \mathbb N$ be a stopping time for $(\mathcal F_n)$, finite every
 stopped σ-algebra $\mathcal F_T$ is independent of the σ-algebra generated by the
 post-stopping-time sequence $(X_{T+k+1})_{k \ge 0}$.
 
-Formalized by `ProbabilityTheory.strong_markov_iid_indep_past`, a theorem declared in [MathlibExt/Probability/StrongMarkovIIDIndepPast.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StrongMarkovIIDIndepPast.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-indep-past).
+Formalized by `ProbabilityTheory.strong_markov_iid_indep_past`, a theorem declared in [MathlibExt/Probability/StrongMarkovIIDIndepPast.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StrongMarkovIIDIndepPast.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html#strong-markov-iid-indep-past).
 
 ## Depends on
 
@@ -150,4 +150,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Strong Markov property of i.i.d. sequences](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/random-walks/strong-markov-property-of-i-i-d-sequences)

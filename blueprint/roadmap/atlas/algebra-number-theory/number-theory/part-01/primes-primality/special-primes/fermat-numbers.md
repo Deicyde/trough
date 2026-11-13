@@ -3,18 +3,19 @@ declaration: section
 origin: cited
 lean: MetaMathlibExt.IsFermatPrime, Nat.fermatNumber_mod_prime_exact_preperiod_period, MetaMathlibExt.fermatNumber_modEq_exists_repeat, MetaMathlibExt.fermatNumber_modEq_add, MetaMathlibExt.fermatNumber_not_modEq_add_of_le, MetaMathlibExt.fermatNumber_modEq_iff_preperiod_period, MetaMathlibExt.gcd_card_sub_one_exponent_eq_div_orderOf, MetaMathlibExt.exists_coprime_modEq_of_coprime
 statement: formalized
+proof: formalized
 ---
 
 # Fermat numbers
 
-16 results, 2 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html).
 
 ## Fermat prime
 
 A natural number $p$ is a Fermat prime if $p$ is prime and
 $p = 2^{2^k} + 1$ for some natural number $k$, that is, $p$ is a prime Fermat number.
 
-Formalized by `MetaMathlibExt.IsFermatPrime`, a definition declared in [MathlibExt/NumberTheory/FermatPrime.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/FermatPrime.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#is-fermat-prime).
+Formalized by `MetaMathlibExt.IsFermatPrime`, a definition declared in [MathlibExt/NumberTheory/FermatPrime.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatPrime.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#is-fermat-prime).
 
 ## Preperiod and period of Fermat numbers modulo an odd prime
 
@@ -30,7 +31,7 @@ divisible by $k$.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL28/Klaska/klaska22.tex>, Theorem, lines 593--606. This is the complete selected theorem statement, not a prerequisite stage.
 
-Formalized by `Nat.fermatNumber_mod_prime_exact_preperiod_period`, a theorem declared in [MathlibExt/NumberTheory/FermatResiduePeriod.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/FermatResiduePeriod.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-prime-exact-preperiod).
+Formalized by `Nat.fermatNumber_mod_prime_exact_preperiod_period`, a theorem declared in [MathlibExt/NumberTheory/FermatResiduePeriod.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatResiduePeriod.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-prime-exact-preperiod).
 
 ## Two of $F_0, \dots, F_p$ are congruent modulo $p$
 
@@ -43,7 +44,7 @@ This is the pigeonhole principle; $p$ need not be prime.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 2 (`jis-2025-25.8.7-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_modEq_exists_repeat` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-exists-repeat).
+Formalized by `MetaMathlibExt.fermatNumber_modEq_exists_repeat`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-exists-repeat).
 
 ## Congruences between Fermat numbers propagate
 
@@ -57,7 +58,7 @@ No condition on $m$, $i$ or $j$ is needed.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 4 (i) (`jis-2025-25.8.7-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_modEq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-add).
+Formalized by `MetaMathlibExt.fermatNumber_modEq_add`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-add).
 
 ## Non-congruence of Fermat numbers passes to smaller indices
 
@@ -73,7 +74,7 @@ $i < j$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 4 (ii) (`jis-2025-25.8.7-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_not_modEq_add_of_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-not-mod-eq-add-of-le).
+Formalized by `MetaMathlibExt.fermatNumber_not_modEq_add_of_le`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-not-mod-eq-add-of-le).
 
 ## Coincidences among Fermat residues
 
@@ -88,7 +89,7 @@ if and only if $i \ge h$ and $i \equiv j \pmod k$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 6 (`jis-2025-25.8.7-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_modEq_iff_preperiod_period` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-iff-preperiod-perio).
+Formalized by `MetaMathlibExt.fermatNumber_modEq_iff_preperiod_period`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-eq-iff-preperiod-perio).
 
 ## The index of a residue and its multiplicative order
 
@@ -105,7 +106,7 @@ $\operatorname{ind}_g(a)$, which lies between $1$ and $p - 1$, is one of them.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 8 (iv) (`jis-2025-25.8.7-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.gcd_card_sub_one_exponent_eq_div_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#gcd-card-sub-one-exponent-eq-div-order-o).
+Formalized by `MetaMathlibExt.gcd_card_sub_one_exponent_eq_div_orderOf`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#gcd-card-sub-one-exponent-eq-div-order-o).
 
 ## Coprime representatives of a residue class
 
@@ -119,7 +120,7 @@ The numbers $\alpha$ and $\beta$ need not be positive.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 10 (`jis-2025-25.8.7-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.exists_coprime_modEq_of_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-coprime-mod-eq-of-coprime).
+Formalized by `MetaMathlibExt.exists_coprime_modEq_of_coprime`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-coprime-mod-eq-of-coprime).
 
 ## A primitive root in which a residue has index $(p-1)/\operatorname{ord}_p(a)$
 
@@ -132,7 +133,7 @@ $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$) with $g^{(p-1)/\operatorname{ord}_p(a)} = a
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 11 (`jis-2025-25.8.7-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.exists_primitiveRoot_pow_card_sub_one_div_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-primitive-root-pow-card-sub-one-d).
+Formalized by `MetaMathlibExt.exists_primitiveRoot_pow_card_sub_one_div_orderOf`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-primitive-root-pow-card-sub-one-d).
 
 ## Indices dividing $p - 1$
 
@@ -149,7 +150,7 @@ $\operatorname{ind}_g(a)$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 13 (`jis-2025-25.8.7-prop-13`).
 
-Stated but not proved: `MetaMathlibExt.exponent_dvd_card_sub_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exponent-dvd-card-sub-one-iff).
+Formalized by `MetaMathlibExt.exponent_dvd_card_sub_one_iff`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exponent-dvd-card-sub-one-iff).
 
 ## Uniqueness of the $2$-adic decomposition of the index of $2$
 
@@ -165,7 +166,7 @@ $\operatorname{ind}_g(2)$ of $2$ with respect to $g$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Corollary 14 (`jis-2025-25.8.7-cor-14`); also Theorem 15 (i).
 
-Stated but not proved: `MetaMathlibExt.existsUnique_twoAdic_index_of_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-unique-two-adic-index-of-two).
+Formalized by `MetaMathlibExt.existsUnique_twoAdic_index_of_two`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-unique-two-adic-index-of-two).
 
 ## Preperiod and period of Fermat residues from the index of $2$
 
@@ -182,7 +183,7 @@ has preperiod $r - s$ and primitive period $k$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 15 (ii) and (iii) (`jis-2025-25.8.7-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_mod_prime_preperiod_period_of_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-prime-preperiod-period).
+Formalized by `MetaMathlibExt.fermatNumber_mod_prime_preperiod_period_of_index`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#fermat-number-mod-prime-preperiod-period).
 
 ## Prime divisors of Fermat numbers and the order of $2$
 
@@ -194,7 +195,7 @@ $2$ modulo $p$ equals $2^{n+1}$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 17 (`jis-2025-25.8.7-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_fermatNumber_iff_orderOf_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#prime-dvd-fermat-number-iff-order-of-two).
+Formalized by `MetaMathlibExt.prime_dvd_fermatNumber_iff_orderOf_two`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#prime-dvd-fermat-number-iff-order-of-two).
 
 ## Prime divisors of Fermat numbers and the period of Fermat residues
 
@@ -211,7 +212,7 @@ period of $n \mapsto F_n \bmod p$, which does not depend on $h$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 18 (`jis-2025-25.8.7-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_dvd_fermatNumber_iff_period_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-prime-dvd-fermat-number-iff-perio).
+Formalized by `MetaMathlibExt.exists_prime_dvd_fermatNumber_iff_period_eq_one`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-prime-dvd-fermat-number-iff-perio).
 
 ## The power of $2$ dividing the order of $2$ modulo a prime
 
@@ -225,7 +226,7 @@ divisible by $4$ but not by $8$.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 22, order statements (`jis-2025-25.8.7-thm-22`).
 
-Stated but not proved: `MetaMathlibExt.orderOf_two_twoAdic_of_mod_eight` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#order-of-two-two-adic-of-mod-eight).
+Formalized by `MetaMathlibExt.orderOf_two_twoAdic_of_mod_eight`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 560](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L560). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#order-of-two-two-adic-of-mod-eight).
 
 ## Every preperiod of Fermat residues occurs for a prime $p \equiv 1 \pmod 8$
 
@@ -239,7 +240,7 @@ sequence $n \mapsto F_{h+n} \bmod p$ periodic with a positive period.
 
 - Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 23 (`jis-2025-25.8.7-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_one_mod_eight_fermat_preperiod` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-prime-one-mod-eight-fermat-preper).
+Formalized by `MetaMathlibExt.exists_prime_one_mod_eight_fermat_preperiod`, a theorem declared in [MathlibExt/NumberTheory/FermatNumbersModPrime.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatNumbersModPrime.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html#exists-prime-one-mod-eight-fermat-preper).
 
 ## Depends on
 
@@ -248,4 +249,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fermat numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/special-primes/fermat-numbers)

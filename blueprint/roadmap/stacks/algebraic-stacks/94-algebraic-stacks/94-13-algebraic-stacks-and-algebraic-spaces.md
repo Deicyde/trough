@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.13 Algebraic stacks and algebraic spaces
 
-Section 94.13 of the Stacks Project, [Tag 03YR](https://stacks.math.columbia.edu/tag/03YR). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.13 of the Stacks Project, [Tag 03YR](https://stacks.math.columbia.edu/tag/03YR). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03YR, the section
 
 [Tag 03YR](https://stacks.math.columbia.edu/tag/03YR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_iff_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L50). The attribute's comment: “the main result: an algebraic stack is an algebraic space exactly when its fibre categories are setoids”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_iff_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L50). The attribute's comment: “the main result: an algebraic stack is an algebraic space exactly when its fibre categories are setoids”.
 
 > An algebraic stack over `S` is representable by an algebraic space if and only if it is a
 > stack in setoids, that is, objects of its fibre categories have no nontrivial automorphisms.
@@ -28,15 +28,15 @@ theorem isRepresentableByAlgebraicSpace_iff_isStackInSetoids
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.isDeligneMumfordStack_of_isRepresentableByAlgebraicSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean#L223), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L59) (StacksFrontier): “representable by an algebraic space implies Deligne-Mumford”.
-- [`AlgebraicGeometry.Stack.isDeligneMumfordStack_fibredCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean#L313), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L61) (StacksFrontier): “the category associated with an algebraic space is Deligne-Mumford”.
-- [`CategoryTheory.RelativeInertia.π_isEquivalence_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L189), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L63) (StacksFrontier): “trivial inertia: the inertia criterion”.
+- [`AlgebraicGeometry.Stack.isDeligneMumfordStack_of_isRepresentableByAlgebraicSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean#L223), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L59) (StacksFrontier): “representable by an algebraic space implies Deligne-Mumford”.
+- [`AlgebraicGeometry.Stack.isDeligneMumfordStack_fibredCategory`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean#L313), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L61) (StacksFrontier): “the category associated with an algebraic space is Deligne-Mumford”.
+- [`CategoryTheory.RelativeInertia.π_isEquivalence_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L190), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStacksAndSpaces.lean#L63) (StacksFrontier): “trivial inertia: the inertia criterion”.
 
 ## Tag 03YS, a lemma
 
 [Tag 03YS](https://stacks.math.columbia.edu/tag/03YS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_fibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean#L313). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_fibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStackPresentation.lean#L313). The attribute's comment: “part (2)”.
 
 > **Stacks 03YS, part (2).** The category of elements of an algebraic space `F` over `S`, read
 > as a category fibred in groupoids over the big fppf site of `S`, is a Deligne-Mumford stack.
@@ -52,7 +52,7 @@ theorem isDeligneMumfordStack_fibredCategory (F : (BigFppfOver B S hS)ᵒᵖ ⥤
     IsDeligneMumfordStack.{u, w} B S hS (fibredCategory B S hS F).val
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean#L223). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDeligneMumford.lean#L223). The attribute's comment: “part (1)”.
 
 > **Stacks 03YS, part (1).** A category fibred in groupoids over the big fppf site of `S`
 > which is representable by an algebraic space over `S` is a Deligne-Mumford stack.
@@ -69,7 +69,7 @@ theorem isDeligneMumfordStack_of_isRepresentableByAlgebraicSpace
     IsDeligneMumfordStack.{u, w} B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_schemeFibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean#L221). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_schemeFibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean#L221). The attribute's comment: “part (3)”.
 
 > **Stacks 03YS, part (3).** The big fppf site of a scheme `X` over `S`, read as a category
 > fibred in groupoids over the big fppf site of `S`, is a Deligne-Mumford stack.
@@ -88,7 +88,7 @@ theorem isDeligneMumfordStack_schemeFibredCategory (X : BigFppfOver B S hS) :
 
 [Tag 045H](https://stacks.math.columbia.edu/tag/045H) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_and_isStackInSetoids_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L123). The attribute's comment: “the implication (3) ⟹ (1)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_and_isStackInSetoids_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L123). The attribute's comment: “the implication (3) ⟹ (1)”.
 
 > **Stacks 045H, the implication (3) ⟹ (1).** A category fibred in groupoids over the big fppf
 > site of `S` which is representable by an algebraic space over `S` is a Deligne-Mumford stack and
@@ -104,7 +104,7 @@ theorem isDeligneMumfordStack_and_isStackInSetoids_of_isRepresentableByAlgebraic
       𝒳.val.p.IsStackInSetoids (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_and_inertiaProjection_isEquivalence_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L137). The attribute's comment: “the implication (3) ⟹ (2)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_and_inertiaProjection_isEquivalence_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L137). The attribute's comment: “the implication (3) ⟹ (2)”.
 
 > **Stacks 045H, the implication (3) ⟹ (2).** A category fibred in groupoids over the big fppf
 > site of `S` which is representable by an algebraic space over `S` is a Deligne-Mumford stack
@@ -121,7 +121,7 @@ theorem isDeligneMumfordStack_and_inertiaProjection_isEquivalence_of_isRepresent
         AbsoluteInertia 𝒳.val.p ⥤ 𝒳.val.obj).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isDeligneMumfordStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L154). The attribute's comment: “the equivalence of parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isDeligneMumfordStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L154). The attribute's comment: “the equivalence of parts (1) and (2)”.
 
 > **Stacks 045H, the equivalence of parts (1) and (2).** A Deligne-Mumford stack over the big
 > fppf site of `S` is a stack in setoids if and only if the canonical projection from its inertia
@@ -140,7 +140,7 @@ theorem isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isDeligneMumford
         AbsoluteInertia 𝒳.val.p ⥤ 𝒳.val.obj).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isDeligneMumfordStack_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L234). The attribute's comment: “the implication (1) ⟹ (3)”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isDeligneMumfordStack_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L234). The attribute's comment: “the implication (1) ⟹ (3)”.
 
 > **Stacks 045H, the implication (1) ⟹ (3).** A Deligne-Mumford stack over the big fppf site
 > of `S` which is a stack in setoids for the fppf topology is representable by an algebraic space
@@ -157,7 +157,7 @@ theorem isRepresentableByAlgebraicSpace_of_isDeligneMumfordStack_isStackInSetoid
     IsRepresentableByAlgebraicSpace B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_isStackInSetoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L255). The attribute's comment: “the equivalence of all three parts”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_isStackInSetoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L255). The attribute's comment: “the equivalence of all three parts”.
 
 > **Stacks 045H.** For a category fibred in groupoids over the big fppf site of `S` the
 > following are equivalent: it is a Deligne-Mumford stack and a stack in setoids for the fppf
@@ -180,14 +180,14 @@ theorem isDeligneMumfordStack_isStackInSetoids_tfae :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.RelativeInertia.π_isEquivalence_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L189), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L108) (StacksFrontier): “parts (1) and (2), the general inertia criterion”.
-- [`CategoryTheory.RelativeInertia.π_comp_neutralSection_eq_id`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L204), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L110) (StacksFrontier): “inverse over the base in part (2)”.
+- [`CategoryTheory.RelativeInertia.π_isEquivalence_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L190), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L108) (StacksFrontier): “parts (1) and (2), the general inertia criterion”.
+- [`CategoryTheory.RelativeInertia.π_comp_neutralSection_eq_id`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L205), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStackInSetoids.lean#L110) (StacksFrontier): “inverse over the base in part (2)”.
 
 ## Tag 04SZ, a proposition
 
 [Tag 04SZ](https://stacks.math.columbia.edu/tag/04SZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackIsStack.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackIsStack.lean#L55). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackIsStack.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackIsStack.lean#L55). The attribute's comment: “parts (1) and (2)”.
 
 > An algebraic stack over the big fppf site of `S` is a stack in setoids if and only if the
 > canonical projection from its inertia category is an equivalence.
@@ -201,7 +201,7 @@ theorem isStackInSetoids_iff_inertiaProjection_isEquivalence_of_isAlgebraicStack
         AbsoluteInertia 𝒳.val.p ⥤ 𝒳.val.obj).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean#L89). The attribute's comment: “the implication (3) ⟹ (1)”.
+**`AlgebraicGeometry.Stack.isStackInSetoids_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean#L89). The attribute's comment: “the implication (3) ⟹ (1)”.
 
 > **Stacks 04SZ**, the implication (3) ⟹ (1). A category fibred in groupoids over the big fppf
 > site of `S` which is representable by an algebraic space over `S` is a stack in setoids for the
@@ -217,7 +217,7 @@ theorem isStackInSetoids_of_isRepresentableByAlgebraicSpace
     𝒳.val.p.IsStackInSetoids (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isEquivalence_inertiaProjection_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean#L127). The attribute's comment: “the implication (3) ⟹ (2)”.
+**`AlgebraicGeometry.Stack.isEquivalence_inertiaProjection_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableStackInSetoids.lean#L127). The attribute's comment: “the implication (3) ⟹ (2)”.
 
 > **Stacks 04SZ**, the implication (3) ⟹ (2). For a category fibred in groupoids over the big
 > fppf site of `S` which is representable by an algebraic space over `S`, the canonical projection
@@ -232,7 +232,7 @@ theorem isEquivalence_inertiaProjection_of_isRepresentableByAlgebraicSpace
       AbsoluteInertia 𝒳.val.p ⥤ 𝒳.val.obj).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackInSetoidsRepresentableBySpace.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StackInSetoidsRepresentableBySpace.lean#L229).
+**`AlgebraicGeometry.Stack.isStackInSetoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackInSetoidsRepresentableBySpace.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StackInSetoidsRepresentableBySpace.lean#L229).
 
 > **Stacks 04SZ.** For an algebraic stack `𝒳` over the big fppf site of `S` the following are
 > equivalent:
@@ -263,4 +263,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.13, Tag 03YR](https://stacks.math.columbia.edu/tag/03YR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

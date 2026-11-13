@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Deformation.ArtinianLocalAlgCat, Deformation.ArtinianLocalAlgCat.Hom, Deformation.ArtinianLocalAlgCat.instCategory, Deformation.IsClassical, InfinitesimalLifting.IsSmallExtension, Deformation.surjective_factors_into_smallExtensions, Deformation.residueImageField_eq_range, Deformation.finrank_residueImageField_eq_quotient_ker
+lean: Deformation.ArtinianLocalAlgCat, Deformation.ArtinianLocalAlgCat.Hom, Deformation.ArtinianLocalAlgCat.instCategory, Deformation.IsClassical, Deformation.ArtinianLocalAlgCat.isSmallExtension_iff, Deformation.surjective_factors_into_smallExtensions, Deformation.residueImageField_eq_range, Deformation.finrank_residueImageField_eq_quotient_ker
 statement: formalized
 proof: formalized
 ---
 
 # 90.3 The base category
 
-Section 90.3 of the Stacks Project, [Tag 06GB](https://stacks.math.columbia.edu/tag/06GB). 15 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.3 of the Stacks Project, [Tag 06GB](https://stacks.math.columbia.edu/tag/06GB). 15 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06GC, a definition
 
 [Tag 06GC](https://stacks.math.columbia.edu/tag/06GC) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L170). The attribute's comment: “objects”. References: SGA 7 VI (1.15), “objects, K a field”.
+**`Deformation.ArtinianLocalAlgCat`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L173). The attribute's comment: “objects”. References: SGA 7 VI (1.15), “objects, K a field”.
 
 > An Artinian local `Λ`-algebra together with a specified `Λ`-algebra isomorphism from
 > its residue field to `k`. These are the objects of the category `𝒞_Λ` of Stacks Project,
@@ -25,7 +25,7 @@ structure ArtinianLocalAlgCat (Λ : Type u) (k : Type w) [CommRing Λ] [Field k]
     [Algebra Λ k]
 ```
 
-**`Deformation.ArtinianLocalAlgCat.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L196). The attribute's comment: “morphisms”. References: SGA 7 VI (1.15), “morphisms, K a field”.
+**`Deformation.ArtinianLocalAlgCat.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L199). The attribute's comment: “morphisms”. References: SGA 7 VI (1.15), “morphisms, K a field”.
 
 > A morphism of Artinian local `Λ`-algebras with fixed residue field is a local
 > `Λ`-algebra homomorphism whose induced map on residue fields respects the specified
@@ -35,7 +35,7 @@ structure ArtinianLocalAlgCat (Λ : Type u) (k : Type w) [CommRing Λ] [Field k]
 structure Hom (A B : ArtinianLocalAlgCat.{u, v, w} Λ k)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L218). The attribute's comment: “category structure”.
+**`Deformation.ArtinianLocalAlgCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L221). The attribute's comment: “category structure”.
 
 > The category structure on Artinian local `Λ`-algebras with the fixed residue field `k`.
 > Composition is composition of the underlying local algebra homomorphisms.
@@ -44,7 +44,7 @@ structure Hom (A B : ArtinianLocalAlgCat.{u, v, w} Λ k)
 instance instCategory : Category (ArtinianLocalAlgCat.{u, v, w} Λ k)
 ```
 
-**`Deformation.IsClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L275). The attribute's comment: “classical case”.
+**`Deformation.IsClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L278). The attribute's comment: “classical case”.
 
 > The classical case of `𝒞_Λ`: `Λ` is a Noetherian complete local ring and the given
 > `Λ`-algebra `k` is its residue field.
@@ -57,15 +57,27 @@ def IsClassical (Λ : Type u) (k : Type w) [CommRing Λ] [Field k] [Algebra Λ k
 
 [Tag 06GD](https://stacks.math.columbia.edu/tag/06GD) in the Stacks Project.
 
-Declarations registered for the tag:
+**`Deformation.ArtinianLocalAlgCat.isSmallExtension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L298).
 
-- [`InfinitesimalLifting.IsSmallExtension`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L129), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Basic.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L286) (StacksFrontier).
+> A morphism `f : B → A` in `𝒞_Λ` is a small extension in the sense of
+> `InfinitesimalLifting.IsSmallExtension` if and only if it is a small extension in the sense of
+> the source: `f` is surjective and its kernel is a nonzero principal ideal annihilated by the
+> maximal ideal of `B`.
+
+```lean
+theorem ArtinianLocalAlgCat.isSmallExtension_iff {B A : ArtinianLocalAlgCat.{u, v, w} Λ k}
+    (f : B ⟶ A) :
+    InfinitesimalLifting.IsSmallExtension (CommRingCat.ofHom f.hom.toRingHom) ↔
+      Function.Surjective f.hom ∧ RingHom.ker f.hom.toRingHom ≠ ⊥ ∧
+        (RingHom.ker f.hom.toRingHom).IsPrincipal ∧
+        maximalIdeal B * RingHom.ker f.hom.toRingHom = ⊥
+```
 
 ## Tag 06GE, a lemma
 
 [Tag 06GE](https://stacks.math.columbia.edu/tag/06GE) in the Stacks Project.
 
-**`Deformation.surjective_factors_into_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L535).
+**`Deformation.surjective_factors_into_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 596](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L596).
 
 > A surjective morphism in `\mathcal{C}_\Lambda` is a finite composite of small
 > extensions.
@@ -87,7 +99,7 @@ theorem surjective_factors_into_smallExtensions
 
 [Tag 06S2](https://stacks.math.columbia.edu/tag/06S2) in the Stacks Project.
 
-**`Deformation.residueImageField_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 831](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L831). The attribute's comment: “the image is a field”.
+**`Deformation.residueImageField_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 892](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L892). The attribute's comment: “the image is a field”.
 
 > For a finite map to a field, the subfield generated by its image has
 > underlying set equal to the image itself.
@@ -98,7 +110,7 @@ theorem residueImageField_eq_range (Λ : Type u) (k : Type v) [CommRing Λ]
     (residueImageField Λ k : Set k) = Set.range (algebraMap Λ k)
 ```
 
-**`Deformation.finrank_residueImageField_eq_quotient_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L847). The attribute's comment: “the equality of degrees”.
+**`Deformation.finrank_residueImageField_eq_quotient_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L908). The attribute's comment: “the equality of degrees”.
 
 > The degrees of `k` over the image field and over the quotient of `Λ` by the kernel of its
 > structural map agree.
@@ -120,7 +132,7 @@ theorem finrank_residueImageField_eq_quotient_ker
       Module.finrank (Λ ⧸ RingHom.ker f) k
 ```
 
-**`Deformation.residueImageField_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 887](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L887). The attribute's comment: “finiteness of the degree”.
+**`Deformation.residueImageField_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 948](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L948). The attribute's comment: “finiteness of the degree”.
 
 > **Stacks Project, Tag 06S2.** The extension of `k` over the image field of
 > a finite ring map is finite.
@@ -136,7 +148,7 @@ theorem residueImageField_finite
 
 [Tag 06GG](https://stacks.math.columbia.edu/tag/06GG) in the Stacks Project.
 
-**`Deformation.finrank_residueImageField_mul_length_eq_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L959). The attribute's comment: “general case”.
+**`Deformation.finrank_residueImageField_mul_length_eq_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L1020). The attribute's comment: “general case”.
 
 > **Stacks Project, Tag 06GG.** Restricting scalars from a local `Λ`-algebra
 > with residue field `k` to `Λ` multiplies module length by the degree of `k` over
@@ -154,7 +166,7 @@ theorem finrank_residueImageField_mul_length_eq_length
       Module.length Λ M
 ```
 
-**`Deformation.length_eq_length_of_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 995](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L995). The attribute's comment: “classical case”.
+**`Deformation.length_eq_length_of_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1056](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L1056). The attribute's comment: “classical case”.
 
 > **Stacks Project, Tag 06GG.** In the classical case, module length is unchanged
 > by restriction of scalars from a local `Λ`-algebra with residue field `k` to `Λ`.
@@ -174,7 +186,7 @@ theorem length_eq_length_of_isClassical
 
 [Tag 06S3](https://stacks.math.columbia.edu/tag/06S3) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat.surjective_hom_iff_surjective_cotangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L296). The attribute's comment: “conditions (1) and (2), on the conormal module of a presentation”.
+**`Deformation.ArtinianLocalAlgCat.surjective_hom_iff_surjective_cotangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L296). The attribute's comment: “conditions (1) and (2), on the conormal module of a presentation”.
 
 > The criterion of [Stacks, Tag 06S3] for surjectivity, read on the conormal modules of the
 > presentations `residueExt B` and `residueExt A`: a morphism of `𝒞_Λ` is surjective exactly when
@@ -186,7 +198,7 @@ theorem surjective_hom_iff_surjective_cotangentMap (f : B ⟶ A) :
       Function.Surjective (Algebra.Extension.Cotangent.map (residueExtHom f))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.surjective_iff_cotangentSpaceMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L1140). The attribute's comment: “conditions (1) and (2)”.
+**`Deformation.ArtinianLocalAlgCat.surjective_iff_cotangentSpaceMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L1201). The attribute's comment: “conditions (1) and (2)”.
 
 > A morphism of Artinian local algebras is surjective exactly when its canonical map
 > `m_A / m_A² → m_B / m_B²` is surjective.
@@ -204,7 +216,7 @@ public theorem surjective_iff_cotangentSpaceMap_surjective
             simpa only [maximalIdeal_comap] using hx))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.cotangentSpaceMap_surjective_iff_relativeCotangentSpaceMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L1187). The attribute's comment: “conditions (2) and (3)”.
+**`Deformation.ArtinianLocalAlgCat.cotangentSpaceMap_surjective_iff_relativeCotangentSpaceMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L1248). The attribute's comment: “conditions (2) and (3)”.
 
 > Surjectivity on `m / m²` is equivalent to surjectivity after also quotienting by the
 > extension of the maximal ideal of the base.
@@ -226,7 +238,7 @@ public theorem cotangentSpaceMap_surjective_iff_relativeCotangentSpaceMap_surjec
 
 [Tag 06GY](https://stacks.math.columbia.edu/tag/06GY) in the Stacks Project.
 
-**`Deformation.relativeCotangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 776](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L776). References: SGA 1 III (2.2).
+**`Deformation.relativeCotangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 837](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L837). References: SGA 1 III (2.2).
 
 > The relative cotangent space of a local homomorphism `f : R → S`, namely
 > `m_S / (m_R S + m_S²)`.
@@ -241,7 +253,7 @@ abbrev relativeCotangentSpace
 
 [Tag 06GH](https://stacks.math.columbia.edu/tag/06GH) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat.hasPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProduct.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProduct.lean#L431). The attribute's comment: “surjective\_fiber\_product\_in\_clambda”.
+**`Deformation.ArtinianLocalAlgCat.hasPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProduct.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/FibreProduct.lean#L431). The attribute's comment: “surjective\_fiber\_product\_in\_clambda”.
 
 > If either morphism is surjective, the ring of compatible pairs is a pullback in `𝒞_Λ`; in
 > particular the pullback exists.
@@ -252,7 +264,7 @@ theorem hasPullback_of_surjective (f₁ : A₁ ⟶ A) (f₂ : A₂ ⟶ A)
     IsConcretePullback f₁ f₂ ∧ HasPullback f₁ f₂
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isConcretePullback_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean#L173). The attribute's comment: “separable\_fiber\_product\_in\_clambda”.
+**`Deformation.ArtinianLocalAlgCat.isConcretePullback_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean#L173). The attribute's comment: “separable\_fiber\_product\_in\_clambda”.
 
 > The algebraic fibre product has its canonical object structure in `𝒞_Λ`
 > when `k` is separable over the image field of `Λ`.
@@ -264,7 +276,7 @@ theorem isConcretePullback_of_isSeparable
     IsConcretePullback f₁ f₂
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isSmallExtension_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean#L167). The attribute's comment: “pullback\_small\_extension”.
+**`Deformation.ArtinianLocalAlgCat.isSmallExtension_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean#L167). The attribute's comment: “pullback\_small\_extension”.
 
 > The first projection from the pullback of a small extension in `𝒞_Λ` is a small
 > extension.
@@ -282,7 +294,7 @@ theorem isSmallExtension_pullback_fst
 
 [Tag 06GF](https://stacks.math.columbia.edu/tag/06GF) in the Stacks Project.
 
-**`Deformation.IsEssentialSurjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L301).
+**`Deformation.IsEssentialSurjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L362).
 
 > A surjective morphism in `𝒞_Λ` is essential if, whenever its composite with a
 > morphism into its source is surjective, that morphism is already surjective.
@@ -296,7 +308,7 @@ abbrev IsEssentialSurjection
 
 [Tag 06S5](https://stacks.math.columbia.edu/tag/06S5) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat.essentialSurjection_iff_mod_maximalIdeal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean#L265). The attribute's comment: “conditions (1) and (2)”.
+**`Deformation.ArtinianLocalAlgCat.essentialSurjection_iff_mod_maximalIdeal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean#L265). The attribute's comment: “conditions (1) and (2)”.
 
 > Essential surjectivity is detected modulo the maximal-ideal squares.
 
@@ -315,7 +327,7 @@ theorem essentialSurjection_iff_mod_maximalIdeal_sq
     IsEssentialSurjection (idealQuotientMap f IB IA hB hA hmap)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.essentialSurjection_iff_mod_relative_maximalIdeal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean#L285). The attribute's comment: “conditions (1) and (3)”.
+**`Deformation.ArtinianLocalAlgCat.essentialSurjection_iff_mod_relative_maximalIdeal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjection.lean#L285). The attribute's comment: “conditions (1) and (3)”.
 
 > Essential surjectivity is detected on the relative cotangent quotient.
 
@@ -338,16 +350,16 @@ theorem essentialSurjection_iff_mod_relative_maximalIdeal_sq
 
 Declarations registered for the tag:
 
-- [`KaehlerDifferential.kerCotangentToTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.kerCotangentToTensor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L21) (StacksFrontier): “the map m\_A/m\_A² → k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.11); EGA 0 (20.5.12); EGA 0 (22.2.9); EGA 0 (22.6.4), “partial”; EGA IV (17.15.9); SGA 1 II (5.9).
-- [`KaehlerDifferential.mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L22) (StacksFrontier): “the map k ⊗\_A Ω\_\{A/Λ} → Ω\_\{k/Λ}”. References: EGA 0 (20.5.2); EGA 0 (20.5.4), “special case”; EGA 0 (20.5.7); EGA 0 (20.6.5), “differential K₁ → K₀”.
-- [`KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L23) (StacksFrontier): “exactness at k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.12), “partial”; EGA 0 (20.6.23), “partial”; EGA 0 (22.4.8), “partial”; EGA IV (16.4.21), “special case”; EGA IV (17.2.5), “affine middle exactness”.
-- [`KaehlerDifferential.mapBaseChange_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L25) (StacksFrontier): “exactness at Ω\_\{k/Λ} (→ 0)”. References: EGA IV (17.13.1), “special case”.
+- [`KaehlerDifferential.kerCotangentToTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.kerCotangentToTensor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L21) (StacksFrontier): “the map m\_A/m\_A² → k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.11); EGA 0 (20.5.12); EGA 0 (22.2.9); EGA 0 (22.6.4), “partial”; EGA IV (17.15.9); SGA 1 II (5.9).
+- [`KaehlerDifferential.mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L22) (StacksFrontier): “the map k ⊗\_A Ω\_\{A/Λ} → Ω\_\{k/Λ}”. References: EGA 0 (20.5.2); EGA 0 (20.5.4), “special case”; EGA 0 (20.5.7); EGA 0 (20.6.5), “differential K₁ → K₀”.
+- [`KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L23) (StacksFrontier): “exactness at k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.12), “partial”; EGA 0 (20.6.23), “partial”; EGA 0 (22.4.8), “partial”; EGA IV (16.4.21), “special case”; EGA IV (17.2.5), “affine middle exactness”.
+- [`KaehlerDifferential.mapBaseChange_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L25) (StacksFrontier): “exactness at Ω\_\{k/Λ} (→ 0)”. References: EGA IV (17.13.1), “special case”.
 
 ## Tag 06S7, an equation
 
 [Tag 06S7](https://stacks.math.columbia.edu/tag/06S7) in the Stacks Project.
 
-**`Deformation.exact_cotangentSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/CotangentSequence.lean#L142). References: EGA 0 (20.6.22), “last three terms”.
+**`Deformation.exact_cotangentSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/CotangentSequence.lean#L142). References: EGA 0 (20.6.22), “last three terms”.
 
 > **Stacks 06S7.** Let `Λ` be a ring, `k` a field and `A` a `Λ`-algebra with a `Λ`-algebra
 > surjection `A → k` with kernel `𝔪_A`. Then the four-term sequence
@@ -369,7 +381,7 @@ public theorem exact_cotangentSequence (h : Function.Surjective (algebraMap A k)
 
 [Tag 06S8](https://stacks.math.columbia.edu/tag/06S8) in the Stacks Project.
 
-**`Deformation.cotangentMap_comp_h1CotangentToConormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L144). The attribute's comment: “left square, for the canonical map through the universal presentation”.
+**`Deformation.cotangentMap_comp_h1CotangentToConormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L144). The attribute's comment: “left square, for the canonical map through the universal presentation”.
 
 > **Stacks 06S8**, left square. The two arrows out of `H₁(L_{k/Λ})` agree: pushing a class
 > into `𝔪_B/𝔪_B²` and then along `B → A` gives its image in `𝔪_A/𝔪_A²`.
@@ -387,7 +399,7 @@ public theorem cotangentMap_comp_h1CotangentToConormal :
       h1CotangentToConormal (residueExtension Λ hA)
 ```
 
-**`Deformation.cotangentSpaceMap_comp_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L163). The attribute's comment: “middle square”.
+**`Deformation.cotangentSpaceMap_comp_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L163). The attribute's comment: “middle square”.
 
 > **Stacks 06S8**, middle square. The differentials `d_B : 𝔪_B/𝔪_B² → k ⊗_B Ω_{B/Λ}` and
 > `d_A : 𝔪_A/𝔪_A² → k ⊗_A Ω_{A/Λ}` are compatible with the maps induced by `B → A`.
@@ -400,7 +412,7 @@ public theorem cotangentSpaceMap_comp_cotangentComplex :
         Algebra.Extension.Cotangent.map (residueExtensionHom (Λ := Λ) hB hA)
 ```
 
-**`Deformation.toKaehler_comp_cotangentSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L174). The attribute's comment: “right square”.
+**`Deformation.toKaehler_comp_cotangentSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L174). The attribute's comment: “right square”.
 
 > **Stacks 06S8**, right square. The two arrows into `Ω_{k/Λ}` agree: the projection of
 > `k ⊗_B Ω_{B/Λ}` onto `Ω_{k/Λ}` factors through `k ⊗_A Ω_{A/Λ}` along `B → A`.
@@ -412,7 +424,7 @@ public theorem toKaehler_comp_cotangentSpaceMap :
       (residueExtension Λ hB).toKaehler
 ```
 
-**`Deformation.mapCotangent_h1CotangentToCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L239). The attribute's comment: “left square, for the arrow of the four-term sequence of 06S7”.
+**`Deformation.mapCotangent_h1CotangentToCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/JacobiZariskiFunctoriality.lean#L239). The attribute's comment: “left square, for the arrow of the four-term sequence of 06S7”.
 
 > **Stacks 06S8**, left square, for the arrow `H₁(L_{k/Λ}) → 𝔪/𝔪²` of the four-term exact
 > sequence of [Stacks, Tag 06S7]: pushing a class of `H₁(L_{k/Λ})` into `𝔪_B/𝔪_B²` and then
@@ -431,7 +443,7 @@ public theorem mapCotangent_h1CotangentToCotangent (x : Algebra.H1Cotangent Λ k
 
 [Tag 06S9](https://stacks.math.columbia.edu/tag/06S9) in the Stacks Project.
 
-**`Deformation.conormalToH1Cotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L230). The attribute's comment: “canonical map”.
+**`Deformation.conormalToH1Cotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L230). The attribute's comment: “canonical map”.
 
 > **Stacks 06S9.** The canonical map `𝔪_Λ/𝔪_Λ² → H₁(L_{k/Λ})`, for `k'` the subfield of `k`
 > generated by the image of `Λ`, presented as a field `S` with `Λ → S` surjective and `S → k` an
@@ -443,7 +455,7 @@ public noncomputable def conormalToH1Cotangent
     (RingHom.ker (algebraMap Λ S)).Cotangent →ₗ[Λ] Algebra.H1Cotangent Λ k
 ```
 
-**`Deformation.conormalToH1Cotangent_baseChange_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L325). The attribute's comment: “separable case”.
+**`Deformation.conormalToH1Cotangent_baseChange_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L325). The attribute's comment: “separable case”.
 
 > **Stacks 06S9.** When `k` is separable over the image field `S = k'`, the canonical map
 > induces an isomorphism `𝔪_Λ/𝔪_Λ² ⊗_{k'} k = H₁(L_{k/Λ})`. The base change is written over `Λ`,
@@ -458,7 +470,7 @@ public theorem conormalToH1Cotangent_baseChange_bijective
       ((conormalToH1Cotangent (Λ := Λ) (S := S) (k := k) h).liftBaseChange k)
 ```
 
-**`Deformation.conormalToH1Cotangent_bijective_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L353). The attribute's comment: “classical case”.
+**`Deformation.conormalToH1Cotangent_bijective_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L353). The attribute's comment: “classical case”.
 
 > **Stacks 06S9.** In the classical case `k = k'`, that is `Λ → k` surjective, the canonical
 > map `𝔪_Λ/𝔪_Λ² → H₁(L_{k/Λ})` is itself an isomorphism.
@@ -470,7 +482,7 @@ public theorem conormalToH1Cotangent_bijective_of_surjective
       (conormalToH1Cotangent (Λ := Λ) (S := k) (k := k) h)
 ```
 
-**`Deformation.conormalToH1Cotangent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L390). The attribute's comment: “compatibility with the conormal map”.
+**`Deformation.conormalToH1Cotangent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/CotangentHomology.lean#L390). The attribute's comment: “compatibility with the conormal map”.
 
 > **Stacks 06S9.** The composite `𝔪_Λ/𝔪_Λ² → H₁(L_{k/Λ}) → H₁(L_{k/A})` is the map induced
 > by the structural map `𝔪_Λ → 𝔪_A`: for `A` with `Λ → A → k` and `A → k` surjective, pushing a
@@ -498,7 +510,7 @@ public theorem conormalToH1Cotangent_comp
 
 [Tag 06H0](https://stacks.math.columbia.edu/tag/06H0) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_bijective_differentialsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityEssentialSurjection.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityEssentialSurjection.lean#L187). The attribute's comment: “part (2), conditions (a) and (c), through the base-change map of differentials”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_bijective_differentialsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityEssentialSurjection.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityEssentialSurjection.lean#L186). The attribute's comment: “part (2), conditions (a) and (c), through the base-change map of differentials”.
 
 > **Stacks 06H0, part (2), conditions (a) and (c)**, with the cotangent space written as the
 > base-change map of differentials. A morphism `f : B ⟶ A` of `𝒞_Λ` is an essential surjection
@@ -523,7 +535,7 @@ public theorem isEssentialSurjection_iff_bijective_differentialsBaseChangeMap
         (Deformation.Artin.differentialsBaseChangeMap Λ (B : Type u) (A : Type u) k))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.surjective_iff_imageDMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L723). The attribute's comment: “part (1)(a), the image of the differential”.
+**`Deformation.ArtinianLocalAlgCat.surjective_iff_imageDMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L723). The attribute's comment: “part (1)(a), the image of the differential”.
 
 > **Stacks 06H0**, part (1)(a). A morphism `f : B ⟶ A` of `𝒞_Λ` is surjective — equivalently,
 > satisfies the conditions of [Stacks, Tag 06S3] — exactly when `Im(d_B) → Im(d_A)` is
@@ -534,7 +546,7 @@ theorem surjective_iff_imageDMap_surjective (f : B ⟶ A) :
     Function.Surjective f.hom ↔ Function.Surjective (imageDMap f)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.surjective_iff_cotangentSpaceMap_residueExtHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 751](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L751). The attribute's comment: “part (1)(b), the cotangent space”.
+**`Deformation.ArtinianLocalAlgCat.surjective_iff_cotangentSpaceMap_residueExtHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L751). The attribute's comment: “part (1)(b), the cotangent space”.
 
 > **Stacks 06H0**, part (1)(b). A morphism `f : B ⟶ A` of `𝒞_Λ` is surjective — equivalently,
 > satisfies the conditions of [Stacks, Tag 06S3] — exactly when
@@ -546,7 +558,7 @@ theorem surjective_iff_cotangentSpaceMap_residueExtHom_surjective (f : B ⟶ A) 
       Function.Surjective (Algebra.Extension.CotangentSpace.map (residueExtHom f))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.imageDMap_bijective_iff_cotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L761). The attribute's comment: “part (2), conditions (b) and (c)”.
+**`Deformation.ArtinianLocalAlgCat.imageDMap_bijective_iff_cotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L761). The attribute's comment: “part (2), conditions (b) and (c)”.
 
 > **Stacks 06H0**, part (2), equivalence of conditions (b) and (c). For a morphism of `𝒞_Λ`
 > the map `Im(d_B) → Im(d_A)` is an isomorphism exactly when
@@ -558,7 +570,7 @@ theorem imageDMap_bijective_iff_cotangentSpaceMap_bijective (f : B ⟶ A) :
       Function.Bijective (Algebra.Extension.CotangentSpace.map (residueExtHom f))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_cotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 832](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L832). The attribute's comment: “part (2), conditions (a) and (c)”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_cotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 832](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L832). The attribute's comment: “part (2), conditions (a) and (c)”.
 
 > **Stacks 06H0**, part (2), equivalence of conditions (a) and (c). A morphism of `𝒞_Λ` is an
 > essential surjection exactly when `Ω_{B/Λ} ⊗_B k → Ω_{A/Λ} ⊗_A k` is an isomorphism.
@@ -569,7 +581,7 @@ theorem isEssentialSurjection_iff_cotangentSpaceMap_bijective (f : B ⟶ A) :
       Function.Bijective (Algebra.Extension.CotangentSpace.map (residueExtHom f))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_imageDMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L841). The attribute's comment: “part (2), conditions (a) and (b)”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_imageDMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 841](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L841). The attribute's comment: “part (2), conditions (a) and (b)”.
 
 > **Stacks 06H0**, part (2), equivalence of conditions (a) and (b). A morphism of `𝒞_Λ` is an
 > essential surjection exactly when `Im(d_B) → Im(d_A)` is an isomorphism.
@@ -579,7 +591,7 @@ theorem isEssentialSurjection_iff_imageDMap_bijective (f : B ⟶ A) :
     IsEssentialSurjection f ↔ Function.Bijective (imageDMap f)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_relativeCotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L1012). The attribute's comment: “part (3), separable case”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_iff_relativeCotangentSpaceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/EssentialSurjectionDifferential.lean#L1011). The attribute's comment: “part (3), separable case”.
 
 > **Stacks 06H0**, part (3). If `k` is separable over the image field `k'` — presented as a
 > field `S` with `Λ → S` surjective and `S → k` separable — then a morphism `f : B ⟶ A` of `𝒞_Λ`
@@ -599,7 +611,7 @@ theorem isEssentialSurjection_iff_relativeCotangentSpaceMap_bijective
     IsEssentialSurjection f ↔ Function.Bijective (relativeCotangentSpaceMap f)
 ```
 
-**`Deformation.not_isEssentialSurjection_iff_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L639). The attribute's comment: “small\_extension\_section”.
+**`Deformation.not_isEssentialSurjection_iff_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 700](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Basic.lean#L700). The attribute's comment: “small\_extension\_section”.
 
 > A small extension in `𝒞_Λ` is nonessential if and only if it has a section in
 > `𝒞_Λ`.
@@ -619,4 +631,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.3, Tag 06GB](https://stacks.math.columbia.edu/tag/06GB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

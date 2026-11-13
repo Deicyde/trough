@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.105 Tricks with double complexes
 
-Section 15.105 of the Stacks Project, [Tag 0EYW](https://stacks.math.columbia.edu/tag/0EYW). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.105 of the Stacks Project, [Tag 0EYW](https://stacks.math.columbia.edu/tag/0EYW). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H0Q, a lemma
 
 [Tag 0H0Q](https://stacks.math.columbia.edu/tag/0H0Q) in the Stacks Project.
 
-**`CplxCplx.total_H0_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProductTotalComplex.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/ProductTotalComplex.lean#L386).
+**`CplxCplx.total_H0_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProductTotalComplex.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/ProductTotalComplex.lean#L386).
 
 > **Stacks Tag 0H0Q (Lemma 15.105.1).**
 > Let `A_0^• → A_1^• → ⋯` be a complex of complexes of abelian groups such that
@@ -57,7 +57,7 @@ theorem total_H0_eq_zero (c : CplxCplx)
 
 [Tag 0EYX](https://stacks.math.columbia.edu/tag/0EYX) in the Stacks Project.
 
-**`CplxCplx.Hom.isTotalQuasiIso_of_isInternalQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProductTotalComplex/Rowwise.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/ProductTotalComplex/Rowwise.lean#L611).
+**`CplxCplx.Hom.isTotalQuasiIso_of_isInternalQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProductTotalComplex/Rowwise.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/ProductTotalComplex/Rowwise.lean#L611).
 
 > A morphism between complexes of cochain complexes
 > which is a quasi-isomorphism on every internal complex induces a quasi-isomorphism between
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.105, Tag 0EYW](https://stacks.math.columbia.edu/tag/0EYW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

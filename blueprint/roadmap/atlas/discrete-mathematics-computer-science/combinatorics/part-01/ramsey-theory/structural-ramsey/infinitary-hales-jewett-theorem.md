@@ -7,7 +7,7 @@ statement: formalized
 
 # Infinitary Hales–Jewett theorem
 
-10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html).
+10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html).
 
 ## Infinitary Hales–Jewett theorem
 
@@ -23,7 +23,7 @@ $m_1 < m_2 < \cdots < m_l$ in $\mathbb{N}$ and all $a_1, \dots, a_l \in A$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Theorem 1.2 (Bergelson, Blass and Hindman).
 
-Stated but not proved: `MetaMathlibExt.infinitary_halesJewett` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#infinitary-hales-jewett).
+Stated but not proved: `MetaMathlibExt.infinitary_halesJewett` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#infinitary-hales-jewett).
 
 ## Karagiannis's infinitary Hales–Jewett theorem for increasing alphabets
 
@@ -40,7 +40,7 @@ $m_1 < m_2 < \cdots < m_l$ in $\mathbb{N}$ and all $a_i \in A_{m_i}$, $i = 1, \d
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Theorem 1.8 (Karagiannis).
 
-Stated but not proved: `MetaMathlibExt.infinitary_halesJewett_increasing_alphabets` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#infinitary-hales-jewett-increasing-alpha).
+Stated but not proved: `MetaMathlibExt.infinitary_halesJewett_increasing_alphabets` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#infinitary-hales-jewett-increasing-alpha).
 
 ## Piecewise syndetic sets contain Hales–Jewett configurations
 
@@ -59,7 +59,7 @@ For $n = 0$ the claim is that $D$ is nonempty.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Lemma 3.3.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWord_subst_mem_of_isMulPiecewiseSyndetic` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-word-subst-mem-of-is-mul).
+Stated but not proved: `MetaMathlibExt.exists_variableWord_subst_mem_of_isMulPiecewiseSyndetic` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-word-subst-mem-of-is-mul).
 
 ## J-sets contain Hales–Jewett configurations
 
@@ -79,7 +79,7 @@ vacuously a $J$-set, and there is no $0$-variable word.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Lemma 3.4.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWord_subst_mem_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-word-subst-mem-of-is-mul-2).
+Stated but not proved: `MetaMathlibExt.exists_variableWord_subst_mem_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-word-subst-mem-of-is-mul-2).
 
 ## Infinitary Hales–Jewett configurations in central sets
 
@@ -99,7 +99,7 @@ $j = 0, \dots, l$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Theorem 3.5.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_of_isCentralSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-of-is-cen).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_of_isCentralSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-of-is-cen).
 
 ## Infinitary Hales–Jewett configurations in C-sets
 
@@ -119,7 +119,7 @@ $j = 0, \dots, l$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Corollary 3.6.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-of-is-cse).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-of-is-cse).
 
 ## Variable-count sums of variable words in J-sets
 
@@ -138,7 +138,7 @@ $\sum_{k \in G} |w_k|_v = \sum_{j \in H} x_j$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Theorem 3.7.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_subst_mem_sum_count_mem_finiteSums_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-subst-mem-sum-coun).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_subst_mem_sum_count_mem_finiteSums_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-subst-mem-sum-coun).
 
 ## Variable-count sums of variable words in C-sets
 
@@ -158,7 +158,7 @@ $H \subseteq \mathbb{N}$ with $\sum_{k \in G} |w_k|_v = \sum_{j \in H} x_j$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Corollary 3.8.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_sum_count_mem_finiteSums_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-sum-count).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_sum_count_mem_finiteSums_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-sum-count).
 
 ## Variable patterns of variable words in J-sets
 
@@ -182,7 +182,7 @@ juxtaposition is concatenation of words.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Theorem 3.9.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_subst_mem_prod_pattern_mem_finiteProducts_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-subst-mem-prod-pat).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_subst_mem_prod_pattern_mem_finiteProducts_of_isMulJSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-subst-mem-prod-pat).
 
 ## Variable patterns of variable words in C-sets
 
@@ -207,7 +207,7 @@ juxtaposition is concatenation of words.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Corollary 3.10.
 
-Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_prod_pattern_mem_finiteProducts_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-prod-patt).
+Stated but not proved: `MetaMathlibExt.exists_variableWords_prod_mem_prod_pattern_mem_finiteProducts_of_isCSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/InfinitaryHalesJewettWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html#exists-variable-words-prod-mem-prod-patt).
 
 ## Depends on
 
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Infinitary Hales–Jewett theorem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/infinitary-hales-jewett-theorem)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Pumping lemma for context-free languages
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html).
 
 ## Height-bounded derivations
 
@@ -23,7 +23,7 @@ yields $w_1 w_2$ at height $\max(n + 1, m)$.
 Thus $n$ bounds the height of a derivation forest, the number of nonterminal expansions along
 its longest path; terminals and empty forests contribute nothing.
 
-Formalized by `Cslib.Language.YieldsH`, an inductive type declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#yields-h).
+Formalized by `Cslib.Language.YieldsH`, an inductive type declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#yields-h).
 
 ## Raising the height bound of a yield
 
@@ -31,7 +31,7 @@ Let $g$ be a context-free grammar. If a sentential
 form $\alpha$ yields the terminal word $w$ through a derivation forest of height at most $n$,
 and $n \le m$, then $\alpha$ yields $w$ through a derivation forest of height at most $m$.
 
-Formalized by `Cslib.Language.YieldsH.mono`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#mono).
+Formalized by `Cslib.Language.YieldsH.mono`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#mono).
 
 ## Every yield has a height bound
 
@@ -39,7 +39,7 @@ Let $g$ be a context-free grammar. If a sentential form
 $\alpha$ yields the terminal word $w$, then there is a natural number $n$ such that $\alpha$
 yields $w$ through a derivation forest of height at most $n$.
 
-Formalized by `Cslib.Language.YieldsH.of_yields`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-yields).
+Formalized by `Cslib.Language.YieldsH.of_yields`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-yields).
 
 ## Height-bounded yields are yields
 
@@ -47,7 +47,7 @@ Let $g$ be a context-free grammar. If a sentential
 form $\alpha$ yields the terminal word $w$ through a derivation forest of height at most $n$,
 then $\alpha$ yields $w$.
 
-Formalized by `Cslib.Language.Yields.of_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-yields-h).
+Formalized by `Cslib.Language.Yields.of_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-yields-h).
 
 ## Concatenating height-bounded yields
 
@@ -57,7 +57,7 @@ a sentential form $v$ yields the terminal word $w_2$ through one of height at mo
 concatenation $uv$ yields $w_1 w_2$ through a derivation forest of height at most
 $\max(n, m)$.
 
-Formalized by `Cslib.Language.YieldsH.append`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#append).
+Formalized by `Cslib.Language.YieldsH.append`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#append).
 
 ## Splitting a height-bounded yield at a concatenation
 
@@ -67,7 +67,7 @@ through a derivation forest of height at most $n$, then there are terminal words
 with $w = w_1 w_2$ such that $u$ yields $w_1$ and $v$ yields $w_2$, each through a derivation
 forest of height at most $n$.
 
-Formalized by `Cslib.Language.YieldsH.append_inv`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#append-inv).
+Formalized by `Cslib.Language.YieldsH.append_inv`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#append-inv).
 
 ## Length bound for height-bounded yields
 
@@ -76,7 +76,7 @@ natural number such that every production of $g$ has an output of length at most
 sentential form $\alpha$ yields the terminal word $w$ through a derivation forest of height at
 most $n$, then $|w| \le |\alpha| \cdot \max(2, R)^n$.
 
-Formalized by `Cslib.Language.List.length_le_of_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#length-le-of-yields-h).
+Formalized by `Cslib.Language.List.length_le_of_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#length-le-of-yields-h).
 
 ## Minimal-height derivation forests exist
 
@@ -85,7 +85,7 @@ sentential form $\alpha$ yields the terminal word $w$, then there is a natural n
 that $\alpha$ yields $w$ through a derivation forest of height at most $n$, but through no
 derivation forest of height at most $m$ for any $m < n$.
 
-Formalized by `Cslib.Language.exists_minimal_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#exists-minimal-yields-h).
+Formalized by `Cslib.Language.exists_minimal_yieldsH`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#exists-minimal-yields-h).
 
 ## Derivation contexts
 
@@ -97,7 +97,7 @@ the nonterminal $A$ yields the word $l w r$ in $g$.
 This is the language-inclusion form of a one-hole derivation context; it is what pumping
 iteration uses, and it holds vacuously when $B$ yields nothing.
 
-Formalized by `Cslib.Language.YieldsContext`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#yields-context).
+Formalized by `Cslib.Language.YieldsContext`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#yields-context).
 
 ## A production gives derivation contexts
 
@@ -107,7 +107,7 @@ $\alpha_2$ are sentential forms. If $\alpha_1$ yields the terminal word $l$ and 
 the terminal word $r$, then for every terminal word $w$ yielded by $B$ the word $l w r$ is
 yielded by $A$; that is, $(l, r)$ is a derivation context from $A$ to $B$.
 
-Formalized by `Cslib.Language.YieldsContext.of_rule`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-rule).
+Formalized by `Cslib.Language.YieldsContext.of_rule`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#of-rule).
 
 ## Pumping through a self-context
 
@@ -117,7 +117,7 @@ $l w r$ is also yielded by $A$, and that $A$ yields $x$. Then for every natural 
 nonterminal $A$ yields $l^i x r^i$, where $l^i$ and $r^i$ denote the concatenations of $i$
 copies of $l$ and of $r$.
 
-Formalized by `Cslib.Language.YieldsContext.iterate`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#iterate).
+Formalized by `Cslib.Language.YieldsContext.iterate`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#iterate).
 
 ## Pumping lemma for context-free languages
 
@@ -127,7 +127,7 @@ can be written as $w = uvxyz$ with words $u, v, x, y, z$ over $T$ such that $vy$
 $|vxy| \le n$, and $u v^i x y^i z \in L$ for every natural number $i$, where $v^i$ and $y^i$
 denote the concatenations of $i$ copies of $v$ and of $y$.
 
-Formalized by `Cslib.Language.IsContextFree.pumping`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 652](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L652). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#pumping).
+Formalized by `Cslib.Language.IsContextFree.pumping`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Pumping.lean, line 652](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Pumping.lean#L652). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html#pumping).
 
 ## Depends on
 
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pumping lemma for context-free languages](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/pumping-lemma-for-context-free-languages)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.26 Being proper over a base
 
-Section 30.26 of the Stacks Project, [Tag 0CYK](https://stacks.math.columbia.edu/tag/0CYK). 11 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.26 of the Stacks Project, [Tag 0CYK](https://stacks.math.columbia.edu/tag/0CYK). 11 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CYL, a lemma
 
 [Tag 0CYL](https://stacks.math.columbia.edu/tag/0CYL) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_iff_exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L136). The attribute's comment: “parts (1) and (2)”. References: EGA II (5.4.10), “indep. of subscheme”.
+**`AlgebraicGeometry.isProperOver_iff_exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L136). The attribute's comment: “parts (1) and (2)”. References: EGA II (5.4.10), “indep. of subscheme”.
 
 > **Stacks 0CYL, parts (1) and (2).** The reduced closed subscheme on `Z` is proper over `S`
 > exactly when some closed subscheme structure on `Z` is proper over `S`.
@@ -24,7 +24,7 @@ public theorem isProperOver_iff_exists_isProper :
     IsProperOver f Z ↔ ∃ I : X.IdealSheafData, I.support = Z ∧ IsProper (I.subschemeι ≫ f)
 ```
 
-**`AlgebraicGeometry.exists_isProper_iff_forall_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L148). The attribute's comment: “parts (2) and (3)”. References: EGA II (5.4.10), “indep. of subscheme”.
+**`AlgebraicGeometry.exists_isProper_iff_forall_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L148). The attribute's comment: “parts (2) and (3)”. References: EGA II (5.4.10), “indep. of subscheme”.
 
 > **Stacks 0CYL, parts (2) and (3).** If one closed subscheme structure on `Z` is proper over
 > `S`, then every closed subscheme structure on `Z` is proper over `S`.
@@ -39,7 +39,7 @@ public theorem exists_isProper_iff_forall_isProper :
 
 [Tag 0CYM](https://stacks.math.columbia.edu/tag/0CYM) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProperOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L82).
+**`AlgebraicGeometry.IsProperOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L82).
 
 > **Stacks 0CYM.** A closed subset `Z` of `X` is proper over `S` if its reduced induced closed
 > subscheme is proper over `S`.
@@ -53,7 +53,7 @@ public abbrev IsProperOver {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType
 
 [Tag 0CYN](https://stacks.math.columbia.edu/tag/0CYN) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L159).
+**`AlgebraicGeometry.isProperOver_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L159).
 
 > **Stacks 0CYN.** A closed subset of a closed subset proper over the base is proper over the
 > base.
@@ -67,7 +67,7 @@ public theorem isProperOver_of_le {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFin
 
 [Tag 0CYP](https://stacks.math.columbia.edu/tag/0CYP) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_preimage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L168).
+**`AlgebraicGeometry.isProperOver_preimage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L168).
 
 > **Stacks 0CYP.** A closed subset proper over the base remains proper after base change.
 
@@ -84,7 +84,7 @@ public theorem isProperOver_preimage_baseChange {X' X S' S : Scheme.{u}}
 
 [Tag 0CYQ](https://stacks.math.columbia.edu/tag/0CYQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isClosed_image_of_isProperOver`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L74). The attribute's comment: “image\_separated”. References: SGA 4 XVII (6.1.1), “Clause (i)”.
+**`AlgebraicGeometry.isClosed_image_of_isProperOver`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L74). The attribute's comment: “image\_separated”. References: SGA 4 XVII (6.1.1), “Clause (i)”.
 
 > The image of a closed subset proper over the base is closed in a separated
 > scheme locally of finite type over that base.
@@ -97,7 +97,7 @@ lemma isClosed_image_of_isProperOver {X Y S : Scheme.{u}}
     IsClosed (f.base '' (Z : Set X))
 ```
 
-**`AlgebraicGeometry.isProperOver_image`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L87). The attribute's comment: “image\_separated”. References: EGA II (5.4.10), “more general”.
+**`AlgebraicGeometry.isProperOver_image`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L87). The attribute's comment: “image\_separated”. References: EGA II (5.4.10), “more general”.
 
 > The image of a closed subset proper over the base is itself proper over the
 > base, when the target is separated and locally of finite type.
@@ -111,7 +111,7 @@ lemma isProperOver_image {X Y S : Scheme.{u}}
       ⟨f.base '' (Z : Set X), isClosed_image_of_isProperOver p g f hfg Z hZ⟩
 ```
 
-**`AlgebraicGeometry.isProperOver_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L106). The attribute's comment: “preimage\_proper”.
+**`AlgebraicGeometry.isProperOver_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/Functoriality.lean#L106). The attribute's comment: “preimage\_proper”.
 
 > The inverse image of a closed subset proper over the base along a proper
 > morphism is proper over the base.
@@ -123,7 +123,7 @@ theorem isProperOver_preimage {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S)
     IsProperOver (f ≫ g) (Z.preimage f.continuous)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.closedImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L200). The attribute's comment: “image\_universally\_closed”.
+**`AlgebraicGeometry.Scheme.Hom.closedImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L200). The attribute's comment: “image\_universally\_closed”.
 
 > **Stacks 0CYQ.** The image of a closed subset under a universally closed morphism, as a
 > closed subset.
@@ -133,7 +133,7 @@ public def Scheme.Hom.closedImage {X Y : Scheme.{u}} (f : X ⟶ Y) [UniversallyC
     (Z : Closeds X) : Closeds Y
 ```
 
-**`AlgebraicGeometry.isProperOver_closedImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L207). The attribute's comment: “image\_universally\_closed”.
+**`AlgebraicGeometry.isProperOver_closedImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L207). The attribute's comment: “image\_universally\_closed”.
 
 > **Stacks 0CYQ.** The closed image of a closed subset proper over the base is proper over the
 > base.
@@ -149,7 +149,7 @@ public theorem isProperOver_closedImage {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : 
 
 [Tag 0CYR](https://stacks.math.columbia.edu/tag/0CYR) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L261).
+**`AlgebraicGeometry.isProperOver_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L261).
 
 > **Stacks 0CYR.** The union of two closed subsets proper over the base is proper over the
 > base.
@@ -160,7 +160,7 @@ public theorem isProperOver_sup {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFinit
     IsProperOver f (Z ⊔ W)
 ```
 
-**`AlgebraicGeometry.isProperOver_iSup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L312).
+**`AlgebraicGeometry.isProperOver_iSup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperClosedSubset.lean#L312).
 
 > **Stacks 0CYR.** A finite union of closed subsets proper over the base is proper over the
 > base.
@@ -175,7 +175,7 @@ public theorem isProperOver_iSup {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFini
 
 [Tag 0CYS](https://stacks.math.columbia.edu/tag/0CYS) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isProperOver_supp_iff_isProper_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean#L62). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Scheme.Modules.isProperOver_supp_iff_isProper_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean#L62). The attribute's comment: “conditions (1) and (2)”.
 
 > The support of a quasi-coherent module of finite type is proper over the base if and only if
 > its scheme-theoretic support is proper over the base.
@@ -186,7 +186,7 @@ public theorem isProperOver_supp_iff_isProper_schemeTheoreticSupport :
       IsProper ((schemeTheoreticSupport F).subschemeι ≫ f)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isProper_schemeTheoreticSupport_iff_exists_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean#L76). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Scheme.Modules.isProper_schemeTheoreticSupport_iff_exists_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/ProperSupport.lean#L76). The attribute's comment: “conditions (2) and (3)”.
 
 > The scheme-theoretic support of a quasi-coherent module `F` of finite type is proper over the
 > base if and only if there is a closed subscheme of `X` proper over the base carrying a
@@ -204,7 +204,7 @@ public theorem isProper_schemeTheoreticSupport_iff_exists_pushforward :
 
 [Tag 0CYT](https://stacks.math.columbia.edu/tag/0CYT) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_supp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/BaseChange.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/BaseChange.lean#L47).
+**`AlgebraicGeometry.isProperOver_supp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/BaseChange.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/BaseChange.lean#L47).
 
 > In a cartesian square, base change preserves properness of the support
 > of a finite type module over the base.
@@ -227,7 +227,7 @@ theorem isProperOver_supp_pullback {X' X S' S : Scheme.{u}}
 
 [Tag 0CYU](https://stacks.math.columbia.edu/tag/0CYU) in the Stacks Project.
 
-**`AlgebraicGeometry.isSerreClass_hasProperSupport_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/CoherentSerreClass.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/CoherentSerreClass.lean#L68). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isSerreClass_hasProperSupport_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/CoherentSerreClass.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/CoherentSerreClass.lean#L68). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0CYU, part (2).** For `f : X ⟶ S` locally of finite type with `S`
 > locally Noetherian, the coherent `𝒪_X`-modules whose support is proper over `S` form a Serre
@@ -244,7 +244,7 @@ theorem isSerreClass_hasProperSupport_coherentModules [IsLocallyNoetherian S] :
       (fun F => Stacks.Algebraization.HasProperSupport f F.obj)
 ```
 
-**`AlgebraicGeometry.isProperOver_biprod_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L190). The attribute's comment: “sheaf\_operations”.
+**`AlgebraicGeometry.isProperOver_biprod_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L190). The attribute's comment: “sheaf\_operations”.
 
 > The direct sum of two sheaves with proper support
 > has proper support.
@@ -261,7 +261,7 @@ theorem isProperOver_biprod_support {X S : Scheme.{u}} (f : X ⟶ S)
       IsProperOver f Z)
 ```
 
-**`AlgebraicGeometry.isProperOver_extension_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L209). The attribute's comment: “sheaf\_operations”.
+**`AlgebraicGeometry.isProperOver_extension_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L209). The attribute's comment: “sheaf\_operations”.
 
 > A short exact extension of sheaves with proper
 > support has proper support.
@@ -277,7 +277,7 @@ theorem isProperOver_extension_support {X S : Scheme.{u}} (f : X ⟶ S)
       IsProperOver f Z)
 ```
 
-**`AlgebraicGeometry.isProperOver_image_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L222). The attribute's comment: “sheaf\_operations”.
+**`AlgebraicGeometry.isProperOver_image_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L222). The attribute's comment: “sheaf\_operations”.
 
 > The image of a morphism from a finite type sheaf with proper
 > support to an arbitrary sheaf of modules has proper support.
@@ -293,7 +293,7 @@ theorem isProperOver_image_support {X S : Scheme.{u}} (f : X ⟶ S)
       IsProperOver f Z)
 ```
 
-**`AlgebraicGeometry.isProperOver_cokernel_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L236). The attribute's comment: “sheaf\_operations”.
+**`AlgebraicGeometry.isProperOver_cokernel_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L236). The attribute's comment: “sheaf\_operations”.
 
 > The cokernel of a morphism from an arbitrary sheaf of modules to a finite type
 > sheaf with proper support has proper support.
@@ -309,7 +309,7 @@ theorem isProperOver_cokernel_support {X S : Scheme.{u}} (f : X ⟶ S)
       IsProperOver f Z)
 ```
 
-**`AlgebraicGeometry.isProperOver_quotient_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L249). The attribute's comment: “sheaf\_operations”.
+**`AlgebraicGeometry.isProperOver_quotient_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ProperOverBase/ModuleSupport.lean#L249). The attribute's comment: “sheaf\_operations”.
 
 > A quotient of a finite type sheaf with proper
 > support has proper support.
@@ -329,7 +329,7 @@ theorem isProperOver_quotient_support {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 08DS](https://stacks.math.columbia.edu/tag/08DS) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperSupportCoherent.isCoherent_higherDirectImage_of_properSupp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/Unconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/Unconditional.lean#L60).
+**`Stacks.AlgebraicGeometry.ProperSupportCoherent.isCoherent_higherDirectImage_of_properSupp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/Unconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/Unconditional.lean#L60).
 
 > Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of finite type and let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type whose support is proper over `S`. Then the higher
@@ -345,7 +345,7 @@ theorem isCoherent_higherDirectImage_of_properSupp
 
 [Tag 0CYV](https://stacks.math.columbia.edu/tag/0CYV) in the Stacks Project.
 
-**`Stacks.Coherent.isSerreClass_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean#L421). The attribute's comment: “proper support”.
+**`Stacks.Coherent.isSerreClass_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean#L421). The attribute's comment: “proper support”.
 
 > **[Stacks, Tag 0CYV], part (1).** The coherent adic systems along `ℐ` whose first term has
 > support proper over `S` form a Serre subcategory of `Coh(X, ℐ)`.
@@ -364,7 +364,7 @@ public theorem isSerreClass_hasProperSupport {X S : Scheme.{u}} [IsNoetherian S]
       (fun F => Stacks.Algebraization.HasProperSupport f (F.obj.obj (op 0)))
 ```
 
-**`Stacks.Coherent.isSerreClass_hasProperAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean#L471). The attribute's comment: “common proper annihilator”.
+**`Stacks.Coherent.isSerreClass_hasProperAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ProperSerreClass.lean#L471). The attribute's comment: “common proper annihilator”.
 
 > **[Stacks, Tag 0CYV], part (2).** The coherent adic systems along `ℐ` admitting a closed
 > subscheme of `X` proper over `S` whose ideal sheaf annihilates every term form a Serre subcategory
@@ -390,4 +390,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.26, Tag 0CYK](https://stacks.math.columbia.edu/tag/0CYK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

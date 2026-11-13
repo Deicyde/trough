@@ -11,7 +11,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/Oppermann%27s_conjecture)
 > - [Luan Alberto Ferreira, *Real exponential sums over primes and prime gaps*](https://arxiv.org/abs/2307.08725)
 
-*Quoted from [FormalConjectures/Wikipedia/Oppermann.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Oppermann.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 3 open, 1 solved and 2 textbook results.
 
@@ -26,7 +26,7 @@ theorem oppermann_conjecture.parts.i (x : ℕ) (hx : 2 ≤ x) :
     ∃ p ∈ Ioo (x * (x - 1)) (x^2), p.Prime
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 38](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L38).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 38](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L38).
 
 ## `Oppermann.oppermann_conjecture.parts.ii`
 
@@ -39,7 +39,7 @@ theorem oppermann_conjecture.parts.ii (x : ℕ) (hx : 2 ≤ x) :
     ∃ p ∈ Ioo (x^2) (x * (x + 1)), p.Prime
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L46).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L46).
 
 ## `Oppermann.oppermann_conjecture`
 
@@ -56,7 +56,7 @@ theorem oppermann_conjecture (x : ℕ) (hx : 2 ≤ x) :
     (∃ p ∈ Ioo (x^2) (x * (x + 1)), p.Prime)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L57).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L57).
 
 ## `Oppermann.oppermann_implies_brocard`
 
@@ -71,7 +71,7 @@ theorem oppermann_implies_brocard (n : ℕ) (hn : 1 ≤ n) (P : type_of% opperma
     4 ≤ ((Ioo (prev ^ 2) (next ^ 2)).filter Nat.Prime).card
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L64).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L64).
 
 ## `Oppermann.oppermann_implies_legendre`
 
@@ -84,7 +84,7 @@ theorem oppermann_implies_legendre (n : ℕ) (hn : 1 ≤ n) (P : type_of% opperm
     ∃ p ∈ Ioo (n ^ 2) ((n + 1) ^ 2), p.Prime
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L106).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L106).
 
 ## `Oppermann.oppermann_conjecture.ferreira_large_x`
 
@@ -98,7 +98,7 @@ theorem oppermann_conjecture.ferreira_large_x : ∀ᶠ x in atTop,
     (∃ p ∈ Ioo (x^2) (x * (x + 1)), p.Prime)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean#L117).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Oppermann.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean#L117).
 
 ## Depends on
 
@@ -106,5 +106,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Oppermann.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Oppermann.lean)
+- [FormalConjectures/Wikipedia/Oppermann.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Oppermann.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Oppermann%27s_conjecture)

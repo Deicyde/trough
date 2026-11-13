@@ -7,7 +7,7 @@ statement: formalized
 
 # Sierpiński and Riesel numbers
 
-30 results, 11 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html).
+30 results, 11 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html).
 
 ## Composite numbers from Mersenne shifts of an arithmetic progression
 
@@ -21,7 +21,7 @@ $(a + rd + M_j) \cdot 2^n + 1$ is composite.
 
 - Carrie E. Finch-Smith and R. Scottfield Groth, "Arbitrarily Long Sequences of Sierpiński Numbers that are the Sum of a Sierpiński Number and a Mersenne Number", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.SierpinskiMersenneWanted.exists_arithProg_sierpinski_add_mersenne` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiMersenneWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiMersenneWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#exists-arith-prog-sierpinski-add-mersenn).
+Stated but not proved: `MathlibExt.NumberTheory.SierpinskiMersenneWanted.exists_arithProg_sierpinski_add_mersenne` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiMersenneWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiMersenneWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#exists-arith-prog-sierpinski-add-mersenn).
 
 ## Sierpiński number
 
@@ -32,7 +32,7 @@ for every integer $n \ge 1$, the number $k \cdot 2^n + 1$ is not prime.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, abstract and Section 1.
 
-Formalized by `MetaMathlibExt.IsSierpinskiNumber`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number).
+Formalized by `MetaMathlibExt.IsSierpinskiNumber`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number).
 
 ## Riesel number
 
@@ -43,7 +43,7 @@ integer $n \ge 1$, the number $k \cdot 2^n - 1$ is not prime.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, abstract and Section 1.
 
-Formalized by `MetaMathlibExt.IsRieselNumber`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number).
+Formalized by `MetaMathlibExt.IsRieselNumber`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number).
 
 ## $1$ is not a Sierpiński number
 
@@ -54,7 +54,7 @@ $1 \cdot 2 + 1 = 3$ is prime.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 1.
 
-Formalized by `MetaMathlibExt.not_isSierpinskiNumber_one`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-number-one).
+Formalized by `MetaMathlibExt.not_isSierpinskiNumber_one`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-number-one).
 
 ## One is not a Riesel number
 
@@ -65,7 +65,7 @@ $1 \cdot 2^2 - 1 = 3$ is prime.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 1.
 
-Formalized by `MetaMathlibExt.not_isRieselNumber_one`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-riesel-number-one).
+Formalized by `MetaMathlibExt.not_isRieselNumber_one`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-riesel-number-one).
 
 ## Repstrings
 
@@ -84,7 +84,7 @@ expansion is $k$ written $t$ times with $z$ zeros between consecutive copies.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Sections 1 and 4.
 
-Formalized by `MetaMathlibExt.repstring`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring).
+Formalized by `MetaMathlibExt.repstring`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring).
 
 ## A $10$-repstring
 
@@ -95,7 +95,7 @@ $1_{10}^{(2;3)} = 1001001$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 4.
 
-Formalized by `MetaMathlibExt.repstring_ten_one_two_three`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring-ten-one-two-three).
+Formalized by `MetaMathlibExt.repstring_ten_one_two_three`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring-ten-one-two-three).
 
 ## The three-digit $2$-repunit
 
@@ -106,7 +106,7 @@ the $2$-repunit $1_2^{(3)}$ with three digits, equals $7$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 1.
 
-Formalized by `MetaMathlibExt.repstring_two_one_zero_three`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring-two-one-zero-three).
+Formalized by `MetaMathlibExt.repstring_two_one_zero_three`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#repstring-two-one-zero-three).
 
 ## Sierpiński covering data
 
@@ -123,7 +123,7 @@ that $k \equiv -2^{-r} \pmod{p}$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 2, Equation (2).
 
-Formalized by `MetaMathlibExt.IsSierpinskiCoveringData`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-covering-data).
+Formalized by `MetaMathlibExt.IsSierpinskiCoveringData`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-covering-data).
 
 ## Riesel covering data
 
@@ -141,7 +141,7 @@ $p \mid 0$ and holds trivially.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 2, Equation (3).
 
-Formalized by `MetaMathlibExt.IsRieselCoveringData`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-covering-data).
+Formalized by `MetaMathlibExt.IsRieselCoveringData`, a definition declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-covering-data).
 
 ## Empty Sierpiński covering data
 
@@ -152,7 +152,7 @@ Sierpiński covering data for $k$: the empty family of residue classes does not 
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 2.
 
-Formalized by `MetaMathlibExt.not_isSierpinskiCoveringData_empty`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-covering-data-empty).
+Formalized by `MetaMathlibExt.not_isSierpinskiCoveringData_empty`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-covering-data-empty).
 
 ## The empty set is not Riesel covering data
 
@@ -163,7 +163,7 @@ not Riesel covering data for $k$, because its residue classes do not cover $\mat
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Section 2.
 
-Formalized by `MetaMathlibExt.not_isRieselCoveringData_empty`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-riesel-covering-data-empty).
+Formalized by `MetaMathlibExt.not_isRieselCoveringData_empty`, a theorem declared in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-riesel-covering-data-empty).
 
 ## Theorem 3.2 (no Sierpiński $2$-repdigits from coverings)
 
@@ -176,7 +176,7 @@ for $2^t - 1$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.2.
 
-Stated but not proved: `MetaMathlibExt.not_isSierpinskiCoveringData_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-covering-data-two-pow).
+Stated but not proved: `MetaMathlibExt.not_isSierpinskiCoveringData_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#not-is-sierpinski-covering-data-two-pow).
 
 ## Covering-produced Sierpiński numbers give infinitely many Sierpiński repintegers
 
@@ -191,7 +191,7 @@ $b$), is a Sierpiński number.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.3.
 
-Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repintegers` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repintegers).
+Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repintegers` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repintegers).
 
 ## Covering-produced Riesel numbers give infinitely many Riesel repintegers
 
@@ -206,7 +206,7 @@ number.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.4.
 
-Stated but not proved: `MetaMathlibExt.infinite_riesel_repintegers` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repintegers).
+Stated but not proved: `MetaMathlibExt.infinite_riesel_repintegers` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repintegers).
 
 ## Binary repintegers of 18107 that are Sierpiński numbers
 
@@ -219,7 +219,7 @@ Sierpiński number.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.5.
 
-Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_18107` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-18107).
+Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_18107` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-18107).
 
 ## Binary repintegers of 18107 that are Riesel numbers
 
@@ -232,7 +232,7 @@ number.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.6.
 
-Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_18107` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-18107).
+Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_18107` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-18107).
 
 ## Infinitely many Sierpiński repdigits in every base $b > 78557$
 
@@ -245,7 +245,7 @@ base $b$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.7.
 
-Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repdigits).
+Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repdigits).
 
 ## Infinitely many Riesel repdigits in every base $b > 509203$
 
@@ -257,7 +257,7 @@ $1 \le k < b$ and $t \ge 1$, that is, $b$-repdigits: the digit $k$ written $t$ t
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.8.
 
-Stated but not proved: `MetaMathlibExt.infinite_riesel_repdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repdigits).
+Stated but not proved: `MetaMathlibExt.infinite_riesel_repdigits` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repdigits).
 
 ## Repdigits with digit 41 that are Sierpiński numbers
 
@@ -270,7 +270,7 @@ base-$b$ digits all equal $41$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.9.
 
-Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_41` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-41).
+Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_41` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-41).
 
 ## Riesel repdigits with digit $101$ in bases $b \equiv 180 \pmod{11184810}$
 
@@ -283,7 +283,7 @@ a Riesel number.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.10.
 
-Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_101` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-101).
+Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_101` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-101).
 
 ## Infinitely many Sierpiński repunits from primitive divisors of $2^{2^j} - 1$
 
@@ -302,7 +302,7 @@ infinitely many Sierpiński numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ w
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.11.
 
-Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repunits_of_primitive_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repunits-of-primitiv).
+Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repunits_of_primitive_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repunits-of-primitiv).
 
 ## Infinitely many Sierpiński repunits in bases $b \equiv 1, 147, 265, 378 \pmod{641}$ with $b \not\equiv 1 \pmod 5$
 
@@ -315,7 +315,7 @@ Sierpiński numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.12.
 
-Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repunits_mod_641` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repunits-mod-641).
+Stated but not proved: `MetaMathlibExt.infinite_sierpinski_repunits_mod_641` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-sierpinski-repunits-mod-641).
 
 ## Infinitely many Riesel repunits from primitive divisors of $2^{2^j} - 1$
 
@@ -332,7 +332,7 @@ many Riesel numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 3.13.
 
-Stated but not proved: `MetaMathlibExt.infinite_riesel_repunits_of_primitive_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repunits-of-primitive-di).
+Stated but not proved: `MetaMathlibExt.infinite_riesel_repunits_of_primitive_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repunits-of-primitive-di).
 
 ## Infinitely many Riesel repunits in bases $b \equiv 16518444216571 \pmod{2^{64} - 1}$
 
@@ -344,7 +344,7 @@ $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Corollary 3.14.
 
-Stated but not proved: `MetaMathlibExt.infinite_riesel_repunits_mod_two_pow_64_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repunits-mod-two-pow-64).
+Stated but not proved: `MetaMathlibExt.infinite_riesel_repunits_mod_two_pow_64_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-riesel-repunits-mod-two-pow-64).
 
 ## Binary repstrings of 659 that are Sierpiński numbers
 
@@ -357,7 +357,7 @@ that of $659$ (ten binary digits) written $t$ times with two zeros between conse
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 4.3.
 
-Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_659` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-659).
+Stated but not proved: `MetaMathlibExt.isSierpinskiNumber_repstring_659` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-sierpinski-number-repstring-659).
 
 ## Binary repstrings of 659 that are Riesel numbers
 
@@ -370,7 +370,7 @@ of $659$ (ten binary digits) written $t$ times with two zeros between consecutiv
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 4.4.
 
-Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_659` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-659).
+Stated but not proved: `MetaMathlibExt.isRieselNumber_repstring_659` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-repstring-659).
 
 ## Theorem 4.6 (Sierpiński and Riesel repstring coverings correspond)
 
@@ -385,7 +385,7 @@ $t' \equiv -\mathfrak{t} \pmod{w}$.
 
 - Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 4.6.
 
-Stated but not proved: `MetaMathlibExt.sierpinskiCoveringData_repstring_iff_riesel` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#sierpinski-covering-data-repstring-iff-r).
+Stated but not proved: `MetaMathlibExt.sierpinskiCoveringData_repstring_iff_riesel` is written with `theorem_wanted` in [WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SierpinskiRieselRepdigitsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#sierpinski-covering-data-repstring-iff-r).
 
 ## Narayana numbers that are Riesel numbers
 
@@ -403,7 +403,7 @@ With this indexing, $N_t$ is odd exactly when $t \bmod 7 \in \{1, 2, 3, 5\}$.
 
 - Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isRieselNumber_narayanaCowsSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-narayana-cows-sequence).
+Stated but not proved: `MetaMathlibExt.isRieselNumber_narayanaCowsSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#is-riesel-number-narayana-cows-sequence).
 
 ## Infinitely many Narayana numbers are Sierpiński numbers
 
@@ -416,7 +416,7 @@ $k \cdot 2^n + 1$ is not prime for every $n \ge 1$.
 
 - Katherine Franzone and Joshua Harrington, *Sierpiński and Riesel Numbers in Narayana's Cow Sequence*, INTEGERS 24 (2024), Article A10, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_isSierpinskiNumber_narayanaCowsSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-set-of-is-sierpinski-number-nar).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_isSierpinskiNumber_narayanaCowsSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaSierpinskiRieselWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html#infinite-set-of-is-sierpinski-number-nar).
 
 ## Depends on
 
@@ -425,4 +425,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sierpiński and Riesel numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/special-primes/sierpi-ski-and-riesel-numbers)

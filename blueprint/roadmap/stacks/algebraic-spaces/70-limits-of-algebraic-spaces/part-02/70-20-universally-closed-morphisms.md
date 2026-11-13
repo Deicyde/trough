@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.20 Universally closed morphisms
 
-Section 70.20 of the Stacks Project, [Tag 0CM7](https://stacks.math.columbia.edu/tag/0CM7). 3 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.20 of the Stacks Project, [Tag 0CM7](https://stacks.math.columbia.edu/tag/0CM7). 3 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CM8, a lemma
 
 [Tag 0CM8](https://stacks.math.columbia.edu/tag/0CM8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_etale_isLocallyOfFinitePresentation_separation_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineFinitePresentationFactorizationQuasiSeparated.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineFinitePresentationFactorizationQuasiSeparated.lean#L372). The attribute's comment: “the whole lemma, including the refinement for Z a scheme (V an affine open neighbourhood of z), under the extra hypothesis that Y is quasi-separated. For an arbitrary Y the refinement is open: it is equivalent to Z -> Y factoring Zariski locally through an affine scheme locally of finite presentation over Y, which is proved here only for Y quasi-separated”.
+**`AlgebraicGeometry.Space.exists_affine_etale_isLocallyOfFinitePresentation_separation_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineFinitePresentationFactorizationQuasiSeparated.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineFinitePresentationFactorizationQuasiSeparated.lean#L411). The attribute's comment: “the whole lemma, including the refinement for Z a scheme (V an affine open neighbourhood of z), under the extra hypothesis that Y is quasi-separated. For an arbitrary Y the refinement is open: it is equivalent to Z -> Y factoring Zariski locally through an affine scheme locally of finite presentation over Y, which is proved here only for Y quasi-separated”.
 
 > **Stacks 0CM8, for `Y` quasi-separated.** Let `f : X ⟶ Y` be a quasi-compact morphism of
 > algebraic spaces over `S` with `Y` quasi-separated.
@@ -95,7 +95,7 @@ theorem exists_affine_etale_isLocallyOfFinitePresentation_separation_of_isAbsolu
           (pointsMap B S hS (pullback f (p ≫ g)) r ⁻¹' T) ⊆ T')
 ```
 
-**`AlgebraicGeometry.Space.exists_affine_elementary_etale_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ElementaryEtaleSeparation.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ElementaryEtaleSeparation.lean#L162). The attribute's comment: “the separation statement for Z a scheme, with V and Z' affine and the etale neighbourhood of z elementary -- the canonical morphism Spec kappa(z) -> Z factors through it -- and with clauses (1), (2) and (3) unchanged”.
+**`AlgebraicGeometry.Space.exists_affine_elementary_etale_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ElementaryEtaleSeparation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ElementaryEtaleSeparation.lean#L163). The attribute's comment: “the separation statement for Z a scheme, with V and Z' affine and the etale neighbourhood of z elementary -- the canonical morphism Spec kappa(z) -> Z factors through it -- and with clauses (1), (2) and (3) unchanged”.
 
 > **Stacks 0CM8 for `Z` a scheme, with an elementary étale neighbourhood.** Let
 > `f : X ⟶ Y` be a quasi-compact morphism of algebraic spaces over `S` with `Z` represented by
@@ -142,7 +142,7 @@ theorem exists_affine_elementary_etale_separation
         (pointsMap B S hS (pullback f (p ≫ g)) r ⁻¹' T) ⊆ T'
 ```
 
-**`AlgebraicGeometry.Space.exists_isClosed_separation_of_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L203). The attribute's comment: “etale-descent step of the proof: clauses (2) and (3) descend along a cover of X whose represented base changes are etale and which is surjective on points; the reduction to the case of affine schemes and the appeal to Tag 05BD are not included”.
+**`AlgebraicGeometry.Space.exists_isClosed_separation_of_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L203). The attribute's comment: “etale-descent step of the proof: clauses (2) and (3) descend along a cover of X whose represented base changes are etale and which is surjective on points; the reduction to the case of affine schemes and the appeal to Tag 05BD are not included”.
 
 > **Stacks 0CM8**, the étale-descent step of the proof. Let `f : X ⟶ Y`, `b : Z' ⟶ Y` and
 > `a : V ⟶ Z'` be morphisms of presheaves on the big fppf site of `S`, and let `c : W ⟶ X` be a
@@ -193,7 +193,7 @@ theorem exists_isClosed_separation_of_etale_cover
                   r ∉ pointsMap B S hS _ (pullback.snd f b) '' T'
 ```
 
-**`AlgebraicGeometry.Space.exists_affine_etale_isLocallyOfFinitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 829](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L829). The attribute's comment: “the separation statement, with V and Z' affine; the refinement for Z a scheme, where V may be taken to be an affine open neighbourhood of z, is not included”.
+**`AlgebraicGeometry.Space.exists_affine_etale_isLocallyOfFinitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 829](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L829). The attribute's comment: “the separation statement, with V and Z' affine; the refinement for Z a scheme, where V may be taken to be an affine open neighbourhood of z, is not included”.
 
 > **Stacks 0CM8.** Let `f : X ⟶ Y` be a quasi-compact morphism of algebraic spaces over `S`,
 > let `g : Z ⟶ Y` be a morphism of algebraic spaces, let `z` be a point of `|Z|`, and let `T` be
@@ -233,7 +233,7 @@ theorem exists_affine_etale_isLocallyOfFinitePresentation_separation
         (pointsMap B S hS (pullback f (p ≫ g)) r ⁻¹' T) ⊆ T'
 ```
 
-**`AlgebraicGeometry.Space.exists_affineOpen_isLocallyOfFinitePresentation_separation_of_lfp_morphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L1099). The attribute's comment: “the refinement for Z a scheme with Y an arbitrary algebraic space over S, for g : Z -> Y locally of finite presentation: the etale neighbourhood p : V -> Z is an open immersion onto an affine open neighbourhood of z, Z' is affine, and clauses (1), (2) and (3) hold -- b locally of finite presentation, the image of T' in |Z'| missing a(v), and T' receiving the inverse image of T. An affine open neighbourhood of z is then itself an affine scheme locally of finite presentation over Y, which is the factorization the refinement amounts to”.
+**`AlgebraicGeometry.Space.exists_affineOpen_isLocallyOfFinitePresentation_separation_of_lfp_morphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L1099). The attribute's comment: “the refinement for Z a scheme with Y an arbitrary algebraic space over S, for g : Z -> Y locally of finite presentation: the etale neighbourhood p : V -> Z is an open immersion onto an affine open neighbourhood of z, Z' is affine, and clauses (1), (2) and (3) hold -- b locally of finite presentation, the image of T' in |Z'| missing a(v), and T' receiving the inverse image of T. An affine open neighbourhood of z is then itself an affine scheme locally of finite presentation over Y, which is the factorization the refinement amounts to”.
 
 > **Stacks 0CM8, the refinement for `Z` a scheme and `Y` an arbitrary algebraic space**, for a
 > morphism `g : Z ⟶ Y` which is locally of finite presentation. Let `f : X ⟶ Y` be a
@@ -283,7 +283,7 @@ theorem exists_affineOpen_isLocallyOfFinitePresentation_separation_of_lfp_morphi
         (pointsMap B S hS (pullback f (p ≫ g)) r ⁻¹' T) ⊆ T'
 ```
 
-**`AlgebraicGeometry.Space.exists_affineOpen_isLocallyOfFinitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 1254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L1254). The attribute's comment: “the refinement for Z a scheme with no hypothesis on g, for Y represented by an object of the site as well -- the situation the source's own proof reduces to before it produces the affine open neighbourhood: the etale neighbourhood p : V -> Z is an open immersion onto an affine open neighbourhood of z, Z' is affine, and clauses (1), (2) and (3) hold -- b locally of finite presentation, the image of T' in |Z'| missing a(v), and T' receiving the inverse image of T. The affine opens of Y supply the factorization of an affine open neighbourhood of z through an affine scheme locally of finite presentation over Y that the refinement amounts to”.
+**`AlgebraicGeometry.Space.exists_affineOpen_isLocallyOfFinitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean, line 1254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedSeparation.lean#L1254). The attribute's comment: “the refinement for Z a scheme with no hypothesis on g, for Y represented by an object of the site as well -- the situation the source's own proof reduces to before it produces the affine open neighbourhood: the etale neighbourhood p : V -> Z is an open immersion onto an affine open neighbourhood of z, Z' is affine, and clauses (1), (2) and (3) hold -- b locally of finite presentation, the image of T' in |Z'| missing a(v), and T' receiving the inverse image of T. The affine opens of Y supply the factorization of an affine open neighbourhood of z through an affine scheme locally of finite presentation over Y that the refinement amounts to”.
 
 > **Stacks 0CM8, the refinement for `Z` a scheme**, with no hypothesis on `g`, in the
 > situation the source's own proof reduces to, where `Y` is represented by an object of the site
@@ -355,7 +355,7 @@ theorem exists_affineOpen_isLocallyOfFinitePresentation_separation
 
 [Tag 0CM9](https://stacks.math.columbia.edu/tag/0CM9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_affineSpaceTest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L295). The attribute's comment: “(3) implies (2)”.
+**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_affineSpaceTest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L295). The attribute's comment: “(3) implies (2)”.
 
 > **Stacks 0CM9, (3) implies (2).** If `f : X ⟶ Y` passes the affine-space test over one
 > surjective étale scheme atlas `V ⟶ Y` of the target, then the base change of `f` along every
@@ -381,7 +381,7 @@ theorem isClosedMorphism_pullback_fst_of_affineSpaceTest
     IsClosedMorphism B S hS (pullback.fst h f)
 ```
 
-**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L355). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L355). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0CM9, (1) implies (2).** The base change of a universally closed morphism of
 > algebraic spaces over `S` along a morphism which is locally of finite presentation is
@@ -395,7 +395,7 @@ theorem isClosedMorphism_pullback_fst_of_universallyClosed (f : X ⟶ Y)
     IsClosedMorphism B S hS (pullback.fst h f)
 ```
 
-**`AlgebraicGeometry.Space.exists_affineSpaceTest_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L367). The attribute's comment: “(1) implies (3)”.
+**`AlgebraicGeometry.Space.exists_affineSpaceTest_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L367). The attribute's comment: “(1) implies (3)”.
 
 > **Stacks 0CM9, (1) implies (3).** A universally closed morphism of algebraic spaces over
 > `S` passes the affine-space test over every surjective étale scheme atlas of its target: each
@@ -411,7 +411,7 @@ theorem exists_affineSpaceTest_of_universallyClosed (hY : IsAlgebraicSpace B S h
           IsClosedMorphism B S hS (pullback.fst (yoneda.map a ≫ g) f)
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_of_isClosedMorphism_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L410). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.Space.universallyClosed_of_isClosedMorphism_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L410). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0CM9, (2) implies (1).** A quasi-compact morphism of algebraic spaces over `S`
 > whose base changes along the morphisms locally of finite presentation are closed is
@@ -437,7 +437,7 @@ theorem universallyClosed_of_isClosedMorphism_of_isLocallyOfFinitePresentation
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L463).
+**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/UniversallyClosedAffineSpaceTest.lean#L463).
 
 > **Stacks 0CM9.** For a quasi-compact morphism `f : X ⟶ Y` of algebraic spaces over `S` the
 > following are equivalent: `f` is universally closed; the base change of `f` along every
@@ -467,7 +467,7 @@ theorem universallyClosed_tfae_of_isQuasiCompact (hX : IsAlgebraicSpace B S hS X
 
 [Tag 0CMA](https://stacks.math.columbia.edu/tag/0CMA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L90). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Space.isClosedMorphism_pullback_fst_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L90). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0CMA, (1) implies (2).** The base change of a proper morphism of algebraic spaces
 > over `S` along a morphism which is locally of finite presentation is closed.
@@ -482,7 +482,7 @@ theorem isClosedMorphism_pullback_fst_of_isProper (f : X ⟶ Y) (hf : IsProper B
     IsClosedMorphism B S hS (pullback.fst h f)
 ```
 
-**`AlgebraicGeometry.Space.exists_affineSpaceTest_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L103). The attribute's comment: “(1) implies (3)”.
+**`AlgebraicGeometry.Space.exists_affineSpaceTest_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L103). The attribute's comment: “(1) implies (3)”.
 
 > **Stacks 0CMA, (1) implies (3).** A proper morphism of algebraic spaces over `S` passes the
 > affine-space test over a surjective étale scheme atlas of its target: for every `n` the base
@@ -500,7 +500,7 @@ theorem exists_affineSpaceTest_of_isProper (hY : IsAlgebraicSpace B S hS Y) (f :
           IsClosedMorphism B S hS (pullback.fst (yoneda.map a ≫ g) f)
 ```
 
-**`AlgebraicGeometry.Space.isProper_of_isClosedMorphism_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L121). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.Space.isProper_of_isClosedMorphism_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L121). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0CMA, (2) implies (1).** A separated morphism of finite type between algebraic
 > spaces over `S` whose base changes along the morphisms locally of finite presentation are
@@ -520,7 +520,7 @@ theorem isProper_of_isClosedMorphism_pullback_fst (hX : IsAlgebraicSpace B S hS 
     IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isProper_of_affineSpaceTest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L138). The attribute's comment: “(3) implies (1)”. References: EGA II (5.6.3), “more general”.
+**`AlgebraicGeometry.Space.isProper_of_affineSpaceTest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L138). The attribute's comment: “(3) implies (1)”. References: EGA II (5.6.3), “more general”.
 
 > **Stacks 0CMA, (3) implies (1).** A separated morphism of finite type between algebraic
 > spaces over `S` which passes the affine-space test over one surjective étale scheme atlas of
@@ -539,7 +539,7 @@ theorem isProper_of_affineSpaceTest (hX : IsAlgebraicSpace B S hS X)
     IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isProper_tfae_of_isSeparated_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L160).
+**`AlgebraicGeometry.Space.isProper_tfae_of_isSeparated_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperAffineSpaceTest.lean#L160).
 
 > **Stacks 0CMA.** For a separated morphism `f : X ⟶ Y` of finite type between algebraic
 > spaces over `S` the following are equivalent: `f` is proper; the base change of `f` along every
@@ -573,4 +573,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.20, Tag 0CM7](https://stacks.math.columbia.edu/tag/0CM7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

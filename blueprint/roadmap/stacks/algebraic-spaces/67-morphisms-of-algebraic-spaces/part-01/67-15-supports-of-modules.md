@@ -1,52 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf, AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent, AlgebraicGeometry.Space.nontrivial_geometricModuleStalk_iff_nontrivial_residueFibre, AlgebraicGeometry.Space.supportOfSheaf_modulePullback_eq, AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite, AlgebraicGeometry.Space.supportOfSheaf_of_isQuasicoherentOnSite_isFiniteTypeOnSite, AlgebraicGeometry.Space.mem_supportOfSheaf_iff_nontrivial_geometricModuleStalk_of_liesOver, AlgebraicGeometry.Space.supportOfSheaf_eq_range_pointsMap_schemeTheoreticSupport
+lean: AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent, AlgebraicGeometry.Space.nontrivial_geometricModuleStalk_iff_nontrivial_residueFibre, AlgebraicGeometry.Space.supportOfSheaf_modulePullback_eq, AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite, AlgebraicGeometry.Space.supportOfSheaf_of_isQuasicoherentOnSite_isFiniteTypeOnSite, AlgebraicGeometry.Space.mem_supportOfSheaf_iff_nontrivial_geometricModuleStalk_of_liesOver, AlgebraicGeometry.Space.supportOfSheaf_eq_range_pointsMap_schemeTheoreticSupport, AlgebraicGeometry.Space.exists_module_on_schemeTheoreticSupport
 statement: formalized
 proof: formalized
 ---
 
 # 67.15 Supports of modules
 
-Section 67.15 of the Stacks Project, [Tag 07TX](https://stacks.math.columbia.edu/tag/07TX). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.15 of the Stacks Project, [Tag 07TX](https://stacks.math.columbia.edu/tag/07TX). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07TY, a lemma
 
 [Tag 07TY](https://stacks.math.columbia.edu/tag/07TY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportChartZariski.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportChartZariski.lean#L342). The attribute's comment: “the support equality, given the comparison isomorphism of Stacks 05VP”.
-
-> **Stacks 07TY.** Let `X` be an algebraic space over `S`, let `F` be an `𝒪_X`-module and let
-> `φ : U ⟶ X` be an étale morphism from a scheme, that is, an object of the small étale site of
-> `X`.  Then the support of `φ^* F` as a module on the *scheme* `U` is the inverse image under
-> `|φ|` of the support of `F` on `X`:
-> `Supp(φ^* F) = |φ|^{-1}(Supp(F))`.
->
-> The hypothesis `h05VP` is the comparison of Stacks 05VP,
-> `(φ^* F)_u ⊗_{𝒪_{U, u}} 𝒪_{X, x̄} ≅ F_{x̄}`, which this development does not prove; it holds for
-> a quasi-coherent `F`, which is the hypothesis Stacks 07TY carries, and it is the only place
-> quasi-coherence is used in the proof.  Everything else is unconditional: faithful flatness of
-> the base change turns the comparison into the equivalence of the two vanishings
-> (`AlgebraicGeometry.Space.nontrivial_chartStalkTensorEtaleLocalRing_iff_mem_supp`), a geometric
-> representative of a point of the chart gives one inclusion
-> (`AlgebraicGeometry.Space.exists_geometricRepresentative`), and the étale lift of a geometric
-> point, Stacks 05VN, gives the other
-> (`AlgebraicGeometry.Space.exists_geometricPoint_lift_of_isEtale`).
-
-```lean
-theorem supp_restrictToChart_eq_preimage_supportOfSheaf
-    (F : Modules.{u, u} B S hS X.1 X.2)
-    (h05VP : ∀ (x : GeometricPoint B S hS X.1) (V : SmallEtaleNeighborhood x),
-      Nonempty (chartStalkTensorEtaleLocalRing.{u, u} B S hS X.1 X.2 V F ≅
-        geometricModuleStalk B S hS X x F)) :
-    SheafOfModules.supp (restrictToChart B S hS X.2 F U) =
-      (fun u => pointsMap B S hS (yoneda.obj ((SmallEtale.toOver B S hS X.1).obj U))
-          U.obj.hom
-          ((pointsEquivScheme B S hS ((SmallEtale.toOver B S hS X.1).obj U)).symm u)) ⁻¹'
-        supportOfSheaf B S hS X.1 ((SheafOfModules.toSheaf _).obj F)
-```
-
-**`AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean#L88). The attribute's comment: “the support equality for a quasi-coherent module”.
+**`AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean#L91). The attribute's comment: “the support of a quasi-coherent module pulled back along an étale chart”.
 
 > **Stacks 07TY.** Let `X` be an algebraic space over `S`, let `F` be a quasi-coherent
 > `𝒪_X`-module and let `φ : U ⟶ X` be an étale morphism from a scheme, that is, an object of the
@@ -54,8 +22,10 @@ theorem supp_restrictToChart_eq_preimage_supportOfSheaf
 > inverse image under `|φ|` of the support of `F`:
 > `Supp(φ^* F) = |φ|^{-1}(Supp(F))`.
 >
-> The comparison `(φ^* F)_u ⊗_{𝒪_{U, u}} 𝒪_{X, x̄} ≅ F_{x̄}` which the general form of the
-> statement carries as a hypothesis is Stacks 05VP, available because `F` is quasi-coherent.
+> The proof is `AlgebraicGeometry.Space.supp_restrictToChart_eq_preimage_supportOfSheaf` with its
+> comparison `(φ^* F)_u ⊗_{𝒪_{U, u}} 𝒪_{X, x̄} ≅ F_{x̄}` supplied by Stacks 05VP,
+> `AlgebraicGeometry.Space.isIso_chartStalkTensorComparison`, which holds because `F` is
+> quasi-coherent.
 
 ```lean
 theorem supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent
@@ -72,7 +42,7 @@ theorem supp_restrictToChart_eq_preimage_supportOfSheaf_of_isQuasicoherent
 
 [Tag 07TZ](https://stacks.math.columbia.edu/tag/07TZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.nontrivial_geometricModuleStalk_iff_nontrivial_residueFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkResidueFibre.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkResidueFibre.lean#L105). The attribute's comment: “part (2), second equivalence: the stalk at a geometric point is nonzero iff the fibre over the residue field is nonzero”.
+**`AlgebraicGeometry.Space.nontrivial_geometricModuleStalk_iff_nontrivial_residueFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkResidueFibre.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkResidueFibre.lean#L105). The attribute's comment: “part (2), second equivalence: the stalk at a geometric point is nonzero iff the fibre over the residue field is nonzero”.
 
 > **Stacks 07TZ, part (2), second equivalence.** Let `F` be a quasi-coherent `𝒪_X`-module of
 > finite type on an algebraic space `X` over `S` and let `x̄` be a geometric point of `X`.  Then
@@ -95,7 +65,7 @@ theorem nontrivial_geometricModuleStalk_iff_nontrivial_residueFibre (X : Algebra
       Nontrivial ↥(geometricModuleResidueFibre B S hS X x F)
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackSupportEquality.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackSupportEquality.lean#L228). The attribute's comment: “part (3): the stalk of a pullback at a geometric point, and the equality of supports”.
+**`AlgebraicGeometry.Space.supportOfSheaf_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackSupportEquality.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackSupportEquality.lean#L228). The attribute's comment: “part (3): the stalk of a pullback at a geometric point, and the equality of supports”.
 
 > **Stacks 07TZ, part (3).** Let `g : X' ⟶ X` be a morphism of algebraic spaces over `S` and
 > let `F` be a quasi-coherent `𝒪_X`-module of finite type.  Then the support of the pullback
@@ -125,7 +95,7 @@ theorem supportOfSheaf_modulePullback_eq (g : X' ⟶ X) (F : Modules.{u, u} B S 
         supportOfSheaf B S hS X.1 ((SheafOfModules.toSheaf _).obj F)
 ```
 
-**`AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean#L335). The attribute's comment: “support\_closed”.
+**`AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean#L335). The attribute's comment: “support\_closed”.
 
 > **Stacks 07TZ, part (1).** The support of an `𝒪_X`-module of finite type on an algebraic
 > space `X` is closed in the point set of `X`.
@@ -143,7 +113,7 @@ theorem isClosed_supportOfSheaf_of_isFiniteTypeOnSite (hX : IsAlgebraicSpace B S
     IsClosed (supportOfSheaf B S hS X ((SheafOfModules.toSheaf _).obj F))
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_of_isQuasicoherentOnSite_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportFiniteTypeModule.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportFiniteTypeModule.lean#L92).
+**`AlgebraicGeometry.Space.supportOfSheaf_of_isQuasicoherentOnSite_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportFiniteTypeModule.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportFiniteTypeModule.lean#L92).
 
 > **Stacks 07TZ.** Let `X` be an algebraic space over a scheme `S` and let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type.  Then
@@ -181,7 +151,7 @@ theorem supportOfSheaf_of_isQuasicoherentOnSite_isFiniteTypeOnSite
               supportOfSheaf B S hS X.1 ((SheafOfModules.toSheaf _).obj F)
 ```
 
-**`AlgebraicGeometry.Space.mem_supportOfSheaf_iff_nontrivial_geometricModuleStalk_of_liesOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean#L133). The attribute's comment: “part (2), first equivalence: the support against the stalk at a geometric point”.
+**`AlgebraicGeometry.Space.mem_supportOfSheaf_iff_nontrivial_geometricModuleStalk_of_liesOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportGeometricStalkCriterion.lean#L136). The attribute's comment: “part (2), first equivalence: the support against the stalk at a geometric point”.
 
 > **Stacks 07TZ, part (2), first equivalence.** Let `F` be a quasi-coherent `𝒪_X`-module on an
 > algebraic space `X` and let `x̄` be a geometric point lying over a point `x` of `X`.  Then
@@ -209,7 +179,7 @@ theorem mem_supportOfSheaf_iff_nontrivial_geometricModuleStalk_of_liesOver
 
 [Tag 07U0](https://stacks.math.columbia.edu/tag/07U0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.supportOfSheaf_eq_range_pointsMap_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperModuleSupport.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperModuleSupport.lean#L178). The attribute's comment: “part (4): the support of F is the point set of its scheme-theoretic support”.
+**`AlgebraicGeometry.Space.supportOfSheaf_eq_range_pointsMap_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperModuleSupport.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperModuleSupport.lean#L178). The attribute's comment: “part (4): the support of F is the point set of its scheme-theoretic support”.
 
 > **The support of a finite type `𝒪_X`-module is the set of points of its scheme-theoretic
 > support.**
@@ -239,7 +209,7 @@ theorem supportOfSheaf_eq_range_pointsMap_schemeTheoreticSupport
         (schemeTheoreticSupport B S hS X F).ι)
 ```
 
-**`AlgebraicGeometry.Space.exists_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L505). The attribute's comment: “existence of the quasi-coherent module on the scheme-theoretic support”.
+**`AlgebraicGeometry.Space.exists_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L505). The attribute's comment: “existence of the quasi-coherent module on the scheme-theoretic support”.
 
 > **Stacks 07U0, existence.**  A finite type quasi-coherent `𝒪_X`-module `F` is the direct
 > image of a quasi-coherent module on its scheme-theoretic support, which is a closed subspace
@@ -265,7 +235,7 @@ theorem exists_module_on_schemeTheoreticSupport (F : Modules.{u, u} B S hS X.1 X
           ⟨schemeTheoreticSupport B S hS X F, hZ⟩)).obj G ≅ F)
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L527). The attribute's comment: “minimality: the scheme-theoretic support is contained in every closed subspace from which F is a direct image”.
+**`AlgebraicGeometry.Space.schemeTheoreticSupport_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L527). The attribute's comment: “minimality: the scheme-theoretic support is contained in every closed subspace from which F is a direct image”.
 
 > **Stacks 07U0, minimality.**  The scheme-theoretic support of `F` is contained in every
 > closed subspace of `X` from which `F` is a direct image.
@@ -282,7 +252,7 @@ theorem schemeTheoreticSupport_le (F : Modules.{u, u} B S hS X.1 X.2)
     schemeTheoreticSupport B S hS X F ≤ Z.1
 ```
 
-**`AlgebraicGeometry.Space.module_on_closedSubspace_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L543). The attribute's comment: “part (2): uniqueness up to unique isomorphism”.
+**`AlgebraicGeometry.Space.module_on_closedSubspace_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L543). The attribute's comment: “part (2): uniqueness up to unique isomorphism”.
 
 > **Stacks 07U0, part (2).**  A module on a closed subspace of `X` whose direct image is `F`
 > is unique up to a unique isomorphism compatible with the chosen identifications of the direct
@@ -302,7 +272,7 @@ theorem module_on_closedSubspace_unique (F : Modules.{u, u} B S hS X.1 X.2)
         eG.hom
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypeOnSite_module_on_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L572). The attribute's comment: “part (3): the module on the closed subspace is of finite type”.
+**`AlgebraicGeometry.Space.isFiniteTypeOnSite_module_on_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L572). The attribute's comment: “part (3): the module on the closed subspace is of finite type”.
 
 > **Stacks 07U0, part (3).**  A module on a closed subspace of `X` whose direct image is a
 > module of finite type is itself of finite type.
@@ -319,7 +289,7 @@ theorem isFiniteTypeOnSite_module_on_closedSubspace (F : Modules.{u, u} B S hS X
     SheafOfModules.IsFiniteTypeOnSite G
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport_isSmallest_and_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportCharacterization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportCharacterization.lean#L72).
+**`AlgebraicGeometry.Space.schemeTheoreticSupport_isSmallest_and_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportCharacterization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportCharacterization.lean#L72).
 
 > **Stacks 07U0.** Let `F` be a finite type quasi-coherent `𝒪_X`-module on an algebraic
 > space `X`. Its scheme-theoretic support `Z` is a closed subspace of `X` carrying a
@@ -393,7 +363,7 @@ theorem schemeTheoreticSupport_isSmallest_and_properties (F : Modules.{u, u} B S
             ((SheafOfModules.toSheaf _).obj G) = Set.univ)
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport_chartRestrictionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportChartComparison.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportChartComparison.lean#L207). The attribute's comment: “part (1): on a scheme U étale over X the scheme-theoretic support of the restriction of F, in the sense of schemes, is the sheaf of ideals that the scheme-theoretic support of F cuts out on U”.
+**`AlgebraicGeometry.Space.schemeTheoreticSupport_chartRestrictionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportChartComparison.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportChartComparison.lean#L207). The attribute's comment: “part (1): on a scheme U étale over X the scheme-theoretic support of the restriction of F, in the sense of schemes, is the sheaf of ideals that the scheme-theoretic support of F cuts out on U”.
 
 > **Stacks 07U0, part (1), with the support of the restriction taken in the sense of
 > schemes.**  Let `F` be a finite type quasi-coherent `𝒪_X`-module, let `Z ⊆ X` be its
@@ -423,7 +393,7 @@ theorem schemeTheoreticSupport_chartRestrictionSheaf (F : Modules.{u, u} B S hS 
         (definingIdealSheaf_isCartesianOnAffineCharts B S hS X Z) A
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport_modulePullback_schemeSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean#L90). The attribute's comment: “part (1): on a scheme étale over X the scheme-theoretic support of the inverse image of F is the inverse image of the scheme-theoretic support of F”.
+**`AlgebraicGeometry.Space.schemeTheoreticSupport_modulePullback_schemeSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean#L90). The attribute's comment: “part (1): on a scheme étale over X the scheme-theoretic support of the inverse image of F is the inverse image of the scheme-theoretic support of F”.
 
 > **Stacks 07U0, part (1).**  Let `F` be a finite type quasi-coherent `𝒪_X`-module with
 > scheme-theoretic support `Z ⊆ X`, let `U` be a scheme over `S` and let `φ : U → X` be an étale
@@ -442,7 +412,7 @@ theorem schemeTheoreticSupport_modulePullback_schemeSpace_of_isEtale
       (schemeTheoreticSupport B S hS X F).preimage φ.hom
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_module_on_schemeTheoreticSupport_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean#L110). The attribute's comment: “part (4): the module on the scheme-theoretic support has support all of it”.
+**`AlgebraicGeometry.Space.supportOfSheaf_module_on_schemeTheoreticSupport_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupportEtaleChart.lean#L110). The attribute's comment: “part (4): the module on the scheme-theoretic support has support all of it”.
 
 > **Stacks 07U0, part (4), for the module on the scheme-theoretic support.**  Let `F` be a
 > finite type quasi-coherent `𝒪_X`-module, let `Z ⊆ X` be its scheme-theoretic support and let
@@ -470,7 +440,7 @@ theorem supportOfSheaf_module_on_schemeTheoreticSupport_eq_univ
 
 [Tag 07U1](https://stacks.math.columbia.edu/tag/07U1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L398).
+**`AlgebraicGeometry.Space.schemeTheoreticSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeTheoreticSupport.lean#L398).
 
 > **Stacks 07U1.** The *scheme theoretic support* of a finite type quasi-coherent
 > `𝒪_X`-module `F`: the intersection of the closed subspaces of `X` whose defining ideal
@@ -492,4 +462,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.15, Tag 07TX](https://stacks.math.columbia.edu/tag/07TX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

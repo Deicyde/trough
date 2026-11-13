@@ -2,11 +2,8 @@
 navigation: transparent
 ---
 
-# 76.33 Étale localization of… to 76.48 Local complete…
+# 76.36 Stein factorization to 76.51 Characterizing…
 
-- [76.33 Étale localization of morphisms](76-33-etale-localization-of-morphisms.md)
-- [76.34 Zariski's Main Theorem](76-34-zariskis-main-theorem.md)
-- [76.35 Applications of Zariski's Main Theorem, I](76-35-applications-of-zariskis-main-theorem-i.md)
 - [76.36 Stein factorization](76-36-stein-factorization.md)
 - [76.37 Extending properties from an open](76-37-extending-properties-from-an-open.md)
 - [76.38 Blowing up and flatness](76-38-blowing-up-and-flatness.md)
@@ -20,3 +17,5 @@ navigation: transparent
 - [76.46 Pseudo-coherent morphisms](76-46-pseudo-coherent-morphisms.md)
 - [76.47 Perfect morphisms](76-47-perfect-morphisms.md)
 - [76.48 Local complete intersection morphisms](76-48-local-complete-intersection-morphisms.md)
+- [76.49 When is a morphism an isomorphism?](76-49-when-is-a-morphism-an-isomorphism.md)
+- [76.51 Characterizing pseudo-coherent complexes, II](76-51-characterizing-pseudo-coherent-complexes-i.md)

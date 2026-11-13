@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.79 The category of modules modulo torsion modules
 
-Section 110.79 of the Stacks Project, [Tag 0B0J](https://stacks.math.columbia.edu/tag/0B0J). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.79 of the Stacks Project, [Tag 0B0J](https://stacks.math.columbia.edu/tag/0B0J). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EA5, a proposition
 
 [Tag 0EA5](https://stacks.math.columbia.edu/tag/0EA5) in the Stacks Project.
 
-**`Stacks.Examples.localizationTorsionModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L64). The attribute's comment: “the Serre subcategory”.
+**`Stacks.Examples.localizationTorsionModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L64). The attribute's comment: “the Serre subcategory”.
 
 > The modules whose elements are annihilated locally by `S` form a Serre subcategory.
 
@@ -25,7 +25,7 @@ public instance localizationTorsionModuleProperty_isSerreClass {R : Type u} [Com
       ObjectProperty (ModuleCat.{v} R)).IsSerreClass
 ```
 
-**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the canonical equivalence”.
+**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the canonical equivalence”.
 
 > Localizing modules at `S` presents the category of modules over `Localization S` as the Serre
 > quotient by the modules whose elements are annihilated by members of `S`.
@@ -47,7 +47,7 @@ public instance localizedModuleFunctor_isLocalization {R : Type u} [CommRing R]
 
 [Tag 0B0K](https://stacks.math.columbia.edu/tag/0B0K) in the Stacks Project.
 
-**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the case S = nonzerodivisors: Mod\_A modulo torsion is equivalent to Mod\_\{Q(A)}”.
+**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the case S = nonzerodivisors: Mod\_A modulo torsion is equivalent to Mod\_\{Q(A)}”.
 
 > Localizing modules at `S` presents the category of modules over `Localization S` as the Serre
 > quotient by the modules whose elements are annihilated by members of `S`.
@@ -69,7 +69,7 @@ public instance localizedModuleFunctor_isLocalization {R : Type u} [CommRing R]
 
 [Tag 0B0L](https://stacks.math.columbia.edu/tag/0B0L) in the Stacks Project.
 
-**`Stacks.Examples.fgTorsionModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean#L89). The attribute's comment: “the Serre subcategory”.
+**`Stacks.Examples.fgTorsionModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean#L89). The attribute's comment: “the Serre subcategory”.
 
 > Finitely generated torsion modules form a Serre subcategory.
 
@@ -79,7 +79,7 @@ public instance fgTorsionModuleProperty_isSerreClass (A : Type u) [CommRing A]
     (fgTorsionModuleProperty A : ObjectProperty (FGModuleCat.{v} A)).IsSerreClass
 ```
 
-**`Stacks.Examples.fgFractionModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean#L195). The attribute's comment: “the canonical equivalence”.
+**`Stacks.Examples.fgFractionModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/FGModulesModuloTorsion.lean#L195). The attribute's comment: “the canonical equivalence”.
 
 > Localizing finitely generated modules at the nonzerodivisors presents the category of
 > finite-dimensional fraction-field vector spaces as their Serre quotient by the torsion
@@ -97,7 +97,7 @@ public instance fgFractionModuleFunctor_isLocalization (A : Type u) [CommRing A]
 
 [Tag 0B0M](https://stacks.math.columbia.edu/tag/0B0M) in the Stacks Project.
 
-**`Stacks.Examples.extendScalarsRat_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/AbelianGroupsModuloTorsion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/AbelianGroupsModuloTorsion.lean#L95).
+**`Stacks.Examples.extendScalarsRat_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/AbelianGroupsModuloTorsion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/AbelianGroupsModuloTorsion.lean#L95).
 
 > Rationalization presents rational vector spaces as the Serre quotient of abelian groups by
 > torsion groups.
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.79, Tag 0B0J](https://stacks.math.columbia.edu/tag/0B0J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

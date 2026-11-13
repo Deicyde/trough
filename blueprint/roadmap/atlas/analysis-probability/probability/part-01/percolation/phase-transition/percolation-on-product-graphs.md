@@ -8,14 +8,14 @@ proof: formalized
 
 # Percolation on product graphs
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html).
 
 ## The integer line graph
 
 The integer line is the simple graph on $\mathbb{Z}$ in which
 $m$ and $n$ are adjacent exactly when $|m - n| = 1$.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.intLine`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#int-line).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.intLine`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#int-line).
 
 ## The product graph $G \times \mathbb{Z}$
 
@@ -24,7 +24,7 @@ $G \times \mathbb{Z}$ is the box product of $G$ with the integer line: its verte
 $V \times \mathbb{Z}$, and $(v, m)$ and $(w, n)$ are adjacent exactly when either $v$ and $w$
 are adjacent in $G$ and $m = n$, or $v = w$ and $|m - n| = 1$.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.prodGraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#prod-graph).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.prodGraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#prod-graph).
 
 ## Open subgraph of the product graph
 
@@ -35,7 +35,7 @@ subgraph of $G \times \mathbb{Z}$ determined by $\omega$ is the simple graph on
 $V \times \mathbb{Z}$ in which $a$ and $b$ are adjacent exactly when they are adjacent in
 $G \times \mathbb{Z}$ and $\omega(\{a, b\})$ is true.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.configGraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#config-graph).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.configGraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#config-graph).
 
 ## Open cluster in the product graph
 
@@ -47,7 +47,7 @@ $y \in V \times \mathbb{Z}$ that are reachable from $x$ (including $x$ itself) i
 subgraph of $G \times \mathbb{Z}$ determined by $\omega$, that is, joined to $x$ by a path whose
 edges $e$ are edges of $G \times \mathbb{Z}$ with $\omega(e)$ true.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.cluster`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#cluster).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.cluster`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#cluster).
 
 ## Bernoulli bond law on $V \times \mathbb{Z}$
 
@@ -57,7 +57,7 @@ $\omega$, which assign true (open) or false (closed) to every unordered pair $\{
 points of $V \times \mathbb{Z}$ (with $a = b$ allowed), under which the values $\omega(e)$ are
 independent and each is true with probability $p$ and false with probability $1 - p$.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.bernoulliLaw`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#bernoulli-law).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.bernoulliLaw`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#bernoulli-law).
 
 ## Almost-sure properties under the Bernoulli bond law
 
@@ -68,7 +68,7 @@ $V \times \mathbb{Z}$ (with $a = b$ allowed). We say that $P$ holds almost surel
 holds for almost every $\omega$ with respect to the Bernoulli($p$) bond law on
 $V \times \mathbb{Z}$.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.AlmostSurely`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#almost-surely).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.AlmostSurely`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#almost-surely).
 
 ## Open subgraph of a graph
 
@@ -77,7 +77,7 @@ false to every unordered pair of elements of $V$. The open subgraph of $G$ deter
 $\omega$ is the simple graph on $V$ in which $a$ and $b$ are adjacent exactly when they are
 adjacent in $G$ and $\omega(\{a, b\})$ is true.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.openSubgraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#open-subgraph).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.openSubgraph`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#open-subgraph).
 
 ## Open cluster in a graph
 
@@ -87,7 +87,7 @@ the set of vertices $y \in V$ that are reachable from $x$ (including $x$ itself)
 subgraph of $G$ determined by $\omega$, that is, joined to $x$ by a path whose edges $e$ are
 edges of $G$ with $\omega(e)$ true.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.gcluster`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#gcluster).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.gcluster`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#gcluster).
 
 ## Bernoulli bond law on $V$
 
@@ -97,7 +97,7 @@ law on $V$ is the product measure on configurations $\omega$, which assign true 
 which the values $\omega(e)$ are independent and each is true with probability $p$ and false
 with probability $1 - p$.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.gbernoulliLaw`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#gbernoulli-law).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.gbernoulliLaw`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#gbernoulli-law).
 
 ## Critical probability for bond percolation
 
@@ -110,7 +110,7 @@ $p_c(G) = 1$ when no such $p$ exists.
 Countability of $V$ makes the event that some open cluster is infinite measurable for the
 product law.
 
-Formalized by `MathlibExt.Probability.ProductBondPercolation.criticalProb`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ProductBondPercolation.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#critical-prob).
+Formalized by `MathlibExt.Probability.ProductBondPercolation.criticalProb`, a definition declared in [MathlibExt/Probability/ProductBondPercolation.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ProductBondPercolation.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html#critical-prob).
 
 ## Depends on
 
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Percolation on product graphs](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/percolation/phase-transition/percolation-on-product-graphs)

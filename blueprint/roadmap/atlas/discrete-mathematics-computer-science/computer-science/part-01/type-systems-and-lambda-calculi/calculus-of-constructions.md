@@ -7,7 +7,7 @@ statement: formalized
 
 # Calculus of constructions
 
-17 results, 11 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html).
+17 results, 11 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html).
 
 ## Sorts of CCω
 
@@ -15,7 +15,7 @@ The sorts are $\mathrm{Prop}$ and $\mathrm{Type}_i$ for every natural number
 $i$. In the calculus, $\mathrm{Prop}$ is impredicative and the $\mathrm{Type}_i$ form a
 predicative hierarchy.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Srt`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#srt).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Srt`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#srt).
 
 ## Terms of the calculus of constructions
 
@@ -28,7 +28,7 @@ $\Pi (x : A).\, B$ with domain $A$ and codomain $B$.
 In the body of an abstraction or the codomain of a product, index $0$ refers to the bound
 variable and index $i + 1$ to the variable that has index $i$ outside the binder.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Tm`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#tm).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Tm`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#tm).
 
 ## Shifting de Bruijn indices
 
@@ -38,7 +38,7 @@ unchanged. The cutoff goes up by one under each binder, that is, in the body of 
 in the codomain of a $\Pi$ (not in the type annotation or the domain), and sorts are unchanged.
 Thus the free variables of $t$ with index at least $c$ are increased by $d$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.lift`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#lift).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.lift`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#lift).
 
 ## Substitution for a de Bruijn variable
 
@@ -49,7 +49,7 @@ $i > k$. A sort is unchanged, $(f\,a)[k := u] = f[k := u]\,a[k := u]$,
 $(\lambda (x : A).\, b)[k := u] = \lambda (x : A[k := u]).\, b[k + 1 := u]$, and
 $(\Pi (x : A).\, B)[k := u] = \Pi (x : A[k := u]).\, B[k + 1 := u]$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.subst`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#subst).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.subst`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#subst).
 
 ## One-step beta reduction
 
@@ -59,7 +59,7 @@ for the bound variable $x$ in $b$, and that is closed under every term former: a
 function or the argument of an application, inside the type annotation or the body of a
 $\lambda$, or inside the domain or the codomain of a $\Pi$ is a step of the whole term.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Step`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#step).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Step`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#step).
 
 ## Beta conversion
 
@@ -67,7 +67,7 @@ Beta conversion is the equivalence closure of one-step beta reduction:
 every term is convertible to itself, and if $t$ is convertible to $u$ and $u$ reduces to $v$ in
 one step, or $v$ reduces to $u$ in one step, then $t$ is convertible to $v$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Conv`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#conv).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Conv`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#conv).
 
 ## Sort axioms of CCω
 
@@ -75,7 +75,7 @@ The axioms say which sort has which sort as its type: $\mathrm{Prop}$
 has type $\mathrm{Type}_0$, and $\mathrm{Type}_i$ has type $\mathrm{Type}_{i+1}$ for every natural
 number $i$. No other pair of sorts is related.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Ax`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#ax).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Ax`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#ax).
 
 ## Product rules of CCω
 
@@ -87,7 +87,7 @@ numbers $i$ and $j$, a product with domain in $\mathrm{Type}_i$ and codomain in 
 lives in $\mathrm{Type}_{\max(i, j)}$; and for every natural number $i$, a product with domain in
 $\mathrm{Prop}$ and codomain in $\mathrm{Type}_i$ lives in $\mathrm{Type}_i$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Rl`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#rl).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Rl`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#rl).
 
 ## Well-formed contexts
 
@@ -97,7 +97,7 @@ $\Gamma \vdash t : A$ as the least predicate such that the empty context is well
 if $\Gamma$ is well formed and $\Gamma \vdash A : s$ for some sort $s$, then the context
 obtained from $\Gamma$ by adding $A$ at the head is well formed.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Wf`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#wf).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Wf`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#wf).
 
 ## Typing judgement of the calculus of constructions with universes
 
@@ -126,7 +126,7 @@ closed under the following rules.
 * Conversion: if $\Gamma \vdash t : A$, $\Gamma \vdash B : s$ for some sort $s$, and $A$ and
   $B$ are beta convertible, then $\Gamma \vdash t : B$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Typing`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Typing`, an inductive type declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing).
 
 ## Strongly normalizing terms
 
@@ -135,7 +135,7 @@ $t$ is strongly normalizing when every term to which $t$ reduces in one beta ste
 normalizing. Equivalently, classically, there is no infinite chain of one-step beta reductions
 starting from $t$.
 
-Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.SN`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#sn).
+Formalized by `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.SN`, a definition declared in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#sn).
 
 ## Typing the polymorphic identity
 
@@ -150,7 +150,7 @@ $A : \mathrm{Prop}$ whose codomain is a proposition is again a proposition.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.typing_polyId` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing-poly-id).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.typing_polyId` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing-poly-id).
 
 ## Typing the polymorphic identity applied to falsity
 
@@ -163,7 +163,7 @@ $\Pi (x : \bot).\, \bot$.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.typing_polyId_app` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing-poly-id-app).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.typing_polyId_app` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#typing-poly-id-app).
 
 ## Beta step of the applied polymorphic identity
 
@@ -177,7 +177,7 @@ This is an anti-vacuity guard: it pins down beta reduction and substitution.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.step_polyId_app` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#step-poly-id-app).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.step_polyId_app` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#step-poly-id-app).
 
 ## Subject reduction
 
@@ -190,7 +190,7 @@ inside $t$), then $\Gamma \vdash t' : A$.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.subject_reduction` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#subject-reduction).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.subject_reduction` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#subject-reduction).
 
 ## Strong normalization of CCω
 
@@ -202,7 +202,7 @@ normalizing.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.strong_normalization` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#strong-normalization).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.strong_normalization` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#strong-normalization).
 
 ## Consistency of CCω
 
@@ -213,7 +213,7 @@ $t$ with $\vdash t : \Pi (P : \mathrm{Prop}).\, P$ in the empty context.
 
 - Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, 'An Extended Calculus of Constructions' (1990); Bruno Barras, 'Sets in Coq, Coq in Sets' (2010). Problem `coc_strong_normalization` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.consistency` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#consistency).
+Stated but not proved: `MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.consistency` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/CoCStrongNormalizationWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html#consistency).
 
 ## Depends on
 
@@ -222,4 +222,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Calculus of constructions](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/type-systems-and-lambda-calculi/calculus-of-constructions)

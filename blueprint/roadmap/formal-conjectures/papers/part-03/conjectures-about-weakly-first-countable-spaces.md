@@ -18,7 +18,7 @@ statement: formalized
 >   Doklady Akademii Nauk. Vol. 229. No. 6. Russian Academy of Sciences, 1976.
 >   https://www.mathnet.ru/links/016f74007f9f96fa3aadae05cbd98457/dan40570.pdf (in Russian)
 
-*Quoted from [FormalConjectures/Paper/WeaklyFirstCountable.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/WeaklyFirstCountable.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 3 open, 1 solved and 1 textbook result. It also has 2 test statements, counted here but not shown.
 
@@ -34,7 +34,7 @@ theorem exists_weakly_first_countable_not_first_countable : ∃ (X : Type) (_ : 
       WeaklyFirstCountableTopology X ∧ ¬ FirstCountableTopology X
 ```
 
-Category `textbook`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean#L73).
+Category `textbook`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean#L73).
 
 ## `WeaklyFirstCountable.existsWeaklyFirstCountableCompactBig`
 
@@ -53,7 +53,7 @@ theorem existsWeaklyFirstCountableCompactBig :
         𝔠 < #X
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean#L114).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean#L114).
 
 ## `WeaklyFirstCountable.existsWeaklyFirstCountableCompactNotFirstCountable`
 
@@ -72,7 +72,7 @@ theorem existsWeaklyFirstCountableCompactNotFirstCountable :
         ¬ FirstCountableTopology X
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean#L126).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean#L126).
 
 ## `WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable`
 
@@ -89,7 +89,7 @@ theorem CH.existsWeaklyFirstCountableCompactNotFirstCountable
         ¬ FirstCountableTopology X
 ```
 
-Category `research solved`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean#L135).
+Category `research solved`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean#L135).
 
 ## `WeaklyFirstCountable.cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber`
 
@@ -104,7 +104,7 @@ theorem cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumbe
       WeaklyFirstCountableTopology X → HasCountableSouslinNumber X → #X ≤ 𝔠
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean#L144).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/WeaklyFirstCountable.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean#L144).
 
 ## Depends on
 
@@ -112,5 +112,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/WeaklyFirstCountable.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/WeaklyFirstCountable.lean)
+- [FormalConjectures/Paper/WeaklyFirstCountable.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/WeaklyFirstCountable.lean)
 - [https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46](https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-%28pp37-46)

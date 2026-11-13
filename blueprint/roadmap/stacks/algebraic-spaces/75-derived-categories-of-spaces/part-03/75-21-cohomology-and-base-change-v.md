@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.21 Cohomology and base change, V
 
-Section 75.21 of the Stacks Project, [Tag 0DKE](https://stacks.math.columbia.edu/tag/0DKE). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.21 of the Stacks Project, [Tag 0DKE](https://stacks.math.columbia.edu/tag/0DKE). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DKF, an equation
 
 [Tag 0DKF](https://stacks.math.columbia.edu/tag/0DKF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricStalkBaseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMap.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMap.lean#L280). The attribute's comment: “the map, given the derived pullback-stalk comparison `ps`”.
+**`AlgebraicGeometry.Space.geometricStalkBaseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMap.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMap.lean#L280). The attribute's comment: “the map, given the derived pullback-stalk comparison `ps`”.
 
 > **Stacks Project, Equation 0DKF.** The canonical map
 >
@@ -54,7 +54,7 @@ def geometricStalkBaseChangeCohomologyMap
     (n : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.canonicalGeometricStalkBaseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMapCanonical.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMapCanonical.lean#L65).
+**`AlgebraicGeometry.Space.canonicalGeometricStalkBaseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMapCanonical.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkCohomologyMapCanonical.lean#L65).
 
 > **Stacks Project, Equation 0DKF.** The canonical map
 >
@@ -84,7 +84,7 @@ def canonicalGeometricStalkBaseChangeCohomologyMap
 
 [Tag 0DKG](https://stacks.math.columbia.edu/tag/0DKG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_geometricPointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeTFAE.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeTFAE.lean#L50).
+**`AlgebraicGeometry.Space.tfae_geometricPointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeTFAE.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeTFAE.lean#L50).
 
 > **Stacks 0DKG.** For a cartesian square of algebraic spaces, `K ∈ D_QCoh(𝒪_X)`,
 > `K' ∈ D_QCoh(𝒪_{X'})` and `φ : L(g')^*K ⟶ K'`, the following are equivalent:
@@ -110,7 +110,7 @@ theorem tfae_geometricPointwiseBaseChange {X Y X' Y' : AlgebraicSpaces B S hS} {
 
 [Tag 0DKH](https://stacks.math.columbia.edu/tag/0DKH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeComp_of_geometricPointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeIso.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeIso.lean#L44).
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeComp_of_geometricPointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeIso.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricPointwiseBaseChangeIso.lean#L44).
 
 > **Stacks 0DKH.** For a cartesian square of algebraic spaces with `f` quasi-compact and
 > quasi-separated, `K ∈ D_QCoh(𝒪_X)`, `K' ∈ D_QCoh(𝒪_{X'})` and `φ : L(g')^*K ⟶ K'` satisfying the
@@ -135,7 +135,7 @@ theorem isIso_smallEtaleDerivedBaseChangeComp_of_geometricPointwiseBaseChange
 
 [Tag 0DKI](https://stacks.math.columbia.edu/tag/0DKI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L84). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L84). The attribute's comment: “(1)”.
 
 > **The conditions of Stacks 0DKG pass to derived tensor products** (Stacks 0DKI (1)). For a
 > cartesian square, `E`, `K` with quasi-coherent cohomology on `X`, `K'` on `X'` and
@@ -159,7 +159,7 @@ theorem geometricPointwiseBaseChange_tensor (sq : IsPullback g' f' f g)
           ((smallEtaleDerivedModulePullback B S hS g').obj E)).map φ)
 ```
 
-**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_sheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L111). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_sheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L111). The attribute's comment: “(2)”.
 
 > **The conditions of Stacks 0DKG pass to the derived internal Hom out of a perfect object**
 > (Stacks 0DKI (2)). For a cartesian square, `E` perfect and `K` with quasi-coherent cohomology on
@@ -186,7 +186,7 @@ theorem geometricPointwiseBaseChange_sheafHom_of_isPerfect (sq : IsPullback g' f
           (op ((smallEtaleDerivedModulePullback B S hS g').obj E))).map φ)
 ```
 
-**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L144). The attribute's comment: “(3), corrected: g of finite Tor dimension added; (3) as written is false, see Stacks.Examples.PseudoCoherentSheafHomBaseChange”.
+**`AlgebraicGeometry.Space.geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GeometricPointwiseBaseChangeTensorSheafHom.lean#L144). The attribute's comment: “(3), corrected: g of finite Tor dimension added; (3) as written is false, see Stacks.Examples.PseudoCoherentSheafHomBaseChange”.
 
 > **The conditions of Stacks 0DKG pass to the derived internal Hom out of a pseudo-coherent
 > object, for `g` of finite Tor dimension** (Stacks 0DKI (3), corrected). Part (3) of the source has
@@ -220,7 +220,7 @@ theorem geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent (sq : IsPullba
           (op ((smallEtaleDerivedModulePullback B S hS g').obj E))).map φ)
 ```
 
-**`Stacks.Examples.PseudoCoherentSheafHomBaseChange.not_forall_geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/PseudoCoherentSheafHomBaseChange.lean, line 908](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/PseudoCoherentSheafHomBaseChange.lean#L908). The attribute's comment: “(3) as written is false: the erratum's counterexample, A = Z/4, g : Spec Z/2 → Spec A”.
+**`Stacks.Examples.PseudoCoherentSheafHomBaseChange.not_forall_geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/PseudoCoherentSheafHomBaseChange.lean, line 908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/PseudoCoherentSheafHomBaseChange.lean#L908). The attribute's comment: “(3) as written is false: the erratum's counterexample, A = Z/4, g : Spec Z/2 → Spec A”.
 
 > **Stacks 0DKI (3) is false as written.** It is not true that
 > for every cartesian square `g' ≫ f = f' ≫ g` of algebraic spaces, `K ∈ D_QCoh(𝒪_X)` bounded below
@@ -259,7 +259,7 @@ theorem not_forall_geometricPointwiseBaseChange_sheafHom_of_isPseudoCoherent :
 
 [Tag 0A1K](https://stacks.math.columbia.edu/tag/0A1K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeComp_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L117).
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeComp_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L117).
 
 > **Stacks 0A1K.** For a cartesian square of algebraic spaces with `f` quasi-compact and
 > quasi-separated, `E ∈ D_QCoh(𝒪_X)` and a bounded above complex `𝒢^•` of quasi-coherent
@@ -291,7 +291,7 @@ theorem isIso_smallEtaleDerivedBaseChangeComp_derivedTensor
 
 [Tag 08JQ](https://stacks.math.columbia.edu/tag/08JQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedSheafHomBaseChangeMap_and_not_forall_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomErratum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomErratum.lean#L79). The attribute's comment: “erratum: as printed, part (2) (E pseudo-coherent, G bounded and flat over Y, an arbitrary base change g) is false, refuted for X = Y = Spec Z/4, f = id, E = (Z/4/2)~, G = O\_X and g the closed point Spec Z/2 -> Spec Z/4 (third conjunct); it holds when g has finite Tor dimension (second conjunct); part (1) holds as printed (first conjunct)”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedSheafHomBaseChangeMap_and_not_forall_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomErratum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomErratum.lean#L79). The attribute's comment: “erratum: as printed, part (2) (E pseudo-coherent, G bounded and flat over Y, an arbitrary base change g) is false, refuted for X = Y = Spec Z/4, f = id, E = (Z/4/2)~, G = O\_X and g the closed point Spec Z/2 -> Spec Z/4 (third conjunct); it holds when g has finite Tor dimension (second conjunct); part (1) holds as printed (first conjunct)”.
 
 > Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of algebraic spaces,
 > `E ∈ D(𝒪_X)` and `𝒢^•` a complex of quasi-coherent `𝒪_X`-modules, each `𝒢^n` flat over `Y`. For
@@ -348,4 +348,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.21, Tag 0DKE](https://stacks.math.columbia.edu/tag/0DKE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Blowup.pushforwardReesGradedModule, Stacks.Blowup.pushforwardReesGradedModulePlus, Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite, Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient
+lean: Stacks.Blowup.pushforwardReesGradedModule, Stacks.Blowup.pushforwardReesGradedModulePlus, Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite, Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper, Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper, Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_isProper, Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper_of_isAdicComplete
 statement: formalized
 proof: formalized
 ---
 
 # 30.20 The theorem on formal functions
 
-Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7). 10 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02O7, the section
 
 [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7) in the Stacks Project.
 
-**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
+**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ f_*(ℐⁿℱ)` on the base, in degree
 > zero.**  The maps `pushforwardReesSmul` make the pushforwards of the ideal-power multiples of
@@ -30,7 +30,7 @@ Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu
 public def pushforwardReesGradedModule : SheafOfModules.GradedModule (reesGradedAlgebra I)
 ```
 
-**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
+**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ R ᵖ f_*(ℐⁿℱ)` on the base, in every
 > degree `p`.**  This is the structure the setup paragraph of the source obtains "by localizing and
@@ -53,7 +53,7 @@ public def pushforwardReesGradedModulePlus (f : X ⟶ Y) (I : Y.IdealSheafData) 
 
 [Tag 02O8](https://stacks.math.columbia.edu/tag/02O8) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean#L46). References: EGA III (3.3.2); EGA III (4.1.7.12), “more general”.
+**`Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean#L46). References: EGA III (3.3.2); EGA III (4.1.7.12), “more general”.
 
 > **[Stacks, Tag 02O8].** For `A` Noetherian, `f : X ⟶ Spec A` proper and `ℱ` coherent, the
 > graded module `⨁_{n ≥ 0} Hᵖ(X, Iⁿℱ)` is a finite module over the Rees algebra
@@ -74,7 +74,7 @@ public theorem isCohomologyReesFinite [IsNoetherianRing A]
 
 [Tag 02O9](https://stacks.math.columbia.edu/tag/02O9) in the Stacks Project.
 
-**`Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean#L426). References: EGA III (2.4.2), “special case”; SGA 2 XII (5.8), “(ii), special case”.
+**`Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean#L426). References: EGA III (2.4.2), “special case”; SGA 2 XII (5.8), “(ii), special case”.
 
 > **Stacks Project, Tag 02O9.** Let `f : X ⟶ Y` be a morphism of schemes, `ℱ` an `𝒪_X`-module
 > and `ℐ ⊆ 𝒪_Y` a quasi-coherent sheaf of ideals, and assume `Y` locally Noetherian, `f` proper
@@ -103,46 +103,7 @@ public theorem isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus
 
 [Tag 02OA](https://stacks.math.columbia.edu/tag/02OA) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/CohomologyIdealPowerSystem.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/CohomologyIdealPowerSystem.lean#L447). The attribute's comment: “parts (2) at n = 0 and (3); parts (1), (4), (5) and part (2) for n > 0 are not proved here”.
-
-> **[Stacks, Tag 02OA], part (2) in the case `n = 0` and part (3).**
->
-> For `A` Noetherian, `f : X → Spec A` proper and `ℱ` coherent there is one integer `c ≥ 0` such
-> that
->
-> * the image of `Hᵖ(X, Iʳℱ) → Hᵖ(X, ℱ)` is contained in `Iʳ⁻ᶜHᵖ(X, ℱ)` for `r ≥ c` -- this is
->   part (2) of the source at `n = 0`, where its `e = max(0, c - n)` is `c`; and
-> * `Ker(Hᵖ(X, Iᵏℱ) → Hᵖ(X, ℱ)) = Ker(Hᵖ(X, Iᵏℱ) → Hᵖ(X, Iᵐℱ))` whenever `m + c ≤ k` -- this is
->   part (3) of the source, which is the case `m = k - c`.
->
-> Parts (1), (4) and (5) of the source, and part (2) for general `n`, are **not** proved here;
-> neither is the case `n > 0` of part (2), which needs a compatibility between the transition maps
-> and the multiplication maps that `Stacks.RingTheory.IdealPowerSystem` deliberately does not
-> assume.
->
-> The hypothesis `h02O8` is [Stacks, Tag 02O8] -- a *different* Stacks tag, absent from this
-> branch -- carried in general form: it is quantified over every Noetherian base ring, every
-> ideal of it, every proper scheme over it, every coherent module and every degree, and is
-> instantiated inside the proof at the data of this statement. See `IsCohomologyReesFinite` for
-> why it is absent and what is new about its being statable.
-
-```lean
-theorem exists_uniform_bound_cohomology [IsNoetherianRing A]
-    (hX : AlgebraicGeometry.IsProper X.hom) (hF : SheafOfModules.IsCoherent F) (p : ℕ)
-    (h02O8 : ∀ (A' : Type u) [CommRing A'] [IsNoetherianRing A'] (I' : Ideal A')
-      (X' : Over (Spec (.of A'))) (_ : AlgebraicGeometry.IsProper X'.hom)
-      (F' : X'.left.Modules) (_ : SheafOfModules.IsCoherent F') (p' : ℕ),
-      (cohomologyIdealPowerSystem I' X' F' p').IsReesFinite) :
-    ∃ c : ℕ,
-      (∀ r : ℕ, c ≤ r → LinearMap.range (cohomologyProj I X F p r) ≤
-        I ^ (r - c) • (⊤ : Submodule A (cohomology X F p))) ∧
-      (∀ (m k : ℕ) (hmk : m + c ≤ k),
-        LinearMap.ker (cohomologyProj I X F p k) =
-          LinearMap.ker (cohomologyTr I X F p
-            (show m ≤ k from le_trans (Nat.le_add_right m c) hmk)))
-```
-
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L104).
+**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L104). The attribute's comment: “all five parts, for a proper scheme over a Noetherian ring and a coherent module”.
 
 > **[Stacks, Tag 02OA].** For `A` Noetherian, `I ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent there is one integer `c ≥ 0` such that
@@ -207,102 +168,7 @@ theorem exists_uniform_bound_cohomology_of_isProper [IsNoetherianRing A]
 
 [Tag 02OB](https://stacks.math.columbia.edu/tag/02OB) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsFrom02O8.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsFrom02O8.lean#L192). The attribute's comment: “granted Tag 02O8, carried as the hypothesis h02O8”.
-
-> **Stacks Project, Tag 02OB**, granted [Stacks, Tag 02O8].
->
-> This is `Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient`
-> with its two hypotheses discharged by
-> `Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology`, applied in each degree `q`
-> and transported along the identifications described in the implementation notes of this file.
-> Nothing of the mathematics is new: the content is that the affine side of the theorem on formal
-> functions rests on [Stacks, Tag 02O8] alone, which is carried here as the hypothesis `h02O8` in
-> the same general form `exists_uniform_bound_cohomology` consumes it.
-
-```lean
-public theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8
-    (A : Type u) [CommRing A] [IsNoetherianRing A] {X : Scheme.{u}} (f : X ⟶ Spec (.of A))
-    (hX : AlgebraicGeometry.IsProper f) (I : Ideal A) (F : X.Modules)
-    (hF : SheafOfModules.IsCoherent F) (p : ℕ)
-    (h02O8 : ∀ (A' : Type u) [CommRing A'] [IsNoetherianRing A'] (I' : Ideal A')
-      (X' : Over (Spec (.of A'))) (_ : AlgebraicGeometry.IsProper X'.hom)
-      (F' : X'.left.Modules) (_ : SheafOfModules.IsCoherent F') (p' : ℕ),
-      (cohomologyIdealPowerSystem I' X' F' p').IsReesFinite) :
-    ∃ c : ℕ,
-      (∀ n : ℕ, c ≤ n →
-          LinearMap.ker (cohomologyOverBaseMap A f p
-              (cokernel.π (C := X.Modules)
-                (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom ≤
-            I ^ (n - c) • (⊤ : Submodule A (cohomologyOverBase A f p F))) ∧
-        IsMittagLefflerCategorical
-          (adicQuotientSystem (baseIdealSheaf A I f) F ⋙
-            (moduleGlobalSections X).rightDerived p) ∧
-        ∀ n k : ℕ, (hk : n + c ≤ k) →
-          LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-              (idealPowerQuotientDrop (baseIdealSheaf A I f)
-                ((Nat.le_add_right n c).trans hk) F)).hom =
-            LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-              (cokernel.π (C := X.Modules)
-                (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom
-```
-
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean#L152). The attribute's comment: “granted Tag 02OA, carried as the hypotheses h02OA\_image and h02OA\_kernel”.
-
-> **Stacks Project, Tag 02OB**, granted [Stacks, Tag 02OA].
->
-> There is a single `c ≥ 0` such that, with `𝓘 = I · 𝒪_X`:
->
-> 1. `Ker(H^p(X, ℱ) → H^p(X, ℱ / 𝓘 ^ n ℱ)) ⊆ I ^ (n - c) · H^p(X, ℱ)` for every `n ≥ c`;
-> 2. the inverse system `n ↦ H^p(X, ℱ / 𝓘 ^ n ℱ)` satisfies the Mittag-Leffler condition;
-> 3. for every `k ≥ n + c`, the image of `H^p(X, ℱ / 𝓘 ^ k ℱ)` in `H^p(X, ℱ / 𝓘 ^ n ℱ)` equals
->    the image of `H^p(X, ℱ)`.
->
-> The two hypotheses are the clauses of [Stacks, Tag 02OA] that the source's proof uses, each
-> quantified over the degree because the proof applies them in degrees `p` and `p + 1` and takes
-> the larger of the two constants: `h02OA_image` is clause (2) of that lemma in the case `n = 0`,
-> and `h02OA_kernel` is its clause (3). The source's standing hypotheses — `A` Noetherian, `f`
-> proper and `ℱ` coherent — are what make [Stacks, Tag 02OA] true and are used nowhere else, so
-> they do not appear.
->
-> Clause (1) is the kernel-image identity of the long exact sequence of
-> `0 → 𝓘 ^ n ℱ → ℱ → ℱ / 𝓘 ^ n ℱ → 0` followed by `h02OA_image`. Clause (3) is the diagram chase
-> along the ladder of those sequences: naturality of the connecting map carries a class of
-> `H^p(X, ℱ / 𝓘 ^ k ℱ)` to one annihilated by the connecting map of the exponent-`n` sequence,
-> because `h02OA_kernel` in degree `p + 1` identifies the kernel of `H^(p+1)(𝓘 ^ k ℱ) → H^(p+1)(ℱ)`
-> with a kernel that `H^(p+1)(𝓘 ^ k ℱ) → H^(p+1)(𝓘 ^ n ℱ)` factors through. Clause (2) follows
-> from clause (3).
-
-```lean
-public theorem exists_uniform_bound_cohomology_idealPowerQuotient
-    (h02OA_image : ∀ q : ℕ, ∃ c : ℕ, ∀ k : ℕ, c ≤ k →
-      LinearMap.range (cohomologyOverBaseMap A f q
-          (idealPowerMultiple (baseIdealSheaf A I f) k F).ι).hom ≤
-        I ^ (k - c) • (⊤ : Submodule A (cohomologyOverBase A f q F)))
-    (h02OA_kernel : ∀ q : ℕ, ∃ c : ℕ, ∀ k : ℕ, c ≤ k →
-      LinearMap.ker (((moduleGlobalSections X).rightDerived q).map
-          (idealPowerMultiple (baseIdealSheaf A I f) k F).ι).hom =
-        LinearMap.ker (((moduleGlobalSections X).rightDerived q).map
-          (submoduleInclusion (idealPowerMultiple_antitone (baseIdealSheaf A I f) F
-            (Nat.sub_le k c)))).hom) :
-    ∃ c : ℕ,
-      (∀ n : ℕ, c ≤ n →
-          LinearMap.ker (cohomologyOverBaseMap A f p
-              (cokernel.π (C := X.Modules)
-                (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom ≤
-            I ^ (n - c) • (⊤ : Submodule A (cohomologyOverBase A f p F))) ∧
-        IsMittagLefflerCategorical
-          (adicQuotientSystem (baseIdealSheaf A I f) F ⋙
-            (moduleGlobalSections X).rightDerived p) ∧
-        ∀ n k : ℕ, (hk : n + c ≤ k) →
-          LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-              (idealPowerQuotientDrop (baseIdealSheaf A I f)
-                ((Nat.le_add_right n c).trans hk) F)).hom =
-            LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-              (cokernel.π (C := X.Modules)
-                (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom
-```
-
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L180). References: SGA 2 IX (1.1), “Clause (3), special case”; SGA 2 IX (2.1), “(iii)”.
+**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L184). References: SGA 2 IX (1.1), “Clause (3), special case”; SGA 2 IX (2.1), “(iii)”.
 
 > **[Stacks, Tag 02OB].** For `A` Noetherian, `J ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent there is a single `c ≥ 0` such that, with `𝓙 = J · 𝒪_X`:
@@ -315,7 +181,11 @@ public theorem exists_uniform_bound_cohomology_idealPowerQuotient
 > This is
 > `Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8`
 > with its hypothesis, [Stacks, Tag 02O8] in general form, discharged by
-> `Stacks.FormalFunctions.isReesFinite_cohomologyIdealPowerSystem`.
+> `Stacks.FormalFunctions.isReesFinite_cohomologyIdealPowerSystem`. It is the only registration of
+> [Stacks, Tag 02OB]: the two statements it is assembled from,
+> `exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8` and
+> `exists_uniform_bound_cohomology_idealPowerQuotient`, take [Stacks, Tag 02O8] and two clauses of
+> [Stacks, Tag 02OA] as inputs and carry no registration.
 
 ```lean
 theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper [IsNoetherianRing A]
@@ -344,107 +214,7 @@ theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper [IsNoethe
 
 [Tag 02OC](https://stacks.math.columbia.edu/tag/02OC) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean#L264). The attribute's comment: “the isomorphism of A-modules only, not the homeomorphism for the limit topologies; granted Tag 02OB, whose clauses (1) and (3) are carried as the hypotheses h02OB\_ker and h02OB\_range”.
-
-> **Stacks Project, Tag 02OC**, granted [Stacks, Tag 02OB], and for the `A`-module
-> isomorphism only.
->
-> With `𝓘 = I · 𝒪_X`, the `I`-adic completion of `H^p(X, ℱ)` is the limit of the tower
-> `n ↦ H^p(X, ℱ / 𝓘 ^ n ℱ)`. The map is the one assembled from the projections
-> `H^p(X, ℱ) ⟶ H^p(X, ℱ / 𝓘 ^ n ℱ)`, which is the content of
-> `formalFunctionsEquiv_proj_of`. [Stacks, Tag 02OC] further asserts that the comparison is a
-> homeomorphism for the limit topologies; that is **not** proved here, and no statement in this
-> file claims it.
->
-> The two hypotheses are clauses (1) and (3) of [Stacks, Tag 02OB], for a fixed `c`, in the shape
-> `Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient` produces
-> them: `h02OB_ker` bounds the kernel of the `n`-th projection by `I ^ (n - c) H^p(X, ℱ)`, and
-> `h02OB_range` says that for `k ≥ n + c` the image of `H^p(X, ℱ / 𝓘 ^ k ℱ)` in
-> `H^p(X, ℱ / 𝓘 ^ n ℱ)` is the image of `H^p(X, ℱ)`. Clause (2) of that lemma, the
-> Mittag-Leffler condition, is not needed: in this formulation it is subsumed by clause (3). The
-> source's standing hypotheses — `A` Noetherian, `f` proper and `ℱ` coherent — are what make
-> [Stacks, Tag 02OB] true and are used nowhere else, so only quasi-coherence of `ℱ`, which the
-> annihilation argument needs, appears.
->
-> Everything else is `Stacks.IntertwinedFiltration.adicCompletionEquivTowerLimit`, the source's
-> own argument carried out abstractly.
-
-```lean
-public def formalFunctionsEquiv [F.IsQuasicoherent]
-    (h02OB_ker : ∀ n : ℕ, c ≤ n →
-      LinearMap.ker (adicCohomologyProj A f I F p n) ≤
-        I ^ (n - c) • (⊤ : Submodule A (cohomologyOverBase A f p F)))
-    (h02OB_range : ∀ n k : ℕ, (hk : n + c ≤ k) →
-      LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-          (idealPowerQuotientDrop (baseIdealSheaf A I f)
-            ((Nat.le_add_right n c).trans hk) F)).hom =
-        LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-          (cokernel.π (C := X.Modules)
-            (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom) :
-    AdicCompletion I (cohomologyOverBase A f p F) ≃ₗ[A]
-      towerLimit (adicCohomologyTower A f I F p) (adicCohomologyTowerMap A f I F p)
-```
-
-**`Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv_proj_of`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean#L292). The attribute's comment: “the identification of the isomorphism of formalFunctionsEquiv as the one assembled from the projections; same hypotheses, and again nothing about the limit topologies”.
-
-> **The comparison isomorphism of [Stacks, Tag 02OC] is the canonical one**: its `n`-th
-> component carries the image in `H^p(X, ℱ) ^∧_I` of a class `x ∈ H^p(X, ℱ)` to the image of `x`
-> in `H^p(X, ℱ / 𝓘 ^ n ℱ)`. Together with `formalFunctionsEquiv` this says that the maps
-> `H^p(X, ℱ) / I ^ n H^p(X, ℱ) ⟶ H^p(X, ℱ / 𝓘 ^ n ℱ)` assemble into an isomorphism, rather than
-> merely that the two modules are isomorphic.
-
-```lean
-public lemma formalFunctionsEquiv_proj_of [F.IsQuasicoherent]
-    (h02OB_ker : ∀ n : ℕ, c ≤ n →
-      LinearMap.ker (adicCohomologyProj A f I F p n) ≤
-        I ^ (n - c) • (⊤ : Submodule A (cohomologyOverBase A f p F)))
-    (h02OB_range : ∀ n k : ℕ, (hk : n + c ≤ k) →
-      LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-          (idealPowerQuotientDrop (baseIdealSheaf A I f)
-            ((Nat.le_add_right n c).trans hk) F)).hom =
-        LinearMap.range (((moduleGlobalSections X).rightDerived p).map
-          (cokernel.π (C := X.Modules)
-            (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom)
-    (n : ℕ) (x : cohomologyOverBase A f p F) :
-    towerLimit.proj n (formalFunctionsEquiv A f I F p c h02OB_ker h02OB_range
-        (AdicCompletion.of I (cohomologyOverBase A f p F) x)) =
-      adicCohomologyProj A f I F p n x
-```
-
-**`Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_02O8`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsFrom02O8.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsFrom02O8.lean#L238). The attribute's comment: “granted Tag 02O8, carried as the hypothesis h02O8”.
-
-> **Stacks Project, Tag 02OC**, granted [Stacks, Tag 02O8], and for the `A`-module
-> isomorphism only.
->
-> With `𝓘 = I · 𝒪_X`, the `I`-adic completion of `Hᵖ(X, ℱ)` is the limit of the tower
-> `n ↦ Hᵖ(X, ℱ / 𝓘ⁿℱ)`, by *the* comparison map: the projection normalisation says that the
-> `n`-th component of the equivalence carries the image of a class `x ∈ Hᵖ(X, ℱ)` to the image of
-> `x` in `Hᵖ(X, ℱ / 𝓘ⁿℱ)`. The constant `c` is existentially bound because
-> `Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv` is indexed by it.
->
-> [Stacks, Tag 02OC] further asserts that the comparison is a homeomorphism for the limit
-> topologies; that is **not** proved here, exactly as in
-> `Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv`, and this statement does not claim it.
->
-> Quasi-coherence of `ℱ` is not assumed: it follows from `hF`.
-
-```lean
-public theorem exists_formalFunctionsEquiv_of_02O8
-    (A : Type u) [CommRing A] [IsNoetherianRing A] {X : Scheme.{u}} (f : X ⟶ Spec (.of A))
-    (hX : AlgebraicGeometry.IsProper f) (I : Ideal A) (F : X.Modules)
-    (hF : SheafOfModules.IsCoherent F) (p : ℕ)
-    (h02O8 : ∀ (A' : Type u) [CommRing A'] [IsNoetherianRing A'] (I' : Ideal A')
-      (X' : Over (Spec (.of A'))) (_ : AlgebraicGeometry.IsProper X'.hom)
-      (F' : X'.left.Modules) (_ : SheafOfModules.IsCoherent F') (p' : ℕ),
-      (cohomologyIdealPowerSystem I' X' F' p').IsReesFinite) :
-    ∃ (c : ℕ) (e : AdicCompletion I (cohomologyOverBase A f p F) ≃ₗ[A]
-        towerLimit (adicCohomologyTower A f I F p) (adicCohomologyTowerMap A f I F p)),
-      ∀ (n : ℕ) (x : cohomologyOverBase A f p F),
-        towerLimit.proj n (e (AdicCompletion.of I (cohomologyOverBase A f p F) x)) =
-          adicCohomologyProj A f I F p n x
-```
-
-**`Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L236). References: EGA III (4.1.7).
+**`Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L243). References: EGA III (4.1.7).
 
 > **[Stacks, Tag 02OC].** For `A` Noetherian, `I ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent, the maps `Hᵖ(X, ℱ)/IⁿHᵖ(X, ℱ) → Hᵖ(X, ℱ/𝓘ⁿℱ)` assemble into an isomorphism
@@ -467,7 +237,10 @@ public theorem exists_formalFunctionsEquiv_of_02O8
 > `Stacks.IntertwinedFiltration.isHomeomorph_adicCompletionEquivTowerLimit_limitTopology` for the
 > same map; the hypotheses of all three are clauses (1) and (3) of [Stacks, Tag 02OB], which come
 > from `exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper`, together with the
-> finite generation of `I` that `IsNoetherianRing A` supplies.
+> finite generation of `I` that `IsNoetherianRing A` supplies. Those three declarations carry no
+> registration under [Stacks, Tag 02OC]: each takes clauses (1) and (3) of [Stacks, Tag 02OB] as
+> inputs and states one component of the theorem, and this theorem, which states all three
+> components with the source's hypotheses, is the registered form of [Stacks, Tag 02OC].
 
 ```lean
 theorem exists_formalFunctionsEquiv_of_isProper [IsNoetherianRing A]
@@ -487,122 +260,32 @@ theorem exists_formalFunctionsEquiv_of_isProper [IsNoetherianRing A]
 
 [Tag 087U](https://stacks.math.columbia.edu/tag/087U) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_cohomologyToLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/FormalFunctions.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/FormalFunctions.lean#L360). The attribute's comment: “for all p ≥ 0 and any f : X ⟶ Spec A with X locally Noetherian, hence in particular for a proper f; the finiteness of the cohomology (02O6) and the two uniform Artin-Rees bounds (02OB) enter as the hypotheses hfin, hker and hstab, none of which this library carries for a proper morphism”.
+**`Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L207). The attribute's comment: “for all p ≥ 0: A Noetherian and J-adically complete, f : X ⟶ Spec A proper, F coherent; 02O6 and 02OB are proved theorems used in the proof”. References: SGA 2 IX (1.3), “The edge φ'\_i”.
 
-> **Stacks 087U**, granted the two uniform bounds of [Stacks, Tag 02OB] and the finiteness of
-> [Stacks, Tag 02O6].
+> **The theorem on formal functions over a complete base, [Stacks, Tag 087U].** For `A`
+> Noetherian and complete with respect to `J`, `f : X ⟶ Spec A` proper and `F` coherent, the
+> comparison `Hᵖ(X, F) ⟶ limₙ Hᵖ(X, F / 𝓙ⁿ F)` is an isomorphism in every degree `p`.
 >
-> Let `A` be a Noetherian ring complete with respect to an ideal `J`, let `X` be a locally
-> Noetherian scheme over `A` and let `F` be a coherent sheaf on `X`. Then for every `p ≥ 0` the
-> canonical map
+> This is `Stacks.Algebraization.isIso_cohomologyToLimit` with its three hypotheses discharged:
+> the finiteness of the cohomology by [Stacks, Tag 02O6], and the two uniform Artin-Rees bounds
+> by [Stacks, Tag 02OB] over the unconditional [Stacks, Tag 02O8].
 >
->   `Hᵖ(X, F) ⟶ limₙ Hᵖ(X, F / Jⁿ F)`
->
-> is an isomorphism, provided
->
-> * `hfin`: `Hᵖ(X, F)` is a finite `A`-module — this is [Stacks, Tag 02O6], the finiteness of
->   the cohomology of a coherent sheaf along a proper morphism, which is **not** available in this
->   library for a proper morphism;
-> * `hker`: there is a `c` with `ker (Hᵖ(X, F) ⟶ Hᵖ(X, F / Jⁿ⁺ᶜ F)) ⊆ Jⁿ Hᵖ(X, F)` for all `n`;
-> * `hstab`: there is a `c` such that the image of `Hᵖ(X, F) ⟶ Hᵖ(X, F / Jⁿ F)` contains the image
->   of `Hᵖ(X, F / Jⁿ⁺ᶜ F) ⟶ Hᵖ(X, F / Jⁿ F)` for all `n`.
->
-> The last two are the uniform Artin-Rees bounds of [Stacks, Tag 02OB], read through the long
-> exact cohomology sequences of `0 → Jⁿ F → F → F / Jⁿ F → 0`; they are the two places where
-> properness of the structure morphism enters the source's argument, and neither is available in
-> this library — see the implementation notes of
-> `StacksFrontier/RingTheory/LocalCohomology/UniformCohomologyBound.lean`.
->
-> What is proved here is everything else: the completion step of the source's proof — that no
-> completion is needed on the left because a finite module over a complete Noetherian ring is
-> itself complete — together with the derivation of the comparison from the two bounds.
+> This is the declaration [Stacks, Tag 087U] is registered on; the conditional statements of
+> `StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/FormalFunctions.lean`, where the
+> comparison map and the reduction are built, are untagged.
 
 ```lean
-public theorem isIso_cohomologyToLimit (A : Type u) [CommRing A] [IsNoetherianRing A]
-    (J : Ideal A) [IsAdicComplete J A] {X : Scheme.{u}} [IsLocallyNoetherian X]
-    (f : X ⟶ Spec (.of A))
-    (F : AlgebraicGeometry.SheafOfModules.CoherentModules X.ringCatSheaf) (p : ℕ)
-    (hfin : letI := baseAlgebra A f
-      Module.Finite A
-        ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).obj F.obj))
-    (hker : letI := baseAlgebra A f
-      ∃ c : ℕ, ∀ (n : ℕ) (x : ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections
-          X).rightDerived p).obj F.obj)),
-        (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).map
-            (completionProjection X
-              (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F (n + c))).hom x = 0 →
-          x ∈ J ^ n • (⊤ : Submodule A ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections
-            X).rightDerived p).obj F.obj)))
-    (hstab : ∃ c : ℕ, ∀ (n : ℕ)
-        (y : ↥((completionCohomologySystem
-          (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p).obj (op (n + c)))),
-        ∃ x : ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).obj F.obj),
-          (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).map
-              (completionProjection X
-                (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F n)).hom x =
-            ((completionCohomologySystem
-                (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p).map
-              (homOfLE (Nat.le_add_right n c)).op).hom y) :
-    IsIso (cohomologyToLimit
-      (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p)
-```
-
-**`Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/FormalFunctions.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/FormalFunctions.lean#L464). The attribute's comment: “for a proper f and all p ≥ 0; the finiteness of the cohomology (02O6) and the two uniform Artin-Rees bounds (02OB) enter as the hypotheses hfin, hker and hstab, none of which this library carries for a proper morphism”.
-
-> **Stacks 087U for a proper morphism**, granted the two uniform bounds of
-> [Stacks, Tag 02OB] and the finiteness of [Stacks, Tag 02O6].
->
-> This is `Stacks.Algebraization.isIso_cohomologyToLimit` with the hypothesis
-> `IsLocallyNoetherian X` replaced by properness of `f`, which implies it over a Noetherian base.
-> The statement is then the source's verbatim: `A` Noetherian and `J`-adically complete,
-> `f : X ⟶ Spec A` proper, `F` coherent, and the conclusion for every `p ≥ 0`.
->
-> The three hypotheses are the ones the source cites and the only places properness is used there;
-> none of them is carried by this library for a proper morphism. See
-> `Stacks.Algebraization.isIso_cohomologyToLimit` for what each of them says.
-
-```lean
-public theorem isIso_cohomologyToLimit_of_isProper (A : Type u) [CommRing A] [IsNoetherianRing A]
-    (J : Ideal A) [IsAdicComplete J A] {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) [IsProper f]
-    (F : AlgebraicGeometry.SheafOfModules.CoherentModules X.ringCatSheaf) (p : ℕ)
-    (hfin : letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
-      letI := baseAlgebra A f
-      Module.Finite A
-        ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).obj F.obj))
-    (hker : letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
-      letI := baseAlgebra A f
-      ∃ c : ℕ, ∀ (n : ℕ) (x : ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections
-          X).rightDerived p).obj F.obj)),
-        (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).map
-            (completionProjection X
-              (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F (n + c))).hom x = 0 →
-          x ∈ J ^ n • (⊤ : Submodule A ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections
-            X).rightDerived p).obj F.obj)))
-    (hstab : letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
-      ∃ c : ℕ, ∀ (n : ℕ)
-        (y : ↥((completionCohomologySystem
-          (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p).obj (op (n + c)))),
-        ∃ x : ↥(((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).obj F.obj),
-          (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerived p).map
-              (completionProjection X
-                (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F n)).hom x =
-            ((completionCohomologySystem
-                (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p).map
-              (homOfLE (Nat.le_add_right n c)).op).hom y) :
+public theorem isIso_cohomologyToLimit_of_isProper_of_isAdicComplete
+    (F : AlgebraicGeometry.SheafOfModules.CoherentModules X.ringCatSheaf) (p : ℕ) :
     letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
-    IsIso (cohomologyToLimit
-      (Stacks.Cohomology.FormalFunctions.baseIdealSheaf A J f) F p)
+    IsIso (cohomologyToLimit (baseIdealSheaf A J f) F p)
 ```
-
-Declarations registered for the tag:
-
-- [`Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper_of_isAdicComplete`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L205), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L270) (StacksFrontier).
 
 ## Tag 02OD, a lemma
 
 [Tag 02OD](https://stacks.math.columbia.edu/tag/02OD) in the Stacks Project.
 
-**`Stacks.FormalFunctions.nonempty_adicCompletionHigherDirectImageStalkEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean#L119). References: EGA III (4.2.4), “Degree p = 0 case”.
+**`Stacks.FormalFunctions.nonempty_adicCompletionHigherDirectImageStalkEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean#L119). References: EGA III (4.2.4), “Degree p = 0 case”.
 
 > **Stacks Project, Tag 02OD.** Let `f : X ⟶ Y` be a proper morphism of schemes with `Y`
 > locally Noetherian, let `ℱ` be a coherent `𝒪_X`-module and let `y` be a point of `Y`. Let
@@ -622,7 +305,7 @@ public theorem nonempty_adicCompletionHigherDirectImageStalkEquiv (f : X ⟶ Y)
         towerLimit (infinitesimalCohomology f F y p) (infinitesimalCohomologyMap f F y p))
 ```
 
-**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i\_\{n*} ℱ\_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
+**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i\_\{n*} ℱ\_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
 
 > **`i_{n*} ℱ_n ≅ ℱ / I ⁿ ℱ`.** The direct image of the restriction of `ℱ` to the infinitesimal
 > neighbourhood `X_n = X ×_{Spec A} Spec (A / I ⁿ)` is the quotient of `ℱ` by the `n`-th power of
@@ -648,7 +331,7 @@ public def pushforwardPullbackBaseIdealIso :
       idealPowerQuotient (baseIdealSheaf A I f) n F
 ```
 
-**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X\_n = X ×\_Y Spec(𝒪\_\{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f\_* ℱ at y is the limit of the H^p(X\_n, ℱ\_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
+**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X\_n = X ×\_Y Spec(𝒪\_\{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f\_* ℱ at y is the limit of the H^p(X\_n, ℱ\_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
 
 > The `n`-th infinitesimal neighbourhood `X_n = Spec (𝒪_{Y,y}/𝔪_y ^ n) ×_Y X` of the fibre of
 > `f : X ⟶ Y` over `y`.
@@ -661,7 +344,7 @@ public abbrev infinitesimalNeighbourhood (f : X ⟶ Y) (y : Y) (n : ℕ) : Schem
 
 [Tag 02OE](https://stacks.math.columbia.edu/tag/02OE) in the Stacks Project.
 
-**`Stacks.FormalFunctions.isZero_stalk_higherDirectImage_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L142).
+**`Stacks.FormalFunctions.isZero_stalk_higherDirectImage_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L142).
 
 > **Stacks Project, Tag 02OE.** Let `f : X ⟶ Y` be a morphism of schemes and let `y : Y`.
 > Assume `Y` is locally Noetherian, `f` is proper, and the fibre `f ⁻¹' {y}` is finite. Then for
@@ -685,7 +368,7 @@ theorem isZero_stalk_higherDirectImage_of_finite_fibre {X Y : Scheme.{u}} (f : X
 
 [Tag 02V7](https://stacks.math.columbia.edu/tag/02V7) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FibreDimension.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean#L133). References: EGA III (4.2.2), “partial”; SGA 6 X (4.4), “Stalk form of (4.4.5)”.
+**`Stacks.AlgebraicGeometry.FibreDimension.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean#L133). References: EGA III (4.2.2), “partial”; SGA 6 X (4.4), “Stalk form of (4.4.5)”.
 
 > **[Stacks, Tag 02V7].** Let `f : X ⟶ Y` be a morphism of schemes and let `y ∈ Y`. Assume
 > `Y` locally Noetherian, `f` proper and `dim(X_y) = d`. Then for every coherent sheaf `ℱ` on `X`
@@ -713,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.20, Tag 02O7](https://stacks.math.columbia.edu/tag/02O7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

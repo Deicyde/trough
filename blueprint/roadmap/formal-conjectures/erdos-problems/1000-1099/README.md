@@ -25,7 +25,7 @@ The Erdős problems numbered 1000 to 1099 that Formal Conjectures states, one ar
 - [Erdős Problem 1025](part-01/erdos-problem-1025.md)
 - [Erdős Problem 1026](part-01/erdos-problem-1026.md)
 
-## [Erdős Problem 1027 to Erdős Problem 1051](part-02/README.md)
+## [Erdős Problem 1027 to Erdős Problem 1050](part-02/README.md)
 
 - [Erdős Problem 1027](part-02/erdos-problem-1027.md)
 - [Erdős Problem 1028](part-02/erdos-problem-1028.md)
@@ -39,6 +39,7 @@ The Erdős problems numbered 1000 to 1099 that Formal Conjectures states, one ar
 - [Erdős Problem 1037](part-02/erdos-problem-1037.md)
 - [Erdős Problem 1038](part-02/erdos-problem-1038.md)
 - [Erdős Problem 1041](part-02/erdos-problem-1041.md)
+- [Erdős Problem 1042](part-02/erdos-problem-1042.md)
 - [Erdős Problem 1043](part-02/erdos-problem-1043.md)
 - [Erdős Problem 1044](part-02/erdos-problem-1044.md)
 - [Erdős Problem 1046](part-02/erdos-problem-1046.md)
@@ -46,10 +47,10 @@ The Erdős problems numbered 1000 to 1099 that Formal Conjectures states, one ar
 - [Erdős Problem 1048](part-02/erdos-problem-1048.md)
 - [Erdős Problem 1049](part-02/erdos-problem-1049.md)
 - [Erdős Problem 1050](part-02/erdos-problem-1050.md)
-- [Erdős Problem 1051](part-02/erdos-problem-1051.md)
 
-## [Erdős Problem 1052 to Erdős Problem 1071](part-03/README.md)
+## [Erdős Problem 1051 to Erdős Problem 1070](part-03/README.md)
 
+- [Erdős Problem 1051](part-03/erdos-problem-1051.md)
 - [Erdős Problem 1052](part-03/erdos-problem-1052.md)
 - [Erdős Problem 1053](part-03/erdos-problem-1053.md)
 - [Erdős Problem 1054](part-03/erdos-problem-1054.md)
@@ -69,10 +70,10 @@ The Erdős problems numbered 1000 to 1099 that Formal Conjectures states, one ar
 - [Erdős Problem 1068](part-03/erdos-problem-1068.md)
 - [Erdős Problem 1069](part-03/erdos-problem-1069.md)
 - [Erdős Problem 1070](part-03/erdos-problem-1070.md)
-- [Erdős Problem 1071](part-03/erdos-problem-1071.md)
 
-## [Erdős Problem 1072 to Erdős Problem 1094](part-04/README.md)
+## [Erdős Problem 1071 to Erdős Problem 1093](part-04/README.md)
 
+- [Erdős Problem 1071](part-04/erdos-problem-1071.md)
 - [Erdős Problem 1072](part-04/erdos-problem-1072.md)
 - [Erdős Problem 1073](part-04/erdos-problem-1073.md)
 - [Erdős Problem 1074](part-04/erdos-problem-1074.md)
@@ -92,10 +93,10 @@ The Erdős problems numbered 1000 to 1099 that Formal Conjectures states, one ar
 - [Erdős Problem 1090](part-04/erdos-problem-1090.md)
 - [Erdős Problem 1092](part-04/erdos-problem-1092.md)
 - [Erdős Problem 1093](part-04/erdos-problem-1093.md)
-- [Erdős Problem 1094](part-04/erdos-problem-1094.md)
 
-## [Erdős Problem 1095 to Erdős Problem 1099](part-05/README.md)
+## [Erdős Problem 1094 to Erdős Problem 1099](part-05/README.md)
 
+- [Erdős Problem 1094](part-05/erdos-problem-1094.md)
 - [Erdős Problem 1095](part-05/erdos-problem-1095.md)
 - [Erdős Problem 1096](part-05/erdos-problem-1096.md)
 - [Erdős Problem 1097](part-05/erdos-problem-1097.md)

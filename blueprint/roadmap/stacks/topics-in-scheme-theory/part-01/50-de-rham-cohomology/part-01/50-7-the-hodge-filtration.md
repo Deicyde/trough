@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.7 The Hodge filtration
 
-Section 50.7 of the Stacks Project, [Tag 0FM7](https://stacks.math.columbia.edu/tag/0FM7). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.7 of the Stacks Project, [Tag 0FM7](https://stacks.math.columbia.edu/tag/0FM7). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FM7, the section
 
 [Tag 0FM7](https://stacks.math.columbia.edu/tag/0FM7) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationCup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L425). The attribute's comment: “Section 50.7, the top row of the displayed diagram: the cup products H^n(X, σ^\{≥i}Ω^•) × H^m(X, σ^\{≥j}Ω^•) ⟶ H^\{n+m}(X, σ^\{≥(i+j)}Ω^•), the cup product of Cohomology Section 0FKU (the global cup product of the ringed space (X, A) built from the canonical one-point comparison) along the multiplication Tot(σ^\{≥i}Ω^• ⊗ σ^\{≥j}Ω^•) ⟶ σ^\{≥(i+j)}Ω^• that the wedge product of 0FM2 restricts to”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationCup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L425). The attribute's comment: “Section 50.7, the top row of the displayed diagram: the cup products H^n(X, σ^\{≥i}Ω^•) × H^m(X, σ^\{≥j}Ω^•) ⟶ H^\{n+m}(X, σ^\{≥(i+j)}Ω^•), the cup product of Cohomology Section 0FKU (the global cup product of the ringed space (X, A) built from the canonical one-point comparison) along the multiplication Tot(σ^\{≥i}Ω^• ⊗ σ^\{≥j}Ω^•) ⟶ σ^\{≥(i+j)}Ω^• that the wedge product of 0FM2 restricts to”.
 
 > **The cup product of Section 50.7 on the hypercohomology of the brutal truncations**,
 >
@@ -30,7 +30,7 @@ def hodgeFiltrationCup (p q i j : ℤ) :
       truncatedDeRhamCohomologyAbelian B D (p + q) (i + j)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.truncatedDeRhamCohomologyAbelianMap_hodgeFiltrationCup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L446). The attribute's comment: “Section 50.7, the commutative diagram it displays, with no parameter: the maps H^n(X, σ^\{≥p}Ω^•) ⟶ H^n\_dR(X/S) induced by the inclusions σ^\{≥p}Ω^• ⟶ Ω^• carry the cup product H^n(X, σ^\{≥i}Ω^•) × H^m(X, σ^\{≥j}Ω^•) ⟶ H^\{n+m}(X, σ^\{≥(i+j)}Ω^•) to the cup product on H^*\_dR(X/S), both cup products being those of Cohomology Section 0FKU”.
+**`AlgebraicGeometry.SheafOfModules.truncatedDeRhamCohomologyAbelianMap_hodgeFiltrationCup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L446). The attribute's comment: “Section 50.7, the commutative diagram it displays, with no parameter: the maps H^n(X, σ^\{≥p}Ω^•) ⟶ H^n\_dR(X/S) induced by the inclusions σ^\{≥p}Ω^• ⟶ Ω^• carry the cup product H^n(X, σ^\{≥i}Ω^•) × H^m(X, σ^\{≥j}Ω^•) ⟶ H^\{n+m}(X, σ^\{≥(i+j)}Ω^•) to the cup product on H^*\_dR(X/S), both cup products being those of Cohomology Section 0FKU”.
 
 > **The commutative diagram of Section 50.7**: the maps
 > `H^n(X, σ^{≥p}Ω^•_{X/S}) ⟶ H^n_{dR}(X/S)` induced by the inclusions of the brutal truncations
@@ -46,7 +46,7 @@ theorem truncatedDeRhamCohomologyAbelianMap_hodgeFiltrationCup (p q i j : ℤ)
         ((truncatedDeRhamCohomologyAbelianMap B D q j).hom y)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamCup_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L465). The attribute's comment: “Section 50.7, its last assertion, with no parameter: the Hodge filtration is multiplicative for the cup product of Cohomology Section 0FKU on de Rham cohomology, F^i H^n\_dR(X/S) ∪ F^j H^m\_dR(X/S) ⊂ F^\{i+j} H^\{n+m}\_dR(X/S)”.
+**`AlgebraicGeometry.SheafOfModules.deRhamCup_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L465). The attribute's comment: “Section 50.7, its last assertion, with no parameter: the Hodge filtration is multiplicative for the cup product of Cohomology Section 0FKU on de Rham cohomology, F^i H^n\_dR(X/S) ∪ F^j H^m\_dR(X/S) ⊂ F^\{i+j} H^\{n+m}\_dR(X/S)”.
 
 > **The Hodge filtration is multiplicative**, the last assertion of Section 50.7:
 >
@@ -67,7 +67,7 @@ theorem deRhamCup_mem_hodgeFiltrationAbelian (p q i j : ℤ)
       ((hodgeFiltrationAbelian B D (p + q) (i + j)).arrow).hom w = deRhamCup B D i j x y
 ```
 
-**`AlgebraicGeometry.SheafOfModules.exists_hodgeFiltrationSpectralSequence_iso_cartanEilenbergFirst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L488). The attribute's comment: “Section 50.7: the spectral sequence of Cohomology Lemma 0BKK for Ω^•\_\{X/S} viewed as a filtered complex (by its brutal truncations) is the same as the Hodge-to-de Rham spectral sequence of Section 0FM6, i.e. the first spectral sequence of Derived Categories Lemma 015J built from a Cartan-Eilenberg resolution of Ω^•\_\{X/S}: one package, bounded, converging to the hypercohomology of Ω^•\_\{X/S}, and isomorphic to the first spectral sequence of every Cartan-Eilenberg resolution (Cohomology Example 0FLK)”. References: SGA 7 XXII (3.3), “more general”.
+**`AlgebraicGeometry.SheafOfModules.exists_hodgeFiltrationSpectralSequence_iso_cartanEilenbergFirst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/CanonicalCupProduct.lean#L488). The attribute's comment: “Section 50.7: the spectral sequence of Cohomology Lemma 0BKK for Ω^•\_\{X/S} viewed as a filtered complex (by its brutal truncations) is the same as the Hodge-to-de Rham spectral sequence of Section 0FM6, i.e. the first spectral sequence of Derived Categories Lemma 015J built from a Cartan-Eilenberg resolution of Ω^•\_\{X/S}: one package, bounded, converging to the hypercohomology of Ω^•\_\{X/S}, and isomorphic to the first spectral sequence of every Cartan-Eilenberg resolution (Cohomology Example 0FLK)”. References: SGA 7 XXII (3.3), “more general”.
 
 > **The spectral sequence of the Hodge filtration is the Hodge-to-de Rham spectral sequence of
 > Section 0FM6.** The spectral sequence of Cohomology, Lemma 0BKK for `Ω^•_{X/S}` filtered by its
@@ -90,7 +90,7 @@ theorem exists_hodgeFiltrationSpectralSequence_iso_cartanEilenbergFirst :
             (baseRingedSpace A) I)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamStupidSubcomplex_antitone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L147). The attribute's comment: “the brutal truncations are subcomplexes of the relative de Rham complex and form a decreasing filtration of it, the chain Ω^• = σ^\{≥0}Ω^• ⊃ σ^\{≥1}Ω^• ⊃ σ^\{≥2}Ω^• ⊃ ⋯; this is the decreasing half, that σ^\{≥q}Ω^• ⊆ σ^\{≥p}Ω^• for p ≤ q”.
+**`AlgebraicGeometry.SheafOfModules.deRhamStupidSubcomplex_antitone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L147). The attribute's comment: “the brutal truncations are subcomplexes of the relative de Rham complex and form a decreasing filtration of it, the chain Ω^• = σ^\{≥0}Ω^• ⊃ σ^\{≥1}Ω^• ⊃ σ^\{≥2}Ω^• ⊃ ⋯; this is the decreasing half, that σ^\{≥q}Ω^• ⊆ σ^\{≥p}Ω^• for p ≤ q”.
 
 > The brutal truncations form a **decreasing** chain of subcomplexes of the de Rham complex:
 > `σ^{≥1}Ω^• ⊃ σ^{≥2}Ω^• ⊃ ⋯`, because for `p ≤ q` the inclusion of `σ^{≥q}Ω^•` factors through
@@ -100,7 +100,7 @@ theorem exists_hodgeFiltrationSpectralSequence_iso_cartanEilenbergFirst :
 theorem deRhamStupidSubcomplex_antitone : Antitone (deRhamStupidSubcomplex B D)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamStupidSubcomplex_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L172). The attribute's comment: “the chain Ω^• = σ^\{≥0}Ω^• ⊃ σ^\{≥1}Ω^• ⊃ ⋯ starts at the de Rham complex itself: the equality Ω^•\_\{X/S} = σ^\{≥0}Ω^•\_\{X/S} at the left end of the display”.
+**`AlgebraicGeometry.SheafOfModules.deRhamStupidSubcomplex_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L172). The attribute's comment: “the chain Ω^• = σ^\{≥0}Ω^• ⊃ σ^\{≥1}Ω^• ⊃ ⋯ starts at the de Rham complex itself: the equality Ω^•\_\{X/S} = σ^\{≥0}Ω^•\_\{X/S} at the left end of the display”.
 
 > The chain of brutal truncations starts at the de Rham complex itself:
 > `Ω^•_{𝒪_X/A} = σ^{≥0}Ω^•_{𝒪_X/A}`, because the de Rham complex is concentrated in nonnegative
@@ -110,7 +110,7 @@ theorem deRhamStupidSubcomplex_antitone : Antitone (deRhamStupidSubcomplex B D)
 theorem deRhamStupidSubcomplex_zero : deRhamStupidSubcomplex B D 0 = ⊤
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamStupidGradedPieceDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L200). The attribute's comment: “gr^p(Ω^•\_\{X/S}) = Ω^p\_\{X/S}[-p], the identification of the graded pieces of the brutal filtration of the relative de Rham complex”.
+**`AlgebraicGeometry.SheafOfModules.deRhamStupidGradedPieceDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L200). The attribute's comment: “gr^p(Ω^•\_\{X/S}) = Ω^p\_\{X/S}[-p], the identification of the graded pieces of the brutal filtration of the relative de Rham complex”.
 
 > **`gr^p(Ω^•_{𝒪_X/A}) = Ω^p_{𝒪_X/A}[-p]`.** In the derived category of sheaves of
 > `A`-modules the `p`-th graded piece of the brutal filtration of the de Rham complex is the sheaf
@@ -123,7 +123,7 @@ def deRhamStupidGradedPieceDerivedIso (p : ℕ) :
       ((DerivedCategory.singleFunctor _ 0).obj ((deRhamComplex B D).X p))⟦(-(p : ℤ))⟧
 ```
 
-**`AlgebraicGeometry.SheafOfModules.exists_hodgeToDeRhamSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L290). The attribute's comment: “the spectral sequence of Cohomology Lemma 0BKK for Ω^•\_\{X/S} viewed as a filtered complex of sheaves is the Hodge-to-de Rham spectral sequence built by Cohomology Example 0FLK: one object, carrying the Tag 0FLK first page E\_1^\{p,q} = H^q(X, Ω^p), bounded, abutting to H^n\_dR(X/S), and converging along the Hodge filtration of Tag 0FM8. Its first page is identified term by term with the abelian-sheaf first page `hodgeToDeRhamFirstPage` of Section 0FM6; the differentials d\_1 of the two first pages are not compared”. References: SGA 7 XXII (3.3), “more general”.
+**`AlgebraicGeometry.SheafOfModules.exists_hodgeToDeRhamSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRhamSpectralSequence.lean#L290). The attribute's comment: “the spectral sequence of Cohomology Lemma 0BKK for Ω^•\_\{X/S} viewed as a filtered complex of sheaves is the Hodge-to-de Rham spectral sequence built by Cohomology Example 0FLK: one object, carrying the Tag 0FLK first page E\_1^\{p,q} = H^q(X, Ω^p), bounded, abutting to H^n\_dR(X/S), and converging along the Hodge filtration of Tag 0FM8. Its first page is identified term by term with the abelian-sheaf first page `hodgeToDeRhamFirstPage` of Section 0FM6; the differentials d\_1 of the two first pages are not compared”. References: SGA 7 XXII (3.3), “more general”.
 
 > **The Hodge-to-de Rham spectral sequence of the brutal filtration of the de Rham complex.**
 >
@@ -165,7 +165,7 @@ theorem exists_hodgeToDeRhamSpectralSequence :
           (hodgeFiltration_antitone B D (p + q) (by omega))))
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean#L284). The attribute's comment: “the wedge product of equation 0FM2 sends Tot(σ^\{≥i}Ω^•\_\{X/S} ⊗\_\{p⁻¹𝒪\_S} σ^\{≥j}Ω^•\_\{X/S}) into σ^\{≥(i+j)}Ω^•\_\{X/S}: the multiplication of the Hodge filtration on complexes. One assertion of the section; the hypercohomology diagrams it leads to are registered on `truncatedDeRhamCohomologyAbelianMap_hodgeFiltrationCup` and `deRhamCup_mem_hodgeFiltrationAbelian`, and the filtration, its graded pieces and its spectral sequence on the declarations named in this file's module docstring”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean#L284). The attribute's comment: “the wedge product of equation 0FM2 sends Tot(σ^\{≥i}Ω^•\_\{X/S} ⊗\_\{p⁻¹𝒪\_S} σ^\{≥j}Ω^•\_\{X/S}) into σ^\{≥(i+j)}Ω^•\_\{X/S}: the multiplication of the Hodge filtration on complexes. One assertion of the section; the hypercohomology diagrams it leads to are registered on `truncatedDeRhamCohomologyAbelianMap_hodgeFiltrationCup` and `deRhamCup_mem_hodgeFiltrationAbelian`, and the filtration, its graded pieces and its spectral sequence on the declarations named in this file's module docstring”.
 
 > **The multiplication of the Hodge filtration**
 >
@@ -180,7 +180,7 @@ def hodgeFiltrationWedge (i j : ℕ) :
     truncatedTensorSquare B D i j ⟶ deRhamBrutal B D (i + j)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationWedge_ιBrutal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean#L296). The attribute's comment: “that the morphism Tot(σ^\{≥i}Ω^• ⊗ σ^\{≥j}Ω^•) ⟶ σ^\{≥(i+j)}Ω^• of the previous declaration really is the wedge product of equation 0FM2, i.e. that it lies over ∧ under the inclusion σ^\{≥(i+j)}Ω^• ⟶ Ω^•. Without this the previous declaration would be some morphism into the (i+j)-th step rather than the section's assertion about ∧”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationWedge_ιBrutal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Multiplicativity.lean#L296). The attribute's comment: “that the morphism Tot(σ^\{≥i}Ω^• ⊗ σ^\{≥j}Ω^•) ⟶ σ^\{≥(i+j)}Ω^• of the previous declaration really is the wedge product of equation 0FM2, i.e. that it lies over ∧ under the inclusion σ^\{≥(i+j)}Ω^• ⟶ Ω^•. Without this the previous declaration would be some morphism into the (i+j)-th step rather than the section's assertion about ∧”.
 
 > **The multiplication of the Hodge filtration is the wedge product**: composing it with the
 > inclusion `σ^{≥(i + j)}Ω^• ⟶ Ω^•_{𝒪_X/A}` returns `∧` restricted to the truncations.
@@ -195,7 +195,7 @@ theorem hodgeFiltrationWedge_ιBrutal (i j : ℕ) :
 
 [Tag 0FM8](https://stacks.math.columbia.edu/tag/0FM8) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean#L145).
+**`AlgebraicGeometry.SheafOfModules.hodgeFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean#L145).
 
 > **The Hodge filtration** on relative de Rham cohomology: the `p`-th step
 > `F^p H^n_{dR} = Im (H^n(X, σ^{≥p}Ω^•) ⟶ H^n_{dR})` is the image of the hypercohomology of the
@@ -206,7 +206,7 @@ theorem hodgeFiltrationWedge_ιBrutal (i j : ℕ) :
 def hodgeFiltration (p n : ℤ) : Subobject (deRhamCohomology B D n)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean#L200). The attribute's comment: “abelian-sheaf realization in every degree”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFiltrationAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/Basic.lean#L200). The attribute's comment: “abelian-sheaf realization in every degree”.
 
 > **The Hodge filtration** on relative de Rham cohomology in the abelian-sheaf realization, in
 > every degree: the image of the hypercohomology of the brutal truncation `σ^{≥p}Ω^•` under the map
@@ -223,4 +223,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.7, Tag 0FM7](https://stacks.math.columbia.edu/tag/0FM7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

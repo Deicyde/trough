@@ -8,13 +8,13 @@ proof: formalized
 
 # 84.6 Comparing fppf and étale topologies
 
-Section 84.6 of the Stacks Project, [Tag 0DGE](https://stacks.math.columbia.edu/tag/0DGE). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 84.6 of the Stacks Project, [Tag 0DGE](https://stacks.math.columbia.edu/tag/0DGE). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DGF, a lemma
 
 [Tag 0DGF](https://stacks.math.columbia.edu/tag/0DGF) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtale_units_and_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L74).
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtale_units_and_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L74).
 
 > **Stacks 0DGF.** Let `X` be an algebraic space over `S`.
 > (1) For a sheaf of sets `F` on `X_étale`, `ε_{X,*}a_X⁻¹F = π_X⁻¹F` and `a_{X,*}a_X⁻¹F = F`: the
@@ -39,7 +39,7 @@ theorem isIso_fppfToSmallEtale_units_and_isZero_rightDerived (X : T.Spaces) :
 
 [Tag 0DGG](https://stacks.math.columbia.edu/tag/0DGG) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtale_derivedUnits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L101).
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtale_derivedUnits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L101).
 
 > **Stacks 0DGG.** For `K` in `D⁺(X_étale)` the maps `π_X⁻¹K ⟶ Rε_{X,*}a_X⁻¹K` and
 > `K ⟶ Ra_{X,*}a_X⁻¹K` are isomorphisms: the units of the derived adjunctions `ε_X⁻¹ ⊣ Rε_{X,*}`
@@ -61,7 +61,7 @@ theorem isIso_fppfToSmallEtale_derivedUnits
 
 [Tag 0DGH](https://stacks.math.columbia.edu/tag/0DGH) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_etaleToFppfCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L125). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_etaleToFppfCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L125). The attribute's comment: “(2)”.
 
 > **Stacks 0DGH, part (2).** For `K` in `D⁺(X_étale)`, `H^q(X_étale, K) = H^q_fppf(X, a_X⁻¹K)`
 > for every `q`: the map induced on `H^q` by the canonical map
@@ -74,7 +74,7 @@ theorem isIso_etaleToFppfCohomology (q : ℤ) :
       (DerivedCategory.Plus.homologyFunctor AddCommGrpCat.{u + 1} q))
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.etaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L166). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.BigFppfSpaceSite.etaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L166). The attribute's comment: “(1)”.
 
 > **Stacks 0DGH, part (1).** For an abelian sheaf `F` on `X_étale`,
 > `H^q(X_étale, F) = H^q_fppf(X, a_X⁻¹F)` for every `q`, by the canonical map
@@ -89,7 +89,7 @@ def etaleCohomologyIso (X : T.Spaces)
         ((CategoryTheory.Sites.abelianInverseImage (fppfToSmallEtaleMorphism T E h X)).obj F)
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.etaleCohomologyConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L177). The attribute's comment: “the example of an abelian group”.
+**`AlgebraicGeometry.BigFppfSpaceSite.etaleCohomologyConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L177). The attribute's comment: “the example of an abelian group”.
 
 > **The example of Stacks 0DGH.** For an abelian group `A`,
 > `H^q_étale(X, A) = H^q_fppf(X, A)` for the constant sheaves.
@@ -107,7 +107,7 @@ def etaleCohomologyConstantIso (X : T.Spaces) (A : AddCommGrpCat.{u + 1}) (q : �
 
 [Tag 0DGI](https://stacks.math.columbia.edu/tag/0DGI) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.canonicalSpaceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L62). The attribute's comment: “identification of the underlying algebraic spaces”.
+**`AlgebraicGeometry.BigFppfSpaceSite.canonicalSpaceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L62). The attribute's comment: “identification of the underlying algebraic spaces”.
 
 > The identification of the category of algebraic spaces a big fppf site of algebraic spaces is
 > built on with the one a big étale site of algebraic spaces over the same big fppf site of schemes
@@ -120,7 +120,7 @@ def canonicalSpaceEquivalence :
       (∀ {X Y : T.Spaces} (f : X ⟶ Y), HEq f.hom (G.functor.map f).hom) }
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtale_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L84). The attribute's comment: “continuity of the change-of-topology functor”.
+**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtale_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L84). The attribute's comment: “continuity of the change-of-topology functor”.
 
 > The identity-on-spaces functor from the big étale slice at `X` to the big fppf slice at `X`
 > is continuous.
@@ -131,7 +131,7 @@ instance fppfToBigEtale_isContinuous (X : T.Spaces) :
       (E.bigEtaleTopology (etaleSpace T E h X)) (BigFppfSpaceOver.topology T X)
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L134). The attribute's comment: “the fppf-to-big-étale morphism”.
+**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L134). The attribute's comment: “the fppf-to-big-étale morphism”.
 
 > The change-of-topology morphism `ε_X` from the big fppf topos of `X` to its big étale topos,
 > induced by the identity-on-spaces functor of slice categories.
@@ -142,7 +142,7 @@ def fppfToBigEtaleMorphism (X : T.Spaces) :
       (Sheaf (E.bigEtaleTopology (etaleSpace T E h X)) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtale_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L146). The attribute's comment: “direct image of the fppf-to-big-étale morphism”.
+**`AlgebraicGeometry.BigFppfSpaceSite.fppfToBigEtale_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L146). The attribute's comment: “direct image of the fppf-to-big-étale morphism”.
 
 > The direct image of `ε_X` is restriction along the identity-on-spaces functor of slice
 > categories.
@@ -155,7 +155,7 @@ def fppfToBigEtale_pushforwardIso (X : T.Spaces) :
         (E.bigEtaleTopology (etaleSpace T E h X)) (BigFppfSpaceOver.topology T X)
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.pullbackChangeOfTopologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L156). The attribute's comment: “canonical base-change comparison on the big sites”.
+**`AlgebraicGeometry.BigFppfSpaceSite.pullbackChangeOfTopologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L156). The attribute's comment: “canonical base-change comparison on the big sites”.
 
 > Base change along `f` commutes with the identity-on-spaces change-of-topology functor of
 > slice categories.
@@ -168,7 +168,7 @@ def pullbackChangeOfTopologyIso {X Y : T.Spaces} (f : Y ⟶ X) :
         Over.pullback f
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.fppfToSmallEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L173). The attribute's comment: “the factorization through big étale”.
+**`AlgebraicGeometry.BigFppfSpaceSite.fppfToSmallEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L173). The attribute's comment: “the factorization through big étale”.
 
 > The morphism `a_X` from the big fppf topos of `X` to its small étale topos: the composite of
 > `ε_X` with the big-to-small étale morphism `π_X` ([Stacks, Tag 0DF3]).
@@ -180,7 +180,7 @@ def fppfToSmallEtaleMorphism (X : T.Spaces) :
         (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.bigFppfBigEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L182). The attribute's comment: “the big fppf–big étale square”.
+**`AlgebraicGeometry.BigFppfSpaceSite.bigFppfBigEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L182). The attribute's comment: “the big fppf–big étale square”.
 
 > The big fppf–big étale square: for a morphism `f : Y ⟶ X` of algebraic spaces the direct
 > images of `ε_X ∘ f_{big, fppf}` and of `f_{big, étale} ∘ ε_Y` are canonically isomorphic.
@@ -191,7 +191,7 @@ def bigFppfBigEtale_pushforwardCommIso {X Y : T.Spaces} (f : Y ⟶ X) :
       ((fppfToBigEtaleMorphism T E h X).comp (bigFppfMorphism T f)).pushforward
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.bigFppfSmallEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L240). The attribute's comment: “the big fppf–small étale square”.
+**`AlgebraicGeometry.BigFppfSpaceSite.bigFppfSmallEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtale.lean#L240). The attribute's comment: “the big fppf–small étale square”.
 
 > The big fppf–small étale square: for a morphism `f : Y ⟶ X` of algebraic spaces the direct
 > images of `a_X ∘ f_{big, fppf}` and of `f_{small} ∘ a_Y` are canonically isomorphic.
@@ -207,7 +207,7 @@ def bigFppfSmallEtale_pushforwardCommIso {X Y : T.Spaces} (f : Y ⟶ X) :
 
 [Tag 0DGJ](https://stacks.math.columbia.edu/tag/0DGJ) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.fppfToSmallEtalePushforwardIsosOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleAbelianProperPushforward.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleAbelianProperPushforward.lean#L121). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.BigFppfSpaceSite.fppfToSmallEtalePushforwardIsosOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleAbelianProperPushforward.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleAbelianProperPushforward.lean#L121). The attribute's comment: “(1)”.
 
 > Let `f : Y ⟶ X` be a proper morphism of algebraic spaces over `S`, and `a = π ∘ ε` the
 > comparison morphisms from the big fppf topoi to the small étale topoi of Stacks 0DGI. Then
@@ -229,7 +229,7 @@ def fppfToSmallEtalePushforwardIsosOfIsProper
         fppfAbelianPushforward T f)
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleBaseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleProperPushforward.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleProperPushforward.lean#L278). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleBaseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleProperPushforward.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleProperPushforward.lean#L278). The attribute's comment: “(1)”.
 
 > **Proper base change for the big fppf topos.** For a proper morphism `f : Y ⟶ X` of algebraic
 > spaces, the canonical base change map `a_X⁻¹ ∘ f_{small,*} ⟶ f_{big,fppf,*} ∘ a_Y⁻¹` of functors
@@ -242,7 +242,7 @@ theorem isIso_fppfToSmallEtaleBaseChange_of_isProper {X Y : T.Spaces} (f : Y ⟶
     IsIso (fppfToSmallEtaleBaseChange T E h f)
 ```
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleProperDerivedBaseChange_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L204). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleProperDerivedBaseChange_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L204). The attribute's comment: “(2)”.
 
 > **Stacks 0DGJ, part (2).** For a proper morphism `f : Y ⟶ X` of algebraic spaces and `K` in
 > `D⁺(Y_étale)` with torsion cohomology sheaves, `a_X⁻¹(Rf_{small,*}K) = Rf_{big,fppf,*}(a_Y⁻¹K)`:
@@ -262,7 +262,7 @@ theorem isIso_fppfToSmallEtaleProperDerivedBaseChange_app
 
 [Tag 0DGK](https://stacks.math.columbia.edu/tag/0DGK) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleDerivedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L149).
+**`AlgebraicGeometry.BigFppfSpaceSite.isIso_fppfToSmallEtaleDerivedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfToSmallEtaleUnconditional.lean#L149).
 
 > **Stacks 0DGK.** For a finite morphism `f : Y ⟶ X` of algebraic spaces,
 > `a_X⁻¹(Rf_{small,*}K) = Rf_{big,fppf,*}(a_Y⁻¹K)` for `K` in `D⁺(Y_étale)`: the base change map
@@ -279,7 +279,7 @@ theorem isIso_fppfToSmallEtaleDerivedBaseChange
 
 [Tag 0DGL](https://stacks.math.columbia.edu/tag/0DGL) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfSpaceSite.isEquivalence_fppfSmallEtaleTripleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfSmallEtaleDescent.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfSmallEtaleDescent.lean#L338).
+**`AlgebraicGeometry.BigFppfSpaceSite.isEquivalence_fppfSmallEtaleTripleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfSmallEtaleDescent.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigFppfSmallEtaleDescent.lean#L340).
 
 > **Fppf descent of small étale sheaves.** Let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S` which is flat, locally of finite presentation and surjective. Then the functor
@@ -307,4 +307,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 84.6, Tag 0DGE](https://stacks.math.columbia.edu/tag/0DGE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

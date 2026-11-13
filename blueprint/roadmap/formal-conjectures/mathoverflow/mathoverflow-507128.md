@@ -10,7 +10,7 @@ statement: formalized
 > *Reference:* [mathoverflow/507128](https://mathoverflow.net/questions/507128/embeddability-order-on-picard-groups)
 > asked by user [*Junyan Xu*](https://mathoverflow.net/users/3332/junyan-xu)
 
-*Quoted from [FormalConjectures/Mathoverflow/507128.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/507128.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/507128.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/507128.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved.
 
@@ -36,7 +36,7 @@ theorem exists_isFractionRing_self_ideal_ne_top_invertible :
       I ≠ ⊤ ∧ Module.Invertible R I
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/507128.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/507128.lean#L46).
+Category `research solved`; AMS [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/507128.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/507128.lean#L46).
 
 ## Depends on
 
@@ -44,5 +44,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/507128.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/507128.lean)
+- [FormalConjectures/Mathoverflow/507128.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/507128.lean)
 - [mathoverflow/507128](https://mathoverflow.net/questions/507128/embeddability-order-on-picard-groups)

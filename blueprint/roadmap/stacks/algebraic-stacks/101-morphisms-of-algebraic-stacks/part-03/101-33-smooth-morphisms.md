@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.33 Smooth morphisms
 
-Section 101.33 of the Stacks Project, [Tag 075T](https://stacks.math.columbia.edu/tag/075T). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.33 of the Stacks Project, [Tag 075T](https://stacks.math.columbia.edu/tag/075T). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 075U, a definition
 
 [Tag 075U](https://stacks.math.columbia.edu/tag/075U) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStack.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStack.lean#L93).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStack.lean#L94).
 
 > **Stacks 075U.** A 1-morphism of algebraic stacks over `S` is *smooth* when it passes the
 > existential smooth-diagram test of Stacks 06FM at smoothness of morphisms of algebraic spaces:
@@ -31,7 +31,7 @@ abbrev IsSmooth {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 
 
 [Tag 075V](https://stacks.math.columbia.edu/tag/075V) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackComposition.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackComposition.lean#L71).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackComposition.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackComposition.lean#L71).
 
 > **Stacks 075V.** The composite of two smooth 1-morphisms of algebraic stacks over `S` is
 > smooth: the composition remark Stacks 06FP at smoothness of morphisms of algebraic spaces, which
@@ -51,7 +51,7 @@ theorem isSmooth_comp
 
 [Tag 075W](https://stacks.math.columbia.edu/tag/075W) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackBaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackBaseChange.lean#L62).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackBaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothAlgebraicStackBaseChange.lean#L62).
 
 > **Stacks 075W.** A base change of a smooth 1-morphism of algebraic stacks over `S` is
 > smooth: for `f : 𝒳 ⟶ 𝒴` smooth and `g : 𝒴' ⟶ 𝒴` arbitrary, the projection to `𝒴'` of any
@@ -69,7 +69,7 @@ theorem isSmooth_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w} B S 
 
 [Tag 0DN7](https://stacks.math.columbia.edu/tag/0DN7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothFppfDescent.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothFppfDescent.lean#L63).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothFppfDescent.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothFppfDescent.lean#L63).
 
 > **Stacks 0DN7.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : 𝒵 ⟶ 𝒴` be surjective, flat and locally of finite presentation. If the base change
@@ -89,7 +89,7 @@ theorem isSmooth_of_baseChange
 
 [Tag 0DNP](https://stacks.math.columbia.edu/tag/0DNP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean#L104).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean#L104).
 
 > **Stacks 0DNP.** A smooth 1-morphism of algebraic stacks over `S` is locally of finite
 > presentation.
@@ -112,7 +112,7 @@ theorem isLocallyOfFinitePresentation_of_isSmooth
 
 [Tag 0DZR](https://stacks.math.columbia.edu/tag/0DZR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.smoothLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocus.lean, line 1221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocus.lean#L1221). The attribute's comment: “the maximal open substack on which f is smooth exists and is unique, and its formation commutes with precomposition by smooth morphisms, with base change by flat morphisms locally of finite presentation, and with flat base change when f is locally of finite presentation”.
+**`AlgebraicGeometry.Stack.smoothLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocus.lean, line 1222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocus.lean#L1222). The attribute's comment: “the maximal open substack on which f is smooth exists and is unique, and its formation commutes with precomposition by smooth morphisms, with base change by flat morphisms locally of finite presentation, and with flat base change when f is locally of finite presentation”.
 
 > **Stacks 0DZR.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. There is a
 > maximal open substack `𝒰 ⊆ 𝒳` such that `f|_𝒰 : 𝒰 ⟶ 𝒴` is smooth — an open substack on which `f`
@@ -158,7 +158,7 @@ theorem smoothLocus {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ �
 
 [Tag 0DLS](https://stacks.math.columbia.edu/tag/0DLS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSmooth_quotientStackModelToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothQuotientStackOfAction.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothQuotientStackOfAction.lean#L156).
+**`AlgebraicGeometry.Stack.isSmooth_quotientStackModelToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothQuotientStackOfAction.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothQuotientStackOfAction.lean#L156).
 
 > **Stacks 0DLS.** Let `X ⟶ Y` be a smooth morphism of algebraic spaces over `S`, let `G` be a
 > group algebraic space over `Y` which is flat and locally of finite presentation over `Y`, and let
@@ -185,7 +185,7 @@ theorem isSmooth_quotientStackModelToBase
 
 [Tag 0DN8](https://stacks.math.columbia.edu/tag/0DN8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isSmooth_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSmooth.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSmooth.lean#L105).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isSmooth_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSmooth.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSmooth.lean#L105).
 
 > **Stacks 0DN8.** Let `π : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. If `𝒳` is a
 > gerbe over `𝒴`, then `π` is surjective and smooth.
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.33, Tag 075T](https://stacks.math.columbia.edu/tag/075T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

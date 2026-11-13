@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.FiniteFilteredObject, CochainComplex.filteredQuasiIso, CochainComplex.filteredAcyclic, CategoryTheory.FiniteFilteredObject.homologyFunctor_gr_isHomological, CategoryTheory.FiniteFilteredObject.homologyFunctor_grP_isHomological, CategoryTheory.FiniteFilteredObject.homologyFunctor_forget_isHomological, CochainComplex.kernel_eq_filteredAcyclic_and_filteredQuasiIso_eq_inverseImage_isomorphisms, CochainComplex.FilteredDerivedCategory
+lean: CategoryTheory.FiniteFilteredObject, CochainComplex.filteredQuasiIso, CochainComplex.filteredAcyclic, CategoryTheory.FiniteFilteredObject.homologyFunctor_gr_isHomological, CategoryTheory.FiniteFilteredObject.homologyFunctor_grP_isHomological, CategoryTheory.FiniteFilteredObject.homologyFunctor_forget_isHomological, HomotopyCategory.filteredAcyclic_isTriangulated_and_trW_eq_filteredQuasiIso, CochainComplex.FilteredDerivedCategory
 statement: formalized
 proof: formalized
 ---
 
 # 13.13 Filtered derived categories
 
-Section 13.13 of the Stacks Project, [Tag 05RX](https://stacks.math.columbia.edu/tag/05RX). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.13 of the Stacks Project, [Tag 05RX](https://stacks.math.columbia.edu/tag/05RX). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05RY, a definition
 
 [Tag 05RY](https://stacks.math.columbia.edu/tag/05RY) in the Stacks Project.
 
-**`CategoryTheory.FiniteFilteredObject`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L236). References: EGA 0 (11.1.3).
+**`CategoryTheory.FiniteFilteredObject`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L237). References: EGA 0 (11.1.3).
 
 > The category `Fil^f(C)` of *finite filtered objects* of `C`: the full subcategory of the
 > category `Fil(C) = FilteredObject C ℤᵒᵖ` of filtered objects `(X, F)` on those whose filtration
@@ -28,7 +28,7 @@ public abbrev FiniteFilteredObject (C : Type u) [Category.{v} C]
 
 [Tag 05RZ](https://stacks.math.columbia.edu/tag/05RZ) in the Stacks Project.
 
-**`CochainComplex.filteredQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L330). The attribute's comment: “part (1)”. References: SGA 4 Vbis (2.5.1), “Σ: Gr\_n quasi-iso”; SGA 4½ Rapport (4.4), “filtered quasi-iso”.
+**`CochainComplex.filteredQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L331). The attribute's comment: “part (1)”. References: SGA 4 Vbis (2.5.1), “Σ: Gr\_n quasi-iso”; SGA 4½ Rapport (4.4), “filtered quasi-iso”.
 
 > A morphism `α : K^• ⟶ L^•` of filtered cochain complexes of an abelian category `A` is a
 > **filtered quasi-isomorphism** if `gr^p(α) : gr^p K^• ⟶ gr^p L^•` is a quasi-isomorphism for
@@ -38,7 +38,7 @@ public abbrev FiniteFilteredObject (C : Type u) [Category.{v} C]
 public def filteredQuasiIso : MorphismProperty (FilteredObject (CochainComplex A ℤ) ℤᵒᵖ)
 ```
 
-**`CochainComplex.filteredAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L336). The attribute's comment: “part (2)”.
+**`CochainComplex.filteredAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L337). The attribute's comment: “part (2)”.
 
 > A filtered cochain complex `K^•` of an abelian category `A` is **filtered acyclic** if the
 > complex `gr^p K^•` is acyclic for every `p : ℤ`, equivalently if `gr(K^•)` is acyclic.
@@ -51,7 +51,7 @@ public def filteredAcyclic : ObjectProperty (FilteredObject (CochainComplex A �
 
 [Tag 05S0](https://stacks.math.columbia.edu/tag/05S0) in the Stacks Project.
 
-**`CategoryTheory.FiniteFilteredObject.homologyFunctor_gr_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L114). The attribute's comment: “(1)”.
+**`CategoryTheory.FiniteFilteredObject.homologyFunctor_gr_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L114). The attribute's comment: “(1)”.
 
 > **Stacks 05S0 (1).** The functor `K(Fil^f(𝒜)) ⥤ Gr(𝒜)`, `K^• ↦ H^0(gr(K^•))`, is
 > homological.
@@ -62,7 +62,7 @@ theorem homologyFunctor_gr_isHomological :
       HomotopyCategory.homologyFunctor (GradedObject ℤ 𝒜) (ComplexShape.up ℤ) 0).IsHomological
 ```
 
-**`CategoryTheory.FiniteFilteredObject.homologyFunctor_grP_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L122). The attribute's comment: “(2)”.
+**`CategoryTheory.FiniteFilteredObject.homologyFunctor_grP_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L122). The attribute's comment: “(2)”.
 
 > **Stacks 05S0 (2).** For every `p : ℤ`, the functor `K(Fil^f(𝒜)) ⥤ 𝒜`,
 > `K^• ↦ H^0(gr^p(K^•))`, is homological.
@@ -73,7 +73,7 @@ theorem homologyFunctor_grP_isHomological (p : ℤ) :
       HomotopyCategory.homologyFunctor 𝒜 (ComplexShape.up ℤ) 0).IsHomological
 ```
 
-**`CategoryTheory.FiniteFilteredObject.homologyFunctor_forget_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L130). The attribute's comment: “(3)”.
+**`CategoryTheory.FiniteFilteredObject.homologyFunctor_forget_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Homology.lean#L130). The attribute's comment: “(3)”.
 
 > **Stacks 05S0 (3).** The functor `K(Fil^f(𝒜)) ⥤ 𝒜`, `K^• ↦ H^0((forget F)K^•)`, is
 > homological.
@@ -88,34 +88,41 @@ theorem homologyFunctor_forget_isHomological :
 
 [Tag 05S1](https://stacks.math.columbia.edu/tag/05S1) in the Stacks Project.
 
-**`CochainComplex.kernel_eq_filteredAcyclic_and_filteredQuasiIso_eq_inverseImage_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Localization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Localization.lean#L260). References: SGA 4 Vbis (2.5.1), “Σ saturated”; SGA 4½ Etat 0 (2.4.1), “filtered complexes”.
+**`HomotopyCategory.filteredAcyclic_isTriangulated_and_trW_eq_filteredQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean#L595).
 
-> **Stacks 05S1.** Let `𝒜` be an abelian category. The filtered acyclic complexes
-> `FAc(𝒜)` form a strictly full saturated (thick) subcategory of the filtered complexes of `𝒜`,
-> whose corresponding saturated multiplicative system in the sense of [Stacks, Tag 05RL] is the
-> class `FQis(𝒜)` of filtered quasi-isomorphisms: every localisation
-> `L : K(Fil(𝒜)) ⥤ DF(𝒜)` at `FQis(𝒜)` has kernel exactly `FAc(𝒜)` and inverts exactly the
-> filtered quasi-isomorphisms. Moreover each `H^n ∘ gr^p` inverts `FQis(𝒜)`, i.e. the homological
-> functor `H^0 ∘ gr` factors through `L`.
+> **Stacks 05S1.** Let `𝒜` be an abelian category. The full subcategory `FAc(𝒜)` of
+> `K(Fil^f(𝒜))` of filtered acyclic complexes is a strictly full saturated triangulated subcategory
+> of `K(Fil^f(𝒜))`. The corresponding saturated multiplicative system of [Stacks, Tag 05RL], the
+> class `FAc(𝒜).trW` of morphisms whose cone is filtered acyclic, is the class `FQis(𝒜)` of
+> filtered quasi-isomorphisms; it is a saturated multiplicative system (left and right calculus of
+> fractions, saturated) compatible with the triangulated structure. In particular the kernel of the
+> localisation functor `Qh : K(Fil^f(𝒜)) ⥤ DF(𝒜) = FQis(𝒜)⁻¹K(Fil^f(𝒜))` — and of every
+> localisation of `K(Fil^f(𝒜))` at `FQis(𝒜)` — is `FAc(𝒜)`, and the functor
+> `H^0 ∘ gr : K(Fil^f(𝒜)) ⥤ Gr(𝒜)` factors through `Qh`.
 
 ```lean
-public theorem kernel_eq_filteredAcyclic_and_filteredQuasiIso_eq_inverseImage_isomorphisms :
-    (filteredAcyclic A).IsClosedUnderIsomorphisms ∧
-      (filteredAcyclic A).IsStableUnderRetracts ∧
-      (∀ (L : FilteredObject (CochainComplex A ℤ) ℤᵒᵖ ⥤ D)
-          [L.IsLocalization (filteredQuasiIso A)],
-        L.kernel = filteredAcyclic A ∧
-          filteredQuasiIso A = (MorphismProperty.isomorphisms D).inverseImage L) ∧
-      (∀ p n : ℤ, (filteredQuasiIso A).IsInvertedBy
-        (FilteredObject.gr p ⋙
-          HomologicalComplex.homologyFunctor A (ComplexShape.up ℤ) n))
+theorem filteredAcyclic_isTriangulated_and_trW_eq_filteredQuasiIso :
+    ((filteredAcyclic 𝒜).IsClosedUnderIsomorphisms ∧ (filteredAcyclic 𝒜).IsTriangulated ∧
+        (filteredAcyclic 𝒜).IsSaturated) ∧
+      ((filteredAcyclic 𝒜).trW = filteredQuasiIso 𝒜 ∧
+        (filteredQuasiIso 𝒜).HasLeftCalculusOfFractions ∧
+        (filteredQuasiIso 𝒜).HasRightCalculusOfFractions ∧
+        (filteredQuasiIso 𝒜).IsCompatibleWithTriangulation ∧
+        (filteredQuasiIso 𝒜).IsSaturated) ∧
+      (CochainComplex.FilteredDerivedCategory.Qh (𝒜 := 𝒜)).kernel = filteredAcyclic 𝒜 ∧
+      (∀ {D : Type*} [Category* D] (L : HomotopyCategory (FiniteFilteredObject 𝒜) (.up ℤ) ⥤ D)
+          [L.IsLocalization (filteredQuasiIso 𝒜)], L.kernel = filteredAcyclic 𝒜) ∧
+      ∃ F : CochainComplex.FilteredDerivedCategory 𝒜 ⥤ GradedObject ℤ 𝒜,
+        Nonempty (CochainComplex.FilteredDerivedCategory.Qh ⋙ F ≅
+          (FiniteFilteredObject.gr (𝒜 := 𝒜)).mapHomotopyCategory (.up ℤ) ⋙
+          HomotopyCategory.homologyFunctor (GradedObject ℤ 𝒜) (.up ℤ) 0)
 ```
 
 ## Tag 05S2, a definition
 
 [Tag 05S2](https://stacks.math.columbia.edu/tag/05S2) in the Stacks Project.
 
-**`CochainComplex.FilteredDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L348).
+**`CochainComplex.FilteredDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L349).
 
 > The **filtered derived category** `DF(A)` of an abelian category `A`: the localisation of
 > `K(Fil^f(A))` at the class `FQis(A)` of filtered quasi-isomorphisms, equivalently the quotient
@@ -134,60 +141,42 @@ public abbrev FilteredDerivedCategory
 
 [Tag 05S3](https://stacks.math.columbia.edu/tag/05S3) in the Stacks Project.
 
-**`CochainComplex.isIso_Q_map_gradedPiece_and_forget_of_filteredQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean#L610). References: SGA 4 Vbis (2.5.2), “more general”.
+**`CochainComplex.FilteredDerivedCategory.isTriangulated_grDF_forgetDF_grGradedDF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/ExactFunctors.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/ExactFunctors.lean#L152).
 
-> **Stacks 05S3.** Let `𝒜` be an abelian category and let `α : K^• ⟶ L^•` be a filtered
-> quasi-isomorphism of filtered cochain complexes of `𝒜`. Then, for every `p`, the localisation
-> functor `Q : CochainComplex 𝒜 ℤ ⥤ D(𝒜)` inverts `gr^p(α)`; and if moreover the filtrations of
-> `K^•` and of `L^•` are finite in each degree — `F^p K^n = K^n` for some `p` and `F^q K^n = 0` for
-> some `q`, for each `n`, i.e. `K^•` and `L^•` are complexes of finitely filtered objects — then
-> `Q` inverts the underlying morphism of complexes `(forget F)(α)` as well. Equivalently: the
-> functors `gr^p ⋙ Q` and, on `K(Fil^f(𝒜))`, `(forget F) ⋙ Q` invert the filtered
-> quasi-isomorphisms, so that each factors canonically through the filtered derived category
-> `DF(𝒜)`, compatibly with the localisation functors; the statement about `gr` is the conjunction
-> over all `p` of the statements about `gr^p`.
-
-```lean
-public theorem isIso_Q_map_gradedPiece_and_forget_of_filteredQuasiIso {A : Type u}
-    [Category.{v} A] [Abelian A] [HasDerivedCategory.{w} A]
-    {K L : FilteredObject (CochainComplex A ℤ) ℤᵒᵖ} (α : K ⟶ L)
-    (hα : CochainComplex.filteredQuasiIso A α) :
-    (∀ p : ℤ, IsIso (DerivedCategory.Q.map
-        ((FilteredObject.gr p).map α))) ∧
-      ((∀ n : ℤ, ∃ p q : ℤ, IsIso ((K.filtration.ι.app (op p)).f n) ∧
-          IsZero ((K.filtration.obj (op q)).X n)) →
-        (∀ n : ℤ, ∃ p q : ℤ, IsIso ((L.filtration.ι.app (op p)).f n) ∧
-          IsZero ((L.filtration.obj (op q)).X n)) →
-        IsIso (DerivedCategory.Q.map (FilteredObject.forget.map α)))
-```
-
-**`CochainComplex.quasiIso_hom_of_filteredQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean#L639). The attribute's comment: “the underlying morphism of complexes, as a quasi-isomorphism”. References: SGA 4 Vbis (2.5.2), “more general”.
-
-> **A morphism of filtered complexes which is a quasi-isomorphism on every graded piece is a
-> quasi-isomorphism**, provided both filtrations are finite in each degree. This is the second
-> clause of [Stacks, Tag 05S3] read as a statement about the morphism of complexes rather than
-> about its image in the derived category, which is the form the proofs of [Stacks, Tag 07LD] and
-> [Stacks, Tag 0FKH] use when they conclude from the graded pieces. Unlike
-> `CochainComplex.isIso_Q_map_gradedPiece_and_forget_of_filteredQuasiIso` it asks for no
-> `HasDerivedCategory` instance: the mapping cone of `α.hom` is acyclic outright.
->
-> Finiteness cannot be dropped: for the constant filtration `F^p K^• = K^•` every graded piece
-> vanishes, so `0 ⟶ K^•` is a filtered quasi-isomorphism whose underlying morphism is not a
-> quasi-isomorphism unless `K^•` is acyclic.
+> **Stacks 05S3.** Let `𝒜` be an abelian category, `DF(𝒜) = FQis(𝒜)⁻¹K(Fil^f(𝒜))` its filtered
+> derived category and `Gr(𝒜)` the abelian category of graded objects of `𝒜`. The functors
+> `gr^p, (forget F) : K(Fil^f(𝒜)) ⥤ K(𝒜)` and `gr : K(Fil^f(𝒜)) ⥤ K(Gr(𝒜))` induce canonical exact
+> functors `gr^p, (forget F) : DF(𝒜) ⥤ D(𝒜)` and `gr : DF(𝒜) ⥤ D(Gr(𝒜))` which commute with the
+> localisation functors. Each induced functor (`grDF p`, `forgetDF`, `grGradedDF`) is triangulated,
+> and it comes with an isomorphism `Qh ⋙ gr^p ≅ gr^p ⋙ Q`, `Qh ⋙ (forget F) ≅ (forget F) ⋙ Q`,
+> resp. `Qh ⋙ gr ≅ gr ⋙ Q`, between the two composites `K(Fil^f(𝒜)) ⥤ D(𝒜)`, resp.
+> `K(Fil^f(𝒜)) ⥤ D(Gr(𝒜))`, which is compatible with the shifts. The functors are the
+> factorisations through the localisation `Qh` given by its universal property
+> ([Stacks, Tag 05R7]); `(forget F)` factors because a filtered quasi-isomorphism of complexes of
+> finitely filtered objects is a quasi-isomorphism
+> (`CochainComplex.isIso_Q_map_gradedPiece_and_forget_of_filteredQuasiIso`).
 
 ```lean
-public theorem quasiIso_hom_of_filteredQuasiIso
-    {K L : FilteredObject (CochainComplex 𝒜 ℤ) ℤᵒᵖ} (α : K ⟶ L)
-    (hα : CochainComplex.filteredQuasiIso 𝒜 α)
-    (hK : K.filtration.IsDegreewiseFinite) (hL : L.filtration.IsDegreewiseFinite) :
-    QuasiIso α.hom
+theorem isTriangulated_grDF_forgetDF_grGradedDF :
+    (∀ p : ℤ, (grDF (𝒜 := 𝒜) p).IsTriangulated ∧
+      ∃ e : Qh (𝒜 := 𝒜) ⋙ grDF p ≅
+          (FiniteFilteredObject.grP p).mapHomotopyCategory _ ⋙ DerivedCategory.Qh,
+        NatTrans.CommShift e.hom ℤ) ∧
+    ((forgetDF (𝒜 := 𝒜)).IsTriangulated ∧
+      ∃ e : Qh (𝒜 := 𝒜) ⋙ forgetDF ≅
+          FiniteFilteredObject.forget.mapHomotopyCategory _ ⋙ DerivedCategory.Qh,
+        NatTrans.CommShift e.hom ℤ) ∧
+    ((grGradedDF (𝒜 := 𝒜)).IsTriangulated ∧
+      ∃ e : Qh (𝒜 := 𝒜) ⋙ grGradedDF (𝒜 := 𝒜) ≅
+          FiniteFilteredObject.gr.mapHomotopyCategory _ ⋙ DerivedCategory.Qh,
+        NatTrans.CommShift e.hom ℤ)
 ```
 
 ## Tag 05S4, a definition
 
 [Tag 05S4](https://stacks.math.columbia.edu/tag/05S4) in the Stacks Project.
 
-**`CochainComplex.filteredPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L361). The attribute's comment: “DF^+(A), the bounded below filtered derived category”.
+**`CochainComplex.filteredPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L362). The attribute's comment: “DF^+(A), the bounded below filtered derived category”.
 
 > The filtered cochain complexes `X` of an abelian category `A` whose associated graded is
 > bounded below, i.e. such that `H^n(gr(X)) = 0` for `n ≪ 0`: there is an `n : ℤ`, independent of
@@ -200,7 +189,7 @@ public theorem quasiIso_hom_of_filteredQuasiIso
 public def filteredPlus : ObjectProperty (FilteredObject (CochainComplex A ℤ) ℤᵒᵖ)
 ```
 
-**`CochainComplex.filteredMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L371). The attribute's comment: “DF^-(A), the bounded above filtered derived category”.
+**`CochainComplex.filteredMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L372). The attribute's comment: “DF^-(A), the bounded above filtered derived category”.
 
 > The filtered cochain complexes `X` of an abelian category `A` whose associated graded is
 > bounded above, i.e. such that `H^n(gr(X)) = 0` for `n ≫ 0`: there is an `n : ℤ`, independent of
@@ -213,7 +202,7 @@ public def filteredPlus : ObjectProperty (FilteredObject (CochainComplex A ℤ) 
 public def filteredMinus : ObjectProperty (FilteredObject (CochainComplex A ℤ) ℤᵒᵖ)
 ```
 
-**`CochainComplex.filteredBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L381). The attribute's comment: “DF^b(A), the bounded filtered derived category”.
+**`CochainComplex.filteredBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L382). The attribute's comment: “DF^b(A), the bounded filtered derived category”.
 
 > The filtered cochain complexes `X` of an abelian category `A` whose associated graded is
 > bounded, i.e. such that `H^n(gr(X)) = 0` for `|n| ≫ 0`: there are `a b : ℤ`, independent of `p`,
@@ -230,7 +219,7 @@ public def filteredBounded : ObjectProperty (FilteredObject (CochainComplex A �
 
 [Tag 05S5](https://stacks.math.columbia.edu/tag/05S5) in the Stacks Project.
 
-**`CochainComplex.exists_filteredQuasiIso_bounded_of_isGE_of_isLE_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean, line 1238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean#L1238).
+**`CochainComplex.exists_filteredQuasiIso_bounded_of_isGE_of_isLE_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean, line 1233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Basic.lean#L1233).
 
 > **Stacks 05S5.** Let `𝒜` be an abelian category and let `K^•` be a filtered cochain complex
 > of `𝒜` whose filtration is finite in each degree, i.e. an object of `K(Fil^f(𝒜))`. Then, writing
@@ -290,7 +279,7 @@ public theorem exists_filteredQuasiIso_bounded_of_isGE_of_isLE_gradedPiece
 
 [Tag 05S6](https://stacks.math.columbia.edu/tag/05S6) in the Stacks Project.
 
-**`CochainComplex.FilteredDerivedCategory.isSaturated_filteredAcyclic_and_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean, line 1121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean#L1121).
+**`CochainComplex.FilteredDerivedCategory.isSaturated_filteredAcyclic_and_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean, line 1220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/Basic.lean#L1220).
 
 > Let `𝒜` be an abelian category. For every triangulated subcategory `P` of `K(Fil^f(𝒜))` — in
 > particular for `K⁺(Fil^f(𝒜))`, `K⁻(Fil^f(𝒜))` and `Kᵇ(Fil^f(𝒜))` — the filtered acyclic objects
@@ -350,7 +339,7 @@ public theorem isSaturated_filteredAcyclic_and_isLocalization :
             (HomotopyCategory.quotient (FiniteFilteredObject 𝒜) (.up ℤ))).ι)
 ```
 
-**`CochainComplex.FilteredDerivedCategory.isTriangulated_isLocalization_Qplus_Qminus_Qbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean#L281). The attribute's comment: “the equivalences are equivalences of triangulated categories”.
+**`CochainComplex.FilteredDerivedCategory.isTriangulated_isLocalization_Qplus_Qminus_Qbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean#L281). The attribute's comment: “the equivalences are equivalences of triangulated categories”.
 
 > The functors `K⁺(Fil^f(𝒜)) ⥤ DF⁺(𝒜)`, `K⁻(Fil^f(𝒜)) ⥤ DF⁻(𝒜)`
 > and `Kᵇ(Fil^f(𝒜)) ⥤ DFᵇ(𝒜)` induced by `Qh` are exact localisations at `FQis⁺(𝒜)`,
@@ -374,4 +363,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.13, Tag 05RX](https://stacks.math.columbia.edu/tag/05RX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

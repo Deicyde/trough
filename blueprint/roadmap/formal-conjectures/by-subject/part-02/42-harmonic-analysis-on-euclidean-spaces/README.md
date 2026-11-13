@@ -1,6 +1,6 @@
 # Harmonic analysis on Euclidean spaces
 
-The 15 problems with a statement whose `AMS` attribute names 42, Harmonic analysis on Euclidean spaces, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 16 problems with a statement whose `AMS` attribute names 42, Harmonic analysis on Euclidean spaces, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
 - [Erdős Problem 225](../../../erdos-problems/200-299/part-02/erdos-problem-225.md)
 - [Erdős Problem 230](../../../erdos-problems/200-299/part-02/erdos-problem-230.md)
@@ -14,6 +14,7 @@ The 15 problems with a statement whose `AMS` attribute names 42, Harmonic analys
 - [The Pompeiu problem](../../../wikipedia/part-07/the-pompeiu-problem.md)
 - [Ben Green's Open Problem 7](../../../greens-open-problems/part-01/ben-greens-open-problem-7.md)
 - [Ben Green's Open Problem 35](../../../greens-open-problems/part-02/ben-greens-open-problem-35.md)
-- [Ben Green's Open Problem 82](../../../greens-open-problems/part-03/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 82](../../../greens-open-problems/part-04/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 84](../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)
 - [Weak tiling problems](../../../papers/part-03/weak-tiling-problems.md)
 - [Spectral sets and weak tiling](../../../arxiv/part-01/spectral-sets-and-weak-tiling.md)

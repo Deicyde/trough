@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.65 Künneth spectral sequence
 
-Section 15.65 of the Stacks Project, [Tag 0H7V](https://stacks.math.columbia.edu/tag/0H7V). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.65 of the Stacks Project, [Tag 0H7V](https://stacks.math.columbia.edu/tag/0H7V). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H7W, a lemma
 
 [Tag 0H7W](https://stacks.math.columbia.edu/tag/0H7W) in the Stacks Project.
 
-**`CochainComplex.Kunneth.exists_kunneth_convolution_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean, line 2171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean#L2171).
+**`CochainComplex.Kunneth.exists_kunneth_convolution_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean, line 2171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean#L2171).
 
 > For decreasingly filtered complexes `K` and `L` satisfying the flatness and K-flatness
 > assumptions of the Künneth construction, there is a convolution-filtered tensor product `T` and an
@@ -108,7 +108,7 @@ public theorem exists_kunneth_convolution_spectral_sequence
 
 [Tag 0H7X](https://stacks.math.columbia.edu/tag/0H7X) in the Stacks Project.
 
-**`CochainComplex.KFlat.exists_free_kFlat_filtered_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FilteredResolution.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/FilteredResolution.lean#L1383).
+**`CochainComplex.KFlat.exists_free_kFlat_filtered_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FilteredResolution.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/FilteredResolution.lean#L1383).
 
 > A filtered complex of modules admits a filtered morphism from a complex whose underlying
 > terms, filtration steps, and associated graded pieces are free and K-flat, and this morphism is
@@ -136,7 +136,7 @@ public theorem exists_free_kFlat_filtered_resolution
 
 [Tag 0H7Y](https://stacks.math.columbia.edu/tag/0H7Y) in the Stacks Project.
 
-**`CochainComplex.Kunneth.exists_kunneth_filtered_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean, line 2318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean#L2318).
+**`CochainComplex.Kunneth.exists_kunneth_filtered_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean, line 2318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Kunneth.lean#L2318).
 
 > Two filtered complexes of modules have a filtered K-flat tensor representative whose
 > associated spectral sequence has the expected Künneth first page. If the filtration steps of both
@@ -240,7 +240,7 @@ public theorem exists_kunneth_filtered_complex
 
 [Tag 0H7Z](https://stacks.math.columbia.edu/tag/0H7Z) in the Stacks Project.
 
-**`CochainComplex.Kunneth.exists_kunneth_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean, line 989](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean#L989). References: EGA III (6.3.2), “(6.3.2.2)”; EGA III (6.5.4), “(6.5.4.2)”; EGA III (6.8.2), “m=2, modules over a ring”.
+**`CochainComplex.Kunneth.exists_kunneth_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean, line 989](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean#L989). References: EGA III (6.3.2), “(6.3.2.2)”; EGA III (6.5.4), “(6.5.4.2)”; EGA III (6.8.2), “m=2, modules over a ring”.
 
 > **Künneth spectral sequence.** For bounded complexes `K` and `L` of modules over a
 > commutative ring, there is a bounded cohomological spectral sequence with
@@ -325,7 +325,7 @@ public theorem exists_kunneth_spectral_sequence
 
 [Tag 0H80](https://stacks.math.columbia.edu/tag/0H80) in the Stacks Project.
 
-**`CochainComplex.Kunneth.tor_isZero_and_exists_kunneth_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean, line 1327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean#L1327). References: EGA III (7.6.4), “(i) short exact sequence”.
+**`CochainComplex.Kunneth.tor_isZero_and_exists_kunneth_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean, line 1327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/KunnethTor.lean#L1327). References: EGA III (7.6.4), “(i) short exact sequence”.
 
 > **Künneth short exact sequence over a Dedekind domain.** Higher Tor modules vanish over a
 > Dedekind domain. Thus the bounded Künneth spectral sequence degenerates at `E₂`, and its edge
@@ -453,4 +453,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.65, Tag 0H7V](https://stacks.math.columbia.edu/tag/0H7V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 773 to Erdős Problem 798
+# Erdős Problem 772 to Erdős Problem 798
 
+- [Erdős Problem 772](erdos-problem-772.md)
 - [Erdős Problem 773](erdos-problem-773.md)
 - [Erdős Problem 774](erdos-problem-774.md)
 - [Erdős Problem 775](erdos-problem-775.md)

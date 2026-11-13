@@ -7,7 +7,7 @@ statement: formalized
 
 # Continued fractions of alternating series
 
-10 results, 4 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html).
+10 results, 4 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html).
 
 ## Alternating series with a two-step continued fraction pattern
 
@@ -30,7 +30,7 @@ satisfies every hypothesis and has $a_2 = 2$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Theorem 4 (`jis-2025-25.1.4-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.alternatingSeries_contFract_twoStepPattern` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#alternating-series-cont-fract-two-step-p).
+Stated but not proved: `MetaMathlibExt.alternatingSeries_contFract_twoStepPattern` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#alternating-series-cont-fract-two-step-p).
 
 ## Alternating series with a three-step continued fraction pattern
 
@@ -56,7 +56,7 @@ and has $a_2 = 2$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Theorem 10 (`jis-2025-25.1.4-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.alternatingSeries_contFract_threeStepPattern` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#alternating-series-cont-fract-three-step).
+Stated but not proved: `MetaMathlibExt.alternatingSeries_contFract_threeStepPattern` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#alternating-series-cont-fract-three-step).
 
 ## Convergent denominators of the two-step pattern
 
@@ -72,7 +72,7 @@ $[0; \omega_0, 1, \omega_1 q_1^\beta, 1, \omega_2 q_3^\beta, 1, \dots]$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Section 2.1, displays (e2) and (e22).
 
-Formalized by `MetaMathlibExt.twoStepPatternDen`, a definition declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-den).
+Formalized by `MetaMathlibExt.twoStepPatternDen`, a definition declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-den).
 
 ## Small values of the two-step pattern denominators
 
@@ -84,7 +84,7 @@ $1, 1, 2, 3, 5, 18, 23, 432$ (the paper's first example).
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Section 2.1, first example.
 
-Formalized by `MetaMathlibExt.twoStepPatternDen_one_one`, a theorem declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-den-one-one).
+Formalized by `MetaMathlibExt.twoStepPatternDen_one_one`, a theorem declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-den-one-one).
 
 ## Convergent denominators of the three-step pattern
 
@@ -100,7 +100,7 @@ $[0; \omega_0, 1, 1, \omega_1 q_2^\beta, 1, 1, \omega_2 q_5^\beta, \dots]$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Section 2.2, displays (e3) and (e33).
 
-Formalized by `MetaMathlibExt.threeStepPatternDen`, a definition declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-den).
+Formalized by `MetaMathlibExt.threeStepPatternDen`, a definition declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-den).
 
 ## Small values of the three-step pattern denominators
 
@@ -112,7 +112,7 @@ $1, 1, 2, 3, 8, 11, 19, 220$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Section 2.2, display (e33).
 
-Formalized by `MetaMathlibExt.threeStepPatternDen_one_one`, a theorem declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-den-one-one).
+Formalized by `MetaMathlibExt.threeStepPatternDen_one_one`, a theorem declared in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-den-one-one).
 
 ## Two-step pattern as an alternating series
 
@@ -130,7 +130,7 @@ The paper assumes $\beta \ge 1$; the statement here also allows $\beta = 0$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Proposition 2, under the hypotheses (e2) of Section 2.1.
 
-Stated but not proved: `MetaMathlibExt.twoStepPattern_alternatingSeries_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-alternating-series-cont).
+Stated but not proved: `MetaMathlibExt.twoStepPattern_alternatingSeries_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-alternating-series-cont).
 
 ## Irrationality exponent of the two-step pattern
 
@@ -150,7 +150,7 @@ may be $+\infty$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.twoStepPattern_irrationalityExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-irrationality-exponent).
+Stated but not proved: `MetaMathlibExt.twoStepPattern_irrationalityExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#two-step-pattern-irrationality-exponent).
 
 ## Three-step pattern as an alternating series
 
@@ -168,7 +168,7 @@ The paper assumes $\beta \ge 1$; the statement here also allows $\beta = 0$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Proposition 8, under the hypotheses (e3) of Section 2.2.
 
-Stated but not proved: `MetaMathlibExt.threeStepPattern_alternatingSeries_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-alternating-series-co).
+Stated but not proved: `MetaMathlibExt.threeStepPattern_alternatingSeries_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-alternating-series-co).
 
 ## Irrationality exponent of the three-step pattern
 
@@ -188,7 +188,7 @@ may be $+\infty$.
 
 - Khalil Ayadi, Chiheb Ben Bechir, and Maher Saadaoui, *Continued Fractions with Predictable Patterns and Transcendental Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.4, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.threeStepPattern_irrationalityExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-irrationality-exponen).
+Stated but not proved: `MetaMathlibExt.threeStepPattern_irrationalityExponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingSeriesContinuedFractionWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html#three-step-pattern-irrationality-exponen).
 
 ## Depends on
 
@@ -197,4 +197,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continued fractions of alternating series](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-alternating-series)

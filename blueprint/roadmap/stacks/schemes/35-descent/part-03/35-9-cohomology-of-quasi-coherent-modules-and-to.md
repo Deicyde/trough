@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.9 Cohomology of quasi-coherent modules and topologies
 
-Section 35.9 of the Stacks Project, [Tag 0GN8](https://stacks.math.columbia.edu/tag/0GN8). 5 tags here are carried by 44 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.9 of the Stacks Project, [Tag 0GN8](https://stacks.math.columbia.edu/tag/0GN8). 5 tags here are carried by 44 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03FI, a lemma
 
 [Tag 03FI](https://stacks.math.columbia.edu/tag/03FI) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.coproductCechComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DisjointUnionCech.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DisjointUnionCech.lean#L232). The attribute's comment: “part (3), on a chosen big site over a scheme: the Čech complex of a finite family and of the one-member family of the morphism from its disjoint union agree, for an abelian sheaf on the site”.
+**`Stacks.Adequate.BigSite.coproductCechComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DisjointUnionCech.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DisjointUnionCech.lean#L232). The attribute's comment: “part (3), on a chosen big site over a scheme: the Čech complex of a finite family and of the one-member family of the morphism from its disjoint union agree, for an abelian sheaf on the site”.
 
 > **[Stacks, Tag 03FI] (3) on a chosen big site.** For an `𝒪`-module `F` on a chosen big
 > `τ`-site over `S`, a finite family `E` of morphisms of the site and a morphism `f` of the site
@@ -29,7 +29,7 @@ public theorem BigSite.coproductCechComparison (B : BigSite τ S)
     B.CoproductCechComparison.{u, m} F
 ```
 
-**`AlgebraicGeometry.IsStandardCovering.singleton_sigmaDesc_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L139). The attribute's comment: “part (1), fpqc covering”.
+**`AlgebraicGeometry.IsStandardCovering.singleton_sigmaDesc_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L139). The attribute's comment: “part (1), fpqc covering”.
 
 > The morphism from the disjoint union of a standard covering is an fpqc covering of the
 > target, for each of the five topologies.
@@ -42,7 +42,7 @@ theorem IsStandardCovering.singleton_sigmaDesc_mem_fpqcPrecoverage (τ : Coverin
     Presieve.singleton (Sigma.desc f) ∈ Scheme.fpqcPrecoverage T
 ```
 
-**`AlgebraicGeometry.IsStandardCovering.singleton_sigmaDesc_mem_precoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L159). The attribute's comment: “part (1), covering in the original topology”.
+**`AlgebraicGeometry.IsStandardCovering.singleton_sigmaDesc_mem_precoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L159). The attribute's comment: “part (1), covering in the original topology”.
 
 > Outside the Zariski topology, the morphism from the disjoint union of a standard covering is
 > itself a covering family for the topology the covering is standard for.
@@ -55,7 +55,7 @@ theorem IsStandardCovering.singleton_sigmaDesc_mem_precoverage (τ : CoveringTop
     Presieve.singleton (Sigma.desc f) ∈ Scheme.precoverage (coveringMorphismProperty τ) T
 ```
 
-**`AlgebraicGeometry.IsStandardCovering.sieve_sigmaDesc_mem_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L192). The attribute's comment: “part (1), covering sieve in every topology”.
+**`AlgebraicGeometry.IsStandardCovering.sieve_sigmaDesc_mem_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L192). The attribute's comment: “part (1), covering sieve in every topology”.
 
 > In every one of the five topologies, the sieve generated by the morphism from the disjoint
 > union of a standard covering is a covering sieve of the target.
@@ -69,7 +69,7 @@ theorem IsStandardCovering.sieve_sigmaDesc_mem_topology (τ : CoveringTopology) 
       (Scheme.precoverage (coveringMorphismProperty τ)).toGrothendieck T
 ```
 
-**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L284). The attribute's comment: “part (3), big site”.
+**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L284). The attribute's comment: “part (3), big site”.
 
 > For an abelian sheaf on a topology on `Over S` refining the big Zariski topology, the
 > canonical refinement of a finite family by the morphism from its disjoint union induces an
@@ -85,7 +85,7 @@ theorem isIso_cechComplexMap_coproductRefinement_over (S : Scheme.{u})
       (Stacks.CechSite.coproductRefinement E) (F ⋙ AddCommGrpCat.uliftFunctor.{w, v}))
 ```
 
-**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L297). The attribute's comment: “part (3), small étale site”.
+**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L297). The attribute's comment: “part (3), small étale site”.
 
 > For an abelian sheaf on the small étale site of `S`, the canonical refinement of a finite
 > family by the morphism from its disjoint union induces an isomorphism of Čech complexes.
@@ -99,7 +99,7 @@ theorem isIso_cechComplexMap_coproductRefinement_smallEtale (S : Scheme.{u}) {T 
       (Stacks.CechSite.coproductRefinement E) (F ⋙ AddCommGrpCat.uliftFunctor.{w, v}))
 ```
 
-**`AlgebraicGeometry.IsStandardCovering.sieve_sigmaDesc_mem_smallEtaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L309). The attribute's comment: “part (1), small étale site”.
+**`AlgebraicGeometry.IsStandardCovering.sieve_sigmaDesc_mem_smallEtaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringDisjointUnion.lean#L309). The attribute's comment: “part (1), small étale site”.
 
 > The morphism from the disjoint union of a standard étale covering of an object of the small
 > étale site of `S` generates a covering sieve of that object.
@@ -112,7 +112,7 @@ theorem IsStandardCovering.sieve_sigmaDesc_mem_smallEtaleTopology (S : Scheme.{u
       Scheme.smallEtaleTopology S T
 ```
 
-**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_smallZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteCechComparison.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteCechComparison.lean#L48). The attribute's comment: “part (3), case (c)”.
+**`AlgebraicGeometry.isIso_cechComplexMap_coproductRefinement_smallZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteCechComparison.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteCechComparison.lean#L48). The attribute's comment: “part (3), case (c)”.
 
 > **Stacks Project, Tag 03FI part (3), case (c).** For an abelian sheaf on the small Zariski
 > site of a scheme, read on the big Zariski site through its extension, the refinement of a finite
@@ -130,7 +130,7 @@ theorem isIso_cechComplexMap_coproductRefinement_smallZariski (S : Scheme.{u})
         AddCommGrpCat.uliftFunctor.{w, max (u + 1) v}))
 ```
 
-**`AlgebraicGeometry.SmallZariski.extension_sections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L562). The attribute's comment: “case (c), geometric extension formula”.
+**`AlgebraicGeometry.SmallZariski.extension_sections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L562). The attribute's comment: “case (c), geometric extension formula”.
 
 > The value of the small-to-big Zariski extension on a scheme `T` over `S`
 > is the global sections on `T` of the inverse image of the sheaf along its
@@ -150,7 +150,7 @@ public def extension_sections (S : Scheme.{u}) (T : Over S) :
         AddCommGrpCat.{max (u + 1) v}
 ```
 
-**`AlgebraicGeometry.SmallZariski.extension_sections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L771). The attribute's comment: “case (c), naturality of the geometric extension”.
+**`AlgebraicGeometry.SmallZariski.extension_sections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 771](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L771). The attribute's comment: “case (c), naturality of the geometric extension”.
 
 > The valuewise geometric comparison respects every morphism over `S`.
 > Thus the small-to-big extension is identified with the presheaf of sections
@@ -167,7 +167,7 @@ public theorem extension_sections_naturality
         (extension_sections.{u, v} S T').hom.app F
 ```
 
-**`AlgebraicGeometry.SmallZariski.isIso_extension_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L841). The attribute's comment: “case (c), the extension restricts to the given sheaf”.
+**`AlgebraicGeometry.SmallZariski.isIso_extension_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean, line 841](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallSiteExtension.lean#L841). The attribute's comment: “case (c), the extension restricts to the given sheaf”.
 
 > Restricting the extension of an abelian sheaf on the small Zariski site back
 > to the open subschemes returns the sheaf itself: the unit of the adjunction is an
@@ -180,7 +180,7 @@ public theorem isIso_extension_unit (S : Scheme.{u})
     IsIso ((adjunction.{u, v} S).unit.app F)
 ```
 
-**`Stacks.CechSite.coproductRefinement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/CoproductRefinement.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/CoproductRefinement.lean#L60). The attribute's comment: “part (2)”.
+**`Stacks.CechSite.coproductRefinement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/CoproductRefinement.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/CoproductRefinement.lean#L60). The attribute's comment: “part (2)”.
 
 > The component inclusions of a coproduct exhibit a family of morphisms with fixed target as
 > a refinement of the singleton family given by the induced morphism from the coproduct.
@@ -195,7 +195,7 @@ noncomputable def coproductRefinement {C : Type u} [Category.{v} C]
 
 [Tag 03FJ](https://stacks.math.columbia.edu/tag/03FJ) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isZero_cechCohomology_succ_associatedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurBoundedSmallEtale.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurBoundedSmallEtale.lean#L124). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause on the cardinality-bounded small étale site”.
+**`AlgebraicGeometry.SmallEtale.isZero_cechCohomology_succ_associatedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurBoundedSmallEtale.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurBoundedSmallEtale.lean#L124). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause on the cardinality-bounded small étale site”.
 
 > **Vanishing of Čech cohomology on the cardinality-bounded small étale site of `S`.** The Čech
 > cohomology of the sections of `Fᵃ` on a standard covering of an object of
@@ -209,7 +209,7 @@ public theorem isZero_cechCohomology_succ_associatedPresheaf (F : S.Modules)
       ((toOver B S hS).op ⋙ quasiCoherentPresheafFunctor S F) p)
 ```
 
-**`AlgebraicGeometry.cechComplexIsoAmitsurQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean#L97). The attribute's comment: “the isomorphism of complexes, for the one-member covering 03FI reduces to”.
+**`AlgebraicGeometry.cechComplexIsoAmitsurQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean#L97). The attribute's comment: “the isomorphism of complexes, for the one-member covering 03FI reduces to”.
 
 > For `U` an object of `Over S` with affine total space and `f : W ⟶ U` with `W.left` affine,
 > the Čech complex of the presheaf `Fᵃ` on the one-member covering `{W → U}` is the complex
@@ -227,7 +227,7 @@ public def cechComplexIsoAmitsurQuasiCoherent (F : S.Modules) [F.IsQuasicoherent
           (Stacks.Sites.coeffModule S F (𝟭 (Over S)) U))
 ```
 
-**`AlgebraicGeometry.cechComplexIsoAmitsurStandardCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean#L129). The attribute's comment: “the isomorphism of complexes, for an arbitrary standard covering”.
+**`AlgebraicGeometry.cechComplexIsoAmitsurStandardCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurQuasiCoherent.lean#L129). The attribute's comment: “the isomorphism of complexes, for an arbitrary standard covering”.
 
 > For a standard `τ`-covering `𝒰 = {U_i → U}` of an object of `Over S` with affine total
 > space, the Čech complex of `Fᵃ` is `s((A/R)_• ⊗_R M)`, where `R = Γ(U.left, 𝒪)`,
@@ -247,7 +247,7 @@ public def cechComplexIsoAmitsurStandardCovering (τ : CoveringTopology) (F : S.
           (Stacks.Sites.coeffModule S F (𝟭 (Over S)) U))
 ```
 
-**`AlgebraicGeometry.cechComplexIsoAmitsurSmallEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L102). The attribute's comment: “the isomorphism of complexes, case (b), the small étale site”.
+**`AlgebraicGeometry.cechComplexIsoAmitsurSmallEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L102). The attribute's comment: “the isomorphism of complexes, case (b), the small étale site”.
 
 > For a small-étale-standard covering `𝒰 = {U_i → U}` of an object of `S_étale`, the Čech
 > complex of the presheaf `Fᵃ` is the complex `s((A/R)_• ⊗_R M)`, where `R = Γ(U, 𝒪)`,
@@ -270,7 +270,7 @@ public def cechComplexIsoAmitsurSmallEtale (F : S.Modules) [F.IsQuasicoherent] {
           (Stacks.Sites.coeffModule S F (𝟭 (Over S)) ((Scheme.Etale.forget S).obj T)))
 ```
 
-**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L126). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, case (b), the small étale site”.
+**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L126). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, case (b), the small étale site”.
 
 > The Čech cohomology of `Fᵃ` on a small-étale-standard covering vanishes in every positive
 > degree.
@@ -283,7 +283,7 @@ public theorem isZero_cechCohomology_succ_quasiCoherentPresheaf_smallEtale (F : 
       ((Scheme.Etale.forget S).op ⋙ quasiCoherentPresheafFunctor S F) p)
 ```
 
-**`AlgebraicGeometry.cechComplexIsoAmitsurSmallZariski`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L225). The attribute's comment: “the isomorphism of complexes, case (c), the small Zariski site”.
+**`AlgebraicGeometry.cechComplexIsoAmitsurSmallZariski`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L225). The attribute's comment: “the isomorphism of complexes, case (c), the small Zariski site”.
 
 > For a standard Zariski covering `𝒰 = {U_i → U}` of an affine open `U` of `S`, the Čech
 > complex in `S_Zar` of the presheaf `Fᵃ`, which on the small Zariski site is `V ↦ Γ(V, F|_V)`,
@@ -309,7 +309,7 @@ public def cechComplexIsoAmitsurSmallZariski (F : S.Modules) [F.IsQuasicoherent]
           (Stacks.Sites.coeffModule S F (𝟭 (Over S)) (S.restrictFunctor.obj T)))
 ```
 
-**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf_smallZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L248). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, case (c), the small Zariski site”.
+**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf_smallZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechAmitsurSmallSites.lean#L248). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, case (c), the small Zariski site”.
 
 > The Čech cohomology of `Fᵃ` on a standard Zariski covering of an affine open of `S` vanishes
 > in every positive degree.
@@ -326,7 +326,7 @@ public theorem isZero_cechCohomology_succ_quasiCoherentPresheaf_smallZariski (F 
       (S.restrictFunctor.op ⋙ quasiCoherentPresheafFunctor S F) p)
 ```
 
-**`AlgebraicGeometry.isZero_cechCohomology_singleton_succ_quasiCoherentPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean#L133). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, for the one-member covering 03FI reduces to; unconditional -- hcoeff, harrow and hcolim are all three discharged”.
+**`AlgebraicGeometry.isZero_cechCohomology_singleton_succ_quasiCoherentPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean#L133). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, for the one-member covering 03FI reduces to; unconditional -- hcoeff, harrow and hcolim are all three discharged”.
 
 > Čech vanishing in positive degrees for the one-member covering of an affine object of
 > `Over S` by an affine object whose coordinate ring is faithfully flat over that of the target,
@@ -342,7 +342,7 @@ public theorem isZero_cechCohomology_singleton_succ_quasiCoherentPresheaf
       (quasiCoherentPresheafFunctor S F) (p + 1))
 ```
 
-**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean#L170). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, for an arbitrary standard covering; unconditional -- hcoeff, harrow and hcolim are all three discharged”.
+**`AlgebraicGeometry.isZero_cechCohomology_succ_quasiCoherentPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/CechVanishingStandardCovering.lean#L170). The attribute's comment: “the `Cech^p = 0 for p >= 1` clause, for an arbitrary standard covering; unconditional -- hcoeff, harrow and hcolim are all three discharged”.
 
 > Čech vanishing in positive degrees for a standard `τ`-covering of an affine object of
 > `Over S`, with the presheaf `Fᵃ` of [Stacks, Tag 03DS] as coefficients, for each of the five
@@ -360,7 +360,7 @@ public theorem isZero_cechCohomology_succ_quasiCoherentPresheaf (τ : CoveringTo
 
 [Tag 03DW](https://stacks.math.columbia.edu/tag/03DW) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.hZeroBaseAssociatedModuleAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModuleCohomologyDegreeZero.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModuleCohomologyDegreeZero.lean#L209). The attribute's comment: “the case q = 0 of clause (1), for every one of the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.hZeroBaseAssociatedModuleAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModuleCohomologyDegreeZero.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModuleCohomologyDegreeZero.lean#L209). The attribute's comment: “the case q = 0 of clause (1), for every one of the five topologies”.
 
 > **[Stacks, Tag 03DW], clause (1), in the case `q = 0`.**  Let `S` be a scheme, let `𝓕` be a
 > quasi-coherent `𝒪_S`-module and let `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.  There is a
@@ -399,7 +399,7 @@ public noncomputable def hZeroBaseAssociatedModuleAddEquiv (τ : SiteKind) (F : 
         ((baseAssociatedModule B S hS τ).obj F)) 0
 ```
 
-**`AlgebraicGeometry.bigOverQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L130). The attribute's comment: “clause (1), in EVERY degree q and for all five τ at once (τ is a bound variable), in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H, and not cohomology over an object of it. The Sheaf.H' carrier bigOverQuasiCoherentGlobalCohomologyIso states the same comparison over the object of the big site that ⊤ becomes; this is that statement composed with the terminal-object identification Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensBelowToOver\_top. Clause (2) is smallZariskiQuasiCoherentSiteCohomologyAddEquiv together with smallEtaleQuasiCoherentSiteCohomologyAddEquiv”.
+**`AlgebraicGeometry.bigOverQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L131). The attribute's comment: “clause (1), in EVERY degree q and for all five τ at once (τ is a bound variable), in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H, and not cohomology over an object of it. The Sheaf.H' carrier bigOverQuasiCoherentGlobalCohomologyIso states the same comparison over the object of the big site that ⊤ becomes; this is that statement composed with the terminal-object identification Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensBelowToOver\_top. Clause (2) is smallZariskiQuasiCoherentSiteCohomologyAddEquiv together with smallEtaleQuasiCoherentSiteCohomologyAddEquiv”.
 
 > **[Stacks, Tag 03DW], clause (1).**  Let `S` be a scheme, let `ℱ` be a quasi-coherent
 > `𝒪_S`-module and let `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.  In every degree `q` there
@@ -423,7 +423,7 @@ public def bigOverQuasiCoherentSiteCohomologyAddEquiv (p : ℕ) :
       Sheaf.H.{u} (bigOverAssociatedSheaf S F τ B hS) p
 ```
 
-**`AlgebraicGeometry.smallZariskiQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L174). The attribute's comment: “clause (2), the small ZARISKI link H^q(S, F) = H^q(S\_Zar, Fᵃ), in EVERY degree q, in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H. The Sheaf.H' carrier smallZariskiQuasiCoherentGlobalCohomologyIso states the same comparison over the object of S\_Zar that ⊤ becomes; this is that statement composed with Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensToSmallZariski\_top. The other link of clause (2) is smallEtaleQuasiCoherentSiteCohomologyAddEquiv and clause (1) is bigOverQuasiCoherentSiteCohomologyAddEquiv”.
+**`AlgebraicGeometry.smallZariskiQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L175). The attribute's comment: “clause (2), the small ZARISKI link H^q(S, F) = H^q(S\_Zar, Fᵃ), in EVERY degree q, in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H. The Sheaf.H' carrier smallZariskiQuasiCoherentGlobalCohomologyIso states the same comparison over the object of S\_Zar that ⊤ becomes; this is that statement composed with Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensToSmallZariski\_top. The other link of clause (2) is smallEtaleQuasiCoherentSiteCohomologyAddEquiv and clause (1) is bigOverQuasiCoherentSiteCohomologyAddEquiv”.
 
 > **[Stacks, Tag 03DW], clause (2), the small Zariski link.**  For a scheme `S` in a big
 > Zariski site, a quasi-coherent `𝒪_S`-module `ℱ` and a degree `q` there is a canonical
@@ -445,7 +445,7 @@ public def smallZariskiQuasiCoherentSiteCohomologyAddEquiv (p : ℕ) :
       Sheaf.H.{u} (smallZariskiAssociatedSheaf B S hS F) p
 ```
 
-**`AlgebraicGeometry.smallEtaleQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L215). The attribute's comment: “clause (2), the small ÉTALE link H^q(S, F) = H^q(S\_étale, Fᵃ), in EVERY degree q, in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H. The Sheaf.H' carrier smallEtaleQuasiCoherentGlobalCohomologyIso states the same comparison over the object of S\_étale that ⊤ becomes; this is that statement composed with Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensToEtale\_top. The other link of clause (2) is smallZariskiQuasiCoherentSiteCohomologyAddEquiv and clause (1) is bigOverQuasiCoherentSiteCohomologyAddEquiv”.
+**`AlgebraicGeometry.smallEtaleQuasiCoherentSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentSiteCohomologyComparison.lean#L216). The attribute's comment: “clause (2), the small ÉTALE link H^q(S, F) = H^q(S\_étale, Fᵃ), in EVERY degree q, in the source's own shape: both sides are the cohomology of a SITE, CategoryTheory.Sheaf.H. The Sheaf.H' carrier smallEtaleQuasiCoherentGlobalCohomologyIso states the same comparison over the object of S\_étale that ⊤ becomes; this is that statement composed with Stacks.Cohomology.TerminalCohomology.h'AddEquivH on both sides, the two objects being terminal by topIsTerminal and isTerminal\_opensToEtale\_top. The other link of clause (2) is smallZariskiQuasiCoherentSiteCohomologyAddEquiv and clause (1) is bigOverQuasiCoherentSiteCohomologyAddEquiv”.
 
 > **[Stacks, Tag 03DW], clause (2), the small étale link.**  For a scheme `S`, a
 > quasi-coherent `𝒪_S`-module `ℱ` and a degree `q` there is a canonical isomorphism
@@ -466,7 +466,7 @@ public def smallEtaleQuasiCoherentSiteCohomologyAddEquiv (p : ℕ) :
       Sheaf.H.{u} (smallEtaleAssociatedSheaf S F) p
 ```
 
-**`AlgebraicGeometry.bigOverQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/BigSiteQuasiCoherentCohomology.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/BigSiteQuasiCoherentCohomology.lean#L226). The attribute's comment: “clause (1), in EVERY degree q and for all five τ at once (τ is a bound variable) — the same statement as Tag 03P2 at 𝒞 = (Sch/S)\_τ, Descent Proposition 35.9.3 and Étale Cohomology Theorem 59.22.4 being the same assertion in two chapters. In particular this is the POSITIVE-DEGREE case, which the q = 0 carrier BigFppfOver.hZeroBaseAssociatedModuleAddEquiv does not claim; the affine vanishing H^p(U, Fᵃ) = 0 that the source's proof passes through is isZero\_sheafCohomology\_succ\_overAffine. The site here is overTopology on Over (base B S hS), not the BigFppfOver.baseOverTopology that the q = 0 carrier uses; the two are topologies on different categories for τ ≠ fppf and no bridge is claimed. Clause (2) is covered by smallEtaleQuasiCoherentGlobalCohomologyIso (the small étale half) together with smallZariskiQuasiCoherentGlobalCohomologyIso (the small Zariski half)”.
+**`AlgebraicGeometry.bigOverQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/BigSiteQuasiCoherentCohomology.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/BigSiteQuasiCoherentCohomology.lean#L226). The attribute's comment: “clause (1), in EVERY degree q and for all five τ at once (τ is a bound variable) — the same statement as Tag 03P2 at 𝒞 = (Sch/S)\_τ, Descent Proposition 35.9.3 and Étale Cohomology Theorem 59.22.4 being the same assertion in two chapters. In particular this is the POSITIVE-DEGREE case, which the q = 0 carrier BigFppfOver.hZeroBaseAssociatedModuleAddEquiv does not claim; the affine vanishing H^p(U, Fᵃ) = 0 that the source's proof passes through is isZero\_sheafCohomology\_succ\_overAffine. The site here is overTopology on Over (base B S hS), not the BigFppfOver.baseOverTopology that the q = 0 carrier uses; the two are topologies on different categories for τ ≠ fppf and no bridge is claimed. Clause (2) is covered by smallEtaleQuasiCoherentGlobalCohomologyIso (the small étale half) together with smallZariskiQuasiCoherentGlobalCohomologyIso (the small Zariski half)”.
 
 > **Zariski cohomology of a quasi-coherent module agrees with its big `τ`-site cohomology**:
 > for a quasi-coherent module `F` on a scheme `S` and a degree `p`,
@@ -490,7 +490,7 @@ public def bigOverQuasiCoherentGlobalCohomologyIso (p : ℕ) :
         ((opensBelowToOver (κ := cutoff τ B) hS).obj ⊤)
 ```
 
-**`AlgebraicGeometry.smallEtaleQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SmallEtaleQuasiCoherentCohomology.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SmallEtaleQuasiCoherentCohomology.lean#L89). The attribute's comment: “clause (2), the small étale half, in EVERY degree q — the same statement as Tag 03P2 at 𝒞 = S\_étale, Descent Proposition 35.9.3 and Étale Cohomology Theorem 59.22.4 being the same assertion in two chapters. In particular this is the POSITIVE-DEGREE case, which the q = 0 carrier BigFppfOver.hZeroBaseAssociatedModuleAddEquiv does not claim; the affine vanishing H^p(U, Fᵃ) = 0 that the source's proof passes through is isZero\_sheafCohomology\_succ\_smallEtaleAffine. NOT covered here: the small ZARISKI half of clause (2), which is smallZariskiQuasiCoherentGlobalCohomologyIso; clause (1) is bigOverQuasiCoherentGlobalCohomologyIso”. References: SGA 4 VII (4.3).
+**`AlgebraicGeometry.smallEtaleQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SmallEtaleQuasiCoherentCohomology.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CechComparison/SmallEtaleQuasiCoherentCohomology.lean#L89). The attribute's comment: “clause (2), the small étale half, in EVERY degree q — the same statement as Tag 03P2 at 𝒞 = S\_étale, Descent Proposition 35.9.3 and Étale Cohomology Theorem 59.22.4 being the same assertion in two chapters. In particular this is the POSITIVE-DEGREE case, which the q = 0 carrier BigFppfOver.hZeroBaseAssociatedModuleAddEquiv does not claim; the affine vanishing H^p(U, Fᵃ) = 0 that the source's proof passes through is isZero\_sheafCohomology\_succ\_smallEtaleAffine. NOT covered here: the small ZARISKI half of clause (2), which is smallZariskiQuasiCoherentGlobalCohomologyIso; clause (1) is bigOverQuasiCoherentGlobalCohomologyIso”. References: SGA 4 VII (4.3).
 
 > For a quasi-coherent module `F` on a scheme `S` and a degree `p`, Zariski cohomology of `F`
 > agrees with small étale cohomology of its associated module:
@@ -506,7 +506,7 @@ public def smallEtaleQuasiCoherentGlobalCohomologyIso (p : ℕ) :
       Sheaf.H' (smallEtaleAssociatedSheaf S F) p ((opensToEtale S).obj ⊤)
 ```
 
-**`AlgebraicGeometry.smallZariskiQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallZariskiQuasiCoherentCohomology.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallZariskiQuasiCoherentCohomology.lean#L367). The attribute's comment: “clause (2), the small ZARISKI half H^q(S, F) = H^q(S\_Zar, Fᵃ), in EVERY degree q. S\_Zar is the small Zariski site of Tag 020T (2) and Fᵃ the associated module of Tag 03DU (4) at τ = Zariski, SmallZariski.associatedModuleOfSections. The object the right-hand side is taken over, (opensToSmallZariski B S hS).obj ⊤, is a final object of the site by isTerminal\_opensToSmallZariski\_top, so that side is the cohomology of S\_Zar itself. The other half of clause (2), H^q(S, F) = H^q(S\_étale, Fᵃ), is smallEtaleQuasiCoherentGlobalCohomologyIso; clause (1) is bigOverQuasiCoherentGlobalCohomologyIso. No 03P2 attribute: that tag lets 𝒞 be a big τ-site or S\_étale and does not include S\_Zar”.
+**`AlgebraicGeometry.smallZariskiQuasiCoherentGlobalCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallZariskiQuasiCoherentCohomology.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Zariski/SmallZariskiQuasiCoherentCohomology.lean#L370). The attribute's comment: “clause (2), the small ZARISKI half H^q(S, F) = H^q(S\_Zar, Fᵃ), in EVERY degree q. S\_Zar is the small Zariski site of Tag 020T (2) and Fᵃ the associated module of Tag 03DU (4) at τ = Zariski, SmallZariski.associatedModuleOfSections. The object the right-hand side is taken over, (opensToSmallZariski B S hS).obj ⊤, is a final object of the site by isTerminal\_opensToSmallZariski\_top, so that side is the cohomology of S\_Zar itself. The other half of clause (2), H^q(S, F) = H^q(S\_étale, Fᵃ), is smallEtaleQuasiCoherentGlobalCohomologyIso; clause (1) is bigOverQuasiCoherentGlobalCohomologyIso. No 03P2 attribute: that tag lets 𝒞 be a big τ-site or S\_étale and does not include S\_Zar”.
 
 > **Zariski cohomology of a quasi-coherent module agrees with the cohomology of its associated
 > module on the small Zariski site**: for a quasi-coherent module `F` on a scheme `S` and a degree
@@ -534,7 +534,7 @@ public def smallZariskiQuasiCoherentGlobalCohomologyIso (p : ℕ) :
 
 [Tag 03LC](https://stacks.math.columbia.edu/tag/03LC) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean#L415). The attribute's comment: “part (1) at τ = fppf”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean#L415). The attribute's comment: “part (1) at τ = fppf”.
 
 > **Stacks Project, Tag 03LC part (1), at `τ = fppf`.**  The equivalence of Stacks 03DX is
 > compatible with pullback: for `f : X ⟶ S` the structure morphism of an object `T` of the big fppf
@@ -562,7 +562,7 @@ public noncomputable def associatedModuleBaseChangeIso :
         associatedModule B (objScheme B S hS T) (contains_objScheme B S hS T)
 ```
 
-**`AlgebraicGeometry.associatedModule_pullback_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean#L70). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.associatedModule_pullback_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean#L70). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 03LC part (1).**  The equivalences of Proposition 03DX are compatible
 > with pullback: for every morphism of schemes `f` and every module `𝓖` on the target,
@@ -598,7 +598,7 @@ theorem associatedModule_pullback_compatible :
           SheafOfModules.pullback.{u} (SmallZariski.lcStructureMapRing B f)))
 ```
 
-**`AlgebraicGeometry.associatedModule_pushforward_compatible_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean#L102). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.associatedModule_pushforward_compatible_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PullbackPushforwardParts.lean#L102). The attribute's comment: “(3)”.
 
 > **Stacks Project, Tag 03LC part (3).**  Let `f` be quasi-compact and quasi-separated and
 > `τ ∈ {Zariski, étale}`.  Then `f_*` preserves quasi-coherent modules (Stacks 01LC,
@@ -641,7 +641,7 @@ theorem associatedModule_pushforward_compatible_of_qcqs :
             ((SmallZariski.associatedModule B T.1 T.property).obj 𝓕))))
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean#L388). The attribute's comment: “part (1) at τ = étale, for the small étale sites”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean#L389). The attribute's comment: “part (1) at τ = étale, for the small étale sites”.
 
 > **The associated module of a pullback is the pullback of the associated module.**  For
 > `a : X ⟶ Y` a morphism of schemes of the big étale site, with `r` the underlying morphism of
@@ -668,7 +668,8 @@ theorem associatedModule_pushforward_compatible_of_qcqs :
 > `AlgebraicGeometry.BigFppfOver.associatedModuleBasePullbackIso`
 > (`StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean`), and the small
 > Zariski one is `AlgebraicGeometry.SmallZariski.lcAssociatedModulePullbackIso`
-> (`StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean:458`).
+> (`StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean`,
+> line 458).
 > (It was formerly cited as `AlgebraicGeometry.SmallZariski.associatedModulePullbackIso`, which
 > states the commutation over the *identity reading* of `𝓕 ↦ 𝓕^a` and is a tautology about `𝟭`;
 > that declaration is untagged, and naming it here made this enumeration a false completeness
@@ -684,7 +685,7 @@ public def associatedModuleBaseChangeIso :
         SheafOfModules.pullback.{u} (smallEtaleStructureMapRing B a)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isQuasicoherentOnSite_smallPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean#L872). The attribute's comment: “part (3) at τ = étale, the second conjunct: f\_\{small, *} carries quasi-coherent 𝒪-modules on the small étale site of X to quasi-coherent 𝒪-modules on the small étale site of Y, for f quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.SmallEtale.isQuasicoherentOnSite_smallPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean#L868). The attribute's comment: “part (3) at τ = étale, the second conjunct: f\_\{small, *} carries quasi-coherent 𝒪-modules on the small étale site of X to quasi-coherent 𝒪-modules on the small étale site of Y, for f quasi-compact and quasi-separated”.
 
 > **Stacks 03LC part (3) at `τ = étale`, the second conjunct.**  For `f : X ⟶ Y` quasi-compact
 > and quasi-separated, the direct image `f_{small, *}` along the morphism of ringed small étale
@@ -706,7 +707,7 @@ public theorem isQuasicoherentOnSite_smallPushforward
     ((smallPushforward B a).obj 𝓖).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleSmallPushforwardIsoOfQcqs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean#L899). The attribute's comment: “part (3) at τ = étale, the commuting square f\_\{small, *}(𝓕^a) ≅ (f\_*𝓕)^a, at one module”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleSmallPushforwardIsoOfQcqs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean, line 895](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePushforwardCartesian.lean#L895). The attribute's comment: “part (3) at τ = étale, the commuting square f\_\{small, *}(𝓕^a) ≅ (f\_*𝓕)^a, at one module”.
 
 > **Stacks 03LC part (3) at `τ = étale`, the commuting square**, at one module and with no
 > hypothesis beyond quasi-compactness and quasi-separatedness of `f` and quasi-coherence of `𝓕`:
@@ -725,7 +726,7 @@ public def associatedModuleSmallPushforwardIsoOfQcqs
       (smallPushforward B a).obj ((associatedModule B X.obj X.property).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcAssociatedModulePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L464). The attribute's comment: “part (1) at τ = Zariski, for the small Zariski sites: (f^*𝓖)^a ≅ f\_small^*(𝓖^a), for an arbitrary morphism of schemes of the site and arbitrary modules”.
+**`AlgebraicGeometry.SmallZariski.lcAssociatedModulePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L467). The attribute's comment: “part (1) at τ = Zariski, for the small Zariski sites: (f^*𝓖)^a ≅ f\_small^*(𝓖^a), for an arbitrary morphism of schemes of the site and arbitrary modules”.
 
 > **Stacks 03LC part (1) at `τ = Zariski`, for the small Zariski sites.**  The equivalence of
 > Stacks 03DX (2) at `τ = Zariski` is compatible with pullback: for `f : T ⟶ S` a morphism of
@@ -771,7 +772,7 @@ public noncomputable def lcAssociatedModulePullbackIso :
         SheafOfModules.pullback.{u} (lcStructureMapRing B f)
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleSmallPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L537). The attribute's comment: “part (3) at τ = Zariski, the commuting square f\_\{small,*}(𝓕^a) ≅ (f\_*𝓕)^a, at one module and with no hypothesis on f”.
+**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleSmallPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L540). The attribute's comment: “part (3) at τ = Zariski, the commuting square f\_\{small,*}(𝓕^a) ≅ (f\_*𝓕)^a, at one module and with no hypothesis on f”.
 
 > **Stacks 03LC part (3) at `τ = Zariski`, the commuting square**, at one module and with no
 > hypothesis on `f`: for every `𝒪_T`-module `𝓕`,
@@ -799,7 +800,7 @@ public noncomputable def lcAssociatedModuleSmallPushforwardIso (𝓕 : (T.1).Mod
         ((associatedModule B T.1 T.property).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleSmallPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L566). The attribute's comment: “part (3) at τ = Zariski, the commuting square of the part, as an isomorphism of functors Mod(𝒪\_T) ⥤ Mod(S\_Zar, 𝒪) and with no hypothesis on f”.
+**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleSmallPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L569). The attribute's comment: “part (3) at τ = Zariski, the commuting square of the part, as an isomorphism of functors Mod(𝒪\_T) ⥤ Mod(S\_Zar, 𝒪) and with no hypothesis on f”.
 
 > **Stacks 03LC part (3) at `τ = Zariski`, the commuting square as an isomorphism of
 > functors.**  The square
@@ -827,7 +828,7 @@ public noncomputable def lcAssociatedModuleSmallPushforwardNatIso :
         SheafOfModules.pushforward.{u} (lcStructureMapRing B f)
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcIsQuasicoherentOnSite_smallPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L591). The attribute's comment: “part (3) at τ = Zariski, f\_\{small,*} carries quasi-coherent 𝒪-modules on the small Zariski site to quasi-coherent 𝒪-modules on the small Zariski site”.
+**`AlgebraicGeometry.SmallZariski.lcIsQuasicoherentOnSite_smallPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L594). The attribute's comment: “part (3) at τ = Zariski, f\_\{small,*} carries quasi-coherent 𝒪-modules on the small Zariski site to quasi-coherent 𝒪-modules on the small Zariski site”.
 
 > **Stacks 03LC part (3) at `τ = Zariski`, the preservation of quasi-coherence by
 > `f_{small, *}`.**  For `f : T ⟶ S` quasi-compact and quasi-separated, the direct image along
@@ -849,7 +850,7 @@ public theorem lcIsQuasicoherentOnSite_smallPushforward
     ((SheafOfModules.pushforward.{u} (lcStructureMapRing B f)).obj 𝒢).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBasePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L220). The attribute's comment: “part (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the big sites: (f^*𝓖)^a ≅ f\_big^*(𝓖^a), for an arbitrary morphism of schemes and arbitrary modules”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBasePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L220). The attribute's comment: “part (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the big sites: (f^*𝓖)^a ≅ f\_big^*(𝓖^a), for an arbitrary morphism of schemes and arbitrary modules”.
 
 > **Stacks 03FH, part (2), for the morphism of big sites
 > `f_big : ((Sch/X)_τ, 𝒪_X) ⟶ ((Sch/Y)_τ, 𝒪_Y)` of Stacks 070R (1), at each of the five
@@ -881,7 +882,7 @@ public noncomputable def associatedModuleBasePullbackIso :
         SheafOfModules.pullback.{u} (baseStructureComparison B hX hY f τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L237). The attribute's comment: “part (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the big sites, at one module: f\_big^*(𝓖^a) ≅ (f^*𝓖)^a”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L237). The attribute's comment: “part (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the big sites, at one module: f\_big^*(𝓖^a) ≅ (f^*𝓖)^a”.
 
 > **Stacks 03FH, part (2), at one module**: `(f^*𝓕)^a ≅ f_big^*(𝓕^a)` for the morphism of big
 > sites `f_big` at each of the five topologies, read off from
@@ -894,7 +895,7 @@ public noncomputable def associatedModuleBaseObjPullbackIso (𝓕 : Y.Modules) :
         ((baseAssociatedModule B Y hY τ).obj 𝓕)
 ```
 
-**`Stacks.Examples.QcohPushforward.exists_isEmpty_iso_bigPushforward_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/BigSitePushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/QuasiCoherentPushforward/BigSitePushforward.lean#L225). The attribute's comment: “(2)”.
+**`Stacks.Examples.QcohPushforward.exists_isEmpty_iso_bigPushforward_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/BigSitePushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/QuasiCoherentPushforward/BigSitePushforward.lean#L225). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 03LC part (2).**  The equivalences `𝓖 ↦ 𝓖^a` of Proposition 03DX part
 > (1) are **not** compatible with pushforward in general: there are a morphism of schemes
@@ -928,13 +929,13 @@ theorem exists_isEmpty_iso_bigPushforward_associatedModule :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.pushforward_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/FunctorialityQuasiCoherent/Basic/Pushforward.lean#L899), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean#L455) (StacksFrontier): “part (3), ordinary pushforward preserves quasi-coherence”.
+- [`AlgebraicGeometry.pushforward_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/FunctorialityQuasiCoherent/Basic/Pushforward.lean#L899), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/ObjectFunctoriality.lean#L456) (StacksFrontier): “part (3), ordinary pushforward preserves quasi-coherence”.
 
 ## Tag 071N, a lemma
 
 [Tag 071N](https://stacks.math.columbia.edu/tag/071N) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.higherDirectImageAssociatedModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleHigherDirectImageQcqs.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleHigherDirectImageQcqs.lean#L328). The attribute's comment: “the ÉTALE topology of the two the tag states ("for either the étale or Zariski topology"): for f quasi-compact and quasi-separated, in every degree i, as an isomorphism of functors on the quasi-coherent O\_T-modules (hence natural in F). The ZARISKI topology is SmallZariski.higherDirectImageAssociatedModulePlusIntIso”.
+**`AlgebraicGeometry.SmallEtale.higherDirectImageAssociatedModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleHigherDirectImageQcqs.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleHigherDirectImageQcqs.lean#L328). The attribute's comment: “the ÉTALE topology of the two the tag states ("for either the étale or Zariski topology"): for f quasi-compact and quasi-separated, in every degree i, as an isomorphism of functors on the quasi-coherent O\_T-modules (hence natural in F). The ZARISKI topology is SmallZariski.higherDirectImageAssociatedModulePlusIntIso”.
 
 > For a morphism `f : T ⟶ S` of schemes of a big étale site whose underlying morphism of
 > schemes is quasi-compact and quasi-separated, and every degree `i`, there is a canonical
@@ -956,7 +957,7 @@ def higherDirectImageAssociatedModuleIso (i : ℕ) :
           associatedModule B Y.obj Y.property
 ```
 
-**`AlgebraicGeometry.SmallEtale.higherDirectImageAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleZariskiBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleZariskiBaseChange.lean#L148). The attribute's comment: “the étale topology”.
+**`AlgebraicGeometry.SmallEtale.higherDirectImageAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleZariskiBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleZariskiBaseChange.lean#L148). The attribute's comment: “the étale topology”.
 
 > **Descent, Lemma 071N, for the étale topology**: for a quasi-compact and quasi-separated
 > morphism `a` of the big étale site and a quasi-coherent `𝒪_X`-module `𝓕`,
@@ -972,7 +973,7 @@ def higherDirectImageAssociatedSheafIso (𝓕 : X.obj.Modules) [𝓕.IsQuasicohe
         (((Scheme.Modules.pushforward (schemeHom B a)).rightDerived p).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.SmallZariski.higherDirectImageAssociatedModulePlusIntIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiHigherDirectImageIntDegree.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiHigherDirectImageIntDegree.lean#L181). The attribute's comment: “the ZARISKI topology of the two the tag states ("for either the étale or Zariski topology"), at every integer degree and naturally in the module, with the tag's hypotheses on f and on the module dropped rather than weakened. The ÉTALE topology, at the tag's hypotheses (f quasi-compact and quasi-separated, F quasi-coherent), in every degree and naturally in F, is SmallEtale.higherDirectImageAssociatedModuleIso”.
+**`AlgebraicGeometry.SmallZariski.higherDirectImageAssociatedModulePlusIntIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiHigherDirectImageIntDegree.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiHigherDirectImageIntDegree.lean#L181). The attribute's comment: “the ZARISKI topology of the two the tag states ("for either the étale or Zariski topology"), at every integer degree and naturally in the module, with the tag's hypotheses on f and on the module dropped rather than weakened. The ÉTALE topology, at the tag's hypotheses (f quasi-compact and quasi-separated, F quasi-coherent), in every degree and naturally in F, is SmallEtale.higherDirectImageAssociatedModuleIso”.
 
 > **The Zariski half of [Stacks, Tag 071N] at an arbitrary integer degree.**  For every `i : ℤ`,
 >
@@ -1004,7 +1005,7 @@ public noncomputable def higherDirectImageAssociatedModulePlusIntIso (i : ℤ) :
 
 Declarations registered for the tag:
 
-- [`isQuasicoherent_higherDirectImage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isQuasicoherent_higherDirectImage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L601) (StacksFrontier): “quasi-coherence of the higher direct images”.
+- [`isQuasicoherent_higherDirectImage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isQuasicoherent_higherDirectImage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L601) (StacksFrontier): “quasi-coherence of the higher direct images”.
 
 ## Depends on
 
@@ -1013,4 +1014,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.9, Tag 0GN8](https://stacks.math.columbia.edu/tag/0GN8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

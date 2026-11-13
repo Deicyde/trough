@@ -8,7 +8,7 @@ proof: formalized
 
 # Higher-order Bernoulli numbers
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html).
 
 ## Higher-order Bernoulli numbers
 
@@ -27,7 +27,7 @@ $\sum_{n \ge 0} B_n^{(\alpha)}(x) t^n / n! = \left(t / (e^t - 1)\right)^{\alpha}
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex, lines 99-112.
 
-Formalized by `MetaMathlibExt.higherOrderBernoulliNumber`, a definition declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number).
+Formalized by `MetaMathlibExt.higherOrderBernoulliNumber`, a definition declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number).
 
 ## Higher-order Bernoulli numbers of natural order
 
@@ -36,7 +36,7 @@ with $B_1 = -1/2$. For natural numbers $d$ and $n$, the higher-order Bernoulli n
 $B_n^{(d)}$ equals $n!$ times the coefficient of $t^n$ in the $d$-th power of the Bernoulli
 generating series $\sum_{k \ge 0} B_k t^k / k!$.
 
-Formalized by `MetaMathlibExt.higherOrderBernoulliNumber_nat`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number-nat).
+Formalized by `MetaMathlibExt.higherOrderBernoulliNumber_nat`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number-nat).
 
 ## Higher-order Bernoulli numbers of order one
 
@@ -44,7 +44,7 @@ For every natural number $n$, the
 higher-order Bernoulli number $B_n^{(1)}$ equals the Bernoulli number $B_n$, with the
 convention $B_1 = -1/2$.
 
-Formalized by `MetaMathlibExt.higherOrderBernoulliNumber_one`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number-one).
+Formalized by `MetaMathlibExt.higherOrderBernoulliNumber_one`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#higher-order-bernoulli-number-one).
 
 ## Neto's identity for higher-order Bernoulli numbers
 
@@ -64,7 +64,7 @@ formula, and equality on all natural complex points finishes the polynomial argu
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex, lines 662-670.
 
-Formalized by `MetaMathlibExt.neto_higher_order_bernoulli_identity`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#neto-higher-order-bernoulli-identity).
+Formalized by `MetaMathlibExt.neto_higher_order_bernoulli_identity`, a theorem declared in [MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NetoHigherOrderBernoulli.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html#neto-higher-order-bernoulli-identity).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Higher-order Bernoulli numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/higher-order-bernoulli-numbers)

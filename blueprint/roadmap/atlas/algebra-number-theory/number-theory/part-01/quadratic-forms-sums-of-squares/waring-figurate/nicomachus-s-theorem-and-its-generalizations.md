@@ -7,7 +7,7 @@ statement: formalized
 
 # Nicomachus's theorem and its generalizations
 
-29 results, 14 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html).
+29 results, 14 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html).
 
 ## Nicomachean defect
 
@@ -19,7 +19,7 @@ $\nu(\sigma) = \left(\sum_{i=1}^n a_i\right)^2 - \sum_{i=1}^n a_i^3$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Section 1.
 
-Formalized by `MetaMathlibExt.nicomacheanNu`, a definition declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-nu).
+Formalized by `MetaMathlibExt.nicomacheanNu`, a definition declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-nu).
 
 ## Examples of the Nicomachean defect
 
@@ -34,7 +34,7 @@ $\nu(1, 2, 2, 3, 4, x, 6, 8) = (5 - x)(x - 4)(8 + x)$; the identity itself is no
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Section 1.
 
-Formalized by `MetaMathlibExt.nicomacheanNu_examples`, a theorem declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-nu-examples).
+Formalized by `MetaMathlibExt.nicomacheanNu_examples`, a theorem declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-nu-examples).
 
 ## The Nicomachean progression factor
 
@@ -51,7 +51,7 @@ progressions $S, S + n, \dots, S + mn$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Section 6, equation (nusm).
 
-Formalized by `MetaMathlibExt.nicomacheanAlpha`, a definition declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha).
+Formalized by `MetaMathlibExt.nicomacheanAlpha`, a definition declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha).
 
 ## Specializations of the Nicomachean factor at $s = 1, 2, 3$
 
@@ -64,7 +64,7 @@ $\alpha(n, 3, a) = -(a + n - 3)(a + n)$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Section 6.
 
-Formalized by `MetaMathlibExt.nicomacheanAlpha_one_two_three`, a theorem declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha-one-two-three).
+Formalized by `MetaMathlibExt.nicomacheanAlpha_one_two_three`, a theorem declared in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha-one-two-three).
 
 ## Second differences of roots of translated Nicomachean bag squares
 
@@ -91,7 +91,7 @@ $\rho(m)$ is its largest real root.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 1 (`jis-2024-24.6.3-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.nicomachean_bagSquare_root_secondDifference_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-bag-square-root-second-diffe).
+Stated but not proved: `MetaMathlibExt.nicomachean_bagSquare_root_secondDifference_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-bag-square-root-second-diffe).
 
 ## Nicomachean sequences of rationals with large denominators
 
@@ -105,7 +105,7 @@ greater than $Q$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 3 (`jis-2024-24.6.3-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.exists_pos_rat_nicomacheanNu_eq_zero_large_den` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-pos-rat-nicomachean-nu-eq-zero-la).
+Stated but not proved: `MetaMathlibExt.exists_pos_rat_nicomacheanNu_eq_zero_large_den` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-pos-rat-nicomachean-nu-eq-zero-la).
 
 ## Two-valued Nicomachean sequences with a large gap
 
@@ -119,7 +119,7 @@ $\nu(\sigma) = 0$ and $(b - a)/L > 1 - \varepsilon$, where $L$ is the length of 
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 4 (`jis-2024-24.6.3-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.exists_two_valued_nicomachean_large_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-two-valued-nicomachean-large-gap).
+Stated but not proved: `MetaMathlibExt.exists_two_valued_nicomachean_large_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-two-valued-nicomachean-large-gap).
 
 ## Generating functions for run-and-repeat Nicomachean sequences
 
@@ -150,7 +150,7 @@ $6(1 + x)^2/((1 - x)(1 - 6x + x^2)(1 + 6x + x^2))$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 5 (`jis-2024-24.6.3-prop-5`).
 
-Stated but not proved: `MetaMathlibExt.nicomachean_run_repeat_generatingFunctions` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-run-repeat-generating-functi).
+Stated but not proved: `MetaMathlibExt.nicomachean_run_repeat_generatingFunctions` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-run-repeat-generating-functi).
 
 ## Nicomachean sequences with a large gap at the top
 
@@ -165,7 +165,7 @@ $b - a > G$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 6 (`jis-2024-24.6.3-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.exists_nicomachean_large_top_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-nicomachean-large-top-gap).
+Stated but not proved: `MetaMathlibExt.exists_nicomachean_large_top_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-nicomachean-large-top-gap).
 
 ## Golden-ratio sequences with vanishing Nicomachean defect
 
@@ -181,7 +181,7 @@ a subsequence of irrational entries whose length is more than half the length of
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 7 (`jis-2024-24.6.3-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.exists_goldenRatio_nicomachean_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-golden-ratio-nicomachean-sequence).
+Stated but not proved: `MetaMathlibExt.exists_goldenRatio_nicomachean_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-golden-ratio-nicomachean-sequence).
 
 ## Adjoined Nicomachean sequences are eventually arithmetic progressions
 
@@ -196,7 +196,7 @@ every $j \ge 2$; that is, $x_2, x_3, \dots$ is an arithmetic progression with di
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 8 (`jis-2024-24.6.3-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.nicomachean_adjoined_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-adjoined-arithmetic-progress).
+Stated but not proved: `MetaMathlibExt.nicomachean_adjoined_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-adjoined-arithmetic-progress).
 
 ## Positive integer roots of the Nicomachean factor for $s = 1, 2$
 
@@ -215,7 +215,7 @@ polynomial in $a$. The case $n = 0$ is excluded: $\alpha(0, 2, a)$ has the root 
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 9 (`jis-2024-24.6.3-prop-9`).
 
-Stated but not proved: `MetaMathlibExt.nicomacheanAlpha_posIntRoot_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha-pos-int-root-iff).
+Stated but not proved: `MetaMathlibExt.nicomacheanAlpha_posIntRoot_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachean-alpha-pos-int-root-iff).
 
 ## Nicomachean families sharing a quadratic factor
 
@@ -235,14 +235,14 @@ $(k, -k, 1)$.
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, *Translations and Extensions of the Nicomachean Identity*, Journal of Integer Sequences 27 (2024), Article 24.6.3, Proposition 12 (`jis-2024-24.6.3-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.exists_nicomachean_family_same_quadratic_factor` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-nicomachean-family-same-quadratic).
+Stated but not proved: `MetaMathlibExt.exists_nicomachean_family_same_quadratic_factor` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomacheanTranslationsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#exists-nicomachean-family-same-quadratic).
 
 ## Triangular numbers as reals
 
 For a natural number $m$, $T_m = m(m+1)/2$ is the $m$-th
 triangular number, viewed as a real number.
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusTriangular`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-triangular).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusTriangular`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-triangular).
 
 ## The odd-case cube sum $L_{m,o}$
 
@@ -251,7 +251,7 @@ For a natural number $m$ and a real number $x$,
 $$L_{m,o}(x) = \sum_{j=1}^{m} (2j - 1)^3 + x^3 +
 \sum_{j=2}^{m} \bigl((2j - 2) + (j - 1)x\bigr)^3.$$
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLOdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-lodd).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLOdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-lodd).
 
 ## The odd-case square $R_{m,o}(x)$
 
@@ -262,7 +262,7 @@ $$R_{m,o}(x) = \bigl(T_{2m-1} + (1 + T_{m-1})\,x\bigr)^2,$$
 where $T_n = n(n+1)/2$ is the $n$-th triangular number (for $m = 0$ the indices $2m - 1$ and
 $m - 1$ are read as $0$).
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusROdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-rodd).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusROdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-rodd).
 
 ## The odd-case polynomial $P_{m,o}$
 
@@ -270,7 +270,7 @@ For a natural number $m$ and a real number $x$,
 
 $$P_{m,o}(x) = \sum_{j=0}^{m} (4j + 1 + jx) \bigl((j + 1)(j - 2) + j^2 x\bigr).$$
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPOdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-podd).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPOdd`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-podd).
 
 ## The even-case cube sum $L_{m,e}$
 
@@ -278,7 +278,7 @@ For a natural number $m$ and a real number $x$,
 
 $$L_{m,e}(x) = \sum_{j=1}^{m} (2j - 1)^3 + x^3 + \sum_{j=1}^{m} (2j + jx)^3.$$
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLEven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-leven).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLEven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-leven).
 
 ## The even-case square $R_{m,e}$
 
@@ -288,7 +288,7 @@ $$R_{m,e}(x) = \bigl(T_{2m} + (1 + T_m)\,x\bigr)^2,$$
 
 where $T_n = n(n+1)/2$ is the $n$-th triangular number.
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusREven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-reven).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusREven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-reven).
 
 ## Faulhaber expansion of the odd-case polynomial
 
@@ -301,7 +301,7 @@ This is the polynomial in $m$ obtained from the sum defining the odd-case polyno
 $P_{m,o}(x)$ by the Faulhaber formulas for $\sum_{j=0}^{m} j^p$ with $p \le 3$; it agrees with
 $P_{m,o}(x)$ at every natural number $m$.
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPClosed`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-pclosed).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPClosed`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-pclosed).
 
 ## The even-case polynomial $P_{m,e}$
 
@@ -310,7 +310,7 @@ $P_{m,e}(x) = \widetilde{P}(-m - 1, x)$, where $\widetilde{P}(m, x)$ is the Faul
 of the odd-case polynomial $P_{m,o}(x)$ as a polynomial in $m$ (the paper defines $P_{m,e}(x)$
 by substituting $-m - 1$ for $m$ in that expansion).
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPEven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-peven).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusPEven`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-peven).
 
 ## The Kim–Stolarsky convergents $\alpha_k$
 
@@ -322,7 +322,7 @@ For $k \ge 1$, $\alpha_k$ is the continued-fraction convergent $[1; 6, 3, \ldots
 $2k - 2$ partial quotients after the semicolon (Equation (12) of Kim and Stolarsky); the value
 $\alpha_0 = 0$ is a placeholder.
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-alpha).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-alpha).
 
 ## The Kim–Stolarsky integers $u_k$
 
@@ -334,7 +334,7 @@ $$\frac{1 + 502x + x^2}{(1 - x)(1 - 398x + x^2)}.$$
 For $k \ge 1$ these are the integers $u_k$ of Proposition 1 of Kim and Stolarsky; for $k = 0$ the
 exponent $k - 1$ is read as $0$, so $u_0 = u_1 = 1$.
 
-Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u).
+Formalized by `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU`, a definition declared in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u).
 
 ## Generalized Nicomachus identity, odd case
 
@@ -348,7 +348,7 @@ $$L_{m+1,o}(x) - R_{m+1,o}(x) = x \, P_{m,o}(x) - x^2 + x^3.$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLOdd_sub_ROdd_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-lodd-sub-rodd-succ-eq).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLOdd_sub_ROdd_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-lodd-sub-rodd-succ-eq).
 
 ## Generalized Nicomachus identity, even case
 
@@ -362,7 +362,7 @@ $$L_{m,e}(x) - R_{m,e}(x) = x \, P_{m,e}(x) - x^2 + x^3.$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLEven_sub_REven_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-leven-sub-reven-eq).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusLEven_sub_REven_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-leven-sub-reven-eq).
 
 ## Closed form for the Kim–Stolarsky integers $u_k$
 
@@ -376,7 +376,7 @@ $$u_k = \frac{5(10 - 3\sqrt{11})^{2k-1} + 5(10 + 3\sqrt{11})^{2k-1} - 56}{44}.$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Proposition 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU_eq_closedForm` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u-eq-closed-form).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU_eq_closedForm` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u-eq-closed-form).
 
 ## Recurrence for the Kim–Stolarsky integers $u_k$
 
@@ -390,7 +390,7 @@ $$u_{k+1} = 252 + 199u_k + 30\sqrt{(3 + 2u_k)(23 + 22u_k)}.$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Proposition 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u-succ-eq).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-u-succ-eq).
 
 ## The convergents $\alpha_k$ in terms of the integers $u_k$
 
@@ -406,7 +406,7 @@ $$\alpha_k = \frac{-1 + \sqrt{11 - \frac{10}{3 + 2u_k}}}{2}.$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Proposition 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-alpha-eq).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#nicomachus-alpha-eq).
 
 ## Kim–Stolarsky balanced quadratic sum
 
@@ -423,7 +423,7 @@ T_{m-1}\left(\frac{(1 + m)(2 - 3m^2)}{3(3 + 2u_k)} + (3 + 2m)\,T_{m-1}\right).$$
 
 - Seon-Hong Kim and Kenneth B. Stolarsky, "A Balanced Three or More-term Generalization of Nicomachus' Identity", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.sum_quadratic_mul_quadratic_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#sum-quadratic-mul-quadratic-eq).
+Stated but not proved: `MathlibExt.NumberTheory.NicomachusGeneralizationWanted.sum_quadratic_mul_quadratic_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NicomachusGeneralizationWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html#sum-quadratic-mul-quadratic-eq).
 
 ## Depends on
 
@@ -432,4 +432,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nicomachus's theorem and its generalizations](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/nicomachus-s-theorem-and-its-generalizations)

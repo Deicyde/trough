@@ -1,35 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.IsAffineOpen.isLocalization_totalQuotientPresheaf_obj, AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isReduced, AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isReduced, Stacks.AlgebraicGeometry.GenericPointCoproduct.meromorphicFunctions_iso_coproduct_genericPointStalks, Stacks.AlgebraicGeometry.GenericPointProduct.meromorphicFunctions_iso_product_genericPointStalks, AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks_of_isReduced, AlgebraicGeometry.nonempty_meromorphicSections_iso_product_genericPointStalks_of_isReduced, AlgebraicGeometry.nonempty_meromorphicSections_iso_coproduct_genericPointStalks_of_isReduced
+lean: AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isReduced, AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isReduced, Stacks.AlgebraicGeometry.GenericPointCoproduct.meromorphicFunctions_iso_coproduct_genericPointStalks, Stacks.AlgebraicGeometry.GenericPointProduct.meromorphicFunctions_iso_product_genericPointStalks, AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks_of_isReduced, AlgebraicGeometry.nonempty_meromorphicSections_iso_product_genericPointStalks_of_isReduced, AlgebraicGeometry.nonempty_meromorphicSections_iso_coproduct_genericPointStalks_of_isReduced, AlgebraicGeometry.meromorphicSections_isQuasicoherent_of_isReduced
 statement: formalized
 proof: formalized
 ---
 
 # 31.26 Meromorphic functions and sections; reduced case
 
-Section 31.26 of the Stacks Project, [Tag 0EMJ](https://stacks.math.columbia.edu/tag/0EMJ). 4 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.26 of the Stacks Project, [Tag 0EMJ](https://stacks.math.columbia.edu/tag/0EMJ). 4 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02OW, a lemma
 
 [Tag 02OW](https://stacks.math.columbia.edu/tag/02OW) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAffineOpen.isLocalization_totalQuotientPresheaf_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean#L56). The attribute's comment: “part (5)”.
-
-> On an affine open of any scheme, the meromorphic functions form the total quotient ring of
-> the ring of regular functions: the localization at all nonzerodivisors.
-
-```lean
-theorem IsAffineOpen.isLocalization_totalQuotientPresheaf_obj
-    {X : Scheme.{u}} {U : X.Opens} (hU : IsAffineOpen U) :
-    letI : Algebra Γ(X, U)
-        ((X.presheaf.totalQuotientPresheaf).obj (Opposite.op U)) :=
-      (X.presheaf.toTotalQuotientPresheaf.app (Opposite.op U)).hom.toAlgebra
-    IsLocalization (nonZeroDivisors Γ(X, U))
-      ((X.presheaf.totalQuotientPresheaf).obj (Opposite.op U))
-```
-
-**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean#L76). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean#L78). The attribute's comment: “part (3)”.
 
 > On a reduced scheme whose quasi-compact opens have finitely many irreducible components,
 > the germs of regular sections at every point are exactly the nonzerodivisors in its local
@@ -46,7 +31,7 @@ theorem regularSectionGerms_eq_nonZeroDivisors_of_isReduced (X : Scheme.{u}) [Is
       nonZeroDivisors (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean#L91). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksReduced.lean#L93). The attribute's comment: “part (4)”.
 
 > On a reduced scheme whose quasi-compact opens have finitely many irreducible components,
 > the stalk of the presheaf of meromorphic functions at any point is the total quotient ring of
@@ -62,7 +47,7 @@ theorem stalk_totalQuotientPresheaf_isFractionRing_of_isReduced (X : Scheme.{u})
     IsFractionRing (X.presheaf.stalk x) (X.presheaf.totalQuotientPresheaf.stalk x)
 ```
 
-**`Stacks.AlgebraicGeometry.GenericPointCoproduct.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericPointCoproduct/Decomposition.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericPointCoproduct/Decomposition.lean#L104). The attribute's comment: “generic-point direct sum”.
+**`Stacks.AlgebraicGeometry.GenericPointCoproduct.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericPointCoproduct/Decomposition.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericPointCoproduct/Decomposition.lean#L106). The attribute's comment: “generic-point direct sum”.
 
 > **Stacks Project, Tag 02OW.** On a reduced scheme whose quasi-compact opens have finitely
 > many irreducible components, the `𝒪_X`-module of meromorphic functions is the direct sum, over
@@ -76,7 +61,7 @@ theorem meromorphicFunctions_iso_coproduct_genericPointStalks (X : Scheme.{u}) [
       ∐ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`Stacks.AlgebraicGeometry.GenericPointProduct.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericPointProduct/Decomposition.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericPointProduct/Decomposition.lean#L63). The attribute's comment: “generic-point product”.
+**`Stacks.AlgebraicGeometry.GenericPointProduct.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericPointProduct/Decomposition.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericPointProduct/Decomposition.lean#L63). The attribute's comment: “generic-point product”.
 
 > **Stacks Project, Tag 02OW.** On a reduced scheme whose quasi-compact opens have finitely many
 > irreducible components, the `𝒪_X`-module of meromorphic functions is the product, over the generic
@@ -90,7 +75,7 @@ theorem meromorphicFunctions_iso_product_genericPointStalks (X : Scheme.{u}) [Is
       ∏ᶜ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L259). The attribute's comment: “generic-point direct sum”.
+**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L259). The attribute's comment: “generic-point direct sum”.
 
 > **Stacks 02OW, displayed direct-sum decomposition.** On a reduced scheme whose quasi-compact
 > opens have finitely many irreducible components, the `𝒪_X`-module of meromorphic functions is the
@@ -104,7 +89,7 @@ theorem meromorphicFunctions_iso_coproduct_genericPointStalks_of_isReduced (X : 
       ∐ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`AlgebraicGeometry.nonempty_meromorphicSections_iso_product_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L664). The attribute's comment: “part (2), product”.
+**`AlgebraicGeometry.nonempty_meromorphicSections_iso_product_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L666). The attribute's comment: “part (2), product”.
 
 > **Stacks 02OW, part (2), product decomposition.** On a reduced scheme whose quasi-compact
 > opens have finitely many irreducible components, the sheaf of meromorphic sections of a
@@ -120,7 +105,7 @@ theorem nonempty_meromorphicSections_iso_product_genericPointStalks_of_isReduced
       ∏ᶜ fun η : genericPoints X ↦ genericPointStalkModuleOf X F η)
 ```
 
-**`AlgebraicGeometry.nonempty_meromorphicSections_iso_coproduct_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L675). The attribute's comment: “part (2), direct sum”.
+**`AlgebraicGeometry.nonempty_meromorphicSections_iso_coproduct_genericPointStalks_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L677). The attribute's comment: “part (2), direct sum”.
 
 > **Stacks 02OW, part (2), direct-sum decomposition.**
 
@@ -133,7 +118,7 @@ theorem nonempty_meromorphicSections_iso_coproduct_genericPointStalks_of_isReduc
       ∐ fun η : genericPoints X ↦ genericPointStalkModuleOf X F η)
 ```
 
-**`AlgebraicGeometry.meromorphicSections_isQuasicoherent_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L686). The attribute's comment: “part (2), quasi-coherence”.
+**`AlgebraicGeometry.meromorphicSections_isQuasicoherent_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L688). The attribute's comment: “part (2), quasi-coherence”.
 
 > **Stacks 02OW, part (2), quasi-coherence.**
 
@@ -145,7 +130,24 @@ theorem meromorphicSections_isQuasicoherent_of_isReduced
     (meromorphicSections X F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicQuasicoherent.meromorphicFunctions_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean#L71). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isLocalization_totalQuotientSheaf_obj_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L701). The attribute's comment: “part (5)”.
+
+> **Part (5) of [Stacks, Tag 02OW].** On an affine open `U` of a reduced scheme whose
+> quasi-compact opens have finitely many irreducible components, the sections `K_X(U)` of the
+> *sheaf* of meromorphic functions are the total quotient ring of `Γ(X, U)`, that is, its
+> localization at its nonzerodivisors.
+
+```lean
+theorem isLocalization_totalQuotientSheaf_obj_of_isReduced
+    (X : Scheme.{u}) [IsReduced X]
+    (hfinite : ∀ U : X.Opens, IsCompact (U : Set X) → (irreducibleComponents U).Finite)
+    {U : X.Opens} (hU : IsAffineOpen U) :
+    letI : Algebra Γ(X, U) (X.totalQuotientSheaf.obj.obj (op U)) :=
+      (X.toTotalQuotientSheaf.hom.app (op U)).hom.toAlgebra
+    IsLocalization (nonZeroDivisors Γ(X, U)) (X.totalQuotientSheaf.obj.obj (op U))
+```
+
+**`Stacks.AlgebraicGeometry.MeromorphicQuasicoherent.meromorphicFunctions_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean#L71). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 02OW, part (1).** On a reduced scheme whose quasi-compact opens have
 > finitely many irreducible components, the sheaf of meromorphic functions is quasi-coherent.
@@ -156,7 +158,7 @@ theorem meromorphicFunctions_isQuasicoherent (X : Scheme.{u}) [IsReduced X]
     (meromorphicFunctions X).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicSectionsTensor.meromorphicSections_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicSectionsTensor/Quasicoherent.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicSectionsTensor/Quasicoherent.lean#L78). The attribute's comment: “part (2), quasi-coherence”.
+**`Stacks.AlgebraicGeometry.MeromorphicSectionsTensor.meromorphicSections_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicSectionsTensor/Quasicoherent.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicSectionsTensor/Quasicoherent.lean#L79). The attribute's comment: “part (2), quasi-coherence”.
 
 > **Stacks Project, Tag 02OW, part (2), quasi-coherence.** On a reduced scheme whose
 > quasi-compact opens have finitely many irreducible components, the sheaf of meromorphic sections
@@ -169,7 +171,7 @@ theorem meromorphicSections_isQuasicoherent (X : Scheme.{u}) [IsReduced X]
     (meromorphicSections X F).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean#L647). The attribute's comment: “part (6)”. References: EGA IV (20.2.13), “(ii) global sections”; EGA I (7.1.3), “special case”.
+**`AlgebraicGeometry.exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean#L647). The attribute's comment: “part (6)”. References: EGA IV (20.2.13), “(ii) global sections”; EGA I (7.1.3), “special case”.
 
 > **Part (6) of [Stacks, Tag 02OW].** On a reduced scheme whose quasi-compact opens have
 > finitely many irreducible components, the ring of rational functions is the ring of global
@@ -186,7 +188,7 @@ theorem exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top_of_is
         Nonempty (X.rationalFunctions ≃+* X.totalQuotientSheaf.presheaf.obj (op ⊤))
 ```
 
-**`Stacks.AlgebraicGeometry.ReducedTotalQuotient.regularSectionGerms_eq_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean#L74). The attribute's comment: “part (3)”.
+**`Stacks.AlgebraicGeometry.ReducedTotalQuotient.regularSectionGerms_eq_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean#L78). The attribute's comment: “part (3)”.
 
 > Germs of regular sections are precisely the nonzerodivisors.
 
@@ -201,7 +203,7 @@ theorem regularSectionGerms_eq_nonZeroDivisors
       nonZeroDivisors (X.presheaf.stalk x)
 ```
 
-**`Stacks.AlgebraicGeometry.ReducedTotalQuotient.stalk_totalQuotientPresheaf_isFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean#L87). The attribute's comment: “part (4)”.
+**`Stacks.AlgebraicGeometry.ReducedTotalQuotient.stalk_totalQuotientPresheaf_isFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean#L91). The attribute's comment: “part (4)”.
 
 > A stalk of the meromorphic-function sheaf is the total quotient ring of the local ring.
 
@@ -216,27 +218,11 @@ theorem stalk_totalQuotientPresheaf_isFractionRing
       (X.presheaf.totalQuotientPresheaf.stalk x)
 ```
 
-**`Stacks.AlgebraicGeometry.ReducedTotalQuotient.isLocalization_totalQuotientPresheaf_obj_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReducedTotalQuotient/Basic.lean#L100). The attribute's comment: “part (5)”.
-
-> Meromorphic functions on an affine open form the total quotient ring of its functions.
-
-```lean
-theorem isLocalization_totalQuotientPresheaf_obj_of_isAffineOpen
-    (X : Scheme.{u}) [IsReduced X]
-    (_hfinite : FiniteComponentsOnCompactOpens X)
-    (U : X.Opens) (hU : IsAffineOpen U) :
-    letI : Algebra Γ(X, U)
-        ((X.presheaf.totalQuotientPresheaf).obj (Opposite.op U)) :=
-      (X.presheaf.toTotalQuotientPresheaf.app (Opposite.op U)).hom.toAlgebra
-    IsLocalization (nonZeroDivisors Γ(X, U))
-      ((X.presheaf.totalQuotientPresheaf).obj (Opposite.op U))
-```
-
 ## Tag 035T, a lemma
 
 [Tag 035T](https://stacks.math.columbia.edu/tag/035T) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.normalizationGluedSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L393). The attribute's comment: “the normalization carries the charts of the relative spectrum”. References: EGA II (7.4.6), “special case”.
+**`AlgebraicGeometry.Scheme.normalizationGluedSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L393). The attribute's comment: “the normalization carries the charts of the relative spectrum”. References: EGA II (7.4.6), “special case”.
 
 > **Stacks Project, Tag 035T.** The normalization of a reduced scheme whose quasi-compact
 > opens have finitely many irreducible components, carrying the charts that present it as a
@@ -248,7 +234,7 @@ def normalizationGluedSpectrum (X : Scheme.{u}) [IsReduced X]
     GluedSpectrum (X.meromorphicIntegralClosureSituation hfinite)
 ```
 
-**`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L407). The attribute's comment: “the comparison isomorphism”. References: EGA II (7.4.6), “special case”.
+**`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L407). The attribute's comment: “the comparison isomorphism”. References: EGA II (7.4.6), “special case”.
 
 > **Stacks Project, Tag 035T.** For a reduced scheme whose quasi-compact opens have finitely
 > many irreducible components, the normalization is the relative spectrum of the integral closure
@@ -261,7 +247,7 @@ def normalizationIsoMeromorphicSpectrum (X : Scheme.{u}) [IsReduced X]
       (gluedSpectrum (X.meromorphicIntegralClosureSituation hfinite)).scheme
 ```
 
-**`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum_hom_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L417). The attribute's comment: “the normalization is the structure morphism of the relative spectrum”.
+**`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum_hom_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L417). The attribute's comment: “the normalization is the structure morphism of the relative spectrum”.
 
 > **Stacks Project, Tag 035T.** The comparison isomorphism lies over `X`: the normalization
 > morphism `ν : X^ν ⟶ X` is the structure morphism of the relative spectrum of `𝒪'`.
@@ -278,7 +264,7 @@ theorem normalizationIsoMeromorphicSpectrum_hom_toBase (X : Scheme.{u}) [IsReduc
 
 [Tag 01X5](https://stacks.math.columbia.edu/tag/01X5) in the Stacks Project.
 
-**`AlgebraicGeometry.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean#L628). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
+**`AlgebraicGeometry.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean#L628). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
 
 > An isomorphism between the sheaf of meromorphic functions on an integral scheme and the
 > constant sheaf on its function field, carrying a regular section to the constant section
@@ -297,7 +283,7 @@ noncomputable def totalQuotientSheafIsoConstant (X : Scheme.{u}) [IsIntegral X] 
             (X.presheaf.germ U (genericPoint X) h s) }
 ```
 
-**`AlgebraicGeometry.nonempty_meromorphicSectionSheafIsoConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MeromorphicSectionsConstant.lean, line 985](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MeromorphicSectionsConstant.lean#L985). The attribute's comment: “part (2)”. References: EGA I (7.3.6), “integral case”.
+**`AlgebraicGeometry.nonempty_meromorphicSectionSheafIsoConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MeromorphicSectionsConstant.lean, line 985](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MeromorphicSectionsConstant.lean#L985). The attribute's comment: “part (2)”. References: EGA I (7.3.6), “integral case”.
 
 > On an integral scheme the sheaf of meromorphic sections of a quasi-coherent module `F` is the
 > constant sheaf on the stalk of `F` at the generic point, read as a sheaf of modules over the sheaf
@@ -322,7 +308,7 @@ theorem nonempty_meromorphicSectionSheafIsoConstant [F.IsQuasicoherent] :
             (F.presheaf.germ U (genericPoint X) h m) }
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicConstant.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean#L417). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
+**`Stacks.AlgebraicGeometry.MeromorphicConstant.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean#L417). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
 
 > On an integral scheme the sheaf of meromorphic functions is the constant sheaf with value the
 > function field, by an isomorphism carrying the image of a regular function to the constant
@@ -339,7 +325,7 @@ noncomputable def totalQuotientSheafIsoConstant :
             (X.presheaf.germ U (genericPoint X) h s) }
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicConstantModule.meromorphicSectionSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstantModule/Basic.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicConstantModule/Basic.lean#L572). The attribute's comment: “part (2)”.
+**`Stacks.AlgebraicGeometry.MeromorphicConstantModule.meromorphicSectionSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstantModule/Basic.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicConstantModule/Basic.lean#L569). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 01X5, part (2).** On an integral scheme the sheaf of meromorphic
 > sections of a quasi-coherent module `F` is the constant sheaf of modules with value the stalk of
@@ -358,7 +344,7 @@ noncomputable def meromorphicSectionSheafIsoConstant :
 
 [Tag 02OZ](https://stacks.math.columbia.edu/tag/02OZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistence.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistence.lean#L160). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistence.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistence.lean#L160). The attribute's comment: “part (1)”.
 
 > An invertible sheaf of modules on an integral scheme has a regular meromorphic section.
 
@@ -368,7 +354,7 @@ theorem exists_isRegularMeromorphicSection_of_isIntegral
     ∃ s : MeromorphicSection X.sheaf F, IsRegularMeromorphicSection X.sheaf F s
 ```
 
-**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean#L138). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean#L138). The attribute's comment: “part (2)”.
 
 > **Stacks 02OZ, part (2).** An invertible sheaf of modules on a reduced scheme every
 > quasi-compact open of which has finitely many irreducible components has a regular meromorphic
@@ -381,7 +367,7 @@ theorem exists_isRegularMeromorphicSection_of_isReduced (X : Scheme.{u}) [IsRedu
     ∃ s : MeromorphicSection X.sheaf L, IsRegularMeromorphicSection X.sheaf L s
 ```
 
-**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean#L148). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSectionExistenceReduced.lean#L148). The attribute's comment: “part (3)”.
 
 > **Stacks 02OZ, part (3).** An invertible sheaf of modules on a locally Noetherian scheme
 > without embedded points has a regular meromorphic section.
@@ -393,7 +379,7 @@ theorem exists_isRegularMeromorphicSection_of_noEmbeddedPoints (X : Scheme.{u})
     ∃ s : MeromorphicSection X.sheaf L, IsRegularMeromorphicSection X.sheaf L s
 ```
 
-**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_hasNoEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/RegularSectionExistence.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/RegularSectionExistence.lean#L450). The attribute's comment: “case (3), X locally Noetherian without embedded points”.
+**`AlgebraicGeometry.exists_isRegularMeromorphicSection_of_hasNoEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/RegularSectionExistence.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/RegularSectionExistence.lean#L451). The attribute's comment: “case (3), X locally Noetherian without embedded points”.
 
 > **[Stacks, Tag 0EMI]**, which is case (3) of [Stacks, Tag 02OZ]. An invertible sheaf of
 > modules on a locally Noetherian scheme without embedded points has a regular meromorphic
@@ -413,4 +399,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.26, Tag 0EMJ](https://stacks.math.columbia.edu/tag/0EMJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

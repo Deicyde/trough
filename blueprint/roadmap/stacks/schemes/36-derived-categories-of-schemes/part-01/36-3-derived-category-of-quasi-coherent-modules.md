@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.3 Derived category of quasi-coherent modules
 
-Section 36.3 of the Stacks Project, [Tag 06YZ](https://stacks.math.columbia.edu/tag/06YZ). 10 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.3 of the Stacks Project, [Tag 06YZ](https://stacks.math.columbia.edu/tag/06YZ). 10 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06VT, an equation
 
 [Tag 06VT](https://stacks.math.columbia.edu/tag/06VT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L122). The attribute's comment: “comparison functor”.
+**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L122). The attribute's comment: “comparison functor”.
 
 > **Stacks 06VT.** The canonical comparison functor `D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` from the
 > derived category of quasi-coherent `𝒪_X`-modules to the complexes of `𝒪_X`-modules with
@@ -28,7 +28,7 @@ def derivedQuasicoherentComparison :
         (SheafOfModules.isQuasicoherent X.ringCatSheaf)).FullSubcategory
 ```
 
-**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparisonCommShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L132). The attribute's comment: “shift compatibility”.
+**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparisonCommShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L132). The attribute's comment: “shift compatibility”.
 
 > **Stacks 06VT.** The comparison functor is compatible with translation of complexes.
 
@@ -37,7 +37,7 @@ instance derivedQuasicoherentComparisonCommShift :
     (derivedQuasicoherentComparison.{w} X).CommShift ℤ
 ```
 
-**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparisonIsTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L141). The attribute's comment: “exactness”.
+**`Stacks.AlgebraicGeometry.QuasicoherentDerived.derivedQuasicoherentComparisonIsTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/WeakSerre/DerivedComparison.lean#L141). The attribute's comment: “exactness”.
 
 > **Stacks 06VT.** The comparison functor preserves distinguished triangles, so it is an exact
 > functor of triangulated categories.
@@ -51,7 +51,7 @@ instance derivedQuasicoherentComparisonIsTriangulated :
 
 [Tag 08DT](https://stacks.math.columbia.edu/tag/08DT) in the Stacks Project.
 
-**`AlgebraicGeometry.hasCoproducts_quasicoherentDerivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DirectSums.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DirectSums.lean#L121).
+**`AlgebraicGeometry.hasCoproducts_quasicoherentDerivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DirectSums.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DirectSums.lean#L121).
 
 > The derived category of `𝒪_X`-modules with quasi-coherent cohomology has direct sums.
 
@@ -64,7 +64,7 @@ instance hasCoproducts_quasicoherentDerivedCategory (X : Scheme.{u}) :
 
 [Tag 0A0J](https://stacks.math.columbia.edu/tag/0A0J) in the Stacks Project.
 
-**`AlgebraicGeometry.cohomology_isLimit_of_isDerivedLimit_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L166). The attribute's comment: “cohomology\_limit”.
+**`AlgebraicGeometry.cohomology_isLimit_of_isDerivedLimit_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L166). The attribute's comment: “cohomology\_limit”.
 
 > **Stacks Project, Tag 0A0J.** The degree-`q` cohomology sheaf of a derived inverse limit of
 > a tower with quasi-coherent cohomology and surjective transition maps on cohomology is the
@@ -99,7 +99,7 @@ public theorem cohomology_isLimit_of_isDerivedLimit_of_epi
       Nonempty (IsLimit (Cone.mk _ τ))
 ```
 
-**`AlgebraicGeometry.isDerivedLimit_single_limit_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L271). The attribute's comment: “derived\_limit\_sheaves”.
+**`AlgebraicGeometry.isDerivedLimit_single_limit_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L271). The attribute's comment: “derived\_limit\_sheaves”.
 
 > **Stacks Project, Tag 0A0J.** For a tower with quasi-coherent cohomology and surjective
 > transition maps on cohomology, the ordinary inverse limit of each tower of cohomology sheaves,
@@ -123,7 +123,7 @@ public theorem isDerivedLimit_single_limit_homology
         ((DerivedCategory.singleFunctor X.Modules 0).obj (limit F))
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_limit_homology_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L295). The attribute's comment: “affine\_limit\_acyclic”.
+**`AlgebraicGeometry.isZero_cohomology_limit_homology_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/DerivedLimitQuasiCoherent.lean#L295). The attribute's comment: “affine\_limit\_acyclic”.
 
 > **Stacks Project, Tag 0A0J.** The inverse limit of a degreewise-surjective tower of
 > quasi-coherent cohomology sheaves has no higher cohomology on an affine open.
@@ -147,7 +147,7 @@ public theorem isZero_cohomology_limit_homology_of_isAffineOpen
 
 [Tag 08D3](https://stacks.math.columbia.edu/tag/08D3) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_to_isDerivedLimit_truncGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/QuasicoherentTruncationConvergence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/QuasicoherentTruncationConvergence.lean#L87).
+**`AlgebraicGeometry.isIso_to_isDerivedLimit_truncGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/QuasicoherentTruncationConvergence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/QuasicoherentTruncationConvergence.lean#L87).
 
 > **Stacks 08D3.** A complex of `𝒪_X`-modules on a scheme whose cohomology sheaves are all
 > quasi-coherent is canonically isomorphic to the derived inverse limit of the tower of its
@@ -185,7 +185,7 @@ theorem isIso_to_isDerivedLimit_truncGETower
     IsIso c
 ```
 
-**`AlgebraicGeometry.isIso_of_isDerivedLimit_truncGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/TruncationTower.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/TruncationTower.lean#L102).
+**`AlgebraicGeometry.isIso_of_isDerivedLimit_truncGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/TruncationTower.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/TruncationTower.lean#L102).
 
 > Let `X` be a scheme and let `E` be an object of `D(𝒪_X)` whose cohomology sheaves are all
 > quasi-coherent. Then the canonical map from `E` to a derived limit `L` of the tower
@@ -218,7 +218,7 @@ theorem isIso_of_isDerivedLimit_truncGETower
 
 [Tag 08D4](https://stacks.math.columbia.edu/tag/08D4) in the Stacks Project.
 
-**`Stacks.QuasicoherentAmplitude.isGE_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L481). The attribute's comment: “part (3), lower bound”.
+**`Stacks.QuasicoherentAmplitude.isGE_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L481). The attribute's comment: “part (3), lower bound”.
 
 > **[Stacks, Tag 08D4] part (3), lower bound.** A total right derived functor preserves a lower
 > cohomological bound on a complex with quasi-coherent cohomology.
@@ -242,7 +242,7 @@ theorem isGE_obj {B : Type*} [Category* B] [Abelian B] [HasDerivedCategory B]
     (a : ℤ) (hE : E.IsGE a) : (RF.obj E).IsGE a
 ```
 
-**`Stacks.QuasicoherentAmplitude.isLE_obj_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L504). The attribute's comment: “part (3), upper bound”.
+**`Stacks.QuasicoherentAmplitude.isLE_obj_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L504). The attribute's comment: “part (3), upper bound”.
 
 > **[Stacks, Tag 08D4] part (3), upper bound.** If the higher derived functors vanish from degree
 > `N` onward on quasi-coherent modules, a total right derived functor shifts an upper cohomological
@@ -268,7 +268,7 @@ theorem isLE_obj_of_isZero {B : Type*} [Category* B] [Abelian B]
     (b : ℤ) (hE : E.IsLE b) : (RF.obj E).IsLE (b + (N : ℤ) - 1)
 ```
 
-**`Stacks.QuasicoherentAmplitude.isIso_homology_map_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L530). The attribute's comment: “part (1)”.
+**`Stacks.QuasicoherentAmplitude.isIso_homology_map_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L530). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 08D4] part (1).** A total right derived functor agrees in degrees at most `a` on
 > a complex with quasi-coherent cohomology and its canonical truncation in degrees at most `a`.
@@ -295,7 +295,7 @@ theorem isIso_homology_map_truncLE {B : Type*} [Category* B] [Abelian B]
       (RF.map ((DerivedCategory.TStructure.t.truncLEι a).app E)))
 ```
 
-**`Stacks.QuasicoherentAmplitude.isIso_homology_map_truncGE_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L572). The attribute's comment: “part (2)”.
+**`Stacks.QuasicoherentAmplitude.isIso_homology_map_truncGE_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/QuasicoherentAmplitude.lean#L572). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 08D4] part (2).** If the higher derived functors vanish from degree `N` onward
 > on quasi-coherent modules, then in degrees at least `b` a total right derived functor agrees on a
@@ -328,7 +328,7 @@ theorem isIso_homology_map_truncGE_of_isZero {B : Type*} [Category* B] [Abelian 
       (RF.map ((DerivedCategory.TStructure.t.truncGEπ (b - (N : ℤ) + 1)).app E)))
 ```
 
-**`AlgebraicGeometry.isGE_rightDerivedFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean#L102). The attribute's comment: “part (3), lower bound”.
+**`AlgebraicGeometry.isGE_rightDerivedFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean#L102). The attribute's comment: “part (3), lower bound”.
 
 > A total right derived functor of an additive functor out of the `𝒪_X`-modules of a scheme
 > preserves the lower end of the range of degrees in which an object with quasi-coherent cohomology
@@ -342,7 +342,7 @@ theorem isGE_rightDerivedFunctor_obj
     (a : ℤ) (hE : E.IsGE a) : (RF.obj E).IsGE a
 ```
 
-**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncLEι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean#L116). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncLEι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/DerivedBounds.lean#L116). The attribute's comment: “part (1)”.
 
 > A total right derived functor of an additive functor out of the `𝒪_X`-modules of a scheme
 > agrees in degrees at most `a` on an object with quasi-coherent cohomology and on its canonical
@@ -358,7 +358,7 @@ theorem isIso_homologyFunctor_map_rightDerivedFunctor_truncLEι
       (RF.map ((DerivedCategory.TStructure.t.truncLEι a).app E)))
 ```
 
-**`AlgebraicGeometry.isLE_rightDerivedFunctor_obj_of_isZero_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean#L531). The attribute's comment: “part (3), upper bound”.
+**`AlgebraicGeometry.isLE_rightDerivedFunctor_obj_of_isZero_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean#L531). The attribute's comment: “part (3), upper bound”.
 
 > **Stacks Project, Tag 08D4, part (3), the upper bound.** Let `X` be a scheme, let `F` be an
 > additive functor out of the `𝒪_X`-modules which preserves countable products, and let `RF` be a
@@ -385,7 +385,7 @@ theorem isLE_rightDerivedFunctor_obj_of_isZero_rightDerivedPlus (N : ℕ)
     (b : ℤ) (hE : E.IsLE b) : (RF.obj E).IsLE (b + (N : ℤ) - 1)
 ```
 
-**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_of_isZero_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean#L606). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_of_isZero_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/AffineVanishing/UpperBounds.lean#L606). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 08D4, part (2).** In the situation of
 > `AlgebraicGeometry.isLE_rightDerivedFunctor_obj_of_isZero_rightDerivedPlus`, the canonical
@@ -411,7 +411,7 @@ theorem isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_of_isZero_rightD
       (RF.map ((DerivedCategory.TStructure.t.truncGEπ (b - (N : ℤ) + 1)).app E)))
 ```
 
-**`AlgebraicGeometry.isLE_rightDerivedFunctor_obj_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean#L298). The attribute's comment: “part (3), upper bound”.
+**`AlgebraicGeometry.isLE_rightDerivedFunctor_obj_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean#L298). The attribute's comment: “part (3), upper bound”.
 
 > **Stacks 08D4, part (3), the upper bound.** Let `X` be a scheme, let `F` be an additive
 > functor out of the `𝒪_X`-modules commuting with countable products, and let `(RF, alpha)` be a
@@ -430,7 +430,7 @@ theorem isLE_rightDerivedFunctor_obj_addCommGrpCat (E : DerivedCategory X.Module
     (b : ℤ) (hE : E.IsLE b) : (RF.obj E).IsLE (b + (N : ℤ) - 1)
 ```
 
-**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean#L366). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/DerivedUpperBound.lean#L366). The attribute's comment: “part (2)”.
 
 > **Stacks 08D4, part (2).** With the hypotheses of the upper bound, in degrees at least `b` a
 > total right derived functor agrees on an object with quasi-coherent cohomology and on its
@@ -453,7 +453,7 @@ theorem isIso_homologyFunctor_map_rightDerivedFunctor_truncGEπ_addCommGrpCat
 
 [Tag 06Z0](https://stacks.math.columbia.edu/tag/06Z0) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_derivedTildeGlobalSectionsAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L130). The attribute's comment: “canonical unit isomorphism”.
+**`AlgebraicGeometry.isIso_derivedTildeGlobalSectionsAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L130). The attribute's comment: “canonical unit isomorphism”.
 
 > **The unit of the derived Spec–Γ adjunction is invertible.** For every object `M` of `D(R)`
 > the canonical map `M ⟶ RΓ(Spec R, M^~)` is an isomorphism.
@@ -467,7 +467,7 @@ theorem isIso_derivedTildeGlobalSectionsAdjunction_unit :
     IsIso (derivedTildeGlobalSectionsAdjunction R).val.unit
 ```
 
-**`AlgebraicGeometry.derivedTilde_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L233). The attribute's comment: “sheafification equivalence”.
+**`AlgebraicGeometry.derivedTilde_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L233). The attribute's comment: “sheafification equivalence”.
 
 > **Derived sheafification is an equivalence** `D(R) ≌ D_QCoh(𝒪_{Spec R})`. This is the
 > remaining content of [Stacks, Tag 06Z0] for the two edges `~` and (06VT) of its triangle.
@@ -479,7 +479,7 @@ theorem isIso_derivedTildeGlobalSectionsAdjunction_unit :
 instance derivedTilde_isEquivalence : (derivedTilde R).IsEquivalence
 ```
 
-**`AlgebraicGeometry.derivedGlobalSectionsQuasicoherent_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L242). The attribute's comment: “global sections equivalence”.
+**`AlgebraicGeometry.derivedGlobalSectionsQuasicoherent_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L242). The attribute's comment: “global sections equivalence”.
 
 > **Unbounded derived global sections `D_QCoh(𝒪_{Spec R}) ⥤ D(R)` is an equivalence**, being
 > right adjoint to the equivalence `AlgebraicGeometry.derivedTilde`. This is the `RΓ(X, -)` edge of
@@ -490,7 +490,7 @@ theorem derivedGlobalSectionsQuasicoherent_isEquivalence :
     (derivedGlobalSectionsQuasicoherent R).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isIso_derivedTildeGlobalSectionsAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L258). The attribute's comment: “canonical counit isomorphism”.
+**`AlgebraicGeometry.isIso_derivedTildeGlobalSectionsAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L258). The attribute's comment: “canonical counit isomorphism”.
 
 > **The counit of the derived Spec–Γ adjunction is invertible on `D_QCoh(𝒪_{Spec R})`.** For
 > every object `E` of `D(𝒪_{Spec R})` with quasi-coherent cohomology sheaves the canonical map
@@ -512,7 +512,7 @@ theorem isIso_derivedTildeGlobalSectionsAdjunction_counit_app
         (SheafOfModules.isQuasicoherent (Spec R).ringCatSheaf)).ι.obj E))
 ```
 
-**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L293). The attribute's comment: “comparison equivalence”.
+**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedEquivalence.lean#L293). The attribute's comment: “comparison equivalence”.
 
 > **The comparison functor of [Stacks, Tag 06VT] is an equivalence on an affine scheme.** The
 > canonical functor `D(QCoh(𝒪_{Spec R})) ⥤ D_QCoh(𝒪_{Spec R})` is an equivalence of triangulated
@@ -529,7 +529,7 @@ theorem derivedQuasicoherentComparison_isEquivalence (R : CommRingCat.{u}) :
     (derivedQuasicoherentComparison.{u} (Spec R)).IsEquivalence
 ```
 
-**`AlgebraicGeometry.AffineDerivedSections.full_derivedSectionsLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L212). The attribute's comment: “the left adjoint of derived global sections is fully faithful on an affine scheme”.
+**`AlgebraicGeometry.AffineDerivedSections.full_derivedSectionsLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L212). The attribute's comment: “the left adjoint of derived global sections is fully faithful on an affine scheme”.
 
 > **The left adjoint of `RΓ(S, -)` is full on an affine scheme**; see
 > `derivedSectionsLeftAdjointFullyFaithful`.
@@ -539,7 +539,7 @@ instance full_derivedSectionsLeftAdjoint :
     (derivedBaseExtension S.toRingedSpace).Full
 ```
 
-**`AlgebraicGeometry.AffineDerivedSections.faithful_derivedSectionsLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L219). The attribute's comment: “the left adjoint of derived global sections is fully faithful on an affine scheme”.
+**`AlgebraicGeometry.AffineDerivedSections.faithful_derivedSectionsLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L219). The attribute's comment: “the left adjoint of derived global sections is fully faithful on an affine scheme”.
 
 > **The left adjoint of `RΓ(S, -)` is faithful on an affine scheme**; see
 > `derivedSectionsLeftAdjointFullyFaithful`.
@@ -549,7 +549,7 @@ instance faithful_derivedSectionsLeftAdjoint :
     (derivedBaseExtension S.toRingedSpace).Faithful
 ```
 
-**`AlgebraicGeometry.AffineDerivedSections.essImage_derivedSectionsLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L235). The attribute's comment: “the essential image of that left adjoint is the quasi-coherent part”.
+**`AlgebraicGeometry.AffineDerivedSections.essImage_derivedSectionsLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedSectionsLeftAdjoint.lean#L235). The attribute's comment: “the essential image of that left adjoint is the quasi-coherent part”.
 
 > **Every complex of `𝒪_S`-modules with quasi-coherent cohomology sheaves is in the essential
 > image of the left adjoint of `RΓ(S, -)`,** `S` being affine. This is the predicate
@@ -569,7 +569,7 @@ theorem essImage_derivedSectionsLeftAdjoint
     (derivedBaseExtension S.toRingedSpace).essImage U
 ```
 
-**`Stacks.DerivedQCoh.derivedTildeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/Basic.lean#L164). The attribute's comment: “the tilde edge: D(A) ≌ D(QCoh(𝒪\_X))”.
+**`Stacks.DerivedQCoh.derivedTildeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/Basic.lean#L164). The attribute's comment: “the tilde edge: D(A) ≌ D(QCoh(𝒪\_X))”.
 
 > **Stacks Project, Tag 06Z0 (the tilde edge).** For `X = Spec A` the functor `M ↦ M^~` is an
 > equivalence of triangulated categories from `D(A)` to `D(QCoh(𝒪_X))`. This is the arrow labelled
@@ -584,7 +584,7 @@ def derivedTildeEquiv : DerivedCategory (ModuleCat.{u} R) ≌
     DerivedCategory (SheafOfModules.isQuasicoherent (Spec R).ringCatSheaf).FullSubcategory
 ```
 
-**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence_of_isAffine_atModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/ComparisonAffine.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/ComparisonAffine.lean#L306). The attribute's comment: “comparison equivalence, any affine scheme at any model”.
+**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence_of_isAffine_atModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/ComparisonAffine.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/ComparisonAffine.lean#L306). The attribute's comment: “comparison equivalence, any affine scheme at any model”.
 
 > **[Stacks, Tag 06Z0].** For every affine scheme `X` the comparison functor
 > `i_X : D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` of [Stacks, Tag 06VT] is an equivalence of triangulated
@@ -606,7 +606,7 @@ theorem derivedQuasicoherentComparison_isEquivalence_of_isAffine_atModel (X : Sc
     (derivedQuasicoherentComparison.{w} X).IsEquivalence
 ```
 
-**`AlgebraicGeometry.derivedGlobalSectionsHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean#L486). The attribute's comment: “degree-zero cohomology”.
+**`AlgebraicGeometry.derivedGlobalSectionsHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean#L486). The attribute's comment: “degree-zero cohomology”.
 
 > **Stacks 06Z0, degree-zero cohomology.** On an affine scheme the degree-zero cohomology of
 > derived global sections is the global sections of the degree-zero cohomology sheaf:
@@ -626,7 +626,7 @@ def derivedGlobalSectionsHomologyZeroIso :
           globalSectionsOver (𝟙 (Spec R))
 ```
 
-**`AlgebraicGeometry.globalSectionsCyclesToHomology_comp_derivedGlobalSectionsHomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean#L747). The attribute's comment: “canonical degree-zero comparison”.
+**`AlgebraicGeometry.globalSectionsCyclesToHomology_comp_derivedGlobalSectionsHomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/DegreeZeroCohomology.lean#L747). The attribute's comment: “canonical degree-zero comparison”.
 
 > **Stacks 06Z0, the canonical degree-zero comparison.** The degree-zero identification
 > `H⁰(RΓ(Spec R, E)) ≅ Γ(Spec R, H⁰(E))` of
@@ -657,7 +657,7 @@ theorem globalSectionsCyclesToHomology_comp_derivedGlobalSectionsHomologyZeroIso
       (globalSectionsOver (𝟙 (Spec R))).map (K.homologyπ 0)
 ```
 
-**`AlgebraicGeometry.derivedTildeGlobalSectionsAdjunction_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeCounit.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedTildeCounit.lean#L285). The attribute's comment: “canonical counit isomorphism”.
+**`AlgebraicGeometry.derivedTildeGlobalSectionsAdjunction_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeCounit.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedTildeCounit.lean#L285). The attribute's comment: “canonical counit isomorphism”.
 
 > **Stacks 06Z0, the counit clause.** On an affine scheme the counit of the canonical derived
 > sheafification–sections adjunction is invertible at every object of `D_QCoh(𝒪_{Spec R})`: derived
@@ -679,7 +679,7 @@ theorem derivedTildeGlobalSectionsAdjunction_counit_isIso (R : CommRingCat.{u})
 
 [Tag 08DV](https://stacks.math.columbia.edu/tag/08DV) in the Stacks Project.
 
-**`AlgebraicGeometry.kFlat_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeKFlat.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeKFlat.lean#L330).
+**`AlgebraicGeometry.kFlat_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeKFlat.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Modules/TildeKFlat.lean#L330).
 
 > **Stacks Project, Tag 08DV.** If `K` is a K-flat complex of `A`-modules, then `K̃` is a
 > K-flat complex of `𝒪_{Spec A}`-modules.
@@ -699,7 +699,7 @@ theorem kFlat_tilde (K : CochainComplex (ModuleCat.{u} A) ℤ)
 
 [Tag 0DJK](https://stacks.math.columbia.edu/tag/0DJK) in the Stacks Project.
 
-**`AlgebraicGeometry.affineDerivedPushforward_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean#L88). The attribute's comment: “pushforward route”.
+**`AlgebraicGeometry.affineDerivedPushforward_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean#L88). The attribute's comment: “pushforward route”.
 
 > **Stacks Project, Tag 0DJK.** Derived direct image under a morphism of affine schemes
 > preserves quasi-coherent cohomology.
@@ -718,7 +718,7 @@ public theorem affineDerivedPushforward_isQuasicoherent
       (Rf.obj K.obj)
 ```
 
-**`AlgebraicGeometry.affineDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean#L122). The attribute's comment: “commutativity”.
+**`AlgebraicGeometry.affineDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/AffineDerivedTildePushforward.lean#L122). The attribute's comment: “commutativity”.
 
 > **Stacks Project, Tag 0DJK.** The affine associated-sheaf/derived-pushforward square
 > commutes naturally: derived direct image corresponds to restriction of scalars.
@@ -735,7 +735,7 @@ public noncomputable def affineDerivedPushforwardIso
       (ModuleCat.restrictScalars φ.hom).mapDerivedCategory ⋙ affineTildeQuasicoherent R
 ```
 
-**`AlgebraicGeometry.derivedTildeCompDerivedQuasicoherentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/AffineDerivedPushforward.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/AffineDerivedPushforward.lean#L424).
+**`AlgebraicGeometry.derivedTildeCompDerivedQuasicoherentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/AffineDerivedPushforward.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/AffineDerivedPushforward.lean#L424).
 
 > **Stacks 0DJK.** Let `φ : R ⟶ S` and let `f = Spec φ : Spec S ⟶ Spec R`. Then the square
 > `D(S) ⟶ D_QCoh(𝒪_{Spec S}) ⟶^{Rf_*} D_QCoh(𝒪_{Spec R})`,
@@ -757,7 +757,7 @@ public def derivedTildeCompDerivedQuasicoherentPushforwardIso :
 
 [Tag 08DW](https://stacks.math.columbia.edu/tag/08DW) in the Stacks Project.
 
-**`AlgebraicGeometry.affineSchemePullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineSchemePullbackComparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineSchemePullbackComparison.lean#L92). The attribute's comment: “part (2) for a morphism of arbitrary affine schemes”.
+**`AlgebraicGeometry.affineSchemePullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineSchemePullbackComparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineSchemePullbackComparison.lean#L92). The attribute's comment: “part (2) for a morphism of arbitrary affine schemes”.
 
 > **[Stacks, Tag 08DW] part (2) for a morphism of arbitrary affine schemes.** Let `g : Y ⟶ X` be
 > a morphism of affine schemes, given by the ring map `g.appTop : Γ(X, ⊤) ⟶ Γ(Y, ⊤)`. Then the
@@ -781,7 +781,7 @@ def affineSchemePullbackComparison {X Y : Scheme.{u}} [IsAffine X] [IsAffine Y] 
         affineSchemeDerivedTilde Y
 ```
 
-**`Stacks.Duality.isQuasicoherent_homology_derivedPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L422). The attribute's comment: “part (1): derived pullback preserves quasi-coherence of cohomology”.
+**`Stacks.Duality.isQuasicoherent_homology_derivedPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L423). The attribute's comment: “part (1): derived pullback preserves quasi-coherence of cohomology”.
 
 > **[Stacks, Tag 08DW] part (1): `Lf^*` sends `D_QCoh(𝒪_Y)` into `D_QCoh(𝒪_X)`.** For an
 > arbitrary morphism of schemes `f : X ⟶ Y` and a complex `K` of `𝒪_Y`-modules all of whose
@@ -797,7 +797,7 @@ theorem isQuasicoherent_homology_derivedPullback' {X Y : Scheme.{u}} (f : X ⟶ 
       ((derivedPullback f).obj K.obj)).IsQuasicoherent
 ```
 
-**`Stacks.Duality.quasiCoherentDerivedPullback'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L435). The attribute's comment: “part (1): the restriction D\_QCoh(𝒪\_Y) ⥤ D\_QCoh(𝒪\_X) of derived pullback”.
+**`Stacks.Duality.quasiCoherentDerivedPullback'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L436). The attribute's comment: “part (1): the restriction D\_QCoh(𝒪\_Y) ⥤ D\_QCoh(𝒪\_X) of derived pullback”.
 
 > **[Stacks, Tag 08DW] part (1), as a functor.** Derived pullback along a morphism of schemes
 > restricts to a functor `D_QCoh(𝒪_Y) ⥤ D_QCoh(𝒪_X)` between the derived categories of complexes
@@ -811,7 +811,7 @@ abbrev quasiCoherentDerivedPullback' {X Y : Scheme.{u}} (f : X ⟶ Y) :
     quasiCoherentDerivedCategory Y ⥤ quasiCoherentDerivedCategory X
 ```
 
-**`Stacks.Duality.isQuasicoherent_homology_derivedPullback_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L479). The attribute's comment: “part (1) at an arbitrary model of the two derived categories”.
+**`Stacks.Duality.isQuasicoherent_homology_derivedPullback_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L480). The attribute's comment: “part (1) at an arbitrary model of the two derived categories”.
 
 > **[Stacks, Tag 08DW] part (1) at an arbitrary model of the two derived categories: `Lf^*`
 > sends `D_QCoh(𝒪_Y)` into `D_QCoh(𝒪_X)`.** For an arbitrary morphism of schemes `f : X ⟶ Y` and
@@ -840,14 +840,14 @@ theorem isQuasicoherent_homology_derivedPullback_anyModel {X Y : Scheme.{u}} (f 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.affinePullbackComparison`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePullbackComparison.lean#L334), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L525) (StacksFrontier): “part (2): the affine comparison square Lf^*(M̃^•) ≅ (S ⊗ᴸ\_R M^•)~”.
-- [`AlgebraicGeometry.affinePullbackComparison_fac`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePullbackComparison.lean#L349), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L528) (StacksFrontier): “part (2): the canonical normalisation of the affine comparison square”.
+- [`AlgebraicGeometry.affinePullbackComparison`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePullbackComparison.lean#L335), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L526) (StacksFrontier): “part (2): the affine comparison square Lf^*(M̃^•) ≅ (S ⊗ᴸ\_R M^•)~”.
+- [`AlgebraicGeometry.affinePullbackComparison_fac`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePullbackComparison.lean#L350), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedPullback.lean#L529) (StacksFrontier): “part (2): the canonical normalisation of the affine comparison square”.
 
 ## Tag 08DX, a lemma
 
 [Tag 08DX](https://stacks.math.columbia.edu/tag/08DX) in the Stacks Project.
 
-**`AlgebraicGeometry.affineTensorComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean#L250). The attribute's comment: “part (2): the totalised ordinary comparison”.
+**`AlgebraicGeometry.affineTensorComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean#L250). The attribute's comment: “part (2): the totalised ordinary comparison”.
 
 > **The totalised affine tensor comparison.** For complexes `M^•` and `K^•` of `R`-modules, the
 > complex of `𝒪_{Spec R}`-modules associated to the total tensor complex `Tot(M^• ⊗_R K^•)` is
@@ -874,7 +874,7 @@ public def affineTensorComplexIso (R : CommRingCat.{u})
               (sheafTensor.{u, u, u, u, u} (specCommRingSheaf R)) (ComplexShape.up ℤ) i j n h }
 ```
 
-**`AlgebraicGeometry.affineDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean#L343). The attribute's comment: “part (2): the affine comparison”.
+**`AlgebraicGeometry.affineDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedTensor.lean#L343). The attribute's comment: “part (2): the affine comparison”.
 
 > **Stacks Project, Tag 08DX, part (2).** On the spectrum of a commutative ring `R`, the
 > derived tensor product of two associated complexes of sheaves of modules is the complex
@@ -897,7 +897,7 @@ public def affineDerivedTensorIso (R : CommRingCat.{u})
           (R : Type u)).tensor.obj M).obj K)
 ```
 
-**`AlgebraicGeometry.affineDerivedTensorIsoStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDualizingPair.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDualizingPair.lean#L119). The attribute's comment: “part (2): the affine comparison, at the standard model”.
+**`AlgebraicGeometry.affineDerivedTensorIsoStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDualizingPair.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDualizingPair.lean#L119). The attribute's comment: “part (2): the affine comparison, at the standard model”.
 
 > On the spectrum of a commutative ring `R`, the derived tensor product of the complexes of
 > sheaves of modules associated to `M` and `K` is the complex associated to their derived tensor
@@ -914,7 +914,7 @@ def affineDerivedTensorIsoStandard (M K : DerivedCategory (ModuleCat.{u} R)) :
         (((canonicalDerivedTensorProduct (R : Type u)).tensor.obj M).obj K)
 ```
 
-**`Stacks.Duality.isQuasicoherent_homology_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean#L524). The attribute's comment: “part (1): D\_QCoh is closed under derived tensor product”.
+**`Stacks.Duality.isQuasicoherent_homology_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean#L524). The attribute's comment: “part (1): D\_QCoh is closed under derived tensor product”.
 
 > **[Stacks, Tag 08DX] part (1): `D_QCoh(𝒪_X)` is closed under the derived tensor product.**
 > Let `X` be a scheme and let `K` and `L` be complexes of `𝒪_X`-modules all of whose cohomology
@@ -930,7 +930,7 @@ theorem isQuasicoherent_homology_derivedTensor (X : Scheme.{u})
       (((derivedTensor X).obj K.obj).obj L.obj)).IsQuasicoherent
 ```
 
-**`Stacks.Duality.quasiCoherentDerivedTensor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean#L536). The attribute's comment: “part (1): the restriction D\_QCoh ⥤ D\_QCoh ⥤ D\_QCoh of the derived tensor product”.
+**`Stacks.Duality.quasiCoherentDerivedTensor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensor.lean#L536). The attribute's comment: “part (1): the restriction D\_QCoh ⥤ D\_QCoh ⥤ D\_QCoh of the derived tensor product”.
 
 > **[Stacks, Tag 08DX] part (1), as structure: the derived tensor product restricts to
 > `D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_X)`.** This is
@@ -943,7 +943,7 @@ abbrev quasiCoherentDerivedTensor (X : Scheme.{u}) :
       quasiCoherentDerivedCategory X
 ```
 
-**`Stacks.Duality.isQuasicoherent_homology_derivedTensor_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensorAnyModel.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensorAnyModel.lean#L113). The attribute's comment: “part (1) at an arbitrary model of the derived category”.
+**`Stacks.Duality.isQuasicoherent_homology_derivedTensor_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensorAnyModel.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/QuasiCoherentDerivedTensorAnyModel.lean#L113). The attribute's comment: “part (1) at an arbitrary model of the derived category”.
 
 > **[Stacks, Tag 08DX] part (1) at an arbitrary model of `D(𝒪_X)`: `D_QCoh(𝒪_X)` is closed
 > under the derived tensor product.**  For a scheme `X` and objects `E`, `A` of `D(𝒪_X)` all of
@@ -969,7 +969,7 @@ theorem isQuasicoherent_homology_derivedTensor_anyModel (X : Scheme.{u})
       (((derivedTensorProductFunctor X.toRingedSpace.sheaf).obj E).obj A)).IsQuasicoherent
 ```
 
-**`Stacks.Thickenings.isQuasicoherent_homology_specDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean#L244). The attribute's comment: “part (1) on an affine scheme, at the standard model of the derived category”.
+**`Stacks.Thickenings.isQuasicoherent_homology_specDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean#L244). The attribute's comment: “part (1) on an affine scheme, at the standard model of the derived category”.
 
 > **[Stacks, Tag 08DX] part (1) on an affine scheme, at the standard model.** If every
 > cohomology sheaf of `A` and of `B` is quasi-coherent, then so is every cohomology sheaf of
@@ -1000,4 +1000,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.3, Tag 06YZ](https://stacks.math.columbia.edu/tag/06YZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.14 Rig-closed points
 
-Section 88.14 of the Stacks Project, [Tag 0GG7](https://stacks.math.columbia.edu/tag/0GG7). 12 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.14 of the Stacks Project, [Tag 0GG7](https://stacks.math.columbia.edu/tag/0GG7). 12 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GG8, a lemma
 
 [Tag 0GG8](https://stacks.math.columbia.edu/tag/0GG8) in the Stacks Project.
 
-**`Rig.rigPoint_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean#L514).
+**`Rig.rigPoint_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean#L514).
 
 > The eight equivalent characterizations of a rig point in a Noetherian adic
 > topological ring.
@@ -45,7 +45,7 @@ public lemma rigPoint_tfae {A : Type*} [CommRing A] [TopologicalSpace A]
 
 [Tag 0GG9](https://stacks.math.columbia.edu/tag/0GG9) in the Stacks Project.
 
-**`Rig.Ideal.IsRigPointLocalCondition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean#L115). The attribute's comment: “rig-closed, via condition (8) of the rig-point criterion”.
+**`Rig.Ideal.IsRigPointLocalCondition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RigPointCriterion.lean#L115). The attribute's comment: “rig-closed, via condition (8) of the rig-point criterion”.
 
 > The local description in condition (8) of the rig-point criterion.  The
 > topology and completeness on the quotient are the ones induced from `A`.
@@ -55,7 +55,7 @@ public abbrev Ideal.IsRigPointLocalCondition {A : Type*} [CommRing A]
     [TopologicalSpace A] [IsTopologicalRing A] (q : Ideal A) [q.IsPrime] : Prop
 ```
 
-**`Rig.Ideal.IsRigClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigClosedPoint.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigClosedPoint.lean#L47).
+**`Rig.Ideal.IsRigClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigClosedPoint.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigClosedPoint.lean#L47).
 
 > A prime `q` of a topological ring is *rig-closed* if some ideal of definition is not
 > contained in `q` and `q` is maximal among the primes not containing it.
@@ -69,7 +69,7 @@ public def Ideal.IsRigClosed {A : Type u} [CommRing A] [TopologicalSpace A]
 
 [Tag 0GGA](https://stacks.math.columbia.edu/tag/0GGA) in the Stacks Project.
 
-**`Rig.exists_residueFieldMap_finiteType_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L99).
+**`Rig.exists_residueFieldMap_finiteType_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L99).
 
 > The residue field at a rig-closed point is of finite type over the quotient
 > of the source by its ideal of topologically nilpotent elements.
@@ -99,7 +99,7 @@ public lemma exists_residueFieldMap_finiteType_of_rigPoint
 
 [Tag 0GGB](https://stacks.math.columbia.edu/tag/0GGB) in the Stacks Project.
 
-**`Rig.rigPoint_relative_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L218).
+**`Rig.rigPoint_relative_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L218).
 
 > For an adic, topologically finite type morphism of Noetherian weakly
 > admissible rings, a rig-closed prime upstairs satisfies the relative
@@ -136,7 +136,7 @@ public lemma rigPoint_relative_tfae {A B : Type*} [CommRing A] [CommRing B]
 
 [Tag 0GGC](https://stacks.math.columbia.edu/tag/0GGC) in the Stacks Project.
 
-**`Rig.isRigPointLocalCondition_comap_of_isJacobsonRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L605).
+**`Rig.isRigPointLocalCondition_comap_of_isJacobsonRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RelativeCriterion.lean#L605).
 
 > Under a Jacobson reduction of the source, the inverse image of a rig-closed
 > prime along an adic topologically finite type morphism is rig-closed.
@@ -163,7 +163,7 @@ public theorem isRigPointLocalCondition_comap_of_isJacobsonRing_quotient
 
 [Tag 0GGD](https://stacks.math.columbia.edu/tag/0GGD) in the Stacks Project.
 
-**`Rig.rigPoint_lifts_iff_maximalIdeal_mem_specialFibre_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L94). The attribute's comment: “lifting criterion”.
+**`Rig.rigPoint_lifts_iff_maximalIdeal_mem_specialFibre_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L94). The attribute's comment: “lifting criterion”.
 
 > A rig-closed prime lifts along a flat adic map of topologically finite type
 > if and only if the closed point of its quotient is in the image on special
@@ -179,7 +179,6 @@ public theorem rigPoint_lifts_iff_maximalIdeal_mem_specialFibre_image
     (hB : TopologicalRing.IsWeaklyAdmissible B)
     (φ : A →+* B) (hφ : Continuous φ)
     (hadic : RingHom.IsAdic φ)
-    (hft : TopologicalRing.IsTopologicallyOfFiniteType φ)
     (hflat : φ.Flat)
     (p : Ideal A) [p.IsPrime]
     (hp : Ideal.IsClosedPointAwayFrom
@@ -196,7 +195,7 @@ public theorem rigPoint_lifts_iff_maximalIdeal_mem_specialFibre_image
           (topologicalNilradical B) q ∧ q.comap φ = p) )
 ```
 
-**`Rig.rigPoint_residueFieldMap_finite_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L311). The attribute's comment: “relative residue-field finiteness”.
+**`Rig.rigPoint_residueFieldMap_finite_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L310). The attribute's comment: “relative residue-field finiteness”.
 
 > At a rig-closed lift, the induced map from the reduction of `A` to the
 > residue field of `B / q` is finite.
@@ -228,7 +227,7 @@ public theorem rigPoint_residueFieldMap_finite_of_lift
               ((Ideal.Quotient.mk q).comp φ) ∧ ψ.Finite
 ```
 
-**`Rig.rigPoint_quotientMap_finite_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L341). The attribute's comment: “relative quotient finiteness”.
+**`Rig.rigPoint_quotientMap_finite_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L340). The attribute's comment: “relative quotient finiteness”.
 
 > At a rig-closed lift, the induced map on the quotients by the two primes
 > is finite.
@@ -258,7 +257,7 @@ public theorem rigPoint_quotientMap_finite_of_lift
 
 [Tag 0GGE](https://stacks.math.columbia.edu/tag/0GGE) in the Stacks Project.
 
-**`Rig.exists_completedAway_algEquiv_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean#L74). The attribute's comment: “independence of the ideal of definition”.
+**`Rig.exists_completedAway_algEquiv_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean#L74). The attribute's comment: “independence of the ideal of definition”.
 
 > The completed principal localization is independent of the ideal of definition used to
 > form it: for ideals of definition `I` and `J` the `I`-adic and `J`-adic completions of `A[1/f]`
@@ -275,13 +274,13 @@ public theorem exists_completedAway_algEquiv_of {I J : Ideal A}
 
 Declarations registered for the tag:
 
-- [`CompletedAway`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CompletedAway#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean#L39) (StacksFrontier): “the completed principal localization, along a chosen ideal”.
+- [`CompletedAway`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CompletedAway#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/CompletedPrincipalLocalization.lean#L39) (StacksFrontier): “the completed principal localization, along a chosen ideal”.
 
 ## Tag 0GGF, a lemma
 
 [Tag 0GGF](https://stacks.math.columbia.edu/tag/0GGF) in the Stacks Project.
 
-**`Rig.tensorProduct_equiv_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L653). The attribute's comment: “tensor-product description”.
+**`Rig.tensorProduct_equiv_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L652). The attribute's comment: “tensor-product description”.
 
 > Extension of scalars of `p` to the completed principal localization is canonically its
 > extended ideal.
@@ -295,7 +294,7 @@ public theorem tensorProduct_equiv_extendedIdeal
           algebraMap A (CompletedAway I f) (x : A) * c
 ```
 
-**`Rig.adicCompletion_localizedIdeal_equiv_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L667). The attribute's comment: “completion description”.
+**`Rig.adicCompletion_localizedIdeal_equiv_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L666). The attribute's comment: “completion description”.
 
 > Completing the localized ideal `p A[1/f]` gives its extension to the completed principal
 > localization, compatibly with the canonical maps.
@@ -312,7 +311,7 @@ public theorem adicCompletion_localizedIdeal_equiv_extendedIdeal
           algebraMap A_f (CompletedAway I f) (x : A_f)
 ```
 
-**`Rig.extendedIdeal_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L707). The attribute's comment: “primality”.
+**`Rig.extendedIdeal_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L706). The attribute's comment: “primality”.
 
 > The extension of `p` to the completed principal localization is prime.
 
@@ -324,7 +323,7 @@ public theorem extendedIdeal_isPrime
     (extendedIdeal I p f).IsPrime
 ```
 
-**`Rig.quotient_extendedIdeal_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L721). The attribute's comment: “quotient”.
+**`Rig.quotient_extendedIdeal_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L720). The attribute's comment: “quotient”.
 
 > Quotienting the completed principal localization by the extended prime canonically recovers
 > `A / p`.
@@ -342,14 +341,14 @@ public theorem quotient_extendedIdeal_equiv
 
 Declarations registered for the tag:
 
-- [`Ideal.qoutMapEquivTensorQout`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.qoutMapEquivTensorQout#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L748) (StacksFrontier): “tensor-product description of the quotient”.
-- [`Ideal.map_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.map_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 753](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L753) (StacksFrontier): “transitivity of ideal extension”.
+- [`Ideal.quotMapEquivTensorQuot`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.quotMapEquivTensorQuot#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L747) (StacksFrontier): “tensor-product description of the quotient”.
+- [`Ideal.map_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.map_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean, line 752](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/LiftingAndCompletedAway.lean#L752) (StacksFrontier): “transitivity of ideal extension”.
 
 ## Tag 0GGG, a lemma
 
 [Tag 0GGG](https://stacks.math.columbia.edu/tag/0GGG) in the Stacks Project.
 
-**`Rig.exists_isClosedPointAwayFrom_completedAway_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 1389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L1389).
+**`Rig.exists_isClosedPointAwayFrom_completedAway_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 1388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L1388).
 
 > After a suitable completed principal localization, the prime below a
 > rig-closed point is rig-closed as well.
@@ -394,7 +393,7 @@ public theorem exists_isClosedPointAwayFrom_completedAway_comap
 
 [Tag 0GGH](https://stacks.math.columbia.edu/tag/0GGH) in the Stacks Project.
 
-**`Rig.adicCompletionMap_localRingHom_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RestrictedPowerSeries.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/RestrictedPowerSeries.lean#L453).
+**`Rig.adicCompletionMap_localRingHom_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/RestrictedPowerSeries.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/RestrictedPowerSeries.lean#L453).
 
 > Let `A` be a Noetherian adic topological ring, complete for an ideal of definition `I`, and
 > let `q` be a prime of the restricted power series ring `A{x_σ}` in finitely many variables.  If
@@ -424,7 +423,7 @@ public theorem adicCompletionMap_localRingHom_bijective
 
 [Tag 0GGI](https://stacks.math.columbia.edu/tag/0GGI) in the Stacks Project.
 
-**`Rig.map_comap_eq_map_of_rigPoint_of_etale_quotient`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/EtaleReduction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/EtaleReduction.lean#L105).
+**`Rig.map_comap_eq_map_of_rigPoint_of_etale_quotient`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/EtaleReduction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/EtaleReduction.lean#L105).
 
 > **Stacks 0GGI.** Let `φ : A → B` be an adic morphism of Noetherian weakly admissible
 > topological rings which is topologically of finite type and flat and whose reduction modulo an
@@ -457,7 +456,7 @@ public lemma map_comap_eq_map_of_rigPoint_of_etale_quotient
 
 [Tag 0GGJ](https://stacks.math.columbia.edu/tag/0GGJ) in the Stacks Project.
 
-**`Rig.restrictedPowerSeriesBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L400). The attribute's comment: “regular\_map”.
+**`Rig.restrictedPowerSeriesBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L400). The attribute's comment: “regular\_map”.
 
 > Base change of a restricted power series ring by a rig-closed quotient is
 > canonically the restricted power series ring over that quotient.
@@ -478,7 +477,7 @@ public noncomputable def restrictedPowerSeriesBaseChangeEquiv
       RestrictedPowerSeries (I.map (Ideal.Quotient.mk p)) (Fin n)
 ```
 
-**`Rig.restrictedPowerSeriesBaseChangeEquiv_coefficientProjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L428). The attribute's comment: “regular\_map”.
+**`Rig.restrictedPowerSeriesBaseChangeEquiv_coefficientProjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L428). The attribute's comment: “regular\_map”.
 
 > At every finite level, the base-change identification reduces a series
 > coefficientwise modulo `p`. The polynomial `g` is any lift of that level's
@@ -511,7 +510,7 @@ public lemma restrictedPowerSeriesBaseChangeEquiv_coefficientProjection
         (MvPolynomial.map (Ideal.Quotient.mk p) g)
 ```
 
-**`Rig.isRegularRingHom_baseChange_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L510). The attribute's comment: “regular\_map”.
+**`Rig.isRegularRingHom_baseChange_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L510). The attribute's comment: “regular\_map”.
 
 > The canonical map from the rig-closed quotient to the base-changed
 > restricted power series ring is regular.
@@ -532,7 +531,7 @@ public lemma isRegularRingHom_baseChange_of_rigPoint
       (RestrictedPowerSeries I (Fin n) ⊗[A] (A ⧸ p)))
 ```
 
-**`Rig.isGeometricallyRegular_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L593). The attribute's comment: “geometrically\_regular\_fibre”.
+**`Rig.isGeometricallyRegular_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L592). The attribute's comment: “geometrically\_regular\_fibre”.
 
 > The fibre of a restricted power series algebra at a rig-closed prime is
 > geometrically regular over the residue field.
@@ -561,4 +560,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.14, Tag 0GG7](https://stacks.math.columbia.edu/tag/0GG7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Groups acting freely on abelian groups
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html).
 
 ## Kourovka Problem 16.54 (free actions and embeddings in skew-fields)
 
@@ -16,7 +16,7 @@ question of V. D. Mazurov, that every group $G$ with a free action by automorphi
 nontrivial abelian group $V$, meaning $g \cdot v \ne v$ for all $g \ne 1$ in $G$ and all $v \ne 0$
 in $V$, has an injective homomorphism into the multiplicative group of some division ring.
 
-Formalized by `MathlibExt.GroupTheory.FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.freeActionEmbedsInSkewField`, a definition declared in [WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html#free-action-embeds-in-skew-field).
+Formalized by `MathlibExt.GroupTheory.FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.freeActionEmbedsInSkewField`, a definition declared in [WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html#free-action-embeds-in-skew-field).
 
 ## Groups acting freely on abelian groups need not embed in skew-fields (Kourovka 16.54)
 
@@ -35,7 +35,7 @@ multiplicative group of any skew-field.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.54 (V. D. Mazurov); resolution: D. Nedrenko, letter of 20 January 2014, as recorded in the Kourovka Archive; S. A. Amitsur, Finite subgroups of division rings, Trans. Amer. Math. Soc. 80 (1955), 361-386, Kourovka Archive, Problem 16.54 (No: 2.A_5.2 with a quaternion Sylow 2-subgroup acts freely on an elementary abelian group of order 7^4 but does not embed in the multiplicative group of a skew-field, by Amitsur's Theorem 7).
 
-Stated but not proved: `MathlibExt.GroupTheory.FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.freeActionEmbedsInSkewField_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html#free-action-embeds-in-skew-field-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.freeActionEmbedsInSkewField_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeActionSkewFieldEmbeddingKourovka16Problem54Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html#free-action-embeds-in-skew-field-refuted).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Groups acting freely on abelian groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/automorphisms/fixed-points-of-automorphisms/groups-acting-freely-on-abelian-groups)

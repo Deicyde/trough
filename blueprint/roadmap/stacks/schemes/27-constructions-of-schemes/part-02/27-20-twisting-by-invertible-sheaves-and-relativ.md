@@ -8,7 +8,7 @@ proof: formalized
 
 # 27.20 Twisting by invertible sheaves and relative Proj
 
-Section 27.20 of the Stacks Project, [Tag 02NB](https://stacks.math.columbia.edu/tag/02NB). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.20 of the Stacks Project, [Tag 02NB](https://stacks.math.columbia.edu/tag/02NB). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02NB, the section
 
@@ -16,13 +16,13 @@ Section 27.20 of the Stacks Project, [Tag 02NB](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`twist`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twist#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean, line 1285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean#L1285) (StacksFrontier): “the twisted graded algebra B\_d = A\_d ⊗ L^\{⊗ d} of the section's setting”.
+- [`twist`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twist#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean, line 1281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean#L1281) (StacksFrontier): “the twisted graded algebra B\_d = A\_d ⊗ L^\{⊗ d} of the section's setting”.
 
 ## Tag 02NC, a lemma
 
 [Tag 02NC](https://stacks.math.columbia.edu/tag/02NC) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeInvertibleTwist.relativeTwist_tag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean#L77). The attribute's comment: “the canonical isomorphism g from Proj\_S(A) to Proj\_S(B) over S, with (1) the isomorphisms theta\_n from g^*O\_P'(n) to O\_P(n) tensor pi^*L^n fitting together into an isomorphism of Z-graded algebras theta, and (2) the commuting diagrams on sections over every open V of S, theta being the unique such map”.
+**`Stacks.AlgebraicGeometry.RelativeInvertibleTwist.relativeTwist_tag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean#L77). The attribute's comment: “the canonical isomorphism g from Proj\_S(A) to Proj\_S(B) over S, with (1) the isomorphisms theta\_n from g^*O\_P'(n) to O\_P(n) tensor pi^*L^n fitting together into an isomorphism of Z-graded algebras theta, and (2) the commuting diagrams on sections over every open V of S, theta being the unique such map”.
 
 > Let `S` be a scheme, `𝒜` a quasi-coherent graded `𝒪_S`-algebra, `ℒ` an invertible
 > `𝒪_S`-module and `ℬ = ⨁_d 𝒜_d ⊗_{𝒪_S} ℒ^{⊗ d}`, with `π : P = Proj_S(𝒜) ⟶ S` and
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.20, Tag 02NB](https://stacks.math.columbia.edu/tag/02NB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

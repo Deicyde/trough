@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.28 Morphisms of finite presentation
 
-Section 67.28 of the Stacks Project, [Tag 03XO](https://stacks.math.columbia.edu/tag/03XO). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.28 of the Stacks Project, [Tag 03XO](https://stacks.math.columbia.edu/tag/03XO). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03XP, a definition
 
 [Tag 03XP](https://stacks.math.columbia.edu/tag/03XP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyOfFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L91). The attribute's comment: “part (1): locally of finite presentation”.
+**`AlgebraicGeometry.Space.IsLocallyOfFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L91). The attribute's comment: “part (1): locally of finite presentation”.
 
 > **Stacks 03XP, part (1).** A morphism of algebraic spaces over `S` is *locally of
 > finite presentation* when every commuting square of étale scheme charts induces a scheme
@@ -24,7 +24,7 @@ Section 67.28 of the Stacks Project, [Tag 03XO](https://stacks.math.columbia.edu
 abbrev IsLocallyOfFinitePresentation (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFinitePresentationAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L105). The attribute's comment: “part (2): finite presentation at a point”.
+**`AlgebraicGeometry.Space.IsFinitePresentationAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L105). The attribute's comment: “part (2): finite presentation at a point”.
 
 > **Stacks 03XP, part (2).** A morphism of algebraic spaces over `S` is *of finite
 > presentation at* a point `x` of its source when it is locally of finite presentation on an
@@ -40,7 +40,7 @@ abbrev IsLocallyOfFinitePresentation (f : X ⟶ Y) : Prop
 abbrev IsFinitePresentationAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L115). The attribute's comment: “part (3): finite presentation”.
+**`AlgebraicGeometry.Space.IsFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation.lean#L115). The attribute's comment: “part (3): finite presentation”.
 
 > **Stacks 03XP, part (3).** A morphism of algebraic spaces over `S` is *of finite
 > presentation* when it is locally of finite presentation, quasi-compact and
@@ -54,7 +54,7 @@ abbrev IsFinitePresentation (f : X ⟶ Y) : Prop
 
 [Tag 03XQ](https://stacks.math.columbia.edu/tag/03XQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartComposition.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartComposition.lean#L161). The attribute's comment: “locally of finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartComposition.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartComposition.lean#L161). The attribute's comment: “locally of finite presentation”.
 
 > **Stacks 03XQ**, the case of being locally of finite presentation: the composite of two
 > morphisms of algebraic spaces over `S` which are locally of finite presentation is locally of
@@ -74,7 +74,7 @@ theorem isLocallyOfFinitePresentation_comp
     IsLocallyOfFinitePresentation B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationComposition.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationComposition.lean#L54). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.Space.isFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationComposition.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationComposition.lean#L54). The attribute's comment: “finite presentation”.
 
 > **Stacks 03XQ**, the case of being of finite presentation: the composite of two morphisms
 > of algebraic spaces over `S` which are of finite presentation is of finite presentation.
@@ -97,7 +97,7 @@ theorem isFinitePresentation_comp
 
 [Tag 03XR](https://stacks.math.columbia.edu/tag/03XR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L118). The attribute's comment: “locally of finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L118). The attribute's comment: “locally of finite presentation”.
 
 > **Stacks 03XR**, the case of being locally of finite presentation: that property of
 > morphisms of algebraic spaces over `S` is stable under base change.
@@ -113,7 +113,7 @@ theorem isLocallyOfFinitePresentation_isStableUnderBaseChange
         IsLocallyOfFinitePresentation B S hS f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentation_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L83). The attribute's comment: “finite presentation”. References: SGA 1 VIII (3.6), “more general”.
+**`AlgebraicGeometry.Space.isFinitePresentation_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L83). The attribute's comment: “finite presentation”. References: SGA 1 VIII (3.6), “more general”.
 
 > Being of finite presentation is a property of morphisms of algebraic spaces over `S` that is
 > stable under base change.
@@ -128,7 +128,7 @@ instance isFinitePresentation_isStableUnderBaseChange :
 
 [Tag 0410](https://stacks.math.columbia.edu/tag/0410) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L342).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L342).
 
 > **Stacks 0410.** Nine criteria for a morphism of algebraic spaces over `S` to be locally
 > of finite presentation: pointwise finite presentation, local finite presentation of every base
@@ -176,7 +176,7 @@ theorem isLocallyOfFinitePresentation_tfae
 
 [Tag 0464](https://stacks.math.columbia.edu/tag/0464) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L105).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L105).
 
 > **Stacks 0464**, first assertion. A morphism of algebraic spaces over `S` which is locally of
 > finite presentation is locally of finite type.
@@ -188,7 +188,7 @@ theorem isLocallyOfFiniteType_of_isLocallyOfFinitePresentation
     IsLocallyOfFiniteType B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFiniteType_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L116).
+**`AlgebraicGeometry.Space.isFiniteType_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L116).
 
 > **Stacks 0464**, second assertion. A morphism of algebraic spaces over `S` of finite
 > presentation is of finite type.
@@ -204,7 +204,7 @@ theorem isFiniteType_of_isFinitePresentation
 
 [Tag 04ZL](https://stacks.math.columbia.edu/tag/04ZL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isNoetherian_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L206).
+**`AlgebraicGeometry.Space.isNoetherian_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L206).
 
 > **Stacks 04ZL.** A morphism of algebraic spaces over `S` of finite presentation whose
 > target is Noetherian has Noetherian source.
@@ -225,7 +225,7 @@ theorem isNoetherian_of_isFinitePresentation (hZ : B.Contains (⊤_ Scheme.{u}))
 
 [Tag 06G4](https://stacks.math.columbia.edu/tag/06G4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L245). The attribute's comment: “part (1)”. References: SGA 3 VIA (2.5.4), “more general”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L245). The attribute's comment: “part (1)”. References: SGA 3 VIA (2.5.4), “more general”.
 
 > **Stacks 06G4, part (1).** A morphism of algebraic spaces over `S` which is locally of
 > finite type and whose target is locally Noetherian is locally of finite presentation.
@@ -244,7 +244,7 @@ theorem isLocallyOfFinitePresentation_of_isLocallyOfFiniteType
     IsLocallyOfFinitePresentation B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L268). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L268). The attribute's comment: “part (2)”.
 
 > **Stacks 06G4, part (2).** A morphism of algebraic spaces over `S` which is of finite type
 > and quasi-separated and whose target is locally Noetherian is of finite presentation.
@@ -265,7 +265,7 @@ theorem isFinitePresentation_of_isFiniteType
 
 [Tag 06G5](https://stacks.math.columbia.edu/tag/06G5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.qcqs_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L187).
+**`AlgebraicGeometry.Space.qcqs_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L187).
 
 > **Stacks 06G5.** If `Y` is a quasi-compact and quasi-separated algebraic space over `S`
 > and `X` is of finite presentation over `Y`, then `X` is quasi-compact and quasi-separated.
@@ -290,7 +290,7 @@ theorem qcqs_of_isFinitePresentation (hZ : B.Contains (⊤_ Scheme.{u})) {f : X 
 
 [Tag 05WT](https://stacks.math.columbia.edu/tag/05WT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationCancellation.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationCancellation.lean#L127).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationCancellation.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationCancellation.lean#L127).
 
 > **Stacks 05WT.** If a composite of morphisms of algebraic spaces over `S` is locally of
 > finite presentation and its second factor is locally of finite type, then its first factor is
@@ -316,7 +316,7 @@ theorem isLocallyOfFinitePresentation_of_comp
 
 [Tag 084P](https://stacks.math.columbia.edu/tag/084P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L300). The attribute's comment: “the local assertion”. References: EGA IV (1.4.3.1), “more general”; EGA IV (17.4.1.2), “more general”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L300). The attribute's comment: “the local assertion”. References: EGA IV (1.4.3.1), “more general”; EGA IV (17.4.1.2), “more general”.
 
 > **Stacks 084P**, the local assertion. The relative diagonal of a morphism of algebraic
 > spaces over `S` which is locally of finite type is locally of finite presentation.
@@ -333,7 +333,7 @@ theorem isLocallyOfFinitePresentation_pullbackDiagonal (f : X ⟶ Y)
     IsLocallyOfFinitePresentation B S hS (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentation_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L318). The attribute's comment: “the global assertion”.
+**`AlgebraicGeometry.Space.isFinitePresentation_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L318). The attribute's comment: “the global assertion”.
 
 > **Stacks 084P**, the global assertion. The relative diagonal of a quasi-separated morphism
 > of algebraic spaces over `S` which is locally of finite type is of finite presentation.
@@ -355,7 +355,7 @@ theorem isFinitePresentation_pullbackDiagonal (f : X ⟶ Y)
 
 [Tag 06CN](https://stacks.math.columbia.edu/tag/06CN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L225).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentation.lean#L225).
 
 > **Stacks 06CN.** An open immersion of algebraic spaces over `S` is locally of finite
 > presentation.
@@ -374,7 +374,7 @@ theorem isLocallyOfFinitePresentation_of_isOpenImmersion {f : X ⟶ Y}
 
 [Tag 084Q](https://stacks.math.columbia.edu/tag/084Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentation_iff_isFiniteTypeOnSite_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionFinitePresentation.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionFinitePresentation.lean#L282). The attribute's comment: “finite type of the ideal sheaf on the small étale site of the target”. References: EGA IV (1.4.5), “closed immersion case”; EGA IV (8.6.1), “more general”; SGA 3 XI (6.4), “more general”.
+**`AlgebraicGeometry.Space.isFinitePresentation_iff_isFiniteTypeOnSite_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionFinitePresentation.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionFinitePresentation.lean#L282). The attribute's comment: “finite type of the ideal sheaf on the small étale site of the target”. References: EGA IV (1.4.5), “closed immersion case”; EGA IV (8.6.1), “more general”; SGA 3 XI (6.4), “more general”.
 
 > **Stacks 084Q.** A closed immersion `i : Z ⟶ X` of algebraic spaces over `S` is of finite
 > presentation if and only if the associated quasi-coherent sheaf of ideals
@@ -407,4 +407,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.28, Tag 03XO](https://stacks.math.columbia.edu/tag/03XO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

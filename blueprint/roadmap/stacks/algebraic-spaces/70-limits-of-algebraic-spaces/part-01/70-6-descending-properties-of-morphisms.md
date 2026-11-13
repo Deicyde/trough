@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.6 Descending properties of morphisms
 
-Section 70.6 of the Stacks Project, [Tag 084V](https://stacks.math.columbia.edu/tag/084V). 14 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.6 of the Stacks Project, [Tag 084V](https://stacks.math.columbia.edu/tag/084V). 14 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 084W, a situation
 
 [Tag 084W](https://stacks.math.columbia.edu/tag/084W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphisms.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphisms.lean#L111).
+**`AlgebraicGeometry.Space.MorphismDescentSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphisms.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphisms.lean#L111).
 
 > **Stacks 084W.** The standing situation for descending a property of a
 > morphism of algebraic spaces along a directed limit: a directed inverse system of algebraic
@@ -31,7 +31,7 @@ structure MorphismDescentSystem (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
 
 [Tag 07SL](https://stacks.math.columbia.edu/tag/07SL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isEtale_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1262). References: EGA IV (17.7.8), “(ii) étale”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isEtale_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1270). References: EGA IV (17.7.8), “(ii) étale”.
 
 > **Stacks 07SL.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` is étale and `f₀` is locally of finite presentation, then the base change `f_i` of
@@ -47,7 +47,7 @@ theorem exists_isEtale_mapAt (D : MorphismDescentSystem B S hS hZ I)
 
 [Tag 0CN2](https://stacks.math.columbia.edu/tag/0CN2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSmooth_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1281). References: EGA IV (17.12.6), “f smooth ⇒ ∃λ”; EGA IV (17.7.8), “(ii) smooth”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSmooth_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1289). References: EGA IV (17.12.6), “f smooth ⇒ ∃λ”; EGA IV (17.7.8), “(ii) smooth”.
 
 > **Stacks 0CN2.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` is smooth and `f₀` is locally of finite presentation, then the base change `f_i` of
@@ -59,7 +59,7 @@ theorem exists_isSmooth_mapAt (D : MorphismDescentSystem B S hS hZ I)
     ∃ (i : I) (le : D.initial ≤ i), IsSmooth B S hS (D.mapAt i le)
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSmooth_mapAt_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1435). The attribute's comment: “the cofiltered-covariant form: the conclusion ranges over a morphism of the cofiltered index category Iᵒᵖ carrying the covariant diagram `base`, which is the indexing the library's Stacks 07SK consumes, rather than over an inequality of the directed preorder I; the mathematical content is that of the inequality form beside it”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSmooth_mapAt_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1458). The attribute's comment: “the cofiltered-covariant form: the conclusion ranges over a morphism of the cofiltered index category Iᵒᵖ carrying the covariant diagram `base`, which is the indexing the library's Stacks 07SK consumes, rather than over an inequality of the directed preorder I; the mathematical content is that of the inequality form beside it”.
 
 > **Stacks 0CN2 in the covariant indexing of Stacks 07SK.** In the situation of Stacks 084W, if
 > the base change `f` of `f₀` to the limit `B` is smooth and `f₀` is locally of finite presentation,
@@ -82,7 +82,7 @@ theorem exists_isSmooth_mapAt_op (D : MorphismDescentSystem B S hS hZ I)
 
 [Tag 07SN](https://stacks.math.columbia.edu/tag/07SN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSurjective_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1271).
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSurjective_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1279).
 
 > **Stacks 07SN.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` is surjective and `f₀` is locally of finite presentation, then the base change `f_i`
@@ -99,7 +99,7 @@ theorem exists_isSurjective_mapAt
 
 [Tag 084X](https://stacks.math.columbia.edu/tag/084X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_universallyInjective_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1374).
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_universallyInjective_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1391).
 
 > **Stacks 084X.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` is universally injective and `f₀` is locally of finite type, then the base change
@@ -117,7 +117,7 @@ theorem exists_universallyInjective_mapAt
 
 [Tag 084Y](https://stacks.math.columbia.edu/tag/084Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_isAffineHom_mapAt_of_isAffineHom_mapLimit_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineMorphismDescent.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineMorphismDescent.lean#L211).
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_isAffineHom_mapAt_of_isAffineHom_mapLimit_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineMorphismDescent.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineMorphismDescent.lean#L212).
 
 > Notation and assumptions as in Situation 70.6.1 (tag 084W), carried by
 > `AlgebraicGeometry.Space.MorphismDescentSituation`, in the chapter's setting of Section 70.2
@@ -143,7 +143,7 @@ theorem exists_isAffineHom_mapAt_of_isAffineHom_mapLimit_of_siteContainsBaseChan
     ∃ (i : I) (hi : D.initial ≤ i), IsAffineHom B S hS (D.mapAt i hi)
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentData.exists_isAffineHom_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L205).
+**`AlgebraicGeometry.Space.MorphismDescentData.exists_isAffineHom_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L205).
 
 > In Situation 084W, under the chapter's convention of Section 70.2, if
 > `f : X ⟶ Y` is affine then `f_i : X_i ⟶ Y_i` is affine for some `i ≥ 0`.
@@ -159,7 +159,7 @@ theorem exists_isAffineHom_mapAt (hconv : SiteContainsBaseChangeLimits B S hS D.
 
 [Tag 084Z](https://stacks.math.columbia.edu/tag/084Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentData.exists_isFinite_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L215).
+**`AlgebraicGeometry.Space.MorphismDescentData.exists_isFinite_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L215).
 
 > In Situation 084W, under the chapter's convention of Section 70.2, if `f` is
 > finite and `f₀` is locally of finite type, then `f_i` is finite for some `i ≥ 0`.
@@ -176,7 +176,7 @@ theorem exists_isFinite_mapAt (hconv : SiteContainsBaseChangeLimits B S hS D.bas
 
 [Tag 0850](https://stacks.math.columbia.edu/tag/0850) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentData.exists_isClosedImmersion_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L227).
+**`AlgebraicGeometry.Space.MorphismDescentData.exists_isClosedImmersion_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L227).
 
 > In Situation 084W, under the chapter's convention of Section 70.2, if `f` is
 > a closed immersion and `f₀` is locally of finite type, then `f_i` is a closed immersion for some
@@ -194,7 +194,7 @@ theorem exists_isClosedImmersion_mapAt (hconv : SiteContainsBaseChangeLimits B S
 
 [Tag 0851](https://stacks.math.columbia.edu/tag/0851) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isSeparated_pullbackMap_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite/SeparatedDescent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite/SeparatedDescent.lean#L58). The attribute's comment: “under the chapter's convention of Section 70.2 (tag 07SD) on the system of bases, every stage quasi-compact; proved in an enlarged site”.
+**`AlgebraicGeometry.Space.exists_isSeparated_pullbackMap_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite/SeparatedDescent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite/SeparatedDescent.lean#L58). The attribute's comment: “under the chapter's convention of Section 70.2 (tag 07SD) on the system of bases, every stage quasi-compact; proved in an enlarged site”.
 
 > **Stacks 0851.** In the situation of Stacks 084W, if the base change `f : X ⟶ Y` of
 > `f₀ : X₀ ⟶ Y₀` to the limit `B = lim B_i` is separated, then the base change `f_i : X_i ⟶ Y_i` of
@@ -219,7 +219,7 @@ theorem exists_isSeparated_pullbackMap_of_siteContainsBaseChangeLimits {I : Type
       (base.map (homOfLE hi).op) q (𝟙 _) f₀ (𝟙 _) (by simp) (by simp [hf₀]))
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSeparated_mapAt_of_isSeparated_mapLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedMorphismDescent.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedMorphismDescent.lean#L477).
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isSeparated_mapAt_of_isSeparated_mapLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedMorphismDescent.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedMorphismDescent.lean#L477).
 
 > **Stacks 0851.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` is separated, then the base change `f_i` of `f₀` to some stage `B_i` is separated.
@@ -233,7 +233,7 @@ theorem exists_isSeparated_mapAt_of_isSeparated_mapLimit (hf : IsSeparated B S h
 
 [Tag 0852](https://stacks.math.columbia.edu/tag/0852) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_isIso_mapAt_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L309). The attribute's comment: “under the convention 07SD (hconv)”. References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
 
 > **Stacks 0852**, and **Stacks 084S**. In the situation of Stacks 084W, if the base change
 > `f` of `f₀` to the limit `B` is an isomorphism and `f₀` is locally of finite presentation, then
@@ -243,9 +243,13 @@ theorem exists_isSeparated_mapAt_of_isSeparated_mapLimit (hf : IsSeparated B S h
 > 084R, with the source and the target in addition assumed representable over the stage;
 > hypothesis (a) of that tag is not needed here, since the three properties into which being an
 > isomorphism is decomposed all descend without it.
+>
+> This is the statement under the chapter's convention of Section 70.2 (tag 07SD), which asks
+> nothing of the index.
 
 ```lean
-theorem exists_isIso_mapAt (hf : IsIso D.mapLimit)
+theorem exists_isIso_mapAt_of_siteContainsBaseChangeLimits
+    (hconv : SiteContainsBaseChangeLimits B S hS D.base) (hf : IsIso D.mapLimit)
     (hfp : IsLocallyOfFinitePresentation B S hS D.map₀) :
     ∃ (i : I) (hi : D.initial ≤ i), IsIso (D.mapAt i hi)
 ```
@@ -254,13 +258,19 @@ theorem exists_isIso_mapAt (hf : IsIso D.mapLimit)
 
 [Tag 07SM](https://stacks.math.columbia.edu/tag/07SM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_mono_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Monomorphism.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Monomorphism.lean#L137). References: SGA 3 VIB (10.1), “partial”.
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_mono_mapAt_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Monomorphism.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Monomorphism.lean#L80). References: SGA 3 VIB (10.1), “partial”.
 
-> If the base change `f` of `f₀` to the limit `B` is a monomorphism and `f₀` is locally of
+> **Stacks 07SM.** In Situation 084W, under the chapter's convention of Section 70.2 (tag
+> 07SD), if the base change `f` of `f₀` to the limit `B` is a monomorphism and `f₀` is locally of
 > finite type, then the base change `f_i` of `f₀` to some stage `B_i` is a monomorphism.
+>
+> The convention of Section 70.2, that every scheme considered lies in the big fppf site, is
+> `hconv`: the limits of the base changes of the system to affine objects of the site lie in the
+> site. Nothing is asked of the size of the index.
 
 ```lean
-theorem exists_mono_mapAt (hf : Mono D.mapLimit)
+theorem exists_mono_mapAt_of_siteContainsBaseChangeLimits (hconv : SiteContainsBaseChangeLimits B S
+    hS D.base) (hf : Mono D.mapLimit)
     (hf₀ : IsLocallyOfFiniteType B S hS D.map₀) :
     ∃ (i : I) (hi : D.initial ≤ i), Mono (D.mapAt i hi)
 ```
@@ -269,7 +279,7 @@ theorem exists_mono_mapAt (hf : Mono D.mapLimit)
 
 [Tag 08K0](https://stacks.math.columbia.edu/tag/08K0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFlatOver_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean#L115). The attribute's comment: “flatness of a module, with no bound on the index: the 07SD convention in place of the index bound of MorphismDescentSystem, which exists\_isFlatOver\_mapAt carries”.
+**`AlgebraicGeometry.Space.exists_isFlatOver_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean#L115). The attribute's comment: “flatness of a module, with no bound on the index: the 07SD convention in place of the index bound of MorphismDescentSystem, which exists\_isFlatOver\_mapAt carries”.
 
 > **Stacks 08K0, flatness of a module, with no bound on the index.** Let `(B_i)` be a
 > cofiltered inverse system of algebraic spaces over `S` with affine transition morphisms, let `i`
@@ -329,11 +339,32 @@ theorem exists_isFlatOver_baseChange_of_chartLimitsInSite
               AlgebraicSpaces B S hS) ⟶ ⟨X.left, hX⟩)).obj F₀)
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlat_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1290). The attribute's comment: “in particular: flatness of the morphism”. References: EGA IV (11.2.6), “F = O\_X case”.
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_isFlat_mapAt_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 953](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L953). The attribute's comment: “in particular: flatness of the morphism, under the convention of Section 70.2 (tag 07SD) and with no condition on the index”.
 
 > **Stacks 08K0**, flatness of the morphism. In the situation of Stacks 084W, if `f₀` is locally
 > of finite presentation and its base change `f : X ⟶ Y` to the limit is flat, then its base change
 > `f_i : X_i ⟶ Y_i` to some stage `i ≥ 0` is flat.
+>
+> This is the statement under the chapter's convention of Section 70.2 (tag 07SD), which asks
+> nothing of the index.
+
+```lean
+theorem exists_isFlat_mapAt_of_siteContainsBaseChangeLimits
+    (D : MorphismDescentSituation B S hS hZ I) (hconv : SiteContainsBaseChangeLimits B S hS D.base)
+        (flat : IsFlat B S hS D.mapLimit)
+    (fp : IsLocallyOfFinitePresentation B S hS D.map₀) :
+    ∃ (i : I) (le : D.initial ≤ i), IsFlat B S hS (D.mapAt i le)
+```
+
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlat_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1303). The attribute's comment: “in particular: flatness of the morphism, with the index bounded by indexSize”. References: EGA IV (11.2.6), “F = O\_X case”.
+
+> **Stacks 08K0**, flatness of the morphism. In the situation of Stacks 084W, if `f₀` is locally
+> of finite presentation and its base change `f : X ⟶ Y` to the limit is flat, then its base change
+> `f_i : X_i ⟶ Y_i` to some stage `i ≥ 0` is flat.
+>
+> The index of the system is bounded by `MorphismDescentSystem.indexSize`; the statement under the
+> chapter's convention 07SD, with no condition on the index, is
+> `MorphismDescentSituation.exists_isFlat_mapAt_of_siteContainsBaseChangeLimits`.
 
 ```lean
 theorem exists_isFlat_mapAt
@@ -342,12 +373,16 @@ theorem exists_isFlat_mapAt
     ∃ (i : I) (le : D.initial ≤ i), IsFlat B S hS (D.mapAt i le)
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlatOver_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1301). The attribute's comment: “flatness of a module”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlatOver_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1318). The attribute's comment: “flatness of a module, with the index bounded by indexSize”.
 
-> **Stacks 08K0**, flatness of a module. In the situation of Stacks 084W, let `F₀` be a quasi-coherent
-> `𝒪_{X₀}`-module, with pullbacks `F_i` to `X_i` and `F` to `X`. If `F` is flat over `Y`, `F₀` is
-> of finite presentation and `f₀` is locally of finite presentation, then `F_i` is flat over `Y_i`
-> for some stage `i ≥ 0`.
+> **Stacks 08K0**, flatness of a module. In the situation of Stacks 084W, let `F₀` be a
+> quasi-coherent `𝒪_{X₀}`-module, with pullbacks `F_i` to `X_i` and `F` to `X`. If `F` is flat over
+> `Y`, `F₀` is of finite presentation and `f₀` is locally of finite presentation, then `F_i` is flat
+> over `Y_i` for some stage `i ≥ 0`.
+>
+> The index of the system is bounded by `MorphismDescentSystem.indexSize`; the statement with no
+> condition on the index is
+> `AlgebraicGeometry.Space.exists_isFlatOver_baseChange_of_chartLimitsInSite`.
 
 ```lean
 theorem exists_isFlatOver_mapAt (D : MorphismDescentSystem B S hS hZ I)
@@ -368,13 +403,13 @@ theorem exists_isFlatOver_mapAt (D : MorphismDescentSystem B S hS hZ I)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.MorphismDescentSituation.C1573.exists_isFlatOver_mapAt_of_siteContainsBaseChangeLimits`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/Limits/DescendingMorphismPropertiesSiteConvention.lean#L659), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismPropertiesSiteConvention.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismPropertiesSiteConvention.lean#L138) (StacksFrontier): “flatness of a module, under the convention of Section 70.2 (tag 07SD) and with no condition on the index”.
+- [`C1573.exists_isFlatOver_mapAt_of_siteContainsBaseChangeLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=C1573.exists_isFlatOver_mapAt_of_siteContainsBaseChangeLimits#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismPropertiesSiteConvention.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismPropertiesSiteConvention.lean#L138) (StacksFrontier): “flatness of a module, under the convention of Section 70.2 (tag 07SD) and with no condition on the index”.
 
 ## Tag 08K1, a lemma
 
 [Tag 08K1](https://stacks.math.columbia.edu/tag/08K1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentData.exists_isProper_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L238).
+**`AlgebraicGeometry.Space.MorphismDescentData.exists_isProper_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L238).
 
 > In Situation 084W, under the chapter's convention of Section 70.2, if `f` is
 > proper and `f₀` is locally of finite type, then `f_i` is proper for some `i ≥ 0`.
@@ -391,14 +426,21 @@ theorem exists_isProper_mapAt (hconv : SiteContainsBaseChangeLimits B S hS D.bas
 
 [Tag 0D4K](https://stacks.math.columbia.edu/tag/0D4K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_hasRelativeDimensionLE_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1386).
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_hasRelativeDimensionLE_mapAt_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1058).
 
 > **Stacks 0D4K.** In the situation of Stacks 084W, if the base change `f` of `f₀` to the
 > limit `B` has relative dimension at most `d` and `f₀` is locally of finite type, then the base
 > change `f_i` of `f₀` to some stage `B_i` has relative dimension at most `d`.
+>
+> This is the statement under the chapter's convention of Section 70.2 (tag 07SD), which asks
+> nothing of the index: the situation `D` carries no bound on the size of `I`, and the convention
+> is the hypothesis `hconv`, `AlgebraicGeometry.Space.SiteContainsBaseChangeLimits` for the system
+> `(B_i)`.
 
 ```lean
-theorem exists_hasRelativeDimensionLE_mapAt (D : MorphismDescentSystem B S hS hZ I) (d : ℕ)
+theorem exists_hasRelativeDimensionLE_mapAt_of_siteContainsBaseChangeLimits (D :
+    MorphismDescentSituation B S hS hZ I)
+    (hconv : SiteContainsBaseChangeLimits B S hS D.base) (d : ℕ)
     (dimension : HasRelativeDimensionLE d B S hS D.mapLimit)
     (ft : IsLocallyOfFiniteType B S hS D.map₀) :
     ∃ (i : I) (le : D.initial ≤ i), HasRelativeDimensionLE d B S hS (D.mapAt i le)
@@ -411,4 +453,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.6, Tag 084V](https://stacks.math.columbia.edu/tag/084V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

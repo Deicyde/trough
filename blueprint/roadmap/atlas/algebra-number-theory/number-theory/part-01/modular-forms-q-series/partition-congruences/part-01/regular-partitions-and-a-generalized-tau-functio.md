@@ -7,7 +7,7 @@ statement: formalized
 
 # Regular partitions and a generalized tau function
 
-40 results, 6 proved and 34 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html).
+40 results, 6 proved and 34 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html).
 
 ## Euler's product has constant term $1$
 
@@ -18,7 +18,7 @@ series $\prod_{m \ge 1} (1 - X^m)$ in $\mathbb{Z}[[X]]$ is $1$.
 
 - Euler's pentagonal number theorem as used in Sriram and Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, identity (1).
 
-Formalized by `MetaMathlibExt.constantCoeff_pentagonalSeries_int`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#constant-coeff-pentagonal-series-int).
+Formalized by `MetaMathlibExt.constantCoeff_pentagonalSeries_int`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#constant-coeff-pentagonal-series-int).
 
 ## Euler's product is a unit in $\mathbb{Z}((X))$
 
@@ -31,7 +31,7 @@ integer powers are defined.
 
 - Sriram and Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Definition 1.1 (negative exponents).
 
-Formalized by `MetaMathlibExt.isUnit_pentagonalSeries_int`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#is-unit-pentagonal-series-int).
+Formalized by `MetaMathlibExt.isUnit_pentagonalSeries_int`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#is-unit-pentagonal-series-int).
 
 ## Generalized tau function
 
@@ -48,7 +48,7 @@ coefficient of $q^n$ in $\prod_{m \ge 1} (1 - q^m)$.
 
 - Sriram and Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Definition 1.1, equation (2).
 
-Formalized by `MetaMathlibExt.generalizedTau`, a definition declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau).
+Formalized by `MetaMathlibExt.generalizedTau`, a definition declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau).
 
 ## Generalized tau function at zero
 
@@ -59,7 +59,7 @@ is the generalized tau function: the series $q \prod_{m \ge 1} (1 - q^m)^k$ has 
 
 - Sriram and Christopher, INTEGERS 24 (2024), Article A39, Definition 1.1.
 
-Formalized by `MetaMathlibExt.generalizedTau_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-zero).
+Formalized by `MetaMathlibExt.generalizedTau_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-zero).
 
 ## The generalized tau function at $1$
 
@@ -69,7 +69,7 @@ For every integer $k$, $\tau_k(1) = 1$.
 
 - Sriram and Christopher, INTEGERS 24 (2024), Article A39, Definition 1.1.
 
-Formalized by `MetaMathlibExt.generalizedTau_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-one).
+Formalized by `MetaMathlibExt.generalizedTau_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-one).
 
 ## The generalized tau function for natural exponents
 
@@ -81,7 +81,7 @@ $q \bigl(\prod_{m \ge 1} (1 - q^m)\bigr)^k$.
 
 - Sriram and Christopher, INTEGERS 24 (2024), Article A39, Definition 1.1.
 
-Formalized by `MetaMathlibExt.generalizedTau_natCast`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-nat-cast).
+Formalized by `MetaMathlibExt.generalizedTau_natCast`, a theorem declared in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-nat-cast).
 
 ## Partition formulas for the generalized tau function
 
@@ -103,7 +103,7 @@ $a$ of $\lambda$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_succ_eq_partition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-succ-eq-partition-sum).
+Stated but not proved: `MetaMathlibExt.generalizedTau_succ_eq_partition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-succ-eq-partition-sum).
 
 ## Parity of the generalized tau function via part frequencies
 
@@ -116,7 +116,7 @@ number of times each part occurs lies in $A$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_succ_modEq_card_frequency_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-succ-mod-eq-card-frequen).
+Stated but not proved: `MetaMathlibExt.generalizedTau_succ_modEq_card_frequency_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-succ-mod-eq-card-frequen).
 
 ## Parity of the $4$-regular partition function
 
@@ -128,7 +128,7 @@ $n$ is a triangular number, that is, $n = m(m + 1)/2$ for some integer $m \ge 0$
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.odd_card_four_regular_iff_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#odd-card-four-regular-iff-triangular).
+Stated but not proved: `MetaMathlibExt.odd_card_four_regular_iff_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#odd-card-four-regular-iff-triangular).
 
 ## Parity of $\tau_{14}$ and $\tau_6$ at odd arguments
 
@@ -142,7 +142,7 @@ $n$ is a triangular number, that is, $n = m(m + 1)/2$ for some natural number $m
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_fourteen_six_odd_index_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-fourteen-six-odd-index-m).
+Stated but not proved: `MetaMathlibExt.generalizedTau_fourteen_six_odd_index_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-fourteen-six-odd-index-m).
 
 ## $2^s$-regular partitions and the generalized tau function modulo 2
 
@@ -155,7 +155,7 @@ of $q^m$ in $q \prod_{j \ge 1} (1 - q^j)^k$. Then $R_{2^s}(n) \equiv \tau_{2^s -
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.card_two_pow_regular_modEq_generalizedTau` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-two-pow-regular-mod-eq-generalized).
+Stated but not proved: `MetaMathlibExt.card_two_pow_regular_modEq_generalizedTau` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-two-pow-regular-mod-eq-generalized).
 
 ## Ramanujan's $\tau$ modulo $3$ via $9$-regular partitions
 
@@ -169,7 +169,7 @@ otherwise.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_nine_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-nine-regular).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_nine_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-nine-regular).
 
 ## Ramanujan's congruence $\tau(3n) \equiv 0 \pmod 3$
 
@@ -181,7 +181,7 @@ $\tau(3n) \equiv 0 \pmod 3$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_three_mul_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-three-mul-mod-eq-zero).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_three_mul_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-three-mul-mod-eq-zero).
 
 ## 9-regular partitions modulo 3 and the divisor sum
 
@@ -193,7 +193,7 @@ positive divisors of $m$. For every positive integer $n$, $R_9(n) \equiv \sigma(
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.card_nine_regular_modEq_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-mod-eq-sigma).
+Stated but not proved: `MetaMathlibExt.card_nine_regular_modEq_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-mod-eq-sigma).
 
 ## Ramanujan's $\tau$ modulo $5$ via $25$-regular partitions
 
@@ -206,7 +206,7 @@ $\tau(n + 1) \equiv R_{25}(n) \pmod 5$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_twentyfive_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-twentyfive-reg).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_twentyfive_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-twentyfive-reg).
 
 ## 25-regular partitions modulo 5 and the divisor sum
 
@@ -219,7 +219,7 @@ $R_{25}(n) \equiv (n + 1) \, \sigma(n + 1) \pmod 5$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.card_twentyfive_regular_modEq_mul_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-twentyfive-regular-mod-eq-mul-sigma).
+Stated but not proved: `MetaMathlibExt.card_twentyfive_regular_modEq_mul_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-twentyfive-regular-mod-eq-mul-sigma).
 
 ## Ramanujan's $\tau$ modulo $7$ via triangular numbers
 
@@ -232,7 +232,7 @@ pairs of integers $m, r \ge 0$ with $m(m + 1)/2 + 7r(r + 1)/2 = n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_triangular_sum_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-triangular-sum).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_triangular_sum_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-triangular-sum).
 
 ## Ramanujan's $\tau$ modulo $11$ via pentagonal numbers
 
@@ -246,7 +246,7 @@ $P(l) + P(m) + 11P(s) + 11P(r) = n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-sum).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-sum).
 
 ## Ramanujan's $\tau$ modulo $13$ via $\tau_{11}$
 
@@ -267,7 +267,7 @@ which follows from Definition 1.1 and is used in the proof.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau).
 
 ## Ramanujan's $\tau$ modulo $17$ via $\tau_7$
 
@@ -288,7 +288,7 @@ which follows from Definition 1.1 and is used in the proof.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau-2).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau-2).
 
 ## Ramanujan's $\tau$ modulo $19$ via $\tau_5$
 
@@ -309,7 +309,7 @@ which follows from Definition 1.1 and is used in the proof.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau-3).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-tau-3).
 
 ## Ramanujan's $\tau$ modulo $23$ via pentagonal numbers
 
@@ -323,7 +323,7 @@ $P(r) + 23P(s) = n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_twentythree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-sum-2).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_twentythree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-pentagonal-sum-2).
 
 ## Ramanujan's $\tau$ modulo $25$ via $5$-regular partitions
 
@@ -340,7 +340,7 @@ the sum running over all integers $s \ge 0$ and $t$ with $5s(s + 1)/2 + 5P(t) \l
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_five_regular_sum_twentyfive` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-five-regular-s).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_succ_modEq_five_regular_sum_twentyfive` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-succ-mod-eq-five-regular-s).
 
 ## Generalized tau at a prime power modulo the prime
 
@@ -356,7 +356,7 @@ if $n = p^s P(t)$, and $\tau_{p^s}(n + 1) \equiv 0 \pmod{p}$ if $n$ is not of th
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_prime_pow_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-prime-pow-succ-mod-eq).
+Stated but not proved: `MetaMathlibExt.generalizedTau_prime_pow_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-prime-pow-succ-mod-eq).
 
 ## Generalized tau function $\tau_{2p}$ modulo $p$
 
@@ -378,7 +378,7 @@ paper's proof gives $n = p(P(r) + P(s))$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-succ-mod-e).
+Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-succ-mod-e).
 
 ## $\tau_{2p}(n + 1)$ vanishes modulo $p$ when $p \nmid n$
 
@@ -393,7 +393,7 @@ residue.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_succ_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-succ-mod-e-2).
+Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_succ_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-succ-mod-e-2).
 
 ## Generalized tau at $2p + 1$ modulo $p$
 
@@ -410,7 +410,7 @@ gives the index $n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_add_one_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-add-one-su).
+Stated but not proved: `MetaMathlibExt.generalizedTau_two_mul_prime_add_one_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-two-mul-prime-add-one-su).
 
 ## Generalized tau at $p^2 + 1$ modulo $p$
 
@@ -427,7 +427,7 @@ index $n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_prime_sq_add_one_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-prime-sq-add-one-succ-mo).
+Stated but not proved: `MetaMathlibExt.generalizedTau_prime_sq_add_one_succ_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-prime-sq-add-one-succ-mo).
 
 ## A congruence for 9-regular partitions at $4n + 1$
 
@@ -439,7 +439,7 @@ $R_9(4n + 1) \equiv R_9(n) \pmod 3$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.card_nine_regular_four_mul_add_one_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-four-mul-add-one-mod-e).
+Stated but not proved: `MetaMathlibExt.card_nine_regular_four_mul_add_one_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-four-mul-add-one-mod-e).
 
 ## Iterated congruences for 9-regular partitions modulo 3
 
@@ -453,7 +453,7 @@ $R_9(2 \cdot 4^{s-1} + N_s) \equiv 0 \pmod 3$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.card_nine_regular_iterate_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-iterate-mod-eq).
+Stated but not proved: `MetaMathlibExt.card_nine_regular_iterate_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-nine-regular-iterate-mod-eq).
 
 ## Prime-regular partitions and the generalized tau function
 
@@ -466,7 +466,7 @@ $q \prod_{j \ge 1} (1 - q^j)^k$. Then $R_p(n) \equiv \tau_{p-1}(n + 1) \pmod p$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.card_prime_regular_modEq_generalizedTau_pred` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-prime-regular-mod-eq-generalized-ta).
+Stated but not proved: `MetaMathlibExt.card_prime_regular_modEq_generalizedTau_pred` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#card-prime-regular-mod-eq-generalized-ta).
 
 ## Binomial coefficients $\binom{n+k}{k}$ modulo an odd prime
 
@@ -479,7 +479,7 @@ $\binom{n+k}{k} \equiv 0 \pmod l$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.choose_add_modEq_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#choose-add-mod-eq-prime).
+Stated but not proved: `MetaMathlibExt.choose_add_modEq_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#choose-add-mod-eq-prime).
 
 ## $\tau_{-k}$ and partition convolutions modulo a prime
 
@@ -503,7 +503,7 @@ Corollary 4.3 (the record's Corollary 6) uses this shifted form, $\omega(t) = \t
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 21.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_neg_succ_modEq_partition_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-neg-succ-mod-eq-partitio).
+Stated but not proved: `MetaMathlibExt.generalizedTau_neg_succ_modEq_partition_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-neg-succ-mod-eq-partitio).
 
 ## Partition convolution modulo $3$
 
@@ -520,7 +520,7 @@ $s$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.partition_convolution_two_modEq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#partition-convolution-two-mod-eq-three).
+Stated but not proved: `MetaMathlibExt.partition_convolution_two_modEq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#partition-convolution-two-mod-eq-three).
 
 ## Partition composition sums vanishing modulo a prime
 
@@ -539,7 +539,7 @@ with sum $n$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.partition_composition_sum_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#partition-composition-sum-mod-eq-zero).
+Stated but not proved: `MetaMathlibExt.partition_composition_sum_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#partition-composition-sum-mod-eq-zero).
 
 ## Ramanujan's congruence modulo $7$
 
@@ -551,7 +551,7 @@ $\tau(7n) \equiv 0 \pmod 7$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_seven_mul_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-seven-mul-mod-eq-zero).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_seven_mul_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-seven-mul-mod-eq-zero).
 
 ## Vanishing of $\tau_k(n)$ modulo the prime $k - 1$
 
@@ -564,7 +564,7 @@ $P(t) \le n - 1$, then the generalized tau function satisfies $\tau_k(n) \equiv 
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_modEq_zero_of_pentagonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-mod-eq-zero-of-pentagona).
+Stated but not proved: `MetaMathlibExt.generalizedTau_modEq_zero_of_pentagonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-mod-eq-zero-of-pentagona).
 
 ## Divisibility of $n\,\tau_k(n + 1)$ by $|k|$
 
@@ -576,7 +576,7 @@ $n\,\tau_k(n + 1) \equiv 0 \pmod{|k|}$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.mul_generalizedTau_succ_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#mul-generalized-tau-succ-mod-eq-zero).
+Stated but not proved: `MetaMathlibExt.mul_generalizedTau_succ_modEq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#mul-generalized-tau-succ-mod-eq-zero).
 
 ## Vanishing of the generalized tau function modulo $|k|/d$
 
@@ -590,7 +590,7 @@ $\tau_k(|k| m + d r + 1) \equiv 0 \pmod{|k|/d}$.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedTau_modEq_zero_of_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-mod-eq-zero-of-coprime).
+Stated but not proved: `MetaMathlibExt.generalizedTau_modEq_zero_of_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#generalized-tau-mod-eq-zero-of-coprime).
 
 ## Ramanujan's tau function modulo divisors of $24$
 
@@ -611,7 +611,7 @@ congruences are as printed.
 
 - S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.ramanujanTau_modEq_divisors_twentyfour` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-mod-eq-divisors-twentyfour).
+Stated but not proved: `MetaMathlibExt.ramanujanTau_modEq_divisors_twentyfour` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedTauRegularPartitionWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html#ramanujan-tau-mod-eq-divisors-twentyfour).
 
 ## Depends on
 
@@ -620,4 +620,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Regular partitions and a generalized tau function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-partitions-and-a-generalized-tau-functio)

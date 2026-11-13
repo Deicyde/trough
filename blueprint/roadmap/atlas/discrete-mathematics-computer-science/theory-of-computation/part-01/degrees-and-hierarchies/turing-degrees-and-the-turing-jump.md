@@ -8,7 +8,7 @@ proof: formalized
 
 # Turing degrees and the Turing jump
 
-40 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html).
+40 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html).
 
 ## Oracle codes
 
@@ -23,7 +23,7 @@ extended by an instruction $\mathtt{oracle}$ that queries the oracle on its inpu
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
 
-Formalized by `Cslib.Decidability.OracleCode`, an inductive type declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code).
+Formalized by `Cslib.Decidability.OracleCode`, an inductive type declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code).
 
 ## The Gödel numbering of oracle codes
 
@@ -44,7 +44,7 @@ This numbering is an injection into $\mathbb{N}$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings).
 
-Formalized by `Cslib.Decidability.encodeOracleCode`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#encode-oracle-code).
+Formalized by `Cslib.Decidability.encodeOracleCode`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#encode-oracle-code).
 
 ## The Gödel numbering of oracle codes is injective
 
@@ -54,7 +54,7 @@ Formalized by `Cslib.Decidability.encodeOracleCode`, a definition declared in [C
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings).
 
-Formalized by `Cslib.Decidability.encodeOracleCode_injective`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#encode-oracle-code-injective).
+Formalized by `Cslib.Decidability.encodeOracleCode_injective`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#encode-oracle-code-injective).
 
 ## Pairing is at least its first argument
 
@@ -66,7 +66,7 @@ numbers $a$ and $b$, $a \le \langle a, b \rangle$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.pair_ge_fst`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-ge-fst).
+Formalized by `Cslib.Decidability.pair_ge_fst`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-ge-fst).
 
 ## Pairing is at least its second argument
 
@@ -78,7 +78,7 @@ numbers $a$ and $b$, $b \le \langle a, b \rangle$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.pair_ge_snd`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-ge-snd).
+Formalized by `Cslib.Decidability.pair_ge_snd`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-ge-snd).
 
 ## Pairing with $4$ strictly increases the second argument
 
@@ -90,7 +90,7 @@ For every natural number $x$, $x < \langle 4, x \rangle$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.pair_four_gt`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-four-gt).
+Formalized by `Cslib.Decidability.pair_four_gt`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-four-gt).
 
 ## Pairing with a positive first argument strictly increases the second
 
@@ -103,7 +103,7 @@ $x < \langle t, x \rangle$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.pair_gt_snd_of_pos`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-gt-snd-of-pos).
+Formalized by `Cslib.Decidability.pair_gt_snd_of_pos`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#pair-gt-snd-of-pos).
 
 ## The first unpairing component is at most the number
 
@@ -116,7 +116,7 @@ For every natural number $n$, the first component of $\mathrm{pair}^{-1}(n)$ is 
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.unpair_fst_le`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#unpair-fst-le).
+Formalized by `Cslib.Decidability.unpair_fst_le`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#unpair-fst-le).
 
 ## The second unpairing component is at most the number
 
@@ -129,7 +129,7 @@ For every natural number $n$, the second component of $\mathrm{pair}^{-1}(n)$ is
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3 (pairing functions).
 
-Formalized by `Cslib.Decidability.unpair_snd_le`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#unpair-snd-le).
+Formalized by `Cslib.Decidability.unpair_snd_le`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#unpair-snd-le).
 
 ## Depth of an oracle code
 
@@ -140,7 +140,7 @@ one to the maximum depth of its children.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; size bounds).
 
-Formalized by `Cslib.Decidability.oracleCodeDepth`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-depth).
+Formalized by `Cslib.Decidability.oracleCodeDepth`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-depth).
 
 ## Fuel-indexed decoder of oracle codes
 
@@ -163,7 +163,7 @@ computable function; with enough fuel it inverts the Gödel numbering of oracle 
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCodeFuel`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel).
+Formalized by `Cslib.Decidability.decodeOracleCodeFuel`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel).
 
 ## The fuel-indexed decoder inverts the encoder
 
@@ -176,7 +176,7 @@ depth of $c$, the fuel-indexed decoder with fuel $f$, tag $t$ and payload $p$ re
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCodeFuel_complete`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-complete).
+Formalized by `Cslib.Decidability.decodeOracleCodeFuel_complete`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-complete).
 
 ## Decoder soundness
 
@@ -192,7 +192,7 @@ code depth, this says that the decoder is exactly the inverse of the Gödel numb
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCodeFuel_sound`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-sound).
+Formalized by `Cslib.Decidability.decodeOracleCodeFuel_sound`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-sound).
 
 ## Depth is bounded by the code number
 
@@ -203,7 +203,7 @@ the code number of $c$ under the Gödel numbering of oracle codes.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; size bounds).
 
-Formalized by `Cslib.Decidability.oracleCodeDepth_le_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-depth-le-encode).
+Formalized by `Cslib.Decidability.oracleCodeDepth_le_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-depth-le-encode).
 
 ## Decoding oracle codes
 
@@ -217,7 +217,7 @@ its code number.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCode`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code).
+Formalized by `Cslib.Decidability.decodeOracleCode`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code).
 
 ## The computable decoder inverts the encoder
 
@@ -228,7 +228,7 @@ decoder applied to the Gödel number of $c$ returns $c$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCode_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-encode).
+Formalized by `Cslib.Decidability.decodeOracleCode_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-encode).
 
 ## The fuel-indexed decoder agrees with the total decoder
 
@@ -240,7 +240,7 @@ the code number gives the same result as decoding the code number itself.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCodeFuel_eq_decode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-eq-decode).
+Formalized by `Cslib.Decidability.decodeOracleCodeFuel_eq_decode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-fuel-eq-decode).
 
 ## The decoder, by cases on the tag
 
@@ -262,7 +262,7 @@ and hence strictly below $\langle t, p \rangle$, so this is a recursion on the c
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeOracleCode_pair`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-pair).
+Formalized by `Cslib.Decidability.decodeOracleCode_pair`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-oracle-code-pair).
 
 ## Whether a code number decodes
 
@@ -276,7 +276,7 @@ number of an oracle code.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeIsSome`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some).
+Formalized by `Cslib.Decidability.decodeIsSome`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some).
 
 ## The definedness predicate, by cases on the tag
 
@@ -294,7 +294,7 @@ $\langle t, p \rangle$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeIsSome_pair`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-pair).
+Formalized by `Cslib.Decidability.decodeIsSome_pair`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-pair).
 
 ## One step of the course-of-values recursion for definedness
 
@@ -315,7 +315,7 @@ $p_2$ and $p$ are smaller than $m$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeIsSomeStep`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-step).
+Formalized by `Cslib.Decidability.decodeIsSomeStep`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-step).
 
 ## The course-of-values step for definedness is primitive recursive
 
@@ -327,7 +327,7 @@ arguments, an element of the unit type and a list of natural numbers.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.primrec₂_decodeIsSomeStep`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 799](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L799). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-decode-is-some-step).
+Formalized by `Cslib.Decidability.primrec₂_decodeIsSomeStep`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 799](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L799). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-decode-is-some-step).
 
 ## The definedness step function is correct
 
@@ -340,7 +340,7 @@ $(b_0, b_1, \dots, b_{m-1})$, returns $b_m$.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.decodeIsSomeStep_correct`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 883](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L883). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-step-correct).
+Formalized by `Cslib.Decidability.decodeIsSomeStep_correct`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 883](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L883). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#decode-is-some-step-correct).
 
 ## The definedness predicate is primitive recursive
 
@@ -352,7 +352,7 @@ otherwise is primitive recursive.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.natPrimrec_decodeIsSome`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#nat-primrec-decode-is-some).
+Formalized by `Cslib.Decidability.natPrimrec_decodeIsSome`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#nat-primrec-decode-is-some).
 
 ## Effective enumeration of oracle codes
 
@@ -366,7 +366,7 @@ not an arbitrary countable encoding.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
 
-Formalized by `Cslib.Decidability.oracleCodeOfNat`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat).
+Formalized by `Cslib.Decidability.oracleCodeOfNat`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat).
 
 ## The effective enumeration is a left inverse of the Gödel numbering
 
@@ -377,7 +377,7 @@ $c$, the effective enumeration of oracle codes sends the code number of $c$ to $
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
 
-Formalized by `Cslib.Decidability.oracleCodeOfNat_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1058](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1058). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat-encode).
+Formalized by `Cslib.Decidability.oracleCodeOfNat_encode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1058](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1058). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat-encode).
 
 ## The enumeration of oracle codes is surjective
 
@@ -387,7 +387,7 @@ Formalized by `Cslib.Decidability.oracleCodeOfNat_encode`, a theorem declared in
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
 
-Formalized by `Cslib.Decidability.oracleCodeOfNat_surjective`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1065](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat-surjective).
+Formalized by `Cslib.Decidability.oracleCodeOfNat_surjective`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1065](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-code-of-nat-surjective).
 
 ## The Gödel encoding of oracle codes is primitive recursive
 
@@ -399,7 +399,7 @@ code to its Gödel number is primitive recursive.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings).
 
-Formalized by `Cslib.Decidability.primrec_encodeOracleCode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1098](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1098). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-encode-oracle-code).
+Formalized by `Cslib.Decidability.primrec_encodeOracleCode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1098](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1098). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-encode-oracle-code).
 
 ## The Gödel decoder of oracle codes is primitive recursive
 
@@ -412,7 +412,7 @@ recursive as a map from natural numbers to optional oracle codes.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (Gödel numberings; decoding).
 
-Formalized by `Cslib.Decidability.primrec_decodeOracleCode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-decode-oracle-code).
+Formalized by `Cslib.Decidability.primrec_decodeOracleCode`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-decode-oracle-code).
 
 ## The effective enumeration of oracle codes is primitive recursive
 
@@ -425,7 +425,7 @@ code otherwise, is primitive recursive.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
 
-Formalized by `Cslib.Decidability.primrec_oracleCodeOfNat`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-oracle-code-of-nat).
+Formalized by `Cslib.Decidability.primrec_oracleCodeOfNat`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#primrec-oracle-code-of-nat).
 
 ## The effective enumeration of oracle codes is computable
 
@@ -435,7 +435,7 @@ Formalized by `Cslib.Decidability.primrec_oracleCodeOfNat`, a theorem declared i
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.6 (standard enumerations).
 
-Formalized by `Cslib.Decidability.computable_oracleCodeOfNat`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#computable-oracle-code-of-nat).
+Formalized by `Cslib.Decidability.computable_oracleCodeOfNat`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#computable-oracle-code-of-nat).
 
 ## Fuel-indexed evaluation of oracle codes
 
@@ -462,7 +462,7 @@ In every case the result fails if any evaluation it uses fails.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
 
-Formalized by `Cslib.Decidability.oracleEvaln`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-evaln).
+Formalized by `Cslib.Decidability.oracleEvaln`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-evaln).
 
 ## Fuel bounds the inputs
 
@@ -474,7 +474,7 @@ $n < k$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
 
-Formalized by `Cslib.Decidability.oracleEvaln_bound`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-evaln-bound).
+Formalized by `Cslib.Decidability.oracleEvaln_bound`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-evaln-bound).
 
 ## Evaluation of oracle codes
 
@@ -488,7 +488,7 @@ when there is no such $k$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, §2 (oracle computations).
 
-Formalized by `Cslib.Decidability.oracleEval`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-eval).
+Formalized by `Cslib.Decidability.oracleEval`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#oracle-eval).
 
 ## The Turing jump
 
@@ -502,7 +502,7 @@ oracle $P$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.1 (the jump).
 
-Formalized by `Cslib.Decidability.Jump`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#jump).
+Formalized by `Cslib.Decidability.Jump`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#jump).
 
 ## Turing reducibility of predicates
 
@@ -515,7 +515,7 @@ oracle for the characteristic function of $Q$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.2.
 
-Formalized by `Cslib.Decidability.TuringReduciblePred`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred).
+Formalized by `Cslib.Decidability.TuringReduciblePred`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred).
 
 ## Turing equivalence of predicates
 
@@ -528,7 +528,7 @@ characteristic function of $P$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.2.
 
-Formalized by `Cslib.Decidability.TuringEquivalentPred`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-equivalent-pred).
+Formalized by `Cslib.Decidability.TuringEquivalentPred`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-equivalent-pred).
 
 ## Turing degree of a predicate
 
@@ -541,7 +541,7 @@ $\mathbb{N} \rightharpoonup \mathbb{N}$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 2.3.
 
-Formalized by `Cslib.Decidability.turingDegreeOf`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-degree-of).
+Formalized by `Cslib.Decidability.turingDegreeOf`, a definition declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-degree-of).
 
 ## Turing reducibility is reflexive
 
@@ -552,7 +552,7 @@ reducible to itself.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 2.4.
 
-Formalized by `Cslib.Decidability.turingReduciblePred_refl`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred-refl).
+Formalized by `Cslib.Decidability.turingReduciblePred_refl`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred-refl).
 
 ## Turing reducibility is transitive
 
@@ -564,7 +564,7 @@ reducible to $R$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 2.4.
 
-Formalized by `Cslib.Decidability.turingReduciblePred_trans`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Degrees.lean#L1216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred-trans).
+Formalized by `Cslib.Decidability.turingReduciblePred_trans`, a theorem declared in [CSLibExt/Computability/Decidability/Degrees.lean, line 1216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Degrees.lean#L1216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html#turing-reducible-pred-trans).
 
 ## Depends on
 
@@ -573,4 +573,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Turing degrees and the Turing jump](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/degrees-and-hierarchies/turing-degrees-and-the-turing-jump)

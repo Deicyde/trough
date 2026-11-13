@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.DerivedCategory.Ext, CategoryTheory.Abelian.zExt, DerivedCategory.surjective_extZero_comp_iff_surjective_comp, ExtByResolutions.ext_via_injective_resolution_bijective, ExtByResolutions.ext_via_projective_resolution_bijective, DerivedCategory.bijective_homologyFunctor_shiftMap_of_isLE_of_isGE, CategoryTheory.Abelian.YonedaExtension, CategoryTheory.Abelian.YonedaExtension.Equivalent
+lean: CategoryTheory.DerivedCategory.Ext, CategoryTheory.Abelian.zExt, DerivedCategory.surjective_extZero_comp_iff_surjective_comp, ExtByResolutions.ext_via_injective_resolution_bijective, ExtByResolutions.ext_via_projective_resolution_bijective, DerivedCategory.bijective_homologyFunctor_shiftMap_of_isLE_of_isGE, DerivedCategory.zExt_subsingleton_of_neg_and_bijective_mk₀, CategoryTheory.Abelian.YonedaExtension
 statement: formalized
 proof: formalized
 ---
 
 # 13.27 Ext groups
 
-Section 13.27 of the Stacks Project, [Tag 06XP](https://stacks.math.columbia.edu/tag/06XP). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.27 of the Stacks Project, [Tag 06XP](https://stacks.math.columbia.edu/tag/06XP). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06XQ, a definition
 
 [Tag 06XQ](https://stacks.math.columbia.edu/tag/06XQ) in the Stacks Project.
 
-**`CategoryTheory.DerivedCategory.Ext`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L51). References: SGA 4½ Etat 0 (3.2.1).
+**`CategoryTheory.DerivedCategory.Ext`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L51). References: SGA 4½ Etat 0 (3.2.1).
 
 > The `i`-th extension group `Ext^i_𝒜(X, Y) = Hom_{D(𝒜)}(X, Y⟦i⟧)` of an object `X` of the
 > derived category `D(𝒜)` of an abelian category `𝒜` by an object `Y`, for `i : ℤ`. It is
@@ -25,7 +25,7 @@ Section 13.27 of the Stacks Project, [Tag 06XP](https://stacks.math.columbia.edu
 public noncomputable abbrev DerivedCategory.Ext (X Y : DerivedCategory C) (i : ℤ) : Type _
 ```
 
-**`CategoryTheory.Abelian.zExt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L59). References: SGA 4½ Etat 0 (3.2.1), “degree-0 objects”.
+**`CategoryTheory.Abelian.zExt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L59). References: SGA 4½ Etat 0 (3.2.1), “degree-0 objects”.
 
 > The `i`-th extension group `Ext^i_𝒜(A, B) = Ext^i_𝒜(A[0], B[0])` of an object `A` of an
 > abelian category `𝒜` by an object `B`, for `i : ℤ`, where `A[0]` is the image of `A` under
@@ -36,7 +36,7 @@ public noncomputable abbrev DerivedCategory.Ext (X Y : DerivedCategory C) (i : �
 public noncomputable abbrev Abelian.zExt (A B : C) (i : ℤ) : Type _
 ```
 
-**`DerivedCategory.surjective_extZero_comp_iff_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/ZeroDegree.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/ZeroDegree.lean#L40). The attribute's comment: “degree zero”.
+**`DerivedCategory.surjective_extZero_comp_iff_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/ZeroDegree.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/ZeroDegree.lean#L40). The attribute's comment: “degree zero”.
 
 > Precomposition with `ξ` is surjective on degree-zero `Ext` groups into `Y` exactly when it
 > is surjective on morphisms into `Y`. In degree `0` an `Ext` class *is* a morphism, by
@@ -53,7 +53,7 @@ public theorem surjective_extZero_comp_iff_surjective_comp
 
 [Tag 06XR](https://stacks.math.columbia.edu/tag/06XR) in the Stacks Project.
 
-**`ExtByResolutions.ext_via_injective_resolution_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L681). The attribute's comment: “(1)”.
+**`ExtByResolutions.ext_via_injective_resolution_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 681](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L681). The attribute's comment: “(1)”.
 
 > Statement 1 (Stacks 06XR, part 1): computing Ext via an injective resolution.
 > Given an injective resolution `f : Y ⟶ I` (Definition 2), the canonical map
@@ -70,7 +70,7 @@ theorem ext_via_injective_resolution_bijective
     Function.Bijective (canMapOfInjectiveResolution X Y I i f)
 ```
 
-**`ExtByResolutions.ext_via_projective_resolution_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L724). The attribute's comment: “(2)”.
+**`ExtByResolutions.ext_via_projective_resolution_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L724). The attribute's comment: “(2)”.
 
 > Statement 2 (Stacks 06XR, part 2): computing Ext via a projective resolution.
 > Given a projective resolution `g : P ⟶ X` (Definition 3), the canonical map
@@ -91,7 +91,7 @@ theorem ext_via_projective_resolution_bijective
 
 [Tag 06XS](https://stacks.math.columbia.edu/tag/06XS) in the Stacks Project.
 
-**`DerivedCategory.bijective_homologyFunctor_shiftMap_of_isLE_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L571).
+**`DerivedCategory.bijective_homologyFunctor_shiftMap_of_isLE_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L573). The attribute's comment: “(1)”.
 
 > Let `𝒜` be an abelian category and let `X`, `Y` be objects of `D(𝒜)` such that
 > `H^i(X) = 0` for `i > a` and `H^j(Y) = 0` for `j < b`. If `n + a = a'` and `a' ≤ b`, then taking
@@ -110,11 +110,29 @@ public theorem bijective_homologyFunctor_shiftMap_of_isLE_of_isGE
         (homologyFunctor C a).obj X ⟶ (homologyFunctor C a').obj Y))
 ```
 
+**`DerivedCategory.zExt_subsingleton_of_neg_and_bijective_mk₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L603). The attribute's comment: “(2)”.
+
+> Let `𝒜` be an abelian category and let `A`, `B` be objects of `𝒜`. For `i < 0` we have
+> `Ext^i_𝒜(B, A) = 0`, and `Ext^0_𝒜(B, A) = Hom_𝒜(B, A)`: the map sending `f : B ⟶ A` to the
+> class of `f[0] : B[0] ⟶ A[0]` in `Ext^0_𝒜(B, A)` is bijective. Here
+> `Ext^i_𝒜(B, A) = Hom_{D(𝒜)}(B[0], A[0]⟦i⟧)` is `CategoryTheory.Abelian.zExt B A i`.
+>
+> The vanishing is the case `X = B[0]`, `Y = A[0]`, `a = b = 0` of
+> `bijective_homologyFunctor_shiftMap_of_isLE_of_isGE`, whose target `Hom_𝒜(B, H^i(A[0]))` is
+> zero for `i < 0`; the degree-zero statement is the full faithfulness of `𝒜 ⥤ D(𝒜)`.
+
+```lean
+public theorem zExt_subsingleton_of_neg_and_bijective_mk₀ (B A : C) :
+    (∀ i < 0, Subsingleton (Abelian.zExt B A i)) ∧
+      Function.Bijective (fun f : B ⟶ A ↦
+        (ShiftedHom.mk₀ (0 : ℤ) rfl ((singleFunctor C 0).map f) : Abelian.zExt B A 0))
+```
+
 ## Tag 06XT, a definition
 
 [Tag 06XT](https://stacks.math.columbia.edu/tag/06XT) in the Stacks Project.
 
-**`CategoryTheory.Abelian.YonedaExtension`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82).
+**`CategoryTheory.Abelian.YonedaExtension`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82).
 
 > A *degree `n + 1` Yoneda extension of `B` by `A`* in an abelian category `𝒜` is an exact
 > sequence `0 → A → Z_n → Z_{n - 1} → ⋯ → Z_0 → B → 0` in `𝒜`. It is given by the sequence
@@ -127,7 +145,7 @@ public theorem bijective_homologyFunctor_shiftMap_of_isLE_of_isGE
 public structure YonedaExtension (B A : 𝒜) (n : ℕ)
 ```
 
-**`CategoryTheory.Abelian.YonedaExtension.Equivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L109).
+**`CategoryTheory.Abelian.YonedaExtension.Equivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L109).
 
 > Two degree `n + 1` Yoneda extensions `E`, `E'` of `B` by `A` in an abelian category are
 > *equivalent* if there exists a degree `n + 1` Yoneda extension `E''` of `B` by `A` and maps
@@ -143,7 +161,7 @@ public def YonedaExtension.Equivalent (E E' : YonedaExtension B A n) : Prop
 
 [Tag 06XU](https://stacks.math.columbia.edu/tag/06XU) in the Stacks Project.
 
-**`CategoryTheory.Abelian.eq_of_isExtClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L422). The attribute's comment: “uniqueness of the class map”.
+**`CategoryTheory.Abelian.eq_of_isExtClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L427). The attribute's comment: “uniqueness of the class map”.
 
 > There is at most one class map: the degree `1` values are prescribed, and cutting an
 > extension at its left end computes the value in degree `n + 2` from a value in degree `n + 1`.
@@ -154,21 +172,24 @@ lemma eq_of_isExtClassMap
     (h₁ : IsExtClassMap δ₁) (h₂ : IsExtClassMap δ₂) : δ₁ = δ₂
 ```
 
-**`CategoryTheory.Abelian.extClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L442). The attribute's comment: “the class map δ itself; `isExtClassMap_extClassMap` is its two defining properties and `eq_of_isExtClassMap` their uniqueness”. References: EGA 0 (12.3.2), “canonical map δ”.
+**`CategoryTheory.Abelian.extClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L452). The attribute's comment: “the class map, which is the source's `δ(E) = f s⁻¹` up to the sign `(-1)^{i(i + 1)/2}` (`YonedaExtension.yonedaClass_eq_units_smul_extClassMap`); `isExtClassMap_extClassMap` is its two defining properties and `eq_of_isExtClassMap` their uniqueness”. References: EGA 0 (12.3.2), “canonical map δ”.
 
 > **The class of a Yoneda extension.** It is defined by recursion on the degree: in degree `1`
 > it is the class `CategoryTheory.ShortComplex.ShortExact.extClass` of the short exact sequence
 > the extension is, and in degree `n + 2` it is the class of the extension cut at its left end
 > (`cut`) composed with the class of the cutting short exact sequence
 > (`shortExact_cut`). It is the unique such map: `isExtClassMap_extClassMap` is the pair of
-> properties and `eq_of_isExtClassMap` their uniqueness.
+> properties and `eq_of_isExtClassMap` their uniqueness. The source's class `δ(E) = f s⁻¹`, for the
+> quasi-isomorphism `s` from the complex of the extension to `B[0]` and the map `f` to `A[n + 1]`, is
+> `CategoryTheory.Abelian.YonedaExtension.yonedaClass`; it equals this map up to the sign
+> `(-1)^{(n + 1)(n + 2)/2}` (`YonedaExtension.yonedaClass_eq_units_smul_extClassMap`).
 
 ```lean
 noncomputable def extClassMap {B : 𝒜} :
     ∀ (n : ℕ) {A : 𝒜}, YonedaExtension B A n → Ext.{w} B A (n + 1)
 ```
 
-**`CategoryTheory.Abelian.extClassMap_eq_of_equivalent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L489). The attribute's comment: “equivalent Yoneda extensions have the same class”. References: EGA 0 (12.3.2), “E~E' ⇒ δE=δE'”; SGA 7 VII (3.2), “c(X, special case”.
+**`CategoryTheory.Abelian.extClassMap_eq_of_equivalent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L499). The attribute's comment: “equivalent Yoneda extensions have the same class”. References: EGA 0 (12.3.2), “E~E' ⇒ δE=δE'”; SGA 7 VII (3.2), “c(X, special case”.
 
 > Equivalent Yoneda extensions have the same class.
 
@@ -177,7 +198,7 @@ lemma extClassMap_eq_of_equivalent {B A : 𝒜} {n : ℕ} {E E' : YonedaExtensio
     (h : E.Equivalent E') : extClassMap n E = extClassMap n E'
 ```
 
-**`CategoryTheory.Abelian.isExtClassMap_extClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L523). The attribute's comment: “the two defining properties of the class map”.
+**`CategoryTheory.Abelian.isExtClassMap_extClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L533). The attribute's comment: “the two defining properties of the class map”.
 
 > The class map has the two properties which pin it down.
 
@@ -186,7 +207,7 @@ lemma isExtClassMap_extClassMap :
     IsExtClassMap (fun (_ _ : 𝒜) (n : ℕ) (E : YonedaExtension _ _ n) => extClassMap.{w} n E)
 ```
 
-**`CategoryTheory.Abelian.surjective_extClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L608). The attribute's comment: “every element of `Ext^{n + 1}` is the class of a degree `n + 1` Yoneda extension”. References: EGA 0 (12.3.2), “surjectivity of δ”; SGA 7 VII (3.2.5), “partial”.
+**`CategoryTheory.Abelian.surjective_extClassMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L618). The attribute's comment: “every element of `Ext^{n + 1}` is the class of a degree `n + 1` Yoneda extension”. References: EGA 0 (12.3.2), “surjectivity of δ”; SGA 7 VII (3.2.5), “partial”.
 
 > **The class map is surjective**: every element of `Ext^{n + 1}_𝒜(B, A)` is the class of a
 > degree `n + 1` Yoneda extension of `B` by `A`. The induction is on the degree: an element `ξ`
@@ -205,7 +226,7 @@ lemma surjective_extClassMap (B A : 𝒜) (n : ℕ) :
     Function.Surjective (fun E : YonedaExtension B A n => extClassMap.{w} n E)
 ```
 
-**`CategoryTheory.Abelian.equivalent_of_extClassMap_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L880). The attribute's comment: “Yoneda extensions of the same degree with the same class are equivalent”. References: EGA 0 (12.3.2), “δE=δE' ⇒ E~E'”.
+**`CategoryTheory.Abelian.equivalent_of_extClassMap_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean, line 890](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaClassMap.lean#L890). The attribute's comment: “Yoneda extensions of the same degree with the same class are equivalent”. References: EGA 0 (12.3.2), “δE=δE' ⇒ E~E'”.
 
 > Two Yoneda extensions of the same degree with the same class are equivalent.
 
@@ -214,11 +235,43 @@ lemma equivalent_of_extClassMap_eq {B A : 𝒜} {n : ℕ} (E E' : YonedaExtensio
     (h : extClassMap.{w} n E = extClassMap.{w} n E') : E.Equivalent E'
 ```
 
+**`CategoryTheory.Abelian.YonedaExtension.yonedaClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean#L686). The attribute's comment: “the class `δ(E) = f s⁻¹` of a Yoneda extension, defined before the lemma”.
+
+> **The class `δ(E) = f s⁻¹` of a Yoneda extension.** For a degree `n + 1` Yoneda extension
+> `E : 0 → A → Z_n → ⋯ → Z_0 → B → 0`, it is the element of `Ext^{n + 1}_𝒜(B, A)` given by the
+> morphism `f s⁻¹ : B[0] ⟶ A[n + 1]` of the derived category, where
+> `s = E.complexπ : (⋯ → 0 → A → Z_n → ⋯ → Z_0 → 0 → ⋯) ⟶ B[0]` is the quasi-isomorphism and
+> `f = E.complexι` is the morphism to `A[n + 1]`. The derived category used is the standard one,
+> `HasDerivedCategory.standard`.
+
+```lean
+noncomputable def yonedaClass {n : ℕ} (E : YonedaExtension B A n) : Ext.{w} B A (n + 1)
+```
+
+**`CategoryTheory.Abelian.YonedaExtension.surjective_yonedaClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean, line 887](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean#L887). The attribute's comment: “every element of `Ext^i_𝒜(B, A)`, `i ≥ 1`, is the class `δ(E) = f s⁻¹` of a degree `i` Yoneda extension of `B` by `A`; through `yonedaClass_eq_units_smul_extClassMap` from `surjective_extClassMap`”.
+
+> **Every element of `Ext^{n + 1}` is the class `f s⁻¹` of a Yoneda extension.**
+
+```lean
+theorem surjective_yonedaClass (B A : 𝒜) (n : ℕ) :
+    Function.Surjective (fun E : YonedaExtension B A n => yonedaClass.{w} E)
+```
+
+**`CategoryTheory.Abelian.YonedaExtension.equivalent_iff_yonedaClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean, line 900](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/YonedaComplexClass.lean#L900). The attribute's comment: “two Yoneda extensions of the same degree are equivalent if and only if their classes `δ(E) = f s⁻¹` agree; through `yonedaClass_eq_units_smul_extClassMap` from `extClassMap_eq_of_equivalent` and `equivalent_of_extClassMap_eq`”.
+
+> **Two Yoneda extensions of the same degree are equivalent if and only if they have the same
+> class `f s⁻¹`.**
+
+```lean
+theorem equivalent_iff_yonedaClass_eq {n : ℕ} (E E' : YonedaExtension B A n) :
+    E.Equivalent E' ↔ yonedaClass.{w} E = yonedaClass.{w} E'
+```
+
 ## Tag 06XV, a lemma
 
 [Tag 06XV](https://stacks.math.columbia.edu/tag/06XV) in the Stacks Project.
 
-**`CategoryTheory.Abelian.Ext.extClass_surjective_and_eq_iff_iso_and_baerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L247). References: EGA 0 (12.3.2); SGA 7 VII (3.2.5), “partial”.
+**`CategoryTheory.Abelian.Ext.extClass_surjective_and_eq_iff_iso_and_baerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L249). References: EGA 0 (12.3.2); SGA 7 VII (3.2.5), “partial”.
 
 > **`Ext^1` is the Ext-group of extensions.** Let `𝒜` be an abelian category and let `A`, `B`
 > be objects of `𝒜`. The class `δ(E) ∈ Ext^1_𝒜(B, A)` of an extension
@@ -264,7 +317,7 @@ public theorem Ext.extClass_surjective_and_eq_iff_iso_and_baerSum (B A : 𝒜) :
 
 [Tag 0GSM](https://stacks.math.columbia.edu/tag/0GSM) in the Stacks Project.
 
-**`CategoryTheory.ShortComplex.ShortExact.extClass_comp_extClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L432).
+**`CategoryTheory.ShortComplex.ShortExact.extClass_comp_extClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L434).
 
 > **Vanishing of a Yoneda product of two extension classes.** Let `0 → A → Z → B → 0` and
 > `0 → B → Z' → C → 0` be short exact sequences in an abelian category `𝒜`, with classes
@@ -304,7 +357,7 @@ public theorem extClass_comp_extClass_eq_zero_iff {A Z B Z' C : 𝒜}
 
 [Tag 0EWW](https://stacks.math.columbia.edu/tag/0EWW) in the Stacks Project.
 
-**`CategoryTheory.hasProjectiveDimensionLT_of_forall_ext_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L324).
+**`CategoryTheory.hasProjectiveDimensionLT_of_forall_ext_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtOneAndVanishing.lean#L326).
 
 > **Vanishing of `Ext^p_𝒜(X, -)` forces projective dimension `< p`.**
 > If `𝒜` is an abelian category and `Ext^p_𝒜(X, Y) = 0` for every object `Y` of `𝒜`, then `X` has
@@ -322,7 +375,7 @@ public theorem hasProjectiveDimensionLT_of_forall_ext_eq_zero (X : 𝒜) (p : �
 
 [Tag 0GM4](https://stacks.math.columbia.edu/tag/0GM4) in the Stacks Project.
 
-**`DerivedCategory.nonempty_iso_biproduct_singleFunctor_obj_homology_of_forall_ext_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L365).
+**`DerivedCategory.nonempty_iso_biproduct_singleFunctor_obj_homology_of_forall_ext_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L365).
 
 > **A bounded complex with no higher Ext between its cohomologies is the sum of them.**
 > Let `𝒜` be an abelian category and let `K` be an object of `D(𝒜)` whose cohomology vanishes
@@ -345,7 +398,7 @@ public theorem nonempty_iso_biproduct_singleFunctor_obj_homology_of_forall_ext_e
 
 [Tag 0EWX](https://stacks.math.columbia.edu/tag/0EWX) in the Stacks Project.
 
-**`DerivedCategory.nonempty_iso_biproduct_singleFunctor_obj_homology_of_forall_ext_two_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L413).
+**`DerivedCategory.nonempty_iso_biproduct_singleFunctor_obj_homology_of_forall_ext_two_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/SplittingAndResolutions.lean#L413).
 
 > **A bounded complex over a category with no `Ext²` is the sum of its cohomologies.**
 > Let `𝒜` be an abelian category with `Ext²_𝒜(B, A) = 0` for every pair of objects `A`, `B`, and
@@ -371,4 +424,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.27, Tag 06XP](https://stacks.math.columbia.edu/tag/06XP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

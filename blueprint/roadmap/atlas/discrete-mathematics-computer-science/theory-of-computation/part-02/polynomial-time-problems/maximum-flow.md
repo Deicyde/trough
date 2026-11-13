@@ -7,7 +7,7 @@ statement: formalized
 
 # Maximum flow
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html).
 
 ## Max-flow decision problem
 
@@ -21,7 +21,7 @@ $\sum_{j : v_j = v} f_j = \sum_{j : u_j = v} f_j$ for every $v < n$ other than $
 with $\sum_{j : u_j = s} f_j - \sum_{j : v_j = s} f_j \ge K$, where the subtraction is
 truncated at $0$. Bitstrings that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxFlowInP.maxFlowDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html#max-flow-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MaxFlowInP.maxFlowDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html#max-flow-dec).
 
 ## Max flow is in P (Edmonds-Karp)
 
@@ -36,7 +36,7 @@ least $K$.
 
 - J. Edmonds and R. M. Karp, "Theoretical improvements in algorithmic efficiency for network flow problems", Journal of the ACM 19 (1972), 248-264; L. R. Ford Jr. and D. R. Fulkerson, Flows in Networks, Princeton University Press, 1962.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxFlowInP.max_flow_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html#max-flow-in-p).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MaxFlowInP.max_flow_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MaxFlowInPWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html#max-flow-in-p).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Maximum flow](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/maximum-flow)

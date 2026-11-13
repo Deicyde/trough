@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.14 Derived functors in general
 
-Section 13.14 of the Stacks Project, [Tag 05S7](https://stacks.math.columbia.edu/tag/05S7). 16 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.14 of the Stacks Project, [Tag 05S7](https://stacks.math.columbia.edu/tag/05S7). 16 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05S9, a definition
 
 [Tag 05S9](https://stacks.math.columbia.edu/tag/05S9) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsRightDerivedValueAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L171). References: SGA 4 XVII (1.2.1), “(ii)”; SGA 4 XVII (5.5.5), “right derivable at K”.
+**`CategoryTheory.Functor.IsRightDerivedValueAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L171). References: SGA 4 XVII (1.2.1), “(ii)”; SGA 4 XVII (5.5.5), “right derivable at K”.
 
 > **Stacks 05S9(1)**. The cocone `c` on the ind-object
 > `X/W ⟶ 𝒟'`, `(s : X ⟶ X') ↦ F(X')`
@@ -31,7 +31,7 @@ public def IsRightDerivedValueAt (F : D ⥤ D') (W : MorphismProperty D) (X : D)
     (c : Cocone (MorphismProperty.Under.forget W ⊤ X ⋙ Under.forget X ⋙ F)) : Prop
 ```
 
-**`CategoryTheory.Functor.IsLeftDerivedValueAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L188). References: SGA 4 XVII (5.5.5), “left derivable at K”.
+**`CategoryTheory.Functor.IsLeftDerivedValueAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L188). References: SGA 4 XVII (5.5.5), “left derivable at K”.
 
 > **Stacks 05S9(2)**. The cone `c` on the pro-object
 > `W/X ⟶ 𝒟'`, `(s : X' ⟶ X) ↦ F(X')`
@@ -52,7 +52,7 @@ public def IsLeftDerivedValueAt (F : D ⥤ D') (W : MorphismProperty D) (X : D)
 
 [Tag 05SA](https://stacks.math.columbia.edu/tag/05SA) in the Stacks Project.
 
-**`StacksDerivedFunctor.rightDerivedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L415). The attribute's comment: “(1), the morphism itself; `rightDerivedMap_spec` is its defining property and `rightDerivedMap_unique` is its uniqueness”.
+**`StacksDerivedFunctor.rightDerivedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L415). The attribute's comment: “(1), the morphism itself; `rightDerivedMap_spec` is its defining property and `rightDerivedMap_unique` is its uniqueness”.
 
 > The morphism `RF(f) : RF X ⟶ RF Y` induced by `f : X ⟶ Y` between two values, characterised
 > by `rightDerivedMap_spec` together with `rightDerivedMap_unique`.
@@ -63,7 +63,7 @@ noncomputable def rightDerivedMap [S.HasLeftCalculusOfFractions]
     cX.pt ⟶ cY.pt
 ```
 
-**`StacksDerivedFunctor.rightDerivedMap_spec`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L422). The attribute's comment: “(1), the defining property of `rightDerivedMap`”.
+**`StacksDerivedFunctor.rightDerivedMap_spec`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L422). The attribute's comment: “(1), the defining property of `rightDerivedMap`”.
 
 > `RF(f)` makes each square of Statement 1 commute.
 
@@ -76,7 +76,7 @@ lemma rightDerivedMap_spec [S.HasLeftCalculusOfFractions]
       F.map f' ≫ cY.ι.app (Under.mk ⊤ s' hs')
 ```
 
-**`StacksDerivedFunctor.rightDerivedMap_unique`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L432). The attribute's comment: “(1), uniqueness of `rightDerivedMap`”.
+**`StacksDerivedFunctor.rightDerivedMap_unique`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L432). The attribute's comment: “(1), uniqueness of `rightDerivedMap`”.
 
 > `RF(f)` is the only morphism with that property.
 
@@ -90,7 +90,7 @@ lemma rightDerivedMap_unique [S.HasLeftCalculusOfFractions]
     φ = rightDerivedMap S F hX hY f
 ```
 
-**`StacksDerivedFunctor.leftDerivedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L445). The attribute's comment: “(2), the morphism itself; `leftDerivedMap_spec` is its defining property and `leftDerivedMap_unique` is its uniqueness”.
+**`StacksDerivedFunctor.leftDerivedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L445). The attribute's comment: “(2), the morphism itself; `leftDerivedMap_spec` is its defining property and `leftDerivedMap_unique` is its uniqueness”.
 
 > The morphism `LF(f) : LF X ⟶ LF Y` induced by `f : X ⟶ Y` between two values, characterised
 > by `leftDerivedMap_spec` together with `leftDerivedMap_unique`.
@@ -101,7 +101,7 @@ noncomputable def leftDerivedMap [S.HasRightCalculusOfFractions]
     dX.pt ⟶ dY.pt
 ```
 
-**`StacksDerivedFunctor.leftDerivedMap_spec`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L452). The attribute's comment: “(2), the defining property of `leftDerivedMap`”.
+**`StacksDerivedFunctor.leftDerivedMap_spec`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L452). The attribute's comment: “(2), the defining property of `leftDerivedMap`”.
 
 > `LF(f)` makes each square of Statement 2 commute.
 
@@ -114,7 +114,7 @@ lemma leftDerivedMap_spec [S.HasRightCalculusOfFractions]
       dX.π.app (Over.mk ⊤ s hs) ≫ F.map f'
 ```
 
-**`StacksDerivedFunctor.leftDerivedMap_unique`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L462). The attribute's comment: “(2), uniqueness of `leftDerivedMap`”.
+**`StacksDerivedFunctor.leftDerivedMap_unique`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L462). The attribute's comment: “(2), uniqueness of `leftDerivedMap`”.
 
 > `LF(f)` is the only morphism with that property.
 
@@ -132,7 +132,7 @@ lemma leftDerivedMap_unique [S.HasRightCalculusOfFractions]
 
 [Tag 05SB](https://stacks.math.columbia.edu/tag/05SB) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isRightDerivedValueAt_iff_and_isIso_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L912).
+**`CategoryTheory.Functor.exists_isRightDerivedValueAt_iff_and_isIso_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 915](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L915). The attribute's comment: “(1)”.
 
 > **Stacks 05SB**(1). Let `F : C ⥤ H` be a functor, `W` a class of morphisms of
 > `C` with left calculus of fractions and `s : X ⟶ Y` a morphism in `W`. Then:
@@ -145,8 +145,8 @@ lemma leftDerivedMap_unique [S.HasRightCalculusOfFractions]
 >   along every square `a.hom ≫ f = s ≫ b.hom` — that is, the map `RF(s)` of Stacks
 >   05SA — and `φ` is an isomorphism.
 >
-> Item (2) of the source, for the left derived functor, is this statement applied to
-> `F.op`, `W.op` and `s.op`.
+> Item (2) of the source, for the left derived functor, is
+> `Functor.exists_isLeftDerivedValueAt_iff_and_isIso_of_mem`.
 
 ```lean
 public theorem Functor.exists_isRightDerivedValueAt_iff_and_isIso_of_mem
@@ -161,11 +161,39 @@ public theorem Functor.exists_isRightDerivedValueAt_iff_and_isIso_of_mem
               a.hom ≫ f = s ≫ b.hom → c.ι.app a ≫ φ = F.map f ≫ d.ι.app b) ∧ IsIso φ
 ```
 
+**`CategoryTheory.Functor.exists_isLeftDerivedValueAt_iff_and_isIso_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 1023](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L1023). The attribute's comment: “(2)”.
+
+> **Stacks 05SB**(2). Let `F : C ⥤ H` be a functor, `W` a class of morphisms of
+> `C` with right calculus of fractions and `s : X ⟶ Y` a morphism in `W`. Then:
+>
+> * the left derived functor of `F` is defined at `X` if and only if it is defined
+>   at `Y`, definedness being essential constancy of the pro-object on `W/X` as in
+>   Stacks 05S9;
+> * if `c` is a value of `LF` at `X` and `d` is a value of `LF` at `Y`, there is a
+>   morphism `φ : LF(X) ⟶ LF(Y)` compatible with the projections of `c` and `d`
+>   along every square `a.hom ≫ s = f ≫ b.hom` — that is, the map `LF(s)` of Stacks
+>   05SA — and `φ` is an isomorphism.
+>
+> The proof applies item (1) to `F.op`, `W.op` and `s.op`.
+
+```lean
+public theorem Functor.exists_isLeftDerivedValueAt_iff_and_isIso_of_mem
+    (F : C ⥤ H) (W : MorphismProperty C) [W.HasRightCalculusOfFractions]
+    {X Y : C} {s : X ⟶ Y} (hs : W s) :
+    ((∃ c, F.IsLeftDerivedValueAt W X c) ↔ (∃ d, F.IsLeftDerivedValueAt W Y d)) ∧
+      ∀ {c : Cone (MorphismProperty.Over.forget W ⊤ X ⋙ Over.forget X ⋙ F)}
+        {d : Cone (MorphismProperty.Over.forget W ⊤ Y ⋙ Over.forget Y ⋙ F)},
+        F.IsLeftDerivedValueAt W X c → F.IsLeftDerivedValueAt W Y d →
+          ∃ φ : c.pt ⟶ d.pt,
+            (∀ (a : W.Over ⊤ X) (b : W.Over ⊤ Y) (f : a.left ⟶ b.left),
+              a.hom ≫ s = f ≫ b.hom → φ ≫ d.π.app b = c.π.app a ≫ F.map f) ∧ IsIso φ
+```
+
 ## Tag 05SU, a lemma
 
 [Tag 05SU](https://stacks.math.columbia.edu/tag/05SU) in the Stacks Project.
 
-**`StacksDerivedShift.rightDerived_definedAt_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L509). The attribute's comment: “(1)”.
+**`StacksDerivedShift.rightDerived_definedAt_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L509). The attribute's comment: “(1)”.
 
 > **Statement (1) — `RF` and shifts (definedness biconditional).**
 > `RF` is defined at `X` if and only if `RF` is defined at `X[n]`.
@@ -175,7 +203,7 @@ theorem rightDerived_definedAt_iff_shift (X : D) (n : ℤ) :
     (∃ c, F.IsRightDerivedValueAt S X c) ↔ ∃ c, F.IsRightDerivedValueAt S (X⟦n⟧) c
 ```
 
-**`StacksDerivedShift.rightDerived_value_shift_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L524). The attribute's comment: “(1)”.
+**`StacksDerivedShift.rightDerived_value_shift_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L524). The attribute's comment: “(1)”.
 
 > **Statement (1) — canonical isomorphism of values `RF(X)[n] ≅ RF(X[n])`.**
 > Given a value `c` of `RF` at `X` and a value `d` of `RF` at `X[n]`, this is the canonical
@@ -192,7 +220,7 @@ noncomputable def rightDerived_value_shift_iso (X : D) (n : ℤ)
     c.pt⟦n⟧ ≅ d.pt
 ```
 
-**`StacksDerivedShift.leftDerived_definedAt_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L700). The attribute's comment: “(2)”.
+**`StacksDerivedShift.leftDerived_definedAt_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 700](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L700). The attribute's comment: “(2)”.
 
 > **Statement (2) — `LF` and shifts (definedness biconditional).**
 > `LF` is defined at `X` if and only if `LF` is defined at `X[n]`.
@@ -202,7 +230,7 @@ theorem leftDerived_definedAt_iff_shift (X : D) (n : ℤ) :
     (∃ c, F.IsLeftDerivedValueAt S X c) ↔ ∃ c, F.IsLeftDerivedValueAt S (X⟦n⟧) c
 ```
 
-**`StacksDerivedShift.leftDerived_value_shift_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L714). The attribute's comment: “(2)”.
+**`StacksDerivedShift.leftDerived_value_shift_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ValueShift.lean#L714). The attribute's comment: “(2)”.
 
 > **Statement (2) — canonical isomorphism of values `LF(X)[n] ≅ LF(X[n])`.**
 > Given a value `c` of `LF` at `X` and a value `d` of `LF` at `X[n]`, this is the canonical
@@ -222,7 +250,7 @@ noncomputable def leftDerived_value_shift_iso (X : D) (n : ℤ)
 
 [Tag 05SC](https://stacks.math.columbia.edu/tag/05SC) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isRightDerivedValueAt_and_isLeftDerivedValueAt_and_triangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean#L394). References: SGA 4 XVII (1.2.2), “(ii)”.
+**`CategoryTheory.Functor.exists_isRightDerivedValueAt_and_isLeftDerivedValueAt_and_triangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean#L394). References: SGA 4 XVII (1.2.2), “(ii)”.
 
 > **Stacks 05SC**. Let `F : C ⥤ H` be an exact functor of pretriangulated categories and let
 > `W` be a saturated multiplicative system in `C` (Stacks 05Q8) compatible with the triangulation.
@@ -299,7 +327,7 @@ public theorem exists_isRightDerivedValueAt_and_isLeftDerivedValueAt_and_triangl
 
 [Tag 05SD](https://stacks.math.columbia.edu/tag/05SD) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isDerivedValueAt_biprod_and_isIso_biprod_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean, line 895](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean#L895).
+**`CategoryTheory.Functor.exists_isDerivedValueAt_biprod_and_isIso_biprod_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean, line 895](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean#L895).
 
 > **Stacks 05SD**. Let `F : C ⥤ H` be an exact functor of pretriangulated categories and let
 > `W` be a saturated multiplicative system in `C` (Stacks 05Q8) compatible with the triangulation.
@@ -365,7 +393,80 @@ public theorem exists_isDerivedValueAt_biprod_and_isIso_biprod_lift
 
 [Tag 05SE](https://stacks.math.columbia.edu/tag/05SE) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_and_exists_rightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Subcategory.lean, line 1183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Subcategory.lean#L1183).
+**`CategoryTheory.Functor.isTriangulated_and_exists_leftDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/LeftDerivedSubcategory.lean, line 817](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/LeftDerivedSubcategory.lean#L817). The attribute's comment: “LF: items (1)-(8) for the subcategory on which the left derived functor is defined ('a similar result holds for LF'); the RF statement is isTriangulated\_and\_exists\_rightDerivedFunctor”.
+
+> **Stacks 05SE**, the statement for the left derived functor ("a similar result holds for
+> `LF`"). Let `F : C ⥤ H` be an exact functor of pre-triangulated categories, let `W` be a
+> saturated multiplicative system in `C` (Stacks 05Q8) compatible with the triangulation, and let
+> `E` be the full subcategory of `C` spanned by the objects at which the left derived functor `LF`
+> is defined, i.e. at which the pro-object `(s : X' ⟶ X) ↦ F(X')` on `W/X` has a value in the sense
+> of Stacks 05S9(2). Let `L : C ⥤ D` be a localization functor for `W`, so that `D` is a model of
+> `W⁻¹C`, pre-triangulated by Stacks 05R6. Then, writing `S_E = W.inverseImage E.ι` for the
+> morphisms of `E` lying in `W`:
+>
+> 1. `E` is a strictly full triangulated subcategory of `C`;
+> 2. `LF` is an exact functor `E ⥤ H`;
+> 3. an element of `W` with source or target in `E` has both in `E`, hence is a morphism of `E`;
+> 4. `LF` inverts every element of `S_E`;
+> 5. `S_E` is a saturated multiplicative system in `E` compatible with the triangulation;
+> 6. the induced functor `S_E⁻¹E ⥤ W⁻¹C` is fully faithful and exact;
+> 7. `LF` factors through an exact functor `S_E⁻¹E ⥤ H`;
+> 8. if `H` is Karoubian, `E` is a saturated (thick) triangulated subcategory of `C`.
+>
+> The functor `LF` is pinned by its values: `LF.obj X` is the vertex of a value cone `π X` of the
+> pro-object at `X` (Stacks 05S9(2)), and `LF.map f` is the unique map compatible with the
+> projections along every commutative square with sides in `W` (Stacks 05SA(2)). The functors of
+> (6) and (7) are pinned as lifts through a localization functor `LE` of `E` at `S_E`. The
+> statement for `RF` is `isTriangulated_and_exists_rightDerivedFunctor`.
+
+```lean
+public theorem isTriangulated_and_exists_leftDerivedFunctor
+    (F : C ⥤ H) [F.CommShift ℤ] [F.IsTriangulated]
+    (W : MorphismProperty C) (hW : W.IsSaturated) [W.IsCompatibleWithTriangulation]
+    (E : ObjectProperty C) (hE : ∀ X, E X ↔ ∃ c, F.IsLeftDerivedValueAt W X c)
+    (L : C ⥤ D) [L.IsLocalization W] [L.CommShift ℤ] [L.Additive] :
+    letI := hW.hasLeftCalculusOfFractions
+    letI := Triangulated.Localization.pretriangulated L W
+    -- (1) `E` is a strictly full triangulated subcategory of `C`
+    ∃ (_ : E.IsClosedUnderIsomorphisms) (_ : E.IsTriangulated),
+      -- (3) an element of `W` with source or target in `E` has both in `E`
+      (∀ {X Y : C} (s : X ⟶ Y), W s → (E X ↔ E Y)) ∧
+      -- (8) over a Karoubian target, `E` is saturated
+      (IsIdempotentComplete H → E.IsSaturated) ∧
+      -- (5) `S_E` is a saturated multiplicative system compatible with the triangulation
+      ∃ (hSE : (W.inverseImage E.ι).IsSaturated)
+        (_ : (W.inverseImage E.ι).IsCompatibleWithTriangulation)
+        (LF : E.FullSubcategory ⥤ H) (_ : LF.CommShift ℤ)
+        (π : ∀ X : E.FullSubcategory, (Functor.const (W.Over ⊤ X.obj)).obj (LF.obj X) ⟶
+          MorphismProperty.Over.forget W ⊤ X.obj ⋙ Over.forget X.obj ⋙ F),
+        -- (2) `LF : E ⥤ H` is exact
+        LF.IsTriangulated ∧
+        -- its value at `X` is a value of `LF` at `X` (Stacks 05S9(2))
+        (∀ X : E.FullSubcategory,
+          F.IsLeftDerivedValueAt W X.obj (Cone.mk (LF.obj X) (π X))) ∧
+        -- and its action on morphisms is the map of Stacks 05SA(2)
+        (∀ {X Y : E.FullSubcategory} (f : X ⟶ Y) (a : W.Over ⊤ X.obj) (b : W.Over ⊤ Y.obj)
+          (g : a.left ⟶ b.left), a.hom ≫ E.ι.map f = g ≫ b.hom →
+            LF.map f ≫ (π Y).app b = (π X).app a ≫ F.map g) ∧
+        -- (4) `LF` inverts `S_E`
+        (W.inverseImage E.ι).IsInvertedBy LF ∧
+        letI := hSE.hasLeftCalculusOfFractions
+        ∀ (EL : Type u₄) [Category.{v₄} EL] [HasZeroObject EL] [HasShift EL ℤ] [Preadditive EL]
+          [∀ n : ℤ, (shiftFunctor EL n).Additive] (LE : E.FullSubcategory ⥤ EL)
+          [LE.IsLocalization (W.inverseImage E.ι)] [LE.CommShift ℤ] [LE.Additive],
+          letI := Triangulated.Localization.pretriangulated LE (W.inverseImage E.ι)
+          -- (6) `S_E⁻¹E ⥤ W⁻¹C` is fully faithful and exact
+          (∀ (Φ : EL ⥤ D) [Lifting LE (W.inverseImage E.ι) (E.ι ⋙ L) Φ],
+            Φ.Full ∧ Φ.Faithful ∧
+              (letI := Functor.commShiftOfLocalization LE (W.inverseImage E.ι) ℤ (E.ι ⋙ L) Φ;
+                Φ.IsTriangulated)) ∧
+            -- (7) `LF` factors through an exact functor `S_E⁻¹E ⥤ H`
+            ∀ (LF' : EL ⥤ H) [Lifting LE (W.inverseImage E.ι) LF LF'],
+              letI := Functor.commShiftOfLocalization LE (W.inverseImage E.ι) ℤ LF LF';
+              LF'.IsTriangulated
+```
+
+**`CategoryTheory.Functor.isTriangulated_and_exists_rightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Subcategory.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Subcategory.lean#L1242). The attribute's comment: “RF: items (1)-(8) for the subcategory on which the right derived functor is defined; the LF statement is isTriangulated\_and\_exists\_leftDerivedFunctor”.
 
 > **Stacks 05SE**. Let `F : C ⥤ H` be an exact functor of pre-triangulated categories, let `W`
 > be a saturated multiplicative system in `C` (Stacks 05Q8) compatible with the triangulation, and
@@ -387,8 +488,9 @@ public theorem exists_isDerivedValueAt_biprod_and_isIso_biprod_lift
 > The functor `RF` is pinned by its values: `RF.obj X` is the vertex of a value cocone `ι X` of
 > the ind-object at `X` (Stacks 05S9), and `RF.map f` is the unique map compatible with the
 > coprojections along every commutative square with sides in `W` (Stacks 05SA). The functors of
-> (6) and (7) are pinned as lifts through a localization functor `LE` of `E` at `S_E`. A similar
-> result holds for `LF`, by this statement in the opposite categories.
+> (6) and (7) are pinned as lifts through a localization functor `LE` of `E` at `S_E`. The
+> similar result for `LF` with which the source closes is
+> `isTriangulated_and_exists_leftDerivedFunctor`.
 
 ```lean
 public theorem isTriangulated_and_exists_rightDerivedFunctor
@@ -441,7 +543,7 @@ public theorem isTriangulated_and_exists_rightDerivedFunctor
 
 [Tag 05SV](https://stacks.math.columbia.edu/tag/05SV) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsRightDerivable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L285). References: SGA 4 XVII (1.2.1), “(iii)”.
+**`CategoryTheory.Functor.IsRightDerivable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L286). References: SGA 4 XVII (1.2.1), “(iii)”.
 
 > **Stacks 05SV(1)**. `F` is *right derivable* with respect to `W`, equivalently the right
 > derived functor `RF` is *everywhere defined*: `RF` is defined at every object `X` of `𝒟`, i.e.
@@ -452,7 +554,7 @@ public theorem isTriangulated_and_exists_rightDerivedFunctor
 public abbrev IsRightDerivable (F : D ⥤ D') (W : MorphismProperty D) : Prop
 ```
 
-**`CategoryTheory.Functor.IsLeftDerivable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L293).
+**`CategoryTheory.Functor.IsLeftDerivable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L294).
 
 > **Stacks 05SV(2)**. `F` is *left derivable* with respect to `W`, equivalently the left
 > derived functor `LF` is *everywhere defined*: `LF` is defined at every object `X` of `𝒟`, i.e.
@@ -467,16 +569,117 @@ public abbrev IsLeftDerivable (F : D ⥤ D') (W : MorphismProperty D) : Prop
 
 [Tag 05SW](https://stacks.math.columbia.edu/tag/05SW) in the Stacks Project.
 
+**`CategoryTheory.Functor.hasRightDerivedFunctor_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean#L79). The attribute's comment: “existence of `RF : S⁻¹𝒟 ⥤ 𝒟'` for a right derivable `F`”.
+
+> **Stacks 05SW**, existence of `RF`: a functor that is right derivable (Tag 05SV) relative to a
+> class of morphisms with a left calculus of fractions has a total right derived functor
+> `RF : W⁻¹𝒞 ⥤ ℋ`.
+
+```lean
+theorem hasRightDerivedFunctor_of_isRightDerivable [W.HasLeftCalculusOfFractions]
+    (h : F.IsRightDerivable W) : F.HasRightDerivedFunctor W
+```
+
+**`CategoryTheory.Functor.hasLeftDerivedFunctor_of_isLeftDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean#L88). The attribute's comment: “existence of `LF : S⁻¹𝒟 ⥤ 𝒟'` for a left derivable `F`”.
+
+> **Stacks 05SW**, existence of `LF`: a functor that is left derivable (Tag 05SV) relative to a
+> class of morphisms with a right calculus of fractions has a total left derived functor
+> `LF : W⁻¹𝒞 ⥤ ℋ`.
+
+```lean
+theorem hasLeftDerivedFunctor_of_isLeftDerivable [W.HasRightCalculusOfFractions]
+    (h : F.IsLeftDerivable W) : F.HasLeftDerivedFunctor W
+```
+
+**`CategoryTheory.Functor.totalRightDerived_isTriangulated_and_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean#L213). The attribute's comment: “right derived functor `RF : S⁻¹𝒟 ⥤ 𝒟'`: exact, value at `X` the essentially constant ind-object, `RF(f)` the map of 05SA”.
+
+> **Stacks 05SW**, right derived functor. In Situation 05S8 — `F : 𝒞 ⥤ ℋ` an exact functor of
+> pre-triangulated categories, `W` a saturated multiplicative system compatible with the
+> triangulated structure — let `L : 𝒞 ⥤ 𝒟` be a localization functor for `W`, exact for a
+> pre-triangulated structure on `𝒟` (e.g. that of Tag 05R6). If `F` is right derivable
+> (Tag 05SV), the total right derived functor `RF = F.totalRightDerived L W : W⁻¹𝒞 ⥤ ℋ`, with
+> comparison `α = F.totalRightDerivedUnit L W : F ⟶ L ⋙ RF`, exists
+> (`Functor.hasRightDerivedFunctor_of_isRightDerivable`) and
+>
+> 1. `RF` is exact (Tag 05SE);
+> 2. `RF` extends the pointwise `RF` of Tag 05S9 on objects: for every `X`, `RF(L(X))`, with the
+>    coprojections `F(X') ⟶ RF(L(X')) ≅ RF(L(X))` at `(s : X ⟶ X')`, is a value of `RF` at `X`;
+> 3. `RF` extends it on morphisms: `RF(L(f))` is the morphism of Tag 05SA, i.e. a morphism
+>    `RF(L(X)) ⟶ RF(L(Y))` is compatible with the coprojections along every square
+>    `f ≫ t = s ≫ g` with `s`, `t` in `W` if and only if it is `RF(L(f))`.
+
+```lean
+theorem totalRightDerived_isTriangulated_and_isRightDerivedValueAt
+    (F : C ⥤ H) [F.CommShift ℤ] [F.IsTriangulated]
+    (W : MorphismProperty C) (hW : W.IsSaturated) [W.IsCompatibleWithTriangulation]
+    (L : C ⥤ D) [L.IsLocalization W] [L.CommShift ℤ] [L.IsTriangulated]
+    (h : F.IsRightDerivable W) :
+    haveI := hW.hasLeftCalculusOfFractions
+    haveI := F.hasRightDerivedFunctor_of_isRightDerivable W h
+    (F.totalRightDerived L W).IsTriangulated ∧
+      (∀ X : C, F.IsRightDerivedValueAt W X
+        (derivedUnitCocone F W L (F.totalRightDerived L W) (F.totalRightDerivedUnit L W) X)) ∧
+      ∀ {X Y : C} (f : X ⟶ Y)
+        (u : (F.totalRightDerived L W).obj (L.obj X) ⟶ (F.totalRightDerived L W).obj (L.obj Y)),
+        (∀ (s : W.Under ⊤ X) (t : W.Under ⊤ Y) (g : s.right ⟶ t.right),
+          f ≫ t.hom = s.hom ≫ g →
+            (derivedUnitCocone F W L (F.totalRightDerived L W)
+                (F.totalRightDerivedUnit L W) X).ι.app s ≫ u =
+              F.map g ≫ (derivedUnitCocone F W L (F.totalRightDerived L W)
+                (F.totalRightDerivedUnit L W) Y).ι.app t) ↔
+          u = (L ⋙ F.totalRightDerived L W).map f
+```
+
+**`CategoryTheory.Functor.totalLeftDerived_isTriangulated_and_isLeftDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/EverywhereDefinedDerivedFunctor.lean#L264). The attribute's comment: “left derived functor `LF : S⁻¹𝒟 ⥤ 𝒟'`: exact, value at `X` the essentially constant pro-object, `LF(f)` the map of 05SA”.
+
+> **Stacks 05SW**, left derived functor. In Situation 05S8, with `L : 𝒞 ⥤ 𝒟` an exact
+> localization functor for `W`, if `F` is left derivable (Tag 05SV), the total left derived functor
+> `LF = F.totalLeftDerived L W : W⁻¹𝒞 ⥤ ℋ`, with comparison
+> `α = F.totalLeftDerivedCounit L W : L ⋙ LF ⟶ F`, exists
+> (`Functor.hasLeftDerivedFunctor_of_isLeftDerivable`) and, for the commutation with the shift of
+> `StacksDraft.PseudoCoherence.leftDerivedCommShift`,
+>
+> 1. `LF` is exact (Tag 05SE);
+> 2. `LF` extends the pointwise `LF` of Tag 05S9 on objects: for every `X`, `LF(L(X))`, with the
+>    projections `LF(L(X)) ≅ LF(L(X')) ⟶ F(X')` at `(s : X' ⟶ X)`, is a value of `LF` at `X`;
+> 3. `LF` extends it on morphisms: a morphism `LF(L(X)) ⟶ LF(L(Y))` is compatible with the
+>    projections along every square `s ≫ f = g ≫ t` with `s`, `t` in `W` if and only if it is
+>    `LF(L(f))` (Tag 05SA).
+
+```lean
+theorem totalLeftDerived_isTriangulated_and_isLeftDerivedValueAt
+    (F : C ⥤ H) [F.CommShift ℤ] [F.IsTriangulated]
+    (W : MorphismProperty C) (hW : W.IsSaturated) [W.IsCompatibleWithTriangulation]
+    (L : C ⥤ D) [L.IsLocalization W] [L.CommShift ℤ] [L.IsTriangulated]
+    (h : F.IsLeftDerivable W) :
+    haveI := hW.hasRightCalculusOfFractions
+    haveI := F.hasLeftDerivedFunctor_of_isLeftDerivable W h
+    letI := StacksDraft.PseudoCoherence.leftDerivedCommShift (F.totalLeftDerived L W)
+      (F.totalLeftDerivedCounit L W) W ℤ
+    (F.totalLeftDerived L W).IsTriangulated ∧
+      (∀ X : C, F.IsLeftDerivedValueAt W X
+        (derivedCounitCone F W L (F.totalLeftDerived L W) (F.totalLeftDerivedCounit L W) X)) ∧
+      ∀ {X Y : C} (f : X ⟶ Y)
+        (u : (F.totalLeftDerived L W).obj (L.obj X) ⟶ (F.totalLeftDerived L W).obj (L.obj Y)),
+        (∀ (s : W.Over ⊤ X) (t : W.Over ⊤ Y) (g : s.left ⟶ t.left),
+          s.hom ≫ f = g ≫ t.hom →
+            u ≫ (derivedCounitCone F W L (F.totalLeftDerived L W)
+                (F.totalLeftDerivedCounit L W) Y).π.app t =
+              (derivedCounitCone F W L (F.totalLeftDerived L W)
+                (F.totalLeftDerivedCounit L W) X).π.app s ≫ F.map g) ↔
+          u = (L ⋙ F.totalLeftDerived L W).map f
+```
+
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.totalRightDerived`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.totalRightDerived#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L80) (StacksFrontier): “RF : S⁻¹D ⥤ D'”.
-- [`CategoryTheory.Functor.totalLeftDerived`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.totalLeftDerived#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L81) (StacksFrontier): “LF : S⁻¹D ⥤ D'”.
+- [`CategoryTheory.Functor.totalRightDerived`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.totalRightDerived#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L90) (StacksFrontier): “the functor RF : S⁻¹D ⥤ D' itself: Mathlib's total right derived functor, a left Kan extension along the localization, defined under `HasRightDerivedFunctor` rather than under 05SV derivability; for a right derivable F it exists and is the source's RF (`CategoryTheory.Functor.hasRightDerivedFunctor_of_isRightDerivable` and `CategoryTheory.Functor.totalRightDerived_isTriangulated_and_isRightDerivedValueAt`)”.
+- [`CategoryTheory.Functor.totalLeftDerived`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.totalLeftDerived#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L96) (StacksFrontier): “the functor LF : S⁻¹D ⥤ D' itself: Mathlib's total left derived functor, a right Kan extension along the localization, defined under `HasLeftDerivedFunctor` rather than under 05SV derivability; for a left derivable F it exists and is the source's LF (`CategoryTheory.Functor.hasLeftDerivedFunctor_of_isLeftDerivable` and `CategoryTheory.Functor.totalLeftDerived_isTriangulated_and_isLeftDerivedValueAt`)”.
 
 ## Tag 05SX, a definition
 
 [Tag 05SX](https://stacks.math.columbia.edu/tag/05SX) in the Stacks Project.
 
-**`CategoryTheory.Functor.ComputesRightDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L402). References: SGA 4 XVII (1.2.1); SGA 4 XVII (5.5.5).
+**`CategoryTheory.Functor.ComputesRightDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L404). References: SGA 4 XVII (1.2.1); SGA 4 XVII (5.5.5).
 
 > **Stacks 05SX(1)**. The object `X` of `𝒟` *computes* the right derived functor `RF` of
 > `F : 𝒟 ⥤ 𝒟'` relative to `W`: the right derived functor is defined at `X`, i.e. some cocone `c`
@@ -489,7 +692,7 @@ public abbrev ComputesRightDerived (F : D ⥤ D') (W : MorphismProperty D)
     [W.ContainsIdentities] (X : D) : Prop
 ```
 
-**`CategoryTheory.Functor.ComputesLeftDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L413). References: SGA 4 XVII (5.5.5).
+**`CategoryTheory.Functor.ComputesLeftDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/DefinedAt.lean#L415). References: SGA 4 XVII (5.5.5).
 
 > **Stacks 05SX(2)**. The object `X` of `𝒟` *computes* the left derived functor `LF` of
 > `F : 𝒟 ⥤ 𝒟'` relative to `W`: the left derived functor is defined at `X`, i.e. some cone `c` on
@@ -506,7 +709,7 @@ public abbrev ComputesLeftDerived (F : D ⥤ D') (W : MorphismProperty D)
 
 [Tag 05SY](https://stacks.math.columbia.edu/tag/05SY) in the Stacks Project.
 
-**`Stacks.DerivedFunctor.Shift.Situation.computesRightDerived_shift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean#L547). The attribute's comment: “(1)”.
+**`Stacks.DerivedFunctor.Shift.Situation.computesRightDerived_shift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean#L547). The attribute's comment: “(1)”.
 
 > Stacks 13.14.11(1), Tag 05SY: `X` computes `RF` if and only if `X⟦n⟧` computes `RF`.
 >
@@ -521,7 +724,7 @@ theorem computesRightDerived_shift_iff (X : sit.D) (n : ℤ) :
     sit.F.ComputesRightDerived sit.S X ↔ sit.F.ComputesRightDerived sit.S (X⟦n⟧)
 ```
 
-**`Stacks.DerivedFunctor.Shift.Situation.computesLeftDerived_shift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean#L560). The attribute's comment: “(2)”.
+**`Stacks.DerivedFunctor.Shift.Situation.computesLeftDerived_shift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Shift/ComputesShift.lean#L560). The attribute's comment: “(2)”.
 
 > Stacks 13.14.11(2), Tag 05SY: `X` computes `LF` if and only if `X⟦n⟧` computes `LF`.
 > Dual to `computesRightDerived_shift_iff`.
@@ -535,7 +738,7 @@ theorem computesLeftDerived_shift_iff (X : sit.D) (n : ℤ) :
 
 [Tag 05SZ](https://stacks.math.columbia.edu/tag/05SZ) in the Stacks Project.
 
-**`CategoryTheory.Functor.computesRightDerived_and_computesLeftDerived_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean, line 795](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean#L795). References: SGA 4 XVII (1.2.2), “(i), special case”.
+**`CategoryTheory.Functor.computesRightDerived_and_computesLeftDerived_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean, line 795](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Triangle/LeftDerived.lean#L795). References: SGA 4 XVII (1.2.2), “(i), special case”.
 
 > **Stacks 05SZ**. Let `F : 𝒟 ⥤ 𝒟'` be an exact functor of pretriangulated categories and let
 > `W` be a saturated multiplicative system in `𝒟` (Stacks 05Q8) compatible with the triangulation.
@@ -571,7 +774,7 @@ public theorem computesRightDerived_and_computesLeftDerived_of_distTriang (F : C
 
 [Tag 05T0](https://stacks.math.columbia.edu/tag/05T0) in the Stacks Project.
 
-**`CategoryTheory.Functor.computesRightDerived_and_computesLeftDerived_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean, line 1602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean#L1602).
+**`CategoryTheory.Functor.computesRightDerived_and_computesLeftDerived_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean, line 1602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Biprod.lean#L1602).
 
 > **Stacks 05T0**. Let `F : 𝒟 ⥤ 𝒟'` be an additive functor of preadditive categories, `𝒟`
 > having binary biproducts, and let `W` be a saturated multiplicative system in `𝒟` (Stacks 05Q8).
@@ -595,7 +798,7 @@ public theorem computesRightDerived_and_computesLeftDerived_of_biprod (F : C ⥤
 
 [Tag 05T1](https://stacks.math.columbia.edu/tag/05T1) in the Stacks Project.
 
-**`CategoryTheory.Functor.isRightDerivable_and_isLeftDerivable_of_forall_exists_isDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L1236).
+**`CategoryTheory.Functor.isRightDerivable_and_isLeftDerivable_of_forall_exists_isDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean, line 1348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Morphisms.lean#L1348).
 
 > **Stacks 05T1**. Let `F : 𝒟 ⥤ 𝒟'` be a functor and let `W` be a class of morphisms of `𝒟`.
 >
@@ -626,7 +829,7 @@ public theorem isRightDerivable_and_isLeftDerivable_of_forall_exists_isDerivedVa
 
 [Tag 06XN](https://stacks.math.columbia.edu/tag/06XN) in the Stacks Project.
 
-**`Stacks.DerivedFunctor.Computing.rightDerived_everywhereDefined_and_computes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean#L778). The attribute's comment: “(1)”.
+**`Stacks.DerivedFunctor.Computing.rightDerived_everywhereDefined_and_computes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean#L778). The attribute's comment: “(1)”.
 
 > Let `S` be a saturated multiplicative system on `D` admitting a left calculus of fractions,
 > and `F : D ⥤ D'` a functor. Suppose there is a subset `I ⊆ Ob(D)` such that:
@@ -646,7 +849,7 @@ theorem rightDerived_everywhereDefined_and_computes
     F.IsRightDerivable S ∧ ∀ X ∈ I, F.ComputesRightDerived S X
 ```
 
-**`Stacks.DerivedFunctor.Computing.leftDerived_everywhereDefined_and_computes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean, line 808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean#L808). The attribute's comment: “(2)”.
+**`Stacks.DerivedFunctor.Computing.leftDerived_everywhereDefined_and_computes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean, line 808](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Computing.lean#L808). The attribute's comment: “(2)”.
 
 > Let `S` be a saturated multiplicative system on `D` admitting a right calculus of fractions,
 > and `F : D ⥤ D'` a functor. Suppose there is a subset `P ⊆ Ob(D)` such that:
@@ -670,7 +873,7 @@ theorem leftDerived_everywhereDefined_and_computes
 
 [Tag 05T2](https://stacks.math.columbia.edu/tag/05T2) in the Stacks Project.
 
-**`DerivedFunctorComposition.exists_rightDerived_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean#L187). The attribute's comment: “(1)”.
+**`DerivedFunctorComposition.exists_rightDerived_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean#L187). The attribute's comment: “(1)”.
 
 > **Stacks Lemma 13.14.16, Statement 1 (Tag 05T2).**
 > Assume the data of Definition 4 and that the right derived functors `RF'`, `RG`
@@ -689,7 +892,7 @@ theorem exists_rightDerived_comparison
       ∀ X : A, αGF.app X ≫ t.app (QA.obj X) = αG.app (F.obj X) ≫ RG.map (αFp.app X)
 ```
 
-**`DerivedFunctorComposition.exists_leftDerived_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean#L249). The attribute's comment: “(2)”.
+**`DerivedFunctorComposition.exists_leftDerived_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Functor/Derived/Composition.lean#L249). The attribute's comment: “(2)”.
 
 > **Stacks Lemma 13.14.16, Statement 2 (Tag 05T2).**
 > Dually to Statement 1: assume the data of Definition 4 and that the left derived
@@ -715,4 +918,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.14, Tag 05S7](https://stacks.math.columbia.edu/tag/05S7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

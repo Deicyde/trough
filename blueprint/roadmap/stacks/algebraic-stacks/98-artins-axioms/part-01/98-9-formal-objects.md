@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.9 Formal objects
 
-Section 98.9 of the Stacks Project, [Tag 07X3](https://stacks.math.columbia.edu/tag/07X3). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.9 of the Stacks Project, [Tag 07X3](https://stacks.math.columbia.edu/tag/07X3). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07X3, the section
 
 [Tag 07X3](https://stacks.math.columbia.edu/tag/07X3) in the Stacks Project.
 
-**`Deformation.Artin.FormalObject.mapFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L49). The attribute's comment: “a 1-morphism induces a functor between categories of formal objects”.
+**`Deformation.Artin.FormalObject.mapFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L49). The attribute's comment: “a 1-morphism induces a functor between categories of formal objects”.
 
 > The functor between categories of formal objects induced by a `1`-morphism of categories
 > fibred in groupoids: every level and every level map is pushed forward.
@@ -25,19 +25,19 @@ def FormalObject.mapFunctor : FormalObject B S hS 𝒳.val.p ⥤ FormalObject B 
 
 Declarations registered for the tag:
 
-- [`Deformation.Artin.FormalObject`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L61) (StacksFrontier): “formal objects”.
-- [`Deformation.Artin.FormalObject.Hom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L170), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L62) (StacksFrontier): “morphisms of formal objects”.
-- [`Deformation.Artin.FormalObject.exists_predeformationFormalObject`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L63) (StacksFrontier): “the formal object of a predeformation category”.
-- [`Deformation.Artin.exists_formalObject_lift`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean#L249), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L65) (StacksFrontier): “lifting formal objects along a formally smooth 1-morphism”.
-- [`Deformation.Artin.approximationFunctorData`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L1049), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L67) (StacksFrontier): “the functor to formal objects”.
-- [`Deformation.Artin.FormalObject.IsEffective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L1253), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L68) (StacksFrontier): “effective formal objects”.
-- [`Deformation.Artin.isEquivalence_approximationFunctor_algebraicStacks`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L69) (StacksFrontier): “for an algebraic stack every formal object is effective”.
+- [`Deformation.Artin.FormalObject`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L61) (StacksFrontier): “formal objects”.
+- [`Deformation.Artin.FormalObject.Hom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L170), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L62) (StacksFrontier): “morphisms of formal objects”.
+- [`Deformation.Artin.FormalObject.exists_predeformationFormalObject`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L63) (StacksFrontier): “the formal object of a predeformation category”.
+- [`Deformation.Artin.exists_formalObject_lift`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean#L249), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L65) (StacksFrontier): “lifting formal objects along a formally smooth 1-morphism”.
+- [`Deformation.Artin.approximationFunctorData`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L1049), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L67) (StacksFrontier): “the functor to formal objects”.
+- [`Deformation.Artin.FormalObject.IsEffective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L1253), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L68) (StacksFrontier): “effective formal objects”.
+- [`Deformation.Artin.isEquivalence_approximationFunctor_algebraicStacks`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/FormalObjectsSection.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObjectsSection.lean#L69) (StacksFrontier): “for an algebraic stack every formal object is effective”.
 
 ## Tag 07X4, a definition
 
 [Tag 07X4](https://stacks.math.columbia.edu/tag/07X4) in the Stacks Project.
 
-**`Deformation.Artin.FormalObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L147). The attribute's comment: “formal objects”.
+**`Deformation.Artin.FormalObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L147). The attribute's comment: “formal objects”.
 
 > A formal object of a category over the big fppf site of `S`.
 
@@ -46,7 +46,7 @@ public structure FormalObject {F : Type v} [Category.{w} F]
     (p : F ⥤ BigFppfOver B S hS)
 ```
 
-**`Deformation.Artin.FormalObject.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L170). The attribute's comment: “morphisms”.
+**`Deformation.Artin.FormalObject.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L170). The attribute's comment: “morphisms”.
 
 > A compatible family of morphisms between formal objects.
 
@@ -54,7 +54,7 @@ public structure FormalObject {F : Type v} [Category.{w} F]
 public structure Hom (X Y : FormalObject B S hS p)
 ```
 
-**`Deformation.Artin.FormalObject.Hom.baseMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L214). The attribute's comment: “the induced map of complete bases”.
+**`Deformation.Artin.FormalObject.Hom.baseMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L214). The attribute's comment: “the induced map of complete bases”.
 
 > A compatible family induces a unique map between its complete local bases.
 
@@ -68,7 +68,7 @@ public noncomputable def Hom.baseMapData {X Y : FormalObject B S hS p} (f : Hom 
 
 [Tag 0CXH](https://stacks.math.columbia.edu/tag/0CXH) in the Stacks Project.
 
-**`Deformation.Artin.FormalObject.exists_predeformationFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean#L326).
+**`Deformation.Artin.FormalObject.exists_predeformationFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/Predeformation.lean#L326).
 
 > A formal object of a category over the big fppf site of `S` gives a formal object of
 > the predeformation category of its closed fibre, with the same levels, the same transition
@@ -108,7 +108,7 @@ theorem FormalObject.exists_predeformationFormalObject
 
 [Tag 07X5](https://stacks.math.columbia.edu/tag/07X5) in the Stacks Project.
 
-**`Deformation.Artin.exists_formalObject_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean#L249).
+**`Deformation.Artin.exists_formalObject_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/SmoothLift.lean#L249).
 
 > If `F : 𝒳 ⟶ 𝒴` is formally smooth on objects, every formal object `η` of `𝒴` whose
 > closed-point level lifts to `𝒳` is, up to isomorphism, the image of a formal object of `𝒳` over
@@ -132,7 +132,7 @@ public theorem exists_formalObject_lift
 
 [Tag 07X6](https://stacks.math.columbia.edu/tag/07X6) in the Stacks Project.
 
-**`Deformation.Artin.approximationFunctorData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L1049).
+**`Deformation.Artin.approximationFunctorData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L1049).
 
 > The canonical functor taking an object over a complete local ring to its
 > compatible system of restrictions to the infinitesimal thickenings.
@@ -148,7 +148,7 @@ public noncomputable def approximationFunctorData
 
 [Tag 07X7](https://stacks.math.columbia.edu/tag/07X7) in the Stacks Project.
 
-**`Deformation.Artin.FormalObject.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject.lean#L1253).
+**`Deformation.Artin.FormalObject.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject.lean#L1253).
 
 > A formal object is effective if it comes, up to isomorphism, from an
 > object over its complete local base by approximation.
@@ -165,7 +165,7 @@ public abbrev IsEffective (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 07X8](https://stacks.math.columbia.edu/tag/07X8) in the Stacks Project.
 
-**`Deformation.Artin.isEquivalence_approximationFunctor_algebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean#L265).
+**`Deformation.Artin.isEquivalence_approximationFunctor_algebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/ApproximationEssSurj.lean#L265).
 
 > **Stacks 07X8.** Let `𝒳` be an algebraic stack over a scheme `S`. The functor (Stacks 07X6)
 > from objects of `𝒳` over spectra of Noetherian complete local `S`-algebras with residue field of
@@ -182,7 +182,7 @@ theorem isEquivalence_approximationFunctor_algebraicStacks
     (approximationFunctor B S hS 𝒳.val.val.p 𝒳.val.property).IsEquivalence
 ```
 
-**`Deformation.Artin.faithful_approximationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean#L440). The attribute's comment: “faithfulness of the functor only, and only for a category fibred in groupoids whose structure functor is faithful, i.e. one fibred in setoids, with the faithfulness of that functor as an added hypothesis the source lacks; this covers the category represented by an object of the site, but neither fullness, nor essential surjectivity, nor a general algebraic stack”.
+**`Deformation.Artin.faithful_approximationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean#L440). The attribute's comment: “faithfulness of the functor only, and only for a category fibred in groupoids whose structure functor is faithful, i.e. one fibred in setoids, with the faithfulness of that functor as an added hypothesis the source lacks; this covers the category represented by an object of the site, but neither fullness, nor essential surjectivity, nor a general algebraic stack”.
 
 > **Stacks 07X8, faithfulness of the functor (Stacks 07X6)**, for a category fibred in
 > groupoids whose structure functor is faithful, i.e. one fibred in setoids. This covers the
@@ -199,7 +199,7 @@ public theorem faithful_approximationFunctor [p.Faithful]
     (approximationFunctor B S hS p hp).Faithful
 ```
 
-**`Deformation.Artin.full_approximationFunctor_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean#L665). The attribute's comment: “fullness of the functor only, and only for the category fibred in groupoids represented by an object of the big fppf site over S, i.e. by a scheme over S; this is half of Case I of the source proof, and covers neither essential surjectivity nor the algebraic space of Case II nor the general algebraic stack of Case III”.
+**`Deformation.Artin.full_approximationFunctor_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean, line 665](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/ApproximationRepresentable.lean#L665). The attribute's comment: “fullness of the functor only, and only for the category fibred in groupoids represented by an object of the big fppf site over S, i.e. by a scheme over S; this is half of Case I of the source proof, and covers neither essential surjectivity nor the algebraic space of Case II nor the general algebraic stack of Case III”.
 
 > **Stacks 07X8, fullness of the functor (Stacks 07X6)**, for the category fibred in
 > groupoids represented by an object `Xo` of the big fppf site over `S`, i.e. by a scheme
@@ -217,7 +217,7 @@ public theorem full_approximationFunctor_representable (Xo : BigFppfOver B S hS)
 
 [Tag 07X9](https://stacks.math.columbia.edu/tag/07X9) in the Stacks Project.
 
-**`Deformation.Artin.isEquivalence_approximationFunctor_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationTwoFibreProduct.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/ApproximationTwoFibreProduct.lean#L905).
+**`Deformation.Artin.isEquivalence_approximationFunctor_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/ApproximationTwoFibreProduct.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/ApproximationTwoFibreProduct.lean#L905).
 
 > **Stacks 07X9.** The approximation equivalence is stable under 2-fibre products of
 > categories fibred in groupoids over the big fppf site: if the approximation functor is an
@@ -252,4 +252,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.9, Tag 07X3](https://stacks.math.columbia.edu/tag/07X3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

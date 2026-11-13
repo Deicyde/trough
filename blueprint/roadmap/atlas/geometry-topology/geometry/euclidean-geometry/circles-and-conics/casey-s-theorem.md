@@ -8,7 +8,7 @@ proof: formalized
 
 # Casey's theorem
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html).
 
 ## Casey's theorem
 
@@ -30,7 +30,7 @@ covered by the cyclic-order form of Casey's theorem.
 
 - https://en.wikipedia.org/wiki/Casey%27s_theorem.
 
-Formalized by `MetaMathlibExt.casey_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheorem.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/CaseyTheorem.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem).
+Formalized by `MetaMathlibExt.casey_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheorem.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/CaseyTheorem.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem).
 
 ## Core identity behind Casey's theorem in cyclic order
 
@@ -45,7 +45,7 @@ $t_{ij}^2 = d(c_i, c_j)^2 - (r_i - r_j)^2$. Then $t_{12} t_{34} + t_{23} t_{41} 
 Compared with Casey's theorem for four circles in arbitrary cyclic order, neither $R$ nor the
 $r_i$ need be positive and the circles need not be pairwise disjoint.
 
-Formalized by `MetaMathlibExt.casey_theorem_cyclic_order_core`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem-cyclic-order-core).
+Formalized by `MetaMathlibExt.casey_theorem_cyclic_order_core`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem-cyclic-order-core).
 
 ## Casey's theorem for four circles in arbitrary cyclic order
 
@@ -68,7 +68,7 @@ positive oriented angle at $O$, a gap between consecutive directions may be at l
 
 - https://en.wikipedia.org/wiki/Casey%27s_theorem
 
-Formalized by `MetaMathlibExt.casey_theorem_cyclic_order`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem-cyclic-order).
+Formalized by `MetaMathlibExt.casey_theorem_cyclic_order`, a theorem declared in [MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/CaseyTheoremCyclicOrder.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html#casey-theorem-cyclic-order).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Casey's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/casey-s-theorem)

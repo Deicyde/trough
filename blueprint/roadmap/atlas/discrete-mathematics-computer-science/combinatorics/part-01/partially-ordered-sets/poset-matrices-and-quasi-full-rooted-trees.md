@@ -7,7 +7,7 @@ statement: formalized
 
 # Poset matrices and quasi-full rooted trees
 
-12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html).
+12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html).
 
 ## Poset matrix
 
@@ -21,7 +21,7 @@ then $M_{ik}$ is true.
 
 - JIS `mohammad3.tex`, lines 171–176.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix`, a definition declared in [MathlibExt/Order/PosetMatrix.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#is-poset-matrix).
+Formalized by `MetaMathlibExt.IsPosetMatrix`, a definition declared in [MathlibExt/Order/PosetMatrix.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#is-poset-matrix).
 
 ## Relation represented by a Boolean matrix
 
@@ -31,21 +31,21 @@ relates index $i$ to index $j$ exactly when the entry $M_{ij}$ is true.
 
 The matrix $M$ is arbitrary; it need not be a poset matrix.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.Rel`, a definition declared in [MathlibExt/Order/PosetMatrix.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel).
+Formalized by `MetaMathlibExt.IsPosetMatrix.Rel`, a definition declared in [MathlibExt/Order/PosetMatrix.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel).
 
 ## Poset matrices are upper triangular
 
 If $M$ is an $n \times n$ poset matrix, then
 $M_{ij}$ is false for all indices $i, j < n$ with $j < i$.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.upper`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#upper).
+Formalized by `MetaMathlibExt.IsPosetMatrix.upper`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#upper).
 
 ## Diagonal entries of a poset matrix
 
 If $M$ is an $n \times n$ poset matrix, then
 $M_{ii}$ is true for every index $i < n$.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.diagonal`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#diagonal).
+Formalized by `MetaMathlibExt.IsPosetMatrix.diagonal`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#diagonal).
 
 ## Transitivity of the true entries of a poset matrix
 
@@ -53,14 +53,14 @@ If $M$ is an $n \times n$ poset
 matrix, then for all indices $i, j, k < n$, if $M_{ij}$ and $M_{jk}$ are true, then $M_{ik}$
 is true.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.transitive`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#transitive).
+Formalized by `MetaMathlibExt.IsPosetMatrix.transitive`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#transitive).
 
 ## The relation of a poset matrix is reflexive
 
 If $M$ is an $n \times n$ poset matrix,
 then the relation represented by $M$ relates every index $i < n$ to itself.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.rel_refl`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel-refl).
+Formalized by `MetaMathlibExt.IsPosetMatrix.rel_refl`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel-refl).
 
 ## The relation of a poset matrix is transitive
 
@@ -68,7 +68,7 @@ If $M$ is an $n \times n$ poset matrix
 and $i, j, k < n$ are indices such that the relation represented by $M$ relates $i$ to $j$
 and $j$ to $k$, then it relates $i$ to $k$.
 
-Formalized by `MetaMathlibExt.IsPosetMatrix.rel_trans`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/PosetMatrix.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel-trans).
+Formalized by `MetaMathlibExt.IsPosetMatrix.rel_trans`, a theorem declared in [MathlibExt/Order/PosetMatrix.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/PosetMatrix.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#rel-trans).
 
 ## Block decomposition of a poset matrix
 
@@ -88,7 +88,7 @@ iterating it.
 
 - Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Theorem 3 (`jis-2025-25.6.3-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.isPosetMatrix_block_iff_directSum_ordinalSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#is-poset-matrix-block-iff-direct-sum-ord).
+Stated but not proved: `MetaMathlibExt.isPosetMatrix_block_iff_directSum_ordinalSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#is-poset-matrix-block-iff-direct-sum-ord).
 
 ## Direct and ordinal sums of poset matrices represent sums of posets
 
@@ -110,7 +110,7 @@ Only sums of two terms are stated; sums of $r$ terms follow by iterating.
 
 - Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Theorem 4 (`jis-2025-25.6.3-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.directSum_ordinalSum_represents` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#direct-sum-ordinal-sum-represents).
+Stated but not proved: `MetaMathlibExt.directSum_ordinalSum_represents` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#direct-sum-ordinal-sum-represents).
 
 ## Block properties decide connectedness of the represented poset
 
@@ -131,7 +131,7 @@ block property after relabeling.
 
 - Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Theorem 5 (`jis-2025-25.6.3-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.connected_or_disconnected_of_block_property` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#connected-or-disconnected-of-block-prope).
+Stated but not proved: `MetaMathlibExt.connected_or_disconnected_of_block_property` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#connected-or-disconnected-of-block-prope).
 
 ## Arity of quasi-full rooted trees
 
@@ -150,7 +150,7 @@ parts depend only on the represented poset.
 
 - Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Theorem 10 (`jis-2025-25.6.3-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.quasiFullTree_arity` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#quasi-full-tree-arity).
+Stated but not proved: `MetaMathlibExt.quasiFullTree_arity` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#quasi-full-tree-arity).
 
 ## Direct sum criterion for relabeling inequivalence
 
@@ -171,7 +171,7 @@ statement holds without that assumption.
 
 - Salah Uddin Mohammad, Md. Shah Noor, and Md. Rashed Talukder, *Recognition and Enumeration of the Quasi-Full Rooted Trees*, Journal of Integer Sequences 28 (2025), Article 25.6.3, Theorem 11 (`jis-2025-25.6.3-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.not_relabel_equiv_of_blockLengths_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#not-relabel-equiv-of-block-lengths-ne).
+Stated but not proved: `MetaMathlibExt.not_relabel_equiv_of_blockLengths_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/QuasiFullRootedTreeWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html#not-relabel-equiv-of-block-lengths-ne).
 
 ## Depends on
 
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Poset matrices and quasi-full rooted trees](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/partially-ordered-sets/poset-matrices-and-quasi-full-rooted-trees)

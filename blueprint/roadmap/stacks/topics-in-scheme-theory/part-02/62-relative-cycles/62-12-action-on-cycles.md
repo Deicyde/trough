@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.12 Action on cycles
 
-Section 62.12 of the Stacks Project, [Tag 0H65](https://stacks.math.columbia.edu/tag/0H65). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.12 of the Stacks Project, [Tag 0H65](https://stacks.math.columbia.edu/tag/0H65). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H66, a lemma
 
 [Tag 0H66](https://stacks.math.columbia.edu/tag/0H66) in the Stacks Project.
 
-**`Stacks.Chow.cap_add_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean#L450). The attribute's comment: “additivity in the family of fibre cycles”.
+**`Stacks.Chow.cap_add_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean#L450). The attribute's comment: “additivity in the family of fibre cycles”.
 
 > The action is additive in the family of fibre cycles.
 
@@ -28,7 +28,7 @@ theorem cap_add_left (C : ChowSituation.{u})
     cap C s f (α₁ + α₂) β = cap C s f α₁ β + cap C s f α₂ β
 ```
 
-**`Stacks.Chow.cap_add_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean#L462). The attribute's comment: “additivity in the cycle on the base”.
+**`Stacks.Chow.cap_add_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionOnCycles.lean#L462). The attribute's comment: “additivity in the cycle on the base”.
 
 > The action is additive in the cycle on the base.
 
@@ -46,7 +46,7 @@ theorem cap_add_right (C : ChowSituation.{u})
 
 [Tag 0H67](https://stacks.math.columbia.edu/tag/0H67) in the Stacks Project.
 
-**`Stacks.Chow.cycleGroupRestrict_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionAction.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionAction.lean#L98).
+**`Stacks.Chow.cycleGroupRestrict_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionAction.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionAction.lean#L98).
 
 > **Stacks Project, Tag 0H67.** If `U ⊆ X` and `V ⊆ Y` are open and `f(U) ⊆ V`, then the
 > restriction to `U` of the cycle `α ∩ β` is `α|_U ∩ β|_V`, the cycle obtained by letting the
@@ -75,7 +75,7 @@ theorem cycleGroupRestrict_cap (C : ChowSituation.{u}) {X Y U V : Scheme.{u}}
 
 [Tag 0H68](https://stacks.math.columbia.edu/tag/0H68) in the Stacks Project.
 
-**`Stacks.Chow.cap_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean#L694). The attribute's comment: “compatibility with flat pullback”.
+**`Stacks.Chow.cap_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean#L694). The attribute's comment: “compatibility with flat pullback”.
 
 > **Stacks Project, Tag 0H68.** Forming `α ∩ β` is compatible with flat pullback: if
 > `g : Y' ⟶ Y` is flat, locally of finite type and of relative dimension `c`, if `α'` is the base
@@ -101,7 +101,7 @@ theorem cap_flatPullback (C : ChowSituation.{u}) {X Y Y' : Scheme.{u}}
         AlgebraicCycle (pullback f g : Scheme.{u}) ℤ)
 ```
 
-**`Stacks.Chow.cap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean#L739). The attribute's comment: “compatibility with flat base change”.
+**`Stacks.Chow.cap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean, line 739](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionBaseChange.lean#L739). The attribute's comment: “compatibility with flat base change”.
 
 > **Stacks Project, Tag 0H68.** Forming `α ∩ β` is compatible with flat base change: in the
 > situation of Tag 0FVG, with `α'` the base change of the family `α` along `Y' = Y ×_S S' ⟶ Y` and
@@ -129,7 +129,7 @@ theorem cap_baseChange (B : FlatBaseChangeSituation.{u}) {X Y : Scheme.{u}}
 
 [Tag 0H69](https://stacks.math.columbia.edu/tag/0H69) in the Stacks Project.
 
-**`Stacks.Chow.cap_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapTensorPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapTensorPullback.lean#L137).
+**`Stacks.Chow.cap_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapTensorPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapTensorPullback.lean#L137).
 
 > **Stacks Project, Tag 0H69.** Let `(S, δ)` and `f : X ⟶ Y` be as in Section 0H65, let `F` be
 > a coherent `𝒪_X`-module whose support on every fibre of `f` has dimension at most `r` and let `G`
@@ -155,7 +155,7 @@ theorem cap_familyAssociatedToModule (r : ℕ) (e : ℤ) (F : X.Modules) [F.IsCo
 
 [Tag 0H6A](https://stacks.math.columbia.edu/tag/0H6A) in the Stacks Project.
 
-**`Stacks.Chow.cap_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapClosedSubscheme.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapClosedSubscheme.lean#L271).
+**`Stacks.Chow.cap_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapClosedSubscheme.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CapClosedSubscheme.lean#L271).
 
 > **Stacks Project, Tag 0H6A.** Let `(S, δ)` and `f : X ⟶ Y` be as in Section 0H65. Let
 > `Z ⊆ X` be a closed subscheme of relative dimension at most `r` over `Y`, so that the fibres
@@ -188,7 +188,7 @@ theorem cap_familyAssociatedToClosedSubscheme (C : ChowSituation.{u}) {X Y Z W :
 
 [Tag 0H6B](https://stacks.math.columbia.edu/tag/0H6B) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_cap_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionPushPull.lean, line 678](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionPushPull.lean#L678).
+**`Stacks.Chow.properPushforward_cap_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionPushPull.lean, line 678](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ActionPushPull.lean#L678).
 
 > **Stacks Project, Tag 0H6B.** Let `(S, δ)` be a Chow situation, let
 > ```
@@ -225,4 +225,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.12, Tag 0H65](https://stacks.math.columbia.edu/tag/0H65)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

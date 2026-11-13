@@ -7,7 +7,7 @@ statement: formalized
 
 # Pythagorean triples
 
-20 results, 10 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html).
+20 results, 10 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html).
 
 ## Infinitely many primitive Pythagorean triples with sides sums of two squares
 
@@ -20,7 +20,7 @@ integers.
 
 - Yangcheng Li and Yong Zhang, "Primitive Pythagorean Triangles with Sides of Certain Forms", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_squares_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-sum-two-squa).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_squares_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-sum-two-squa).
 
 ## Infinitely many primitive Pythagorean triples with a square leg
 
@@ -33,7 +33,7 @@ positive integer.
 
 - Yangcheng Li and Yong Zhang, "Primitive Pythagorean Triangles with Sides of Certain Forms", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_square_middle_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-square-middl).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_square_middle_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-square-middl).
 
 ## Infinitely many primitive Pythagorean triples with sides sums of two cubes
 
@@ -46,7 +46,7 @@ integers.
 
 - Yangcheng Li and Yong Zhang, "Primitive Pythagorean Triangles with Sides of Certain Forms", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_cubes_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-sum-two-cube).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_cubes_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#primitive-pythagorean-sides-sum-two-cube).
 
 ## Infinitely many rational right triangles with sides sums of unit fractions
 
@@ -58,7 +58,7 @@ that each of $X$, $Y$ and $Z$ has the form $1/u + 1/v$ for some positive integer
 
 - Yangcheng Li and Yong Zhang, "Primitive Pythagorean Triangles with Sides of Certain Forms", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.rational_right_triangles_reciprocal_sums_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rational-right-triangles-reciprocal-sums).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.rational_right_triangles_reciprocal_sums_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rational-right-triangles-reciprocal-sums).
 
 ## Infinitely many rational right triangles with sides differences of unit fractions
 
@@ -70,7 +70,7 @@ that each of $X$, $Y$ and $Z$ has the form $1/u - 1/v$ for some positive integer
 
 - Yangcheng Li and Yong Zhang, "Primitive Pythagorean Triangles with Sides of Certain Forms", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.rational_right_triangles_reciprocal_differences_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rational-right-triangles-reciprocal-diff).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.rational_right_triangles_reciprocal_differences_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitivePythagoreanFormsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rational-right-triangles-reciprocal-diff).
 
 ## Amato's cathetus parameter set
 
@@ -87,7 +87,7 @@ $D(x) \cap P(x)$ with $P(x) = \{2^s l : l \mid x^2,\ s \in \{1, \dots, n - 1\}\}
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 1 (quoting [1]).
 
-Formalized by `MetaMathlibExt.amatoCathetusParams`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#amato-cathetus-params).
+Formalized by `MetaMathlibExt.amatoCathetusParams`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#amato-cathetus-params).
 
 ## Amato's parameter set for the cathetus $3$ contains $1$
 
@@ -100,7 +100,7 @@ The parameter $d = 1$ generates the triple $(3, 4, 5)$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 1 (quoting [1]).
 
-Formalized by `MetaMathlibExt.one_mem_amatoCathetusParams_three`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#one-mem-amato-cathetus-params-three).
+Formalized by `MetaMathlibExt.one_mem_amatoCathetusParams_three`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#one-mem-amato-cathetus-params-three).
 
 ## $2$ is an Amato parameter for the cathetus $4$
 
@@ -114,7 +114,7 @@ the triple $(4, 3, 5)$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 1 (quoting [1]).
 
-Formalized by `MetaMathlibExt.two_mem_amatoCathetusParams_four`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#two-mem-amato-cathetus-params-four).
+Formalized by `MetaMathlibExt.two_mem_amatoCathetusParams_four`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#two-mem-amato-cathetus-params-four).
 
 ## Products of Pythagorean triples through a cathetus
 
@@ -138,7 +138,7 @@ generated by $d_3 = d_1 d_2$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 2 (quoting [1], [3]).
 
-Stated but not proved: `MetaMathlibExt.pythagorean_cathetus_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-cathetus-product).
+Stated but not proved: `MetaMathlibExt.pythagorean_cathetus_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-cathetus-product).
 
 ## Amato's product of triples
 
@@ -153,7 +153,7 @@ This is the source's product (4); its operation (12) on integral triples is the 
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1, (4).
 
-Formalized by `MetaMathlibExt.pythagoreanTripleMul`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul).
+Formalized by `MetaMathlibExt.pythagoreanTripleMul`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul).
 
 ## Amato's product of $(3, 4, 5)$ with itself
 
@@ -164,7 +164,7 @@ $(3, 4, 5) \star (3, 4, 5) = (9, 40, 41)$, where $\star$ is Amato's product of t
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1, (4).
 
-Formalized by `MetaMathlibExt.pythagoreanTripleMul_three_four_five`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-three-four-five).
+Formalized by `MetaMathlibExt.pythagoreanTripleMul_three_four_five`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-three-four-five).
 
 ## Right identity for Amato's product
 
@@ -175,7 +175,7 @@ $u \in R^3$, we have $u \star (1, 0, 1) = u$, where $\star$ is Amato's product o
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 3, (7)-(8).
 
-Formalized by `MetaMathlibExt.pythagoreanTripleMul_one`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-one).
+Formalized by `MetaMathlibExt.pythagoreanTripleMul_one`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-one).
 
 ## Rational Pythagorean triples
 
@@ -186,7 +186,7 @@ numbers with $x \ne 0$ and $x^2 + y^2 = z^2$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Section 2, definition of `E`.
 
-Formalized by `MetaMathlibExt.ratPythagoreanTriples`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rat-pythagorean-triples).
+Formalized by `MetaMathlibExt.ratPythagoreanTriples`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rat-pythagorean-triples).
 
 ## $(3, 4, 5)$ is a rational Pythagorean triple
 
@@ -197,7 +197,7 @@ of rational triples $(x, y, z)$ with $x \neq 0$ and $x^2 + y^2 = z^2$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Section 2, definition of `E`.
 
-Formalized by `MetaMathlibExt.three_four_five_mem_ratPythagoreanTriples`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#three-four-five-mem-rat-pythagorean-trip).
+Formalized by `MetaMathlibExt.three_four_five_mem_ratPythagoreanTriples`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#three-four-five-mem-rat-pythagorean-trip).
 
 ## Amato's product preserves rational Pythagorean triples
 
@@ -213,7 +213,7 @@ same set $E$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.pythagoreanTripleMul_mem_ratPythagoreanTriples` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-mem-rat-pythagore).
+Stated but not proved: `MetaMathlibExt.pythagoreanTripleMul_mem_ratPythagoreanTriples` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#pythagorean-triple-mul-mem-rat-pythagore).
 
 ## Group laws for Amato's product on rational Pythagorean triples
 
@@ -230,7 +230,7 @@ commutative group under $\star$ with identity $(1, 0, 1)$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.ratPythagoreanTriples_commGroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rat-pythagorean-triples-comm-group).
+Stated but not proved: `MetaMathlibExt.ratPythagoreanTriples_commGroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#rat-pythagorean-triples-comm-group).
 
 ## Integral Pythagorean triples form a commutative monoid
 
@@ -251,7 +251,7 @@ as the source states.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.intPythagoreanTriples_commMonoid` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#int-pythagorean-triples-comm-monoid).
+Stated but not proved: `MetaMathlibExt.intPythagoreanTriples_commMonoid` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#int-pythagorean-triples-comm-monoid).
 
 ## Amato's product on rational points of the unit circle
 
@@ -267,7 +267,7 @@ $(ad / (cf + eb), (bf + ec) / (cf + eb))$, the form (14)(I) of the source.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4, (14)(I).
 
-Formalized by `MetaMathlibExt.unitCircleRatMul`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-mul).
+Formalized by `MetaMathlibExt.unitCircleRatMul`, a definition declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-mul).
 
 ## Squaring $(3/5, 4/5)$ under Amato's product
 
@@ -279,7 +279,7 @@ $(3/5, 4/5) \odot (3/5, 4/5) = (9/41, 40/41)$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4, (14)(I).
 
-Formalized by `MetaMathlibExt.unitCircleRatMul_three_four_five`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-mul-three-four-five).
+Formalized by `MetaMathlibExt.unitCircleRatMul_three_four_five`, a theorem declared in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-mul-three-four-five).
 
 ## Amato's group law on rational points of the unit circle
 
@@ -299,7 +299,7 @@ and hold automatically in $\mathbb{Q}$.
 
 - Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.unitCircleRat_commGroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-comm-group).
+Stated but not proved: `MetaMathlibExt.unitCircleRat_commGroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PythagoreanTripleGroupsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html#unit-circle-rat-comm-group).
 
 ## Depends on
 
@@ -308,4 +308,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pythagorean triples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pythagorean-triples)

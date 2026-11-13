@@ -7,7 +7,7 @@ statement: formalized
 
 # k-Naples parking functions
 
-42 results, 25 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html).
+42 results, 25 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html).
 
 ## The $k$-Naples rule
 
@@ -21,7 +21,7 @@ The car cannot park if none of these is free, or if $a$ is not one of the spots 
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 1.
 
-Formalized by `MetaMathlibExt.naplesSpot`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-spot).
+Formalized by `MetaMathlibExt.naplesSpot`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-spot).
 
 ## Naples parking
 
@@ -35,7 +35,7 @@ the initially occupied spots. If some car cannot park, there is no result.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 1.
 
-Formalized by `MetaMathlibExt.naplesPark`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park).
+Formalized by `MetaMathlibExt.naplesPark`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park).
 
 ## $k$-Naples parking function
 
@@ -50,7 +50,7 @@ $a_i$, if there is one. For $k = 0$ these are the ordinary parking functions.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 1.
 
-Formalized by `MetaMathlibExt.IsNaplesParkingFunction`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function).
+Formalized by `MetaMathlibExt.IsNaplesParkingFunction`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function).
 
 ## A $2$-Naples parking example
 
@@ -62,7 +62,7 @@ the spots $6, 5, 4, 3, 7, 2, 1$ respectively.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 1.
 
-Formalized by `MetaMathlibExt.naplesPark_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-example).
+Formalized by `MetaMathlibExt.naplesPark_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-example).
 
 ## A $2$-Naples parking function that is not $1$-Naples
 
@@ -74,7 +74,7 @@ parking function.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 1.
 
-Formalized by `MetaMathlibExt.isNaplesParkingFunction_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function-example).
+Formalized by `MetaMathlibExt.isNaplesParkingFunction_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function-example).
 
 ## Number of ascending $k$-Naples parking functions
 
@@ -86,7 +86,7 @@ are weakly increasing, that is, $a_1 \le a_2 \le \dots \le a_n$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 3.
 
-Formalized by `MetaMathlibExt.ascendingNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count).
+Formalized by `MetaMathlibExt.ascendingNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count).
 
 ## Number of ascending $k$-Naples parking functions starting with $1$
 
@@ -98,7 +98,7 @@ $(a_1, \dots, a_n)$ of length $n$ with $a_1 = 1$; in particular $U_{0,k} = 0$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 3.
 
-Formalized by `MetaMathlibExt.ascendingNaplesOneCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-one-count).
+Formalized by `MetaMathlibExt.ascendingNaplesOneCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-one-count).
 
 ## Number of descending $k$-Naples parking functions
 
@@ -111,7 +111,7 @@ $a_1 \ge a_2 \ge \dots \ge a_n$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 2.
 
-Formalized by `MetaMathlibExt.descendingNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count).
+Formalized by `MetaMathlibExt.descendingNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count).
 
 ## Number of descending strictly $k$-Naples parking functions
 
@@ -125,7 +125,7 @@ read as $0$, the count is $0$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 4.
 
-Formalized by `MetaMathlibExt.descendingStrictNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count).
+Formalized by `MetaMathlibExt.descendingStrictNaplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count).
 
 ## Naples counts for $n = 2$ and $k = 1$
 
@@ -139,7 +139,7 @@ $0$-Naples.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 4.
 
-Formalized by `MetaMathlibExt.naplesCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-count-two-one).
+Formalized by `MetaMathlibExt.naplesCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-count-two-one).
 
 ## Height of a lattice path
 
@@ -151,7 +151,7 @@ number of Up steps minus the number of Down steps among the first $\min(j, m)$ s
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3.
 
-Formalized by `MetaMathlibExt.latticeHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#lattice-height).
+Formalized by `MetaMathlibExt.latticeHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#lattice-height).
 
 ## Height of a sequence of Dyck steps
 
@@ -164,7 +164,7 @@ when $j$ exceeds its length).
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3.
 
-Formalized by `MetaMathlibExt.dyckStepHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#dyck-step-height).
+Formalized by `MetaMathlibExt.dyckStepHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#dyck-step-height).
 
 ## $k$-Dyck path
 
@@ -177,7 +177,7 @@ $j \le 2n$, and, when $n \ge 1$, its last step is a Down step.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3.
 
-Formalized by `MetaMathlibExt.IsKDyckPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-kdyck-path).
+Formalized by `MetaMathlibExt.IsKDyckPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-kdyck-path).
 
 ## A $1$-Dyck path that is not a $0$-Dyck path
 
@@ -189,7 +189,7 @@ $0$-Dyck path, and the path $UUD$ has height $1$ after its three steps.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3.
 
-Formalized by `MetaMathlibExt.isKDyckPath_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-kdyck-path-example).
+Formalized by `MetaMathlibExt.isKDyckPath_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-kdyck-path-example).
 
 ## Every $k$-Naples parking function is $(k + 1)$-Naples
 
@@ -201,7 +201,7 @@ parking function.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.IsNaplesParkingFunction.succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#succ).
+Stated but not proved: `MetaMathlibExt.IsNaplesParkingFunction.succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#succ).
 
 ## The $k$-Naples rule on $\mathbb{Z}$
 
@@ -215,7 +215,7 @@ them is free, so this is the first free spot after $a$).
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 2 (parking on `ℤ`).
 
-Formalized by `MetaMathlibExt.naplesSpotInt`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-spot-int).
+Formalized by `MetaMathlibExt.naplesSpotInt`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-spot-int).
 
 ## Naples parking on $\mathbb{Z}$
 
@@ -229,7 +229,7 @@ occupied spots.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 2 (parking on `ℤ`).
 
-Formalized by `MetaMathlibExt.naplesParkInt`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int).
+Formalized by `MetaMathlibExt.naplesParkInt`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int).
 
 ## A $2$-Naples parking example on $\mathbb{Z}$
 
@@ -241,7 +241,7 @@ spots $4, 2, 1, 0$ respectively.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 2, Figure 1.
 
-Formalized by `MetaMathlibExt.naplesParkInt_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-example).
+Formalized by `MetaMathlibExt.naplesParkInt_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-example).
 
 ## A $3$-Naples parking example on $\mathbb{Z}$
 
@@ -253,7 +253,7 @@ park in the spots $1, 2, 0, 5, 7, 6, 4, 3$ respectively.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 2, Remark 2.
 
-Formalized by `MetaMathlibExt.naplesParkInt_example_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-example-three).
+Formalized by `MetaMathlibExt.naplesParkInt_example_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-example-three).
 
 ## One more backward step keeps the cars in $\{0, \dots, n\}$
 
@@ -269,7 +269,7 @@ Every $k \ge 0$ is admitted (the source's proof treats any $k \ge 0$).
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.naplesParkInt_succ_mem_Icc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-succ-mem-icc).
+Stated but not proved: `MetaMathlibExt.naplesParkInt_succ_mem_Icc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-int-succ-mem-icc).
 
 ## Descending $k$-Naples parking functions and $k$-Dyck paths
 
@@ -282,7 +282,7 @@ end at height $0$, never go below height $-k$, and end with a Down step.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 2 (citing Christensen et al., Theorem 1.3).
 
-Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_card_kDyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-card-k-dyck-p).
+Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_card_kDyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-card-k-dyck-p).
 
 ## Descending $k$-Naples parking functions and Dyck paths
 
@@ -295,7 +295,7 @@ steps are Up and whose last $k + 1$ steps are Down.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-card-dyck-pat).
+Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-card-dyck-pat).
 
 ## Descending strictly $k$-Naples parking functions and Dyck paths with an early return
 
@@ -309,7 +309,7 @@ $0$ for some $j$ with $0 < j < 2(n + k)$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-d).
+Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-d).
 
 ## Recurrence for ascending $k$-Naples parking functions
 
@@ -328,7 +328,7 @@ $$U_{n,k} = U_{n,k-1} + C_k \sum_{i=0}^{n-k} U_{i,k-1} \, U_{n-k-i,k}.$$
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-recurrence).
+Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-recurrence).
 
 ## Ascending $1$-Naples parking functions starting with $1$ and Fine numbers
 
@@ -341,7 +341,7 @@ $1, 0, 1, 2, 6, 18, \dots$ are indexed so that $F(0) = 1$ and $F(1) = 0$ (OEIS A
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.ascendingNaplesOneCount_one_eq_fineNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-one-count-one-eq-fine-n).
+Stated but not proved: `MetaMathlibExt.ascendingNaplesOneCount_one_eq_fineNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-one-count-one-eq-fine-n).
 
 ## Counting ascending $1$-Naples parking functions
 
@@ -357,7 +357,7 @@ $F(0) = 1$ and $F(1) = 0$. This is the convolution of the Catalan and Fine numbe
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_one_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-one-eq-sum).
+Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_one_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-one-eq-sum).
 
 ## Generating functions for ascending $k$-Naples parking functions
 
@@ -377,7 +377,7 @@ $$U_k(x) = U_{k-1}(x) + C_k x^k U_{k-1}(x) U_k(x).$$
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.ascendingNaples_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-generating-function).
+Stated but not proved: `MetaMathlibExt.ascendingNaples_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-generating-function).
 
 ## Counting descending $k$-Naples parking functions
 
@@ -391,7 +391,7 @@ is $\frac{k+1}{n} \binom{2n}{n+k+1}$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-choose).
+Stated but not proved: `MetaMathlibExt.descendingNaplesCount_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-naples-count-eq-choose).
 
 ## Lattice path of a parking preference
 
@@ -407,7 +407,7 @@ preceded by exactly $a_i - 1$ Down steps.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3 (Remark 3.3).
 
-Formalized by `MetaMathlibExt.preferencePath`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#preference-path).
+Formalized by `MetaMathlibExt.preferencePath`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#preference-path).
 
 ## The lattice path of $(1, 3, 3, 5, 6, 6)$
 
@@ -419,7 +419,7 @@ $\mathrm{D}$ a Down step.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 3 (Figure 3).
 
-Formalized by `MetaMathlibExt.preferencePath_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#preference-path-example).
+Formalized by `MetaMathlibExt.preferencePath_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#preference-path-example).
 
 ## Remaining cars still park after moving a car to an earlier spot
 
@@ -435,7 +435,7 @@ under the $k$-Naples rule.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Lemma 2.3.
 
-Stated but not proved: `MetaMathlibExt.naplesPark_drop_set_isSome` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-drop-set-is-some).
+Stated but not proved: `MetaMathlibExt.naplesPark_drop_set_isSome` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#naples-park-drop-set-is-some).
 
 ## Lattice-path criterion for ascending $k$-Naples parking functions
 
@@ -450,7 +450,7 @@ $h_{j'} > 0$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 2.6 (published as Theorem 2).
 
-Stated but not proved: `MetaMathlibExt.isNaplesParkingFunction_iff_of_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function-iff-of-monoto).
+Stated but not proved: `MetaMathlibExt.isNaplesParkingFunction_iff_of_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-naples-parking-function-iff-of-monoto).
 
 ## When every rearrangement of a preference is $k$-Naples
 
@@ -468,7 +468,7 @@ steps is positive.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Corollary 2.7 (published as Corollary 1).
 
-Stated but not proved: `MetaMathlibExt.forall_perm_isNaplesParkingFunction_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#forall-perm-is-naples-parking-function-i).
+Stated but not proved: `MetaMathlibExt.forall_perm_isNaplesParkingFunction_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#forall-perm-is-naples-parking-function-i).
 
 ## Ascending $k$-Naples parking functions and Dyck paths
 
@@ -484,7 +484,7 @@ $j \le 2(n + k)$ such that $h_j > k$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Corollary 2.12 (published as Corollary 3).
 
-Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-eq-card-dyck-path).
+Stated but not proved: `MetaMathlibExt.ascendingNaplesCount_eq_card_dyckPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#ascending-naples-count-eq-card-dyck-path).
 
 ## Left spine length of a binary tree
 
@@ -495,7 +495,7 @@ child's left child, and so on (`0` for the empty tree).
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 4 (Proposition 4.12).
 
-Formalized by `MetaMathlibExt.leftSpineLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#left-spine-length).
+Formalized by `MetaMathlibExt.leftSpineLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#left-spine-length).
 
 ## Left spine lengths of small binary trees
 
@@ -507,7 +507,7 @@ children, has left spine length $2$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 4 (Proposition 4.12).
 
-Formalized by `MetaMathlibExt.leftSpineLength_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#left-spine-length-examples).
+Formalized by `MetaMathlibExt.leftSpineLength_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#left-spine-length-examples).
 
 ## Descending strictly $k$-Naples parking functions and binary trees
 
@@ -522,7 +522,7 @@ subtree of $t$ has at least $k + 1$ nodes.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Proposition 4.12 (published as Proposition 5).
 
-Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_binaryTree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-b).
+Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_binaryTree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-b).
 
 ## Edges of an inscribed polygon
 
@@ -535,7 +535,7 @@ between $a$ and $b$, or $a$ is the least and $b$ the greatest element of $R$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 6 (Theorem 6.3).
 
-Formalized by `MetaMathlibExt.inscribedPolygonEdges`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#inscribed-polygon-edges).
+Formalized by `MetaMathlibExt.inscribedPolygonEdges`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#inscribed-polygon-edges).
 
 ## $r$-in-$s$ dissection
 
@@ -554,7 +554,7 @@ The remaining $s - r$ faces of such a dissection are triangles.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 6 (Definition 6.1).
 
-Formalized by `MetaMathlibExt.IsInnerPolygonDissection`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-inner-polygon-dissection).
+Formalized by `MetaMathlibExt.IsInnerPolygonDissection`, a definition declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-inner-polygon-dissection).
 
 ## Examples of $r$-in-$s$ dissections
 
@@ -568,7 +568,7 @@ quadrilateral on the vertices $0, 1, 2, 3$.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Section 6 (Definition 6.1).
 
-Formalized by `MetaMathlibExt.isInnerPolygonDissection_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-inner-polygon-dissection-examples).
+Formalized by `MetaMathlibExt.isInnerPolygonDissection_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#is-inner-polygon-dissection-examples).
 
 ## Descending strictly $k$-Naples parking functions and polygon dissections
 
@@ -587,7 +587,7 @@ up to rotation with a distinguished edge on the $(2k + 2)$-gon.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 6.3 (published as Proposition 6).
 
-Stated but not proved: `MetaMathlibExt.mul_descendingStrictNaplesCount_eq_card_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#mul-descending-strict-naples-count-eq-ca).
+Stated but not proved: `MetaMathlibExt.mul_descendingStrictNaplesCount_eq_card_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#mul-descending-strict-naples-count-eq-ca).
 
 ## Descending strictly $k$-Naples parking functions and noncrossing partitions
 
@@ -601,7 +601,7 @@ has exactly $2k + 2$ elements.
 
 - J. P. Carvalho, P. E. Harris, G. Rojas Kirby, N. Tripeny and A. R. Vindas Meléndez, *Enumerating k-Naples Parking Functions through Catalan Objects*, INTEGERS 24 (2024), Article A44, Theorem 6.4 (published as Proposition 7).
 
-Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_noncrossingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-n).
+Stated but not proved: `MetaMathlibExt.descendingStrictNaplesCount_eq_card_noncrossingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KNaplesParkingWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html#descending-strict-naples-count-eq-card-n).
 
 ## Depends on
 
@@ -610,4 +610,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: k-Naples parking functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/k-naples-parking-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/parking-functions/k-naples-parking-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/parking-functions/k-naples-parking-functions)

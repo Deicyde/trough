@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.42 Grothendieck's existence theorem
 
-Section 76.42 of the Stacks Project, [Tag 089N](https://stacks.math.columbia.edu/tag/089N). 14 tags here are carried by 36 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.42 of the Stacks Project, [Tag 089N](https://stacks.math.columbia.edu/tag/089N). 14 tags here are carried by 33 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 089P, a lemma
 
 [Tag 089P](https://stacks.math.columbia.edu/tag/089P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.abelian_coherentAdicSystems`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicAbelian.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicAbelian.lean#L424). The attribute's comment: “the category is abelian”.
+**`AlgebraicGeometry.Space.abelian_coherentAdicSystems`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicAbelian.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicAbelian.lean#L424). The attribute's comment: “the category is abelian”.
 
 > **The category `Coh(F, 𝓘)` of coherent adic systems on a Noetherian algebraic space is
 > abelian.**
@@ -26,7 +26,7 @@ Section 76.42 of the Stacks Project, [Tag 089N](https://stacks.math.columbia.edu
 def abelian_coherentAdicSystems : Abelian (CoherentAdicSystems B S hS F hF 𝓘)
 ```
 
-**`AlgebraicGeometry.Space.coherentAdicInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L110). The attribute's comment: “part (3): the inverse image along a flat morphism of Noetherian algebraic spaces is exact”.
+**`AlgebraicGeometry.Space.coherentAdicInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L110). The attribute's comment: “part (3): the inverse image along a flat morphism of Noetherian algebraic spaces is exact”.
 
 > **Part (3) of Stacks 089P: the inverse image along a flat morphism of Noetherian algebraic
 > spaces is exact.**  For a flat morphism `f : X' ⟶ X` of Noetherian algebraic spaces and a
@@ -40,7 +40,7 @@ theorem coherentAdicInverseImage_exact (hf : IsFlat B S hS f.hom) :
       (coherentAdicInverseImage B S hS f 𝓘 hN'.2.2)
 ```
 
-**`AlgebraicGeometry.Space.exact_iff_forall_exact_coherentAdicChartRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L149). The attribute's comment: “part (2): exactness can be checked on an étale covering by affine charts”.
+**`AlgebraicGeometry.Space.exact_iff_forall_exact_coherentAdicChartRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L149). The attribute's comment: “part (2): exactness can be checked on an étale covering by affine charts”.
 
 > **Part (2) of Stacks 089P: exactness in `Coh(X, 𝓘)` can be checked étale locally.**  For a
 > Noetherian algebraic space `X`, a quasi-coherent sheaf of ideals `𝓘 ⊆ 𝒪_X` and an étale covering
@@ -60,7 +60,7 @@ theorem exact_iff_forall_exact_coherentAdicChartRestriction {I : Type v}
       T).Exact
 ```
 
-**`AlgebraicGeometry.Space.coherentAdicSystems_abelian_and_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L178).
+**`AlgebraicGeometry.Space.coherentAdicSystems_abelian_and_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInverseImageIdeal.lean#L178).
 
 > **Stacks 089P.**  Let `X` be a Noetherian algebraic space over a scheme `S` and `𝓘 ⊆ 𝒪_X` a
 > quasi-coherent sheaf of ideals.
@@ -94,7 +94,7 @@ theorem coherentAdicSystems_abelian_and_exact :
 
 [Tag 08B3](https://stacks.math.columbia.edu/tag/08B3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.epi_iff_epi_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystem.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystem.lean#L486).
+**`AlgebraicGeometry.Space.epi_iff_epi_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystem.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystem.lean#L487).
 
 > A map of coherent adic systems on an algebraic space is surjective in `Coh(F, 𝓘)` exactly when
 > its component at the lowest level is surjective.
@@ -108,7 +108,7 @@ theorem epi_iff_epi_app_zero {E E' : CoherentAdicSystems B S hS F hF 𝓘} (f : 
 
 [Tag 08B4](https://stacks.math.columbia.edu/tag/08B4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.completionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionFunctor.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionFunctor.lean#L326).
+**`AlgebraicGeometry.Space.completionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionFunctor.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionFunctor.lean#L326).
 
 > The completion functor `Coh(𝒪_F) ⟶ Coh(F, 𝓘)` on a locally Noetherian algebraic space, for a
 > quasi-coherent sheaf of ideals `𝓘`, sending a coherent `𝒪_F`-module `𝓖` to the coherent `𝓘`-adic
@@ -125,7 +125,7 @@ def completionFunctor
 
 [Tag 08B5](https://stacks.math.columbia.edu/tag/08B5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.preservesFiniteColimits_completionFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L340). The attribute's comment: “right exactness: preservation of finite colimits”.
+**`AlgebraicGeometry.Space.preservesFiniteColimits_completionFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L340). The attribute's comment: “right exactness: preservation of finite colimits”.
 
 > **Stacks 08B5, right exactness.**  The completion functor `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` preserves
 > finite colimits.
@@ -139,7 +139,7 @@ instance preservesFiniteColimits_completionFunctor :
     PreservesFiniteColimits (completionFunctor B S hS F hF 𝓘 hI)
 ```
 
-**`AlgebraicGeometry.Space.preservesMonomorphisms_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L432). The attribute's comment: “preservation of monomorphisms”.
+**`AlgebraicGeometry.Space.preservesMonomorphisms_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L432). The attribute's comment: “preservation of monomorphisms”.
 
 > **Stacks 08B5, preservation of monomorphisms.**  On a Noetherian algebraic space the
 > completion functor `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` carries a monomorphism to a monomorphism.
@@ -157,7 +157,7 @@ theorem preservesMonomorphisms_completionFunctor (hZ : B.Contains (⊤_ Scheme.{
     (completionFunctor B S hS F hF 𝓘 hI).PreservesMonomorphisms
 ```
 
-**`AlgebraicGeometry.Space.preservesFiniteLimits_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L531). The attribute's comment: “left exactness: the completion functor preserves finite limits”.
+**`AlgebraicGeometry.Space.preservesFiniteLimits_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L531). The attribute's comment: “left exactness: the completion functor preserves finite limits”.
 
 > **Stacks 08B5, left exactness.**  On a Noetherian algebraic space the completion functor
 > `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` of Stacks 08B4 preserves finite limits.
@@ -177,7 +177,7 @@ theorem preservesFiniteLimits_completionFunctor (hZ : B.Contains (⊤_ Scheme.{u
     PreservesFiniteLimits (completionFunctor B S hS F hF 𝓘 hI)
 ```
 
-**`AlgebraicGeometry.Space.exactFunctor_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L547). The attribute's comment: “exactness: the completion functor is exact”.
+**`AlgebraicGeometry.Space.exactFunctor_completionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExact.lean#L547). The attribute's comment: “exactness: the completion functor is exact”.
 
 > **Stacks 08B5.**  On a Noetherian algebraic space the completion functor
 > `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` of Stacks 08B4 is exact.
@@ -193,7 +193,7 @@ theorem exactFunctor_completionFunctor (hZ : B.Contains (⊤_ Scheme.{u}))
       (completionFunctor B S hS F hF 𝓘 hI)
 ```
 
-**`AlgebraicGeometry.Space.preservesFiniteLimits_completionFunctor_of_isNoetherian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean#L103). The attribute's comment: “left exactness: the completion functor preserves finite limits, over the source's own hypotheses that the algebraic space is Noetherian and the sheaf of ideals quasi-coherent”.
+**`AlgebraicGeometry.Space.preservesFiniteLimits_completionFunctor_of_isNoetherian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean#L102). The attribute's comment: “left exactness: the completion functor preserves finite limits, over the source's own hypotheses that the algebraic space is Noetherian and the sheaf of ideals quasi-coherent”.
 
 > **Stacks 08B5, left exactness.**  On a Noetherian algebraic space the completion functor
 > `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` of Stacks 08B4 preserves finite limits.
@@ -204,7 +204,7 @@ theorem exactFunctor_completionFunctor (hZ : B.Contains (⊤_ Scheme.{u}))
 alias preservesFiniteLimits_completionFunctor_of_isNoetherian
 ```
 
-**`AlgebraicGeometry.Space.exactFunctor_completionFunctor_of_isNoetherian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean#L112). The attribute's comment: “exactness of the completion functor over the source's own hypotheses that the algebraic space is Noetherian and the sheaf of ideals quasi-coherent”.
+**`AlgebraicGeometry.Space.exactFunctor_completionFunctor_of_isNoetherian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean#L111). The attribute's comment: “exactness of the completion functor over the source's own hypotheses that the algebraic space is Noetherian and the sheaf of ideals quasi-coherent”.
 
 > **Stacks 08B5.**  On a Noetherian algebraic space the completion functor
 > `Coh(𝒪_F) ⥤ Coh(F, 𝓘)` of Stacks 08B4 is exact.
@@ -219,57 +219,7 @@ alias exactFunctor_completionFunctor_of_isNoetherian
 
 [Tag 08B6](https://stacks.math.columbia.edu/tag/08B6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleInternalHomAdicEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHom.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHom.lean#L607). The attribute's comment: “granted Stacks 0882, the case of schemes, on each étale chart as the hypothesis h0882; the étale-descent globalisation is proved”.
-
-> **Stacks 08B6.**  Let `F` be an algebraic space over a scheme `S`, let `𝓘 ⊆ 𝒪_F` be a sheaf
-> of ideals and let `M`, `N` be `𝒪_F`-modules.  Put `𝓗 = 𝓗om_{𝒪_F}(M, N)`.  Then
->
-> `lim_n H⁰(F, 𝓗 / 𝓘 ^ n 𝓗) = Mor((M / 𝓘 ^ n M), (N / 𝓘 ^ n N))`,
->
-> the inverse limit of the global sections of the ideal-power quotients of `𝓗` being the
-> morphisms of inverse systems of `𝒪_F`-modules from the completion of `M` to the completion of
-> `N`.  Since `Coh(F, 𝓘)` is a full subcategory of the inverse systems of `𝒪_F`-modules, the
-> right-hand side is `Mor_{Coh(F, 𝓘)}(M^∧, N^∧)` whenever the two completions are objects of
-> it.
->
-> The source argues that both sides are sheaves on `F_étale` and so the identity may be checked
-> étale locally, where it is the case of schemes.  That reduction is the hypothesis `h0882`: it
-> asks, for every étale chart `U`, that the comparison be bijective on the inverse limits of the
-> sections over `U`, which on a chart is Stacks 0882 for the scheme `U`.  What is proved here is
-> the globalisation, in three steps: the comparison is a morphism of inverse systems of sheaves
-> (`smallEtaleInternalHomAdicComparison_compat`), so a chartwise bijection is a bijection on
-> global sections (`bijective_adicSectionsMap_of_bijective_adicSectionsMapAt`); the global
-> sections of `𝓗om(M, N / 𝓘 ^ n N)` are the morphisms `M ⟶ N / 𝓘 ^ n N`
-> (`smallEtaleInternalHomSectionsEquiv`); and such a morphism is the same as a morphism
-> `M / 𝓘 ^ n M ⟶ N / 𝓘 ^ n N`, compatibly in `n`
-> (`bijective_smallEtaleInternalHomAdicSection`).
->
-> The Noetherian hypothesis on `F` and the coherence of `M` and `N` are not used: they enter only
-> through `h0882`, whose chartwise content is the Noetherian scheme case.
-
-```lean
-def smallEtaleInternalHomAdicEquiv
-    (h0882 : ∀ U, Function.Bijective (adicSectionsMapAt B S hS F hF
-      (fun n => smallEtaleAdicQuotient B S hS F hF 𝓘 (n + 1)
-        (smallEtaleInternalHom B S hS F hF M N))
-      (fun n => smallEtaleInternalHom B S hS F hF M
-        (smallEtaleAdicQuotient B S hS F hF 𝓘 (n + 1) N))
-      (fun n => smallEtaleAdicQuotientTransition B S hS F hF 𝓘 (n + 1)
-        (smallEtaleInternalHom B S hS F hF M N))
-      (fun n => smallEtaleInternalHomMapRight B S hS F hF M
-        (smallEtaleAdicQuotientTransition B S hS F hF 𝓘 (n + 1) N))
-      (smallEtaleInternalHomAdicComparisonApp B S hS F hF 𝓘 M N)
-      (smallEtaleInternalHomAdicComparison_compat B S hS F hF 𝓘 M N) U)) :
-    adicSections B S hS F hF
-        (fun n => smallEtaleAdicQuotient B S hS F hF 𝓘 (n + 1)
-          (smallEtaleInternalHom B S hS F hF M N))
-        (fun n => smallEtaleAdicQuotientTransition B S hS F hF 𝓘 (n + 1)
-          (smallEtaleInternalHom B S hS F hF M N)) ≃
-      (smallEtaleAdicQuotientSystem B S hS F hF 𝓘 M ⟶
-        smallEtaleAdicQuotientSystem B S hS F hF 𝓘 N)
-```
-
-**`AlgebraicGeometry.Space.smallEtaleInternalHomSmallAdicEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomAffine.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomAffine.lean#L80).
+**`AlgebraicGeometry.Space.smallEtaleInternalHomSmallAdicEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomAffine.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomAffine.lean#L80).
 
 > **Stacks 08B6.**  Let `F` be a locally Noetherian algebraic space over a scheme `S`, let
 > `𝓘 ⊆ 𝒪_F` be a quasi-coherent sheaf of ideals and let `M`, `N` be coherent `𝒪_F`-modules.  Put
@@ -296,7 +246,7 @@ def smallEtaleInternalHomSmallAdicEquiv :
         smallEtaleAdicQuotientSystem B S hS F hF 𝓘 N)
 ```
 
-**`AlgebraicGeometry.Space.bijective_adicSectionsMap_of_isSeqProIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean#L391). The attribute's comment: “the pro-isomorphism step: pro-isomorphic inverse systems of `𝒪_F`-modules have the same inverse limit of global sections, which is what identifies the tag's two limits `lim H⁰(𝓗 / 𝓘 ^ n 𝓗)` and `lim H⁰(𝓗om(M, N / 𝓘 ^ n N))` from a pro-isomorphism of the comparison”.
+**`AlgebraicGeometry.Space.bijective_adicSectionsMap_of_isSeqProIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean#L391). The attribute's comment: “the pro-isomorphism step: pro-isomorphic inverse systems of `𝒪_F`-modules have the same inverse limit of global sections, which is what identifies the tag's two limits `lim H⁰(𝓗 / 𝓘 ^ n 𝓗)` and `lim H⁰(𝓗om(M, N / 𝓘 ^ n N))` from a pro-isomorphism of the comparison”.
 
 > **A pro-isomorphism of inverse systems of `𝒪_F`-modules induces a bijection on the inverse
 > limits of their global sections.**  Pro-isomorphic systems therefore have the same
@@ -318,7 +268,7 @@ theorem bijective_adicSectionsMap_of_isSeqProIso
     Function.Bijective (adicSectionsMap B S hS F hF X Y trX trY β hβ)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleInternalHomAdicEquivOfNoetherian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInternalHomAdicNoetherian.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInternalHomAdicNoetherian.lean#L141).
+**`AlgebraicGeometry.Space.smallEtaleInternalHomAdicEquivOfNoetherian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInternalHomAdicNoetherian.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInternalHomAdicNoetherian.lean#L139).
 
 > **Stacks 08B6.**  Let `X` be a Noetherian algebraic space over a scheme `S`, let `𝓘 ⊆ 𝒪_X` be
 > a quasi-coherent sheaf of ideals and let `M`, `N` be coherent `𝒪_X`-modules.  Put
@@ -334,13 +284,11 @@ theorem bijective_adicSectionsMap_of_isSeqProIso
 > quasi-coherence of `𝓘`, coherence of `M` and of `N`.
 >
 > The tag is registered here, bare, because this is where the source's identity is proved outright
-> under the source's own hypotheses and nothing else.  The two registrations on
-> `StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHom.lean` carry clause strings naming
-> the two steps proved there — the pro-isomorphism step and the morphism step — and stay as they
-> are; by the covering-set rule they and this one together carry the tag.  No registration is
-> placed on `AlgebraicGeometry.Space.smallEtaleInternalHomAdicEquiv` itself, which still takes
-> `h0882` as an assumed input: a tag may not sit on a declaration that assumes the thing it
-> asserts.
+> under the source's own hypotheses and nothing else.  The two step registrations in
+> `StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean` carry clause strings
+> naming the pro-isomorphism step and the morphism step.  No registration is placed on
+> `AlgebraicGeometry.Space.smallEtaleInternalHomAdicEquiv` itself, which takes `h0882` as a
+> hypothesis; this declaration is that one with `h0882` proved.
 
 ```lean
 def smallEtaleInternalHomAdicEquivOfNoetherian
@@ -358,13 +306,13 @@ def smallEtaleInternalHomAdicEquivOfNoetherian
 
 Declarations registered for the tag:
 
-- [`bijective_smallEtaleInternalHomAdicSection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=bijective_smallEtaleInternalHomAdicSection#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean#L442) (StacksFrontier): “the morphism step of the identity: morphisms of the inverse systems of ideal-power quotients are exactly the compatible families of global sections of the internal homs into those quotients, so that `Mor((M / 𝓘 ^ n M), (N / 𝓘 ^ n N))` is `lim_n H⁰(F, 𝓗om(M, N / 𝓘 ^ n N))`”.
+- [`bijective_smallEtaleInternalHomAdicSection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=bijective_smallEtaleInternalHomAdicSection#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicInternalHomProIso.lean#L442) (StacksFrontier): “the morphism step of the identity: morphisms of the inverse systems of ideal-power quotients are exactly the compatible families of global sections of the internal homs into those quotients, so that `Mor((M / 𝓘 ^ n M), (N / 𝓘 ^ n N))` is `lim_n H⁰(F, 𝓗om(M, N / 𝓘 ^ n N))`”.
 
 ## Tag 08B7, a situation
 
 [Tag 08B7](https://stacks.math.columbia.edu/tag/08B7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/GrothendieckExistence.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/GrothendieckExistence.lean#L63).
+**`AlgebraicGeometry.Space.ExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/GrothendieckExistence.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/GrothendieckExistence.lean#L63).
 
 > **Stacks 08B7.** The standing data of Grothendieck's existence theorem: a Noetherian
 > ring `A` complete with respect to an ideal `I`, together with a separated algebraic space
@@ -378,7 +326,7 @@ structure ExistenceSituation
 
 [Tag 08B8](https://stacks.math.columbia.edu/tag/08B8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasProperSupport_idealPowerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystemProperSupport.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystemProperSupport.lean#L132). The attribute's comment: “the support condition, by which equation 76.42.2.1 restricts to the two full subcategories constructed below: the completion M / 𝓘 ^ n M of a coherent module with support proper over the base again has support proper over the base. The arrow itself is the completion functor of Stacks 08B4, which is `AlgebraicGeometry.Space.completionFunctor`”.
+**`AlgebraicGeometry.Space.hasProperSupport_idealPowerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystemProperSupport.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicSystemProperSupport.lean#L132). The attribute's comment: “the support condition, by which equation 76.42.2.1 restricts to the two full subcategories constructed below: the completion M / 𝓘 ^ n M of a coherent module with support proper over the base again has support proper over the base. The arrow itself is the completion functor of Stacks 08B4, which is `AlgebraicGeometry.Space.completionFunctor`”.
 
 > **Stacks 08B8, the support condition.** The terms `M / 𝓘 ^ n M` of the completion of a
 > coherent `𝒪_X`-module `M` whose support is proper over `Y` again have support proper over `Y`.
@@ -397,7 +345,7 @@ theorem hasProperSupport_idealPowerQuotient (hX : IsAlgebraicSpace B S hS X)
       ((SheafOfModules.toSheaf _).obj (idealPowerQuotient B S hS X hX 𝓘 n M))
 ```
 
-**`AlgebraicGeometry.Space.completionFunctorProperOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionProperSupport.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionProperSupport.lean#L84). The attribute's comment: “the arrow, restricting the completion functor of Stacks 08B4 to the two full subcategories of objects with support proper over the base”.
+**`AlgebraicGeometry.Space.completionFunctorProperOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionProperSupport.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionProperSupport.lean#L84). The attribute's comment: “the arrow, restricting the completion functor of Stacks 08B4 to the two full subcategories of objects with support proper over the base”.
 
 > **Stacks 08B8, the arrow.**  The completion functor
 > `Coh_{support proper over Y}(𝒪_X) ⟶ Coh_{support proper over Y}(X, 𝓘)` of
@@ -420,7 +368,7 @@ def completionFunctorProperOver
 
 [Tag 08B9](https://stacks.math.columbia.edu/tag/08B9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_completionFunctor_map_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean#L82). The attribute's comment: “the bijection on morphisms; the source's Situation 08B7 asks X separated of finite type over Spec A, of which only local finite type is used”.
+**`AlgebraicGeometry.Space.bijective_completionFunctor_map_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean#L82). The attribute's comment: “the bijection on morphisms; the source's Situation 08B7 asks X separated of finite type over Spec A, of which only local finite type is used”.
 
 > **Stacks 08B9, the bijection on morphisms.**  Let `A` be a Noetherian ring complete with
 > respect to an ideal `I`, let `X` be an algebraic space with a morphism
@@ -450,7 +398,7 @@ theorem bijective_completionFunctor_map_of_isProperOver [IsNoetherianRing A] [Is
         (X := F) (Y := G))
 ```
 
-**`AlgebraicGeometry.Space.completionFunctorProperOverFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean#L101). The attribute's comment: “in particular, the completion functor of 08B8 is fully faithful”.
+**`AlgebraicGeometry.Space.completionFunctorProperOverFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupport.lean#L101). The attribute's comment: “in particular, the completion functor of 08B8 is fully faithful”.
 
 > **Stacks 08B9, full faithfulness.**  In the situation of
 > `AlgebraicGeometry.Space.bijective_completionFunctor_map_of_isProperOver`, the completion functor
@@ -468,7 +416,7 @@ def completionFunctorProperOverFullyFaithful [IsNoetherianRing A] [IsAdicComplet
       (C1573.isQuasicoherentOnSite_baseIdealSubmodule (X := X.1) (hX := X.2) I)).FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.bijective_completionFunctor_map_and_fullyFaithful_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L72).
+**`AlgebraicGeometry.Space.bijective_completionFunctor_map_and_fullyFaithful_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L72).
 
 > **Stacks 08B9.**  Let `A` be a Noetherian ring complete with respect to an ideal `I` and let
 > `X` be an algebraic space with a morphism `f : X ⟶ Spec A` locally of finite type.
@@ -510,14 +458,14 @@ theorem bijective_completionFunctor_map_and_fullyFaithful_of_isProperOver
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1573.bijective_completionFunctor_map_of_isProperOver`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/HomBijection/CompletionFullyFaithfulProperSupport.lean#L262), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L93) (StacksFrontier): “the bijection on morphisms; the source's Situation 08B7 asks X separated of finite type over Spec A, of which only local finite type is used”.
-- [`AlgebraicGeometry.Space.C1573.completionFunctorProperOverFullyFaithful`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/HomBijection/CompletionFullyFaithfulProperSupport.lean#L338), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L97) (StacksFrontier): “in particular, the completion functor of 08B8 is fully faithful”.
+- [`AlgebraicGeometry.Space.C1573.bijective_completionFunctor_map_of_isProperOver`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/HomBijection/CompletionFullyFaithfulProperSupport.lean#L262), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L93) (StacksFrontier): “the bijection on morphisms; the source's Situation 08B7 asks X separated of finite type over Spec A, of which only local finite type is used”.
+- [`AlgebraicGeometry.Space.C1573.completionFunctorProperOverFullyFaithful`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/HomBijection/CompletionFullyFaithfulProperSupport.lean#L338), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CompletionFullyFaithfulProperSupportTag.lean#L97) (StacksFrontier): “in particular, the completion functor of 08B8 is fully faithful”.
 
 ## Tag 08BA, a remark
 
 [Tag 08BA](https://stacks.math.columbia.edu/tag/08BA) in the Stacks Project.
 
-**`Ideal.exists_pow_le_annihilator_ker_and_coker_mapQ_pow_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L341). The attribute's comment: “equivalence of the annihilation conditions”.
+**`Ideal.exists_pow_le_annihilator_ker_and_coker_mapQ_pow_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L341). The attribute's comment: “equivalence of the annihilation conditions”.
 
 > **Stacks Project, Tag 08BA.** For a linear map `φ : M → N` of `I`-adically complete
 > modules, one positive power of `K` annihilates the kernels and the cokernels of all the
@@ -540,7 +488,7 @@ theorem exists_pow_le_annihilator_ker_and_coker_mapQ_pow_iff (I K : Ideal A)
         K ^ t ≤ Module.annihilator A (N ⧸ LinearMap.range φ)
 ```
 
-**`AlgebraicGeometry.Space.IsKernelCokernelAnnihilatedByPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L195). The attribute's comment: “the notion named by the remark: condition (1), one power of K annihilating every levelwise kernel and cokernel”.
+**`AlgebraicGeometry.Space.IsKernelCokernelAnnihilatedByPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L195). The attribute's comment: “the notion named by the remark: condition (1), one power of K annihilating every levelwise kernel and cokernel”.
 
 > **Stacks 08BA, the notion.** A map `α : (F_n) ⟶ (G_n)` of inverse systems of `𝒪_X`-modules
 > on an algebraic space is a *map whose kernel and cokernel are annihilated by a power of `𝓚`* if
@@ -559,7 +507,7 @@ def IsKernelCokernelAnnihilatedByPower
     {E E' : ℕᵒᵖ ⥤ Modules.{u, u} B S hS F hF} (α : E ⟶ E') : Prop
 ```
 
-**`AlgebraicGeometry.Space.isKernelCokernelAnnihilatedByPower_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L371). The attribute's comment: “the equivalence of (1) with (2) for any, and for some, surjective etale affine chart U = Spec(A), with alpha\_U the map of 087W”.
+**`AlgebraicGeometry.Space.isKernelCokernelAnnihilatedByPower_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L371). The attribute's comment: “the equivalence of (1) with (2) for any, and for some, surjective etale affine chart U = Spec(A), with alpha\_U the map of 087W”.
 
 > **Stacks Project, Tag 08BA.** Let `X` be a Noetherian algebraic space over a scheme `S`, let
 > `𝓘, 𝓚 ⊆ 𝒪_X` be quasi-coherent sheaves of ideals and let `α : (F_n) ⟶ (G_n)` be a morphism of
@@ -602,45 +550,7 @@ theorem isKernelCokernelAnnihilatedByPower_tfae
 
 [Tag 08BB](https://stacks.math.columbia.edu/tag/08BB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_iso_of_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraization.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraization.lean#L482). The attribute's comment: “uniqueness, carrying left exactness of completion (08B5) as a hypothesis”.
-
-> **Stacks 08BB, uniqueness of the algebraization.**
->
-> Let `𝓘 ⊆ 𝒪_F` be a quasi-coherent sheaf of ideals on an algebraic space `F` with locally
-> Noetherian étale charts, let `G` be a coherent `𝒪_F`-module and let `E` be a coherent `𝓘`-adic
-> system with a map `α : E ⟶ G^∧`.  Given two algebraizations of `α` — coherent modules `M`, `N`
-> with maps `a : M ⟶ G`, `a' : N ⟶ G` whose kernels and cokernels are annihilated by a power of
-> `𝓘`, and isomorphisms `β : E ≅ M^∧`, `β' : E ≅ N^∧` with `α = β ≫ a^∧ = β' ≫ a'^∧` — there is a
-> *unique* isomorphism `e : M ≅ N` compatible with the maps to `G` and with the comparison
-> isomorphisms.
->
-> **Left exactness of the completion functor is carried as a hypothesis**, in the form of
-> the instance argument `PreservesFiniteLimits (completionFunctor B S hS F hF 𝓘 hI)`.  It is
-> not a hypothesis of the source, which proves it beforehand as Stacks 08B5; it enters this proof
-> only
-> through the step that recognizes the completion of the pullback `M ×_G N` as the pullback of the
-> completions.  Local Noetherianity replaces the source's Noetherian hypothesis, exactly as for
-> the completion functor itself.
->
-> The existence of an algebraization is *not* proved here: the source obtains it by étale descent
-> from the case of a Noetherian scheme, and the restriction of coherent adic systems to an étale
-> chart is not available in this tree.
-
-```lean
-theorem existsUnique_iso_of_algebraization {G M N : CoherentModules.{u, u} B S hS F hF}
-    {E : CoherentAdicSystems B S hS F hF 𝓘}
-    (α : E ⟶ (completionFunctor B S hS F hF 𝓘 hI).obj G) (a : M ⟶ G) (a' : N ⟶ G)
-    (β : E ≅ (completionFunctor B S hS F hF 𝓘 hI).obj M)
-    (β' : E ≅ (completionFunctor B S hS F hF 𝓘 hI).obj N)
-    (ha : IsMapKernelCokernelAnnihilatedByPower B S hS F hF 𝓘 a)
-    (ha' : IsMapKernelCokernelAnnihilatedByPower B S hS F hF 𝓘 a')
-    (hα : α = β.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map a)
-    (hα' : α = β'.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map a') :
-    ∃! e : M ≅ N, e.hom ≫ a' = a ∧
-      β.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map e.hom = β'.hom
-```
-
-**`AlgebraicGeometry.Space.exists_algebraization_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean#L70).
+**`AlgebraicGeometry.Space.exists_algebraization_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean#L69).
 
 > **Stacks 08BB.**  Let `F` be a Noetherian algebraic space over `S` and `𝓘 ⊆ 𝒪_F` a
 > quasi-coherent sheaf of ideals.  Let `G` be a coherent `𝒪_F`-module, `E` an object of
@@ -678,48 +588,11 @@ theorem exists_algebraization_and_existsUnique_iso
         β.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map e.hom = β'.hom
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_iso_of_algebraization_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionLeftExact.lean#L133). The attribute's comment: “uniqueness of the algebraization over the source's own hypotheses, with left exactness of completion (Stacks 08B5) supplied”.
-
-> **Stacks 08BB, uniqueness of the algebraization**, over the source's own hypotheses.
->
-> Let `𝓘 ⊆ 𝒪_F` be a quasi-coherent sheaf of ideals on a Noetherian algebraic space `F`, let `G`
-> be a coherent `𝒪_F`-module and let `E` be a coherent `𝓘`-adic system with a map
-> `α : E ⟶ G^∧`.  Two algebraizations of `α` — coherent modules `M`, `N` with maps `a : M ⟶ G`,
-> `a' : N ⟶ G` whose kernels and cokernels are annihilated by a power of `𝓘`, and isomorphisms
-> `β : E ≅ M^∧`, `β' : E ≅ N^∧` factoring `α` — differ by a unique isomorphism `M ≅ N` compatible
-> with the maps to `G` and with the comparison isomorphisms.
->
-> `AlgebraicGeometry.Space.existsUnique_iso_of_algebraization` states this with left exactness of
-> the completion functor as an instance argument, because Stacks 08B5 was not available where it
-> was proved; here that argument is supplied by
-> `AlgebraicGeometry.Space.preservesFiniteLimits_completionFunctor_of_isNoetherian`, so the only
-> hypotheses left are the source's.
-
-```lean
-theorem existsUnique_iso_of_algebraization_of_isNoetherian
-    (hZ : B.Contains (⊤_ Scheme.{u})) (hN : IsNoetherian B S hS hZ F)
-    {G M N : CoherentModules.{u, u} B S hS F hF} {E : CoherentAdicSystems B S hS F hF 𝓘}
-    (α : E ⟶ (completionFunctor B S hS F hF 𝓘 hI).obj G) (a : M ⟶ G) (a' : N ⟶ G)
-    (β : E ≅ (completionFunctor B S hS F hF 𝓘 hI).obj M)
-    (β' : E ≅ (completionFunctor B S hS F hF 𝓘 hI).obj N)
-    (ha : IsMapKernelCokernelAnnihilatedByPower B S hS F hF 𝓘 a)
-    (ha' : IsMapKernelCokernelAnnihilatedByPower B S hS F hF 𝓘 a')
-    (hα : α = β.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map a)
-    (hα' : α = β'.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map a') :
-    ∃! e : M ≅ N, e.hom ≫ a' = a ∧
-      β.hom ≫ (completionFunctor B S hS F hF 𝓘 hI).map e.hom = β'.hom
-```
-
-Declarations registered for the tag:
-
-- [`AlgebraicGeometry.Space.C1573.exists_algebraization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/CoherentCompletionExistence.lean#L319), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionAlgebraizationTag.lean#L93) (StacksFrontier): “existence of the algebraization (F, a, β), over the source's hypotheses with Noetherianity of the algebraic space weakened to local Noetherianity of its étale charts”.
-- [`AlgebraicGeometry.Space.C1573.exists_algebraization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/CoherentCompletionExistence.lean#L319), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExistence.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentCompletionExistence.lean#L76) (StacksFrontier): “existence of the algebraization (F, a, β), over the source's hypotheses with Noetherianity of the algebraic space weakened to local Noetherianity of its étale charts”.
-
 ## Tag 08BC, a lemma
 
 [Tag 08BC](https://stacks.math.columbia.edu/tag/08BC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.essImage_completionFunctorProperOver_of_auxiliaryIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AuxiliaryIdealClosedSubspace.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AuxiliaryIdealClosedSubspace.lean#L138).
+**`AlgebraicGeometry.Space.essImage_completionFunctorProperOver_of_auxiliaryIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AuxiliaryIdealClosedSubspace.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AuxiliaryIdealClosedSubspace.lean#L138).
 
 > **Stacks 08BC.**  In Situation 08B7 — `A` Noetherian and `I`-adically complete,
 > `f : X ⟶ Spec A` of finite type and separated, `𝓘 = I 𝒪_X` — let `𝓚 ⊆ 𝒪_X` be a
@@ -782,13 +655,13 @@ theorem essImage_completionFunctorProperOver_of_auxiliaryIdeal [IsNoetherianRing
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1573.essImage_completionFunctorProperOver_of_auxiliaryIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/AuxiliaryIdealClosedSubspace.lean#L533), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean#L33) (StacksFrontier).
+- [`AlgebraicGeometry.Space.C1573.essImage_completionFunctorProperOver_of_auxiliaryIdeal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/AuxiliaryIdealClosedSubspace.lean#L553), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean#L33) (StacksFrontier).
 
 ## Tag 08BD, a lemma
 
 [Tag 08BD](https://stacks.math.columbia.edu/tag/08BD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_completionMap_kernel_cokernel_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean#L221). The attribute's comment: “the full statement: for a representable proper morphism of Noetherian algebraic spaces which is an isomorphism over Y minus V(K), a map alpha from (G\_n) to the completion of f\_*F in Coh(Y, J) whose levelwise kernels and cokernels are all annihilated by one positive power of K”.
+**`AlgebraicGeometry.Space.exists_completionMap_kernel_cokernel_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean#L221). The attribute's comment: “the full statement: for a representable proper morphism of Noetherian algebraic spaces which is an isomorphism over Y minus V(K), a map alpha from (G\_n) to the completion of f\_*F in Coh(Y, J) whose levelwise kernels and cokernels are all annihilated by one positive power of K”.
 
 > **Stacks 08BD.** Let `f : X ⟶ Y` be a representable proper morphism of Noetherian algebraic
 > spaces over `S`, let `𝓙, 𝓚 ⊆ 𝒪_Y` be quasi-coherent sheaves of ideals, and assume `f` is an
@@ -827,7 +700,7 @@ theorem exists_completionMap_kernel_cokernel_annihilated (hZ : B.Contains (⊤_ 
         IsKernelCokernelAnnihilatedByPower B S hS Y.1 Y.2 K α.hom
 ```
 
-**`AlgebraicGeometry.Space.directImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L163). The attribute's comment: “the maps gamma\_n of the proof: the adjunction map followed by f\_*beta\_n. The map alpha into (f\_*F)^ is a different declaration and is not constructed in this library”.
+**`AlgebraicGeometry.Space.directImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L164). The attribute's comment: “the maps gamma\_n of the proof: the adjunction map followed by f\_*beta\_n. The map alpha into (f\_*F)^ is a different declaration and is not constructed in this library”.
 
 > **The maps `γ_n : 𝓖_n ⟶ f_*f^*𝓖_n ⟶ f_*(𝓕/𝓘 ⁿ⁺¹𝓕)` of the proof of Stacks 08BD**, as a
 > morphism of inverse systems of `𝒪_Y`-modules on an algebraic space: the adjunction map followed
@@ -838,7 +711,7 @@ def directImageComparison :
     G.obj ⟶ ((completionFunctor B S hS X.1 X.2 𝓘 hI).obj F).obj ⋙ modulePushforward B S hS f
 ```
 
-**`AlgebraicGeometry.Space.exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L210). The attribute's comment: “the reduction of the lemma's kernel-cokernel condition from gamma to the adjunction maps. The map alpha into (f\_*F)^ is not constructed in this library, which proves neither 08AR for a representable proper morphism nor the uniform Artin-Rees bounds 02OB behind the scheme case 088B”.
+**`AlgebraicGeometry.Space.exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L211). The attribute's comment: “the reduction of the lemma's kernel-cokernel condition from gamma to the adjunction maps. The map alpha into (f\_*F)^ is not constructed in this library, which proves neither 08AR for a representable proper morphism nor the uniform Artin-Rees bounds 02OB behind the scheme case 088B”.
 
 > **The reduction of the kernel–cokernel condition of Stacks 08BD to the adjunction maps.**
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`, let `𝓙, 𝓚 ⊆ 𝒪_Y` and
@@ -859,7 +732,8 @@ def directImageComparison :
 ```lean
 theorem exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff
     (𝓚 : (SheafOfModules.unit
-      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS Y.1 Y.2).O))).Submodule) :
+      ((Stacks.SheafOfModules.Tensor.ringSheaf
+        (smallEtaleRingedSite B S hS Y.1 Y.2).O))).Submodule) :
     (∃ t : ℕ, 0 < t ∧ ∀ k : ℕ,
         idealPowerMultiple B S hS Y.1 Y.2 𝓚 t
             (kernel ((directImageComparison B S hS f 𝓙 𝓘 hI G F β).app (op k))) = ⊥ ∧
@@ -872,7 +746,7 @@ theorem exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff
             (cokernel ((pullbackPushforwardUnitSystem B S hS f G.obj).app (op k))) = ⊥
 ```
 
-**`AlgebraicGeometry.Space.exists_hom_completion_modulePushforward_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperDirectImageCompletionMap.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperDirectImageCompletionMap.lean#L71).
+**`AlgebraicGeometry.Space.exists_hom_completion_modulePushforward_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperDirectImageCompletionMap.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperDirectImageCompletionMap.lean#L71).
 
 > **Stacks 08BD.**  For a representable proper morphism `f : X ⟶ Y` of Noetherian algebraic
 > spaces which is an isomorphism over the complement of the closed subspace `Z = V(𝒦)`, a coherent
@@ -907,7 +781,7 @@ theorem exists_hom_completion_modulePushforward_annihilated
 
 [Tag 08BE](https://stacks.math.columbia.edu/tag/08BE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_completionFunctorProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceSpaces.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceSpaces.lean#L53).
+**`AlgebraicGeometry.Space.isEquivalence_completionFunctorProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceSpaces.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceSpaces.lean#L53).
 
 > **Stacks 08BE, Grothendieck's existence theorem for algebraic spaces.**  Let `A` be a
 > Noetherian ring complete with respect to an ideal `I`, and let `f : X ⟶ Spec A` be a separated
@@ -931,13 +805,13 @@ theorem isEquivalence_completionFunctorProperOver [IsNoetherianRing A] (I : Idea
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1573.isEquivalence_completionFunctorProperOver`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/GrothendieckExistenceSpaces.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean#L36) (StacksFrontier).
+- [`AlgebraicGeometry.Space.C1573.isEquivalence_completionFunctorProperOver`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/GrothendieckExistenceSpaces.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistenceTags.lean#L36) (StacksFrontier).
 
 ## Tag 08BF, a remark
 
 [Tag 08BF](https://stacks.math.columbia.edu/tag/08BF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_adicFibreRestrictionProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean#L410).
+**`AlgebraicGeometry.Space.isEquivalence_adicFibreRestrictionProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean#L410).
 
 > **Stacks 08BF.**  Let `A` be a Noetherian ring complete with respect to an ideal `I`, write
 > `S = Spec A` and `Sₙ = Spec(A/Iⁿ)`, and let `X ⟶ S` be a separated morphism of algebraic spaces of
@@ -954,7 +828,7 @@ theorem isEquivalence_adicFibreRestrictionProperOver [IsNoetherianRing A] [IsAdi
     (adicFibreRestrictionProperOver I X f hf.1).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_adicFibreRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean#L434). The attribute's comment: “the special case of X proper over A, where the conditions on the supports are omitted”.
+**`AlgebraicGeometry.Space.isEquivalence_adicFibreRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdicFibreSystem.lean#L434). The attribute's comment: “the special case of X proper over A, where the conditions on the supports are omitted”.
 
 > **Stacks 08BF, the case of `X` proper over `A`.**  If `X ⟶ S = Spec A` is proper, the
 > completion functor `𝓕 ↦ (𝓕|_{Xₙ})ₙ` from all coherent `𝒪_X`-modules to all systems `(𝓕ₙ, φₙ)` of
@@ -974,4 +848,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.42, Tag 089N](https://stacks.math.columbia.edu/tag/089N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

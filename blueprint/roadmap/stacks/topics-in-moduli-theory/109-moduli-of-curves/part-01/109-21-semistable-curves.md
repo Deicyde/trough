@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.21 Semistable curves
 
-Section 109.21 of the Stacks Project, [Tag 0E6X](https://stacks.math.columbia.edu/tag/0E6X). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.21 of the Stacks Project, [Tag 0E6X](https://stacks.math.columbia.edu/tag/0E6X). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E6Y, a lemma
 
 [Tag 0E6Y](https://stacks.math.columbia.edu/tag/0E6Y) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.hasNoRationalTailFibre_iff_isCounitSurjectiveAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NoRationalTailDualizingPowerCounit.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NoRationalTailDualizingPowerCounit.lean#L149).
+**`AlgebraicGeometry.CurveFamily.hasNoRationalTailFibre_iff_isCounitSurjectiveAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NoRationalTailDualizingPowerCounit.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NoRationalTailDualizingPowerCounit.lean#L149).
 
 > Let `f : X → S` be a prestable family of curves of genus `g ≥ 1`, with relative dualizing
 > complex `ω^•_{X/S}` and relative dualizing sheaf `ω_{X/S} = H^{-1}(ω^•_{X/S})`. Let `s ∈ S` and
@@ -37,7 +37,7 @@ theorem hasNoRationalTailFibre_iff_isCounitSurjectiveAbove (X : CurveFamily B hZ
 
 [Tag 0E6Z](https://stacks.math.columbia.edu/tag/0E6Z) in the Stacks Project.
 
-**`AlgebraicGeometry.IsSemistableCurveFamily`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SemistableCurveFamilies.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/SemistableCurveFamilies.lean#L78).
+**`AlgebraicGeometry.IsSemistableCurveFamily`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SemistableCurveFamilies.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/SemistableCurveFamilies.lean#L78).
 
 > **Stacks 0E6Z.** A family of curves is *semistable* when it is prestable and, for every
 > point of the base, its fibre there has genus at least one and no rational tail.
@@ -50,7 +50,7 @@ abbrev IsSemistableCurveFamily (X : CurveFamily B hZ) : Prop
 
 [Tag 0E70](https://stacks.math.columbia.edu/tag/0E70) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSemistable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean#L97). The attribute's comment: “the whole statement: the open substack Curves^\{semistable} and parts (1) and (2)”.
+**`AlgebraicGeometry.curvesSemistable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean#L97). The attribute's comment: “the whole statement: the open substack Curves^\{semistable} and parts (1) and (2)”.
 
 > There is an open substack `Curves^{semistable} ⊂ Curves` — the strictly full subcategory of
 > semistable families of curves (Stacks 0E6Z), whose inclusion is representable by algebraic spaces
@@ -115,7 +115,7 @@ theorem curvesSemistable_isOpenSubstack_and_factors_iff :
 
 [Tag 0E71](https://stacks.math.columbia.edu/tag/0E71) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSemistableOfGenus_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L93). The attribute's comment: “the decomposition Curves^\{semistable} = ∐\_\{g ≥ 1} Curves^\{semistable}\_g into open and closed substacks, and part (1)”.
+**`AlgebraicGeometry.curvesSemistableOfGenus_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L93). The attribute's comment: “the decomposition Curves^\{semistable} = ∐\_\{g ≥ 1} Curves^\{semistable}\_g into open and closed substacks, and part (1)”.
 
 > For every `g`, `Curves^{semistable}_g` is an open substack of `Curves` contained in
 > `Curves^{semistable}`: its inclusion is representable by algebraic spaces and an open immersion.
@@ -168,7 +168,7 @@ theorem curvesSemistableOfGenus_isOpenSubstack_and_factors_iff :
               Set.range ((BigFppfOver.toScheme B integerBase hZ).map a.baseMap) ⊆ Ω g
 ```
 
-**`AlgebraicGeometry.factors_curvesSemistableOfGenus_over_field_iff_noRationalTail_and_globallyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L146). The attribute's comment: “part (2): (a) ⇔ (b) and (a) ⇔ (c), for a proper scheme of dimension at most one over a field”.
+**`AlgebraicGeometry.factors_curvesSemistableOfGenus_over_field_iff_noRationalTail_and_globallyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L146). The attribute's comment: “part (2): (a) ⇔ (b) and (a) ⇔ (c), for a proper scheme of dimension at most one over a field”.
 
 > Let `g ≥ 1` and let `X` be a proper scheme of dimension at most one over a field `k` (with
 > `Spec k` in the site, so that the classifying morphism `Spec k ⟶ Curves` of `X` exists). The
@@ -214,7 +214,7 @@ theorem factors_curvesSemistableOfGenus_over_field_iff_noRationalTail_and_global
 
 [Tag 0E72](https://stacks.math.columbia.edu/tag/0E72) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesSemistable_and_curvesSemistableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean#L64). The attribute's comment: “both morphisms Curves^\{semistable} → Spec(ℤ) and Curves^\{semistable}\_g → Spec(ℤ), for every g”.
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesSemistable_and_curvesSemistableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean#L64). The attribute's comment: “both morphisms Curves^\{semistable} → Spec(ℤ) and Curves^\{semistable}\_g → Spec(ℤ), for every g”.
 
 > The morphisms `Curves^{semistable} → Spec(ℤ)` and, for every `g`,
 > `Curves^{semistable}_g → Spec(ℤ)` are smooth. Here `Curves^{semistable}` and
@@ -246,4 +246,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.21, Tag 0E6X](https://stacks.math.columbia.edu/tag/0E6X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

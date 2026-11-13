@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Cohomology.exists_rightDerivedLimit_isDerivedLimit, Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedGlobalSections, Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedGlobalSections, Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedSections, Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedSections, Stacks.Cohomology.DerivedSectionsMilnor.isDerivedLimit_map_derivedSectionsOverObject, Stacks.Cohomology.DerivedSectionsMilnor.exists_shortExact_limOne_cohomology_derivedSections, Stacks.Cohomology.DerivedPushforwardOnRingedTopoi.isDerivedLimit_map_derivedPushforward
+lean: Stacks.Cohomology.exists_rightDerivedLimit_isDerivedLimit, Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedGlobalSections, Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedGlobalSections, Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedSections, Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedSections, Stacks.Cohomology.DerivedSectionsMilnor.isDerivedLimit_map_derivedSectionsOverObject, Stacks.Cohomology.DerivedSectionsMilnor.exists_shortExact_limOne_cohomology_derivedSections, Stacks.Cohomology.DerivedPushforward.isDerivedLimit_map_derivedPushforward
 statement: formalized
 proof: formalized
 ---
 
 # 21.23 Derived and homotopy limits
 
-Section 21.23 of the Stacks Project, [Tag 0940](https://stacks.math.columbia.edu/tag/0940). 12 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.23 of the Stacks Project, [Tag 0940](https://stacks.math.columbia.edu/tag/0940). 12 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0941, a lemma
 
 [Tag 0941](https://stacks.math.columbia.edu/tag/0941) in the Stacks Project.
 
-**`Stacks.Cohomology.exists_rightDerivedLimit_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/DerivedLimitsOfInverseSystems.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/DerivedLimitsOfInverseSystems.lean#L375).
+**`Stacks.Cohomology.exists_rightDerivedLimit_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/DerivedLimitsOfInverseSystems.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/DerivedLimitsOfInverseSystems.lean#L375).
 
 > **Stacks Project Tag 0941.** The value of the right derived functor of ordinary inverse limit
 > at `K` exists and is a derived limit of the tower of the derived evaluations `Kₙ`.
@@ -44,7 +44,7 @@ theorem exists_rightDerivedLimit_isDerivedLimit
 
 [Tag 0D6K](https://stacks.math.columbia.edu/tag/0D6K) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L114). The attribute's comment: “global derived sections commute with derived limits”.
+**`Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L114). The attribute's comment: “global derived sections commute with derived limits”.
 
 > **Stacks Project, Tag 0D6K.** `RΓ(C, -)` commutes with `Rlim`: global derived sections of
 > a ringed site carry a derived inverse limit to a derived inverse limit.
@@ -65,7 +65,7 @@ public theorem isDerivedLimit_map_derivedGlobalSections
         ((derivedGlobalSections.{u, v, w, z} X).obj L)
 ```
 
-**`Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L136). The attribute's comment: “short exact sequence over the whole site”.
+**`Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L136). The attribute's comment: “short exact sequence over the whole site”.
 
 > **Stacks Project, Tag 0D6K.** The canonical Milnor short exact sequence for the cohomology
 > of the whole ringed site: the first derived inverse limit of the degree-`m - 1` cohomologies
@@ -126,7 +126,7 @@ public theorem exists_shortExact_limOne_cohomology_derivedGlobalSections
           Hcur.map (RGamma.map (p ≫ Pi.π (fun n : ℕ ↦ K.obj ⟨n⟩) n)))
 ```
 
-**`Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L239). The attribute's comment: “derived sections over an object commute with derived limits”.
+**`Stacks.Cohomology.DerivedGlobalSections.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L239). The attribute's comment: “derived sections over an object commute with derived limits”.
 
 > **Stacks Project, Tag 0D6K.** `RΓ(U, -)` commutes with `Rlim`: derived sections over an
 > object of a ringed site carry a derived inverse limit to a derived inverse limit.
@@ -147,7 +147,7 @@ public theorem isDerivedLimit_map_derivedSections
         ((derivedSections.{u, v, w, z} X U).obj L)
 ```
 
-**`Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L265). The attribute's comment: “short exact sequence over an object”.
+**`Stacks.Cohomology.DerivedGlobalSections.exists_shortExact_limOne_cohomology_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedGlobalSectionsUnbounded.lean#L265). The attribute's comment: “short exact sequence over an object”.
 
 > **Stacks Project, Tag 0D6K.** The canonical Milnor short exact sequence for the cohomology
 > over an object `U` of a ringed site: the first derived inverse limit of the degree-`m - 1`
@@ -207,7 +207,7 @@ public theorem exists_shortExact_limOne_cohomology_derivedSections
           Hcur.map (RGamma.map (p ≫ Pi.π (fun n : ℕ ↦ K.obj ⟨n⟩) n)))
 ```
 
-**`Stacks.Cohomology.DerivedSectionsMilnor.isDerivedLimit_map_derivedSectionsOverObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean#L169). The attribute's comment: “derived sections over an object commute with derived limits”.
+**`Stacks.Cohomology.DerivedSectionsMilnor.isDerivedLimit_map_derivedSectionsOverObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean#L169). The attribute's comment: “derived sections over an object commute with derived limits”.
 
 > **Stacks Project Tag 0D6K.** Derived sections over an object of a ringed site carry a
 > derived inverse limit to a derived inverse limit.
@@ -229,7 +229,7 @@ theorem isDerivedLimit_map_derivedSectionsOverObject (X : RingedSite.{u, u, u}) 
         ((derivedSectionsOverObject X U).obj L)
 ```
 
-**`Stacks.Cohomology.DerivedSectionsMilnor.exists_shortExact_limOne_cohomology_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean#L198). The attribute's comment: “short exact sequence over an object”.
+**`Stacks.Cohomology.DerivedSectionsMilnor.exists_shortExact_limOne_cohomology_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/DerivedSectionsAndInverseLimits.lean#L198). The attribute's comment: “short exact sequence over an object”.
 
 > **Stacks Project Tag 0D6K.** The canonical Milnor short exact sequence for cohomology over
 > an object of a ringed site: the first derived inverse limit of the degree-`m - 1` cohomologies
@@ -291,30 +291,42 @@ theorem exists_shortExact_limOne_cohomology_derivedSections (X : RingedSite.{u, 
 
 [Tag 0A07](https://stacks.math.columbia.edu/tag/0A07) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPushforwardOnRingedTopoi.isDerivedLimit_map_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedLimits.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedLimits.lean#L92).
+**`Stacks.Cohomology.DerivedPushforward.isDerivedLimit_map_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedLimitsOfToposHom.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedLimitsOfToposHom.lean#L88). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites; `R lim` is the derived limit `IsDerivedLimit` of a countable inverse system, given by its defining distinguished triangle”.
 
-> **Stacks Project, Tag 0A07.**  Derived pushforward along a morphism of ringed topoi commutes
-> with derived limits: it carries an object exhibited as the derived limit of a countable inverse
-> system to the derived limit of the pushed-forward system.
+> **Stacks Project, Tag 0A07.**  Let `f : (Sh(C), 𝒪) ⟶ (Sh(C'), 𝒪')` be a morphism of ringed
+> topoi.  Then `Rf_*` commutes with `R\lim`: if a distinguished triangle
+> `L ⟶ ∏ K_n ⟶ ∏ K_n ⟶ L[1]` exhibits `L` as the derived limit of a countable inverse system
+> `(K_n)` of objects of `D(𝒪)`, then the product of the `Rf_* K_n` exists in `D(𝒪')` and `Rf_* L`
+> is the derived limit of the system `(Rf_* K_n)`.
+>
+> Here `f` is an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3 (a morphism
+> of the underlying topoi together with the structure map), with no functor between the sites.
+> The proof is the source's adjunction argument: `Rf_*` is exact, and it is a right adjoint by
+> Tag 07A6 (`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction`), so it preserves the
+> products of `D(𝒪)`; `Stacks.Injectives.isDerivedLimit_map_rightAdjoint` is the abstract form.
+> The two `UnivLE` hypotheses only place the site of `X` below its module universe, which is what
+> makes `Mod(𝒪)` a Grothendieck abelian category (`SheafOfModules.isGrothendieckAbelian_of_univLE`)
+> and hence `Rf_*` exist.
 
 ```lean
-theorem isDerivedLimit_map_derivedPushforward
-    (K : ℕᵒᵖ ⥤ DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
+theorem isDerivedLimit_map_derivedPushforward (f : RingedToposHom X Y)
+    (K : ℕᵒᵖ ⥤ DerivedCategory (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
     [HasProduct fun n : ℕ ↦ K.obj ⟨n⟩]
-    (L : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
+    (L : DerivedCategory (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
     (hL : IsDerivedLimit K L) :
-    ∃ h : HasProduct (fun n : ℕ ↦ (derivedPushforward f).obj (K.obj ⟨n⟩)),
+    ∃ h : HasProduct (fun n : ℕ ↦ (derivedPushforward (X := X) (Y := Y) f).obj (K.obj ⟨n⟩)),
       @IsDerivedLimit
-        (DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)))
+        (DerivedCategory (SheafOfModules.{w'} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)))
         _ _ _ _ _ _
-        (K ⋙ derivedPushforward f) h ((derivedPushforward f).obj L)
+        (K ⋙ derivedPushforward (X := X) (Y := Y) f) h
+        ((derivedPushforward (X := X) (Y := Y) f).obj L)
 ```
 
 ## Tag 0BKW, a remark
 
 [Tag 0BKW](https://stacks.math.columbia.edu/tag/0BKW) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitDiagram.cohomologyDerivedLimitDiagram_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/ComparisonDiagramUnconditional.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/ComparisonDiagramUnconditional.lean#L195). The attribute's comment: “the commuting square and the short exact sequences over the objects of the site”.
+**`Stacks.Cohomology.DerivedLimitDiagram.cohomologyDerivedLimitDiagram_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/ComparisonDiagramUnconditional.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/ComparisonDiagramUnconditional.lean#L196). The attribute's comment: “the commuting square and the short exact sequences over the objects of the site”.
 
 > **Stacks Project, Tag 0BKW.** Let `(C, O)` be a ringed site, let `(Kₙ)` be an inverse system
 > in `D(O)` and let `K` be a derived limit of it, presented by the structural map `p : K ⟶ ∏ Kₙ` of
@@ -401,7 +413,7 @@ theorem cohomologyDerivedLimitDiagram_unconditional
 
 [Tag 0BKY](https://stacks.math.columbia.edu/tag/0BKY) in the Stacks Project.
 
-**`Stacks.Cohomology.SiteInverseLimits.isDerivedLimit_single_limit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean#L371). The attribute's comment: “ordinary limit is a derived limit”.
+**`Stacks.Cohomology.SiteInverseLimits.isDerivedLimit_single_limit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean#L371). The attribute's comment: “ordinary limit is a derived limit”.
 
 > If the terms of a countable inverse system of modules on a ringed site are acyclic on a class
 > of objects covering every object, and the first derived inverse limit of their sections vanishes
@@ -434,7 +446,7 @@ theorem isDerivedLimit_single_limit_of_acyclic_cover
           (limit F))
 ```
 
-**`Stacks.Cohomology.SiteInverseLimits.isZero_cohomology_limit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean#L437). The attribute's comment: “acyclicity of the ordinary limit”.
+**`Stacks.Cohomology.SiteInverseLimits.isZero_cohomology_limit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/InverseLimitOfAcyclicTower.lean#L437). The attribute's comment: “acyclicity of the ordinary limit”.
 
 > Under the same hypotheses, the ordinary inverse limit has vanishing positive-degree
 > cohomology on every member of the covering class.
@@ -464,7 +476,7 @@ theorem isZero_cohomology_limit_of_acyclic_cover
 
 [Tag 0D6L](https://stacks.math.columbia.edu/tag/0D6L) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitSections.cohomology_derivedLimit_projection_mono_on_sections_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/SectionsInjectivityUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/SectionsInjectivityUnconditional.lean#L135).
+**`Stacks.Cohomology.DerivedLimitSections.cohomology_derivedLimit_projection_mono_on_sections_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/SectionsInjectivityUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/SectionsInjectivityUnconditional.lean#L135).
 
 > **Stacks Project, Tag 0D6L.** Let `(C, O)` be a ringed site, let `(Kₙ)` be an inverse system
 > in `D(O)` with derived limit `L`, let `V` be an object of `C` and let `m` be an integer.  Suppose
@@ -526,7 +538,7 @@ theorem cohomology_derivedLimit_projection_mono_on_sections_unconditional
 
 [Tag 0D6M](https://stacks.math.columbia.edu/tag/0D6M) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305).
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305).
 
 > **Stacks Project, Tag 0D6M.** Under local, eventually vanishing cohomology bounds, the
 > canonical map from a derived object to any derived limit of its truncations from below is an
@@ -579,7 +591,7 @@ theorem isIso_to_isDerivedLimit_truncationGETower
     IsIso c
 ```
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L100).
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L102).
 
 > **Stacks Project, Tag 0D6M.** Let `O` be a sheaf of rings on a site `C`, let `E` be an
 > object of the derived category of sheaves of `O`-modules, and let `B` be a set of objects of
@@ -641,7 +653,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_vanishing
 
 [Tag 0D6N](https://stacks.math.columbia.edu/tag/0D6N) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
 
 > **Stacks Project, Tag 0D6M.** Under local, eventually vanishing cohomology bounds, the
 > canonical map from a derived object to any derived limit of its truncations from below is an
@@ -694,7 +706,7 @@ theorem isIso_to_isDerivedLimit_truncationGETower
     IsIso c
 ```
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L100). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L102). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
 
 > **Stacks Project, Tag 0D6M.** Let `O` be a sheaf of rings on a site `C`, let `E` be an
 > object of the derived category of sheaves of `O`-modules, and let `B` be a set of objects of
@@ -756,7 +768,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_vanishing
 
 [Tag 08U3](https://stacks.math.columbia.edu/tag/08U3) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean#L87). The attribute's comment: “variant: the single-universe form, for a ringed site whose module category has enough injectives and the countable product of the truncation tower; the tag, with neither of these, is Stacks.Cohomology.DegreeBound.isIso\_to\_isDerivedLimit\_truncGETower\_of\_degreeBound”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean#L87). The attribute's comment: “variant: the single-universe form, for a ringed site whose module category has enough injectives and the countable product of the truncation tower; the tag, with neither of these, is Stacks.Cohomology.DegreeBound.isIso\_to\_isDerivedLimit\_truncGETower\_of\_degreeBound”.
 
 > Degree-dependent bounds for cohomology on a locally covering class imply that the canonical
 > map to the derived limit of the lower-truncation tower is an isomorphism.
@@ -817,7 +829,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_degreeBound
     IsIso c
 ```
 
-**`Stacks.Cohomology.DegreeBound.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBoundsUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBoundsUnconditional.lean#L80).
+**`Stacks.Cohomology.DegreeBound.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBoundsUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBoundsUnconditional.lean#L80).
 
 > **Stacks Project, Tag 08U3.** Let `O` be a sheaf of rings on a site `C` and let `E` be an
 > object of the derived category of sheaves of `O`-modules.  Suppose there are a function
@@ -868,7 +880,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_degreeBound
 
 [Tag 0D6P](https://stacks.math.columbia.edu/tag/0D6P) in the Stacks Project.
 
-**`Stacks.Cohomology.UniformBound.isIso_to_isDerivedLimit_truncGETower_of_vanishing_uniform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUniformBoundUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUniformBoundUnconditional.lean#L57).
+**`Stacks.Cohomology.UniformBound.isIso_to_isDerivedLimit_truncGETower_of_vanishing_uniform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUniformBoundUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUniformBoundUnconditional.lean#L57).
 
 > Let `O` be a sheaf of rings on a site `C` and let `E` be an object of the derived category of
 > sheaves of `O`-modules.  Suppose there are an integer `d ≥ 0` and a set `B` of objects of `C`
@@ -919,7 +931,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_vanishing_uniform
 
 [Tag 0BKZ](https://stacks.math.columbia.edu/tag/0BKZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_hypercohomologyEdge_app_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineOpenHypercohomologyEdge.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineOpenHypercohomologyEdge.lean#L72). The attribute's comment: “at the affine opens of a scheme, for an object with quasi-coherent cohomology”. References: EGA III (1.3.1), “more general”.
+**`AlgebraicGeometry.isIso_hypercohomologyEdge_app_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineOpenHypercohomologyEdge.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineOpenHypercohomologyEdge.lean#L72). The attribute's comment: “at the affine opens of a scheme, for an object with quasi-coherent cohomology”. References: EGA III (1.3.1), “more general”.
 
 > **The hypercohomology edge morphism over an affine open of a scheme is invertible**, at an
 > object of `D(𝒪_X)` whose cohomology sheaves are all quasi-coherent, in every degree and with no
@@ -936,7 +948,7 @@ theorem isIso_hypercohomologyEdge_app_of_isAffineOpen
       X.ringCatSheaf U q).app E)
 ```
 
-**`Stacks.Cohomology.HypercohomologyEdge.isIso_hypercohomologyEdge_app_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/HypercohomologyEdge/AcyclicObject.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/HypercohomologyEdge/AcyclicObject.lean#L162).
+**`Stacks.Cohomology.HypercohomologyEdge.isIso_hypercohomologyEdge_app_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/HypercohomologyEdge/AcyclicObject.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/HypercohomologyEdge/AcyclicObject.lean#L162).
 
 > **Stacks Project Tag 0BKZ.** If the cohomology sheaves of an object of the unbounded derived
 > category of `O`-modules have no higher cohomology over the members of a class of objects covering
@@ -959,7 +971,7 @@ theorem isIso_hypercohomologyEdge_app_of_acyclic_cover (U : C)
 
 [Tag 0A09](https://stacks.math.columbia.edu/tag/0A09) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitAcyclic.isLimit_cohomology_of_isDerivedLimit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyCommutesWithDerivedLimit.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyCommutesWithDerivedLimit.lean#L80).
+**`Stacks.Cohomology.DerivedLimitAcyclic.isLimit_cohomology_of_isDerivedLimit_of_acyclic_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyCommutesWithDerivedLimit.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyCommutesWithDerivedLimit.lean#L80).
 
 > **Stacks Project Tag 0A09.** Cohomology commutes with a derived inverse limit if there is a
 > class of objects covering the site on which all positive cohomology of the cohomology sheaves
@@ -1016,4 +1028,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.23, Tag 0940](https://stacks.math.columbia.edu/tag/0940)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

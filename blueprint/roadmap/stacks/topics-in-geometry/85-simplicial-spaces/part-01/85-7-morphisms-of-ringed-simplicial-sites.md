@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.7 Morphisms of ringed simplicial sites
 
-Section 85.7 of the Stacks Project, [Tag 0DGY](https://stacks.math.columbia.edu/tag/0DGY). 3 tags here are carried by 56 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.7 of the Stacks Project, [Tag 0DGY](https://stacks.math.columbia.edu/tag/0DGY). 3 tags here are carried by 56 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DGZ, a remark
 
 [Tag 0DGZ](https://stacks.math.columbia.edu/tag/0DGZ) in the Stacks Project.
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean#L95). The attribute's comment: “ringed simplicial site morphism, case (B) of Situation 09WE”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean#L95). The attribute's comment: “ringed simplicial site morphism, case (B) of Situation 09WE”.
 
 > **Stacks 0DGZ**, case (B). A morphism between ringed simplicial sites: a morphism `h`
 > between the underlying simplicial sites, together with a homomorphism of sheaves of rings
@@ -26,7 +26,7 @@ structure RingedMorphism (C C' : CocontinuousSimplicialSite.{u})
     (O' : Sheaf (⟨Sum.inr C'⟩ : SimplicialSiteSituation.{u}).totalTopology RingCat.{u})
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean#L122). The attribute's comment: “the two equivalent forms of the ring map, case (B)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphism.lean#L122). The attribute's comment: “the two equivalent forms of the ring map, case (B)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
 
 > **Stacks 0DGZ**, case (B). A homomorphism of sheaves of rings `h_total⁻¹ 𝒪' ⟶ 𝒪` is the
 > same thing as a homomorphism `𝒪' ⟶ h_{total, *} 𝒪`: the two are exchanged by the adjunction
@@ -40,7 +40,7 @@ def ringHomEquiv (h : CocontinuousSimplicialSite.Morphism C C')
     (h.totalInverseImageRing O' ⟶ O) ≃ (O' ⟶ h.totalPushforwardRing O)
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean#L155). The attribute's comment: “ringed simplicial site morphism, case (A) of Situation 09WE”.
+**`CategoryTheory.SimplicialSite.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean#L155). The attribute's comment: “ringed simplicial site morphism, case (A) of Situation 09WE”.
 
 > **Stacks 0DGZ**, case (A). A morphism between ringed simplicial sites: a morphism `h`
 > between the underlying simplicial sites, together with a homomorphism of sheaves of rings
@@ -52,7 +52,7 @@ structure RingedMorphism (C C' : SimplicialSite.{u})
     (O' : Sheaf C'.totalTopology RingCat.{u})
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean#L181). The attribute's comment: “the two equivalent forms of the ring map, case (A)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismContinuous.lean#L181). The attribute's comment: “the two equivalent forms of the ring map, case (A)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
 
 > **Stacks 0DGZ**, case (A). A homomorphism of sheaves of rings `h_total⁻¹ 𝒪' ⟶ 𝒪` is the
 > same thing as a homomorphism `𝒪' ⟶ h_{total, *} 𝒪`: the two are exchanged by the adjunction
@@ -65,7 +65,7 @@ def ringHomEquiv (h : SimplicialSite.Morphism C C')
     (h.totalInverseImageRing O' ⟶ O) ≃ (O' ⟶ h.totalPushforwardRing O)
 ```
 
-**`CategoryTheory.SimplicialSiteMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L141). The attribute's comment: “the two equivalent forms of the ring map, case (A)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
+**`CategoryTheory.SimplicialSiteMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L141). The attribute's comment: “the two equivalent forms of the ring map, case (A)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
 
 > **Stacks 0DGZ**, both cases of Situation 09WE. A homomorphism of sheaves of rings
 > `h_total⁻¹ 𝒪' ⟶ 𝒪` is the same thing as a homomorphism `𝒪' ⟶ h_{total, *} 𝒪`: the two are
@@ -78,7 +78,7 @@ def ringHomEquiv (h : SimplicialSiteMorphism S S')
     (h.totalInverseImageRing O' ⟶ O) ≃ (O' ⟶ h.totalPushforwardRing O)
 ```
 
-**`CategoryTheory.SimplicialSiteMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L141). The attribute's comment: “the two equivalent forms of the ring map, case (B)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
+**`CategoryTheory.SimplicialSiteMorphism.ringHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L141). The attribute's comment: “the two equivalent forms of the ring map, case (B)”. References: SGA 4 XVII (0.2.1), “ringed simplicial sites”.
 
 > **Stacks 0DGZ**, both cases of Situation 09WE. A homomorphism of sheaves of rings
 > `h_total⁻¹ 𝒪' ⟶ 𝒪` is the same thing as a homomorphism `𝒪' ⟶ h_{total, *} 𝒪`: the two are
@@ -91,7 +91,7 @@ def ringHomEquiv (h : SimplicialSiteMorphism S S')
     (h.totalInverseImageRing O' ⟶ O) ≃ (O' ⟶ h.totalPushforwardRing O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L171). The attribute's comment: “ringed simplicial site morphism, case (A) of Situation 09WE”.
+**`CategoryTheory.SimplicialSiteSituation.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L171). The attribute's comment: “ringed simplicial site morphism, case (A) of Situation 09WE”.
 
 > **Stacks 0DGZ**, both cases of Situation 09WE. A morphism between ringed simplicial sites: a
 > morphism `h` between the underlying simplicial sites, together with a homomorphism of sheaves of
@@ -103,7 +103,7 @@ structure SimplicialSiteSituation.RingedMorphism (S S' : SimplicialSiteSituation
     (O' : Sheaf S'.totalTopology RingCat.{u})
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L171). The attribute's comment: “ringed simplicial site morphism, case (B) of Situation 09WE”.
+**`CategoryTheory.SimplicialSiteSituation.RingedMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedMorphismSituation.lean#L171). The attribute's comment: “ringed simplicial site morphism, case (B) of Situation 09WE”.
 
 > **Stacks 0DGZ**, both cases of Situation 09WE. A morphism between ringed simplicial sites: a
 > morphism `h` between the underlying simplicial sites, together with a homomorphism of sheaves of
@@ -119,7 +119,7 @@ structure SimplicialSiteSituation.RingedMorphism (S S' : SimplicialSiteSituation
 
 [Tag 0DH0](https://stacks.math.columbia.edu/tag/0DH0) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackUnderlyingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L737). The attribute's comment: “restriction of modules to components”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackUnderlyingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L737). The attribute's comment: “restriction of modules to components”.
 
 > **Stacks 0DH0.** Restriction of sheaves of modules to the simplicial component of degree
 > `n` has the inverse image of sheaves of sets as its underlying sheaf, naturally in the module:
@@ -138,7 +138,7 @@ def componentPullbackUnderlyingIso :
         (componentRingedToposHom S O n).toToposHom.inverseImage
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackUnderlyingIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L756). The attribute's comment: “the canonical restriction of modules”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackUnderlyingIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L756). The attribute's comment: “the canonical restriction of modules”.
 
 > **Stacks 0DH0.** The comparison of the previous declaration is the canonical one, not an
 > arbitrary isomorphism: precomposing it with the unit of extension of scalars along the
@@ -157,7 +157,7 @@ theorem componentPullbackUnderlyingIso_unit :
           (totalRingedTopos S O).O)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentInverseImageCommRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 810](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L810). The attribute's comment: “the canonical ring comparison”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentInverseImageCommRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L810). The attribute's comment: “the canonical ring comparison”.
 
 > **Stacks 0DH0.** The comparison of the two inverse images of sheaves of commutative rings
 > around the square of simplicial degree `n`. This is the identification
@@ -170,7 +170,7 @@ def componentInverseImageCommRingIso (h : Morphism C C') (n : SimplexCategory) :
       inverseImageCommRingFunctor.{u, u, u, u, u, u} (viaComponentMorphism h n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentInverseImageCommRingIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 823](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L823). The attribute's comment: “the canonical underlying comparison”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentInverseImageCommRingIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L823). The attribute's comment: “the canonical underlying comparison”.
 
 > **Stacks 0DH0.** The comparison of inverse images of sheaves of commutative rings has the
 > comparison of inverse images of sheaves of sets as its underlying map, which determines it
@@ -186,7 +186,7 @@ theorem componentInverseImageCommRingIso_forget (h : Morphism C C') (n : Simplex
         ((sheafCompose C'.situation.totalTopology (forget CommRingCat.{u})).obj O')
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L950). The attribute's comment: “the total morphism of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L950). The attribute's comment: “the total morphism of ringed topoi”.
 
 > **Stacks 0DH0.** The morphism of total ringed topoi induced by a morphism between ringed
 > simplicial sites.
@@ -199,7 +199,7 @@ def totalRingedToposHom
     RingedToposHom (C.situation.totalRingedTopos O) (C'.situation.totalRingedTopos O')
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1003). The attribute's comment: “the component morphisms of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1003). The attribute's comment: “the component morphisms of ringed topoi”.
 
 > **Stacks 0DH0.** The morphism of component ringed topoi in simplicial degree `n` induced by a
 > morphism between ringed simplicial sites.
@@ -214,7 +214,7 @@ def componentRingedToposHom
       (C'.situation.componentRingedTopos O' n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1021](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1021). The attribute's comment: “the underlying degreewise geometric morphisms”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1021](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1021). The attribute's comment: “the underlying degreewise geometric morphisms”.
 
 > **Stacks 0DH0.** The underlying geometric morphism of the degreewise morphism of ringed
 > topoi is the component morphism of topoi of Stacks 0D95.
@@ -229,7 +229,7 @@ theorem componentRingedToposHom_toToposHom
       (SimplicialSiteMorphism.ofCocontinuous h).componentMorphism n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1043). The attribute's comment: “the commutative squares of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1043). The attribute's comment: “the commutative squares of ringed topoi”.
 
 > **Stacks 0DH0.** The square of ringed topoi formed by the total morphism, the degreewise
 > morphism and the two canonical morphisms from the components of simplicial degree `n` commutes:
@@ -248,7 +248,7 @@ theorem componentRingedToposHom_commutes
         (C.situation.componentRingedToposHom O n)).fSharpInverseImage
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1085](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1085). The attribute's comment: “the underlying restriction of the direct image of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1085](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1085). The attribute's comment: “the underlying restriction of the direct image of modules”.
 
 > **Stacks 0DH0, the assertion on sheaves of modules, on underlying sheaves of sets.**
 > Inverse image to the simplicial component of degree `n` of a direct image of sheaves of modules
@@ -279,7 +279,7 @@ def componentPushforwardModulesForgetIso
               (C'.situation.componentRingedTopos O' n).O))
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1166). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1166). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi”.
 
 > **Stacks 0DH0.** The degreewise square commutes as a square of *ringed* topoi, in the sense
 > of Stacks 04IC: the two composites `h_{total} ∘ g_n` and `g'_n ∘ h_n` are 2-isomorphic.
@@ -302,7 +302,7 @@ noncomputable def componentRingedToposHom_twoIso
       (viaTotalRingedToposHom h φ n) (viaComponentRingedToposHom h φ n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1199). The attribute's comment: “the commutative squares, on direct images of sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1199). The attribute's comment: “the commutative squares, on direct images of sheaves of modules”.
 
 > **Stacks 0DH0, the degreewise square on direct images of sheaves of modules.** Direct image
 > to the total ringed topos of the target, taken through the component of degree `n` of the
@@ -327,7 +327,7 @@ noncomputable def componentPushforwardModulesSquareIso
         (C'.situation.componentRingedToposHom O' n).pushforwardModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1222). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1222). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules”.
 
 > **Stacks 0DH0, the degreewise square on pullbacks of sheaves of modules.** The same square,
 > read on pullbacks:
@@ -349,7 +349,7 @@ noncomputable def componentPullbackModulesSquareIso
         ((h.componentRingedToposHom φ) n).toModulesHom.pullbackModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1247). The attribute's comment: “the comparison of the last assertion, on sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1247). The attribute's comment: “the comparison of the last assertion, on sheaves of modules”.
 
 > **Stacks 0DH0, the comparison of the last assertion.** The canonical morphism of functors
 > `Mod(𝒪) ⟶ Mod(𝒪'_n)`
@@ -373,7 +373,7 @@ noncomputable def componentPushforwardModulesComparison
         ((h.componentRingedToposHom φ) n).pushforwardModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1267). The attribute's comment: “the comparison of the last assertion is the mate of the square”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1267). The attribute's comment: “the comparison of the last assertion is the mate of the square”.
 
 > **Stacks 0DH0.** The comparison of the last assertion is pinned by the degreewise square:
 > its mate under the two adjunctions of Stacks 03D7 is the square of direct images of sheaves of
@@ -394,7 +394,7 @@ theorem componentPushforwardModulesComparison_mate
       TwoSquare.mk _ _ _ _ (componentPushforwardModulesSquareIso h φ n).hom
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1429). The attribute's comment: “the last assertion, on sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1429). The attribute's comment: “the last assertion, on sheaves of modules”.
 
 > **Stacks 0DH0, the last assertion, on sheaves of modules.** Inverse image to the simplicial
 > component of degree `n` of a direct image of sheaves of modules along the total morphism is the
@@ -420,7 +420,7 @@ noncomputable def componentPushforwardModulesIso
         ((h.componentRingedToposHom φ) n).pushforwardModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1480). The attribute's comment: “the total morphism of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1480). The attribute's comment: “the total morphism of ringed topoi”.
 
 > **Stacks 0DH0.** The morphism of total ringed topoi induced by a morphism between ringed
 > simplicial sites.
@@ -433,7 +433,7 @@ def totalRingedToposHom
     RingedToposHom (C.situation.totalRingedTopos O) (C'.situation.totalRingedTopos O')
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1533). The attribute's comment: “the component morphisms of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1533). The attribute's comment: “the component morphisms of ringed topoi”.
 
 > **Stacks 0DH0.** The morphism of component ringed topoi in simplicial degree `n` induced by a
 > morphism between ringed simplicial sites.
@@ -448,7 +448,7 @@ def componentRingedToposHom
       (C'.situation.componentRingedTopos O' n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1551). The attribute's comment: “the underlying degreewise geometric morphisms”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1551). The attribute's comment: “the underlying degreewise geometric morphisms”.
 
 > **Stacks 0DH0.** The underlying geometric morphism of the degreewise morphism of ringed
 > topoi is the component morphism of topoi of Stacks 0D95.
@@ -463,7 +463,7 @@ theorem componentRingedToposHom_toToposHom
       (SimplicialSiteMorphism.ofCocontinuous h.hom).componentMorphism n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1573). The attribute's comment: “the commutative squares of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1573). The attribute's comment: “the commutative squares of ringed topoi”.
 
 > **Stacks 0DH0.** The square of ringed topoi formed by the total morphism, the degreewise
 > morphism and the two canonical morphisms from the components of simplicial degree `n` commutes:
@@ -482,7 +482,7 @@ theorem componentRingedToposHom_commutes
         (C.situation.componentRingedToposHom O n)).fSharpInverseImage
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1594). The attribute's comment: “the underlying restriction of the direct image of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1594). The attribute's comment: “the underlying restriction of the direct image of modules”.
 
 > **Stacks 0DH0, the assertion on sheaves of modules, on underlying sheaves of sets.**
 > Inverse image to the simplicial component of degree `n` of a direct image of sheaves of modules
@@ -513,7 +513,7 @@ def componentPushforwardModulesForgetIso
               (C'.situation.componentRingedTopos O' n).O)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1675). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1675](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1675). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi”.
 
 > **Stacks 0DH0.** The degreewise square commutes as a square of *ringed* topoi, in the sense
 > of Stacks 04IC: the two composites `h_{total} ∘ g_n` and `g'_n ∘ h_n` are 2-isomorphic.
@@ -536,7 +536,7 @@ noncomputable def componentRingedToposHom_twoIso
       (viaTotalRingedToposHom h n) (viaComponentRingedToposHom h n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1708](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1708). The attribute's comment: “the commutative squares, on direct images of sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1708](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1708). The attribute's comment: “the commutative squares, on direct images of sheaves of modules”.
 
 > **Stacks 0DH0, the degreewise square on direct images of sheaves of modules.** Direct image
 > to the total ringed topos of the target, taken through the component of degree `n` of the
@@ -561,7 +561,7 @@ noncomputable def componentPushforwardModulesSquareIso
         (C'.situation.componentRingedToposHom O' n).pushforwardModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1731). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1731](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1731). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules”.
 
 > **Stacks 0DH0, the degreewise square on pullbacks of sheaves of modules.** The same square,
 > read on pullbacks:
@@ -581,7 +581,7 @@ noncomputable def componentPullbackModulesSquareIso
         (h.componentRingedToposHom n).toModulesHom.pullbackModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1754). The attribute's comment: “the comparison of the last assertion, on sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1754](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1754). The attribute's comment: “the comparison of the last assertion, on sheaves of modules”.
 
 > **Stacks 0DH0, the comparison of the last assertion.** The canonical morphism of functors
 > `Mod(𝒪) ⟶ Mod(𝒪'_n)`
@@ -605,7 +605,7 @@ noncomputable def componentPushforwardModulesComparison
         (h.componentRingedToposHom n).pushforwardModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1774](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1774). The attribute's comment: “the comparison of the last assertion is the mate of the square”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1774](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1774). The attribute's comment: “the comparison of the last assertion is the mate of the square”.
 
 > **Stacks 0DH0.** The comparison of the last assertion is pinned by the degreewise square:
 > its mate under the two adjunctions of Stacks 03D7 is the square of direct images of sheaves of
@@ -626,7 +626,7 @@ theorem componentPushforwardModulesComparison_mate
       TwoSquare.mk _ _ _ _ (componentPushforwardModulesSquareIso h n).hom
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.isIso_componentPushforwardModulesComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1809](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1809). The attribute's comment: “the comparison of the last assertion is invertible”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.isIso_componentPushforwardModulesComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1809). The attribute's comment: “the comparison of the last assertion is invertible”.
 
 > **Stacks 0DH0, the last assertion: the comparison is invertible.** The canonical comparison
 > `(g'_n)^* ∘ h_{total,*} ⟶ h_{n,*} ∘ g_n^*` of sheaves of modules is an isomorphism. On
@@ -646,7 +646,7 @@ instance isIso_componentPushforwardModulesComparison
     IsIso (componentPushforwardModulesComparison h n)
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1834](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1834). The attribute's comment: “the last assertion, on sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 1834](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L1834). The attribute's comment: “the last assertion, on sheaves of modules”.
 
 > **Stacks 0DH0, the last assertion, on sheaves of modules.** Inverse image to the simplicial
 > component of degree `n` of a direct image of sheaves of modules along the total morphism is the
@@ -670,7 +670,7 @@ noncomputable def componentPushforwardModulesIso
         (h.componentRingedToposHom n).pushforwardModules
 ```
 
-**`CategoryTheory.SimplicialSite.Morphism.componentInverseImageCommRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L134). The attribute's comment: “the canonical ring comparison, case (A)”.
+**`CategoryTheory.SimplicialSite.Morphism.componentInverseImageCommRingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L134). The attribute's comment: “the canonical ring comparison, case (A)”.
 
 > **Stacks 0DH0**, case (A). The comparison of the two inverse images of sheaves of
 > commutative rings around the square of simplicial degree `n`: the identification
@@ -683,7 +683,7 @@ def componentInverseImageCommRingIso (h : SimplicialSite.Morphism C C') (n : Sim
       inverseImageCommRingFunctor.{u, u, u, u, u, u} (viaComponentMorphism h n)
 ```
 
-**`CategoryTheory.SimplicialSite.Morphism.componentInverseImageCommRingIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L145). The attribute's comment: “the canonical underlying comparison, case (A)”.
+**`CategoryTheory.SimplicialSite.Morphism.componentInverseImageCommRingIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L145). The attribute's comment: “the canonical underlying comparison, case (A)”.
 
 > **Stacks 0DH0**, case (A). The comparison of inverse images of sheaves of commutative rings
 > has the comparison of inverse images of sheaves of sets as its underlying map.
@@ -697,7 +697,7 @@ theorem componentInverseImageCommRingIso_forget (h : SimplicialSite.Morphism C C
         ((sheafCompose C'.situation.totalTopology (forget CommRingCat.{u})).obj O')
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L189). The attribute's comment: “the total morphism of ringed topoi, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.totalRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L189). The attribute's comment: “the total morphism of ringed topoi, case (A)”.
 
 > **Stacks 0DH0**, case (A). The morphism of total ringed topoi induced by a morphism between
 > ringed simplicial sites.
@@ -708,7 +708,7 @@ def totalRingedToposHom
     RingedToposHom (C.situation.totalRingedTopos O) (C'.situation.totalRingedTopos O')
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L227). The attribute's comment: “the component morphisms of ringed topoi, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L227). The attribute's comment: “the component morphisms of ringed topoi, case (A)”.
 
 > **Stacks 0DH0**, case (A). The morphism of component ringed topoi in simplicial degree `n`
 > induced by a morphism between ringed simplicial sites.
@@ -720,7 +720,7 @@ def componentRingedToposHom
       (C'.situation.componentRingedTopos O' n)
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L242). The attribute's comment: “the underlying degreewise geometric morphisms, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L242). The attribute's comment: “the underlying degreewise geometric morphisms, case (A)”.
 
 > **Stacks 0DH0**, case (A). The underlying geometric morphism of the degreewise morphism of
 > ringed topoi is the component morphism of topoi of Stacks 0D95.
@@ -732,7 +732,7 @@ theorem componentRingedToposHom_toToposHom
       (SimplicialSiteMorphism.ofMorphismOfSites h.hom).componentMorphism n
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L258). The attribute's comment: “the commutative squares of ringed topoi, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L258). The attribute's comment: “the commutative squares of ringed topoi, case (A)”.
 
 > **Stacks 0DH0**, case (A). The square of ringed topoi formed by the total morphism, the
 > degreewise morphism and the two canonical morphisms from the components of simplicial degree `n`
@@ -748,7 +748,7 @@ theorem componentRingedToposHom_commutes
         (C.situation.componentRingedToposHom O n)).fSharpInverseImage
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L319). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentRingedToposHom_twoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L319). The attribute's comment: “the degreewise square as a 2-isomorphism of ringed topoi, case (A)”.
 
 > **Stacks 0DH0**, case (A). The degreewise square commutes as a square of *ringed* topoi, in
 > the sense of Stacks 04IC: the two composites `h_{total} ∘ g_n` and `g'_n ∘ h_n` are
@@ -761,7 +761,7 @@ noncomputable def componentRingedToposHom_twoIso
       (viaTotalRingedToposHom h n) (viaComponentRingedToposHom h n)
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L341). The attribute's comment: “the commutative squares, on direct images of sheaves of modules, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L341). The attribute's comment: “the commutative squares, on direct images of sheaves of modules, case (A)”.
 
 > **Stacks 0DH0**, case (A), the degreewise square on direct images of sheaves of modules:
 > `h_{total,*} ∘ g_{n,*} ≅ g'_{n,*} ∘ h_{n,*}` on `Mod(𝒪_n)`.
@@ -775,7 +775,7 @@ noncomputable def componentPushforwardModulesSquareIso
         (C'.situation.componentRingedToposHom O' n).pushforwardModules
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L356). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentPullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L356). The attribute's comment: “the commutative squares, on pullbacks of sheaves of modules, case (A)”.
 
 > **Stacks 0DH0**, case (A), the degreewise square on pullbacks of sheaves of modules:
 > `g_n^* ∘ h_{total}^* ≅ h_n^* ∘ (g'_n)^*` on `Mod(𝒪')`.
@@ -789,7 +789,7 @@ noncomputable def componentPullbackModulesSquareIso
         (h.componentRingedToposHom n).toModulesHom.pullbackModules
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L376). The attribute's comment: “the comparison of the last assertion, on sheaves of modules, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L376). The attribute's comment: “the comparison of the last assertion, on sheaves of modules, case (A)”.
 
 > **Stacks 0DH0**, case (A), the comparison of the last assertion: the canonical morphism of
 > functors `Mod(𝒪) ⟶ Mod(𝒪'_n)`
@@ -808,7 +808,7 @@ noncomputable def componentPushforwardModulesComparison
         (h.componentRingedToposHom n).pushforwardModules
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L393). The attribute's comment: “the comparison of the last assertion is the mate of the square, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesComparison_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L393). The attribute's comment: “the comparison of the last assertion is the mate of the square, case (A)”.
 
 > **Stacks 0DH0**, case (A). The comparison of the last assertion is pinned by the degreewise
 > square: its mate under the two adjunctions of Stacks 03D7 is the square of direct images of
@@ -826,7 +826,7 @@ theorem componentPushforwardModulesComparison_mate
       TwoSquare.mk _ _ _ _ (componentPushforwardModulesSquareIso h n).hom
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.isIso_componentPushforwardModulesComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L417). The attribute's comment: “the comparison of the last assertion is invertible, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.isIso_componentPushforwardModulesComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L417). The attribute's comment: “the comparison of the last assertion is invertible, case (A)”.
 
 > **Stacks 0DH0**, case (A), the last assertion: the comparison is invertible. On underlying
 > sheaves of sets it is the mate of the degreewise square of topoi, which is invertible by
@@ -838,7 +838,7 @@ instance isIso_componentPushforwardModulesComparison
     IsIso (componentPushforwardModulesComparison h n)
 ```
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L435). The attribute's comment: “the last assertion, on sheaves of modules, case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.componentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuous.lean#L435). The attribute's comment: “the last assertion, on sheaves of modules, case (A)”.
 
 > **Stacks 0DH0**, case (A), the last assertion, on sheaves of modules:
 >
@@ -859,7 +859,7 @@ noncomputable def componentPushforwardModulesIso
 
 [Tag 0DH1](https://stacks.math.columbia.edu/tag/0DH1) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSite.RingedMorphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuousDerivedPushforward.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuousDerivedPushforward.lean#L459). The attribute's comment: “case (A)”.
+**`CategoryTheory.SimplicialSite.RingedMorphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuousDerivedPushforward.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismContinuousDerivedPushforward.lean#L459). The attribute's comment: “case (A)”.
 
 > **Stacks 0DH1**, case (A). With notation and hypotheses as in Stacks 0DH0, for simplicial
 > sites whose transitions are morphisms of sites and a morphism of ringed simplicial sites built
@@ -887,7 +887,7 @@ def derivedComponentPushforwardModulesIso
         derivedComponentPushforwardModules h n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L242). The attribute's comment: “exactness of the pullback of modules to a component”. References: SGA 4 IV (13.7), “special case”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L243). The attribute's comment: “exactness of the pullback of modules to a component”. References: SGA 4 IV (13.7), “special case”.
 
 > **Pullback of sheaves of modules to the simplicial component of degree `n` is left exact.**
 > The component structure sheaf is the restriction of the total one, so the component structure
@@ -905,7 +905,7 @@ theorem componentPullbackModules_preservesFiniteLimits :
     PreservesFiniteLimits (componentRingedToposHom S O n).toModulesHom.pullbackModules
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L264). The attribute's comment: “exactness of the pullback of modules to a component”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L265). The attribute's comment: “exactness of the pullback of modules to a component”.
 
 > **Pullback of sheaves of modules to the simplicial component of degree `n` is right exact**,
 > being a left adjoint. This is the finite case of Stacks 03DC part (2).
@@ -915,7 +915,7 @@ theorem componentPullbackModules_preservesFiniteColimits :
     PreservesFiniteColimits (componentRingedToposHom S O n).toModulesHom.pullbackModules
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L543). The attribute's comment: “case (B)”.
+**`CategoryTheory.CocontinuousSimplicialSite.RingedMorphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L544). The attribute's comment: “case (B)”.
 
 > **Stacks 0DH1**, case (B). With notation and hypotheses as in Stacks 0DH0: for `K` in the
 > unbounded derived category of sheaves of `𝒪`-modules on the total site,
@@ -939,7 +939,7 @@ def derivedComponentPushforwardModulesIso :
         derivedComponentPushforwardModules h n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L749). The attribute's comment: “case (B)”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L750). The attribute's comment: “case (B)”.
 
 > **Stacks 0DH1**, case (B). With notation and hypotheses as in Stacks 0DH0: for `K` in the
 > unbounded derived category of sheaves of `𝒪`-modules on the total site,
@@ -976,7 +976,7 @@ def derivedComponentPushforwardModulesIso
         derivedComponentPushforwardModules h φ n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIso_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L780). The attribute's comment: “case (B), the canonical comparison”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIso_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L781). The attribute's comment: “case (B), the canonical comparison”.
 
 > **Stacks 0DH1**, the isomorphism is the canonical one. Composing the canonical comparison
 > into the first right derived functor with the isomorphism gives the underived comparison
@@ -1004,7 +1004,7 @@ theorem derivedComponentPushforwardModulesIso_fac
         derivedRestrictTotalPushforwardModulesUnit h φ n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIsoOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 831](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L831). The attribute's comment: “case (B), over the canonical comparison of the degreewise square”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIsoOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 832](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L832). The attribute's comment: “case (B), over the canonical comparison of the degreewise square”.
 
 > **Stacks 0DH1**, case (B), over the canonical comparison of the degreewise square. With
 > notation and hypotheses as in Stacks 0DH0: for `K` in the unbounded derived category of sheaves
@@ -1033,7 +1033,7 @@ def derivedComponentPushforwardModulesIsoOfSquare
         derivedComponentPushforwardModules h φ n
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIsoOfSquare_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L853). The attribute's comment: “case (B), the canonical comparison of the degreewise square pins the isomorphism”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.derivedComponentPushforwardModulesIsoOfSquare_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean, line 854](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphismDerivedPushforward.lean#L854). The attribute's comment: “case (B), the canonical comparison of the degreewise square pins the isomorphism”.
 
 > **Stacks 0DH1**, case (B) over the canonical comparison: the isomorphism is pinned by the
 > canonical comparison of the degreewise square. Composing the canonical comparison into the
@@ -1067,4 +1067,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.7, Tag 0DGY](https://stacks.math.columbia.edu/tag/0DGY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

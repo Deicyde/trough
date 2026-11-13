@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.12 Preparation for principal divisors
 
-Section 82.12 of the Stacks Project, [Tag 0EPF](https://stacks.math.columbia.edu/tag/0EPF). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.12 of the Stacks Project, [Tag 0EPF](https://stacks.math.columbia.edu/tag/0EPF). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EPZ, a lemma
 
 [Tag 0EPZ](https://stacks.math.columbia.edu/tag/0EPZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.deltaDimensionIrreducible_closureSingleton_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EffectiveCartierComponentDeltaDimension.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EffectiveCartierComponentDeltaDimension.lean#L287). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.deltaDimensionIrreducible_closureSingleton_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EffectiveCartierComponentDeltaDimension.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EffectiveCartierComponentDeltaDimension.lean#L287). The attribute's comment: “part (2)”.
 
 > **Stacks 0EPZ, part (2).** In Situation 0EDT let `X/B` be good and assume `X` integral with
 > `dim_δ(X) = n`.  If `Z` is an irreducible component of an effective Cartier divisor `D ⊆ X`,
@@ -46,7 +46,7 @@ theorem deltaDimensionIrreducible_closureSingleton_isEffectiveCartierDivisor
       n - 1
 ```
 
-**`AlgebraicGeometry.Space.isPrimeDivisor_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimension.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimension.lean#L249). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isPrimeDivisor_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimension.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimension.lean#L249). The attribute's comment: “part (1)”.
 
 > **Stacks 0EPZ, part (1).** In Situation 0EDT let `X/B` be good and assume `X` integral with
 > `dim_δ(X) = n`. For an integral closed subspace `Z ⊆ X` the following are equivalent: `Z` is a
@@ -73,7 +73,7 @@ theorem isPrimeDivisor_tfae (D : BaseSpaceDimensionSituation.{u})
         deltaDimension D sX Z = n - 1]
 ```
 
-**`AlgebraicGeometry.Space.isPrimeDivisor_tfae_of_isIntegralSpace'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimensionOfGood.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimensionOfGood.lean#L67). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isPrimeDivisor_tfae_of_isIntegralSpace'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimensionOfGood.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrimeDivisorDeltaDimensionOfGood.lean#L67). The attribute's comment: “part (1)”.
 
 > In Situation 0EDT let `X/B` be good and assume `X` integral with
 > `dim_δ(X) = n`. For an integral closed subspace `Z ⊆ X` the following are equivalent: `Z` is a
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.12, Tag 0EPF](https://stacks.math.columbia.edu/tag/0EPF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

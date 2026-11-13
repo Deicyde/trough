@@ -7,7 +7,7 @@ statement: formalized
 
 # Residues of Lucas numbers
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html).
 
 ## Classification of moduli for which the Lucas numbers attain every residue
 
@@ -21,7 +21,7 @@ integer $k \ge 1$.
 
 - OPG-37402, Lucas Numbers Modulo m [OpenGarden].
 
-Formalized by `MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement`, a definition declared in [WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html#statement).
+Formalized by `MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement`, a definition declared in [WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html#statement).
 
 ## Avila–Chen theorem on Lucas numbers modulo $m$
 
@@ -34,7 +34,7 @@ $m \in \{2, 4, 6, 7, 14\}$ or $m = 3^k$ for some integer $k \ge 1$.
 
 - Brandon Avila and Yongyi Chen, On Moduli For Which the Lucas Numbers Contain a Complete Residue System, Fibonacci Quarterly 51(2) (2013), 151–152, https://doi.org/10.1080/00150517.2013.12427958.
 
-Stated but not proved: `MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html#statement-holds).
+Stated but not proved: `MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasNumbersModuloMWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html#statement-holds).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Residues of Lucas numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/residues-of-lucas-numbers)

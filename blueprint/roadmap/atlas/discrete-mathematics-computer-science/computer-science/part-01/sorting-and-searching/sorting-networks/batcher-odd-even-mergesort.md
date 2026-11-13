@@ -8,7 +8,7 @@ proof: formalized
 
 # Batcher odd–even mergesort
 
-24 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html).
+24 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html).
 
 ## Relabeling the wires of a comparator list
 
@@ -16,7 +16,7 @@ Given a map $e : \mathbb{N} \to \mathbb{N}$
 and a list of comparators, each a pair $(i, j)$ of wires in $\mathbb{N}$, the relabeled list
 replaces every comparator $(i, j)$ by $(e(i), e(j))$ and keeps the order of the list.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.relabel`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#relabel).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.relabel`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#relabel).
 
 ## Running a relabeled network
 
@@ -26,7 +26,7 @@ $f : \mathbb{N} \to \alpha$ and every wire $j$, running the list relabeled by $e
 wire $e(j)$ the same value as running the original list on the input $i \mapsto f(e(i))$ gives at
 wire $j$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-relabel).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-relabel).
 
 ## Relabeled networks fix the wires outside the image
 
@@ -35,7 +35,7 @@ type, $e : \mathbb{N} \to \mathbb{N}$ any map and $f : \mathbb{N} \to \alpha$ an
 values to the wires. For every list of comparators and every wire $x$ that is not of the form
 $e(y)$, running the list relabeled by $e$ on $f$ gives the value $f(x)$ at wire $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_relabel_of_not_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-relabel-of-not-mem).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_relabel_of_not_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-relabel-of-not-mem).
 
 ## Last layer of the odd-even merger
 
@@ -44,7 +44,7 @@ $(2i + 1, 2i + 2)$ for $i = 0, 1, \dots, 2^{k+1} - 2$, in increasing order of $i
 neighbouring wires $2i + 1$ and $2i + 2$ and is the last layer of the odd-even merger on
 $2^{k+2}$ wires.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.finalLayer`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#final-layer).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.finalLayer`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#final-layer).
 
 ## Batcher's odd-even merger
 
@@ -55,7 +55,7 @@ $2i$ (merging the even wires), followed by the merger for $k$ with each wire $i$
 $2i + 1$ (merging the odd wires), followed by the comparators $(2i + 1, 2i + 2)$ for
 $i = 0, 1, \dots, 2^{k+1} - 2$ in increasing order of $i$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-merge).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-merge).
 
 ## Batcher's odd-even merge sort
 
@@ -65,7 +65,7 @@ For $k + 1$ it is the sorter for $k$ (sorting wires $0, \dots, 2^k - 1$), follow
 for $k$ with each wire $i$ renamed to $2^k + i$ (sorting wires $2^k, \dots, 2^{k+1} - 1$),
 followed by Batcher's odd-even merger on $2^{k+1}$ wires.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSortN`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sort-n).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSortN`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sort-n).
 
 ## Output of the last layer of the odd-even merger
 
@@ -77,7 +77,7 @@ $x$ is even, $x > 0$ and $(x - 2) / 2 < 2^{k+1} - 1$; and the value $f(x)$ in al
 In other words, for each $i < 2^{k+1} - 1$ wire $2i + 1$ receives the minimum and wire $2i + 2$
 the maximum of the values of $f$ on these two wires, and every other wire keeps its value.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_finalLayer`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-final-layer).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_finalLayer`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#run-n-final-layer).
 
 ## The odd-even merger merges
 
@@ -88,7 +88,7 @@ when $i < a$) and wires $2^k, \dots, 2^{k+1} - 1$ hold $c$ zeros followed by one
 $2^k + i$, for $i < 2^k$, holds $0$ exactly when $i < c$). Then after Batcher's odd-even merger
 on $2^{k+1}$ wires runs on $f$, every wire $j < 2^{k+1}$ holds $0$ exactly when $j < a + c$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge_merges`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-merge-merges).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge_merges`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-merge-merges).
 
 ## Odd-even merge sort sorts every $0$-$1$ input
 
@@ -98,7 +98,7 @@ Batcher's odd-even merge sort on $2^k$ wires runs on $f$, there is $z \le 2^k$ s
 wire $j < 2^k$ holds $0$ exactly when $j < z$: wires $0, \dots, 2^k - 1$ hold $z$ zeros followed
 by ones.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSortN_sorts`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sort-n-sorts).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSortN_sorts`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sort-n-sorts).
 
 ## Relabeling keeps comparators within an interval
 
@@ -107,14 +107,14 @@ each a pair of natural numbers, that lies within $[l, h)$, and let $e : \mathbb{
 satisfy $l' \le e(x) < h'$ for every $x$ with $l \le x < h$. Then the list obtained from $ps$ by
 relabeling its wires by $e$ lies within $[l', h')$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.relabel_within`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#relabel-within).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.relabel_within`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#relabel-within).
 
 ## Size of the odd-even merger
 
 For every $k \in \mathbb{N}$, Batcher's odd-even merger on
 $2^{k+1}$ wires consists of exactly $k \cdot 2^k + 1$ comparators.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenMerge`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#length-odd-even-merge).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenMerge`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#length-odd-even-merge).
 
 ## Size of Batcher's odd-even merge sort
 
@@ -124,7 +124,7 @@ $4(L + 1) + k \cdot 2^k = (k^2 + 4) \cdot 2^k$, that is, $L = (k^2 - k + 4) \cdo
 
 The identity is stated without subtraction or division, and is exact for every $k$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenSortN`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#length-odd-even-sort-n).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenSortN`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#length-odd-even-sort-n).
 
 ## Batcher's odd-even merge sorting network
 
@@ -133,7 +133,7 @@ network on the $2^k$ wires $0, \dots, 2^k - 1$ given by the comparators of Batch
 merge sort on $2^k$ wires, in the same order, with any comparator that touches a wire $\ge 2^k$
 dropped.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSorter`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSorter`, a definition declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter).
 
 ## Batcher's odd-even merge sort sorts every input over every linear order
 
@@ -145,7 +145,7 @@ wire order.
 
 The proof goes through the 0-1 principle.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSorter_sorts`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter-sorts).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenSorter_sorts`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEven.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter-sorts).
 
 ## Levels of a relabeled comparator list
 
@@ -155,7 +155,7 @@ every wire $j$, the level of wire $e(j)$ after running $p$ with its wires relabe
 starting from $\ell$, equals the level of wire $j$ after running $p$ starting from
 $\ell \circ e$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel).
 
 ## Relabeled comparator lists leave the other wires alone
 
@@ -164,7 +164,7 @@ let $e : \mathbb{N} \to \mathbb{N}$ be any map and let $\ell$ be an initial leve
 For every wire $x$ outside the image of $e$, the level of $x$ after running $p$ with its
 wires relabeled by $e$, starting from $\ell$, is $\ell(x)$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel_of_not_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel-of-not-mem).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel_of_not_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel-of-not-mem).
 
 ## Relabeling wires preserves a depth bound
 
@@ -172,7 +172,7 @@ If a comparator list has depth at most $d$
 and $e : \mathbb{N} \to \mathbb{N}$ is injective, then the comparator list obtained by
 relabeling its wires by $e$ also has depth at most $d$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-relabel).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-relabel).
 
 ## Levels of a relabeled comparator list on the image wires
 
@@ -181,7 +181,7 @@ list and let $e : \mathbb{N} \to \mathbb{N}$ be injective. If two initial level 
 $\ell$ and $\ell'$ agree on every wire $e(y)$, then the levels after running $p$ with its
 wires relabeled by $e$, starting from $\ell$ and from $\ell'$, agree on every wire $e(y)$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel_congr`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel-congr).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel_congr`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#levels-relabel-congr).
 
 ## Parallel composition of relabeled comparator lists
 
@@ -191,7 +191,7 @@ $y$ and $y'$. If the comparator lists $p$ and $q$ both have depth at most $d$, t
 its wires relabeled by $e$, followed by $q$ with its wires relabeled by $e'$, has depth at
 most $d$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_append_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-append-relabel).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_append_relabel`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-append-relabel).
 
 ## The final layer of the odd-even merger has depth at most one
 
@@ -199,14 +199,14 @@ For every $k$, the
 final layer of the odd-even merger on $2^{k+2}$ wires, which compares wires $2i + 1$ and
 $2i + 2$ for each $i < 2^{k+1} - 1$, has depth at most $1$: its comparators are disjoint.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_finalLayer`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-final-layer).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_finalLayer`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-final-layer).
 
 ## Depth bound for Batcher's odd-even merger
 
 For every $k$, Batcher's odd-even merger on
 $2^{k+1}$ wires has depth at most $k + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_oddEvenMerge`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-odd-even-merge).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_oddEvenMerge`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-odd-even-merge).
 
 ## Depth bound for Batcher's odd-even merge sort as a comparator list
 
@@ -215,7 +215,7 @@ there is a $d$ with $2d \le k(k+1)$ such that the comparator list of Batcher's o
 sort on wires $0, \dots, 2^k - 1$ has depth at most $d$; that is, its depth is at most
 $k(k+1)/2$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_oddEvenSortN`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-odd-even-sort-n).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_oddEvenSortN`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#depth-le-odd-even-sort-n).
 
 ## Depth bound for Batcher's odd-even merge sorting network
 
@@ -223,7 +223,7 @@ For every $k$, there is a
 $d$ with $2d \le k(k+1)$ such that Batcher's odd-even merge sorting network on $2^k$ wires
 has depth at most $d$; that is, its depth is at most $k(k+1)/2$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.oddEvenSorter_depthLE`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter-depth-le).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.oddEvenSorter_depthLE`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#odd-even-sorter-depth-le).
 
 ## Lower bound for the depth of Batcher's odd-even merge sorting network
 
@@ -231,7 +231,7 @@ For all $k$
 and $d$, if Batcher's odd-even merge sorting network on $2^k$ wires has depth at most $d$,
 then $k \le d$.
 
-Formalized by `Cslib.Algorithms.Lean.SortingNetworks.le_of_oddEvenSorter_depthLE`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#le-of-odd-even-sorter-depth-le).
+Formalized by `Cslib.Algorithms.Lean.SortingNetworks.le_of_oddEvenSorter_depthLE`, a theorem declared in [CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/SortingNetworks/OddEvenDepth.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html#le-of-odd-even-sorter-depth-le).
 
 ## Depends on
 
@@ -240,4 +240,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Batcher odd–even mergesort](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/sorting-and-searching/sorting-networks/batcher-odd-even-mergesort)

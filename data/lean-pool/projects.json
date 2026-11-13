@@ -1,6 +1,6 @@
 {
  "schema": "trough-lean-pool/v1",
- "rev": "2b205bf904013a5e06d8ef03069430dd79e1c8bd",
+ "rev": "701389c04bdd56aabf8dbb9ad729165fdba772b5",
  "projects": [
   {
    "slug": "1mfld",
@@ -1029,7 +1029,7 @@
      "main": false,
      "source_ref": "Finite near-regular hypergraph nibble theorem used in the Paper III development.",
      "module": "LeanPool.AsymptoticTrianglePacking.Main",
-     "line": 1722,
+     "line": 1715,
      "kind": "theorem",
      "sorry": false
     },
@@ -1039,7 +1039,7 @@
      "main": true,
      "source_ref": "Paper III AX1, fractional-integral triangle-packing gap.",
      "module": "LeanPool.AsymptoticTrianglePacking.Main",
-     "line": 1742,
+     "line": 1735,
      "kind": "theorem",
      "sorry": false
     },
@@ -1049,7 +1049,7 @@
      "main": false,
      "source_ref": "Paper III AX1, cover-side formulation.",
      "module": "LeanPool.AsymptoticTrianglePacking.Main",
-     "line": 1752,
+     "line": 1745,
      "kind": "theorem",
      "sorry": false
     }
@@ -4693,6 +4693,58 @@
    ]
   },
   {
+   "slug": "descriptive-counting",
+   "title": "Descriptive counting complexity and parsimonious completeness of #SAT",
+   "summary": "Defines counting problems on finite nonempty relational structures, existential second-order witness counts, and first-order counting reductions. Constructs a parsimonious Tseitin interpretation and proves that the number of satisfying assignments of its CNF equals the number of witnesses of the source formula. Consequently #SAT is complete for the library's logically defined #P under parsimonious reductions. Includes the supporting first-order interpretation, second-order definability, fixed-point, and counting-reduction infrastructure. The scope is descriptive complexity; no equivalence with a string-based resource-bounded machine model is claimed by this import.",
+   "msc": [
+    "68Q15",
+    "03C13",
+    "68V15"
+   ],
+   "authors": [
+    "Pierre Senellart"
+   ],
+   "source": {
+    "title": "Descriptive Complexity counting release v1.4.0",
+    "url": "https://github.com/PierreSenellart/descriptive-complexity/tree/2d853cdde85a1b5c3d855b6f20b5f07f4c1a73e8",
+    "github_repo": "PierreSenellart/descriptive-complexity",
+    "commit": "2d853cdde85a1b5c3d855b6f20b5f07f4c1a73e8"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "DescriptiveCounting",
+   "main_results": [
+    {
+     "declaration": "DescriptiveComplexity.sharpSat_sharpTseitin",
+     "informal": "For every finite nonempty ordered source structure, the CNF produced by the parsimonious Tseitin interpretation has exactly as many satisfying assignments as the source second-order block has witnesses satisfying its first-order kernel.",
+     "main": true,
+     "module": "LeanPool.DescriptiveCounting.Problems.Sat.CountingHardness",
+     "line": 392,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "DescriptiveComplexity.sharpSat_sharpP_parsimoniousComplete",
+     "informal": "Counting the satisfying assignments of a CNF is complete under parsimonious first-order reductions for counting problems defined by existential second-order witness counts on finite nonempty relational structures.",
+     "main": true,
+     "module": "LeanPool.DescriptiveCounting.Problems.Sat.CountingHardness",
+     "line": 461,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "DescriptiveComplexity.sharpSat_sharpP_complete",
+     "informal": "The same counting problem is complete for the library's #P under its subtractive reduction notion.",
+     "main": true,
+     "module": "LeanPool.DescriptiveCounting.Problems.Sat.CountingHardness",
+     "line": 466,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "dilatations",
    "title": "Dilatations of categories and commutative rings",
    "summary": "Constructs categorical dilatations from sieves of permitted numerators and denominator morphisms, and proves their universal property for Sigma-regular functors satisfying the sieve containment condition. Develops restriction and union of centers, dual codilatations, and ordinary localization as a special case. The composition isomorphism retains the explicit Sigma-regularity hypothesis left open in the original paper. For commutative rings, an exponent-profile center recovers the ring dilatation; the naive single-index comparison is refuted over Z[X]. A finite category example refutes a general intermediate-category characterization. Independent ring modules provide fraction arithmetic, a universal property, reindexing, and the unique isomorphism for two-stage dilatations.",
@@ -5098,6 +5150,57 @@
    ]
   },
   {
+   "slug": "ec-runtime-coupon-collector",
+   "title": "Sharp coupon collection and randomized local search",
+   "summary": "Proves the sharp additive minus-one-half correction for the mean time to collect uniformly sampled coupons from an independent uniform initial set, and for one-bit randomized local search on strictly coordinate-monotone Boolean fitness functions. The centering uses the average of the floor and ceiling half-dimension harmonic numbers, so the limit covers both parities. Develops finite Markov transitions, first-hitting-time expectations, geometric tail bounds, and the exact finite-dimensional mean formulas used in the proof.",
+   "msc": [
+    "60J10",
+    "60G40",
+    "68Q25",
+    "68W20"
+   ],
+   "authors": [
+    "Jiri Kovar",
+    "Jakub Kudela"
+   ],
+   "source": {
+    "title": "Collecting Coupons with Random Initial Stake",
+    "authors": [
+     "Benjamin Doerr",
+     "Carola Doerr"
+    ],
+    "arxiv": "1308.6384",
+    "url": "https://github.com/UAI-VUT-Brno/Runtime-analysis-of-evolutionary-computation-algorithms/tree/a0e34dce6395d48d0fb9c7b8850088973f503d8b",
+    "github_repo": "UAI-VUT-Brno/Runtime-analysis-of-evolutionary-computation-algorithms"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "ECRuntime",
+   "main_results": [
+    {
+     "declaration": "ECRuntime.proposed_randomStakeCoupon_allDimensionPaperSharpCentered",
+     "informal": "For n coupon types, with each coupon independently present initially with probability one half, the expected remaining number of independent uniform coupon draws minus n times the average of H_floor(n/2) and H_ceil(n/2) converges to minus one half as n tends to infinity.",
+     "main": true,
+     "source_ref": "Doerr and Doerr, Collecting Coupons with Random Initial Stake, Theorem 1.",
+     "module": "LeanPool.ECRuntime.RandomStakeCouponSharpPaperCentered",
+     "line": 28,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ECRuntime.proposed_strictMonotoneRLS_allDimensionPaperSharpCentered",
+     "informal": "For any family of strictly coordinate-monotone real-valued Boolean fitness functions, the uniform-start mean number of one-bit elitist RLS mutation iterations to reach the all-one string, excluding the initial evaluation, has the same all-dimension additive minus-one-half correction.",
+     "main": true,
+     "source_ref": "Doerr and Doerr, Collecting Coupons with Random Initial Stake, Theorem 3 (RLS corollary).",
+     "module": "LeanPool.ECRuntime.RLSAllDimensionPaperSharpCentered",
+     "line": 55,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "ec-tate-lean",
    "title": "Weierstrass models and singular points for Tate's algorithm",
    "summary": "Formalizes Weierstrass models of elliptic curves over a commutative ring, their b- and c-invariants and discriminant, the change-of-coordinates group action, the discriminant's membership in the Jacobian ideal, and the construction of the singular point of a singular model over a perfect field, together with the Kronecker symbol and the Kodaira type enumeration.",
@@ -5303,6 +5406,78 @@
      "main": true,
      "module": "LeanPool.ErdosGinzburgZiv.EGZ.MainTheorem",
      "line": 23,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "ehrhard-gaussian-convexity",
+   "title": "Ehrhard's inequality and Gaussian log-MGF convexity",
+   "summary": "Ehrhard's convex-set inequality for finite-dimensional Gaussian laws, including singular covariance, and convexity at every real order of the normalized logarithmic moment-generating function of a finite convex Gaussian functional with all positive exponential moments. Includes Gaussian interpolation, quantile transport, representation of Ehrhard-type laws as monotone convex Gaussian images, weak closure, and normalized moment bounds.",
+   "msc": [
+    "60D05",
+    "60E15",
+    "52A40"
+   ],
+   "authors": [
+    "Scott Armstrong",
+    "Ahmed Bou-Rabee"
+   ],
+   "source": {
+    "title": "A Gaussian Convexity for Logarithmic Moment Generating Functions with Applications in Spin Glasses",
+    "arxiv": "2311.08351",
+    "url": "https://github.com/scottnarmstrong/Critical2DKPZ/tree/f1c98dacb2a83737096bd976019dfa2c5986ee5a",
+    "github_repo": "scottnarmstrong/Critical2DKPZ",
+    "commit": "f1c98dacb2a83737096bd976019dfa2c5986ee5a"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "EhrhardGaussian",
+   "main_results": [
+    {
+     "declaration": "EhrhardGaussian.ehrhard_inequality",
+     "informal": "For a finite-dimensional Gaussian law, convex sets A and B, and t in [0,1], Gaussian CDF lower thresholds a and b for their probabilities give the CDF lower threshold (1-t)a+tb for the probability of their Minkowski combination. Singular covariance and unit masses are allowed; a zero-mass set has no finite admissible threshold.",
+     "main": true,
+     "module": "LeanPool.EhrhardGaussian.Results.EhrhardInequality",
+     "line": 25,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "EhrhardGaussian.gaussian_convexity",
+     "informal": "For a finite convex real function of a finite-dimensional Gaussian vector with every positive exponential moment finite, log E[exp(qF)]/q, defined at q=0 by E[F], is convex on the whole real line.",
+     "main": true,
+     "module": "LeanPool.EhrhardGaussian.Results.GaussianConvexity",
+     "line": 24,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "EhrhardGaussian.Provider.ehrhardType_representation",
+     "informal": "A real probability law is of Ehrhard type exactly when it is the pushforward of the standard Gaussian law by a finite monotone convex function; constant functions and Dirac laws are included.",
+     "main": true,
+     "module": "LeanPool.EhrhardGaussian.Provider.EhrhardTypeCharacterization",
+     "line": 28,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "EhrhardGaussian.Provider.ehrhardType_weakClosure",
+     "informal": "The weak limit of a sequence of Ehrhard-type real probability laws is again of Ehrhard type.",
+     "main": true,
+     "module": "LeanPool.EhrhardGaussian.Provider.EhrhardTypeCharacterization",
+     "line": 34,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "EhrhardGaussian.Provider.ehrhardType_momentBounds",
+     "informal": "An Ehrhard-type law with integrable exponential and E[exp(X)]=1 has an integrable square, variance at most -2 E[X], and the stated Gaussian negative exponential-moment bounds. A finite second positive exponential moment yields the further normalized moment comparison.",
+     "main": true,
+     "module": "LeanPool.EhrhardGaussian.Provider.EhrhardTypeCharacterization",
+     "line": 43,
      "kind": "theorem",
      "sorry": false
     }
@@ -9323,6 +9498,59 @@
    ]
   },
   {
+   "slug": "hyperelliptic-chabauty-coleman",
+   "title": "Chabauty–Coleman bounds for odd-degree hyperelliptic curves",
+   "summary": "Proves the rank-sensitive Chabauty–Coleman point-count bound for monic odd-degree hyperelliptic curves over the rationals and number fields at primes of squarefree reduction. The Jacobian group is the ideal class group of the affine coordinate ring; its identification with an algebraic Jacobian variety is outside this formalization. Includes Mumford representatives, reduction of divisor classes, multivariable formal groups, p-adic logarithms, and residue-disk zero counts. Independent upstream archive results are omitted.",
+   "msc": [
+    "11G30",
+    "14G05",
+    "14H25"
+   ],
+   "authors": [
+    "Michael Stoll"
+   ],
+   "source": {
+    "title": "Independence of rational points on twists of a given curve",
+    "doi": "10.1112/S0010437X06002168",
+    "url": "https://github.com/MichaelStollBayreuth/HyperellipticCurves/tree/a541f7182de678e07edcccc7a307c777cecfc8fe",
+    "github_repo": "MichaelStollBayreuth/HyperellipticCurves",
+    "commit": "a541f7182de678e07edcccc7a307c777cecfc8fe"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "HyperellipticCurves",
+   "main_results": [
+    {
+     "declaration": "ChabautyColeman.main_affine_rat_of_rank_le",
+     "informal": "For a monic odd-degree hyperelliptic curve over Q whose coordinate-ring class group has rational rank at most r below the genus, and a prime p greater than 2r + 2 with an integral model of squarefree reduction, the affine rational point count plus one is at most the reduced affine point count plus one, plus 2r.",
+     "main": true,
+     "module": "LeanPool.HyperellipticCurves.Count.Arithmetic",
+     "line": 134,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ChabautyColeman.NumberFieldBase.main_affine_numberField",
+     "informal": "Over the fraction field of a Dedekind domain finite free over Z, the same class-group-rank bound holds at a prime of squarefree reduction when the residue characteristic exceeds 2r plus the absolute ramification index plus 1.",
+     "main": true,
+     "module": "LeanPool.HyperellipticCurves.Count.NumberField",
+     "line": 548,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "ChabautyColeman.NumberFieldBase.ratPoints_finite_numberField",
+     "informal": "The set of rational affine points on a monic odd-degree hyperelliptic curve over a number field is finite when the rational rank of the ideal class group of its affine coordinate ring is smaller than its genus.",
+     "main": true,
+     "module": "LeanPool.HyperellipticCurves.Count.NumberField",
+     "line": 693,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "slug": "incompleteness",
    "title": "Gödel's First and Second Incompleteness Theorems",
    "summary": "Formalizes Gödel's first and second incompleteness theorems for first-order arithmetic, building on formalized arithmetization and provability-logic infrastructure.",
@@ -9701,7 +9929,7 @@
      "informal": "Registry-friendly alias of the exact canonical infinite-family Connes-rigidity counterexample theorem below.",
      "main": true,
      "module": "LeanPool.InfiniteConnesRigidity.FactorAndRigidity",
-     "line": 5066,
+     "line": 5004,
      "kind": "abbrev",
      "sorry": false
     },
@@ -9710,7 +9938,7 @@
      "informal": "There exist a finitely generated property-(T) ICC group and an infinite sequence of finitely generated property-(T) ICC groups such that all their tracial group von Neumann algebras are normally star-isomorphic, although the sequence is pairwise nonisomorphic and none of its groups is isomorphic to the distinguished group.",
      "main": false,
      "module": "LeanPool.InfiniteConnesRigidity.FactorAndRigidity",
-     "line": 5040,
+     "line": 4978,
      "kind": "theorem",
      "sorry": false
     }
@@ -11908,7 +12136,7 @@
      "informal": "Proves the Hungerbühler-Wasem generalized residue theorem for piecewise-C1 curves through poles.",
      "main": true,
      "module": "LeanPool.LeanModularForms.GeneralizedResidueTheory.GeneralizedResidueTheorem",
-     "line": 61,
+     "line": 60,
      "kind": "theorem",
      "sorry": false
     },
@@ -11917,7 +12145,7 @@
      "informal": "Specializes the generalized residue theorem to the simple-pole case.",
      "main": false,
      "module": "LeanPool.LeanModularForms.GeneralizedResidueTheory.GeneralizedResidueTheorem",
-     "line": 202,
+     "line": 201,
      "kind": "theorem",
      "sorry": false
     },
@@ -11926,7 +12154,7 @@
      "informal": "Proves the valence formula for modular forms on the modular group.",
      "main": true,
      "module": "LeanPool.LeanModularForms.ValenceFormula.TextbookForm",
-     "line": 507,
+     "line": 522,
      "kind": "theorem",
      "sorry": false
     }
@@ -13213,6 +13441,68 @@
      "main": false,
      "module": "LeanPool.MinimumDegreeMatching.Spread",
      "line": 511,
+     "kind": "theorem",
+     "sorry": false
+    }
+   ]
+  },
+  {
+   "slug": "mirek-thiele",
+   "title": "Perfect multilinear local T(b) theorems",
+   "summary": "Proves the perfect multilinear local T(1) and T(b) theorems with interdependent testing families. Develops dyadic stopping times, pruning, outer-measure interpolation and Carleson embedding. Also proves a global variant for locally dyadic testing functions with scale-normalized weak boundedness and finite-Hardy-norm BMO testing.",
+   "msc": [
+    "42B20",
+    "42B25"
+   ],
+   "authors": [
+    "Stefanos Lappas"
+   ],
+   "source": {
+    "title": "A local T(b) theorem for perfect multilinear Calderón–Zygmund operators",
+    "doi": "10.1112/plms.12000",
+    "arxiv": "1506.01264",
+    "url": "https://github.com/slappas94/Mirek-Thiele-local-tb/tree/939d7c25149c80219fddfe356eb043fff4504dbd",
+    "github_repo": "slappas94/Mirek-Thiele-local-tb",
+    "commit": "939d7c25149c80219fddfe356eb043fff4504dbd"
+   },
+   "license": "Apache-2.0",
+   "notice": null,
+   "provenance": "AI",
+   "directory": "MirekThiele",
+   "main_results": [
+    {
+     "declaration": "MirekThiele.localT1",
+     "informal": "In positive dimension, a perfect multilinear Calderón–Zygmund form satisfying the local T(1) testing bound obeys a uniform Hölder bound on all dyadic test tuples, with a constant depending only on dimension, arity, exponents and testing bound.",
+     "main": true,
+     "module": "LeanPool.MirekThiele.T1Theorem",
+     "line": 4676,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "MirekThiele.localTb_all",
+     "informal": "In positive dimension, admissible collections of paths and testing functions satisfying the support, mean, norm, interdependence and local testing conditions imply the uniform Hölder bound, for every path length between one and the arity.",
+     "main": true,
+     "module": "LeanPool.MirekThiele.T1Theorem",
+     "line": 4706,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "MirekThiele.globalTb_all",
+     "informal": "In positive dimension, locally dyadic, bounded pseudo-accretive testing functions satisfying scale-normalized weak boundedness and BMO testing on functions with integrable dyadic square function imply a uniform Hölder bound for the perfect form.",
+     "main": true,
+     "module": "LeanPool.MirekThiele.T1Theorem",
+     "line": 4712,
+     "kind": "theorem",
+     "sorry": false
+    },
+    {
+     "declaration": "MirekThiele.carlesonEmbedding",
+     "informal": "In positive dimension, dyadic martingale averages and differences satisfy outer Lp bounds for every finite exponent greater than one, with constants depending only on the dimension and exponent.",
+     "main": true,
+     "module": "LeanPool.MirekThiele.Estimates",
+     "line": 4889,
      "kind": "theorem",
      "sorry": false
     }
@@ -15801,7 +16091,7 @@
      "main": true,
      "source_ref": "Kazuyuki Yagasaki, \"A new proof of Poincaré's result on the restricted three-body problem,\" Theorem 1.1 (p. 2), planar case; compare the precise local meromorphic obstruction near resonant unperturbed elliptic orbits in Theorem 3.1 (p. 8). The Lean result is the fixed-coordinate global uniform-domain special case: a global real-analytic family restricts and complexifies on the local neighborhoods used in the source theorem.",
      "module": "LeanPool.PoincareThreeBody.LocalEnergyLeaf",
-     "line": 414,
+     "line": 412,
      "kind": "theorem",
      "sorry": false
     },
@@ -17005,7 +17295,7 @@
      "informal": "There is a universal positive constant giving an explicit exponential upper bound on the repeated entangled value of every finite game with positive gap and nonempty answer alphabets.",
      "main": true,
      "module": "LeanPool.QuantumParallelRepetition.Part12",
-     "line": 1224,
+     "line": 1200,
      "kind": "theorem",
      "sorry": false
     },
@@ -17014,7 +17304,7 @@
      "informal": "Every finite two-player game whose entangled value is below one has exponentially decaying entangled value under parallel repetition.",
      "main": false,
      "module": "LeanPool.QuantumParallelRepetition.Part12",
-     "line": 1243,
+     "line": 1219,
      "kind": "theorem",
      "sorry": false
     }

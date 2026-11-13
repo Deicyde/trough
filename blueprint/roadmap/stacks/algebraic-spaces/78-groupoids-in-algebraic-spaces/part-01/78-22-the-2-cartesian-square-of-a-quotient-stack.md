@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.22 The 2-cartesian square of a quotient stack
 
-Section 78.22 of the Stacks Project, [Tag 04M8](https://stacks.math.columbia.edu/tag/04M8). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.22 of the Stacks Project, [Tag 04M8](https://stacks.math.columbia.edu/tag/04M8). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 044V, a lemma
 
 [Tag 044V](https://stacks.math.columbia.edu/tag/044V) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isomPresheaf_equiv_arrowFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L547).
+**`AlgebraicGeometry.Stack.isomPresheaf_equiv_arrowFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L547).
 
 > The canonical map from pointwise groupoid arrows to isomorphisms between
 > their images in the quotient stack is an isomorphism of presheaves on the
@@ -31,7 +31,7 @@ theorem isomPresheaf_equiv_arrowFiber
     IsIso ((isFibredOneMorphism_toQuotientStack G).morPresheafMap x y)
 ```
 
-**`AlgebraicGeometry.Stack.isomPresheaf_iso_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 885](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L885). The attribute's comment: “pullback description of the isomorphism sheaf”.
+**`AlgebraicGeometry.Stack.isomPresheaf_iso_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 885](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L885). The attribute's comment: “pullback description of the isomorphism sheaf”.
 
 > The isomorphism sheaf of two presented objects is canonically the slice
 > pullback of the arrow space along their two points. The identification sends
@@ -52,7 +52,7 @@ theorem isomPresheaf_iso_pullback
       IsCanonicalArrowFiberIso G T x' y' x y hx hy e
 ```
 
-**`AlgebraicGeometry.Stack.isomPresheafPullbackIso_inv_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 931](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L931). The attribute's comment: “canonical inverse comparison on prestack arrows”.
+**`AlgebraicGeometry.Stack.isomPresheafPullbackIso_inv_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L931). The attribute's comment: “canonical inverse comparison on prestack arrows”.
 
 > The inverse comparison recovers the arrow-space section of each pointwise
 > prestack arrow from its canonical image in the quotient stack.
@@ -67,7 +67,7 @@ theorem isomPresheafPullbackIso_inv_app (V : Over T)
       (G.toGroupoidInFunctors.evaluationArrowEquiv (op V.left) _ _ r).1
 ```
 
-**`AlgebraicGeometry.Stack.isomPresheafPullbackIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 944](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L944). The attribute's comment: “canonical forward comparison on prestack arrows”.
+**`AlgebraicGeometry.Stack.isomPresheafPullbackIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean, line 944](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheaf.lean#L944). The attribute's comment: “canonical forward comparison on prestack arrows”.
 
 > The forward comparison sends an arrow-space section to the isomorphism
 > induced by that very prestack arrow. This rules out translating the identification
@@ -88,7 +88,7 @@ theorem isomPresheafPullbackIso_hom_app (V : Over T)
 
 [Tag 04M9](https://stacks.math.columbia.edu/tag/04M9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStack_twoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L1033).
+**`AlgebraicGeometry.Stack.quotientStack_twoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L1069).
 
 > The canonical square of the quotient stack is a two-fibre product of
 > stacks in groupoids over the big fppf site.
@@ -103,7 +103,7 @@ noncomputable def quotientStack_twoFibreProduct
 
 [Tag 044W](https://stacks.math.columbia.edu/tag/044W) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isomPresheaf_locallyAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean#L439).
+**`AlgebraicGeometry.Stack.isomPresheaf_locallyAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean#L441).
 
 > The isomorphism sheaf of two quotient-stack objects is locally
 > representable by an algebraic space in the fppf topology.
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.22, Tag 04M8](https://stacks.math.columbia.edu/tag/04M8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

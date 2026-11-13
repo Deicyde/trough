@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1 to Erdős Problem 849
+# Erdős Problem 1 to Erdős Problem 847
 
 ## [Erdős Problem 1 to Erdős Problem 28](part-01/README.md)
 
@@ -73,7 +73,7 @@ navigation: transparent
 - [Erdős Problem 139](../../../../erdos-problems/100-199/part-02/erdos-problem-139.md)
 - [Erdős Problem 141](../../../../erdos-problems/100-199/part-02/erdos-problem-141.md)
 
-## [Erdős Problem 142 to Erdős Problem 208](part-04/README.md)
+## [Erdős Problem 142 to Erdős Problem 206](part-04/README.md)
 
 - [Erdős Problem 142](../../../../erdos-problems/100-199/part-02/erdos-problem-142.md)
 - [Erdős Problem 143](../../../../erdos-problems/100-199/part-02/erdos-problem-143.md)
@@ -87,6 +87,7 @@ navigation: transparent
 - [Erdős Problem 178](../../../../erdos-problems/100-199/part-04/erdos-problem-178.md)
 - [Erdős Problem 185](../../../../erdos-problems/100-199/part-04/erdos-problem-185.md)
 - [Erdős Problem 186](../../../../erdos-problems/100-199/part-04/erdos-problem-186.md)
+- [Erdős Problem 190](../../../../erdos-problems/100-199/part-04/erdos-problem-190.md)
 - [Erdős Problem 192](../../../../erdos-problems/100-199/part-04/erdos-problem-192.md)
 - [Erdős Problem 196](../../../../erdos-problems/100-199/part-04/erdos-problem-196.md)
 - [Erdős Problem 198](../../../../erdos-problems/100-199/part-05/erdos-problem-198.md)
@@ -94,10 +95,10 @@ navigation: transparent
 - [Erdős Problem 202](../../../../erdos-problems/200-299/part-01/erdos-problem-202.md)
 - [Erdős Problem 205](../../../../erdos-problems/200-299/part-01/erdos-problem-205.md)
 - [Erdős Problem 206](../../../../erdos-problems/200-299/part-01/erdos-problem-206.md)
+
+## [Erdős Problem 208 to Erdős Problem 249](part-05/README.md)
+
 - [Erdős Problem 208](../../../../erdos-problems/200-299/part-01/erdos-problem-208.md)
-
-## [Erdős Problem 218 to Erdős Problem 250](part-05/README.md)
-
 - [Erdős Problem 218](../../../../erdos-problems/200-299/part-01/erdos-problem-218.md)
 - [Erdős Problem 219](../../../../erdos-problems/200-299/part-01/erdos-problem-219.md)
 - [Erdős Problem 220](../../../../erdos-problems/200-299/part-01/erdos-problem-220.md)
@@ -117,10 +118,10 @@ navigation: transparent
 - [Erdős Problem 247](../../../../erdos-problems/200-299/part-03/erdos-problem-247.md)
 - [Erdős Problem 248](../../../../erdos-problems/200-299/part-03/erdos-problem-248.md)
 - [Erdős Problem 249](../../../../erdos-problems/200-299/part-03/erdos-problem-249.md)
+
+## [Erdős Problem 250 to Erdős Problem 277](part-06/README.md)
+
 - [Erdős Problem 250](../../../../erdos-problems/200-299/part-03/erdos-problem-250.md)
-
-## [Erdős Problem 251 to Erdős Problem 279](part-06/README.md)
-
 - [Erdős Problem 251](../../../../erdos-problems/200-299/part-03/erdos-problem-251.md)
 - [Erdős Problem 252](../../../../erdos-problems/200-299/part-03/erdos-problem-252.md)
 - [Erdős Problem 253](../../../../erdos-problems/200-299/part-03/erdos-problem-253.md)
@@ -140,10 +141,10 @@ navigation: transparent
 - [Erdős Problem 275](../../../../erdos-problems/200-299/part-04/erdos-problem-275.md)
 - [Erdős Problem 276](../../../../erdos-problems/200-299/part-04/erdos-problem-276.md)
 - [Erdős Problem 277](../../../../erdos-problems/200-299/part-04/erdos-problem-277.md)
+
+## [Erdős Problem 279 to Erdős Problem 300](part-07/README.md)
+
 - [Erdős Problem 279](../../../../erdos-problems/200-299/part-04/erdos-problem-279.md)
-
-## [Erdős Problem 280 to Erdős Problem 303](part-07/README.md)
-
 - [Erdős Problem 280](../../../../erdos-problems/200-299/part-04/erdos-problem-280.md)
 - [Erdős Problem 281](../../../../erdos-problems/200-299/part-04/erdos-problem-281.md)
 - [Erdős Problem 283](../../../../erdos-problems/200-299/part-04/erdos-problem-283.md)
@@ -159,14 +160,15 @@ navigation: transparent
 - [Erdős Problem 294](../../../../erdos-problems/200-299/part-05/erdos-problem-294.md)
 - [Erdős Problem 295](../../../../erdos-problems/200-299/part-05/erdos-problem-295.md)
 - [Erdős Problem 296](../../../../erdos-problems/200-299/part-05/erdos-problem-296.md)
+- [Erdős Problem 297](../../../../erdos-problems/200-299/part-05/erdos-problem-297.md)
 - [Erdős Problem 298](../../../../erdos-problems/200-299/part-05/erdos-problem-298.md)
 - [Erdős Problem 299](../../../../erdos-problems/200-299/part-05/erdos-problem-299.md)
 - [Erdős Problem 300](../../../../erdos-problems/300-399/part-01/erdos-problem-300.md)
+
+## [Erdős Problem 302 to Erdős Problem 323](part-08/README.md)
+
 - [Erdős Problem 302](../../../../erdos-problems/300-399/part-01/erdos-problem-302.md)
 - [Erdős Problem 303](../../../../erdos-problems/300-399/part-01/erdos-problem-303.md)
-
-## [Erdős Problem 304 to Erdős Problem 325](part-08/README.md)
-
 - [Erdős Problem 304](../../../../erdos-problems/300-399/part-01/erdos-problem-304.md)
 - [Erdős Problem 305](../../../../erdos-problems/300-399/part-01/erdos-problem-305.md)
 - [Erdős Problem 306](../../../../erdos-problems/300-399/part-01/erdos-problem-306.md)
@@ -185,11 +187,11 @@ navigation: transparent
 - [Erdős Problem 321](../../../../erdos-problems/300-399/part-01/erdos-problem-321.md)
 - [Erdős Problem 322](../../../../erdos-problems/300-399/part-02/erdos-problem-322.md)
 - [Erdős Problem 323](../../../../erdos-problems/300-399/part-02/erdos-problem-323.md)
+
+## [Erdős Problem 324 to Erdős Problem 350](part-09/README.md)
+
 - [Erdős Problem 324](../../../../erdos-problems/300-399/part-02/erdos-problem-324.md)
 - [Erdős Problem 325](../../../../erdos-problems/300-399/part-02/erdos-problem-325.md)
-
-## [Erdős Problem 326 to Erdős Problem 354](part-09/README.md)
-
 - [Erdős Problem 326](../../../../erdos-problems/300-399/part-02/erdos-problem-326.md)
 - [Erdős Problem 328](../../../../erdos-problems/300-399/part-02/erdos-problem-328.md)
 - [Erdős Problem 329: Maximum Density of Sidon Sets](../../../../erdos-problems/300-399/part-02/erdos-problem-329-maximum-density-of-sidon-sets.md)
@@ -208,11 +210,11 @@ navigation: transparent
 - [Erdős Problem 348](../../../../erdos-problems/300-399/part-03/erdos-problem-348.md)
 - [Erdős Problem 349](../../../../erdos-problems/300-399/part-03/erdos-problem-349.md)
 - [Erdős Problem 350](../../../../erdos-problems/300-399/part-03/erdos-problem-350.md)
+
+## [Erdős Problem 351 to Erdős Problem 373](part-10/README.md)
+
 - [Erdős Problem 351](../../../../erdos-problems/300-399/part-03/erdos-problem-351.md)
 - [Erdős Problem 354](../../../../erdos-problems/300-399/part-03/erdos-problem-354.md)
-
-## [Erdős Problem 355 to Erdős Problem 376](part-10/README.md)
-
 - [Erdős Problem 355](../../../../erdos-problems/300-399/part-03/erdos-problem-355.md)
 - [Erdős Problem 357](../../../../erdos-problems/300-399/part-03/erdos-problem-357.md)
 - [Erdős Problem 358](../../../../erdos-problems/300-399/part-03/erdos-problem-358.md)
@@ -231,11 +233,11 @@ navigation: transparent
 - [Erdős Problem 371](../../../../erdos-problems/300-399/part-04/erdos-problem-371.md)
 - [Erdős Problem 372](../../../../erdos-problems/300-399/part-04/erdos-problem-372.md)
 - [Erdős Problem 373](../../../../erdos-problems/300-399/part-04/erdos-problem-373.md)
+
+## [Erdős Problem 375 to Erdős Problem 398](part-11/README.md)
+
 - [Erdős Problem 375](../../../../erdos-problems/300-399/part-04/erdos-problem-375.md)
 - [Erdős Problem 376](../../../../erdos-problems/300-399/part-04/erdos-problem-376.md)
-
-## [Erdős Problem 377 to Erdős Problem 400](part-11/README.md)
-
 - [Erdős Problem 377](../../../../erdos-problems/300-399/part-04/erdos-problem-377.md)
 - [Erdős Problem 379](../../../../erdos-problems/300-399/part-04/erdos-problem-379.md)
 - [Erdős Problem 382](../../../../erdos-problems/300-399/part-04/erdos-problem-382.md)
@@ -254,11 +256,11 @@ navigation: transparent
 - [Erdős Problem 396](../../../../erdos-problems/300-399/part-05/erdos-problem-396.md)
 - [Erdős Problem 397](../../../../erdos-problems/300-399/part-05/erdos-problem-397.md)
 - [Erdős Problem 398](../../../../erdos-problems/300-399/part-05/erdos-problem-398.md)
+
+## [Erdős Problem 399 to Erdős Problem 421](part-12/README.md)
+
 - [Erdős Problem 399](../../../../erdos-problems/300-399/part-05/erdos-problem-399.md)
 - [Erdős Problem 400](../../../../erdos-problems/400-499/part-01/erdos-problem-400.md)
-
-## [Erdős Problem 401 to Erdős Problem 423](part-12/README.md)
-
 - [Erdős Problem 401](../../../../erdos-problems/400-499/part-01/erdos-problem-401.md)
 - [Erdős Problem 402](../../../../erdos-problems/400-499/part-01/erdos-problem-402.md)
 - [Erdős Problem 403](../../../../erdos-problems/400-499/part-01/erdos-problem-403.md)
@@ -277,11 +279,11 @@ navigation: transparent
 - [Erdős Problem 419](../../../../erdos-problems/400-499/part-01/erdos-problem-419.md)
 - [Erdős Problem 420](../../../../erdos-problems/400-499/part-01/erdos-problem-420.md)
 - [Erdős Problem 421](../../../../erdos-problems/400-499/part-01/erdos-problem-421.md)
+
+## [Erdős Problem 422 to Erdős Problem 444](part-13/README.md)
+
 - [Erdős Problem 422](../../../../erdos-problems/400-499/part-01/erdos-problem-422.md)
 - [Erdős Problem 423](../../../../erdos-problems/400-499/part-02/erdos-problem-423.md)
-
-## [Erdős Problem 424: Sequence… to Erdős Problem 448](part-13/README.md)
-
 - [Erdős Problem 424: Sequence generated by $a_i a_j - 1$](../../../../erdos-problems/400-499/part-02/erdos-problem-424-sequence-generated-by-a-i-a-j.md)
 - [Erdős Problem 425](../../../../erdos-problems/400-499/part-02/erdos-problem-425.md)
 - [Erdős Problem 427](../../../../erdos-problems/400-499/part-02/erdos-problem-427.md)
@@ -300,11 +302,11 @@ navigation: transparent
 - [Erdős Problem 442](../../../../erdos-problems/400-499/part-02/erdos-problem-442.md)
 - [Erdős Problem 443](../../../../erdos-problems/400-499/part-02/erdos-problem-443.md)
 - [Erdős Problem 444](../../../../erdos-problems/400-499/part-02/erdos-problem-444.md)
+
+## [Erdős Problem 445 to Erdős Problem 472](part-14/README.md)
+
 - [Erdős Problem 445](../../../../erdos-problems/400-499/part-03/erdos-problem-445.md)
 - [Erdős Problem 448](../../../../erdos-problems/400-499/part-03/erdos-problem-448.md)
-
-## [Erdős Problem 450 to Erdős Problem 476](part-14/README.md)
-
 - [Erdős Problem 450](../../../../erdos-problems/400-499/part-03/erdos-problem-450.md)
 - [Erdős Problem 452](../../../../erdos-problems/400-499/part-03/erdos-problem-452.md)
 - [Erdős Problem 453](../../../../erdos-problems/400-499/part-03/erdos-problem-453.md)
@@ -323,11 +325,11 @@ navigation: transparent
 - [Erdős Problem 469](../../../../erdos-problems/400-499/part-03/erdos-problem-469.md)
 - [Erdős Problem 470](../../../../erdos-problems/400-499/part-03/erdos-problem-470.md)
 - [Erdős Problem 472](../../../../erdos-problems/400-499/part-04/erdos-problem-472.md)
+
+## [Erdős Problem 473 to Erdős Problem 512](part-15/README.md)
+
 - [Erdős Problem 473](../../../../erdos-problems/400-499/part-04/erdos-problem-473.md)
 - [Erdős Problem 476](../../../../erdos-problems/400-499/part-04/erdos-problem-476.md)
-
-## [Erdős Problem 478 to Erdős Problem 521](part-15/README.md)
-
 - [Erdős Problem 478](../../../../erdos-problems/400-499/part-04/erdos-problem-478.md)
 - [Erdős Problem 479](../../../../erdos-problems/400-499/part-04/erdos-problem-479.md)
 - [Erdős Problem 480](../../../../erdos-problems/400-499/part-04/erdos-problem-480.md)
@@ -346,11 +348,11 @@ navigation: transparent
 - [Erdős Problem 495](../../../../erdos-problems/400-499/part-05/erdos-problem-495.md)
 - [Erdős Problem 510](../../../../erdos-problems/500-599/part-01/erdos-problem-510.md)
 - [Erdős Problem 512](../../../../erdos-problems/500-599/part-01/erdos-problem-512.md)
+
+## [Erdős Problem 520 to Erdős Problem 656](part-16/README.md)
+
 - [Erdős Problem 520](../../../../erdos-problems/500-599/part-01/erdos-problem-520.md)
 - [Erdős Problem 521](../../../../erdos-problems/500-599/part-01/erdos-problem-521.md)
-
-## [Erdős Problem 534 to Erdős Problem 658](part-16/README.md)
-
 - [Erdős Problem 534](../../../../erdos-problems/500-599/part-02/erdos-problem-534.md)
 - [Erdős Problem 535](../../../../erdos-problems/500-599/part-02/erdos-problem-535.md)
 - [Erdős Problem 536](../../../../erdos-problems/500-599/part-02/erdos-problem-536.md)
@@ -369,11 +371,11 @@ navigation: transparent
 - [Erdős Problem 649](../../../../erdos-problems/600-699/part-02/erdos-problem-649.md)
 - [Erdős Problem 650](../../../../erdos-problems/600-699/part-02/erdos-problem-650.md)
 - [Erdős Problem 656](../../../../erdos-problems/600-699/part-03/erdos-problem-656.md)
+
+## [Erdős Problem 657 to Erdős Problem 688](part-17/README.md)
+
 - [Erdős Problem 657](../../../../erdos-problems/600-699/part-03/erdos-problem-657.md)
 - [Erdős Problem 658](../../../../erdos-problems/600-699/part-03/erdos-problem-658.md)
-
-## [Erdős Problem 663 to Erdős Problem 690](part-17/README.md)
-
 - [Erdős Problem 663](../../../../erdos-problems/600-699/part-03/erdos-problem-663.md)
 - [Erdős Problem 672](../../../../erdos-problems/600-699/part-03/erdos-problem-672.md)
 - [Erdős Problem 673](../../../../erdos-problems/600-699/part-03/erdos-problem-673.md)
@@ -392,11 +394,11 @@ navigation: transparent
 - [Erdős Problem 686](../../../../erdos-problems/600-699/part-04/erdos-problem-686.md)
 - [Erdős Problem 687](../../../../erdos-problems/600-699/part-04/erdos-problem-687.md)
 - [Erdős Problem 688](../../../../erdos-problems/600-699/part-04/erdos-problem-688.md)
+
+## [Erdős Problem 689 to Erdős Problem 729](part-18/README.md)
+
 - [Erdős Problem 689](../../../../erdos-problems/600-699/part-04/erdos-problem-689.md)
 - [Erdős Problem 690](../../../../erdos-problems/600-699/part-04/erdos-problem-690.md)
-
-## [Erdős Problem 691 to Erdős Problem 731](part-18/README.md)
-
 - [Erdős Problem 691](../../../../erdos-problems/600-699/part-04/erdos-problem-691.md)
 - [Erdős Problem 692](../../../../erdos-problems/600-699/part-04/erdos-problem-692.md)
 - [Erdős Problem 694](../../../../erdos-problems/600-699/part-04/erdos-problem-694.md)
@@ -415,18 +417,18 @@ navigation: transparent
 - [Erdős Problem 727](../../../../erdos-problems/700-799/part-02/erdos-problem-727.md)
 - [Erdős Problem 728](../../../../erdos-problems/700-799/part-02/erdos-problem-728.md)
 - [Erdős Problem 729](../../../../erdos-problems/700-799/part-02/erdos-problem-729.md)
+
+## [Erdős Problem 730 to Erdős Problem 808](part-19/README.md)
+
 - [Erdős Problem 730](../../../../erdos-problems/700-799/part-02/erdos-problem-730.md)
 - [Erdős Problem 731](../../../../erdos-problems/700-799/part-02/erdos-problem-731.md)
-
-## [Erdős Problem 748 to Erdős Problem 818](part-19/README.md)
-
 - [Erdős Problem 748](../../../../erdos-problems/700-799/part-03/erdos-problem-748.md)
 - [Erdős Problem 749](../../../../erdos-problems/700-799/part-03/erdos-problem-749.md)
 - [Erdős Problem 763](../../../../erdos-problems/700-799/part-03/erdos-problem-763.md)
 - [Erdős Problem 764](../../../../erdos-problems/700-799/part-03/erdos-problem-764.md)
 - [Erdős Problem 770](../../../../erdos-problems/700-799/part-03/erdos-problem-770.md)
 - [Erdős Problem 771](../../../../erdos-problems/700-799/part-03/erdos-problem-771.md)
-- [Erdős Problem 772](../../../../erdos-problems/700-799/part-03/erdos-problem-772.md)
+- [Erdős Problem 772](../../../../erdos-problems/700-799/part-04/erdos-problem-772.md)
 - [Erdős Problem 773](../../../../erdos-problems/700-799/part-04/erdos-problem-773.md)
 - [Erdős Problem 779](../../../../erdos-problems/700-799/part-04/erdos-problem-779.md)
 - [Erdős Problem 781](../../../../erdos-problems/700-799/part-04/erdos-problem-781.md)
@@ -438,11 +440,11 @@ navigation: transparent
 - [Erdős Problem 796](../../../../erdos-problems/700-799/part-04/erdos-problem-796.md)
 - [Erdős Problem 806](../../../../erdos-problems/800-899/part-01/erdos-problem-806.md)
 - [Erdős Problem 808](../../../../erdos-problems/800-899/part-01/erdos-problem-808.md)
+
+## [Erdős Problem 817 to Erdős Problem 847](part-20/README.md)
+
 - [Erdős Problem 817](../../../../erdos-problems/800-899/part-01/erdos-problem-817.md)
 - [Erdős Problem 818](../../../../erdos-problems/800-899/part-01/erdos-problem-818.md)
-
-## [Erdős Problem 819 to Erdős Problem 849](part-20/README.md)
-
 - [Erdős Problem 819](../../../../erdos-problems/800-899/part-01/erdos-problem-819.md)
 - [Erdős Problem 820](../../../../erdos-problems/800-899/part-01/erdos-problem-820.md)
 - [Erdős Problem 821](../../../../erdos-problems/800-899/part-01/erdos-problem-821.md)
@@ -461,5 +463,3 @@ navigation: transparent
 - [Erdős Problem 845](../../../../erdos-problems/800-899/part-03/erdos-problem-845.md)
 - [Erdős Problem 846](../../../../erdos-problems/800-899/part-03/erdos-problem-846.md)
 - [Erdős Problem 847](../../../../erdos-problems/800-899/part-03/erdos-problem-847.md)
-- [Erdős Problem 848](../../../../erdos-problems/800-899/part-03/erdos-problem-848.md)
-- [Erdős Problem 849](../../../../erdos-problems/800-899/part-03/erdos-problem-849.md)

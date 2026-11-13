@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 29.2 Closed immersions to 29.22 Morphisms of finite…
+# 29.2 Closed immersions to 29.21 Quasi-finite morphisms
 
 - [29.2 Closed immersions](29-2-closed-immersions.md)
 - [29.3 Immersions](29-3-immersions.md)
@@ -22,5 +22,5 @@ navigation: transparent
 - [29.17 Universally catenary schemes](29-17-universally-catenary-schemes.md)
 - [29.18 Nagata schemes, reprise](29-18-nagata-schemes-reprise.md)
 - [29.19 The singular locus, reprise](29-19-the-singular-locus-reprise.md)
+- [29.20 Excellent schemes](29-20-excellent-schemes.md)
 - [29.21 Quasi-finite morphisms](29-21-quasi-finite-morphisms.md)
-- [29.22 Morphisms of finite presentation](29-22-morphisms-of-finite-presentation.md)

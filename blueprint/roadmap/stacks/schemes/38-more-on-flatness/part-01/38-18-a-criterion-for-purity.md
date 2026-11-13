@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.18 A criterion for purity
 
-Section 38.18 of the Stacks Project, [Tag 05L2](https://stacks.math.columbia.edu/tag/05L2). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.18 of the Stacks Project, [Tag 05L2](https://stacks.math.columbia.edu/tag/05L2). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05L3, a lemma
 
 [Tag 05L3](https://stacks.math.columbia.edu/tag/05L3) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.exists_specializes_mem_associatedPoints_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L273).
+**`Stacks.RelativeAssassin.exists_specializes_mem_associatedPoints_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L273).
 
 > **Stacks Project, Tag 05L3: a criterion for purity.** Let `f : X ⟶ S` be locally of finite
 > type and `F` a quasi-coherent `𝒪_X`-module of finite type which is flat over `S` at every point
@@ -37,7 +37,7 @@ theorem exists_specializes_mem_associatedPoints_fibre
 
 [Tag 05L4](https://stacks.math.columbia.edu/tag/05L4) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_iff_relativeAssassin_specializing_mem_range_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterion.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterion.lean#L603).
+**`AlgebraicGeometry.isPureAlong_iff_relativeAssassin_specializing_mem_range_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterion.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterion.lean#L603).
 
 > **Stacks Project, Tag 05L4.** Let `f : X ⟶ S` be of finite type, let `ℱ` be a finite type
 > quasi-coherent `𝒪_X`-module and let `s ∈ S`. Let `(S', s') ⟶ (S, s)` be an elementary étale
@@ -97,7 +97,7 @@ public theorem isPureAlong_iff_relativeAssassin_specializing_mem_range_of_associ
 
 [Tag 05L5](https://stacks.math.columbia.edu/tag/05L5) in the Stacks Project.
 
-**`AlgebraicGeometry.isUniversallyPureAlong_of_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalPurityCriterion.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalPurityCriterion.lean#L403).
+**`AlgebraicGeometry.isUniversallyPureAlong_of_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalPurityCriterion.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalPurityCriterion.lean#L403).
 
 > **Stacks Project, Tag 05L5.** Let `f : X ⟶ S` be of finite type, let `ℱ` be a finite type
 > quasi-coherent `𝒪_X`-module, and let `s : S`. If `ℱ` is flat over `S` at every point of the fibre
@@ -124,7 +124,7 @@ public theorem isUniversallyPureAlong_of_isPureAlong
 
 [Tag 05L6](https://stacks.math.columbia.edu/tag/05L6) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureRelative_of_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L58). The attribute's comment: “the implication universally pure relative to S implies pure relative to S, with no flatness and no Noetherian hypothesis”.
+**`AlgebraicGeometry.isPureRelative_of_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L58). The attribute's comment: “the implication universally pure relative to S implies pure relative to S, with no flatness and no Noetherian hypothesis”.
 
 > **Stacks Project, Tag 05L6**, the implication which needs no hypothesis on the base: a
 > finite type quasi-coherent module which is universally pure relative to the base is pure
@@ -137,7 +137,7 @@ theorem isPureRelative_of_isUniversallyPureRelative {X S : Scheme.{u}} (f : X �
     IsPureRelative f F
 ```
 
-**`AlgebraicGeometry.isUniversallyPureRelative_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L69). The attribute's comment: “the implication pure relative to S implies universally pure relative to S, for a module flat over S, with no hypothesis on S”.
+**`AlgebraicGeometry.isUniversallyPureRelative_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L69). The attribute's comment: “the implication pure relative to S implies universally pure relative to S, for a module flat over S, with no hypothesis on S”.
 
 > **Stacks Project, Tag 05L6**, the harder implication. Let `f : X ⟶ S` be of finite type and
 > let `ℱ` be a finite type quasi-coherent `𝒪_X`-module which is flat over `S`. If `ℱ` is pure
@@ -151,7 +151,7 @@ theorem isUniversallyPureRelative_of_isPureRelative {X S : Scheme.{u}} (f : X �
     IsUniversallyPureRelative f F
 ```
 
-**`AlgebraicGeometry.isPureRelative_iff_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L81).
+**`AlgebraicGeometry.isPureRelative_iff_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L81).
 
 > **Stacks Project, Tag 05L6.** Let `f : X ⟶ S` be of finite type and let `ℱ` be a finite type
 > quasi-coherent `𝒪_X`-module which is flat over `S`. Then `ℱ` is pure relative to `S` if and only
@@ -164,7 +164,7 @@ theorem isPureRelative_iff_isUniversallyPureRelative {X S : Scheme.{u}} (f : X �
     IsPureRelative f F ↔ IsUniversallyPureRelative f F
 ```
 
-**`AlgebraicGeometry.isPureRelative_iff_isUniversallyPureRelative_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L94). The attribute's comment: “a strengthening over a locally Noetherian base: Tag 05J8 replaces Tag 05L5 and needs no flatness, so the flatness hypothesis of the source is dropped here”.
+**`AlgebraicGeometry.isPureRelative_iff_isUniversallyPureRelative_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityIffUniversalPurity.lean#L94). The attribute's comment: “a strengthening over a locally Noetherian base: Tag 05J8 replaces Tag 05L5 and needs no flatness, so the flatness hypothesis of the source is dropped here”.
 
 > **Stacks Project, Tag 05L6** over a locally Noetherian base, where the flatness hypothesis
 > is unnecessary. Let `f : X ⟶ S` be of finite type and let `ℱ` be a finite type quasi-coherent
@@ -182,7 +182,7 @@ theorem isPureRelative_iff_isUniversallyPureRelative_of_isLocallyNoetherian
 
 [Tag 05MA](https://stacks.math.columbia.edu/tag/05MA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_stage_isPureAlong_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean#L340). The attribute's comment: “assuming the limit descent as hdescend and the purity step as hstage”.
+**`AlgebraicGeometry.exists_stage_isPureAlong_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean#L340). The attribute's comment: “assuming the limit descent as hdescend and the purity step as hstage”.
 
 > **Stacks Project, Tag 05MA.** Let `(S_i)` be an inverse system of affine schemes over a
 > directed index with limit `S`, let `s ∈ S` with images `s_i`, let `f : X ⟶ S` be of finite
@@ -239,7 +239,7 @@ public theorem exists_stage_isPureAlong_of_isLimit
                        s := c.π.app i s } : PrePureSituation.{u})
 ```
 
-**`AlgebraicGeometry.exists_stage_isPureAlong_of_isLimit_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityLimitStage.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityLimitStage.lean#L612).
+**`AlgebraicGeometry.exists_stage_isPureAlong_of_isLimit_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityLimitStage.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityLimitStage.lean#L612).
 
 > **Stacks Project, Tag 05MA.** Let `I` be a directed set, let `(S_k)` be an inverse system of
 > affine schemes indexed by `I` with limit `S`, let `s` be a point of `S` with images `s_k`, let
@@ -280,7 +280,7 @@ public theorem exists_stage_isPureAlong_of_isLimit_directed {I : Type u} [Preord
 
 [Tag 05MC](https://stacks.math.columbia.edu/tag/05MC) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_setOf_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean#L162). The attribute's comment: “using Stacks 05KR, proved outright in this library”.
+**`AlgebraicGeometry.isOpen_setOf_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/PurityCriterionLimits.lean#L162). The attribute's comment: “using Stacks 05KR, proved outright in this library”.
 
 > **Stacks Project, Tag 05MC.** For a morphism `f : X ⟶ S` of finite presentation and a
 > quasi-coherent `𝒪_X`-module `ℱ` of finite presentation which is flat over `S`, the set of points
@@ -306,4 +306,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.18, Tag 05L2](https://stacks.math.columbia.edu/tag/05L2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

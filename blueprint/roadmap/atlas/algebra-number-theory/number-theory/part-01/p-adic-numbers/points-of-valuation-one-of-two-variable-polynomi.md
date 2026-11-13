@@ -7,7 +7,7 @@ statement: formalized
 
 # Points of valuation one of two-variable polynomials
 
-22 results, 12 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html).
+22 results, 12 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html).
 
 ## At most one lift has valuation above one
 
@@ -19,7 +19,7 @@ Then at most one $k \in \{0, \dots, p - 1\}$ satisfies $p^2 \mid g(r + kp)$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.card_lift_padicVal_gt_one_le_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-gt-one-le-one).
+Stated but not proved: `MetaMathlibExt.card_lift_padicVal_gt_one_le_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-gt-one-le-one).
 
 ## Few residues modulo $p^2$ with valuation above one
 
@@ -32,7 +32,7 @@ $p^2 \mid g(x)$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.card_padicVal_gt_one_le_natDegree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-padic-val-gt-one-le-nat-degree).
+Stated but not proved: `MetaMathlibExt.card_padicVal_gt_one_le_natDegree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-padic-val-gt-one-le-nat-degree).
 
 ## Lifts of a nonsingular point with valuation one
 
@@ -47,7 +47,7 @@ $\nu_p(f(r + kp, s + lp)) = 1$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.card_lift_padicVal_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-eq-one).
+Stated but not proved: `MetaMathlibExt.card_lift_padicVal_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-eq-one).
 
 ## Common lifts of two points with independent gradients
 
@@ -69,7 +69,7 @@ one has $p^2 \mid F_1(k, l)$ and $p^2 \mid F_2(k, l)$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.card_common_lift_padicVal_of_gradients_independent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-common-lift-padic-val-of-gradients).
+Stated but not proved: `MetaMathlibExt.card_common_lift_padicVal_of_gradients_independent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-common-lift-padic-val-of-gradients).
 
 ## Number of points of valuation one modulo $p^2$
 
@@ -87,7 +87,7 @@ has $m = 5$, but only $24$ pairs, not $30$, have valuation $1$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.card_padicVal_eq_one_mod_sq_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-padic-val-eq-one-mod-sq-eq).
+Stated but not proved: `MetaMathlibExt.card_padicVal_eq_one_mod_sq_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-padic-val-eq-one-mod-sq-eq).
 
 ## Lifts of a singular point with valuation one
 
@@ -106,7 +106,7 @@ $9$ lifts have valuation $1$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.card_lift_padicVal_eq_one_of_singular` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-eq-one-of-singular).
+Stated but not proved: `MetaMathlibExt.card_lift_padicVal_eq_one_of_singular` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-lift-padic-val-eq-one-of-singular).
 
 ## Common lifts of two points with dependent gradients
 
@@ -134,7 +134,7 @@ rank is $2$, and $(n_1, n_2, n_3) = (6, 3, 0)$ rather than $(3, 3, 0)$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.card_common_lift_padicVal_of_gradients_dependent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-common-lift-padic-val-of-gradients-2).
+Stated but not proved: `MetaMathlibExt.card_common_lift_padicVal_of_gradients_dependent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#card-common-lift-padic-val-of-gradients-2).
 
 ## Points of $C_f(\mathbb{F}_p)$
 
@@ -146,7 +146,7 @@ divides $f(r, s)$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1 (definition of `C_f(𝔽_p)` and `m = |C_f(𝔽_p)|`).
 
-Formalized by `MetaMathlibExt.valuationCurvePoints`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-curve-points).
+Formalized by `MetaMathlibExt.valuationCurvePoints`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-curve-points).
 
 ## $C_f(\mathbb{F}_p)$ has at most $p^2$ points
 
@@ -158,7 +158,7 @@ $r, s < p$ such that $p$ divides $f(r, s)$ has at most $p^2$ elements.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1 (definition of `C_f(𝔽_p)`).
 
-Formalized by `MetaMathlibExt.valuationCurvePoints_card_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-curve-points-card-le).
+Formalized by `MetaMathlibExt.valuationCurvePoints_card_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-curve-points-card-le).
 
 ## Valuation row of a point
 
@@ -173,7 +173,7 @@ division by $p$ is exact.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1, eq. (2).
 
-Formalized by `MetaMathlibExt.valuationRow`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-row).
+Formalized by `MetaMathlibExt.valuationRow`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-row).
 
 ## Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$
 
@@ -187,7 +187,7 @@ and $P_i \ne P_j$ for $i \ne j$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1 (definition of `m_k(f, p)`) and Section 3 (sums over `l₁ ≠ l₂ ≠ ⋯ ≠ l_k`).
 
-Formalized by `MetaMathlibExt.valuationDistinctTuples`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-distinct-tuples).
+Formalized by `MetaMathlibExt.valuationDistinctTuples`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-distinct-tuples).
 
 ## Rank-two tuple count $m_k(f, p)$
 
@@ -203,7 +203,7 @@ rank $2$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1 (definition of `m_k(f, p)` after eq. (2)).
 
-Formalized by `MetaMathlibExt.valuationRankTwoTupleCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-two-tuple-count).
+Formalized by `MetaMathlibExt.valuationRankTwoTupleCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-two-tuple-count).
 
 ## The rank-two tuple count vanishes for $k = 1$
 
@@ -215,7 +215,7 @@ at most $1$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1 ("For `k = 1`, we observe that `m_k(f, p) = 0` trivially").
 
-Formalized by `MetaMathlibExt.valuationRankTwoTupleCount_one`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-two-tuple-count-one).
+Formalized by `MetaMathlibExt.valuationRankTwoTupleCount_one`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-two-tuple-count-one).
 
 ## Rank-one tuple count $o_k(f, p)$
 
@@ -230,7 +230,7 @@ at $P_i$ has rank $1$ and the first two columns of $B_k(P)$ are not both zero.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 3 (definition of `o_k(f, p)` before Proposition 6).
 
-Formalized by `MetaMathlibExt.valuationRankOneTupleCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-one-tuple-count).
+Formalized by `MetaMathlibExt.valuationRankOneTupleCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-rank-one-tuple-count).
 
 ## Common lift count
 
@@ -247,7 +247,7 @@ is the probability of this event for a uniformly random $(a, b) \in \mathbb{F}_p
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 3 (definition of the indicator random variables `Y_{x,y}`).
 
-Formalized by `MetaMathlibExt.valuationCommonLiftCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-common-lift-count).
+Formalized by `MetaMathlibExt.valuationCommonLiftCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-common-lift-count).
 
 ## The common lift count is at most $p^2$
 
@@ -259,7 +259,7 @@ $P$ is at most $p^2$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 3 (definition of the indicator random variables `Y_{x,y}`).
 
-Formalized by `MetaMathlibExt.valuationCommonLiftCount_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-common-lift-count-le).
+Formalized by `MetaMathlibExt.valuationCommonLiftCount_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-common-lift-count-le).
 
 ## Count of points of high valuation in a square
 
@@ -272,7 +272,7 @@ prime $p$ this is the condition $\nu_p(f(x, y)) > 1$, where points with $f(x, y)
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1, eq. (1).
 
-Formalized by `MetaMathlibExt.valuationSquareCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-square-count).
+Formalized by `MetaMathlibExt.valuationSquareCount`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-square-count).
 
 ## Trivial bound for the square count
 
@@ -285,7 +285,7 @@ $p^2$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1, eq. (1).
 
-Formalized by `MetaMathlibExt.valuationSquareCount_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-square-count-le).
+Formalized by `MetaMathlibExt.valuationSquareCount_le`, a theorem declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-square-count-le).
 
 ## Rajkumar–Shubham Conjecture 1
 
@@ -297,7 +297,7 @@ the rank-two tuple count.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Section 1, Conjecture 1, eq. (3).
 
-Formalized by `MetaMathlibExt.ValuationConjectureOne`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-conjecture-one).
+Formalized by `MetaMathlibExt.ValuationConjectureOne`, a definition declared in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#valuation-conjecture-one).
 
 ## Sum of expectations over distinct tuples of points
 
@@ -327,7 +327,7 @@ proof uses it to rule out rank $0$.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 6, eq. (15).
 
-Stated but not proved: `MetaMathlibExt.sum_expectation_distinct_tuples_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#sum-expectation-distinct-tuples-eq).
+Stated but not proved: `MetaMathlibExt.sum_expectation_distinct_tuples_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#sum-expectation-distinct-tuples-eq).
 
 ## Sums of expectations over distinct tuples tend to one
 
@@ -350,7 +350,7 @@ irreducibility hypothesis the paper does not state; it is assumed directly here.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 5, under the standing assumption of Section 3.
 
-Stated but not proved: `MetaMathlibExt.tendsto_sum_expectation_distinct_tuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#tendsto-sum-expectation-distinct-tuples).
+Stated but not proved: `MetaMathlibExt.tendsto_sum_expectation_distinct_tuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#tendsto-sum-expectation-distinct-tuples).
 
 ## Poisson limit for points of valuation $> 1$
 
@@ -380,7 +380,7 @@ assumed directly, as in the companion statement about sums over distinct tuples.
 
 - Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_valuationSquareCount_poisson` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#tendsto-valuation-square-count-poisson).
+Stated but not proved: `MetaMathlibExt.tendsto_valuationSquareCount_poisson` is written with `theorem_wanted` in [WantedExt/NumberTheory/ValuationOnePointsWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ValuationOnePointsWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html#tendsto-valuation-square-count-poisson).
 
 ## Depends on
 
@@ -389,4 +389,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Points of valuation one of two-variable polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/p-adic-numbers/points-of-valuation-one-of-two-variable-polynomi)

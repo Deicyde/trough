@@ -7,7 +7,7 @@ statement: formalized
 
 # Completely additive height functions
 
-43 results, 21 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html).
+43 results, 21 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html).
 
 ## Completely additive functions on the positive integers
 
@@ -19,7 +19,7 @@ $H(ab) = H(a) + H(b)$ for all integers $a, b \ge 1$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 2 (definition of a height function).
 
-Formalized by `MetaMathlibExt.IsCompletelyAdditiveNat`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-completely-additive-nat).
+Formalized by `MetaMathlibExt.IsCompletelyAdditiveNat`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-completely-additive-nat).
 
 ## A completely additive function vanishes at one
 
@@ -31,7 +31,7 @@ then $H(1) = 0$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 2 (definition of a height function).
 
-Formalized by `MetaMathlibExt.IsCompletelyAdditiveNat.map_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#map-one).
+Formalized by `MetaMathlibExt.IsCompletelyAdditiveNat.map_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#map-one).
 
 ## Height functions
 
@@ -46,7 +46,7 @@ Complete additivity forces $H(1) = 0$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 2 (definition of a height function).
 
-Formalized by `MetaMathlibExt.IsHeightFunction`, a structure declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function).
+Formalized by `MetaMathlibExt.IsHeightFunction`, a structure declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function).
 
 ## The $i$-th prime
 
@@ -57,7 +57,7 @@ increasing order, so that $p_1 = 2$. For $i = 0$ the definition also gives $p_0 
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 2 (notation `pᵢ`).
 
-Formalized by `MetaMathlibExt.nthPrimeOne`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one).
+Formalized by `MetaMathlibExt.nthPrimeOne`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one).
 
 ## The first three primes
 
@@ -68,7 +68,7 @@ $p_1 = 2$, $p_2 = 3$ and $p_3 = 5$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 2 (notation `pᵢ`).
 
-Formalized by `MetaMathlibExt.nthPrimeOne_one_two_three`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one-one-two-three).
+Formalized by `MetaMathlibExt.nthPrimeOne_one_two_three`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one-one-two-three).
 
 ## Completely additive function with prescribed prime values
 
@@ -81,7 +81,7 @@ to $0$. Only the values of $v$ at primes matter.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 3 (extension by complete additivity).
 
-Formalized by `MetaMathlibExt.additiveOfPrimeValues`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values).
+Formalized by `MetaMathlibExt.additiveOfPrimeValues`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values).
 
 ## The completely additive extension vanishes at one
 
@@ -93,7 +93,7 @@ sends $m = \prod_p p^{a_p}$ to $\sum_p a_p\, v(p)$) takes the value $0$ at $1$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 3 (extension by complete additivity).
 
-Formalized by `MetaMathlibExt.additiveOfPrimeValues_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values-one).
+Formalized by `MetaMathlibExt.additiveOfPrimeValues_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values-one).
 
 ## The completely additive extension at a prime
 
@@ -106,7 +106,7 @@ at $p$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 3 (extension by complete additivity).
 
-Formalized by `MetaMathlibExt.additiveOfPrimeValues_prime`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values-prime).
+Formalized by `MetaMathlibExt.additiveOfPrimeValues_prime`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#additive-of-prime-values-prime).
 
 ## The extension from prime values is completely additive
 
@@ -119,7 +119,7 @@ $H_v(ab) = H_v(a) + H_v(b)$ for all integers $a, b \ge 1$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 3 (extension by complete additivity).
 
-Formalized by `MetaMathlibExt.isCompletelyAdditiveNat_additiveOfPrimeValues`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-completely-additive-nat-additive-of-p).
+Formalized by `MetaMathlibExt.isCompletelyAdditiveNat_additiveOfPrimeValues`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-completely-additive-nat-additive-of-p).
 
 ## Level construction for a height function
 
@@ -133,7 +133,7 @@ of primes $p$ with $H(p) = n$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.heightLevel_eq_products_union_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-eq-products-union-primes).
+Stated but not proved: `MetaMathlibExt.heightLevel_eq_products_union_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-eq-products-union-primes).
 
 ## Height levels are counted by coloured partitions
 
@@ -151,7 +151,7 @@ between the positive integers and such coloured partitions.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.heightLevel_card_eq_multipartitions` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-card-eq-multipartitions).
+Stated but not proved: `MetaMathlibExt.heightLevel_card_eq_multipartitions` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-card-eq-multipartitions).
 
 ## Realizing a prescribed profile
 
@@ -163,7 +163,7 @@ height function $H$ such that for every $k \ge 1$ exactly $\pi_k$ primes $p$ sat
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.exists_heightFunction_with_profile` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#exists-height-function-with-profile).
+Stated but not proved: `MetaMathlibExt.exists_heightFunction_with_profile` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#exists-height-function-with-profile).
 
 ## Height functions with prescribed values at the primes
 
@@ -178,7 +178,7 @@ $i \ge 1$ with $f(i) = n$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.isHeightFunction_of_finite_fibers` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function-of-finite-fibers).
+Stated but not proved: `MetaMathlibExt.isHeightFunction_of_finite_fibers` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function-of-finite-fibers).
 
 ## The largest integer at each height for the prime-index height
 
@@ -191,7 +191,7 @@ $m \ge 1$ with $H(m) = n$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_primeIndexHeight_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-greatest-prime-index-height-level).
+Stated but not proved: `MetaMathlibExt.isGreatest_primeIndexHeight_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-greatest-prime-index-height-level).
 
 ## Gutman–Ivić maximal Matula numbers
 
@@ -204,7 +204,7 @@ are no applications and $P(n) = 8$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 3.2 (definition of `P(n)`).
 
-Formalized by `MetaMathlibExt.matulaMax`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max).
+Formalized by `MetaMathlibExt.matulaMax`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max).
 
 ## The first maximal Matula number
 
@@ -215,7 +215,7 @@ $p_8$, the eighth prime.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 3.2 (definition of `P(n)`).
 
-Formalized by `MetaMathlibExt.matulaMax_four`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max-four).
+Formalized by `MetaMathlibExt.matulaMax_four`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max-four).
 
 ## Recursion for the maximal Matula numbers
 
@@ -227,7 +227,7 @@ $P(n + 1) = p_{P(n)}$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 3.2 (definition of `P(n)`).
 
-Formalized by `MetaMathlibExt.matulaMax_succ`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max-succ).
+Formalized by `MetaMathlibExt.matulaMax_succ`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-max-succ).
 
 ## Largest number at a given Matula height
 
@@ -241,7 +241,7 @@ $H(m) = n$ is the Gutman–Ivić maximal Matula number $P(n)$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.matula_isGreatest_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-is-greatest-level).
+Stated but not proved: `MetaMathlibExt.matula_isGreatest_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-is-greatest-level).
 
 ## Smallest number at a given Matula height
 
@@ -256,7 +256,7 @@ $9 \cdot 5^{(n-4)/3}$ if $n \equiv 1 \pmod 3$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.matula_isLeast_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-is-least-level).
+Stated but not proved: `MetaMathlibExt.matula_isLeast_level` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#matula-is-least-level).
 
 ## Rosser–Schoenfeld bounds for the $k$-th prime
 
@@ -268,7 +268,7 @@ $k (\log k + \log \log k - 1) \le p_k \le k (\log k + \log \log k)$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 1, quoting Rosser and Schoenfeld.
 
-Stated but not proved: `MetaMathlibExt.nthPrimeOne_rosser_schoenfeld` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one-rosser-schoenfeld).
+Stated but not proved: `MetaMathlibExt.nthPrimeOne_rosser_schoenfeld` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#nth-prime-one-rosser-schoenfeld).
 
 ## The $k$-th prime exceeds $2k$ for $k \ge 6$
 
@@ -279,7 +279,7 @@ $k$-th prime $p_k$, indexed from one so that $p_1 = 2$, satisfies $p_k > 2k$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.two_mul_lt_nthPrimeOne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#two-mul-lt-nth-prime-one).
+Stated but not proved: `MetaMathlibExt.two_mul_lt_nthPrimeOne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#two-mul-lt-nth-prime-one).
 
 ## Prime-power decomposition of summatory heights
 
@@ -297,7 +297,7 @@ The paper states this for real $x \ge 2$; both sides depend on $x$ only through 
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 7, Equation (6).
 
-Stated but not proved: `MetaMathlibExt.sum_height_eq_sum_prime_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-height-eq-sum-prime-powers).
+Stated but not proved: `MetaMathlibExt.sum_height_eq_sum_prime_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-height-eq-sum-prime-powers).
 
 ## Prime reduction for summatory heights
 
@@ -313,7 +313,7 @@ where both sums run over the primes $p \le x$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 7, "In particular" display.
 
-Stated but not proved: `MetaMathlibExt.sum_height_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-height-asymptotic).
+Stated but not proved: `MetaMathlibExt.sum_height_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-height-asymptotic).
 
 ## Iteratively defined height functions
 
@@ -330,7 +330,7 @@ The case $i = 1$ gives $H(2) = j$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isHeightFunction_of_iterative` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function-of-iterative).
+Stated but not proved: `MetaMathlibExt.isHeightFunction_of_iterative` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#is-height-function-of-iterative).
 
 ## Weighted partition coefficients
 
@@ -344,7 +344,7 @@ The value $b_0$ is unused.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 6.1 (weighted partitions `F(q) = ∑ aₙ qⁿ`).
 
-Formalized by `MetaMathlibExt.weightedPartitionCoeff`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff).
+Formalized by `MetaMathlibExt.weightedPartitionCoeff`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff).
 
 ## Zeroth weighted partition coefficient
 
@@ -355,7 +355,7 @@ weighted partition coefficient $a_0$ attached to $(b_k)$ equals $1$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 6.1 (weighted partitions `F(q) = ∑ aₙ qⁿ`).
 
-Formalized by `MetaMathlibExt.weightedPartitionCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff-zero).
+Formalized by `MetaMathlibExt.weightedPartitionCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff-zero).
 
 ## First weighted partition coefficient
 
@@ -366,7 +366,7 @@ weighted partition coefficient $a_1$ attached to $(b_k)$ equals $b_1$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 6.1 (weighted partitions `F(q) = ∑ aₙ qⁿ`).
 
-Formalized by `MetaMathlibExt.weightedPartitionCoeff_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff-one).
+Formalized by `MetaMathlibExt.weightedPartitionCoeff_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#weighted-partition-coeff-one).
 
 ## Meinardus' hypotheses
 
@@ -389,7 +389,7 @@ $x$, $y$ with $0 < y < y_0$ and $y^{1 + \varepsilon/2} \le |x| \le 1/2$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 6.1 (hypotheses of Theorem 3).
 
-Formalized by `MetaMathlibExt.MeinardusHypotheses`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#meinardus-hypotheses).
+Formalized by `MetaMathlibExt.MeinardusHypotheses`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#meinardus-hypotheses).
 
 ## Meinardus' theorem
 
@@ -406,7 +406,7 @@ $\log a_n \sim C_2 n^{\alpha/(\alpha + 1)}$ as $n \to \infty$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 3, quoting Meinardus.
 
-Stated but not proved: `MetaMathlibExt.meinardus_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#meinardus-asymptotic).
+Stated but not proved: `MetaMathlibExt.meinardus_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#meinardus-asymptotic).
 
 ## A simple pole of a Dirichlet series from the growth of its partial sums
 
@@ -425,7 +425,7 @@ with $\operatorname{Re} s \ge \alpha - \eta + \delta$ and $|\operatorname{Im} s|
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.lseries_profile_simple_pole` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#lseries-profile-simple-pole).
+Stated but not proved: `MetaMathlibExt.lseries_profile_simple_pole` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#lseries-profile-simple-pole).
 
 ## Meinardus asymptotics for the levels of a height function
 
@@ -443,7 +443,7 @@ $\log N_n \sim C_2 n^{\alpha/(\alpha+1)}$ as $n \to \infty$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.heightLevel_card_meinardus` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-card-meinardus).
+Stated but not proved: `MetaMathlibExt.heightLevel_card_meinardus` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-level-card-meinardus).
 
 ## Identifying the profile from the growth of the levels
 
@@ -461,7 +461,7 @@ $\sum_{k=1}^{\lfloor x \rfloor} \pi_k \sim (A/r)\, x^r$ as the real number $x$ t
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.heightProfile_identification` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-profile-identification).
+Stated but not proved: `MetaMathlibExt.heightProfile_identification` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#height-profile-identification).
 
 ## Cumulative profile
 
@@ -473,7 +473,7 @@ $\Pi_0 = 0$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 7.2 (canonical sequential realization).
 
-Formalized by `MetaMathlibExt.profilePartialSum`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#profile-partial-sum).
+Formalized by `MetaMathlibExt.profilePartialSum`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#profile-partial-sum).
 
 ## Recursion for the cumulative profile
 
@@ -485,7 +485,7 @@ $\Pi_{k+1} = \Pi_k + \pi_{k+1}$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 7.2 (canonical sequential realization).
 
-Formalized by `MetaMathlibExt.profilePartialSum_succ`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#profile-partial-sum-succ).
+Formalized by `MetaMathlibExt.profilePartialSum_succ`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#profile-partial-sum-succ).
 
 ## Block index of a profile
 
@@ -498,7 +498,7 @@ $i \ge 1$ and $\Pi$ is unbounded, $k(i)$ is the unique $k$ with $\Pi_{k-1} < i \
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 7.2 (canonical sequential realization).
 
-Formalized by `MetaMathlibExt.seqHeightIndex`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index).
+Formalized by `MetaMathlibExt.seqHeightIndex`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index).
 
 ## Block index of the constant profile
 
@@ -510,7 +510,7 @@ $i \le \Pi_k$, equals $i$ for every natural number $i$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Section 7.2 (canonical sequential realization).
 
-Formalized by `MetaMathlibExt.seqHeightIndex_const_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index-const-one).
+Formalized by `MetaMathlibExt.seqHeightIndex_const_one`, a theorem declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index-const-one).
 
 ## Canonical sequential realization of a profile
 
@@ -526,7 +526,7 @@ thus $H_{\mathrm{seq}}$ is completely additive with $H_{\mathrm{seq}}(p_i) = k(i
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Definition 2 (canonical sequential realization, Section 7.2).
 
-Formalized by `MetaMathlibExt.canonicalSeqHeight`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-height).
+Formalized by `MetaMathlibExt.canonicalSeqHeight`, a definition declared in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-height).
 
 ## Inverting a polynomial profile
 
@@ -544,7 +544,7 @@ here, since $\Pi$ is nondecreasing, which suffices.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.seqHeightIndex_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index-is-equivalent).
+Stated but not proved: `MetaMathlibExt.seqHeightIndex_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#seq-height-index-is-equivalent).
 
 ## A logarithmic-integral sum
 
@@ -558,7 +558,7 @@ as $m \to \infty$ through the natural numbers.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.sum_rpow_div_log_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-rpow-div-log-is-equivalent).
+Stated but not proved: `MetaMathlibExt.sum_rpow_div_log_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#sum-rpow-div-log-is-equivalent).
 
 ## Prime-harmonic growth of the canonical sequential realization
 
@@ -576,7 +576,7 @@ $f = O(g)$ and $g = O(f)$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.canonicalSeq_primeHarmonicSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-prime-harmonic-sum).
+Stated but not proved: `MetaMathlibExt.canonicalSeq_primeHarmonicSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-prime-harmonic-sum).
 
 ## Average order of the canonical sequential realization
 
@@ -594,7 +594,7 @@ $f = O(g)$ and $g = O(f)$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 2, statement read from the journal PDF (the corpus record carries the prose of Section 7.6 that follows it).
 
-Stated but not proved: `MetaMathlibExt.canonicalSeq_averageOrder` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-average-order).
+Stated but not proved: `MetaMathlibExt.canonicalSeq_averageOrder` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-average-order).
 
 ## Growth for the ordinary partition profile
 
@@ -610,7 +610,7 @@ $f = \Theta(g)$ means $f = O(g)$ and $g = O(f)$.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.canonicalSeq_partitionProfile_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-partition-profile-growth).
+Stated but not proved: `MetaMathlibExt.canonicalSeq_partitionProfile_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-partition-profile-growth).
 
 ## Growth for the plane partition profile
 
@@ -631,7 +631,7 @@ the general growth laws.
 
 - Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.canonicalSeq_planePartitionProfile_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-plane-partition-profile-gr).
+Stated but not proved: `MetaMathlibExt.canonicalSeq_planePartitionProfile_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompletelyAdditiveHeightWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html#canonical-seq-plane-partition-profile-gr).
 
 ## Depends on
 
@@ -640,4 +640,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Completely additive height functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/completely-additive-height-functions)

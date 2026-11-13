@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 641 to Erdős Problem 703
+# Erdős Problem 640 to Erdős Problem 702
 
+- [Erdős Problem 640](../../../../../erdos-problems/600-699/part-02/erdos-problem-640.md)
 - [Erdős Problem 641](../../../../../erdos-problems/600-699/part-02/erdos-problem-641.md)
 - [Erdős Problem 642](../../../../../erdos-problems/600-699/part-02/erdos-problem-642.md)
 - [Erdős Problem 643](../../../../../erdos-problems/600-699/part-02/erdos-problem-643.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Erdős Problem 698](../../../../../erdos-problems/600-699/part-04/erdos-problem-698.md)
 - [Erdős Problem 701](../../../../../erdos-problems/700-799/part-01/erdos-problem-701.md)
 - [Erdős Problem 702](../../../../../erdos-problems/700-799/part-01/erdos-problem-702.md)
-- [Erdős Problem 703](../../../../../erdos-problems/700-799/part-01/erdos-problem-703.md)

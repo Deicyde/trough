@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.9 Thickenings
 
-Section 76.9 of the Stacks Project, [Tag 05ZJ](https://stacks.math.columbia.edu/tag/05ZJ). 13 tags here are carried by 60 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.9 of the Stacks Project, [Tag 05ZJ](https://stacks.math.columbia.edu/tag/05ZJ). 13 tags here are carried by 58 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05ZJ, the section
 
 [Tag 05ZJ](https://stacks.math.columbia.edu/tag/05ZJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_sieve_isNilpotent_of_mem_definingIdealAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean#L72). The attribute's comment: “any local section of the kernel I = Ker(i\_X^#) of a thickening i\_X : X -> X' is locally nilpotent (the paragraph after Lemma 05ZP), on the small etale site of X'”.
+**`AlgebraicGeometry.Space.exists_sieve_isNilpotent_of_mem_definingIdealAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean#L72). The attribute's comment: “any local section of the kernel I = Ker(i\_X^#) of a thickening i\_X : X -> X' is locally nilpotent (the paragraph after Lemma 05ZP), on the small etale site of X'”.
 
 > **Section 05ZJ: the ideal of a thickening is locally nilpotent.** Let `G ⊂ X` be a
 > thickening of algebraic spaces over `S`, with ideal sheaf `𝓘 = Ker(i^♯) ⊆ 𝒪_X` on the small
@@ -36,7 +36,7 @@ theorem exists_sieve_isNilpotent_of_mem_definingIdealAt (hG : IsThickening B S h
         IsNilpotent (((structureRingSheaf B S hS X).obj.map m.op).hom s)
 ```
 
-**`AlgebraicGeometry.Space.thickeningHom_structureSharp_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean#L95). The attribute's comment: “the paragraph on a morphism (f, f') : (X ⊂ X') -> (Y ⊂ Y') of thickenings over B: the vertical arrows of the square of etale topoi are equivalences, and (f')^# : f^\{-1}O\_\{Y'} -> O\_\{X'} is a map of O\_B-algebras fitting into the commutative square with f^#, i\_X^# and i\_Y^#, read as 2-isomorphisms of morphisms of small etale ringed topoi (the form of the hypotheses of Lemma 05ZN); (f')\_small is moreover locally ringed”.
+**`AlgebraicGeometry.Space.thickeningHom_structureSharp_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean#L95). The attribute's comment: “the paragraph on a morphism (f, f') : (X ⊂ X') -> (Y ⊂ Y') of thickenings over B: the vertical arrows of the square of etale topoi are equivalences, and (f')^# : f^\{-1}O\_\{Y'} -> O\_\{X'} is a map of O\_B-algebras fitting into the commutative square with f^#, i\_X^# and i\_Y^#, read as 2-isomorphisms of morphisms of small etale ringed topoi (the form of the hypotheses of Lemma 05ZN); (f')\_small is moreover locally ringed”.
 
 > **Section 05ZJ: the structure map of a morphism of thickenings over a base.** Let
 > `G ⊂ X'` and `H ⊂ Y'` be thickenings of algebraic spaces over `T` (structure morphisms `pX'`,
@@ -76,7 +76,7 @@ theorem thickeningHom_structureSharp_compatible (hG : IsThickening B S hS X' G)
         (smallEtaleRingedToposHom B S hS pX'))
 ```
 
-**`AlgebraicGeometry.Space.exists_idealPow_firstOrderThickening_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OrderFiltration.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OrderFiltration.lean#L201). The attribute's comment: “the paragraph after Lemma 05ZP: for an nth order thickening X ⊂ X' with ideal I, the filtration 0 = I^\{n+1} ⊂ I^n ⊂ ... ⊂ I ⊂ O\_\{X'} gives closed subspaces X = X\_0 ⊂ X\_1 ⊂ ... ⊂ X\_n = X', X\_k cut out by I^\{k+1}, with each X\_k ⊂ X\_\{k+1} a first order thickening (the source's X\_\{n+1} = X' is a misprint for X\_n = X')”.
+**`AlgebraicGeometry.Space.exists_idealPow_firstOrderThickening_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OrderFiltration.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OrderFiltration.lean#L201). The attribute's comment: “the paragraph after Lemma 05ZP: for an nth order thickening X ⊂ X' with ideal I, the filtration 0 = I^\{n+1} ⊂ I^n ⊂ ... ⊂ I ⊂ O\_\{X'} gives closed subspaces X = X\_0 ⊂ X\_1 ⊂ ... ⊂ X\_n = X', X\_k cut out by I^\{k+1}, with each X\_k ⊂ X\_\{k+1} a first order thickening (the source's X\_\{n+1} = X' is a misprint for X\_n = X')”.
 
 > **Section 05ZJ: an `n`th order thickening is filtered by first order thickenings.** Let
 > `X ⊂ X'` be an `n`th order thickening of algebraic spaces over `S`, with quasi-coherent ideal
@@ -99,14 +99,14 @@ theorem exists_idealPow_firstOrderThickening_filtration {n : ℕ} {G : Subfuncto
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isLocallySurjective_structureSharpInverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionStructureSharpInverseImage.lean#L145), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean#L96) (StacksFrontier): “the sentence after Equation 05ZM: the closed immersion i\_X : X -> X' corresponds to the surjective map i\_X^# : O\_\{X'} -> O\_X, read on the small etale site of X as i\_X^\{-1}O\_\{X'} -> O\_X (stated for every closed immersion)”.
-- [`AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean#L127), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean#L121) (StacksFrontier): “the sentence opening 'The fundamental equivalence': if X ⊂ X' is a thickening, then X -> X' is integral and universally bijective (universally injective and surjective)”.
+- [`AlgebraicGeometry.Space.isLocallySurjective_structureSharpInverseImage`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionStructureSharpInverseImage.lean#L145), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LocallyNilpotentIdeal.lean#L96) (StacksFrontier): “the sentence after Equation 05ZM: the closed immersion i\_X : X -> X' corresponds to the surjective map i\_X^# : O\_\{X'} -> O\_X, read on the small etale site of X as i\_X^\{-1}O\_\{X'} -> O\_X (stated for every closed immersion)”.
+- [`AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismStructureSquare.lean#L121) (StacksFrontier): “the sentence opening 'The fundamental equivalence': if X ⊂ X' is a thickening, then X -> X' is integral and universally bijective (universally injective and surjective)”.
 
 ## Tag 05ZK, a definition
 
 [Tag 05ZK](https://stacks.math.columbia.edu/tag/05ZK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L95). The attribute's comment: “part (1): thickening”.
+**`AlgebraicGeometry.Space.IsThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L95). The attribute's comment: “part (1): thickening”.
 
 > **Stacks 05ZK, part (1).** A closed subspace `G` of an algebraic space `X` over `S` is a
 > *thickening* of `X` when the two have the same associated topological space, i.e. when the
@@ -117,7 +117,7 @@ abbrev IsThickening (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
     (X : AlgebraicSpaces B S hS) (G : Subfunctor X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsMorphismOfThickenings`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L126). The attribute's comment: “part (5): morphism of thickenings”.
+**`AlgebraicGeometry.Space.IsMorphismOfThickenings`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L126). The attribute's comment: “part (5): morphism of thickenings”.
 
 > **Stacks 05ZK, part (5).** Given two thickenings `G ⊂ X'` and `H ⊂ Y'` of algebraic spaces
 > over `S`, a *morphism of thickenings* is a morphism `f' : X' ⟶ Y'` with `f'(G) ⊂ H`, i.e. one
@@ -132,7 +132,7 @@ abbrev IsMorphismOfThickenings {X' Y' : AlgebraicSpaces B S hS} (G : Subfunctor 
     (H : Subfunctor Y'.1) (f' : X' ⟶ Y') : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsThickeningOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L190). The attribute's comment: “part (6): thickening over a base”.
+**`AlgebraicGeometry.Space.IsThickeningOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L190). The attribute's comment: “part (6): thickening over a base”.
 
 > **Stacks 05ZK, part (6).** A *thickening over* an algebraic space `Z`: a thickening
 > `G ⊂ X'` of algebraic spaces over `S` together with structure morphisms `a' : X' ⟶ Z` of the
@@ -144,7 +144,7 @@ abbrev IsThickeningOver (Z : AlgebraicSpaces B S hS) {X' : AlgebraicSpaces B S h
     (G : Subfunctor X'.1) (a : G.toFunctor ⟶ Z.1) (a' : X' ⟶ Z) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsMorphismOfThickeningsOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L198). The attribute's comment: “part (6): morphism of thickenings over a base”.
+**`AlgebraicGeometry.Space.IsMorphismOfThickeningsOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L198). The attribute's comment: “part (6): morphism of thickenings over a base”.
 
 > **Stacks 05ZK, part (6).** A *morphism of thickenings over* an algebraic space `Z`: two
 > thickenings over `Z` and a morphism of thickenings between them which is a morphism over
@@ -157,7 +157,7 @@ abbrev IsMorphismOfThickeningsOver (Z : AlgebraicSpaces B S hS)
     (f' : X' ⟶ Y') : Prop
 ```
 
-**`AlgebraicGeometry.Space.isThickening_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean#L71). The attribute's comment: “part (1): an algebraic space is a thickening of itself”.
+**`AlgebraicGeometry.Space.isThickening_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean#L71). The attribute's comment: “part (1): an algebraic space is a thickening of itself”.
 
 > An algebraic space is a thickening of itself: its top closed subspace.
 
@@ -165,7 +165,7 @@ abbrev IsMorphismOfThickeningsOver (Z : AlgebraicSpaces B S hS)
 theorem isThickening_top (Y : AlgebraicSpaces B S hS) : IsThickening B S hS Y ⊤
 ```
 
-**`AlgebraicGeometry.Space.IsNthOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L127). The attribute's comment: “part (4): nth-order thickening”.
+**`AlgebraicGeometry.Space.IsNthOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L127). The attribute's comment: “part (4): nth-order thickening”.
 
 > **Stacks 05ZK, part (4).** A closed subspace `G` of an algebraic space `X` over `S` is an
 > *`n`th-order thickening* when the `(n+1)`st power of its defining ideal vanishes on every
@@ -175,7 +175,7 @@ theorem isThickening_top (Y : AlgebraicSpaces B S hS) : IsThickening B S hS Y �
 abbrev IsNthOrderThickening (n : ℕ) (X : AlgebraicSpaces B S hS) (G : Subfunctor X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFirstOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L135). The attribute's comment: “part (2): first-order thickening”.
+**`AlgebraicGeometry.Space.IsFirstOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L135). The attribute's comment: “part (2): first-order thickening”.
 
 > **Stacks 05ZK, part (2).** A closed subspace `G` of an algebraic space `X` over `S` is a
 > *first-order thickening* when its defining ideal has square zero on every object of the small
@@ -185,7 +185,7 @@ abbrev IsNthOrderThickening (n : ℕ) (X : AlgebraicSpaces B S hS) (G : Subfunct
 abbrev IsFirstOrderThickening (X : AlgebraicSpaces B S hS) (G : Subfunctor X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFiniteOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L142). The attribute's comment: “part (3): finite-order thickening”.
+**`AlgebraicGeometry.Space.IsFiniteOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Order.lean#L142). The attribute's comment: “part (3): finite-order thickening”.
 
 > **Stacks 05ZK, part (3).** A closed subspace `G` of an algebraic space `X` over `S` is a
 > *finite-order thickening* when its defining ideal is nilpotent, with one exponent valid on
@@ -197,13 +197,13 @@ abbrev IsFiniteOrderThickening (X : AlgebraicSpaces B S hS) (G : Subfunctor X.1)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Arrow.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L100) (StacksFrontier): “parts (5) and (6): morphisms of thickenings, also over a base”.
+- [`CategoryTheory.Arrow.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings.lean#L100) (StacksFrontier): “parts (5) and (6): morphisms of thickenings, also over a base”.
 
 ## Tag 05ZL, an equation
 
 [Tag 05ZL](https://stacks.math.columbia.edu/tag/05ZL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean#L127). The attribute's comment: “the inclusion of a thickening is integral, universally injective and surjective”.
+**`AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleSite.lean#L128). The attribute's comment: “the inclusion of a thickening is integral, universally injective and surjective”.
 
 > **Stacks 05ZL.** The inclusion of a thickening of an algebraic space over `S` is integral,
 > universally injective and surjective.
@@ -214,7 +214,7 @@ theorem isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening
     IsIntegralHom B S hS G.ι ∧ UniversallyInjective B S hS G.ι ∧ IsSurjective B S hS G.ι
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleAbelianSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleToposAbelian.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleToposAbelian.lean#L101). The attribute's comment: “the identification of the two spaces-etale topoi, at sheaves of abelian groups”.
+**`AlgebraicGeometry.Space.spacesEtaleAbelianSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleToposAbelian.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleToposAbelian.lean#L102). The attribute's comment: “the identification of the two spaces-etale topoi, at sheaves of abelian groups”.
 
 > **Equation [Stacks Project, Tag 05ZL] for sheaves of abelian groups.**  For a thickening
 > `G ⊂ X` of algebraic spaces over `S`, the sheaves of abelian groups on the spaces-étale site of
@@ -232,7 +232,7 @@ noncomputable def spacesEtaleAbelianSheafEquiv_of_isThickening (hG : IsThickenin
         AddCommGrpCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.Space.mem_spacesEtaleTopology_iff_functorPushforward_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleCovering.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleCovering.lean#L121). The attribute's comment: “identification of the covering sieves of the two spaces-étale sites”.
+**`AlgebraicGeometry.Space.mem_spacesEtaleTopology_iff_functorPushforward_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleCovering.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleCovering.lean#L121). The attribute's comment: “identification of the covering sieves of the two spaces-étale sites”.
 
 > **Stacks 05ZL.** Base change along the inclusion of a thickening `G ⊂ X` identifies the
 > covering sieves of the spaces-étale site of `X` with those of the spaces-étale site of `G`: a
@@ -250,7 +250,7 @@ theorem mem_spacesEtaleTopology_iff_functorPushforward_of_isThickening
           ((spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.obj U)
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L152). The attribute's comment: “the identification of the two spaces-étale sites of Stacks 03G0, as an equivalence of categories, for a thickening of arbitrary order”.
+**`AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L152). The attribute's comment: “the identification of the two spaces-étale sites of Stacks 03G0, as an equivalence of categories, for a thickening of arbitrary order”.
 
 > Let `G ⊂ X` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change
 > along the inclusion, `V ↦ G ×_X V`, is an equivalence of categories from the spaces-étale site of
@@ -261,7 +261,7 @@ noncomputable def spacesEtaleEquivalenceOfIsThickening (hG : IsThickening B S hS
     SpacesEtale B S hS X ≌ SpacesEtale B S hS (IsThickening.space B S hS hG)
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isClosedImmersion_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L576). The attribute's comment: “the identification of the two spaces-étale sites: base change along the inclusion of a thickening of arbitrary order is an equivalence of categories”.
+**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isClosedImmersion_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L577). The attribute's comment: “the identification of the two spaces-étale sites: base change along the inclusion of a thickening of arbitrary order is an equivalence of categories”.
 
 > Base change `V ↦ X ×_Y V` is an equivalence from the spaces-étale site of `Y` to that of `X`,
 > for a surjective closed immersion `f`.
@@ -276,7 +276,7 @@ theorem isEquivalence_spacesBaseChange_of_isClosedImmersion_of_isSurjective (f :
 
 [Tag 05ZM](https://stacks.math.columbia.edu/tag/05ZM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.spacesEtaleRingSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L227). The attribute's comment: “the equivalence of the two spaces-étale topoi at sheaves of commutative rings, which is what carries the structure sheaf of the ambient space to the right hand side of the equation; neither pair is claimed to be a locally ringed topos”.
+**`AlgebraicGeometry.Space.spacesEtaleRingSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L228). The attribute's comment: “the equivalence of the two spaces-étale topoi at sheaves of commutative rings, which is what carries the structure sheaf of the ambient space to the right hand side of the equation; neither pair is claimed to be a locally ringed topos”.
 
 > **The fundamental equivalence of a thickening, at sheaves of rings.**  For a thickening
 > `G ⊂ X` of algebraic spaces the sheaves of commutative rings on the spaces-étale site of `X`
@@ -289,7 +289,7 @@ def spacesEtaleRingSheafEquiv_of_isThickening (hG : IsThickening B S hS X G) :
         CommRingCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.Space.thickeningStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L246). The attribute's comment: “the sheaf of rings O\_\{X'} of the right hand side of the equation, the structure sheaf of the ambient space read on the spaces-étale site of the thickening”.
+**`AlgebraicGeometry.Space.thickeningStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L247). The attribute's comment: “the sheaf of rings O\_\{X'} of the right hand side of the equation, the structure sheaf of the ambient space read on the spaces-étale site of the thickening”.
 
 > **The structure sheaf of the ambient space, on the site of the thickening.**  For a
 > thickening `G ⊂ X` this is `𝒪_X` carried through the equivalence of the two spaces-étale
@@ -300,7 +300,7 @@ def thickeningStructureSheaf (hG : IsThickening B S hS X G) :
     Sheaf (SpacesEtale.topology B S hS (IsThickening.space B S hS hG)) CommRingCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.Space.thickeningInverseImageRingedTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L323). The attribute's comment: “the right hand pair of the equation, in the presentation of scheme charts and with the structure sheaf of the ambient space read on the smaller site as its inverse image”.
+**`AlgebraicGeometry.Space.thickeningInverseImageRingedTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L324). The attribute's comment: “the right hand pair of the equation, in the presentation of scheme charts and with the structure sheaf of the ambient space read on the smaller site as its inverse image”.
 
 > **The right hand side `(Sh(G_étale), 𝒪_X)` of the fundamental equivalence of a thickening.**
 > The small étale site of scheme charts of the closed subspace `G` of a thickening `G ⊂ X`,
@@ -317,7 +317,7 @@ abbrev thickeningInverseImageRingedTopos (hG : IsThickening B S hS X G) :
     RingedTopos.{u, u + 1, u}
 ```
 
-**`AlgebraicGeometry.Space.thickeningFundamentalHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L345). The attribute's comment: “the canonical morphism between the two pairs of the equation, in the presentation of scheme charts: its geometric morphism is the direct image along the inclusion, and its structure map is the unit of the adjunction at the ambient structure sheaf”.
+**`AlgebraicGeometry.Space.thickeningFundamentalHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L346). The attribute's comment: “the canonical morphism between the two pairs of the equation, in the presentation of scheme charts: its geometric morphism is the direct image along the inclusion, and its structure map is the unit of the adjunction at the ambient structure sheaf”.
 
 > **The canonical morphism of the fundamental equivalence of a thickening.**  Its underlying
 > geometric morphism is the direct image along the inclusion `i : G ⟶ X`, and its structure map is
@@ -338,7 +338,7 @@ def thickeningFundamentalHom (hG : IsThickening B S hS X G) :
       (smallEtaleRingedTopos B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.isIso_thickeningFundamentalHom_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L365). The attribute's comment: “the structure-sheaf half: the structure map of the canonical morphism between the two pairs is an isomorphism, so both pairs carry the structure sheaf of the ambient space”.
+**`AlgebraicGeometry.Space.isIso_thickeningFundamentalHom_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L366). The attribute's comment: “the structure-sheaf half: the structure map of the canonical morphism between the two pairs is an isomorphism, so both pairs carry the structure sheaf of the ambient space”.
 
 > **The structure-sheaf half of Stacks 05ZM.**  The structure map of the canonical morphism —
 > the unit `𝒪_X ⟶ i_*i^{-1}𝒪_X` at the structure sheaf of the ambient space of a thickening — is an
@@ -356,7 +356,7 @@ theorem isIso_thickeningFundamentalHom_fSharp (hG : IsThickening B S hS X G) :
     IsIso (thickeningFundamentalHom B S hS hG).fSharp
 ```
 
-**`AlgebraicGeometry.Space.thickeningFundamentalHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L404). The attribute's comment: “that the canonical morphism between the two pairs is a morphism of LOCALLY ringed topoi, which is the clause the equation adds to the equivalence of the two topoi; that either pair is a locally ringed SITE is not claimed”.
+**`AlgebraicGeometry.Space.thickeningFundamentalHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L405). The attribute's comment: “that the canonical morphism between the two pairs is a morphism of LOCALLY ringed topoi, which is the clause the equation adds to the equivalence of the two topoi; that either pair is a locally ringed SITE is not claimed”.
 
 > **The canonical morphism of the fundamental equivalence is a morphism of locally ringed
 > topoi.**  This is the clause that makes the equation of Stacks 05ZM an equivalence of *locally*
@@ -378,7 +378,7 @@ theorem thickeningFundamentalHom_isLocallyRinged (hG : IsThickening B S hS X G) 
     (thickeningFundamentalHom B S hS hG).IsLocallyRinged
 ```
 
-**`AlgebraicGeometry.Space.thickeningFundamentalHomInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L420). The attribute's comment: “that the canonical morphism between the two pairs is invertible as a morphism of ringed topoi, which is the word equivalence in the equation”.
+**`AlgebraicGeometry.Space.thickeningFundamentalHomInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L421). The attribute's comment: “that the canonical morphism between the two pairs is invertible as a morphism of ringed topoi, which is the word equivalence in the equation”.
 
 > **The inverse of the canonical morphism of the fundamental equivalence of a thickening.**  The
 > geometric morphism is `i^{-1}` read as a direct image, and the structure map is the inverse of the
@@ -395,7 +395,7 @@ def thickeningFundamentalHomInverse (hG : IsThickening B S hS X G) :
       (thickeningInverseImageRingedTopos B S hS hG)
 ```
 
-**`AlgebraicGeometry.Space.thickeningFundamentalHomInverse_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L439). The attribute's comment: “that the inverse of the canonical morphism is again a morphism of LOCALLY ringed topoi, so that the equation is an equivalence of locally ringed topoi in both directions”.
+**`AlgebraicGeometry.Space.thickeningFundamentalHomInverse_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleRingedTopos.lean#L440). The attribute's comment: “that the inverse of the canonical morphism is again a morphism of LOCALLY ringed topoi, so that the equation is an equivalence of locally ringed topoi in both directions”.
 
 > **The inverse of the canonical morphism is again a morphism of locally ringed topoi.**
 > Together with `AlgebraicGeometry.Space.thickeningFundamentalHom_isLocallyRinged` this is the
@@ -411,7 +411,7 @@ theorem thickeningFundamentalHomInverse_isLocallyRinged (hG : IsThickening B S h
     (thickeningFundamentalHomInverse B S hS hG).IsLocallyRinged
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleTopos.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleTopos.lean#L303). The attribute's comment: “equivalence of the spaces-étale sheaf topoi”.
+**`AlgebraicGeometry.Space.spacesEtaleSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleTopos.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/EtaleTopos.lean#L303). The attribute's comment: “equivalence of the spaces-étale sheaf topoi”.
 
 > **The equivalence of the spaces-étale sheaf topoi of a thickening.** For a thickening
 > `G ⊂ X` of algebraic spaces over `S`, the sheaves of sets on the spaces-étale site of `X` and
@@ -429,7 +429,7 @@ noncomputable def spacesEtaleSheafEquiv_of_isThickening (hG : IsThickening B S h
       Sheaf (SpacesEtale.topology B S hS (IsThickening.space B S hS hG)) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.fundamentalEquivalence_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FundamentalEquivalence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FundamentalEquivalence.lean#L221).
+**`AlgebraicGeometry.Space.fundamentalEquivalence_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FundamentalEquivalence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FundamentalEquivalence.lean#L221).
 
 > **Stacks 05ZM, equation 76.9.1.2.** Let `G ⊂ X` be a thickening of algebraic spaces over a
 > scheme `S`; in the notation of the source `G` is `X` and `X` is `X'`. Then
@@ -453,7 +453,7 @@ theorem fundamentalEquivalence_of_isThickening (hG : IsThickening B S hS X G) :
         (spacesEtaleRingedToposHom_of_isThickening B S hS hG)
 ```
 
-**`AlgebraicGeometry.Space.structureRingSheafDirectImageIsoOfRestrictEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean#L325). The attribute's comment: “the structure sheaf transported across the equivalence of étale topoi of a thickening: the direct image of the structure sheaf of the ambient space depends only on the restriction of the morphism to the closed subspace”.
+**`AlgebraicGeometry.Space.structureRingSheafDirectImageIsoOfRestrictEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean#L325). The attribute's comment: “the structure sheaf transported across the equivalence of étale topoi of a thickening: the direct image of the structure sheaf of the ambient space depends only on the restriction of the morphism to the closed subspace”.
 
 > **The structure-sheaf half of [Stacks Project, Tag 05ZM].**  Let `G ⊂ X'` be a thickening of
 > algebraic spaces over `S`, with inclusion `i : X ⟶ X'`, and let `a', b' : X' ⟶ Y'` be two
@@ -475,7 +475,7 @@ noncomputable def structureRingSheafDirectImageIsoOfRestrictEq :
     structureRingSheafDirectImage B S hS a' ≅ structureRingSheafDirectImage B S hS b'
 ```
 
-**`AlgebraicGeometry.Space.pushforwardCommRingFunctorIsoOfRestrictEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean#L337). The attribute's comment: “the structure sheaf transported across the equivalence of étale topoi of a thickening, for sheaves of commutative rings: the direct image functor of sheaves of commutative rings depends only on the restriction of the morphism to the closed subspace”.
+**`AlgebraicGeometry.Space.pushforwardCommRingFunctorIsoOfRestrictEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafEquivalence.lean#L337). The attribute's comment: “the structure sheaf transported across the equivalence of étale topoi of a thickening, for sheaves of commutative rings: the direct image functor of sheaves of commutative rings depends only on the restriction of the morphism to the closed subspace”.
 
 > **The structure-sheaf half of [Stacks Project, Tag 05ZM] for sheaves of commutative
 > rings.**  This is the spelling in which the structure map `fSharp` of
@@ -489,7 +489,7 @@ noncomputable def pushforwardCommRingFunctorIsoOfRestrictEq :
         (smallToposMorphismTypeU B S hS b')
 ```
 
-**`AlgebraicGeometry.Space.isIso_ringUnit_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean#L187). The attribute's comment: “the structure-sheaf half, at the small étale sites: every sheaf of rings on the site of the ambient space — its structure sheaf in particular — is canonically the direct image along the inclusion of a sheaf of rings on the site of the thickening, which is the identification under which the two topoi carry one and the same structure sheaf”.
+**`AlgebraicGeometry.Space.isIso_ringUnit_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean#L187). The attribute's comment: “the structure-sheaf half, at the small étale sites: every sheaf of rings on the site of the ambient space — its structure sheaf in particular — is canonically the direct image along the inclusion of a sheaf of rings on the site of the thickening, which is the identification under which the two topoi carry one and the same structure sheaf”.
 
 > **The unit `O ⟶ i_*i^{-1}O` of `i^{-1} ⊣ i_*` at a sheaf of rings is an isomorphism for the
 > inclusion `i : Z ⟶ X` of a thickening.**  The direct image of sheaves of sets along `i` is fully
@@ -507,7 +507,7 @@ theorem isIso_ringUnit_of_isThickening (hZ : IsThickening B S hS X Z.1)
     IsIso (ringUnit (smallToposMorphismTypeU B S hS (subspaceInclusion B S hS X Z)) O)
 ```
 
-**`AlgebraicGeometry.Space.isIso_commRingUnit_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean#L226). The attribute's comment: “the structure-sheaf half at the coefficient category of a morphism of ringed topoi: the direct image along the inclusion identifies the sheaves of commutative rings on the site of the thickening with those on the site of the ambient space, carrying the inverse image of the structure sheaf of the ambient space to that structure sheaf”.
+**`AlgebraicGeometry.Space.isIso_commRingUnit_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafRingUnit.lean#L226). The attribute's comment: “the structure-sheaf half at the coefficient category of a morphism of ringed topoi: the direct image along the inclusion identifies the sheaves of commutative rings on the site of the thickening with those on the site of the ambient space, carrying the inverse image of the structure sheaf of the ambient space to that structure sheaf”.
 
 > **The unit of the adjunction of [Stacks Project, Tag 00YV] at a sheaf of *commutative* rings
 > is an isomorphism for the inclusion `i : Z ⟶ X` of a thickening.**
@@ -532,7 +532,7 @@ theorem isIso_commRingUnit_of_isThickening (hZ : IsThickening B S hS X Z.1)
       (smallToposMorphismTypeU B S hS (subspaceInclusion B S hS X Z))).unit.app O)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleCommRingSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafTransport.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafTransport.lean#L106). The attribute's comment: “equivalence of the small étale sheaves of commutative rings”.
+**`AlgebraicGeometry.Space.smallEtaleCommRingSheafEquiv_of_isThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafTransport.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/StructureSheafTransport.lean#L106). The attribute's comment: “equivalence of the small étale sheaves of commutative rings”.
 
 > **Stacks 05ZM for sheaves of commutative rings.** For a thickening `G ⊂ X` of algebraic
 > spaces over `S`, the sheaves of commutative rings on the small étale site of `X` and on the small
@@ -553,7 +553,7 @@ noncomputable def smallEtaleCommRingSheafEquiv_of_isThickening (hG : IsThickenin
 
 [Tag 05ZN](https://stacks.math.columbia.edu/tag/05ZN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_inducesCommonSmallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L270). The attribute's comment: “the uniqueness clause of the tag, unconditionally and in the generality in which it is true: at most one morphism `X' ⟶ Y'` of the ambient algebraic spaces over the base is 2-isomorphic to a given morphism of their small étale ringed topoi, so there is at most one morphism of thickenings `(f, f')` with `alpha = (f')^sharp`. This is the faithfulness half of 04KL over a base and it is PROVED, by 04M6; no thickening hypothesis and no 2-compatibility with the base is used”.
+**`AlgebraicGeometry.Space.eq_of_inducesCommonSmallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L270). The attribute's comment: “the uniqueness clause of the tag, unconditionally and in the generality in which it is true: at most one morphism `X' ⟶ Y'` of the ambient algebraic spaces over the base is 2-isomorphic to a given morphism of their small étale ringed topoi, so there is at most one morphism of thickenings `(f, f')` with `alpha = (f')^sharp`. This is the faithfulness half of 04KL over a base and it is PROVED, by 04M6; no thickening hypothesis and no 2-compatibility with the base is used”.
 
 > **A morphism of algebraic spaces is determined by the morphism of small étale ringed topoi
 > it induces.**  At most one morphism `P ⟶ Q` over `S` is 2-isomorphic to a given morphism `ψ` of
@@ -581,7 +581,7 @@ theorem eq_of_inducesCommonSmallEtaleRingedToposHom {P Q : AlgebraicSpaces B S h
     k₁ = k₂
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_thickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L538). The attribute's comment: “over a base SCHEME whose canonical morphism to the spectrum of its global functions is a monomorphism -- an affine base, a quasi-affine base, any base which embeds in an affine scheme: that the recovered morphism is a morphism of thickenings over the base and that the pair is unique. The source states the tag over an arbitrary base and ends `we omit the verification that f-prime is a morphism over B`; the existence of the morphism recovering a locally ringed morphism of the small etale ringed topoi over the base -- 04KL over a base -- is what that verification amounts to, and it is PROVED here for such a base scheme, by `isRecoveredFromSmallEtale_of_mono_toSpecGamma`. That hypothesis is the exact reach of the route, being equivalent to the assertion that a morphism of schemes into the base is determined by its ring map on global functions, which is all the chart construction of 04KL produces. So this clause is unconditional for those base schemes only, and is NOT the tag in the generality the source states it in. The locally ringed condition on (f\_spaces,etale, alpha) is derived from the commuting square, not assumed, and the uniqueness of the pair and the two equations are derived from the faithfulness half of 04KL over a base, which is PROVED for every base -- see `eq_of_inducesCommonSmallEtaleRingedToposHom`, from 04M6”.
+**`AlgebraicGeometry.Space.existsUnique_thickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L538). The attribute's comment: “over a base SCHEME whose canonical morphism to the spectrum of its global functions is a monomorphism -- an affine base, a quasi-affine base, any base which embeds in an affine scheme: that the recovered morphism is a morphism of thickenings over the base and that the pair is unique. The source states the tag over an arbitrary base and ends `we omit the verification that f-prime is a morphism over B`; the existence of the morphism recovering a locally ringed morphism of the small etale ringed topoi over the base -- 04KL over a base -- is what that verification amounts to, and it is PROVED here for such a base scheme, by `isRecoveredFromSmallEtale_of_mono_toSpecGamma`. That hypothesis is the exact reach of the route, being equivalent to the assertion that a morphism of schemes into the base is determined by its ring map on global functions, which is all the chart construction of 04KL produces. So this clause is unconditional for those base schemes only, and is NOT the tag in the generality the source states it in. The locally ringed condition on (f\_spaces,etale, alpha) is derived from the commuting square, not assumed, and the uniqueness of the pair and the two equations are derived from the faithfulness half of 04KL over a base, which is PROVED for every base -- see `eq_of_inducesCommonSmallEtaleRingedToposHom`, from 04M6”.
 
 > **Stacks 05ZN over a base scheme determined by its global functions.**  Let
 > `G ⊂ X'` and `H ⊂ Y'` be thickenings of algebraic spaces over `T`, let `f : X ⟶ Y` be a
@@ -617,7 +617,7 @@ theorem existsUnique_thickeningHom (hSmono : Mono S.toSpecΓ)
       f' ≫ pY' = pX'
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_thickeningHom_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L574). The attribute's comment: “that the recovered morphism is a morphism of thickenings over the base and that the pair is unique, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the locally ringed condition on (f\_spaces,etale, alpha) taken as an argument, since the latter needs the structure-sheaf half of 05ZM”.
+**`AlgebraicGeometry.Space.existsUnique_thickeningHom_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L574). The attribute's comment: “that the recovered morphism is a morphism of thickenings over the base and that the pair is unique, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the locally ringed condition on (f\_spaces,etale, alpha) taken as an argument, since the latter needs the structure-sheaf half of 05ZM”.
 
 > **Stacks 05ZN with the recovery of morphisms over the base and the local ringedness of
 > `Φ` taken as arguments.**
@@ -649,7 +649,7 @@ theorem existsUnique_thickeningHom_of_isLocallyRinged (hKL : IsRecoveredFromSmal
       f' ≫ pY' = pX'
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_thickeningHom_of_ringedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L616). The attribute's comment: “the whole lemma, over an arbitrary base scheme: the morphism (f\_spaces,etale, alpha) of the small etale ringed topoi of the ambient spaces, compatible with the inclusions and with the structure morphisms to the base space, is induced by exactly one f', and (f, f') is a morphism of thickenings over the base space”.
+**`AlgebraicGeometry.Space.existsUnique_thickeningHom_of_ringedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/RecoveryAndThickeningHom.lean#L616). The attribute's comment: “the whole lemma, over an arbitrary base scheme: the morphism (f\_spaces,etale, alpha) of the small etale ringed topoi of the ambient spaces, compatible with the inclusions and with the structure morphisms to the base space, is induced by exactly one f', and (f, f') is a morphism of thickenings over the base space”.
 
 > **Stacks 05ZN.**  Let `B` be a big fppf site, `S` a scheme in it and `T` an algebraic space
 > over `S`.  Let `G ⊂ X'` and `H ⊂ Y'` be thickenings of algebraic spaces over `T`, with structure
@@ -691,7 +691,7 @@ theorem existsUnique_thickeningHom_of_ringedToposHom
 
 [Tag 05ZP](https://stacks.math.columbia.edu/tag/05ZP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_isOpenSubspace_preimage_eq_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OpenSubspaces.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OpenSubspaces.lean#L117).
+**`AlgebraicGeometry.Space.existsUnique_isOpenSubspace_preimage_eq_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OpenSubspaces.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/OpenSubspaces.lean#L117).
 
 > **Stacks 05ZP.** Let `G ⊂ X` be a thickening of algebraic spaces over `S`. Every open
 > subspace `U ⊂ G` is the inverse image of a unique open subspace `U' ⊂ X`, in other words
@@ -714,103 +714,7 @@ theorem existsUnique_isOpenSubspace_preimage_eq_of_isThickening
 
 [Tag 05ZQ](https://stacks.math.columbia.edu/tag/05ZQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSections.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSections.lean#L314). The attribute's comment: “surjectivity of the restriction of regular functions, stated at the level of the spaces-étale sites: the affine object of the thickening's site is the base change `G ×_X U` of an object `U` of the ambient space's site, and the map is pullback along the cartesian projection `G ×_X U ⟶ U`, which is the closed immersion the source proof uses. The transport of the ambient structure sheaf through Stacks 05ZM is not used and no part of Stacks 05ZM is claimed: in this library 05ZM is formalized as an equivalence of topoi only, so the sheaf `𝒪_{X'}` on the thickening's site does not exist and `Γ(U, 𝒪_{X'})` is `Γ(U, 𝒪_U)` by construction. Granted `h07VR`, `h07SQ` and `hFinitePresentation`, which are passed unchanged to Stacks 07VS, `AlgebraicGeometry.Space.isAffineSpace_of_isSurjective_of_isFinite`, and are the conclusions of Stacks 07VR and Stacks 07SQ about inverse systems together with the finite-presentation special case of Stacks 07VS; none is the universally quantified form of this conclusion”.
-
-> **Stacks 05ZQ.** Let `G ⊂ X` be a thickening of algebraic spaces over `S` and let `U` be an
-> object of the spaces-étale site of `X` whose base change `G ×_X U` along the inclusion is
-> affine. Then restriction of global regular functions along the cartesian projection
-> `G ×_X U ⟶ U`, that is `Γ(U, 𝒪_U) → Γ(G ×_X U, 𝒪_{G ×_X U})`, is surjective.
->
-> The ambient object `U` is affine by
-> `AlgebraicGeometry.Space.isAffineSpace_of_isThickening_of_isAffineSpace_baseChange`, which is
-> Stacks 07VS, and the projection is a closed immersion, so
-> `AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isClosedImmersion` applies.
-
-```lean
-theorem surjective_globalFunctionsMap_projection_of_isThickening
-    (hG : IsThickening B S hS X G) (U : SpacesEtale B S hS X)
-    (hU : IsAffineSpace B S hS
-      ((SpacesEtale.toSpaces B S hS (IsThickening.space B S hS hG)).obj
-        ((spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.obj U)).obj)
-    (h07VR : ∀ {X' Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : X' ⟶ Y'),
-      IsAlgebraicSpace B S hS X' → IsAlgebraicSpace B S hS Y' → IsFinite B S hS g →
-      IsQuasiCompactSpace B S hS Y' →
-      IsAbsolutelyQuasiSeparated B S hS B.contains_terminal Y' →
-      IntegralFiniteSystem B S hS g)
-    (h07SQ : ∀ {I : Type u} [Preorder I] [IsDirected I (· ≤ ·)]
-      (D : DescentSituation B S hS B.contains_terminal I),
-      IsAffineSpace B S hS D.limitCone.pt →
-      ∃ i : I, D.base ≤ i ∧ IsAffineSpace B S hS (D.system.obj (Opposite.op i)))
-    (hFinitePresentation : ∀ {X' Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : X' ⟶ Y'),
-      IsAlgebraicSpace B S hS X' → IsAlgebraicSpace B S hS Y' → IsFinite B S hS g →
-      IsFinitePresentation B S hS g → IsSurjective B S hS g → IsAffineSpace B S hS X' →
-      IsAffineSpace B S hS Y') :
-    Function.Surjective (globalFunctionsMap B S hS
-      ((spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).projection.app U))
-```
-
-**`AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSections.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSections.lean#L381). The attribute's comment: “the FIRST-ORDER thickening case only, with the source's own quantifier: `V` is an arbitrary object of the spaces-étale site of the closed subspace `G` whose underlying algebraic space is affine, and the map is pullback of global regular functions along the composite `V ≅ G ×_X U ⟶ U` of the isomorphism supplied by essential surjectivity of base change with the cartesian projection, `U` being the object of the ambient space's site that essential surjectivity produces. The source states 05ZQ for a thickening of arbitrary order; essential surjectivity, `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`, is proved only at a first-order thickening, so the general case stays with the weaker parametrisation of `AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening`. The source's own second proof, for finite order thickenings, likewise reduces to the first-order case. As for the general statement, the transport of the ambient structure sheaf through Stacks 05ZM is not used and no part of Stacks 05ZM is claimed: `Γ(V, 𝒪_{X'})` is `Γ(U, 𝒪_U)` by construction. Granted `h07VR`, `h07SQ` and `hFinitePresentation`, passed unchanged to the theorem of Stacks 07VS, `AlgebraicGeometry.Space.isAffineSpace_of_isSurjective_of_isFinite`, and are the conclusions of Stacks 07VR and Stacks 07SQ about inverse systems together with the finite-presentation special case of Stacks 07VS; none is the universally quantified form of this conclusion”.
-
-> **Stacks 05ZQ at a first-order thickening, with the source's own quantifier.** Let
-> `G ⊂ X` be a *first-order* thickening of algebraic spaces over `S` and let `V` be an
-> *arbitrary* object of the spaces-étale site of `G` whose underlying algebraic space is affine.
-> Then restriction of global regular functions `Γ(U, 𝒪_U) → Γ(V, 𝒪_V)` is surjective, where `U`
-> is the object of the spaces-étale site of `X` whose base change along the inclusion is
-> isomorphic to `V`, and the map is pullback along the composite `V ≅ G ×_X U ⟶ U` of that
-> isomorphism with the cartesian projection.
->
-> Base change along the inclusion of a first-order thickening is essentially surjective by
-> `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`, which is
-> Stacks 05ZH in the only generality the library has it; the instance is discharged in the
-> statement, so no part of Stacks 05ZH is granted. The object `U` and the isomorphism are the
-> `CategoryTheory.Functor.objPreimage` and `CategoryTheory.Functor.objObjPreimageIso` of that
-> essential surjectivity. Transporting affineness of `V` across the isomorphism makes
-> `AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening` apply at
-> `U`, and pullback along an isomorphism is bijective on global regular functions, so the
-> composite is surjective.
->
-> Only the first-order case: Stacks 05ZQ is stated in the source for a thickening of arbitrary
-> order, and for such a thickening the weaker parametrisation of
-> `AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening` remains all
-> that is available. The three hypotheses are threaded unchanged into that theorem.
-
-```lean
-theorem surjective_globalFunctionsMap_of_isFirstOrderThickening
-    (hG : IsFirstOrderThickening B S hS X G)
-    (V : SpacesEtale B S hS (IsThickening.space B S hS (hG.isThickening B S hS)))
-    (hV : IsAffineSpace B S hS
-      ((SpacesEtale.toSpaces B S hS
-        (IsThickening.space B S hS (hG.isThickening B S hS))).obj V).obj)
-    (h07VR : ∀ {X' Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : X' ⟶ Y'),
-      IsAlgebraicSpace B S hS X' → IsAlgebraicSpace B S hS Y' → IsFinite B S hS g →
-      IsQuasiCompactSpace B S hS Y' →
-      IsAbsolutelyQuasiSeparated B S hS B.contains_terminal Y' →
-      IntegralFiniteSystem B S hS g)
-    (h07SQ : ∀ {I : Type u} [Preorder I] [IsDirected I (· ≤ ·)]
-      (D : DescentSituation B S hS B.contains_terminal I),
-      IsAffineSpace B S hS D.limitCone.pt →
-      ∃ i : I, D.base ≤ i ∧ IsAffineSpace B S hS (D.system.obj (Opposite.op i)))
-    (hFinitePresentation : ∀ {X' Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : X' ⟶ Y'),
-      IsAlgebraicSpace B S hS X' → IsAlgebraicSpace B S hS Y' → IsFinite B S hS g →
-      IsFinitePresentation B S hS g → IsSurjective B S hS g → IsAffineSpace B S hS X' →
-      IsAffineSpace B S hS Y') :
-    letI : (spacesBaseChange B S hS
-        (IsThickening.inclusion B S hS (hG.isThickening B S hS))).functor.EssSurj :=
-      @essSurj_spacesBaseChange_of_isFirstOrderThickening B S hS _ X
-        (IsThickening.inclusion B S hS (hG.isThickening B S hS)) (inferInstanceAs (Mono G.ι))
-        (Eq.mpr (congrArg (IsFirstOrderThickening B S hS X) (Subfunctor.range_ι G)) hG)
-    Function.Surjective (globalFunctionsMap B S hS
-      ((SpacesEtale.toSpaces B S hS
-            (IsThickening.space B S hS (hG.isThickening B S hS))).map
-          ((spacesBaseChange B S hS (IsThickening.inclusion B S hS
-            (hG.isThickening B S hS))).functor.objObjPreimageIso V).inv ≫
-        (spacesBaseChange B S hS (IsThickening.inclusion B S hS
-            (hG.isThickening B S hS))).projection.app
-          ((spacesBaseChange B S hS (IsThickening.inclusion B S hS
-            (hG.isThickening B S hS))).functor.objPreimage V)))
-```
-
-**`AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSectionsSpacesEtale.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSectionsSpacesEtale.lean#L122). The attribute's comment: “for a thickening of arbitrary order and an arbitrary affine object `V` of the spaces-étale site of the closed subspace. The source's `Γ(U, 𝒪_{X'})`, the sections of `𝒪_{X'}` read on the site of the closed subspace through Stacks 05ZM, is stated as `Γ(U', 𝒪_{U'})` for the object `U'` of the ambient space's site with `V ≅ X ×_{X'} U'` given by essential surjectivity of base change, and the map is pullback along `V ≅ X ×_{X'} U' ⟶ U'`”.
+**`AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSectionsSpacesEtale.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/AffineSectionsSpacesEtale.lean#L136). The attribute's comment: “for a thickening of arbitrary order and an arbitrary affine object `V` of the spaces-étale site of the closed subspace, with no hypothesis granted (Stacks 05ZH and the closed-immersion case of Stacks 07VT are proved, not assumed). The source's `Γ(U, 𝒪_{X'})`, the sections of `𝒪_{X'}` read on the site of the closed subspace through Stacks 05ZM, is stated as `Γ(U', 𝒪_{U'})` for the object `U'` of the ambient space's site with `V ≅ X ×_{X'} U'` given by essential surjectivity of base change, and the map is pullback along `V ≅ X ×_{X'} U' ⟶ U'`”.
 
 > **Stacks 05ZQ.** Let `S` be a scheme and let `G ⊂ X` be a thickening of algebraic spaces
 > over `S`, of arbitrary order. Let `V` be an object of the spaces-étale site of `G` whose
@@ -830,6 +734,11 @@ theorem surjective_globalFunctionsMap_of_isFirstOrderThickening
 > essential surjectivity. Affineness of `V` transported across the isomorphism makes
 > `AlgebraicGeometry.Space.surjective_globalFunctionsMap_spacesBaseChange_projection_of_isThickening`
 > apply at `U`, and pullback along an isomorphism is bijective on global regular functions.
+>
+> This is the sole 05ZQ registration. The former conditional siblings
+> `AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening` and
+> `AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isFirstOrderThickening`, which grant
+> the hypotheses of Stacks 07VS, are unregistered steps.
 
 ```lean
 theorem surjective_globalFunctionsMap_of_isThickening
@@ -852,78 +761,48 @@ theorem surjective_globalFunctionsMap_of_isThickening
 
 [Tag 05ZR](https://stacks.math.columbia.edu/tag/05ZR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentable.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentable.lean#L96). The attribute's comment: “granted the three hypotheses of Stacks 07VT, carried verbatim from Stacks 07VV and used for nothing else: `h09YA`, the conclusion of Stacks 09YA that an integral morphism over a quasi-compact quasi-separated algebraic space is a directed limit of finite morphisms of finite presentation; `h07SQ`, the conclusion of Stacks 07SQ that a directed system with affine transition morphisms whose limit is affine has an affine stage; and `hFinitePresentation`, the case of Stacks 07VT in which the morphism is finite and of finite presentation. None is the universally quantified form of this conclusion: the first two conclude about inverse systems and the third about affineness of a target, while this concludes representability of a presheaf”.
+**`AlgebraicGeometry.Space.isRepresentable_of_isThickening_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L79).
 
-> **Stacks 05ZR.** Let `S` be a scheme and let `G ⊂ X'` be a thickening of algebraic spaces
-> over `S`, in the subspace form of Stacks 05ZK, part (1). If `G` is (representable by) a
-> scheme, then so is `X'`.
+> **Stacks 05ZR, closed-immersion form.** Let `S` be a scheme and let `G ⊂ X'` be a
+> thickening of algebraic spaces over `S`, in the subspace form of Stacks 05ZK, part (1). If `G`
+> is (representable by) a scheme, then so is `X'`. This is
+> `AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_thickening` without the three
+> hypotheses of Stacks 07VT, the closed-immersion form of Stacks 07VV being unconditional.
 >
-> The inclusion `G.ι` is integral by Stacks 081Y, injective on points because it is a
-> monomorphism, and surjective on points by the definition of a thickening, so Stacks 07VV
-> applies in the direction that goes from the source.
+> The inclusion `G.ι` is a closed immersion, injective on points because it is a monomorphism,
+> and surjective on points by the definition of a thickening, so Stacks 07VV applies in the
+> direction that goes from the source, in its closed-immersion form.
 
 ```lean
-theorem isRepresentable_of_isRepresentable_thickening {X' : AlgebraicSpaces B S hS}
+theorem isRepresentable_of_isThickening_of_isRepresentable {X' : AlgebraicSpaces B S hS}
     {G : Subfunctor X'.1} (hG : IsThickening B S hS X' G)
-    (hGrep : G.toFunctor.IsRepresentable)
-    (h09YA : ∀ {Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : Y ⟶ Z),
-      IsAlgebraicSpace B S hS Y → IsAlgebraicSpace B S hS Z → IsIntegralHom B S hS g →
-      IsQuasiCompactSpace B S hS Z →
-      IsAbsolutelyQuasiSeparated B S hS B.contains_terminal Z →
-      IntegralFiniteSystem B S hS g)
-    (h07SQ : ∀ {I : Type u} [Preorder I] [IsDirected I (· ≤ ·)]
-      (D : DescentSituation B S hS B.contains_terminal I),
-      IsAffineSpace B S hS D.limitCone.pt →
-      ∃ i : I, D.base ≤ i ∧ IsAffineSpace B S hS (D.system.obj (Opposite.op i)))
-    (hFinitePresentation : ∀ {Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : Y ⟶ Z),
-      IsAlgebraicSpace B S hS Y → IsAlgebraicSpace B S hS Z → IsFinite B S hS g →
-      IsFinitePresentation B S hS g → IsSurjective B S hS g → IsAffineSpace B S hS Y →
-      IsAffineSpace B S hS Z) :
+    (hGrep : G.toFunctor.IsRepresentable) :
     X'.1.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentable.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentable.lean#L134). The attribute's comment: “the morphism form, granted the three hypotheses of Stacks 07VT, carried verbatim from Stacks 07VV and used for nothing else: `h09YA`, the conclusion of Stacks 09YA that an integral morphism over a quasi-compact quasi-separated algebraic space is a directed limit of finite morphisms of finite presentation; `h07SQ`, the conclusion of Stacks 07SQ that a directed system with affine transition morphisms whose limit is affine has an affine stage; and `hFinitePresentation`, the case of Stacks 07VT in which the morphism is finite and of finite presentation. None is the universally quantified form of this conclusion: the first two conclude about inverse systems and the third about affineness of a target, while this concludes representability of a presheaf”.
+**`AlgebraicGeometry.Space.isRepresentable_of_isThickeningHom_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L96). The attribute's comment: “the morphism form”.
 
-> **Stacks 05ZR, morphism form.** Let `S` be a scheme and let `i : X ⟶ X'` be a thickening
-> of algebraic spaces over `S`, in the morphism form of
+> **Stacks 05ZR, morphism and closed-immersion form.** Let `S` be a scheme and let
+> `i : X ⟶ X'` be a thickening of algebraic spaces over `S`, in the morphism form of
 > `AlgebraicGeometry.Space.IsThickeningHom`. If `X` is (representable by) a scheme, then so is
-> `X'`.
+> `X'`. This is `AlgebraicGeometry.Space.isRepresentable_of_isThickeningHom` without the three
+> hypotheses of Stacks 07VT, the closed-immersion form of Stacks 07VV being unconditional.
 >
-> A thickening is a closed immersion, hence integral by Stacks 081Y, it is a monomorphism and
-> therefore injective on points, and it is surjective on points, so Stacks 07VV applies in the
-> direction that goes from the source.
+> A thickening is a closed immersion, it is a monomorphism and therefore injective on points,
+> and it is surjective on points, so Stacks 07VV applies in the direction that goes from the
+> source, in its closed-immersion form.
 
 ```lean
-theorem isRepresentable_of_isThickeningHom {X X' : AlgebraicSpaces B S hS} (i : X ⟶ X')
-    (hi : IsThickeningHom B S hS i) (hXrep : X.1.IsRepresentable)
-    (h09YA : ∀ {Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : Y ⟶ Z),
-      IsAlgebraicSpace B S hS Y → IsAlgebraicSpace B S hS Z → IsIntegralHom B S hS g →
-      IsQuasiCompactSpace B S hS Z →
-      IsAbsolutelyQuasiSeparated B S hS B.contains_terminal Z →
-      IntegralFiniteSystem B S hS g)
-    (h07SQ : ∀ {I : Type u} [Preorder I] [IsDirected I (· ≤ ·)]
-      (D : DescentSituation B S hS B.contains_terminal I),
-      IsAffineSpace B S hS D.limitCone.pt →
-      ∃ j : I, D.base ≤ j ∧ IsAffineSpace B S hS (D.system.obj (Opposite.op j)))
-    (hFinitePresentation : ∀ {Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : Y ⟶ Z),
-      IsAlgebraicSpace B S hS Y → IsAlgebraicSpace B S hS Z → IsFinite B S hS g →
-      IsFinitePresentation B S hS g → IsSurjective B S hS g → IsAffineSpace B S hS Y →
-      IsAffineSpace B S hS Z) :
+theorem isRepresentable_of_isThickeningHom_of_isRepresentable {X X' : AlgebraicSpaces B S hS}
+    (i : X ⟶ X') (hi : IsThickeningHom B S hS i) (hXrep : X.1.IsRepresentable) :
     X'.1.IsRepresentable
 ```
-
-Declarations registered for the tag:
-
-- [`AlgebraicGeometry.Space.isRepresentable_of_isThickening_of_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SchemeOfThickening.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SchemeOfThickening.lean#L71) (StacksFrontier).
-- [`AlgebraicGeometry.Space.isRepresentable_of_isThickeningHom_of_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SchemeOfThickening.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SchemeOfThickening.lean#L78) (StacksFrontier): “the morphism form”.
-- [`AlgebraicGeometry.Space.isRepresentable_of_isThickening_of_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableTag.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableTag.lean#L21) (StacksFrontier).
-- [`AlgebraicGeometry.Space.isRepresentable_of_isThickeningHom_of_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableClosedImmersion.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableTag.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ThickeningSchemeRepresentableTag.lean#L23) (StacksFrontier): “the morphism form”.
 
 ## Tag 05ZS, a lemma
 
 [Tag 05ZS](https://stacks.math.columbia.edu/tag/05ZS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_smallBaseChange_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleThickeningEquivalence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleThickeningEquivalence.lean#L58).
+**`AlgebraicGeometry.Space.isEquivalence_smallBaseChange_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleThickeningEquivalence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleThickeningEquivalence.lean#L58).
 
 > **Stacks 05ZS.** Let `i : X ⟶ X'` be a thickening of algebraic spaces over `S`. Base change
 > `V' ↦ X ×_{X'} V'` is an equivalence from the small étale site of `X'` to that of `X`.
@@ -934,7 +813,7 @@ theorem isEquivalence_smallBaseChange_of_isThickeningHom {X X' : AlgebraicSpaces
     (smallBaseChange B S hS i hi.isClosedImmersion.rep).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L180). The attribute's comment: “the FIRST-ORDER thickening case, on the spaces-étale site of Stacks 03G0. The source states the tag for a thickening of arbitrary order and as an equivalence of the small étale sites of scheme charts; on the spaces-étale site the arbitrary-order equivalence is `AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsThickening`, and on the small étale sites of scheme charts this module covers the full faithfulness of the functor, by `AlgebraicGeometry.Space.fullyFaithfulThickeningChartBaseChangeOfIsFirstOrderThickening`. The module's `What is not covered` section sets out the differences from the source”.
+**`AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L180). The attribute's comment: “the FIRST-ORDER thickening case, on the spaces-étale site of Stacks 03G0. The source states the tag for a thickening of arbitrary order and as an equivalence of the small étale sites of scheme charts; on the spaces-étale site the arbitrary-order equivalence is `AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsThickening`, and on the small étale sites of scheme charts this module covers the full faithfulness of the functor, by `AlgebraicGeometry.Space.fullyFaithfulThickeningChartBaseChangeOfIsFirstOrderThickening`. The module's `What is not covered` section sets out the differences from the source”.
 
 > **Stacks 05ZS at a first-order thickening, on the spaces-étale site.** Let `G ⊂ X` be a
 > first-order thickening of algebraic spaces over `S`. Base change along the inclusion,
@@ -957,7 +836,7 @@ noncomputable def spacesEtaleEquivalenceOfIsFirstOrderThickening
       SpacesEtale B S hS (IsThickening.space B S hS (hG.isThickening B S hS))
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulThickeningChartBaseChangeOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L244). The attribute's comment: “FULL FAITHFULNESS ONLY, at a FIRST-ORDER thickening, of the source's own functor `X'_étale → X_étale` on the small étale sites of SCHEME charts, Stacks 03ED. The source asserts an equivalence, so essential surjectivity on those sites is a separate statement, Stacks 07VW. The restriction to first order is inherited from the library's Stacks 05ZH, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isFirstOrderThickening` and `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isFirstOrderThickening`. The companion statement on the spaces-étale site of Stacks 03G0, where the full equivalence IS available at first order, is `AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsFirstOrderThickening`; the module's `What is not covered` section sets out the differences from the source”.
+**`AlgebraicGeometry.Space.fullyFaithfulThickeningChartBaseChangeOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalence.lean#L244). The attribute's comment: “FULL FAITHFULNESS ONLY, at a FIRST-ORDER thickening, of the source's own functor `X'_étale → X_étale` on the small étale sites of SCHEME charts, Stacks 03ED. The source asserts an equivalence, so essential surjectivity on those sites is a separate statement, Stacks 07VW. The restriction to first order is inherited from the library's Stacks 05ZH, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isFirstOrderThickening` and `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isFirstOrderThickening`. The companion statement on the spaces-étale site of Stacks 03G0, where the full equivalence IS available at first order, is `AlgebraicGeometry.Space.spacesEtaleEquivalenceOfIsFirstOrderThickening`; the module's `What is not covered` section sets out the differences from the source”.
 
 > **Stacks 05ZS, full faithfulness of the functor `X'_étale → X_étale`, at a first-order
 > thickening.** Let `G ⊂ X` be a first-order thickening of algebraic spaces over `S`. Base
@@ -986,7 +865,7 @@ noncomputable def fullyFaithfulThickeningChartBaseChangeOfIsFirstOrderThickening
     (thickeningChartBaseChange B S hS (hG.isThickening B S hS)).FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_thickeningChartBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceArbitraryOrder.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceArbitraryOrder.lean#L335). The attribute's comment: “the functor is `AlgebraicGeometry.Space.thickeningChartBaseChange`, base change `V' ↦ X ×_{X'} V'` of schemes étale over `X'` along the inclusion of the thickening, between the small étale sites of Stacks 03ED; the packaged `CategoryTheory.Equivalence` is `AlgebraicGeometry.Space.smallEtaleEquivalenceOfIsThickening`”.
+**`AlgebraicGeometry.Space.isEquivalence_thickeningChartBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceArbitraryOrder.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceArbitraryOrder.lean#L335). The attribute's comment: “the functor is `AlgebraicGeometry.Space.thickeningChartBaseChange`, base change `V' ↦ X ×_{X'} V'` of schemes étale over `X'` along the inclusion of the thickening, between the small étale sites of Stacks 03ED; the packaged `CategoryTheory.Equivalence` is `AlgebraicGeometry.Space.smallEtaleEquivalenceOfIsThickening`”.
 
 > **Stacks 05ZS.** Let `S` be a scheme and let `G ⊂ X` be a thickening of algebraic spaces
 > over `S`, of arbitrary order. Base change of étale *scheme* charts along the inclusion,
@@ -1015,7 +894,7 @@ theorem isEquivalence_thickeningChartBaseChange_of_isThickening
 
 [Tag 05ZT](https://stacks.math.columbia.edu/tag/05ZT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SquareZeroExtension.nonempty_enlargedRealization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SquareZeroExtensionEnlargedRealization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SquareZeroExtensionEnlargedRealization.lean#L98). The attribute's comment: “corrected: realized after enlarging the big fppf site, since on a fixed cutoff site a free kernel of rank the cutoff cannot be realized”.
+**`AlgebraicGeometry.Space.SquareZeroExtension.nonempty_enlargedRealization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SquareZeroExtensionEnlargedRealization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SquareZeroExtensionEnlargedRealization.lean#L98). The attribute's comment: “corrected: realized after enlarging the big fppf site, since on a fixed cutoff site a free kernel of rank the cutoff cannot be realized”.
 
 > **Stacks 05ZT, corrected: a square-zero extension of the étale structure sheaf by a
 > quasi-coherent module is realized by a first-order thickening after enlarging the big fppf
@@ -1046,7 +925,7 @@ theorem nonempty_enlargedRealization (E : SquareZeroExtension B S hS f) :
 
 [Tag 09ZX](https://stacks.math.columbia.edu/tag/09ZX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.thickeningBaseChangeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L144). The attribute's comment: “morphism of thickenings”.
+**`AlgebraicGeometry.Space.thickeningBaseChangeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L144). The attribute's comment: “morphism of thickenings”.
 
 > **Stacks 09ZX.** The commutative square expressing that the inclusion of the inverse image
 > of a subfunctor `Y` of `Y'` along `f : X' ⟶ Y'` lies over the inclusion of `Y`: a morphism in
@@ -1058,7 +937,7 @@ def thickeningBaseChangeHom {Y' X' : AlgebraicSpaces B S hS} (Y : Subfunctor Y'.
     Arrow.mk (Y.preimage f.hom).ι ⟶ Arrow.mk Y.ι
 ```
 
-**`AlgebraicGeometry.Space.isThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L152). The attribute's comment: “base change of a thickening”.
+**`AlgebraicGeometry.Space.isThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L152). The attribute's comment: “base change of a thickening”.
 
 > **Stacks 09ZX.** The inverse image of a thickening `Y ⊂ Y'` along a morphism of algebraic
 > spaces `f : X' ⟶ Y'` is a thickening of `X'`.
@@ -1069,7 +948,7 @@ theorem isThickening_preimage {Y' X' : AlgebraicSpaces B S hS} (Y : Subfunctor Y
     IsThickening B S hS X' (Y.preimage f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isThickening_range_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeFibreProduct.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeFibreProduct.lean#L79). The attribute's comment: “base change of a thickening, at a chosen fibre product”.
+**`AlgebraicGeometry.Space.isThickening_range_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeFibreProduct.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeFibreProduct.lean#L79). The attribute's comment: “base change of a thickening, at a chosen fibre product”.
 
 > **Stacks 09ZX, at a chosen fibre product.** Let `G ⊂ X` be a thickening of algebraic
 > spaces over `S` with inclusion `i : G ⟶ X`, let `φ : U ⟶ X` be any morphism, and let
@@ -1097,7 +976,7 @@ theorem isThickening_range_of_isPullback {X U P : AlgebraicSpaces B S hS}
     IsThickening B S hS U (Subfunctor.range q.hom)
 ```
 
-**`AlgebraicGeometry.Space.isNthOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L130). The attribute's comment: “base change of an nth-order thickening”.
+**`AlgebraicGeometry.Space.isNthOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L130). The attribute's comment: “base change of an nth-order thickening”.
 
 > **Stacks 09ZX.** The inverse image of an `n`th-order thickening `Y ⊂ Y'` along an arbitrary
 > morphism `f : X' ⟶ Y'` of algebraic spaces is an `n`th-order thickening of `X'`.
@@ -1113,7 +992,7 @@ theorem isNthOrderThickening_preimage {n : ℕ} {Y' X' : AlgebraicSpaces B S hS}
     IsNthOrderThickening B S hS n X' (Y.preimage f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isFirstOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L152). The attribute's comment: “base change of a first-order thickening”.
+**`AlgebraicGeometry.Space.isFirstOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L152). The attribute's comment: “base change of a first-order thickening”.
 
 > **Stacks 09ZX.** The inverse image of a first-order thickening along an arbitrary morphism
 > of algebraic spaces is a first-order thickening: the case `n = 1` of
@@ -1125,7 +1004,7 @@ theorem isFirstOrderThickening_preimage {Y' X' : AlgebraicSpaces B S hS}
     IsFirstOrderThickening B S hS X' (Y.preimage f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L160). The attribute's comment: “base change of a finite-order thickening”.
+**`AlgebraicGeometry.Space.isFiniteOrderThickening_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChangeOrder.lean#L160). The attribute's comment: “base change of a finite-order thickening”.
 
 > **Stacks 09ZX.** The inverse image of a finite-order thickening along an arbitrary morphism
 > of algebraic spaces is a finite-order thickening, with the same bound on the order.
@@ -1138,13 +1017,13 @@ theorem isFiniteOrderThickening_preimage {Y' X' : AlgebraicSpaces B S hS}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Subfunctor.isPullback_preimage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SubspacePreimage.lean#L67), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L168) (StacksFrontier): “cartesian square”.
+- [`CategoryTheory.Subfunctor.isPullback_preimage`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SubspacePreimage.lean#L67), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/BaseChange.lean#L168) (StacksFrontier): “cartesian square”.
 
 ## Tag 0BPH, a lemma
 
 [Tag 0BPH](https://stacks.math.columbia.edu/tag/0BPH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isThickening_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Comp.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Comp.lean#L50).
+**`AlgebraicGeometry.Space.isThickening_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Comp.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Comp.lean#L50).
 
 > **Stacks 0BPH.** A thickening `X ⊂ X'` of a closed subspace `X' ⊂ X''` of an algebraic
 > space `X''` which is itself a thickening of `X''` presents `X` as a thickening of `X''`, the
@@ -1161,7 +1040,7 @@ theorem isThickening_image (X'' : AlgebraicSpaces B S hS) (X' : Subfunctor X''.1
 
 [Tag 0BPI](https://stacks.math.columbia.edu/tag/0BPI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.thickening_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocal.lean#L111). The attribute's comment: “thickenings”.
+**`AlgebraicGeometry.Space.thickening_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocal.lean#L111). The attribute's comment: “thickenings”.
 
 > Being a thickening is fpqc local on the base for morphisms of algebraic spaces over `S`: a
 > morphism whose base change to every member of some fpqc covering of its target is a thickening is
@@ -1173,7 +1052,7 @@ instance thickening_isLocalAtTarget_fpqc :
       (Topology.precoverage.{u, v} .fpqc B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isFirstOrderThickeningHom_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L353). The attribute's comment: “first-order clause, for an arbitrary fpqc covering”.
+**`AlgebraicGeometry.Space.isFirstOrderThickeningHom_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L353). The attribute's comment: “first-order clause, for an arbitrary fpqc covering”.
 
 > Let `f : X ⟶ X'` be a morphism of algebraic spaces over `S` and let `{gᵢ : X'ᵢ ⟶ X'}` be an
 > fpqc covering of `X'` by algebraic spaces. If every base change `fᵢ : Xᵢ ⟶ X'ᵢ` of `f` is a
@@ -1190,7 +1069,7 @@ theorem isFirstOrderThickeningHom_of_isFpqcCovering {I : Type v}
     IsFirstOrderThickeningHom B S hS f
 ```
 
-**`AlgebraicGeometry.Space.firstOrderThickening_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L393). The attribute's comment: “first order thickenings”.
+**`AlgebraicGeometry.Space.firstOrderThickening_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L393). The attribute's comment: “first order thickenings”.
 
 > Being a first-order thickening is fpqc local on the base for morphisms of algebraic spaces
 > over `S`: a morphism whose base change to every member of some fpqc covering of its target is a
@@ -1202,7 +1081,7 @@ instance firstOrderThickening_isLocalAtTarget_fpqc :
       (Topology.precoverage.{u, v} .fpqc B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isThickeningHom_and_isFirstOrderThickeningHom_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L415).
+**`AlgebraicGeometry.Space.isThickeningHom_and_isFirstOrderThickeningHom_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L415).
 
 > Being a thickening is fpqc local, and similarly for first order thickenings. Let
 > `f : X ⟶ X'` be a morphism of algebraic spaces over `S` and let `{gᵢ : X'ᵢ ⟶ X'}` be an fpqc
@@ -1222,7 +1101,7 @@ theorem isThickeningHom_and_isFirstOrderThickeningHom_of_isFpqcCovering {I : Typ
         IsFirstOrderThickeningHom B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isThickeningHom_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L431). The attribute's comment: “thickenings, as an equivalence along an fpqc covering”.
+**`AlgebraicGeometry.Space.isThickeningHom_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L431). The attribute's comment: “thickenings, as an equivalence along an fpqc covering”.
 
 > A morphism `f : X ⟶ X'` of
 > algebraic spaces over `S` is a thickening if and only if its base change along every member of
@@ -1238,7 +1117,7 @@ theorem isThickeningHom_iff_forall_of_isFpqcCovering {I : Type v}
     IsThickeningHom B S hS f ↔ ∀ i, IsThickeningHom B S hS (fi i)
 ```
 
-**`AlgebraicGeometry.Space.isFirstOrderThickeningHom_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L445). The attribute's comment: “first-order clause, as an equivalence along an fpqc covering”.
+**`AlgebraicGeometry.Space.isFirstOrderThickeningHom_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FpqcLocalFirstOrder.lean#L445). The attribute's comment: “first-order clause, as an equivalence along an fpqc covering”.
 
 > A morphism `f : X ⟶ X'` of
 > algebraic spaces over `S` is a first-order thickening if and only if its base change along
@@ -1255,7 +1134,7 @@ theorem isFirstOrderThickeningHom_iff_forall_of_isFpqcCovering {I : Type v}
       ∀ i, IsFirstOrderThickeningHom B S hS (fi i)
 ```
 
-**`Stacks.Spaces.UniversalThickening.isClosedSubspace_and_isFirstOrderThickening_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/FirstOrderClauseAndAffineSize.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/FirstOrderClauseAndAffineSize.lean#L279). The attribute's comment: “first-order clause, along a surjective etale chart”.
+**`Stacks.Spaces.UniversalThickening.isClosedSubspace_and_isFirstOrderThickening_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/FirstOrderClauseAndAffineSize.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/FirstOrderClauseAndAffineSize.lean#L279). The attribute's comment: “first-order clause, along a surjective etale chart”.
 
 > **Stacks 0BPI, the first-order clause, along a surjective étale chart.** Let `Y` be a
 > subfunctor of an algebraic space `Q` over `S` which is a sheaf for the big fppf topology, and
@@ -1302,4 +1181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.9, Tag 05ZJ](https://stacks.math.columbia.edu/tag/05ZJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

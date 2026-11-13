@@ -7,7 +7,7 @@ statement: formalized
 
 # Simultaneous core partitions
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html).
 
 ## $s$-cores of Young diagrams
 
@@ -18,7 +18,7 @@ $j$) is $(r_i - j) + (c_j - i) - 1$: the cells to its right in row $i$, the cell
 column $j$, and the cell itself (both differences count the cell, so one is subtracted). The
 diagram $\mu$ is an *$s$-core* if no cell of $\mu$ has hook length divisible by $s$.
 
-Formalized by `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.IsCore`, a definition declared in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#is-core).
+Formalized by `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.IsCore`, a definition declared in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#is-core).
 
 ## Containment of simultaneous cores (Olsson–Stanton question)
 
@@ -32,7 +32,7 @@ The proposition does not assert that such a $\kappa$ exists. In the report, $\ka
 partition of maximum size that is both an $s$-core and a $t$-core, and the question is whether
 the Young diagram of every such partition is contained in that of $\kappa_{s,t}$.
 
-Formalized by `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.simultaneousCoreContainment`, a definition declared in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#simultaneous-core-containment).
+Formalized by `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.simultaneousCoreContainment`, a definition declared in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#simultaneous-core-containment).
 
 ## Fayers–Vandehey containment theorem for simultaneous cores
 
@@ -53,7 +53,7 @@ many cells, so it equals $\kappa_{s,t}$ and contains every simultaneous core.
 
 - J. B. Olsson (joint with D. Stanton, C. Bessenrodt, G. Navarro, P. H. Tiep), On block identities and block inclusions, in Representations of Finite Groups, Oberwolfach Reports 3 (2006), no. 15, p. 912 ff., section 2 (Block identities), DOI 10.4171/OWR/2006/15; resolution: M. Fayers, The t-core of an s-core, J. Combin. Theory Ser. A 118 (2011), 1525-1539, DOI 10.1016/j.jcta.2011.01.004, arXiv:1007.1071, Section 5, Theorem 5.1 ("Suppose s and t are coprime positive integers, and λ is an (s, t)-core. Then [λ] ⊆ [κ_{s,t}]"), proved in Proposition 5.5; Fayers cites the first proof as J. Vandehey, Containment in (s, t)-core partitions, arXiv:0809.2134, Theorem 2.4, https://arxiv.org/abs/1007.1071.
 
-Stated but not proved: `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.simultaneousCoreContainment_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#simultaneous-core-containment-holds).
+Stated but not proved: `MathlibExt.Combinatorics.SimultaneousCoreContainmentOWR1265Problem006Wanted.simultaneousCoreContainment_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimultaneousCoreContainmentOWR1265Problem006Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html#simultaneous-core-containment-holds).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Simultaneous core partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/simultaneous-core-partitions)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1046 to Sendov's conjecture
+# Erdős Problem 1044 to Ben Green's Open Problem 84
 
+- [Erdős Problem 1044](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1044.md)
 - [Erdős Problem 1046](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1046.md)
 - [Erdős Problem 1047](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1047.md)
 - [Erdős Problem 1048](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1048.md)
@@ -15,3 +16,4 @@ navigation: transparent
 - [Brennan's Conjecture](../../../../wikipedia/part-02/brennans-conjecture.md)
 - [Goodman's conjecture on coefficients of $p$-valent functions](../../../../wikipedia/part-04/goodmans-conjecture-on-coefficients-of-p-valent.md)
 - [Sendov's conjecture](../../../../wikipedia/part-08/sendovs-conjecture.md)
+- [Ben Green's Open Problem 84](../../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)

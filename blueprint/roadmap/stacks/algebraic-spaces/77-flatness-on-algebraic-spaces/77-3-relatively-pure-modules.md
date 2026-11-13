@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.3 Relatively pure modules
 
-Section 77.3 of the Stacks Project, [Tag 0CVC](https://stacks.math.columbia.edu/tag/0CVC). 6 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.3 of the Stacks Project, [Tag 0CVC](https://stacks.math.columbia.edu/tag/0CVC). 6 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CVD, a definition
 
 [Tag 0CVD](https://stacks.math.columbia.edu/tag/0CVD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSpacePureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L289). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.IsSpacePureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L291). The attribute's comment: “part (3)”.
 
 > **Stacks 0CVD, part (3).** The algebraic space `X` is *pure above `y`* when its structure
 > sheaf `𝒪_X` is pure above `y`.
@@ -26,7 +26,7 @@ Section 77.3 of the Stacks Project, [Tag 0CVC](https://stacks.math.columbia.edu/
 def IsSpacePureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsSpacePureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L299). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Space.IsSpacePureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L301). The attribute's comment: “part (6)”.
 
 > **Stacks 0CVD, part (6).** The algebraic space `X` is *`Y`-pure*, or *pure relative to
 > `Y`*, when its structure sheaf `𝒪_X` is pure relative to `Y`.
@@ -39,7 +39,7 @@ def IsSpacePureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 def IsSpacePureRelative (P : PrePureSituation.{u, u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsPureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L216). The attribute's comment: “part (1), as the failure of condition (4) of Stacks 0CVB”.
+**`AlgebraicGeometry.Space.IsPureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L216). The attribute's comment: “part (1), as the failure of condition (4) of Stacks 0CVB”.
 
 > **Stacks 0CVD, part (1).** The module is *pure above `y`* when no impurity of `F` above `y`
 > has its structure morphism `T ⟶ Y` quasi-finite at `t`.
@@ -51,7 +51,7 @@ def IsSpacePureRelative (P : PrePureSituation.{u, u} B S hS) : Prop
 def IsPureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsUniversallyPureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L222). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.IsUniversallyPureAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L222). The attribute's comment: “part (2)”.
 
 > **Stacks 0CVD, part (2).** The module is *universally pure above `y`* when there is no
 > impurity of `F` above `y` at all.
@@ -60,7 +60,7 @@ def IsPureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 def IsUniversallyPureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsUniversallyPureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L234). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.IsUniversallyPureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L234). The attribute's comment: “part (4)”.
 
 > **Stacks 0CVD, part (4).** The module is *universally pure relative to `Y`* when it is
 > universally pure above every point of `Y`.
@@ -71,7 +71,7 @@ def IsUniversallyPureAbove (P : PrePureSituation.{u, u} B S hS) : Prop
 def IsUniversallyPureRelative (P : PrePureSituation.{u, u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsPureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L242). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Space.IsPureRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L242). The attribute's comment: “part (5)”.
 
 > **Stacks 0CVD, part (5).** The module is *pure relative to `Y`* when it is pure above every
 > point of `Y`.
@@ -86,7 +86,7 @@ def IsPureRelative (P : PrePureSituation.{u, u} B S hS) : Prop
 
 [Tag 0CVE](https://stacks.math.columbia.edu/tag/0CVE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_iff_forall_baseChange_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L576). The attribute's comment: “the equivalence left implicit by the source”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_iff_forall_baseChange_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L576). The attribute's comment: “the equivalence left implicit by the source”.
 
 > **Stacks 0CVE.** A finite type quasi-coherent module is universally pure above `y` exactly
 > when, for every morphism `(Y', y') ⟶ (Y, y)` of pointed algebraic spaces, its base change
@@ -108,7 +108,7 @@ theorem isUniversallyPureAbove_iff_forall_baseChange_isPureAbove
     IsUniversallyPureAbove P ↔ ∀ c : PointedOver P, IsPureAbove c.baseChange
 ```
 
-**`AlgebraicGeometry.Space.isUniversallyPureRelative_iff_forall_baseChange_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L677). The attribute's comment: “the 'in particular' clause: universally pure relative to Y iff every base change is pure relative to Y'”.
+**`AlgebraicGeometry.Space.isUniversallyPureRelative_iff_forall_baseChange_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L677). The attribute's comment: “the 'in particular' clause: universally pure relative to Y iff every base change is pure relative to Y'”.
 
 > **Stacks 0CVE, the closing clause.** The module is universally pure relative to `Y` exactly
 > when, for every morphism `Y' ⟶ Y` of algebraic spaces, its base change `F_{Y'}` is pure
@@ -132,7 +132,7 @@ theorem isUniversallyPureRelative_iff_forall_baseChange_isPureRelative
 
 [Tag 0CVF](https://stacks.math.columbia.edu/tag/0CVF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPureAbove_baseChange_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L595).
+**`AlgebraicGeometry.Space.isPureAbove_baseChange_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/RelativelyPureModules.lean#L595).
 
 > **Stacks 0CVF.** If `(Y', y') ⟶ (Y, y)` is a morphism of pointed algebraic spaces with
 > `Y' ⟶ Y` quasi-finite at `y'`, and the module is pure above `y`, then its base change `F_{Y'}`
@@ -158,7 +158,7 @@ theorem isPureAbove_baseChange_of_isQuasiFiniteAt (P : PrePureSituation.{u, u} B
 
 [Tag 0CVG](https://stacks.math.columbia.edu/tag/0CVG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPureAbove_of_isFlatAt`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean#L209). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isPureAbove_of_isFlatAt`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean#L206). The attribute's comment: “part (1)”.
 
 > **Stacks 0CVG, part (1).** In the situation of Stacks 0CV6, let `(Y₁, y₁) ⟶ (Y, y)` be a
 > morphism of pointed algebraic spaces with `Y₁ ⟶ Y` flat at `y₁`. If the base change `F_{Y₁}`
@@ -169,7 +169,7 @@ theorem isPureAbove_baseChange_of_isQuasiFiniteAt (P : PrePureSituation.{u, u} B
 alias isPureAbove_of_isFlatAt
 ```
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isFlatAt`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean#L217). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isFlatAt`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ImpurityFlatAscent.lean#L214). The attribute's comment: “part (2)”.
 
 > **Stacks 0CVG, part (2).** In the situation of Stacks 0CV6, let `(Y₁, y₁) ⟶ (Y, y)` be a
 > morphism of pointed algebraic spaces with `Y₁ ⟶ Y` flat at `y₁`. If the base change `F_{Y₁}`
@@ -180,7 +180,7 @@ alias isPureAbove_of_isFlatAt
 alias isUniversallyPureAbove_of_isFlatAt
 ```
 
-**`AlgebraicGeometry.Space.isPureAbove_of_isPureAbove_baseChange_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatDescent.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatDescent.lean#L547). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isPureAbove_of_isPureAbove_baseChange_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatDescent.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatDescent.lean#L547). The attribute's comment: “part (1)”.
 
 > **Stacks 0CVG, part (1).** If `(Y₁, y₁) ⟶ (Y, y)` is a morphism of pointed algebraic
 > spaces with `Y₁ ⟶ Y` flat at `y₁` and the base change `F_{Y₁}` is pure above `y₁`, then `F` is
@@ -197,7 +197,7 @@ theorem isPureAbove_of_isPureAbove_baseChange_of_isFlatAt (P : PrePureSituation.
 
 [Tag 0CVH](https://stacks.math.columbia.edu/tag/0CVH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isPureAbove_situation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean#L540). The attribute's comment: “pure above y, granting as hin affine base change (Stacks 02KG) on the base changes of the situation”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isPureAbove_situation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean#L540). The attribute's comment: “pure above y, granting as hin affine base change (Stacks 02KG) on the base changes of the situation”.
 
 > **Stacks 0CVH, purity above `y`.** In the situation of Stacks 0CV6, let `i : Z ⟶ X` be a
 > closed immersion and suppose `ℱ = i_*𝒢` for a finite type quasi-coherent `𝒪_Z`-module `𝒢`.
@@ -216,7 +216,7 @@ theorem isPureAbove_situation_iff
     IsPureAbove c.situation ↔ IsPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_situation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean#L563). The attribute's comment: “universally pure above y, granting as hin affine base change (Stacks 02KG) on the base changes of the situation”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_situation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersion.lean#L563). The attribute's comment: “universally pure above y, granting as hin affine base change (Stacks 02KG) on the base changes of the situation”.
 
 > **Stacks 0CVH, universal purity above `y`.** In the situation of Stacks 0CV6, let
 > `i : Z ⟶ X` be a closed immersion and suppose `ℱ = i_*𝒢` for a finite type quasi-coherent
@@ -233,7 +233,7 @@ theorem isUniversallyPureAbove_situation_iff
     IsUniversallyPureAbove c.situation ↔ IsUniversallyPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isPureAbove_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean#L70). The attribute's comment: “pure above y”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isPureAbove_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean#L70). The attribute's comment: “pure above y”.
 
 > **Stacks 0CVH, purity above `y`.** In the situation of Stacks 0CV6, let `i : Z ⟶ X` be a
 > closed immersion and suppose `ℱ = i_*𝒢` for a finite type quasi-coherent `𝒪_Z`-module `𝒢`.
@@ -243,7 +243,7 @@ theorem isUniversallyPureAbove_situation_iff
 theorem isPureAbove_iff : IsPureAbove c.situation ↔ IsPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean#L78). The attribute's comment: “universally pure above y”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityClosedImmersionBaseChange.lean#L78). The attribute's comment: “universally pure above y”.
 
 > **Stacks 0CVH, universal purity above `y`.** In the situation of Stacks 0CV6, let
 > `i : Z ⟶ X` be a closed immersion and suppose `ℱ = i_*𝒢` for a finite type quasi-coherent
@@ -259,7 +259,7 @@ theorem isUniversallyPureAbove_iff :
 
 [Tag 0CVI](https://stacks.math.columbia.edu/tag/0CVI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L171). The attribute's comment: “part (2): a finite type quasi-coherent module on the source of a proper morphism is universally pure above every point of the target”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L171). The attribute's comment: “part (2): a finite type quasi-coherent module on the source of a proper morphism is universally pure above every point of the target”.
 
 > **Stacks 0CVI, part (2).** In the situation of Stacks 0CV6, if `f : X ⟶ Y` is proper then
 > the module `ℱ` is universally pure above `y`.
@@ -273,7 +273,7 @@ theorem isUniversallyPureAbove_of_isProper (P : PrePureSituation.{u, u} B S hS)
     (hf : IsProper B S hS P.f) : IsUniversallyPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L190). The attribute's comment: “part (1) in general form, taking the closed-immersion presentation of the module as data”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L190). The attribute's comment: “part (1) in general form, taking the closed-immersion presentation of the module as data”.
 
 > **Stacks 0CVI, part (1), in general form.** In the situation of Stacks 0CV6, let
 > `i : Z ⟶ X` be a closed immersion and suppose `ℱ = i_*𝒢` for a finite type quasi-coherent
@@ -294,7 +294,7 @@ theorem ClosedSubspaceModule.isUniversallyPureAbove_of_isProper
     IsUniversallyPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L237). The attribute's comment: “part (1) at the scheme-theoretic support, naming the support's closed-subspace data”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L238). The attribute's comment: “part (1) at the scheme-theoretic support, naming the support's closed-subspace data”.
 
 > **Stacks 0CVI, part (1).** In the situation of Stacks 0CV6, if the scheme-theoretic
 > support of `ℱ` is proper over `Y`, then `ℱ` is universally pure above `y`.
@@ -302,7 +302,8 @@ theorem ClosedSubspaceModule.isUniversallyPureAbove_of_isProper
 > This is the general form above at the closed-immersion presentation of `ℱ` furnished by its
 > scheme-theoretic support, Stacks 07U1, and the module on it of Stacks 07U0.
 >
-> The two arguments `hZ` and `hid` are not assumptions about the geometry but the closed-subspace data of the scheme-theoretic support, which
+> The two arguments `hZ` and `hid` are not assumptions about the geometry but the closed-subspace
+> data of the scheme-theoretic support, which
 > `AlgebraicGeometry.Space.exists_isClosedSubspace_schemeTheoreticSupport` produces from
 > quasi-coherence of the module together with its finite type in the sectionwise sense of
 > Stacks 03DL(5); they are taken as arguments because every other hypothesis here, the
@@ -320,7 +321,7 @@ theorem isUniversallyPureAbove_of_isProper_schemeTheoreticSupport
     IsUniversallyPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_structure_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L317). The attribute's comment: “part (3): the source of a proper decent morphism is universally pure above every point of the target”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_structure_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProper.lean#L319). The attribute's comment: “part (3): the source of a proper decent morphism is universally pure above every point of the target”.
 
 > **Stacks 0CVI, part (3).** If `f : X ⟶ Y` is a proper decent morphism of algebraic spaces
 > over `S`, then `X` is universally pure above every point of `Y`, that is, universally pure
@@ -337,7 +338,7 @@ theorem isUniversallyPureAbove_structure_of_isProper
       (structurePrePureSituation hX hY f (IsProper.isFiniteType B S hS hf) hdec y)
 ```
 
-**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_of_isProper_comp`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean#L72). The attribute's comment: “part (1), for any presentation of the module as the direct image along a closed immersion whose composite to the target is proper”.
+**`AlgebraicGeometry.Space.ClosedSubspaceModule.isUniversallyPureAbove_of_isProper_comp`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean#L72). The attribute's comment: “part (1), for any presentation of the module as the direct image along a closed immersion whose composite to the target is proper”.
 
 > **Stacks 0CVI, part (1), for a closed-immersion presentation of the module.** In the
 > situation of Stacks 0CV6, let `i : Z ⟶ X` be a closed immersion and suppose `ℱ = i_*𝒢` for a
@@ -351,7 +352,7 @@ theorem isUniversallyPureAbove_structure_of_isProper
 alias ClosedSubspaceModule.isUniversallyPureAbove_of_isProper_comp
 ```
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper_supportSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean#L105). The attribute's comment: “part (1): a finite type quasi-coherent module whose scheme-theoretic support is proper over the target is universally pure above every point of the target”.
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_isProper_supportSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityProperSupport.lean#L105). The attribute's comment: “part (1): a finite type quasi-coherent module whose scheme-theoretic support is proper over the target is universally pure above every point of the target”.
 
 > **Stacks 0CVI, part (1).** In the situation of Stacks 0CV6, if the support of `ℱ` is proper
 > over `Y`, then `ℱ` is universally pure above `y`; the point `y` being arbitrary, `ℱ` is
@@ -377,4 +378,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.3, Tag 0CVC](https://stacks.math.columbia.edu/tag/0CVC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

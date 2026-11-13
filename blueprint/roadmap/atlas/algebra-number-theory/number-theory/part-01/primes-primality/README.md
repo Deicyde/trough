@@ -1,6 +1,6 @@
 # Primes and primality
 
-220 results of ATLAS's vault, 95 proved and 125 stated but not proved, in this branch's topics.
+220 results of ATLAS's vault, 109 proved and 111 stated but not proved, in this branch's topics.
 
 Individual primes and prime tests: special prime families, primality criteria, pseudoprimes, Carmichael numbers, Fermat and Mersenne numbers.
 

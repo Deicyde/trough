@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.22 Descending finite type schemes
 
-Section 32.22 of the Stacks Project, [Tag 0CNL](https://stacks.math.columbia.edu/tag/0CNL). 9 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.22 of the Stacks Project, [Tag 0CNL](https://stacks.math.columbia.edu/tag/0CNL). 9 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CNM, a situation
 
 [Tag 0CNM](https://stacks.math.columbia.edu/tag/0CNM) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/NoetherianSystem.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/NoetherianSystem.lean#L45).
+**`AlgebraicGeometry.LimitNoetherianSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/NoetherianSystem.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/NoetherianSystem.lean#L45).
 
 > **Stacks Project, Tag 0CNM.** A directed inverse system of Noetherian schemes with affine
 > transition morphisms, equipped with a chosen limiting cone.
@@ -28,7 +28,7 @@ structure LimitNoetherianSituation (I : Type v) [Preorder I] [Nonempty I]
 
 [Tag 0CNN](https://stacks.math.columbia.edu/tag/0CNN) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.nonempty_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/GoodDiagramExistence.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/GoodDiagramExistence.lean#L99).
+**`AlgebraicGeometry.LimitNoetherianSituation.nonempty_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/GoodDiagramExistence.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/GoodDiagramExistence.lean#L99).
 
 > **Stacks Project, Tag 0CNN.** In the limit situation `S = lim S_i` of a directed inverse
 > system of Noetherian schemes with affine transition morphisms, a quasi-separated morphism
@@ -46,7 +46,7 @@ theorem nonempty_goodDiagram {I : Type u} [Preorder I] [Nonempty I] [IsDirected 
 
 [Tag 0CNQ](https://stacks.math.columbia.edu/tag/0CNQ) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemLimit.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemLimit.lean#L184).
+**`AlgebraicGeometry.LimitNoetherianSituation.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemLimit.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemLimit.lean#L184).
 
 > **Stacks Project, Tag 0CNQ.** The scheme-theoretic images of a good diagram at
 > all later stages form an inverse system with canonical limit `X`.
@@ -63,7 +63,7 @@ noncomputable def isLimit_imageCone {I : Type v} [Preorder I] [Nonempty I]
 
 [Tag 0CNR](https://stacks.math.columbia.edu/tag/0CNR) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.exists_morphismAt_of_dominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Existence/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Existence/Basic.lean#L302). The attribute's comment: “existence”.
+**`AlgebraicGeometry.LimitNoetherianSituation.exists_morphismAt_of_dominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Existence/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Existence/Basic.lean#L302). The attribute's comment: “existence”.
 
 > **Stacks Project, Tag 0CNR, existence.** A morphism of schemes over the limit is realized by
 > a morphism of the systems of scheme-theoretic images on a sufficiently late common tail.
@@ -81,7 +81,7 @@ public theorem exists_morphismAt_of_dominant (D : LimitNoetherianSituation.{v, u
       Nonempty (MorphismAt D f GX GY i₀ hX hY)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.exists_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean#L62). The attribute's comment: “existence”.
+**`AlgebraicGeometry.LimitNoetherianSituation.exists_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean#L63). The attribute's comment: “existence”.
 
 > **Stacks Project, Tag 0CNR, existence.** A morphism of schemes over the limit is
 > realized by a morphism of the systems of images on a sufficiently late common tail.
@@ -97,7 +97,7 @@ theorem exists_morphismAt (D : LimitNoetherianSituation.{v, u} I)
       Nonempty (MorphismAt D f GX GY i₀ hX hY)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_eq_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean#L75). The attribute's comment: “eventual uniqueness”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_eq_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FiniteTypeSystemMorphism.lean#L76). The attribute's comment: “eventual uniqueness”.
 
 > **Stacks Project, Tag 0CNR, eventual uniqueness.** Two system morphisms inducing the same
 > limit morphism agree at every sufficiently late stage.
@@ -113,7 +113,7 @@ theorem eventually_eq_morphismAt (D : LimitNoetherianSituation.{v, u} I)
         F.maps.app j = G.maps.app j
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.MorphismAt.eventually_eq_morphismAt_of_dominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitSmallDominantIndex/Uniqueness.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitSmallDominantIndex/Uniqueness.lean#L235). The attribute's comment: “eventual uniqueness”.
+**`AlgebraicGeometry.LimitNoetherianSituation.MorphismAt.eventually_eq_morphismAt_of_dominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitSmallDominantIndex/Uniqueness.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitSmallDominantIndex/Uniqueness.lean#L235). The attribute's comment: “eventual uniqueness”.
 
 > Two morphisms of the image systems inducing the same morphism on the limits agree at every
 > sufficiently late stage.
@@ -128,7 +128,7 @@ public theorem eventually_eq_morphismAt_of_dominant (F G : MorphismAt D f GX GY 
 
 [Tag 0CNS](https://stacks.math.columbia.edu/tag/0CNS) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventual_iso_imageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean#L199). The attribute's comment: “eventual isomorphism”.
+**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventual_iso_imageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean#L199). The attribute's comment: “eventual isomorphism”.
 
 > **Stacks Project, Tag 0CNS.** The systems associated to two good diagrams for the same
 > scheme over the limit become isomorphic on a common tail, by an isomorphism of systems inducing
@@ -148,7 +148,7 @@ theorem exists_eventual_iso_imageSystem [FinallySmall.{u} I]
         (G.maps.app j ≫ F.maps.app j = 𝟙 _)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_natural_imageSystem_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean#L257). The attribute's comment: “naturality”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_natural_imageSystem_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ImageSystemComparison.lean#L257). The attribute's comment: “naturality”.
 
 > **Stacks Project, Tag 0CNS, naturality.** The comparison between the systems of two choices
 > of good diagrams commutes, eventually, with any morphism of schemes over the limit.
@@ -176,7 +176,7 @@ theorem eventually_natural_imageSystem_comparison [FinallySmall.{u} I]
 
 [Tag 0CNT](https://stacks.math.columbia.edu/tag/0CNT) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_flat_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L57). The attribute's comment: “eventual flatness”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_flat_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L56). The attribute's comment: “eventual flatness”.
 
 > **Stacks Project, Tag 0CNT, eventual flatness.**
 >
@@ -198,7 +198,7 @@ public theorem eventually_flat_morphismAt
       ∀ (j : Over (op i₀)), i₃ ≤ unop j.left → Flat (F.maps.app j)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isPullback_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L77). The attribute's comment: “cartesian transition squares”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isPullback_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L76). The attribute's comment: “cartesian transition squares”.
 
 > **Stacks Project, Tag 0CNT, cartesian transition squares.**
 >
@@ -225,7 +225,7 @@ public theorem eventually_isPullback_morphismAt
             (F.maps.app k)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isPullback_limit_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L102). The attribute's comment: “cartesian limit square”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isPullback_limit_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FlatImageSystemModels.lean#L101). The attribute's comment: “cartesian limit square”.
 
 > **Stacks Project, Tag 0CNT, cartesian limit square.**
 >
@@ -255,7 +255,7 @@ public theorem eventually_isPullback_limit_morphismAt
 
 [Tag 0CNU](https://stacks.math.columbia.edu/tag/0CNU) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_smooth_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/SmoothImageSystem.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/SmoothImageSystem.lean#L267).
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_smooth_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/SmoothImageSystem.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/SmoothImageSystem.lean#L267).
 
 > The morphisms on the image systems of a smooth map become smooth at every
 > sufficiently late stage.
@@ -284,7 +284,7 @@ theorem eventually_smooth_morphismAt {I : Type v} [Preorder I] [Nonempty I]
 
 [Tag 0CNV](https://stacks.math.columbia.edu/tag/0CNV) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isProper_morphismAt'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean#L196).
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_isProper_morphismAt'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean#L196).
 
 > **[Stacks, Tag 0CNV].** In Situation [Stacks, Tag 0CNM], the components of a morphism of the
 > image systems of two good diagrams which induces a proper morphism on the limits are proper from
@@ -311,7 +311,7 @@ theorem eventually_isProper_morphismAt' {I : Type u} [Preorder I] [Nonempty I]
 
 [Tag 0CNW](https://stacks.math.columbia.edu/tag/0CNW) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitNoetherianSituation.eventually_comp_eq_comp_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/CartesianSquare.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/CartesianSquare.lean#L111). The attribute's comment: “eventual commutation of the two composites of systems”.
+**`AlgebraicGeometry.LimitNoetherianSituation.eventually_comp_eq_comp_morphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/CartesianSquare.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/CartesianSquare.lean#L111). The attribute's comment: “eventual commutation of the two composites of systems”.
 
 > **Stacks Project, Tag 0CNW, the eventual commutation.** Given a commuting square of schemes
 > quasi-separated and of finite type over the limit `S`, good diagrams for its four corners and
@@ -333,7 +333,7 @@ theorem eventually_comp_eq_comp_morphismAt (D : LimitNoetherianSituation.{v, u} 
       P.maps.app j ≫ A.maps.app j = Q.maps.app j ≫ B.maps.app j
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.isClosedImmersion_fibreProductComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductClosedImmersion.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductClosedImmersion.lean#L216). The attribute's comment: “closed immersion of the comparison, for the model `W² ×_{W⁴} W³` of the first corner”.
+**`AlgebraicGeometry.LimitNoetherianSituation.isClosedImmersion_fibreProductComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductClosedImmersion.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductClosedImmersion.lean#L216). The attribute's comment: “closed immersion of the comparison, for the model `W² ×_{W⁴} W³` of the first corner”.
 
 > For the model `W² ×_{W⁴} W³` of the first corner of a cartesian square, the comparison
 > `(q_j, p_j) : X¹_j ⟶ X²_j ×_{X⁴_j} X³_j` is a closed immersion at every stage.
@@ -347,7 +347,7 @@ theorem isClosedImmersion_fibreProductComparison (j : Over (op i₀)) :
       (fibreProduct_comp_eq_comp G₄ M₂ M₃ hsq hq hb ha i₀ h j))
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventually_isClosedImmersion_fibreComparison_of_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean#L363). The attribute's comment: “closed immersion of the comparison, for four independently chosen good diagrams”.
+**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventually_isClosedImmersion_fibreComparison_of_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean#L363). The attribute's comment: “closed immersion of the comparison, for four independently chosen good diagrams”.
 
 > **Stacks Project, Tag 0CNW, the closed immersion, for four independently chosen good
 > diagrams.** Given a cartesian square of schemes over `S`, a good diagram for each of its four
@@ -380,7 +380,7 @@ theorem exists_eventually_isClosedImmersion_fibreComparison_of_goodDiagram
       IsClosedImmersion (MorphismAt.fibreComparisonApp P Q A B j hj)
 ```
 
-**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventually_isClosedImmersion_and_isIso_fibreComparison_of_fourIndices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean#L509).
+**`AlgebraicGeometry.LimitNoetherianSituation.exists_eventually_isClosedImmersion_and_isIso_fibreComparison_of_fourIndices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitMorphismAt/FibreProductComparison.lean#L509).
 
 > **Stacks Project, Tag 0CNW.** In the limit situation `S = lim S_i` of a directed inverse
 > system of Noetherian schemes with affine transition morphisms, let
@@ -445,4 +445,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.22, Tag 0CNL](https://stacks.math.columbia.edu/tag/0CNL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

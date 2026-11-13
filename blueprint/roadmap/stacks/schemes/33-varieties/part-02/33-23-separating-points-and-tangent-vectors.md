@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.23 Separating points and tangent vectors
 
-Section 33.23 of the Stacks Project, [Tag 0E8R](https://stacks.math.columbia.edu/tag/0E8R). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.23 of the Stacks Project, [Tag 0E8R](https://stacks.math.columbia.edu/tag/0E8R). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E8S, a lemma
 
 [Tag 0E8S](https://stacks.math.columbia.edu/tag/0E8S) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_and_isClosedImmersion_toProjectiveSpaceOfModule_of_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/Canonical.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/Canonical.lean#L454).
+**`AlgebraicGeometry.isRelativelyVeryAmple_and_isClosedImmersion_toProjectiveSpaceOfModule_of_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/Canonical.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/Canonical.lean#L454).
 
 > **[Stacks, Tag 0E8S](https://stacks.math.columbia.edu/tag/0E8S).** Let `k` be an
 > algebraically closed field, let `X` be a proper `k`-scheme, let `ℒ` be an invertible
@@ -59,7 +59,7 @@ theorem isRelativelyVeryAmple_and_isClosedImmersion_toProjectiveSpaceOfModule_of
 
 [Tag 0E8T](https://stacks.math.columbia.edu/tag/0E8T) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwo.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwo.lean#L196). The attribute's comment: “the degree-two hypothesis is stated with the degree of a zero-dimensional subscheme as finrank over k; the classification of degree-two subschemes into point pairs and fat points is a hypothesis, as is the Tag 0FCY morphism to 𝐏(E) inherited from Tag 0E8S, and the linear system is required to be complete”.
+**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwo.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwo.lean#L196). The attribute's comment: “the degree-two hypothesis is stated with the degree of a zero-dimensional subscheme as finrank over k; the classification of degree-two subschemes into point pairs and fat points is a hypothesis, as is the Tag 0FCY morphism to 𝐏(E) inherited from Tag 0E8S, and the linear system is required to be complete”.
 
 > **[Stacks, Tag 0E8T](https://stacks.math.columbia.edu/tag/0E8T).** Let `k` be an
 > algebraically closed field, let `X` be proper over `k` through `p`, let `E` be a quasi-coherent
@@ -87,7 +87,7 @@ theorem isRelativelyVeryAmple_of_surjectsOnDegreeTwo [IsAlgClosed k]
     IsRelativelyVeryAmple p L
 ```
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo_of_complete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoClassification.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoClassification.lean#L646). The attribute's comment: “the degree-two criterion with the classification of the degree-two zero-dimensional subschemes into point pairs and fat points PROVED; what is still assumed is the Tag 0FCY morphism to 𝐏(E) with its twist identification, inherited from Tag 0E8S, and completeness of the linear system it realizes”.
+**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo_of_complete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoClassification.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoClassification.lean#L646). The attribute's comment: “the degree-two criterion with the classification of the degree-two zero-dimensional subschemes into point pairs and fat points PROVED; what is still assumed is the Tag 0FCY morphism to 𝐏(E) with its twist identification, inherited from Tag 0E8S, and completeness of the linear system it realizes”.
 
 > **[Stacks, Tag 0E8T](https://stacks.math.columbia.edu/tag/0E8T), with the classification of
 > the degree-two subschemes proved.** Let `k` be algebraically closed, let `X` be proper over `k`
@@ -118,7 +118,7 @@ theorem isRelativelyVeryAmple_of_surjectsOnDegreeTwo_of_complete
     IsRelativelyVeryAmple p L
 ```
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoComplete.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoComplete.lean#L374). The attribute's comment: “the full statement, with no assumed data: the dimension of a zero-dimensional closed subscheme is the topological Krull dimension of its space and its degree is the dimension over k of its ring of global sections”.
+**`AlgebraicGeometry.isRelativelyVeryAmple_of_surjectsOnDegreeTwo'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoComplete.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SeparatingPointsTangentVectors/DegreeTwoComplete.lean#L374). The attribute's comment: “the full statement, with no assumed data: the dimension of a zero-dimensional closed subscheme is the topological Krull dimension of its space and its degree is the dimension over k of its ring of global sections”.
 
 > **[Stacks, Tag 0E8T](https://stacks.math.columbia.edu/tag/0E8T).** Let `k` be an
 > algebraically closed field, let `X` be a proper `k`-scheme and let `ℒ` be an invertible
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.23, Tag 0E8R](https://stacks.math.columbia.edu/tag/0E8R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

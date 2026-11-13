@@ -17,7 +17,7 @@ statement: formalized
 >   tournament conjecture for large tournaments." *Proc. London Math. Soc.* 102, pp. 731--766.
 >   [arXiv:1010.4430](https://arxiv.org/abs/1010.4430)
 
-*Quoted from [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved.
 
@@ -39,7 +39,7 @@ theorem sumner_conjecture :
           Fintype.card V = 2 * n - 2 → G.IsTournament → Embeds D G
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L57).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L57).
 
 ## `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.large_n`
 
@@ -58,7 +58,7 @@ theorem sumner_conjecture.variants.large_n :
           Fintype.card V = 2 * n - 2 → G.IsTournament → Embeds D G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L71).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L71).
 
 ## `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.el_sahili`
 
@@ -79,7 +79,7 @@ theorem sumner_conjecture.variants.el_sahili (n : ℕ) (hn : 2 ≤ n)
     (hV : Fintype.card V = 3 * n - 3) (hG : G.IsTournament) : Embeds D G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L88).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L88).
 
 ## `SumnerUniversalTournamentConjecture.sumner_conjecture.variants.sharp`
 
@@ -99,7 +99,7 @@ theorem sumner_conjecture.variants.sharp (n : ℕ) (hn : 2 ≤ n) :
         Fintype.card V = 2 * n - 3 ∧ G.IsTournament ∧ ¬ Embeds D G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L103).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean#L103).
 
 ## Depends on
 
@@ -107,5 +107,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean)
+- [FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SumnerUniversalTournamentConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Sumner%27s_conjecture)

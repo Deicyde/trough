@@ -7,7 +7,7 @@ statement: formalized
 
 # Intersections in pairs of words
 
-9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html).
+9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html).
 
 ## Non-intersecting pairs of words
 
@@ -27,7 +27,7 @@ $N = \sum_{j=1}^{k-1} \binom{k}{j} \, j! \, S(n, j) \,
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_card_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-card-eq-coef).
+Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_card_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-card-eq-coef).
 
 ## Generating function of non-intersecting pairs of words of equal length
 
@@ -45,7 +45,7 @@ counted.
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_sameLength_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-same-length).
+Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_sameLength_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-same-length).
 
 ## Non-intersecting pairs of words of equal length
 
@@ -58,7 +58,7 @@ $\sum_{j=1}^{k-1} \binom{k}{j} \, j! \, S(n, j) \, (k-j)^n$.
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_sameLength_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-same-length-2).
+Stated but not proved: `MetaMathlibExt.nonIntersectingWordPairs_sameLength_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#non-intersecting-word-pairs-same-length-2).
 
 ## Overlap statistic on pairs of words
 
@@ -74,7 +74,7 @@ $\sum_{j=1}^{k} \binom{k}{j} \, [x^r]\bigl(c_j x \, (1 - c_j x)^{-1}\bigr) \, j!
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.wordPairs_overlap_sum_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#word-pairs-overlap-sum-eq-coeff).
+Stated but not proved: `MetaMathlibExt.wordPairs_overlap_sum_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#word-pairs-overlap-sum-eq-coeff).
 
 ## Overlap statistic on pairs of words of equal length
 
@@ -88,7 +88,7 @@ of words of length $n$ equals $\sum_{j=1}^{k} \binom{k}{j} \, j! \, S(n, j) \, (
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.wordPairs_sameLength_overlap_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#word-pairs-same-length-overlap-sum).
+Stated but not proved: `MetaMathlibExt.wordPairs_sameLength_overlap_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#word-pairs-same-length-overlap-sum).
 
 ## Non-intersecting pairs of weakly decreasing words
 
@@ -103,7 +103,7 @@ $\sum_{j=1}^{k-1} \binom{k}{j} \, [x^n]\bigl(x^j (1-x)^{-j}\bigr) \,
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_card_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs).
+Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_card_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs).
 
 ## Generating function of non-intersecting pairs of weakly decreasing words
 
@@ -119,7 +119,7 @@ alphabet, $u$ of length $n$ and $v$ of length $r$, such that no letter occurs in
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs-2).
+Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs-2).
 
 ## Non-intersecting pairs of weakly decreasing words of equal length
 
@@ -132,7 +132,7 @@ $\sum_{j=1}^{k-1} \binom{k}{j} \binom{n-1}{j-1} \binom{n+k-j-1}{n}$.
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_sameLength_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs-3).
+Stated but not proved: `MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_sameLength_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-non-intersecting-pairs-3).
 
 ## Overlap statistic on pairs of weakly decreasing words
 
@@ -156,7 +156,7 @@ only pair contributes $q$, while the printed sum is empty.
 
 - Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.weaklyDecreasingPairs_overlap_sum_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-pairs-overlap-sum-eq-c).
+Stated but not proved: `MetaMathlibExt.weaklyDecreasingPairs_overlap_sum_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WordPairIntersectionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html#weakly-decreasing-pairs-overlap-sum-eq-c).
 
 ## Depends on
 
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Intersections in pairs of words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/intersections-in-pairs-of-words)

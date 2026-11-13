@@ -7,7 +7,7 @@ statement: formalized
 
 # Four color theorem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html).
 
 ## Graphs with a $K_5$ minor
 
@@ -23,7 +23,7 @@ Kuratowski).
 
 - https://en.wikipedia.org/wiki/Four_color_theorem.
 
-Formalized by `MetaMathlibExt.HasK5Minor`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#has-k5-minor).
+Formalized by `MetaMathlibExt.HasK5Minor`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#has-k5-minor).
 
 ## Graphs with a $K_{3,3}$ minor
 
@@ -38,7 +38,7 @@ Together with $K_5$, this is one of the two forbidden minors for planarity (Wagn
 
 - https://en.wikipedia.org/wiki/Four_color_theorem.
 
-Formalized by `MetaMathlibExt.HasK33Minor`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#has-k33-minor).
+Formalized by `MetaMathlibExt.HasK33Minor`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#has-k33-minor).
 
 ## Planarity by forbidden minors
 
@@ -51,7 +51,7 @@ Without this condition the four color theorem fails: $K_5$ is not 4-colorable.
 
 - https://en.wikipedia.org/wiki/Four_color_theorem.
 
-Formalized by `MetaMathlibExt.IsPlanar`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#is-planar).
+Formalized by `MetaMathlibExt.IsPlanar`, a definition declared in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#is-planar).
 
 ## Four color theorem
 
@@ -68,7 +68,7 @@ conclusion fails: $K_5$ needs five colors.
 
 - https://en.wikipedia.org/wiki/Four_color_theorem.
 
-Stated but not proved: `MetaMathlibExt.fourColorTheorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#four-color-theorem).
+Stated but not proved: `MetaMathlibExt.fourColorTheorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/FourColorTheoremWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html#four-color-theorem).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Four color theorem](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring/part-01/four-color-theorem)

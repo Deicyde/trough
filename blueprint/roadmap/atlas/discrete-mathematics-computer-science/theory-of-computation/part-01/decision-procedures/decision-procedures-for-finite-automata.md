@@ -8,7 +8,7 @@ proof: formalized
 
 # Decision procedures for finite automata
 
-39 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html).
+39 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html).
 
 ## Symmetric difference of two DFAs
 
@@ -21,7 +21,7 @@ accepting state of $M$ or $q$ is an accepting state of $N$, but not both.
 
 It accepts exactly the words on which $M$ and $N$ disagree.
 
-Formalized by `DFA.symmDiff`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#symm-diff).
+Formalized by `DFA.symmDiff`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#symm-diff).
 
 ## One round of the DFA reachability search
 
@@ -30,7 +30,7 @@ $\alpha$. The round sends a finite set $S$ of states of $M$ to the set consistin
 state of $M$ and of every state that the transition function of $M$ takes some $s \in S$ to on
 some letter $a \in \alpha$.
 
-Formalized by `DFA.reachStep`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-step).
+Formalized by `DFA.reachStep`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-step).
 
 ## Reachable states of a DFA
 
@@ -42,7 +42,7 @@ $|\sigma|$ times, where $|\sigma|$ is the number of states of $M$.
 Since the round is monotone, this set is its least fixed point, and a state lies in it exactly
 when $M$ reaches it from its start state on some word.
 
-Formalized by `DFA.reachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable).
+Formalized by `DFA.reachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable).
 
 ## A state is reachable exactly when some word leads to it
 
@@ -50,14 +50,14 @@ Let $M$ be a DFA over a finite
 alphabet with finitely many states. A state $s$ of $M$ is in the set of reachable states of $M$
 if and only if there is a word $w$ such that running $M$ on $w$ from its start state ends in $s$.
 
-Formalized by `DFA.mem_reachable_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#mem-reachable-iff).
+Formalized by `DFA.mem_reachable_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#mem-reachable-iff).
 
 ## The start state is reachable
 
 For a DFA $M$ over a finite alphabet with finitely many
 states, the start state of $M$ belongs to the reachable states of $M$.
 
-Formalized by `DFA.start_mem_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#start-mem-reachable).
+Formalized by `DFA.start_mem_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#start-mem-reachable).
 
 ## Reachable states are closed under transitions
 
@@ -66,7 +66,7 @@ set of states is finite and has decidable equality. If a state $s$ of $M$ is rea
 start state, then for every letter $a$ the state to which $M$ moves from $s$ on $a$ is also
 reachable from the start state.
 
-Formalized by `DFA.step_mem_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#step-mem-reachable).
+Formalized by `DFA.step_mem_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#step-mem-reachable).
 
 ## Early-stopping DFA reachability search
 
@@ -77,7 +77,7 @@ $n = k + 1$, it returns $S$ if one round of the reachability search for $M$ send
 itself, and otherwise it returns the search from the image of $S$ under that round with at most
 $k$ rounds.
 
-Formalized by `DFA.reachableWithin`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-within).
+Formalized by `DFA.reachableWithin`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-within).
 
 ## The early-stopping search finds exactly the reachable states
 
@@ -88,7 +88,7 @@ rounds returns the set of reachable states of $M$.
 
 Since the search stops once a round changes nothing, a generous bound costs nothing.
 
-Formalized by `DFA.reachableWithin_eq_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-within-eq-reachable).
+Formalized by `DFA.reachableWithin_eq_reachable`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-within-eq-reachable).
 
 ## Accessible part of a DFA, by a bounded search
 
@@ -102,7 +102,7 @@ whose accepting states are those of them that $M$ accepts.
 Since $n \ge |\sigma|$, the search finds exactly the states that some word leads to from the start
 state of $M$, and it stops as soon as a round adds nothing, so a larger bound costs nothing.
 
-Formalized by `DFA.accessiblePartWithin`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part-within).
+Formalized by `DFA.accessiblePartWithin`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part-within).
 
 ## Accessible part of a DFA
 
@@ -114,7 +114,7 @@ the states that some word leads to from the start state of $M$), whose start sta
 state of $M$, whose transition function is that of $M$ restricted to these states, and whose
 accepting states are those of them that $M$ accepts.
 
-Formalized by `DFA.accessiblePart`, an abbreviation declared in [CSLibExt/Computability/Decidability/Regular.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part).
+Formalized by `DFA.accessiblePart`, an abbreviation declared in [CSLibExt/Computability/Decidability/Regular.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part).
 
 ## Every state of the accessible part is reached
 
@@ -123,7 +123,7 @@ $\alpha$ with a finite state set $\sigma$ with decidable equality, and let $n \g
 every state $p$ of the accessible part of $M$ found with $n$ rounds, some word $w$ leads the
 accessible part from its start state to $p$.
 
-Formalized by `DFA.accessiblePartWithin_surjective`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part-within-surjective).
+Formalized by `DFA.accessiblePartWithin_surjective`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accessible-part-within-surjective).
 
 ## Emptiness test for DFAs
 
@@ -131,7 +131,7 @@ For a DFA $M$ over a finite alphabet with finitely many states,
 the emptiness test returns true exactly when none of the reachable states of $M$ is an
 accepting state.
 
-Formalized by `DFA.isEmptyB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b).
+Formalized by `DFA.isEmptyB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b).
 
 ## The emptiness test decides emptiness of DFAs
 
@@ -139,7 +139,7 @@ Let $M$ be a DFA over a finite alphabet
 with finitely many states. The emptiness test applied to $M$ returns true if and only if the
 language accepted by $M$ is empty.
 
-Formalized by `DFA.isEmptyB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b-iff).
+Formalized by `DFA.isEmptyB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b-iff).
 
 ## Universality test for DFAs
 
@@ -148,7 +148,7 @@ states, the universality test applied to $M$ is the emptiness test applied to th
 $M$: the DFA with the same states, start state and transitions whose accepting states are the
 states that $M$ does not accept.
 
-Formalized by `DFA.isUnivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b).
+Formalized by `DFA.isUnivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b).
 
 ## The universality test decides universality of DFAs
 
@@ -156,7 +156,7 @@ Let $M$ be a DFA over a finite
 alphabet with finitely many states. The universality test applied to $M$ returns true if and
 only if $M$ accepts every word over the alphabet.
 
-Formalized by `DFA.isUnivB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b-iff).
+Formalized by `DFA.isUnivB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b-iff).
 
 ## Equivalence test for DFAs
 
@@ -168,7 +168,7 @@ a letter by moving both components, and accepts a pair $(p, q)$ when exactly one
 test of their symmetric difference: the Boolean that is true exactly when no pair of states
 reachable from the start pair is accepting.
 
-Formalized by `DFA.equivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b).
+Formalized by `DFA.equivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b).
 
 ## Correctness of the equivalence test for DFAs
 
@@ -177,7 +177,7 @@ alphabet, with finite state sets with decidable equality and decidable sets of a
 The equivalence test of $M$ and $N$ returns true if and only if $M$ and $N$ accept the same
 language.
 
-Formalized by `DFA.equivB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b-iff).
+Formalized by `DFA.equivB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b-iff).
 
 ## Acceptance test for encoded DFAs
 
@@ -186,7 +186,7 @@ decidable equality and a word $w$ over $\alpha$, the acceptance test is the Bool
 exactly when the state reached by running $D$ on $w$ from its start state is in the list of
 accepting states of $D$.
 
-Formalized by `Cslib.Automata.EncodedDFA.acceptsB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accepts-b).
+Formalized by `Cslib.Automata.EncodedDFA.acceptsB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#accepts-b).
 
 ## One round of the list reachability search
 
@@ -200,7 +200,7 @@ then delete every entry that occurs again later in the list.
 Its entries are therefore the numbers in $B$ that are $s_0$, an element $s$ of $R$, or an element
 of $\mathrm{next}(s)$ for some $s$ in $R$, each listed once.
 
-Formalized by `Cslib.Automata.EncodedDFA.reachRound`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-round).
+Formalized by `Cslib.Automata.EncodedDFA.reachRound`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-round).
 
 ## Bounded reachability search on lists of states
 
@@ -217,7 +217,7 @@ When $B$ contains $s_0$ and is closed under $\mathrm{next}$, a number is an entr
 list exactly when it is reachable from $s_0$ by finitely many, possibly zero, steps from some $s$
 to an element of $\mathrm{next}(s)$.
 
-Formalized by `Cslib.Automata.EncodedDFA.reachN`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-n).
+Formalized by `Cslib.Automata.EncodedDFA.reachN`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reach-n).
 
 ## Correctness of the bounded reachability search
 
@@ -228,7 +228,7 @@ is in $B$ and $t$ is a successor of $s$, then $t$ is in $B$. Then a natural numb
 list computed by the reachability search from $s_0$ through $\mathrm{next}$ within $B$ if and
 only if $t$ is reachable from $s_0$ in zero or more successor steps.
 
-Formalized by `Cslib.Automata.EncodedDFA.mem_reachN_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#mem-reach-n-iff).
+Formalized by `Cslib.Automata.EncodedDFA.mem_reachN_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#mem-reach-n-iff).
 
 ## Reachable states of an encoded DFA
 
@@ -241,7 +241,7 @@ to on the letters of $D$, in the order of the letters.
 A natural number lies in this list exactly when the automaton denoted by $D$ reaches it from its
 start state on some word.
 
-Formalized by `Cslib.Automata.EncodedDFA.reachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-2).
+Formalized by `Cslib.Automata.EncodedDFA.reachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#reachable-2).
 
 ## Emptiness test for encoded DFAs
 
@@ -251,7 +251,7 @@ list of reachable states of $D$ is in the accepting list of $D$.
 
 It returns true exactly when the language of $D$ is empty.
 
-Formalized by `Cslib.Automata.EncodedDFA.isEmptyB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b-2).
+Formalized by `Cslib.Automata.EncodedDFA.isEmptyB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-empty-b-2).
 
 ## Coded pairs of states of two encoded DFAs
 
@@ -261,7 +261,7 @@ under Mathlib's pairing function. This is the list of the numbers $\langle s, t 
 running over the states of $D$ in their listed order and, for each $s$, $t$ running over the
 states of $E$ in their listed order.
 
-Formalized by `Cslib.Automata.EncodedDFA.pairStates`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-states).
+Formalized by `Cslib.Automata.EncodedDFA.pairStates`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-states).
 
 ## Successors of a pair of states
 
@@ -271,7 +271,7 @@ $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$. The successors of $p$ form the li
 each letter $a$ in the letters of $D$ followed by the letters of $E$, the code of the pair made of
 the step of $D$ from $s$ on $a$ and the step of $E$ from $t$ on $a$.
 
-Formalized by `Cslib.Automata.EncodedDFA.pairNext`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-next).
+Formalized by `Cslib.Automata.EncodedDFA.pairNext`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-next).
 
 ## Reachable pairs of states of two encoded DFAs
 
@@ -288,7 +288,7 @@ by the letters of $E$.
 A number lies in this list exactly when it is $\langle q, r \rangle$ for the states $q$ and $r$
 that $D$ and $E$ reach on some common word.
 
-Formalized by `Cslib.Automata.EncodedDFA.pairReachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-reachable).
+Formalized by `Cslib.Automata.EncodedDFA.pairReachable`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#pair-reachable).
 
 ## Equivalence test for encoded DFAs
 
@@ -300,7 +300,7 @@ and only if $t$ is in the accepting list of $E$.
 
 It returns true exactly when $D$ and $E$ have the same language.
 
-Formalized by `Cslib.Automata.EncodedDFA.equivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b-2).
+Formalized by `Cslib.Automata.EncodedDFA.equivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#equiv-b-2).
 
 ## Universality test for encoded DFAs
 
@@ -310,7 +310,7 @@ the list of reachable states of $D$ is in the accepting list of $D$.
 
 It returns true exactly when the language of $D$ contains every word over $\alpha$.
 
-Formalized by `Cslib.Automata.EncodedDFA.isUnivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b-2).
+Formalized by `Cslib.Automata.EncodedDFA.isUnivB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#is-univ-b-2).
 
 ## An encoded DFA on its listed states
 
@@ -320,7 +320,7 @@ transitions), whose start state is the start state of $D$, whose transition func
 $D$ restricted to these states, and whose accepting states are those in the accepting list of
 $D$.
 
-Formalized by `Cslib.Automata.EncodedDFA.toFinDFA`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#to-fin-dfa).
+Formalized by `Cslib.Automata.EncodedDFA.toFinDFA`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#to-fin-dfa).
 
 ## A long accepted word makes the language of an encoded DFA infinite
 
@@ -330,7 +330,7 @@ length at least $N$, then the language of $D$ is infinite.
 
 The proof pumps the word, using the pumping lemma for DFAs.
 
-Formalized by `Cslib.Automata.EncodedDFA.infinite_of_mem_of_le`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-of-mem-of-le).
+Formalized by `Cslib.Automata.EncodedDFA.infinite_of_mem_of_le`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-of-mem-of-le).
 
 ## Accepted words of length between the number of listed states and twice it
 
@@ -340,7 +340,7 @@ list of states. For every natural number $n$ and every word $w$ of length $n$ in
 $D$ with $N \le n$, the language of $D$ contains a word $v$ whose length $|v|$ satisfies
 $N \le |v| < 2N$.
 
-Formalized by `Cslib.Automata.EncodedDFA.exists_mem_le_lt`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#exists-mem-le-lt).
+Formalized by `Cslib.Automata.EncodedDFA.exists_mem_le_lt`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#exists-mem-le-lt).
 
 ## Words of a given length
 
@@ -349,7 +349,7 @@ letters and for $n \in \mathbb{N}$, the list of the words of length $n$ over $\a
 from the list whose only entry is the empty word, it replaces $n$ times each word $w$ of the
 current list by the words $a w$ for the letters $a$ of $\alpha$, in their enumeration order.
 
-Formalized by `Cslib.Automata.EncodedDFA.wordsOfLength`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 587](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L587). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#words-of-length).
+Formalized by `Cslib.Automata.EncodedDFA.wordsOfLength`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 587](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L587). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#words-of-length).
 
 ## Infiniteness test for encoded DFAs
 
@@ -358,7 +358,7 @@ let $N$ be the length of its list of states. The infiniteness test is the Boolea
 exactly when the language of $D$ contains a word $w$ with $N \le |w| < 2N$; it checks every word
 of each length $N + i$ with $0 \le i < N$.
 
-Formalized by `Cslib.Automata.EncodedDFA.infiniteB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-b).
+Formalized by `Cslib.Automata.EncodedDFA.infiniteB`, a definition declared in [CSLibExt/Computability/Decidability/Regular.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-b).
 
 ## Correctness of the infiniteness test for encoded DFAs
 
@@ -366,7 +366,7 @@ For every encoded DFA $D$ over a
 finite alphabet, the infiniteness test returns true on $D$ if and only if the language of $D$ is
 infinite.
 
-Formalized by `Cslib.Automata.EncodedDFA.infiniteB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-b-iff).
+Formalized by `Cslib.Automata.EncodedDFA.infiniteB_iff`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#infinite-b-iff).
 
 ## Acceptance for DFAs is decidable
 
@@ -379,7 +379,7 @@ multi-stack machine. This is the problem $A_{\mathrm{DFA}}$.
 
 - Sipser, *Introduction to the Theory of Computation*, Theorem 4.1.
 
-Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_mem_language`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-mem-language).
+Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_mem_language`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-mem-language).
 
 ## Emptiness of DFAs is decidable
 
@@ -391,7 +391,7 @@ empty is decidable by a multi-stack machine. This is the problem $E_{\mathrm{DFA
 
 - Sipser, *Introduction to the Theory of Computation*, Theorem 4.4.
 
-Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq_zero`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq-zero).
+Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq_zero`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq-zero).
 
 ## Equivalence of DFAs is decidable
 
@@ -404,7 +404,7 @@ $\mathrm{EQ}_{\mathrm{DFA}}$.
 
 - Sipser, *Introduction to the Theory of Computation*, Theorem 4.5.
 
-Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq).
+Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq).
 
 ## Universality of DFAs is decidable
 
@@ -413,7 +413,7 @@ a primitive recursive encoding, the property of an encoded DFA over $\alpha$ tha
 the set of all words over $\alpha$ is decidable by a multi-stack machine. This is the problem
 $\mathrm{ALL}_{\mathrm{DFA}}$.
 
-Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq_top`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq-top).
+Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_eq_top`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-eq-top).
 
 ## Infiniteness of DFAs is decidable
 
@@ -422,7 +422,7 @@ enumeration of its letters, decidable equality and a primitive recursive encodin
 of an encoded DFA over $\alpha$ that its language is infinite is decidable by a multi-stack
 machine. This is the problem $\mathrm{INFINITE}_{\mathrm{DFA}}$.
 
-Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_infinite`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Regular.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-infinite).
+Formalized by `Cslib.Automata.EncodedDFA.tm2Decidable_language_infinite`, a theorem declared in [CSLibExt/Computability/Decidability/Regular.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Regular.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html#tm2-decidable-language-infinite).
 
 ## Depends on
 
@@ -431,4 +431,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Decision procedures for finite automata](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/decision-procedures/decision-procedures-for-finite-automata)

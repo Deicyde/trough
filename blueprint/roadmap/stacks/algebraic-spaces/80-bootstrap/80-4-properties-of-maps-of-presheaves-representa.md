@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.4 Properties of maps of presheaves representable by algebraic spaces
 
-Section 80.4 of the Stacks Project, [Tag 046E](https://stacks.math.columbia.edu/tag/046E). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 80.4 of the Stacks Project, [Tag 046E](https://stacks.math.columbia.edu/tag/046E). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03XZ, a definition
 
 [Tag 03XZ](https://stacks.math.columbia.edu/tag/03XZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableProperty.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableProperty.lean#L78).
+**`AlgebraicGeometry.Space.HasProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableProperty.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableProperty.lean#L78).
 
 > **Stacks 03XZ.** A map of presheaves `a : F ⟶ G` on the big fppf site of `S` which is
 > representable by algebraic spaces *has property `P`* when, for every object `U` of the site
@@ -31,7 +31,7 @@ abbrev HasProperty (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 046F](https://stacks.math.columbia.edu/tag/046F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasProperty.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BootstrapRepresentableCalculus.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BootstrapRepresentableCalculus.lean#L98).
+**`AlgebraicGeometry.Space.HasProperty.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BootstrapRepresentableCalculus.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BootstrapRepresentableCalculus.lean#L98).
 
 > **Stacks 046F.** In a Cartesian square of presheaves on the big fppf site of `S` whose
 > right-hand column `a` is representable by algebraic spaces and has a property `P` of morphisms
@@ -49,7 +49,7 @@ theorem HasProperty.of_isPullback {P : MorphismProperty (AlgebraicSpaces B S hS)
     HasProperty B S hS P a' (IsRepresentableByAlgebraicSpaces.of_isPullback sq ha)
 ```
 
-**`AlgebraicGeometry.Space.hasProperty_of_isPullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L113). The attribute's comment: “property”.
+**`AlgebraicGeometry.Space.hasProperty_of_isPullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L115). The attribute's comment: “property”.
 
 > **Stacks 046F.** A property of morphisms of algebraic spaces over `S` which is stable
 > under base change is inherited, as a property of a morphism of presheaves representable by
@@ -68,13 +68,13 @@ lemma hasProperty_of_isPullback (P : MorphismProperty (AlgebraicSpaces B S hS))
 
 Declarations registered for the tag:
 
-- [`isRepresentableByAlgebraicSpaces_of_isPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRepresentableByAlgebraicSpaces_of_isPullback#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L107) (StacksFrontier): “representability”.
+- [`isRepresentableByAlgebraicSpaces_of_isPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRepresentableByAlgebraicSpaces_of_isPullback#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L109) (StacksFrontier): “representability”.
 
 ## Tag 046G, a lemma
 
 [Tag 046G](https://stacks.math.columbia.edu/tag/046G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasProperty_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L229). The attribute's comment: “property of the composite”.
+**`AlgebraicGeometry.Space.hasProperty_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L233). The attribute's comment: “property of the composite”.
 
 > **Stacks 046G.** A composite of morphisms of presheaves on the big fppf site of `S`
 > representable by algebraic spaces has a property `P` of morphisms of algebraic spaces over
@@ -95,13 +95,13 @@ theorem hasProperty_comp (P : MorphismProperty (AlgebraicSpaces B S hS))
 
 Declarations registered for the tag:
 
-- [`isRepresentableByAlgebraicSpaces_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRepresentableByAlgebraicSpaces_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L221) (StacksFrontier): “representability”.
+- [`isRepresentableByAlgebraicSpaces_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRepresentableByAlgebraicSpaces_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L224) (StacksFrontier): “representability”.
 
 ## Tag 046H, a lemma
 
 [Tag 046H](https://stacks.math.columbia.edu/tag/046H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasProperty_prod_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L263).
+**`AlgebraicGeometry.Space.hasProperty_prod_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Properties.lean#L267).
 
 > **Stacks 046H.** The product of two morphisms of presheaves on the big fppf site of `S`
 > representable by algebraic spaces has a property `P` of morphisms of algebraic spaces over
@@ -127,7 +127,7 @@ lemma hasProperty_prod_map (P : MorphismProperty (AlgebraicSpaces B S hS))
 
 [Tag 0AM1](https://stacks.math.columbia.edu/tag/0AM1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasProperty.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentabilityCriteria.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentabilityCriteria.lean#L102).
+**`AlgebraicGeometry.Space.HasProperty.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentabilityCriteria.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentabilityCriteria.lean#L102).
 
 > The property tested by `AlgebraicGeometry.Space.HasProperty` may be enlarged: if `P` implies
 > `Q` for every morphism of algebraic spaces over `S`, then a morphism of presheaves representable
@@ -144,7 +144,7 @@ theorem HasProperty.mono {P Q : MorphismProperty (AlgebraicSpaces B S hS)} (hPQ 
 
 [Tag 04S1](https://stacks.math.columbia.edu/tag/04S1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallySurjective_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallySurjective.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallySurjective.lean#L70).
+**`AlgebraicGeometry.Space.isLocallySurjective_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallySurjective.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallySurjective.lean#L70).
 
 > **Stacks 04S1.** A morphism of fppf sheaves on the big fppf site of `S` which is
 > representable by algebraic spaces, surjective, flat and locally of finite presentation is
@@ -172,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.4, Tag 046E](https://stacks.math.columbia.edu/tag/046E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

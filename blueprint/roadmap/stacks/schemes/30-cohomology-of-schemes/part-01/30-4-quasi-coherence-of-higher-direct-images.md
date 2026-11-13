@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.4 Quasi-coherence of higher direct images
 
-Section 30.4 of the Stacks Project, [Tag 01XH](https://stacks.math.columbia.edu/tag/01XH). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.4 of the Stacks Project, [Tag 01XH](https://stacks.math.columbia.edu/tag/01XH). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08DR, a lemma
 
 [Tag 08DR](https://stacks.math.columbia.edu/tag/08DR) in the Stacks Project.
 
-**`AlgebraicGeometry.baseChangeOverAffineBase_of_affineOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalBaseChange.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalBaseChange.lean#L345). The attribute's comment: “the induction of Stacks 0DJ9 from the affine opens of X to X itself”.
+**`AlgebraicGeometry.baseChangeOverAffineBase_of_affineOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalBaseChange.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalBaseChange.lean#L345). The attribute's comment: “the induction of Stacks 0DJ9 from the affine opens of X to X itself”.
 
 > **The induction of Stacks 0DJ9 over the quasi-compact opens of `X`.**  Granted the affine
 > case and the Mayer--Vietoris step, the conclusion holds for every cartesian square over an affine
@@ -27,7 +27,7 @@ public theorem baseChangeOverAffineBase_of_affineOpens
     BaseChangeOverAffineBase.{u}
 ```
 
-**`Stacks.AlgebraicGeometry.CompactOpenInduction.of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean#L140). The attribute's comment: “induction on quasi-compact opens”.
+**`Stacks.AlgebraicGeometry.CompactOpenInduction.of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean#L140). The attribute's comment: “induction on quasi-compact opens”.
 
 > **[Stacks, Tag 08DR], the induction principle.** Let `X` be a quasi-separated scheme and let
 > `P` be a property of its open subsets such that `P` holds for every affine open, and such that
@@ -42,7 +42,7 @@ public theorem baseChangeOverAffineBase_of_affineOpens
 theorem of_isCompact [QuasiSeparatedSpace X] (S : X.Opens) (hS : IsCompact (S : Set X)) : P S
 ```
 
-**`Stacks.AlgebraicGeometry.CompactOpenInduction.top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean#L153). The attribute's comment: “induction on quasi-compact opens”.
+**`Stacks.AlgebraicGeometry.CompactOpenInduction.top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CompactOpenInduction/Basic.lean#L153). The attribute's comment: “induction on quasi-compact opens”.
 
 > **[Stacks, Tag 08DR], the conclusion at `X` itself.** For a quasi-compact quasi-separated
 > scheme, `P ⊤` holds.
@@ -51,7 +51,7 @@ theorem of_isCompact [QuasiSeparatedSpace X] (S : X.Opens) (hS : IsCompact (S : 
 theorem top [QuasiSeparatedSpace X] [CompactSpace X] : P ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.InductionPrinciple.induction_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean#L169).
+**`Stacks.AlgebraicGeometry.InductionPrinciple.induction_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean#L169).
 
 > **[Stacks, Tag 08DR], the Induction Principle.** Let `X` be a quasi-separated scheme and
 > let `P` be a property of the opens of `X` which holds for every affine open and which, given a
@@ -67,7 +67,7 @@ theorem induction_isCompact_open [QuasiSeparatedSpace X] (W : X.Opens)
     (hW : IsCompact (W : Set X)) : P W
 ```
 
-**`Stacks.AlgebraicGeometry.InductionPrinciple.induction_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean#L202). The attribute's comment: “in particular for X”.
+**`Stacks.AlgebraicGeometry.InductionPrinciple.induction_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InductionPrinciple/Basic.lean#L202). The attribute's comment: “in particular for X”.
 
 > **[Stacks, Tag 08DR], the clause "and in particular for `X`".** On a quasi-compact
 > quasi-separated scheme the induction principle applies to the whole space.
@@ -80,7 +80,7 @@ theorem induction_top [CompactSpace X] [QuasiSeparatedSpace X] : P ⊤
 
 [Tag 01XI](https://stacks.math.columbia.edu/tag/01XI) in the Stacks Project.
 
-**`Stacks.Cohomology.AffineCover.isZero_cohomology_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean#L184). The attribute's comment: “finite-cover form”.
+**`Stacks.Cohomology.AffineCover.isZero_cohomology_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean#L184). The attribute's comment: “finite-cover form”.
 
 > If `X` has affine diagonal and is covered by `t` affine opens, then the
 > cohomology of a quasi-coherent `𝒪_X`-module vanishes in every degree at least `t`.
@@ -93,7 +93,7 @@ theorem isZero_cohomology_of_finite_affine_cover (X : Scheme.{u})
     IsZero (Hgroup X.ringCatSheaf (⊤ : X.Opens) n F)
 ```
 
-**`Stacks.Cohomology.AffineCover.isZero_cohomologyPresheaf_of_affineCoveringNumber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean#L197). The attribute's comment: “minimal-cover form”.
+**`Stacks.Cohomology.AffineCover.isZero_cohomologyPresheaf_of_affineCoveringNumber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/Basic.lean#L197). The attribute's comment: “minimal-cover form”.
 
 > If `X` is quasi-compact with affine diagonal — for example if `X` is
 > separated — then the cohomology of a quasi-coherent `𝒪_X`-module vanishes in every degree at
@@ -109,7 +109,7 @@ theorem isZero_cohomologyPresheaf_of_affineCoveringNumber_le (X : Scheme.{u}) [C
       (op (⊤ : X.Opens)))
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_of_affineCoverNum_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L220).
+**`AlgebraicGeometry.isZero_cohomology_of_affineCoverNum_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L220).
 
 > **Stacks Project, Tag 01XI.** Let `X` be a quasi-compact scheme with affine diagonal — for
 > instance a separated scheme — and let `t = t(X)` be the minimal number of affine opens needed to
@@ -122,7 +122,7 @@ theorem isZero_cohomology_of_affineCoverNum_le (X : Scheme.{u}) [CompactSpace X]
     IsZero (Hgroup X.ringCatSheaf ⊤ p F)
 ```
 
-**`Stacks.Cohomology.FiniteCover.isZero_Hgroup_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EulerCharVanishing/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EulerCharVanishing/Basic.lean#L197). The attribute's comment: “finite-cover form”.
+**`Stacks.Cohomology.FiniteCover.isZero_Hgroup_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EulerCharVanishing/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EulerCharVanishing/Basic.lean#L197). The attribute's comment: “finite-cover form”.
 
 > **[Stacks, Tag 01XI], finite-cover form.** On a scheme with affine diagonal covered by `t`
 > affine opens, the cohomology of a quasi-coherent module vanishes in every degree at least `t`.
@@ -143,13 +143,13 @@ theorem isZero_Hgroup_of_finite_affine_cover
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.minimalAffineCoverCardinality`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean#L49), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean#L52) (StacksFrontier): “affine covering number”.
+- [`AlgebraicGeometry.minimalAffineCoverCardinality`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean#L49), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/CoveringNumber.lean#L52) (StacksFrontier): “affine covering number”.
 
 ## Tag 0BDY, a lemma
 
 [Tag 0BDY](https://stacks.math.columbia.edu/tag/0BDY) in the Stacks Project.
 
-**`Stacks.Cohomology.QcohDelta.exists_mono_isZero_hfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean#L165). The attribute's comment: “part (1): the embedding with vanishing higher cohomology”.
+**`Stacks.Cohomology.QcohDelta.exists_mono_isZero_hfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean#L165). The attribute's comment: “part (1): the embedding with vanishing higher cohomology”.
 
 > **Stacks 0BDY, part (1).** On a quasi-compact scheme with affine diagonal every
 > quasi-coherent `𝒪_X`-module `ℱ` admits an embedding `ℱ → ℱ'` into a quasi-coherent module with
@@ -169,7 +169,7 @@ theorem exists_mono_isZero_hfunctor (X : Scheme.{u}) [CompactSpace X]
         ∀ p : ℕ, 0 < p → IsZero ((Hfunctor X.ringCatSheaf ⊤ p).obj G.obj)
 ```
 
-**`Stacks.Cohomology.QcohDelta.cohomologyDeltaFunctor_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean#L235). The attribute's comment: “part (2): universality of the delta-functor”.
+**`Stacks.Cohomology.QcohDelta.cohomologyDeltaFunctor_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/QcohUniversalDeltaFunctor.lean#L235). The attribute's comment: “part (2): universality of the delta-functor”.
 
 > **Stacks 0BDY, part (2).** On a quasi-compact scheme with affine diagonal the cohomology
 > functors `{Hⁿ(X, -)}_{n ≥ 0}` form a *universal* δ-functor from `QCoh(𝒪_X)` to `Ab`.
@@ -186,7 +186,7 @@ theorem cohomologyDeltaFunctor_isUniversal [CompactSpace X]
 
 [Tag 071L](https://stacks.math.columbia.edu/tag/071L) in the Stacks Project.
 
-**`Stacks.Cohomology.AffineCover.isZero_cohomology_of_degree_ge_separatedCoverBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/SeparatedCover.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/SeparatedCover.lean#L271).
+**`Stacks.Cohomology.AffineCover.isZero_cohomology_of_degree_ge_separatedCoverBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/SeparatedCover.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineCoverVanishing/SeparatedCover.lean#L271).
 
 > Let `X` be a quasi-compact quasi-separated scheme and let
 > `X = U₁ ∪ … ∪ Uₙ` be an open covering by quasi-compact separated opens — for example affine ones.
@@ -207,7 +207,7 @@ theorem isZero_cohomology_of_degree_ge_separatedCoverBound {X : Scheme.{u}} [Com
       (op (⊤ : X.Opens)))
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_of_coverDegreeBound_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L290).
+**`AlgebraicGeometry.isZero_cohomology_of_coverDegreeBound_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L290).
 
 > **Stacks Project, Tag 071L.** Let `X` be a quasi-compact quasi-separated scheme and let
 > `X = U 1 ∪ … ∪ U n` be an open covering with each `U i` quasi-compact and with affine
@@ -229,7 +229,7 @@ theorem isZero_cohomology_of_coverDegreeBound_le [CompactSpace X] [QuasiSeparate
     IsZero (Hgroup X.ringCatSheaf ⊤ p F)
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_of_coverDegreeBound_le_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L303).
+**`AlgebraicGeometry.isZero_cohomology_of_coverDegreeBound_le_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/UniformVanishing/Basic.lean#L303).
 
 > **Stacks Project, Tag 071L**, with the covering hypothesis in the source's form: each `U i`
 > is quasi-compact and separated.
@@ -247,7 +247,7 @@ theorem isZero_cohomology_of_coverDegreeBound_le_of_isSeparated [CompactSpace X]
 
 [Tag 01XJ](https://stacks.math.columbia.edu/tag/01XJ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.isQuasicoherent_higherDirectImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean#L485). The attribute's comment: “quasicoherence”. References: EGA III (1.4.10), “more general”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.isQuasicoherent_higherDirectImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean#L485). The attribute's comment: “quasicoherence”. References: EGA III (1.4.10), “more general”.
 
 > **Stacks Project, Tag 01XJ (quasicoherence).** The higher direct images of a
 > quasi-coherent module under a quasi-compact and quasi-separated morphism of schemes are
@@ -259,7 +259,7 @@ instance isQuasicoherent_higherDirectImage {X S : Scheme.{u}} (f : X ⟶ S)
     (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L439). The attribute's comment: “uniform\_vanishing”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L439). The attribute's comment: “uniform\_vanishing”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is an integer, depending on the morphism alone, above which every higher direct image of
@@ -272,7 +272,7 @@ theorem exists_isZero_rightDerived_pushforward {X S : Scheme.{u}} (f : X ⟶ S)
       IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedNat_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L562). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedNat_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L562). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is a natural number, depending on the morphism alone, above which `(Rⁿ f_*) F` vanishes for
@@ -286,7 +286,7 @@ theorem exists_isZero_rightDerivedNat_pushforward {X S : Scheme.{u}} (f : X ⟶ 
       IsZero (((Scheme.Modules.pushforward f).rightDerived n).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedPlus_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L586). The attribute's comment: “uniform\_vanishing”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedPlus_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L586). The attribute's comment: “uniform\_vanishing”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is an integer, depending on the morphism alone, above which every higher direct image of
@@ -301,7 +301,7 @@ theorem exists_isZero_rightDerivedPlus_pushforward {X S : Scheme.{u}} (f : X ⟶
       IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.Tag01XJQcohInduction.higherDirectImage_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QcohInduction/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QcohInduction/Basic.lean#L332). The attribute's comment: “quasicoherence”. References: EGA III (6.2.3), “special case”.
+**`Stacks.AlgebraicGeometry.Tag01XJQcohInduction.higherDirectImage_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QcohInduction/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QcohInduction/Basic.lean#L332). The attribute's comment: “quasicoherence”. References: EGA III (6.2.3), “special case”.
 
 > **Stacks Project, Tag 01XJ (quasicoherence).** The higher direct images of a quasi-coherent
 > module under a quasi-compact and quasi-separated morphism of schemes are quasi-coherent.
@@ -318,7 +318,7 @@ instance higherDirectImage_isQuasicoherent (f : X ⟶ S) [QuasiCompact f] [Quasi
     (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.Tag01XJUniformVanishing.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean#L383). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
+**`Stacks.AlgebraicGeometry.Tag01XJUniformVanishing.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean#L383). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
 
 > **Stacks Project, Tag 01XJ (uniform\_vanishing).** Let `f : X ⟶ S` be a quasi-compact and
 > quasi-separated morphism of schemes with `S` quasi-compact.  Then there is an integer `n`,
@@ -339,7 +339,7 @@ theorem exists_isZero_rightDerived_pushforward (f : X ⟶ S) [QuasiCompact f] [Q
       IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`AlgebraicGeometry.exists_uniform_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean#L243). The attribute's comment: “base\_change\_uniform\_vanishing”. References: EGA IV (1.7.21), “base change vanishing”; EGA III (1.4.12), “existence of r”.
+**`AlgebraicGeometry.exists_uniform_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean#L243). The attribute's comment: “base\_change\_uniform\_vanishing”. References: EGA IV (1.7.21), “base change vanishing”; EGA III (1.4.12), “existence of r”.
 
 > **Stacks Project, Tag 01XJ (3).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes with `S` quasi-compact. There is an integer `n = n(X, S, f)` such that for
@@ -358,7 +358,7 @@ theorem exists_uniform_isZero_rightDerived_pushforward {X S : Scheme.{u}} (f : X
 
 [Tag 01XK](https://stacks.math.columbia.edu/tag/01XK) in the Stacks Project.
 
-**`Stacks.Cohomology.AffineBase.cohomologyIsoGlobalSectionsRightDerivedPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/AffineBase.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/AffineBase.lean#L262). References: EGA III (1.4.14), “affine base, Z=point”.
+**`Stacks.Cohomology.AffineBase.cohomologyIsoGlobalSectionsRightDerivedPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/AffineBase.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/AffineBase.lean#L262). References: EGA III (1.4.14), “affine base, Z=point”.
 
 > **[Stacks, Tag 01XK].** For a quasi-compact and quasi-separated morphism `f : X ⟶ S` with
 > affine target, the cohomology of a quasi-coherent module on `X` is naturally isomorphic, as a
@@ -374,7 +374,7 @@ public noncomputable def cohomologyIsoGlobalSectionsRightDerivedPushforward (q :
         moduleGlobalSections S
 ```
 
-**`Stacks.Cohomology.AffineBase.cohomologyIsoSectionsRightDerivedPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineBase.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/AffineBase.lean#L149). References: EGA III (1.4.14), “affine base, Z=point”.
+**`Stacks.Cohomology.AffineBase.cohomologyIsoSectionsRightDerivedPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/AffineBase.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/AffineBase.lean#L149). References: EGA III (1.4.14), “affine base, Z=point”.
 
 > Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of
 > schemes with `S` affine. For every `q : ℤ` the cohomology `H^q(X, F)` of a quasi-coherent
@@ -397,4 +397,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.4, Tag 01XH](https://stacks.math.columbia.edu/tag/01XH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

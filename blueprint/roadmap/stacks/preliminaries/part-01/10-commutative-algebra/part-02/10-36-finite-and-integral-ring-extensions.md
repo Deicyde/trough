@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.36 Finite and integral ring extensions
 
-Section 10.36 of the Stacks Project, [Tag 00GH](https://stacks.math.columbia.edu/tag/00GH). 23 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 24 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.36 of the Stacks Project, [Tag 00GH](https://stacks.math.columbia.edu/tag/00GH). 23 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 24 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00GI, a definition
 
@@ -16,13 +16,13 @@ Section 10.36 of the Stacks Project, [Tag 00GH](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`RingHom.IsIntegralElem`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegralElem#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L30) (StacksFrontier): “(1)”.
+- [`RingHom.IsIntegralElem`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegralElem#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L30) (StacksFrontier): “(1)”.
 
 ## Tag 052I, a lemma
 
 [Tag 052I](https://stacks.math.columbia.edu/tag/052I) in the Stacks Project.
 
-**`isIntegral_of_fg_stable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean#L183).
+**`isIntegral_of_fg_stable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean#L183).
 
 > General determinant-trick lemma: if `M` is a finitely-generated `R`-submodule
 > of an `R`-algebra `B` that contains `1` and is stable under multiplication by `α`,
@@ -42,17 +42,18 @@ theorem isIntegral_of_fg_stable
 
 Declarations registered for the tag:
 
-- [`Algebra.finite_adjoin_of_finite_of_isIntegral`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.finite_adjoin_of_finite_of_isIntegral#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L152) (StacksFrontier): “integral implies contained in a finite subalgebra”. References: EGA 0 (1.0.5), “more general”; EGA II (6.1.2), “more general”.
-- [`IsIntegral.of_mem_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsIntegral.of_mem_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L154) (StacksFrontier): “contained in a finite subalgebra implies integral”. References: EGA 0 (1.0.5), “partial”; EGA II (6.3.1), “special case”.
+- [`Algebra.finite_adjoin_of_finite_of_isIntegral`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.finite_adjoin_of_finite_of_isIntegral#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L151) (StacksFrontier): “integral implies contained in a finite subalgebra”. References: EGA 0 (1.0.5), “more general”; EGA II (6.1.2), “more general”.
+- [`IsIntegral.of_mem_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsIntegral.of_mem_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L153) (StacksFrontier): “contained in a finite subalgebra implies integral”. References: EGA 0 (1.0.5), “partial”; EGA II (6.3.1), “special case”.
 
 ## Tag 02JJ, a lemma
 
 [Tag 02JJ](https://stacks.math.columbia.edu/tag/02JJ) in the Stacks Project.
 
-**`Algebra.finite_iff_exists_finset_adjoin_eq_top_and_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L369). References: EGA II (6.1.2), “more general”.
+**`Algebra.finite_iff_exists_finset_adjoin_eq_top_and_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L373). References: EGA II (6.1.2), “more general”.
 
 > An algebra is module-finite if and only if it is generated as an algebra by a
-> finite set of integral elements.
+> finite set of integral elements. This is the equivalence (1) ⇔ (3) of [Stacks, Tag 02JJ];
+> (1) ⇔ (2) is `Algebra.finite_iff_isIntegral_and_finiteType`.
 
 ```lean
 theorem Algebra.finite_iff_exists_finset_adjoin_eq_top_and_isIntegral
@@ -63,7 +64,7 @@ theorem Algebra.finite_iff_exists_finset_adjoin_eq_top_and_isIntegral
 
 Declarations registered for the tag:
 
-- [`Algebra.finite_iff_isIntegral_and_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.finite_iff_isIntegral_and_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L361) (StacksFrontier): “finite = integral + finite type”. References: EGA 0 (1.0.5); EGA II (6.1.2), “more general”.
+- [`Algebra.finite_iff_isIntegral_and_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.finite_iff_isIntegral_and_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L364) (StacksFrontier): “finite = integral + finite type”. References: EGA 0 (1.0.5); EGA II (6.1.2), “more general”.
 
 ## Tag 00GN, a lemma
 
@@ -71,7 +72,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`RingHom.IsIntegral.trans`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegral.trans#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L395) (StacksFrontier): “integrality is stable under composition”. References: EGA II (6.1.5), “(ii), integral, affine”.
+- [`RingHom.IsIntegral.trans`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegral.trans#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L399) (StacksFrontier): “integrality is stable under composition”. References: EGA II (6.1.5), “(ii), integral, affine”.
 
 ## Tag 00GO, a lemma
 
@@ -79,14 +80,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`integralClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=integralClosure#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L33) (StacksFrontier): “the integral elements form a subalgebra”. References: EGA III (4.3.5), “more general”; EGA IV (14.5.5); EGA IV (18.10.10), “affine case”; EGA IV (18.10.8), “special case”; EGA IV (18.12.14), “partial”; EGA IV (8.12.11), “special case”; EGA IV (9.5.7); SGA 3 VIB (5.6.0); SGA 5 VI (1.4.7); SGA 7 X (2.26); SGA 7 XIII (0.2), “partial”.
-- [`mem_integralClosure_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=mem_integralClosure_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L45) (StacksFrontier): “its underlying set is the set of integral elements”.
+- [`integralClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=integralClosure#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L33) (StacksFrontier): “the integral elements form a subalgebra”. References: EGA III (4.3.5), “more general”; EGA IV (14.5.5); EGA IV (18.10.10), “affine case”; EGA IV (18.10.8), “special case”; EGA IV (18.12.14), “partial”; EGA IV (8.12.11), “special case”; EGA IV (9.5.7); SGA 3 VIB (5.6.0); SGA 5 VI (1.4.7); SGA 7 X (2.26); SGA 7 XIII (0.2), “partial”.
+- [`mem_integralClosure_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=mem_integralClosure_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L45) (StacksFrontier): “its underlying set is the set of integral elements”.
 
 ## Tag 0CY8, a lemma
 
 [Tag 0CY8](https://stacks.math.columbia.edu/tag/0CY8) in the Stacks Project.
 
-**`isIntegral_pi_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Pi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Pi.lean#L66).
+**`isIntegral_pi_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Pi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Pi.lean#L66).
 
 > **Stacks Tag 0CY8 (finite product integral).**
 > Let `ι` be a finite index type and let `φ_i : R_i → S_i` be ring maps (recorded as the
@@ -108,15 +109,15 @@ theorem isIntegral_pi_iff (ι : Type*) [Finite ι] (R : ι → Type*) (S : ι �
 
 Declarations registered for the tag:
 
-- [`integralClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=integralClosure#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L48) (StacksFrontier): “(1)”. References: EGA III (4.3.5), “more general”; EGA IV (14.5.5); EGA IV (18.10.10), “affine case”; EGA IV (18.10.8), “special case”; EGA IV (18.12.14), “partial”; EGA IV (8.12.11), “special case”; EGA IV (9.5.7); SGA 3 VIB (5.6.0); SGA 5 VI (1.4.7); SGA 7 X (2.26); SGA 7 XIII (0.2), “partial”.
-- [`IsIntegrallyClosedIn`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsIntegrallyClosedIn#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L49) (StacksFrontier): “(2)”.
-- [`isIntegrallyClosedIn_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isIntegrallyClosedIn_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L50) (StacksFrontier): “(2), unfolded”.
+- [`integralClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=integralClosure#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L48) (StacksFrontier): “(1)”. References: EGA III (4.3.5), “more general”; EGA IV (14.5.5); EGA IV (18.10.10), “affine case”; EGA IV (18.10.8), “special case”; EGA IV (18.12.14), “partial”; EGA IV (8.12.11), “special case”; EGA IV (9.5.7); SGA 3 VIB (5.6.0); SGA 5 VI (1.4.7); SGA 7 X (2.26); SGA 7 XIII (0.2), “partial”.
+- [`IsIntegrallyClosedIn`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsIntegrallyClosedIn#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L49) (StacksFrontier): “(2)”.
+- [`isIntegrallyClosedIn_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isIntegrallyClosedIn_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Defs.lean#L50) (StacksFrontier): “(2), unfolded”.
 
 ## Tag 0CY9, a lemma
 
 [Tag 0CY9](https://stacks.math.columbia.edu/tag/0CY9) in the Stacks Project.
 
-**`IsIntegralClosure.pi_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L203).
+**`IsIntegralClosure.pi_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L203).
 
 > **Stacks 0CY9.** Let `R i → S i` be a finite family of ring maps and let `S' i` be an algebra
 > whose canonical map to `S i` identifies it with the integral closure of `R i` in `S i`. Then
@@ -136,7 +137,7 @@ public theorem IsIntegralClosure.pi_iff {ι : Type*} [Finite ι] {R S S' : ι �
 
 [Tag 0307](https://stacks.math.columbia.edu/tag/0307) in the Stacks Project.
 
-**`Stacks.IntegralClosureLocalization.isLocalization_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MinimalPrimeResidueLocalization/IntegralClosure.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MinimalPrimeResidueLocalization/IntegralClosure.lean#L88).
+**`Stacks.IntegralClosureLocalization.isLocalization_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MinimalPrimeResidueLocalization/IntegralClosure.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MinimalPrimeResidueLocalization/IntegralClosure.lean#L88).
 
 > Integral closure commutes with localization: if `Rf` is the localization of `R` at `M` and
 > `Sf` the localization of `S` at the image of `M`, then `integralClosure Rf Sf` is the localization
@@ -154,7 +155,7 @@ public theorem isLocalization_integralClosure (M : Submonoid R) [IsLocalization 
 
 [Tag 034K](https://stacks.math.columbia.edu/tag/034K) in the Stacks Project.
 
-**`isIntegral_iff_isIntegral_localization_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Localization.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Localization.lean#L137).
+**`isIntegral_iff_isIntegral_localization_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Localization.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Localization.lean#L137).
 
 > **Stacks Tag 034K.** Let `φ : R → S` be a ring map and `x ∈ S`. Then `x` is integral
 > over `R` if and only if, for every maximal ideal `p ⊆ R`, the image `x_p` of `x` in `S_p`
@@ -171,7 +172,7 @@ theorem isIntegral_iff_isIntegral_localization_atPrime
         (algebraMap S (Localization (Algebra.algebraMapSubmonoid S p.primeCompl)) x)
 ```
 
-**`isIntegral_iff_forall_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Localization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Localization.lean#L172).
+**`isIntegral_iff_forall_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Localization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Localization.lean#L172).
 
 > **Stacks Tag 034K**, as the tag states it. Let `φ : R → S` be a ring map and `x ∈ S`.
 > Then `x` is integral over `R` if and only if, for *every* prime ideal `p ⊆ R`, the image
@@ -194,8 +195,8 @@ theorem isIntegral_iff_forall_isPrime (R S : Type*) [CommRing R] [CommRing S] [A
 
 Declarations registered for the tag:
 
-- [`Algebra.IsIntegral.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.tensorProduct#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L381) (StacksFrontier): “(1)”. References: EGA II (6.1.5), “(iii), integral, affine”.
-- [`Module.Finite.base_change`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.base_change#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L384) (StacksFrontier): “(2)”. References: EGA III (2.6.2.1), “special case”; EGA II (6.1.5), “(iii), finite, affine”; SGA 1 III (1.4), “partial”.
+- [`Algebra.IsIntegral.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.tensorProduct#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L385) (StacksFrontier): “(1)”. References: EGA II (6.1.5), “(iii), integral, affine”.
+- [`Module.Finite.base_change`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.base_change#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L388) (StacksFrontier): “(2)”. References: EGA III (2.6.2.1), “special case”; EGA II (6.1.5), “(iii), finite, affine”; SGA 1 III (1.4), “partial”.
 
 ## Tag 02JL, a lemma
 
@@ -203,8 +204,8 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`RingHom.isIntegral_ofLocalizationSpan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.isIntegral_ofLocalizationSpan#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L196) (StacksFrontier): “(1): integrality can be checked on the localizations at elements generating the unit ideal”. References: SGA 4 IV (8.5.5), “special case”.
-- [`RingHom.finite_ofLocalizationSpan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.finite_ofLocalizationSpan#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L198) (StacksFrontier): “(2): finiteness can be checked on the localizations at elements generating the unit ideal”.
+- [`RingHom.isIntegral_ofLocalizationSpan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.isIntegral_ofLocalizationSpan#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L195) (StacksFrontier): “(1): integrality can be checked on the localizations at elements generating the unit ideal”. References: SGA 4 IV (8.5.5), “special case”.
+- [`RingHom.finite_ofLocalizationSpan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.finite_ofLocalizationSpan#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L197) (StacksFrontier): “(2): finiteness can be checked on the localizations at elements generating the unit ideal”.
 
 ## Tag 02JM, a lemma
 
@@ -212,14 +213,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`RingHom.IsIntegral.tower_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegral.tower_top#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L390) (StacksFrontier): “(1)”. References: EGA II (6.1.5), “(v), special case”.
-- [`RingHom.Finite.of_comp_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.Finite.of_comp_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L392) (StacksFrontier): “(2)”.
+- [`RingHom.IsIntegral.tower_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.IsIntegral.tower_top#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L394) (StacksFrontier): “(1)”. References: EGA II (6.1.5), “(v), special case”.
+- [`RingHom.Finite.of_comp_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.Finite.of_comp_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L396) (StacksFrontier): “(2)”.
 
 ## Tag 0308, a lemma
 
 [Tag 0308](https://stacks.math.columbia.edu/tag/0308) in the Stacks Project.
 
-**`integral_closure_transitive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L346).
+**`integral_closure_transitive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L346).
 
 > Stacks Tag 0308 (transitivity of integral closure): the integral closure of
 > `B'` in `C` equals the integral closure of `A` in `C`, as subrings of `C`.
@@ -233,7 +234,7 @@ theorem integral_closure_transitive (f : A →+* B) (g : B →+* C) :
 
 [Tag 00GQ](https://stacks.math.columbia.edu/tag/00GQ) in the Stacks Project.
 
-**`integral_overring_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L71). References: EGA IV (6.15.5), “special case”.
+**`integral_overring_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L71). References: EGA IV (6.15.5), “special case”.
 
 > Lying over: if `f : R →+* S` is an injective integral ring map, then the induced
 > map `Spec S → Spec R` is surjective.
@@ -251,16 +252,16 @@ theorem integral_overring_surjective
 
 Declarations registered for the tag:
 
-- [`isField_of_isIntegral_of_isField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isField_of_isIntegral_of_isField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L156) (StacksFrontier): “integral case: R is a field”. References: EGA II (6.4.5.1), “special case”.
-- [`Algebra.IsIntegral.isAlgebraic`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.isAlgebraic#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L157) (StacksFrontier): “integral case: K is algebraic over R”.
-- [`Algebra.IsIntegral.of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L158) (StacksFrontier): “finite case: finite implies integral (so R is a field via isField\_of\_isIntegral\_of\_isField)”. References: EGA 0 (1.0.5), “partial, special case”; EGA II (6.1.2), “special case”; EGA II (6.3.1), “special case”.
-- [`Algebra.IsAlgebraic.of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsAlgebraic.of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L160) (StacksFrontier): “finite case: K is a finite algebraic extension”.
+- [`isField_of_isIntegral_of_isField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isField_of_isIntegral_of_isField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L155) (StacksFrontier): “integral case: R is a field”. References: EGA II (6.4.5.1), “special case”.
+- [`Algebra.IsIntegral.isAlgebraic`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.isAlgebraic#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L156) (StacksFrontier): “integral case: K is algebraic over R”.
+- [`Algebra.IsIntegral.of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsIntegral.of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L157) (StacksFrontier): “finite case: finite implies integral (so R is a field via isField\_of\_isIntegral\_of\_isField)”. References: EGA 0 (1.0.5), “partial, special case”; EGA II (6.1.2), “special case”; EGA II (6.3.1), “special case”.
+- [`Algebra.IsAlgebraic.of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsAlgebraic.of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L159) (StacksFrontier): “finite case: K is a finite algebraic extension”.
 
 ## Tag 00GS, a lemma
 
 [Tag 00GS](https://stacks.math.columbia.edu/tag/00GS) in the Stacks Project.
 
-**`Algebra.IsIntegral.isMaximal_of_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L41). The attribute's comment: “(3) If `S` is integral over `k` then every prime of `S` is a maximal ideal.”.
+**`Algebra.IsIntegral.isMaximal_of_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L41). The attribute's comment: “(3) If `S` is integral over `k` then every prime of `S` is a maximal ideal.”.
 
 > **Stacks 00GS (3).** Every prime ideal of an integral algebra over a field is maximal: its
 > contraction to the field is the zero ideal, which is maximal.
@@ -272,14 +273,14 @@ theorem Algebra.IsIntegral.isMaximal_of_isPrime {k S : Type*} [Field k] [CommRin
 
 Declarations registered for the tag:
 
-- [`IsField.of_isDomain_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsField.of_isDomain_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L31) (StacksFrontier): “(1) If `S` is a domain and finite dimensional over the field `k`, then `S` is a field; finite dimensionality is `Module.Finite k S`.”. References: EGA II (6.3.10), “special case”.
-- [`isField_of_isIntegral_of_isField'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isField_of_isIntegral_of_isField'#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L34) (StacksFrontier): “(2) If `S` is integral over `k` and a domain, then `S` is a field; Mathlib states it for an integral extension of any ring `R` with `IsField R`, applied to `Field.toIsField k`.”.
+- [`IsField.of_isDomain_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsField.of_isDomain_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L31) (StacksFrontier): “(1) If `S` is a domain and finite dimensional over the field `k`, then `S` is a field; finite dimensionality is `Module.Finite k S`.”. References: EGA II (6.3.10), “special case”.
+- [`isField_of_isIntegral_of_isField'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isField_of_isIntegral_of_isField'#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingUp.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/GoingUp.lean#L34) (StacksFrontier): “(2) If `S` is integral over `k` and a domain, then `S` is a field; Mathlib states it for an integral extension of any ring `R` with `IsField R`, applied to `Field.toIsField k`.”.
 
 ## Tag 00GT, a lemma
 
 [Tag 00GT](https://stacks.math.columbia.edu/tag/00GT) in the Stacks Project.
 
-**`not_le_and_not_le_of_comap_eq_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L101).
+**`not_le_and_not_le_of_comap_eq_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L101).
 
 > In an integral extension there are no inclusions between distinct primes with the
 > same contraction: if `q ≠ q'` are primes of `S` with equal contractions along
@@ -299,7 +300,7 @@ theorem not_le_and_not_le_of_comap_eq_of_ne
 
 Declarations registered for the tag:
 
-- [`Algebra.QuasiFinite.finite_comap_preimage_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.QuasiFinite.finite_comap_preimage_singleton#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L65) (StacksFrontier): “in the generality of a quasi-finite algebra”.
+- [`Algebra.QuasiFinite.finite_comap_preimage_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.QuasiFinite.finite_comap_preimage_singleton#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L65) (StacksFrontier): “in the generality of a quasi-finite algebra”.
 
 ## Tag 00GU, a lemma
 
@@ -307,13 +308,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Ideal.exists_ideal_gt_liesOver_of_lt`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.exists_ideal_gt_liesOver_of_lt#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L63) (StacksFrontier): “for any algebra with the going-up property; an integral one has it by `Algebra.HasGoingUp.of_isIntegral`”.
+- [`Ideal.exists_ideal_gt_liesOver_of_lt`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.exists_ideal_gt_liesOver_of_lt#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Integral.lean#L63) (StacksFrontier): “for any algebra with the going-up property; an integral one has it by `Algebra.HasGoingUp.of_isIntegral`”.
 
 ## Tag 0564, a lemma
 
 [Tag 0564](https://stacks.math.columbia.edu/tag/0564) in the Stacks Project.
 
-**`Module.FinitePresentation.restrictScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L133).
+**`Module.FinitePresentation.restrictScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Basic.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Basic.lean#L133).
 
 > **Stacks 0564.** Let `R → S` be a finite and finitely presented ring map and let `M` be an
 > `S`-module, regarded as an `R`-module by restriction of scalars. Then `M` is finitely presented
@@ -330,7 +331,7 @@ public theorem restrictScalars_iff (R S M : Type*) [CommRing R] [CommRing S] [Al
 
 [Tag 052J](https://stacks.math.columbia.edu/tag/052J) in the Stacks Project.
 
-**`shortExact_fmap_gmap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean#L351).
+**`shortExact_fmap_gmap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/AwayExactSequence.lean#L351).
 
 > **Stacks Tag 052J.** Under the hypothesis that `R` is integrally closed in
 > `R_x` or in `R_y`, the sequence
@@ -359,4 +360,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.36, Tag 00GH](https://stacks.math.columbia.edu/tag/00GH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle_eq_zero, AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle, AlgebraicGeometry.Space.bijective_projectiveBundleFormulaMap, AlgebraicGeometry.Space.bijective_flatPullbackChowMapCanonical_vectorBundleProjection
+lean: AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle_eq_zero, AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle, AlgebraicGeometry.Space.bijective_projectiveBundleFormulaMap, AlgebraicGeometry.Space.bijective_flatPullbackChowMapCanonical_vectorBundleProjection
 statement: formalized
 proof: formalized
 ---
 
 # 82.27 Projective space bundle formula
 
-Section 82.27 of the Stacks Project, [Tag 0ERT](https://stacks.math.columbia.edu/tag/0ERT). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.27 of the Stacks Project, [Tag 0ERT](https://stacks.math.columbia.edu/tag/0ERT). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ERU, a lemma
 
 [Tag 0ERU](https://stacks.math.columbia.edu/tag/0ERU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean#L471). The attribute's comment: “the vanishing for s < r - 1, read on a cycle representing α, in the Chow group of Stacks 0EQ6 at the canonical embeddings”.
+**`AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean#L471). The attribute's comment: “the vanishing for s < r - 1, read on a cycle representing α, in the Chow group of Stacks 0EQ6 at the canonical embeddings”.
 
 > **Stacks 0ERU, the vanishing, in the Chow group at the canonical embeddings.** Let `ℰ` be a
 > finite locally free `𝒪_X`-module of rank `n + 1` on a good algebraic space `X/B` and
@@ -23,7 +23,7 @@ Section 82.27 of the Stacks Project, [Tag 0ERT](https://stacks.math.columbia.edu
 > at the canonical embeddings of Stacks 0ENK.
 
 ```lean
-theorem chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle_eq_zero
+theorem chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle_eq_zero
     (s : ℕ) (hs : s < n) (k m : ℤ) (h : k + n = m + s) (α : CycleGroup D sX k) :
     chowClassCanonical.{u + 1} D sX hX m
         (properCyclePushforward D _ (isGood_projectiveBundleProj_comp D sX hX E hfree) sX hX rfl
@@ -38,7 +38,7 @@ theorem chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatP
               (m + s) h α))) = 0
 ```
 
-**`AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean#L494). The attribute's comment: “the top power s = r - 1, read on a cycle representing α, in the Chow group of Stacks 0EQ6 at the canonical embeddings”.
+**`AlgebraicGeometry.Space.chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleTopPower.lean#L494). The attribute's comment: “the top power s = r - 1, read on a cycle representing α, in the Chow group of Stacks 0EQ6 at the canonical embeddings”.
 
 > **Stacks 0ERU, the top power, in the Chow group at the canonical embeddings.** Let `ℰ` be a
 > finite locally free `𝒪_X`-module of rank `n + 1` on a good algebraic space `X/B` and
@@ -47,7 +47,7 @@ theorem chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatP
 > Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK.
 
 ```lean
-theorem chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatPullbackMap_projectiveBundle
+theorem chowClassCanonical_properCyclePushforward_firstChernCapPow_flatPullback_projBundle
     (k : ℤ) (α : CycleGroup D sX k) :
     chowClassCanonical.{u + 1} D sX hX k
         (properCyclePushforward D _ (isGood_projectiveBundleProj_comp D sX hX E hfree) sX hX rfl
@@ -67,7 +67,7 @@ theorem chowClassCanonical_properCyclePushforward_firstChernCapPowCycleMap_flatP
 
 [Tag 0ERV](https://stacks.math.columbia.edu/tag/0ERV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_projectiveBundleFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleFormulaBijective.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleFormulaBijective.lean#L426).
+**`AlgebraicGeometry.Space.bijective_projectiveBundleFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleFormulaBijective.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProjectiveBundleFormulaBijective.lean#L426).
 
 > **Stacks 0ERV: the projective space bundle formula.** Let `X` be a good algebraic space over
 > the base of the theory of cycles, `ℰ` a finite locally free `𝒪_X`-module of rank `r` and
@@ -88,7 +88,7 @@ theorem bijective_projectiveBundleFormulaMap
 
 [Tag 0ERW](https://stacks.math.columbia.edu/tag/0ERW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_flatPullbackChowMapCanonical_vectorBundleProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/VectorBundleChowPullbackBijective.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/VectorBundleChowPullbackBijective.lean#L44).
+**`AlgebraicGeometry.Space.bijective_flatPullbackChowMapCanonical_vectorBundleProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/VectorBundleChowPullbackBijective.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/VectorBundleChowPullbackBijective.lean#L44).
 
 > **Stacks 0ERW.** In Situation 0EDT let `X/B` be good, let `ℰ` be a finite locally free
 > `𝒪_X`-module of rank `r` and let `p : E = Spec(Sym^*(ℰ)) → X` be the associated vector bundle.
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.27, Tag 0ERT](https://stacks.math.columbia.edu/tag/0ERT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Raney's cycle lemma
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html).
 
 ## Raney's cycle lemma for arbitrary integer lists
 
@@ -18,7 +18,7 @@ such that every proper prefix of the rotation $(a_r, \dots, a_{n-1}, a_0, \dots,
 nonnegative sum: for every $t$ with $0 \le t < n$, the sum of the first $t$ entries of this
 rotation is at least $0$.
 
-Formalized by `MetaMathlibExt.raney_cycle_lemma_sum_neg_one_general`, a theorem declared in [MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html#raney-cycle-lemma-sum-neg-one-general).
+Formalized by `MetaMathlibExt.raney_cycle_lemma_sum_neg_one_general`, a theorem declared in [MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html#raney-cycle-lemma-sum-neg-one-general).
 
 ## Raney's cycle lemma
 
@@ -35,7 +35,7 @@ integer lists proves the same conclusion without it.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL24/Haupt/haupt4.tex>, lines 804-807. Lean's zero-based left rotation is a bijective reindexing of the source's cut after `a_r`; `t < a.length` ranges over every proper prefix, with `t = 0` giving the true empty-prefix condition. The lower bound `hlower` is not needed; see `raney_cycle_lemma_sum_neg_one_general`.
 
-Formalized by `MetaMathlibExt.raney_cycle_lemma_sum_neg_one`, a theorem declared in [MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html#raney-cycle-lemma-sum-neg-one).
+Formalized by `MetaMathlibExt.raney_cycle_lemma_sum_neg_one`, a theorem declared in [MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Lists/RaneyCycleLemma.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html#raney-cycle-lemma-sum-neg-one).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Raney's cycle lemma](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/raney-s-cycle-lemma)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Conditional expectation as the best predictor
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html).
 
 ## Orthogonality of the conditional-expectation residual
 
@@ -21,7 +21,7 @@ $h : \Omega \to \mathbb{R}$ that is square-integrable with respect to $\mu$, the
 $Y - \mathbb{E}[Y \mid \mathcal{G}]$ is orthogonal to $h$:
 $\int (Y - \mathbb{E}[Y \mid \mathcal{G}]) \, h \, d\mu = 0$.
 
-Formalized by `MeasureTheory.integral_sub_condExp_mul_eq_zero`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sub-cond-exp-mul-eq-zero).
+Formalized by `MeasureTheory.integral_sub_condExp_mul_eq_zero`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sub-cond-exp-mul-eq-zero).
 
 ## Pythagorean identity for the conditional mean
 
@@ -34,7 +34,7 @@ $g : \Omega \to \mathbb{R}$ that is square-integrable with respect to $\mu$,
 $\int (Y - g)^2 \, d\mu = \int (Y - \mathbb{E}[Y \mid \mathcal{G}])^2 \, d\mu +
 \int (\mathbb{E}[Y \mid \mathcal{G}] - g)^2 \, d\mu$.
 
-Formalized by `MeasureTheory.integral_sq_sub_eq_integral_sq_sub_condExp_add`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-eq-integral-sq-sub-cond).
+Formalized by `MeasureTheory.integral_sq_sub_eq_integral_sq_sub_condExp_add`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-eq-integral-sq-sub-cond).
 
 ## The conditional mean minimizes the expected squared error
 
@@ -46,7 +46,7 @@ $\mu$ given $\mathcal{G}$. Then for every strongly $\mathcal{G}$-measurable
 $g : \Omega \to \mathbb{R}$ that is square-integrable with respect to $\mu$,
 $\int (Y - \mathbb{E}[Y \mid \mathcal{G}])^2 \, d\mu \le \int (Y - g)^2 \, d\mu$.
 
-Formalized by `MeasureTheory.integral_sq_sub_condExp_le`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-cond-exp-le).
+Formalized by `MeasureTheory.integral_sq_sub_condExp_le`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-cond-exp-le).
 
 ## The regression function is the Bayes-optimal regressor
 
@@ -58,7 +58,7 @@ respect to $\mu$ given the σ-algebra generated by $X$. Then for every measurabl
 $h : \mathcal{X} \to \mathbb{R}$ such that $h \circ X$ is square-integrable with respect to $\mu$,
 $\int (Y - \mathbb{E}[Y \mid X])^2 \, d\mu \le \int (Y - h \circ X)^2 \, d\mu$.
 
-Formalized by `MeasureTheory.integral_sq_sub_condExp_comap_le`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-cond-exp-comap-le).
+Formalized by `MeasureTheory.integral_sq_sub_condExp_comap_le`, a theorem declared in [MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/ConditionalExpectation/BestPredictor.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html#integral-sq-sub-cond-exp-comap-le).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Conditional expectation as the best predictor](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/foundations/conditional-expectation-as-the-best-predictor)

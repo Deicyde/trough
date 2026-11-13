@@ -8,7 +8,7 @@ proof: formalized
 
 # Tate cohomology and the Herbrand quotient
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html).
 
 ## Periodicity of Tate cohomology for finite cyclic groups
 
@@ -17,7 +17,7 @@ $G$ a finite cyclic group and $A$ a representation of $G$ over $R$. Then for eve
 the Tate cohomology groups $\hat{H}^n(G, A)$ and $\hat{H}^{n+2}(G, A)$ are isomorphic as
 $R$-modules.
 
-Formalized by `TateCohomology.nonempty_periodicityIso`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/FiniteCyclic.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/FiniteCyclic.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#nonempty-periodicity-iso).
+Formalized by `TateCohomology.nonempty_periodicityIso`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/FiniteCyclic.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/FiniteCyclic.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#nonempty-periodicity-iso).
 
 ## Cardinality of Tate cohomology
 
@@ -25,7 +25,7 @@ Let $G$ be a finite group, $R$ a commutative ring, $M$ an
 $R$-linear representation of $G$ and $n$ an integer. This is the cardinality of the Tate
 cohomology group $\hat H^n(G, M)$, as a cardinal number (possibly infinite).
 
-Formalized by `TateCohomology.tateCohomologyCard`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-cohomology-card).
+Formalized by `TateCohomology.tateCohomologyCard`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-cohomology-card).
 
 ## Cardinality of Tate homology
 
@@ -34,7 +34,7 @@ and $M$ an $R$-linear representation of $G$. For an integer $n$, the cardinality
 of the degree-$n$ Tate homology of $M$ is defined as the cardinal number of the Tate
 cohomology group $\hat H^{-n-1}(G, M)$, following the convention $\hat H_n = \hat H^{-n-1}$.
 
-Formalized by `TateCohomology.tateHomologyCard`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-homology-card).
+Formalized by `TateCohomology.tateHomologyCard`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-homology-card).
 
 ## Cardinality of Tate homology in degree zero
 
@@ -45,7 +45,7 @@ of $M$ equals the cardinality of the Tate cohomology group $\hat H^{-1}(G, M)$.
 The cardinality of Tate homology in degree $n$ is defined as that of $\hat H^{-n-1}(G, M)$, so
 this holds by definition.
 
-Formalized by `TateCohomology.tateHomologyCard_zero`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-homology-card-zero).
+Formalized by `TateCohomology.tateHomologyCard_zero`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-homology-card-zero).
 
 ## Cardinality of finite Tate cohomology as a natural number
 
@@ -54,7 +54,7 @@ a commutative ring, $M$ an $R$-linear representation of $G$ and $n$ an integer s
 cohomology group $\hat H^n(G, M)$ is finite. Then the cardinality of $\hat H^n(G, M)$ equals its
 number of elements, a natural number viewed as a cardinal number.
 
-Formalized by `TateCohomology.tateCohomologyCard_eq_natCast`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-cohomology-card-eq-nat-cast).
+Formalized by `TateCohomology.tateCohomologyCard_eq_natCast`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#tate-cohomology-card-eq-nat-cast).
 
 ## Finiteness hypothesis for the Herbrand quotient
 
@@ -63,7 +63,7 @@ commutative ring and $M$ an $R$-linear representation of $G$. The representation
 the Herbrand finiteness hypothesis when its Tate cohomology groups $\hat H^0(G, M)$ and
 $\hat H^{-1}(G, M)$ are both finite.
 
-Formalized by `TateCohomology.HerbrandFinite`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-finite).
+Formalized by `TateCohomology.HerbrandFinite`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-finite).
 
 ## Herbrand quotient
 
@@ -72,7 +72,7 @@ $R$-linear representation of $G$ whose Tate cohomology groups $\hat H^0(G, M)$ a
 $\hat H^{-1}(G, M)$ are finite. The Herbrand quotient of $M$ is the rational number
 $h(M) = |\hat H^0(G, M)| / |\hat H^{-1}(G, M)|$, where $|X|$ is the number of elements of $X$.
 
-Formalized by `TateCohomology.herbrandQuotient`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient).
+Formalized by `TateCohomology.herbrandQuotient`, a definition declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient).
 
 ## Herbrand quotient as a ratio of orders
 
@@ -81,7 +81,7 @@ ring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups $\
 and $\hat H^{-1}(G, M)$ are finite. Then the Herbrand quotient of $M$ equals the rational number
 $|\hat H^0(G, M)| / |\hat H^{-1}(G, M)|$, where $|X|$ is the number of elements of $X$.
 
-Formalized by `TateCohomology.herbrandQuotient_eq`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-eq).
+Formalized by `TateCohomology.herbrandQuotient_eq`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-eq).
 
 ## The denominator of the Herbrand quotient is positive
 
@@ -90,7 +90,7 @@ commutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomolo
 $\hat H^0(G, M)$ and $\hat H^{-1}(G, M)$ are finite. Then the number of elements of
 $\hat H^{-1}(G, M)$ is positive.
 
-Formalized by `TateCohomology.herbrandQuotient_den_pos`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-den-pos).
+Formalized by `TateCohomology.herbrandQuotient_den_pos`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-den-pos).
 
 ## The denominator of the Herbrand quotient is nonzero
 
@@ -99,7 +99,7 @@ commutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomolo
 $\hat H^0(G, M)$ and $\hat H^{-1}(G, M)$ are finite. Then the number of elements of
 $\hat H^{-1}(G, M)$ is nonzero.
 
-Formalized by `TateCohomology.herbrandQuotient_den_ne_zero`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-den-ne-zero).
+Formalized by `TateCohomology.herbrandQuotient_den_ne_zero`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-den-ne-zero).
 
 ## Positivity of the Herbrand quotient
 
@@ -107,7 +107,7 @@ Let $G$ be a finite group, $R$ a commutative ring
 and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups $\hat H^0(G, M)$ and
 $\hat H^{-1}(G, M)$ are finite. Then the Herbrand quotient of $M$ is strictly positive.
 
-Formalized by `TateCohomology.herbrandQuotient_pos`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-pos).
+Formalized by `TateCohomology.herbrandQuotient_pos`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-pos).
 
 ## Herbrand quotients agree when Tate cohomology in degrees $0$ and $-1$ is in bijection
 
@@ -117,7 +117,7 @@ $\hat H^{-1}(G, N)$ are finite. If there are bijections between the underlying s
 $\hat H^0(G, M)$ and $\hat H^0(G, N)$ and between those of $\hat H^{-1}(G, M)$ and
 $\hat H^{-1}(G, N)$, then the Herbrand quotients of $M$ and $N$ are equal.
 
-Formalized by `TateCohomology.herbrandQuotient_congr`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-congr).
+Formalized by `TateCohomology.herbrandQuotient_congr`, a theorem declared in [MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html#herbrand-quotient-congr).
 
 ## Depends on
 
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tate cohomology and the Herbrand quotient](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient)

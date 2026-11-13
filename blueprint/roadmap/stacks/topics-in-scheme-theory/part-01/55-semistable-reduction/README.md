@@ -1,6 +1,6 @@
 # 55 Semistable Reduction
 
-Chapter 55 of the Stacks Project, *Semistable Reduction*, [Tag 0C2P](https://stacks.math.columbia.edu/tag/0C2P): the 16 sections of its 18 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 102 tags are carried by 248 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
+Chapter 55 of the Stacks Project, *Semistable Reduction*, [Tag 0C2P](https://stacks.math.columbia.edu/tag/0C2P): the 16 sections of its 18 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 102 tags are carried by 246 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
 
 ## [55.2 Linear algebra to 55.13 Picard groups of models](part-01/README.md)
 

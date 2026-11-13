@@ -13,7 +13,7 @@ statement: formalized
 > - [Fusible numbers and Peano Arithmetic](https://doi.org/10.46298/lmcs-18%283%3A6%292022),
 >   Logical Methods in Computer Science, Volume 18, Issue 3 (July 28, 2022).
 
-*Quoted from [FormalConjectures/Paper/FusibleNumber.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/FusibleNumber.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/FusibleNumber.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/FusibleNumber.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open. It also has 2 test statements, counted here but not shown.
 
@@ -41,7 +41,7 @@ theorem conj_7_1 (x y q : ℚ) (n : ℕ) (fus_x : IsFusible x) (fus_y : IsFusibl
     IsFusible q → q ∈ Set.Ico (ℓ n) (ℓ (n + 1)) → IsFusible (2 * q - 1 - x - (2 - 1 / 2 ^ n) * m)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/FusibleNumber.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/FusibleNumber.lean#L72).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/FusibleNumber.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/FusibleNumber.lean#L72).
 
 ## Depends on
 
@@ -49,5 +49,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/FusibleNumber.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/FusibleNumber.lean)
+- [FormalConjectures/Paper/FusibleNumber.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/FusibleNumber.lean)
 - [Fusible numbers and Peano Arithmetic](https://arxiv.org/abs/2003.14342)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.30 Proper base change
 
-Section 61.30 of the Stacks Project, [Tag 09C8](https://stacks.math.columbia.edu/tag/09C8). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.30 of the Stacks Project, [Tag 09C8](https://stacks.math.columbia.edu/tag/09C8). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09C9, a theorem
 
 [Tag 09C9](https://stacks.math.columbia.edu/tag/09C9) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isIso_proetaleCompletedBaseChangeMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/CompletedProperBaseChangeTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/CompletedProperBaseChangeTheorem.lean#L100).
+**`AlgebraicGeometry.ProEtale.isIso_proetaleCompletedBaseChangeMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/CompletedProperBaseChangeTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/CompletedProperBaseChangeTheorem.lean#L100).
 
 > **Stacks 09C9 (proper base change for derived complete complexes).** Let `f : X ⟶ Y` be a
 > proper morphism of schemes and `g : Y' ⟶ Y` a morphism, with base change square
@@ -28,10 +28,10 @@ Section 61.30 of the Stacks Project, [Tag 09C8](https://stacks.math.columbia.edu
 
 ```lean
 theorem isIso_proetaleCompletedBaseChangeMap_of_isProper [IsNoetherianRing Λ] (I : Ideal Λ)
-    (hI : AddMonoid.IsTorsion (Λ ⧸ I))
+    (hI : IsAddTorsion (Λ ⧸ I))
     {X Y X' Y' : Scheme.{u}} (f : X ⟶ Y) [IsProper f] (g : Y' ⟶ Y) (g' : X' ⟶ X) (f' : X' ⟶ Y')
     (sq : IsPullback g' f' f g)
-    (K : ProetaleDerivedCategory Λ X) (hK : IsDerivedComplete I K)
+    (K : ProetaleDerivedCategory Λ X)
     (hbdd : ∀ n : ℕ, 1 ≤ n → ∃ a : ℤ, ((proetaleDerivedReduction Λ I X n).obj K).IsGE a)
     (het : ∀ n : ℕ, 1 ≤ n → ∀ q : ℤ, (Scheme.etaleInverseImage.{u, 0, u + 1} X Λ).essImage
       ((DerivedCategory.homologyFunctor _ q).obj ((proetaleDerivedReduction Λ I X n).obj K)))
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.30, Tag 09C8](https://stacks.math.columbia.edu/tag/09C8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

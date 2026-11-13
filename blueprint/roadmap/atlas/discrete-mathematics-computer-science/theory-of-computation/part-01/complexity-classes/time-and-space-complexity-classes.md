@@ -8,14 +8,14 @@ proof: formalized
 
 # Time and space complexity classes
 
-117 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html).
+117 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html).
 
 ## Language of a decision problem
 
 The language of a decision problem $L$ is the set of
 bitstrings $x$ with $L(x) = \mathrm{true}$.
 
-Formalized by `Cslib.Complexity.Classes.langOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#lang-of).
+Formalized by `Cslib.Complexity.Classes.langOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#lang-of).
 
 ## Polynomial space for decision problems
 
@@ -24,7 +24,7 @@ the decision problems $L$ whose language $\{x : L(x) = \mathrm{true}\}$ lies in 
 class PSPACE, that is, is decided by a multi-tape Turing machine that halts on every input and
 uses space $O(n^d)$ for some natural number $d$.
 
-Formalized by `Cslib.Complexity.Classes.PSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pspace).
+Formalized by `Cslib.Complexity.Classes.PSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pspace).
 
 ## The class EXP
 
@@ -34,7 +34,7 @@ $x$ with $L(x)$ true, belongs to $\mathrm{DTIME}(2^{n^d})$: it is decided by a m
 machine over the binary alphabet with finitely many states in time at most $c_1 2^{n^d} + c_2$
 on inputs of length $n$, for some natural numbers $c_1$ and $c_2$.
 
-Formalized by `Cslib.Complexity.Classes.EXP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#exp).
+Formalized by `Cslib.Complexity.Classes.EXP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#exp).
 
 ## The class EXPSPACE
 
@@ -45,7 +45,7 @@ multi-tape Turing machine over the binary alphabet with finitely many states tha
 input and visits at most $c_1 2^{n^d} + c_2$ work-tape cells on inputs of length $n$, for some
 natural numbers $c_1$ and $c_2$.
 
-Formalized by `Cslib.Complexity.Classes.EXPSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#expspace).
+Formalized by `Cslib.Complexity.Classes.EXPSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#expspace).
 
 ## The class E
 
@@ -55,7 +55,7 @@ $\mathrm{DTIME}(2^{cn})$: it is decided by a multi-tape Turing machine over the 
 with finitely many states in time at most $c_1 2^{cn} + c_2$ on inputs of length $n$, for some
 natural numbers $c_1$ and $c_2$.
 
-Formalized by `Cslib.Complexity.Classes.E`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#e).
+Formalized by `Cslib.Complexity.Classes.E`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#e).
 
 ## Deterministic logarithmic space
 
@@ -66,7 +66,7 @@ decided by a multi-tape Turing machine with binary alphabet and finitely many st
 some time bound, visiting at most $c_1 s(n) + c_2$ work-tape cells on inputs of length $n$ for
 some constants $c_1$ and $c_2$.
 
-Formalized by `Cslib.Complexity.Classes.LogSpace`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space).
+Formalized by `Cslib.Complexity.Classes.LogSpace`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space).
 
 ## Log-space computable functions
 
@@ -76,7 +76,7 @@ $t : \mathbb{N} \to \mathbb{N}$ such that some multi-tape Turing machine with bi
 finitely many states, on every bitstring input $x$, halts with output $f(x)$ within $t(|x|)$
 steps and visits at most $c \lfloor \log_2(|x| + 1) \rfloor + c$ work-tape cells in total.
 
-Formalized by `Cslib.Complexity.Classes.LogSpaceComputable`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space-computable).
+Formalized by `Cslib.Complexity.Classes.LogSpaceComputable`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space-computable).
 
 ## Log-space many-one reductions
 
@@ -85,7 +85,7 @@ to a decision problem $L_2$ when there is a log-space computable function $f$ fr
 bitstrings such that, for every bitstring $x$, $L_1(x)$ is true if and only if $L_2(f(x))$ is
 true.
 
-Formalized by `Cslib.Complexity.Classes.LogSpaceRed`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space-red).
+Formalized by `Cslib.Complexity.Classes.LogSpaceRed`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#log-space-red).
 
 ## Nondeterministic decision
 
@@ -94,7 +94,7 @@ boolean alphabet decides a set $L$ of bitstrings if, for every bitstring $x$, $x
 only if some computation path of $M$ on $x$ ends in a halted configuration whose output is the
 one-element list $[\mathrm{true}]$.
 
-Formalized by `Cslib.Complexity.Classes.NTMDecides`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides).
+Formalized by `Cslib.Complexity.Classes.NTMDecides`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides).
 
 ## Nondeterministic decision in bounded time
 
@@ -105,7 +105,7 @@ $M$ on $x$ with at least $t(|x|)$ steps ends in a halted configuration, where $|
 of $x$, and for every bitstring $x$, $x \in L$ if and only if some computation path of $M$ on $x$
 ends in a halted configuration whose output is the one-element list $[\mathrm{true}]$.
 
-Formalized by `Cslib.Complexity.Classes.NTMDecidesInTime`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides-in-time).
+Formalized by `Cslib.Complexity.Classes.NTMDecidesInTime`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides-in-time).
 
 ## Nondeterministic decision in bounded space
 
@@ -116,7 +116,7 @@ $M$ on $x$ visits at most $s(|x|)$ work-tape cells in total, where $|x|$ is the 
 and for every bitstring $x$, $x \in L$ if and only if some computation path of $M$ on $x$ ends in
 a halted configuration whose output is the one-element list $[\mathrm{true}]$.
 
-Formalized by `Cslib.Complexity.Classes.NTMDecidesInSpace`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides-in-space).
+Formalized by `Cslib.Complexity.Classes.NTMDecidesInSpace`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntmdecides-in-space).
 
 ## Nondeterministic time classes
 
@@ -128,7 +128,7 @@ computation path of $M$ with at least $c_1 t(|x|) + c_2$ steps ends in a halted 
 where $|x|$ is the length of $x$, and $x \in L$ if and only if some computation path of $M$ on
 $x$ ends in a halted configuration whose output is the one-element list $[\mathrm{true}]$.
 
-Formalized by `Cslib.Complexity.Classes.NTIME`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntime).
+Formalized by `Cslib.Complexity.Classes.NTIME`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ntime).
 
 ## Nondeterministic space classes
 
@@ -140,7 +140,7 @@ computation path of $M$ visits at most $c_1 s(|x|) + c_2$ work-tape cells in tot
 is the length of $x$, and $x \in L$ if and only if some computation path of $M$ on $x$ ends in a
 halted configuration whose output is the one-element list $[\mathrm{true}]$.
 
-Formalized by `Cslib.Complexity.Classes.NSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nspace).
+Formalized by `Cslib.Complexity.Classes.NSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nspace).
 
 ## The complexity class NL
 
@@ -150,7 +150,7 @@ belongs to $\mathrm{NSPACE}(s)$ for $s(n) = c \lfloor \log_2 (n + 1) \rfloor + c
 $\mathrm{NSPACE}(s)$ is the class of languages decided by a nondeterministic multi-tape Turing
 machine with finitely many states in space $c_1 s(n) + c_2$ for some natural numbers $c_1, c_2$.
 
-Formalized by `Cslib.Complexity.Classes.NL`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nl).
+Formalized by `Cslib.Complexity.Classes.NL`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nl).
 
 ## The complexity class NPSPACE
 
@@ -160,7 +160,7 @@ belongs to $\mathrm{NSPACE}(s)$ for $s(n) = n^d$, where $\mathrm{NSPACE}(s)$ is 
 languages decided by a nondeterministic multi-tape Turing machine with finitely many states in
 space $c_1 s(n) + c_2$ for some natural numbers $c_1, c_2$.
 
-Formalized by `Cslib.Complexity.Classes.NPSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#npspace).
+Formalized by `Cslib.Complexity.Classes.NPSPACE`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#npspace).
 
 ## The complexity class NEXP
 
@@ -170,7 +170,7 @@ bitstrings on which $L$ is true) belongs to $\mathrm{NTIME}(t)$ for $t(n) = 2^{p
 $\mathrm{NTIME}(t)$ is the class of languages decided by a nondeterministic multi-tape Turing
 machine with finitely many states in time $c_1 t(n) + c_2$ for some natural numbers $c_1, c_2$.
 
-Formalized by `Cslib.Complexity.Classes.NEXP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nexp).
+Formalized by `Cslib.Complexity.Classes.NEXP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nexp).
 
 ## BPP
 
@@ -182,7 +182,7 @@ $r \in \{0,1\}^m$ with $R(x, r)$ true: if $L(x)$ is true then $3 c_x \ge 2 \cdot
 $L(x)$ is false then $3 c_x \le 2^m$. That is, for a uniformly random $r$, $R(x, r)$ is true with
 probability at least $2/3$ on yes-instances and at most $1/3$ on no-instances.
 
-Formalized by `Cslib.Complexity.Classes.BPP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bpp).
+Formalized by `Cslib.Complexity.Classes.BPP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bpp).
 
 ## Probabilistic polynomial time with unbounded error
 
@@ -192,7 +192,7 @@ polynomial-time computable function $R$ on pairs of bitstrings such that, for ev
 and $r$ uniformly random among the bitstrings of length $p(|x|)$, the probability that $R(x, r)$
 is true is greater than $1/2$ if $L(x)$ is true, and at most $1/2$ if $L(x)$ is false.
 
-Formalized by `Cslib.Complexity.Classes.PP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pp).
+Formalized by `Cslib.Complexity.Classes.PP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pp).
 
 ## Polynomial time with polynomial advice
 
@@ -202,7 +202,7 @@ $a_0, a_1, a_2, \ldots$ with $|a_n| \le p(n)$ for every $n$, and a polynomial-ti
 function $R$ on pairs of bitstrings such that for every bitstring $x$, $L(x)$ is true if and only
 if $R(x, a_{|x|})$ is true.
 
-Formalized by `Cslib.Complexity.Classes.PPoly`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ppoly).
+Formalized by `Cslib.Complexity.Classes.PPoly`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ppoly).
 
 ## The counting class $\#P$
 
@@ -212,7 +212,7 @@ polynomial-time computable Boolean function $R$ on pairs of bitstrings such that
 bitstring $x$, $f(x)$ is the number of bitstrings $w$ of length exactly $p(|x|)$ for which
 $R(x, w)$ is true.
 
-Formalized by `Cslib.Complexity.Classes.SharpP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sharp-p).
+Formalized by `Cslib.Complexity.Classes.SharpP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sharp-p).
 
 ## Evaluation of an oracle machine with adaptive queries
 
@@ -231,7 +231,7 @@ Dummy queries simulate early halting, so a fixed number of queries is without lo
 generality. At use sites the cap is polynomial in the length of $x$, so polynomial running time
 of $N$ and $F$ on each call gives polynomial total running time in the length of $x$.
 
-Formalized by `Cslib.Complexity.Classes.evalOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#eval-oracle).
+Formalized by `Cslib.Complexity.Classes.evalOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#eval-oracle).
 
 ## Polynomial time with an oracle
 
@@ -244,7 +244,7 @@ query $y = \mathrm{next}(x, h)$ from $x$ and the history $h$ of queries and answ
 and if $|y| \le q(|x|)$ it appends $(y, O(y))$ to $h$, while otherwise it skips all remaining
 rounds. Finally it outputs $\mathrm{final}(x, h)$.
 
-Formalized by `Cslib.Complexity.Classes.PWithOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pwith-oracle).
+Formalized by `Cslib.Complexity.Classes.PWithOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pwith-oracle).
 
 ## NP relative to an oracle
 
@@ -258,7 +258,7 @@ $\mathrm{nextQ}$ and decides with $\mathrm{final}$, run with oracle $O$, query-l
 and $p(|x|)$ adaptive queries on the bitstring encoding of the pair $(x, w)$ from the empty
 history, returns true.
 
-Formalized by `Cslib.Complexity.Classes.NPWithOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#npwith-oracle).
+Formalized by `Cslib.Complexity.Classes.NPWithOracle`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#npwith-oracle).
 
 ## Polynomial time with a #P oracle
 
@@ -271,7 +271,7 @@ query $y = \mathrm{next}(x, h)$ from $x$ and the history $h$ of queries and thei
 answers so far, and if $|y| \le q(|x|)$ it appends $(y, f(y))$ to $h$, while otherwise it skips
 all remaining rounds. Finally it outputs $\mathrm{final}(x, h)$.
 
-Formalized by `Cslib.Complexity.Classes.PWithSharpP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pwith-sharp-p).
+Formalized by `Cslib.Complexity.Classes.PWithSharpP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pwith-sharp-p).
 
 ## $\#P$-complete functions
 
@@ -284,7 +284,7 @@ for every bitstring $x$ the following outputs $g(x)$: make up to $p(|x|)$ querie
 turn, stop early as soon as the next query is longer than $q(|x|)$, and then return the final
 answer computed from $x$ and the history.
 
-Formalized by `Cslib.Complexity.Classes.SharpPComplete`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sharp-pcomplete).
+Formalized by `Cslib.Complexity.Classes.SharpPComplete`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sharp-pcomplete).
 
 ## Alternating bounded quantifiers
 
@@ -299,7 +299,7 @@ where the quantifiers $Q_1, \dots, Q_k$ alternate between $\exists$ and $\forall
 ranges over the bitstrings of length at most $b(|x|)$. For $k = 0$ it is
 $R(x, []) = \mathrm{true}$.
 
-Formalized by `Cslib.Complexity.Classes.AltQuant`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#alt-quant).
+Formalized by `Cslib.Complexity.Classes.AltQuant`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#alt-quant).
 
 ## The class $\Sigma_k^p$
 
@@ -311,7 +311,7 @@ $Q_1 w_1\, Q_2 w_2 \cdots Q_k w_k$ with $R(x, [w_1, \dots, w_k])$ true, where $Q
 for odd $i$ and $\forall$ for even $i$, and each $w_i$ ranges over bitstrings of length at
 most $p(|x|)$. For $k = 0$ the condition is that $R(x, [\,])$ is true.
 
-Formalized by `Cslib.Complexity.Classes.SigmaK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sigma-k).
+Formalized by `Cslib.Complexity.Classes.SigmaK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sigma-k).
 
 ## The universal levels of the polynomial hierarchy
 
@@ -329,14 +329,14 @@ where the $k$ quantifiers alternate starting with $\forall$ (so $Q_k$ is $\foral
 and $\exists$ for even $k$) and each $w_i$ ranges over the bitstrings of length at most
 $p(|x|)$. For $k = 0$ the condition is $R(x, []) = \mathrm{true}$.
 
-Formalized by `Cslib.Complexity.Classes.PiK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pi-k).
+Formalized by `Cslib.Complexity.Classes.PiK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pi-k).
 
 ## The polynomial hierarchy
 
 The class PH is the union, over all natural numbers $k$, of the
 classes $\Sigma_k^p$ of the polynomial hierarchy.
 
-Formalized by `Cslib.Complexity.Classes.PH`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ph).
+Formalized by `Cslib.Complexity.Classes.PH`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ph).
 
 ## The class $\mathsf{AM}$ (Arthur–Merlin)
 
@@ -350,14 +350,14 @@ $3|A_x| \ge 2 \cdot 2^{p(|x|)}$, and if $L(x)$ is false then $3|A_x| \le 2^{p(|x
 Here $r$ is Arthur's random string and $w$ is Merlin's reply, so for uniformly random $r$ the
 acceptance probability is at least $2/3$ on yes-instances and at most $1/3$ on no-instances.
 
-Formalized by `Cslib.Complexity.Classes.AM`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#am).
+Formalized by `Cslib.Complexity.Classes.AM`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#am).
 
 ## The class coAM
 
 **The class coAM.** coAM is the class of decision problems $L$ whose complement, the
 decision problem that accepts exactly the bitstrings that $L$ rejects, belongs to AM.
 
-Formalized by `Cslib.Complexity.Classes.coAM`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-am).
+Formalized by `Cslib.Complexity.Classes.coAM`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-am).
 
 ## Interactive-proof game
 
@@ -374,7 +374,7 @@ The transcript records only verifier messages and prover replies, so the prover 
 verifier's coins. At use sites the cap is polynomial in $|x|$, so polynomial time for each
 verifier step gives polynomial total time in the original input.
 
-Formalized by `Cslib.Complexity.Classes.IPGame`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ipgame).
+Formalized by `Cslib.Complexity.Classes.IPGame`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ipgame).
 
 ## The class IP
 
@@ -389,7 +389,7 @@ bitstring $x$: if $L(x)$ is true, some prover $P$ makes $G(P, c)$ true for at le
 the coin strings $c \in \{0,1\}^{s(|x|)}$; and if $L(x)$ is false, every prover $P$ makes
 $G(P, c)$ true for at most $1/3$ of them.
 
-Formalized by `Cslib.Complexity.Classes.IP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ip).
+Formalized by `Cslib.Complexity.Classes.IP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ip).
 
 ## Probabilistically checkable proofs
 
@@ -405,7 +405,7 @@ $\pi$; if $L(x)$ is false, then $P_\pi(x) \le 1/3$ for every proof $\pi$.
 
 The verifier is non-adaptive: the queried positions depend only on $x$ and $\rho$.
 
-Formalized by `Cslib.Complexity.Classes.PCP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pcp).
+Formalized by `Cslib.Complexity.Classes.PCP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#pcp).
 
 ## Gates of a flat Boolean circuit
 
@@ -417,7 +417,7 @@ indices; or a mod gate with a modulus $m \in \mathbb{N}$ and a list of predecess
 Predecessors are referred to by their positions in the circuit; that gate $j$ refers only to
 gates before $j$ is a separate well-formedness condition on circuits.
 
-Formalized by `Cslib.Complexity.Classes.ACGate`, an inductive type declared in [CSLibExt/Computability/Complexity/Classes.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#acgate).
+Formalized by `Cslib.Complexity.Classes.ACGate`, an inductive type declared in [CSLibExt/Computability/Complexity/Classes.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#acgate).
 
 ## Predecessors of a gate
 
@@ -426,7 +426,7 @@ the list of gate indices that $g$ reads: the empty list for an input variable or
 one-element list $[a]$ for the negation of gate $a$, and the argument list $l$ for an and, or or
 mod gate with argument list $l$ (the modulus of a mod gate is not included).
 
-Formalized by `Cslib.Complexity.Classes.gateInputs`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-inputs).
+Formalized by `Cslib.Complexity.Classes.gateInputs`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-inputs).
 
 ## Well-formed flat circuits
 
@@ -434,7 +434,7 @@ A flat Boolean circuit on $n$ inputs, given as a list of
 gates $(g_0, \dots, g_{m-1})$, is well-formed when every gate references only strictly earlier
 gates: for every $j < m$, every gate index $a$ among the inputs of $g_j$ satisfies $a < j$.
 
-Formalized by `Cslib.Complexity.Classes.WellFormedCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#well-formed-circuit).
+Formalized by `Cslib.Complexity.Classes.WellFormedCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#well-formed-circuit).
 
 ## Value of a gate
 
@@ -447,7 +447,7 @@ $v_a$ for $a$ in $l$; and the value of a mod gate with modulus $m$ and argument 
 if $m = 0$, and otherwise true exactly when the number of entries $a$ of $l$ with $v_a$ true,
 counted with repetition, is divisible by $m$.
 
-Formalized by `Cslib.Complexity.Classes.gateValue`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-value).
+Formalized by `Cslib.Complexity.Classes.gateValue`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-value).
 
 ## Evaluation of a flat Boolean circuit
 
@@ -460,7 +460,7 @@ gate) has the conjunction (disjunction) of the values it references, and a mod g
 modulus $k$ is true if and only if $k \ne 0$ and the number of its references with value true,
 counted with multiplicity, is divisible by $k$.
 
-Formalized by `Cslib.Complexity.Classes.circuitEval`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-eval).
+Formalized by `Cslib.Complexity.Classes.circuitEval`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-eval).
 
 ## Encoding a gate as a (kind, references) pair
 
@@ -474,7 +474,7 @@ as $(4, r)$. Mod gates have no encoding of their own: every mod gate is encoded 
 
 The serial evaluator reads kind $5$ as false.
 
-Formalized by `Cslib.Complexity.Classes.acGateToPair`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac-gate-to-pair).
+Formalized by `Cslib.Complexity.Classes.acGateToPair`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac-gate-to-pair).
 
 ## Decoding a gate from its (kind, references) pair
 
@@ -489,7 +489,7 @@ including every pair of kind $5$ (the encoding of a mod gate), decodes to the co
 These defaults match the serial evaluator, which reads an unknown kind, and an input variable
 with no corresponding input, as false.
 
-Formalized by `Cslib.Complexity.Classes.acGateOfPair`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac-gate-of-pair).
+Formalized by `Cslib.Complexity.Classes.acGateOfPair`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac-gate-of-pair).
 
 ## Evaluating a serialized gate
 
@@ -501,7 +501,7 @@ $(k, \ell) = (0, [i])$ with $i \ge n$; true exactly when $b = 1$ if $(k, \ell) =
 the negation of $v_c$ if $(k, \ell) = (2, [c])$; the conjunction of the $v_c$ for $c$ in $\ell$
 if $k = 3$; their disjunction if $k = 4$; and false in every other case.
 
-Formalized by `Cslib.Complexity.Classes.serialGateEval`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#serial-gate-eval).
+Formalized by `Cslib.Complexity.Classes.serialGateEval`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#serial-gate-eval).
 
 ## Serial gate evaluation agrees with typed gate evaluation
 
@@ -511,7 +511,7 @@ $g = (k, r)$ of a natural number $k$ (the gate kind) and a list $r$ of natural n
 references), evaluating $g$ with the serial $(\mathrm{kind}, \mathrm{refs})$ gate evaluator
 gives the same value as evaluating the gate decoded from $g$ with the gate-value function.
 
-Formalized by `Cslib.Complexity.Classes.gateValue_ofPair`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-value-of-pair).
+Formalized by `Cslib.Complexity.Classes.gateValue_ofPair`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-value-of-pair).
 
 ## Depth of a gate
 
@@ -521,7 +521,7 @@ position $a$, or $0$ when $a$ is not a position of $d$. The depth of an input-va
 constant gate is $0$; the depth of a negation, AND, OR or modular gate is one more than the
 maximum of $d_a$ over the gates $a$ it references, where the maximum over no gates is $0$.
 
-Formalized by `Cslib.Complexity.Classes.gateDepthOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-depth-of).
+Formalized by `Cslib.Complexity.Classes.gateDepthOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#gate-depth-of).
 
 ## Gate depths of a flat Boolean circuit
 
@@ -531,7 +531,7 @@ $g_j$ is an input or constant gate, and otherwise $d_j$ is one more than the max
 depths $d_a$ of the gates $a$ that $g_j$ references (the maximum over no references is $0$),
 a reference $a \ge j$ counting as depth $0$.
 
-Formalized by `Cslib.Complexity.Classes.circuitDepths`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-depths).
+Formalized by `Cslib.Complexity.Classes.circuitDepths`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-depths).
 
 ## Depth of a flat Boolean circuit
 
@@ -541,14 +541,14 @@ have depth $0$; a negation, and, or or mod gate has depth one more than the maxi
 gates it references (the maximum over no references is $0$), where a reference to a gate that
 does not come earlier in the list counts as depth $0$.
 
-Formalized by `Cslib.Complexity.Classes.circuitDepth`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-depth).
+Formalized by `Cslib.Complexity.Classes.circuitDepth`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#circuit-depth).
 
 ## Circuits without mod gates
 
 A flat Boolean circuit $C$ on $n$ inputs is mod-free when
 none of its gates is a mod gate.
 
-Formalized by `Cslib.Complexity.Classes.IsModFree`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-mod-free).
+Formalized by `Cslib.Complexity.Classes.IsModFree`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-mod-free).
 
 ## Circuits whose modular gates have a fixed modulus
 
@@ -556,7 +556,7 @@ For a natural number $m$, a flat
 Boolean circuit on $n$ inputs satisfies the modulus-$m$ condition when every $\mathrm{mod}$
 gate in it has modulus exactly $m$; gates of the other kinds are unrestricted.
 
-Formalized by `Cslib.Complexity.Classes.ModOnly`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mod-only).
+Formalized by `Cslib.Complexity.Classes.ModOnly`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mod-only).
 
 ## Monotone circuits
 
@@ -564,7 +564,7 @@ A flat circuit $C$ on $n$ input variables, given as a list of gates, is
 monotone when every gate of $C$ is an input variable, an AND gate or an OR gate. Constant, NOT
 and mod gates are not allowed.
 
-Formalized by `Cslib.Complexity.Classes.IsMonotoneCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-monotone-circuit).
+Formalized by `Cslib.Complexity.Classes.IsMonotoneCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-monotone-circuit).
 
 ## The class $\mathsf{AC}^0$
 
@@ -577,7 +577,7 @@ last gate and the value of that gate on input $x$ is true.
 
 The and and or gates have unbounded fan-in, and the family $(C_n)$ need not be uniform.
 
-Formalized by `Cslib.Complexity.Classes.AC0`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac0).
+Formalized by `Cslib.Complexity.Classes.AC0`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac0).
 
 ## The class $\mathsf{AC}^0(m)$
 
@@ -592,7 +592,7 @@ input $x$ is true.
 The and and or gates have unbounded fan-in, the family $(C_n)$ need not be uniform, and a circuit
 with no mod gates also qualifies.
 
-Formalized by `Cslib.Complexity.Classes.AC0Mod`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac0-mod).
+Formalized by `Cslib.Complexity.Classes.AC0Mod`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ac0-mod).
 
 ## The class $\mathsf{ACC}^0$
 
@@ -601,14 +601,14 @@ $\mathsf{AC}^0[m]$ over all natural numbers $m$: a decision problem is in $\math
 is in $\mathsf{AC}^0[m]$ for some $m$. A circuit family witnessing membership uses one fixed
 modulus $m$ throughout.
 
-Formalized by `Cslib.Complexity.Classes.ACC0`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#acc0).
+Formalized by `Cslib.Complexity.Classes.ACC0`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#acc0).
 
 ## The parity language
 
 The parity decision problem accepts a bitstring exactly when an odd
 number of its entries are true.
 
-Formalized by `Cslib.Complexity.Classes.parityDec`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#parity-dec).
+Formalized by `Cslib.Complexity.Classes.parityDec`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#parity-dec).
 
 ## The majority language
 
@@ -616,7 +616,7 @@ The majority language is the decision problem that accepts a
 bitstring $x$ exactly when $x$ has more true bits than false bits, that is, when $2k > |x|$,
 where $k$ is the number of true bits of $x$ and $|x|$ is its length.
 
-Formalized by `Cslib.Complexity.Classes.majorityDec`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#majority-dec).
+Formalized by `Cslib.Complexity.Classes.majorityDec`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#majority-dec).
 
 ## The class RP
 
@@ -630,7 +630,7 @@ $L(x)$ is false, then $R(x, r)$ is false for every bitstring $r$ of length $p(|x
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 10.8.
 
-Formalized by `Cslib.Complexity.Classes.RP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#rp).
+Formalized by `Cslib.Complexity.Classes.RP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#rp).
 
 ## The class coRP
 
@@ -641,7 +641,7 @@ decision problem that accepts exactly the bitstrings that $L$ rejects, belongs t
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 10.8.
 
-Formalized by `Cslib.Complexity.Classes.coRP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-rp).
+Formalized by `Cslib.Complexity.Classes.coRP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-rp).
 
 ## Membership in coRP
 
@@ -653,7 +653,7 @@ $\mathsf{RP}$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2.
 
-Formalized by `Cslib.Complexity.Classes.mem_coRP`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-co-rp).
+Formalized by `Cslib.Complexity.Classes.mem_coRP`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-co-rp).
 
 ## ZPP
 
@@ -665,7 +665,7 @@ $\mathsf{ZPP} = \mathsf{RP} \cap \mathsf{coRP}$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2 (where `ZPP` is defined as this intersection); M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 10.8.
 
-Formalized by `Cslib.Complexity.Classes.ZPP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp).
+Formalized by `Cslib.Complexity.Classes.ZPP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp).
 
 ## ZPP is the intersection of RP and coRP
 
@@ -676,7 +676,7 @@ $\mathsf{RP} \cap \mathsf{coRP}$; here this holds by definition.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2.
 
-Formalized by `Cslib.Complexity.Classes.zpp_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-eq).
+Formalized by `Cslib.Complexity.Classes.zpp_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-eq).
 
 ## ZPP is contained in RP
 
@@ -687,7 +687,7 @@ $\mathsf{RP}$, that is, $\mathsf{ZPP} \subseteq \mathsf{RP}$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2.
 
-Formalized by `Cslib.Complexity.Classes.zpp_subset_rp`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 628](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-subset-rp).
+Formalized by `Cslib.Complexity.Classes.zpp_subset_rp`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 628](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-subset-rp).
 
 ## ZPP is contained in coRP
 
@@ -698,7 +698,7 @@ $\mathsf{coRP}$, that is, $\mathsf{ZPP} \subseteq \mathsf{coRP}$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 7.2.
 
-Formalized by `Cslib.Complexity.Classes.zpp_subset_corp`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-subset-corp).
+Formalized by `Cslib.Complexity.Classes.zpp_subset_corp`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zpp-subset-corp).
 
 ## The class MA (Merlin–Arthur)
 
@@ -718,7 +718,7 @@ witness.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 8.1; L. Babai, "Trading group theory for randomness", Proceedings of the Seventeenth Annual ACM Symposium on Theory of Computing (STOC 1985), 421-429.
 
-Formalized by `Cslib.Complexity.Classes.MA`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ma).
+Formalized by `Cslib.Complexity.Classes.MA`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ma).
 
 ## The class coMA
 
@@ -729,7 +729,7 @@ decision problem that accepts exactly the bitstrings that $L$ rejects, belongs t
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 8.1.
 
-Formalized by `Cslib.Complexity.Classes.coMA`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-ma).
+Formalized by `Cslib.Complexity.Classes.coMA`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#co-ma).
 
 ## Membership in coMA
 
@@ -741,7 +741,7 @@ $\mathsf{MA}$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 8.1.
 
-Formalized by `Cslib.Complexity.Classes.mem_coMA`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 670](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L670). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-co-ma).
+Formalized by `Cslib.Complexity.Classes.mem_coMA`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 670](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L670). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-co-ma).
 
 ## Serial circuits
 
@@ -756,7 +756,7 @@ disjunction, while a modular-counting gate, which has no serial form here, becom
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 6 (circuit encodings).
 
-Formalized by `Cslib.Complexity.Classes.SerialCircuit`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 678](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L678). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#serial-circuit).
+Formalized by `Cslib.Complexity.Classes.SerialCircuit`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 678](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L678). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#serial-circuit).
 
 ## Log-space uniform circuit families
 
@@ -771,7 +771,7 @@ length $n$, the description is computed in space $O(\log n)$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21 (log-space uniformity); M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
 
-Formalized by `Cslib.Complexity.Classes.UniformCircuitFamily`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#uniform-circuit-family).
+Formalized by `Cslib.Complexity.Classes.UniformCircuitFamily`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#uniform-circuit-family).
 
 ## Circuits of fan-in at most two
 
@@ -786,7 +786,7 @@ would be the unbounded-fan-in classes $\mathsf{AC}^k$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
 
-Formalized by `Cslib.Complexity.Classes.IsFanInLeTwo`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-fan-in-le-two).
+Formalized by `Cslib.Complexity.Classes.IsFanInLeTwo`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-fan-in-le-two).
 
 ## The class NC^k
 
@@ -807,7 +807,7 @@ depth. Bounded fan-in is essential: with unbounded fan-in this would be $\mathsf
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
 
-Formalized by `Cslib.Complexity.Classes.NCK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nck).
+Formalized by `Cslib.Complexity.Classes.NCK`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nck).
 
 ## The class NC
 
@@ -818,7 +818,7 @@ $\mathsf{NC}^k$ for some natural number $k$, that is, $\mathsf{NC} = \bigcup_{k}
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21; M. Sipser, Introduction to the Theory of Computation, 3rd ed., 2013, Definition 9.20.
 
-Formalized by `Cslib.Complexity.Classes.NC`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nc).
+Formalized by `Cslib.Complexity.Classes.NC`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nc).
 
 ## NC is the union of its levels
 
@@ -830,7 +830,7 @@ numbers $k$; this holds by definition.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21.
 
-Formalized by `Cslib.Complexity.Classes.nc_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nc-eq).
+Formalized by `Cslib.Complexity.Classes.nc_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nc-eq).
 
 ## Membership in NC
 
@@ -841,7 +841,7 @@ belongs to $\mathsf{NC}^k$ for some natural number $k$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21.
 
-Formalized by `Cslib.Complexity.Classes.mem_nc`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-nc).
+Formalized by `Cslib.Complexity.Classes.mem_nc`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-nc).
 
 ## The NC hierarchy is increasing
 
@@ -855,7 +855,7 @@ monotone in $k$ because its base is at least $1$.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 6.21.
 
-Formalized by `Cslib.Complexity.Classes.nck_mono`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nck-mono).
+Formalized by `Cslib.Complexity.Classes.nck_mono`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#nck-mono).
 
 ## Encoded rational number
 
@@ -867,7 +867,7 @@ denominator.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4 (rational gate entries).
 
-Formalized by `Cslib.Complexity.Classes.RatEnc`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#rat-enc).
+Formalized by `Cslib.Complexity.Classes.RatEnc`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#rat-enc).
 
 ## Rational number of an encoding
 
@@ -879,7 +879,7 @@ false; when $q = 0$ the value is $0$, since division by zero gives $0$.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.toRat`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#to-rat).
+Formalized by `Cslib.Complexity.Classes.toRat`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#to-rat).
 
 ## Complex number of a pair of rational encodings
 
@@ -891,7 +891,7 @@ numbers encoded by $e_1$ and $e_2$.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.toComplex`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#to-complex).
+Formalized by `Cslib.Complexity.Classes.toComplex`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#to-complex).
 
 ## Binary digit of a natural number
 
@@ -903,7 +903,7 @@ is, $\lfloor i / 2^k \rfloor \bmod 2$, taken as an element of $\{0, 1\}$.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.qBit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-bit).
+Formalized by `Cslib.Complexity.Classes.qBit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-bit).
 
 ## Index of a pair of bits
 
@@ -914,7 +914,7 @@ its position in the enumeration $(0, 0), (0, 1), (1, 0), (1, 1)$ of the four pai
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.qIdx2`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-idx2).
+Formalized by `Cslib.Complexity.Classes.qIdx2`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-idx2).
 
 ## Matrix encoded by a list of entries
 
@@ -930,7 +930,7 @@ pairs thus lists the entries in row-major order.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.matrixOfEntries`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 787](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L787). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#matrix-of-entries).
+Formalized by `Cslib.Complexity.Classes.matrixOfEntries`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 787](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L787). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#matrix-of-entries).
 
 ## Setting two bits of an index
 
@@ -944,7 +944,7 @@ bit $i$ set to $b_1$ and bit $j$ set to $b_2$, reduced modulo $2^N$.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.setBits`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 795](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L795). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#set-bits).
+Formalized by `Cslib.Complexity.Classes.setBits`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 795](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L795). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#set-bits).
 
 ## Encoded 2-local quantum gate
 
@@ -960,7 +960,7 @@ unitarity and the qubit bounds are part of well-formedness.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.QGate`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 803](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L803). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#qgate).
+Formalized by `Cslib.Complexity.Classes.QGate`, an abbreviation declared in [CSLibExt/Computability/Complexity/Classes.lean, line 803](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L803). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#qgate).
 
 ## Well-formed quantum gate
 
@@ -972,7 +972,7 @@ $e$ is unitary, that is, $U^* U = I$.
 
 - A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4.
 
-Formalized by `Cslib.Complexity.Classes.QGateWellFormed`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#qgate-well-formed).
+Formalized by `Cslib.Complexity.Classes.QGateWellFormed`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#qgate-well-formed).
 
 ## Applying a 2-local gate to a state
 
@@ -991,7 +991,7 @@ $b_1$ and $b_2$.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4 (unitary evolution).
 
-Formalized by `Cslib.Complexity.Classes.applyGate`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 816](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L816). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apply-gate).
+Formalized by `Cslib.Complexity.Classes.applyGate`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 816](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L816). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apply-gate).
 
 ## Applying a quantum circuit to a state
 
@@ -1004,7 +1004,7 @@ $g_k$. For the empty list it is $\psi$ itself.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4 (quantum circuits).
 
-Formalized by `Cslib.Complexity.Classes.applyCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apply-circuit).
+Formalized by `Cslib.Complexity.Classes.applyCircuit`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apply-circuit).
 
 ## Number with a given binary expansion
 
@@ -1016,7 +1016,7 @@ $\sum_{i < n} b_i 2^i$; the first entry is the least significant bit.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 1 (computational basis).
 
-Formalized by `Cslib.Complexity.Classes.qNumOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 831](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L831). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-num-of).
+Formalized by `Cslib.Complexity.Classes.qNumOf`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 831](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L831). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#q-num-of).
 
 ## Computational basis state of a bitstring
 
@@ -1030,7 +1030,7 @@ otherwise.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 1 (computational basis).
 
-Formalized by `Cslib.Complexity.Classes.basisState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 838](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L838). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#basis-state).
+Formalized by `Cslib.Complexity.Classes.basisState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 838](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L838). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#basis-state).
 
 ## Tensor product of state vectors
 
@@ -1044,7 +1044,7 @@ bits of the index and $\psi$ the high-order $b$ bits.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 2 (tensor products).
 
-Formalized by `Cslib.Complexity.Classes.tensorProd`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#tensor-prod).
+Formalized by `Cslib.Complexity.Classes.tensorProd`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#tensor-prod).
 
 ## All-zero state
 
@@ -1056,7 +1056,7 @@ entries are $0$; that is, the computational basis state $|0 \cdots 0\rangle$.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 1 (computational basis).
 
-Formalized by `Cslib.Complexity.Classes.zeroState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 857](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L857). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zero-state).
+Formalized by `Cslib.Complexity.Classes.zeroState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 857](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L857). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#zero-state).
 
 ## Squared norm of a state vector
 
@@ -1068,7 +1068,7 @@ $\sum_{s} \overline{\psi_s}\, \psi_s = \sum_{s} |\psi_s|^2$.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 2 (Born rule).
 
-Formalized by `Cslib.Complexity.Classes.sqNorm`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 863](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L863). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sq-norm).
+Formalized by `Cslib.Complexity.Classes.sqNorm`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 863](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L863). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sq-norm).
 
 ## Acceptance probability of a quantum state
 
@@ -1082,7 +1082,7 @@ $\psi$ this is the probability that measuring the output qubit gives $1$.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 2 (Born rule, measurement).
 
-Formalized by `Cslib.Complexity.Classes.acceptProb`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#accept-prob).
+Formalized by `Cslib.Complexity.Classes.acceptProb`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#accept-prob).
 
 ## Initial state of a BQP computation
 
@@ -1098,7 +1098,7 @@ and $0$ elsewhere.
 
 - M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4 (quantum circuits); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 10.1.
 
-Formalized by `Cslib.Complexity.Classes.bqpInitState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 879](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L879). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bqp-init-state).
+Formalized by `Cslib.Complexity.Classes.bqpInitState`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 879](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L879). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bqp-init-state).
 
 ## BQP
 
@@ -1116,7 +1116,7 @@ at least $2/3$ if $L(x)$ is true and at most $1/3$ if $L(x)$ is false.
 
 - S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Definition 10.1; M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2000, Chapter 4; E. Bernstein and U. Vazirani, "Quantum complexity theory", SIAM Journal on Computing 26 (1997), 1411-1473.
 
-Formalized by `Cslib.Complexity.Classes.BQP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 893](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L893). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bqp).
+Formalized by `Cslib.Complexity.Classes.BQP`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 893](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L893). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#bqp).
 
 ## Optimization problems
 
@@ -1135,7 +1135,7 @@ predicate (NPO), which the approximation classes APX, PTAS and FPTAS require.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.OptProblem`, a structure declared in [CSLibExt/Computability/Complexity/Classes.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#opt-problem).
+Formalized by `Cslib.Complexity.Classes.OptProblem`, a structure declared in [CSLibExt/Computability/Complexity/Classes.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#opt-problem).
 
 ## Approximation ratio at a precision
 
@@ -1157,7 +1157,7 @@ at precision $2$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.ApproxAt`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 947](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L947). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#approx-at).
+Formalized by `Cslib.Complexity.Classes.ApproxAt`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 947](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L947). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#approx-at).
 
 ## NPO optimization problems
 
@@ -1178,7 +1178,7 @@ constant empty-solution algorithm would vacuously satisfy the approximation guar
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.IsNPO`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-npo).
+Formalized by `Cslib.Complexity.Classes.IsNPO`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-npo).
 
 ## Constant-factor approximable problems
 
@@ -1197,7 +1197,7 @@ everywhere would qualify vacuously.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.IsAPX`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 985](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L985). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-apx).
+Formalized by `Cslib.Complexity.Classes.IsAPX`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 985](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L985). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-apx).
 
 ## The class APX
 
@@ -1214,7 +1214,7 @@ least $\rho$ times the value of $s$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `Cslib.Complexity.Classes.APX`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 994](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L994). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apx).
+Formalized by `Cslib.Complexity.Classes.APX`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 994](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L994). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#apx).
 
 ## Polynomial-time approximation schemes
 
@@ -1231,7 +1231,7 @@ approximation ratio $1 - 1/k$, an error of $\varepsilon = 1/k$; the algorithm ma
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.IsPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-ptas).
+Formalized by `Cslib.Complexity.Classes.IsPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-ptas).
 
 ## The class PTAS
 
@@ -1247,7 +1247,7 @@ value of $s$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `Cslib.Complexity.Classes.PTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1011](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1011). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ptas).
+Formalized by `Cslib.Complexity.Classes.PTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1011](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1011). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ptas).
 
 ## Fully polynomial-time approximation schemes
 
@@ -1264,7 +1264,7 @@ time in $|x|$ and $1/\varepsilon$, where $\varepsilon = 1/k$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 11.
 
-Formalized by `Cslib.Complexity.Classes.IsFPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-fptas).
+Formalized by `Cslib.Complexity.Classes.IsFPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-fptas).
 
 ## The class FPTAS
 
@@ -1275,7 +1275,7 @@ polynomial-time approximation scheme.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `Cslib.Complexity.Classes.FPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1029](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#fptas).
+Formalized by `Cslib.Complexity.Classes.FPTAS`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1029](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#fptas).
 
 ## FPTAS is contained in PTAS
 
@@ -1289,7 +1289,7 @@ The single fully polynomial-time algorithm serves as the algorithm for every pre
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `Cslib.Complexity.Classes.fptas_subset_ptas`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1035](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1035). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#fptas-subset-ptas).
+Formalized by `Cslib.Complexity.Classes.fptas_subset_ptas`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1035](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1035). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#fptas-subset-ptas).
 
 ## PTAS is contained in APX
 
@@ -1303,7 +1303,7 @@ ratio $1/2$.
 
 - C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation, and complexity classes", Journal of Computer and System Sciences 43 (1991), 425-440.
 
-Formalized by `Cslib.Complexity.Classes.ptas_subset_apx`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1044](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1044). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ptas-subset-apx).
+Formalized by `Cslib.Complexity.Classes.ptas_subset_apx`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1044](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1044). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#ptas-subset-apx).
 
 ## Negligible functions
 
@@ -1315,7 +1315,7 @@ natural numbers $n \ge N$.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2.
 
-Formalized by `Cslib.Complexity.Classes.Negligible`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1058](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1058). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#negligible).
+Formalized by `Cslib.Complexity.Classes.Negligible`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1058](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1058). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#negligible).
 
 ## Inversion success probability
 
@@ -1334,7 +1334,7 @@ otherwise recover $n$ from $f_n(x)$ alone.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2.
 
-Formalized by `Cslib.Complexity.Classes.invertSucc`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1071](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1071). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#invert-succ).
+Formalized by `Cslib.Complexity.Classes.invertSucc`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1071](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1071). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#invert-succ).
 
 ## One-way function families
 
@@ -1359,7 +1359,7 @@ essential: per-length polynomial-size circuits would admit arbitrary noncomputab
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2; R. Impagliazzo, "A personal view of average-case complexity", Proceedings of the Tenth Annual Structure in Complexities Theory Conference (1995), 134-147.
 
-Formalized by `Cslib.Complexity.Classes.IsOneWayFunction`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1090](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1090). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-one-way-function).
+Formalized by `Cslib.Complexity.Classes.IsOneWayFunction`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1090](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1090). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-one-way-function).
 
 ## Inversion success probability against a permutation family
 
@@ -1380,7 +1380,7 @@ $\pi_n(x)$ and the coins $c$.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2.
 
-Formalized by `Cslib.Complexity.Classes.permInvertSucc`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#perm-invert-succ).
+Formalized by `Cslib.Complexity.Classes.permInvertSucc`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#perm-invert-succ).
 
 ## One-way permutation families
 
@@ -1402,7 +1402,7 @@ $\pi_n(x') = \pi_n(x)$.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2.
 
-Formalized by `Cslib.Complexity.Classes.IsOneWayPermutation`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-one-way-permutation).
+Formalized by `Cslib.Complexity.Classes.IsOneWayPermutation`, a definition declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#is-one-way-permutation).
 
 ## One-way permutations are one-way functions
 
@@ -1418,39 +1418,39 @@ list of its bits.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2.
 
-Formalized by `Cslib.Complexity.Classes.one_way_permutation_implies_one_way_function`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Classes.lean#L1134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#one-way-permutation-implies-one-way-func).
+Formalized by `Cslib.Complexity.Classes.one_way_permutation_implies_one_way_function`, a theorem declared in [CSLibExt/Computability/Complexity/Classes.lean, line 1134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Classes.lean#L1134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#one-way-permutation-implies-one-way-func).
 
 ## Polynomial-time machines have polynomially bounded output
 
 A polynomial-time machine has polynomially bounded encoded output.
 
-Formalized by `Cslib.Complexity.Preimage.output_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#output-length-le).
+Formalized by `Cslib.Complexity.Preimage.output_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#output-length-le).
 
 ## Polynomial-time maps run on unframed bit lists
 
 Canonical polynomial-time maps can also be run on unframed bit lists.
 
-Formalized by `Cslib.Complexity.Preimage.raw_computable`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#raw-computable).
+Formalized by `Cslib.Complexity.Preimage.raw_computable`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#raw-computable).
 
 ## Mapping the first component of a pair is polynomial-time
 
 Mapping the first component of an encoded pair is polynomial-time;
 the second component is preserved, not recomputed or guessed.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime.map_fst`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#map-fst).
+Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime.map_fst`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#map-fst).
 
 ## Output of a polynomial-time map is polynomial in raw input length
 
 Encoded output length is polynomial in the unframed input length.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime.length_bound`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#length-bound).
+Formalized by `MetaMathlibExt.ComplexityTheory.IsPolyTime.length_bound`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#length-bound).
 
 ## Preimage of SAT under a polynomial-time map is in NP
 
 Pulling SAT back along a polynomial map preserves NP membership.
 SAT verifier soundness holds even for certificates above its length bound.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.satDec_comp_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sat-dec-comp-mem-np).
+Formalized by `MetaMathlibExt.ComplexityTheory.satDec_comp_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#sat-dec-comp-mem-np).
 
 ## NP is closed under polynomial-time preimages
 
@@ -1458,25 +1458,25 @@ Canonical NP is closed under polynomial-time preimages.
 Cook–Levin supplies a verifier sound for arbitrarily long certificates,
 so enlarging the transformed witness bound introduces no false positives.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.comp_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#comp-mem-np).
+Formalized by `MetaMathlibExt.ComplexityTheory.comp_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#comp-mem-np).
 
 ## NP membership pulls back along polynomial many-one reductions
 
 NP membership transfers backwards along a polynomial many-one reduction.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.mem_NP_of_polyManyOneRed`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-np-of-poly-many-one-red).
+Formalized by `MetaMathlibExt.ComplexityTheory.mem_NP_of_polyManyOneRed`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#mem-np-of-poly-many-one-red).
 
 ## coNP is closed under polynomial-time preimages
 
 Canonical coNP is closed under polynomial-time preimages.
 
-Formalized by `MetaMathlibExt.ComplexityTheory.comp_mem_coNP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#comp-mem-co-np).
+Formalized by `MetaMathlibExt.ComplexityTheory.comp_mem_coNP`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#comp-mem-co-np).
 
 ## Polynomial many-one reductions also reduce complements
 
 The same reduction function reduces the complements.
 
-Formalized by `Cslib.CookLevin.PolyManyOneRed.compl`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Preimage.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#compl).
+Formalized by `Cslib.CookLevin.PolyManyOneRed.compl`, a theorem declared in [CSLibExt/Computability/Complexity/Preimage.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Preimage.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html#compl).
 
 ## Depends on
 
@@ -1485,4 +1485,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Time and space complexity classes](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/complexity-classes/time-and-space-complexity-classes)

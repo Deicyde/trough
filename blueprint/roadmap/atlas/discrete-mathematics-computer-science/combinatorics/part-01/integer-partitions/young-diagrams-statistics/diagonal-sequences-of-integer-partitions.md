@@ -7,7 +7,7 @@ statement: formalized
 
 # Diagonal sequences of integer partitions
 
-42 results, 20 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html).
+42 results, 20 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html).
 
 ## Diagonal sequence of a partition
 
@@ -24,7 +24,7 @@ natural numbers.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1, Definition of the diagonal sequence (1.1).
 
-Formalized by `MetaMathlibExt.diagonalSequence`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence).
+Formalized by `MetaMathlibExt.diagonalSequence`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence).
 
 ## Diagonal sequence of $(7, 7, 4, 1, 1, 1)$
 
@@ -36,7 +36,7 @@ $0, 1, \dots, 9$. This is the paper's running example.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (example after the definition); characteristic check of `diagonalSequence`.
 
-Formalized by `MetaMathlibExt.diagonalSequence_seven_seven_four_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-seven-seven-four-one-o).
+Formalized by `MetaMathlibExt.diagonalSequence_seven_seven_four_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-seven-seven-four-one-o).
 
 ## Sequence of a finite list
 
@@ -49,7 +49,7 @@ sequences, which take the value $0$ at index $0$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (trailing zeroes of `δ(α)` are omitted).
 
-Formalized by `MetaMathlibExt.diagonalOfList`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-of-list).
+Formalized by `MetaMathlibExt.diagonalOfList`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-of-list).
 
 ## The list sequence of $(1, 2, 1)$
 
@@ -60,7 +60,7 @@ values $0, 1, 2, 1, 0, 0$ at the indices $0, 1, 2, 3, 4, 5$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1; characteristic check of `diagonalOfList`.
 
-Formalized by `MetaMathlibExt.diagonalOfList_one_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-of-list-one-two-one).
+Formalized by `MetaMathlibExt.diagonalOfList_one_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-of-list-one-two-one).
 
 ## Normal form of a diagonal sequence
 
@@ -74,7 +74,7 @@ $v = q, q - 1, \dots, 1$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 1, display (2.1).
 
-Formalized by `MetaMathlibExt.diagonalNormalForm`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-normal-form).
+Formalized by `MetaMathlibExt.diagonalNormalForm`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-normal-form).
 
 ## Diagonal normal form for $q = 4$ and $s = (1, 1, 0, 2)$
 
@@ -87,7 +87,7 @@ of $v$, is $(1, 2, 3, 4, 4, 4, 2, 1)$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalNormalForm`.
 
-Formalized by `MetaMathlibExt.diagonalNormalForm_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-normal-form-four-example).
+Formalized by `MetaMathlibExt.diagonalNormalForm_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-normal-form-four-example).
 
 ## Maximal partition of a diagonal normal form
 
@@ -99,7 +99,7 @@ the $q$ numbers $\bar\alpha_i = q - i + 1 + \sum_{k=i}^{q} s_k$, $1 \le i \le q$
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 1.
 
-Formalized by `MetaMathlibExt.diagonalMaxPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition).
+Formalized by `MetaMathlibExt.diagonalMaxPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition).
 
 ## Maximal partition for $q = 4$ and $s = (1, 1, 0, 2)$
 
@@ -111,7 +111,7 @@ $\bar\alpha_i = q - i + 1 + \sum_{k=i}^{q} s_k$ for $1 \le i \le q$, is $(8, 6, 
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalMaxPartition`.
 
-Formalized by `MetaMathlibExt.diagonalMaxPartition_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-four-example).
+Formalized by `MetaMathlibExt.diagonalMaxPartition_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-four-example).
 
 ## Minimal partition of a diagonal normal form
 
@@ -125,7 +125,7 @@ down to $s_1 + 1$ copies of $1$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 2.
 
-Formalized by `MetaMathlibExt.diagonalMinPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-min-partition).
+Formalized by `MetaMathlibExt.diagonalMinPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-min-partition).
 
 ## Minimal partition for $q = 4$ and $s = (1, 1, 0, 2)$
 
@@ -138,7 +138,7 @@ $v^{(m)}$ denotes $m$ copies of $v$, is $(4, 4, 4, 3, 2, 2, 1, 1)$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 2 (example after Corollary 4); characteristic check of `diagonalMinPartition`.
 
-Formalized by `MetaMathlibExt.diagonalMinPartition_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-min-partition-four-example).
+Formalized by `MetaMathlibExt.diagonalMinPartition_four_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-min-partition-four-example).
 
 ## Conjugate of a multiset of parts
 
@@ -152,7 +152,7 @@ partition, these are the parts of the conjugate partition.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (conjugate partition `α*`).
 
-Formalized by `MetaMathlibExt.conjugateParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts).
+Formalized by `MetaMathlibExt.conjugateParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts).
 
 ## The conjugate of $(3, 1)$ is $(2, 1, 1)$
 
@@ -163,7 +163,7 @@ $\{3, 1\}$ is the partition with parts $\{2, 1, 1\}$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1; characteristic check of `conjugateParts`.
 
-Formalized by `MetaMathlibExt.conjugateParts_three_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts-three-one).
+Formalized by `MetaMathlibExt.conjugateParts_three_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts-three-one).
 
 ## Diagonal class of a partition
 
@@ -175,7 +175,7 @@ sequence $\delta(\beta)$ equals the diagonal sequence $\delta(p)$ of $p$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]`).
 
-Formalized by `MetaMathlibExt.diagonalClass`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class).
+Formalized by `MetaMathlibExt.diagonalClass`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class).
 
 ## Every partition lies in its diagonal class
 
@@ -187,7 +187,7 @@ of $p$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]`); characteristic check of `diagonalClass`.
 
-Formalized by `MetaMathlibExt.mem_diagonalClass_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#mem-diagonal-class-self).
+Formalized by `MetaMathlibExt.mem_diagonalClass_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#mem-diagonal-class-self).
 
 ## Partitions with a prescribed diagonal sequence
 
@@ -199,7 +199,7 @@ whose diagonal sequence $\delta(\beta)$ equals $d$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]` for `d ∈ Δ(n)`).
 
-Formalized by `MetaMathlibExt.diagonalClassOf`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class-of).
+Formalized by `MetaMathlibExt.diagonalClassOf`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class-of).
 
 ## A partition lies in the class of its diagonal sequence
 
@@ -210,7 +210,7 @@ belongs to the set of partitions of $n$ whose diagonal sequence equals that of $
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 1 (definition of `[d]`); characteristic check of `diagonalClassOf`.
 
-Formalized by `MetaMathlibExt.mem_diagonalClassOf_diagonalSequence`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#mem-diagonal-class-of-diagonal-sequence).
+Formalized by `MetaMathlibExt.mem_diagonalClassOf_diagonalSequence`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#mem-diagonal-class-of-diagonal-sequence).
 
 ## Majorization of part lists
 
@@ -225,7 +225,7 @@ listed in decreasing order.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 3 (definition of majorization).
 
-Formalized by `MetaMathlibExt.PartitionMajorizes`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes).
+Formalized by `MetaMathlibExt.PartitionMajorizes`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes).
 
 ## Majorization of $(2, 2)$ by $(3, 1)$
 
@@ -236,7 +236,7 @@ $(2, 2)$: $3 \ge 2$ and $3 + 1 \ge 2 + 2$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 3; characteristic check of `PartitionMajorizes`.
 
-Formalized by `MetaMathlibExt.partitionMajorizes_three_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes-three-one-two-two).
+Formalized by `MetaMathlibExt.partitionMajorizes_three_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes-three-one-two-two).
 
 ## Number of $k$-vn-arrangements
 
@@ -250,7 +250,7 @@ equal entries gives the same arrangement. For $k = 1$ these are the vn-arrangeme
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 4 (definitions of vn-arrangement and k-vn-arrangement).
 
-Formalized by `MetaMathlibExt.vnArrangementCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count).
+Formalized by `MetaMathlibExt.vnArrangementCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count).
 
 ## A singleton multiset has one $k$-vn-arrangement
 
@@ -261,7 +261,7 @@ integer $a$, the one-element multiset $\{a\}$ has exactly one $k$-vn-arrangement
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Section 4; characteristic check of `vnArrangementCount`.
 
-Formalized by `MetaMathlibExt.vnArrangementCount_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-singleton).
+Formalized by `MetaMathlibExt.vnArrangementCount_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-singleton).
 
 ## Increments of the diagonal sequence
 
@@ -274,7 +274,7 @@ $d_{k+1} \le d_k$, then $d_{k+2} \le d_{k+1}$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.diagonalSequence_succ_le_and_antitone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-succ-le-and-antitone).
+Stated but not proved: `MetaMathlibExt.diagonalSequence_succ_le_and_antitone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-succ-le-and-antitone).
 
 ## Existence and uniqueness of the diagonal normal form
 
@@ -290,7 +290,7 @@ $s'_k = s_k$ for $1 \le k \le q$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.exists_unique_diagonalNormalForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-unique-diagonal-normal-form).
+Stated but not proved: `MetaMathlibExt.exists_unique_diagonalNormalForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-unique-diagonal-normal-form).
 
 ## The maximal partition has the prescribed diagonal normal form
 
@@ -307,7 +307,7 @@ $1 \le i < q$; and $s_q = \bar\alpha_q - 1$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.diagonalMaxPartition_spec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-spec).
+Stated but not proved: `MetaMathlibExt.diagonalMaxPartition_spec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-spec).
 
 ## Counting diagonal sequences
 
@@ -320,7 +320,7 @@ partitions of $n$ into odd parts.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.ncard_diagonalSequences_eq_card_distincts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#ncard-diagonal-sequences-eq-card-distinc).
+Stated but not proved: `MetaMathlibExt.ncard_diagonalSequences_eq_card_distincts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#ncard-diagonal-sequences-eq-card-distinc).
 
 ## Conjugate of a partition with prescribed gaps between its parts
 
@@ -334,7 +334,7 @@ $v^{(r)}$ means $r$ copies of $v$; the parts are compared as multisets.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.conjugateParts_diagonalMaxPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts-diagonal-max-partition).
+Stated but not proved: `MetaMathlibExt.conjugateParts_diagonalMaxPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#conjugate-parts-diagonal-max-partition).
 
 ## Equal diagonal sequences of the maximal and minimal partitions
 
@@ -352,7 +352,7 @@ of parts of $\underline\alpha$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.diagonalSequence_max_eq_min_and_multiset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-max-eq-min-and-multise).
+Stated but not proved: `MetaMathlibExt.diagonalSequence_max_eq_min_and_multiset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-sequence-max-eq-min-and-multise).
 
 ## Repeated parts and large gaps in a diagonal class
 
@@ -371,7 +371,7 @@ $\alpha_i - \alpha_{i+1} \ge 2$ for some $i$ with $1 \le i \le t$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.exists_eq_succ_of_ne_diagonalMaxPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-eq-succ-of-ne-diagonal-max-partit).
+Stated but not proved: `MetaMathlibExt.exists_eq_succ_of_ne_diagonalMaxPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-eq-succ-of-ne-diagonal-max-partit).
 
 ## The largest part of a partition with given diagonal sequence
 
@@ -387,7 +387,7 @@ $A_1 = \{q, q + s_q, q + s_q + s_{q-1}, \dots, q + s_q + \dots + s_1\}$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sup_parts_mem_diagonalFirstPartSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#sup-parts-mem-diagonal-first-part-set).
+Stated but not proved: `MetaMathlibExt.sup_parts_mem_diagonalFirstPartSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#sup-parts-mem-diagonal-first-part-set).
 
 ## Sums of squared parts and the diagonal sequence
 
@@ -405,7 +405,7 @@ and $\alpha_1$ the largest part; summing to $2n$ adds only zero terms.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_sq_add_sum_sq_conjugate_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#sum-sq-add-sum-sq-conjugate-eq).
+Stated but not proved: `MetaMathlibExt.sum_sq_add_sum_sq_conjugate_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#sum-sq-add-sum-sq-conjugate-eq).
 
 ## Conjugation reverses majorization
 
@@ -420,7 +420,7 @@ This is Theorem 7.B.5 of Marshall, Olkin and Arnold, as quoted in the source.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, proof of Proposition 5 (citing [4], Theorem 7.B.5).
 
-Stated but not proved: `MetaMathlibExt.partitionMajorizes_iff_conjugate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes-iff-conjugate).
+Stated but not proved: `MetaMathlibExt.partitionMajorizes_iff_conjugate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#partition-majorizes-iff-conjugate).
 
 ## The diagonal class lies between the maximal and minimal partitions in majorization
 
@@ -440,7 +440,7 @@ the shorter list.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.diagonalMaxPartition_majorizes_majorizes_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-majorizes-majoriz).
+Stated but not proved: `MetaMathlibExt.diagonalMaxPartition_majorizes_majorizes_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-max-partition-majorizes-majoriz).
 
 ## Counting vn-arrangements of a multiset
 
@@ -454,7 +454,7 @@ for all $j$, is $\prod_{i=0}^{t-1} \binom{b_i + b_{i+1}}{b_i}$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.vnArrangementCount_one_eq_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-one-eq-prod).
+Stated but not proved: `MetaMathlibExt.vnArrangementCount_one_eq_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-one-eq-prod).
 
 ## Vn-arrangements of consecutive integers
 
@@ -467,7 +467,7 @@ $v_{i+1} - v_i \le 1$ for all $i$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.vnArrangementCount_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-consecutive).
+Stated but not proved: `MetaMathlibExt.vnArrangementCount_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-consecutive).
 
 ## Counting $k$-vn-arrangements of a multiset
 
@@ -485,7 +485,7 @@ $$
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.vnArrangementCount_eq_multinomial_mul_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-eq-multinomial-mul).
+Stated but not proved: `MetaMathlibExt.vnArrangementCount_eq_multinomial_mul_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#vn-arrangement-count-eq-multinomial-mul).
 
 ## Partitions in a diagonal class with as many parts as the initial staircase
 
@@ -501,7 +501,7 @@ $$\prod_{i=q}^{L-1} \binom{b_i + b_{i+1}}{b_i}.$$
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClass_filter_card_parts_eq_q` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-filter-card-parts-eq).
+Stated but not proved: `MetaMathlibExt.card_diagonalClass_filter_card_parts_eq_q` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-filter-card-parts-eq).
 
 ## Partitions in a diagonal class with more parts than the initial staircase
 
@@ -521,7 +521,7 @@ For $k > L$ both sides are $0$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClass_filter_card_parts_eq_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-filter-card-parts-eq-2).
+Stated but not proved: `MetaMathlibExt.card_diagonalClass_filter_card_parts_eq_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-filter-card-parts-eq-2).
 
 ## Number of partitions with a given diagonal sequence
 
@@ -537,7 +537,7 @@ $$\prod_{i=q}^{L-1} \binom{b_i + b_{i+1} + 1}{b_i + 1}.$$
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClass_eq_prod_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-eq-prod-choose).
+Stated but not proved: `MetaMathlibExt.card_diagonalClass_eq_prod_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-eq-prod-choose).
 
 ## Diagonal classes whose multiplicities are at least two
 
@@ -554,7 +554,7 @@ sequence $\delta(\alpha)$ is $\prod_{i=q}^{L} (\max(d_i - d_{i+1}, 0) + 1)$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 6 (1), (2).
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClass_of_two_le_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-two-le-s).
+Stated but not proved: `MetaMathlibExt.card_diagonalClass_of_two_le_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-two-le-s).
 
 ## Every positive integer is the size of a diagonal class
 
@@ -566,7 +566,7 @@ of $n$ with the same diagonal sequence as $\alpha$, has exactly $m$ elements.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 6 (3).
 
-Stated but not proved: `MetaMathlibExt.exists_card_diagonalClass_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-card-diagonal-class-eq).
+Stated but not proved: `MetaMathlibExt.exists_card_diagonalClass_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#exists-card-diagonal-class-eq).
 
 ## Truncating the staircase of a diagonal sequence
 
@@ -582,7 +582,7 @@ diagonal sequence $d(k, s)$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 6 (4).
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClassOf_truncate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-truncate).
+Stated but not proved: `MetaMathlibExt.card_diagonalClassOf_truncate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-truncate).
 
 ## Capping the multiplicities of a diagonal sequence at two
 
@@ -598,7 +598,7 @@ sequence $d(q, \sigma)$.
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 6 (5).
 
-Stated but not proved: `MetaMathlibExt.card_diagonalClassOf_min_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-min-two).
+Stated but not proved: `MetaMathlibExt.card_diagonalClassOf_min_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#card-diagonal-class-of-min-two).
 
 ## Diagonal classes of size at most three
 
@@ -625,7 +625,7 @@ Part (4) of the corollary, on classes of size $4$, is false as printed and is no
 
 - Michael Neubauer and Harmony Vargas, *Diagonal Sequences of Integer Partitions*, INTEGERS 25 (2025), Article A60, Corollary 7 (1)–(3).
 
-Stated but not proved: `MetaMathlibExt.diagonalClass_classification_card_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class-classification-card-le-th).
+Stated but not proved: `MetaMathlibExt.diagonalClass_classification_card_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/DiagonalSequencesWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html#diagonal-class-classification-card-le-th).
 
 ## Depends on
 
@@ -634,4 +634,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Diagonal sequences of integer partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/diagonal-sequences-of-integer-partitions)

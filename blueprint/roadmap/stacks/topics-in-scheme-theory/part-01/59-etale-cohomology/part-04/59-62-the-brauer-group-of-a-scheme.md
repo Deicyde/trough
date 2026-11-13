@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.62 The Brauer group of a scheme
 
-Section 59.62 of the Stacks Project, [Tag 0A2J](https://stacks.math.columbia.edu/tag/0A2J). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.62 of the Stacks Project, [Tag 0A2J](https://stacks.math.columbia.edu/tag/0A2J). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A2J, the section
 
 [Tag 0A2J](https://stacks.math.columbia.edu/tag/0A2J) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.BrauerScheme.IsSimilar`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L362). The attribute's comment: “the equivalence of Azumaya algebras”.
+**`Stacks.EtaleCohomology.BrauerScheme.IsSimilar`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L362). The attribute's comment: “the equivalence of Azumaya algebras”.
 
 > **The equivalence of Tag 0A2J.** Two sheaves of `𝒪_S`-algebras `A` and `B` are similar if
 > there are finite locally free sheaves of `𝒪_S`-modules `F` and `G` of positive rank at every
@@ -26,7 +26,7 @@ Section 59.62 of the Stacks Project, [Tag 0A2J](https://stacks.math.columbia.edu
 def IsSimilar (A B : AlgebraSheaf S) : Prop
 ```
 
-**`Stacks.EtaleCohomology.BrauerScheme.IsAzumaya`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L672). The attribute's comment: “the Azumaya condition”.
+**`Stacks.EtaleCohomology.BrauerScheme.IsAzumaya`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L672). The attribute's comment: “the Azumaya condition”.
 
 > **The Azumaya condition of Tag 0A2J.** A sheaf of `𝒪_S`-algebras is Azumaya if it is étale
 > locally a matrix algebra: there is an étale covering `{φ_i : U_i → S}` of `S` and integers
@@ -42,7 +42,7 @@ def IsSimilar (A B : AlgebraSheaf S) : Prop
 def IsAzumaya {S : Scheme.{u}} (A : AlgebraSheaf S) : Prop
 ```
 
-**`Stacks.EtaleCohomology.BrauerScheme.BrauerGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L689). The attribute's comment: “the Brauer group”.
+**`Stacks.EtaleCohomology.BrauerScheme.BrauerGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L689). The attribute's comment: “the Brauer group”.
 
 > **The Brauer group of a scheme**, Tag 0A2J: the set of equivalence classes of Azumaya
 > `𝒪_S`-algebras for the equivalence of `IsSimilar`. The operation induced by the tensor product
@@ -52,7 +52,7 @@ def IsAzumaya {S : Scheme.{u}} (A : AlgebraSheaf S) : Prop
 def BrauerGroup (S : Scheme.{u}) : Type (u + 1)
 ```
 
-**`Stacks.EtaleCohomology.BrauerScheme.BrauerGroup.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 738](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L738). The attribute's comment: “the operation of the Brauer group”.
+**`Stacks.EtaleCohomology.BrauerScheme.BrauerGroup.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean, line 738](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/AlgebraSheaf.lean#L738). The attribute's comment: “the operation of the Brauer group”.
 
 > **The operation of the Brauer group of Tag 0A2J**: the one induced by the tensor product of
 > sheaves of algebras. It is well defined because a tensor product of Azumaya algebra sheaves is
@@ -67,7 +67,7 @@ def BrauerGroup.mul {S : Scheme.{u}} : BrauerGroup S → BrauerGroup S → Braue
 
 [Tag 0A2K](https://stacks.math.columbia.edu/tag/0A2K) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_invertible_tensor_iso_of_endomorphism_algebra_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/EndomorphismAlgebra/InvertibleTwist.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/EndomorphismAlgebra/InvertibleTwist.lean#L355).
+**`Stacks.EtaleCohomology.exists_invertible_tensor_iso_of_endomorphism_algebra_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/EndomorphismAlgebra/InvertibleTwist.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/EndomorphismAlgebra/InvertibleTwist.lean#L355).
 
 > An isomorphism of the endomorphism algebra sheaves of two positive-rank vector
 > bundles is conjugation by an isomorphism after an invertible twist.
@@ -118,7 +118,7 @@ public theorem exists_invertible_tensor_iso_of_endomorphism_algebra_iso
 
 [Tag 0A2L](https://stacks.math.columbia.edu/tag/0A2L) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.BrauerScheme.brauerClass_pow_eq_one_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/BrauerClassAnnihilated.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/BrauerClassAnnihilated.lean#L212).
+**`Stacks.EtaleCohomology.BrauerScheme.brauerClass_pow_eq_one_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/BrauerClassAnnihilated.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroupScheme/BrauerClassAnnihilated.lean#L212).
 
 > **The class in `Br(S)` of an Azumaya `𝒪_S`-algebra whose underlying sheaf of modules is
 > finite locally free of rank `d ^ 2` is annihilated by `d`.**
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.62, Tag 0A2J](https://stacks.math.columbia.edu/tag/0A2J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

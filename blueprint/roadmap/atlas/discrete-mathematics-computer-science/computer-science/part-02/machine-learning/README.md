@@ -1,6 +1,6 @@
 # Machine learning
 
-701 results of ATLAS's vault, 700 proved and 1 stated but not proved, in this branch's topics.
+701 results of ATLAS's vault, all proved, in this branch's topics.
 
 Mathematical theory of learning from data, including the probabilistic modelling, inference and sampling methods used in machine learning.
 

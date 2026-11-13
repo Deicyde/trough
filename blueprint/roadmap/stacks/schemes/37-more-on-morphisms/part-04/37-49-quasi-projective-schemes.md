@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.49 Quasi-projective schemes
 
-Section 37.49 of the Stacks Project, [Tag 0B41](https://stacks.math.columbia.edu/tag/0B41). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.49 of the Stacks Project, [Tag 0B41](https://stacks.math.columbia.edu/tag/0B41). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B42, a lemma
 
 [Tag 0B42](https://stacks.math.columbia.edu/tag/0B42) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiProjective_tfae_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L238). The attribute's comment: “all five conditions, with no hypothesis”.
+**`AlgebraicGeometry.isQuasiProjective_tfae_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L238). The attribute's comment: “all five conditions, with no hypothesis”.
 
 > **Stacks Project, Tag 0B42.** Let `S` be a scheme carrying an ample invertible module and let
 > `f : X ⟶ S` be a morphism of schemes. The following are equivalent:
@@ -52,7 +52,7 @@ theorem isQuasiProjective_tfae_of_exists_isAmple (f : X ⟶ S)
 
 [Tag 0B43](https://stacks.math.columbia.edu/tag/0B43) in the Stacks Project.
 
-**`AlgebraicGeometry.QuasiProjectiveSchemesOver.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L234). The attribute's comment: “part (1), base change; the source's hypothesis that `S'` has an ample invertible sheaf is not needed, Tag 0B3G needing no such hypothesis”. References: EGA II (5.3.4).
+**`AlgebraicGeometry.QuasiProjectiveSchemesOver.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L234). The attribute's comment: “part (1), base change; the source's hypothesis that `S'` has an ample invertible sheaf is not needed, Tag 0B3G needing no such hypothesis”. References: EGA II (5.3.4).
 
 > **Stacks Project, Tag 0B43, clause (1).** For a morphism of bases `g : S' ⟶ S`, base change
 > along `g` is a functor `QP_S ⥤ QP_{S'}`: the fibre product `X ×_S S'` of a scheme `X`
@@ -67,7 +67,7 @@ def QuasiProjectiveSchemesOver.baseChange {S S' : Scheme.{u}} (g : S' ⟶ S) :
     QuasiProjectiveSchemesOver S ⥤ QuasiProjectiveSchemesOver S'
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_comp_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L250). The attribute's comment: “part (2), composition”.
+**`AlgebraicGeometry.isQuasiProjective_comp_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L250). The attribute's comment: “part (2), composition”.
 
 > **Stacks Project, Tag 0B43, clause (2).** Let `S` carry an ample invertible sheaf. If
 > `X ∈ QP_S` and `Y ∈ QP_X`, then `Y ∈ QP_S`: for `f : Y ⟶ X` and `g : X ⟶ S` quasi-projective,
@@ -86,7 +86,7 @@ theorem isQuasiProjective_comp_of_exists_isAmple {X Y S : Scheme.{u}} (f : Y ⟶
     (hf : IsQuasiProjective f) (hg : IsQuasiProjective g) : IsQuasiProjective (f ≫ g)
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L267). The attribute's comment: “part (3), fibre products”.
+**`AlgebraicGeometry.isQuasiProjective_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L267). The attribute's comment: “part (3), fibre products”.
 
 > **Stacks Project, Tag 0B43, clause (3). `QP_S` is closed under fibre products over `S`.** For
 > `f : X ⟶ S` and `g : Y ⟶ S` quasi-projective and `S` carrying an ample invertible sheaf, the
@@ -104,7 +104,7 @@ theorem isQuasiProjective_pullback_snd_comp {X Y S : Scheme.{u}} (f : X ⟶ S) (
     IsQuasiProjective (pullback.snd f g ≫ g)
 ```
 
-**`AlgebraicGeometry.quasiProjectiveOver_isClosedUnderBinaryProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L306). The attribute's comment: “part (3), fibre products, as closure of the category under binary products”. References: EGA II (5.3.4), “(iv)”.
+**`AlgebraicGeometry.quasiProjectiveOver_isClosedUnderBinaryProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L306). The attribute's comment: “part (3), fibre products, as closure of the category under binary products”. References: EGA II (5.3.4), “(iv)”.
 
 > **Stacks Project, Tag 0B43, clause (3), as a closure property of the category `QP_S`.** For
 > `S` carrying an ample invertible sheaf, the full subcategory of schemes quasi-projective over `S`
@@ -124,7 +124,7 @@ theorem quasiProjectiveOver_isClosedUnderBinaryProducts (S : Scheme.{u})
     (quasiProjectiveOver S).IsClosedUnderBinaryProducts
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L335). The attribute's comment: “part (6), quasi-affine of finite type; no hypothesis on the base is used”.
+**`AlgebraicGeometry.isQuasiProjective_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L335). The attribute's comment: “part (6), quasi-affine of finite type; no hypothesis on the base is used”.
 
 > **Stacks Project, Tag 0B43, clause (6).** If `f : X ⟶ S` is quasi-affine of finite type then
 > `X ∈ QP_S`.
@@ -141,7 +141,7 @@ theorem isQuasiProjective_of_isQuasiAffineHom {X S : Scheme.{u}} (f : X ⟶ S)
     [IsQuasiAffineHom f] (hf : LocallyOfFiniteType f) : IsQuasiProjective f
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_of_locallyQuasiFinite_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L351). The attribute's comment: “part (7), quasi-finite and separated; no hypothesis on the base is used”. References: EGA III (4.4.12), “more general”.
+**`AlgebraicGeometry.isQuasiProjective_of_locallyQuasiFinite_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L351). The attribute's comment: “part (7), quasi-finite and separated; no hypothesis on the base is used”. References: EGA III (4.4.12), “more general”.
 
 > **Stacks Project, Tag 0B43, clause (7).** If `f : X ⟶ S` is quasi-finite and separated then
 > `X ∈ QP_S`.
@@ -157,7 +157,7 @@ theorem isQuasiProjective_of_locallyQuasiFinite_of_isSeparated {X S : Scheme.{u}
     IsQuasiProjective f
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L367). The attribute's comment: “part (8), quasi-compact immersion; no hypothesis on the base is used”.
+**`AlgebraicGeometry.isQuasiProjective_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveCategoryClosure.lean#L367). The attribute's comment: “part (8), quasi-compact immersion; no hypothesis on the base is used”.
 
 > **Stacks Project, Tag 0B43, clause (8).** If `f : X ⟶ S` is a quasi-compact immersion then
 > `X ∈ QP_S`.
@@ -172,7 +172,7 @@ theorem isQuasiProjective_of_isImmersion {X S : Scheme.{u}} (f : X ⟶ S) [IsImm
     [QuasiCompact f] : IsQuasiProjective f
 ```
 
-**`AlgebraicGeometry.isQuasiProjective_sigmaDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean#L230). The attribute's comment: “part (4), finite disjoint unions; proved through clause (6) and clause (2) over the base `∐ S` rather than through the ampleness of a glued module on a disjoint union, which the source asserts with details omitted”.
+**`AlgebraicGeometry.isQuasiProjective_sigmaDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean#L230). The attribute's comment: “part (4), finite disjoint unions; proved through clause (6) and clause (2) over the base `∐ S` rather than through the ampleness of a glued module on a disjoint union, which the source asserts with details omitted”.
 
 > Let `S` carry an ample invertible sheaf. If `f i : Z i ⟶ S` is quasi-projective for every
 > member of a finite family, then the structure morphism `∐ Z ⟶ S` of the disjoint union is
@@ -186,7 +186,7 @@ theorem isQuasiProjective_sigmaDesc (f : ∀ i, Z i ⟶ S)
     (hf : ∀ i, IsQuasiProjective (f i)) : IsQuasiProjective (Sigma.desc f)
 ```
 
-**`AlgebraicGeometry.quasiProjectiveOver_prop_of_isColimit_cofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean#L268). The attribute's comment: “part (4), finite disjoint unions, as closure of the category under finite coproducts”. References: EGA II (5.3.6), “special case”.
+**`AlgebraicGeometry.quasiProjectiveOver_prop_of_isColimit_cofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveDisjointUnion.lean#L268). The attribute's comment: “part (4), finite disjoint unions, as closure of the category under finite coproducts”. References: EGA II (5.3.6), “special case”.
 
 > For `S` carrying an ample invertible sheaf, the full subcategory of schemes quasi-projective
 > over `S` is closed under finite coproducts in the category of schemes over `S`.
@@ -200,7 +200,7 @@ theorem quasiProjectiveOver_prop_of_isColimit_cofan (S : Scheme.{u})
     (c : Cofan X) (hc : IsColimit c) : quasiProjectiveOver S c.pt
 ```
 
-**`AlgebraicGeometry.IsProjective.isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L219). The attribute's comment: “part (5), a projective morphism is in `QP_S`; the source's hypothesis that `S` has an ample invertible sheaf is not needed, Tag 07RL needing no such hypothesis”.
+**`AlgebraicGeometry.IsProjective.isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L219). The attribute's comment: “part (5), a projective morphism is in `QP_S`; the source's hypothesis that `S` has an ample invertible sheaf is not needed, Tag 07RL needing no such hypothesis”.
 
 > **Stacks Project, Tag 07RL. A projective morphism is quasi-projective.** Properness supplies
 > the finite-type half, and the `f`-very ample module of
@@ -225,8 +225,8 @@ theorem IsProjective.isQuasiProjective {f : X ⟶ S} (hf : IsProjective f) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.IsQuasiAffine.of_isAffineHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IsQuasiAffine.of_isAffineHom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L54) (StacksFrontier): “U is quasi-affine (stated for affine f; integral morphisms are affine)”. References: EGA II (5.1.10), “(ii), special case”.
-- [`AlgebraicGeometry.Scheme.isPullback_toSpecΓ_toSpecΓ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.isPullback_toSpecΓ_toSpecΓ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L56) (StacksFrontier): “the square U → Spec Γ(U), X → Spec Γ(X) is cartesian (stated for affine f)”.
+- [`AlgebraicGeometry.Scheme.IsQuasiAffine.of_isAffineHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IsQuasiAffine.of_isAffineHom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch37.lean#L54) (StacksFrontier): “U is quasi-affine (stated for affine f; integral morphisms are affine)”. References: EGA II (5.1.10), “(ii), special case”.
+- [`AlgebraicGeometry.Scheme.isPullback_toSpecΓ_toSpecΓ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.isPullback_toSpecΓ_toSpecΓ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch37.lean#L56) (StacksFrontier): “the square U → Spec Γ(U), X → Spec Γ(X) is cartesian (stated for affine f)”.
 
 ## Depends on
 
@@ -235,4 +235,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.49, Tag 0B41](https://stacks.math.columbia.edu/tag/0B41)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

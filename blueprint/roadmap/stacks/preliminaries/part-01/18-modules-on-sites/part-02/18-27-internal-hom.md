@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.27 Internal Hom
 
-Section 18.27 of the Stacks Project, [Tag 04TT](https://stacks.math.columbia.edu/tag/04TT). 12 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.27 of the Stacks Project, [Tag 04TT](https://stacks.math.columbia.edu/tag/04TT). 12 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03EM, a lemma
 
 [Tag 03EM](https://stacks.math.columbia.edu/tag/03EM) in the Stacks Project.
 
-**`internalHom_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHom.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHom.lean#L625). References: EGA 0 (4.1.5), “partial”; SGA 4 IV (12.4), “sheaf property”; SGA 3 IV (4.5.13), “special case”; SGA 4 IV (12.1), “partial”; SGA 4 IV (12.2), “Hom\_A(M”; SGA 4 IV (12.5), “more general”.
+**`internalHom_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHom.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHom.lean#L625). References: EGA 0 (4.1.5), “partial”; SGA 4 IV (12.4), “sheaf property”; SGA 3 IV (4.5.13), “special case”; SGA 4 IV (12.1), “partial”; SGA 4 IV (12.2), “Hom\_A(M”; SGA 4 IV (12.5), “more general”.
 
 > Let `O` be a presheaf of commutative rings on a site `C`, let `F` be a presheaf of
 > `O`-modules and let `G` be a sheaf of `O`-modules. Then the internal hom presheaf
@@ -31,7 +31,7 @@ theorem internalHom_isSheaf
 
 [Tag 0E8H](https://stacks.math.columbia.edu/tag/0E8H) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.internalHomOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean#L170).
+**`Stacks.SheafOfModules.InternalHom.internalHomOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean#L170).
 
 > **Stacks 0E8H.** Internal Hom commutes with restriction to the localized site over `U`.
 
@@ -45,7 +45,7 @@ noncomputable def internalHomOverIso
         ((restrFun X.O.obj U).obj G.val)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.internalHomOverIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean#L203). The attribute's comment: “canonical component on sections”.
+**`Stacks.SheafOfModules.InternalHom.internalHomOverIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomRestriction.lean#L203). The attribute's comment: “canonical component on sections”.
 
 > At `V ⟶ U`, the isomorphism of Stacks 0E8H restricts a local morphism along the
 > iterated-slice functor `(C/U)/V ⥤ C/V`.
@@ -67,7 +67,7 @@ theorem internalHomOverIso_hom_app
 
 [Tag 0GMX](https://stacks.math.columbia.edu/tag/0GMX) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.pullbackInternalHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L214). The attribute's comment: “the canonical map”.
+**`Stacks.SheafOfModules.InternalHom.pullbackInternalHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L214). The attribute's comment: “the canonical map”.
 
 > **Stacks 0GMX.** The canonical map `f^* Hom_{O_D}(F, G) ⟶ Hom_{O_C}(f^*F, f^*G)` attached
 > to a morphism of ringed sites: the transpose, under the correspondence of Stacks 03EO, of the
@@ -80,7 +80,7 @@ noncomputable def pullbackInternalHomMap :
         ((ringedSitePullback f).obj G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.adjointPullbackInternalHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L226). The attribute's comment: “the adjoint map”.
+**`Stacks.SheafOfModules.InternalHom.adjointPullbackInternalHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L226). The attribute's comment: “the adjoint map”.
 
 > **Stacks 0GMX.** The map `Hom_{O_D}(F, G) ⟶ f_* Hom_{O_C}(f^*F, f^*G)` displayed in the
 > source: the adjoint of `pullbackInternalHomMap` under the adjunction `f^* ⊣ f_*` of
@@ -94,7 +94,7 @@ noncomputable def adjointPullbackInternalHomMap :
           ((ringedSitePullback f).obj G))
 ```
 
-**`Stacks.SheafOfModules.InternalHom.tensorEvaluation_pullbackInternalHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L238). The attribute's comment: “compatibility of the canonical map with evaluation”.
+**`Stacks.SheafOfModules.InternalHom.tensorEvaluation_pullbackInternalHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomPullback.lean#L238). The attribute's comment: “compatibility of the canonical map with evaluation”.
 
 > **Stacks 0GMX.** The canonical map is compatible with evaluation: tensoring it with `f^*F`
 > and then evaluating `Hom_{O_C}(f^*F, f^*G)` gives the pulled-back evaluation of
@@ -107,7 +107,7 @@ theorem tensorEvaluation_pullbackInternalHomMap :
       pullbackEvaluation f F G
 ```
 
-**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_compOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompData.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompData.lean#L171). The attribute's comment: “compatibility of the canonical map with composition, for a composite given as data”.
+**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_compOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompData.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompData.lean#L171). The attribute's comment: “compatibility of the canonical map with composition, for a composite given as data”.
 
 > **The canonical map is compatible with composition, with the composite supplied as
 > data.** Let `φ : X ⟶ Y` and `ψ : Y ⟶ Z` be morphisms of ringed topoi between the
@@ -135,7 +135,7 @@ theorem toposPullbackInternalHomMap_compOf
                 (toposPullbackCompComparisonInvOf φ ψ χ τ hτ G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompMap.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompMap.lean#L413). The attribute's comment: “compatibility of the canonical map with composition”.
+**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompMap.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomCompMap.lean#L413). The attribute's comment: “compatibility of the canonical map with composition”.
 
 > **The canonical map of Stacks 0GMX is compatible with composition.** For morphisms of ringed
 > topoi `φ : X ⟶ Y` and `ψ : Y ⟶ Z` between the topoi of three ringed sites and sheaves of
@@ -173,7 +173,7 @@ theorem toposPullbackInternalHomMap_comp
                 (toposPullbackCompComparisonInv φ ψ G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 999](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L999). The attribute's comment: “functoriality of the canonical map in the first variable”.
+**`Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 999](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L999). The attribute's comment: “functoriality of the canonical map in the first variable”.
 
 > **The canonical map of Stacks 0GMX is functorial in its first variable.** For a morphism
 > `c : F' ⟶ F` of sheaves of `O_Y`-modules the square built from the canonical maps at `F` and at
@@ -194,7 +194,7 @@ theorem toposPullbackInternalHomMap_naturality
         toposPullbackInternalHomMap φ F' G
 ```
 
-**`Stacks.SheafOfModules.InternalHom.pullbackInternalHomNatural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1117). The attribute's comment: “first-variable functoriality, for a morphism of ringed sites”. References: EGA 0 (4.4.6), “Functoriality of γ♯”.
+**`Stacks.SheafOfModules.InternalHom.pullbackInternalHomNatural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1117). The attribute's comment: “first-variable functoriality, for a morphism of ringed sites”. References: EGA 0 (4.4.6), “Functoriality of γ♯”.
 
 > **The canonical maps of Stacks 0GMX are functorial in the first variable.** For a morphism
 > `c : F' ⟶ F` of sheaves of `O_D`-modules the square built from the canonical maps at `F` and at
@@ -219,7 +219,7 @@ theorem pullbackInternalHomNatural
 
 [Tag 03EN](https://stacks.math.columbia.edu/tag/03EN) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.InternalHom.internalHomFunctor_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean#L326). The attribute's comment: “presheaf\_first\_variable”.
+**`Stacks.PresheafOfModules.InternalHom.internalHomFunctor_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean#L326). The attribute's comment: “presheaf\_first\_variable”.
 
 > For a fixed target `G`, internal Hom in the first variable sends arbitrary colimits of
 > presheaves of `O`-modules to limits.
@@ -230,7 +230,7 @@ noncomputable instance internalHomFunctor_preservesColimitsOfShape
     PreservesColimitsOfShape I (internalHomFunctor O G)
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.internalHomSecondFunctor_preservesLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean#L566). The attribute's comment: “presheaf\_second\_variable”.
+**`Stacks.PresheafOfModules.InternalHom.internalHomSecondFunctor_preservesLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomVariance.lean#L566). The attribute's comment: “presheaf\_second\_variable”.
 
 > Internal Hom with fixed first variable commutes with arbitrary limits.
 
@@ -239,7 +239,7 @@ noncomputable instance internalHomSecondFunctor_preservesLimits :
     PreservesLimits (internalHomSecondFunctor.{v, u, w, m} O F)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.internalHomSecondFunctor_preservesLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomVariance.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomVariance.lean#L89). The attribute's comment: “sheaf\_second\_variable”. References: SGA 4 IV (12.2), “partial”.
+**`Stacks.SheafOfModules.InternalHom.internalHomSecondFunctor_preservesLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomVariance.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomVariance.lean#L89). The attribute's comment: “sheaf\_second\_variable”. References: SGA 4 IV (12.2), “partial”.
 
 > **Stacks 03EN, sheaf case, second variable.** Internal Hom from a fixed sheaf of modules
 > commutes with arbitrary limits.
@@ -250,7 +250,7 @@ noncomputable instance internalHomSecondFunctor_preservesLimits
     PreservesLimits (internalHomSecondFunctor.{v, u, w, m} J O F)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafInternalHomFunctor_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariable.lean#L192). The attribute's comment: “sheaf\_first\_variable”. References: SGA 4 IV (12.2), “partial, special case”.
+**`Stacks.SheafOfModules.InternalHom.sheafInternalHomFunctor_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariable.lean#L192). The attribute's comment: “sheaf\_first\_variable”. References: SGA 4 IV (12.2), “partial, special case”.
 
 > **Stacks 03EN, sheaf case, first variable.** For a fixed target `G`, the internal Hom of
 > sheaves of modules takes colimits in the first variable to limits.
@@ -262,7 +262,7 @@ public noncomputable instance sheafInternalHomFunctor_preservesColimitsOfShape
     PreservesColimitsOfShape I (sheafInternalHomFunctor J O G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.preservesFiniteColimits_internalHomFirstMate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L865). The attribute's comment: “sheaf case, first variable, for the mate of the tensor comparison”. References: EGA 0 (6.7.6), “Left exactness of Hom(-”; SGA 4 IV (12.2), “partial, special case”.
+**`Stacks.SheafOfModules.InternalHom.preservesFiniteColimits_internalHomFirstMate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 865](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L865). The attribute's comment: “sheaf case, first variable, for the mate of the tensor comparison”. References: EGA 0 (6.7.6), “Left exactness of Hom(-”; SGA 4 IV (12.2), “partial, special case”.
 
 > **Stacks 03EN in the first variable, for the mate.** Internal Hom into a fixed sheaf of
 > modules, contravariant in its source, carries finite colimits of sheaves of modules to finite
@@ -281,7 +281,7 @@ theorem preservesFiniteColimits_internalHomFirstMate :
 
 [Tag 0GMY](https://stacks.math.columbia.edu/tag/0GMY) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.ringedSite_sheafInternalHomObjMapLeft_mono_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean#L133). The attribute's comment: “exact\_first\_argument”. References: EGA 0 (4.1.5), “Injectivity of Hom(F”.
+**`Stacks.SheafOfModules.InternalHom.ringedSite_sheafInternalHomObjMapLeft_mono_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean#L133). The attribute's comment: “exact\_first\_argument”. References: EGA 0 (4.1.5), “Injectivity of Hom(F”.
 
 > **Stacks 0GMY, part (1).** Precomposition along an epimorphism is a monomorphism of
 > internal Hom sheaves, which is the initial zero of the target sequence.
@@ -293,7 +293,7 @@ theorem ringedSite_sheafInternalHomObjMapLeft_mono_of_epi
     Mono (sheafInternalHomObjMapLeft X.J X.O (G := G) g)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.ringedSite_sheafInternalHomObjMapLeft_exact_of_exact_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean#L149). The attribute's comment: “exact\_first\_argument”.
+**`Stacks.SheafOfModules.InternalHom.ringedSite_sheafInternalHomObjMapLeft_exact_of_exact_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomSiteVariance/FirstVariableLeftExact.lean#L149). The attribute's comment: “exact\_first\_argument”.
 
 > **Stacks 0GMY, part (1).** A right-exact sequence of sheaves of modules becomes exact at
 > the middle term after applying internal Hom in the first argument.
@@ -312,14 +312,14 @@ theorem ringedSite_sheafInternalHomObjMapLeft_exact_of_exact_epi
 
 Declarations registered for the tag:
 
-- [`internalHomSecondFunctor_map_mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=internalHomSecondFunctor_map_mono#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean#L41) (StacksFrontier): “exact\_second\_argument”.
-- [`internalHomSecondFunctor_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=internalHomSecondFunctor_exact#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean#L42) (StacksFrontier): “exact\_second\_argument”.
+- [`internalHomSecondFunctor_map_mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=internalHomSecondFunctor_map_mono#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean#L41) (StacksFrontier): “exact\_second\_argument”.
+- [`internalHomSecondFunctor_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=internalHomSecondFunctor_exact#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomSecondVariable.lean#L42) (StacksFrontier): “exact\_second\_argument”.
 
 ## Tag 03EO, a lemma
 
 [Tag 03EO](https://stacks.math.columbia.edu/tag/03EO) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L557). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L556). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO.** The canonical currying isomorphism from internal Hom out of a tensor
 > product to iterated internal Hom.
@@ -329,7 +329,7 @@ noncomputable def presheafInternalHomTensorIso :
     internalHom O (F ⊗ G) H ≅ internalHom O F (internalHom O G H)
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L570). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L569). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
 
 > On sections, the currying isomorphism is tensor currying: after restricting `x`, it
 > evaluates the original morphism on `x ⊗ y`. This pins the isomorphism down, rather than merely
@@ -345,7 +345,7 @@ theorem presheafInternalHomTensorIso_hom_app (a : (restrFun O U).obj (F ⊗ G) �
       restrTensorHom O F G H U a (q ≫ p) (F.restrictₛₗ q.op x ⊗ₜ y)
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L636). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L635). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO.** The currying isomorphism is natural contravariantly in its first tensor
 > factor.
@@ -359,7 +359,7 @@ theorem presheafInternalHomTensorIso_natural_left
         (presheafInternalHomTensorIso O F' G H).hom
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L665). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L664). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO.** The currying isomorphism is natural contravariantly in its second tensor
 > factor.
@@ -374,7 +374,7 @@ theorem presheafInternalHomTensorIso_natural_middle
         (presheafInternalHomTensorIso O F G' H).hom
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L677). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.PresheafOfModules.InternalHom.presheafInternalHomTensorIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/InternalHomTensorCurrying.lean#L676). The attribute's comment: “presheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO.** The currying isomorphism is natural covariantly in its target.
 
@@ -388,7 +388,7 @@ theorem presheafInternalHomTensorIso_natural_right
           (internalHomMapRight O G hh)
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafTensorHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean#L293). The attribute's comment: “presheaf\_tensor\_hom\_adjunction”.
+**`Stacks.PresheafOfModules.InternalHom.presheafTensorHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean#L292). The attribute's comment: “presheaf\_tensor\_hom\_adjunction”.
 
 > **Stacks 03EO.** Tensoring on the right by `G` is left adjoint to the internal-Hom functor
 > with source `G`. Packaging the canonical correspondence as an adjunction records its
@@ -400,7 +400,7 @@ noncomputable def presheafTensorHomAdjunction :
       internalHomSecondFunctor.{v, u, max u v w, u} O G
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.presheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean#L339). The attribute's comment: “presheaf\_tensor\_hom\_adjunction”.
+**`Stacks.PresheafOfModules.InternalHom.presheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunction.lean#L338). The attribute's comment: “presheaf\_tensor\_hom\_adjunction”.
 
 > **Stacks 03EO.** The hom-equivalence of `presheafTensorHomAdjunction` is the canonical
 > currying map: on sections it sends `b` to the map taking `x` and `y` to `b (x ⊗ y)`.
@@ -414,7 +414,7 @@ theorem presheafTensorHomEquiv_apply (b : F ⊗ G ⟶ H) (U : C) (x : F.obj (op 
       globalTensorHom O F G H b T (F.restrictₛₗ q.op x ⊗ₜ y)
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean#L509). The attribute's comment: “presheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure presheaf independent of the universes of the site”.
+**`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean#L508). The attribute's comment: “presheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure presheaf independent of the universes of the site”.
 
 > **Stacks 03EO.** Tensoring on the right by `G` is left adjoint to the internal-Hom functor
 > with source `G`. Packaging the canonical correspondence as an adjunction records its
@@ -426,7 +426,7 @@ noncomputable def presheafTensorHomAdjunction :
       internalHomSecondFunctor.{v, u, w, w} O G
 ```
 
-**`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean#L557). The attribute's comment: “presheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure presheaf independent of the universes of the site”.
+**`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/TensorHomAdjunctionFreeUniverse.lean#L556). The attribute's comment: “presheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure presheaf independent of the universes of the site”.
 
 > **Stacks 03EO.** The hom-equivalence of `presheafTensorHomAdjunction` is the canonical
 > currying map: on sections it sends `b` to the map taking `x` and `y` to `b (x ⊗ y)`.
@@ -440,7 +440,7 @@ theorem presheafTensorHomEquiv_apply (b : F.tensorObj G ⟶ H) (U : C) (x : F.ob
       globalTensorHom O F G H b T (F.restrictₛₗ q.op x ⊗ₜ y)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafCurryIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L242). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.SheafOfModules.InternalHom.sheafCurryIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L242). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO, sheaf case.** The canonical currying isomorphism for the sheafified tensor
 > product and the internal Hom sheaf.
@@ -451,7 +451,7 @@ noncomputable def sheafCurryIso :
       siteSheafInternalHom J O F (siteSheafInternalHom J O G H)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_hom_app_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L287). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_hom_app_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L287). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO, sheaf case.** The canonical isomorphism is tensor currying on every local
 > pure tensor.
@@ -467,7 +467,7 @@ theorem sheafCurryIso_hom_app_tmul (U : C)
         (toSheafTensorSection O F G U (f ⊗ₜ[O.obj.obj (op U)] g))
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L305). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L305). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO, sheaf case.** Currying is contravariantly natural in the first tensor
 > factor.
@@ -482,7 +482,7 @@ theorem sheafCurryIso_natural_left
         (sheafCurryIso O F' G H).hom
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L322). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L322). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO, sheaf case.** Currying is contravariantly natural in the second tensor
 > factor.
@@ -498,7 +498,7 @@ theorem sheafCurryIso_natural_middle
         (sheafCurryIso O F G' H).hom
 ```
 
-**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L340). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
+**`Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomTensorCurrying.lean#L340). The attribute's comment: “sheaf\_internal\_hom\_tensor\_iso”.
 
 > **Stacks 03EO, sheaf case.** Currying is covariantly natural in the target.
 
@@ -512,7 +512,7 @@ theorem sheafCurryIso_natural_right
         sheafInternalHomMapRight O (sheafInternalHomMapRight O h)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorRightHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean#L95). The attribute's comment: “sheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure sheaf independent of the universes of the site”.
+**`Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorRightHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean#L95). The attribute's comment: “sheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure sheaf independent of the universes of the site”.
 
 > **Stacks 03EO, sheaf case, at a free ring universe.**  Tensoring on the right by `G` is left
 > adjoint to the internal-Hom functor with source `G`, for a sheaf of rings whose sections lie in
@@ -530,7 +530,7 @@ def sheafTensorRightHomAdjunction :
       internalHomSecondFunctor.{v, u, w, w} J R G
 ```
 
-**`Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean#L129). The attribute's comment: “sheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure sheaf independent of the universes of the site”.
+**`Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorHomAdjunctionFreeUniverse.lean#L129). The attribute's comment: “sheaf\_tensor\_hom\_adjunction, with the universe of the sections of the structure sheaf independent of the universes of the site”.
 
 > **Stacks 03EO, sheaf case, at a free ring universe, on sections.**  The correspondence is
 > the canonical currying map: a morphism `b` out of the sheafified tensor product is sent to the
@@ -555,7 +555,7 @@ theorem sheafTensorHomEquiv_apply
 
 [Tag 03EP](https://stacks.math.columbia.edu/tag/03EP) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.PresheafOfModules.tensorLeft_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean#L150). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.SheafOfModules.PresheafOfModules.tensorLeft_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean#L150). The attribute's comment: “part (1)”.
 
 > Tensoring presheaves of modules on the left by a fixed presheaf of modules preserves all
 > colimits indexed in the module universe: at each object it is a left adjoint.
@@ -566,7 +566,7 @@ theorem tensorLeft_preservesColimits {O : Cᵒᵖ ⥤ CommRingCat.{w}}
     PreservesColimitsOfSize.{a, z} (tensorLeft F)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.sheafTensorLeft_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean#L265). The attribute's comment: “part (2)”. References: SGA 5 V (1.2.1), “inductive limits”.
+**`AlgebraicGeometry.SheafOfModules.sheafTensorLeft_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/TensorColimits.lean#L265). The attribute's comment: “part (2)”. References: SGA 5 V (1.2.1), “inductive limits”.
 
 > **Stacks Project, Tag 05NB.** Tensoring with a fixed sheaf of modules commutes with
 > all small colimits, independently of the ring universe.
@@ -581,7 +581,7 @@ theorem sheafTensorLeft_preservesColimits (R : Sheaf J CommRingCat.{w})
 
 [Tag 0932](https://stacks.math.columbia.edu/tag/0932) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.CoextendScalars.restrictScalars_coextendScalars_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/RestrictScalarsCoextension.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/RestrictScalarsCoextension.lean#L1060). The attribute's comment: “the presheaf case: Hom\_O(G, F) = Hom\_O'(G, SheafHom\_O(O', F)) for C a category and O ⟶ O' a map of presheaves of rings”.
+**`Stacks.PresheafOfModules.CoextendScalars.restrictScalars_coextendScalars_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/RestrictScalarsCoextension.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/RestrictScalarsCoextension.lean#L1060). The attribute's comment: “the presheaf case: Hom\_O(G, F) = Hom\_O'(G, SheafHom\_O(O', F)) for C a category and O ⟶ O' a map of presheaves of rings”.
 
 > The adjunction `φ*_res ⊣ φ_*^coext`: restriction of scalars along `φ` is left adjoint to the
 > coextension-of-scalars functor `φ_*^coext = coextendScalars φ`, with Hom-bijection `homEquiv`
@@ -593,7 +593,7 @@ noncomputable def restrictScalars_coextendScalars_adjunction (φ : O ⟶ O') :
     PresheafOfModules.restrictScalars.{u} φ ⊣ coextendScalars φ
 ```
 
-**`Stacks.SheafOfModules.CoextendScalars.sheafRestrictCoextendAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RestrictCoextendScalarsAdjunction.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RestrictCoextendScalarsAdjunction.lean#L51). The attribute's comment: “the sheaf case: Hom\_O(G, F) = Hom\_O'(G, SheafHom\_O(O', F)) for C a site and O ⟶ O' a map of sheaves of rings”.
+**`Stacks.SheafOfModules.CoextendScalars.sheafRestrictCoextendAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RestrictCoextendScalarsAdjunction.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RestrictCoextendScalarsAdjunction.lean#L51). The attribute's comment: “the sheaf case: Hom\_O(G, F) = Hom\_O'(G, SheafHom\_O(O', F)) for C a site and O ⟶ O' a map of sheaves of rings”.
 
 > **Stacks Tag 0932 / Lemma 18.27.8, sheaf case.** For a morphism `φ : O ⟶ O'` of sheaves of
 > rings on a site, restriction of scalars along `φ` is left adjoint to coextension of scalars
@@ -610,7 +610,7 @@ noncomputable def sheafRestrictCoextendAdjunction (φ : O ⟶ O') :
 
 [Tag 0E8I](https://stacks.math.columbia.edu/tag/0E8I) in the Stacks Project.
 
-**`Stacks.Sites.ExtensionByZero.OfEssentiallySmall.restrictionTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorEssentiallySmall.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorEssentiallySmall.lean#L211). The attribute's comment: “for a site essentially u-small, objects in Type c, morphisms and modules in u”.
+**`Stacks.Sites.ExtensionByZero.OfEssentiallySmall.restrictionTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorEssentiallySmall.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorEssentiallySmall.lean#L211). The attribute's comment: “for a site essentially u-small, objects in Type c, morphisms and modules in u”.
 
 > **Stacks 0E8I over a site with large objects.** For a sheaf of modules `F` on `X`, the
 > extension by zero of `G ⊗ F|_U` is the extension by zero of `G`, tensored with `F`, naturally
@@ -631,7 +631,7 @@ noncomputable def restrictionTensorIso
       sliceSheafTensorRight X U (F.over U) ⋙ extendByZero X U
 ```
 
-**`Stacks.Sites.ExtensionByZero.FreeModuleUniverse.restrictionTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorFreeModuleUniverse.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorFreeModuleUniverse.lean#L183). The attribute's comment: “objects in Type u, morphisms in v, ring sections in w, modules in a free a with UnivLE v a, and no smallness assumption on the site”.
+**`Stacks.Sites.ExtensionByZero.FreeModuleUniverse.restrictionTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorFreeModuleUniverse.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ExtensionByZeroTensorFreeModuleUniverse.lean#L183). The attribute's comment: “objects in Type u, morphisms in v, ring sections in w, modules in a free a with UnivLE v a, and no smallness assumption on the site”.
 
 > **Stacks 0E8I at a free module universe.** For a sheaf of modules `F` on `X`, the extension
 > by zero of `G ⊗ F|_U` is the extension by zero of `G`, tensored with `F`, naturally in `G`.
@@ -651,21 +651,23 @@ noncomputable def restrictionTensorIso
       sliceSheafTensorRight.{a} X U (F.over U) ⋙ extendByZero.{a} X U
 ```
 
-**`Stacks.SheafOfModules.ExtensionByZero.extensionByZeroTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean#L321).
+**`Stacks.SheafOfModules.ExtensionByZero.extensionByZeroTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean#L358).
 
 > **Stacks 0E8I.** Extension by zero commutes with tensoring by a module on the original
 > site, naturally in the module on the slice site.
 
 ```lean
-noncomputable def extensionByZeroTensorIso (F : _root_.SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) :
-    letI := Stacks.Sites.ExtensionByZero.sheafRestrictionIsRightAdjoint X.J (Stacks.SheafOfModules.Tensor.ringSheaf X.O) U
+noncomputable def extensionByZeroTensorIso
+    (F : _root_.SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) :
+    letI := Stacks.Sites.ExtensionByZero.sheafRestrictionIsRightAdjoint X.J
+      (Stacks.SheafOfModules.Tensor.ringSheaf X.O) U
     let E := _root_.SheafOfModules.pullback.{u}
       (F := Over.forget U) (𝟙 ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over U))
     E ⋙ ((sheafTensor.{u, u, u, u, u} X.O).obj F) ≅
       ((sheafTensor.{u, u, u, u, u} (X.O.over U)).obj (F.over U)) ⋙ E
 ```
 
-**`Stacks.SheafOfModules.ExtensionByZero.extensionTensorBifunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean#L469). The attribute's comment: “bifunctorial form”.
+**`Stacks.SheafOfModules.ExtensionByZero.extensionTensorBifunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/ExtensionByZeroTensor.lean#L523). The attribute's comment: “bifunctorial form”.
 
 > **Stacks 0E8I, bifunctorial form.** Extension by zero commutes with tensoring by a module
 > on the original site, naturally in the module on the slice site *and* in the module on the
@@ -680,7 +682,7 @@ noncomputable def extensionTensorBifunctorIso :
 
 [Tag 0EYY](https://stacks.math.columbia.edu/tag/0EYY) in the Stacks Project.
 
-**`Stacks.Sites.Localization.jShriekUnitIsoFreeAbelianSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L202). The attribute's comment: “j\_! ℤ = Z\_F^#, in the ambient category carrying the tensor product”.
+**`Stacks.Sites.Localization.jShriekUnitIsoFreeAbelianSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L202). The attribute's comment: “j\_! ℤ = Z\_F^#, in the ambient category carrying the tensor product”.
 
 > **Stacks Project, Tag 0EYY**, part (a), in the ambient category of sheaves of
 > `ULift ℤ`-modules. The extension by zero of the tensor unit along the localization morphism
@@ -701,7 +703,7 @@ def jShriekUnitIsoFreeAbelianSheaf :
         ((Presheaf.freeAbelianSheaf J).obj ((sheafToPresheaf J (Type u)).obj F))
 ```
 
-**`Stacks.Sites.Localization.jShriekPullbackIsoShriekUnitTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L233). The attribute's comment: “j\_!(j⁻¹ H) = j\_! ℤ ⊗ H, with no hypothesis beyond the data of the source”.
+**`Stacks.Sites.Localization.jShriekPullbackIsoShriekUnitTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L233). The attribute's comment: “j\_!(j⁻¹ H) = j\_! ℤ ⊗ H, with no hypothesis beyond the data of the source”.
 
 > **Stacks Project, Tag 0EYY**, part (b), with no hypothesis beyond the data of the source.
 > For the localization morphism `j : Sh(C)/F ⟶ Sh(C)` and an abelian sheaf `H` on `C`,
@@ -728,7 +730,7 @@ def jShriekPullbackIsoShriekUnitTensor
       (abelianLocalizationShriek J F).obj (𝟙_ _) ⊗ H
 ```
 
-**`Stacks.Sites.Localization.jShriekPullbackIsoFreeAbelianSheafTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L254). The attribute's comment: “j\_!(j⁻¹ H) = Z\_F^# ⊗ H, the two parts joined”.
+**`Stacks.Sites.Localization.jShriekPullbackIsoFreeAbelianSheafTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/AbelianShriekIntegerBridge.lean#L254). The attribute's comment: “j\_!(j⁻¹ H) = Z\_F^# ⊗ H, the two parts joined”.
 
 > **Stacks Project, Tag 0EYY**, the conclusion. For the localization morphism
 > `j : Sh(C)/F ⟶ Sh(C)` and an abelian sheaf `H` on `C`,
@@ -748,7 +750,7 @@ def jShriekPullbackIsoFreeAbelianSheafTensor
         ((Presheaf.freeAbelianSheaf J).obj ((sheafToPresheaf J (Type u)).obj F)) ⊗ H
 ```
 
-**`Stacks.Sites.Localization.localizationShriek_constantInteger_iso_freeAbSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean#L357). The attribute's comment: “j\_shriek\_int”.
+**`Stacks.Sites.Localization.localizationShriek_constantInteger_iso_freeAbSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean#L357). The attribute's comment: “j\_shriek\_int”.
 
 > For the localization morphism `j : Sh(C)/F ⟶ Sh(C)`, presented by the site of elements
 > `C/F`, the abelian sheaf `j_! ℤ` is the free abelian sheaf `Z_F^#` on `F`.
@@ -764,13 +766,13 @@ noncomputable def localizationShriek_constantInteger_iso_freeAbSheaf (F : Sheaf 
 
 Declarations registered for the tag:
 
-- [`jShriekPullbackIsoTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=jShriekPullbackIsoTensor#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean#L366) (StacksFrontier): “j\_!(j⁻¹ H) = j\_! ℤ ⊗ H, for a site of arbitrary size: sheafification, the monoidality of the two sheafification localizers and the left Kan extensions along C/F ⥤ C are instance hypotheses here, and every one of them holds at the hypotheses of the source -- see jShriekPullbackIsoShriekUnitTensor”.
+- [`jShriekPullbackIsoTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=jShriekPullbackIsoTensor#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/LocalizationShriekInteger.lean#L366) (StacksFrontier): “j\_!(j⁻¹ H) = j\_! ℤ ⊗ H, for a site of arbitrary size: sheafification, the monoidality of the two sheafification localizers and the left Kan extensions along C/F ⥤ C are instance hypotheses here, and every one of them holds at the hypotheses of the source -- see jShriekPullbackIsoShriekUnitTensor”.
 
 ## Tag 0GMZ, a lemma
 
 [Tag 0GMZ](https://stacks.math.columbia.edu/tag/0GMZ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.internalHomSecondFunctor_preservesFilteredColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimits.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimits.lean#L545).
+**`Stacks.SheafOfModules.InternalHom.internalHomSecondFunctor_preservesFilteredColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimits.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimits.lean#L545).
 
 > On a ringed site, internal Hom out of a module of finite presentation commutes with filtered
 > colimits: the canonical map `colim_λ Hom_O(F, G_λ) ⟶ Hom_O(F, colim_λ G_λ)` is an isomorphism
@@ -788,7 +790,7 @@ theorem internalHomSecondFunctor_preservesFilteredColimits
 
 [Tag 0GN0](https://stacks.math.columbia.edu/tag/0GN0) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.coyoneda_preservesColimitsOfShape_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimitsSections.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimitsSections.lean#L232). References: SGA 4 VI (5.8), “special case”.
+**`Stacks.SheafOfModules.InternalHom.coyoneda_preservesColimitsOfShape_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimitsSections.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/InternalHomFilteredColimitsSections.lean#L232). References: SGA 4 VI (5.8), “special case”.
 
 > **Stacks 0GN0.** On a ringed site satisfying the hypothesis of Stacks 0GMR part (4), Hom out
 > of a module `F` of finite presentation commutes with filtered colimits:
@@ -818,4 +820,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.27, Tag 04TT](https://stacks.math.columbia.edu/tag/04TT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

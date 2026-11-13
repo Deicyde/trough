@@ -7,7 +7,7 @@ statement: formalized
 
 # Narayana numbers as concatenations of repdigits
 
-5 results, 2 proved, 2 stated but not proved and 1 without a declaration, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html).
+5 results, 2 proved, 2 stated but not proved and 1 without a declaration, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html).
 
 ## Concatenations of two repdigits in a general base
 
@@ -26,7 +26,7 @@ repdigits.
 
 - Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Section 1 (Equation (1)).
 
-Formalized by `MetaMathlibExt.IsConcatTwoRepdigitsBase`, a definition declared in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#is-concat-two-repdigits-base).
+Formalized by `MetaMathlibExt.IsConcatTwoRepdigitsBase`, a definition declared in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#is-concat-two-repdigits-base).
 
 ## Examples of two-repdigit concatenations in bases 2 and 5
 
@@ -38,7 +38,7 @@ concatenation of two repdigits in base $5$, since $406 = (3111)_5$.
 
 - Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Theorem 1.
 
-Formalized by `MetaMathlibExt.isConcatTwoRepdigitsBase_examples`, a theorem declared in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#is-concat-two-repdigits-base-examples).
+Formalized by `MetaMathlibExt.isConcatTwoRepdigitsBase_examples`, a theorem declared in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#is-concat-two-repdigits-base-examples).
 
 ## Narayana numbers that concatenate two repdigits in bases 2 to 9
 
@@ -65,7 +65,7 @@ $N_{17} = 277 = (544)_7 = (337)_9$ and $N_{18} = 406 = (3111)_5$.
 
 - Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.narayanaCowsSequence_isConcatTwoRepdigitsBase_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#narayana-cows-sequence-is-concat-two-rep).
+Stated but not proved: `MetaMathlibExt.narayanaCowsSequence_isConcatTwoRepdigitsBase_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#narayana-cows-sequence-is-concat-two-rep).
 
 ## Guzmán Sánchez–Luca lemma: $L < 2^r H (\log H)^r$
 
@@ -93,7 +93,7 @@ $a_2$, then $(l + m - 1) \log b + \log \alpha < n \log \alpha < (l + m) \log b +
 
 - Prasanta Kumar Ray and Kisan Bhoi, *Narayana Numbers Which Are Concatenations of Two Base b Repdigits*, INTEGERS 24 (2024), Article A20, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.narayanaCowsSequence_concat_log_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#narayana-cows-sequence-concat-log-bounds).
+Stated but not proved: `MetaMathlibExt.narayanaCowsSequence_concat_log_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NarayanaConcatRepdigitsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html#narayana-cows-sequence-concat-log-bounds).
 
 ## Depends on
 
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Narayana numbers as concatenations of repdigits](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/narayana-numbers-as-concatenations-of-repdigits)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Residue-field functoriality and faithfulness for DVR extensions
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html).
 
 ## Algebra maps
 
@@ -19,7 +19,7 @@ be discrete valuation rings, with $B$ and $C$ algebras over $A$, where $C$ is fi
 $A$-module and the structure map $A \to C$ is a local homomorphism. Then every $A$-algebra
 homomorphism $B \to C$ is a local homomorphism.
 
-Formalized by `DVRResidue.AlgHom.isLocalHom_of_isDiscreteValuationRing`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#is-local-hom-of-is-discrete-valuation-ri).
+Formalized by `DVRResidue.AlgHom.isLocalHom_of_isDiscreteValuationRing`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#is-local-hom-of-is-discrete-valuation-ri).
 
 ## Induced map on residue fields of DVR extensions
 
@@ -30,7 +30,7 @@ $A$-algebra homomorphism $f \colon B \to C$ induces the $\kappa(A)$-algebra homo
 $\kappa(B) \to \kappa(C)$ that sends the residue class of $b \in B$ to the residue class of
 $f(b)$.
 
-Formalized by `DVRResidue.residueFieldMapAlgHom`, a definition declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#residue-field-map-alg-hom).
+Formalized by `DVRResidue.residueFieldMapAlgHom`, a definition declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#residue-field-map-alg-hom).
 
 ## Residue-field maps determine algebra maps out of a formally unramified DVR extension
 
@@ -40,7 +40,7 @@ over $A$. Write $\kappa(R)$ for the residue field of a local ring $R$. Then two 
 homomorphisms $B \to C$ that induce the same $\kappa(A)$-algebra homomorphism
 $\kappa(B) \to \kappa(C)$ are equal.
 
-Formalized by `DVRResidue.residueFieldMapAlgHom_injective`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#residue-field-map-alg-hom-injective).
+Formalized by `DVRResidue.residueFieldMapAlgHom_injective`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/LocalRing/ResidueField/DVR.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html#residue-field-map-alg-hom-injective).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Residue-field functoriality and faithfulness for DVR extensions](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/residue-field-functoriality-and-faithfulness-for)

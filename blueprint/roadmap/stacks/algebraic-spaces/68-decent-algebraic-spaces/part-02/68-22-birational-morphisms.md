@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.22 Birational morphisms
 
-Section 68.22 of the Stacks Project, [Tag 0ACU](https://stacks.math.columbia.edu/tag/0ACU). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.22 of the Stacks Project, [Tag 0ACU](https://stacks.math.columbia.edu/tag/0ACU). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ACV, a definition
 
 [Tag 0ACV](https://stacks.math.columbia.edu/tag/0ACV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsBirational`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalMorphism/IsBirational.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalMorphism/IsBirational.lean#L605). References: EGA I (2.2.9), “more general”.
+**`AlgebraicGeometry.Space.IsBirational`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalMorphism/IsBirational.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalMorphism/IsBirational.lean#L606). References: EGA I (2.2.9), “more general”.
 
 > **Stacks 0ACV.** A morphism of decent algebraic spaces with finitely many irreducible
 > components is birational when it bijects the generic points of the irreducible components and
@@ -38,7 +38,7 @@ def IsBirational
 
 [Tag 0ACW](https://stacks.math.columbia.edu/tag/0ACW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDominant_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/BirationalDominant.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/BirationalDominant.lean#L57). References: EGA I (2.2.9), “more general”.
+**`AlgebraicGeometry.Space.isDominant_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/BirationalDominant.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/BirationalDominant.lean#L57). References: EGA I (2.2.9), “more general”.
 
 > **Stacks 0ACW.** A birational morphism of decent algebraic spaces over `S` with finitely
 > many irreducible components is dominant: it maps the generic points of the irreducible
@@ -63,7 +63,7 @@ theorem isDominant_of_isBirational (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0BBD](https://stacks.math.columbia.edu/tag/0BBD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_pullback_snd_fromGenericStalk_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalGenericStalk.lean, line 817](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalGenericStalk.lean#L817).
+**`AlgebraicGeometry.Space.isIso_pullback_snd_fromGenericStalk_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalGenericStalk.lean, line 817](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalGenericStalk.lean#L817).
 
 > **Stacks 0BBD.** A birational morphism of decent algebraic spaces with finitely many
 > irreducible components becomes an isomorphism after base change to the spectrum of the local
@@ -88,7 +88,7 @@ theorem isIso_pullback_snd_fromGenericStalk_of_isBirational
 
 [Tag 0BBE](https://stacks.math.columbia.edu/tag/0BBE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dense_isOpenSubspace_isIso_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalDenseOpenIso.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalDenseOpenIso.lean#L405).
+**`AlgebraicGeometry.Space.exists_dense_isOpenSubspace_isIso_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalDenseOpenIso.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalDenseOpenIso.lean#L405).
 
 > **Stacks 0BBE.** A birational morphism of decent algebraic spaces over `S` with finitely
 > many irreducible components restricts to an isomorphism between dense open subspaces, provided
@@ -123,7 +123,7 @@ theorem exists_dense_isOpenSubspace_isIso_of_isBirational
 
 [Tag 0BBF](https://stacks.math.columbia.edu/tag/0BBF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isDenseOpenSubspace_isIso_pullback_snd_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalIsoOverDenseOpen.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalIsoOverDenseOpen.lean#L262).
+**`AlgebraicGeometry.Space.exists_isDenseOpenSubspace_isIso_pullback_snd_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalIsoOverDenseOpen.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalIsoOverDenseOpen.lean#L262).
 
 > **Stacks 0BBF.** Let `f : X ⟶ Y` be a birational morphism of algebraic spaces over a
 > scheme `S` which are decent and have finitely many irreducible components. Assume that `f` is
@@ -162,7 +162,7 @@ theorem exists_isDenseOpenSubspace_isIso_pullback_snd_of_isBirational
 
 [Tag 0B4D](https://stacks.math.columbia.edu/tag/0B4D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_pullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L562). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecentSpace_pullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L563). The attribute's comment: “decent”.
 
 > **Stacks 0B4D, decency.** The base change of a decent algebraic space along an étale
 > morphism from a representable presheaf is decent.
@@ -177,7 +177,7 @@ theorem isDecentSpace_pullback_of_isEtale
     IsDecentSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.finite_irreducibleComponents_pullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L730). The attribute's comment: “finitely many irreducible components”.
+**`AlgebraicGeometry.Space.finite_irreducibleComponents_pullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 731](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L731). The attribute's comment: “finitely many irreducible components”.
 
 > **Stacks 0B4D, finitely many irreducible components.** An affine étale localization of a
 > birational morphism of decent algebraic spaces with finitely many irreducible components has
@@ -200,7 +200,7 @@ theorem finite_irreducibleComponents_pullback_of_isEtale
     (irreducibleComponents (points B S hS (pullback f g))).Finite
 ```
 
-**`AlgebraicGeometry.Space.isBirational_pullback_snd_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 949](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L949). The attribute's comment: “birational”. References: EGA IV (6.15.4.1), “étale affine case”.
+**`AlgebraicGeometry.Space.isBirational_pullback_snd_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalEtaleLocalization.lean#L950). The attribute's comment: “birational”. References: EGA IV (6.15.4.1), “étale affine case”.
 
 > **Stacks 0B4D, birationality.** An affine étale localization of a birational morphism of
 > decent algebraic spaces with finitely many irreducible components is birational.
@@ -233,7 +233,7 @@ theorem isBirational_pullback_snd_of_isEtale
 
 [Tag 0BBG](https://stacks.math.columbia.edu/tag/0BBG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L173). The attribute's comment: “the commutative square, as a unique factorization through the target normalization”.
+**`AlgebraicGeometry.Space.existsUnique_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L173). The attribute's comment: “the commutative square, as a unique factorization through the target normalization”.
 
 > **The commutative square of Stacks 0BBG, for given normalizations.** Let `f : X ⟶ Y` be a
 > birational morphism of decent algebraic spaces over `S` with finitely many irreducible
@@ -267,7 +267,7 @@ theorem existsUnique_lift_normalization_of_isBirational (hX : IsAlgebraicSpace B
     ∃! g : DX.space ⟶ DY.space, g ≫ DY.hom = DX.hom ≫ f
 ```
 
-**`AlgebraicGeometry.Space.isBirational_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L467). The attribute's comment: “birationality of the induced morphism of normalizations”.
+**`AlgebraicGeometry.Space.isBirational_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L467). The attribute's comment: “birationality of the induced morphism of normalizations”.
 
 > **Birationality of the induced morphism, for given normalizations.** Let `f : X ⟶ Y` be a
 > birational morphism of decent algebraic spaces over `S` with finitely many irreducible
@@ -305,7 +305,7 @@ theorem isBirational_lift_normalization_of_isBirational (hX : IsAlgebraicSpace B
       (DY.finite_irreducibleComponents hY hYdec hfiniteY) g
 ```
 
-**`AlgebraicGeometry.Space.exists_isBirational_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L499). The attribute's comment: “the commutative square together with the birationality of the induced morphism of normalizations”.
+**`AlgebraicGeometry.Space.exists_isBirational_lift_normalization_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L499). The attribute's comment: “the commutative square together with the birationality of the induced morphism of normalizations”.
 
 > **The square and the birationality together, for given normalizations.** Let `f : X ⟶ Y`
 > be a birational morphism of decent algebraic spaces over `S` with finitely many irreducible
@@ -337,7 +337,7 @@ theorem exists_isBirational_lift_normalization_of_isBirational
         (DY.finite_irreducibleComponents hY hYdec hfiniteY) g
 ```
 
-**`AlgebraicGeometry.Space.nonempty_normalizationData_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean#L82). The attribute's comment: “the existence of the normalizations”.
+**`AlgebraicGeometry.Space.nonempty_normalizationData_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean#L82). The attribute's comment: “the existence of the normalizations”.
 
 > **Stacks 0BBG, the existence of the normalizations.** A decent algebraic space over `S`
 > whose space of points has finitely many irreducible components has normalization data: an
@@ -360,7 +360,7 @@ theorem nonempty_normalizationData_of_isDecentSpace
     Nonempty (NormalizationData B S hS F)
 ```
 
-**`AlgebraicGeometry.Space.exists_normalizationData_isBirational_lift_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean#L112).
+**`AlgebraicGeometry.Space.exists_normalizationData_isBirational_lift_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalizationExistence.lean#L112).
 
 > **Stacks 0BBG.** Let `f : X ⟶ Y` be a birational morphism between algebraic spaces over
 > `S` which are decent and have finitely many irreducible components. Then the normalizations
@@ -405,7 +405,7 @@ theorem exists_normalizationData_isBirational_lift_of_isBirational
 
 [Tag 0B4E](https://stacks.math.columbia.edu/tag/0B4E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_of_isIntegralHom_of_isBirational_of_isNormal_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralBirationalOverNormal.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralBirationalOverNormal.lean#L467). References: EGA IV (8.12.10.1).
+**`AlgebraicGeometry.Space.isIso_of_isIntegralHom_of_isBirational_of_isNormal_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralBirationalOverNormal.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralBirationalOverNormal.lean#L470). References: EGA IV (8.12.10.1).
 
 > **Stacks 0B4E.** An integral birational morphism from a reduced algebraic space to a normal
 > algebraic space is an isomorphism, provided both are decent with finitely many irreducible
@@ -443,7 +443,7 @@ theorem isIso_of_isIntegralHom_of_isBirational_of_isNormal_of_isReduced
 
 [Tag 0BBH](https://stacks.math.columbia.edu/tag/0BBH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_factorization_normalization_of_isIntegralHom_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L533).
+**`AlgebraicGeometry.Space.exists_factorization_normalization_of_isIntegralHom_of_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BirationalNormalization.lean#L533).
 
 > **Stacks 0BBH.** Let `f : X ⟶ Y` be an integral birational morphism of decent algebraic
 > spaces over `S` with finitely many irreducible components, and let `X^ν ⟶ X` and `Y^ν ⟶ Y` be
@@ -481,4 +481,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.22, Tag 0ACU](https://stacks.math.columbia.edu/tag/0ACU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

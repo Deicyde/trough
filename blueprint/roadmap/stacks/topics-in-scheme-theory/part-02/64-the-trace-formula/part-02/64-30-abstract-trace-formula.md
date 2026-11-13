@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.30 Abstract trace formula
 
-Section 64.30 of the Stacks Project, [Tag 03VO](https://stacks.math.columbia.edu/tag/03VO). 2 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.30 of the Stacks Project, [Tag 03VO](https://stacks.math.columbia.edu/tag/03VO). 2 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03VO, the section
 
 [Tag 03VO](https://stacks.math.columbia.edu/tag/03VO) in the Stacks Project.
 
-**`Stacks.TraceFormula.AbstractTraceFormula`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean#L121). The attribute's comment: “an extension 1 → G → Γ → Ẑ → 1 of profinite groups has an abstract trace formula”.
+**`Stacks.TraceFormula.AbstractTraceFormula`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean#L121). The attribute's comment: “an extension 1 → G → Γ → Ẑ → 1 of profinite groups has an abstract trace formula”.
 
 > **Stacks Project, Section 03VO.** An *abstract trace formula* for an extension of profinite
 > groups `1 → G → Γ → Ẑ → 1`, given by a continuous surjective degree map `deg : Γ → Ẑ` with kernel
@@ -32,7 +32,7 @@ public structure AbstractTraceFormula (Γ : Type u) [Group Γ] [TopologicalSpace
     (hsurj : Function.Surjective deg)
 ```
 
-**`Stacks.TraceFormula.HasAbstractTraceFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean#L164). The attribute's comment: “has an abstract trace formula”.
+**`Stacks.TraceFormula.HasAbstractTraceFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/AbstractTraceFormula.lean#L164). The attribute's comment: “has an abstract trace formula”.
 
 > **Stacks Project, Section 03VO.** The extension `1 → G → Γ → Ẑ → 1` *has an abstract trace
 > formula* if the data of `Stacks.TraceFormula.AbstractTraceFormula` exist.
@@ -48,7 +48,7 @@ public def HasAbstractTraceFormula (Γ : Type u) [Group Γ] [TopologicalSpace Γ
 
 [Tag 03VQ](https://stacks.math.columbia.edu/tag/03VQ) in the Stacks Project.
 
-**`Stacks.TraceFormula.frobenius_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L189). The attribute's comment: “the exact sequence 1 → Ẑ^\{(q)} → Γ → Ẑ → 1 with F of degree 1 and F x F⁻¹ = u x, as an extension of groups”.
+**`Stacks.TraceFormula.frobenius_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L189). The attribute's comment: “the exact sequence 1 → Ẑ^\{(q)} → Γ → Ẑ → 1 with F of degree 1 and F x F⁻¹ = u x, as an extension of groups”.
 
 > **Stacks Project, Tag 03VQ.** The extension `1 → Ẑ^{(q)} → Γ → Ẑ → 1` exhibited by the
 > semidirect product: conjugation by the Frobenius element is multiplication by the unit
@@ -62,7 +62,7 @@ public theorem frobenius_conj (x : RestrictedProfiniteIntegers q) :
           RestrictedProfiniteIntegers q) * x))
 ```
 
-**`Stacks.TraceFormula.isTopologicalGroup_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L228). The attribute's comment: “Γ is a profinite group”.
+**`Stacks.TraceFormula.isTopologicalGroup_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L228). The attribute's comment: “Γ is a profinite group”.
 
 > **Stacks Project, Tag 03VQ.** The extension `Γ = Ẑ^{(q)} ⋊ Ẑ` is a topological group, as
 > soon as the powers `u^z = χ z` of the unit vary continuously with `z`. Together with
@@ -73,7 +73,7 @@ public theorem frobenius_conj (x : RestrictedProfiniteIntegers q) :
 public theorem isTopologicalGroup_gamma (hχ : Continuous χ) : IsTopologicalGroup (Gamma χ)
 ```
 
-**`Stacks.TraceFormula.eq_intCast_traceParameter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L313). The attribute's comment: “qu = a ∈ ℤ, with a = q - #S₁”.
+**`Stacks.TraceFormula.eq_intCast_traceParameter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L313). The attribute's comment: “qu = a ∈ ℤ, with a = q - #S₁”.
 
 > **Stacks Project, Tag 03VQ.** The congruence for the trivial coefficient modules forces
 > `qu` to be the ordinary integer `a = q - #S_1`.
@@ -83,7 +83,7 @@ public theorem eq_intCast_traceParameter (h : IsTrivialModuleCongruence q b s) :
     b = ((traceParameter q s : ℤ) : RestrictedProfiniteIntegers q)
 ```
 
-**`Stacks.TraceFormula.abs_traceParameter_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L356). The attribute's comment: “the bound |a| < q”.
+**`Stacks.TraceFormula.abs_traceParameter_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L356). The attribute's comment: “the bound |a| < q”.
 
 > **Stacks Project, Tag 03VQ.** If some `S_d` is nonempty then the integer `a` with `qu = a`
 > satisfies `|a| < q`.
@@ -93,7 +93,7 @@ public theorem abs_traceParameter_lt (hq : 1 ≤ q) (h : IsTrivialModuleCongruen
     (hs : ∃ d : ℕ, 0 < d ∧ s d ≠ 0) : |traceParameter q s| < (q : ℤ)
 ```
 
-**`Stacks.TraceFormula.exists_intCast_eq_and_abs_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L367). The attribute's comment: “q^n - (qu)^n ≡ ∑\_\{d ∣ n} d #S\_d for all moduli prime to q implies qu = a ∈ ℤ with |a| < q”.
+**`Stacks.TraceFormula.exists_intCast_eq_and_abs_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExample.lean#L367). The attribute's comment: “q^n - (qu)^n ≡ ∑\_\{d ∣ n} d #S\_d for all moduli prime to q implies qu = a ∈ ℤ with |a| < q”.
 
 > **Stacks Project, Tag 03VQ.** For a unit `u` of `Ẑ^{(q)}`, the congruence
 > `q^n - (qu)^n ≡ ∑_{d ∣ n} d · #S_d` for the trivial coefficient modules forces `qu` to be an
@@ -108,7 +108,7 @@ public theorem exists_intCast_eq_and_abs_lt (hq : 1 ≤ q) (u : (RestrictedProfi
       (a : RestrictedProfiniteIntegers q) ∧ |a| < (q : ℤ)
 ```
 
-**`Stacks.TraceFormula.commutativeExample_hasAbstractTraceFormula_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleExistence.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleExistence.lean#L261). The attribute's comment: “the case u = 1: Γ = Ẑ^(q) × Ẑ has an abstract trace formula with integer q and all S\_d empty, so qu = a = q and the source's bound |a| < q fails”.
+**`Stacks.TraceFormula.commutativeExample_hasAbstractTraceFormula_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleExistence.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleExistence.lean#L261). The attribute's comment: “the case u = 1: Γ = Ẑ^(q) × Ẑ has an abstract trace formula with integer q and all S\_d empty, so qu = a = q and the source's bound |a| < q fails”.
 
 > **Stacks Project, Tag 03VQ: the case `u = 1`, a counterexample to `|a| < q`.** For every
 > `q ≥ 1` the extension `1 → Ẑ^{(q)} → Γ → Ẑ → 1` with `F x F⁻¹ = x` (that is, `u = 1`,
@@ -127,7 +127,7 @@ public theorem commutativeExample_hasAbstractTraceFormula_one (hq : 1 ≤ q) :
         ¬ |((q : ℤ) * 1)| < q
 ```
 
-**`Stacks.TraceFormula.commutativeExample_congruence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L66). The attribute's comment: “q^n - (qu)^n ≡ ∑\_\{d ∣ n} d #S\_d in ℤ/m for all m prime to q, derived from the abstract trace formula on the trivial modules ℤ/m”.
+**`Stacks.TraceFormula.commutativeExample_congruence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L66). The attribute's comment: “q^n - (qu)^n ≡ ∑\_\{d ∣ n} d #S\_d in ℤ/m for all m prime to q, derived from the abstract trace formula on the trivial modules ℤ/m”.
 
 > **Stacks Project, Tag 03VQ: the congruence.** If the extension
 > `1 → Ẑ^{(q)} → Γ → Ẑ → 1` with `F x F⁻¹ = u x` has an abstract trace formula with integer `q`,
@@ -143,7 +143,7 @@ public theorem commutativeExample_congruence (n : ℕ) (hn : 0 < n) :
         pointCountSum (fun d => Fintype.card (T.S d)) n
 ```
 
-**`Stacks.TraceFormula.commutativeExample_integrality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L88). The attribute's comment: “corrected: qu = a ∈ ℤ with |a| ≤ q, and |a| < q iff u ≠ 1 iff some S\_d is nonempty; the source's unconditional |a| < q fails for u = 1, where Γ = Ẑ^(q) × Ẑ has an abstract trace formula with all S\_d empty”.
+**`Stacks.TraceFormula.commutativeExample_integrality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L88). The attribute's comment: “corrected: qu = a ∈ ℤ with |a| ≤ q, and |a| < q iff u ≠ 1 iff some S\_d is nonempty; the source's unconditional |a| < q fails for u = 1, where Γ = Ẑ^(q) × Ẑ has an abstract trace formula with all S\_d empty”.
 
 > **Stacks Project, Tag 03VQ (corrected).** If the extension `1 → Ẑ^{(q)} → Γ → Ẑ → 1` with
 > `F x F⁻¹ = u x` has an abstract trace formula with integer `q` and sets `S_d`, then `qu = a ∈ ℤ`
@@ -157,7 +157,7 @@ public theorem commutativeExample_integrality :
       (|a| < q ↔ u ≠ 1) ∧ (|a| < q ↔ ∃ d : ℕ, 0 < d ∧ Nonempty (T.S d))
 ```
 
-**`Stacks.TraceFormula.commutativeExample_card_eq_of_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L120). The attribute's comment: “the special case a = 1: #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
+**`Stacks.TraceFormula.commutativeExample_card_eq_of_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleIntegrality.lean#L120). The attribute's comment: “the special case a = 1: #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
 
 > **Stacks Project, Tag 03VQ: the special case `a = 1`.** If `qu = 1`, the sets `S_1` and
 > `S_2` have `q - 1` and `((q² - 1) - (q - 1))/2` elements, the numbers of closed points of
@@ -169,7 +169,7 @@ public theorem commutativeExample_card_eq_of_eq_one
     Fintype.card (T.S 1) = q - 1 ∧ Fintype.card (T.S 2) = ((q ^ 2 - 1) - (q - 1)) / 2
 ```
 
-**`Stacks.TraceFormula.commutativeExample_hasAbstractTraceFormula_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleInverse.lean, line 609](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleInverse.lean#L609). The attribute's comment: “the special case a = 1 does occur: Γ = Ẑ^(q) ⋊ Ẑ with F x F⁻¹ = q⁻¹ x has an abstract trace formula with integer q, with #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
+**`Stacks.TraceFormula.commutativeExample_hasAbstractTraceFormula_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleInverse.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/CommutativeExampleInverse.lean#L610). The attribute's comment: “the special case a = 1 does occur: Γ = Ẑ^(q) ⋊ Ẑ with F x F⁻¹ = q⁻¹ x has an abstract trace formula with integer q, with #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
 
 > **Stacks Project, Tag 03VQ: the special case `a = 1` occurs.** For every `q ≥ 2` the
 > extension `1 → Ẑ^{(q)} → Γ → Ẑ → 1` with `F x F⁻¹ = q⁻¹ x` (so `u = q⁻¹` and `qu = a = 1`) has an
@@ -190,7 +190,7 @@ public theorem commutativeExample_hasAbstractTraceFormula_inverse :
         Fintype.card (T.S 1) = q - 1 ∧ Fintype.card (T.S 2) = ((q ^ 2 - 1) - (q - 1)) / 2
 ```
 
-**`AlgebraicGeometry.TameMultiplicativeGroup.tameFundamentalGroup_zmod_hasAbstractTraceFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/TameMultiplicativeGroupExample.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/TameMultiplicativeGroupExample.lean#L89). The attribute's comment: “the special case a = 1 does occur with Γ = π₁ᵗ(𝐆\_\{m,𝔽\_p}, η̄), #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
+**`AlgebraicGeometry.TameMultiplicativeGroup.tameFundamentalGroup_zmod_hasAbstractTraceFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/TameMultiplicativeGroupExample.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/TameMultiplicativeGroupExample.lean#L89). The attribute's comment: “the special case a = 1 does occur with Γ = π₁ᵗ(𝐆\_\{m,𝔽\_p}, η̄), #S₁ = q - 1 and #S₂ = ((q² - 1) - (q - 1))/2”.
 
 > **Stacks Project, Tag 03VQ: the special case `a = 1` occurs with
 > `Γ = π₁ᵗ(𝐆_{m,𝔽_p}, η̄)`, `#S_1 = q - 1` and `#S_2 = ((q² - 1) - (q - 1))/2`.** For `p` prime there
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.30, Tag 03VO](https://stacks.math.columbia.edu/tag/03VO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

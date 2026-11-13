@@ -8,7 +8,7 @@ proof: formalized
 
 # 70.23 Descending finite type spaces
 
-Section 70.23 of the Stacks Project, [Tag 0CP5](https://stacks.math.columbia.edu/tag/0CP5). 11 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.23 of the Stacks Project, [Tag 0CP5](https://stacks.math.columbia.edu/tag/0CP5). 11 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CP5, the section
 
@@ -16,19 +16,19 @@ Section 70.23 of the Stacks Project, [Tag 0CP5](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.NoetherianLimitSystem`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean#L55), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L43) (StacksFrontier): “the situation”.
-- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L44) (StacksFrontier): “the diagram”.
-- [`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L45) (StacksFrontier): “X is the limit of its scheme-theoretic images”.
-- [`AlgebraicGeometry.Space.GoodDiagram.exists_systemMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L335), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L47) (StacksFrontier): “morphisms descend to the systems of images”.
-- [`AlgebraicGeometry.Space.GoodDiagram.eventually_eq_systemMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L419), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L49) (StacksFrontier): “eventual uniqueness of the descended morphisms”.
-- [`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isFlat_isPullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean#L994), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L51) (StacksFrontier): “flatness descends”.
-- [`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isSmooth`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean#L203), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L53) (StacksFrontier): “smoothness descends”.
+- [`AlgebraicGeometry.Space.NoetherianLimitSystem`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean#L55), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L43) (StacksFrontier): “the situation”.
+- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L44) (StacksFrontier): “the diagram”.
+- [`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L45) (StacksFrontier): “X is the limit of its scheme-theoretic images”.
+- [`AlgebraicGeometry.Space.GoodDiagram.exists_systemMorphism`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L335), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L47) (StacksFrontier): “morphisms descend to the systems of images”.
+- [`AlgebraicGeometry.Space.GoodDiagram.eventually_eq_systemMorphism`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L419), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L49) (StacksFrontier): “eventual uniqueness of the descended morphisms”.
+- [`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isFlat_isPullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean#L994), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L51) (StacksFrontier): “flatness descends”.
+- [`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isSmooth`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean#L203), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L53) (StacksFrontier): “smoothness descends”.
 
 ## Tag 0CP6, a situation
 
 [Tag 0CP6](https://stacks.math.columbia.edu/tag/0CP6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NoetherianSpaceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSpaceSystem.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSpaceSystem.lean#L73).
+**`AlgebraicGeometry.Space.NoetherianSpaceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSpaceSystem.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSpaceSystem.lean#L73).
 
 > **Stacks 0CP6.** A directed inverse system `(B_i)_{i ∈ I}` of Noetherian algebraic spaces
 > over a scheme `S` with affine transition morphisms `B_{i'} ⟶ B_i` for `i ≤ i'`. Its limit
@@ -44,7 +44,7 @@ structure NoetherianSpaceSystem (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
     [IsDirected I (· ≤ ·)]
 ```
 
-**`AlgebraicGeometry.Space.NoetherianLimitSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean#L55).
+**`AlgebraicGeometry.Space.NoetherianLimitSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NoetherianSystem.lean#L55).
 
 > **Stacks 0CP6.** A directed inverse system of Noetherian algebraic spaces
 > over a scheme `S` with affine transition morphisms, equipped with a chosen limiting cone whose
@@ -60,7 +60,7 @@ structure NoetherianLimitSystem (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
 
 [Tag 0CP7](https://stacks.math.columbia.edu/tag/0CP7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NoetherianLimitSystem.nonempty_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/GoodDiagramExistenceUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/GoodDiagramExistenceUnconditional.lean#L69).
+**`AlgebraicGeometry.Space.NoetherianLimitSystem.nonempty_goodDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/GoodDiagramExistenceUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/GoodDiagramExistenceUnconditional.lean#L69).
 
 > **Stacks 0CP7.** In Situation 0CP6, let `f : X ⟶ B` be a quasi-separated morphism of finite
 > type of algebraic spaces over `S`. Then there are a stage `i`, an algebraic space `W` with a
@@ -81,13 +81,13 @@ theorem nonempty_goodDiagram (D : NoetherianLimitSystem B S hS hZ I)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L40) (StacksFrontier): “the diagram: X ⟶ W over B ⟶ B\_i, W ⟶ B\_i of finite type and X ⟶ B ×\_\{B\_i} W a closed immersion”.
+- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L40) (StacksFrontier): “the diagram: X ⟶ W over B ⟶ B\_i, W ⟶ B\_i of finite type and X ⟶ B ×\_\{B\_i} W a closed immersion”.
 
 ## Tag 0CP9, a lemma
 
 [Tag 0CP9](https://stacks.math.columbia.edu/tag/0CP9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.mono_lift_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimit.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimit.lean#L381). The attribute's comment: “X is a subspace of the limit: the cone to the images is jointly monic”.
+**`AlgebraicGeometry.Space.GoodDiagram.mono_lift_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimit.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimit.lean#L381). The attribute's comment: “X is a subspace of the limit: the cone to the images is jointly monic”.
 
 > **The monomorphism half of Stacks 0CP9.** In Situation 0CP6, for a diagram as in Stacks 0CP8,
 > the space `X` is a *subspace* of the limit of the inverse system of the scheme-theoretic images
@@ -103,7 +103,7 @@ theorem mono_lift_of_isLimit (G : GoodDiagram B S hS hZ D f) {c : Cone (imageSys
     (hc : IsLimit c) : Mono (hc.lift (imageCone G))
 ```
 
-**`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765). The attribute's comment: “X = lim X\_\{i'}, for an index type small for the site”.
+**`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765). The attribute's comment: “X = lim X\_\{i'}, for an index type small for the site”.
 
 > **Stacks 0CP9.** In Situation 0CP6, for a diagram as in Stacks 0CP8, the canonical cone
 > from `X` to the inverse system of the scheme-theoretic images `X_{i'}` of
@@ -124,7 +124,7 @@ noncomputable def isLimit_imageCone (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPA](https://stacks.math.columbia.edu/tag/0CPA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.exists_systemMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L335). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.GoodDiagram.exists_systemMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L335). The attribute's comment: “existence”.
 
 > **Stacks 0CPA, existence.** In Situation 0CP6, let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `B` with `X` quasi-separated over `B`, and let `GX` and `GY` be diagrams as in
@@ -148,7 +148,7 @@ theorem exists_systemMorphism (hX : IsAlgebraicSpace B S hS X)
       Nonempty (SystemMorphism GX GY f i₀ hiX hiY)
 ```
 
-**`AlgebraicGeometry.Space.GoodDiagram.eventually_eq_systemMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L419). The attribute's comment: “eventual uniqueness”.
+**`AlgebraicGeometry.Space.GoodDiagram.eventually_eq_systemMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeMorphism.lean#L419). The attribute's comment: “eventual uniqueness”.
 
 > **Stacks 0CPA, eventual uniqueness.** Two morphisms of the inverse systems of
 > scheme-theoretic images on the tail above a stage `i₀`, both inducing the same morphism
@@ -175,7 +175,7 @@ theorem eventually_eq_systemMorphism (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPB](https://stacks.math.columbia.edu/tag/0CPB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NoetherianLimitSystem.isEquivalence_limitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L464). The attribute's comment: “the category of algebraic spaces quasi-separated and of finite type over B is equivalent to the category of the inverse systems over (B\_i) that 0CP9 produces from the diagrams (0CP8), up to shrinking the index set”.
+**`AlgebraicGeometry.Space.NoetherianLimitSystem.isEquivalence_limitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L464). The attribute's comment: “the category of algebraic spaces quasi-separated and of finite type over B is equivalent to the category of the inverse systems over (B\_i) that 0CP9 produces from the diagrams (0CP8), up to shrinking the index set”.
 
 > **Stacks 0CPB.** In Situation 0CP6, the category of algebraic spaces quasi-separated and of
 > finite type over `B = lim B_i` is equivalent to the category of the inverse systems of algebraic
@@ -188,7 +188,7 @@ theorem eventually_eq_systemMorphism (hX : IsAlgebraicSpace B S hS X)
 theorem isEquivalence_limitFunctor : (limitFunctor D).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.NoetherianLimitSystem.exists_iso_imageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L500). The attribute's comment: “the example: two limit descriptions of X are canonically isomorphic, after shrinking the index set”.
+**`AlgebraicGeometry.Space.NoetherianLimitSystem.exists_iso_imageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L500). The attribute's comment: “the example: two limit descriptions of X are canonically isomorphic, after shrinking the index set”.
 
 > **Stacks 0CPB, the example.** Let `X` be an algebraic space quasi-separated and of finite type
 > over `B`, and let `X ⟶ W₁ ⟶ B_{i₁}` and `X ⟶ W₂ ⟶ B_{i₂}` be two diagrams as in Stacks 0CP8. Then,
@@ -234,7 +234,7 @@ theorem exists_iso_imageSystem (U : FiniteTypeSpaces D)
 
 [Tag 0CPC](https://stacks.math.columbia.edu/tag/0CPC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isFlat_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean, line 994](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean#L994).
+**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isFlat_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean, line 994](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FlatImageSystem.lean#L994).
 
 > In Situation 0CP6, let `f : X ⟶ Y` be a morphism of algebraic spaces quasi-separated over `B`,
 > let `GX` and `GY` be diagrams as in Stacks 0CP8 for `X` and `Y`, and let `(f_i)_{i ≥ i₀}` be a
@@ -264,7 +264,7 @@ theorem exists_isFlat_isPullback (algX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPD](https://stacks.math.columbia.edu/tag/0CPD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean#L203).
+**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSmooth.lean#L203).
 
 > **Stacks 0CPD.** In Situation 0CP6, let `f : X ⟶ Y` be a morphism of algebraic spaces
 > quasi-separated over `B`, let `GX` and `GY` be diagrams as in Stacks 0CP8 for `X` and `Y`, and
@@ -287,7 +287,7 @@ theorem exists_isSmooth (algX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPE](https://stacks.math.columbia.edu/tag/0CPE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeProper.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeProper.lean#L395).
+**`AlgebraicGeometry.Space.GoodDiagram.SystemMorphism.exists_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeProper.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeProper.lean#L395).
 
 > **Stacks 0CPE.** In Situation 0CP6, let `f : X ⟶ Y` be a morphism of algebraic spaces
 > quasi-separated over `B`, let `GX` and `GY` be diagrams as in Stacks 0CP8 for `X` and `Y`, and
@@ -308,7 +308,7 @@ theorem exists_isProper (algX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPF](https://stacks.math.columbia.edu/tag/0CPF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GoodDiagram.exists_isClosedImmersion_lift_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeCartesian.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeCartesian.lean#L905).
+**`AlgebraicGeometry.Space.GoodDiagram.exists_isClosedImmersion_lift_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeCartesian.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeCartesian.lean#L905).
 
 > **Stacks 0CPF.** In Situation 0CP6, let
 > ```
@@ -353,4 +353,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.23, Tag 0CP5](https://stacks.math.columbia.edu/tag/0CP5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

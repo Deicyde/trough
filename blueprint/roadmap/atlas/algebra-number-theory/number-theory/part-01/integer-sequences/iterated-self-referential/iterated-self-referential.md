@@ -7,7 +7,7 @@ statement: formalized
 
 # Iterated maps and self-referential sequences: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html).
 
 Collatz problem, EKG, Stern diatomic, Hofstadter, Golomb, Ulam, Ducci, Josephus and Conway-type sequences.
 
@@ -34,7 +34,7 @@ Theorem Th1 and equations (Eq48a), (Eq48).
 
 - Benoit Cloitre, N. J. A. Sloane, and Matthew J. Vandermast, "Numerical Analogues of Aronson's Sequence," Journal of Integer Sequences 6 (2003), Article 03.2.2, Theorem, equations, lines 584–603, https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.tex
 
-Formalized by `MetaMathlibExt.golomb_like_closed_form`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GolombLikeSequence.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GolombLikeSequence.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#golomb-like-closed-form).
+Formalized by `MetaMathlibExt.golomb_like_closed_form`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GolombLikeSequence.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GolombLikeSequence.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#golomb-like-closed-form).
 
 ## Hinman–Kuca–Schlesinger–Sheydvasser weak rigidity theorem for Ulam sequences
 
@@ -63,7 +63,7 @@ Source identifiers (stable):
 
 - Weak Rigidity Theorem, Theorem 1.1 of HKSS_2019_1, as stated in Sheydvasser, JIS VOL24, lines 150-155.
 
-Stated but not proved: `MetaMathlibExt.hinman_kuca_schlesinger_sheydvasser_weak_rigidity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Sequences/HkssWeakRigidityWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Sequences/HkssWeakRigidityWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#hinman-kuca-schlesinger-sheydvasser-weak).
+Stated but not proved: `MetaMathlibExt.hinman_kuca_schlesinger_sheydvasser_weak_rigidity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Sequences/HkssWeakRigidityWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Sequences/HkssWeakRigidityWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#hinman-kuca-schlesinger-sheydvasser-weak).
 
 ## The EKG sequence
 
@@ -82,7 +82,7 @@ The sequence begins $1, 2, 4, 6, 3, 9, 12, 8, 10, 5, \dots$
 
 - JIS source `hofman1.tex`, lines 99–100, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Hofman/hofman1.tex>; first terms at lines 104–112.
 
-Formalized by `MetaMathlibExt.IsEKGSequence`, a definition declared in [MathlibExt/NumberTheory/EKGSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/EKGSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#is-ekgsequence).
+Formalized by `MetaMathlibExt.IsEKGSequence`, a definition declared in [MathlibExt/NumberTheory/EKGSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/EKGSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html#is-ekgsequence).
 
 ## Depends on
 
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Iterated maps and self-referential sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential)

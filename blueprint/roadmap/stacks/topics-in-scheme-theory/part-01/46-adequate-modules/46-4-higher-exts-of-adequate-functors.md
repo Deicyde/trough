@@ -8,13 +8,13 @@ proof: formalized
 
 # 46.4 Higher exts of adequate functors
 
-Section 46.4 of the Stacks Project, [Tag 06Z5](https://stacks.math.columbia.edu/tag/06Z5). 11 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 46.4 of the Stacks Project, [Tag 06Z5](https://stacks.math.columbia.edu/tag/06Z5). 11 tags here are carried by 44 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06Z6, a lemma
 
 [Tag 06Z6](https://stacks.math.columbia.edu/tag/06Z6) in the Stacks Project.
 
-**`AdequateFunctor.exists_adequate_homEquiv`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L264).
+**`AdequateFunctor.exists_adequate_homEquiv`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L264).
 
 > **Stacks Project, Tag 06Z6.** For every module-valued functor `F` there is an adequate
 > functor `Q F` and a morphism `Q F ⟶ F` of module-valued functors such that every morphism to `F`
@@ -33,7 +33,7 @@ public lemma exists_adequate_homEquiv
 
 [Tag 06Z7](https://stacks.math.columbia.edu/tag/06Z7) in the Stacks Project.
 
-**`AdequateFunctor.moduleValuedFunctor_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Basic.lean#L49). The attribute's comment: “module\_valued\_functors\_enough\_injectives”.
+**`AdequateFunctor.moduleValuedFunctor_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Basic.lean#L49). The attribute's comment: “module\_valued\_functors\_enough\_injectives”.
 
 > **Stacks Project, Tag 06Z7.** Module-valued functors on any category of algebras, in
 > particular the algebras admitted by a big site, have enough injectives.
@@ -44,7 +44,7 @@ instance moduleValuedFunctor_enoughInjectives (C : Type u) [Category.{v} C]
     EnoughInjectives (PresheafOfModules.{max u v w t} R)
 ```
 
-**`AdequateFunctor.fullyFaithful_adequateInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L93). The attribute's comment: “part (1), i is fully faithful”.
+**`AdequateFunctor.fullyFaithful_adequateInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L93). The attribute's comment: “part (1), i is fully faithful”.
 
 > **Stacks Project, Tag 06Z7**, part (1), the full faithfulness of `i`. The adequate functors
 > form a full subcategory of the module-valued functors, so their inclusion is fully faithful.
@@ -54,7 +54,7 @@ public noncomputable def fullyFaithful_adequateInclusion :
     (adequate.{u, v, max u v w} A).ι.FullyFaithful
 ```
 
-**`AdequateFunctor.preservesFiniteLimits_adequateInclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L101). The attribute's comment: “part (1), i is left exact”.
+**`AdequateFunctor.preservesFiniteLimits_adequateInclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L101). The attribute's comment: “part (1), i is left exact”.
 
 > **Stacks Project, Tag 06Z7**, part (1), the left exactness of `i`. The adequate functors are
 > closed under kernels, so a kernel of adequate functors is already the kernel of the underlying
@@ -65,7 +65,7 @@ public lemma preservesFiniteLimits_adequateInclusion :
     PreservesFiniteLimits (adequate.{u, v, max u v w} A).ι
 ```
 
-**`AdequateFunctor.preservesFiniteColimits_adequateInclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L111). The attribute's comment: “part (1), i is right exact”.
+**`AdequateFunctor.preservesFiniteColimits_adequateInclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L111). The attribute's comment: “part (1), i is right exact”.
 
 > **Stacks Project, Tag 06Z7**, part (1), the right exactness of `i`. The adequate functors are
 > closed under cokernels, so a cokernel of adequate functors is already the cokernel of the
@@ -76,7 +76,7 @@ public lemma preservesFiniteColimits_adequateInclusion :
     PreservesFiniteColimits (adequate.{u, v, max u v w} A).ι
 ```
 
-**`AdequateFunctor.adequateCoreflectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L255). The attribute's comment: “part (3), Q is a right adjoint to i”.
+**`AdequateFunctor.adequateCoreflectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L255). The attribute's comment: “part (3), Q is a right adjoint to i”.
 
 > **Stacks Project, Tag 06Z7**, part (3), the adjunction itself: the functor `Q` of
 > [Stacks, Tag 06Z6] is a right adjoint to the inclusion `i` of the adequate module-valued
@@ -87,7 +87,7 @@ public noncomputable def adequateCoreflectionAdjunction :
     (adequate.{u, v, max (u + 1) (v + 1) w} A).ι ⊣ adequateCoreflection.{u, v, w} A
 ```
 
-**`AdequateFunctor.preservesFiniteLimits_adequateCoreflection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L292). The attribute's comment: “part (3), Q is left exact”.
+**`AdequateFunctor.preservesFiniteLimits_adequateCoreflection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L292). The attribute's comment: “part (3), Q is left exact”.
 
 > **Stacks Project, Tag 06Z7**, part (3), the left exactness: a right adjoint preserves all
 > limits, in particular the finite ones.
@@ -97,7 +97,7 @@ public lemma preservesFiniteLimits_adequateCoreflection :
     PreservesFiniteLimits (adequateCoreflection.{u, v, w} A)
 ```
 
-**`AdequateFunctor.preservesInjectiveObjects_adequateCoreflection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L301). The attribute's comment: “part (4)”.
+**`AdequateFunctor.preservesInjectiveObjects_adequateCoreflection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/Coreflection.lean#L301). The attribute's comment: “part (4)”.
 
 > **Stacks Project, Tag 06Z7**, part (4). The functor `Q` transforms injectives into
 > injectives: it is right adjoint to the exact functor `i`, so [Stacks, Tag 015Z] applies.
@@ -107,7 +107,7 @@ public lemma preservesInjectiveObjects_adequateCoreflection :
     (adequateCoreflection.{u, v, w} A).PreservesInjectiveObjects
 ```
 
-**`AdequateFunctor.adequateFunctor_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/EnoughInjectives.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/EnoughInjectives.lean#L91). The attribute's comment: “adequate\_functors\_enough\_injectives”.
+**`AdequateFunctor.adequateFunctor_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/EnoughInjectives.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/EnoughInjectives.lean#L91). The attribute's comment: “adequate\_functors\_enough\_injectives”.
 
 > **Stacks Project, Tag 06Z7.** The adequate module-valued functors on the commutative
 > `A`-algebras have enough injectives: every one of them embeds into the extension of a pure
@@ -118,7 +118,7 @@ public instance adequateFunctor_enoughInjectives {A : Type u} [CommRing A] :
     EnoughInjectives ((adequate.{u, v, max u v w} A).FullSubcategory)
 ```
 
-**`AdequateFunctor.adequate_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean#L79). The attribute's comment: “part (1), the image of i is a weak Serre subcategory”.
+**`AdequateFunctor.adequate_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean#L79). The attribute's comment: “part (1), the image of i is a weak Serre subcategory”.
 
 > **Stacks Project, Tag 06Z7**, part (1), the image of `i` is a weak Serre subcategory. The
 > adequate module-valued functors are a strictly full subcategory containing the zero functor and
@@ -130,7 +130,7 @@ public instance adequate_isWeakSerreClass :
     (adequate.{u, u, u} A).IsWeakSerreClass
 ```
 
-**`AdequateFunctor.adequateInclusion_fullyFaithful_exact_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean#L95). The attribute's comment: “part (1)”.
+**`AdequateFunctor.adequateInclusion_fullyFaithful_exact_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/WeakSerre.lean#L95). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 06Z7**, part (1), in full and at one instantiation: the inclusion `i`
 > of the adequate module-valued functors into all module-valued functors on `Alg_A` is fully
@@ -157,7 +157,7 @@ public theorem adequateInclusion_fullyFaithful_exact_isWeakSerreClass :
 
 [Tag 06Z8](https://stacks.math.columbia.edu/tag/06Z8) in the Stacks Project.
 
-**`AdequateFunctor.tangentKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L213). The attribute's comment: “parts (1) and (2): the kernel with its restricted module structure”.
+**`AdequateFunctor.tangentKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L213). The attribute's comment: “parts (1) and (2): the kernel with its restricted module structure”.
 
 > The tangent kernel, with scalars restricted along the zero section `B → B[N]`.
 
@@ -166,7 +166,7 @@ noncomputable def tangentKernel (X : AlgebraModulePair.{v} A) :
     Submodule X.algebra (extensionValue A F X)
 ```
 
-**`AdequateFunctor.tangentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L269). The attribute's comment: “part (3): the canonical tangent functor”.
+**`AdequateFunctor.tangentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L269). The attribute's comment: “part (3): the canonical tangent functor”.
 
 > The canonical tangent functor on pairs of algebras and modules.
 
@@ -174,7 +174,7 @@ noncomputable def tangentKernel (X : AlgebraModulePair.{v} A) :
 noncomputable def tangentFunctor : TangentFunctorData A F
 ```
 
-**`AdequateFunctor.tangentDecompositionData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L327). The attribute's comment: “the canonical direct-sum decomposition”.
+**`AdequateFunctor.tangentDecompositionData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L327). The attribute's comment: “the canonical direct-sum decomposition”.
 
 > The canonical decomposition, specified by the sum of the zero section and the kernel
 > inclusion as its inverse.
@@ -184,7 +184,7 @@ noncomputable def tangentDecompositionData (X : AlgebraModulePair.{v} A) :
     TangentDecompositionData A F X
 ```
 
-**`AdequateFunctor.tangentMultiplicationData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L404). The attribute's comment: “part (4): the canonical multiplication map”.
+**`AdequateFunctor.tangentMultiplicationData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L404). The attribute's comment: “part (4): the canonical multiplication map”.
 
 > Multiplication by the square-zero ideal, specified on pure tensors.
 
@@ -198,7 +198,7 @@ noncomputable def tangentMultiplicationData (X : AlgebraModulePair.{v} A) :
             moduleValueMap A F (squareZeroSection A X) y}
 ```
 
-**`AdequateFunctor.tangentDecomposition_fst`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L478). The attribute's comment: “the augmentation coordinate of the decomposition”.
+**`AdequateFunctor.tangentDecomposition_fst`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L478). The attribute's comment: “the augmentation coordinate of the decomposition”.
 
 > The first coordinate of the canonical decomposition is the augmentation.
 
@@ -208,7 +208,7 @@ lemma tangentDecomposition_fst (X : AlgebraModulePair.{v} A) (x : extensionValue
       moduleValueMap A F (squareZeroAugmentation A X) x
 ```
 
-**`AdequateFunctor.tangentDecomposition_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L493). The attribute's comment: “naturality of the decomposition”.
+**`AdequateFunctor.tangentDecomposition_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L493). The attribute's comment: “naturality of the decomposition”.
 
 > The decomposition is natural for morphisms of pairs, including changes of base algebra.
 
@@ -220,7 +220,7 @@ lemma tangentDecomposition_naturality {X Y : AlgebraModulePair.{v} A} (f : X ⟶
         (tangentFunctor A F).map f (tangentDecomposition A F X x).2)
 ```
 
-**`AdequateFunctor.tangentMultiplication_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L520). The attribute's comment: “part (4): naturality of multiplication”.
+**`AdequateFunctor.tangentMultiplication_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L520). The attribute's comment: “part (4): naturality of multiplication”.
 
 > The multiplication maps form a natural transformation on the category of pairs.
 
@@ -232,7 +232,7 @@ lemma tangentMultiplication_naturality {X Y : AlgebraModulePair.{v} A} (f : X �
         (TensorProduct.map f.linear (moduleValueMap A F f.base) t)
 ```
 
-**`AdequateFunctor.tangentModule_subsingleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L549). The attribute's comment: “part (5): vanishing at the zero module”.
+**`AdequateFunctor.tangentModule_subsingleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L546). The attribute's comment: “part (5): vanishing at the zero module”.
 
 > The tangent module of a zero module is zero.
 
@@ -241,7 +241,7 @@ lemma tangentModule_subsingleton (X : AlgebraModulePair.{v} A) [Subsingleton X.m
     Subsingleton (tangentModule A F X)
 ```
 
-**`AdequateFunctor.tangentFunctor_map_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 584](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L584). The attribute's comment: “part (5): zero module maps induce zero tangent maps”.
+**`AdequateFunctor.tangentFunctor_map_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L581). The attribute's comment: “part (5): zero module maps induce zero tangent maps”.
 
 > A morphism of pairs whose module map is zero induces the zero tangent map.
 
@@ -254,41 +254,64 @@ lemma tangentFunctor_map_eq_zero {X Y : AlgebraModulePair.{v} A} (f : X ⟶ Y)
 
 [Tag 06ZA](https://stacks.math.columbia.edu/tag/06ZA) in the Stacks Project.
 
-**`AdequateFunctor.epi_tangentFunctorAt_map_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/InjectiveTangentSurjective.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/InjectiveTangentSurjective.lean#L221). The attribute's comment: “Stacks erratum: only the surjectivity at `TI(B, N₂)`. Exactness at `TI(B, N)`, the other conjunct of the source's assertion that `TI(B,N₁) → TI(B,N) → TI(B,N₂) → 0` is exact, is false as stated, and is refuted by `AdequateFunctor.not_forall_hasRightExactTangentFunctor_of_injective`. The module universe of `I` is taken to be the universe of the algebras.”.
+**`AdequateFunctor.map_comp_eq_zero_and_epi_tangentFunctorAt_map_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/InjectiveTangentSurjective.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/InjectiveTangentSurjective.lean#L236). The attribute's comment: “Stacks erratum, corrected statement: the tangent sequence `TI(B,N₁) → TI(B,N) → TI(B,N₂) → 0` of an injective module-valued functor is a complex and is exact at `TI(B,N₂)`. Exactness at `TI(B,N)`, also asserted by the source, is false: its negation is `AdequateFunctor.not_forall_exact_map_tangentFunctorAt_of_injective`. The module universe of `I` is the universe of the algebras.”.
 
-> **Tag 06ZA, corrected.  Stacks erratum.**  Let `I` be an
-> injective object of the category of module-valued functors on `Alg_A`.  For every `A`-algebra
-> `B` and every short exact sequence `0 → N₁ → N → N₂ → 0` of `B`-modules, the map
-> `TI(B, N) → TI(B, N₂)` is an epimorphism.
+> **Tag 06ZA, corrected.  Stacks erratum.**  Let `I` be an injective object of the category
+> of module-valued functors on `Alg_A`.  For every `A`-algebra `B` and every short exact
+> sequence `0 → N₁ → N → N₂ → 0` of `B`-modules, the sequence
+> `TI(B, N₁) → TI(B, N) → TI(B, N₂) → 0` is a complex and is exact at `TI(B, N₂)`: the
+> composite `TI(B, N₁) → TI(B, N₂)` is zero and `TI(B, N) → TI(B, N₂)` is an epimorphism.
 >
-> The source asserts more: that the whole sequence `TI(B, N₁) → TI(B, N) → TI(B, N₂) → 0` is
-> exact, which in this library is the predicate `AdequateFunctor.HasRightExactTangentFunctor`
-> of Tag 06ZF.  **The other conjunct, exactness at `TI(B, N)`, is false**, and is refuted by
-> `AdequateFunctor.not_forall_hasRightExactTangentFunctor_of_injective`: the counterexample
-> takes the field `k = ℚ`, the algebra `C = k[ε]/(ε²)`, the injective `C`-module
+> The source asserts that the sequence is exact.  **Exactness at `TI(B, N)` is false**, and is
+> refuted by `AdequateFunctor.not_forall_exact_map_tangentFunctorAt_of_injective`: the
+> counterexample takes the field `k = ℚ`, the algebra `C = k[ε]/(ε²)`, the injective `C`-module
 > `J = Hom_k(C, k)` and the coinduced functor `I(D) = ∏_{α : D →ₐ C} J`, whose tangent module
 > `TI(k, V)` is the functions `V^* → J` vanishing at `0`; on `0 → k → k² → k → 0` the function
 > sending the first-coordinate functional to `0 ≠ j ∈ J` and everything else to `0` is killed
 > by `TI(k, k²) → TI(k, k)` and is not in the image of `TI(k, k) → TI(k, k²)`, every element of
 > which takes equal values at `(1, 0)` and `(1, 1)`.
 >
-> Surjectivity at `TI(B, N₂)` — the statement proved here, and the whole of what the source's
-> assertion leaves standing — is unaffected: its proof does not use the coequalizer step that
+> Surjectivity at `TI(B, N₂)` is unaffected: its proof does not use the coequalizer step that
 > the counterexample refutes.
 
 ```lean
-theorem epi_tangentFunctorAt_map_of_injective
+theorem map_comp_eq_zero_and_epi_tangentFunctorAt_map_of_injective
     (I : PresheafOfModules.{v} (algebraStructurePresheaf.{v} A)) [Injective I]
     (B : Type v) [CommRing B] [Algebra A B] (S : ShortComplex (ModuleCat.{v} B))
     (hS : S.ShortExact) :
-    Epi ((tangentFunctorAt A I B).map S.g)
+    (tangentFunctorAt A I B).map S.f ≫ (tangentFunctorAt A I B).map S.g = 0 ∧
+      Epi ((tangentFunctorAt A I B).map S.g)
+```
+
+**`AdequateFunctor.not_forall_exact_map_tangentFunctorAt_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/InjectiveTangentNotRightExact.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/InjectiveTangentNotRightExact.lean#L440). The attribute's comment: “Stacks erratum: the negation of the exactness at `TI(B,N)` asserted by the source, witnessed by the injective functor coinduced from `ℚ[ε]` and the sequence `0 → ℚ → ℚ² → ℚ → 0`. The corrected statement is `AdequateFunctor.map_comp_eq_zero_and_epi_tangentFunctorAt_map_of_injective`.”.
+
+> **Exactness at `TI(B, N)` in Tag 06ZA is false.  Stacks erratum.**
+> The source asserts that for every ring `A`, every injective object `I` of the category of
+> module-valued functors on `Alg_A`, every `A`-algebra `B` and every short exact sequence
+> `0 → N₁ → N → N₂ → 0` of `B`-modules, the sequence `TI(B, N₁) → TI(B, N) → TI(B, N₂) → 0` is
+> exact.  This is the negation of its exactness at the middle term `TI(B, N)`.
+>
+> The witness is the one of
+> `AdequateFunctor.not_forall_hasRightExactTangentFunctor_of_injective`: the injective functor
+> `AdequateFunctor.coinducedDualNum` and `0 → ℚ → ℚ² → ℚ → 0`.  Since the other conjunct,
+> exactness at `TI(B, N₂)`, does hold for every injective functor
+> (`AdequateFunctor.epi_tangentFunctorAt_map_of_injective`), middle exactness is exactly the
+> part that fails.  The corrected statement is
+> `AdequateFunctor.map_comp_eq_zero_and_epi_tangentFunctorAt_map_of_injective`.
+
+```lean
+theorem not_forall_exact_map_tangentFunctorAt_of_injective :
+    ¬ ∀ (A : Type) [CommRing A]
+        (I : PresheafOfModules.{0} (algebraStructurePresheaf.{0} A)), Injective I →
+        ∀ (B : Type) [CommRing B] [Algebra A B] (S : ShortComplex (ModuleCat.{0} B)),
+          S.ShortExact → (S.map (tangentFunctorAt A I B)).Exact
 ```
 
 ## Tag 06ZB, a lemma
 
 [Tag 06ZB](https://stacks.math.columbia.edu/tag/06ZB) in the Stacks Project.
 
-**`AdequateFunctor.tangentTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean#L763). The attribute's comment: “tensor\_finitely\_presented”.
+**`AdequateFunctor.tangentTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean#L761). The attribute's comment: “tensor\_finitely\_presented”.
 
 > The canonical tensor-product description of the tangent module of a
 > finitely presented module, using the second action on both tangent modules.
@@ -314,7 +337,7 @@ noncomputable def tangentTensorEquiv
                linear := (LinearMap.id : B →ₗ[B] B).smulRight n } : X ⟶ Y) x }
 ```
 
-**`AdequateFunctor.tangentModule_prod_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L62). The attribute's comment: “direct\_sum”.
+**`AdequateFunctor.tangentModule_prod_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L62). The attribute's comment: “direct\_sum”.
 
 > A right exact tangent functor carries a binary direct sum of modules to
 > the direct sum of their tangent modules, via the two projections.
@@ -340,7 +363,7 @@ theorem tangentModule_prod_bijective
               ({ algebra := B, module := N₂ } : AlgebraModulePair.{v} T.A)) x))
 ```
 
-**`AdequateFunctor.secondModuleStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L299). The attribute's comment: “second\_module\_structure”.
+**`AdequateFunctor.secondModuleStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L299). The attribute's comment: “second\_module\_structure”.
 
 > The second module structure on a tangent module, characterized by the
 > action induced by multiplication on the module variable.
@@ -353,7 +376,7 @@ noncomputable def secondModuleStructure (X : AlgebraModulePair.{v} S.A) :
           secondScalarAction S.A S.F X x b }
 ```
 
-**`AdequateFunctor.secondScalarAction_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L403). The attribute's comment: “second\_module\_structure”.
+**`AdequateFunctor.secondScalarAction_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L403). The attribute's comment: “second\_module\_structure”.
 
 > Tangent maps commute with the second scalar action, semilinearly over
 > their maps of base algebras.
@@ -365,7 +388,7 @@ theorem secondScalarAction_naturality {X Y : AlgebraModulePair.{v} S.A}
       secondScalarAction S.A S.F Y ((tangentFunctor S.A S.F).map f x) (f.base b)
 ```
 
-**`AdequateFunctor.tangentMultiplication_smul_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L455). The attribute's comment: “multiplication\_map\_linear”.
+**`AdequateFunctor.tangentMultiplication_smul_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L455). The attribute's comment: “multiplication\_map\_linear”.
 
 > The canonical tangent multiplication map is linear for the second
 > `B`-module structure on the tangent module.
@@ -379,7 +402,7 @@ theorem tangentMultiplication_smul_second (S : RightExactTangentFunctor.{u, v, w
       tangentMultiplication S.A S.F X (b • t)
 ```
 
-**`AdequateFunctor.secondScalarAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L619). The attribute's comment: “second\_scalar\_action”.
+**`AdequateFunctor.secondScalarAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L616). The attribute's comment: “second\_scalar\_action”.
 
 > The second scalar operation on a tangent module, induced by multiplication
 > on the module variable.
@@ -393,7 +416,7 @@ noncomputable def secondScalarAction (X : AlgebraModulePair.{v} A)
 
 [Tag 06ZC](https://stacks.math.columbia.edu/tag/06ZC) in the Stacks Project.
 
-**`AdequateFunctor.tangentMultiplication_smul_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L455).
+**`AdequateFunctor.tangentMultiplication_smul_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/SecondModuleStructure.lean#L455).
 
 > The canonical tangent multiplication map is linear for the second
 > `B`-module structure on the tangent module.
@@ -411,7 +434,7 @@ theorem tangentMultiplication_smul_second (S : RightExactTangentFunctor.{u, v, w
 
 [Tag 06ZD](https://stacks.math.columbia.edu/tag/06ZD) in the Stacks Project.
 
-**`AdequateFunctor.tangentTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean#L763).
+**`AdequateFunctor.tangentTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/FinitelyPresentedTangent.lean#L761).
 
 > The canonical tensor-product description of the tangent module of a
 > finitely presented module, using the second action on both tangent modules.
@@ -441,7 +464,7 @@ noncomputable def tangentTensorEquiv
 
 [Tag 06ZF](https://stacks.math.columbia.edu/tag/06ZF) in the Stacks Project.
 
-**`AdequateFunctor.rightExactTangentFunctor_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L260). The attribute's comment: “extension\_permanence”.
+**`AdequateFunctor.rightExactTangentFunctor_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L260). The attribute's comment: “extension\_permanence”.
 
 > Property `(*)` is stable under extensions of module-valued functors.
 
@@ -454,7 +477,7 @@ theorem rightExactTangentFunctor_of_shortExact
     HasRightExactTangentFunctor A S.X₂
 ```
 
-**`AdequateFunctor.hasRightExactTangentFunctor_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L372). The attribute's comment: “quotient\_permanence”.
+**`AdequateFunctor.hasRightExactTangentFunctor_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L372). The attribute's comment: “quotient\_permanence”.
 
 > Property `(*)` passes to the quotient in a short exact sequence of
 > module-valued functors.
@@ -469,7 +492,7 @@ public lemma hasRightExactTangentFunctor_of_shortExact
     AdequateFunctor.HasRightExactTangentFunctor A S.X₃
 ```
 
-**`AdequateFunctor.hasRightExactTangentFunctor_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L508). The attribute's comment: “pullback\_permanence”.
+**`AdequateFunctor.hasRightExactTangentFunctor_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/RightExactPermanence.lean#L508). The attribute's comment: “pullback\_permanence”.
 
 > Property `(*)` passes to a pullback of a short exact sequence of
 > module-valued functors.
@@ -486,7 +509,7 @@ public theorem hasRightExactTangentFunctor_pullback
     HasRightExactTangentFunctor A (pullback S.g f)
 ```
 
-**`AdequateFunctor.HasRightExactTangentFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L683). The attribute's comment: “property”.
+**`AdequateFunctor.HasRightExactTangentFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Adequate/Tangent/TangentFunctor.lean#L680). The attribute's comment: “property”.
 
 > Property `(*)`: over every `A`-algebra, the tangent functor sends a short exact
 > sequence of modules to an exact sequence ending in an epimorphism.
@@ -499,7 +522,7 @@ abbrev HasRightExactTangentFunctor : Prop
 
 [Tag 06ZG](https://stacks.math.columbia.edu/tag/06ZG) in the Stacks Project.
 
-**`AdequateFunctor.subsingleton_zExt_moduleExtension_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L152). The attribute's comment: “every degree i > 0; the published proof via Tag 06ZA is replaced by the transfer along phi\_N^* -| psi\_N^* and a dual-number scaling argument”.
+**`AdequateFunctor.subsingleton_zExt_moduleExtension_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L152). The attribute's comment: “every degree i > 0; the published proof via Tag 06ZA is replaced by the transfer along phi\_N^* -| psi\_N^* and a dual-number scaling argument”.
 
 > **Stacks Project, Tag 06ZG.** For `A`-modules `M` and `P` with `P` of finite presentation,
 > `Ext^i(P̲, M̲) = 0` for every `i > 0` in the category of module-valued functors on the commutative
@@ -513,7 +536,7 @@ theorem subsingleton_zExt_moduleExtension_of_finitePresentation
       (moduleExtension.{max (u + 1) (v + 1) w, v} A M) i)
 ```
 
-**`AdequateFunctor.subsingleton_zExt_moduleExtension_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtHigher.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtHigher.lean#L129). The attribute's comment: “degree 3, by a double dimension shift to Ext¹ out of a linearly adequate functor, which vanishes by Tag 06V7”.
+**`AdequateFunctor.subsingleton_zExt_moduleExtension_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtHigher.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtHigher.lean#L130). The attribute's comment: “degree 3, by a double dimension shift to Ext¹ out of a linearly adequate functor, which vanishes by Tag 06V7”.
 
 > **Stacks Project, Tag 06ZG in degree three.** For an `A`-module `P` of finite
 > presentation, `Ext³` from the module-valued functor `B ↦ B ⊗[A] P` to `B ↦ B ⊗[A] M` vanishes
@@ -525,7 +548,7 @@ theorem subsingleton_zExt_moduleExtension_three [Module.FinitePresentation A P] 
       (moduleExtension.{max u v w, v} A M) 3)
 ```
 
-**`AdequateFunctor.subsingleton_zExt_moduleExtension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L826). The attribute's comment: “degree 1, via the universal section over the square-zero extension by the cokernel of the transpose of a presentation”.
+**`AdequateFunctor.subsingleton_zExt_moduleExtension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 829](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L829). The attribute's comment: “degree 1, via the universal section over the square-zero extension by the cokernel of the transpose of a presentation”.
 
 > **Stacks Project, Tag 06ZG in degree one.**  For an `A`-module `P` of finite
 > presentation, `Ext¹` from the module-valued functor `B ↦ B ⊗[A] P` to `B ↦ B ⊗[A] M` vanishes
@@ -537,7 +560,7 @@ theorem subsingleton_zExt_moduleExtension_one [Module.FinitePresentation A P] :
       (moduleExtension.{max u v w, v} A M) 1)
 ```
 
-**`AdequateFunctor.subsingleton_zExt_moduleExtension_two_large`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 837](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L837). The attribute's comment: “degree 2, via Tag 06V0 and projectivity of the free module functors”.
+**`AdequateFunctor.subsingleton_zExt_moduleExtension_two_large`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 840](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L840). The attribute's comment: “degree 2, via Tag 06V0 and projectivity of the free module functors”.
 
 > **Stacks Project, Tag 06ZG in degree two.**  For an `A`-module `P` of finite presentation,
 > `Ext²` from the module-valued functor `B ↦ B ⊗[A] P` to `B ↦ B ⊗[A] M` vanishes in the
@@ -549,7 +572,7 @@ theorem subsingleton_zExt_moduleExtension_two_large [Module.FinitePresentation A
       (moduleExtension.{max u v w, v} A M) 2)
 ```
 
-**`AdequateFunctor.subsingleton_zExt_moduleExtension_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 867](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L867). The attribute's comment: “degree 2, via Tag 06V0 and projectivity of the free module functors”.
+**`AdequateFunctor.subsingleton_zExt_moduleExtension_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean, line 870](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtTwo.lean#L870). The attribute's comment: “degree 2, via Tag 06V0 and projectivity of the free module functors”.
 
 > **Stacks Project, Tag 06ZG in degree two.**  For an `A`-module `P` of finite presentation,
 > `Ext²` from the module-valued functor `B ↦ B ⊗[A] P` to `B ↦ B ⊗[A] M` vanishes in the
@@ -565,7 +588,7 @@ theorem subsingleton_zExt_moduleExtension_two [Module.FinitePresentation A P] :
 
 [Tag 06ZH](https://stacks.math.columbia.edu/tag/06ZH) in the Stacks Project.
 
-**`AdequateFunctor.subsingleton_zExt_isLinearlyAdequate_moduleExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L177). The attribute's comment: “every degree i > 0, by the source's two dimension shifts from Tag 06ZG”.
+**`AdequateFunctor.subsingleton_zExt_isLinearlyAdequate_moduleExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L177). The attribute's comment: “every degree i > 0, by the source's two dimension shifts from Tag 06ZG”.
 
 > **Stacks Project, Tag 06ZH.** Let `A` be a ring, `M` an `A`-module and `L` a linearly adequate
 > module-valued functor on the commutative `A`-algebras. Then `Ext^i(L, M̲) = 0` for every `i > 0`,
@@ -578,7 +601,7 @@ theorem subsingleton_zExt_isLinearlyAdequate_moduleExtension
     Subsingleton (Abelian.zExt L (moduleExtension.{max (u + 1) (v + 1) w, v} A M) i)
 ```
 
-**`AdequateFunctor.subsingleton_zExt_of_isLinearlyAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/LinearlyAdequate.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/LinearlyAdequate.lean#L183). The attribute's comment: “The positive-degree vanishing for the functor of a finitely presented module, Tag 06ZG, is a hypothesis. Only its degree-two case is proved in this library, in `AdequateFunctor.subsingleton_zExt_moduleExtension_two`, while this proof needs degrees at least three: both short exact sequences used here are flanked by projective objects, so the degree shift along them is an isomorphism and those degrees of Tag 06ZG carry the content of this tag itself. The source derives Tag 06ZG from Tag 06ZA, which is false as stated and is refuted by `AdequateFunctor.not_forall_hasRightExactTangentFunctor_of_injective`.”.
+**`AdequateFunctor.subsingleton_zExt_of_isLinearlyAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/LinearlyAdequate.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/LinearlyAdequate.lean#L183). The attribute's comment: “The positive-degree vanishing for the functor of a finitely presented module, Tag 06ZG, is a hypothesis. Only its degree-two case is proved in this library, in `AdequateFunctor.subsingleton_zExt_moduleExtension_two`, while this proof needs degrees at least three: both short exact sequences used here are flanked by projective objects, so the degree shift along them is an isomorphism and those degrees of Tag 06ZG carry the content of this tag itself. The source derives Tag 06ZG from Tag 06ZA, which is false as stated and is refuted by `AdequateFunctor.not_forall_hasRightExactTangentFunctor_of_injective`.”.
 
 > Let `A` be a commutative ring, `M` an `A`-module and `L` a linearly adequate module-valued
 > functor on the commutative `A`-algebras. Then `Ext^i(L, M̲)` vanishes for `i > 0`, where `M̲`
@@ -599,7 +622,7 @@ public theorem subsingleton_zExt_of_isLinearlyAdequate {A : Type u} [CommRing A]
 
 [Tag 06ZI](https://stacks.math.columbia.edu/tag/06ZI) in the Stacks Project.
 
-**`AdequateFunctor.isZero_rightDerivedPlus_adequateCoreflection_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L188). The attribute's comment: “every degree p > 0 and every adequate F”.
+**`AdequateFunctor.isZero_rightDerivedPlus_adequateCoreflection_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/FinitelyPresentedExtAll.lean#L188). The attribute's comment: “every degree p > 0 and every adequate F”.
 
 > **Stacks Project, Tag 06ZI.** The higher right derived functors of the coreflection `Q` onto
 > the adequate module-valued functors vanish: `R^p Q(F) = 0` for every `p > 0` and every adequate
@@ -612,7 +635,7 @@ theorem isZero_rightDerivedPlus_adequateCoreflection_of_isAdequate
     IsZero (((adequateCoreflection.{u, v, w} A).rightDerivedPlus p).obj F)
 ```
 
-**`AdequateFunctor.isZero_rightDerivedPlus_one_adequateCoreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L273). The attribute's comment: “degree 1, from Tag 06V7 and the covering of Tag 06UX”.
+**`AdequateFunctor.isZero_rightDerivedPlus_one_adequateCoreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L273). The attribute's comment: “degree 1, from Tag 06V7 and the covering of Tag 06UX”.
 
 > **Stacks Project, Tag 06ZI in degree one.** The first right derived functor of the
 > coreflection `Q` onto the adequate module-valued functors vanishes on every adequate functor `F`.
@@ -626,7 +649,7 @@ public theorem isZero_rightDerivedPlus_one_adequateCoreflection
     IsZero (((adequateCoreflection.{u, v, w} A).rightDerivedPlus 1).obj F)
 ```
 
-**`AdequateFunctor.isZero_rightDerivedPlus_adequateCoreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L334). The attribute's comment: “the positive-degree vanishing of the extension groups between extensions of modules, one finitely presented, is a hypothesis: that is Tag 06ZG, which is absent from this library.”.
+**`AdequateFunctor.isZero_rightDerivedPlus_adequateCoreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/Vanishing.lean#L334). The attribute's comment: “the positive-degree vanishing of the extension groups between extensions of modules, one finitely presented, is a hypothesis: that is Tag 06ZG, which is absent from this library.”.
 
 > **Stacks Project, Tag 06ZI.** The higher right derived functors of the coreflection `Q` onto
 > the adequate module-valued functors vanish in positive degrees on every adequate functor.
@@ -649,4 +672,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 46.4, Tag 06Z5](https://stacks.math.columbia.edu/tag/06Z5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

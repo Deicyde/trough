@@ -1,6 +1,6 @@
 # 78 Groupoids in Algebraic Spaces
 
-Chapter 78 of the Stacks Project, *Groupoids in Algebraic Spaces*, [Tag 0437](https://stacks.math.columbia.edu/tag/0437): the 26 sections of its 29 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 84 tags are carried by 222 declarations of the repository (all in StacksFrontier) and 16 registered declarations.
+Chapter 78 of the Stacks Project, *Groupoids in Algebraic Spaces*, [Tag 0437](https://stacks.math.columbia.edu/tag/0437): the 26 sections of its 29 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 84 tags are carried by 222 declarations of the repository (all in StacksFrontier) and 15 registered declarations.
 
 ## [78.4 Equivalence relations to 78.23 The 2-coequalizer…](part-01/README.md)
 

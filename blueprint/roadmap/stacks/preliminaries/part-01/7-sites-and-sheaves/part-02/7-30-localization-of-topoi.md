@@ -1,55 +1,82 @@
 ---
 declaration: section
 origin: cited
-lean: MorphismOfTopoi.overLocalization, MorphismOfTopoi.overLocalization_inverseImage_obj, MorphismOfTopoi.overLocalizationShriek, CategoryTheory.homPushforwardEquivRightInverse, CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_unitInv, CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_homEquiv_shriek, CategoryTheory.Presheaf.IsSheaf.exists_sheafEquivalence_costructuredArrow_yoneda, toposLocalization
+lean: CategoryTheory.Sheaf.exists_over_equiv_sheaf, MorphismOfTopoi.sheafOverLocalization, MorphismOfTopoi.sheafOverLocalization_inverseImage_obj, MorphismOfTopoi.sheafOverLocalizationShriek, MorphismOfTopoi.sheafOverLocalization_isLocalization, CategoryTheory.homPushforwardEquivRightInverse, CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_unitInv, CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_homEquiv_shriek
 statement: formalized
 proof: formalized
 ---
 
 # 7.30 Localization of topoi
 
-Section 7.30 of the Stacks Project, [Tag 04GY](https://stacks.math.columbia.edu/tag/04GY). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.30 of the Stacks Project, [Tag 04GY](https://stacks.math.columbia.edu/tag/04GY). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04GZ, a lemma
 
 [Tag 04GZ](https://stacks.math.columbia.edu/tag/04GZ) in the Stacks Project.
 
-**`MorphismOfTopoi.overLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean#L76). The attribute's comment: “the morphism of topoi j\_F, and its inverse image”. References: SGA 4 IV (5.5), “Y = terminal object”; SGA 4 IV (5.2), “(5.2.1)”; SGA 4 IV (3.1.3), “special case”.
+**`CategoryTheory.Sheaf.exists_over_equiv_sheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean#L59). The attribute's comment: “the category Sh(C)/F is a topos: it is equivalent to Sh(C/F), sheaves on the site of pairs (U, s) with s ∈ F(U)”.
 
-> **Stacks 04GZ.** Let `E` be a topos and `F` an object of `E`.  The localization morphism
-> `j_F : E/F ⟶ E` is the morphism of topoi whose inverse image is `j_F⁻¹ = toOver F`, i.e.
-> `H ↦ (H × F ⟶ F)`, and whose pushforward `j_{F,*}` is a right adjoint of it.
+> **Stacks 04GZ: `Sh(C)/F` is a topos.** For a sheaf `F` on a site `(C, J)`, the slice
+> `Sh(C)/F` is equivalent to the category of sheaves of sets on a site, namely the site `C/F` of
+> `sheafOverEquivalence`.
 
 ```lean
-def overLocalization (F : E) {p : Over F ⥤ E} (adj : toOver F ⊣ p) : MorphismOfTopoi (Over F) E
+theorem _root_.CategoryTheory.Sheaf.exists_over_equiv_sheaf (F : Sheaf J (Type u)) :
+    ∃ (D : Type u) (_ : SmallCategory D) (K : GrothendieckTopology D),
+      Nonempty (Over F ≌ Sheaf K (Type u))
 ```
 
-**`MorphismOfTopoi.overLocalization_inverseImage_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean#L89). The attribute's comment: “(1): the functor j\_F^\{-1} is H ↦ H × F / F”. References: SGA 4 IV (5.5), “Y terminal (f^* formula)”; SGA 4 IV (5.2), “b)”.
+**`MorphismOfTopoi.sheafOverLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean#L92). The attribute's comment: “the canonical morphism of topoi j\_F : Sh(C)/F → Sh(C), with j\_F^\{-1} = toOver F and j\_\{F,*} its right adjoint, constructed through Sh(C)/F ≌ Sh(C/F)”.
 
-> **Stacks 04GZ (1).** The inverse image of the localization morphism `j_F` is the functor
-> `H ↦ (H × F / F)`, the object of `E/F` given by the projection `H × F ⟶ F`.
+> **Stacks 04GZ.** Let `(C, J)` be a site and `F` a sheaf on it. The localization morphism
+> `j_F : Sh(C)/F ⟶ Sh(C)` is the morphism of topoi with inverse image `j_F⁻¹ = toOver F`, i.e.
+> `H ↦ (H × F ⟶ F)`, and pushforward `j_{F,*} = overLocalizationPushforward J F`, its right
+> adjoint.
 
 ```lean
-lemma overLocalization_inverseImage_obj (F : E) {p : Over F ⥤ E} (adj : toOver F ⊣ p) (H : E) :
-    (overLocalization F adj).inverseImage.obj H = Over.mk (snd H F)
+noncomputable def sheafOverLocalization (F : Sheaf J (Type u)) :
+    MorphismOfTopoi (Over F) (Sheaf J (Type u))
 ```
 
-**`MorphismOfTopoi.overLocalizationShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/ToposLocalization.lean#L98). The attribute's comment: “(2): the functor j\_\{F!} is the forgetful functor G/F ↦ G”. References: SGA 4 IV (5.5), “Y terminal (f\_! ⊣ f^*)”; SGA 4 IV (5.2), “a)”.
+**`MorphismOfTopoi.sheafOverLocalization_inverseImage_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean#L99). The attribute's comment: “(1): the functor j\_F^\{-1} is H ↦ H × F / F”.
 
-> **Stacks 04GZ (2).** The functor `j_{F!}` is the forgetful functor `(G ⟶ F) ↦ G`: it is
-> left adjoint to `j_F⁻¹`, so that `j_{F!} ⊣ j_F⁻¹ ⊣ j_{F,*}` and `j_F` is a localization in the
-> sense of Section 7.25 (tag 00XZ).
+> **Stacks 04GZ (1).** The inverse image of `j_F : Sh(C)/F ⟶ Sh(C)` is
+> `H ↦ (H × F ⟶ F)`.
 
 ```lean
-def overLocalizationShriek (F : E) {p : Over F ⥤ E} (adj : toOver F ⊣ p) :
-    Over.forget F ⊣ (overLocalization F adj).inverseImage
+lemma sheafOverLocalization_inverseImage_obj (F H : Sheaf J (Type u)) :
+    (sheafOverLocalization J F).inverseImage.obj H = Over.mk (snd H F)
+```
+
+**`MorphismOfTopoi.sheafOverLocalizationShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean#L106). The attribute's comment: “(2): the functor j\_\{F!} is the forgetful functor G/F ↦ G”.
+
+> **Stacks 04GZ (2).** The functor `j_{F!}` of `j_F : Sh(C)/F ⟶ Sh(C)` is the forgetful functor
+> `(G ⟶ F) ↦ G`: it is left adjoint to `j_F⁻¹`.
+
+```lean
+noncomputable def sheafOverLocalizationShriek (F : Sheaf J (Type u)) :
+    Over.forget F ⊣ (sheafOverLocalization J F).inverseImage
+```
+
+**`MorphismOfTopoi.sheafOverLocalization_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/ToposLocalizationSheaf.lean#L115). The attribute's comment: “j\_F is a localization: the triple of adjoints j\_\{F!} ⊣ j\_F^\{-1} ⊣ j\_\{F,*}, with j\_\{F!} the forgetful functor and j\_F^\{-1} = H ↦ H × F / F”.
+
+> **Stacks 04GZ: `j_F` is a localization.** The triple of adjoints
+> `j_{F!} ⊣ j_F⁻¹ ⊣ j_{F,*}` of `j_F : Sh(C)/F ⟶ Sh(C)`, with `j_{F!} = Over.forget F` and
+> `j_F⁻¹ = toOver F`, as in Section 7.25 (tag 00XZ).
+
+```lean
+theorem sheafOverLocalization_isLocalization (F : Sheaf J (Type u)) :
+    Nonempty (Over.forget F ⊣ (sheafOverLocalization J F).inverseImage) ∧
+      Nonempty ((sheafOverLocalization J F).inverseImage ⊣
+        (sheafOverLocalization J F).pushforward) ∧
+      (sheafOverLocalization J F).inverseImage = toOver F
 ```
 
 ## Tag 04H0, a lemma
 
 [Tag 04H0](https://stacks.math.columbia.edu/tag/04H0) in the Stacks Project.
 
-**`CategoryTheory.homPushforwardEquivRightInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/OverHomEquiv.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/OverHomEquiv.lean#L93).
+**`CategoryTheory.homPushforwardEquivRightInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/OverHomEquiv.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/SliceTopos/OverHomEquiv.lean#L93).
 
 > **Stacks 04H0.** Let `E` be a topos, `F` an object of `E` and `j_{F,*} = p` a pushforward
 > for the localization `j_F : E/F ⟶ E`, i.e. a right adjoint of `j_F⁻¹ = toOver F`.  For an object
@@ -80,7 +107,7 @@ def homPushforwardEquivRightInverse [BraidedCategory E] {p : Over F ⥤ E} (adj 
 
 [Tag 0791](https://stacks.math.columbia.edu/tag/0791) in the Stacks Project.
 
-**`CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_unitInv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L881). The attribute's comment: “the fibre identification of `j_!j^{-1}G` is evaluation of the counit of `j_!`”.
+**`CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_unitInv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L881). The attribute's comment: “the fibre identification of `j_!j^{-1}G` is evaluation of the counit of `j_!`”.
 
 > **Stacks 0791: the fibre identification of `j_!j^{-1}G` is evaluation of the shriek counit.**
 > Write `E` for the equivalence of `sheafEquivalenceCostructuredArrowYoneda` and
@@ -119,7 +146,7 @@ theorem Presheaf.IsSheaf.app_fibers_inv_comp_unitInv {C : Type u} [Category.{v} 
         p.val
 ```
 
-**`CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_homEquiv_shriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 916](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L916). The attribute's comment: “transposing across `j_! ⊣ j^{-1}` is evaluation on fibres”.
+**`CategoryTheory.Presheaf.IsSheaf.app_fibers_inv_comp_homEquiv_shriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 916](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L916). The attribute's comment: “transposing across `j_! ⊣ j^{-1}` is evaluation on fibres”.
 
 > **Stacks 0791: transposing across `j_! ⊣ j^{-1}` is evaluation on fibres.** Let `T` be an
 > object of `Sh(C)/F` and `β : T.left ⟶ G` a morphism of sheaves on `C`. Reading `β` as a morphism
@@ -152,7 +179,7 @@ theorem Presheaf.IsSheaf.app_fibers_inv_comp_homEquiv_shriek {C : Type u} [Categ
       β.hom.app (op X.left) p.val
 ```
 
-**`CategoryTheory.Presheaf.IsSheaf.exists_sheafEquivalence_costructuredArrow_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 956](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L956). The attribute's comment: “Sheaves on the site `C/F` of pairs `(U, s)` with `s ∈ F(U)`, whose coverings are those of `C`: `C/F` is a site, `j` is continuous and cocontinuous, the canonical equivalence `PSh(C)/F ≌ PSh(C/F)` matches sheaves with sheaves, and it restricts to an equivalence `Sh(C/F) ≌ Sh(C)/F` carrying `j_!` to `Over.forget`, i.e. turning `j` into `j_F`.”. References: SGA 4 III (5.2), “special case”.
+**`CategoryTheory.Presheaf.IsSheaf.exists_sheafEquivalence_costructuredArrow_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean, line 956](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationOfTopoi.lean#L956). The attribute's comment: “Sheaves on the site `C/F` of pairs `(U, s)` with `s ∈ F(U)`, whose coverings are those of `C`: `C/F` is a site, `j` is continuous and cocontinuous, the canonical equivalence `PSh(C)/F ≌ PSh(C/F)` matches sheaves with sheaves, and it restricts to an equivalence `Sh(C/F) ≌ Sh(C)/F` carrying `j_!` to `Over.forget`, i.e. turning `j` into `j_F`.”. References: SGA 4 III (5.2), “special case”.
 
 > **Stacks 0791.** Let `(C, J)` be a site and let `F` be a sheaf of sets on `C`. Let
 > `C/F = CostructuredArrow yoneda F` be the category of pairs `(U, s)` with `s ∈ F(U)`, with its
@@ -207,7 +234,20 @@ public theorem Presheaf.IsSheaf.exists_sheafEquivalence_costructuredArrow_yoneda
 
 [Tag 04IP](https://stacks.math.columbia.edu/tag/04IP) in the Stacks Project.
 
-**`toposLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean#L37). References: SGA 4 IV (5.1).
+**`localizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/LocalizationMorphism.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/SliceTopos/LocalizationMorphism.lean#L46). The attribute's comment: “(2): the localization morphism j\_F : Sh(C)/F → Sh(C)”.
+
+> **Stacks 04IP (2).** The *localization morphism* of the topos `Sh(C, J)` at a sheaf `F` is the
+> morphism of topoi `j_F : Sh(C, J)/F ⟶ Sh(C, J)` of Stacks 04GZ: its inverse image `j_F⁻¹` is
+> `H ↦ (H × F ⟶ F)`, which is left exact, and its pushforward `j_{F,*}` is the right adjoint of
+> `j_F⁻¹` given by sections over `F`. Its source is `toposLocalization J F`, the localization of the
+> topos `Sh(C, J)` at `F` (Stacks 04IP (1)).
+
+```lean
+noncomputable def localizationMorphism (F : Sheaf J (Type (max u v))) :
+    MorphismOfTopoi (toposLocalization J F) (Sheaf J (Type (max u v)))
+```
+
+**`toposLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean#L39). The attribute's comment: “(1): the localization Sh(C)/F of the topos Sh(C) at F”. References: SGA 4 IV (5.1).
 
 > The localization of the topos of sheaves `Sh(C, J)` at a sheaf `F` is the
 > slice (over) category `Sh(C, J) / F`. Objects are pairs `(G, φ)` where `G` is a
@@ -218,34 +258,11 @@ public theorem Presheaf.IsSheaf.exists_sheafEquivalence_costructuredArrow_yoneda
 abbrev toposLocalization (F : Sheaf J (Type (max u v)))
 ```
 
-**`toposLocalizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/ToposLocalizationMorphism.lean#L73). References: SGA 4 IV (5.2), “(5.2.1)”; SGA 3 I (1.6), “p\_S clause: i\_S ⊣ p\_S”; SGA 4 IV (8.5).
-
-> The localization morphism `j_F` associated to the localization of the
-> topos `Sh(C, J)` at the sheaf `F` (Stacks Project Tag 04IN).
->
-> We package the canonical Mathlib adjunction `Over.forget F ⊣ Over.star F`,
-> which is the structural content of the morphism:
-> - `Over.forget F : Sh(C)/F ⥤ Sh(C)` sends `(G, φ : G ⟶ F)` to `G`. This is
->   the left adjoint (the "shriek" / étale-extension functor in the slice
->   topos picture).
-> - `Over.star F : Sh(C) ⥤ Sh(C)/F` sends `G` to the second projection
->   `(G × F, pr_F) : G × F ⟶ F`. This is the right adjoint (the base-change
->   / star functor).
->
-> The adjunction `Over.forget F ⊣ Over.star F` is exactly `Over.forgetAdjStar`
-> in Mathlib, and it requires `Sh(C, J)` to have binary products.
-
-```lean
-noncomputable def toposLocalizationMorphism (F : Sheaf J (Type (max u v)))
-    [Limits.HasBinaryProducts (Sheaf J (Type (max u v)))] :
-    ToposAdjointPair (toposLocalization J F) (Sheaf J (Type (max u v)))
-```
-
 ## Tag 04IQ, a lemma
 
 [Tag 04IQ](https://stacks.math.columbia.edu/tag/04IQ) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.sheafFunctorToOverCompForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L89). The attribute's comment: “j\_\{F!} = j\_\{U!} for F = h\_U^#: the lower shrieks agree”.
+**`CategoryTheory.OverShriek.sheafFunctorToOverCompForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L90). The attribute's comment: “j\_\{F!} = j\_\{U!} for F = h\_U^#: the lower shrieks agree”.
 
 > **Stacks 04IQ**, on lower shrieks: `j_{F!} ∘ Φ_U = j_{U!}` for `F = h_U^#`.
 >
@@ -260,7 +277,7 @@ def sheafFunctorToOverCompForgetIso :
       (Over.forget U).sheafPullback (Type v) (J.over U) J
 ```
 
-**`CategoryTheory.OverShriek.overPullbackCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L109). The attribute's comment: “j\_F^\{-1} = j\_U^\{-1} for F = h\_U^#: the inverse images agree”.
+**`CategoryTheory.OverShriek.overPullbackCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L110). The attribute's comment: “j\_F^\{-1} = j\_U^\{-1} for F = h\_U^#: the inverse images agree”.
 
 > **Stacks 04IQ**, on inverse images: `j_F^{-1} = j_U^{-1}` for `F = h_U^#`, i.e.
 > `j_U^{-1} ⋙ Φ_U ≅ toOver F`.
@@ -271,13 +288,13 @@ def overPullbackCompSheafFunctorToOverIso :
       toOver ((presheafToSheaf J (Type v)).obj (yoneda.obj U))
 ```
 
-**`CategoryTheory.OverShriek.sheafFunctorToOverCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L205). The attribute's comment: “j\_\{F,*} = j\_\{U,*} for F = h\_U^#: the pushforwards agree”.
+**`CategoryTheory.OverShriek.sheafFunctorToOverCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/ToposComparison.lean#L206). The attribute's comment: “j\_\{F,*} = j\_\{U,*} for F = h\_U^#: the pushforwards agree”.
 
 > **Stacks 04IQ**, on pushforwards: `j_{F,*} = j_{U,*}` for `F = h_U^#`, i.e.
 > `Φ_U ⋙ j_{F,*} ≅ j_{U,*}`.
 >
-> Both pushforwards are taken as data, as in Stacks 04GZ, 04H0 and 04IR: `p` is a right adjoint of
-> `j_F^{-1} = toOver F` and `q` a right adjoint of `j_U^{-1}`.
+> Both pushforwards are taken as data, as in `MorphismOfTopoi.overLocalization` and Stacks 04H0 and
+> 04IR: `p` is a right adjoint of `j_F^{-1} = toOver F` and `q` a right adjoint of `j_U^{-1}`.
 
 ```lean
 def sheafFunctorToOverCompPushforwardIso
@@ -292,7 +309,7 @@ def sheafFunctorToOverCompPushforwardIso
 
 [Tag 04IR](https://stacks.math.columbia.edu/tag/04IR) in the Stacks Project.
 
-**`CategoryTheory.starIteratedSliceForwardIsoPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean#L58). The attribute's comment: “j = j\_\{G/F} and j^\{-1}(H → F) = (H ×\_F G → G)”. References: SGA 7 VII (2.0), “partial”.
+**`CategoryTheory.starIteratedSliceForwardIsoPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean#L58). The attribute's comment: “j = j\_\{G/F} and j^\{-1}(H → F) = (H ×\_F G → G)”. References: SGA 7 VII (2.0), “partial”.
 
 > Let `s : G ⟶ F` be a morphism of a topos `E` and write `G/F` for the corresponding object of
 > the slice topos `E/F`.  Localizing `E/F` at `G/F` produces the morphism of topoi whose inverse
@@ -310,7 +327,7 @@ noncomputable def starIteratedSliceForwardIsoPullback [HasPullbacks E] :
     Over.star (Over.mk s) ⋙ (Over.mk s).iteratedSliceForward ≅ Over.pullback s
 ```
 
-**`CategoryTheory.pushforwardIsoCompPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean#L72). The attribute's comment: “j\_\{G,*} = j\_\{F,*} ∘ j\_*”.
+**`CategoryTheory.pushforwardIsoCompPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/SliceTopos/IteratedSlice.lean#L72). The attribute's comment: “j\_\{G,*} = j\_\{F,*} ∘ j\_*”.
 
 > The pushforwards of the localizations satisfy `j_{G,*} = j_{F,*} ∘ j_*`.
 >
@@ -330,7 +347,7 @@ noncomputable def pushforwardIsoCompPushforward [HasPullbacks E] [HasBinaryProdu
 
 [Tag 04IS](https://stacks.math.columbia.edu/tag/04IS) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.relocalizeToposInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean#L80). The attribute's comment: “the inverse images of the two relocalizations agree, via 00Y1”.
+**`CategoryTheory.OverShriek.relocalizeToposInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean#L80). The attribute's comment: “the inverse images of the two relocalizations agree, via 00Y1”.
 
 > **Stacks 04IS**, on inverse images.  Under the identification of Stacks 00Y1, used in the
 > forward direction `Φ_U = sheafFunctorToOver J`, the inverse image `j^{-1}` of the relocalization
@@ -350,7 +367,7 @@ def relocalizeToposInverseImageIso :
           (Over.mk ((presheafToSheaf J (Type v)).map (yoneda.map f))).iteratedSliceForward
 ```
 
-**`CategoryTheory.OverShriek.relocalizeToposShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean#L101). The attribute's comment: “the lower shrieks of the two relocalizations agree, via 00Y1”.
+**`CategoryTheory.OverShriek.relocalizeToposShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeTopos.lean#L101). The attribute's comment: “the lower shrieks of the two relocalizations agree, via 00Y1”.
 
 > **Stacks 04IS**, on lower shrieks.  Under the identification of Stacks 00Y1, used in the
 > forward direction `Φ_U = sheafFunctorToOver J`, the lower shriek `j_!` of the relocalization
@@ -377,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.30, Tag 04GY](https://stacks.math.columbia.edu/tag/04GY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.19 Coskeleton functors
 
-Section 14.19 of the Stacks Project, [Tag 0AMA](https://stacks.math.columbia.edu/tag/0AMA). 16 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.19 of the Stacks Project, [Tag 0AMA](https://stacks.math.columbia.edu/tag/0AMA). 16 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AMA, the section
 
 [Tag 0AMA](https://stacks.math.columbia.edu/tag/0AMA) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.exists_rightAdjoint_truncation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L82). The attribute's comment: “the section's assertion that `cosk_m` exists for every `m` over a category with finite limits, which is Lemma 0183 inside the section; the degreewise limit formula is `coskConeIsLimit` below”. References: SGA 4 V (7.1.0), “partial”; SGA 4 Vbis (3.0.1).
+**`CategoryTheory.SimplicialObject.Truncated.exists_rightAdjoint_truncation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L82). The attribute's comment: “the section's assertion that `cosk_m` exists for every `m` over a category with finite limits, which is Lemma 0183 inside the section; the degreewise limit formula is `coskConeIsLimit` below”. References: SGA 4 V (7.1.0), “partial”; SGA 4 Vbis (3.0.1).
 
 > **Stacks 0AMA**.
 > If `C` has finite limits then for every `m` the skeleton functor `sk_m : Simp(C) ⥤ Simp_m(C)` has
@@ -27,7 +27,7 @@ theorem exists_rightAdjoint_truncation [HasFiniteLimits C] (m : ℕ) :
       Nonempty (SimplicialObject.truncation (C := C) m ⊣ G)
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.existsUnique_iso_rightAdjoint_truncation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L103). The attribute's comment: “the section's uniqueness assertion, that a representing object `cosk_m V` is unique up to unique isomorphism by the Yoneda lemma; `compatible with the counits` is the form the uniqueness takes for the adjunctions themselves”.
+**`CategoryTheory.SimplicialObject.Truncated.existsUnique_iso_rightAdjoint_truncation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L103). The attribute's comment: “the section's uniqueness assertion, that a representing object `cosk_m V` is unique up to unique isomorphism by the Yoneda lemma; `compatible with the counits` is the form the uniqueness takes for the adjunctions themselves”.
 
 > **Stacks 0AMA**.
 > A right adjoint of `sk_m` is unique up to unique isomorphism: if `G` and `G'` are both right
@@ -42,7 +42,7 @@ theorem existsUnique_iso_rightAdjoint_truncation {m : ℕ}
       Functor.whiskerRight e.hom (SimplicialObject.truncation m) ≫ adj'.counit = adj.counit
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.coskConeIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L161). The attribute's comment: “the degreewise limit formula”. References: SGA 4 Vbis (3.0.1), “partial”.
+**`CategoryTheory.SimplicialObject.Truncated.coskConeIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L161). The attribute's comment: “the degreewise limit formula”. References: SGA 4 Vbis (3.0.1), “partial”.
 
 > **Stacks 0AMA**.
 > The degreewise limit formula for the coskeleton: for an `m`-truncated simplicial object `U` of a
@@ -54,7 +54,7 @@ noncomputable def coskConeIsLimit (m : ℕ) (U : SimplicialObject.Truncated C m)
     IsLimit (coskCone m U n)
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.map_eq_coskConeIsLimit_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L188). The attribute's comment: “the second clause of the degreewise limit formula, that for `φ : [n] → [n']` the map `cosk_m U(φ)` comes from the identification of `U(n')` restricted along `φ` with `U(n)`”.
+**`CategoryTheory.SimplicialObject.Truncated.map_eq_coskConeIsLimit_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L188). The attribute's comment: “the second clause of the degreewise limit formula, that for `φ : [n] → [n']` the map `cosk_m U(φ)` comes from the identification of `U(n')` restricted along `φ` with `U(n)`”.
 
 > **Stacks 0AMA**.
 > The naturality half of the degreewise limit formula: `cosk_m U(φ)` is the morphism of limits
@@ -73,7 +73,7 @@ theorem map_eq_coskConeIsLimit_lift {m : ℕ} (U : SimplicialObject.Truncated C 
 
 [Tag 0181](https://stacks.math.columbia.edu/tag/0181) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.coskAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L93). The attribute's comment: “the displayed bijection, for `cosk_m` itself”. References: SGA 4 V (7.1.0), “adjunction i\_n* ⊣ i\_\{n*}”; SGA 4 Vbis (3.0.1).
+**`CategoryTheory.SimplicialObject.Truncated.coskAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L93). The attribute's comment: “the displayed bijection, for `cosk_m` itself”. References: SGA 4 V (7.1.0), “adjunction i\_n* ⊣ i\_\{n*}”; SGA 4 Vbis (3.0.1).
 
 > **The bijection `Mor(U, cosk_m V) = Mor(sk_m U, V)`** of [Stacks, Equation 0181], over a
 > category with finite limits: the coskeleton functor is right adjoint to the skeleton functor, an
@@ -88,7 +88,7 @@ noncomputable def coskAdjunction [HasFiniteLimits C] (m : ℕ) :
 
 [Tag 0182](https://stacks.math.columbia.edu/tag/0182) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.bijective_app_zero_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L166). The attribute's comment: “the self-product simplicial object is stated abstractly, by product cones on the terms of an arbitrary `U`, rather than by choosing a model of `X ^ (n + 1)`; the hom-set formula is reduced, as in the source, to `Mor(V, U) = Mor(V₀, X)`”.
+**`CategoryTheory.SimplicialObject.bijective_app_zero_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L170). The attribute's comment: “the self-product simplicial object is stated abstractly, by product cones on the terms of an arbitrary `U`, rather than by choosing a model of `X ^ (n + 1)`; the hom-set formula is reduced, as in the source, to `Mor(V, U) = Mor(V₀, X)`”.
 
 > **Stacks 0182**.
 > The `0`-coskeleton of an object `X` is the simplicial object `n ↦ X^{n + 1}`. Let `U` be a
@@ -113,7 +113,7 @@ public theorem bijective_app_zero_comp_π {X : C} {U : SimplicialObject C}
 
 [Tag 0183](https://stacks.math.columbia.edu/tag/0183) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 788](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L788). The attribute's comment: “existence and the displayed limit formula; the formula is the defining universal property of `HasPointwiseRightKanExtension` at each simplex”. References: SGA 4 Vbis (3.0.1).
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 788](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L788). The attribute's comment: “existence and the displayed limit formula; the formula is the defining universal property of `HasPointwiseRightKanExtension` at each simplex”. References: SGA 4 Vbis (3.0.1).
 
 > If `C` has finite limits, every truncated simplicial object has the pointwise right Kan
 > extension along `( Δ_{≤ k} ⊆ Δ )ᵒᵖ` which defines its `k`-coskeleton. Pointwiseness says that its
@@ -130,7 +130,7 @@ public theorem hasPointwiseRightKanExtension_of_hasFiniteLimits [HasFiniteLimits
 
 [Tag 0184](https://stacks.math.columbia.edu/tag/0184) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.sliceCone_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L890).
+**`CategoryTheory.SimplicialObject.Truncated.sliceCone_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L1000).
 
 > **Stacks 0184**.
 > Let `C` be a category and let `U` be an `m`-truncated simplicial object of `C`. For `n ≤ m` the
@@ -147,7 +147,7 @@ theorem sliceCone_isLimit {m : ℕ} (U : SimplicialObject.Truncated C m) {n : �
 
 [Tag 0185](https://stacks.math.columbia.edu/tag/0185) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.isIso_ranAdjunction_counit_app_of_hasFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 805](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L805). The attribute's comment: “`sk_n` is the truncation `truncation n` and the morphism is the counit at `U` of `ranAdjunction`, truncation ⊣ `cosk_n`, whose right Kan extensions exist by Lemma 0183”.
+**`CategoryTheory.SimplicialObject.Truncated.isIso_ranAdjunction_counit_app_of_hasFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 805](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L805). The attribute's comment: “`sk_n` is the truncation `truncation n` and the morphism is the counit at `U` of `ranAdjunction`, truncation ⊣ `cosk_n`, whose right Kan extensions exist by Lemma 0183”.
 
 > Let `C` be a category with finite limits and let `U` be an `n`-truncated simplicial object
 > of `C`. Then the morphism `sk_n cosk_n U → U` is an isomorphism. Here `sk_n` is the truncation
@@ -167,7 +167,7 @@ public theorem isIso_ranAdjunction_counit_app_of_hasFiniteLimits [HasFiniteLimit
 
 [Tag 0186](https://stacks.math.columbia.edu/tag/0186) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.existsUnique_cone_app_δ_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L369). The attribute's comment: “the representing object of the functor of matching families is the limit over the truncated slice category, via restriction of a cone to its legs at the faces”.
+**`CategoryTheory.SimplicialObject.Truncated.existsUnique_cone_app_δ_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L373). The attribute's comment: “the representing object of the functor of matching families is the limit over the truncated slice category, via restriction of a cone to its legs at the faces”.
 
 > **Stacks 0186**.
 > A matching family of morphisms into the top term of a truncated simplicial object is the same thing
@@ -199,7 +199,7 @@ public theorem existsUnique_cone_app_δ_eq_iff (U : SimplicialObject.Truncated C
 
 [Tag 0187](https://stacks.math.columbia.edu/tag/0187) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.exists_isRightKanExtension_of_matchingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L505). The attribute's comment: “the adjointness is stated as the universal property of a right Kan extension along the inclusion of the truncated simplex categories”.
+**`CategoryTheory.SimplicialObject.Truncated.exists_isRightKanExtension_of_matchingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L509). The attribute's comment: “the adjointness is stated as the universal property of a right Kan extension along the inclusion of the truncated simplex categories”.
 
 > **Stacks 0187**.
 > One-step extension of a truncated simplicial object, and its adjointness. Let `U` be an
@@ -237,7 +237,7 @@ public theorem exists_isRightKanExtension_of_matchingFamily {n : ℕ}
 
 [Tag 0188](https://stacks.math.columbia.edu/tag/0188) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.eq_σ_comp_iff_of_matchingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L252). The attribute's comment: “the description of the faces is the identification `he` of Lemma 0187; the description of the degeneracies is stated as a characterisation of them by their components, which the representability of the functor of matching families makes possible”.
+**`CategoryTheory.SimplicialObject.Truncated.eq_σ_comp_iff_of_matchingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L252). The attribute's comment: “the description of the faces is the identification `he` of Lemma 0187; the description of the degeneracies is stated as a characterisation of them by their components, which the representability of the functor of matching families makes possible”.
 
 > Let `U` be an `(n + 1)`-truncated simplicial object of `C` whose functor of matching families in
 > degree `n + 2` is represented by `Y` with universal matching family `f` ([Stacks, Tag 0187]), let
@@ -283,7 +283,7 @@ public theorem eq_σ_comp_iff_of_matchingFamily {n : ℕ}
 
 [Tag 018A](https://stacks.math.columbia.edu/tag/018A) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_incl_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L488). The attribute's comment: “the source's three displayed assertions, with each `Mor` formula stated as the universal property of the right Kan extension it is; the hypothesis is the one-degree step of Lemma 0187 rather than finite limits in the ambient category”.
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_incl_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L488). The attribute's comment: “the source's three displayed assertions, with each `Mor` formula stated as the universal property of the right Kan extension it is; the hypothesis is the one-degree step of Lemma 0187 rather than finite limits in the ambient category”.
 
 > Let `C` be a category, let `m : ℕ` and let `F` be an `m`-truncated simplicial object of `C`.
 > Assume that every `k`-truncated simplicial object of `C`, for `k ≥ m`, can be extended by one
@@ -318,7 +318,7 @@ public theorem hasPointwiseRightKanExtension_of_incl_succ {m : ℕ}
 
 [Tag 018B](https://stacks.math.columbia.edu/tag/018B) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.nonempty_truncCoskAdj_and_isIso_coskAdj_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L687). The attribute's comment: “parts (2), (3) and (4); part (1) is the hypothesis that the coskeleta exist, i.e. Tag 0183 for a category with finite limits”. References: SGA 4 V (7.1.2), “1) cosk composition”.
+**`CategoryTheory.SimplicialObject.nonempty_truncCoskAdj_and_isIso_coskAdj_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L727). The attribute's comment: “parts (2), (3) and (4); part (1) is the hypothesis that the coskeleta exist, i.e. Tag 0183 for a category with finite limits”. References: SGA 4 V (7.1.2), “1) cosk composition”.
 
 > **Stacks 018B** (parts 2, 3 and 4).
 > Coskeleta of different levels. Let `C` be a category, let `n ≤ m` and assume the `n`-th and `m`-th
@@ -348,7 +348,7 @@ public theorem nonempty_truncCoskAdj_and_isIso_coskAdj_unit_app {n m : ℕ} (h :
 
 [Tag 09VS](https://stacks.math.columbia.edu/tag/09VS) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasBinaryProducts_or_hasFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L769). The attribute's comment: “the two items of the remark, as the two conjuncts; "cosk\_k exists" is spelled as the existence of the pointwise right Kan extensions along `(Δ_{≤k} ⊆ Δ)ᵒᵖ` that define `Truncated.cosk k`, and each hypothesis is an antecedent of its own item so that item (1) stays a claim about categories with products of pairs alone”. References: SGA 4 Vbis (3.0.1), “more general”.
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasBinaryProducts_or_hasFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L769). The attribute's comment: “the two items of the remark, as the two conjuncts; "cosk\_k exists" is spelled as the existence of the pointwise right Kan extensions along `(Δ_{≤k} ⊆ Δ)ᵒᵖ` that define `Truncated.cosk k`, and each hypothesis is an antecedent of its own item so that item (1) stays a claim about categories with products of pairs alone”. References: SGA 4 Vbis (3.0.1), “more general”.
 
 > Let `C` be a category.
 >
@@ -372,49 +372,55 @@ public theorem hasPointwiseRightKanExtension_of_hasBinaryProducts_or_hasFiniteCo
 
 [Tag 018C](https://stacks.math.columbia.edu/tag/018C) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.coskProdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 977](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L977).
+**`CategoryTheory.SimplicialObject.Truncated.rightKanExtensionProdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L1165). The attribute's comment: “the coskeleton of a single truncated simplicial object is its right Kan extension along the inclusion of truncated simplex categories; the equality is the canonical isomorphism, whose underlying morphism is the comparison morphism”.
 
 > **Stacks 018C**.
-> The canonical isomorphism `cosk_n (U ⨯ V) ≅ cosk_n U ⨯ cosk_n V` in `Simp(C)`, for `U`, `V`
-> `n`-truncated simplicial objects of `C`, coming from the preservation of the binary product of
-> `U` and `V` by the coskeleton functor.
+> For `n`-truncated simplicial objects `U`, `V` of `C`, the canonical isomorphism
+> `cosk_n (U ⨯ V) ≅ cosk_n U ⨯ cosk_n V`, whenever the coskeleta `cosk_n U`, `cosk_n V`,
+> `cosk_n (U ⨯ V)` (right Kan extensions along `(Δ_{≤ n})ᵒᵖ ⥤ Δᵒᵖ`) and the products `U ⨯ V`,
+> `cosk_n U ⨯ cosk_n V` exist. Its underlying morphism is the canonical comparison morphism
+> (`rightKanExtensionProdIso_hom`).
 
 ```lean
-noncomputable def coskProdIso (n : ℕ)
-    [∀ (F : (SimplexCategory.Truncated n)ᵒᵖ ⥤ C),
-      (SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension F]
-    (U V : SimplicialObject.Truncated C n)
-    [HasBinaryProduct U V]
-    [HasBinaryProduct ((Truncated.cosk n).obj U) ((Truncated.cosk n).obj V)] :
-    (Truncated.cosk n).obj (U ⨯ V) ≅
-      (Truncated.cosk n).obj U ⨯ (Truncated.cosk n).obj V
+noncomputable def rightKanExtensionProdIso :
+    (SimplexCategory.Truncated.inclusion n).op.rightKanExtension (U ⨯ V) ≅
+      (SimplexCategory.Truncated.inclusion n).op.rightKanExtension U ⨯
+        (SimplexCategory.Truncated.inclusion n).op.rightKanExtension V
 ```
 
 ## Tag 018D, a lemma
 
 [Tag 018D](https://stacks.math.columbia.edu/tag/018D) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.cosk.preservesLimitsOfSize`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L721).
+**`CategoryTheory.SimplicialObject.Truncated.isIso_pullback_lift_coskMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 807](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L807). The attribute's comment: “the equality is the statement that the canonical comparison morphism is an isomorphism; the coskeleta are the right Kan extensions along `(Δ_{≤ n} ⊆ Δ)ᵒᵖ`, assumed to exist for `U`, `V`, `W` and `U ×_V W` only”.
 
 > **Stacks 018D**.
-> The `n`-th coskeleton functor `cosk n : Simp_n(C) ⥤ Simp(C)` preserves all limits, being right
-> adjoint to `truncation n`. In particular, for morphisms `f : U ⟶ V` and `g : W ⟶ V` of
-> `n`-truncated simplicial objects of `C`, `cosk n (U ×_V W) = cosk n U ×_{cosk n V} cosk n W`
-> whenever both sides exist, the canonical comparison `Limits.pullbackComparison (cosk n) f g` being
-> an isomorphism.
+> Let `C` be a category with fibre products, and let `f : U ⟶ V`, `g : W ⟶ V` be morphisms of
+> `n`-truncated simplicial objects of `C`. Whenever the coskeleta `cosk_n U`, `cosk_n V`,
+> `cosk_n W` and `cosk_n (U ×_V W)` exist (as right Kan extensions along `(Δ_{≤ n} ⊆ Δ)ᵒᵖ`, not
+> assuming that the coskeleton functor exists), the canonical comparison morphism
+> `cosk_n (U ×_V W) ⟶ cosk_n U ×_{cosk_n V} cosk_n W`, with components `cosk_n` of the two
+> projections, is an isomorphism. The fibre product on the right exists since `C` has fibre
+> products.
 
 ```lean
-public instance cosk.preservesLimitsOfSize (n : ℕ)
-    [∀ F : (SimplexCategory.Truncated n)ᵒᵖ ⥤ C,
-      (SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension F] :
-    PreservesLimitsOfSize.{w, w'} (Truncated.cosk (C := C) n)
+public theorem isIso_pullback_lift_coskMap [HasPullbacks C] {n : ℕ}
+    {U V W : SimplicialObject.Truncated C n} (f : U ⟶ V) (g : W ⟶ V)
+    [(SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension U]
+    [(SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension V]
+    [(SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension W]
+    [(SimplexCategory.Truncated.inclusion n).op.HasRightKanExtension (pullback f g)] :
+    IsIso (pullback.lift (coskMap (pullback.fst f g)) (coskMap (pullback.snd f g))
+      (by rw [← coskMap_comp, ← coskMap_comp, pullback.condition]) :
+      (SimplexCategory.Truncated.inclusion n).op.rightKanExtension (pullback f g) ⟶
+        pullback (coskMap f) (coskMap g))
 ```
 
 ## Tag 08NJ, a lemma
 
 [Tag 08NJ](https://stacks.math.columbia.edu/tag/08NJ) in the Stacks Project.
 
-**`CategoryTheory.Over.preservesPointwiseRightKanExtensions_forget_inclusion_succ_op`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L767). The attribute's comment: “stated as preservation of the pointwise right Kan extensions along `(Δ_{≤m} ⊆ Δ)ᵒᵖ`, which is what "cosk\_m computed in C/X is computed in C" says with the comparison map pinned; the source's finite limits in `C` are not needed”.
+**`CategoryTheory.Over.preservesPointwiseRightKanExtensions_forget_inclusion_succ_op`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 877](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L877). The attribute's comment: “stated as preservation of the pointwise right Kan extensions along `(Δ_{≤m} ⊆ Δ)ᵒᵖ`, which is what "cosk\_m computed in C/X is computed in C" says with the comparison map pinned; the source's finite limits in `C` are not needed”.
 
 > **Stacks 08NJ**.
 > For a category `C` and an object `X : C`, the forgetful functor `Over.forget X : C/X ⥤ C` commutes
@@ -433,7 +439,7 @@ public instance preservesPointwiseRightKanExtensions_forget_inclusion_succ_op (X
 
 [Tag 018E](https://stacks.math.columbia.edu/tag/018E) in the Stacks Project.
 
-**`SSet.canonicalMap_stdSimplex_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/Coskeletal.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/Coskeletal.lean#L245).
+**`SSet.canonicalMap_stdSimplex_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/Coskeletal.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/Coskeletal.lean#L245).
 
 > **Stacks 018E**.
 > For every `n`, the canonical map `c_{Δ[n]} : Δ[n] ⟶ cosk_1 sk_1 Δ[n]`, the unit of the adjunction
@@ -451,4 +457,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.19, Tag 0AMA](https://stacks.math.columbia.edu/tag/0AMA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

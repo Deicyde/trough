@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.7 Fibre products of rings, III
 
-Section 15.7 of the Stacks Project, [Tag 0D2K](https://stacks.math.columbia.edu/tag/0D2K). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.7 of the Stacks Project, [Tag 0D2K](https://stacks.math.columbia.edu/tag/0D2K). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08KK, a situation
 
 [Tag 08KK](https://stacks.math.columbia.edu/tag/08KK) in the Stacks Project.
 
-**`MilnorPatching.RelativeModuleFibreProductSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L355).
+**`MilnorPatching.RelativeModuleFibreProductSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L354).
 
 > **Stacks Project, Tag 08KK.** The relative fibre-product situation consists of a
 > fibre-product square `B' = B ×_A A'` as in Tag 08KH and an additional ring map
@@ -29,7 +29,7 @@ public structure RelativeModuleFibreProductSituation
 
 [Tag 08KL](https://stacks.math.columbia.edu/tag/08KL) in the Stacks Project.
 
-**`MilnorPatching.extensionOfScalarsToTensorProductPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L82).
+**`MilnorPatching.extensionOfScalarsToTensorProductPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L82).
 
 > **Stacks Project, Tag 08KL.** After base change along a `B'`-algebra `D'`, extension
 > of scalars gives the functor
@@ -58,7 +58,7 @@ noncomputable def extensionOfScalarsToTensorProductPullback
 
 [Tag 08KM](https://stacks.math.columbia.edu/tag/08KM) in the Stacks Project.
 
-**`MilnorPatching.relativeCompatiblePairsRightAdjoint_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 1062](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L1062).
+**`MilnorPatching.relativeCompatiblePairsRightAdjoint_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 1070](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L1070).
 
 > **Stacks Project, Tag 08KM.** In the relative fibre-product situation, extension of
 > scalars from `D'` to compatible `D`- and `C'`-modules has a right adjoint.  Its value on
@@ -95,7 +95,7 @@ public theorem relativeCompatiblePairsRightAdjoint_counit_isIso
 
 [Tag 08KN](https://stacks.math.columbia.edu/tag/08KN) in the Stacks Project.
 
-**`MilnorPatching.image_extendedKernel_eq_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 919](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L919).
+**`MilnorPatching.image_extendedKernel_eq_extendedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Relative.lean, line 928](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Relative.lean#L928).
 
 > **Stacks Project, Tag 08KN.** If `J` is the kernel of `B' → B`, then the
 > canonical map from `J D'` to `I C'` is surjective.
@@ -112,7 +112,7 @@ public theorem image_extendedKernel_eq_extendedIdeal
 
 [Tag 08IH](https://stacks.math.columbia.edu/tag/08IH) in the Stacks Project.
 
-**`MilnorPatching.finite_relativeRightAdjoint_obj_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L369).
+**`MilnorPatching.finite_relativeRightAdjoint_obj_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L369).
 
 > **Stacks Project, Tag 08IH.** In a relative module fibre-product situation, the
 > compatible-pairs module associated to a finite `D`-module and a finite `C'`-module is
@@ -144,7 +144,7 @@ public theorem finite_relativeRightAdjoint_obj_of_finite_components
 
 [Tag 07RW](https://stacks.math.columbia.edu/tag/07RW) in the Stacks Project.
 
-**`MilnorPatching.relativelyFlatModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L134).
+**`MilnorPatching.relativelyFlatModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L134).
 
 > **Stacks Project, Tag 07RW.** In a relative fibre-product situation, compatible pairs
 > whose components are flat over the original rings glue to a module flat over the original
@@ -203,7 +203,7 @@ public theorem relativelyFlatModulesEquivalenceOverFibreProduct
 
 [Tag 08KP](https://stacks.math.columbia.edu/tag/08KP) in the Stacks Project.
 
-**`MilnorPatching.finitePresentation_rightAdjoint_obj_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 1310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L1310).
+**`MilnorPatching.finitePresentation_rightAdjoint_obj_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean, line 1300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/RelativeProperties.lean#L1300).
 
 > **Stacks Project, Tag 08KP.** In a relative module fibre-product situation, the
 > compatible-pairs module is finitely presented over `D'` if its `D`-component and
@@ -244,7 +244,7 @@ public theorem finitePresentation_rightAdjoint_obj_of_factorization
 
 [Tag 08KQ](https://stacks.math.columbia.edu/tag/08KQ) in the Stacks Project.
 
-**`MilnorPatching.ringHom_properties_pullback_iff_and_flatAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Algebras.lean, line 1456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Algebras.lean#L1456).
+**`MilnorPatching.ringHom_properties_pullback_iff_and_flatAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Algebras.lean, line 1452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Algebras.lean#L1452).
 
 > **Stacks Project, Tag 08KQ.** Properties of an algebra obtained by gluing algebras over a
 > fibre product are detected on its two base changes. Every flat algebra over the fibre product
@@ -300,7 +300,7 @@ public theorem ringHom_properties_pullback_iff_and_flatAlgebra_equivalence
 
 [Tag 08KR](https://stacks.math.columbia.edu/tag/08KR) in the Stacks Project.
 
-**`MilnorPatching.relativeFlatFinitelyPresentedQuotientsEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Quotients.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Quotients.lean#L332).
+**`MilnorPatching.relativeFlatFinitelyPresentedQuotientsEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Quotients.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Quotients.lean#L332).
 
 > **Stacks Project, Tag 08KR.** If `B' → D'` is of finite presentation, the
 > finitely presented quotients of a `D'`-module which are flat over `B'` correspond to
@@ -350,4 +350,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.7, Tag 0D2K](https://stacks.math.columbia.edu/tag/0D2K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

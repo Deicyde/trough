@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.6 Formally smooth on objects
 
-Section 97.6 of the Stacks Project, [Tag 06CZ](https://stacks.math.columbia.edu/tag/06CZ). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.6 of the Stacks Project, [Tag 06CZ](https://stacks.math.columbia.edu/tag/06CZ). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06D0, an equation
 
 [Tag 06D0](https://stacks.math.columbia.edu/tag/06D0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsFormallySmoothOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean#L53).
+**`AlgebraicGeometry.Stack.IsFormallySmoothOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean#L53).
 
 > The first-order lifting condition for a 1-morphism of categories fibred in groupoids, with
 > the comparison square required to commute: the restriction along a first-order thickening of
@@ -31,7 +31,7 @@ def IsFormallySmoothOnObjects
 
 [Tag 06D1](https://stacks.math.columbia.edu/tag/06D1) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L199).
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L199).
 
 > **Stacks 06D1.** Formal smoothness on objects is stable under base change.
 
@@ -51,7 +51,7 @@ theorem isFormallySmoothOnObjects_baseChange
 
 [Tag 06D2](https://stacks.math.columbia.edu/tag/06D2) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L413).
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L413).
 
 > **Stacks 06D2.** A composite of morphisms formally smooth on objects is formally smooth on
 > objects.
@@ -70,7 +70,7 @@ theorem isFormallySmoothOnObjects_comp
 
 [Tag 06D3](https://stacks.math.columbia.edu/tag/06D3) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isRelativelyFormallySmooth_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L727). The attribute's comment: “formally smooth on objects implies formally smooth”.
+**`AlgebraicGeometry.BigFppfOver.isRelativelyFormallySmooth_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L727). The attribute's comment: “formally smooth on objects implies formally smooth”.
 
 > **Stacks 06D3**, that (1) implies (2): a 1-morphism of categories fibred in groupoids over
 > the big fppf site of `S` which is formally smooth on objects is formally smooth, that is, every
@@ -90,7 +90,7 @@ theorem isRelativelyFormallySmooth_of_isFormallySmoothOnObjects
     IsRelativelyFormallySmooth B S hS p
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_of_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 1367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L1367). The attribute's comment: “formally smooth implies formally smooth on objects”.
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_of_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 1367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L1367). The attribute's comment: “formally smooth implies formally smooth on objects”.
 
 > **Stacks 06D3**, that (2) implies (1): a 1-morphism of categories fibred in groupoids over
 > the big fppf site of `S` which is representable by algebraic spaces and formally smooth is
@@ -110,7 +110,7 @@ theorem isFormallySmoothOnObjects_of_isRelativelyFormallySmooth
     Stack.IsFormallySmoothOnObjects B S hS 𝒳 𝒴 p
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_iff_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L1383). The attribute's comment: “the equivalence”.
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_iff_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L1383). The attribute's comment: “the equivalence”.
 
 > **Stacks 06D3.** For a 1-morphism of categories fibred in groupoids over the big fppf site
 > of `S` which is representable by algebraic spaces, being formally smooth on objects and being
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.6, Tag 06CZ](https://stacks.math.columbia.edu/tag/06CZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

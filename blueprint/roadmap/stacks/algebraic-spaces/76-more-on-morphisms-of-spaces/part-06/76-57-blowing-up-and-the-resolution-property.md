@@ -8,7 +8,7 @@ proof: formalized
 
 # 76.57 Blowing up and the resolution property
 
-Section 76.57 of the Stacks Project, [Tag 0GV4](https://stacks.math.columbia.edu/tag/0GV4). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.57 of the Stacks Project, [Tag 0GV4](https://stacks.math.columbia.edu/tag/0GV4). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GV5, a lemma
 
@@ -16,13 +16,13 @@ Section 76.57 of the Stacks Project, [Tag 0GV4](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_isQuasiCompact_dense_isAdmissibleBlowup_hasResolutionProperty`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean#L624), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAfterAdmissibleBlowup.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAfterAdmissibleBlowup.lean#L24) (StacksFrontier).
+- [`AlgebraicGeometry.Space.exists_isQuasiCompact_dense_isAdmissibleBlowup_hasResolutionProperty`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean#L624), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAfterAdmissibleBlowup.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAfterAdmissibleBlowup.lean#L24) (StacksFrontier).
 
 ## Tag 0GV6, a lemma
 
 [Tag 0GV6](https://stacks.math.columbia.edu/tag/0GV6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_closedFiltration_admissibleBlowups_resolutionProperty_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean, line 679](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean#L679).
+**`AlgebraicGeometry.Space.exists_closedFiltration_admissibleBlowups_resolutionProperty_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDenseBlowupUnconditional.lean#L679).
 
 > **Stacks 0GV6 for an algebraic space over an arbitrary base scheme, with no hypothesis
 > beyond the tag's own.**  For a quasi-compact, quasi-separated algebraic space `X` over a scheme
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.57, Tag 0GV4](https://stacks.math.columbia.edu/tag/0GV4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

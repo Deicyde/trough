@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.124 Applications of Zariski's Main Theorem
 
-Section 10.124 of the Stacks Project, [Tag 03GB](https://stacks.math.columbia.edu/tag/03GB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.124 of the Stacks Project, [Tag 03GB](https://stacks.math.columbia.edu/tag/03GB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02MM, a lemma
 
 [Tag 02MM](https://stacks.math.columbia.edu/tag/02MM) in the Stacks Project.
 
-**`Ring.finite_maximalSpectrum_and_sum_inertiaDeg_mul_ord_le_and_eq_iff_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/OrderOfVanishing/Degree.lean, line 927](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/OrderOfVanishing/Degree.lean#L927). The attribute's comment: “`ord` is `Ring.ord`, valued in `ℕ∞`, applied to the image of `x : A`; the residue degrees are `Ideal.inertiaDeg`; semi-locality is `Finite (MaximalSpectrum B)`; the sum is a `finsum`. See the module docstring.”.
+**`Ring.finite_maximalSpectrum_and_sum_inertiaDeg_mul_ord_le_and_eq_iff_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/OrderOfVanishing/Degree.lean, line 934](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/OrderOfVanishing/Degree.lean#L934). The attribute's comment: “`ord` is `Ring.ord`, valued in `ℕ∞`, applied to the image of `x : A`; the residue degrees are `Ideal.inertiaDeg`; semi-locality is `Finite (MaximalSpectrum B)`; the sum is a `finsum`. See the module docstring.”.
 
 > **The degree inequality for orders of vanishing.** Let `A ⊆ B` be an extension of domains
 > with `A` local Noetherian of dimension at most `1`, `B` of finite type over `A`, and the induced
@@ -46,7 +46,7 @@ public theorem Ring.finite_maximalSpectrum_and_sum_inertiaDeg_mul_ord_le_and_eq_
 
 [Tag 052V](https://stacks.math.columbia.edu/tag/052V) in the Stacks Project.
 
-**`Stacks.LocalizationOfFiniteAlgebra.essFiniteType_localization_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/ZariskiApplication.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/EssentialFiniteness/ZariskiApplication.lean#L305).
+**`Stacks.LocalizationOfFiniteAlgebra.essFiniteType_localization_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/ZariskiApplication.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/EssentialFiniteness/ZariskiApplication.lean#L305).
 
 > Let `f : (R, m_R) → (S, m_S)` be a local homomorphism of local rings. Assume `f` is
 > essentially of finite type, the residue field extension `κ(m_R) ⊆ κ(m_S)` is finite, and the
@@ -71,7 +71,7 @@ theorem essFiniteType_localization_finite {R S : Type u} [CommRing R] [CommRing 
 
 [Tag 07NC](https://stacks.math.columbia.edu/tag/07NC) in the Stacks Project.
 
-**`AdicCompletion.exists_isIdempotentElem_nonempty_algEquiv_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/QuasiFinite.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/QuasiFinite.lean#L450). The attribute's comment: “The source's `B` is named here as the explicit factor `(S ⊗[R] Rₚ^∧) ⧸ (e)` of an idempotent `e`, which is what makes it an `Rₚ^∧`-algebra. See the module docstring.”.
+**`AdicCompletion.exists_isIdempotentElem_nonempty_algEquiv_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/QuasiFinite.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/QuasiFinite.lean#L448). The attribute's comment: “The source's `B` is named here as the explicit factor `(S ⊗[R] Rₚ^∧) ⧸ (e)` of an idempotent `e`, which is what makes it an `Rₚ^∧`-algebra. See the module docstring.”.
 
 > Let `R` be a Noetherian ring, let `S` be an `R`-algebra of finite type, and
 > let `q` be a prime of `S` lying over `p ⊂ R` at which `R → S` is quasi-finite. Let `Rₚ` and `S_q`
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.124, Tag 03GB](https://stacks.math.columbia.edu/tag/03GB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

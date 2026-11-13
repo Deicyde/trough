@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.8 Cohen-Macaulay schemes
 
-Section 28.8 of the Stacks Project, [Tag 02IN](https://stacks.math.columbia.edu/tag/02IN). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 28.8 of the Stacks Project, [Tag 02IN](https://stacks.math.columbia.edu/tag/02IN). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02IO, a definition
 
 [Tag 02IO](https://stacks.math.columbia.edu/tag/02IO) in the Stacks Project.
 
-**`AlgebraicGeometry.IsCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulay.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulay.lean#L47). References: EGA IV (5.7.1).
+**`AlgebraicGeometry.IsCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulay.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulay.lean#L47). References: EGA IV (5.7.1).
 
 > **Cohen–Macaulay scheme.** A scheme `X` is Cohen–Macaulay if every point belongs to an
 > affine open `U` whose ring of sections `Γ(X, U)` is Noetherian and Cohen–Macaulay.
@@ -27,7 +27,7 @@ public def IsCohenMacaulay (X : Scheme.{u}) : Prop
 
 [Tag 02IP](https://stacks.math.columbia.edu/tag/02IP) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulay_tfae_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L185). References: EGA IV (5.7.1).
+**`AlgebraicGeometry.isCohenMacaulay_tfae_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L185). References: EGA IV (5.7.1).
 
 > A scheme is Cohen–Macaulay if and only if it is locally Noetherian with Cohen–Macaulay
 > local rings at every point, if and only if it is locally Noetherian with Cohen–Macaulay local
@@ -50,7 +50,7 @@ theorem isCohenMacaulay_tfae_stalk (X : Scheme.{u}) :
 
 [Tag 02IQ](https://stacks.math.columbia.edu/tag/02IQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulay_tfae_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L413). The attribute's comment: “equivalent conditions”. References: EGA IV (5.7.1), “more general”.
+**`AlgebraicGeometry.isCohenMacaulay_tfae_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L413). The attribute's comment: “equivalent conditions”. References: EGA IV (5.7.1), “more general”.
 
 > Cohen–Macaulayness of a scheme is equivalent to the Noetherian Cohen–Macaulay condition on
 > every affine coordinate ring, to that condition on one affine open covering, and to having an
@@ -70,7 +70,7 @@ theorem isCohenMacaulay_tfae_cover (X : Scheme.{u}) :
         (⨆ i, U i) = ⊤ ∧ ∀ i, IsCohenMacaulay (U i).toScheme]
 ```
 
-**`AlgebraicGeometry.IsCohenMacaulay.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L436). The attribute's comment: “open subschemes”.
+**`AlgebraicGeometry.IsCohenMacaulay.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/CohenMacaulayCharacterization.lean#L436). The attribute's comment: “open subschemes”.
 
 > Every open subscheme of a Cohen–Macaulay scheme is Cohen–Macaulay.
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.8, Tag 02IN](https://stacks.math.columbia.edu/tag/02IN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

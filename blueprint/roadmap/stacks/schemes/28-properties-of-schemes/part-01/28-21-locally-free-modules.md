@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.21 Locally free modules
 
-Section 28.21 of the Stacks Project, [Tag 05P1](https://stacks.math.columbia.edu/tag/05P1). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 28.21 of the Stacks Project, [Tag 05P1](https://stacks.math.columbia.edu/tag/05P1). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05JM, a lemma
 
 [Tag 05JM](https://stacks.math.columbia.edu/tag/05JM) in the Stacks Project.
 
-**`Stacks.Modules.tilde_isLocallyFree_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L243). The attribute's comment: “locally free”.
+**`Stacks.Modules.tilde_isLocallyFree_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L243). The attribute's comment: “locally free”.
 
 > The sheaf `M̃` associated to an `R`-module `M` is a locally free `𝒪_X`-module on
 > `X = Spec R`, in the sense of Stacks Tag 01C6, if and only if `M` is a locally free
@@ -26,7 +26,7 @@ theorem tilde_isLocallyFree_iff_module :
         (tilde (R := CommRingCat.of R) (ModuleCat.of R M)) ↔ Module.IsLocallyFree R M
 ```
 
-**`Stacks.Modules.tilde_isFiniteLocallyFree_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L252). The attribute's comment: “finite locally free”.
+**`Stacks.Modules.tilde_isFiniteLocallyFree_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L252). The attribute's comment: “finite locally free”.
 
 > The sheaf `M̃` associated to an `R`-module `M` is a finite locally free `𝒪_X`-module on
 > `X = Spec R`, in the sense of Stacks Tag 01C6, if and only if `M` is a finite locally free
@@ -38,7 +38,7 @@ theorem tilde_isFiniteLocallyFree_iff_module :
         (tilde (R := CommRingCat.of R) (ModuleCat.of R M)) ↔ Module.IsFiniteLocallyFree R M
 ```
 
-**`Stacks.Modules.tilde_isFiniteLocallyFreeOfRank_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L262). The attribute's comment: “finite locally free of rank r”.
+**`Stacks.Modules.tilde_isFiniteLocallyFreeOfRank_iff_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LocallyFreeSite.lean#L262). The attribute's comment: “finite locally free of rank r”.
 
 > The sheaf `M̃` associated to an `R`-module `M` is a finite locally free `𝒪_X`-module of rank
 > `r` on `X = Spec R`, in the sense of Stacks Tag 01C6, if and only if `M` is a finite locally free
@@ -51,7 +51,7 @@ theorem tilde_isFiniteLocallyFreeOfRank_iff_module (r : ℕ) :
       Module.IsFiniteLocallyFreeOfRank R M r
 ```
 
-**`tilde_isLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean, line 1645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L1645).
+**`tilde_isLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean, line 1645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L1645).
 
 > **Statement 1 (locally free case).** `M~` is a locally free `O_X`-module if
 > and only if `M` is a locally free `R`-module.
@@ -73,7 +73,7 @@ theorem tilde_isLocallyFree_iff (R : Type u) [CommRing R] (M : Type u)
       Module.IsLocallyFree R M
 ```
 
-**`tilde_isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean, line 1671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L1671). References: EGA III (7.9.1), “M proj f.t. <=> M~ l.f.”.
+**`tilde_isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean, line 1671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L1671). References: EGA III (7.9.1), “M proj f.t. <=> M~ l.f.”.
 
 > **Statement 2 (finite locally free case).** `M~` is a finite locally free
 > `O_X`-module if and only if `M` is a finite locally free `R`-module.
@@ -93,7 +93,7 @@ theorem tilde_isFiniteLocallyFree_iff (R : Type u) [CommRing R] (M : Type u)
 
 [Tag 05P2](https://stacks.math.columbia.edu/tag/05P2) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.flat_finitePresentation_locallyFree_fiberRank_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/LocallyFree.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiberRank/LocallyFree.lean#L303). References: EGA III (7.3.4); EGA 0 (5.4.1), “partial, special case”; EGA IV (19.7.4), “more general”; EGA IV (2.1.12), “special case”.
+**`AlgebraicGeometry.Scheme.Modules.flat_finitePresentation_locallyFree_fiberRank_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiberRank/LocallyFree.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiberRank/LocallyFree.lean#L303). References: EGA III (7.3.4); EGA 0 (5.4.1), “partial, special case”; EGA IV (19.7.4), “more general”; EGA IV (2.1.12), “special case”.
 
 > For a sheaf of modules `F` on a scheme `X` the following are equivalent: `F` is flat and of
 > finite presentation; `F` is of finite presentation and all its stalks are free; `F` is locally
@@ -127,7 +127,7 @@ theorem flat_finitePresentation_locallyFree_fiberRank_tfae {X : Scheme.{u}} (F :
         IsLocallyConstant (fiberRank F)]
 ```
 
-**`Stacks.FiniteLocallyFree.ModuleTFAE.finiteLocallyFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeTFAE.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeTFAE.lean#L882). References: EGA III (7.3.4).
+**`Stacks.FiniteLocallyFree.ModuleTFAE.finiteLocallyFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeTFAE.lean, line 882](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeTFAE.lean#L882). References: EGA III (7.3.4).
 
 > A quasi-coherent sheaf of modules on a scheme is finite locally free exactly
 > when it satisfies any of the five equivalent flatness, presentation, stalk, or
@@ -165,7 +165,7 @@ theorem finiteLocallyFree_tfae {X : Scheme.{u}} (F : X.Modules)
 
 [Tag 0FWH](https://stacks.math.columbia.edu/tag/0FWH) in the Stacks Project.
 
-**`Stacks.FiniteLocallyFree.Reduced.isFiniteLocallyFree_iff_isFiniteType_and_isLocallyConstant_fiberRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/ReducedFiniteLocallyFree.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/ReducedFiniteLocallyFree.lean#L416).
+**`Stacks.FiniteLocallyFree.Reduced.isFiniteLocallyFree_iff_isFiniteType_and_isLocallyConstant_fiberRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/ReducedFiniteLocallyFree.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Modules/ReducedFiniteLocallyFree.lean#L416).
 
 > On a reduced scheme, a quasi-coherent sheaf is finite locally free exactly
 > when it is of finite type and has locally constant fibre rank.
@@ -184,4 +184,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.21, Tag 05P1](https://stacks.math.columbia.edu/tag/05P1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

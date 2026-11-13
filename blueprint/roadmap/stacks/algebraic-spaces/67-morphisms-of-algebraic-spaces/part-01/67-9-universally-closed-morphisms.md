@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.9 Universally closed morphisms
 
-Section 67.9 of the Stacks Project, [Tag 03HH](https://stacks.math.columbia.edu/tag/03HH). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.9 of the Stacks Project, [Tag 03HH](https://stacks.math.columbia.edu/tag/03HH). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03XD, a lemma
 
 [Tag 03XD](https://stacks.math.columbia.edu/tag/03XD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheaf_universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedRepresentable.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedRepresentable.lean#L265).
+**`AlgebraicGeometry.Space.presheaf_universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedRepresentable.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedRepresentable.lean#L265).
 
 > **Stacks 03XD.** A representable morphism of algebraic spaces over `S` is universally
 > closed in the sense of Stacks 03HI exactly when each of its represented base changes is a
@@ -33,7 +33,7 @@ theorem presheaf_universallyClosed_iff
 
 [Tag 03HI](https://stacks.math.columbia.edu/tag/03HI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsClosedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L117). The attribute's comment: “closed”.
+**`AlgebraicGeometry.Space.IsClosedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L117). The attribute's comment: “closed”.
 
 > A morphism of algebraic spaces over `S` is *closed* when the map it induces on points is a
 > closed map for the topology detected by scheme-valued points.
@@ -42,7 +42,7 @@ theorem presheaf_universallyClosed_iff
 abbrev IsClosedMorphism (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.UniversallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L125). The attribute's comment: “universally closed”.
+**`AlgebraicGeometry.Space.UniversallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L125). The attribute's comment: “universally closed”.
 
 > A morphism of algebraic spaces over `S` is *universally closed* when its base change along
 > every morphism to its target from an algebraic space over `S` is closed.
@@ -55,7 +55,7 @@ abbrev UniversallyClosed (f : F ⟶ G) : Prop
 
 [Tag 03IS](https://stacks.math.columbia.edu/tag/03IS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L143).
+**`AlgebraicGeometry.Space.universallyClosed_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L143).
 
 > A base change of a universally closed morphism of algebraic spaces over `S` is universally
 > closed.
@@ -70,7 +70,7 @@ theorem universallyClosed_pullback {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 03IU](https://stacks.math.columbia.edu/tag/03IU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L129). The attribute's comment: “closed”.
+**`AlgebraicGeometry.Space.isClosedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L129). The attribute's comment: “closed”.
 
 > A composition of closed morphisms of algebraic spaces over `S` is closed.
 
@@ -81,7 +81,7 @@ theorem isClosedMorphism_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     IsClosedMorphism B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L158). The attribute's comment: “universally closed”.
+**`AlgebraicGeometry.Space.universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L158). The attribute's comment: “universally closed”.
 
 > A composition of universally closed morphisms of algebraic spaces over `S` is universally
 > closed.
@@ -98,7 +98,7 @@ theorem universallyClosed_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03IT](https://stacks.math.columbia.edu/tag/03IT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L427).
+**`AlgebraicGeometry.Space.universallyClosed_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L428).
 
 > **Stacks 03IT.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are
 > equivalent: `f` is universally closed; the base change of `f` along every morphism to `Y` from
@@ -130,7 +130,7 @@ theorem universallyClosed_tfae (_hX : IsAlgebraicSpace B S hS X)
 
 [Tag 03IV](https://stacks.math.columbia.edu/tag/03IV) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineLineTranslation.structureMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 1342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L1342). The attribute's comment: “the structure morphism”.
+**`AlgebraicGeometry.AffineLineTranslation.structureMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 1343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L1343). The attribute's comment: “the structure morphism”.
 
 > **Stacks 03IV.** The structure morphism of the quotient `𝔸¹_k/ℤ` of Stacks 02Z7, the unique
 > morphism to the terminal object `Spec k` of the big fppf site over `Spec k`.
@@ -140,7 +140,7 @@ noncomputable def structureMap :
     translationQuotient k B hS hU ⟶ yoneda.obj (Over.mk (𝟙 (B.obj hS)))
 ```
 
-**`AlgebraicGeometry.AffineLineTranslation.universallyClosed_structureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 1440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L1440). The attribute's comment: “universally closed”.
+**`AlgebraicGeometry.AffineLineTranslation.universallyClosed_structureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 1441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L1441). The attribute's comment: “universally closed”.
 
 > **Stacks 03IV.** For a field `k` of characteristic zero the structure morphism of the
 > quotient `𝔸¹_k/ℤ` of Stacks 02Z7 to `Spec k` is universally closed.
@@ -159,7 +159,7 @@ theorem universallyClosed_structureMap [CharZero k] :
 
 [Tag 04XW](https://stacks.math.columbia.edu/tag/04XW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L670).
+**`AlgebraicGeometry.Space.isQuasiCompact_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L671).
 
 > **Stacks 04XW.** A universally closed morphism of algebraic spaces over `S` is
 > quasi-compact.
@@ -175,7 +175,7 @@ theorem isQuasiCompact_of_universallyClosed
 
 [Tag 05Z2](https://stacks.math.columbia.edu/tag/05Z2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L695). The attribute's comment: “part (4): separated over the base”.
+**`AlgebraicGeometry.Space.isSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 696](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L696). The attribute's comment: “part (4): separated over the base”.
 
 > **Stacks 05Z2, part (4).** Let `X ⟶ Y ⟶ T` be morphisms of algebraic spaces over `S`, with
 > `X ⟶ Y` surjective and universally closed. If `X` is separated over `T`, then so is `Y`.
@@ -189,7 +189,7 @@ theorem isSeparated_of_isSurjective_of_universallyClosed
     IsSeparated B S hS g
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 753](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L753). The attribute's comment: “part (3): quasi-separated over the base”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 754](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L754). The attribute's comment: “part (3): quasi-separated over the base”.
 
 > **Stacks 05Z2, part (3).** Let `X ⟶ Y ⟶ T` be morphisms of algebraic spaces over `S`, with
 > `X ⟶ Y` surjective and universally closed. If `X` is quasi-separated over `T`, then so is `Y`.
@@ -203,7 +203,7 @@ theorem isQuasiSeparated_of_isSurjective_of_universallyClosed
     IsQuasiSeparated B S hS g
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 952](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L952). The attribute's comment: “part (1): quasi-separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 953](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L953). The attribute's comment: “part (1): quasi-separated”.
 
 > **Stacks 05Z2, part (1).** Let `X ⟶ Y` be a surjective universally closed morphism of
 > algebraic spaces over `S`. If `X` is quasi-separated, then so is `Y`.
@@ -222,7 +222,7 @@ theorem isAbsolutelyQuasiSeparated_of_isSurjective_of_universallyClosed
     IsAbsolutelyQuasiSeparated B S hS hZ Y
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelySeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 974](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L974). The attribute's comment: “part (2): separated”.
+**`AlgebraicGeometry.Space.isAbsolutelySeparated_of_isSurjective_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean, line 975](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyClosed.lean#L975). The attribute's comment: “part (2): separated”.
 
 > **Stacks 05Z2, part (2).** Let `X ⟶ Y` be a surjective universally closed morphism of
 > algebraic spaces over `S`. If `X` is separated, then so is `Y`.
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.9, Tag 03HH](https://stacks.math.columbia.edu/tag/03HH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

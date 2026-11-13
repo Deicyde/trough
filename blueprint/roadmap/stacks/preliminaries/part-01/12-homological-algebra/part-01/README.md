@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 12.3 Preadditive and additive… to 12.23 Spectral sequences…
+# 12.3 Preadditive and additive… to 12.18 Double complexes and…
 
 - [12.3 Preadditive and additive categories](12-3-preadditive-and-additive-categories.md)
 - [12.4 Karoubian categories](12-4-karoubian-categories.md)
@@ -19,8 +19,3 @@ navigation: transparent
 - [12.16 Graded objects](12-16-graded-objects.md)
 - [12.17 Additive monoidal categories](12-17-additive-monoidal-categories.md)
 - [12.18 Double complexes and associated total complexes](12-18-double-complexes-and-associated-total-comp.md)
-- [12.19 Filtrations](12-19-filtrations.md)
-- [12.20 Spectral sequences](12-20-spectral-sequences.md)
-- [12.21 Spectral sequences: exact couples](12-21-spectral-sequences-exact-couples.md)
-- [12.22 Spectral sequences: differential objects](12-22-spectral-sequences-differential-objects.md)
-- [12.23 Spectral sequences: filtered differential objects](12-23-spectral-sequences-filtered-differential-o.md)

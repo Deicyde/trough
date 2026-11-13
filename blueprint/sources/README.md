@@ -27,11 +27,11 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Formal Conjectures
 
-- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0. They are read from the source text, without Lean.
+- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0. They are read from the source text, without Lean.
 
 ## Lean Pool
 
-- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at 2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0, with the note, its copyright line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
+- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at 701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0, with the note, its copyright line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
 
 ## Fermat's Last Theorem (Anthropic)
 
@@ -43,17 +43,12 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## The Stacks Project in Lean (Axiom)
 
-- `data/stacks/tags/`: each Stacks tag's declarations, with their tiers, attribute comments, docstrings, Lean statements and EGA and SGA references, and the declarations registered for it, from [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7), Apache-2.0. They are read from the source text, without Lean.
+- `data/stacks/tags/`: each Stacks tag's declarations, with their tiers, attribute comments, docstrings, Lean statements and EGA and SGA references, and the declarations registered for it, from [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b), Apache-2.0. They are read from the source text, without Lean.
 - `data/stacks/structure.json`: the parts, chapters and sections of the [Stacks Project](https://github.com/stacks/stacks-project), their numbers and titles, and the section each tag is in, at the commit the file records. The Stacks Project is under the GNU Free Documentation License; none of its text is copied beyond these titles.
 
 ## ATLAS (Meta)
 
-- `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
-
-## Physlib
-
-- `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its declarations with their docstrings and Lean statements, read from the source text without Lean; `data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt lists. From [leanprover-community/physlib at 2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), Apache-2.0.
-- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in GitHub Actions.
+- `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
 
 ## Libraries
 
@@ -76,8 +71,8 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 2055e5adadae: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
-- [Physlib](https://github.com/leanprover-community/physlib) at 2a1dfe43134b: Physics in Lean (formerly PhysLean, and HepLean before that), merged with Lean-QuantumInfo: three libraries, the reviewed core Physlib (space and time, relativity, particles, QFT, quantum and classical mechanics, electromagnetism, condensed matter, cosmology and more), PhyslibAlpha under a lighter review, and QuantumInfo.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 5258ab9ac6db: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
+- [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
 - [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
 - [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
@@ -87,8 +82,8 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: Its README states that it is a complete, machine-checked proof of FLT via Frey, Serre, Ribet, Wiles and Taylor-Wiles, from the three standard axioms, checked by comparator and the nanoda kernel.
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) at 2b205bf90401: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
-- [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at 5ed82d14634e: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) at 701389c04bdd: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at c496df0d9bee: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.
 
 ### Formal Frontier libraries
 

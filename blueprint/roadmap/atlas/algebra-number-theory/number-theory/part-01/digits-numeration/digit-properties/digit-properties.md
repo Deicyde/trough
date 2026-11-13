@@ -7,7 +7,7 @@ statement: formalized
 
 # Digit properties of integers: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html).
 
 Digit sums and products, Niven, happy, Kaprekar, Keith numbers, comma sequences, decimal expansions of fractions (Midy, repetends).
 
@@ -23,7 +23,7 @@ base-$b$ digits.
 
 - Michael Gohn, Joshua Harrington, Sophia Lebiere, Hani Samamah, Kyla Shappell, and Tony W. H. Wong, "Arithmetic Progressions of b-Prodigious Numbers," Journal of Integer Sequences 25 (2022), Article 22.8.7, line 149, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Wong/wong42.tex>, citing as the original result Heidi Grundman, "Sequences of consecutive n-Niven numbers," Fibonacci Quarterly 32 (1994), 174–175.
 
-Formalized by `MathlibExt.NumberTheory.Digits.GrundmanNivenBoundWanted.grundman_consecutive_niven_bound`, a theorem declared in [MathlibExt/NumberTheory/Digits/GrundmanNivenBound.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Digits/GrundmanNivenBound.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html#grundman-consecutive-niven-bound).
+Formalized by `MathlibExt.NumberTheory.Digits.GrundmanNivenBoundWanted.grundman_consecutive_niven_bound`, a theorem declared in [MathlibExt/NumberTheory/Digits/GrundmanNivenBound.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Digits/GrundmanNivenBound.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html#grundman-consecutive-niven-bound).
 
 ## Tu–Deng conjecture
 
@@ -36,7 +36,7 @@ representative of $a$ in $\{0, 1, \dots, 2^k - 2\}$.
 
 - T. W. Cusick, Proof of the Tu-Deng Conjecture, arXiv:2608.14821 (2026), https://arxiv.org/abs/2608.14821.
 
-Stated but not proved: `MathlibExt.NumberTheory.TuDengConjectureWanted.tuDengConjecture_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/TuDengConjectureWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TuDengConjectureWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html#tu-deng-conjecture-holds).
+Stated but not proved: `MathlibExt.NumberTheory.TuDengConjectureWanted.tuDengConjecture_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/TuDengConjectureWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TuDengConjectureWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html#tu-deng-conjecture-holds).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Digit properties of integers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties)

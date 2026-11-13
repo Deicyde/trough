@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.4 One step dévissage
 
-Section 38.4 of the Stacks Project, [Tag 05H3](https://stacks.math.columbia.edu/tag/05H3). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.4 of the Stacks Project, [Tag 05H3](https://stacks.math.columbia.edu/tag/05H3). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05H4, a definition
 
 [Tag 05H4](https://stacks.math.columbia.edu/tag/05H4) in the Stacks Project.
 
-**`AlgebraicGeometry.OneStepDevissage`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L77).
+**`AlgebraicGeometry.OneStepDevissage`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L77).
 
 > A one-step dévissage of `F/X/S` over `s`.
 
@@ -27,7 +27,7 @@ structure OneStepDevissage {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (s :
 
 [Tag 05H5](https://stacks.math.columbia.edu/tag/05H5) in the Stacks Project.
 
-**`AlgebraicGeometry.OneStepDevissageAt`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L110).
+**`AlgebraicGeometry.OneStepDevissageAt`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L110).
 
 > A one-step dévissage of `F/X/S` at `x`.
 
@@ -40,7 +40,7 @@ structure OneStepDevissageAt {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x
 
 [Tag 05H6](https://stacks.math.columbia.edu/tag/05H6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_oneStepDevissageAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean#L260).
+**`AlgebraicGeometry.exists_etaleNeighborhood_oneStepDevissageAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean#L267).
 
 > **Stacks Project, Tag 05H6.** A finite-type quasi-coherent module supported at a point of a
 > fibre admits a one-step dévissage there after elementary étale neighbourhoods of the point and
@@ -64,7 +64,7 @@ theorem exists_etaleNeighborhood_oneStepDevissageAt {X S : Scheme.{u}} (f : X �
             ((Scheme.Modules.pullback U.toBase).obj F) U.point)
 ```
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_oneStepDevissageAt_iff_mem_fiber_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean#L551).
+**`AlgebraicGeometry.exists_etaleNeighborhood_oneStepDevissageAt_iff_mem_fiber_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/EtaleNeighborhoodOneStep.lean#L558).
 
 > **Stacks Project, Tag 05H6**, in sharp form. The elementary étale neighbourhoods of `(X, x)`
 > and of `(S, f x)` over which the pullback of `F` acquires a one-step dévissage at the
@@ -99,7 +99,7 @@ theorem exists_etaleNeighborhood_oneStepDevissageAt_iff_mem_fiber_supp {X S : Sc
 
 [Tag 05H7](https://stacks.math.columbia.edu/tag/05H7) in the Stacks Project.
 
-**`AlgebraicGeometry.OneStepDevissage.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChange.lean#L245).
+**`AlgebraicGeometry.OneStepDevissage.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChange.lean#L245).
 
 > **Stacks Project, Tag 05H7.** A one-step dévissage and all its presenting data persist
 > under base change to a pointed affine scheme.
@@ -116,7 +116,7 @@ def baseChange {X S S' : Scheme.{u}} (f : X ⟶ S) (F : X.Modules)
 
 [Tag 05H8](https://stacks.math.columbia.edu/tag/05H8) in the Stacks Project.
 
-**`AlgebraicGeometry.OneStepDevissageAt.exists_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAt.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAt.lean#L481).
+**`AlgebraicGeometry.OneStepDevissageAt.exists_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAt.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAt.lean#L481).
 
 > **Stacks Project, Tag 05H8.** A one-step dévissage at a point survives an affine pointed
 > base change which induces an isomorphism of residue fields: for the unique points `x'`, `z'`,
@@ -143,7 +143,7 @@ theorem exists_baseChange {X S S' : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x
         HEq E.toOneStepDevissage B.devissage ∧ HEq E.z z' ∧ HEq E.y y'
 ```
 
-**`AlgebraicGeometry.OneStepDevissageAt.exists_baseChange_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAtPoints.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAtPoints.lean#L130).
+**`AlgebraicGeometry.OneStepDevissageAt.exists_baseChange_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAtPoints.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/BaseChangeAtPoints.lean#L130).
 
 > **Stacks Project, Tag 05H8.** A one-step dévissage at a point survives an affine pointed
 > base change which induces an isomorphism of residue fields: the base change of the dévissage
@@ -179,7 +179,7 @@ theorem exists_baseChange_of_affine {X S S' : Scheme.{u}} (f : X ⟶ S) (F : X.M
 
 [Tag 05H9](https://stacks.math.columbia.edu/tag/05H9) in the Stacks Project.
 
-**`AlgebraicGeometry.OneStepDevissageAt.StandardShrinking`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L145).
+**`AlgebraicGeometry.OneStepDevissageAt.StandardShrinking`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep.lean#L145).
 
 > A standard shrinking of a one-step dévissage at `x`.
 
@@ -194,7 +194,7 @@ structure StandardShrinking {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 05HA](https://stacks.math.columbia.edu/tag/05HA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L470). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L470). The attribute's comment: “part (1)”.
 
 > **Stacks Tag 05HA, part (1).** Restricting a one-step dévissage at `x` to a principal open
 > neighbourhood `V` of `f x` in the base is a standard shrinking, whose other three opens are the
@@ -208,7 +208,7 @@ theorem exists_standardShrinking_base {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Mo
       E.Z' = (D.toOneStepDevissage.i ≫ f) ⁻¹ᵁ V ∧ E.Y' = D.toOneStepDevissage.g ⁻¹ᵁ V
 ```
 
-**`AlgebraicGeometry.exists_standardShrinking_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L495). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_standardShrinking_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L495). The attribute's comment: “part (2)”.
 
 > **Stacks Tag 05HA, part (2).** Given a principal open neighbourhood `W` of the distinguished
 > point `y` of the smooth scheme, there is a standard shrinking whose smooth open is `W` cut down
@@ -222,7 +222,7 @@ theorem exists_standardShrinking_smooth {X S : Scheme.{u}} (f : X ⟶ S) (F : X.
     ∃ E : D.StandardShrinking, E.Y' = W ⊓ (D.toOneStepDevissage.g ⁻¹ᵁ E.S')
 ```
 
-**`AlgebraicGeometry.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L507). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/Shrinking.lean#L507). The attribute's comment: “part (3)”.
 
 > **Stacks Tag 05HA, part (3).** Given any open neighbourhood `U` of `x`, there is a standard
 > shrinking whose source open lies inside `U`.
@@ -237,7 +237,7 @@ theorem exists_standardShrinking_source {X S : Scheme.{u}} (f : X ⟶ S) (F : X.
 
 [Tag 05HE](https://stacks.math.columbia.edu/tag/05HE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_oneStepDevissageAt_of_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Glueing.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Glueing.lean#L630).
+**`AlgebraicGeometry.exists_oneStepDevissageAt_of_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Glueing.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Glueing.lean#L630).
 
 > **Stacks Project, Tag 05HE.** A one-step dévissage at a point can be pulled through a
 > compatible pair of elementary étale neighbourhoods of the base and of the smooth scheme, after a
@@ -288,7 +288,7 @@ theorem exists_oneStepDevissageAt_of_etaleNeighborhood
 
 [Tag 05HF](https://stacks.math.columbia.edu/tag/05HF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_freeMap_isIso_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean#L591). The attribute's comment: “existence of the generically invertible map”.
+**`AlgebraicGeometry.exists_freeMap_isIso_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean, line 591](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean#L591). The attribute's comment: “existence of the generically invertible map”.
 
 > **Stacks 05HF**, first assertion. For a one-step dévissage, a free `𝒪_Y`-module of positive
 > finite rank maps to the direct image `π_* G` by a map that becomes an isomorphism over the
@@ -303,7 +303,7 @@ theorem exists_freeMap_isIso_genericFiber :
         (D.Y.fromSpecResidueField (D.g.fiberι s ξ))).map α)
 ```
 
-**`AlgebraicGeometry.dim_support_cokernel_fiber_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean#L644). The attribute's comment: “dimension of the cokernel support”.
+**`AlgebraicGeometry.dim_support_cokernel_fiber_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/OneStep/FreeMap.lean#L644). The attribute's comment: “dimension of the cokernel support”.
 
 > **Stacks 05HF**, second assertion. If a map into the direct image `π_* G` of a one-step
 > dévissage becomes an isomorphism over the residue field of the image in `Y` of a point of the
@@ -328,4 +328,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.4, Tag 05H3](https://stacks.math.columbia.edu/tag/05H3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

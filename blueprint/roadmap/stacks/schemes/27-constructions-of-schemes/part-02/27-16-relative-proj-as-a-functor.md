@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.16 Relative Proj as a functor
 
-Section 27.16 of the Stacks Project, [Tag 01NS](https://stacks.math.columbia.edu/tag/01NS). 13 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.16 of the Stacks Project, [Tag 01NS](https://stacks.math.columbia.edu/tag/01NS). 13 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01NS, the section
 
 [Tag 01NS](https://stacks.math.columbia.edu/tag/01NS) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.toBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean#L97). The attribute's comment: “the projection of F\_d to the functor of points of the base, as a natural transformation F\_d ⟹ h\_S: a class in F\_d(T) records a morphism T ⟶ S and the identification is natural in the test scheme. This is the structure that makes `representable by a scheme over S` (Tag 01NV) and the fibre product h\_\{S'} ×\_\{h\_S} F\_d (Tag 01NT) statable; neither of those is proved here”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.toBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean#L97). The attribute's comment: “the projection of F\_d to the functor of points of the base, as a natural transformation F\_d ⟹ h\_S: a class in F\_d(T) records a morphism T ⟶ S and the identification is natural in the test scheme. This is the structure that makes `representable by a scheme over S` (Tag 01NV) and the fibre product h\_\{S'} ×\_\{h\_S} F\_d (Tag 01NT) statable; neither of those is proved here”.
 
 > **Stacks Project, Section 01NS: the projection `F_d ⟹ h_S`.** A point of `F_d(T)` is the
 > strict equivalence class of a quadruple `(d, f : T → S, L, ψ)`, and this is the natural
@@ -28,7 +28,7 @@ Section 27.16 of the Stacks Project, [Tag 01NS](https://stacks.math.columbia.edu
 def Fd.toBase : Fd.functor A d ⟶ yoneda.obj S ⋙ uliftFunctor.{u + 1, u}
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.overFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean#L142). The attribute's comment: “the functor F\_d on the category of schemes OVER S, for an arbitrary base scheme: on an object f : T ⟶ S the set of strict equivalence classes of quadruples (d, f, L, psi) with that structure morphism, on a morphism of Sch/S the pullback of a quadruple. The two functor laws are Fd.pullback\_id and Fd.pullback\_comp. Representability of F\_d is Tag 01NV and is not proved here”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.overFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/OverBase.lean#L142). The attribute's comment: “the functor F\_d on the category of schemes OVER S, for an arbitrary base scheme: on an object f : T ⟶ S the set of strict equivalence classes of quadruples (d, f, L, psi) with that structure morphism, on a morphism of Sch/S the pullback of a quadruple. The two functor laws are Fd.pullback\_id and Fd.pullback\_comp. Representability of F\_d is Tag 01NV and is not proved here”.
 
 > **Stacks Project, Section 01NS: the functor `F_d : (Sch/S)^{opp} ⟶ Sets`.** On an object
 > `f : T ⟶ S` of the category of schemes over `S` its value is the fibre of `F_d(T)` over `f`,
@@ -45,7 +45,7 @@ def Fd.toBase : Fd.functor A d ⟶ yoneda.obj S ⋙ uliftFunctor.{u + 1, u}
 def Fd.overFunctor : (Over S)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L127). The attribute's comment: “quadruples over a test scheme”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L127). The attribute's comment: “quadruples over a test scheme”.
 
 > **Stacks Project, Section 01NS.** A quadruple `(d, f : T → S, L, ψ)` over the test scheme
 > `T`: an invertible `𝒪_T`-module `L`, a homomorphism `ψ` of graded `𝒪_T`-algebras from the
@@ -59,7 +59,7 @@ structure Quadruple (f : T ⟶ S)
     (A : SheafOfModules.GradedAlgebra.{u, u} (structureRingSheaf S.toRingedSpace)) (d : ℤ)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.StrictlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L189). The attribute's comment: “strict equivalence of quadruples”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.StrictlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L189). The attribute's comment: “strict equivalence of quadruples”.
 
 > **Stacks Project, Section 01NS.** Two quadruples over the same morphism `f` are *strictly
 > equivalent* when there is an isomorphism `β : L ≅ L'` of their invertible modules with
@@ -73,7 +73,7 @@ structure Quadruple (f : T ⟶ S)
 def StrictlyEquivalent (P Q : Quadruple f A d) : Prop
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L214). The attribute's comment: “strict equivalence of quadruples”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L214). The attribute's comment: “strict equivalence of quadruples”.
 
 > **Strict equivalence of quadruples is an equivalence relation.**
 
@@ -82,7 +82,7 @@ theorem strictlyEquivalent_equivalence :
     Equivalence (StrictlyEquivalent (f := f) (A := A) (d := d))
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L267). The attribute's comment: “the set of strict equivalence classes of quadruples over a test scheme”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Quadruple.lean#L267). The attribute's comment: “the set of strict equivalence classes of quadruples over a test scheme”.
 
 > **Stacks Project, Section 01NS.** The set `F_d(T)` of strict equivalence classes of
 > quadruples `(d, f : T → S, L, ψ)` over the test scheme `T`.
@@ -95,7 +95,7 @@ def Fd (A : SheafOfModules.GradedAlgebra.{u, u} (structureRingSheaf S.toRingedSp
     (T : Scheme.{u}) : Type (u + 1)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_pullback_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L334). The attribute's comment: “the pullback of a quadruple along the identity morphism of the test scheme is strictly equivalent to the quadruple”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_pullback_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L334). The attribute's comment: “the pullback of a quadruple along the identity morphism of the test scheme is strictly equivalent to the quadruple”.
 
 > The pullback of a quadruple along an identity is strictly equivalent to the quadruple.
 
@@ -104,7 +104,7 @@ theorem strictlyEquivalent_pullback_id (P : Quadruple f A d) :
     StrictlyEquivalent (P.pullback (𝟙 T)) P
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_pullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L343). The attribute's comment: “the pullback of a quadruple along a composite of morphisms of test schemes is strictly equivalent to the twice-pulled-back quadruple”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.strictlyEquivalent_pullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L343). The attribute's comment: “the pullback of a quadruple along a composite of morphisms of test schemes is strictly equivalent to the twice-pulled-back quadruple”.
 
 > The pullback of a quadruple along a composite of morphisms of test schemes is strictly
 > equivalent to the twice-pulled-back quadruple.
@@ -114,7 +114,7 @@ theorem strictlyEquivalent_pullback_comp (P : Quadruple f A d) (g : T' ⟶ T) (g
     StrictlyEquivalent ((P.pullback g).pullback g') (P.pullback (g' ≫ g))
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L375). The attribute's comment: “the functor F\_d : Sch^opp -> Sets at a fixed degree d, with both functor laws proved (Fd.pullback\_id and Fd.pullback\_comp): on objects the set F\_d(T) of strict equivalence classes of quadruples of degree d, on morphisms the pullback of a quadruple. Representability of F\_d by a scheme is Tag 01NV and is not proved here”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionFunctor.lean#L375). The attribute's comment: “the functor F\_d : Sch^opp -> Sets at a fixed degree d, with both functor laws proved (Fd.pullback\_id and Fd.pullback\_comp): on objects the set F\_d(T) of strict equivalence classes of quadruples of degree d, on morphisms the pullback of a quadruple. Representability of F\_d by a scheme is Tag 01NV and is not proved here”.
 
 > The functor `F_d : Sch^{opp} ⟶ Sets` at a fixed degree `d`. It sends a test scheme `T` to the
 > set `F_d(T)` of strict equivalence classes of quadruples `(d, f : T → S, L, ψ)` of degree `d`, and
@@ -126,7 +126,7 @@ def Fd.functor (A : SheafOfModules.GradedAlgebra.{u, u} (structureRingSheaf S.to
     (d : ℤ) : Scheme.{u}ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.StrictlyEquivalent.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L528). The attribute's comment: “the pullback of a quadruple along a morphism of test schemes respects strict equivalence”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.StrictlyEquivalent.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L528). The attribute's comment: “the pullback of a quadruple along a morphism of test schemes respects strict equivalence”.
 
 > **Stacks Project, Section 01NS: the pullback of a quadruple respects strict equivalence.**
 > Strict equivalence is witnessed by an isomorphism of the Laurent algebras carrying `ψ` to `ψ'`;
@@ -138,7 +138,7 @@ theorem StrictlyEquivalent.pullback {P Q : Quadruple f A d} (h : StrictlyEquival
     (g : T' ⟶ T) : StrictlyEquivalent (P.pullback g) (Q.pullback g)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.Equivalent.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L559). The attribute's comment: “the pullback of a quadruple along a morphism of test schemes respects equivalence of quadruples of possibly different degrees”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.Equivalent.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L559). The attribute's comment: “the pullback of a quadruple along a morphism of test schemes respects equivalence of quadruples of possibly different degrees”.
 
 > **Stacks Project, Section 01NS: the pullback of a quadruple respects equivalence of quadruples
 > of possibly different degrees.** Equivalence is the comparison at the common multiple `d d'` of the
@@ -149,7 +149,7 @@ theorem Equivalent.pullback {P : Quadruple f A d} {Q : Quadruple f A d'} (h : Eq
     (g : T' ⟶ T) : Equivalent (P.pullback g) (Q.pullback g)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 575](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L575). The attribute's comment: “the map F\_d(T) → F\_d(T') of a morphism of test schemes at a fixed degree d, the pullback of a quadruple descended to the strict equivalence classes”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionPullback.lean#L575). The attribute's comment: “the map F\_d(T) → F\_d(T') of a morphism of test schemes at a fixed degree d, the pullback of a quadruple descended to the strict equivalence classes”.
 
 > **Stacks Project, Section 01NS: the map `F_d(T) → F_d(T')` of a morphism `g : T' ⟶ T` of test
 > schemes**, at a fixed degree `d`. A point of `F_d(T)` over `f : T ⟶ S` is a quadruple of degree
@@ -167,7 +167,7 @@ def Fd.pullback {A : SheafOfModules.GradedAlgebra.{u, u} (structureRingSheaf S.t
 
 [Tag 01NT](https://stacks.math.columbia.edu/tag/01NT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.baseChangePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/BaseChangeFunctor.lean, line 936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/BaseChangeFunctor.lean#L936). The attribute's comment: “the canonical isomorphism F'\_d = h\_\{S'} x\_\{h\_S} F\_d of functors on Sch^opp read off at the categorical fibre product, with its compatibility with both projections (baseChangePullbackIso\_hom\_fst and \_hom\_snd), so that it is the canonical isomorphism and not merely some isomorphism. Stated for every integer d”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.baseChangePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/BaseChangeFunctor.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/BaseChangeFunctor.lean#L936). The attribute's comment: “the canonical isomorphism F'\_d = h\_\{S'} x\_\{h\_S} F\_d of functors on Sch^opp read off at the categorical fibre product, with its compatibility with both projections (baseChangePullbackIso\_hom\_fst and \_hom\_snd), so that it is the canonical isomorphism and not merely some isomorphism. Stated for every integer d”.
 
 > **Stacks Project, Tag 01NT: the canonical isomorphism `F'_d ≅ h_{S'} ×_{h_S} F_d`**, with the
 > right-hand side the categorical fibre product of the cospan `h_{S'} ⟶ h_S ⟵ F_d` in the functor
@@ -185,7 +185,7 @@ def Fd.baseChangePullbackIso :
 
 [Tag 01NU](https://stacks.math.columbia.edu/tag/01NU) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.representableByDegreeOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineFdRepresentable.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineFdRepresentable.lean#L355). The attribute's comment: “THE TAG, for an AFFINE base: for S affine, A with quasi-coherent homogeneous pieces (Situation 01NN) and d >= 1, the functor F\_d of strict equivalence classes of quadruples of Section 01NS is REPRESENTABLE by the open U\_d of Equation 27.12.0.1 inside Proj Gamma(S, A) a CategoryTheory.Functor.RepresentableBy for Fd.functor, i.e. the bijections Quadruple.fdEquiv together with their naturality in the test scheme (Quadruple.classifyingHomOfClass\_pullback, which rests on the unconditional veroneseSections\_pullback).”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.representableByDegreeOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineFdRepresentable.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineFdRepresentable.lean#L361). The attribute's comment: “THE TAG, for an AFFINE base: for S affine, A with quasi-coherent homogeneous pieces (Situation 01NN) and d >= 1, the functor F\_d of strict equivalence classes of quadruples of Section 01NS is REPRESENTABLE by the open U\_d of Equation 27.12.0.1 inside Proj Gamma(S, A) a CategoryTheory.Functor.RepresentableBy for Fd.functor, i.e. the bijections Quadruple.fdEquiv together with their naturality in the test scheme (Quadruple.classifyingHomOfClass\_pullback, which rests on the unconditional veroneseSections\_pullback).”.
 
 > **Stacks Project, Tag 01NU: the functor `F_d` of Section 01NS is represented by the open
 > `U_d ⊆ Proj Γ(S, 𝒜)` of Equation 27.12.0.1.** Let `S` be affine, `𝒜` a graded `𝒪_S`-algebra with
@@ -209,7 +209,7 @@ public def Fd.representableByDegreeOpen [IsAffine S] (hk : 0 < k)
 
 [Tag 01NV](https://stacks.math.columbia.edu/tag/01NV) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.exists_representableBy_functor_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineOpenCharts.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineOpenCharts.lean#L515). The attribute's comment: “THE TAG, UNCONDITIONALLY: for S a scheme, A a quasi-coherent graded O\_S-algebra (Situation 01NN) and d = k with 0 < k, the functor F\_d of Section 01NS is representable by a scheme over S. The conclusion is about Fd.functor, the genuine functor whose restriction maps are the pullback of a quadruple, and it records that the representing morphism composed with p : Y -> S is the class's own morphism to S.”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Fd.exists_representableBy_functor_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineOpenCharts.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/AffineOpenCharts.lean#L515). The attribute's comment: “THE TAG, UNCONDITIONALLY: for S a scheme, A a quasi-coherent graded O\_S-algebra (Situation 01NN) and d = k with 0 < k, the functor F\_d of Section 01NS is representable by a scheme over S. The conclusion is about Fd.functor, the genuine functor whose restriction maps are the pullback of a quadruple, and it records that the representing morphism composed with p : Y -> S is the class's own morphism to S.”.
 
 > **Stacks Project, Tag 01NV.** Let `S` be a scheme, `𝒜` a quasi-coherent graded
 > `𝒪_S`-algebra (Situation 01NN) and `d ≥ 1`. The functor `F_d` of Section 01NS is representable
@@ -229,7 +229,7 @@ theorem Fd.exists_representableBy_functor_of_pos :
 
 [Tag 01NW](https://stacks.math.columbia.edu/tag/01NW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.tfae_compatibleAt_lcm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/EquivalenceDescent.lean, line 954](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/EquivalenceDescent.lean#L954). The attribute's comment: “for two quadruples over the same morphism with positive degrees d and d', and the least common multiple m of d and d' written as m = a d = a' d', these three conditions are equivalent: compatibility at the cofactors (a, a') of the least common multiple; equivalence of the two quadruples, i.e. compatibility at (d', d); and compatibility at the cofactors of some positive common multiple of the two degrees”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Quadruple.tfae_compatibleAt_lcm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/EquivalenceDescent.lean, line 954](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/EquivalenceDescent.lean#L954). The attribute's comment: “for two quadruples over the same morphism with positive degrees d and d', and the least common multiple m of d and d' written as m = a d = a' d', these three conditions are equivalent: compatibility at the cofactors (a, a') of the least common multiple; equivalence of the two quadruples, i.e. compatibility at (d', d); and compatibility at the cofactors of some positive common multiple of the two degrees”.
 
 > **[Stacks, Tag 01NW].** In Situation 01NN, let `T` be a scheme and let `(d, f, L, ψ)` and
 > `(d', f, L', ψ')` be two quadruples over `T` with `d` and `d'` positive, and write the least
@@ -266,7 +266,7 @@ theorem tfae_compatibleAt_lcm (hd : 0 < d) (hd' : 0 < d') {a₀ a₀' : ℤ}
 
 [Tag 01NX](https://stacks.math.columbia.edu/tag/01NX) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.F.limFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionRepresentable.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionRepresentable.lean#L148). The attribute's comment: “the functor F of the display for EVERY test scheme, which closes the second qualification recorded on F.functor: the source defines F(T) as the union over d >= 1 of the F\_d(T) only for a quasi- compact T and as the inverse limit of those over the quasi-compact opens of T in general, and that inverse limit, previously NOT CONSTRUCTED, is this functor. Both functor laws come from AlgebraicGeometry.Scheme.QcExtension.pullback\_id and pullback\_comp; F.limEquiv is the identification with the union on a quasi-compact test scheme, and AlgebraicGeometry.Scheme.QcExtension.equivQcOpen the identification of the index used here (all morphisms out of quasi-compact schemes, which makes the functoriality in T a reindexing) with the quasi-compact opens of T that the source indexes by. The FIRST qualification recorded on F.functor is DISCHARGED and is NOT inherited: the value of this functor on a quasi-compact test scheme is the source's F(T) itself, not a quotient of it. UnionRel IS an equivalence relation, being cofinal equality ...UnionEquivalenceRelation.unionRel\_iff\_cofinallyEqual and ...UnionEquivalenceRelation.unionRel\_equivalence so two quadruples of positive degree have the same point of F(T) EXACTLY when they are equivalent (...UnionEquivalenceRelation.F.mk\_eq\_mk\_iff\_equivalent, and ...UnionEquivalenceRelation.F.mk\_eq\_mk\_iff\_strictlyEquivalent when the two degrees agree). The brick that had been missing was NOT the implication (3) => (1) of Tag 01NW, which was already proved as ...EquivalenceDescent.Quadruple.lcm\_compatible\_of\_exists\_compatible, but the converse of ...PowerTransitionColimit.Quadruple.strictlyEquivalent\_scale\_of\_compatibleAt, namely ...UnionEquivalenceRelation.Quadruple.compatibleAt\_of\_strictlyEquivalent\_scale; neither Tag 01NB nor Tag 01NU is used for it.”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.F.limFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionRepresentable.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/UnionRepresentable.lean#L150). The attribute's comment: “the functor F of the display for EVERY test scheme, which closes the second qualification recorded on F.functor: the source defines F(T) as the union over d >= 1 of the F\_d(T) only for a quasi- compact T and as the inverse limit of those over the quasi-compact opens of T in general, and that inverse limit, previously NOT CONSTRUCTED, is this functor. Both functor laws come from AlgebraicGeometry.Scheme.QcExtension.pullback\_id and pullback\_comp; F.limEquiv is the identification with the union on a quasi-compact test scheme, and AlgebraicGeometry.Scheme.QcExtension.equivQcOpen the identification of the index used here (all morphisms out of quasi-compact schemes, which makes the functoriality in T a reindexing) with the quasi-compact opens of T that the source indexes by. The FIRST qualification recorded on F.functor is DISCHARGED and is NOT inherited: the value of this functor on a quasi-compact test scheme is the source's F(T) itself, not a quotient of it. UnionRel IS an equivalence relation, being cofinal equality ...UnionEquivalenceRelation.unionRel\_iff\_cofinallyEqual and ...UnionEquivalenceRelation.unionRel\_equivalence so two quadruples of positive degree have the same point of F(T) EXACTLY when they are equivalent (...UnionEquivalenceRelation.F.mk\_eq\_mk\_iff\_equivalent, and ...UnionEquivalenceRelation.F.mk\_eq\_mk\_iff\_strictlyEquivalent when the two degrees agree). The brick that had been missing was NOT the implication (3) => (1) of Tag 01NW, which was already proved as ...EquivalenceDescent.Quadruple.lcm\_compatible\_of\_exists\_compatible, but the converse of ...PowerTransitionColimit.Quadruple.strictlyEquivalent\_scale\_of\_compatibleAt, namely ...UnionEquivalenceRelation.Quadruple.compatibleAt\_of\_strictlyEquivalent\_scale; neither Tag 01NB nor Tag 01NU is used for it.”.
 
 > **Stacks Project, display 01NX, on all of `Sch`.** The functor sending a test scheme `T` to
 > the union `F(T) = ⋃_{d ≥ 1} F_d(T)` when `T` is quasi-compact, and to the inverse limit of those
@@ -286,7 +286,7 @@ def F.limFunctor (A : SheafOfModules.GradedAlgebra.{u, u} (structureRingSheaf S.
 
 [Tag 01NY](https://stacks.math.columbia.edu/tag/01NY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.F.isRepresentable_limFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean#L103). The attribute's comment: “the tag's sentence in one statement, with no datum beyond the scheme and the graded algebra: the functor F of the display 01NX is representable by a scheme, the representing scheme being the constructed relative homogeneous spectrum Proj\_S(A)”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.F.isRepresentable_limFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean#L104). The attribute's comment: “the tag's sentence in one statement, with no datum beyond the scheme and the graded algebra: the functor F of the display 01NX is representable by a scheme, the representing scheme being the constructed relative homogeneous spectrum Proj\_S(A)”.
 
 > **[Stacks, Tag 01NY].** In Situation 01NN — a scheme `S` and a quasi-coherent graded
 > `𝒪_S`-algebra `𝒜` — the functor `F` of the display 01NX is representable by a scheme.
@@ -311,7 +311,7 @@ theorem F.isRepresentable_limFunctor :
 
 [Tag 01NZ](https://stacks.math.columbia.edu/tag/01NZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.representableBy_and_existsUnique_isoOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean#L173). The attribute's comment: “for a scheme S and a quasi-coherent graded O\_S-algebra A (Situation 01NN) and any scheme over S carrying projective-spectrum charts on the affine opens of S, the constructed relative homogeneous spectrum Proj\_S(A) represents the functor F.limFunctor of the display 01NX, and there is exactly one isomorphism from Proj\_S(A) to that scheme compatible with the charts, which is an isomorphism over S”.
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.representableBy_and_existsUnique_isoOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/RelativeProjRepresents.lean#L177). The attribute's comment: “for a scheme S and a quasi-coherent graded O\_S-algebra A (Situation 01NN) and any scheme over S carrying projective-spectrum charts on the affine opens of S, the constructed relative homogeneous spectrum Proj\_S(A) represents the functor F.limFunctor of the display 01NX, and there is exactly one isomorphism from Proj\_S(A) to that scheme compatible with the charts, which is an isomorphism over S”.
 
 > **[Stacks, Tag 01NZ].** In Situation 01NN, let `P` be any scheme over `S` carrying
 > projective-spectrum charts on the affine opens of `S` — for instance the scheme representing the
@@ -350,7 +350,7 @@ def representableBy_and_existsUnique_isoOver (P : RelativeProjData A) :
 
 [Tag 01O0](https://stacks.math.columbia.edu/tag/01O0) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProj.relativeHomogeneousSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean#L87). The attribute's comment: “the scheme Proj\_S(A) itself. The tag NAMES the scheme constructed in Lemma 01NQ, which in this repository is the field `scheme` of `Stacks.AlgebraicGeometry.RelativeProj.relativeProj`, a construction (a colimit over the small affine Zariski site of S) and not a choice; the structure morphism pi the tag's last sentence names is `relativeHomogeneousSpectrumToBase`, which carries this tag too. NOT re-asserted here: the tag's reference to the functor F of the display 01NX and to Lemma 01NZ, namely that this scheme REPRESENTS F. The functor F is not constructed in this repository; that representability is carried, with the source's inputs to it, in `...RelativeProjQcohSheaf.RepresentingProjData` and proved there as `...RepresentingProjData.relativeProjRepresentableBy`”. References: EGA II (3.1.3); EGA II (8.3.1).
+**`Stacks.AlgebraicGeometry.RelativeProj.relativeHomogeneousSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean#L87). The attribute's comment: “the scheme Proj\_S(A) itself. The tag NAMES the scheme constructed in Lemma 01NQ, which in this repository is the field `scheme` of `Stacks.AlgebraicGeometry.RelativeProj.relativeProj`, a construction (a colimit over the small affine Zariski site of S) and not a choice; the structure morphism pi the tag's last sentence names is `relativeHomogeneousSpectrumToBase`, which carries this tag too. NOT re-asserted here: the tag's reference to the functor F of the display 01NX and to Lemma 01NZ, namely that this scheme REPRESENTS F. The functor F is not constructed in this repository; that representability is carried, with the source's inputs to it, in `...RelativeProjQcohSheaf.RepresentingProjData` and proved there as `...RepresentingProjData.relativeProjRepresentableBy`”. References: EGA II (3.1.3); EGA II (8.3.1).
 
 > The relative homogeneous spectrum `Proj_S(A)`, or relative Proj, of a quasi-coherent sheaf
 > of graded `𝒪_S`-algebras `A` over a scheme `S`: the scheme glued from the projective spectra of
@@ -360,7 +360,7 @@ def representableBy_and_existsUnique_isoOver (P : RelativeProjData A) :
 public def relativeHomogeneousSpectrum : Scheme.{u}
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProj.relativeHomogeneousSpectrumToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean#L93). The attribute's comment: “ONLY the structure morphism pi : Proj\_S(A) → S of the tag's last sentence; the scheme itself is `relativeHomogeneousSpectrum`, whose clause string describes the covering set and what the tag's reference to 01NX/01NZ is and where it lives”.
+**`Stacks.AlgebraicGeometry.RelativeProj.relativeHomogeneousSpectrumToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/Spectrum.lean#L93). The attribute's comment: “ONLY the structure morphism pi : Proj\_S(A) → S of the tag's last sentence; the scheme itself is `relativeHomogeneousSpectrum`, whose clause string describes the covering set and what the tag's reference to 01NX/01NZ is and where it lives”.
 
 > The structure morphism `π : Proj_S(A) → S` of the relative homogeneous spectrum.
 
@@ -373,7 +373,7 @@ public def relativeHomogeneousSpectrumToBase :
 
 [Tag 01O1](https://stacks.math.columbia.edu/tag/01O1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjTwistChartBridge.tag01O1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjTwistChartBridge/ThetaIsomorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjTwistChartBridge/ThetaIsomorphism.lean#L150). The attribute's comment: “for a quadruple (f : T -> S, d, L, psi) with associated morphism r : T -> Proj\_S(A), the morphism the representation of F by Proj\_S(A) attaches to the class of the quadruple: r lies over S, and there is an isomorphism theta of Z-graded O\_T-algebras from r^*((+)\_n O(nd)) to (+)\_n L^(x)n, preserving the unit, with psi = theta o psi\_univ in every degree, and every homomorphism of graded algebras with psi = Theta o psi\_univ is theta”.
+**`Stacks.AlgebraicGeometry.RelativeProjTwistChartBridge.tag01O1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjTwistChartBridge/ThetaIsomorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjTwistChartBridge/ThetaIsomorphism.lean#L150). The attribute's comment: “for a quadruple (f : T -> S, d, L, psi) with associated morphism r : T -> Proj\_S(A), the morphism the representation of F by Proj\_S(A) attaches to the class of the quadruple: r lies over S, and there is an isomorphism theta of Z-graded O\_T-algebras from r^*((+)\_n O(nd)) to (+)\_n L^(x)n, preserving the unit, with psi = theta o psi\_univ in every degree, and every homomorphism of graded algebras with psi = Theta o psi\_univ is theta”.
 
 > **Stacks Project, Tag 01O1.** In Situation 01NN — `S` a scheme and `𝒜` a quasi-coherent
 > graded `𝒪_S`-algebra — let `(f : T → S, d, ℒ, ψ)` be a quadruple of Section 01NS, so `d ≥ 1`, and
@@ -422,7 +422,7 @@ theorem tag01O1 (hd : 0 < d) (P : Quadruple f (situationAlgebra A) (d : ℤ)) :
 
 [Tag 01O2](https://stacks.math.columbia.edu/tag/01O2) in the Stacks Project.
 
-**`Stacks.RelativeProj.Data.isSeparated_toBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TerminalRelativeProj.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/TerminalRelativeProj.lean#L125). The attribute's comment: “the gluing-datum form”. References: EGA II (2.4.2); EGA II (3.1.3), “separated over Y”; EGA II (8.14.1), “more general”.
+**`Stacks.RelativeProj.Data.isSeparated_toBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TerminalRelativeProj.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/TerminalRelativeProj.lean#L125). The attribute's comment: “the gluing-datum form”. References: EGA II (2.4.2); EGA II (3.1.3), “separated over Y”; EGA II (8.14.1), “more general”.
 
 > **Stacks Project, Tag 01O2.** The structure morphism of a relative `Proj` is separated.
 >
@@ -434,7 +434,7 @@ theorem tag01O1 (hd : 0 < d) (P : Quadruple f (situationAlgebra A) (d : ℤ)) :
 instance isSeparated_toBase (d : Data 𝒜) : IsSeparated d.toBase
 ```
 
-**`Stacks.RelativeProj.Situation.isSeparated_relativeProjToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowUpSeparatedInput/Basic.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BlowUpSeparatedInput/Basic.lean#L97). References: EGA II (3.1.3), “separated over Y”; EGA II (8.14.1).
+**`Stacks.RelativeProj.Situation.isSeparated_relativeProjToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowUpSeparatedInput/Basic.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BlowUpSeparatedInput/Basic.lean#L98). References: EGA II (3.1.3), “separated over Y”; EGA II (8.14.1).
 
 > **Stacks Project, Tag 01O2.** The structure morphism of the relative `Proj` of a
 > quasi-coherent, commutative, nonnegatively graded algebra on a scheme is separated.
@@ -453,7 +453,7 @@ public theorem _root_.Stacks.RelativeProj.Situation.isSeparated_relativeProjToBa
 
 [Tag 01O3](https://stacks.math.columbia.edu/tag/01O3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjBaseChangeTwist.relativeProj_baseChange_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBaseChangeTwist/Theta.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjBaseChangeTwist/Theta.lean#L74). The attribute's comment: “the canonical isomorphism r : Proj\_S'(g^*A) -> S' x\_S Proj\_S(A) over S', and the isomorphism theta : r^* pr\_2^* ((+)\_d O(d)) -> (+)\_d O\_\{Proj\_S'(g^*A)}(d) of Z-graded algebras, preserving the unit”.
+**`Stacks.AlgebraicGeometry.RelativeProjBaseChangeTwist.relativeProj_baseChange_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBaseChangeTwist/Theta.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjBaseChangeTwist/Theta.lean#L74). The attribute's comment: “the canonical isomorphism r : Proj\_S'(g^*A) -> S' x\_S Proj\_S(A) over S', and the isomorphism theta : r^* pr\_2^* ((+)\_d O(d)) -> (+)\_d O\_\{Proj\_S'(g^*A)}(d) of Z-graded algebras, preserving the unit”.
 
 > **Stacks Project, Tag 01O3.** Let `S` be a scheme, `A` a quasi-coherent sheaf of graded
 > `𝒪_S`-algebras and `g : S' → S` a morphism of schemes. The canonical isomorphism
@@ -479,7 +479,7 @@ theorem relativeProj_baseChange_twist :
         (twistAlgebra (A.pullback g)).one.eval U
 ```
 
-**`Stacks.RelativeProj.Situation.twistSheafPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjTwistBaseChangeGlued.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjTwistBaseChangeGlued.lean#L455). The attribute's comment: “the graded isomorphism θ on the twisting sheaves, in each degree separately, as clause (3) of Tag 01N2 is carried with the same reading”. References: EGA II (2.8.10), “partial”; EGA II (2.8.11), “more general”; EGA II (4.1.3), “more general”.
+**`Stacks.RelativeProj.Situation.twistSheafPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjTwistBaseChangeGlued.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjTwistBaseChangeGlued.lean#L455). The attribute's comment: “the graded isomorphism θ on the twisting sheaves, in each degree separately, as clause (3) of Tag 01N2 is carried with the same reading”. References: EGA II (2.8.10), “partial”; EGA II (2.8.11), “more general”; EGA II (4.1.3), “more general”.
 
 > **The twist assertion of [Stacks, Tag 01O3].** For a morphism `g : S' ⟶ S`, relative `Proj`
 > situations `s` over `S` and `s'` over `S'`, and an identification `Φ` of the graded algebra of
@@ -508,7 +508,7 @@ public def twistSheafPullbackIso :
 
 [Tag 01O4](https://stacks.math.columbia.edu/tag/01O4) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TwistMapsInvertible.f1Bundle_and_twists`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistMapsInvertible/RepresentsAndTwists.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistMapsInvertible/RepresentsAndTwists.lean#L95). The attribute's comment: “for a scheme S and a quasi-coherent sheaf of graded O\_S-modules A generated as an A\_0-algebra by A\_1, three things hold of X = Proj\_S(A): X represents the functor F\_1 sending f : T -> S to the strict isomorphism classes of pairs (L, psi) with L an invertible O\_T-module and psi : f^*A -> ⨁\_\{n >= 0} L^\{⊗ n} a graded algebra homomorphism whose degree-one component f^*A\_1 -> L is surjective, by bijections normalised at the identity of X and natural in the test scheme; every homogeneous piece O\_X(n) of the canonical twist datum on X is an invertible O\_X-module; and the multiplication maps O\_X(n) (x) O\_X(m) -> O\_X(n+m) are isomorphisms in all integer degrees”.
+**`Stacks.AlgebraicGeometry.TwistMapsInvertible.f1Bundle_and_twists`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistMapsInvertible/RepresentsAndTwists.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistMapsInvertible/RepresentsAndTwists.lean#L95). The attribute's comment: “for a scheme S and a quasi-coherent sheaf of graded O\_S-modules A generated as an A\_0-algebra by A\_1, three things hold of X = Proj\_S(A): X represents the functor F\_1 sending f : T -> S to the strict isomorphism classes of pairs (L, psi) with L an invertible O\_T-module and psi : f^*A -> ⨁\_\{n >= 0} L^\{⊗ n} a graded algebra homomorphism whose degree-one component f^*A\_1 -> L is surjective, by bijections normalised at the identity of X and natural in the test scheme; every homogeneous piece O\_X(n) of the canonical twist datum on X is an invertible O\_X-module; and the multiplication maps O\_X(n) (x) O\_X(m) -> O\_X(n+m) are isomorphisms in all integer degrees”.
 
 > **[Stacks, Tag 01O4].** Let `S` be a scheme and `𝒜` a quasi-coherent sheaf of graded
 > `𝒪_S`-modules generated as an `𝒜_0`-algebra by `𝒜_1`. Then, for `X = Proj_S(𝒜)`:
@@ -551,4 +551,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.16, Tag 01NS](https://stacks.math.columbia.edu/tag/01NS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

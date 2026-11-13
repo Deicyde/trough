@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.4 Simplicial resolutions and derived lower shriek
 
-Section 92.4 of the Stacks Project, [Tag 08PQ](https://stacks.math.columbia.edu/tag/08PQ). 8 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.4 of the Stacks Project, [Tag 08PQ](https://stacks.math.columbia.edu/tag/08PQ). 8 tags here are carried by 45 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08PR, an equation
 
 [Tag 08PR](https://stacks.math.columbia.edu/tag/08PR) in the Stacks Project.
 
-**`CommAlgCat.polynomialSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L117). The attribute's comment: “the site C\_\{B/A}”.
+**`CommAlgCat.polynomialSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L117). The attribute's comment: “the site C\_\{B/A}”.
 
 > **Stacks 08PR.** The site `C_{B/A}`: the opposite of the category of polynomial `A`-algebras
 > augmented to `B`. Its topology is the chaotic one, recorded through the ringed point below.
@@ -23,7 +23,7 @@ Section 92.4 of the Stacks Project, [Tag 08PQ](https://stacks.math.columbia.edu/
 abbrev polynomialSite
 ```
 
-**`CommAlgCat.polynomialTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L133). The attribute's comment: “the chaotic topology on C\_\{B/A}”.
+**`CommAlgCat.polynomialTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L133). The attribute's comment: “the chaotic topology on C\_\{B/A}”.
 
 > **Stacks 08PR.** The topology of `C_{B/A}` is the chaotic topology: its only coverings are
 > the maximal sieves, so every presheaf on `C_{B/A}` is a sheaf.
@@ -32,7 +32,7 @@ abbrev polynomialSite
 theorem polynomialTopology_eq_bot : polynomialTopology A B = ⊥
 ```
 
-**`CommAlgCat.polynomialStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L155). The attribute's comment: “the structure sheaf 𝒪”.
+**`CommAlgCat.polynomialStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L155). The attribute's comment: “the structure sheaf 𝒪”.
 
 > **Stacks 08PR.** The tautological sheaf of rings `𝒪` on `C_{B/A}`, which sends the object
 > `(P, α)` to `P`. It is a sheaf because the topology of `C_{B/A}` is chaotic.
@@ -41,7 +41,7 @@ theorem polynomialTopology_eq_bot : polynomialTopology A B = ⊥
 def polynomialStructureSheaf : Sheaf (polynomialTopology A B) CommRingCat.{u + 1}
 ```
 
-**`CommAlgCat.polynomialConstantSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L163). The attribute's comment: “the constant sheaf B”.
+**`CommAlgCat.polynomialConstantSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L163). The attribute's comment: “the constant sheaf B”.
 
 > **Stacks 08PR.** The constant sheaf of rings `B` on `C_{B/A}`, written with an underline in
 > the source. By Tag 08PF it is the inverse image along `π` of the ring on the point.
@@ -50,7 +50,7 @@ def polynomialStructureSheaf : Sheaf (polynomialTopology A B) CommRingCat.{u + 1
 def polynomialConstantSheaf : Sheaf (polynomialTopology A B) CommRingCat.{u + 1}
 ```
 
-**`CommAlgCat.polynomialConstantSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L188). The attribute's comment: “the constant sheaf B is constant”.
+**`CommAlgCat.polynomialConstantSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L188). The attribute's comment: “the constant sheaf B is constant”.
 
 > **Stacks 08PR.** The constant sheaf of rings `B` of Tag 08PF is the constant presheaf with
 > value `B`.
@@ -60,7 +60,7 @@ def polynomialConstantSheafIso :
     (polynomialConstantSheaf A B).obj ≅ polynomialConstantPresheaf A B
 ```
 
-**`CommAlgCat.polynomialAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L219). The attribute's comment: “the augmentation 𝒪 ⟶ B”.
+**`CommAlgCat.polynomialAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L219). The attribute's comment: “the augmentation 𝒪 ⟶ B”.
 
 > **Stacks 08PR.** The map of sheaves of rings `𝒪 → B` given by the augmentations.
 
@@ -69,7 +69,7 @@ def polynomialAugmentation :
     polynomialStructureSheaf A B ⟶ polynomialConstantSheaf A B
 ```
 
-**`CommAlgCat.polynomialAugmentation_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L228). The attribute's comment: “the augmentation is given by α”.
+**`CommAlgCat.polynomialAugmentation_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L228). The attribute's comment: “the augmentation is given by α”.
 
 > **Stacks 08PR.** On sections over the object `(P, α)` of `C_{B/A}`, the augmentation of
 > sheaves of rings is `α`, read through the identification of the constant sheaf with the constant
@@ -82,7 +82,7 @@ theorem polynomialAugmentation_app (X : polynomialSite A B) :
       (polynomialAugmentationPresheaf A B).app (Opposite.op X)
 ```
 
-**`CommAlgCat.polynomialInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L295). The attribute's comment: “the morphism i of ringed topoi”.
+**`CommAlgCat.polynomialInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L295). The attribute's comment: “the morphism i of ringed topoi”.
 
 > **Stacks 08PR.** The morphism of ringed topoi `i : (Sh(C_{B/A}), B) ⟶ (Sh(C_{B/A}), 𝒪)`:
 > the identity on underlying topoi, with `i♯ : 𝒪 ⟶ i_*B` the augmentation.
@@ -93,7 +93,7 @@ def polynomialInclusion :
       (polynomialStructureRingedTopos A B)
 ```
 
-**`CommAlgCat.polynomialInclusion_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L303). The attribute's comment: “i is the identity on topoi”.
+**`CommAlgCat.polynomialInclusion_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L303). The attribute's comment: “i is the identity on topoi”.
 
 > **Stacks 08PR.** The geometric morphism underlying `i` is the identity.
 
@@ -102,7 +102,7 @@ theorem polynomialInclusion_toToposHom :
     (polynomialInclusion A B).toToposHom = polynomialIdentityTopos A B
 ```
 
-**`CommAlgCat.polynomialProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L319). The attribute's comment: “the morphism π of ringed topoi”.
+**`CommAlgCat.polynomialProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSite.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSite.lean#L319). The attribute's comment: “the morphism π of ringed topoi”.
 
 > **Stacks 08PR.** The morphism of ringed topoi `π : (Sh(C_{B/A}), B) ⟶ (Sh(*), B)`, the
 > projection of the chaotic site to its ringed point.
@@ -111,7 +111,7 @@ theorem polynomialInclusion_toToposHom :
 abbrev polynomialProjection
 ```
 
-**`CommAlgCat.boundedPolynomialSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteSmall.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteSmall.lean#L137). The attribute's comment: “the site C\_\{B/A} with the section's footnote in force, restricting the sets of variables to cardinality at most κ. The unrestricted version is `CommAlgCat.polynomialSite`; only this one is essentially small”.
+**`CommAlgCat.boundedPolynomialSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteSmall.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteSmall.lean#L137). The attribute's comment: “the site C\_\{B/A} with the section's footnote in force, restricting the sets of variables to cardinality at most κ. The unrestricted version is `CommAlgCat.polynomialSite`; only this one is essentially small”.
 
 > The site `C_{B/A}` cut down to the polynomial algebras on at most `κ` variables: the opposite
 > of `CommAlgCat.BoundedPolynomialAugmentation`. For `κ = #B` this is the site of the source,
@@ -126,7 +126,7 @@ abbrev boundedPolynomialSite
 
 [Tag 08PS](https://stacks.math.columbia.edu/tag/08PS) in the Stacks Project.
 
-**`CommAlgCat.exists_homotopyEquivalences_resolutionMor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterion.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterion.lean#L377). The attribute's comment: “the hypothesis of the criterion of Tag 08Q9 for the cosimplicial object of a resolution: each `Mor_C((P_•, ε), W)` is homotopy equivalent to a singleton. The conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)`, resp. `D(B)`, functorially in `ℱ`, is not asserted: the criterion as formalized asks for a small site, and `CommAlgCat.polynomialSite` is large — see the first implementation note”.
+**`CommAlgCat.exists_homotopyEquivalences_resolutionMor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterion.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterion.lean#L379). The attribute's comment: “the hypothesis of the criterion of Tag 08Q9 for the cosimplicial object of a resolution: each `Mor_C((P_•, ε), W)` is homotopy equivalent to a singleton. The conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)`, resp. `D(B)`, functorially in `ℱ`, is not asserted: the criterion as formalized asks for a small site, and `CommAlgCat.polynomialSite` is large — see the first implementation note”.
 
 > **Stacks 08PS**. Let `P_•` be a simplicial `A`-algebra endowed with an augmentation
 > `ε : P_• ⟶ B`, assume every `P_n` is a polynomial algebra over `A` and that `ε` is a trivial Kan
@@ -144,7 +144,7 @@ theorem exists_homotopyEquivalences_resolutionMor
       SimplicialObject.homotopyEquivalences (Type u) f
 ```
 
-**`CommAlgCat.polynomialSiteResolutionDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean#L167). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C_{B/A})`, at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it -- as an isomorphism in the derived category, with `π_!` in its colimit presentation of Tag 08PF and the coefficients at the universe `u + 1` of the site's objects”.
+**`CommAlgCat.polynomialSiteResolutionDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean#L166). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C_{B/A})`, at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it -- as an isomorphism in the derived category, with `π_!` in its colimit presentation of Tag 08PF and the coefficients at the universe `u + 1` of the site's objects”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)`, functorially in `ℱ`, at the site `C_{B/A}`.**
 > Let `ε : P_• ⟶ B` be a simplicial `A`-algebra endowed with an augmentation to `B`, assume every
@@ -171,7 +171,7 @@ def polynomialSiteResolutionDerivedColimitNatIso
           totalDerivedColimit' (polynomialSite A B) AddCommGrpCat.{u + 1}
 ```
 
-**`CommAlgCat.polynomialSiteResolutionModuleDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean#L195). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it -- as an isomorphism in the derived category, with the coefficient ring read as `ULift.{u+1} B` exactly as the site's own ringed point `CommAlgCat.polynomialRingedPoint` reads it”.
+**`CommAlgCat.polynomialSiteResolutionModuleDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionPolynomialSite.lean#L194). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it -- as an isomorphism in the derived category, with the coefficient ring read as `ULift.{u+1} B` exactly as the site's own ringed point `CommAlgCat.polynomialRingedPoint` reads it”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)`, functorially in `ℱ`, at the site `C_{B/A}`.**
 > Under the hypotheses of Tag 08PS, the extended Moore complex of the simplicial `B`-module
@@ -201,7 +201,7 @@ def polynomialSiteResolutionModuleDerivedColimitNatIso
             (ModuleCat.{u + 1} (ULift.{u + 1} (B : Type u)))
 ```
 
-**`CommAlgCat.smallResolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean#L58). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, read at the small model of the footnote-restricted site, for the same reason as recorded for the abelian half in `StacksFrontier/Cotangent/ResolutionPointCriterionSmall.lean`”.
+**`CommAlgCat.smallResolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean#L58). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, read at the small model of the footnote-restricted site, for the same reason as recorded for the abelian half in `StacksFrontier/Cotangent/ResolutionPointCriterionSmall.lean`”.
 
 > Let `ε : P_• ⟶ B` be a resolution of `B` over `A` whose terms are polynomial algebras on at
 > most `κ` variables. For every sheaf of `B`-modules `ℱ` on the small model of the restricted site
@@ -227,7 +227,7 @@ def smallResolutionModuleLeftDerivedLowerShriekNatIso
 
 [Tag 08PT](https://stacks.math.columbia.edu/tag/08PT) in the Stacks Project.
 
-**`Stacks.ChaoticSite.ModuleValued.mooreCochainQIsoDerivedColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolution.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolution.lean#L391). The attribute's comment: “derived form at module coefficients, for one module over the constant sheaf of rings: the extended Moore complex of the evaluation on a point resolution is derived lower shriek in D(B), derived lower shriek being the total left derived functor of the colimit over the index category. Not asserted natural in the coefficient module”.
+**`Stacks.ChaoticSite.ModuleValued.mooreCochainQIsoDerivedColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolution.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolution.lean#L391). The attribute's comment: “derived form at module coefficients, for one module over the constant sheaf of rings: the extended Moore complex of the evaluation on a point resolution is derived lower shriek in D(B), derived lower shriek being the total left derived functor of the colimit over the index category. Not asserted natural in the coefficient module”.
 
 > **The derived form of [Stacks, Tag 08PT] at module coefficients.** Let `C` be a small
 > category with the chaotic topology, `B` a ring, and `U_•` a cosimplicial object of `C` such that
@@ -253,7 +253,7 @@ def mooreCochainQIsoDerivedColimit (hU : IsPointResolution U) :
           ((HomologicalComplex.single (Cᵒᵖ ⥤ ModuleCat.{u} B) (ComplexShape.up ℤ) 0).obj F))
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.mooreCochainQIsoDerivedColimit_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolutionNaturality.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolutionNaturality.lean#L398). The attribute's comment: “the derived form at module coefficients is natural in the point resolution: a morphism of cosimplicial objects between two point resolutions carries the comparison at one to the comparison at the other. Still not asserted natural in the coefficient module”.
+**`Stacks.ChaoticSite.ModuleValued.mooreCochainQIsoDerivedColimit_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolutionNaturality.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedColimitByPointResolutionNaturality.lean#L398). The attribute's comment: “the derived form at module coefficients is natural in the point resolution: a morphism of cosimplicial objects between two point resolutions carries the comparison at one to the comparison at the other. Still not asserted natural in the coefficient module”.
 
 > **The derived form of [Stacks, Tag 08PT] at module coefficients is independent of the point
 > resolution**, compatibly with morphisms of point resolutions. For a morphism `v : U_• ⟶ V_•` of
@@ -281,7 +281,7 @@ theorem mooreCochainQIsoDerivedColimit_naturality (v : U ⟶ V) (hU : IsPointRes
       (mooreCochainQIsoDerivedColimit V F hV).hom
 ```
 
-**`CommAlgCat.standardResolutionAbelianDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean#L343). The attribute's comment: “`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C)`, on the site `C_{B/A}` of 08PR, with coefficients in the universe above that of `A` and `B`”.
+**`CommAlgCat.standardResolutionAbelianDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean#L343). The attribute's comment: “`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C)`, on the site `C_{B/A}` of 08PR, with coefficients in the universe above that of `A` and `B`”.
 
 > **Stacks 08PT, in `D(Ab)`.** Let `A → B` be a ring map and let `ε : P_• → B` be the standard
 > resolution of `B` over `A`. Let `π` be as in Tag 08PR. Then
@@ -309,7 +309,7 @@ def standardResolutionAbelianDerivedLowerShriekIso :
         polynomialDerivedLowerShriek A B AddCommGrpCat.{u + 1}
 ```
 
-**`CommAlgCat.standardResolutionModuleDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean#L369). The attribute's comment: “`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, on the site `C_{B/A}` of 08PR, with module sections in the universe above that of `A` and `B`”.
+**`CommAlgCat.standardResolutionModuleDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionDerivedLowerShriek.lean#L369). The attribute's comment: “`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, on the site `C_{B/A}` of 08PR, with module sections in the universe above that of `A` and `B`”.
 
 > **Stacks 08PT, in `D(B)`.** Let `A → B` be a ring map and let `ε : P_• → B` be the standard
 > resolution of `B` over `A`. Let `π` be as in Tag 08PR. Then
@@ -337,7 +337,7 @@ def standardResolutionModuleDerivedLowerShriekIso :
         polynomialDerivedLowerShriek A B (ModuleCat.{u + 1} (ULift.{u + 1} (B : Type u)))
 ```
 
-**`CommAlgCat.exists_homotopyEquivalences_standardResolutionMor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterion.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterion.lean#L412). The attribute's comment: “the hypothesis of the criterion of Tag 08Q9 for the cosimplicial object of the standard resolution: each `Mor_C((P_•, ε), W)` is homotopy equivalent to a singleton. The conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)`, resp. `D(B)`, functorially in `ℱ`, is not asserted, for the reason recorded at Tag 08PS in this file”.
+**`CommAlgCat.exists_homotopyEquivalences_standardResolutionMor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterion.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterion.lean#L414). The attribute's comment: “the hypothesis of the criterion of Tag 08Q9 for the cosimplicial object of the standard resolution: each `Mor_C((P_•, ε), W)` is homotopy equivalent to a singleton. The conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)`, resp. `D(B)`, functorially in `ℱ`, is not asserted, for the reason recorded at Tag 08PS in this file”.
 
 > **Stacks 08PT**. Let `A → B` be a ring map and let `ε : P_• ⟶ B` be the standard resolution of
 > `B` over `A`. Then for every object `W` of the site `C_{B/A}` the simplicial set
@@ -357,7 +357,7 @@ theorem exists_homotopyEquivalences_standardResolutionMor (A : Type u) [CommRing
       SimplicialObject.homotopyEquivalences (Type u) f
 ```
 
-**`CommAlgCat.standardResolutionDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean#L201). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C_{B/A})`, for the standard resolution, as an isomorphism in the derived category rather than degreewise, read at the small model of the footnote-restricted site — for the reason recorded at Tag 08PS in this file”.
+**`CommAlgCat.standardResolutionDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean#L202). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` functorially in `ℱ` in `Ab(C_{B/A})`, for the standard resolution, as an isomorphism in the derived category rather than degreewise, read at the small model of the footnote-restricted site — for the reason recorded at Tag 08PS in this file”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(Ab)` for the standard resolution**, functorially in the abelian
 > sheaf `ℱ` on the small model of the site restricted to polynomial algebras on at most
@@ -384,7 +384,7 @@ def standardResolutionDerivedColimitNatIso :
             (standardResolutionVarCardinal A B)) AddCommGrpCat.{u}
 ```
 
-**`CommAlgCat.standardResolutionModuleDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean#L228). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, for the standard resolution, as an isomorphism in the derived category rather than degreewise, read at the small model of the footnote-restricted site — for the reason recorded at Tag 08PS in this file”.
+**`CommAlgCat.standardResolutionModuleDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionSmallDerived.lean#L229). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, for the standard resolution, as an isomorphism in the derived category rather than degreewise, read at the small model of the footnote-restricted site — for the reason recorded at Tag 08PS in this file”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` for the standard resolution**, functorially in the sheaf of
 > `B`-modules `ℱ` on the small model of the site restricted to polynomial algebras on at most
@@ -409,7 +409,7 @@ def standardResolutionModuleDerivedColimitNatIso :
             (standardResolutionVarCardinal A B)) (ModuleCat.{u} (B : Type u))
 ```
 
-**`CommAlgCat.standardResolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean#L84). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, for the standard resolution, read at the small model of the footnote-restricted site, for the reason recorded at Tag 08PS in this file”.
+**`CommAlgCat.standardResolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionPointCriterionSmallOfModules.lean#L84). The attribute's comment: “the conclusion `Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` functorially in `ℱ` in `Mod(B̲)`, for the standard resolution, read at the small model of the footnote-restricted site, for the reason recorded at Tag 08PS in this file”.
 
 > For every sheaf of `B`-modules `ℱ` on the small model of the site `C_{B/A}` restricted to
 > polynomial algebras on at most `CommAlgCat.standardResolutionVarCardinal A B` variables, the
@@ -438,19 +438,21 @@ def standardResolutionModuleLeftDerivedLowerShriekNatIso (n : ℕ) :
 
 [Tag 08PU](https://stacks.math.columbia.edu/tag/08PU) in the Stacks Project.
 
-**`CommAlgCat.free_kaehlerDifferential_polynomialSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L383). The attribute's comment: “the step Li^*Ω\_\{𝒪/A} = i^*Ω\_\{𝒪/A}: each Ω\_\{P/A} is a free `P`-module, hence Ω\_\{𝒪/A} is flat over 𝒪”.
+**`CommAlgCat.free_kaehlerDifferential_polynomialSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L387). The attribute's comment: “the first sentence of the proof: for each object P → B of C\_\{B/A} the module Ω\_\{P/A} is a free P-module; this is the input to the step Li^*Ω\_\{𝒪/A} = i^*Ω\_\{𝒪/A}, which is CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso”.
 
 > **The differentials of each object of `C_{B/A}` are free over it.** Every object `(P, α)` of
 > the site has `P` a polynomial algebra over `A`, so `Ω[P⁄A]` is free on the variables. This is the
-> objectwise input that lets the argument of Tag 08PU replace `Li^*` by `i^*`; the sheaf-level
-> statement is `CommAlgCat.polynomialRelativeDifferentials_isFlat`.
+> first sentence of the proof of Tag 08PU, the objectwise input to its step `Li^* = i^*`; the
+> sheaf-level flatness is `CommAlgCat.polynomialRelativeDifferentials_isFlat`, and the step itself,
+> `Li^*Ω_{𝒪/A} ≅ i^*Ω_{𝒪/A}` in `D(B̲)`, is `CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso`
+> of `StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean`.
 
 ```lean
 theorem free_kaehlerDifferential_polynomialSite (X : polynomialSite A B) :
     Module.Free (X.unop.obj.left : Type u) Ω[(X.unop.obj.left : Type u)⁄A]
 ```
 
-**`CommAlgCat.standardResolutionCotangentMooreComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L482). The attribute's comment: “the step Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) = (Ω\_\{𝒪/A} ⊗\_𝒪 B̲)(P\_•, ε): the evaluation of i^*Ω\_\{𝒪/A} on the standard resolution is the simplicial module whose complex is L\_\{B/A}, as an isomorphism of complexes”.
+**`CommAlgCat.standardResolutionCotangentMooreComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L486). The attribute's comment: “the step Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) = (Ω\_\{𝒪/A} ⊗\_𝒪 B̲)(P\_•, ε): the evaluation of i^*Ω\_\{𝒪/A} on the standard resolution is the simplicial module whose complex is L\_\{B/A}, as an isomorphism of complexes”.
 
 > **The Moore complex of `(i^*Ω_{𝒪/A})(P_•, ε)` is the complex of `L_{B/A}`.** For the
 > standard resolution of `B` over `A`, the Moore complex of the simplicial abelian group obtained
@@ -471,7 +473,7 @@ def standardResolutionCotangentMooreComplexIso :
           (cotangentSimplicialModule.{u, u} A B).object)
 ```
 
-**`CommAlgCat.standardResolutionLeftDerivedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L520). The attribute's comment: “the identification L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲), for the point morphism of the small model of the footnote-restricted site C\_\{B/A} and with Lπ\_! read degreewise, as the left derived functors of the π\_! of Tag 08PF at abelian coefficients: the sections at the point of L\_nπ\_! are the degree -n cohomology of the cotangent complex of Tag 08PN. The source's isomorphism in D(B) needs the module-level Lπ\_!, which is absent from this library”.
+**`CommAlgCat.standardResolutionLeftDerivedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L524). The attribute's comment: “the identification L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲), for the point morphism of the small model of the footnote-restricted site C\_\{B/A} and with Lπ\_! read degreewise, as the left derived functors of the π\_! of Tag 08PF at abelian coefficients: the sections at the point of L\_nπ\_! are the degree -n cohomology of the cotangent complex of Tag 08PN. The source's isomorphism in D(B) needs the module-level Lπ\_!, which is absent from this library”.
 
 > **Tag 08PU at the small model of the restricted site `C_{B/A}`.** The sections at the point
 > of `L_nπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲)` are the degree `-n` cohomology of the cotangent complex `L_{B/A}` of
@@ -499,7 +501,51 @@ def standardResolutionLeftDerivedCotangentComplexIso (n : ℕ) :
         ((cotangentComplex.{u, u} A B).homology (-(n : ℤ)))
 ```
 
-**`CommAlgCat.standardResolutionModuleLeftDerivedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean#L162). The attribute's comment: “L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) at linear coefficients, for the point morphism of the small model of the footnote-restricted site C\_\{B/A} and with Lπ\_! read degreewise, as the left derived functors of the π\_! of Tag 08PF on sheaves of B-modules: the sections at the point of L\_nπ\_! are the degree -n cohomology of the cotangent complex of Tag 08PN, as B-modules. The source's isomorphism in D(B) needs the derived form of Tag 08PT”.
+**`CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean#L159). The attribute's comment: “the step Li^*Ω\_\{𝒪/A} = i^*Ω\_\{𝒪/A} in D(B̲), on the small model of the footnote-restricted site C\_\{B/A}, where i^* is extension of scalars along the augmentation 𝒪 ⟶ B̲ and Li^* its total left derived functor”.
+
+> **`Li^*Ω_{𝒪/A} = i^*Ω_{𝒪/A}`** in `D(B̲)`, on the small model of the footnote-restricted site
+> `C_{B/A}`: the total left derived functor of the module pullback along `i`, evaluated at
+> `Ω_{𝒪/A}` in degree zero, is the underived pullback in degree zero. This is the comparison
+> `Li^* ⟶ i^*` at `Ω_{𝒪/A}[0]`, invertible by
+> `CommAlgCat.isIso_derivedExtendScalarsCounit_singleDifferentials`, read between the two
+> single-degree embeddings.
+
+```lean
+def smallPolynomialDerivedPullbackDifferentialsIso :
+    (smallPolynomialDerivedModulePullback A B κ).obj
+        ((DerivedCategory.singleFunctor _ 0).obj (smallPolynomialDifferentials A B κ)) ≅
+      (DerivedCategory.singleFunctor _ 0).obj
+        ((smallPolynomialModulePullback A B κ).obj (smallPolynomialDifferentials A B κ))
+```
+
+**`CommAlgCat.cotangentComplexIsoDerivedLowerShriekDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean#L192). The attribute's comment: “the chain L\_\{B/A} = Lπ\_!(Li^*Ω\_\{𝒪/A}) = Lπ\_!(i^*Ω\_\{𝒪/A}) = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲), read in D(Ab), on the small model of the footnote-restricted site C\_\{B/A}”.
+
+> **[Stacks, Tag 08PU] as the full chain, in `D(Ab)`**: on the small model of the
+> footnote-restricted site `C_{B/A}`, at the cardinal bounding the standard resolution,
+>
+> `L_{B/A} ≅ Lπ_!(Li^*Ω_{𝒪/A})`,
+>
+> with `Lπ_!` the derived colimit of the underlying abelian presheaves
+> (`Stacks.ChaoticSite.abelianDerivedColimitOfModules`). The isomorphism is the composite of the
+> source's three steps: `Li^*Ω_{𝒪/A} = i^*Ω_{𝒪/A}`
+> (`CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso`); `i^*Ω_{𝒪/A} = Ω_{𝒪/A} ⊗_𝒪 B̲`, the
+> sheaf `(P, α) ↦ B ⊗_{P,α} Ω_{P/A}` (`CommAlgCat.extendScalarsDifferentialsIso`); and
+> `Lπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲) = L_{B/A}`, computed on the standard resolution
+> (`CommAlgCat.derivedLowerShriekCotangentIso`).
+
+```lean
+def cotangentComplexIsoDerivedLowerShriekDerivedPullback :
+    DerivedCategory.Q.obj
+        (((forget₂ (ModuleCat.{u} (B : Type u)) AddCommGrpCat.{u}).mapHomologicalComplex
+          (ComplexShape.up ℤ)).obj (cotangentComplex.{u, u} A B)) ≅
+      (Stacks.ChaoticSite.abelianDerivedColimitOfModules
+          (smallPolynomialConstantPresheaf A B (standardResolutionVarCardinal A B))).obj
+        ((smallPolynomialDerivedModulePullback A B (standardResolutionVarCardinal A B)).obj
+          ((DerivedCategory.singleFunctor _ 0).obj
+            (smallPolynomialDifferentials A B (standardResolutionVarCardinal A B))))
+```
+
+**`CommAlgCat.standardResolutionModuleLeftDerivedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean#L162). The attribute's comment: “L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) at linear coefficients, for the point morphism of the small model of the footnote-restricted site C\_\{B/A} and with Lπ\_! read degreewise, as the left derived functors of the π\_! of Tag 08PF on sheaves of B-modules: the sections at the point of L\_nπ\_! are the degree -n cohomology of the cotangent complex of Tag 08PN, as B-modules. The source's isomorphism in D(B) needs the derived form of Tag 08PT”.
 
 > **Tag 08PU at the small model of the restricted site `C_{B/A}`, with `B`-linear
 > coefficients.** The sections at the point of `L_nπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲)` are the degree `-n`
@@ -523,7 +569,7 @@ def standardResolutionModuleLeftDerivedCotangentComplexIso (n : ℕ) :
       (cotangentComplex.{u, u} A B).homology (-(n : ℤ))
 ```
 
-**`CommAlgCat.standardResolutionCotangentDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriekDerived.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriekDerived.lean#L101). The attribute's comment: “in D(B), at module coefficients: Q(L\_\{B/A}) = L pi\_!(Omega ⊗ B) for the point morphism of the small model of the footnote-restricted site C\_\{B/A}, with L pi\_! the total left derived functor of the colimit on D(B-underline)”.
+**`CommAlgCat.standardResolutionCotangentDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriekDerived.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriekDerived.lean#L101). The attribute's comment: “in D(B), at module coefficients: Q(L\_\{B/A}) = L pi\_!(Omega ⊗ B) for the point morphism of the small model of the footnote-restricted site C\_\{B/A}, with L pi\_! the total left derived functor of the colimit on D(B-underline)”.
 
 > **[Stacks, Tag 08PU] in `D(B)`, at module coefficients and on the small model of the
 > footnote-restricted site `C_{B/A}`.** The cotangent complex `L_{B/A}` of [Stacks, Tag 08PN] is
@@ -550,7 +596,7 @@ def standardResolutionCotangentDerivedLowerShriekIso :
       smallPolynomialCotangentDerivedLowerShriek A B (standardResolutionVarCardinal A B)
 ```
 
-**`CommAlgCat.smallResolutionCotangentDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerived.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentDerived.lean#L118). The attribute's comment: “in D(B), at module coefficients, for an arbitrary resolution whose terms have at most κ variables: Q of the complex of that resolution is L pi\_!(Omega ⊗ B-underline) for the point morphism of the small model of the footnote-restricted site C\_\{B/A}. Combined with the same statement at the standard resolution this is Remark 08QI, that any resolution computes L\_\{B/A}”.
+**`CommAlgCat.smallResolutionCotangentDerivedLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerived.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionCotangentDerived.lean#L118). The attribute's comment: “in D(B), at module coefficients, for an arbitrary resolution whose terms have at most κ variables: Q of the complex of that resolution is L pi\_!(Omega ⊗ B-underline) for the point morphism of the small model of the footnote-restricted site C\_\{B/A}. Combined with the same statement at the standard resolution this is Remark 08QI, that any resolution computes L\_\{B/A}”.
 
 > **[Stacks, Tag 08PU] in `D(B)` for an arbitrary bounded resolution.** Let `ε : P_• ⟶ B` be a
 > resolution of `B` over `A` in the sense of [Stacks, Tag 08QI] whose terms are polynomial algebras
@@ -583,7 +629,7 @@ def smallResolutionCotangentDerivedLowerShriekIso
       smallPolynomialCotangentDerivedLowerShriek A B κ
 ```
 
-**`CommAlgCat.standardResolutionCotangentDerivedLowerShriekIsoOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerived.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentDerived.lean#L162). The attribute's comment: “in D(B), at module coefficients, at an arbitrary cardinal bound κ containing the standard resolution: Q(L\_\{B/A}) = L pi\_!(Omega ⊗ B-underline) for the point morphism of the small model of the site restricted to at most κ variables”.
+**`CommAlgCat.standardResolutionCotangentDerivedLowerShriekIsoOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerived.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionCotangentDerived.lean#L162). The attribute's comment: “in D(B), at module coefficients, at an arbitrary cardinal bound κ containing the standard resolution: Q(L\_\{B/A}) = L pi\_!(Omega ⊗ B-underline) for the point morphism of the small model of the site restricted to at most κ variables”.
 
 > **[Stacks, Tag 08PU] in `D(B)` at an arbitrary cardinal bound.** The cotangent complex
 > `L_{B/A}` of [Stacks, Tag 08PN] is derived lower shriek of the sheaf of `B̲`-modules
@@ -606,7 +652,7 @@ def standardResolutionCotangentDerivedLowerShriekIsoOfLE
       smallPolynomialCotangentDerivedLowerShriek A B κ
 ```
 
-**`CommAlgCat.smallResolutionCotangentDerivedLowerShriekIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerivedNaturality.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentDerivedNaturality.lean#L312). The attribute's comment: “in D(B), at module coefficients: the identification of the complex of a resolution with L pi\_!(Omega ⊗ B-underline) is functorial in the resolution, so the isomorphism it gives between the complexes of two resolutions is the map induced by a morphism between them. This is the arrow-level form of Remark 08QI”.
+**`CommAlgCat.smallResolutionCotangentDerivedLowerShriekIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentDerivedNaturality.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ResolutionCotangentDerivedNaturality.lean#L312). The attribute's comment: “in D(B), at module coefficients: the identification of the complex of a resolution with L pi\_!(Omega ⊗ B-underline) is functorial in the resolution, so the isomorphism it gives between the complexes of two resolutions is the map induced by a morphism between them. This is the arrow-level form of Remark 08QI”.
 
 > **[Stacks, Tag 08PU] in `D(B)` is functorial in the resolution.** Let `ε : P_• ⟶ B` and
 > `ε' : P'_• ⟶ B` be resolutions of `B` over `A` in the sense of [Stacks, Tag 08QI] whose terms are
@@ -638,7 +684,7 @@ theorem smallResolutionCotangentDerivedLowerShriekIso_naturality (w : P ⟶ P') 
       (smallResolutionCotangentDerivedLowerShriekIso ε κ hPκ hε).hom
 ```
 
-**`CommAlgCat.leftDerivedColimPolynomialCotangentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SurjectionSymmetricPowerVanishing.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SurjectionSymmetricPowerVanishing.lean#L119). The attribute's comment: “the identification L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) read degreewise at LINEAR coefficients: for every n, the nth left derived functor of the colimit over the opposite of the small model of the footnote-restricted site, applied to Ω, is the degree -n cohomology of the cotangent complex of Tag 08PN, as an isomorphism of B-modules. L\_n colim is Tag 08PF's definition of H\_n(C\_\{B/A}, -); the identification with the sections at the point of L\_nπ\_! is Stacks.ChaoticSite.ModuleValued.moduleLeftDerivedPointLowerShriekNatIso. Proved for every ring map A → B”.
+**`CommAlgCat.leftDerivedColimPolynomialCotangentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SurjectionSymmetricPowerVanishing.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SurjectionSymmetricPowerVanishing.lean#L119). The attribute's comment: “the identification L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) read degreewise at LINEAR coefficients: for every n, the nth left derived functor of the colimit over the opposite of the small model of the footnote-restricted site, applied to Ω, is the degree -n cohomology of the cotangent complex of Tag 08PN, as an isomorphism of B-modules. L\_n colim is Tag 08PF's definition of H\_n(C\_\{B/A}, -); the identification with the sections at the point of L\_nπ\_! is Stacks.ChaoticSite.ModuleValued.moduleLeftDerivedPointLowerShriekNatIso. Proved for every ring map A → B”.
 
 > **Tag 08PU at the small model of the restricted site `C_{B/A}`, at linear coefficients.**
 > The `n`th homology of `C_{B/A}` with coefficients in `Ω = Ω_{𝒪/A} ⊗_𝒪 B̲` — the `n`th left
@@ -665,7 +711,7 @@ def leftDerivedColimPolynomialCotangentIso (n : ℕ) :
 
 [Tag 08QE](https://stacks.math.columbia.edu/tag/08QE) in the Stacks Project.
 
-**`CommAlgCat.atiyahModuleDerivedInverseImageCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteResolution.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClassBigSiteResolution.lean#L170). The attribute's comment: “in D(B), at module coefficients: Lπ\_!(π^\{-1}M) = M at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it, read on its `AsSmall` model -- with Lπ\_! the total left derived functor of the colimit on D(B̲), π^\{-1} the constant diagram, and the coefficient ring read as `ULift.{u+1} B` exactly as the site's own ringed point `CommAlgCat.polynomialRingedPoint` reads it”.
+**`CommAlgCat.atiyahModuleDerivedInverseImageCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteResolution.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/AtiyahClassBigSiteResolution.lean#L170). The attribute's comment: “in D(B), at module coefficients: Lπ\_!(π^\{-1}M) = M at `CommAlgCat.polynomialSite` -- the site of Tag 08PR itself, not a restriction of it, read on its `AsSmall` model -- with Lπ\_! the total left derived functor of the colimit on D(B̲), π^\{-1} the constant diagram, and the coefficient ring read as `ULift.{u+1} B` exactly as the site's own ringed point `CommAlgCat.polynomialRingedPoint` reads it”.
 
 > **[Stacks, Tag 08QE] at the site `C_{B/A}` itself.** Derived lower shriek of the inverse
 > image of a `B`-module is that module: `Lπ_!(π^{-1}M) = M` in `D(B)`, naturally in `M`. Here
@@ -689,7 +735,7 @@ def atiyahModuleDerivedInverseImageCompLowerShriekIso :
           (ModuleCat.{u + 1} (ULift.{u + 1} (B : Type u))) ≅ 𝟭 _
 ```
 
-**`CommAlgCat.polynomialLeftDerivedZeroLowerShriekInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L548). The attribute's comment: “Lπ\_!(π^\{-1}M) = M in degree zero, for the point morphism of the small model of the footnote-restricted site C\_\{B/A} at abelian coefficients”.
+**`CommAlgCat.polynomialLeftDerivedZeroLowerShriekInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L552). The attribute's comment: “Lπ\_!(π^\{-1}M) = M in degree zero, for the point morphism of the small model of the footnote-restricted site C\_\{B/A} at abelian coefficients”.
 
 > **Tag 08QE at the small model of the restricted site `C_{B/A}`, in degree zero.** The
 > sections at the point of `L_0π_!(π^{-1}M)` are the sections of `M`, for every abelian sheaf `M`
@@ -711,7 +757,7 @@ def polynomialLeftDerivedZeroLowerShriekInverseImageIso
       (Stacks.ChaoticSite.pointSections.{u, u + 1, u} AddCommGrpCat.{u}).obj M
 ```
 
-**`CommAlgCat.isZero_polynomialLeftDerivedSuccLowerShriekInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L566). The attribute's comment: “Lπ\_!(π^\{-1}M) = M in positive degrees: L\_nπ\_!(π^\{-1}M) = 0 for n > 0”.
+**`CommAlgCat.isZero_polynomialLeftDerivedSuccLowerShriekInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteCotangentComplex.lean#L570). The attribute's comment: “Lπ\_!(π^\{-1}M) = M in positive degrees: L\_nπ\_!(π^\{-1}M) = 0 for n > 0”.
 
 > **Tag 08QE at the small model of the restricted site `C_{B/A}`, in positive degrees.** The
 > sections at the point of `L_nπ_!(π^{-1}M)` vanish for `n > 0`, so together with
@@ -731,7 +777,7 @@ theorem isZero_polynomialLeftDerivedSuccLowerShriekInverseImage
             (standardResolutionVarCardinal A B))).obj M)))
 ```
 
-**`CommAlgCat.smallPolynomialModuleDerivedInverseImageCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean#L271). The attribute's comment: “in D(B), at module coefficients: Lπ\_!(π^\{-1}M) = M for the point morphism of the small model of the footnote-restricted site C\_\{B/A}, with Lπ\_! the total left derived functor of the colimit on D(B̲) and π^\{-1} the constant diagram”.
+**`CommAlgCat.smallPolynomialModuleDerivedInverseImageCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteModuleShriek.lean#L271). The attribute's comment: “in D(B), at module coefficients: Lπ\_!(π^\{-1}M) = M for the point morphism of the small model of the footnote-restricted site C\_\{B/A}, with Lπ\_! the total left derived functor of the colimit on D(B̲) and π^\{-1} the constant diagram”.
 
 > **Tag 08QE in `D(B)` at the small model of the restricted site `C_{B/A}`.** Derived lower
 > shriek of the inverse image of a `B`-module is that module: `Lπ_!(π^{-1}M) = M` in `D(B)`,
@@ -751,7 +797,7 @@ def smallPolynomialModuleDerivedInverseImageCompLowerShriekIso :
 
 [Tag 08QF](https://stacks.math.columbia.edu/tag/08QF) in the Stacks Project.
 
-**`CommAlgCat.cotangentComplex_homologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/HomologyZero.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/HomologyZero.lean#L345).
+**`CommAlgCat.cotangentComplex_homologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/HomologyZero.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/HomologyZero.lean#L345).
 
 > **Stacks Project, Tag 08QF.** The degree-zero homology of the cotangent complex `L_{B/A}` is
 > the module of Kähler differentials `Ω[B⁄A]`.
@@ -765,7 +811,7 @@ public noncomputable def cotangentComplex_homologyZeroIso :
 
 [Tag 08QG](https://stacks.math.columbia.edu/tag/08QG) in the Stacks Project.
 
-**`CommAlgCat.polynomialEvaluationLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L137). The attribute's comment: “evaluation at B → B is a lower shriek”.
+**`CommAlgCat.polynomialEvaluationLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L137). The attribute's comment: “evaluation at B → B is a lower shriek”.
 
 > **Stacks 08QG.** For `B` a polynomial algebra over `A`, evaluation at the identity
 > augmentation `B → B` is left adjoint to `π^{-1}`: it *is* a lower shriek.
@@ -777,7 +823,7 @@ def polynomialEvaluationLowerShriekAdjunction (hB : IsPolynomialAlgebra A B) :
       polynomialAbelianInverseImage.{m} A B
 ```
 
-**`CommAlgCat.polynomialAbelianLowerShriekEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L147). The attribute's comment: “π\_! is evaluation at B → B”.
+**`CommAlgCat.polynomialAbelianLowerShriekEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L147). The attribute's comment: “π\_! is evaluation at B → B”.
 
 > **Stacks 08QG.** For `B` a polynomial algebra over `A`, the lower shriek `π_!` of Stacks 08PR
 > is canonically evaluation at the identity augmentation `B → B`.
@@ -789,7 +835,7 @@ def polynomialAbelianLowerShriekEvaluationIso (hB : IsPolynomialAlgebra A B) :
         (polynomialIdentityObj A B hB) (polynomialTopology A B)
 ```
 
-**`CommAlgCat.polynomialAbelianLowerShriek_pointSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L157). The attribute's comment: “π\_!F = F(B → B)”.
+**`CommAlgCat.polynomialAbelianLowerShriek_pointSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L157). The attribute's comment: “π\_!F = F(B → B)”.
 
 > **Stacks 08QG.** `π_!ℱ = ℱ(B → B)`: the sections of `π_!ℱ` at the point are the sections of
 > `ℱ` over the identity augmentation, naturally in `ℱ`.
@@ -803,7 +849,7 @@ def polynomialAbelianLowerShriek_pointSectionsIso (hB : IsPolynomialAlgebra A B)
           (polynomialIdentityObj A B hB)
 ```
 
-**`CommAlgCat.polynomialAbelianLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L170). The attribute's comment: “π\_! is exact: finite limits”.
+**`CommAlgCat.polynomialAbelianLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L170). The attribute's comment: “π\_! is exact: finite limits”.
 
 > **Stacks 08QG.** For `B` a polynomial algebra over `A`, `π_!` preserves finite limits. With
 > `CommAlgCat.polynomialAbelianLowerShriek_preservesColimitsOfShape` this is the exactness of `π_!`
@@ -814,7 +860,7 @@ theorem polynomialAbelianLowerShriek_preservesFiniteLimits (hB : IsPolynomialAlg
     PreservesFiniteLimits (polynomialAbelianLowerShriek.{m} A B)
 ```
 
-**`CommAlgCat.polynomialAbelianLowerShriek_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L178). The attribute's comment: “π\_! is exact: colimits”.
+**`CommAlgCat.polynomialAbelianLowerShriek_preservesColimitsOfShape`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteShriek.lean#L178). The attribute's comment: “π\_! is exact: colimits”.
 
 > **Stacks 08QG.** `π_!` preserves all colimits, being a left adjoint; no hypothesis on `B` is
 > needed for this half of exactness.
@@ -828,7 +874,7 @@ instance polynomialAbelianLowerShriek_preservesColimitsOfShape {K : Type*} [Cate
 
 [Tag 08QH](https://stacks.math.columbia.edu/tag/08QH) in the Stacks Project.
 
-**`CommAlgCat.cotangentComplex_iso_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebra.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebra.lean#L285).
+**`CommAlgCat.cotangentComplex_iso_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebra.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebra.lean#L285).
 
 > **Stacks Project, Tag 08QH.** If `B` is a polynomial algebra over the ring `A`, then the
 > cotangent complex `L_{B/A}` is quasi-isomorphic to `Ω[B⁄A][0]`.
@@ -848,4 +894,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.4, Tag 08PQ](https://stacks.math.columbia.edu/tag/08PQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

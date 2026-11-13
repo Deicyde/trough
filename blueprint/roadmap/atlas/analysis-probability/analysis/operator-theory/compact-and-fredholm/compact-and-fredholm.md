@@ -7,7 +7,7 @@ statement: formalized
 
 # Compact and Fredholm operators: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/index.html).
 
 Compact and finite-rank operators, Schauder's theorem, complete continuity, Hilbert–Schmidt operators, Riesz–Schauder theory, Fredholm alternative and index, closed-range theorems.
 
@@ -21,7 +21,7 @@ Then the kernel $\ker A$ is not separable.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Special classes of linear operators), problem `ma_proofbench_l2_42`.
 
-Stated but not proved: `MathlibExt.Analysis.OperatorTheory.CompactOperatorKernelNonseparableWanted.not_separableSpace_ker_of_isCompactOperator_of_not_separableSpace` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/CompactOperatorKernelNonseparableWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/OperatorTheory/CompactOperatorKernelNonseparableWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/index.html#not-separable-space-ker-of-is-compact-op).
+Stated but not proved: `MathlibExt.Analysis.OperatorTheory.CompactOperatorKernelNonseparableWanted.not_separableSpace_ker_of_isCompactOperator_of_not_separableSpace` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/CompactOperatorKernelNonseparableWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/OperatorTheory/CompactOperatorKernelNonseparableWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/index.html#not-separable-space-ker-of-is-compact-op).
 
 ## Depends on
 
@@ -30,4 +30,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Compact and Fredholm operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm)

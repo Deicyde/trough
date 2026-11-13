@@ -1,6 +1,6 @@
 # 111 Exercises
 
-Chapter 111 of the Stacks Project, *Exercises*, [Tag 0275](https://stacks.math.columbia.edu/tag/0275): the 14 sections of its 66 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 19 tags are carried by 46 declarations of the repository (all in StacksFrontier) and 29 registered declarations.
+Chapter 111 of the Stacks Project, *Exercises*, [Tag 0275](https://stacks.math.columbia.edu/tag/0275): the 14 sections of its 66 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 20 tags are carried by 60 declarations of the repository (all in StacksFrontier) and 28 registered declarations.
 
 - [111.2 Colimits](111-2-colimits.md)
 - [111.6 The Spectrum of a ring](111-6-the-spectrum-of-a-ring.md)

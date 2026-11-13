@@ -7,7 +7,7 @@ statement: formalized
 
 # ℓ-regular overpartitions
 
-15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html).
+15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html).
 
 ## Number of $\ell$-regular overpartitions
 
@@ -21,7 +21,7 @@ counted, since parts are positive.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Identity (1).
 
-Formalized by `MetaMathlibExt.regularOverpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count).
+Formalized by `MetaMathlibExt.regularOverpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count).
 
 ## One $\ell$-regular overpartition of zero
 
@@ -36,7 +36,7 @@ parameter.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Identity (1).
 
-Formalized by `MetaMathlibExt.regularOverpartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-zero).
+Formalized by `MetaMathlibExt.regularOverpartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-zero).
 
 ## Two $\ell$-regular overpartitions of one
 
@@ -51,7 +51,7 @@ sole part $1$.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Identity (1).
 
-Formalized by `MetaMathlibExt.regularOverpartitionCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-one).
+Formalized by `MetaMathlibExt.regularOverpartitionCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-one).
 
 ## Truncated generating function for $\ell$-regular overpartitions
 
@@ -71,7 +71,7 @@ geometric series is cut off at $i = N$, and only coefficients up to degree $N$ a
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Identity (1).
 
-Stated but not proved: `MetaMathlibExt.regularOverpartitionCount_eq_coeff_truncatedProduct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-eq-coeff-tru).
+Stated but not proved: `MetaMathlibExt.regularOverpartitionCount_eq_coeff_truncatedProduct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-count-eq-coeff-tru).
 
 ## $p$-regular overpartitions are almost always divisible by $2^j$
 
@@ -87,7 +87,7 @@ where $X$ runs over the natural numbers.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_prime_power_two_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-prime-power-two-de).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_prime_power_two_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-prime-power-two-de).
 
 ## Almost all $3p$-regular overpartition counts are divisible by $2^j$
 
@@ -100,7 +100,7 @@ $2^j \mid A_{3p}(n)$, divided by $X$, tends to $1$ as the natural number $X$ ten
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_prime_power_two_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-prime-po).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_prime_power_two_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-prime-po).
 
 ## Almost all $3 \cdot 2^\alpha$-regular overpartition counts are divisible by $2^j$
 
@@ -114,7 +114,7 @@ the natural number $X$ tends to infinity.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_two_power_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-two-powe).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_two_power_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-two-powe).
 
 ## Congruences modulo powers of two for $3 \cdot 2^\alpha$-regular overpartitions
 
@@ -132,7 +132,7 @@ off a series in $q^{24}$.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_two_power_many_primes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-two-powe-2).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_three_mul_two_power_many_primes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-three-mul-two-powe-2).
 
 ## $\ell$-regular overpartitions vanish modulo $4$ along families of primes
 
@@ -150,7 +150,7 @@ The paper takes $j$ to be an integer; here $j$ is a natural number.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_prime_family` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-prime-fam).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_prime_family` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-prime-fam).
 
 ## $\ell$-regular overpartitions vanish modulo $4$ along powers of one prime
 
@@ -168,7 +168,7 @@ $p \equiv 3 \pmod 4$ of Theorem 5.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_single_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-single-pr).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_single_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-single-pr).
 
 ## $\ell$-regular overpartitions vanish modulo $4$ on progressions modulo $4\ell$
 
@@ -181,7 +181,7 @@ $j \not\equiv (\ell - 3)/4 \pmod{\ell}$. Then $A_\ell(4\ell n + 4j + 3) \equiv 0
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_progression` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-progressi).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_mod_four_progression` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-mod-four-progressi).
 
 ## Self-similarity modulo 7 of 7-regular overpartition counts
 
@@ -193,7 +193,7 @@ and $k$, $A_7(7^{2k}(4n+3)) \equiv A_7(4n+3) \pmod 7$.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_seven_self_similarity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-seven-self-similar).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_seven_self_similarity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-seven-self-similar).
 
 ## Ramanujan-type congruences modulo 7 for 7-regular overpartitions
 
@@ -208,7 +208,7 @@ natural number $i < 1024$ with $i \equiv 4 \pmod{32}$.
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.regularOverpartition_seven_ramanujan_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-seven-ramanujan-co).
+Stated but not proved: `MetaMathlibExt.regularOverpartition_seven_ramanujan_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#regular-overpartition-seven-ramanujan-co).
 
 ## Prime-power congruence for truncated Euler products
 
@@ -227,7 +227,7 @@ $\prod_{m \ge 1} (1 - q^{sm})^{p^t} \equiv \prod_{m \ge 1} (1 - q^{spm})^{p^{t-1
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.finiteEulerProduct_primePower_congruence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#finite-euler-product-prime-power-congrue).
+Stated but not proved: `MetaMathlibExt.finiteEulerProduct_primePower_congruence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#finite-euler-product-prime-power-congrue).
 
 ## Double coset representatives for $\Gamma_0(N)$
 
@@ -249,7 +249,7 @@ generated by $T$; adding $-I$ to $\Gamma_\infty$ changes nothing, as $-I \in \Ga
 
 - Murugan P and Fathima S. N, *Arithmetic Density of Certain ℓ-Regular Overpartitions*, INTEGERS 25 (2025), Article A3, Lemma 3, quoting Wang, Lemma 4.3. "`N / 2` is squarefree" is read with `2 ∣ N`.
 
-Stated but not proved: `MetaMathlibExt.exists_gamma0_lowerUnipotent_T_zpow_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#exists-gamma0-lower-unipotent-t-zpow-dec).
+Stated but not proved: `MetaMathlibExt.exists_gamma0_lowerUnipotent_T_zpow_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RegularOverpartitionDensityWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html#exists-gamma0-lower-unipotent-t-zpow-dec).
 
 ## Depends on
 
@@ -258,4 +258,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: ℓ-regular overpartitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/regular-overpartitions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.10 Descending relative objects
 
-Section 32.10 of the Stacks Project, [Tag 01ZL](https://stacks.math.columbia.edu/tag/01ZL). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.10 of the Stacks Project, [Tag 01ZL](https://stacks.math.columbia.edu/tag/01ZL). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01ZM, a lemma
 
 [Tag 01ZM](https://stacks.math.columbia.edu/tag/01ZM) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitDescent.exists_model_of_finitePresentation_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/Glueing.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/Glueing.lean#L626). The attribute's comment: “part (1)”. References: EGA IV (8.1.1), “more general”; EGA IV (8.8.3), “essential surjectivity”; SGA 3 VIB (10.0), “(ii)”; SGA 4 VII (5.2), “(b)”; SGA 4 VII (5.3), “essential surjectivity”.
+**`AlgebraicGeometry.LimitDescent.exists_model_of_finitePresentation_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/Glueing.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/Glueing.lean#L626). The attribute's comment: “part (1)”. References: EGA IV (8.1.1), “more general”; EGA IV (8.8.3), “essential surjectivity”; SGA 3 VIB (10.0), “(ii)”; SGA 4 VII (5.2), “(b)”; SGA 4 VII (5.3), “essential surjectivity”.
 
 > Let `S = lim Sᵢ` be a cofiltered limit of quasi-compact, quasi-separated schemes with affine
 > transition morphisms. Every scheme of finite presentation over `S` is isomorphic, over `S`, to the
@@ -35,7 +35,7 @@ public theorem exists_model_of_finitePresentation_of_essentiallySmall {I : Type 
       Nonempty (X ≅ (Over.pullback (c.π.app i)).obj Xᵢ)
 ```
 
-**`AlgebraicGeometry.exists_morphism_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean#L302). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_morphism_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean#L302). The attribute's comment: “part (2)”.
 
 > A morphism between the base changes of two schemes of finite presentation
 > descends after passing to a later stage of a cofiltered inverse system.
@@ -65,7 +65,7 @@ theorem exists_morphism_after_baseChange
         α.hom ≫ f = (Over.pullback (c.π.app j)).map g ≫ β.hom
 ```
 
-**`AlgebraicGeometry.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean#L329). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Relative.lean#L329). The attribute's comment: “part (3)”.
 
 > Two morphisms at one stage which become equal after base change to the
 > inverse limit are equal after passing to a later stage.
@@ -84,7 +84,7 @@ theorem eventually_eq_of_baseChange_eq
       (Over.pullback (D.map e)).map f = (Over.pullback (D.map e)).map g
 ```
 
-**`AlgebraicGeometry.Scheme.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FinitePresentationDescent.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FinitePresentationDescent.lean#L346). The attribute's comment: “part (3)”. References: EGA IV (8.13.1), “special case, uniqueness”; SGA 3 VIB (10.0), “(i) injectivity”; SGA 4 VII (5.2), “(a) injectivity”; SGA 4 VII (5.3), “faithfulness”.
+**`AlgebraicGeometry.Scheme.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FinitePresentationDescent.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FinitePresentationDescent.lean#L346). The attribute's comment: “part (3)”. References: EGA IV (8.13.1), “special case, uniqueness”; SGA 3 VIB (10.0), “(i) injectivity”; SGA 4 VII (5.2), “(a) injectivity”; SGA 4 VII (5.3), “faithfulness”.
 
 > **Stacks Project, Tag 01ZM, part (3).** Two morphisms between schemes of finite presentation
 > at one stage of a cofiltered inverse system of quasi-compact and quasi-separated schemes with
@@ -105,7 +105,7 @@ theorem eventually_eq_of_baseChange_eq
       (Over.pullback (D.map e)).map f = (Over.pullback (D.map e)).map g
 ```
 
-**`AlgebraicGeometry.LimitFPObjectDescent.exists_model_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ObjectDescent/Basic.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ObjectDescent/Basic.lean#L367). The attribute's comment: “part (1)”. References: SGA 3 VIB (10.0), “(ii)”; SGA 4 VII (5.2), “(b)”; SGA 4 VII (5.3), “essential surjectivity”.
+**`AlgebraicGeometry.LimitFPObjectDescent.exists_model_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ObjectDescent/Basic.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ObjectDescent/Basic.lean#L367). The attribute's comment: “part (1)”. References: SGA 3 VIB (10.0), “(ii)”; SGA 4 VII (5.2), “(b)”; SGA 4 VII (5.3), “essential surjectivity”.
 
 > **Stacks Project, Tag 01ZM, part (1).** A scheme of finite presentation over the limit of a
 > cofiltered system of quasi-compact and quasi-separated schemes with affine transition morphisms is
@@ -124,7 +124,7 @@ theorem exists_model_of_finitePresentation {I : Type v} [Category.{w} I] [IsCofi
 
 [Tag 01ZR](https://stacks.math.columbia.edu/tag/01ZR) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_pullback_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean#L178). The attribute's comment: “eventual\_equality”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_pullback_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean#L178). The attribute's comment: “eventual\_equality”.
 
 > Let `c` be a limit cone on a cofiltered diagram `D` of
 > schemes with affine transition morphisms and let `ψ₁, ψ₂ : F ⟶ G` be morphisms of sheaves of
@@ -142,7 +142,7 @@ theorem exists_pullback_map_eq_of_isLimit (hc : IsLimit c) (i : I) [CompactSpace
         (Scheme.Modules.pullback (D.map e)).map ψ₂
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_map_of_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L503). The attribute's comment: “descend\_morphisms”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_map_of_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L503). The attribute's comment: “descend\_morphisms”.
 
 > **[Stacks Project, Tag 01ZR] (2), with the canonical identifications written out.**  This is
 > the statement of the clause of the tag verbatim, obtained from
@@ -164,7 +164,7 @@ theorem exists_map_of_pullback_of_isLimit (hc : IsLimit c) (i : I)
           (Scheme.Modules.pullbackCongr (c.w e)).hom.app F ≫ φ
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFinitePresentation_pullback_iso_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L528). The attribute's comment: “descend\_modules”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFinitePresentation_pullback_iso_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L528). The attribute's comment: “descend\_modules”.
 
 > **[Stacks Project, Tag 01ZR] (1) for a cofiltered limit of quasi-compact quasi-separated
 > schemes with affine transition morphisms.**  A sheaf of modules of finite presentation on the
@@ -186,7 +186,7 @@ theorem exists_isFinitePresentation_pullback_iso_of_qcqs (hc : IsLimit c)
 
 [Tag 0B8W](https://stacks.math.columbia.edu/tag/0B8W) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFiniteLocallyFree_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteLocallyFreeUnconditional.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteLocallyFreeUnconditional.lean#L216). The attribute's comment: “(1)”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFiniteLocallyFree_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteLocallyFreeUnconditional.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteLocallyFreeUnconditional.lean#L216). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 0B8W (1).**  Let `S = lim Sᵢ` be the limit of a cofiltered system of
 > quasi-compact quasi-separated schemes with affine transition morphisms.  Then every finite
@@ -206,7 +206,7 @@ theorem exists_isFiniteLocallyFree_pullback_iso (hc : IsLimit c)
         Nonempty (E ≅ (Scheme.Modules.pullback (c.π.app i)).obj Eᵢ)
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_ideal_pullback_epi_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean#L332). The attribute's comment: “finite\_type\_ideal\_descent”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_ideal_pullback_epi_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean#L332). The attribute's comment: “finite\_type\_ideal\_descent”.
 
 > **Stacks Project, Tag 0B8W.**  A finite type quasi-coherent ideal of the structure sheaf of
 > the limit of a cofiltered system of quasi-compact and quasi-separated schemes with affine
@@ -237,7 +237,7 @@ theorem exists_ideal_pullback_epi_of_isLimit (hc : IsLimit c) (I : c.pt.Modules)
                         (c.π.app i).toRingCatSheafHom
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isInvertible_pullback_iso_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/InvertibleUnconditional.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/InvertibleUnconditional.lean#L191). The attribute's comment: “(2)”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isInvertible_pullback_iso_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/InvertibleUnconditional.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleLimits/InvertibleUnconditional.lean#L191). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0B8W (2).**  Let `S = lim Sᵢ` be the limit of a cofiltered system of
 > quasi-compact quasi-separated schemes with affine transition morphisms.  Then every invertible
@@ -262,7 +262,7 @@ theorem exists_isInvertible_pullback_iso_of_isLimit
 
 [Tag 05LY](https://stacks.math.columbia.edu/tag/05LY) in the Stacks Project.
 
-**`AlgebraicGeometry.eventually_isFlatOver_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/FlatDescent.lean, line 903](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/FlatDescent.lean#L903). References: EGA IV (11.2.6), “(ii)”.
+**`AlgebraicGeometry.eventually_isFlatOver_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/FlatDescent.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/FlatDescent.lean#L899). References: EGA IV (11.2.6), “(ii)”.
 
 > If a finitely presented quasi-coherent module at one stage of a cofiltered
 > inverse system becomes flat over the base-changed target at the limit, it is
@@ -294,7 +294,7 @@ theorem eventually_isFlatOver_modulePullback
 
 [Tag 0EY1](https://stacks.math.columbia.edu/tag/0EY1) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitDescent.exists_model_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStages.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStages.lean#L351). The attribute's comment: “essential surjectivity, arbitrary stages”. References: EGA IV (8.1.1), “more general”; EGA IV (8.8.2), “more general”; EGA IV (8.8.3), “essential surjectivity”; SGA 4 VII (5.3), “essential surjectivity”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.2), “more general”.
+**`AlgebraicGeometry.LimitDescent.exists_model_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStages.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStages.lean#L351). The attribute's comment: “essential surjectivity, arbitrary stages”. References: EGA IV (8.1.1), “more general”; EGA IV (8.8.2), “more general”; EGA IV (8.8.3), “essential surjectivity”; SGA 4 VII (5.3), “essential surjectivity”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.2), “more general”.
 
 > **Essential surjectivity in Stacks Tag 0EY1, at the generality the source states.**
 >
@@ -330,7 +330,7 @@ public theorem exists_model_of_locallyOfFinitePresentation
         Nonempty (X ≅ (Over.pullback (c.π.app (.op i))).obj Xᵢ)
 ```
 
-**`AlgebraicGeometry.LimitDescent.isEquivalence_baseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean#L925). References: EGA IV (8.1.1), “more general”; EGA IV (8.8.3), “more general”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.2), “more general”; SGA 4 VII (5.3), “more general”.
+**`AlgebraicGeometry.LimitDescent.isEquivalence_baseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean, line 938](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean#L938). References: EGA IV (8.1.1), “more general”; EGA IV (8.8.3), “more general”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.2), “more general”; SGA 4 VII (5.3), “more general”.
 
 > For a scheme `T` let `C_T` be the full subcategory of schemes `W` over `T` such that `W` is
 > quasi-compact and quasi-separated and such that the structure morphism `W ⟶ T` is locally of
@@ -349,7 +349,7 @@ public theorem isEquivalence_baseChangeComparison :
     (baseChangeComparison D c hc).IsEquivalence
 ```
 
-**`AlgebraicGeometry.LimitDescent.isEquivalence_baseChangeComparison_of_directedSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean#L946). References: EGA IV (8.8.3), “more general”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.3), “more general”.
+**`AlgebraicGeometry.LimitDescent.isEquivalence_baseChangeComparison_of_directedSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean, line 959](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitDescentGlueing/GeneralStagesEquivalence.lean#L959). References: EGA IV (8.8.3), “more general”; SGA 3 VIB (10.0), “more general”; SGA 4 VII (5.3), “more general”.
 
 > Let `S = lim Sᵢ` be the limit of an inverse system of schemes indexed by a directed set `I`
 > in the universe of the schemes, with affine transition morphisms. Then the base change functors
@@ -371,4 +371,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.10, Tag 01ZL](https://stacks.math.columbia.edu/tag/01ZL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.38 Blowing up and flatness
 
-Section 76.38 of the Stacks Project, [Tag 087A](https://stacks.math.columbia.edu/tag/087A). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.38 of the Stacks Project, [Tag 087A](https://stacks.math.columbia.edu/tag/087A). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 087B, a lemma
 
 [Tag 087B](https://stacks.math.columbia.edu/tag/087B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFiniteTypeQuasicoherentIdeal_disjoint_pullbackIdealSubsheaf_eq_idealSmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeIdealEtaleFittingDescentUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeIdealEtaleFittingDescentUnconditional.lean#L61).
+**`AlgebraicGeometry.Space.exists_isFiniteTypeQuasicoherentIdeal_disjoint_pullbackIdealSubsheaf_eq_idealSmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeIdealEtaleFittingDescentUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeIdealEtaleFittingDescentUnconditional.lean#L61).
 
 > **Stacks 087B.**  Let `X` be a quasi-compact and quasi-separated algebraic space over `S`,
 > let `φ : W ⟶ X` be a quasi-compact separated étale morphism, let `U ⊆ X` be a quasi-compact
@@ -56,7 +56,7 @@ theorem exists_isFiniteTypeQuasicoherentIdeal_disjoint_pullbackIdealSubsheaf_eq_
 
 [Tag 087C](https://stacks.math.columbia.edu/tag/087C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFlatteningBlowup_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningByBlowupAlgebraicSpaceUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningByBlowupAlgebraicSpaceUnconditional.lean#L51).
+**`AlgebraicGeometry.Space.exists_isFlatteningBlowup_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningByBlowupAlgebraicSpaceUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningByBlowupAlgebraicSpaceUnconditional.lean#L51).
 
 > **Flattening by blowing up for algebraic spaces.** Let `A` be a quasi-compact and
 > quasi-separated algebraic space over `S`, let `f : X ⟶ A` be locally of finite presentation with
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.38, Tag 087A](https://stacks.math.columbia.edu/tag/087A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

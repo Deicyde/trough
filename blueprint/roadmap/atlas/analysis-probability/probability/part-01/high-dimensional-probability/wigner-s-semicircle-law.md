@@ -7,7 +7,7 @@ statement: formalized
 
 # Wigner's semicircle law
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html).
 
 ## Empirical spectral measure of a Hermitian matrix
 
@@ -17,7 +17,7 @@ empirical spectral measure of $W$ is the measure $\frac{1}{n} \sum_{j=1}^{n} \de
 on $\mathbb{R}$, where $\delta_\lambda$ is the Dirac measure at $\lambda$; for $n = 0$ it is the
 zero measure.
 
-Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.empiricalSpectralMeasureHerm`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WignerSemicircleWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#empirical-spectral-measure-herm).
+Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.empiricalSpectralMeasureHerm`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WignerSemicircleWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#empirical-spectral-measure-herm).
 
 ## Semicircle distribution
 
@@ -27,7 +27,7 @@ every measurable set $A \subseteq \mathbb{R}$.
 
 Since $\int_{-2}^{2} \sqrt{4 - x^2} \, dx = 2\pi$, it is a probability measure.
 
-Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.semicircleLaw`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WignerSemicircleWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#semicircle-law).
+Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.semicircleLaw`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WignerSemicircleWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#semicircle-law).
 
 ## Wigner matrix
 
@@ -38,7 +38,7 @@ $\{0, \dots, n - 1\}$, whose entry at $(i, j)$ is the real number
 $X_{\min(i, j)\, \max(i, j)}(\omega)$. Only the $X_{ij}$ with $i \le j$ are used, and the matrix
 is real symmetric.
 
-Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wignerMatrix`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WignerSemicircleWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-matrix).
+Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wignerMatrix`, a definition declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WignerSemicircleWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-matrix).
 
 ## Wigner matrices are Hermitian
 
@@ -49,7 +49,7 @@ and every $\omega \in \Omega$, the Wigner matrix $W_n(\omega)$ is Hermitian.
 The matrix is in fact real symmetric: its entry at $(i, j)$ is the real number
 $X_{\min(i, j)\, \max(i, j)}(\omega)$, and $\min$ and $\max$ are symmetric in their arguments.
 
-Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wignerMatrix_isHermitian`, a lemma declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WignerSemicircleWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-matrix-is-hermitian).
+Formalized by `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wignerMatrix_isHermitian`, a lemma declared in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WignerSemicircleWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-matrix-is-hermitian).
 
 ## Wigner's semicircle law
 
@@ -71,7 +71,7 @@ where $\sigma$ is the semicircle distribution.
 
 - E. Wigner, 'Characteristic vectors of bordered matrices with infinite dimensions', Ann. of Math. (2) 62 (1955) 548–564 (Gaussian case). Pastur's universality extending to all variances with finite second moments: L. Pastur, 'On the spectrum of random matrices', Teor. Mat. Fiz. 10 (1972) 102–112. Listed as §102 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `wigner_semicircle` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wigner_semicircle` is written with `theorem_wanted` in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WignerSemicircleWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-semicircle).
+Stated but not proved: `MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wigner_semicircle` is written with `theorem_wanted` in [WantedExt/Analysis/WignerSemicircleWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WignerSemicircleWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html#wigner-semicircle).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Wigner's semicircle law](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/high-dimensional-probability/wigner-s-semicircle-law)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Convex geometry: its own results
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html).
 
 Convex sets and convex bodies in Euclidean space: Helly-type and Radon-type theorems, partitions, sections, valuations and linear optimization over polyhedra.
 
@@ -26,7 +26,7 @@ for some point $c \in \mathbb{R}^2$ and some real $r > 0$.
 
 - https://en.wikipedia.org/wiki/Isoperimetric_inequality.
 
-Stated but not proved: `MetaMathlibExt.isoperimetric_inequality` is written with `theorem_wanted` in [WantedExt/Analysis/Geometry/IsoperimetricInequalityWanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Geometry/IsoperimetricInequalityWanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#isoperimetric-inequality).
+Stated but not proved: `MetaMathlibExt.isoperimetric_inequality` is written with `theorem_wanted` in [WantedExt/Analysis/Geometry/IsoperimetricInequalityWanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Geometry/IsoperimetricInequalityWanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#isoperimetric-inequality).
 
 ## Jung's theorem
 
@@ -39,7 +39,7 @@ $\sqrt{n / (2(n + 1))} \cdot \operatorname{diam} s$.
 
 - H. Jung, Über die kleinste Kugel, die eine räumliche Figur einschließt, J. Reine Angew. Math. 123 (1901) 241–257 original theorem; D. Gale sharp Euclidean formulation; standard modern reference M. Berger, Geometry I & II.
 
-Formalized by `MathlibExt.Geometry.Euclidean.JungWanted.jung`, a theorem declared in [MathlibExt/Geometry/Euclidean/Jung.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Jung.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#jung).
+Formalized by `MathlibExt.Geometry.Euclidean.JungWanted.jung`, a theorem declared in [MathlibExt/Geometry/Euclidean/Jung.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Jung.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#jung).
 
 ## Kirchberger's theorem
 
@@ -58,7 +58,7 @@ dimension, following the route of Rademacher and Schoenberg (1950) from Kirchber
 - https://en.wikipedia.org/wiki/Kirchberger%27s_theorem.
 - Paul Kirchberger, "Über Tchebychefsche Annäherungsmethoden," Mathematische Annalen 57 (1903), 509–540, DOI 10.1007/BF01445182, https://doi.org/10.1007/BF01445182.
 
-Formalized by `MetaMathlibExt.kirchberger`, a theorem declared in [MathlibExt/Geometry/Convex/Kirchberger.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Convex/Kirchberger.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#kirchberger).
+Formalized by `MetaMathlibExt.kirchberger`, a theorem declared in [MathlibExt/Geometry/Convex/Kirchberger.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Convex/Kirchberger.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#kirchberger).
 
 ## Rado's centerpoint theorem
 
@@ -72,7 +72,7 @@ number of indices $i$ with $\langle v, p_i \rangle \le t$ is at least $n/(d+1)$.
 
 - R. Rado, J. London Math. Soc. s1-21 (1946), 291-300, DOI 10.1112/jlms/s1-21.4.291.
 
-Formalized by `MathlibExt.Geometry.Convex.RadoCenterpointWanted.rado_centerpoint`, a theorem declared in [MathlibExt/Geometry/Convex/RadoCenterpoint.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Convex/RadoCenterpoint.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#rado-centerpoint).
+Formalized by `MathlibExt.Geometry.Convex.RadoCenterpointWanted.rado_centerpoint`, a theorem declared in [MathlibExt/Geometry/Convex/RadoCenterpoint.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Convex/RadoCenterpoint.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#rado-centerpoint).
 
 ## Tverberg's theorem
 
@@ -85,7 +85,7 @@ point $x \in \mathbb{R}^d$ that lies in the convex hull of $\{p_i : i \in P_j\}$
 
 - H. Tverberg, J. London Math. Soc. s1-41 (1966), 123-128, DOI 10.1112/jlms/s1-41.1.123.
 
-Formalized by `MathlibExt.Geometry.Convex.TverbergWanted.tverberg`, a theorem declared in [MathlibExt/Geometry/Convex/Tverberg.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Convex/Tverberg.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#tverberg).
+Formalized by `MathlibExt.Geometry.Convex.TverbergWanted.tverberg`, a theorem declared in [MathlibExt/Geometry/Convex/Tverberg.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Convex/Tverberg.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#tverberg).
 
 ## Ulam's flat-sections problem in dimension three
 
@@ -105,7 +105,7 @@ whose face planes meet its boundary in a square.
 
 - S. Ulam, Problem 68 of the Scottish Book, asking to prove that a manifold whose every hyperplane section of its boundary is a sphere is convex. Montejano gave a complete solution, settling the problem affirmatively: L. Montejano, "About a problem of Ulam concerning flat sections of manifolds", Comment. Math. Helv. 65 (1990), 462–473; see also Montejano, "Three old problems from the Polish school of mathematics", Bol. Soc. Mat. Mex. (3) 30 (2024).
 
-Stated but not proved: `MathlibExt.Geometry.ScottishBook68Wanted.ulamFlatSectionsConvex` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook68Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ScottishBook68Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#ulam-flat-sections-convex).
+Stated but not proved: `MathlibExt.Geometry.ScottishBook68Wanted.ulamFlatSectionsConvex` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook68Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ScottishBook68Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html#ulam-flat-sections-convex).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convex geometry](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/convex-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/convex-geometry)

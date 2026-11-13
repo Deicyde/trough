@@ -88,7 +88,7 @@ statement: formalized
 >   174 (2011), 401–438,
 >   [doi:10.4007/annals.2011.174.1.11](https://doi.org/10.4007/annals.2011.174.1.11).
 
-*Quoted from [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 10 research or textbook statements: 4 open, 3 solved and 3 textbook results.
 
@@ -108,7 +108,7 @@ theorem symbol_length_problem :
       k ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) p n ↔ symbol_length_problem.answer m n p ≤ k
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L122).
+Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L122).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.bounded`
 
@@ -124,7 +124,7 @@ theorem symbol_length_problem.variants.bounded :
       (symbolLengthBounds (MvRatFunc (Fin m) ℂ) p n).Nonempty
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L134).
+Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L134).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.uniform`
 
@@ -142,7 +142,7 @@ theorem symbol_length_problem.variants.uniform :
       k ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) p n
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L147).
+Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L147).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_zero`
 
@@ -156,7 +156,7 @@ theorem symbol_length_problem.variants.degree_zero (m p : ℕ) (hp : p.Prime) :
     IsLeast (symbolLengthBounds (MvRatFunc (Fin m) ℂ) p 0) (p - 1)
 ```
 
-Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 157](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L157).
+Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 157](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L157).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_one`
 
@@ -171,7 +171,7 @@ theorem symbol_length_problem.variants.degree_one (m p : ℕ) :
     1 ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) p 1
 ```
 
-Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L167).
+Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L167).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two`
 
@@ -187,7 +187,7 @@ theorem symbol_length_problem.variants.degree_two (m : ℕ) (hm : 1 ≤ m) (p t 
     t * (p ^ (m - 1) - 1) ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) (p ^ t) 2
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L177).
+Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L177).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_ge`
 
@@ -205,7 +205,7 @@ theorem symbol_length_problem.variants.degree_two_ge (m : ℕ) (hm : 1 ≤ m) (p
     ∀ k ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) p 2, m - 1 ≤ k
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 190](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L190).
+Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 190](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L190).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.degree_two_isLeast`
 
@@ -226,7 +226,7 @@ theorem symbol_length_problem.variants.degree_two_isLeast :
       IsLeast (symbolLengthBounds (MvRatFunc (Fin m) ℂ) p 2) (m - 1)
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 206](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L206).
+Category `research open`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 206](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L206).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.zero_mem_of_lt`
 
@@ -241,7 +241,7 @@ theorem symbol_length_problem.variants.zero_mem_of_lt (m n p : ℕ) (hmn : m < n
     0 ∈ symbolLengthBounds (MvRatFunc (Fin m) ℂ) p n
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 217](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L217).
+Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 217](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L217).
 
 ## `SymbolLengthMilnorKTheory.symbol_length_problem.variants.isAlgClosed`
 
@@ -258,7 +258,7 @@ theorem symbol_length_problem.variants.isAlgClosed (F : Type*) [Field F] [IsAlgC
     (n ℓ : ℕ) (hn : 0 < n) (hℓ : 0 < ℓ) : 0 ∈ symbolLengthBounds F ℓ n
 ```
 
-Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L229).
+Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [19 K-theory](../by-subject/part-01/19-k-theory/README.md). Declared in [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean#L229).
 
 ## Depends on
 
@@ -266,5 +266,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean)
+- [FormalConjectures/Other/SymbolLengthMilnorKTheory.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/SymbolLengthMilnorKTheory.lean)
 - [pdf](https://www.ias.edu/sites/default/files/pcmi-2024-07-24%20krashen.pdf)

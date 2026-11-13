@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.10 Uniqueness of the minimal model
 
-Section 55.10 of the Stacks Project, [Tag 0C9Y](https://stacks.math.columbia.edu/tag/0C9Y). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.10 of the Stacks Project, [Tag 0C9Y](https://stacks.math.columbia.edu/tag/0C9Y). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C6B, a lemma
 
 [Tag 0C6B](https://stacks.math.columbia.edu/tag/0C6B) in the Stacks Project.
 
-**`Stacks.Models.exists_isMinimalModel_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelUniqueness.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelUniqueness.lean#L686).
+**`Stacks.Models.exists_isMinimalModel_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelUniqueness.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelUniqueness.lean#L686).
 
 > **Stacks Project, Tag 0C6B.** Let `C` be a smooth projective curve over `K` with
 > `H⁰(C, 𝒪_C) = K` and genus `> 0`. There is a unique minimal model for `C`: a minimal model exists,
@@ -41,7 +41,7 @@ theorem exists_isMinimalModel_and_existsUnique_iso {C : Scheme.{u}} (c : C ⟶ S
 
 [Tag 0C9Z](https://stacks.math.columbia.edu/tag/0C9Z) in the Stacks Project.
 
-**`Stacks.Models.existsUnique_exceptionalContractionSequence_of_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelMappingProperty.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelMappingProperty.lean#L157).
+**`Stacks.Models.existsUnique_exceptionalContractionSequence_of_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelMappingProperty.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelMappingProperty.lean#L157).
 
 > **Stacks Project, Tag 0C9Z.** Let `C` be a smooth projective curve over `K` with
 > `H⁰(C, 𝒪_C) = K` and genus `> 0`, let `X` be the minimal model of `C` and let `Y` be a regular
@@ -73,7 +73,7 @@ theorem existsUnique_exceptionalContractionSequence_of_isMinimalModel {C X Y : S
 
 [Tag 0CA0](https://stacks.math.columbia.edu/tag/0CA0) in the Stacks Project.
 
-**`Stacks.Models.GenusZero.minimalModel_not_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusZeroExample.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusZeroExample.lean#L70).
+**`Stacks.Models.GenusZero.minimalModel_not_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusZeroExample.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusZeroExample.lean#L70).
 
 > **Stacks Project, Tag 0CA0: in genus zero, minimal models are not unique.** Let `R` be a
 > discrete valuation ring with fraction field `K`, residue field `k` and uniformizer `π`, and let
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.10, Tag 0C9Y](https://stacks.math.columbia.edu/tag/0C9Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

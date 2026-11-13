@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.9 Right adjoint of pushforward for closed immersions
 
-Section 48.9 of the Stacks Project, [Tag 0A74](https://stacks.math.columbia.edu/tag/0A74). 8 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.9 of the Stacks Project, [Tag 0A74](https://stacks.math.columbia.edu/tag/0A74). 8 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A75, a lemma
 
 [Tag 0A75](https://stacks.math.columbia.edu/tag/0A75) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sheafHomExactSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L91). The attribute's comment: “the functor”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sheafHomExactSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L91). The attribute's comment: “the functor”.
 
 > **Stacks Project, Tag 0A75 (the functor).** The sheaf Hom from `𝒪_Z` with exact support,
 > regarded as a functor from `𝒪_X`-modules to `𝒪_Z`-modules.  It is the internal Hom
@@ -26,7 +26,7 @@ noncomputable def sheafHomExactSupport :
     SheafOfModules.{u} (structureSheafRing S.X) ⥤ SheafOfModules.{u} (structureSheafRing S.Z)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportIsoHomSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L99). The attribute's comment: “the internal Hom identification”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportIsoHomSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L99). The attribute's comment: “the internal Hom identification”.
 
 > **Stacks Project, Tag 0A75 (the internal Hom identification).** After pushforward to `X`,
 > sheaf Hom with exact support is naturally the internal Hom `SheafHom_{𝒪_X}(i_* 𝒪_Z, -)`,
@@ -39,7 +39,7 @@ noncomputable def modulePushforwardSheafHomExactSupportIsoHomSheaf :
         SheafOfModules.restrictScalars (structureSheafHom S.i)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L110). The attribute's comment: “the adjunction”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L110). The attribute's comment: “the adjunction”.
 
 > **Stacks Project, Tag 0A75 (adjunction).** Pushforward from a closed quotient ringed
 > subspace is left adjoint to sheaf Hom with exact support.
@@ -49,7 +49,7 @@ noncomputable def modulePushforwardSheafHomExactSupportAdjunction :
     modulePushforward S.i ⊣ S.sheafHomExactSupport
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L117). The attribute's comment: “the counit is evaluation at one”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.modulePushforwardSheafHomExactSupportAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupport.lean#L117). The attribute's comment: “the counit is evaluation at one”.
 
 > The counit of the exact-support adjunction is, under the internal Hom identification,
 > evaluation of a local homomorphism at the section `1`.
@@ -63,7 +63,7 @@ theorem modulePushforwardSheafHomExactSupportAdjunction_counit_app
         ((S.modulePushforwardSheafHomExactSupportIsoHomSheaf.hom.app F).val.app (op U) s)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L376). The attribute's comment: “the description of sections”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L376). The attribute's comment: “the description of sections”.
 
 > **Stacks Project, Tag 0A75 (sections).** If `V ⊆ Z` is the inverse image of `U ⊆ X`, sections
 > over `V` of sheaf Hom with exact support are canonically the sections of `F` over `U` annihilated
@@ -76,7 +76,7 @@ noncomputable def sectionsSheafHomExactSupportEquiv (U : Opens S.X) (V : Opens S
       S.sectionsLocallyAnnihilatedByKernelIdeal F U
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L408). The attribute's comment: “evaluation characterization of the description of sections”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L408). The attribute's comment: “evaluation characterization of the description of sections”.
 
 > **Stacks Project, Tag 0A75.** The section equivalence is the map induced by the adjunction
 > counit; equivalently, after the internal Hom identification it evaluates a local homomorphism
@@ -95,7 +95,7 @@ theorem sectionsSheafHomExactSupportEquiv_apply
           exact hUV.symm ▸ s)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L429). The attribute's comment: “naturality of the description of sections”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L429). The attribute's comment: “naturality of the description of sections”.
 
 > **Stacks Project, Tag 0A75.** The section identification for sheaf Hom with exact support is
 > natural in the `𝒪_X`-module.
@@ -110,7 +110,7 @@ theorem sectionsSheafHomExactSupportEquiv_naturality
         f.val.app (op U) ((S.sectionsSheafHomExactSupportEquiv F U V hUV s).1)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L446). The attribute's comment: “restriction naturality of the description of sections”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.sectionsSheafHomExactSupportEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/ExactSupportEquiv.lean#L446). The attribute's comment: “restriction naturality of the description of sections”.
 
 > **Stacks Project, Tag 0A75.** The section identification commutes with restriction to a
 > smaller open subset.
@@ -132,7 +132,7 @@ theorem sectionsSheafHomExactSupportEquiv_restrict
 
 [Tag 0A76](https://stacks.math.columbia.edu/tag/0A76) in the Stacks Project.
 
-**`Stacks.Duality.LocallySmall.derivedModulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageLocallySmall.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageLocallySmall.lean#L200). The attribute's comment: “at the locally small derived categories, the model at which the direct-sum and Brown-representability statements about D(O\_X) have content; the standard-model form is RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction, which is about a different pair of categories”.
+**`Stacks.Duality.LocallySmall.derivedModulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageLocallySmall.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageLocallySmall.lean#L202). The attribute's comment: “at the locally small derived categories, the model at which the direct-sum and Brown-representability statements about D(O\_X) have content; the standard-model form is RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction, which is about a different pair of categories”.
 
 > **Stacks Project, Tag 0A76, at the locally small derived categories.** Derived pushforward
 > along a closed immersion of schemes, read as a closed quotient morphism of ringed spaces, is left
@@ -147,7 +147,7 @@ def derivedModulePushforwardSheafHomExactSupportAdjunction :
     (modulePushforward (closedQuotient i).i).mapDerivedCategory ⊣ derivedSheafHomExactSupport i
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L110).
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L110).
 
 > **Stacks Project, Tag 0A76.** Derived pushforward along a closed quotient morphism of
 > ringed spaces is left adjoint to the right derived functor of sheaf Hom with exact support:
@@ -158,7 +158,7 @@ noncomputable def derivedModulePushforwardSheafHomExactSupportAdjunction :
     (modulePushforward S.i).mapDerivedCategory ⊣ S.derivedSheafHomExactSupport
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L119).
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L119).
 
 > **Stacks Project, Tag 0A76.** The unit of the derived adjunction is the one induced by the
 > unit of the adjunction of [Stacks, Tag 0A75] and the two derived-functor comparison maps.
@@ -177,7 +177,7 @@ theorem derivedModulePushforwardSheafHomExactSupportAdjunction_unit_app
           (((modulePushforward S.i).mapHomotopyCategory (ComplexShape.up ℤ)).obj M)
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L136).
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardSheafHomExactSupportAdjunction_counit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerived.lean#L136).
 
 > **Stacks Project, Tag 0A76.** The counit of the derived adjunction is the one induced by
 > the counit of the adjunction of [Stacks, Tag 0A75] and the two derived-functor comparison
@@ -202,7 +202,7 @@ theorem derivedModulePushforwardSheafHomExactSupportAdjunction_counit_app
 
 [Tag 0A77](https://stacks.math.columbia.edu/tag/0A77) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L202).
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L202).
 
 > **Stacks Project, Tag 0A77.** For a closed quotient morphism `i : Z ⟶ X` of ringed spaces,
 > derived pushforward of the right derived sheaf Hom with exact support is the right derived
@@ -221,7 +221,7 @@ noncomputable def derivedModulePushforwardDerivedSheafHomExactSupportIso :
       S.derivedHomSheafFromPushforwardStructureSheaf
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L214). The attribute's comment: “compatibility of the isomorphism with the comparison maps”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L214). The attribute's comment: “compatibility of the isomorphism with the comparison maps”.
 
 > **Stacks Project, Tag 0A77.** The isomorphism of [Stacks, Tag 0A77] is compatible with the
 > comparison maps out of the homotopy category and with the underived identification of
@@ -236,7 +236,7 @@ theorem derivedModulePushforwardDerivedSheafHomExactSupportIso_fac :
         S.derivedHomSheafFromPushforwardStructureSheafComparison
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_uniq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L240). The attribute's comment: “uniqueness of the isomorphism”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_uniq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHom.lean#L240). The attribute's comment: “uniqueness of the isomorphism”.
 
 > **Stacks Project, Tag 0A77.** The isomorphism of [Stacks, Tag 0A77] is the unique one
 > compatible with the comparison maps out of the homotopy category.
@@ -252,7 +252,7 @@ theorem derivedModulePushforwardDerivedSheafHomExactSupportIso_uniq
     e = S.derivedModulePushforwardDerivedSheafHomExactSupportIso
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedSheafHomExactSupportPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean#L726). The attribute's comment: “via the derived internal Hom bifunctor”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedSheafHomExactSupportPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean#L727). The attribute's comment: “via the derived internal Hom bifunctor”.
 
 > **Stacks Project, Tag 0A77.** Derived sheaf Hom with exact support followed by derived
 > pushforward is the derived internal Hom out of the derived pushforward of the structure sheaf of
@@ -266,7 +266,7 @@ def derivedSheafHomExactSupportPushforwardNatIso :
           (RingedSite.derivedStructureSheaf (Stacks.SheafOfModules.ringedSite S.Z.sheaf))))
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedHomSheafFromPushforwardStructureSheafSiteIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSiteDerivedInternalHom.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSiteDerivedInternalHom.lean#L82). The attribute's comment: “the two right-hand sides identified: coextension of scalars and the site-level derived internal Hom bifunctor”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedHomSheafFromPushforwardStructureSheafSiteIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSiteDerivedInternalHom.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSiteDerivedInternalHom.lean#L84). The attribute's comment: “the two right-hand sides identified: coextension of scalars and the site-level derived internal Hom bifunctor”.
 
 > **The two right-hand sides of [Stacks, Tag 0A77] agree.** For a closed quotient morphism
 > `i : Z ⟶ X` of ringed spaces, the right derived functor of coextension of scalars along
@@ -290,34 +290,7 @@ def derivedHomSheafFromPushforwardStructureSheafSiteIso :
 
 [Tag 0E2I](https://stacks.math.columbia.edu/tag/0E2I) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedSheafHomDerivedModulePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedHomPushforward.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedHomPushforward.lean#L259). The attribute's comment: “the derived isomorphism, granted the underived internal Hom identification”.
-
-> **Stacks Project, Tag 0E2I.** For `M` in `D(𝒪_Z)` and `K` in `D(𝒪_X)`,
->
-> `R ℋom_{𝒪_X}(Ri_* M, K) ≅ Ri_* R ℋom_{𝒪_Z}(M, R ℰom(𝒪_Z, K))` in `D(𝒪_X)`,
->
-> granted the underived identification `hom` of internal Hom complexes. The representatives used
-> are the chosen K-injective models of `M` and `K`.
-
-```lean
-def derivedSheafHomDerivedModulePushforwardIso
-    (hom : ∀ (N : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf S.closedSite.O)) ℤ)
-      (I : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf S.ambientSite.O)) ℤ),
-      (S.siteModulePushforward.mapHomologicalComplex (ComplexShape.up ℤ)).obj
-          (RingedSite.sheafHomComplex S.closedSite N
-            ((S.siteSheafHomExactSupport.mapHomologicalComplex (ComplexShape.up ℤ)).obj I)).obj ≅
-        (RingedSite.sheafHomComplex S.ambientSite
-          ((S.siteModulePushforward.mapHomologicalComplex (ComplexShape.up ℤ)).obj N) I).obj)
-    (M : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf S.closedSite.O)))
-    (K : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf S.ambientSite.O))) :
-    ((RingedSite.derivedSheafHomBifunctor S.ambientSite).obj
-          (op (S.siteModulePushforward.mapDerivedCategory.obj M))).obj K ≅
-      S.siteModulePushforward.mapDerivedCategory.obj
-        (((RingedSite.derivedSheafHomBifunctor S.closedSite).obj (op M)).obj
-          (S.siteDerivedSheafHomExactSupport.obj K))
-```
-
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedSheafHomPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean#L561). The attribute's comment: “the derived isomorphism, unconditionally”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedSheafHomPushforwardNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportDerivedInternalHomBifunctor.lean#L562). The attribute's comment: “the derived isomorphism, as an isomorphism of functors on D(O\_X)”.
 
 > **Stacks Project, Tag 0E2I.** For every object `M` of `D(𝒪_Z)`, the derived internal Hom out
 > of the derived pushforward `Ri_* M` is derived sheaf Hom with exact support, followed by the
@@ -338,7 +311,7 @@ def derivedSheafHomPushforwardNatIso
 
 [Tag 0A78](https://stacks.math.columbia.edu/tag/0A78) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.derivedSheafHomExactSupport_mem_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L288). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.derivedSheafHomExactSupport_mem_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L288). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0A78, part (1).** Let `i : Z ⟶ X` be a pseudo-coherent closed
 > immersion of schemes. Then `R ℰom(𝒪_Z, -)` maps `D⁺_QCoh(𝒪_X)` into `D⁺_QCoh(𝒪_Z)`.
@@ -362,7 +335,7 @@ theorem derivedSheafHomExactSupport_mem_derivedCategoryBPlus (hi : PseudoCoheren
         i).derivedSheafHomExactSupport.obj K)
 ```
 
-**`AlgebraicGeometry.Scheme.derivedSheafHomExactSupport_mem_derivedCategoryBPlus_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L307). The attribute's comment: “part (1) for a locally Noetherian target”.
+**`AlgebraicGeometry.Scheme.derivedSheafHomExactSupport_mem_derivedCategoryBPlus_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L307). The attribute's comment: “part (1) for a locally Noetherian target”.
 
 > **Stacks Project, Tag 0A78, part (1), the locally Noetherian case.** For *every* closed
 > immersion `i : Z ⟶ X` into a locally Noetherian scheme, `R ℰom(𝒪_Z, -)` maps `D⁺_QCoh(𝒪_X)` into
@@ -381,7 +354,7 @@ theorem derivedSheafHomExactSupport_mem_derivedCategoryBPlus_of_noetherian
         i).derivedSheafHomExactSupport.obj K)
 ```
 
-**`AlgebraicGeometry.isIso_affineDerivedSheafHomComparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L529). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isIso_affineDerivedSheafHomComparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L529). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0A78, part (2).** Let `φ : A ⟶ B` be a ring map whose spectrum is a
 > pseudo-coherent closed immersion `i : Z = Spec B ⟶ X = Spec A`, and let `L` be a bounded-below
@@ -409,7 +382,7 @@ theorem isIso_affineDerivedSheafHomComparison_app [IsClosedImmersion (Spec.map �
     IsIso ((affineDerivedSheafHomComparison A B φ).app L)
 ```
 
-**`AlgebraicGeometry.isIso_affineDerivedSheafHomComparison_app_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L629). The attribute's comment: “part (2) for a locally Noetherian target”.
+**`AlgebraicGeometry.isIso_affineDerivedSheafHomComparison_app_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportQuasicoherent.lean#L629). The attribute's comment: “part (2) for a locally Noetherian target”.
 
 > **Stacks Project, Tag 0A78, part (2), the locally Noetherian case.** For *every* closed
 > immersion `Spec B ⟶ Spec A` with `Spec A` locally Noetherian, the comparison map of
@@ -428,7 +401,7 @@ theorem isIso_affineDerivedSheafHomComparison_app_of_noetherian
 
 [Tag 0A79](https://stacks.math.columbia.edu/tag/0A79) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedSheafHomExactSupport_mem_derivedCategoryBPlus_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeCoherentDerivedHom.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeCoherentDerivedHom.lean#L386).
+**`AlgebraicGeometry.derivedSheafHomExactSupport_mem_derivedCategoryBPlus_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeCoherentDerivedHom.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeCoherentDerivedHom.lean#L386).
 
 > **Stacks Project, Tag 0A79.** Let `i : Z ⟶ X` be a closed immersion of schemes with `X`
 > locally Noetherian. Then `R ℰom(𝒪_Z, -)` carries `D⁺_Coh(𝒪_X)` into `D⁺_Coh(𝒪_Z)`.
@@ -449,7 +422,7 @@ theorem derivedSheafHomExactSupport_mem_derivedCategoryBPlus_coherent
 
 [Tag 0A9X](https://stacks.math.columbia.edu/tag/0A9X) in the Stacks Project.
 
-**`Stacks.Duality.isDerivedSheafHomRightAdjoint_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean#L104). The attribute's comment: “with the right adjoint a produced rather than assumed: a is the twisted inverse image of Tag 0A9E, which exists at the locally small derived category of Tag 079Q and at no other model, Brown representability needing the direct sums indexed by the morphism universe. The hypotheses are the tag's own, quasi-compactness of the target and pseudo-coherence of the immersion; the quasi-separatedness the source also asks of the target is not needed, being automatic for the closed immersion itself, which is what Tag 0A9E consumes. Nothing is carried”.
+**`Stacks.Duality.isDerivedSheafHomRightAdjoint_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean#L104). The attribute's comment: “with the right adjoint a produced rather than assumed: a is the twisted inverse image of Tag 0A9E, which exists at the locally small derived category of Tag 079Q and at no other model, Brown representability needing the direct sums indexed by the morphism universe. The hypotheses are the tag's own, quasi-compactness of the target and pseudo-coherence of the immersion; the quasi-separatedness the source also asks of the target is not needed, being automatic for the closed immersion itself, which is what Tag 0A9E consumes. Nothing is carried”.
 
 > **Stacks Project, Tag 0A9X (Lemma 48.9.7), with the right adjoint produced.** Let
 > `i : Z ⟶ W` be a closed immersion into a quasi-compact locally Noetherian scheme. Then the
@@ -473,7 +446,7 @@ theorem isDerivedSheafHomRightAdjoint_twistedInverseImage (hpc : PseudoCoherent 
       (twistedInverseImage i (isQuasicoherent_homology_derivedPushforward_of_qcqs i))
 ```
 
-**`Stacks.Duality.isDerivedSheafHomRightAdjoint_twistedInverseImage_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean#L119). The attribute's comment: “with the right adjoint a produced rather than assumed, for a closed immersion into a quasi-compact locally Noetherian scheme: pseudo-coherence of i is then automatic by Tag 0684, which is the parenthetical case of the tag. Nothing is carried”.
+**`Stacks.Duality.isDerivedSheafHomRightAdjoint_twistedInverseImage_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointLocallySmall.lean#L119). The attribute's comment: “with the right adjoint a produced rather than assumed, for a closed immersion into a quasi-compact locally Noetherian scheme: pseudo-coherence of i is then automatic by Tag 0684, which is the parenthetical case of the tag. Nothing is carried”.
 
 > **[Stacks, Tag 0A9X] for a closed immersion into a quasi-compact locally Noetherian
 > scheme**, the parenthetical case of the tag: pseudo-coherence is then automatic by
@@ -487,7 +460,7 @@ theorem isDerivedSheafHomRightAdjoint_twistedInverseImage_of_noetherian
       (twistedInverseImage i (isQuasicoherent_homology_derivedPushforward_of_qcqs i))
 ```
 
-**`Stacks.Duality.LocallySmall.isDerivedSheafHomRightAdjoint_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomLocallySmall.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomLocallySmall.lean#L339). The attribute's comment: “at the locally small derived categories, the model at which the right adjoint a of Ri\_* exists (Tag 0A9E); the quasi-compactness and quasi-separatedness of X are dropped, the source using them only to produce a”.
+**`Stacks.Duality.LocallySmall.isDerivedSheafHomRightAdjoint_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomLocallySmall.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomLocallySmall.lean#L340). The attribute's comment: “at the locally small derived categories, the model at which the right adjoint a of Ri\_* exists (Tag 0A9E); the quasi-compactness and quasi-separatedness of X are dropped, the source using them only to produce a”.
 
 > **Stacks Project, Tag 0A9X (Lemma 48.9.7).** Let `i : Z ⟶ W` be a pseudo-coherent closed
 > immersion of schemes and let `a : D_QCoh(𝒪_W) ⥤ D_QCoh(𝒪_Z)` be the right adjoint of
@@ -516,7 +489,7 @@ theorem isDerivedSheafHomRightAdjoint_of_isClosedImmersion (hpc : PseudoCoherent
     IsDerivedSheafHomRightAdjoint i a
 ```
 
-**`Stacks.Duality.isDerivedSheafHomRightAdjointAtModel_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomSupplement.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomSupplement.lean#L201). The attribute's comment: “the quasi-compactness and quasi-separatedness of the target are dropped, the source using them only to produce the right adjoint a, which here is an explicit parameter together with its adjunction”.
+**`Stacks.Duality.isDerivedSheafHomRightAdjointAtModel_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomSupplement.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionRightAdjointSheafHomSupplement.lean#L201). The attribute's comment: “the quasi-compactness and quasi-separatedness of the target are dropped, the source using them only to produce the right adjoint a, which here is an explicit parameter together with its adjunction”.
 
 > **Stacks Project, Tag 0A9X (Lemma 48.9.7).** Let `i : Z ⟶ W` be a pseudo-coherent closed
 > immersion of schemes and let `a` be a right adjoint of `Ri_* : D_QCoh(𝒪_Z) ⥤ D_QCoh(𝒪_W)`. Then
@@ -539,7 +512,7 @@ theorem isDerivedSheafHomRightAdjointAtModel_of_pseudoCoherent
 
 [Tag 0B6M](https://stacks.math.columbia.edu/tag/0B6M) in the Stacks Project.
 
-**`Stacks.Duality.rightAdjointToDerivedSheafHom_comp_derivedEvaluationAtOne_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceDiagram.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceDiagram.lean#L100). The attribute's comment: “the example, with no hypothesis beyond the closed immersion and the right adjoint: that Ri\_* carries D\_QCoh(O\_Z) into D\_QCoh(O\_W) is Tag 08D5 part (1), and the commutativity holds for every K in D\_QCoh(O\_W), so neither the Noetherian hypothesis of the source nor boundedness of K appears”.
+**`Stacks.Duality.rightAdjointToDerivedSheafHom_comp_derivedEvaluationAtOne_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceDiagram.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceDiagram.lean#L100). The attribute's comment: “the example, with no hypothesis beyond the closed immersion and the right adjoint: that Ri\_* carries D\_QCoh(O\_Z) into D\_QCoh(O\_W) is Tag 08D5 part (1), and the commutativity holds for every K in D\_QCoh(O\_W), so neither the Noetherian hypothesis of the source nor boundedness of K appears”.
 
 > **Stacks Project, Tag 0B6M (Example 48.9.8).** Let `i : Z ⟶ W` be a closed immersion and let
 > `a` be a right adjoint of `Ri_* : D_QCoh(𝒪_Z) ⥤ D_QCoh(𝒪_W)`. Then the trace `Ri_* a(K) ⟶ K` —
@@ -564,7 +537,7 @@ theorem rightAdjointToDerivedSheafHom_comp_derivedEvaluationAtOne_of_isClosedImm
         (adj.counit.app K).hom
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.evaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L99). The attribute's comment: “the last arrow of the triangle: the map `R Eom_{O_X}(i_* O_Z, K) ⟶ K` induced by the unit `O_X ⟶ i_* O_Z`, here underived”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.evaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L99). The attribute's comment: “the last arrow of the triangle: the map `R Eom_{O_X}(i_* O_Z, K) ⟶ K` induced by the unit `O_X ⟶ i_* O_Z`, here underived”.
 
 > The map `ℰom_{𝒪_X}(i_* 𝒪_Z, -) ⟶ 𝟭` induced by the unit `𝒪_X ⟶ i_* 𝒪_Z`, that is,
 > evaluation of a local homomorphism at the section `1`: the counit of the adjunction of
@@ -575,7 +548,7 @@ noncomputable def evaluationAtOne :
     S.homSheafFromPushforwardStructureSheaf ⟶ 𝟭 (SheafOfModules.{u} (structureSheafRing S.X))
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedEvaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L169). The attribute's comment: “the last arrow of the triangle, constructed from the underived evaluation at the section `1` by the universal property of the right derived functor”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedEvaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L169). The attribute's comment: “the last arrow of the triangle, constructed from the underived evaluation at the section `1` by the universal property of the right derived functor”.
 
 > The map `R ℰom_{𝒪_X}(i_* 𝒪_Z, -) ⟶ 𝟭` on `D(𝒪_X)` induced by the unit `𝒪_X ⟶ i_* 𝒪_Z`: the
 > transformation out of the right derived functor which restricts to evaluation at one.
@@ -586,7 +559,7 @@ noncomputable def derivedEvaluationAtOne :
       𝟭 (DerivedCategory (SheafOfModules.{u} (structureSheafRing S.X)))
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_hom_comp_derivedEvaluationAtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L286). The attribute's comment: “the triangle at the level of ringed spaces: the trace of Tag 0A76 is the isomorphism of Tag 0A77 followed by the map induced by the unit `O_X ⟶ i_* O_Z`. Stated for every closed quotient morphism of ringed spaces and all of `D(O_X)`, so neither a Noetherian hypothesis nor boundedness of `K` appears”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientMorphismOfRingedSpaces.derivedModulePushforwardDerivedSheafHomExactSupportIso_hom_comp_derivedEvaluationAtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L286). The attribute's comment: “the triangle at the level of ringed spaces: the trace of Tag 0A76 is the isomorphism of Tag 0A77 followed by the map induced by the unit `O_X ⟶ i_* O_Z`. Stated for every closed quotient morphism of ringed spaces and all of `D(O_X)`, so neither a Noetherian hypothesis nor boundedness of `K` appears”.
 
 > **The triangle of [Stacks, Tag 0B6M] on all of `D(𝒪_X)`.** The trace `Ri_* R ℰom(𝒪_Z, K) ⟶ K`
 > — the counit of [Stacks, Tag 0A76] — is the isomorphism of [Stacks, Tag 0A77] followed by the
@@ -598,7 +571,7 @@ theorem derivedModulePushforwardDerivedSheafHomExactSupportIso_hom_comp_derivedE
       S.derivedModulePushforwardSheafHomExactSupportAdjunction.counit
 ```
 
-**`Stacks.Duality.rightAdjointToDerivedSheafHom_comp_derivedEvaluationAtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L325). The attribute's comment: “the example: the trace of a right adjoint `a` of `Ri_*` is the comparison map of Tag 0A9X followed by Tag 0A77 followed by the map induced by the unit `O_W ⟶ i_* O_Z`. Since Tag 0A9X enters as its comparison map rather than as an isomorphism, the statement needs neither pseudo-coherence of `i`, nor part (1) of Tag 0A6H, nor boundedness, and holds for every `K` in `D_QCoh(O_W)`”.
+**`Stacks.Duality.rightAdjointToDerivedSheafHom_comp_derivedEvaluationAtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTraceSheafHom.lean#L325). The attribute's comment: “the example: the trace of a right adjoint `a` of `Ri_*` is the comparison map of Tag 0A9X followed by Tag 0A77 followed by the map induced by the unit `O_W ⟶ i_* O_Z`. Since Tag 0A9X enters as its comparison map rather than as an isomorphism, the statement needs neither pseudo-coherence of `i`, nor part (1) of Tag 0A6H, nor boundedness, and holds for every `K` in `D_QCoh(O_W)`”.
 
 > **Stacks Project, Tag 0B6M (Example 48.9.8).** Let `i : Z ⟶ W` be a closed immersion and let
 > `a` be a right adjoint of `Ri_* : D_QCoh(𝒪_Z) ⥤ D_QCoh(𝒪_W)`. The trace `Ri_* a(K) ⟶ K` is the
@@ -623,4 +596,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.9, Tag 0A74](https://stacks.math.columbia.edu/tag/0A74)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

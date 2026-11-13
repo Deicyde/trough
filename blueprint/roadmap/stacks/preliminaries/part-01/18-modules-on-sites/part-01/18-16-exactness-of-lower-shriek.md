@@ -8,7 +8,7 @@ proof: formalized
 
 # 18.16 Exactness of lower shriek
 
-Section 18.16 of the Stacks Project, [Tag 04BE](https://stacks.math.columbia.edu/tag/04BE). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.16 of the Stacks Project, [Tag 04BE](https://stacks.math.columbia.edu/tag/04BE). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04BF, a definition
 
@@ -16,8 +16,8 @@ Section 18.16 of the Stacks Project, [Tag 04BE](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.lan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lan#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L80) (StacksFrontier): “g\_\{p!} = u\_p, the left Kan extension along `u.op`”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L82) (StacksFrontier): “g\_! F = (g\_\{p!} F)^#”.
+- [`CategoryTheory.Functor.lan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lan#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L101) (StacksFrontier): “g\_\{p!} = u\_p, the left Kan extension along `u.op`”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L103) (StacksFrontier): “g\_! F = (g\_\{p!} F)^#”.
 
 ## Tag 04BG, a lemma
 
@@ -25,16 +25,16 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.lanAdjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lanAdjunction#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L71) (StacksFrontier): “(1) g\_p! ⊣ u^p”. References: SGA 4 IV (4.6.1), “partial”.
-- [`CategoryTheory.Functor.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L72) (StacksFrontier): “(2) g\_! ⊣ g^\{-1}”.
-- [`CategoryTheory.Functor.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L73) (StacksFrontier): “g\_!”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L74) (StacksFrontier): “(2) g\_! = (g\_p! -)^#”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
+- [`CategoryTheory.Functor.lanAdjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lanAdjunction#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L92) (StacksFrontier): “(1) g\_p! ⊣ u^p”. References: SGA 4 IV (4.6.1), “partial”.
+- [`CategoryTheory.Functor.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L93) (StacksFrontier): “(2) g\_! ⊣ g^\{-1}”.
+- [`CategoryTheory.Functor.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L94) (StacksFrontier): “g\_!”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L95) (StacksFrontier): “(2) g\_! = (g\_p! -)^#”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
 
 ## Tag 04BH, a lemma
 
 [Tag 04BH](https://stacks.math.columbia.edu/tag/04BH) in the Stacks Project.
 
-**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean#L115). The attribute's comment: “preservation of finite limits”. References: SGA 4 III (1.3), “5), Ab-valued”.
+**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean#L115). The attribute's comment: “preservation of finite limits”. References: SGA 4 III (1.3), “5), Ab-valued”.
 
 > If a continuous functor between sites has a source with fibre products and equalizers which
 > it preserves, then lower shriek on abelian sheaves preserves finite limits.
@@ -53,7 +53,7 @@ public theorem gShriek_preservesFiniteLimits
       (Functor.sheafPullbackConstruction.sheafPullback u Ab.{w} J K)
 ```
 
-**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean#L135). The attribute's comment: “preservation of finite colimits”. References: SGA 4 III (1.3), “4), finite colimits”.
+**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekExactness.lean#L135). The attribute's comment: “preservation of finite colimits”. References: SGA 4 III (1.3), “4), finite colimits”.
 
 > Lower shriek along a continuous functor `u` preserves finite colimits, for sheaves valued in
 > any category `A` for which the left Kan extensions along `u.op` and weak sheafification on the
@@ -71,7 +71,7 @@ public theorem gShriek_preservesFiniteColimits
       (Functor.sheafPullbackConstruction.sheafPullback u A J K)
 ```
 
-**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteLimits_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekModuleExactness.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekModuleExactness.lean#L121). The attribute's comment: “preservation of finite limits, module coefficients”.
+**`Stacks.Sites.LowerShriek.gShriek_preservesFiniteLimits_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekModuleExactness.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekModuleExactness.lean#L121). The attribute's comment: “preservation of finite limits, module coefficients”.
 
 > **Stacks 04BH for module coefficients.** If a continuous functor between sites has a source
 > with fibre products and equalizers which it preserves, then lower shriek on sheaves of
@@ -98,7 +98,7 @@ public theorem gShriek_preservesFiniteLimits_module
 
 [Tag 077I](https://stacks.math.columbia.edu/tag/077I) in the Stacks Project.
 
-**`stacks077I_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L211). The attribute's comment: “counit”. References: SGA 4 III (2.6), “u ff ⇒ u\_* ff, abelian”.
+**`stacks077I_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L212). The attribute's comment: “counit”. References: SGA 4 III (2.6), “u ff ⇒ u\_* ff, abelian”.
 
 > If `u : C ⥤ D` is continuous, cocontinuous and fully faithful, then for every abelian sheaf
 > `F` on `C` the counit `ε_F : g⁻¹ (g_* F) → F` of the adjunction `g⁻¹ ⊣ g_*` is an isomorphism.
@@ -110,7 +110,7 @@ theorem stacks077I_counit_isIso
     IsIso ((adjStar u J K).counit.app F)
 ```
 
-**`stacks077I_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L221). The attribute's comment: “unit”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff, abelian”; SGA 4 VII (4.1), “Clause (i)”.
+**`stacks077I_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L222). The attribute's comment: “unit”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff, abelian”; SGA 4 VII (4.1), “Clause (i)”.
 
 > If `u : C ⥤ D` is continuous, cocontinuous and fully faithful, then for every abelian sheaf
 > `F` on `C` the unit `η_F : F → g⁻¹ (g_! F)` of the adjunction `g_! ⊣ g⁻¹` is an isomorphism.
@@ -126,7 +126,7 @@ theorem stacks077I_unit_isIso
 
 [Tag 04BI](https://stacks.math.columbia.edu/tag/04BI) in the Stacks Project.
 
-**`Stacks.ChangeOfRings.hasRightAdjoint_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L56). The attribute's comment: “base change has a right adjoint, namely restriction of scalars”.
+**`Stacks.ChangeOfRings.hasRightAdjoint_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L56). The attribute's comment: “base change has a right adjoint, namely restriction of scalars”.
 
 > Base change `M ↦ S ⊗_R M` along a ring map `f : R →+* S` always has a right adjoint, namely
 > restriction of scalars along `f`.
@@ -136,7 +136,7 @@ theorem hasRightAdjoint_extendScalars :
     (ModuleCat.extendScalars.{u₁, u₂, max v u₂} f).IsLeftAdjoint
 ```
 
-**`Stacks.ChangeOfRings.flat_of_isRightAdjoint_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L78). The attribute's comment: “a left adjoint of base change forces flatness”.
+**`Stacks.ChangeOfRings.flat_of_isRightAdjoint_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L78). The attribute's comment: “a left adjoint of base change forces flatness”.
 
 > If base change `M ↦ S ⊗_R M` along a ring map `f : R →+* S` has a left adjoint, then `f` is
 > flat.
@@ -146,7 +146,7 @@ theorem flat_of_isRightAdjoint_extendScalars [Small.{v} R]
     (h : (ModuleCat.extendScalars.{u₁, u₂, v} f).IsRightAdjoint) : f.Flat
 ```
 
-**`Stacks.ChangeOfRings.not_isRightAdjoint_extendScalars_zmodTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L100). The attribute's comment: “no left adjoint in general”.
+**`Stacks.ChangeOfRings.not_isRightAdjoint_extendScalars_zmodTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L100). The attribute's comment: “no left adjoint in general”.
 
 > Base change `M ↦ ℤ/2ℤ ⊗_ℤ M` along the ring map `ℤ → ℤ/2ℤ` has no left adjoint.
 
@@ -157,13 +157,13 @@ theorem not_isRightAdjoint_extendScalars_zmodTwo :
 
 Declarations registered for the tag:
 
-- [`ModuleCat.extendRestrictScalarsAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.extendRestrictScalarsAdj#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L60) (StacksFrontier): “the right adjoint of base change is restriction of scalars, as an adjunction”.
+- [`ModuleCat.extendRestrictScalarsAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.extendRestrictScalarsAdj#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/ExtendScalarsNoLeftAdjoint.lean#L60) (StacksFrontier): “the right adjoint of base change is restriction of scalars, as an adjunction”.
 
 ## Tag 08P3, a lemma
 
 [Tag 08P3](https://stacks.math.columbia.edu/tag/08P3) in the Stacks Project.
 
-**`Stacks.Sites.LowerShriek.lowerShriek_comp_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L119). The attribute's comment: “part (1), compatibility with underlying sheaves of sets”.
+**`Stacks.Sites.LowerShriek.lowerShriek_comp_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L119). The attribute's comment: “part (1), compatibility with underlying sheaves of sets”.
 
 > **Stacks 08P3 (1), compatibility with underlying sheaves.** When `G` has a left adjoint,
 > lower shriek on abelian sheaves agrees naturally, on underlying sheaves of sets, with lower
@@ -177,7 +177,7 @@ noncomputable def lowerShriek_comp_forget_iso [G.IsRightAdjoint] :
         Functor.sheafPullbackConstruction.sheafPullback G (Type (max u₂ v₂)) J K
 ```
 
-**`Stacks.Sites.LowerShriek.lowerShriek_iso_sheafPullbackCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L161). The attribute's comment: “part (2), lower shriek equals inverse image”.
+**`Stacks.Sites.LowerShriek.lowerShriek_iso_sheafPullbackCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L161). The attribute's comment: “part (2), lower shriek equals inverse image”.
 
 > **Stacks 08P3 (2), the lower shriek.** If the left adjoint `W` is cocontinuous, lower
 > shriek along `G` is naturally isomorphic to the inverse-image functor associated to `W`.
@@ -189,7 +189,7 @@ noncomputable def lowerShriek_iso_sheafPullbackCocontinuous [G.IsRightAdjoint]
       W.sheafPullbackCocontinuous AddCommGrpCat.{max u₂ v₂} K J
 ```
 
-**`Stacks.Sites.LowerShriek.sheafPushforwardContinuous_iso_sheafPushforwardCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L174). The attribute's comment: “part (2), inverse image equals direct image”.
+**`Stacks.Sites.LowerShriek.sheafPushforwardContinuous_iso_sheafPushforwardCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L174). The attribute's comment: “part (2), inverse image equals direct image”.
 
 > **Stacks 08P3 (2), the inverse image.** If the left adjoint `W` is cocontinuous, inverse
 > image along `G` is naturally isomorphic to the direct-image functor associated to `W`.
@@ -201,7 +201,7 @@ noncomputable def sheafPushforwardContinuous_iso_sheafPushforwardCocontinuous [W
       W.sheafPushforwardCocontinuous AddCommGrpCat.{max u₂ v₂} K J
 ```
 
-**`Stacks.Sites.LowerShriek.lowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L184). The attribute's comment: “part (1), exactness”.
+**`Stacks.Sites.LowerShriek.lowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekOfLeftAdjoint.lean#L184). The attribute's comment: “part (1), exactness”.
 
 > **Stacks 08P3 (1), exactness.** The lower-shriek functor on abelian sheaves associated to
 > `G` is exact.
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.16, Tag 04BE](https://stacks.math.columbia.edu/tag/04BE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

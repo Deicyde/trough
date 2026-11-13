@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Conjectures associated with… to Ascending descending base…
+# Conjectures associated with… to Conjectures associated with…
 
+- [Conjectures associated with A109671](../../../../../oeis/part-07/conjectures-associated-with-a109671.md)
+- [Conjectures associated with A109845](../../../../../oeis/part-07/conjectures-associated-with-a109845.md)
 - [Conjectures associated with A109905](../../../../../oeis/part-07/conjectures-associated-with-a109905.md)
 - [Conjectures associated with A109908](../../../../../oeis/part-07/conjectures-associated-with-a109908.md)
 - [Conjectures associated with A109909](../../../../../oeis/part-07/conjectures-associated-with-a109909.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Conjectures associated with A113252](../../../../../oeis/part-08/conjectures-associated-with-a113252.md)
 - [Square odd-indexed terms in the recurrence $a(n) = 8a(n-1) - 8a(n-2) + 8a(n-3) - a(n-4)$](../../../../../oeis/part-08/square-odd-indexed-terms-in-the-recurrence-a-n-8.md)
 - [Conjectures associated with A113255](../../../../../oeis/part-08/conjectures-associated-with-a113255.md)
-- [Ascending descending base exponent transform of squares](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of.md)
-- [Ascending descending base exponent transform of factorials](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of-2.md)

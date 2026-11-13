@@ -8,13 +8,13 @@ proof: formalized
 
 # 73.5 Smooth topology
 
-Section 73.5 of the Stacks Project, [Tag 03YB](https://stacks.math.columbia.edu/tag/03YB). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 73.5 of the Stacks Project, [Tag 03YB](https://stacks.math.columbia.edu/tag/03YB). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 041C, a definition
 
 [Tag 041C](https://stacks.math.columbia.edu/tag/041C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSmoothCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L300).
+**`AlgebraicGeometry.Space.IsSmoothCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L300).
 
 > **Stacks 041C.** A family of morphisms of algebraic spaces over `S` with common target
 > is a *smooth covering* when every member is smooth and the family is jointly surjective on
@@ -29,7 +29,7 @@ structure IsSmoothCovering {I : Type v} {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type
 
 [Tag 0DFA](https://stacks.math.columbia.edu/tag/0DFA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmoothCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L118). The attribute's comment: “étale coverings”.
+**`AlgebraicGeometry.Space.isSmoothCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L118). The attribute's comment: “étale coverings”.
 
 > **Stacks 0DFA**, the étale case: an étale covering of algebraic spaces over `S` is a smooth
 > covering.
@@ -42,7 +42,7 @@ theorem isSmoothCovering_of_isEtaleCovering
     IsSmoothCovering B S hS X f
 ```
 
-**`AlgebraicGeometry.Space.isSmoothCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L242). The attribute's comment: “Zariski coverings”.
+**`AlgebraicGeometry.Space.isSmoothCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L242). The attribute's comment: “Zariski coverings”.
 
 > **Stacks 0DFA**, the Zariski case: a Zariski covering of algebraic spaces over `S` is a
 > smooth covering, because it is an étale covering by Stacks 0DF1.
@@ -60,7 +60,7 @@ theorem isSmoothCovering_of_isZariskiCovering
 
 [Tag 041D](https://stacks.math.columbia.edu/tag/041D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmoothCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L64). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.Space.isSmoothCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L64). The attribute's comment: “isomorphism”.
 
 > **Stacks 041D**, the isomorphism clause. An isomorphism of algebraic spaces over `S`,
 > regarded as a family indexed by a point, is a smooth covering.
@@ -72,7 +72,7 @@ lemma isSmoothCovering_of_isIso
     IsSmoothCovering B S hS (fun _ : Unit ↦ X') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L86). The attribute's comment: “composition”.
+**`AlgebraicGeometry.Space.isSmoothCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L86). The attribute's comment: “composition”.
 
 > **Stacks 041D**, the composition clause. Composing a smooth covering of an algebraic space
 > over `S` with a smooth covering of each of its members gives a smooth covering.
@@ -88,7 +88,7 @@ theorem isSmoothCovering_comp
       (fun ij : Σ i, J i ↦ g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothCovering_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L113). The attribute's comment: “base\_change”.
+**`AlgebraicGeometry.Space.isSmoothCovering_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L113). The attribute's comment: “base\_change”.
 
 > **Stacks 041D**, the base-change clause. The first projections of the fibre products of a
 > smooth covering of an algebraic space over `S` with a morphism `g` into its target form a
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 73.5, Tag 03YB](https://stacks.math.columbia.edu/tag/03YB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

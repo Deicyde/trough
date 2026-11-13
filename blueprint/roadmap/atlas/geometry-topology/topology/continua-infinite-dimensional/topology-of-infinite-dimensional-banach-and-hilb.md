@@ -7,7 +7,7 @@ statement: formalized
 
 # Topology of infinite-dimensional Banach and Hilbert spaces
 
-8 results, 4 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html).
+8 results, 4 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html).
 
 ## Scottish Book Problem 167
 
@@ -16,7 +16,7 @@ space $H$ with unit sphere $S = \{p \in H : \|p\| = 1\}$, every $n \in \mathbb{N
 continuous functions $f_1, \dots, f_n : S \to \mathbb{R}$ and every continuous map
 $T : S \to S$, there is a point $p_0 \in S$ with $f_i(T(p_0)) = f_i(p_0)$ for every $i$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook167Wanted.ScottishBookProblem167Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#scottish-book-problem167-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook167Wanted.ScottishBookProblem167Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#scottish-book-problem167-claim).
 
 ## Negative answer to Scottish Book Problem 167
 
@@ -31,7 +31,7 @@ The claim fails already for one function.
 
 - S. Ulam, Problem 167 of the Scottish Book; refuted via V. Klee's homeomorphism of the Hilbert sphere onto the whole Hilbert space: composing that homeomorphism with a translation gives a continuous `T` and a continuous `f` with no point `p0` satisfying `f (T p0) = f p0`. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook167Wanted.ulam167_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#ulam167-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook167Wanted.ulam167_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook167Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#ulam167-refuted).
 
 ## Projective Hilbert space
 
@@ -42,7 +42,7 @@ antipodal pairs $\{x, -x\}$ of unit vectors, that is, the diameters of the unit 
 
 When $E$ is a real inner product space, it carries the quotient topology of the unit sphere.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.ProjectiveHilbertSpace`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.ProjectiveHilbertSpace`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space).
 
 ## Projective Hilbert space homeomorphic to the space itself
 
@@ -51,7 +51,7 @@ space $E$, the statement that the projective Hilbert space of $E$, the unit sphe
 $\{x \in E : \|x\| = 1\}$ with each $x$ identified with $-x$ and given the quotient topology,
 is homeomorphic to $E$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.ProjectiveHilbertSpaceHomeomorphicToHilbertSpace`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space-homeomorphic-to).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.ProjectiveHilbertSpaceHomeomorphicToHilbertSpace`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space-homeomorphic-to).
 
 ## Projective Hilbert space is not homeomorphic to Hilbert space
 
@@ -69,7 +69,7 @@ fundamental group being $\mathbb{Z}/2$ via the double covering by the unit spher
 
 - S. Ulam, Problem 35 of the Scottish Book; see the commentary of Holsztynski in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015), and the Hilbert-manifold classification by homotopy type.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.projective_hilbert_space_not_homeomorphic_to_hilbert_space` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space-not-homeomorphi).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted.projective_hilbert_space_not_homeomorphic_to_hilbert_space` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook35Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#projective-hilbert-space-not-homeomorphi).
 
 ## Retraction onto the unit sphere of Hilbert space
 
@@ -87,7 +87,7 @@ no-retraction theorem, so the infinite-dimensional hypothesis is essential.
 
 - S. Ulam, Problem 36 of the Scottish Book, asking whether there is a retraction of the closed unit ball of Hilbert space onto its boundary; the answer is affirmative, see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015), and the 2026 survey "90+ years of the Scottish Book" (arXiv:2603.27867), which notes that the unit sphere of a Hilbert space is homeomorphic to the whole space.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook36Wanted.hilbertBallRetractsOntoSphere` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook36Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook36Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#hilbert-ball-retracts-onto-sphere).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook36Wanted.hilbertBallRetractsOntoSphere` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook36Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook36Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#hilbert-ball-retracts-onto-sphere).
 
 ## Scottish Book Problem 7 (Mazur–Banach)
 
@@ -95,7 +95,7 @@ The claim that in every real Banach space $E$,
 any two closed convex subsets $A, B \subseteq E$ whose linear spans are infinite-dimensional are
 homeomorphic, with the subspace topologies.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook7Wanted.ScottishBookProblem7Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#scottish-book-problem7-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook7Wanted.ScottishBookProblem7Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#scottish-book-problem7-claim).
 
 ## Scottish Book Problem 7 fails: closed convex sets need not be homeomorphic
 
@@ -111,7 +111,7 @@ invariant.
 
 - S. Mazur and S. Banach, Problem 7 of the Scottish Book; T. Banakh's observation as reported in the 2026 survey "90+ years of the Scottish Book" (arXiv:2603.27867). The modified classification problem was solved for Frechet spaces by Banakh-Cauty, Studia Mathematica 205 (2011) 1-11.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook7Wanted.closedConvexSetsHomeomorphic_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#closed-convex-sets-homeomorphic-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook7Wanted.closedConvexSetsHomeomorphic_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook7Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html#closed-convex-sets-homeomorphic-refuted).
 
 ## Depends on
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Topology of infinite-dimensional Banach and Hilbert spaces](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/continua-infinite-dimensional/topology-of-infinite-dimensional-banach-and-hilb)

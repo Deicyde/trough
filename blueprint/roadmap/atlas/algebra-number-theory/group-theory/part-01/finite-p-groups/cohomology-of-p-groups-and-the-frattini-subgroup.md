@@ -7,7 +7,7 @@ statement: formalized
 
 # Cohomology of p-groups and the Frattini subgroup
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html).
 
 ## Centre of the Frattini subgroup
 
@@ -15,7 +15,7 @@ An element $x$ of a group $G$ lies in the centre
 $Z(\Phi(G))$ of the Frattini subgroup $\Phi(G)$ when $x \in \Phi(G)$ and $xy = yx$ for every
 $y \in \Phi(G)$.
 
-Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.InFrattiniCenter`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#in-frattini-center).
+Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.InFrattiniCenter`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#in-frattini-center).
 
 ## Vanishing first cohomology of $G/\Phi(G)$ in $Z(\Phi(G))$
 
@@ -30,7 +30,7 @@ Such maps $\delta$ are exactly the inflations to $G$ of the 1-cocycles of $G/\Ph
 in $Z(\Phi(G))$ for the conjugation action, so the property says
 $H^1(G/\Phi(G), Z(\Phi(G))) = 0$.
 
-Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.FrattiniCenterH1Trivial`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#frattini-center-h1-trivial).
+Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.FrattiniCenterH1Trivial`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#frattini-center-h1-trivial).
 
 ## Kourovka Problem 17.2 (a non-abelian $p$-group with trivial $H^1$)
 
@@ -40,7 +40,7 @@ non-abelian $p$-group $G$ such that, writing $\Phi(G)$ for the Frattini subgroup
 $Z(\Phi(G))$ for its centre, the first cohomology group $H^1(G/\Phi(G), Z(\Phi(G)))$ for the
 conjugation action of $G/\Phi(G)$ on $Z(\Phi(G))$ is trivial.
 
-Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.nonabelianPGroupFrattiniCenterH1Trivial`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#nonabelian-pgroup-frattini-center-h1-tri).
+Formalized by `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.nonabelianPGroupFrattiniCenterH1Trivial`, a definition declared in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#nonabelian-pgroup-frattini-center-h1-tri).
 
 ## A non-abelian $p$-group with $H^1(G/\Phi(G), Z(\Phi(G))) = 0$ (Kourovka 17.2)
 
@@ -56,7 +56,7 @@ citing Abdollahi (2011).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 17.2 (A. Abdollahi); resolution: A. Abdollahi, J. Algebra 342 (2011), 154-160, Kourovka Archive, Problem 17.2 (Yes, it does).
 
-Stated but not proved: `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.nonabelianPGroupFrattiniCenterH1Trivial_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#nonabelian-pgroup-frattini-center-h1-tri-2).
+Stated but not proved: `MathlibExt.GroupTheory.FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.nonabelianPGroupFrattiniCenterH1Trivial_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FrattiniCenterFirstCohomologyKourovka17Problem2Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html#nonabelian-pgroup-frattini-center-h1-tri-2).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cohomology of p-groups and the Frattini subgroup](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-p-groups/cohomology-of-p-groups-and-the-frattini-subgroup)

@@ -1,60 +1,65 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.Bicategory.TwoCommSq, CategoryTheory.Bicategory.TwoCommSq.PreHom, CategoryTheory.Bicategory.TwoCommSq.category, CategoryTheory.Bicategory.IsBiterminal, CategoryTheory.Bicategory.IsTwoFibreProduct, CategoryTheory.Limits.CategoricalPullback, CategoryTheory.Limits.CategoricalPullback.instCategory, CategoryTheory.Limits.CategoricalPullback.catCommSq
+lean: CategoryTheory.Bicategory.TwoCommSq, CategoryTheory.Bicategory.TwoCommSq.PreHom, CategoryTheory.Bicategory.TwoCommSqBicat.bicategory, CategoryTheory.Bicategory.IsBiterminal, CategoryTheory.Bicategory.IsFinalTwoCommSq, CategoryTheory.Limits.CategoricalPullback, CategoryTheory.Limits.CategoricalPullback.instCategory, CategoryTheory.Limits.CategoricalPullback.catCommSq
 statement: formalized
 proof: formalized
 ---
 
 # 4.31 2-fibre products
 
-Section 4.31 of the Stacks Project, [Tag 003O](https://stacks.math.columbia.edu/tag/003O). 15 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.31 of the Stacks Project, [Tag 003O](https://stacks.math.columbia.edu/tag/003O). 15 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 003O, the section
 
 [Tag 003O](https://stacks.math.columbia.edu/tag/003O) in the Stacks Project.
 
-**`CategoryTheory.Bicategory.TwoCommSq`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L96).
+**`CategoryTheory.Bicategory.TwoCommSq`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L109).
 
 > A **2-commutative cone** over the cospan `(f, g)`: an object `pt` together with
 > 1-morphisms `fst : pt ⟶ x`, `snd : pt ⟶ y` and an invertible 2-morphism
 > `iso : fst ≫ f ≅ snd ≫ g` filling the square.
 >
-> **Stacks 003O.** These are the objects of the category of 2-commutative diagrams over
+> **Stacks 003O.** These are the objects of the 2-category of 2-commutative diagrams over
 > the cospan `(f, g)`.
 
 ```lean
 structure TwoCommSq (f : x ⟶ z) (g : y ⟶ z)
 ```
 
-**`CategoryTheory.Bicategory.TwoCommSq.PreHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L117).
+**`CategoryTheory.Bicategory.TwoCommSq.PreHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L131).
 
 > A **pre-morphism of cones** `T ⟶ S`: a 1-morphism `hom : T.pt ⟶ S.pt` together with
 > invertible comparison 2-cells `isoFst : T.fst ≅ hom ≫ S.fst`, `isoSnd : T.snd ≅ hom ≫ S.snd`
 > subject to the Stacks 003O compatibility square.
 >
-> **Stacks 003O.** These are the morphisms of the category of 2-commutative diagrams, before
-> passing to classes modulo the 2-cell equivalence `TwoCommSq.PreHom.Rel`.
+> **Stacks 003O.** These are the 1-morphisms of the 2-category of 2-commutative diagrams
+> (`TwoCommSqBicat.bicategory`), before passing to classes modulo the 2-cell equivalence
+> `TwoCommSq.PreHom.Rel`; the 2-morphisms between them are `TwoCommSq.PreHom.Hom₂`.
 
 ```lean
 structure TwoCommSq.PreHom (T S : TwoCommSq f g)
 ```
 
-**`CategoryTheory.Bicategory.TwoCommSq.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L247).
+**`CategoryTheory.Bicategory.TwoCommSqBicat.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagramBicategory.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagramBicategory.lean#L243).
 
-> **Stacks 003O.** The category of 2-commutative diagrams over the cospan `(f, g)`:
-> objects are the 2-commutative squares, and morphisms are pre-morphisms modulo the 2-cell
-> equivalence, which is what makes composition strictly associative and unital.
+> **Stacks 003O.** The 2-category of 2-commutative diagrams over the cospan `(f, g)`:
+> objects are the 2-commutative squares `(w, a, b, φ)`, 1-morphisms are the triples
+> `(k, α, β)` satisfying the compatibility square (`TwoCommSq.PreHom`), composed by
+> `TwoCommSq.PreHom.comp`, and 2-morphisms are the 2-morphisms `δ : k₁ ⟶ k₂` compatible with the
+> comparison 2-cells (`TwoCommSq.PreHom.Hom₂`), composed vertically and horizontally as in `B`.
+> Since `B` is a bicategory, this is a bicategory, whose associators and unitors are those of `B`;
+> it is a strict 2-category when `B` is.
 
 ```lean
-instance TwoCommSq.category : Category (TwoCommSq f g)
+instance TwoCommSqBicat.bicategory : Bicategory (TwoCommSqBicat f g)
 ```
 
 ## Tag 003P, a definition
 
 [Tag 003P](https://stacks.math.columbia.edu/tag/003P) in the Stacks Project.
 
-**`CategoryTheory.Bicategory.IsBiterminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Bicategory/TwoOneCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Bicategory/TwoOneCategory.lean#L67).
+**`CategoryTheory.Bicategory.IsBiterminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Bicategory/TwoOneCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Bicategory/TwoOneCategory.lean#L67).
 
 > A *final object* of a `(2,1)`-category `B`, defined as an object `T` such that every
 > hom-category `X ⟶ T` has a terminal object. In a locally groupoidal `B` this says that every
@@ -69,15 +74,19 @@ def IsBiterminal (T : B) : Prop
 
 [Tag 003Q](https://stacks.math.columbia.edu/tag/003Q) in the Stacks Project.
 
-**`CategoryTheory.Bicategory.IsTwoFibreProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L270).
+**`CategoryTheory.Bicategory.IsFinalTwoCommSq`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Defs.lean#L379). The attribute's comment: “final object of the 2-category of 2-commutative diagrams (003O, 003P), with the uniqueness of the 2-isomorphism of 003P (2)”.
 
-> **Stacks 003Q.** A 2-commutative square `P` over `(f, g)` is a **2-fibre product** of
-> `f` and `g` when it is a terminal (final) object of the category `TwoCommSq f g` of
-> 2-commutative diagrams. Its `fst`, `snd` and `iso` fields are the projections `p`, `q` and
+> **Stacks 003Q.** A 2-commutative square `P` over `(f, g)` is a **2-fibre product** of `f`
+> and `g`: a final object, in the sense of Stacks 003P, of the 2-category of 2-commutative
+> diagrams over `(f, g)` of Stacks 003O. That is, (1) every 2-commutative square `Q` has a
+> 1-morphism `preHom Q : Q ⟶ P`, and (2) any two 1-morphisms `F G : Q ⟶ P` are related by a
+> unique 2-morphism `F ⟶ G` of Stacks 003O (4), which is then invertible
+> (`CategoryTheory.Bicategory.IsFinalTwoCommSq.hom₂Iso`), so `F` and `G` are isomorphic by a
+> unique 2-morphism. The `fst`, `snd` and `iso` fields of `P` are the projections `p`, `q` and
 > the invertible `ψ : f ∘ p ⟶ g ∘ q` of the source.
 
 ```lean
-abbrev IsTwoFibreProduct (P : TwoCommSq f g) : Type _
+structure IsFinalTwoCommSq (P : TwoCommSq f g)
 ```
 
 ## Tag 003R, an example
@@ -86,29 +95,31 @@ abbrev IsTwoFibreProduct (P : TwoCommSq f g) : Type _
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.CategoricalPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L64) (StacksFrontier): “objects: triples (A, B, f)”.
-- [`CategoryTheory.Limits.CategoricalPullback.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L65) (StacksFrontier): “morphisms: compatible pairs (a, b)”.
-- [`CategoryTheory.Limits.CategoricalPullback.catCommSq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback.catCommSq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch04.lean#L67) (StacksFrontier): “projections and the transformation ψ”.
+- [`CategoryTheory.Limits.CategoricalPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L62) (StacksFrontier): “objects: triples (A, B, f)”.
+- [`CategoryTheory.Limits.CategoricalPullback.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L63) (StacksFrontier): “morphisms: compatible pairs (a, b)”.
+- [`CategoryTheory.Limits.CategoricalPullback.catCommSq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.CategoricalPullback.catCommSq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch04.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch04.lean#L65) (StacksFrontier): “projections and the transformation ψ”.
 
 ## Tag 02X9, a lemma
 
 [Tag 02X9](https://stacks.math.columbia.edu/tag/02X9) in the Stacks Project.
 
-**`CategoryTheory.Cat.isTwoFibreProduct_categoricalPullbackSq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/CatCategoricalPullback.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/CatCategoricalPullback.lean#L214). The attribute's comment: “the explicit construction is a 2-fibre product in the sense of Stacks 003Q”.
+**`CategoryTheory.Cat.isFinalTwoCommSq_categoricalPullbackSq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/CatCategoricalPullback.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/CatCategoricalPullback.lean#L263). The attribute's comment: “the explicit construction is a 2-fibre product in the sense of Stacks 003Q, with the uniqueness of the 2-isomorphism of Stacks 003P (2)”.
 
-> The explicit 2-fibre product of two functors is a 2-fibre product of them in the bicategory of
-> categories: it is a terminal object of the category of 2-commutative squares over the cospan.
+> **Stacks 02X9.** The explicit 2-fibre product of two functors is a 2-fibre product of them in
+> the 2-category of categories in the sense of Stacks 003Q: a final object of the 2-category of
+> 2-commutative diagrams over the cospan, so any two 1-morphisms into it from a 2-commutative
+> square are isomorphic by a *unique* 2-morphism.
 
 ```lean
-def isTwoFibreProduct_categoricalPullbackSq (F : A ⟶ C) (G : B ⟶ C) :
-    IsTwoFibreProduct (categoricalPullbackSq F G)
+noncomputable def isFinalTwoCommSq_categoricalPullbackSq (F : A ⟶ C) (G : B ⟶ C) :
+    IsFinalTwoCommSq (categoricalPullbackSq F G)
 ```
 
 ## Tag 06RL, a remark
 
 [Tag 06RL](https://stacks.math.columbia.edu/tag/06RL) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.Quintuple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L39).
+**`CategoryTheory.Limits.CategoricalPullback.Quintuple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L39).
 
 > **Stacks 06RL.** The symmetric model of the 2-fibre product `𝒜 ×_𝒞 ℬ`: an object is a
 > quintuple `(A, B, C, a, b)` with `A : 𝒜`, `B : ℬ`, `C : 𝒞` and isomorphisms `a : F A ≅ C`,
@@ -118,7 +129,7 @@ def isTwoFibreProduct_categoricalPullbackSq (F : A ⟶ C) (G : B ⟶ C) :
 structure Quintuple
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.Quintuple.toCategoricalPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L90).
+**`CategoryTheory.Limits.CategoricalPullback.Quintuple.toCategoricalPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L90).
 
 > **Stacks 06RL.** The comparison functor from the symmetric model to the standard 2-fibre
 > product: on objects it sends `(A, B, C, a, b)` to `(A, B, a ≪≫ b.symm)`, whose structural
@@ -128,7 +139,7 @@ structure Quintuple
 def toCategoricalPullback : Quintuple F G ⥤ CategoricalPullback F G
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.Quintuple.isEquivalence_toCategoricalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L165).
+**`CategoryTheory.Limits.CategoricalPullback.Quintuple.isEquivalence_toCategoricalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/SymmetricModel.lean#L165).
 
 > **Stacks 06RL.** The comparison functor from the symmetric quintuple model of the 2-fibre
 > product to the standard model `CategoricalPullback F G` is an equivalence of categories.
@@ -142,7 +153,7 @@ theorem isEquivalence_toCategoricalPullback :
 
 [Tag 02XA](https://stacks.math.columbia.edu/tag/02XA) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.map`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Functoriality.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Functoriality.lean#L43).
+**`CategoryTheory.Limits.CategoricalPullback.map`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Functoriality.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Functoriality.lean#L43).
 
 > The functor `𝒳 ×_𝒵 𝒴 ⥤ 𝒜 ×_𝒞 ℬ` induced by a 2-commutative diagram between the two cospans: on
 > objects it sends `(x, y, φ)` to `(L x, K y, α_y⁻¹ ∘ M(φ) ∘ β_x⁻¹)`, and on morphisms it applies `L`
@@ -159,7 +170,7 @@ def CategoricalPullback.map (H : 𝒳 ⥤ 𝒵) (I : 𝒴 ⥤ 𝒵)
 
 [Tag 02XB](https://stacks.math.columbia.edu/tag/02XB) in the Stacks Project.
 
-**`CategoryTheory.induced_faithful_of_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L174). The attribute's comment: “(1)”.
+**`CategoryTheory.induced_faithful_of_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L174). The attribute's comment: “(1)”.
 
 > **Stacks 02XB (1)** — If `K` and `L` are faithful, then the induced functor
 > `𝒳 ×_𝒵 𝒴 ⥤ 𝒜 ×_𝒞 ℬ` is faithful.
@@ -169,7 +180,7 @@ theorem induced_faithful_of_faithful [K.Faithful] [L.Faithful] :
     (CategoricalPullback.map H I L K M F G α β).Faithful
 ```
 
-**`CategoryTheory.induced_fullyFaithful_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L183). The attribute's comment: “(2)”. References: SGA 1 VI (4.1).
+**`CategoryTheory.induced_fullyFaithful_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L183). The attribute's comment: “(2)”. References: SGA 1 VI (4.1).
 
 > **Stacks 02XB (2)** — If `K` and `L` are fully faithful and `M` is faithful,
 > then the induced functor `𝒳 ×_𝒵 𝒴 ⥤ 𝒜 ×_𝒞 ℬ` is fully faithful.
@@ -181,7 +192,7 @@ theorem induced_fullyFaithful_of_fullyFaithful
       (CategoricalPullback.map H I L K M F G α β).Full
 ```
 
-**`CategoryTheory.induced_isEquivalence_of_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L201). The attribute's comment: “(3)”.
+**`CategoryTheory.induced_isEquivalence_of_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/InducedFunctor.lean#L201). The attribute's comment: “(3)”.
 
 > **Stacks 02XB (3)** — If `K` and `L` are equivalences and `M` is fully
 > faithful, then the induced functor `𝒳 ×_𝒵 𝒴 ⥤ 𝒜 ×_𝒞 ℬ` is an equivalence
@@ -197,7 +208,7 @@ theorem induced_isEquivalence_of_isEquivalence
 
 [Tag 02XC](https://stacks.math.columbia.edu/tag/02XC) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.assocFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean#L33).
+**`CategoryTheory.Limits.CategoricalPullback.assocFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean#L33).
 
 > **Stacks 02XC.** The canonical comparison functor
 > `(𝒜 ×_ℬ 𝒞) ×_𝒟 ℰ ⥤ 𝒜 ×_ℬ (𝒞 ×_𝒟 ℰ)`, rebracketing `((A, C, φ), E, ψ) ↦ (A, (C, E, ψ), φ)`.
@@ -209,7 +220,7 @@ def CategoricalPullback.assocFunctor
       CategoricalPullback H (CategoricalPullback.π₁ L M ⋙ K)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.assoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean#L58).
+**`CategoryTheory.Limits.CategoricalPullback.assoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Associativity.lean#L58).
 
 > **Stacks 02XC.** Associativity of 2-fibre products of categories: for
 > `H : 𝒜 ⥤ ℬ`, `K : 𝒞 ⥤ ℬ`, `L : 𝒞 ⥤ 𝒟` and `M : ℰ ⥤ 𝒟` the two iterated 2-fibre products
@@ -227,7 +238,7 @@ def CategoricalPullback.assoc
 
 [Tag 04S7](https://stacks.math.columbia.edu/tag/04S7) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.pr₀₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/TripleProjection.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/TripleProjection.lean#L91).
+**`CategoryTheory.Limits.CategoricalPullback.pr₀₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/TripleProjection.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/TripleProjection.lean#L91).
 
 > **Stacks 04S7.** For a commuting inner square `G ⋙ P = H ⋙ Q` under the diagram
 > `𝒜 → ℬ ← 𝒞 → 𝒟 ← ℰ`, the canonical functor `(𝒜 ×_ℬ 𝒞) ×_𝒟 ℰ ⥤ 𝒜 ×_ℱ ℰ` which forgets the
@@ -243,7 +254,7 @@ def CategoricalPullback.pr₀₂ (h : G ⋙ P = H ⋙ Q) :
 
 [Tag 02XD](https://stacks.math.columbia.edu/tag/02XD) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.assocComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Cancellation.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Cancellation.lean#L107).
+**`CategoryTheory.Limits.CategoricalPullback.assocComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Cancellation.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Cancellation.lean#L107).
 
 > **Stacks 02XD.** The canonical equivalence of categories `(A ×_B C) ×_C D ≌ A ×_B D`
 > for `A --F--> B <--G-- C <--H-- D`, i.e.
@@ -259,7 +270,7 @@ def assocComp :
 
 [Tag 02XE](https://stacks.math.columbia.edu/tag/02XE) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.prodDiagFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L58).
+**`CategoryTheory.Limits.CategoricalPullback.prodDiagFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L58).
 
 > **Stacks 02XE.** The canonical comparison functor
 > `CategoricalPullback (G₁.prod G₂) (Functor.diag S) ⥤ CategoricalPullback G₁ G₂`. On objects it
@@ -271,7 +282,7 @@ def prodDiagFunctor (G₁ : C₁ ⥤ S) (G₂ : C₂ ⥤ S) :
     CategoricalPullback (G₁.prod G₂) (Functor.diag S) ⥤ CategoricalPullback G₁ G₂
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_prodDiagFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L165).
+**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_prodDiagFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L165).
 
 > **Stacks 02XE.** The canonical comparison functor `prodDiagFunctor` is an equivalence of
 > categories: the 2-fibre product of `G₁ × G₂ : C₁ × C₂ ⥤ S × S` and the diagonal `Δ : S ⥤ S × S`
@@ -282,7 +293,7 @@ theorem isEquivalence_prodDiagFunctor (G₁ : C₁ ⥤ S) (G₂ : C₂ ⥤ S) :
     (prodDiagFunctor G₁ G₂).IsEquivalence
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.prodDiagEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L174).
+**`CategoryTheory.Limits.CategoricalPullback.prodDiagEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/Diagonal.lean#L174).
 
 > **Stacks 02XE.** The canonical equivalence of categories
 > `CategoricalPullback (G₁.prod G₂) (Functor.diag S) ≌ CategoricalPullback G₁ G₂`, induced by
@@ -297,7 +308,7 @@ noncomputable def prodDiagEquiv (G₁ : C₁ ⥤ S) (G₂ : C₂ ⥤ S) :
 
 [Tag 02XF](https://stacks.math.columbia.edu/tag/02XF) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.diagComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean#L98).
+**`CategoryTheory.Limits.CategoricalPullback.diagComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean#L98).
 
 > **Stacks 02XF.** The comparison functor `(𝒞 ×_𝒮 𝒞) ×_{𝒞 × 𝒞} 𝒞 ⥤ 𝒞 ×_{𝒮 × 𝒮} 𝒮`. On objects
 > it sends `((c₁, c₂, φ), c₃, ψ)` to `(c₃, G₁ c₁, (G₁ ψ₁⁻¹, φ⁻¹ ∘ G₂ ψ₂⁻¹))`, and on morphisms
@@ -307,7 +318,7 @@ noncomputable def prodDiagEquiv (G₁ : C₁ ⥤ S) (G₂ : C₂ ⥤ S) :
 def diagComparison : diagComparisonSource G₁ G₂ ⥤ diagComparisonTarget G₁ G₂
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_diagComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean#L234).
+**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_diagComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/IteratedDiagonal.lean#L234).
 
 > **Stacks 02XF.** The comparison functor `(𝒞 ×_𝒮 𝒞) ×_{𝒞 × 𝒞} 𝒞 ⥤ 𝒞 ×_{𝒮 × 𝒮} 𝒮` is an
 > equivalence of categories. (The source asserts an isomorphism of categories; that is corrected to
@@ -322,7 +333,7 @@ theorem isEquivalence_diagComparison : (diagComparison G₁ G₂).IsEquivalence
 
 [Tag 04Z1](https://stacks.math.columbia.edu/tag/04Z1) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.relativeDiagonalSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L89).
+**`CategoryTheory.Limits.CategoricalPullback.relativeDiagonalSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L89).
 
 > **Stacks 04Z1.** The natural isomorphism `σ : Θ ⋙ ρ ≅ π ⋙ Δ_{C/D}` witnessing that the
 > square 2-commutes; its component at `(a, b, f)` is `(𝟙_{F a}, f⁻¹)`.
@@ -332,7 +343,7 @@ def relativeDiagonalSquareIso :
     (mapBase F G H ⋙ toRelativeDiagonalTarget F G H) ≅ (toBase F G ⋙ relativeDiagonal H)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.toRelativeDiagonalPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L108).
+**`CategoryTheory.Limits.CategoricalPullback.toRelativeDiagonalPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L108).
 
 > **Stacks 04Z1.** The functor `A ×_C B ⥤ (A ×_D B) ×_{C ×_D C} C` induced by
 > `(Θ, π, σ)` into the explicit 2-fibre product of the cospan
@@ -345,7 +356,7 @@ def toRelativeDiagonalPullback :
       CategoricalPullback (toRelativeDiagonalTarget F G H) (relativeDiagonal H)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_toRelativeDiagonalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L179).
+**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_toRelativeDiagonalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/AsPullback.lean#L179).
 
 > **Stacks 04Z1.** The square above is a 2-fibre product diagram: the induced functor
 > `A ×_C B ⥤ (A ×_D B) ×_{C ×_D C} C` is an equivalence of categories.
@@ -359,7 +370,7 @@ theorem isEquivalence_toRelativeDiagonalPullback :
 
 [Tag 04YR](https://stacks.math.columbia.edu/tag/04YR) in the Stacks Project.
 
-**`CategoryTheory.Limits.CategoricalPullback.baseChangeDiagonalSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L104).
+**`CategoryTheory.Limits.CategoricalPullback.baseChangeDiagonalSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L104).
 
 > **Stacks 04YR.** The structural 2-cell `r ⋙ Δ_{X/Y} ≅ Δ_{U/V} ⋙ (r × r)` of the base-change
 > square for the diagonal. Both composites have both projections equal to `r = π₁ h s`, so the
@@ -370,7 +381,7 @@ def baseChangeDiagonalSquareIso :
     (π₁ h s ⋙ relativeDiagonal h) ≅ (relativeDiagonal (π₂ h s) ⋙ mapDiag h s)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.baseChangeDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L126).
+**`CategoryTheory.Limits.CategoricalPullback.baseChangeDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L126).
 
 > **Stacks 04YR.** The base-change square for the diagonal, over `U = h ⊡ s`: its legs are
 > `r = π₁ h s : U ⥤ X` and `Δ_{U/V} = relativeDiagonal (π₂ h s) : U ⥤ U ×_V U`, its cospan is
@@ -382,7 +393,7 @@ def baseChangeDiagonalSquare :
     CatCommSqOver (relativeDiagonal h) (mapDiag h s) (h ⊡ s)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_baseChangeDiagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L402).
+**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_baseChangeDiagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/DiagonalBaseChange.lean#L402).
 
 > **Stacks 04YR.** The diagonal is stable under base change: for `h : X ⥤ Y` and `s : V ⥤ Y`,
 > with `U = X ×_Y V`, `r = π₁ h s` and `g = π₂ h s`, the square
@@ -405,4 +416,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.31, Tag 003O](https://stacks.math.columbia.edu/tag/003O)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

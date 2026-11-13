@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.5 Groupoid of sections
 
-Section 79.5 of the Stacks Project, [Tag 0CKB](https://stacks.math.columbia.edu/tag/0CKB). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 79.5 of the Stacks Project, [Tag 0CKB](https://stacks.math.columbia.edu/tag/0CKB). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CKC, an equation
 
 [Tag 0CKC](https://stacks.math.columbia.edu/tag/0CKC) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.sectionCompHom_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean#L72). The attribute's comment: “well-definedness of composition”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.sectionCompHom_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean#L72). The attribute's comment: “well-definedness of composition”.
 
 > The groupoid composition formula applied to two sections is again a section of the source
 > morphism.
@@ -24,7 +24,7 @@ theorem sectionCompHom_source (δ₁ δ₂ : Section G) :
     sectionCompHom G δ₁ δ₂ ≫ G.source = 𝟙 G.objects
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.sectionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean#L114). The attribute's comment: “composition formula”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.sectionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Sections.lean#L114). The attribute's comment: “composition formula”.
 
 > Composition of sections of a groupoid in algebraic spaces: `δ₁ ∘ δ₂ = c(δ₁ ∘ t ∘ δ₂, δ₂)`,
 > which is again a section by `sectionCompHom_source`.
@@ -37,7 +37,7 @@ noncomputable def sectionComp (δ₁ δ₂ : Section G) : Section G
 
 [Tag 0CKD](https://stacks.math.columbia.edu/tag/0CKD) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.conormalMap_sectionTarget_eq_conormalMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L420). The attribute's comment: “the conormal map induced by f = t ∘ δ equals the conormal map induced by the identity; only flatness of s is assumed”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.conormalMap_sectionTarget_eq_conormalMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L420). The attribute's comment: “the conormal map induced by f = t ∘ δ equals the conormal map induced by the identity; only flatness of s is assumed”.
 
 > **Stacks 0CKD.**  Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces, let
 > `U₀ ⊆ U` be a closed subspace whose inverse images along the source and the target agree — the
@@ -64,7 +64,7 @@ theorem conormalMap_sectionTarget_eq_conormalMap_id (δ : Section G)
       conormalMap C S hS U₀ U₀ (𝟙 G.objects) (𝟙 _) hsqId
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.conormalMap_sectionTarget_comp_inv_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L523). The attribute's comment: “f = t ∘ δ acts as the identity on the conormal module, read through the conormal map of the identity; only flatness of s is assumed”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.conormalMap_sectionTarget_comp_inv_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L523). The attribute's comment: “f = t ∘ δ acts as the identity on the conormal module, read through the conormal map of the identity; only flatness of s is assumed”.
 
 > **Stacks 0CKD, read as the identity.**  Transported across the conormal map of the identity
 > square — the canonical identification of `(id_{U₀})^*𝒞_{U₀/U}` with `𝒞_{U₀/U}`, an isomorphism by
@@ -93,7 +93,7 @@ theorem conormalMap_sectionTarget_comp_inv_eq_id (δ : Section G)
 
 [Tag 0CKE](https://stacks.math.columbia.edu/tag/0CKE) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.bijective_vadd_unitInfinitesimalSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean#L234). The attribute's comment: “the displayed bijection Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0, theta |-> theta . e, for a groupoid in algebraic spaces and a first order thickening U\_0 of U”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.bijective_vadd_unitInfinitesimalSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean#L234). The attribute's comment: “the displayed bijection Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0, theta |-> theta . e, for a groupoid in algebraic spaces and a first order thickening U\_0 of U”.
 
 > **The displayed bijection of Equation (0CKE).**  Translation of the unit is a bijection from
 > the `𝒪_{U₀}`-linear maps `θ : e₀^*Ω_{R₀/U₀} ⟶ 𝒞_{U₀/U}` onto the sections `Γ₀` of the source
@@ -106,7 +106,7 @@ theorem bijective_vadd_unitInfinitesimalSection :
       (fun θ : InfinitesimalSectionsHom G U₀ => θ +ᵥ unitInfinitesimalSection G U₀)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean#L246). The attribute's comment: “the displayed arrow Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0 bundled as a bijection, for a groupoid in algebraic spaces and a first order thickening U\_0 of U”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalBijection.lean#L246). The attribute's comment: “the displayed arrow Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0 bundled as a bijection, for a groupoid in algebraic spaces and a first order thickening U\_0 of U”.
 
 > **Equation (0CKE) as a bijection.**  The map `θ ↦ θ · e` from the `𝒪_{U₀}`-linear maps
 > `e₀^*Ω_{R₀/U₀} ⟶ 𝒞_{U₀/U}` to the sections `Γ₀` infinitesimally close to the unit, bundled with
@@ -121,7 +121,7 @@ noncomputable def unitVAddEquiv :
 
 [Tag 0CKF](https://stacks.math.columbia.edu/tag/0CKF) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean#L365). The attribute's comment: “the bijection theta |-> theta . e of (0CKE) carries the sum of two linear maps e\_0^*Omega\_\{R\_0/U\_0} -> C\_\{U\_0/U} to the composite of the two sections in Gamma\_0, for an R-invariant first order thickening U\_0 of U”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean#L365). The attribute's comment: “the bijection theta |-> theta . e of (0CKE) carries the sum of two linear maps e\_0^*Omega\_\{R\_0/U\_0} -> C\_\{U\_0/U} to the composite of the two sections in Gamma\_0, for an R-invariant first order thickening U\_0 of U”.
 
 > **Lemma 0CKF.**  Let `(U, R, s, t, c)` be a groupoid in algebraic spaces, `U₀ ⊆ U` an
 > `R`-invariant closed subspace such that `U` is a first order thickening of `U₀`.  The bijection
@@ -141,7 +141,7 @@ theorem unitVAddEquiv_add (hinv : U₀.1.preimage G.target.hom = U₀.1.preimage
       infinitesimalSectionComp G U₀ (unitVAddEquiv G U₀ hU₀ θ₁) (unitVAddEquiv G U₀ hU₀ θ₂)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddMulEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean#L399). The attribute's comment: “the bijection Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0 of (0CKE) as an isomorphism from the additive group of linear maps onto Gamma\_0 with its composition, for an R-invariant first order thickening U\_0 of U”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.unitVAddMulEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsInfinitesimalGroup.lean#L399). The attribute's comment: “the bijection Hom\_\{O\_\{U\_0}}(e\_0^*Omega\_\{R\_0/U\_0}, C\_\{U\_0/U}) -> Gamma\_0 of (0CKE) as an isomorphism from the additive group of linear maps onto Gamma\_0 with its composition, for an R-invariant first order thickening U\_0 of U”.
 
 > **Lemma 0CKF, bundled: the bijection (0CKE) is an isomorphism of groups.**  For an
 > `R`-invariant closed subspace `U₀ ⊆ U` of which `U` is a first order thickening, the bijection
@@ -162,4 +162,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.5, Tag 0CKB](https://stacks.math.columbia.edu/tag/0CKB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

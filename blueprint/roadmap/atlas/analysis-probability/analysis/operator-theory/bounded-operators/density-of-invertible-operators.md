@@ -7,7 +7,7 @@ statement: formalized
 
 # Density of invertible operators
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html).
 
 ## Scottish Book Problem 173
 
@@ -15,7 +15,7 @@ Eidelheit's claim that for every real Banach space $E$, the
 bounded linear operators $E \to E$ that have a bounded linear two-sided inverse are dense, for
 the operator norm, in the space of all bounded linear operators on $E$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook173Wanted.ScottishBookProblem173Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html#scottish-book-problem173-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook173Wanted.ScottishBookProblem173Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html#scottish-book-problem173-claim).
 
 ## Negative answer to Scottish Book Problem 173
 
@@ -32,7 +32,7 @@ operators.
 
 - M. Eidelheit, Problem 173 of the Scottish Book; see P. Halmos, A Hilbert Space Problem Book, Problem 109.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook173Wanted.eidelheit173_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html#eidelheit173-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook173Wanted.eidelheit173_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook173Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html#eidelheit173-refuted).
 
 ## Depends on
 
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Density of invertible operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/bounded-operators/density-of-invertible-operators)

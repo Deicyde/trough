@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.26 Perfect complexes
 
-Section 75.26 of the Stacks Project, [Tag 0D1X](https://stacks.math.columbia.edu/tag/0D1X). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.26 of the Stacks Project, [Tag 0D1X](https://stacks.math.columbia.edu/tag/0D1X). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D1Y, a lemma
 
 [Tag 0D1Y](https://stacks.math.columbia.edu/tag/0D1Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_setOf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean#L120). The attribute's comment: “constructible levels, for a Betti-number function given as data”.
+**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_setOf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean#L120). The attribute's comment: “constructible levels, for a Betti-number function given as data”.
 
 > **Stacks 0D1Y, the level sets of a Betti-number function are étale locally
 > constructible.** The Betti-number function is data, characterised by `hβ`: the function of
@@ -33,7 +33,7 @@ theorem isEtaleLocallyConstructible_setOf_eq
     IsEtaleLocallyConstructible B S hS X {x | β x = n}
 ```
 
-**`AlgebraicGeometry.Space.upperSemicontinuous_of_isEtaleLocallyDerivedFibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean#L148). The attribute's comment: “upper semicontinuity, for a Betti-number function given as data”.
+**`AlgebraicGeometry.Space.upperSemicontinuous_of_isEtaleLocallyDerivedFibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPoints.lean#L148). The attribute's comment: “upper semicontinuity, for a Betti-number function given as data”.
 
 > **Stacks 0D1Y, upper semicontinuity of a Betti-number function.** The Betti-number
 > function is data, characterised by `hβ`: the function of Stacks 0D1Y is built, but nothing
@@ -52,7 +52,7 @@ theorem upperSemicontinuous_of_isEtaleLocallyDerivedFibreBetti
     UpperSemicontinuous β
 ```
 
-**`AlgebraicGeometry.Space.upperSemicontinuous_geometricFibreBettiFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean#L215). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.Space.upperSemicontinuous_geometricFibreBettiFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean#L215). The attribute's comment: “clause (2)”.
 
 > **Stacks 0D1Y, clause (2): the functions `β_i` are upper semi-continuous.**  For a
 > pseudo-coherent object `E` of `D(𝒪_X)` on an algebraic space `X` over `S`, the `i`-th
@@ -68,7 +68,7 @@ theorem upperSemicontinuous_geometricFibreBettiFunction
     UpperSemicontinuous (geometricFibreBettiFunction B S hS E i)
 ```
 
-**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_setOf_geometricFibreBettiFunction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean#L231). The attribute's comment: “clause (3)”.
+**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_setOf_geometricFibreBettiFunction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BettiNumbersOnPointsPseudoCoherent.lean#L231). The attribute's comment: “clause (3)”.
 
 > **Stacks 0D1Y, clause (3): the level sets of `β_i` are étale locally constructible.**  For a
 > pseudo-coherent object `E` of `D(𝒪_X)` on an algebraic space `X` over `S` and a natural number
@@ -85,7 +85,7 @@ theorem isEtaleLocallyConstructible_setOf_geometricFibreBettiFunction_eq
     IsEtaleLocallyConstructible B S hS X.1 {x | geometricFibreBettiFunction B S hS E i x = n}
 ```
 
-**`AlgebraicGeometry.Space.geometricFibreBettiFunction_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreBettiFunction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreBettiFunction.lean#L179). The attribute's comment: “clause (1)”.
+**`AlgebraicGeometry.Space.geometricFibreBettiFunction_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreBettiFunction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreBettiFunction.lean#L179). The attribute's comment: “clause (1)”.
 
 > **Stacks 0D1Y, clause (1): formation of `β_i` commutes with arbitrary base change.** For a
 > morphism `g : Y ⟶ X` of algebraic spaces the Betti-number function of `Lg^*E` is the Betti-number
@@ -106,7 +106,7 @@ theorem geometricFibreBettiFunction_derivedPullback {Y : AlgebraicSpaces B S hS}
 
 [Tag 0E0R](https://stacks.math.columbia.edu/tag/0E0R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fibreBetti_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L115). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Space.fibreBetti_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L115). The attribute's comment: “(1)”.
 
 > **Stacks 0E0R, part (1): the formation of `β_i` commutes with arbitrary base change.** For
 > `f : X ⟶ Y` proper and of finite presentation, `𝓕` of finite presentation and flat over `Y`,
@@ -123,7 +123,7 @@ theorem fibreBetti_baseChange (hf : IsProper B S hS f.hom)
       fibreBetti f F i ∘ ((BigFppfOver.toScheme B S hS).map g).base
 ```
 
-**`AlgebraicGeometry.Space.upperSemicontinuous_fibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L268). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.upperSemicontinuous_fibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L268). The attribute's comment: “(2)”.
 
 > **Stacks 0E0R, part (2): the Betti numbers of the fibres are upper semicontinuous.** For
 > `f : X ⟶ Y` proper and of finite presentation and `𝓕` of finite presentation and flat over `Y`,
@@ -136,7 +136,7 @@ theorem upperSemicontinuous_fibreBetti (hf : IsProper B S hS f.hom)
     UpperSemicontinuous (fibreBetti f F i)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyConstructible_fibreBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L286). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.Space.isLocallyConstructible_fibreBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FibreBettiNumbers.lean#L286). The attribute's comment: “(3)”.
 
 > **Stacks 0E0R, part (3): the level sets of the Betti numbers of the fibres are locally
 > constructible.** For `f : X ⟶ Y` proper and of finite presentation and `𝓕` of finite
@@ -150,7 +150,7 @@ theorem isLocallyConstructible_fibreBetti_preimage (hf : IsProper B S hS f.hom)
     Topology.IsLocallyConstructible (fibreBetti f F i ⁻¹' {n})
 ```
 
-**`AlgebraicGeometry.Space.ProperFlatStein.isLocallyConstructible_fibreBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiLevelSets.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiLevelSets.lean#L46). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.Space.ProperFlatStein.isLocallyConstructible_fibreBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiLevelSets.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiLevelSets.lean#L46). The attribute's comment: “(3)”.
 
 > **Stacks 0E0R, part (3): the level sets of the Betti numbers of the fibres are locally
 > constructible.** For `f : X ⟶ Y` proper and of finite presentation and `𝓕` of finite
@@ -164,7 +164,7 @@ theorem isLocallyConstructible_fibreBetti_preimage (hf : IsProper B S hS f.hom)
     Topology.IsLocallyConstructible (fibreBettiFunction f F i ⁻¹' {n})
 ```
 
-**`AlgebraicGeometry.Space.ProperFlatStein.fibreBetti_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean#L243). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Space.ProperFlatStein.fibreBetti_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean#L243). The attribute's comment: “(1)”.
 
 > **Stacks 0E0R, part (1): the formation of `β_i` commutes with arbitrary base change.** For
 > `f : X ⟶ Y` proper and of finite presentation, `𝓕` of finite presentation and flat over `Y`,
@@ -181,7 +181,7 @@ theorem fibreBetti_baseChange (hf : IsProper B S hS f.hom)
       fibreBettiFunction f F i ∘ ((BigFppfOver.toScheme B S hS).map g).base
 ```
 
-**`AlgebraicGeometry.Space.ProperFlatStein.upperSemicontinuous_fibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean#L469). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.ProperFlatStein.upperSemicontinuous_fibreBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStein/FibreBettiNumbers.lean#L469). The attribute's comment: “(2)”.
 
 > **Stacks 0E0R, part (2): the Betti numbers of the fibres are upper semicontinuous.** For
 > `f : X ⟶ Y` proper and of finite presentation and `𝓕` of finite presentation and flat over `Y`,
@@ -198,7 +198,7 @@ theorem upperSemicontinuous_fibreBetti (hf : IsProper B S hS f.hom)
 
 [Tag 0D1Z](https://stacks.math.columbia.edu/tag/0D1Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyConstant_derivedFibreEuler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreEulerLocallyConstant.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreEulerLocallyConstant.lean#L294). References: SGA 6 III (5.5), “(i), special case”.
+**`AlgebraicGeometry.Space.isLocallyConstant_derivedFibreEuler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreEulerLocallyConstant.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedFibreEulerLocallyConstant.lean#L294). References: SGA 6 III (5.5), “(i), special case”.
 
 > **Stacks 0D1Z.**  Let `Y` be an algebraic space and `K` a perfect object of `D(𝒪_Y)`.  The
 > derived-fibre Euler characteristic `y ↦ ∑ (-1)^n dim_k H^n(K ⊗^𝐋 k)` is locally constant on
@@ -215,7 +215,7 @@ theorem isLocallyConstant_derivedFibreEuler (Y : AlgebraicSpaces B S hS)
     IsLocallyConstant (derivedFibreEuler Y K)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyConstant_of_isEtaleLocallyDerivedFibreChi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/EulerCharacteristicOnPoints.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/EulerCharacteristicOnPoints.lean#L93). The attribute's comment: “for a derived-fibre Euler characteristic given as data”.
+**`AlgebraicGeometry.Space.isLocallyConstant_of_isEtaleLocallyDerivedFibreChi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/EulerCharacteristicOnPoints.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/EulerCharacteristicOnPoints.lean#L93). The attribute's comment: “for a derived-fibre Euler characteristic given as data”.
 
 > **Stacks 0D1Z.**  The derived-fibre Euler characteristic of a perfect object of `D(𝒪_X)`
 > on an algebraic space `X` is locally constant on `|X|`.
@@ -234,7 +234,7 @@ theorem isLocallyConstant_of_isEtaleLocallyDerivedFibreChi
 
 [Tag 0D20](https://stacks.math.columbia.edu/tag/0D20) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfIntRankInDegree_of_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean#L209). The attribute's comment: “clause (1), for an open subspace with the characterising universal property of clause (2); existence of such an open subspace is not proved”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfIntRankInDegree_of_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean#L209). The attribute's comment: “clause (1), for an open subspace with the characterising universal property of clause (2); existence of such an open subspace is not proved”.
 
 > **Clause (1) of Stacks 0D20.**  On an open subspace with the universal property of clause
 > (2), the object `E` is a finite locally free module of rank `r` placed in degree `i`: the
@@ -252,7 +252,7 @@ theorem isFiniteLocallyFreeOfIntRankInDegree_of_isSingleDegreeRankLocus
       ((smallEtaleDerivedModulePullback B S hS (openSubspaceImmersion B S hS U)).obj E) i r
 ```
 
-**`AlgebraicGeometry.Space.eq_of_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean#L241). The attribute's comment: “uniqueness of an open subspace with the characterising universal property of clause (2); existence of such an open subspace is not proved”.
+**`AlgebraicGeometry.Space.eq_of_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspace.lean#L241). The attribute's comment: “uniqueness of an open subspace with the characterising universal property of clause (2); existence of such an open subspace is not proved”.
 
 > **The uniqueness half of "there exists an open subspace characterised by" in Stacks
 > 0D20.**  At most one open subspace of `X` has the universal property of clause (2).
@@ -275,7 +275,7 @@ theorem eq_of_isSingleDegreeRankLocus (U U' : OpenSubspaces B S hS X.1)
     U = U'
 ```
 
-**`AlgebraicGeometry.Space.exists_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspaceExistence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspaceExistence.lean#L103).
+**`AlgebraicGeometry.Space.exists_isSingleDegreeRankLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspaceExistence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SingleDegreeRankOpenSubspaceExistence.lean#L103).
 
 > **Stacks 0D20.** Let `X` be an algebraic space over `S`, let `E` be a perfect object of
 > `D(𝒪_X)` and let `i, r ∈ ℤ`. There is an open subspace `U ⊆ X`, and only one, characterised by:
@@ -299,13 +299,13 @@ theorem exists_isSingleDegreeRankLocus
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_openSubspace_iff_isFiniteLocallyFreeOfIntRankInDegree_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L132), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L34) (StacksFrontier).
+- [`AlgebraicGeometry.Space.exists_openSubspace_iff_isFiniteLocallyFreeOfIntRankInDegree_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L132), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L34) (StacksFrontier).
 
 ## Tag 0D21, a lemma
 
 [Tag 0D21](https://stacks.math.columbia.edu/tag/0D21) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.BottomRankLocus.exists_isBottomRankStratum_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BottomRankStratumExistence.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BottomRankStratumExistence.lean#L582).
+**`AlgebraicGeometry.Space.BottomRankLocus.exists_isBottomRankStratum_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BottomRankStratumExistence.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BottomRankStratumExistence.lean#L582).
 
 > **Stacks 0D21.** Let `E` be a perfect object of `D(𝒪_X)` of Tor amplitude in `[a, b]` and
 > `r ≥ 0`. There is an immersion `j : Z ⟶ X` of algebraic spaces, of finite presentation, such that
@@ -343,7 +343,7 @@ theorem exists_isBottomRankStratum_isFinitePresentation
 
 [Tag 0E6B](https://stacks.math.columbia.edu/tag/0E6B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_presieve_isPerfect_hasTorAmplitudeGE_iso_etaleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatDerivedPushforwardFibreSurjective.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatDerivedPushforwardFibreSurjective.lean#L457). The attribute's comment: “(b)”.
+**`AlgebraicGeometry.Space.exists_presieve_isPerfect_hasTorAmplitudeGE_iso_etaleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatDerivedPushforwardFibreSurjective.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatDerivedPushforwardFibreSurjective.lean#L457). The attribute's comment: “(b)”.
 
 > **Stacks 0E6B, part (b).** Let `f : X ⟶ Y` be proper, flat and of finite presentation, such
 > that `k = H⁰(X_k, 𝒪_{X_k})` for every morphism `Spec k ⟶ Y` from the spectrum of a field. Then
@@ -376,7 +376,7 @@ theorem exists_presieve_isPerfect_hasTorAmplitudeGE_iso_etaleRestrict (f : X ⟶
               ((DerivedCategory.singleFunctor _ 0).obj (structureModule Y)) ⊞ P)
 ```
 
-**`AlgebraicGeometry.Space.isIso_structureSharp_and_baseChange_of_bijective_algebraMap_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean#L73). The attribute's comment: “(a)”.
+**`AlgebraicGeometry.Space.isIso_structureSharp_and_baseChange_of_bijective_algebraMap_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean#L73). The attribute's comment: “(a)”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces which is proper, flat and of finite
 > presentation, such that `k = H⁰(X_k, 𝒪_{X_k})` for every morphism `Spec k ⟶ Y` with `k` a field.
@@ -399,7 +399,7 @@ theorem isIso_structureSharp_and_baseChange_of_bijective_algebraMap_fibre (f : X
 
 [Tag 0E0S](https://stacks.math.columbia.edu/tag/0E0S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_structureSharp_and_baseChange_of_geometricFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean#L103).
+**`AlgebraicGeometry.Space.isIso_structureSharp_and_baseChange_of_geometricFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFlatStructureSheafPushforward.lean#L103).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces which is proper, flat and of finite
 > presentation, and whose geometric fibres are reduced and connected. Then `f_*𝒪_X = 𝒪_Y` — the
@@ -429,4 +429,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.26, Tag 0D1X](https://stacks.math.columbia.edu/tag/0D1X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

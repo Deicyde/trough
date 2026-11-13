@@ -1,6 +1,6 @@
 # 108 Moduli Stacks
 
-Chapter 108 of the Stacks Project, *Moduli Stacks*, [Tag 0DLT](https://stacks.math.columbia.edu/tag/0DLT): the 9 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 53 tags are carried by 122 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 108 of the Stacks Project, *Moduli Stacks*, [Tag 0DLT](https://stacks.math.columbia.edu/tag/0DLT): the 9 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 53 tags are carried by 121 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 - [108.4 Properties of the stack of coherent sheaves](108-4-properties-of-the-stack-of-coherent-sheave.md)
 - [108.5 Properties of Quot](108-5-properties-of-quot.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Series and integrals for the digamma function
 
-17 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html).
+17 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html).
 
 ## Series for the derivative of $\Gamma'(z+1)/\Gamma(z+1)$
 
@@ -22,7 +22,7 @@ absolutely with sum $\varphi'(z)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry2Stirlingseries.ramanujan_part1_ch6_entry2_stirlingseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry2Stirlingseries.lean, line 570](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry2Stirlingseries.lean#L570). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch6-entry2-stirlingserie).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry2Stirlingseries.ramanujan_part1_ch6_entry2_stirlingseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry2Stirlingseries.lean, line 570](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry2Stirlingseries.lean#L570). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch6-entry2-stirlingserie).
 
 ## Ramanujan's integral for $\psi(1 - 1/x)$ (Chapter 8, Entry 10)
 
@@ -42,7 +42,7 @@ where $\psi$ is the digamma function and $\gamma$ is the Euler–Mascheroni cons
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry10Qgammalimit.ramanujan_part1_ch8_entry10_qgammalimit`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry10Qgammalimit.lean, line 1037](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry10Qgammalimit.lean#L1037). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry10-qgammalimit).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry10Qgammalimit.ramanujan_part1_ch8_entry10_qgammalimit`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry10Qgammalimit.lean, line 1037](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry10Qgammalimit.lean#L1037). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry10-qgammalimit).
 
 ## Digamma as the logarithmic derivative of Gamma (used for Chapter 8, Entry 11)
 
@@ -52,7 +52,7 @@ complex number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\psi$ is the digamm
 At the poles $z = 0, -1, -2, \dots$ the conventions $\Gamma(z) = 0$ and division by zero giving
 $0$ make both sides $0$, so the identity holds for every $z$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8Digamma_eq_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-digamma).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8Digamma_eq_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-digamma).
 
 ## The Entry 11 and Entry 12 series terms agree
 
@@ -62,7 +62,7 @@ equals the term given by the same formula for Entry 12.
 
 In both definitions a term with zero denominator is $0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8PhiTerm_eq_entry12Qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-phi-term-eq-entry12-qgammainteg).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8PhiTerm_eq_entry12Qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-phi-term-eq-entry12-qgammainteg).
 
 ## The Entry 11 and Entry 12 definitions of $\varphi$ agree
 
@@ -73,7 +73,7 @@ equals the function given by the same formula for Entry 12.
 In both definitions the sum is the unconditional sum, taken to be $0$ when it does not converge,
 and a term with zero denominator is $0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8Phi_eq_entry12Qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-phi-eq-entry12-qgammaintegers).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.chapter8Phi_eq_entry12Qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-phi-eq-entry12-qgammaintegers).
 
 ## Chapter 8, Entry 11 in terms of the digamma function
 
@@ -87,7 +87,7 @@ $$\psi(1/x) + \psi(1 - 1/x) = -2\gamma - x\,\varphi(x),$$
 
 where $\psi$ is the digamma function and $\gamma$ is the Euler–Mascheroni constant.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.ramanujan_part1_ch8_entry11_qgammafunctional_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 747](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L747). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry11-qgammafuncti).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.ramanujan_part1_ch8_entry11_qgammafunctional_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 747](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L747). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry11-qgammafuncti).
 
 ## Ramanujan's identity for $\Gamma'/\Gamma$ at $1/x$ and $1 - 1/x$ (Chapter 8, Entry 11)
 
@@ -105,7 +105,7 @@ where $\gamma$ is the Euler–Mascheroni constant.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.ramanujan_part1_ch8_entry11_qgammafunctional`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry11-qgammafuncti-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry11Qgammafunctional.ramanujan_part1_ch8_entry11_qgammafunctional`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry11Qgammafunctional.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry11-qgammafuncti-2).
 
 ## Exponential and principal powers agree for positive bases (Chapter 8, Entry 12)
 
@@ -114,7 +114,7 @@ complex number $x$ and a real number $u$, let $P_x(u) = 0$ if $u = 0$ and
 $P_x(u) = e^{x \log |u|}$ otherwise. Then for every complex $x$ and every real $u > 0$,
 $P_x(u) = u^x$, where $u^x$ is the principal complex power.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.chapter8UnitPow_eq_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-unit-pow-eq-cpow).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.chapter8UnitPow_eq_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-unit-pow-eq-cpow).
 
 ## Ramanujan's integral for $\varphi(x) - 1$ with principal powers (Chapter 8, Entry 12)
 
@@ -133,7 +133,7 @@ $$\int_0^1 K_x(u)\,du = \varphi(x) - 1.$$
 For $u > 0$ the powers $P_s(u)$ and $u^s$ agree, so this is the same statement as the version
 written with $P_s$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.ramanujan_part1_ch8_entry12_qgammaintegers_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry12-qgammaintege).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.ramanujan_part1_ch8_entry12_qgammaintegers_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry12-qgammaintege).
 
 ## Ramanujan's integral for $\varphi(x) - 1$ (Chapter 8, Entry 12)
 
@@ -154,7 +154,7 @@ $$\int_0^1 K_x(u)\,du = \varphi(x) - 1.$$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.ramanujan_part1_ch8_entry12_qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry12-qgammaintege-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.ramanujan_part1_ch8_entry12_qgammaintegers`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry12Qgammaintegers.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry12-qgammaintege-2).
 
 ## Digamma as the logarithmic derivative of Gamma (used for Chapter 8, Entry 8)
 
@@ -164,7 +164,7 @@ complex number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\psi$ is the digamm
 At the poles $z = 0, -1, -2, \dots$ the conventions $\Gamma(z) = 0$ and division by zero giving
 $0$ make both sides $0$, so the identity holds for every $z$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.chapter8Digamma_eq_Complex_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-complex-digamma).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.chapter8Digamma_eq_Complex_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-complex-digamma).
 
 ## Alternating series $\sum_{k \ge 1} (-1)^{k-1}/(a + kb)$ via the digamma function
 
@@ -175,7 +175,7 @@ $\sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{a + kb}$ converge to
 
 $$\frac{1}{2b} \left(\psi\left(\frac{a+2b}{2b}\right) - \psi\left(\frac{a+b}{2b}\right)\right).$$
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.ramanujan_part1_ch8_entry8_digammaseries_complex_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 882](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L882). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry8-digammaseries).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.ramanujan_part1_ch8_entry8_digammaseries_complex_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 882](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L882). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry8-digammaseries).
 
 ## Ramanujan's alternating digamma series (Chapter 8, Entry 8)
 
@@ -194,7 +194,7 @@ say that these arguments are not poles; they already follow from the condition o
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.ramanujan_part1_ch8_entry8_digammaseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 899](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L899). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry8-digammaseries-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.ramanujan_part1_ch8_entry8_digammaseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean, line 899](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry8Digammaseries.lean#L899). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry8-digammaseries-2).
 
 ## Digamma as the logarithmic derivative of Gamma (Chapter 8, Entry 9)
 
@@ -203,7 +203,7 @@ number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\Gamma'$ is the complex der
 Gamma function and $\psi$ is the digamma function. At the poles of $\Gamma$ both sides are $0$ by
 convention.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8Digamma_eq_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-digamma-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8Digamma_eq_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-digamma-eq-digamma-2).
 
 ## The Entry 9 power function on positive reals (Chapter 8)
 
@@ -211,7 +211,7 @@ For a complex number $x$ and a
 real number $u$, let $p_x(u) = e^{x \log\lvert u\rvert}$ if $u \ne 0$ and $p_x(0) = 0$. If $u > 0$,
 then $p_x(u) = u^x$, the principal complex power of $u$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8UnitPow_eq_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-unit-pow-eq-cpow-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8UnitPow_eq_cpow`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#chapter8-unit-pow-eq-cpow-2).
 
 ## Ramanujan's integral for the digamma function (Chapter 8, Entry 9)
 
@@ -230,7 +230,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.ramanujan_part1_ch8_entry9_qgamma_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 1804](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L1804). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry9-qgamma-digamm).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.ramanujan_part1_ch8_entry9_qgamma_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 1791](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L1791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry9-qgamma-digamm).
 
 ## Ramanujan's integral for $\Gamma'/\Gamma$ (Chapter 8, Entry 9)
 
@@ -249,7 +249,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.ramanujan_part1_ch8_entry9_qgamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 1835](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L1835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry9-qgamma).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.ramanujan_part1_ch8_entry9_qgamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean, line 1822](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry9Qgamma.lean#L1822). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html#ramanujan-part1-ch8-entry9-qgamma).
 
 ## Depends on
 
@@ -258,4 +258,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Series and integrals for the digamma function](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/gamma-function/series-and-integrals-for-the-digamma-function)

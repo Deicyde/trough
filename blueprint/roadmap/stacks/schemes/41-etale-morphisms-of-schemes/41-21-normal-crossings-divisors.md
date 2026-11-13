@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.21 Normal crossings divisors
 
-Section 41.21 of the Stacks Project, [Tag 0CBN](https://stacks.math.columbia.edu/tag/0CBN). 7 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.21 of the Stacks Project, [Tag 0CBN](https://stacks.math.columbia.edu/tag/0CBN). 7 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BI9, a definition
 
 [Tag 0BI9](https://stacks.math.columbia.edu/tag/0BI9) in the Stacks Project.
 
-**`Stacks.Divisors.IsStrictNormalCrossingsDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean#L58). References: SGA 5 I (3.1.5), “a) strict n.c.”.
+**`Stacks.Divisors.IsStrictNormalCrossingsDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean#L58). References: SGA 5 I (3.1.5), “a) strict n.c.”.
 
 > An effective Cartier divisor locally cut out by a product of a nonempty initial segment of a
 > regular system of parameters.
@@ -28,7 +28,7 @@ public abbrev IsStrictNormalCrossingsDivisor {X : Scheme.{u}}
 
 [Tag 0BIA](https://stacks.math.columbia.edu/tag/0BIA) in the Stacks Project.
 
-**`Stacks.Divisors.isStrictNormalCrossingsDivisor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/Components.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/Components.lean#L1139).
+**`Stacks.Divisors.isStrictNormalCrossingsDivisor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/Components.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/Components.lean#L1139).
 
 > A locally Noetherian effective Cartier divisor has strict normal crossings
 > if and only if it is reduced and all finite nonempty intersections of its
@@ -55,7 +55,7 @@ public theorem isStrictNormalCrossingsDivisor_iff {X : Scheme.{u}}
 
 [Tag 0CBP](https://stacks.math.columbia.edu/tag/0CBP) in the Stacks Project.
 
-**`Stacks.Divisors.isStrictNormalCrossingsDivisor_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean#L295).
+**`Stacks.Divisors.isStrictNormalCrossingsDivisor_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean#L295).
 
 > **Stacks Project, Tag 0CBP.** The pullback of a strict normal crossings divisor along a
 > smooth morphism is a strict normal crossings divisor.
@@ -72,7 +72,7 @@ theorem isStrictNormalCrossingsDivisor_comap {X Y : Scheme.{u}} [IsLocallyNoethe
 
 [Tag 0BSF](https://stacks.math.columbia.edu/tag/0BSF) in the Stacks Project.
 
-**`Stacks.Divisors.IsNormalCrossingsDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean#L70). References: SGA 1 XIII (2.1.0), “absolute case”; SGA 5 I (3.1.5), “a) normal crossings”.
+**`Stacks.Divisors.IsNormalCrossingsDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/NormalCrossings/Defs.lean#L70). References: SGA 1 XIII (2.1.0), “absolute case”; SGA 5 I (3.1.5), “a) normal crossings”.
 
 > An effective Cartier divisor which acquires strict normal crossings étale-locally at every
 > point of its support.
@@ -86,7 +86,7 @@ public abbrev IsNormalCrossingsDivisor {X : Scheme.{u}}
 
 [Tag 0CBQ](https://stacks.math.columbia.edu/tag/0CBQ) in the Stacks Project.
 
-**`Stacks.Divisors.isNormalCrossingsDivisor_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean#L319).
+**`Stacks.Divisors.isNormalCrossingsDivisor_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/SmoothPullback.lean#L319).
 
 > **Stacks Project, Tag 0CBQ.** The pullback of a normal crossings divisor along a smooth
 > morphism is a normal crossings divisor.
@@ -102,7 +102,7 @@ theorem isNormalCrossingsDivisor_comap {X Y : Scheme.{u}} [IsLocallyNoetherian X
 
 [Tag 0CBR](https://stacks.math.columbia.edu/tag/0CBR) in the Stacks Project.
 
-**`Stacks.Divisors.isClopen_normalizationDistinctLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L275). The attribute's comment: “first paragraph of the proof: `Z_n` is an open and closed subscheme of the fibre power of the normalization. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.isClopen_normalizationDistinctLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L275). The attribute's comment: “first paragraph of the proof: `Z_n` is an open and closed subscheme of the fibre power of the normalization. Neither implication of the equivalence is asserted.”.
 
 > `Z_n` is open and closed in the fibre power of the normalization, once the latter is
 > unramified.
@@ -112,7 +112,7 @@ public theorem isClopen_normalizationDistinctLocus [Unramified (divisorNormaliza
     (n : ℕ) : IsClopen (fibrePowerDistinctLocus (divisorNormalization D) n)
 ```
 
-**`Stacks.Divisors.unramified_normalizationDistinctToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L283). The attribute's comment: “first paragraph of the proof: `Z_n ⟶ X` is unramified. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.unramified_normalizationDistinctToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L283). The attribute's comment: “first paragraph of the proof: `Z_n ⟶ X` is unramified. Neither implication of the equivalence is asserted.”.
 
 > Once the normalization of `D` is unramified, `Z_n ⟶ X` is unramified: it is the composition
 > of an open immersion, an iterated base change of the normalization, and a closed immersion.
@@ -123,7 +123,7 @@ public theorem unramified_normalizationDistinctToAmbient
     Unramified (normalizationDistinctToAmbient D n)
 ```
 
-**`Stacks.Divisors.formallyUnramified_normalizationDistinctToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L294). The attribute's comment: “first paragraph of the proof: `Z_n ⟶ X` is formally unramified, so the conormal sheaf `𝒞_n` exists. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.formallyUnramified_normalizationDistinctToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L294). The attribute's comment: “first paragraph of the proof: `Z_n ⟶ X` is formally unramified, so the conormal sheaf `𝒞_n` exists. Neither implication of the equivalence is asserted.”.
 
 > Once the normalization of `D` is unramified, `Z_n ⟶ X` is formally unramified, so that it
 > has a conormal sheaf.
@@ -134,7 +134,7 @@ public theorem formallyUnramified_normalizationDistinctToAmbient
     FormallyUnramified (normalizationDistinctToAmbient D n)
 ```
 
-**`Stacks.Divisors.IsNormalizationCrossingsDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L306). The attribute's comment: “condition (2). Its equivalence with condition (1), `Stacks.Divisors.IsNormalCrossingsDivisor`, is not asserted.”.
+**`Stacks.Divisors.IsNormalizationCrossingsDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L306). The attribute's comment: “condition (2). Its equivalence with condition (1), `Stacks.Divisors.IsNormalCrossingsDivisor`, is not asserted.”.
 
 > Condition (2) of Tag 0CBR: the closed subscheme cut out by `D` is reduced, its normalization
 > is unramified, and every `Z_n` with `n ≥ 1` is regular and maps to the ambient scheme by a local
@@ -144,7 +144,7 @@ public theorem formallyUnramified_normalizationDistinctToAmbient
 public def IsNormalizationCrossingsDivisor : Prop
 ```
 
-**`Stacks.Divisors.isReduced_of_isNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L323). The attribute's comment: “the implication (1) to (2), restricted to its reducedness clause. The remaining clauses of (2) under hypothesis (1), and the converse implication, are not asserted.”.
+**`Stacks.Divisors.isReduced_of_isNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L323). The attribute's comment: “the implication (1) to (2), restricted to its reducedness clause. The remaining clauses of (2) under hypothesis (1), and the converse implication, are not asserted.”.
 
 > A normal crossings divisor is reduced, which is the first clause of condition (2) of
 > Tag 0CBR. Étale-locally the divisor has strict normal crossings, hence is reduced by Tag 0BIA,
@@ -156,7 +156,7 @@ public theorem isReduced_of_isNormalCrossingsDivisor (h : IsNormalCrossingsDivis
     IsReduced D.subscheme
 ```
 
-**`Stacks.Divisors.isNormal_reducedComponent_of_isStrictNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L420). The attribute's comment: “an input to the implication (1) to (2) in the strict case: an irreducible component of a strict normal crossings divisor, with its reduced induced closed subscheme structure, is normal. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.isNormal_reducedComponent_of_isStrictNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L420). The attribute's comment: “an input to the implication (1) to (2) in the strict case: an irreducible component of a strict normal crossings divisor, with its reduced induced closed subscheme structure, is normal. Neither implication of the equivalence is asserted.”.
 
 > An irreducible component of a strict normal crossings divisor, with its reduced induced
 > closed subscheme structure, is a normal scheme: it is regular by Tag 0BIA, and a regular scheme
@@ -168,7 +168,7 @@ public theorem isNormal_reducedComponent_of_isStrictNormalCrossingsDivisor
     IsNormal (D.subscheme.reducedComponent C)
 ```
 
-**`Stacks.Divisors.unramified_divisorNormalization_of_isStrictNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L438). The attribute's comment: “the implication (1) to (2) for a strict normal crossings divisor, restricted to the clause that the normalization of the divisor is unramified. The general normal crossings case, the remaining clauses of (2), and the converse implication are not asserted.”.
+**`Stacks.Divisors.unramified_divisorNormalization_of_isStrictNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationCriterion.lean#L438). The attribute's comment: “the implication (1) to (2) for a strict normal crossings divisor, restricted to the clause that the normalization of the divisor is unramified. The general normal crossings case, the remaining clauses of (2), and the converse implication are not asserted.”.
 
 > The normalization of a strict normal crossings divisor is unramified, which is the
 > unramifiedness clause of condition (2) of Tag 0CBR in the strict case. The normalization is the
@@ -181,7 +181,7 @@ public theorem unramified_divisorNormalization_of_isStrictNormalCrossingsDivisor
     (h : IsStrictNormalCrossingsDivisor D) : Unramified (divisorNormalization D)
 ```
 
-**`Stacks.Divisors.isNormalCrossingsDivisor_iff_reduced_unramified_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationEquivalence.lean#L78).
+**`Stacks.Divisors.isNormalCrossingsDivisor_iff_reduced_unramified_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationEquivalence.lean#L78).
 
 > Let `X` be a locally Noetherian scheme and let `D ⊂ X` be a
 > closed subscheme. The following are equivalent:
@@ -207,7 +207,7 @@ theorem isNormalCrossingsDivisor_iff_reduced_unramified_normalization {X : Schem
                    (normalizationDistinctToAmbient D n)) n))
 ```
 
-**`Stacks.Divisors.isIntegralHom_divisorNormalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L102). The attribute's comment: “the proof of (2) to (1), first step: the normalization `ν : D^ν ⟶ D` is integral. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.isIntegralHom_divisorNormalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L102). The attribute's comment: “the proof of (2) to (1), first step: the normalization `ν : D^ν ⟶ D` is integral. Neither implication of the equivalence is asserted.”.
 
 > The normalization of the closed subscheme cut out by a divisor on a locally Noetherian scheme
 > is an integral morphism.
@@ -216,7 +216,7 @@ theorem isNormalCrossingsDivisor_iff_reduced_unramified_normalization {X : Schem
 public instance isIntegralHom_divisorNormalization : IsIntegralHom (divisorNormalization D)
 ```
 
-**`Stacks.Divisors.isFinite_divisorNormalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L116). The attribute's comment: “the proof of (2) to (1), first step: an unramified `ν` is finite, being integral and locally of finite type (Tag 01WJ). Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.isFinite_divisorNormalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L116). The attribute's comment: “the proof of (2) to (1), first step: an unramified `ν` is finite, being integral and locally of finite type (Tag 01WJ). Neither implication of the equivalence is asserted.”.
 
 > An unramified normalization of the closed subscheme cut out by a divisor on a locally
 > Noetherian scheme is finite: it is integral and, being unramified, locally of finite type.
@@ -226,7 +226,7 @@ public instance isFinite_divisorNormalization [Unramified (divisorNormalization 
     IsFinite (divisorNormalization D)
 ```
 
-**`Stacks.Divisors.isFinite_divisorNormalizationToAmbient`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L130). The attribute's comment: “the proof of (2) to (1), second step: `D^ν ⟶ X` is finite. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.isFinite_divisorNormalizationToAmbient`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L130). The attribute's comment: “the proof of (2) to (1), second step: `D^ν ⟶ X` is finite. Neither implication of the equivalence is asserted.”.
 
 > The morphism `D^ν ⟶ X` is finite when the normalization of `D` is unramified: it is the
 > composition of the finite normalization with a closed immersion.
@@ -236,7 +236,7 @@ public instance isFinite_divisorNormalizationToAmbient
     [Unramified (divisorNormalization D)] : IsFinite (divisorNormalizationToAmbient D)
 ```
 
-**`Stacks.Divisors.unramified_divisorNormalizationToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L138). The attribute's comment: “the proof of (2) to (1), second step: `D^ν ⟶ X` is unramified. Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.unramified_divisorNormalizationToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L138). The attribute's comment: “the proof of (2) to (1), second step: `D^ν ⟶ X` is unramified. Neither implication of the equivalence is asserted.”.
 
 > The morphism `D^ν ⟶ X` is unramified when the normalization of `D` is: it is the composition
 > of the unramified normalization with a closed immersion.
@@ -246,7 +246,7 @@ public theorem unramified_divisorNormalizationToAmbient
     [Unramified (divisorNormalization D)] : Unramified (divisorNormalizationToAmbient D)
 ```
 
-**`Stacks.Divisors.exists_etaleNeighborhood_disjoint_closed_decomposition_divisorNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L149). The attribute's comment: “the proof of (2) to (1), third step: étale-locally on `X` the normalization is a finite disjoint union of closed subschemes of the étale neighbourhood (Tag 04HJ). The further shrinking making the chosen point lie on every `D_i` is not asserted, nor is either implication of the equivalence.”.
+**`Stacks.Divisors.exists_etaleNeighborhood_disjoint_closed_decomposition_divisorNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L149). The attribute's comment: “the proof of (2) to (1), third step: étale-locally on `X` the normalization is a finite disjoint union of closed subschemes of the étale neighbourhood (Tag 04HJ). The further shrinking making the chosen point lie on every `D_i` is not asserted, nor is either implication of the equivalence.”.
 
 > Around any point of the ambient scheme the normalization of `D` becomes, after an étale base
 > change, a finite disjoint union of closed subschemes of the étale neighbourhood: the morphism
@@ -262,7 +262,7 @@ public theorem exists_etaleNeighborhood_disjoint_closed_decomposition_divisorNor
           ((V j).ι ≫ pullback.snd (divisorNormalizationToAmbient D) U.toBase)
 ```
 
-**`Stacks.Divisors.normalizationDistinctOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L164). The attribute's comment: “the identification `Z_1 = D^ν` used in the proof of (2) to (1). Neither implication of the equivalence is asserted.”.
+**`Stacks.Divisors.normalizationDistinctOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L164). The attribute's comment: “the identification `Z_1 = D^ν` used in the proof of (2) to (1). Neither implication of the equivalence is asserted.”.
 
 > The scheme `Z_1` is the normalization of `D` itself: a one-fold fibre power has empty fat
 > diagonal and is the normalization.
@@ -272,7 +272,7 @@ public noncomputable def normalizationDistinctOneIso :
     normalizationDistinct D 1 ≅ divisorNormalizationScheme D
 ```
 
-**`Stacks.Divisors.isRegular_divisorNormalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L194). The attribute's comment: “the proof of (2) to (1), fourth step, partially: the hypothesis on `Z_1` makes `D^ν` regular. The conclusion that each `D_i` is an effective Cartier divisor is not asserted.”.
+**`Stacks.Divisors.isRegular_divisorNormalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L194). The attribute's comment: “the proof of (2) to (1), fourth step, partially: the hypothesis on `Z_1` makes `D^ν` regular. The conclusion that each `D_i` is an effective Cartier divisor is not asserted.”.
 
 > Condition (2) of Tag 0CBR makes the normalization of `D` a regular scheme: it is the scheme
 > `Z_1` of that condition.
@@ -282,7 +282,7 @@ public theorem isRegular_divisorNormalizationScheme (h : IsNormalizationCrossing
     IsRegular (divisorNormalizationScheme D)
 ```
 
-**`Stacks.Divisors.isLocalCompleteIntersectionMorphism_divisorNormalizationToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L210). The attribute's comment: “the proof of (2) to (1), fourth step, partially: the hypothesis on `Z_1` makes `D^ν ⟶ X` a local complete intersection morphism. The conclusion that each `D_i` is an effective Cartier divisor is not asserted.”.
+**`Stacks.Divisors.isLocalCompleteIntersectionMorphism_divisorNormalizationToAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/NormalizationFiniteness.lean#L210). The attribute's comment: “the proof of (2) to (1), fourth step, partially: the hypothesis on `Z_1` makes `D^ν ⟶ X` a local complete intersection morphism. The conclusion that each `D_i` is an effective Cartier divisor is not asserted.”.
 
 > Condition (2) of Tag 0CBR makes `D^ν ⟶ X` a local complete intersection morphism: it is the
 > morphism `Z_1 ⟶ X` of that condition, up to the identification of `Z_1` with the
@@ -298,7 +298,7 @@ public theorem isLocalCompleteIntersectionMorphism_divisorNormalizationToAmbient
 
 [Tag 0CBS](https://stacks.math.columbia.edu/tag/0CBS) in the Stacks Project.
 
-**`Stacks.Divisors.isStrictNormalCrossingsDivisor_comap_fromSpecStalk_of_isNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselization.lean#L68). The attribute's comment: “(1) ⇒ (2)”.
+**`Stacks.Divisors.isStrictNormalCrossingsDivisor_comap_fromSpecStalk_of_isNormalCrossingsDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselization.lean#L68). The attribute's comment: “(1) ⇒ (2)”.
 
 > **The strict henselization of a normal crossings divisor has strict normal crossings.** For `D`
 > a normal crossings divisor on a locally Noetherian scheme `X` and `x` a point of `D`, the pullback
@@ -322,7 +322,7 @@ theorem isStrictNormalCrossingsDivisor_comap_fromSpecStalk_of_isNormalCrossingsD
         X.fromSpecStalk x))
 ```
 
-**`Stacks.Divisors.isStrictNormalCrossingsDivisor_of_exists_regular_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationCriterion.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationCriterion.lean#L75). The attribute's comment: “(2) ⇒ (1), the step that upgrades condition (2) to strict normal crossings once each local equation factors into regular factors. The construction of an étale chart on which it does, which is where the J-2 or Nagata hypothesis of the lemma enters, is not asserted.”.
+**`Stacks.Divisors.isStrictNormalCrossingsDivisor_of_exists_regular_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationCriterion.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationCriterion.lean#L75). The attribute's comment: “(2) ⇒ (1), the step that upgrades condition (2) to strict normal crossings once each local equation factors into regular factors. The construction of an étale chart on which it does, which is where the J-2 or Nagata hypothesis of the lemma enters, is not asserted.”.
 
 > Let `D` be a closed subscheme of a locally Noetherian scheme `X` which has strict normal
 > crossings at the strict henselizations, and suppose that at every point `p` of `D` the stalk ideal
@@ -344,7 +344,7 @@ theorem isStrictNormalCrossingsDivisor_of_exists_regular_factorization {X : Sche
     IsStrictNormalCrossingsDivisor D
 ```
 
-**`Stacks.Divisors.isNormalCrossingsDivisor_iff_isStrictNormalCrossingsAtStrictHenselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationEquivalence.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationEquivalence.lean#L122).
+**`Stacks.Divisors.isNormalCrossingsDivisor_iff_isStrictNormalCrossingsAtStrictHenselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationEquivalence.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationEquivalence.lean#L122).
 
 > Let `X` be a locally Noetherian scheme and `D ⊂ X` a closed
 > subscheme. If `X` is J-2 or Nagata, then `D` is a normal crossings divisor in `X` if and only if
@@ -358,7 +358,7 @@ public theorem isNormalCrossingsDivisor_iff_isStrictNormalCrossingsAtStrictHense
     IsNormalCrossingsDivisor D ↔ IsStrictNormalCrossingsAtStrictHenselizations D
 ```
 
-**`Stacks.Divisors.isEffectiveCartierDivisor_of_isStrictNormalCrossingsAtStrictHenselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationStalkIdeal.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationStalkIdeal.lean#L246). The attribute's comment: “(2) ⇒ (1), the effective Cartier divisor conjunct of condition (1). The étale-local strict normal crossings clause of (1) is not asserted, and no J-2 or Nagata hypothesis is used for this conjunct.”.
+**`Stacks.Divisors.isEffectiveCartierDivisor_of_isStrictNormalCrossingsAtStrictHenselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationStalkIdeal.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/NormalCrossings/StrictHenselizationStalkIdeal.lean#L246). The attribute's comment: “(2) ⇒ (1), the effective Cartier divisor conjunct of condition (1). The étale-local strict normal crossings clause of (1) is not asserted, and no J-2 or Nagata hypothesis is used for this conjunct.”.
 
 > **Stacks Project, Tag 0CBS, the effective Cartier divisor conjunct of (2) ⇒ (1).** A closed
 > subscheme of a locally Noetherian scheme whose inverse image to the spectrum of a strict
@@ -380,4 +380,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.21, Tag 0CBN](https://stacks.math.columbia.edu/tag/0CBN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

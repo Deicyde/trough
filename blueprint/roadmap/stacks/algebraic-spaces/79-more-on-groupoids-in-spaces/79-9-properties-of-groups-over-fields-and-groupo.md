@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.GroupAlgebraicSpace, AlgebraicGeometry.GroupoidOverField, AlgebraicGeometry.Space.actionGroupoid, AlgebraicGeometry.Space.isFlat_mul, AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_comp_of_objects_eq_spec_field, AlgebraicGeometry.Space.isAbsolutelySeparated_groupAlgebraicSpace_of_isDecentSpace, AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAbsolutelySeparated_arrows_of_isDecentSpace, AlgebraicGeometry.Space.isSurjective_of_restrictionDiagramMap
+lean: AlgebraicGeometry.Space.GroupAlgebraicSpace, AlgebraicGeometry.GroupoidOverField, AlgebraicGeometry.Space.groupoidOfGroupOverField, AlgebraicGeometry.Space.isFlat_mul, AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_comp_of_objects_eq_spec_field, AlgebraicGeometry.Space.isAbsolutelySeparated_groupAlgebraicSpace_of_isDecentSpace, AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAbsolutelySeparated_arrows_of_isDecentSpace, AlgebraicGeometry.Space.isSurjective_of_restrictionDiagramMap
 statement: formalized
 proof: formalized
 ---
 
 # 79.9 Properties of groups over fields and groupoids on fields
 
-Section 79.9 of the Stacks Project, [Tag 06DW](https://stacks.math.columbia.edu/tag/06DW). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 79.9 of the Stacks Project, [Tag 06DW](https://stacks.math.columbia.edu/tag/06DW). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06DX, a situation
 
 [Tag 06DX](https://stacks.math.columbia.edu/tag/06DX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean#L101). The attribute's comment: “the situation: this notion at the base Spec k for a field k over S”.
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean#L101). The attribute's comment: “the situation: this notion at the base Spec k for a field k over S”.
 
 > **Stacks Project, Tag 043H.** Group algebraic spaces over an algebraic space `B`.  An
 > object is a group object in presheaves over `B` whose underlying presheaf is an algebraic
@@ -30,7 +30,7 @@ noncomputable abbrev GroupAlgebraicSpace (𝒞 : BigFppfSite.{u}) (S : Scheme.{u
 
 [Tag 06DY](https://stacks.math.columbia.edu/tag/06DY) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidOverField`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidOverField.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidOverField.lean#L53). The attribute's comment: “groupoid in algebraic spaces over a field”.
+**`AlgebraicGeometry.GroupoidOverField`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidOverField.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidOverField.lean#L53). The attribute's comment: “groupoid in algebraic spaces over a field”.
 
 > **Stacks 06DY.** A groupoid in algebraic spaces over an algebraic space `B` over a scheme
 > `S`, whose space of objects is the spectrum of a field `k` regarded as an algebraic space over
@@ -45,23 +45,27 @@ structure GroupoidOverField (C : BigFppfSite.{u}) (S : Scheme.{u}) (hS : C.Conta
 
 [Tag 06DZ](https://stacks.math.columbia.edu/tag/06DZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.actionGroupoid`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ActionGroupoidModules.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ActionGroupoidModules.lean#L84). The attribute's comment: “the groupoid `(Spec k, G, p, p, m)` of a group over a field, at the trivial”.
+**`AlgebraicGeometry.Space.groupoidOfGroupOverField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/GroupoidOfGroup.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/GroupoidOfGroup.lean#L185). The attribute's comment: “the groupoid `(Spec k, G, p, p, m)` over `Spec k` of a group over a field”.
 
-> The action groupoid `(X, G ×_B X, pr₁, a, m)` of an action `A` of a group algebraic space `G`
-> over `B` on an algebraic space `X` over `B`, with the projection as its source and the action
-> morphism as its target.
+> **Stacks 06DZ.** In the situation of Stacks 06DX — a scheme `S`, a field `k` over `S` and a
+> group algebraic space `(G, m)` over `Spec k` — the quintuple `(Spec k, G, p, p, m)`, where
+> `p : G ⟶ Spec k` is the structure morphism, is a groupoid in algebraic spaces over `Spec k`.
+> Its five pieces are identified by `AlgebraicGeometry.Space.groupoidOfGroup_objects`,
+> `groupoidOfGroup_arrows`, `groupoidOfGroup_source`, `groupoidOfGroup_target` and
+> `groupoidOfGroup_comp`.
 
 ```lean
-noncomputable abbrev actionGroupoid (G : GroupAlgebraicSpace 𝒞 S hS B hB) (X : Over B)
-    (hX : IsAlgebraicSpace 𝒞 S hS X.left) (A : ModObj G.obj.X X) :
-    GroupoidInAlgebraicSpaces 𝒞 S hS ⟨B, hB⟩
+abbrev groupoidOfGroupOverField
+    (G : GroupAlgebraicSpace C S hS (fieldSpace C hS hk structureMap).obj
+      (fieldSpace C hS hk structureMap).property) :
+    GroupoidInAlgebraicSpaces C S hS (fieldSpace C hS hk structureMap)
 ```
 
 ## Tag 06E0, a lemma
 
 [Tag 06E0](https://stacks.math.columbia.edu/tag/06E0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FlatMultiplication.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FlatMultiplication.lean#L217). The attribute's comment: “second assertion: the group law of a group space over a field”. References: SGA 3 XVIII (2.2), “special case”.
+**`AlgebraicGeometry.Space.isFlat_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FlatMultiplication.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FlatMultiplication.lean#L219). The attribute's comment: “second assertion: the group law of a group space over a field”. References: SGA 3 XVIII (2.2), “special case”.
 
 > **Stacks 06E0**, second assertion. For a field `k` over the scheme `S`, the multiplication
 > of a group algebraic space over `Spec k` is flat and universally open.
@@ -79,7 +83,7 @@ theorem isFlat_mul {k : Type u} [Field k] (C : BigFppfSite.{u}) (S : Scheme.{u})
     IsFlat C S hS μ[G.obj.X].left ∧ UniversallyOpen C S hS μ[G.obj.X].left
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_comp_of_objects_eq_spec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FlatComposition.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FlatComposition.lean#L183). The attribute's comment: “first assertion: the composition of a groupoid over a field”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_comp_of_objects_eq_spec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FlatComposition.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FlatComposition.lean#L184). The attribute's comment: “first assertion: the composition of a groupoid over a field”.
 
 > **Stacks 06E0**, first assertion. Composition in a groupoid in algebraic spaces whose
 > object space is the spectrum of a field is flat and universally open.
@@ -98,7 +102,7 @@ theorem isFlat_comp_of_objects_eq_spec_field {k : Type u} [Field k]
 
 [Tag 08BH](https://stacks.math.columbia.edu/tag/08BH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelySeparated_groupAlgebraicSpace_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean#L348). The attribute's comment: “a decent group algebraic space over a field”.
+**`AlgebraicGeometry.Space.isAbsolutelySeparated_groupAlgebraicSpace_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean#L348). The attribute's comment: “a decent group algebraic space over a field”.
 
 > **Stacks 08BH.** A decent group algebraic space over the spectrum of a field is a separated
 > algebraic space.
@@ -122,7 +126,7 @@ theorem isAbsolutelySeparated_groupAlgebraicSpace_of_isDecentSpace (k : Type u) 
     IsAbsolutelySeparated C S hS hZ G.obj.X.left
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAbsolutelySeparated_arrows_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean#L514). The attribute's comment: “the arrows of a decent groupoid on a field”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAbsolutelySeparated_arrows_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/DecentSeparated.lean#L514). The attribute's comment: “the arrows of a decent groupoid on a field”.
 
 > **Stacks 08BH.** The arrow space of a groupoid in algebraic spaces whose object space is
 > the algebraic space of the spectrum of a field and whose arrow space is decent is a separated
@@ -148,7 +152,7 @@ theorem isAbsolutelySeparated_arrows_of_isDecentSpace (k : Type u) [Field k]
 
 [Tag 06E1](https://stacks.math.columbia.edu/tag/06E1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L531). The attribute's comment: “surjective”.
+**`AlgebraicGeometry.Space.isSurjective_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L531). The attribute's comment: “surjective”.
 
 > **Stacks 06E1.** Every arrow of the diagram defining the restriction of a groupoid in
 > algebraic spaces whose object space is the spectrum of a field, over a field extension, is
@@ -161,7 +165,7 @@ theorem isSurjective_of_restrictionDiagramMap
     IsSurjective C S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.isFlat_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L545). The attribute's comment: “flat”.
+**`AlgebraicGeometry.Space.isFlat_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L545). The attribute's comment: “flat”.
 
 > **Stacks 06E1.** Every arrow of the diagram defining the restriction of a groupoid in
 > algebraic spaces whose object space is the spectrum of a field, over a field extension, is
@@ -174,7 +178,7 @@ theorem isFlat_of_restrictionDiagramMap
     IsFlat C S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.universallyOpen_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L561). The attribute's comment: “universally open”.
+**`AlgebraicGeometry.Space.universallyOpen_of_restrictionDiagramMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L561). The attribute's comment: “universally open”.
 
 > **Stacks 06E1.** Every arrow of the diagram defining the restriction of a groupoid in
 > algebraic spaces whose object space is the spectrum of a field, over a field extension, is
@@ -187,7 +191,7 @@ theorem universallyOpen_of_restrictionDiagramMap
     UniversallyOpen C S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_restrictionArrowsToArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L577). The attribute's comment: “affine dotted arrow”.
+**`AlgebraicGeometry.Space.isAffineHom_restrictionArrowsToArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionFieldExtension.lean#L577). The attribute's comment: “affine dotted arrow”.
 
 > **Stacks 06E1.** The canonical map from the arrows of the restriction of a groupoid in
 > algebraic spaces over a field extension to the arrows of the groupoid is affine.
@@ -203,7 +207,7 @@ theorem isAffineHom_restrictionArrowsToArrows :
 
 [Tag 06E2](https://stacks.math.columbia.edu/tag/06E2) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.exists_isIso_source_target_over_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/GeometricArrows.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/GeometricArrows.lean#L337).
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.exists_isIso_source_target_over_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/GeometricArrows.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/GeometricArrows.lean#L337).
 
 > **Stacks 06E2.** Let `(U, R, s, t, c)` be a groupoid in algebraic spaces over `B` whose
 > object space `U` is the algebraic space represented by the spectrum of a field `k`. Every
@@ -249,7 +253,7 @@ theorem exists_isIso_source_target_over_isAlgClosed {k : Type u} [Field k]
 
 [Tag 06E3](https://stacks.math.columbia.edu/tag/06E3) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.translationByArrow_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean#L256). The attribute's comment: “the automorphism”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.translationByArrow_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean#L256). The attribute's comment: “the automorphism”.
 
 > **Stacks 06E3.** Translation by a family of arrows whose source and target are both
 > isomorphisms of the object space is an automorphism of the arrow space.
@@ -260,7 +264,7 @@ theorem translationByArrow_isIso (G : GroupoidInAlgebraicSpaces C S hS B)
     IsIso (translationByArrow G r)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.translationByArrow_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean#L288). The attribute's comment: “image of the identity”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.translationByArrow_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/Translation.lean#L288). The attribute's comment: “image of the identity”.
 
 > **Stacks 06E3.** Translation by `r` takes the identity arrow at the source of `r` to `r`
 > itself.
@@ -273,7 +277,7 @@ theorem translationByArrow_identity (G : GroupoidInAlgebraicSpaces C S hS B)
       (G.toGroupoidInFunctors.identity T ((r ≫ G.source).hom.app T x)) = r.hom.app T x
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.identityArrow_comp_translationByArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/UnibranchIdentityArrow.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/UnibranchIdentityArrow.lean#L117). The attribute's comment: “image of the identity, as an equation of morphisms”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.identityArrow_comp_translationByArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/UnibranchIdentityArrow.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/UnibranchIdentityArrow.lean#L117). The attribute's comment: “image of the identity, as an equation of morphisms”.
 
 > **Stacks 06E3, as an equation of morphisms.**  Left translation by a family `r` of arrows
 > whose source is an isomorphism, precomposed with the identity arrow at the source of `r`, is `r`
@@ -289,7 +293,7 @@ theorem identityArrow_comp_translationByArrow (H : GroupoidInAlgebraicSpaces C S
 
 [Tag 06E4](https://stacks.math.columbia.edu/tag/06E4) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isGeometricallyUnibranch_arrows_of_splitAtIds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L103). The attribute's comment: “groupoid case, for a groupoid whose object space is the spectrum of a field”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isGeometricallyUnibranch_arrows_of_splitAtIds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L103). The attribute's comment: “groupoid case, for a groupoid whose object space is the spectrum of a field”.
 
 > **Stacks 06E4, the groupoid case.**  The arrow space of a groupoid in algebraic spaces whose
 > object space is the spectrum of a field is geometrically unibranch.
@@ -304,7 +308,7 @@ theorem isGeometricallyUnibranch_arrows_of_splitAtIds :
     Space.IsGeometricallyUnibranch C S hS G.arrows.obj
 ```
 
-**`AlgebraicGeometry.GroupoidOverField.isGeometricallyUnibranch_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L129). The attribute's comment: “groupoid case, in the situation 06DY”.
+**`AlgebraicGeometry.GroupoidOverField.isGeometricallyUnibranch_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L129). The attribute's comment: “groupoid case, in the situation 06DY”.
 
 > **Stacks 06E4, the groupoid case.**  In the situation of [Stacks Project, Tag 06DY] — a
 > groupoid in algebraic spaces `(U, R, s, t, c)` whose object space `U` is the spectrum of a field
@@ -315,7 +319,7 @@ theorem isGeometricallyUnibranch_arrows (G : GroupoidOverField C S hS B) :
     Space.IsGeometricallyUnibranch C S hS G.arrows.obj
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyUnibranch_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L199). The attribute's comment: “group case, in the situation 06DX”.
+**`AlgebraicGeometry.Space.isGeometricallyUnibranch_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GroupoidArrowsUnibranch.lean#L200). The attribute's comment: “group case, in the situation 06DX”.
 
 > **Stacks 06E4, the group case.**  A group algebraic space over a field is geometrically
 > unibranch.
@@ -333,7 +337,7 @@ theorem isGeometricallyUnibranch_groupAlgebraicSpace :
 
 [Tag 06FD](https://stacks.math.columbia.edu/tag/06FD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimension_eq_dimensionAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L355). The attribute's comment: “constant dimension of the arrow space”.
+**`AlgebraicGeometry.Space.dimension_eq_dimensionAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L355). The attribute's comment: “constant dimension of the arrow space”.
 
 > **Stacks 06FD.** Let `G` be a groupoid in algebraic spaces over `S` whose space of objects
 > is the spectrum of a field `k`, viewed as an algebraic space through Yoneda, and whose source
@@ -354,7 +358,7 @@ theorem dimension_eq_dimensionAtPoint
       dimensionAtPoint B S hS G.arrows.obj G.arrows.property r
 ```
 
-**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_source_iff_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L444). The attribute's comment: “part (2): the transcendence degree through the source and through the target”.
+**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_source_iff_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L444). The attribute's comment: “part (2): the transcendence degree through the source and through the target”.
 
 > **Stacks 06FD, part (2).** Let `G` be a groupoid in algebraic spaces over `S` whose space
 > of objects is the spectrum of a field `k`, viewed as an algebraic space through Yoneda, and
@@ -380,7 +384,7 @@ theorem hasTranscendenceDegreeAt_source_iff_target
       HasTranscendenceDegreeAt B S hS G.target.hom r n
 ```
 
-**`AlgebraicGeometry.Space.dimension_eq_localRingDimension_of_hasTranscendenceDegreeAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L535). The attribute's comment: “part (3): the dimension of the local ring at a point of transcendence degree 0”.
+**`AlgebraicGeometry.Space.dimension_eq_localRingDimension_of_hasTranscendenceDegreeAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/ConstantDimensionOverField.lean#L535). The attribute's comment: “part (3): the dimension of the local ring at a point of transcendence degree 0”.
 
 > **Stacks 06FD, part (3).** Let `G` be a groupoid in algebraic spaces over `S` whose space of
 > objects is the spectrum of a field `k`, viewed as an algebraic space through Yoneda, and whose
@@ -407,7 +411,7 @@ theorem dimension_eq_localRingDimension_of_hasTranscendenceDegreeAt_zero
 
 [Tag 06FE](https://stacks.math.columbia.edu/tag/06FE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimension_eq_dimensionAtPoint_of_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean#L163). The attribute's comment: “part (1): dimension at every point”.
+**`AlgebraicGeometry.Space.dimension_eq_dimensionAtPoint_of_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean#L163). The attribute's comment: “part (1): dimension at every point”.
 
 > **Stacks 06FE, part (1).** A group algebraic space over a field which is locally of finite
 > type has the same dimension at every one of its points, namely its dimension.
@@ -426,7 +430,7 @@ theorem dimension_eq_dimensionAtPoint_of_groupAlgebraicSpace {k : Type u} [Field
       dimensionAtPoint C (Spec (.of k)) hk G.obj.X.left G.property g
 ```
 
-**`AlgebraicGeometry.Space.dimension_eq_localRingDimension_of_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean#L214). The attribute's comment: “part (2): dimension of the local ring at a point of transcendence degree zero”.
+**`AlgebraicGeometry.Space.dimension_eq_localRingDimension_of_groupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantDimension.lean#L214). The attribute's comment: “part (2): dimension of the local ring at a point of transcendence degree zero”.
 
 > **Stacks 06FE, part (2).** At a point of a group algebraic space locally of finite type over
 > a field whose transcendence degree over that field is zero, the dimension of the group is the
@@ -448,7 +452,7 @@ theorem dimension_eq_localRingDimension_of_groupAlgebraicSpace {k : Type u} [Fie
 
 [Tag 06FF](https://stacks.math.columbia.edu/tag/06FF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimension_arrows_eq_dimension_stabilizer_of_objects_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionObjectsIso.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionObjectsIso.lean#L57). The attribute's comment: “with the space of objects isomorphic to the spectrum of the field”.
+**`AlgebraicGeometry.Space.dimension_arrows_eq_dimension_stabilizer_of_objects_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionObjectsIso.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionObjectsIso.lean#L57). The attribute's comment: “with the space of objects isomorphic to the spectrum of the field”.
 
 > **Stacks 06FF.** Let `G` be a groupoid in algebraic spaces over `S` whose space of objects
 > is the spectrum of a field `k`, viewed as an algebraic space through Yoneda, and whose source
@@ -472,7 +476,7 @@ theorem dimension_arrows_eq_dimension_stabilizer_of_objects_iso {k : Type u} [Fi
         (GroupoidInAlgebraicSpaces.stabilizerOverBase G).property
 ```
 
-**`AlgebraicGeometry.Space.dimension_arrows_eq_dimension_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionOverField.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionOverField.lean#L666).
+**`AlgebraicGeometry.Space.dimension_arrows_eq_dimension_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionOverField.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/StabilizerDimensionOverField.lean#L666).
 
 > Let `G` be a groupoid in algebraic spaces over `S` whose space of objects
 > is the spectrum of a field `k`, viewed as an algebraic space through Yoneda, and whose source
@@ -499,4 +503,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.9, Tag 06DW](https://stacks.math.columbia.edu/tag/06DW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

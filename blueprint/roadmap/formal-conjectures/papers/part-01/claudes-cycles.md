@@ -40,7 +40,7 @@ statement: formalized
 > - [KM26] K. Morrison, a Lean formalisation of the odd case,
 >   <https://github.com/kim-em/KnuthClaudeLean>
 
-*Quoted from [FormalConjectures/Paper/ClaudesCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ClaudesCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/ClaudesCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ClaudesCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 2 test statements and 2 API statements, counted here but not shown.
 
@@ -56,7 +56,7 @@ theorem cube_hamiltonian_arc_decomposition {m : ℕ} [NeZero m] (hm : Odd m) (hm
     HasHamiltonianArcDecomposition m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ClaudesCycles.lean#L122).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ClaudesCycles.lean#L122).
 
 ## `ClaudesCycles.cube_hamiltonian_arc_decomposition_impossible_m2`
 
@@ -70,7 +70,7 @@ theorem cube_hamiltonian_arc_decomposition_impossible_m2 :
     ¬ HasHamiltonianArcDecomposition 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ClaudesCycles.lean#L129).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ClaudesCycles.lean#L129).
 
 ## `ClaudesCycles.cube_hamiltonian_arc_decomposition_even`
 
@@ -86,7 +86,7 @@ theorem cube_hamiltonian_arc_decomposition_even :
       HasHamiltonianArcDecomposition m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ClaudesCycles.lean#L137).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ClaudesCycles.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ClaudesCycles.lean#L137).
 
 ## Depends on
 
@@ -94,5 +94,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/ClaudesCycles.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ClaudesCycles.lean)
+- [FormalConjectures/Paper/ClaudesCycles.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ClaudesCycles.lean)
 - [Claude's Cycles](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf)

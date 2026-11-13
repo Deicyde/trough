@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# A generating function with… to Non-Power-of-2 Almost Perfect…
+# Primality of continued fraction… to Agrawal's conjecture
 
+- [Primality of continued fraction denominators $a(n)$ for $n \ge 3$](../../../../../oeis/part-17/primality-of-continued-fraction-denominators-a-n.md)
+- [Realization of primes $p \equiv \pm 1 \pmod{10}$ by continued fraction denominators](../../../../../oeis/part-17/realization-of-primes-p-equiv-pm-1-pmod-10-by-co.md)
 - [A generating function with powers two and three](../../../../../oeis/part-17/a-generating-function-with-powers-two-and-three.md)
 - [A generating function with powers two and four](../../../../../oeis/part-17/a-generating-function-with-powers-two-and-four.md)
 - [A generating function with powers two and four](../../../../../oeis/part-17/a-generating-function-with-powers-two-and-four-2.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [\*abc\* conjecture](../../../../../wikipedia/part-01/abc-conjecture.md)
 - [Agoh-Giuga conjecture](../../../../../wikipedia/part-01/agoh-giuga-conjecture.md)
 - [Agrawal's conjecture](../../../../../wikipedia/part-01/agrawals-conjecture.md)
-- [Normality of Irrational Algebraic Numbers](../../../../../wikipedia/part-01/normality-of-irrational-algebraic-numbers.md)
-- [Non-Power-of-2 Almost Perfect Numbers Conjecture](../../../../../wikipedia/part-01/non-power-of-2-almost-perfect-numbers-conjecture.md)

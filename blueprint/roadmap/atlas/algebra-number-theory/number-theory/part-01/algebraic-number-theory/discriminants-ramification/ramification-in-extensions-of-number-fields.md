@@ -8,14 +8,14 @@ proof: formalized
 
 # Ramification in extensions of number fields
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html).
 
 ## Only finitely many primes ramify in a number field extension
 
 Only finitely many height-one primes of a number field ramify
 in a number-field extension.
 
-Formalized by `NumberField.finite_ramified_primes`, a theorem declared in [MathlibExt/NumberTheory/NumberField/FiniteRamification.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/FiniteRamification.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#finite-ramified-primes).
+Formalized by `NumberField.finite_ramified_primes`, a theorem declared in [MathlibExt/NumberTheory/NumberField/FiniteRamification.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/FiniteRamification.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#finite-ramified-primes).
 
 ## Unramifiedness descends to smaller intermediate fields
 
@@ -29,7 +29,7 @@ unramified in $\mathcal{O}_E$.
 
 - ATLAS N390, Proposition 19.14.
 
-Formalized by `NumberField.isUnramifiedIn_mono`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#is-unramified-in-mono).
+Formalized by `NumberField.isUnramifiedIn_mono`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#is-unramified-in-mono).
 
 ## Localizing the ring of integers at an unramified prime gives an étale algebra
 
@@ -47,7 +47,7 @@ the localization $(\mathcal{O}_K)_Q$ at a single such prime $Q$.
 
 - packages the primewise unramified hypothesis used in ATLAS N390, Proposition 19.14.
 
-Formalized by `NumberField.IsUnramifiedIn.etale_localization`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#etale-localization).
+Formalized by `NumberField.IsUnramifiedIn.etale_localization`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#etale-localization).
 
 ## Normalization commutes with base change along an unramified prime
 
@@ -63,7 +63,7 @@ $s \in S_F$ and $t \in S_E$, sends $s \otimes t$ to $s \otimes \iota(t)$.
 It is obtained from the identification of $S_E$ with the integral closure of $R$ in $K_E$, using
 that $S_F$ is étale over $R$.
 
-Formalized by `NumberField.IsUnramifiedIn.tensorProductLocalizationEquivIntegralClosure`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#tensor-product-localization-equiv-integr).
+Formalized by `NumberField.IsUnramifiedIn.tensorProductLocalizationEquivIntegralClosure`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#tensor-product-localization-equiv-integr).
 
 ## Map from the localization away from a prime to the local ring at a prime above it
 
@@ -76,7 +76,7 @@ $S_{\mathfrak p} \to T_{\mathfrak Q}$ extending the composite $S \to T \to T_{\m
 exists because elements of $R \setminus \mathfrak p$ map outside $\mathfrak Q$, hence to units of
 $T_{\mathfrak Q}$.
 
-Formalized by `Localization.semilocalizationToAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#semilocalization-to-at-prime).
+Formalized by `Localization.semilocalizationToAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#semilocalization-to-at-prime).
 
 ## Values of the localization-to-local-ring map on fractions
 
@@ -90,7 +90,7 @@ $y$ in the image of $R \setminus \mathfrak p$ in $S$, and $z \in T_{\mathfrak Q}
 $\varphi(x/y) = z$ if and only if $x = yz$ in $T_{\mathfrak Q}$, where $x$ and $y$ stand for
 their images under $S \to T \to T_{\mathfrak Q}$.
 
-Formalized by `Localization.semilocalizationToAtPrime_mk'_eq_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#semilocalization-to-at-prime-mk-eq-iff).
+Formalized by `Localization.semilocalizationToAtPrime_mk'_eq_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#semilocalization-to-at-prime-mk-eq-iff).
 
 ## Map from the normalized tensor algebra to the local ring of the compositum
 
@@ -111,7 +111,7 @@ sends $s \otimes t$ to $\varphi_F(s) \varphi_E(t)$.
 No claim is made that this map induces an isomorphism from a localization of $C$ onto
 $(\mathcal O_{EF})_{\mathfrak Q}$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime).
 
 ## The normalized tensor map on simple tensors
 
@@ -127,7 +127,7 @@ let $f_F \colon S_F \to T$ and $f_E \colon S_E \to T$ be the maps induced by the
 $\mathcal{O}_F$ and $\mathcal{O}_E$ into $\mathcal{O}_{EF}$. Then for all $x \in S_F$ and
 $y \in S_E$, we have $g(e(x \otimes y)) = f_F(x)\,f_E(y)$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_equiv_tmul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-2).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_equiv_tmul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-2).
 
 ## The kernel of the normalized tensor map is prime
 
@@ -144,7 +144,7 @@ This holds because $(\mathcal{O}_{EF})_Q$ is an integral domain. The kernel of $
 strictly smaller than the preimage under $g$ of the maximal ideal of the local ring
 $(\mathcal{O}_{EF})_Q$, which is the prime of $C$ at which to localize.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_ker_isPrime`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-3).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_ker_isPrime`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-3).
 
 ## The contracted maximal prime of the normalized tensor algebra
 
@@ -165,7 +165,7 @@ $C$ at which to localize in order to recover the local factor $T$.
 
 - ATLAS N390, Proposition 19.14.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime).
 
 ## The contracted maximal prime is prime
 
@@ -178,7 +178,7 @@ algebra at $Q$ is a prime ideal.
 It is the preimage of the maximal ideal of the local ring $(\mathcal{O}_{EF})_Q$, which is
 prime.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime_isPrime`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime-is-pr).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime_isPrime`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime-is-pr).
 
 ## Membership in the contracted maximal prime
 
@@ -192,7 +192,7 @@ $g \colon C \to T$ be the normalized tensor map to the compositum at $Q$. An ele
 lies in the contracted maximal prime if and only if $g(x)$ lies in the maximal ideal of the local
 ring $T$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime_mem_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime-mem-i).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime_mem_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-compositum-prime-mem-i).
 
 ## The kernel lies in the contracted maximal ideal
 
@@ -210,7 +210,7 @@ and $t \in S_E$, sends the image of $s \otimes t$ under the canonical isomorphis
 $S_F \otimes_R S_E \cong C$ to $\varphi_F(s) \varphi_E(t)$. Then the kernel of $g$ is contained in
 the preimage under $g$ of the maximal ideal of $(\mathcal O_{EF})_{\mathfrak Q}$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_ker_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-4).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorToCompositumAtPrime_ker_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-to-compositum-at-prime-4).
 
 ## The localization map to the compositum at a prime
 
@@ -226,7 +226,7 @@ outside the maximal ideal of the local ring $T$, hence to a unit, $g$ induces by
 property of localization a ring homomorphism $C_{\mathfrak{q}} \to T$, sending $x/s$ to
 $g(x)\,g(s)^{-1}$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime`, a definition declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos).
 
 ## The localization map restricts to the normalized tensor map
 
@@ -241,7 +241,7 @@ contracted maximal prime of $C$, and let $\varphi \colon C_{\mathfrak{q}} \to T$
 localization map to the compositum at $Q$. Then for every $x \in C$, $\varphi$ sends the image of
 $x$ in $C_{\mathfrak{q}}$ to $g(x)$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_algebraMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos-2).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_algebraMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos-2).
 
 ## Value of the localization map on fractions
 
@@ -256,7 +256,7 @@ contracted maximal prime of $C$, and let $\varphi \colon C_{\mathfrak{q}} \to T$
 localization map to the compositum at $Q$. Then for all $x \in C$, $s \in C \setminus \mathfrak{q}$
 and $v \in T$, we have $\varphi(x/s) = v$ if and only if $g(x) = g(s)\,v$.
 
-Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_mk'_spec`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Unramified.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos-3).
+Formalized by `NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_mk'_spec`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Unramified.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Unramified.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html#normalized-tensor-localization-to-compos-3).
 
 ## Depends on
 
@@ -265,4 +265,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramification in extensions of number fields](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/ramification-in-extensions-of-number-fields)

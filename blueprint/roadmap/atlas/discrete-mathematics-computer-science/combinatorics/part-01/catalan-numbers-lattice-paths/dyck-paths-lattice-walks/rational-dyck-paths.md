@@ -7,7 +7,7 @@ statement: formalized
 
 # Rational Dyck paths
 
-13 results, 11 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html).
+13 results, 11 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html).
 
 ## Dyck words of height at most $2$
 
@@ -18,7 +18,7 @@ has more than two more up steps $U$ than down steps $D$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 2.
 
-Formalized by `MetaMathlibExt.IsDyckHeightAtMostTwo`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-dyck-height-at-most-two).
+Formalized by `MetaMathlibExt.IsDyckHeightAtMostTwo`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-dyck-height-at-most-two).
 
 ## Block word of a Dyck path of height at most $2$
 
@@ -35,7 +35,7 @@ true for a $1$-peak and false for a $0$-valley.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, factorization (1).
 
-Formalized by `MetaMathlibExt.dyckHeightTwoBlockWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#dyck-height-two-block-word).
+Formalized by `MetaMathlibExt.dyckHeightTwoBlockWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#dyck-height-two-block-word).
 
 ## Maximal runs of a Boolean word
 
@@ -47,7 +47,7 @@ from left to right, of its maximal runs of equal consecutive letters, each recor
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3 (blocks of maximal length of consecutive `1`-peaks and `0`-valleys).
 
-Formalized by `MetaMathlibExt.boolRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#bool-runs).
+Formalized by `MetaMathlibExt.boolRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#bool-runs).
 
 ## Maximal runs of the word $1001100$
 
@@ -64,7 +64,7 @@ $v_1 = 2$, $p_2 = 2$, $v_2 = 2$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3, Example.
 
-Formalized by `MetaMathlibExt.boolRuns_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#bool-runs-example).
+Formalized by `MetaMathlibExt.boolRuns_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#bool-runs-example).
 
 ## Valleys following a run
 
@@ -78,7 +78,7 @@ and $0$ otherwise.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Section 3 (`vᵢ` after `pᵢ`).
 
-Formalized by `MetaMathlibExt.runFollowingValleys`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#run-following-valleys).
+Formalized by `MetaMathlibExt.runFollowingValleys`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#run-following-valleys).
 
 ## The rational Dyck path run condition
 
@@ -96,7 +96,7 @@ $p s \le r v$, that is, $v \ge \lceil p s / r \rceil$ when $r \ge 1$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 3.
 
-Formalized by `MetaMathlibExt.IsTildeRationalRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-tilde-rational-runs).
+Formalized by `MetaMathlibExt.IsTildeRationalRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-tilde-rational-runs).
 
 ## The $Q$-bonacci run condition
 
@@ -117,7 +117,7 @@ valleys, needs it only when $p_k < r$ and $v_k \ne 0$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 4.
 
-Formalized by `MetaMathlibExt.IsQBonacciRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-qbonacci-runs).
+Formalized by `MetaMathlibExt.IsQBonacciRuns`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-qbonacci-runs).
 
 ## Examples of the $Q$-bonacci run condition for $q = 4/5$
 
@@ -135,7 +135,7 @@ has last block $p_2 = 4 = r$ and the third has $p_2 = 3 < r$ and $v_2 = 0$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Example after Definition 4.
 
-Formalized by `MetaMathlibExt.isQBonacciRuns_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-qbonacci-runs-examples).
+Formalized by `MetaMathlibExt.isQBonacciRuns_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#is-qbonacci-runs-examples).
 
 ## The path sets $\tilde R_n^{r/s}$
 
@@ -151,7 +151,7 @@ length of the run of $0$-valleys immediately after it ($v = 0$ if no run follows
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 3.
 
-Formalized by `MetaMathlibExt.tildeRationalDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#tilde-rational-dyck-paths).
+Formalized by `MetaMathlibExt.tildeRationalDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#tilde-rational-dyck-paths).
 
 ## The $Q$-bonacci paths $Q_n^{r/s}$
 
@@ -168,7 +168,7 @@ inequality $p s \le r v$ is required only when $p < r$ and $v \ne 0$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definition 4.
 
-Formalized by `MetaMathlibExt.qBonacciDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#q-bonacci-dyck-paths).
+Formalized by `MetaMathlibExt.qBonacciDyckPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#q-bonacci-dyck-paths).
 
 ## Path counts for $q = 3/2$
 
@@ -184,7 +184,7 @@ Here $t = \lfloor (s - 1)/r \rfloor = 0$ and $s \ne t r + 1$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Definitions 3 and 4.
 
-Formalized by `MetaMathlibExt.card_qBonacciDyckPaths_three_two_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#card-q-bonacci-dyck-paths-three-two-four).
+Formalized by `MetaMathlibExt.card_qBonacciDyckPaths_three_two_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#card-q-bonacci-dyck-paths-three-two-four).
 
 ## $Q$-bonacci and rational-run paths are in bijection when $s = t r + 1$
 
@@ -198,7 +198,7 @@ the rational run condition for $q = r/s$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 6 (`jis-2025-25.3.2-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.nonempty_equiv_qBonacci_tildeRational` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#nonempty-equiv-q-bonacci-tilde-rational).
+Stated but not proved: `MetaMathlibExt.nonempty_equiv_qBonacci_tildeRational` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#nonempty-equiv-q-bonacci-tilde-rational).
 
 ## $Q$-bonacci and rational-run paths correspond exactly when $s \equiv 1 \pmod r$
 
@@ -214,7 +214,7 @@ and only if $s = t r + 1$.
 
 - Barcucci, Bernini, Bilotta, and Pinzani, *Rational Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.3.2, Proposition 7 (`jis-2025-25.3.2-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.forall_nonempty_equiv_qBonacci_tildeRational_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#forall-nonempty-equiv-q-bonacci-tilde-ra).
+Stated but not proved: `MetaMathlibExt.forall_nonempty_equiv_qBonacci_tildeRational_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RationalDyckPathsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html#forall-nonempty-equiv-q-bonacci-tilde-ra).
 
 ## Depends on
 
@@ -223,4 +223,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rational Dyck paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/rational-dyck-paths)

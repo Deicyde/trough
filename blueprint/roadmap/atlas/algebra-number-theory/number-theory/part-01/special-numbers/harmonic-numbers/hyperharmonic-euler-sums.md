@@ -7,7 +7,7 @@ statement: formalized
 
 # Hyperharmonic Euler sums
 
-38 results, 15 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html).
+38 results, 15 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html).
 
 ## Generalized hyperharmonic numbers
 
@@ -29,7 +29,7 @@ see (2.10).
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Section 2, (2.4) and (2.10).
 
-Formalized by `MetaMathlibExt.generalizedHyperharmonic`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic).
+Formalized by `MetaMathlibExt.generalizedHyperharmonic`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic).
 
 ## Generalized hyperharmonic numbers vanish for $k > n$
 
@@ -41,7 +41,7 @@ equals $0$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Section 2, (2.4).
 
-Formalized by `MetaMathlibExt.generalizedHyperharmonic_of_lt`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-of-lt).
+Formalized by `MetaMathlibExt.generalizedHyperharmonic_of_lt`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-of-lt).
 
 ## Generalized hyperharmonic numbers with both indices zero
 
@@ -52,7 +52,7 @@ the generalized hyperharmonic number $H_0^{[r]}(0)$ equals $1$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Section 2, (2.4).
 
-Formalized by `MetaMathlibExt.generalizedHyperharmonic_zero_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-zero-zero).
+Formalized by `MetaMathlibExt.generalizedHyperharmonic_zero_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-zero-zero).
 
 ## The value $H_1^{(r)}(0) = r$
 
@@ -63,7 +63,7 @@ hyperharmonic number $H_1^{[r]}(0)$ equals $r$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Section 2, (2.4).
 
-Formalized by `MetaMathlibExt.generalizedHyperharmonic_one_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-one-zero).
+Formalized by `MetaMathlibExt.generalizedHyperharmonic_one_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-one-zero).
 
 ## The value $H_1^{(r)}(1) = 1$
 
@@ -74,7 +74,7 @@ hyperharmonic number $H_1^{[r]}(1)$ equals $1$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Section 2, (2.4).
 
-Formalized by `MetaMathlibExt.generalizedHyperharmonic_one_one`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-one-one).
+Formalized by `MetaMathlibExt.generalizedHyperharmonic_one_one`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generalized-hyperharmonic-one-one).
 
 ## Generalized hyperharmonic Euler sum
 
@@ -88,7 +88,7 @@ and $S(k, r; p; a) = 0$ when the series is not summable.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1 display.
 
-Formalized by `MetaMathlibExt.hyperharmonicEulerSum`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum).
+Formalized by `MetaMathlibExt.hyperharmonicEulerSum`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum).
 
 ## Hyperharmonic Euler sums as sums over all indices
 
@@ -105,7 +105,7 @@ $0$, so the identity holds without any hypothesis.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1 display.
 
-Formalized by `MetaMathlibExt.hyperharmonicEulerSum_eq_tsum`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-eq-tsum).
+Formalized by `MetaMathlibExt.hyperharmonicEulerSum_eq_tsum`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-eq-tsum).
 
 ## Odd multiple harmonic numbers
 
@@ -120,7 +120,7 @@ In particular $O_n(0) = 1$ (the empty product) and $O_n(k) = 0$ for $k > n$ (the
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (1.8) and (2.11).
 
-Formalized by `MetaMathlibExt.oddMultipleHarmonic`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic).
+Formalized by `MetaMathlibExt.oddMultipleHarmonic`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic).
 
 ## Odd multiple harmonic numbers of depth zero
 
@@ -131,7 +131,7 @@ depth-zero odd harmonic number $O_n(0)$ equals $1$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11).
 
-Formalized by `MetaMathlibExt.oddMultipleHarmonic_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-zero).
+Formalized by `MetaMathlibExt.oddMultipleHarmonic_zero`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-zero).
 
 ## Vanishing of odd multiple harmonic numbers of large depth
 
@@ -142,7 +142,7 @@ $n$ with $k > n$, the depth-$k$ odd harmonic number $O_n(k)$ equals $0$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11).
 
-Formalized by `MetaMathlibExt.oddMultipleHarmonic_of_lt`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-of-lt).
+Formalized by `MetaMathlibExt.oddMultipleHarmonic_of_lt`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-of-lt).
 
 ## The first odd harmonic number
 
@@ -152,7 +152,7 @@ The depth-one odd harmonic number $O_1(1)$ equals $2$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, (2.11).
 
-Formalized by `MetaMathlibExt.oddMultipleHarmonic_one_one`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-one-one).
+Formalized by `MetaMathlibExt.oddMultipleHarmonic_one_one`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#odd-multiple-harmonic-one-one).
 
 ## The algebra generated by $\log 2$, $\pi^2$ and odd zeta values
 
@@ -165,7 +165,7 @@ written $\mathbb{Q}[\log 2, \pi^2, \zeta(3), \zeta(5), \dots]$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2.
 
-Formalized by `MetaMathlibExt.eulerSumPeriodAlgebra`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#euler-sum-period-algebra).
+Formalized by `MetaMathlibExt.eulerSumPeriodAlgebra`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#euler-sum-period-algebra).
 
 ## Generators of the Euler sum period algebra
 
@@ -177,7 +177,7 @@ $\mathbb{Q}[\log 2, \pi^2, \zeta(2j+1)_{j \ge 1}]$ of $\mathbb{C}$ that they gen
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2.
 
-Formalized by `MetaMathlibExt.generators_mem_eulerSumPeriodAlgebra`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generators-mem-euler-sum-period-algebra).
+Formalized by `MetaMathlibExt.generators_mem_eulerSumPeriodAlgebra`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generators-mem-euler-sum-period-algebra).
 
 ## The algebra generated by $\log 2$, $\pi$, odd zeta values and even beta values
 
@@ -192,7 +192,7 @@ $\mathbb{Q}[\log 2, \pi, \zeta(2j+1)_{j \ge 1}, \beta(2j)_{j \ge 1}]$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 6.
 
-Formalized by `MetaMathlibExt.eulerSumBetaPeriodAlgebra`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#euler-sum-beta-period-algebra).
+Formalized by `MetaMathlibExt.eulerSumBetaPeriodAlgebra`, a definition declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#euler-sum-beta-period-algebra).
 
 ## Generators of the Euler sum beta period algebra
 
@@ -206,7 +206,7 @@ $\mathbb{C}$ that they generate.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 6.
 
-Formalized by `MetaMathlibExt.generators_mem_eulerSumBetaPeriodAlgebra`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generators-mem-euler-sum-beta-period-alg).
+Formalized by `MetaMathlibExt.generators_mem_eulerSumBetaPeriodAlgebra`, a theorem declared in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#generators-mem-euler-sum-beta-period-alg).
 
 ## Beta-function evaluation of hyperharmonic Euler sums
 
@@ -230,7 +230,7 @@ cases are not included here.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_eq_iteratedDeriv_beta` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-eq-iterated-deri).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_eq_iteratedDeriv_beta` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-eq-iterated-deri).
 
 ## Polygamma structure of hyperharmonic Euler sums
 
@@ -249,7 +249,7 @@ here.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_mem_adjoin_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-mem-adjoin-digam).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_mem_adjoin_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-mem-adjoin-digam).
 
 ## Hyperharmonic Euler sums with rational parameters
 
@@ -271,7 +271,7 @@ unity $\omega$ is chosen.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_rat_mem_pi_mul_adjoin` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-rat-mem-pi-mul-a).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_rat_mem_pi_mul_adjoin` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-rat-mem-pi-mul-a).
 
 ## Duality for hyperharmonic Euler sums
 
@@ -286,7 +286,7 @@ and $S(k, r; p + 1; 1 - t) = S(p, t; k + 1; 1 - r)$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_duality` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-duality).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_duality` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-duality).
 
 ## Hyperharmonic Euler sums with integer parameter and half-integer shift
 
@@ -305,7 +305,7 @@ exponent $p + 1$ for $r \le p$; so $r < p$ is assumed.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2, first part.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_half_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-half-mem-euler-s).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_half_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-half-mem-euler-s).
 
 ## Odd harmonic central binomial sums at integer shifts
 
@@ -323,7 +323,7 @@ this is also the sum over $n \ge k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2, second part.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-sum).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-sum).
 
 ## Central binomial odd harmonic sum with denominator $4^n (n + 1)^2$
 
@@ -339,7 +339,7 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_succ_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_succ_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div).
 
 ## Odd harmonic central binomial sums with weight $\binom{n}{m}$ at integer shifts
 
@@ -357,7 +357,7 @@ this is also the sum over $n \ge k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 4, first part.
 
-Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon).
+Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon).
 
 ## Central binomial odd harmonic sums over $\binom{n+m}{m}$ lie in the period algebra
 
@@ -377,7 +377,7 @@ $n + a = 0$ when $a \le 0$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 4, second part.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-2).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_sum_mem_eulerSumPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-2).
 
 ## Catalan–odd harmonic sum with denominator $4^n n$
 
@@ -393,7 +393,7 @@ Since $O_n(k) = 0$ for $n < k$, the sum can equally be taken over $n \ge k$.
 - the denominator $4^n n$ is read from the record's two-row layout ($C_n O_n(k)$ over $4^n n$).
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.catalan_oddMultipleHarmonic_div_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#catalan-odd-multiple-harmonic-div-tsum).
+Stated but not proved: `MetaMathlibExt.catalan_oddMultipleHarmonic_div_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#catalan-odd-multiple-harmonic-div-tsum).
 
 ## Quarter-shift hyperharmonic Euler sums
 
@@ -412,7 +412,7 @@ $r = p = 1$ it is $\sum_{n \ge 0} 1 / (n + a)$), so $r < p$ is used.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_quarter_mem_eulerSumBetaPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-quarter-mem-eule).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_quarter_mem_eulerSumBetaPeriodAlgebra` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-quarter-mem-eule).
 
 ## Hyperharmonic Euler sums with half-integer parameter and shift
 
@@ -427,7 +427,7 @@ equals $\pi x$ for some $x$ in the $\mathbb{Q}$-subalgebra $\mathbb{Q}[\log 2, \
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, first part.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_half_half_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-half-half-mem-pi).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_half_half_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-half-half-mem-pi).
 
 ## Odd harmonic central binomial sums with weight $\binom{n}{m}$ at half-integer shifts
 
@@ -444,7 +444,7 @@ are $0$, since $O_n(k) = 0$ for $n < k$, so this is also the sum over $n \ge k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, second part.
 
-Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_half_sum_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-2).
+Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_half_sum_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-2).
 
 ## Central binomial odd harmonic sums over $\binom{n+m}{m}$ at half-integer shifts
 
@@ -464,7 +464,7 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, third part.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_half_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-3).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_half_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-3).
 
 ## Catalan–odd harmonic sums at the shift $1/2$
 
@@ -483,7 +483,7 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.catalan_oddMultipleHarmonic_half_sum_sub_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#catalan-odd-multiple-harmonic-half-sum-s).
+Stated but not proved: `MetaMathlibExt.catalan_oddMultipleHarmonic_half_sum_sub_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#catalan-odd-multiple-harmonic-half-sum-s).
 
 ## Central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
@@ -498,7 +498,7 @@ $$\sum_{n \ge 0} \frac{\binom{2n}{n}}{4^n \binom{n+m}{m} (n + 1/2)^2} =
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 9, first identity.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_div_choose_half_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-div-choose-half-sq-tsum).
+Stated but not proved: `MetaMathlibExt.centralBinom_div_choose_half_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-div-choose-half-sq-tsum).
 
 ## Odd harmonic central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
@@ -516,7 +516,7 @@ Here $\pi^2 / 6 = \zeta(2)$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 9, second identity.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddHarmonic_sub_div_choose_half_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-harmonic-sub-div-choos).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddHarmonic_sub_div_choose_half_sq_tsum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-harmonic-sub-div-choos).
 
 ## Products of quarter-shift hyperharmonic Euler sums
 
@@ -534,7 +534,7 @@ numbers, where $\beta(s) = \sum_{n \ge 0} (-1)^n / (2n+1)^s$ is the Dirichlet be
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, first part.
 
-Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_quarter_mul_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-quarter-mul-mem).
+Stated but not proved: `MetaMathlibExt.hyperharmonicEulerSum_quarter_mul_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#hyperharmonic-euler-sum-quarter-mul-mem).
 
 ## Products of quarter-shift central binomial odd harmonic sums
 
@@ -555,7 +555,7 @@ The terms with $n < k_i$ vanish, since $O_n(k_i) = 0$ for $n < k_i$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, second part.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_quarter_mul_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-quar).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_quarter_mul_mem_pi_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-quar).
 
 ## Odd harmonic central binomial sums with weight $\binom{n}{m}$ at shift $1/4$
 
@@ -577,7 +577,7 @@ terms with $n < k$ are $0$, since $O_n(k) = 0$ for $n < k$, so this is also the 
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 10, first statement.
 
-Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-3).
+Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-3).
 
 ## Odd harmonic central binomial sums with weight $\binom{n}{m}$ at shift $3/4$
 
@@ -599,7 +599,7 @@ terms with $n < k$ are $0$, since $O_n(k) = 0$ for $n < k$, so this is also the 
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 10, second statement.
 
-Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_three_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-4).
+Stated but not proved: `MetaMathlibExt.choose_centralBinom_oddMultipleHarmonic_three_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#choose-central-binom-odd-multiple-harmon-4).
 
 ## Central binomial odd harmonic sums over $\binom{n+m}{m}$ at the shift $1/4$
 
@@ -620,7 +620,7 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 10, third statement.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-4).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-4).
 
 ## Central binomial odd harmonic sums over $\binom{n+m}{m}$ at the shift $3/4$
 
@@ -642,7 +642,7 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 10, fourth statement.
 
-Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_three_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-5).
+Stated but not proved: `MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_choose_three_quarter_sum_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HyperharmonicEulerSumsWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html#central-binom-odd-multiple-harmonic-div-5).
 
 ## Depends on
 
@@ -651,4 +651,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hyperharmonic Euler sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/hyperharmonic-euler-sums)

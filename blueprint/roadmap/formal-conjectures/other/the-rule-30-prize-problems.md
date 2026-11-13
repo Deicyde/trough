@@ -26,7 +26,7 @@ statement: formalized
 > - [Rule 30 Prizes](https://rule30prize.org/).
 > - [Wikipedia: Rule 30](https://en.wikipedia.org/wiki/Rule_30).
 
-*Quoted from [FormalConjectures/Other/Rule30.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/Rule30.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/Rule30.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/Rule30.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open. It also has 1 test statement and 2 API statements, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem centerColumn_not_eventually_periodic :
     ¬ ∃ p : ℕ, 0 < p ∧ ∃ N : ℕ, ∀ t : ℕ, N ≤ t → centerColumn (t + p) = centerColumn t
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/Rule30.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/Rule30.lean#L81).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/Rule30.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/Rule30.lean#L81).
 
 ## `Rule30.centerColumn_frequency_half`
 
@@ -59,7 +59,7 @@ theorem centerColumn_frequency_half :
     {t : ℕ | centerColumn t}.HasDensity (1 / 2)
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/Rule30.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/Rule30.lean#L90).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/Rule30.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/Rule30.lean#L90).
 
 ## Depends on
 
@@ -67,5 +67,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/Rule30.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/Rule30.lean)
+- [FormalConjectures/Other/Rule30.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/Rule30.lean)
 - [Announcing the Rule 30 Prizes](https://writings.stephenwolfram.com/2019/10/announcing-the-rule-30-prizes/)

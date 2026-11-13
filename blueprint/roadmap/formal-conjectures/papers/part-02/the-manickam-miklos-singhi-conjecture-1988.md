@@ -18,7 +18,7 @@ statement: formalized
 > * [Po15] Pokrovskiy, A. (2015). "A linear bound on the Manickam–Miklós–Singhi conjecture."
 >   *J. Combin. Theory Ser. A* 133, pp. 280--306. [arXiv:1308.2176](https://arxiv.org/abs/1308.2176)
 
-*Quoted from [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem manickam_miklos_singhi_conjecture :
       (n - 1).choose (k - 1) ≤ nonnegSubsetCount n k x
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L56).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L56).
 
 ## `ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.pokrovskiy`
 
@@ -57,7 +57,7 @@ theorem manickam_miklos_singhi_conjecture.variants.pokrovskiy :
       (n - 1).choose (k - 1) ≤ nonnegSubsetCount n k x
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L69).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L69).
 
 ## `ManickamMiklosSinghiConjecture.manickam_miklos_singhi_conjecture.variants.quadratic`
 
@@ -73,7 +73,7 @@ theorem manickam_miklos_singhi_conjecture.variants.quadratic (n k : ℕ) (hk : 1
     (n - 1).choose (k - 1) ≤ nonnegSubsetCount n k x
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L80).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean#L80).
 
 ## Depends on
 
@@ -81,5 +81,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean)
+- [FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ManickamMiklosSinghiConjecture.lean)
 - [arXiv:1309.2212](https://arxiv.org/abs/1309.2212)

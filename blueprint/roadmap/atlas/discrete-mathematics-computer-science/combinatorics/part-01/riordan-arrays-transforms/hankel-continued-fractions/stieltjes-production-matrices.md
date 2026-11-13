@@ -8,7 +8,7 @@ proof: formalized
 
 # Stieltjes production matrices
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html).
 
 ## Tridiagonal Stieltjes production matrix
 
@@ -20,7 +20,7 @@ $S_{i,j} = 0$ for all other $i, j$. So row $0$ is $a_1, 1, 0, \dots$, row $1$ is
 $b_1, a, 1, 0, \dots$, and each row $i \ge 2$ has $b$ below the diagonal, $a$ on the diagonal, $1$
 above the diagonal and $0$ elsewhere.
 
-Formalized by `MetaMathlibExt.stieltjesMatrix`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html#stieltjes-matrix).
+Formalized by `MetaMathlibExt.stieltjesMatrix`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html#stieltjes-matrix).
 
 ## Specialized Stieltjes matrix
 
@@ -34,7 +34,7 @@ $S_{i+1,i} = b$ for every $i \ge 1$, and $S_{i,j} = 0$ for all other $i, j$.
 This specialization corresponds to the inverse Riordan pair with numerator
 $1 - \lambda x - \mu x^2$ over $1 + a x + b x^2$.
 
-Formalized by `MetaMathlibExt.stieltjesMatrixOf`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html#stieltjes-matrix-of).
+Formalized by `MetaMathlibExt.stieltjesMatrixOf`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/StieltjesMatrix.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html#stieltjes-matrix-of).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stieltjes production matrices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/stieltjes-production-matrices)

@@ -29,7 +29,7 @@ statement: formalized
 > with two small charges placed symmetrically on the axis of the triangle — whose potential has at
 > least $24$ non-degenerate critical points, whereas $(5-1)^2 = 16$.
 
-*Quoted from [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 9 research or textbook statements: 2 open, 6 solved and 1 textbook result. It also has 2 test statements, counted here but not shown.
 
@@ -51,7 +51,7 @@ theorem maxwell_conjecture.counterexample_morse :
       (equilibria q a).Finite ∧ 24 ≤ (equilibria q a).encard
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L94).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L94).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture`
 
@@ -66,7 +66,7 @@ Proved here.
 theorem maxwell_conjecture : ¬ Conjecture
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L108).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L108).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.counterexample`
 
@@ -87,7 +87,7 @@ theorem maxwell_conjecture.counterexample :
         (counterexamplePositions ε)).encard
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 159](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L159).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 159](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L159).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.phiZero_critical_points`
 
@@ -105,7 +105,7 @@ theorem maxwell_conjecture.phiZero_critical_points :
       ∀ p, ∇ phiZero p = 0 → HasNondegenerateHessianAt phiZero p
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 187](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L187).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 187](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L187).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.iterated`
 
@@ -126,7 +126,7 @@ theorem maxwell_conjecture.iterated (m : ℕ) :
       (equilibria q a).Finite ∧ 4 + 20 * m ≤ (equilibria q a).encard
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 201](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L201).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 201](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L201).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.variants.two_charges`
 
@@ -143,7 +143,7 @@ theorem maxwell_conjecture.variants.two_charges (q : Fin 2 → ℝ)
     (equilibria q a).encard ≤ 1
 ```
 
-Category `textbook`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 215](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L215).
+Category `textbook`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 215](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L215).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.variants.three_equal_magnitudes`
 
@@ -164,7 +164,7 @@ theorem maxwell_conjecture.variants.three_equal_magnitudes (q : Fin 3 → ℝ)
     (equilibria q a).encard ≤ 4
 ```
 
-Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L229).
+Category `research solved`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 229](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L229).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.variants.three_charges`
 
@@ -184,7 +184,7 @@ theorem maxwell_conjecture.variants.three_charges :
       (equilibria q a).encard ≤ 4
 ```
 
-Category `research open`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 244](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L244).
+Category `research open`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 244](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L244).
 
 ## `Arxiv.«2607.27197».maxwell_conjecture.variants.polynomial_bound`
 
@@ -209,7 +209,7 @@ theorem maxwell_conjecture.variants.polynomial_bound :
       (equilibria q a).encard ≤ (C * n ^ d : ℕ)
 ```
 
-Category `research open`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 264](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L264).
+Category `research open`; AMS [31 Potential theory](../../by-subject/part-01/31-potential-theory/README.md), [78 Optics, electromagnetic theory](../../by-subject/part-02/78-optics-electromagnetic-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean, line 264](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean#L264).
 
 ## Depends on
 
@@ -217,5 +217,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean)
+- [FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.27197/MaxwellConjecture.lean)
 - [arXiv:2607.27197](https://arxiv.org/abs/2607.27197)

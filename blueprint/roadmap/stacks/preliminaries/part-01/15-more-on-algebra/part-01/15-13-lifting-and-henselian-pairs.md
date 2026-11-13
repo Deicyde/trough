@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.13 Lifting and henselian pairs
 
-Section 15.13 of the Stacks Project, [Tag 0D49](https://stacks.math.columbia.edu/tag/0D49). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.13 of the Stacks Project, [Tag 0D49](https://stacks.math.columbia.edu/tag/0D49). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D4A, a lemma
 
 [Tag 0D4A](https://stacks.math.columbia.edu/tag/0D4A) in the Stacks Project.
 
-**`henselianPair_finiteProjective_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean#L198).
+**`henselianPair_finiteProjective_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean#L198).
 
 > **Stacks 0D4A.** Reduction modulo the ideal of a henselian pair induces a bijection on
 > isomorphism classes of finite projective modules. Concretely, every finite projective module
@@ -43,7 +43,7 @@ theorem henselianPair_finiteProjective_quotient_bijective
 
 [Tag 09ZL](https://stacks.math.columbia.edu/tag/09ZL) in the Stacks Project.
 
-**`isEquivalence_baseChange_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/FiniteEtale.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/FiniteEtale.lean#L362). References: EGA IV (18.3.2); EGA IV (18.5.15); SGA 3 X (4.0), “ÉtCov(S)≃ÉtCov(S₀)”.
+**`isEquivalence_baseChange_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/FiniteEtale.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/FiniteEtale.lean#L361). References: EGA IV (18.3.2); EGA IV (18.5.15); SGA 3 X (4.0), “ÉtCov(S)≃ÉtCov(S₀)”.
 
 > For a henselian pair `(A, I)`, reduction modulo `I` is an equivalence between finite étale
 > `A`-algebras and finite étale `A ⧸ I`-algebras.
@@ -58,7 +58,7 @@ theorem isEquivalence_baseChange_quotient
 
 [Tag 0H74](https://stacks.math.columbia.edu/tag/0H74) in the Stacks Project.
 
-**`exists_lift_of_smooth_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Algebra.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Algebra.lean#L35).
+**`exists_lift_of_smooth_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Algebra.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Algebra.lean#L35).
 
 > **Stacks 0H74.** Every map from a smooth algebra to the quotient of a henselian pair lifts
 > to the original ring.
@@ -76,7 +76,7 @@ theorem exists_lift_of_smooth_of_henselianPair
 
 [Tag 0D4B](https://stacks.math.columbia.edu/tag/0D4B) in the Stacks Project.
 
-**`finiteProjective_limit_of_finiteFlat_of_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean#L554). References: EGA IV (18.3.2.1), “(ii)”.
+**`finiteProjective_limit_of_finiteFlat_of_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Lifting/Projective.lean#L554). References: EGA IV (18.3.2.1), “(ii)”.
 
 > **Stacks 0D4B.** A compatible inverse system of finite flat modules over a surjective
 > inverse system of rings with locally nilpotent transition kernels has finite projective inverse
@@ -141,4 +141,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.13, Tag 0D49](https://stacks.math.columbia.edu/tag/0D49)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

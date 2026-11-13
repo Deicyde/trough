@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.2 Singular ideals
 
-Section 16.2 of the Stacks Project, [Tag 07C4](https://stacks.math.columbia.edu/tag/07C4). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.2 of the Stacks Project, [Tag 07C4](https://stacks.math.columbia.edu/tag/07C4). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07C5, a definition
 
 [Tag 07C5](https://stacks.math.columbia.edu/tag/07C5) in the Stacks Project.
 
-**`Stacks.Smoothing.singularIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L220). The attribute's comment: “the singular ideal”.
+**`Stacks.Smoothing.singularIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L220). The attribute's comment: “the singular ideal”.
 
 > The *singular ideal* `H_{A/R}` of `A` over `R`: the vanishing ideal of the set of primes of
 > `A` at which `R → A` is not smooth.
@@ -23,7 +23,7 @@ Section 16.2 of the Stacks Project, [Tag 07C4](https://stacks.math.columbia.edu/
 noncomputable def singularIdeal : Ideal A
 ```
 
-**`Stacks.Smoothing.singularIdeal_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L225). The attribute's comment: “radicality”.
+**`Stacks.Smoothing.singularIdeal_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L225). The attribute's comment: “radicality”.
 
 > The singular ideal is radical.
 
@@ -31,7 +31,7 @@ noncomputable def singularIdeal : Ideal A
 theorem singularIdeal_isRadical : (singularIdeal R A).IsRadical
 ```
 
-**`Stacks.Smoothing.zeroLocus_singularIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L231). The attribute's comment: “vanishing locus”.
+**`Stacks.Smoothing.zeroLocus_singularIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L231). The attribute's comment: “vanishing locus”.
 
 > The vanishing locus of the singular ideal is exactly the locus of primes at which `R → A` is
 > not smooth.
@@ -42,7 +42,7 @@ theorem zeroLocus_singularIdeal :
       {q : PrimeSpectrum A | ¬ Algebra.SmoothAt R A q.asIdeal}
 ```
 
-**`Stacks.Smoothing.eq_singularIdeal_iff_of_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L240). The attribute's comment: “uniqueness”.
+**`Stacks.Smoothing.eq_singularIdeal_iff_of_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L240). The attribute's comment: “uniqueness”.
 
 > A radical ideal is the singular ideal exactly when its vanishing locus is the non-smooth
 > locus; this is the uniqueness in the definition of the singular ideal.
@@ -58,7 +58,7 @@ theorem eq_singularIdeal_iff_of_isRadical {I : Ideal A} (hI : I.IsRadical) :
 
 [Tag 07C6](https://stacks.math.columbia.edu/tag/07C6) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_notMem_eq_mul_jacobianMinorOn_of_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/StandardElementAtSmoothPrime.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/StandardElementAtSmoothPrime.lean#L79).
+**`Stacks.Smoothing.exists_notMem_eq_mul_jacobianMinorOn_of_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/StandardElementAtSmoothPrime.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/StandardElementAtSmoothPrime.lean#L79).
 
 > **Stacks 07C6.** If a finite polynomial presentation of `A` over `R` is smooth at a prime `q`
 > (Definition 00TB), then some element `a ∈ A` outside `q` is a multiple of a `c × c` Jacobian minor
@@ -84,7 +84,7 @@ theorem exists_notMem_eq_mul_jacobianMinorOn_of_smoothAt
 
 [Tag 07C7](https://stacks.math.columbia.edu/tag/07C7) in the Stacks Project.
 
-**`IsElementaryStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L214). The attribute's comment: “the first of the two notions the definition introduces: `a` is elementary standard in `A` over `R`, i.e. some presentation `A = R[x_1,…,x_n]/(f_1,…,f_m)` and some `0 ≤ c ≤ min(n, m)` satisfy 16.2.3.1 and 16.2.3.2. The two conditions themselves are `Presentation.IsElementaryStandardFor`”.
+**`IsElementaryStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L214). The attribute's comment: “the first of the two notions the definition introduces: `a` is elementary standard in `A` over `R`, i.e. some presentation `A = R[x_1,…,x_n]/(f_1,…,f_m)` and some `0 ≤ c ≤ min(n, m)` satisfy 16.2.3.1 and 16.2.3.2. The two conditions themselves are `Presentation.IsElementaryStandardFor`”.
 
 > An element `a ∈ A` is *elementary standard in `A` over `R`* if there exists a presentation
 > of `A` over `R` and an integer `c` with `0 ≤ c ≤ min(n, m)` realizing `a` as elementary
@@ -94,7 +94,7 @@ theorem exists_notMem_eq_mul_jacobianMinorOn_of_smoothAt
 def IsElementaryStandard (a : A) : Prop
 ```
 
-**`IsStrictlyStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L224). The attribute's comment: “the second of the two notions the definition introduces: `a` is strictly standard in `A` over `R`, i.e. some presentation `A = R[x_1,…,x_n]/(f_1,…,f_m)` and some `0 ≤ c ≤ min(n, m)` satisfy 16.2.3.3 and 16.2.3.4. The two conditions themselves are `Presentation.IsStrictlyStandardFor`”.
+**`IsStrictlyStandard`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L224). The attribute's comment: “the second of the two notions the definition introduces: `a` is strictly standard in `A` over `R`, i.e. some presentation `A = R[x_1,…,x_n]/(f_1,…,f_m)` and some `0 ≤ c ≤ min(n, m)` satisfy 16.2.3.3 and 16.2.3.4. The two conditions themselves are `Presentation.IsStrictlyStandardFor`”.
 
 > An element `a ∈ A` is *strictly standard in `A` over `R`* if there exists a presentation of
 > `A` over `R` and an integer `c` with `0 ≤ c ≤ min(n, m)` realizing `a` as strictly standard.
@@ -107,7 +107,7 @@ def IsStrictlyStandard (a : A) : Prop
 
 [Tag 07ET](https://stacks.math.columbia.edu/tag/07ET) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_comp_eq_lsmul_of_eq_sum_jacobianMinor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L95). The attribute's comment: “the forward half: the equation of 07ER implies that there is an `A`-linear `ψ : ⊕_{i = 1,…,n} A dx_i → A^{⊕c}` whose composition with `A^{⊕c} →^{(f_1,…,f_c)} I/I² →^{f ↦ df} ⊕_{i = 1,…,n} A dx_i` is multiplication by `a`. The two-step composite is the Jacobian map `jacobianMatrix`, whose `j`-th column is `d f_j`. Only 07ER is hypothesised, as in the source; the condition of 07ES is not assumed”.
+**`Stacks.Smoothing.exists_comp_eq_lsmul_of_eq_sum_jacobianMinor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L95). The attribute's comment: “the forward half: the equation of 07ER implies that there is an `A`-linear `ψ : ⊕_{i = 1,…,n} A dx_i → A^{⊕c}` whose composition with `A^{⊕c} →^{(f_1,…,f_c)} I/I² →^{f ↦ df} ⊕_{i = 1,…,n} A dx_i` is multiplication by `a`. The two-step composite is the Jacobian map `jacobianMatrix`, whose `j`-th column is `d f_j`. Only 07ER is hypothesised, as in the source; the condition of 07ES is not assumed”.
 
 > A strictly standard equation supplies a left inverse to its Jacobian map. Only the equation
 > 16.2.3.3 is used; the relation-ideal condition 16.2.3.4 is not needed.
@@ -123,7 +123,7 @@ theorem exists_comp_eq_lsmul_of_eq_sum_jacobianMinor
         LinearMap.lsmul A (Fin c → A) a
 ```
 
-**`Stacks.Smoothing.exists_pow_eq_sum_jacobianMinor_of_comp_eq_lsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L157). The attribute's comment: “the converse half: if such a `ψ` exists — that is, if some `A`-linear `ψ : ⊕_{i = 1,…,n} A dx_i → A^{⊕c}` composed with `A^{⊕c} →^{(f_1,…,f_c)} I/I² →^{f ↦ df} ⊕_{i = 1,…,n} A dx_i` is multiplication by `a` — then `a ^ c` satisfies the equation of 07ER. As in the source the conclusion is only that equation, not the condition of 07ES”.
+**`Stacks.Smoothing.exists_pow_eq_sum_jacobianMinor_of_comp_eq_lsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdeals.lean#L157). The attribute's comment: “the converse half: if such a `ψ` exists — that is, if some `A`-linear `ψ : ⊕_{i = 1,…,n} A dx_i → A^{⊕c}` composed with `A^{⊕c} →^{(f_1,…,f_c)} I/I² →^{f ↦ df} ⊕_{i = 1,…,n} A dx_i` is multiplication by `a` — then `a ^ c` satisfies the equation of 07ER. As in the source the conclusion is only that equation, not the condition of 07ES”.
 
 > A left inverse to the Jacobian expresses the corresponding power as a sum of Jacobian minors
 > (the equation of Stacks 07ER). This also holds for `c = 0`, when the empty minor is `1`; the
@@ -144,7 +144,7 @@ theorem exists_pow_eq_sum_jacobianMinor_of_comp_eq_lsmul
 
 [Tag 07CA](https://stacks.math.columbia.edu/tag/07CA) in the Stacks Project.
 
-**`Stacks.Smoothing.singularIdeal_eq_radical_span_isElementaryStandard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean#L390). The attribute's comment: “elementary standard elements”.
+**`Stacks.Smoothing.singularIdeal_eq_radical_span_isElementaryStandard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean#L390). The attribute's comment: “elementary standard elements”.
 
 > **Stacks 07CA.** The singular ideal is the radical of the ideal generated by the elementary
 > standard elements of `A` over `R`.
@@ -155,7 +155,7 @@ theorem singularIdeal_eq_radical_span_isElementaryStandard (R : Type u) [CommRin
     singularIdeal R A = (Ideal.span {a : A | IsElementaryStandard (R := R) a}).radical
 ```
 
-**`Stacks.Smoothing.singularIdeal_eq_radical_span_isStrictlyStandard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean#L398). The attribute's comment: “strictly standard elements”.
+**`Stacks.Smoothing.singularIdeal_eq_radical_span_isStrictlyStandard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdealGenerators.lean#L398). The attribute's comment: “strictly standard elements”.
 
 > **Stacks 07CA.** The singular ideal is the radical of the ideal generated by the strictly
 > standard elements of `A` over `R`.
@@ -170,7 +170,7 @@ theorem singularIdeal_eq_radical_span_isStrictlyStandard (R : Type u) [CommRing 
 
 [Tag 07CB](https://stacks.math.columbia.edu/tag/07CB) in the Stacks Project.
 
-**`Stacks.Smoothing.NotQuasiCompact.finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L283).
+**`Stacks.Smoothing.NotQuasiCompact.finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L283).
 
 > The ring map `R → A = R/(x)` is of finite presentation.
 
@@ -178,7 +178,7 @@ theorem singularIdeal_eq_radical_span_isStrictlyStandard (R : Type u) [CommRing 
 theorem finitePresentation : Algebra.FinitePresentation (baseRing k) (quotientRing k)
 ```
 
-**`Stacks.Smoothing.NotQuasiCompact.smoothLocus_eq_iUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L294).
+**`Stacks.Smoothing.NotQuasiCompact.smoothLocus_eq_iUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L294).
 
 > The smooth locus of `R → A` is the union of the standard opens `D(y_i)`.
 
@@ -188,7 +188,7 @@ theorem smoothLocus_eq_iUnion :
       ⋃ i : ℕ, (PrimeSpectrum.basicOpen (y k i) : Set (PrimeSpectrum (quotientRing k)))
 ```
 
-**`Stacks.Smoothing.NotQuasiCompact.smoothLocus_not_compact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L344).
+**`Stacks.Smoothing.NotQuasiCompact.smoothLocus_not_compact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SmoothLocusNotQuasiCompact.lean#L344).
 
 > The smooth locus of the finitely presented ring map `R → A` is not quasi-compact.
 
@@ -201,7 +201,7 @@ theorem smoothLocus_not_compact :
 
 [Tag 07CC](https://stacks.math.columbia.edu/tag/07CC) in the Stacks Project.
 
-**`isElementaryStandard_basechange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L492). The attribute's comment: “(1)”.
+**`isElementaryStandard_basechange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L492). The attribute's comment: “(1)”.
 
 > Let `R → A` be a ring map of finite presentation and `R → R'` a ring map. If `a ∈ A` is
 > elementary standard in `A` over `R`, then `a ⊗ 1 ∈ A ⊗_R R'` is elementary standard in
@@ -213,7 +213,7 @@ theorem isElementaryStandard_basechange (a : A) (ha : IsElementaryStandard (R :=
       (Algebra.TensorProduct.includeRight a : R' ⊗[R] A)
 ```
 
-**`isStrictlyStandard_basechange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L506). The attribute's comment: “(2)”.
+**`isStrictlyStandard_basechange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/BaseChangeOfPresentation.lean#L506). The attribute's comment: “(2)”.
 
 > Let `R → A` be a ring map of finite presentation and `R → R'` a ring map. If `a ∈ A` is
 > strictly standard in `A` over `R`, then `a ⊗ 1 ∈ A ⊗_R R'` is strictly standard in `A ⊗_R R'`
@@ -229,7 +229,7 @@ theorem isStrictlyStandard_basechange (a : A) (ha : IsStrictlyStandard (R := R) 
 
 [Tag 07EU](https://stacks.math.columbia.edu/tag/07EU) in the Stacks Project.
 
-**`exists_smooth_factorization_of_singularIdeal_map_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealFactorization.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SingularIdealFactorization.lean#L400).
+**`exists_smooth_factorization_of_singularIdeal_map_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SingularIdealFactorization.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SingularIdealFactorization.lean#L400).
 
 > Given ring maps `R → A → Λ` with `A` of finite presentation over `R`, if the image of the
 > singular ideal `H_{A/R}` generates the unit ideal of `Λ`, then `A → Λ` factors as
@@ -253,4 +253,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.2, Tag 07C4](https://stacks.math.columbia.edu/tag/07C4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

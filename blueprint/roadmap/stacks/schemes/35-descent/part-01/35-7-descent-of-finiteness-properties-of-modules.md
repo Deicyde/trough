@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.7 Descent of finiteness properties of modules
 
-Section 35.7 of the Stacks Project, [Tag 05AY](https://stacks.math.columbia.edu/tag/05AY). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.7 of the Stacks Project, [Tag 05AY](https://stacks.math.columbia.edu/tag/05AY). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05AZ, a lemma
 
 [Tag 05AZ](https://stacks.math.columbia.edu/tag/05AZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FlatBaseChange.isFiniteType_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/Descent.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChange/Descent.lean#L362).
+**`Stacks.AlgebraicGeometry.FlatBaseChange.isFiniteType_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/Descent.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChange/Descent.lean#L362).
 
 > **Stacks Project, Tag 05AZ.** Let `X` be a scheme and `M` a quasi-coherent `𝒪_X`-module. If
 > `{f i : 𝒰.X i ⟶ X}` is an fpqc covering of `X` such that every pullback `(f i)^* M` is of finite
@@ -30,7 +30,7 @@ theorem isFiniteType_of_pullback_fpqcCover {X : Scheme.{u}} (M : X.Modules) [M.I
 
 [Tag 09UB](https://stacks.math.columbia.edu/tag/09UB) in the Stacks Project.
 
-**`AlgebraicGeometry.isFiniteType_of_isFiniteType_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/OpenFlatSurjective.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/OpenFlatSurjective.lean#L749).
+**`AlgebraicGeometry.isFiniteType_of_isFiniteType_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/OpenFlatSurjective.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/OpenFlatSurjective.lean#L749).
 
 > Finite type of a sheaf of modules descends along an open, surjective, flat morphism of
 > locally ringed spaces.
@@ -49,7 +49,7 @@ public theorem isFiniteType_of_isFiniteType_modulePullback
 
 [Tag 05B0](https://stacks.math.columbia.edu/tag/05B0) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitePresentation_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcFinitePresentation.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcFinitePresentation.lean#L354). References: SGA 1 VIII (1.10), “finite presentation”.
+**`AlgebraicGeometry.isFinitePresentation_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcFinitePresentation.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcFinitePresentation.lean#L354). References: SGA 1 VIII (1.10), “finite presentation”.
 
 > A quasi-coherent module whose pullback to every member of an fpqc covering is finitely
 > presented is itself finitely presented.
@@ -66,7 +66,7 @@ public theorem isFinitePresentation_of_pullback_fpqcCover
 
 [Tag 082U](https://stacks.math.columbia.edu/tag/082U) in the Stacks Project.
 
-**`AlgebraicGeometry.isCardinalGenerated_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingGeneratorOpen/Descent.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/FittingGeneratorOpen/Descent.lean#L142).
+**`AlgebraicGeometry.isCardinalGenerated_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingGeneratorOpen/Descent.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/FittingGeneratorOpen/Descent.lean#L142).
 
 > Being locally generated by `r` sections descends along an fpqc covering for quasi-coherent
 > modules.
@@ -85,7 +85,7 @@ theorem isCardinalGenerated_of_pullback_fpqc {X : Scheme.{u}} (M : X.Modules)
 
 [Tag 05B1](https://stacks.math.columbia.edu/tag/05B1) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlat_of_pullback_fpqc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/Flat.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/Flat.lean#L65).
+**`AlgebraicGeometry.isFlat_of_pullback_fpqc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/Flat.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/ModuleFiniteness/Flat.lean#L65).
 
 > A quasi-coherent module whose pullback to each member of an fpqc covering family is flat is
 > itself flat.
@@ -104,7 +104,7 @@ public lemma isFlat_of_pullback_fpqc {S : Scheme.{u}} {I : Type v}
 
 [Tag 05B2](https://stacks.math.columbia.edu/tag/05B2) in the Stacks Project.
 
-**`AlgebraicGeometry.isFiniteLocallyFree_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeDescent/Fpqc.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeDescent/Fpqc.lean#L53). References: SGA 1 VIII (1.10), “finite locally free”.
+**`AlgebraicGeometry.isFiniteLocallyFree_of_pullback_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeDescent/Fpqc.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Modules/FiniteLocallyFreeDescent/Fpqc.lean#L53). References: SGA 1 VIII (1.10), “finite locally free”.
 
 > **Stacks Project, Tag 05B2.** Let `M` be a quasi-coherent module on a scheme `X` and let
 > `𝒰` be an fpqc covering of `X`. If the pullback of `M` to every member of `𝒰` is finite locally
@@ -122,7 +122,7 @@ public theorem isFiniteLocallyFree_of_pullback_fpqcCover {X : Scheme.{u}} (M : X
 
 [Tag 05JZ](https://stacks.math.columbia.edu/tag/05JZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyProjective_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcLocallyProjective.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcLocallyProjective.lean#L191).
+**`AlgebraicGeometry.isLocallyProjective_of_pullback_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcLocallyProjective.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/FpqcLocallyProjective.lean#L190).
 
 > **Stacks Project, Tag 05JZ.** Local projectivity of a quasi-coherent module descends
 > along an fpqc covering.
@@ -140,7 +140,7 @@ theorem isLocallyProjective_of_pullback_fpqc {X : Scheme.{u}} (F : X.Modules)
 
 [Tag 05VF](https://stacks.math.columbia.edu/tag/05VF) in the Stacks Project.
 
-**`Stacks.Examples.exists_faithfullyFlat_free_baseChange_directSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean#L326). The attribute's comment: “a countable direct sum of rank one locally free modules becomes free after a faithfully flat base change”.
+**`Stacks.Examples.exists_faithfullyFlat_free_baseChange_directSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean#L328). The attribute's comment: “a countable direct sum of rank one locally free modules becomes free after a faithfully flat base change”.
 
 > **Stacks 05VF.** A countable direct sum of rank one locally free modules is projective and
 > becomes free after a faithfully flat base change.
@@ -154,27 +154,27 @@ theorem exists_faithfullyFlat_free_baseChange_directSum {R : Type u} [CommRing R
         Module.Free S (S ⊗[R] (⨁ n, L n))
 ```
 
-**`Stacks.Examples.exists_faithfullyFlat_free_baseChange_not_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/LocallyFreeNotFpqcLocal.lean#L353). The attribute's comment: “being locally free does not descend along a faithfully flat ring map: a countable direct sum of rank one locally free modules which is not locally free still becomes free after the faithfully flat base change built here. That such a direct sum exists is Stacks 05WL, which the source cites and which is not formalized, so failure of local freeness is a hypothesis here and not a conclusion”.
+**`Stacks.Examples.CircleTorus.exists_ring_faithfullyFlat_free_baseChange_not_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/RankOneSumNotLocallyFree/Reduction.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/RankOneSumNotLocallyFree/Reduction.lean#L371). The attribute's comment: “being locally free does not descend along faithfully flat ring maps: a projective countable direct sum of rank one locally free modules which is not locally free becomes free after a faithfully flat base change”.
 
-> **Stacks 05VF.** Being locally free does not descend along faithfully flat ring maps: a
-> countable direct sum of rank one locally free modules which is not locally free still becomes
-> free after a faithfully flat base change.
+> **Stacks 05VF.** Being locally free does not descend along faithfully flat ring maps. The
+> direct sum `⨁ k, pointIdeal k` over the coordinate ring of a countable product of circles over `ℚ`
+> is a countable direct sum of rank one locally free modules which is projective and not locally
+> free (Stacks 05WL), and it becomes free over a faithfully flat algebra.
 
 ```lean
-theorem exists_faithfullyFlat_free_baseChange_not_isLocallyFree {R : Type u} [CommRing R]
-    (L : ℕ → Type u) [∀ n, AddCommGroup (L n)] [∀ n, Module R (L n)]
-    (hL : ∀ n, Module.IsFiniteLocallyFreeOfRank R (L n) 1)
-    (hM : ¬ Module.IsLocallyFree R (⨁ n, L n)) :
-    ∃ (S : Type u) (_ : CommRing S) (_ : Algebra R S),
-      Module.Projective R (⨁ n, L n) ∧ Module.FaithfullyFlat R S ∧
-        Module.Free S (S ⊗[R] (⨁ n, L n)) ∧ ¬ Module.IsLocallyFree R (⨁ n, L n)
+theorem exists_ring_faithfullyFlat_free_baseChange_not_isLocallyFree :
+    ∃ (R : Type) (_ : CommRing R) (L : ℕ → Type) (_ : ∀ n, AddCommGroup (L n))
+      (_ : ∀ n, Module R (L n)),
+      (∀ n, Module.IsFiniteLocallyFreeOfRank R (L n) 1) ∧ ¬ Module.IsLocallyFree R (⨁ n, L n) ∧
+        ∃ (S : Type) (_ : CommRing S) (_ : Algebra R S), Module.Projective R (⨁ n, L n) ∧
+          Module.FaithfullyFlat R S ∧ Module.Free S (S ⊗[R] (⨁ n, L n))
 ```
 
 ## Tag 05B3, a lemma
 
 [Tag 05B3](https://stacks.math.columbia.edu/tag/05B3) in the Stacks Project.
 
-**`AlgebraicGeometry.isFiniteType_iff_pushforward_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Finiteness/PushforwardFinite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Finiteness/PushforwardFinite.lean#L93).
+**`AlgebraicGeometry.isFiniteType_iff_pushforward_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Finiteness/PushforwardFinite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Finiteness/PushforwardFinite.lean#L93).
 
 > A quasi-coherent module on the source of a finite morphism is of finite type if and only if
 > its direct image is of finite type.
@@ -185,7 +185,7 @@ theorem isFiniteType_iff_pushforward_isFiniteType (f : X ⟶ Y) [IsFinite f] (F 
     F.IsFiniteType ↔ ((Scheme.Modules.pushforward f).obj F).IsFiniteType
 ```
 
-**`Stacks.AlgebraicGeometry.FinitePushforwardCoherent.isFiniteType_pushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FinitePushforwardCoherent/Basic.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FinitePushforwardCoherent/Basic.lean#L147).
+**`Stacks.AlgebraicGeometry.FinitePushforwardCoherent.isFiniteType_pushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FinitePushforwardCoherent/Basic.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FinitePushforwardCoherent/Basic.lean#L147).
 
 > **[Stacks, Tag 05B3].** A quasi-coherent module on the source of a finite morphism is of
 > finite type if and only if its direct image is of finite type.
@@ -199,7 +199,7 @@ theorem isFiniteType_pushforward_iff [IsFinite f] [F.IsQuasicoherent] :
 
 [Tag 05B4](https://stacks.math.columbia.edu/tag/05B4) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitePresentation_iff_pushforward_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FinitePushforward.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FinitePushforward.lean#L69).
+**`AlgebraicGeometry.isFinitePresentation_iff_pushforward_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FinitePushforward.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FinitePushforward.lean#L69).
 
 > A quasi-coherent module on the source of a finite morphism of finite presentation is
 > finitely presented if and only if its direct image is finitely presented.
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.7, Tag 05AY](https://stacks.math.columbia.edu/tag/05AY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

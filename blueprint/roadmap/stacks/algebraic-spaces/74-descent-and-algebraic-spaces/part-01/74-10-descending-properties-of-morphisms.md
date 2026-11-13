@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.10 Descending properties of morphisms
 
-Section 74.10 of the Stacks Project, [Tag 03YG](https://stacks.math.columbia.edu/tag/03YG). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.10 of the Stacks Project, [Tag 03YG](https://stacks.math.columbia.edu/tag/03YG). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03YH, a definition
 
 [Tag 03YH](https://stacks.math.columbia.edu/tag/03YH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Topology`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L375). The attribute's comment: “the five topologies”.
+**`AlgebraicGeometry.Space.Topology`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L375). The attribute's comment: “the five topologies”.
 
 > **Stacks 03YH.** The topologies for which locality on the base of a property of morphisms
 > of algebraic spaces is considered.
@@ -23,7 +23,7 @@ Section 74.10 of the Stacks Project, [Tag 03YG](https://stacks.math.columbia.edu
 inductive Topology
 ```
 
-**`AlgebraicGeometry.Space.Topology.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L392). The attribute's comment: “covering families”.
+**`AlgebraicGeometry.Space.Topology.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L392). The attribute's comment: “covering families”.
 
 > **Stacks 03YH.** A family of morphisms of algebraic spaces over `S` with common target is
 > a covering family for the topology `τ` when its source and target presheaves are algebraic
@@ -36,7 +36,7 @@ abbrev Topology.IsCovering (τ : Topology)
     (Yi : I → (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (g : ∀ i, Yi i ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.Topology.precoverage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L410). The attribute's comment: “the precoverage”.
+**`AlgebraicGeometry.Space.Topology.precoverage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L410). The attribute's comment: “the precoverage”.
 
 > **Stacks 03YH.** The precoverage on the category of algebraic spaces over `S` presented by
 > the `τ`-covering families. A property `P` of morphisms of algebraic spaces is local on the
@@ -51,13 +51,13 @@ def Topology.precoverage (τ : Topology)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L418) (StacksFrontier): “locality on the base”. References: SGA 3 IV (4.6.3), “(e\_T)”; SGA 3 VIB (2.0), “b)”.
+- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L418) (StacksFrontier): “locality on the base”. References: SGA 3 IV (4.6.3), “(e\_T)”; SGA 3 VIB (2.0), “b)”.
 
 ## Tag 06EM, a lemma
 
 [Tag 06EM](https://stacks.math.columbia.edu/tag/06EM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.prop_fiberProduct_fst_of_isLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/LocalAtTarget.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/LocalAtTarget.lean#L121).
+**`AlgebraicGeometry.Space.prop_fiberProduct_fst_of_isLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/LocalAtTarget.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/LocalAtTarget.lean#L123).
 
 > A property of morphisms of algebraic spaces over `S` which is local on the base for `τ` is
 > inherited by the base change along any morphism of the kind belonging to `τ`.
@@ -84,7 +84,7 @@ theorem prop_fiberProduct_fst_of_isLocalAtTarget
 
 [Tag 06R2](https://stacks.math.columbia.edu/tag/06R2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.largestOpenSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L471). The attribute's comment: “existence and maximality”.
+**`AlgebraicGeometry.Space.largestOpenSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L472). The attribute's comment: “existence and maximality”.
 
 > **Stacks 06R2**, existence and maximality. For a property `P` of morphisms of algebraic
 > spaces over `S` which is local on the target for a topology `τ` other than the fpqc topology,
@@ -102,7 +102,7 @@ noncomputable def largestOpenSubspace (τ : Topology) (hτ : τ ≠ .fpqc)
           HasPropertyOnOpen B S hS P f V → V.1 ≤ W.1}
 ```
 
-**`AlgebraicGeometry.Space.factorsThrough_largestOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L499). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.factorsThrough_largestOpenSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L500). The attribute's comment: “part (1)”.
 
 > **Stacks 06R2**, part (1). A morphism `g : Y' ⟶ Y` which `τ` admits as a member of a
 > covering family and along which the base change of `f` has `P` factors through the largest open
@@ -118,7 +118,7 @@ theorem factorsThrough_largestOpenSubspace (τ : Topology) (hτ : τ ≠ .fpqc)
       h ≫ openInclusion B S hS (largestOpenSubspace B S hS τ hτ P f).1 = g
 ```
 
-**`AlgebraicGeometry.Space.largestOpenSubspace_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L519). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.largestOpenSubspace_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L520). The attribute's comment: “part (2)”.
 
 > **Stacks 06R2**, part (2). The largest open locus of a base change of `f` along a morphism
 > `g` which `τ` admits as a member of a covering family is the inverse image of the largest open
@@ -134,7 +134,7 @@ theorem largestOpenSubspace_baseChange (τ : Topology) (hτ : τ ≠ .fpqc)
       ((largestOpenSubspace B S hS τ hτ P f).1.1).preimage g.hom
 ```
 
-**`AlgebraicGeometry.Space.largestOpenSubspace_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L568). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.largestOpenSubspace_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargestOpenLocus.lean#L569). The attribute's comment: “part (3)”.
 
 > **Stacks 06R2**, part (3). The largest open locus of the base change of `f` along a member
 > of a `τ`-covering of its target is the inverse image of the largest open locus of `f`.
@@ -154,7 +154,7 @@ theorem largestOpenSubspace_covering (τ : Topology) (hτ : τ ≠ .fpqc)
 
 [Tag 041J](https://stacks.math.columbia.edu/tag/041J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalAtTarget_fpqc_of_affineDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcLocalAtTarget.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcLocalAtTarget.lean#L641).
+**`AlgebraicGeometry.Space.isLocalAtTarget_fpqc_of_affineDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcLocalAtTarget.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcLocalAtTarget.lean#L641).
 
 > An affine-local morphism property which descends along surjective flat
 > maps of affine schemes and respects finite coproducts is fpqc local on the
@@ -201,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.10, Tag 03YG](https://stacks.math.columbia.edu/tag/03YG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

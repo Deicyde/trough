@@ -8,7 +8,7 @@ proof: formalized
 
 # Ergodic theory: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html).
 
 Ergodic theory studies measure-preserving transformations and their statistical behaviour: ergodic averages, recurrence, mixing and the structure of measure-preserving actions.
 
@@ -29,7 +29,7 @@ segments, using an averaging argument to obtain a positive-measure family of suc
 
 - H. Furstenberg, J. Analyse Math. 31 (1977) and Recurrence in Ergodic Theory (1981); Lean states one-transformation arithmetic-progression k-term intersection form without ergodicity hypothesis.
 
-Formalized by `MathlibExt.Dynamics.Ergodic.MultipleRecurrenceWanted.furstenberg_multipleRecurrence`, a theorem declared in [MathlibExt/Dynamics/Ergodic/MultipleRecurrence.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Dynamics/Ergodic/MultipleRecurrence.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html#furstenberg-multiple-recurrence).
+Formalized by `MathlibExt.Dynamics.Ergodic.MultipleRecurrenceWanted.furstenberg_multipleRecurrence`, a theorem declared in [MathlibExt/Dynamics/Ergodic/MultipleRecurrence.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Dynamics/Ergodic/MultipleRecurrence.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html#furstenberg-multiple-recurrence).
 
 ## Krylov–Bogolyubov theorem
 
@@ -41,7 +41,7 @@ $\mu$ on the Borel $\sigma$-algebra of $X$ whose pushforward under $T$ equals $\
 
 - N. M. Krylov and N. N. Bogolyubov, Ann. Math. 38 (1937), 65-113, DOI 10.2307/1968511.
 
-Formalized by `MathlibExt.Dynamics.Ergodic.KrylovBogolyubovWanted.krylov_bogolyubov`, a theorem declared in [MathlibExt/Dynamics/Ergodic/KrylovBogolyubov.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Dynamics/Ergodic/KrylovBogolyubov.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html#krylov-bogolyubov).
+Formalized by `MathlibExt.Dynamics.Ergodic.KrylovBogolyubovWanted.krylov_bogolyubov`, a theorem declared in [MathlibExt/Dynamics/Ergodic/KrylovBogolyubov.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Dynamics/Ergodic/KrylovBogolyubov.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html#krylov-bogolyubov).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ergodic theory](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/ergodic-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/ergodic-theory)

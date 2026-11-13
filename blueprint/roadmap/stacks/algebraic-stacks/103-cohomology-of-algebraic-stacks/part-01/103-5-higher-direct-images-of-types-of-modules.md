@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.5 Higher direct images of types of modules
 
-Section 103.5 of the Stacks Project, [Tag 076Y](https://stacks.math.columbia.edu/tag/076Y). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 103.5 of the Stacks Project, [Tag 076Y](https://stacks.math.columbia.edu/tag/076Y). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 076Z, a lemma
 
 [Tag 076Z](https://stacks.math.columbia.edu/tag/076Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.smoothLocalHigherDirectImageCriterion`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageRuleSpectralSequence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageRuleSpectralSequence.lean#L114). The attribute's comment: “the whole statement: every rule satisfying the source's four hypotheses, every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree; hypothesis (3) is read for the families indexed in a universe containing u, which the source's hypothesis implies, so the statement is no weaker than the source's”.
+**`AlgebraicGeometry.Stack.smoothLocalHigherDirectImageCriterion`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageRuleSpectralSequence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageRuleSpectralSequence.lean#L114). The attribute's comment: “the whole statement: every rule satisfying the source's four hypotheses, every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree; hypothesis (3) is read for the families indexed in a universe containing u, which the source's hypothesis implies, so the statement is no weaker than the source's”.
 
 > **Stacks 076Z.** Let `M` be a rule assigning to a category fibred in groupoids over `S` a
 > predicate on the modules on its étale site. If `M` cuts out a weak Serre subcategory everywhere,
@@ -33,7 +33,7 @@ Section 103.5 of the Stacks Project, [Tag 076Y](https://stacks.math.columbia.edu
 alias smoothLocalHigherDirectImageCriterion
 ```
 
-**`AlgebraicGeometry.Stack.smoothLocalHigherDirectImageCriterion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SmoothLocalHigherDirectImageCriterionProof.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SmoothLocalHigherDirectImageCriterionProof.lean#L85). The attribute's comment: “the whole statement: every rule satisfying the source's four hypotheses, every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree; hypothesis (3) is read for the families indexed in a universe containing u, which the source's hypothesis implies, so the statement is no weaker than the source's”.
+**`AlgebraicGeometry.Stack.smoothLocalHigherDirectImageCriterion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SmoothLocalHigherDirectImageCriterionProof.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SmoothLocalHigherDirectImageCriterionProof.lean#L85). The attribute's comment: “the whole statement: every rule satisfying the source's four hypotheses, every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree; hypothesis (3) is read for the families indexed in a universe containing u, which the source's hypothesis implies, so the statement is no weaker than the source's”.
 
 > Let `M` be a rule on the modules on the étale sites of the algebraic stacks over `S` such that
 > (1) it cuts out a weak Serre subcategory on every algebraic stack, (2) it is preserved by inverse
@@ -56,7 +56,7 @@ theorem smoothLocalHigherDirectImageCriterion_unconditional :
 
 [Tag 0770](https://stacks.math.columbia.edu/tag/0770) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.higherDirectImage_mem_of_quasiCompact_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFppfWeakSerre.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFppfWeakSerre.lean#L486). The attribute's comment: “the reduction of the quasi-compact quasi-separated case to the affine case, which is the source's own clause (4), from clauses (1) to (4) together with two hypothesised prerequisites, the base-change isomorphisms of Stacks 075H and the fppf relative Cech pushforward spectral sequence of Stacks 072G part (2)(b)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.higherDirectImage_mem_of_quasiCompact_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFppfWeakSerre.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFppfWeakSerre.lean#L486). The attribute's comment: “the reduction of the quasi-compact quasi-separated case to the affine case, which is the source's own clause (4), from clauses (1) to (4) together with two hypothesised prerequisites, the base-change isomorphisms of Stacks 075H and the fppf relative Cech pushforward spectral sequence of Stacks 072G part (2)(b)”.
 
 > **Stacks 0770.** Let `M` be a rule which associates to every algebraic stack `𝒳` over `S` a
 > subcategory `M_𝒳` of `Mod(𝒪_𝒳)`, the modules on the fppf site of `𝒳`, such that
@@ -98,7 +98,7 @@ theorem higherDirectImage_mem_of_quasiCompact_quasiSeparated (M : ModuleRule.{u,
     M 𝒴 ((fppfHigherDirectImage B S hS f i).obj F)
 ```
 
-**`AlgebraicGeometry.Stack.StackModuleRule.preservesHigherDirectImages_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalRule.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalRule.lean#L153). The attribute's comment: “the whole statement: every rule satisfying (1)-(4), every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree, higher direct images in the fppf topology; (1) read as M\_X weak Serre (the source's O\_X is a typo), (3) asked for families indexed by Type u only”.
+**`AlgebraicGeometry.Stack.StackModuleRule.preservesHigherDirectImages_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalRule.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalRule.lean#L153). The attribute's comment: “the whole statement: every rule satisfying (1)-(4), every quasi-compact quasi-separated 1-morphism of algebraic stacks and every degree, higher direct images in the fppf topology; (1) read as M\_X weak Serre (the source's O\_X is a typo), (3) asked for families indexed by Type u only”.
 
 > **Stacks 0770.** Let `M` be a rule which associates to every algebraic stack `𝒳` over `S` a
 > property `M_𝒳` of the sheaves of `𝒪_𝒳`-modules on the fppf site of `𝒳` such that
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.5, Tag 076Y](https://stacks.math.columbia.edu/tag/076Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

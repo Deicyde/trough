@@ -8,7 +8,7 @@ proof: formalized
 
 # Fibonacci p-numbers
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html).
 
 ## Fibonacci p-numbers
 
@@ -20,28 +20,28 @@ $1 \le r \le p$, and $F_p(r) = F_p(r-1) + F_p(r-p-1)$ for $r > p$.
 
 - Lines 79-85. From <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kuhapatanakul/kuha13.tex>. Excludes the downstream generalized Leonardo identity and the separate finite-sum identity.
 
-Formalized by `MetaMathlibExt.fibonacciP`, a definition declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p).
+Formalized by `MetaMathlibExt.fibonacciP`, a definition declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p).
 
 ## Zeroth Fibonacci p-number
 
 For every natural number $p$, the Fibonacci $p$-number
 $F_p(0)$ equals $0$.
 
-Formalized by `MetaMathlibExt.fibonacciP_zero`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-zero).
+Formalized by `MetaMathlibExt.fibonacciP_zero`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-zero).
 
 ## Initial Fibonacci p-numbers equal one
 
 For all natural numbers $p$ and $r$ with
 $1 \le r \le p$, the Fibonacci $p$-number $F_p(r)$ equals $1$.
 
-Formalized by `MetaMathlibExt.fibonacciP_eq_one`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-eq-one).
+Formalized by `MetaMathlibExt.fibonacciP_eq_one`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-eq-one).
 
 ## Recurrence for Fibonacci p-numbers
 
 For all natural numbers $p$ and $r$ with $p < r$,
 the Fibonacci $p$-numbers satisfy $F_p(r) = F_p(r-1) + F_p(r-p-1)$.
 
-Formalized by `MetaMathlibExt.fibonacciP_rec`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-rec).
+Formalized by `MetaMathlibExt.fibonacciP_rec`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-rec).
 
 ## Fibonacci 1-numbers are the Fibonacci numbers
 
@@ -49,7 +49,7 @@ For every natural number $n$, the
 Fibonacci $1$-number $F_1(n)$ equals the $n$-th Fibonacci number $f_n$, where $f_0 = 0$,
 $f_1 = 1$ and $f_{k+2} = f_{k+1} + f_k$.
 
-Formalized by `MetaMathlibExt.fibonacciP_one`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-one).
+Formalized by `MetaMathlibExt.fibonacciP_one`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#fibonacci-p-one).
 
 ## Honsberger identity for Fibonacci p-numbers
 
@@ -70,7 +70,7 @@ base case.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kuhapatanakul/kuha13.tex>, lines 425-449. Excludes the downstream generalized Leonardo identity and the separate finite-sum identity. Definition from lines 79-85.
 
-Formalized by `MetaMathlibExt.honsberger_fibonacciP`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#honsberger-fibonacci-p).
+Formalized by `MetaMathlibExt.honsberger_fibonacciP`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/HonsbergerFibonacciP.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html#honsberger-fibonacci-p).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fibonacci p-numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/fibonacci-p-numbers)

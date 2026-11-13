@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.36 Geometric regularity
 
-Section 15.36 of the Stacks Project, [Tag 07E4](https://stacks.math.columbia.edu/tag/07E4). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.36 of the Stacks Project, [Tag 07E4](https://stacks.math.columbia.edu/tag/07E4). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07E5, a proposition
 
 [Tag 07E5](https://stacks.math.columbia.edu/tag/07E5) in the Stacks Project.
 
-**`geometricallyRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean, line 886](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean#L886). References: EGA 0 (22.5.8), “b) ⇔ b'), char p”.
+**`geometricallyRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean, line 888](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean#L888). References: EGA 0 (22.5.8), “b) ⇔ b'), char p”.
 
 > Let `A` be a Noetherian local algebra over a field `k` of positive characteristic `p`.
 > The following are equivalent:
@@ -58,7 +58,7 @@ public theorem geometricallyRegular_tfae
 
 [Tag 07E6](https://stacks.math.columbia.edu/tag/07E6) in the Stacks Project.
 
-**`flat_localization_and_regular_quotient_of_basis_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean, line 1206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean#L1206).
+**`flat_localization_and_regular_quotient_of_basis_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean, line 1208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/PurelyInseparableCriterion.lean#L1208).
 
 > Let `A` be a Noetherian local algebra over a field `k` of positive characteristic, and assume
 > that `A` is geometrically regular over `k`. Let `F` be a finitely generated intermediate field of
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.36, Tag 07E4](https://stacks.math.columbia.edu/tag/07E4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Whitt's generalized Catalan numbers
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html).
 
 ## Whitt's generalized Catalan numbers
 
@@ -25,7 +25,7 @@ $\alpha = 2$ and $n \ge 1$ these are the terms of OEIS A064062.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)`, quoting W. Whitt, J. Integer Seq. 14 (2011)).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan`, a definition declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan`, a definition declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan).
 
 ## Whitt's generalized Catalan numbers in the source's indexing
 
@@ -38,7 +38,7 @@ $$C(\alpha, n + 1) = \sum_{k=0}^{n} \left(1 - \frac{k}{n+1}\right) \binom{n+k}{k
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)`).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-succ).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-succ).
 
 ## Whitt's generalized Catalan number at zero
 
@@ -49,7 +49,7 @@ generalized Catalan number $C(\alpha, 0)$ equals $0$, being an empty sum.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)`).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan_zero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-zero).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan_zero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-zero).
 
 ## Whitt's generalized Catalan number at one
 
@@ -60,7 +60,7 @@ generalized Catalan number $C(\alpha, 1)$ equals $1$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)` at `n = 0`).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan_one`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-one).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan_one`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-one).
 
 ## Whitt's generalized Catalan numbers with parameter zero
 
@@ -72,7 +72,7 @@ defining sum survives.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (definition of `C(α, n+1)`).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan_zero_left`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-zero-left).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan_zero_left`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-zero-left).
 
 ## First values of Whitt's generalized Catalan numbers with parameter two
 
@@ -84,7 +84,7 @@ $C(2, 3) = 13$ and $C(2, 4) = 67$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 5 (OEIS A064062).
 
-Formalized by `MetaMathlibExt.whittGeneralizedCatalan_two_small`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-two-small).
+Formalized by `MetaMathlibExt.whittGeneralizedCatalan_two_small`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/WhittGeneralizedCatalan.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html#whitt-generalized-catalan-two-small).
 
 ## Depends on
 
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Whitt's generalized Catalan numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/whitt-s-generalized-catalan-numbers)

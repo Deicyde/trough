@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.45 Permanence of properties under étale maps
 
-Section 15.45 of the Stacks Project, [Tag 0AGY](https://stacks.math.columbia.edu/tag/0AGY). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.45 of the Stacks Project, [Tag 0AGY](https://stacks.math.columbia.edu/tag/0AGY). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AGY, the section
 
 [Tag 0AGY](https://stacks.math.columbia.edu/tag/0AGY) in the Stacks Project.
 
-**`RingHom.Etale.ringKrullDim_localization_atPrime_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Height.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/Height.lean#L95). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/Height.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/Height.lean#L103). The attribute's comment: “Lemma 07QP of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `dim A_𝔭 = dim B_𝔮`.”. References: EGA IV (17.6.4), “affine/ring case”; EGA IV (6.1.3), “special case”.
+**`RingHom.Etale.ringKrullDim_localization_atPrime_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Height.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/Height.lean#L95). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/Height.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/Height.lean#L103). The attribute's comment: “Lemma 07QP of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `dim A_𝔭 = dim B_𝔮`.”. References: EGA IV (17.6.4), “affine/ring case”; EGA IV (6.1.3), “special case”.
 
 > Stacks Tag 07QP. For an étale ring map `f : A →+* B`, if `q` is a prime of `B` lying over the
 > prime `p` of `A`, then the Krull dimensions of the localizations `A_p` and `B_q` agree.
@@ -26,7 +26,7 @@ theorem RingHom.Etale.ringKrullDim_localization_atPrime_eq {A B : Type*} [CommRi
     ringKrullDim (Localization.AtPrime p) = ringKrullDim (Localization.AtPrime q)
 ```
 
-**`isNoetherianRing_localization_iff_of_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L100). The attribute's comment: “Lemma 0AGZ of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `A_𝔭` is Noetherian if and only if `B_𝔮` is.”.
+**`isNoetherianRing_localization_iff_of_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L100). The attribute's comment: “Lemma 0AGZ of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `A_𝔭` is Noetherian if and only if `B_𝔮` is.”.
 
 > For an étale map, the local rings at primes lying over one another are Noetherian
 > simultaneously.
@@ -39,7 +39,7 @@ public lemma isNoetherianRing_localization_iff_of_etale
       IsNoetherianRing (Localization.AtPrime q)
 ```
 
-**`isRegularLocalRing_localization_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L132). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L161). The attribute's comment: “Lemma 0AH0 of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `A_𝔭` is regular if and only if `B_𝔮` is.”.
+**`isRegularLocalRing_localization_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L132). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L161). The attribute's comment: “Lemma 0AH0 of the section: for an étale ring map `A → B` and a prime `𝔮 ⊂ B` lying over `𝔭 ⊂ A`, `A_𝔭` is regular if and only if `B_𝔮` is.”.
 
 > Local rings at corresponding primes under an étale ring map are regular simultaneously.
 
@@ -51,7 +51,7 @@ public theorem isRegularLocalRing_localization_iff_of_etale
       IsRegularLocalRing (Localization.AtPrime q)
 ```
 
-**`exists_ringEquiv_pi_isDedekindDomain_and_isDiscreteValuationRing_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L277). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L288). The attribute's comment: “Lemma 0AP2 of the section, its localization clause in corrected form: an étale algebra `B` over a Dedekind domain `A` is a finite product of Dedekind domains, and `B_𝔮` is a discrete valuation ring for every maximal ideal `𝔮 ⊂ B` with `𝔮 ∩ A ≠ (0)`. As written the clause asserts this for every maximal ideal, which is false: at a prime over `(0)` the local ring has dimension `0` by Lemma 07QP, see `not_isDiscreteValuationRing_localization_of_etale_of_comap_eq_bot` and the instance `not_forall_isDiscreteValuationRing_localization_rat` for the étale map `ℚ → ℚ`. The source's proof, through Lemmas 07QP, 0AH0 and Algebra 00PD, establishes the corrected clause.”.
+**`exists_ringEquiv_pi_isDedekindDomain_and_isDiscreteValuationRing_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L277). The tag is given by the `attribute` command at [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L288). The attribute's comment: “Lemma 0AP2 of the section, its localization clause in corrected form: an étale algebra `B` over a Dedekind domain `A` is a finite product of Dedekind domains, and `B_𝔮` is a discrete valuation ring for every maximal ideal `𝔮 ⊂ B` with `𝔮 ∩ A ≠ (0)`. As written the clause asserts this for every maximal ideal, which is false: at a prime over `(0)` the local ring has dimension `0` by Lemma 07QP, see `not_isDiscreteValuationRing_localization_of_etale_of_comap_eq_bot` and the instance `not_forall_isDiscreteValuationRing_localization_rat` for the étale map `ℚ → ℚ`. The source's proof, through Lemmas 07QP, 0AH0 and Algebra 00PD, establishes the corrected clause.”.
 
 > An étale algebra over a Dedekind domain is a finite product of Dedekind domains, and its
 > localizations at maximal ideals with nonzero contraction to the base are discrete valuation
@@ -72,7 +72,7 @@ public theorem exists_ringEquiv_pi_isDedekindDomain_and_isDiscreteValuationRing_
 
 [Tag 0AGZ](https://stacks.math.columbia.edu/tag/0AGZ) in the Stacks Project.
 
-**`isNoetherianRing_localization_iff_of_flat_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L67).
+**`isNoetherianRing_localization_iff_of_flat_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L67).
 
 > For a flat finite type map, the local rings at primes lying over one another are Noetherian
 > simultaneously.
@@ -90,7 +90,7 @@ public theorem isNoetherianRing_localization_iff_of_flat_of_finiteType
 
 [Tag 07QP](https://stacks.math.columbia.edu/tag/07QP) in the Stacks Project.
 
-**`RingHom.Etale.ringKrullDim_localization_atPrime_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Height.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/Height.lean#L95). References: EGA IV (17.6.4), “affine/ring case”; EGA IV (6.1.3), “special case”.
+**`RingHom.Etale.ringKrullDim_localization_atPrime_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Height.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/Height.lean#L95). References: EGA IV (17.6.4), “affine/ring case”; EGA IV (6.1.3), “special case”.
 
 > Stacks Tag 07QP. For an étale ring map `f : A →+* B`, if `q` is a prime of `B` lying over the
 > prime `p` of `A`, then the Krull dimensions of the localizations `A_p` and `B_q` agree.
@@ -106,7 +106,7 @@ theorem RingHom.Etale.ringKrullDim_localization_atPrime_eq {A B : Type*} [CommRi
 
 [Tag 0AH0](https://stacks.math.columbia.edu/tag/0AH0) in the Stacks Project.
 
-**`isRegularLocalRing_localization_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L132).
+**`isRegularLocalRing_localization_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L132).
 
 > Local rings at corresponding primes under an étale ring map are regular simultaneously.
 
@@ -122,7 +122,7 @@ public theorem isRegularLocalRing_localization_iff_of_etale
 
 [Tag 0AP2](https://stacks.math.columbia.edu/tag/0AP2) in the Stacks Project.
 
-**`exists_ringEquiv_pi_isDedekindDomain_and_isDiscreteValuationRing_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L277).
+**`exists_ringEquiv_pi_isDedekindDomain_and_isDiscreteValuationRing_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PermanenceOfProperties.lean#L277).
 
 > An étale algebra over a Dedekind domain is a finite product of Dedekind domains, and its
 > localizations at maximal ideals with nonzero contraction to the base are discrete valuation
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.45, Tag 0AGY](https://stacks.math.columbia.edu/tag/0AGY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

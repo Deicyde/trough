@@ -7,7 +7,7 @@ statement: formalized
 
 # Packings and coverings: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/index.html).
 
 Optimal arrangements of congruent bodies in space and the smallest sets or fewest translates needed to cover given families of shapes.
 
@@ -24,7 +24,7 @@ The map $\varphi$ is not required to be invertible; a degenerate $\varphi$ would
 
 -. Problem `klartag_packing` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.KlartagPackingWanted.Geometry.KlartagPacking.klartag_packing` is written with `theorem_wanted` in [WantedExt/Geometry/KlartagPackingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/KlartagPackingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/index.html#klartag-packing).
+Stated but not proved: `MathlibExt.Geometry.KlartagPackingWanted.Geometry.KlartagPacking.klartag_packing` is written with `theorem_wanted` in [WantedExt/Geometry/KlartagPackingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/KlartagPackingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/index.html#klartag-packing).
 
 ## Depends on
 
@@ -33,4 +33,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Packings and coverings](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/packings-and-coverings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/packings-and-coverings)

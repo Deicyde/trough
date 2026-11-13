@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.SimplicialObject.SubobjectSplitting, CategoryTheory.SimplicialObject.Truncated.SubobjectSplitting, SSet.Splitting.existsUnique_equiv_nonDegenerate, SSet.injective_of_injective_on_nonDegenerate, SSet.surjective_of_surjective_on_nonDegenerate, SSet.bijective_of_bijective_on_nonDegenerate, SSet.skeleton_obj_eq_top_and_hasDimensionLE, CategoryTheory.SimplicialObject.exists_splitting_range_ι_eq_iInf_ker_δ
+lean: CategoryTheory.SimplicialObject.SubobjectSplitting, CategoryTheory.SimplicialObject.Truncated.SubobjectSplitting, SSet.exists_splitting_and_forall_existsUnique_equiv_nonDegenerate, SSet.injective_of_injective_on_nonDegenerate, SSet.surjective_of_surjective_on_nonDegenerate, SSet.bijective_of_bijective_on_nonDegenerate, SSet.skeleton_obj_eq_top_and_hasDimensionLE, CategoryTheory.SimplicialObject.exists_splitting_range_ι_eq_iInf_ker_δ
 statement: formalized
 proof: formalized
 ---
 
 # 14.18 Splitting simplicial objects
 
-Section 14.18 of the Stacks Project, [Tag 017O](https://stacks.math.columbia.edu/tag/017O). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.18 of the Stacks Project, [Tag 017O](https://stacks.math.columbia.edu/tag/017O). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 017P, a definition
 
 [Tag 017P](https://stacks.math.columbia.edu/tag/017P) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.SubobjectSplitting`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L88). The attribute's comment: “the definition for full simplicial objects; a monomorphism represents each source subobject, and `Splitting.isColimit'` is exactly the displayed coproduct isomorphism”.
+**`CategoryTheory.SimplicialObject.SubobjectSplitting`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L95). The attribute's comment: “the definition for full simplicial objects; a monomorphism represents each source subobject, and `Splitting.isColimit'` is exactly the displayed coproduct isomorphism”.
 
 > **Stacks 017P**, for full simplicial objects.
 > A splitting by subobjects is a Mathlib splitting whose structure maps `N(U_n) ⟶ U_n` are
@@ -24,7 +24,7 @@ Section 14.18 of the Stacks Project, [Tag 017O](https://stacks.math.columbia.edu
 structure SubobjectSplitting (X : SimplicialObject C) extends X.Splitting
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.SubobjectSplitting`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L131). The attribute's comment: “the definition for truncated simplicial objects; the index category is the surjections `[n] → [m]`, automatically with `m ≤ n ≤ r`”.
+**`CategoryTheory.SimplicialObject.Truncated.SubobjectSplitting`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L138). The attribute's comment: “the definition for truncated simplicial objects; the index category is the surjections `[n] → [m]`, automatically with `m ≤ n ≤ r`”.
 
 > **Stacks 017P**, for truncated simplicial objects.
 > A splitting of an `r`-truncated simplicial object consists of subobjects in every degree at most
@@ -38,23 +38,27 @@ structure SubobjectSplitting {r : ℕ} (X : SimplicialObject.Truncated C r)
 
 [Tag 017R](https://stacks.math.columbia.edu/tag/017R) in the Stacks Project.
 
-**`SSet.Splitting.existsUnique_equiv_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L592).
+**`SSet.exists_splitting_and_forall_existsUnique_equiv_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/Splitting.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/Splitting.lean#L38). The attribute's comment: “existence (the canonical splitting `SSet.splitting`) and uniqueness: every splitting's `ι n` is a bijection onto the nondegenerate `n`-simplices”.
 
-> **Stacks 017R**.
-> If `s` is a splitting of a simplicial set `X`, then for every `n` there is a unique bijection
-> between `s.N n` and the set of nondegenerate `n`-simplices of `X` compatible with the maps `s.ι n`
-> and `Subtype.val` to `X _⦋n⦌`.
+> **Stacks 017R**. A simplicial set `X` has a unique splitting with `N(X_m)` equal to the set of
+> nondegenerate `m`-simplices: there is a splitting `s` of `X` (Mathlib's `SSet.splitting`, whose
+> `N m` is literally `X.nonDegenerate m` and whose `ι m` is the inclusion), and every splitting `s`
+> of `X` identifies `s.N n`, through `s.ι n`, with the nondegenerate `n`-simplices, by a unique
+> compatible bijection.
 
 ```lean
-public theorem Splitting.existsUnique_equiv_nonDegenerate (s : X.Splitting) (n : ℕ) :
-    ∃! e : s.N n ≃ X.nonDegenerate n, ∀ x, (e x : X _⦋n⦌) = s.ι n x
+public theorem exists_splitting_and_forall_existsUnique_equiv_nonDegenerate (X : SSet.{u}) :
+    (∃ s : X.Splitting, ∀ n, ∃! e : s.N n ≃ X.nonDegenerate n,
+      ∀ x, (e x : X _⦋n⦌) = s.ι n x) ∧
+    ∀ (s : X.Splitting) (n : ℕ), ∃! e : s.N n ≃ X.nonDegenerate n,
+      ∀ x, (e x : X _⦋n⦌) = s.ι n x
 ```
 
 ## Tag 017S, a lemma
 
 [Tag 017S](https://stacks.math.columbia.edu/tag/017S) in the Stacks Project.
 
-**`SSet.injective_of_injective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L65). The attribute's comment: “(1)”.
+**`SSet.injective_of_injective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L65). The attribute's comment: “(1)”.
 
 > **Stacks 017S** (part 1).
 > Let `f : U ⟶ V` be a morphism of simplicial sets sending nondegenerate simplices to
@@ -68,7 +72,7 @@ theorem injective_of_injective_on_nonDegenerate
     ∀ (n : ℕ), Function.Injective (f.app (Opposite.op ⦋n⦌))
 ```
 
-**`SSet.surjective_of_surjective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L98). The attribute's comment: “(2)”.
+**`SSet.surjective_of_surjective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L98). The attribute's comment: “(2)”.
 
 > **Stacks 017S** (part 2).
 > Let `f : U ⟶ V` be a morphism of simplicial sets whose induced map on nondegenerate simplices is
@@ -81,7 +85,7 @@ theorem surjective_of_surjective_on_nonDegenerate
     ∀ (n : ℕ), Function.Surjective (f.app (Opposite.op ⦋n⦌))
 ```
 
-**`SSet.bijective_of_bijective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L113). The attribute's comment: “(3)”.
+**`SSet.bijective_of_bijective_on_nonDegenerate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/NonDegenerateSimplices.lean#L113). The attribute's comment: “(3)”.
 
 > **Stacks 017S** (part 3).
 > Let `f : U ⟶ V` be a morphism of simplicial sets sending nondegenerate simplices to
@@ -100,7 +104,7 @@ theorem bijective_of_bijective_on_nonDegenerate
 
 [Tag 017T](https://stacks.math.columbia.edu/tag/017T) in the Stacks Project.
 
-**`SSet.skeleton_obj_eq_top_and_hasDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 967](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L967).
+**`SSet.skeleton_obj_eq_top_and_hasDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 967](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L967).
 
 > **Stacks 017T**.
 > The sub-simplicial set generated by the simplices of `X` in degrees at most `n` is
@@ -117,7 +121,7 @@ public theorem skeleton_obj_eq_top_and_hasDimensionLE (X : SSet.{u}) (n : ℕ) :
 
 [Tag 017U](https://stacks.math.columbia.edu/tag/017U) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.exists_splitting_range_ι_eq_iInf_ker_δ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L504).
+**`CategoryTheory.SimplicialObject.exists_splitting_range_ι_eq_iInf_ker_δ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L513).
 
 > **Stacks 017U**.
 > Every simplicial abelian group `U` has a splitting whose nondegenerate part is `N(U_0) = U_0` and
@@ -139,7 +143,7 @@ public theorem exists_splitting_range_ι_eq_iInf_ker_δ :
 
 [Tag 017V](https://stacks.math.columbia.edu/tag/017V) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.exists_splittingFunctor_mk_ι_eq_inf_kernelSubobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L433).
+**`CategoryTheory.SimplicialObject.exists_splittingFunctor_mk_ι_eq_inf_kernelSubobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L442).
 
 > **Stacks 017V**.
 > Every simplicial object `U` of an abelian category `A` has a splitting whose nondegenerate parts
@@ -162,13 +166,17 @@ public theorem exists_splittingFunctor_mk_ι_eq_inf_kernelSubobject :
 
 [Tag 017W](https://stacks.math.columbia.edu/tag/017W) in the Stacks Project.
 
-**`AlgebraicTopology.NormalizedMooreComplex.mono_epi_isIso_app_iff_map_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L639).
+**`AlgebraicTopology.NormalizedMooreComplex.mono_epi_isIso_app_iff_map_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L653). The attribute's comment: “in Mathlib's convention N(U)\_m = ⋂\_\{i = 1}^\{m} Ker(d^m\_i), not the source's ⋂\_\{i = 0}^\{m - 1} Ker(d^m\_i); the source's convention is `SimplicialObject.mono_epi_isIso_app_iff_normalizedMooreMap`”.
 
-> **Stacks 017W**.
-> The normalized Moore complex functor `N` of an abelian category reflects (and preserves) degreewise
-> monomorphisms, epimorphisms and isomorphisms: for a morphism `f : U ⟶ V` of simplicial objects, `f`
-> is a monomorphism in each degree if and only if `N(f)_m` is a monomorphism for every `m`, and
-> likewise for epimorphisms and for isomorphisms.
+> **Stacks 017W**, in Mathlib's convention.
+> Mathlib's normalized Moore complex functor `N` of an abelian category reflects (and preserves)
+> degreewise monomorphisms, epimorphisms and isomorphisms: for a morphism `f : U ⟶ V` of simplicial
+> objects, `f` is a monomorphism in each degree if and only if `N(f)_m` is a monomorphism for every
+> `m`, and likewise for epimorphisms and for isomorphisms. Here `N(U)_m = ⋂_{i = 1}^{m} Ker(d^m_i)`,
+> the kernels of all faces but the first, whereas the source's `N(U_m)` of [Stacks, Tag 017V] is
+> `⋂_{i = 0}^{m - 1} Ker(d^m_i)`, the kernels of all faces but the last; the statement in the
+> source's convention is `CategoryTheory.SimplicialObject.mono_epi_isIso_app_iff_normalizedMooreMap`,
+> deduced from this one through the order-reversal.
 
 ```lean
 public theorem NormalizedMooreComplex.mono_epi_isIso_app_iff_map_f (f : U ⟶ V) :
@@ -180,11 +188,29 @@ public theorem NormalizedMooreComplex.mono_epi_isIso_app_iff_map_f (f : U ⟶ V)
         ∀ m : ℕ, IsIso (((normalizedMooreComplex A).map f).f m))
 ```
 
+**`CategoryTheory.SimplicialObject.mono_epi_isIso_app_iff_normalizedMooreMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 937](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L937). The attribute's comment: “N(U)\_m = ⋂\_\{i = 0}^\{m - 1} Ker(d^m\_i) as in the source (`normalizedMoore`); the statement is an equivalence, of which the source states the reflection direction”.
+
+> **Stacks 017W**, in the source's convention.
+> Let `f : U ⟶ V` be a morphism of simplicial objects of an abelian category, and let
+> `N(f)_m : N(U_m) ⟶ N(V_m)` be its restriction to the normalized Moore objects
+> `N(U_m) = ⋂_{i = 0}^{m - 1} Ker(d^m_i)` of [Stacks, Tag 017V]. Then `f_m` is a monomorphism for
+> every `m` if and only if `N(f)_m` is one for every `m`; likewise for epimorphisms and for
+> isomorphisms. It is deduced from
+> `AlgebraicTopology.NormalizedMooreComplex.mono_epi_isIso_app_iff_map_f`, stated for Mathlib's
+> `⋂_{i = 1}^{m} Ker(d^m_i)`, applied to the order-reversals of `U` and `V`.
+
+```lean
+theorem mono_epi_isIso_app_iff_normalizedMooreMap {U V : SimplicialObject C} (f : U ⟶ V) :
+    ((∀ Δ : SimplexCategoryᵒᵖ, Mono (f.app Δ)) ↔ ∀ m : ℕ, Mono (normalizedMooreMap f m)) ∧
+      ((∀ Δ : SimplexCategoryᵒᵖ, Epi (f.app Δ)) ↔ ∀ m : ℕ, Epi (normalizedMooreMap f m)) ∧
+      ((∀ Δ : SimplexCategoryᵒᵖ, IsIso (f.app Δ)) ↔ ∀ m : ℕ, IsIso (normalizedMooreMap f m))
+```
+
 ## Tag 017X, a lemma
 
 [Tag 017X](https://stacks.math.columbia.edu/tag/017X) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.normalizedMoore_factors_arrow_comp_δ_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 849](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L849).
+**`CategoryTheory.SimplicialObject.normalizedMoore_factors_arrow_comp_δ_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 951](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L951).
 
 > **Stacks 017X**.
 > The last face carries the Stacks-convention normalized Moore subobject in degree `n + 1` into the
@@ -200,7 +226,7 @@ theorem normalizedMoore_factors_arrow_comp_δ_last (U : SimplicialObject C) (n :
 
 [Tag 017Y](https://stacks.math.columbia.edu/tag/017Y) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Usub_isSubSimplicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 751](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L751). The attribute's comment: “(1)”.
+**`CategoryTheory.SimplicialObject.Usub_isSubSimplicial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 770](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L770). The attribute's comment: “(1)”.
 
 > **Stacks 017Y** (1).
 > `U'` is a sub simplicial object of `U`: for every order-preserving map `ψ : [m'] → [m]` the
@@ -213,7 +239,7 @@ theorem Usub_isSubSimplicial (U : SimplicialObject C) (n m m' : ℕ)
     (Usub U n m').Factors ((Usub U n m).arrow ≫ U.map ψ.op)
 ```
 
-**`CategoryTheory.SimplicialObject.Usub_eq_top_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 770](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L770). The attribute's comment: “(2)”.
+**`CategoryTheory.SimplicialObject.Usub_eq_top_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 789](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L789). The attribute's comment: “(2)”.
 
 > **Stacks 017Y** (2).
 > For every `i ≤ n` one has `U'_i = U_i`, that is, `U'_i` is the top subobject of `U_i`.
@@ -223,7 +249,7 @@ theorem Usub_eq_top_of_le (U : SimplicialObject C) (n i : ℕ) (h : i ≤ n) :
     Usub U n i = ⊤
 ```
 
-**`CategoryTheory.SimplicialObject.Usub_inf_moore_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 927](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L927). The attribute's comment: “(3)”.
+**`CategoryTheory.SimplicialObject.Usub_inf_moore_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Split.lean#L1029). The attribute's comment: “(3)”.
 
 > **Stacks 017Y** (3).
 > For every `m > n` one has `N(U'_m) = 0`. By the splitting of [Stacks, Tag 017V] one has
@@ -242,4 +268,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.18, Tag 017O](https://stacks.math.columbia.edu/tag/017O)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

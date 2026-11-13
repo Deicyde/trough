@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.16 Refined Noetherian valuative criteria
 
-Section 32.16 of the Stacks Project, [Tag 0H1P](https://stacks.math.columbia.edu/tag/0H1P). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.16 of the Stacks Project, [Tag 0H1P](https://stacks.math.columbia.edu/tag/0H1P). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CM3, a lemma
 
 [Tag 0CM3](https://stacks.math.columbia.edu/tag/0CM3) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_of_denseRange_of_exists_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L369). References: EGA II (7.3.8), “(b)⇒(a)”; EGA IV (15.7.5), “c⇒a”; EGA IV (18.10.20), “partial”.
+**`AlgebraicGeometry.isProper_of_denseRange_of_exists_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L369). References: EGA II (7.3.8), “(b)⇒(a)”; EGA IV (15.7.5), “c⇒a”; EGA IV (18.10.20), “partial”.
 
 > **Stacks Project, Tag 0CM3.** Let `f : X ⟶ S` and `h : U ⟶ X` be morphisms of schemes with
 > `S` locally Noetherian, `f` and `h` of finite type, `f` separated and `h(U)` dense in `X`. If
@@ -40,7 +40,7 @@ theorem isProper_of_denseRange_of_exists_discreteLift
 
 [Tag 0CM4](https://stacks.math.columbia.edu/tag/0CM4) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_of_denseRange_of_subsingleton_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L450).
+**`AlgebraicGeometry.isSeparated_of_denseRange_of_subsingleton_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L450).
 
 > **Stacks Project, Tag 0CM4.** Let `f : X ⟶ S` be locally of finite type with `S` locally
 > Noetherian, and let `h : U ⟶ X` be of finite type with `h(U)` dense in `X`. If every valuative
@@ -61,7 +61,7 @@ theorem isSeparated_of_denseRange_of_subsingleton_discreteLift
 
 [Tag 0CM5](https://stacks.math.columbia.edu/tag/0CM5) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_of_denseRange_of_unique_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L572). References: EGA II (7.3.8), “(b)⇒(a)”.
+**`AlgebraicGeometry.isProper_of_denseRange_of_unique_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/RefinedProperness.lean#L572). References: EGA II (7.3.8), “(b)⇒(a)”.
 
 > **Stacks Project, Tag 0CM5.** Let `f : X ⟶ S` and `h : U ⟶ X` be of finite type with `S`
 > locally Noetherian and `h(U)` dense in `X`. If every valuative diagram for `f` over a discrete
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.16, Tag 0H1P](https://stacks.math.columbia.edu/tag/0H1P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.6 Special coverings
 
-Section 66.6 of the Stacks Project, [Tag 03FW](https://stacks.math.columbia.edu/tag/03FW). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.6 of the Stacks Project, [Tag 03FW](https://stacks.math.columbia.edu/tag/03FW). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03FX, a lemma
 
 [Tag 03FX](https://stacks.math.columbia.edu/tag/03FX) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAlgebraicSpace.exists_etale_surjective_coproduct_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean#L216).
+**`AlgebraicGeometry.IsAlgebraicSpace.exists_etale_surjective_coproduct_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean#L216).
 
 > An algebraic space over `S` has a surjective étale chart whose source is a disjoint union
 > of affine schemes, each mapping into an affine open of `S`.
@@ -38,7 +38,7 @@ theorem IsAlgebraicSpace.exists_etale_surjective_coproduct_affine_cover
           (Sigma.ι Y i ≫ e.hom ≫ B.inclusion.map U.hom) y ∈ V)
 ```
 
-**`AlgebraicGeometry.IsAlgebraicSpace.exists_etale_surjective_isSeparated_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean#L242). The attribute's comment: “the cover may be taken separated”.
+**`AlgebraicGeometry.IsAlgebraicSpace.exists_etale_surjective_isSeparated_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineAtlas.lean#L242). The attribute's comment: “the cover may be taken separated”.
 
 > An algebraic space over `S` has a surjective étale chart whose underlying scheme is
 > separated.
@@ -56,7 +56,7 @@ theorem IsAlgebraicSpace.exists_etale_surjective_isSeparated_cover
         (BigFppfOver.toScheme B S hS))) f
 ```
 
-**`AlgebraicGeometry.Space.exists_etale_surjective_coproduct_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean#L85).
+**`AlgebraicGeometry.Space.exists_etale_surjective_coproduct_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean#L85).
 
 > An algebraic space has a surjective étale atlas which is a disjoint union of affine schemes,
 > each mapping into an affine open of the base.
@@ -86,7 +86,7 @@ theorem exists_etale_surjective_coproduct_affine_cover
 
 [Tag 03FY](https://stacks.math.columbia.edu/tag/03FY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_zariski_cover_affine_etale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoverAffineAtlas.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoverAffineAtlas.lean#L45).
+**`AlgebraicGeometry.Space.exists_zariski_cover_affine_etale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoverAffineAtlas.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoverAffineAtlas.lean#L45).
 
 > **Stacks 03FY.** An algebraic space over `S` has a Zariski covering by open subspaces,
 > each of which admits a surjective étale atlas from an affine scheme and maps into an affine
@@ -111,7 +111,7 @@ theorem exists_zariski_cover_affine_etale_atlas
           (t : (BigFppfOver.toScheme B S hS).obj T), (B.inclusion.map T.hom) t ∈ V
 ```
 
-**`AlgebraicGeometry.Space.exists_zariskiCovering_affine_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean#L219). The attribute's comment: “covering on point sets”.
+**`AlgebraicGeometry.Space.exists_zariskiCovering_affine_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean#L219). The attribute's comment: “covering on point sets”.
 
 > **Stacks 03FY.** An algebraic space over `S` is the union of a family of open subspaces
 > each of which carries a surjective étale chart from a single affine scheme, and those affine
@@ -160,7 +160,7 @@ theorem exists_zariskiCovering_affine_etale_chart
 
 [Tag 03H6](https://stacks.math.columbia.edu/tag/03H6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_chart_of_isQuasiCompactSpaceULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean#L229). The attribute's comment: “the affine chart of a quasi-compact algebraic space, in a value universe independent of the universe of the schemes”.
+**`AlgebraicGeometry.Space.exists_affine_chart_of_isQuasiCompactSpaceULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean#L229). The attribute's comment: “the affine chart of a quasi-compact algebraic space, in a value universe independent of the universe of the schemes”.
 
 > **Stacks 03H6**, the forward implication, for a presheaf with values in a universe
 > `max w u` independent of the universe `u` of the schemes: a quasi-compact algebraic space over
@@ -183,7 +183,7 @@ theorem exists_affine_chart_of_isQuasiCompactSpaceULift
       IsEtaleULift.{w} B S hS a
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpace_iff_exists_affine_etale_surjective_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean#L179).
+**`AlgebraicGeometry.Space.isQuasiCompactSpace_iff_exists_affine_etale_surjective_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/SpecialCoverings.lean#L179).
 
 > A quasi-compact algebraic space has an affine, étale, surjective cover, and any algebraic
 > space with such a cover is quasi-compact.
@@ -206,7 +206,7 @@ theorem isQuasiCompactSpace_iff_exists_affine_etale_surjective_cover
 
 [Tag 03FZ](https://stacks.math.columbia.edu/tag/03FZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_isEtale_of_scheme_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean#L99). The attribute's comment: “the étale morphism is separated”.
+**`AlgebraicGeometry.Space.isSeparated_of_isEtale_of_scheme_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean#L99). The attribute's comment: “the étale morphism is separated”.
 
 > **Stacks 03FZ, first assertion.** An étale morphism to an algebraic space from an object of
 > the site whose underlying scheme is separated is a separated morphism of algebraic spaces.
@@ -221,7 +221,7 @@ theorem isSeparated_of_isEtale_of_scheme_isSeparated
     IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_scheme_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean#L113). The attribute's comment: “the self-fibre product is a separated scheme”.
+**`AlgebraicGeometry.Space.isSeparated_scheme_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartSeparated.lean#L113). The attribute's comment: “the self-fibre product is a separated scheme”.
 
 > **Stacks 03FZ, second assertion.** The object of the site representing the self-fibre
 > product of an étale chart with separated underlying scheme has separated underlying scheme.
@@ -243,7 +243,7 @@ theorem isSeparated_scheme_pullback
 
 [Tag 07S4](https://stacks.math.columbia.edu/tag/07S4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_of_etaleAtlas_quasiCompact_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedAbsolute.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedAbsolute.lean#L99).
+**`AlgebraicGeometry.Space.isQuasiSeparated_of_etaleAtlas_quasiCompact_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedAbsolute.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedAbsolute.lean#L99).
 
 > An algebraic space over `S` which admits a surjective étale morphism `q` from an object of
 > the site whose underlying scheme is quasi-separated, and one of whose two kernel-pair
@@ -278,7 +278,7 @@ theorem isQuasiSeparated_of_etaleAtlas_quasiCompact_projection
 
 [Tag 03W7](https://stacks.math.columbia.edu/tag/03W7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZariskiLocallyQuasiSeparatedOver_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedTfae.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedTfae.lean#L497).
+**`AlgebraicGeometry.Space.isZariskiLocallyQuasiSeparatedOver_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedTfae.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedTfae.lean#L498).
 
 > **Stacks 03W7.** For an algebraic space over a scheme `S`, Zariski local
 > quasi-separatedness over `S`, absolute Zariski local quasi-separatedness, and the existence of
@@ -301,7 +301,7 @@ theorem isZariskiLocallyQuasiSeparatedOver_tfae
 
 [Tag 03IJ](https://stacks.math.columbia.edu/tag/03IJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_fiber_pointsMap_of_etale_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean#L193). The attribute's comment: “fibres of the presenting scheme”.
+**`AlgebraicGeometry.Space.finite_fiber_pointsMap_of_etale_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean#L193). The attribute's comment: “fibres of the presenting scheme”.
 
 > **Stacks 03IJ, the fibres of the presenting scheme.** An étale morphism `φ : h_U ⟶ X` of
 > presheaves on the big fppf site of `S` out of a representable presheaf whose self-fibre-product
@@ -318,7 +318,7 @@ theorem finite_fiber_pointsMap_of_etale_presentation
     (pointsMap B S hS (yoneda.obj U) φ ⁻¹' {x}).Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_fiber_selfPullback_pointsMap_of_etale_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean#L217). The attribute's comment: “fibres of the relation scheme”.
+**`AlgebraicGeometry.Space.finite_fiber_selfPullback_pointsMap_of_etale_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartFinitePoints.lean#L217). The attribute's comment: “fibres of the relation scheme”.
 
 > **Stacks 03IJ, the fibres of the relation scheme.** Under the same hypotheses the relation
 > `h_U ×_X h_U` has finite fibres on points over `X`.
@@ -340,4 +340,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.6, Tag 03FW](https://stacks.math.columbia.edu/tag/03FW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

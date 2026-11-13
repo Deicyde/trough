@@ -7,7 +7,7 @@ statement: formalized
 
 # Wolstenholme's theorem
 
-23 results, 3 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html).
+23 results, 3 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html).
 
 ## Carlitz's block harmonic congruence
 
@@ -26,14 +26,14 @@ Mathematical Monthly 61 (1954), 174–176.
 
 - Jerry Metzger and Thomas Richards, "A Prisoner Problem Variation", <https://cs.uwaterloo.ca/journals/JIS/VOL18/Metzger/metz1.tex>, lines 657–662.
 
-Formalized by `ZMod.carlitz_sum_inv_block_Ico_eq_zero_of_five_le`, a theorem declared in [MathlibExt/NumberTheory/CarlitzBlockHarmonic.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CarlitzBlockHarmonic.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#carlitz-sum-inv-block-ico-eq-zero-of-fiv).
+Formalized by `ZMod.carlitz_sum_inv_block_Ico_eq_zero_of_five_le`, a theorem declared in [MathlibExt/NumberTheory/CarlitzBlockHarmonic.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CarlitzBlockHarmonic.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#carlitz-sum-inv-block-ico-eq-zero-of-fiv).
 
 ## Wolstenholme's theorem
 
 If $p \ge 5$ is prime, then $\sum_{k=1}^{p-1} k^{-1} = 0$ in
 $\mathbb{Z}/p^2\mathbb{Z}$, where $k^{-1}$ is the inverse of $k$ modulo $p^2$.
 
-Formalized by `MathlibExt.NumberTheory.Wolstenholme.wolstenholme`, a theorem declared in [MathlibExt/NumberTheory/Wolstenholme.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Wolstenholme.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#wolstenholme).
+Formalized by `MathlibExt.NumberTheory.Wolstenholme.wolstenholme`, a theorem declared in [MathlibExt/NumberTheory/Wolstenholme.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Wolstenholme.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#wolstenholme).
 
 ## Wolstenholme's congruence for odd powers
 
@@ -53,7 +53,7 @@ Hardy and Wright and was first studied by Leudesdorf.
 
 - Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Theorem, lines 94–99, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex
 
-Formalized by `MetaMathlibExt.wolstenholme_harmonic_power_sum`, a theorem declared in [MathlibExt/NumberTheory/WolstenholmePowerSums.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/WolstenholmePowerSums.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#wolstenholme-harmonic-power-sum).
+Formalized by `MetaMathlibExt.wolstenholme_harmonic_power_sum`, a theorem declared in [MathlibExt/NumberTheory/WolstenholmePowerSums.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/WolstenholmePowerSums.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#wolstenholme-harmonic-power-sum).
 
 ## Coefficients of $(x + 1)^{jp} (x^p + 1)^{n-j}$
 
@@ -69,7 +69,7 @@ The source takes $p$ prime; here $p$ is any positive integer.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.coeff_add_one_pow_mul_X_pow_add_one_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#coeff-add-one-pow-mul-x-pow-add-one-pow).
+Stated but not proved: `MetaMathlibExt.coeff_add_one_pow_mul_X_pow_add_one_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#coeff-add-one-pow-mul-x-pow-add-one-pow).
 
 ## Binomial coefficients with upper index $-np$
 
@@ -88,7 +88,7 @@ The paper takes $p$ prime.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_neg_mul_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-neg-mul-mul-eq).
+Stated but not proved: `MetaMathlibExt.ringChoose_neg_mul_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-neg-mul-mul-eq).
 
 ## Congruences for $\binom{tp}{p}$ modulo $p^5$, $p^6$ and $p^7$
 
@@ -117,7 +117,7 @@ congruences agree modulo $p^6$.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.choose_mul_prime_prime_harmonic_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-mul-prime-prime-harmonic-congr).
+Stated but not proved: `MetaMathlibExt.choose_mul_prime_prime_harmonic_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-mul-prime-prime-harmonic-congr).
 
 ## Congruences modulo $p^7$ for $\binom{\alpha p - 1}{p - 1} \binom{(\alpha + 1)p - 1}{p - 1}$ and $\binom{2p - 1}{p - 1}^{-1}$
 
@@ -148,7 +148,7 @@ The paper allows $\alpha \in \mathbb{Z}_p$; only integers $\alpha$ are covered h
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_one_mul_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-one-mul-congr).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_one_mul_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-one-mul-congr).
 
 ## Coefficient bound for the divided derivatives $D^n/n!$
 
@@ -167,7 +167,7 @@ the Tate algebra $B\{t\}$ with the sup norm.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.norm_choose_nsmul_coeff_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-choose-nsmul-coeff-le).
+Stated but not proved: `MetaMathlibExt.norm_choose_nsmul_coeff_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-choose-nsmul-coeff-le).
 
 ## Higher $p$-adic mean value theorem
 
@@ -189,7 +189,7 @@ admissible $C$ is the sup of the norms of the coefficients of $f^{(m)}$.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.norm_sub_taylor_le_of_norm_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-sub-taylor-le-of-norm-le).
+Stated but not proved: `MetaMathlibExt.norm_sub_taylor_le_of_norm_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-sub-taylor-le-of-norm-le).
 
 ## Congruence form of the higher $p$-adic mean value theorem
 
@@ -214,7 +214,7 @@ $p^{p v_p(h) + w - 1}$ respectively.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.norm_sub_taylor_le_zpow_valuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-sub-taylor-le-zpow-valuation).
+Stated but not proved: `MetaMathlibExt.norm_sub_taylor_le_zpow_valuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#norm-sub-taylor-le-zpow-valuation).
 
 ## Alternating binomial sum identities
 
@@ -239,7 +239,7 @@ $$\sum_{j=0}^{\min(m, k)} (-1)^{m-j} \binom{n}{j} \binom{n-j-1}{m-j} \binom{n-j}
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.alternating_choose_sum_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#alternating-choose-sum-identities).
+Stated but not proved: `MetaMathlibExt.alternating_choose_sum_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#alternating-choose-sum-identities).
 
 ## The general congruence for $\binom{np}{kp}$
 
@@ -264,7 +264,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_sum_d` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-sum-d).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_sum_d` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-sum-d).
 
 ## Congruence for $\binom{np}{kp}$ with the coefficients $\bar C_{ji}$
 
@@ -289,7 +289,7 @@ $\mathbb{Q}$. With $v_p(0) = \infty$ this says $X \equiv 0 \pmod{p^{m+1+v_p(\bin
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_cbar` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-cbar).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_cbar` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-cbar).
 
 ## The congruence for $\binom{np}{kp}$ with symmetrized coefficients
 
@@ -329,7 +329,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_cprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-cprime).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_cprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-cprime).
 
 ## Divisibility of the polynomial parts by $k(n-k)/2$
 
@@ -355,7 +355,7 @@ in $\mathbb{Q}[k]$.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.exists_polynomial_part_eq_mul_half_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#exists-polynomial-part-eq-mul-half-mul).
+Stated but not proved: `MetaMathlibExt.exists_polynomial_part_eq_mul_half_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#exists-polynomial-part-eq-mul-half-mul).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^3$
 
@@ -377,7 +377,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-thre).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-thre).
 
 ## Equivalent forms of Wolstenholme's congruence
 
@@ -391,7 +391,7 @@ By Wolstenholme's theorem all three hold for every such $p$.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.choose_two_mul_prime_congr_iff_pow_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-two-mul-prime-congr-iff-pow-three).
+Stated but not proved: `MetaMathlibExt.choose_two_mul_prime_congr_iff_pow_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-two-mul-prime-congr-iff-pow-three).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ and $\binom{3p}{p}$
 
@@ -413,7 +413,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-four).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-four).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ alone
 
@@ -438,7 +438,7 @@ here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_four_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-four-2).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_four_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-four-2).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^5$
 
@@ -463,7 +463,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-five).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-five).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^6$
 
@@ -489,7 +489,7 @@ The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-six).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-six).
 
 ## The congruence for $\binom{np}{kp}$ modulo $p^7$
 
@@ -535,7 +535,7 @@ $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-seve).
+Stated but not proved: `MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#ring-choose-mul-prime-sub-congr-pow-seve).
 
 ## $\binom{np}{mp}$ as a quotient of products
 
@@ -550,7 +550,7 @@ $$\binom{np}{mp} = \frac{\binom{n}{m} \prod_{j=0}^{m-1} \binom{(n-m+j+1)p-1}{p-1
 
 - Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.choose_mul_prime_eq_prod_div_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-mul-prime-eq-prod-div-prod).
+Stated but not proved: `MetaMathlibExt.choose_mul_prime_eq_prod_div_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WolstenholmeBinomialExtensionWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html#choose-mul-prime-eq-prod-div-prod).
 
 ## Depends on
 
@@ -559,4 +559,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Wolstenholme's theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/wolstenholme-s-theorem)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Meta-automatic sequences
 
-35 results, 11 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html).
+35 results, 11 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html).
 
 ## Thue–Morse quarto sequence
 
@@ -22,7 +22,7 @@ and $\mathcal{Q}(m) = 1 - \mathcal{Q}(2n)$ if $r = 3$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 2.2 (definition of `𝒬`).
 
-Formalized by `MetaMathlibExt.thueMorseQuarto`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto).
+Formalized by `MetaMathlibExt.thueMorseQuarto`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto).
 
 ## The meta-automatic sequence $\mathcal{M}_1$
 
@@ -37,7 +37,7 @@ $\mathcal{M}_1(4n+3) = 1 - \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$ for every $
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 3 (definition of `ℳ₁`).
 
-Formalized by `MetaMathlibExt.metaAutomaticOne`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one).
+Formalized by `MetaMathlibExt.metaAutomaticOne`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one).
 
 ## The meta-automatic sequence $\mathcal{M}_2$
 
@@ -52,7 +52,7 @@ $\mathcal{M}_2(4n+3) = 1 - \mathcal{M}_2(4n+2)$ for $n \ge 0$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 4 (definition of `ℳ₂`).
 
-Formalized by `MetaMathlibExt.metaAutomaticTwo`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two).
+Formalized by `MetaMathlibExt.metaAutomaticTwo`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two).
 
 ## First sixteen terms of the Thue–Morse quarto sequence
 
@@ -64,7 +64,7 @@ $\mathcal{Q}$ are $0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1$, in this orde
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 2.2.
 
-Formalized by `MetaMathlibExt.thueMorseQuarto_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-small).
+Formalized by `MetaMathlibExt.thueMorseQuarto_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-small).
 
 ## First sixteen terms of $\mathcal{M}_1$
 
@@ -76,7 +76,7 @@ $0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 3.
 
-Formalized by `MetaMathlibExt.metaAutomaticOne_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-small).
+Formalized by `MetaMathlibExt.metaAutomaticOne_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-small).
 
 ## First sixteen terms of $\mathcal{M}_2$
 
@@ -88,7 +88,7 @@ $\mathcal{M}_2$ are $0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 4.
 
-Formalized by `MetaMathlibExt.metaAutomaticTwo_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-small).
+Formalized by `MetaMathlibExt.metaAutomaticTwo_small`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-small).
 
 ## Recurrences of the Thue–Morse quarto sequence
 
@@ -102,7 +102,7 @@ $n \ge 0$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 2.2.
 
-Formalized by `MetaMathlibExt.thueMorseQuarto_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-rec).
+Formalized by `MetaMathlibExt.thueMorseQuarto_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-rec).
 
 ## Recurrences of the meta-automatic sequence $\mathcal{M}_1$
 
@@ -116,7 +116,7 @@ and $\mathcal{M}_1(4n+3) = 1 - \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 3, equations (6) and (7).
 
-Formalized by `MetaMathlibExt.metaAutomaticOne_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-rec).
+Formalized by `MetaMathlibExt.metaAutomaticOne_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-rec).
 
 ## Recurrences of $\mathcal{M}_2$
 
@@ -130,7 +130,7 @@ $\mathcal{M}_2(4n+3) = 1 - \mathcal{M}_2(4n+2)$ for every $n \ge 0$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 4, equations (9) and (10).
 
-Formalized by `MetaMathlibExt.metaAutomaticTwo_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-rec).
+Formalized by `MetaMathlibExt.metaAutomaticTwo_rec`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-rec).
 
 ## Right-special factors
 
@@ -142,7 +142,7 @@ $u0$ and $u1$ are factors of $a$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 5 (definition of `RS_a(n)`).
 
-Formalized by `MetaMathlibExt.rightSpecialFactors`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-factors).
+Formalized by `MetaMathlibExt.rightSpecialFactors`, a definition declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-factors).
 
 ## The all-zero word has no right-special factors
 
@@ -153,7 +153,7 @@ infinite binary word $000\cdots$ has no right-special factors of length $n$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Section 5.
 
-Formalized by `MetaMathlibExt.rightSpecialFactors_const_false`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-factors-const-false).
+Formalized by `MetaMathlibExt.rightSpecialFactors_const_false`, a theorem declared in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-factors-const-false).
 
 ## Allouche–Shallit criterion for automatic sequences
 
@@ -173,7 +173,7 @@ since only large $n$ matter; the paper notes that the order of the arguments pla
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 2, quoting Allouche and Shallit (2012), Theorem 2.2 (`jis-2026-26.4.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.isKAutomaticSequence_of_digit_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#is-kautomatic-sequence-of-digit-recurren).
+Stated but not proved: `MetaMathlibExt.isKAutomaticSequence_of_digit_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#is-kautomatic-sequence-of-digit-recurren).
 
 ## Nested indices in balanced binary sequences
 
@@ -186,7 +186,7 @@ $a(2n + 1 - a(n)) = a(2n+1) \oplus a(n)$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 5 (`jis-2026-26.4.1-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.balanced_nested_xor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#balanced-nested-xor).
+Stated but not proved: `MetaMathlibExt.balanced_nested_xor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#balanced-nested-xor).
 
 ## Balanced sequences with a nested doubling recurrence are eventually alternating
 
@@ -200,7 +200,7 @@ $a(0) = 1$, and $a(2n) = 1$ and $a(2n+1) = 0$ for every $n \ge 2$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 6 (`jis-2026-26.4.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.balanced_dyadic_nested_eventually_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#balanced-dyadic-nested-eventually-period).
+Stated but not proved: `MetaMathlibExt.balanced_dyadic_nested_eventually_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#balanced-dyadic-nested-eventually-period).
 
 ## Thue–Morse quarto sequence from the Thue–Morse sequence
 
@@ -213,7 +213,7 @@ $\mathcal{Q}(n) = t(n) \oplus d(n)$, where $\oplus$ is addition modulo $2$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 8 (`jis-2026-26.4.1-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.thueMorseQuarto_eq_xor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-eq-xor).
+Stated but not proved: `MetaMathlibExt.thueMorseQuarto_eq_xor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-eq-xor).
 
 ## The meta-automatic sequence $\mathcal{M}_1$ is balanced
 
@@ -228,7 +228,7 @@ definition of $\mathcal{M}_1$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 10 (`jis-2026-26.4.1-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticOne_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-balanced).
+Stated but not proved: `MetaMathlibExt.metaAutomaticOne_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-balanced).
 
 ## Joint recurrence for $\mathcal{M}_1$ and its nested companion
 
@@ -243,7 +243,7 @@ $s(4n+2) = (y, 1 \oplus x)$ and $s(4n+3) = (1 \oplus y, 1 \oplus x \oplus y)$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 12 (`jis-2026-26.4.1-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticOne_pair_closure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-pair-closure).
+Stated but not proved: `MetaMathlibExt.metaAutomaticOne_pair_closure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-pair-closure).
 
 ## An automaton for the meta-automatic sequence $\mathcal{M}_1$
 
@@ -260,7 +260,7 @@ Then, reading the values of $\mathcal{M}_1$ as $0$ and $1$, $\mathcal{M}_1(n) = 
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 13 (`jis-2026-26.4.1-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticOne_dfao` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-dfao).
+Stated but not proved: `MetaMathlibExt.metaAutomaticOne_dfao` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-dfao).
 
 ## $\mathcal{M}_1$ as a coding of a uniform morphism fixed point
 
@@ -278,7 +278,7 @@ $1, 3 \mapsto 1$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Corollary 16 (`jis-2026-26.4.1-cor-16`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticOne_morphism_coding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-morphism-coding).
+Stated but not proved: `MetaMathlibExt.metaAutomaticOne_morphism_coding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-one-morphism-coding).
 
 ## $\mathcal{M}_2$ is balanced
 
@@ -293,7 +293,7 @@ defining recursion terminates.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 18 (`jis-2026-26.4.1-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-balanced).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-balanced).
 
 ## Recovering the even and odd terms of $\mathcal{M}_2$
 
@@ -306,7 +306,7 @@ $\mathcal{M}_2(2n+1) = x \oplus y \oplus 1$, where $\oplus$ is addition modulo $
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 19 (`jis-2026-26.4.1-lem-19`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_recover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-recover).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_recover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-recover).
 
 ## Pair recurrence and $4$-automaticity of $\mathcal{M}_2$
 
@@ -325,7 +325,7 @@ most significant digit first (for $n = 0$ no digit is read, so $q = 0$).
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 20 (`jis-2026-26.4.1-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_affine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-affine).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_affine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-affine).
 
 ## A four-state automaton computing $\mathcal{M}_2$
 
@@ -342,7 +342,7 @@ so $q = 0$).
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 22 (`jis-2026-26.4.1-thm-22`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_dfao` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-dfao).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_dfao` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-dfao).
 
 ## $\mathcal{M}_2$ as a coding of a uniform morphic word
 
@@ -359,7 +359,7 @@ coding $0, 2 \mapsto 0$ and $1, 3 \mapsto 1$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Corollary 23 (`jis-2026-26.4.1-cor-23`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_morphism_coding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-morphism-coding).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_morphism_coding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-morphism-coding).
 
 ## Digit formula for $\mathcal{M}_2$
 
@@ -376,7 +376,7 @@ The digits $d_k$ with $k > n$ vanish, so the sum runs over all base-$4$ digits o
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 25 (`jis-2026-26.4.1-thm-25`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_digit_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-digit-formula).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_digit_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-digit-formula).
 
 ## $\mathcal{M}_2$ is the Thue–Morse sequence along a binary digit mask
 
@@ -394,7 +394,7 @@ $k \equiv 1 \pmod 3$, and $d'_k = i_k$ if $k \equiv 2 \pmod 3$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 26 (`jis-2026-26.4.1-thm-26`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_eq_thueMorse_mask` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-eq-thue-morse-mask).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_eq_thueMorse_mask` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-eq-thue-morse-mask).
 
 ## First difference of the factor complexity of a binary word
 
@@ -407,7 +407,7 @@ $p_a(n+1) = p_a(n) + \#\mathrm{RS}_a(n)$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 27 (`jis-2026-26.4.1-lem-27`).
 
-Stated but not proved: `MetaMathlibExt.wordFactorComplexity_succ_eq_add_rightSpecial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#word-factor-complexity-succ-eq-add-right).
+Stated but not proved: `MetaMathlibExt.wordFactorComplexity_succ_eq_add_rightSpecial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#word-factor-complexity-succ-eq-add-right).
 
 ## Right-special factor counts of automatic sequences are regular
 
@@ -425,7 +425,7 @@ $a$; that algorithmic claim is not part of this statement.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 28 (`jis-2026-26.4.1-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.rightSpecial_count_regular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-count-regular).
+Stated but not proved: `MetaMathlibExt.rightSpecial_count_regular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#right-special-count-regular).
 
 ## Factors of the Thue–Morse word are closed under complement
 
@@ -437,7 +437,7 @@ word obtained from $v$ by exchanging $0$ and $1$ in every position.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 29 (`jis-2026-26.4.1-lem-29`).
 
-Stated but not proved: `MetaMathlibExt.thueMorse_factor_complement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-factor-complement).
+Stated but not proved: `MetaMathlibExt.thueMorse_factor_complement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-factor-complement).
 
 ## Factor complexity of the Thue–Morse Quarto word versus Thue–Morse
 
@@ -450,7 +450,7 @@ factors of $\mathcal{Q}$ that are not factors of $t$. Then $p_{\mathcal{Q}}(n) =
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 30 (`jis-2026-26.4.1-prop-30`).
 
-Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-eq).
+Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-eq).
 
 ## Factor complexity of the Thue–Morse Quarto word at powers of two
 
@@ -465,7 +465,7 @@ $|J_{2^k}| = 2^{k-2}$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Theorem 31 (`jis-2026-26.4.1-thm-31`).
 
-Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-two-pow).
+Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-two-pow).
 
 ## Factor complexity and right-special factors of the Thue–Morse Quarto word
 
@@ -485,7 +485,7 @@ $3 \cdot 2^{k-1} < n \le 7 \cdot 2^{k-2}$, and $2$ if $7 \cdot 2^{k-2} < n$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 33 (`jis-2026-26.4.1-prop-33`).
 
-Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-formula).
+Stated but not proved: `MetaMathlibExt.thueMorseQuarto_complexity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#thue-morse-quarto-complexity-formula).
 
 ## The meta-automatic sequences have linear factor complexity
 
@@ -499,7 +499,7 @@ $c n \le p_{\mathcal{M}_i}(n) \le C n$ for all sufficiently large $n$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 34 (`jis-2026-26.4.1-prop-34`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomatic_complexity_isTheta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-complexity-is-theta).
+Stated but not proved: `MetaMathlibExt.metaAutomatic_complexity_isTheta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-complexity-is-theta).
 
 ## Factor complexity of $\mathcal{M}_2$ at powers of two
 
@@ -512,7 +512,7 @@ $p(2^{k+3}) = 8\, p(2^k) + 14$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 36 (`jis-2026-26.4.1-prop-36`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_complexity_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-complexity-two-pow).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_complexity_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-complexity-two-pow).
 
 ## Factor complexity of $\mathcal{M}_2$
 
@@ -531,7 +531,7 @@ If $k \equiv 2 \pmod 3$, then $p(n) = 2n + 2^k - 2$.
 
 - John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Proposition 37 (`jis-2026-26.4.1-prop-37`).
 
-Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_complexity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-complexity-formula).
+Stated but not proved: `MetaMathlibExt.metaAutomaticTwo_complexity_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/MetaAutomaticSequencesWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html#meta-automatic-two-complexity-formula).
 
 ## Depends on
 
@@ -540,4 +540,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Meta-automatic sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/meta-automatic-sequences)

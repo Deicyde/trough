@@ -8,7 +8,7 @@ proof: formalized
 
 # Singular value decomposition
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html).
 
 ## Unitary reduction of a complex matrix to rectangular diagonal form
 
@@ -16,7 +16,7 @@ Every rectangular complex matrix becomes rectangular diagonal after a unitary
 change of basis on the right, with a further unitary change of basis on the
 codomain (S. Axler, Linear Algebra Done Right, 4th ed., Section 7E).
 
-Formalized by `Matrix.exists_unitaryGroup_mul_eq_rectangularDiagonal`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-mul-eq-rectangular).
+Formalized by `Matrix.exists_unitaryGroup_mul_eq_rectangularDiagonal`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-mul-eq-rectangular).
 
 ## Complex SVD with nonincreasing singular values
 
@@ -24,14 +24,14 @@ This is the rectangular complex SVD with singular values in nonincreasing order.
 
 Proof: Multiply the rectangular-diagonal factorization on the right by `Vᴴ`.
 
-Formalized by `Matrix.exists_unitaryGroup_rectangularDiagonal_antitone`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-rectangular-diagona).
+Formalized by `Matrix.exists_unitaryGroup_rectangularDiagonal_antitone`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-rectangular-diagona).
 
 ## Squared Frobenius norm as the sum of squared singular values
 
 Frobenius-norm identity for an SVD: the sum of the squared singular values is
 the sum of the squared norms of the entries.
 
-Formalized by `Matrix.sum_sq_singularValues_eq_sum_sq_norm_of_svd`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#sum-sq-singular-values-eq-sum-sq-norm-of).
+Formalized by `Matrix.sum_sq_singularValues_eq_sum_sq_norm_of_svd`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#sum-sq-singular-values-eq-sum-sq-norm-of).
 
 ## Singular value decomposition of a complex matrix
 
@@ -49,7 +49,7 @@ of the codomain, as in the proof of S. Axler, Linear Algebra Done Right,
 
 - S. Axler, Linear Algebra Done Right, 4th ed., Section 7E; G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins University Press (2013), Theorem 2.4.1.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.ComplexSVDWanted.complex_singular_value_decomposition`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#complex-singular-value-decomposition).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.ComplexSVDWanted.complex_singular_value_decomposition`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ComplexSVD.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#complex-singular-value-decomposition).
 
 ## Singular value decomposition of a complex square matrix
 
@@ -63,7 +63,7 @@ $A = U D V^*$.
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013).
 
-Formalized by `Matrix.exists_unitaryGroup_diagonal_nonneg`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Factorizations/SVD.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/Factorizations/SVD.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-diagonal-nonneg).
+Formalized by `Matrix.exists_unitaryGroup_diagonal_nonneg`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Factorizations/SVD.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/Factorizations/SVD.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-unitary-group-diagonal-nonneg).
 
 ## Orthogonal reduction of a real matrix to rectangular diagonal form
 
@@ -77,7 +77,7 @@ matrix with $\Sigma_{jj} = \sigma_j$ for $j \le \min(m, n)$ and all other entrie
 
 - S. Axler, Linear Algebra Done Right, 4th ed., Section 7E.
 
-Formalized by `Matrix.exists_orthogonalGroup_mul_eq_rectangularDiagonal`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-orthogonal-group-mul-eq-rectangul).
+Formalized by `Matrix.exists_orthogonalGroup_mul_eq_rectangularDiagonal`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-orthogonal-group-mul-eq-rectangul).
 
 ## Real singular value decomposition with nonincreasing singular values
 
@@ -90,7 +90,7 @@ zero.
 
 Proof: multiply the factorization $AV = U\Sigma$ on the right by $V^{\mathsf{T}}$.
 
-Formalized by `Matrix.exists_orthogonalGroup_rectangularDiagonal_antitone`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-orthogonal-group-rectangular-diag).
+Formalized by `Matrix.exists_orthogonalGroup_rectangularDiagonal_antitone`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#exists-orthogonal-group-rectangular-diag).
 
 ## Real singular value decomposition
 
@@ -109,7 +109,7 @@ matrix form that follows it (Section 7E).
 
 - G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins University Press (2013), Theorem 2.4.1.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.RealSVDWanted.real_singular_value_decomposition`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#real-singular-value-decomposition).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.RealSVDWanted.real_singular_value_decomposition`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RealSVD.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/RealSVD.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html#real-singular-value-decomposition).
 
 ## Depends on
 
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Singular value decomposition](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/matrix-decompositions/singular-value-decomposition)

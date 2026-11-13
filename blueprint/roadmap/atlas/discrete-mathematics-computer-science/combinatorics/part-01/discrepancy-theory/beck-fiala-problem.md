@@ -7,7 +7,7 @@ statement: formalized
 
 # Beck–Fiala problem
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html).
 
 ## Linear Beck–Fiala conjecture
 
@@ -27,7 +27,7 @@ $O(\sqrt{t \log t})$.
 
 - AIM-COMBINATORICS-0044__20000919; AIM Hereditary discrepancy, item 1.7.
 
-Formalized by `MathlibExt.Combinatorics.LinearBeckFialaWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/LinearBeckFialaWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearBeckFialaWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.LinearBeckFialaWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/LinearBeckFialaWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearBeckFialaWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html#conjecture).
 
 ## Linear Beck–Fiala systems have discrepancy $O(\sqrt{t})$
 
@@ -49,7 +49,7 @@ case.
 
 - Shengtao Guo, Ethan X. Fang and Junwei Lu, Vector balancing via directional total variation, arXiv:2609.11189 (2026), https://arxiv.org/abs/2609.11189.
 
-Stated but not proved: `MathlibExt.Combinatorics.LinearBeckFialaWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/LinearBeckFialaWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearBeckFialaWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.LinearBeckFialaWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/LinearBeckFialaWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearBeckFialaWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Beck–Fiala problem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/discrepancy-theory/beck-fiala-problem)

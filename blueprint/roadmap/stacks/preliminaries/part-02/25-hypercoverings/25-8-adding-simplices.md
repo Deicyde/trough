@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.8 Adding simplices
 
-Section 25.8 of the Stacks Project, [Tag 01GL](https://stacks.math.columbia.edu/tag/01GL). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.8 of the Stacks Project, [Tag 01GL](https://stacks.math.columbia.edu/tag/01GL). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01GM, a lemma
 
 [Tag 01GM](https://stacks.math.columbia.edu/tag/01GM) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_homFromSSetMap_app_zero_of_oneMoreSimplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 840](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L840).
+**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_homFromSSetMap_app_zero_of_oneMoreSimplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 845](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L845).
 
 > **Stacks Project, Tag 01GM.** Let `K` be a hypercovering of `X`. If the finite simplicial
 > set `V` is obtained from a subcomplex `U` by adjoining a single `n`-simplex `x`, with every
@@ -47,7 +47,7 @@ theorem isCoveringOver_homFromSSetMap_app_zero_of_oneMoreSimplex (J : Pretopolog
 
 [Tag 01GN](https://stacks.math.columbia.edu/tag/01GN) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_homFromSSetRestriction_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 1277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L1277).
+**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_homFromSSetRestriction_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 1282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L1282).
 
 > **Stacks Project, Tag 01GN.** Let `K` be a hypercovering of `X` and let `U ⊆ V` be finite
 > nonempty simplicial sets. Then restriction `Hom(V, K)₀ ⟶ Hom(U, K)₀` is a covering morphism in
@@ -66,7 +66,7 @@ theorem isCoveringOver_homFromSSetRestriction_app_zero (J : Pretopology C)
 
 [Tag 0DEQ](https://stacks.math.columbia.edu/tag/0DEQ) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean#L186). The attribute's comment: “part (2)”.
+**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean#L186). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0DEQ, part (2).** Every face map of a hypercovering of `X` is a
 > covering morphism in `SR(C, X)`.
@@ -76,7 +76,7 @@ theorem isCoveringOver_delta (hK : IsHypercovering J K) (n : ℕ) (i : Fin (n + 
     IsCoveringOver J (K.δ i)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_terminalFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean#L236). The attribute's comment: “part (1)”.
+**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_terminalFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/HypercoverDescent.lean#L236). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0DEQ, part (1).** Every level of a hypercovering of `X` is a
 > covering of `X`.
@@ -90,7 +90,7 @@ theorem isCoveringOver_terminalFrom (hK : IsHypercovering J K) (n : ℕ) :
 
 [Tag 0DER](https://stacks.math.columbia.edu/tag/0DER) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.IsHypercovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean#L140). The attribute's comment: “p\_hypercovering”.
+**`CategoryTheory.MorphismProperty.IsHypercovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean#L140). The attribute's comment: “p\_hypercovering”.
 
 > **Stacks Project, Tag 0DER.** An augmented simplicial object is a `P`-hypercovering when its
 > degree-zero augmentation, its canonical degree-one morphism to `U₀ ×_X U₀`, and all of its higher
@@ -101,7 +101,7 @@ structure MorphismProperty.IsHypercovering {C : Type u} [Category.{v} C] [HasPul
     (P : MorphismProperty C) (A : SimplicialObject.Augmented C) : Prop
 ```
 
-**`CategoryTheory.MorphismProperty.IsHypercovering.face_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L104). The attribute's comment: “faces\_in\_p”.
+**`CategoryTheory.MorphismProperty.IsHypercovering.face_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L104). The attribute's comment: “faces\_in\_p”.
 
 > Every face map in positive degree of a `P`-hypercovering belongs to `P`.
 
@@ -112,7 +112,7 @@ lemma face_mem (P : MorphismProperty C) [P.IsStableUnderBaseChange] [P.IsMultipl
     P (A.left.δ i)
 ```
 
-**`CategoryTheory.MorphismProperty.IsHypercovering.hom_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L124). The attribute's comment: “levels\_in\_p”.
+**`CategoryTheory.MorphismProperty.IsHypercovering.hom_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L124). The attribute's comment: “levels\_in\_p”.
 
 > Every level of a `P`-hypercovering maps to its augmentation point by a morphism in `P`.
 >
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.8, Tag 01GL](https://stacks.math.columbia.edu/tag/01GL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

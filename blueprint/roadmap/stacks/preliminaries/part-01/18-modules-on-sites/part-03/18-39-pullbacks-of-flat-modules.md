@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.39 Pullbacks of flat modules
 
-Section 18.39 of the Stacks Project, [Tag 05VA](https://stacks.math.columbia.edu/tag/05VA). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.39 of the Stacks Project, [Tag 05VA](https://stacks.math.columbia.edu/tag/05VA). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05VD, a lemma
 
 [Tag 05VD](https://stacks.math.columbia.edu/tag/05VD) in the Stacks Project.
 
-**`Stacks.Sheaves.RingedToposModules.isFlat_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean#L359). The attribute's comment: “ringed topoi, at free universes, assuming on each site the HasSheafCompose, HasWeakSheafify, WEqualsLocallyBijective and HasSheafify instances of the variable block; isFlat\_pullbackModules\_maxSectionUniverse is the same statement with all of them derived”. References: SGA 4 V (8.2.9); SGA 4 V (1.7.1).
+**`Stacks.Sheaves.RingedToposModules.isFlat_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean#L359). The attribute's comment: “ringed topoi, at free universes, assuming on each site the HasSheafCompose, HasWeakSheafify, WEqualsLocallyBijective and HasSheafify instances of the variable block; isFlat\_pullbackModules\_maxSectionUniverse is the same statement with all of them derived”. References: SGA 4 V (8.2.9); SGA 4 V (1.7.1).
 
 > **Stacks Project, Tag 05VD.**  The pullback of a flat sheaf of modules along a morphism of
 > ringed topoi is flat.
@@ -40,7 +40,7 @@ theorem isFlat_pullbackModules (hG : Stacks.SheafOfModules.IsFlat (O := Y.O) G) 
     Stacks.SheafOfModules.IsFlat (O := X.O) ((f.pullbackModules).obj G)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.isFlat_pullbackModules_maxSectionUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean#L421). The attribute's comment: “ringed topoi whose section universe is the max of their site's object and morphism universes -- object and morphism universes free and independent -- with no sheafification hypothesis assumed: HasSheafCompose, HasWeakSheafify, WEqualsLocallyBijective and HasSheafify are all derived”. References: SGA 4 V (8.2.9); SGA 4 V (1.7.1); SGA 4 VI (8.6.4), “special case”.
+**`Stacks.Sheaves.RingedToposModules.isFlat_pullbackModules_maxSectionUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackFlatInverseImage.lean#L421). The attribute's comment: “ringed topoi whose section universe is the max of their site's object and morphism universes -- object and morphism universes free and independent -- with no sheafification hypothesis assumed: HasSheafCompose, HasWeakSheafify, WEqualsLocallyBijective and HasSheafify are all derived”. References: SGA 4 V (8.2.9); SGA 4 V (1.7.1); SGA 4 VI (8.6.4), “special case”.
 
 > **Stacks Project, Tag 05VD, assuming nothing the source does not assume.**  The pullback of a
 > flat sheaf of modules along a morphism of ringed topoi is flat.
@@ -88,7 +88,7 @@ theorem isFlat_pullbackModules_maxSectionUniverse
     Stacks.SheafOfModules.IsFlat (J := X.J) (O := X.O) ((f.pullbackModules).obj G)
 ```
 
-**`Stacks.ModuleUp.isFlat_pullback_of_representablyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SiteUpSheafificationPullback.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SiteUpSheafificationPullback.lean#L654). The attribute's comment: “ringed sites, for a morphism of sites given by a continuous representably flat functor, with no sheafification hypothesis assumed: the HasWeakSheafify, HasSheafCompose, WEqualsLocallyBijective and HasLeftKanExtension instances are all derived. The reduction of an arbitrary morphism of ringed sites to this case is Stacks 03CR”. References: SGA 4 V (8.2.9), “representably flat u”; SGA 4 V (1.7.1), “representably flat u”.
+**`Stacks.ModuleUp.isFlat_pullback_of_representablyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SiteUpSheafificationPullback.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SiteUpSheafificationPullback.lean#L654). The attribute's comment: “ringed sites, for a morphism of sites given by a continuous representably flat functor, with no sheafification hypothesis assumed: the HasWeakSheafify, HasSheafCompose, WEqualsLocallyBijective and HasLeftKanExtension instances are all derived. The reduction of an arbitrary morphism of ringed sites to this case is Stacks 03CR”. References: SGA 4 V (8.2.9), “representably flat u”; SGA 4 V (1.7.1), “representably flat u”.
 
 > **Stacks 05VD for a morphism of ringed sites, assuming nothing the source does not assume.**
 >
@@ -129,7 +129,7 @@ theorem isFlat_pullback_of_representablyFlat {R : Sheaf J CommRingCat.{w}}
 
 [Tag 05VB](https://stacks.math.columbia.edu/tag/05VB) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isFlatModuleStalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatStalk.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatStalk.lean#L297). References: SGA 4 V (1.6), “assertion 1”.
+**`Stacks.SheafOfModules.isFlatModuleStalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatStalk.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatStalk.lean#L297). References: SGA 4 V (1.6), “assertion 1”.
 
 > **Stacks Project, Tag 05VB.** Let `(C, O)` be a ringed site and let `Φ` be a point of `C`. If
 > `F` is a flat sheaf of `O`-modules, then the stalk of `F` at `Φ` is a flat module over the stalk
@@ -149,7 +149,7 @@ theorem isFlatModuleStalk_of_isFlat (Φ : J.Point.{max v w})
     IsFlatModuleStalk Φ O F
 ```
 
-**`Stacks.isFlatModuleStalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/FlatModuleStalk.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/FlatModuleStalk.lean#L165).
+**`Stacks.isFlatModuleStalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/FlatModuleStalk.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/FlatModuleStalk.lean#L165).
 
 > **Stacks 05VB.**  The stalk at a point of a site of a flat sheaf of `O`-modules is a flat
 > module over the stalk of `O`.
@@ -165,7 +165,7 @@ theorem isFlatModuleStalk_of_isFlat
 
 [Tag 05VC](https://stacks.math.columbia.edu/tag/05VC) in the Stacks Project.
 
-**`Stacks.isFlat_iff_forall_isFlatModuleStalk_of_weakSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkTensorComparisonWeak.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkTensorComparisonWeak.lean#L37). References: SGA 4 V (1.6), “2)”.
+**`Stacks.isFlat_iff_forall_isFlatModuleStalk_of_weakSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkTensorComparisonWeak.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkTensorComparisonWeak.lean#L37). References: SGA 4 V (1.6), “2)”.
 
 > A sheaf of modules is flat if and only if its stalks at a conservative family of points are
 > flat, assuming `HasWeakSheafify J AddCommGrpCat.{w}` and
@@ -186,7 +186,7 @@ theorem isFlat_iff_forall_isFlatModuleStalk_of_weakSheafify {C : Type u} [Catego
 
 [Tag 0G6R](https://stacks.math.columbia.edu/tag/0G6R) in the Stacks Project.
 
-**`Stacks.Sheaves.RingedToposModules.shortExact_map_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackShortExactFlat.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackShortExactFlat.lean#L140). References: EGA IV (2.1.8), “(i), G' = O\_\{Y'}”.
+**`Stacks.Sheaves.RingedToposModules.shortExact_map_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackShortExactFlat.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackShortExactFlat.lean#L140). References: EGA IV (2.1.8), “(i), G' = O\_\{Y'}”.
 
 > **Stacks Project, Tag 0G6R.**  Let `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a morphism of
 > ringed topoi and let `0 → F → G → H → 0` be a short exact sequence of sheaves of `O_D`-modules
@@ -205,7 +205,7 @@ theorem shortExact_map_pullbackModules
     (S.map (f.pullbackModules)).ShortExact
 ```
 
-**`AlgebraicGeometry.RingedToposHom.exists_shortExact_map_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/PullbackOfAShortExactSequence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/PullbackOfAShortExactSequence.lean#L83). The attribute's comment: “morphisms of ringed topoi, with the source ringed topos's site small in the universe of its sections and the target's section universe equal to the max of its object and morphism universes”. References: EGA IV (2.1.8), “(i), G' = O\_\{Y'}”.
+**`AlgebraicGeometry.RingedToposHom.exists_shortExact_map_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/PullbackOfAShortExactSequence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/PullbackOfAShortExactSequence.lean#L83). The attribute's comment: “morphisms of ringed topoi, with the source ringed topos's site small in the universe of its sections and the target's section universe equal to the max of its object and morphism universes”. References: EGA IV (2.1.8), “(i), G' = O\_\{Y'}”.
 
 > **Stacks Project, Tag 0G6R.**  For a morphism of ringed topoi
 > `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and a short exact sequence of sheaves of `O_D`-modules
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.39, Tag 05VA](https://stacks.math.columbia.edu/tag/05VA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

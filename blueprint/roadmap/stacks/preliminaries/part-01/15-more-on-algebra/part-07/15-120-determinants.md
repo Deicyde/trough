@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.120 Determinants
 
-Section 15.120 of the Stacks Project, [Tag 0FJ9](https://stacks.math.columbia.edu/tag/0FJ9). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.120 of the Stacks Project, [Tag 0FJ9](https://stacks.math.columbia.edu/tag/0FJ9). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FJA, a remark
 
 [Tag 0FJA](https://stacks.math.columbia.edu/tag/0FJA) in the Stacks Project.
 
-**`ProjectiveDeterminant.determinant_submodule_eq_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean, line 728](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean#L728).
+**`ProjectiveDeterminant.determinant_submodule_eq_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean#L727).
 
 > **Stacks 0FJA.** The determinant line of a finite projective module is the
 > annihilator of the degree-one elements in its exterior algebra.
@@ -31,7 +31,7 @@ public theorem determinant_submodule_eq_annihilator (R : Type u) (M : Type v)
 
 [Tag 0FJB](https://stacks.math.columbia.edu/tag/0FJB) in the Stacks Project.
 
-**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_of_exact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean#L157). References: SGA 6 X (5.1), “affine case”.
+**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_of_exact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean#L157). References: SGA 6 X (5.1), “affine case”.
 
 > A short exact sequence `0 → M' → M → M'' → 0` of finite projective modules has a canonical
 > determinant isomorphism. Its value on `x' ⊗ x''` is the wedge of the image of `x'` with any lift of
@@ -68,7 +68,7 @@ public noncomputable def determinantTensorDeterminantEquiv_of_exact
 
 [Tag 0FJC](https://stacks.math.columbia.edu/tag/0FJC) in the Stacks Project.
 
-**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean#L364).
+**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Construction.lean#L364).
 
 > The canonical determinant isomorphism of a short exact sequence of finite projective modules is
 > natural under an isomorphism of short exact sequences.
@@ -126,7 +126,7 @@ public theorem determinantTensorDeterminantEquiv_naturality
 
 [Tag 0FJD](https://stacks.math.columbia.edu/tag/0FJD) in the Stacks Project.
 
-**`ProjectiveDeterminant.determinantEquiv_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Filtration.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Filtration.lean#L94).
+**`ProjectiveDeterminant.determinantEquiv_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Filtration.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/Filtration.lean#L94).
 
 > For finite projective successive quotients of a filtration `K ≤ L ≤ M`, combining the canonical
 > determinant equivalences first across `K ≤ L` or first across the induced sequence
@@ -168,7 +168,7 @@ public theorem determinantEquiv_filtration
 
 [Tag 0FJE](https://stacks.math.columbia.edu/tag/0FJE) in the Stacks Project.
 
-**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_prodComm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/ProdComm.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/ProdComm.lean#L366).
+**`ProjectiveDeterminant.determinantTensorDeterminantEquiv_prodComm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/ProdComm.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/ShortExact/ProdComm.lean#L365).
 
 > Switching the summands in a direct sum is compatible with the canonical isomorphism from the
 > tensor product of their determinant lines, up to the determinant of minus the identity on the
@@ -208,7 +208,7 @@ public theorem determinantTensorDeterminantEquiv_prodComm
 
 [Tag 0FJF](https://stacks.math.columbia.edu/tag/0FJF) in the Stacks Project.
 
-**`ProjectiveDeterminant.det_one_add_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean#L782).
+**`ProjectiveDeterminant.det_one_add_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/Determinant/Basic/Localization.lean#L781).
 
 > **Stacks 0FJF.** For maps in opposite directions between finite projective modules, the
 > determinants of the identity plus the two possible composites agree.
@@ -227,7 +227,7 @@ public theorem det_one_add_comp_comm
 
 [Tag 0AFX](https://stacks.math.columbia.edu/tag/0AFX) in the Stacks Project.
 
-**`K0.exists_determinant_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Determinant.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Determinant.lean#L155). References: SGA 6 X (5.1), “affine case”.
+**`K0.exists_determinant_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Determinant.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Determinant.lean#L155). References: SGA 6 X (5.1), “affine case”.
 
 > **Stacks 0AFX.** The determinant gives a homomorphism from `K₀(R)` to the Picard group.
 > For a finite locally free module of constant rank `n`, it sends its class to the class of its
@@ -251,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.120, Tag 0FJ9](https://stacks.math.columbia.edu/tag/0FJ9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

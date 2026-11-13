@@ -7,7 +7,7 @@ statement: formalized
 
 # Representation numbers of quaternary quadratic forms
 
-10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html).
+10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html).
 
 ## Representation numbers of the quaternary forms $(1,1,10,10)$ and $(2,2,5,5)$
 
@@ -47,7 +47,7 @@ Altiary; Vasuki and Nagendra reprove them elementarily.
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Theorem 1.1 (Alaca and Altiary).
 
-Stated but not proved: `MetaMathlibExt.quaternaryRep_one_one_ten_ten_and_two_two_five_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#quaternary-rep-one-one-ten-ten-and-two-t).
+Stated but not proved: `MetaMathlibExt.quaternaryRep_one_one_ten_ten_and_two_two_five_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#quaternary-rep-one-one-ten-ten-and-two-t).
 
 ## Representation numbers of the quaternary forms $(1,1,15,15)$, $(3,3,5,5)$ and $(1,3,5,15)$
 
@@ -97,7 +97,7 @@ reprove them elementarily.
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Theorem 1.2 (Alaca).
 
-Stated but not proved: `MetaMathlibExt.quaternaryRep_one_one_fifteen_fifteen_three_three_five_five_one_three_five_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#quaternary-rep-one-one-fifteen-fifteen-t).
+Stated but not proved: `MetaMathlibExt.quaternaryRep_one_one_fifteen_fifteen_three_three_five_five_one_three_five_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#quaternary-rep-one-one-fifteen-fifteen-t).
 
 ## A theta identity for $\varphi(q)^2\varphi(q^{10})^2 + 5\varphi(q^2)^2\varphi(q^5)^2$
 
@@ -118,7 +118,7 @@ one consistent with Theorem 1.1 and with Equation (3.13).
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 3.1.
 
-Stated but not proved: `MetaMathlibExt.phi_sq_phi_sq_ten_add_five_phi_sq_two_phi_sq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-phi-sq-ten-add-five-phi-sq-two-ph).
+Stated but not proved: `MetaMathlibExt.phi_sq_phi_sq_ten_add_five_phi_sq_two_phi_sq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-phi-sq-ten-add-five-phi-sq-two-ph).
 
 ## Eisenstein-series formula for $\varphi(q)^2\varphi(q^{10})^2$
 
@@ -137,7 +137,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 3.3, Equation (3.13).
 
-Stated but not proved: `MetaMathlibExt.phi_sq_mul_phi_sq_ten_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-mul-phi-sq-ten-eisenstein).
+Stated but not proved: `MetaMathlibExt.phi_sq_mul_phi_sq_ten_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-mul-phi-sq-ten-eisenstein).
 
 ## Eisenstein-series formula for $\varphi(q^2)^2\varphi(q^5)^2$
 
@@ -156,7 +156,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 3.3, Equation (3.14).
 
-Stated but not proved: `MetaMathlibExt.phi_sq_two_mul_phi_sq_five_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-two-mul-phi-sq-five-eisenstein).
+Stated but not proved: `MetaMathlibExt.phi_sq_two_mul_phi_sq_five_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-two-mul-phi-sq-five-eisenstein).
 
 ## A theta identity for $12\varphi(q)^2\varphi(q^{10})^2 + 12\varphi(q^2)^2\varphi(q^5)^2$
 
@@ -173,7 +173,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.twelve_phi_sq_phi_sq_ten_add_twelve_phi_sq_two_phi_sq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#twelve-phi-sq-phi-sq-ten-add-twelve-phi).
+Stated but not proved: `MetaMathlibExt.twelve_phi_sq_phi_sq_ten_add_twelve_phi_sq_two_phi_sq_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#twelve-phi-sq-phi-sq-ten-add-twelve-phi).
 
 ## Eisenstein-series formula for $\varphi(q)^2\varphi(q^{15})^2$
 
@@ -193,7 +193,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 4.2.
 
-Stated but not proved: `MetaMathlibExt.phi_sq_mul_phi_sq_fifteen_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-mul-phi-sq-fifteen-eisenstein).
+Stated but not proved: `MetaMathlibExt.phi_sq_mul_phi_sq_fifteen_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-mul-phi-sq-fifteen-eisenstein).
 
 ## A product identity for Ramanujan's $f(q)f(q^3)f(q^5)f(q^{15})$
 
@@ -210,7 +210,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 4.3.
 
-Stated but not proved: `MetaMathlibExt.q_mul_ramanujanF_one_three_five_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#q-mul-ramanujan-f-one-three-five-fifteen).
+Stated but not proved: `MetaMathlibExt.q_mul_ramanujanF_one_three_five_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#q-mul-ramanujan-f-one-three-five-fifteen).
 
 ## Eisenstein-series formula for $\varphi(q^3)^2\varphi(q^5)^2$
 
@@ -230,7 +230,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 4.4.
 
-Stated but not proved: `MetaMathlibExt.phi_sq_three_mul_phi_sq_five_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-three-mul-phi-sq-five-eisenstein).
+Stated but not proved: `MetaMathlibExt.phi_sq_three_mul_phi_sq_five_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-sq-three-mul-phi-sq-five-eisenstein).
 
 ## Eisenstein-series formula for $\varphi(q)\varphi(q^3)\varphi(q^5)\varphi(q^{15})$
 
@@ -249,7 +249,7 @@ $$
 
 - K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 4.6.
 
-Stated but not proved: `MetaMathlibExt.phi_mul_phi_three_mul_phi_five_mul_phi_fifteen_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-mul-phi-three-mul-phi-five-mul-phi-f).
+Stated but not proved: `MetaMathlibExt.phi_mul_phi_three_mul_phi_five_mul_phi_fifteen_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuaternaryQuadraticFormsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html#phi-mul-phi-three-mul-phi-five-mul-phi-f).
 
 ## Depends on
 
@@ -258,4 +258,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Representation numbers of quaternary quadratic forms](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/representation-numbers-of-quaternary-quadratic-f)

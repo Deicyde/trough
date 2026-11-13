@@ -8,7 +8,7 @@ proof: formalized
 
 # Hypothesis testing: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/index.html).
 
 Tests and their validity and power: Neyman–Pearson, likelihood-ratio, score and Wald tests, monotone likelihood ratio, exact conditional tests (Fisher, Hardy–Weinberg), rank tests and ROC area (Mann–Whitney), permutation p-values, multiple testing (Bonferroni, Holm, closed testing, Benjamini–Hochberg, false discovery rates), and meta-analysis and heterogeneity statistics.
 
@@ -29,7 +29,7 @@ assumed.
 
 - J. Neyman and E. S. Pearson, "On the problem of the most efficient tests of statistical hypotheses", Phil. Trans. R. Soc. Lond. A 231 (1933), 289–337, DOI `10.1098/rsta.1933.0009`.
 
-Formalized by `MathlibExt.Probability.Statistics.NeymanPearson.neyman_pearson_dominated_two_simple`, a theorem declared in [MathlibExt/Probability/Statistics/NeymanPearson.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/NeymanPearson.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/index.html#neyman-pearson-dominated-two-simple).
+Formalized by `MathlibExt.Probability.Statistics.NeymanPearson.neyman_pearson_dominated_two_simple`, a theorem declared in [MathlibExt/Probability/Statistics/NeymanPearson.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/NeymanPearson.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/index.html#neyman-pearson-dominated-two-simple).
 
 ## Depends on
 
@@ -38,4 +38,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hypothesis testing](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/hypothesis-testing)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/hypothesis-testing)

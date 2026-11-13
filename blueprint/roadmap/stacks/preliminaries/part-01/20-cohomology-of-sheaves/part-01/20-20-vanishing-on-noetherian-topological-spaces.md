@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.20 Vanishing on Noetherian topological spaces
 
-Section 20.20 of the Stacks Project, [Tag 02UU](https://stacks.math.columbia.edu/tag/02UU). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.20 of the Stacks Project, [Tag 02UU](https://stacks.math.columbia.edu/tag/02UU). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02UV, a lemma
 
 [Tag 02UV](https://stacks.math.columbia.edu/tag/02UV) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.hasCohomologyPushforwardIso_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean, line 901](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean#L901). The attribute's comment: “the canonical comparison is invertible”.
+**`Stacks.ClosedImmersion.hasCohomologyPushforwardIso_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean, line 901](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean#L901). The attribute's comment: “the canonical comparison is invertible”.
 
 > Closed embeddings have exact pushforward, and the derived global-sections
 > comparison is an isomorphism in every degree.
@@ -25,7 +25,7 @@ public theorem hasCohomologyPushforwardIso_of_isClosedEmbedding
     HasCohomologyPushforwardIso (hExtZ := hExtZ) (hExtX := hExtX) i
 ```
 
-**`Stacks.ClosedImmersion.cohomologyPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean, line 923](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean#L923).
+**`Stacks.ClosedImmersion.cohomologyPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean, line 923](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianCohomology.lean#L923).
 
 > For a closed embedding `i : Z ⟶ X`, cohomology of an abelian sheaf on `Z` is
 > canonically isomorphic, naturally in the sheaf, to the cohomology of its pushforward to `X`.
@@ -50,7 +50,7 @@ public noncomputable def cohomologyPushforwardIso
 
 [Tag 02UW](https://stacks.math.columbia.edu/tag/02UW) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_constantSheaf_of_irreducibleSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/IrreducibleSpaces.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/IrreducibleSpaces.lean#L478).
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_constantSheaf_of_irreducibleSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/IrreducibleSpaces.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/IrreducibleSpaces.lean#L479).
 
 > **Stacks 02UW.** Let `X` be an irreducible topological space and `A` an abelian group. Then
 > `H^p(X, A) = 0` for every `p > 0`, where `A` also denotes the constant sheaf with value `A`.
@@ -67,7 +67,7 @@ theorem subsingleton_sheafH_constantSheaf_of_irreducibleSpace (A : AddCommGrpCat
 
 [Tag 0A38](https://stacks.math.columbia.edu/tag/0A38) in the Stacks Project.
 
-**`Stacks.Sheaves.ConstantIntegerSubsheaves.exists_filtration_of_finitelyGeneratedByCompactOpenSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheaves.lean, line 1745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheaves.lean#L1745).
+**`Stacks.Sheaves.ConstantIntegerSubsheaves.exists_filtration_of_finitelyGeneratedByCompactOpenSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheaves.lean, line 1745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheaves.lean#L1745).
 
 > A subsheaf of the constant sheaf of integers generated by finitely many sections over
 > quasi-compact opens, on a space whose quasi-compact opens are closed under intersection, has a
@@ -96,7 +96,7 @@ theorem exists_filtration_of_finitelyGeneratedByCompactOpenSections [QuasiSepara
 
 [Tag 02UX](https://stacks.math.columbia.edu/tag/02UX) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_of_subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/QuasiCompactBasis.lean, line 1103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/QuasiCompactBasis.lean#L1103).
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_of_subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/QuasiCompactBasis.lean, line 1103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/QuasiCompactBasis.lean#L1103).
 
 > **[Stacks, Tag 02UX]** (a special case of [Tohoku, Proposition 3.6.1]). Let `X` be a
 > topological space and let `d ≥ 0` be an integer. Assume
@@ -123,7 +123,7 @@ theorem subsingleton_sheafH_of_subsingleton_sheafH_integerExtensionByZero (d : �
 
 [Tag 0BX0](https://stacks.math.columbia.edu/tag/0BX0) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.eq_bot_or_eq_top_or_eq_basicOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L227). The attribute's comment: “the lattice of opens of the space: ∅, X and the U\_n”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.eq_bot_or_eq_top_or_eq_basicOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L227). The attribute's comment: “the lattice of opens of the space: ∅, X and the U\_n”.
 
 > **The opens of `Chain` are exactly `∅`, the whole space, and the sets `{i | i ≤ n}`.**
 
@@ -132,7 +132,7 @@ lemma eq_bot_or_eq_top_or_eq_basicOpen (W : Opens Chain.{u}) :
     W = ⊥ ∨ W = ⊤ ∨ ∃ n, W = basicOpen.{u} n
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.bijective_towerComparison_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L518). The attribute's comment: “an abelian sheaf on the space is the inverse system of its sections over the U\_n; the clause `Γ(X, ℱ) = lim A_n` is globalSectionsAddEquiv”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.bijective_towerComparison_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L518). The attribute's comment: “an abelian sheaf on the space is the inverse system of its sections over the U\_n; the clause `Γ(X, ℱ) = lim A_n` is globalSectionsAddEquiv”.
 
 > **An abelian sheaf on `Chain` is the same thing as an inverse system of abelian groups.**
 > The comparison map is bijective on sections over every open: the index sets of the basic opens
@@ -144,7 +144,7 @@ lemma bijective_towerComparison_app (W : (Opens Chain.{u})ᵒᵖ) :
     Function.Bijective ((towerComparison F).app W)
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.globalSectionsAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L555). The attribute's comment: “the clause `Γ(X, ℱ) = lim A_n` with `A_n = ℱ(U_n)`”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.globalSectionsAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L555). The attribute's comment: “the clause `Γ(X, ℱ) = lim A_n` with `A_n = ℱ(U_n)`”.
 
 > **`Γ(X, ℱ) = lim ℱ(Uₙ)`.** Global sections of an abelian sheaf on `Chain` are the inverse
 > limit of its inverse system of sections over the basic opens.
@@ -154,7 +154,7 @@ noncomputable def globalSectionsAddEquiv :
     F.obj.obj (op (⊤ : Opens Chain.{u})) ≃+ towerSections (sheafTower F) ⊤
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.hasBasisOfCompactOpens_chain`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L721). The attribute's comment: “condition (2) of Tag 02UX: a basis of quasi-compact opens”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.hasBasisOfCompactOpens_chain`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 721](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L721). The attribute's comment: “condition (2) of Tag 02UX: a basis of quasi-compact opens”.
 
 > **Condition (2) of [Stacks, Tag 02UX]**: `Chain` has a basis of quasi-compact opens, namely
 > the finite opens `{i | i ≤ n}`.
@@ -163,7 +163,7 @@ noncomputable def globalSectionsAddEquiv :
 lemma hasBasisOfCompactOpens_chain : PrespectralSpace Chain.{u}
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.interCompactOpenIsCompact_chain`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L736). The attribute's comment: “condition (3) of Tag 02UX: quasi-compact opens have quasi-compact intersections”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.interCompactOpenIsCompact_chain`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L736). The attribute's comment: “condition (3) of Tag 02UX: quasi-compact opens have quasi-compact intersections”.
 
 > **Condition (3) of [Stacks, Tag 02UX]**: the intersection of two quasi-compact opens of
 > `Chain` is quasi-compact, both being finite.
@@ -172,7 +172,7 @@ lemma hasBasisOfCompactOpens_chain : PrespectralSpace Chain.{u}
 lemma interCompactOpenIsCompact_chain : QuasiSeparatedSpace Chain.{u}
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.exists_not_subsingleton_sheafH_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L814). The attribute's comment: “the existence of an abelian sheaf with nonzero H¹; the lattice of opens, the identification of abelian sheaves with inverse systems and conditions (2) and (3) of Tag 02UX are given by eq\_bot\_or\_eq\_top\_or\_eq\_basicOpen, bijective\_towerComparison\_app, globalSectionsAddEquiv, hasBasisOfCompactOpens\_chain and interCompactOpenIsCompact\_chain; condition (4), the vanishing H^p(X, j\_!ℤ\_U) = 0 for p ≥ 1, which the source leaves to the reader, is subsingleton\_sheafH\_integerExtensionByZero, proved through the identification j\_!ℤ\_\{U n} = 𝒦ₙ of integerExtensionByZeroIsoKernel”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.exists_not_subsingleton_sheafH_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L814). The attribute's comment: “the existence of an abelian sheaf with nonzero H¹; the lattice of opens, the identification of abelian sheaves with inverse systems and conditions (2) and (3) of Tag 02UX are given by eq\_bot\_or\_eq\_top\_or\_eq\_basicOpen, bijective\_towerComparison\_app, globalSectionsAddEquiv, hasBasisOfCompactOpens\_chain and interCompactOpenIsCompact\_chain; condition (4), the vanishing H^p(X, j\_!ℤ\_U) = 0 for p ≥ 1, which the source leaves to the reader, is subsingleton\_sheafH\_integerExtensionByZero, proved through the identification j\_!ℤ\_\{U n} = 𝒦ₙ of integerExtensionByZeroIsoKernel”.
 
 > **[Stacks, Tag 0BX0].** Let `X` be the natural numbers with the topology whose opens are
 > `∅`, `X` and `U_n = {i | i ≤ n}`. An abelian sheaf on `X` is an inverse system of abelian groups
@@ -186,7 +186,7 @@ theorem exists_not_subsingleton_sheafH_one :
       ¬ Subsingleton (Sheaf.H.{u, u, u, u} F 1)
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 1660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L1660). The attribute's comment: “condition (4) of Tag 02UX for this space, which the source leaves to the reader: H^p(X, j\_!ℤ\_U) = 0 for every p > 0 and every quasi-compact open U”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 1660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L1660). The attribute's comment: “condition (4) of Tag 02UX for this space, which the source leaves to the reader: H^p(X, j\_!ℤ\_U) = 0 for every p > 0 and every quasi-compact open U”.
 
 > **Condition (4) of [Stacks, Tag 02UX] over `Chain`**: the vanishing `Hᵖ(X, j_!ℤ_U) = 0` for
 > every `p > 0` and every quasi-compact open `U` of `Chain`.  The quasi-compact opens are `∅` and
@@ -210,7 +210,7 @@ theorem subsingleton_sheafH_integerExtensionByZero
 
 [Tag 02UY](https://stacks.math.columbia.edu/tag/02UY) in the Stacks Project.
 
-**`Stacks.Sheaves.ConstantIntegerSubsheaves.exists_open_restrict_iso_constant_zmultiples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheavesIrreducible.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheavesIrreducible.lean#L501).
+**`Stacks.Sheaves.ConstantIntegerSubsheaves.exists_open_restrict_iso_constant_zmultiples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheavesIrreducible.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheaf/ConstantIntegerSubsheavesIrreducible.lean#L501).
 
 > An abelian subsheaf of the constant integer sheaf is, on some nonempty open of an
 > irreducible space, the constant sheaf of `dℤ`, compatibly with its inclusion into the
@@ -256,7 +256,7 @@ theorem exists_open_restrict_iso_constant_zmultiples
 
 [Tag 02UZ](https://stacks.math.columbia.edu/tag/02UZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_cohomologyOverField_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean#L141). The attribute's comment: “the vanishing Hⁱ(X, ℱ) = 0 for i above the dimension, for the modules on a scheme proper over a field, read through the comparison of Tag 01F1 (1) with the cohomology of the underlying abelian sheaf”.
+**`AlgebraicGeometry.isZero_cohomologyOverField_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean#L141). The attribute's comment: “the vanishing Hⁱ(X, ℱ) = 0 for i above the dimension, for the modules on a scheme proper over a field, read through the comparison of Tag 01F1 (1) with the cohomology of the underlying abelian sheaf”.
 
 > **Stacks Project, Tag 02UZ.** For `f : X ⟶ Spec k` proper and `X` of topological Krull
 > dimension at most `d`, the cohomology `Hⁱ(X, ℱ)` of every `𝒪_X`-module vanishes for `i > d`.
@@ -273,7 +273,7 @@ public theorem isZero_cohomologyOverField_of_topologicalKrullDim_le (k : Type u)
     IsZero (cohomologyOverField k f F i)
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.secondCohomologyVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean#L213). The attribute's comment: “degree two on a one-dimensional proper scheme over a field, which is what Situation 0B5D consumes”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.secondCohomologyVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingExtension.lean#L213). The attribute's comment: “degree two on a one-dimensional proper scheme over a field, which is what Situation 0B5D consumes”.
 
 > **`H²(X, -)` vanishes in Situation [Stacks, Tag 0B5D].** This is [Stacks, Tag 02UZ] on the
 > one-dimensional proper scheme `X`.
@@ -282,7 +282,7 @@ public theorem isZero_cohomologyOverField_of_topologicalKrullDim_le (k : Type u)
 public theorem secondCohomologyVanishing : S.SecondCohomologyVanishing
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NoetherianSpaces.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NoetherianSpaces.lean#L411). The attribute's comment: “dimension zero”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NoetherianSpaces.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NoetherianSpaces.lean#L411). The attribute's comment: “dimension zero”.
 
 > If `X` is a Noetherian topological space of topological Krull dimension `0` and `F` is an
 > abelian sheaf on `X`, then `H^p(X, F) = 0` for every `p > 0`.
@@ -297,7 +297,7 @@ theorem subsingleton_sheafCohomology_of_noetherianSpace_of_dim_eq_zero
     Subsingleton (Sheaf.H.{w', w, u, u} F p)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L340).
+**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L340).
 
 > Grothendieck's vanishing theorem. Let `X` be a Noetherian topological space of topological
 > Krull dimension at most `d` and let `F` be an abelian sheaf on `X`. Then `H^p(X, F) = 0` for every
@@ -312,7 +312,7 @@ theorem subsingleton_sheafCohomology_of_noetherianSpace_of_dim_le
     Subsingleton (Sheaf.H.{u, u, u, u} F p)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_le_of_coefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesCoefficientUniverse.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesCoefficientUniverse.lean#L194). The attribute's comment: “with the coefficient universe free of the universe of the space”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafCohomology_of_noetherianSpace_of_dim_le_of_coefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesCoefficientUniverse.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpacesCoefficientUniverse.lean#L194). The attribute's comment: “with the coefficient universe free of the universe of the space”.
 
 > **[Stacks, Tag 02UZ], Grothendieck's vanishing theorem, with the coefficient universe free of
 > the space's.**  Let `X : Type u` be a Noetherian topological space of topological Krull dimension
@@ -344,4 +344,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.20, Tag 02UU](https://stacks.math.columbia.edu/tag/02UU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

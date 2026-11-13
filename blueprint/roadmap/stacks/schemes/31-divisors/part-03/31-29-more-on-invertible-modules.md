@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.29 More on invertible modules
 
-Section 31.29 of the Stacks Project, [Tag 0BD6](https://stacks.math.columbia.edu/tag/0BD6). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.29 of the Stacks Project, [Tag 0BD6](https://stacks.math.columbia.edu/tag/0BD6). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BD7, a lemma
 
 [Tag 0BD7](https://stacks.math.columbia.edu/tag/0BD7) in the Stacks Project.
 
-**`Stacks.InvertiblePullback.exists_isInvertible_pullback_iso_of_isTrivial_genericFiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertiblePullbackFlat/LocalFamilyAgreement.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertiblePullbackFlat/LocalFamilyAgreement.lean#L330).
+**`Stacks.InvertiblePullback.exists_isInvertible_pullback_iso_of_isTrivial_genericFiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertiblePullbackFlat/LocalFamilyAgreement.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertiblePullbackFlat/LocalFamilyAgreement.lean#L330).
 
 > **Stacks Project, Tag 0BD7.** Let `φ : X ⟶ Y` be a morphism of schemes and `ℒ` an invertible
 > `𝒪_X`-module. Assume `X` is locally Noetherian, `Y` is locally Noetherian, integral and normal,
@@ -55,7 +55,7 @@ theorem exists_isInvertible_pullback_iso_of_isTrivial_genericFiber_of_flat
 
 [Tag 0BD8](https://stacks.math.columbia.edu/tag/0BD8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isEffectiveCartierDivisor_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtension.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtension.lean#L377).
+**`AlgebraicGeometry.exists_isEffectiveCartierDivisor_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtension.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtension.lean#L377).
 
 > **Stacks Project, Tag 0BD8.** An effective Cartier divisor on an open subscheme of a locally
 > Noetherian scheme extends to an effective Cartier divisor on the whole scheme, provided the local
@@ -73,7 +73,7 @@ theorem exists_isEffectiveCartierDivisor_comap_eq {X : Scheme.{u}} [IsLocallyNoe
 
 [Tag 0BD9](https://stacks.math.columbia.edu/tag/0BD9) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isInvertible_pullback_iso_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtensionInvertibleLocallyNoetherian.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtensionInvertibleLocallyNoetherian.lean#L676). The attribute's comment: “the locally Noetherian case, i.e. the tag itself”.
+**`AlgebraicGeometry.exists_isInvertible_pullback_iso_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtensionInvertibleLocallyNoetherian.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/UFDExtensionInvertibleLocallyNoetherian.lean#L676). The attribute's comment: “the locally Noetherian case, i.e. the tag itself”.
 
 > **[Stacks, Tag 0BD9].** Let `X` be a locally Noetherian scheme, let `U ⊆ X` be an open
 > subscheme, and let `L` be an invertible `𝒪_U`-module. If the local ring `𝒪_{X, x}` is a unique
@@ -95,7 +95,7 @@ theorem exists_isInvertible_pullback_iso_of_isLocallyNoetherian {X : Scheme.{u}}
 
 [Tag 0BDA](https://stacks.math.columbia.edu/tag/0BDA) in the Stacks Project.
 
-**`Stacks.PicardUFD.subsingleton_picardGroup_open_spectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean#L205). The attribute's comment: “part (1)”. References: SGA 1 XI (6.5), “factorial-ring example”.
+**`Stacks.PicardUFD.subsingleton_picardGroup_open_spectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean#L205). The attribute's comment: “part (1)”. References: SGA 1 XI (6.5), “factorial-ring example”.
 
 > **Stacks Project, Tag 0BDA, part (1).** The Picard group of any open subscheme of the
 > spectrum of a unique factorization domain is trivial.
@@ -110,7 +110,7 @@ theorem subsingleton_picardGroup_open_spectrum (R : Type u) [CommRing R] [IsDoma
     Subsingleton (PicardGroup U.toScheme.presheaf U.toScheme.ringCatSheaf.2)
 ```
 
-**`Stacks.PicardUFD.subsingleton_picardGroup_open_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean#L229). The attribute's comment: “part (2)”. References: EGA I (2.4.8), “more general”.
+**`Stacks.PicardUFD.subsingleton_picardGroup_open_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardGroup/OpenUFD.lean#L229). The attribute's comment: “part (2)”. References: EGA I (2.4.8), “more general”.
 
 > **Stacks Project, Tag 0BDA, part (2).** The Picard group of any open subscheme of affine
 > space over a unique factorization domain is trivial. In particular this holds over a field.
@@ -129,7 +129,7 @@ theorem subsingleton_picardGroup_open_affineSpace (R : Type u) [CommRing R] [IsD
 
 [Tag 0BXJ](https://stacks.math.columbia.edu/tag/0BXJ) in the Stacks Project.
 
-**`Stacks.PicardUFD.twistPicardHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1037). The attribute's comment: “injectivity of m ↦ 𝒪(m), for 0 < n; the source states no restriction, but at n = 0 the map is the zero map into the trivial Picard group of ℙ⁰\_R ≅ Spec R and is not injective”.
+**`Stacks.PicardUFD.twistPicardHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1037). The attribute's comment: “injectivity of m ↦ 𝒪(m), for 0 < n; the source states no restriction, but at n = 0 the map is the zero map into the trivial Picard group of ℙ⁰\_R ≅ Spec R and is not injective”.
 
 > **The homomorphism `ℤ ⟶ Pic(ℙⁿ_R)`, `m ↦ 𝒪(m)`, is injective** for `R` a domain and
 > `0 < n`. A trivialization of `𝒪(m)` makes the transition unit `(T₀ / T₁) ^ m` a ratio of
@@ -141,7 +141,7 @@ theorem twistPicardHom_injective [IsDomain R] (hn : 0 < n) :
     Function.Injective (twistPicardHom R n)
 ```
 
-**`Stacks.PicardUFD.twistPicardHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1470). The attribute's comment: “surjectivity of m ↦ 𝒪(m) for the projective line, i.e. for n = 1”.
+**`Stacks.PicardUFD.twistPicardHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1470). The attribute's comment: “surjectivity of m ↦ 𝒪(m) for the projective line, i.e. for n = 1”.
 
 > **Stacks Project, Tag 0BXJ.** The homomorphism `ℤ ⟶ Pic(ℙ¹_R)`, `m ↦ 𝒪(m)`, is surjective for
 > `R` a unique factorization domain: every invertible module on the projective line is a twist.
@@ -151,7 +151,7 @@ theorem twistPicardHom_surjective [IsDomain R] [UniqueFactorizationMonoid R] :
     Function.Surjective (twistPicardHom R 1)
 ```
 
-**`Stacks.PicardUFD.twistPicardHom_surjective_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L671). The attribute's comment: “surjectivity of m ↦ 𝒪(m), for every n”.
+**`Stacks.PicardUFD.twistPicardHom_surjective_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L672). The attribute's comment: “surjectivity of m ↦ 𝒪(m), for every n”.
 
 > **Stacks Project, Tag 0BXJ.** The homomorphism `ℤ ⟶ Pic(ℙⁿ_R)`, `m ↦ 𝒪(m)`, is surjective
 > for `R` a unique factorization domain and every `n`.
@@ -161,7 +161,7 @@ theorem twistPicardHom_surjective_general :
     Function.Surjective (twistPicardHom R n)
 ```
 
-**`Stacks.PicardUFD.twistPicardAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L693). The attribute's comment: “the isomorphism ℤ ≃+ Pic(ℙⁿ\_R) carrying m to the class of 𝒪(m), for 0 < n”.
+**`Stacks.PicardUFD.twistPicardAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L694). The attribute's comment: “the isomorphism ℤ ≃+ Pic(ℙⁿ\_R) carrying m to the class of 𝒪(m), for 0 < n”.
 
 > **Stacks Project, Tag 0BXJ.** The Picard group of `ℙⁿ_R` is `ℤ` for `R` a unique
 > factorization domain and `0 < n`, the isomorphism sending `m` to the class of `𝒪(m)`.
@@ -172,7 +172,7 @@ def twistPicardAddEquiv (hn : 0 < n) :
       (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) R)).picardGroup
 ```
 
-**`Stacks.PicardUFD.not_injective_twistPicardHom_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L726). The attribute's comment: “the n = 0 boundary case: m ↦ 𝒪(m) is the zero map into the trivial group Pic(ℙ⁰\_R) and is not injective, so the unrestricted source statement fails there”.
+**`Stacks.PicardUFD.not_injective_twistPicardHom_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L727). The attribute's comment: “the n = 0 boundary case: m ↦ 𝒪(m) is the zero map into the trivial group Pic(ℙ⁰\_R) and is not injective, so the unrestricted source statement fails there”.
 
 > **The boundary case of Tag 0BXJ.** The source states no restriction on `n`, but at `n = 0`
 > the Picard group of `ℙ⁰_R` is trivial, so `m ↦ 𝒪(m)` is the zero map and is not injective.
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.29, Tag 0BD6](https://stacks.math.columbia.edu/tag/0BD6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

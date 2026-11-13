@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.7 Surjective on objects
 
-Section 97.7 of the Stacks Project, [Tag 06D4](https://stacks.math.columbia.edu/tag/06D4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.7 of the Stacks Project, [Tag 06D4](https://stacks.math.columbia.edu/tag/06D4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06D5, a lemma
 
 [Tag 06D5](https://stacks.math.columbia.edu/tag/06D5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean#L94).
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean#L94).
 
 > **Stacks 06D5.** Surjectivity on objects is preserved by base change: if `p : 𝒳 ⟶ 𝒴` is
 > surjective on objects then so is the second projection `𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of its base change along
@@ -37,7 +37,7 @@ theorem isSurjectiveOnObjects_twoFibreProductSnd
 
 [Tag 06D6](https://stacks.math.columbia.edu/tag/06D6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean#L140).
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjects.lean#L140).
 
 > **Stacks 06D6.** A composite of two 1-morphisms surjective on objects is surjective on
 > objects: compose the two field extensions.
@@ -57,7 +57,7 @@ theorem isSurjectiveOnObjects_comp
 
 [Tag 06D7](https://stacks.math.columbia.edu/tag/06D7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_iff_isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjectsRelative.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjectsRelative.lean#L388).
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_iff_isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjectsRelative.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveOnObjectsRelative.lean#L388).
 
 > **Stacks 06D7.** A 1-morphism of categories fibred in groupoids over the big fppf site of `S`
 > which is representable by algebraic spaces is surjective on objects in the sense of Stacks 06D4
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.7, Tag 06D4](https://stacks.math.columbia.edu/tag/06D4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

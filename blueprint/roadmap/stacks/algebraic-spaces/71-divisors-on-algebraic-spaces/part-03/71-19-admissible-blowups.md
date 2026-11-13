@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.19 Admissible blowups
 
-Section 71.19 of the Stacks Project, [Tag 086A](https://stacks.math.columbia.edu/tag/086A). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.19 of the Stacks Project, [Tag 086A](https://stacks.math.columbia.edu/tag/086A). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 086B, a definition
 
 [Tag 086B](https://stacks.math.columbia.edu/tag/086B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsAdmissibleBlowup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowup.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowup.lean#L229).
+**`AlgebraicGeometry.Space.IsAdmissibleBlowup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowup.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowup.lean#L229).
 
 > **Stacks 086B.** A morphism `f : X' ⟶ X` of algebraic spaces over `S` is a
 > **`U`-admissible blowup**, for an open subspace `U ⊆ X`, when there is a closed subspace
@@ -37,7 +37,7 @@ abbrev IsAdmissibleBlowup (U : OpenSubspaces B S hS X.1) (f : X' ⟶ X) : Prop
 
 [Tag 086C](https://stacks.math.columbia.edu/tag/086C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAdmissibleBlowup_comp_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupComposition.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupComposition.lean#L47).
+**`AlgebraicGeometry.Space.isAdmissibleBlowup_comp_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupComposition.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupComposition.lean#L47).
 
 > Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated algebraic space over `S`
 > and let `U ⊆ X` be an open subspace.  Let `b : X' ⟶ X` be a `U`-admissible blowup and let
@@ -66,7 +66,7 @@ theorem isAdmissibleBlowup_comp_of_isQuasiCompactSpace
 
 [Tag 086D](https://stacks.math.columbia.edu/tag/086D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsBlowupAlong.exists_restrictionToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtension.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtension.lean#L201). The attribute's comment: “unconditional: the restriction over an open subspace `V` of the blowup of `X` in `Z` is the blowup of `V` in `Z ∩ V`”.
+**`AlgebraicGeometry.Space.IsBlowupAlong.exists_restrictionToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtension.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtension.lean#L201). The attribute's comment: “unconditional: the restriction over an open subspace `V` of the blowup of `X` in `Z` is the blowup of `V` in `Z ∩ V`”.
 
 > **The blowup of `X` in a closed subspace `Z` restricts, over an open subspace `V ⊆ X`, to
 > the blowup of `V` in `Z ∩ V`.**  This is the clause "whose restriction to `V` is `V'`" of Tag
@@ -85,7 +85,7 @@ theorem IsBlowupAlong.exists_restrictionToOpen {X X' : AlgebraicSpaces B S hS} {
         IsBlowupAlong B S hS (closedSubspaceRestrict B S hS X V Z) p
 ```
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtensionFromOpen.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtensionFromOpen.lean#L64).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtensionFromOpen.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupExtensionFromOpen.lean#L64).
 
 > **Stacks 086D.**  Let `X` be a quasi-compact and quasi-separated algebraic space over `S`,
 > let `U, V ⊆ X` be quasi-compact open subspaces and let `b : V' ⟶ V` be a `U ∩ V`-admissible
@@ -119,7 +119,7 @@ theorem exists_isAdmissibleBlowup_isPullback'
 
 [Tag 086E](https://stacks.math.columbia.edu/tag/086E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_factoring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean#L425). The attribute's comment: “clause (a): a U-admissible blowup factoring through each member of a finite family of U-admissible blowups, with no assumed inputs beyond the Stacks 085Q construction data for X -- a presentation P, the HasSheafify universe choice, and the three B.Contains side conditions on the relative Projs, asked for EVERY closed subspace of X because the centre is the sum of the given centres and is built inside the proof, so it cannot be named in advance -- none of which occurs in the conclusion”.
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_factoring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean#L425). The attribute's comment: “clause (a): a U-admissible blowup factoring through each member of a finite family of U-admissible blowups, with no assumed inputs beyond the Stacks 085Q construction data for X -- a presentation P, the HasSheafify universe choice, and the three B.Contains side conditions on the relative Projs, asked for EVERY closed subspace of X because the centre is the sum of the given centres and is built inside the proof, so it cannot be named in advance -- none of which occurs in the conclusion”.
 
 > **Stacks 086E, clause (a).**  Let `S` be a scheme, let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S`, let `U ⊆ X` be a quasi-compact open subspace and let
@@ -164,7 +164,7 @@ theorem exists_isAdmissibleBlowup_factoring
       ∃ g : ∀ i, X' ⟶ Xi i, ∀ i, g i ≫ b i = c
 ```
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_factoring_isAdmissibleBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean#L497). The attribute's comment: “clause (b): the factor morphisms of the dominating blowup are themselves admissible blowups, with no assumed inputs beyond the Stacks 085Q construction data for X and for the X i -- presentations P and Pi, the HasSheafify universe choice, and the B.Contains side conditions on the relative Projs, asked for EVERY closed subspace of X and of each X i because the centres are built inside the proof and cannot be named in advance -- none of which occurs in the conclusion”.
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_factoring_isAdmissibleBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupDominating.lean#L497). The attribute's comment: “clause (b): the factor morphisms of the dominating blowup are themselves admissible blowups, with no assumed inputs beyond the Stacks 085Q construction data for X and for the X i -- presentations P and Pi, the HasSheafify universe choice, and the B.Contains side conditions on the relative Projs, asked for EVERY closed subspace of X and of each X i because the centres are built inside the proof and cannot be named in advance -- none of which occurs in the conclusion”.
 
 > **Stacks 086E, clause (b).**  In the situation of clause (a) the dominating `U`-admissible
 > blowup `c : X' ⟶ X` can be chosen so that, in addition, each factor morphism `g i : X' ⟶ X i` is
@@ -226,7 +226,7 @@ theorem exists_isAdmissibleBlowup_factoring_isAdmissibleBlowup
 
 [Tag 086F](https://stacks.math.columbia.edu/tag/086F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_disjoint_openSubspace_decomposition'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupSeparationQuasiCompact.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupSeparationQuasiCompact.lean#L117).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_disjoint_openSubspace_decomposition'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupSeparationQuasiCompact.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupSeparationQuasiCompact.lean#L117).
 
 > **Stacks 086F.**  Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S` and let `U, V ⊆ X` be quasi-compact open subspaces with disjoint sets
@@ -273,4 +273,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.19, Tag 086A](https://stacks.math.columbia.edu/tag/086A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.14 Quasi-coherent sheaves and presentations
 
-Section 96.14 of the Stacks Project, [Tag 06WS](https://stacks.math.columbia.edu/tag/06WS). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.14 of the Stacks Project, [Tag 06WS](https://stacks.math.columbia.edu/tag/06WS). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GQC, a lemma
 
 [Tag 0GQC](https://stacks.math.columbia.edu/tag/0GQC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_etaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChartRestrictionModuleIdentification.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChartRestrictionModuleIdentification.lean#L672).
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_etaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChartRestrictionModuleIdentification.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChartRestrictionModuleIdentification.lean#L672).
 
 > Let `𝒳 ⥤ (Sch/S)_{fppf}` be a category fibred in groupoids representable by the algebraic
 > space `U`, through a chosen equivalence over the site as in Stacks 073M. If `ℱ` is a locally
@@ -39,15 +39,15 @@ theorem isQuasicoherentOnSite_etaleRestriction
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isEquivalence_quasicoherentRestriction_unconditional`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChartSliceCounitDescent.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L34) (StacksFrontier): “the equivalence clause, with no hypothesis beyond the source's, at the module universe `u` and for `𝒳 : Type (u + 1)` with `Category.{u} 𝒳`. `hres` is `AlgebraicGeometry.Space.restrictionPreservesQuasicoherent`, `hqcoh` is `AlgebraicGeometry.Space.projectionPullbackPreservesQuasicoherent`, `hunit` is `AlgebraicGeometry.Space.isIso_unit_moduleRestriction'`, and `hcounit` is `AlgebraicGeometry.Space.projectionPullbackCounitIsIso'`, the source's chart-slice argument over `AlgebraicGeometry.Space.chartSliceOpensAreCharts`. The pullback clause is registered separately on `AlgebraicGeometry.Space.nonempty_projectionPullbackModules_comp_iso`”.
-- [`AlgebraicGeometry.Space.nonempty_inv_toSiteModules_iso_projectionModulePullback_unconditional`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChartSliceCounitDescent.lean#L318), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L44) (StacksFrontier): “the quasi-inverse is the inverse image along the projection, with no hypothesis beyond the source's, at the module universe `u` and for `𝒳 : Type (u + 1)` with `Category.{u} 𝒳`”.
-- [`AlgebraicGeometry.Space.nonempty_projectionPullbackModules_comp_iso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionPullbackClause.lean#L154), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L49) (StacksFrontier): “compatibility with pullback”.
+- [`AlgebraicGeometry.Space.isEquivalence_quasicoherentRestriction_unconditional`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChartSliceCounitDescent.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L34) (StacksFrontier): “the equivalence clause, with no hypothesis beyond the source's, at the module universe `u` and for `𝒳 : Type (u + 1)` with `Category.{u} 𝒳`. `hres` is `AlgebraicGeometry.Space.restrictionPreservesQuasicoherent`, `hqcoh` is `AlgebraicGeometry.Space.projectionPullbackPreservesQuasicoherent`, `hunit` is `AlgebraicGeometry.Space.isIso_unit_moduleRestriction'`, and `hcounit` is `AlgebraicGeometry.Space.projectionPullbackCounitIsIso'`, the source's chart-slice argument over `AlgebraicGeometry.Space.chartSliceOpensAreCharts`. The pullback clause is registered separately on `AlgebraicGeometry.Space.nonempty_projectionPullbackModules_comp_iso`”.
+- [`AlgebraicGeometry.Space.nonempty_inv_toSiteModules_iso_projectionModulePullback_unconditional`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChartSliceCounitDescent.lean#L318), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L44) (StacksFrontier): “the quasi-inverse is the inverse image along the projection, with no hypothesis beyond the source's, at the module universe `u` and for `𝒳 : Type (u + 1)` with `Category.{u} 𝒳`”.
+- [`AlgebraicGeometry.Space.nonempty_projectionPullbackModules_comp_iso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionPullbackClause.lean#L154), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L49) (StacksFrontier): “compatibility with pullback”.
 
 ## Tag 06WT, a proposition
 
 [Tag 06WT](https://stacks.math.columbia.edu/tag/06WT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStackModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean#L88). The attribute's comment: “the inverse image of modules along the canonical map from the object space, the first step of the forward functor”.
+**`AlgebraicGeometry.Stack.quotientStackModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean#L88). The attribute's comment: “the inverse image of modules along the canonical map from the object space, the first step of the forward functor”.
 
 > The functor `ℱ ↦ x^*ℱ`, the inverse image of sheaves of modules of Stacks 06WE along the
 > canonical projection `x : 𝒮_U ⟶ [U/R]` of Stacks 044R.
@@ -62,7 +62,7 @@ def quotientStackModulePullback (G : GroupoidInAlgebraicSpaces C S hS B) :
           (fibredCategory C S hS G.objects.obj).property C.topology le_rfl)
 ```
 
-**`AlgebraicGeometry.Stack.quotientPrestackQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean#L104). The attribute's comment: “the restriction of quasi-coherent modules along the stackification map of the pointwise quotient”.
+**`AlgebraicGeometry.Stack.quotientPrestackQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackQuasicoherentModules.lean#L104). The attribute's comment: “the restriction of quasi-coherent modules along the stackification map of the pointwise quotient”.
 
 > The restriction of quasi-coherent modules along the stackification map `[U/_pR] ⟶ [U/R]`: the
 > inverse image of modules of Stacks 06WE, which preserves quasi-coherence by Stacks 06WH.
@@ -75,7 +75,7 @@ def quotientPrestackQuasicoherentPullback (G : GroupoidInAlgebraicSpaces C S hS 
         (isFiberedInGroupoids_quotientPrestack G)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackQuasicoherentEquivalence.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackQuasicoherentEquivalence.lean#L53).
+**`AlgebraicGeometry.Stack.quotientStackQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackQuasicoherentEquivalence.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackQuasicoherentEquivalence.lean#L53).
 
 > For a groupoid in algebraic spaces `(U, R, s, t, c)` over `S` with quotient stack `𝒳 = [U/R]`,
 > the category of quasi-coherent `𝒪_𝒳`-modules is equivalent to the category of quasi-coherent
@@ -87,7 +87,7 @@ def quotientStackQuasicoherentEquivalence :
         (isFiberedInGroupoids_quotientStack G) ≌ Space.QuasicoherentModule C S hS G
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentEquivalenceGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean#L83). The attribute's comment: “the equivalence QCoh(𝒪\_\{[U/R]}) ≌ QCoh(U, R, s, t, c), with functor ℱ ↦ (x^*ℱ|\_\{U\_étale}, α)”.
+**`AlgebraicGeometry.Stack.quasicoherentEquivalenceGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean#L83). The attribute's comment: “the equivalence QCoh(𝒪\_\{[U/R]}) ≌ QCoh(U, R, s, t, c), with functor ℱ ↦ (x^*ℱ|\_\{U\_étale}, α)”.
 
 > For a groupoid `(U, R, s, t, c)` in algebraic spaces, the category of quasi-coherent modules
 > on the quotient stack `[U/R]` is equivalent to the category of quasi-coherent modules on
@@ -104,7 +104,7 @@ def quasicoherentEquivalenceGroupoid (G : GroupoidInAlgebraicSpaces C S hS A) :
 
 [Tag 076S](https://stacks.math.columbia.edu/tag/076S) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStackObjectRestrictionMap_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackHomRestriction.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackHomRestriction.lean#L415).
+**`AlgebraicGeometry.Stack.quotientStackObjectRestrictionMap_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackHomRestriction.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuotientStackHomRestriction.lean#L415).
 
 > **Stacks 076S.**  Let `(U, R, s, t, c)` be a groupoid in algebraic spaces over `S` whose source
 > and target are flat and locally of finite presentation, let `𝒳 = [U/R]` be the quotient stack and
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.14, Tag 06WS](https://stacks.math.columbia.edu/tag/06WS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

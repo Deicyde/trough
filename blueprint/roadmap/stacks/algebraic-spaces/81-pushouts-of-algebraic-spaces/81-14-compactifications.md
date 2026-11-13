@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.14 Compactifications
 
-Section 81.14 of the Stacks Project, [Tag 0F44](https://stacks.math.columbia.edu/tag/0F44). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.14 of the Stacks Project, [Tag 0F44](https://stacks.math.columbia.edu/tag/0F44). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F45, a lemma
 
 [Tag 0F45](https://stacks.math.columbia.edu/tag/0F45) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_elementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquare.lean, line 1235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquare.lean#L1235). The attribute's comment: “with the additional hypothesis that V ×\_X V ⟶ V ×\_Y V is closed; the source's hypothesis list is insufficient, see the counterexample in the module docstring”.
+**`AlgebraicGeometry.Space.isSeparated_of_elementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquare.lean, line 1231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquare.lean#L1231). The attribute's comment: “with the additional hypothesis that V ×\_X V ⟶ V ×\_Y V is closed; the source's hypothesis list is insufficient, see the counterexample in the module docstring”.
 
 > **Stacks 0F45.** A morphism of algebraic spaces `g : X ⟶ Y` over `S` is separated once an
 > elementary distinguished square `(U ⊆ X, f : V ⟶ X)` has `U ⟶ Y` and `V ⟶ Y` separated and
@@ -41,7 +41,7 @@ public theorem isSeparated_of_elementaryDistinguishedSquare
     AlgebraicGeometry.Space.IsSeparated B S hS g
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isSeparated_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquareCounterexample.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquareCounterexample.lean#L553). The attribute's comment: “counterexample: the statement as published is false; the corrected statement, with V ×\_X V ⟶ V ×\_Y V also closed, is isSeparated\_of\_elementaryDistinguishedSquare”.
+**`AlgebraicGeometry.Space.not_forall_isSeparated_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquareCounterexample.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SeparatedFromElementarySquareCounterexample.lean#L553). The attribute's comment: “counterexample: the statement as published is false; the corrected statement, with V ×\_X V ⟶ V ×\_Y V also closed, is isSeparated\_of\_elementaryDistinguishedSquare”.
 
 > **Stacks 0F45 as published is false.** It is not true that a morphism `g : X ⟶ Y` of
 > algebraic spaces over `S` is separated as soon as an elementary distinguished square
@@ -65,7 +65,7 @@ theorem not_forall_isSeparated_of_isElementaryDistinguishedSquare :
 
 [Tag 0F46](https://stacks.math.columbia.edu/tag/0F46) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_separating_strictTransforms_and_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupStrictTransformSeparationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupStrictTransformSeparationQcqs.lean#L62).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_separating_strictTransforms_and_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupStrictTransformSeparationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupStrictTransformSeparationQcqs.lean#L62).
 
 > **Stacks 0F46.**  Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S` and let `U ⊆ X` be a quasi-compact open subspace.
@@ -107,7 +107,7 @@ theorem exists_isAdmissibleBlowup_separating_strictTransforms_and_closures
 
 [Tag 0F47](https://stacks.math.columbia.edu/tag/0F47) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_over_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupIsoNearClosure.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupIsoNearClosure.lean#L84).
+**`AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_over_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupIsoNearClosure.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupIsoNearClosure.lean#L84).
 
 > **Stacks 0F47.**  Let `S` be a scheme, let `f : X ⟶ Y` be a proper morphism of algebraic
 > spaces over `S` with `Y` quasi-compact and quasi-separated, let `V ⊆ Y` be a quasi-compact open
@@ -152,7 +152,7 @@ theorem exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_over_closure
 
 [Tag 0F48](https://stacks.math.columbia.edu/tag/0F48) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_surjective_finite_flat_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFiniteFlatNearClosure.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFiniteFlatNearClosure.lean#L781).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_surjective_finite_flat_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFiniteFlatNearClosure.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFiniteFlatNearClosure.lean#L781).
 
 > **Stacks 0F48.**  Let `S` be a scheme, let `f : X ⟶ Y` be a proper morphism of quasi-compact
 > and quasi-separated algebraic spaces over `S`, let `V ⊆ Y` be a quasi-compact open subspace with
@@ -213,7 +213,7 @@ theorem exists_isAdmissibleBlowup_surjective_finite_flat_etaleLocalRing
 
 [Tag 0F49](https://stacks.math.columbia.edu/tag/0F49) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_le_strictTransformInAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImage.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImage.lean#L339). The attribute's comment: “the inclusion of the scheme-theoretic image in the strict transform”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_le_strictTransformInAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImage.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImage.lean#L339). The attribute's comment: “the inclusion of the scheme-theoretic image in the strict transform”.
 
 > **One inclusion of Stacks 0F49, with Stacks 085T and 0863 as explicit hypotheses.**  Let
 > `X ⟶ T` and `Y ⟶ T` be morphisms of algebraic spaces over `S`, let `U ⊆ X` be an open subspace,
@@ -271,7 +271,7 @@ theorem schemeTheoreticImageSubfunctor_le_strictTransformInAmbient (p : X ⟶ T)
           (AlgebraicSpaces.fiberProduct B S hS p q).property)
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_eq_strictTransformInAmbient_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImageUnconditional.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImageUnconditional.lean#L1029). The attribute's comment: “the equality of the scheme-theoretic image of the lift with the strict transform, at the source's hypotheses and with NO side condition and no part of the conclusion assumed. The properness of the admissible blowup, Stacks 085Z, is proved rather than assumed, by AlgebraicGeometry.Space.isProper\_of\_isBlowupAlong\_of\_isFinitePresentation, which itself carries no side condition”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_eq_strictTransformInAmbient_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImageUnconditional.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessAndStrictTransformImageUnconditional.lean#L1029). The attribute's comment: “the equality of the scheme-theoretic image of the lift with the strict transform, at the source's hypotheses and with NO side condition and no part of the conclusion assumed. The properness of the admissible blowup, Stacks 085Z, is proved rather than assumed, by AlgebraicGeometry.Space.isProper\_of\_isBlowupAlong\_of\_isFinitePresentation, which itself carries no side condition”.
 
 > **Stacks 0F49.**  Let
 > `X ⟶ T` and `Y ⟶ T` be
@@ -297,8 +297,8 @@ theorem schemeTheoreticImageSubfunctor_le_strictTransformInAmbient (p : X ⟶ T)
 > `AlgebraicGeometry.Space.isQuasiCompact_of_comp_fiberProductFirst_unconditional`, which needs
 > the properness of the admissible blowup, Stacks 085Z.  That is now *proved*, in
 > `AlgebraicGeometry.Space.isProper_of_isBlowupAlong_of_isFinitePresentation`, and carries no side
-> condition, so **nothing is assumed here beyond the source's own hypotheses**.  In particular the density
-> statement, part of the tag's own conclusion, is the theorem
+> condition, so **nothing is assumed here beyond the source's own hypotheses**.  In particular the
+> density statement, part of the tag's own conclusion, is the theorem
 > `AlgebraicGeometry.Space.strictTransformInAmbient_le_schemeTheoreticImageSubfunctor`, and neither
 > the existence of a proper blowup nor a surjective étale chart of `X` with the size conditions of
 > Stacks 085Q is assumed.
@@ -326,7 +326,7 @@ theorem schemeTheoreticImageSubfunctor_eq_strictTransformInAmbient_unconditional
 
 [Tag 0F4A](https://stacks.math.columbia.edu/tag/0F4A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isProper_extension_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCompactificationProperExtension.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCompactificationProperExtension.lean#L138).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isProper_extension_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCompactificationProperExtension.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCompactificationProperExtension.lean#L138).
 
 > Let `T` be a quasi-compact and quasi-separated algebraic space over `S`, let `g : U ⟶ T` be
 > separated and of finite type, and let `f : V ⟶ U` be étale. Suppose `V` has a compactification
@@ -357,7 +357,7 @@ theorem exists_isAdmissibleBlowup_isProper_extension_of_isEtale
 
 [Tag 0F4B](https://stacks.math.columbia.edu/tag/0F4B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasCompactification_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/EtaleSquareCompactification.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/EtaleSquareCompactification.lean#L278). The attribute's comment: “proof corrected: the source's W₁ = U ⊔\_\{U₁} (X₁ ∖ (Z̄₁₂ ∪ T̄)) need not be separated; X₁ is modified by three more admissible blowups (0F46 twice, and a blowup in I + J^M from the Nullstellensatz on the closure of the off-diagonal of U₁ ×\_U U₁), and W₁ is glued from the chart N = X₁ ∖ (closure (V₁ ∖ U₁) ∪ closure (∂ ∖ Q))”.
+**`AlgebraicGeometry.Space.hasCompactification_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/EtaleSquareCompactification.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/EtaleSquareCompactification.lean#L278). The attribute's comment: “proof corrected: the source's W₁ = U ⊔\_\{U₁} (X₁ ∖ (Z̄₁₂ ∪ T̄)) need not be separated; X₁ is modified by three more admissible blowups (0F46 twice, and a blowup in I + J^M from the Nullstellensatz on the closure of the off-diagonal of U₁ ×\_U U₁), and W₁ is glued from the chart N = X₁ ∖ (closure (V₁ ∖ U₁) ∪ closure (∂ ∖ Q))”.
 
 > **Compactifications glue across an elementary distinguished square** (Stacks 0F4B). Over a
 > quasi-compact, quasi-separated algebraic space `Y` of finite type over `Spec ℤ`, let `U` be
@@ -378,7 +378,7 @@ theorem hasCompactification_of_isElementaryDistinguishedSquare (hZ : B.Contains 
 
 [Tag 0F4C](https://stacks.math.columbia.edu/tag/0F4C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_etale_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleEnlargementOfOpen/Enlargement.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleEnlargementOfOpen/Enlargement.lean#L464).
+**`AlgebraicGeometry.Space.exists_affine_etale_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleEnlargementOfOpen/Enlargement.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleEnlargementOfOpen/Enlargement.lean#L464).
 
 > **Stacks 0F4C.** Let `U` be a dense open subspace of a Noetherian algebraic space `X`
 > over `S` with `U ≠ X`. There is an affine scheme `V` and an étale morphism `V ⟶ X` such that
@@ -420,7 +420,7 @@ theorem exists_affine_etale_isElementaryDistinguishedSquare
 
 [Tag 0F4D](https://stacks.math.columbia.edu/tag/0F4D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasCompactification_of_isSeparated_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/Nagata.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/Nagata.lean#L63).
+**`AlgebraicGeometry.Space.hasCompactification_of_isSeparated_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/Nagata.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NagataCompactification/Nagata.lean#L63).
 
 > **Nagata's compactification theorem for algebraic spaces.** Let `Y` be a quasi-compact and
 > quasi-separated algebraic space over `S`, and let `f : X ⟶ Y` be a separated morphism of finite
@@ -441,4 +441,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.14, Tag 0F44](https://stacks.math.columbia.edu/tag/0F44)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.10 Local connectedness
 
-Section 58.10 of the Stacks Project, [Tag 0BQD](https://stacks.math.columbia.edu/tag/0BQD). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.10 of the Stacks Project, [Tag 0BQD](https://stacks.math.columbia.edu/tag/0BQD). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BQE, a lemma
 
 [Tag 0BQE](https://stacks.math.columbia.edu/tag/0BQE) in the Stacks Project.
 
-**`AlgebraicGeometry.faithful_finiteEtaleBaseChange_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/Basic.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/Basic.lean#L123).
+**`AlgebraicGeometry.faithful_finiteEtaleBaseChange_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/Basic.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/Basic.lean#L123).
 
 > **Stacks Project, Tag 0BQE.** Pullback of finite étale schemes along a
 > dominant morphism of schemes is faithful.
@@ -30,7 +30,7 @@ public lemma faithful_finiteEtaleBaseChange_of_isDominant
 
 [Tag 0BLQ](https://stacks.math.columbia.edu/tag/0BLQ) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_to_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrum.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrum.lean#L292).
+**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_to_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrum.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrum.lean#L292).
 
 > Restriction from the spectrum of a local ring `A` to its punctured spectrum is fully faithful
 > on finite étale covers, provided the punctured spectrum of a strict henselization of `A` is
@@ -52,7 +52,7 @@ theorem fullyFaithful_finiteEtaleBaseChange_to_puncturedSpectrum
 
 [Tag 0BQF](https://stacks.math.columbia.edu/tag/0BQF) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_dense_of_noetherianSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpen.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpen.lean#L719). References: SGA 7 II (2.3.1), “partial”.
+**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_dense_of_noetherianSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpen.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpen.lean#L719). References: SGA 7 II (2.3.1), “partial”.
 
 > Let `U` be a dense open of a scheme `X` with Noetherian underlying space, and suppose that for
 > every point `x` of `X` outside `U` the punctured spectrum of every strict henselization of
@@ -71,7 +71,7 @@ theorem fullyFaithful_finiteEtaleBaseChange_of_dense_of_noetherianSpace
 
 [Tag 0BSA](https://stacks.math.columbia.edu/tag/0BSA) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_quasiCompact_of_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenClosedComplement.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenClosedComplement.lean#L330).
+**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_quasiCompact_of_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenClosedComplement.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenClosedComplement.lean#L330).
 
 > Let `j : U ⟶ X` be a dense open immersion of schemes which is quasi-compact, and assume that
 > every point of `X ∖ U` is closed and that the punctured spectrum of every strict henselization of
@@ -92,7 +92,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_of_quasiCompact_of_isClosed_c
 
 [Tag 0BQG](https://stacks.math.columbia.edu/tag/0BQG) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenFinitelyManyComponents.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenFinitelyManyComponents.lean#L606). References: SGA 7 II (2.3.1), “partial”.
+**`AlgebraicGeometry.fullyFaithful_finiteEtaleBaseChange_of_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenFinitelyManyComponents.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/DenseOpenFinitelyManyComponents.lean#L606). References: SGA 7 II (2.3.1), “partial”.
 
 > **Stacks Project, Tag 0BQG.** Let `U` be a dense open subscheme of a scheme `X` such that
 > every quasi-compact open of `X` has only finitely many irreducible components, and such that for
@@ -119,7 +119,7 @@ theorem fullyFaithful_finiteEtaleBaseChange_of_finite_irreducibleComponents
 
 [Tag 0BSB](https://stacks.math.columbia.edu/tag/0BSB) in the Stacks Project.
 
-**`AlgebraicGeometry.isExactSequence_etaleFundamentalGroupMap_puncturedSpectrum_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumDescent/Exact.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumDescent/Exact.lean#L559). The attribute's comment: “the full exact sequence, with the descent half discharged”.
+**`AlgebraicGeometry.isExactSequence_etaleFundamentalGroupMap_puncturedSpectrum_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumDescent/Exact.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumDescent/Exact.lean#L556). The attribute's comment: “the full exact sequence, with the descent half discharged”.
 
 > **Stacks Project, Tag 0BSB.** Let `(A, 𝔪)` be a local ring whose punctured spectrum
 > `U = Spec A ∖ {𝔪}` is retrocompact, let `Aˢʰ` be a strict henselization of `A` whose punctured
@@ -153,7 +153,7 @@ theorem isExactSequence_etaleFundamentalGroupMap_puncturedSpectrum_of_quasiCompa
         (w.map (Spec.map (CommRingCat.ofHom (algebraMap A Ash)) ∣_ puncturedSpectrum A)))
 ```
 
-**`AlgebraicGeometry.connectedSpace_puncturedSpectrum_of_isStrictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L166). The attribute's comment: “connectedness of `U`, implicit since `π₁(U, ū)` appears in the statement”.
+**`AlgebraicGeometry.connectedSpace_puncturedSpectrum_of_isStrictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L166). The attribute's comment: “connectedness of `U`, implicit since `π₁(U, ū)` appears in the statement”.
 
 > **Connectedness of `U` in Stacks Project, Tag 0BSB.** The punctured spectrum of `A` is
 > connected as soon as the punctured spectrum of a strict henselization `Aˢʰ` is: the latter is the
@@ -168,7 +168,7 @@ theorem connectedSpace_puncturedSpectrum_of_isStrictHenselization
     ConnectedSpace (puncturedSpectrum A).toScheme
 ```
 
-**`AlgebraicGeometry.etaleFundamentalGroupMap_comp_eq_one_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L251). The attribute's comment: “triviality of the composite `π₁(Uˢʰ) → π₁(U) → π₁(X)` only”.
+**`AlgebraicGeometry.etaleFundamentalGroupMap_comp_eq_one_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L251). The attribute's comment: “triviality of the composite `π₁(Uˢʰ) → π₁(U) → π₁(X)` only”.
 
 > **Triviality of the composite in Stacks Project, Tag 0BSB.** Let `(A, 𝔪)` be a local ring,
 > `X = Spec A`, `U = X ∖ {𝔪}` the punctured spectrum, `Aˢʰ` a strict henselization of `A` and
@@ -209,7 +209,7 @@ theorem etaleFundamentalGroupMap_comp_eq_one_puncturedSpectrum
           w).toMonoidHom = 1
 ```
 
-**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L293). The attribute's comment: “surjectivity of `π₁(U) → π₁(X)`, the `→ 1` of the sequence, only”.
+**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/PuncturedSpectrumExactSequence.lean#L293). The attribute's comment: “surjectivity of `π₁(U) → π₁(X)`, the `→ 1` of the sequence, only”.
 
 > **Surjectivity in Stacks Project, Tag 0BSB.** Let `(A, 𝔪)` be a local ring, `X = Spec A`,
 > `U = X ∖ {𝔪}` the punctured spectrum, and `Aˢʰ` a strict henselization of `A` whose punctured
@@ -244,7 +244,7 @@ theorem surjective_etaleFundamentalGroupMap_puncturedSpectrum
 
 [Tag 0BQH](https://stacks.math.columbia.edu/tag/0BQH) in the Stacks Project.
 
-**`AlgebraicGeometry.galoisToFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GenericPoint.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GenericPoint.lean#L44). References: SGA 7 XIX (1.4), “partial”.
+**`AlgebraicGeometry.galoisToFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GenericPoint.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GenericPoint.lean#L44). References: SGA 7 XIX (1.4), “partial”.
 
 > The canonical continuous homomorphism from the absolute Galois group of the function field of
 > an irreducible scheme to its étale fundamental group, based at a geometric generic point.
@@ -270,7 +270,7 @@ def galoisToFundamentalGroup
 
 [Tag 0BQI](https://stacks.math.columbia.edu/tag/0BQI) in the Stacks Project.
 
-**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_opensι_of_isGeometricallyUnibranch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean#L349). The attribute's comment: “the claim for a nonempty open subscheme, that π₁(U, ū) → π₁(X, ū) is surjective; the claim for the generic point is `surjective_galoisToFundamentalGroup_of_isGeometricallyUnibranch`”.
+**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_opensι_of_isGeometricallyUnibranch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean#L349). The attribute's comment: “the claim for a nonempty open subscheme, that π₁(U, ū) → π₁(X, ū) is surjective; the claim for the generic point is `surjective_galoisToFundamentalGroup_of_isGeometricallyUnibranch`”.
 
 > Let `X` be an irreducible, geometrically unibranch
 > scheme, let `U ⊆ X` be a nonempty open subscheme and let `ū` be a geometric point of `U`. The
@@ -290,7 +290,7 @@ theorem surjective_etaleFundamentalGroupMap_opensι_of_isGeometricallyUnibranch
     Function.Surjective (etaleFundamentalGroupMap U.ι x)
 ```
 
-**`AlgebraicGeometry.surjective_galoisToFundamentalGroup_of_isGeometricallyUnibranch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean#L450). The attribute's comment: “the claim for the generic point, that the map π₁(η, η̄) → π₁(X, η̄) of Tag 0BQH is surjective; the claim for a nonempty open subscheme is `surjective_etaleFundamentalGroupMap_opensι_of_isGeometricallyUnibranch`”. References: SGA 1 V (8.2), “special case”.
+**`AlgebraicGeometry.surjective_galoisToFundamentalGroup_of_isGeometricallyUnibranch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/GeometricallyUnibranch.lean#L450). The attribute's comment: “the claim for the generic point, that the map π₁(η, η̄) → π₁(X, η̄) of Tag 0BQH is surjective; the claim for a nonempty open subscheme is `surjective_etaleFundamentalGroupMap_opensι_of_isGeometricallyUnibranch`”. References: SGA 1 V (8.2), “special case”.
 
 > Let `X` be an irreducible, geometrically unibranch
 > scheme with function field `K = κ(η)` at its generic point `η`, let `L` be a separable closure of
@@ -319,7 +319,7 @@ theorem surjective_galoisToFundamentalGroup_of_isGeometricallyUnibranch
 
 [Tag 0BSC](https://stacks.math.columbia.edu/tag/0BSC) in the Stacks Project.
 
-**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_of_finite_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitelyManyClosedPoints.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitelyManyClosedPoints.lean#L170). The attribute's comment: “the surjectivity clause `π₁(U) → π₁(X)` for `U` the complement of finitely many closed points, under hypotheses (1) and (2); the kernel description is not proved here”.
+**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_of_finite_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitelyManyClosedPoints.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitelyManyClosedPoints.lean#L170). The attribute's comment: “the surjectivity clause `π₁(U) → π₁(X)` for `U` the complement of finitely many closed points, under hypotheses (1) and (2); the kernel description is not proved here”.
 
 > **Surjectivity of `π₁(U) → π₁(X)` for the complement of finitely many closed points.** Let
 > `X` be a connected scheme, let
@@ -351,7 +351,7 @@ theorem surjective_etaleFundamentalGroupMap_of_finite_isClosed_compl
     Function.Surjective (etaleFundamentalGroupMap j u)
 ```
 
-**`AlgebraicGeometry.ker_etaleFundamentalGroupMap_eq_closedNormalClosure_biUnion_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean, line 705](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean#L705). The attribute's comment: “the kernel clause, in union-of-images form, with the factorisation `Uᵢˢʰ ⟶ U` proved; the removed points are assumed pairwise distinct, and hypothesis (2) is stated at the stalks of the stages of the chain, where it is used”. References: SGA 7 II (2.3.1), “partial”.
+**`AlgebraicGeometry.ker_etaleFundamentalGroupMap_eq_closedNormalClosure_biUnion_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean#L705). The attribute's comment: “the kernel clause, in union-of-images form, with the factorisation `Uᵢˢʰ ⟶ U` proved; the removed points are assumed pairwise distinct, and hypothesis (2) is stated at the stalks of the stages of the chain, where it is used”. References: SGA 7 II (2.3.1), “partial”.
 
 > **The kernel of `π₁(U) ⟶ π₁(X)`.** Let `X` be a connected scheme, let
 > `x₀, …, xₙ₋₁ ∈ X` be pairwise distinct closed points and let `U = X ∖ {x₀, …, xₙ₋₁}`, assumed
@@ -399,7 +399,7 @@ theorem ker_etaleFundamentalGroupMap_eq_closedNormalClosure_biUnion_range
             (w i))))).topologicalClosure
 ```
 
-**`AlgebraicGeometry.surjective_and_ker_etaleFundamentalGroupMap_of_finite_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean, line 888](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean#L888). The attribute's comment: “both clauses, surjectivity and the kernel, under one set of hypotheses; the removed points are assumed pairwise distinct, and hypothesis (2) is stated at the stalks of the stages of the chain, where it is used”.
+**`AlgebraicGeometry.surjective_and_ker_etaleFundamentalGroupMap_of_finite_isClosed_compl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean, line 888](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalConnectedness/FinitePointKernel.lean#L888). The attribute's comment: “both clauses, surjectivity and the kernel, under one set of hypotheses; the removed points are assumed pairwise distinct, and hypothesis (2) is stated at the stalks of the stages of the chain, where it is used”.
 
 > Let `X` be a connected scheme, let
 > `x₀, …, xₙ₋₁ ∈ X` be pairwise distinct closed points and let `U = X ∖ {x₀, …, xₙ₋₁}`, which is
@@ -453,4 +453,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.10, Tag 0BQD](https://stacks.math.columbia.edu/tag/0BQD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

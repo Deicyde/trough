@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetic derivative and the Collatz map
 
-19 results, 5 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html).
+19 results, 5 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html).
 
 ## The accelerated Collatz map
 
@@ -18,7 +18,7 @@ sends a natural number $n$ to $n/2$ if $n$ is even and to $(3n + 1)/2$ if $n$ is
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Section 2.
 
-Formalized by `MetaMathlibExt.collatzAccelerated`, a definition declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated).
+Formalized by `MetaMathlibExt.collatzAccelerated`, a definition declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated).
 
 ## The accelerated Collatz map on odd numbers
 
@@ -29,7 +29,7 @@ $T$ the Collatz map. For every odd natural number $n$, $C(n) = T(T(n))$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Section 2.
 
-Formalized by `MetaMathlibExt.collatzAccelerated_of_odd`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-of-odd).
+Formalized by `MetaMathlibExt.collatzAccelerated_of_odd`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-of-odd).
 
 ## The accelerated Collatz map on even numbers
 
@@ -40,7 +40,7 @@ $T$ the Collatz map. For every even natural number $n$, $C(n) = T(n)$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Section 2.
 
-Formalized by `MetaMathlibExt.collatzAccelerated_of_even`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-of-even).
+Formalized by `MetaMathlibExt.collatzAccelerated_of_even`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-of-even).
 
 ## Compatible semiprimes
 
@@ -53,7 +53,7 @@ $2x^2 - (p + q)x + 3pq + 1 = 0$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Section 3, definition after Proposition 7.
 
-Formalized by `MetaMathlibExt.IsCompatibleSemiprimePair`, a definition declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#is-compatible-semiprime-pair).
+Formalized by `MetaMathlibExt.IsCompatibleSemiprimePair`, a definition declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#is-compatible-semiprime-pair).
 
 ## An example of compatible semiprimes
 
@@ -64,7 +64,7 @@ $349 \cdot 491$ are compatible.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Table 1.
 
-Formalized by `MetaMathlibExt.isCompatibleSemiprimePair_71_1609`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#is-compatible-semiprime-pair-71-1609).
+Formalized by `MetaMathlibExt.isCompatibleSemiprimePair_71_1609`, a theorem declared in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#is-compatible-semiprime-pair-71-1609).
 
 ## Bounds for the arithmetic derivative
 
@@ -80,7 +80,7 @@ and each of the two inequalities is an equality if and only if $n$ is a prime po
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Lemma 1 (`jis-2025-25.1.8-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.arithmeticDerivative_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#arithmetic-derivative-bounds).
+Stated but not proved: `MetaMathlibExt.arithmeticDerivative_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#arithmetic-derivative-bounds).
 
 ## Positive solutions of the Collatz arithmetic differential equation are odd
 
@@ -92,7 +92,7 @@ $D(C(n)) = C(D(n))$ is odd.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 2 (`jis-2025-25.1.8-prop-2`).
 
-Stated but not proved: `MetaMathlibExt.odd_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#odd-of-arithmetic-derivative-collatz-com).
+Stated but not proved: `MetaMathlibExt.odd_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#odd-of-arithmetic-derivative-collatz-com).
 
 ## Positive solutions of the Collatz arithmetic differential equation are composite
 
@@ -104,7 +104,7 @@ with $D(C(n)) = C(D(n))$ is composite, that is, $n > 1$ and $n$ is not prime.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 3 (`jis-2025-25.1.8-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.composite_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#composite-of-arithmetic-derivative-colla).
+Stated but not proved: `MetaMathlibExt.composite_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#composite-of-arithmetic-derivative-colla).
 
 ## Prime tetrations where the arithmetic derivative and the Collatz map commute
 
@@ -116,7 +116,7 @@ $D(C(p^p)) = C(D(p^p))$ if and only if $C(p^p) = q^q$ for some prime $q$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 4 (`jis-2025-25.1.8-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.arithmeticDerivative_collatz_comm_prime_tetration_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#arithmetic-derivative-collatz-comm-prime).
+Stated but not proved: `MetaMathlibExt.arithmeticDerivative_collatz_comm_prime_tetration_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#arithmetic-derivative-collatz-comm-prime).
 
 ## Prime gap bound for semiprime solutions
 
@@ -129,7 +129,7 @@ $p - q \ge 2\sqrt{30p^2 + 2} - 10p$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 5 (`jis-2025-25.1.8-prop-5`).
 
-Stated but not proved: `MetaMathlibExt.prime_gap_bound_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#prime-gap-bound-of-arithmetic-derivative).
+Stated but not proved: `MetaMathlibExt.prime_gap_bound_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#prime-gap-bound-of-arithmetic-derivative).
 
 ## No special semiprime solves the derivative–Collatz equation
 
@@ -145,7 +145,7 @@ Sophie Germain prime and its safe prime.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Corollary 6 (`jis-2025-25.1.8-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.not_special_semiprime_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#not-special-semiprime-of-arithmetic-deri).
+Stated but not proved: `MetaMathlibExt.not_special_semiprime_of_arithmeticDerivative_collatz_comm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#not-special-semiprime-of-arithmetic-deri).
 
 ## Prime roots give semiprime solutions
 
@@ -161,7 +161,7 @@ $2x^2 - (p + q)x + 3pq + 1 = 0$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 7 (`jis-2025-25.1.8-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.collatzAccelerated_mul_eq_and_comm_of_roots_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-mul-eq-and-comm-of-r).
+Stated but not proved: `MetaMathlibExt.collatzAccelerated_mul_eq_and_comm_of_roots_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#collatz-accelerated-mul-eq-and-comm-of-r).
 
 ## Compatible semiprimes modulo 3
 
@@ -174,7 +174,7 @@ modulo $3$, and likewise one of $r, s$ is congruent to $1$ and the other to $2$ 
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 8 (`jis-2025-25.1.8-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-three).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-three).
 
 ## Compatible semiprimes have odd prime factors
 
@@ -186,7 +186,7 @@ Then $p$, $q$, $r$ and $s$ are all odd.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Lemma 9 (`jis-2025-25.1.8-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#odd).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#odd).
 
 ## Compatible semiprimes modulo 4
 
@@ -198,7 +198,7 @@ $pq \equiv 3 \pmod 4$, and one of $p, q$ is congruent to $1$ and the other to $3
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 10 (`jis-2025-25.1.8-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-four).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-four).
 
 ## Bounds on the factors of compatible semiprimes
 
@@ -209,7 +209,7 @@ compatible, where $q < p$. Then $r \ge 241$, $s \ge 241$, $3q < r < 3p$ and $3q 
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Lemma 11 (`jis-2025-25.1.8-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#bounds).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#bounds).
 
 ## Compatible semiprimes modulo 5
 
@@ -222,7 +222,7 @@ and the other to $4$ modulo $5$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 12 (`jis-2025-25.1.8-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-five).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-five).
 
 ## Compatible semiprimes modulo 10
 
@@ -235,7 +235,7 @@ and the other to $9$ modulo $10$.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Proposition 13 (`jis-2025-25.1.8-prop-13`).
 
-Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-ten).
+Stated but not proved: `MetaMathlibExt.IsCompatibleSemiprimePair.mod_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#mod-ten).
 
 ## Reciprocals of compatible semiprimes have a finite sum
 
@@ -248,7 +248,7 @@ converges.
 
 - Zachary P. Bradshaw, *On a Family of Solutions to Arithmetic Differential Equations Involving the Collatz Map*, Journal of Integer Sequences 28 (2025), Article 25.1.8, Theorem 14 (`jis-2025-25.1.8-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.summable_inv_compatibleSemiprimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#summable-inv-compatible-semiprimes).
+Stated but not proved: `MetaMathlibExt.summable_inv_compatibleSemiprimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CollatzArithmeticDerivativeWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html#summable-inv-compatible-semiprimes).
 
 ## Depends on
 
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic derivative and the Collatz map](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/arithmetic-derivative-and-the-collatz-map)

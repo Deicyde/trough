@@ -1,13 +1,11 @@
 ---
 declaration: section
 origin: cited
-lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.mulOrdMod, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.unitReduceSq, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.liftFiber, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_or_mul, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_order_add_mul_prime_eq, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.exists_primitiveRoot_add_mul_prime_pow, MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_not_primitiveRoot_add_mul_prime
-statement: formalized
 ---
 
 # Primitive roots modulo prime powers
 
-12 results, 3 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html).
+12 results, 12 whose declaration the Lean read here does not declare, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html).
 
 ## Multiplicative order modulo $n$
 
@@ -16,7 +14,7 @@ $\operatorname{ord}_n(a)$ is the multiplicative order of the residue class of $a
 unit group $(\mathbb{Z}/n\mathbb{Z})^\times$ when $a$ is coprime to $n$, and $0$
 otherwise.
 
-Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.mulOrdMod`, a definition declared in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#mul-ord-mod).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.mulOrdMod`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#mul-ord-mod).
 
 ## Reduction of units modulo $p^2$ to units modulo $p$
 
@@ -26,7 +24,7 @@ induced on units by the reduction ring homomorphism
 $\mathbb{Z}/p^2\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z}$, which sends the class of $x$ modulo $p^2$ to
 the class of $x$ modulo $p$.
 
-Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.unitReduceSq`, a definition declared in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#unit-reduce-sq).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.unitReduceSq`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#unit-reduce-sq).
 
 ## Fibers of reduction modulo $p$ on units modulo $p^2$
 
@@ -36,7 +34,7 @@ $\mathbb{Z}/p^2\mathbb{Z}$ with $x \equiv a \pmod p$, that is, the units whose i
 reduction map $(\mathbb{Z}/p^2\mathbb{Z})^\times \to (\mathbb{Z}/p\mathbb{Z})^\times$ equals the
 image of $a$.
 
-Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.liftFiber`, a definition declared in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#lift-fiber).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.liftFiber`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#lift-fiber).
 
 ## The order of $a + kp$ modulo $p^2$
 
@@ -49,7 +47,7 @@ either $\operatorname{ord}_p(a)$ or $p \cdot \operatorname{ord}_p(a)$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_or_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#order-add-mul-prime-eq-or-mul).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_or_mul`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#order-add-mul-prime-eq-or-mul).
 
 ## Unique order-preserving lift modulo $p^2$
 
@@ -62,7 +60,7 @@ $\operatorname{ord}_{p^2}(a + mp) = \operatorname{ord}_p(a)$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_order_add_mul_prime_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-order-add-mul-prime-eq).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_order_add_mul_prime_eq`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-order-add-mul-prime-eq).
 
 ## Unique order-preserving element of a fiber modulo $p^2$
 
@@ -75,7 +73,7 @@ order modulo $p^2$ equals the multiplicative order of its reduction modulo $p$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-mem-lift-fiber-order-eq).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-mem-lift-fiber-order-eq).
 
 ## Gauss's theorem on primitive roots modulo prime powers
 
@@ -89,7 +87,7 @@ every $\ell \ge 2$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.exists_primitiveRoot_add_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-primitive-root-add-mul-prime-pow).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.exists_primitiveRoot_add_mul_prime_pow`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-primitive-root-add-mul-prime-pow).
 
 ## Exactly one lift of a primitive root fails modulo $p^2$
 
@@ -104,7 +102,7 @@ $k \in \{0, 1, \dots, p - 1\}$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_not_primitiveRoot_add_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-not-primitive-root-add-mul).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_not_primitiveRoot_add_mul_prime`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-not-primitive-root-add-mul).
 
 ## The lift of order $p - 1$ of a primitive root
 
@@ -118,7 +116,7 @@ multiplicative order $p - 1$ modulo $p^2$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-mem-lift-fiber-order-eq-su).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq_sub_one`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#exists-unique-mem-lift-fiber-order-eq-su).
 
 ## Primitive roots modulo $p^\ell$ of the form $g^p + kp$
 
@@ -135,7 +133,7 @@ totient function.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.primitiveRoot_pow_add_mul_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#primitive-root-pow-add-mul-prime-pow).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.primitiveRoot_pow_add_mul_prime_pow`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#primitive-root-pow-add-mul-prime-pow).
 
 ## Endomorphisms of the units modulo $p^2$ respect the fibers
 
@@ -148,7 +146,7 @@ $x \equiv b \pmod p$, the image of $P_a$ under $f$ is contained in $P_{f(a)}$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.monoidHom_image_liftFiber_subset` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#monoid-hom-image-lift-fiber-subset).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.monoidHom_image_liftFiber_subset`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#monoid-hom-image-lift-fiber-subset).
 
 ## Power maps on the fibers modulo $p^2$
 
@@ -162,7 +160,7 @@ $P_{a^n}$, and preserves the multiplicative order of every element of $P_a$.
 
 - V. P. Ramesh and S. Sivakumar, "A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.pow_injectiveOn_liftFiber_and_order_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#pow-injective-on-lift-fiber-and-order-eq).
+Formalized by `MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.pow_injectiveOn_liftFiber_and_order_eq`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html#pow-injective-on-lift-fiber-and-order-eq).
 
 ## Depends on
 
@@ -171,4 +169,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Primitive roots modulo prime powers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers)

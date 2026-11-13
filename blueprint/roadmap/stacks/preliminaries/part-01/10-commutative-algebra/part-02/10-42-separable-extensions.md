@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Algebra.IsSeparableExtension, Algebra.isSeparable_tower_bot_of_isSeparable, IntermediateField.isSeparable_tower_bot, separablyGenerated_fg_exists_primitive_transcendence_basis, exists_isPurelyInseparable_and_isSeparablyGenerated_of_essFiniteType
+lean: Algebra.IsSeparableExtension, Algebra.isSeparableExtension_tower_bot_of_isSeparableExtension, IntermediateField.isSeparableExtension_tower_bot, separablyGenerated_fg_exists_primitive_transcendence_basis, exists_isPurelyInseparable_and_isSeparablyGenerated_of_essFiniteType
 statement: formalized
 proof: formalized
 ---
 
 # 10.42 Separable extensions
 
-Section 10.42 of the Stacks Project, [Tag 030I](https://stacks.math.columbia.edu/tag/030I). 4 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.42 of the Stacks Project, [Tag 030I](https://stacks.math.columbia.edu/tag/030I). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 030O, a definition
 
 [Tag 030O](https://stacks.math.columbia.edu/tag/030O) in the Stacks Project.
 
-**`Algebra.IsSeparableExtension`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/Separable/Defs.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/Separable/Defs.lean#L91). The attribute's comment: “part (2)”.
+**`Algebra.IsSeparableExtension`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/Separable/Defs.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/Separable/Defs.lean#L91). The attribute's comment: “part (2)”.
 
 > A field extension `K/k` is *separable* if every subextension `k ⊆ K' ⊆ K` with `K'` finitely
 > generated over `k` is separably generated over `k`. For algebraic extensions this is Mathlib's
@@ -28,16 +28,37 @@ public class IsSeparableExtension (k K : Type*) [Field k] [Field K] [Algebra k K
 
 [Tag 030P](https://stacks.math.columbia.edu/tag/030P) in the Stacks Project.
 
-Declarations registered for the tag:
+**`Algebra.isSeparableExtension_tower_bot_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/Separable/Basic.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/Separable/Basic.lean#L50). The attribute's comment: “tower form; separable is `Algebra.IsSeparableExtension`, Definition 030O (2)”.
 
-- [`Algebra.isSeparable_tower_bot_of_isSeparable`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.isSeparable_tower_bot_of_isSeparable#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/Separable/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/Separable/Basic.lean#L40) (StacksFrontier): “a subextension of a separable extension is separable”.
-- [`IntermediateField.isSeparable_tower_bot`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IntermediateField.isSeparable_tower_bot#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/Separable/Basic.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/Separable/Basic.lean#L42) (StacksFrontier): “the intermediate-field form”.
+> Tag 030P: if `K/k` is separable in the sense of Definition 030O (2), then so is `K'/k` for every
+> field `K'` in a tower `k → K' → K`. A subextension `L` of `K'/k` finitely generated over `k` is
+> isomorphic over `k` to its image in `K`, which is finitely generated over `k`, hence separably
+> generated over `k`; a separating transcendence basis of the image transports back along the
+> isomorphism.
+
+```lean
+public theorem Algebra.isSeparableExtension_tower_bot_of_isSeparableExtension
+    (k K' K : Type*) [Field k] [Field K'] [Field K] [Algebra k K'] [Algebra k K] [Algebra K' K]
+    [IsScalarTower k K' K] [Algebra.IsSeparableExtension k K] :
+    Algebra.IsSeparableExtension k K'
+```
+
+**`IntermediateField.isSeparableExtension_tower_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/Separable/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/Separable/Basic.lean#L73). The attribute's comment: “separable is `Algebra.IsSeparableExtension`, Definition 030O (2)”.
+
+> Tag 030P: if `K/k` is separable in the sense of Definition 030O (2), then for every
+> subextension `K/K'/k` the extension `K'/k` is separable.
+
+```lean
+public theorem IntermediateField.isSeparableExtension_tower_bot {k K : Type*} [Field k] [Field K]
+    [Algebra k K] [Algebra.IsSeparableExtension k K] (K' : IntermediateField k K) :
+    Algebra.IsSeparableExtension k K'
+```
 
 ## Tag 030Q, a lemma
 
 [Tag 030Q](https://stacks.math.columbia.edu/tag/030Q) in the Stacks Project.
 
-**`separablyGenerated_fg_exists_primitive_transcendence_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/TranscendentalSeparable.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/TranscendentalSeparable.lean#L588).
+**`separablyGenerated_fg_exists_primitive_transcendence_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/TranscendentalSeparable.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/TranscendentalSeparable.lean#L588).
 
 > Stacks 030Q (Lemma 10.42.3). If `K/k` is separably generated and finitely
 > generated, with transcendence degree `r`, then there are `x_1, ..., x_{r+1} ∈ K`
@@ -67,7 +88,7 @@ theorem separablyGenerated_fg_exists_primitive_transcendence_basis
 
 [Tag 04KM](https://stacks.math.columbia.edu/tag/04KM) in the Stacks Project.
 
-**`exists_isPurelyInseparable_and_isSeparablyGenerated_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/TranscendentalSeparable.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/TranscendentalSeparable.lean#L517).
+**`exists_isPurelyInseparable_and_isSeparablyGenerated_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/TranscendentalSeparable.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/TranscendentalSeparable.lean#L517).
 
 > **Stacks 04KM.** Let `K/k` be a finitely generated field extension and let `Ω/K` be a perfect
 > field extension. Then inside `Ω` there is a diagram
@@ -95,4 +116,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.42, Tag 030I](https://stacks.math.columbia.edu/tag/030I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

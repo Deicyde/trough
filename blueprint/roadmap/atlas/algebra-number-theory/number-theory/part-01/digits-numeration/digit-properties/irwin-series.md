@@ -7,7 +7,7 @@ statement: formalized
 
 # Irwin series
 
-38 results, 22 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html).
+38 results, 22 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html).
 
 ## Digit count
 
@@ -22,7 +22,7 @@ and a string of $n$ ones when $b = 1$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.digitCount`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-count).
+Formalized by `MetaMathlibExt.digitCount`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-count).
 
 ## Integer length
 
@@ -37,7 +37,7 @@ and a string of $n$ ones when $b = 1$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.integerLength`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integer-length).
+Formalized by `MetaMathlibExt.integerLength`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integer-length).
 
 ## Irwin sum
 
@@ -50,7 +50,7 @@ family is not summable; positivity and convergence are results, not part of the 
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.irwinSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum).
+Formalized by `MetaMathlibExt.irwinSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum).
 
 ## Value of a digit string
 
@@ -70,7 +70,7 @@ These exponents correct a typo in the corresponding displayed formula of the sou
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.stringValue`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-value).
+Formalized by `MetaMathlibExt.stringValue`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-value).
 
 ## Normalized value of a digit string
 
@@ -82,7 +82,7 @@ value of $X$ is the real number $n(X) / b^{|X|}$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k`.
 
-Formalized by `MetaMathlibExt.normalizedStringValue`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#normalized-string-value).
+Formalized by `MetaMathlibExt.normalizedStringValue`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#normalized-string-value).
 
 ## Weight of a digit string
 
@@ -93,7 +93,7 @@ length $|X|$, the weight of $X$ is $b^{-|X|}$, regarded as an element of $[0, \i
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k`.
 
-Formalized by `MetaMathlibExt.stringWeight`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-weight).
+Formalized by `MetaMathlibExt.stringWeight`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-weight).
 
 ## Atom of a digit string
 
@@ -108,7 +108,7 @@ The Irwin measures are sums of these atoms.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k`.
 
-Formalized by `MetaMathlibExt.stringAtom`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-atom).
+Formalized by `MetaMathlibExt.stringAtom`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-atom).
 
 ## Irwin measure
 
@@ -123,7 +123,7 @@ the point mass of weight $b^{-|X|}$ at $n(X)/b^{|X|}$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k`.
 
-Formalized by `MetaMathlibExt.irwinMeasure`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure).
+Formalized by `MetaMathlibExt.irwinMeasure`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure).
 
 ## Leading digits
 
@@ -137,7 +137,7 @@ it is $m$ itself, and statements using this notion separately require $L \ge l$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, notation before Proposition 4.
 
-Formalized by `MetaMathlibExt.leadingDigits`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-digits).
+Formalized by `MetaMathlibExt.leadingDigits`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-digits).
 
 ## Prefix-restricted reciprocal terms
 
@@ -151,7 +151,7 @@ the leading-digits condition says that the base-$b$ expansion of $m$ begins with
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, notation before Proposition 4.
 
-Formalized by `MetaMathlibExt.leadingReciprocalTerm`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-term).
+Formalized by `MetaMathlibExt.leadingReciprocalTerm`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-term).
 
 ## Prefix-restricted Irwin sum
 
@@ -167,7 +167,7 @@ not summable; the results that take a limit of this sum also assert summability.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 3.
 
-Formalized by `MetaMathlibExt.leadingIrwinSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-irwin-sum).
+Formalized by `MetaMathlibExt.leadingIrwinSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-irwin-sum).
 
 ## Ordinary moments of the Irwin measures
 
@@ -183,7 +183,7 @@ $$
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition before Corollary 1.
 
-Formalized by `MetaMathlibExt.ordinaryMoment`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment).
+Formalized by `MetaMathlibExt.ordinaryMoment`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment).
 
 ## Complementary moment
 
@@ -198,7 +198,7 @@ $$
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition before Corollary 2.
 
-Formalized by `MetaMathlibExt.complementaryMoment`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment).
+Formalized by `MetaMathlibExt.complementaryMoment`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment).
 
 ## Digit power sum
 
@@ -210,7 +210,7 @@ digits other than $d$, with the convention $0^0 = 1$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
-Formalized by `MetaMathlibExt.digitPowerSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-power-sum).
+Formalized by `MetaMathlibExt.digitPowerSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-power-sum).
 
 ## Complementary digit power sum
 
@@ -223,7 +223,7 @@ $j$-th powers of the base-$b$ digits other than $d'$, with the convention $0^0 =
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 2.
 
-Formalized by `MetaMathlibExt.complementaryDigitPowerSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-digit-power-sum).
+Formalized by `MetaMathlibExt.complementaryDigitPowerSum`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-digit-power-sum).
 
 ## Ordinary moment recurrence
 
@@ -247,7 +247,7 @@ $$
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
-Formalized by `MetaMathlibExt.OrdinaryMomentRecurrence`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment-recurrence).
+Formalized by `MetaMathlibExt.OrdinaryMomentRecurrence`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment-recurrence).
 
 ## Complementary moment recurrence
 
@@ -273,7 +273,7 @@ with the convention $0^0 = 1$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 2.
 
-Formalized by `MetaMathlibExt.ComplementaryMomentRecurrence`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment-recurrence).
+Formalized by `MetaMathlibExt.ComplementaryMomentRecurrence`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment-recurrence).
 
 ## Base depth of a real number
 
@@ -286,7 +286,7 @@ $x$ can be written as an integer divided by $b^l$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.HasBaseDepth`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#has-base-depth).
+Formalized by `MetaMathlibExt.HasBaseDepth`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#has-base-depth).
 
 ## Scaled translate of a set
 
@@ -298,7 +298,7 @@ $y \mapsto b^l y - b^l x$, that is, $\{\, b^l y - b^l x : y \in U \,\}$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Lemma 2.
 
-Formalized by `MetaMathlibExt.affineScaleSet`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#affine-scale-set).
+Formalized by `MetaMathlibExt.affineScaleSet`, a definition declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#affine-scale-set).
 
 ## Zero has no digits
 
@@ -309,7 +309,7 @@ the minimal base-$b$ representation of $0$, which is empty.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.digitCount_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-count-zero).
+Formalized by `MetaMathlibExt.digitCount_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#digit-count-zero).
 
 ## The empty digit string has value zero
 
@@ -320,7 +320,7 @@ of the empty base-$b$ digit string is $0$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
-Formalized by `MetaMathlibExt.stringValue_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-value-nil).
+Formalized by `MetaMathlibExt.stringValue_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-value-nil).
 
 ## The atom of the empty string is the unit Dirac mass at the origin
 
@@ -335,7 +335,7 @@ places at $0$ once all strings with the same value are combined.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k` and Remark `rem:zero`.
 
-Formalized by `MetaMathlibExt.stringAtom_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-atom-nil).
+Formalized by `MetaMathlibExt.stringAtom_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#string-atom-nil).
 
 ## Alternating series for the Irwin sum
 
@@ -361,7 +361,7 @@ $$
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.irwinSum_hasSum_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-has-sum-alternating).
+Stated but not proved: `MetaMathlibExt.irwinSum_hasSum_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-has-sum-alternating).
 
 ## Properties of solutions of the ordinary moment recurrence
 
@@ -376,7 +376,7 @@ $u_{j;m} < u_{j+1;m}$; and $u_{j;m} \to b/(m+1)$ as $j \to \infty$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.ordinaryMomentRecurrence_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment-recurrence-properties).
+Stated but not proved: `MetaMathlibExt.ordinaryMomentRecurrence_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#ordinary-moment-recurrence-properties).
 
 ## Complementary-moment series for the Irwin sums
 
@@ -401,7 +401,7 @@ statement of Theorem 2.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.irwinSum_hasSum_positive` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-has-sum-positive).
+Stated but not proved: `MetaMathlibExt.irwinSum_hasSum_positive` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-has-sum-positive).
 
 ## Properties of the complementary moment recurrence
 
@@ -416,7 +416,7 @@ $v_{j,m} \to b/(m+1)$ as $j \to \infty$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.complementaryMomentRecurrence_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment-recurrence-properti).
+Stated but not proved: `MetaMathlibExt.complementaryMomentRecurrence_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#complementary-moment-recurrence-properti).
 
 ## Monotonicity and limit of the Irwin sums
 
@@ -430,7 +430,7 @@ both cases $H^{(k)} \to b \log b$ as $k \to \infty$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.irwinSum_strictAnti_and_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-strict-anti-and-tendsto).
+Stated but not proved: `MetaMathlibExt.irwinSum_strictAnti_and_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-strict-anti-and-tendsto).
 
 ## Lower bounds for the Irwin sum without the digit
 
@@ -443,7 +443,7 @@ $b \log b - b \log(1 + 1/d) < H^{(0)}$ and $b \log(b/2) < H^{(0)}$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.irwinSum_zero_lowerBounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-zero-lower-bounds).
+Stated but not proved: `MetaMathlibExt.irwinSum_zero_lowerBounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-sum-zero-lower-bounds).
 
 ## Prefix reciprocal sums as integrals against the Irwin measure
 
@@ -459,7 +459,7 @@ $\int_{[0,1)} \frac{1}{n + x}\, d\mu_k(x)$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.integral_eq_leadingReciprocal_hasSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-eq-leading-reciprocal-has-sum).
+Stated but not proved: `MetaMathlibExt.integral_eq_leadingReciprocal_hasSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-eq-leading-reciprocal-has-sum).
 
 ## Prefix sums as alternating ordinary-moment series
 
@@ -475,7 +475,7 @@ $\sum_{m \ge 0} (-1)^m u_{k - k(n);m} / n^{m+1}$ also has sum $S$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.leadingReciprocal_hasSum_ordinaryMoments` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-has-sum-ordinary-mome).
+Stated but not proved: `MetaMathlibExt.leadingReciprocal_hasSum_ordinaryMoments` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-has-sum-ordinary-mome).
 
 ## Prefix sums as complementary-moment series
 
@@ -495,7 +495,7 @@ convergence"; no explicit ratio is asserted.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.leadingReciprocal_hasSum_complementaryMoments` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-has-sum-complementary).
+Stated but not proved: `MetaMathlibExt.leadingReciprocal_hasSum_complementaryMoments` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-reciprocal-has-sum-complementary).
 
 ## Digit decomposition of the Irwin measures, positive index
 
@@ -516,7 +516,7 @@ Measurability of $f$ is a hypothesis added to the paper's boundedness assumption
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_irwinMeasure_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-irwin-measure-succ).
+Stated but not proved: `MetaMathlibExt.integral_irwinMeasure_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-irwin-measure-succ).
 
 ## Digit decomposition of the Irwin measure, zero index
 
@@ -535,7 +535,7 @@ Measurability of $f$ is a hypothesis added to the paper's boundedness assumption
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_irwinMeasure_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-irwin-measure-zero).
+Stated but not proved: `MetaMathlibExt.integral_irwinMeasure_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#integral-irwin-measure-zero).
 
 ## Local structure of the Irwin measures on open intervals
 
@@ -554,7 +554,7 @@ of $U$ under $y \mapsto b^{l'} y - b^{l'} x$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.irwinMeasure_open_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-open-local-mass).
+Stated but not proved: `MetaMathlibExt.irwinMeasure_open_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-open-local-mass).
 
 ## Local structure of the Irwin measures on half-open intervals
 
@@ -573,7 +573,7 @@ of $U$ under $y \mapsto b^{l'} y - b^{l'} x$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.irwinMeasure_halfOpen_deeper_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-half-open-deeper-local-mas).
+Stated but not proved: `MetaMathlibExt.irwinMeasure_halfOpen_deeper_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-half-open-deeper-local-mas).
 
 ## Local structure of the Irwin measures on cylinders
 
@@ -591,7 +591,7 @@ where $b^l U - b^l x$ is the image of $U$ under $y \mapsto b^l y - b^l x$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.irwinMeasure_halfOpen_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-half-open-local-mass).
+Stated but not proved: `MetaMathlibExt.irwinMeasure_halfOpen_local_mass` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-half-open-local-mass).
 
 ## Masses of intervals under the Irwin measures
 
@@ -606,7 +606,7 @@ $I \subseteq [0, 1)$, $\mu_k(I)$ tends to $b(\sup I - \inf I)$ as $k \to \infty$
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.irwinMeasure_interval_convergence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-interval-convergence).
+Stated but not proved: `MetaMathlibExt.irwinMeasure_interval_convergence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#irwin-measure-interval-convergence).
 
 ## Limit of the prefix-restricted Irwin sums
 
@@ -620,7 +620,7 @@ $k \to \infty$.
 
 - Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.leadingIrwinSum_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-irwin-sum-tendsto).
+Stated but not proved: `MetaMathlibExt.leadingIrwinSum_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/IrwinSeriesMeasuresWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html#leading-irwin-sum-tendsto).
 
 ## Depends on
 
@@ -629,4 +629,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Irwin series](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/irwin-series)

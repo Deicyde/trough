@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.18 Invariant subspaces
 
-Section 78.18 of the Stacks Project, [Tag 044E](https://stacks.math.columbia.edu/tag/044E). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.18 of the Stacks Project, [Tag 044E](https://stacks.math.columbia.edu/tag/044E). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 044F, a definition
 
 [Tag 044F](https://stacks.math.columbia.edu/tag/044F) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L71). The attribute's comment: “part (1): invariant open subspaces”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L71). The attribute's comment: “part (1): invariant open subspaces”.
 
 > **Stacks 044F, part (1).** An open subspace of the object space of a groupoid in algebraic
 > spaces is *invariant* when every arrow whose source lies in it has its target in it.
@@ -24,7 +24,7 @@ abbrev IsInvariantOpen (G : GroupoidInAlgebraicSpaces site S hS B)
     (W : Subfunctor G.objects.obj) : Prop
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantLocallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L80). The attribute's comment: “part (2): invariant locally closed subspaces”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantLocallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L80). The attribute's comment: “part (2): invariant locally closed subspaces”.
 
 > **Stacks 044F, part (2).** A locally closed subspace of the object space of a groupoid in
 > algebraic spaces is *invariant* when its inverse images under the source and the target map agree
@@ -35,7 +35,7 @@ abbrev IsInvariantLocallyClosed (G : GroupoidInAlgebraicSpaces site S hS B)
     (Z : Subfunctor G.objects.obj) : Prop
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L89). The attribute's comment: “part (3): invariant monomorphisms”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsInvariantMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InvariantSubspaces.lean#L89). The attribute's comment: “part (3): invariant monomorphisms”.
 
 > **Stacks 044F, part (3).** A monomorphism into the object space of a groupoid in algebraic
 > spaces is *invariant* when its base change along the target map and its base change along the
@@ -50,7 +50,7 @@ noncomputable abbrev IsInvariantMonomorphism (G : GroupoidInAlgebraicSpaces site
 
 [Tag 044G](https://stacks.math.columbia.edu/tag/044G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.sourceSaturation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L139). The attribute's comment: “the saturation s(t⁻¹(W)) of a subspace of the object space”.
+**`AlgebraicGeometry.Space.sourceSaturation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L139). The attribute's comment: “the saturation s(t⁻¹(W)) of a subspace of the object space”.
 
 > **Stacks 044G.** The *saturation* of a subspace `W` of the object space of a groupoid in
 > algebraic spaces: the subspace whose point set is `s(t⁻¹(W))`, the union of the orbits meeting
@@ -61,7 +61,7 @@ noncomputable def sourceSaturation (G : GroupoidInAlgebraicSpaces B S hS A)
     (W : Subfunctor G.objects.obj) : Subfunctor G.objects.obj
 ```
 
-**`AlgebraicGeometry.Space.isInvariantOpen_sourceSaturation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L289). The attribute's comment: “part (1): the saturation is an invariant open subspace”.
+**`AlgebraicGeometry.Space.isInvariantOpen_sourceSaturation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L289). The attribute's comment: “part (1): the saturation is an invariant open subspace”.
 
 > **Stacks 044G, part (1).** For an open source morphism the saturation of an open subspace of
 > the object space is an invariant open subspace.
@@ -73,7 +73,7 @@ theorem isInvariantOpen_sourceSaturation (G : GroupoidInAlgebraicSpaces B S hS A
     GroupoidInAlgebraicSpaces.IsInvariantOpen G (sourceSaturation B S hS G W)
 ```
 
-**`AlgebraicGeometry.Space.exists_isZariskiCover_isInvariantOpen_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L338). The attribute's comment: “part (2): covering by invariant quasi-compact open subspaces”.
+**`AlgebraicGeometry.Space.exists_isZariskiCover_isInvariantOpen_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantOpenSaturation.lean#L338). The attribute's comment: “part (2): covering by invariant quasi-compact open subspaces”.
 
 > **Stacks 044G, part (2).** For an open source morphism and a quasi-compact target morphism,
 > the object space of a groupoid in algebraic spaces has a Zariski covering by invariant
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.18, Tag 044E](https://stacks.math.columbia.edu/tag/044E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

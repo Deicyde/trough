@@ -7,7 +7,7 @@ statement: formalized
 
 # Log-behavior of Motzkin prefix numbers
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html).
 
 ## Ratio bounds for the A005773 recurrence
 
@@ -22,7 +22,7 @@ $$\frac{x_{n+1}}{x_n} \ge \frac{2(3n^2+6n+2)}{(n+2)(2n+1)\,\varphi_n}.$$
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to a Linear Recurrence Sequence*, INTEGERS 25 (2025), Article A100, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.a005773Recurrence_ratio_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-ratio-bounds).
+Stated but not proved: `MetaMathlibExt.a005773Recurrence_ratio_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-ratio-bounds).
 
 ## The first and second differences of A005773 are log-balanced
 
@@ -41,7 +41,7 @@ $(z_n / n!)_{n \ge 3}$ log-concave.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to a Linear Recurrence Sequence*, INTEGERS 25 (2025), Article A100, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.a005773Recurrence_diff_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-diff-log-balanced).
+Stated but not proved: `MetaMathlibExt.a005773Recurrence_diff_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-diff-log-balanced).
 
 ## The third differences of A005773 are log-convex and log-balanced
 
@@ -59,7 +59,7 @@ $(z_n / n!)_{n \ge 3}$ is log-concave, so $(\Delta^3 A_n)_{n \ge 3}$ is log-bala
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to a Linear Recurrence Sequence*, INTEGERS 25 (2025), Article A100, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.a005773Recurrence_thirdDiff_logConvex_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-third-diff-log-convex).
+Stated but not proved: `MetaMathlibExt.a005773Recurrence_thirdDiff_logConvex_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-third-diff-log-convex).
 
 ## Log-concave weighted sequences built from A005773
 
@@ -74,7 +74,7 @@ is, these four sequences, indexed from $m = 1$, are log-concave.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to a Linear Recurrence Sequence*, INTEGERS 25 (2025), Article A100, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.a005773Recurrence_weighted_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-weighted-log-concave).
+Stated but not proved: `MetaMathlibExt.a005773Recurrence_weighted_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-weighted-log-concave).
 
 ## Log-convexity of $(n A_n)^n$ for A005773
 
@@ -87,7 +87,7 @@ $(n^n A_n^n)_{n \ge 1}$ is log-convex.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to a Linear Recurrence Sequence*, INTEGERS 25 (2025), Article A100, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.a005773Recurrence_pow_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-pow-log-convex).
+Stated but not proved: `MetaMathlibExt.a005773Recurrence_pow_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearRecurrenceLogBehaviorWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html#a005773-recurrence-pow-log-convex).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Log-behavior of Motzkin prefix numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/log-behavior-of-motzkin-prefix-numbers)

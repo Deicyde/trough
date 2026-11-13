@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.9 Regular schemes
 
-Section 28.9 of the Stacks Project, [Tag 02IR](https://stacks.math.columbia.edu/tag/02IR). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 28.9 of the Stacks Project, [Tag 02IR](https://stacks.math.columbia.edu/tag/02IR). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02IS, a definition
 
 [Tag 02IS](https://stacks.math.columbia.edu/tag/02IS) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Regular.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Regular.lean#L68). The attribute's comment: “the source's requirement on `𝒪_X(U)`, Noetherian *and* regular, is Mathlib's class `IsRegularRing`: it extends `IsNoetherianRing`, and its further field is that the localization at every prime is a regular local ring. Both halves of the requirement are therefore written into this definition, the Noetherian one recoverable as `IsRegularRing.toIsNoetherian`; see the module docstring”.
+**`AlgebraicGeometry.IsRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Regular.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/Regular.lean#L68). The attribute's comment: “the source's requirement on `𝒪_X(U)`, Noetherian *and* regular, is Mathlib's class `IsRegularRing`: it extends `IsNoetherianRing`, and its further field is that the localization at every prime is a regular local ring. Both halves of the requirement are therefore written into this definition, the Noetherian one recoverable as `IsRegularRing.toIsNoetherian`; see the module docstring”.
 
 > A scheme is regular, or nonsingular, if every point has an affine open neighbourhood whose
 > ring of sections is Noetherian and regular.
@@ -27,7 +27,7 @@ public abbrev IsRegular (X : Scheme.{u}) : Prop
 
 [Tag 02IT](https://stacks.math.columbia.edu/tag/02IT) in the Stacks Project.
 
-**`AlgebraicGeometry.isRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L144).
+**`AlgebraicGeometry.isRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L144).
 
 > A scheme is regular if and only if it is locally Noetherian with regular local rings at
 > every point, if and only if it is locally Noetherian with regular local rings at closed points.
@@ -45,7 +45,7 @@ theorem isRegular_tfae (X : Scheme.{u}) :
 
 [Tag 02IU](https://stacks.math.columbia.edu/tag/02IU) in the Stacks Project.
 
-**`AlgebraicGeometry.isRegular_tfae_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L255). The attribute's comment: “equivalent conditions”.
+**`AlgebraicGeometry.isRegular_tfae_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L255). The attribute's comment: “equivalent conditions”.
 
 > **Stacks Project, Tag 02IU.** A scheme is regular if and only if the ring of sections is
 > regular on every affine open, if and only if it is regular on the members of one affine open
@@ -62,7 +62,7 @@ theorem isRegular_tfae_cover (X : Scheme.{u}) :
         (⨆ i, U i) = ⊤ ∧ ∀ i, IsRegular (U i).toScheme]
 ```
 
-**`AlgebraicGeometry.IsRegular.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L276). The attribute's comment: “open subschemes”.
+**`AlgebraicGeometry.IsRegular.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/RegularCharacterization.lean#L276). The attribute's comment: “open subschemes”.
 
 > **Stacks Project, Tag 02IU.** Every open subscheme of a regular scheme is regular.
 
@@ -75,7 +75,7 @@ theorem IsRegular.restrict {X : Scheme.{u}} (hX : IsRegular X) (U : X.Opens) :
 
 [Tag 0569](https://stacks.math.columbia.edu/tag/0569) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Regular.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Regular.lean#L74). The attribute's comment: “a regular scheme is normal; the sole hypothesis is `IsRegular` of Tag 02IS, whose `IsRegularRing` already carries Noetherianness, so nothing beyond the source is assumed”.
+**`AlgebraicGeometry.isNormal_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Regular.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/Regular.lean#L74). The attribute's comment: “a regular scheme is normal; the sole hypothesis is `IsRegular` of Tag 02IS, whose `IsRegularRing` already carries Noetherianness, so nothing beyond the source is assumed”.
 
 > **Stacks Project, Tag 0569.** Every regular scheme is normal.
 
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.9, Tag 02IR](https://stacks.math.columbia.edu/tag/02IR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

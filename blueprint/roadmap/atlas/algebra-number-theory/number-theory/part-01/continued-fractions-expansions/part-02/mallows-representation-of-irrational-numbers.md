@@ -7,7 +7,7 @@ statement: formalized
 
 # Mallows representation of irrational numbers
 
-81 results, 47 proved and 34 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html).
+81 results, 47 proved and 34 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html).
 
 ## The Mallows alphabet
 
@@ -18,7 +18,7 @@ letters $L$, $M$ and $R$, standing for "left", "middle" and "right".
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 4.
 
-Formalized by `MetaMathlibExt.MallowsLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-letter).
+Formalized by `MetaMathlibExt.MallowsLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-letter).
 
 ## Stern–Brocot letters
 
@@ -29,7 +29,7 @@ $L$ ("left") and $R$ ("right").
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.SternBrocotLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-letter).
+Formalized by `MetaMathlibExt.SternBrocotLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-letter).
 
 ## The parity alphabet
 
@@ -41,7 +41,7 @@ of infinite sequences over this alphabet.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.MallowsParityLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-parity-letter).
+Formalized by `MetaMathlibExt.MallowsParityLetter`, an inductive type declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-parity-letter).
 
 ## Real value of a fraction encoded as a pair
 
@@ -53,7 +53,7 @@ when $m = 0$).
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2 (fractions `n / m` labelling the trees).
 
-Formalized by `MetaMathlibExt.natPairToReal`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#nat-pair-to-real).
+Formalized by `MetaMathlibExt.natPairToReal`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#nat-pair-to-real).
 
 ## The pair $(1, 2)$ encodes $1/2$
 
@@ -64,7 +64,7 @@ $(1, 2)$ is $1/2$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.
 
-Formalized by `MetaMathlibExt.natPairToReal_one_two`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#nat-pair-to-real-one-two).
+Formalized by `MetaMathlibExt.natPairToReal_one_two`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#nat-pair-to-real-one-two).
 
 ## Mediant of a gap
 
@@ -76,7 +76,7 @@ $(n_1 + n_2)/(m_1 + m_2)$, encoded as the pair $(n_1 + n_2, m_1 + m_2)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 1 (mediant construction).
 
-Formalized by `MetaMathlibExt.gapMediant`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#gap-mediant).
+Formalized by `MetaMathlibExt.gapMediant`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#gap-mediant).
 
 ## The mediant of $0/1$ and $1/1$
 
@@ -88,7 +88,7 @@ pair $(1, 2)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 1.
 
-Formalized by `MetaMathlibExt.gapMediant_root`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#gap-mediant-root).
+Formalized by `MetaMathlibExt.gapMediant_root`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#gap-mediant-root).
 
 ## Mallows' insertion rule
 
@@ -103,7 +103,7 @@ The rule is applied to adjacent fractions $n_1/m_1 < n_2/m_2$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3 (definition of `MT_{i+1}`).
 
-Formalized by `MetaMathlibExt.mallowsInsert`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert).
+Formalized by `MetaMathlibExt.mallowsInsert`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert).
 
 ## Mallows insertion between $0/1$ and $1/1$
 
@@ -115,7 +115,7 @@ Mallows tree is $MT_1 = \langle 1/2, 2/3 \rangle$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3.
 
-Formalized by `MetaMathlibExt.mallowsInsert_zero_one`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert-zero-one).
+Formalized by `MetaMathlibExt.mallowsInsert_zero_one`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert-zero-one).
 
 ## Mallows insertion between $1/2$ and $2/3$
 
@@ -127,7 +127,7 @@ has odd numerator).
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 1.
 
-Formalized by `MetaMathlibExt.mallowsInsert_half_twoThirds`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert-half-two-thirds).
+Formalized by `MetaMathlibExt.mallowsInsert_half_twoThirds`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-insert-half-two-thirds).
 
 ## One refinement step of the Mallows tree
 
@@ -141,7 +141,7 @@ order the rule gives them. A list with fewer than two entries is its own refinem
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3.
 
-Formalized by `MetaMathlibExt.mallowsRefine`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-refine).
+Formalized by `MetaMathlibExt.mallowsRefine`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-refine).
 
 ## Fractions inserted by one Mallows step
 
@@ -156,7 +156,7 @@ entries.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3.
 
-Formalized by `MetaMathlibExt.mallowsInserted`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-inserted).
+Formalized by `MetaMathlibExt.mallowsInserted`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-inserted).
 
 ## Mallows levels
 
@@ -173,7 +173,7 @@ After $k$ steps the list has $3^k + 1$ entries, so $MT_i$ has $2 \cdot 3^{i-1}$ 
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3.
 
-Formalized by `MetaMathlibExt.mallowsLevel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level).
+Formalized by `MetaMathlibExt.mallowsLevel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level).
 
 ## The second Mallows level
 
@@ -184,7 +184,7 @@ Mallows' construction is $MT_2 = \langle 1/3, 2/5, 4/7, 3/5, 3/4, 4/5\rangle$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 1 and Figure 2.
 
-Formalized by `MetaMathlibExt.mallowsLevel_one`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level-one).
+Formalized by `MetaMathlibExt.mallowsLevel_one`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level-one).
 
 ## Children of a Mallows-tree vertex
 
@@ -197,7 +197,7 @@ vertex have gaps $(a, p)$, $(p, q)$ and $(q, b)$ respectively.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 3.
 
-Formalized by `MetaMathlibExt.mallowsChild`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-child).
+Formalized by `MetaMathlibExt.mallowsChild`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-child).
 
 ## Gaps of the Mallows tree
 
@@ -212,7 +212,7 @@ from left to right.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 3.
 
-Formalized by `MetaMathlibExt.mallowsNode`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-node).
+Formalized by `MetaMathlibExt.mallowsNode`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-node).
 
 ## Labels of the Mallows tree
 
@@ -225,7 +225,7 @@ that vertex.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 3 and Figure 3.
 
-Formalized by `MetaMathlibExt.mallowsLabel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-label).
+Formalized by `MetaMathlibExt.mallowsLabel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-label).
 
 ## Labels of the first Mallows-tree vertices
 
@@ -237,7 +237,7 @@ child is labelled $\langle 3/4, 4/5\rangle$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Figure 3.
 
-Formalized by `MetaMathlibExt.mallowsLabel_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-label-small).
+Formalized by `MetaMathlibExt.mallowsLabel_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-label-small).
 
 ## Letter chosen at a Mallows-tree vertex
 
@@ -250,7 +250,7 @@ if $\alpha < p$; otherwise it is $M$ if $\alpha < q$, and $R$ if $\alpha \ge q$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 4.
 
-Formalized by `MetaMathlibExt.mallowsChoose`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-choose).
+Formalized by `MetaMathlibExt.mallowsChoose`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-choose).
 
 ## Gaps along the Mallows path of a real number
 
@@ -266,7 +266,7 @@ $\mathrm{pf}_{i+1}(\alpha)$ of the Mallows tree visited at step $i + 1$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 4.
 
-Formalized by `MetaMathlibExt.mallowsInterval`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-interval).
+Formalized by `MetaMathlibExt.mallowsInterval`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-interval).
 
 ## Mallows representation
 
@@ -285,7 +285,7 @@ otherwise.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 4.
 
-Formalized by `MetaMathlibExt.mallowsRep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep).
+Formalized by `MetaMathlibExt.mallowsRep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep).
 
 ## The first Mallows letter below one half
 
@@ -296,7 +296,7 @@ letter $M_1(\alpha)$ of the Mallows representation of $\alpha$ is $L$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 4 and Figure 4.
 
-Formalized by `MetaMathlibExt.mallowsRep_zero_of_lt`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-zero-of-lt).
+Formalized by `MetaMathlibExt.mallowsRep_zero_of_lt`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-zero-of-lt).
 
 ## Children in the Stern–Brocot tree
 
@@ -311,7 +311,7 @@ children.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 1.
 
-Formalized by `MetaMathlibExt.sternBrocotChild`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-child).
+Formalized by `MetaMathlibExt.sternBrocotChild`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-child).
 
 ## Labels of the Stern–Brocot tree
 
@@ -326,7 +326,7 @@ from the root by the path $w$ in the left subtree of the Stern–Brocot tree, wh
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 1 and Figure 1.
 
-Formalized by `MetaMathlibExt.sternBrocotLabel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-label).
+Formalized by `MetaMathlibExt.sternBrocotLabel`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-label).
 
 ## Small labels of the Stern–Brocot tree
 
@@ -338,7 +338,7 @@ the path $LR$ is labelled $2/5$, as numerator–denominator pairs.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Figure 1.
 
-Formalized by `MetaMathlibExt.sternBrocotLabel_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-label-small).
+Formalized by `MetaMathlibExt.sternBrocotLabel_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-label-small).
 
 ## The Stern–Brocot choice at a vertex
 
@@ -352,7 +352,7 @@ and $R$ otherwise.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotChoose`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-choose).
+Formalized by `MetaMathlibExt.sternBrocotChoose`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-choose).
 
 ## Gaps along the Stern–Brocot path
 
@@ -368,7 +368,7 @@ vertex visited at step $j + 1$, whose label is the fraction $f_{j+1}(\alpha)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotInterval`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-interval).
+Formalized by `MetaMathlibExt.sternBrocotInterval`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-interval).
 
 ## Fractions on the Stern–Brocot path
 
@@ -383,7 +383,7 @@ of the gap reached after $j$ steps; in particular $f_1(\alpha) = 1/2$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotFrac`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac).
+Formalized by `MetaMathlibExt.sternBrocotFrac`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac).
 
 ## The Stern–Brocot path starts at $1/2$
 
@@ -395,7 +395,7 @@ $1$ and denominator $2$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotFrac_zero`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-zero).
+Formalized by `MetaMathlibExt.sternBrocotFrac_zero`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-zero).
 
 ## Stern–Brocot representation
 
@@ -411,7 +411,7 @@ $\alpha < f_j(\alpha)$; otherwise $SB_j(\alpha) = R$ and the walk moves to the r
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotRep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep).
+Formalized by `MetaMathlibExt.sternBrocotRep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep).
 
 ## First Stern–Brocot letter below one half
 
@@ -422,7 +422,7 @@ first letter $SB_1(\alpha)$ of the Stern–Brocot representation of $\alpha$ is 
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Definition 2.
 
-Formalized by `MetaMathlibExt.sternBrocotRep_zero_of_lt`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep-zero-of-lt).
+Formalized by `MetaMathlibExt.sternBrocotRep_zero_of_lt`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep-zero-of-lt).
 
 ## The map $\varphi_{SBT}$
 
@@ -436,7 +436,7 @@ $\langle l, f \rangle$ if the numerator of $l$ is even, and $\langle f, r \rangl
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3 (definition of `φ_SBT`).
 
-Formalized by `MetaMathlibExt.sternBrocotPhi`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi).
+Formalized by `MetaMathlibExt.sternBrocotPhi`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi).
 
 ## The map $\psi_{SBT}$
 
@@ -452,7 +452,7 @@ $v_R$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3 (definition of `ψ_SBT`).
 
-Formalized by `MetaMathlibExt.sternBrocotPsi`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-psi).
+Formalized by `MetaMathlibExt.sternBrocotPsi`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-psi).
 
 ## The maps $\varphi_{SBT}$ and $\psi_{SBT}$ at the root
 
@@ -465,7 +465,7 @@ and $3/4$ are the ones with gaps $(0/1, 1/2)$, $(1/2, 2/3)$ and $(2/3, 1/1)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 2.3.
 
-Formalized by `MetaMathlibExt.sternBrocotPhi_psi_root`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi-psi-root).
+Formalized by `MetaMathlibExt.sternBrocotPhi_psi_root`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi-psi-root).
 
 ## Transition rule of the parity sequence
 
@@ -479,7 +479,7 @@ $\mathrm{step}(O_R, R) = O_R$, $\mathrm{step}(E_L, L) = O_R$ and $\mathrm{step}(
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3 (definition of `Q`, Figure 5).
 
-Formalized by `MetaMathlibExt.mallowsQStep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-qstep).
+Formalized by `MetaMathlibExt.mallowsQStep`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-qstep).
 
 ## The parity sequence of a Stern–Brocot word
 
@@ -494,7 +494,7 @@ Indices start at $0$ here; the source numbers from $1$, so $Q_0$ is the source's
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.mallowsQ`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-q).
+Formalized by `MetaMathlibExt.mallowsQ`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-q).
 
 ## First values of the parity sequence
 
@@ -508,7 +508,7 @@ Indices start at $0$ here; in the source these values are $Q_1$, $Q_2$ and $Q_3$
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.mallowsQ_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-q-small).
+Formalized by `MetaMathlibExt.mallowsQ_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-q-small).
 
 ## The admissible parity sequences $I$
 
@@ -523,7 +523,7 @@ is the periodic sequence $(O_L, E_R, O_L, E_R, \dots)$ or $(O_R, E_L, O_R, E_L, 
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.mallowsAdmissible`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-admissible).
+Formalized by `MetaMathlibExt.mallowsAdmissible`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-admissible).
 
 ## The constant sequence $O_L O_L O_L \cdots$ is not admissible
 
@@ -535,7 +535,7 @@ $\{O_L, E_R, O_R, E_L\}$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.const_OL_not_mem_mallowsAdmissible`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#const-ol-not-mem-mallows-admissible).
+Formalized by `MetaMathlibExt.const_OL_not_mem_mallowsAdmissible`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#const-ol-not-mem-mallows-admissible).
 
 ## Odd positions of a parity sequence
 
@@ -551,7 +551,7 @@ $o(1) < o(2) < \cdots$; the $i$-th odd position here is $o(i+1) - 1$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.mallowsOddIndex`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index).
+Formalized by `MetaMathlibExt.mallowsOddIndex`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index).
 
 ## The first odd position of a sequence starting with $O_L$
 
@@ -564,7 +564,7 @@ the smallest odd position, is $0$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3 (`o(1) = 1`).
 
-Formalized by `MetaMathlibExt.mallowsOddIndex_zero`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index-zero).
+Formalized by `MetaMathlibExt.mallowsOddIndex_zero`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index-zero).
 
 ## The letter rule of $T$
 
@@ -581,7 +581,7 @@ $o(i + 1) = o(i) + 1$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3 (definition of `T_i`).
 
-Formalized by `MetaMathlibExt.mallowsTLetter`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tletter).
+Formalized by `MetaMathlibExt.mallowsTLetter`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tletter).
 
 ## The map $T$
 
@@ -600,7 +600,7 @@ than their number.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 3.
 
-Formalized by `MetaMathlibExt.mallowsT`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t).
+Formalized by `MetaMathlibExt.mallowsT`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t).
 
 ## The finite version $\dot T$ of $T$
 
@@ -616,7 +616,7 @@ $y_{p_i} = y_{p_{i+1}} = O_L$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 4.3 (definition of `Ṫ`).
 
-Formalized by `MetaMathlibExt.mallowsTFin`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tfin).
+Formalized by `MetaMathlibExt.mallowsTFin`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tfin).
 
 ## Two values of $\dot T$
 
@@ -628,7 +628,7 @@ $\dot T(\langle O_L, O_L \rangle) = \langle L \rangle$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 4.3.
 
-Formalized by `MetaMathlibExt.mallowsTFin_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tfin-small).
+Formalized by `MetaMathlibExt.mallowsTFin_small`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tfin-small).
 
 ## Positively Poisson stable sequence
 
@@ -646,7 +646,7 @@ necessarily $x$ itself: for example, $(0, 1, 1, 1, \dots)$ is positively Poisson
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 4.2.
 
-Formalized by `MetaMathlibExt.IsPositivelyPoissonStable`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable).
+Formalized by `MetaMathlibExt.IsPositivelyPoissonStable`, a definition declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable).
 
 ## Constant sequences are positively Poisson stable
 
@@ -657,7 +657,7 @@ the constant sequence $(c, c, c, \dots)$ is positively Poisson stable.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Section 4.2.
 
-Formalized by `MetaMathlibExt.isPositivelyPoissonStable_const`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-const).
+Formalized by `MetaMathlibExt.isPositivelyPoissonStable_const`, a theorem declared in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-const).
 
 ## Stern–Brocot tree: labels, order and paths
 
@@ -677,7 +677,7 @@ $a_\ell - 1$; if $\ell = 1$, then $w = L^{a_1 - 2}$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sternBrocotTree_label_unique_order_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-tree-label-unique-order-pat).
+Stated but not proved: `MetaMathlibExt.sternBrocotTree_label_unique_order_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-tree-label-unique-order-pat).
 
 ## Stern–Brocot representation and continued fractions
 
@@ -694,7 +694,7 @@ $L$ if $k$ is even and $R$ if $k$ is odd.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.sternBrocotRep_tendsto_and_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep-tendsto-and-cont-fract).
+Stated but not proved: `MetaMathlibExt.sternBrocotRep_tendsto_and_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-rep-tendsto-and-cont-fract).
 
 ## Characterization of Stern–Brocot representations
 
@@ -706,7 +706,7 @@ only if it is neither eventually constantly $L$ nor eventually constantly $R$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.image_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#image-stern-brocot-rep).
+Stated but not proved: `MetaMathlibExt.image_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#image-stern-brocot-rep).
 
 ## Each rational in $(0, 1)$ occurs once in the Mallows tree, in increasing order on each level
 
@@ -727,7 +727,7 @@ order of the fractions agrees with their increasing order.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.mallowsTree_label_unique_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tree-label-unique-order).
+Stated but not proved: `MetaMathlibExt.mallowsTree_label_unique_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-tree-label-unique-order).
 
 ## Mallows levels from the Stern–Brocot maps
 
@@ -746,7 +746,7 @@ The paper quotes this identity from Hida, J. Comb. 14 (2023).
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.mallowsLevel_eq_phi_psi_iterate` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level-eq-phi-psi-iterate).
+Stated but not proved: `MetaMathlibExt.mallowsLevel_eq_phi_psi_iterate` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-level-eq-phi-psi-iterate).
 
 ## Characterization of Mallows representations
 
@@ -758,7 +758,7 @@ eventually constantly $L$ nor eventually constantly $R$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.image_mallowsRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#image-mallows-rep).
+Stated but not proved: `MetaMathlibExt.image_mallowsRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#image-mallows-rep).
 
 ## Hida's map $Q$ is a bijection onto $I$
 
@@ -775,7 +775,7 @@ irrational $\alpha \in (0, 1)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.bijOn_mallowsQ` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#bij-on-mallows-q).
+Stated but not proved: `MetaMathlibExt.bijOn_mallowsQ` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#bij-on-mallows-q).
 
 ## Parity and side of the Stern–Brocot fractions
 
@@ -800,7 +800,7 @@ Mallows label if and only if $Q_j \in \{O_L, E_L\}$ (resp. $\{O_R, E_R\}$).
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.sternBrocotFrac_parity_side` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-parity-side).
+Stated but not proved: `MetaMathlibExt.sternBrocotFrac_parity_side` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-parity-side).
 
 ## Gaps between odd letters of admissible sequences
 
@@ -817,7 +817,7 @@ distance one or two.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.mallowsOddIndex_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index-gap).
+Stated but not proved: `MetaMathlibExt.mallowsOddIndex_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-odd-index-gap).
 
 ## Hida's map $T$ is a bijection from $I$ onto the Mallows representations
 
@@ -833,7 +833,7 @@ $x \in I$ with $T(x) = M(\alpha)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.bijOn_mallowsT` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#bij-on-mallows-t).
+Stated but not proved: `MetaMathlibExt.bijOn_mallowsT` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#bij-on-mallows-t).
 
 ## Stern–Brocot labels of the Mallows representation vertices
 
@@ -845,7 +845,7 @@ For irrational `α ∈ (0, 1)` and `i ≥ 1`, `φ_SBT(f_{o(i)}(α)) = pf_i(α)`.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sternBrocotPhi_oddIndex` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi-odd-index).
+Stated but not proved: `MetaMathlibExt.sternBrocotPhi_oddIndex` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-phi-odd-index).
 
 ## The Mallows representation from the Stern–Brocot representation
 
@@ -859,7 +859,7 @@ $T(Q(\mathrm{SB}(\alpha))) = M(\alpha)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.mallowsT_mallowsQ_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-mallows-q-stern-brocot-rep).
+Stated but not proved: `MetaMathlibExt.mallowsT_mallowsQ_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-mallows-q-stern-brocot-rep).
 
 ## Block-matching lemma
 
@@ -884,7 +884,7 @@ $\ell = 0$, symmetric in the two positions, and trivial for equal positions.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.block_match_sternBrocot_mallowsQ` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#block-match-stern-brocot-mallows-q).
+Stated but not proved: `MetaMathlibExt.block_match_sternBrocot_mallowsQ` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#block-match-stern-brocot-mallows-q).
 
 ## Blocks of $T(Q(\mathrm{SB}(\alpha)))$ and of $Q(\mathrm{SB}(\alpha))$
 
@@ -911,7 +911,7 @@ false, since $x_{o(i_0)}$ is $O_L$ or $O_R$; for $\ell = 0$ both sides say $x_{o
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.mallowsT_startsWith_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 651](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L651). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-starts-with-iff).
+Stated but not proved: `MetaMathlibExt.mallowsT_startsWith_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 651](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L651). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-starts-with-iff).
 
 ## The letter $M$ in $T(Q(\mathrm{SB}(\alpha)))$ marks the ends of runs
 
@@ -933,7 +933,7 @@ is exactly what makes such $e_k$ exist, so the run decomposition is taken as a h
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.mallowsT_eq_M_iff_runEnd` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-eq-m-iff-run-end).
+Stated but not proved: `MetaMathlibExt.mallowsT_eq_M_iff_runEnd` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-t-eq-m-iff-run-end).
 
 ## Mallows and Stern–Brocot representations are eventually periodic together
 
@@ -945,7 +945,7 @@ and only if the Stern–Brocot representation $\mathrm{SB}(\alpha)$ is eventuall
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-eventually-periodic-mallows-rep-iff-s).
+Stated but not proved: `MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-eventually-periodic-mallows-rep-iff-s).
 
 ## Lagrange's theorem for Mallows representations
 
@@ -957,7 +957,7 @@ quadratic irrational, that is, algebraic of degree $2$ over $\mathbb{Q}$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-eventually-periodic-mallows-rep-iff-q).
+Stated but not proved: `MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-eventually-periodic-mallows-rep-iff-q).
 
 ## Poisson stability of the Mallows and Stern–Brocot representations
 
@@ -969,7 +969,7 @@ only if the Stern–Brocot representation of $\alpha$ is positively Poisson stab
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-mallows-rep).
+Stated but not proved: `MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-mallows-rep).
 
 ## Poisson stability of the Mallows representation and the continued fraction
 
@@ -983,7 +983,7 @@ positively Poisson stable.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 715](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L715). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-mallows-rep-2).
+Stated but not proved: `MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 715](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L715). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#is-positively-poisson-stable-mallows-rep-2).
 
 ## Transitivity of the Mallows and Stern–Brocot representations
 
@@ -998,7 +998,7 @@ occurs trivially.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.transitive_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#transitive-mallows-rep-iff-stern-brocot).
+Stated but not proved: `MetaMathlibExt.transitive_mallowsRep_iff_sternBrocotRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#transitive-mallows-rep-iff-stern-brocot).
 
 ## Transitive Mallows representations and continued fractions
 
@@ -1012,7 +1012,7 @@ factor of the sequence $a_1 a_2 a_3 \cdots$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.transitive_mallowsRep_iff_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 737](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L737). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#transitive-mallows-rep-iff-cont-fract).
+Stated but not proved: `MetaMathlibExt.transitive_mallowsRep_iff_contFract` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 737](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L737). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#transitive-mallows-rep-iff-cont-fract).
 
 ## Mallows representations without the letter $M$
 
@@ -1024,7 +1024,7 @@ in the Mallows representation $M(\alpha)$ if and only if $a_{2k}$ is even for ev
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ne_M_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-m-iff).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ne_M_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-m-iff).
 
 ## Mallows representations without the letter $R$
 
@@ -1040,7 +1040,7 @@ integers $e'_k$ and each $w_k$ equal to $(2)$ or $(1, e''_k, 1)$ for a positive 
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ne_R_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-r-iff).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ne_R_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-r-iff).
 
 ## Mallows representations without the letter $L$
 
@@ -1056,7 +1056,7 @@ $e'_k$ and each $w_k$ equal to $(2)$ or $(1, e''_k, 1)$ for a positive integer $
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ne_L_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-l-iff).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ne_L_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ne-l-iff).
 
 ## The numerator parities are not eventually constant
 
@@ -1070,7 +1070,7 @@ eventually constant.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.sternBrocotFrac_parity_not_eventually_const` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 789](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L789). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-parity-not-eventually).
+Stated but not proved: `MetaMathlibExt.sternBrocotFrac_parity_not_eventually_const` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 789](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L789). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#stern-brocot-frac-parity-not-eventually).
 
 ## Eventually alternating parities of Stern–Brocot numerators
 
@@ -1091,7 +1091,7 @@ $M(\alpha) = M R^{e'_1} M L^{e'_2} M R^{e'_3} M \cdots$ with all $e'_i \ge 0$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.parity_eventually_alternating_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#parity-eventually-alternating-iff).
+Stated but not proved: `MetaMathlibExt.parity_eventually_alternating_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#parity-eventually-alternating-iff).
 
 ## Eventual period three of the numerator parities
 
@@ -1113,7 +1113,7 @@ $M_{m(2k'+1) - 1} = L$ and $M_{m(2k'+1) + 1} = R$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 14.
 
-Stated but not proved: `MetaMathlibExt.parity_eventually_period_three_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 818](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L818). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#parity-eventually-period-three-iff).
+Stated but not proved: `MetaMathlibExt.parity_eventually_period_three_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 818](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L818). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#parity-eventually-period-three-iff).
 
 ## Typical properties of Mallows representations
 
@@ -1127,7 +1127,7 @@ $M(\alpha)$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 15.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ae_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 838](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L838). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-properties).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ae_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 838](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L838). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-properties).
 
 ## Factor complexity of almost every Mallows representation
 
@@ -1139,7 +1139,7 @@ representation $M(\alpha)$ satisfies $p_{M(\alpha)}(n) = 3^n$ for every $n \ge 0
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ae_factorComplexity` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-factor-complexity).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ae_factorComplexity` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-factor-complexity).
 
 ## Words without bounded gaps in almost every Mallows representation
 
@@ -1153,7 +1153,7 @@ $i \ge 0$, the window $M_{i+1}(\alpha) \cdots M_{i+\ell}(\alpha)$ contains an oc
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ae_not_relativelyDense` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 861](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L861). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-not-relatively-dense).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ae_not_relativelyDense` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 861](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L861). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-not-relatively-dense).
 
 ## Words of frequency zero in almost every Mallows representation
 
@@ -1168,7 +1168,7 @@ then $N_n / n \to 0$ as $n \to \infty$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ae_frequency_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 871](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L871). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-frequency-zero).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ae_frequency_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 871](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L871). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-frequency-zero).
 
 ## Matching fractions of almost every Mallows representation
 
@@ -1186,7 +1186,7 @@ For $\ell = 0$ the statement is trivial; the source states it for $\ell \ge 1$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_ae_matchingFraction_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 884](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L884). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-matching-fraction-one).
+Stated but not proved: `MetaMathlibExt.mallowsRep_ae_matchingFraction_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 884](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L884). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-ae-matching-fraction-one).
 
 ## Extremal measures of Mallows cylinder sets
 
@@ -1204,7 +1204,7 @@ For $\ell = 0$ both values equal $1$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_cylinder_measure_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-cylinder-measure-extrema).
+Stated but not proved: `MetaMathlibExt.mallowsRep_cylinder_measure_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-cylinder-measure-extrema).
 
 ## Measure bound for the letter $M$ at a fixed position
 
@@ -1216,7 +1216,7 @@ $M_i(\alpha) = M$ has Lebesgue measure less than $3 - 2\sqrt{2}$.
 
 - Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.mallowsRep_eq_M_measure_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 910](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L910). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-eq-m-measure-lt).
+Stated but not proved: `MetaMathlibExt.mallowsRep_eq_M_measure_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/MallowsRepresentationWanted.lean, line 910](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MallowsRepresentationWanted.lean#L910). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html#mallows-rep-eq-m-measure-lt).
 
 ## Depends on
 
@@ -1225,4 +1225,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mallows representation of irrational numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/mallows-representation-of-irrational-numbers)

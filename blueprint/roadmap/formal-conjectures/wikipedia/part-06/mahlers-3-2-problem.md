@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [Wikipedia](https://en.wikipedia.org/wiki/Mahler%27s_3/2_problem)
 
-*Quoted from [FormalConjectures/Wikipedia/Mahler32.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mahler32.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Mahler32.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mahler32.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open, 1 solved and 1 textbook result.
 
@@ -23,7 +23,7 @@ Open: stated without proof.
 theorem mahler_conjecture (x : ℝ) (hx : IsZNumber x) : False
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mahler32.lean#L42).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mahler32.lean#L42).
 
 ## `Mahler32.mahler_conjecture.variants.consequence`
 
@@ -37,7 +37,7 @@ theorem mahler_conjecture.variants.consequence (H : 1 / 2 < Ω (3 / 2)) :
     type_of% mahler_conjecture
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mahler32.lean#L48).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mahler32.lean#L48).
 
 ## `Mahler32.mahler_conjecture.variants.flatto_lagarias_pollington`
 
@@ -52,7 +52,7 @@ theorem mahler_conjecture.variants.flatto_lagarias_pollington (p q : ℕ) (hq : 
     (hpq : p.Coprime q) (hpq' : q < p) : 1 / p ≤ Ω (p / q)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mahler32.lean#L56).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mahler32.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mahler32.lean#L56).
 
 ## Depends on
 
@@ -60,5 +60,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Mahler32.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mahler32.lean)
+- [FormalConjectures/Wikipedia/Mahler32.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mahler32.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mahler%27s_3/2_problem)

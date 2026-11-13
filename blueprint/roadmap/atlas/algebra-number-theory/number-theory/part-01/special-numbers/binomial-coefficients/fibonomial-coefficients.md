@@ -8,7 +8,7 @@ proof: formalized
 
 # Fibonomial coefficients
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html).
 
 ## Lifting the exponent for Fibonacci numbers
 
@@ -16,7 +16,7 @@ Let $p$ be an odd prime and $m \ge 1$ an
 integer such that $p$ divides the Fibonacci number $F_m$, and write $v_p$ for the $p$-adic
 valuation. Then $v_p(F_{mj}) = v_p(F_m) + v_p(j)$ for every integer $j \ge 1$.
 
-Formalized by `MetaMathlibExt.padicValNat_fib_mul`, a theorem declared in [MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#padic-val-nat-fib-mul).
+Formalized by `MetaMathlibExt.padicValNat_fib_mul`, a theorem declared in [MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#padic-val-nat-fib-mul).
 
 ## Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers
 
@@ -34,7 +34,7 @@ where the quotient is taken by division of natural numbers, is $0$.
 
 - Phunphayap–Pongsriiam, Example `rem18`, equation `eq1remark2`.
 
-Formalized by `MetaMathlibExt.fibonomial_primePower_padicVal_eq_zero`, a theorem declared in [MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#fibonomial-prime-power-padic-val-eq-zero).
+Formalized by `MetaMathlibExt.fibonomial_primePower_padicVal_eq_zero`, a theorem declared in [MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Padics/FibonomialPrimePowerValuation.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#fibonomial-prime-power-padic-val-eq-zero).
 
 ## Kimball–Webb congruence for Fibonomial coefficients modulo $p^3$
 
@@ -56,7 +56,7 @@ coefficients.
 
 - Christian Ballot, *The Congruence of Wolstenholme for Generalized Binomial Coefficients Related to Lucas Sequences*, Journal of Integer Sequences 18 (2015), Article 15.5.4, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Ballot/ballot14.tex>, Theorem `thm:KW` (rewriting Lemma 3 of Kimball and Webb), equation `eq:Fib`, lines 144-150.
 
-Formalized by `MetaMathlibExt.fibonomial_prime_cube_congr`, a theorem declared in [MathlibExt/NumberTheory/Padics/KimballWebbFibonomialCongruence.lean, line 1942](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Padics/KimballWebbFibonomialCongruence.lean#L1942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#fibonomial-prime-cube-congr).
+Formalized by `MetaMathlibExt.fibonomial_prime_cube_congr`, a theorem declared in [MathlibExt/NumberTheory/Padics/KimballWebbFibonomialCongruence.lean, line 1942](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Padics/KimballWebbFibonomialCongruence.lean#L1942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html#fibonomial-prime-cube-congr).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fibonomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/fibonomial-coefficients)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Fence tilings and bi-periodic Fibonacci numbers
 
-24 results, 15 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html).
+24 results, 15 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html).
 
 ## Bi-periodic Fibonacci numbers squared
 
@@ -33,7 +33,7 @@ Division by zero gives $0$, so the sequence is defined for all $a$ and $b$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Definition 1.1.
 
-Formalized by `MetaMathlibExt.biPeriodicFibonacciSq`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq).
+Formalized by `MetaMathlibExt.biPeriodicFibonacciSq`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq).
 
 ## Zeroth bi-periodic Fibonacci number squared
 
@@ -44,7 +44,7 @@ bi-periodic Fibonacci number squared $q^2_0$ equals $0$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Definition 1.1.
 
-Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-zero).
+Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-zero).
 
 ## First bi-periodic Fibonacci number squared
 
@@ -55,7 +55,7 @@ bi-periodic Fibonacci number squared $q^2_1$ equals $1$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Definition 1.1.
 
-Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-one).
+Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-one).
 
 ## Second bi-periodic Fibonacci number squared
 
@@ -66,7 +66,7 @@ bi-periodic Fibonacci number squared $q^2_2$ equals $a^2$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Definition 1.1.
 
-Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-two).
+Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-two).
 
 ## Recurrence for the bi-periodic Fibonacci numbers squared
 
@@ -91,7 +91,7 @@ Division by zero gives $0$, so this holds for all $a$ and $b$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Definition 1.1, (1.1).
 
-Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_add_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-add-three).
+Formalized by `MetaMathlibExt.biPeriodicFibonacciSq_add_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#bi-periodic-fibonacci-sq-add-three).
 
 ## Fence tilings of a board
 
@@ -104,7 +104,7 @@ posts are pairwise disjoint, that is, $k + 2 \notin F$ for every $k \in F$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Section 2.
 
-Formalized by `MetaMathlibExt.fenceTilings`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tilings).
+Formalized by `MetaMathlibExt.fenceTilings`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tilings).
 
 ## Weight of a fence tiling
 
@@ -119,7 +119,7 @@ $\lfloor h/2 \rfloor + 1$) and of $b$ otherwise (a half-square in an even cell).
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Section 2.
 
-Formalized by `MetaMathlibExt.fenceTilingWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-weight).
+Formalized by `MetaMathlibExt.fenceTilingWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-weight).
 
 ## Weighted count of fence tilings
 
@@ -132,7 +132,7 @@ in which a half-square weighs $a$ in an odd cell and $b$ in an even cell and fen
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Section 2 (before Lemma 2.1).
 
-Formalized by `MetaMathlibExt.fenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum).
+Formalized by `MetaMathlibExt.fenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum).
 
 ## Weighted fence tilings of the empty board
 
@@ -144,7 +144,7 @@ $(1/2, 1/2)$-fences equals $1$: the only tiling is the empty one.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, proof of Lemma 2.1.
 
-Formalized by `MetaMathlibExt.fenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-zero).
+Formalized by `MetaMathlibExt.fenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-zero).
 
 ## Weighted fence tilings of the one-cell board
 
@@ -157,7 +157,7 @@ $a^2$: the only tiling has two half-squares in cell $1$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, proof of Theorem 2.2.
 
-Formalized by `MetaMathlibExt.fenceTilingSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-one).
+Formalized by `MetaMathlibExt.fenceTilingSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-one).
 
 ## Weighted count of bifence-free fence tilings
 
@@ -171,7 +171,7 @@ $k \in F$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.15.
 
-Formalized by `MetaMathlibExt.noBifenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum).
+Formalized by `MetaMathlibExt.noBifenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum).
 
 ## Tilings of the empty board with no bifence
 
@@ -183,7 +183,7 @@ weights $a$ and $b$, equals $1$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.15.
 
-Formalized by `MetaMathlibExt.noBifenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum-zero).
+Formalized by `MetaMathlibExt.noBifenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum-zero).
 
 ## Weighted tilings with no free bifence
 
@@ -200,7 +200,7 @@ $b$ for one in an even cell.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13.
 
-Formalized by `MetaMathlibExt.noFreeBifenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum).
+Formalized by `MetaMathlibExt.noFreeBifenceTilingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum).
 
 ## Tilings of the empty board with no free bifence
 
@@ -212,7 +212,7 @@ $(1/2, 1/2)$-fences with no free bifence, with half-squares weighted by $a$ and 
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13.
 
-Formalized by `MetaMathlibExt.noFreeBifenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-zero).
+Formalized by `MetaMathlibExt.noFreeBifenceTilingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-zero).
 
 ## Tilings of the one-cell board with no free bifence
 
@@ -224,7 +224,7 @@ with half-square weights $a$ and $b$, equals $a^2$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13.
 
-Formalized by `MetaMathlibExt.noFreeBifenceTilingSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-one).
+Formalized by `MetaMathlibExt.noFreeBifenceTilingSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-one).
 
 ## Recurrence for weighted fence tilings of even boards
 
@@ -242,7 +242,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 2.1, (2.1).
 
-Stated but not proved: `MetaMathlibExt.fenceTilingSum_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-even).
+Stated but not proved: `MetaMathlibExt.fenceTilingSum_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-even).
 
 ## Recurrence for weighted fence tilings of odd boards
 
@@ -260,7 +260,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 2.1, (2.1).
 
-Stated but not proved: `MetaMathlibExt.fenceTilingSum_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-odd).
+Stated but not proved: `MetaMathlibExt.fenceTilingSum_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-odd).
 
 ## Fence tilings and the bi-periodic Fibonacci numbers squared
 
@@ -274,7 +274,7 @@ bi-periodic Fibonacci number squared $q^2_{n+1}$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.fenceTilingSum_eq_biPeriodicFibonacciSq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-eq-bi-periodic-fibonacc).
+Stated but not proved: `MetaMathlibExt.fenceTilingSum_eq_biPeriodicFibonacciSq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fence-tiling-sum-eq-bi-periodic-fibonacc).
 
 ## Squared Fibonacci numbers as a double binomial sum
 
@@ -289,7 +289,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.3.
 
-Stated but not proved: `MetaMathlibExt.fib_succ_sq_eq_sum_choose_mul_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-succ-sq-eq-sum-choose-mul-choose).
+Stated but not proved: `MetaMathlibExt.fib_succ_sq_eq_sum_choose_mul_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-succ-sq-eq-sum-choose-mul-choose).
 
 ## Sum of squared Fibonacci numbers from three consecutive squares
 
@@ -302,7 +302,7 @@ $$2 \sum_{j=1}^{n-2} F_j^2 = F_n^2 - F_{n-1}^2 - F_{n-2}^2.$$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.5.
 
-Stated but not proved: `MetaMathlibExt.two_mul_sum_fib_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#two-mul-sum-fib-sq).
+Stated but not proved: `MetaMathlibExt.two_mul_sum_fib_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#two-mul-sum-fib-sq).
 
 ## Squared Fibonacci numbers as weighted sums of squares
 
@@ -317,7 +317,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.10.
 
-Stated but not proved: `MetaMathlibExt.fib_succ_sq_sub_parity_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-succ-sq-sub-parity-eq-sum).
+Stated but not proved: `MetaMathlibExt.fib_succ_sq_sub_parity_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-succ-sq-sub-parity-eq-sum).
 
 ## Addition formula for squared Fibonacci numbers
 
@@ -333,7 +333,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Corollary 3.12.
 
-Stated but not proved: `MetaMathlibExt.fib_add_sq_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-add-sq-eq).
+Stated but not proved: `MetaMathlibExt.fib_add_sq_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#fib-add-sq-eq).
 
 ## Recurrence for weighted tilings with no free bifence
 
@@ -356,7 +356,7 @@ The initial values are $R_0 = 1$ and $R_1 = a^2$.
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.13.
 
-Stated but not proved: `MetaMathlibExt.noFreeBifenceTilingSum_rec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-rec).
+Stated but not proved: `MetaMathlibExt.noFreeBifenceTilingSum_rec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-free-bifence-tiling-sum-rec).
 
 ## Closed formula for bifence-free fence tilings
 
@@ -374,7 +374,7 @@ $$
 
 - Nassima Belaggoun and Hacène Belbachir, *Combinatorial Identities for the Bi-Periodic Fibonacci Numbers Squared*, The Fibonacci Quarterly 62 (2024), Article belaggoun01132024, Lemma 3.15.
 
-Stated but not proved: `MetaMathlibExt.noBifenceTilingSum_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.noBifenceTilingSum_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BiPeriodicFibonacciSquaredWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html#no-bifence-tiling-sum-eq-sum-choose).
 
 ## Depends on
 
@@ -383,4 +383,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fence tilings and bi-periodic Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/fence-tilings-and-bi-periodic-fibonacci-numbers)

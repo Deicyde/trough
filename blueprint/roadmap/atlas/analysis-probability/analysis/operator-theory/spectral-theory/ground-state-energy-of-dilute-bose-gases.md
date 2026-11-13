@@ -7,7 +7,7 @@ statement: formalized
 
 # Ground-state energy of dilute Bose gases
 
-9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html).
+9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html).
 
 ## The box $((0,L)^3)^N$
 
@@ -15,7 +15,7 @@ For a natural number $N$ and a real number $L$, the box
 $([0,L]^3)^N$ is the set of configurations $(x_1, \dots, x_N)$ of $N$ points of $\mathbb{R}^3$
 such that every coordinate of every point $x_i$ lies in the closed interval $[0, L]$.
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.box`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#box).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.box`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#box).
 
 ## Smooth functions supported inside the box
 
@@ -26,14 +26,14 @@ support is contained in the interior of the box, and that are not identically ze
 
 The functions are defined on all of $(\mathbb{R}^3)^N$ rather than on the box only.
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.CInfty0Box`, a structure declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#cinfty0-box).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.CInfty0Box`, a structure declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#cinfty0-box).
 
 ## Radial functions
 
 A function $v : \mathbb{R}^3 \to \mathbb{R}$ is radial if
 $v(x) = v(y)$ for all $x, y \in \mathbb{R}^3$ with $\|x\| = \|y\|$.
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsRadial`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#is-radial).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsRadial`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#is-radial).
 
 ## Scattering solutions
 
@@ -45,7 +45,7 @@ for every smooth, compactly supported $\varphi : \mathbb{R}^3 \to \mathbb{R}$,
 
 $$-\int_{\mathbb{R}^3} w\,\Delta\varphi = \frac{1}{2} \int_{\mathbb{R}^3} v\,(1 - w)\,\varphi.$$
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsScatteringSolution`, a structure declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#is-scattering-solution).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsScatteringSolution`, a structure declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#is-scattering-solution).
 
 ## Scattering length
 
@@ -57,7 +57,7 @@ one such solution, chosen arbitrarily; if there is no radial scattering solution
 This is Equation (3.5) of Fournais–Solovej. Under the assumptions of Theorem 1.2 the radial
 scattering solution exists and is unique, so the choice does not matter there.
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.a`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#a).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.a`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#a).
 
 ## The ratio $\mathcal{R}(v)$
 
@@ -65,7 +65,7 @@ For a potential $v : \mathbb{R}^3 \to \mathbb{R}$ with
 scattering length $a(v)$, let $\mathcal{R}(v) = \int_{\mathbb{R}^3} v(x)/(8\pi a(v))\,dx$. When
 $a(v) \neq 0$ this is the ratio of $(8\pi)^{-1} \int v$ to $a(v)$.
 
-Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓡`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled).
+Formalized by `MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓡`, a definition declared in [WantedExt/Geometry/BoseGasesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled).
 
 ## Lee–Huang–Yang error exponent
 
@@ -78,7 +78,7 @@ potential; that theorem asserts $\eta > 0$.
 
 - S. Fournais and J. P. Solovej, `The energy of dilute Bose gases`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bose_gases` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.η` is written with `def_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled-2).
+Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.η` is written with `def_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled-2).
 
 ## Lee–Huang–Yang error constant
 
@@ -93,7 +93,7 @@ error exponent, so its constant depends only on $\mathcal{R}(v)$ and $R/a$.
 
 - S. Fournais and J. P. Solovej, `The energy of dilute Bose gases`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bose_gases` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓒` is written with `def_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled-3).
+Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓒` is written with `def_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#untitled-3).
 
 ## Lee–Huang–Yang lower bound for dilute Bose gases
 
@@ -124,7 +124,7 @@ $\mathcal{R}(v)$ and $R/a$, Theorem 6.8 there shows that $\eta$ is a universal c
 
 - S. Fournais and J. P. Solovej, `The energy of dilute Bose gases`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bose_gases` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/BoseGasesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.Geometry.BoseGasesWanted.BoseGases.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Geometry/BoseGasesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/BoseGasesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html#theorem-1-2).
 
 ## Depends on
 
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ground-state energy of dilute Bose gases](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/spectral-theory/ground-state-energy-of-dilute-bose-gases)

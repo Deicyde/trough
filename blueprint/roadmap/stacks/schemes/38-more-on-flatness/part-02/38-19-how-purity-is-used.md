@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.19 How purity is used
 
-Section 38.19 of the Stacks Project, [Tag 05L7](https://stacks.math.columbia.edu/tag/05L7). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.19 of the Stacks Project, [Tag 05L7](https://stacks.math.columbia.edu/tag/05L7). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05L8, a lemma
 
 [Tag 05L8](https://stacks.math.columbia.edu/tag/05L8) in the Stacks Project.
 
-**`AlgebraicGeometry.forall_injective_stalkLinearMap_associatedPoints_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/InjectivityOnClosedFibre.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/InjectivityOnClosedFibre.lean#L155). The attribute's comment: “the equivalence, both directions; `S` local with closed point `s` is rendered by the hypothesis that every point of `S` specializes to `s`, which is what a local base supplies”.
+**`AlgebraicGeometry.forall_injective_stalkLinearMap_associatedPoints_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/InjectivityOnClosedFibre.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/InjectivityOnClosedFibre.lean#L155). The attribute's comment: “the equivalence, both directions; `S` local with closed point `s` is rendered by the hypothesis that every point of `S` specializes to `s`, which is what a local base supplies”.
 
 > **Stacks Project, Tag 05L8.** Let `f : X ⟶ S` be a morphism of finite type, let `ℱ` be a
 > quasi-coherent `𝒪_X`-module of finite type, and let `s` be a point of `S` to which every point
@@ -45,7 +45,7 @@ theorem forall_injective_stalkLinearMap_associatedPoints_iff_mono
 
 [Tag 05MD](https://stacks.math.columbia.edu/tag/05MD) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyProjective_pushforward_iff_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean#L156). The attribute's comment: “the scheme criterion, as a biconditional”. References: SGA 3 VIB (6.9), “more general”.
+**`AlgebraicGeometry.isLocallyProjective_pushforward_iff_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean#L156). The attribute's comment: “the scheme criterion, as a biconditional”. References: SGA 3 VIB (6.9), “more general”.
 
 > **Stacks Project, Tag 05MD**, the scheme form. For an affine morphism of finite presentation
 > and a quasi-coherent module of finite presentation which is flat over the base, the direct image
@@ -66,7 +66,7 @@ theorem isLocallyProjective_pushforward_iff_isPureRelative {X S : Scheme.{u}} (f
       IsPureRelative f F
 ```
 
-**`AlgebraicGeometry.projective_iff_isPureRelative_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean#L177). The attribute's comment: “the affine ring specialization, as a biconditional”.
+**`AlgebraicGeometry.projective_iff_isPureRelative_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardConverse.lean#L177). The attribute's comment: “the affine ring specialization, as a biconditional”.
 
 > **Stacks Project, Tag 05MD**, the ring form. Let `A → B` be of finite presentation and let `N`
 > be a finitely presented `B`-module which is flat over `A`. Then `N` is projective over `A` exactly
@@ -87,7 +87,7 @@ theorem projective_iff_isPureRelative_tilde (A B N : Type u) [CommRing A] [CommR
         (tilde (ModuleCat.of (CommRingCat.of B) N))
 ```
 
-**`AlgebraicGeometry.isPureRelative_of_isLocallyProjective_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean#L63). The attribute's comment: “the implication from local projectivity of the direct image to relative purity, in the scheme form”. References: SGA 3 VIB (6.9), “6.9 a)”.
+**`AlgebraicGeometry.isPureRelative_of_isLocallyProjective_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean#L63). The attribute's comment: “the implication from local projectivity of the direct image to relative purity, in the scheme form”. References: SGA 3 VIB (6.9), “6.9 a)”.
 
 > **Stacks Project, Tag 05MD**, the implication from (1) to (2). For an affine morphism of
 > finite type, a finite type quasi-coherent module whose direct image is locally projective on the
@@ -106,7 +106,7 @@ theorem isPureRelative_of_isLocallyProjective_pushforward
     IsPureRelative f F
 ```
 
-**`AlgebraicGeometry.isPureRelative_tilde_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean#L90). The attribute's comment: “the implication from projectivity to relative purity, in the ring form of the final assertion”.
+**`AlgebraicGeometry.isPureRelative_tilde_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectivePushforwardCriterion.lean#L90). The attribute's comment: “the implication from projectivity to relative purity, in the ring form of the final assertion”.
 
 > **Stacks Project, Tag 05MD**, the ring specialization of the implication from (1) to (2).
 > Let `A → B` be a ring map of finite presentation and let `N` be a finitely presented
@@ -132,7 +132,7 @@ theorem isPureRelative_tilde_of_projective
 
 [Tag 05ME](https://stacks.math.columbia.edu/tag/05ME) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affineOpen_projective_sections_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectiveSectionsAffineOpen05ME.lean, line 864](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectiveSectionsAffineOpen05ME.lean#L864).
+**`AlgebraicGeometry.exists_affineOpen_projective_sections_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectiveSectionsAffineOpen05ME.lean, line 864](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/ProjectiveSectionsAffineOpen05ME.lean#L864).
 
 > **Stacks Project, Tag 05ME.** Let `f : X ⟶ S` be locally of finite presentation, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite presentation, and let `x ∈ X` lie over `s ∈ S` with `F` flat
@@ -169,7 +169,7 @@ theorem exists_affineOpen_projective_sections_of_chart
 
 [Tag 05MF](https://stacks.math.columbia.edu/tag/05MF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L153). The attribute's comment: “RESTRICTED: carries hproj, this same existential with Module.Projective in place of Module.Free and the clause on the image of x' in Spec 𝒪\_\{S', s'} dropped, which is the 05ME half of the source's proof (Lemma 05ME composed with Proposition 05I5)”.
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L153). The attribute's comment: “RESTRICTED: carries hproj, this same existential with Module.Projective in place of Module.Free and the clause on the image of x' in Spec 𝒪\_\{S', s'} dropped, which is the 05ME half of the source's proof (Lemma 05ME composed with Proposition 05I5)”.
 
 > **Stacks Project, Tag 05MF.** A finite-type quasi-coherent module which is flat over the base
 > at a point has free sections on an affine neighbourhood of the lifted point after base change to
@@ -216,7 +216,7 @@ theorem exists_elementaryEtaleNeighborhood_free_sections
               Module.Free (N.scheme.presheaf.stalk N.point) Γ(F', W)
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L243). The attribute's comment: “for f locally of finite presentation and F of finite presentation”.
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L243). The attribute's comment: “for f locally of finite presentation and F of finite presentation”.
 
 > **Stacks Project, Tag 05MF** for a morphism locally of finite presentation and a module of
 > finite presentation, with no hypothesis beyond flatness at the point.
@@ -250,7 +250,7 @@ theorem exists_elementaryEtaleNeighborhood_free_sections_of_finitePresentation
               Module.Free (N.scheme.presheaf.stalk N.point) Γ(F', W)
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType05MF.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType05MF.lean#L890).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType05MF.lean, line 890](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType05MF.lean#L890).
 
 > **Stacks Project, Tag 05MF.** A finite-type quasi-coherent module which is flat over the
 > base at a point has free sections on an affine neighbourhood of the lifted point after base
@@ -281,7 +281,7 @@ public theorem exists_elementaryEtaleNeighborhood_free_sections_of_finiteType
 
 [Tag 05U7](https://stacks.math.columbia.edu/tag/05U7) in the Stacks Project.
 
-**`exists_filteredColimit_free_with_injective_reduction_and_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianEssFiniteTypeColimit.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianEssFiniteTypeColimit.lean#L165).
+**`exists_filteredColimit_free_with_injective_reduction_and_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianEssFiniteTypeColimit.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianEssFiniteTypeColimit.lean#L165).
 
 > **Stacks Project, Tag 05U7.** Let `A → B` be a local homomorphism of local rings which is
 > essentially of finite type, and let `N` be a finite `B`-module which is flat as an `A`-module. If
@@ -317,7 +317,7 @@ theorem exists_filteredColimit_free_with_injective_reduction_and_isMittagLeffler
     IsMittagLeffler.{u, uP, uM, max u uQ, uN} A N
 ```
 
-**`isMittagLeffler_of_flat_finite_essFiniteType_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLefflerEssFiniteType.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/MittagLefflerEssFiniteType.lean#L330). The attribute's comment: “the Mittag-Leffler conclusion”.
+**`isMittagLeffler_of_flat_finite_essFiniteType_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLefflerEssFiniteType.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/MittagLefflerEssFiniteType.lean#L330). The attribute's comment: “the Mittag-Leffler conclusion”.
 
 > Let `A → B` be an essentially finite type local homomorphism of local rings with `A`
 > henselian, and let `N` be a finite `B`-module which is flat over `A`. Then `N` is a
@@ -334,7 +334,7 @@ theorem isMittagLeffler_of_flat_finite_essFiniteType_local
     IsMittagLeffler.{u, uP, uM, max u uQ, uN} A N
 ```
 
-**`exists_filteredColimit_free_with_injective_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLefflerFilteredColimitPresentation/FreePresentation.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/MittagLefflerFilteredColimitPresentation/FreePresentation.lean#L580). The attribute's comment: “filtered-colimit presentation”.
+**`exists_filteredColimit_free_with_injective_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLefflerFilteredColimitPresentation/FreePresentation.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/MittagLefflerFilteredColimitPresentation/FreePresentation.lean#L580). The attribute's comment: “filtered-colimit presentation”.
 
 > Let `A` be a henselian local ring, `A → B` a local homomorphism of local rings with `B`
 > essentially of finite type over `A`, and `N` a finite `B`-module which is flat over `A`. Then `N`
@@ -367,7 +367,7 @@ public theorem exists_filteredColimit_free_with_injective_reduction
 
 [Tag 0ASX](https://stacks.math.columbia.edu/tag/0ASX) in the Stacks Project.
 
-**`IsContentIdeal.isPrincipal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/ContentIdeal.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/ContentIdeal.lean#L52). The attribute's comment: “the principality assertion, unconditionally and in strengthened form: no hypothesis beyond `ValuationRing A` is used, since a content ideal is finitely generated (0ASB) and a valuation ring is Bézout (090Q).”.
+**`IsContentIdeal.isPrincipal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/ContentIdeal.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/ContentIdeal.lean#L52). The attribute's comment: “the principality assertion, unconditionally and in strengthened form: no hypothesis beyond `ValuationRing A` is used, since a content ideal is finitely generated (0ASB) and a valuation ring is Bézout (090Q).”.
 
 > **Stacks Tag 0ASX**, the principality assertion. A content ideal of an element of a module
 > over a valuation ring is a principal ideal.
@@ -385,7 +385,7 @@ theorem IsContentIdeal.isPrincipal_of_valuationRing
     {x : N} {I : Ideal A} (hI : IsContentIdeal x I) : I.IsPrincipal
 ```
 
-**`exists_isContentIdeal_isPrincipal_of_valuationRing_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/ContentIdealExistence.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/ContentIdealExistence.lean#L512).
+**`exists_isContentIdeal_isPrincipal_of_valuationRing_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/ContentIdealExistence.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/ContentIdealExistence.lean#L511).
 
 > **Stacks Tag 0ASX.** Let `A → B` be a local ring map of local rings which is essentially of
 > finite type, and let `N` be a finite `B`-module which is flat as an `A`-module. If `A` is a
@@ -411,7 +411,7 @@ theorem exists_isContentIdeal_isPrincipal_of_valuationRing_of_flat
 
 [Tag 0H2T](https://stacks.math.columbia.edu/tag/0H2T) in the Stacks Project.
 
-**`isReduced_and_isReduced_fiber_of_isProper_over_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ReducedOverValuationRing.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ReducedOverValuationRing.lean#L437).
+**`isReduced_and_isReduced_fiber_of_isProper_over_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ReducedOverValuationRing.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ReducedOverValuationRing.lean#L437).
 
 > Let `f : X ⟶ Spec R` be a proper flat morphism where `R` is a valuation ring. If the special
 > fibre is reduced, then `X` and every fibre of `X ⟶ Spec R` are reduced.
@@ -431,4 +431,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.19, Tag 05L7](https://stacks.math.columbia.edu/tag/05L7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

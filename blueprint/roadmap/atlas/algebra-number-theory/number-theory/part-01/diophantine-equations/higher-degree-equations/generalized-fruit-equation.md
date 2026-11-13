@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized fruit equation
 
-13 results, 4 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html).
+13 results, 4 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html).
 
 ## Unramified primes of degree one above $2$
 
@@ -19,7 +19,7 @@ ramification index $e(P \mid 2) = 1$ and inertia degree $f(P \mid 2) = 1$ over $
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Section 2 (definition of `T_K`).
 
-Formalized by `MetaMathlibExt.twoUnramifiedDegreeOnePrimes`, a definition declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#two-unramified-degree-one-primes).
+Formalized by `MetaMathlibExt.twoUnramifiedDegreeOnePrimes`, a definition declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#two-unramified-degree-one-primes).
 
 ## Membership in $T_K$
 
@@ -33,7 +33,7 @@ inertia degree $1$ over $\mathbb{Z}$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Section 2.
 
-Formalized by `MetaMathlibExt.mem_twoUnramifiedDegreeOnePrimes`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#mem-two-unramified-degree-one-primes).
+Formalized by `MetaMathlibExt.mem_twoUnramifiedDegreeOnePrimes`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#mem-two-unramified-degree-one-primes).
 
 ## Quotients by powers of a prime in $T_K$
 
@@ -46,7 +46,7 @@ the ring $\mathcal{O}_K / P^n$ is isomorphic to $\mathbb{Z} / 2^n \mathbb{Z}$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.ringOfIntegers_quotient_pow_ringEquiv_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#ring-of-integers-quotient-pow-ring-equiv).
+Stated but not proved: `MetaMathlibExt.ringOfIntegers_quotient_pow_ringEquiv_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#ring-of-integers-quotient-pow-ring-equiv).
 
 ## No solutions of the generalized fruit equation with even $x$
 
@@ -66,7 +66,7 @@ odd, so oddness is read as applying to both $r$ and $d$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedFruit_no_solution_two_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#generalized-fruit-no-solution-two-dvd).
+Stated but not proved: `MetaMathlibExt.generalizedFruit_no_solution_two_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#generalized-fruit-no-solution-two-dvd).
 
 ## Unramified degree-one primes above $2$ in quadratic fields
 
@@ -80,7 +80,7 @@ degree $1$ is nonempty if and only if $t \equiv 1 \pmod{8}$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.twoUnramifiedDegreeOnePrimes_nonempty_iff_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#two-unramified-degree-one-primes-nonempt).
+Stated but not proved: `MetaMathlibExt.twoUnramifiedDegreeOnePrimes_nonempty_iff_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#two-unramified-degree-one-primes-nonempt).
 
 ## Relative density of square-free integers congruent to $1$ modulo $8$
 
@@ -93,7 +93,7 @@ tends to $1/6$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.squarefree_one_mod_eight_relativeDensity` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#squarefree-one-mod-eight-relative-densit).
+Stated but not proved: `MetaMathlibExt.squarefree_one_mod_eight_relativeDensity` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#squarefree-one-mod-eight-relative-densit).
 
 ## Square-free integers in an arithmetic progression
 
@@ -113,7 +113,7 @@ where $\varphi$ is Euler's totient function and the product runs over the primes
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 3, quoted from their reference [2].
 
-Stated but not proved: `MetaMathlibExt.squarefree_count_arithmeticProgression_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#squarefree-count-arithmetic-progression).
+Stated but not proved: `MetaMathlibExt.squarefree_count_arithmeticProgression_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#squarefree-count-arithmetic-progression).
 
 ## Torsion points of non-prime-power order are integral
 
@@ -127,7 +127,7 @@ $\mathcal{O}_K$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 5, quoted from Silverman, *The Arithmetic of Elliptic Curves*.
 
-Stated but not proved: `MetaMathlibExt.weierstrass_torsion_not_primePow_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#weierstrass-torsion-not-prime-pow-integr).
+Stated but not proved: `MetaMathlibExt.weierstrass_torsion_not_primePow_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#weierstrass-torsion-not-prime-pow-integr).
 
 ## Nagell–Lutz integrality
 
@@ -139,7 +139,7 @@ $m \ge 2$ has $x, y \in \mathbb{Z}$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 6, quoted from Silverman, *The Arithmetic of Elliptic Curves*.
 
-Stated but not proved: `MetaMathlibExt.short_weierstrass_torsion_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#short-weierstrass-torsion-integral).
+Stated but not proved: `MetaMathlibExt.short_weierstrass_torsion_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#short-weierstrass-torsion-integral).
 
 ## The Weierstrass curve $E_\alpha$ of the generalized fruit equation
 
@@ -152,7 +152,7 @@ $y^2 - \alpha x y = x^3 - (\alpha^2 + 5)$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 4, Equation (4.1).
 
-Formalized by `MetaMathlibExt.fruitWeierstrassCurve`, a definition declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve).
+Formalized by `MetaMathlibExt.fruitWeierstrassCurve`, a definition declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve).
 
 ## Discriminant of the curve $E_\alpha$
 
@@ -164,7 +164,7 @@ has discriminant $\alpha^8 + 5\alpha^6 - 432\alpha^4 - 4320\alpha^2 - 10800$.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, proof of Theorem 4.
 
-Formalized by `MetaMathlibExt.fruitWeierstrassCurve_Δ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-2).
+Formalized by `MetaMathlibExt.fruitWeierstrassCurve_Δ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-2).
 
 ## Torsion points of $E_\alpha$ with even integral $x$-coordinate have prime-power order
 
@@ -181,7 +181,7 @@ $P$ is a prime power.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.fruitWeierstrassCurve_not_isOfFinOrder_of_two_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-not-is-of-fin-or).
+Stated but not proved: `MetaMathlibExt.fruitWeierstrassCurve_not_isOfFinOrder_of_two_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-not-is-of-fin-or).
 
 ## Points of $E_\alpha(\mathbb{Q})$ with even numerator have infinite order
 
@@ -195,7 +195,7 @@ even numerator, then $P$ has infinite order.
 
 - Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.fruitWeierstrassCurve_rat_not_isOfFinOrder_of_two_dvd_num` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-rat-not-is-of-fi).
+Stated but not proved: `MetaMathlibExt.fruitWeierstrassCurve_rat_not_isOfFinOrder_of_two_dvd_num` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFruitDiophantineWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html#fruit-weierstrass-curve-rat-not-is-of-fi).
 
 ## Depends on
 
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized fruit equation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fruit-equation)

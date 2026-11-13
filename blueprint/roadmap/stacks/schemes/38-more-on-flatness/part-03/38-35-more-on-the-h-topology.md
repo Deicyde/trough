@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.35 More on the h topology
 
-Section 38.35 of the Stacks Project, [Tag 0EUZ](https://stacks.math.columbia.edu/tag/0EUZ). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.35 of the Stacks Project, [Tag 0EUZ](https://stacks.math.columbia.edu/tag/0EUZ). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EV0, an example
 
 [Tag 0EV0](https://stacks.math.columbia.edu/tag/0EV0) in the Stacks Project.
 
-**`AlgebraicGeometry.not_isSheafFor_isHCovering_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean#L252).
+**`AlgebraicGeometry.not_isSheafFor_isHCovering_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean#L252).
 
 > The structure sheaf is not a sheaf for the h topology: the presheaf of global sections on
 > schemes fails the sheaf condition for some h covering family.
@@ -30,7 +30,7 @@ public theorem not_isSheafFor_isHCovering_gamma :
 
 [Tag 0EV1](https://stacks.math.columbia.edu/tag/0EV1) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHOver.not_subcanonical_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean#L529).
+**`AlgebraicGeometry.BigHOver.not_subcanonical_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StructureSheafFailure.lean#L529).
 
 > On a big h site over a nonempty base scheme `S` the h topology is not subcanonical: not every
 > representable presheaf on `(Sch/S)_h` is a sheaf.
@@ -44,7 +44,7 @@ public theorem not_subcanonical_topology [Nonempty S] :
 
 [Tag 0EV2](https://stacks.math.columbia.edu/tag/0EV2) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isStandardHCovering_model_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L720). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_isStandardHCovering_model_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L720). The attribute's comment: “part (1)”.
 
 > **Stacks 0EV2, part (1).** Let an affine scheme be written as the limit of a cofiltered
 > inverse system of affine schemes. Then every standard h covering of the limit is isomorphic to
@@ -60,7 +60,7 @@ public theorem exists_isStandardHCovering_model_of_isLimit {I : Type v} [Categor
       Nonempty (F.pullback₂ (c.π.app i) ≅ E)
 ```
 
-**`AlgebraicGeometry.exists_hom_isStandardHCovering_model_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L742). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_hom_isStandardHCovering_model_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L742). The attribute's comment: “part (2)”.
 
 > **Stacks 0EV2, part (2).** Let an affine scheme be written as the limit of a cofiltered
 > inverse system of affine schemes, and let two standard h coverings of a stage be given. Every
@@ -80,7 +80,7 @@ public theorem exists_hom_isStandardHCovering_model_of_isLimit {I : Type v} [Cat
           (pullback₂CompIso (D.map e) (c.π.app j) (c.π.app i) (c.w e) F).hom
 ```
 
-**`AlgebraicGeometry.eventually_eq_hom_isStandardHCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 798](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L798). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.eventually_eq_hom_isStandardHCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean, line 798](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/StandardCoveringsLimit.lean#L798). The attribute's comment: “part (3)”.
 
 > **Stacks 0EV2, part (3).** Let an affine scheme be written as the limit of a cofiltered
 > inverse system of affine schemes. Two morphisms of standard h coverings of a stage whose base
@@ -99,7 +99,7 @@ public theorem eventually_eq_hom_isStandardHCovering_of_isLimit {I : Type v} [Ca
 
 [Tag 0EV3](https://stacks.math.columbia.edu/tag/0EV3) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.isHSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean#L595). The attribute's comment: “the sheaf condition for all h coverings”.
+**`AlgebraicGeometry.ExtendingFunctors.isHSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean#L595). The attribute's comment: “the sheaf condition for all h coverings”.
 
 > **Stacks 0EV3, the sheaf condition for all h coverings.** Let `S` be a scheme contained in a
 > big h site, let `𝒞 = (Sch/S)_h` be a full subcategory of `Sch/S` satisfying conditions (1) and (2)
@@ -122,7 +122,7 @@ theorem isHSheaf_extension (P : ObjectProperty (Over S))
     IsHSheaf.{max w (u + 1), u, v} (extension P F)
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isLimitPreserving_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean, line 613](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean#L613). The attribute's comment: “limit preserving: the extension carries a directed inverse limit of affine schemes over the base to a filtered colimit”.
+**`AlgebraicGeometry.ExtendingFunctors.isLimitPreserving_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/ExtendingFunctors.lean#L613). The attribute's comment: “limit preserving: the extension carries a directed inverse limit of affine schemes over the base to a filtered colimit”.
 
 > **Stacks 0EV3, limit preserving.** For `S` a scheme contained in a big h site, `𝒞 = (Sch/S)_h`
 > a full subcategory of `Sch/S` satisfying conditions (1) and (2) of Stacks 0EUW and `F : 𝒞ᵒᵖ ⥤ Set`
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.35, Tag 0EUZ](https://stacks.math.columbia.edu/tag/0EUZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

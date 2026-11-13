@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.7 The Kähler different
 
-Section 49.7 of the Stacks Project, [Tag 0BVV](https://stacks.math.columbia.edu/tag/0BVV). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.7 of the Stacks Project, [Tag 0BVV](https://stacks.math.columbia.edu/tag/0BVV). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BVW, a definition
 
 [Tag 0BVW](https://stacks.math.columbia.edu/tag/0BVW) in the Stacks Project.
 
-**`Stacks.Discriminant.kaehlerDifferent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Basic.lean#L47).
+**`Stacks.Discriminant.kaehlerDifferent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Basic.lean#L47).
 
 > **Stacks Project, Tag 0BVW.** The Kähler different of a morphism of schemes which is
 > locally of finite type: the zeroth Fitting ideal sheaf of its sheaf of relative
@@ -29,7 +29,7 @@ noncomputable abbrev kaehlerDifferent {Y X : Scheme.{u}} (f : Y ⟶ X)
 
 [Tag 0BVX](https://stacks.math.columbia.edu/tag/0BVX) in the Stacks Project.
 
-**`Stacks.Discriminant.kaehlerDifferent_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L77). The attribute's comment: “equality of the ideal sheaves cutting out R' and the inverse image of R”.
+**`Stacks.Discriminant.kaehlerDifferent_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L77). The attribute's comment: “equality of the ideal sheaves cutting out R' and the inverse image of R”.
 
 > **Stacks Project, Tag 0BVX.** For a cartesian square of schemes with right edge `f : Y ⟶ X`
 > locally of finite type, left edge `f' : Y' ⟶ X'` and top edge `g' : Y' ⟶ Y`, the Kähler
@@ -43,7 +43,7 @@ theorem kaehlerDifferent_comap {Y' Y X' X : Scheme.{u}} (g' : Y' ⟶ Y) (f' : Y'
       (kaehlerDifferent f).comap g'
 ```
 
-**`Stacks.Discriminant.kaehlerDifferentSubschemeIsoPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L96). The attribute's comment: “the induced isomorphism of closed subschemes”.
+**`Stacks.Discriminant.kaehlerDifferentSubschemeIsoPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L96). The attribute's comment: “the induced isomorphism of closed subschemes”.
 
 > **Stacks Project, Tag 0BVX.** The isomorphism from the closed subscheme `R'` of `Y'` cut out
 > by the Kähler different of the base change `f'` to the fibre product `Y' ×_Y R`, where `R ⊆ Y` is
@@ -58,7 +58,7 @@ noncomputable def kaehlerDifferentSubschemeIsoPullback {Y' Y X' X : Scheme.{u}} 
       pullback g' (kaehlerDifferent f).subschemeι
 ```
 
-**`Stacks.Discriminant.kaehlerDifferentSubschemeIsoPullback_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L109). The attribute's comment: “the induced isomorphism of closed subschemes is over Y'”.
+**`Stacks.Discriminant.kaehlerDifferentSubschemeIsoPullback_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/BaseChange.lean#L109). The attribute's comment: “the induced isomorphism of closed subschemes is over Y'”.
 
 > **Stacks Project, Tag 0BVX.** The isomorphism `R' ≅ Y' ×_Y R` of Tag 0BVX is an isomorphism
 > of schemes over `Y'`: composing it with the first projection is the closed immersion of `R'` into
@@ -77,7 +77,7 @@ theorem kaehlerDifferentSubschemeIsoPullback_hom_fst {Y' Y X' X : Scheme.{u}} (g
 
 [Tag 0BVY](https://stacks.math.columbia.edu/tag/0BVY) in the Stacks Project.
 
-**`Stacks.Discriminant.range_kaehlerDifferent_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean#L88).
+**`Stacks.Discriminant.range_kaehlerDifferent_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean#L88).
 
 > **Stacks Project, Tag 0BVY** and **Stacks Project, Tag 0C3J.** For a morphism of schemes
 > `f : Y ⟶ X` locally of finite type, the closed subscheme `R ⊆ Y` cut out by the Kähler different
@@ -95,7 +95,7 @@ theorem range_kaehlerDifferent_subschemeι {Y X : Scheme.{u}} (f : Y ⟶ X)
 
 [Tag 0BVZ](https://stacks.math.columbia.edu/tag/0BVZ) in the Stacks Project.
 
-**`Stacks.Discriminant.fittingIdeal_kaehlerDifferential_quotient_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Jacobian.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Jacobian.lean#L165). References: SGA 1 I (7.2), “more general”.
+**`Stacks.Discriminant.fittingIdeal_kaehlerDifferential_quotient_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Jacobian.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/Jacobian.lean#L165). References: SGA 1 I (7.2), “more general”.
 
 > **Stacks Project, Tag 0BVZ.** The Kähler different of an algebra presented by `n` equations
 > in `n` variables is generated by the determinant of its Jacobian matrix.
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.7, Tag 0BVV](https://stacks.math.columbia.edu/tag/0BVV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

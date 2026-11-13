@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.41 Valuative criteria
 
-Section 67.41 of the Stacks Project, [Tag 03IW](https://stacks.math.columbia.edu/tag/03IW). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.41 of the Stacks Project, [Tag 03IW](https://stacks.math.columbia.edu/tag/03IW). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03IX, a definition
 
 [Tag 03IX](https://stacks.math.columbia.edu/tag/03IX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ValuativeCriterion.Uniqueness`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L173). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.Space.ValuativeCriterion.Uniqueness`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L173). The attribute's comment: “uniqueness”.
 
 > There is at most one extension of a compatible generic point to any valuation ring.
 
@@ -22,7 +22,7 @@ Section 67.41 of the Stacks Project, [Tag 03IW](https://stacks.math.columbia.edu
 public def Uniqueness (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.ValuativeCriterion.Existence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L178). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.ValuativeCriterion.Existence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L178). The attribute's comment: “existence”.
 
 > A compatible generic point extends after a field extension and passage to a
 > dominating valuation ring.
@@ -31,7 +31,7 @@ public def Uniqueness (f : X ⟶ Y) : Prop
 public def Existence (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.ValuativeCriterion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L192). The attribute's comment: “both parts”.
+**`AlgebraicGeometry.Space.ValuativeCriterion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L192). The attribute's comment: “both parts”.
 
 > A morphism satisfies both parts of the valuative criterion.
 
@@ -44,7 +44,7 @@ public abbrev ValuativeCriterion
 
 [Tag 03K8](https://stacks.math.columbia.edu/tag/03K8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Representable.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Representable.lean#L255).
+**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Representable.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Representable.lean#L255).
 
 > For a representable morphism, a lift after a dominating extension exists
 > exactly when every valuative square has a lift before extension.
@@ -62,7 +62,7 @@ public theorem valuativeCriterion_existence_iff_lift
 
 [Tag 03KH](https://stacks.math.columbia.edu/tag/03KH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_finiteSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/FiniteSeparable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/FiniteSeparable.lean#L614).
+**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_finiteSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/FiniteSeparable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/FiniteSeparable.lean#L614).
 
 > Allowing arbitrary field extensions in the existence valuative criterion
 > is equivalent to allowing only finite separable ones.
@@ -80,7 +80,7 @@ public theorem valuativeCriterion_existence_iff_finiteSeparable
 
 [Tag 0ARH](https://stacks.math.columbia.edu/tag/0ARH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_lift_of_dominatingExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean#L319).
+**`AlgebraicGeometry.Space.exists_lift_of_dominatingExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean#L319).
 
 > **A lift of a dominating extension of a valuative square for a separated morphism of
 > algebraic spaces descends to a lift of the square itself.** The extension `K'/K` of fraction
@@ -104,7 +104,7 @@ public theorem exists_lift_of_dominatingExtension
 
 [Tag 0A3W](https://stacks.math.columbia.edu/tag/0A3W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_lift_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean#L761).
+**`AlgebraicGeometry.Space.valuativeCriterion_existence_iff_lift_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/PushDownSolution.lean#L761).
 
 > **For a separated morphism of algebraic spaces, allowing a dominating extension of the
 > valuation ring does not change the existence half of the valuative criterion**: the criterion
@@ -122,7 +122,7 @@ public theorem valuativeCriterion_existence_iff_lift_of_isSeparated
 
 [Tag 03KI](https://stacks.math.columbia.edu/tag/03KI) in the Stacks Project.
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_surjective_specMap_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L124). The attribute's comment: “Spec(k') → Spec(k) is universally closed and surjective”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_surjective_specMap_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L124). The attribute's comment: “Spec(k') → Spec(k) is universally closed and surjective”.
 
 > **Stacks 03KI, the morphism `Spec k' ⟶ Spec k`.** For a finite extension `k'/k` of fields,
 > the morphism `Spec k' ⟶ Spec k` is universally closed, being finite, and surjective, its
@@ -134,7 +134,7 @@ theorem universallyClosed_surjective_specMap_algebraMap [FiniteDimensional k K] 
       Surjective (Spec.map (CommRingCat.ofHom (algebraMap k K)))
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.isQuasiCompact_quotientBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L218). The attribute's comment: “π is quasi-compact”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.isQuasiCompact_quotientBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L219). The attribute's comment: “π is quasi-compact”.
 
 > **Stacks 03KI, the quasi-compactness clause.** The structure morphism `π : X ⟶ S = 𝔸¹_k` of
 > the Galois twist of the affine line with zero doubled is quasi-compact.
@@ -147,7 +147,7 @@ theorem isQuasiCompact_quotientBaseMap :
     Space.IsQuasiCompact B (base k) hS (quotientBaseMap k K hdegree σ hσ B hS)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_quotientBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L289). The attribute's comment: “π is universally closed”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_quotientBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L290). The attribute's comment: “π is universally closed”.
 
 > **Stacks 03KI, the universal closedness clause.** The structure morphism
 > `π : X ⟶ S = 𝔸¹_k` of the Galois twist of the affine line with zero doubled is universally
@@ -161,7 +161,7 @@ theorem universallyClosed_quotientBaseMap :
     Space.UniversallyClosed B (base k) hS (quotientBaseMap k K hdegree σ hσ B hS)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_doubledProjOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L314). The attribute's comment: “the affine line with zero doubled is universally closed over the affine line”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.universallyClosed_doubledProjOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L315). The attribute's comment: “the affine line with zero doubled is universally closed over the affine line”.
 
 > **Stacks 03KI, the affine line with zero doubled.** The affine line over `k'` with zero
 > doubled is universally closed over the affine line over `k'`.
@@ -174,7 +174,7 @@ theorem universallyClosed_quotientBaseMap :
 theorem universallyClosed_doubledProjOver : UniversallyClosed (doubledProjOver k K).left
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.exists_isIso_baseChangePresheaf_comp_doubledProjOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L346). The attribute's comment: “after base change by Spec(k') → Spec(k), π is the affine line with zero doubled over the affine line”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.exists_isIso_baseChangePresheaf_comp_doubledProjOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L347). The attribute's comment: “after base change by Spec(k') → Spec(k), π is the affine line with zero doubled over the affine line”.
 
 > **Stacks 03KI, the base change to `k'`.** After base change along
 > `U = S ×_{Spec k} Spec k' = 𝔸¹_{k'} ⟶ S`, the structure morphism `π` is identified with the
@@ -193,7 +193,7 @@ theorem exists_isIso_baseChangePresheaf_comp_doubledProjOver :
         pullback.fst (pointsCoverToBase k K B hS) (quotientBaseMap k K hdegree σ hσ B hS)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.exists_mono_isPullback_zeroFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L443). The attribute's comment: “the point of X above 0 corresponds to a monomorphism Spec(k') → X”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.exists_mono_isPullback_zeroFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L444). The attribute's comment: “the point of X above 0 corresponds to a monomorphism Spec(k') → X”.
 
 > **Stacks 03KI, the point above the origin.** The point of `X` above `0 ∈ 𝔸¹_k` is a
 > monomorphism `Spec k' ⟶ X`: there is a monomorphism from the functor of points of `Spec k'`
@@ -213,7 +213,7 @@ theorem exists_mono_isPullback_zeroFibre :
         ((pointsFunctor k B hS).map (zeroBaseToBase k))
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.formalDiskValuativeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L538). The attribute's comment: “the solid square of the displayed diagram, over the valuation ring k⟦x⟧”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.formalDiskValuativeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L539). The attribute's comment: “the solid square of the displayed diagram, over the valuation ring k⟦x⟧”.
 
 > **Stacks 03KI, the solid square.** The square displayed in the example: its valuation ring is
 > the ring `k⟦x⟧` of formal power series, its fraction field the field `k((x))` of Laurent series,
@@ -230,7 +230,7 @@ def formalDiskValuativeSquare :
     Space.ValuativeSquare (quotientBaseMap k K hdegree σ hσ B hS)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.isEmpty_lift_formalDiskValuativeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L555). The attribute's comment: “there cannot exist a dotted arrow”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.isEmpty_lift_formalDiskValuativeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L556). The attribute's comment: “there cannot exist a dotted arrow”.
 
 > **Stacks 03KI, the missing dotted arrow.** The square of the example has no dotted arrow: a
 > dotted arrow is in particular a point of the quotient over the formal disc, and there is none,
@@ -241,7 +241,7 @@ theorem isEmpty_lift_formalDiskValuativeSquare :
     IsEmpty (formalDiskValuativeSquare k K B hS hdegree σ hσ).Lift
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.existenceFiniteSeparable_and_not_forall_nonempty_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L568). The attribute's comment: “a finite separable field extension is needed in general”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.existenceFiniteSeparable_and_not_forall_nonempty_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L569). The attribute's comment: “a finite separable field extension is needed in general”.
 
 > **Stacks 03KI, a finite separable extension is needed.** The structure morphism `π` satisfies
 > the existence part of the valuative criterion when the fraction field may be replaced by a
@@ -257,7 +257,7 @@ theorem existenceFiniteSeparable_and_not_forall_nonempty_lift :
       ¬ ∀ q : Space.ValuativeSquare (quotientBaseMap k K hdegree σ hσ B hS), Nonempty q.Lift
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.quotientBaseMap_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L599). The attribute's comment: “all the assertions of the example together”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.quotientBaseMap_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginUniversallyClosed.lean#L600). The attribute's comment: “all the assertions of the example together”.
 
 > **Stacks 03KI.** Let `k'/k` be a degree two Galois extension and let `X` be the Galois twist
 > of the affine line with zero doubled, the algebraic space of Stacks 03FN over `S = 𝔸¹_k`, with
@@ -300,7 +300,7 @@ theorem quotientBaseMap_example :
       ¬ ∀ q : Space.ValuativeSquare (quotientBaseMap k K hdegree σ hσ B hS), Nonempty q.Lift
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.not_nonempty_hom_formalDisk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean#L129). The attribute's comment: “no\_unextended\_lift”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.not_nonempty_hom_formalDisk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean#L129). The attribute's comment: “no\_unextended\_lift”.
 
 > **Stacks 03KI**, third assertion of the example. For a quadratic Galois extension `K/k`,
 > the formal disc over `k` has no point of the quadratic Galois twisted doubled origin lying
@@ -326,7 +326,7 @@ theorem not_nonempty_hom_formalDisk
 
 [Tag 03IY](https://stacks.math.columbia.edu/tag/03IY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L219). The attribute's comment: “uniqueness part”.
+**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L219). The attribute's comment: “uniqueness part”.
 
 > **Stacks 03IY, uniqueness part.** The base change of a morphism of algebraic spaces
 > satisfying the uniqueness part of the valuative criterion satisfies it again.
@@ -342,7 +342,7 @@ theorem valuativeCriterion_uniqueness_of_isPullback
     (hp : ValuativeCriterion.Uniqueness p) : ValuativeCriterion.Uniqueness b
 ```
 
-**`AlgebraicGeometry.Space.valuativeCriterion_existence_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L243). The attribute's comment: “existence part”.
+**`AlgebraicGeometry.Space.valuativeCriterion_existence_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L243). The attribute's comment: “existence part”.
 
 > **Stacks 03IY, existence part.** The base change of a morphism of algebraic spaces
 > satisfying the existence part of the valuative criterion satisfies it again.
@@ -363,7 +363,7 @@ theorem valuativeCriterion_existence_of_isPullback
 
 [Tag 03IZ](https://stacks.math.columbia.edu/tag/03IZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L68). The attribute's comment: “composition\_valuative\_existence”.
+**`AlgebraicGeometry.Space.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L68). The attribute's comment: “composition\_valuative\_existence”.
 
 > The existence part of the valuative criterion is preserved under composition.
 
@@ -375,7 +375,7 @@ public theorem valuativeCriterionExistence_comp
     ValuativeCriterion.Existence (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L130). The attribute's comment: “composition\_valuative\_uniqueness”.
+**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L130). The attribute's comment: “composition\_valuative\_uniqueness”.
 
 > Uniqueness of lifts in valuative squares is stable under composition.
 
@@ -393,4 +393,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.41, Tag 03IW](https://stacks.math.columbia.edu/tag/03IW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

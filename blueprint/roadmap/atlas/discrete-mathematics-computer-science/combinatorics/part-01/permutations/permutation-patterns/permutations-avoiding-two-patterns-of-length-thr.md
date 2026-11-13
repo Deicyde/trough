@@ -7,7 +7,7 @@ statement: formalized
 
 # Permutations avoiding two patterns of length three
 
-20 results, 12 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html).
+20 results, 12 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html).
 
 ## Length-three pattern from one-line values
 
@@ -19,7 +19,7 @@ zero-based, so $v = (0, 2, 1)$ gives the pattern $132$ in the usual one-based on
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.
 
-Formalized by `MetaMathlibExt.pattern3`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#pattern3).
+Formalized by `MetaMathlibExt.pattern3`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#pattern3).
 
 ## Number of permutations avoiding two patterns of length three
 
@@ -32,7 +32,7 @@ pattern.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 1.
 
-Formalized by `MetaMathlibExt.twoPatternAvoiderCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count).
+Formalized by `MetaMathlibExt.twoPatternAvoiderCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count).
 
 ## Permutations of length three avoiding $123$ and $132$
 
@@ -44,7 +44,7 @@ permutations of length $3$, only $123$ and $132$ themselves are excluded.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 1.
 
-Formalized by `MetaMathlibExt.twoPatternAvoiderCount_three_123_132`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-three-123-132).
+Formalized by `MetaMathlibExt.twoPatternAvoiderCount_three_123_132`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-three-123-132).
 
 ## Permutations of length four avoiding $132$ and $321$
 
@@ -56,7 +56,7 @@ $A_4(132, 321) = 7 = 1 + \binom{4}{2}$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 1.
 
-Formalized by `MetaMathlibExt.twoPatternAvoiderCount_four_132_321`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-four-132-321).
+Formalized by `MetaMathlibExt.twoPatternAvoiderCount_four_132_321`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-four-132-321).
 
 ## Simion–Schmidt enumeration of permutations avoiding two patterns of length three
 
@@ -75,7 +75,7 @@ $n \ge 5$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 1, citing Simion and Schmidt.
 
-Stated but not proved: `MetaMathlibExt.twoPatternAvoiderCount_length_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-length-three).
+Stated but not proved: `MetaMathlibExt.twoPatternAvoiderCount_length_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#two-pattern-avoider-count-length-three).
 
 ## Ascent number of a permutation
 
@@ -87,7 +87,7 @@ $\sigma(i) < \sigma(i + 1)$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`asc`, `des`).
 
-Formalized by `MetaMathlibExt.permAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-ascents).
+Formalized by `MetaMathlibExt.permAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-ascents).
 
 ## Descent number of a permutation
 
@@ -99,7 +99,7 @@ $\sigma(i + 1) < \sigma(i)$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`asc`, `des`).
 
-Formalized by `MetaMathlibExt.permDescents`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-descents).
+Formalized by `MetaMathlibExt.permDescents`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-descents).
 
 ## Ascents and descents of $123$ and $132$
 
@@ -112,7 +112,7 @@ $\operatorname{asc}(132) = \operatorname{des}(132) = 1$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`asc`, `des`).
 
-Formalized by `MetaMathlibExt.permAscents_permDescents_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-ascents-perm-descents-small).
+Formalized by `MetaMathlibExt.permAscents_permDescents_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-ascents-perm-descents-small).
 
 ## Ascent–descent generating function of a pair of patterns
 
@@ -132,7 +132,7 @@ permutation ($n = 0$) contributes the constant term $1$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`asc`, `des`).
 
-Formalized by `MetaMathlibExt.ascDesGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf).
+Formalized by `MetaMathlibExt.ascDesGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf).
 
 ## Ascents and descents over permutations avoiding $123$ and $132$
 
@@ -151,7 +151,7 @@ $$(1 - 2qx - pqx^2 + q^2x^2)\, G = 1 + x - 2qx + px^2 - qx^2 - pqx^2 + q^2x^2.$$
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.ascDesGF_123_132` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-123-132).
+Stated but not proved: `MetaMathlibExt.ascDesGF_123_132` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-123-132).
 
 ## Ascents and descents over permutations avoiding $132$ and $321$
 
@@ -170,7 +170,7 @@ $$(1 - px)^3\, G = 1 + x - 3px - 2px^2 + 3p^2x^2 + qx^2 + p^2x^3 - p^3x^3.$$
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.ascDesGF_132_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-132-321).
+Stated but not proved: `MetaMathlibExt.ascDesGF_132_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-132-321).
 
 ## Ascents and descents over permutations avoiding $213$ and $231$
 
@@ -192,7 +192,7 @@ both classes have this distribution of ascents and descents.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.ascDesGF_213_231` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-213-231).
+Stated but not proved: `MetaMathlibExt.ascDesGF_213_231` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#asc-des-gf-213-231).
 
 ## Left-to-right and right-to-left extrema of $132$ and $213$
 
@@ -206,7 +206,7 @@ minima.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`lrmax`, `rlmax`, `lrmin`, `rlmin`).
 
-Formalized by `MetaMathlibExt.permExtrema_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-extrema-small).
+Formalized by `MetaMathlibExt.permExtrema_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-extrema-small).
 
 ## Double ascents, double descents, peaks and valleys in length three
 
@@ -222,7 +222,7 @@ $\operatorname{vl}(213) = 1$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`, `ddes`, `pk`, `vl`).
 
-Formalized by `MetaMathlibExt.permDoubleAscents_peaks_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-double-ascents-peaks-small).
+Formalized by `MetaMathlibExt.permDoubleAscents_peaks_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#perm-double-ascents-peaks-small).
 
 ## Generating function of ten classical statistics over a pair of patterns
 
@@ -248,7 +248,7 @@ double descents, and $\mathrm{pk}$ and $\mathrm{vl}$ peaks and valleys. The empt
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (the g.f. `F_(τ,ρ)`).
 
-Formalized by `MetaMathlibExt.classicalStatGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf).
+Formalized by `MetaMathlibExt.classicalStatGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf).
 
 ## Double ascent–double descent generating function of a pair of patterns
 
@@ -268,7 +268,7 @@ The empty permutation ($n = 0$) contributes the constant term $1$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`, `ddes`).
 
-Formalized by `MetaMathlibExt.dascDdesGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#dasc-ddes-gf).
+Formalized by `MetaMathlibExt.dascDdesGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#dasc-ddes-gf).
 
 ## Ten classical statistics over permutations avoiding $123$ and $132$
 
@@ -292,7 +292,7 @@ $$
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.classicalStatGF_123_132` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-123-132).
+Stated but not proved: `MetaMathlibExt.classicalStatGF_123_132` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-123-132).
 
 ## Ten classical statistics over permutations avoiding $132$ and $321$
 
@@ -321,7 +321,7 @@ $$
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.classicalStatGF_132_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-132-321).
+Stated but not proved: `MetaMathlibExt.classicalStatGF_132_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-132-321).
 
 ## Ten classical statistics over permutations avoiding $213$ and $231$
 
@@ -348,7 +348,7 @@ $$
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.classicalStatGF_213_231` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-213-231).
+Stated but not proved: `MetaMathlibExt.classicalStatGF_213_231` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#classical-stat-gf-213-231).
 
 ## Double ascents and double descents over permutations avoiding $231$ and $312$
 
@@ -373,7 +373,7 @@ $29$).
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.dascDdesGF_231_312` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#dasc-ddes-gf-231-312).
+Stated but not proved: `MetaMathlibExt.dascDdesGF_231_312` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPatternAvoidanceCountsWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html#dasc-ddes-gf-231-312).
 
 ## Depends on
 
@@ -382,4 +382,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutations avoiding two patterns of length three](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/permutations-avoiding-two-patterns-of-length-thr)

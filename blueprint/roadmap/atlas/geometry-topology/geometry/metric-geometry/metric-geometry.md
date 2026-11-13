@@ -7,7 +7,7 @@ statement: formalized
 
 # Metric geometry: its own results
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html).
 
 Geometry of general metric spaces: curvature bounds via comparison, length spaces, isometric embeddings and low-distortion embeddings.
 
@@ -28,7 +28,7 @@ over pairs of points.
 
 - W. B. Johnson and J. Lindenstrauss, "Extensions of Lipschitz mappings into a Hilbert space," Contemporary Mathematics 26, Conference on Modern Analysis and Probability, American Mathematical Society (1984), 189--206, DOI 10.1090/conm/026/737400. ATLAS source-to-API map, item N147; ATLAS adds the hypothesis that N is at least 2.
 
-Formalized by `MathlibExt.Geometry.Euclidean.JohnsonLindenstraussWanted.johnson_lindenstrauss`, a theorem declared in [MathlibExt/Geometry/Euclidean/JohnsonLindenstrauss.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/JohnsonLindenstrauss.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#johnson-lindenstrauss).
+Formalized by `MathlibExt.Geometry.Euclidean.JohnsonLindenstraussWanted.johnson_lindenstrauss`, a theorem declared in [MathlibExt/Geometry/Euclidean/JohnsonLindenstrauss.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/JohnsonLindenstrauss.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#johnson-lindenstrauss).
 
 ## Microscopic weighting is not equivalent to finite concentration
 
@@ -48,7 +48,7 @@ concentration but no microscopic weighting.
 
 - Kenta Kitamura, microscopic-weighting-counterexample, Lean formalization of the 10-point counterexample, https://github.com/KitaKen1/microscopic-weighting-counterexample/blob/eff8979/lean/MicroscopicWeightingCounterexampleFC.lean#L886-L894.
 
-Stated but not proved: `MathlibExt.Analysis.MicroscopicWeightingWanted.microscopicWeightingIff_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/MicroscopicWeightingWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MicroscopicWeightingWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#microscopic-weighting-iff-refuted).
+Stated but not proved: `MathlibExt.Analysis.MicroscopicWeightingWanted.microscopicWeightingIff_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/MicroscopicWeightingWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MicroscopicWeightingWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#microscopic-weighting-iff-refuted).
 
 ## No compact set is congruent to a proper subset of itself
 
@@ -63,7 +63,7 @@ surjective.
 
 - S. Banach and S. Ulam, Problem 3 of the Scottish Book, stated and proved in the Scottish Book typescript.
 
-Stated but not proved: `MathlibExt.Geometry.ScottishBook3Wanted.noCompactSetCongruentToProperSubset` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook3Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ScottishBook3Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#no-compact-set-congruent-to-proper-subse).
+Stated but not proved: `MathlibExt.Geometry.ScottishBook3Wanted.noCompactSetCongruentToProperSubset` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook3Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ScottishBook3Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html#no-compact-set-congruent-to-proper-subse).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Metric geometry](https://deicyde.github.io/atlas-lean/roadmap/Geometry/metric-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/metric-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/metric-geometry)

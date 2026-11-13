@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.42 Essentially constant systems
 
-Section 13.42 of the Stacks Project, [Tag 0G38](https://stacks.math.columbia.edu/tag/0G38). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.42 of the Stacks Project, [Tag 0G38](https://stacks.math.columbia.edu/tag/0G38). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G39, a lemma
 
 [Tag 0G39](https://stacks.math.columbia.edu/tag/0G39) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.isEssentiallyConstant_op_iff_exists_iso_const_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L745).
+**`CategoryTheory.Pretriangulated.isEssentiallyConstant_op_iff_exists_iso_const_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L745).
 
 > **Stacks 0G39**. An inverse system `A : J ⥤ 𝒟` in a pre-triangulated category, indexed by a
 > cofiltered category `J`, is essentially constant as a pro-object (Stacks 05PU for `A.op`) if and
@@ -39,7 +39,7 @@ public theorem isEssentiallyConstant_op_iff_exists_iso_const_biprod [IsCofiltere
 
 [Tag 0G3A](https://stacks.math.columbia.edu/tag/0G3A) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.isEssentiallyConstant_op_π₂_and_exists_limit_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 983](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L983).
+**`CategoryTheory.Pretriangulated.isEssentiallyConstant_op_π₂_and_exists_limit_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 983](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L983).
 
 > **Stacks 0G3A**. Let `T : J ⥤ Triangle 𝒟` be an inverse system of distinguished triangles
 > `A_j ⟶ B_j ⟶ C_j ⟶ A_j[1]` in a pre-triangulated category, indexed by a cofiltered category `J`.
@@ -70,7 +70,7 @@ public theorem isEssentiallyConstant_op_π₂_and_exists_limit_triangle [IsCofil
 
 [Tag 0G3B](https://stacks.math.columbia.edu/tag/0G3B) in the Stacks Project.
 
-**`DerivedCategory.isEssentiallyConstant_op_and_exists_limit_cone_of_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1210).
+**`DerivedCategory.isEssentiallyConstant_op_and_exists_limit_cone_of_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1210).
 
 > Let `A : J ⥤ D(𝒜)` be an inverse system in the derived category of an abelian category, indexed
 > by a cofiltered category `J`. Assume `H^i(A_j) = 0` for every `j` and every `i` outside an interval
@@ -97,7 +97,7 @@ public theorem isEssentiallyConstant_op_and_exists_limit_cone_of_homology
 
 [Tag 0G3C](https://stacks.math.columbia.edu/tag/0G3C) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_proInverse_mor₁_of_proZero_π₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1060).
+**`CategoryTheory.Pretriangulated.exists_proInverse_mor₁_of_proZero_π₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1060).
 
 > **Stacks 0G3C**. Let `T : J ⥤ Triangle 𝒟` be an inverse system of distinguished triangles
 > `A_j ⟶ B_j ⟶ C_j ⟶ A_j[1]` in a pre-triangulated category, indexed by a cofiltered category `J`.
@@ -119,7 +119,7 @@ public theorem exists_proInverse_mor₁_of_proZero_π₃ [IsCofiltered J]
 
 [Tag 0G3D](https://stacks.math.columbia.edu/tag/0G3D) in the Stacks Project.
 
-**`DerivedCategory.exists_proInverse_of_proInverse_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1452).
+**`DerivedCategory.exists_proInverse_of_proInverse_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean, line 1452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/EssentiallyConstant.lean#L1452).
 
 > **Stacks 0G3D**. Let `α : A ⟶ B` be an inverse system of maps `A_j ⟶ B_j` of the derived
 > category of an abelian category, indexed by a cofiltered category `J`. Assume `H^i(A_j) = 0` and
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.42, Tag 0G38](https://stacks.math.columbia.edu/tag/0G38)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

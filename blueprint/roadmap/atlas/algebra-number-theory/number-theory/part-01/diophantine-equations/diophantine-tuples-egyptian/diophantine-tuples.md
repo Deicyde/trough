@@ -7,7 +7,7 @@ statement: formalized
 
 # Diophantine tuples
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html).
 
 ## Diophantine tuples
 
@@ -19,7 +19,7 @@ square.
 
 - OPG-16555 (Diophantine quintuple conjecture) [OpenGarden].
 
-Formalized by `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.IsDiophantineTuple`, a definition declared in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#is-diophantine-tuple).
+Formalized by `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.IsDiophantineTuple`, a definition declared in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#is-diophantine-tuple).
 
 ## The statement that no Diophantine quintuple exists
 
@@ -31,7 +31,7 @@ Diophantine quintuple.
 
 - OPG-16555 (Diophantine quintuple conjecture) [OpenGarden].
 
-Formalized by `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.Statement`, a definition declared in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#statement).
+Formalized by `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.Statement`, a definition declared in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#statement).
 
 ## There is no Diophantine quintuple
 
@@ -44,7 +44,7 @@ This was an open conjecture, resolved by He, Togbé, and Ziegler.
 
 - Bo He, Alain Togbé, and Volker Ziegler, There is no Diophantine quintuple, Transactions of the American Mathematical Society 371 (2019), 6665–6709, https://doi.org/10.1090/tran/7573.
 
-Stated but not proved: `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.Statement_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#statement-holds).
+Stated but not proved: `MathlibExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted.Statement_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineQuintupleConjectureQuestion1Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html#statement-holds).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Diophantine tuples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/diophantine-tuples)

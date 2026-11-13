@@ -7,7 +7,7 @@ statement: formalized
 
 # Direct summand theorem
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html).
 
 ## Single complexes in the bounded-below derived category
 
@@ -17,7 +17,7 @@ concentrated in degree $n$, viewed in the bounded-below derived category $D^+(C)
 isomorphic to the corresponding single-complex functor into the bounded-below homotopy category
 $K^+(C)$ followed by the localization functor $K^+(C) \to D^+(C)$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.singleFunctorPlusIsoCompQh`, a definition declared in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#single-functor-plus-iso-comp-qh).
+Formalized by `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.singleFunctorPlusIsoCompQh`, a definition declared in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#single-functor-plus-iso-comp-qh).
 
 ## Derived direct summand theorem
 
@@ -36,7 +36,7 @@ $A$-modules.
 
 -. Problem `direct_summand` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.derived_direct_summand` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#derived-direct-summand).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.derived_direct_summand` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#derived-direct-summand).
 
 ## Direct summand theorem
 
@@ -50,7 +50,7 @@ summand of $B$ as an $A$-module.
 
 -. Problem `direct_summand` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.direct_summand` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#direct-summand).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.direct_summand` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/DirectSummandWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/DirectSummandWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html#direct-summand).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Direct summand theorem](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/modules/direct-summand-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/modules/direct-summand-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/modules/direct-summand-theorem)

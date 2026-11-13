@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isSmooth_jointlySurjective, AlgebraicGeometry.Stack.isLocallyQuasicoherent_moduleSheafHigherDirectImage, AlgebraicGeometry.Stack.isLocallyQuasicoherent_stackModuleHigherDirectImage, AlgebraicGeometry.Stack.exists_fppfCovering_isQuasicoherentOnSite_restrictModuleToSmallEtale, AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isFlat_isLfp_jointlySurjective
+lean: AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isSmooth_jointlySurjective, AlgebraicGeometry.Stack.isLocallyQuasicoherent_stackModuleHigherDirectImage, AlgebraicGeometry.Stack.exists_fppfCovering_isQuasicoherentOnSite_restrictModuleToSmallEtale, AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isFlat_isLfp_jointlySurjective
 statement: formalized
 proof: formalized
 ---
 
 # 103.6 Locally quasi-coherent modules
 
-Section 103.6 of the Stacks Project, [Tag 075X](https://stacks.math.columbia.edu/tag/075X). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 103.6 of the Stacks Project, [Tag 075X](https://stacks.math.columbia.edu/tag/075X). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 075Y, a lemma
 
 [Tag 075Y](https://stacks.math.columbia.edu/tag/075Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isSmooth_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentSmoothDescent.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentSmoothDescent.lean#L154).
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isSmooth_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentSmoothDescent.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentSmoothDescent.lean#L154).
 
 > Let `f j : 𝒵 j ⟶ 𝒳` be a family of smooth 1-morphisms of algebraic stacks over `S` with
 > `|𝒳| = ⋃ j, |f j|(|𝒵 j|)`, and let `F` be a sheaf of `𝒪_𝒳`-modules on `𝒳_étale`. If every inverse
@@ -41,61 +41,19 @@ theorem isLocallyQuasicoherent_of_isSmooth_jointlySurjective
 
 [Tag 075Z](https://stacks.math.columbia.edu/tag/075Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalCriterion.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalCriterion.lean#L537). The attribute's comment: “the whole statement, in every degree and with the source's hypotheses unweakened, granted four named hypotheses: the criterion of Stacks 076Z quantified over every rule, the weak Serre condition of Stacks 06WM parts (1)-(3), the converse half of the smooth-local criterion Stacks 075Y at section universe u+1, and the affine case (Stacks 075P and Stacks 0720). Hypothesis (2) of the criterion, Stacks 06WL, is proved rather than assumed”.
-
-> **Stacks 075Z.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact (**Stacks 050U**) and quasi-separated
-> (**Stacks 04YW**) 1-morphism of algebraic stacks over `S` and let `ℱ` be a locally quasi-coherent
-> `𝒪_𝒳`-module on `𝒳_étale` (**Stacks 06WJ**). Then the higher direct image `Rⁱf_*ℱ`, computed in
-> the étale topology, is locally quasi-coherent on `𝒴_étale`, in every degree `i`.
->
-> The conclusion is `AlgebraicGeometry.Stack.IsLocallyQuasicoherentHigherDirectImage`, the
-> library's statement of the assertion of the source, unchanged and for every degree.
->
-> Three hypotheses are carried, each a clause of the criterion of **Stacks 076Z** at the rule of
-> local quasi-coherence and each one a result of the source this library does not have:
->
-> * `hcrit` is **Stacks 076Z**, quantified over every rule. Its proof runs the first-quadrant
->   spectral sequence of **Stacks 072G**, which is not formalized here.
-> * `hserre` is hypothesis (1), the weak Serre condition, which is parts (1) to (3) of
->   **Stacks 06WM**, proved at section universe `u` in
->   `StacksFrontier.AlgebraicGeometry.Stacks.Quasicoherent.LocallyQuasicoherentClosure`; here it is
->   read at section universe `u + 1`.
-> * `hconv` is the converse half of hypothesis (3), which is **Stacks 075Y**. That tag is proved, at
->   section universe `u` only, and the higher direct images produce modules with sections in
->   `u + 1`; closing this gap is a universe generalization of **Stacks 03DN**, not a new theorem of
->   the source.
-> * `haffine` is hypothesis (4), the case of stacks representable by affine schemes, which the
->   source proves from **Stacks 075P** and **Stacks 0720**; the cohomological content of
->   **Stacks 075P** and all of **Stacks 0720** are absent.
->
-> Hypothesis (2) is not carried: it is **Stacks 06WL** and is supplied by
-> `AlgebraicGeometry.Stack.isStableUnderSmoothPullback_locallyQuasicoherentRule`, which also supplies
-> the forward half of hypothesis (3).
-
-```lean
-theorem isLocallyQuasicoherent_moduleSheafHigherDirectImage
-    (hcrit : SmoothLocalHigherDirectImageCriterion.{u, t, s} B S hS)
-    (hserre : StackEtaleModuleRule.IsWeakSerre.{u, t} B S hS (locallyQuasicoherentRule B E h S hS))
-    (hconv : StackEtaleModuleRule.IsSmoothLocalConverse.{u, t, s} B S hS
-      (locallyQuasicoherentRule B E h S hS))
-    (haffine : StackEtaleModuleRule.PreservesHigherDirectImagesOfAffine.{u, t} B S hS
-      (locallyQuasicoherentRule B E h S hS))
-    {𝒳 𝒴 : AlgebraicStacks.{u, t} B S hS} (f : 𝒳 ⟶ 𝒴)
-    (hqc : IsQuasiCompactMorphism B S hS f)
-    (hqs : AlgebraicStacks.IsQuasiSeparated B S hS f) (i : ℕ) :
-    IsLocallyQuasicoherentHigherDirectImage B E h S hS f i
-```
-
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_stackModuleHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentHigherDirectImage.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentHigherDirectImage.lean#L124). The attribute's comment: “the whole statement, with modules and higher direct images at the module universe u of the schemes; local quasi-coherence read against an auxiliary big étale site E with E.cutoff = B.cutoff”.
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_stackModuleHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentHigherDirectImage.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentHigherDirectImage.lean#L128). The attribute's comment: “the whole statement, for every degree i, with the source's hypotheses: f quasi-compact and quasi-separated, ℱ a locally quasi-coherent 𝒪\_𝒳-module on 𝒳\_étale; modules have sections in the universe of the structure sheaf, and Sch\_étale is the big étale site E on the underlying category of Sch\_fppf (E.cutoff = B.cutoff), as in the source”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of algebraic stacks and
 > `ℱ` a locally quasi-coherent `𝒪_𝒳`-module on `𝒳_étale`. Then every higher direct image `Rⁱf_*ℱ`,
 > computed in the étale topology, is locally quasi-coherent on `𝒴_étale`.
 >
-> Modules have sections in the universe `u` of the schemes, and `Rⁱf_*` is the right derived
-> functor of the direct image right adjoint to the inverse image
-> (`AlgebraicGeometry.Stack.stackModuleHigherDirectImage`). Local quasi-coherence is stated against
-> an auxiliary big étale site `E` with the cutoff of `B`.
+> Modules have sections in the universe `u` of the schemes, the universe of the structure sheaf
+> `𝒪_𝒳`, and `Rⁱf_*` is the right derived functor of the direct image right adjoint to the inverse
+> image (`AlgebraicGeometry.Stack.stackModuleHigherDirectImage`). The small étale sites `U_étale` in
+> the definition of local quasi-coherence (**Stacks 06WJ**) are those of the big étale site `E`
+> whose underlying category is that of the big fppf site `B` (`E.cutoff = B.cutoff`), which is the
+> convention of the source: `Sch_étale` is the big étale site on the underlying category `Sch_α`
+> of `Sch_fppf`.
 
 ```lean
 theorem isLocallyQuasicoherent_stackModuleHigherDirectImage
@@ -112,7 +70,7 @@ theorem isLocallyQuasicoherent_stackModuleHigherDirectImage
 
 [Tag 07AP](https://stacks.math.columbia.edu/tag/07AP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fppfCovering_isQuasicoherentOnSite_restrictModuleToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFlatDescent.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFlatDescent.lean#L156). The attribute's comment: “the fppf-local half: every object acquires a jointly surjective family of flat, locally finitely presented arrows at whose sources the small étale restriction of the module is quasi-coherent, via the fppf-local factorisation of Stacks 07AN”.
+**`AlgebraicGeometry.Stack.exists_fppfCovering_isQuasicoherentOnSite_restrictModuleToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFlatDescent.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFlatDescent.lean#L156). The attribute's comment: “the fppf-local half: every object acquires a jointly surjective family of flat, locally finitely presented arrows at whose sources the small étale restriction of the module is quasi-coherent, via the fppf-local factorisation of Stacks 07AN”.
 
 > **Stacks 07AP, its fppf-local half.** Let `f j : 𝒵 j ⟶ 𝒳` be a family of flat, locally
 > finitely presented 1-morphisms of algebraic stacks over `S` with `|𝒳| = ⋃ j, |f j|(|𝒵 j|)`, let
@@ -152,7 +110,7 @@ theorem exists_fppfCovering_isQuasicoherentOnSite_restrictModuleToSmallEtale {J 
                 (contains_base B E h S hS 𝒳.val.val.p (y i)))).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isFlat_isLfp_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFppfDescent.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFppfDescent.lean#L385).
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_of_isFlat_isLfp_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFppfDescent.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentFppfDescent.lean#L385).
 
 > **Stacks 07AP.** Let `f j : 𝒵 j ⟶ 𝒳` be a family of flat (**Stacks 06PW**) and locally
 > finitely presented (**Stacks 06Q2**) 1-morphisms of algebraic stacks over `S` with
@@ -191,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.6, Tag 075X](https://stacks.math.columbia.edu/tag/075X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

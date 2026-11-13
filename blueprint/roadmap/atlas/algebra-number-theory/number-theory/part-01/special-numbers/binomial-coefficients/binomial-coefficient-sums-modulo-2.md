@@ -7,7 +7,7 @@ statement: formalized
 
 # Binomial coefficient sums modulo 2
 
-23 results, 5 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html).
+23 results, 5 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html).
 
 ## Run lengths of a digit list
 
@@ -20,7 +20,7 @@ every digit other than $1$ ends a run.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Definition 1.
 
-Formalized by `MetaMathlibExt.bitRunLengths`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#bit-run-lengths).
+Formalized by `MetaMathlibExt.bitRunLengths`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#bit-run-lengths).
 
 ## Binary run lengths
 
@@ -33,7 +33,7 @@ $\mathcal{L}(n)$, whose order does not matter there; for $n = 0$ the list is emp
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Definition 1.
 
-Formalized by `MetaMathlibExt.binaryRunLengths`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#binary-run-lengths).
+Formalized by `MetaMathlibExt.binaryRunLengths`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#binary-run-lengths).
 
 ## Run length transform
 
@@ -47,7 +47,7 @@ one factor.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Definition 1.
 
-Formalized by `MetaMathlibExt.runLengthTransform`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform).
+Formalized by `MetaMathlibExt.runLengthTransform`, a definition declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform).
 
 ## Run length transform at zero
 
@@ -58,7 +58,7 @@ length transform of $S$ takes the value $1$ at $0$, since $0$ has no runs of $1$
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Definition 1.
 
-Formalized by `MetaMathlibExt.runLengthTransform_zero`, a theorem declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-zero).
+Formalized by `MetaMathlibExt.runLengthTransform_zero`, a theorem declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-zero).
 
 ## Run length transform at eleven
 
@@ -70,7 +70,7 @@ runs of $1$s have lengths $2$ and $1$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, example after Definition 1.
 
-Formalized by `MetaMathlibExt.runLengthTransform_eleven`, a theorem declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-eleven).
+Formalized by `MetaMathlibExt.runLengthTransform_eleven`, a theorem declared in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-eleven).
 
 ## Linear recurrences via powers of the companion matrix
 
@@ -88,7 +88,7 @@ The values $S(1), \dots, S(r)$ are arbitrary.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.linearRecurrence_eq_companion_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#linear-recurrence-eq-companion-pow).
+Stated but not proved: `MetaMathlibExt.linearRecurrence_eq_companion_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#linear-recurrence-eq-companion-pow).
 
 ## Run length transform of a linear recurrence (Rampersad–Wiebe Theorem 1)
 
@@ -107,7 +107,7 @@ matrices is empty and equals the identity.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_linearRecurrence_eq_linearRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-linear-recurrence-e).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_linearRecurrence_eq_linearRep` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-linear-recurrence-e).
 
 ## Rampersad–Wiebe Theorem 2
 
@@ -120,7 +120,7 @@ $\sum_{k=0}^{n} \left(\binom{n - k}{2k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_sub_two_mul_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-sub-two-mul).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_sub_two_mul_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-sub-two-mul).
 
 ## Rampersad–Wiebe Theorem 3
 
@@ -133,7 +133,7 @@ $\sum_{k=0}^{n} \left(\binom{3k}{k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_three_mul_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-three-mul-fi).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_three_mul_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-three-mul-fi).
 
 ## Rampersad–Wiebe Theorem 4
 
@@ -145,7 +145,7 @@ natural number $n$, $\sum_{k=0}^{n} \left(\binom{n}{2k} \binom{n}{k} \bmod 2\rig
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_two_mul_pow_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-two-mul-pow).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_two_mul_pow_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-two-mul-pow).
 
 ## Sum of $\binom{n+2k}{2k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -158,7 +158,7 @@ $S(i) = 2$ for $i \ge 1$, that is, $1, 2, 2, 2, \dots$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_two_mul_one_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-two-mul).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_two_mul_one_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-two-mul).
 
 ## Sum of $\binom{n+k}{n-k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -171,7 +171,7 @@ integers $1, 2, 3, \dots$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_sub_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-sub-succ).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_sub_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-sub-succ).
 
 ## Rampersad–Wiebe Theorem 7
 
@@ -184,7 +184,7 @@ number $n$, $\sum_{k=0}^{n} \left(\binom{n - k}{6k} \binom{n}{k} \bmod 2\right) 
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_sub_six_mul_narayanaCows` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-sub-six-mul).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_sub_six_mul_narayanaCows` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-sub-six-mul).
 
 ## Sum of $\binom{n+3k}{6k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -197,7 +197,7 @@ $S(i) = \lfloor i / 2 \rfloor + 1$ of doubled positive integers $1, 1, 2, 2, 3, 
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_three_mul_six_mul_doubled` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-three-mu).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_three_mul_six_mul_doubled` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-three-mu).
 
 ## Sum of $\binom{n+2k}{2n-k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -211,7 +211,7 @@ numbers; that is, $S$ is $1, 1, 2, 1, 3, 4, 7, 11, \dots$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_two_mul_two_mul_sub_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-two-mul-2).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_two_mul_two_mul_sub_lucas` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-two-mul-2).
 
 ## Rampersad–Wiebe Theorem 12
 
@@ -229,7 +229,7 @@ is then positive.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_seven_mul_sub_padovan_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-seven-mul-su).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_seven_mul_sub_padovan_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-seven-mul-su).
 
 ## Sum of $\binom{n+7k}{3n+k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -243,7 +243,7 @@ $1, 0, 1, 1, 1, 2, 2, 3, \dots$ (the Padovan numbers, OEIS A000931, from offset 
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_seven_mul_padovan_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-seven-mu).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_seven_mul_padovan_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-seven-mu).
 
 ## Rampersad–Wiebe Theorem 14
 
@@ -256,7 +256,7 @@ $\sum_{k=0}^{n} \left(\binom{6k}{n + 3k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_six_mul_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-six-mul-alte).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_six_mul_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-six-mul-alte).
 
 ## Rampersad–Wiebe Theorem 15
 
@@ -273,7 +273,7 @@ is then positive.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_eight_mul_sub_period_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-eight-mul-su).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_eight_mul_sub_period_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-eight-mul-su).
 
 ## Sum of $\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -287,7 +287,7 @@ the value at $n$ of the run length transform of $S$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_five_mul_two_mul_add_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-five-mul).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_five_mul_two_mul_add_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-five-mul).
 
 ## Sum of $\binom{n+5k}{2k}\binom{n}{k} \bmod 2$ as a run length transform
 
@@ -301,7 +301,7 @@ value at $n$ of the run length transform of $S$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_five_mul_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-five-mul-2).
+Stated but not proved: `MetaMathlibExt.runLengthTransform_choose_add_five_mul_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#run-length-transform-choose-add-five-mul-2).
 
 ## Binomial parity sums at one less than a power of two
 
@@ -319,7 +319,7 @@ when $\ell = 0$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_mul_mod_two_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#sum-choose-two-pow-mul-mod-two-two-pow-s).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_mul_mod_two_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#sum-choose-two-pow-mul-mod-two-two-pow-s).
 
 ## Binomial parity sums detect run length divisibility
 
@@ -337,7 +337,7 @@ The paper takes $m \ge 2$; the statement holds for every $m$.
 
 - Narad Rampersad and Max Wiebe, *Sums of Products of Binomial Coefficients Mod 2 and 2-Regular Sequences*, INTEGERS 24 (2024), Article A73, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_mul_mod_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#sum-choose-two-pow-mul-mod-two-eq).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_mul_mod_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialModTwoRunLengthWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html#sum-choose-two-pow-mul-mod-two-eq).
 
 ## Depends on
 
@@ -346,4 +346,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial coefficient sums modulo 2](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomial-coefficient-sums-modulo-2)

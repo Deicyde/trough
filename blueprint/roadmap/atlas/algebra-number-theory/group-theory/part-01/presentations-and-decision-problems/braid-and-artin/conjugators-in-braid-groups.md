@@ -7,7 +7,7 @@ statement: formalized
 
 # Conjugators in braid groups
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html).
 
 ## The braid represented by a braid word
 
@@ -17,7 +17,7 @@ standard generators $\sigma_1, \dots, \sigma_n$. A braid word is an element of t
 $\sigma_1, \dots, \sigma_n$; the braid it represents is its image under the group homomorphism from
 this free group to $B_{n+1}$ that sends each $\sigma_i$ to the generator $\sigma_i$ of $B_{n+1}$.
 
-Formalized by `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidOf`, a definition declared in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-of).
+Formalized by `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidOf`, a definition declared in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-of).
 
 ## Polynomially short conjugators in braid groups
 
@@ -30,7 +30,7 @@ $\sigma_1, \dots, \sigma_n$, and its length $|u|$ is the length of its freely re
 braid words $u$ and $v$ whose braids are conjugate in $B_{n+1}$ there is a braid word $w$ with
 $|w| \le C (\max(|u|, |v|) + 1)^d$ such that $w u w^{-1}$ and $v$ represent the same braid.
 
-Formalized by `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidPolynomialConjugatorLength`, a definition declared in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-polynomial-conjugator-length).
+Formalized by `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidPolynomialConjugatorLength`, a definition declared in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-polynomial-conjugator-length).
 
 ## Braid groups have polynomially short conjugators
 
@@ -51,7 +51,7 @@ at most $K(|f| + |g|)$).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 19.81 (V. Shpilrain); resolution: J. Tao, Linearly bounded conjugator property for mapping class groups, Geom. Funct. Anal. 23 (2013), no. 1, 415-466 (arXiv:1106.2341), Theorem B: for a finite generating set of the mapping class group of a surface of finite type there is K such that conjugate f, g have a conjugator ω with |ω| ≤ K(|f| + |g|); Kourovka Archive, Problem 19.81: Yes, there is such a conjugator, even for any mapping class groups, https://arxiv.org/abs/1106.2341.
 
-Stated but not proved: `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidPolynomialConjugatorLength_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-polynomial-conjugator-length-holds).
+Stated but not proved: `MathlibExt.GroupTheory.BraidConjugatorLengthKourovka19Problem81Wanted.braidPolynomialConjugatorLength_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidConjugatorLengthKourovka19Problem81Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html#braid-polynomial-conjugator-length-holds).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Conjugators in braid groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/conjugators-in-braid-groups)

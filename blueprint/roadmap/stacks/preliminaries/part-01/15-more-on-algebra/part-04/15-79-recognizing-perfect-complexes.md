@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.79 Recognizing perfect complexes
 
-Section 15.79 of the Stacks Project, [Tag 0G99](https://stacks.math.columbia.edu/tag/0G99). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.79 of the Stacks Project, [Tag 0G99](https://stacks.math.columbia.edu/tag/0G99). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BYP, a lemma
 
 [Tag 0BYP](https://stacks.math.columbia.edu/tag/0BYP) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_away_bounded_free_complex_representing_of_fibre_vanishing_below`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean#L756).
+**`StacksDraft.Perfect.exists_away_bounded_free_complex_representing_of_fibre_vanishing_below`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean#L756).
 
 > **Stacks 0BYP.** Let `R` be a commutative ring, `p` a prime of `R` and `K` a pseudo-coherent
 > object of `D(R)` which is bounded below. Set `dᵢ = dim_{κ(p)} Hⁱ(K ⊗ᴸ_R κ(p))`. If `dᵢ = 0` for
@@ -48,7 +48,7 @@ theorem exists_away_bounded_free_complex_representing_of_fibre_vanishing_below
 
 [Tag 068V](https://stacks.math.columbia.edu/tag/068V) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_and_torAmplitude_iff_fibreCohomologyVanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 854](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Local.lean#L854).
+**`StacksDraft.Perfect.isPerfect_and_torAmplitude_iff_fibreCohomologyVanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 854](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Local.lean#L854).
 
 > Let `R` be a commutative ring, let `a, b : ℤ` and let `K` be a pseudo-coherent object of the
 > derived category of `R`-modules. Then `K` is perfect of Tor amplitude in `[a, b]` if and only if
@@ -81,7 +81,7 @@ theorem isPerfect_and_torAmplitude_iff_fibreCohomologyVanishes {R : Type u} [Com
 
 [Tag 068W](https://stacks.math.columbia.edu/tag/068W) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_iff_isPerfect_at_primes_of_isBoundedBelow_and_stalkwise_criteria`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 1250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Local.lean#L1250).
+**`StacksDraft.Perfect.isPerfect_iff_isPerfect_at_primes_of_isBoundedBelow_and_stalkwise_criteria`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 1250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Local.lean#L1250).
 
 > Let `R` be a commutative ring and let `K` be a pseudo-coherent object of the derived category
 > of `R`-modules. Then `K` perfect implies that every stalk `K ⊗_R^L R_p` is perfect; perfectness at
@@ -127,7 +127,7 @@ theorem isPerfect_iff_isPerfect_at_primes_of_isBoundedBelow_and_stalkwise_criter
 
 [Tag 0G9A](https://stacks.math.columbia.edu/tag/0G9A) in the Stacks Project.
 
-**`StacksDraft.ProjectiveAmplitude.hasProjectiveAmplitude_iff_perfect_iff_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 989](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L989).
+**`StacksDraft.ProjectiveAmplitude.hasProjectiveAmplitude_iff_perfect_iff_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 989](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L989).
 
 > **Stacks 0G9A.** Let `K` be a pseudo-coherent object of `D(R)` and let `a, b` be integers.
 > The following are equivalent:
@@ -171,7 +171,7 @@ theorem hasProjectiveAmplitude_iff_perfect_iff_ext_vanishing
 
 [Tag 068X](https://stacks.math.columbia.edu/tag/068X) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_and_torAmplitude_of_flat_of_fibre_globalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreDescent.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FibreDescent.lean#L530). References: SGA 6 III (4.4), “(ii), special case”.
+**`StacksDraft.Perfect.isPerfect_and_torAmplitude_of_flat_of_fibre_globalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreDescent.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FibreDescent.lean#L530). References: SGA 6 III (4.4), “(ii), special case”.
 
 > **Stacks 068X.** Let `A → B` be a flat map of commutative rings, let `a, b : ℤ` and let `d ≥ 0`
 > be an integer such that for every prime `p` of `A` the fibre ring `B ⊗_A κ(p)` has global dimension
@@ -206,7 +206,7 @@ theorem isPerfect_and_torAmplitude_of_flat_of_fibre_globalDimension_le [Module.F
 
 [Tag 09PC](https://stacks.math.columbia.edu/tag/09PC) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_and_torAmplitude_of_flat_local_of_regular_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreDescent.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FibreDescent.lean#L620).
+**`StacksDraft.Perfect.isPerfect_and_torAmplitude_of_flat_local_of_regular_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreDescent.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FibreDescent.lean#L620).
 
 > **Stacks 09PC.** Let `A → B` be a flat local homomorphism of local rings, let `a, b : ℤ` and
 > let `d ≥ 0` be an integer such that the closed fibre `B/m_A B` is regular of dimension `d`. Let `K`
@@ -249,4 +249,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.79, Tag 0G99](https://stacks.math.columbia.edu/tag/0G99)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

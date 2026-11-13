@@ -7,7 +7,7 @@ statement: formalized
 
 # Bernoulli numbers of the second kind
 
-21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html).
+21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html).
 
 ## Generating function of the Bernoulli numbers of the second kind
 
@@ -19,7 +19,7 @@ coefficient is $1$.
 Analytically this series is $\log(1 + t) / t$, so $G(t) = t / \log(1 + t)$; the logarithm
 itself is not invertible, having zero constant coefficient.
 
-Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries`, a definition declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series).
+Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries`, a definition declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series).
 
 ## Bernoulli numbers of the second kind
 
@@ -31,7 +31,7 @@ $\sum_{k \ge 0} \frac{(-1)^k}{k + 1} t^k$. Thus $G(t) = \sum_{n \ge 0} B_n^* t^n
 Analytically $G(t) = t / \log(1 + t)$; this is Roman's normalization, with $B_0^* = 1$,
 $B_1^* = 1/2$ and $B_2^* = -1/6$.
 
-Formalized by `MetaMathlibExt.bernoulliSecond`, a definition declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second).
+Formalized by `MetaMathlibExt.bernoulliSecond`, a definition declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second).
 
 ## Generating function of the Bernoulli numbers of the second kind as an inverse
 
@@ -40,7 +40,7 @@ generating function $G(t)$ of the Bernoulli numbers of the second kind equals th
 the ring $\mathbb{Q}[[t]]$ of formal power series, of the series
 $\sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n$.
 
-Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series-eq).
+Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series-eq).
 
 ## Bernoulli numbers of the second kind as scaled coefficients
 
@@ -49,7 +49,7 @@ $n$, the Bernoulli number of the second kind $B_n^*$ equals $n!$ times the coeff
 in the generating function $G(t) \in \mathbb{Q}[[t]]$ of the Bernoulli numbers of the second
 kind.
 
-Formalized by `MetaMathlibExt.bernoulliSecond_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq).
+Formalized by `MetaMathlibExt.bernoulliSecond_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq).
 
 ## Defining identity of the generating function of the Bernoulli numbers of the second kind
 
@@ -60,7 +60,7 @@ $G(t) \cdot \sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n = 1$.
 
 Analytically, $\sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n = \log(1 + t) / t$.
 
-Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries_mul_mk`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series-mul-mk).
+Formalized by `MetaMathlibExt.bernoulliSecondPowerSeries_mul_mk`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-power-series-mul-mk).
 
 ## Coefficient identity for the generating function of the Bernoulli numbers of the second kind
 
@@ -70,7 +70,7 @@ of the Bernoulli numbers of the second kind. For every natural number $n$, the s
 $g_i \cdot (-1)^j / (j + 1)$ over all pairs $(i, j)$ of natural numbers with $i + j = n$ equals
 $1$ if $n = 0$ and $0$ if $n \ge 1$.
 
-Formalized by `MetaMathlibExt.sum_antidiagonal_bernoulliSecondPowerSeries_coeff`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-antidiagonal-bernoulli-second-power).
+Formalized by `MetaMathlibExt.sum_antidiagonal_bernoulliSecondPowerSeries_coeff`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-antidiagonal-bernoulli-second-power).
 
 ## Recurrence for the Bernoulli numbers of the second kind
 
@@ -78,7 +78,7 @@ For every natural number
 $n \ge 1$, the Bernoulli numbers of the second kind $B_k^*$ satisfy
 $B_n^* / n! = -\sum_{k=0}^{n-1} (B_k^* / k!) \cdot (-1)^{n-k} / (n - k + 1)$.
 
-Formalized by `MetaMathlibExt.bernoulliSecond_div_factorial_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-div-factorial-eq).
+Formalized by `MetaMathlibExt.bernoulliSecond_div_factorial_eq`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKind.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-div-factorial-eq).
 
 ## Asymptotic expansion of the Bernoulli numbers of the second kind
 
@@ -97,7 +97,7 @@ source.
 
 - Gergő Nemes, "An Asymptotic Expansion for the Bernoulli Numbers of the Second Kind," Journal of Integer Sequences 14 (2011), Article 11.4.8, Theorem, equations, lines 124–133, https://cs.uwaterloo.ca/journals/JIS/VOL14/Nemes/nemes4.tex
 
-Formalized by `MetaMathlibExt.bernoulli_second_kind_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKindAsymptotic.lean, line 709](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKindAsymptotic.lean#L709). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-kind-asymptotic).
+Formalized by `MetaMathlibExt.bernoulli_second_kind_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKindAsymptotic.lean, line 709](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/BernoulliSecondKindAsymptotic.lean#L709). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-kind-asymptotic).
 
 ## Bernoulli polynomials in the falling-factorial basis
 
@@ -113,7 +113,7 @@ $$B_n(X) = B_n + \sum_{k=1}^{n} \frac{n}{k} \, S(n-1, k-1) \, X^{\underline{k}}.
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_poly_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-poly-eq).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_poly_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-poly-eq).
 
 ## Bernoulli numbers in terms of Bernoulli numbers of the second kind
 
@@ -127,7 +127,7 @@ $$B_n = -\sum_{k=1}^{n} \frac{n}{k} \, S(n-1, k-1) \, B_k^*.$$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-eq-neg-sum).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-eq-neg-sum).
 
 ## Stirling inversion
 
@@ -142,7 +142,7 @@ The paper states this for sequences of complex numbers.
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.stirling_inversion_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#stirling-inversion-iff).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.stirling_inversion_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#stirling-inversion-iff).
 
 ## Bernoulli numbers of the second kind in terms of Bernoulli numbers
 
@@ -156,7 +156,7 @@ $$B_n^* = -\sum_{k=1}^{n} \frac{n}{k} \, s(n-1, k-1) \, B_k.$$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulliSecond_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq-neg-sum).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulliSecond_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq-neg-sum).
 
 ## Falling factorials in the Bernoulli polynomial basis
 
@@ -172,7 +172,7 @@ $$X^{\underline{n}} = B_n^* + \sum_{k=1}^{n} \frac{n}{k} \, s(n-1, k-1) \, B_k(X
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.descPochhammer_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#desc-pochhammer-eq).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.descPochhammer_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#desc-pochhammer-eq).
 
 ## Shifted Stirling convolution formula for Bernoulli numbers
 
@@ -189,7 +189,7 @@ $$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_signed_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-signed-div).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_signed_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-signed-div).
 
 ## Bernoulli numbers via Stirling numbers of the second kind
 
@@ -203,7 +203,7 @@ $$B_n = \sum_{i=0}^{n} (-1)^i \, \frac{i!}{i+1} \, S(n, i).$$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-eq-sum-stirling-second).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulli_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-eq-sum-stirling-second).
 
 ## Unshifted Stirling convolution formula for Bernoulli numbers
 
@@ -222,7 +222,7 @@ where $\delta_{n-1,k}$ is $1$ if $k = n - 1$ and $0$ otherwise.
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 10.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_signed_div_delta` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-signed-div-delta).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_signed_div_delta` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-signed-div-delta).
 
 ## Bernoulli numbers of the second kind via Stirling numbers of the first kind
 
@@ -236,7 +236,7 @@ $$B_n^* = \sum_{i=0}^{n} \frac{s(n, i)}{i+1}.$$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Proposition 11.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulliSecond_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulliSecond_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#bernoulli-second-eq-sum).
 
 ## Shifted Stirling convolution as a Bernoulli number of the second kind
 
@@ -251,7 +251,7 @@ $$\sum_{i=k}^{n} \frac{s(n-1, i-1) \, S(i, k)}{i} = \frac{1}{n} \binom{n}{k} \, 
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_stirlingSecond_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-stirling-second-div).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_stirlingSecond_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-stirling-second-div).
 
 ## Stirling convolution as a sum of Bernoulli numbers of the second kind
 
@@ -267,7 +267,7 @@ $$\sum_{i=k}^{n} \frac{s(n, i) \, S(i, k)}{i} =
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Corollary 15.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_stirlingSecond_div_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-stirling-second-div-eq).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_stirlingSecond_div_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-stirling-second-div-eq).
 
 ## Weighted alternating sums of Stirling numbers of the second kind
 
@@ -284,7 +284,7 @@ $$
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 17.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_div_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-div-add).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_div_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-stirling-second-div-add).
 
 ## Sums of signed Stirling numbers of the first kind with shifted reciprocal weights
 
@@ -301,7 +301,7 @@ $$\sum_{k=0}^{n} \frac{s(n, k)}{k + r} = \sum_{k=0}^{r-1} \lambda_{r,n,k} \, B_{
 
 - Bakir Farhi, "Formulas Involving Bernoulli and Stirling Numbers of Both Kinds", Theorem 19.
 
-Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_div_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-div-add).
+Stated but not proved: `MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_div_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliSecondKindWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliSecondKindWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html#sum-signed-div-add).
 
 ## Depends on
 
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli numbers of the second kind](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/bernoulli-numbers-of-the-second-kind)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.10 Geometrically normal schemes
 
-Section 33.10 of the Stacks Project, [Tag 038L](https://stacks.math.columbia.edu/tag/038L). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.10 of the Stacks Project, [Tag 038L](https://stacks.math.columbia.edu/tag/038L). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 038M, a definition
 
 [Tag 038M](https://stacks.math.columbia.edu/tag/038M) in the Stacks Project.
 
-**`AlgebraicGeometry.IsGeometricallyNormalAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean#L53). The attribute's comment: “part (1)”. References: EGA IV (6.7.6); EGA IV (6.7.8).
+**`AlgebraicGeometry.IsGeometricallyNormalAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean#L53). The attribute's comment: “part (1)”. References: EGA IV (6.7.6); EGA IV (6.7.8).
 
 > A scheme `X ⟶ Spec k` is geometrically normal at `x` if, after every field extension
 > `K / k`, the local ring at every point of the base change lying over `x` is normal.
@@ -23,7 +23,7 @@ Section 33.10 of the Stacks Project, [Tag 038L](https://stacks.math.columbia.edu
 public def IsGeometricallyNormalAt (f : X ⟶ Spec (.of k)) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.IsGeometricallyNormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean#L62). The attribute's comment: “part (2)”. References: EGA IV (6.7.6).
+**`AlgebraicGeometry.IsGeometricallyNormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/Normal.lean#L62). The attribute's comment: “part (2)”. References: EGA IV (6.7.6).
 
 > A scheme over `k` is geometrically normal if it is geometrically normal at every point.
 
@@ -35,7 +35,7 @@ public def IsGeometricallyNormal (f : X ⟶ Spec (.of k)) : Prop
 
 [Tag 038N](https://stacks.math.columbia.edu/tag/038N) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyNormalAt_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L133).
+**`AlgebraicGeometry.geometricallyNormalAt_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L133).
 
 > Geometric normality at a point is equivalent both to normality at every point above it after
 > every finite purely inseparable field extension and to geometric normality of its local ring over
@@ -65,7 +65,7 @@ lemma geometricallyNormalAt_tfae
 
 [Tag 038O](https://stacks.math.columbia.edu/tag/038O) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyNormal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalTFAE.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalTFAE.lean#L211).
+**`AlgebraicGeometry.geometricallyNormal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalTFAE.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalTFAE.lean#L211).
 
 > **Stacks Project, Tag 038O.** The six standard characterizations of geometric normality for
 > a scheme over a field are equivalent.
@@ -95,7 +95,7 @@ public theorem geometricallyNormal_tfae
 
 [Tag 038P](https://stacks.math.columbia.edu/tag/038P) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeometricallyNormal_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NormalMorphism/BaseFieldExtension.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NormalMorphism/BaseFieldExtension.lean#L93). The attribute's comment: “global equivalence”. References: EGA IV (6.7.8), “(vi) global”.
+**`AlgebraicGeometry.isGeometricallyNormal_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NormalMorphism/BaseFieldExtension.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NormalMorphism/BaseFieldExtension.lean#L93). The attribute's comment: “global equivalence”. References: EGA IV (6.7.8), “(vi) global”.
 
 > **Stacks Project, Tag 038P.** Geometric normality of a scheme over a field is invariant
 > under extension of the ground field.
@@ -107,7 +107,7 @@ public theorem isGeometricallyNormal_iff_baseChange (k K : Type u) [Field k] [Fi
       IsGeometricallyNormal (pullback.snd f (Spec.map (ofHom (algebraMap k K))))
 ```
 
-**`AlgebraicGeometry.isGeometricallyNormalAt_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L292). The attribute's comment: “pointwise equivalence”. References: EGA IV (6.7.8), “(vi)”.
+**`AlgebraicGeometry.isGeometricallyNormalAt_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L292). The attribute's comment: “pointwise equivalence”. References: EGA IV (6.7.8), “(vi)”.
 
 > Geometric normality at a point is invariant under extension of the base field.
 
@@ -122,7 +122,7 @@ theorem isGeometricallyNormalAt_iff_baseChange
         (pullback.snd f (Spec.map (ofHom (algebraMap k K)))) x'
 ```
 
-**`AlgebraicGeometry.isGeometricallyNormal_iff_baseChange_of_isGeometricallyNormalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L323). The attribute's comment: “global equivalence”. References: EGA IV (6.7.8), “(vi) global”; EGA IV (7.3.8), “partial”.
+**`AlgebraicGeometry.isGeometricallyNormal_iff_baseChange_of_isGeometricallyNormalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/Normal.lean#L323). The attribute's comment: “global equivalence”. References: EGA IV (6.7.8), “(vi) global”; EGA IV (7.3.8), “partial”.
 
 > A scheme is geometrically normal exactly when any base field extension is.
 
@@ -139,7 +139,7 @@ theorem isGeometricallyNormal_iff_baseChange_of_isGeometricallyNormalAt
 
 [Tag 06DG](https://stacks.math.columbia.edu/tag/06DG) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_pullback_of_isGeometricallyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentProperties/PullbackNormal.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentProperties/PullbackNormal.lean#L177). References: EGA IV (6.14.1), “base = Spec of a field”; EGA IV (21.14.4), “more general”; EGA IV (7.3.9), “more general”.
+**`AlgebraicGeometry.isNormal_pullback_of_isGeometricallyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentProperties/PullbackNormal.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentProperties/PullbackNormal.lean#L177). References: EGA IV (6.14.1), “base = Spec of a field”; EGA IV (21.14.4), “more general”; EGA IV (7.3.9), “more general”.
 
 > **Stacks Project, Tag 06DG.** The fibre product over a field of a geometrically normal
 > scheme and a normal scheme is normal.
@@ -155,7 +155,7 @@ public theorem isNormal_pullback_of_isGeometricallyNormal {k : Type u} [Field k]
 
 [Tag 0C3M](https://stacks.math.columbia.edu/tag/0C3M) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_pullback_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Normal.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Normal.lean#L399). References: EGA IV (6.14.2); EGA IV (6.14.3), “Y = Spec K”; EGA IV (4.6.4), “Case where X is normal”; EGA IV (6.7.4), “c), special case”.
+**`AlgebraicGeometry.isNormal_pullback_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Normal.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Normal.lean#L399). References: EGA IV (6.14.2); EGA IV (6.14.3), “Y = Spec K”; EGA IV (4.6.4), “Case where X is normal”; EGA IV (6.7.4), “c), special case”.
 
 > **Stacks Project, Tag 0C3M.** A normal scheme over a field stays normal after base change
 > along a separable extension of the ground field.
@@ -174,7 +174,7 @@ theorem isNormal_pullback_of_isSeparableExtension
 
 [Tag 0FD3](https://stacks.math.columbia.edu/tag/0FD3) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_globalSections_tfae_geometricallyConnected_irreducible_integral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ProperGlobalSections.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ProperGlobalSections.lean#L117).
+**`AlgebraicGeometry.isIso_globalSections_tfae_geometricallyConnected_irreducible_integral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ProperGlobalSections.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ProperGlobalSections.lean#L117).
 
 > For a proper geometrically normal scheme over a field, having only constant global
 > functions, geometric connectedness, geometric irreducibility, and geometric integrality are
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.10, Tag 038L](https://stacks.math.columbia.edu/tag/038L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

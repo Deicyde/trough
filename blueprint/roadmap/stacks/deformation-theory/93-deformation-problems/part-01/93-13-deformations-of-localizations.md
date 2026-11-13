@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.13 Deformations of localizations
 
-Section 93.13 of the Stacks Project, [Tag 0DZ6](https://stacks.math.columbia.edu/tag/0DZ6). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 93.13 of the Stacks Project, [Tag 0DZ6](https://stacks.math.columbia.edu/tag/0DZ6). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DZ7, a lemma
 
 [Tag 0DZ7](https://stacks.math.columbia.edu/tag/0DZ7) in the Stacks Project.
 
-**`Deformation.hasFlatAlgebraLift_iff_hasFlatAlgebraLift_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatAlgebraLiftLocalizationNilpotent.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FlatAlgebraLiftLocalizationNilpotent.lean#L335). The attribute's comment: “`S⁻¹B` is any `C` with `IsLocalization S C`. `Spec(B) → Spec(A)` being syntomic at the point `𝔮` is read affinely as `∃ g ∉ 𝔮, A → B_g` syntomic, the characterization of Stacks 00SY and 01UE; `S ∩ 𝔮 = ∅` is `∀ s ∈ S, s ∉ 𝔮`. The published proof rests on Stacks 0DZ2, which is false; the proof here approximates a flat lift over the localized presentation by relation solutions over the polynomial presentation and corrects them one power of the kernel at a time (Artin-Rees plus Stacks 07M8 at every level). See the module docstring.”.
+**`Deformation.hasFlatAlgebraLift_iff_hasFlatAlgebraLift_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatAlgebraLiftLocalizationNilpotent.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FlatAlgebraLiftLocalizationNilpotent.lean#L335). The attribute's comment: “`S⁻¹B` is any `C` with `IsLocalization S C`. `Spec(B) → Spec(A)` being syntomic at the point `𝔮` is read affinely as `∃ g ∉ 𝔮, A → B_g` syntomic, the characterization of Stacks 00SY and 01UE; `S ∩ 𝔮 = ∅` is `∀ s ∈ S, s ∉ 𝔮`. The published proof rests on Stacks 0DZ2, which is false; the proof here approximates a flat lift over the localized presentation by relation solutions over the polynomial presentation and corrects them one power of the kernel at a time (Artin-Rees plus Stacks 07M8 at every level). See the module docstring.”.
 
 > **Stacks 0DZ7.** Let `A' → A` be a surjective map of Noetherian rings with nilpotent kernel,
 > let `A → B` be a finite type flat ring map and let `S ⊆ B` be a multiplicative subset such that if
@@ -43,7 +43,7 @@ public theorem hasFlatAlgebraLift_iff_hasFlatAlgebraLift_localization
 
 [Tag 0DZ8](https://stacks.math.columbia.edu/tag/0DZ8) in the Stacks Project.
 
-**`Deformation.Examples.squareZeroAlgebraExtensionClassesLocalizationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean#L546). The attribute's comment: “localization equivalence”.
+**`Deformation.Examples.squareZeroAlgebraExtensionClassesLocalizationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean#L545). The attribute's comment: “localization equivalence”.
 
 > **Stacks 0DZ8.** If a multiplicative subset `S` of a finite type algebra `B` over a field
 > `k` is disjoint from every prime in the non-smooth locus of `B`, then localization at `S` is a
@@ -69,7 +69,7 @@ noncomputable def squareZeroAlgebraExtensionClassesLocalizationEquiv
         (algebraExtensionProblem k (Localization S) (LocalizedModule S N))
 ```
 
-**`Deformation.Examples.squareZeroAlgebraExtensionClassesLocalizationEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean#L589). The attribute's comment: “forward map is localization”.
+**`Deformation.Examples.squareZeroAlgebraExtensionClassesLocalizationEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/ClassesLocalizationEquiv.lean#L588). The attribute's comment: “forward map is localization”.
 
 > **Stacks 0DZ8.** The forward map of
 > `Deformation.Examples.squareZeroAlgebraExtensionClassesLocalizationEquiv` is localization of an
@@ -97,7 +97,7 @@ theorem squareZeroAlgebraExtensionClassesLocalizationEquiv_apply
       IsLocalizedExtension k B S N X Y
 ```
 
-**`Deformation.Examples.IsLocalizedExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/LocalizedExtension.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/LocalizedExtension.lean#L346). The attribute's comment: “the localization relation between two extensions”.
+**`Deformation.Examples.IsLocalizedExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/LocalizedExtension.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationFirstOrder/LocalizedExtension.lean#L346). The attribute's comment: “the localization relation between two extensions”.
 
 > **Stacks 0DZ8.** The extension `Y` of `S⁻¹B` is obtained from the extension `X` of `B` by
 > localizing its middle ring at the inverse image of `S`: there is a map of the two middle rings
@@ -117,7 +117,7 @@ def IsLocalizedExtension
 
 [Tag 0DZ9](https://stacks.math.columbia.edu/tag/0DZ9) in the Stacks Project.
 
-**`Deformation.Examples.isSmooth_localizationFunctorData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean#L268). The attribute's comment: “the first conclusion, smoothness: the functor of Stacks 0DYS is smooth. Under the tag's own hypotheses: (1) is `Algebra.FiniteType k P` and (2) is `hsm`, smoothness of `Spec(P) → Spec(k)` at every point of `V(g)` for every `g` of `S`. Stated for an arbitrary functor datum of Stacks 0DYS, with no extra hypothesis on the datum. The criterion of Stacks 0DYP reduces it to surjectivity of the differential, which is `Deformation.Examples.bijective_differential_localizationFunctorData`, and to the correspondence of liftability, which is proved here in `Deformation.Examples.lifts_localizationFunctorData`”.
+**`Deformation.Examples.isSmooth_localizationFunctorData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean#L268). The attribute's comment: “the first conclusion, smoothness: the functor of Stacks 0DYS is smooth. Under the tag's own hypotheses: (1) is `Algebra.FiniteType k P` and (2) is `hsm`, smoothness of `Spec(P) → Spec(k)` at every point of `V(g)` for every `g` of `S`. Stated for an arbitrary functor datum of Stacks 0DYS, with no extra hypothesis on the datum. The criterion of Stacks 0DYP reduces it to surjectivity of the differential, which is `Deformation.Examples.bijective_differential_localizationFunctorData`, and to the correspondence of liftability, which is proved here in `Deformation.Examples.lifts_localizationFunctorData`”.
 
 > **Stacks 0DZ9, the smoothness conclusion.** Let `k` be a field, `P` a finite type
 > `k`-algebra and `S ⊆ P` a multiplicative subset such that `Spec(P) → Spec(k)` is smooth at
@@ -131,7 +131,7 @@ theorem isSmooth_localizationFunctorData [Algebra.FiniteType k P]
     IsSmooth F.functor
 ```
 
-**`Deformation.Examples.isSmooth_localizationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean#L285). The attribute's comment: “the first conclusion, smoothness, at the canonical localization functor `Deformation.Examples.localizationFunctor` of Stacks 0DYS. Under the tag's own hypotheses”.
+**`Deformation.Examples.isSmooth_localizationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationSmooth.lean#L285). The attribute's comment: “the first conclusion, smoothness, at the canonical localization functor `Deformation.Examples.localizationFunctor` of Stacks 0DYS. Under the tag's own hypotheses”.
 
 > **Stacks 0DZ9, the smoothness conclusion, at the canonical localization functor.** This is
 > `Deformation.Examples.isSmooth_localizationFunctorData` specialized to
@@ -144,7 +144,7 @@ theorem isSmooth_localizationFunctor [Algebra.FiniteType k P]
     IsSmooth (localizationFunctor (Λ := Λ) (k := k) S).functor
 ```
 
-**`Deformation.Examples.bijective_differential_localizationFunctorData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean#L273). The attribute's comment: “the tangent-space assertion: the functor of Stacks 0DYS induces an isomorphism on tangent spaces. Under the tag's own hypotheses: (1) is `Algebra.FiniteType k P` and (2) is `hsm`, smoothness of `Spec(P) → Spec(k)` at every point of `V(g)` for every `g` of `S`. Stated for an arbitrary functor datum of Stacks 0DYS, with no extra hypothesis on the datum”.
+**`Deformation.Examples.bijective_differential_localizationFunctorData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean#L273). The attribute's comment: “the tangent-space assertion: the functor of Stacks 0DYS induces an isomorphism on tangent spaces. Under the tag's own hypotheses: (1) is `Algebra.FiniteType k P` and (2) is `hsm`, smoothness of `Spec(P) → Spec(k)` at every point of `V(g)` for every `g` of `S`. Stated for an arbitrary functor datum of Stacks 0DYS, with no extra hypothesis on the datum”.
 
 > Let `k` be a field, `P` a finite type `k`-algebra and `S ⊆ P` a multiplicative subset such
 > that `Spec(P) → Spec(k)` is smooth at every point of `V(g)` for every `g ∈ S`. Then the
@@ -172,7 +172,7 @@ public theorem bijective_differential_localizationFunctorData
       isCofiberedInGroupoids_ringDeformationProjection F.functor)
 ```
 
-**`Deformation.Examples.bijective_differential_localizationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean#L332). The attribute's comment: “the tangent-space assertion: the functor induces an isomorphism on tangent spaces, at the canonical localization functor `Deformation.Examples.localizationFunctor` of Stacks 0DYS. Under the tag's own hypotheses”.
+**`Deformation.Examples.bijective_differential_localizationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/LocalizationTangentSpace.lean#L332). The attribute's comment: “the tangent-space assertion: the functor induces an isomorphism on tangent spaces, at the canonical localization functor `Deformation.Examples.localizationFunctor` of Stacks 0DYS. Under the tag's own hypotheses”.
 
 > Under the hypotheses of `Deformation.Examples.bijective_differential_localizationFunctorData`,
 > the canonical localization functor `Deformation.Examples.localizationFunctor`, the functor datum
@@ -195,4 +195,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.13, Tag 0DZ6](https://stacks.math.columbia.edu/tag/0DZ6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

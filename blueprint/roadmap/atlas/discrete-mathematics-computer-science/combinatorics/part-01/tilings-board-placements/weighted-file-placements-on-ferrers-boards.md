@@ -7,7 +7,7 @@ statement: formalized
 
 # Weighted file placements on Ferrers boards
 
-24 results, 15 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html).
+24 results, 15 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html).
 
 ## Cells of a Ferrers board
 
@@ -20,7 +20,7 @@ $b_{i+1}$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 2.1 (definition of the Ferrers board `B = (b_1, …, b_n)`).
 
-Formalized by `MetaMathlibExt.ferrersBoardCells`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#ferrers-board-cells).
+Formalized by `MetaMathlibExt.ferrersBoardCells`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#ferrers-board-cells).
 
 ## The board $(1, 1, 2, 4)$ has eight cells
 
@@ -31,7 +31,7 @@ $(1, 1, 2, 4)$, the board $B_1$ of Figure 2, has exactly $8$ cells.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Figure 2.
 
-Formalized by `MetaMathlibExt.ferrersBoardCells_card_1124`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#ferrers-board-cells-card-1124).
+Formalized by `MetaMathlibExt.ferrersBoardCells_card_1124`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#ferrers-board-cells-card-1124).
 
 ## File placements
 
@@ -42,7 +42,7 @@ cells of the board no two of which lie in the same column.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 3.1 (definition of a file placement).
 
-Formalized by `MetaMathlibExt.filePlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placements).
+Formalized by `MetaMathlibExt.filePlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placements).
 
 ## Level rook placements
 
@@ -56,7 +56,7 @@ same level.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 2.2 (definition of `m`-level rook placements, after Briggs and Remmel).
 
-Formalized by `MetaMathlibExt.levelRookPlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-placements).
+Formalized by `MetaMathlibExt.levelRookPlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-placements).
 
 ## Level rook number
 
@@ -70,7 +70,7 @@ sets of $k$ cells of $B$ with no two in the same column and no two in the same l
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 2.2.
 
-Formalized by `MetaMathlibExt.levelRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number).
+Formalized by `MetaMathlibExt.levelRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number).
 
 ## The $m$-falling factorial
 
@@ -82,7 +82,7 @@ $x\downarrow_{k,m} = \prod_{i=0}^{k-1} (x - mi) = x(x-m)\cdots(x-(k-1)m)$, which
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 2.2 (definition of the `m`-falling factorial).
 
-Formalized by `MetaMathlibExt.mFallingFactorial`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#m-falling-factorial).
+Formalized by `MetaMathlibExt.mFallingFactorial`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#m-falling-factorial).
 
 ## The value $1\downarrow_{3,2} = 3$
 
@@ -93,7 +93,7 @@ $1\downarrow_{3,2} = 1 \cdot (1 - 2) \cdot (1 - 4) = 3$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 4 (value `1↓_{3,2} = 3` after Lemma 8).
 
-Formalized by `MetaMathlibExt.mFallingFactorial_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#m-falling-factorial-one-three-two).
+Formalized by `MetaMathlibExt.mFallingFactorial_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#m-falling-factorial-one-three-two).
 
 ## The $m$-weight of a file placement
 
@@ -107,7 +107,7 @@ factorial.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 3.1 (definition of `wt_m`).
 
-Formalized by `MetaMathlibExt.filePlacementWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-weight).
+Formalized by `MetaMathlibExt.filePlacementWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-weight).
 
 ## The $3$-weight of the placement of Figure 4
 
@@ -120,7 +120,7 @@ $\mathrm{wt}_3(F) = -20$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Figure 4 and the computation of `wt_3(F)`.
 
-Formalized by `MetaMathlibExt.filePlacementWeight_figure_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-weight-figure-four).
+Formalized by `MetaMathlibExt.filePlacementWeight_figure_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-weight-figure-four).
 
 ## Weighted file placement numbers
 
@@ -133,7 +133,7 @@ $k$ cells and $\mathrm{wt}_m(F)$ is the $m$-weight of $F$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 3.1.
 
-Formalized by `MetaMathlibExt.weightedFileNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number).
+Formalized by `MetaMathlibExt.weightedFileNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number).
 
 ## Two rooks on the $2 \times 2$ board with $m = 2$
 
@@ -148,7 +148,7 @@ The four file placements of two rooks have $2$-weights $1, 1, -1, -1$, which can
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 3.2 (cancellation of the weights of non-rook file placements).
 
-Formalized by `MetaMathlibExt.levelRookNumber_weightedFileNumber_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-weighted-file-number-t).
+Formalized by `MetaMathlibExt.levelRookNumber_weightedFileNumber_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-weighted-file-number-t).
 
 ## Singleton boards
 
@@ -162,7 +162,7 @@ $\lfloor b_i \rfloor_m < \lfloor b_{i+1} \rfloor_m$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 2.2 (definition of singleton boards).
 
-Formalized by `MetaMathlibExt.IsSingletonBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-singleton-board).
+Formalized by `MetaMathlibExt.IsSingletonBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-singleton-board).
 
 ## A singleton board for $2$ but not for $3$
 
@@ -173,7 +173,7 @@ $(1, 2, 2, 3)$ is a singleton board for $m = 2$ and is not a singleton board for
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Figure 3 and the discussion after it.
 
-Formalized by `MetaMathlibExt.isSingletonBoard_1223`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-singleton-board-1223).
+Formalized by `MetaMathlibExt.isSingletonBoard_1223`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-singleton-board-1223).
 
 ## Goldman–Joichi–White factorization theorem
 
@@ -192,7 +192,7 @@ for $m = 1$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 1 (Goldman, Joichi and White).
 
-Stated but not proved: `MetaMathlibExt.rookNumber_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#rook-number-factorization).
+Stated but not proved: `MetaMathlibExt.rookNumber_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#rook-number-factorization).
 
 ## Briggs–Remmel factorization on singleton boards
 
@@ -210,7 +210,7 @@ $x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 2 (Briggs and Remmel).
 
-Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_of_singleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-of-singl).
+Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_of_singleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-of-singl).
 
 ## Zone factorization of the $m$-level rook polynomial
 
@@ -236,7 +236,7 @@ $x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 3 (Barrese, Loehr, Remmel and Sagan).
 
-Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_zones` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-zones).
+Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_zones` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-zones).
 
 ## Level-number factorization of the $m$-level rook polynomial
 
@@ -260,7 +260,7 @@ formula fails ($m = 1$, $B = (2)$).
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 4 (Barrese, Loehr, Remmel and Sagan).
 
-Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_levels` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-levels).
+Stated but not proved: `MetaMathlibExt.levelRookNumber_factorization_levels` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#level-rook-number-factorization-levels).
 
 ## Factorization theorem for weighted file placements
 
@@ -277,7 +277,7 @@ $x\downarrow_{j,m} = \prod_{i\lt j} (x - mi)$ is the $m$-falling factorial.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 5 (Barrese, Loehr, Remmel and Sagan).
 
-Stated but not proved: `MetaMathlibExt.weightedFileNumber_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number-factorization).
+Stated but not proved: `MetaMathlibExt.weightedFileNumber_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number-factorization).
 
 ## Weighted file numbers equal level rook numbers on singleton boards
 
@@ -295,7 +295,7 @@ paper derives it from this cancellation for each $k$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Corollary 6 and the sentence before it.
 
-Stated but not proved: `MetaMathlibExt.weightedFileNumber_eq_levelRookNumber_of_singleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number-eq-level-rook-numbe).
+Stated but not proved: `MetaMathlibExt.weightedFileNumber_eq_levelRookNumber_of_singleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#weighted-file-number-eq-level-rook-numbe).
 
 ## The chosen level and its leftmost cell
 
@@ -311,7 +311,7 @@ cell of $F_0$ in level $l$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 4 (choice of the level `l` and its leftmost rook).
 
-Formalized by `MetaMathlibExt.IsChosenLevelAndLeftmost`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-chosen-level-and-leftmost).
+Formalized by `MetaMathlibExt.IsChosenLevelAndLeftmost`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#is-chosen-level-and-leftmost).
 
 ## The block $P(F_0)$
 
@@ -328,7 +328,7 @@ In Section 4, $l$ is the chosen level of $F_0$ and $c_0$ is the leftmost cell of
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Section 4 (definition of `P(F₀)`).
 
-Formalized by `MetaMathlibExt.filePlacementBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-block).
+Formalized by `MetaMathlibExt.filePlacementBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-block).
 
 ## Size of the block $P(F_0)$
 
@@ -342,7 +342,7 @@ determined by $l$ and $c_0$ has exactly $m^{n-1}$ members.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.filePlacementBlock_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-block-card).
+Stated but not proved: `MetaMathlibExt.filePlacementBlock_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#file-placement-block-card).
 
 ## Weights cancel on a block with two rooks in the chosen level
 
@@ -359,7 +359,7 @@ level $l$, use the same columns as $F_0$ inside level $l$, and contain $c_0$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.sum_filePlacementWeight_block_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#sum-file-placement-weight-block-of-two).
+Stated but not proved: `MetaMathlibExt.sum_filePlacementWeight_block_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#sum-file-placement-weight-block-of-two).
 
 ## Cancellation of the weights over a block
 
@@ -374,7 +374,7 @@ by $l$ and $c_0$ sum to $0$: $\sum_{F \in P(F_0)} \mathrm{wt}_m(F) = 0$.
 
 - Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.sum_filePlacementWeight_block` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#sum-file-placement-weight-block).
+Stated but not proved: `MetaMathlibExt.sum_filePlacementWeight_block` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedFilePlacementsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html#sum-file-placement-weight-block).
 
 ## Depends on
 
@@ -383,4 +383,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted file placements on Ferrers boards](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/weighted-file-placements-on-ferrers-boards)

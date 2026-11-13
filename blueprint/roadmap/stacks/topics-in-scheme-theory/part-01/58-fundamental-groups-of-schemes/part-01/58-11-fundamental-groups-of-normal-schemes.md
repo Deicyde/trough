@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.11 Fundamental groups of normal schemes
 
-Section 58.11 of the Stacks Project, [Tag 0BQJ](https://stacks.math.columbia.edu/tag/0BQJ). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.11 of the Stacks Project, [Tag 0BQJ](https://stacks.math.columbia.edu/tag/0BQJ). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BQK, a lemma
 
 [Tag 0BQK](https://stacks.math.columbia.edu/tag/0BQK) in the Stacks Project.
 
-**`AlgebraicGeometry.unramified_normalization_iff_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean#L58). The attribute's comment: “unramified iff étale”. References: SGA 1 I (9.11), “special case”.
+**`AlgebraicGeometry.unramified_normalization_iff_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean#L58). The attribute's comment: “unramified iff étale”. References: SGA 1 I (9.11), “special case”.
 
 > The morphism from the relative normalization of a normal integral scheme in a dominant
 > morphism of integral schemes is unramified exactly when it is étale: the normalization is
@@ -27,7 +27,7 @@ theorem unramified_normalization_iff_etale
     Unramified f.fromNormalization ↔ Etale f.fromNormalization
 ```
 
-**`AlgebraicGeometry.etale_normalization_iff_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean#L81). The attribute's comment: “étale iff finite étale”.
+**`AlgebraicGeometry.etale_normalization_iff_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleNormalization.lean#L81). The attribute's comment: “étale iff finite étale”.
 
 > The morphism from a relative normalization is étale exactly when it is finite étale: it is
 > always integral, and an étale morphism is locally of finite type.
@@ -42,7 +42,7 @@ theorem etale_normalization_iff_finite_etale
 
 [Tag 0BQL](https://stacks.math.columbia.edu/tag/0BQL) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Normal.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Normal.lean#L187). The attribute's comment: “normality”.
+**`AlgebraicGeometry.isNormal_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Normal.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Normal.lean#L187). The attribute's comment: “normality”.
 
 > The source of an étale morphism with normal target is normal, an étale morphism being
 > smooth.
@@ -52,7 +52,7 @@ theorem isNormal_of_etale {X Y : Scheme.{u}} (f : X ⟶ Y) [Etale f] [IsNormal Y
     IsNormal X
 ```
 
-**`AlgebraicGeometry.isIntegral_of_finite_etale_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean#L116). The attribute's comment: “integrality”. References: SGA 1 I (10.1), “integrality, finite case”.
+**`AlgebraicGeometry.isIntegral_of_finite_etale_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean#L116). The attribute's comment: “integrality”. References: SGA 1 I (10.1), “integrality, finite case”.
 
 > A connected finite étale cover of a normal integral scheme is integral.
 
@@ -62,7 +62,7 @@ theorem isIntegral_of_finite_etale_connected {X Y : Scheme.{u}} (f : Y ⟶ X)
     [ConnectedSpace Y] : IsIntegral Y
 ```
 
-**`AlgebraicGeometry.normalizationDesc_isIso_of_finite_etale_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean#L254). The attribute's comment: “normalization in the function field”. References: SGA 1 I (10.1), “finite étale case”; SGA 1 I (10.2), “finite => normalization”.
+**`AlgebraicGeometry.normalizationDesc_isIso_of_finite_etale_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FiniteEtaleCover.lean#L254). The attribute's comment: “normalization in the function field”. References: SGA 1 I (10.1), “finite étale case”; SGA 1 I (10.2), “finite => normalization”.
 
 > A connected finite étale cover of a normal integral scheme is canonically the
 > normalization of the base in the function field of the cover.
@@ -81,7 +81,7 @@ theorem normalizationDesc_isIso_of_finite_etale_connected
 
 [Tag 0BQM](https://stacks.math.columbia.edu/tag/0BQM) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuotientMap_absoluteGaloisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalFunctionField/QuotientMap.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalFunctionField/QuotientMap.lean#L294). The attribute's comment: “π₁(X, η̄) = Gal(M/K), with the canonical generic-point homomorphism identified with the quotient map onto Gal(M/K)”. References: SGA 1 V (8.2), “special case”; SGA 7 XIX (1.4), “π1(ℓ−S”.
+**`AlgebraicGeometry.isQuotientMap_absoluteGaloisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalFunctionField/QuotientMap.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalFunctionField/QuotientMap.lean#L295). The attribute's comment: “π₁(X, η̄) = Gal(M/K), with the canonical generic-point homomorphism identified with the quotient map onto Gal(M/K)”. References: SGA 1 V (8.2), “special case”; SGA 7 XIX (1.4), “π1(ℓ−S”.
 
 > **Stacks Project, Tag 0BQM.** Let `X` be a normal integral scheme with function field
 > `K = κ(η)` and let `η̄` be an algebraic geometric point over the generic point, with
@@ -95,7 +95,9 @@ theorem normalizationDesc_isIso_of_finite_etale_connected
 > to `M`.
 >
 > No Noetherian hypothesis is needed; this is the difference between the present tag and Stacks
-> Tag 03VG, which the library proves in the same generality above.
+> Tag 03VG, which the library also proves without the Noetherian hypothesis, for an algebraic
+> geometric point over the generic point as that tag requires
+> (`AlgebraicGeometry.fundamentalGroupIsoGalMaximalEtaleExtension`).
 
 ```lean
 public theorem isQuotientMap_absoluteGaloisToFundamentalGroup
@@ -103,7 +105,7 @@ public theorem isQuotientMap_absoluteGaloisToFundamentalGroup
     (hs : GeometricPoint.IsAlgebraic sbar)
     (hgeneric : sbar.hom default = genericPoint X) :
     letI : Normal (X.residueField (sbar.hom default)) (maximalEtaleExtension X sbar) :=
-      normal_maximalEtaleExtension X sbar hs hgeneric
+      normal_maximalEtaleExtension X sbar hs
     (∀ L : IntermediateField (X.residueField (sbar.hom default)) sbar.residueField,
         FiniteDimensional (X.residueField (sbar.hom default)) L →
           L ≤ maximalEtaleExtension X sbar → FiniteEtaleNormalization X sbar L) ∧
@@ -121,7 +123,7 @@ public theorem isQuotientMap_absoluteGaloisToFundamentalGroup
             AlgEquiv.restrictNormalHom (maximalEtaleExtension X sbar) σ
 ```
 
-**`AlgebraicGeometry.surjective_galoisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalGenericPointSurjective.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalGenericPointSurjective.lean#L209). The attribute's comment: “surjectivity of the generic-point map”. References: SGA 1 V (8.2), “surjectivity”.
+**`AlgebraicGeometry.surjective_galoisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalGenericPointSurjective.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalGenericPointSurjective.lean#L209). The attribute's comment: “surjectivity of the generic-point map”. References: SGA 1 V (8.2), “surjectivity”.
 
 > **Stacks 0BQM, surjectivity.** For a normal integral scheme `X` with function field
 > `K = κ(η)` at its generic point `η`, a separable closure `L` of `K` and an algebraically closed
@@ -150,7 +152,7 @@ theorem surjective_galoisToFundamentalGroup
 
 [Tag 0BSM](https://stacks.math.columbia.edu/tag/0BSM) in the Stacks Project.
 
-**`AlgebraicGeometry.isExactSequence_etaleFundamentalGroupMap_fractionField_of_isHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalLocalExactSequence.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalLocalExactSequence.lean#L730).
+**`AlgebraicGeometry.isExactSequence_etaleFundamentalGroupMap_fractionField_of_isHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalLocalExactSequence.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalLocalExactSequence.lean#L730).
 
 > **The local exact sequence for a normal local ring.** Let
 > `A` be a normal local domain with fraction field `K`, let `A^sh` be a strict henselization of `A`
@@ -190,4 +192,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.11, Tag 0BQJ](https://stacks.math.columbia.edu/tag/0BQJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

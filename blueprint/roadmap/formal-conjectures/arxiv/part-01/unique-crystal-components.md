@@ -11,7 +11,7 @@ statement: formalized
 > **The Biharmonic mean**
 > by *Marco Abrate, Stefano Barbero, Umberto Cerruti, Nadir Murru*
 
-*Quoted from [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open. It also has 1 test statement and 6 API statements, counted here but not shown.
 
@@ -29,7 +29,7 @@ theorem crystals_components_unique (n a b c d : ℕ)
     ({a, b} : Finset ℕ) = {c, d}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean#L122).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean#L122).
 
 ## Depends on
 
@@ -37,5 +37,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean)
+- [FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1601.03081/UniqueCrystalComponents.lean)
 - [arxiv/1601.03081](https://arxiv.org/abs/1601.03081)

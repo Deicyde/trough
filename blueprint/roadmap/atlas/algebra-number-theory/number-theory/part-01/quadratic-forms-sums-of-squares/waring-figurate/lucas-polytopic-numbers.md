@@ -7,7 +7,7 @@ statement: formalized
 
 # Lucas-polytopic numbers
 
-25 results, 14 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html).
+25 results, 14 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html).
 
 ## Lucas brackets for arbitrary real parameters
 
@@ -17,7 +17,7 @@ $a_{n+2} = s a_{n+1} + t a_n$ for every natural number $n$.
 
 No condition is imposed on $s$ and $t$.
 
-Formalized by `MetaMathlibExt.lucasBracketAux`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-bracket-aux).
+Formalized by `MetaMathlibExt.lucasBracketAux`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-bracket-aux).
 
 ## Nondegenerate Lucas parameters
 
@@ -30,7 +30,7 @@ $\{n\}_{s,t} \ne 0$ for every natural number $n \ne 0$.
 The last condition ensures that the $s,t$-factorials are nonzero, so quotients of them never
 divide by zero.
 
-Formalized by `MetaMathlibExt.LucasParameters`, a structure declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-parameters).
+Formalized by `MetaMathlibExt.LucasParameters`, a structure declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-parameters).
 
 ## Lucas brackets
 
@@ -39,7 +39,7 @@ real numbers $\{n\}_{s,t}$, for natural numbers $n$, defined by $\{0\}_{s,t} = 0
 $\{1\}_{s,t} = 1$ and $\{n+2\}_{s,t} = s\{n+1\}_{s,t} + t\{n\}_{s,t}$ for every natural
 number $n$.
 
-Formalized by `MetaMathlibExt.lucasBracket`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-bracket).
+Formalized by `MetaMathlibExt.lucasBracket`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-bracket).
 
 ## Factorial of Lucas brackets
 
@@ -48,7 +48,7 @@ $\{k\}_{s,t}$ for the $k$-th Lucas bracket. For a natural number $n$, the $s,t$-
 real number $\{n\}_{s,t}! = \prod_{k=1}^{n} \{k\}_{s,t}$, the product of
 $\{1\}_{s,t}, \dots, \{n\}_{s,t}$; for $n = 0$ it is the empty product $1$.
 
-Formalized by `MetaMathlibExt.lucasFactorial`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-factorial).
+Formalized by `MetaMathlibExt.lucasFactorial`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-factorial).
 
 ## Lucasnomial coefficients
 
@@ -60,7 +60,7 @@ $$\binom{n}{k}_{s,t} = \frac{\{n\}_{s,t}!}{\{k\}_{s,t}! \{n-k\}_{s,t}!}$$
 
 when $k \le n$, and $\binom{n}{k}_{s,t} = 0$ when $k > n$.
 
-Formalized by `MetaMathlibExt.lucasnomial`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucasnomial).
+Formalized by `MetaMathlibExt.lucasnomial`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucasnomial).
 
 ## Simplicial Lucas-polytopic numbers
 
@@ -69,7 +69,7 @@ natural numbers $n$ and $d$, the $n$-th simplicial $d$-Lucas-polytopic number is
 Lucasnomial coefficient $\binom{n+d-1}{d}_{s,t}$, where $n + d - 1$ is read as $0$ when
 $n = d = 0$.
 
-Formalized by `MetaMathlibExt.lucasPolytopicNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-polytopic-number).
+Formalized by `MetaMathlibExt.lucasPolytopicNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-polytopic-number).
 
 ## Lucas triangular numbers
 
@@ -77,7 +77,7 @@ For nondegenerate Lucas parameters $(s, t)$ and a natural
 number $n$, the $n$-th Lucas triangular number is the Lucasnomial coefficient
 $\binom{n+1}{2}_{s,t}$.
 
-Formalized by `MetaMathlibExt.lucasTriangularNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-number).
+Formalized by `MetaMathlibExt.lucasTriangularNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-number).
 
 ## Lucas tetrahedral numbers
 
@@ -85,7 +85,7 @@ For nondegenerate Lucas parameters $(s, t)$ and a natural
 number $n$, the $n$-th Lucas tetrahedral number is the Lucasnomial coefficient
 $\binom{n+2}{3}_{s,t}$.
 
-Formalized by `MetaMathlibExt.lucasTetrahedralNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-tetrahedral-number).
+Formalized by `MetaMathlibExt.lucasTetrahedralNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-tetrahedral-number).
 
 ## Lucas pentachoron numbers
 
@@ -93,7 +93,7 @@ For nondegenerate Lucas parameters $(s, t)$ and a natural
 number $n$, the $n$-th Lucas pentachoron number is the Lucasnomial coefficient
 $\binom{n+3}{4}_{s,t}$.
 
-Formalized by `MetaMathlibExt.lucasPentachoronNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-pentachoron-number).
+Formalized by `MetaMathlibExt.lucasPentachoronNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-pentachoron-number).
 
 ## Lucas hexateron numbers
 
@@ -101,7 +101,7 @@ For nondegenerate Lucas parameters $(s, t)$ and a natural
 number $n$, the $n$-th Lucas hexateron number is the Lucasnomial coefficient
 $\binom{n+4}{5}_{s,t}$.
 
-Formalized by `MetaMathlibExt.lucasHexateronNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-hexateron-number).
+Formalized by `MetaMathlibExt.lucasHexateronNumber`, a definition declared in [MathlibExt/NumberTheory/LucasPolytopicNumber.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasPolytopicNumber.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-hexateron-number).
 
 ## Sum formula for Lucasnomial coefficients
 
@@ -119,7 +119,7 @@ and the same holds with $\varphi$ and $\varphi'$ exchanged.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 2 (`jis-2025-25.5.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.lucasnomial_succ_eq_sum_lucasPolytopic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucasnomial-succ-eq-sum-lucas-polytopic).
+Stated but not proved: `MetaMathlibExt.lucasnomial_succ_eq_sum_lucasPolytopic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucasnomial-succ-eq-sum-lucas-polytopic).
 
 ## Identities for the Lucas triangular numbers
 
@@ -136,7 +136,7 @@ $\varphi'^{n-1}\binom{n+1}{2}_{s,t} + \varphi^{n+1}\binom{n}{2}_{s,t} =
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 3 (`jis-2025-25.5.6-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.lucasTriangular_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-identities).
+Stated but not proved: `MetaMathlibExt.lucasTriangular_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-identities).
 
 ## Weighted difference of consecutive squared Lucas triangular numbers
 
@@ -151,7 +151,7 @@ $$\binom{n+2}{2}_{s,t}^{2} - t^2 \binom{n+1}{2}_{s,t}^{2} =
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 4 (`jis-2025-25.5.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.lucasTriangular_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-sq-sub-sq).
+Stated but not proved: `MetaMathlibExt.lucasTriangular_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-sq-sub-sq).
 
 ## Weighted sum of cubes of Lucas brackets
 
@@ -166,7 +166,7 @@ $$\sum_{k=1}^{n} t^{2(n-k)} \frac{\{k+1\}_{s,t} + t \{k-1\}_{s,t}}{s} \{k\}_{s,t
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 5 (`jis-2025-25.5.6-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.sum_cubes_eq_lucasTriangular_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#sum-cubes-eq-lucas-triangular-sq).
+Stated but not proved: `MetaMathlibExt.sum_cubes_eq_lucasTriangular_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#sum-cubes-eq-lucas-triangular-sq).
 
 ## Sum-of-cubes identities for Fibonacci, Pell, Jacobsthal and Mersenne numbers
 
@@ -201,7 +201,7 @@ square of the Gaussian binomial coefficient $\binom{n+1}{2}_q$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Corollary 6 (`jis-2025-25.5.6-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.sum_cubes_specializations` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#sum-cubes-specializations).
+Stated but not proved: `MetaMathlibExt.sum_cubes_specializations` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#sum-cubes-specializations).
 
 ## Recurrence for the Lucas tetrahedral numbers
 
@@ -215,7 +215,7 @@ $$\binom{n+3}{3}_{s,t} = st\binom{n+2}{3}_{s,t} + \{n+1\}_{s,t}\binom{n+2}{2}_{s
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 7 (`jis-2025-25.5.6-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.lucasTetrahedral_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-tetrahedral-recurrence).
+Stated but not proved: `MetaMathlibExt.lucasTetrahedral_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-tetrahedral-recurrence).
 
 ## Lucas derivative
 
@@ -232,7 +232,7 @@ $s^2 + 4t = 0$ is not covered.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Section 2 (definition of the Lucas-derivative).
 
-Formalized by `MetaMathlibExt.lucasDerivative`, a definition declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative).
+Formalized by `MetaMathlibExt.lucasDerivative`, a definition declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative).
 
 ## The Lucas derivative away from the origin
 
@@ -246,7 +246,7 @@ quotient is read as $0$ when $\varphi = \varphi'$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Section 2 (definition of the Lucas-derivative).
 
-Formalized by `MetaMathlibExt.lucasDerivative_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-of-ne-zero).
+Formalized by `MetaMathlibExt.lucasDerivative_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-of-ne-zero).
 
 ## The Lucas derivative at the origin
 
@@ -259,7 +259,7 @@ at $0$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Section 2 (definition of the Lucas-derivative).
 
-Formalized by `MetaMathlibExt.lucasDerivative_zero`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-zero).
+Formalized by `MetaMathlibExt.lucasDerivative_zero`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-zero).
 
 ## The Lucas derivative of the identity
 
@@ -271,7 +271,7 @@ every real number $x$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Section 2 (definition of the Lucas-derivative).
 
-Formalized by `MetaMathlibExt.lucasDerivative_id`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-id).
+Formalized by `MetaMathlibExt.lucasDerivative_id`, a theorem declared in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-derivative-id).
 
 ## Iterated Lucas derivatives of $1/(1 - x)$
 
@@ -292,7 +292,7 @@ $\varphi, \varphi'$ exist only when $s^2 + 4t > 0$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 8 (`jis-2025-25.5.6-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.iterate_lucasDerivative_inv_one_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#iterate-lucas-derivative-inv-one-sub).
+Stated but not proved: `MetaMathlibExt.iterate_lucasDerivative_inv_one_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#iterate-lucas-derivative-inv-one-sub).
 
 ## Generating function of the simplicial Lucas-polytopic numbers
 
@@ -312,7 +312,7 @@ with $q = \varphi'/\varphi$ and the denominator cleared.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 9 (`jis-2025-25.5.6-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.lucasPolytopic_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-polytopic-generating-function).
+Stated but not proved: `MetaMathlibExt.lucasPolytopic_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-polytopic-generating-function).
 
 ## Generating function of the squared Lucas triangular numbers
 
@@ -335,7 +335,7 @@ $q = \varphi' / \varphi$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 10 (`jis-2025-25.5.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.lucasTriangular_sq_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-sq-generating-function).
+Stated but not proved: `MetaMathlibExt.lucasTriangular_sq_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#lucas-triangular-sq-generating-function).
 
 ## Even-index Lucas-bracket series as Lambert series
 
@@ -352,7 +352,7 @@ arguments lie in $(-1, 1)$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 11 (`jis-2025-25.5.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.hasSum_pow_div_lucasBracket_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#has-sum-pow-div-lucas-bracket-two-mul).
+Stated but not proved: `MetaMathlibExt.hasSum_pow_div_lucasBracket_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#has-sum-pow-div-lucas-bracket-two-mul).
 
 ## Sum of reciprocals of products of consecutive Lucas brackets
 
@@ -373,7 +373,7 @@ the Fibonacci numbers, do not tend to $0$.
 
 - Ronald Orozco López, *Simplicial d-Polytopic Numbers Defined on Lucas Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.6, Theorem 13 (`jis-2025-25.5.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.hasSum_inv_lucasBracket_mul_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#has-sum-inv-lucas-bracket-mul-succ).
+Stated but not proved: `MetaMathlibExt.hasSum_inv_lucasBracket_mul_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasPolytopicNumberWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html#has-sum-inv-lucas-bracket-mul-succ).
 
 ## Depends on
 
@@ -382,4 +382,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lucas-polytopic numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/waring-figurate/lucas-polytopic-numbers)

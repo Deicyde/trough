@@ -1,6 +1,6 @@
 # 33 Varieties
 
-Chapter 33 of the Stacks Project, *Varieties*, [Tag 0209](https://stacks.math.columbia.edu/tag/0209): the 46 sections of its 48 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 286 tags are carried by 603 declarations of the repository (all in StacksFrontier) and 35 registered declarations.
+Chapter 33 of the Stacks Project, *Varieties*, [Tag 0209](https://stacks.math.columbia.edu/tag/0209): the 46 sections of its 48 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 286 tags are carried by 593 declarations of the repository (all in StacksFrontier) and 35 registered declarations.
 
 ## [33.3 Varieties to 33.22 Global generation](part-01/README.md)
 

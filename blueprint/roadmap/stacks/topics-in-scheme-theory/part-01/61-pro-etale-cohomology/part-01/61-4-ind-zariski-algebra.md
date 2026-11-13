@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.4 Ind-Zariski algebra
 
-Section 61.4 of the Stacks Project, [Tag 096M](https://stacks.math.columbia.edu/tag/096M). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.4 of the Stacks Project, [Tag 096M](https://stacks.math.columbia.edu/tag/096M). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 096N, a definition
 
 [Tag 096N](https://stacks.math.columbia.edu/tag/096N) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.IsIndZariski`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Basic.lean#L53).
+**`AlgebraicGeometry.ProEtale.IsIndZariski`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Basic.lean#L53).
 
 > A commutative `A`-algebra is ind-Zariski if it is a filtered colimit of
 > `A`-algebras whose structure maps are local isomorphisms. The stages and the lifted
@@ -28,7 +28,7 @@ abbrev IsIndZariski (A : Type u) (B : Type v) [CommRing A] [CommRing B] [Algebra
 
 [Tag 096P](https://stacks.math.columbia.edu/tag/096P) in the Stacks Project.
 
-**`Algebra.IsIndZariski.tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/BaseChange.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/BaseChange.lean#L72).
+**`Algebra.IsIndZariski.tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/BaseChange.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/BaseChange.lean#L72).
 
 > The base change of an ind-Zariski algebra map is ind-Zariski: if `B` is ind-Zariski over `A`
 > and `A'` is any `A`-algebra, then `B ⊗[A] A'` is ind-Zariski over `A'`.
@@ -43,7 +43,7 @@ theorem IsIndZariski.tensorProduct (A : Type u) (B : Type v) (A' : Type w) [Comm
 
 [Tag 096Q](https://stacks.math.columbia.edu/tag/096Q) in the Stacks Project.
 
-**`Algebra.IsIndZariski.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski.lean#L990).
+**`Algebra.IsIndZariski.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski.lean, line 987](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski.lean#L987).
 
 > **Stacks 096Q.** If `B` is ind-Zariski over `A` and `C` is ind-Zariski over `B`, then `C` is
 > ind-Zariski over `A`.
@@ -60,7 +60,7 @@ theorem Algebra.IsIndZariski.comp (A : Type u) (B : Type v) (C : Type w)
 
 [Tag 096R](https://stacks.math.columbia.edu/tag/096R) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isIndZariski_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Permanence.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Permanence.lean#L150).
+**`AlgebraicGeometry.ProEtale.isIndZariski_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Permanence.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/Permanence.lean#L150).
 
 > **Stacks 096R.** Ind-Zariski maps cancel on the left in an algebra tower: if `B` and `C` are
 > ind-Zariski over `A`, then `C` is ind-Zariski over `B`.
@@ -77,7 +77,7 @@ theorem isIndZariski_of_left_of_comp (A : Type u) (B : Type v) (C : Type w)
 
 [Tag 096S](https://stacks.math.columbia.edu/tag/096S) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isIndZariski_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FilteredColimit.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FilteredColimit.lean#L96).
+**`AlgebraicGeometry.ProEtale.isIndZariski_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FilteredColimit.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FilteredColimit.lean#L96).
 
 > **Stacks 096S.** A filtered colimit of ind-Zariski `A`-algebras is ind-Zariski over `A`: if
 > `B` is presented as the colimit of a filtered diagram of `A`-algebras each of which is ind-Zariski
@@ -95,7 +95,7 @@ theorem isIndZariski_of_colimitPresentation {A : Type u} {B : Type v} [CommRing 
 
 [Tag 096T](https://stacks.math.columbia.edu/tag/096T) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.identifiesLocalRings_of_isIndZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocalRings.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocalRings.lean#L329).
+**`AlgebraicGeometry.ProEtale.identifiesLocalRings_of_isIndZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocalRings.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocalRings.lean#L329).
 
 > An ind-Zariski map identifies the local rings at every prime of its target.
 
@@ -106,7 +106,7 @@ theorem identifiesLocalRings_of_isIndZariski
     Algebra.IdentifiesLocalRings A B
 ```
 
-**`Algebra.IdentifiesLocalRings.of_isIndZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IndZariski/IdentifiesLocalRings.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IndZariski/IdentifiesLocalRings.lean#L347).
+**`Algebra.IdentifiesLocalRings.of_isIndZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IndZariski/IdentifiesLocalRings.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IndZariski/IdentifiesLocalRings.lean#L347).
 
 > **Stacks 096T.** An ind-Zariski algebra identifies local rings: for every prime `q` of `B`
 > the canonical map from the localization of `A` at the preimage of `q` to the localization of
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.4, Tag 096M](https://stacks.math.columbia.edu/tag/096M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

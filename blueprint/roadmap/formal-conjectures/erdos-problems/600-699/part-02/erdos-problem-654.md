@@ -17,7 +17,7 @@ statement: formalized
 > - [Fe26] T. Feng et al, *Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the
 >   Erdős Problems*. arXiv:2601.22401 (2026).
 
-*Quoted from [FormalConjectures/ErdosProblems/654.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/654.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/654](https://www.erdosproblems.com/654).
 
@@ -25,7 +25,7 @@ The file states 7 research or textbook statements: 4 open, 2 solved and 1 textbo
 
 ## `Erdos654.erdos_654.parts.i`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006).
 
 > Let $f(n)$ be such that, given any $x_1,\ldots,x_n\in \mathbb{R}^2$ with no four points on a
 > circle, there exists some $x_i$ with at least $f(n)$ many distinct distances to the other $x_j$.
@@ -42,7 +42,7 @@ theorem erdos_654.parts.i :
       ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L51).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L52).
 
 ## `Erdos654.erdos_654.parts.ii`
 
@@ -57,7 +57,7 @@ theorem erdos_654.parts.ii :
       ∃ x ∈ A, (1 / 3 + c) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L61).
+Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L62).
 
 ## `Erdos654.erdos_654.variants.trivial_bound`
 
@@ -74,11 +74,11 @@ theorem erdos_654.variants.trivial_bound (A : Finset ℝ²) (hA : NoFourConcycli
     ∀ x ∈ A, ((#A : ℝ) - 1) / 3 ≤ (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `textbook`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L74).
+Category `textbook`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L75).
 
 ## `Erdos654.erdos_654.variants.feng`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006).
 
 > Aletheia [Fe26] showed that for every $m \geq 10$ there is a set of $n = 4m$ points in
 > $\mathbb{R}^2$, no four on a circle, such that every point has fewer than $\frac{3}{4}n = 3m$
@@ -93,7 +93,7 @@ theorem erdos_654.variants.feng (m : ℕ) (hm : 10 ≤ m) :
       ∀ x ∈ A, distinctDistancesFrom A x < 3 * m
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L107).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L109).
 
 ## `Erdos654.erdos_654.variants.general_position`
 
@@ -111,7 +111,7 @@ theorem erdos_654.variants.general_position :
       ∃ x ∈ A, (1 / 3 + c) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L120).
+Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L122).
 
 ## `Erdos654.erdos_654.variants.general_position_one_sub_eps`
 
@@ -130,7 +130,7 @@ theorem erdos_654.variants.general_position_one_sub_eps :
       ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L134).
+Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L136).
 
 ## `Erdos654.erdos_654.variants.erdos_pach`
 
@@ -148,7 +148,7 @@ theorem erdos_654.variants.erdos_pach :
       AtMostTwoPerCircle A → ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean#L152).
+Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/ErdosProblems/654.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean#L154).
 
 ## Depends on
 
@@ -156,5 +156,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/654.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/654.lean)
+- [FormalConjectures/ErdosProblems/654.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/654.lean)
 - [erdosproblems.com/654](https://www.erdosproblems.com/654)

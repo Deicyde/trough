@@ -8,13 +8,13 @@ proof: formalized
 
 # 102.3 Morphisms of finite presentation
 
-Section 102.3 of the Stacks Project, [Tag 0CMQ](https://stacks.math.columbia.edu/tag/0CMQ). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 102.3 of the Stacks Project, [Tag 0CMQ](https://stacks.math.columbia.edu/tag/0CMQ). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CMR, a definition
 
 [Tag 0CMR](https://stacks.math.columbia.edu/tag/0CMR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphism.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphism.lean#L138).
+**`AlgebraicGeometry.Stack.IsLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphism.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphism.lean#L138).
 
 > **Stacks 0CMR.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big
 > fppf category of `S` is *limit preserving* when, for every cofiltered inverse system of affine
@@ -37,7 +37,7 @@ abbrev IsLimitPreserving (f : 𝒳 ⟶ 𝒴) : Prop
 
 [Tag 0CMS](https://stacks.math.columbia.edu/tag/0CMS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean#L77).
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean#L77).
 
 > **Stacks 0CMS.** A limit preserving 1-morphism of categories fibred in groupoids over the big
 > fppf category of `S` is limit preserving on objects: every object over an affine inverse limit,
@@ -57,7 +57,7 @@ theorem isLimitPreservingOnObjects_of_isLimitPreserving
 
 [Tag 0CMT](https://stacks.math.columbia.edu/tag/0CMT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeCoherence.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeCoherence.lean#L646).
+**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeCoherence.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeCoherence.lean#L646).
 
 > **Stacks 0CMT.** The base change `p' : 𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of a limit preserving 1-morphism `p` of
 > categories fibred in groupoids over the big fppf category of a scheme `S` is limit preserving.
@@ -78,7 +78,7 @@ theorem isLimitPreserving_twoFibreProductSnd
       (BigFppfOver.twoFibreProductSnd.{u, v, w} B S hS 𝒳 𝒴 𝒵 p q)
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeObjects.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeObjects.lean#L52). The attribute's comment: “limit preservation on objects of the base change”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeObjects.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingBaseChangeObjects.lean#L52). The attribute's comment: “limit preservation on objects of the base change”.
 
 > The base change along `q` of a limit preserving 1-morphism `p` of categories fibred in
 > groupoids over the big fppf category of `S` is limit preserving on objects: every object of
@@ -101,7 +101,7 @@ theorem isLimitPreservingOnObjects_twoFibreProductSnd
 
 [Tag 0CMU](https://stacks.math.columbia.edu/tag/0CMU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismComposition.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismComposition.lean#L134).
+**`AlgebraicGeometry.Stack.isLimitPreserving_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismComposition.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismComposition.lean#L134).
 
 > **Stacks 0CMU.** The composite of two limit preserving 1-morphisms of categories fibred in
 > groupoids over the big fppf category of `S` is limit preserving: the square of Stacks 0CMR for
@@ -121,7 +121,7 @@ theorem isLimitPreserving_comp
 
 [Tag 0CMV](https://stacks.math.columbia.edu/tag/0CMV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean#L77). The attribute's comment: “the implication (1) ⇒ (2), which holds here without the representability hypothesis that Tag 0CMV carries, and for index categories in any universe. The whole three-part equivalence is `AlgebraicGeometry.Stack.isLimitPreserving_tfae`, for index categories in the universe of the schemes”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingMorphismObjects.lean#L77). The attribute's comment: “the implication (1) ⇒ (2), which holds here without the representability hypothesis that Tag 0CMV carries, and for index categories in any universe. The whole three-part equivalence is `AlgebraicGeometry.Stack.isLimitPreserving_tfae`, for index categories in the universe of the schemes”.
 
 > **Stacks 0CMS.** A limit preserving 1-morphism of categories fibred in groupoids over the big
 > fppf category of `S` is limit preserving on objects: every object over an affine inverse limit,
@@ -137,7 +137,7 @@ theorem isLimitPreservingOnObjects_of_isLimitPreserving
       B S hS 𝒳 𝒴 f
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean#L134). The attribute's comment: “index categories in the universe of the schemes”.
+**`AlgebraicGeometry.Stack.isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean#L134). The attribute's comment: “index categories in the universe of the schemes”.
 
 > **Stacks 0CMV.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big
 > fppf category of `S` which is representable by algebraic spaces the following are equivalent:
@@ -171,13 +171,13 @@ theorem isLimitPreserving_tfae (hp : IsRepresentableByAlgebraicSpaces B S hS f.h
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean#L883), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean#L90) (StacksFrontier): “the equivalence of (2) and (3), which is Stacks 06CX”.
+- [`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean#L883), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentableTFAE.lean#L90) (StacksFrontier): “the equivalence of (2) and (3), which is Stacks 06CX”.
 
 ## Tag 0CMW, a lemma
 
 [Tag 0CMW](https://stacks.math.columbia.edu/tag/0CMW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFullyFaithfulOnAffineLimits_iff_isEquivalence_squareDiagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingCanonicalDiagonal.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingCanonicalDiagonal.lean#L252). The attribute's comment: “condition (2) as the diagonal of the canonical 0CMR square being an equivalence”.
+**`AlgebraicGeometry.Stack.isFullyFaithfulOnAffineLimits_iff_isEquivalence_squareDiagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingCanonicalDiagonal.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingCanonicalDiagonal.lean#L252). The attribute's comment: “condition (2) as the diagonal of the canonical 0CMR square being an equivalence”.
 
 > **Condition (2) of Stacks 0CMW is the diagonal of the canonical square being an
 > equivalence.** The canonical functor `colim 𝒳_{Uᵢ} ⟶ 𝒳_U ×_{𝒴_U} colim 𝒴_{Uᵢ}` is fully faithful
@@ -200,7 +200,7 @@ theorem isFullyFaithfulOnAffineLimits_iff_isEquivalence_squareDiagonalComparison
             ((BigAffineFppf.inclusion B S hS).mapCone c))).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isFullyFaithfulOnAffineLimits_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonal.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonal.lean#L135). The attribute's comment: “condition (2) holds for a limit preserving 1-morphism”.
+**`AlgebraicGeometry.Stack.isFullyFaithfulOnAffineLimits_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonal.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonal.lean#L135). The attribute's comment: “condition (2) holds for a limit preserving 1-morphism”.
 
 > **Stacks 0CMW, condition (2) for a limit preserving 1-morphism.** If the square of
 > Stacks 0CMR is 2-cartesian then its comparison functor into the explicit 2-fibre product is an
@@ -213,7 +213,7 @@ theorem isFullyFaithfulOnAffineLimits_of_isLimitPreserving (f : 𝒳 ⟶ 𝒴)
     IsFullyFaithfulOnAffineLimits.{u, v, w, uX, vX} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductDiagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean#L293).
+**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductDiagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean#L293).
 
 > **Stacks 0CMW.** The relative diagonal `Δ : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` of a 1-morphism of
 > categories fibred in groupoids over the big fppf category of `S` is limit preserving if and only
@@ -232,7 +232,7 @@ theorem isLimitPreserving_twoFibreProductDiagonal_iff :
       IsFullyFaithfulOnAffineLimits.{u, v, w, max (u + 1) v w, max u v} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean#L317).
+**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProductDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingDiagonalCriterion.lean#L317).
 
 > **Stacks 0CMW, the "in particular" clause.** A limit preserving 1-morphism of categories
 > fibred in groupoids has a limit preserving relative diagonal: it satisfies the full faithfulness
@@ -247,7 +247,7 @@ theorem isLimitPreserving_twoFibreProductDiagonal
       (BigFppfOver.twoFibreProductDiagonal.{u, v, w} B S hS 𝒳 𝒴 f)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.fullyFaithful_squareComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/CategoricalPullbackSquareDiagonal.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/CategoricalPullbackSquareDiagonal.lean#L490). The attribute's comment: “the category-theoretic reduction of the equivalence (1) <=> (2)”.
+**`CategoryTheory.Limits.CategoricalPullback.fullyFaithful_squareComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/CategoricalPullbackSquareDiagonal.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/CategoricalPullbackSquareDiagonal.lean#L490). The attribute's comment: “the category-theoretic reduction of the equivalence (1) <=> (2)”.
 
 > **The category-theoretic core of Stacks 0CMW.** For a 2-commutative square of categories
 > whose corners `C` and `D'` are groupoids, the comparison functor `A : C' ⥤ C ×_D D'` is fully
@@ -264,7 +264,7 @@ theorem fullyFaithful_squareComparison_iff [IsGroupoid C] [IsGroupoid D'] :
 
 [Tag 0CMX](https://stacks.math.columbia.edu/tag/0CMX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingOfFinitePresentation.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingOfFinitePresentation.lean#L84). The attribute's comment: “an algebraic stack locally of finite presentation over S is limit preserving, and so is its structure morphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingOfFinitePresentation.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingOfFinitePresentation.lean#L84). The attribute's comment: “an algebraic stack locally of finite presentation over S is limit preserving, and so is its structure morphism”.
 
 > **Stacks 0CMX.** Let `𝒳` be an algebraic stack over `S` whose structure morphism `𝒳 → S` is
 > locally of finite presentation. Then `𝒳` is limit preserving in the sense of Artin's Axioms,
@@ -281,7 +281,7 @@ theorem isLimitPreserving_of_isLocallyOfFinitePresentation
       Stack.IsLimitPreserving.{u, u, u, u + 1, u} B S hS (structureMorphism B S hS 𝒳).hom
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_relativelyLimitPreserving_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSmoothDiagram.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSmoothDiagram.lean#L157). The attribute's comment: “only the smooth-diagram reduction; the conclusion is not 07XL”.
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_relativelyLimitPreserving_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSmoothDiagram.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSmoothDiagram.lean#L157). The attribute's comment: “only the smooth-diagram reduction; the conclusion is not 07XL”.
 
 > **An algebraic stack locally of finite presentation over its base has a relatively limit
 > preserving smooth presentation.** This is
@@ -313,7 +313,7 @@ theorem hasPropertyOnSomeSmoothDiagram_relativelyLimitPreserving_structure
 
 [Tag 0CMY](https://stacks.math.columbia.edu/tag/0CMY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingFinitePresentationEquivalence.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingFinitePresentationEquivalence.lean#L73). The attribute's comment: “limit preserving, limit preserving on objects and locally of finite presentation are equivalent for a 1-morphism of algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingFinitePresentationEquivalence.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingFinitePresentationEquivalence.lean#L73). The attribute's comment: “limit preserving, limit preserving on objects and locally of finite presentation are equivalent for a 1-morphism of algebraic stacks”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are equivalent:
 >
@@ -330,7 +330,7 @@ theorem isLimitPreserving_tfae {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS}
       IsLocallyOfFinitePresentation B S hS f]
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isLimitPreservingOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingObjectsFinitePresentation.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingObjectsFinitePresentation.lean#L299). The attribute's comment: “the implication (2) => (3) only”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isLimitPreservingOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingObjectsFinitePresentation.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingObjectsFinitePresentation.lean#L299). The attribute's comment: “the implication (2) => (3) only”.
 
 > A 1-morphism of algebraic stacks over `S` which is limit preserving on objects, at index
 > categories in the universe `u` of the schemes, is locally of finite presentation.
@@ -350,4 +350,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 102.3, Tag 0CMQ](https://stacks.math.columbia.edu/tag/0CMQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

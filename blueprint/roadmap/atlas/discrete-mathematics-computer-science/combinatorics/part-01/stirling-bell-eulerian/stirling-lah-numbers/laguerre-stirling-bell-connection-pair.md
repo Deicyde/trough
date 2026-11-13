@@ -8,7 +8,7 @@ proof: formalized
 
 # Laguerre–Stirling–Bell connection pair
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html).
 
 ## Laguerre–Stirling–Bell connection pair
 
@@ -35,7 +35,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} S(n,k)\, L_{k,r}(x) =
 
 - Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem, equations, lines 330–339, https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.tex
 
-Formalized by `MetaMathlibExt.stirling_bell_polynomial_connection_pair_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html#stirling-bell-polynomial-connection-pair).
+Formalized by `MetaMathlibExt.stirling_bell_polynomial_connection_pair_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html#stirling-bell-polynomial-connection-pair).
 
 ## Laguerre–Stirling–Bell connection pair, source form
 
@@ -64,7 +64,7 @@ The hypothesis $\beta \neq 0$ is not used: the same two identities hold for ever
 
 - Mark Shattuck, "Combinatorial Properties of a Generalized Class of Laguerre Polynomials," Journal of Integer Sequences 24 (2021), Article 21.2.1, Theorem, equations, lines 330–339, https://cs.uwaterloo.ca/journals/JIS/VOL24/Shattuck/shattuck24.tex
 
-Formalized by `MetaMathlibExt.stirling_bell_polynomial_connection_pair`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean, line 823](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean#L823). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html#stirling-bell-polynomial-connection-pair-2).
+Formalized by `MetaMathlibExt.stirling_bell_polynomial_connection_pair`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean, line 823](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingBellPolynomialConnection.lean#L823). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html#stirling-bell-polynomial-connection-pair-2).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Laguerre–Stirling–Bell connection pair](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/laguerre-stirling-bell-connection-pair)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Rod cutting
 
-35 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html).
+35 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html).
 
 ## Revenue of a rod composition
 
@@ -17,7 +17,7 @@ entries in an additive commutative monoid, where $p_{\ell - 1}$ is the price of 
 $\ell$. For $k \le n$ and a composition $(b_1, \dots, b_m)$ of $k$ into positive parts, its revenue
 is $p_{b_1 - 1} + \dots + p_{b_m - 1}$, the total price of its pieces.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue).
 
 ## The empty rod earns nothing
 
@@ -25,7 +25,7 @@ Let $p = (p_1, \dots, p_n)$ be prices in an additive
 commutative monoid. Every composition of $0$, namely the empty one, has revenue $0$ with respect
 to $p$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-zero).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-zero).
 
 ## Revenue of an uncut rod
 
@@ -33,7 +33,7 @@ Let $p = (p_1, \dots, p_n)$ be prices in an additive commutative
 monoid, $p_i$ being the price of a piece of length $i$. For $0 < k \le n$, the revenue of the
 one-part composition $(k)$ of $k$ is $p_k$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_single`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-single).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_single`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-single).
 
 ## Revenue is additive under concatenation
 
@@ -43,7 +43,7 @@ $k \le n$ to be $p_{b_1} + \dots + p_{b_m}$. If $c$ is a composition of $k$ and 
 composition of $l$ with $k + l \le n$, then the revenue of their concatenation, a composition of
 $k + l$, is the revenue of $c$ plus the revenue of $d$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_append`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-append).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.compositionRevenue_append`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#composition-revenue-append).
 
 ## Bottom-up rod cutting
 
@@ -53,7 +53,7 @@ cutting fills a table $r_0, \dots, r_n$ in increasing order by $r_0 = 0$ and
 $r_j = \max_{1 \le i \le j} (p_i + r_{j-i})$ for $1 \le j \le n$, and returns $r_n$. Its cost is
 the number of candidates $p_i + r_{j-i}$ it evaluates, one for each pair $1 \le i \le j \le n$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod).
 
 ## Correctness of bottom-up rod cutting
 
@@ -67,14 +67,14 @@ such composition.
 Prices may be negative; every piece of the rod must be sold, so there is no option to discard
 material.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-correct).
 
 ## Bottom-up rod cutting on the empty rod
 
 For the empty price vector ($n = 0$) over an
 additive commutative monoid with a linear order, bottom-up rod cutting returns $0$ at cost $0$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-zero).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-zero).
 
 ## Cost of bottom-up rod cutting as a sum over rows
 
@@ -84,7 +84,7 @@ number of first-piece candidates it evaluates) equals $\sum_{j=0}^{n} j$.
 
 Row $j$ of the table contributes the $j$ candidates of its scan.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_sum`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-sum).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_sum`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-sum).
 
 ## Twice the cost of bottom-up rod cutting
 
@@ -92,7 +92,7 @@ For prices $p = (p_1, \dots, p_n)$ in an additive
 commutative monoid with a linear order, the cost $T$ of bottom-up rod cutting on $p$ (the number of
 first-piece candidates it evaluates) satisfies $2T = n(n + 1)$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_twice`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-twice).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_twice`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-twice).
 
 ## Exact cost of bottom-up rod cutting
 
@@ -100,7 +100,7 @@ For prices $p = (p_1, \dots, p_n)$ in an additive
 commutative monoid with a linear order, the cost of bottom-up rod cutting on $p$ (the number of
 first-piece candidates it evaluates) is the triangular number $n(n + 1)/2$, whatever the prices.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time).
 
 ## Bottom-up rod cutting takes quadratic time
 
@@ -108,7 +108,7 @@ For prices $p = (p_1, \dots, p_n)$ in an
 additive commutative monoid with a linear order, the cost $T$ of bottom-up rod cutting on $p$, the
 number of first-piece candidates it evaluates, satisfies $n^2 \le 2T$ and $T \le n^2$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-bounds).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#bottom-up-cut-rod-time-bounds).
 
 ## Extended bottom-up rod cutting
 
@@ -123,7 +123,7 @@ largest candidate and $s_j$ is the least $i$ whose candidate equals $r_j$. The r
 of tables, where $r_j$ is the revenue vector's entry $j$ and $s_j$ is the cut vector's entry
 $j - 1$, and the cost is one tick per evaluated candidate, so $j$ ticks for length $j$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod).
 
 ## Saved revenues are optimal
 
@@ -133,7 +133,7 @@ $r = (r_0, \dots, r_n)$ be the revenue table computed by the extended bottom-up 
 algorithm. For every $j \le n$, $r_j$ is the greatest revenue of a composition of $j$: some
 composition of $j$ has revenue $r_j$, and every composition of $j$ has revenue at most $r_j$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-correct).
 
 ## The extended algorithm computes the same revenue
 
@@ -142,7 +142,7 @@ with entries in an additive commutative monoid carrying a linear order, the last
 the revenue table computed by the extended bottom-up rod-cutting algorithm equals the value
 returned by the bottom-up rod-cutting algorithm.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_revenue_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-revenue-eq).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_revenue_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-revenue-eq).
 
 ## Running time of extended bottom-up rod cutting
 
@@ -150,7 +150,7 @@ Let $\alpha$ be an additive commutative
 monoid with a linear order. For every vector of $n$ prices in $\alpha$, the extended bottom-up
 rod-cutting algorithm has cost exactly $n(n+1)/2$, whatever the prices are.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-time).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-time).
 
 ## Extended bottom-up rod cutting on the empty rod
 
@@ -159,7 +159,7 @@ monoid with a linear order. On the empty price vector (rod length $0$), the exte
 rod-cutting algorithm returns the revenue table whose single entry is $0$ together with the empty
 first-cut table, at cost $0$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-zero).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-zero).
 
 ## The saved first cut attains the saved revenue
 
@@ -172,7 +172,7 @@ $0 < j \le n$, the cut $\ell = s_j$ satisfies $1 \le \ell \le j$ and
 $p_{\ell - 1} + r_{j - \ell} = r_j$, and every $\ell'$ with $1 \le \ell' < \ell$ satisfies
 $p_{\ell' - 1} + r_{j - \ell'} < r_j$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_firstCut`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-first-cut).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_firstCut`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#extended-bottom-up-cut-rod-first-cut).
 
 ## Rod cutting with reconstruction
 
@@ -185,7 +185,7 @@ $L$ by $L - s_L$ until $L = 0$. The result is the composition of $n$ formed by t
 in order. Its cost is the cost of the extended algorithm plus one event per emitted piece;
 allocation and arithmetic are free.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution).
 
 ## Cost of rod-cutting reconstruction
 
@@ -194,7 +194,7 @@ in an additive commutative monoid carrying a linear order. The rod-cutting recon
 exactly $n(n+1)/2 + m$ events, where $m$ is the number of pieces of the composition of $n$ it
 returns: one event per evaluated first-cut candidate and one per emitted piece.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-time).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-time).
 
 ## Reconstructed pieces are the saved first cuts
 
@@ -206,7 +206,7 @@ of $n$ returned by the rod-cutting reconstruction. For every $i < m$, the index
 $n - (b_0 + \dots + b_{i-1}) - 1$ lies within $s$ and the entry of $s$ at this index is $b_i$:
 the $i$-th piece is the first cut saved for the remaining length $n - (b_0 + \dots + b_{i-1})$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_blocks`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-blocks).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_blocks`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-blocks).
 
 ## Reconstruction earns the final saved revenue
 
@@ -216,7 +216,7 @@ $r = (r_0, \dots, r_n)$ be the revenue table computed by the extended bottom-up 
 algorithm. The revenue of the composition of $n$ returned by the rod-cutting reconstruction
 equals $r_n$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_revenue`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-revenue).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_revenue`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-revenue).
 
 ## Rod-cutting reconstruction is optimal
 
@@ -225,7 +225,7 @@ entries in a linearly ordered additive commutative monoid (addition is monotone)
 of $n$ returned by the rod-cutting reconstruction has the greatest revenue among all compositions
 of $n$: its revenue is at least the revenue of every composition of $n$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-correct).
 
 ## Rod-cutting reconstruction on the empty rod
 
@@ -233,7 +233,7 @@ For the empty price vector (rod length
 $0$) with entries in an additive commutative monoid carrying a linear order, the rod-cutting
 reconstruction returns the empty composition of $0$ and charges no events.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 669](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L669). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-zero).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.cutRodSolution_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean, line 669](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCutting.lean#L669). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#cut-rod-solution-zero).
 
 ## Recursive CUT-ROD
 
@@ -245,7 +245,7 @@ $i = 1, \dots, j$ are scanned in increasing order and every $r(j - i)$ is recomp
 recursive call, without memoization. One cost tick is charged at every invocation, including
 the root call and every call on an empty rod.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod).
 
 ## Correctness of recursive CUT-ROD
 
@@ -258,7 +258,7 @@ and it is at least the revenue of every such composition.
 
 Every piece is sold: negative prices do not create an option to discard part of the rod.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod-correct).
 
 ## Running time of recursive CUT-ROD
 
@@ -267,7 +267,7 @@ linear order, and let $p_1, \dots, p_n \in \alpha$ be prices. Recursive CUT-ROD 
 which charges one tick per invocation, makes exactly $2^n$ invocations, counting the root call
 and every call on an empty rod, whatever the prices are.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod-time).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RecursiveRodCutting.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#recursive-cut-rod-time).
 
 ## Memoized rod-cutting auxiliary (CLRS MEMOIZED-CUT-ROD-AUX)
 
@@ -286,7 +286,7 @@ event count is the total over the whole recursion.
 
 Known entries are returned as they are, whatever their sign, including at length zero.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux).
 
 ## The memoized cut-rod procedure (CLRS MEMOIZED-CUT-ROD)
 
@@ -296,7 +296,7 @@ $p_i$ is the price of a piece of length $i$. The procedure runs the memoized rod
 on length $n$ with the cache $(c_0, \dots, c_n)$ whose entries are all unknown, and returns the
 value it computes, discarding the final cache. Its event count is that of the auxiliary call.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod).
 
 ## A cache hit in memoized rod cutting returns at once
 
@@ -306,7 +306,7 @@ be a cache whose entries are each unknown or a value in $\alpha$, and let $j \le
 known value $v$, then the memoized rod-cutting auxiliary on length $j$ and cache $c$ returns $v$
 and the unchanged cache $c$, and charges exactly one event.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_hit`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-hit).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_hit`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-hit).
 
 ## The memoized auxiliary preserves known and higher cache entries
 
@@ -317,7 +317,7 @@ $j \le n$, and let $c'$ be the cache returned by the memoized rod-cutting auxili
 and cache $c$. Then for every $k \le n$, if $c_k$ is a known value $v$, then $c'_k = v$; and for
 every $k$ with $j < k \le n$, $c'_k = c_k$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_preserves`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-preserves).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_preserves`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-preserves).
 
 ## Memoized rod cutting on the empty rod
 
@@ -325,7 +325,7 @@ Let $\alpha$ be an additive commutative monoid with
 a linear order. For the empty price vector ($n = 0$), the memoized cut-rod procedure returns $0$
 and charges exactly $2$ events: one cache probe and one cache write.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-zero).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-zero).
 
 ## Correctness of the memoized rod-cutting auxiliary
 
@@ -338,7 +338,7 @@ compositions of $k$. If $c$ is valid, $j \le n$, and the memoized rod-cutting au
 $j$ and cache $c$ returns the value $q$ and the cache $c'$, then $q$ is the greatest composition
 revenue over compositions of $j$, the cache $c'$ is valid, and $c'_j = q$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-correct).
 
 ## Correctness of memoized rod cutting
 
@@ -348,7 +348,7 @@ be prices, where $p_i$ is the price of a piece of length $i$. The value returned
 cut-rod procedure on $p$ is the greatest composition revenue over compositions of $n$: it is the
 revenue of some composition of $n$, and it is at least the revenue of every composition of $n$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-correct).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-correct).
 
 ## The memoized auxiliary fills the cache up to the requested length
 
@@ -360,7 +360,7 @@ $(c_0, \dots, c_n)$ whose entries are all unknown, then for every $k \le j$ entr
 returned cache is a known value, and that value is the greatest composition revenue over
 compositions of $k$.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_complete`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-complete).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_complete`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-aux-complete).
 
 ## Event count of memoized rod cutting
 
@@ -371,7 +371,7 @@ candidate, and per cache write.
 
 Allocation, initialization, arithmetic, comparisons and control are not charged.
 
-Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-time).
+Formalized by `Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/RodCuttingMemoized.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html#memoized-cut-rod-time).
 
 ## Depends on
 
@@ -380,4 +380,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rod cutting](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/rod-cutting/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/dynamic-programming/rod-cutting)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/dynamic-programming/rod-cutting)

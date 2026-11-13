@@ -7,7 +7,7 @@ statement: formalized
 
 # Alternating binomial sums of rational functions
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html).
 
 ## The factor $(x - 1)^n$ of an alternating binomial sum
 
@@ -25,7 +25,7 @@ statement remains.
 
 - Takashi Agoh, *An Intrinsic Factor of an Alternating Sum Involving Certain Rational Functions*, INTEGERS 26 (2026), Article A9, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_X_pow_add_C` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html#x-sub-one-pow-dvd-alternating-sum-prod-x).
+Stated but not proved: `MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_X_pow_add_C` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html#x-sub-one-pow-dvd-alternating-sum-prod-x).
 
 ## The factor $(x - 1)^n$ for polynomials with distinct real roots
 
@@ -44,7 +44,7 @@ polynomial statement remains.
 
 - Takashi Agoh, *An Intrinsic Factor of an Alternating Sum Involving Certain Rational Functions*, INTEGERS 26 (2026), Article A9, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_comp_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html#x-sub-one-pow-dvd-alternating-sum-prod-c).
+Stated but not proved: `MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_comp_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/AlternatingSumIntrinsicFactorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html#x-sub-one-pow-dvd-alternating-sum-prod-c).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alternating binomial sums of rational functions](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/alternating-binomial-sums-of-rational-functions)

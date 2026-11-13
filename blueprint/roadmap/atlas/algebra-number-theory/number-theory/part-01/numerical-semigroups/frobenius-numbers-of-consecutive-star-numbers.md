@@ -1,19 +1,19 @@
 ---
 declaration: section
 origin: cited
-lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.star, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.starRepCount, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.IsPFrobeniusStarNumber, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterStarCount, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.gcd_star_succ_succ, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_ten_le, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star
+lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.starRepCount, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.IsPFrobeniusStarNumber, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterStarCount, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_ten_le, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_one_star, MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_two_star
 statement: formalized
 ---
 
 # Frobenius numbers of consecutive star numbers
 
-10 results, 4 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html).
+10 results, 3 proved, 5 stated but not proved and 2 whose declaration the Lean read here does not declare, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html).
 
 ## Star numbers
 
 For a natural number $n$, the $n$-th star number is $S_n = 6n(n-1)+1$.
 
-Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.star`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#star).
+Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.star`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#star).
 
 ## Representation count for three consecutive star numbers
 
@@ -23,7 +23,7 @@ number of triples $(x, y, z)$ of natural numbers with $x S_n + y S_{n+1} + z S_{
 
 The star numbers are positive, so there are only finitely many such triples.
 
-Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.starRepCount`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#star-rep-count).
+Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.starRepCount`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#star-rep-count).
 
 ## $p$-Frobenius number of three consecutive star numbers
 
@@ -33,7 +33,7 @@ $S_n, S_{n+1}, S_{n+2}$ when at most $p$ triples $(x, y, z)$ of natural numbers 
 $x S_n + y S_{n+1} + z S_{n+2} = g$, and every natural number $N > g$ has more than $p$ triples
 $(x, y, z)$ of natural numbers with $x S_n + y S_{n+1} + z S_{n+2} = N$.
 
-Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.IsPFrobeniusStarNumber`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#is-pfrobenius-star-number).
+Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.IsPFrobeniusStarNumber`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#is-pfrobenius-star-number).
 
 ## $p$-Sylvester number of three consecutive star numbers
 
@@ -45,7 +45,7 @@ $(x, y, z)$ of natural numbers satisfy $x S_n + y S_{n+1} + z S_{n+2} = N$.
 For $n \ge 1$ the three star numbers are relatively prime, so this set of natural numbers is
 finite.
 
-Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterStarCount`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-star-count).
+Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterStarCount`, a definition declared in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-star-count).
 
 ## Three consecutive star numbers are relatively prime
 
@@ -56,7 +56,7 @@ number $6m(m-1)+1$. For every natural number $n \ge 1$, $\gcd(S_n, S_{n+1}, S_{n
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.gcd_star_succ_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#gcd-star-succ-succ).
+Formalized by `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.gcd_star_succ_succ`, which the repository's Lean, as read here, does not declare. [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#gcd-star-succ-succ).
 
 ## Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$
 
@@ -71,7 +71,7 @@ the $p$-Frobenius number of $S_n, S_{n+1}, S_{n+2}$ is $2n S_{n+1} + (p + 2) n S
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#exists-is-pfrobenius-number-star-of-le-n).
+Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#exists-is-pfrobenius-number-star-of-le-n).
 
 ## Frobenius numbers of three consecutive star numbers for $n \ge 10$
 
@@ -87,7 +87,7 @@ $(2n - 11) S_{n+1} + (p + 3) n S_{n+2} - S_n$.
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_ten_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#exists-is-pfrobenius-number-star-of-ten).
+Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_ten_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#exists-is-pfrobenius-number-star-of-ten).
 
 ## $0$-Sylvester number of three consecutive star numbers
 
@@ -100,7 +100,7 @@ $n(15n^2 + 8n + 7)$.
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-zero-star).
+Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-zero-star).
 
 ## $1$-Sylvester number of three consecutive star numbers
 
@@ -113,7 +113,7 @@ $x S_n + y S_{n+1} + z S_{n+2} = N$ is $25n^3 + 23n^2 + 14n + 1$.
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_one_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-one-star).
+Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_one_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-one-star).
 
 ## $2$-Sylvester number of three consecutive star numbers
 
@@ -126,7 +126,7 @@ $x S_n + y S_{n+1} + z S_{n+2} = N$ is $33n^3 + 35n^2 + 20n + 2$.
 
 - "On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_two_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-two-star).
+Stated but not proved: `MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_two_star` is written with `theorem_wanted` in [WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html#p-sylvester-count-two-star).
 
 ## Depends on
 
@@ -135,4 +135,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Frobenius numbers of consecutive star numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers)

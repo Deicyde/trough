@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.167 Geometrically Cohen-Macaulay algebras
 
-Section 10.167 of the Stacks Project, [Tag 045L](https://stacks.math.columbia.edu/tag/045L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.167 of the Stacks Project, [Tag 045L](https://stacks.math.columbia.edu/tag/045L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 045M, a lemma
 
 [Tag 045M](https://stacks.math.columbia.edu/tag/045M) in the Stacks Project.
 
-**`Algebra.TensorProduct.isNoetherianRing_and_isCohenMacaulay_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean#L403). The attribute's comment: “Finite generation of a field extension is `Algebra.EssFiniteType` (`IntermediateField.fg_top_iff`), and "one of them" is the disjunction `h`. Cohen-Macaulayness of the ring (Definition 00NC) is `Module.IsCohenMacaulay R R` for `R = K ⊗[k] L`, the notion of tag 0AAH for `R` over itself, which at each prime is Cohen-Macaulayness of `R_𝔭`. See the module docstring.”. References: EGA IV (6.7.1.1).
+**`Algebra.TensorProduct.isNoetherianRing_and_isCohenMacaulay_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean#L403). The attribute's comment: “Finite generation of a field extension is `Algebra.EssFiniteType` (`IntermediateField.fg_top_iff`), and "one of them" is the disjunction `h`. Cohen-Macaulayness of the ring (Definition 00NC) is `Module.IsCohenMacaulay R R` for `R = K ⊗[k] L`, the notion of tag 0AAH for `R` over itself, which at each prime is Cohen-Macaulayness of `R_𝔭`. See the module docstring.”. References: EGA IV (6.7.1.1).
 
 > **Stacks 045M.** Let `k` be a field and let `K/k` and `L/k` be field extensions one of which
 > is of finite type as a field extension. Then `K ⊗[k] L` is a Noetherian Cohen–Macaulay ring.
@@ -30,7 +30,7 @@ public theorem Algebra.TensorProduct.isNoetherianRing_and_isCohenMacaulay_of_ess
 
 [Tag 045N](https://stacks.math.columbia.edu/tag/045N) in the Stacks Project.
 
-**`Algebra.TensorProduct.isMaximalCohenMacaulay_self_iff_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean#L772). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (Tag 00NF); finite generation of the field extension is `Algebra.EssFiniteType k K` (`IntermediateField.fg_top_iff`), as in Tag 045M; both localisations are abstract `IsLocalization.AtPrime`s as in Tag 00ND; lying over is contraction along `Algebra.TensorProduct.includeRight`, there being no `Algebra S (K ⊗[k] S)` instance; and `IsNoetherianRing (K ⊗[k] S)` is not assumed, being a consequence by Tag 045I. See the module docstring.”. References: EGA IV (6.7.1), “(i), CM, affine”; EGA IV (6.7.1.1), “more general”.
+**`Algebra.TensorProduct.isMaximalCohenMacaulay_self_iff_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/FieldExtension.lean#L773). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (Tag 00NF); finite generation of the field extension is `Algebra.EssFiniteType k K` (`IntermediateField.fg_top_iff`), as in Tag 045M; both localisations are abstract `IsLocalization.AtPrime`s as in Tag 00ND; lying over is contraction along `Algebra.TensorProduct.includeRight`, there being no `Algebra S (K ⊗[k] S)` instance; and `IsNoetherianRing (K ⊗[k] S)` is not assumed, being a consequence by Tag 045I. See the module docstring.”. References: EGA IV (6.7.1), “(i), CM, affine”; EGA IV (6.7.1.1), “more general”.
 
 > **Stacks 045N.** Let `k` be a field, `S` a Noetherian `k`-algebra and `K/k` a finitely
 > generated field extension. Let `𝔮 ⊆ S` be a prime and let `𝔮_K ⊆ K ⊗[k] S` be a prime lying over
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.167, Tag 045L](https://stacks.math.columbia.edu/tag/045L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

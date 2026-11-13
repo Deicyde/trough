@@ -22,7 +22,7 @@ statement: formalized
 >   OpenAI Math Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Wikipedia/Falconer.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Falconer.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Falconer.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Falconer.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -40,7 +40,7 @@ lemma falconer_conjecture_two (E : Set <| ℝ²) (hc : IsCompact E) (hd : 2 < 2 
     0 < volume (image2 dist E E)
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/Falconer.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Falconer.lean#L52).
+Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/Falconer.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Falconer.lean#L52).
 
 ## `Falconer.falconer_conjecture`
 
@@ -63,7 +63,7 @@ lemma falconer_conjecture (d : ℕ) (h2d : 2 ≤ d) (E : Set <| ℝ^d) (hc : IsC
     0 < volume (image2 dist E E)
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/Falconer.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Falconer.lean#L68).
+Category `research solved`; AMS [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/Falconer.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Falconer.lean#L68).
 
 ## Depends on
 
@@ -71,5 +71,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Falconer.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Falconer.lean)
+- [FormalConjectures/Wikipedia/Falconer.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Falconer.lean)
 - [K. Falconer, *On the Hausdorff dimensions of distance sets*](https://doi.org/10.1112/S0025579300010998)

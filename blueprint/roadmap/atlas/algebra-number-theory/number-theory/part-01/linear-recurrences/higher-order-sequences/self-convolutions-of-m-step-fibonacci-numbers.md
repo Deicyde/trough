@@ -7,7 +7,7 @@ statement: formalized
 
 # Self-convolutions of m-step Fibonacci numbers
 
-17 results, 9 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html).
+17 results, 9 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html).
 
 ## The $m$-step Fibonacci recurrence
 
@@ -15,7 +15,7 @@ A sequence $F : \mathbb{Z} \to \mathbb{Q}$ satisfies the
 $m$-step Fibonacci recurrence if $F_n = F_{n-1} + F_{n-2} + \dots + F_{n-m}$ for every integer
 $n$, that is, $F_n = \sum_{i=0}^{m-1} F_{n-i-1}$. For $m = 0$ this says $F_n = 0$ for all $n$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.IsHigherFibRecurrence`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#is-higher-fib-recurrence).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.IsHigherFibRecurrence`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#is-higher-fib-recurrence).
 
 ## The standard order-$m$ Fibonacci sequence
 
@@ -24,7 +24,7 @@ the standard order-$m$ Fibonacci sequence if it satisfies the $m$-step Fibonacci
 $F_i = 0$ for every natural number $i < m - 1$, and $F_{m-1} = 1$, where $m - 1$ is computed in
 the integers.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.IsStandardHigherFib`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#is-standard-higher-fib).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.IsStandardHigherFib`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#is-standard-higher-fib).
 
 ## Weighted sum of a sequence
 
@@ -35,7 +35,7 @@ for $N < 0$ this is the empty sum $0$.
 The order $m$ is carried explicitly to match the paper notation, although the sum itself only
 uses $F$, $N$, $l$, and $q$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibSum`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-sum).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibSum`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-sum).
 
 ## First-moment weighted sum
 
@@ -43,7 +43,7 @@ For a sequence $F : \mathbb{Z} \to \mathbb{Q}$, a natural number
 $m$, integers $N$ and $l$, and a rational number $q$, $S_2(m,N,l,q) = \sum_{k=0}^{N} k q^k F_{k+l}$;
 for $N < 0$ this is the empty sum $0$. The value does not depend on $m$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibMomentSum`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-moment-sum).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibMomentSum`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-moment-sum).
 
 ## Shifted self-convolution
 
@@ -51,7 +51,7 @@ For a sequence $F : \mathbb{Z} \to \mathbb{Q}$ and natural
 numbers $m$ and $n$, the shifted self-convolution is
 $w_n^{(m)} = \sum_{j=0}^{n} F_{j+m-1} F_{n-j+m-1}$, with the indices computed in the integers.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk).
 
 ## Fibonacci numbers at integer indices
 
@@ -59,7 +59,7 @@ For an integer $n$, $F_n$ is the $n$-th Fibonacci
 number as a rational number: $F_0 = 0$, $F_1 = 1$, $F_{n+2} = F_{n+1} + F_n$ for $n \ge 0$, and
 $F_{-n} = (-1)^{n+1} F_n$ for $n > 0$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibQ`, an abbreviation declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-q).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibQ`, an abbreviation declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-q).
 
 ## Fibonacci self-convolution
 
@@ -69,7 +69,7 @@ $v_n = \sum_{j=0}^{n} F_{j+1} F_{n-j+1}$, where $F_i$ is the $i$-th Fibonacci nu
 
 This sum encodes algebraically the number of Fibonacci tiling walks.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-count).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-count).
 
 ## Even part of the Fibonacci self-convolution
 
@@ -77,7 +77,7 @@ For $n \ge 0$, $E_n$ is the rational number
 $\sum F_{j+1} F_{n-j+1}$, the sum taken over the even integers $j$ with $0 \le j \le n$, where
 $F_i$ is the $i$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count).
 
 ## Odd part of the Fibonacci walk count
 
@@ -86,7 +86,7 @@ $F_{j+1} F_{n-j+1}$ over the odd $j$ with $0 \le j \le n$, where $F_k$ are the F
 ($F_0 = 0$, $F_1 = 1$, $F_{k+2} = F_{k+1} + F_k$). It is the part of
 $v_n = \sum_{j=0}^{n} F_{j+1} F_{n-j+1}$ that comes from odd $j$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.oddFibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#odd-fib-walk-count).
+Formalized by `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.oddFibWalkCount`, a definition declared in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#odd-fib-walk-count).
 
 ## Recurrence for the shifted self-convolution of higher-order Fibonacci numbers
 
@@ -100,7 +100,7 @@ every integer $n \ge 0$, $(m+1) w_{n+1} - 2m w_n = (n+m+2) F_{n+m} - (n+m) F_{n+
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk-recurrence).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk-recurrence).
 
 ## Closed form for weighted sums of an $m$-step Fibonacci sequence
 
@@ -120,7 +120,7 @@ $$
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibSum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-sum-eq).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.weightedHigherFibSum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#weighted-higher-fib-sum-eq).
 
 ## Explicit formula for the shifted self-convolution of higher-order Fibonacci numbers
 
@@ -144,7 +144,7 @@ At $n = 0$ the weighted sums have upper limit $-1$ and are empty.
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk_eq_weighted_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk-eq-weighted-sums).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk_eq_weighted_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-walk-eq-weighted-sums).
 
 ## Self-convolution of higher-order Fibonacci numbers
 
@@ -169,7 +169,7 @@ $n < 2m - 2$: at $m = 2$ and $n = 0$ the left side is $0$ and the right side is 
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFib_selfConvolution_eq_weighted_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-self-convolution-eq-weighted).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFib_selfConvolution_eq_weighted_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#higher-fib-self-convolution-eq-weighted).
 
 ## Even and odd parts of the Fibonacci self-convolution agree at odd length
 
@@ -182,7 +182,7 @@ $0 \le j \le n$. For every integer $k \ge 1$, $E_{2k-1} = O_{2k-1}$.
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount_odd_length_eq_oddFibWalkCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count-odd-length-eq-odd-fi).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount_odd_length_eq_oddFibWalkCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count-odd-length-eq-odd-fi).
 
 ## Even and odd parts of the Fibonacci self-convolution at even length
 
@@ -195,7 +195,7 @@ For every integer $k \ge 1$, $E_{2k} = O_{2k} + F_{2k+2}$.
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount_even_length_eq_odd_add_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count-even-length-eq-odd-a).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount_even_length_eq_odd_add_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#even-fib-walk-count-even-length-eq-odd-a).
 
 ## Halving the Fibonacci self-convolution at odd length
 
@@ -209,7 +209,7 @@ $E_{2k-1} = v_{2k-1}/2$ and $O_{2k-1} = v_{2k-1}/2$.
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCounts_odd_length_eq_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-counts-odd-length-eq-half).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCounts_odd_length_eq_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-counts-odd-length-eq-half).
 
 ## Halving the Fibonacci self-convolution at even length
 
@@ -223,7 +223,7 @@ $E_{2k} = (v_{2k} + F_{2k+2})/2$ and $O_{2k} = (v_{2k} - F_{2k+2})/2$.
 
 - Jan Sedlák and Antonín Slavík, "Walks in Tiled Rectangles and Self-Convolutions of Higher-Order Fibonacci Numbers", Theorem 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCounts_even_length_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-counts-even-length-eq).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.fibWalkCounts_even_length_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/HigherFibonacciWalksWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html#fib-walk-counts-even-length-eq).
 
 ## Depends on
 
@@ -232,4 +232,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Self-convolutions of m-step Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/self-convolutions-of-m-step-fibonacci-numbers)

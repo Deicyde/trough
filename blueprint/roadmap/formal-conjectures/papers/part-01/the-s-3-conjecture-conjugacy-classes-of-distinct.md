@@ -26,7 +26,7 @@ statement: formalized
 > for all solvable groups (independently by Zhang and by Knörr–Lempken–Thielcke), but the general
 > non-solvable case remains open.
 
-*Quoted from [FormalConjectures/Paper/ConjugacyClassSizes.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ConjugacyClassSizes.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/ConjugacyClassSizes.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ConjugacyClassSizes.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 3 test statements and 1 API statement, counted here but not shown.
 
@@ -45,7 +45,7 @@ theorem conjClassSizes_iff_sym_three
     Nonempty (G ≃* Equiv.Perm (Fin 3))
 ```
 
-Category `research open`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Paper/ConjugacyClassSizes.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ConjugacyClassSizes.lean#L135).
+Category `research open`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Paper/ConjugacyClassSizes.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ConjugacyClassSizes.lean#L135).
 
 ## `ConjugacyClassSizes.conjClassSizes_iff_sym_three_solvable`
 
@@ -62,7 +62,7 @@ theorem conjClassSizes_iff_sym_three_solvable
     Nonempty (G ≃* Equiv.Perm (Fin 3))
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Paper/ConjugacyClassSizes.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ConjugacyClassSizes.lean#L147).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Paper/ConjugacyClassSizes.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ConjugacyClassSizes.lean#L147).
 
 ## Depends on
 
@@ -70,5 +70,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/ConjugacyClassSizes.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/ConjugacyClassSizes.lean)
+- [FormalConjectures/Paper/ConjugacyClassSizes.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/ConjugacyClassSizes.lean)
 - [arXiv:2606.22244](https://arxiv.org/abs/2606.22244)

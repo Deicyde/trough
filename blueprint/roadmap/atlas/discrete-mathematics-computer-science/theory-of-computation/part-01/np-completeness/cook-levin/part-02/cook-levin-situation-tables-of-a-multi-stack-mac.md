@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: situation tables of a multi-stack machine and the correctness of the formula
 
-161 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/index.html).
+161 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/index.html).
 
 ## Top of a stack as read from the windows
 
@@ -21,7 +21,7 @@ position $c(k)$, counting from $0$, or $\bot$ when $W(k)$ has fewer than $c(k) +
 Here $P(k)$ lists the symbols pushed in this step and still on top, and $c(k)$ counts the original
 symbols already consumed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.readTop`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#read-top).
+Formalized by `Cslib.Complexity.CookLevin.Situation.readTop`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#read-top).
 
 ## Symbolic effect of a statement tree
 
@@ -41,7 +41,7 @@ label, each together with the current $v$, $P$ and $c$.
 Thus $P_k$ holds the symbols pushed in this step and still on top, and $c_k$ counts the original
 symbols consumed, a push followed by a pop cancelling.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.eff`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff).
+Formalized by `Cslib.Complexity.CookLevin.Situation.eff`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff).
 
 ## Stack operations on a path of a statement tree
 
@@ -50,7 +50,7 @@ Turing machine, $\operatorname{ops}(q)$ is the largest number of push, peek and 
 from the root of $q$ to a leaf. Load and branch nodes do not count, and goto and halt leaves
 contribute $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.ops`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#ops).
+Formalized by `Cslib.Complexity.CookLevin.Situation.ops`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#ops).
 
 ## Symbols a statement tree can push
 
@@ -60,7 +60,7 @@ $x$ can be pushed onto $k$ by $q$ when $q$ contains a push node onto stack $k$ w
 function $f$ and some state $v \in \sigma$ satisfies $x = f(v)$. Every push node of $q$ counts,
 whichever branches are taken.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.PushSym`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#push-sym).
+Formalized by `Cslib.Complexity.CookLevin.Situation.PushSym`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#push-sym).
 
 ## The symbolic effect grows by at most the number of stack operations
 
@@ -71,7 +71,7 @@ state $v$, pushed lists $P$ and consumption counts $c$, the pushed lists $P'$ an
 counts $c'$ of the symbolic effect of $q$ on $W$ from $v$, $P$, $c$ satisfy
 $|P'_k| \le |P_k| + n(q)$ and $c'_k \le c_k + n(q)$ for every stack $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.eff_bound`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff-bound).
+Formalized by `Cslib.Complexity.CookLevin.Situation.eff_bound`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff-bound).
 
 ## Pushed symbols come from the start or from push nodes
 
@@ -83,7 +83,7 @@ such that every symbol of $P_k$ satisfies $Q_k$ for every stack $k$, every symbo
 list on stack $k$ produced by the symbolic effect of $q$ on $W$ from $v$, $P$, $c$ satisfies
 $Q_k$, for every stack $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.eff_pushed`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff-pushed).
+Formalized by `Cslib.Complexity.CookLevin.Situation.eff_pushed`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#eff-pushed).
 
 ## Encoding data for a finite TM2 machine
 
@@ -101,7 +101,7 @@ alphabet is an effective symbol of the input stack.
 
 Symbol code $0$ stands for $\bot$, the empty cell.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#enc).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#enc).
 
 ## Window depth of a machine
 
@@ -109,7 +109,7 @@ For a finite TM2 machine $M$, the window depth is the maximum,
 over all labels $l$ of $M$, of the largest number of push, peek and pop nodes on a root-to-leaf
 path of the statement tree of $l$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.depth`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#depth).
+Formalized by `Cslib.Complexity.CookLevin.Situation.depth`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#depth).
 
 ## The situation step
 
@@ -121,7 +121,7 @@ any stack and no consumed symbols on any stack. If $l$ is a label, the step is t
 from the windows $W$, of the statement tree of $l$ started in state $v$ with nothing pushed and
 nothing consumed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.sitStep`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#sit-step).
+Formalized by `Cslib.Complexity.CookLevin.Situation.sitStep`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#sit-step).
 
 ## Symbol-code bound
 
@@ -131,7 +131,7 @@ of the effective alphabet of stack $k$.
 
 Effective symbols of stack $k$ have codes $1, \dots, s_k$, all below $g$; code $0$ is $\bot$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.g`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#g).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.g`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#g).
 
 ## Number of window combinations
 
@@ -139,7 +139,7 @@ For an encoding $E$ of a finite TM2 machine $M$ with $K$
 numbered stacks and symbol-code bound $g$, the number of window combinations is $G = g^{K d}$,
 where $d$ is the window depth of $M$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.G`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#g-2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.G`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#g-2).
 
 ## Number of situations
 
@@ -147,7 +147,7 @@ For an encoding $E$ of a finite multi-stack Turing machine $M$, the
 number of situations is $N = A_0 \cdot G$, where $A_0$ is the number of (label, state) codes of
 $E$ and $G$ is the number of window combinations.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.N`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#n).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.N`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#n).
 
 ## Clause layout of a machine encoding
 
@@ -158,7 +158,7 @@ window combinations), together with the number $K$ of numbered stacks, the symbo
 and the window depth $d$ of $M$. The block is a one-hot part on $[0, A_0)$ followed by one
 variable per situation.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.layout`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#layout).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.layout`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#layout).
 
 ## Label/state code of a situation
 
@@ -167,7 +167,7 @@ label/state codes and $G$ window combinations, the label/state code of a situati
 $i \in \mathbb{N}$ is $\lfloor i / G \rfloor \bmod A_0$, the top digit of $i$ in the mixed radix
 whose lower digits are the window symbol codes.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.la`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#la).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.la`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#la).
 
 ## Window symbol code of a situation
 
@@ -178,7 +178,7 @@ below $g$), and let $d$ be the window depth of $M$. For natural numbers $i$, $k$
 window symbol code of situation $i$ on stack number $k$ at depth $j$ is the base-$g$ digit of $i$
 at position $kd + j$, namely $\lfloor i / g^{kd + j} \rfloor \bmod g$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wa`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#wa).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wa`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#wa).
 
 ## Position of a situation's variable
 
@@ -186,7 +186,7 @@ For an encoding $E$ of a finite multi-stack Turing
 machine $M$ with $A_0$ (label, state) codes and a natural number $i$, the variable of situation
 $i$ sits at position $A_0 + i$ of the label/state block of a row.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sa`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#sa).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sa`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#sa).
 
 ## Decoding a symbol code
 
@@ -195,7 +195,7 @@ and a natural number $c$, the decoded symbol is the effective symbol of stack $k
 $c - 1$ when $1 \le c$ and $c - 1 < s_k$, where $s_k$ is the size of the effective alphabet of
 stack $k$; otherwise, in particular for $c = 0$, it is $\bot$ (no symbol).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decO`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#dec-o).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decO`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#dec-o).
 
 ## Decoded windows of a situation
 
@@ -206,7 +206,7 @@ $c$ of situation $i$ on the stack number of $k$ at depth $j$. A code with $1 \le
 $s_k$ is the size of the effective alphabet of $k$, decodes to the effective symbol of $k$ with
 index $c - 1$; every other code decodes to the empty cell $\bot$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.win`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#win).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.win`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#win).
 
 ## Effect of a situation
 
@@ -217,7 +217,7 @@ $W$ be the decoded windows of situation $i$. The effect of situation $i$ is the 
 $M$ from $l$, $v$ and $W$: a new optional label, a new state, the symbols left pushed on each
 stack, and the number of original symbols consumed from each stack.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.res`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#res).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.res`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#res).
 
 ## Next label/state code of a situation
 
@@ -226,7 +226,7 @@ machine $M$ and a natural number $i$, the next label/state code of situation $i$
 the (label, state) numbering of $E$, of the pair formed by the label and the state that the effect
 of situation $i$ produces.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.na`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#na).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.na`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-01/index.html#na).
 
 ## Push-count table of a situation
 
@@ -235,7 +235,7 @@ machine. For a situation $i$ and a stack number $k$, $\mathrm{pl}(i, k)$ is the 
 that the effect of situation $i$ has pushed onto the stack that the inverse stack numbering of $E$
 assigns to $k$ and that are still on top of that stack at the end of the step.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pl).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pl).
 
 ## Consumption table of a situation
 
@@ -244,7 +244,7 @@ machine. For a situation $i$ and a stack number $k$, $\mathrm{cn}(i, k)$ is the 
 symbols that the effect of situation $i$ consumes from the stack that the inverse stack numbering
 of $E$ assigns to $k$; a symbol pushed and then popped within the same step is not counted.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#cn).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#cn).
 
 ## Pushed-symbol table of a situation
 
@@ -254,14 +254,14 @@ code of the symbol at position $j$ from the top (counting from $0$) among the sy
 effect of situation $i$ leaves pushed on the stack that the inverse stack numbering of $E$ assigns
 to $k$, and $0$ if fewer than $j + 1$ symbols are left pushed there.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pu`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pu).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pu`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pu).
 
 ## The symbol-code bound is positive
 
 For an encoding $E$ of a finite TM2 machine, the
 symbol-code bound $g$ of $E$ satisfies $0 < g$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.g_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#g-pos).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.g_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#g-pos).
 
 ## Symbols left pushed by a situation are effective
 
@@ -272,7 +272,7 @@ effective symbol. For every $i \in \mathbb{N}$, every stack $k$ of $M$ and every
 alphabet of stack $k$: if $x$ is among the symbols that the effect of situation $i$ leaves pushed
 on stack $k$, then $x = \mathrm{dec}_k(n)$ for some $n < s_k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.res_pushed`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#res-pushed).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.res_pushed`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#res-pushed).
 
 ## Pushed codes are valid symbol codes
 
@@ -283,7 +283,7 @@ Then there is a symbol $x$ at position $j$ from the top (counting from $0$) amon
 effect of situation $i$ leaves pushed on $s$, such that $\mathrm{pu}(i, k, j)$ is the code of $x$,
 $1 \le \mathrm{pu}(i, k, j) \le n_s$, and decoding $\mathrm{pu}(i, k, j)$ on stack $s$ gives $x$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pu_valid`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pu-valid).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pu_valid`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#pu-valid).
 
 ## The transition tables of a machine are well formed
 
@@ -295,7 +295,7 @@ $\mathrm{wa}$ of $E$ are well formed for the transition clauses of the layout of
 $i$ and height $H$: that is, $\mathrm{la}(i) < A_0 + N$, $\mathrm{na}(i) < A_0 + N$,
 $\mathrm{wa}(i, k, j) < g$ for all $k < K$ and $j < d$, and $d \le H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_upd`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-upd).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_upd`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-upd).
 
 ## The situation-definition tables of a machine are well formed
 
@@ -308,7 +308,7 @@ formed for the transition clauses of the layout of $E$ at situation $i$ and heig
 $\mathrm{la}(i) < A_0 + N$, $\mathrm{sa}(i) < A_0 + N$, $\mathrm{wa}(i, k, j) < g$ for all
 $k < K$ and $j < d$, and $d \le H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_sdef`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-sdef).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_sdef`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-sdef).
 
 ## The cell-shift tables of a machine are well formed
 
@@ -322,7 +322,7 @@ $\mathrm{sa}(i) < A_0 + N$ for all $i < N$, and for all $i < N$ and $k < K$ we h
 $\mathrm{pl}(i, k) \le d$, $\mathrm{cn}(i, k) \le d$ and $\mathrm{pu}(i, k, j) < g$ for all
 $j < \mathrm{pl}(i, k)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_sh`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-sh).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.wf_sh`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#wf-sh).
 
 ## Halted situations stay fixed
 
@@ -332,7 +332,7 @@ number $k$ the next code equals the current one, $\mathrm{na}(i) = \mathrm{la}(i
 $\mathrm{pl}(i, k) = 0$ and $\mathrm{cn}(i, k) = 0$: nothing is left pushed and nothing is
 consumed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.halted`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#halted).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.halted`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#halted).
 
 ## Mixed-radix number
 
@@ -341,7 +341,7 @@ $D : \mathbb{N} \to \mathbb{N}$, $\mathrm{mix}(b, c, 0, D) = c$ and
 $\mathrm{mix}(b, c, m + 1, D) = D(0) + b \cdot \mathrm{mix}(b, c, m, n \mapsto D(n + 1))$; that
 is, $D(0) + b\,(D(1) + b\,(\cdots + b\,(D(m - 1) + b\,c)))$, least significant digit first.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.mix`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#mix).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.mix`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#mix).
 
 ## Mixed-radix index of a situation
 
@@ -353,7 +353,7 @@ let $i = \mathrm{mix}(g, c, K d, D)$ with digits $D(n) = w(\lfloor n / d \rfloor
 Then $i < N$, $\mathrm{la}(i) = c$, and $\mathrm{wa}(i, k, j) = w(k, j)$ for all $k < K$ and
 $j < d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.mix_sit`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#mix-sit).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.mix_sit`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#mix-sit).
 
 ## Situation surjectivity
 
@@ -364,7 +364,7 @@ for all $k < K$ and $j < d$, there is a situation $i < N$ whose label/state code
 $\mathrm{la}(i)$ equals $c$ and whose window codes satisfy $\mathrm{wa}(i, k, j) = w(k, j)$ for
 all $k < K$ and $j < d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sit_surj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sit-surj).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sit_surj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sit-surj).
 
 ## Finite set of pushable symbols
 
@@ -373,7 +373,7 @@ machine with a finite set of states, the finite set of symbols of stack $k$ that
 instruction of $q$ on stack $k$ pushes for some state: the union, over all push instructions on
 $k$ in all branches of $q$, of the images of their push functions over all states.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.pushFS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#push-fs).
+Formalized by `Cslib.Complexity.CookLevin.Situation.pushFS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#push-fs).
 
 ## Pushable and input symbols of a stack
 
@@ -382,7 +382,7 @@ stack $k$ of $M$, this is the finite set of symbols of stack $k$ consisting of e
 some push node on stack $k$ in the statement of some label of $M$ pushes in some state, together
 with, when $k$ is the input stack $k_0$, every symbol of the alphabet of $k_0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.symSet`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sym-set).
+Formalized by `Cslib.Complexity.CookLevin.Situation.symSet`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sym-set).
 
 ## The classical encoding record of a finite multi-stack machine
 
@@ -398,7 +398,7 @@ symbol in it gets code its position in that list plus $1$, and a symbol outside 
 
 Only the existence of this record is used later.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ofFinTM2`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#of-fin-tm2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ofFinTM2`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#of-fin-tm2).
 
 ## Time bound of the transition-clause generator on the tables of a machine
 
@@ -414,7 +414,7 @@ and $N$, it reaches its final label $\mathsf{done}$, in some state, with stacks 
 holds the encoding of the transition clause family for this layout, $\mathrm{la}$, $\mathrm{na}$,
 $\mathrm{wa}$, $T$, $H$ and $N$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.upd_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#upd-time).
+Formalized by `Cslib.Complexity.CookLevin.Situation.upd_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#upd-time).
 
 ## Time bound of the situation-definition generator on the tables of a machine
 
@@ -431,7 +431,7 @@ bound for this layout and $N$, it reaches its final label $\mathsf{done}$, in so
 stacks whose output stack holds the encoding of the transition clause family for this layout,
 $\mathrm{la}$, $\mathrm{sa}$, $\mathrm{wa}$, $T$, $H$ and $N$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.sdef_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sdef-time).
+Formalized by `Cslib.Complexity.CookLevin.Situation.sdef_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#sdef-time).
 
 ## Time bound of the shift generator on the tables of a machine
 
@@ -448,7 +448,7 @@ layout and $N$, it reaches its final label $\mathsf{done}$, in some state, with 
 output stack holds the encoding of the cell-shift clause family for this layout, $\mathrm{sa}$,
 $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$, $N$, $T$ and $H$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.shift_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#shift-time).
+Formalized by `Cslib.Complexity.CookLevin.Situation.shift_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#shift-time).
 
 ## Top window of a stack
 
@@ -457,7 +457,7 @@ type $\alpha$ (a stack, top first), the window of depth $d$ of $L$ is the list o
 $\alpha$ extended by the empty cell $\bot$ whose entry $j$ is $x_j$ if $j$ is less than the length
 of $L$ and $\bot$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.window`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#window).
+Formalized by `Cslib.Complexity.CookLevin.Situation.window`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-02/index.html#window).
 
 ## Applying an effect to the original stacks
 
@@ -470,7 +470,7 @@ with its first $c(k)$ symbols (from the top) removed.
 Applied to an effect, $P(k)$ is the pushed prefix still on top of stack $k$ and $c(k)$ is the net
 number of original symbols consumed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.applyEff`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#apply-eff).
+Formalized by `Cslib.Complexity.CookLevin.Situation.applyEff`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#apply-eff).
 
 ## Reading the top through the windows
 
@@ -480,7 +480,7 @@ $c(k) < d$. Reading the top of stack $k$ from the depth-$d$ windows of the lists
 symbols $P$ and consumption counts $c$, gives the first symbol of $P(k)$ followed by $S_0(k)$ with
 its first $c(k)$ symbols removed, or ⊥ if that list is empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.readTop_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#read-top-eq).
+Formalized by `Cslib.Complexity.CookLevin.Situation.readTop_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#read-top-eq).
 
 ## The symbolic effect of a statement agrees with the real step
 
@@ -495,7 +495,7 @@ $S_0$ the effect of $q$ computed from $v$, $P$, $c$ and the depth-$d$ windows of
 Here $\operatorname{ops}(q)$ is the largest number of push, peek and pop nodes on a path of $q$,
 so the hypothesis keeps every read inside the windows.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.eff_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#eff-agree).
+Formalized by `Cslib.Complexity.CookLevin.Situation.eff_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#eff-agree).
 
 ## Idle-extended step
 
@@ -503,7 +503,7 @@ For a finite TM2 machine $M$ and a configuration $c$, the idle-extended
 step of $M$ at $c$ is the configuration that one step of $M$ produces from $c$ when the label of
 $c$ is not the halted label, and is $c$ itself when it is (a halted configuration stays put).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.stepI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#step-i).
+Formalized by `Cslib.Complexity.CookLevin.Situation.stepI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#step-i).
 
 ## Idle-extended run
 
@@ -511,7 +511,7 @@ For a finite TM2 machine $M$ and a configuration $c$, the idle-extended
 run of $M$ from $c$ is the sequence of configurations whose term at time $0$ is $c$ and whose term
 at time $t + 1$ is the idle-extended step of $M$ applied to its term at time $t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#run-i).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#run-i).
 
 ## Windows of a configuration
 
@@ -520,7 +520,7 @@ $c$ be a configuration. The window of $c$ on stack $k$ is the list of length $d$
 position $j < d$ is the symbol at depth $j$ of stack $k$ (counted from the top, starting at $0$)
 when the stack has more than $j$ symbols, and the empty cell $\bot$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.winC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#win-c).
+Formalized by `Cslib.Complexity.CookLevin.Situation.winC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#win-c).
 
 ## The idle-extended step is the situation step applied to the stacks
 
@@ -533,7 +533,7 @@ $n_k$ symbols.
 
 This is an equality of full configurations and needs no bound on the stack heights.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.step_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 702](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L702). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#step-agree).
+Formalized by `Cslib.Complexity.CookLevin.Situation.step_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 702](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L702). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#step-agree).
 
 ## Label-and-state code of a configuration
 
@@ -541,7 +541,7 @@ For an encoding $E$ of a machine $M$ and a
 configuration $c$ of $M$, this is the number that $E$'s (label, state) numbering assigns to the
 pair formed by the label of $c$ (possibly the halted label) and the state of $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.code`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#code).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.code`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#code).
 
 ## Cell code of a configuration
 
@@ -550,7 +550,7 @@ $M$ and natural numbers $k$ and $j$, this is the code under $E$ of the symbol at
 (counting from $0$ at the top) of the stack that $E$'s inverse stack numbering assigns to $k$, in
 $c$; it is $0$ (the code of ⊥) if that stack has at most $j$ symbols.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cell`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 724](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L724). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#cell).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cell`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 724](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L724). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#cell).
 
 ## Situation index of a configuration
 
@@ -563,7 +563,7 @@ $$\sum_{k < K} \sum_{j < d} \mathrm{cell}_c(k, j)\, g^{kd + j} + \mathrm{code}(c
 where $\mathrm{code}(c)$ is the combined (label, state) code of $c$ and $\mathrm{cell}_c(k, j)$ is
 the cell code of $c$ on stack number $k$ at depth $j$ ($0$ for the empty cell).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sitIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#sit-idx).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sitIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#sit-idx).
 
 ## The table-driven row update
 
@@ -577,7 +577,7 @@ $\dot{-}$ is truncated subtraction; otherwise it is $0$, the empty cell.
 
 These are the three cases the shift clauses force: pushed fill, in-range shift and overflow.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.tabRow`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 732](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L732). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#tab-row).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.tabRow`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 732](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L732). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#tab-row).
 
 ## Good configurations
 
@@ -585,7 +585,7 @@ For an encoding $E$ of a machine $M$, a configuration $c$ of $M$ is
 good when every symbol on every stack $k$ of $c$ is one of the effective symbols of stack $k$
 listed by $E$ (so that it has a code).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.Good`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#good).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.Good`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#good).
 
 ## The situation index matches the code and windows
 
@@ -596,7 +596,7 @@ satisfies $i < N$, the label/state code of situation $i$ equals the combined (la
 of $c$, and for all $k < K$ and $j < d$ the window symbol code of situation $i$ on stack $k$ at
 depth $j$ equals the cell code of $c$ on stack number $k$ at depth $j$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sitIdx_spec`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#sit-idx-spec).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sitIdx_spec`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#sit-idx-spec).
 
 ## Cells of a pushed prefix over a truncated stack
 
@@ -609,7 +609,7 @@ followed by $S$ with its first $n$ entries removed. If $j < |P|$ then
 $Q\langle j\rangle = P\langle j\rangle$; otherwise, if $j < (H - \max(|P|, n)) + |P|$ then
 $Q\langle j\rangle = S\langle j - |P| + n\rangle$; and otherwise $Q\langle j\rangle = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#row-cell).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#row-cell).
 
 ## The table-driven step
 
@@ -624,7 +624,7 @@ $H$ and situation $i$ applied to the cell codes of $c$.
 
 No hypothesis $d \le H$ is needed: if $H < d$, every stack of $c$ is empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.table_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#table-agree).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.table_agree`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#table-agree).
 
 ## Reads of the in-range shift stay in the row
 
@@ -636,7 +636,7 @@ truncated subtraction, then $j - p + n < H$.
 
 So every old cell that the table-driven row update reads lies in the row of height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.tabRow_reads_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#tab-row-reads-lt).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.tabRow_reads_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#tab-row-reads-lt).
 
 ## The idle-extended step preserves good configurations
 
@@ -644,7 +644,7 @@ Let $E$ be an encoding of a finite
 TM2 machine $M$ and let $c$ be a configuration of $M$. If $c$ is good for $E$, then so is the
 idle-extended step of $M$ at $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.good_step`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 823](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L823). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#good-step).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.good_step`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 823](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L823). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#good-step).
 
 ## The table-driven step along a run
 
@@ -663,7 +663,7 @@ table-driven row update with height $H$ and situation $i$ applied to the cell co
 Unlike the single-step version, no alphabet hypothesis is needed: every symbol on a stack of such
 a run lies in the effective alphabet of $E$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.table_agree_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#table-agree-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.table_agree_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#table-agree-run).
 
 ## Reading a list from a sequence of cells
 
@@ -672,7 +672,7 @@ of $\alpha$ or to ⊥, and $j, m \in \mathbb{N}$, this is the list $[x_0, \dots,
 $f(j + i) = x_i$ for each $i < r$, where $r = m$ if none of $f(j), \dots, f(j + m - 1)$ is ⊥, and
 otherwise $r$ is the least $i < m$ with $f(j + i) = \bot$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.decS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 869](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L869). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#dec-s).
+Formalized by `Cslib.Complexity.CookLevin.Situation.decS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 869](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L869). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#dec-s).
 
 ## Reading back a list from its cells
 
@@ -682,7 +682,7 @@ every $i \in \mathbb{N}$, $f(j + i)$ is the entry of $S$ at position $i$ (counti
 $i$ is less than the length of $S$, and ⊥ otherwise. If $S$ has length at most $m$, then reading
 $f$ from position $j$ for at most $m$ positions, stopping at the first ⊥, gives $S$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.decS_of_list`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 904](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L904). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#dec-s-of-list).
+Formalized by `Cslib.Complexity.CookLevin.Situation.decS_of_list`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 904](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L904). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-03/index.html#dec-s-of-list).
 
 ## Entries of a decoded stack on prefix-form input
 
@@ -694,7 +694,7 @@ to $j + m$: whenever $j \le a \le b < j + m$ and $f(a) = \bot$, also $f(b) = \bo
 $i < m$, the $i$-th entry of $\mathrm{decS}(f, j, m)$, taken to be $\bot$ when the list has at
 most $i$ entries, equals $f(j + i)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.getElem?_decS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 917](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L917). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#get-elem-dec-s).
+Formalized by `Cslib.Complexity.CookLevin.Situation.getElem?_decS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 917](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L917). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#get-elem-dec-s).
 
 ## Stack heights grow by at most the window depth per step
 
@@ -705,7 +705,7 @@ of its statement trees. For every configuration $c$ of $M$ and every stack $k$, 
 stack $k$ after one idle-extended step of $M$ from $c$ is at most the length of stack $k$ of $c$
 plus $d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.stepI_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#step-i-height).
+Formalized by `Cslib.Complexity.CookLevin.Situation.stepI_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#step-i-height).
 
 ## C1 decoder (decoding a row)
 
@@ -719,7 +719,7 @@ $k$, and taking at most $H$ symbols. The valid codes of stack $k$ are $1, \dots,
 the size of its effective alphabet, and code $i + 1$ stands for symbol number $i$ of that
 alphabet, counting from $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row).
 
 ## Well-formed rows of cells
 
@@ -732,7 +732,7 @@ $w(k, j) = 0$ then $w(k, b) = 0$ for every $b$ with $j \le b < H$.
 
 Code $0$ is the empty cell, so the second condition says that each stack is in prefix form.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.RowOK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 961](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L961). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#row-ok).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.RowOK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 961](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L961). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#row-ok).
 
 ## C1a (decoding recovers a good configuration)
 
@@ -742,7 +742,7 @@ of $c$ lies in the effective alphabet of $E$) all of whose stacks have length at
 the row decoder of $E$ at height $H$, applied to the (label, state) code of $c$ and the cell
 array of $c$, returns $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_enc`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-enc).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_enc`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-enc).
 
 ## C1b (decoding a well-formed row loses nothing)
 
@@ -755,7 +755,7 @@ configuration that the row decoder of $E$ at height $H$ returns on code $n$ and 
 the (label, state) code of $c$ is $n$, and the cell code of $c$ at stack number $k$ and depth $j$
 equals $w(k, j)$ for all $k < K$ and $j < H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.enc_decRow`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 989](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L989). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#enc-dec-row).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.enc_decRow`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 989](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L989). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#enc-dec-row).
 
 ## C1c (cell arrays of good configurations are well-formed rows)
 
@@ -768,7 +768,7 @@ $H$: for all $k < K$ and $j < H$, the code $w(k, j)$ is at most the size of the 
 alphabet of stack number $k$, and if $w(k, j) = 0$ then $w(k, b) = 0$ for every $b$ with
 $j \le b < H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cell_rowOK`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cell-row-ok).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cell_rowOK`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cell-row-ok).
 
 ## C1d (decoded configurations are good)
 
@@ -777,7 +777,7 @@ $H, n \in \mathbb{N}$ and every $w : \mathbb{N} \to \mathbb{N} \to \mathbb{N}$, 
 that the row decoder of $E$ at height $H$ returns on code $n$ and array $w$ is good: every symbol
 on each of its stacks lies in the effective alphabet of $E$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_good`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1019](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1019). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-good).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_good`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1019](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1019). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-good).
 
 ## C1e (the row decoder reads only the window)
 
@@ -787,7 +787,7 @@ $w, w' : \mathbb{N} \to \mathbb{N} \to \mathbb{N}$. If $w(k, j) = w'(k, j)$ for 
 $j < H$, then the row decoder of $E$ at height $H$ returns the same configuration on code $n$
 and array $w$ as on code $n$ and array $w'$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_congr`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1031](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1031). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-congr).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_congr`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1031](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1031). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-congr).
 
 ## Good configurations are determined by their row (C1f)
 
@@ -799,7 +799,7 @@ for $E$ (every stack symbol lies in the effective alphabet of its stack) and all
 have length at most $H$. If $c$ and $c'$ have the same (label, state) code and
 $\mathrm{cell}(c, k, j) = \mathrm{cell}(c', k, j)$ for all $k < K$ and $j < H$, then $c = c'$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#row-inj).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#row-inj).
 
 ## C2' (decoding the table-driven row gives the next configuration)
 
@@ -812,7 +812,7 @@ the table-driven row update at height $H$ of situation $i$ on the cell array of 
 idle-extended step of $c$: the configuration after one step of $M$, or $c$ itself if $c$ is
 halted.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_tabRow`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1047](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1047). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-tab-row).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.decRow_tabRow`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1047](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1047). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#dec-row-tab-row).
 
 ## Truth of a variable under an assignment
 
@@ -821,7 +821,7 @@ booleans, and a variable index $v \in \mathbb{N}$, the variable $v$ is true unde
 less than the length of $a$ and the entry of $a$ at position $v$ is true. In particular, variables
 with index at least the length of $a$ are not true.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Tr`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#tr).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Tr`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#tr).
 
 ## L0 (a satisfied dense clause has a satisfied listed literal)
 
@@ -831,7 +831,7 @@ false), and let $a$ be a list of booleans. If $a$ satisfies the dense clause ove
 built from $\ell$, then some pair $(p, b) \in \ell$ has $p$ less than the length of $a$ and
 $a_p = b$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.clauseSat_dense`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1078](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#clause-sat-dense).
+Formalized by `Cslib.Complexity.CookLevin.Situation.clauseSat_dense`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1078](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#clause-sat-dense).
 
 ## In-range shift forcing (L1)
 
@@ -845,7 +845,7 @@ $t < T$, $i < N$, $k < K$, $x < g$ and $u < H - \max(pl(i, k), cn(i, k))$, with 
 subtraction. If $S[t, i]$ and $C[t, k, u + cn(i, k), x]$ are true, then
 $C[t + 1, k, u + pl(i, k), x]$ is true.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.sh_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1092](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1092). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-force).
+Formalized by `Cslib.Complexity.CookLevin.Situation.sh_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1092](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1092). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-force).
 
 ## Cell block of a row equal to an array
 
@@ -857,7 +857,7 @@ stack $k$, depth $j$ and symbol code $x$ in the layout of $E$ at height $H$ is t
 and only if $x = w(k, j)$. A variable $v$ is true under $a$ when $v$ is less than the length of
 $a$ and the entry of $a$ at position $v$ is true.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CellsAre`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cells-are).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CellsAre`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cells-are).
 
 ## Cell literals of an array hold in a row
 
@@ -870,7 +870,7 @@ less than the length of $a$ and the entry of $a$ at that index is true.
 
 Unlike the exact form, this says nothing about the cell variables for other symbol codes.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CellsHold`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cells-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CellsHold`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#cells-hold).
 
 ## Positive core of the shift step (L2⁺)
 
@@ -890,7 +890,7 @@ $pl(i, k) \le j < H - \max(pl(i, k), cn(i, k)) + pl(i, k)$ (truncated subtractio
 $C[t + 1, k, j, R(k, j)]$ is true, where $R$ is the table-driven row update at height $H$ of the
 cells of $c$ for situation $i$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-hold).
 
 ## Exact shift step (L2)
 
@@ -911,7 +911,7 @@ at most one $x < g$ makes $C[t + 1, k, j, x]$ true. Then for every $x < g$, $C[t
 is true exactly when $x = R(k, j)$, where $R$ is the table-driven row update at height $H$ of the
 cells of $c$ for situation $i$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-cell).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-cell).
 
 ## Exact shift step on a real run (L3)
 
@@ -934,7 +934,7 @@ $x = \mathrm{cell}(c_{t+1}, k, j)$. Subtraction is truncated at $0$.
 
 No row is decoded in the proof.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-run).
 
 ## Positive shift step on a real run (L3⁺)
 
@@ -954,7 +954,7 @@ and $j' < H$, and that $S[t, i]$ is true. Then for every $k < K$ and every $j$ w
 $pl(i, k) \le j < H - \max(pl(i, k), cn(i, k)) + pl(i, k)$, the variable
 $C[t + 1, k, j, \mathrm{cell}(c_{t+1}, k, j)]$ is true. Subtraction is truncated at $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_run_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-run-pos).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sh_step_run_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-04/index.html#sh-step-run-pos).
 
 ## Transition clauses force the next label
 
@@ -971,7 +971,7 @@ $X[t + 1, \mathrm{na}(i)]$ is true under $a$.
 The window literals are indexed by $n$ exactly as in the clause, and no one-hot hypothesis on $a$
 is needed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.fam_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#fam-force).
+Formalized by `Cslib.Complexity.CookLevin.Situation.fam_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#fam-force).
 
 ## Transition clauses force the next label, stack-and-depth form
 
@@ -984,7 +984,7 @@ label/state and cell variables at height $H$. If $t < T$, $i < N$, $X[t, \mathrm
 under $a$, and $C[t, k, j, \mathrm{wa}(i, k, j)]$ is true under $a$ for all $k < K$ and $j < d$,
 then $X[t + 1, \mathrm{na}(i)]$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.fam_force_kj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#fam-force-kj).
+Formalized by `Cslib.Complexity.CookLevin.Situation.fam_force_kj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#fam-force-kj).
 
 ## The code of a configuration holds in a row
 
@@ -993,7 +993,7 @@ assignment $a$, a height $H$, a time $t$ and a configuration $c$ of $M$, the cod
 row $t$ when the label/state variable of row $t$ (at height $H$) whose index is the combined
 (label, state) code of $c$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CodeHolds`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#code-holds).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.CodeHolds`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#code-holds).
 
 ## L2 (S-definition, positive)
 
@@ -1011,7 +1011,7 @@ configuration with situation index $i$ such that $X[t, \kappa(c)]$ is true under
 $C[t, k, j, \gamma_c(k, j)]$ is true under $a$ for all $k < K$ and $j < H$. Then the variable
 $X[t + 1, \mathrm{sa}(i)]$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sd_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sd-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sd_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sd-hold).
 
 ## L3 (S-definition, real run)
 
@@ -1030,7 +1030,7 @@ situation $i$ in the label/state block) in place of the next-label table. If $X[
 is true under $a$ and $C[t, k, j, \gamma_{c_t}(k, j)]$ is true under $a$ for all $k < K$ and
 $j < H$, then the variable $X[t + 1, \mathrm{sa}(i)]$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sd_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sd-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sd_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sd-step-run).
 
 ## Composition with the shift family
 
@@ -1054,7 +1054,7 @@ $k' < K$ and $j' < H$. Then for every $k < K$ and every $j$ with
 $\mathrm{pl}(i, k) \le j < H - \max(\mathrm{pl}(i, k), \mathrm{cn}(i, k)) + \mathrm{pl}(i, k)$,
 the variable $C[t + 1, k, j, \gamma_{c_{t+1}}(k, j)]$ is true. Subtraction is truncated at $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sdsh_step_run_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sdsh-step-run-pos).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sdsh_step_run_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#sdsh-step-run-pos).
 
 ## Update forcing (positive)
 
@@ -1070,7 +1070,7 @@ $T$, $H$ and the number $N$ of situations. Let $c$ be a good configuration with 
 $i$ such that $X[t, \kappa(c)]$ is true under $a$ and $C[t, k, j, \gamma_c(k, j)]$ is true under
 $a$ for all $k < K$ and $j < H$. Then the variable $X[t + 1, \mathrm{na}(i)]$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#upd-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#upd-hold).
 
 ## Update forcing, real run
 
@@ -1088,7 +1088,7 @@ $T$, $H$ and the number $N$ of situations. If $X[t, \kappa(c_t)]$ is true under 
 $C[t, k, j, \gamma_{c_t}(k, j)]$ is true under $a$ for all $k < K$ and $j < H$, then the variable
 $X[t + 1, \kappa(c_{t+1})]$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#upd-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#upd-step-run).
 
 ## Pushed-fill forcing
 
@@ -1102,7 +1102,7 @@ $C[t + 1, k, j, \mathrm{pu}(i, k, j)]$ is true under $a$.
 
 Only the situation literal is read.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.pf_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-force).
+Formalized by `Cslib.Complexity.CookLevin.Situation.pf_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-force).
 
 ## Overflow forcing
 
@@ -1115,7 +1115,7 @@ $X[t + 1, \mathrm{sa}(i)]$ is true under $a$, then the variable
 $C[t + 1, k, H - \mathrm{cn}(i, k) + \mathrm{pl}(i, k) + r, 0]$ is true under $a$, where symbol
 code $0$ is the empty cell. Subtraction is truncated at zero.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.ov_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-force).
+Formalized by `Cslib.Complexity.CookLevin.Situation.ov_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-force).
 
 ## Pushed-fill forcing for a good configuration
 
@@ -1130,7 +1130,7 @@ $a$. Then for all $k < K$ and $j < \mathrm{pl}(i, k)$ the variable $C[t + 1, k, 
 under $a$, where $r$ is the entry at stack $k$ and depth $j$ of the table-driven row update, at
 height $H$ and for situation $i$, of the cell codes of $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pf_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pf_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-hold).
 
 ## Overflow cells of the next row hold the table value
 
@@ -1148,7 +1148,7 @@ update at height $H$ of the cells of $c$ for situation $i$. Subtraction is trunc
 
 At these depths the table-driven row update is $0$, the empty cell.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ov_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-hold).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ov_hold`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-hold).
 
 ## Pushed-fill forcing on a real run
 
@@ -1165,7 +1165,7 @@ $X[t + 1, \mathrm{sa}(i)]$ is true under $a$. Then for all $k < K$ and $j < \mat
 variable $C[t + 1, k, j, x]$ is true under $a$, where $x$ is the code of the cell of $c_{t+1}$ at
 stack $k$ and depth $j$ (code $0$ if that cell is empty).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pf_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.pf_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#pf-step-run).
 
 ## Overflow cells of the next row on a real run
 
@@ -1183,7 +1183,7 @@ $C[t + 1, k, j, x]$ is true under $a$, where $x$ is the code of the cell of stac
 depth $j$ from the top in $c_{t+1}$ ($0$ if that cell is empty). Subtraction is truncated at
 zero.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ov_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.ov_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#ov-step-run).
 
 ## Stack cap
 
@@ -1192,7 +1192,7 @@ per-step growth), the stack cap is $H = m + (T + 1) d + 1$.
 
 It is used with $d$ the window depth of the machine.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.capH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h).
+Formalized by `Cslib.Complexity.CookLevin.Situation.capH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h).
 
 ## Stack heights along a run
 
@@ -1201,7 +1201,7 @@ be a configuration and $k$ a stack. For every $t \in \mathbb{N}$, stack $k$ of t
 reached from $c$ after $t$ steps of the idle-extended run has length at most the length of stack
 $k$ of $c$ plus $t \cdot d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#run-i-height).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#run-i-height).
 
 ## Stack heights are at most the cap minus the window depth
 
@@ -1212,7 +1212,7 @@ initial configuration on input $s$, every stack of the configuration at step $t$
 most $H - d$, where $H = m + (T + 1) d + 1$ is the stack cap for input bound $m$, run length $T$
 and per-step growth $d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.capH_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-height).
+Formalized by `Cslib.Complexity.CookLevin.Situation.capH_height`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-height).
 
 ## Stack-cap constraint 1
 
@@ -1220,7 +1220,7 @@ For natural numbers $\ell$, $m$, $T$ and $d$ with $\ell \le m$, we
 have $\ell + (T + 1) d \le H$, where $H = m + (T + 1) d + 1$ is the stack cap for input bound $m$,
 run length $T$ and per-step growth $d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.capH_c1`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-c1).
+Formalized by `Cslib.Complexity.CookLevin.Situation.capH_c1`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-c1).
 
 ## Stack-cap constraint 2
 
@@ -1228,7 +1228,7 @@ For natural numbers $m$, $T$ and $d$ with $T \ge 1$, the stack cap
 $H = m + (T + 1) d + 1$ for input bound $m$, run length $T$ and per-step growth $d$ satisfies
 $2d \le H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.capH_c2`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1459](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-c2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.capH_c2`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1459](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#cap-h-c2).
 
 ## The three depth regions cover every depth exactly once
 
@@ -1240,7 +1240,7 @@ shift) and $m \le j < H$ (overflow).
 These are the depth hypotheses of the pushed-fill, in-range shift and overflow lemmas; nothing is
 assumed about $p$, $q$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.region_cover`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#region-cover).
+Formalized by `Cslib.Complexity.CookLevin.Situation.region_cover`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-05/index.html#region-cover).
 
 ## Cell literals propagate one step along the real run
 
@@ -1258,7 +1258,7 @@ number $k$ below the number of stacks and every depth $j < H$, the cell variable
 stack $k$, depth $j$ and the code of the symbol of $c_t$ there, $0$ if there is none, is true
 under $a$). Then the cell literals of $c_{t+1}$ hold in row $t + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cells_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#cells-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.cells_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#cells-step-run).
 
 ## One-step invariant
 
@@ -1277,7 +1277,7 @@ $t$ is true under $a$.
 If every stack of $c_t$ has length at most $H - d$ and $c_t$ is tracked in row $t$, then
 $c_{t+1}$ is tracked in row $t + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1496](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row-step-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_step_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1496](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row-step-run).
 
 ## One-step invariant at the stack cap
 
@@ -1296,7 +1296,7 @@ $k < K$ and depth $j < H$, the literal of the cell code of $c$ at stack $k$ and 
 $t$ is true under $a$.
 If $c_t$ is tracked in row $t$, then $c_{t+1}$ is tracked in row $t + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_step_capH`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row-step-cap-h).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.row_step_capH`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row-step-cap-h).
 
 ## Row-0 obligation
 
@@ -1308,7 +1308,7 @@ literal of the cell code of $c$ at stack $k$ and depth $j$ in row $0$ is true un
 
 This is a positive form: the literals of the other cell codes are not required to be false.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.Row0`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row0).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.Row0`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#row0).
 
 ## Init obligation, input pinned
 
@@ -1320,7 +1320,7 @@ the row-0 obligation holds for $a$ at height $H$ and the input $x$ followed by $
 code literal of row $0$ and the cell literals of row $0$ at every depth below $H$ are true for the
 initial configuration of $M$ on that input.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.InitObl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1537](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-obl).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.InitObl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1537](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-obl).
 
 ## Row-$t$ induction
 
@@ -1340,7 +1340,7 @@ If, for every $t < T$, every stack of $c_t$ has length at most $H - d$, and the 
 holds for $a$, height $H$ and the input $s$, then $c_t$ is tracked in row $t$ for every
 $t \le T$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-run).
 
 ## Row induction at the stack cap
 
@@ -1359,7 +1359,7 @@ $t$ is true under $a$.
 If the row-0 obligation holds for $a$, height $H$ and the input $s$, then $c_t$ is tracked in row
 $t$ for every $t \le T$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_capH`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-cap-h).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_capH`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1562](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-cap-h).
 
 ## Run tracking from the init obligation
 
@@ -1379,7 +1379,7 @@ symbols, each occurring in $Y$, such that the concatenation $xy$ has length at m
 every $t \le T$, the configuration at time $t$ of the idle-extended run of $M$ from the start
 configuration on $xy$ is tracked in row $t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_of_init`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1573](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1573). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-of-init).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_of_init`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1573](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1573). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#rows-of-init).
 
 ## Satisfying a concatenation of CNF formulas
 
@@ -1388,7 +1388,7 @@ and a finite bit sequence $a$, $a$ satisfies the concatenation of $\varphi$ and 
 clauses of $\varphi$ followed by those of $\psi$) if and only if $a$ satisfies both $\varphi$ and
 $\psi$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.cnfSat_append`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1588](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#cnf-sat-append).
+Formalized by `Cslib.Complexity.CookLevin.Situation.cnfSat_append`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1588](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#cnf-sat-append).
 
 ## Positive dense unit clauses force their variable
 
@@ -1396,7 +1396,7 @@ If an assignment $a$ satisfies a CNF
 formula $\varphi$ containing the dense clause over $V$ variables built from the literal list
 whose only entry is the pair $(v, \mathrm{true})$, then variable $v$ is true under $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.unit_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#unit-force).
+Formalized by `Cslib.Complexity.CookLevin.Situation.unit_force`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#unit-force).
 
 ## Index of the empty-cell variable of the input stack
 
@@ -1405,7 +1405,7 @@ $H$ and $j$, this is the index, in the layout of $E$ at height $H$, of the cell 
 $0$, the stack number of the input stack, depth $j$ from the top and symbol code $0$ (the empty
 cell).
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.zIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#z-idx).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.zIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#z-idx).
 
 ## Start-code clause of the init family
 
@@ -1415,7 +1415,7 @@ dense clause over the $(T + 1)W$ variables of the layout of $E$, where $W$ is it
 height $H$, whose only literal is the positive literal of the label/state variable of row $0$ for
 the code under $E$ of the pair formed by the main label of $M$ and its initial state.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initCode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-code).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initCode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-code).
 
 ## Empty-stack clauses of the init family
 
@@ -1427,7 +1427,7 @@ $(T + 1)W$ variables of the layout of $E$, where $W$ is its row width at height 
 literal is the positive literal of the cell variable of row $0$ for stack $k$, depth $j$ and code
 $0$, the empty cell. They ask that every stack other than the input stack be empty in row $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initOther`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1614](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-other).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initOther`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1614](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-other).
 
 ## Input clauses of the init family
 
@@ -1439,7 +1439,7 @@ row width at height $H$, whose only literal is the positive literal of the cell 
 $0$ for the input stack, depth $j$ and the symbol code under $E$ of $x_j$. They pin the input $x$
 at the top of the input stack, one cell at a time.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initIn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1619](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-in).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initIn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1619](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-in).
 
 ## Certificate clauses of the init family
 
@@ -1455,7 +1455,7 @@ $C_0[j, 0]$ followed by $C_0[j, e(z)]$ for each $z$ in $Y$ in order, all positiv
 Code $0$ is the empty cell, so the clause for $j$ asks that depth $j$ of the input stack be empty
 or hold a symbol of $Y$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initCert`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1624](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-cert).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initCert`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1624](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-cert).
 
 ## Prefix clauses of the init family
 
@@ -1467,7 +1467,7 @@ $j = |x|, |x| + 1, \dots, m - 1$ in order (none if $m \le |x|$), the dense claus
 $(T + 1)W$ variables of the layout, where $W$ is its row width at height $H$, with the literals
 $\neg Z_j$ and $Z_{j+1}$. On these depths, an empty cell forces an empty cell one level deeper.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initPre`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-pre).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initPre`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-pre).
 
 ## Length-bound clauses of the init family
 
@@ -1477,7 +1477,7 @@ increasing order of $j$: the dense clause over the variables of the transition-c
 the layout of $E$ at bounds $T$ and $H$, built from the single positive literal of the empty-cell
 variable of the input stack at depth $j$ in row $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initTail`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1635](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-tail).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initTail`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1635](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-tail).
 
 ## The row-0 init family of an encoding
 
@@ -1493,7 +1493,7 @@ input $x$ at the top of the input stack, cells that are empty or hold a symbol o
 depths $|x| \le j < m$, with an empty cell at such a depth $j$ forcing an empty cell at $j + 1$,
 and empty cells at the depths $m \le j < H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-family).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.initFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-family).
 
 ## Init semantics
 
@@ -1503,7 +1503,7 @@ satisfies the init family of $E$ for $x$, $Y$, $m$, $T$ and $H$. Then there is a
 input symbols, each occurring in $Y$, such that the concatenation $xy$ has length at most $m$ and
 the row-0 obligation holds for $a$, height $H$ and the input $xy$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_row0`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1653](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-row0).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_row0`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1653](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-row0).
 
 ## The init family discharges the init obligation
 
@@ -1514,7 +1514,7 @@ satisfies the init family of $E$ for $x$, $Y$, $m$, $T$ and $H$, then the init o
 for $a$, $x$, $Y$, $m$ and $T$: there is a list $y$ of symbols of $Y$ with $|x| + |y| \le m$ such
 that the row-0 obligation holds for $a$ at height $H$ and the input $x$ followed by $y$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_obl`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1735](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1735). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-obl-2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_obl`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1735](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1735). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-06/index.html#init-obl-2).
 
 ## A satisfying assignment tracks a certified run
 
@@ -1535,7 +1535,7 @@ of row $t$ for the (label, state) code of $c_t$ is true, and for every stack num
 every depth $j < H$ the variable of row $t$ for stack $k$, depth $j$ and the cell code of $c_t$ at
 $(k, j)$ is true.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_of_initFamily`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1742](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#rows-of-init-family).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.rows_of_initFamily`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1742](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#rows-of-init-family).
 
 ## Faithful literal list
 
@@ -1547,7 +1547,7 @@ Equivalently, every literal of $\ell$ survives into the dense clause over $V$ va
 $\ell$: it is in range, and not shadowed by an earlier literal at the same index with the other
 sign.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Faithful`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1761](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#faithful).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Faithful`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1761](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#faithful).
 
 ## Faithful dense clause family
 
@@ -1555,7 +1555,7 @@ A CNF formula $\varphi$ is a faithful family over $V$
 variables when every clause of $\varphi$ is the dense clause over $V$ variables built from some
 list of literals that is faithful for $V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.FamOK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1765](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#fam-ok).
+Formalized by `Cslib.Complexity.CookLevin.Situation.FamOK`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1765](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#fam-ok).
 
 ## Faithful dense clause family with positive literals
 
@@ -1564,7 +1564,7 @@ family with positive literals over $V$ variables when every clause of $\varphi$ 
 over $V$ variables built from some list $\ell$ of literals that is faithful for $V$ and contains a
 positive literal $(p, \mathrm{true})$ for some $p$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.FamPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1769](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#fam-pos).
+Formalized by `Cslib.Complexity.CookLevin.Situation.FamPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#fam-pos).
 
 ## Exact clause semantics
 
@@ -1573,7 +1573,7 @@ variable index $p$ and a sign $b$ that is faithful for $V$, and let $a$ be a lis
 Then $a$ satisfies the dense clause over $V$ variables built from $\ell$ if and only if some
 $(p, b) \in \ell$ has $p < |a|$ and $a_p = b$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.clauseSat_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#clause-sat-iff).
+Formalized by `Cslib.Complexity.CookLevin.Situation.clauseSat_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#clause-sat-iff).
 
 ## The all-true assignment satisfies a faithful clause with a positive literal
 
@@ -1582,7 +1582,7 @@ $V \in \mathbb{N}$ and let $\ell$ be a list of literals that is faithful for $V$
 positive literal $(p, \mathrm{true})$. Then the all-true assignment of length $V$ satisfies the
 dense clause over $V$ variables built from $\ell$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.sat_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1834](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#sat-all-true).
+Formalized by `Cslib.Complexity.CookLevin.Situation.sat_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1834](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#sat-all-true).
 
 ## Variables of rows up to the time bound
 
@@ -1591,7 +1591,7 @@ natural numbers with $t \le T$, and let $W$ be the number of variables per time 
 height $H$. If $p < (t + 1) W$, then $p$ is less than the number of variables of $L$ for bounds
 $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.lt_numVars`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1847](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1847). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#lt-num-vars).
+Formalized by `Cslib.Complexity.CookLevin.Situation.lt_numVars`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1847](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1847). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#lt-num-vars).
 
 ## The init family is faithful with positive literals
 
@@ -1602,7 +1602,7 @@ $H$. Then every clause of the init family of $E$ for $x$, $Y$, $m$, $T$, $H$ is 
 over $V$ variables built from a list of literals that is faithful for $V$ and contains a positive
 literal; that is, the init family is a faithful family with positive literals over $V$ variables.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1919](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#init-pos).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_pos`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1919](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#init-pos).
 
 ## Accepting code
 
@@ -1610,7 +1610,7 @@ For an encoding $E$ of a finite stack machine $M$, the accepting code is
 the (label, state) code that $E$ assigns to the pair of the halted label and the initial state of
 $M$, the label and state of a halted configuration as acceptance reads it.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1969](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1969). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acode).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1969](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1969). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acode).
 
 ## Accept-code clauses
 
@@ -1622,7 +1622,7 @@ label/state variable $u$ at time $t$. The accept-code clauses are the CNF formul
 each $u < A_0$ in increasing order, the dense clause over $V$ variables built from the single
 literal $X[T, u]$ if $u = c^\ast$ and $\neg X[T, u]$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accCode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1972](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1972). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-code).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accCode`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1972](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1972). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-code).
 
 ## Accept-cell clauses
 
@@ -1634,7 +1634,7 @@ depth $j$ and symbol code $x$ at time $t$. The accept-cell clauses are the CNF f
 for each $x < g$ in increasing order, the dense clause over $V$ variables built from the single
 literal $C[T, \kappa(k_1), 0, x]$ if $x = e$ and $\neg C[T, \kappa(k_1), 0, x]$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accCell`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1977](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-cell).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accCell`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1977](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-cell).
 
 ## The accept family
 
@@ -1643,7 +1643,7 @@ symbol of the output stack of $M$, and let $T, H \in \mathbb{N}$. The accept fam
 bounds $T$ and $H$ is the CNF formula formed by the accept-code clauses at $T$ and $H$ followed by
 the accept-cell clauses for $\alpha$ at $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1983](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-family).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 1983](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L1983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-family).
 
 ## Accept-code clauses pin the (label, state) code
 
@@ -1655,7 +1655,7 @@ when $v < |a|$ and $a_v$ is true. If an assignment $a$ satisfies the accept fami
 at bounds $T$ and $H$, and $X[T, u]$ is true under $a$, then $u$ is the code that $E$ assigns to
 the halted label together with the initial state of $M$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_code`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2004](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2004). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-code-2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_code`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2004](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2004). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-code-2).
 
 ## Accept-cell clauses pin the top output symbol
 
@@ -1668,7 +1668,7 @@ true. If an assignment $a$ satisfies the accept family for $\alpha$ at bounds $T
 the variable $C[T, \kappa(k_1), 0, x]$ is true under $a$, then $x$ is the code of $\alpha$ for
 stack $k_1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2010](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-cell-2).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_cell`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2010](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-cell-2).
 
 ## Accepting configuration
 
@@ -1678,7 +1678,7 @@ is the initial state of $M$, and the output stack of $c$ is nonempty with top sy
 
 This is the shape of the halting configuration with output $[\alpha]$ that acceptance reads.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Accepts`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2019](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2019). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#accepts).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Accepts`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2019](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2019). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#accepts).
 
 ## Satisfying assignments yield accepting runs
 
@@ -1697,7 +1697,7 @@ input $xy$ is, after $T$ steps, an accepting configuration for $\alpha$.
 
 Apart from the accept family, no one-hot or at-most-one clauses are assumed.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accept_sound`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2029](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#accept-sound).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accept_sound`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2029](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#accept-sound).
 
 ## No accepting certificate, no satisfying assignment
 
@@ -1719,7 +1719,7 @@ accept family of $E$ for $\alpha$.
 
 In particular, the all-true assignment does not satisfy all five.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.unsat_of_noAccept`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2065](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#unsat-of-no-accept).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.unsat_of_noAccept`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2065](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#unsat-of-no-accept).
 
 ## The all-true assignment satisfies the transition, shift and init families
 
@@ -1738,7 +1738,7 @@ $x$, $Y$, $m$.
 
 Every clause of these families has a positive literal at an index below $V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.trans_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2078](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#trans-all-true).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.trans_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2078](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#trans-all-true).
 
 ## The all-true assignment violates the accept family
 
@@ -1748,7 +1748,7 @@ $T, H \in \mathbb{N}$. The assignment that sets all $V$ variables to true, where
 of variables of the layout of $E$ at bounds $T$ and $H$, does not satisfy the accept family for
 $\alpha$ at bounds $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accFamily_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2096](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2096). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-family-all-true).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accFamily_allTrue`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2096](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2096). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#acc-family-all-true).
 
 ## Unfolding the idle-extended run from the front
 
@@ -1757,7 +1757,7 @@ configuration $c$ and every $n \in \mathbb{N}$, the configuration at time $n + 1
 idle-extended run of $M$ from $c$ equals the configuration at time $n$ of the idle-extended run
 of $M$ from the idle-extended step of $M$ at $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI_succ'`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#run-i-succ).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI_succ'`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-07/index.html#run-i-succ).
 
 ## The idle-extended run follows the real run
 
@@ -1766,7 +1766,7 @@ $n \in \mathbb{N}$, and let $c, c'$ be configurations of $M$. If iterating the s
 $M$ $n$ times as a partial function, starting from $c$, yields $c'$, then the idle-extended run
 of $M$ from $c$ is at $c'$ after $n$ steps.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI_of_iterate`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-of-iterate).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI_of_iterate`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-of-iterate).
 
 ## A halted configuration is fixed by the idle-extended run
 
@@ -1774,7 +1774,7 @@ Let $M$ be a finite stack
 machine and $c$ a configuration of $M$ whose label is empty (that is, $c$ has halted). Then for
 every $t \in \mathbb{N}$, the idle-extended run of $M$ from $c$ is at $c$ after $t$ steps.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI_halted`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-halted).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI_halted`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-halted).
 
 ## The idle-extended run stays at the halting configuration
 
@@ -1785,7 +1785,7 @@ in the initial state, with $l'$ on the output stack and every other stack empty)
 steps. Then for every $T \ge p$, the configuration reached after $T$ steps of the idle-extended
 run of $M$ from the initial configuration on $s$ is that halting configuration.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.runI_haltList`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-halt-list).
+Formalized by `Cslib.Complexity.CookLevin.Situation.runI_haltList`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-i-halt-list).
 
 ## Acceptance of a halting configuration
 
@@ -1794,14 +1794,14 @@ alphabet and $\mathrm{acc}$ an output symbol. The halting configuration with out
 in the initial state, with $l'$ on the output stack and every other stack empty) is accepting for
 $\mathrm{acc}$ if and only if $l'$ is nonempty and its first element is $\mathrm{acc}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.accepts_haltList`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#accepts-halt-list).
+Formalized by `Cslib.Complexity.CookLevin.Situation.accepts_haltList`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#accepts-halt-list).
 
 ## Uniqueness of quotient and remainder
 
 Let $W$, $t$, $t'$, $r$ and $r'$ be natural
 numbers with $r < W$ and $r' < W$. If $tW + r = t'W + r'$, then $t = t'$ and $r = r'$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.row_pos_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#row-pos-inj).
+Formalized by `Cslib.Complexity.CookLevin.Situation.row_pos_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#row-pos-inj).
 
 ## Equal low-order digits give equal residues
 
@@ -1810,7 +1810,7 @@ numbers. If $\lfloor i / b^e \rfloor \bmod b = \lfloor i' / b^e \rfloor \bmod b$
 $e < n$, that is, $i$ and $i'$ have the same first $n$ base-$b$ digits, then
 $i \bmod b^n = i' \bmod b^n$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.mod_pow_eq_of_digits`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#mod-pow-eq-of-digits).
+Formalized by `Cslib.Complexity.CookLevin.Situation.mod_pow_eq_of_digits`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#mod-pow-eq-of-digits).
 
 ## Situation injectivity
 
@@ -1825,7 +1825,7 @@ $j$, then $i$ is the situation index of $c$.
 This is the converse of the fact that the situation index of such a $c$ is below $N$ and has the
 code and the windows of $c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sit_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sit-inj).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sit_inj`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sit-inj).
 
 ## The real run's literals
 
@@ -1840,7 +1840,7 @@ at time $t$ for stack $k$, depth $j$ and the cell code of $c_t$ at stack $k$, de
 the empty cell, included); or the label/state variable at time $t + 1$ for $A_0 + i$, where $i$
 is the situation index of $c_t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.RunLit`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-lit).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.RunLit`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-lit).
 
 ## The assignment of the real run's literals
 
@@ -1850,7 +1850,7 @@ number of variables of the transition-clause formula for $T$ and $H$. The assign
 of $V$ truth values whose entry $p$, for each $p < V$, is true exactly when $p$ is one of the
 real run's literals of $s$ at height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.runAsg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-asg).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.runAsg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#run-asg).
 
 ## Faithful clauses with a literal agreeing with the real run are satisfied
 
@@ -1862,7 +1862,7 @@ literal such that $b$ is true exactly when $p$ is a run literal of $s$ at height
 dense clause over $V$ variables built from $\ell$ is satisfied by the run assignment of $s$ for
 $T$ and $H$, which is true exactly on the run literals.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sat_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sat-run).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sat_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sat-run).
 
 ## Situation variables lie in the label/state block
 
@@ -1870,7 +1870,7 @@ Let $E$ be an encoding of a finite TM2
 machine with $N$ situations. For every natural number $i < N$, the position of the variable of
 situation $i$ is less than the label/state block size $A$ of the clause layout of $E$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sa_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sa-lt).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sa_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sa-lt).
 
 ## Transition families with a run-literal head are satisfied by the run
 
@@ -1890,7 +1890,7 @@ $H$ and $N$.
 In clause $(t, i)$ the head literal is true when $i$ is the situation index of $c_t$; otherwise
 the clause is satisfied by a body literal whose variable is false, by situation injectivity.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.fam_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#fam-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.fam_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#fam-complete).
 
 ## The run assignment satisfies the update family
 
@@ -1907,7 +1907,7 @@ of $E$.
 In the clause of the real situation, the head literal is the code of the real next
 configuration, by the agreement of the tables with the machine's step.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#upd-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.upd_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#upd-complete).
 
 ## The run assignment satisfies the situation-definition family
 
@@ -1922,7 +1922,7 @@ $\mathrm{sa}$ of $E$ in place of the next-label table.
 In the clause of the real situation, the head literal is the real situation literal, by the
 definition of the run literals.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sdef_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sdef-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sdef_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sdef-complete).
 
 ## The run assignment satisfies the cell-shift family
 
@@ -1939,7 +1939,7 @@ for $N$ situations, times $t < T$ and height $H$.
 Off the real situation the negated situation literal is true; on it, the target cell of row
 $t + 1$ is the one given by the table-driven row update.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.shift_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#shift-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.shift_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#shift-complete).
 
 ## Unit clauses on run literals are satisfied
 
@@ -1949,7 +1949,7 @@ number of variables of the layout of $E$ for $T$ and $H$. If $p < V$ is a run li
 height $H$, then the dense clause over $V$ variables whose only literal is $x_p$ is satisfied by
 the run assignment of $s$ for $T$ and $H$, which is true exactly on the run literals.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sat_unit`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sat-unit).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.sat_unit`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#sat-unit).
 
 ## Row-0 cells of the start configuration are run literals
 
@@ -1960,7 +1960,7 @@ depth $j$ in the initial configuration on $s$. Then the cell variable of time $0
 depth $j$ and symbol code $x$ at height $H$ is one of the real run's literals of $s$ at
 height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.lit_cell0`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#lit-cell0).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.lit_cell0`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#lit-cell0).
 
 ## Completeness of the init family
 
@@ -1970,7 +1970,7 @@ $m$, $T$ and $H$ be natural numbers with $|xy| \le m < H$, where $xy$ is the con
 the assignment of the real run's literals of $xy$ for $T$ steps at height $H$ satisfies the init
 family (clauses I1 to I6) for $x$, $Y$, $m$, $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#init-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.init_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#init-complete).
 
 ## Completeness of the accept family
 
@@ -1983,7 +1983,7 @@ of its output stack. Then the assignment of the real run's literals of $s$ for $
 height $H$ satisfies the accept family for $\mathrm{acc}$ at $T$ and $H$, both its positive and
 its negated unit clauses.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#acc-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.acc_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#acc-complete).
 
 ## Completeness of the five clause families
 
@@ -2005,7 +2005,7 @@ $x$, $Y$ and $m$, and the accept family for $\mathrm{acc}$.
 
 No bound $|x| \le m$ and no encodability of $\mathrm{acc}$ is needed in this direction.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accept_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2617](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#accept-complete).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.accept_complete`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2617](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-08/index.html#accept-complete).
 
 ## The five Cook–Levin clause families are satisfiable iff some certificate is accepted
 
@@ -2023,7 +2023,7 @@ input symbols, all in $Y$, with $|xy| \le m$ such that the idle-extended run of 
 initial configuration on input $xy$ is, after $T$ steps, an accepting configuration for
 $\mathrm{acc}$: halted, in the initial state, with $\mathrm{acc}$ on top of stack $k_1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.five_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2637](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-09/index.html#five-iff).
+Formalized by `Cslib.Complexity.CookLevin.Situation.Enc.five_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Situation.lean, line 2637](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Situation.lean#L2637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/part-09/index.html#five-iff).
 
 ## Depends on
 
@@ -2032,4 +2032,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: situation tables of a multi-stack machine and the correctness of the formula](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-situation-tables-of-a-multi-stack-mac)

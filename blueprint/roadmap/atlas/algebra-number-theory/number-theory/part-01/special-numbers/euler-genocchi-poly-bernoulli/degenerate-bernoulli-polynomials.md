@@ -7,7 +7,7 @@ statement: formalized
 
 # Degenerate Bernoulli polynomials
 
-8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html).
+8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html).
 
 ## Modified degenerate Bernoulli polynomials
 
@@ -23,7 +23,7 @@ undefined, $c$ is taken to be $0$, with $0^{-1} = 0$ and $0^0 = 1$.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Section 1 (generating function of Dolgy, Kim, Kwon and Seo).
 
-Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli`, a definition declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli).
+Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli`, a definition declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli).
 
 ## Generating function of the modified degenerate Bernoulli polynomials
 
@@ -44,7 +44,7 @@ $(1+\lambda)^{t/\lambda} - 1$ equals $t\,(1+\lambda)^{xt/\lambda}$.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Section 1.
 
-Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli_generating_function`, a theorem declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-generating).
+Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli_generating_function`, a theorem declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-generating).
 
 ## The first modified degenerate Bernoulli polynomial
 
@@ -56,7 +56,7 @@ $\mathfrak{B}_{1,\lambda}(x) = x - 1/2$.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Section 1.
 
-Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli_one`, a theorem declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-one).
+Formalized by `MetaMathlibExt.modifiedDegenerateBernoulli_one`, a theorem declared in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-one).
 
 ## Symmetric identity for modified degenerate Bernoulli polynomials
 
@@ -81,7 +81,7 @@ $j > i$ and $0$ otherwise.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Theorem 1 (`jis-2024-24.5.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_symmetric_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-symmetric).
+Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_symmetric_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-symmetric).
 
 ## Three-term identity for modified degenerate Bernoulli polynomials
 
@@ -100,7 +100,7 @@ t\, \mathfrak{D}_{r,s,\lambda}(z, x) = 0$.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Corollary 2, equation (sunpanD) (`jis-2024-24.5.4-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_three_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-three-term).
+Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_three_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-three-term).
 
 ## Miki-type identity for modified degenerate Bernoulli numbers
 
@@ -123,7 +123,7 @@ where $\log$ is the principal branch.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Corollary 2, equation (mikiD) (`jis-2024-24.5.4-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_miki` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-miki).
+Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_miki` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-miki).
 
 ## Matiyasevich-type identity for modified degenerate Bernoulli numbers
 
@@ -144,7 +144,7 @@ where $\log$ is the principal branch.
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Corollary 2, equation (matiyasevichD) (`jis-2024-24.5.4-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_matiyasevich` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-matiyasevi).
+Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_matiyasevich` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-matiyasevi).
 
 ## A convolution lemma for modified degenerate Bernoulli polynomials
 
@@ -168,7 +168,7 @@ $s_i = 0$).
 
 - Qi-Peng Su and Hao Pan, *Symmetric Identities on Modified Degenerate Bernoulli Polynomials*, Journal of Integer Sequences 27 (2024), Article 24.5.4, Lemma 3 (`jis-2024-24.5.4-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_lemma_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-lemma-thre).
+Stated but not proved: `MetaMathlibExt.modifiedDegenerateBernoulli_lemma_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModifiedDegenerateBernoulliWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html#modified-degenerate-bernoulli-lemma-thre).
 
 ## Depends on
 
@@ -177,4 +177,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Degenerate Bernoulli polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/degenerate-bernoulli-polynomials)

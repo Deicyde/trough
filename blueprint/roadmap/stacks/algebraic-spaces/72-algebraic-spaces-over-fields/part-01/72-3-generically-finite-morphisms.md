@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.3 Generically finite morphisms
 
-Section 72.3 of the Stacks Project, [Tag 0ACY](https://stacks.math.columbia.edu/tag/0ACY). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.3 of the Stacks Project, [Tag 0ACY](https://stacks.math.columbia.edu/tag/0ACY). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AD1, a lemma
 
 [Tag 0AD1](https://stacks.math.columbia.edu/tag/0AD1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_localRingDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteCodimensionOne.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteCodimensionOne.lean#L187).
+**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_localRingDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteCodimensionOne.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteCodimensionOne.lean#L187).
 
 > **Stacks Project, Tag 0AD1.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`
 > which is locally of finite type, with `Y` locally Noetherian, and let `y` be a point of `|Y|`
@@ -49,7 +49,7 @@ theorem isQuasiFiniteAt_of_localRingDimension_le_one
 
 [Tag 0AD2](https://stacks.math.columbia.edu/tag/0AD2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_localRingDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearCodimensionOnePoint.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearCodimensionOnePoint.lean#L67).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_localRingDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearCodimensionOnePoint.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearCodimensionOnePoint.lean#L69).
 
 > **Stacks Project, Tag 0AD2.** Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over
 > `S` with `Y` locally Noetherian, and let `y` be a point of `|Y|` whose local ring has dimension
@@ -79,7 +79,7 @@ theorem exists_isOpenSubspace_isFinite_pullback_snd_of_localRingDimension_le_one
 
 [Tag 0BBQ](https://stacks.math.columbia.edu/tag/0BBQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_localRingDimension_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L646). The attribute's comment: “part (1): every point of codimension zero”.
+**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_localRingDimension_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L646). The attribute's comment: “part (1): every point of codimension zero”.
 
 > **Stacks 0BBQ, part (1).** Let `X` be a Noetherian algebraic space over `S` and let
 > `f : Y ⟶ X` be a proper birational morphism with `Y` reduced. The maximal open subspace `U` of
@@ -96,7 +96,7 @@ theorem mem_isomorphismLocus_of_localRingDimension_eq_zero
     x ∈ Set.range (pointsMap B S hS U.toFunctor U.ι)
 ```
 
-**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_finite_fibre_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L676). The attribute's comment: “part (3): every point with finite fibre and normal local ring”.
+**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_finite_fibre_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L676). The attribute's comment: “part (3): every point with finite fibre and normal local ring”.
 
 > **Stacks 0BBQ, part (3).** With the hypotheses of part (1), the maximal open subspace over
 > which `f` is an isomorphism contains every point of `|X|` whose fibre in `|Y|` is finite and
@@ -113,7 +113,7 @@ theorem mem_isomorphismLocus_of_finite_fibre_of_normal
     x ∈ Set.range (pointsMap B S hS U.toFunctor U.ι)
 ```
 
-**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_localRingDimension_eq_one_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L694). The attribute's comment: “part (2): every point of codimension one with normal local ring”.
+**`AlgebraicGeometry.Space.mem_isomorphismLocus_of_localRingDimension_eq_one_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperBirationalIsomorphismLocus.lean#L694). The attribute's comment: “part (2): every point of codimension one with normal local ring”.
 
 > **Stacks 0BBQ, part (2).** With the hypotheses of part (1), the maximal open subspace over
 > which `f` is an isomorphism contains every point of `|X|` of codimension `1` whose local ring
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.3, Tag 0ACY](https://stacks.math.columbia.edu/tag/0ACY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

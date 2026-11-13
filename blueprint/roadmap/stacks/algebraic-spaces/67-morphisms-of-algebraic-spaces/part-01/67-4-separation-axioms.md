@@ -8,7 +8,7 @@ proof: formalized
 
 # 67.4 Separation axioms
 
-Section 67.4 of the Stacks Project, [Tag 03HJ](https://stacks.math.columbia.edu/tag/03HJ). 14 tags here are carried by 55 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.4 of the Stacks Project, [Tag 03HJ](https://stacks.math.columbia.edu/tag/03HJ). 14 tags here are carried by 55 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03HJ, the section
 
@@ -16,17 +16,17 @@ Section 67.4 of the Stacks Project, [Tag 03HJ](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.relativelyRepresentable_pullbackDiagonal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L33) (StacksFrontier): “the relative diagonal is representable”.
-- [`AlgebraicGeometry.Space.IsSeparated`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L274), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L35) (StacksFrontier): “separated morphisms”.
-- [`AlgebraicGeometry.Space.IsLocallySeparated`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L280), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L36) (StacksFrontier): “locally separated morphisms”.
-- [`AlgebraicGeometry.Space.IsQuasiSeparated`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L286), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L37) (StacksFrontier): “quasi-separated morphisms”.
-- [`AlgebraicGeometry.Space.separationProperties_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean#L68), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L38) (StacksFrontier): “agreement with the notions for representable morphisms”.
+- [`AlgebraicGeometry.relativelyRepresentable_pullbackDiagonal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L33) (StacksFrontier): “the relative diagonal is representable”.
+- [`AlgebraicGeometry.Space.IsSeparated`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L274), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L35) (StacksFrontier): “separated morphisms”.
+- [`AlgebraicGeometry.Space.IsLocallySeparated`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L280), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L36) (StacksFrontier): “locally separated morphisms”.
+- [`AlgebraicGeometry.Space.IsQuasiSeparated`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L286), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L37) (StacksFrontier): “quasi-separated morphisms”.
+- [`AlgebraicGeometry.Space.separationProperties_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean#L68), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxiomsSection.lean#L38) (StacksFrontier): “agreement with the notions for representable morphisms”.
 
 ## Tag 03HK, a lemma
 
 [Tag 03HK](https://stacks.math.columbia.edu/tag/03HK) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyRepresentable_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean#L96). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.relativelyRepresentable_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonal.lean#L96). The attribute's comment: “part (1)”.
 
 > **Stacks 03HK, part (1).** The relative diagonal of a morphism out of an algebraic space
 > over `S` is relatively representable. The target need not be an algebraic space: the relative
@@ -39,7 +39,7 @@ theorem relativelyRepresentable_pullbackDiagonal (f : F ⟶ G)
     yoneda.relativelyRepresentable (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.presheaf_locallyOfFiniteType_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L53). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.presheaf_locallyOfFiniteType_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L53). The attribute's comment: “part (2)”.
 
 > **Stacks 03HK, part (2).** The relative diagonal of a morphism out of an algebraic space
 > over `S` is locally of finite type.
@@ -52,7 +52,7 @@ theorem presheaf_locallyOfFiniteType_pullbackDiagonal (f : F ⟶ G)
       (BigFppfOver.toScheme B S hS))) (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.presheaf_monomorphisms_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L64). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.presheaf_monomorphisms_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L64). The attribute's comment: “part (3)”.
 
 > **Stacks 03HK, part (3).** Every represented base change of the relative diagonal of a
 > morphism out of an algebraic space over `S` is a monomorphism of schemes.
@@ -65,7 +65,7 @@ theorem presheaf_monomorphisms_pullbackDiagonal (f : F ⟶ G)
       (BigFppfOver.toScheme B S hS))) (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.presheaf_isSeparated_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L75). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.presheaf_isSeparated_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L75). The attribute's comment: “part (4)”.
 
 > **Stacks 03HK, part (4).** The relative diagonal of a morphism out of an algebraic space
 > over `S` is separated.
@@ -78,7 +78,7 @@ theorem presheaf_isSeparated_pullbackDiagonal (f : F ⟶ G)
       (BigFppfOver.toScheme B S hS))) (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.presheaf_locallyQuasiFinite_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L86). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.presheaf_locallyQuasiFinite_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDiagonalProperties.lean#L86). The attribute's comment: “part (5)”.
 
 > **Stacks 03HK, part (5).** The relative diagonal of a morphism out of an algebraic space
 > over `S` is locally quasi-finite.
@@ -92,7 +92,7 @@ theorem presheaf_locallyQuasiFinite_pullbackDiagonal (f : F ⟶ G)
       (BigFppfOver.toScheme B S hS))) (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.monomorphisms_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L192). The attribute's comment: “representable and a monomorphism”.
+**`AlgebraicGeometry.Space.monomorphisms_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L192). The attribute's comment: “representable and a monomorphism”.
 
 > **Stacks 03HK, representability and the monomorphism condition.** The relative diagonal of
 > a morphism of algebraic spaces over `S` is representable and a monomorphism after every
@@ -108,7 +108,7 @@ theorem monomorphisms_diagonal (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ Y) :
       (BigFppfOver.toScheme B S hS)).presheaf (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.locallyOfFiniteType_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L203). The attribute's comment: “locally of finite type”.
+**`AlgebraicGeometry.Space.locallyOfFiniteType_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L203). The attribute's comment: “locally of finite type”.
 
 > **Stacks 03HK, local finite type.** Every represented base change of the relative diagonal
 > of a morphism of algebraic spaces over `S` is a morphism of schemes which is locally of finite
@@ -122,7 +122,7 @@ theorem locallyOfFiniteType_diagonal (hX : IsAlgebraicSpace B S hS X) (f : X ⟶
       (BigFppfOver.toScheme B S hS)).presheaf (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L215). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Space.isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L215). The attribute's comment: “separated”.
 
 > **Stacks 03HK, separatedness.** Every represented base change of the relative diagonal of a
 > morphism of algebraic spaces over `S` is a separated morphism of schemes. This is part (3) of
@@ -136,7 +136,7 @@ theorem isSeparated_diagonal (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ Y) :
       (BigFppfOver.toScheme B S hS)).presheaf (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.locallyQuasiFinite_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L227). The attribute's comment: “locally quasi-finite”.
+**`AlgebraicGeometry.Space.locallyQuasiFinite_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L227). The attribute's comment: “locally quasi-finite”.
 
 > **Stacks 03HK, local quasi-finiteness.** Every represented base change of the relative
 > diagonal of a morphism of algebraic spaces over `S` is a morphism of schemes which is locally
@@ -155,7 +155,7 @@ theorem locallyQuasiFinite_diagonal (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ 
 
 [Tag 03HL](https://stacks.math.columbia.edu/tag/03HL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L274). The attribute's comment: “part (1): separated”. References: EGA I (5.4.1).
+**`AlgebraicGeometry.Space.IsSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L274). The attribute's comment: “part (1): separated”. References: EGA I (5.4.1).
 
 > **Stacks 03HL, part (1).** A morphism of algebraic spaces over `S` is *separated* when
 > its relative diagonal is a closed immersion.
@@ -164,7 +164,7 @@ theorem locallyQuasiFinite_diagonal (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ 
 abbrev IsSeparated (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsLocallySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L280). The attribute's comment: “part (2): locally separated”.
+**`AlgebraicGeometry.Space.IsLocallySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L280). The attribute's comment: “part (2): locally separated”.
 
 > **Stacks 03HL, part (2).** A morphism of algebraic spaces over `S` is *locally
 > separated* when its relative diagonal is an immersion.
@@ -173,7 +173,7 @@ abbrev IsSeparated (f : F ⟶ G) : Prop
 abbrev IsLocallySeparated (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L286). The attribute's comment: “part (3): quasi-separated”. References: EGA IV (1.2.1); SGA 4 VI (1.7), “quasi-separated”.
+**`AlgebraicGeometry.Space.IsQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L286). The attribute's comment: “part (3): quasi-separated”. References: EGA IV (1.2.1); SGA 4 VI (1.7), “quasi-separated”.
 
 > **Stacks 03HL, part (3).** A morphism of algebraic spaces over `S` is
 > *quasi-separated* when its relative diagonal is quasi-compact.
@@ -186,7 +186,7 @@ abbrev IsQuasiSeparated (f : F ⟶ G) : Prop
 
 [Tag 03KK](https://stacks.math.columbia.edu/tag/03KK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L65). The attribute's comment: “locally separated”.
+**`AlgebraicGeometry.Space.isLocallySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L65). The attribute's comment: “locally separated”.
 
 > A separated morphism of algebraic spaces over `S` is locally separated.
 
@@ -196,7 +196,7 @@ theorem isLocallySeparated_of_isSeparated
     IsLocallySeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L72). The attribute's comment: “quasi-separated”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L72). The attribute's comment: “quasi-separated”.
 
 > A separated morphism of algebraic spaces over `S` is quasi-separated.
 
@@ -210,7 +210,7 @@ theorem isQuasiSeparated_of_isSeparated
 
 [Tag 03KL](https://stacks.math.columbia.edu/tag/03KL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L63). The attribute's comment: “quasi\_separated\_base\_change”. References: SGA 4 VI (1.9.1), “(ii), special case”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L63). The attribute's comment: “quasi\_separated\_base\_change”. References: SGA 4 VI (1.9.1), “(ii), special case”.
 
 > A base change of a quasi-separated morphism of algebraic spaces over `S` is quasi-separated.
 
@@ -220,7 +220,7 @@ theorem isQuasiSeparated_pullback {X Y Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
     IsQuasiSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_pullbackSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L666). The attribute's comment: “separated\_base\_change”.
+**`AlgebraicGeometry.Space.isSeparated_pullbackSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L666). The attribute's comment: “separated\_base\_change”.
 
 > A separated morphism stays separated after any base change.
 
@@ -229,7 +229,7 @@ theorem isSeparated_pullbackSnd {Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f :
     (h : IsSeparated B S hS f) : IsSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L82). The attribute's comment: “separated\_base\_change”.
+**`AlgebraicGeometry.Space.isSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L82). The attribute's comment: “separated\_base\_change”.
 
 > A base change of a separated morphism of algebraic spaces over `S` is separated.
 
@@ -239,7 +239,7 @@ theorem isSeparated_pullback {X Y Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     IsSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L92). The attribute's comment: “locally\_separated\_base\_change”.
+**`AlgebraicGeometry.Space.isLocallySeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L92). The attribute's comment: “locally\_separated\_base\_change”.
 
 > A base change of a locally separated morphism of algebraic spaces over `S` is locally
 > separated.
@@ -254,7 +254,7 @@ theorem isLocallySeparated_pullback {X Y Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 
 [Tag 03KN](https://stacks.math.columbia.edu/tag/03KN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_mapDesc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean#L167). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_mapDesc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean#L167). The attribute's comment: “part (1): locally of finite type”.
 
 > **Stacks 03KN, part (1).** The comparison `X ×[Z] Y ⟶ X ×[T] Y` is locally of finite type in
 > the sense of Stacks 03XF. This is
@@ -266,7 +266,7 @@ theorem isLocallyOfFiniteType_mapDesc' (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
     IsLocallyOfFiniteType B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_mapDesc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean#L177). The attribute's comment: “part (1): locally quasi-finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_mapDesc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartBridge.lean#L177). The attribute's comment: “part (1): locally quasi-finite”.
 
 > **Stacks 03KN, part (1).** The comparison `X ×[Z] Y ⟶ X ×[T] Y` is locally quasi-finite in
 > the sense of Stacks 03XJ. This is
@@ -278,7 +278,7 @@ theorem isLocallyQuasiFinite_mapDesc' (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
     IsLocallyQuasiFinite B S hS (pullback.mapDesc f g h)
 ```
 
-**`CategoryTheory.Limits.pullback.mono_mapDesc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L60). The attribute's comment: “part (1): monomorphism”.
+**`CategoryTheory.Limits.pullback.mono_mapDesc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L60). The attribute's comment: “part (1): monomorphism”.
 
 > The canonical comparison `X ×[Z] Y ⟶ X ×[T] Y` induced by a morphism `Z ⟶ T` is a
 > monomorphism.
@@ -289,7 +289,7 @@ instance pullback.mono_mapDesc {X Y Z T : C} (f : X ⟶ Z) (g : Y ⟶ Z) (i : Z 
     Mono (pullback.mapDesc f g i)
 ```
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L162). The attribute's comment: “part (1): representable”.
+**`AlgebraicGeometry.Space.relativelyRepresentable_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L162). The attribute's comment: “part (1): representable”.
 
 > The comparison of fibre products is representable.
 
@@ -299,7 +299,7 @@ theorem relativelyRepresentable_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T
     yoneda.relativelyRepresentable (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L171). The attribute's comment: “part (1): separated”.
+**`AlgebraicGeometry.Space.isSeparated_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L171). The attribute's comment: “part (1): separated”.
 
 > The comparison of fibre products is separated.
 
@@ -308,7 +308,7 @@ theorem isSeparated_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T) :
     IsSeparated B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.Space.isImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L180). The attribute's comment: “part (2)”. References: EGA I (5.3.10).
+**`AlgebraicGeometry.Space.isImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L180). The attribute's comment: “part (2)”. References: EGA I (5.3.10).
 
 > The comparison of fibre products is an immersion when `h : Z ⟶ T` is locally separated.
 
@@ -318,7 +318,7 @@ theorem isImmersion_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
     IsImmersion B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.Space.isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L187). The attribute's comment: “part (3)”. References: EGA I (5.4.2).
+**`AlgebraicGeometry.Space.isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L187). The attribute's comment: “part (3)”. References: EGA I (5.4.2).
 
 > The comparison of fibre products is a closed immersion when `h : Z ⟶ T` is separated.
 
@@ -328,7 +328,7 @@ theorem isClosedImmersion_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
     IsClosedImmersion B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L194). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L194). The attribute's comment: “part (4)”.
 
 > The comparison of fibre products is quasi-compact when `h : Z ⟶ T` is quasi-separated.
 
@@ -342,7 +342,7 @@ theorem isQuasiCompact_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
 
 [Tag 03KO](https://stacks.math.columbia.edu/tag/03KO) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.separationProperties_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GraphSeparationProperties.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GraphSeparationProperties.lean#L54).
+**`AlgebraicGeometry.Space.separationProperties_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GraphSeparationProperties.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GraphSeparationProperties.lean#L54).
 
 > **Stacks 03KO.** Let `Z` be an algebraic space over the scheme `S` and let `f : X ⟶ Y` be
 > a morphism of algebraic spaces over `Z`.  For the graph `i : X ⟶ X ×[Z] Y` of `f`:
@@ -376,7 +376,7 @@ theorem separationProperties_graph {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 03KP](https://stacks.math.columbia.edu/tag/03KP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L340). The attribute's comment: “part (1): monomorphism”.
+**`AlgebraicGeometry.Space.mono_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L340). The attribute's comment: “part (1): monomorphism”.
 
 > **Stacks 03KP, part (1).** A section of a morphism of algebraic spaces over `S` is a
 > monomorphism, being a split monomorphism.
@@ -385,7 +385,7 @@ theorem separationProperties_graph {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 theorem mono_of_section (p : P ⟶ V) (s : V ⟶ P) (hs : s ≫ p = 𝟙 V) : Mono s
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L347). The attribute's comment: “part (1): separated”.
+**`AlgebraicGeometry.Space.isSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L347). The attribute's comment: “part (1): separated”.
 
 > **Stacks 03KP, part (1).** A section of a morphism of algebraic spaces over `S` is
 > separated.
@@ -395,7 +395,7 @@ theorem isSeparated_of_section (p : P ⟶ V) (s : V ⟶ P) (hs : s ≫ p = 𝟙 
     IsSeparated B S hS s
 ```
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L377). The attribute's comment: “part (1): representable”.
+**`AlgebraicGeometry.Space.relativelyRepresentable_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L377). The attribute's comment: “part (1): representable”.
 
 > **Stacks 03KP, part (1).** A section of a morphism of algebraic spaces over `S` with
 > algebraic total space is representable.
@@ -406,7 +406,7 @@ theorem relativelyRepresentable_of_section (p : P ⟶ V)
     yoneda.relativelyRepresentable s
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L385). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L385). The attribute's comment: “part (1): locally of finite type”.
 
 > **Stacks 03KP, part (1).** A section of a morphism of algebraic spaces over `S` with
 > algebraic total space is locally of finite type in the sense of Stacks 03XF.
@@ -417,7 +417,7 @@ theorem isLocallyOfFiniteType_of_section (p : P ⟶ V)
     IsLocallyOfFiniteType B S hS s
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L394). The attribute's comment: “part (1): locally quasi-finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L394). The attribute's comment: “part (1): locally quasi-finite”.
 
 > **Stacks 03KP, part (1).** A section of a morphism of algebraic spaces over `S` with
 > algebraic total space is locally quasi-finite in the sense of Stacks 03XJ.
@@ -428,7 +428,7 @@ theorem isLocallyQuasiFinite_of_section (p : P ⟶ V)
     IsLocallyQuasiFinite B S hS s
 ```
 
-**`AlgebraicGeometry.Space.isImmersion_of_isLocallySeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L403). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isImmersion_of_isLocallySeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L403). The attribute's comment: “part (2)”.
 
 > **Stacks 03KP, part (2).** A section of a locally separated morphism of algebraic spaces
 > over `S` is an immersion.
@@ -439,7 +439,7 @@ theorem isImmersion_of_isLocallySeparated_of_section (p : P ⟶ V)
     IsImmersion B S hS s
 ```
 
-**`AlgebraicGeometry.Space.isClosedImmersion_of_isSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L412). The attribute's comment: “part (3)”. References: SGA 3 VIB (5.6.3), “more general”.
+**`AlgebraicGeometry.Space.isClosedImmersion_of_isSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L412). The attribute's comment: “part (3)”. References: SGA 3 VIB (5.6.3), “more general”.
 
 > **Stacks 03KP, part (3).** A section of a separated morphism of algebraic spaces over `S`
 > is a closed immersion.
@@ -450,7 +450,7 @@ theorem isClosedImmersion_of_isSeparated_of_section (p : P ⟶ V)
     IsClosedImmersion B S hS s
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L421). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiSeparated_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedCriteria.lean#L421). The attribute's comment: “part (4)”.
 
 > **Stacks 03KP, part (4).** A section of a quasi-separated morphism of algebraic spaces over
 > `S` is quasi-compact.
@@ -465,7 +465,7 @@ theorem isQuasiCompact_of_isQuasiSeparated_of_section (p : P ⟶ V)
 
 [Tag 03KQ](https://stacks.math.columbia.edu/tag/03KQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L86). The attribute's comment: “quasi-separated”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L86). The attribute's comment: “quasi-separated”.
 
 > The composite of two quasi-separated morphisms of algebraic spaces over `S` is
 > quasi-separated.
@@ -476,7 +476,7 @@ theorem isQuasiSeparated_comp (hF : IsAlgebraicSpace B S hS F) (hG : IsAlgebraic
     (hq : IsQuasiSeparated B S hS q) : IsQuasiSeparated B S hS (p ≫ q)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1074](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1074). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Space.isSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1074](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1074). The attribute's comment: “separated”.
 
 > Separatedness of morphisms of algebraic spaces is stable under composition.
 
@@ -486,7 +486,7 @@ theorem isSeparated_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (p : F 
     IsSeparated B S hS (p ≫ q)
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1156). The attribute's comment: “locally separated”.
+**`AlgebraicGeometry.Space.isLocallySeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1156). The attribute's comment: “locally separated”.
 
 > Local separatedness of morphisms of algebraic spaces is stable under composition.
 
@@ -500,7 +500,7 @@ theorem isLocallySeparated_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} 
 
 [Tag 04ZH](https://stacks.math.columbia.edu/tag/04ZH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparatedOver_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L107). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isSeparatedOver_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L107). The attribute's comment: “part (4)”.
 
 > If `G` is separated over `S` and `f : F ⟶ G` is separated,
 > then `F` is separated over `S`.
@@ -510,7 +510,7 @@ theorem isSeparatedOver_of_isSeparated {f : F ⟶ G} (hG : IsSeparatedOver B S h
     (hf : IsSeparated B S hS f) : IsSeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparatedOver_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L119). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Space.isLocallySeparatedOver_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L119). The attribute's comment: “part (6)”.
 
 > If `G` is locally separated over `S` and `f : F ⟶ G` is
 > locally separated, then `F` is locally separated over `S`.
@@ -521,7 +521,7 @@ theorem isLocallySeparatedOver_of_isLocallySeparated {f : F ⟶ G}
     IsLocallySeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L145). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L145). The attribute's comment: “part (5)”.
 
 > If `G` is quasi-separated over `S` and `f : F ⟶ G` is quasi-separated, then `F` is
 > quasi-separated over `S`.
@@ -532,7 +532,7 @@ theorem isQuasiSeparatedOver_of_isQuasiSeparated (hF : IsAlgebraicSpace B S hS F
     IsQuasiSeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L157). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isAbsolutelySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L157). The attribute's comment: “part (1)”.
 
 > If `G` is separated and `f : F ⟶ G` is separated, then `F` is separated.
 
@@ -542,7 +542,7 @@ theorem isAbsolutelySeparated_of_isSeparated {f : F ⟶ G}
     IsAbsolutelySeparated B S hS hZ F
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyLocallySeparated_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L166). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isAbsolutelyLocallySeparated_of_isLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L166). The attribute's comment: “part (3)”.
 
 > If `G` is locally separated and `f : F ⟶ G` is locally
 > separated, then `F` is locally separated.
@@ -553,7 +553,7 @@ theorem isAbsolutelyLocallySeparated_of_isLocallySeparated {f : F ⟶ G}
     IsAbsolutelyLocallySeparated B S hS hZ F
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L175). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L175). The attribute's comment: “part (2)”.
 
 > If `G` is quasi-separated and `f : F ⟶ G` is quasi-separated, then `F` is
 > quasi-separated.
@@ -568,7 +568,7 @@ theorem isAbsolutelyQuasiSeparated_of_isQuasiSeparated (hF : IsAlgebraicSpace B 
 
 [Tag 03KR](https://stacks.math.columbia.edu/tag/03KR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.separationAxioms_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationAxiomsCancellation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationAxiomsCancellation.lean#L74).
+**`AlgebraicGeometry.Space.separationAxioms_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationAxiomsCancellation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationAxiomsCancellation.lean#L74).
 
 > **Stacks 03KR.** Let `S` be a scheme contained in the big fppf site `B` and let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of algebraic spaces over `S`. Then:
@@ -593,7 +593,7 @@ theorem separationAxioms_of_comp (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.
 
 [Tag 04ZI](https://stacks.math.columbia.edu/tag/04ZI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparatedOver_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L186). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isSeparatedOver_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L186). The attribute's comment: “part (1)”.
 
 > A separated algebraic space over `S` is separated over `S`, that is, an algebraic space
 > which is separated over the terminal scheme is separated over its own base scheme.
@@ -603,7 +603,7 @@ theorem isSeparatedOver_of_isAbsolutelySeparated (hF : IsAlgebraicSpace B S hS F
     (h : IsAbsolutelySeparated B S hS hZ F) : IsSeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparatedOver_of_isAbsolutelyLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L197). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isLocallySeparatedOver_of_isAbsolutelyLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L197). The attribute's comment: “part (2)”.
 
 > A locally separated algebraic space is locally separated over
 > its base scheme.
@@ -613,7 +613,7 @@ theorem isLocallySeparatedOver_of_isAbsolutelyLocallySeparated (hF : IsAlgebraic
     (h : IsAbsolutelyLocallySeparated B S hS hZ F) : IsLocallySeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L208). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L208). The attribute's comment: “part (3)”.
 
 > A quasi-separated algebraic space is quasi-separated over its
 > base scheme.
@@ -623,7 +623,7 @@ theorem isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated (hF : IsAlgebraicSpac
     (h : IsAbsolutelyQuasiSeparated B S hS hZ F) : IsQuasiSeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L220). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SeparationAxioms.lean#L220). The attribute's comment: “part (6)”.
 
 > Every morphism out of an algebraic space which is quasi-separated over `S` is
 > quasi-separated.
@@ -633,7 +633,7 @@ theorem isQuasiSeparated_of_isQuasiSeparatedOver (hF : IsQuasiSeparatedOver B S 
     (p : F ⟶ G) : IsQuasiSeparated B S hS p
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1088). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isSeparated_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1088). The attribute's comment: “part (4)”.
 
 > Every morphism out of an algebraic space which is separated over `S` is separated.
 
@@ -642,7 +642,7 @@ theorem isSeparated_of_isSeparatedOver {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
     (hF : IsSeparatedOver B S hS F) (p : F ⟶ G) : IsSeparated B S hS p
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparated_of_isLocallySeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1171). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Space.isLocallySeparated_of_isLocallySeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1171). The attribute's comment: “part (5)”.
 
 > Every morphism out of an algebraic space which is locally separated over `S` is locally
 > separated.
@@ -656,7 +656,7 @@ theorem isLocallySeparated_of_isLocallySeparatedOver {F G : (BigFppfOver B S hS)
 
 [Tag 03KM](https://stacks.math.columbia.edu/tag/03KM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedTfae.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedTfae.lean#L527). The attribute's comment: “quasi-separated”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedTfae.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedTfae.lean#L527). The attribute's comment: “quasi-separated”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over a
 > scheme `S` the following six conditions are equivalent: `f` is quasi-separated; the base change of
@@ -694,7 +694,7 @@ theorem isQuasiSeparated_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraic
     ]
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1360). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Space.isSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1360). The attribute's comment: “separated”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S` the following are equivalent:
 > `f` is separated; the base change of `f` along every morphism from a representable presheaf is
@@ -731,7 +731,7 @@ theorem isSeparated_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace
     ]
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1407). The attribute's comment: “locally separated”.
+**`AlgebraicGeometry.Space.isLocallySeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 1407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L1407). The attribute's comment: “locally separated”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S` the following are equivalent:
 > `f` is locally separated; the base change of `f` along every morphism from a representable presheaf
@@ -772,7 +772,7 @@ theorem isLocallySeparated_tfae (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 03KY](https://stacks.math.columbia.edu/tag/03KY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.separationProperties_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean#L68).
+**`AlgebraicGeometry.Space.separationProperties_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableSeparationMatch.lean#L68).
 
 > **Stacks 03KY.** Let `S` be a scheme and let `f : X ⟶ Y` be a representable morphism of
 > algebraic spaces over `S`.  Then:
@@ -822,4 +822,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.4, Tag 03HJ](https://stacks.math.columbia.edu/tag/03HJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

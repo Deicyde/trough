@@ -8,7 +8,7 @@ proof: formalized
 
 # 68.11 Residue fields and henselian local rings
 
-Section 68.11 of the Stacks Project, [Tag 0EMV](https://stacks.math.columbia.edu/tag/0EMV). 11 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.11 of the Stacks Project, [Tag 0EMV](https://stacks.math.columbia.edu/tag/0EMV). 11 tags here are carried by 36 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03K4, a lemma
 
@@ -16,14 +16,14 @@ Section 68.11 of the Stacks Project, [Tag 0EMV](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.iso_of_mono_of_point_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L56) (StacksFrontier): “injectivity”.
-- [`AlgebraicGeometry.Space.IsDecentSpace.hasMonomorphicFieldRepresentative`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L121), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L57) (StacksFrontier): “surjectivity”.
+- [`AlgebraicGeometry.Space.iso_of_mono_of_point_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L56) (StacksFrontier): “injectivity”.
+- [`AlgebraicGeometry.Space.IsDecentSpace.hasMonomorphicFieldRepresentative`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L121), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L57) (StacksFrontier): “surjectivity”.
 
 ## Tag 0EMW, a definition
 
 [Tag 0EMW](https://stacks.math.columbia.edu/tag/0EMW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.residueFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L68). The attribute's comment: “field-valued monomorphism”.
+**`AlgebraicGeometry.Space.residueFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L68). The attribute's comment: “field-valued monomorphism”.
 
 > The chosen field-valued representative of a point of a decent algebraic space whose morphism
 > to the space is a monomorphism.
@@ -35,7 +35,7 @@ noncomputable def residueFieldRepresentative (hDecent : IsDecentSpace B S hS X)
       p.class B S hS X = x ∧ Mono (fieldMorphism B S hS X p)}
 ```
 
-**`AlgebraicGeometry.Space.residueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L78). The attribute's comment: “residue field”.
+**`AlgebraicGeometry.Space.residueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L78). The attribute's comment: “residue field”.
 
 > The residue field of a decent algebraic space at a point: the field of the monomorphism from
 > a field spectrum representing that point.
@@ -45,7 +45,7 @@ noncomputable abbrev residueField (hDecent : IsDecentSpace B S hS X)
     (x : points B S hS X) : Type u
 ```
 
-**`AlgebraicGeometry.Space.residueFieldRepresentative_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L92). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.Space.residueFieldRepresentative_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L92). The attribute's comment: “uniqueness”.
 
 > A monomorphic field-valued representative of a point of a decent algebraic space is uniquely
 > isomorphic, over the space, to the chosen one: the residue field is unique up to unique
@@ -65,7 +65,7 @@ theorem residueFieldRepresentative_unique (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0EMX](https://stacks.math.columbia.edu/tag/0EMX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_residueFieldHom_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L194).
+**`AlgebraicGeometry.Space.isIso_residueFieldHom_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidueField.lean#L194).
 
 > A morphism of decent algebraic spaces induces an isomorphism of residue fields at a point
 > exactly when the morphism from the spectrum of the residue field at that point to the target
@@ -83,7 +83,7 @@ theorem isIso_residueFieldHom_iff_mono (hY : IsAlgebraicSpace B S hS Y)
 
 [Tag 0BBP](https://stacks.math.columbia.edu/tag/0BBP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_elementaryEtaleNeighborhood'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineElementaryEtaleNeighborhood.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineElementaryEtaleNeighborhood.lean#L611).
+**`AlgebraicGeometry.Space.exists_affine_elementaryEtaleNeighborhood'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineElementaryEtaleNeighborhood.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineElementaryEtaleNeighborhood.lean#L612).
 
 > **Stacks 0BBP.** Every point `x` of a decent algebraic space `X` over `S` has an elementary
 > étale neighborhood whose scheme is affine, whose distinguished point is the only point above
@@ -113,7 +113,7 @@ theorem exists_affine_elementaryEtaleNeighborhood'
 
 [Tag 0BGU](https://stacks.math.columbia.edu/tag/0BGU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean#L131). The attribute's comment: “elementary étale neighborhoods”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean#L131). The attribute's comment: “elementary étale neighborhoods”.
 
 > **Stacks 0BGU, elementary étale neighborhoods.** A scheme étale over an
 > algebraic space, pointed above `x`, for which the residue-field point is a
@@ -124,7 +124,7 @@ structure ElementaryEtaleNeighborhood (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
     (hF : IsAlgebraicSpace B S hS F) (x : points B S hS F)
 ```
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean#L158). The attribute's comment: “morphisms of elementary étale neighborhoods”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhood.lean#L158). The attribute's comment: “morphisms of elementary étale neighborhoods”.
 
 > **Stacks 0BGU, morphisms.** A map of elementary étale neighborhoods is
 > a map over the algebraic space carrying the chosen point to the chosen point.
@@ -137,7 +137,7 @@ structure Hom (V W : ElementaryEtaleNeighborhood B S hS F hF x)
 
 [Tag 0BGV](https://stacks.math.columbia.edu/tag/0BGV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_affine_cone_objs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineRefinementOfNeighborhood.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineRefinementOfNeighborhood.lean#L57). The attribute's comment: “two neighbourhoods are refined by a common one whose scheme is affine”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_affine_cone_objs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineRefinementOfNeighborhood.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/AffineRefinementOfNeighborhood.lean#L57). The attribute's comment: “two neighbourhoods are refined by a common one whose scheme is affine”.
 
 > Any two elementary étale neighborhoods of a point of an algebraic space are refined by a
 > common elementary étale neighborhood whose scheme is affine.
@@ -148,7 +148,7 @@ theorem exists_affine_cone_objs (U V : ElementaryEtaleNeighborhood B S hS X hX x
       IsAffine W.scheme.left.1
 ```
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_cone_objs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L435). The attribute's comment: “common refinements: any two elementary étale neighbourhoods admit a third mapping to both”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_cone_objs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L439). The attribute's comment: “common refinements: any two elementary étale neighbourhoods admit a third mapping to both”.
 
 > **Stacks 0BGV, common refinements.** Two elementary étale neighborhoods of `x` admit a
 > common refinement.
@@ -158,7 +158,7 @@ theorem exists_cone_objs (V W : ElementaryEtaleNeighborhood B S hS X hX x) :
     ∃ (E : ElementaryEtaleNeighborhood B S hS X hX x) (_ : E ⟶ V) (_ : E ⟶ W), True
 ```
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_cone_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L537). The attribute's comment: “equalizing refinements: any two parallel morphisms are equalized by a refinement”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.exists_cone_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L541). The attribute's comment: “equalizing refinements: any two parallel morphisms are equalized by a refinement”.
 
 > **Stacks 0BGV, equalizing refinements.** Two morphisms of elementary étale neighborhoods of
 > `x` are equalized by a refinement of their source.
@@ -168,7 +168,7 @@ theorem exists_cone_maps {V W : ElementaryEtaleNeighborhood B S hS X hX x} (f g 
     ∃ (E : ElementaryEtaleNeighborhood B S hS X hX x) (h : E ⟶ V), h ≫ f = h ≫ g
 ```
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.isCofilteredOrEmpty`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L549). The attribute's comment: “the category is cofiltered or empty; unconditional”.
+**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.isCofilteredOrEmpty`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L553). The attribute's comment: “the category is cofiltered or empty; unconditional”.
 
 > **Stacks 0BGV.** The category of elementary étale neighborhoods of a point of an algebraic
 > space is cofiltered as soon as it is nonempty: any two neighborhoods are refined by a third,
@@ -178,18 +178,7 @@ theorem exists_cone_maps {V W : ElementaryEtaleNeighborhood B S hS X hX x} (f g 
 instance isCofilteredOrEmpty : IsCofilteredOrEmpty (ElementaryEtaleNeighborhood B S hS X hX x)
 ```
 
-**`AlgebraicGeometry.Space.ElementaryEtaleNeighborhood.isCofiltered_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodCofiltered.lean#L558). The attribute's comment: “cofilteredness, with nonemptiness -- which is Tag 0BBP, absent from this library -- as an explicit hypothesis”.
-
-> **Stacks 0BGV.** The category of elementary étale neighborhoods of a point of an algebraic
-> space, if nonempty, is cofiltered.
-
-```lean
-theorem isCofiltered_of_nonempty
-    (hne : Nonempty (ElementaryEtaleNeighborhood B S hS X hX x)) :
-    IsCofiltered (ElementaryEtaleNeighborhood B S hS X hX x)
-```
-
-**`AlgebraicGeometry.Space.isCofiltered_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L76). The attribute's comment: “cofilteredness for a decent space, with the nonemptiness hypothesis of the existing carrier discharged by Tag 0BBP”.
+**`AlgebraicGeometry.Space.isCofiltered_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L76). The attribute's comment: “the category of elementary étale neighbourhoods of a point of a decent space is cofiltered; nonemptiness by Tag 0BBP”.
 
 > The category of elementary étale neighborhoods of a point of a decent algebraic space is
 > cofiltered.
@@ -203,7 +192,7 @@ theorem isCofiltered_elementaryEtaleNeighborhood :
 
 [Tag 0BGW](https://stacks.math.columbia.edu/tag/0BGW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.henselianLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L164). The attribute's comment: “the henselian local ring at a point”.
+**`AlgebraicGeometry.Space.henselianLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L164). The attribute's comment: “the henselian local ring at a point”.
 
 > The henselian local ring of a decent algebraic space at a point: the
 > colimit of the rings of global sections over the elementary étale neighborhoods of the
@@ -213,7 +202,7 @@ theorem isCofiltered_elementaryEtaleNeighborhood :
 abbrev henselianLocalRing (_hDecent : IsDecentSpace B S hS X) : CommRingCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.Space.sectionHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L170). The attribute's comment: “canonical section homomorphisms”.
+**`AlgebraicGeometry.Space.sectionHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L170). The attribute's comment: “canonical section homomorphisms”.
 
 > The canonical ring homomorphism from the global sections of an
 > elementary étale neighborhood into the henselian local ring.
@@ -224,7 +213,7 @@ def sectionHom (hDecent : IsDecentSpace B S hS X)
     (globalSections B S hS X hX x).obj U →+* henselianLocalRing B S hS X hX x hDecent
 ```
 
-**`AlgebraicGeometry.Space.sectionHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L179). The attribute's comment: “naturality of section homomorphisms”.
+**`AlgebraicGeometry.Space.sectionHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L179). The attribute's comment: “naturality of section homomorphisms”.
 
 > Restricting a section to a finer elementary étale neighborhood does not
 > change its canonical image in the henselian local ring.
@@ -237,7 +226,7 @@ theorem sectionHom_naturality (hDecent : IsDecentSpace B S hS X)
       sectionHom B S hS X hX x hDecent U s
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L191). The attribute's comment: “colimit universal property”.
+**`AlgebraicGeometry.Space.existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRing.lean#L191). The attribute's comment: “colimit universal property”.
 
 > A family of ring homomorphisms out of the global sections of the
 > elementary étale neighborhoods of a point, compatible with restriction, factors uniquely
@@ -257,7 +246,7 @@ theorem existsUnique_lift (hDecent : IsDecentSpace B S hS X) (R : Type v) [CommR
 
 [Tag 0EMY](https://stacks.math.columbia.edu/tag/0EMY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.stalkToHenselianLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L603). The attribute's comment: “the canonical map from the stalk of an elementary étale neighbourhood”.
+**`AlgebraicGeometry.Space.stalkToHenselianLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L603). The attribute's comment: “the canonical map from the stalk of an elementary étale neighbourhood”.
 
 > **Stacks 0EMY.** The canonical homomorphism from the local ring of an elementary étale
 > neighborhood at its distinguished point into the henselian local ring of the algebraic space.
@@ -269,7 +258,7 @@ def stalkToHenselianLocalRing (hDecent : IsDecentSpace B S hS X)
       (henselianLocalRing B S hS X hX x hDecent : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.stalkToHenselianLocalRing_openGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L623). The attribute's comment: “the canonical map on germs over a pointed open”.
+**`AlgebraicGeometry.Space.stalkToHenselianLocalRing_openGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 623](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L623). The attribute's comment: “the canonical map on germs over a pointed open”.
 
 > **Stacks 0EMY.** The canonical homomorphism sends the germ of a section over a pointed open
 > subscheme to the canonical image of that section in the henselian local ring.
@@ -284,7 +273,7 @@ theorem stalkToHenselianLocalRing_openGerm (hDecent : IsDecentSpace B S hS X)
       openRestrictionSectionHom B S hS X hX x hDecent U W hW s
 ```
 
-**`AlgebraicGeometry.Space.stalkToHenselianLocalRing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L687). The attribute's comment: “naturality of the canonical map in the neighbourhood”.
+**`AlgebraicGeometry.Space.stalkToHenselianLocalRing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L687). The attribute's comment: “naturality of the canonical map in the neighbourhood”.
 
 > **Stacks 0EMY.** The canonical homomorphisms out of the local rings of the elementary étale
 > neighborhoods are compatible with every morphism of neighborhoods.
@@ -297,7 +286,7 @@ theorem stalkToHenselianLocalRing_naturality (hDecent : IsDecentSpace B S hS X)
       stalkToHenselianLocalRing B S hS X hX x hDecent U
 ```
 
-**`AlgebraicGeometry.Space.henselianLocalRing_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L740). The attribute's comment: “O^h is a local ring”.
+**`AlgebraicGeometry.Space.henselianLocalRing_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L740). The attribute's comment: “O^h is a local ring”.
 
 > **Stacks 0EMY.** The henselian local ring of a decent algebraic space at a point is a local
 > ring.
@@ -307,7 +296,7 @@ theorem henselianLocalRing_isLocalRing (hDecent : IsDecentSpace B S hS X) :
     IsLocalRing (henselianLocalRing B S hS X hX x hDecent : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.henselianLocalRing_isHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1088). The attribute's comment: “O^h is a henselization of the stalk”. References: SGA 3 X (4.4), “Case 2°”.
+**`AlgebraicGeometry.Space.henselianLocalRing_isHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1088). The attribute's comment: “O^h is a henselization of the stalk”. References: SGA 3 X (4.4), “Case 2°”.
 
 > **Stacks 0EMY.** The henselian local ring of a decent algebraic space at a point is a
 > henselization of the local ring of any elementary étale neighborhood at its distinguished
@@ -323,7 +312,7 @@ theorem henselianLocalRing_isHenselization (hDecent : IsDecentSpace B S hS X)
       (henselianLocalRing B S hS X hX x hDecent : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.map_maximalIdeal_stalkToHenselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1147). The attribute's comment: “the maximal ideal of O^h”.
+**`AlgebraicGeometry.Space.map_maximalIdeal_stalkToHenselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1147). The attribute's comment: “the maximal ideal of O^h”.
 
 > **Stacks 0EMY.** The maximal ideal of the henselian local ring is generated by the image of
 > the maximal ideal of the local ring of any elementary étale neighborhood.
@@ -337,7 +326,7 @@ theorem map_maximalIdeal_stalkToHenselianLocalRing (hDecent : IsDecentSpace B S 
       IsLocalRing.maximalIdeal (henselianLocalRing B S hS X hX x hDecent : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.exists_residueFieldEquiv_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1163). The attribute's comment: “the residue field of O^h”.
+**`AlgebraicGeometry.Space.exists_residueFieldEquiv_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean, line 1163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingStalk.lean#L1163). The attribute's comment: “the residue field of O^h”.
 
 > **Stacks 0EMY.** The residue field of the henselian local ring is the residue field of the
 > local ring of any elementary étale neighborhood at its distinguished point.
@@ -354,7 +343,7 @@ theorem exists_residueFieldEquiv_henselianLocalRing (hDecent : IsDecentSpace B S
           IsLocalRing.residue _ (stalkToHenselianLocalRing B S hS X hX x hDecent U r)
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.neighborhoodSectionsToGenericHenselianLocalRing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean#L101). The attribute's comment: “naturality in the neighbourhood of the map from global sections into the henselian local ring”.
+**`AlgebraicGeometry.Space.PrimeDivisor.neighborhoodSectionsToGenericHenselianLocalRing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean#L101). The attribute's comment: “naturality in the neighbourhood of the map from global sections into the henselian local ring”.
 
 > **Stacks 0EMY.** The map from the global sections of an elementary étale neighbourhood of
 > the generic point of a prime divisor into the henselian local ring there is compatible with
@@ -368,7 +357,7 @@ theorem PrimeDivisor.neighborhoodSectionsToGenericHenselianLocalRing_naturality
       Z.neighborhoodSectionsToGenericHenselianLocalRing B S hS hX hdec U a
 ```
 
-**`AlgebraicGeometry.Space.isLocalRing_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L83). The attribute's comment: “O^h is a local ring for a decent space”.
+**`AlgebraicGeometry.Space.isLocalRing_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L83). The attribute's comment: “O^h is a local ring for a decent space”.
 
 > The henselian local ring of a decent algebraic space at a point is a local ring.
 
@@ -381,7 +370,7 @@ theorem isLocalRing_henselianLocalRing :
 
 [Tag 0EMZ](https://stacks.math.columbia.edu/tag/0EMZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isHenselization_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleLocalRingStrictHenselization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleLocalRingStrictHenselization.lean#L81). The attribute's comment: “the étale local ring at a geometric point is a strict henselization of the henselian local ring at the point below it, for a chosen separable closure κsep of the residue field. The algebra structures are produced, not assumed; the structure map is pinned by lying over the neighborhood stalk, of which the étale local ring is also a strict henselization”.
+**`AlgebraicGeometry.Space.exists_isHenselization_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleLocalRingStrictHenselization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleLocalRingStrictHenselization.lean#L81). The attribute's comment: “the étale local ring at a geometric point is a strict henselization of the henselian local ring at the point below it, for a chosen separable closure κsep of the residue field. The algebra structures are produced, not assumed; the structure map is pinned by lying over the neighborhood stalk, of which the étale local ring is also a strict henselization”.
 
 > **Stacks 0EMZ.** The étale local ring of a decent algebraic space at a geometric point is a
 > strict henselization of the henselian local ring of the space at the point it lies over.
@@ -416,7 +405,7 @@ theorem exists_isHenselization_etaleLocalRing (hDecent : IsDecentSpace B S hS X)
 
 [Tag 0EN0](https://stacks.math.columbia.edu/tag/0EN0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.genericResidueFieldEquivHenselian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L284). The attribute's comment: “the residue field of the henselian local ring at the generic point of a prime divisor is the residue field of the chosen chart, canonically through the henselization map”.
+**`AlgebraicGeometry.Space.PrimeDivisor.genericResidueFieldEquivHenselian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L284). The attribute's comment: “the residue field of the henselian local ring at the generic point of a prime divisor is the residue field of the chosen chart, canonically through the henselization map”.
 
 > **The canonical isomorphism `κ(u) ≃+* κ(𝒪^h_{X, ξ})`** induced by the henselization map
 > `𝒪_{U, u} → 𝒪^h_{X, ξ}`.
@@ -428,7 +417,7 @@ def PrimeDivisor.genericResidueFieldEquivHenselian :
       IsLocalRing.ResidueField ↥(Z.genericHenselianLocalRing B S hS hX hdec)
 ```
 
-**`AlgebraicGeometry.Space.exists_residueFieldEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean#L205). The attribute's comment: “the residue field of the henselian local ring is the residue field of the space. Both fields are determined only up to canonical isomorphism, so the identification is existential, pinned by the isomorphism `eκ` of the neighborhood residue field with the residue field of the space lying over the space (the morphism `g`) and by compatibility with the canonical homomorphism out of the neighborhood stalk. No hypothesis is carried: cofilteredness of the elementary étale neighborhoods comes from Stacks 0BGV, nonemptiness from the given neighborhood”.
+**`AlgebraicGeometry.Space.exists_residueFieldEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean#L205). The attribute's comment: “the residue field of the henselian local ring is the residue field of the space. Both fields are determined only up to canonical isomorphism, so the identification is existential, pinned by the isomorphism `eκ` of the neighborhood residue field with the residue field of the space lying over the space (the morphism `g`) and by compatibility with the canonical homomorphism out of the neighborhood stalk. No hypothesis is carried: cofilteredness of the elementary étale neighborhoods comes from Stacks 0BGV, nonemptiness from the given neighborhood”.
 
 > The residue field of the henselian local ring of a decent algebraic space at a point is the
 > residue field of the space at that point, through an isomorphism compatible with the canonical
@@ -452,7 +441,7 @@ theorem exists_residueFieldEquiv_residueField (hDecent : IsDecentSpace B S hS X)
             IsLocalRing.residue _ (stalkToHenselianLocalRing B S hS X hX x hDecent U r)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_residueFieldEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean#L237). The attribute's comment: “the residue field of the henselian local ring is the residue field of the space, by the canonical isomorphism: the unique one compatible, for every elementary étale neighborhood, with the canonical homomorphism out of its stalk and the homomorphism of residue fields over the space. No neighborhood is assumed; one exists by Stacks 0BBP”.
+**`AlgebraicGeometry.Space.existsUnique_residueFieldEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianLocalRingResidueField.lean#L237). The attribute's comment: “the residue field of the henselian local ring is the residue field of the space, by the canonical isomorphism: the unique one compatible, for every elementary étale neighborhood, with the canonical homomorphism out of its stalk and the homomorphism of residue fields over the space. No neighborhood is assumed; one exists by Stacks 0BBP”.
 
 > The residue field of the henselian local ring of a decent algebraic space at a point is the
 > residue field of the space at that point: there is exactly one isomorphism
@@ -481,7 +470,7 @@ theorem existsUnique_residueFieldEquiv_residueField (hDecent : IsDecentSpace B S
 
 [Tag 0EPL](https://stacks.math.columbia.edu/tag/0EPL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_point_over_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L50). The attribute's comment: “the unique point above the two distinguished points”.
+**`AlgebraicGeometry.Space.existsUnique_point_over_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L50). The attribute's comment: “the unique point above the two distinguished points”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `X` decent, let `x` be a point
 > of `X` and let `V` be an elementary étale neighborhood of the image of `x`. The fibre product
@@ -500,7 +489,7 @@ theorem existsUnique_point_over_elementaryEtaleNeighborhood
         pointsMap B S hS (pullback V.toSpace f.hom) (pullback.snd V.toSpace f.hom) x' = x
 ```
 
-**`AlgebraicGeometry.Space.yoneda_map_neighborhoodOver_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L108). The attribute's comment: “the square of charts over f”.
+**`AlgebraicGeometry.Space.yoneda_map_neighborhoodOver_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L108). The attribute's comment: “the square of charts over f”.
 
 > **Stacks 0EPL.** The two charts form a commutative square over `f`: the chart of the upper
 > elementary étale neighborhood maps to the chart of the lower one compatibly with `f`.
@@ -511,7 +500,7 @@ theorem yoneda_map_neighborhoodOver_comp :
       neighborhoodToSource B S hS f V U ≫ f.hom
 ```
 
-**`AlgebraicGeometry.Space.neighborhoodOver_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L117). The attribute's comment: “the morphism of charts is pointed”.
+**`AlgebraicGeometry.Space.neighborhoodOver_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L117). The attribute's comment: “the morphism of charts is pointed”.
 
 > **Stacks 0EPL.** The morphism of chart schemes carries the distinguished point of the upper
 > elementary étale neighborhood to that of the lower one.
@@ -523,7 +512,7 @@ theorem neighborhoodOver_point
     (BigFppfOver.toScheme B S hS).map (neighborhoodOver B S hS f V U) U.point = V.point
 ```
 
-**`AlgebraicGeometry.Space.neighborhoodOverSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L178). The attribute's comment: “the upper neighborhood is one of the source”.
+**`AlgebraicGeometry.Space.neighborhoodOverSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L178). The attribute's comment: “the upper neighborhood is one of the source”.
 
 > **Stacks 0EPL.** An elementary étale neighborhood of a point `x'` of `V ×_Y X` lying over
 > the distinguished point of `V` and over `x` is an elementary étale neighborhood of `x` in `X`.
@@ -540,7 +529,7 @@ def neighborhoodOverSource
     ElementaryEtaleNeighborhood B S hS X.1 X.property x
 ```
 
-**`AlgebraicGeometry.Space.exists_henselianLocalRingMap_of_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L310). The attribute's comment: “the square of henselian local rings”.
+**`AlgebraicGeometry.Space.exists_henselianLocalRingMap_of_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L310). The attribute's comment: “the square of henselian local rings”.
 
 > **Stacks 0EPL.** Let `(U, u)` be an elementary étale neighborhood of a point `x` of a decent
 > algebraic space `X`, let `(W, w)` be one of a point `y` of a decent algebraic space `Y` and let
@@ -562,7 +551,7 @@ theorem exists_henselianLocalRingMap_of_neighborhood
             j.left.1.stalkMap U.point).hom
 ```
 
-**`AlgebraicGeometry.Space.exists_diagram_of_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L376). The attribute's comment: “the commutative diagram, as a diagram of ring homomorphisms”.
+**`AlgebraicGeometry.Space.exists_diagram_of_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L376). The attribute's comment: “the commutative diagram, as a diagram of ring homomorphisms”.
 
 > **Stacks 0EPL, the commutative diagram.** For a pointed morphism `k : (N, n) ⟶ (M, m)` of
 > elementary étale neighborhoods over `g : X ⟶ Y`, the rows
@@ -624,7 +613,7 @@ theorem exists_diagram_of_neighborhood (hzbar : zbar.LiesOver z)
         (etaleLocalRing B S hS Ys.1 wbar : Type (u + 1)) _ _ algM
 ```
 
-**`AlgebraicGeometry.Space.exists_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L511). The attribute's comment: “the remark, with both choices made”.
+**`AlgebraicGeometry.Space.exists_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodDiagram.lean#L511). The attribute's comment: “the remark, with both choices made”.
 
 > **Stacks 0EPL.** Let `g : X ⟶ Y` be a morphism of decent algebraic spaces over `S`, let `z`
 > be a point of `X` with image `y` in `Y`, and let `z̄` and `w̄` be geometric points of `X` and of
@@ -702,8 +691,8 @@ theorem exists_diagram (hzbar : zbar.LiesOver z)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isAlgebraicSpace_pullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L350), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L41) (StacksFrontier): “the fibre product is an algebraic space”.
-- [`AlgebraicGeometry.Space.isEtale_of_isPullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L43) (StacksFrontier): “the projection to the source is étale”.
+- [`AlgebraicGeometry.isAlgebraicSpace_pullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L350), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L41) (StacksFrontier): “the fibre product is an algebraic space”.
+- [`AlgebraicGeometry.Space.isEtale_of_isPullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ElementaryEtaleNeighborhoodBaseChange.lean#L43) (StacksFrontier): “the projection to the source is étale”.
 
 ## Depends on
 
@@ -712,4 +701,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.11, Tag 0EMV](https://stacks.math.columbia.edu/tag/0EMV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

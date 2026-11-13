@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.41 Variants of Chow's Lemma
 
-Section 76.41 of the Stacks Project, [Tag 089K](https://stacks.math.columbia.edu/tag/089K). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.41 of the Stacks Project, [Tag 089K](https://stacks.math.columbia.edu/tag/089K). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 089L, a lemma
 
 [Tag 089L](https://stacks.math.columbia.edu/tag/089L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_chowDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ChowDiagram.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ChowDiagram.lean#L300).
+**`AlgebraicGeometry.Space.exists_chowDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ChowDiagram.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ChowDiagram.lean#L300).
 
 > **Chow's lemma for algebraic spaces, [Stacks, Tag 089L].** Let `Y` be a quasi-compact and
 > quasi-separated algebraic space over `S` and let `f : X ⟶ Y` be a separated morphism of finite
@@ -42,7 +42,7 @@ theorem exists_chowDiagram (hZ : B.Contains (⊤_ Scheme.{u}))
 
 [Tag 089M](https://stacks.math.columbia.edu/tag/089M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isProper_isSurjective_isImmersion_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ProjectiveImmersionCover.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ProjectiveImmersionCover.lean#L545).
+**`AlgebraicGeometry.Space.exists_isProper_isSurjective_isImmersion_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ProjectiveImmersionCover.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/ProjectiveImmersionCover.lean#L545).
 
 > **Chow's lemma over a quasi-compact separated base, [Stacks, Tag 089M].** Let `S` be a
 > scheme and `f : X ⟶ Y` a morphism of algebraic spaces over `S`, separated and of finite type,
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.41, Tag 089K](https://stacks.math.columbia.edu/tag/089K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

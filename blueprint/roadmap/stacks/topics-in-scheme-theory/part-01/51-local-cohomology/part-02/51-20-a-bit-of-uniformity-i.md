@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.20 A bit of uniformity, I
 
-Section 51.20 of the Stacks Project, [Tag 0G9S](https://stacks.math.columbia.edu/tag/0G9S). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.20 of the Stacks Project, [Tag 0G9S](https://stacks.math.columbia.edu/tag/0G9S). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G9T, a lemma
 
 [Tag 0G9T](https://stacks.math.columbia.edu/tag/0G9T) in the Stacks Project.
 
-**`factor_through_free_of_tor_one_map_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/FactorThroughFree.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/FactorThroughFree.lean#L300).
+**`factor_through_free_of_tor_one_map_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/FactorThroughFree.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/FactorThroughFree.lean#L300).
 
 > **Stacks Project, Tag 0G9T.** A map from a finitely presented module which induces the zero
 > map on `Tor₁` with every module factors through a free module.
@@ -32,7 +32,7 @@ lemma factor_through_free_of_tor_one_map_eq_zero
 
 [Tag 0G9U](https://stacks.math.columbia.edu/tag/0G9U) in the Stacks Project.
 
-**`CategoryTheory.exists_shortExact_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Support/ShortExactPushout.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/Support/ShortExactPushout.lean#L38).
+**`CategoryTheory.exists_shortExact_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Support/ShortExactPushout.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/Support/ShortExactPushout.lean#L38).
 
 > The pushout of the left-hand map in a short exact sequence is again a short exact sequence,
 > with the same right-hand object.
@@ -51,7 +51,7 @@ theorem exists_shortExact_pushout
 
 [Tag 0G9V](https://stacks.math.columbia.edu/tag/0G9V) in the Stacks Project.
 
-**`tfae_lift_ext_conditions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L415). The attribute's comment: “equivalence of conditions (1)--(5)”.
+**`tfae_lift_ext_conditions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L416). The attribute's comment: “equivalence of conditions (1)--(5)”.
 
 > Conditions (1)--(5) are equivalent.
 
@@ -65,7 +65,7 @@ lemma tfae_lift_ext_conditions :
       CanonicalExtClassPullbackVanishes p p' alpha e]
 ```
 
-**`canonicalExtClassPullbackVanishes_imp_torMapVanishesAbove`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L508). The attribute's comment: “condition (5) implies condition (6)”.
+**`canonicalExtClassPullbackVanishes_imp_torMapVanishesAbove`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L509). The attribute's comment: “condition (5) implies condition (6)”.
 
 > Condition (5) implies condition (6).
 
@@ -74,7 +74,7 @@ lemma canonicalExtClassPullbackVanishes_imp_torMapVanishesAbove :
     CanonicalExtClassPullbackVanishes p p' alpha e → TorMapVanishesAbove alpha e
 ```
 
-**`tfae_tor_conditions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L515). The attribute's comment: “equivalence of conditions (6) and (7)”.
+**`tfae_tor_conditions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L516). The attribute's comment: “equivalence of conditions (6) and (7)”.
 
 > Conditions (6) and (7) are equivalent.
 
@@ -83,7 +83,7 @@ lemma tfae_tor_conditions :
     List.TFAE [TorMapVanishesAbove alpha e, TorMapVanishesAtSucc alpha e]
 ```
 
-**`tfae_of_isPseudoCoherentFrom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L685). The attribute's comment: “all conditions under pseudo-coherence”.
+**`tfae_of_isPseudoCoherentFrom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L686). The attribute's comment: “all conditions under pseudo-coherence”.
 
 > If `M` is `(-e-1)`-pseudo-coherent, all seven conditions are equivalent.
 
@@ -101,7 +101,7 @@ lemma tfae_of_isPseudoCoherentFrom
       TorMapVanishesAtSucc alpha e]
 ```
 
-**`tfae_of_isNoetherianRing_of_finite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L709). The attribute's comment: “Noetherian finite-module case”.
+**`tfae_of_isNoetherianRing_of_finite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/VanishingEquivalences.lean#L710). The attribute's comment: “Noetherian finite-module case”.
 
 > Over a Noetherian ring, all seven conditions are equivalent when `M` is finite.
 
@@ -121,7 +121,7 @@ lemma tfae_of_isNoetherianRing_of_finite [IsNoetherianRing R] [Module.Finite R M
 
 [Tag 0EH1](https://stacks.math.columbia.edu/tag/0EH1) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_quotientPower_extMapVanishesAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/QuotientPowerVanishing.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/QuotientPowerVanishing.lean#L212).
+**`Stacks.LocalCohomology.exists_quotientPower_extMapVanishesAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/QuotientPowerVanishing.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityI/QuotientPowerVanishing.lean#L212).
 
 > **[Stacks, Tag 0EH1].** Let `I` be an ideal of a Noetherian ring `A` and let `e` be the
 > cohomological dimension of `I` in `A`. For every `n` there is an `m > n` for which the quotient
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.20, Tag 0G9S](https://stacks.math.columbia.edu/tag/0G9S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

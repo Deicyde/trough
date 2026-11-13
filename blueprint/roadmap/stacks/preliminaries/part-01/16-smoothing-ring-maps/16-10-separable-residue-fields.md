@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.10 Separable residue fields
 
-Section 16.10 of the Stacks Project, [Tag 07FB](https://stacks.math.columbia.edu/tag/07FB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.10 of the Stacks Project, [Tag 07FB](https://stacks.math.columbia.edu/tag/07FB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07FC, a lemma
 
 [Tag 07FC](https://stacks.math.columbia.edu/tag/07FC) in the Stacks Project.
 
-**`ogoma_ker_eq_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/OgomaKernelStabilization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/OgomaKernelStabilization.lean#L66).
+**`ogoma_ker_eq_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/OgomaKernelStabilization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/OgomaKernelStabilization.lean#L66).
 
 > Stacks Tag 07FC (Ogoma's lemma). Over a Noetherian ring `A`, for a finite
 > `A`-module `M`, a multiplicative subset `S` and `π : A`, if multiplication by `π`
@@ -36,7 +36,7 @@ theorem ogoma_ker_eq_of_localization {A M : Type*} [CommRing A] [AddCommGroup M]
 
 [Tag 07FD](https://stacks.math.columbia.edu/tag/07FD) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_parameters_pow_mem_and_annihilator_sq_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ParametersWithPowersInIdeal.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/ParametersWithPowersInIdeal.lean#L214).
+**`Stacks.Smoothing.exists_parameters_pow_mem_and_annihilator_sq_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ParametersWithPowersInIdeal.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/ParametersWithPowersInIdeal.lean#L214).
 
 > **Stacks 07FD.** Let `Λ` be a Noetherian ring, let `I` and `q` be ideals of `Λ` with `q`
 > prime, and let `n`, `e` be positive integers. Assume that the extension of `q ^ n` to `Λ_q` is
@@ -66,7 +66,7 @@ theorem exists_parameters_pow_mem_and_annihilator_sq_eq
 
 [Tag 07FE](https://stacks.math.columbia.edu/tag/07FE) in the Stacks Project.
 
-**`Stacks.Smoothing.canBeResolved_of_isRegularLocalRing_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SeparableResidueFieldResolution/RegularSeparableResolution.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SeparableResidueFieldResolution/RegularSeparableResolution.lean#L83).
+**`Stacks.Smoothing.canBeResolved_of_isRegularLocalRing_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SeparableResidueFieldResolution/RegularSeparableResolution.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SeparableResidueFieldResolution/RegularSeparableResolution.lean#L83).
 
 > **Stacks 07FE.** Let `k → A → Λ ⊃ q` be a local smoothing situation over a field `k`
 > with `Λ` Noetherian, `q` minimal over `𝔥_A = √(H_{A/k} Λ)`, `Λ_q` a regular local ring and the
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.10, Tag 07FB](https://stacks.math.columbia.edu/tag/07FB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

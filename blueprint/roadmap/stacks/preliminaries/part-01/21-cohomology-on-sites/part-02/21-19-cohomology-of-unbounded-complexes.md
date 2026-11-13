@@ -1,43 +1,103 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Cohomology.ModuleSections.globalSectionsKInjectiveIso_naturality, Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction, Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction, Stacks.Cohomology.DerivedPushforward.derivedPullbackPushforwardAdjunctionOfToposHom, Stacks.Cohomology.DerivedPushforwardCompositionOfToposHom.isIso_derivedPushforwardComparison_unconditional, Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.isIso_derivedPushforwardComparison_unconditional, Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.derivedPushforwardCompIsoUnconditional, Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap
+lean: Stacks.Cohomology.UnboundedComplexes.ringedSite_unboundedComplexes, Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction, Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction, Stacks.Cohomology.DerivedPushforward.derivedPullbackPushforwardAdjunctionOfToposHom, Stacks.Cohomology.DerivedPushforwardCompositionOfToposHom.isIso_derivedPushforwardComparison_unconditional, Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.isIso_derivedPushforwardComparison_unconditional, Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.derivedPushforwardCompIsoUnconditional, Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap
 statement: formalized
 proof: formalized
 ---
 
 # 21.19 Cohomology of unbounded complexes
 
-Section 21.19 of the Stacks Project, [Tag 07A5](https://stacks.math.columbia.edu/tag/07A5). 9 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.19 of the Stacks Project, [Tag 07A5](https://stacks.math.columbia.edu/tag/07A5). 9 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07A5, the section
 
 [Tag 07A5](https://stacks.math.columbia.edu/tag/07A5) in the Stacks Project.
 
-**`Stacks.Cohomology.ModuleSections.globalSectionsKInjectiveIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/KInjectiveSectionsNaturality.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/KInjectiveSectionsNaturality.lean#L60). The attribute's comment: “global sections of modules on a ringed site, naturality of the comparison”.
+**`Stacks.Cohomology.UnboundedComplexes.ringedSite_unboundedComplexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/UnboundedComplexes.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/UnboundedComplexes.lean#L192).
 
-> **The comparison of global sections with derived global sections on a K-injective complex
-> is natural.** For a morphism `t : I ⟶ J` of K-injective complexes of `O`-modules, the class of
-> the induced morphism of global section complexes corresponds to the morphism
-> `RΓ(C, I) ⟶ RΓ(C, J)` induced by the class of `t`.
+> **Stacks 07A5.** Let `(C, O)` be a ringed site.
+>
+> * `Mod(O)` is a Grothendieck abelian category: it has all colimits, filtered colimits are exact,
+>   and `⨁_{U ∈ Ob(C)} j_{U!}O_U` is a generator.
+> * There is a functor `T` on complexes of `O`-modules with a natural transformation `id ⟶ T`
+>   which at every complex `F^•` is a quasi-isomorphism, injective in every degree, into the
+>   K-injective complex `T(F^•)`.
+> * (1) Every exact functor `F : K(Mod(O)) ⥤ D` into a triangulated category has a right derived
+>   functor `RF : D(O) ⥤ D`; every right derived functor `RF` of `F` is exact, and
+>   `RF(F^•) = F(T(F^•))`.
+> * (2) The same holds for the functor `K(Mod(O)) ⥤ D(A)` induced by an additive functor
+>   `F : Mod(O) ⥤ A` into an abelian category.
+> * The examples: `RΓ(C, -) : D(O) ⥤ D(Γ(C, O))`, `RΓ(U, -) : D(O) ⥤ D(O(U))` for every object
+>   `U`, and `Rf_* : D(O) ⥤ D(O')` for every morphism of ringed topoi
+>   `f : (Sh(C), O) ⟶ (Sh(D), O')` exist.
 
 ```lean
-theorem globalSectionsKInjectiveIso_naturality
-    {I J : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ℤ}
-    [I.IsKInjective] [J.IsKInjective]
-    (t : I ⟶ J) :
-    DerivedCategory.Q.map
-          (((moduleGlobalSections X).mapHomologicalComplex (ComplexShape.up ℤ)).map t) ≫
-        (globalSectionsKInjectiveIso X J).hom =
-      (globalSectionsKInjectiveIso X I).hom ≫
-        (derivedModuleGlobalSections X).map (DerivedCategory.Q.map t)
+theorem ringedSite_unboundedComplexes
+    [HasDerivedCategory.{w} (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))] :
+    (HasColimitsOfSize.{u, u}
+        (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ∧
+      AB5OfSize.{u, u} (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ∧
+      IsSeparator (∐ fun U : X.C =>
+        (SheafOfModules.extensionByZero.{u, u, u, u}
+          (Stacks.SheafOfModules.Tensor.ringSheaf X.O) U).obj
+            (SheafOfModules.unit ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over U))) ∧
+      IsGrothendieckAbelian.{u}
+        (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))) ∧
+    ∃ (T : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ℤ ⥤
+        CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ℤ)
+      (η : 𝟭 _ ⟶ T),
+      (∀ K, QuasiIso (η.app K) ∧ (∀ n, Mono ((η.app K).f n)) ∧ (T.obj K).IsKInjective) ∧
+      (∀ (D : Type uD) [Category.{vD} D] [HasZeroObject D] [HasShift D ℤ] [Preadditive D]
+          [∀ n : ℤ, (shiftFunctor D n).Additive] [Pretriangulated D]
+          (F : HomotopyCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))
+            (ComplexShape.up ℤ) ⥤ D) [F.CommShift ℤ] [F.IsTriangulated],
+        F.HasRightDerivedFunctor (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ)) ∧
+        ∀ (RF : DerivedCategory (SheafOfModules.{u}
+              (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ⥤ D)
+          (α : F ⟶ DerivedCategory.Qh ⋙ RF)
+          [RF.IsRightDerivedFunctor α (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ))],
+          (letI := Functor.IsRightDerivedFunctor.commShift RF α
+            (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ)) ℤ
+          RF.IsTriangulated) ∧
+          ∀ K, IsIso (α.app ((HomotopyCategory.quotient _ _).obj (T.obj K))) ∧
+            IsIso (RF.map (DerivedCategory.Q.map (η.app K)))) ∧
+      (∀ (A : Type uA) [Category.{vA} A] [Abelian A] [HasDerivedCategory.{wA} A]
+          (F : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O) ⥤ A) [F.Additive],
+        (F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh).HasRightDerivedFunctor
+          (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ)) ∧
+        ∀ (RF : DerivedCategory (SheafOfModules.{u}
+              (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ⥤ DerivedCategory A)
+          (α : F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh ⟶
+            DerivedCategory.Qh ⋙ RF)
+          [RF.IsRightDerivedFunctor α (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ))],
+          (letI := Functor.IsRightDerivedFunctor.commShift RF α
+            (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ)) ℤ
+          RF.IsTriangulated) ∧
+          ∀ K, IsIso (α.app ((HomotopyCategory.quotient _ _).obj (T.obj K))) ∧
+            IsIso (RF.map (DerivedCategory.Q.map (η.app K)))) ∧
+      (∀ [HasDerivedCategory.{wA} (ModuleCat.{u} (globalSectionsRing X))],
+        ((globalSectionsModule X).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
+          DerivedCategory.Qh).HasRightDerivedFunctor
+            (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ))) ∧
+      (∀ (U : X.C)
+          [HasDerivedCategory.{wA} (ModuleCat.{u}
+            ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).obj.obj (op U)))],
+        ((SheafOfModules.evaluation (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
+            (op U)).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
+          DerivedCategory.Qh).HasRightDerivedFunctor
+            (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ))) ∧
+      (∀ (Y : RingedTopos.{u, u, u})
+          (f : RingedToposHom ({ C := X.C, J := X.J, O := X.O } : RingedTopos.{u, u, u}) Y),
+        (DerivedPushforward.pushforwardOnHomotopy f).HasRightDerivedFunctor
+          (HomotopyCategory.quasiIso _ (ComplexShape.up ℤ)))
 ```
 
 ## Tag 07A6, a lemma
 
 [Tag 07A6](https://stacks.math.columbia.edu/tag/07A6) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L164). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L164). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Stacks 07A6 along an arbitrary morphism of ringed topoi.**  The unbounded derived
 > pullback `Lf^*` is left adjoint to the unbounded derived pushforward `Rf_*`.
@@ -61,7 +121,7 @@ theorem globalSectionsKInjectiveIso_naturality
 noncomputable def derivedAdjunction : derivedPullback f ⊣ derivedPushforward f
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean#L195). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis beyond those making the two categories of modules exist”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean#L196). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis beyond those making the two categories of modules exist”.
 
 > **Stacks 07A6 for a morphism of ringed topoi.**  The total left derived pullback `Lf^*` is
 > left adjoint to the total right derived direct image `Rf_*`,
@@ -77,7 +137,7 @@ def derivedAdjunction (f : RingedToposHom X Y) :
     derivedPullback f ⊣ derivedPushforward (X := X) (Y := Y) f
 ```
 
-**`Stacks.Cohomology.DerivedPushforward.derivedPullbackPushforwardAdjunctionOfToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackAdjunctionOfToposHom.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackAdjunctionOfToposHom.lean#L76). The attribute's comment: “for a morphism of ringed topoi whose two sites are small in the universe of the sections of their structure sheaves”.
+**`Stacks.Cohomology.DerivedPushforward.derivedPullbackPushforwardAdjunctionOfToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackAdjunctionOfToposHom.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackAdjunctionOfToposHom.lean#L76). The attribute's comment: “for a morphism of ringed topoi whose two sites are small in the universe of the sections of their structure sheaves”.
 
 > For a morphism of ringed topoi `f`, the derived pullback `Lf^*` is left adjoint to the
 > derived direct image `Rf_*` on the unbounded derived categories,
@@ -92,7 +152,7 @@ def derivedPullbackPushforwardAdjunctionOfToposHom :
 
 [Tag 0D6E](https://stacks.math.columbia.edu/tag/0D6E) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPushforwardCompositionOfToposHom.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOfToposHomUnconditional.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOfToposHomUnconditional.lean#L560). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis on either morphism; the three universes of each of the three ringed topoi are free and unrelated”.
+**`Stacks.Cohomology.DerivedPushforwardCompositionOfToposHom.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOfToposHomUnconditional.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOfToposHomUnconditional.lean#L560). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis on either morphism; the three universes of each of the three ringed topoi are free and unrelated”.
 
 > **Stacks 0D6E for a morphism of ringed topoi.**  For composable morphisms of ringed topoi
 > `f : (Sh(𝒞), 𝒪_𝒞) ⟶ (Sh(𝒟), 𝒪_𝒟)` and `g : (Sh(𝒟), 𝒪_𝒟) ⟶ (Sh(ℰ), 𝒪_ℰ)`, the canonical
@@ -115,7 +175,7 @@ theorem isIso_derivedPushforwardComparison_unconditional
     IsIso (derivedPushforwardComparison f g Rf Rg Rh αf αg αh)
 ```
 
-**`Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean#L535).
+**`Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean#L545).
 
 > **Stacks 0D6E.**  For composable morphisms of ringed topoi `f : (Sh(𝒞), 𝒪_𝒞) ⟶ (Sh(𝒟), 𝒪_𝒟)`
 > and `g : (Sh(𝒟), 𝒪_𝒟) ⟶ (Sh(ℰ), 𝒪_ℰ)`, the canonical comparison from a derived pushforward along
@@ -140,7 +200,7 @@ theorem isIso_derivedPushforwardComparison_unconditional
     IsIso (derivedPushforwardComparison f g Rf Rg Rh αf αg αh)
 ```
 
-**`Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.derivedPushforwardCompIsoUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean#L555). The attribute's comment: “as a natural isomorphism”.
+**`Stacks.Cohomology.DerivedPushforwardCompositionOnTopoi.derivedPushforwardCompIsoUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CompositionOnRingedTopoiUnconditional.lean#L565). The attribute's comment: “as a natural isomorphism”.
 
 > **Stacks 0D6E as a natural isomorphism** `Rf_* ⋙ Rg_* ≅ R(g ∘ f)_*`, obtained by inverting
 > the canonical comparison.  This is the source's equality of composite functors, in the only form
@@ -165,7 +225,7 @@ noncomputable def derivedPushforwardCompIsoUnconditional
 
 [Tag 07A7](https://stacks.math.columbia.edu/tag/07A7) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean#L176). The attribute's comment: “the canonical derived base change map `Lg^* Rf_* K ⟶ Rf'_* L(g')^* K` of a commutative square of morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the map of structure sheaves, with no continuous functor between the underlying sites -- at the twelve free universes of the four ringed topoi”. References: SGA 6 IV (3.1.0).
+**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean#L176). The attribute's comment: “the canonical derived base change map `Lg^* Rf_* K ⟶ Rf'_* L(g')^* K` of a commutative square of morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the map of structure sheaves, with no continuous functor between the underlying sites -- at the twelve free universes of the four ringed topoi”. References: SGA 6 IV (3.1.0).
 
 > For a commutative square of morphisms of ringed topoi
 >
@@ -192,7 +252,7 @@ def derivedBaseChangeMap (h : g.comp f' = f.comp g')
       (derivedPushforward f').obj ((derivedPullback g').obj K)
 ```
 
-**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean#L192). The attribute's comment: “the adjoint characterization which the source gives of the base change map of a commutative square of morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2), and which pins the map down: its adjunct under `L(f')^* ⊣ Rf'_*` is `L(g')^*` of the derived counit, across the two composition isomorphisms of Tag 0D6D”.
+**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeOfToposHom.lean#L192). The attribute's comment: “the adjoint characterization which the source gives of the base change map of a commutative square of morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2), and which pins the map down: its adjunct under `L(f')^* ⊣ Rf'_*` is `L(g')^*` of the derived counit, across the two composition isomorphisms of Tag 0D6D”.
 
 > **The adjoint characterization of the base change map.** Under the derived adjunction
 > `L(f')^* ⊣ Rf'_*`, the base change map of a commutative square of morphisms of ringed topoi is
@@ -216,7 +276,7 @@ theorem derivedBaseChangeMap_adjoint (h : g.comp f' = f.comp g')
 
 [Tag 0E46](https://stacks.math.columbia.edu/tag/0E46) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L1068). The attribute's comment: “variant: the special case of squares of morphisms of ringed topoi presented by morphisms of sites; the tag for arbitrary morphisms of ringed topoi is Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso\_vertical”.
+**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 1074](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L1074). The attribute's comment: “variant: the special case of squares of morphisms of ringed topoi presented by morphisms of sites; the tag for arbitrary morphisms of ringed topoi is Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso\_vertical”.
 
 > **The vertical pasting law, for ringed topoi presented by morphisms of sites.**  For two
 > vertically composable commutative squares of ringed topoi whose arrows come from morphisms of the
@@ -242,7 +302,7 @@ theorem derivedBaseChangeMap_comp (htop : l.comp f' = f.comp k) (hbot : m.comp g
         (comp_stack f g f' g' k l m htop hbot) K
 ```
 
-**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso_vertical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeVerticalPastingOfToposHom.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeVerticalPastingOfToposHom.lean#L456).
+**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso_vertical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeVerticalPastingOfToposHom.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangeVerticalPastingOfToposHom.lean#L456).
 
 > **Stacks 0E46.**  Consider a commutative diagram of ringed topoi
 >
@@ -295,7 +355,7 @@ theorem derivedBaseChangeMapOfTwoIso_vertical
 
 [Tag 0E47](https://stacks.math.columbia.edu/tag/0E47) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOfToposHom.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOfToposHom.lean#L388).
+**`Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOfToposHom.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOfToposHom.lean#L388).
 
 > **Stacks 0E47.**  Consider a commutative diagram of ringed topoi
 >
@@ -341,7 +401,7 @@ theorem derivedBaseChangeMapOfTwoIso_horizontal
         (RingedToposHom.TwoIso.pasteHorizontal s s') K
 ```
 
-**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L796).
+**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L802).
 
 > **Stacks 0E47.**  For two horizontally composable commutative squares of ringed topoi, the
 > composite of the derived base change maps of the two squares, read through the composition
@@ -372,7 +432,7 @@ theorem derivedBaseChangeMap_horizontal (hmosf : f.u.IsMorphismOfSites Y.J X.J)
 
 [Tag 0FPI](https://stacks.math.columbia.edu/tag/0FPI) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean#L225). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis beyond those making the two categories of modules exist; stated at an object of the unbounded homotopy category, which a complex gives through `HomotopyCategory.quotient`”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/DerivedAdjunctionOfToposHom.lean#L226). The attribute's comment: “for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites -- and with no hypothesis beyond those making the two categories of modules exist; stated at an object of the unbounded homotopy category, which a complex gives through `HomotopyCategory.quotient`”.
 
 > **Stacks 0FPI for a morphism of ringed topoi.**  For a complex `𝒦` of `𝒪`-modules the square
 >
@@ -408,7 +468,7 @@ theorem derivedAdjunction_counit_fac (f : RingedToposHom X Y)
         DerivedCategory.Qh.map ((pullbackAdjPushforwardMapHomotopy f).counit.app K)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean#L117).
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean#L118).
 
 > **Stacks 0FPI.**  For a complex `K` of `𝒪_C`-modules the square
 >
@@ -450,7 +510,7 @@ theorem derivedAdjunction_counit_fac
 
 [Tag 0B6C](https://stacks.math.columbia.edu/tag/0B6C) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L250). The attribute's comment: “the relative cup product”.
+**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L250). The attribute's comment: “the relative cup product”.
 
 > **[Stacks, Tag 0B6C].**  For a morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and objects `K`, `L` of `D(O_C)`, the canonical relative cup
@@ -471,7 +531,7 @@ def relativeCupProduct
       (derivedPushforward f).obj (((derivedTensorProductFunctor X.O).obj K).obj L)
 ```
 
-**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L278). The attribute's comment: “naturality in the first object”.
+**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L278). The attribute's comment: “naturality in the first object”.
 
 > **Naturality of the relative cup product of [Stacks, Tag 0B6C] in the first object.**
 
@@ -487,7 +547,7 @@ theorem relativeCupProduct_naturality_left
         (derivedPushforward f).map (((derivedTensorProductFunctor X.O).map k).app L)
 ```
 
-**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L293). The attribute's comment: “naturality in the second object”.
+**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProduct.lean#L293). The attribute's comment: “naturality in the second object”.
 
 > **Naturality of the relative cup product of [Stacks, Tag 0B6C] in the second object.**
 
@@ -503,7 +563,7 @@ theorem relativeCupProduct_naturality_right
         (derivedPushforward f).map (((derivedTensorProductFunctor X.O).obj K).map l)
 ```
 
-**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductOfToposHom.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductOfToposHom.lean#L116). The attribute's comment: “the relative cup product, for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites and no morphism-of-sites hypothesis”.
+**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductOfToposHom.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductOfToposHom.lean#L116). The attribute's comment: “the relative cup product, for a morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the structure map, with no continuous functor between the underlying sites and no morphism-of-sites hypothesis”.
 
 > For a morphism of ringed topoi
 > `f : (Sh(C), 𝒪_C) ⟶ (Sh(D), 𝒪_D)` — a morphism of the underlying topoi together with the
@@ -528,7 +588,7 @@ def relativeCupProduct
 
 [Tag 0DD7](https://stacks.math.columbia.edu/tag/0DD7) in the Stacks Project.
 
-**`Stacks.Torsion.torsionSheafProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean#L566). The attribute's comment: “Serre subcategory”.
+**`Stacks.Torsion.torsionSheafProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean#L569). The attribute's comment: “Serre subcategory”.
 
 > Torsion abelian sheaves form a Serre subcategory.
 
@@ -537,7 +597,7 @@ public instance torsionSheafProperty_isSerreClass :
     (torsionSheafProperty J).IsSerreClass
 ```
 
-**`Stacks.Torsion.exists_torsionDerivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean, line 1118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean#L1118). The attribute's comment: “derived equivalence”.
+**`Stacks.Torsion.exists_torsionDerivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean, line 1121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsion/DerivedCategoryOfTorsionSheaves.lean#L1121). The attribute's comment: “derived equivalence”.
 
 > **Stacks 0DD7.** The derived category of torsion abelian sheaves is equivalent to the full
 > subcategory of the derived category of all abelian sheaves consisting of objects with torsion
@@ -558,4 +618,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.19, Tag 07A5](https://stacks.math.columbia.edu/tag/07A5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # Harmonic numbers and harmonic sums
 
-146 results of ATLAS's vault, 89 proved and 57 stated but not proved, in this branch's topics.
+146 results of ATLAS's vault, 97 proved and 49 stated but not proved, in this branch's topics.
 
 Harmonic, hyperharmonic and multiple harmonic sums, binomial-harmonic identities, non-integrality, harmonic congruences, Euler–Mascheroni bounds.
 

@@ -1,8 +1,8 @@
 # Computer science
 
-The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer science: 21 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer science: 22 articles, one per card.
 
-## [2-Coloring Cycles in One Round to Sharp list-scheduling and…](part-01/README.md)
+## [2-Coloring Cycles in One Round to Quartic-over-logarithmic lower…](part-01/README.md)
 
 - [2-Coloring Cycles in One Round](part-01/2-coloring-1-round.md)
 - [The Aaronson–Ambainis influence conjecture](part-01/aaronson-ambainis.md)
@@ -11,6 +11,7 @@ The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer 
 - [Block sensitivity can exceed spectral sensitivity squared](part-01/block-spectral-sensitivity.md)
 - [Circuit Complexity in Lean 4](part-01/circuit-complexity.md)
 - [Coinductive Interaction Trees using QPFs](part-01/lean4-itree.md)
+- [Descriptive counting complexity and parsimonious completeness of \#SAT](part-01/descriptive-counting.md)
 - [Event Structures and Causal-Consistent Reversibility](part-01/event-structures.md)
 - [Exact Boolean multiplicative complexity of four-term polynomial multiplication](part-01/boolean-multiplication.md)
 - [Finite witnesses and the width hierarchy for language generation](part-01/language-generation-characterization.md)
@@ -23,8 +24,8 @@ The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer 
 - [Pumping Lemma for Context-Free Grammars](part-01/pumping-cfg.md)
 - [Pure Nock semantics, trace certificates, and polynomial fingerprints](part-01/pure-nock.md)
 - [Quartic-over-logarithmic lower bound for rational permanent formulas](part-01/permanent-formula-lower-bound.md)
-- [Sharp list-scheduling and longest-processing-time bounds](part-01/graham-lpt.md)
 
-## [Sundog certificates](part-02/README.md)
+## [Sharp list-scheduling and… to Sundog certificates](part-02/README.md)
 
+- [Sharp list-scheduling and longest-processing-time bounds](part-02/graham-lpt.md)
 - [Sundog certificates](part-02/sundogcert.md)

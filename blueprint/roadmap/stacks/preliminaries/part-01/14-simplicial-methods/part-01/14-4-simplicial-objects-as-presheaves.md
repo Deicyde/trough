@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.4 Simplicial objects as presheaves
 
-Section 14.4 of the Stacks Project, [Tag 016G](https://stacks.math.columbia.edu/tag/016G). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.4 of the Stacks Project, [Tag 016G](https://stacks.math.columbia.edu/tag/016G). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 016H, an equation
 
 [Tag 016H](https://stacks.math.columbia.edu/tag/016H) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.existsUnique_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L217). The attribute's comment: “the common hom-set is the set of degreewise families commuting with the faces and the degeneracies”.
+**`CategoryTheory.SimplicialObject.existsUnique_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L217). The attribute's comment: “the common hom-set is the set of degreewise families commuting with the faces and the degeneracies”.
 
 > **Stacks 016H**.
 > Let `U`, `U'` be simplicial objects of a category `C`, and let `d n : U_n ⟶ U'_n` be a family of
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.4, Tag 016G](https://stacks.math.columbia.edu/tag/016G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

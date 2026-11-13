@@ -7,7 +7,7 @@ statement: formalized
 
 # Units of integral group rings
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html).
 
 ## The group $C_2 \times C_2 \times C_2 \times C_6$
 
@@ -20,7 +20,7 @@ $\mathbb{Z}/2 \times \mathbb{Z}/2 \times \mathbb{Z}/2 \times \mathbb{Z}/6$.
 
 - `OWR-11129-005` (Computational Group Theory (2012), Oberwolfach Reports, DOI 10.4171/owr/2011/37).
 
-Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.OWRGroup`, an abbreviation declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#owrgroup).
+Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.OWRGroup`, an abbreviation declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#owrgroup).
 
 ## The integral group ring of $C_2 \times C_2 \times C_2 \times C_6$
 
@@ -33,7 +33,7 @@ operation of $G$ bilinearly.
 
 - `OWR-11129-005` (Computational Group Theory (2012), Oberwolfach Reports, DOI 10.4171/owr/2011/37).
 
-Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.OWRGroupRing`, an abbreviation declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#owrgroup-ring).
+Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.OWRGroupRing`, an abbreviation declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#owrgroup-ring).
 
 ## Exotic unit conjecture for $C_2 \times C_2 \times C_2 \times C_6$
 
@@ -46,7 +46,7 @@ $g \in G$.
 
 - the open question of `OWR-11129-005` (Computational Group Theory (2012), Oberwolfach Reports, DOI 10.4171/owr/2011/37).
 
-Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.conjecture`, a definition declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#conjecture).
+Formalized by `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.conjecture`, a definition declared in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#conjecture).
 
 ## No exotic units in the integral group ring of $C_2 \times C_2 \times C_2 \times C_6$
 
@@ -63,7 +63,7 @@ unit of $\mathbb{Z}G$ is trivial and no exotic unit exists.
 
 - Andreas Bächle, Integral group rings of solvable groups with trivial central units, Forum Math. 30 (2018), arXiv:1701.04347, https://arxiv.org/abs/1701.04347.
 
-Stated but not proved: `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/ExoticUnitsC2C2C2C6Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Units of integral group rings](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/units-of-integral-group-rings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/group-rings/units-of-integral-group-rings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/group-rings/units-of-integral-group-rings)

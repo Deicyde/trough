@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.20 Properties of morphisms smooth local on source-and-target
 
-Section 74.20 of the Stacks Project, [Tag 06F7](https://stacks.math.columbia.edu/tag/06F7). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.20 of the Stacks Project, [Tag 06F7](https://stacks.math.columbia.edu/tag/06F7). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06F8, a definition
 
 [Tag 06F8](https://stacks.math.columbia.edu/tag/06F8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSmoothLocalOnSourceAndTarget`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalOnSourceAndTarget.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalOnSourceAndTarget.lean#L55).
+**`AlgebraicGeometry.Space.IsSmoothLocalOnSourceAndTarget`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalOnSourceAndTarget.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalOnSourceAndTarget.lean#L55).
 
 > **Stacks 06F8.** A property of morphisms of algebraic spaces over `S` is *smooth local on
 > the source-and-target* when it is stable under smooth precomposition and smooth base change, and
@@ -30,7 +30,7 @@ structure IsSmoothLocalOnSourceAndTarget
 
 [Tag 06F9](https://stacks.math.columbia.edu/tag/06F9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmoothLocalAtSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L163). The attribute's comment: “smooth\_local\_source”.
+**`AlgebraicGeometry.Space.isSmoothLocalAtSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L163). The attribute's comment: “smooth\_local\_source”.
 
 > **Stacks 06F9**, smooth locality on the source. A property of morphisms of algebraic spaces
 > over `S` which is smooth local on the source-and-target is local at the source for the smooth
@@ -46,7 +46,7 @@ theorem isSmoothLocalAtSource
       (Topology.precoverage.{u, v} .smooth B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L212). The attribute's comment: “smooth\_local\_target”.
+**`AlgebraicGeometry.Space.isSmoothLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L212). The attribute's comment: “smooth\_local\_target”.
 
 > **Stacks 06F9**, smooth locality on the target. A property of morphisms of algebraic spaces
 > over `S` which is smooth local on the source-and-target is local at the target for the smooth
@@ -62,7 +62,7 @@ theorem isSmoothLocalAtTarget
       (Topology.precoverage.{u, v} .smooth B S hS)
 ```
 
-**`AlgebraicGeometry.Space.comp_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L272). The attribute's comment: “smooth\_postcomposition”.
+**`AlgebraicGeometry.Space.comp_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L272). The attribute's comment: “smooth\_postcomposition”.
 
 > **Stacks 06F9**, smooth postcomposition. A property of morphisms of algebraic spaces over
 > `S` which is smooth local on the source-and-target is preserved by postcomposition with a smooth
@@ -84,7 +84,7 @@ theorem comp_smooth
 
 [Tag 06FA](https://stacks.math.columbia.edu/tag/06FA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smoothLocalOnSourceAndTarget_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L337).
+**`AlgebraicGeometry.Space.smoothLocalOnSourceAndTarget_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalProperties.lean#L337).
 
 > **Stacks 06FA.** Seven equivalent criteria for a morphism of algebraic spaces over `S` to
 > have a property which is smooth local on the source-and-target: the property itself; a smooth
@@ -155,7 +155,7 @@ theorem smoothLocalOnSourceAndTarget_tfae
 
 [Tag 06FB](https://stacks.math.columbia.edu/tag/06FB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/SmoothCriterion.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/SmoothCriterion.lean#L75).
+**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/SmoothCriterion.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/SmoothCriterion.lean#L75).
 
 > **Stacks 06FB.** A property of morphisms of algebraic spaces over `S` which is local at the
 > source and at the target for the smooth topology, and is preserved by postcomposition with a
@@ -186,7 +186,7 @@ theorem isSmoothLocalOnSourceAndTarget
 
 [Tag 06FC](https://stacks.math.columbia.edu/tag/06FC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/Syntomic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/Syntomic.lean#L66). The attribute's comment: “syntomic”.
+**`AlgebraicGeometry.Space.isSyntomic_isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/Syntomic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/Syntomic.lean#L66). The attribute's comment: “syntomic”.
 
 > **Stacks 06FC**, the syntomic case. Syntomicity of morphisms of algebraic spaces over `S`
 > is smooth local on the source-and-target.
@@ -203,7 +203,7 @@ theorem isSyntomic_isSmoothLocalOnSourceAndTarget :
     IsSmoothLocalOnSourceAndTarget B S hS (fun _ _ f => IsSyntomic B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.universallyOpen_isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/UniversallyOpen.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/UniversallyOpen.lean#L77). The attribute's comment: “universally open”.
+**`AlgebraicGeometry.Space.universallyOpen_isSmoothLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/UniversallyOpen.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/UniversallyOpen.lean#L77). The attribute's comment: “universally open”.
 
 > **Stacks 06FC**, the universally-open case. Being universally open is, for morphisms of
 > algebraic spaces over `S`, smooth local on the source-and-target.
@@ -221,7 +221,7 @@ theorem universallyOpen_isSmoothLocalOnSourceAndTarget :
       (fun _ _ f => UniversallyOpen B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityCriterion.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityCriterion.lean#L187). The attribute's comment: “flat”.
+**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityCriterion.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityCriterion.lean#L188). The attribute's comment: “flat”.
 
 > **Stacks 06FC**, the flat case. Flatness of morphisms of algebraic spaces over `S` is smooth
 > local on the source-and-target.
@@ -236,7 +236,7 @@ theorem isSmoothLocalOnSourceAndTarget_flat :
     IsSmoothLocalOnSourceAndTarget B S hS (fun _ _ f => IsFlat B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean#L150). The attribute's comment: “locally\_of\_finite\_type”.
+**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean#L150). The attribute's comment: “locally\_of\_finite\_type”.
 
 > **Stacks 06FC**, the locally-of-finite-type case. Being locally of finite type for morphisms
 > of algebraic spaces over `S` is smooth local on the source-and-target.
@@ -254,7 +254,7 @@ theorem isSmoothLocalOnSourceAndTarget_locallyOfFiniteType :
       (fun _ _ f => IsLocallyOfFiniteType B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean#L178). The attribute's comment: “locally\_of\_finite\_presentation”.
+**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothLocalityFiniteness.lean#L178). The attribute's comment: “locally\_of\_finite\_presentation”.
 
 > **Stacks 06FC**, the locally-of-finite-presentation case. Being locally of finite
 > presentation for morphisms of algebraic spaces over `S` is smooth local on the
@@ -273,7 +273,7 @@ theorem isSmoothLocalOnSourceAndTarget_locallyOfFinitePresentation :
       (fun _ _ f => IsLocallyOfFinitePresentation B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothSourceLocalityTransfer.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothSourceLocalityTransfer.lean#L446). The attribute's comment: “smooth”.
+**`AlgebraicGeometry.Space.isSmoothLocalOnSourceAndTarget_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothSourceLocalityTransfer.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothSourceLocalityTransfer.lean#L446). The attribute's comment: “smooth”.
 
 > **Stacks 06FC**, the smooth case. Smoothness of morphisms of algebraic spaces over `S` is
 > smooth local on the source-and-target.
@@ -294,4 +294,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.20, Tag 06F7](https://stacks.math.columbia.edu/tag/06F7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,8 +1,8 @@
 # 29 Morphisms of Schemes
 
-Chapter 29 of the Stacks Project, *Morphisms of Schemes*, [Tag 01QL](https://stacks.math.columbia.edu/tag/01QL): the 57 sections of its 59 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 500 tags are carried by 901 declarations of the repository (all in StacksFrontier) and 208 registered declarations.
+Chapter 29 of the Stacks Project, *Morphisms of Schemes*, [Tag 01QL](https://stacks.math.columbia.edu/tag/01QL): the 58 sections of its 59 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 508 tags are carried by 934 declarations of the repository (all in StacksFrontier) and 201 registered declarations.
 
-## [29.2 Closed immersions to 29.22 Morphisms of finite…](part-01/README.md)
+## [29.2 Closed immersions to 29.21 Quasi-finite morphisms](part-01/README.md)
 
 - [29.2 Closed immersions](part-01/29-2-closed-immersions.md)
 - [29.3 Immersions](part-01/29-3-immersions.md)
@@ -22,11 +22,12 @@ Chapter 29 of the Stacks Project, *Morphisms of Schemes*, [Tag 01QL](https://sta
 - [29.17 Universally catenary schemes](part-01/29-17-universally-catenary-schemes.md)
 - [29.18 Nagata schemes, reprise](part-01/29-18-nagata-schemes-reprise.md)
 - [29.19 The singular locus, reprise](part-01/29-19-the-singular-locus-reprise.md)
+- [29.20 Excellent schemes](part-01/29-20-excellent-schemes.md)
 - [29.21 Quasi-finite morphisms](part-01/29-21-quasi-finite-morphisms.md)
-- [29.22 Morphisms of finite presentation](part-01/29-22-morphisms-of-finite-presentation.md)
 
-## [29.23 Constructible sets to 29.35 Smooth morphisms](part-02/README.md)
+## [29.22 Morphisms of finite… to 29.35 Smooth morphisms](part-02/README.md)
 
+- [29.22 Morphisms of finite presentation](part-02/29-22-morphisms-of-finite-presentation.md)
 - [29.23 Constructible sets](part-02/29-23-constructible-sets.md)
 - [29.24 Open morphisms](part-02/29-24-open-morphisms.md)
 - [29.25 Submersive morphisms](part-02/29-25-submersive-morphisms.md)

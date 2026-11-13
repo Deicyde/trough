@@ -8,7 +8,7 @@ proof: formalized
 
 # Taylor's law for integer sequences
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html).
 
 ## Admissible sequences for Taylor's law
 
@@ -20,7 +20,7 @@ there is $n_0 \ge 1$ such that $a(n) < a(n + 1)$ for every $n \ge n_0$.
 
 - Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, the collection `𝒜` of infinite eventually strictly increasing sequences of natural numbers, lines 113–125, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>.
 
-Formalized by `MetaMathlibExt.IsTaylorAdmissibleSequence`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorAdmissibleSequence.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/TaylorAdmissibleSequence.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#is-taylor-admissible-sequence).
+Formalized by `MetaMathlibExt.IsTaylorAdmissibleSequence`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorAdmissibleSequence.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/TaylorAdmissibleSequence.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#is-taylor-admissible-sequence).
 
 ## Initial-segment mean
 
@@ -34,7 +34,7 @@ The source uses $m(a, n)$ only for $n \ge 2$, with indices starting at $1$.
 
 - Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, mean/variance definitions, lines 119–124, equation `eq:mean` at line 122, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>.
 
-Formalized by `MetaMathlibExt.initialSegmentMean`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorInitialMean.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/TaylorInitialMean.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#initial-segment-mean).
+Formalized by `MetaMathlibExt.initialSegmentMean`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorInitialMean.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/TaylorInitialMean.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#initial-segment-mean).
 
 ## Initial-segment sample variance
 
@@ -50,7 +50,7 @@ $n \ge 2$, with indices starting at $1$.
 
 - Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, mean/variance definitions, lines 119–124, equation at line 122, first equality of the equation at line 123, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>.
 
-Formalized by `MetaMathlibExt.initialSegmentSampleVariance`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorInitialSampleVariance.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/TaylorInitialSampleVariance.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#initial-segment-sample-variance).
+Formalized by `MetaMathlibExt.initialSegmentSampleVariance`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorInitialSampleVariance.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/TaylorInitialSampleVariance.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#initial-segment-sample-variance).
 
 ## Taylor's law, asymptotic form
 
@@ -64,7 +64,7 @@ $v(a, n) / m(a, n)^b \to c$ as $n \to \infty$.
 
 - Joel E. Cohen, *Variance Functions of Asymptotically Exponentially Increasing Integer Sequences Go Beyond Taylor's Law*, Journal of Integer Sequences 25 (2022), Article 22.9.3, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Cohen/cohen13.tex>: the collection `𝒜` of admissible sequences with the mean `eq:mean` and variance `eq:varexpanded` definitions (lines 113–125), and the asymptotic power-law definition `eq:TLpower` (lines 152–156).
 
-Formalized by `MetaMathlibExt.SatisfiesTaylorsLawAsymptotically`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorsLaw.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/TaylorsLaw.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#satisfies-taylors-law-asymptotically).
+Formalized by `MetaMathlibExt.SatisfiesTaylorsLawAsymptotically`, a definition declared in [MathlibExt/Analysis/Asymptotics/TaylorsLaw.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/TaylorsLaw.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html#satisfies-taylors-law-asymptotically).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Taylor's law for integer sequences](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis/taylor-s-law-for-integer-sequences)

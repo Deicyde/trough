@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.7 Properties of algebraic stacks defined by properties of schemes
 
-Section 100.7 of the Stacks Project, [Tag 04YE](https://stacks.math.columbia.edu/tag/04YE). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 100.7 of the Stacks Project, [Tag 04YE](https://stacks.math.columbia.edu/tag/04YE). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04YF, a lemma
 
 [Tag 04YF](https://stacks.math.columbia.edu/tag/04YF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_forall_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean#L163). The attribute's comment: “scheme criteria”.
+**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_forall_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean#L163). The attribute's comment: “scheme criteria”.
 
 > **Stacks 04YF, the two scheme criteria.** For a property `P` of schemes local in the smooth
 > topology, an algebraic stack over `S` admits some smooth surjective 1-morphism from the algebraic
@@ -28,7 +28,7 @@ theorem exists_scheme_atlas_iff_forall_scheme
       HasPropertyOnEverySchemeChart B S hS P 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean#L205). The attribute's comment: “scheme case”.
+**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasScheme.lean#L205). The attribute's comment: “scheme case”.
 
 > **Stacks 04YF, the scheme case.** On the algebraic stack of a scheme `U` over `S`, the
 > existential scheme criterion for a smooth-local property `P` is `P` of the scheme underlying `U`.
@@ -43,7 +43,7 @@ theorem exists_scheme_atlas_iff_scheme
       P ((BigFppfOver.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_exists_space_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L373). The attribute's comment: “scheme and space atlases”.
+**`AlgebraicGeometry.Stack.exists_scheme_atlas_iff_exists_space_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L373). The attribute's comment: “scheme and space atlases”.
 
 > An algebraic stack over `S` admits a smooth surjective 1-morphism from the algebraic stack of
 > a scheme over `S` with `P` exactly when it admits one from the algebraic stack of an algebraic
@@ -56,7 +56,7 @@ theorem exists_scheme_atlas_iff_exists_space_atlas
       HasPropertyOnSomeSpaceAtlas B S hS P 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.exists_space_atlas_iff_forall_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L396). The attribute's comment: “space criteria”.
+**`AlgebraicGeometry.Stack.exists_space_atlas_iff_forall_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L396). The attribute's comment: “space criteria”.
 
 > An algebraic stack over `S` admits a smooth surjective 1-morphism from the algebraic stack of
 > an algebraic space over `S` with the étale-local property `P` exactly when every smooth
@@ -70,7 +70,7 @@ theorem exists_space_atlas_iff_forall_space
       HasPropertyOnEverySpaceChart B S hS P 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.exists_space_atlas_iff_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L421). The attribute's comment: “algebraic-space case”.
+**`AlgebraicGeometry.Stack.exists_space_atlas_iff_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlasSpace.lean#L421). The attribute's comment: “algebraic-space case”.
 
 > On the algebraic stack of an algebraic space over `S`, the existential algebraic-space
 > criterion for a smooth-local property `P` is the étale-local property `P` of Stacks 03E6 of that
@@ -87,7 +87,7 @@ theorem exists_space_atlas_iff_space
 
 [Tag 04YG](https://stacks.math.columbia.edu/tag/04YG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasPropertyOnSomeSchemeAtlas`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlas.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlas.lean#L96).
+**`AlgebraicGeometry.Stack.HasPropertyOnSomeSchemeAtlas`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlas.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalPropertyAtlas.lean#L96).
 
 > **The existential scheme criterion of Stacks 04YF**, and **Stacks 04YG**: the algebraic
 > stack `𝒳` *has property* `P` when it admits a smooth surjective 1-morphism from the algebraic
@@ -104,7 +104,7 @@ abbrev HasPropertyOnSomeSchemeAtlas (𝒳 : AlgebraicStacks.{u, w} B S hS) : Pro
 
 [Tag 04YI](https://stacks.math.columbia.edu/tag/04YI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.tfae_germProperty_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L476).
+**`AlgebraicGeometry.Stack.tfae_germProperty_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L476).
 
 > **Stacks 04YI.** Let `𝒳` be an algebraic stack over `S`, let `x` be a point of `𝒳`, and let
 > `P` be a smooth-local property of germs of schemes (**Stacks 04N1**). Then the four conditions
@@ -119,7 +119,7 @@ theorem tfae_germProperty_at_point (hP : GermOfScheme.IsSmoothLocal P) :
       GermPropertyAtSomeSpaceChart B S hS 𝒳 x P].TFAE
 ```
 
-**`AlgebraicGeometry.Stack.germPropertyAtSomeSpaceChart_algebraicSpaceStack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L527). The attribute's comment: “algebraic space case”.
+**`AlgebraicGeometry.Stack.germPropertyAtSomeSpaceChart_algebraicSpaceStack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L527). The attribute's comment: “algebraic space case”.
 
 > **Stacks 04YI, the algebraic space addendum.** On the algebraic stack of an algebraic space
 > `F` over `S` the four conditions say that `F` has property `P` at the corresponding point of `F`,
@@ -136,7 +136,7 @@ theorem germPropertyAtSomeSpaceChart_algebraicSpaceStack_iff
       Space.HasPropertyAtPoint B S hS F z P
 ```
 
-**`AlgebraicGeometry.Stack.germPropertyAtSomeSpaceChart_yoneda_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L548). The attribute's comment: “representable case”.
+**`AlgebraicGeometry.Stack.germPropertyAtSomeSpaceChart_yoneda_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L548). The attribute's comment: “representable case”.
 
 > **Stacks 04YI, the representable addendum.** On the algebraic stack of a scheme `U` over `S`
 > the four conditions say that the germ of `U` at the corresponding scheme point has `P`.
@@ -158,7 +158,7 @@ theorem germPropertyAtSomeSpaceChart_yoneda_iff (U : BigFppfOver B S hS)
 
 [Tag 04YJ](https://stacks.math.columbia.edu/tag/04YJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L578).
+**`AlgebraicGeometry.Stack.HasPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalGermAtPoint.lean#L578).
 
 > **Stacks 04YJ.** Let `P` be a property of germs of schemes which is smooth local (**Stacks
 > 04N1**), let `𝒳` be an algebraic stack over `S` and let `x` be a point of `𝒳` (**Stacks 04XG**).
@@ -185,4 +185,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.7, Tag 04YE](https://stacks.math.columbia.edu/tag/04YE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

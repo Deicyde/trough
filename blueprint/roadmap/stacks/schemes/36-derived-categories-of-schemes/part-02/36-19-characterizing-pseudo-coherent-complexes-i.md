@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.19 Characterizing pseudo-coherent complexes, I
 
-Section 36.19 of the Stacks Project, [Tag 0DJM](https://stacks.math.columbia.edu/tag/0DJM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.19 of the Stacks Project, [Tag 0DJM](https://stacks.math.columbia.edu/tag/0DJM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DJN, a lemma
 
 [Tag 0DJN](https://stacks.math.columbia.edu/tag/0DJN) in the Stacks Project.
 
-**`Stacks.PseudoCoherentHocolim.isPseudoCoherent_iff_exists_perfect_hocolim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolim.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolim.lean#L672).
+**`Stacks.PseudoCoherentHocolim.isPseudoCoherent_iff_exists_perfect_hocolim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolim.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolim.lean#L672).
 
 > **[Stacks, Tag 0DJN].** Let `X` be a quasi-compact and quasi-separated scheme and let `K` be an
 > object of `D(𝒪_X)`. The following are equivalent:
@@ -43,7 +43,7 @@ theorem isPseudoCoherent_iff_exists_perfect_hocolim [CompactSpace X] [QuasiSepar
 
 [Tag 0DJP](https://stacks.math.columbia.edu/tag/0DJP) in the Stacks Project.
 
-**`Stacks.PseudoCoherentHocolim.isPseudoCoherent_iff_exists_supported_perfect_hocolim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolimSupported.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolimSupported.lean#L55).
+**`Stacks.PseudoCoherentHocolim.isPseudoCoherent_iff_exists_supported_perfect_hocolim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolimSupported.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentHocolimSupported.lean#L55).
 
 > **[Stacks, Tag 0DJP].** Let `X` be a quasi-compact and quasi-separated scheme, let `T ⊆ X` be
 > a closed subset with `X \ T` quasi-compact and let `K ∈ D(𝒪_X)` be supported on `T`. Then `K` is
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.19, Tag 0DJM](https://stacks.math.columbia.edu/tag/0DJM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

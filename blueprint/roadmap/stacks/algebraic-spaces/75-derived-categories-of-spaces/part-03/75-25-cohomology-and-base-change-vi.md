@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.25 Cohomology and base change, VI
 
-Section 75.25 of the Stacks Project, [Tag 0A1N](https://stacks.math.columbia.edu/tag/0A1N). 8 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.25 of the Stacks Project, [Tag 0A1N](https://stacks.math.columbia.edu/tag/0A1N). 8 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A1P, a lemma
 
 [Tag 0A1P](https://stacks.math.columbia.edu/tag/0A1P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedTensor_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L268).
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedTensor_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L268).
 
 > **Stacks 0A1P.** For `f : X ⟶ Y` of finite presentation, a perfect `E` and a bounded complex
 > `𝒢^•` of `𝒪_X`-modules of finite presentation, flat over `Y`, with support proper over `Y`,
@@ -53,7 +53,7 @@ theorem isPerfect_derivedModulePushforward_derivedTensor_and_isIso_baseChange
 
 [Tag 0A1Q](https://stacks.math.columbia.edu/tag/0A1Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteProjective_model_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L315).
+**`AlgebraicGeometry.Space.exists_finiteProjective_model_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeIso.lean#L315).
 
 > **Stacks 0A1Q.** Let `U` have affine underlying scheme `Spec R`, `f : X ⟶ U` of finite
 > presentation and `𝒢` an `𝒪_X`-module of finite presentation, flat over `U`, with support proper
@@ -129,7 +129,7 @@ theorem exists_finiteProjective_model_derivedSections
 
 [Tag 0CTL](https://stacks.math.columbia.edu/tag/0CTL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_derivedModulePushforward_derivedTensor_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean#L43).
+**`AlgebraicGeometry.Space.isPseudoCoherent_derivedModulePushforward_derivedTensor_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean#L43).
 
 > **Stacks 0CTL.** For `f : X ⟶ Y` of finite presentation, a pseudo-coherent `E` and a bounded
 > above complex `𝒢^•` of `𝒪_X`-modules of finite presentation, flat over `Y`, with support proper
@@ -171,14 +171,14 @@ theorem isPseudoCoherent_derivedModulePushforward_derivedTensor_and_isIso_baseCh
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_and_isIso_baseChange_of_isFlat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L28) (StacksFrontier): “(1)”.
-- [`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_single_and_isIso_baseChange`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L90), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L31) (StacksFrontier): “(2), with 𝒢 flat over Y (the source's 'flat over S' is false)”.
+- [`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_and_isIso_baseChange_of_isFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L28) (StacksFrontier): “(1)”.
+- [`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_single_and_isIso_baseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProper.lean#L90), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeProperTags.lean#L31) (StacksFrontier): “(2), with 𝒢 flat over Y (the source's 'flat over S' is false)”.
 
 ## Tag 0CTN, a lemma
 
 [Tag 0CTN](https://stacks.math.columbia.edu/tag/0CTN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_derivedModulePushforward_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean#L82).
+**`AlgebraicGeometry.Space.isPseudoCoherent_derivedModulePushforward_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangePseudoCoherentIso.lean#L82).
 
 > **Stacks 0CTN.** For a flat and proper morphism `f : X ⟶ Y` of finite presentation and a
 > pseudo-coherent `E`, `Rf_*E` is pseudo-coherent, and its formation commutes with arbitrary base
@@ -202,7 +202,7 @@ theorem isPseudoCoherent_derivedModulePushforward_and_isIso_baseChange
 
 [Tag 0D3F](https://stacks.math.columbia.edu/tag/0D3F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_homEquiv_single_limitComparison_baseRingTensorModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperFlatLimitComparisonOverIntegers.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperFlatLimitComparisonOverIntegers.lean#L125). The attribute's comment: “`Spec(R)` is an affine object `T` of the site, with `R = Γ(T, 𝒪_T)`.”.
+**`AlgebraicGeometry.Space.isIso_homEquiv_single_limitComparison_baseRingTensorModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperFlatLimitComparisonOverIntegers.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperFlatLimitComparisonOverIntegers.lean#L125). The attribute's comment: “`Spec(R)` is an affine object `T` of the site, with `R = Γ(T, 𝒪_T)`.”.
 
 > Let `f : X ⟶ T` be proper, flat and of finite presentation, with `T` affine and
 > `R = Γ(T, 𝒪_T)`, and let `(M_n)` be an inverse system of `R`-modules with surjective transition
@@ -236,7 +236,7 @@ theorem isIso_homEquiv_single_limitComparison_baseRingTensorModule_of_isProper
         (limit.post Msys (baseRingTensorModule B S hS X (baseRingHomOfMap f)))))
 ```
 
-**`Stacks.Cohomology.SiteModules.isIso_homEquiv_baseRingTensorLimitComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/BaseRingTensorInverseLimitCoherator.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/BaseRingTensorInverseLimitCoherator.lean#L201). The attribute's comment: “the source's rereading of the headline, proved as an equivalence: the canonical map induces an isomorphism from its source onto DQ\_X of its target iff composition with it is bijective on morphisms out of every object of D\_QCoh(𝒪\_X). Neither side is proved; the bijectivity asserted by the headline under properness, flatness and finite presentation is NOT proved here, and is not assumed. The existence of DQ\_X is a named hypothesis, which is Stacks 0CR4 on the small étale site of a quasi-compact quasi-separated algebraic space”.
+**`Stacks.Cohomology.SiteModules.isIso_homEquiv_baseRingTensorLimitComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/BaseRingTensorInverseLimitCoherator.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/BaseRingTensorInverseLimitCoherator.lean#L201). The attribute's comment: “the source's rereading of the headline, proved as an equivalence: the canonical map induces an isomorphism from its source onto DQ\_X of its target iff composition with it is bijective on morphisms out of every object of D\_QCoh(𝒪\_X). Neither side is proved; the bijectivity asserted by the headline under properness, flatness and finite presentation is NOT proved here, and is not assumed. The existence of DQ\_X is a named hypothesis, which is Stacks 0CR4 on the small étale site of a quasi-compact quasi-separated algebraic space”.
 
 > **The two readings of the headline of Stacks 0D3F agree.**  Let `DQ_X` be a right adjoint of
 > the inclusion `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` — on the small étale site of a quasi-compact
@@ -279,13 +279,13 @@ theorem isIso_homEquiv_baseRingTensorLimitComparison_iff
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isPseudoCoherent_representedAffineDerivedSections_tensor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PseudoCoherentSectionsTensor.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean#L36) (StacksFrontier).
+- [`AlgebraicGeometry.Space.isPseudoCoherent_representedAffineDerivedSections_tensor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PseudoCoherentSectionsTensor.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean#L36) (StacksFrontier).
 
 ## Tag 0A1R, a lemma
 
 [Tag 0A1R](https://stacks.math.columbia.edu/tag/0A1R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedSheafHom_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomIso.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomIso.lean#L88).
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedSheafHom_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomIso.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CohomologyBaseChangeSheafHomIso.lean#L88).
 
 > For `f : X ⟶ Y` of finite presentation, a perfect `E` and a bounded complex `𝒢^•` of
 > `𝒪_X`-modules of finite presentation, flat over `Y`, with support proper over `Y`,
@@ -318,4 +318,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.25, Tag 0A1N](https://stacks.math.columbia.edu/tag/0A1N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

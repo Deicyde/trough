@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1052 to Erdős Problem 1071
+# Erdős Problem 1051 to Erdős Problem 1070
 
+- [Erdős Problem 1051](erdos-problem-1051.md)
 - [Erdős Problem 1052](erdos-problem-1052.md)
 - [Erdős Problem 1053](erdos-problem-1053.md)
 - [Erdős Problem 1054](erdos-problem-1054.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Erdős Problem 1068](erdos-problem-1068.md)
 - [Erdős Problem 1069](erdos-problem-1069.md)
 - [Erdős Problem 1070](erdos-problem-1070.md)
-- [Erdős Problem 1071](erdos-problem-1071.md)

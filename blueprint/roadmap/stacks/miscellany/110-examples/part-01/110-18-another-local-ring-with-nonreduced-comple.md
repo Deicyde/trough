@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.18 Another local ring with nonreduced completion
 
-Section 110.18 of the Stacks Project, [Tag 0GHH](https://stacks.math.columbia.edu/tag/0GHH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.18 of the Stacks Project, [Tag 0GHH](https://stacks.math.columbia.edu/tag/0GHH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GHI, a lemma
 
 [Tag 0GHI](https://stacks.math.columbia.edu/tag/0GHI) in the Stacks Project.
 
-**`exists_nonreduced_adicCompletion_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/NonreducedLocalizedCompletion.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/NonreducedLocalizedCompletion.lean#L345).
+**`exists_nonreduced_adicCompletion_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/NonreducedLocalizedCompletion.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/NonreducedLocalizedCompletion.lean#L345).
 
 > **Stacks 0GHI.** There is a local Noetherian two-dimensional domain `B`, complete with
 > respect to a principal ideal `I = (b)`, and an element `f` of its maximal ideal outside `I`, such
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.18, Tag 0GHH](https://stacks.math.columbia.edu/tag/0GHH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

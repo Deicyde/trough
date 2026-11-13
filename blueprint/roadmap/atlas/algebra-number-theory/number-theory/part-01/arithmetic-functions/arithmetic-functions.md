@@ -8,7 +8,7 @@ proof: formalized
 
 # Arithmetic functions: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/index.html).
 
 Divisor sums, totients, Möbius and multiplicative functions, their mean values and extremal orders, and integers classified by them.
 
@@ -25,7 +25,7 @@ $p^{\lfloor n/(p-1) \rfloor}$ over all primes $p$.
 
 - Abdelmalek Bedhouche and Bakir Farhi, "On Some Products Taken over Prime Numbers," Journal of Integer Sequences 26 (2023), Article 23.1.5, Corollary, lines 335–340, https://cs.uwaterloo.ca/journals/JIS/VOL26/Farhi/farhi32.tex
 
-Formalized by `MetaMathlibExt.lcm_product_identity`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LcmProductIdentity.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/LcmProductIdentity.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/index.html#lcm-product-identity).
+Formalized by `MetaMathlibExt.lcm_product_identity`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LcmProductIdentity.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/LcmProductIdentity.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/index.html#lcm-product-identity).
 
 ## Depends on
 
@@ -34,4 +34,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions)

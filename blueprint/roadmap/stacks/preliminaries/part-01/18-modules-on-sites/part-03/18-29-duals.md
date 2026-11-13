@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.29 Duals
 
-Section 18.29 of the Stacks Project, [Tag 0FNX](https://stacks.math.columbia.edu/tag/0FNX). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.29 of the Stacks Project, [Tag 0FNX](https://stacks.math.columbia.edu/tag/0FNX). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FNY, an example
 
 [Tag 0FNY](https://stacks.math.columbia.edu/tag/0FNY) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isIso_tensorDualToEndomorphism_of_localSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean#L194). The attribute's comment: “the map `ℱ ⊗ 𝓗om(ℱ,𝒪) ⟶ 𝓗om(ℱ,ℱ)` is an ISOMORPHISM, with the local hypothesis in the per-object form the tag states it in”. References: SGA 5 IIIB (5.0), “partial”.
+**`Stacks.SheafOfModules.isIso_tensorDualToEndomorphism_of_localSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean#L194). The attribute's comment: “the map `ℱ ⊗ 𝓗om(ℱ,𝒪) ⟶ 𝓗om(ℱ,ℱ)` is an ISOMORPHISM, with the local hypothesis in the per-object form the tag states it in”. References: SGA 5 IIIB (5.0), “partial”.
 
 > **Stacks Project, Tag 0FNY, first assertion.** For a sheaf of modules which is locally a
 > direct summand of a finite free sheaf of modules, the canonical map
@@ -29,7 +29,7 @@ theorem isIso_tensorDualToEndomorphism_of_localSummand
     IsIso (tensorDualToEndomorphism 𝒪 h𝒪 F)
 ```
 
-**`Stacks.SheafOfModules.exactPairingDualSheafOfLocalSummand`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean#L211). The attribute's comment: “the LEFT-DUAL assertion: `𝓗om(ℱ,𝒪)` with the canonical coevaluation and evaluation satisfies the two triangle identities, with the local hypothesis in the per-object form the tag states it in”. References: SGA 5 IIIB (5.0), “5.0.3 iso”.
+**`Stacks.SheafOfModules.exactPairingDualSheafOfLocalSummand`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualRingedSite.lean#L211). The attribute's comment: “the LEFT-DUAL assertion: `𝓗om(ℱ,𝒪)` with the canonical coevaluation and evaluation satisfies the two triangle identities, with the local hypothesis in the per-object form the tag states it in”. References: SGA 5 IIIB (5.0), “5.0.3 iso”.
 
 > **Stacks Project, Tag 0FNY, second assertion.** For a sheaf of modules `F` which is locally a
 > direct summand of a finite free sheaf of modules, the dual `F^∨ = SheafHom(F, 𝒪)`, with the
@@ -43,7 +43,7 @@ noncomputable def exactPairingDualSheafOfLocalSummand
     ExactPairing F (dualSheaf 𝒪 h𝒪 F)
 ```
 
-**`Stacks.SheafOfModules.dualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L279). The attribute's comment: “the dual `SheafHom(ℱ, 𝒪)` whose left-dual property is the content of the tag; the construction is for an arbitrary site, so the ringed-space and the ringed-site tags name the same object”. References: SGA 3 III (0.6).
+**`Stacks.SheafOfModules.dualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L279). The attribute's comment: “the dual `SheafHom(ℱ, 𝒪)` whose left-dual property is the content of the tag; the construction is for an arbitrary site, so the ringed-space and the ringed-site tags name the same object”. References: SGA 3 III (0.6).
 
 > **The dual of a sheaf of modules**, `F^∨ = SheafHom(F, 𝒪)`: the sheaf-hom into the
 > structure sheaf.
@@ -55,7 +55,7 @@ noncomputable def dualSheaf
     SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪)
 ```
 
-**`Stacks.SheafOfModules.evaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L696). The attribute's comment: “the evaluation map `ε : ℱ^∨ ⊗ ℱ ⟶ 𝒪`”.
+**`Stacks.SheafOfModules.evaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L695). The attribute's comment: “the evaluation map `ε : ℱ^∨ ⊗ ℱ ⟶ 𝒪`”.
 
 > **The evaluation pairing of sheaves of modules**, `F^∨ ⊗_𝒪 F ⟶ 𝒪`. The tensor product of
 > sheaves of modules is the sheafification of the pointwise one (Tag 05NA), so this is the
@@ -71,7 +71,7 @@ noncomputable def evaluation
       SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪)
 ```
 
-**`Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L655). The attribute's comment: “the map `ℱ ⊗ 𝓗om(ℱ,𝒪) ⟶ 𝓗om(ℱ,ℱ)` read on sections, which pins it down”.
+**`Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L646). The attribute's comment: “the map `ℱ ⊗ 𝓗om(ℱ,𝒪) ⟶ 𝓗om(ℱ,ℱ)` read on sections, which pins it down”.
 
 > **The canonical morphism on a local pure tensor is the rank-one operator.** This pins the
 > morphism down: its value on the image of `f ⊗ lam` is the endomorphism `g ↦ lam(g) • f`.
@@ -91,7 +91,7 @@ theorem tensorDualToEndomorphism_toTensorSheafSection
 
 [Tag 0FNZ](https://stacks.math.columbia.edu/tag/0FNZ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.dualSheafIsoOfLeftDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L149). The attribute's comment: “(2), the isomorphism `𝓗om(ℱ,𝒪) ≅ 𝒢`; that it is the map `λ ↦ (λ ⊗ 1)(η)` of the tag is `dualSheafIsoOfLeftDual_hom_val_app`”.
+**`Stacks.SheafOfModules.dualSheafIsoOfLeftDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L149). The attribute's comment: “(2), the isomorphism `𝓗om(ℱ,𝒪) ≅ 𝒢`; that it is the map `λ ↦ (λ ⊗ 1)(η)` of the tag is `dualSheafIsoOfLeftDual_hom_val_app`”.
 
 > **Stacks Project, Tag 0FNZ (2).** A left dual `G` of a sheaf of `𝒪`-modules `F` on a ringed
 > site is isomorphic to `SheafHom(F, 𝒪)`.
@@ -105,7 +105,7 @@ theorem tensorDualToEndomorphism_toTensorSheafSection
 noncomputable def dualSheafIsoOfLeftDual : dualSheaf 𝒪 h𝒪 F ≅ G
 ```
 
-**`Stacks.SheafOfModules.dualSheafIsoOfLeftDual_hom_val_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L210). The attribute's comment: “(2), that the isomorphism is the map `λ ↦ (λ ⊗ 1)(η)` the tag describes”.
+**`Stacks.SheafOfModules.dualSheafIsoOfLeftDual_hom_val_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L210). The attribute's comment: “(2), that the isomorphism is the map `λ ↦ (λ ⊗ 1)(η)` the tag describes”.
 
 > **Stacks Project, Tag 0FNZ (2), the formula for the isomorphism.** On an object `U` over
 > which the coevaluation expands as `η(1) = ∑ fᵢ ⊗ gᵢ`, the isomorphism
@@ -127,7 +127,7 @@ theorem dualSheafIsoOfLeftDual_hom_val_app (U : C) {n : ℕ}
       ∑ i, dualEval lam (f i) • g i
 ```
 
-**`Stacks.SheafOfModules.evaluation_eq_dualEval_dualSheafIsoOfLeftDual_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L254). The attribute's comment: “(3), the evaluation formula `ε(f, g) = e⁻¹(g)(f)`”.
+**`Stacks.SheafOfModules.evaluation_eq_dualEval_dualSheafIsoOfLeftDual_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualSheafHomIso.lean#L254). The attribute's comment: “(3), the evaluation formula `ε(f, g) = e⁻¹(g)(f)`”.
 
 > **Stacks Project, Tag 0FNZ (3).** Pairing a local section `g` of a left dual `G` of `F`
 > against a local section `f` of `F` under the given evaluation `ε` is the value at `f` of the
@@ -140,7 +140,7 @@ theorem evaluation_eq_dualEval_dualSheafIsoOfLeftDual_inv (U : C)
       dualEval ((dualSheafIsoOfLeftDual 𝒪 h𝒪 F G).inv.val.app (op U) y) x
 ```
 
-**`Stacks.SheafOfModules.exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean#L329). The attribute's comment: “local\_finite\_free\_summand”.
+**`Stacks.SheafOfModules.exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean#L329). The attribute's comment: “local\_finite\_free\_summand”.
 
 > Let `(C, O)` be a ringed site and let `F` be a sheaf of `O`-modules with a left dual `G` for
 > the monoidal structure given by the tensor product sheaf. Then every object `U` of the site has
@@ -160,7 +160,7 @@ theorem exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf
               hO).over V) I))
 ```
 
-**`AlgebraicGeometry.Space.exists_cover_retract_finiteFree_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLeftDualLocalSummand.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLeftDualLocalSummand.lean#L88). The attribute's comment: “(1), for the modules of an algebraic space”.
+**`AlgebraicGeometry.Space.exists_cover_retract_finiteFree_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLeftDualLocalSummand.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleLeftDualLocalSummand.lean#L88). The attribute's comment: “(1), for the modules of an algebraic space”.
 
 > **Stacks 0FNZ (1) for the `𝒪_F`-modules of an algebraic space.**  If an `𝒪_F`-module `M` has
 > a left dual `N` in the monoidal category of `𝒪_F`-modules, then every object `U` of the small
@@ -183,7 +183,7 @@ theorem exists_cover_retract_finiteFree_of_exactPairing
 
 [Tag 08FD](https://stacks.math.columbia.edu/tag/08FD) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exists_coveringSieve_retract_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatFiniteFreeSummand.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatFiniteFreeSummand.lean#L685).
+**`Stacks.SheafOfModules.exists_coveringSieve_retract_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatFiniteFreeSummand.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatFiniteFreeSummand.lean#L685).
 
 > On a ringed site, a sheaf of modules which is flat and locally of finite presentation is,
 > locally on the site, a direct summand of a finite free sheaf of modules: every object `U`
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.29, Tag 0FNX](https://stacks.math.columbia.edu/tag/0FNX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Recurrences for step sums of binomial coefficients
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html).
 
 ## Finite window criterion for linear recurrences
 
@@ -21,7 +21,7 @@ $x_n = \sum_{i=1}^{s} a_i x_{n-i}$ for all $n \ge s$.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.linearRecurrence_of_finite_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#linear-recurrence-of-finite-window).
+Stated but not proved: `MetaMathlibExt.linearRecurrence_of_finite_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#linear-recurrence-of-finite-window).
 
 ## Roots-of-unity products of integer polynomials
 
@@ -34,7 +34,7 @@ as polynomials over $\mathbb{C}$, $T$ has degree $r$, and $f(x) G(x) = T(x^k)$.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.rootsOfUnity_product_mul_eq_comp_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#roots-of-unity-product-mul-eq-comp-pow).
+Stated but not proved: `MetaMathlibExt.rootsOfUnity_product_mul_eq_comp_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#roots-of-unity-product-mul-eq-comp-pow).
 
 ## Step sums along a Riordan array
 
@@ -50,7 +50,7 @@ $j \ge 0$.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.riordan_stepSum_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#riordan-step-sum-coeff).
+Stated but not proved: `MetaMathlibExt.riordan_stepSum_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#riordan-step-sum-coeff).
 
 ## Window criterion for step sums of binomial coefficients
 
@@ -69,7 +69,7 @@ with one family $\delta_i$ for every $p$, is a special case.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.binomialStepSum_recurrence_of_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#binomial-step-sum-recurrence-of-window).
+Stated but not proved: `MetaMathlibExt.binomialStepSum_recurrence_of_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#binomial-step-sum-recurrence-of-window).
 
 ## Window criterion for shifted step sums of binomial coefficients
 
@@ -89,7 +89,7 @@ with one family $\delta_i$ for every $p$, is a special case.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.shiftedBinomialStepSum_recurrence_of_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#shifted-binomial-step-sum-recurrence-of).
+Stated but not proved: `MetaMathlibExt.shiftedBinomialStepSum_recurrence_of_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#shifted-binomial-step-sum-recurrence-of).
 
 ## Step sums of a rational Riordan array satisfy a common recurrence
 
@@ -108,7 +108,7 @@ over all $j \ge 0$.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.rationalRiordan_stepSum_linearRecurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#rational-riordan-step-sum-linear-recurre).
+Stated but not proved: `MetaMathlibExt.rationalRiordan_stepSum_linearRecurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#rational-riordan-step-sum-linear-recurre).
 
 ## Alternating step-five sums of Catalan's triangle are Fibonacci numbers
 
@@ -127,7 +127,7 @@ sums over all $j \ge 0$.
 
 - Eduardo H. M. Brietzke, *Recurrence Relations for Sums of Binomial Coefficients and Some Generalizations*, Journal of Integer Sequences 27 (2024), Article 24.3.4, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.catalanTriangle_stepFive_sub_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#catalan-triangle-step-five-sub-eq-fib).
+Stated but not proved: `MetaMathlibExt.catalanTriangle_stepFive_sub_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BinomialSumRecurrencesWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html#catalan-triangle-step-five-sub-eq-fib).
 
 ## Depends on
 
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Recurrences for step sums of binomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/recurrences-for-step-sums-of-binomial-coefficien)

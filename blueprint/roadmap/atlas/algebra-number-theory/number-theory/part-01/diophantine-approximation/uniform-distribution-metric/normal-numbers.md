@@ -7,7 +7,7 @@ statement: formalized
 
 # Normal numbers
 
-24 results, 17 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html).
+24 results, 17 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html).
 
 ## Base-$b$ digits of a real number
 
@@ -19,7 +19,7 @@ part of $x$.
 For $b \ge 2$ these are the digits of the base-$b$ expansion of $\{x\}$ that does not end in an
 infinite run of the digit $b - 1$. The formula is intended only for bases $b \ge 2$.
 
-Formalized by `MetaMathlibExt.NormalNumber.digitSeq`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NormalNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#digit-seq).
+Formalized by `MetaMathlibExt.NormalNumber.digitSeq`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NormalNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#digit-seq).
 
 ## Simply normal numbers
 
@@ -30,7 +30,7 @@ $\#\{k < n : a_k = d\} / n$ tends to $1/b$ as $n \to \infty$.
 
 This predicate is intended for bases $b \ge 2$.
 
-Formalized by `MetaMathlibExt.NormalNumber.IsSimplyNormalInBase`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NormalNumber.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-simply-normal-in-base).
+Formalized by `MetaMathlibExt.NormalNumber.IsSimplyNormalInBase`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NormalNumber.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-simply-normal-in-base).
 
 ## Normal numbers
 
@@ -41,21 +41,21 @@ $\#\{i < n : a_{i+j} = w_j \text{ for all } j < k\} / n$ tends to $1/b^k$ as $n 
 
 This predicate is intended for bases $b \ge 2$.
 
-Formalized by `MetaMathlibExt.NormalNumber.IsNormalInBase`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NormalNumber.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-normal-in-base).
+Formalized by `MetaMathlibExt.NormalNumber.IsNormalInBase`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NormalNumber.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-normal-in-base).
 
 ## Normal numbers are simply normal
 
 If a real number $x$ is normal in base $b$, then $x$ is
 simply normal in base $b$.
 
-Formalized by `MetaMathlibExt.NormalNumber.IsNormalInBase.isSimplyNormalInBase`, a theorem declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NormalNumber.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-simply-normal-in-base-2).
+Formalized by `MetaMathlibExt.NormalNumber.IsNormalInBase.isSimplyNormalInBase`, a theorem declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NormalNumber.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-simply-normal-in-base-2).
 
 ## Absolutely normal numbers
 
 A real number is absolutely normal if it is normal in every
 base at least two.
 
-Formalized by `MetaMathlibExt.NormalNumber.IsAbsolutelyNormal`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NormalNumber.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-absolutely-normal).
+Formalized by `MetaMathlibExt.NormalNumber.IsAbsolutelyNormal`, a definition declared in [MathlibExt/NumberTheory/NormalNumber.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NormalNumber.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#is-absolutely-normal).
 
 ## Campbell's sequence $h_1$
 
@@ -67,7 +67,7 @@ largest power of $10$ that is at most $n$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2 (definition of `h₁`).
 
-Formalized by `MetaMathlibExt.campbellH1`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1).
+Formalized by `MetaMathlibExt.campbellH1`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1).
 
 ## Small values of $h_1$
 
@@ -78,7 +78,7 @@ $h_1(10) = 10$, $h_1(99) = 10$ and $h_1(100) = 100$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.campbellH1_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1-small).
+Formalized by `MetaMathlibExt.campbellH1_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1-small).
 
 ## Campbell's sequence $h_2$
 
@@ -94,7 +94,7 @@ This is OEIS A380904.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2, Equation (6) (definition of `h₂`).
 
-Formalized by `MetaMathlibExt.campbellH2`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h2).
+Formalized by `MetaMathlibExt.campbellH2`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h2).
 
 ## Small values of Campbell's sequence $h_2$
 
@@ -105,7 +105,7 @@ $h_2(10) = 10$, $h_2(21) = 120$, $h_2(99) = 900$ and $h_2(100) = 1000$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Example 1 and Section 2.1.
 
-Formalized by `MetaMathlibExt.campbellH2_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h2-small).
+Formalized by `MetaMathlibExt.campbellH2_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h2-small).
 
 ## Campbell's auxiliary function $h_3^{(m)}$
 
@@ -126,7 +126,7 @@ The paper uses $h_3^{(m)}$ only on $[10^m - 1, 10^m]$ for $m \ge 2$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2.2, Equations (16)-(20).
 
-Formalized by `MetaMathlibExt.campbellH3`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h3).
+Formalized by `MetaMathlibExt.campbellH3`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h3).
 
 ## First piece of Campbell's auxiliary function $h_3^{(m)}$
 
@@ -141,7 +141,7 @@ $m - 1$ and $2m - 1$ read as $0$ when $m = 0$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2.2.
 
-Formalized by `MetaMathlibExt.campbellH3_of_le`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h3-of-le).
+Formalized by `MetaMathlibExt.campbellH3_of_le`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h3-of-le).
 
 ## Campbell's interpolation
 
@@ -168,7 +168,7 @@ to its left takes the same value there.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2.2, Equations (15) and (21).
 
-Formalized by `MetaMathlibExt.campbellF`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f).
+Formalized by `MetaMathlibExt.campbellF`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f).
 
 ## Campbell's interpolation on $(100/11, 10)$
 
@@ -179,7 +179,7 @@ Campbell's interpolation satisfies $f(x) = 10x - 90$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 2.2.
 
-Formalized by `MetaMathlibExt.campbellF_of_mem`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-of-mem).
+Formalized by `MetaMathlibExt.campbellF_of_mem`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-of-mem).
 
 ## Decimal digit block of $h_2(n)$
 
@@ -191,7 +191,7 @@ first; when $h_2(n) = 0$ the block is the single digit $0$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Section 1.1 (the expansion `0.b₁b₂…` with `b_n` the base-`g` expansion of `⌊f(n)⌋`).
 
-Formalized by `MetaMathlibExt.campbellBlock`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-block).
+Formalized by `MetaMathlibExt.campbellBlock`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-block).
 
 ## Digits of the concatenation $0.h_2(1)h_2(2)\ldots$
 
@@ -207,7 +207,7 @@ Every block is nonempty, so $d_j$ already lies in the first $j + 1$ blocks.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Theorem 8 (the concatenation `0.h₂(1)h₂(2)…`).
 
-Formalized by `MetaMathlibExt.campbellConcatDigit`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-concat-digit).
+Formalized by `MetaMathlibExt.campbellConcatDigit`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-concat-digit).
 
 ## The first eleven digits of the concatenation $0.h_2(1)h_2(2)\ldots$
 
@@ -222,7 +222,7 @@ $h_2(1) = \cdots = h_2(9) = 0$, then the block of $h_2(10) = 10$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Example 1.
 
-Formalized by `MetaMathlibExt.campbellConcatDigit_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-concat-digit-small).
+Formalized by `MetaMathlibExt.campbellConcatDigit_small`, a theorem declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-concat-digit-small).
 
 ## Campbell's constant
 
@@ -235,7 +235,7 @@ base-$10$ digit blocks of $h_2(1), h_2(2), \ldots$ (with $0$ written as the sing
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Theorem 8.
 
-Formalized by `MetaMathlibExt.campbellConstant`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-constant).
+Formalized by `MetaMathlibExt.campbellConstant`, a definition declared in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-constant).
 
 ## Sums of $h_1$ and the jumps of $h_2$ at powers of ten
 
@@ -251,7 +251,7 @@ $y_1(\ell + 1) - y_2(\ell) = 10^{2\lfloor \ell/2 \rfloor}$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 2 (`jis-2026-26.3.4-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.campbellH1_sum_and_y_relations` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1-sum-and-y-relations).
+Stated but not proved: `MetaMathlibExt.campbellH1_sum_and_y_relations` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-h1-sum-and-y-relations).
 
 ## The floor of Campbell's interpolation at positive integers is Campbell's sequence $h_2$
 
@@ -262,7 +262,7 @@ $\lfloor f(n) \rfloor = h_2(n)$, and for every integer $n \ge 10$, $f(n) = h_2(n
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 3 (`jis-2026-26.3.4-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.floor_campbellF_eq_campbellH2` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#floor-campbell-f-eq-campbell-h2).
+Stated but not proved: `MetaMathlibExt.floor_campbellF_eq_campbellH2` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#floor-campbell-f-eq-campbell-h2).
 
 ## Differentiability of Campbell's interpolation
 
@@ -273,7 +273,7 @@ differentiable at every real $x > 0$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 4 (`jis-2026-26.3.4-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.campbellF_differentiableOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-differentiable-on).
+Stated but not proved: `MetaMathlibExt.campbellF_differentiableOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-differentiable-on).
 
 ## Monotonicity of Campbell's interpolation
 
@@ -285,7 +285,7 @@ $f(x) \le f(y)$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 5 (`jis-2026-26.3.4-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.campbellF_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-monotone-on).
+Stated but not proved: `MetaMathlibExt.campbellF_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#campbell-f-monotone-on).
 
 ## Growth exponent of Campbell's interpolation
 
@@ -297,7 +297,7 @@ $\eta(h) = \lim_{x \to \infty} \log h(x) / \log x$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 6 (`jis-2026-26.3.4-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_log_campbellF_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#tendsto-log-campbell-f-div-log).
+Stated but not proved: `MetaMathlibExt.tendsto_log_campbellF_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#tendsto-log-campbell-f-div-log).
 
 ## Growth exponent of the derivative of Campbell's interpolation
 
@@ -310,7 +310,7 @@ to be $0$ at any point where $f$ is not differentiable, and $\log 0 = 0$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Lemma 7 (`jis-2026-26.3.4-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_log_deriv_campbellF_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#tendsto-log-deriv-campbell-f-div-log).
+Stated but not proved: `MetaMathlibExt.tendsto_log_deriv_campbellF_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#tendsto-log-deriv-campbell-f-div-log).
 
 ## Campbell's concatenation of $h_2$ is not normal in base $10$
 
@@ -324,7 +324,7 @@ $\sum_{j \ge 0} c_j 10^{-(j+1)} = 0.c_0c_1c_2\ldots$ is not normal in base $10$.
 
 - John M. Campbell, *A Counterexample to a Purported Construction of Normal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.3.4, Theorem 8 (`jis-2026-26.3.4-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.not_isNormalInBase_campbellConstant` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#not-is-normal-in-base-campbell-constant).
+Stated but not proved: `MetaMathlibExt.not_isNormalInBase_campbellConstant` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SzuszVolkmannCounterexampleWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html#not-is-normal-in-base-campbell-constant).
 
 ## Depends on
 
@@ -333,4 +333,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Normal numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/normal-numbers)

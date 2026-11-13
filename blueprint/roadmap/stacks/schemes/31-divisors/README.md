@@ -1,6 +1,6 @@
 # 31 Divisors
 
-Chapter 31 of the Stacks Project, *Divisors*, [Tag 01WO](https://stacks.math.columbia.edu/tag/01WO): the 35 sections of its 37 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 278 tags are carried by 737 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
+Chapter 31 of the Stacks Project, *Divisors*, [Tag 01WO](https://stacks.math.columbia.edu/tag/01WO): the 36 sections of its 37 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 284 tags are carried by 736 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
 
 ## [31.2 Associated points to 31.15 Effective Cartier…](part-01/README.md)
 
@@ -14,6 +14,7 @@ Chapter 31 of the Stacks Project, *Divisors*, [Tag 01WO](https://stacks.math.col
 - [31.9 Fitting ideals](part-01/31-9-fitting-ideals.md)
 - [31.10 The singular locus of a morphism](part-01/31-10-the-singular-locus-of-a-morphism.md)
 - [31.11 Torsion free modules](part-01/31-11-torsion-free-modules.md)
+- [31.12 Ranks of modules](part-01/31-12-ranks-of-modules.md)
 - [31.13 Reflexive modules](part-01/31-13-reflexive-modules.md)
 - [31.14 Effective Cartier divisors](part-01/31-14-effective-cartier-divisors.md)
 - [31.15 Effective Cartier divisors and invertible sheaves](part-01/31-15-effective-cartier-divisors-and-invertible.md)

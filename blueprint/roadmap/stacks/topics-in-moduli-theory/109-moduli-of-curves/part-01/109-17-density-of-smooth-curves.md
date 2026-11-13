@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.17 Density of smooth curves
 
-Section 109.17 of the Stacks Project, [Tag 0E85](https://stacks.math.columbia.edu/tag/0E85). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.17 of the Stacks Project, [Tag 0E85](https://stacks.math.columbia.edu/tag/0E85). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E86, a lemma
 
 [Tag 0E86](https://stacks.math.columbia.edu/tag/0E86) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesPointSet_smooth_isOpen_dense_in_lciPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothDensePoints.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothDensePoints.lean#L140).
+**`AlgebraicGeometry.curvesPointSet_smooth_isOpen_dense_in_lciPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothDensePoints.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothDensePoints.lean#L140).
 
 > **Stacks 0E86.** The inclusion `|Curves^{smooth}| ⊂ |Curves^{lci+}|` is that of an open dense
 > subset.
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.17, Tag 0E85](https://stacks.math.columbia.edu/tag/0E85)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

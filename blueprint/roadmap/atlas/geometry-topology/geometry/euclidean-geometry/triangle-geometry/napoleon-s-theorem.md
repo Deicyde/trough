@@ -8,7 +8,7 @@ proof: formalized
 
 # Napoleon's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html).
 
 ## Napoleon's theorem, general form
 
@@ -26,7 +26,7 @@ non-collinear. Opposite sides are expressed by signed areas, for instance
 $((C - B) \times (A - B)) \, ((C - B) \times (A_2 - B)) < 0$, where
 $(x, y) \times (x', y') = x y' - y x'$.
 
-Formalized by `MetaMathlibExt.napoleon_theorem_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html#napoleon-theorem-general).
+Formalized by `MetaMathlibExt.napoleon_theorem_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html#napoleon-theorem-general).
 
 ## Napoleon's theorem
 
@@ -47,7 +47,7 @@ where $(x, y) \times (x', y') = x y' - y x'$.
 
 - https://en.wikipedia.org/wiki/Napoleon%27s_theorem (statement id `napoleon-s1`; raw: "Outer equilateral-triangle centers on any triangle form an equilateral triangle."). It follows from `napoleon_theorem_general`, which also shows the common distance is positive; the hypotheses `A ≠ B`, `B ≠ C`, `C ≠ A` and nondegeneracy are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.napoleon_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html#napoleon-theorem).
+Formalized by `MetaMathlibExt.napoleon_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/NapoleonTheorem.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html#napoleon-theorem).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Napoleon's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/napoleon-s-theorem)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.86 Mittag-Leffler systems
 
-Section 10.86 of the Stacks Project, [Tag 0594](https://stacks.math.columbia.edu/tag/0594). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.86 of the Stacks Project, [Tag 0594](https://stacks.math.columbia.edu/tag/0594). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0595, a definition
 
 [Tag 0595](https://stacks.math.columbia.edu/tag/0595) in the Stacks Project.
 
-**`MittagLeffler.IsMittagLefflerSet`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L71). References: EGA 0 (13.1.2), “inverse systems of sets”; EGA 0 (13.1.3); EGA III (4.1.7); SGA 4½ Rapport (4.11).
+**`MittagLeffler.IsMittagLefflerSet`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L71). References: EGA 0 (13.1.2), “inverse systems of sets”; EGA 0 (13.1.3); EGA III (4.1.7); SGA 4½ Rapport (4.11).
 
 > A directed inverse system of sets `(F_i, φ_{ji})` is *Mittag-Leffler*
 > if for every index `i`, there exists some `j ≥ i` such that for all
@@ -26,7 +26,7 @@ def IsMittagLefflerSet {ι : Type*} [Preorder ι] [IsDirected ι (· ≤ ·)] {F
     (φ : ⦃i j : ι⦄ → i ≤ j → F j → F i) [InverseSystem φ] : Prop
 ```
 
-**`MittagLeffler.IsMittagLefflerModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L81). References: EGA 0 (13.1.2), “modules over a ring”; EGA III (4.1.7); SGA 4½ Rapport (4.11).
+**`MittagLeffler.IsMittagLefflerModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L81). References: EGA 0 (13.1.2), “modules over a ring”; EGA III (4.1.7); SGA 4½ Rapport (4.11).
 
 > A directed inverse system of `R`-modules `(M_i, φ_{ji})` is
 > *Mittag-Leffler* if the underlying directed inverse system of sets is
@@ -43,7 +43,7 @@ def IsMittagLefflerModule {R : Type*} [Ring R] {ι : Type*} [Preorder ι]
 
 [Tag 0597](https://stacks.math.columbia.edu/tag/0597) in the Stacks Project.
 
-**`DirInvSystem.nonempty_limit_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L289). References: SGA 4 I (App.Lemma3), “more general”.
+**`DirInvSystem.nonempty_limit_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L289). References: SGA 4 I (App.Lemma3), “more general”.
 
 > Let `(A_i, φ_{ji})` be a directed inverse system of sets over a directed set `I`.
 > If `I` is countable, the system is Mittag-Leffler, and each `A_i` is nonempty,
@@ -61,7 +61,7 @@ theorem DirInvSystem.nonempty_limit_of_isMittagLeffler
 
 [Tag 0598](https://stacks.math.columbia.edu/tag/0598) in the Stacks Project.
 
-**`invLimit_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L721). References: EGA 0 (13.2.2); EGA III (4.1.7.21), “more general”.
+**`invLimit_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean, line 721](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/InverseSystem.lean#L721). References: EGA 0 (13.2.2); EGA III (4.1.7.21), “more general”.
 
 > Let `I` be a countable directed set and let
 > `0 → A →[f] B →[g] C → 0` be an exact sequence of directed inverse systems of abelian
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.86, Tag 0594](https://stacks.math.columbia.edu/tag/0594)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

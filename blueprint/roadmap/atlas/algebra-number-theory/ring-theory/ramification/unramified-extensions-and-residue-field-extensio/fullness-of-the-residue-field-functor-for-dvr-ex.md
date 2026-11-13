@@ -8,7 +8,7 @@ proof: formalized
 
 # Fullness of the residue-field functor for DVR extensions
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html).
 
 ## Lifting residue-field images to roots of a minimal polynomial
 
@@ -20,7 +20,7 @@ and let $\bar\beta \in k_B$ be its residue class. Then for every $k_A$-algebra h
 $f : k_B \to k_C$ there is $\gamma \in C$ that is a root of the minimal polynomial of $\beta$
 over $A$ and whose residue class in $k_C$ is $f(\bar\beta)$.
 
-Formalized by `DVRResidue.exists_root_lift_of_adjoin_eq_top`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html#exists-root-lift-of-adjoin-eq-top).
+Formalized by `DVRResidue.exists_root_lift_of_adjoin_eq_top`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html#exists-root-lift-of-adjoin-eq-top).
 
 ## Lifting residue-field homomorphisms of finite étale DVR extensions
 
@@ -31,7 +31,7 @@ every $k_A$-algebra homomorphism $k_B \to k_C$ is induced by an $A$-algebra homo
 map sending an $A$-algebra homomorphism $\varphi : B \to C$ to the induced homomorphism of
 residue fields $k_B \to k_C$, $\bar b \mapsto \overline{\varphi(b)}$, is surjective.
 
-Formalized by `DVRResidue.residueFieldMapAlgHom_surjective`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html#residue-field-map-alg-hom-surjective).
+Formalized by `DVRResidue.residueFieldMapAlgHom_surjective`, a theorem declared in [MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/LocalRing/ResidueField/DVRFull.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html#residue-field-map-alg-hom-surjective).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fullness of the residue-field functor for DVR extensions](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ramification/unramified-extensions-and-residue-field-extensio/fullness-of-the-residue-field-functor-for-dvr-ex)

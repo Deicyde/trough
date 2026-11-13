@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.45 Numerical intersections
 
-Section 33.45 of the Stacks Project, [Tag 0BEL](https://stacks.math.columbia.edu/tag/0BEL). 13 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.45 of the Stacks Project, [Tag 0BEL](https://stacks.math.columbia.edu/tag/0BEL). 13 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BEM, a lemma
 
 [Tag 0BEM](https://stacks.math.columbia.edu/tag/0BEM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_eulerPolynomial_twistedSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedSheaf/EulerPolynomialProper.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistedSheaf/EulerPolynomialProper.lean#L38).
+**`AlgebraicGeometry.exists_eulerPolynomial_twistedSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedSheaf/EulerPolynomialProper.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistedSheaf/EulerPolynomialProper.lean#L38).
 
 > Let `k` be a field, let `X` be a scheme proper over `k`, let `𝓛_1, …, 𝓛_r` be invertible
 > `𝒪_X`-modules and let `ℱ` be a coherent `𝒪_X`-module.  Then the Euler characteristics of the
@@ -38,7 +38,7 @@ theorem exists_eulerPolynomial_twistedSheaf_of_isProper (k : Type u) [Field k] {
 
 [Tag 0BEN](https://stacks.math.columbia.edu/tag/0BEN) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_eulerPolynomial_sub_topDimComponents_totalDegree_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionLeadingTerm.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionLeadingTerm.lean#L981). The attribute's comment: “the Euler characteristic minus the length-weighted Euler characteristics of the top-dimensional components of the support is a numerical polynomial of lower total degree”.
+**`AlgebraicGeometry.exists_eulerPolynomial_sub_topDimComponents_totalDegree_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionLeadingTerm.lean, line 982](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionLeadingTerm.lean#L982). The attribute's comment: “the Euler characteristic minus the length-weighted Euler characteristics of the top-dimensional components of the support is a numerical polynomial of lower total degree”.
 
 > **[Stacks, Tag 0BEN].** For `X` proper over a field `k`, a coherent `𝒪_X`-module `ℱ` and
 > invertible `𝒪_X`-modules `𝓛_1, …, 𝓛_r`, the difference between
@@ -66,7 +66,7 @@ theorem exists_eulerPolynomial_sub_topDimComponents_totalDegree_lt (k : Type u) 
 
 [Tag 0BEP](https://stacks.math.columbia.edu/tag/0BEP) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L192). References: SGA 6 XIII (2.1); SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
+**`AlgebraicGeometry.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L192). References: SGA 6 XIII (2.1); SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
 
 > **Stacks 0BEP.** The intersection number `(𝓛_1 ⋯ 𝓛_d · Z)` of `d` invertible
 > `𝒪_X`-modules against a closed subscheme `i : Z ⟶ X` of dimension at most `d` of a proper
@@ -89,7 +89,7 @@ public noncomputable def intersectionNumber (k : Type u) [Field k] {X Z : Scheme
     [∀ j, SheafOfModules.IsInvertible X.presheaf X.ringCatSheaf.2 (L j)] : ℤ
 ```
 
-**`AlgebraicGeometry.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L260). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 XIII (2.1), “coeff of n\_1⋯n\_s”; SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
+**`AlgebraicGeometry.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L260). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 XIII (2.1), “coeff of n\_1⋯n\_s”; SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
 
 > **Stacks 0BEP, the coefficient of `n_1 ⋯ n_d`.**  If a rational polynomial `P` in `d`
 > variables of total degree at most `d` takes the Euler characteristics
@@ -117,7 +117,7 @@ public theorem intersectionNumber_eq_coeff (k : Type u) [Field k] {X Z : Scheme.
       P.coeff (Finsupp.equivFunOnFinite.symm fun _ => 1)
 ```
 
-**`AlgebraicGeometry.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L311). The attribute's comment: “the self-intersection notation (L^d · Z)”. References: SGA 6 XIII (2.1), “all L\_i equal”.
+**`AlgebraicGeometry.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L311). The attribute's comment: “the self-intersection notation (L^d · Z)”. References: SGA 6 XIII (2.1), “all L\_i equal”.
 
 > **Stacks 0BEP, the self-intersection notation `(𝓛^d · Z)`.**  The intersection number of a
 > single invertible `𝒪_X`-module `𝓛` repeated `d` times against a closed subscheme `i : Z ⟶ X` of
@@ -134,7 +134,7 @@ public noncomputable def selfIntersectionNumber (k : Type u) [Field k] {X Z : Sc
 
 [Tag 0BEQ](https://stacks.math.columbia.edu/tag/0BEQ) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_isInteger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionIntegrality.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionIntegrality.lean#L164).
+**`AlgebraicGeometry.intersectionNumber_isInteger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionIntegrality.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersectionIntegrality.lean#L164).
 
 > **Stacks 0BEQ.** In the situation of Stacks 0BEP — `k` a field, `X` a scheme proper over `k`,
 > `i : Z ⟶ X` a closed subscheme of dimension at most `d`, and `𝓛_1, …, 𝓛_d` invertible
@@ -172,7 +172,7 @@ public theorem intersectionNumber_isInteger (k : Type u) [Field k] {X Z : Scheme
 
 [Tag 0BER](https://stacks.math.columbia.edu/tag/0BER) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean#L499). The attribute's comment: “additivity of the intersection number in each invertible module”.
+**`AlgebraicGeometry.intersectionNumber_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean#L499). The attribute's comment: “additivity of the intersection number in each invertible module”.
 
 > **[Stacks, Tag 0BER].**  The intersection number is additive in each slot: if `𝓛_j` is the
 > tensor product of `𝓛_j'` and `𝓛_j''`, and the three families of invertible modules agree away
@@ -195,7 +195,7 @@ public theorem intersectionNumber_tensor (k : Type u) [Field k] {X Z : Scheme.{u
       intersectionNumber k f i d hd L' + intersectionNumber k f i d hd L''
 ```
 
-**`AlgebraicGeometry.intersectionNumber_update_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean#L638). The attribute's comment: “additivity in the j-th slot, written with Function.update”.
+**`AlgebraicGeometry.intersectionNumber_update_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Additivity.lean#L638). The attribute's comment: “additivity in the j-th slot, written with Function.update”.
 
 > **[Stacks, Tag 0BER], the `Function.update` form.**  If `𝓛_j ≅ 𝓜 ⊗ 𝓝` then
 >
@@ -222,7 +222,7 @@ public theorem intersectionNumber_update_tensor (k : Type u) [Field k] {X Z : Sc
 
 [Tag 0BES](https://stacks.math.columbia.edu/tag/0BES) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_eq_sum_topDimComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Components.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Components.lean#L118). The attribute's comment: “the intersection number is the length-weighted sum of the intersection numbers of the top-dimensional irreducible components”.
+**`AlgebraicGeometry.intersectionNumber_eq_sum_topDimComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Components.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Components.lean#L118). The attribute's comment: “the intersection number is the length-weighted sum of the intersection numbers of the top-dimensional irreducible components”.
 
 > **[Stacks, Tag 0BES].**  Let `k` be a field, let `X` be proper over `k`, let `i : Z ⟶ X` be
 > a closed subscheme of dimension `d` and let `𝓛_1, …, 𝓛_d` be invertible `𝒪_X`-modules.  Writing
@@ -246,7 +246,7 @@ public theorem intersectionNumber_eq_sum_topDimComponents (k : Type u) [Field k]
             (topologicalKrullDim_subscheme_le_of_topDimIntegralSubscheme i hd W) L
 ```
 
-**`AlgebraicGeometry.intersectionNumber_eq_sum_dimComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ComponentsVanishing.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ComponentsVanishing.lean#L199).
+**`AlgebraicGeometry.intersectionNumber_eq_sum_dimComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ComponentsVanishing.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ComponentsVanishing.lean#L199).
 
 > **[Stacks, Tag 0BES].**  Let `k` be a field, let `X` be proper over `k`, let `i : Z ⟶ X` be
 > a closed subscheme of dimension at most `d` and let `𝓛_1, …, 𝓛_d` be invertible `𝒪_X`-modules.
@@ -278,7 +278,7 @@ public theorem intersectionNumber_eq_sum_dimComponents (k : Type u) [Field k]
 
 [Tag 0BET](https://stacks.math.columbia.edu/tag/0BET) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_pullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean, line 662](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean#L662). The attribute's comment: “the right-hand side is zero when the scheme-theoretic image has dimension less than d”.
+**`AlgebraicGeometry.intersectionNumber_pullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean#L662). The attribute's comment: “the right-hand side is zero when the scheme-theoretic image has dimension less than d”.
 
 > **[Stacks, Tag 0BET], the case of a scheme-theoretic image of smaller dimension.** Let `k`
 > be a field, let `f : Y ⟶ X` be a morphism of schemes proper over `k`, let `i : Z ⟶ Y` be an
@@ -297,7 +297,7 @@ public theorem intersectionNumber_pullback_eq_zero (k : Type u) [Field k] {Y X Z
     intersectionNumber k pY i d hd (fun j => (Scheme.Modules.pullback f).obj (L j)) = 0
 ```
 
-**`AlgebraicGeometry.intersectionNumber_pullback_eq_degreeOver_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean#L698). The attribute's comment: “the degree formula when the scheme-theoretic image has the same dimension”.
+**`AlgebraicGeometry.intersectionNumber_pullback_eq_degreeOver_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Pullback.lean#L698). The attribute's comment: “the degree formula when the scheme-theoretic image has the same dimension”.
 
 > **[Stacks, Tag 0BET], the equal-dimensional case.** Let `k` be a field, let `f : Y ⟶ X` be a
 > morphism of schemes proper over `k`, let `i : Z ⟶ Y` be an integral closed subscheme of
@@ -328,7 +328,7 @@ public theorem intersectionNumber_pullback_eq_degreeOver_mul (k : Type u) [Field
 
 [Tag 0BEU](https://stacks.math.columbia.edu/tag/0BEU) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_eq_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean#L92). The attribute's comment: “taking the divisor's dimension bound as an argument”.
+**`AlgebraicGeometry.intersectionNumber_eq_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean#L92). The attribute's comment: “taking the divisor's dimension bound as an argument”.
 
 > **[Stacks, Tag 0BEU].**  Let `k` be a field, let `X` be a scheme proper over `k`, let
 > `i : Z ⟶ X` be a closed subscheme of dimension at most `d + 1` and let `𝓛_1, …, 𝓛_{d+1}` be
@@ -364,7 +364,7 @@ public theorem intersectionNumber_eq_of_isEffectiveCartierDivisor
       intersectionNumber k f (Dv.subschemeι ≫ i) d hdD fun t : Fin d => L t.succ
 ```
 
-**`AlgebraicGeometry.intersectionNumber_eq_of_isEffectiveCartierDivisor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean#L142). The attribute's comment: “the intersection number of a closed subscheme against invertible modules equals that of an effective Cartier divisor cutting out the first module's restriction”.
+**`AlgebraicGeometry.intersectionNumber_eq_of_isEffectiveCartierDivisor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/DivisorIntersectionProper.lean#L142). The attribute's comment: “the intersection number of a closed subscheme against invertible modules equals that of an effective Cartier divisor cutting out the first module's restriction”.
 
 > **[Stacks, Tag 0BEU].**  Let `k` be a field, let `X` be a scheme proper over `k`, let
 > `i : Z ⟶ X` be a closed subscheme of dimension at most `d + 1` and let `𝓛_1, …, 𝓛_{d+1}` be
@@ -400,7 +400,7 @@ public theorem intersectionNumber_eq_of_isEffectiveCartierDivisor'
 
 [Tag 0BEV](https://stacks.math.columbia.edu/tag/0BEV) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L275).
+**`AlgebraicGeometry.intersectionNumber_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L275).
 
 > **[Stacks, Tag 0BEV].** Let `k` be a field, let `X` be a scheme proper over `k`, let
 > `i : Z ⟶ X` be a closed subscheme of dimension `d` and let `𝓛_1, …, 𝓛_d` be ample invertible
@@ -415,7 +415,7 @@ public theorem intersectionNumber_pos (k : Type u) [Field k] {X Z : Scheme.{u}}
     0 < intersectionNumber k f i d hdim.le L
 ```
 
-**`AlgebraicGeometry.selfIntersectionNumber_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L286). The attribute's comment: “the self-intersection number of a single ample module”.
+**`AlgebraicGeometry.selfIntersectionNumber_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L286). The attribute's comment: “the self-intersection number of a single ample module”.
 
 > **[Stacks, Tag 0BEV] for the self-intersection number** `(𝓛^d · Z)` of a single ample
 > invertible module.
@@ -429,7 +429,7 @@ public theorem selfIntersectionNumber_pos (k : Type u) [Field k] {X Z : Scheme.{
     0 < selfIntersectionNumber k f i d hdim.le L
 ```
 
-**`AlgebraicGeometry.degreeWithRespectTo_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L297). The attribute's comment: “the degree deg\_L(Z) of Tag 0BEW is positive”.
+**`AlgebraicGeometry.degreeWithRespectTo_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L297). The attribute's comment: “the degree deg\_L(Z) of Tag 0BEW is positive”.
 
 > **[Stacks, Tag 0BEV] for the degree** `deg_𝓛(Z)` of [Stacks, Tag 0BEW]: the degree of a
 > closed subscheme with respect to an ample invertible module is positive.
@@ -447,7 +447,7 @@ public theorem degreeWithRespectTo_pos (k : Type u) [Field k] {X Z : Scheme.{u}}
 
 [Tag 0BEW](https://stacks.math.columbia.edu/tag/0BEW) in the Stacks Project.
 
-**`AlgebraicGeometry.degreeWithRespectTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L338).
+**`AlgebraicGeometry.degreeWithRespectTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L338).
 
 > **Stacks 0BEW.** The degree `deg_𝓛(Z)` of a closed subscheme `i : Z ⟶ X` of a proper scheme
 > `X` over a field `k` with respect to an ample invertible `𝒪_X`-module `𝓛`: the intersection
@@ -473,7 +473,7 @@ public noncomputable def degreeWithRespectTo (k : Type u) [Field k] {X Z : Schem
 
 [Tag 0BEX](https://stacks.math.columbia.edu/tag/0BEX) in the Stacks Project.
 
-**`AlgebraicGeometry.selfIntersectionNumber_pullback_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean#L227). The attribute's comment: “for an arbitrary invertible module, with no ampleness”.
+**`AlgebraicGeometry.selfIntersectionNumber_pullback_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean#L227). The attribute's comment: “for an arbitrary invertible module, with no ampleness”.
 
 > **[Stacks, Tag 0BEX].** Let `k` be a field, let `f : Y ⟶ X` be a finite dominant morphism of
 > proper varieties over `k` of dimension `d` and let `𝓛` be an invertible `𝒪_X`-module.  Then
@@ -500,7 +500,7 @@ public theorem selfIntersectionNumber_pullback_of_isFinite (k : Type u) [Field k
       (degreeOver f : ℤ) * selfIntersectionNumber k p (𝟙 X) d hd.le L
 ```
 
-**`AlgebraicGeometry.degreeWithRespectTo_pullback_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean#L298).
+**`AlgebraicGeometry.degreeWithRespectTo_pullback_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/FiniteDominant.lean#L298).
 
 > **[Stacks, Tag 0BEX].** Let `k` be a field, let `f : Y ⟶ X` be a finite dominant morphism of
 > proper varieties over `k` and let `𝓛` be an ample invertible `𝒪_X`-module.  Then
@@ -536,7 +536,7 @@ public theorem degreeWithRespectTo_pullback_of_isFinite (k : Type u) [Field k]
 
 [Tag 0BEY](https://stacks.math.columbia.edu/tag/0BEY) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_one_eq_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L369).
+**`AlgebraicGeometry.intersectionNumber_one_eq_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L369).
 
 > **Stacks 0BEY.** For a closed subscheme `Z ⊂ X` of dimension at most one of a proper scheme
 > `X` over a field `k` and an invertible `𝒪_X`-module `𝓛`, the intersection number `(𝓛 · Z)` is
@@ -561,7 +561,7 @@ public theorem intersectionNumber_one_eq_invertibleCurveDegree (k : Type u) [Fie
       invertibleCurveDegree k (i ≫ f) hdim ((Scheme.Modules.pullback i).obj L)
 ```
 
-**`AlgebraicGeometry.degreeWithRespectTo_eq_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L425). The attribute's comment: “the ample case”.
+**`AlgebraicGeometry.degreeWithRespectTo_eq_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L425). The attribute's comment: “the ample case”.
 
 > **Stacks 0BEY, the ample case.** For a closed subscheme `Z ⊂ X` of dimension one of a proper
 > scheme `X` over a field `k` and an ample invertible `𝒪_X`-module `𝓛`, the degree `deg_𝓛(Z)` of
@@ -590,7 +590,7 @@ public theorem degreeWithRespectTo_eq_invertibleCurveDegree (k : Type u) [Field 
 
 [Tag 0BJ8](https://stacks.math.columbia.edu/tag/0BJ8) in the Stacks Project.
 
-**`AlgebraicGeometry.degreeWithRespectTo_div_factorial_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L276). The attribute's comment: “the leading coefficient deg\_L(X)/d! is a positive constant”.
+**`AlgebraicGeometry.degreeWithRespectTo_div_factorial_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L276). The attribute's comment: “the leading coefficient deg\_L(X)/d! is a positive constant”.
 
 > **[Stacks, Tag 0BJ8], the leading coefficient.**  For `X` proper over `k` of dimension `d`
 > and `𝓛` ample, the constant `deg_𝓛(X)/d!` is positive.  The degree `deg_𝓛(X)` is positive by
@@ -601,7 +601,7 @@ public theorem degreeWithRespectTo_div_factorial_pos :
     0 < (degreeWithRespectTo k f (𝟙 X) d hdim L hL : ℚ) / (d.factorial : ℚ)
 ```
 
-**`AlgebraicGeometry.exists_degree_lt_eventually_finrank_globalSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L382). The attribute's comment: “the asymptotic formula for dim\_k Γ(X, L^n)”.
+**`AlgebraicGeometry.exists_degree_lt_eventually_finrank_globalSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L382). The attribute's comment: “the asymptotic formula for dim\_k Γ(X, L^n)”.
 
 > **[Stacks, Tag 0BJ8], the asymptotic formula.**  For `X` proper over `k` of dimension `d` and
 > `𝓛` ample, for all sufficiently large `n`
@@ -620,7 +620,7 @@ public theorem exists_degree_lt_eventually_finrank_globalSections_eq :
             P.eval (n : ℚ)
 ```
 
-**`AlgebraicGeometry.asymptotic_riemann_roch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L466).
+**`AlgebraicGeometry.asymptotic_riemann_roch`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L466).
 
 > **[Stacks, Tag 0BJ8] (Asymptotic Riemann–Roch).**  Let `k` be a field, let `X` be a scheme
 > proper over `k` of dimension `d` and let `𝓛` be an ample invertible `𝒪_X`-module.  Then
@@ -647,4 +647,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.45, Tag 0BEL](https://stacks.math.columbia.edu/tag/0BEL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Algebraic graph theory: its own results
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/index.html).
 
 Graphs studied through groups and matrices: Cayley and vertex-transitive graphs, strongly regular and Moore graphs, graph homomorphisms, Laplacians and the matrix-tree theorem, and named graphs such as the Petersen and Coxeter graphs.
 
@@ -19,7 +19,7 @@ the cyclic group $\mathbb{Z}/(3k+2)\mathbb{Z}$ whose connection set $C$ consists
 whose representative in $\{0, 1, \dots, 3k+1\}$ is congruent to $1$ modulo $3$: two distinct
 residues $x$ and $y$ are adjacent when $y - x \in C$ or $x - y \in C$.
 
-Formalized by `MetaMathlibExt.andrasfaiGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Andrasfai.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Andrasfai.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#andrasfai-graph).
+Formalized by `MetaMathlibExt.andrasfaiGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Andrasfai.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Andrasfai.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#andrasfai-graph).
 
 ## Cayley digraph
 
@@ -30,7 +30,7 @@ are the elements of $G$, with an arc $u \to v$ exactly when $v = uc$ for some $c
 Usually $G$ is a group and $C$ does not contain the identity, so that $X(G, C)$ has no loops;
 neither condition is imposed here.
 
-Formalized by `MetaMathlibExt.directedCayleyGraph`, a definition declared in [MathlibExt/Combinatorics/Digraph/DirectedCayley.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Digraph/DirectedCayley.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#directed-cayley-graph).
+Formalized by `MetaMathlibExt.directedCayleyGraph`, a definition declared in [MathlibExt/Combinatorics/Digraph/DirectedCayley.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Digraph/DirectedCayley.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#directed-cayley-graph).
 
 ## Cayley's formula
 
@@ -41,7 +41,7 @@ exactly $n^{n-2}$ spanning trees.
 
 - A. Cayley, "A theorem on trees", Quarterly Journal of Pure and Applied Mathematics 23 (1889), 376-378.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.cayley_formula`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Cayley.lean, line 1065](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Cayley.lean#L1065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#cayley-formula).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.cayley_formula`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Cayley.lean, line 1065](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Cayley.lean#L1065). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#cayley-formula).
 
 ## Coxeter graph
 
@@ -51,7 +51,7 @@ following: for each $i \in \{1, 2, 3\}$, the vertices $(i, j)$ and $(i, j')$ are
 $j - j' = i$ or $j' - j = i$ in $\mathbb{Z}/7\mathbb{Z}$, and for each $j$ the vertex $(0, j)$ is
 adjacent to $(1, j)$, $(2, j)$ and $(3, j)$. There are no other edges.
 
-Formalized by `MetaMathlibExt.coxeterGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CoxeterGraph.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CoxeterGraph.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#coxeter-graph).
+Formalized by `MetaMathlibExt.coxeterGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CoxeterGraph.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CoxeterGraph.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#coxeter-graph).
 
 ## Edge-transposition graph
 
@@ -61,7 +61,7 @@ edge-transposition graph of $T$ is the simple graph with vertex set $\{0, 1, \do
 which two distinct vertices $i$ and $j$ are adjacent if and only if the transposition swapping $i$
 and $j$ belongs to $T$.
 
-Formalized by `MetaMathlibExt.edgeTranspositionGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/EdgeTranspositionGraph.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/EdgeTranspositionGraph.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#edge-transposition-graph).
+Formalized by `MetaMathlibExt.edgeTranspositionGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/EdgeTranspositionGraph.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/EdgeTranspositionGraph.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#edge-transposition-graph).
 
 ## Frucht's theorem
 
@@ -72,14 +72,14 @@ graph.
 
 - R. Frucht, Compositio Math. 6 (1939), 239-250.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.FruchtWanted.frucht`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Frucht.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Frucht.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#frucht).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.FruchtWanted.frucht`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Frucht.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Frucht.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#frucht).
 
 ## Moore graph
 
 Let $G$ be a simple graph on a finite vertex set and let $d$ be a natural
 number. Then $G$ is a Moore graph of diameter $d$ when $G$ has diameter $d$ and girth $2d + 1$.
 
-Formalized by `MetaMathlibExt.IsMooreGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Moore.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Moore.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#is-moore-graph).
+Formalized by `MetaMathlibExt.IsMooreGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Moore.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Moore.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#is-moore-graph).
 
 ## Petersen graph
 
@@ -87,7 +87,7 @@ The Petersen graph is the generalized Johnson graph $J(5,2,0)$: its
 vertices are the $2$-element subsets of $\{0, 1, 2, 3, 4\}$, and two of them are adjacent
 exactly when they are disjoint.
 
-Formalized by `MetaMathlibExt.petersenGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Petersen.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Petersen.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#petersen-graph).
+Formalized by `MetaMathlibExt.petersenGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Petersen.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Petersen.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#petersen-graph).
 
 ## Powers of a weighted adjacency matrix sum the weights of walks
 
@@ -109,14 +109,14 @@ $i = j$ and $0$ otherwise.
 
 - Thomas Koshy, "A Graph-Theoretic Model for a Generalized Fibonacci Gem," Journal of Integer Sequences 22 (2019), Article 19.4.1, Theorem, lines 128–130, https://cs.uwaterloo.ca/journals/JIS/VOL22/Koshy/koshy7.tex
 
-Formalized by `MetaMathlibExt.adjMatrix_pow_weighted_walk_sum`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/AdjMatrixPowWalk.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/AdjMatrixPowWalk.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#adj-matrix-pow-weighted-walk-sum).
+Formalized by `MetaMathlibExt.adjMatrix_pow_weighted_walk_sum`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/AdjMatrixPowWalk.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/AdjMatrixPowWalk.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/index.html#adj-matrix-pow-weighted-walk-sum).
 
 ## Vertex-transitive graph
 
 A graph is vertex-transitive when its automorphism group acts transitively
 on vertices.
 
-Formalized by `SimpleGraph.IsVertexTransitive`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/VertexTransitive.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/VertexTransitive.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-02/index.html#is-vertex-transitive).
+Formalized by `SimpleGraph.IsVertexTransitive`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/VertexTransitive.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/VertexTransitive.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-02/index.html#is-vertex-transitive).
 
 ## Depends on
 
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Algebraic graph theory](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/algebraic-graph-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/algebraic-graph-theory)

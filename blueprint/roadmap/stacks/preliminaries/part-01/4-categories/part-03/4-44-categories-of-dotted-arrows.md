@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.44 Categories of dotted arrows
 
-Section 4.44 of the Stacks Project, [Tag 0H17](https://stacks.math.columbia.edu/tag/0H17). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.44 of the Stacks Project, [Tag 0H17](https://stacks.math.columbia.edu/tag/0H17). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H18, a definition
 
 [Tag 0H18](https://stacks.math.columbia.edu/tag/0H18) in the Stacks Project.
 
-**`CategoryTheory.DottedArrow`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L74).
+**`CategoryTheory.DottedArrow`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L74).
 
 > A **dotted arrow** for the `2`-commutative square with `x : S ⟶ X`, `j : S ⟶ T`,
 > `f : X ⟶ Y`, `y : T ⟶ Y` and witnessing `2`-morphism `γ : j ≫ y ⟶ x ≫ f`: a diagonal
@@ -26,7 +26,7 @@ structure DottedArrow {S T X Y : B} (x : S ⟶ X) (j : S ⟶ T) (f : X ⟶ Y) (y
     (γ : (j ≫ y) ⟶ (x ≫ f))
 ```
 
-**`CategoryTheory.DottedArrow.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L102).
+**`CategoryTheory.DottedArrow.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L102).
 
 > A **morphism of dotted arrows** `(a, α, β) ⟶ (a', α', β')` is a `2`-morphism
 > `θ : a ⟶ a'` such that `α = α' ∘ (θ ⋆ id_j)` and `β' = (id_f ⋆ θ) ∘ β`.
@@ -35,7 +35,7 @@ structure DottedArrow {S T X Y : B} (x : S ⟶ X) (j : S ⟶ T) (f : X ⟶ Y) (y
 structure Hom (d d' : DottedArrow x j f y γ)
 ```
 
-**`CategoryTheory.instCategoryDottedArrow`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L136).
+**`CategoryTheory.instCategoryDottedArrow`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Defs.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L136).
 
 > The **category of dotted arrows** for the square and the witness `γ`: objects are dotted
 > arrows and morphisms are morphisms of dotted arrows.
@@ -49,7 +49,7 @@ instance instCategoryDottedArrow {S T X Y : B} {x : S ⟶ X} {j : S ⟶ T} {f : 
 
 [Tag 0H1A](https://stacks.math.columbia.edu/tag/0H1A) in the Stacks Project.
 
-**`CategoryTheory.DottedArrowBaseChange.dottedArrows_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/BaseChange.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/BaseChange.lean#L622).
+**`CategoryTheory.DottedArrowBaseChange.dottedArrows_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/BaseChange.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/BaseChange.lean#L622).
 
 > **Theorem (Stacks Project, Tag 0H1A / Lemma 4.44.2).**
 >
@@ -78,7 +78,7 @@ theorem dottedArrows_equiv
 
 [Tag 0H1B](https://stacks.math.columbia.edu/tag/0H1B) in the Stacks Project.
 
-**`CategoryTheory.DottedArrow.toWithFactorization_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L400).
+**`CategoryTheory.DottedArrow.toWithFactorization_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L400).
 
 > `toWithFactorization` is an equivalence of categories `𝒟 ≌ 𝒟''`.
 
@@ -88,7 +88,7 @@ instance toWithFactorization_isEquivalence {S T X Y Z : B} (x : S ⟶ X) (j : S 
     (toWithFactorization x j f g z γ).IsEquivalence
 ```
 
-**`CategoryTheory.DottedArrow.fiber_categoryIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 624](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L624).
+**`CategoryTheory.DottedArrow.fiber_categoryIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L624).
 
 > The fibre of `compose` over an object `d'` of `𝒟'` is isomorphic, as a category (a
 > `CategoryIso`, not merely an equivalence), to the category of dotted arrows of the upper solid
@@ -103,7 +103,7 @@ theorem fiber_categoryIso {S T X Y Z : B}
       (DottedArrow x j f d'.a d'.α))
 ```
 
-**`CategoryTheory.DottedArrow.compose_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L778).
+**`CategoryTheory.DottedArrow.compose_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L778).
 
 > `compose : 𝒟'' ⥤ 𝒟'` is fibred in groupoids.
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.44, Tag 0H17](https://stacks.math.columbia.edu/tag/0H17)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

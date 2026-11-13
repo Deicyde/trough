@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.17 Obtaining schemes
 
-Section 70.17 of the Stacks Project, [Tag 0B7X](https://stacks.math.columbia.edu/tag/0B7X). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.17 of the Stacks Project, [Tag 0B7X](https://stacks.math.columbia.edu/tag/0B7X). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B7Y, a lemma
 
 [Tag 0B7Y](https://stacks.math.columbia.edu/tag/0B7Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isClosedSubspace_minimal_not_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicClosedSubspaceExistence.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicClosedSubspaceExistence.lean#L209).
+**`AlgebraicGeometry.Space.exists_isClosedSubspace_minimal_not_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicClosedSubspaceExistence.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicClosedSubspaceExistence.lean#L210).
 
 > **Stacks 0B7Y.** Let `X` be a quasi-compact and quasi-separated algebraic space over `S`
 > which is not a scheme. Then there is a closed subspace `Z` of `X` which is not a scheme but
@@ -50,7 +50,7 @@ theorem exists_isClosedSubspace_minimal_not_isRepresentable (hT : B.Contains (�
 
 [Tag 0B7Z](https://stacks.math.columbia.edu/tag/0B7Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isReduced_and_irreducibleSpace_of_forall_ne_top_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicSpaceReducedIrreducible.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicSpaceReducedIrreducible.lean#L233).
+**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isReduced_and_irreducibleSpace_of_forall_ne_top_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicSpaceReducedIrreducible.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MinimalNonSchematicSpaceReducedIrreducible.lean#L233).
 
 > **Stacks 0B7Z.** Let `X` be an algebraic space over `S` which is not a scheme, and assume
 > that every closed subspace `Z` of `X` with `Z ≠ ⊤` — that is, every *proper* closed subspace of
@@ -79,7 +79,7 @@ theorem hasEtaleLocalProperty_isReduced_and_irreducibleSpace_of_forall_ne_top_is
 
 [Tag 0B80](https://stacks.math.columbia.edu/tag/0B80) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_baseChange_specStalkSiteObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/LocalRingSchemeCriterion.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/LocalRingSchemeCriterion.lean#L510).
+**`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_baseChange_specStalkSiteObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/LocalRingSchemeCriterion.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/LocalRingSchemeCriterion.lean#L510).
 
 > **Stacks 0B80.** Let `X` be an algebraic space over a scheme `S` whose structure morphism
 > `f` is quasi-compact and quasi-separated. If for every point of `X`, with image `s` in `S`, the
@@ -110,7 +110,7 @@ theorem isRepresentable_of_isRepresentable_baseChange_specStalkSiteObject
 
 [Tag 0B81](https://stacks.math.columbia.edu/tag/0B81) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_maximal_not_isRepresentable_quotientSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MaximalNonSchematicQuotient.lean, line 805](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MaximalNonSchematicQuotient.lean#L805).
+**`AlgebraicGeometry.Space.exists_maximal_not_isRepresentable_quotientSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MaximalNonSchematicQuotient.lean, line 805](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MaximalNonSchematicQuotient.lean#L805).
 
 > **Stacks 0B81.** Let `φ : X ⟶ Spec A` be a quasi-compact and quasi-separated morphism from
 > an algebraic space to an affine scheme. If `X` is not a scheme then there is an ideal `I ⊂ A`
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.17, Tag 0B7X](https://stacks.math.columbia.edu/tag/0B7X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

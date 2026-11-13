@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.19 Versality and generalizations
 
-Section 98.19 of the Stacks Project, [Tag 0G2I](https://stacks.math.columbia.edu/tag/0G2I). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.19 of the Stacks Project, [Tag 0G2I](https://stacks.math.columbia.edu/tag/0G2I). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G2J, a lemma
 
 [Tag 0G2J](https://stacks.math.columbia.edu/tag/0G2J) in the Stacks Project.
 
-**`Deformation.Artin.exists_firstOrderThickening_without_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/NonversalThickening/ThickeningWithoutRetraction.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/NonversalThickening/ThickeningWithoutRetraction.lean#L618).
+**`Deformation.Artin.exists_firstOrderThickening_without_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/NonversalThickening/ThickeningWithoutRetraction.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/NonversalThickening/ThickeningWithoutRetraction.lean#L618).
 
 > **Stacks 0G2J.** If an object `x` of a category fibred in groupoids with (RS*) over the big
 > fppf site of a locally Noetherian scheme is not versal at a finite type point `u` of an affine
@@ -69,7 +69,7 @@ public theorem exists_firstOrderThickening_without_localRetraction
 
 [Tag 0G2K](https://stacks.math.columbia.edu/tag/0G2K) in the Stacks Project.
 
-**`Deformation.Artin.isVersalAt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessAtGeneralization.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/OpennessAtGeneralization.lean#L736).
+**`Deformation.Artin.isVersalAt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessAtGeneralization.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessAtGeneralization.lean#L735).
 
 > **Stacks 0G2K.** Let `S` be a locally Noetherian scheme and `𝒳` a category fibred in
 > groupoids over the big fppf site of `S` whose diagonal is representable by algebraic spaces,
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.19, Tag 0G2I](https://stacks.math.columbia.edu/tag/0G2I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

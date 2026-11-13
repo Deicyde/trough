@@ -7,7 +7,7 @@ statement: formalized
 
 # Graph coloring: its own results
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/index.html).
 
 Vertex, edge, list and fractional colorings of graphs and the chromatic number, from Brooks' and Vizing's theorems to perfect graphs and the four color theorem.
 
@@ -22,7 +22,7 @@ has a proper vertex coloring with $\Delta$ colors.
 
 - R. L. Brooks, On colouring the nodes of a network, Proc. Camb. Philos. Soc. 37 (1941), DOI 10.1017/S030500410002168X.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.BrooksWanted.brooks`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Brooks.lean, line 1217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Brooks.lean#L1217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/index.html#brooks).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.BrooksWanted.brooks`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Brooks.lean, line 1217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Brooks.lean#L1217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/index.html#brooks).
 
 ## Erdős's theorem on graphs of high girth and high chromatic number
 
@@ -36,7 +36,7 @@ In particular, there are finite graphs of arbitrarily high girth and chromatic n
 
 - P. Erdős, Graph theory and probability, Canad. J. Math. 11 (1959), 34–38, DOI 10.4153/CJM-1959-003-9.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.ErdosGirthChromaticWanted.erdos_high_girth_chromatic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/ErdosGirthChromatic.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/ErdosGirthChromatic.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/index.html#erdos-high-girth-chromatic).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.ErdosGirthChromaticWanted.erdos_high_girth_chromatic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/ErdosGirthChromatic.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/ErdosGirthChromatic.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/index.html#erdos-high-girth-chromatic).
 
 ## Five color theorem
 
@@ -47,7 +47,7 @@ has a proper vertex coloring with five colors.
 
 - https://en.wikipedia.org/wiki/Five_color_theorem.
 
-Stated but not proved: `MetaMathlibExt.five_color_theorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/FiveColorTheoremWanted.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/FiveColorTheoremWanted.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-02/index.html#five-color-theorem).
+Stated but not proved: `MetaMathlibExt.five_color_theorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/FiveColorTheoremWanted.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/FiveColorTheoremWanted.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-02/index.html#five-color-theorem).
 
 ## Mycielski's theorem
 
@@ -64,7 +64,7 @@ The explicit Mycielski construction is abstracted here to the existence of such 
 
 - J. Mycielski, "Sur le coloriage des graphes" (1955), https://doi.org/10.4064/cm-3-2-161-162 (statement ID `mycielski-theorem-s1`).
 
-Formalized by `MetaMathlibExt.mycielski_theorem`, a theorem declared in [MathlibExt/Combinatorics/Graph/MycielskiTheorem.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/MycielskiTheorem.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-02/index.html#mycielski-theorem).
+Formalized by `MetaMathlibExt.mycielski_theorem`, a theorem declared in [MathlibExt/Combinatorics/Graph/MycielskiTheorem.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/MycielskiTheorem.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-02/index.html#mycielski-theorem).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Graph coloring](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring)

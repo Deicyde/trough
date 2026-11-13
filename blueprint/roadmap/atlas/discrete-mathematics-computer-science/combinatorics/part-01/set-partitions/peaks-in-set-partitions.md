@@ -7,7 +7,7 @@ statement: formalized
 
 # Peaks in set partitions
 
-9 results, 5 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html).
+9 results, 5 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html).
 
 ## Surjective restricted-growth strings
 
@@ -16,7 +16,7 @@ with letters in $\{0, 1, \dots, k-1\}$ is a surjective restricted-growth string 
 $0, \dots, k-1$ occurs in $w$ and, for every position $i$ and every letter $m < w_i$, some
 position $j < i$ has $w_j = m$.
 
-Formalized by `MetaMathlibExt.IsSurjectiveRestrictedGrowthString`, a definition declared in [MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#is-surjective-restricted-growth-string).
+Formalized by `MetaMathlibExt.IsSurjectiveRestrictedGrowthString`, a definition declared in [MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#is-surjective-restricted-growth-string).
 
 ## Peak generating function for set partitions
 
@@ -43,7 +43,7 @@ the proof combines first-occurrence decompositions with the Chebyshev recurrence
 
 - Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set," Journal of Integer Sequences 13 (2010), Article 10.6.8, Theorem, lines 313–317, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.tex>.
 
-Formalized by `MetaMathlibExt.peak_generating_function_set_partitions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean, line 1391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean#L1391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#peak-generating-function-set-partitions).
+Formalized by `MetaMathlibExt.peak_generating_function_set_partitions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean, line 1391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Partition/PeakGeneratingFunction.lean#L1391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#peak-generating-function-set-partitions).
 
 ## Total number of peaks over set partitions
 
@@ -64,7 +64,7 @@ and the inner sum is empty when $n - k < 3$.
 
 - Toufik Mansour and Mark Shattuck, "Counting Peaks and Valleys in a Partition of a Set", Journal of Integer Sequences 13 (2010), Article 10.6.8, Corollary 2, lines 388-394, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.tex>.
 
-Formalized by `MetaMathlibExt.total_peaks_canonical`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SetPartitionPeaks.lean, line 988](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SetPartitionPeaks.lean#L988). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#total-peaks-canonical).
+Formalized by `MetaMathlibExt.total_peaks_canonical`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SetPartitionPeaks.lean, line 988](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SetPartitionPeaks.lean#L988). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#total-peaks-canonical).
 
 ## Non-symmetric peaks of a word
 
@@ -79,7 +79,7 @@ A peak with $w_{i-1} = w_{i+1}$ is a symmetric peak instead.
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Section 1.
 
-Formalized by `MetaMathlibExt.nonSymmetricPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#non-symmetric-peak-count).
+Formalized by `MetaMathlibExt.nonSymmetricPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#non-symmetric-peak-count).
 
 ## Peaks of the word $1322141251$
 
@@ -91,7 +91,7 @@ non-symmetric peaks, the factors $132$ and $251$.
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Section 1.
 
-Formalized by `MetaMathlibExt.symmetricPeakCount_nonSymmetricPeakCount_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#symmetric-peak-count-non-symmetric-peak).
+Formalized by `MetaMathlibExt.symmetricPeakCount_nonSymmetricPeakCount_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#symmetric-peak-count-non-symmetric-peak).
 
 ## Generating function for the total number of symmetric peaks in set partitions
 
@@ -116,7 +116,7 @@ $F_k(x) = SP_k(x, 1)$ and the left side is the derivative of $SP_k(x, q)$ in $q$
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.symmetricPeaks_derivative_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#symmetric-peaks-derivative-generating-fu).
+Stated but not proved: `MetaMathlibExt.symmetricPeaks_derivative_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#symmetric-peaks-derivative-generating-fu).
 
 ## Generating function for the total number of non-symmetric peaks in set partitions
 
@@ -142,7 +142,7 @@ $F_k(x) = NSP_k(x, 1)$ and the left side is the derivative of $NSP_k(x, q)$ in $
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.nonSymmetricPeaks_derivative_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#non-symmetric-peaks-derivative-generatin).
+Stated but not proved: `MetaMathlibExt.nonSymmetricPeaks_derivative_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#non-symmetric-peaks-derivative-generatin).
 
 ## Total number of symmetric peaks over set partitions with $k$ blocks
 
@@ -163,7 +163,7 @@ where the differences $k - 1$, $n - 1$ and $n - k$ of natural numbers are trunca
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.sum_symmetricPeakCount_setPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#sum-symmetric-peak-count-set-partitions).
+Stated but not proved: `MetaMathlibExt.sum_symmetricPeakCount_setPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#sum-symmetric-peak-count-set-partitions).
 
 ## Total number of non-symmetric peaks over set partitions with $k$ blocks
 
@@ -184,7 +184,7 @@ where the differences $k - 1$, $n - 1$ and $n - k$ of natural numbers are trunca
 
 - Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_nonSymmetricPeakCount_setPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#sum-non-symmetric-peak-count-set-partiti).
+Stated but not proved: `MetaMathlibExt.sum_nonSymmetricPeakCount_setPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SetPartitionSymmetricPeaksWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html#sum-non-symmetric-peak-count-set-partiti).
 
 ## Depends on
 
@@ -193,4 +193,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Peaks in set partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions/peaks-in-set-partitions)

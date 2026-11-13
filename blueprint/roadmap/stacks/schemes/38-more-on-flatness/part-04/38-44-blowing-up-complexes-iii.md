@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.44 Blowing up complexes, III
 
-Section 38.44 of the Stacks Project, [Tag 0F8Z](https://stacks.math.columbia.edu/tag/0F8Z). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.44 of the Stacks Project, [Tag 0F8Z](https://stacks.math.columbia.edu/tag/0F8Z). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F90, a lemma
 
 [Tag 0F90](https://stacks.math.columbia.edu/tag/0F90) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_divisorComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean#L129). The attribute's comment: “clause (2): the restriction of Q to A^1\_X is the pullback of E”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_divisorComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean#L129). The attribute's comment: “clause (2): the restriction of Q to A^1\_X is the pullback of E”.
 
 > **Clause (2) of Stacks tag 0F90.**  Let `(X, D, M)` be a triple as in Situation 0F8S, let
 > `b : X' ⟶ X` be a morphism along which `D' = b⁻¹D` is defined, and let `Q = Lη_{ℐ'}Lb^*M` be the
@@ -38,7 +38,7 @@ theorem nonempty_etaDerivedPullbackRestrict_divisorComplement
       S.derivedPullbackObject ((b ⁻¹ᵁ S.divisorComplement).ι ≫ b))
 ```
 
-**`Stacks.Chow.exists_closedImmersion_graphObjectRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionSubscheme.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionSubscheme.lean#L193). The attribute's comment: “clauses (3) and (4)”.
+**`Stacks.Chow.exists_closedImmersion_graphObjectRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionSubscheme.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionSubscheme.lean#L193). The attribute's comment: “clauses (3) and (4)”.
 
 > For the morphism `b : W ⟶ 𝐏¹_X` of the graph construction and `Q = Lη_ℐ Lb^*Lp^*E`, there is
 > a closed immersion `t : T ⟶ W_∞` of finite presentation such that
@@ -73,7 +73,7 @@ theorem exists_closedImmersion_graphObjectRestrict :
           @Scheme.Modules.finiteLocallyFreeRank T _ (hH n) τ = r
 ```
 
-**`Stacks.Chow.isIso_pullback_snd_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L189). The attribute's comment: “clause (1), over A^1\_X, as the base change of b along A^1\_X ⟶ P^1\_X”.
+**`Stacks.Chow.isIso_pullback_snd_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L189). The attribute's comment: “clause (1), over A^1\_X, as the base change of b along A^1\_X ⟶ P^1\_X”.
 
 > **Clause (1) of Stacks tag 0F90, over `𝐀¹_X`.** The base change of `b : W ⟶ 𝐏¹_X` along
 > the chart `𝐀¹_X ⟶ 𝐏¹_X` is an isomorphism.
@@ -83,7 +83,7 @@ theorem isIso_pullback_snd_graphBlowupToBase :
     IsIso (pullback.snd (graphBlowupToBase f E hE) (projectiveLineAffineChart f))
 ```
 
-**`Stacks.Chow.isIso_resLE_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L201). The attribute's comment: “clause (1)”.
+**`Stacks.Chow.isIso_resLE_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L201). The attribute's comment: “clause (1)”.
 
 > **Clause (1) of Stacks tag 0F90.** The morphism `b : W ⟶ 𝐏¹_X` is an isomorphism over
 > `𝐏¹_U ∪ 𝐀¹_X = p⁻¹U ∪ 𝐀¹_X`, where `U ⊆ X` is the maximal open over which the cohomology
@@ -103,7 +103,7 @@ theorem isIso_resLE_graphBlowupToBase :
         (projectiveLineAffineChart f).opensRange)) le_rfl)
 ```
 
-**`Stacks.Chow.nonempty_derivedPullback_modificationSectionAtZero_graphObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L264). The attribute's comment: “clause (2), restricted along the section at zero X ⟶ W”.
+**`Stacks.Chow.nonempty_derivedPullback_modificationSectionAtZero_graphObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L264). The attribute's comment: “clause (2), restricted along the section at zero X ⟶ W”.
 
 > **Clause (2) of Stacks tag 0F90, along the section at zero.** The pullback of `Q` along the
 > section at zero `i_0 : X ⟶ W`, which exists because `b` is an isomorphism over `𝐀¹_X`, is
@@ -117,7 +117,7 @@ theorem nonempty_derivedPullback_modificationSectionAtZero_graphObject :
         (graphObject f E hE) ≅ E)
 ```
 
-**`Stacks.Chow.nonempty_derivedPullback_graphObject_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L287). The attribute's comment: “clause (2)”.
+**`Stacks.Chow.nonempty_derivedPullback_graphObject_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L287). The attribute's comment: “clause (2)”.
 
 > **Clause (2) of Stacks tag 0F90.** The restriction of `Q` to `𝐀¹_X` is the pullback of `E`:
 > for the open immersion `a : 𝐀¹_X ⟶ W` lifting the chart `𝐀¹_X ⟶ 𝐏¹_X` (it exists by
@@ -133,7 +133,7 @@ theorem nonempty_derivedPullback_graphObject_of_comp_eq
         (terminal.from (Spec (.of (Polynomial (ULift.{u} ℤ)))))).toLRSHom.toShHom).obj E)
 ```
 
-**`Stacks.Chow.exists_isLocallyBoundedFiniteLocallyFree_graphObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L302). The attribute's comment: “clause (5)”.
+**`Stacks.Chow.exists_isLocallyBoundedFiniteLocallyFree_graphObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L302). The attribute's comment: “clause (5)”.
 
 > **Clause (5) of Stacks tag 0F90.** If `E` is represented by a locally bounded complex of
 > finite locally free `𝒪_X`-modules, then `Q` is represented by a locally bounded complex of
@@ -149,7 +149,7 @@ theorem exists_isLocallyBoundedFiniteLocallyFree_graphObject
         Nonempty (DerivedCategory.Q.obj 𝒬 ≅ graphObject f E hE)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_resLE_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L134). The attribute's comment: “clause (1): `b` is an isomorphism over `𝐏¹_U ∪ 𝐀¹_X`, with `𝐀¹_X` the complement of `(𝐏¹_X)_∞`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_resLE_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L134). The attribute's comment: “clause (1): `b` is an isomorphism over `𝐏¹_U ∪ 𝐀¹_X`, with `𝐀¹_X` the complement of `(𝐏¹_X)_∞`”.
 
 > **Clause (1) of Stacks tag 0F90.**  The morphism `b : W ⟶ 𝐏¹_X` of Stacks tag 0GTY for the
 > triple `(𝐏¹_X, (𝐏¹_X)_∞, Lp^*E)` is an isomorphism over `𝐏¹_U ∪ 𝐀¹_X`.
@@ -164,7 +164,7 @@ theorem isIso_resLE_projectiveLineTriple :
           (projectiveLineTriple X E hE).divisorComplement)) le_rfl)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L153). The attribute's comment: “clause (2): the restriction of `Q` to `𝐀¹_X` is the pullback of `E`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L153). The attribute's comment: “clause (2): the restriction of `Q` to `𝐀¹_X` is the pullback of `E`”.
 
 > **Clause (2) of Stacks tag 0F90.**  The restriction of `Q = Lη_ℐ Lb^*Lp^*E` to the preimage
 > `j : b⁻¹(𝐀¹_X) ⟶ W` of `𝐀¹_X` is the pullback of `E`: `Lj^*Q ≅ L(p ∘ b ∘ j)^*E`.  By clause (1)
@@ -183,7 +183,7 @@ theorem nonempty_etaDerivedPullbackRestrict_projectiveLineTriple :
           (Stacks.Chow.relativeProjectiveLine X ↘ X)).toLRSHom.toShHom).obj E)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isLocallyBoundedFiniteLocallyFree_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L184). The attribute's comment: “clause (5): a locally bounded finite locally free representative of `E` gives one of `Q`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isLocallyBoundedFiniteLocallyFree_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L184). The attribute's comment: “clause (5): a locally bounded finite locally free representative of `E` gives one of `Q`”.
 
 > **Clause (5) of Stacks tag 0F90.**  If `E` is represented by a locally bounded complex of
 > finite locally free `𝒪_X`-modules, then `Q = Lη_ℐ Lb^*Lp^*E` is represented by a locally bounded
@@ -201,7 +201,7 @@ theorem exists_isLocallyBoundedFiniteLocallyFree_projectiveLineTriple
             (projectiveLineTriple X E hE).isPullbackDefined_goodBlowupToBase)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L222). The attribute's comment: “clauses (3) and (4): the closed immersion `i : T → W_∞` locally of finite presentation, with `(W_∞ → X)⁻¹U ⊆ T` scheme theoretically, `Li^*Q` with finite locally free cohomology sheaves, and for `t ∈ T` over `x ∈ U` the stalk `H^n(Li^*Q)_t` free over `𝒪_{T,t}` of the rank (Module.finrank) of `H^n(E)_x` over `𝒪_{X,x}`; `Li^*Q` is etaDerivedPullbackRestrict along `T → W_∞ → W`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_projectiveLineTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/MacphersonGraph.lean#L222). The attribute's comment: “clauses (3) and (4): the closed immersion `i : T → W_∞` locally of finite presentation, with `(W_∞ → X)⁻¹U ⊆ T` scheme theoretically, `Li^*Q` with finite locally free cohomology sheaves, and for `t ∈ T` over `x ∈ U` the stalk `H^n(Li^*Q)_t` free over `𝒪_{T,t}` of the rank (Module.finrank) of `H^n(E)_x` over `𝒪_{X,x}`; `Li^*Q` is etaDerivedPullbackRestrict along `T → W_∞ → W`”.
 
 > **Clauses (3) and (4) of Stacks tag 0F90.**  For the morphism `b : W ⟶ 𝐏¹_X` of tag 0GTY
 > for the triple `(𝐏¹_X, (𝐏¹_X)_∞, Lp^*E)`, with `W_∞ = b⁻¹(𝐏¹_X)_∞` and `Q = Lη_ℐ Lb^*Lp^*E`,
@@ -269,4 +269,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.44, Tag 0F8Z](https://stacks.math.columbia.edu/tag/0F8Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

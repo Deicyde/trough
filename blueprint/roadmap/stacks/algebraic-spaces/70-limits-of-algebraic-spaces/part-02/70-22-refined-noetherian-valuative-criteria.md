@@ -8,7 +8,7 @@ proof: formalized
 
 # 70.22 Refined Noetherian valuative criteria
 
-Section 70.22 of the Stacks Project, [Tag 0H1Z](https://stacks.math.columbia.edu/tag/0H1Z). 3 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.22 of the Stacks Project, [Tag 0H1Z](https://stacks.math.columbia.edu/tag/0H1Z). 3 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CMD, a lemma
 
@@ -16,13 +16,13 @@ Section 70.22 of the Stacks Project, [Tag 0H1Z](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isProper_of_denseRange_of_exists_discreteLift`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean#L511), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NoetherianRefinedValuativeCriterion.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NoetherianRefinedValuativeCriterion.lean#L499) (StacksFrontier): “Let `f : X ⟶ Y` and `h : U ⟶ X` be morphisms of algebraic spaces over `S`, with `Y` locally Noetherian, `f` and `h` of finite type, `f` separated and the image of `|h| : |U| → |X|` dense in `|X|`. If every commutative valuative diagram for `f` over a discrete valuation ring whose generic arrow factors through `h` has a dotted arrow, then `f` is proper.”.
+- [`AlgebraicGeometry.Space.isProper_of_denseRange_of_exists_discreteLift`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean#L511), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NoetherianRefinedValuativeCriterion.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NoetherianRefinedValuativeCriterion.lean#L499) (StacksFrontier): “Let `f : X ⟶ Y` and `h : U ⟶ X` be morphisms of algebraic spaces over `S`, with `Y` locally Noetherian, `f` and `h` of finite type, `f` separated and the image of `|h| : |U| → |X|` dense in `|X|`. If every commutative valuative diagram for `f` over a discrete valuation ring whose generic arrow factors through `h` has a dotted arrow, then `f` is proper.”.
 
 ## Tag 0CME, a lemma
 
 [Tag 0CME](https://stacks.math.columbia.edu/tag/0CME) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_denseRange_of_subsingleton_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeSeparatedness.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeSeparatedness.lean#L416).
+**`AlgebraicGeometry.Space.isSeparated_of_denseRange_of_subsingleton_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeSeparatedness.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeSeparatedness.lean#L417).
 
 > **Stacks 0CME.** Let `f : X ⟶ Y` and `h : U ⟶ X` be morphisms of algebraic spaces over `S`
 > with `Y` locally Noetherian, `f` locally of finite type and quasi-separated, `h` of finite type
@@ -58,7 +58,7 @@ theorem isSeparated_of_denseRange_of_subsingleton_discreteLift
 
 [Tag 0CMF](https://stacks.math.columbia.edu/tag/0CMF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_of_denseRange_of_unique_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean#L540).
+**`AlgebraicGeometry.Space.isProper_of_denseRange_of_unique_discreteLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RefinedValuativeProperness.lean#L540).
 
 > **Stacks 0CMF.** Let `f : X ⟶ Y` and `h : U ⟶ X` be morphisms of algebraic spaces over `S`
 > with `Y` locally Noetherian, `f` and `h` of finite type, `f` quasi-separated and the image of
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.22, Tag 0H1Z](https://stacks.math.columbia.edu/tag/0H1Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

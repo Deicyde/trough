@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.SheafMapGluing.maps_of_sheaves_glue, CategoryTheory.Sheaf.tensorHomEquivIhom, CategoryTheory.OverShriek.sheafHomYonedaSheafifyNatIso, CategoryTheory.GrothendieckTopology.essSurj_toDescentData_pseudofunctorOver, CategoryTheory.GrothendieckTopology.isEquivalence_toDescentData_pseudofunctorOver, CategoryTheory.SiteGlueing.canonicalEquivalence
+lean: Stacks.SheafMapGluing.maps_of_sheaves_glue, CategoryTheory.SheafHomAdj.prodHomEquivSheafHom, CategoryTheory.SheafHomAdj.prodHomEquivSheafHom_natural, CategoryTheory.OverShriek.sheafHomYonedaSheafifyNatIso, CategoryTheory.GrothendieckTopology.essSurj_toDescentData_pseudofunctorOver, CategoryTheory.GrothendieckTopology.isEquivalence_toDescentData_pseudofunctorOver, CategoryTheory.SiteGlueing.canonicalEquivalence
 statement: formalized
 proof: formalized
 ---
 
 # 7.26 Glueing sheaves
 
-Section 7.26 of the Stacks Project, [Tag 04TP](https://stacks.math.columbia.edu/tag/04TP). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.26 of the Stacks Project, [Tag 04TP](https://stacks.math.columbia.edu/tag/04TP). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04TQ, a lemma
 
 [Tag 04TQ](https://stacks.math.columbia.edu/tag/04TQ) in the Stacks Project.
 
-**`Stacks.SheafMapGluing.maps_of_sheaves_glue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/MapsOfSheavesGlue.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Glueing/MapsOfSheavesGlue.lean#L513).
+**`Stacks.SheafMapGluing.maps_of_sheaves_glue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/MapsOfSheavesGlue.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/MapsOfSheavesGlue.lean#L513).
 
 > **Stacks 04TQ — Maps of sheaves glue (existence and uniqueness).**
 >
@@ -36,29 +36,43 @@ theorem maps_of_sheaves_glue
 
 [Tag 0BWQ](https://stacks.math.columbia.edu/tag/0BWQ) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.tensorHomEquivIhom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CartesianClosed.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CartesianClosed.lean#L76).
+**`CategoryTheory.SheafHomAdj.prodHomEquivSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/SheafHomProdEquiv.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/SheafHomProdEquiv.lean#L69).
 
-> **Stacks 0BWQ.** For sheaves `F`, `G`, `H` on a site `C` there is a canonical bijection
-> `Mor(F × G, H) ≃ Mor(F, SheafHom(G, H))`, where `SheafHom(G, H)` is the internal hom of the
-> cartesian closed category of sheaves.
->
-> The bijection is the hom-equivalence of the adjunction `- ⊗ G ⊣ ihom G`, so it is natural
-> in all three entries, which is Stacks' functoriality clause. See the module docstring for
-> the caveat that the internal hom here is Mathlib's abstract one rather than Mathlib's
-> `sheafHom`.
+> **Stacks 0BWQ, the bijection.** For sheaves of sets `F`, `G`, `H` on a site, maps
+> `F × G ⟶ H` are in canonical bijection with maps `F ⟶ SheafHom(G, H)`, where `SheafHom(G, H)` is
+> Mathlib's `sheafHom G H`, the sheaf `U ↦ Mor_{Sh(C/U)}(G|_{C/U}, H|_{C/U})`. It is the
+> hom-equivalence of the adjunction `- × G ⊣ SheafHom(G, -)`; the inverse is the source's formula
+> `(s, t) ↦ ψ(s)(t)` (`prodHomEquivSheafHom_symm_hom_app`), and the bijection is natural in all
+> three entries (`prodHomEquivSheafHom_natural`).
 
 ```lean
-noncomputable def tensorHomEquivIhom {A : Type*} [Category.{max u v} A]
-    [CartesianMonoidalCategory A] [MonoidalClosed (Cᵒᵖ ⥤ A)] [HasSheafify J A]
-    (F G H : Sheaf J A) :
-    (F ⊗ G ⟶ H) ≃ (F ⟶ (ihom G).obj H)
+def prodHomEquivSheafHom (F G H : Sheaf J (Type u)) :
+    (F ⨯ G ⟶ H) ≃ (F ⟶ sheafHom G H)
+```
+
+**`CategoryTheory.SheafHomAdj.prodHomEquivSheafHom_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/SheafHomProdEquiv.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/SheafHomProdEquiv.lean#L132).
+
+> **Stacks 0BWQ, functoriality.** The bijection `prodHomEquivSheafHom` is functorial in all
+> three entries: in `F` (precomposition with `f × G`), in `G` (precomposition with `F × g` on the
+> left, `SheafHom(g, H)` on the right) and in `H` (postcomposition, `SheafHom(G, h)` on the
+> right).
+
+```lean
+theorem prodHomEquivSheafHom_natural :
+    (∀ {F' F G H : Sheaf J (Type u)} (f : F' ⟶ F) (φ : F ⨯ G ⟶ H),
+      prodHomEquivSheafHom F' G H (prod.map f (𝟙 G) ≫ φ) = f ≫ prodHomEquivSheafHom F G H φ) ∧
+    (∀ {F G' G H : Sheaf J (Type u)} (g : G' ⟶ G) (φ : F ⨯ G ⟶ H),
+      prodHomEquivSheafHom F G' H (prod.map (𝟙 F) g ≫ φ)
+        = prodHomEquivSheafHom F G H φ ≫ sheafHomPrecomp g H) ∧
+    (∀ {F G H H' : Sheaf J (Type u)} (h : H ⟶ H') (φ : F ⨯ G ⟶ H),
+      prodHomEquivSheafHom F G H' (φ ≫ h) = prodHomEquivSheafHom F G H φ ≫ sheafHomMap G h)
 ```
 
 ## Tag 0D7X, a lemma
 
 [Tag 0D7X](https://stacks.math.columbia.edu/tag/0D7X) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.sheafHomYonedaSheafifyNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/HomSheafLocalization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Glueing/HomSheafLocalization.lean#L66).
+**`CategoryTheory.OverShriek.sheafHomYonedaSheafifyNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/HomSheafLocalization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/HomSheafLocalization.lean#L66).
 
 > **Stacks 0D7X.** For an object `U` of a small site `(C, J)`, the internal hom sheaf
 > `SheafHom(h_U^\#, -)` out of the sheafification of the representable presheaf `h_U` is the
@@ -81,7 +95,7 @@ noncomputable def sheafHomYonedaSheafifyNatIso :
 
 [Tag 04TR](https://stacks.math.columbia.edu/tag/04TR) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.essSurj_toDescentData_pseudofunctorOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean, line 839](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean#L839).
+**`CategoryTheory.GrothendieckTopology.essSurj_toDescentData_pseudofunctorOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean, line 839](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean#L839).
 
 > **Glueing sheaves.** Let `(C, J)` be a site, let `{f i : X i ⟶ S}` be a covering of an object
 > `S` of `C`, and let `A` be a category with limits of the relevant size. Then every glueing datum
@@ -102,7 +116,7 @@ public theorem essSurj_toDescentData_pseudofunctorOver {C : Type u} [Category.{v
 
 [Tag 04TS](https://stacks.math.columbia.edu/tag/04TS) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.isEquivalence_toDescentData_pseudofunctorOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean#L1041).
+**`CategoryTheory.GrothendieckTopology.isEquivalence_toDescentData_pseudofunctorOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/GlueingSheaves.lean#L1041).
 
 > **Sheaves on a slice site are glueing data.** Let `(C, J)` be a site, let `{f i : X i ⟶ S}` be
 > a covering of an object `S` of `C`, and let `A` be a category with limits of the relevant size.
@@ -123,7 +137,7 @@ public theorem isEquivalence_toDescentData_pseudofunctorOver {C : Type u} [Categ
 
 [Tag 0GWK](https://stacks.math.columbia.edu/tag/0GWK) in the Stacks Project.
 
-**`CategoryTheory.SiteGlueing.canonicalEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/AbsoluteGlueingAnySite.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Glueing/AbsoluteGlueingAnySite.lean#L620).
+**`CategoryTheory.SiteGlueing.canonicalEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Glueing/AbsoluteGlueingAnySite.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Glueing/AbsoluteGlueingAnySite.lean#L620).
 
 > **Stacks 0GWK.** For a site `C`, with no smallness hypothesis and with sheaves of sets
 > valued in an arbitrary universe, the category of sheaves on `C` is equivalent to the category of
@@ -140,4 +154,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.26, Tag 04TP](https://stacks.math.columbia.edu/tag/04TP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

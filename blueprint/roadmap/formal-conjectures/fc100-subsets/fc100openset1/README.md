@@ -3,7 +3,7 @@
 > A random subset of 100 open research problems, drawn uniformly at random
 > from all problems with the `category research open` tag.
 
-*Quoted from [FormalConjectures/Subsets/FC100OpenSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Subsets/FC100OpenSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100OpenSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Subsets/FC100OpenSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, each linked to its problem's article.
 

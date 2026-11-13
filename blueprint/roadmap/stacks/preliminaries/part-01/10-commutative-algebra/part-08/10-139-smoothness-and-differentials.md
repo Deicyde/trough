@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.139 Smoothness and differentials
 
-Section 10.139 of the Stacks Project, [Tag 05D4](https://stacks.math.columbia.edu/tag/05D4). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.139 of the Stacks Project, [Tag 05D4](https://stacks.math.columbia.edu/tag/05D4). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04B2, a lemma
 
 [Tag 04B2](https://stacks.math.columbia.edu/tag/04B2) in the Stacks Project.
 
-**`KaehlerDifferential.mapBaseChange_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean#L167). The attribute's comment: “Exactness at `C ⊗_B Ω_{B/A}`, the one node of the sequence that is not already in Mathlib; the other two are `KaehlerDifferential.exact_mapBaseChange_map` and `KaehlerDifferential.map_surjective`. Stated under `H₁(L_{C/B}) = 0`, the hypothesis the source's second proof uses, which the tag's smoothness gives by instance inference. See the module docstring.”. References: SGA 6 VIII (2.6), “partial”.
+**`KaehlerDifferential.mapBaseChange_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean#L167). The attribute's comment: “Exactness at `C ⊗_B Ω_{B/A}`, the one node of the sequence that is not already in Mathlib; the other two are `KaehlerDifferential.exact_mapBaseChange_map` and `KaehlerDifferential.map_surjective`. Stated under `H₁(L_{C/B}) = 0`, the hypothesis the source's second proof uses, which the tag's smoothness gives by instance inference. See the module docstring.”. References: SGA 6 VIII (2.6), “partial”.
 
 > **The sequence of differentials of a tower is exact on the left**: let `R → A → B` be ring
 > maps such that `H₁(L_{B/A}) = 0`, for instance with `A → B` smooth. Then the canonical map
@@ -32,7 +32,7 @@ public theorem KaehlerDifferential.mapBaseChange_injective (R : Type*) [CommRing
 
 [Tag 06A8](https://stacks.math.columbia.edu/tag/06A8) in the Stacks Project.
 
-**`KaehlerDifferential.split_exact_kerCotangentToTensor_mapBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1160). The attribute's comment: “Stated for a formally smooth `R → S`, which is the source's own generalisation 06A6, and with no hypothesis on `P`. Split exactness is recorded as injectivity of the left hand map together with an `S`-linear section of the right hand map, the exactness of the sequence of 00RU in the middle and on the right being Mathlib's `KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange` and `KaehlerDifferential.mapBaseChange_surjective`. See the module docstring.”. References: EGA 0 (20.5.14), “injectivity, splitting”; EGA IV (17.2.5), “affine case”; EGA 0 (20.5.14), “injectivity, splitting”; EGA 0 (20.6.22), “partial”; EGA 0 (22.4.4.2), “partial”; SGA 3 III (4.25), “(ii) inj. + splitting”.
+**`KaehlerDifferential.split_exact_kerCotangentToTensor_mapBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1160). The attribute's comment: “Stated for a formally smooth `R → S`, which is the source's own generalisation 06A6, and with no hypothesis on `P`. Split exactness is recorded as injectivity of the left hand map together with an `S`-linear section of the right hand map, the exactness of the sequence of 00RU in the middle and on the right being Mathlib's `KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange` and `KaehlerDifferential.mapBaseChange_surjective`. See the module docstring.”. References: EGA 0 (20.5.14), “injectivity, splitting”; EGA IV (17.2.5), “affine case”; EGA 0 (20.6.22), “partial”; EGA 0 (22.4.4.2), “partial”; SGA 3 III (4.25), “(ii) inj. + splitting”.
 
 > **Stacks 06A8.** Let `R → P → S` be ring maps with `R → S` smooth and `P → S` surjective with
 > kernel `J`. Then the exact sequence `0 → J/J² → S ⊗[P] Ω[P⁄R] → Ω[S⁄R] → 0` of Stacks 00RU is
@@ -53,7 +53,7 @@ theorem KaehlerDifferential.split_exact_kerCotangentToTensor_mapBaseChange
 
 [Tag 06A9](https://stacks.math.columbia.edu/tag/06A9) in the Stacks Project.
 
-**`Algebra.FormallySmooth.exists_leftInverse_mapCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1225). The attribute's comment: “Stated for a formally smooth `A → B`, which is the source's own generalisation 06A7, and with the retraction that generalisation asserts rather than bare injectivity, the latter following by `Function.LeftInverse.injective`. Exactness at `J/J²` and surjectivity of `KaehlerDifferential.kerCotangentToTensor A B C` are the neighbouring tag 065V and are not restated. See the module docstring.”.
+**`Algebra.FormallySmooth.exists_leftInverse_mapCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1225). The attribute's comment: “Stated for a formally smooth `A → B`, which is the source's own generalisation 06A7, and with the retraction that generalisation asserts rather than bare injectivity, the latter following by `Function.LeftInverse.injective`. Exactness at `J/J²` and surjectivity of `KaehlerDifferential.kerCotangentToTensor A B C` are the neighbouring tag 065V and are not restated. See the module docstring.”.
 
 > **Stacks 06A9.** Let `A → B → C` be ring maps with `A → C` surjective and `A → B` smooth, and
 > put `I = ker (A → C)` and `J = ker (B → C)`. Then the map `I/I² → J/J²` of Stacks 065V admits an
@@ -79,7 +79,7 @@ theorem Algebra.FormallySmooth.exists_leftInverse_mapCotangent
 
 [Tag 05D5](https://stacks.math.columbia.edu/tag/05D5) in the Stacks Project.
 
-**`conormal_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Conormal.lean#L188). The attribute's comment: “(1)”. References: EGA 0 (19.5.3), “(i), special case”; EGA 0 (19.5.4.1), “a), special case”; EGA 0 (19.5.7), “Clause (i), special case”; EGA 0 (22.1.1), “(ii), condition α”; EGA IV (17.10.4), “special case”; SGA 1 II (4.10), “(iv)”; SGA 3 III (4.25), “(ii), special case”; SGA 3 VIB (1.6), “special case”; SGA 6 VII (1.6), “special case”; SGA 6 VIII (2.4), “special case”; SGA 6 X (7.1), “special case”.
+**`conormal_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Conormal.lean#L188). The attribute's comment: “(1)”. References: EGA 0 (19.5.3), “(i), special case”; EGA 0 (19.5.4.1), “a), special case”; EGA 0 (19.5.7), “Clause (i), special case”; EGA 0 (22.1.1), “(ii), condition α”; EGA IV (17.10.4), “special case”; SGA 1 II (4.10), “(iv)”; SGA 3 III (4.25), “(ii), special case”; SGA 3 VIB (1.6), “special case”; SGA 6 VII (1.6), “special case”; SGA 6 VIII (2.4), “special case”; SGA 6 X (7.1), “special case”.
 
 > Part (1) of Stacks tag 05D5: the conormal module is finite locally free.
 > If `S` is a smooth `R`-algebra and `σ : S →ₐ[R] R`, then the conormal module `I/I²` of
@@ -91,7 +91,7 @@ theorem conormal_finite_projective (h : Algebra.Smooth R S) :
       Module.Projective R (RingHom.ker σ).Cotangent
 ```
 
-**`adicCompletion_algEquiv_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1068). The attribute's comment: “(2)”. References: EGA 0 (19.0.2), “special case”; EGA 0 (19.5.4), “a) ⇒ c)”; EGA 0 (19.5.4.4), “partial”; EGA 0 (21.9.2), “special case”; EGA IV (17.5.3), “partial”; SGA 1 II (4.17), “affine case, (i)⇒(iii)”; SGA 1 III (1.5), “necessity, special case”; SGA 3 VIIB (5.5.2), “partial”; SGA 3 XI (1.2), “(ii), special case”.
+**`adicCompletion_algEquiv_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Conormal.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Conormal.lean#L1068). The attribute's comment: “(2)”. References: EGA 0 (19.0.2), “special case”; EGA 0 (19.5.4), “a) ⇒ c)”; EGA 0 (19.5.4.4), “partial”; EGA 0 (21.9.2), “special case”; EGA IV (17.5.3), “partial”; SGA 1 II (4.17), “affine case, (i)⇒(iii)”; SGA 1 III (1.5), “necessity, special case”; SGA 3 VIIB (5.5.2), “partial”; SGA 3 XI (1.2), “(ii), special case”.
 
 > Part (2) of Stacks tag 05D5: the completion is a power series ring when the conormal
 > module is free. If `S` is a smooth `R`-algebra, `σ : S →ₐ[R] R`, and the conormal module `I/I²` of
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.139, Tag 05D4](https://stacks.math.columbia.edu/tag/05D4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

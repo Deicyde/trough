@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.11 Cohomology and augmentations of ringed simplicial sites
 
-Section 85.11 of the Stacks Project, [Tag 0D9D](https://stacks.math.columbia.edu/tag/0D9D). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.11 of the Stacks Project, [Tag 0D9D](https://stacks.math.columbia.edu/tag/0D9D). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D9D, the section
 
 [Tag 0D9D](https://stacks.math.columbia.edu/tag/0D9D) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L103). The attribute's comment: “the data `O`, `O_D` and `a^♯` of a ringed augmentation”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L103). The attribute's comment: “the data `O`, `O_D` and `a^♯` of a ringed augmentation”.
 
 > **Stacks 0D9D.** The data of a ringed augmentation of a simplicial site: a sheaf of
 > commutative rings `O` on the total site, a sheaf of commutative rings `O_D` on the augmentation
@@ -25,7 +25,7 @@ structure RingedAugmentation (S : SimplicialSiteSituation.{u}) (D : Cat.{u, u})
     (K : GrothendieckTopology D) (a : Augmentation S D K)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.totalRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L128). The attribute's comment: “the morphism of ringed topoi `a : (Sh(C_total), O) ⟶ (Sh(D), O_D)`”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.totalRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L128). The attribute's comment: “the morphism of ringed topoi `a : (Sh(C_total), O) ⟶ (Sh(D), O_D)`”.
 
 > **Stacks 0D9D.** The morphism of ringed topoi
 > `a : (Sh(C_total), O) ⟶ (Sh(D), O_D)` determined by the total augmentation of Stacks 0D70 and
@@ -36,7 +36,7 @@ def totalRingedHom :
     RingedToposHom (S.totalRingedTopos A.O) A.augmentationRingedTopos
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.componentRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L142). The attribute's comment: “the morphisms of ringed topoi `a_n = a ∘ g_n`”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.componentRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L142). The attribute's comment: “the morphisms of ringed topoi `a_n = a ∘ g_n`”.
 
 > **Stacks 0D9D.** The morphism of ringed topoi
 > `a_n = a ∘ g_n : (Sh(C_n), O_n) ⟶ (Sh(D), O_D)`, the composite of the component inclusion of
@@ -47,7 +47,7 @@ def componentRingedHom (n : SimplexCategory) :
     RingedToposHom (S.componentRingedTopos A.O n) A.augmentationRingedTopos
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.transitionComponentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L166). The attribute's comment: “`a_m ∘ f_φ = a_n`, on direct images of sheaves of sets”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.transitionComponentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Augmentation.lean#L166). The attribute's comment: “`a_m ∘ f_φ = a_n`, on direct images of sheaves of sets”.
 
 > **Stacks 0D9D.** The identification `a_m ∘ f_φ = a_n` on direct images of sheaves of sets:
 > the direct image of the simplicial transition followed by that of `a_m` is the direct image of
@@ -59,7 +59,7 @@ def transitionComponentPushforwardIso {m n : SimplexCategory} (φ : m ⟶ n) :
       (A.componentRingedHom n).toToposHom.pushforward
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.componentRingedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationRingedTwoIso.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationRingedTwoIso.lean#L90). The attribute's comment: “`a_m ∘ f_φ = a_n`, as a 2-isomorphism of the morphisms of ringed topoi”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.componentRingedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationRingedTwoIso.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationRingedTwoIso.lean#L90). The attribute's comment: “`a_m ∘ f_φ = a_n`, as a 2-isomorphism of the morphisms of ringed topoi”.
 
 > **`a_m ∘ f_φ = a_n`, as a 2-isomorphism of morphisms of ringed topoi.** For every simplex map
 > `φ : [m] ⟶ [n]` the canonical 2-morphism `a_n ⟶ a_m ∘ f_φ` is invertible. This is the identity
@@ -81,7 +81,7 @@ def componentRingedTwoIso {m n : SimplexCategory} (φ : m ⟶ n) :
 
 [Tag 0DH3](https://stacks.math.columbia.edu/tag/0DH3) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean#L111). The attribute's comment: “the forward implication: flatness of a gives flatness of every a\_n”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean#L111). The attribute's comment: “the forward implication: flatness of a gives flatness of every a\_n”.
 
 > If the augmentation `a` of the total ringed topos is flat, then so is the augmentation `a_n`
 > of every simplicial component.
@@ -91,7 +91,7 @@ theorem componentRingedAugmentation_isFlat (ha : a.IsFlat) (n : SimplexCategory)
     (componentRingedAugmentation S O a n).IsFlat
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlatConverse.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlatConverse.lean#L116).
+**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlatConverse.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlatConverse.lean#L116).
 
 > The augmentation `a` of the total ringed topos of a simplicial-site situation is flat if and
 > only if the augmentation `a_n` of every simplicial component is flat.
@@ -105,7 +105,7 @@ theorem componentRingedAugmentation_isFlat_iff_forall :
 
 [Tag 0D7C](https://stacks.math.columbia.edu/tag/0D7C) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.nonempty_moduleResolution`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleBarResolution.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleBarResolution.lean#L105).
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.nonempty_moduleResolution`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleBarResolution.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleBarResolution.lean#L105).
 
 > With the notation of Stacks 0D9D, for a sheaf of `O_D`-modules `G` there is an exact complex
 >
@@ -120,7 +120,7 @@ theorem componentRingedAugmentation_isFlat_iff_forall :
 alias nonempty_moduleResolution
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.nonempty_moduleResolution_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleResolution.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleResolution.lean#L393). The attribute's comment: “for an arbitrary coefficient module, by the simplex-coefficient resolution”.
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.nonempty_moduleResolution_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleResolution.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleResolution.lean#L409). The attribute's comment: “for an arbitrary coefficient module, by the simplex-coefficient resolution”.
 
 > **Stacks 0D7C.** With the notation of Stacks 0D9D, for a sheaf of `O_D`-modules `G` the
 > lower shriek images `g_{n!}(a_n^*G)` of Stacks 0D72 carry an exact complex
@@ -141,7 +141,7 @@ theorem nonempty_moduleResolution_of_iso_unit
 
 [Tag 0D7D](https://stacks.math.columbia.edu/tag/0D7D) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.moduleCechComplex_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleCechComplex.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleCechComplex.lean#L469).
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.moduleCechComplex_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleCechComplex.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleCechComplex.lean#L469).
 
 > With the notation of Stacks 0D9D, let `F` be a sheaf of `O`-modules on the
 > total site. The canonical complex of `O_D`-modules
@@ -177,7 +177,7 @@ theorem moduleCechComplex_spec :
 
 [Tag 0D7F](https://stacks.math.columbia.edu/tag/0D7F) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.higherDirectImageSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleSpectralSequence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleSpectralSequence.lean#L359).
+**`CategoryTheory.SimplicialSiteSituation.RingedAugmentation.higherDirectImageSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleSpectralSequence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationModuleSpectralSequence.lean#L359).
 
 > **Stacks 0D7F.** With the notation of Stacks 0D9D (a ringed augmentation `A` of a
 > simplicial-site situation towards a ringed site `(D, K, O_D)`), for `M` in `D⁺(O)` there is a
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.11, Tag 0D9D](https://stacks.math.columbia.edu/tag/0D9D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

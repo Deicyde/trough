@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.6 Weil divisors
 
-Section 72.6 of the Stacks Project, [Tag 0ENI](https://stacks.math.columbia.edu/tag/0ENI). 11 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.6 of the Stacks Project, [Tag 0ENI](https://stacks.math.columbia.edu/tag/0ENI). 11 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EE5, a lemma
 
 [Tag 0EE5](https://stacks.math.columbia.edu/tag/0EE5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyFinite_irreducibleComponents_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianIrreducibleComponents.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianIrreducibleComponents.lean#L45).
+**`AlgebraicGeometry.Space.locallyFinite_irreducibleComponents_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianIrreducibleComponents.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianIrreducibleComponents.lean#L45).
 
 > The irreducible components of a closed subset of the space of points of a locally Noetherian
 > algebraic space over `S` form a locally finite collection.
@@ -32,7 +32,7 @@ theorem locallyFinite_irreducibleComponents_of_isClosed (B : BigFppfSite.{u}) (S
 
 [Tag 0ENJ](https://stacks.math.columbia.edu/tag/0ENJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean#L75). The attribute's comment: “part (1): prime divisors”.
+**`AlgebraicGeometry.Space.PrimeDivisor`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean#L75). The attribute's comment: “part (1): prime divisors”.
 
 > **Stacks 0ENJ, part (1).** A *prime divisor* of `X` is an integral closed subspace of `X`
 > whose generic point has codimension one in `X`.
@@ -41,7 +41,7 @@ theorem locallyFinite_irreducibleComponents_of_isClosed (B : BigFppfSite.{u}) (S
 structure PrimeDivisor
 ```
 
-**`AlgebraicGeometry.Space.WeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean#L121). The attribute's comment: “part (2): Weil divisors”.
+**`AlgebraicGeometry.Space.WeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisor.lean#L121). The attribute's comment: “part (2): Weil divisors”.
 
 > **Stacks 0ENJ, part (2).** The group `Div(X)` of *Weil divisors* of `X`: integer
 > coefficient families on prime divisors of `X` whose nonzero part has locally finite support
@@ -55,7 +55,7 @@ def WeilDivisor : AddSubgroup (PrimeDivisor B S hS X → ℤ)
 
 [Tag 0ENK](https://stacks.math.columbia.edu/tag/0ENK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.neighborhoodTotalFractionRingToGeneric_pullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean#L151). The attribute's comment: “independence of the canonical map R(X) → Q(𝒪^h\_\{X, ξ}) of the affine elementary étale neighbourhood used to compute it -- a verification the source omits”.
+**`AlgebraicGeometry.Space.PrimeDivisor.neighborhoodTotalFractionRingToGeneric_pullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldChartIndependence.lean#L149). The attribute's comment: “independence of the canonical map R(X) → Q(𝒪^h\_\{X, ξ}) of the affine elementary étale neighbourhood used to compute it -- a verification the source omits”.
 
 > **Stacks 0ENK, computed on an arbitrary affine chart.** The canonical map from the function
 > field of a decent, locally Noetherian, integral algebraic space into the total ring of fractions
@@ -71,15 +71,13 @@ theorem PrimeDivisor.neighborhoodTotalFractionRingToGeneric_pullback_eq
     (U : ElementaryEtaleNeighborhood B S hS X hX (Z.genericPoint B S hS X))
     [IsAffine U.scheme.left.1] [IsReduced U.scheme.left.1]
     [IsLocallyNoetherian U.scheme.left.1]
-    (hCofiltered :
-      IsCofiltered (ElementaryEtaleNeighborhood B S hS X hX (Z.genericPoint B S hS X)))
     (r : rationalFunctions B S hS hX) :
-    Z.neighborhoodTotalFractionRingToGeneric B S hS hX hdec U hCofiltered
+    Z.neighborhoodTotalFractionRingToGeneric B S hS hX hdec U
         (rationalFunctionsToTotalFractionRing B S hS hX U.scheme U.toSpace U.etale_toSpace r) =
       Z.rationalFunctionsToGenericTotalFractionRing B S hS hX hdec hInt hN r
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.rationalFunctionsToGenericTotalFractionRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L187). The attribute's comment: “the canonical map R(X) → Q(𝒪^h\_\{X, ξ}) from the function field into the total ring of fractions of the henselian local ring at the generic point of a prime divisor”.
+**`AlgebraicGeometry.Space.PrimeDivisor.rationalFunctionsToGenericTotalFractionRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L177). The attribute's comment: “the canonical map R(X) → Q(𝒪^h\_\{X, ξ}) from the function field into the total ring of fractions of the henselian local ring at the generic point of a prime divisor”.
 
 > The canonical map from the function field of a decent, locally Noetherian, integral algebraic
 > space into the total ring of fractions of the henselian local ring at the generic point of a
@@ -92,7 +90,7 @@ def PrimeDivisor.rationalFunctionsToGenericTotalFractionRing :
     rationalFunctions B S hS hX →+* Z.genericTotalFractionRing B S hS hX hdec
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.injective_rationalFunctionsToGenericTotalFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L204). The attribute's comment: “injectivity of the canonical map R(X) → Q(𝒪^h\_\{X, ξ}), the function field being a field and the total ring of fractions nontrivial”.
+**`AlgebraicGeometry.Space.PrimeDivisor.injective_rationalFunctionsToGenericTotalFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L192). The attribute's comment: “injectivity of the canonical map R(X) → Q(𝒪^h\_\{X, ξ}), the function field being a field and the total ring of fractions nontrivial”.
 
 > The canonical map from the function field of a decent, locally Noetherian, integral algebraic
 > space into the total ring of fractions of the henselian local ring at the generic point of a
@@ -104,7 +102,7 @@ theorem PrimeDivisor.injective_rationalFunctionsToGenericTotalFractionRing :
       (Z.rationalFunctionsToGenericTotalFractionRing B S hS hX hdec hInt hN)
 ```
 
-**`AlgebraicGeometry.Space.genericFractionEmbedding`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L219). The attribute's comment: “the conclusions of the lemma assembled at every prime divisor, as the data the order of vanishing along a prime divisor is defined from”.
+**`AlgebraicGeometry.Space.genericFractionEmbedding`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorFunctionFieldEmbedding.lean#L207). The attribute's comment: “the conclusions of the lemma assembled at every prime divisor, as the data the order of vanishing along a prime divisor is defined from”.
 
 > At every prime divisor of a decent, locally Noetherian, integral algebraic space: the
 > henselian local ring at the generic point of the prime divisor is a nontrivial Noetherian local
@@ -114,7 +112,7 @@ theorem PrimeDivisor.injective_rationalFunctionsToGenericTotalFractionRing :
 def genericFractionEmbedding : GenericFractionEmbedding B S hS hX hdec
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.isReduced_and_ringKrullDim_eq_one_and_isNoetherianRing_genericHenselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorHenselianLocalRing.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorHenselianLocalRing.lean#L55). The attribute's comment: “the henselian local ring at the generic point of a prime divisor is a reduced 1-dimensional Noetherian local ring; the canonical injection of the function field into its total ring of fractions is `AlgebraicGeometry.Space.PrimeDivisor.rationalFunctionsToGenericTotalFractionRing`”.
+**`AlgebraicGeometry.Space.PrimeDivisor.isReduced_and_ringKrullDim_eq_one_and_isNoetherianRing_genericHenselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorHenselianLocalRing.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorHenselianLocalRing.lean#L55). The attribute's comment: “the henselian local ring at the generic point of a prime divisor is a reduced 1-dimensional Noetherian local ring; the canonical injection of the function field into its total ring of fractions is `AlgebraicGeometry.Space.PrimeDivisor.rationalFunctionsToGenericTotalFractionRing`”.
 
 > The henselian local ring at the generic point of a prime divisor of a decent, locally
 > Noetherian, integral algebraic space is reduced, of Krull dimension one, and Noetherian.
@@ -137,7 +135,7 @@ theorem
 
 [Tag 0ENL](https://stacks.math.columbia.edu/tag/0ENL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.ord_mk'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishing.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishing.lean#L219). The attribute's comment: “the difference-of-lengths formula, on a unit of the total ring of fractions of the henselian local ring at the generic point”.
+**`AlgebraicGeometry.Space.PrimeDivisor.ord_mk'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishing.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishing.lean#L219). The attribute's comment: “the difference-of-lengths formula, on a unit of the total ring of fractions of the henselian local ring at the generic point”.
 
 > The order of vanishing along a prime divisor of a fraction `a / b` of nonzerodivisors of the
 > henselian local ring at its generic point is the difference of the lengths of the quotients by
@@ -159,7 +157,7 @@ theorem PrimeDivisor.ord_mk'
           (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.ordRationalFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L88). The attribute's comment: “ord\_Z(f) for an invertible rational function f on a locally Noetherian integral algebraic space, at the hypotheses of the source; the defining difference-of-lengths formula is `AlgebraicGeometry.Space.ordRationalFunction_eq_length_sub_length`”.
+**`AlgebraicGeometry.Space.ordRationalFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L88). The attribute's comment: “ord\_Z(f) for an invertible rational function f on a locally Noetherian integral algebraic space, at the hypotheses of the source; the defining difference-of-lengths formula is `AlgebraicGeometry.Space.ordRationalFunction_eq_length_sub_length`”.
 
 > **Stacks 0ENL.** The *order of vanishing of `f` along `Z`*, for `f` an invertible rational
 > function on a locally Noetherian integral algebraic space `X` and `Z` a prime divisor of `X`:
@@ -176,7 +174,7 @@ abbrev ordRationalFunction (f : (rationalFunctions B S hS hX)ˣ)
     (Z : PrimeDivisor B S hS X) : ℤ
 ```
 
-**`AlgebraicGeometry.Space.ordRationalFunction_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L102). The attribute's comment: “the difference-of-lengths formula defining ord\_Z(f), on an arbitrary presentation of the image of f in Q(𝒪^h\_\{X, ξ}) as a ratio of nonzerodivisors; hence also the independence of the presentation, which the source cites Algebra, Lemma 02MC for”.
+**`AlgebraicGeometry.Space.ordRationalFunction_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L102). The attribute's comment: “the difference-of-lengths formula defining ord\_Z(f), on an arbitrary presentation of the image of f in Q(𝒪^h\_\{X, ξ}) as a ratio of nonzerodivisors; hence also the independence of the presentation, which the source cites Algebra, Lemma 02MC for”.
 
 > **Stacks 0ENL, the defining formula.** If the image of `f` in `Q(𝒪^h_{X, ξ})` is the ratio
 > `a / b` of nonzerodivisors `a` and `b` of `𝒪^h_{X, ξ}`, then `ord_Z(f)` is the difference of the
@@ -201,7 +199,7 @@ theorem ordRationalFunction_eq_length_sub_length (f : (rationalFunctions B S hS 
           (b : ↥(Z.genericHenselianLocalRing B S hS hX hInt.isDecentSpace))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.exists_ordRationalFunction_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L141). The attribute's comment: “existence of the presentation a/b by nonzerodivisors of the image of f in Q(𝒪^h\_\{X, ξ}), which is what makes the difference of lengths an admissible description of ord\_Z(f)”.
+**`AlgebraicGeometry.Space.exists_ordRationalFunction_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingRationalFunction.lean#L141). The attribute's comment: “existence of the presentation a/b by nonzerodivisors of the image of f in Q(𝒪^h\_\{X, ξ}), which is what makes the difference of lengths an admissible description of ord\_Z(f)”.
 
 > **Stacks 0ENL, well-definedness.** The image of an invertible rational function `f` in
 > `Q(𝒪^h_{X, ξ})` *is* a ratio `a / b` of nonzerodivisors of `𝒪^h_{X, ξ}`, and for one — hence,
@@ -234,199 +232,67 @@ theorem exists_ordRationalFunction_eq_length_sub_length (f : (rationalFunctions 
 
 [Tag 0ENM](https://stacks.math.columbia.edu/tag/0ENM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.ord_eq_ordTotalFracInt_chartPointRationalFunctionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaChart/RationalFunctionOrder.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaChart/RationalFunctionOrder.lean#L410). The attribute's comment: “at an arbitrary affine étale chart, not necessarily integral, through a point over the generic point of the prime divisor: the order of vanishing is the one of the total ring of fractions of the local ring of the chart at the point”.
-
-> **Stacks 0ENM at an arbitrary affine étale chart.** Let `Z` be a prime divisor of a decent,
-> locally Noetherian, integral algebraic space `X`, let `V` be an affine étale chart of `X` and
-> `v` a point of its scheme over the generic point of `Z`. Then the order of vanishing along `Z` of
-> an invertible rational function `f` is the order of vanishing at `v` of the reading of `f` in
-> the total ring of fractions of `𝒪_{V, v}`.
->
-> Unlike `AlgebraicGeometry.Space.PrimeDivisor.ord_eq_scheme_ord_of_chart` the chart need not be
-> an elementary étale neighbourhood, nor integral: `𝒪_{V, v}` is a reduced one-dimensional local
-> ring, possibly with several minimal primes, and its order of vanishing is the one on its total
-> ring of fractions. The proof compares the chart with the chosen elementary étale neighbourhood
-> of the generic point at a common affine refinement
-> (`AlgebraicGeometry.Space.ordTotalFracInt_chartPointRationalFunctionMap_eq`) and the
-> neighbourhood with the henselian local ring
-> (`AlgebraicGeometry.Space.PrimeDivisor.ord_eq_ordTotalFracInt_genericEtaleChart`).
->
-> The dimension hypothesis on `𝒪_{V, v}`, needed to state the right-hand side, is
-> `AlgebraicGeometry.Space.PrimeDivisor.krullDimLE_chartStalk`.
-
-```lean
-theorem PrimeDivisor.ord_eq_ordTotalFracInt_chartPointRationalFunctionMap
-    (hInt : IsIntegralSpace B S hS X)
-    (hN : HasEtaleLocalProperty B S hS X (fun Y : Scheme.{u} => IsLocallyNoetherian Y))
-    (V : SmallEtale B S hS X) [IsAffine V.obj.left.left.1] [IsReduced V.obj.left.left.1]
-    [IsLocallyNoetherian V.obj.left.left.1] (v : V.obj.left.left.1)
-    (hv : chartSchemeToPoints B S hS X V v = Z.genericPoint B S hS X)
-    [Ring.KrullDimLE 1 (V.obj.left.left.1.presheaf.stalk v)]
-    (f : (rationalFunctions B S hS hX)ˣ) :
-    (genericFractionEmbedding B S hS hX hdec hInt hN).ord f Z =
-      Ring.ordTotalFracInt (V.obj.left.left.1.presheaf.stalk v)
-        (chartPointRationalFunctionMap B S hS hX V v (f : rationalFunctions B S hS hX))
-        (f.isUnit.map _)
-```
-
-**`AlgebraicGeometry.Space.PrimeDivisor.ord_functionFieldToTotalFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingChartComparison.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingChartComparison.lean#L207). The attribute's comment: “with the shrinking step of the proof carried: in place of the hypothesis that `Z` meets the schematic locus of `X`, an elementary étale neighbourhood `U` of the generic point of `Z` whose scheme is integral and locally Noetherian and whose marked point has codimension one is given, the rational function is one of `U`, and it is compared along the induced map on total rings of fractions; Noetherianness and the dimension bound for the henselian local ring are hypotheses”.
-
-> **Stacks 0ENM.** The order of vanishing along a prime divisor `Z` of the image of a nonzero
-> rational function `f` of an elementary étale neighbourhood `U` of the generic point of `Z` is
-> the order of vanishing of `f` at the marked point of `U` in the sense of Divisors, Definition
-> 02RJ.
->
-> Both sides are a difference of lengths, and the canonical map from the stalk of `U` into the
-> henselian local ring is the structure map of a henselization, so it leaves those lengths
-> unchanged.
-
-```lean
-theorem PrimeDivisor.ord_functionFieldToTotalFractionRing
-    (hcoh : coheight U.point = 1) (f : ↥U.scheme.left.1.functionField) (hf : f ≠ 0) :
-    Z.ord B S hS hX hdec (Z.functionFieldToTotalFractionRing B S hS hX hdec U f)
-        ((isUnit_iff_ne_zero.mpr hf).map
-          (Z.functionFieldToTotalFractionRing B S hS hX hdec U)) =
-      U.scheme.left.1.ord f U.point
-```
-
-**`AlgebraicGeometry.Space.PrimeDivisor.ord_mk'_eq_ord_mk'_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingEtaleChart.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingEtaleChart.lean#L439). The attribute's comment: “at an arbitrary étale chart, routed through the étale local ring at a geometric point rather than through the canonical map into the henselian local ring: in place of the hypothesis that `Z` meets the schematic locus of `X`, a small étale neighbourhood `(U, u)` of a geometric point whose scheme is integral and locally Noetherian and whose point has codimension one is given, and the two fractions are compared through their images in `𝒪_{X, x̄}`. Noetherianness and the dimension bound for the henselian local ring are hypotheses”.
-
-> **Stacks 0ENM at an arbitrary étale chart.** Let `Z` be a prime divisor of a decent algebraic
-> space `X` with generic point `ξ`, let `x̄` be a geometric point of `X`, and let `(U, u)` be a
-> small étale neighbourhood of `x̄` whose scheme is integral and locally Noetherian and whose point
-> has codimension one. Let `a / b` be a fraction of nonzerodivisors of `𝒪^h_{X, ξ}` and `c / d` one
-> of nonzerodivisors of `𝒪_{U, u}` whose numerators and denominators agree in `𝒪_{X, x̄}`, along a
-> map `ψ : 𝒪^h_{X, ξ} → 𝒪_{X, x̄}` leaving `Ring.ord` unchanged and the canonical map of Stacks
-> 05VP. Then the order of vanishing of `a / b` along `Z` is the order of vanishing of `c / d` at
-> `u` in the sense of Divisors, Definition 02RJ.
->
-> Both sides are a difference of two `Ring.ord`s, by
-> `AlgebraicGeometry.Space.PrimeDivisor.ord_mk'` and `AlgebraicGeometry.Scheme.ord_mk'`, and the
-> four `Ring.ord`s are pairwise equal: the canonical map of Stacks 05VP is the structure map of a
-> strict henselization, so it leaves `Ring.ord` unchanged
-> (`AlgebraicGeometry.Space.ord_chartLocalRingToEtaleLocalRing`), and `hψ` says the same of `ψ`.
->
-> The hypothesis `hψ` is supplied by
-> `AlgebraicGeometry.Space.exists_ringHom_ord_henselianLocalRing` at any geometric point above `ξ`;
-> unlike the elementary-neighbourhood comparison
-> `AlgebraicGeometry.Space.PrimeDivisor.ord_functionFieldToTotalFractionRing`, nothing here asks
-> that `(U, u)` be an elementary étale neighbourhood of `ξ`, which is what makes the statement
-> usable on a chart chosen for a different reason — in the proof of Stacks 0EPX, one trivializing
-> an invertible module.
-
-```lean
-theorem PrimeDivisor.ord_mk'_eq_ord_mk'_chart
-    [Nontrivial ↥(Z.genericHenselianLocalRing B S hS hX hdec)]
-    [IsNoetherianRing ↥(Z.genericHenselianLocalRing B S hS hX hdec)]
-    [Ring.KrullDimLE 1 ↥(Z.genericHenselianLocalRing B S hS hX hdec)]
-    {xbar : GeometricPoint B S hS X}
-    (V : SmallEtaleNeighborhood xbar)
-    [AlgebraicGeometry.IsIntegral (chartScheme V.chart)]
-    [IsLocallyNoetherian (chartScheme V.chart)]
-    (ψ : ↥(Z.genericHenselianLocalRing B S hS hX hdec) →+*
-      (etaleLocalRing B S hS X xbar : Type (u + 1)))
-    (hψ : ∀ r, Ring.ord (etaleLocalRing B S hS X xbar : Type (u + 1)) (ψ r) =
-      Ring.ord ↥(Z.genericHenselianLocalRing B S hS hX hdec) r)
-    (hcoh : coheight (chartPoint B S hS X V) = 1)
-    (a b : (↥(Z.genericHenselianLocalRing B S hS hX hdec))⁰)
-    (c d : (↥(chartLocalRing B S hS X V))⁰)
-    (hac : ψ (a : ↥(Z.genericHenselianLocalRing B S hS hX hdec)) =
-      chartLocalRingToEtaleLocalRing B S hS X hX V (c : ↥(chartLocalRing B S hS X V)))
-    (hbd : ψ (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec)) =
-      chartLocalRingToEtaleLocalRing B S hS X hX V (d : ↥(chartLocalRing B S hS X V)))
-    (hu : IsUnit (IsLocalization.mk' (Z.genericTotalFractionRing B S hS hX hdec)
-      (a : ↥(Z.genericHenselianLocalRing B S hS hX hdec)) b)) :
-    Z.ord B S hS hX hdec (IsLocalization.mk' (Z.genericTotalFractionRing B S hS hX hdec)
-        (a : ↥(Z.genericHenselianLocalRing B S hS hX hdec)) b) hu =
-      (chartScheme V.chart).ord
-        (IsLocalization.mk' (chartScheme V.chart).functionField
-          (c : ↥(chartLocalRing B S hS X V)) d) (chartPoint B S hS X V)
-```
-
-**`AlgebraicGeometry.Space.PrimeDivisor.exists_affine_schematic_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingSchematicLocus.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingSchematicLocus.lean#L106). The attribute's comment: “the shrinking step of the proof, with the neighbourhood affine: from the hypothesis that the prime divisor meets the schematic locus, an affine elementary étale neighbourhood of its generic point whose scheme is integral, locally Noetherian and of codimension one at the marked point”.
-
-> **Stacks 0ENM**, the shrinking step of the proof in affine form. If a prime divisor `Z` of a
-> locally Noetherian integral algebraic space `X` meets the schematic locus of `X`, then the
-> generic point of `Z` has an *affine* elementary étale neighbourhood whose scheme is integral,
-> locally Noetherian and of codimension one at the marked point.
->
-> The schematic locus itself is such a neighbourhood except for affineness, by
-> `AlgebraicGeometry.Space.PrimeDivisor.exists_schematic_neighborhood`; restricting it to an
-> affine open around the marked point preserves integrality and local Noetherianness, as
-> properties of an open subscheme, and preserves the codimension of the marked point because
-> codimension is computed in any open neighbourhood.
-
-```lean
-theorem PrimeDivisor.exists_affine_schematic_neighborhood
-    (hmeet : (Z.support B S hS X ∩
-      subspacePointSet B S hS X (schematicLocus B S hS X)).Nonempty) :
-    ∃ U : ElementaryEtaleNeighborhood B S hS X hX (Z.genericPoint B S hS X),
-      IsAffine U.scheme.left.1 ∧
-      AlgebraicGeometry.IsIntegral U.scheme.left.1 ∧
-      IsLocallyNoetherian U.scheme.left.1 ∧
-      coheight U.point = 1
-```
-
-**`AlgebraicGeometry.Space.PrimeDivisor.ord_eq_scheme_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingSchematicLocus.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OrderOfVanishingSchematicLocus.lean#L242).
+**`AlgebraicGeometry.Space.PrimeDivisor.ord_eq_ord_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusOrderOfVanishing.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusOrderOfVanishing.lean#L108). The attribute's comment: “the order of vanishing along a prime divisor `Z` meeting the schematic locus is the order of vanishing, in the sense of Divisors 02RJ, of the restriction of `f` to a scheme `X'` representing the schematic locus, at the point of `X'` over the generic point of `Z`”.
 
 > **Stacks 0ENM.** Let `S` be a scheme, let `X` be a locally Noetherian integral algebraic
-> space over `S` and let `f ∈ R(X)^*`. If the prime divisor `Z ⊂ X` meets the schematic locus of
-> `X`, then the order of vanishing `ord_Z(f)` of Definition 0ENL agrees with the order of
-> vanishing of Divisors, Definition 02RJ.
+> space over `S` and let `f ∈ R(X)^*`. Let `Z ⊂ X` be a prime divisor meeting the schematic locus
+> of `X`, and let `X'` be a scheme representing the schematic locus, through an isomorphism
+> `e : h_{X'} ≅ (schematicLocus X)`, so that `X' ⟶ X` is an open immersion; such an `X'` exists
+> by Stacks 03JH,
+> `AlgebraicGeometry.Space.isOpenSubspace_and_isRepresentable_schematicLocus_of_isAlgebraicSpace`.
+> Then:
 >
-> After shrinking `X` to the schematic locus and then to an affine open around the generic point
-> `ξ` of `Z` we are on an integral Noetherian affine scheme `U` with a point of codimension one;
-> there `𝒪^h_{X, ξ}` is a henselization of `𝒪_{U, u}`, so the two orders of vanishing, each a
-> difference of lengths, agree.
+> * the generic point `ξ` of `Z` is the image of a point `ξ'` of `X'`;
+> * for every such `ξ'` (it is unique, `X' ⟶ X` being a monomorphism), the scheme `X'` is integral
+>   and locally Noetherian, `ξ'` has codimension one in `X'`, so that it is the generic point of
+>   the prime divisor `Z ∩ X'` of `X'`, the restriction `f|_{X'}` of `f` to `X'` exists in the
+>   function field of `X'`, and for it `ord_Z(f) = ord_{ξ'}(f|_{X'})`: the order of vanishing of
+>   Definition 0ENL agrees with the order of vanishing of Divisors, Definition 02RJ, on the scheme
+>   `X'`.
 >
-> The hypotheses are exactly those of the source: decency, which the henselian local ring and
-> hence the order of vanishing of Definition 0ENL are defined from, is part of integrality of an
-> algebraic space — Stacks 0AD4, `AlgebraicGeometry.Space.IsIntegralSpace` — and is taken from
-> `hInt` rather than assumed separately.
+> Integrality of `X` includes decency (Stacks 0AD4, `AlgebraicGeometry.Space.IsIntegralSpace`),
+> which the henselian local ring of Definition 0ENL is built from; it is taken from `hInt`.
+>
+> The point `ξ'` exists because the point set of the schematic locus is open in `|X|` and meets
+> `|Z|`, so contains its generic point. The comparison is
+> `AlgebraicGeometry.Space.PrimeDivisor.ord_eq_scheme_ord_of_isOpenImmersion`: on an affine open of
+> `X'` around `ξ'` the henselian local ring `𝒪^h_{X, ξ}` is a henselization of `𝒪_{X', ξ'}`, which
+> preserves the lengths both orders of vanishing are differences of.
 
 ```lean
-theorem PrimeDivisor.ord_eq_scheme_ord
+theorem PrimeDivisor.ord_eq_ord_schematicLocus (hInt : IsIntegralSpace B S hS X)
+    (hN : HasEtaleLocalProperty B S hS X (fun Y : Scheme.{u} => IsLocallyNoetherian Y))
+    (Z : PrimeDivisor B S hS X)
     (hmeet : (Z.support B S hS X ∩
       subspacePointSet B S hS X (schematicLocus B S hS X)).Nonempty)
+    {W : BigFppfOver B S hS} (e : yoneda.obj W ≅ (schematicLocus B S hS X).toFunctor)
     (f : (rationalFunctions B S hS hX)ˣ) :
-    ∃ (U : ElementaryEtaleNeighborhood B S hS X hX (Z.genericPoint B S hS X))
-      (_ : IsAffine U.scheme.left.1) (_ : AlgebraicGeometry.IsIntegral U.scheme.left.1)
-      (_ : IsLocallyNoetherian U.scheme.left.1),
-      coheight U.point = 1 ∧
-        (genericFractionEmbedding B S hS hX (hInt.isDecentSpace B S hS X) hInt hN).ord f Z =
-          U.scheme.left.1.ord
-            (rationalFunctionsToFunctionField B S hS hX U.scheme U.point U.toSpace
-              U.etale_toSpace (f : rationalFunctions B S hS hX)) U.point
-```
-
-**`AlgebraicGeometry.Space.PrimeDivisor.exists_schematic_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicNeighborhoodOfPrimeDivisor.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchematicNeighborhoodOfPrimeDivisor.lean#L129). The attribute's comment: “the shrinking step of the proof: from the hypothesis that the prime divisor meets the schematic locus, an elementary étale neighbourhood of its generic point which is an open immersion and whose scheme is integral, locally Noetherian and of codimension one at the marked point”.
-
-> **Stacks 0ENM**, the shrinking step of the proof. If a prime divisor `Z` of a locally
-> Noetherian integral algebraic space `X` meets the schematic locus of `X`, then the generic point
-> of `Z` has an elementary étale neighbourhood whose structure morphism is an open immersion and
-> whose scheme is integral, locally Noetherian and of codimension one at the marked point.
->
-> The neighbourhood is the schematic locus itself: it is an open subspace represented by a scheme
-> `V` by Stacks 03JH, its point set is open in `|X|` and meets `|Z|`, hence contains the generic
-> point `ξ` of `Z`, and the point `v ∈ V` over `ξ` has codimension one because `|V| → |X|` is an
-> open embedding.
-
-```lean
-theorem PrimeDivisor.exists_schematic_neighborhood
-    (hmeet : (Z.support B S hS X ∩
-      subspacePointSet B S hS X (schematicLocus B S hS X)).Nonempty) :
-    ∃ U : ElementaryEtaleNeighborhood B S hS X hX (Z.genericPoint B S hS X),
-      IsOpenImmersion B S hS U.toSpace ∧
-      AlgebraicGeometry.IsIntegral U.scheme.left.1 ∧
-      IsLocallyNoetherian U.scheme.left.1 ∧
-      coheight U.point = 1
+    (∃ ξ' : (BigFppfOver.toScheme B S hS).obj W,
+      pointsMap B S hS (yoneda.obj W) (e.hom ≫ (schematicLocus B S hS X).ι)
+        ((pointsEquivScheme B S hS W).symm ξ') = Z.genericPoint B S hS X) ∧
+    ∀ ξ' : (BigFppfOver.toScheme B S hS).obj W,
+      pointsMap B S hS (yoneda.obj W) (e.hom ≫ (schematicLocus B S hS X).ι)
+        ((pointsEquivScheme B S hS W).symm ξ') = Z.genericPoint B S hS X →
+      ∃ (_ : IsIntegral ((BigFppfOver.toScheme B S hS).obj W))
+        (_ : IsLocallyNoetherian ((BigFppfOver.toScheme B S hS).obj W)),
+        coheight ξ' = 1 ∧
+        (∃ f' : ((BigFppfOver.toScheme B S hS).obj W).functionField,
+          IsOpenChartRestriction B S hS hX (e.hom ≫ (schematicLocus B S hS X).ι)
+            (isOpenImmersion_hom_comp_schematicLocus_ι B S hS hX e)
+            (f : rationalFunctions B S hS hX) f') ∧
+        ∀ f' : ((BigFppfOver.toScheme B S hS).obj W).functionField,
+          IsOpenChartRestriction B S hS hX (e.hom ≫ (schematicLocus B S hS X).ι)
+            (isOpenImmersion_hom_comp_schematicLocus_ι B S hS hX e)
+            (f : rationalFunctions B S hS hX) f' →
+          (genericFractionEmbedding B S hS hX (hInt.isDecentSpace B S hS X) hInt hN).ord f Z =
+            ((BigFppfOver.toScheme B S hS).obj W).ord f' ξ'
 ```
 
 ## Tag 0ENN, a lemma
 
 [Tag 0ENN](https://stacks.math.columbia.edu/tag/0ENN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyFinite_principalDivisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L288). The attribute's comment: “the second set: the prime divisors with ord\_Z(f) ≠ 0 are locally finite. The first set, the prime divisors at whose generic point f is not regular, is locallyFinite\_primeDivisor\_not\_isDefinedAt”.
+**`AlgebraicGeometry.Space.locallyFinite_principalDivisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L288). The attribute's comment: “the second set: the prime divisors with ord\_Z(f) ≠ 0 are locally finite. The first set, the prime divisors at whose generic point f is not regular, is locallyFinite\_primeDivisor\_not\_isDefinedAt”.
 
 > **Stacks 0ENN, the second set.** The prime divisors of `X` along which a rational function
 > `f` has nonzero order of vanishing are locally finite in `|X|`, given a nonempty open subset of
@@ -458,7 +324,7 @@ theorem locallyFinite_principalDivisorCoefficients_ne_zero
       else W.support B S hS X
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_isDefinedAt_and_ordRationalFunction_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleRationalFunctionUnitLocus.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleRationalFunctionUnitLocus.lean#L298). The attribute's comment: “both collections, with the source's hypotheses only: the prime divisors at whose generic point f is not defined (f ∉ 𝒪\_\{X,ξ}) and those with ord\_Z(f) ≠ 0 are locally finite”.
+**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_isDefinedAt_and_ordRationalFunction_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleRationalFunctionUnitLocus.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleRationalFunctionUnitLocus.lean#L296). The attribute's comment: “both collections, with the source's hypotheses only: the prime divisors at whose generic point f is not defined (f ∉ 𝒪\_\{X,ξ}) and those with ord\_Z(f) ≠ 0 are locally finite”.
 
 > **Stacks 0ENN.** Let `X` be a locally Noetherian integral algebraic space over `S` and let
 > `f ∈ R(X)^*`. Then the prime divisors `Z` of `X` whose generic point `ξ` has `f ∉ 𝒪_{X, ξ}` —
@@ -487,7 +353,7 @@ theorem locallyFinite_primeDivisor_not_isDefinedAt_and_ordRationalFunction_ne_ze
 
 [Tag 0ENP](https://stacks.math.columbia.edu/tag/0ENP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.principalDivisorCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L219). The attribute's comment: “the coefficients ord\_Z(f) of div(f); the embeddings R(X) → Q(O^h\_\{X,ξ}) of Stacks 0ENK are the parameter emb, as they are for Stacks 0EPT”.
+**`AlgebraicGeometry.Space.principalDivisorCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L219). The attribute's comment: “the coefficients ord\_Z(f) of div(f); the embeddings R(X) → Q(O^h\_\{X,ξ}) of Stacks 0ENK are the parameter emb, as they are for Stacks 0EPT”.
 
 > **Stacks 0ENP, the coefficients.** The coefficients `ord_Z(f)` of the principal divisor
 > `div(f) = ∑_Z ord_Z(f) [Z]` of a rational function `f` on `X`, indexed by the prime divisors of
@@ -506,7 +372,7 @@ def principalDivisorCoefficients
     PrimeDivisor B S hS X → ℤ
 ```
 
-**`AlgebraicGeometry.Space.principalWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L320). The attribute's comment: “div(f) = ∑ ord\_Z(f) [Z] as an element of Div(X); local finiteness is Stacks 0ENN, the argument hfin, discharged by locallyFinite\_principalDivisorCoefficients\_ne\_zero in principalWeilDivisorOfRegularLocus; the embeddings of Stacks 0ENK are the parameter emb”.
+**`AlgebraicGeometry.Space.principalWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L320). The attribute's comment: “div(f) = ∑ ord\_Z(f) [Z] as an element of Div(X); local finiteness is Stacks 0ENN, the argument hfin, discharged by locallyFinite\_principalDivisorCoefficients\_ne\_zero in principalWeilDivisorOfRegularLocus; the embeddings of Stacks 0ENK are the parameter emb”.
 
 > **Stacks 0ENP.** The *principal divisor associated to `f ∈ R(X)^*`*, that is
 > `div(f) = ∑_Z ord_Z(f) [Z]`, as an element of `Div(X)`.
@@ -528,7 +394,7 @@ def principalWeilDivisor
     WeilDivisor B S hS X
 ```
 
-**`AlgebraicGeometry.Space.principalWeilDivisorOfRegularLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L352). The attribute's comment: “div(f) in Div(X), with local finiteness (Stacks 0ENN) discharged here: it is proved from a nonempty open U over which f is invertible, the datum (U, hUopen, hUne, hreg) that is the first sentence of the source's own proof of Stacks 0ENN”.
+**`AlgebraicGeometry.Space.principalWeilDivisorOfRegularLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L352). The attribute's comment: “div(f) in Div(X), with local finiteness (Stacks 0ENN) discharged here: it is proved from a nonempty open U over which f is invertible, the datum (U, hUopen, hUne, hreg) that is the first sentence of the source's own proof of Stacks 0ENN”.
 
 > **Stacks 0ENP.** The principal divisor `div(f) = ∑_Z ord_Z(f) [Z]` of a rational function
 > `f ∈ R(X)^*` as an element of `Div(X)`, with the local finiteness of Stacks 0ENN supplied from a
@@ -549,7 +415,7 @@ def principalWeilDivisorOfRegularLocus
     WeilDivisor B S hS X
 ```
 
-**`AlgebraicGeometry.Space.principalWeilDivisorOfUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrincipalWeilDivisorOfUnit.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrincipalWeilDivisorOfUnit.lean#L144). The attribute's comment: “div(f) = ∑ ord\_Z(f) [Z] as an element of Div(X), for X a locally Noetherian integral algebraic space over S and f ∈ R(X)^*: the order of vanishing of Stacks 0ENL along the canonical embedding R(X) → Q(O^h\_\{X,ξ}) of Stacks 0ENK, whose ring-theoretic properties are proved; the local finiteness of Stacks 0ENN is proved, nothing is carried”.
+**`AlgebraicGeometry.Space.principalWeilDivisorOfUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrincipalWeilDivisorOfUnit.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrincipalWeilDivisorOfUnit.lean#L144). The attribute's comment: “div(f) = ∑ ord\_Z(f) [Z] as an element of Div(X), for X a locally Noetherian integral algebraic space over S and f ∈ R(X)^*: the order of vanishing of Stacks 0ENL along the canonical embedding R(X) → Q(O^h\_\{X,ξ}) of Stacks 0ENK, whose ring-theoretic properties are proved; the local finiteness of Stacks 0ENN is proved, nothing is carried”.
 
 > The *principal Weil divisor associated to `f ∈ R(X)^*`*,
 > `div(f) = div_X(f) = ∑_Z ord_Z(f) [Z]`, as an element of `Div(X)`, for `X` a locally Noetherian
@@ -564,7 +430,7 @@ def principalWeilDivisorOfUnit (f : (rationalFunctions B S hS hX)ˣ) :
     ↥(WeilDivisor B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.divRationalFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean#L70). The attribute's comment: “div\_X(f) = ∑ ord\_Z(f) [Z] as a Weil divisor, at the hypotheses of the source: the order of vanishing is the canonical one of Stacks 0ENL and the local finiteness is Stacks 0ENN, both proved”.
+**`AlgebraicGeometry.Space.divRationalFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean#L70). The attribute's comment: “div\_X(f) = ∑ ord\_Z(f) [Z] as a Weil divisor, at the hypotheses of the source: the order of vanishing is the canonical one of Stacks 0ENL and the local finiteness is Stacks 0ENN, both proved”.
 
 > **Stacks 0ENP.** The *principal Weil divisor* `div_X(f) = ∑ ord_Z(f) [Z]` of an invertible
 > rational function `f` on a locally Noetherian integral algebraic space `X`, the sum running over
@@ -580,7 +446,7 @@ abbrev divRationalFunction (f : (rationalFunctions B S hS hX)ˣ) : ↥(WeilDivis
 
 [Tag 0ENQ](https://stacks.math.columbia.edu/tag/0ENQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.principalWeilDivisor_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L422). The attribute's comment: “div(fg) = div(f) + div(g) in Div(X)”.
+**`AlgebraicGeometry.Space.principalWeilDivisor_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L422). The attribute's comment: “div(fg) = div(f) + div(g) in Div(X)”.
 
 > **Stacks 0ENQ.** The principal divisor of a product of rational functions is the sum of
 > their principal divisors, `div(fg) = div(f) + div(g)` in `Div(X)`.
@@ -609,7 +475,7 @@ theorem principalWeilDivisor_mul
         principalWeilDivisor B S hS hX hdec emb g hg hfing
 ```
 
-**`AlgebraicGeometry.Space.principalWeilDivisorOfRegularLocus_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L504). The attribute's comment: “div(fg) = div(f) + div(g) in Div(X), local finiteness proved throughout”.
+**`AlgebraicGeometry.Space.principalWeilDivisorOfRegularLocus_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrincipalDivisor.lean#L504). The attribute's comment: “div(fg) = div(f) + div(g) in Div(X), local finiteness proved throughout”.
 
 > **Stacks 0ENQ.** The principal divisor of a product of rational functions is the sum of
 > their principal divisors, `div(fg) = div(f) + div(g)` in `Div(X)`, with the local finiteness of
@@ -639,7 +505,7 @@ theorem principalWeilDivisorOfRegularLocus_mul
         principalWeilDivisorOfRegularLocus B S hS hX hdec hN hirr emb g hg U hUopen hUne hregg
 ```
 
-**`AlgebraicGeometry.Space.divRationalFunction_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean#L96). The attribute's comment: “div\_X(fg) = div\_X(f) + div\_X(g) as Weil divisors on X, at the hypotheses of the source only”.
+**`AlgebraicGeometry.Space.divRationalFunction_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalWeilDivisorRationalFunction.lean#L96). The attribute's comment: “div\_X(fg) = div\_X(f) + div\_X(g) as Weil divisors on X, at the hypotheses of the source only”.
 
 > **Stacks 0ENQ.** Let `X` be a locally Noetherian integral algebraic space over `S` and let
 > `f, g ∈ R(X)^*`. Then `div_X(fg) = div_X(f) + div_X(g)` as Weil divisors on `X`.
@@ -653,7 +519,7 @@ theorem divRationalFunction_mul (f g : (rationalFunctions B S hS hX)ˣ) :
       divRationalFunction B S hS hX hInt hN f + divRationalFunction B S hS hX hInt hN g
 ```
 
-**`AlgebraicGeometry.Space.GenericFractionEmbedding.ord_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L146). The attribute's comment: “additivity of the principal Weil divisor, read on the coefficient families over the prime divisors; this form needs no hypothesis beyond the embedding of Stacks 0ENK”.
+**`AlgebraicGeometry.Space.GenericFractionEmbedding.ord_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L146). The attribute's comment: “additivity of the principal Weil divisor, read on the coefficient families over the prime divisors; this form needs no hypothesis beyond the embedding of Stacks 0ENK”.
 
 > **Stacks 0ENQ.** The order of vanishing of a product of invertible rational functions is
 > the sum of the orders of vanishing, as coefficient families on the prime divisors of `X`.
@@ -670,7 +536,7 @@ theorem ord_mul (f g : (rationalFunctions B S hS hX)ˣ) :
 
 [Tag 0ENR](https://stacks.math.columbia.edu/tag/0ENR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GenericFractionEmbedding.principalWeilDivisors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L190). The attribute's comment: “the subgroup of principal Weil divisors, by which the class group is formed”.
+**`AlgebraicGeometry.Space.GenericFractionEmbedding.principalWeilDivisors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L190). The attribute's comment: “the subgroup of principal Weil divisors, by which the class group is formed”.
 
 > **Stacks 0ENR.** The subgroup of `Div(X)` of principal Weil divisors: they contain zero and
 > are closed under addition and negation by the additivity of the order of vanishing, which is
@@ -680,7 +546,7 @@ theorem ord_mul (f g : (rationalFunctions B S hS hX)ˣ) :
 def principalWeilDivisors : AddSubgroup ↥(WeilDivisor B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.GenericFractionEmbedding.weilDivisorClassGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L213). The attribute's comment: “the Weil divisor class group as the quotient of the Weil divisors by the principal Weil divisors”.
+**`AlgebraicGeometry.Space.GenericFractionEmbedding.weilDivisorClassGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroup.lean#L213). The attribute's comment: “the Weil divisor class group as the quotient of the Weil divisors by the principal Weil divisors”.
 
 > **Stacks 0ENR.** The *Weil divisor class group* `Cl(X)` of `X`: the group of Weil divisors
 > on `X` modulo the subgroup of principal Weil divisors.
@@ -689,7 +555,7 @@ def principalWeilDivisors : AddSubgroup ↥(WeilDivisor B S hS X)
 abbrev weilDivisorClassGroup : Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.weilDivisorClassGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroupCanonical.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroupCanonical.lean#L97). The attribute's comment: “Cl(X) = Div(X) / \{div(f) : f ∈ R(X)^*}, at the source's hypotheses only: the principal divisors are the range of the homomorphism div of Stacks 0ENP and 0ENQ, built from the canonical order of vanishing”.
+**`AlgebraicGeometry.Space.weilDivisorClassGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroupCanonical.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassGroupCanonical.lean#L97). The attribute's comment: “Cl(X) = Div(X) / \{div(f) : f ∈ R(X)^*}, at the source's hypotheses only: the principal divisors are the range of the homomorphism div of Stacks 0ENP and 0ENQ, built from the canonical order of vanishing”.
 
 > **Stacks 0ENR.** The *Weil divisor class group* `Cl(X)` of a locally Noetherian integral
 > algebraic space `X` over `S`: the quotient of the group `Div(X)` of Weil divisors by the
@@ -703,7 +569,7 @@ abbrev weilDivisorClassGroup : Type (u + 1)
 
 [Tag 0ENT](https://stacks.math.columbia.edu/tag/0ENT) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineLineInvolution.involutionQuotient_classGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionClassGroup.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionClassGroup.lean#L300).
+**`AlgebraicGeometry.AffineLineInvolution.involutionQuotient_classGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionClassGroup.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionClassGroup.lean#L300).
 
 > **Stacks 0ENT.** Let `k` be a field of characteristic different from two and let
 > `X = 𝔸¹_k/\{t ∼ -t ∣ t ≠ 0\}` be the algebraic space of Stacks 02Z1, the quotient of the affine
@@ -771,7 +637,7 @@ theorem involutionQuotient_classGroup (hchar : (2 : k) ≠ 0) (hZ : B.Contains (
         e (Space.primeDivisorClass (originDivisor k B hk hchar hZ)) = 1
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isNoetherian_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionNoetherian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionNoetherian.lean#L69). The attribute's comment: “the Noetherian property”.
+**`AlgebraicGeometry.AffineLineInvolution.isNoetherian_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionNoetherian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionNoetherian.lean#L69). The attribute's comment: “the Noetherian property”.
 
 > Away from characteristic two, the quotient of the affine line by the punctured graph of
 > negation is a Noetherian algebraic space over the ground field: it is quasi-compact,
@@ -784,7 +650,7 @@ theorem isNoetherian_involutionQuotient (hchar : (2 : k) ≠ 0) (B : BigFppfSite
     Space.IsNoetherian B (Spec (.of k)) hS hZ (involutionQuotient k B hS).obj
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isSmooth_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L583). The attribute's comment: “smoothness”.
+**`AlgebraicGeometry.AffineLineInvolution.isSmooth_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L583). The attribute's comment: “smoothness”.
 
 > **Stacks 0ENT.** Away from characteristic two, the quotient of the affine line by the
 > punctured graph of negation is smooth over the ground field.
@@ -804,7 +670,7 @@ theorem isSmooth_involutionQuotient (hchar : (2 : k) ≠ 0) (B : BigFppfSite.{u}
 
 [Tag 0ENU](https://stacks.math.columbia.edu/tag/0ENU) in the Stacks Project.
 
-**`AlgebraicGeometry.CoordinateAxesQuotient.coordinateAxesQuotient_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoordinateAxesQuotientClassGroup.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoordinateAxesQuotientClassGroup.lean#L271).
+**`AlgebraicGeometry.CoordinateAxesQuotient.coordinateAxesQuotient_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoordinateAxesQuotientClassGroup.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoordinateAxesQuotientClassGroup.lean#L271).
 
 > **Stacks 0ENU.** Let `k` be a field, `U = Spec (k[x, y]/(xy))` the union of the coordinate
 > axes, `σ` the automorphism exchanging them, and `R = Δ(U) ⨿ Δ'(U ∖ {0_U})` where `Δ'` is the graph
@@ -880,7 +746,7 @@ theorem coordinateAxesQuotient_properties (hZ : B.Contains (⊤_ Scheme.{u})) :
           (isIntegralSpace_quotientSpace S B hS hZ).isDecentSpace)
 ```
 
-**`AlgebraicGeometry.Space.EtaleRelation.isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CoordinateAxesEtaleRelation.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CoordinateAxesEtaleRelation.lean#L497). The attribute's comment: “etale\_relation”.
+**`AlgebraicGeometry.Space.EtaleRelation.isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CoordinateAxesEtaleRelation.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CoordinateAxesEtaleRelation.lean#L497). The attribute's comment: “etale\_relation”.
 
 > The specified relation is an étale equivalence relation on the coordinate axes.
 
@@ -889,7 +755,7 @@ theorem isEtaleEquivalenceRelation (S : CoordinateAxesQuotientSetup.{u}) :
     Stacks.Groupoids.IsEtaleEquivalenceRelation (relationPreRelation S)
 ```
 
-**`AlgebraicGeometry.CoordinateAxesQuotient.coordinateSumMap_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean#L315). The attribute's comment: “quotient\_map\_exists”.
+**`AlgebraicGeometry.CoordinateAxesQuotient.coordinateSumMap_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean#L315). The attribute's comment: “quotient\_map\_exists”.
 
 > The coordinate-sum map is invariant under the relation: it has the same composite with the
 > source and the target of `relationPreRelation`.
@@ -900,7 +766,7 @@ theorem coordinateSumMap_invariant (S : Setup.{u}) :
       (relationPreRelation S).source ≫ coordinateSumMap S
 ```
 
-**`AlgebraicGeometry.CoordinateAxesQuotient.quotientSumMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean#L364). The attribute's comment: “quotient\_map\_exists”.
+**`AlgebraicGeometry.CoordinateAxesQuotient.quotientSumMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FunctionFieldEmbedding.lean#L364). The attribute's comment: “quotient\_map\_exists”.
 
 > The morphism from the quotient sheaf to the affine line through which the coordinate-sum map
 > factors, together with the equation expressing that factorisation.
@@ -929,4 +795,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.6, Tag 0ENI](https://stacks.math.columbia.edu/tag/0ENI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

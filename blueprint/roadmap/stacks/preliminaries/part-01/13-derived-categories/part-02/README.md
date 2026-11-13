@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# 13.18 Injective resolutions to 13.37 Compact objects
+# 13.15 Derived functors on… to 13.32 Bounded cohomological…
 
+- [13.15 Derived functors on derived categories](13-15-derived-functors-on-derived-categories.md)
+- [13.16 Higher derived functors](13-16-higher-derived-functors.md)
+- [13.17 Triangulated subcategories of the derived category](13-17-triangulated-subcategories-of-the-derived.md)
 - [13.18 Injective resolutions](13-18-injective-resolutions.md)
 - [13.19 Projective resolutions](13-19-projective-resolutions.md)
 - [13.20 Right derived functors and injective resolutions](13-20-right-derived-functors-and-injective-resol.md)
@@ -19,8 +22,3 @@ navigation: transparent
 - [13.30 Deriving adjoints](13-30-deriving-adjoints.md)
 - [13.31 K-injective complexes](13-31-k-injective-complexes.md)
 - [13.32 Bounded cohomological dimension](13-32-bounded-cohomological-dimension.md)
-- [13.33 Derived colimits](13-33-derived-colimits.md)
-- [13.34 Derived limits](13-34-derived-limits.md)
-- [13.35 Operations on full subcategories](13-35-operations-on-full-subcategories.md)
-- [13.36 Generators of triangulated categories](13-36-generators-of-triangulated-categories.md)
-- [13.37 Compact objects](13-37-compact-objects.md)

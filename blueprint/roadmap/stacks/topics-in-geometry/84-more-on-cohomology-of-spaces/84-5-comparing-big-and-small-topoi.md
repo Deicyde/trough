@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso_hom_app, AlgebraicGeometry.BigEtaleSpaceSite.smallToBig_inverseImageSectionsIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso_hom_app, AlgebraicGeometry.BigEtaleSpaceSite.inverseImage_isSheafFor_smooth_syntomic_fppf_fpqc, AlgebraicGeometry.BigPHSpaceSite.isSheaf_bigToSmallEtale_inverseImage, AlgebraicGeometry.BigEtaleSpaceSite.injective_smallEtaleRestriction
+lean: AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso_hom_app, AlgebraicGeometry.BigEtaleSpaceSite.smallToBig_inverseImageSectionsIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso, AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso_hom_app, AlgebraicGeometry.BigEtaleSpaceSite.inverseImage_isSheafFor_smooth_syntomic_fppf_fpqc, AlgebraicGeometry.BigPHSpaceSite.isSheaf_bigToSmallEtale_inverseImage, AlgebraicGeometry.BigEtaleSpaceSite.exists_injective_not_injective_restrictModules
 statement: formalized
 proof: formalized
 ---
 
 # 84.5 Comparing big and small topoi
 
-Section 84.5 of the Stacks Project, [Tag 0DG6](https://stacks.math.columbia.edu/tag/0DG6). 7 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 84.5 of the Stacks Project, [Tag 0DG6](https://stacks.math.columbia.edu/tag/0DG6). 7 tags here are carried by 43 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DG7, a lemma
 
 [Tag 0DG7](https://stacks.math.columbia.edu/tag/0DG7) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L52). The attribute's comment: “transitivity of inverse image”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L52). The attribute's comment: “transitivity of inverse image”.
 
 > Transitivity of inverse image for `f_small = π_X ∘ i_f`: the adjunction mate of the
 > direct-image factorization of Tag 0DF6, part (4).
@@ -25,7 +25,7 @@ noncomputable def bigToSmall_inverseImageFactorizationIso :
       (smallEtaleMorphism T f).inverseImage
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L64). The attribute's comment: “the components of the transitivity isomorphism”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageFactorizationIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L64). The attribute's comment: “the components of the transitivity isomorphism”.
 
 > The transitivity isomorphism is determined by the adjunction unit of `f_small` and the
 > direct-image factorization of Tag 0DF6: it is the morphism whose adjoint transpose is the unit
@@ -42,7 +42,7 @@ theorem bigToSmall_inverseImageFactorizationIso_hom_app
             ((smallEtaleMorphism T f).inverseImage.obj F))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBig_inverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L84). The attribute's comment: “global sections after restriction are evaluation at f”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBig_inverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L84). The attribute's comment: “global sections after restriction are evaluation at f”.
 
 > Taking global sections on the spaces-étale site of `Y` after restriction along `i_f` is
 > evaluation at the object `f : Y ⟶ X` of the big étale site of `X`.
@@ -54,7 +54,7 @@ noncomputable def smallToBig_inverseImageSectionsIso :
       (sheafSections (T.bigEtaleTopology X) (Type (u + 1))).obj (op (Over.mk f))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L132). The attribute's comment: “the section rule for the pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L132). The attribute's comment: “the section rule for the pullback”.
 
 > The sections of the inverse image `π_X⁻¹F` of a sheaf on the spaces-étale site of `X` over the
 > object `f : Y ⟶ X` of the big étale site of `X` are the global sections of the small-site pullback
@@ -68,7 +68,7 @@ noncomputable def bigToSmall_inverseImageSectionsIso :
         Sheaf.Γ (Space.SpacesEtale.topology T.fppfSite S T.fppf_mem Y) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L146). The attribute's comment: “the components of the section rule”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImageSectionsIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtalePullback.lean#L146). The attribute's comment: “the components of the section rule”.
 
 > The section rule is the global-sections image of the transitivity isomorphism, after
 > identifying evaluation at `f` with global sections of the restriction along `i_f`.
@@ -83,7 +83,7 @@ theorem bigToSmall_inverseImageSectionsIso_hom_app
           (Type (u + 1))).map ((bigToSmall_inverseImageFactorizationIso T f).hom.app F)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.inverseImage_isSheafFor_smooth_syntomic_fppf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean#L73). The attribute's comment: “Moreover: the sheaf condition for smooth, syntomic, fppf and fpqc coverings”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.inverseImage_isSheafFor_smooth_syntomic_fppf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean#L74). The attribute's comment: “Moreover: the sheaf condition for smooth, syntomic, fppf and fpqc coverings”.
 
 > **Stacks 0DG7, the sheaf conditions for smooth, syntomic, fppf and fpqc coverings.** Let `F`
 > be a sheaf on the spaces-étale site of `X`. Then `π_X⁻¹F` satisfies the sheaf condition for
@@ -111,13 +111,67 @@ theorem inverseImage_isSheafFor_smooth_syntomic_fppf_fpqc :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigPHSpaceSite.isSheaf_bigToSmallEtale_inverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean#L104) (StacksFrontier): “Moreover: the sheaf condition for ph coverings”.
+- [`AlgebraicGeometry.BigPHSpaceSite.isSheaf_bigToSmallEtale_inverseImage`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleSheafConditions.lean#L105) (StacksFrontier): “Moreover: the sheaf condition for ph coverings”.
 
 ## Tag 0DG8, a lemma
 
 [Tag 0DG8](https://stacks.math.columbia.edu/tag/0DG8) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L176). The attribute's comment: “part (1), injectives restrict along i\_f”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.exists_injective_not_injective_restrictModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean#L355). The attribute's comment: “the corresponding statement (1)(b) for modules does not hold”.
+
+> **Stacks Project, Tag 0DG8, the statement for modules, part (1)(b).** Over `S = Spec ℤ`
+> there is an injective `𝒪`-module on the big étale site of `S` whose restriction to the
+> spaces-étale site of `S` is not an injective `𝒪_S`-module.
+
+```lean
+theorem exists_injective_not_injective_restrictModules :
+    ∃ I : BigEtaleModules.{u, u + 1} T (baseSpace T), Injective I ∧
+      ¬ Injective ((restrictModules.{u, u + 1} T (baseSpace T)).obj I)
+```
+
+**`AlgebraicGeometry.BigEtaleSpaceSite.exists_injective_not_injective_restrictModulesAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean#L367). The attribute's comment: “the corresponding statement (1)(a) for modules does not hold”.
+
+> **Stacks Project, Tag 0DG8, the statement for modules, part (1)(a).** Over `S = Spec ℤ`
+> there are a morphism `f : Y ⟶ X` of algebraic spaces over `S` and an injective `𝒪`-module on
+> the big étale site of `X` whose inverse image `i_f^*` on the spaces-étale site of `Y` is not an
+> injective `𝒪_Y`-module; one can take `f` the identity of `X = S`.
+
+```lean
+theorem exists_injective_not_injective_restrictModulesAlong :
+    ∃ (Y : T.Spaces) (f : Y ⟶ baseSpace T) (I : BigEtaleModules.{u, u + 1} T (baseSpace T)),
+      Injective I ∧ ¬ Injective ((restrictModulesAlong T f).obj I)
+```
+
+**`AlgebraicGeometry.BigEtaleSpaceSite.exists_isKInjective_not_isKInjective_restrictModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean#L393). The attribute's comment: “the corresponding statement (2)(b) for modules does not hold”.
+
+> **Stacks Project, Tag 0DG8, the statement for modules, part (2)(b).** Over `S = Spec ℤ`
+> there is a K-injective complex of `𝒪`-modules on the big étale site of `S` whose restriction to
+> the spaces-étale site of `S` is not a K-injective complex of `𝒪_S`-modules.
+
+```lean
+theorem exists_isKInjective_not_isKInjective_restrictModules :
+    ∃ I : CochainComplex (BigEtaleModules.{u, u + 1} T (baseSpace T)) ℤ, I.IsKInjective ∧
+      ¬ CochainComplex.IsKInjective
+        (((restrictModules.{u, u + 1} T (baseSpace T)).mapHomologicalComplex
+          (ComplexShape.up ℤ)).obj I)
+```
+
+**`AlgebraicGeometry.BigEtaleSpaceSite.exists_isKInjective_not_isKInjective_restrictModulesAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleModuleRestrictionInjective.lean#L408). The attribute's comment: “the corresponding statement (2)(a) for modules does not hold”.
+
+> **Stacks Project, Tag 0DG8, the statement for modules, part (2)(a).** Over `S = Spec ℤ`
+> there are a morphism `f : Y ⟶ X` of algebraic spaces over `S` and a K-injective complex of
+> `𝒪`-modules on the big étale site of `X` whose inverse image `i_f^*` on the spaces-étale site of
+> `Y` is not K-injective; one can take `f` the identity of `X = S`.
+
+```lean
+theorem exists_isKInjective_not_isKInjective_restrictModulesAlong :
+    ∃ (Y : T.Spaces) (f : Y ⟶ baseSpace T)
+      (I : CochainComplex (BigEtaleModules.{u, u + 1} T (baseSpace T)) ℤ), I.IsKInjective ∧
+      ¬ CochainComplex.IsKInjective
+        (((restrictModulesAlong T f).mapHomologicalComplex (ComplexShape.up ℤ)).obj I)
+```
+
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L179). The attribute's comment: “part (1), injectives restrict along i\_f”.
 
 > **Stacks 0DG8, part (1).** The inverse image along `i_f` of an injective abelian sheaf on
 > the big étale site of `X` is an injective abelian sheaf on the spaces-étale site of `Y`.
@@ -128,7 +182,7 @@ theorem injective_smallEtaleRestriction {X Y : T.Spaces} (f : Y ⟶ X)
     Injective ((smallEtaleRestriction T f).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_bigToSmallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L195). The attribute's comment: “part (1), injectives restrict to the small site”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_bigToSmallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L198). The attribute's comment: “part (1), injectives restrict to the small site”.
 
 > **Stacks 0DG8, part (1).** The restriction to the spaces-étale site of `X` of an injective
 > abelian sheaf on the big étale site of `X` is injective.
@@ -139,7 +193,7 @@ theorem injective_bigToSmallEtaleRestriction (X : T.Spaces)
     Injective ((bigToSmallEtaleRestriction T X).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L215). The attribute's comment: “part (2), K-injectivity restricts along i\_f”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L218). The attribute's comment: “part (2), K-injectivity restricts along i\_f”.
 
 > **Stacks 0DG8, part (2).** The inverse image along `i_f` of a K-injective complex of
 > abelian sheaves on the big étale site of `X` is a K-injective complex on the spaces-étale site
@@ -152,7 +206,7 @@ theorem isKInjective_smallEtaleRestriction {X Y : T.Spaces} (f : Y ⟶ X)
       (((smallEtaleRestriction T f).mapHomologicalComplex (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_bigToSmallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L233). The attribute's comment: “part (2), K-injectivity restricts to the small site”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_bigToSmallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L236). The attribute's comment: “part (2), K-injectivity restricts to the small site”.
 
 > **Stacks 0DG8, part (2).** The restriction to the spaces-étale site of `X` of a K-injective
 > complex of abelian sheaves on the big étale site of `X` is K-injective.
@@ -163,7 +217,7 @@ theorem isKInjective_bigToSmallEtaleRestriction (X : T.Spaces)
     ((bigToSmallEtaleRestrictionComplex T X).obj I).IsKInjective
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L103). The attribute's comment: “injective\_restriction”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L106). The attribute's comment: “injective\_restriction”.
 
 > **Stacks Project, Tag 0DG8, part (1)(b).** Restriction of an injective abelian sheaf
 > from the big étale site of `X` to the spaces-étale site of `X` is injective.
@@ -177,7 +231,7 @@ theorem injective_spacesEtaleRestriction (X : T.Spaces)
         (T.bigEtaleTopology X)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L126). The attribute's comment: “injective\_pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L129). The attribute's comment: “injective\_pullback”.
 
 > **Stacks Project, Tag 0DG8, part (1)(a).** Restriction of an injective abelian sheaf
 > from the big étale site of `X` to the spaces-étale site of `Y` along a morphism
@@ -192,7 +246,7 @@ theorem injective_spacesEtaleRestrictionAlong {X Y : T.Spaces} (f : Y ⟶ X)
         (T.bigEtaleTopology X)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L149). The attribute's comment: “kinjective\_restriction”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L152). The attribute's comment: “kinjective\_restriction”.
 
 > **Stacks Project, Tag 0DG8, part (2)(b).** Restriction of a K-injective complex of
 > abelian sheaves from the big étale site of `X` to the spaces-étale site of `X` is
@@ -208,7 +262,7 @@ theorem isKInjective_spacesEtaleRestriction (X : T.Spaces)
         (T.bigEtaleTopology X)).mapHomologicalComplex (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L177). The attribute's comment: “kinjective\_pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L180). The attribute's comment: “kinjective\_pullback”.
 
 > **Stacks Project, Tag 0DG8, part (2)(a).** Restriction of a K-injective complex of
 > abelian sheaves from the big étale site of `X` to the spaces-étale site of `Y` along a
@@ -228,7 +282,7 @@ theorem isKInjective_spacesEtaleRestrictionAlong {X Y : T.Spaces} (f : Y ⟶ X)
 
 [Tag 0DG9](https://stacks.math.columbia.edu/tag/0DG9) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L255). The attribute's comment: “the comparison for sheaves of sets”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L255). The attribute's comment: “the comparison for sheaves of sets”.
 
 > **Stacks 0DG9.** The restriction to the spaces-étale site of `X` of the big étale direct
 > image along `f` is the small étale direct image along `f` of the restriction to the
@@ -240,7 +294,7 @@ def bigSmallEtale_restrictPushforwardIso (f : Y ⟶ X) :
       (bigToSmallEtaleMorphism T Y).pushforward ⋙ (smallEtaleMorphism T f).pushforward
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L263). The attribute's comment: “the comparison for sheaves of modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardModulesIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L263). The attribute's comment: “the comparison for sheaves of modules”.
 
 > **Stacks 0DG9.** For a sheaf of `𝒪`-modules the comparison of the previous isomorphism is
 > an isomorphism of `𝒪_X`-modules on the spaces-étale site of `X`.
@@ -251,7 +305,7 @@ def bigSmallEtale_restrictPushforwardModulesIso (f : Y ⟶ X) :
       restrictModules.{u, m} T Y ⋙ smallEtaleModulePushforward.{u, m} T f
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardModulesIso_hom_app_val_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L275). The attribute's comment: “the comparison for sheaves of modules, on sections”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtale_restrictPushforwardModulesIso_hom_app_val_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L275). The attribute's comment: “the comparison for sheaves of modules, on sections”.
 
 > **Stacks 0DG9.** On sections over an algebraic space étale over `X`, the comparison of
 > sheaves of modules is restriction along the comparison isomorphism of the two cartesian squares
@@ -269,7 +323,7 @@ theorem bigSmallEtale_restrictPushforwardModulesIso_hom_app_val_app (f : Y ⟶ X
 
 [Tag 0DGA](https://stacks.math.columbia.edu/tag/0DGA) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L118). The attribute's comment: “big\_base\_change\_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L118). The attribute's comment: “big\_base\_change\_abelian”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the inverse image along
 > `g_big` of the derived big étale direct image along `f` agrees naturally with the derived big
@@ -290,7 +344,7 @@ def derivedBigEtaleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g : X' �
               (Sheaf (T.bigEtaleTopology Y') Ab.{u + 1}) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L159). The attribute's comment: “small\_base\_change\_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L159). The attribute's comment: “small\_base\_change\_abelian”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the restriction to the
 > spaces-étale site of `X'` of the derived big étale direct image along `f` agrees naturally with
@@ -317,7 +371,7 @@ def derivedSmallEtaleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g : X' 
                   Ab.{u + 1}) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L262). The attribute's comment: “big\_base\_change\_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L262). The attribute's comment: “big\_base\_change\_modules”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the inverse image of
 > sheaves of `𝒪`-modules along `g_big` of the derived big étale direct image along `f` agrees
@@ -339,7 +393,7 @@ def derivedBigEtaleModuleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g :
             (SheafOfModules.{u + 1} ((globalRingSheaf T).over Y')) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L604). The attribute's comment: “small\_base\_change\_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L604). The attribute's comment: “small\_base\_change\_modules”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the restriction to the
 > spaces-étale site of `X'` of the derived big étale direct image of sheaves of `𝒪`-modules along
@@ -356,7 +410,7 @@ def derivedSmallEtaleModuleBaseChangeIso (f : Y ⟶ X) (g : X' ⟶ X) (g' : Y' �
         derivedPushforward.{u + 1} (smallEtaleRingedSiteHom T f')
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean#L292). The attribute's comment: “big\_small\_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean#L292). The attribute's comment: “big\_small\_abelian”.
 
 > **Derived direct image commutes with restriction to the small étale site.** Derived big-site
 > direct image followed by restriction to the small étale site agrees naturally with restriction
@@ -382,7 +436,7 @@ public def derivedBigSmallEtalePushforwardIso :
               Ab.{u + 1}) (ComplexShape.up ℤ)))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtaleModulePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean#L323). The attribute's comment: “big\_small\_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtaleModulePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean#L323). The attribute's comment: “big\_small\_modules”.
 
 > **Stacks Project, Tag 0DGA, part (2).** Derived big étale direct image of sheaves of
 > `𝒪`-modules followed by restriction to the small étale site of `X` agrees naturally with
@@ -398,13 +452,13 @@ def derivedBigSmallEtaleModulePushforwardIso (f : Y ⟶ X) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.Localization.derivedOverPushforwardBaseChangeIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/AbelianSheavesOnALocalizedSite.lean#L682), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean#L34) (StacksFrontier): “big\_base\_change\_abelian”.
+- [`Stacks.Cohomology.Localization.derivedOverPushforwardBaseChangeIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/AbelianSheavesOnALocalizedSite.lean#L682), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean#L34) (StacksFrontier): “big\_base\_change\_abelian”.
 
 ## Tag 0DGB, a lemma
 
 [Tag 0DGB](https://stacks.math.columbia.edu/tag/0DGB) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L176). The attribute's comment: “part (5), big-site cohomology over Y of a big complex”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L176). The attribute's comment: “part (5), big-site cohomology over Y of a big complex”.
 
 > Étale cohomology over `Y` of a complex of abelian sheaves on the big étale site of `X` is
 > the cohomology on the spaces-étale site of `Y` of its restriction along `i_f`: the right-derived
@@ -426,7 +480,7 @@ noncomputable def bigSmallEtaleCohomologyIso :
             (ComplexShape.up ℤ))))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L232). The attribute's comment: “part (5), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L232). The attribute's comment: “part (5), in each degree”.
 
 > In every degree, étale cohomology over `Y` of a complex on the big étale site of `X` agrees
 > with the cohomology on the spaces-étale site of `Y` of its restriction along `i_f`.
@@ -449,7 +503,7 @@ noncomputable def bigSmallEtaleCohomologyIsoAt
               (ComplexShape.up ℤ)))).obj M)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.pulledSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L276). The attribute's comment: “part (3), cohomology of a pullback from the small site”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.pulledSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L276). The attribute's comment: “part (3), cohomology of a pullback from the small site”.
 
 > Étale cohomology over `Y` of a complex pulled back from the spaces-étale site of `X` to the
 > big étale site of `X` is the cohomology on the spaces-étale site of `Y` of its pullback along
@@ -473,7 +527,7 @@ noncomputable def pulledSmallEtaleCohomologyIso :
             (ComplexShape.up ℤ))))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.pulledSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L300). The attribute's comment: “part (3), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.pulledSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L300). The attribute's comment: “part (3), in each degree”.
 
 > In every degree, étale cohomology over `Y` of a complex pulled back from the spaces-étale
 > site of `X` agrees with the cohomology on the spaces-étale site of `Y` of its pullback along
@@ -501,7 +555,7 @@ noncomputable def pulledSmallEtaleCohomologyIsoAt
               (ComplexShape.up ℤ)))).obj K)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.overXSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L382). The attribute's comment: “part (1), cohomology over X of a pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.overXSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L382). The attribute's comment: “part (1), cohomology over X of a pullback”.
 
 > Étale cohomology over `X` of a complex pulled back from the spaces-étale site of `X` to the
 > big étale site of `X` is its cohomology on the spaces-étale site of `X`.
@@ -522,7 +576,7 @@ noncomputable def overXSmallEtaleCohomologyIso :
           (ComplexShape.up ℤ)))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.overXSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L402). The attribute's comment: “part (1), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.overXSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomology.lean#L402). The attribute's comment: “part (1), in each degree”.
 
 > In every degree, étale cohomology over `X` of a complex pulled back from the spaces-étale
 > site of `X` agrees with its small-site cohomology.
@@ -547,7 +601,7 @@ noncomputable def overXSmallEtaleCohomologyIsoAt
             (ComplexShape.up ℤ))).obj K)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.moduleOverXSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean#L250). The attribute's comment: “part (2), cohomology over X of a derived pullback of modules from the small site”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.moduleOverXSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean#L250). The attribute's comment: “part (2), cohomology over X of a derived pullback of modules from the small site”.
 
 > **Stacks 0DGB, part (2).** Étale cohomology over `X` of the derived pullback `Lπ_X^*K` to
 > the big étale site of `X` of a complex of sheaves of `𝒪_X`-modules on the spaces-étale site of
@@ -570,7 +624,7 @@ def moduleOverXSmallEtaleCohomologyIso :
               (ComplexShape.up ℤ))))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.moduleOverXSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean#L272). The attribute's comment: “part (2), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.moduleOverXSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModuleOverX.lean#L272). The attribute's comment: “part (2), in each degree”.
 
 > **Stacks 0DGB, part (2).** In every degree, étale cohomology over `X` of the derived
 > pullback `Lπ_X^*K` of a complex of sheaves of `𝒪_X`-modules on the spaces-étale site of `X`
@@ -596,7 +650,7 @@ def moduleOverXSmallEtaleCohomologyIsoAt
                 (ComplexShape.up ℤ)))).obj K)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.modulePulledSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean#L267). The attribute's comment: “part (4), cohomology over Y of a derived pullback from the small site”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.modulePulledSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean#L267). The attribute's comment: “part (4), cohomology over Y of a derived pullback from the small site”.
 
 > Étale cohomology over `Y` of the derived pullback `Lπ_X^*K` of a complex of sheaves of
 > `𝒪_X`-modules on the spaces-étale site of `X` is naturally isomorphic to the cohomology on the
@@ -620,7 +674,7 @@ noncomputable def modulePulledSmallEtaleCohomologyIso :
               (ComplexShape.up ℤ))))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.modulePulledSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean#L290). The attribute's comment: “part (4), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.modulePulledSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModulePullback.lean#L290). The attribute's comment: “part (4), in each degree”.
 
 > In every degree, étale cohomology over `Y` of the derived
 > pullback `Lπ_X^*K` of a complex of sheaves of `𝒪_X`-modules on the spaces-étale site of `X`
@@ -647,7 +701,7 @@ noncomputable def modulePulledSmallEtaleCohomologyIsoAt
                 (ComplexShape.up ℤ)))).obj K)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.moduleBigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean#L107). The attribute's comment: “part (6), big-site cohomology over Y of a complex of modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.moduleBigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean#L108). The attribute's comment: “part (6), big-site cohomology over Y of a complex of modules”.
 
 > **Stacks 0DGB, part (6).** Étale cohomology over `Y` of a complex of sheaves of
 > `𝒪`-modules on the big étale site of `X` is the cohomology on the spaces-étale site of `Y` of
@@ -671,7 +725,7 @@ noncomputable def moduleBigSmallEtaleCohomologyIso :
             (ComplexShape.up ℤ))))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.moduleBigSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean#L130). The attribute's comment: “part (6), in each degree”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.moduleBigSmallEtaleCohomologyIsoAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleCohomologyModules.lean#L131). The attribute's comment: “part (6), in each degree”.
 
 > **Stacks 0DGB, part (6).** In every degree, étale cohomology over `Y` of a complex of
 > sheaves of `𝒪`-modules on the big étale site of `X` agrees with the cohomology on the
@@ -701,7 +755,7 @@ noncomputable def moduleBigSmallEtaleCohomologyIsoAt
 
 [Tag 0DGC](https://stacks.math.columbia.edu/tag/0DGC) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImage_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L88). The attribute's comment: “the composite is the identity, for sheaves of sets”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_inverseImage_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L88). The attribute's comment: “the composite is the identity, for sheaves of sets”.
 
 > **Stacks 0DGC.** Restricting back to the spaces-étale site of `X` the inverse image of a
 > sheaf of sets along `π_X` returns that sheaf: `π_{X,*} ∘ π_X⁻¹` is the identity functor.
@@ -712,7 +766,7 @@ noncomputable def bigToSmall_inverseImage_comp_pushforwardIso :
       𝟭 (Sheaf (Space.SpacesEtale.topology T.fppfSite S T.fppf_mem X) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_abelianInverseImage_comp_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L110). The attribute's comment: “the composite is the identity, for abelian sheaves”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmall_abelianInverseImage_comp_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L110). The attribute's comment: “the composite is the identity, for abelian sheaves”.
 
 > **Stacks 0DGC.** The same composite identity for abelian sheaves: restricting the abelian
 > inverse image along `π_X` back to the spaces-étale site of `X` returns the sheaf.
@@ -724,7 +778,7 @@ noncomputable def bigToSmall_abelianInverseImage_comp_restrictionIso :
       𝟭 (Sheaf (Space.SpacesEtale.topology T.fppfSite S T.fppf_mem X) Ab.{u + 1})
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isIso_bigToSmallEtaleDerivedAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L144). The attribute's comment: “the derived unit is an isomorphism”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isIso_bigToSmallEtaleDerivedAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleCohomologicalDescent.lean#L144). The attribute's comment: “the derived unit is an isomorphism”.
 
 > **Stacks 0DGC.** For every complex `K` on the spaces-étale site of `X` the canonical map
 > `K ⟶ Rπ_{X,*}π_X⁻¹K` is an isomorphism.
@@ -740,7 +794,7 @@ theorem isIso_bigToSmallEtaleDerivedAdjunction_unit
 
 [Tag 0DGD](https://stacks.math.columbia.edu/tag/0DGD) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtale_pushforward_baseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardBaseChange.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardBaseChange.lean#L114).
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtale_pushforward_baseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardBaseChange.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardBaseChange.lean#L114).
 
 > **Stacks 0DGD.** Let `S` be a scheme and `f : Y ⟶ X` a proper morphism of algebraic spaces
 > over `S` (objects of the big étale site `T` of algebraic spaces over `S`). Write
@@ -780,4 +834,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 84.5, Tag 0DG6](https://stacks.math.columbia.edu/tag/0DG6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

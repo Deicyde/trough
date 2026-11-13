@@ -7,7 +7,7 @@ statement: formalized
 
 # Pattern avoidance in weak ascent sequences
 
-34 results, 17 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html).
+34 results, 17 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html).
 
 ## Number of weak ascents of a word
 
@@ -20,7 +20,7 @@ have no weak ascents.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1 (definition of `wasc`).
 
-Formalized by `MetaMathlibExt.wordWeakAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#word-weak-ascents).
+Formalized by `MetaMathlibExt.wordWeakAscents`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#word-weak-ascents).
 
 ## Weak ascent sequence
 
@@ -33,7 +33,7 @@ that is, of positions $j$ with $u_j \le u_{j+1}$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.IsWeakAscentSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-weak-ascent-seq).
+Formalized by `MetaMathlibExt.IsWeakAscentSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-weak-ascent-seq).
 
 ## Pattern containment in words
 
@@ -46,7 +46,7 @@ only if $p_i < p_j$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.ContainsPattern`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#contains-pattern).
+Formalized by `MetaMathlibExt.ContainsPattern`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#contains-pattern).
 
 ## The thirteen patterns of length three
 
@@ -58,7 +58,7 @@ $201$ and $210$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.lengthThreePatterns`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#length-three-patterns).
+Formalized by `MetaMathlibExt.lengthThreePatterns`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#length-three-patterns).
 
 ## Ascent sequences avoiding a set of patterns
 
@@ -70,7 +70,7 @@ contain no pattern of $P$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.ascentAvoiders`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#ascent-avoiders).
+Formalized by `MetaMathlibExt.ascentAvoiders`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#ascent-avoiders).
 
 ## Weak ascent sequences avoiding a set of patterns
 
@@ -82,7 +82,7 @@ sequences of length $n$ that contain none of the patterns in $P$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.weakAscentAvoiders`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-avoiders).
+Formalized by `MetaMathlibExt.weakAscentAvoiders`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-avoiders).
 
 ## The weak ascent sequence $00203413$
 
@@ -93,7 +93,7 @@ weak ascent sequence.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.isWeakAscentSeq_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-weak-ascent-seq-example).
+Formalized by `MetaMathlibExt.isWeakAscentSeq_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-weak-ascent-seq-example).
 
 ## The word $00203413$ contains $011$
 
@@ -105,7 +105,7 @@ For example, its subsequence $033$ is order-isomorphic to $011$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.containsPattern_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#contains-pattern-example).
+Formalized by `MetaMathlibExt.containsPattern_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#contains-pattern-example).
 
 ## Number of patterns of length three
 
@@ -116,7 +116,7 @@ $\{000, 001, 010, 011, 012, 021, 100, 101, 102, 110, 120, 201, 210\}$, has exact
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.card_lengthThreePatterns`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#card-length-three-patterns).
+Formalized by `MetaMathlibExt.card_lengthThreePatterns`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#card-length-three-patterns).
 
 ## Number of Wilf classes of ascent sequences avoiding four length-3 patterns
 
@@ -131,7 +131,7 @@ $|A_n(P)| = |A_n(Q)|$ for every $n \ge 0$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.ascent_wilf_classes_quadruples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#ascent-wilf-classes-quadruples).
+Stated but not proved: `MetaMathlibExt.ascent_wilf_classes_quadruples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#ascent-wilf-classes-quadruples).
 
 ## WA-Wilf classes of pattern quadruples
 
@@ -146,7 +146,7 @@ that is, there are $228$ or $229$ WA-Wilf equivalence classes of such quadruples
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_classes_quadruples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-classes-quadruples).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_classes_quadruples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-classes-quadruples).
 
 ## Weakly increasing weak ascent sequences: Catalan and Motzkin counts
 
@@ -161,7 +161,7 @@ At $n = 0$ both counts are $1$, from the empty sequence.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_weaklyIncreasing_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-weakly-increasing-card).
+Stated but not proved: `MetaMathlibExt.weakAscent_weaklyIncreasing_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-weakly-increasing-card).
 
 ## Weak ascent Wilf equivalence, class 99
 
@@ -176,7 +176,7 @@ $|\mathrm{WA}_n(\{011, 100, 102, 201\})| = |\mathrm{WA}_n(\{011, 100, 120, 201\}
 - the extracted record drops the `w` marker on `∼`; the weak-ascent reading follows from the class number (the paper has 74 A-classes, and its class table numbered past 74 is the WA table).
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class99` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class99).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class99` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class99).
 
 ## Weak ascent Wilf equivalence and generating function, class 93
 
@@ -193,7 +193,7 @@ $F(x) = \frac{x(2x^2 - 2x + 1)}{(1 - 2x)(1 - x)^2}$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class93` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class93).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class93` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class93).
 
 ## Weak-ascent Wilf equivalence in Class 162
 
@@ -207,7 +207,7 @@ That is, the two sets are WA-Wilf equivalent.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class162` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class162).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class162` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class162).
 
 ## Weak-ascent Wilf equivalence in Class 205
 
@@ -221,7 +221,7 @@ That is, the two sets are WA-Wilf equivalent.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class205` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class205).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class205` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class205).
 
 ## Weak-ascent Wilf equivalence in Class 206
 
@@ -237,7 +237,7 @@ That is, the four sets are WA-Wilf equivalent.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class206` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class206).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class206` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class206).
 
 ## Weak-ascent Wilf equivalence in Class 219
 
@@ -253,7 +253,7 @@ they are $29$ and $30$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class219` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class219).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class219` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class219).
 
 ## Fibonacci closed form of a binomial sum with powers of two
 
@@ -275,7 +275,7 @@ computation confirms the identity for $4 \le n \le 500$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Proposition 3, with the sum of Proposition 2(i).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_two_pow_add_two_pow_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#sum-choose-mul-two-pow-add-two-pow-eq-fi).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_two_pow_add_two_pow_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#sum-choose-mul-two-pow-add-two-pow-eq-fi).
 
 ## Reducible pattern sets (Theorem 3)
 
@@ -310,7 +310,7 @@ its reference [5].
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.reducible_pattern_sets` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#reducible-pattern-sets).
+Stated but not proved: `MetaMathlibExt.reducible_pattern_sets` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#reducible-pattern-sets).
 
 ## Motzkin counts for weak ascent sequences in Class 86
 
@@ -324,7 +324,7 @@ each equal to $M_n + M_{n-2}$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_class86_card_eq_motzkin` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-class86-card-eq-motzkin).
+Stated but not proved: `MetaMathlibExt.weakAscent_class86_card_eq_motzkin` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-class86-card-eq-motzkin).
 
 ## Weak-ascent Wilf equivalence in Class 61
 
@@ -338,7 +338,7 @@ That is, the two sets are WA-Wilf equivalent.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class61` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class61).
+Stated but not proved: `MetaMathlibExt.weakAscent_wilf_class61` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-wilf-class61).
 
 ## Generating function for weak ascent sequences avoiding 101, 102, 110 and 201
 
@@ -358,7 +358,7 @@ cleared.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.weakAscent_class211_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-class211-generating-function).
+Stated but not proved: `MetaMathlibExt.weakAscent_class211_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#weak-ascent-class211-generating-function).
 
 ## Big entry
 
@@ -372,7 +372,7 @@ zero-based index $i = k - 1$, so the index ranges over $1 \le i < n$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3 (definition of big entry).
 
-Formalized by `MetaMathlibExt.IsBigEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry).
+Formalized by `MetaMathlibExt.IsBigEntry`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry).
 
 ## Big entries of $00203413$
 
@@ -383,7 +383,7 @@ the entries $w_3 = 2$ and $w_6 = 4$ are big entries and the entry $w_7 = 1$ is n
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.
 
-Formalized by `MetaMathlibExt.isBigEntry_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry-example).
+Formalized by `MetaMathlibExt.isBigEntry_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry-example).
 
 ## Position of the last descent top
 
@@ -396,7 +396,7 @@ $w_i > w_{i+1}$ (positions counted from $1$), and it is $0$ if $w$ has no descen
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3 (definition of `W_{n,k}`).
 
-Formalized by `MetaMathlibExt.lastDescentTop`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#last-descent-top).
+Formalized by `MetaMathlibExt.lastDescentTop`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#last-descent-top).
 
 ## Examples of the last descent top
 
@@ -408,7 +408,7 @@ descent, has last descent top position $0$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.
 
-Formalized by `MetaMathlibExt.lastDescentTop_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#last-descent-top-example).
+Formalized by `MetaMathlibExt.lastDescentTop_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#last-descent-top-example).
 
 ## The sets $U_{n,j}$
 
@@ -422,7 +422,7 @@ first $n - 2$ entries of $w$ are not all $0$, $w_{n-1} \ne n - 2$, and $w_{n-1} 
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.2 (definition of `U_{n,j}`).
 
-Formalized by `MetaMathlibExt.quadrupleUSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset).
+Formalized by `MetaMathlibExt.quadrupleUSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset).
 
 ## $U_{0,j}$ is empty
 
@@ -432,7 +432,7 @@ For every natural number $j$, the set $U_{0,j}$ is empty.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.2.
 
-Formalized by `MetaMathlibExt.quadrupleUSet_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-zero).
+Formalized by `MetaMathlibExt.quadrupleUSet_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-zero).
 
 ## The sets $V_{n,j}$
 
@@ -446,7 +446,7 @@ $w_{n-1} \ne 0$, and $w_{n-2} = w_{n-1} + j$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.2 (definition of `V_{n,j}`).
 
-Formalized by `MetaMathlibExt.quadrupleVSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-vset).
+Formalized by `MetaMathlibExt.quadrupleVSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-vset).
 
 ## $V_{n,j}$ lies in $W_n$
 
@@ -458,7 +458,7 @@ that avoid each of the patterns $011$, $100$, $201$ and $210$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Section 4.3.2.
 
-Formalized by `MetaMathlibExt.quadrupleVSet_subset`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-vset-subset).
+Formalized by `MetaMathlibExt.quadrupleVSet_subset`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-vset-subset).
 
 ## Successors of big entries in $W_n$
 
@@ -471,7 +471,7 @@ $w_{k+1} < w_k$ and $w_j$ is a big entry for every $j$ with $k + 2 \le j \le n$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.isBigEntry_succ_or_descent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry-succ-or-descent).
+Stated but not proved: `MetaMathlibExt.isBigEntry_succ_or_descent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#is-big-entry-succ-or-descent).
 
 ## Recurrence for $|U_{n,1}|$ and $|V_{n,1}|$ (Lemma 2)
 
@@ -483,7 +483,7 @@ $f_6 = 1$, and $f_n = 5 f_{n-1} - 7 f_{n-2} + 2 f_{n-3}$ for every $n \ge 7$.
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.quadrupleUSet_quadrupleVSet_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-quadruple-vset-recurrence).
+Stated but not proved: `MetaMathlibExt.quadrupleUSet_quadrupleVSet_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-quadruple-vset-recurrence).
 
 ## Sum formulas for $|U_{n,1}|$ and $|V_{n,1}|$ (Proposition 2)
 
@@ -523,7 +523,7 @@ $2^{n-4} - n + 3$ equals $1/2$, while $\sum_{a=2}^{n-4} 2^{a-2} (n - a - 3)$ is 
 
 - David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.quadrupleUSet_quadrupleVSet_card_formulas` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-quadruple-vset-card-formu).
+Stated but not proved: `MetaMathlibExt.quadrupleUSet_quadrupleVSet_card_formulas` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AscentSequenceQuadruplePatternsWanted.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html#quadruple-uset-quadruple-vset-card-formu).
 
 ## Depends on
 
@@ -532,4 +532,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pattern avoidance in weak ascent sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-weak-ascent-sequences)

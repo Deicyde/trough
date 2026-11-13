@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.75 Weightings
 
-Section 37.75 of the Stacks Project, [Tag 0F38](https://stacks.math.columbia.edu/tag/0F38). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.75 of the Stacks Project, [Tag 0F38](https://stacks.math.columbia.edu/tag/0F38). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F39, a lemma
 
 [Tag 0F39](https://stacks.math.columbia.edu/tag/0F39) in the Stacks Project.
 
-**`AlgebraicGeometry.separableDegreeWeightedFiberSum_comp_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/WeightedFibreSum.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/WeightedFibreSum.lean#L392).
+**`AlgebraicGeometry.separableDegreeWeightedFiberSum_comp_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/WeightedFibreSum.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/WeightedFibreSum.lean#L392).
 
 > Weighted fibre sums by separable residue degrees commute with cartesian
 > base change.
@@ -32,7 +32,7 @@ theorem separableDegreeWeightedFiberSum_comp_of_isPullback
 
 [Tag 0F3A](https://stacks.math.columbia.edu/tag/0F3A) in the Stacks Project.
 
-**`AlgebraicGeometry.IsWeighting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean#L56). References: SGA 4 XVII (6.2.4), “condition (*)”.
+**`AlgebraicGeometry.IsWeighting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean#L56). References: SGA 4 XVII (6.2.4), “condition (*)”.
 
 > An integer-valued function `w` on `X` is a weighting of `f : X ⟶ Y` if its
 > separable-degree weighted fibre sum is locally constant on every finite open
@@ -46,7 +46,7 @@ def IsWeighting {X Y : Scheme.{u}} (f : X ⟶ Y) (w : X → ℤ) : Prop
 
 [Tag 0F3B](https://stacks.math.columbia.edu/tag/0F3B) in the Stacks Project.
 
-**`AlgebraicGeometry.IsWeighting.comp_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/BaseChange.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/BaseChange.lean#L619). References: SGA 4 XVII (6.2.4), “base change”.
+**`AlgebraicGeometry.IsWeighting.comp_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/BaseChange.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/BaseChange.lean#L619). References: SGA 4 XVII (6.2.4), “base change”.
 
 > A weighting pulls back to a weighting along an arbitrary base change.
 
@@ -62,7 +62,7 @@ theorem IsWeighting.comp_of_isPullback {X Y X' Y' : Scheme.{u}}
 
 [Tag 0GK8](https://stacks.math.columbia.edu/tag/0GK8) in the Stacks Project.
 
-**`AlgebraicGeometry.IsWeighting.comp_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean#L79).
+**`AlgebraicGeometry.IsWeighting.comp_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/Weighting.lean#L79).
 
 > The restriction of a weighting to an open subscheme of the source is a
 > weighting of the restricted morphism.
@@ -77,7 +77,7 @@ theorem IsWeighting.comp_isOpenImmersion {X' X Y : Scheme.{u}}
 
 [Tag 0GK9](https://stacks.math.columbia.edu/tag/0GK9) in the Stacks Project.
 
-**`AlgebraicGeometry.IsWeighting.mul_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Composition.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Composition.lean#L827). References: SGA 4 XVII (6.2.4), “composite”.
+**`AlgebraicGeometry.IsWeighting.mul_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Composition.lean, line 827](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Composition.lean#L827). References: SGA 4 XVII (6.2.4), “composite”.
 
 > The pointwise product of a weighting of `f` and the pullback of a weighting
 > of `g` is a weighting of `f ≫ g`.
@@ -97,7 +97,7 @@ theorem IsWeighting.mul_comp {X Y Z : Scheme.{u}}
 
 [Tag 0F3C](https://stacks.math.columbia.edu/tag/0F3C) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyOpen_of_positive_weighting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/UniversallyOpen.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/UniversallyOpen.lean#L126).
+**`AlgebraicGeometry.universallyOpen_of_positive_weighting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/UniversallyOpen.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/UniversallyOpen.lean#L126).
 
 > **Stacks Project, Tag 0F3C.** A locally quasi-finite morphism carrying an everywhere
 > positive weighting is universally open.
@@ -113,7 +113,7 @@ theorem universallyOpen_of_positive_weighting {X Y : Scheme.{u}}
 
 [Tag 0F3D](https://stacks.math.columbia.edu/tag/0F3D) in the Stacks Project.
 
-**`AlgebraicGeometry.flatQuasiFiniteWeight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L959). The attribute's comment: “the formula”.
+**`AlgebraicGeometry.flatQuasiFiniteWeight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L960). The attribute's comment: “the formula”.
 
 > The local-fibre length times the inseparable degree of the residue-field
 > extension at a point of a scheme morphism.
@@ -122,7 +122,7 @@ theorem universallyOpen_of_positive_weighting {X Y : Scheme.{u}}
 noncomputable def flatQuasiFiniteWeight {X Y : Scheme.{u}} (f : X ⟶ Y) : X → ℤ
 ```
 
-**`AlgebraicGeometry.flatQuasiFiniteWeight_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L1069). The attribute's comment: “positivity”.
+**`AlgebraicGeometry.flatQuasiFiniteWeight_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 1070](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L1070). The attribute's comment: “positivity”.
 
 > The canonical local-fibre weighting is strictly positive.
 
@@ -132,7 +132,7 @@ theorem flatQuasiFiniteWeight_pos {X Y : Scheme.{u}} (f : X ⟶ Y)
     (x : X) : 0 < flatQuasiFiniteWeight f x
 ```
 
-**`AlgebraicGeometry.flatQuasiFiniteWeight_isWeighting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L1096). The attribute's comment: “weighting”.
+**`AlgebraicGeometry.flatQuasiFiniteWeight_isWeighting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean, line 1097](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLength.lean#L1097). The attribute's comment: “weighting”.
 
 > The canonical local-fibre function is a weighting.
 
@@ -142,7 +142,7 @@ theorem flatQuasiFiniteWeight_isWeighting {X Y : Scheme.{u}} (f : X ⟶ Y)
     IsWeighting f (flatQuasiFiniteWeight f)
 ```
 
-**`AlgebraicGeometry.flatQuasiFiniteWeight_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLengthBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLengthBaseChange.lean#L203). The attribute's comment: “base-change invariance of the function of the formula”.
+**`AlgebraicGeometry.flatQuasiFiniteWeight_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLengthBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FlatLengthBaseChange.lean#L203). The attribute's comment: “base-change invariance of the function of the formula”.
 
 > **Stacks Project, Example 0GKI, final claim.** Let `f : X ⟶ Y` be flat, locally quasi-finite
 > and locally of finite presentation and let `f' : X' ⟶ Y'` be a base change of `f` along
@@ -167,7 +167,7 @@ theorem flatQuasiFiniteWeight_of_isPullback {X Y X' Y' : Scheme.{u}} (f : X ⟶ 
 
 [Tag 0F3E](https://stacks.math.columbia.edu/tag/0F3E) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_weighting_genericSeparableDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/GenericSeparableDegree/Weighting.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/GenericSeparableDegree/Weighting.lean#L437). References: SGA 4 XVII (6.2.6), “n(x) is a weighting”.
+**`AlgebraicGeometry.exists_weighting_genericSeparableDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/GenericSeparableDegree/Weighting.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/GenericSeparableDegree/Weighting.lean#L441). References: SGA 4 XVII (6.2.6), “n(x) is a weighting”.
 
 > **The generic-separable-degree weighting.** For `f : X ⟶ Y` locally quasi-finite and locally of
 > finite type over a geometrically unibranch locally Noetherian scheme `Y`, there is a weighting
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.75, Tag 0F38](https://stacks.math.columbia.edu/tag/0F38)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

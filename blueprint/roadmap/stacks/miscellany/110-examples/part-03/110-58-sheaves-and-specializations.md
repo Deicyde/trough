@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.58 Sheaves and specializations
 
-Section 110.58 of the Stacks Project, [Tag 05LD](https://stacks.math.columbia.edu/tag/05LD). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.58 of the Stacks Project, [Tag 05LD](https://stacks.math.columbia.edu/tag/05LD). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05LE, a lemma
 
 [Tag 05LE](https://stacks.math.columbia.edu/tag/05LE) in the Stacks Project.
 
-**`Stacks.Examples.DimensionSheaf.exists_sheaf_detecting_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sheaves/DimensionDetectingEtaleSheaf.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Sheaves/DimensionDetectingEtaleSheaf.lean#L1005).
+**`Stacks.Examples.DimensionSheaf.exists_sheaf_detecting_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sheaves/DimensionDetectingEtaleSheaf.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sheaves/DimensionDetectingEtaleSheaf.lean#L1005).
 
 > **Stacks 05LE.** For every big étale site and every natural number `n` there is a sheaf of
 > abelian groups `G` on it whose sections over `X` are zero when `\dim(X) < n`, are nonzero when
@@ -39,4 +39,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.58, Tag 05LD](https://stacks.math.columbia.edu/tag/05LD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

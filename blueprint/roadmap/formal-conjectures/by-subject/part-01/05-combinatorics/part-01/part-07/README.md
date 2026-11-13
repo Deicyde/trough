@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 312 to Erdős Problem 447
+# Erdős Problem 307 to Erdős Problem 435
 
+- [Erdős Problem 307](../../../../../erdos-problems/300-399/part-01/erdos-problem-307.md)
 - [Erdős Problem 312](../../../../../erdos-problems/300-399/part-01/erdos-problem-312.md)
 - [Erdős Problem 316](../../../../../erdos-problems/300-399/part-01/erdos-problem-316.md)
 - [Erdős Problem 319](../../../../../erdos-problems/300-399/part-01/erdos-problem-319.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Erdős Problem 425](../../../../../erdos-problems/400-499/part-02/erdos-problem-425.md)
 - [Erdős Problem 426](../../../../../erdos-problems/400-499/part-02/erdos-problem-426.md)
 - [Erdős Problem 435](../../../../../erdos-problems/400-499/part-02/erdos-problem-435.md)
-- [Erdős Problem 447](../../../../../erdos-problems/400-499/part-03/erdos-problem-447.md)

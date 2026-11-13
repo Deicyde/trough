@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.39 Inverse systems and cohomology, III
 
-Section 20.39 of the Stacks Project, [Tag 0H3B](https://stacks.math.columbia.edu/tag/0H3B). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.39 of the Stacks Project, [Tag 0H3B](https://stacks.math.columbia.edu/tag/0H3B). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H3C, a lemma
 
 [Tag 0H3C](https://stacks.math.columbia.edu/tag/0H3C) in the Stacks Project.
 
-**`Stacks.Cohomology.PrincipalFormalFunctions.formalFunctionsDiagram_principalKoszulTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L749). The attribute's comment: “the whole diagram, with its maps the ones induced by E ⟶ E\_n, the boundaries of E ⟶ E ⟶ E\_n ⟶ E[1], the projections E^ ⟶ E\_n and the triangle of E^, the sequences of Stacks 0BKG and 0H32 read through RΓ(X, E^) ≅ RΓ(X, E)^∧ (compatible with the maps to RΓ(X, E\_n)); exactness of rows and columns and the three commutativities”.
+**`Stacks.Cohomology.PrincipalFormalFunctions.formalFunctionsDiagram_principalKoszulTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L749). The attribute's comment: “the whole diagram, with its maps the ones induced by E ⟶ E\_n, the boundaries of E ⟶ E ⟶ E\_n ⟶ E[1], the projections E^ ⟶ E\_n and the triangle of E^, the sequences of Stacks 0BKG and 0H32 read through RΓ(X, E^) ≅ RΓ(X, E)^∧ (compatible with the maps to RΓ(X, E\_n)); exactness of rows and columns and the three commutativities”.
 
 > **Formal functions for a principal ideal on a ringed space: [Stacks, Tag 0H3C].** Let
 > `(X, 𝒪_X)` be a ringed space, let `ρ : A ⟶ Γ(X, 𝒪_X)` be a homomorphism from a commutative ring
@@ -157,7 +157,7 @@ theorem formalFunctionsDiagram_principalKoszulTower
 
 [Tag 0H3D](https://stacks.math.columbia.edu/tag/0H3D) in the Stacks Project.
 
-**`proIso_Ksys_Csys`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/ProIsomorphismOfKernelSystems.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/ProIsomorphismOfKernelSystems.lean#L640).
+**`proIso_Ksys_Csys`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/ProIsomorphismOfKernelSystems.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/ProIsomorphismOfKernelSystems.lean#L640).
 
 > If `M[f^n]` stabilizes, then the inverse systems `(K_n)` and `(C_n)` are pro-isomorphic in
 > `D(A)`.
@@ -171,7 +171,7 @@ theorem proIso_Ksys_Csys {M : C} (f : M ⟶ M) [HasDerivedCategory C] (hf : Stab
 
 [Tag 0H3E](https://stacks.math.columbia.edu/tag/0H3E) in the Stacks Project.
 
-**`Stacks.Cohomology.PrincipalFormalFunctions.nonempty_iso_derivedSections_quotientTower_derivedCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 1180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L1180). The attribute's comment: “the identification RΓ(X, ℱ^) = RΓ(X, ℱ)^∧ and the resulting Hᵖ(X, ℱ^) = Hᵖ(RΓ(X, ℱ)^∧), on a ringed space, with derived f-adic completion presented as in Stacks 0BKG by an arbitrary left adjoint to the inclusion of the derived-complete objects; also derived completeness of RΓ(X, ℱ^)”.
+**`Stacks.Cohomology.PrincipalFormalFunctions.nonempty_iso_derivedSections_quotientTower_derivedCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 1180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L1180). The attribute's comment: “the identification RΓ(X, ℱ^) = RΓ(X, ℱ)^∧ and the resulting Hᵖ(X, ℱ^) = Hᵖ(RΓ(X, ℱ)^∧), on a ringed space, with derived f-adic completion presented as in Stacks 0BKG by an arbitrary left adjoint to the inclusion of the derived-complete objects; also derived completeness of RΓ(X, ℱ^)”.
 
 > **Clause (7) of [Stacks, Tag 0H3E]: `RΓ(X, ℱ^) = RΓ(X, ℱ)^∧` on a ringed space.** Let
 > `(X, 𝒪_X)` be a ringed space, let `ρ : A ⟶ Γ(X, 𝒪_X)` be a homomorphism from a commutative ring
@@ -212,7 +212,7 @@ theorem nonempty_iso_derivedSections_quotientTower_derivedCompletion
               (completed.obj ((derivedSectionsOver X ρ).obj sglF)))
 ```
 
-**`Stacks.Cohomology.PrincipalFormalFunctions.exists_formalFunctionsDiagram_quotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L1248). The attribute's comment: “the whole diagram for the quotient tower ℱ/fⁿℱ: the top row, the middle row, the left column, the middle column, the bottom isomorphism, the three commutativities, and the identification RΓ(X, ℱ^) = RΓ(X, ℱ)^∧; derived f-adic completion presented as in Stacks 0BKG by an arbitrary left adjoint to the inclusion of the derived-complete objects”.
+**`Stacks.Cohomology.PrincipalFormalFunctions.exists_formalFunctionsDiagram_quotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalFunctionsDiagram.lean#L1248). The attribute's comment: “the whole diagram for the quotient tower ℱ/fⁿℱ: the top row, the middle row, the left column, the middle column, the bottom isomorphism, the three commutativities, and the identification RΓ(X, ℱ^) = RΓ(X, ℱ)^∧; derived f-adic completion presented as in Stacks 0BKG by an arbitrary left adjoint to the inclusion of the derived-complete objects”.
 
 > **Formal functions for a principal ideal along the quotient tower: the whole diagram of
 > [Stacks, Tag 0H3E].** Let `(X, 𝒪_X)` be a ringed space, let `ρ : A ⟶ Γ(X, 𝒪_X)` be a homomorphism
@@ -295,7 +295,7 @@ theorem exists_formalFunctionsDiagram_quotientTower
           Nonempty ((derivedSectionsOver X ρ).obj Fhat ≅ completed.obj K)
 ```
 
-**`Stacks.Cohomology.QuotientTowerFormalFunctions.exists_shortExact_homology_derivedSections_quotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/QuotientTowerFormalFunctions.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/QuotientTowerFormalFunctions.lean#L351). The attribute's comment: “the middle column of the diagram, transported to the quotient tower ℱ/fⁿℱ by the pro-isomorphism of Tag 0H3D; its two maps normalized by the Milnor triangle of the quotient tower itself”.
+**`Stacks.Cohomology.QuotientTowerFormalFunctions.exists_shortExact_homology_derivedSections_quotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/QuotientTowerFormalFunctions.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InverseSystems/QuotientTowerFormalFunctions.lean#L354). The attribute's comment: “the middle column of the diagram, transported to the quotient tower ℱ/fⁿℱ by the pro-isomorphism of Tag 0H3D; its two maps normalized by the Milnor triangle of the quotient tower itself”.
 
 > **Formal functions for a principal ideal along the quotient tower: the middle column.**
 > Let `(X, 𝒪_X)` be a ringed space, let `ρ : A ⟶ Γ(X, 𝒪_X)` be a homomorphism from a commutative
@@ -312,7 +312,8 @@ theorem exists_formalFunctionsDiagram_quotientTower
 
 ```lean
 theorem exists_shortExact_homology_derivedSections_quotientTower (f : A)
-    (ℱ : SheafOfModules.{u} (structureSheafRing X)) (hstab : Stabilizes ((baseSmul X ρ f).asHom.app ℱ))
+    (ℱ : SheafOfModules.{u} (structureSheafRing X))
+    (hstab : Stabilizes ((baseSmul X ρ f).asHom.app ℱ))
     (Fhat Ehat : DerivedCategory (SheafOfModules.{u} (structureSheafRing X)))
     (hFhat : IsDerivedLimit (Csys ((baseSmul X ρ f).asHom.app ℱ)) Fhat)
     (hEhat : IsDerivedLimit (Ksys ((baseSmul X ρ f).asHom.app ℱ)) Ehat) :
@@ -361,4 +362,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.39, Tag 0H3B](https://stacks.math.columbia.edu/tag/0H3B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

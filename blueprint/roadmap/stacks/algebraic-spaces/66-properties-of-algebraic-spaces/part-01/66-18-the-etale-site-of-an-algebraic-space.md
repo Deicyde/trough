@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.18 The étale site of an algebraic space
 
-Section 66.18 of the Stacks Project, [Tag 03EB](https://stacks.math.columbia.edu/tag/03EB). 15 tags here are carried by 81 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.18 of the Stacks Project, [Tag 03EB](https://stacks.math.columbia.edu/tag/03EB). 15 tags here are carried by 81 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03ED, a definition
 
 [Tag 03ED](https://stacks.math.columbia.edu/tag/03ED) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean#L119). The attribute's comment: “objects and morphisms”. References: SGA 4½ Arcata (2.1.4), “étale X-schemes”.
+**`AlgebraicGeometry.Space.SmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean#L119). The attribute's comment: “objects and morphisms”. References: SGA 4½ Arcata (2.1.4), “étale X-schemes”.
 
 > **Stacks 03ED, parts (1) and (2).** The *small étale site* of a presheaf `F` on the big
 > fppf site of `S`, as a category: its objects are the étale charts of `F`, and its morphisms
@@ -24,7 +24,7 @@ Section 66.18 of the Stacks Project, [Tag 03EB](https://stacks.math.columbia.edu
 abbrev SmallEtale
 ```
 
-**`AlgebraicGeometry.Space.SmallEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean#L139). The attribute's comment: “coverings”. References: SGA 4½ Arcata (2.1.4), “étale topology”.
+**`AlgebraicGeometry.Space.SmallEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSite.lean#L139). The attribute's comment: “coverings”. References: SGA 4½ Arcata (2.1.4), “étale topology”.
 
 > **Stacks 03ED, part (3).** A family of étale charts of `F` is a covering family exactly
 > when its family of underlying objects of `Sch_κ` is a chosen étale covering family of the
@@ -38,7 +38,7 @@ abbrev IsCovering (E : Covering (SmallEtale B S hS F)) : Prop
 
 [Tag 03G0](https://stacks.math.columbia.edu/tag/03G0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.essentiallySmall_spacesEtale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleEssentiallySmall.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleEssentiallySmall.lean#L243). The attribute's comment: “the set-theoretic condition: the site is essentially small”.
+**`AlgebraicGeometry.Space.essentiallySmall_spacesEtale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleEssentiallySmall.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleEssentiallySmall.lean#L243). The attribute's comment: “the set-theoretic condition: the site is essentially small”.
 
 > **Stacks 03G0.** The spaces-étale site of an algebraic space is essentially small at the
 > universe of the schemes, even though its objects live in `Type (u + 1)`.
@@ -52,7 +52,7 @@ instance essentiallySmall_spacesEtale (X : AlgebraicSpaces B S hS) :
     EssentiallySmall.{u} (SpacesEtale B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L81). The attribute's comment: “objects and morphisms”.
+**`AlgebraicGeometry.Space.SpacesEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L81). The attribute's comment: “objects and morphisms”.
 
 > **Stacks 03G0.** The spaces-étale site of `X`: the category of algebraic spaces étale over
 > `X`, with the commutative triangles over `X` as morphisms.
@@ -61,7 +61,7 @@ instance essentiallySmall_spacesEtale (X : AlgebraicSpaces B S hS) :
 abbrev SpacesEtale
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L118). The attribute's comment: “coverings”.
+**`AlgebraicGeometry.Space.SpacesEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L118). The attribute's comment: “coverings”.
 
 > **Stacks 03G0.** A family in the spaces-étale site of `X` covers when every point of its
 > target lifts to a point of some member of the family.
@@ -70,7 +70,7 @@ abbrev SpacesEtale
 abbrev IsCovering (E : Covering (SpacesEtale B S hS X)) : Prop
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.isSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L145). The attribute's comment: “site axioms”.
+**`AlgebraicGeometry.Space.SpacesEtale.isSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleSite.lean#L145). The attribute's comment: “site axioms”.
 
 > **Stacks 03G0.** Joint surjectivity on points of families in the spaces-étale site of `X`
 > satisfies the site axioms.
@@ -83,7 +83,7 @@ theorem isSite : IsSite (IsCovering B S hS X)
 
 [Tag 03G1](https://stacks.math.columbia.edu/tag/03G1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L154). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.Space.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L154). The attribute's comment: “the functor”.
 
 > **Stacks 03G1.** The canonical inclusion of the small étale site of `X` into its
 > spaces-étale site: an étale scheme chart of `X` is an algebraic space étale over `X`.
@@ -92,7 +92,7 @@ theorem isSite : IsSite (IsCovering B S hS X)
 def comparisonFunctor : SmallEtale B S hS X.1 ⥤ SpacesEtale B S hS X
 ```
 
-**`AlgebraicGeometry.Space.comparisonFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L162). The attribute's comment: “canonical action on objects”.
+**`AlgebraicGeometry.Space.comparisonFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L162). The attribute's comment: “canonical action on objects”.
 
 > **Stacks 03G1.** The comparison sends a scheme chart to its Yoneda algebraic space over
 > `X`.
@@ -102,7 +102,7 @@ theorem comparisonFunctor_obj (U : SmallEtale B S hS X.1) :
     ((comparisonFunctor B S hS X).obj U).1 = chartOver B S hS X U
 ```
 
-**`AlgebraicGeometry.Space.comparisonFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L167). The attribute's comment: “canonical action on arrows”.
+**`AlgebraicGeometry.Space.comparisonFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L167). The attribute's comment: “canonical action on arrows”.
 
 > **Stacks 03G1.** The comparison sends a chart morphism to its Yoneda morphism.
 
@@ -112,7 +112,7 @@ theorem comparisonFunctor_map {U V : SmallEtale B S hS X.1} (f : U ⟶ V) :
       (yoneda.map ((SmallEtale.toOver B S hS X.1).map f))
 ```
 
-**`AlgebraicGeometry.Space.comparisonFunctor_specialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L634). The attribute's comment: “special cocontinuity”.
+**`AlgebraicGeometry.Space.comparisonFunctor_specialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L634). The attribute's comment: “special cocontinuity”.
 
 > **Stacks 03G1.** The comparison functor is special cocontinuous in the sense of Stacks
 > 03CG.
@@ -123,7 +123,7 @@ theorem comparisonFunctor_specialCocontinuous :
       (comparisonFunctor B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.comparisonFunctor_sheafEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L654). The attribute's comment: “equivalence of topoi”.
+**`AlgebraicGeometry.Space.comparisonFunctor_sheafEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L654). The attribute's comment: “equivalence of topoi”.
 
 > **Stacks 03G1.** Restriction along the comparison functor is an equivalence of sheaf
 > categories, for sheaves valued in any category with the limits needed to define the
@@ -141,7 +141,7 @@ instance comparisonFunctor_sheafEquivalence (A : Type w) [Category.{w'} A]
 
 [Tag 03H7](https://stacks.math.columbia.edu/tag/03H7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etaleChart_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L96). The attribute's comment: “the one-element covering by a scheme”.
+**`AlgebraicGeometry.Space.exists_etaleChart_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L96). The attribute's comment: “the one-element covering by a scheme”.
 
 > Let `U` be an algebraic space étale over `X`. There is an étale scheme chart `V` of `X`
 > and a morphism `V → U` of the spaces-étale site which is étale and surjective, and the
@@ -155,7 +155,7 @@ theorem exists_etaleChart_singleton_covering (U : SpacesEtale B S hS X) :
       SpacesEtale.IsCovering B S hS X ⟨U, PreZeroHypercover.singleton.{u + 1} f⟩
 ```
 
-**`AlgebraicGeometry.Space.exists_etaleChart_isPullback_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L148). The attribute's comment: “the fibre product is a scheme”.
+**`AlgebraicGeometry.Space.exists_etaleChart_isPullback_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L148). The attribute's comment: “the fibre product is a scheme”.
 
 > Let `U` be an algebraic space étale over `X`, let `V` be an étale scheme chart of `X` and
 > let `f : V → U` be a morphism of the spaces-étale site. Then there is an étale scheme chart `W`
@@ -170,7 +170,7 @@ theorem exists_etaleChart_isPullback_self (U : SpacesEtale B S hS X)
         ((comparisonFunctor B S hS X).map q) f f
 ```
 
-**`AlgebraicGeometry.Space.exists_isLimit_fork_of_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L227). The attribute's comment: “the equalizer diagram”.
+**`AlgebraicGeometry.Space.exists_isLimit_fork_of_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafConditionOneElement.lean#L227). The attribute's comment: “the equalizer diagram”.
 
 > Let `X` be an algebraic space over `S`, let `P` be a sheaf on the spaces-étale site of
 > `X`, and write `F = (comparisonFunctor).op ⋙ P` for its restriction to the small étale site of
@@ -199,7 +199,7 @@ theorem exists_isLimit_fork_of_isSheaf (P : (SpacesEtale B S hS X)ᵒᵖ ⥤ A)
       Nonempty (IsLimit (Fork.ofι (P.map f.op) w))
 ```
 
-**`AlgebraicGeometry.Space.exists_scheme_chart_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L521). The attribute's comment: “a scheme chart covering the étale space”.
+**`AlgebraicGeometry.Space.exists_scheme_chart_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleComparison.lean#L521). The attribute's comment: “a scheme chart covering the étale space”.
 
 > **Stacks 03H7.** Every algebraic space étale over `X` is covered, in the spaces-étale site
 > of `X`, by a single étale *scheme* chart of `X`, namely a chosen atlas of it composed with its
@@ -211,7 +211,7 @@ theorem exists_scheme_chart_cover (U : SpacesEtale B S hS X) :
       Sieve.generate (Presieve.singleton f) ∈ SpacesEtale.topology B S hS X U
 ```
 
-**`AlgebraicGeometry.Space.exists_smallEtaleDirectImageChartEqualizerEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean#L341). The attribute's comment: “the equalizer diagram, for the direct image on the small etale sites: the sections of f\_\{small,*}P over an etale scheme chart V of Y are the equalizer of the sections of P over an etale scheme chart W covering X x\_Y V and over a chart W' presenting the self-fibre product of W over X x\_Y V”.
+**`AlgebraicGeometry.Space.exists_smallEtaleDirectImageChartEqualizerEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean#L341). The attribute's comment: “the equalizer diagram, for the direct image on the small etale sites: the sections of f\_\{small,*}P over an etale scheme chart V of Y are the equalizer of the sections of P over an etale scheme chart W covering X x\_Y V and over a chart W' presenting the self-fibre product of W over X x\_Y V”.
 
 > **Tag 03H7 for the direct image on the small étale sites.**  Let `f : X ⟶ Y` be a morphism
 > of algebraic spaces, let `P` be a sheaf of sets on the small étale site of `X`, and let `V` be
@@ -231,7 +231,7 @@ theorem exists_smallEtaleDirectImageChartEqualizerEquiv (f : X ⟶ Y)
         {y : P.obj.obj (op W) // P.obj.map a.op y = P.obj.map b.op y})
 ```
 
-**`AlgebraicGeometry.Space.exists_scheme_chart_self_intersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean#L61). The attribute's comment: “the scheme self-intersection”.
+**`AlgebraicGeometry.Space.exists_scheme_chart_self_intersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean#L61). The attribute's comment: “the scheme self-intersection”.
 
 > The self-intersection of a scheme chart over an object of the spaces-étale site of `X` is
 > again an étale scheme chart of `X`, with its canonical pullback projections.
@@ -244,7 +244,7 @@ theorem exists_scheme_chart_self_intersection {U : SpacesEtale B S hS X}
       IsPullback p q f f
 ```
 
-**`AlgebraicGeometry.Space.sections_equalizer_of_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean#L129). The attribute's comment: “the equalizer diagram”.
+**`AlgebraicGeometry.Space.sections_equalizer_of_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSchemeChart.lean#L129). The attribute's comment: “the equalizer diagram”.
 
 > The sections of a sheaf on the spaces-étale site of `X` over an object `U` are the equalizer
 > of the two restriction maps from a scheme chart covering `U` to the scheme self-intersection of
@@ -265,7 +265,7 @@ theorem sections_equalizer_of_scheme_chart {U : SpacesEtale B S hS X}
 
 [Tag 0H01](https://stacks.math.columbia.edu/tag/0H01) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.AffineEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean#L57). The attribute's comment: “objects and morphisms”.
+**`AlgebraicGeometry.Space.AffineEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean#L57). The attribute's comment: “objects and morphisms”.
 
 > The *affine étale site* of a presheaf `F` on the big fppf site of `S`, as a category: its
 > objects are the étale charts of `F` with affine source, and its morphisms are the morphisms of
@@ -275,7 +275,7 @@ theorem sections_equalizer_of_scheme_chart {U : SpacesEtale B S hS X}
 abbrev AffineEtale
 ```
 
-**`AlgebraicGeometry.Space.AffineEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean#L85). The attribute's comment: “coverings”.
+**`AlgebraicGeometry.Space.AffineEtale.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleSite.lean#L85). The attribute's comment: “coverings”.
 
 > A family of affine étale charts of `F` is a covering family exactly when it is a covering
 > family of the small étale site and its index type is finite.
@@ -288,7 +288,7 @@ abbrev IsCovering (E : Covering (AffineEtale B S hS F)) : Prop
 
 [Tag 04JS](https://stacks.math.columbia.edu/tag/04JS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.AffineEtale.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDenseSubsite.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDenseSubsite.lean#L476).
+**`AlgebraicGeometry.Space.AffineEtale.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDenseSubsite.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDenseSubsite.lean#L476).
 
 > The inclusion of the affine étale charts of an algebraic space into all its étale charts is
 > a special cocontinuous functor; in particular it is a dense subsite inclusion, and so induces an
@@ -309,7 +309,7 @@ theorem AffineEtale.inclusion_isSpecialCocontinuous
 
 [Tag 04JT](https://stacks.math.columbia.edu/tag/04JT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopos.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopos.lean#L48).
+**`AlgebraicGeometry.Space.smallEtaleTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopos.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopos.lean#L48).
 
 > **Stacks 04JT.** The category of sheaves of sets on the small étale site of a presheaf
 > `F` on the big fppf site of `S`; for an algebraic space, its small étale topos.
@@ -323,7 +323,7 @@ abbrev smallEtaleTopos (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S
 
 [Tag 03G2](https://stacks.math.columbia.edu/tag/03G2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_chartDiagram_ofArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean#L174). The attribute's comment: “affine chart diagrams are cofinal: covering family”.
+**`AlgebraicGeometry.Space.exists_affine_chartDiagram_ofArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean#L174). The attribute's comment: “affine chart diagrams are cofinal: covering family”.
 
 > **Stacks 03G2: the affine chart diagrams over `f` are cofinal.**  Every étale scheme chart
 > `U` of `X` carries a covering family of affine étale charts of `X`, each of which is the chart of
@@ -341,7 +341,7 @@ theorem exists_affine_chartDiagram_ofArrows (f : X ⟶ Y) (U : SmallEtale B S hS
       Sieve.ofArrows W a ∈ SmallEtale.topology B S hS X.1 U
 ```
 
-**`AlgebraicGeometry.Space.generate_affineChartDiagram_mem_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean#L257). The attribute's comment: “affine chart diagrams are cofinal: covering sieve”.
+**`AlgebraicGeometry.Space.generate_affineChartDiagram_mem_topology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineChartDiagramCofinal.lean#L257). The attribute's comment: “affine chart diagrams are cofinal: covering sieve”.
 
 > **Stacks 03G2: the affine chart diagrams over `f` are cofinal, in sieve form.**  The affine
 > étale charts of `X` which are the chart of `X` of a commuting square of étale scheme charts over
@@ -361,7 +361,7 @@ theorem generate_affineChartDiagram_mem_topology (f : X ⟶ Y)
           Q d.V) ∈ SmallEtale.topology B S hS X.1 U
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp_abelianInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L258). The attribute's comment: “part (3), inverse-image composition at abelian coefficients”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp_abelianInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L258). The attribute's comment: “part (3), inverse-image composition at abelian coefficients”.
 
 > **Stacks 03G2, part (3), inverse-image composition, at abelian coefficients:**
 > `(f ≫ g)⁻¹ ≅ g⁻¹ ⋙ f⁻¹` for the inverse image of *abelian* sheaves along the morphisms of small
@@ -377,7 +377,7 @@ def smallToposMorphism_comp_abelianInverseImage (f : X ⟶ Y) (g : Y ⟶ Z) :
         Sites.abelianInverseImage (smallToposMorphism B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L162). The attribute's comment: “part (4), base change on scheme charts”.
+**`AlgebraicGeometry.Space.smallBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L162). The attribute's comment: “part (4), base change on scheme charts”.
 
 > For a morphism `f` whose underlying morphism of presheaves is representable, base change along
 > `f` of étale scheme charts of `Y`, as a functor to étale scheme charts of `X`.
@@ -388,7 +388,7 @@ noncomputable def smallBaseChange {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y)
     SmallEtale B S hS Y.1 ⥤ SmallEtale B S hS X.1
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L187). The attribute's comment: “part (4), projection of pulled-back scheme charts”.
+**`AlgebraicGeometry.Space.smallBaseChange_projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L187). The attribute's comment: “part (4), projection of pulled-back scheme charts”.
 
 > The cartesian projection from a pulled-back scheme chart to the original chart, viewed as a
 > morphism of algebraic spaces.
@@ -401,7 +401,7 @@ noncomputable def smallBaseChange_projection {X Y : AlgebraicSpaces B S hS} (f :
       comparisonFunctor B S hS Y ⋙ SpacesEtale.toSpaces B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L204). The attribute's comment: “part (4), cartesian scheme-chart base change”.
+**`AlgebraicGeometry.Space.smallBaseChange_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L204). The attribute's comment: “part (4), cartesian scheme-chart base change”.
 
 > The base change of an étale scheme chart is cartesian after passage to algebraic spaces.
 
@@ -413,7 +413,7 @@ theorem smallBaseChange_isPullback {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y)
       ((comparisonFunctor B S hS Y).obj V).1.hom f
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L242). The attribute's comment: “part (4), comparison square”.
+**`AlgebraicGeometry.Space.smallBaseChange_comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L242). The attribute's comment: “part (4), comparison square”.
 
 > The square formed by small and spaces-étale base change and the comparison functors commutes
 > up to its canonical natural isomorphism.
@@ -425,7 +425,7 @@ noncomputable def smallBaseChange_comparison {X Y : AlgebraicSpaces B S hS} (f :
       comparisonFunctor B S hS Y ⋙ (spacesBaseChange B S hS f).functor
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_comparison_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L284). The attribute's comment: “part (4), comparison of cartesian projections”.
+**`AlgebraicGeometry.Space.smallBaseChange_comparison_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L284). The attribute's comment: “part (4), comparison of cartesian projections”.
 
 > The comparison isomorphism `AlgebraicGeometry.Space.smallBaseChange_comparison` is compatible
 > with the cartesian projections to the original chart.
@@ -438,7 +438,7 @@ theorem smallBaseChange_comparison_projection {X Y : AlgebraicSpaces B S hS} (f 
       (smallBaseChange_projection B S hS f hf).app V
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L344). The attribute's comment: “part (4), small-site morphism”.
+**`AlgebraicGeometry.Space.smallBaseChange_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L344). The attribute's comment: “part (4), small-site morphism”.
 
 > Base change of étale scheme charts is a morphism of small étale sites.
 
@@ -449,7 +449,7 @@ theorem smallBaseChange_isMorphismOfSites {X Y : AlgebraicSpaces B S hS} (f : X 
       (SmallEtale.topology B S hS Y.1) (SmallEtale.topology B S hS X.1)
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_topos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L364). The attribute's comment: “part (4), induced morphism of topoi”.
+**`AlgebraicGeometry.Space.smallBaseChange_topos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L364). The attribute's comment: “part (4), induced morphism of topoi”.
 
 > The direct image of `AlgebraicGeometry.Space.smallToposMorphism` is isomorphic to the direct
 > image along the morphism of small étale sites given by base change on scheme charts.
@@ -463,7 +463,7 @@ noncomputable def smallBaseChange_topos {X Y : AlgebraicSpaces B S hS} (f : X �
         (SmallEtale.topology B S hS Y.1) (SmallEtale.topology B S hS X.1)
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_topos_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L381). The attribute's comment: “part (4), canonical topos comparison coherence”.
+**`AlgebraicGeometry.Space.smallBaseChange_topos_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L381). The attribute's comment: “part (4), canonical topos comparison coherence”.
 
 > The isomorphism `AlgebraicGeometry.Space.smallBaseChange_topos`, composed with the comparison
 > `AlgebraicGeometry.Space.smallBaseChange_pushforward_comparison`, is
@@ -481,7 +481,7 @@ theorem smallBaseChange_topos_comparison {X Y : AlgebraicSpaces B S hS} (f : X �
       (smallToposMorphism_comparison B S hS f).hom.app F
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L400). The attribute's comment: “part (3), canonical composition coherence”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L400). The attribute's comment: “part (3), canonical composition coherence”.
 
 > The small-site composition isomorphism
 > `AlgebraicGeometry.Space.smallToposMorphism_comp` is precisely the transport of the cartesian
@@ -504,7 +504,7 @@ theorem smallToposMorphism_comp_comparison {X Y Z : AlgebraicSpaces B S hS} (f :
       (smallToposMorphism_comparison B S hS (f ≫ g)).hom.app F
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L426). The attribute's comment: “part (3), composition mate coherence”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp_mate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleBaseChange.lean#L426). The attribute's comment: “part (3), composition mate coherence”.
 
 > The inverse-image composition isomorphism
 > `AlgebraicGeometry.Space.smallToposMorphism_comp_inverseImage` is the adjoint mate of the
@@ -523,7 +523,7 @@ theorem smallToposMorphism_comp_mate {X Y Z : AlgebraicSpaces B S hS} (f : X ⟶
         (smallToposMorphism_comp B S hS f g).hom.app G
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange_comp_inv_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean#L195). The attribute's comment: “part (2), associativity of the composition isomorphism”.
+**`AlgebraicGeometry.Space.spacesBaseChange_comp_inv_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean#L195). The attribute's comment: “part (2), associativity of the composition isomorphism”.
 
 > **Stacks 03G2, part (2), associativity.**  The base-change composition isomorphisms of the
 > spaces-étale sites obey the associativity cocycle law.  This is the cocycle law for
@@ -540,7 +540,7 @@ theorem spacesBaseChange_comp_inv_assoc (f : V ⟶ W) (g : W ⟶ X) (h : X ⟶ Y
           ((spacesBaseChange_comp B S hS g h).inv.app U)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphismTypeU_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean#L235). The attribute's comment: “part (3), associativity of the composition isomorphism”.
+**`AlgebraicGeometry.Space.smallToposMorphismTypeU_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardAssoc.lean#L235). The attribute's comment: “part (3), associativity of the composition isomorphism”.
 
 > **Stacks 03G2, part (3), associativity.**  The composition isomorphisms of the direct images
 > of the small étale topoi obey the associativity cocycle law.
@@ -556,7 +556,7 @@ theorem smallToposMorphismTypeU_comp_assoc (f : V ⟶ W) (g : W ⟶ X) (h : X �
         (smallToposMorphismTypeU_comp B S hS f (g ≫ h)).hom.app M
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L107). The attribute's comment: “part (3), morphism of small étale topoi”.
+**`AlgebraicGeometry.Space.smallToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L107). The attribute's comment: “part (3), morphism of small étale topoi”.
 
 > The morphism of small étale topoi induced by a morphism `f : X ⟶ Y` of algebraic spaces: the
 > morphism of spaces-étale topoi of the base-change morphism of sites, transported along the
@@ -569,7 +569,7 @@ noncomputable def smallToposMorphism {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y
       (Sheaf (SmallEtale.topology B S hS Y.1) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L117). The attribute's comment: “part (3), comparison with the spaces-étale topoi”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L117). The attribute's comment: “part (3), comparison with the spaces-étale topoi”.
 
 > The small étale direct image agrees, through the comparison equivalences, with the direct
 > image of the spaces-étale morphism of sites.
@@ -585,7 +585,7 @@ noncomputable def smallToposMorphism_comparison {X Y : AlgebraicSpaces B S hS} (
           (SmallEtale.topology B S hS Y.1) (SpacesEtale.topology B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L145). The attribute's comment: “part (3), compatibility with composition”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L145). The attribute's comment: “part (3), compatibility with composition”.
 
 > The small étale direct image is compatible with composition: the composite of the morphisms
 > of topoi of `f` and `g` has the same direct image as the morphism of topoi of `f ≫ g`.
@@ -598,7 +598,7 @@ noncomputable def smallToposMorphism_comp {X Y Z : AlgebraicSpaces B S hS} (f : 
       (smallToposMorphism B S hS (f ≫ g)).pushforward
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp_inverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L160). The attribute's comment: “part (3), inverse-image composition”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp_inverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleToposMorphism.lean#L160). The attribute's comment: “part (3), inverse-image composition”.
 
 > The inverse-image composition isomorphism, oriented for pullback of sheaves:
 > `(f ≫ g)⁻¹ ≅ g⁻¹ ⋙ f⁻¹`. It is the adjoint mate of
@@ -612,7 +612,7 @@ noncomputable def smallToposMorphism_comp_inverseImage {X Y Z : AlgebraicSpaces 
         (smallToposMorphism B S hS f).inverseImage
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean#L328). The attribute's comment: “part (2), associativity of the composition isomorphism”.
+**`AlgebraicGeometry.Space.spacesBaseChange_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean#L328). The attribute's comment: “part (2), associativity of the composition isomorphism”.
 
 > **Stacks 03G2, part (2).** The composition isomorphism of spaces-étale base change is
 > associative: for `f : X ⟶ Y`, `g : Y ⟶ Z` and `h : Z ⟶ W` the two ways of identifying the
@@ -636,7 +636,7 @@ theorem spacesBaseChange_comp_assoc {W X Y Z : AlgebraicSpaces B S hS} (f : X �
           (Category.assoc f g h))
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean#L427). The attribute's comment: “part (3), associativity of the composition isomorphism”.
+**`AlgebraicGeometry.Space.smallToposMorphism_comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesBaseChangeAssoc.lean#L427). The attribute's comment: “part (3), associativity of the composition isomorphism”.
 
 > **Stacks 03G2, part (3).** The direct-image composition isomorphism of the morphisms of small
 > étale topoi is associative: for `f : X ⟶ Y`, `g : Y ⟶ Z` and `h : Z ⟶ W` the two ways of
@@ -663,7 +663,7 @@ theorem smallToposMorphism_comp_assoc {W X Y Z : AlgebraicSpaces B S hS} (f : X 
         smallToposMorphism_comp B S hS f (g ≫ h)
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L152). The attribute's comment: “part (1), the cartesian base-change functor”.
+**`AlgebraicGeometry.Space.spacesBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L152). The attribute's comment: “part (1), the cartesian base-change functor”.
 
 > **Stacks 03G2, part (1).** The canonical base-change datum on the spaces-étale sites: the
 > base change `CategoryTheory.Over.pullback f` of the slice over `Y`, restricted to the objects
@@ -674,7 +674,7 @@ noncomputable def spacesBaseChange {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y) 
     SpacesBaseChange B S hS f
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L218). The attribute's comment: “part (1), morphism of sites”.
+**`AlgebraicGeometry.Space.spacesBaseChange_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L218). The attribute's comment: “part (1), morphism of sites”.
 
 > **Stacks 03G2, part (1).** Base change defines a morphism of sites in the direction
 > `X → Y`: it is continuous, the spaces-étale site of `Y` has a terminal object and fibre
@@ -686,7 +686,7 @@ theorem spacesBaseChange_isMorphismOfSites {X Y : AlgebraicSpaces B S hS} (f : X
       (SpacesEtale.topology B S hS Y) (SpacesEtale.topology B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L230). The attribute's comment: “part (2), canonical composition isomorphism”.
+**`AlgebraicGeometry.Space.spacesBaseChange_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L230). The attribute's comment: “part (2), canonical composition isomorphism”.
 
 > **Stacks 03G2, part (2).** Base change along a composite is canonically isomorphic to the
 > iterated base change, by `CategoryTheory.Over.pullbackComp` restricted to the objects étale
@@ -699,7 +699,7 @@ noncomputable def spacesBaseChange_comp {X Y Z : AlgebraicSpaces B S hS} (f : X 
       (spacesBaseChange B S hS (f ≫ g)).functor
 ```
 
-**`AlgebraicGeometry.Space.spacesBaseChange_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L245). The attribute's comment: “part (2), compatibility with cartesian projections”.
+**`AlgebraicGeometry.Space.spacesBaseChange_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleBaseChange.lean#L245). The attribute's comment: “part (2), compatibility with cartesian projections”.
 
 > **Stacks 03G2, part (2).** The composition isomorphism is compatible with the cartesian
 > projections to the original object, which pins it down.
@@ -718,7 +718,7 @@ theorem spacesBaseChange_comp_projection {X Y Z : AlgebraicSpaces B S hS} (f : X
 
 [Tag 03G3](https://stacks.math.columbia.edu/tag/03G3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FMap`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L229).
+**`AlgebraicGeometry.Space.FMap`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L229).
 
 > A map of sections along a morphism of algebraic spaces, natural under simultaneous étale
 > restriction of the source and target charts.
@@ -732,7 +732,7 @@ structure FMap (P : (SmallEtale B S hS F)ᵒᵖ ⥤ Type v)
 
 [Tag 03G4](https://stacks.math.columbia.edu/tag/03G4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean#L689). The attribute's comment: “f-maps are exactly maps into the direct image”.
+**`AlgebraicGeometry.Space.chartCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean#L689). The attribute's comment: “f-maps are exactly maps into the direct image”.
 
 > The *chart correspondence* of a morphism `f : X ⟶ Y` of algebraic spaces: a bijection
 > between the `f`-maps from a sheaf of sets `Q` on the small étale site of `Y` to a sheaf of sets
@@ -749,7 +749,7 @@ noncomputable def chartCorrespondence (f : X ⟶ Y)
       IsChartCorrespondence B S hS f P Q e }
 ```
 
-**`AlgebraicGeometry.Space.fmapInverseImageEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean#L701). The attribute's comment: “f-maps are exactly maps out of the inverse image”.
+**`AlgebraicGeometry.Space.fmapInverseImageEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartCorrespondence.lean#L701). The attribute's comment: “f-maps are exactly maps out of the inverse image”.
 
 > `f`-maps from `Q` to `P` are exactly homomorphisms from the inverse image of `Q` into `P`,
 > the inverse image being that of `AlgebraicGeometry.Space.smallEtaleRingedToposHom`.
@@ -762,7 +762,7 @@ noncomputable def fmapInverseImageEquiv (f : X ⟶ Y)
       ((smallEtaleRingedToposHom B S hS f).toToposHom.inverseImage.obj Q ⟶ P)
 ```
 
-**`AlgebraicGeometry.Space.fMapEquivPushforwardHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L709). The attribute's comment: “parts (1) and (3)”.
+**`AlgebraicGeometry.Space.fMapEquivPushforwardHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L709). The attribute's comment: “parts (1) and (3)”.
 
 > A map on sections over every commutative pair of étale scheme charts over `f` is
 > equivalently a map of sheaves into the small étale direct image.
@@ -773,7 +773,7 @@ noncomputable def fMapEquivPushforwardHom :
       (G ⟶ (smallToposMorphism B S hS f).pushforward.obj F)
 ```
 
-**`AlgebraicGeometry.Space.fMapEquivInverseImageHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 788](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L788). The attribute's comment: “parts (2) and (3)”.
+**`AlgebraicGeometry.Space.fMapEquivInverseImageHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 788](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L788). The attribute's comment: “parts (2) and (3)”.
 
 > A map on sections over every commutative pair of étale scheme charts over `f` is
 > equivalently a map of sheaves out of the small étale inverse image. The bijection is the
@@ -786,7 +786,7 @@ noncomputable def fMapEquivInverseImageHom :
       ((smallToposMorphism B S hS f).inverseImage.obj G ⟶ F)
 ```
 
-**`AlgebraicGeometry.Space.fMapEquivPushforwardHom_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 803](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L803). The attribute's comment: “canonical action on chart sections”.
+**`AlgebraicGeometry.Space.fMapEquivPushforwardHom_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean, line 803](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCorrespondence.lean#L803). The attribute's comment: “canonical action on chart sections”.
 
 > The bijection `AlgebraicGeometry.Space.fMapEquivPushforwardHom` is the canonical one.
 > Transport a sheaf `F` on the small étale site of `X` through an isomorphism with the restriction
@@ -823,7 +823,7 @@ theorem fMapEquivPushforwardHom_chart
 
 [Tag 03LP](https://stacks.math.columbia.edu/tag/03LP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.abelianEtaleRestriction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L61). The attribute's comment: “restriction of abelian sheaves”.
+**`AlgebraicGeometry.Space.abelianEtaleRestriction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZero.lean#L61). The attribute's comment: “restriction of abelian sheaves”.
 
 > **Restriction of abelian étale sheaves** along an étale morphism `f : X ⟶ Y` of algebraic
 > spaces: restriction along postcomposition with `f`.
@@ -834,7 +834,7 @@ abbrev abelianEtaleRestriction (f : X ⟶ Y) (hf : IsEtale B S hS f.hom) :
       Sheaf (SmallEtale.topology B S hS X.1) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImage_obj_obj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L149). The attribute's comment: “the displayed formula for the inverse image, at abelian coefficients”.
+**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImage_obj_obj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L149). The attribute's comment: “the displayed formula for the inverse image, at abelian coefficients”.
 
 > **Stacks 03LP, the displayed formula for the inverse image, at abelian coefficients.** The
 > sections of `h_{small}^{-1}G` over an étale chart `W` of `U` are the sections of `G` over the
@@ -853,7 +853,7 @@ noncomputable def smallToposMorphism_abelianInverseImage_obj_obj (h : U ⟶ V)
       G.obj.obj (.op ((smallEtalePostcomp B S hS h hh).obj W))
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePostcomp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L58). The attribute's comment: “the postcomposition functor”.
+**`AlgebraicGeometry.Space.smallEtalePostcomp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L58). The attribute's comment: “the postcomposition functor”.
 
 > Postcomposition of an étale scheme chart with an étale morphism of algebraic spaces, as a
 > functor between the small étale sites.  Its underlying scheme and scheme morphisms are
@@ -864,7 +864,7 @@ def smallEtalePostcomp (f : X ⟶ Y) (hf : IsEtale B S hS f.hom) :
     SmallEtale B S hS X.1 ⥤ SmallEtale B S hS Y.1
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePostcomp_obj_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L66). The attribute's comment: “action on charts”.
+**`AlgebraicGeometry.Space.smallEtalePostcomp_obj_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L66). The attribute's comment: “action on charts”.
 
 > On charts, postcomposition replaces `U ⟶ X` by its composite with `f`.
 
@@ -874,7 +874,7 @@ theorem smallEtalePostcomp_obj_hom (f : X ⟶ Y) (hf : IsEtale B S hS f.hom)
     ((smallEtalePostcomp B S hS f hf).obj U).1.hom = U.1.hom ≫ f.hom
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePostcomp_map_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L72). The attribute's comment: “action on chart morphisms”.
+**`AlgebraicGeometry.Space.smallEtalePostcomp_map_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L72). The attribute's comment: “action on chart morphisms”.
 
 > On chart morphisms, postcomposition leaves the underlying scheme map unchanged.
 
@@ -884,7 +884,7 @@ theorem smallEtalePostcomp_map_left (f : X ⟶ Y) (hf : IsEtale B S hS f.hom)
     ((smallEtalePostcomp B S hS f hf).map g).hom.left = g.hom.left
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePostcomp_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L111). The attribute's comment: “continuity”.
+**`AlgebraicGeometry.Space.smallEtalePostcomp_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcomp.lean#L111). The attribute's comment: “continuity”.
 
 > Postcomposition along an étale morphism of algebraic spaces is continuous for the small
 > étale topologies, so that restriction along it carries sheaves on the small étale site of `Y`
@@ -896,7 +896,7 @@ instance smallEtalePostcomp_isContinuous (f : X ⟶ Y) (hf : IsEtale B S hS f.ho
       (SmallEtale.topology B S hS X.1) (SmallEtale.topology B S hS Y.1)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePostcomp_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcompCocontinuous.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcompCocontinuous.lean#L96). The attribute's comment: “cocontinuity”.
+**`AlgebraicGeometry.Space.smallEtalePostcomp_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcompCocontinuous.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePostcompCocontinuous.lean#L96). The attribute's comment: “cocontinuity”.
 
 > **Stacks 03LP.** Postcomposition along an étale morphism of algebraic spaces is
 > cocontinuous for the small étale topologies: a covering sieve of the composite chart `jU` pulls
@@ -913,7 +913,7 @@ instance smallEtalePostcomp_isCocontinuous (f : X ⟶ Y) (hf : IsEtale B S hS f.
       (SmallEtale.topology B S hS X.1) (SmallEtale.topology B S hS Y.1)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean#L129). The attribute's comment: “the associated morphism of topoi”.
+**`AlgebraicGeometry.Space.smallToposMorphism_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean#L129). The attribute's comment: “the associated morphism of topoi”.
 
 > For an étale morphism of algebraic spaces the small étale direct image is the direct image
 > attached to the cocontinuous postcomposition functor on charts.
@@ -925,7 +925,7 @@ def smallToposMorphism_pushforwardIso (f : X ⟶ Y) (hf : IsEtale B S hS f.hom) 
         (SmallEtale.topology B S hS X.1) (SmallEtale.topology B S hS Y.1)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageObjObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean#L140). The attribute's comment: “the formula on sections”.
+**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageObjObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestriction.lean#L140). The attribute's comment: “the formula on sections”.
 
 > Sections of the small étale inverse image along an étale morphism over a chart `U ⟶ X` are
 > the sections of the original sheaf over the composite chart `U ⟶ Y`.
@@ -938,7 +938,7 @@ def smallToposMorphism_inverseImageObjObjIso (f : X ⟶ Y) (hf : IsEtale B S hS 
       G.obj.obj (Opposite.op ((smallEtalePostcomp B S hS f hf).obj U))
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215). The attribute's comment: “the morphism of topoi attached to j is f\_small”.
+**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215). The attribute's comment: “the morphism of topoi attached to j is f\_small”.
 
 > **Stacks 03LQ**, and the remaining assertion of **Stacks 03LP**: for an étale morphism
 > `h : U ⟶ V` of algebraic spaces, the inverse image of the morphism of *small* étale topoi
@@ -957,7 +957,7 @@ noncomputable def smallToposMorphism_inverseImageIso (h : U ⟶ V) (hh : IsEtale
         (SmallEtale.topology B S hS U.1) (SmallEtale.topology B S hS V.1)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_inverseImage_obj_obj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L253). The attribute's comment: “the displayed formula for the inverse image”.
+**`AlgebraicGeometry.Space.smallToposMorphism_inverseImage_obj_obj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L253). The attribute's comment: “the displayed formula for the inverse image”.
 
 > **Stacks 03LP, the displayed formula for the inverse image.** The sections of
 > `h_{small}^{-1}G` over an étale chart `W` of `U` are the sections of `G` over the composite
@@ -979,7 +979,7 @@ noncomputable def smallToposMorphism_inverseImage_obj_obj (h : U ⟶ V)
 
 [Tag 03LQ](https://stacks.math.columbia.edu/tag/03LQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L126). The attribute's comment: “at abelian coefficients: h\_small^\{-1} of an abelian sheaf is restriction along j”.
+**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L126). The attribute's comment: “at abelian coefficients: h\_small^\{-1} of an abelian sheaf is restriction along j”.
 
 > **Stacks 03LQ at abelian coefficients.** For an étale morphism `h : U ⟶ V` of algebraic
 > spaces, the inverse image of *abelian* sheaves along the morphism of small étale topoi
@@ -1005,7 +1005,7 @@ noncomputable def smallToposMorphism_abelianInverseImageIso (h : U ⟶ V)
         (SmallEtale.topology B S hS U.1) (SmallEtale.topology B S hS V.1)
 ```
 
-**`AlgebraicGeometry.Space.spacesToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L180). The attribute's comment: “on the spaces-étale topoi”.
+**`AlgebraicGeometry.Space.spacesToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L180). The attribute's comment: “on the spaces-étale topoi”.
 
 > **Stacks 03LQ on the spaces-étale topoi.** The inverse image of the morphism of
 > spaces-étale topoi attached to an étale morphism `h : U ⟶ V` is restriction along
@@ -1024,7 +1024,7 @@ noncomputable def spacesToposMorphism_inverseImageIso (h : U ⟶ V)
         (SpacesEtale.topology B S hS U) (SpacesEtale.topology B S hS V)
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215).
+**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215).
 
 > **Stacks 03LQ**, and the remaining assertion of **Stacks 03LP**: for an étale morphism
 > `h : U ⟶ V` of algebraic spaces, the inverse image of the morphism of *small* étale topoi
@@ -1047,7 +1047,7 @@ noncomputable def smallToposMorphism_inverseImageIso (h : U ⟶ V) (hh : IsEtale
 
 [Tag 03LR](https://stacks.math.columbia.edu/tag/03LR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianInverseImageSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L318). The attribute's comment: “the inverse-image footnote, at abelian coefficients”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianInverseImageSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L318). The attribute's comment: “the inverse-image footnote, at abelian coefficients”.
 
 > **Stacks 03LR's inverse-image footnote, at abelian coefficients.**  For a cartesian square
 > of algebraic spaces, the inverse image of *abelian* sheaves on the small étale sites may be
@@ -1071,7 +1071,7 @@ def smallEtaleAbelianInverseImageSquareIso (sq : IsPullback i f' f g) :
         Sites.abelianInverseImage (smallToposMorphism B S hS i)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePushforwardBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean#L202). The attribute's comment: “part (1), sheaves of sets”.
+**`AlgebraicGeometry.Space.smallEtalePushforwardBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean#L202). The attribute's comment: “part (1), sheaves of sets”.
 
 > **Stacks 03LR, part (1).** For a cartesian square of algebraic spaces whose bottom arrow
 > `g` is étale, direct image of sheaves of sets on the small étale sites commutes with
@@ -1091,7 +1091,7 @@ noncomputable def smallEtalePushforwardBaseChangeIso (sq : IsPullback i f' f g)
         (smallToposMorphism B S hS g).inverseImage
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleInverseImageSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean#L267). The attribute's comment: “the inverse-image footnote”.
+**`AlgebraicGeometry.Space.smallEtaleInverseImageSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtalePushforwardBaseChange.lean#L267). The attribute's comment: “the inverse-image footnote”.
 
 > The inverse-image identification around a cartesian square, built from the inverse-image
 > composition isomorphism of Stacks 03G2, part (3) and the commutativity of the square.
@@ -1111,7 +1111,7 @@ noncomputable def smallEtaleInverseImageSquareIso (sq : IsPullback i f' f g) :
         (smallToposMorphism B S hS i).inverseImage
 ```
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleAbelianHigherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L348). The attribute's comment: “part (2): for every abelian sheaf and every degree n, the canonical comparison (R^n f\_\{small,*} F)|\_\{Y'} ⟶ R^n f'\_\{small,*}(F|\_\{X'}) of higher direct images is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleAbelianHigherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L348). The attribute's comment: “part (2): for every abelian sheaf and every degree n, the canonical comparison (R^n f\_\{small,*} F)|\_\{Y'} ⟶ R^n f'\_\{small,*}(F|\_\{X'}) of higher direct images is an isomorphism”.
 
 > **Étale base change for higher direct images.**  For a cartesian square of algebraic spaces
 > over `S`
@@ -1132,7 +1132,7 @@ theorem isIso_smallEtaleAbelianHigherBaseChangeMap (sq : IsPullback i f' f g)
     IsIso (smallEtaleAbelianHigherBaseChangeMap B S hS i f' f g sq hg n)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePushforwardEtaleBaseChange_allParts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L382). The attribute's comment: “the whole statement as one conjunction, in the source's order: part (1), that the canonical base-change 2-cell of sheaves of sets is an isomorphism, i.e. f'\_* (F|\_X') = (f\_* F)|\_Y'; its inverse-image footnote, (f')^\{-1}(G|\_Y') = (f^\{-1} G)|\_X'; and part (2), that for every degree n the canonical comparison (R^n f\_* F)|\_Y' -> R^n f'\_* (F|\_X') of higher direct images of abelian sheaves is an isomorphism”.
+**`AlgebraicGeometry.Space.smallEtalePushforwardEtaleBaseChange_allParts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L383). The attribute's comment: “the whole statement as one conjunction, in the source's order: part (1), that the canonical base-change 2-cell of sheaves of sets is an isomorphism, i.e. f'\_* (F|\_X') = (f\_* F)|\_Y'; its inverse-image footnote, (f')^\{-1}(G|\_Y') = (f^\{-1} G)|\_X'; and part (2), that for every degree n the canonical comparison (R^n f\_* F)|\_Y' -> R^n f'\_* (F|\_X') of higher direct images of abelian sheaves is an isomorphism”.
 
 > **Étale base change on the small étale sites.**  For a cartesian square of algebraic spaces
 > over `S`
@@ -1164,7 +1164,7 @@ theorem smallEtalePushforwardEtaleBaseChange_allParts (sq : IsPullback i f' f g)
       ∀ n : ℕ, IsIso (smallEtaleAbelianHigherBaseChangeMap B S hS i f' f g sq hg n)
 ```
 
-**`AlgebraicGeometry.Space.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleBaseChangeMate.lean, line 821](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleBaseChangeMate.lean#L821). The attribute's comment: “part (1), invertibility of the canonical base-change 2-cell”.
+**`AlgebraicGeometry.Space.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleBaseChangeMate.lean, line 821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleBaseChangeMate.lean#L821). The attribute's comment: “part (1), invertibility of the canonical base-change 2-cell”.
 
 > For a cartesian square of algebraic spaces whose bottom arrow `g` is étale, the base-change
 > 2-cell `f_{small,*} ∘ g_{small}^{-1} ⟶ i_{small}^{-1} ∘ f'_{small,*}` is an isomorphism.
@@ -1178,7 +1178,7 @@ theorem isIso_properBaseChangeMap (sq : IsPullback i f' f g) (hg : IsEtale B S h
 
 [Tag 03LS](https://stacks.math.columbia.edu/tag/03LS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartRestrictionComp_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCanonicalGlueing.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCanonicalGlueing.lean#L274). The attribute's comment: “the cocycle condition for the chartwise restrictions”.
+**`AlgebraicGeometry.Space.chartRestrictionComp_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCanonicalGlueing.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartCanonicalGlueing.lean#L274). The attribute's comment: “the cocycle condition for the chartwise restrictions”.
 
 > **The cocycle condition of Stacks 03LS for the restrictions of a sheaf to the étale scheme
 > charts of `X`**: restricting to a chart `U`, then to a chart `V` over it, then to a chart `W` over
@@ -1199,7 +1199,7 @@ theorem chartRestrictionComp_cocycle {W V U : SmallEtale B S hS X.1} (f : V ⟶ 
       (chartRestrictionComp B S hS X (g ≫ f)).hom
 ```
 
-**`AlgebraicGeometry.Space.chartGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartGlueingEquivalence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartGlueingEquivalence.lean#L598).
+**`AlgebraicGeometry.Space.chartGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartGlueingEquivalence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartGlueingEquivalence.lean#L598).
 
 > **Stacks 03LS.**  A sheaf of sets on the small étale site of an algebraic space `X` is the
 > same thing as a family of sheaves `F_U` on the small étale sites of the étale scheme charts `U`
@@ -1219,7 +1219,7 @@ def chartGlueingEquivalence :
     Sheaf (SmallEtale.topology B S hS X.1) (Type (u + 1)) ≌ ChartGlueingData B S hS X
 ```
 
-**`AlgebraicGeometry.Space.chartInverseImageComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean#L112). The attribute's comment: “canonical comparison of inverse images”.
+**`AlgebraicGeometry.Space.chartInverseImageComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean#L112). The attribute's comment: “canonical comparison of inverse images”.
 
 > **Stacks 03LS.** The canonical comparison of successive chartwise inverse images with the
 > inverse image along the composite morphism of charts: it is the adjoint-mate composition
@@ -1233,7 +1233,7 @@ noncomputable def chartInverseImageComp {W V U : SmallEtale B S hS X.1} (f : V �
       chartInverseImage B S hS X (g ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.chartRestrictionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean#L132). The attribute's comment: “compatibility of chart restriction with inverse image”.
+**`AlgebraicGeometry.Space.chartRestrictionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartSheaves.lean#L132). The attribute's comment: “compatibility of chart restriction with inverse image”.
 
 > **Stacks 03LS.** Restriction to a chart commutes canonically with further restriction along
 > a morphism of charts: the composite of the structure morphism of the larger chart with the
@@ -1249,7 +1249,7 @@ noncomputable def chartRestrictionComp {V U : SmallEtale B S hS X.1} (f : V ⟶ 
 
 [Tag 05YY](https://stacks.math.columbia.edu/tag/05YY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presentationPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L310). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
+**`AlgebraicGeometry.Space.presentationPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L310). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
 
 > **Stacks 05YY.** Let `φ : U ⟶ X` be a morphism of algebraic spaces with `R = U ×_X U` and
 > `t, s : R ⟶ U` the two projections, as for a presentation of `X` by a surjective étale `φ`. For
@@ -1270,7 +1270,7 @@ noncomputable def presentationPullbackIso (φ : U ⟶ X) (s t : R ⟶ U)
       smallEtaleSheafInverseImage B S hS φ ⋙ smallEtaleSheafInverseImage B S hS s
 ```
 
-**`AlgebraicGeometry.Space.presentationPullbackIsoApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L341). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
+**`AlgebraicGeometry.Space.presentationPullbackIsoApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L341). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
 
 > **Stacks 05YY.** The isomorphism
 >
@@ -1291,7 +1291,7 @@ noncomputable def presentationPullbackIsoApp (φ : U ⟶ X) (s t : R ⟶ U)
         ((smallEtaleSheafInverseImage B S hS φ).obj F)
 ```
 
-**`AlgebraicGeometry.Space.presentationPullbackIsoApp_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L364). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
+**`AlgebraicGeometry.Space.presentationPullbackIsoApp_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationCocycle.lean#L364). The attribute's comment: “the canonical isomorphism and its cocycle condition”.
 
 > **Stacks 05YY.** The cocycle condition on `α`. Let `R₂ = R ×_{s, U, t} R` be the fibre
 > product of `s` and `t`, with projections `pr₀` and `pr₁`, and let `c : R₂ ⟶ R` be the
@@ -1326,7 +1326,7 @@ theorem presentationPullbackIsoApp_cocycle (φ : U ⟶ X) (s t : R ⟶ U) (hR : 
           (presentationPullbackIsoApp B S hS φ s t hR F).hom
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toPresentationDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationDescent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationDescent.lean#L245). The attribute's comment: “the equivalence of categories”.
+**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toPresentationDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationDescent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtalePresentationDescent.lean#L245). The attribute's comment: “the equivalence of categories”.
 
 > Let `X` be an algebraic space over a scheme `S`, let `φ : U ⟶ X` be a
 > surjective étale morphism and let `(U, R, s, t, c, e, i)` be the groupoid of the presentation
@@ -1351,4 +1351,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.18, Tag 03EB](https://stacks.math.columbia.edu/tag/03EB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

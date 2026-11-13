@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.46 Permanence of properties under henselization
 
-Section 15.46 of the Stacks Project, [Tag 07QL](https://stacks.math.columbia.edu/tag/07QL). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.46 of the Stacks Project, [Tag 07QL](https://stacks.math.columbia.edu/tag/07QL). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07QM, a lemma
 
 [Tag 07QM](https://stacks.math.columbia.edu/tag/07QM) in the Stacks Project.
 
-**`henselization_faithfullyFlat_and_quotient_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L322). The attribute's comment: “The identification `_hRsh_res` of `ResidueField Rsh` with `κsep` is carried, for faithfulness to the source statement, but is not needed by the proof: the basis comes from ind-étaleness of `R → Rsh` together with `[IsSepClosed (ResidueField Rsh)]`. Hence the leading underscore on that binder.”.
+**`henselization_faithfullyFlat_and_quotient_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L322). The attribute's comment: “The identification `_hRsh_res` of `ResidueField Rsh` with `κsep` is carried, for faithfulness to the source statement, but is not needed by the proof: the basis comes from ind-étaleness of `R → Rsh` together with `[IsSepClosed (ResidueField Rsh)]`. Hence the leading underscore on that binder.”.
 
 > **Stacks 07QM.** Let `Rh` and `Rsh` be respectively a henselization and a strict
 > henselization of a local ring `R`, with residue field of `Rsh` identified with a separable
@@ -61,7 +61,7 @@ public theorem henselization_faithfullyFlat_and_quotient_basis.{u, v, w, t}
 
 [Tag 07QN](https://stacks.math.columbia.edu/tag/07QN) in the Stacks Project.
 
-**`henselization_formallyEtale_and_isFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L503).
+**`henselization_formallyEtale_and_isFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L503).
 
 > The maps from a local ring to its henselization, from its henselization to its strict
 > henselization, and from the original ring to its strict henselization are formally étale. With
@@ -108,7 +108,7 @@ public theorem henselization_formallyEtale_and_isFormallySmooth
 
 [Tag 06LJ](https://stacks.math.columbia.edu/tag/06LJ) in the Stacks Project.
 
-**`isNoetherianRing_iff_henselizations_and_completion_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NoetherianCompletions.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NoetherianCompletions.lean#L641). References: EGA IV (18.6.6), “(iv), (v)”; EGA IV (18.8.8), “(iv)”.
+**`isNoetherianRing_iff_henselizations_and_completion_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NoetherianCompletions.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NoetherianCompletions.lean#L640). References: EGA IV (18.6.6), “(iv), (v)”; EGA IV (18.8.8), “(iv)”.
 
 > A local ring is Noetherian if and only if its henselization is, if and only if its strict
 > henselization is. In that case the latter two rings have complete Noetherian local completions;
@@ -189,7 +189,7 @@ public theorem isNoetherianRing_iff_henselizations_and_completion_properties.{u,
 
 [Tag 06DH](https://stacks.math.columbia.edu/tag/06DH) in the Stacks Project.
 
-**`isReduced_tfae_henselization_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L696). References: EGA IV (18.6.9), “(i), special case”; EGA IV (18.8.12), “(i), special case”.
+**`isReduced_tfae_henselization_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 696](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L696). References: EGA IV (18.6.9), “(i), special case”; EGA IV (18.8.12), “(i), special case”.
 
 > Reducedness of a local ring, its henselization, and its strict henselization are equivalent.
 
@@ -209,7 +209,7 @@ public theorem isReduced_tfae_henselization_strictHenselization
 
 [Tag 0ASE](https://stacks.math.columbia.edu/tag/0ASE) in the Stacks Project.
 
-**`nilradical_map_eq_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L778).
+**`nilradical_map_eq_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/FlatnessAndReducedness.lean#L778).
 
 > The nilradical of a henselization or strict henselization of a local ring is the extension
 > of the nilradical of the base ring.
@@ -231,7 +231,7 @@ public theorem nilradical_map_eq_henselization_and_strictHenselization
 
 [Tag 06DI](https://stacks.math.columbia.edu/tag/06DI) in the Stacks Project.
 
-**`isNormalDomain_tfae_henselization_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean#L239). References: EGA IV (18.6.9), “(i), special case”; EGA IV (18.8.12), “(i), special case”.
+**`isNormalDomain_tfae_henselization_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean#L239). References: EGA IV (18.6.9), “(i), special case”; EGA IV (18.8.12), “(i), special case”.
 
 > Normality of a local ring, its henselization, and its strict henselization are equivalent.
 
@@ -253,7 +253,7 @@ public theorem isNormalDomain_tfae_henselization_strictHenselization
 
 [Tag 06LK](https://stacks.math.columbia.edu/tag/06LK) in the Stacks Project.
 
-**`ringKrullDim_eq_henselization_eq_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean#L351). References: SGA 5 I (3.1.3), “more general”.
+**`ringKrullDim_eq_henselization_eq_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/NormalityAndDimension.lean#L351). References: SGA 5 I (3.1.3), “more general”.
 
 > A local ring, its henselization, and its strict henselization have equal Krull dimension.
 
@@ -274,7 +274,7 @@ public theorem ringKrullDim_eq_henselization_eq_strictHenselization
 
 [Tag 06LL](https://stacks.math.columbia.edu/tag/06LL) in the Stacks Project.
 
-**`ringDepth_eq_henselization_eq_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L193).
+**`ringDepth_eq_henselization_eq_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L193).
 
 > A Noetherian local ring, its henselization, and its strict henselization have equal depth.
 
@@ -295,7 +295,7 @@ public theorem ringDepth_eq_henselization_eq_strictHenselization
 
 [Tag 06LM](https://stacks.math.columbia.edu/tag/06LM) in the Stacks Project.
 
-**`isMaximalCohenMacaulay_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L231). References: EGA IV (18.6.10), “a)”; EGA IV (18.8.13), “a)”.
+**`isMaximalCohenMacaulay_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L231). References: EGA IV (18.6.10), “a)”; EGA IV (18.8.13), “a)”.
 
 > A Noetherian local ring is Cohen–Macaulay if and only if its henselization is, and if and
 > only if its strict henselization is.
@@ -318,7 +318,7 @@ public theorem isMaximalCohenMacaulay_iff_henselizations
 
 [Tag 06LN](https://stacks.math.columbia.edu/tag/06LN) in the Stacks Project.
 
-**`isRegularLocalRing_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L291). References: EGA IV (18.6.10); EGA IV (18.8.13).
+**`isRegularLocalRing_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L291). References: EGA IV (18.6.10); EGA IV (18.8.13).
 
 > A Noetherian local ring is regular if and only if its henselization is regular, and if and
 > only if its strict henselization is regular.
@@ -341,7 +341,7 @@ public theorem isRegularLocalRing_iff_henselizations
 
 [Tag 0AP3](https://stacks.math.columbia.edu/tag/0AP3) in the Stacks Project.
 
-**`isDiscreteValuationRing_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L375).
+**`isDiscreteValuationRing_iff_henselizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L375).
 
 > A Noetherian local ring is a discrete valuation ring if and only if its henselization is a
 > discrete valuation ring, and if and only if its strict henselization is a discrete valuation
@@ -367,7 +367,7 @@ public theorem isDiscreteValuationRing_iff_henselizations
 
 [Tag 0AH1](https://stacks.math.columbia.edu/tag/0AH1) in the Stacks Project.
 
-**`IsFilteredColimitEtale.exists_fiber_algEquiv_pi_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/IndEtaleFibres.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/IndEtaleFibres.lean#L532). References: EGA IV (18.6.9), “more general”; SGA 1 IX (1.8), “decomposition direction”; SGA 1 IX (1.9), “partial, special case”; SGA 4½ Arcata (2.4.2), “Only-if direction”.
+**`IsFilteredColimitEtale.exists_fiber_algEquiv_pi_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/IndEtaleFibres.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/IndEtaleFibres.lean#L528). References: EGA IV (18.6.9), “more general”; SGA 1 IX (1.8), “decomposition direction”; SGA 1 IX (1.9), “partial, special case”; SGA 4½ Arcata (2.4.2), “Only-if direction”.
 
 > Let `A` be a commutative ring and `B` an `A`-algebra which is a filtered colimit of
 > étale `A`-algebras and which is a Noetherian ring. Let `p` be a prime of `A`. Then
@@ -407,7 +407,7 @@ theorem IsFilteredColimitEtale.exists_fiber_algEquiv_pi_residueField
 
 [Tag 07QQ](https://stacks.math.columbia.edu/tag/07QQ) in the Stacks Project.
 
-**`henselization_fibres_equiv_pi_residueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L421). References: EGA IV (18.8.12), “(ii), special case”.
+**`henselization_fibres_equiv_pi_residueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/PermanenceOfProperties/DepthRegularityAndFibres.lean#L421). References: EGA IV (18.8.12), “(ii), special case”.
 
 > Let `Rh` and `Rsh` be respectively a henselization and a strict henselization of a
 > Noetherian local ring `R`. Over every prime `p` of `R`, their fibres are finite products of the
@@ -457,4 +457,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.46, Tag 07QL](https://stacks.math.columbia.edu/tag/07QL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

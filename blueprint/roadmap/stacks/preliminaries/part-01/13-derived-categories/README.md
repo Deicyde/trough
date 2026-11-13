@@ -1,8 +1,8 @@
 # 13 Derived Categories
 
-Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stacks.math.columbia.edu/tag/05QI): the 40 sections of its 42 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 267 tags are carried by 350 declarations of the repository (all in StacksFrontier) and 61 registered declarations.
+Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stacks.math.columbia.edu/tag/05QI): the 40 sections of its 42 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 268 tags are carried by 397 declarations of the repository (all in StacksFrontier) and 70 registered declarations.
 
-## [13.3 The definition of a… to 13.17 Triangulated…](part-01/README.md)
+## [13.3 The definition of a… to 13.14 Derived functors in…](part-01/README.md)
 
 - [13.3 The definition of a triangulated category](part-01/13-3-the-definition-of-a-triangulated-category.md)
 - [13.4 Elementary results on triangulated categories](part-01/13-4-elementary-results-on-triangulated-categori.md)
@@ -16,12 +16,12 @@ Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stack
 - [13.12 The canonical delta-functor](part-01/13-12-the-canonical-delta-functor.md)
 - [13.13 Filtered derived categories](part-01/13-13-filtered-derived-categories.md)
 - [13.14 Derived functors in general](part-01/13-14-derived-functors-in-general.md)
-- [13.15 Derived functors on derived categories](part-01/13-15-derived-functors-on-derived-categories.md)
-- [13.16 Higher derived functors](part-01/13-16-higher-derived-functors.md)
-- [13.17 Triangulated subcategories of the derived category](part-01/13-17-triangulated-subcategories-of-the-derived.md)
 
-## [13.18 Injective resolutions to 13.37 Compact objects](part-02/README.md)
+## [13.15 Derived functors on… to 13.32 Bounded cohomological…](part-02/README.md)
 
+- [13.15 Derived functors on derived categories](part-02/13-15-derived-functors-on-derived-categories.md)
+- [13.16 Higher derived functors](part-02/13-16-higher-derived-functors.md)
+- [13.17 Triangulated subcategories of the derived category](part-02/13-17-triangulated-subcategories-of-the-derived.md)
 - [13.18 Injective resolutions](part-02/13-18-injective-resolutions.md)
 - [13.19 Projective resolutions](part-02/13-19-projective-resolutions.md)
 - [13.20 Right derived functors and injective resolutions](part-02/13-20-right-derived-functors-and-injective-resol.md)
@@ -37,14 +37,14 @@ Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stack
 - [13.30 Deriving adjoints](part-02/13-30-deriving-adjoints.md)
 - [13.31 K-injective complexes](part-02/13-31-k-injective-complexes.md)
 - [13.32 Bounded cohomological dimension](part-02/13-32-bounded-cohomological-dimension.md)
-- [13.33 Derived colimits](part-02/13-33-derived-colimits.md)
-- [13.34 Derived limits](part-02/13-34-derived-limits.md)
-- [13.35 Operations on full subcategories](part-02/13-35-operations-on-full-subcategories.md)
-- [13.36 Generators of triangulated categories](part-02/13-36-generators-of-triangulated-categories.md)
-- [13.37 Compact objects](part-02/13-37-compact-objects.md)
 
-## [13.38 Brown representability to 13.42 Essentially constant…](part-03/README.md)
+## [13.33 Derived colimits to 13.42 Essentially constant…](part-03/README.md)
 
+- [13.33 Derived colimits](part-03/13-33-derived-colimits.md)
+- [13.34 Derived limits](part-03/13-34-derived-limits.md)
+- [13.35 Operations on full subcategories](part-03/13-35-operations-on-full-subcategories.md)
+- [13.36 Generators of triangulated categories](part-03/13-36-generators-of-triangulated-categories.md)
+- [13.37 Compact objects](part-03/13-37-compact-objects.md)
 - [13.38 Brown representability](part-03/13-38-brown-representability.md)
 - [13.39 Brown representability, bis](part-03/13-39-brown-representability-bis.md)
 - [13.40 Admissible subcategories](part-03/13-40-admissible-subcategories.md)

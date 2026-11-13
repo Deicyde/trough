@@ -8,7 +8,7 @@ proof: formalized
 
 # Degree components of the base-changed multigraded resolution
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html).
 
 ## Multidegree component complex of the base-changed resolution
 
@@ -27,7 +27,7 @@ of $K \otimes_R F$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 864–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeComplex`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#base-changed-degree-complex).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeComplex`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#base-changed-degree-complex).
 
 ## Inclusion of a multidegree component complex
 
@@ -46,7 +46,7 @@ $(K \otimes_R F)_i$ into $(K \otimes_R F)_i$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 864–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#base-changed-degree-inclusion).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#base-changed-degree-inclusion).
 
 ## Injectivity of the base-changed degree inclusion
 
@@ -55,7 +55,7 @@ Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of
 Integer Sequences 23 (2020), lines 864–867,
 `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion_injective`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#injectivity-of-the-base-changed-degree-i).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion_injective`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#injectivity-of-the-base-changed-degree-i).
 
 ## Range of the base-changed degree inclusion
 
@@ -65,7 +65,7 @@ Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23
 (2020), lines 864–867,
 `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion_range`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#range-of-the-base-changed-degree-inclusi).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeInclusion_range`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#range-of-the-base-changed-degree-inclusi).
 
 ## Existence of multigraded base-change data
 
@@ -87,7 +87,7 @@ degree-$\alpha$ piece of $(K \otimes_R F)_i$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.multigradedBaseChange_nonempty`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#multigraded-base-change-nonempty).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.multigradedBaseChange_nonempty`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreeComplex.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html#multigraded-base-change-nonempty).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Degree components of the base-changed multigraded resolution](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/degree-components-of-the-base-changed-multigrade)

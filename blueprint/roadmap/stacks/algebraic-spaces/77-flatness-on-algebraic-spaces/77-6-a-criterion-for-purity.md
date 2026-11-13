@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.6 A criterion for purity
 
-Section 77.6 of the Stacks Project, [Tag 0CW0](https://stacks.math.columbia.edu/tag/0CW0). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.6 of the Stacks Project, [Tag 0CW0](https://stacks.math.columbia.edu/tag/0CW0). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CW1, a lemma
 
 [Tag 0CW1](https://stacks.math.columbia.edu/tag/0CW1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_specializes_isRelativeWeaklyAssociatedPoint_fibre_schemeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PuritySchemeBase.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PuritySchemeBase.lean#L182). The attribute's comment: “the source's own statement, unconditionally: the base is a scheme of the site (the source's S), flatness is read on the module, Stacks 05VV at a point, exactly as the source reads it, and nothing further is required of the data -- in particular no affineness, the affine etale chart being chosen inside the proof as the source chooses it”.
+**`AlgebraicGeometry.Space.exists_specializes_isRelativeWeaklyAssociatedPoint_fibre_schemeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PuritySchemeBase.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PuritySchemeBase.lean#L182). The attribute's comment: “the source's own statement, unconditionally: the base is a scheme of the site (the source's S), flatness is read on the module, Stacks 05VV at a point, exactly as the source reads it, and nothing further is required of the data -- in particular no affineness, the affine etale chart being chosen inside the proof as the source chooses it”.
 
 > **Stacks 0CW1.** Let `X` be a decent algebraic space over a scheme `S` of a big fppf site,
 > let `f : X ⟶ h_V` be a morphism locally of finite type into the algebraic space of a scheme `V`
@@ -52,7 +52,7 @@ theorem exists_specializes_isRelativeWeaklyAssociatedPoint_fibre_schemeBase
 
 [Tag 0CW2](https://stacks.math.columbia.edu/tag/0CW2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_baseChange_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L289). The attribute's comment: “for the relative weak assassin of Stacks 0CV0, stated for an arbitrary module in place of a quasi-coherent one and with no finiteness hypothesis on f, neither of which is used by part (1) of Stacks 0CV2 or by Stacks 03H4. The base changes are presented by cartesian squares, X'\_Z as X\_Z ×\_X X' exactly as the source's proof does, so g is not required to be given as a morphism over Y”.
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_baseChange_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L289). The attribute's comment: “for the relative weak assassin of Stacks 0CV0, stated for an arbitrary module in place of a quasi-coherent one and with no finiteness hypothesis on f, neither of which is used by part (1) of Stacks 0CV2 or by Stacks 03H4. The base changes are presented by cartesian squares, X'\_Z as X\_Z ×\_X X' exactly as the source's proof does, so g is not required to be given as a morphism over Y”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let `g : X'' ⟶ X` be a
 > morphism of algebraic spaces, and let `F` be an `𝒪_X`-module. If `WeakAss_{X/Y}(F)` is
@@ -76,7 +76,7 @@ theorem relativeWeaklyAssociatedPoints_baseChange_subset_range
 
 [Tag 0CW3](https://stacks.math.columbia.edu/tag/0CW3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.EtaleOverSource.isPureAbove_of_isPureAbove_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L464). The attribute's comment: “clause (1) for purity above y: the source's own two assumptions on the etale morphism g, that Ass\_\{X/Y}(F) lies in the image of |X'| and that g^*F is pure above y, give purity of F above y. Nothing beyond the source's own assumptions is used”.
+**`AlgebraicGeometry.Space.EtaleOverSource.isPureAbove_of_isPureAbove_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L464). The attribute's comment: “clause (1) for purity above y: the source's own two assumptions on the etale morphism g, that Ass\_\{X/Y}(F) lies in the image of |X'| and that g^*F is pure above y, give purity of F above y. Nothing beyond the source's own assumptions is used”.
 
 > **Stacks 0CW3, clause (1), for purity above `y`.** In the situation of Stacks 0CV6, let
 > `g : X' ⟶ X` be étale over `Y` with `X' ⟶ Y` decent and of finite type. If the relative
@@ -100,7 +100,7 @@ theorem isPureAbove_of_isPureAbove_situation
     (h : IsPureAbove c.situation) : IsPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.EtaleOverSource.isUniversallyPureAbove_of_isUniversallyPureAbove_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L486). The attribute's comment: “clause (1) for universal purity above y: the source's own two assumptions on the etale morphism g, that Ass\_\{X/Y}(F) lies in the image of |X'| and that g^*F is universally pure above y, give universal purity of F above y. Nothing beyond the source's own assumptions is used”.
+**`AlgebraicGeometry.Space.EtaleOverSource.isUniversallyPureAbove_of_isUniversallyPureAbove_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L486). The attribute's comment: “clause (1) for universal purity above y: the source's own two assumptions on the etale morphism g, that Ass\_\{X/Y}(F) lies in the image of |X'| and that g^*F is universally pure above y, give universal purity of F above y. Nothing beyond the source's own assumptions is used”.
 
 > **Stacks 0CW3, clause (1), for universal purity above `y`.** In the situation of
 > Stacks 0CV6, let `g : X' ⟶ X` be étale over `Y` with `X' ⟶ Y` decent and of finite type. If
@@ -119,7 +119,7 @@ theorem isUniversallyPureAbove_of_isUniversallyPureAbove_situation
     (h : IsUniversallyPureAbove c.situation) : IsUniversallyPureAbove P
 ```
 
-**`AlgebraicGeometry.Space.EtaleOverSource.relativeWeaklyAssociatedPoints_subset_range_of_isAffineLocalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 789](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L789). The attribute's comment: “clause (2): purity of F above y, the image of |X'| meeting the whole fibre and an affine local base with closed point y give the containment of Ass\_\{X/Y}(F) in that image. Those are the source's own three assumptions, and nothing beyond them is used”.
+**`AlgebraicGeometry.Space.EtaleOverSource.relativeWeaklyAssociatedPoints_subset_range_of_isAffineLocalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 789](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L789). The attribute's comment: “clause (2): purity of F above y, the image of |X'| meeting the whole fibre and an affine local base with closed point y give the containment of Ass\_\{X/Y}(F) in that image. Those are the source's own three assumptions, and nothing beyond them is used”.
 
 > **Stacks 0CW3, clause (2), with nothing granted.** In the situation of Stacks 0CV6, let
 > `g : X' ⟶ X` be étale over `Y` with `X' ⟶ Y` decent and of finite type. If `ℱ` is pure above
@@ -140,7 +140,7 @@ theorem relativeWeaklyAssociatedPoints_subset_range_of_isAffineLocalAt
       Set.range (pointsMap B S hS c.X'.1 c.g.hom)
 ```
 
-**`AlgebraicGeometry.Space.EtaleOverSource.relativeWeaklyAssociatedPoints_subset_range_of_isFlatOver_fibre_of_isAffineLocalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 952](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L952). The attribute's comment: “clause (3): purity of F above y, flatness of the module F over Y at the points of the fibre, the image of |X'| meeting Ass\_\{X/Y}(F) cap F and an affine local base with closed point y give the containment of Ass\_\{X/Y}(F) in that image. Those are the source's own four assumptions, and nothing beyond them is used”.
+**`AlgebraicGeometry.Space.EtaleOverSource.relativeWeaklyAssociatedPoints_subset_range_of_isFlatOver_fibre_of_isAffineLocalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean, line 952](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphism.lean#L952). The attribute's comment: “clause (3): purity of F above y, flatness of the module F over Y at the points of the fibre, the image of |X'| meeting Ass\_\{X/Y}(F) cap F and an affine local base with closed point y give the containment of Ass\_\{X/Y}(F) in that image. Those are the source's own four assumptions, and nothing beyond them is used”.
 
 > **Stacks 0CW3, clause (3), with nothing granted.** In the situation of Stacks 0CV6, let
 > `g : X' ⟶ X` be étale over `Y` with `X' ⟶ Y` decent and of finite type. If `ℱ` is pure above
@@ -172,7 +172,7 @@ theorem relativeWeaklyAssociatedPoints_subset_range_of_isFlatOver_fibre_of_isAff
       Set.range (pointsMap B S hS c.X'.1 c.g.hom)
 ```
 
-**`AlgebraicGeometry.Space.isPureAbove_of_isEtale_of_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L210). The attribute's comment: “clause (1), both the pure and the universally pure reading, under exactly the source's hypotheses”.
+**`AlgebraicGeometry.Space.isPureAbove_of_isEtale_of_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L210). The attribute's comment: “clause (1), both the pure and the universally pure reading, under exactly the source's hypotheses”.
 
 > **Stacks 0CW3, clause (1).** Let `Y` be an algebraic space over `S`, let `f : X ⟶ Y` be
 > decent and of finite type, `ℱ` a finite type quasi-coherent `𝒪_X`-module and `y ∈ |Y|` (the
@@ -196,7 +196,7 @@ theorem isPureAbove_of_isEtale_of_subset_range (hg : IsEtale B S hS g.hom)
         IsUniversallyPureAbove P)
 ```
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_subset_range_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L231). The attribute's comment: “clause (2), under exactly the source's hypotheses”.
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_subset_range_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L231). The attribute's comment: “clause (2), under exactly the source's hypotheses”.
 
 > **Stacks 0CW3, clause (2).** In the situation of clause (1), if `ℱ` is pure above `y`, the
 > image `g(|X'|)` contains the fibre `F = f^{-1}(\{y\})`, and `Y` is affine local with closed point
@@ -217,7 +217,7 @@ theorem relativeWeaklyAssociatedPoints_subset_range_of_isEtale (hg : IsEtale B S
       Set.range (pointsMap B S hS X'.1 g.hom)
 ```
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_subset_range_of_isEtale_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L255). The attribute's comment: “clause (3), under exactly the source's hypotheses; flatness is flatness of the module over Y at the points of the fibre, as in the source”.
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_subset_range_of_isEtale_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityEtaleMorphismClauses.lean#L255). The attribute's comment: “clause (3), under exactly the source's hypotheses; flatness is flatness of the module over Y at the points of the fibre, as in the source”.
 
 > **Stacks 0CW3, clause (3).** In the situation of clause (1), if `ℱ` is pure above `y`, `ℱ`
 > is flat over `Y` at all points of the fibre `F = f^{-1}(\{y\})` (Stacks 05VV at a point), the
@@ -247,7 +247,7 @@ theorem relativeWeaklyAssociatedPoints_subset_range_of_isEtale_of_isFlatOver
 
 [Tag 0CW4](https://stacks.math.columbia.edu/tag/0CW4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_flat_of_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean#L330).
+**`AlgebraicGeometry.Space.isUniversallyPureAbove_of_flat_of_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean#L330).
 
 > **Stacks 0CW4.** In the situation of Stacks 0CV6 — a decent, finite type morphism
 > `f : X ⟶ Y` of algebraic spaces over `S`, a finite type quasi-coherent `𝒪_X`-module `ℱ` and a
@@ -271,7 +271,7 @@ theorem isUniversallyPureAbove_of_flat_of_isPureAbove (P : PrePureSituation.{u, 
 
 [Tag 0CW5](https://stacks.math.columbia.edu/tag/0CW5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPureRelative_iff_isUniversallyPureRelative_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean#L551).
+**`AlgebraicGeometry.Space.isPureRelative_iff_isUniversallyPureRelative_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/UniversalPurityOfFlatPure.lean#L551).
 
 > **Stacks 0CW5.** In the situation of Stacks 0CV6 — a decent, finite type morphism
 > `f : X ⟶ Y` of algebraic spaces over `S` and a finite type quasi-coherent `𝒪_X`-module `ℱ` — if
@@ -293,7 +293,7 @@ theorem isPureRelative_iff_isUniversallyPureRelative_of_flat (P : PrePureSituati
 
 [Tag 0CW6](https://stacks.math.columbia.edu/tag/0CW6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_unit_of_relativeWeaklyAssociatedPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean#L470). The attribute's comment: “the injectivity assertion”.
+**`AlgebraicGeometry.Space.mono_unit_of_relativeWeaklyAssociatedPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean#L470). The attribute's comment: “the injectivity assertion”.
 
 > **Stacks 0CW6, injectivity.**  Let `Y` be an algebraic space over a scheme `S`, let
 > `g : X' ⟶ X` be a flat morphism of algebraic spaces over `Y` with `X` locally of finite type
@@ -317,7 +317,7 @@ theorem mono_unit_of_relativeWeaklyAssociatedPoints_subset_range
     Mono ((modulePullbackAdjunction B S hS g).unit.app F)
 ```
 
-**`AlgebraicGeometry.Space.mono_unit_baseChange_of_relativeWeaklyAssociatedPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean#L502). The attribute's comment: “the base-change assertion”.
+**`AlgebraicGeometry.Space.mono_unit_baseChange_of_relativeWeaklyAssociatedPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityFlatInjection.lean#L502). The attribute's comment: “the base-change assertion”.
 
 > **Stacks 0CW6, injectivity after an arbitrary base change.**  In the situation of
 > Stacks 0CW6, for every morphism `h : Z ⟶ Y` the canonical map
@@ -359,4 +359,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.6, Tag 0CW0](https://stacks.math.columbia.edu/tag/0CW0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

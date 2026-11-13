@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.9 The Hilbert functor
 
-Section 99.9 of the Stacks Project, [Tag 0CZX](https://stacks.math.columbia.edu/tag/0CZX). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.9 of the Stacks Project, [Tag 0CZX](https://stacks.math.columbia.edu/tag/0CZX). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CZY, a situation
 
 [Tag 0CZY](https://stacks.math.columbia.edu/tag/0CZY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HilbertFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L186). The attribute's comment: “families classified by the functor”.
+**`AlgebraicGeometry.Space.HilbertFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L186). The attribute's comment: “families classified by the functor”.
 
 > **Stacks 0CZY.** A family classified by the Hilbert functor of `f : X ⟶ Y` over a scheme `T`
 > over `Y`: a closed subspace of the base change `X_T` which is of finite presentation, flat and
@@ -24,7 +24,7 @@ Section 99.9 of the Stacks Project, [Tag 0CZX](https://stacks.math.columbia.edu/
 structure HilbertFamily (f : X ⟶ Y) (T : SchemesOverPresheaf B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.hilbertFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L289). The attribute's comment: “the Hilbert functor”.
+**`AlgebraicGeometry.Space.hilbertFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L289). The attribute's comment: “the Hilbert functor”.
 
 > **Stacks 0CZY.** The *Hilbert functor* of `f : X ⟶ Y`: it sends a scheme `T` over `Y` to the
 > set of closed subspaces of `X_T` which are of finite presentation, flat and proper over `T`, and a
@@ -34,7 +34,7 @@ structure HilbertFamily (f : X ⟶ Y) (T : SchemesOverPresheaf B S hS Y)
 def hilbertFunctor (f : X ⟶ Y) : (SchemesOverPresheaf B S hS Y)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.hilbertFunctor_map_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L302). The attribute's comment: “base change in the Hilbert functor”.
+**`AlgebraicGeometry.Space.hilbertFunctor_map_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L302). The attribute's comment: “base change in the Hilbert functor”.
 
 > **Stacks 0CZY.** The Hilbert functor acts by inverse image of closed subspaces along the
 > transition maps of base changes.
@@ -45,7 +45,7 @@ theorem hilbertFunctor_map_obj (f : X ⟶ Y) {T T' : SchemesOverPresheaf B S hS 
     ((hilbertFunctor f).map g.op z).Z = z.Z.preimage (schemeBaseChangeMap f g)
 ```
 
-**`AlgebraicGeometry.Space.HilbertFamilyOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L310). The attribute's comment: “families over the schemes of the site”.
+**`AlgebraicGeometry.Space.HilbertFamilyOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L310). The attribute's comment: “families over the schemes of the site”.
 
 > **Stacks 0CZY.** A family classified by the Hilbert functor, over a scheme of the big fppf site
 > rather than over a scheme of `Y`: the morphism to `Y` it lies over, together with a family over the
@@ -55,7 +55,7 @@ theorem hilbertFunctor_map_obj (f : X ⟶ Y) {T T' : SchemesOverPresheaf B S hS 
 structure HilbertFamilyOver (f : X ⟶ Y) (T : BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Space.hilbertPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L391). The attribute's comment: “the presheaf on the schemes of the site”.
+**`AlgebraicGeometry.Space.hilbertPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L391). The attribute's comment: “the presheaf on the schemes of the site”.
 
 > **Stacks 0CZY.** The Hilbert functor read as a presheaf on the schemes of the big fppf site: a
 > section over `T` is a morphism `T ⟶ Y` together with a family over `T` for the resulting scheme
@@ -65,7 +65,7 @@ structure HilbertFamilyOver (f : X ⟶ Y) (T : BigFppfOver B S hS)
 def hilbertPresheaf (f : X ⟶ Y) : (BigFppfOver B S hS)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.hilbertPresheafToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L401). The attribute's comment: “the canonical morphism to the base”.
+**`AlgebraicGeometry.Space.hilbertPresheafToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctor.lean#L401). The attribute's comment: “the canonical morphism to the base”.
 
 > **Stacks 0CZY.** The canonical morphism from the Hilbert presheaf to the base algebraic space
 > `Y`, sending a family to the morphism to `Y` it lies over. Its target is the universe lift of `Y`
@@ -79,7 +79,7 @@ def hilbertPresheafToBase (f : X ⟶ Y) : hilbertPresheaf f ⟶ Y.obj ⋙ uliftF
 
 [Tag 0D00](https://stacks.math.columbia.edu/tag/0D00) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasProperSupport_pushforwardStructureSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L168). The attribute's comment: “the proper-support entry of the dictionary, both directions”.
+**`AlgebraicGeometry.Space.hasProperSupport_pushforwardStructureSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L168). The attribute's comment: “the proper-support entry of the dictionary, both directions”.
 
 > **The proper-support entry of the dictionary of Stacks 0D00, in both directions.**  Let
 > `g : X ⟶ T` be locally of finite type and let `Z ⊆ X` be a closed subspace with inclusion `i`.
@@ -94,7 +94,7 @@ theorem hasProperSupport_pushforwardStructureSheaf_iff (g : X ⟶ T)
       IsProper B S hS (Z.1.ι ≫ g.hom)
 ```
 
-**`AlgebraicGeometry.Space.hilbertFamilyOfQuotConditions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L388). The attribute's comment: “the converse construction: a quotient of the structure sheaf is a Hilbert family”.
+**`AlgebraicGeometry.Space.hilbertFamilyOfQuotConditions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L388). The attribute's comment: “the converse construction: a quotient of the structure sheaf is a Hilbert family”.
 
 > **Stacks 0D00, the converse construction.**  Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces of finite presentation, let `T` be a scheme of the site over `Y`, and let `W` be a closed
@@ -120,7 +120,7 @@ def hilbertFamilyOfQuotConditions (f : X ⟶ Y) (hf : IsFinitePresentation B S h
     HilbertFamily f T
 ```
 
-**`AlgebraicGeometry.Space.exists_hilbertFamily_definingIdealSheaf_eq_of_quotConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L433). The attribute's comment: “the converse construction, from a quasi-coherent sheaf of ideals”.
+**`AlgebraicGeometry.Space.exists_hilbertFamily_definingIdealSheaf_eq_of_quotConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L433). The attribute's comment: “the converse construction, from a quasi-coherent sheaf of ideals”.
 
 > **Stacks 0D00, the converse construction from the sheaf of ideals.**  A sheaf of ideals
 > `𝓘 ⊆ 𝒪_{X_T}` whose quotient `𝒪_{X_T}/𝓘` is of finite presentation, flat over `T` and with
@@ -149,7 +149,7 @@ theorem exists_hilbertFamily_definingIdealSheaf_eq_of_quotConditions (f : X ⟶ 
       definingIdealSheaf B S hS (schemeBaseChangeSpace f T) ⟨z.Z, z.closed⟩ = I
 ```
 
-**`AlgebraicGeometry.Space.exists_hilbertPresheafIso_quotSitePresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotFunctorEquality.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotFunctorEquality.lean#L279).
+**`AlgebraicGeometry.Space.exists_hilbertPresheafIso_quotSitePresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotFunctorEquality.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotFunctorEquality.lean#L279).
 
 > In Situation 0CZY we have `Hilb_{X/B} = Quot_{𝒪_X/X/B}`: the Hilbert functor of `f` and the
 > Quot functor of its structure sheaf are isomorphic presheaves on the schemes of the big fppf site,
@@ -162,7 +162,7 @@ theorem exists_hilbertPresheafIso_quotSitePresheaf :
         hilbertPresheafToBase f
 ```
 
-**`AlgebraicGeometry.Space.hilbertFamilySubobject_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L240). The attribute's comment: “the forward construction: a Hilbert family is a quotient of the structure sheaf”.
+**`AlgebraicGeometry.Space.hilbertFamilySubobject_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L240). The attribute's comment: “the forward construction: a Hilbert family is a quotient of the structure sheaf”.
 
 > The quotient of `F_T` that a family classified by the Hilbert functor of `f` over `T`
 > determines lies in `Quot_{𝒪_X/X/B}(T)`: it is quasi-coherent, of finite presentation, flat over
@@ -177,14 +177,14 @@ theorem hilbertFamilySubobject_mem (z : HilbertFamily f T) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isFlatOver_pushforwardStructureSheaf_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L258), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L76) (StacksFrontier): “the flatness entry of the dictionary, both directions”.
-- [`AlgebraicGeometry.Space.isFinitePresentationOnSite_pushforwardStructureSheaf_hilbertFamily_unconditional`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyQuotient.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L79) (StacksFrontier): “the finite-presentation entry of the dictionary, for a Hilbert family”.
+- [`AlgebraicGeometry.Space.isFlatOver_pushforwardStructureSheaf_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFamilyStructureSheafDictionary.lean#L258), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L76) (StacksFrontier): “the flatness entry of the dictionary, both directions”.
+- [`isFinitePresentationOnSite_pushforwardStructureSheaf_hilbertFamily_unconditional`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isFinitePresentationOnSite_pushforwardStructureSheaf_hilbertFamily_unconditional#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertQuotObjectwise.lean#L79) (StacksFrontier): “the finite-presentation entry of the dictionary, for a Hilbert family”.
 
 ## Tag 0D3W, a lemma
 
 [Tag 0D3W](https://stacks.math.columbia.edu/tag/0D3W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean#L754). The attribute's comment: “the identification as a bijection, for an arbitrary algebraic space”.
+**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean, line 754](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean#L754). The attribute's comment: “the identification as a bijection, for an arbitrary algebraic space”.
 
 > **Stacks 0D3W.** For an algebraic space `T` over `S` the morphisms of sheaves on the big fppf
 > site of `S` from `T` into the Hilbert presheaf `Hilb_{X/Y}` of Stacks 0CZY are the pairs `(h, Z)`
@@ -209,7 +209,7 @@ def morEquivSpaceHilbertFamily (f : X ⟶ Y) (T : AlgebraicSpaces B S hS)
     (T.obj ⋙ uliftFunctor.{u + 1, u} ⟶ hilbertPresheaf f) ≃ SpaceHilbertFamily f T
 ```
 
-**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamilyOfScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean#L781). The attribute's comment: “the identification for a scheme of the big fppf site, unconditionally”.
+**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamilyOfScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPoints.lean#L781). The attribute's comment: “the identification for a scheme of the big fppf site, unconditionally”.
 
 > **Stacks 0D3W for a scheme of the big fppf site.** The morphisms of sheaves from a scheme `U`
 > of the site into the Hilbert presheaf `Hilb_{X/Y}` of Stacks 0CZY are the pairs `(h, Z)`
@@ -225,7 +225,7 @@ def morEquivSpaceHilbertFamilyOfScheme (f : X ⟶ Y) (U : BigFppfOver B S hS) :
       SpaceHilbertFamily f ⟨yoneda.obj U, isAlgebraicSpace_yoneda B S hS U⟩
 ```
 
-**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamilyOfAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPointsDescent.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPointsDescent.lean#L187). The attribute's comment: “the identification as a bijection, for an arbitrary algebraic space, unconditionally”.
+**`AlgebraicGeometry.Space.morEquivSpaceHilbertFamilyOfAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPointsDescent.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorPointsDescent.lean#L188). The attribute's comment: “the identification as a bijection, for an arbitrary algebraic space, unconditionally”.
 
 > **The points of the Hilbert functor with values in an algebraic space.** In Situation 0CZY,
 > for an algebraic space `T` over `S` the morphisms of sheaves on the big fppf site of `S` from `T`
@@ -246,7 +246,7 @@ def morEquivSpaceHilbertFamilyOfAlgebraicSpace (f : X ⟶ Y) (T : AlgebraicSpace
 
 [Tag 0D01](https://stacks.math.columbia.edu/tag/0D01) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_hilbertPresheafModel_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpace.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpace.lean#L115).
+**`AlgebraicGeometry.Space.exists_hilbertPresheafModel_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpace.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpace.lean#L115).
 
 > **Stacks 0D01.** For a morphism `f : X ⟶ B` of algebraic spaces over `S` which is of finite
 > presentation and separated, the Hilbert functor `Hilb_{X/B}` of Stacks 0CZY is an algebraic space
@@ -278,7 +278,7 @@ theorem exists_hilbertPresheafModel_isAlgebraicSpace {X : AlgebraicSpaces B S hS
         IsLocallyOfFinitePresentation B S hS M.toBase
 ```
 
-**`AlgebraicGeometry.Space.exists_hilbertPresheafModel_isAlgebraicSpace_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpaceOfSeparated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpaceOfSeparated.lean#L52).
+**`AlgebraicGeometry.Space.exists_hilbertPresheafModel_isAlgebraicSpace_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpaceOfSeparated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/HilbertFunctorAlgebraicSpaceOfSeparated.lean#L52).
 
 > Let `S` be a scheme and `f : X ⟶ Y` a morphism of algebraic spaces over `S`. If `f` is of
 > finite presentation and separated, then the Hilbert functor `Hilb_{X/Y}` of Stacks 0CZY is an
@@ -301,4 +301,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.9, Tag 0CZX](https://stacks.math.columbia.edu/tag/0CZX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

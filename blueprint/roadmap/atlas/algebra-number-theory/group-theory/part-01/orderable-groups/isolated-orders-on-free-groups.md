@@ -7,7 +7,7 @@ statement: formalized
 
 # Isolated orders on free groups
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html).
 
 ## Bi-invariant strict total orders on a group
 
@@ -15,7 +15,7 @@ A relation $r$ on a group $G$ is a bi-invariant
 order if $r$ is a strict total order on $G$ (irreflexive, transitive and trichotomous) and
 $r(a, b)$ implies $r(cad, cbd)$ for all $a, b, c, d \in G$.
 
-Formalized by `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.IsBiOrder`, a definition declared in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#is-bi-order).
+Formalized by `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.IsBiOrder`, a definition declared in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#is-bi-order).
 
 ## Kourovka Problem 12.51 (isolated bi-orders of free groups)
 
@@ -26,7 +26,7 @@ $a < b$ implies $cad < cbd$ for all $a, b, c, d \in F_n$) makes every element of
 is, satisfies $1 < s$ for all $s \in S$. Such an order is an isolated point of the space of
 bi-orders of $F_n$.
 
-Formalized by `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.freeGroupHasIsolatedBiOrder`, a definition declared in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#free-group-has-isolated-bi-order).
+Formalized by `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.freeGroupHasIsolatedBiOrder`, a definition declared in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#free-group-has-isolated-bi-order).
 
 ## No free group of finite rank at least 2 has an isolated bi-order
 
@@ -44,7 +44,7 @@ Groups Geom. Dyn. 17 (2023)).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 12.51 (S. McCleary); resolution: K. Muliarchyk, Free products of bi-orderable groups, preprint (2024), arXiv:2403.14779; S. Dovhyi and K. Muliarchyk, Groups Geom. Dyn. 17 (2023), 613-632, Muliarchyk, main theorem: a free product of bi-ordered groups admits no isolated bi-ordering; the Kourovka Notebook (21st issue) marks 12.51 solved, https://arxiv.org/abs/2403.14779.
 
-Stated but not proved: `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.freeGroupHasIsolatedBiOrder_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#free-group-has-isolated-bi-order-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.freeGroupHasIsolatedBiOrder_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupIsolatedBiOrderKourovka12Problem51Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html#free-group-has-isolated-bi-order-refuted).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Isolated orders on free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/orderable-groups/isolated-orders-on-free-groups)

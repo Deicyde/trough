@@ -8,7 +8,7 @@ proof: formalized
 
 # Berndt's power-difference function φᵣ
 
-33 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html).
+33 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html).
 
 ## The Entry 10 zeta factor in Bernoulli form
 
@@ -22,7 +22,7 @@ and $Z(r) = B(r)$ for all $r \in \mathbb{C}$ outside a closed discrete subset of
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta4.ramanujan_part1_ch7_entry10_zeta4`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta4.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta4.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zeta4).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta4.ramanujan_part1_ch7_entry10_zeta4`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta4.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta4.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zeta4).
 
 ## Bernoulli-number expansion of a Bernoulli-polynomial difference
 
@@ -35,7 +35,7 @@ Bernoulli polynomial and $B_k$ are the Bernoulli numbers with $B_1 = -\tfrac12$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8.ramanujan_part1_ch7_entry8`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8.ramanujan_part1_ch7_entry8`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8).
 
 ## Arguments of Berndt's $\varphi_r(x)$
 
@@ -45,7 +45,7 @@ is, the set of real $x$ with $-1 < x < 0$.
 On this interval $x + 1$ lies in $(0, 1)$, so the Hurwitz zeta function at parameter $x + 1$ is
 not affected by reduction modulo $1$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Chapter7PhiArgument`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi-argument).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Chapter7PhiArgument`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi-argument).
 
 ## Berndt's function $\varphi_r(x)$ on $(-1, 0)$
 
@@ -62,7 +62,7 @@ not affected by reduction modulo $1$.
 
 - Bruce C. Berndt, *Ramanujan's Notebooks, Part I*, Chapter 7, equation (2.4), p. 152.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Phi`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Phi`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Phi.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi).
 
 ## A sine series for $\varphi_r(x-1) - \varphi_r(-x)$
 
@@ -78,7 +78,7 @@ $$\frac{\varphi_r(x-1) - \varphi_r(-x)}{4\,\Gamma(r+1)} = -\cos\left(\frac{\pi r
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 15.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry15Vonstaudtclausen.ramanujan_part1_ch7_entry15_vonstaudtclausen`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry15Vonstaudtclausen.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry15Vonstaudtclausen.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry15-vonstaudtcla).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry15Vonstaudtclausen.ramanujan_part1_ch7_entry15_vonstaudtclausen`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry15Vonstaudtclausen.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry15Vonstaudtclausen.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry15-vonstaudtcla).
 
 ## A cosine series for $\varphi_r(x-1) + \varphi_r(-x)$
 
@@ -95,7 +95,7 @@ $$\frac{\varphi_r(x-1) + \varphi_r(-x) - 2\zeta(-r)}{4\,\Gamma(r+1)}
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 16.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry16Kummercongruence.ramanujan_part1_ch7_entry16_kummercongruence`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry16Kummercongruence.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry16Kummercongruence.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry16-kummercongru).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry16Kummercongruence.ramanujan_part1_ch7_entry16_kummercongruence`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry16Kummercongruence.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry16Kummercongruence.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry16-kummercongru).
 
 ## $\varphi_r(-1/4) - \varphi_r(-3/4)$ through the Dirichlet beta function
 
@@ -118,7 +118,7 @@ subset of $\mathbb{C}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry17Bernoullipolysymmetry.ramanujan_part1_ch7_entry17_bernoullipolysymmetry`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry17Bernoullipolysymmetry.lean, line 928](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry17Bernoullipolysymmetry.lean#L928). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry17-bernoullipol).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry17Bernoullipolysymmetry.ramanujan_part1_ch7_entry17_bernoullipolysymmetry`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry17Bernoullipolysymmetry.lean, line 928](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry17Bernoullipolysymmetry.lean#L928). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry17-bernoullipol).
 
 ## Ramanujan's functional equation for $\varphi$ at rationals with odd denominator
 
@@ -135,7 +135,7 @@ $\mathbb{C}$ and agree outside a closed discrete subset of $\mathbb{C}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry19Zetanegint.ramanujan_part1_ch7_entry19_zetanegint`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry19Zetanegint.lean, line 778](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry19Zetanegint.lean#L778). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry19-zetanegint).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry19Zetanegint.ramanujan_part1_ch7_entry19_zetanegint`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry19Zetanegint.lean, line 774](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry19Zetanegint.lean#L774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry19-zetanegint).
 
 ## Ramanujan's functional equation for $\varphi$ at $-1/3$ and $-2/3$
 
@@ -150,7 +150,7 @@ are meromorphic on $\mathbb{C}$ and agree outside a closed discrete subset of $\
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 20.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry20Generalizedbernoullisum.ramanujan_part1_ch7_entry20_generalizedbernoullisum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry20Generalizedbernoullisum.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry20Generalizedbernoullisum.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry20-generalizedb).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry20Generalizedbernoullisum.ramanujan_part1_ch7_entry20_generalizedbernoullisum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry20Generalizedbernoullisum.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry20Generalizedbernoullisum.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry20-generalizedb).
 
 ## Bernoulli-polynomial form of Berndt's $\varphi_r$
 
@@ -162,7 +162,7 @@ For positive $r$ this polynomial agrees on $-1 < x < 0$ with Berndt's
 $\varphi_r(x) = \zeta(-r) - \zeta(-r, x + 1)$, where $\zeta$ is the Riemann zeta function and
 $\zeta(s, a)$ the Hurwitz zeta function, and so extends it to all of $\mathbb{C}$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.chapter7IntegerPhi`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-integer-phi).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.chapter7IntegerPhi`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-integer-phi).
 
 ## Bernoulli and zeta expansions of $P_r$, and sums of powers
 
@@ -180,7 +180,7 @@ natural number $n$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.ramanujan_part1_ch7_entry8_bernoullibound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8-bernoulliboun).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.ramanujan_part1_ch7_entry8_bernoullibound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8-bernoulliboun).
 
 ## Berndt's $\varphi_r$ as a Bernoulli-polynomial difference for positive integer $r$
 
@@ -190,7 +190,7 @@ where $\zeta$ is the Riemann zeta function and $\zeta(s, a)$ the Hurwitz zeta fu
 $P_r(x) = \frac{B_{r+1}(x + 1) - B_{r+1}(1)}{r + 1}$, where $B_{r+1}$ is the Bernoulli
 polynomial of degree $r + 1$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.chapter7Phi_eq_chapter7IntegerPhi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi-eq-chapter7-integer-phi).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.chapter7Phi_eq_chapter7IntegerPhi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-phi-eq-chapter7-integer-phi).
 
 ## Bernoulli and zeta expansions of Berndt's $\varphi_r$ on $(-1, 0)$
 
@@ -207,7 +207,7 @@ $Z_r(x) = \sum_{k=1}^{\lfloor r/2 \rfloor} \binom{r+1}{2k}\, k\, \zeta(1 - 2k)\,
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8, for Berndt's `φ_r` (`chapter7Phi`) on its domain `-1 < x < 0`.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.ramanujan_part1_ch7_entry8_phi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8-phi).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry8Bernoullibound.ramanujan_part1_ch7_entry8_phi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry8Bernoullibound.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry8-phi).
 
 ## Admissible parameters for the power-difference series
 
@@ -215,7 +215,7 @@ A complex number $x$ is admissible
 when $j + 1 + x \ne 0$ for every natural number $j$, that is, when $x$ is not one of
 $-1, -2, -3, \dots$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-3).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-3).
 
 ## Terms of the power-difference series
 
@@ -223,7 +223,7 @@ For complex numbers $r$ and $x$ and a natural number
 $j$, the $j$-th term is $(j + 1)^r - (j + 1 + x)^r$, where $w^r = e^{r \log w}$ is the principal
 power for $w \ne 0$, while $0^r = 0$ for $r \ne 0$ and $0^0 = 1$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-4).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-4).
 
 ## The power-difference series
 
@@ -231,7 +231,7 @@ For complex numbers $r$ and $x$,
 $\varphi_r(x) = \sum_{j \ge 0} \bigl((j + 1)^r - (j + 1 + x)^r\bigr)$ (principal powers), where
 the sum is taken to be $0$ when the series is not summable.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-sum-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7PowerDifference.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-sum-2).
 
 ## Ramanujan's distribution relation for the power-difference function
 
@@ -252,13 +252,13 @@ $0^r = 0$ for $r \ne 0$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta2.ramanujan_part1_ch7_entry10_zeta2`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zeta2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta2.ramanujan_part1_ch7_entry10_zeta2`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zeta2).
 
 ## Power difference term in Ramanujan's Entry 10
 
 The power-difference term of Ramanujan's Entry 10 is [the $j$-th term of the power-difference series](berndt-s-power-difference-function.md), $(j + 1)^r - (j + 1 + x)^r$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta2.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta2.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zeta2.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term).
 
 ## Left side of the corollary to Entry 10
 
@@ -267,7 +267,7 @@ $\varphi : \mathbb{C} \to \mathbb{C} \to \mathbb{C}$, a natural number $n$ and $
 the left side of the corollary to Entry 10 is $\sum_{k=1}^{n-1} \varphi(r, -k/n)$, the empty sum
 $0$ when $n \le 1$. In Berndt's notation, $\varphi(r, x)$ is written $\varphi_r(x)$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryLeft`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-left).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryLeft`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-left).
 
 ## Right side of the corollary to Entry 10
 
@@ -275,7 +275,7 @@ For a natural number $n$ and $r \in \mathbb{C}$,
 the right side of the corollary to Entry 10 is $(n - n^{-r})\,\zeta(-r)$, where $n^{-r}$ is the
 principal complex power and $\zeta$ is the Riemann zeta function.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryRight`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-right).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryRight`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-right).
 
 ## The points $-k/n$ are admissible
 
@@ -285,7 +285,7 @@ natural number $j$.
 
 These are the points at which the left side of the corollary to Entry 10 evaluates $\varphi$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_neg_div`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-neg-div).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_neg_div`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-neg-div).
 
 ## The corollary to Entry 10 in the half-plane $\operatorname{Re} r < -1$
 
@@ -299,7 +299,7 @@ $r \in \mathbb{C}$ with $\operatorname{Re} r < -1$,
 $\sum_{k=1}^{n-1} \varphi(r, -k/n) = (n - n^{-r})\,\zeta(-r)$, where $\zeta$ is the Riemann zeta
 function.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryLeft_eq_right`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-left-eq-right).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryLeft_eq_right`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-entry10-corollary-left-eq-right).
 
 ## Ramanujan's corollary to Entry 10 of Chapter 7
 
@@ -318,40 +318,40 @@ $r \in \mathbb{C}$ with $L(r) \neq R(r)$ has no accumulation point in $\mathbb{C
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.ramanujan_part1_ch7_entry10_zetaviabernoulli`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zetaviaberno).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.ramanujan_part1_ch7_entry10_zetaviabernoulli`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry10-zetaviaberno).
 
 ## Admissibility in the corollary of Ramanujan's Entry 10
 
 Admissibility in the corollary of Ramanujan's Entry 10 is [admissibility for the power-difference series](berndt-s-power-difference-function.md): $x$ is not one of $-1, -2, -3, \dots$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible).
 
 ## Power difference term in the corollary of Entry 10
 
 The power-difference term of the corollary of Ramanujan's Entry 10 is [the $j$-th term of the power-difference series](berndt-s-power-difference-function.md), $(j + 1)^r - (j + 1 + x)^r$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-2).
 
 ## Zero is admissible
 
 The point $x = 0$ is admissible: $j + 1 + x \neq 0$ for every natural
 number $j$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-zero).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-zero).
 
 ## Power-difference terms vanish at exponent zero
 
 For every $x \in \mathbb{C}$ and every
 natural number $j$, the power-difference term $(j + 1)^r - (j + 1 + x)^r$ vanishes at $r = 0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_left`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-zero-left).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_left`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-zero-left).
 
 ## Power-difference terms vanish at $x = 0$
 
 For every $r \in \mathbb{C}$ and every natural
 number $j$, the power-difference term $(j + 1)^r - (j + 1 + x)^r$ vanishes at $x = 0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_right`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-zero-righ).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_right`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry10Zetaviabernoulli.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-zero-righ).
 
 ## Convergence and holomorphy of the power-difference series
 
@@ -364,25 +364,25 @@ sum $\varphi_r(x)$ is a holomorphic function of $r$ on the half-plane $\operator
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.ramanujan_part1_ch7_entry9_bernoulligrowth`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry9-bernoulligrow).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.ramanujan_part1_ch7_entry9_bernoulligrowth`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry9-bernoulligrow).
 
 ## Admissibility in Ramanujan's Entry 9
 
 Admissibility in Ramanujan's Entry 9 is [admissibility for the power-difference series](berndt-s-power-difference-function.md): $x$ is not one of $-1, -2, -3, \dots$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7Admissible`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7Admissible`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-admissible-2).
 
 ## Power difference term in Ramanujan's Entry 9
 
 The power-difference term of Ramanujan's Entry 9 is [the $j$-th term of the power-difference series](berndt-s-power-difference-function.md), $(j + 1)^r - (j + 1 + x)^r$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-3).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-term-3).
 
 ## Power difference sum in Ramanujan's Entry 9
 
 The power-difference sum of Ramanujan's Entry 9 is [the power-difference series](berndt-s-power-difference-function.md) $\varphi_r(x)$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceSum`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-sum).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceSum`, an abbreviation declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Bernoulligrowth.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#chapter7-power-difference-sum).
 
 ## Entire continuations of the power-difference series agree and take Bernoulli values
 
@@ -399,7 +399,7 @@ Bernoulli polynomial.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Zetaeven.ramanujan_part1_ch7_entry9_zetaeven`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Zetaeven.lean, line 1736](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Zetaeven.lean#L1736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry9-zetaeven).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Zetaeven.ramanujan_part1_ch7_entry9_zetaeven`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Zetaeven.lean, line 1731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry9Zetaeven.lean#L1731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html#ramanujan-part1-ch7-entry9-zetaeven).
 
 ## Depends on
 
@@ -408,4 +408,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Berndt's power-difference function φᵣ](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/berndt-s-power-difference-function)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Subset sums with a bounded number of terms
 
-38 results, 15 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html).
+38 results, 15 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html).
 
 ## Generalized $h$-fold sumset
 
@@ -21,7 +21,7 @@ $s_j a_j$ is the sum of $s_j$ copies of $a_j$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1 (definition of `h^{(r̄)}A`).
 
-Formalized by `MetaMathlibExt.generalizedHFoldSumset`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset).
+Formalized by `MetaMathlibExt.generalizedHFoldSumset`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset).
 
 ## The Yang–Chen bound
 
@@ -38,7 +38,7 @@ $$L(\bar r, h) = \sum_{j > \eta} j r_j - \sum_{j < \mu} j r_j + \theta \eta - \d
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1.1 (definitions of `μ`, `η`, `δ`, `θ` and `L(r̄, h)`).
 
-Formalized by `MetaMathlibExt.yangChenBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound).
+Formalized by `MetaMathlibExt.yangChenBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound).
 
 ## Yang–Chen bound at $(1, 1, 1)$ and $h = 2$
 
@@ -51,7 +51,7 @@ Here $\mu = 2$, $\eta = 0$ and $\delta = \theta = 0$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1.1 (definition of `L(r̄, h)`).
 
-Formalized by `MetaMathlibExt.yangChenBound_one_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound-one-one-one-two).
+Formalized by `MetaMathlibExt.yangChenBound_one_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound-one-one-one-two).
 
 ## Yang–Chen bound at $(1, 1, 2)$ and $h = 2$
 
@@ -64,7 +64,7 @@ Here $\mu = 2$, $\eta = 1$ and $\delta = \theta = 0$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1.1 (definition of `L(r̄, h)`).
 
-Formalized by `MetaMathlibExt.yangChenBound_one_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound-one-one-two-two).
+Formalized by `MetaMathlibExt.yangChenBound_one_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-bound-one-one-two-two).
 
 ## A generalized $2$-fold sumset of $\{0, 1, 2\}$
 
@@ -77,7 +77,7 @@ $s_0 + s_1 + s_2 = 2$, equals $\{1, 2, 3\}$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1 (definition of `h^{(r̄)}A`).
 
-Formalized by `MetaMathlibExt.generalizedHFoldSumset_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset-zero-one-two).
+Formalized by `MetaMathlibExt.generalizedHFoldSumset_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset-zero-one-two).
 
 ## Subset sums with a bounded number of terms
 
@@ -93,7 +93,7 @@ The source assumes $\alpha + \beta \le |A|$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1 (definition of `Σ^β_α(A)`).
 
-Formalized by `MetaMathlibExt.boundedSubsetSums`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums).
+Formalized by `MetaMathlibExt.boundedSubsetSums`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums).
 
 ## Bounded subset sums of $\{-1, 1, 2\}$
 
@@ -105,7 +105,7 @@ $\{-1, 0, 1, 2, 3\}$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 1 (definition of `Σ^β_α(A)`).
 
-Formalized by `MetaMathlibExt.boundedSubsetSums_one_one_neg_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-one-one-neg-one-one).
+Formalized by `MetaMathlibExt.boundedSubsetSums_one_one_neg_one_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-one-one-neg-one-one).
 
 ## Sequence with prescribed multiplicities
 
@@ -119,7 +119,7 @@ $\sum_{i : a_i = x} t_i$ times.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 4 (notation `(A, t̄)` for a finite sequence).
 
-Formalized by `MetaMathlibExt.repetitionSequence`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#repetition-sequence).
+Formalized by `MetaMathlibExt.repetitionSequence`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#repetition-sequence).
 
 ## Length of a sequence with repetitions
 
@@ -132,7 +132,7 @@ each $i$, has $t_0 + \dots + t_{k-1}$ elements counted with multiplicity.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 4 (notation `(A, t̄)` for a finite sequence).
 
-Formalized by `MetaMathlibExt.card_repetitionSequence`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-repetition-sequence).
+Formalized by `MetaMathlibExt.card_repetitionSequence`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-repetition-sequence).
 
 ## Subsequence sums with a bounded number of terms
 
@@ -147,7 +147,7 @@ $\alpha$ and at most $|\mathcal{A}| - \beta$ terms; it is empty when $\beta > |\
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 4 (definition of `Σ^β_α(𝒜)`).
 
-Formalized by `MetaMathlibExt.boundedSubsequenceSums`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums).
+Formalized by `MetaMathlibExt.boundedSubsequenceSums`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums).
 
 ## An example of bounded subsequence sums
 
@@ -160,7 +160,7 @@ at most two terms are $-2$, $7$, $-2 + 7 = 5$ and $7 + 7 = 14$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Section 4 (definition of `Σ^β_α(𝒜)`).
 
-Formalized by `MetaMathlibExt.boundedSubsequenceSums_one_one_example`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-one-one-example).
+Formalized by `MetaMathlibExt.boundedSubsequenceSums_one_one_example`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-one-one-example).
 
 ## Mixed-sign subset-sum bound
 
@@ -183,7 +183,7 @@ $\alpha + \beta + 1 \le n + p$ exactly one of them applies.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 7 (definition of `L(α, β, A)`).
 
-Formalized by `MetaMathlibExt.mixedSignSubsetSumBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-subset-sum-bound).
+Formalized by `MetaMathlibExt.mixedSignSubsetSumBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-subset-sum-bound).
 
 ## A value of the mixed-sign subset-sum bound
 
@@ -197,7 +197,7 @@ $\{-1, 0, 1, 2, 3\}$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 7 (definition of `L(α, β, A)`).
 
-Formalized by `MetaMathlibExt.mixedSignSubsetSumBound_one_two_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-subset-sum-bound-one-two-one).
+Formalized by `MetaMathlibExt.mixedSignSubsetSumBound_one_two_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-subset-sum-bound-one-two-one).
 
 ## Mixed-sign subset-sum bound with zero
 
@@ -221,7 +221,7 @@ $\alpha + \beta + 1 \le n + p + 1$ exactly one of them applies.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 8 (definition of `L₀(α, β, A)`).
 
-Formalized by `MetaMathlibExt.mixedSignZeroSubsetSumBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-zero-subset-sum-bound).
+Formalized by `MetaMathlibExt.mixedSignZeroSubsetSumBound`, a definition declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-zero-subset-sum-bound).
 
 ## A value of the mixed-sign subset-sum bound with zero
 
@@ -236,7 +236,7 @@ $\{-1, 0, 1\}$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 8 (definition of `L₀(α, β, A)`).
 
-Formalized by `MetaMathlibExt.mixedSignZeroSubsetSumBound_one_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-zero-subset-sum-bound-one-one).
+Formalized by `MetaMathlibExt.mixedSignZeroSubsetSumBound_one_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#mixed-sign-zero-subset-sum-bound-one-one).
 
 ## Yang–Chen lower bound for generalized $h$-fold sumsets
 
@@ -251,7 +251,7 @@ $h^{(\bar r)}A$ has exactly $L(\bar r, h)$ elements.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 2 (Yang and Chen).
 
-Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset).
+Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset).
 
 ## Yang–Chen inverse theorem for at least five terms
 
@@ -265,7 +265,7 @@ $L(\bar r, h)$ elements if and only if $A$ is an arithmetic progression of lengt
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 3 (Yang and Chen).
 
-Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_iff_isAP` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-2).
+Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_iff_isAP` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-2).
 
 ## Yang–Chen inverse theorem for three terms
 
@@ -280,7 +280,7 @@ arithmetic progression of length $3$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 4 (Yang and Chen).
 
-Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-3).
+Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-3).
 
 ## Yang–Chen inverse theorem for four terms
 
@@ -296,7 +296,7 @@ progression of length $4$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 5 (Yang and Chen).
 
-Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-4).
+Stated but not proved: `MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#yang-chen-card-generalized-hfold-sumset-4).
 
 ## Bounded subset sums as a generalized h-fold sumset when zero is not in the set
 
@@ -313,7 +313,7 @@ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = k - \beta$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsetSums_eq_generalizedHFoldSumset_of_zero_not_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-eq-generalized-hfold).
+Stated but not proved: `MetaMathlibExt.boundedSubsetSums_eq_generalizedHFoldSumset_of_zero_not_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-eq-generalized-hfold).
 
 ## Bounded subset sums as a generalized h-fold sumset when zero is in the set
 
@@ -331,7 +331,7 @@ $\sum_{j=0}^{m} s_j a_j$ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = 
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsetSums_eq_generalizedHFoldSumset_of_zero_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-eq-generalized-hfold-2).
+Stated but not proved: `MetaMathlibExt.boundedSubsetSums_eq_generalizedHFoldSumset_of_zero_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-eq-generalized-hfold-2).
 
 ## Reordering invariance of the generalized $h$-fold sumset
 
@@ -350,7 +350,7 @@ here.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedHFoldSumset_comp_perm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset-comp-perm).
+Stated but not proved: `MetaMathlibExt.generalizedHFoldSumset_comp_perm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#generalized-hfold-sumset-comp-perm).
 
 ## Bounded subsequence sums as a generalized h-fold sumset when zero is not a term
 
@@ -369,7 +369,7 @@ $\sum_{j=0}^{k} s_j a_j$ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = 
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_eq_generalizedHFoldSumset_of_zero_not_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-eq-generalized).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_eq_generalizedHFoldSumset_of_zero_not_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-eq-generalized).
 
 ## Bounded subsequence sums as a generalized h-fold sumset when zero is a term
 
@@ -388,7 +388,7 @@ $\sum_{j=0}^{m} s_j a_j$ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = 
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_eq_generalizedHFoldSumset_of_zero_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-eq-generalized-2).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_eq_generalizedHFoldSumset_of_zero_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-eq-generalized-2).
 
 ## Sharp lower bounds for bounded subset sums of nonnegative sets
 
@@ -406,7 +406,7 @@ $A = \{0, 1, \dots, k - 1\}$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_of_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-of-nonneg).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_of_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-of-nonneg).
 
 ## Lower bound for bounded subset sums of a mixed-sign set
 
@@ -422,7 +422,7 @@ $|\Sigma_\alpha^\beta(A)| \ge L_{n,p}(\alpha, \beta)$, and some such set $A$ att
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-mixed-sign).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-mixed-sign).
 
 ## Lower bound for subset sums of a mixed-sign set containing zero
 
@@ -438,7 +438,7 @@ mixed-sign bound with zero, which depends only on $n$, $p$, $\alpha$ and $\beta$
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-mixed-sign-z).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsetSums_ge_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subset-sums-ge-mixed-sign-z).
 
 ## Inverse theorem for subset sums of nonnegative sets
 
@@ -459,7 +459,7 @@ $A = \{0, x, y, x + y\}$ for some integers $0 < x < y$ when $k = 4$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_of_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-of-nonneg).
+Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_of_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-of-nonneg).
 
 ## Inverse theorem for subset sums of a mixed-sign set
 
@@ -482,7 +482,7 @@ The factor $d$ is then the least positive element of $A$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-mixed-sign).
+Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-mixed-sign).
 
 ## Inverse theorem for subset sums of a mixed-sign set containing zero
 
@@ -502,7 +502,7 @@ The factor $d$ is then the least positive element of $A$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-mixed-sign-z).
+Stated but not proved: `MetaMathlibExt.boundedSubsetSums_inverse_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subset-sums-inverse-mixed-sign-z).
 
 ## Lower bound for bounded subsequence sums of a positive sequence
 
@@ -520,7 +520,7 @@ Yang–Chen bound.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_of_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-of-pos).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_of_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-of-pos).
 
 ## Lower bound for bounded subsequence sums of a nonnegative sequence containing zero
 
@@ -538,7 +538,7 @@ terms, and $L$ is the Yang–Chen bound.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_of_nonneg_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-of-nonn).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_of_nonneg_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-of-nonn).
 
 ## Lower bound for bounded subsequence sums of a mixed-sign sequence
 
@@ -557,7 +557,7 @@ $L$ is the Yang–Chen bound.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-mixed-s).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-mixed-s).
 
 ## Lower bound for bounded subsequence sums of a mixed-sign sequence containing zero
 
@@ -577,7 +577,7 @@ $L$ is the Yang–Chen bound.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-mixed-s-2).
+Stated but not proved: `MetaMathlibExt.card_boundedSubsequenceSums_ge_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#card-bounded-subsequence-sums-ge-mixed-s-2).
 
 ## Inverse theorem for bounded subsequence sums of positive sequences
 
@@ -601,7 +601,7 @@ $e > 0$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_of_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-of-pos).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_of_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-of-pos).
 
 ## Inverse theorem for bounded subsequence sums of nonnegative sequences containing zero
 
@@ -626,7 +626,7 @@ $e > 0$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_of_nonneg_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-of-nonn).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_of_nonneg_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-of-nonn).
 
 ## Inverse theorem for bounded subsequence sums of mixed-sign sequences without zero
 
@@ -652,7 +652,7 @@ $|\Sigma^1_1(\mathcal{A})| = |\{-2, 5, 7, 14\}| = 4 = L((1, 1, 2), 2)$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-mixed-s).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_mixedSign` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-mixed-s).
 
 ## Inverse theorem for bounded subsequence sums of mixed-sign sequences containing zero
 
@@ -682,7 +682,7 @@ $e > 0$.
 
 - Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 629](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-mixed-s-2).
+Stated but not proved: `MetaMathlibExt.boundedSubsequenceSums_inverse_mixedSign_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean, line 629](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/BoundedSubsetSumsWanted.lean#L629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html#bounded-subsequence-sums-inverse-mixed-s-2).
 
 ## Depends on
 
@@ -691,4 +691,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Subset sums with a bounded number of terms](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/subset-sums-with-a-bounded-number-of-terms)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Thue–Siegel–Roth theorem
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html).
 
 ## Roth's theorem with divisibility conditions
 
@@ -23,7 +23,7 @@ $d$, and $d^{\mu_l} \le p_l^{a_l}$ and $d^{\nu_l} \le p_l^{b_l}$ for every $l \i
 
 Taking $S$ empty gives the usual archimedean approximation statement.
 
-Formalized by `MathlibExt.NumberTheory.RothAuxiliary.finite_of_divisible_approximations`, a theorem declared in [MathlibExt/NumberTheory/RothAuxiliary.lean, line 6000](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/RothAuxiliary.lean#L6000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#finite-of-divisible-approximations).
+Formalized by `MathlibExt.NumberTheory.RothAuxiliary.finite_of_divisible_approximations`, a theorem declared in [MathlibExt/NumberTheory/RothAuxiliary.lean, line 6000](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/RothAuxiliary.lean#L6000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#finite-of-divisible-approximations).
 
 ## Ridout's $p$-adic extension of Roth's theorem
 
@@ -47,7 +47,7 @@ S-adic integrality step supplied by valuation divisibility and a finite pigeonho
 
 - Boris Adamczewski, "The Many Faces of the Kempner Number", Journal of Integer Sequences 16 (2013), Article 13.2.15, `thmRi` environment, lines 736–746, attributed there to Ridout, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Adamczewski/adam6.tex>.
 
-Formalized by `MetaMathlibExt.ridout_padic_roth`, a theorem declared in [MathlibExt/NumberTheory/RidoutPadicRoth.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/RidoutPadicRoth.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#ridout-padic-roth).
+Formalized by `MetaMathlibExt.ridout_padic_roth`, a theorem declared in [MathlibExt/NumberTheory/RidoutPadicRoth.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/RidoutPadicRoth.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#ridout-padic-roth).
 
 ## Thue–Siegel–Roth theorem
 
@@ -63,7 +63,7 @@ approximation points by a Taylor estimate, and contradicts the inductive Roth le
 
 - K. F. Roth, Rational approximations to algebraic numbers, Mathematika 2 (1955) 1–20; predecessors Thue 1909 and Siegel 1921; textbook in Schmidt, Diophantine Approximation
 
-Formalized by `MathlibExt.NumberTheory.ThueSiegelRothWanted.thue_siegel_roth`, a theorem declared in [MathlibExt/NumberTheory/ThueSiegelRoth.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ThueSiegelRoth.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#thue-siegel-roth).
+Formalized by `MathlibExt.NumberTheory.ThueSiegelRothWanted.thue_siegel_roth`, a theorem declared in [MathlibExt/NumberTheory/ThueSiegelRoth.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ThueSiegelRoth.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html#thue-siegel-roth).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Thue–Siegel–Roth theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/thue-siegel-roth-theorem)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Prime factors of given multiplicity in h-free polynomials
 
-78 results, 55 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html).
+78 results, 55 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html).
 
 ## Monic polynomials of fixed degree
 
@@ -19,7 +19,7 @@ $X^n + c_{n-1} X^{n-1} + \dots + c_1 X + c_0$ with $c_0, \dots, c_{n-1} \in F$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.fixedDegreeMonic`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#fixed-degree-monic).
+Formalized by `MetaMathlibExt.fixedDegreeMonic`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#fixed-degree-monic).
 
 ## Membership in $M_n$
 
@@ -31,7 +31,7 @@ $c_0, \dots, c_{n-1} \in F$ with $f = X^n + \sum_{i=0}^{n-1} c_i X^i$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.mem_fixedDegreeMonic_iff`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#mem-fixed-degree-monic-iff).
+Formalized by `MetaMathlibExt.mem_fixedDegreeMonic_iff`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#mem-fixed-degree-monic-iff).
 
 ## The only monic polynomial of degree zero
 
@@ -42,7 +42,7 @@ polynomials of degree $0$ over $F$ is $\{1\}$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.fixedDegreeMonic_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#fixed-degree-monic-zero).
+Formalized by `MetaMathlibExt.fixedDegreeMonic_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#fixed-degree-monic-zero).
 
 ## Monic irreducible polynomials
 
@@ -53,7 +53,7 @@ $F$ that are monic and irreducible; these are the prime polynomials of the paper
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.monicIrreducible`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#monic-irreducible).
+Formalized by `MetaMathlibExt.monicIrreducible`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#monic-irreducible).
 
 ## Membership in the set of monic irreducible polynomials
 
@@ -65,7 +65,7 @@ $P$ is monic and irreducible.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.mem_monicIrreducible_iff`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#mem-monic-irreducible-iff).
+Formalized by `MetaMathlibExt.mem_monicIrreducible_iff`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#mem-monic-irreducible-iff).
 
 ## $h$-free polynomials
 
@@ -80,7 +80,7 @@ separately assume $h \ge 2$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.hFree`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free).
+Formalized by `MetaMathlibExt.hFree`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free).
 
 ## The polynomial $1$ is $h$-free
 
@@ -92,7 +92,7 @@ irreducible polynomial divides it.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.one_mem_hFree`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#one-mem-h-free).
+Formalized by `MetaMathlibExt.one_mem_hFree`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#one-mem-h-free).
 
 ## $h$-full polynomials
 
@@ -106,7 +106,7 @@ As in the source, theorem statements impose $h \ge 2$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.hFull`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full).
+Formalized by `MetaMathlibExt.hFull`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full).
 
 ## The polynomial $1$ is $h$-full
 
@@ -120,7 +120,7 @@ The divisibility condition holds vacuously, since no irreducible polynomial divi
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.one_mem_hFull`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#one-mem-h-full).
+Formalized by `MetaMathlibExt.one_mem_hFull`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#one-mem-h-full).
 
 ## Number of prime factors of given multiplicity
 
@@ -133,7 +133,7 @@ exactly $k$. For the zero polynomial, $\omega_k(0) = 0$ by convention.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.omegaMult`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult).
+Formalized by `MetaMathlibExt.omegaMult`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult).
 
 ## $\omega_k$ vanishes at the zero polynomial
 
@@ -146,7 +146,7 @@ by convention, so this records that convention.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.omegaMult_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-zero).
+Formalized by `MetaMathlibExt.omegaMult_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-zero).
 
 ## $\omega_k$ vanishes at the polynomial $1$
 
@@ -160,7 +160,7 @@ The polynomial $1$ is a unit, so it has no monic irreducible factors.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Definitions.
 
-Formalized by `MetaMathlibExt.omegaMult_one`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-one).
+Formalized by `MetaMathlibExt.omegaMult_one`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-one).
 
 ## Degree-nondecreasing functions
 
@@ -176,7 +176,7 @@ adequate because $U$ will consist of monic, hence nonzero, polynomials.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3 (definition preceding the requested normal-order results).
 
-Formalized by `MetaMathlibExt.IsDegreeNondecreasing`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#is-degree-nondecreasing).
+Formalized by `MetaMathlibExt.IsDegreeNondecreasing`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#is-degree-nondecreasing).
 
 ## Constant functions are degree-nondecreasing
 
@@ -188,7 +188,7 @@ degree-nondecreasing on $U$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3 (definition preceding the requested normal-order results).
 
-Formalized by `MetaMathlibExt.isDegreeNondecreasing_const`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#is-degree-nondecreasing-const).
+Formalized by `MetaMathlibExt.isDegreeNondecreasing_const`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#is-degree-nondecreasing-const).
 
 ## Normal order on a set of polynomials
 
@@ -208,7 +208,7 @@ with nonnegativity imposed on $U$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3 (definition preceding the requested normal-order results).
 
-Formalized by `MetaMathlibExt.HasNormalOrder`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#has-normal-order).
+Formalized by `MetaMathlibExt.HasNormalOrder`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#has-normal-order).
 
 ## Normal orders are nonnegative
 
@@ -222,7 +222,7 @@ This is the second defining clause of a normal order.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3 (definition preceding the requested normal-order results).
 
-Formalized by `MetaMathlibExt.HasNormalOrder.nonnegative`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#nonnegative).
+Formalized by `MetaMathlibExt.HasNormalOrder.nonnegative`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#nonnegative).
 
 ## Erdős–Kac theorem for $\omega_1$ on $h$-free polynomials
 
@@ -241,7 +241,7 @@ $p_n \to \frac{1}{\sqrt{2\pi}} \int_\alpha^\beta e^{-t^2/2}\,dt$ as $n \to \inft
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.erdosKac_omegaOne_hFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#erdos-kac-omega-one-h-free).
+Stated but not proved: `MetaMathlibExt.erdosKac_omegaOne_hFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#erdos-kac-omega-one-h-free).
 
 ## $\omega_k$ has no normal order on $h$-free polynomials for $1 < k < h$
 
@@ -256,7 +256,7 @@ exactly $k$, viewed as a real-valued function, does not have normal order $G$ on
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.omegaMult_no_normalOrder_hFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-no-normal-order-h-free).
+Stated but not proved: `MetaMathlibExt.omegaMult_no_normalOrder_hFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-no-normal-order-h-free).
 
 ## Erdős–Kac theorem for $\omega_h$ on $h$-full polynomials
 
@@ -276,7 +276,7 @@ $n \to \infty$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.erdosKac_omegaH_hFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#erdos-kac-omega-h-h-full).
+Stated but not proved: `MetaMathlibExt.erdosKac_omegaH_hFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#erdos-kac-omega-h-h-full).
 
 ## $\omega_k$ has no normal order on $h$-full polynomials for $k > h$
 
@@ -291,7 +291,7 @@ exactly $k$, viewed as a real-valued function, does not have normal order $G$ on
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.omegaMult_no_normalOrder_hFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-no-normal-order-h-full).
+Stated but not proved: `MetaMathlibExt.omegaMult_no_normalOrder_hFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-no-normal-order-h-full).
 
 ## Counting $\ell$-free polynomials coprime to an irreducible
 
@@ -314,7 +314,7 @@ a pole at $s = 1$, so the statement here assumes $\ell \ge 2$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_hFree_coprime_irreducible_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-free-coprime-irreducible-asymptot).
+Stated but not proved: `MetaMathlibExt.card_hFree_coprime_irreducible_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-free-coprime-irreducible-asymptot).
 
 ## Perron's formula for degree slices of monic polynomials
 
@@ -337,7 +337,7 @@ circle, the only values the contour integral sees.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.perron_formula_polynomial_degree_slice` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#perron-formula-polynomial-degree-slice).
+Stated but not proved: `MetaMathlibExt.perron_formula_polynomial_degree_slice` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#perron-formula-polynomial-degree-slice).
 
 ## The polynomial norm $q^{\deg f}$ over a finite field
 
@@ -349,7 +349,7 @@ $f \neq 0$, and $|0| = 0$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Introduction.
 
-Formalized by `MetaMathlibExt.polyNorm`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm).
+Formalized by `MetaMathlibExt.polyNorm`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm).
 
 ## The zero polynomial has norm $0$
 
@@ -360,7 +360,7 @@ polynomial in $F[X]$ is $|0| = 0$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Introduction.
 
-Formalized by `MetaMathlibExt.polyNorm_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm-zero).
+Formalized by `MetaMathlibExt.polyNorm_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm-zero).
 
 ## A nonzero polynomial has norm $q^{\deg f}$
 
@@ -371,7 +371,7 @@ elements. Every nonzero polynomial $f \in F[X]$ has norm $|f| = q^{\deg f}$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Introduction.
 
-Formalized by `MetaMathlibExt.polyNorm_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm-of-ne-zero).
+Formalized by `MetaMathlibExt.polyNorm_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#poly-norm-of-ne-zero).
 
 ## Function field Mertens constant
 
@@ -387,7 +387,7 @@ polynomials $P$ over $F$, and $|P| = q^{\deg P}$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Introduction.
 
-Formalized by `MetaMathlibExt.functionFieldMertensConstant`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#function-field-mertens-constant).
+Formalized by `MetaMathlibExt.functionFieldMertensConstant`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#function-field-mertens-constant).
 
 ## Series for the function field Mertens constant
 
@@ -403,7 +403,7 @@ polynomials $P$ over $F$, and $|P| = q^{\deg P}$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Introduction.
 
-Formalized by `MetaMathlibExt.functionFieldMertensConstant_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#function-field-mertens-constant-eq).
+Formalized by `MetaMathlibExt.functionFieldMertensConstant_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#function-field-mertens-constant-eq).
 
 ## Moments of $\omega_k$ over $h$-free polynomials
 
@@ -422,7 +422,7 @@ which is $0$ when $S_h \cap M_n$ is empty.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 1 and 3.
 
-Formalized by `MetaMathlibExt.hFreeMoment`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-moment).
+Formalized by `MetaMathlibExt.hFreeMoment`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-moment).
 
 ## Explicit formula for the moments over h-free polynomials
 
@@ -440,7 +440,7 @@ which is $0$ when $S_h \cap M_n$ is empty.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 1 and 3.
 
-Formalized by `MetaMathlibExt.hFreeMoment_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-moment-eq).
+Formalized by `MetaMathlibExt.hFreeMoment_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-moment-eq).
 
 ## The prime sum $T_h$
 
@@ -460,7 +460,7 @@ factors of multiplicity exactly one of a monic $h$-free polynomial of degree $n$
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1.
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sum).
+Formalized by `MetaMathlibExt.hFreeOmegaOneSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sum).
 
 ## Unfolding the prime sum $T_h$
 
@@ -477,7 +477,7 @@ vanishes, is read as $0$; the sum is taken to be $0$ if it does not converge abs
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1.
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sum-eq).
+Formalized by `MetaMathlibExt.hFreeOmegaOneSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sum-eq).
 
 ## The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials
 
@@ -497,7 +497,7 @@ irreducible factors of multiplicity exactly $1$ over $h$-free polynomials.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1.
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sq-sum).
+Formalized by `MetaMathlibExt.hFreeOmegaOneSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sq-sum).
 
 ## Series formula for the squared prime sum $U_h$
 
@@ -515,7 +515,7 @@ $h = 0$) is read as $0$ and the sum is $0$ when the series does not converge abs
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1.
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sq-sum-eq).
+Formalized by `MetaMathlibExt.hFreeOmegaOneSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-sq-sum-eq).
 
 ## The prime sum $S_{h,k}$ for multiplicity $k$ on $h$-free polynomials
 
@@ -530,7 +530,7 @@ converge absolutely.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3.
 
-Formalized by `MetaMathlibExt.hFreeOmegaMultSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sum).
+Formalized by `MetaMathlibExt.hFreeOmegaMultSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sum).
 
 ## Series formula for the prime sum $S_{h,k}$
 
@@ -545,7 +545,7 @@ when the series does not converge absolutely.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3.
 
-Formalized by `MetaMathlibExt.hFreeOmegaMultSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sum-eq).
+Formalized by `MetaMathlibExt.hFreeOmegaMultSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sum-eq).
 
 ## Squared prime sum for multiplicity $k$ on $h$-free polynomials
 
@@ -560,7 +560,7 @@ does not converge absolutely.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3.
 
-Formalized by `MetaMathlibExt.hFreeOmegaMultSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sq-sum).
+Formalized by `MetaMathlibExt.hFreeOmegaMultSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sq-sum).
 
 ## Series formula for the squared prime sum for multiplicity $k$ on $h$-free polynomials
 
@@ -575,7 +575,7 @@ does not converge absolutely.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3.
 
-Formalized by `MetaMathlibExt.hFreeOmegaMultSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sq-sum-eq).
+Formalized by `MetaMathlibExt.hFreeOmegaMultSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-mult-sq-sum-eq).
 
 ## Mean of $\omega_1$ over $h$-free polynomials
 
@@ -591,7 +591,7 @@ $\log n + B_1 - T_h + O(1/n)$ as $n \to \infty$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1, Equation (4).
 
-Stated but not proved: `MetaMathlibExt.omegaOne_hFree_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-mean-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaOne_hFree_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 530](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L530). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-mean-asymptotic).
 
 ## Second moment of $\omega_1$ over $h$-free polynomials
 
@@ -616,7 +616,7 @@ variance formula state.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1, Equation (5).
 
-Stated but not proved: `MetaMathlibExt.omegaOne_hFree_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-second-moment-asymptoti).
+Stated but not proved: `MetaMathlibExt.omegaOne_hFree_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-second-moment-asymptoti).
 
 ## Variance of $\omega_1$ over $h$-free polynomials
 
@@ -634,7 +634,7 @@ $\log n + B_1 - \pi^2/6 - U_h - T_h + O(n^{\varepsilon - 1})$ as $n \to \infty$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.omegaOne_hFree_variance_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-variance-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaOne_hFree_variance_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-one-h-free-variance-asymptotic).
 
 ## Mean of $\omega_k$ over $h$-free polynomials
 
@@ -651,7 +651,7 @@ $S_h \cap M_n$ is $S_{h,k} + O(q^{n/k - n + \varepsilon n})$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3, Equation (6).
 
-Stated but not proved: `MetaMathlibExt.omegaMult_hFree_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-free-mean-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaMult_hFree_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-free-mean-asymptotic).
 
 ## Second moment of $\omega_k$ over $h$-free polynomials
 
@@ -668,7 +668,7 @@ $S_h \cap M_n$ is $S_{h,k}^2 - \sum_P a_P^2 + S_{h,k} + O(q^{n/k - n + \varepsil
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3, Equation (7).
 
-Stated but not proved: `MetaMathlibExt.omegaMult_hFree_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-free-second-moment-asymptot).
+Stated but not proved: `MetaMathlibExt.omegaMult_hFree_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-free-second-moment-asymptot).
 
 ## Derivatives at $z = 1$ of uniform approximations
 
@@ -689,7 +689,7 @@ $n \ge 1$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.iteratedDeriv_sub_isBigO_of_uniform_approx` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#iterated-deriv-sub-is-big-o-of-uniform-a).
+Stated but not proved: `MetaMathlibExt.iteratedDeriv_sub_isBigO_of_uniform_approx` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#iterated-deriv-sub-is-big-o-of-uniform-a).
 
 ## Selberg–Delange theorem for function fields
 
@@ -719,7 +719,7 @@ with $A = 2$).
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.selbergDelange_functionField` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#selberg-delange-function-field).
+Stated but not proved: `MetaMathlibExt.selbergDelange_functionField` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#selberg-delange-function-field).
 
 ## Selberg–Delange theorem, $h$-th power version
 
@@ -750,7 +750,7 @@ the weight is $(n+1)^{2A+2}$ rather than $n^{2A+2}$, so that $B_z(0)$ is bounded
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.selbergDelange_functionField_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 651](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L651). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#selberg-delange-function-field-pow).
+Stated but not proved: `MetaMathlibExt.selbergDelange_functionField_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 651](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L651). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#selberg-delange-function-field-pow).
 
 ## Coefficients of $B_{1,S_h}(u, z)$
 
@@ -771,7 +771,7 @@ $$B_z(n) = \sum_{a=0}^{n} \Bigl(\sum_{f \in S_h,\ \deg f = a} z^{\omega_1(f)}\Bi
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 3.1 (definition preceding Lemma 2).
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneB`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b).
+Formalized by `MetaMathlibExt.hFreeOmegaOneB`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b).
 
 ## Constant coefficient of $B_{1,S_h}$
 
@@ -791,7 +791,7 @@ The only monic polynomial of degree $0$ is $1$, which is $h$-free and has $\omeg
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 3.1 (definition preceding Lemma 2).
 
-Formalized by `MetaMathlibExt.hFreeOmegaOneB_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b-zero).
+Formalized by `MetaMathlibExt.hFreeOmegaOneB_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b-zero).
 
 ## The coefficients $B_z(n)$ of the $h$-full series
 
@@ -813,7 +813,7 @@ has coefficient $q^m (-z)_m / m!$ at $u^{hm}$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 4.1 (definition preceding Lemma 4).
 
-Formalized by `MetaMathlibExt.hFullOmegaHB`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb).
+Formalized by `MetaMathlibExt.hFullOmegaHB`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb).
 
 ## Constant coefficient of $B_{h,N_h}$
 
@@ -830,7 +830,7 @@ The only monic polynomial of degree $0$ is $1$, which is $h$-full and has $\omeg
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 4.1 (definition preceding Lemma 4).
 
-Formalized by `MetaMathlibExt.hFullOmegaHB_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb-zero).
+Formalized by `MetaMathlibExt.hFullOmegaHB_zero`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb-zero).
 
 ## Weighted coefficient bound for $B_{1,S_h}$
 
@@ -852,7 +852,7 @@ $$\sum_{a=0}^{n} |B_z(a)|\, q^{-\sigma a} \le c.$$
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.hFreeOmegaOneB_weighted_sum_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b-weighted-sum-bounded).
+Stated but not proved: `MetaMathlibExt.hFreeOmegaOneB_weighted_sum_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-free-omega-one-b-weighted-sum-bounded).
 
 ## Uniform bound for the weighted coefficients of $B_{h,N_h}(u, z)$
 
@@ -870,7 +870,7 @@ $h$-full polynomials over $F$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.hFullOmegaHB_weighted_sum_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb-weighted-sum-bounded).
+Stated but not proved: `MetaMathlibExt.hFullOmegaHB_weighted_sum_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-hb-weighted-sum-bounded).
 
 ## The pole parameter $q^{1/h}\xi^j$
 
@@ -886,7 +886,7 @@ $(q^{1/h}\xi^j)^{-1}$ are the poles $u$ of $Z_q(u^h)$, where $Z_q(u) = 1/(1 - qu
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 4.
 
-Formalized by `MetaMathlibExt.hFullRoot`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-root).
+Formalized by `MetaMathlibExt.hFullRoot`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-root).
 
 ## Formula for the pole parameter
 
@@ -899,7 +899,7 @@ as a complex number and multiplied by $\xi^j$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 4.
 
-Formalized by `MetaMathlibExt.hFullRoot_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-root-eq).
+Formalized by `MetaMathlibExt.hFullRoot_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-root-eq).
 
 ## The Euler product $H_{N_h, S_\ell}$ for $h$-full, $\ell$-free polynomials
 
@@ -917,7 +917,7 @@ is taken to be $1$ if it does not converge unconditionally.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 5, Equation (53).
 
-Formalized by `MetaMathlibExt.hFullFreeEulerH`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 770](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-free-euler-h).
+Formalized by `MetaMathlibExt.hFullFreeEulerH`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 770](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-free-euler-h).
 
 ## Unfolding the Euler product $H_{N_h, S_\ell}$
 
@@ -934,7 +934,7 @@ product is taken to be $1$ if it does not converge unconditionally.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 5, Equation (53).
 
-Formalized by `MetaMathlibExt.hFullFreeEulerH_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-free-euler-h-eq).
+Formalized by `MetaMathlibExt.hFullFreeEulerH_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-free-euler-h-eq).
 
 ## Counting $h$-full, $\ell$-free polynomials
 
@@ -955,7 +955,7 @@ $$\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1}) \Bigr|
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 5, Equation (51).
 
-Stated but not proved: `MetaMathlibExt.card_hFull_hFree_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 796](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-full-h-free-asymptotic).
+Stated but not proved: `MetaMathlibExt.card_hFull_hFree_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 796](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-full-h-free-asymptotic).
 
 ## Counting $h$-full, $\ell$-free polynomials coprime to an irreducible
 
@@ -977,7 +977,7 @@ $$\Bigl| N - \frac{q^{n/h}}{h} \sum_{j=0}^{h-1} \xi^{jn} H(r_j^{-1})
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Lemma 5, Equation (52).
 
-Stated but not proved: `MetaMathlibExt.card_hFull_hFree_coprime_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 813](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L813). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-full-h-free-coprime-asymptotic).
+Stated but not proved: `MetaMathlibExt.card_hFull_hFree_coprime_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 813](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L813). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#card-h-full-h-free-coprime-asymptotic).
 
 ## The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$
 
@@ -996,7 +996,7 @@ taken to be $0$ when $N_h \cap M_n$ is empty.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 5 and 7.
 
-Formalized by `MetaMathlibExt.hFullMoment`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 834](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-moment).
+Formalized by `MetaMathlibExt.hFullMoment`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 834](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-moment).
 
 ## The $h$-full moment is an average of $\omega_k^j$
 
@@ -1015,7 +1015,7 @@ where the quotient is $0$ when $N_h \cap M_n$ is empty. This holds by definition
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 5 and 7.
 
-Formalized by `MetaMathlibExt.hFullMoment_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-moment-eq).
+Formalized by `MetaMathlibExt.hFullMoment_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-moment-eq).
 
 ## The local factor $K(P, h, j)$
 
@@ -1033,7 +1033,7 @@ read as $0$ when the denominator vanishes.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (notation preceding Theorem 5).
 
-Formalized by `MetaMathlibExt.hFullK`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-k).
+Formalized by `MetaMathlibExt.hFullK`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-k).
 
 ## Unfolding the local factor $K(P, h, j)$
 
@@ -1052,7 +1052,7 @@ read as $0$ when the denominator vanishes.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (notation preceding Theorem 5).
 
-Formalized by `MetaMathlibExt.hFullK_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 864](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L864). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-k-eq).
+Formalized by `MetaMathlibExt.hFullK_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 864](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L864). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-k-eq).
 
 ## The Euler product $\Pi_j$ for $h$-full polynomials
 
@@ -1071,7 +1071,7 @@ $1/0$ is read as $0$, and the product is taken to be $1$ if it does not converge
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (asymptotic for `|N_h ∩ M_n|` preceding Theorem 5).
 
-Formalized by `MetaMathlibExt.hFullEulerProduct`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 874](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L874). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-euler-product).
+Formalized by `MetaMathlibExt.hFullEulerProduct`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 874](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L874). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-euler-product).
 
 ## Unfolding the Euler product $\Pi_j$
 
@@ -1091,7 +1091,7 @@ unconditionally.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Section 1 (asymptotic for `|N_h ∩ M_n|` preceding Theorem 5).
 
-Formalized by `MetaMathlibExt.hFullEulerProduct_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 884](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L884). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-euler-product-eq).
+Formalized by `MetaMathlibExt.hFullEulerProduct_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 884](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L884). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-euler-product-eq).
 
 ## The $h$-full weighted mean
 
@@ -1114,7 +1114,7 @@ It carries every $n$-dependent constant in Theorems 5 and 7.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 5 and 7.
 
-Formalized by `MetaMathlibExt.hFullWeightedMean`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 897](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L897). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-weighted-mean).
+Formalized by `MetaMathlibExt.hFullWeightedMean`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 897](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L897). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-weighted-mean).
 
 ## Formula for the $h$-full weighted mean
 
@@ -1135,7 +1135,7 @@ $0^{-1}$) gives $0$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorems 5 and 7.
 
-Formalized by `MetaMathlibExt.hFullWeightedMean_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-weighted-mean-eq).
+Formalized by `MetaMathlibExt.hFullWeightedMean_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-weighted-mean-eq).
 
 ## The constant $\kappa_j$ for $h$-full polynomials
 
@@ -1152,7 +1152,7 @@ $F$, taken as an unconditional sum that is $0$ when the family is not summable.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5.
 
-Formalized by `MetaMathlibExt.hFullKSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksum).
+Formalized by `MetaMathlibExt.hFullKSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksum).
 
 ## The series defining $\kappa_j$
 
@@ -1170,7 +1170,7 @@ by definition.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5.
 
-Formalized by `MetaMathlibExt.hFullKSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 928](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L928). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksum-eq).
+Formalized by `MetaMathlibExt.hFullKSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 928](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L928). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksum-eq).
 
 ## The sum $\sum_P K(P, h, j)^2$ over monic irreducible polynomials
 
@@ -1187,7 +1187,7 @@ $F$, taken as an unconditional sum that is $0$ when the family is not summable.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5.
 
-Formalized by `MetaMathlibExt.hFullKSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksq-sum).
+Formalized by `MetaMathlibExt.hFullKSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksq-sum).
 
 ## Unfolding the sum of the squares $K(P, h, j)^2$
 
@@ -1201,7 +1201,7 @@ converge absolutely.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5.
 
-Formalized by `MetaMathlibExt.hFullKSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksq-sum-eq).
+Formalized by `MetaMathlibExt.hFullKSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-ksq-sum-eq).
 
 ## The $h$-full prime sum $\sum_P b_P$
 
@@ -1218,7 +1218,7 @@ summable. Inverses use the convention $0^{-1} = 0$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Formalized by `MetaMathlibExt.hFullOmegaMultSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 954](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L954). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sum).
+Formalized by `MetaMathlibExt.hFullOmegaMultSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 954](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L954). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sum).
 
 ## Formula for the $h$-full prime sum $\sum_P b_P$
 
@@ -1235,7 +1235,7 @@ when the family is not summable. Inverses use the convention $0^{-1} = 0$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Formalized by `MetaMathlibExt.hFullOmegaMultSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 964](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sum-eq).
+Formalized by `MetaMathlibExt.hFullOmegaMultSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 964](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sum-eq).
 
 ## The sum $\sum_P b_P^2$ over monic irreducible polynomials
 
@@ -1253,7 +1253,7 @@ when the family is not summable.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Formalized by `MetaMathlibExt.hFullOmegaMultSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 973](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L973). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sq-sum).
+Formalized by `MetaMathlibExt.hFullOmegaMultSqSum`, a definition declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 973](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L973). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sq-sum).
 
 ## The series defining $\sum_P b_P^2$
 
@@ -1272,7 +1272,7 @@ summable. This holds by definition.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Formalized by `MetaMathlibExt.hFullOmegaMultSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 983](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sq-sum-eq).
+Formalized by `MetaMathlibExt.hFullOmegaMultSqSum_eq`, a theorem declared in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 983](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#h-full-omega-mult-sq-sum-eq).
 
 ## Mean of $\omega_h$ over $h$-full polynomials
 
@@ -1294,7 +1294,7 @@ of $\omega_h$ over $N_h \cap M_n$ is $L_n + B_1 + W_n(\kappa) + O(n^{\varepsilon
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5, Equation (8).
 
-Stated but not proved: `MetaMathlibExt.omegaH_hFull_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 994](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L994). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-mean-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaH_hFull_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 994](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L994). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-mean-asymptotic).
 
 ## Second moment of $\omega_h$ over $h$-full polynomials
 
@@ -1322,7 +1322,7 @@ the final display of the proof (page 29) and the printed variance.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5, Equation (9).
 
-Stated but not proved: `MetaMathlibExt.omegaH_hFull_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1012](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1012). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-second-moment-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaH_hFull_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1012](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1012). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-second-moment-asymptotic).
 
 ## Variance of $\omega_h$ over $h$-full polynomials
 
@@ -1351,7 +1351,7 @@ which the paper derives the variance.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.omegaH_hFull_variance_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1034](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1034). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-variance-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaH_hFull_variance_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1034](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1034). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-h-h-full-variance-asymptotic).
 
 ## Mean of $\omega_k$ over $h$-full polynomials for $k > h$
 
@@ -1374,7 +1374,7 @@ $n \to \infty$.
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.omegaMult_hFull_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-full-mean-asymptotic).
+Stated but not proved: `MetaMathlibExt.omegaMult_hFull_mean_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-full-mean-asymptotic).
 
 ## Second moment of $\omega_k$ over $h$-full polynomials for $k > h$
 
@@ -1401,7 +1401,7 @@ at the end of the proof (page 31).
 
 - Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.omegaMult_hFull_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1069](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1069). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-full-second-moment-asymptot).
+Stated but not proved: `MetaMathlibExt.omegaMult_hFull_secondMoment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean, line 1069](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FunctionFieldMultiplicityWanted.lean#L1069). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html#omega-mult-h-full-second-moment-asymptot).
 
 ## Depends on
 
@@ -1410,4 +1410,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Prime factors of given multiplicity in h-free polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/prime-factors-of-given-multiplicity-in-h-free-po)

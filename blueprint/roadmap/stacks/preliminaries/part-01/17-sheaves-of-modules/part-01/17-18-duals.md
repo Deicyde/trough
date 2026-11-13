@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.18 Duals
 
-Section 17.18 of the Stacks Project, [Tag 0FNU](https://stacks.math.columbia.edu/tag/0FNU). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.18 of the Stacks Project, [Tag 0FNU](https://stacks.math.columbia.edu/tag/0FNU). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FNV, an example
 
 [Tag 0FNV](https://stacks.math.columbia.edu/tag/0FNV) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exactPairingDualSheafOfRetract`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualLocalDualBasis.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualLocalDualBasis.lean#L782). The attribute's comment: “the LEFT-DUAL assertion itself: the canonical coevaluation `𝒪 ⟶ ℱ ⊗ ℱ^∨` and evaluation `ℱ^∨ ⊗ ℱ ⟶ 𝒪` satisfy the two snake identities, so `ℱ^∨` is a left dual of `ℱ` in the monoidal category of Tag 01CA, for `ℱ` locally a retract of a finite free sheaf of modules. This is the clause none of `dual_sheaf`, `evaluation`, `coevaluation` or the rank-one isomorphism `ℱ ⊗ ℱ^∨ ≅ 𝓗om(ℱ,ℱ)` asserts: those construct the four objects and compute them on sections, this one is the duality”.
+**`Stacks.SheafOfModules.exactPairingDualSheafOfRetract`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualLocalDualBasis.lean, line 782](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LeftDualLocalDualBasis.lean#L782). The attribute's comment: “the LEFT-DUAL assertion itself: the canonical coevaluation `𝒪 ⟶ ℱ ⊗ ℱ^∨` and evaluation `ℱ^∨ ⊗ ℱ ⟶ 𝒪` satisfy the two snake identities, so `ℱ^∨` is a left dual of `ℱ` in the monoidal category of Tag 01CA, for `ℱ` locally a retract of a finite free sheaf of modules. This is the clause none of `dual_sheaf`, `evaluation`, `coevaluation` or the rank-one isomorphism `ℱ ⊗ ℱ^∨ ≅ 𝓗om(ℱ,ℱ)` asserts: those construct the four objects and compute them on sections, this one is the duality”.
 
 > **Stacks Project, Tag 0FNV.** Let `𝒪` be a sheaf of commutative rings on a site `(C, J)` and
 > let `F` be a sheaf of `𝒪`-modules which is locally a direct summand of a finite free sheaf of
@@ -37,7 +37,7 @@ noncomputable def exactPairingDualSheafOfRetract
     ExactPairing F (dualSheaf 𝒪 h𝒪 F)
 ```
 
-**`Stacks.SheafOfModules.OnSpace.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L194). The attribute's comment: “coevaluation”.
+**`Stacks.SheafOfModules.OnSpace.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L194). The attribute's comment: “coevaluation”.
 
 > **The coevaluation `O_X ⟶ F ⊗ F^∨`** of Stacks 0FNV: the inverse image of the identity
 > endomorphism under the rank-one isomorphism `F ⊗ F^∨ ≅ SheafHom(F, F)`.
@@ -51,7 +51,7 @@ noncomputable def coevaluation
         ((dualSheaf X F)))
 ```
 
-**`Stacks.SheafOfModules.OnSpace.coevaluation_comp_tensorDualToEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L205). The attribute's comment: “coevaluation”.
+**`Stacks.SheafOfModules.OnSpace.coevaluation_comp_tensorDualToEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L205). The attribute's comment: “coevaluation”.
 
 > Under the rank-one isomorphism, the coevaluation is the identity endomorphism.
 
@@ -62,7 +62,7 @@ theorem coevaluation_comp_tensorDualToEndomorphism
     coevaluation X F hF ≫ tensorDualToEndomorphism X F = identityEndomorphism X F
 ```
 
-**`Stacks.SheafOfModules.OnSpace.coevaluation_apply_eq_sum_of_retract`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L219). The attribute's comment: “coevaluation”.
+**`Stacks.SheafOfModules.OnSpace.coevaluation_apply_eq_sum_of_retract`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/Coevaluation.lean#L219). The attribute's comment: “coevaluation”.
 
 > **Stacks 0FNV.** On an open `U` carrying a splitting `i ≫ p = 𝟙` of `F|_U` through a
 > finite free module, the value of the coevaluation at `1` is `∑ j, p(e j) ⊗ (e j)^* ∘ i`. The
@@ -82,7 +82,7 @@ theorem coevaluation_apply_eq_sum_of_retract
           splittingDualSection X F U n i j)
 ```
 
-**`Stacks.SheafOfModules.OnSpace.dualSheaf_isLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean#L463). The attribute's comment: “sheaf\_module\_left\_dual”.
+**`Stacks.SheafOfModules.OnSpace.dualSheaf_isLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean#L475). The attribute's comment: “sheaf\_module\_left\_dual”.
 
 > **Stacks Project, Tag 0FNV.** For a sheaf of modules which is locally a direct summand of
 > a finite free module, its internal-Hom dual, with the canonical coevaluation and evaluation, is
@@ -101,11 +101,14 @@ theorem dualSheaf_isLeftDual
       ∃ (hunit : 𝟙_ (SheafOfModules.{u} (structureSheafRing X)) =
           SheafOfModules.unit (structureSheafRing X))
         (htensor : ∀ A B : SheafOfModules.{u} (structureSheafRing X),
-          A ⊗ B = (((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj (A)).obj (B)))
+          A ⊗ B = (((Stacks.SheafOfModules.Tensor.sheafTensor
+            ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj (A)).obj (B)))
         (_htensorMap : ∀ {A A' B B' : SheafOfModules.{u} (structureSheafRing X)}
           (f : A ⟶ A') (g : B ⟶ B'),
           eqToHom (htensor A B).symm ≫ (f ⊗ₘ g) ≫ eqToHom (htensor A' B') =
-            ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf, ((X)).IsSheaf⟩)).map ((f, g) : (_, _) ⟶ (_, _))))
+            ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor
+              ⟨((X)).presheaf, ((X)).IsSheaf⟩)).map
+              ((f, g) : (_, _) ⟶ (_, _))))
         (p : ExactPairing F (dualSheaf X F)),
         @ExactPairing.coevaluation _ _ _ _ _ p =
           eqToHom hunit ≫ coevaluation X F hF ≫
@@ -114,7 +117,7 @@ theorem dualSheaf_isLeftDual
           eqToHom (htensor (dualSheaf X F) F) ≫ evaluation X F ≫ eqToHom hunit.symm
 ```
 
-**`Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_tmul_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean#L588). The attribute's comment: “tensor\_dual\_endomorphism\_iso”.
+**`Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_tmul_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean#L583). The attribute's comment: “tensor\_dual\_endomorphism\_iso”.
 
 > On a local pure tensor of a section `f` and a local functional `lam`, the canonical
 > morphism is the rank-one endomorphism `g ↦ lam(g) • f`. The formula is recorded on every
@@ -133,7 +136,7 @@ theorem tensorDualToEndomorphism_tmul_apply
       dualValue X F lam V g • (F.val.map V.unop.hom.op).hom f
 ```
 
-**`Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean#L606). The attribute's comment: “tensor\_dual\_endomorphism\_iso”.
+**`Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/TensorDualEndomorphism.lean#L601). The attribute's comment: “tensor\_dual\_endomorphism\_iso”.
 
 > **Stacks 0FNV.** If `F` is locally a direct summand of a finite free module, the
 > canonical rank-one-operator morphism `F ⊗ F^∨ ⟶ SheafHom(F, F)` is an isomorphism.
@@ -145,7 +148,7 @@ theorem tensorDualToEndomorphism_isIso
     IsIso (tensorDualToEndomorphism X F)
 ```
 
-**`Stacks.SheafOfModules.dualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L279). The attribute's comment: “dual\_sheaf”. References: SGA 3 III (0.6).
+**`Stacks.SheafOfModules.dualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L279). The attribute's comment: “dual\_sheaf”. References: SGA 3 III (0.6).
 
 > **The dual of a sheaf of modules**, `F^∨ = SheafHom(F, 𝒪)`: the sheaf-hom into the
 > structure sheaf.
@@ -157,7 +160,7 @@ noncomputable def dualSheaf
     SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪)
 ```
 
-**`Stacks.SheafOfModules.evaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L696). The attribute's comment: “evaluation”.
+**`Stacks.SheafOfModules.evaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHom.lean#L695). The attribute's comment: “evaluation”.
 
 > **The evaluation pairing of sheaves of modules**, `F^∨ ⊗_𝒪 F ⟶ 𝒪`. The tensor product of
 > sheaves of modules is the sheafification of the pointwise one (Tag 05NA), so this is the
@@ -173,7 +176,7 @@ noncomputable def evaluation
       SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪)
 ```
 
-**`Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L655). The attribute's comment: “the rank-one map `ℱ ⊗ ℱ^∨ ⟶ 𝓗om(ℱ,ℱ)` read on sections: a local pure tensor `f ⊗ λ` goes to the endomorphism `g ↦ λ(g) • f`. This pins the morphism down; the companion clause `isIso_tensorDualToEndomorphism` says it is an isomorphism”.
+**`Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L646). The attribute's comment: “the rank-one map `ℱ ⊗ ℱ^∨ ⟶ 𝓗om(ℱ,ℱ)` read on sections: a local pure tensor `f ⊗ λ` goes to the endomorphism `g ↦ λ(g) • f`. This pins the morphism down; the companion clause `isIso_tensorDualToEndomorphism` says it is an isomorphism”.
 
 > **The canonical morphism on a local pure tensor is the rank-one operator.** This pins the
 > morphism down: its value on the image of `f ⊗ lam` is the endomorphism `g ↦ lam(g) • f`.
@@ -189,7 +192,7 @@ theorem tensorDualToEndomorphism_toTensorSheafSection
       rankOneSection 𝒪 h𝒪 (U := U.unop) f lam
 ```
 
-**`Stacks.SheafOfModules.isIso_tensorDualToEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L694). The attribute's comment: “the rank-one map `ℱ ⊗ ℱ^∨ ⟶ 𝓗om(ℱ,ℱ)` is an ISOMORPHISM when `ℱ` admits a finite dual basis on a covering family. A different assertion from the section formula that pins the map down, which is carried by `tensorDualToEndomorphism_toTensorSheafSection`”. References: SGA 5 IIIB (5.0), “partial”.
+**`Stacks.SheafOfModules.isIso_tensorDualToEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L685). The attribute's comment: “the rank-one map `ℱ ⊗ ℱ^∨ ⟶ 𝓗om(ℱ,ℱ)` is an ISOMORPHISM when `ℱ` admits a finite dual basis on a covering family. A different assertion from the section formula that pins the map down, which is carried by `tensorDualToEndomorphism_toTensorSheafSection`”. References: SGA 5 IIIB (5.0), “partial”.
 
 > **`F ⊗ F^∨ ⟶ SheafHom(F, F)` is an isomorphism** when `F` has finite dual bases on a family
 > covering the final object — that is, when `F` is locally a direct summand of a finite free sheaf
@@ -202,7 +205,7 @@ theorem isIso_tensorDualToEndomorphism {K : Type*} {X : K → C} (hX : J.CoversT
     IsIso (tensorDualToEndomorphism 𝒪 h𝒪 F)
 ```
 
-**`Stacks.SheafOfModules.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L720). The attribute's comment: “EXISTENCE of the canonical coevaluation `𝒪 ⟶ ℱ ⊗ ℱ^∨`, as a named morphism. Its value on local sections is a separate assertion, carried by `coevaluation_app_one_eq_sum_of_dualBasis`”.
+**`Stacks.SheafOfModules.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 711](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L711). The attribute's comment: “EXISTENCE of the canonical coevaluation `𝒪 ⟶ ℱ ⊗ ℱ^∨`, as a named morphism. Its value on local sections is a separate assertion, carried by `coevaluation_app_one_eq_sum_of_dualBasis`”.
 
 > **The canonical coevaluation `𝒪 ⟶ F ⊗ F^∨`** of a sheaf of modules which is locally a
 > direct summand of a finite free sheaf of modules: the inverse image of the identity
@@ -219,7 +222,7 @@ noncomputable def coevaluation
           (dualSheaf 𝒪 h𝒪 F)
 ```
 
-**`Stacks.SheafOfModules.coevaluation_app_one_eq_sum_of_dualBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L757). The attribute's comment: “the canonical coevaluation READ ON SECTIONS: over an object of the covering family it sends `1` to `∑ i, eᵢ ⊗ λᵢ` for a finite dual basis. This is what makes the coevaluation canonical rather than `some morphism exists`”.
+**`Stacks.SheafOfModules.coevaluation_app_one_eq_sum_of_dualBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualEndomorphism.lean#L748). The attribute's comment: “the canonical coevaluation READ ON SECTIONS: over an object of the covering family it sends `1` to `∑ i, eᵢ ⊗ λᵢ` for a finite dual basis. This is what makes the coevaluation canonical rather than `some morphism exists`”.
 
 > **The local formula for the canonical coevaluation.** On an object `U` over which `F` has a
 > finite dual basis `(e i, lam i)`, the value of the coevaluation at the unit section is
@@ -247,7 +250,7 @@ theorem coevaluation_app_one_eq_sum_of_dualBasis
 
 [Tag 0FNW](https://stacks.math.columbia.edu/tag/0FNW) in the Stacks Project.
 
-**`Stacks.SheafOfModules.OnSpace.dualSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean#L311). The attribute's comment: “dual\_sheaf\_isomorphism”.
+**`Stacks.SheafOfModules.OnSpace.dualSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean#L311). The attribute's comment: “dual\_sheaf\_isomorphism”.
 
 > **Stacks Project, Tag 0FNW (2).** A left dual `G` of `F` is canonically isomorphic to the
 > dual sheaf `F^∨ = SheafHom(F, O_X)`. The isomorphism sends a local functional `lam` over `U` to
@@ -272,7 +275,7 @@ noncomputable def dualSheafIso
           ∑ i, dualEval X F lam (f i) • g i }
 ```
 
-**`Stacks.SheafOfModules.OnSpace.evaluation_eq_dualSheafIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean#L332). The attribute's comment: “evaluation\_formula”.
+**`Stacks.SheafOfModules.OnSpace.evaluation_eq_dualSheafIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/DualSheafIso.lean#L332). The attribute's comment: “evaluation\_formula”.
 
 > **Stacks Project, Tag 0FNW (3).** Pairing a local section of a left dual `G` with a local
 > section of `F` under the evaluation `ε` is ordinary evaluation of the corresponding local
@@ -294,7 +297,7 @@ theorem evaluation_eq_dualSheafIso_inv
         (op (Over.mk (𝟙 U)))).hom f)
 ```
 
-**`Stacks.SheafOfModules.OnSpace.isLocallyFiniteFreeSummand_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean#L437). The attribute's comment: “local\_finite\_free\_summand”.
+**`Stacks.SheafOfModules.OnSpace.isLocallyFiniteFreeSummand_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/LeftDualOnSpace.lean#L449). The attribute's comment: “local\_finite\_free\_summand”.
 
 > **Stacks Project, Tag 0FNW (1)**, with no coherence hypotheses: a sheaf of modules with a
 > left dual in the monoidal category of `O_X`-modules is locally a direct summand of a finite
@@ -316,7 +319,7 @@ theorem isLocallyFiniteFreeSummand_of_exactPairing
 
 [Tag 08BL](https://stacks.math.columbia.edu/tag/08BL) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isLocallyFiniteFreeSummand_of_isFlat_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/FlatFinitePresentation.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/FlatFinitePresentation.lean#L113).
+**`Stacks.SheafOfModules.isLocallyFiniteFreeSummand_of_isFlat_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/FlatFinitePresentation.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFiniteFreeSummand/FlatFinitePresentation.lean#L113).
 
 > **Stacks 08BL.** A flat sheaf of `O_X`-modules of finite presentation on a ringed space is,
 > locally on `X`, a direct summand of a finite free `O_X`-module.
@@ -340,4 +343,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.18, Tag 0FNU](https://stacks.math.columbia.edu/tag/0FNU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

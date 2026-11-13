@@ -8,7 +8,7 @@ proof: formalized
 
 # Score, Wald and likelihood-ratio tests
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html).
 
 ## Probability Theory
 
@@ -16,14 +16,14 @@ proof: formalized
 
 If `Y ~ N(0, v)` with `v ≠ 0`, then `Y² / v ~ χ²₁`.
 
-Formalized by `ProbabilityTheory.gaussianReal_map_sq_div`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#gaussian-real-map-sq-div).
+Formalized by `ProbabilityTheory.gaussianReal_map_sq_div`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#gaussian-real-map-sq-div).
 
 ## Law of the positive part squared of a standard normal variable
 
 `max(Z, 0)²` has the
 mixture law `½ δ₀ + ½ χ²₁` (chi-bar-square with weights `½, ½`).
 
-Formalized by `ProbabilityTheory.gaussianReal_map_max_zero_sq`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#gaussian-real-map-max-zero-sq).
+Formalized by `ProbabilityTheory.gaussianReal_map_max_zero_sq`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#gaussian-real-map-max-zero-sq).
 
 ## Rao's score test, known information
 
@@ -35,7 +35,7 @@ Under the conditions of
 
 - Rao (1948), one-parameter case; the central limit theorem for the score as in Lehmann & Casella (1998), §6.3.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_scoreStatistic`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-score-statistic).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_scoreStatistic`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-score-statistic).
 
 ## Rao's score test with an estimated information
 
@@ -44,7 +44,7 @@ As
 converging to `I(θ₀)` in probability. Where `Î n ω = 0` the statistic takes Lean's value
 `x / 0 = 0`; this event has probability tending to `0` because `0 < I(θ₀)`.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_scoreStatistic_of_estimator`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-score-statistic-2).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_scoreStatistic_of_estimator`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-score-statistic-2).
 
 ## Consistency of the observed information
 
@@ -52,7 +52,7 @@ For i.i.d. observations with law `p θ₀ ν`,
 if `∂_θ score p θ₀` is measurable and integrable with `E ∂_θ score p θ₀ = -I(θ₀)` (the
 information identity), then `-(1/n) ∑_{i<n} ∂_θ score p θ₀ (X i) → I(θ₀)` in probability.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInMeasure_observedInformation`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-measure-observed-information).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInMeasure_observedInformation`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-measure-observed-information).
 
 ## Wald's test
 
@@ -65,7 +65,7 @@ consistent root `θ̂ₙ` of the likelihood equation converges in distribution t
 
 - Wald (1943), one-parameter case; the asymptotic normality of `θ̂ₙ` as in Lehmann & Casella (1998), §6.3.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_waldStatistic`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-wald-statistic).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_waldStatistic`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-wald-statistic).
 
 ## Wald's test with an estimated information
 
@@ -74,7 +74,7 @@ with `I(θ₀)` replaced by any estimators `Î n → I(θ₀)` in probability (f
 information of `tendstoInMeasure_observedInformation`; `I(θ̂ₙ)` also qualifies when
 `θ ↦ I(θ)` is continuous at `θ₀`, by the continuous mapping theorem).
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_waldStatistic_of_estimator`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-wald-statistic-o).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_waldStatistic_of_estimator`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-wald-statistic-o).
 
 ## Quadratic expansion of the log-likelihood ratio
 
@@ -93,7 +93,7 @@ derivatives, and the theorems below assume `0 < p θ x`.
 
 - the second-order expansion of Wilks (1938); van der Vaart (1998), ch. 16.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInMeasure_two_mul_logLikelihood_sub_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-measure-two-mul-log-likelihoo).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInMeasure_two_mul_logLikelihood_sub_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-measure-two-mul-log-likelihoo).
 
 ## Wilks' theorem (simple null)
 
@@ -106,7 +106,7 @@ likelihood equation converges in distribution to `χ²₁`.
 
 - Wilks (1938), case of a one-dimensional parameter and a simple null hypothesis; van der Vaart (1998), ch. 16.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_logLikelihood_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 690](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L690). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-log-like).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_logLikelihood_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 677](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L677). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-log-like).
 
 ## Wilks' theorem, supremum form
 
@@ -114,7 +114,7 @@ If moreover `θ̂ₙ ω` maximizes the log-likelihood
 `ℓₙ θ = ∑_{i<n} log p θ (X i ω)` over all `θ` for every `n` and `ω`, then the
 likelihood-ratio statistic `2 (sup_θ ℓₙ θ - ℓₙ θ₀)` converges in distribution to `χ²₁`.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_iSup_logLikelihood_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 732](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L732). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-i-sup-lo).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_iSup_logLikelihood_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 719](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L719). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-i-sup-lo).
 
 ## Likelihood ratio on the boundary
 
@@ -130,7 +130,7 @@ is the restricted maximizer when, for example, `ℓₙ` is concave; that is not 
 
 - Chernoff (1954); van der Vaart (1998), ch. 16.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_logLikelihood_max_zero_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-log-like-2).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioTests.tendstoInDistribution_two_mul_logLikelihood_max_zero_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean, line 767](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioTests.lean#L767). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html#tendsto-in-distribution-two-mul-log-like-2).
 
 ## Depends on
 
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Score, Wald and likelihood-ratio tests](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/hypothesis-testing/score-wald-and-likelihood-ratio-tests)

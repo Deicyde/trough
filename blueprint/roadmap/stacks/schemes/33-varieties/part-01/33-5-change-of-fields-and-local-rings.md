@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.5 Change of fields and local rings
 
-Section 33.5 of the Stacks Project, [Tag 0C4X](https://stacks.math.columbia.edu/tag/0C4X). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.5 of the Stacks Project, [Tag 0C4X](https://stacks.math.columbia.edu/tag/0C4X). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C4Y, a lemma
 
 [Tag 0C4Y](https://stacks.math.columbia.edu/tag/0C4Y) in the Stacks Project.
 
-**`AlgebraicGeometry.stalkOfBaseChange_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FieldExtensionStalk.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FieldExtensionStalk.lean#L364). The attribute's comment: “localization\_description”.
+**`AlgebraicGeometry.stalkOfBaseChange_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FieldExtensionStalk.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FieldExtensionStalk.lean#L364). The attribute's comment: “localization\_description”.
 
 > **Stacks Project, Tag 0C4Y (localization description).** The local ring at a point of a base
 > change by a field extension is the localization of `𝒪_{X,x} ⊗_k K` at the prime obtained from
@@ -64,7 +64,7 @@ public theorem stalkOfBaseChange_isLocalization
       IsLocalization.AtPrime (Y.presheaf.stalk y) p
 ```
 
-**`AlgebraicGeometry.faithfullyFlat_stalkMap_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/FaithfullyFlatStalk.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/FaithfullyFlatStalk.lean#L57). The attribute's comment: “faithfully\_flat\_local”.
+**`AlgebraicGeometry.faithfullyFlat_stalkMap_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/FaithfullyFlatStalk.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/FaithfullyFlatStalk.lean#L57). The attribute's comment: “faithfully\_flat\_local”.
 
 > For an extension of fields `K / k`, the map on local rings from a point of a `k`-scheme
 > to a point above it after base change to `K` is faithfully flat.
@@ -80,7 +80,7 @@ public theorem faithfullyFlat_stalkMap_fieldExtension
         (Spec.map (CommRingCat.ofHom (algebraMap k K)))).stalkMap y).hom.FaithfullyFlat
 ```
 
-**`AlgebraicGeometry.Scheme.Pullback.isIso_residueFieldMap_to_residueField_specOfPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ResidueField.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ResidueField.lean#L45). The attribute's comment: “residue\_field”.
+**`AlgebraicGeometry.Scheme.Pullback.isIso_residueFieldMap_to_residueField_specOfPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ResidueField.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ResidueField.lean#L45). The attribute's comment: “residue\_field”.
 
 > **Stacks Project, Tag 0C4Y (residue field).** If `y` is a point of the base change of a
 > scheme over `k` to a field extension `K/k`, its residue field is canonically isomorphic to the
@@ -98,7 +98,7 @@ public theorem isIso_residueFieldMap_to_residueField_specOfPoint
       (Scheme.Spec.residueFieldIso T.tensor p).hom)
 ```
 
-**`AlgebraicGeometry.specialFibreRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean#L527). The attribute's comment: “special\_fibre”.
+**`AlgebraicGeometry.specialFibreRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean#L527). The attribute's comment: “special\_fibre”.
 
 > **Stacks Project, Tag 0C4Y (special fibre).**  For a point `y` of the base change of
 > a scheme over `k` to an extension field `K`, the quotient of `𝒪_{Y,y}` by the extension
@@ -125,7 +125,7 @@ noncomputable def specialFibreRingEquiv
 
 [Tag 0C4Z](https://stacks.math.columbia.edu/tag/0C4Z) in the Stacks Project.
 
-**`AlgebraicGeometry.fiberLocalRing_dimension_add_localRing_dimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean#L103). The attribute's comment: “local-ring dimension equality”.
+**`AlgebraicGeometry.fiberLocalRing_dimension_add_localRing_dimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean#L103). The attribute's comment: “local-ring dimension equality”.
 
 > **Stacks Project, Tag 0C4Z.** After extension of the ground field, the dimension of the local
 > fibre ring plus the dimension of the original local ring is the dimension of the new local
@@ -147,7 +147,7 @@ theorem fiberLocalRing_dimension_add_localRing_dimension_eq
       ringKrullDim (Y.presheaf.stalk y)
 ```
 
-**`AlgebraicGeometry.fiberLocalRing_dimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean#L142). The attribute's comment: “transcendence degree equality”.
+**`AlgebraicGeometry.fiberLocalRing_dimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/LocalRingDimension.lean#L142). The attribute's comment: “transcendence degree equality”.
 
 > **Stacks Project, Tag 0C4Z.** After extension of the ground field, the dimension of the local
 > fibre ring plus the transcendence degree of the new residue field is the transcendence degree of
@@ -177,7 +177,7 @@ theorem fiberLocalRing_dimension_add_trdeg_eq
 
 [Tag 0C50](https://stacks.math.columbia.edu/tag/0C50) in the Stacks Project.
 
-**`AlgebraicGeometry.map_maximalIdeal_stalkMap_eq_of_isReduced_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean, line 858](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean#L858).
+**`AlgebraicGeometry.map_maximalIdeal_stalkMap_eq_of_isReduced_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean, line 858](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/MaximalIdealFieldChange.lean#L858).
 
 > **Stacks Project, Tag 0C50.** Let `X` be locally of finite type over a field `k` and let
 > `Y = X ×_{Spec k} Spec K` for an extension of fields `K / k`. If a point `y` of `Y` and its image
@@ -222,4 +222,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.5, Tag 0C4X](https://stacks.math.columbia.edu/tag/0C4X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

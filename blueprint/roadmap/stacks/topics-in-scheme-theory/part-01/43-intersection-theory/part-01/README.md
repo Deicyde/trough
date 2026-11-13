@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 43.6 Proper pushforward to 43.22 Projection formula for…
+# 43.6 Proper pushforward to 43.23 Projections
 
 - [43.6 Proper pushforward](43-6-proper-pushforward.md)
 - [43.7 Flat pullback](43-7-flat-pullback.md)
@@ -18,3 +18,4 @@ navigation: transparent
 - [43.20 Associativity of intersections](43-20-associativity-of-intersections.md)
 - [43.21 Flat pullback and intersection products](43-21-flat-pullback-and-intersection-products.md)
 - [43.22 Projection formula for flat proper morphisms](43-22-projection-formula-for-flat-proper-morphis.md)
+- [43.23 Projections](43-23-projections.md)

@@ -7,14 +7,14 @@ statement: formalized
 
 # p-groups with special maximal subgroups
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html).
 
 ## Special group
 
 A group $H$ is special when its center, its commutator subgroup and its
 Frattini subgroup coincide: $Z(H) = [H, H] = \Phi(H)$.
 
-Formalized by `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.IsSpecialGroup`, a definition declared in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#is-special-group).
+Formalized by `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.IsSpecialGroup`, a definition declared in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#is-special-group).
 
 ## Kourovka Problem 16.13, strong form (statement)
 
@@ -24,7 +24,7 @@ maximal subgroups $H$ are special, that is, have center $Z(H)$, commutator subgr
 Frattini subgroup $\Phi(H)$ all equal. This is the form in which the problem was resolved; the
 problem as posed asks only for one finite $p$-group all of whose maximal subgroups are special.
 
-Formalized by `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.largePGroupsWithSpecialMaximalSubgroups`, a definition declared in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#large-pgroups-with-special-maximal-subgr).
+Formalized by `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.largePGroupsWithSpecialMaximalSubgroups`, a definition declared in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#large-pgroups-with-special-maximal-subgr).
 
 ## Arbitrarily large $p$-groups all of whose maximal subgroups are special
 
@@ -41,7 +41,7 @@ $L_3(4)$ is another example (Zenkov).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.13 (Ya. G. Berkovich); resolution: J. Cossey, Bull. Austral. Math. Soc. 89 (2014), 415-419, Kourovka Archive, Problem 16.13 (for all primes, groups of arbitrarily large size; for p = 2 also a Sylow 2-subgroup of L_3(4), V. I. Zenkov, 2014).
 
-Stated but not proved: `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.largePGroupsWithSpecialMaximalSubgroups_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#large-pgroups-with-special-maximal-subgr-2).
+Stated but not proved: `MathlibExt.GroupTheory.MaximalSubgroupsSpecialKourovka16Problem13Wanted.largePGroupsWithSpecialMaximalSubgroups_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalSubgroupsSpecialKourovka16Problem13Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html#large-pgroups-with-special-maximal-subgr-2).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: p-groups with special maximal subgroups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-p-groups/p-groups-with-special-maximal-subgroups)

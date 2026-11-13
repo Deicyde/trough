@@ -7,7 +7,7 @@ statement: formalized
 
 # Golomb rulers
 
-5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html).
+5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html).
 
 ## Golomb ruler lengths
 
@@ -19,7 +19,7 @@ $0$ is not required.
 For finite sets of integers the Sidon condition is equivalent to all positive pairwise
 differences being distinct.
 
-Formalized by `MathlibExt.Combinatorics.GolombRulersWanted.golombRulerLengths`, a definition declared in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GolombRulersWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#golomb-ruler-lengths).
+Formalized by `MathlibExt.Combinatorics.GolombRulersWanted.golombRulerLengths`, a definition declared in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GolombRulersWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#golomb-ruler-lengths).
 
 ## Optimal Golomb ruler length
 
@@ -30,7 +30,7 @@ $\{0, 1, \dots, L\}$ contains $L$; for $m = 0$ we set $G(0) = 0$.
 
 For $m \ge 2$ this is OEIS A003022, the length of a shortest Golomb ruler with $m$ marks.
 
-Formalized by `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength`, a definition declared in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GolombRulersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length).
+Formalized by `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength`, a definition declared in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GolombRulersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length).
 
 ## Optimal Golomb rulers with 3 to 11 marks
 
@@ -41,7 +41,7 @@ $m = 3, 4, \dots, 11$ marks are, in order, $3, 6, 11, 17, 25, 34, 44, 55, 72$.
 
 - exhaustive searches; OEIS A003022; listed in leansolving/SqueezeBench `SqueezeBench/Problems/Golomb/README.md`.
 
-Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_three_to_eleven` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GolombRulersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-three-to-eleven).
+Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_three_to_eleven` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GolombRulersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-three-to-eleven).
 
 ## Optimal 27-mark Golomb ruler
 
@@ -51,7 +51,7 @@ The optimal Golomb ruler length with $27$ marks is $553$.
 
 - distributed.net OGR-27 exhaustive search, completed 2014; OEIS A003022; listed in SqueezeBench `SqueezeBench/Problems/Golomb/README.md`.
 
-Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_twentySeven` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GolombRulersWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-twenty-seven).
+Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_twentySeven` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GolombRulersWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-twenty-seven).
 
 ## Optimal 28-mark Golomb ruler
 
@@ -61,7 +61,7 @@ The optimal Golomb ruler length with $28$ marks is $585$.
 
 - distributed.net OGR-28 exhaustive search, completed 2022; OEIS A003022; listed in SqueezeBench `SqueezeBench/Problems/Golomb/README.md`.
 
-Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_twentyEight` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GolombRulersWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-twenty-eight).
+Stated but not proved: `MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_twentyEight` is written with `theorem_wanted` in [WantedExt/Combinatorics/GolombRulersWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GolombRulersWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html#optimal-golomb-length-twenty-eight).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Golomb rulers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/golomb-rulers)

@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Bounded Burnside problem to Dirichlet divisor problem
+# Bounded Burnside problem to Diophantine $m$-tuples
 
 - [Bounded Burnside problem](bounded-burnside-problem.md)
 - [Brennan's Conjecture](brennans-conjecture.md)
@@ -10,6 +10,7 @@ navigation: transparent
 - [Büchi's problem](buchis-problem.md)
 - [Bunyakovsky conjecture](bunyakovsky-conjecture.md)
 - [Busy Beaver](busy-beaver.md)
+- [Butson-type Hadamard matrices](butson-type-hadamard-matrices.md)
 - [Carmichael's totient function conjecture](carmichaels-totient-function-conjecture.md)
 - [Catalan's conjecture and related Diophantine equations](catalans-conjecture-and-related-diophantine-equa.md)
 - [Černý Conjecture](cerny-conjecture.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Babai–Seress Conjectures on the Diameter of Finite Groups](babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [Dickson's conjecture](dicksons-conjecture.md)
 - [Diophantine $m$-tuples](diophantine-m-tuples.md)
-- [Dirichlet divisor problem](dirichlet-divisor-problem.md)

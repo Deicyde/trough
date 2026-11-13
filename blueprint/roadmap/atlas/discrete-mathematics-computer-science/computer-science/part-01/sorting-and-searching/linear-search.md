@@ -8,7 +8,7 @@ proof: formalized
 
 # Linear search
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html).
 
 ## Linear search
 
@@ -22,7 +22,7 @@ that search.
 
 No cost is charged for list operations, index arithmetic, or control flow.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch`, a definition declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch`, a definition declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search).
 
 ## Linear search returns the first satisfying index
 
@@ -32,7 +32,7 @@ search for $p$ on $L$ (ignoring its cost) equals the result of the standard libr
 first-index search: the least $i < n$ with $p(x_i)$ true, or no index if $p(x_i)$ is false for
 every $i < n$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.ret_linearSearch`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#ret-linear-search).
+Formalized by `Cslib.Algorithms.Lean.TimeM.ret_linearSearch`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#ret-linear-search).
 
 ## Characterization of a successful linear search
 
@@ -41,7 +41,7 @@ $\alpha$, every list $L = (x_0, \dots, x_{n-1})$ over $\alpha$ and every natural
 linear search for $p$ on $L$ returns the index $i$ if and only if $i < n$, $p(x_i)$ is true, and
 $p(x_j)$ is false for every $j < i$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-eq-some-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-eq-some-iff).
 
 ## Linear search fails exactly when no element satisfies the predicate
 
@@ -49,14 +49,14 @@ For every predicate
 $p$ on a type $\alpha$ and every list $L$ over $\alpha$, linear search for $p$ on $L$ returns no
 index if and only if $p(x)$ is false for every element $x$ of $L$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-eq-none-iff).
 
 ## Cost of linear search on the empty list
 
 For every predicate $p$ on a type $\alpha$, linear
 search for $p$ on the empty list has cost $0$: it evaluates $p$ zero times.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-nil).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-nil).
 
 ## Cost recurrence for linear search
 
@@ -66,7 +66,7 @@ with head $x$ and tail $T$ is $1$ if $p(x)$ is true, and $1$ plus the cost of li
 $p$ on $T$ if $p(x)$ is false. The head costs one evaluation of $p$, and the tail is searched only
 when the head fails.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_cons`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-cons).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_cons`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-cons).
 
 ## Cost of a successful linear search
 
@@ -74,7 +74,7 @@ For every predicate $p$ on a type $\alpha$, every
 list $L$ over $\alpha$ and every natural number $i$, if linear search for $p$ on $L$ returns the
 index $i$, then its cost is $i + 1$: it evaluates $p$ exactly $i + 1$ times.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-eq-of-ret-eq-some).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-eq-of-ret-eq-some).
 
 ## Cost of an unsuccessful linear search
 
@@ -82,7 +82,7 @@ For every predicate $p$ on a type $\alpha$ and
 every list $L$ over $\alpha$, if linear search for $p$ on $L$ returns no index, then its cost is
 the length of $L$: it evaluates $p$ once for every element of $L$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-eq-of-ret-eq-none).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-eq-of-ret-eq-none).
 
 ## Linear search costs at most the list length
 
@@ -90,7 +90,7 @@ For every predicate $p$ on a type $\alpha$
 and every list $L$ over $\alpha$, the cost of linear search for $p$ on $L$ is at most the length
 of $L$: it evaluates $p$ at most once for every element of $L$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Search/Linear.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-le).
+Formalized by `Cslib.Algorithms.Lean.TimeM.linearSearch_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Search/Linear.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Search/Linear.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html#linear-search-time-le).
 
 ## Depends on
 
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Linear search](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/linear-search/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/sorting-and-searching/linear-search)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/sorting-and-searching/linear-search)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 87.26 Monomorphisms
 
-Section 87.26 of the Stacks Project, [Tag 0AQA](https://stacks.math.columbia.edu/tag/0AQA). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.26 of the Stacks Project, [Tag 0AQA](https://stacks.math.columbia.edu/tag/0AQA). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AQB, a definition
 
@@ -16,13 +16,13 @@ Section 87.26 of the Stacks Project, [Tag 0AQA](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Mono#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean#L63) (StacksFrontier): “monomorphism of the underlying sheaves”. References: EGA IV (8.11.5.1); SGA 1 V (3.6); SGA 3 VIIB (2.4.1); SGA 3 VIII (3.4); SGA 4 I (10.4); SGA 4 II (3.2).
+- [`CategoryTheory.Mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Mono#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean#L63) (StacksFrontier): “monomorphism of the underlying sheaves”. References: EGA IV (8.11.5.1); SGA 1 V (3.6); SGA 3 VIIB (2.4.1); SGA 3 VIII (3.4); SGA 4 I (10.4); SGA 4 II (3.2).
 
 ## Tag 0GHT, a lemma
 
 [Tag 0GHT](https://stacks.math.columbia.edu/tag/0GHT) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.mono_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L67).
+**`AlgebraicGeometry.FormalSpace.mono_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L67).
 
 > The composition of two monomorphisms of formal algebraic spaces over `S` is a
 > monomorphism.
@@ -36,7 +36,7 @@ theorem mono_comp {X Y Z : FppfSheaf B S hS} {f : X ⟶ Y} {g : Y ⟶ Z}
 
 [Tag 0GHU](https://stacks.math.columbia.edu/tag/0GHU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.Mono.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L75).
+**`AlgebraicGeometry.FormalSpace.Mono.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L75).
 
 > A base change of a monomorphism of formal algebraic spaces over `S` is a monomorphism: in
 > the cartesian square with `f` on the right and `p` on the left, if `f` is a monomorphism then so
@@ -52,7 +52,7 @@ theorem Mono.of_isPullback {W X Z Y : FppfSheaf B S hS}
 
 [Tag 0GHV](https://stacks.math.columbia.edu/tag/0GHV) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.mono_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L250). The attribute's comment: “conditions (1), (2), (3), (4) and (5)”.
+**`AlgebraicGeometry.FormalSpace.mono_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L250). The attribute's comment: “conditions (1), (2), (3), (4) and (5)”.
 
 > For a morphism `f : X ⟶ Y` of formal algebraic spaces over `S`, with `Y` a formal algebraic
 > space, the following are equivalent:
@@ -76,7 +76,7 @@ theorem mono_tfae {X Y : FppfSheaf B S hS} (hY : IsFormalAlgebraicSpace B S hS Y
         HasMonoLocallySurjectiveFamily B S hS f]
 ```
 
-**`AlgebraicGeometry.FormalSpace.mono_tfae'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L273). The attribute's comment: “conditions (1), (2), (3) and (5)”.
+**`AlgebraicGeometry.FormalSpace.mono_tfae'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Monomorphism.lean#L273). The attribute's comment: “conditions (1), (2), (3) and (5)”.
 
 > For an arbitrary morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S`,
 > conditions (1), (2), (3) and (5) of `AlgebraicGeometry.FormalSpace.mono_tfae` are
@@ -91,7 +91,7 @@ theorem mono_tfae' {X Y : FppfSheaf B S hS} (f : X ⟶ Y) :
         HasMonoLocallySurjectiveFamily B S hS f]
 ```
 
-**`AlgebraicGeometry.FormalSpace.mono_tfae_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismFlatCover.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismFlatCover.lean#L426). The attribute's comment: “condition (6), and its equivalence with the conditions (1), (2), (3), (4) and (5)”.
+**`AlgebraicGeometry.FormalSpace.mono_tfae_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismFlatCover.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismFlatCover.lean#L426). The attribute's comment: “condition (6), and its equivalence with the conditions (1), (2), (3), (4) and (5)”.
 
 > **Stacks 0GHV**, its condition (6) together with the conditions (1), (2), (3), (4) and (5).
 > For a morphism `f : X ⟶ Y` of formal algebraic spaces over `S`, with `Y` a formal algebraic
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.26, Tag 0AQA](https://stacks.math.columbia.edu/tag/0AQA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

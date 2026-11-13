@@ -78,7 +78,7 @@ statement: formalized
 >   ([arxiv/1402.2371](https://arxiv.org/abs/1402.2371)), Theorem 1. Used for
 >   `isMaxRank_le_two_mul_isGenericRank`.
 
-*Quoted from [FormalConjectures/Arxiv/0805.3777/TensorRank.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/0805.3777/TensorRank.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 18 research or textbook statements: 2 open, 15 solved and 1 textbook result. It also has 1 test statement and 5 API statements, counted here but not shown.
 
@@ -92,7 +92,7 @@ Textbook result, stated without proof.
 theorem isGenericRank_matrix (m n : ℕ) : IsGenericRank [m, n] (min m n)
 ```
 
-Category `textbook`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L183).
+Category `textbook`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L183).
 
 ## `Arxiv.«0805.3777».isGenericRank_of_gt_critical`
 
@@ -107,7 +107,7 @@ theorem isGenericRank_of_gt_critical {m₁ m₂ m₃ : ℕ} (h₁ : 1 ≤ m₁) 
     IsGenericRank [m₁, m₂, m₃] (min m₃ (m₁ * m₂))
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 191](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L191).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 191](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L191).
 
 ## `Arxiv.«0805.3777».isGenericRank_three_even`
 
@@ -122,7 +122,7 @@ theorem isGenericRank_three_even {p : ℕ} (hp : 2 ≤ p) :
     IsGenericRank [3, 2 * p, 2 * p] (12 * p ^ 2 ⌈/⌉ (4 * p + 1))
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 200](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L200).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 200](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L200).
 
 ## `Arxiv.«0805.3777».isGenericRank_three_odd`
 
@@ -138,7 +138,7 @@ theorem isGenericRank_three_odd {p : ℕ} (hp : 1 ≤ p) :
     IsGenericRank [3, 2 * p + 1, 2 * p + 1] (3 * (2 * p + 1) ^ 2 ⌈/⌉ (4 * p + 3) + 1)
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L211).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L211).
 
 ## `Arxiv.«0805.3777».isGenericRank_four`
 
@@ -153,7 +153,7 @@ theorem isGenericRank_four {m : ℕ} (hm : 3 ≤ m) :
     IsGenericRank [4, m, m] (4 * m ^ 2 ⌈/⌉ (2 * m + 2))
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 219](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L219).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 219](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L219).
 
 ## `Arxiv.«0805.3777».isGenericRank_cube`
 
@@ -167,7 +167,7 @@ theorem isGenericRank_cube {n : ℕ} (hn : 1 ≤ n) (hn3 : n ≠ 3) :
     IsGenericRank [n, n, n] (n ^ 3 ⌈/⌉ (3 * n - 2))
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L226).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L226).
 
 ## `Arxiv.«0805.3777».isGenericRank_of_eq_critical`
 
@@ -182,7 +182,7 @@ theorem isGenericRank_of_eq_critical {m₁ m₂ : ℕ} (h₁ : 3 ≤ m₁) (h₁
     IsGenericRank [m₁, m₂, (m₁ - 1) * (m₂ - 1)] ((m₁ - 1) * (m₂ - 1) + 1)
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 263](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L263).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 263](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L263).
 
 ## `Arxiv.«0805.3777».isGenericRank_of_le_critical`
 
@@ -202,7 +202,7 @@ theorem isGenericRank_of_le_critical {m₁ m₂ m₃ : ℕ} (h₁ : 3 ≤ m₁) 
     IsGenericRank [m₁, m₂, m₃] (m₁ * m₂ * m₃ ⌈/⌉ (m₁ + m₂ + m₃ - 2))
 ```
 
-Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 277](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L277).
+Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 277](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L277).
 
 ## `Arxiv.«0805.3777».isMaxRank_two`
 
@@ -216,7 +216,7 @@ theorem isMaxRank_two {m n : ℕ} (hm : 2 ≤ m) (hmn : m ≤ n) :
     IsMaxRank [2, m, n] (m + min m (n / 2))
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 285](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L285).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 285](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L285).
 
 ## `Arxiv.«0805.3777».cprank_le_of_three_slices`
 
@@ -229,7 +229,7 @@ theorem cprank_le_of_three_slices {n : ℕ} (hn : 1 ≤ n) (T : Holor ℂ [n, n,
     T.cprank ≤ 2 * n - 1
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 291](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L291).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 291](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L291).
 
 ## `Arxiv.«0805.3777».isMaxRank_three`
 
@@ -243,7 +243,7 @@ Solved: stated here without proof.
 theorem isMaxRank_three : IsMaxRank [3, 3, 3] 5
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 299](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L299).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 299](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L299).
 
 ## `Arxiv.«0805.3777».isMaxRank_of_le_min`
 
@@ -257,7 +257,7 @@ theorem isMaxRank_of_le_min {m n u : ℕ} (hm : 3 ≤ m) (hmn : m ≤ n) (hu : u
     IsMaxRank [m, n, m * n - u] (m * n - u ⌈/⌉ 2)
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 305](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L305).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 305](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L305).
 
 ## `Arxiv.«0805.3777».isMaxRank_three_three_five_bounds`
 
@@ -270,7 +270,7 @@ theorem isMaxRank_three_three_five_bounds {R : ℕ} (hR : IsMaxRank [3, 3, 5] R)
     6 ≤ R ∧ R ≤ 7
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 311](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L311).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 311](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L311).
 
 ## `Arxiv.«0805.3777».isMaxRank_three_three_five`
 
@@ -284,7 +284,7 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/mrank-3-3-5
 theorem isMaxRank_three_three_five : IsMaxRank [3, 3, 5] isMaxRank_three_three_five.answer
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 324](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L324).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 324](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L324).
 
 ## `Arxiv.«0805.3777».isMaxRank_le_two_mul_isGenericRank`
 
@@ -297,7 +297,7 @@ theorem isMaxRank_le_two_mul_isGenericRank {ds : List ℕ} {r R : ℕ} (hr : IsG
     (hR : IsMaxRank ds R) : R ≤ 2 * r
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 329](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L329).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 329](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L329).
 
 ## `Arxiv.«0805.3777».cprank_le_of_square_slices`
 
@@ -311,7 +311,7 @@ theorem cprank_le_of_square_slices {m n : ℕ} (hm : 3 ≤ m) (hn : 3 ≤ n)
     (T : Holor ℂ [m, n, n]) : T.cprank ≤ (m + 1) * n / 2
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 336](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L336).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 336](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L336).
 
 ## `Arxiv.«0805.3777».isMaxRank_cube_bounds`
 
@@ -326,7 +326,7 @@ theorem isMaxRank_cube_bounds {n R : ℕ} (hn : 4 ≤ n) (hR : IsMaxRank [n, n, 
     n ^ 3 ⌈/⌉ (3 * n - 2) ≤ R ∧ R ≤ n * (n + 1) / 2
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 344](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L344).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 344](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L344).
 
 ## `Arxiv.«0805.3777».isMaxRank_cube`
 
@@ -342,7 +342,7 @@ theorem isMaxRank_cube {n : ℕ} (hn : 1 ≤ n) :
     IsMaxRank [n, n, n] (isMaxRank_cube.answer n)
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 361](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L361).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/0805.3777/TensorRank.lean, line 361](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean#L361).
 
 ## Depends on
 
@@ -350,5 +350,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/0805.3777/TensorRank.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/0805.3777/TensorRank.lean)
+- [FormalConjectures/Arxiv/0805.3777/TensorRank.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/0805.3777/TensorRank.lean)
 - [https://doi.org/10.1016/j.laa.2011.05.008](https://doi.org/10.1016/j.laa.2011.05.008)

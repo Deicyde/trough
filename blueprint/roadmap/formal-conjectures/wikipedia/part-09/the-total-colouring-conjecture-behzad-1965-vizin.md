@@ -20,7 +20,7 @@ statement: formalized
 > * [Yap96] Yap, H. P. (1996). *Total colourings of graphs.* Lecture Notes in Mathematics 1623,
 >   Springer.
 
-*Quoted from [FormalConjectures/Wikipedia/TotalColoringConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/TotalColoringConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved. It also has 1 test statement, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem total_coloring_conjecture :
       G.totalChromaticNumber ≤ G.maxDegree + 2
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L51).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L51).
 
 ## `TotalColoringConjecture.total_coloring_conjecture.variants.maxDegree_le_five`
 
@@ -59,7 +59,7 @@ theorem total_coloring_conjecture.variants.maxDegree_le_five
     G.totalChromaticNumber ≤ G.maxDegree + 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L65).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L65).
 
 ## `TotalColoringConjecture.total_coloring_conjecture.variants.complete_graph`
 
@@ -75,7 +75,7 @@ theorem total_coloring_conjecture.variants.complete_graph (n : ℕ) :
     (completeGraph (Fin n)).totalChromaticNumber ≤ (completeGraph (Fin n)).maxDegree + 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 78](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L78).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 78](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L78).
 
 ## `TotalColoringConjecture.total_coloring_conjecture.variants.molloy_reed`
 
@@ -94,7 +94,7 @@ theorem total_coloring_conjecture.variants.molloy_reed :
       G.totalChromaticNumber ≤ G.maxDegree + C
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L91).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TotalColoringConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean#L91).
 
 ## Depends on
 
@@ -102,5 +102,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/TotalColoringConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TotalColoringConjecture.lean)
+- [FormalConjectures/Wikipedia/TotalColoringConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TotalColoringConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Total_coloring)

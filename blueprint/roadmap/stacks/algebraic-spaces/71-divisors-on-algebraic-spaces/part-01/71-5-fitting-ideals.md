@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.5 Fitting ideals
 
-Section 71.5 of the Stacks Project, [Tag 0CZ3](https://stacks.math.columbia.edu/tag/0CZ3). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.5 of the Stacks Project, [Tag 0CZ3](https://stacks.math.columbia.edu/tag/0CZ3). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CZ3, the section
 
 [Tag 0CZ3](https://stacks.math.columbia.edu/tag/0CZ3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fittingIdealInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L275). The attribute's comment: “the chain Fit\_k, k : ℤ”.
+**`AlgebraicGeometry.Space.fittingIdealInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L275). The attribute's comment: “the chain Fit\_k, k : ℤ”.
 
 > **The `k`-th Fitting ideal sheaf of an `𝒪_F`-module, for `k : ℤ`**: the smallest sheaf of
 > ideals of `𝒪_F` whose sections over every affine étale chart contain the module-theoretic `k`-th
@@ -29,7 +29,7 @@ noncomputable def fittingIdealInt (G : Modules.{u, m} B S hS F hF) (k : ℤ) :
         (smallEtaleRingedSite B S hS F hF).O))).Submodule
 ```
 
-**`AlgebraicGeometry.Space.fittingIdealInt_obj_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L350). The attribute's comment: “the chartwise characterisation of the sections”.
+**`AlgebraicGeometry.Space.fittingIdealInt_obj_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L350). The attribute's comment: “the chartwise characterisation of the sections”.
 
 > **Stacks 0CZ3: over an affine étale chart the sections of `Fit_k(G)` are exactly the
 > module-theoretic `k`-th Fitting ideal of the sections of `G` over the chart ring.**
@@ -50,7 +50,7 @@ theorem fittingIdealInt_obj_eq (G : Modules.{u, m} B S hS F hF)
       @_root_.fittingIdeal (chartRing B S hS F hF U) _ (G.val.obj (op U)) _ _ (hfin U hU) k
 ```
 
-**`AlgebraicGeometry.Space.fittingIdeal_obj_eq_fittingIdealOnChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L371). The attribute's comment: “the chartwise characterisation, in nonnegative degree”.
+**`AlgebraicGeometry.Space.fittingIdeal_obj_eq_fittingIdealOnChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L371). The attribute's comment: “the chartwise characterisation, in nonnegative degree”.
 
 > **Stacks 0CZ3 for the `ℕ`-indexed Fitting ideal sheaf**: over an affine étale chart the
 > sections of `AlgebraicGeometry.Space.fittingIdeal` are exactly the chartwise Fitting ideal of
@@ -68,7 +68,7 @@ theorem fittingIdeal_obj_eq_fittingIdealOnChart (G : Modules.{u, m} B S hS F hF)
       @fittingIdealOnChart B S hS F hF G r U (hfin U hU)
 ```
 
-**`AlgebraicGeometry.Space.fittingIdealInt_eq_bot_of_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L404). The attribute's comment: “Fit\_\{-1} = 0”.
+**`AlgebraicGeometry.Space.fittingIdealInt_eq_bot_of_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L404). The attribute's comment: “Fit\_\{-1} = 0”.
 
 > **`Fit₋₁(G) = 0`, and more generally the Fitting ideal sheaves vanish in negative degree**: in
 > negative degree the chartwise Fitting ideal is zero, so every sheaf of ideals belongs to the
@@ -79,7 +79,7 @@ theorem fittingIdealInt_eq_bot_of_lt_zero (G : Modules.{u, m} B S hS F hF) {k : 
     fittingIdealInt B S hS F hF G k = ⊥
 ```
 
-**`AlgebraicGeometry.Space.monotone_fittingIdealInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L440). The attribute's comment: “the chain increases”.
+**`AlgebraicGeometry.Space.monotone_fittingIdealInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L440). The attribute's comment: “the chain increases”.
 
 > **The chain of Fitting ideal sheaves increases.**  A sheaf of ideals whose sections over every
 > affine étale chart contain the chartwise `Fit_l` contains the chartwise `Fit_k` there too, for
@@ -90,7 +90,7 @@ theorem monotone_fittingIdealInt (G : Modules.{u, m} B S hS F hF) :
     Monotone fun k : ℤ => fittingIdealInt B S hS F hF G k
 ```
 
-**`AlgebraicGeometry.Space.fittingIdealInt_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L459).
+**`AlgebraicGeometry.Space.fittingIdealInt_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L459).
 
 > **Stacks 0CZ3.**  For a finite type quasi-coherent `𝒪_X`-module `G` on an algebraic space `X`
 > the Fitting ideals form an increasing chain `0 = Fit₋₁(G) ⊆ Fit₀(G) ⊆ … ⊆ 𝒪_X` of sheaves of
@@ -120,7 +120,7 @@ theorem fittingIdealInt_chain (X : AlgebraicSpaces B S hS) (G : Modules.{u, u} B
 
 [Tag 0CZ4](https://stacks.math.columbia.edu/tag/0CZ4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fittingIdealPullback_eq_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealPullbackFiniteType.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealPullbackFiniteType.lean#L65).
+**`AlgebraicGeometry.Space.fittingIdealPullback_eq_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealPullbackFiniteType.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealPullbackFiniteType.lean#L65).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces and let `G` be a finite type
 > quasi-coherent `𝒪_Y`-module.  Then the ideal sheaf on `X` generated by the inverse image of the
@@ -140,7 +140,7 @@ theorem fittingIdealPullback_eq_fittingIdeal {f : X ⟶ Y} {G : Modules.{u, u} B
 
 [Tag 0CZ5](https://stacks.math.columbia.edu/tag/0CZ5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypeQuasicoherentIdeal_fittingIdeal_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealFiniteType.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealFiniteType.lean#L286).
+**`AlgebraicGeometry.Space.isFiniteTypeQuasicoherentIdeal_fittingIdeal_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealFiniteType.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealFiniteType.lean#L286).
 
 > For a finitely presented quasi-coherent `𝒪_X`-module `ℱ` on an algebraic space `X`, the `r`-th
 > Fitting ideal `Fit_r(ℱ)` is a quasi-coherent ideal of finite type.
@@ -156,7 +156,7 @@ theorem isFiniteTypeQuasicoherentIdeal_fittingIdeal_of_isFinitePresentationOnSit
 
 [Tag 0CZ6](https://stacks.math.columbia.edu/tag/0CZ6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticSupport_le_fittingClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L108). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.schemeTheoreticSupport_le_fittingClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L108). The attribute's comment: “part (1)”.
 
 > **Stacks 0CZ6, part (1).**  Let `G` be a finite type, quasi-coherent `𝒪_X`-module, let `Z₀`
 > be the closed subspace of `X` cut out by `Fit_0(G)` and let `Z` be the scheme-theoretic support
@@ -176,7 +176,7 @@ theorem schemeTheoreticSupport_le_fittingClosedSubspace
       schemeTheoreticSupport B S hS X G ≤ Z₀.1
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_schemeTheoreticSupport_eq_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L133). The attribute's comment: “part (2)”. References: SGA 7 VI (5.1), “more general”.
+**`AlgebraicGeometry.Space.range_pointsMap_schemeTheoreticSupport_eq_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L133). The attribute's comment: “part (2)”. References: SGA 7 VI (5.1), “more general”.
 
 > **Stacks 0CZ6, part (2).**  Let `G` be a finite type, quasi-coherent `𝒪_X`-module, let `Z₀`
 > be the closed subspace of `X` cut out by `Fit_0(G)` and let `Z` be the scheme-theoretic support
@@ -203,7 +203,7 @@ theorem range_pointsMap_schemeTheoreticSupport_eq_supportOfSheaf
       IsClosed (supportOfSheaf B S hS X.1 ((SheafOfModules.toSheaf _).obj G))
 ```
 
-**`AlgebraicGeometry.Space.exists_module_on_fittingClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L174). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.exists_module_on_fittingClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealZerothSchemeTheoreticSupport.lean#L174). The attribute's comment: “part (3)”.
 
 > **Stacks 0CZ6, part (3).**  Let `G` be a finite type, quasi-coherent `𝒪_X`-module and let
 > `Z₀` be the closed subspace of `X` cut out by `Fit_0(G)`.  Then there is a finite type,
@@ -230,7 +230,7 @@ theorem exists_module_on_fittingClosedSubspace
 
 [Tag 0CZ7](https://stacks.math.columbia.edu/tag/0CZ7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_fin_span_iff_fittingIdealGeometricStalk_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealGeometricStalk.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealGeometricStalk.lean#L384).
+**`AlgebraicGeometry.Space.exists_fin_span_iff_fittingIdealGeometricStalk_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealGeometricStalk.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealGeometricStalk.lean#L384).
 
 > **Stacks 0CZ7.**  Let `G` be a finite type quasi-coherent `𝒪_X`-module on an algebraic space
 > `X` and let `x̄` be a geometric point of `X`.  Then `G` can be generated by `r` elements on an
@@ -260,7 +260,7 @@ theorem exists_fin_span_iff_fittingIdealGeometricStalk_eq_top
 
 [Tag 0CZ8](https://stacks.math.columbia.edu/tag/0CZ8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfRank_tfae_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingLocallyFreeRank.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingLocallyFreeRank.lean#L446).
+**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfRank_tfae_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingLocallyFreeRank.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingLocallyFreeRank.lean#L446).
 
 > **Stacks Project, Tag 0CZ8.**  Let `F` be an algebraic space and let `G` be a quasi-coherent
 > `𝒪_F`-module on its small étale site.  For every `r`, the following are equivalent: `G` is
@@ -287,7 +287,7 @@ theorem isFiniteLocallyFreeOfRank_tfae_fittingIdeal
 
 [Tag 0CZ9](https://stacks.math.columbia.edu/tag/0CZ9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_fittingClosedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean#L226). The attribute's comment: “the decreasing chain of closed subspaces cut out by the Fitting ideals”.
+**`AlgebraicGeometry.Space.exists_fittingClosedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean#L226). The attribute's comment: “the decreasing chain of closed subspaces cut out by the Fitting ideals”.
 
 > **The closed subspaces cut out by the Fitting ideals of an `𝒪_X`-module.**  If every Fitting
 > ideal sheaf of `G` is quasi-coherent, there is a decreasing chain of closed subspaces of `X` whose
@@ -308,7 +308,7 @@ theorem exists_fittingClosedSubspaces (G : Modules.{u, u} B S hS X.1 X.2)
         Antitone fun r ↦ (Z r).1
 ```
 
-**`AlgebraicGeometry.Space.iInf_fittingClosedSubspace_eq_sheafify_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean#L286). The attribute's comment: “(1) the intersection is empty; (2), (3) and finite presentation not covered”.
+**`AlgebraicGeometry.Space.iInf_fittingClosedSubspace_eq_sheafify_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingClosedSubspaces.lean#L286). The attribute's comment: “(1) the intersection is empty; (2), (3) and finite presentation not covered”.
 
 > **Clause (1) of Stacks 0CZ9: the intersection of the Fitting closed subspaces is the empty
 > algebraic space.**  For a chain of closed subspaces of `X` whose defining ideal sheaves are the
@@ -330,7 +330,7 @@ theorem iInf_fittingClosedSubspace_eq_sheafify_bot
     (⨅ r : ℕ, (Z r).1) = (⊥ : Subfunctor X.1).sheafify (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Space.exists_fittingClosedSubspaces_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumFinitePresentation.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumFinitePresentation.lean#L194). References: EGA IV (1.4.5), “the closed subspaces”.
+**`AlgebraicGeometry.Space.exists_fittingClosedSubspaces_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumFinitePresentation.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumFinitePresentation.lean#L194). References: EGA IV (1.4.5), “the closed subspaces”.
 
 > **Stacks 0CZ9.**  Let `X` be an algebraic space over a scheme `S` contained in a big fppf
 > site `B` and let `G` be a quasi-coherent `𝒪_X`-module of finite type.  The Fitting ideal sheaves
@@ -381,7 +381,7 @@ theorem exists_fittingClosedSubspaces_spec (hGqc : G.IsQuasicoherentOnSite)
 
 [Tag 0CZA](https://stacks.math.columbia.edu/tag/0CZA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyClosedSubspace_and_disjoint_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L338). The attribute's comment: “the strata X\_r = Z\_\{r-1} \ Z\_r are disjoint locally closed subspaces”.
+**`AlgebraicGeometry.Space.isLocallyClosedSubspace_and_disjoint_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L339). The attribute's comment: “the strata X\_r = Z\_\{r-1} \ Z\_r are disjoint locally closed subspaces”.
 
 > **Stacks 0CZA, the Fitting rank strata.**  Let `G` be an `𝒪_X`-module and let
 > `X ⊇ Z_0 ⊇ Z_1 ⊇ …` be closed subspaces of `X` whose defining ideal sheaves are the Fitting
@@ -398,7 +398,7 @@ theorem isLocallyClosedSubspace_and_disjoint_fittingRankStratum
           (⊥ : Subfunctor X.1).sheafify (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_fittingRankStratum_index`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L358). The attribute's comment: “every point of X lies in exactly one stratum X\_r = Z\_\{r-1} \ Z\_r”.
+**`AlgebraicGeometry.Space.existsUnique_fittingRankStratum_index`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L359). The attribute's comment: “every point of X lies in exactly one stratum X\_r = Z\_\{r-1} \ Z\_r”.
 
 > **Stacks 0CZA, the Fitting rank strata cover `X`.**  Every point of `X` lies in exactly one
 > Fitting rank stratum `X_r = Z_{r-1} \ Z_r`: there is a unique `r` with the point outside `Z_r`
@@ -421,7 +421,7 @@ theorem existsUnique_fittingRankStratum_index (G : Modules.{u, u} B S hS X.1 X.2
       ∀ k < r, x ∈ Set.range (pointsMap B S hS (Z k).1.toFunctor (Z k).1.ι)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_fittingRankStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L399). The attribute's comment: “X' = ∐\_\{r ≥ 0} X\_r is an algebraic space, with its morphism to X”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_fittingRankStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L400). The attribute's comment: “X' = ∐\_\{r ≥ 0} X\_r is an algebraic space, with its morphism to X”.
 
 > **Stacks 0CZA, the disjoint union of the Fitting rank strata.**  The disjoint union
 > `X' = ∐_{r ≥ 0} X_r` of the strata `X_r = Z_{r-1} \ Z_r` of a chain `X ⊇ Z_0 ⊇ Z_1 ⊇ …` of closed
@@ -435,7 +435,7 @@ theorem isAlgebraicSpace_fittingRankStratification (Z : ℕ → ClosedSubspaces 
           fittingRankStratificationHom B S hS X Z = fittingRankStratumHom B S hS X Z r
 ```
 
-**`AlgebraicGeometry.Space.exists_fittingRankStratification_flat_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumAssembly.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumAssembly.lean#L443).
+**`AlgebraicGeometry.Space.exists_fittingRankStratification_flat_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumAssembly.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FittingStratumAssembly.lean#L443).
 
 > **Stacks 0CZA.**  Let `X` be an algebraic space over a scheme `S` contained in a big fppf
 > site `B` and let `G` be a quasi-coherent `𝒪_X`-module of finite presentation.  Then the Fitting
@@ -491,4 +491,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.5, Tag 0CZ3](https://stacks.math.columbia.edu/tag/0CZ3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

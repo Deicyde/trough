@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.21 A bit of uniformity, II
 
-Section 51.21 of the Stacks Project, [Tag 0G9W](https://stacks.math.columbia.edu/tag/0G9W). 9 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.21 of the Stacks Project, [Tag 0G9W](https://stacks.math.columbia.edu/tag/0G9W). 9 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G9X, a lemma
 
 [Tag 0G9X](https://stacks.math.columbia.edu/tag/0G9X) in the Stacks Project.
 
-**`exists_uniform_tor_transition_eq_zero_of_pow_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean, line 816](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean#L816).
+**`exists_uniform_tor_transition_eq_zero_of_pow_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean, line 816](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean#L816).
 
 > **Stacks Project, Tag 0G9X.** For a fixed power `I ^ m` and a positive Tor degree, there is
 > a uniform shift such that the transition from `A / I ^ n` to `A / I ^ (n - c)` induces the zero
@@ -34,7 +34,7 @@ theorem exists_uniform_tor_transition_eq_zero_of_pow_smul_eq_bot
 
 [Tag 0G9Y](https://stacks.math.columbia.edu/tag/0G9Y) in the Stacks Project.
 
-**`Stacks.Blowup.exists_pow_le_annihilator_tor_affineBlowupAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/TorAnnihilation.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/TorAnnihilation.lean#L485).
+**`Stacks.Blowup.exists_pow_le_annihilator_tor_affineBlowupAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/TorAnnihilation.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Blowup/TorAnnihilation.lean#L485).
 
 > **Uniform annihilation of the high `Tor` modules of an affine blowup algebra.**
 > Let `I = (a₁, …, a_t)` be an ideal of a Noetherian ring `A`, let `a = a₁`, and let `B = A[I/a]`
@@ -56,7 +56,7 @@ public theorem exists_pow_le_annihilator_tor_affineBlowupAlgebra
 
 [Tag 0G9Z](https://stacks.math.columbia.edu/tag/0G9Z) in the Stacks Project.
 
-**`Stacks.Blowup.exists_threshold_nonempty_derivedGlobalSectionsTwistedPullback_iso_derivedTensorIdealPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistedSectionsIdealPow.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/TwistedSectionsIdealPow.lean#L168).
+**`Stacks.Blowup.exists_threshold_nonempty_derivedGlobalSectionsTwistedPullback_iso_derivedTensorIdealPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistedSectionsIdealPow.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/TwistedSectionsIdealPow.lean#L168).
 
 > **Cohomology of the twisted derived pullback along the affine blowup, unconditionally.** Let
 > `A` be a Noetherian ring, `I ⊆ A` an ideal and `p : X ⟶ Spec A` the blowup of `Spec A` in `I`.
@@ -90,7 +90,7 @@ theorem exists_threshold_nonempty_derivedGlobalSectionsTwistedPullback_iso_deriv
 
 [Tag 0GA0](https://stacks.math.columbia.edu/tag/0GA0) in the Stacks Project.
 
-**`Stacks.Blowup.exists_pow_le_annihilator_homology_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DerivedPullbackAnnihilation.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/DerivedPullbackAnnihilation.lean#L505).
+**`Stacks.Blowup.exists_pow_le_annihilator_homology_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DerivedPullbackAnnihilation.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/DerivedPullbackAnnihilation.lean#L505).
 
 > **Stacks Project, Tag 0GA0.** Let `A` be a Noetherian ring and `I = (a₀, …, a_n) ⊆ A` an
 > ideal with `t = n + 1` generators, and let `p : X ⟶ Spec A` be the blowup of `Spec A` in `I`,
@@ -118,7 +118,7 @@ theorem exists_pow_le_annihilator_homology_derivedPullback {n : ℕ} (g : Fin (n
 
 [Tag 0GA1](https://stacks.math.columbia.edu/tag/0GA1) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/TorAnnihilationBlowup.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/TorAnnihilationBlowup.lean#L211).
+**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/TorAnnihilationBlowup.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/TorAnnihilationBlowup.lean#L213).
 
 > **Stacks Project, Tag 0GA1.** Let `A` be a Noetherian ring and let `I = (g 0, …, g (t-1))` be
 > an ideal of `A` generated by at most `t` elements, as in the Situation of [Stacks, Tag 0G9W].
@@ -140,7 +140,7 @@ theorem exists_pow_le_annihilator_tor_quotient_pow_blowup [IsNoetherianRing A] {
         (((Tor' (ModuleCat.{u} A) i).obj M).obj (ModuleCat.of A (A ⧸ I ^ q)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean#L208).
+**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean#L208).
 
 > **Stacks Project, Tag 0GA1.** Let `A` be a Noetherian ring and let `I = (g 0, …, g (t-1))` be
 > an ideal of `A` generated by at most `t` elements, as in the Situation of [Stacks, Tag 0G9W].
@@ -173,7 +173,7 @@ theorem exists_pow_le_annihilator_tor_quotient_pow [IsNoetherianRing A] {I : Ide
         (((Tor' (ModuleCat.{u} A) i).obj M).obj (ModuleCat.of A (A ⧸ I ^ q)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow_of_card_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean#L295). The attribute's comment: “for an ideal generated by at most one element”.
+**`Stacks.LocalCohomology.UniformityII.exists_pow_le_annihilator_tor_quotient_pow_of_card_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorAnnihilation.lean#L295). The attribute's comment: “for an ideal generated by at most one element”.
 
 > **Stacks Project, Tag 0GA1 for an ideal generated by at most one element.** Let `A` be a
 > Noetherian ring and let `I = (g 0, …, g (t-1))` be an ideal generated by at most `t ≤ 1` elements.
@@ -200,7 +200,7 @@ theorem exists_pow_le_annihilator_tor_quotient_pow_of_card_le_one [IsNoetherianR
 
 [Tag 0GA2](https://stacks.math.columbia.edu/tag/0GA2) in the Stacks Project.
 
-**`exists_uniform_tor_transition_eq_zero_of_pow_le_annihilator_tor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean, line 1227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean#L1227).
+**`exists_uniform_tor_transition_eq_zero_of_pow_le_annihilator_tor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean, line 1227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformTorTransition.lean#L1227).
 
 > **Stacks Project, Tag 0GA2.** Let `I = (g 0, …, g (t - 1))` be an ideal of a Noetherian ring
 > `A` generated by at most `t` elements. There are `N` and `c`, depending only on `A`, `I` and `t`,
@@ -227,7 +227,7 @@ theorem exists_uniform_tor_transition_eq_zero_of_pow_le_annihilator_tor'
 
 [Tag 0GA3](https://stacks.math.columbia.edu/tag/0GA3) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityII.exists_uniform_torMapVanishesAtSucc_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L142). The attribute's comment: “condition (7) of Tag 0G9V”.
+**`Stacks.LocalCohomology.UniformityII.exists_uniform_torMapVanishesAtSucc_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L142). The attribute's comment: “condition (7) of Tag 0G9V”.
 
 > **Stacks Project, Tag 0GA3, condition (7) of Tag 0G9V.** Let `I = (g 0, …, g (t - 1))` be an
 > ideal of a Noetherian ring `A` generated by at most `t` elements. There are `N` and `c`,
@@ -246,7 +246,7 @@ theorem exists_uniform_torMapVanishesAtSucc_quotientFactor [IsNoetherianRing A]
           (Ideal.pow_le_pow_right (Nat.sub_le n c)))) t
 ```
 
-**`Stacks.LocalCohomology.UniformityII.exists_uniform_extMapVanishesAbove_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L162). The attribute's comment: “condition (3) of Tag 0G9V”.
+**`Stacks.LocalCohomology.UniformityII.exists_uniform_extMapVanishesAbove_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L162). The attribute's comment: “condition (3) of Tag 0G9V”.
 
 > **Stacks Project, Tag 0GA3, condition (3) of Tag 0G9V.** Let `I = (g 0, …, g (t - 1))` be an
 > ideal of a Noetherian ring `A` generated by at most `t` elements. There are `N` and `c`,
@@ -268,7 +268,7 @@ theorem exists_uniform_extMapVanishesAbove_quotientFactor [IsNoetherianRing A]
           (Ideal.pow_le_pow_right (Nat.sub_le n c)))) t
 ```
 
-**`Stacks.LocalCohomology.UniformityII.exists_uniform_hasLiftVanishingAbove_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L181). The attribute's comment: “condition (1) of Tag 0G9V”.
+**`Stacks.LocalCohomology.UniformityII.exists_uniform_hasLiftVanishingAbove_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L181). The attribute's comment: “condition (1) of Tag 0G9V”.
 
 > **Stacks Project, Tag 0GA3, condition (1) of Tag 0G9V.** Let `I = (g 0, …, g (t - 1))` be an
 > ideal of a Noetherian ring `A` generated by at most `t` elements. There are `N` and `c`,
@@ -294,7 +294,7 @@ theorem exists_uniform_hasLiftVanishingAbove_quotientFactor [IsNoetherianRing A]
             (Ideal.pow_le_pow_right (Nat.sub_le n c)))) t
 ```
 
-**`Stacks.LocalCohomology.UniformityII.exists_uniform_vanishingConditions_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L208). The attribute's comment: “all seven conditions of Tag 0G9V at e = t”.
+**`Stacks.LocalCohomology.UniformityII.exists_uniform_vanishingConditions_quotientFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingConditions.lean#L208). The attribute's comment: “all seven conditions of Tag 0G9V at e = t”.
 
 > **Stacks Project, Tag 0GA3.** Let `I = (g 0, …, g (t - 1))` be an ideal of a Noetherian ring
 > `A` generated by at most `t` elements. There are `N` and `c`, depending only on `A`, `I` and `t`,
@@ -329,7 +329,7 @@ theorem exists_uniform_vanishingConditions_quotientFactor [IsNoetherianRing A]
 
 [Tag 0GA4](https://stacks.math.columbia.edu/tag/0GA4) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityII.exists_uniform_vanishingConditions_quotientFactor_of_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingKrullDimension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingKrullDimension.lean#L142). The attribute's comment: “Tag 0GA3 with e = dim A for a local ring: all seven conditions of Tag 0G9V; the cd(A, I) question the remark raises is open in the source and is not stated”.
+**`Stacks.LocalCohomology.UniformityII.exists_uniform_vanishingConditions_quotientFactor_of_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingKrullDimension.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/UniformVanishingKrullDimension.lean#L143). The attribute's comment: “Tag 0GA3 with e = dim A for a Noetherian local ring: all seven conditions of Tag 0G9V; the remark's question about e = cd(A, I) is left open by the source and asserts nothing”.
 
 > **Stacks Project, Tag 0GA4.** Let `A` be a Noetherian local ring of Krull dimension `d` and
 > let `I` be an ideal of `A`. There are `N` and `c` such that for every `n ≥ N` and every choice of
@@ -366,7 +366,7 @@ theorem exists_uniform_vanishingConditions_quotientFactor_of_ringKrullDim
 
 [Tag 0GA5](https://stacks.math.columbia.edu/tag/0GA5) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityII.nonempty_strictProIso_systemFour_systemOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean#L119). The attribute's comment: “if `P` is Noetherian, the system (4) is strictly pro-isomorphic to the system (1)”.
+**`Stacks.LocalCohomology.UniformityII.nonempty_strictProIso_systemFour_systemOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean#L119). The attribute's comment: “if `P` is Noetherian, the system (4) is strictly pro-isomorphic to the system (1)”.
 
 > **If `P` is Noetherian, the system (4) is strictly pro-isomorphic to the system (1).**
 > Let `φ : P → A` be a ring map of Noetherian rings, `J ⊆ P` an ideal, `I = JA`, and `M` a
@@ -384,7 +384,7 @@ theorem nonempty_strictProIso_systemFour_systemOne [IsNoetherianRing P] [IsNoeth
         DerivedCategory.Q))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.nonempty_proIso_systemFour_systemOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean#L136). The attribute's comment: “if `P` is Noetherian, the system (4) is pro-isomorphic to the system (1)”.
+**`Stacks.LocalCohomology.UniformityII.nonempty_proIso_systemFour_systemOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/NoetherianSystemFour.lean#L136). The attribute's comment: “if `P` is Noetherian, the system (4) is pro-isomorphic to the system (1)”.
 
 > **If `P` is Noetherian, the system (4) is pro-isomorphic to the system (1).**
 > Let `φ : P → A` be a ring map of Noetherian rings, `J ⊆ P` an ideal, `I = JA`, and `M` a bounded
@@ -401,7 +401,7 @@ theorem nonempty_proIso_systemFour_systemOne [IsNoetherianRing P] [IsNoetherianR
         DerivedCategory.Q))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.isZero_tor_quotient_pow_idealOfVars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialQuotientTorDimension.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialQuotientTorDimension.lean#L228). The attribute's comment: “in the standard example, `A[x₁, …, x_r]/(x₁, …, x_r)ⁿ` has tor dimension at most `r` for all `n`”.
+**`Stacks.LocalCohomology.UniformityII.isZero_tor_quotient_pow_idealOfVars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialQuotientTorDimension.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialQuotientTorDimension.lean#L229). The attribute's comment: “in the standard example, `A[x₁, …, x_r]/(x₁, …, x_r)ⁿ` has tor dimension at most `r` for all `n`”.
 
 > `A[x₁, …, x_r]/(x₁, …, x_r)ⁿ` has Tor dimension at most `r` for all `n`: for every module `N`
 > over `R = A[x₁, …, x_r]` and every `p > r`, `Tor_p^R(R/(x₁, …, x_r)ⁿ, N) = 0`.
@@ -413,7 +413,7 @@ theorem isZero_tor_quotient_pow_idealOfVars (n : ℕ) (N : ModuleCat.{u} (MvPoly
       (ModuleCat.of _ (MvPolynomial (Fin r) A ⧸ idealOfVars (Fin r) A ^ n))).obj N)
 ```
 
-**`Stacks.LocalCohomology.UniformityII.polynomialSystemFourIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean#L222). The attribute's comment: “the standard example: `M ⊗ᴸ_P P/Jⁿ = M ⊗ᴸ_{A[x]} A[x]/(x)ⁿ` for `P = ℤ[x₁, …, x_r]`”.
+**`Stacks.LocalCohomology.UniformityII.polynomialSystemFourIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean#L222). The attribute's comment: “the standard example: `M ⊗ᴸ_P P/Jⁿ = M ⊗ᴸ_{A[x]} A[x]/(x)ⁿ` for `P = ℤ[x₁, …, x_r]`”.
 
 > **`M ⊗ᴸ_P P/Jⁿ = M ⊗ᴸ_{A[x]} A[x]/(x)ⁿ`.**  Let `P = R₀[x₁, …, x_r]` (the source takes
 > `R₀ = ℤ`; at a universe `u` other than `0` one takes `R₀ = ULift ℤ`), let `P → A` send `xᵢ` to
@@ -427,7 +427,7 @@ noncomputable def polynomialSystemFourIso :
       systemFour (polyEvalBase g) M (MvPolynomial.idealOfVars (Fin r) A)
 ```
 
-**`Stacks.LocalCohomology.UniformityII.nonempty_proIso_polynomialSystemFour_systemTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean#L236). The attribute's comment: “the standard example `P = ℤ[x₁, …, x_r]`: the system (4) is strictly pro-isomorphic to the system (2), by reduction to the finite map `A[x] → A`”.
+**`Stacks.LocalCohomology.UniformityII.nonempty_proIso_polynomialSystemFour_systemTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/PolynomialSystemFour.lean#L236). The attribute's comment: “the standard example `P = ℤ[x₁, …, x_r]`: the system (4) is strictly pro-isomorphic to the system (2), by reduction to the finite map `A[x] → A`”.
 
 > In the situation of `polynomialSystemFourIso`, with `A` Noetherian and `I = (g₁, …, g_r)`,
 > the system (4) `n ↦ M ⊗ᴸ_P P/Jⁿ⁺¹` for `P = R₀[x₁, …, x_r]` is strictly pro-isomorphic to the
@@ -439,7 +439,7 @@ theorem nonempty_proIso_polynomialSystemFour_systemTwo [IsNoetherianRing A] :
       proObj (systemTwo (polyEval R₀ g) M (Ideal.span (Set.range g))))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.isIso_proHom_derivedReductionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean#L135). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism”.
+**`Stacks.LocalCohomology.UniformityII.isIso_proHom_derivedReductionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean#L135). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism”.
 
 > **The natural map from system (2) to system (1) is a strict pro-isomorphism.** Let `I` be an
 > ideal of a Noetherian ring `A`, let `M` be a bounded complex of finite `A`-modules and
@@ -461,7 +461,7 @@ theorem isIso_proHom_derivedReductionComparison [IsNoetherianRing A] (I : Ideal 
         (reductionComplexSystem I M ⋙ DerivedCategory.Q)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.derivedReductionComparison_hasEventualInverses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean#L154). The attribute's comment: “the systems (1) and (2) are pro-isomorphic, via Lemma 15.102.3”.
+**`Stacks.LocalCohomology.UniformityII.derivedReductionComparison_hasEventualInverses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictDerivedReduction.lean#L154). The attribute's comment: “the systems (1) and (2) are pro-isomorphic, via Lemma 15.102.3”.
 
 > **The systems (1) and (2) are pro-isomorphic.** Let `I` be an ideal of a Noetherian ring `A`,
 > let `M` be a bounded complex of finite `A`-modules and `p : P ⟶ M` a quasi-isomorphism from a
@@ -481,7 +481,7 @@ theorem derivedReductionComparison_hasEventualInverses [IsNoetherianRing A] (I :
       (Functor.whiskerRight (reductionComplexSystemMap I p) DerivedCategory.Q)
 ```
 
-**`Stacks.LocalCohomology.UniformityII.proIso_koszulToAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L150). The attribute's comment: “the pro-isomorphism, in the category of modules, between the system `H⁰(Kₙ) = A/(f₀ⁿ, …, f_{r-1}ⁿ)` and the system `A/Iⁿ`, which is the comparison the remark makes by comparing with Koszul complexes and whose strictness the remark then denies”.
+**`Stacks.LocalCohomology.UniformityII.proIso_koszulToAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L150). The attribute's comment: “the pro-isomorphism, in the category of modules, between the system `H⁰(Kₙ) = A/(f₀ⁿ, …, f_{r-1}ⁿ)` and the system `A/Iⁿ`, which is the comparison the remark makes by comparing with Koszul complexes and whose strictness the remark then denies”.
 
 > **The two systems are isomorphic as pro-objects.** The comparison `koszulToAdic` admits, at
 > every level `n`, a two-sided inverse defined on a later level `m`: both triangles it forms with
@@ -499,7 +499,7 @@ public theorem proIso_koszulToAdic {A : Type u} [CommRing A] {r : ℕ} (f : Fin 
               (Ideal.span (Set.range f))).map (homOfLE h).op
 ```
 
-**`Stacks.LocalCohomology.UniformityII.not_annihilator_pow_mul_pred`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L285). The attribute's comment: “the computation the remark performs on its example: for `A = ℤ[x₀, …, x_{r-1}]` and `f i = x i`, the module `H⁰(Kₙ) = A/(x₀ⁿ, …, x_{r-1}ⁿ)` is not annihilated by `I^{r(n-1)}`, witnessed by the monomial `x₀^(n-1) ⋯ x_{r-1}^(n-1)`”.
+**`Stacks.LocalCohomology.UniformityII.not_annihilator_pow_mul_pred`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L285). The attribute's comment: “the computation the remark performs on its example: for `A = ℤ[x₀, …, x_{r-1}]` and `f i = x i`, the module `H⁰(Kₙ) = A/(x₀ⁿ, …, x_{r-1}ⁿ)` is not annihilated by `I^{r(n-1)}`, witnessed by the monomial `x₀^(n-1) ⋯ x_{r-1}^(n-1)`”.
 
 > In `ℤ[x₀, …, x_{r-1}]` the module
 > `H⁰(Kₙ) = ℤ[x]/(x₀ⁿ, …, x_{r-1}ⁿ)` is not annihilated by `I^{r(n-1)}`.
@@ -512,7 +512,7 @@ public theorem not_annihilator_pow_mul_pred (r n : ℕ) (hn : 1 ≤ n) :
             Ideal.span (Set.range fun i : Fin r => (X i : MvPolynomial (Fin r) ℤ) ^ n)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.not_strictProIso_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L317). The attribute's comment: “the failure of strictness the remark asserts for systems (1) and (3) at `M = A[0]`: the system `H⁰(Kₙ) = A/(x₀ⁿ, …, x_{r-1}ⁿ)` over `A = ℤ[x₀, …, x_{r-1}]` admits no strict pro-isomorphism with the system `A/Iⁿ`, proved as the negation it is”.
+**`Stacks.LocalCohomology.UniformityII.not_strictProIso_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L317). The attribute's comment: “the failure of strictness the remark asserts for systems (1) and (3) at `M = A[0]`: the system `H⁰(Kₙ) = A/(x₀ⁿ, …, x_{r-1}ⁿ)` over `A = ℤ[x₀, …, x_{r-1}]` admits no strict pro-isomorphism with the system `A/Iⁿ`, proved as the negation it is”.
 
 > **Failure of strictness.** For `r ≥ 2` the inverse system
 > `H⁰(Kₙ) = ℤ[x]/(x₀ⁿ, …, x_{r-1}ⁿ)` of the Koszul complexes on the powers of the variables and
@@ -535,7 +535,7 @@ public theorem not_strictProIso_monomial (r : ℕ) (hr : 2 ≤ r) :
           (X i : MvPolynomial (Fin r) ℤ)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.not_nonempty_iso_proObj_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L341). The attribute's comment: “the failure of strictness for systems (1) and (3) at `M = A[0]`, stated as non-isomorphism of the two inverse sequences in the strict pro-category itself”.
+**`Stacks.LocalCohomology.UniformityII.not_nonempty_iso_proObj_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailure.lean#L341). The attribute's comment: “the failure of strictness for systems (1) and (3) at `M = A[0]`, stated as non-isomorphism of the two inverse sequences in the strict pro-category itself”.
 
 > **Failure of strictness, in the strict pro-category.**  For `r ≥ 2` the inverse sequence
 > `A/Iⁿ` and the inverse sequence `H⁰(Kₙ) = A/(x₀ⁿ, …, x_{r-1}ⁿ)` over `A = ℤ[x₀, …, x_{r-1}]`
@@ -550,7 +550,7 @@ public theorem not_nonempty_iso_proObj_monomial (r : ℕ) (hr : 2 ≤ r) :
           (X i : MvPolynomial (Fin r) ℤ)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.not_nonempty_iso_proObj_derived_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailureDerived.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailureDerived.lean#L120). The attribute's comment: “systems (1) and (3) are not strictly pro-isomorphic, even for `M = A[0]`: the example `A = ℤ[x₁, …, x_r]`, `fᵢ = xᵢ`, read in the strict pro-category of `D(A)`”.
+**`Stacks.LocalCohomology.UniformityII.not_nonempty_iso_proObj_derived_monomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailureDerived.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictnessFailureDerived.lean#L120). The attribute's comment: “systems (1) and (3) are not strictly pro-isomorphic, even for `M = A[0]`: the example `A = ℤ[x₁, …, x_r]`, `fᵢ = xᵢ`, read in the strict pro-category of `D(A)`”.
 
 > **Stacks 0GA5, failure of strictness for (1) and (3), in `D(A)`.**  Let
 > `A = ℤ[x₀, …, x_{r-1}]` with `r ≥ 2`, `fᵢ = xᵢ` and `I = (x₀, …, x_{r-1})`.  For `M = A[0]` the
@@ -572,7 +572,7 @@ theorem not_nonempty_iso_proObj_derived_monomial {r : ℕ}
         proObj (Koszul.powDerivedSystem fun i : Fin r => (X i : MvPolynomial (Fin r) ℤ)))
 ```
 
-**`CategoryTheory.StrictProCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean#L32). The attribute's comment: “strict\_pro\_category”.
+**`CategoryTheory.StrictProCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean#L32). The attribute's comment: “strict\_pro\_category”.
 
 > The strict pro-category of `C`. Its objects are inverse sequences in `C`; its morphisms are
 > uniformly shifted compatible maps modulo eventual agreement after passing to a common shift.
@@ -581,7 +581,7 @@ theorem not_nonempty_iso_proObj_derived_monomial {r : ℕ}
 abbrev StrictProCategory (C : Type u) [Category.{v} C]
 ```
 
-**`Stacks.LocalCohomology.UniformityII.derivedTensorKoszulSystem_hasEventualInverses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean#L70). The attribute's comment: “the pro-isomorphism between the systems (2) and (3), via Lemma 15.96.1”.
+**`Stacks.LocalCohomology.UniformityII.derivedTensorKoszulSystem_hasEventualInverses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean#L70). The attribute's comment: “the pro-isomorphism between the systems (2) and (3), via Lemma 15.96.1”.
 
 > **Systems (2) and (3) are pro-isomorphic.**  For an ideal `I = (f₀, …, f_{r-1})` of a
 > Noetherian ring `A`, the inverse system `n ↦ M ⊗ᴸ K_{n+1}` of derived tensor products with the
@@ -600,7 +600,7 @@ public theorem derivedTensorKoszulSystem_hasEventualInverses
         (T.tensor.obj (DerivedCategory.Q.obj M)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.derivedTensorKoszulSystem_hasEventualInverses_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean#L84). The attribute's comment: “the pro-isomorphism between the systems (2) and (3), for the canonical derived tensor product”.
+**`Stacks.LocalCohomology.UniformityII.derivedTensorKoszulSystem_hasEventualInverses_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProFourSystems.lean#L84). The attribute's comment: “the pro-isomorphism between the systems (2) and (3), for the canonical derived tensor product”.
 
 > `derivedTensorKoszulSystem_hasEventualInverses` for the canonical derived tensor product
 > of [Stacks, Tag 0BYI].
@@ -616,7 +616,7 @@ public theorem derivedTensorKoszulSystem_hasEventualInverses_canonical
           (DerivedCategory.Q.obj M)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.isIso_proHom_systemFourToTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemFour.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemFour.lean#L156). The attribute's comment: “if `P → A` is finite, the system (4) is strictly pro-isomorphic to the system (2)”.
+**`Stacks.LocalCohomology.UniformityII.isIso_proHom_systemFourToTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemFour.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemFour.lean#L156). The attribute's comment: “if `P → A` is finite, the system (4) is strictly pro-isomorphic to the system (2)”.
 
 > **Stacks 0GA5: if `P → A` is finite, system (4) is strictly pro-isomorphic to system
 > (2).**  Let `P` be Noetherian, `f : P → A` a finite ring map, `J ⊆ P` an ideal with `I = JA`,
@@ -633,7 +633,7 @@ theorem isIso_proHom_systemFourToTwo [IsNoetherianRing P] (hf : f.Finite) (J : I
       StrictProHomRep (systemFour f M J) (systemTwo f M I)))
 ```
 
-**`Stacks.LocalCohomology.UniformityII.hasUniformInverses_systemTwoToOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemTwo.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemTwo.lean#L257). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism, for (2) formed with the derived tensor product”.
+**`Stacks.LocalCohomology.UniformityII.hasUniformInverses_systemTwoToOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemTwo.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictSystemTwo.lean#L257). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism, for (2) formed with the derived tensor product”.
 
 > **The natural map from (2) to (1) is a strict pro-isomorphism**, for the derived-tensor model
 > of (2). Let `I` be an ideal of a Noetherian ring `A` and `M` a bounded complex of finite
@@ -647,7 +647,7 @@ theorem hasUniformInverses_systemTwoToOne [IsNoetherianRing A] (I : Ideal A)
     HasUniformInverses (systemTwoToOne f M I)
 ```
 
-**`Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_exists_uniform_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/UniformDerivedReduction.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/UniformDerivedReduction.lean#L499). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism: inverses over a uniform shift”.
+**`Stacks.AdicSystem.DerivedReductionProIso.derivedReduction_exists_uniform_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/UniformDerivedReduction.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/UniformDerivedReduction.lean#L499). The attribute's comment: “the natural map from (2) to (1) is a strict pro-isomorphism: inverses over a uniform shift”.
 
 > **[Stacks, Tag 0GA5], explicitly.**  In the situation of
 > `derivedReduction_hasUniformInverses`, there is a shift `c` such that for all `n + c ≤ m` the
@@ -676,4 +676,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.21, Tag 0G9W](https://stacks.math.columbia.edu/tag/0G9W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

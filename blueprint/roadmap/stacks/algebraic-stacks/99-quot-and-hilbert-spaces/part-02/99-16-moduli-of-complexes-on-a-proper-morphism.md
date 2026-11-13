@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.16 Moduli of complexes on a proper morphism
 
-Section 99.16 of the Stacks Project, [Tag 0DLB](https://stacks.math.columbia.edu/tag/0DLB). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.16 of the Stacks Project, [Tag 0DLB](https://stacks.math.columbia.edu/tag/0DLB). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DLC, a lemma
 
 [Tag 0DLC](https://stacks.math.columbia.edu/tag/0DLC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_negativeExtLocus_and_vanishing_and_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L222).
+**`AlgebraicGeometry.Space.exists_negativeExtLocus_and_vanishing_and_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L222).
 
 > **Stacks 0DLC.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is proper,
 > flat and of finite presentation, and let `K`, `E ∈ D(𝒪_X)` with `K` pseudo-coherent and `E`
@@ -52,7 +52,7 @@ theorem exists_negativeExtLocus_and_vanishing_and_representable
 
 [Tag 0DLD](https://stacks.math.columbia.edu/tag/0DLD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.conditions_negativeSelfExt_selfHom_overBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L257).
+**`AlgebraicGeometry.Space.ComplexesSituation.conditions_negativeSelfExt_selfHom_overBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L257).
 
 > **Stacks 0DLD.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is proper,
 > flat and of finite presentation, and let `E ∈ D(𝒪_X)`. Assume that `E` is `Y`-perfect
@@ -85,7 +85,7 @@ theorem conditions_negativeSelfExt_selfHom_overBaseChange (E : derivedModules B 
 
 [Tag 0DLE](https://stacks.math.columbia.edu/tag/0DLE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L318). The attribute's comment: “the standing situation: a proper, flat, finitely presented morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.ComplexesSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L318). The attribute's comment: “the standing situation: a proper, flat, finitely presented morphism of algebraic spaces”.
 
 > **Stacks 0DLE, the standing data.**  A morphism `f : X ⟶ Y` of algebraic spaces over `S`
 > which is proper, flat and of finite presentation: the relative algebraic space whose relatively
@@ -99,7 +99,7 @@ structure ComplexesSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Cont
     extends CoherentSituation B S hS
 ```
 
-**`AlgebraicGeometry.Space.ComplexesObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L522). The attribute's comment: “objects”.
+**`AlgebraicGeometry.Space.ComplexesObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L522). The attribute's comment: “objects”.
 
 > **Stacks 0DLE, the objects.**  An object of `Complexes_{X/Y}`: a scheme `T` of the site over
 > `Y` together with an object of `D(𝒪_{X_T})` satisfying conditions (1) and (2) of Stacks
@@ -109,7 +109,7 @@ structure ComplexesSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Cont
 structure ComplexesObject (D : ComplexesSituation B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ComplexesHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L536). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.Space.ComplexesHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L536). The attribute's comment: “morphisms”.
 
 > **Stacks 0DLE, the morphisms.**  A morphism of `Complexes_{X/Y}`: a morphism `h : T ⟶ T'` of
 > test schemes over `Y` together with an isomorphism `L(X_h)^*E' ⟶ E` of `D(𝒪_{X_T})`.
@@ -118,7 +118,7 @@ structure ComplexesObject (D : ComplexesSituation B S hS)
 structure ComplexesHom {D : ComplexesSituation B S hS} (A A' : ComplexesObject D)
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L684). The attribute's comment: “the category structure on the objects: the hom-sets are the pairs (h, φ), with the identity and the composition the tag designates”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L684). The attribute's comment: “the category structure on the objects: the hom-sets are the pairs (h, φ), with the identity and the composition the tag designates”.
 
 > **The category `Complexes_{X/Y}` of Stacks 0DLE.**  The category structure on the objects
 > whose hom-sets are `AlgebraicGeometry.Space.ComplexesHom`, whose identity is
@@ -129,7 +129,7 @@ structure ComplexesHom {D : ComplexesSituation B S hS} (A A' : ComplexesObject D
 def complexesCategory : Category.{u + 1} (ComplexesObject D)
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L695). The attribute's comment: “the functor (T, g, E) ↦ (T, g) to the test schemes over the base”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L695). The attribute's comment: “the functor (T, g, E) ↦ (T, g) to the test schemes over the base”.
 
 > **The projection of `Complexes_{X/Y}` to the test schemes over `Y` of Stacks 0DLE**,
 > `(T, g, E) ↦ (T, g)`: it forgets the complex and keeps the base map of a morphism.
@@ -140,7 +140,7 @@ def complexesProjection :
     ComplexesObject D ⥤ SchemesOver D.Y
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L734). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 734](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L734). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T”.
 
 > **The functor `p : Complexes_{X/Y} ⥤ (Sch/S)_fppf` of Stacks 0DLE**, `(T, g, E) ↦ T`: the
 > projection to the test schemes over `Y` followed by forgetting the morphism to `Y`.
@@ -151,7 +151,7 @@ def complexesFunctor :
     ComplexesObject D ⥤ BigFppfOver B S hS
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.isGroupoid_fiber_complexesFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L802). The attribute's comment: “the fibre categories of p over the schemes T are groupoids”.
+**`AlgebraicGeometry.Space.ComplexesSituation.isGroupoid_fiber_complexesFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L802). The attribute's comment: “the fibre categories of p over the schemes T are groupoids”.
 
 > **The fibre categories of `p : Complexes_{X/Y} ⥤ (Sch/S)_fppf` are groupoids**, as Stacks
 > 0DLE asserts.
@@ -161,7 +161,7 @@ theorem isGroupoid_fiber_complexesFunctor (T : BigFppfOver B S hS) :
     IsGroupoid ((complexesFunctor D).Fiber T)
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 838](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L838). The attribute's comment: “the whole statement: the category Complexes\_\{X/B} of the triples (T, g, E) and the pairs (h, φ), with the designated identity and composition, the functor p : (T, g, E) ↦ T to (Sch/S)\_fppf, and its fibre categories being groupoids”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 838](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L838). The attribute's comment: “the whole statement: the category Complexes\_\{X/B} of the triples (T, g, E) and the pairs (h, φ), with the designated identity and composition, the functor p : (T, g, E) ↦ T to (Sch/S)\_fppf, and its fibre categories being groupoids”.
 
 > **Stacks 0DLE in full.**  `Complexes_{X/Y}` is a category whose objects are the triples
 > `(T, g, E)` of `AlgebraicGeometry.Space.ComplexesObject` — a scheme `T` over `S`, a morphism
@@ -194,7 +194,7 @@ theorem complexesCategory_spec :
 
 [Tag 0DLF](https://stacks.math.columbia.edu/tag/0DLF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean#L264). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T, is fibred in groupoids”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean#L264). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T, is fibred in groupoids”.
 
 > **Stacks 0DLF.**  In Situation 0DLE the functor `p : Complexes_{X/B} ⥤ (Sch/S)_fppf`,
 > `(T, g, E) ↦ T`, is fibred in groupoids: every morphism `h : T ⟶ T'` of schemes over `S` lifts
@@ -216,7 +216,7 @@ theorem complexesFunctor_isFiberedInGroupoids :
 
 [Tag 0DLG](https://stacks.math.columbia.edu/tag/0DLG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexes_hasRepresentableDiagonal_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean#L64).
+**`AlgebraicGeometry.Space.ComplexesSituation.complexes_hasRepresentableDiagonal_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean#L64).
 
 > **Stacks 0DLG.** In Situation 0DLE (`f : X ⟶ Y` proper, flat and of finite presentation),
 > the diagonal `Δ : 𝒳 ⟶ 𝒳 × 𝒳` of `𝒳 = Complexes_{X/Y}` is representable by algebraic spaces:
@@ -234,7 +234,7 @@ theorem complexes_hasRepresentableDiagonal_proved :
 
 [Tag 0DLH](https://stacks.math.columbia.edu/tag/0DLH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isStackInGroupoids_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackCechDescentProved.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackCechDescentProved.lean#L74).
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isStackInGroupoids_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackCechDescentProved.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackCechDescentProved.lean#L74).
 
 > In a `Complexes` situation `D` over `S`, the category `Complexes_{X/Y}` fibred in groupoids
 > over `(Sch/S)_fppf` is a stack in groupoids.
@@ -249,7 +249,7 @@ theorem complexesFunctor_isStackInGroupoids_proved {S : Scheme.{u}} {hS : B.Cont
 
 [Tag 0DLI](https://stacks.math.columbia.edu/tag/0DLI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L176). The attribute's comment: “the 1-morphism Complexes\_\{X/B} → 𝒮\_B, (T, g, E) ↦ (T, g)”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L176). The attribute's comment: “the 1-morphism Complexes\_\{X/B} → 𝒮\_B, (T, g, E) ↦ (T, g)”.
 
 > **The projection to the base.**  The rule `(T, g, E) ↦ (T, g)` which forgets the complex is
 > a 1-morphism `Complexes_{X/B} ⟶ 𝒮_B` of categories over the big fppf site of `S`.
@@ -259,7 +259,7 @@ def complexesToBase (D : ComplexesSituation B S hS) :
     complexesBasedCategory D ⥤ᵇ baseBasedCategory D.Y
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.baseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L630). The attribute's comment: “the square Complexes\_\{X'/B'} → Complexes\_\{X/B} over 𝒮\_\{B'} → 𝒮\_B is a 2-fibre product”.
+**`AlgebraicGeometry.Space.ComplexesSituation.baseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L630). The attribute's comment: “the square Complexes\_\{X'/B'} → Complexes\_\{X/B} over 𝒮\_\{B'} → 𝒮\_B is a 2-fibre product”.
 
 > **The square
 >
@@ -278,7 +278,7 @@ def baseChangeSquare_isTwoFibreProduct (g : Y' ⟶ D.Y) :
 
 [Tag 0DLJ](https://stacks.math.columbia.edu/tag/0DLJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.isLimitPreserving_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean#L88).
+**`AlgebraicGeometry.Space.ComplexesSituation.isLimitPreserving_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackProved.lean#L88).
 
 > **Stacks 0DLJ.** In Situation 0DLE assume that `Y ⟶ S` is locally of finite presentation.
 > Then `p : Complexes_{X/Y} ⥤ (Sch/S)_fppf` is limit preserving (Stacks 07XL):
@@ -299,13 +299,13 @@ theorem isLimitPreserving_complexes
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.ComplexesSituation.isEquivalence_complexesFiberSquareComparison_proved`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutsProved.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutEquivalence.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutEquivalence.lean#L23) (StacksFrontier).
+- [`AlgebraicGeometry.Space.ComplexesSituation.isEquivalence_complexesFiberSquareComparison_proved`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutsProved.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutEquivalence.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackPushoutEquivalence.lean#L23) (StacksFrontier).
 
 ## Tag 0DLL, a lemma
 
 [Tag 0DLL](https://stacks.math.columbia.edu/tag/0DLL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.finiteDimensional_tangentSpace_infinitesimalAutomorphisms_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackTangentFiniteDimensional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackTangentFiniteDimensional.lean#L88).
+**`AlgebraicGeometry.Space.ComplexesSituation.finiteDimensional_tangentSpace_infinitesimalAutomorphisms_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackTangentFiniteDimensional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackTangentFiniteDimensional.lean#L88).
 
 > In Situation 0DLE (`f : X ⟶ Y` proper, flat and of finite presentation, the `B` of the source
 > being `Y`), assume that `S` is locally Noetherian and `Y ⟶ S` is locally of finite presentation.
@@ -342,7 +342,7 @@ theorem finiteDimensional_tangentSpace_infinitesimalAutomorphisms_complexes
 
 [Tag 0DLM](https://stacks.math.columbia.edu/tag/0DLM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.isStronglyFormallyEffective_complexes_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackFormalEffectivenessProved.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackFormalEffectivenessProved.lean#L51).
+**`AlgebraicGeometry.Space.ComplexesSituation.isStronglyFormallyEffective_complexes_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackFormalEffectivenessProved.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackFormalEffectivenessProved.lean#L51).
 
 > `Complexes_{X/S}` is strongly formally effective: in a `ComplexesSituation` whose target `Y`
 > of `f : X ⟶ Y` is terminal over `S`, with `S` locally Noetherian, the functor
@@ -360,7 +360,7 @@ theorem isStronglyFormallyEffective_complexes_proved {S : Scheme.{u}} {hS : B.Co
 
 [Tag 0DLN](https://stacks.math.columbia.edu/tag/0DLN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.isAlgebraicStack_complexes_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackAlgebraicStackProved.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackAlgebraicStackProved.lean#L112).
+**`AlgebraicGeometry.Space.ComplexesSituation.isAlgebraicStack_complexes_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackAlgebraicStackProved.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackAlgebraicStackProved.lean#L112).
 
 > **Stacks 0DLN: `Complexes_{X/Y}` is an algebraic stack.** In Situation 0DLE over `S`
 > (`f : X ⟶ Y` proper, flat and of finite presentation), `Complexes_{X/Y}` is an algebraic stack
@@ -385,4 +385,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.16, Tag 0DLB](https://stacks.math.columbia.edu/tag/0DLB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

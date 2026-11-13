@@ -7,7 +7,7 @@ statement: formalized
 
 # Decimal expansion of reciprocals of Mersenne primes
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html).
 
 ## The block-length power of ten is a power of two modulo the Mersenne prime
 
@@ -20,7 +20,7 @@ a natural number $r$ with $1 \le r \le p - 1$ such that $10^{L/p} \equiv 2^r \pm
 
 - Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.ten_pow_blockLength_modEq_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html#ten-pow-block-length-mod-eq-two-pow).
+Stated but not proved: `MetaMathlibExt.ten_pow_blockLength_modEq_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html#ten-pow-block-length-mod-eq-two-pow).
 
 ## Doubling recurrence for the blocks of $1/(2^p - 1)$
 
@@ -46,7 +46,7 @@ $B_{k+1} = 2B_k + 1$ if $k = p - 1$, and $B_{k+1} = 2B_k$ otherwise;
 
 - Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.mersenne_reciprocal_block_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html#mersenne-reciprocal-block-recurrence).
+Stated but not proved: `MetaMathlibExt.mersenne_reciprocal_block_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/MersenneReciprocalBlocksWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html#mersenne-reciprocal-block-recurrence).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Decimal expansion of reciprocals of Mersenne primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/decimal-expansion-of-reciprocals-of-mersenne-pri)

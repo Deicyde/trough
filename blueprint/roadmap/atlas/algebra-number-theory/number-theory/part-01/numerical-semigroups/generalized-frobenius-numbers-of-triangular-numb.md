@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Frobenius numbers of triangular numbers
 
-17 results, 7 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html).
+17 results, 7 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html).
 
 ## Three consecutive triangular numbers
 
@@ -18,7 +18,7 @@ $n$ is $(t_n, t_{n+1}, t_{n+2})$, where $t_m = m(m+1)/2$ is the $m$-th triangula
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction.
 
-Formalized by `MetaMathlibExt.triangularTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-triple).
+Formalized by `MetaMathlibExt.triangularTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-triple).
 
 ## Triangular triple at $n = 1$
 
@@ -29,7 +29,7 @@ $(t_1, t_2, t_3)$, where $t_m = m(m+1)/2$, are $(1, 3, 6)$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Introduction.
 
-Formalized by `MetaMathlibExt.triangularTriple_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-triple-one).
+Formalized by `MetaMathlibExt.triangularTriple_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-triple-one).
 
 ## Triangular Frobenius threshold
 
@@ -41,7 +41,7 @@ $N_s^{\mathrm{odd}} = 6\lfloor(\sqrt{4s+5} - 1)/2\rfloor - 3$ when $n$ is odd.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, equation (4).
 
-Formalized by `MetaMathlibExt.triangularFrobeniusBound`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-bound).
+Formalized by `MetaMathlibExt.triangularFrobeniusBound`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-bound).
 
 ## Triangular Frobenius threshold at $s = 0$
 
@@ -53,7 +53,7 @@ and $-3$ for $n = 1$ (the odd case, $N_0^{\mathrm{odd}} = 6\lfloor(\sqrt{5} - 1)
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, equation (4).
 
-Formalized by `MetaMathlibExt.triangularFrobeniusBound_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-bound-zero).
+Formalized by `MetaMathlibExt.triangularFrobeniusBound_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-bound-zero).
 
 ## The parameter $x_s$ of the triangular Frobenius formula
 
@@ -67,7 +67,7 @@ $x_s^{\mathrm{odd}}$ by the parity of $n$).
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Definition 1.
 
-Formalized by `MetaMathlibExt.triangularFrobeniusX`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-x).
+Formalized by `MetaMathlibExt.triangularFrobeniusX`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-x).
 
 ## The parameter $y_s$ of the triangular Frobenius formula
 
@@ -82,7 +82,7 @@ $y_s^{\mathrm{odd}}$ by the parity of $n$).
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Definition 1.
 
-Formalized by `MetaMathlibExt.triangularFrobeniusY`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-y).
+Formalized by `MetaMathlibExt.triangularFrobeniusY`, a definition declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-y).
 
 ## Triangular Frobenius parameters at $s = 5$
 
@@ -94,7 +94,7 @@ $(x_s, y_s) = (3, 0)$ for $n = 1$ (the odd case).
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Definition 1 and Table 2.
 
-Formalized by `MetaMathlibExt.triangularFrobeniusXY_five`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-xy-five).
+Formalized by `MetaMathlibExt.triangularFrobeniusXY_five`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#triangular-frobenius-xy-five).
 
 ## Beck–Kifer reduction by a common factor of all generators but the first
 
@@ -109,7 +109,7 @@ $g(a_1, \ell a'_2, \dots, \ell a'_K; s)$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 1, quoted from Beck and Kifer, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_cons_mul_of_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-cons-mul-of-gcd).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_cons_mul_of_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-cons-mul-of-gcd).
 
 ## Splitting off the first generator of the reduced triangular triple
 
@@ -125,7 +125,7 @@ $$d(m; t_n, a, b) = \sum_{j=0}^{\lfloor m/t_n \rfloor} d(m - j t_n; a, b).$$
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.frobeniusRepCount_triangular_reduced_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-triangular-reduced-e).
+Stated but not proved: `MetaMathlibExt.frobeniusRepCount_triangular_reduced_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-triangular-reduced-e).
 
 ## Representation counts between consecutive two-generator Frobenius numbers
 
@@ -141,7 +141,7 @@ $g(a, b; i - 1) < g(a, b; s) + jc$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 3, quoted from Subwattanachai, *Generalized Frobenius number of three variables*.
 
-Stated but not proved: `MetaMathlibExt.frobeniusRepCount_pair_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-pair-eq-iff).
+Stated but not proved: `MetaMathlibExt.frobeniusRepCount_pair_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-pair-eq-iff).
 
 ## Representation counts above a shifted two-generator Frobenius number
 
@@ -155,7 +155,7 @@ $d(m - ja; a, b) \ge d(g + (k - j)a; a, b)$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 4, quoted from Subwattanachai, *Generalized Frobenius number of three variables*.
 
-Stated but not proved: `MetaMathlibExt.frobeniusRepCount_pair_sub_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-pair-sub-ge).
+Stated but not proved: `MetaMathlibExt.frobeniusRepCount_pair_sub_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-pair-sub-ge).
 
 ## Representation count of the reduced triangular triple at a shifted Frobenius number
 
@@ -173,7 +173,7 @@ $g(a, b; x_s)$, then the number of representations of $g + y_s t_n$ by $(t_n, a,
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.frobeniusRepCount_triangular_reduced_at_pair_frobenius` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-triangular-reduced-a).
+Stated but not proved: `MetaMathlibExt.frobeniusRepCount_triangular_reduced_at_pair_frobenius` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#frobenius-rep-count-triangular-reduced-a).
 
 ## Generalized Frobenius numbers of three consecutive triangular numbers
 
@@ -190,7 +190,7 @@ $4(g + 1) = (n+1)(n+2)(q_s n + 6c_s - 3\delta_s)$ if $n$ is odd.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl).
 
 ## Komatsu's conjecture on generalized Frobenius numbers of triangular triples
 
@@ -209,7 +209,7 @@ $4(g_{s+1} - g_s) = (n - 6k + 3)P$ when $s + 1 = k(k+1)$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-2).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-2).
 
 ## Generalized Frobenius numbers of triangular triples in parametrized form
 
@@ -229,7 +229,7 @@ $4(g + 1) = (n+1)(n+2)\bigl((x_s + 2y_s + 3)n + 3(x_s - 1)\bigr)$ if $n$ is odd.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_of_xy` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-3).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_of_xy` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-3).
 
 ## Generalized Frobenius numbers of the reduced triangular triple
 
@@ -248,7 +248,7 @@ $g(t_n, a, b; s)$.
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangular_reduced` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-reduc).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangular_reduced` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-reduc).
 
 ## Explicit generalized Frobenius numbers of triangular triples at levels 11 to 20
 
@@ -268,7 +268,7 @@ $n \ge 22$; $20$ has value $11n$ for even $n \ge 18$ and $11n - 3$ for odd $n \g
 
 - Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_eleven_to_twenty` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-4).
+Stated but not proved: `MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_eleven_to_twenty` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFrobeniusTriangularWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html#is-gen-frobenius-number-triangular-tripl-4).
 
 ## Depends on
 
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Frobenius numbers of triangular numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.18 Infinitesimal deformations of algebraic spaces
 
-Section 76.18 of the Stacks Project, [Tag 06BG](https://stacks.math.columbia.edu/tag/06BG). 5 tags here are carried by 53 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.18 of the Stacks Project, [Tag 06BG](https://stacks.math.columbia.edu/tag/06BG). 5 tags here are carried by 53 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06BH, a lemma
 
 [Tag 06BH](https://stacks.math.columbia.edu/tag/06BH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_conormalMap_firstOrderThickening_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFirstOrderThickening.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFirstOrderThickening.lean#L81). The attribute's comment: “(1) implies (2), with f' flat as a morphism of small etale ringed topoi”.
+**`AlgebraicGeometry.Space.isIso_conormalMap_firstOrderThickening_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFirstOrderThickening.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFirstOrderThickening.lean#L81). The attribute's comment: “(1) implies (2), with f' flat as a morphism of small etale ringed topoi”.
 
 > Let `(f, f') : (X ⊆ X') → (Y ⊆ Y')` be a morphism of first-order thickenings of algebraic
 > spaces in which `X = Y ×_{Y'} X'`, that is in which the upper closed subspace is the inverse image
@@ -33,7 +33,7 @@ theorem isIso_conormalMap_firstOrderThickening_of_isFlat
       (conormalEtaleRestrictionSquare B S hS g Y))
 ```
 
-**`AlgebraicGeometry.Space.isFlat_and_isPullback_iff_isIso_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatDeformation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatDeformation.lean#L338).
+**`AlgebraicGeometry.Space.isFlat_and_isPullback_iff_isIso_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatDeformation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatDeformation.lean#L338).
 
 > **[Stacks Project, Tag 06BH].**  Let `(f, f') : (X ⊆ X') → (Y ⊆ Y')` be a morphism of
 > first-order thickenings of algebraic spaces over `S` — `X ⊆ X'` and `Y ⊆ Y'` first-order
@@ -58,7 +58,7 @@ theorem isFlat_and_isPullback_iff_isIso_conormalMap
       IsIso (conormalMap B S hS X Y g f hsq)
 ```
 
-**`AlgebraicGeometry.Space.isFlat_and_isPullback_iff_isIso_conormalMapOfImmersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FirstOrderThickeningFlatConormal.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FirstOrderThickeningFlatConormal.lean#L265).
+**`AlgebraicGeometry.Space.isFlat_and_isPullback_iff_isIso_conormalMapOfImmersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FirstOrderThickeningFlatConormal.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FirstOrderThickeningFlatConormal.lean#L265).
 
 > **[Stacks Project, Tag 06BH].**  Let `(f, g) : (X ⊆ X') → (Y ⊆ Y')` be a morphism of
 > first-order thickenings of algebraic spaces over `S` (a commutative square of inclusions of
@@ -87,7 +87,7 @@ theorem isFlat_and_isPullback_iff_isIso_conormalMapOfImmersions
 
 [Tag 0CG5](https://stacks.math.columbia.edu/tag/0CG5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_isFlat_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean#L306). The attribute's comment: “flatness of the upper morphism”.
+**`AlgebraicGeometry.Space.isFlat_of_isFlat_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean#L306). The attribute's comment: “flatness of the upper morphism”.
 
 > **Stacks 0CG5, flatness of the ambient morphism.** In a commuting diagram of thickenings
 > of algebraic spaces over `S` with the base thickening of finite order, the ambient source flat
@@ -108,7 +108,7 @@ theorem isFlat_of_isFlat_restriction
     IsFlat B S hS f'
 ```
 
-**`AlgebraicGeometry.Space.isFlatAt_base_of_isFlat_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean#L322). The attribute's comment: “flatness of the upper target at image points”.
+**`AlgebraicGeometry.Space.isFlatAt_base_of_isFlat_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Flat.lean#L322). The attribute's comment: “flatness of the upper target at image points”.
 
 > **Stacks 0CG5, flatness of the ambient target along the image.** In the situation of
 > `AlgebraicGeometry.Space.isFlat_of_isFlat_restriction` the ambient target is flat over the
@@ -130,7 +130,7 @@ theorem isFlatAt_base_of_isFlat_restriction
 
 [Tag 0CG6](https://stacks.math.columbia.edu/tag/0CG6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean#L145). The attribute's comment: “0CGV: finite locally free”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean#L145). The attribute's comment: “0CGV: finite locally free”.
 
 > **Stacks 0CG6, part 0CGV.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is finite locally free if and only if its ambient deformation is.
@@ -140,7 +140,7 @@ theorem isFiniteLocallyFree_iff :
     IsFiniteLocallyFree T S hS D.smallHom ↔ IsFiniteLocallyFree T S hS D.ambientHom
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFiniteLocallyFreeOfRank_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean#L159). The attribute's comment: “0CGV: finite locally free of rank d”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFiniteLocallyFreeOfRank_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FiniteLocallyFreeProperty.lean#L159). The attribute's comment: “0CGV: finite locally free of rank d”.
 
 > **Stacks 0CG6, part 0CGV, with the rank.** In a cartesian finite-order deformation of
 > algebraic spaces the morphism of special fibres is finite locally free of rank `d` if and only
@@ -152,7 +152,7 @@ theorem isFiniteLocallyFreeOfRank_iff (d : ℕ) :
       IsFiniteLocallyFreeOfRank T S hS D.ambientHom d
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFlat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L109). The attribute's comment: “0CG8: flat”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFlat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L109). The attribute's comment: “0CG8: flat”.
 
 > **Stacks 0CG6, part 0CG8.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is flat if and only if its ambient deformation is.
@@ -161,7 +161,7 @@ theorem isFiniteLocallyFreeOfRank_iff (d : ℕ) :
 theorem isFlat_iff : IsFlat T S hS D.f ↔ IsFlat T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSurjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L116). The attribute's comment: “0CGF: surjective”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSurjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L116). The attribute's comment: “0CGF: surjective”.
 
 > **Stacks 0CG6, part 0CGF.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is surjective if and only if its ambient deformation is.
@@ -170,7 +170,7 @@ theorem isFlat_iff : IsFlat T S hS D.f ↔ IsFlat T S hS D.f'
 theorem isSurjective_iff : IsSurjective T S hS D.f ↔ IsSurjective T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L124). The attribute's comment: “0CGI: locally of finite type”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L124). The attribute's comment: “0CGI: locally of finite type”.
 
 > **Stacks 0CG6, part 0CGI.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is locally of finite type if and only if its ambient deformation
@@ -181,7 +181,7 @@ theorem isLocallyOfFiniteType_iff :
     IsLocallyOfFiniteType T S hS D.f ↔ IsLocallyOfFiniteType T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L134). The attribute's comment: “0CGJ: locally quasi-finite”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L134). The attribute's comment: “0CGJ: locally quasi-finite”.
 
 > **Stacks 0CG6, part 0CGJ.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is locally quasi-finite if and only if its ambient deformation
@@ -192,7 +192,7 @@ theorem isLocallyQuasiFinite_iff :
     IsLocallyQuasiFinite T S hS D.f ↔ IsLocallyQuasiFinite T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L144). The attribute's comment: “0CGK: locally of finite presentation”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L144). The attribute's comment: “0CGK: locally of finite presentation”.
 
 > **Stacks 0CG6, part 0CGK.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is locally of finite presentation if and only if its ambient
@@ -203,7 +203,7 @@ theorem isLocallyOfFinitePresentation_iff :
     IsLocallyOfFinitePresentation T S hS D.f ↔ IsLocallyOfFinitePresentation T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSyntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L153). The attribute's comment: “0CGN: syntomic”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSyntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L153). The attribute's comment: “0CGN: syntomic”.
 
 > **Stacks 0CG6, part 0CGN.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is syntomic if and only if its ambient deformation is.
@@ -212,7 +212,7 @@ theorem isLocallyOfFinitePresentation_iff :
 theorem isSyntomic_iff : IsSyntomic T S hS D.f ↔ IsSyntomic T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSmooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L160). The attribute's comment: “0CGP: smooth”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSmooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L160). The attribute's comment: “0CGP: smooth”.
 
 > **Stacks 0CG6, part 0CGP.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is smooth if and only if its ambient deformation is.
@@ -221,7 +221,7 @@ theorem isSyntomic_iff : IsSyntomic T S hS D.f ↔ IsSyntomic T S hS D.f'
 theorem isSmooth_iff : IsSmooth T S hS D.f ↔ IsSmooth T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L167). The attribute's comment: “0CGQ: unramified”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isUnramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L167). The attribute's comment: “0CGQ: unramified”.
 
 > **Stacks 0CG6, part 0CGQ.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is unramified if and only if its ambient deformation is.
@@ -230,7 +230,7 @@ theorem isSmooth_iff : IsSmooth T S hS D.f ↔ IsSmooth T S hS D.f'
 theorem isUnramified_iff : IsUnramified T S hS D.f ↔ IsUnramified T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isEtale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L174). The attribute's comment: “0CGR: étale”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isEtale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Properties.lean#L174). The attribute's comment: “0CGR: étale”.
 
 > **Stacks 0CG6, part 0CGR.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is étale if and only if its ambient deformation is.
@@ -239,7 +239,7 @@ theorem isUnramified_iff : IsUnramified T S hS D.f ↔ IsUnramified T S hS D.f'
 theorem isEtale_iff : IsEtale T S hS D.f ↔ IsEtale T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isRelativelyRepresentable_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L150). The attribute's comment: “0CG7: representable”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isRelativelyRepresentable_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L150). The attribute's comment: “0CG7: representable”.
 
 > **Stacks 0CG6, part 0CG7.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is representable if and only if its ambient deformation is.
@@ -249,7 +249,7 @@ theorem isRelativelyRepresentable_iff :
     yoneda.relativelyRepresentable D.f ↔ yoneda.relativelyRepresentable D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isQuasiCompact_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L158). The attribute's comment: “0CGB: quasi-compact”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isQuasiCompact_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L158). The attribute's comment: “0CGB: quasi-compact”.
 
 > **Stacks 0CG6, part 0CGB.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is quasi-compact if and only if its ambient deformation is.
@@ -258,7 +258,7 @@ theorem isRelativelyRepresentable_iff :
 theorem isQuasiCompact_iff : IsQuasiCompact T S hS D.f ↔ IsQuasiCompact T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L165). The attribute's comment: “0CGC: universally closed”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L165). The attribute's comment: “0CGC: universally closed”.
 
 > **Stacks 0CG6, part 0CGC.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is universally closed if and only if its ambient deformation is.
@@ -267,7 +267,7 @@ theorem isQuasiCompact_iff : IsQuasiCompact T S hS D.f ↔ IsQuasiCompact T S hS
 theorem universallyClosed_iff : UniversallyClosed T S hS D.f ↔ UniversallyClosed T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSeparated_iff_and_isQuasiSeparated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L173). The attribute's comment: “0CGD: separated, and quasi-separated”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isSeparated_iff_and_isQuasiSeparated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L173). The attribute's comment: “0CGD: separated, and quasi-separated”.
 
 > **Stacks 0CG6, part 0CGD.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is separated if and only if its ambient deformation is, and it is
@@ -279,7 +279,7 @@ theorem isSeparated_iff_and_isQuasiSeparated_iff :
       (IsQuasiSeparated T S hS D.f ↔ IsQuasiSeparated T S hS D.f')
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L183). The attribute's comment: “0CGG: universally injective”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L183). The attribute's comment: “0CGG: universally injective”.
 
 > **Stacks 0CG6, part 0CGG.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is universally injective if and only if its ambient deformation
@@ -290,7 +290,7 @@ theorem universallyInjective_iff :
     UniversallyInjective T S hS D.f ↔ UniversallyInjective T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L191). The attribute's comment: “0CGH: affine”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L191). The attribute's comment: “0CGH: affine”.
 
 > **Stacks 0CG6, part 0CGH.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is affine if and only if its ambient deformation is.
@@ -299,7 +299,7 @@ theorem universallyInjective_iff :
 theorem isAffineHom_iff : IsAffineHom T S hS D.f ↔ IsAffineHom T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L198). The attribute's comment: “0CGM: universally open”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L198). The attribute's comment: “0CGM: universally open”.
 
 > **Stacks 0CG6, part 0CGM.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is universally open if and only if its ambient deformation is.
@@ -308,7 +308,7 @@ theorem isAffineHom_iff : IsAffineHom T S hS D.f ↔ IsAffineHom T S hS D.f'
 theorem universallyOpen_iff : UniversallyOpen T S hS D.f ↔ UniversallyOpen T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isIntegralHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L205). The attribute's comment: “0CGT: integral”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isIntegralHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L205). The attribute's comment: “0CGT: integral”.
 
 > **Stacks 0CG6, part 0CGT.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is integral if and only if its ambient deformation is.
@@ -317,7 +317,7 @@ theorem universallyOpen_iff : UniversallyOpen T S hS D.f ↔ UniversallyOpen T S
 theorem isIntegralHom_iff : IsIntegralHom T S hS D.f ↔ IsIntegralHom T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L214). The attribute's comment: “0CGE: monomorphism”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L214). The attribute's comment: “0CGE: monomorphism”.
 
 > **Stacks 0CG6, part 0CGE.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is a monomorphism if and only if its ambient deformation is.
@@ -326,7 +326,7 @@ theorem isIntegralHom_iff : IsIntegralHom T S hS D.f ↔ IsIntegralHom T S hS D.
 theorem mono_iff : Mono D.f ↔ Mono D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L221). The attribute's comment: “0CGL: locally of finite type of relative dimension d”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isLocallyOfFiniteType_and_hasRelativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L221). The attribute's comment: “0CGL: locally of finite type of relative dimension d”.
 
 > **Stacks 0CG6, part 0CGL.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is locally of finite type of relative dimension `d` if and only if
@@ -338,7 +338,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff (d : ℕ) :
       (IsLocallyOfFiniteType T S hS D.f' ∧ HasRelativeDimension d T S hS D.f')
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L230). The attribute's comment: “0CGS: proper”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L230). The attribute's comment: “0CGS: proper”.
 
 > **Stacks 0CG6, part 0CGS.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is proper if and only if its ambient deformation is.
@@ -347,7 +347,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff (d : ℕ) :
 theorem isProper_iff : IsProper T S hS D.f ↔ IsProper T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L236). The attribute's comment: “0CGU: finite”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L236). The attribute's comment: “0CGU: finite”.
 
 > **Stacks 0CG6, part 0CGU.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is finite if and only if its ambient deformation is.
@@ -356,7 +356,7 @@ theorem isProper_iff : IsProper T S hS D.f ↔ IsProper T S hS D.f'
 theorem isFinite_iff : IsFinite T S hS D.f ↔ IsFinite T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L266). The attribute's comment: “0CGA: open immersion”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L266). The attribute's comment: “0CGA: open immersion”.
 
 > **Stacks 0CG6, part 0CGA.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is an open immersion if and only if its ambient deformation is.
@@ -365,7 +365,7 @@ theorem isFinite_iff : IsFinite T S hS D.f ↔ IsFinite T S hS D.f'
 theorem isOpenImmersion_iff : IsOpenImmersion T S hS D.f ↔ IsOpenImmersion T S hS D.f'
 ```
 
-**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L279). The attribute's comment: “0CG9: isomorphism”.
+**`AlgebraicGeometry.Space.CartesianFiniteOrderDeformation.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/ThickeningProperties.lean#L279). The attribute's comment: “0CG9: isomorphism”.
 
 > **Stacks 0CG6, part 0CG9.** In a cartesian finite-order deformation of algebraic spaces the
 > morphism of special fibres is an isomorphism if and only if its ambient deformation is.
@@ -378,7 +378,7 @@ theorem isIso_iff : IsIso D.f ↔ IsIso D.f'
 
 [Tag 0CGW](https://stacks.math.columbia.edu/tag/0CGW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean#L48). The attribute's comment: “flatness of the ambient morphism”.
+**`AlgebraicGeometry.Space.isFlat_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean#L48). The attribute's comment: “flatness of the ambient morphism”.
 
 > In a flat deformation diagram of algebraic spaces, flatness of the morphism of special fibres
 > implies flatness of its ambient deformation.
@@ -388,7 +388,7 @@ theorem isFlat_of_flatDeformationDiagram (D : FlatDeformationDiagram B S hS)
     (hf : IsFlat B S hS D.f.hom) : IsFlat B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isFlatAt_target_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean#L56). The attribute's comment: “flatness of the ambient target over the ambient base along the image”.
+**`AlgebraicGeometry.Space.isFlatAt_target_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/Flatness.lean#L56). The attribute's comment: “flatness of the ambient target over the ambient base along the image”.
 
 > In a flat deformation diagram of algebraic spaces whose morphism of special fibres is flat,
 > the ambient target is flat over the ambient base at every point in the image of the ambient
@@ -404,7 +404,7 @@ theorem isFlatAt_target_of_flatDeformationDiagram (D : FlatDeformationDiagram B 
 
 [Tag 0CGX](https://stacks.math.columbia.edu/tag/0CGX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L155). The attribute's comment: “part (2): flat”.
+**`AlgebraicGeometry.Space.isFlat_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L156). The attribute's comment: “part (2): flat”.
 
 > **Stacks 0CGX, part (2).** Flatness of a morphism of algebraic spaces is invariant under a
 > flat deformation.
@@ -414,7 +414,7 @@ theorem isFlat_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S hS)
     IsFlat B S hS D.f.hom ↔ IsFlat B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L198). The attribute's comment: “part (9): surjective”.
+**`AlgebraicGeometry.Space.isSurjective_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L199). The attribute's comment: “part (9): surjective”.
 
 > **Stacks 0CGX, part (9).** Surjectivity of a morphism of algebraic spaces is invariant under
 > a flat deformation.
@@ -424,7 +424,7 @@ theorem isSurjective_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B
     IsSurjective B S hS D.f.hom ↔ IsSurjective B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L210). The attribute's comment: “part (12): locally quasi-finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L211). The attribute's comment: “part (12): locally quasi-finite”.
 
 > **Stacks 0CGX, part (12).** Local quasi-finiteness of a morphism of algebraic spaces is
 > invariant under a flat deformation.
@@ -434,7 +434,7 @@ theorem isLocallyQuasiFinite_iff_of_flatDeformationDiagram (D : FlatDeformationD
     IsLocallyQuasiFinite B S hS D.f.hom ↔ IsLocallyQuasiFinite B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isSyntomic_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L219). The attribute's comment: “part (15): syntomic”.
+**`AlgebraicGeometry.Space.isSyntomic_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L220). The attribute's comment: “part (15): syntomic”.
 
 > **Stacks 0CGX, part (15).** Syntomicity of a morphism of algebraic spaces is invariant under
 > a flat deformation.
@@ -444,7 +444,7 @@ theorem isSyntomic_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S
     IsSyntomic B S hS D.f.hom ↔ IsSyntomic B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isSmooth_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L227). The attribute's comment: “part (16): smooth”.
+**`AlgebraicGeometry.Space.isSmooth_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L228). The attribute's comment: “part (16): smooth”.
 
 > **Stacks 0CGX, part (16).** Smoothness of a morphism of algebraic spaces is invariant under a
 > flat deformation.
@@ -454,7 +454,7 @@ theorem isSmooth_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S h
     IsSmooth B S hS D.f.hom ↔ IsSmooth B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_iff_isUnramified_deformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L235). The attribute's comment: “part (17): unramified”.
+**`AlgebraicGeometry.Space.isUnramified_iff_isUnramified_deformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L236). The attribute's comment: “part (17): unramified”.
 
 > **Stacks 0CGX, part (17).** Unramifiedness of a morphism of algebraic spaces is invariant
 > under a flat deformation.
@@ -464,7 +464,7 @@ theorem isUnramified_iff_isUnramified_deformation (D : FlatDeformationDiagram B 
     IsUnramified B S hS D.f.hom ↔ IsUnramified B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isEtale_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L243). The attribute's comment: “part (18): étale”.
+**`AlgebraicGeometry.Space.isEtale_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L244). The attribute's comment: “part (18): étale”.
 
 > **Stacks 0CGX, part (18).** Étaleness of a morphism of algebraic spaces is invariant under a
 > flat deformation.
@@ -474,7 +474,7 @@ theorem isEtale_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S hS
     IsEtale B S hS D.f.hom ↔ IsEtale B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.universallyInjective_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L334). The attribute's comment: “part (10): universally injective”.
+**`AlgebraicGeometry.Space.universallyInjective_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L335). The attribute's comment: “part (10): universally injective”.
 
 > **Stacks 0CGX, part (10).** Universal injectivity of a morphism of algebraic spaces is
 > invariant under a flat deformation.
@@ -484,7 +484,7 @@ theorem universallyInjective_iff_of_flatDeformationDiagram (D : FlatDeformationD
     UniversallyInjective B S hS D.f.hom ↔ UniversallyInjective B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isIso_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L350). The attribute's comment: “part (3): isomorphism”.
+**`AlgebraicGeometry.Space.isIso_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformation.lean#L351). The attribute's comment: “part (3): isomorphism”.
 
 > **Stacks 0CGX, part (3).** Being an isomorphism is invariant under a flat deformation of
 > algebraic spaces.
@@ -494,7 +494,7 @@ theorem isIso_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S hS) 
     IsIso D.f.hom ↔ IsIso D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_and_isFiniteLocallyFreeOfRank_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationFiniteLocallyFree.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationFiniteLocallyFree.lean#L161). The attribute's comment: “part (21): finite locally free, and finite locally free of rank d”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_and_isFiniteLocallyFreeOfRank_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationFiniteLocallyFree.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationFiniteLocallyFree.lean#L161). The attribute's comment: “part (21): finite locally free, and finite locally free of rank d”.
 
 > **Stacks 0CGX, part (21).** Being finite locally free, and being finite locally free of a
 > given rank `d`, in the sense of Stacks 03ZV — affine, with `f_*𝒪_X` a finite locally free
@@ -508,7 +508,7 @@ theorem isFiniteLocallyFree_iff_and_isFiniteLocallyFreeOfRank_iff_of_flatDeforma
         IsFiniteLocallyFreeOfRank B S hS D.f d ↔ IsFiniteLocallyFreeOfRank B S hS D.f' d
 ```
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L115). The attribute's comment: “part (1): representable”.
+**`AlgebraicGeometry.Space.relativelyRepresentable_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L115). The attribute's comment: “part (1): representable”.
 
 > Representability of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -517,7 +517,7 @@ theorem relativelyRepresentable_iff_of_flatDeformationDiagram (D : FlatDeformati
     yoneda.relativelyRepresentable D.f.hom ↔ yoneda.relativelyRepresentable D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L123). The attribute's comment: “part (5): quasi-compact”.
+**`AlgebraicGeometry.Space.isQuasiCompact_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L123). The attribute's comment: “part (5): quasi-compact”.
 
 > Quasi-compactness of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -526,7 +526,7 @@ theorem isQuasiCompact_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram
     IsQuasiCompact B S hS D.f.hom ↔ IsQuasiCompact B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L132). The attribute's comment: “part (6): universally closed”.
+**`AlgebraicGeometry.Space.universallyClosed_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L132). The attribute's comment: “part (6): universally closed”.
 
 > Universal closedness of a morphism of algebraic spaces is invariant under a flat
 > deformation.
@@ -536,7 +536,7 @@ theorem universallyClosed_iff_of_flatDeformationDiagram (D : FlatDeformationDiag
     UniversallyClosed B S hS D.f.hom ↔ UniversallyClosed B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_and_isQuasiSeparated_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L141). The attribute's comment: “part (7): separated, and quasi-separated”.
+**`AlgebraicGeometry.Space.isSeparated_iff_and_isQuasiSeparated_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L141). The attribute's comment: “part (7): separated, and quasi-separated”.
 
 > Separatedness, and quasi-separatedness, of a morphism of algebraic spaces are each invariant
 > under a flat deformation.
@@ -548,7 +548,7 @@ theorem isSeparated_iff_and_isQuasiSeparated_iff_of_flatDeformationDiagram
       (IsQuasiSeparated B S hS D.f.hom ↔ IsQuasiSeparated B S hS D.f'.hom)
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L156). The attribute's comment: “part (11): affine”.
+**`AlgebraicGeometry.Space.isAffineHom_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L156). The attribute's comment: “part (11): affine”.
 
 > Affineness of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -557,7 +557,7 @@ theorem isAffineHom_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B 
     IsAffineHom B S hS D.f.hom ↔ IsAffineHom B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.universallyOpen_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L164). The attribute's comment: “part (14): universally open”.
+**`AlgebraicGeometry.Space.universallyOpen_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L164). The attribute's comment: “part (14): universally open”.
 
 > Universal openness of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -566,7 +566,7 @@ theorem universallyOpen_iff_of_flatDeformationDiagram (D : FlatDeformationDiagra
     UniversallyOpen B S hS D.f.hom ↔ UniversallyOpen B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.mono_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L181). The attribute's comment: “part (8): monomorphism”.
+**`AlgebraicGeometry.Space.mono_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L181). The attribute's comment: “part (8): monomorphism”.
 
 > Being a monomorphism is invariant under a flat deformation of algebraic spaces.
 
@@ -575,7 +575,7 @@ theorem mono_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S hS) :
     Mono D.f.hom ↔ Mono D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_and_hasRelativeDimension_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L196). The attribute's comment: “part (13): locally of finite type of relative dimension d”.
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_and_hasRelativeDimension_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L196). The attribute's comment: “part (13): locally of finite type of relative dimension d”.
 
 > Being locally of finite type of relative dimension `d` is invariant under a flat deformation of
 > algebraic spaces: the morphism under study is locally of finite type of relative dimension `d`
@@ -588,7 +588,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff_of_flatDeformationDia
       (IsLocallyOfFiniteType B S hS D.f'.hom ∧ HasRelativeDimension d B S hS D.f'.hom)
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L212). The attribute's comment: “part (19): proper”.
+**`AlgebraicGeometry.Space.isProper_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L212). The attribute's comment: “part (19): proper”.
 
 > Properness of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -597,7 +597,7 @@ theorem isProper_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S h
     IsProper B S hS D.f.hom ↔ IsProper B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isFinite_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L221). The attribute's comment: “part (20): finite”.
+**`AlgebraicGeometry.Space.isFinite_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationMorphismClasses.lean#L221). The attribute's comment: “part (20): finite”.
 
 > Finiteness of a morphism of algebraic spaces is invariant under a flat deformation.
 
@@ -606,7 +606,7 @@ theorem isFinite_iff_of_flatDeformationDiagram (D : FlatDeformationDiagram B S h
     IsFinite B S hS D.f.hom ↔ IsFinite B S hS D.f'.hom
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationOpenImmersion.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationOpenImmersion.lean#L41). The attribute's comment: “part (4): open immersion”.
+**`AlgebraicGeometry.Space.isOpenImmersion_iff_of_flatDeformationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationOpenImmersion.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/FlatDeformationOpenImmersion.lean#L41). The attribute's comment: “part (4): open immersion”.
 
 > Being an open immersion is invariant under a flat deformation of algebraic spaces: `f` is an
 > open immersion if and only if `f'` is.
@@ -623,4 +623,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.18, Tag 06BG](https://stacks.math.columbia.edu/tag/06BG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.108 Local irreducibility
 
-Section 15.108 of the Stacks Project, [Tag 06DT](https://stacks.math.columbia.edu/tag/06DT). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.108 of the Stacks Project, [Tag 06DT](https://stacks.math.columbia.edu/tag/06DT). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BPZ, a definition
 
 [Tag 0BPZ](https://stacks.math.columbia.edu/tag/0BPZ) in the Stacks Project.
 
-**`IsUnibranch`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Defs.lean#L62). The attribute's comment: “(1)”. References: EGA 0 (23.2.1), “def. of unibranch”; EGA III (4.3.6), “unibranch local ring”.
+**`IsUnibranch`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Defs.lean#L62). The attribute's comment: “(1)”. References: EGA 0 (23.2.1), “def. of unibranch”; EGA III (4.3.6), “unibranch local ring”.
 
 > A local ring is unibranch if its reduction is a domain and the integral closure of its
 > reduction in its field of fractions is local.
@@ -23,7 +23,7 @@ Section 15.108 of the Stacks Project, [Tag 06DT](https://stacks.math.columbia.ed
 def IsUnibranch (A : Type u) [CommRing A] [IsLocalRing A] : Prop
 ```
 
-**`IsGeometricallyUnibranch`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Defs.lean#L70). The attribute's comment: “(2)”. References: EGA 0 (23.2.1), “def. of geom. unibranch”.
+**`IsGeometricallyUnibranch`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Defs.lean#L70). The attribute's comment: “(2)”. References: EGA 0 (23.2.1), “def. of geom. unibranch”.
 
 > A local ring is geometrically unibranch if it is unibranch and the residue field of the
 > normalization of its reduction is purely inseparable over its residue field.
@@ -37,7 +37,7 @@ noncomputable def IsGeometricallyUnibranch
 
 [Tag 0C24](https://stacks.math.columbia.edu/tag/0C24) in the Stacks Project.
 
-**`bijective_maximalIdeals_and_minimalPrimes_of_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean#L598).
+**`bijective_maximalIdeals_and_minimalPrimes_of_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean#L598).
 
 > Let `A'` be the integral closure of a local ring `A` in the total ring of fractions of its
 > reduction, and let `Aʰ` be a henselization of `A`. Contraction from `A' ⊗[A] Aʰ` is bijective
@@ -67,7 +67,7 @@ theorem bijective_maximalIdeals_and_minimalPrimes_of_henselization
 
 [Tag 0BQ0](https://stacks.math.columbia.edu/tag/0BQ0) in the Stacks Project.
 
-**`isUnibranch_iff_henselization_has_unique_minimalPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean#L132). References: EGA IV (18.6.12), “a) ⇔ c), irreducible”.
+**`isUnibranch_iff_henselization_has_unique_minimalPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean#L132). References: EGA IV (18.6.12), “a) ⇔ c), irreducible”.
 
 > A local ring is unibranch if and only if a henselization of it has a unique minimal prime.
 
@@ -83,7 +83,7 @@ theorem isUnibranch_iff_henselization_has_unique_minimalPrime
 
 [Tag 0C25](https://stacks.math.columbia.edu/tag/0C25) in the Stacks Project.
 
-**`geometric_branches_of_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean#L538).
+**`geometric_branches_of_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Henselization/BranchCorrespondence.lean#L538).
 
 > Let `A'` be the integral closure of a local ring `A` in the total ring of fractions of its
 > reduction, and let `Aˢʰ` be a strict henselization with separably closed residue field `ksep`
@@ -143,7 +143,7 @@ theorem geometric_branches_of_strictHenselization
 
 [Tag 06DM](https://stacks.math.columbia.edu/tag/06DM) in the Stacks Project.
 
-**`isGeometricallyUnibranch_iff_strictHenselization_has_unique_minimalPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean#L425). References: EGA IV (18.8.15), “a) ⇔ c), irreducible”.
+**`isGeometricallyUnibranch_iff_strictHenselization_has_unique_minimalPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Henselization/Unibranch.lean#L424). References: EGA IV (18.8.15), “a) ⇔ c), irreducible”.
 
 > A local ring is geometrically unibranch if and only if a strict henselization of it has a
 > unique minimal prime.
@@ -163,7 +163,7 @@ theorem isGeometricallyUnibranch_iff_strictHenselization_has_unique_minimalPrime
 
 [Tag 0C26](https://stacks.math.columbia.edu/tag/0C26) in the Stacks Project.
 
-**`numberOfBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Defs.lean#L96). The attribute's comment: “number of branches”.
+**`numberOfBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Defs.lean#L96). The attribute's comment: “number of branches”.
 
 > The number of branches of a local ring is the extended-natural cardinality of the set of
 > minimal primes of a henselization.
@@ -175,7 +175,7 @@ noncomputable def numberOfBranches (A Ah : Type u) [CommRing A] [IsLocalRing A]
     [IsLocalRing.IsHenselization A (IsLocalRing.ResidueField A) Ah] : ℕ∞
 ```
 
-**`numberOfGeometricBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Defs.lean#L105). The attribute's comment: “number of geometric branches”.
+**`numberOfGeometricBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Defs.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Defs.lean#L105). The attribute's comment: “number of geometric branches”.
 
 > The number of geometric branches of a local ring is the extended-natural cardinality of the
 > set of minimal primes of a strict henselization.
@@ -191,7 +191,7 @@ noncomputable def numberOfGeometricBranches (A : Type u) (ksep : Type v) (Ash : 
 
 [Tag 0C37](https://stacks.math.columbia.edu/tag/0C37) in the Stacks Project.
 
-**`numberOfBranches_characterizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchNumbers.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Henselization/BranchNumbers.lean#L204).
+**`numberOfBranches_characterizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Henselization/BranchNumbers.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Henselization/BranchNumbers.lean#L203).
 
 > The numbers of branches and geometric branches of a local ring are infinite if the ring has
 > infinitely many minimal primes, and they equal one exactly for unibranch and geometrically
@@ -235,7 +235,7 @@ theorem numberOfBranches_characterizations
 
 [Tag 0DQ1](https://stacks.math.columbia.edu/tag/0DQ1) in the Stacks Project.
 
-**`numberOfBranches_eq_of_isLocalization_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Miscellaneous/SmoothInvariance.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Miscellaneous/SmoothInvariance.lean#L402).
+**`numberOfBranches_eq_of_isLocalization_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Miscellaneous/SmoothInvariance.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Miscellaneous/SmoothInvariance.lean#L402).
 
 > A local homomorphism of local rings which is a localization of a smooth ring map preserves
 > the number of geometric branches. If its residue-field extension is purely inseparable, it also
@@ -281,4 +281,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.108, Tag 06DT](https://stacks.math.columbia.edu/tag/06DT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

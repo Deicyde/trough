@@ -8,7 +8,7 @@ proof: formalized
 
 # Alternating bit protocol
 
-45 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html).
+45 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html).
 
 ## Alternating-bit channel names
 
@@ -18,7 +18,7 @@ user), and, for each bit $b$, the internal names $\mathit{send}_b$ (sender to da
 $\mathit{recv}_b$ (data channel to receiver), $\mathit{reply}_b$ (receiver to acknowledgement
 channel) and $\mathit{ack}_b$ (acknowledgement channel to sender).
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Name`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#name).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Name`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#name).
 
 ## Sender states of the data-free alternating-bit protocol
 
@@ -27,14 +27,14 @@ has three states: $\mathrm{accept}(b)$, ready to accept a message to be sent wit
 $\mathrm{transmit}(b)$, about to transmit a frame tagged with bit $b$; and $\mathrm{await}(b)$,
 waiting for the acknowledgement of bit $b$. These six states are all the sender states.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Sender`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Sender`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender).
 
 ## States of a one-place channel
 
 A one-place channel is either empty or full, holding a single
 bit.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Channel`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#channel).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Channel`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#channel).
 
 ## Alternating-bit receiver states
 
@@ -42,7 +42,7 @@ A state of the alternating-bit receiver is, for a bit
 $b$, either expecting a frame with bit $b$, about to deliver the message of a frame with bit
 $b$, or about to acknowledge bit $b$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Receiver`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Receiver`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver).
 
 ## Alternating-bit sender transitions
 
@@ -54,7 +54,7 @@ $\mathit{ack}_b$ and become ready to accept with bit $\lnot b$, input on
 $\mathit{ack}_{\lnot b}$ and keep waiting, or time out by a silent step and become about to
 transmit $b$ again.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.senderSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.senderSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-steps).
 
 ## Alternating-bit data channel transitions
 
@@ -63,7 +63,7 @@ alternating-bit protocol has the following transitions. When empty, it can input
 $\mathit{send}_b$ and become full with bit $b$, for each bit $b$. When full with bit $b$, it can
 output on $\mathit{recv}_b$ and become empty, or lose the bit by a silent step and become empty.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.dataSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#data-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.dataSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#data-steps).
 
 ## Alternating-bit receiver transitions
 
@@ -73,7 +73,7 @@ to deliver $b$, or input on $\mathit{recv}_{\lnot b}$ and become ready to acknow
 Ready to deliver $b$, it can output on $\mathit{del}$ and become ready to acknowledge $b$. Ready
 to acknowledge $b$, it can output on $\mathit{reply}_b$ and then expect $\lnot b$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.receiverSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.receiverSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-steps).
 
 ## Transitions of the acknowledgement channel in the data-free alternating-bit protocol
 
@@ -83,7 +83,7 @@ $\mathit{reply}_b$ and become full with bit $b$. When full with bit $b$, it can 
 $\mathit{ack}_b$ or make a silent $\tau$ step (losing the bit), in both cases becoming empty. These
 are all its transitions.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.ackSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#ack-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.ackSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#ack-steps).
 
 ## Transitions of the data-free one-place buffer
 
@@ -91,7 +91,7 @@ The one-place buffer has two states, empty
 (false) and full (true). When empty, its only transition is an input on $\mathit{acc}$ to the full
 state; when full, its only transition is an output on $\mathit{del}$ to the empty state.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.bufferSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.bufferSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-steps).
 
 ## Process constants of the data-free alternating-bit protocol
 
@@ -99,7 +99,7 @@ There is one process constant
 for each sender state, each state of the data channel, each receiver state, each state of the
 acknowledgement channel, and each state of the one-place buffer (empty or full).
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Agent`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#agent).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Agent`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#agent).
 
 ## Recursive specification of the data-free alternating-bit protocol
 
@@ -111,7 +111,7 @@ of its agent, let $X_i$ be the constant of the same agent at state $x_i$, and le
 be the inactive process. The specification defines the constant of $x$ as the choice of
 prefixes $a_1.X_1 + (a_2.X_2 + \cdots + (a_n.X_n + \mathbf{0}))$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.spec`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#spec).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.spec`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#spec).
 
 ## Alternating-bit transition system
 
@@ -122,7 +122,7 @@ semantics for the recursive specification that defines each process constant (on
 the sender, the data channel, the receiver, the acknowledgement channel and the one-place
 buffer) as the choice of its listed transitions.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.lts`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#lts).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.lts`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#lts).
 
 ## Internal channels of the alternating-bit protocol
 
@@ -131,7 +131,7 @@ which the protocol restricts, are $\mathit{send}_b$, $\mathit{recv}_b$, $\mathit
 $\mathit{ack}_b$ for both bits $b$, that is, every channel name except $\mathit{acc}$ and
 $\mathit{del}$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.internal`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#internal).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.internal`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#internal).
 
 ## Alternating-bit configuration
 
@@ -139,7 +139,7 @@ A configuration of the alternating-bit protocol consists
 of a sender state, a state of the data channel, a receiver state and a state of the
 acknowledgement channel.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Config`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.Config`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config).
 
 ## The alternating-bit protocol in a configuration
 
@@ -153,7 +153,7 @@ internal channel restricted,
 $(((\mathrm{Sender}(s) \mid \mathrm{Data}(d)) \mid \mathrm{Receiver}(r)) \mid \mathrm{Ack}(k))
 \setminus L$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.system`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#system).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.system`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#system).
 
 ## Alternating-bit configuration transitions
 
@@ -165,7 +165,7 @@ the two sides synchronize on an input and the complementary output on the same c
 giving a silent step), and then keeping only the silent steps and the steps whose channel name
 is not one of the internal channel names.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.configSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-steps).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.configSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-steps).
 
 ## The data-free one-place buffer in a given state
 
@@ -173,7 +173,7 @@ For a Boolean $f$, $\mathit{buffer}(f)$ is
 the process constant for the one-place buffer that is full if $f$ is true and empty if $f$ is
 false.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.buffer`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.buffer`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer).
 
 ## Initial alternating-bit configuration
 
@@ -181,7 +181,7 @@ The initial configuration of the alternating-bit
 protocol has the sender ready to accept a message with bit $\mathrm{false}$, both channels
 empty, and the receiver expecting bit $\mathrm{false}$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.initial`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#initial).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.initial`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#initial).
 
 ## The data-free alternating-bit protocol
 
@@ -192,7 +192,7 @@ $\mathit{send}_b$, $\mathit{recv}_b$, $\mathit{reply}_b$ and $\mathit{ack}_b$ (f
 restricted, where the sender is ready to accept a message to be sent with bit $0$, both channels
 are empty, and the receiver expects bit $0$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp).
 
 ## The data-free one-place buffer
 
@@ -201,7 +201,7 @@ empty state. By the specification it accepts on $\mathit{acc}$ and becomes full,
 buffer delivers on $\mathit{del}$ and becomes empty again, so
 $\mathit{buf} = \mathit{acc}.\overline{\mathit{del}}.\mathit{buf}$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.buf`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buf).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.buf`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buf).
 
 ## Weak-bisimulation certificate for the data-free alternating-bit protocol
 
@@ -209,7 +209,7 @@ The list of every
 reachable protocol configuration, paired with the buffer state it simulates (full from the accept
 of a message until its delivery), sorted by silent distance to the next visible action.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.certificate`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#certificate).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.certificate`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#certificate).
 
 ## The alternating-bit protocol implements a one-place buffer
 
@@ -218,7 +218,7 @@ system of the protocol's recursive CCS specification, the data-free alternating-
 lossy one-place channels is weakly bisimilar to the one-place buffer
 $\mathit{buf} = \mathit{acc}.\overline{\mathit{del}}.\mathit{buf}$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp_weaklyBisimilar_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-weakly-bisimilar-buffer).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp_weaklyBisimilar_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-weakly-bisimilar-buffer).
 
 ## The alternating-bit protocol is observation congruent to a one-place buffer
 
@@ -231,7 +231,7 @@ $\mathit{buf} = \mathit{acc}.\overline{\mathit{del}}.\mathit{buf}$.
 This is stronger than weak bisimilarity; it holds because initially neither process can move
 silently.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp_observationCongruent_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-observation-congruent-buffer).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBit.abp_observationCongruent_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBit.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBit.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-observation-congruent-buffer).
 
 ## Channel names of the alternating-bit protocol with data
 
@@ -241,7 +241,7 @@ $d$ from the user), $\mathsf{del}(d)$ (deliver the data bit $d$ to the user), $\
 (sender to data channel), $\mathsf{recv}(b, d)$ (data channel to receiver), $\mathsf{reply}(b)$
 (receiver to acknowledgement channel) and $\mathsf{ack}(b)$ (acknowledgement channel to sender).
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Name`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#name-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Name`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#name-2).
 
 ## Sender states of the alternating-bit protocol with data
 
@@ -251,7 +251,7 @@ $\mathsf{transmit}(b, d)$, about to transmit the data bit $d$ with sequence bit 
 $\mathsf{await}(b, d)$, waiting for the acknowledgement of $b$ while holding $d$ for
 retransmission.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Sender`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Sender`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-2).
 
 ## Receiver states of the alternating-bit protocol with data
 
@@ -260,7 +260,7 @@ state is $\mathsf{expect}(b)$, expecting a frame with sequence bit $b$; $\mathsf
 about to deliver the data bit $d$ of a frame with sequence bit $b$; or $\mathsf{reply}(b)$, about
 to acknowledge $b$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Receiver`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Receiver`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-2).
 
 ## Sender transitions of the alternating-bit protocol with data
 
@@ -273,7 +273,7 @@ $\mathsf{ack}(b)$ and moves to $\mathsf{accept}(\lnot b)$, inputs on $\mathsf{ac
 stays in $\mathsf{await}(b, d)$, or times out by a silent step $\tau$ back to
 $\mathsf{transmit}(b, d)$, in this order.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.senderSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.senderSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#sender-steps-2).
 
 ## Data-channel transitions of the alternating-bit protocol with data
 
@@ -286,7 +286,7 @@ $(\mathrm{true}, \mathrm{false})$, $(\mathrm{true}, \mathrm{true})$; a channel h
 either outputs on $\mathsf{recv}(b, d)$ and becomes empty, or loses the frame by a silent step
 $\tau$ and becomes empty.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.dataSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#data-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.dataSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#data-steps-2).
 
 ## Receiver transitions of the alternating-bit protocol with data
 
@@ -300,7 +300,7 @@ $\mathsf{reply}(b)$ outputs on the channel $\mathsf{reply}(b)$ and moves to
 $\mathsf{expect}(\lnot b)$. So the receiver delivers the data of an expected frame and
 acknowledges a duplicate again.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.receiverSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.receiverSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#receiver-steps-2).
 
 ## Acknowledgement channel of the alternating-bit protocol with data
 
@@ -309,7 +309,7 @@ lossy one-place acknowledgement channel: when empty, it can take an input on $\m
 for either bit $b$ and then holds $b$; when holding $b$, it can either output on $\mathrm{ack}_b$
 or lose $b$ by a silent step, and in both cases it becomes empty.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.ackSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#ack-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.ackSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#ack-steps-2).
 
 ## Transitions of the one-place buffer of bits
 
@@ -317,7 +317,7 @@ When empty, the buffer can take an input on
 $\mathrm{acc}_d$ for either bit $d$ and then holds $d$; when holding $d$, its only transition is
 an output on $\mathrm{del}_d$, after which it is empty.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.bufferSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.bufferSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-steps-2).
 
 ## Process constants of the alternating-bit protocol with data
 
@@ -326,7 +326,7 @@ for each sender state, each content of the data channel (empty, or a sequence bi
 bit), each receiver state, each content of the acknowledgement channel (empty, or a bit), and each
 content of the one-place buffer of bits (empty, or a bit).
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Agent`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#agent-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Agent`, an inductive type declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#agent-2).
 
 ## Recursive specification of the alternating-bit protocol with data
 
@@ -338,7 +338,7 @@ of $X_s$ is the choice of prefixes $a_1.X_{s_1} + (a_2.X_{s_2} + \dots + (a_n.X_
 where each $X_{s_i}$ is the constant of the same component and $0$ is the inactive process; the
 body is $0$ when $s$ has no listed transitions.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.spec`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#spec-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.spec`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#spec-2).
 
 ## Transition system of the alternating-bit protocol with data
 
@@ -347,7 +347,7 @@ system whose states are the CCS processes over the protocol's channel names and 
 constants, whose labels are the CCS labels over its channel names, and whose transitions are
 generated by the protocol's recursive specification.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.lts`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#lts-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.lts`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#lts-2).
 
 ## Internal channels of the alternating-bit protocol with data
 
@@ -358,7 +358,7 @@ $(\mathrm{true}, \mathrm{false})$, $(\mathrm{true}, \mathrm{true})$, then
 $\mathsf{reply}(\mathrm{false})$, $\mathsf{reply}(\mathrm{true})$, $\mathsf{ack}(\mathrm{false})$
 and $\mathsf{ack}(\mathrm{true})$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.internal`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#internal-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.internal`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#internal-2).
 
 ## Configurations of the alternating-bit protocol with data
 
@@ -366,7 +366,7 @@ A configuration consists of a
 sender state, the content of the data channel (empty, or a pair of a sequence bit and a data
 bit), a receiver state, and the content of the acknowledgement channel (empty, or a bit).
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Config`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.Config`, an abbreviation declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-2).
 
 ## The alternating-bit protocol with data in a configuration
 
@@ -377,7 +377,7 @@ $((X_s \mid X_d) \mid X_r) \mid X_k$ with every internal channel restricted, whe
 $X_r$ and $X_k$ are the process constants of these states. The internal channels are all channel
 names other than accepting and delivering a data bit.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.system`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#system-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.system`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#system-2).
 
 ## Transitions of the alternating-bit protocol with data
 
@@ -389,14 +389,14 @@ synchronize on complementary labels in a silent step. Of these, only the silent 
 actions on names that are not internal channels are kept; the internal channels are the sending,
 receiving, reply and acknowledgement channels.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.configSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-steps-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.configSteps`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#config-steps-2).
 
 ## The one-place buffer of bits with given content
 
 For a content $q$, which is either empty
 or a bit, the process constant of the one-place buffer of bits holding $q$.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.buffer`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.buffer`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buffer-2).
 
 ## Initial configuration of the alternating-bit protocol with data
 
@@ -406,7 +406,7 @@ sent with sequence bit false, the data channel and the acknowledgement channel a
 the receiver is in state $\mathsf{expect}(\mathrm{false})$, expecting a frame with sequence bit
 false.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.initial`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#initial-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.initial`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#initial-2).
 
 ## The alternating-bit protocol with data
 
@@ -415,14 +415,14 @@ configuration: the sender is ready to accept a data bit, to be sent with sequenc
 data channel and the acknowledgement channel are empty, and the receiver expects a frame with
 sequence bit false. The four agents run in parallel, with all internal channels restricted.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data).
 
 ## The empty one-place buffer of bits
 
 The process constant of the one-place buffer of bits
 with empty content.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.buf`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buf-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.buf`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#buf-2).
 
 ## Weak-bisimulation certificate for the alternating-bit protocol with data
 
@@ -431,14 +431,14 @@ pairs, each a protocol configuration together with the buffer content it simulat
 reachable configuration with the buffer content it simulates, listed so that every pair reaches
 the visible actions of its buffer state through pairs listed earlier.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.certificate`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#certificate-2).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.certificate`, a definition declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#certificate-2).
 
 ## The alternating-bit protocol transmits data correctly
 
 It is weakly
 bisimilar to the empty one-place buffer of bits.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData_weaklyBisimilar_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data-weakly-bisimilar-buffer).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData_weaklyBisimilar_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data-weakly-bisimilar-buffer).
 
 ## The alternating-bit protocol with data is observation congruent to the buffer
 
@@ -449,7 +449,7 @@ bits: every transition of either process with some label is matched by the other
 silent steps, then one actual step with the same label, then silent steps, and the two resulting
 processes are weakly bisimilar.
 
-Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData_observationCongruent_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data-observation-congruent-buffer).
+Formalized by `Cslib.Algorithms.CCS.AlternatingBitData.abpData_observationCongruent_buffer`, a theorem declared in [CSLibExt/Algorithms/CCS/AlternatingBitData.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/CCS/AlternatingBitData.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html#abp-data-observation-congruent-buffer).
 
 ## Depends on
 
@@ -458,4 +458,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alternating bit protocol](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/alternating-bit-protocol)

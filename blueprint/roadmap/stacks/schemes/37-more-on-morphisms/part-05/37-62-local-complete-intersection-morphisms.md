@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.62 Local complete intersection morphisms
 
-Section 37.62 of the Stacks Project, [Tag 068E](https://stacks.math.columbia.edu/tag/068E). 23 tags here are carried by 42 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.62 of the Stacks Project, [Tag 068E](https://stacks.math.columbia.edu/tag/068E). 23 tags here are carried by 42 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 069E, a lemma
 
 [Tag 069E](https://stacks.math.columbia.edu/tag/069E) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.exists_opens_isKoszulRegularImmersion_comp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothEmbeddingIndependence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothEmbeddingIndependence.lean#L81).
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.exists_opens_isKoszulRegularImmersion_comp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothEmbeddingIndependence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothEmbeddingIndependence.lean#L81).
 
 > **Stacks 069E.** Let `i : U ⟶ P` and `i' : U ⟶ P'` be immersions over `S` of schemes smooth
 > over `S`. Then `i` is a Koszul-regular immersion in a neighbourhood of `u : U` if and only if
@@ -33,7 +33,7 @@ theorem exists_opens_isKoszulRegularImmersion_comp_iff
 
 [Tag 069F](https://stacks.math.columbia.edu/tag/069F) in the Stacks Project.
 
-**`AlgebraicGeometry.KoszulAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean#L66). The attribute's comment: “part (1): Koszul at a point”. References: SGA 6 VIII (1.1), “at a point”.
+**`AlgebraicGeometry.KoszulAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean#L66). The attribute's comment: “part (1): Koszul at a point”. References: SGA 6 VIII (1.1), “at a point”.
 
 > **Stacks 069F, part (1).** A morphism of schemes `f : X ⟶ S` is *Koszul at* `x : X` if it is
 > of finite type at `x` and there are an open neighbourhood `U` of `x`, a scheme `P` smooth over
@@ -44,7 +44,7 @@ theorem exists_opens_isKoszulRegularImmersion_comp_iff
 def KoszulAt {X S : Scheme.{u}} (f : X ⟶ S) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.IsLocalCompleteIntersectionMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean#L76). The attribute's comment: “part (2): local complete intersection morphism”. References: SGA 6 VIII (1.1).
+**`AlgebraicGeometry.IsLocalCompleteIntersectionMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Defs.lean#L76). The attribute's comment: “part (2): local complete intersection morphism”. References: SGA 6 VIII (1.1).
 
 > **Stacks 069F, part (2).** A *local complete intersection morphism*, also called a *Koszul
 > morphism*, is a morphism of schemes that is Koszul at every point of its source.
@@ -57,7 +57,7 @@ def IsLocalCompleteIntersectionMorphism {X S : Scheme.{u}} (f : X ⟶ S) : Prop
 
 [Tag 069G](https://stacks.math.columbia.edu/tag/069G) in the Stacks Project.
 
-**`AlgebraicGeometry.isKoszulRegularImmersion_of_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean#L129). References: SGA 6 VIII (1.2).
+**`AlgebraicGeometry.isKoszulRegularImmersion_of_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean#L129). References: SGA 6 VIII (1.2).
 
 > **Stacks 069G**, unconditionally: an immersion over `S` of an open of the source of a local
 > complete intersection morphism into a scheme smooth over `S` is Koszul-regular.
@@ -73,7 +73,7 @@ theorem isKoszulRegularImmersion_of_koszul {X S P : Scheme.{u}} (f : X ⟶ S) (�
 
 [Tag 069H](https://stacks.math.columbia.edu/tag/069H) in the Stacks Project.
 
-**`AlgebraicGeometry.perfect_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L146). The attribute's comment: “part (3): perfect”. References: SGA 6 III (4.1.1); SGA 6 VIII (1.7); SGA 6 X (7.1), “partial”.
+**`AlgebraicGeometry.perfect_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L146). The attribute's comment: “part (3): perfect”. References: SGA 6 III (4.1.1); SGA 6 VIII (1.7); SGA 6 X (7.1), “partial”.
 
 > **Stacks 069H, part (3).** A local complete intersection morphism of schemes is perfect.
 >
@@ -87,7 +87,7 @@ theorem perfect_of_isLocalCompleteIntersectionMorphism {X S : Scheme.{u}} {f : X
     (hf : IsLocalCompleteIntersectionMorphism f) : Perfect f
 ```
 
-**`AlgebraicGeometry.pseudoCoherent_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L161). The attribute's comment: “part (2): pseudo-coherent”. References: SGA 6 VIII (1.7), “partial”.
+**`AlgebraicGeometry.pseudoCoherent_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L161). The attribute's comment: “part (2): pseudo-coherent”. References: SGA 6 VIII (1.7), “partial”.
 
 > **Stacks 069H, part (2).** A local complete intersection morphism of schemes is
 > pseudo-coherent, because it is perfect and a perfect morphism is pseudo-coherent.
@@ -97,7 +97,7 @@ theorem pseudoCoherent_of_isLocalCompleteIntersectionMorphism {X S : Scheme.{u}}
     (hf : IsLocalCompleteIntersectionMorphism f) : PseudoCoherent f
 ```
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L170). The attribute's comment: “part (1): locally of finite presentation”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Perfect.lean#L170). The attribute's comment: “part (1): locally of finite presentation”.
 
 > **Stacks 069H, part (1).** A local complete intersection morphism of schemes is locally of
 > finite presentation, because it is pseudo-coherent and a pseudo-coherent morphism is locally of
@@ -113,7 +113,7 @@ theorem locallyOfFinitePresentation_of_isLocalCompleteIntersectionMorphism
 
 [Tag 07DB](https://stacks.math.columbia.edu/tag/07DB) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_iff_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Affine.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Affine.lean#L537).
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_iff_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Affine.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Affine.lean#L537).
 
 > **Stacks 07DB.** A morphism of affine schemes is a local complete intersection morphism
 > exactly when the induced homomorphism of the rings of global sections is a local complete
@@ -129,7 +129,7 @@ theorem isLocalCompleteIntersectionMorphism_iff_appTop {X S : Scheme.{u}} [IsAff
 
 [Tag 069I](https://stacks.math.columbia.edu/tag/069I) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FlatBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FlatBaseChange.lean#L92). References: SGA 6 VIII (1.6), “flat base change stable”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FlatBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FlatBaseChange.lean#L92). References: SGA 6 VIII (1.6), “flat base change stable”.
 
 > A flat base change of a local complete intersection morphism is a local
 > complete intersection morphism.
@@ -145,7 +145,7 @@ public theorem isLocalCompleteIntersectionMorphism_pullback_snd
 
 [Tag 069J](https://stacks.math.columbia.edu/tag/069J) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Composition.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Composition.lean#L126).
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Composition.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Composition.lean#L126).
 
 > **Stacks 069J.** A composition of local complete intersection morphisms is a local complete
 > intersection morphism.
@@ -161,7 +161,7 @@ theorem isLocalCompleteIntersectionMorphism_comp {X Y S : Scheme.{u}} (f : X ⟶
 
 [Tag 069K](https://stacks.math.columbia.edu/tag/069K) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_and_isLocalCompleteIntersectionMorphism_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean#L118). The attribute's comment: “(2) ⇒ (1): a syntomic morphism is flat and a local complete intersection morphism”.
+**`AlgebraicGeometry.flat_and_isLocalCompleteIntersectionMorphism_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean#L118). The attribute's comment: “(2) ⇒ (1): a syntomic morphism is flat and a local complete intersection morphism”.
 
 > **Stacks 069K, the implication (2) ⇒ (1).** A syntomic morphism of schemes is flat and a
 > local complete intersection morphism.
@@ -171,7 +171,7 @@ theorem flat_and_isLocalCompleteIntersectionMorphism_of_syntomic {X S : Scheme.{
     (hf : Syntomic f) : Flat f ∧ IsLocalCompleteIntersectionMorphism f
 ```
 
-**`AlgebraicGeometry.syntomic_iff_flat_and_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean#L147). The attribute's comment: “the equivalence of (1) and (2)”.
+**`AlgebraicGeometry.syntomic_iff_flat_and_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/Syntomic.lean#L147). The attribute's comment: “the equivalence of (1) and (2)”.
 
 > **Stacks 069K.** A morphism of schemes is syntomic if and only if it is flat and a local
 > complete intersection morphism.
@@ -185,7 +185,7 @@ theorem syntomic_iff_flat_and_isLocalCompleteIntersectionMorphism {X S : Scheme.
 
 [Tag 069L](https://stacks.math.columbia.edu/tag/069L) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isKoszulRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean#L49). The attribute's comment: “Koszul-regular immersion”. References: SGA 5 III (6.8), “Direction”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isKoszulRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean#L49). The attribute's comment: “Koszul-regular immersion”. References: SGA 5 III (6.8), “Direction”.
 
 > **Stacks 069L.** A Koszul-regular immersion of schemes is a local complete intersection
 > morphism.
@@ -196,7 +196,7 @@ theorem isLocalCompleteIntersectionMorphism_of_isKoszulRegularImmersion {X S : S
     IsLocalCompleteIntersectionMorphism i
 ```
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean#L68). The attribute's comment: “regular immersion”. References: SGA 5 III (6.8), “Direction”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularImmersion.lean#L68). The attribute's comment: “regular immersion”. References: SGA 5 III (6.8), “Direction”.
 
 > **Stacks 069L.** A regular immersion of schemes is a local complete intersection
 > morphism.
@@ -211,7 +211,7 @@ theorem isLocalCompleteIntersectionMorphism_of_isRegularImmersion {X S : Scheme.
 
 [Tag 069M](https://stacks.math.columbia.edu/tag/069M) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothTarget.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothTarget.lean#L75).
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothTarget.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothTarget.lean#L75).
 
 > **Stacks 069M.**  In a commutative triangle of morphisms of schemes with `g : Y ⟶ S` smooth,
 > if the composite `f ≫ g` is a local complete intersection morphism then so is `f : X ⟶ Y`.
@@ -226,7 +226,7 @@ theorem isLocalCompleteIntersectionMorphism_of_comp_of_smooth {X Y S : Scheme.{u
 
 [Tag 0E9K](https://stacks.math.columbia.edu/tag/0E9K) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularSchemes.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularSchemes.lean#L77).
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularSchemes.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularSchemes.lean#L77).
 
 > A morphism of schemes which is locally of finite type and whose source and target are
 > regular is a local complete intersection morphism.
@@ -241,7 +241,7 @@ theorem isLocalCompleteIntersectionMorphism_of_isRegular {X Y : Scheme.{u}} (f :
 
 [Tag 09RL](https://stacks.math.columbia.edu/tag/09RL) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean#L301). The attribute's comment: “the morphism to the intermediate scheme is a local complete intersection morphism”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean#L301). The attribute's comment: “the morphism to the intermediate scheme is a local complete intersection morphism”.
 
 > **Stacks 09RL, the relative conclusion.**  Let `X ⟶ Y ⟶ S` be a commutative triangle of
 > morphisms of schemes with `S` locally Noetherian and `Y ⟶ S` locally of finite type.  If
@@ -255,7 +255,7 @@ theorem isLocalCompleteIntersectionMorphism_of_perfect {X Y S : Scheme.{u}} (f :
     IsLocalCompleteIntersectionMorphism f
 ```
 
-**`AlgebraicGeometry.koszulAt_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean#L310). The attribute's comment: “the intermediate scheme is Koszul over the base at every point of the image”.
+**`AlgebraicGeometry.koszulAt_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/PerfectOverBase.lean#L310). The attribute's comment: “the intermediate scheme is Koszul over the base at every point of the image”.
 
 > **Stacks 09RL, the conclusion on the base.**  In the same situation, `g : Y ⟶ S` is Koszul at
 > the image of every point of `X`.
@@ -271,7 +271,7 @@ theorem koszulAt_of_perfect {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S) {h 
 
 [Tag 0FJ2](https://stacks.math.columbia.edu/tag/0FJ2) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegular_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean#L54). The attribute's comment: “f is a local complete intersection morphism”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_isRegular_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean#L54). The attribute's comment: “f is a local complete intersection morphism”.
 
 > Let `X ⟶ Y ⟶ S` be a commutative triangle of morphisms of schemes with `S` locally
 > Noetherian, `Y ⟶ S` locally of finite type and `Y` regular. If `X ⟶ S` is a local complete
@@ -284,7 +284,7 @@ theorem isLocalCompleteIntersectionMorphism_of_isRegular_target {X Y S : Scheme.
     IsLocalCompleteIntersectionMorphism f
 ```
 
-**`AlgebraicGeometry.koszulAt_of_isRegular_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean#L66). The attribute's comment: “Y ⟶ S is Koszul at the image of every point of X”.
+**`AlgebraicGeometry.koszulAt_of_isRegular_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/RegularTarget.lean#L66). The attribute's comment: “Y ⟶ S is Koszul at the image of every point of X”.
 
 > Let `X ⟶ Y ⟶ S` be a commutative triangle of morphisms of schemes with `S` locally
 > Noetherian, `Y ⟶ S` locally of finite type and `Y` regular. If `X ⟶ S` is a local complete
@@ -300,7 +300,7 @@ theorem koszulAt_of_isRegular_target {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y �
 
 [Tag 0FK1](https://stacks.math.columbia.edu/tag/0FK1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isRegularImmersion_of_perfect_of_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/PerfectLocallyFreeConormal.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/PerfectLocallyFreeConormal.lean#L354).
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isRegularImmersion_of_perfect_of_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/PerfectLocallyFreeConormal.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/PerfectLocallyFreeConormal.lean#L354).
 
 > **Stacks tag 0FK1.**  An immersion `i : X ⟶ Y` which is perfect, whose target is locally
 > Noetherian and whose conormal sheaf is finite locally free, is a regular immersion.
@@ -317,7 +317,7 @@ theorem isRegularImmersion_of_perfect_of_conormalSheaf (i : X ⟶ Y) [IsImmersio
 
 [Tag 0FV6](https://stacks.math.columbia.edu/tag/0FV6) in the Stacks Project.
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L454). The attribute's comment: “both halves: NL\_\{X/Y} of a local complete intersection morphism is perfect and has tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “more general”; SGA 6 XIV (2.1).
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L454). The attribute's comment: “both halves: NL\_\{X/Y} of a local complete intersection morphism is perfect and has tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “more general”; SGA 6 XIV (2.1).
 
 > **Stacks 0FV6.** The naive cotangent complex of a local complete intersection morphism is a
 > perfect object of `D(𝒪_X)` of Tor amplitude in `[-1, 0]`.
@@ -341,7 +341,7 @@ theorem isPerfect_and_hasTorAmplitude_naiveCotangentComplex {X Y : Scheme.{u}} (
 
 [Tag 0FK2](https://stacks.math.columbia.edu/tag/0FK2) in the Stacks Project.
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L500). The attribute's comment: “(1) ⇒ (2): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L500). The attribute's comment: “(1) ⇒ (2): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK2, the implication (1) ⇒ (2).** If a perfect morphism of locally Noetherian
 > schemes is a local complete intersection morphism, then `NL_{X/Y}` has Tor amplitude in
@@ -358,7 +358,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_perfect {X Y : Scheme.{u}} (f :
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L517). The attribute's comment: “(1) ⇒ (3): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “special case”.
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L517). The attribute's comment: “(1) ⇒ (3): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “special case”.
 
 > **Stacks 0FK2, the implication (1) ⇒ (3).** If a perfect morphism of locally Noetherian
 > schemes is a local complete intersection morphism, then `NL_{X/Y}` is perfect with Tor amplitude
@@ -377,7 +377,7 @@ theorem isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_perfect {X Y : Sc
         (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.naiveCotangentComplex_tfae_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangentConverse.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangentConverse.lean#L225). References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “(1) ⇒ (3), special case”.
+**`AlgebraicGeometry.naiveCotangentComplex_tfae_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangentConverse.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangentConverse.lean#L223). References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “(1) ⇒ (3), special case”.
 
 > **Stacks 0FK2.** Let `f : X ⟶ Y` be a perfect morphism of locally Noetherian schemes. The
 > following are equivalent:
@@ -413,7 +413,7 @@ theorem naiveCotangentComplex_tfae_isLocalCompleteIntersectionMorphism {X Y : Sc
 
 [Tag 0FK3](https://stacks.math.columbia.edu/tag/0FK3) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_iff_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L132). The attribute's comment: “(1) ⇔ (2): a flat morphism of finite presentation is a local complete intersection morphism iff it is syntomic”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_iff_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L132). The attribute's comment: “(1) ⇔ (2): a flat morphism of finite presentation is a local complete intersection morphism iff it is syntomic”.
 
 > **Stacks 0FK3, the equivalence of (1) and (2).** A flat morphism of finite presentation is a
 > local complete intersection morphism exactly when it is syntomic.
@@ -427,7 +427,7 @@ theorem isLocalCompleteIntersectionMorphism_iff_syntomic {X Y : Scheme.{u}} (f :
     IsLocalCompleteIntersectionMorphism f ↔ Syntomic f
 ```
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L149). The attribute's comment: “(4) ⇒ (3), which is a projection: NL\_\{X/Y} perfect with tor-amplitude in [-1,0] has tor-amplitude in [-1,0]. Fixes which library predicates conditions (3) and (4) are read at”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L149). The attribute's comment: “(4) ⇒ (3), which is a projection: NL\_\{X/Y} perfect with tor-amplitude in [-1,0] has tor-amplitude in [-1,0]. Fixes which library predicates conditions (3) and (4) are read at”.
 
 > **Stacks 0FK3, the implication (4) ⇒ (3).** If `NL_{X/Y}` is perfect with Tor amplitude in
 > `[-1, 0]`, then it has Tor amplitude in `[-1, 0]`.
@@ -450,7 +450,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L470). The attribute's comment: “(1) ⇒ (3): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L470). The attribute's comment: “(1) ⇒ (3): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK3, the implication (1) ⇒ (3).** If a flat morphism of finite presentation is a
 > local complete intersection morphism, then `NL_{X/Y}` has Tor amplitude in `[-1, 0]`.
@@ -465,7 +465,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_flat {X Y : Scheme.{u}} (f : X 
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L483). The attribute's comment: “(1) ⇒ (4): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L483). The attribute's comment: “(1) ⇒ (4): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK3, the implication (1) ⇒ (4).** If a flat morphism of finite presentation is a
 > local complete intersection morphism, then `NL_{X/Y}` is perfect with Tor amplitude in `[-1, 0]`.
@@ -483,7 +483,7 @@ theorem isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_flat {X Y : Schem
         (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.syntomic_of_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L536). The attribute's comment: “(3) ⇒ (2): a flat morphism of finite presentation whose naive cotangent complex has tor-amplitude in [-1,0] is syntomic”.
+**`AlgebraicGeometry.syntomic_of_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L536). The attribute's comment: “(3) ⇒ (2): a flat morphism of finite presentation whose naive cotangent complex has tor-amplitude in [-1,0] is syntomic”.
 
 > **Stacks 0FK3, the implication (3) ⇒ (2).** A flat morphism of finite presentation whose
 > naive cotangent complex has Tor amplitude in `[-1, 0]` is syntomic.
@@ -502,7 +502,7 @@ theorem syntomic_of_hasTorAmplitude_naiveCotangentComplex {X Y : Scheme.{u}} (f 
     Syntomic f
 ```
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L560). The attribute's comment: “(3) ⇒ (1): a flat morphism of finite presentation whose naive cotangent complex has tor-amplitude in [-1,0] is a local complete intersection morphism”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_of_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L560). The attribute's comment: “(3) ⇒ (1): a flat morphism of finite presentation whose naive cotangent complex has tor-amplitude in [-1,0] is a local complete intersection morphism”.
 
 > **Stacks 0FK3, the implication (3) ⇒ (1).** A flat morphism of finite presentation whose
 > naive cotangent complex has Tor amplitude in `[-1, 0]` is a local complete intersection
@@ -516,7 +516,7 @@ theorem isLocalCompleteIntersectionMorphism_of_hasTorAmplitude_naiveCotangentCom
     IsLocalCompleteIntersectionMorphism f
 ```
 
-**`AlgebraicGeometry.naiveCotangentComplex_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L572).
+**`AlgebraicGeometry.naiveCotangentComplex_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L572).
 
 > **Stacks 0FK3.** For a flat morphism of finite presentation `f : X ⟶ Y` the following are
 > equivalent: `f` is a local complete intersection morphism; `f` is syntomic; `NL_{X/Y}` has Tor
@@ -540,7 +540,7 @@ theorem naiveCotangentComplex_tfae {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0FDP](https://stacks.math.columbia.edu/tag/0FDP) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_tfae_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothDiagonal.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothDiagonal.lean#L331). References: SGA 1 II (4.18), “(1) ⇒ (2), special case”; SGA 6 VII (1.10), “special case”.
+**`AlgebraicGeometry.smooth_tfae_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothDiagonal.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/SmoothDiagonal.lean#L288). References: SGA 1 II (4.18), “(1) ⇒ (2), special case”; SGA 6 VII (1.10), “special case”.
 
 > **Stacks 0FDP.** Let `f : X ⟶ Y` be a morphism of finite type between locally Noetherian
 > schemes and let `Δ : X ⟶ X ×_Y X` be its diagonal. The following are equivalent:
@@ -571,7 +571,7 @@ theorem smooth_tfae_diagonal {X Y : Scheme.{u}} (f : X ⟶ Y) [IsLocallyNoetheri
 
 [Tag 069N](https://stacks.math.columbia.edu/tag/069N) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FpqcLocalAtTarget.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FpqcLocalAtTarget.lean#L118). References: SGA 2 XII (4.10), “partial”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FpqcLocalAtTarget.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/FpqcLocalAtTarget.lean#L118). References: SGA 2 XII (4.10), “partial”.
 
 > **Stacks 069N.** Being a local complete intersection morphism of schemes is fpqc local on the
 > target: a morphism is Koszul if and only if its base change along every member of an fpqc
@@ -588,7 +588,7 @@ theorem isLocalCompleteIntersectionMorphism_isLocalAtTarget_fpqc :
 
 [Tag 069P](https://stacks.math.columbia.edu/tag/069P) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalAtSource_syntomic_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean#L1044).
+**`AlgebraicGeometry.isLocalAtSource_syntomic_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionAffine.lean#L1044).
 
 > **Stacks 069P.** The property of being a local complete intersection morphism of schemes is
 > syntomic local on the source: a morphism is Koszul exactly when its composites with the members
@@ -607,7 +607,7 @@ theorem isLocalAtSource_syntomic_isLocalCompleteIntersectionMorphism :
       (Scheme.precoverage (@Syntomic.{u}))
 ```
 
-**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_isLocalAtSource_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionEtale.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionEtale.lean#L163). The attribute's comment: “the étale case, unconditionally: the Koszul property of morphisms of schemes is local on the source for the étale topology. The syntomic statement of the tag is not claimed here”.
+**`AlgebraicGeometry.isLocalCompleteIntersectionMorphism_isLocalAtSource_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionEtale.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/LocalCompleteIntersectionEtale.lean#L163). The attribute's comment: “the étale case, unconditionally: the Koszul property of morphisms of schemes is local on the source for the étale topology. The syntomic statement of the tag is not claimed here”.
 
 > **Stacks 069P, restricted to étale coverings.** The property of being a local complete
 > intersection morphism of schemes is local on the source for the étale topology: a morphism is
@@ -633,7 +633,7 @@ theorem isLocalCompleteIntersectionMorphism_isLocalAtSource_etale :
 
 [Tag 06B8](https://stacks.math.columbia.edu/tag/06B8) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_koszulAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean, line 868](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean#L868). The attribute's comment: “the Koszul locus is open”.
+**`AlgebraicGeometry.isOpen_koszulAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean#L868). The attribute's comment: “the Koszul locus is open”.
 
 > **The Koszul locus is open.** A witness for `KoszulAt f x` — an open `U ∋ x` on which `f`
 > factors through a Koszul-regular immersion into a scheme smooth over the target — witnesses
@@ -646,7 +646,7 @@ public theorem isOpen_koszulAt {X Y : Scheme.{u}} (f : X ⟶ Y) :
     IsOpen {x : X | KoszulAt f x}
 ```
 
-**`AlgebraicGeometry.koszulAt_baseChange_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean#L882). The attribute's comment: “formation of the Koszul locus commutes with arbitrary base change”.
+**`AlgebraicGeometry.koszulAt_baseChange_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean, line 882](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/KoszulLocus.lean#L882). The attribute's comment: “formation of the Koszul locus commutes with arbitrary base change”.
 
 > **The formation of the Koszul locus commutes with arbitrary base change.** Let `f : X ⟶ Y`
 > be a morphism of schemes over `S` with `X` and `Y` both flat and locally of finite presentation
@@ -666,7 +666,7 @@ public theorem koszulAt_baseChange_iff {X Y S S' : Scheme.{u}} (f : X ⟶ Y) (p 
 
 [Tag 06B9](https://stacks.math.columbia.edu/tag/06B9) in the Stacks Project.
 
-**`AlgebraicGeometry.unramified_iff_formallyUnramified_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean#L84). The attribute's comment: “the equivalence: a local complete intersection morphism is unramified if and only if it is formally unramified”.
+**`AlgebraicGeometry.unramified_iff_formallyUnramified_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean#L84). The attribute's comment: “the equivalence: a local complete intersection morphism is unramified if and only if it is formally unramified”.
 
 > A local complete intersection morphism of schemes is unramified if and only if it is
 > formally unramified.
@@ -677,7 +677,7 @@ theorem unramified_iff_formallyUnramified_of_isLocalCompleteIntersectionMorphism
     Unramified f ↔ FormallyUnramified f
 ```
 
-**`AlgebraicGeometry.isFiniteLocallyFree_universalConormalSheaf_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean#L158). The attribute's comment: “finite local freeness of the conormal sheaf of a local complete intersection morphism. Tag 063H is NOT needed: the Koszul-regular factor is quasi-regular, and condition (2) of Tag 063M is available for those”.
+**`AlgebraicGeometry.isFiniteLocallyFree_universalConormalSheaf_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/UnramifiedConormal.lean#L158). The attribute's comment: “finite local freeness of the conormal sheaf of a local complete intersection morphism. Tag 063H is NOT needed: the Koszul-regular factor is quasi-regular, and condition (2) of Tag 063M is available for those”.
 
 > The conormal sheaf of a formally unramified local complete intersection morphism of schemes
 > is finite locally free.
@@ -693,7 +693,7 @@ theorem isFiniteLocallyFree_universalConormalSheaf_of_isLocalCompleteIntersectio
 
 [Tag 06BA](https://stacks.math.columbia.edu/tag/06BA) in the Stacks Project.
 
-**`Stacks.Thickenings.mono_transitivityConormalLeftMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean#L200). The attribute's comment: “the left arrow of the sequence of Stacks 06AE is a monomorphism”.
+**`Stacks.Thickenings.mono_transitivityConormalLeftMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean#L200). The attribute's comment: “the left arrow of the sequence of Stacks 06AE is a monomorphism”.
 
 > **The first arrow of the conormal sequence of part (2) of [Stacks Project, Tag 06AE] is a
 > monomorphism** when `Z ⟶ Y` is a local complete intersection morphism.
@@ -703,7 +703,7 @@ theorem mono_transitivityConormalLeftMap (hi : IsLocalCompleteIntersectionMorphi
     Mono (transitivityConormalLeftMap i p tZ tY)
 ```
 
-**`Stacks.Thickenings.transitivityConormalShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean#L241). The attribute's comment: “the conormal sequence of Stacks 06AE is short exact”. References: SGA 6 VIII (2.6), “partial”.
+**`Stacks.Thickenings.transitivityConormalShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormalShortExact.lean#L241). The attribute's comment: “the conormal sequence of Stacks 06AE is short exact”. References: SGA 6 VIII (2.6), “partial”.
 
 > Let `Z --i--→ Y --p--→ X` be morphisms of schemes with universal first-order thickenings
 > `Z ⊂ Z'` of `Z` over `X` and `Y ⊂ Y'` of `Y` over `X`, and assume `i` is a local complete
@@ -727,4 +727,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.62, Tag 068E](https://stacks.math.columbia.edu/tag/068E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Schatunowsky-type theorems
 
-21 results, 6 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html).
+21 results, 6 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html).
 
 ## Bertrand's postulate for Gaussian integers
 
@@ -20,7 +20,7 @@ of $\mathbb{Z}[i]$ with $N(\pi) < N(\rho) \le 2N(\pi)$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.gaussianInt_exists_prime_norm_between` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-int-exists-prime-norm-between).
+Stated but not proved: `MetaMathlibExt.gaussianInt_exists_prime_norm_between` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-int-exists-prime-norm-between).
 
 ## Bertrand's postulate for Eisenstein integers
 
@@ -33,7 +33,7 @@ $\mathcal{O}$ with $N(\pi) < N(\rho) \le 2N(\pi)$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.eisenstein_exists_prime_norm_between` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-exists-prime-norm-between).
+Stated but not proved: `MetaMathlibExt.eisenstein_exists_prime_norm_between` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-exists-prime-norm-between).
 
 ## Schatunowsky's theorem
 
@@ -46,7 +46,7 @@ The numbers $a = 0$ and $a = 1$, for which no such $b$ exists, are excluded.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 1, quoting Schatunowsky.
 
-Stated but not proved: `MetaMathlibExt.nat_schatunowsky` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#nat-schatunowsky).
+Stated but not proved: `MetaMathlibExt.nat_schatunowsky` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#nat-schatunowsky).
 
 ## Iwata's generalization of Schatunowsky's theorem
 
@@ -59,7 +59,7 @@ factors of $b$ counted with multiplicity.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 2, quoting Iwata. `ℓ = 0` is included (trivially finite).
 
-Stated but not proved: `MetaMathlibExt.nat_iwata_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#nat-iwata-finite).
+Stated but not proved: `MetaMathlibExt.nat_iwata_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#nat-iwata-finite).
 
 ## Dalezman's Schatunowsky theorem for the Gaussian integers
 
@@ -73,7 +73,7 @@ norm at most $50$, and every element of $S$ of norm $50$ is an associate of $5 +
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 3, quoting Dalezman.
 
-Stated but not proved: `MetaMathlibExt.gaussianInt_schatunowsky_max_norm_five_add_five_i` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-int-schatunowsky-max-norm-five).
+Stated but not proved: `MetaMathlibExt.gaussianInt_schatunowsky_max_norm_five_add_five_i` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-int-schatunowsky-max-norm-five).
 
 ## Norm of the $n$-th prime
 
@@ -91,7 +91,7 @@ $N(\pi_0) = 1$ matches its convention $\pi_0 = 1$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Definition 1 and Section 4 (`N(π_n)`).
 
-Formalized by `MetaMathlibExt.quadPrimeNorm`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-prime-norm).
+Formalized by `MetaMathlibExt.quadPrimeNorm`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-prime-norm).
 
 ## The zeroth prime norm is one
 
@@ -102,7 +102,7 @@ $N(\pi_0)$ of $K$ equals $1$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Definition 1 (convention `π_0 = 1`).
 
-Formalized by `MetaMathlibExt.quadPrimeNorm_zero`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-prime-norm-zero).
+Formalized by `MetaMathlibExt.quadPrimeNorm_zero`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-prime-norm-zero).
 
 ## Norm of the $n$-th primorial
 
@@ -119,7 +119,7 @@ $N(\pi_n\#)$ is the norm of the paper's quadratic primorial $\pi_n\#$ (Definitio
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Definition 2 (`π_n#`).
 
-Formalized by `MetaMathlibExt.quadPrimorialNorm`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-primorial-norm).
+Formalized by `MetaMathlibExt.quadPrimorialNorm`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-primorial-norm).
 
 ## The zeroth primorial norm is one
 
@@ -131,7 +131,7 @@ $\mathcal{O}_K$ has norm at most $1$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Definition 2 (`π_0# = 1`).
 
-Formalized by `MetaMathlibExt.quadPrimorialNorm_zero`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-primorial-norm-zero).
+Formalized by `MetaMathlibExt.quadPrimorialNorm_zero`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-primorial-norm-zero).
 
 ## Schatunowsky set of a number field
 
@@ -150,7 +150,7 @@ of class number one it is the paper's set $Q_{m,\ell}$ (Equation (4)).
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Section 5, Equation (4).
 
-Formalized by `MetaMathlibExt.quadSchatunowskySet`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set).
+Formalized by `MetaMathlibExt.quadSchatunowskySet`, a definition declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set).
 
 ## One is not in the Schatunowsky set
 
@@ -162,7 +162,7 @@ set $Q_\ell(K)$, because the ideal it generates has norm $1$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Section 5, Equation (4).
 
-Formalized by `MetaMathlibExt.one_not_mem_quadSchatunowskySet`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#one-not-mem-quad-schatunowsky-set).
+Formalized by `MetaMathlibExt.one_not_mem_quadSchatunowskySet`, a theorem declared in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#one-not-mem-quad-schatunowsky-set).
 
 ## Unit groups of imaginary quadratic fields
 
@@ -174,7 +174,7 @@ $4$ if $d_K = -4$, of order $6$ if $d_K = -3$, and of order $2$ otherwise.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.imagQuadratic_units_isCyclic_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#imag-quadratic-units-is-cyclic-card).
+Stated but not proved: `MetaMathlibExt.imagQuadratic_units_isCyclic_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#imag-quadratic-units-is-cyclic-card).
 
 ## Ratios of consecutive prime ideal norms in an imaginary quadratic field tend to $1$
 
@@ -195,7 +195,7 @@ the paper's class-number-one assumption.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_quadPrimeNorm_succ_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#tendsto-quad-prime-norm-succ-div).
+Stated but not proved: `MetaMathlibExt.tendsto_quadPrimeNorm_succ_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#tendsto-quad-prime-norm-succ-div).
 
 ## Prime norm powers eventually fall below the quadratic primorial
 
@@ -210,7 +210,7 @@ for all $n \ge n_0$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.exists_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#exists-quad-prime-norm-pow-lt-quad-primo).
+Stated but not proved: `MetaMathlibExt.exists_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#exists-quad-prime-norm-pow-lt-quad-primo).
 
 ## Large elements of a Schatunowsky set lie in all small prime ideals
 
@@ -228,7 +228,7 @@ then $\alpha$ lies in every nonzero prime ideal of $\mathcal{O}_K$ of norm at mo
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.mem_prime_of_mem_quadSchatunowskySet` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#mem-prime-of-mem-quad-schatunowsky-set).
+Stated but not proved: `MetaMathlibExt.mem_prime_of_mem_quadSchatunowskySet` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#mem-prime-of-mem-quad-schatunowsky-set).
 
 ## Norm bound and finiteness of the Schatunowsky set
 
@@ -244,7 +244,7 @@ $Q_\ell(K)$, and $Q_\ell(K)$ is finite.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.quadSchatunowskySet_norm_bound_and_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set-norm-bound-and-fin).
+Stated but not proved: `MetaMathlibExt.quadSchatunowskySet_norm_bound_and_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set-norm-bound-and-fin).
 
 ## Decomposition of the Schatunowsky set
 
@@ -268,7 +268,7 @@ $5(1+i) = \pi_2\#$, is not divisible by $\pi_3\# = 15(1+i)$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.quadSchatunowskySet_eq_iUnion` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set-eq-i-union).
+Stated but not proved: `MetaMathlibExt.quadSchatunowskySet_eq_iUnion` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#quad-schatunowsky-set-eq-i-union).
 
 ## Explicit primorial thresholds for the Gaussian integers
 
@@ -284,7 +284,7 @@ $N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.gaussian_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-quad-prime-norm-pow-lt-quad-pri).
+Stated but not proved: `MetaMathlibExt.gaussian_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-quad-prime-norm-pow-lt-quad-pri).
 
 ## Explicit primorial thresholds for the Eisenstein integers
 
@@ -300,7 +300,7 @@ $N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.eisenstein_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-quad-prime-norm-pow-lt-quad-p).
+Stated but not proved: `MetaMathlibExt.eisenstein_quadPrimeNorm_pow_lt_quadPrimorialNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-quad-prime-norm-pow-lt-quad-p).
 
 ## The first three Schatunowsky sets of the Gaussian integers
 
@@ -325,7 +325,7 @@ with $\alpha$ an associate of $c\pi$ in case of equality.
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.gaussian_quadSchatunowskySet_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-quad-schatunowsky-set-eq).
+Stated but not proved: `MetaMathlibExt.gaussian_quadSchatunowskySet_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#gaussian-quad-schatunowsky-set-eq).
 
 ## The first three Schatunowsky sets of the Eisenstein integers
 
@@ -353,7 +353,7 @@ $N(\alpha) \le N(182\pi)$, with $\alpha$ an associate of $182\pi$ in case of equ
 
 - Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.eisenstein_quadSchatunowskySet_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-quad-schatunowsky-set-eq).
+Stated but not proved: `MetaMathlibExt.eisenstein_quadSchatunowskySet_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SchatunowskyImaginaryQuadraticWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html#eisenstein-quad-schatunowsky-set-eq).
 
 ## Depends on
 
@@ -362,4 +362,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Schatunowsky-type theorems](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/schatunowsky-type-theorems)

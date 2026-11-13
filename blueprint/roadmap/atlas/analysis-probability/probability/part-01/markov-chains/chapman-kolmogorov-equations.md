@@ -8,7 +8,7 @@ proof: formalized
 
 # Chapman–Kolmogorov equations
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html).
 
 ## Markov chain with respect to a filtration
 
@@ -24,7 +24,7 @@ $$\mathbb{E}_\mu[\mathbf{1}_B(X_{n+1}) \mid \mathcal{F}_n] = \kappa(X_n, B)$$
 $\mu$-almost everywhere. This is the standard form
 $P(X_{n+1} \in B \mid \mathcal{F}_n) = \kappa(X_n, B)$ of the Markov property.
 
-Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain`, a structure declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#is-markov-chain).
+Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain`, a structure declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#is-markov-chain).
 
 ## Chapman–Kolmogorov equations, conditional form
 
@@ -38,7 +38,7 @@ $$\mathbb{E}_\mu[\mathbf{1}_B(X_{m+n}) \mid \mathcal{F}_m] = \kappa^n(X_m, B)$$
 $\mu$-almost everywhere, where $\kappa^n$ is the $n$-fold composition of $\kappa$ (the identity
 kernel for $n = 0$). For $n = 1$ this is the defining one-step Markov property.
 
-Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain.condExp_indicator_eq`, a theorem declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-indicator-eq).
+Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain.condExp_indicator_eq`, a theorem declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-indicator-eq).
 
 ## Chapman–Kolmogorov equations, forward (law) form
 
@@ -49,7 +49,7 @@ $\kappa$ (the identity kernel for $n = 0$). Then for all $m, n \in \mathbb{N}$ t
 $X_{m+n}$ is the law $\nu_m$ of $X_m$ pushed forward through $\kappa^n$: for every measurable
 $B \subseteq S$, $\mu(X_{m+n} \in B) = \int_S \kappa^n(x, B) \, d\nu_m(x)$.
 
-Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain.map_eq_bind_pow`, a theorem declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#map-eq-bind-pow).
+Formalized by `MathlibExt.Probability.MarkovChainChapmanKolmogorov.IsMarkovChain.map_eq_bind_pow`, a theorem declared in [MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainChapmanKolmogorov.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#map-eq-bind-pow).
 
 ## Chapman–Kolmogorov equations for bounded measurable functions
 
@@ -59,7 +59,7 @@ expectation of `f (X (m + n))` given the past up to time `m` is the
 one-step function form; the general case follows by integrating the
 canonical conditional-indicator formula over each past-measurable set.
 
-Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.condExp_comp_eq_integral_pow`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainFunctionCK.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-comp-eq-integral-pow).
+Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.condExp_comp_eq_integral_pow`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainFunctionCK.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-comp-eq-integral-pow).
 
 ## One-step Chapman–Kolmogorov equation for functions
 
@@ -67,7 +67,7 @@ For a
 bounded measurable `f`, the conditional expectation of `f (X (k+1))`
 given `ℱ k` is the `κ`-integral of `f` evaluated at `X k`.
 
-Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.condExp_one_step_eq_integral`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainFunctionCK.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-one-step-eq-integral).
+Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.condExp_one_step_eq_integral`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainFunctionCK.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#cond-exp-one-step-eq-integral).
 
 ## Integrated Chapman–Kolmogorov equation for functions
 
@@ -75,7 +75,7 @@ The
 unconditional expectation of `f (X (m + n))` is the expectation of the
 `κ ^ n`-integral of `f` evaluated at `X m`.
 
-Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.integral_comp_eq`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MarkovChainFunctionCK.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#integral-comp-eq).
+Formalized by `MathlibExt.Probability.MarkovChainFunctionCK.IsMarkovChain.integral_comp_eq`, a theorem declared in [MathlibExt/Probability/MarkovChainFunctionCK.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MarkovChainFunctionCK.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html#integral-comp-eq).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chapman–Kolmogorov equations](https://deicyde.github.io/atlas-lean/roadmap/Probability/markov-chains/chapman-kolmogorov-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/markov-chains/chapman-kolmogorov-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/markov-chains/chapman-kolmogorov-equations)

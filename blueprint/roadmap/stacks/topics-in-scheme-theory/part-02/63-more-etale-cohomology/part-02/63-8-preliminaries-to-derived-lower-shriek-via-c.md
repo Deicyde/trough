@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.8 Preliminaries to derived lower shriek via compactifications
 
-Section 63.8 of the Stacks Project, [Tag 0F7A](https://stacks.math.columbia.edu/tag/0F7A). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.8 of the Stacks Project, [Tag 0F7A](https://stacks.math.columbia.edu/tag/0F7A). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F7B, a lemma
 
 [Tag 0F7B](https://stacks.math.columbia.edu/tag/0F7B) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isIso_properBaseChangeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeIsIso.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeIsIso.lean#L453).
+**`AlgebraicGeometry.SmallEtale.isIso_properBaseChangeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeIsIso.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeIsIso.lean#L453).
 
 > **[Stacks, Tag 0F7B].** Consider a commutative diagram of schemes of a big étale site
 > ```
@@ -48,7 +48,7 @@ theorem isIso_properBaseChangeMap_app (K : DerivedCategory (ModuleSheaf.{u, u, u
 
 [Tag 0F7C](https://stacks.math.columbia.edu/tag/0F7C) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_rectangle_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChange.lean, line 816](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChange.lean#L816).
+**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_rectangle_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChange.lean, line 816](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChange.lean#L816).
 
 > **[Stacks, Tag 0F7C]**, in the form the source states it. Consider a commutative diagram of
 > a big étale site
@@ -161,7 +161,7 @@ theorem properBaseChangeMap_rectangle_eq_comp (k : X' ⟶ X) (f' : X' ⟶ Y') (f
 
 [Tag 0F7D](https://stacks.math.columbia.edu/tag/0F7D) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_horizontal_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeHorizontal.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeHorizontal.lean#L317).
+**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_horizontal_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeHorizontal.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeHorizontal.lean#L317).
 
 > **[Stacks, Tag 0F7D].** Consider a commutative diagram of a big étale site
 > ```
@@ -254,7 +254,7 @@ theorem properBaseChangeMap_horizontal_paste (g' : X'' ⟶ X') (g : X' ⟶ X)
 
 [Tag 0F7E](https://stacks.math.columbia.edu/tag/0F7E) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_interchange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean#L92). The attribute's comment: “the two composites of the maps of the four squares”.
+**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_interchange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean#L92). The attribute's comment: “the two composites of the maps of the four squares”.
 
 > **[Stacks, Tag 0F7E], for the maps of the four squares.** Consider a commutative diagram of a
 > big étale site
@@ -367,7 +367,7 @@ theorem properBaseChangeMap_interchange
         ((etaleModuleLift B Λ (fShriekFunctor.{u, u} B k')).mapDerivedCategory.obj K))
 ```
 
-**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_rectangle_interchange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean#L205). The attribute's comment: “the two composites of the maps of the rectangles”.
+**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_rectangle_interchange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangeInterchange.lean#L205). The attribute's comment: “the two composites of the maps of the rectangles”.
 
 > **[Stacks, Tag 0F7E], for the maps of the rectangles.** In the situation of
 > `AlgebraicGeometry.SmallEtale.properBaseChangeMap_interchange`, consider moreover right derived
@@ -529,7 +529,7 @@ theorem properBaseChangeMap_rectangle_interchange
 
 [Tag 0F7F](https://stacks.math.columbia.edu/tag/0F7F) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangePullback.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangePullback.lean#L699).
+**`AlgebraicGeometry.SmallEtale.properBaseChangeMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangePullback.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperLowerShriekBaseChangePullback.lean#L699).
 
 > **[Stacks, Tag 0F7F]: the base change maps of Tag 0F7B are compatible with change of base.**
 > Let `b : Y₁ ⟶ Y` be a morphism of a big étale site and `k ≫ f = f' ≫ l` a commutative square
@@ -630,7 +630,7 @@ theorem properBaseChangeMap_baseChange {X' X Y' Y X'₁ X₁ Y'₁ Y₁ : B.Sche
 
 [Tag 0F7G](https://stacks.math.columbia.edu/tag/0F7G) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isIso_lowerShriekProperDirectImageMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/LowerShriekProperDirectImageComparison.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/LowerShriekProperDirectImageComparison.lean#L224).
+**`AlgebraicGeometry.SmallEtale.isIso_lowerShriekProperDirectImageMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/LowerShriekProperDirectImageComparison.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/LowerShriekProperDirectImageComparison.lean#L224).
 
 > **[Stacks, Tag 0F7G].** Consider a commutative diagram of schemes `f ≫ h = g` (that is,
 > `g = h ∘ f`, with `f : X ⟶ Y`, `h : Y ⟶ Z` and `g : X ⟶ Z`) with `f` and `g` locally
@@ -660,4 +660,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.8, Tag 0F7A](https://stacks.math.columbia.edu/tag/0F7A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

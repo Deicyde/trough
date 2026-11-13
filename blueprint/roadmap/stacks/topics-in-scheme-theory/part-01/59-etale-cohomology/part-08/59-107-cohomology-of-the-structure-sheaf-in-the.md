@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.107 Cohomology of the structure sheaf in the h topology
 
-Section 59.107 of the Stacks Project, [Tag 0EWS](https://stacks.math.columbia.edu/tag/0EWS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.107 of the Stacks Project, [Tag 0EWS](https://stacks.math.columbia.edu/tag/0EWS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EWT, a lemma
 
 [Tag 0EWT](https://stacks.math.columbia.edu/tag/0EWT) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHOver.essImage_singleFunctor_perfectionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/EssentialImage.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/EssentialImage.lean#L119).
+**`AlgebraicGeometry.BigHOver.essImage_singleFunctor_perfectionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/EssentialImage.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/EssentialImage.lean#L119).
 
 > **Stacks 0EWT.** Let `p` be a prime number and let `S` be a scheme over `𝔽_p`. Consider the
 > sheaf `𝒪^{perf} = colim_F 𝒪` on `(Sch/S)_{fppf}`. Then `𝒪^{perf}` is in the essential image of
@@ -51,7 +51,7 @@ theorem essImage_singleFunctor_perfectionModule
 
 [Tag 0EWU](https://stacks.math.columbia.edu/tag/0EWU) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHOver.hCohomologyIsoColimitFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/StructureSheafCohomology.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/StructureSheafCohomology.lean#L116).
+**`AlgebraicGeometry.BigHOver.hCohomologyIsoColimitFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/StructureSheafCohomology.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HStructureSheaf/StructureSheafCohomology.lean#L116).
 
 > Let `p` be a prime number and let `S` be a quasi-compact and quasi-separated scheme over
 > `𝔽_p`. Then
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.107, Tag 0EWS](https://stacks.math.columbia.edu/tag/0EWS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

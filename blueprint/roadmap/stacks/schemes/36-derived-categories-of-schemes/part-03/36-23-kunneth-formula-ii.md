@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.23 Künneth formula, II
 
-Section 36.23 of the Stacks Project, [Tag 0FLN](https://stacks.math.columbia.edu/tag/0FLN). 8 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.23 of the Stacks Project, [Tag 0FLN](https://stacks.math.columbia.edu/tag/0FLN). 8 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FLP, an equation
 
 [Tag 0FLP](https://stacks.math.columbia.edu/tag/0FLP) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedKunneth.kunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L199).
+**`Stacks.Cohomology.DerivedKunneth.kunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L199).
 
 > **The relative Künneth morphism**
 > `Ra_*K ⊗^L_{𝒪_S} Rb_*M ⟶ Rf_*(Lp^*K ⊗^L_{𝒪_W} Lq^*M)`, Equation 36.23.0.1: the adjoint
@@ -34,7 +34,7 @@ def kunnethMap
           ((Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback q).obj M))
 ```
 
-**`Stacks.Cohomology.DerivedKunneth.kunnethMap_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L237). The attribute's comment: “naturality in the complex on the first factor”.
+**`Stacks.Cohomology.DerivedKunneth.kunnethMap_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L237). The attribute's comment: “naturality in the complex on the first factor”.
 
 > The relative Künneth morphism is natural in the derived module on `X`.
 
@@ -54,7 +54,7 @@ theorem kunnethMap_natural_left
             ((Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback q).obj M))
 ```
 
-**`Stacks.Cohomology.DerivedKunneth.kunnethMap_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L259). The attribute's comment: “naturality in the complex on the second factor”.
+**`Stacks.Cohomology.DerivedKunneth.kunnethMap_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethMap.lean#L259). The attribute's comment: “naturality in the complex on the second factor”.
 
 > The relative Künneth morphism is natural in the derived module on `Y`.
 
@@ -78,7 +78,7 @@ theorem kunnethMap_natural_right
 
 [Tag 0G7V](https://stacks.math.columbia.edu/tag/0G7V) in the Stacks Project.
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L154). The attribute's comment: “the map, for arbitrary K ∈ D(𝒪\_X) and M ∈ D(𝒪\_Y) over an arbitrary base”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L154). The attribute's comment: “the map, for arbitrary K ∈ D(𝒪\_X) and M ∈ D(𝒪\_Y) over an arbitrary base”.
 
 > **The global Künneth map of Tag 0G7V, with no parameter.**
 >
@@ -98,7 +98,7 @@ def kunnethGlobalMapCanonical (K : DerivedCategory (SheafOfModules.{u} (structur
           ((derivedPullback q).obj M))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L173). The attribute's comment: “naturality in both complexes, with no parameter”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L173). The attribute's comment: “naturality in both complexes, with no parameter”.
 
 > **The global Künneth map with no parameter is natural in both complexes jointly.**
 
@@ -115,7 +115,7 @@ theorem kunnethGlobalMapCanonical_naturality
             ((derivedPullback p).map k ×ₘ (derivedPullback q).map m))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapSchemeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L205). The attribute's comment: “the map at X ×\_S Y, for arbitrary K and M over an arbitrary base scheme”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapSchemeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L205). The attribute's comment: “the map at X ×\_S Y, for arbitrary K and M over an arbitrary base scheme”.
 
 > **The global Künneth map of Tag 0G7V at the fibre product of two schemes, with no
 > parameter.**  For schemes `a : X ⟶ S` and `b : Y ⟶ S` over a base and `A = Γ(S, 𝒪_S)`, the
@@ -138,7 +138,7 @@ def kunnethGlobalMapSchemeCanonical (K : DerivedCategory X.Modules)
           ((derivedPullback (pullback.snd a b).toLRSHom.toShHom).obj M))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapSchemeCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L226). The attribute's comment: “naturality at the fibre product of two schemes, with no parameter”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethGlobalMapSchemeCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapCanonical.lean#L226). The attribute's comment: “naturality at the fibre product of two schemes, with no parameter”.
 
 > **The global Künneth map at the fibre product of two schemes, with no parameter, is natural in
 > both complexes.**
@@ -162,7 +162,7 @@ theorem kunnethGlobalMapSchemeCanonical_naturality {K K' : DerivedCategory X.Mod
 
 [Tag 0FLQ](https://stacks.math.columbia.edu/tag/0FLQ) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethMapScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean#L85). The attribute's comment: “the relative conclusion, at the fibre product of two schemes, with no hypothesis beyond the tag's own”.
+**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethMapScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean#L88). The attribute's comment: “first statement: for qcqs a and b with X and Y Tor independent over S, the relative Künneth map (0FLP) at X ×\_S Y is an isomorphism for K ∈ D\_QCoh(𝒪\_X) and M ∈ D\_QCoh(𝒪\_Y)”.
 
 > **[Stacks, Tag 0FLQ], the relative conclusion, with no hypothesis beyond the tag's own.**
 > Let `a : X ⟶ S` and `b : Y ⟶ S` be quasi-compact and quasi-separated morphisms of schemes with
@@ -192,7 +192,38 @@ theorem isIso_kunnethMapScheme
       (Stacks.Cohomology.GlobalKunneth.toShHom_pullback_condition a b) K M)
 ```
 
-**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethGlobalMapScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethGlobalCupProduct.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethGlobalCupProduct.lean#L130). The attribute's comment: “the global conclusion, over an affine base, at the fibre product of two schemes, for the canonical global cup product of Section 0FKU and with no hypothesis beyond the tag's own”.
+**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethMapScheme_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethDischarged.lean#L126). The attribute's comment: “the relative conclusion, at an arbitrary cartesian square of schemes”.
+
+> **[Stacks, Tag 0FLQ], the relative conclusion, at an arbitrary cartesian square of
+> schemes.**  Let `a : X ⟶ S` and `b : Y ⟶ S` be quasi-compact and quasi-separated morphisms of
+> schemes with `X` and `Y` Tor independent over `S`, let `p : W ⟶ X` and `q : W ⟶ Y` make `W` a
+> fibre product of `a` and `b`, and let `K ∈ D_QCoh(𝒪_X)` and `M ∈ D_QCoh(𝒪_Y)`.  Then the
+> relative Künneth morphism of [Stacks, Tag 0FLP]
+>
+> `Ra_*K ⊗^𝐋_{𝒪_S} Rb_*M ⟶ R(p ≫ a)_*(Lp^*K ⊗^𝐋_{𝒪_W} Lq^*M)`
+>
+> is an isomorphism.
+>
+> The three comparisons of
+> `Stacks.Cohomology.DerivedKunneth.isIso_kunnethMap_of_projectionFormulas_of_baseChange` are
+> proved at the given square: the projection formula at `a` by [Stacks, Tag 08EU], the base change
+> leg by [Stacks, Tag 08IB] at the flipped square, and the interchanged-order projection formula at
+> `p` by [Stacks, Tag 08EU] at `p` (quasi-compact and quasi-separated as a base change of `b`)
+> conjugated by the symmetries of the derived tensor product.
+
+```lean
+theorem isIso_kunnethMapScheme_of_isPullback {W : Scheme.{u}} (p : W ⟶ X) (q : W ⟶ Y)
+    (hW : IsPullback p q a b)
+    [QuasiCompact a] [QuasiSeparated a] [QuasiCompact b] [QuasiSeparated b]
+    (hTor : TorIndependent a b)
+    (K : DerivedCategory X.Modules) (M : DerivedCategory Y.Modules)
+    (hK : IsQCohAll K) (hM : IsQCohAll M) :
+    IsIso (kunnethMap a.toLRSHom.toShHom b.toLRSHom.toShHom
+      p.toLRSHom.toShHom q.toLRSHom.toShHom (p ≫ a).toLRSHom.toShHom rfl
+      (congrArg (fun g : W ⟶ S => g.toLRSHom.toShHom) hW.w.symm) K M)
+```
+
+**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethGlobalMapScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethGlobalCupProduct.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/KunnethGlobalCupProduct.lean#L130). The attribute's comment: “second statement: under the same hypotheses with S affine, the global Künneth map (0G7V) RΓ(X, K) ⊗^L\_A RΓ(Y, M) → RΓ(X ×\_S Y, Lp^*K ⊗^L Lq^*M), built from the cup product of Section 0FKU, is an isomorphism”.
 
 > **[Stacks, Tag 0FLQ], the global conclusion over an affine base, with no hypothesis beyond
 > the tag's own.**
@@ -231,70 +262,11 @@ theorem isIso_kunnethGlobalMapScheme
           S.toRingedSpace)) K M)
 ```
 
-**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethMap_of_projectionFormulas_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphism.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphism.lean#L277). The attribute's comment: “the relative isomorphism, granted the projection formula of Tag 08EU for a and for p and the base-change comparison of Tag 08IB for the square, carried as the explicit hypotheses hproj₁, hproj₂ and hbase, together with the Stacks 079U/0D5S monoidality coherence hcoh; what is proved is that the Künneth map of Tag 0FLP is the composite of those three, the verification the source omits”.
-
-> **The first conclusion of Tag 0FLQ, granted its three cited inputs.**
->
-> For `a : X ⟶ S`, `b : Y ⟶ S`, `p : W ⟶ X` and `q : W ⟶ Y` with `q ≫ b = p ≫ a`, the relative
-> Künneth morphism of Tag 0FLP at `f = p ≫ a`,
->
-> `Ra_*K ⊗^𝐋_{𝒪_S} Rb_*M ⟶ Rf_*(Lp^*K ⊗^𝐋_{𝒪_W} Lq^*M)`,
->
-> is an isomorphism as soon as the three comparisons the source's first proof chains together are.
-> In order they are: the projection formula of Tag 08EU for `a` at `(K, Rb_*M)`; the base-change
-> comparison `La^*Rb_*M ⟶ Rp_*Lq^*M` of Tag 08IB for the square; and the projection formula of
-> Tag 08EU for `p` at `(K, Lq^*M)`, read with the two tensor factors interchanged.  What the proof
-> supplies is the identification of the composite of those three with the Künneth map, which the
-> source states and omits.
-
-```lean
-theorem isIso_kunnethMap_of_projectionFormulas_of_baseChange
-    (K : DerivedCategory (SheafOfModules.{u} (structureSheafRing X)))
-    (M : DerivedCategory (SheafOfModules.{u} (structureSheafRing Y)))
-    (hcoh : PullbackTensorComparisonComp a p
-      ((derivedPushforward a).obj K) ((derivedPushforward b).obj M))
-    (hproj₁ : IsIso (projectionFormulaMap a K ((derivedPushforward b).obj M)))
-    (hbase : IsIso (kunnethBaseChangeLeg a b p q hq M))
-    (hproj₂ : IsIso (adjunctionTensorMapRight (derivedAdjunction p)
-      (Functor.uncurry.obj (derivedTensorProductFunctor X.sheaf))
-      (Functor.uncurry.obj (derivedTensorProductFunctor W.sheaf))
-      (pullbackTensorComparison p) K ((derivedPullback q).obj M))) :
-    IsIso (kunnethMap a b p q (p ≫ a) rfl hq K M)
-```
-
-**`Stacks.Cohomology.DerivedKunneth.isIso_kunnethGlobalMap_of_projectionFormulas_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphism.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphism.lean#L314). The attribute's comment: “the global isomorphism over an affine base, granted the same three inputs as the relative one together with the invertibility of the A-linear global cup product on the base, carried as the explicit hypotheses hproj₁, hproj₂, hbase and hκ”.
-
-> **The second conclusion of Tag 0FLQ, granted the same three inputs.**  Over a base whose
-> `A`-linear global cup product is invertible at `(Ra_*K, Rb_*M)`, which is what affineness of the
-> base supplies, the global Künneth morphism of Tag 0G7V
->
-> `RΓ(X, K) ⊗^𝐋_A RΓ(Y, M) ⟶ RΓ(W, Lp^*K ⊗^𝐋_{𝒪_W} Lq^*M)`
->
-> is an isomorphism.  The source deduces this from the relative statement by applying `RΓ(S, -)` to
-> its source and target.
-
-```lean
-theorem isIso_kunnethGlobalMap_of_projectionFormulas_of_baseChange
-    (κ : Stacks.Cohomology.GlobalKunneth.GlobalCupProduct S)
-    (K : DerivedCategory (SheafOfModules.{u} (structureSheafRing X)))
-    (M : DerivedCategory (SheafOfModules.{u} (structureSheafRing Y)))
-    (hκ : IsIso (κ.app ((derivedPushforward a).obj K, (derivedPushforward b).obj M)))
-    (hcoh : PullbackTensorComparisonComp a p
-      ((derivedPushforward a).obj K) ((derivedPushforward b).obj M))
-    (hproj₁ : IsIso (projectionFormulaMap a K ((derivedPushforward b).obj M)))
-    (hbase : IsIso (kunnethBaseChangeLeg a b p q hq M))
-    (hproj₂ : IsIso (adjunctionTensorMapRight (derivedAdjunction p)
-      (Functor.uncurry.obj (derivedTensorProductFunctor X.sheaf))
-      (Functor.uncurry.obj (derivedTensorProductFunctor W.sheaf))
-      (pullbackTensorComparison p) K ((derivedPullback q).obj M))) :
-    IsIso (Stacks.Cohomology.GlobalKunneth.kunnethGlobalMap a b p q (p ≫ a) rfl hq κ K M)
-```
-
 ## Tag 0FML, a lemma
 
 [Tag 0FML](https://stacks.math.columbia.edu/tag/0FML) in the Stacks Project.
 
-**`Stacks.RelativeComplexPushforward.isIso_projectionFormulaMap_relativeComplex_of_isLocallyBounded_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L880). The attribute's comment: “conclusion (5), with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes a : X ⟶ S, a LOCALLY BOUNDED complex F^• of a^\{-1}O\_S-modules each of whose terms carries a compatible quasi-coherent O\_X-module structure, and K in D\_QCoh(O\_S), the Tag 0B53 map Ra\_*F^• ⊗ᴸ\_\{O\_S} K ⟶ Ra\_*(F^• ⊗ᴸ\_\{a^\{-1}O\_S} L(a')^*K) is invertible. One difference from the source's phrasing, not a weakening: flatness of the terms, which the source assumes, is not needed for this conclusion and is not assumed. The two tensor factors are in the order the Tag 0B53 map produces them, which is the opposite of the source's”.
+**`Stacks.RelativeComplexPushforward.isIso_projectionFormulaMap_relativeComplex_of_isLocallyBounded_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L880). The attribute's comment: “conclusion (5), with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes a : X ⟶ S, a LOCALLY BOUNDED complex F^• of a^\{-1}O\_S-modules each of whose terms carries a compatible quasi-coherent O\_X-module structure, and K in D\_QCoh(O\_S), the Tag 0B53 map Ra\_*F^• ⊗ᴸ\_\{O\_S} K ⟶ Ra\_*(F^• ⊗ᴸ\_\{a^\{-1}O\_S} L(a')^*K) is invertible. One difference from the source's phrasing, not a weakening: flatness of the terms, which the source assumes, is not needed for this conclusion and is not assumed. The two tensor factors are in the order the Tag 0B53 map produces them, which is the opposite of the source's”.
 
 > **Stacks Project, Tag 0FML, conclusion (5)**, with no hypothesis beyond the tag's own.  For
 > `f : X ⟶ S` quasi-compact and quasi-separated, `K` an object of `D_QCoh(𝒪_S)` and `F` a *locally
@@ -318,7 +290,7 @@ theorem isIso_projectionFormulaMap_relativeComplex_of_isLocallyBounded_of_isQuas
       (DerivedCategory.Q.obj F) K)
 ```
 
-**`Stacks.RelativeComplexPushforward.relativeComplexProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 904](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L904). The attribute's comment: “conclusion (5) read as an isomorphism, with no hypothesis beyond the tag's own: Ra\_*F^• ⊗ᴸ\_\{O\_S} K is Ra\_*(F^• ⊗ᴸ\_\{a^\{-1}O\_S} a^\{-1}K) for K in D\_QCoh(O\_S) and F^• LOCALLY BOUNDED. The same single difference from the source's phrasing as in the invertibility form, not a weakening: flatness of the terms is not needed for this conclusion and is not assumed”.
+**`Stacks.RelativeComplexPushforward.relativeComplexProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 904](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L904). The attribute's comment: “conclusion (5) read as an isomorphism, with no hypothesis beyond the tag's own: Ra\_*F^• ⊗ᴸ\_\{O\_S} K is Ra\_*(F^• ⊗ᴸ\_\{a^\{-1}O\_S} a^\{-1}K) for K in D\_QCoh(O\_S) and F^• LOCALLY BOUNDED. The same single difference from the source's phrasing as in the invertibility form, not a weakening: flatness of the terms is not needed for this conclusion and is not assumed”.
 
 > **Stacks Project, Tag 0FML, conclusion (5)** read as an isomorphism and with no hypothesis
 > beyond the tag's own,
@@ -346,7 +318,7 @@ def relativeComplexProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicoherent [Quas
           ((derivedPullback (inverseImageBaseProjection f)).obj K))
 ```
 
-**`Stacks.RelativeComplexPushforward.relativeComplexOrdinaryProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L1108). The attribute's comment: “conclusion (4), with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes a : X ⟶ S, a LOCALLY BOUNDED complex F^• of a^\{-1}O\_S-modules each of whose terms is flat over a^\{-1}O\_S and carries a compatible quasi-coherent O\_X-module structure, and an ORDINARY quasi-coherent O\_S-module G, Ra\_*F^• ⊗ᴸ\_\{O\_S} G is Ra\_*(F^• ⊗\_\{a^\{-1}O\_S} a^\{-1}G) with the ORDINARY tensor product on the right. The two tensor factors are in the order the Tag 0B53 map produces them, which is the opposite of the source's”.
+**`Stacks.RelativeComplexPushforward.relativeComplexOrdinaryProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexProjectionFormula.lean#L1108). The attribute's comment: “conclusion (4), with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes a : X ⟶ S, a LOCALLY BOUNDED complex F^• of a^\{-1}O\_S-modules each of whose terms is flat over a^\{-1}O\_S and carries a compatible quasi-coherent O\_X-module structure, and an ORDINARY quasi-coherent O\_S-module G, Ra\_*F^• ⊗ᴸ\_\{O\_S} G is Ra\_*(F^• ⊗\_\{a^\{-1}O\_S} a^\{-1}G) with the ORDINARY tensor product on the right. The two tensor factors are in the order the Tag 0B53 map produces them, which is the opposite of the source's”.
 
 > **Stacks Project, Tag 0FML, conclusion (4)**, with no hypothesis beyond the tag's own.  For
 > `f : X ⟶ S` quasi-compact and quasi-separated, `G` a *quasi-coherent* `𝒪_S`-module and `F` a
@@ -382,7 +354,7 @@ def relativeComplexOrdinaryProjectionFormulaIsoOfIsLocallyBoundedOfIsQuasicohere
                 (inverseImageBaseProjection f)).obj G))))
 ```
 
-**`Stacks.RelativeComplexPushforward.relativeDerivedPushforward_locallyBounded_qcoh_torDimension_projectionFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardLocal.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardLocal.lean#L595). The attribute's comment: “all five conclusions, under exactly the source's hypotheses: a : X ⟶ S quasi-compact and quasi-separated, F^• a LOCALLY BOUNDED complex of a^\{-1}O\_S-modules with flat terms each carrying a compatible quasi-coherent O\_X-module structure (differentials not O\_X-linear); Ra\_* is the unbounded derived pushforward along (X, a^\{-1}O\_S) ⟶ (S, O\_S). (1) every point of S has an open neighbourhood U with (Ra\_*F^•)|\_U cohomologically bounded; (2) Ra\_*F^• in D\_QCoh(O\_S); (3) LocallyHasFiniteTorDimension at the derived tensor product of Tag 06YU; (4) an isomorphism Ra\_*F^• ⊗ᴸ G ≅ Ra\_*(F^• ⊗ a^\{-1}G) for G quasi-coherent; (5) invertibility of the Tag 0B53 map for K in D\_QCoh(O\_S). Tensor factors in (4), (5) are in the order the Tag 0B53 map produces them, the opposite of the source's”.
+**`Stacks.RelativeComplexPushforward.relativeDerivedPushforward_locallyBounded_qcoh_torDimension_projectionFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardLocal.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardLocal.lean#L595). The attribute's comment: “all five conclusions, under exactly the source's hypotheses: a : X ⟶ S quasi-compact and quasi-separated, F^• a LOCALLY BOUNDED complex of a^\{-1}O\_S-modules with flat terms each carrying a compatible quasi-coherent O\_X-module structure (differentials not O\_X-linear); Ra\_* is the unbounded derived pushforward along (X, a^\{-1}O\_S) ⟶ (S, O\_S). (1) every point of S has an open neighbourhood U with (Ra\_*F^•)|\_U cohomologically bounded; (2) Ra\_*F^• in D\_QCoh(O\_S); (3) LocallyHasFiniteTorDimension at the derived tensor product of Tag 06YU; (4) an isomorphism Ra\_*F^• ⊗ᴸ G ≅ Ra\_*(F^• ⊗ a^\{-1}G) for G quasi-coherent; (5) invertibility of the Tag 0B53 map for K in D\_QCoh(O\_S). Tensor factors in (4), (5) are in the order the Tag 0B53 map produces them, the opposite of the source's”.
 
 > **Stacks Project, Tag 0FML.** Let `a : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes and `F^•` a locally bounded complex of `a⁻¹𝒪_S`-modules, each term `F^n` a
@@ -445,7 +417,7 @@ theorem relativeDerivedPushforward_locallyBounded_qcoh_torDimension_projectionFo
         (inverseImageBaseProjection f) (DerivedCategory.Q.obj F) K))
 ```
 
-**`Stacks.RelativeComplexPushforward.isQuasicoherent_homology_relativeDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean#L89). The attribute's comment: “conclusion (2), that Ra\_* of the complex lies in D\_QCoh, degreewise, for a complex bounded below with an explicit bound rather than merely locally bounded”.
+**`Stacks.RelativeComplexPushforward.isQuasicoherent_homology_relativeDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean#L89). The attribute's comment: “conclusion (2), that Ra\_* of the complex lies in D\_QCoh, degreewise, for a complex bounded below with an explicit bound rather than merely locally bounded”.
 
 > **Stacks Project, Tag 0FML, conclusion (2).** Let `f : X ⟶ S` be quasi-compact and
 > quasi-separated and let `K` be a complex of `f^{-1}𝒪_S`-modules, strictly bounded below, whose
@@ -461,7 +433,7 @@ theorem isQuasicoherent_homology_relativeDerivedPushforward [QuasiCompact f] [Qu
       (relativeDerivedPushforward f n K)).IsQuasicoherent
 ```
 
-**`Stacks.RelativeComplexPushforward.derivedCategoryB_relativeDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean#L127). The attribute's comment: “conclusion (2), that Ra\_* of the complex lies in D\_QCoh, as a membership, for a complex bounded below with an explicit bound rather than merely locally bounded”.
+**`Stacks.RelativeComplexPushforward.derivedCategoryB_relativeDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeComplexPushforwardQcoh.lean#L127). The attribute's comment: “conclusion (2), that Ra\_* of the complex lies in D\_QCoh, as a membership, for a complex bounded below with an explicit bound rather than merely locally bounded”.
 
 > **Stacks Project, Tag 0FML, conclusion (2)**, in the membership form: the object property on
 > `D(𝒪_S)` cutting out the complexes with quasi-coherent cohomology holds of `Rf_*K`. The complex
@@ -481,7 +453,7 @@ theorem derivedCategoryB_relativeDerivedPushforward [QuasiCompact f] [QuasiSepar
 
 [Tag 0FMQ](https://stacks.math.columbia.edu/tag/0FMQ) in the Stacks Project.
 
-**`AlgebraicGeometry.kFlat_totalCechComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/KunnethTotalCech.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/KunnethTotalCech.lean#L1082).
+**`AlgebraicGeometry.kFlat_totalCechComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/KunnethTotalCech.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/KunnethTotalCech.lean#L1082).
 
 > **Stacks 0FMQ.** Let `f : X ⟶ S` be a morphism of schemes with `S` affine and
 > `A = Γ(S, 𝒪_S)`, and let `U : I → X.Opens` be a finite family of opens all of whose
@@ -505,7 +477,7 @@ public theorem kFlat_totalCechComplex {X S : Scheme.{u}} [IsAffine S] (f : X ⟶
 
 [Tag 0G49](https://stacks.math.columbia.edu/tag/0G49) in the Stacks Project.
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L192). The attribute's comment: “the map, at the A-linear global cup product `globalCupProductCanonical` of Section 0FKU on the base”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L192). The attribute's comment: “the map, at the A-linear global cup product `globalCupProductCanonical` of Section 0FKU on the base”.
 
 > **The global Künneth map for two module sheaves at the canonical global cup product.**
 >
@@ -523,7 +495,7 @@ def kunnethMapOfSheavesCanonical (F : Modules X.sheaf) (G : Modules Y.sheaf) :
         (singleD (sheafTensorObj ((modulePullback p).obj F) ((modulePullback q).obj G)))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical_eq_kunnethGlobalMapCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L220). The attribute's comment: “the map is the derived map at the sheaves in degree zero: both sides are at the canonical global cup product, the right-hand side being `kunnethGlobalMapCanonical` of Tag 0G7V”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical_eq_kunnethGlobalMapCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L220). The attribute's comment: “the map is the derived map at the sheaves in degree zero: both sides are at the canonical global cup product, the right-hand side being `kunnethGlobalMapCanonical` of Tag 0G7V”.
 
 > The Künneth map for two module sheaves at the canonical global cup product is the derived
 > Künneth map `kunnethGlobalMapCanonical` at the two sheaves placed in degree zero, followed by
@@ -538,7 +510,7 @@ theorem kunnethMapOfSheavesCanonical_eq_kunnethGlobalMapCanonical (F : Modules X
         (sectionsOverBase f).map (externalTensorComparison p q F G)
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical_naturality_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L230). The attribute's comment: “naturality inherited from the derived map, at the canonical global cup product”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesCanonical_naturality_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L230). The attribute's comment: “naturality inherited from the derived map, at the canonical global cup product”.
 
 > The derived Künneth map `kunnethGlobalMapCanonical` at sheaves placed in degree zero, the
 > first factor of `kunnethMapOfSheavesCanonical`, is natural in the two sheaves `ℱ` and `𝒢`.
@@ -561,7 +533,7 @@ theorem kunnethMapOfSheavesCanonical_naturality_derived
                 ((CochainComplex.singleFunctor (Modules Y.sheaf) 0).map ψ))))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesSchemeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L265). The attribute's comment: “the map at X ×\_S Y, at the global cup product `globalCupProductCanonical` on the base”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesSchemeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L265). The attribute's comment: “the map at X ×\_S Y, at the global cup product `globalCupProductCanonical` on the base”.
 
 > **The global Künneth map at the fibre product of two schemes, at the canonical global cup
 > product.** For schemes `a : X ⟶ S` and `b : Y ⟶ S` over a base, `A = Γ(S, 𝒪_S)`, an
@@ -581,7 +553,7 @@ def kunnethMapOfSheavesSchemeCanonical (F : X.Modules) (G : Y.Modules) :
         (singleD (externalTensorProduct a b F G))
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesSchemeCanonical_eq_kunnethGlobalMapSchemeCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L286). The attribute's comment: “the map at the fibre product is the derived map at the sheaves in degree zero: both sides are at the canonical global cup product, the right-hand side being `kunnethGlobalMapSchemeCanonical` of Tag 0G7V”.
+**`Stacks.Cohomology.GlobalKunneth.kunnethMapOfSheavesSchemeCanonical_eq_kunnethGlobalMapSchemeCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L286). The attribute's comment: “the map at the fibre product is the derived map at the sheaves in degree zero: both sides are at the canonical global cup product, the right-hand side being `kunnethGlobalMapSchemeCanonical` of Tag 0G7V”.
 
 > At the fibre product of two schemes, the Künneth map for two module sheaves at the canonical
 > global cup product is the derived Künneth map `kunnethGlobalMapSchemeCanonical` at the two sheaves
@@ -601,7 +573,7 @@ theorem kunnethMapOfSheavesSchemeCanonical_eq_kunnethGlobalMapSchemeCanonical
 
 [Tag 0FU4](https://stacks.math.columbia.edu/tag/0FU4) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatKunneth.isIso_kunnethMapOfSheavesSchemeCanonical_of_affineDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/FlatKunneth/KunnethFlatSheaves.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/FlatKunneth/KunnethFlatSheaves.lean#L257).
+**`AlgebraicGeometry.FlatKunneth.isIso_kunnethMapOfSheavesSchemeCanonical_of_affineDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/FlatKunneth/KunnethFlatSheaves.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/FlatKunneth/KunnethFlatSheaves.lean#L257).
 
 > **[Stacks, Tag 0FU4].**  Let `a : X ⟶ S` and `b : Y ⟶ S` be morphisms of schemes with `S`
 > affine, let `A = Γ(S, 𝒪_S)`, and let `p`, `q` be the projections of `X ×_S Y`.  If `ℱ` on `X` and
@@ -630,7 +602,7 @@ theorem isIso_kunnethMapOfSheavesSchemeCanonical_of_affineDiagonal [IsAffine S] 
     IsIso (kunnethMapOfSheavesSchemeCanonical a b F G)
 ```
 
-**`Stacks.Cohomology.GlobalKunneth.isIso_kunnethMapOfSheavesScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphismOfSheaves.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphismOfSheaves.lean#L239). The attribute's comment: “the isomorphism at X ×\_S Y; three inputs are carried, so the geometric hypotheses are not consumed: hκ, invertibility of the global cup product on the affine base, which no bare GlobalCupProduct has; hrel, Tag 0FLQ at the sheaves in degree zero; hext, the 06YU comparison, which the tag's relative S-flatness cannot discharge in this library”.
+**`Stacks.Cohomology.GlobalKunneth.isIso_kunnethMapOfSheavesScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphismOfSheaves.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/KunnethIsomorphismOfSheaves.lean#L239). The attribute's comment: “the isomorphism at X ×\_S Y; three inputs are carried, so the geometric hypotheses are not consumed: hκ, invertibility of the global cup product on the affine base, which no bare GlobalCupProduct has; hrel, Tag 0FLQ at the sheaves in degree zero; hext, the 06YU comparison, which the tag's relative S-flatness cannot discharge in this library”.
 
 > **[Stacks, Tag 0FU4].**  Let `a : X ⟶ S` and `b : Y ⟶ S` be morphisms of schemes with `S`
 > affine, let `A = Γ(S, 𝒪_S)` and let `p`, `q` be the projections of `W = X ×_S Y`.  If `X` and `Y`
@@ -671,7 +643,7 @@ theorem isIso_kunnethMapOfSheavesScheme [IsAffine S] [CompactSpace X] [CompactSp
 
 [Tag 0G7W](https://stacks.math.columbia.edu/tag/0G7W) in the Stacks Project.
 
-**`Stacks.Cohomology.KunnethCupWithClass.kunnethGlobalMapSchemeCanonical_cupWithClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethCupWithClassCanonical.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethCupWithClassCanonical.lean#L481).
+**`Stacks.Cohomology.KunnethCupWithClass.kunnethGlobalMapSchemeCanonical_cupWithClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethCupWithClassCanonical.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethCupWithClassCanonical.lean#L481).
 
 > **Remark 0G7W.**  Let `a : X ⟶ S` and `b : Y ⟶ S` be morphisms of schemes, let
 > `p : X ×_S Y ⟶ X` and `q : X ×_S Y ⟶ Y` be the projections, and set `A = Γ(S, 𝒪_S)`.  Let
@@ -745,7 +717,7 @@ theorem kunnethGlobalMapSchemeCanonical_cupWithClass
                     (pullback.fst a b ≫ a).toLRSHom.toShHom rfl 𝒢)
 ```
 
-**`Stacks.Cohomology.DerivedGlobalCupProduct.kunnethOverBase_cupWithClassOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapAndCupProduct.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapAndCupProduct.lean#L562). The attribute's comment: “the commutativity of the square, for A-linear cup products built from a one-point comparison on X and on W (the parameters `κX`, `κW`, as for Section 0FKU in this development), for the pullback map `π` on derived global sections with its compatibility `hπ` with the two cup products (Cohomology, Lemma 0FP6, which this development cannot transport onto them), and for associativity constraints `aA`, `aB` with their naturality `haA`, `haB` and the compatibility `hα` of the comparison with them, all universally quantified; the source's suppressed identifications p^*(G ⊗ F) = p^*G ⊗ p^*F of Tag 079U and the rebracketing are the last two arrows of the right-hand route”.
+**`Stacks.Cohomology.DerivedGlobalCupProduct.kunnethOverBase_cupWithClassOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapAndCupProduct.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalKunnethMapAndCupProduct.lean#L561). The attribute's comment: “the commutativity of the square, for A-linear cup products built from a one-point comparison on X and on W (the parameters `κX`, `κW`, as for Section 0FKU in this development), for the pullback map `π` on derived global sections with its compatibility `hπ` with the two cup products (Cohomology, Lemma 0FP6, which this development cannot transport onto them), and for associativity constraints `aA`, `aB` with their naturality `haA`, `haB` and the compatibility `hα` of the comparison with them, all universally quantified; the source's suppressed identifications p^*(G ⊗ F) = p^*G ⊗ p^*F of Tag 079U and the rebracketing are the last two arrows of the right-hand route”.
 
 > **Remark 0G7W.**  Let `a : X ⟶ S` and `b : Y ⟶ S` be spaces over a base, let `p : W ⟶ X`,
 > `q : W ⟶ Y` and `f : W ⟶ S` with `p ≫ a = f = q ≫ b`, and set `A = Γ(S, 𝒪_S)`.  For
@@ -830,4 +802,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.23, Tag 0FLN](https://stacks.math.columbia.edu/tag/0FLN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

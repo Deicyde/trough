@@ -7,7 +7,7 @@ statement: formalized
 
 # Farey fractions with a given numerator
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html).
 
 ## Number of Farey fractions with a given numerator
 
@@ -15,7 +15,7 @@ For natural numbers $n$ and $h$, $N_n(h)$
 is the number of integers $b$ with $h \le b \le n$ and $\gcd(h, b) = 1$; for $h \ge 1$ this is
 the number of fractions with numerator $h$ in the Farey sequence of order $n$.
 
-Formalized by `MathlibExt.NumberTheory.FareyNumeratorWanted.fareyNumeratorCount`, a definition declared in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-numerator-count).
+Formalized by `MathlibExt.NumberTheory.FareyNumeratorWanted.fareyNumeratorCount`, a definition declared in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-numerator-count).
 
 ## Farey fractions with equal numerators between consecutive unit fractions
 
@@ -33,7 +33,7 @@ $(1/k, 2/(2k-1))$.
 
 - Rogelio Tomás García, "Farey Fractions with Equal Numerators and the Rank of Unit Fractions", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FareyNumeratorWanted.farey_between_count` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-between-count).
+Stated but not proved: `MathlibExt.NumberTheory.FareyNumeratorWanted.farey_between_count` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-between-count).
 
 ## Formula for the number of Farey fractions with a given numerator
 
@@ -55,7 +55,7 @@ $1$ if $h = 1$ and $0$ otherwise.
 
 - Rogelio Tomás García, "Farey Fractions with Equal Numerators and the Rank of Unit Fractions", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.FareyNumeratorWanted.fareyNumeratorCount_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-numerator-count-formula).
+Stated but not proved: `MathlibExt.NumberTheory.FareyNumeratorWanted.fareyNumeratorCount_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyNumeratorWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyNumeratorWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html#farey-numerator-count-formula).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Farey fractions with a given numerator](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-fractions-with-a-given-numerator)

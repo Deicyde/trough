@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.103 Comparing h and étale topologies
 
-Section 59.103 of the Stacks Project, [Tag 0EW7](https://stacks.math.columbia.edu/tag/0EW7). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.103 of the Stacks Project, [Tag 0EW7](https://stacks.math.columbia.edu/tag/0EW7). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EW8, a lemma
 
 [Tag 0EW8](https://stacks.math.columbia.edu/tag/0EW8) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleInverseImage_isZariskiSheaf_h`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparison.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparison.lean#L107). The attribute's comment: “the Zariski half of the h sheaf condition, condition (1) of Stacks 0EU5; descent along a proper surjective morphism of finite presentation is not proved”.
+**`AlgebraicGeometry.smallEtaleInverseImage_isZariskiSheaf_h`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparison.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparison.lean#L107). The attribute's comment: “the Zariski half of the h sheaf condition, condition (1) of Stacks 0EU5; descent along a proper surjective morphism of finite presentation is not proved”.
 
 > **Stacks 0EW8, the Zariski half of the h sheaf condition.** For a sheaf of sets `F` on the
 > small étale site of `S`, the presheaf underlying `π_S⁻¹F` — by the sections formula the rule
@@ -32,7 +32,7 @@ public theorem smallEtaleInverseImage_isZariskiSheaf_h :
         F).obj
 ```
 
-**`AlgebraicGeometry.smallEtaleInverseImage_isSheaf_h_and_isIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparisonProperBaseChange.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparisonProperBaseChange.lean#L86).
+**`AlgebraicGeometry.smallEtaleInverseImage_isSheaf_h_and_isIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparisonProperBaseChange.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopologyEtaleComparisonProperBaseChange.lean#L86).
 
 > **Stacks 0EW8.** For a sheaf of sets `F` on the small étale site of `S`, the rule
 > `(f : X ⟶ S) ↦ Γ(X_ét, f⁻¹F)` — the presheaf underlying `π_S⁻¹F` on the big étale category over
@@ -57,7 +57,7 @@ public theorem smallEtaleInverseImage_isSheaf_h_and_isIso_unit :
 
 [Tag 0EW9](https://stacks.math.columbia.edu/tag/0EW9) in the Stacks Project.
 
-**`AlgebraicGeometry.hToBigEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L192). The attribute's comment: “change-of-topology morphism”.
+**`AlgebraicGeometry.hToBigEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L192). The attribute's comment: “change-of-topology morphism”.
 
 > The comparison `ε_X` from the big h topos to the big étale topos, induced by the identity
 > functor on the common slice category.
@@ -69,7 +69,7 @@ public def hToBigEtaleMorphism (B : BigHSite.{u}) (X : B.Schemes) :
       (Sheaf (BigEtaleOver.topology (hAssociatedBigEtaleSite B) X.1 X.2) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.hToSmallEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L227). The attribute's comment: “factorization through the big étale topos”.
+**`AlgebraicGeometry.hToSmallEtaleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L227). The attribute's comment: “factorization through the big étale topos”.
 
 > The comparison `a_X = π_X ∘ ε_X` from the big h topos to the small étale topos.
 
@@ -80,7 +80,7 @@ public def hToSmallEtaleMorphism (B : BigHSite.{u}) (X : B.Schemes) :
       (Sheaf (SmallEtale.topology (hAssociatedBigEtaleSite B) X.1 X.2) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.bigHBigEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L256). The attribute's comment: “the big h–big étale square”.
+**`AlgebraicGeometry.bigHBigEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L256). The attribute's comment: “the big h–big étale square”.
 
 > **Stacks 0EW9, first diagram.** The square formed by the big h and big étale base-change
 > morphisms over the change-of-topology comparisons `ε_X` and `ε_Y` commutes on direct
@@ -93,7 +93,7 @@ public def bigHBigEtale_pushforwardCommIso (B : BigHSite.{u}) {X Y : B.Schemes} 
       ((hToBigEtaleMorphism B Y).comp (bigHMorphismOfTopoi B f)).pushforward
 ```
 
-**`AlgebraicGeometry.bigHSmallEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L294). The attribute's comment: “the big h–small étale square”.
+**`AlgebraicGeometry.bigHSmallEtale_pushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/HToEtaleSquares.lean#L294). The attribute's comment: “the big h–small étale square”.
 
 > **Stacks 0EW9, second diagram.** The square formed by the big h and small étale
 > base-change morphisms over the comparisons `a_X = π_X ∘ ε_X` and `a_Y = π_Y ∘ ε_Y` commutes on
@@ -109,7 +109,7 @@ public def bigHSmallEtale_pushforwardCommIso (B : BigHSite.{u}) {X Y : B.Schemes
 
 [Tag 0EWA](https://stacks.math.columbia.edu/tag/0EWA) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_bigHSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ProperHDirectImage.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ProperHDirectImage.lean#L68).
+**`AlgebraicGeometry.isIso_bigHSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ProperHDirectImage.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ProperHDirectImage.lean#L68).
 
 > **Stacks 0EWA.** Let `f : X ⟶ Y` be a proper morphism of the big h site. Then the base change
 > map `a_Y⁻¹ ∘ f_{small,*} ⟶ f_{big,h,*} ∘ a_X⁻¹` of the square of topoi of Stacks 0EW9 is an
@@ -124,7 +124,7 @@ public theorem isIso_bigHSmallEtaleBaseChange [IsProper (B.inclusion.map f)] :
 
 [Tag 0F0J](https://stacks.math.columbia.edu/tag/0F0J) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHSite.exists_hEtaleCohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HComparisonSituationProperties.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HComparisonSituationProperties.lean#L70).
+**`AlgebraicGeometry.BigHSite.exists_hEtaleCohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HComparisonSituationProperties.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HComparisonSituationProperties.lean#L70).
 
 > **Stacks 0F0J.** Consider the comparison of the h topology of a big h site `B` with the étale
 > topology on the same category of schemes. Let `𝒫` be the class of proper morphisms, and for `X`
@@ -150,7 +150,7 @@ public theorem exists_hEtaleCohomologyComparison (B : BigHSite.{u}) :
 
 [Tag 0EWF](https://stacks.math.columbia.edu/tag/0EWF) in the Stacks Project.
 
-**`AlgebraicGeometry.hTorsionComparison_smallEtaleInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L87). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.hTorsionComparison_smallEtaleInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L87). The attribute's comment: “(1)”.
 
 > For an object `X` of the big h site and an abelian torsion sheaf `F` on `X_étale`,
 > `ε_{X,*}a_X⁻¹F = π_X⁻¹F` — the unit `π_X⁻¹F ⟶ ε_{X,*}ε_X⁻¹π_X⁻¹F` of the change of topology is an
@@ -177,7 +177,7 @@ public theorem hTorsionComparison_smallEtaleInclusion (X : (hAssociatedBigEtaleS
             ((hAssociatedBigEtaleSite B).topology.over X)).obj F)))
 ```
 
-**`AlgebraicGeometry.isIso_hTorsionHigherSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L124). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.isIso_hTorsionHigherSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L124). The attribute's comment: “(2)”.
 
 > For a proper morphism `f : X ⟶ Y` of the big h site and an abelian torsion sheaf `F` on
 > `X_étale`, the base change map `a_Y⁻¹(R^i f_{small,*}F) ⟶ R^i f_{big,h,*}(a_X⁻¹F)` is an
@@ -200,7 +200,7 @@ public theorem isIso_hTorsionHigherSmallEtaleBaseChange
       (BigHSite.exists_properRefinement B) f F i)
 ```
 
-**`AlgebraicGeometry.isIso_hTorsionDerivedComparisonUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L143). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.isIso_hTorsionDerivedComparisonUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L143). The attribute's comment: “(3)”.
 
 > For an object `X` of the big h site and `K` in `D⁺(X_étale)` with torsion cohomology sheaves,
 > the map `π_X⁻¹K ⟶ Rε_{X,*}(a_X⁻¹K)`, the derived unit of the change of topology at `π_X⁻¹K`, is an
@@ -219,7 +219,7 @@ public theorem isIso_hTorsionDerivedComparisonUnit_app (X : (hAssociatedBigEtale
         ((hAssociatedBigEtaleSite B).topology.over X)).mapDerivedCategoryPlus.obj K))
 ```
 
-**`AlgebraicGeometry.isIso_hTorsionDerivedSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L165). The attribute's comment: “(4)”.
+**`AlgebraicGeometry.isIso_hTorsionDerivedSmallEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionInverseImageComparison.lean#L165). The attribute's comment: “(4)”.
 
 > For a proper morphism `f : X ⟶ Y` of the big h site and `K` in `D⁺(X_étale)` with torsion
 > cohomology sheaves, the base change map `a_Y⁻¹(Rf_{small,*}K) ⟶ Rf_{big,h,*}(a_X⁻¹K)` of the
@@ -246,7 +246,7 @@ public theorem isIso_hTorsionDerivedSmallEtaleBaseChange
 
 [Tag 0EWG](https://stacks.math.columbia.edu/tag/0EWG) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_hDerivedSmallEtaleUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HCohomologyComparison.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HCohomologyComparison.lean#L84).
+**`AlgebraicGeometry.isIso_hDerivedSmallEtaleUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HCohomologyComparison.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HCohomologyComparison.lean#L84).
 
 > Let `X` be a scheme, an object of a big h site `B`. For `K` in `D⁺(X_étale)` with torsion
 > cohomology sheaves, the map `K ⟶ Ra_{X,*}a_X⁻¹K` is an isomorphism, with
@@ -268,7 +268,7 @@ public theorem isIso_hDerivedSmallEtaleUnit (X : (hAssociatedBigEtaleSite B).Sch
 
 [Tag 0EWH](https://stacks.math.columbia.edu/tag/0EWH) in the Stacks Project.
 
-**`AlgebraicGeometry.hCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L85). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.hCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L85). The attribute's comment: “(1)”.
 
 > **Stacks 0EWH (1).** Let `X` be a scheme, an object of a big h site `B`, and let `F` be a
 > torsion abelian sheaf on `X_étale`. For every `q`,
@@ -298,7 +298,7 @@ public def hCohomologyComparisonIso
             ((hAssociatedBigEtaleSite B).topology.over X)).obj F))
 ```
 
-**`AlgebraicGeometry.hCohomologyComparisonPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L115). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.hCohomologyComparisonPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L115). The attribute's comment: “(2)”.
 
 > **Stacks 0EWH (2).** Let `X` be a scheme, an object of a big h site `B`, and let `K` be an
 > object of `D⁺(X_étale)` whose cohomology sheaves are torsion. For every `q`,
@@ -333,7 +333,7 @@ public def hCohomologyComparisonPlusIso
               ((hAssociatedBigEtaleSite B).topology.over X)).mapDerivedCategoryPlus.obj K)))
 ```
 
-**`AlgebraicGeometry.hCohomologyConstantComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L150). The attribute's comment: “example”.
+**`AlgebraicGeometry.hCohomologyConstantComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/HTorsionCohomologyComparison.lean#L150). The attribute's comment: “example”.
 
 > **Stacks 0EWH, the example.** Let `X` be a scheme, an object of a big h site `B`, and let `A`
 > be a torsion abelian group. For every `q`,
@@ -363,4 +363,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.103, Tag 0EW7](https://stacks.math.columbia.edu/tag/0EW7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Subwords in non-decreasing Dyck paths
 
-33 results, 18 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html).
+33 results, 18 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html).
 
 ## Valley heights
 
@@ -20,7 +20,7 @@ that factor, taken to be $0$ when negative.
 
 - Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1, the definition of non-decreasing Dyck paths used by Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6.
 
-Formalized by `MetaMathlibExt.dyckValleyHeights`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights).
+Formalized by `MetaMathlibExt.dyckValleyHeights`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights).
 
 ## Valley heights of UUDUDDUD
 
@@ -33,7 +33,7 @@ In particular this path is not non-decreasing.
 
 - Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1.
 
-Formalized by `MetaMathlibExt.dyckValleyHeights_UUDUDDUD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights-uududdud).
+Formalized by `MetaMathlibExt.dyckValleyHeights_UUDUDDUD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights-uududdud).
 
 ## Valley heights of UDUUDUDD
 
@@ -44,7 +44,7 @@ $0$ and $1$ from left to right.
 
 - Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1.
 
-Formalized by `MetaMathlibExt.dyckValleyHeights_UDUUDUDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights-uduududd).
+Formalized by `MetaMathlibExt.dyckValleyHeights_UDUUDUDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-valley-heights-uduududd).
 
 ## Non-decreasing Dyck paths
 
@@ -56,7 +56,7 @@ non-decreasing sequence.
 
 - Flórez and Ramírez, *Restricted Dyck paths on valleys sequence*, arXiv:2108.08299, Section 1 (the `0`-Dyck paths), as used by Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6.
 
-Formalized by `MetaMathlibExt.IsNondecreasingDyckPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#is-nondecreasing-dyck-path).
+Formalized by `MetaMathlibExt.IsNondecreasingDyckPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#is-nondecreasing-dyck-path).
 
 ## Non-decreasing Dyck paths of semilength $n$
 
@@ -69,7 +69,7 @@ sequence.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-words).
+Formalized by `MetaMathlibExt.nondecreasingDyckWords`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-words).
 
 ## Five non-decreasing Dyck paths of semilength 3
 
@@ -82,7 +82,7 @@ These are all five Dyck paths of semilength $3$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.card_nondecreasingDyckWords_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#card-nondecreasing-dyck-words-three).
+Formalized by `MetaMathlibExt.card_nondecreasingDyckWords_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#card-nondecreasing-dyck-words-three).
 
 ## Thirteen non-decreasing Dyck paths of semilength 4
 
@@ -95,7 +95,7 @@ They are all $14$ Dyck paths of semilength $4$ except $UUDUDDUD$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.card_nondecreasingDyckWords_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#card-nondecreasing-dyck-words-four).
+Formalized by `MetaMathlibExt.card_nondecreasingDyckWords_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#card-nondecreasing-dyck-words-four).
 
 ## Number of occurrences of a subword
 
@@ -108,7 +108,7 @@ contiguous subword of $l$ is counted, overlapping occurrences separately.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.dyckSubwordCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count).
+Formalized by `MetaMathlibExt.dyckSubwordCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count).
 
 ## Occurrences of UU in UUUDDD
 
@@ -119,7 +119,7 @@ $UUUDDD$; the two occurrences overlap.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.dyckSubwordCount_UU_UUUDDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count-uu-uuuddd).
+Formalized by `MetaMathlibExt.dyckSubwordCount_UU_UUUDDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count-uu-uuuddd).
 
 ## Occurrences of UDU in UDUDUD
 
@@ -130,7 +130,7 @@ $UDUDUD$; the two occurrences overlap.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.dyckSubwordCount_UDU_UDUDUD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count-udu-ududud).
+Formalized by `MetaMathlibExt.dyckSubwordCount_UDU_UDUDUD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-subword-count-udu-ududud).
 
 ## Total occurrences of a subword in non-decreasing Dyck paths
 
@@ -143,7 +143,7 @@ of semilength $n$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total).
+Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total).
 
 ## Peaks in the non-decreasing Dyck paths of semilength three
 
@@ -158,7 +158,7 @@ All five Dyck paths of semilength $3$ are non-decreasing.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotal_UD_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total-ud-thre).
+Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotal_UD_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total-ud-thre).
 
 ## Bivariate generating function of a subword in non-decreasing Dyck paths
 
@@ -176,7 +176,7 @@ so its constant coefficient is $0$: the empty path is not counted.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckSubwordBivariateGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-bivariate-gf).
+Formalized by `MetaMathlibExt.nondecreasingDyckSubwordBivariateGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-bivariate-gf).
 
 ## Generating function of the total subword count in non-decreasing Dyck paths
 
@@ -191,7 +191,7 @@ $$D_w(x) = \sum_{n \ge 0} d_w(n) x^n.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Section 1.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotalGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total-gf).
+Formalized by `MetaMathlibExt.nondecreasingDyckSubwordTotalGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-total-gf).
 
 ## Height of the last peak
 
@@ -204,7 +204,7 @@ $D$ steps in $l$ up to and including the $U$ of that factor, taken to be $0$ whe
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.
 
-Formalized by `MetaMathlibExt.dyckLastPeakHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-last-peak-height).
+Formalized by `MetaMathlibExt.dyckLastPeakHeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-last-peak-height).
 
 ## Last peak height of UDUUDD
 
@@ -214,7 +214,7 @@ The last peak of the Dyck path $UDUUDD$ has height $2$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.
 
-Formalized by `MetaMathlibExt.dyckLastPeakHeight_UDUUDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-last-peak-height-uduudd).
+Formalized by `MetaMathlibExt.dyckLastPeakHeight_UDUUDD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#dyck-last-peak-height-uduudd).
 
 ## Non-decreasing Dyck paths by height of the last peak
 
@@ -226,7 +226,7 @@ factor $UD$) has height $k$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckLastPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-last-peak-count).
+Formalized by `MetaMathlibExt.nondecreasingDyckLastPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-last-peak-count).
 
 ## Non-decreasing Dyck paths of semilength four with last peak at height one
 
@@ -239,7 +239,7 @@ whose last peak has height $k$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16.
 
-Formalized by `MetaMathlibExt.nondecreasingDyckLastPeakCount_four_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-last-peak-count-four).
+Formalized by `MetaMathlibExt.nondecreasingDyckLastPeakCount_four_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-last-peak-count-four).
 
 ## Generating functions and closed form for the subword $UD$ in non-decreasing Dyck paths
 
@@ -260,7 +260,7 @@ $L_1 = 1$).
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 1 (`jis-2025-25.1.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ud).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ud).
 
 ## The subword $DU$ in non-decreasing Dyck paths
 
@@ -283,7 +283,7 @@ $$10 d_{DU}(n) = (5n - 2) F_{2n} - n L_{2n}.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 2 (`jis-2025-25.1.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-du).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-du).
 
 ## Generating functions and closed form for the subwords $UU$ and $DD$ in non-decreasing Dyck paths
 
@@ -305,7 +305,7 @@ $L_1 = 1$).
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 3 (`jis-2025-25.1.6-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UU_DD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uu-dd).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UU_DD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uu-dd).
 
 ## Subword $UUU$ in non-decreasing Dyck paths
 
@@ -323,7 +323,7 @@ for every $n \ge 1$, $10\, d_{UUU}(n) = -(5n + 4) F_{2n} + 3n L_{2n}$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 4 (`jis-2025-25.1.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uuu).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uuu).
 
 ## Generating functions and closed form for the subword $UDU$ in non-decreasing Dyck paths
 
@@ -344,7 +344,7 @@ $L_1 = 1$).
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 5 (`jis-2025-25.1.6-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UDU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-udu).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UDU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-udu).
 
 ## Generating functions and closed form for the subword $UDD$ in non-decreasing Dyck paths
 
@@ -372,7 +372,7 @@ $L_1 = 1$).
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 6 (`jis-2025-25.1.6-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UDD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-udd).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UDD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-udd).
 
 ## The subword $DUU$ in non-decreasing Dyck paths
 
@@ -395,7 +395,7 @@ $$10 d_{DUU}(n) = -(5n + 4) F_{2n} + 3n L_{2n}.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 7 (`jis-2025-25.1.6-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DUU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-duu).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DUU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-duu).
 
 ## The subword $DUD$ in non-decreasing Dyck paths
 
@@ -418,7 +418,7 @@ $$5 d_{DUD}(n) = (5n + 1) F_{2n} - 2n L_{2n}.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 8 (`jis-2025-25.1.6-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-dud).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-dud).
 
 ## The subword $DDU$ in non-decreasing Dyck paths
 
@@ -441,7 +441,7 @@ $$10 d_{DDU}(n) = (10n - 13) F_{2n} + (-4n + 5) L_{2n}.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 9 (`jis-2025-25.1.6-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DDU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ddu).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DDU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ddu).
 
 ## The subword $DDD$ in non-decreasing Dyck paths
 
@@ -465,7 +465,7 @@ $$4 d_{DDD}(n) = (-8n + 10) F_{2n} + (4n - 6) L_{2n} + 2^n.$$
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 10 (`jis-2025-25.1.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DDD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ddd).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_DDD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-ddd).
 
 ## Generating functions and closed form for the subword $UUD$ in non-decreasing Dyck paths
 
@@ -489,7 +489,7 @@ $L_1 = 1$).
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 11 (`jis-2025-25.1.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uud).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uud).
 
 ## Subword $UUUD$ in non-decreasing Dyck paths
 
@@ -508,7 +508,7 @@ $d_{UUUD}(n) = n F_{2n-5} - L_{2n-6}$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 12 (`jis-2025-25.1.6-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uuud).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_UUUD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-uuud).
 
 ## Recurrence for the subword $U^m$ in non-decreasing Dyck paths
 
@@ -530,7 +530,7 @@ vanishing case is stated for $n < m$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 13 (`jis-2025-25.1.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-pow).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-pow).
 
 ## Recurrence for the subword $U^mD$ in non-decreasing Dyck paths
 
@@ -551,7 +551,7 @@ is stated for $n \ge m + 2$.
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 15 (`jis-2025-25.1.6-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_pow_D` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-pow-d).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_pow_D` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-pow-d).
 
 ## Recurrence for the subword $UD^m$ in non-decreasing Dyck paths
 
@@ -573,7 +573,7 @@ right side is $3 \cdot 1 - 0 + F_1 + l_{1,0} - l_{0,0} = 4$ (the empty path has 
 
 - Flórez, Junes, Montoya, and Ramírez, *Counting Subwords in Non-Decreasing Dyck Paths*, Journal of Integer Sequences 28 (2025), Article 25.1.6, Theorem 16 (`jis-2025-25.1.6-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_D_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-d-pow).
+Stated but not proved: `MetaMathlibExt.nondecreasingDyck_subword_U_D_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NondecreasingDyckSubwordsWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html#nondecreasing-dyck-subword-u-d-pow).
 
 ## Depends on
 
@@ -582,4 +582,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Subwords in non-decreasing Dyck paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/subwords-in-non-decreasing-dyck-paths)

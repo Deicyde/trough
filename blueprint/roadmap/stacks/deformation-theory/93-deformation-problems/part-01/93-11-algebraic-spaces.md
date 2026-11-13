@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.11 Algebraic spaces
 
-Section 93.11 of the Stacks Project, [Tag 0E3Y](https://stacks.math.columbia.edu/tag/0E3Y). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 93.11 of the Stacks Project, [Tag 0E3Y](https://stacks.math.columbia.edu/tag/0E3Y). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E3Z, an example
 
 [Tag 0E3Z](https://stacks.math.columbia.edu/tag/0E3Z) in the Stacks Project.
 
-**`Deformation.Examples.FlatAlgebraicSpaceFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L160). The attribute's comment: “the category ℱ: objects”.
+**`Deformation.Examples.FlatAlgebraicSpaceFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L160). The attribute's comment: “the category ℱ: objects”.
 
 > **Stacks 0E3Z.** A flat family of algebraic spaces: an object of `𝒞_Λ` together with an
 > algebraic space over its spectrum, flat over it.
@@ -23,7 +23,7 @@ Section 93.11 of the Stacks Project, [Tag 0E3Y](https://stacks.math.columbia.edu
 public structure FlatAlgebraicSpaceFamily
 ```
 
-**`Deformation.Examples.FlatAlgebraicSpaceFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L177). The attribute's comment: “the category ℱ: morphisms”.
+**`Deformation.Examples.FlatAlgebraicSpaceFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L177). The attribute's comment: “the category ℱ: morphisms”.
 
 > **Stacks 0E3Z.** A morphism of flat families, covariant on coefficient algebras: a
 > morphism of the coefficient algebras together with a cartesian morphism of spaces over it.
@@ -32,7 +32,7 @@ public structure FlatAlgebraicSpaceFamily
 public structure Hom (P Q : FlatAlgebraicSpaceFamily B hΛ hSpec)
 ```
 
-**`Deformation.Examples.FlatAlgebraicSpaceFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L189). The attribute's comment: “the category ℱ”.
+**`Deformation.Examples.FlatAlgebraicSpaceFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L189). The attribute's comment: “the category ℱ”.
 
 > **Stacks 0E3Z.** Flat families of algebraic spaces and their cartesian morphisms form a
 > category; composition pastes two cartesian squares.
@@ -41,7 +41,7 @@ public structure Hom (P Q : FlatAlgebraicSpaceFamily B hΛ hSpec)
 public instance instCategory : Category (FlatAlgebraicSpaceFamily B hΛ hSpec)
 ```
 
-**`Deformation.Examples.flatAlgebraicSpaceFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L290). The attribute's comment: “the functor p”.
+**`Deformation.Examples.flatAlgebraicSpaceFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L291). The attribute's comment: “the functor p”.
 
 > **Stacks 0E3Z.** Forget the space and retain the coefficient algebra.
 
@@ -50,7 +50,7 @@ public def flatAlgebraicSpaceFamilyFunctor :
     FlatAlgebraicSpaceFamily B hΛ hSpec ⥤ ArtinianLocalAlgCat.{u, u, u} Λ k
 ```
 
-**`Deformation.Examples.flatAlgebraicSpaceFamilyFunctor_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L314). The attribute's comment: “p is cofibred in groupoids”.
+**`Deformation.Examples.flatAlgebraicSpaceFamilyFunctor_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L315). The attribute's comment: “p is cofibred in groupoids”.
 
 > **Stacks 0E3Z.** The projection from flat families of algebraic spaces to their
 > coefficient algebras is cofibered in groupoids: the cocartesian lift of `A ⟶ A'` is the base
@@ -62,7 +62,7 @@ public theorem flatAlgebraicSpaceFamilyFunctor_isCofiberedInGroupoids :
     IsCofiberedInGroupoids (flatAlgebraicSpaceFamilyFunctor B hΛ hSpec)
 ```
 
-**`Deformation.Examples.isFlat_of_over_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L339). The attribute's comment: “flatness of the special fibre”.
+**`Deformation.Examples.isFlat_of_over_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L340). The attribute's comment: “flatness of the special fibre”.
 
 > An algebraic space over the spectrum of the residue field is flat over it: the target of
 > every étale chart is `Spec k`, over which any morphism is flat, and the atlas of Stacks 025Y
@@ -76,7 +76,7 @@ public theorem isFlat_of_over_residueField
     Space.IsFlat B (Spec (.of Λ)) hΛ toK
 ```
 
-**`Deformation.Examples.spaceSpecialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L364). The attribute's comment: “the object x₀”.
+**`Deformation.Examples.spaceSpecialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L365). The attribute's comment: “the object x₀”.
 
 > **Stacks 0E3Z.** An algebraic space `X` over the residue field, as the object `(k, X)` of
 > the category of flat families.
@@ -88,7 +88,7 @@ public def spaceSpecialFiber (X : (BigFppfOver B (Spec (.of Λ)) hΛ)ᵒᵖ ⥤ 
     FlatAlgebraicSpaceFamily B hΛ hSpec
 ```
 
-**`Deformation.Examples.spaceDeformationProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Spaces.lean#L378). The attribute's comment: “the deformation category of X”.
+**`Deformation.Examples.spaceDeformationProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Spaces.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Spaces.lean#L379). The attribute's comment: “the deformation category of X”.
 
 > **Stacks 0E3Z.** The deformation category of an algebraic space `X` over the residue
 > field, with its structure functor to `𝒞_Λ`: its objects are flat families equipped with a
@@ -106,7 +106,7 @@ public abbrev spaceDeformationProjection
 
 [Tag 0E40](https://stacks.math.columbia.edu/tag/0E40) in the Stacks Project.
 
-**`Deformation.Examples.satisfiesRS_flatAlgebraicSpaceFamilyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean#L149). The attribute's comment: “condition (RS) for the category of flat families of algebraic spaces of Example 0E3Z”.
+**`Deformation.Examples.satisfiesRS_flatAlgebraicSpaceFamilyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean#L149). The attribute's comment: “condition (RS) for the category of flat families of algebraic spaces of Example 0E3Z”.
 
 > **Stacks Project, Tag 0E40.** The category of flat families of algebraic spaces over `𝒞_Λ` of
 > Example 0E3Z satisfies the Rim-Schlessinger condition (RS).
@@ -122,7 +122,7 @@ theorem satisfiesRS_flatAlgebraicSpaceFamilyFunctor :
     SatisfiesRS (flatAlgebraicSpaceFamilyFunctor B hΛ hSpec)
 ```
 
-**`Deformation.Examples.isDeformationCategory_spaceDeformationProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean#L382). The attribute's comment: “the in-particular clause: the deformation category of an algebraic space over k is a deformation category”.
+**`Deformation.Examples.isDeformationCategory_spaceDeformationProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesRimSchlessinger.lean#L382). The attribute's comment: “the in-particular clause: the deformation category of an algebraic space over k is a deformation category”.
 
 > **Stacks Project, Tag 0E40**, the in-particular clause. The deformation category of an
 > algebraic space `X` over the residue field `k` is a deformation category: a predeformation
@@ -144,7 +144,7 @@ theorem isDeformationCategory_spaceDeformationProjection
 
 [Tag 0E41](https://stacks.math.columbia.edu/tag/0E41) in the Stacks Project.
 
-**`Deformation.Examples.spaceInfinitesimalAutomorphismGroupChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphisms.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphisms.lean#L97). The attribute's comment: “first display: for an algebraic space X over the field k, Inf(Def\_X) = Ext^0(NL\_\{X/k}, O\_X) = Hom(Omega\_\{X/k}, O\_X) = Der\_k(O\_X, O\_X), as three identifications at every point x0 over k and every pushforward x0 -> x\_eps along a dual-number pair (06JS): Inf(Def\_X) is isomorphic as a group to Der\_k(O\_X, O\_X), Ext^0 out of the naive cotangent complex is k-linearly Hom(Omega\_\{X/k}, O\_X), and Hom(Omega\_\{X/k}, O\_X) is k-linearly Der\_k(O\_X, O\_X), k acting through the structure morphism X -> Spec k. The second display, T Def\_X = Ext^1(NL\_\{X/k}, O\_X), is registered separately”.
+**`Deformation.Examples.spaceInfinitesimalAutomorphismGroupChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphisms.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphisms.lean#L97). The attribute's comment: “first display: for an algebraic space X over the field k, Inf(Def\_X) = Ext^0(NL\_\{X/k}, O\_X) = Hom(Omega\_\{X/k}, O\_X) = Der\_k(O\_X, O\_X), as three identifications at every point x0 over k and every pushforward x0 -> x\_eps along a dual-number pair (06JS): Inf(Def\_X) is isomorphic as a group to Der\_k(O\_X, O\_X), Ext^0 out of the naive cotangent complex is k-linearly Hom(Omega\_\{X/k}, O\_X), and Hom(Omega\_\{X/k}, O\_X) is k-linearly Der\_k(O\_X, O\_X), k acting through the structure morphism X -> Spec k. The second display, T Def\_X = Ext^1(NL\_\{X/k}, O\_X), is registered separately”.
 
 > **The first display of [Stacks Project, Tag 0E41].**  In Example 0E3Z, let `X` be an
 > algebraic space over the field `k`.  Then
@@ -205,7 +205,7 @@ def spaceInfinitesimalAutomorphismGroupChain
       SpaceDerivations B hΛ (spaceStructureMap B hΛ hSpec X hX toK))
 ```
 
-**`Deformation.Examples.spaceInfinitesimalAutomorphismGroup_linearEquivDerivations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphismsLinear.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphismsLinear.lean#L311). The attribute's comment: “first display, k-linear form: for an algebraic space X over the field k, Inf(Def\_X) with the vector space structure of 06JV (addition is composition; c acts by pushforward along eps -> c eps, along every arrow over such a rescaling fixing the pushforward x0 -> x\_eps) is k-linearly isomorphic to Der\_k(O\_X, O\_X), k acting through the structure morphism X -> Spec k, by the first identification of the first display, at every point x0 over k and every pushforward along a dual-number pair”. References: SGA 3 II (3.14), “special case”.
+**`Deformation.Examples.spaceInfinitesimalAutomorphismGroup_linearEquivDerivations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphismsLinear.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesInfinitesimalAutomorphismsLinear.lean#L311). The attribute's comment: “first display, k-linear form: for an algebraic space X over the field k, Inf(Def\_X) with the vector space structure of 06JV (addition is composition; c acts by pushforward along eps -> c eps, along every arrow over such a rescaling fixing the pushforward x0 -> x\_eps) is k-linearly isomorphic to Der\_k(O\_X, O\_X), k acting through the structure morphism X -> Spec k, by the first identification of the first display, at every point x0 over k and every pushforward along a dual-number pair”. References: SGA 3 II (3.14), “special case”.
 
 > **The first display of [Stacks Project, Tag 0E41], `k`-linearly: `Inf(𝓓_X) = Der_k(𝒪_X, 𝒪_X)`
 > as `k`-vector spaces.**  In Example 0E3Z, let `X` be an algebraic space over the field `k`.  At
@@ -260,7 +260,7 @@ theorem spaceInfinitesimalAutomorphismGroup_linearEquivDerivations :
                 hp hi a)
 ```
 
-**`Deformation.Examples.spaceTangentSpaceLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceLinearEquivExt.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceLinearEquivExt.lean#L145). The attribute's comment: “second display: for an algebraic space X over the field k, T Def\_X = Ext^1(NL\_\{X/k}, O\_X) as k-vector spaces, from the tangent space of the deformation category of X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) onto Ext^1\_\{O\_X}(NL\_\{X/k}, O\_X) of the naive cotangent complex of 0D0V, k acting through the structure morphism X -> Spec k; a deformation goes to the 0GQ5 class of the extension 0 -> O\_X -> O\_X' -> O\_X -> 0. The first display is registered separately”.
+**`Deformation.Examples.spaceTangentSpaceLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceLinearEquivExt.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceLinearEquivExt.lean#L145). The attribute's comment: “second display: for an algebraic space X over the field k, T Def\_X = Ext^1(NL\_\{X/k}, O\_X) as k-vector spaces, from the tangent space of the deformation category of X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) onto Ext^1\_\{O\_X}(NL\_\{X/k}, O\_X) of the naive cotangent complex of 0D0V, k acting through the structure morphism X -> Spec k; a deformation goes to the 0GQ5 class of the extension 0 -> O\_X -> O\_X' -> O\_X -> 0. The first display is registered separately”.
 
 > **Stacks 0E41, second display.** In Example 0E3Z let `X` be an algebraic space over `k`. Then
 > `T Def_X = Ext¹_{𝒪_X}(NL_{X/k}, 𝒪_X)`: the tangent space of the deformation category `Def_X` (the
@@ -277,7 +277,7 @@ def spaceTangentSpaceLinearEquivExt
     letI : Fact (IsPredeformationCategory
         (BasedCategory.ofFunctor (spaceDeformationProjection B hΛ hSpec X hX toK)).p) :=
       ⟨(isDeformationCategory_spaceDeformationProjection B hΛ hSpec X hX toK).predeformation⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π (isomorphismClasses
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π (isomorphismClasses
         (BasedCategory.ofFunctor (spaceDeformationProjection B hΛ hSpec X hX toK))
         (isDeformationCategory_spaceDeformationProjection B hΛ hSpec X hX
           toK).predeformation.cofibered))) :=
@@ -302,7 +302,7 @@ def spaceTangentSpaceLinearEquivExt
 
 [Tag 0E42](https://stacks.math.columbia.edu/tag/0E42) in the Stacks Project.
 
-**`Deformation.Examples.spaceInfinitesimalAutomorphisms_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesFiniteDimensional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesFiniteDimensional.lean#L99). The attribute's comment: “infinitesimal automorphisms: for an algebraic space X proper over the field k, Inf(Def\_X), with the vector space structure of 06JV (addition is composition; c acts by pushforward along eps -> c eps), is finite dimensional over k, at every point x0 over k and every pushforward x0 -> x\_eps along a dual-number pair”.
+**`Deformation.Examples.spaceInfinitesimalAutomorphisms_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesFiniteDimensional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesFiniteDimensional.lean#L99). The attribute's comment: “infinitesimal automorphisms: for an algebraic space X proper over the field k, Inf(Def\_X), with the vector space structure of 06JV (addition is composition; c acts by pushforward along eps -> c eps), is finite dimensional over k, at every point x0 over k and every pushforward x0 -> x\_eps along a dual-number pair”.
 
 > **Stacks 0E42, the infinitesimal automorphisms.**  In Example 0E3Z, let `X` be an algebraic
 > space over the field `k` which is proper over `k`.  Then `Inf(𝓓_X)` is a finite-dimensional
@@ -358,7 +358,7 @@ theorem spaceInfinitesimalAutomorphisms_finiteDimensional
         hpair i hi)
 ```
 
-**`Deformation.Examples.spaceTangentSpace_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceFinite.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceFinite.lean#L55). The attribute's comment: “tangent space: for an algebraic space X proper over the field k, the tangent space T Def\_X of its deformation category (isomorphism classes of flat deformations over k[eps], with the canonical vector space structure of 06IH) is finite dimensional over k. The clause on Inf(Def\_X) is registered separately”.
+**`Deformation.Examples.spaceTangentSpace_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceFinite.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesTangentSpaceFinite.lean#L55). The attribute's comment: “tangent space: for an algebraic space X proper over the field k, the tangent space T Def\_X of its deformation category (isomorphism classes of flat deformations over k[eps], with the canonical vector space structure of 06IH) is finite dimensional over k. The clause on Inf(Def\_X) is registered separately”.
 
 > **Stacks 0E42, the tangent space.** In Lemma 0E41, if the algebraic space `X` is proper over
 > `k`, then `T Def_X` (with the vector-space structure of Stacks 06IH) is finite dimensional over
@@ -369,7 +369,7 @@ theorem spaceTangentSpace_finiteDimensional (hproper : Space.IsProper B (Spec (.
     letI : Fact (IsPredeformationCategory
         (BasedCategory.ofFunctor (spaceDeformationProjection B hΛ hSpec X hX toK)).p) :=
       ⟨(isDeformationCategory_spaceDeformationProjection B hΛ hSpec X hX toK).predeformation⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π (isomorphismClasses
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π (isomorphismClasses
         (BasedCategory.ofFunctor (spaceDeformationProjection B hΛ hSpec X hX toK))
         (isDeformationCategory_spaceDeformationProjection B hΛ hSpec X hX
           toK).predeformation.cofibered))) :=
@@ -386,7 +386,7 @@ theorem spaceTangentSpace_finiteDimensional (hproper : Space.IsProper B (Spec (.
 
 [Tag 0ET7](https://stacks.math.columbia.edu/tag/0ET7) in the Stacks Project.
 
-**`Deformation.Examples.exists_hull_spaceIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean#L102). The attribute's comment: “for a proper algebraic space X over k and Λ complete local with residue field k, the functor of isomorphism classes of Def\_X has a hull”.
+**`Deformation.Examples.exists_hull_spaceIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean#L102). The attribute's comment: “for a proper algebraic space X over k and Λ complete local with residue field k, the functor of isomorphism classes of Def\_X has a hull”.
 
 > **Stacks 0ET7, the hull.** Let `Λ` be a complete local ring with residue field `k` and let
 > `X` be a proper algebraic space over `k`. Then the functor `A ↦ Ob(Def_X(A))/≅` of isomorphism
@@ -400,11 +400,11 @@ public theorem exists_hull_spaceIsomorphismClasses (hcl : IsClassical Λ k)
       (BasedCategory.ofFunctor (spaceDeformationProjection B hΛ hSpec X hX toK))
       (isDeformationCategory_spaceDeformationProjection B hΛ hSpec X hX
         toK).predeformation.cofibered
-    ∃ ξ : FormalObject (CategoryOfElements.π G),
+    ∃ ξ : FormalObject (Functor.Elements.π G),
       IsHull (categoryOfElements_projection_isCofibered G) ξ
 ```
 
-**`Deformation.Examples.isProrepresentableULift_spaceIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean#L120). The attribute's comment: “if Der\_k(O\_X, O\_X) = 0, the functor of isomorphism classes of Def\_X is prorepresentable”.
+**`Deformation.Examples.isProrepresentableULift_spaceIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SpacesHull.lean#L120). The attribute's comment: “if Der\_k(O\_X, O\_X) = 0, the functor of isomorphism classes of Def\_X is prorepresentable”.
 
 > **Stacks 0ET7, prorepresentability.** Let `Λ` be a complete local ring with residue field
 > `k` and let `X` be a proper algebraic space over `k` with `Der_k(𝒪_X, 𝒪_X) = 0`. Then the functor
@@ -427,4 +427,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.11, Tag 0E3Y](https://stacks.math.columbia.edu/tag/0E3Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

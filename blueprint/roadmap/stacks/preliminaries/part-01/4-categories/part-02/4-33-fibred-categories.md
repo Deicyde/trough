@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.33 Fibred categories
 
-Section 4.33 of the Stacks Project, [Tag 02XJ](https://stacks.math.columbia.edu/tag/02XJ). 13 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.33 of the Stacks Project, [Tag 02XJ](https://stacks.math.columbia.edu/tag/02XJ). 13 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02XL, a lemma
 
 [Tag 02XL](https://stacks.math.columbia.edu/tag/02XL) in the Stacks Project.
 
-**`Stacks.StronglyCartesian.isStronglyCartesian_conditions_hold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesian.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesian.lean#L37). References: SGA 1 VI (6.12), “iso ⇒ Cartesian”.
+**`Stacks.StronglyCartesian.isStronglyCartesian_conditions_hold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesian.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesian.lean#L37). References: SGA 1 VI (6.12), “iso ⇒ Cartesian”.
 
 > **Stacks 02XL.** All three claims of `StronglyCartesianStability` hold for every `p : 𝒮 ⥤ 𝒞`,
 > each supplied by Mathlib: `Functor.IsStronglyCartesian.comp`, `.of_isIso` and
@@ -29,7 +29,7 @@ theorem isStronglyCartesian_conditions_hold {𝒞 : Type*} [Category 𝒞] {𝒮
 
 [Tag 09WU](https://stacks.math.columbia.edu/tag/09WU) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStronglyCartesian.comp_functor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesianComp.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesianComp.lean#L64).
+**`CategoryTheory.Functor.IsStronglyCartesian.comp_functor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesianComp.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/StronglyCartesianComp.lean#L64).
 
 > If `θ : a' ⟶ a` is a strongly cartesian lift of `φ : b ⟶ F.obj a` along `F : A ⥤ B`, and `φ`
 > is in turn a strongly cartesian lift of `f : R ⟶ G.obj (F.obj a)` along `G : B ⥤ C`, then `θ` is a
@@ -50,7 +50,7 @@ lemma IsStronglyCartesian.comp_functor (F : A ⥤ B) (G : B ⥤ C)
 
 [Tag 06N4](https://stacks.math.columbia.edu/tag/06N4) in the Stacks Project.
 
-**`CategoryTheory.hasPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean#L172).
+**`CategoryTheory.hasPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean#L172).
 
 > **Stacks 06N4.**
 > Given `φ : x ⟶ y` strongly cartesian over `p`, an existing fibre product
@@ -70,7 +70,7 @@ theorem hasPullback_of_isStronglyCartesian
     Limits.HasPullback φ g
 ```
 
-**`CategoryTheory.pullbackIsoOfIsStronglyCartesian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean#L190).
+**`CategoryTheory.pullbackIsoOfIsStronglyCartesian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FibreProductsCartesian.lean#L190).
 
 > **Stacks 06N4.**
 > In the situation of `hasPullback_of_isStronglyCartesian` the fibre product `x ×_y z`
@@ -93,7 +93,7 @@ noncomputable def pullbackIsoOfIsStronglyCartesian
 
 [Tag 02XM](https://stacks.math.columbia.edu/tag/02XM) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibredCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L303).
+**`CategoryTheory.Functor.IsFibredCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L303).
 
 > **Stacks 02XM.** A functor `p : 𝒳 ⥤ 𝒮` is a *fibred category over `𝒮`* when for every object
 > `x` of `𝒳` lying over an object `U` of `𝒮` and every morphism `f : V ⟶ U` of `𝒮` there exists a
@@ -107,7 +107,7 @@ noncomputable def pullbackIsoOfIsStronglyCartesian
 def IsFibredCategory (p : 𝒳 ⥤ 𝒮) : Prop
 ```
 
-**`CategoryTheory.Functor.isFibredCategory_iff_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L315). The attribute's comment: “the identification with Mathlib's `Functor.IsFibered`”. References: SGA 1 VI (6.11), “Sufficiency”.
+**`CategoryTheory.Functor.isFibredCategory_iff_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L315). The attribute's comment: “the identification with Mathlib's `Functor.IsFibered`”. References: SGA 1 VI (6.11), “Sufficiency”.
 
 > **Stacks 02XM is Mathlib's `CategoryTheory.Functor.IsFibered`.** Forward, a strongly
 > cartesian lift of every base morphism makes `p` fibred by
@@ -122,13 +122,13 @@ theorem isFibredCategory_iff_isFibered (p : 𝒳 ⥤ 𝒮) : p.IsFibredCategory 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsFibered`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsFibered#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L325) (StacksFrontier): “Mathlib's SGA 1 VI.6.1 form of the definition, identified with the Stacks form by `CategoryTheory.Functor.isFibredCategory_iff_isFibered`”. References: SGA 1 VI (6.1); SGA 4 I (9.21), “The hypothesis that p”; SGA 4 VI (6.1).
+- [`CategoryTheory.Functor.IsFibered`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsFibered#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L325) (StacksFrontier): “Mathlib's SGA 1 VI.6.1 form of the definition, identified with the Stacks form by `CategoryTheory.Functor.isFibredCategory_iff_isFibered`”. References: SGA 1 VI (6.1); SGA 4 I (9.21), “The hypothesis that p”; SGA 4 VI (6.1).
 
 ## Tag 02XN, a definition
 
 [Tag 02XN](https://stacks.math.columbia.edu/tag/02XN) in the Stacks Project.
 
-**`CategoryTheory.Functor.ChoiceOfPullbacks`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L91). The attribute's comment: “(1)”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L91). The attribute's comment: “(1)”.
 
 > **Stacks 02XN (1).**
 > A *choice of pullbacks* for `p : 𝒳 ⥤ 𝒮` is a choice, for every morphism `f : V ⟶ U` of `𝒮` and
@@ -139,7 +139,7 @@ Declarations registered for the tag:
 structure ChoiceOfPullbacks (p : 𝒳 ⥤ 𝒮)
 ```
 
-**`CategoryTheory.Functor.ChoiceOfPullbacks.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L171). The attribute's comment: “(2)”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/ChoiceOfPullbacks.lean#L171). The attribute's comment: “(2)”.
 
 > **Stacks 02XN (2).**
 > The *pullback functor* `f^* : 𝒳_U ⥤ 𝒳_V` between the fibres of `p` attached to a morphism
@@ -153,77 +153,77 @@ noncomputable def pullbackFunctor {V U : 𝒮} (f : V ⟶ U) : p.Fiber U ⥤ p.F
 
 [Tag 02XO](https://stacks.math.columbia.edu/tag/02XO) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibered.pbMapId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean#L352).
+**`CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L288). The attribute's comment: “(3), for an arbitrary choice of pullbacks”.
 
-> **Stacks 02XO**, clause (2). The unitor `(𝟙 U)* ≅ 𝟭 (p.Fiber U)`, the canonical
-> isomorphism coming from the uniqueness of strongly cartesian factorisations.
+> **Stacks 02XO (3)**, for an arbitrary choice of pullbacks. The pseudofunctor
+> `𝒮ᵒᵖ ⥤ᵖ Cat` attached to a choice of pullbacks `c` of a fibred category: `U ↦ 𝒳_U`,
+> `f ↦ f^*` (the pullback functor of `c`), with unitor `α_U` and compositor `α_{g,f}` the canonical
+> isomorphisms of Stacks 02XO (1), (2).
 
 ```lean
-noncomputable def pbMapId (p : 𝒳 ⥤ 𝒮) [p.IsFibered] (U : LocallyDiscrete 𝒮ᵒᵖ) :
-    pbMap p (𝟙 U) ≅ 𝟙 (pbObj p U)
+noncomputable def pseudofunctor : Pseudofunctor (LocallyDiscrete 𝒮ᵒᵖ) Cat
 ```
 
-**`CategoryTheory.Functor.IsFibered.pbMapComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean#L360). References: SGA 4 VI (6.1.2), “(6.1.2.1)”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapId_hom_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L309). The attribute's comment: “(2), for an arbitrary choice of pullbacks”.
 
-> **Stacks 02XO**, clause (1). The compositor `(g ≫ f)* ≅ f* ⋙ g*`, the canonical
-> isomorphism compatible with the chosen cartesian lifts; `pbMapComp_uniq` shows it is the only
-> such isomorphism.
+> **Stacks 02XO (2).** The component at `x` of the unitor of `c.pseudofunctor` is, in `𝒳`, the
+> chosen lift of the identity at `x`.
 
 ```lean
-noncomputable def pbMapComp (p : 𝒳 ⥤ 𝒮) [p.IsFibered]
-    {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V) (γ : V ⟶ W) :
-    pbMap p (φ ≫ γ) ≅ pbMap p φ ≫ pbMap p γ
+lemma pseudofunctor_mapId_hom_app (U : LocallyDiscrete 𝒮ᵒᵖ) (x : p.Fiber U.as.unop) :
+    Fiber.fiberInclusion.map ((c.pseudofunctor.mapId U).hom.toNatTrans.app x) =
+      c.map (𝟙 U.as.unop) x
 ```
 
-**`CategoryTheory.Functor.IsFibered.pullbackPseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean#L525). References: SGA 4 VI (7.1.4), “partial”; SGA 4 XVII (3.3.3), “Forward direction”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_fac`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L318). The attribute's comment: “(1), for an arbitrary choice of pullbacks”.
 
-> Statement 1 (Stacks 02XO).  The pullback pseudofunctor associated to a fibred category
-> `p`.  Its object part is `U ↦ Cat.of (p.Fiber U)`, its 1-cell part is `f ↦ f*`, its unitor
-> is `(𝟙 U)* ≅ 𝟭 (p.Fiber U)` and its compositor is `(g ≫ f)* ≅ f* ⋙ g*`.
+> **Stacks 02XO (1).** The component at `x` of the compositor of `c.pseudofunctor` at `(φ, γ)`
+> makes the triangle with the chosen lifts commute: followed by the chosen lifts of `γ` and of `φ`,
+> it is the chosen lift of the composite.
 
 ```lean
-noncomputable def pullbackPseudofunctor (p : 𝒳 ⥤ 𝒮) [p.IsFibered] :
-    Pseudofunctor (LocallyDiscrete 𝒮ᵒᵖ) Cat
+lemma pseudofunctor_mapComp_hom_app_fac {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V) (γ : V ⟶ W)
+    (x : p.Fiber U.as.unop) :
+    Fiber.fiberInclusion.map ((c.pseudofunctor.mapComp φ γ).hom.toNatTrans.app x) ≫
+        c.map γ.as.unop (c.obj φ.as.unop x) ≫ c.map φ.as.unop x =
+      c.map (φ ≫ γ).as.unop x
 ```
 
-**`CategoryTheory.Functor.IsFibered.pullbackPseudofunctor_mapComp_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean#L563). References: SGA 1 VI (7.2), “partial”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_unique`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L328). The attribute's comment: “(1), uniqueness, for an arbitrary choice of pullbacks”.
 
-> **Stacks 02XO**, clause (1). The compositor of the pullback pseudofunctor is compatible
-> with the chosen strongly cartesian lifts: on each object `X`, its underlying comparison
-> morphism, followed by the composite of the chosen cartesian projections over `γ` and over `φ`,
-> is the chosen cartesian projection over `φ ≫ γ`.
+> **Stacks 02XO (1), uniqueness.** The component at `x` of the compositor of `c.pseudofunctor` at
+> `(φ, γ)` is the unique morphism of the fibre making the triangle with the chosen lifts commute.
 
 ```lean
-theorem pullbackPseudofunctor_mapComp_compatible (p : 𝒳 ⥤ 𝒮) [p.IsFibered]
-    {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V) (γ : V ⟶ W) (X : ↑(pbObj p U)) :
-    Fiber.fiberInclusion.map (((pullbackPseudofunctor p).mapComp φ γ).hom.toNatTrans.app X)
-        ≫ (cartComp φ.as.unop γ.as.unop).proj X =
-      IsPreFibered.pullbackMap X.2 (φ ≫ γ).as.unop
+lemma pseudofunctor_mapComp_hom_app_unique {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V)
+    (γ : V ⟶ W) (x : p.Fiber U.as.unop)
+    (θ : c.obj (φ ≫ γ).as.unop x ⟶ c.obj γ.as.unop (c.obj φ.as.unop x))
+    (hθ : Fiber.fiberInclusion.map θ ≫ c.map γ.as.unop (c.obj φ.as.unop x) ≫
+        c.map φ.as.unop x = c.map (φ ≫ γ).as.unop x) :
+    θ = (c.pseudofunctor.mapComp φ γ).hom.toNatTrans.app x
 ```
 
-**`CategoryTheory.Functor.IsFibered.pbMapComp_uniq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/PullbackPseudofunctor.lean#L576). References: SGA 4 VI (6.1.2), “(6.1.2.1)”.
+**`CategoryTheory.Functor.ChoiceOfPullbacks.existsUnique_compIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L348). The attribute's comment: “(1), existence and uniqueness of the isomorphism, for an arbitrary choice of pullbacks”.
 
-> **Stacks 02XO**, clause (1), uniqueness. The compositor is the *unique* isomorphism
-> `(g ≫ f)* ≅ f* ⋙ g*` compatible with the chosen cartesian lifts: any isomorphism whose
-> components satisfy the compatibility triangle of
-> `pullbackPseudofunctor_mapComp_compatible` equals `pbMapComp`.
+> **Stacks 02XO (1)**, as stated in the source. For composable `f : V ⟶ U` and `g : W ⟶ V`
+> there is a unique isomorphism `α_{g,f} : (f ∘ g)^* ≅ g^* ∘ f^*` of functors from the fibre over
+> `U` to the fibre over `W` such that, for every `y`, the chosen lift `(f ∘ g)^* y ⟶ y` is
+> `(α_{g,f})_y` followed by the chosen lifts `g^* f^* y ⟶ f^* y ⟶ y`. The compositor of
+> `c.pseudofunctor` satisfies this triangle (`pseudofunctor_mapComp_hom_app_fac`), so it is this
+> `α_{g,f}`.
 
 ```lean
-theorem pbMapComp_uniq (p : 𝒳 ⥤ 𝒮) [p.IsFibered]
-    {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V) (γ : V ⟶ W)
-    (θ : pbMap p (φ ≫ γ) ≅ pbMap p φ ≫ pbMap p γ)
-    (hθ : ∀ X : ↑(pbObj p U),
-      Fiber.fiberInclusion.map (θ.hom.toNatTrans.app X) ≫
-          (cartComp φ.as.unop γ.as.unop).proj X =
-        IsPreFibered.pullbackMap X.2 (φ ≫ γ).as.unop) :
-    θ = pbMapComp p φ γ
+theorem existsUnique_compIso {W V U : 𝒮} (g : W ⟶ V) (f : V ⟶ U) :
+    ∃! α : c.pullbackFunctor (g ≫ f) ≅ c.pullbackFunctor f ⋙ c.pullbackFunctor g,
+      ∀ y : p.Fiber U, Fiber.fiberInclusion.map (α.hom.app y) ≫ c.map g (c.obj f y) ≫
+        c.map f y = c.map (g ≫ f) y
 ```
 
 ## Tag 042G, a lemma
 
 [Tag 042G](https://stacks.math.columbia.edu/tag/042G) in the Stacks Project.
 
-**`CategoryTheory.BasedCategory.isFibered_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/EquivalenceInvariance.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/EquivalenceInvariance.lean#L170).
+**`CategoryTheory.BasedCategory.isFibered_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/EquivalenceInvariance.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/EquivalenceInvariance.lean#L170).
 
 > **Stacks 042G (Lemma 4.33.8).** Let `𝒮` be a category and let `𝒳` and `𝒴` be categories
 > over `𝒮`.  If `𝒳` and `𝒴` are equivalent as categories over `𝒮`, then `𝒳` is a fibred
@@ -240,7 +240,7 @@ theorem BasedCategory.isFibered_iff_of_equivalence
 
 [Tag 02XP](https://stacks.math.columbia.edu/tag/02XP) in the Stacks Project.
 
-**`CategoryTheory.CatFibered`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoCategory.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/TwoCategory.lean#L85).
+**`CategoryTheory.CatFibered`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoCategory.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoCategory.lean#L85).
 
 > The 2-category of fibred categories over `𝒮`: the sub-2-category of the 2-category
 > `BasedCategory 𝒮` of categories over `𝒮` (Stacks 003Y) whose
@@ -254,14 +254,14 @@ theorem BasedCategory.isFibered_iff_of_equivalence
 > The hom-category `𝒳 ⟶ 𝒴` is the source's `Mor_{Fib/𝒮}(𝒳, 𝒴)`.
 
 ```lean
-def CatFibered (𝒮 : Type u₁) [Category.{v₁} 𝒮]
+structure CatFibered (𝒮 : Type u₁) [Category.{v₁} 𝒮]
 ```
 
 ## Tag 02XQ, a lemma
 
 [Tag 02XQ](https://stacks.math.columbia.edu/tag/02XQ) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isFibered_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L223).
+**`CategoryTheory.TwoFibreProductOver.isFibered_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L226).
 
 > **Stacks 02XQ, fibredness.** If `p𝒳`, `p𝒴`, `p𝒮` are fibred categories over `𝒞` and
 > `F`, `G` are 1-morphisms of fibred categories over `𝒞`, then the structure functor of the
@@ -276,7 +276,7 @@ theorem TwoFibreProductOver.isFibered_structureFunctor
     (TwoFibreProductOver.structureFunctor p𝒳 p𝒴 p𝒮 F G).IsFibered
 ```
 
-**`CategoryTheory.TwoFibreProductOver.fst_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L238).
+**`CategoryTheory.TwoFibreProductOver.fst_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L241).
 
 > **Stacks 02XQ, first projection.** Under the hypotheses of
 > `TwoFibreProductOver.isFibered_structureFunctor`, the first projection `π₁` is a 1-morphism
@@ -293,7 +293,7 @@ theorem TwoFibreProductOver.fst_isFibredOneMorphism
       (TwoFibreProductOver.fst p𝒳 p𝒴 p𝒮 F G)
 ```
 
-**`CategoryTheory.TwoFibreProductOver.snd_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L254).
+**`CategoryTheory.TwoFibreProductOver.snd_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProduct.lean#L257).
 
 > **Stacks 02XQ, second projection.** Under the hypotheses of
 > `TwoFibreProductOver.isFibered_structureFunctor`, the second projection `π₂` is a 1-morphism
@@ -309,11 +309,56 @@ theorem TwoFibreProductOver.snd_isFibredOneMorphism
       (TwoFibreProductOver.snd p𝒳 p𝒴 p𝒮 F G)
 ```
 
+**`CategoryTheory.TwoFibreProductOver.lift_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProductUniversal.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProductUniversal.lean#L58). The attribute's comment: “universal property in Fib/C”.
+
+> **Stacks 02XQ, universal property in `Fib/𝒞`.** Let `F : 𝒳 ⥤ 𝒮` and `G : 𝒴 ⥤ 𝒮` be
+> 1-morphisms of fibred categories over `𝒞`, and let `(W, pW)` be a category over `𝒞` with
+> 1-morphisms of fibred categories `H : W ⥤ 𝒳`, `K : W ⥤ 𝒴` and a vertical isomorphism
+> `t : H ⋙ F ≅ K ⋙ G`. Then the mediating 1-morphism `lift : W ⥤ 𝒳 ×_𝒮 𝒴` of Stacks 0040 is a
+> 1-morphism of fibred categories: it is strictly over `𝒞` and preserves strongly cartesian
+> morphisms. The image of a strongly cartesian `φ` has the strongly cartesian components `H φ` and
+> `K φ`, so it is strongly cartesian by `isStronglyCartesian_of_components`.
+>
+> Fibredness of `p𝒳`, `p𝒴`, `p𝒮` and `pW` is not used, so the statement is made without it.
+
+```lean
+theorem lift_isFibredOneMorphism
+    (hF : Functor.IsFibredOneMorphism p𝒳 p𝒮 F) (hG : Functor.IsFibredOneMorphism p𝒴 p𝒮 G)
+    {W : Type u₅} [Category.{v₅} W] {pW : W ⥤ 𝒞} {H : W ⥤ 𝒳} {K : W ⥤ 𝒴}
+    (hH : Functor.IsFibredOneMorphism pW p𝒳 H) (hK : Functor.IsFibredOneMorphism pW p𝒴 K)
+    (t : H ⋙ F ≅ K ⋙ G) (ht : ∀ w, p𝒮.IsHomLift (𝟙 (pW.obj w)) (t.hom.app w)) :
+    Functor.IsFibredOneMorphism pW (structureFunctor p𝒳 p𝒴 p𝒮 F G)
+      (lift p𝒳 p𝒴 p𝒮 F G pW H K hH.comp_eq hK.comp_eq t ht)
+```
+
+**`CategoryTheory.TwoFibreProductOver.liftIso_hom_app_isHomLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProductUniversal.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/TwoFibreProductUniversal.lean#L80). The attribute's comment: “uniqueness of the factorisation”.
+
+> **Stacks 02XQ, uniqueness in `Fib/𝒞`.** The 2-isomorphism `liftIso` between another
+> factorisation `γ` of the test cone and the mediating 1-morphism `lift` is a 2-morphism over `𝒞`:
+> each of its components lies over an identity of `𝒞` for the structure functor. Together with
+> `natTrans_ext` this makes the factorisation unique up to a unique 2-isomorphism of `Fib/𝒞`,
+> whose 2-morphisms are those of the 2-category of categories over `𝒞`.
+
+```lean
+theorem liftIso_hom_app_isHomLift
+    {W : Type u₅} [Category.{v₅} W] {pW : W ⥤ 𝒞} {H : W ⥤ 𝒳} {K : W ⥤ 𝒴}
+    {t : H ⋙ F ≅ K ⋙ G} (γ : W ⥤ TwoFibreProductOver p𝒳 p𝒴 p𝒮 F G)
+    (a : γ ⋙ fst p𝒳 p𝒴 p𝒮 F G ≅ H) (b : γ ⋙ snd p𝒳 p𝒴 p𝒮 F G ≅ K)
+    (ha : ∀ w, p𝒳.IsHomLift (𝟙 (pW.obj w)) (a.hom.app w))
+    (hb : ∀ w, p𝒴.IsHomLift (𝟙 (pW.obj w)) (b.hom.app w))
+    (hab : Functor.whiskerRight a.hom F ≫ t.hom =
+      Functor.whiskerLeft γ (psiIso p𝒳 p𝒴 p𝒮 F G).hom ≫ Functor.whiskerRight b.hom G)
+    (hH : H ⋙ p𝒳 = pW) (hK : K ⋙ p𝒴 = pW)
+    (ht : ∀ w, p𝒮.IsHomLift (𝟙 (pW.obj w)) (t.hom.app w)) (w : W) :
+    (structureFunctor p𝒳 p𝒴 p𝒮 F G).IsHomLift (𝟙 (pW.obj w))
+      ((liftIso γ a b ha hb hab hH hK ht).hom.app w)
+```
+
 ## Tag 02XR, a lemma
 
 [Tag 02XR](https://stacks.math.columbia.edu/tag/02XR) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibered.of_comp_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Slice.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Slice.lean#L94).
+**`CategoryTheory.Functor.IsFibered.of_comp_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Slice.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Slice.lean#L94).
 
 > If a fibred category `p : S ⥤ C` factors as `p' ⋙ Over.forget U` through the slice
 > category `Over U`, then `p' : S ⥤ Over U` is a fibred category.
@@ -328,7 +373,7 @@ theorem IsFibered.of_comp_over (p : S ⥤ C)
 
 [Tag 09WV](https://stacks.math.columbia.edu/tag/09WV) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibered.comp_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/CompFibered.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/CompFibered.lean#L34).
+**`CategoryTheory.Functor.IsFibered.comp_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/CompFibered.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/CompFibered.lean#L34).
 
 > A composite of fibred functors is fibred: if `F : A ⥤ B` and `G : B ⥤ C` are fibred, then so
 > is `F ⋙ G`.
@@ -342,7 +387,7 @@ theorem IsFibered.comp_functor (F : A ⥤ B) (G : B ⥤ C)
 
 [Tag 06N5](https://stacks.math.columbia.edu/tag/06N5) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibered.hasPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L96).
+**`CategoryTheory.Functor.IsFibered.hasPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L96).
 
 > **Stacks 06N5, existence half.**
 > In a fibred category `p : 𝒮 ⥤ 𝒞`, if `φ : x ⟶ y` is strongly cartesian over `p` and
@@ -358,7 +403,7 @@ theorem Functor.IsFibered.hasPullback_of_isStronglyCartesian
     Limits.HasPullback φ g
 ```
 
-**`CategoryTheory.Functor.IsFibered.snd_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L111).
+**`CategoryTheory.Functor.IsFibered.snd_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L111).
 
 > **Stacks 06N5, second projection strongly cartesian.**
 > Under the same hypotheses the second projection `Limits.pullback.snd φ g : x ×_y z ⟶ z`
@@ -376,7 +421,7 @@ theorem Functor.IsFibered.snd_isStronglyCartesian
       (p.map (Limits.pullback.snd φ g)) (Limits.pullback.snd φ g)
 ```
 
-**`CategoryTheory.Functor.IsFibered.map_isPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L131).
+**`CategoryTheory.Functor.IsFibered.map_isPullback_of_isStronglyCartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FibreProducts.lean#L131).
 
 > **Stacks 06N5, image square is a fibre product square.**
 > Under the same hypotheses `p` sends the fibre product square of `φ, g` in `𝒮` to a
@@ -398,7 +443,7 @@ theorem Functor.IsFibered.map_isPullback_of_isStronglyCartesian
 
 [Tag 08NF](https://stacks.math.columbia.edu/tag/08NF) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibered.exists_amelioration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Amelioration.lean, line 770](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Amelioration.lean#L770).
+**`CategoryTheory.Functor.IsFibered.exists_amelioration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Amelioration.lean, line 770](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Amelioration.lean#L770).
 
 > **Stacks 4.33.14 / 08NF.** Let `F : X ⥤ Y` be a 1-morphism of fibred categories over
 > `C`, with structure functors `p : X ⥤ C` and `q : Y ⥤ C`. Then there exist a fibred
@@ -450,4 +495,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.33, Tag 02XJ](https://stacks.math.columbia.edu/tag/02XJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

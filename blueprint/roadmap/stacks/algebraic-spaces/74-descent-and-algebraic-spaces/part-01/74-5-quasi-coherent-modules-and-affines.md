@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.5 Quasi-coherent modules and affines
 
-Section 74.5 of the Stacks Project, [Tag 0H02](https://stacks.math.columbia.edu/tag/0H02). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.5 of the Stacks Project, [Tag 0H02](https://stacks.math.columbia.edu/tag/0H02). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H03, an equation
 
 [Tag 0H03](https://stacks.math.columbia.edu/tag/0H03) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.affineEtaleRestriction_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean#L130). The attribute's comment: “equivalence of topoi”.
+**`AlgebraicGeometry.Space.affineEtaleRestriction_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean#L130). The attribute's comment: “equivalence of topoi”.
 
 > Restriction from the small étale site of an algebraic space to its affine étale charts is an
 > equivalence on sheaves of sets, at the universe of the objects of the site.
@@ -24,7 +24,7 @@ theorem affineEtaleRestriction_isEquivalence :
     (affineEtaleRestriction B S hS F hF (Type (u + 1))).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.affineEtaleToSmallEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean#L145). The attribute's comment: “canonical morphism of ringed topoi”.
+**`AlgebraicGeometry.Space.affineEtaleToSmallEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleRingedTopos.lean#L145). The attribute's comment: “canonical morphism of ringed topoi”.
 
 > The canonical morphism from the affine étale ringed topos of an algebraic space to its small
 > étale ringed topos.
@@ -52,7 +52,7 @@ noncomputable def affineEtaleToSmallEtale :
 
 [Tag 0H04](https://stacks.math.columbia.edu/tag/0H04) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_restrictionBaseChange_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleCartesianModules.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleCartesianModules.lean#L241). The attribute's comment: “quasi-coherent implies cartesian”.
+**`AlgebraicGeometry.Space.isIso_restrictionBaseChange_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleCartesianModules.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleCartesianModules.lean#L241). The attribute's comment: “quasi-coherent implies cartesian”.
 
 > A quasi-coherent sheaf of modules on the affine étale site of an algebraic space is
 > cartesian: each restriction map exhibits its target as a base change of its source.
@@ -65,7 +65,7 @@ theorem isIso_restrictionBaseChange_of_isQuasicoherentOnSite
     IsIso (Stacks.PresheafOfModules.restrictionBaseChange.{u + 1, u, u + 1, m} M.val f.op)
 ```
 
-**`AlgebraicGeometry.Space.affineEtale_quasicoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentModules.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentModules.lean#L270). The attribute's comment: “the equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.Space.affineEtale_quasicoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentModules.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentModules.lean#L270). The attribute's comment: “the equivalence of (1), (2) and (3)”.
 
 > **Stacks 0H04.**  Let `F` be an algebraic space over a scheme `S` and let `𝓕` be a presheaf
 > of `𝒪_F`-modules on the affine étale site of `F`.  The following are equivalent:
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.5, Tag 0H02](https://stacks.math.columbia.edu/tag/0H02)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

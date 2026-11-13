@@ -14,7 +14,7 @@ statement: formalized
 >  - [EHP58] Erdős, P., Herzog, F., Piranian, G. Metric properties of polynomials.
 >   J. Analyse Math. 6 (1958), 125--148.
 
-*Quoted from [FormalConjectures/ErdosProblems/1038.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1038.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1038](https://www.erdosproblems.com/1038).
 
@@ -34,7 +34,7 @@ theorem erdos_1038.parts.i : erdos_1038.parts.i.answer =
     volume {x | |f.1.eval x| < 1}
 ```
 
-Category `research open`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L44).
+Category `research open`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L44).
 
 ## `Erdos1038.erdos_1038.parts.ii`
 
@@ -51,7 +51,7 @@ theorem erdos_1038.parts.ii : 2 * 2 ^ (1 / 2 : ℝ) =
     volume {x | |f.1.eval x| < 1}
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L54).
+Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 54](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L54).
 
 ## `Erdos1038.erdos_1038.variants.inf_upperBound`
 
@@ -66,7 +66,7 @@ theorem erdos_1038.variants.inf_upperBound : ⨅ f : {f : Polynomial ℝ // f.Mo
     volume {x | |f.1.eval x| < 1} < 1.835
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L63).
+Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L63).
 
 ## `Erdos1038.erdos_1038.variants.inf_lowerBound`
 
@@ -82,7 +82,7 @@ theorem erdos_1038.variants.inf_lowerBound : 2 ^ (4 / 3 : ℝ) - 1 ≤
     volume {x | |f.1.eval x| < 1}
 ```
 
-Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L71).
+Category `research solved`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L71).
 
 ## `Erdos1038.erdos_1038.variants.quadratic_sublevel_formula`
 
@@ -98,7 +98,7 @@ theorem erdos_1038.variants.quadratic_sublevel_formula (m d : ℝ) (hd : |d| ≤
       ENNReal.ofReal (2 * Real.sqrt (1 + d ^ 2))
 ```
 
-Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L82).
+Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L82).
 
 ## `Erdos1038.erdos_1038.variants.quadratic_upperBound`
 
@@ -112,7 +112,7 @@ theorem erdos_1038.variants.quadratic_upperBound (a b : ℝ) (ha : |a| ≤ 1) (h
     volume {x : ℝ | |(x-a)*(x-b)| < 1} ≤ ENNReal.ofReal (2 * Real.sqrt 2)
 ```
 
-Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L118).
+Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L118).
 
 ## `Erdos1038.erdos_1038.variants.quadratic_extremizer`
 
@@ -126,7 +126,7 @@ theorem erdos_1038.variants.quadratic_extremizer :
     volume {x : ℝ | |x ^ 2 - 1| < 1} = ENNReal.ofReal (2 * Real.sqrt 2)
 ```
 
-Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L136).
+Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L136).
 
 ## `Erdos1038.erdos_1038.variants.sup_lowerBound`
 
@@ -143,7 +143,7 @@ theorem erdos_1038.variants.sup_lowerBound : 2 * 2 ^ (1 / 2 : ℝ) ≤
     volume {x | |f.1.eval x| < 1}
 ```
 
-Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L146).
+Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L146).
 
 ## `Erdos1038.erdos_1038.variants.inf_lt_two`
 
@@ -159,7 +159,7 @@ theorem erdos_1038.variants.inf_lt_two : ⨅ f : {f : Polynomial ℝ // f.Monic 
     volume {x | |f.1.eval x| < 1} < 2
 ```
 
-Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean#L164).
+Category `textbook`; AMS [28 Measure and integration](../../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/ErdosProblems/1038.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean#L164).
 
 ## Depends on
 
@@ -167,5 +167,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1038.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1038.lean)
+- [FormalConjectures/ErdosProblems/1038.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1038.lean)
 - [erdosproblems.com/1038](https://www.erdosproblems.com/1038)

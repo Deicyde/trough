@@ -8,7 +8,7 @@ proof: formalized
 
 # Verification-condition generation
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html).
 
 ## IMP
 
@@ -21,7 +21,7 @@ $\mathrm{if}\ b\ \mathrm{then}\ C_1\ \mathrm{else}\ C_2$ on a boolean expression
 every while loop $\{I\}\ \mathrm{while}\ b\ \mathrm{do}\ C$ also carries an assertion $I$, its
 invariant.
 
-Formalized by `Cslib.IMP.ACmd`, an inductive type declared in [CSLibExt/Languages/IMP/VCG.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#acmd).
+Formalized by `Cslib.IMP.ACmd`, an inductive type declared in [CSLibExt/Languages/IMP/VCG.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#acmd).
 
 ## Erasing annotations
 
@@ -31,7 +31,7 @@ composition and conditionals are kept with their parts stripped, and
 $\{I\}\ \mathrm{while}\ b\ \mathrm{do}\ C'$ becomes
 $\mathrm{while}\ b\ \mathrm{do}\ \mathrm{strip}(C')$.
 
-Formalized by `Cslib.IMP.ACmd.strip`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#strip).
+Formalized by `Cslib.IMP.ACmd.strip`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#strip).
 
 ## Precondition of an annotated command
 
@@ -45,7 +45,7 @@ $\mathrm{pre}(C_1, Q)$ holds in $s$ when $b$ is true in $s$, and $\mathrm{pre}(C
 $s$ when $b$ is false in $s$; and the precondition of a loop
 $\{I\}\ \mathrm{while}\ b\ \mathrm{do}\ C$ is its invariant $I$, whatever $Q$ is.
 
-Formalized by `Cslib.IMP.ACmd.pre`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#pre).
+Formalized by `Cslib.IMP.ACmd.pre`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#pre).
 
 ## Verification condition of an annotated command
 
@@ -61,7 +61,7 @@ verification condition for $Q$ holds iff every state satisfying $I$ in which $b$
 satisfies $\mathrm{pre}(C', I)$, every state satisfying $I$ in which $b$ is false satisfies
 $Q$, and $\mathrm{vc}(C', I)$ holds.
 
-Formalized by `Cslib.IMP.ACmd.vc`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc).
+Formalized by `Cslib.IMP.ACmd.vc`, a definition declared in [CSLibExt/Languages/IMP/VCG.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc).
 
 ## Soundness of verification conditions
 
@@ -72,7 +72,7 @@ from $C$ by erasing its loop invariants. For every such $C$ and $Q$, if $\mathrm
 holds, then the Hoare triple $\{\mathrm{pre}(C, Q)\}\ \mathrm{strip}(C)\ \{Q\}$ is derivable in
 the partial-correctness Hoare logic.
 
-Formalized by `Cslib.IMP.ACmd.vc_sound`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-sound).
+Formalized by `Cslib.IMP.ACmd.vc_sound`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-sound).
 
 ## Verification conditions yield valid Hoare triples
 
@@ -82,7 +82,7 @@ $P$, $Q$ be assertions. If the verification condition $\mathrm{vc}(C, Q)$ holds 
 the precondition $\mathrm{pre}(C, Q)$, then the partial-correctness Hoare triple
 $\{P\}\ \mathrm{strip}(C)\ \{Q\}$ is valid.
 
-Formalized by `Cslib.IMP.ACmd.vc_valid`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-valid).
+Formalized by `Cslib.IMP.ACmd.vc_valid`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-valid).
 
 ## Weakening the postcondition of an annotated command
 
@@ -92,7 +92,7 @@ $\mathrm{vc}(C, Q)$ for the precondition and the verification condition of $C$ f
 postcondition $Q$. If $\mathrm{vc}(C, Q)$ holds, then $\mathrm{pre}(C, Q)$ entails
 $\mathrm{pre}(C, Q')$ and $\mathrm{vc}(C, Q')$ holds.
 
-Formalized by `Cslib.IMP.ACmd.pre_entails_vc`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#pre-entails-vc).
+Formalized by `Cslib.IMP.ACmd.pre_entails_vc`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#pre-entails-vc).
 
 ## Completeness of verification conditions for derivable triples
 
@@ -102,7 +102,7 @@ partial-correctness Hoare logic. Then there is an annotated command $C$ such tha
 loop invariants gives $c$, that is $\mathrm{strip}(C) = c$, the verification condition
 $\mathrm{vc}(C, Q)$ holds, and $P$ entails the precondition $\mathrm{pre}(C, Q)$.
 
-Formalized by `Cslib.IMP.ACmd.vc_complete`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-complete).
+Formalized by `Cslib.IMP.ACmd.vc_complete`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-complete).
 
 ## Completeness of verification conditions for valid triples
 
@@ -114,7 +114,7 @@ the precondition $\mathrm{pre}(C, Q)$.
 
 The proof goes through relative completeness of the Hoare logic.
 
-Formalized by `Cslib.IMP.ACmd.vc_complete_of_valid`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/VCG.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-complete-of-valid).
+Formalized by `Cslib.IMP.ACmd.vc_complete_of_valid`, a theorem declared in [CSLibExt/Languages/IMP/VCG.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/VCG.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html#vc-complete-of-valid).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Verification-condition generation](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/program-logics-and-verification/verification-condition-generation)

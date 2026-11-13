@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.4 Closed immersions and quasi-coherent sheaves
 
-Section 29.4 of the Stacks Project, [Tag 01QX](https://stacks.math.columbia.edu/tag/01QX). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.4 of the Stacks Project, [Tag 01QX](https://stacks.math.columbia.edu/tag/01QX). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01QY, a lemma
 
 [Tag 01QY](https://stacks.math.columbia.edu/tag/01QY) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.pushforwardQcoh_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L102). The attribute's comment: “exactness”. References: EGA I (1.6.4), “closed immersion”.
+**`Stacks.ClosedImmersion.pushforwardQcoh_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L102). The attribute's comment: “exactness”. References: EGA I (1.6.4), “closed immersion”.
 
 > **[Stacks, Tag 01QY], exactness.** Direct image along a closed immersion is an exact functor
 > on quasi-coherent modules.
@@ -26,7 +26,7 @@ theorem pushforwardQcoh_exact :
       (Stacks.Modules.pushforwardQcoh i)
 ```
 
-**`Stacks.ClosedImmersion.fullyFaithfulPushforwardQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L112). The attribute's comment: “full faithfulness”.
+**`Stacks.ClosedImmersion.fullyFaithfulPushforwardQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L112). The attribute's comment: “full faithfulness”.
 
 > **[Stacks, Tag 01QY], full faithfulness.** Direct image along a closed immersion is fully
 > faithful on quasi-coherent modules: it is fully faithful on all modules, and the inclusion of
@@ -36,7 +36,7 @@ theorem pushforwardQcoh_exact :
 def fullyFaithfulPushforwardQcoh : (Stacks.Modules.pushforwardQcoh i).FullyFaithful
 ```
 
-**`Stacks.ClosedImmersion.pushforwardQcoh_full`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L123). The attribute's comment: “fullness”.
+**`Stacks.ClosedImmersion.pushforwardQcoh_full`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L123). The attribute's comment: “fullness”.
 
 > **[Stacks, Tag 01QY], fullness.** Direct image along a closed immersion is full on
 > quasi-coherent modules.
@@ -45,7 +45,7 @@ def fullyFaithfulPushforwardQcoh : (Stacks.Modules.pushforwardQcoh i).FullyFaith
 instance pushforwardQcoh_full : (Stacks.Modules.pushforwardQcoh i).Full
 ```
 
-**`Stacks.ClosedImmersion.pushforwardQcoh_faithful`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L129). The attribute's comment: “faithfulness”.
+**`Stacks.ClosedImmersion.pushforwardQcoh_faithful`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L129). The attribute's comment: “faithfulness”.
 
 > **[Stacks, Tag 01QY], faithfulness.** Direct image along a closed immersion is faithful on
 > quasi-coherent modules.
@@ -54,7 +54,7 @@ instance pushforwardQcoh_full : (Stacks.Modules.pushforwardQcoh i).Full
 instance pushforwardQcoh_faithful : (Stacks.Modules.pushforwardQcoh i).Faithful
 ```
 
-**`Stacks.ClosedImmersion.pushforwardQcoh_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L136). The attribute's comment: “essential image”.
+**`Stacks.ClosedImmersion.pushforwardQcoh_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Quasicoherent.lean#L136). The attribute's comment: “essential image”.
 
 > **[Stacks, Tag 01QY], the essential image.** A quasi-coherent `𝒪_X`-module is a direct image
 > of a quasi-coherent `𝒪_Z`-module exactly when the kernel of the comorphism of `i` annihilates it
@@ -70,7 +70,7 @@ theorem pushforwardQcoh_essImage_iff (G : X.Modules) (hG : G.IsQuasicoherent) :
 
 [Tag 01QZ](https://stacks.math.columbia.edu/tag/01QZ) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_quasicoherentSubobject`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LargestSubsheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LargestSubsheaf.lean#L81).
+**`AlgebraicGeometry.existsUnique_quasicoherentSubobject`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LargestSubsheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/LargestSubsheaf.lean#L81).
 
 > A subobject of a quasi-coherent module on a scheme contains a unique
 > quasi-coherent subobject through which every morphism from a quasi-coherent
@@ -88,7 +88,7 @@ public lemma existsUnique_quasicoherentSubobject (X : AlgebraicGeometry.Scheme.{
 
 [Tag 01R0](https://stacks.math.columbia.edu/tag/01R0) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.quasicoherentUpperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L91). The attribute's comment: “the functor”.
+**`Stacks.ClosedImmersion.quasicoherentUpperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L91). The attribute's comment: “the functor”.
 
 > **`i^!` for a closed immersion, on quasi-coherent modules.** It is the composite of the
 > inclusion of quasi-coherent `𝒪_X`-modules, the right adjoint of direct image on all modules,
@@ -100,7 +100,7 @@ def quasicoherentUpperShriek :
       (SheafOfModules.isQuasicoherent Z.ringCatSheaf).FullSubcategory
 ```
 
-**`Stacks.ClosedImmersion.pushforwardQcohUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L100). The attribute's comment: “the adjunction”.
+**`Stacks.ClosedImmersion.pushforwardQcohUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L100). The attribute's comment: “the adjunction”.
 
 > **[Stacks, Tag 01R0].** Direct image of quasi-coherent modules along a closed immersion of
 > schemes is left adjoint to `i^!`.
@@ -110,7 +110,7 @@ def pushforwardQcohUpperShriekAdjunction :
     Stacks.Modules.pushforwardQcoh i ⊣ quasicoherentUpperShriek i
 ```
 
-**`Stacks.ClosedImmersion.pushforwardQcoh_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L112). The attribute's comment: “existence of the right adjoint”.
+**`Stacks.ClosedImmersion.pushforwardQcoh_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/QuasicoherentAdjoint.lean#L112). The attribute's comment: “existence of the right adjoint”.
 
 > **[Stacks, Tag 01R0], as an existence statement.** Direct image of quasi-coherent modules
 > along a closed immersion of schemes has a right adjoint.
@@ -124,7 +124,7 @@ theorem pushforwardQcoh_isLeftAdjoint :
 
 [Tag 0C4I](https://stacks.math.columbia.edu/tag/0C4I) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “closed immersions into the two factors”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “closed immersions into the two factors”.
 
 > **Stacks Project, Tag 0C4I** and **Tag 0C4J.** An inclusion `I ≤ J` of quasi-coherent
 > sheaves of ideals induces a closed immersion of the associated closed subschemes.
@@ -138,7 +138,7 @@ instance isClosedImmersion_inclusion {X : Scheme.{u}} {I J : X.IdealSheafData} (
     IsClosedImmersion (inclusion h)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isPullback_subscheme_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L75). The attribute's comment: “cartesian intersection square”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isPullback_subscheme_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L75). The attribute's comment: “cartesian intersection square”.
 
 > The subscheme cut out by the sum of two ideal sheaves is the fibre product of the
 > corresponding closed subschemes over the ambient scheme.
@@ -154,7 +154,7 @@ theorem isPullback_subscheme_sup (X : Scheme.{u}) (I J : X.IdealSheafData) :
 
 [Tag 0C4J](https://stacks.math.columbia.edu/tag/0C4J) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “union\_closed\_immersions”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “union\_closed\_immersions”.
 
 > **Stacks Project, Tag 0C4I** and **Tag 0C4J.** An inclusion `I ≤ J` of quasi-coherent
 > sheaves of ideals induces a closed immersion of the associated closed subschemes.
@@ -168,7 +168,7 @@ instance isClosedImmersion_inclusion {X : Scheme.{u}} {I J : X.IdealSheafData} (
     IsClosedImmersion (inclusion h)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.unionIntersection_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean#L436). The attribute's comment: “union\_exact\_sequence”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.unionIntersection_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean#L440). The attribute's comment: “union\_exact\_sequence”.
 
 > **Stacks Project, Tag 0C4J.** The canonical sequence of structure sheaves of the
 > scheme-theoretic union, the two closed subschemes and their scheme-theoretic intersection,
@@ -180,7 +180,7 @@ theorem unionIntersection_shortExact {S : Scheme.{u}} (I J : S.IdealSheafData) :
       (ShortComplex.mk (unionToBiprod I J) (biprodToIntersection I J) zero).ShortExact
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isPushout_subscheme_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean, line 911](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean#L911). The attribute's comment: “union\_pushout”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isPushout_subscheme_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean, line 911](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean#L911). The attribute's comment: “union\_pushout”.
 
 > The canonical square from the scheme-theoretic intersection of two closed subschemes
 > to the two subschemes and then to their scheme-theoretic union is a pushout square.
@@ -201,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.4, Tag 01QX](https://stacks.math.columbia.edu/tag/01QX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

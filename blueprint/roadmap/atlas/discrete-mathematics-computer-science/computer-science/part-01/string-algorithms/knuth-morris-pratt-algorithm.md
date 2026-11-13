@@ -8,7 +8,7 @@ proof: formalized
 
 # Knuth–Morris–Pratt algorithm
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html).
 
 ## Time M
 
@@ -33,14 +33,14 @@ and while $t$ is scanned. List operations, array access and arithmetic cost noth
 When the boolean equality is lawful, the returned offset is the least offset at which $p$ occurs
 in $t$, and no offset is returned exactly when $p$ does not occur in $t$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search).
 
 ## Size of the KMP prefix table
 
 For every pattern $p$, the KMP prefix table of $p$ has
 exactly as many entries as $p$ has symbols, one for each symbol of $p$.
 
-Formalized by `Array.mkPrefixTable_size`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-size).
+Formalized by `Array.mkPrefixTable_size`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-size).
 
 ## The KMP prefix table stores the pattern
 
@@ -49,7 +49,7 @@ table is a pair consisting of a symbol and a failure length. For every type with
 equality test and every list $p$ over it, the list of first components of the entries of the
 prefix table built from $p$, read in order, equals $p$.
 
-Formalized by `Array.mkPrefixTable_symbols`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-symbols).
+Formalized by `Array.mkPrefixTable_symbols`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-symbols).
 
 ## KMP returns the first match
 
@@ -59,7 +59,7 @@ $p$ in $t$ returns the offset $i$ if and only if $p$ matches $t$ at $i$ and at n
 $p$ matches $t$ at $i$ when $i \le |t|$ and $p$ is a prefix of the list obtained from $t$ by
 dropping its first $i$ elements.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-some-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-some-iff).
 
 ## KMP finds no match exactly when no offset matches
 
@@ -69,7 +69,7 @@ returns no offset if and only if there is no natural number $i$ at which $p$ mat
 $p$ matches $t$ at $i$ when $i \le |t|$ and $p$ is a prefix of the list obtained from $t$ by
 dropping its first $i$ elements.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-none-iff).
 
 ## KMP finds no match exactly when the pattern does not occur
 
@@ -78,7 +78,7 @@ and $t$ (the text) over a type with a lawful boolean equality, KMP search for $p
 no offset if and only if $p$ is not a contiguous sublist of $t$, that is, there are no lists
 $u$, $v$ with $t = u \, p \, v$ (concatenation).
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff_not_isInfix`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-none-iff-not-is-infix).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff_not_isInfix`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-none-iff-not-is-infix).
 
 ## KMP search agrees with the first-infix split
 
@@ -88,7 +88,7 @@ the pair $(u, v)$ with $t = u \, p \, v$ (concatenation) and $u$ as short as pos
 nothing if $p$ does not occur in $t$. Then the value returned by KMP search for $p$ in $t$ is
 the length of $u$ if the split exists, and no offset otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_dropInfix?_map_length`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-drop-infix-map-length).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_dropInfix?_map_length`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-eq-drop-infix-map-length).
 
 ## KMP search makes linearly many comparisons
 
@@ -97,7 +97,7 @@ a type with a boolean equality, KMP search for $p$ in $t$ makes at most $2|p| + 
 comparisons in total, those made while building the prefix table included, where $|p|$ and
 $|t|$ are the lengths of $p$ and $t$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 942](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-time-le).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 942](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-time-le).
 
 ## The KMP failure function
 
@@ -108,7 +108,7 @@ $f$ of entry $q$ (counting from $0$) is the length of the longest proper prefix 
 that is also a suffix of $p_{\lt q+1}$: $f \le q$, $p_{\lt f}$ is a suffix of $p_{\lt q+1}$, and every
 $k \le q$ such that $p_{\lt k}$ is a suffix of $p_{\lt q+1}$ satisfies $k \le f$.
 
-Formalized by `Array.mkPrefixTable_failure_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 966](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L966). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-failure-spec).
+Formalized by `Array.mkPrefixTable_failure_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 966](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L966). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-failure-spec).
 
 ## Correctness of the KMP transition
 
@@ -121,14 +121,14 @@ the transition of the KMP prefix table of $p$ produces from $s$ on reading $x$ i
 the longest prefix of $p$ that is a suffix of $cx$: $s' \le n$, $p_{\lt s'}$ is a suffix of $cx$,
 and every $k \le n$ such that $p_{\lt k}$ is a suffix of $cx$ satisfies $k \le s'$.
 
-Formalized by `Array.mkPrefixTable_step_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-step-spec).
+Formalized by `Array.mkPrefixTable_step_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#mk-prefix-table-step-spec).
 
 ## KMP search on the empty pattern
 
 For every text $t$, KMP search for the empty pattern in
 $t$ returns offset $0$ at cost $0$, that is, without any symbol comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 1004](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L1004). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-nil-pattern).
+Formalized by `Cslib.Algorithms.Lean.TimeM.kmpSearch_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean, line 1004](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/KnuthMorrisPratt.lean#L1004). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html#kmp-search-nil-pattern).
 
 ## Depends on
 
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Knuth–Morris–Pratt algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/string-algorithms/knuth-morris-pratt-algorithm)

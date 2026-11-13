@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.23 Coherent formal modules
 
-Section 30.23 of the Stacks Project, [Tag 0EHN](https://stacks.math.columbia.edu/tag/0EHN). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.23 of the Stacks Project, [Tag 0EHN](https://stacks.math.columbia.edu/tag/0EHN). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 087W, a lemma
 
 [Tag 087W](https://stacks.math.columbia.edu/tag/087W) in the Stacks Project.
 
-**`Stacks.Coherent.coherentAdicSystemsEquivFGModuleCat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L541).
+**`Stacks.Coherent.coherentAdicSystemsEquivFGModuleCat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L542).
 
 > **Stacks 087W.** Coherent inverse systems on an affine Noetherian scheme are equivalent to
 > finite modules over the completion of its ring of global sections.
@@ -28,7 +28,7 @@ public noncomputable def coherentAdicSystemsEquivFGModuleCat
         FGModuleCat.{u} (AdicCompletion I Γ(X, ⊤))
 ```
 
-**`Stacks.Coherent.globalSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L564). The attribute's comment: “inverse-limit object”.
+**`Stacks.Coherent.globalSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L565). The attribute's comment: “inverse-limit object”.
 
 > **Stacks 087W.** The canonical comparison with the inverse limit of global sections.
 
@@ -40,7 +40,7 @@ public noncomputable def globalSectionsComparison
     completedModuleAsBase X I F ≅ limit (globalSectionsSystem F)
 ```
 
-**`Stacks.Coherent.globalSectionsComparison_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L581). The attribute's comment: “naturality”.
+**`Stacks.Coherent.globalSectionsComparison_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L582). The attribute's comment: “naturality”.
 
 > **Stacks 087W.** The comparison is natural in morphisms of coherent adic systems.
 
@@ -60,7 +60,7 @@ public theorem globalSectionsComparison_naturality
         (SheafOfModules.evaluation X.ringCatSheaf (op ⊤)))
 ```
 
-**`Stacks.Coherent.globalSectionsComparison_projection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L616). The attribute's comment: “surjective projections”.
+**`Stacks.Coherent.globalSectionsComparison_projection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L617). The attribute's comment: “surjective projections”.
 
 > **Stacks 087W.** Projection from the corresponding completed module onto any term is
 > surjective.
@@ -76,7 +76,7 @@ public theorem globalSectionsComparison_projection_surjective
         limit.π (globalSectionsSystem F) (op n)).hom)
 ```
 
-**`Stacks.Coherent.globalSectionsComparison_projection_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L631). The attribute's comment: “canonical quotient”.
+**`Stacks.Coherent.globalSectionsComparison_projection_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Equivalence.lean#L632). The attribute's comment: “canonical quotient”.
 
 > **Stacks 087W.** The kernel of the projection is exactly the `(n+1)`-st ideal power multiple,
 > so the induced map from the quotient is an isomorphism.
@@ -97,7 +97,7 @@ public theorem globalSectionsComparison_projection_ker
 
 [Tag 087X](https://stacks.math.columbia.edu/tag/087X) in the Stacks Project.
 
-**`Stacks.Coherent.abelian_coherentAdicSystems`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean#L200). The attribute's comment: “the category is abelian”.
+**`Stacks.Coherent.abelian_coherentAdicSystems`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean#L200). The attribute's comment: “the category is abelian”.
 
 > **Part (1) of Tag 087X: the category of coherent adic systems on a Noetherian scheme is
 > abelian.** It is preadditive, has kernels, cokernels and finite products, and its coimage-image
@@ -108,7 +108,7 @@ public instance abelian_coherentAdicSystems {X : Scheme.{u}} [IsNoetherian X]
     (I : X.IdealSheafData) : Abelian (CoherentAdicSystems I)
 ```
 
-**`Stacks.Coherent.restrictFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean#L208). The attribute's comment: “restriction to an open is exact”.
+**`Stacks.Coherent.restrictFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Abelian.lean#L208). The attribute's comment: “restriction to an open is exact”.
 
 > **Part (2) of Tag 087X: restriction to an open subscheme is exact on coherent adic systems.**
 > Restriction preserves finite limits, being compatible with the kernel construction, and finite
@@ -121,7 +121,7 @@ public theorem restrictFunctor_exact {X : Scheme.{u}} [IsNoetherian X] (I : X.Id
       PreservesFiniteColimits (restrictFunctor I f)
 ```
 
-**`Stacks.Coherent.exact_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/ExactnessLocal.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/ExactnessLocal.lean#L133). The attribute's comment: “exactness may be checked on an open covering”.
+**`Stacks.Coherent.exact_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/ExactnessLocal.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/ExactnessLocal.lean#L133). The attribute's comment: “exactness may be checked on an open covering”.
 
 > **Part (3) of Tag 087X: exactness in `Coh(X, ℐ)` may be checked on an open covering of `X`.**
 > A pair of morphisms `α : F ⟶ G` and `β : G ⟶ H` of coherent adic systems on a Noetherian scheme
@@ -145,7 +145,7 @@ public theorem exact_iff_restrict {X : Scheme.{u}} [IsNoetherian X] (I : X.Ideal
 
 [Tag 087Y](https://stacks.math.columbia.edu/tag/087Y) in the Stacks Project.
 
-**`Stacks.Coherent.epi_iff_epi_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Epi.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Epi.lean#L65).
+**`Stacks.Coherent.epi_iff_epi_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Epi.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Epi.lean#L65).
 
 > **Stacks 087Y.** A morphism of coherent adic systems is surjective exactly when its
 > component at the lowest level is surjective.
@@ -159,7 +159,7 @@ public theorem epi_iff_epi_app_zero {F G : CoherentAdicSystems I} (f : F ⟶ G) 
 
 [Tag 0880](https://stacks.math.columbia.edu/tag/0880) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L475). The attribute's comment: “the functor”.
+**`Stacks.Algebraization.completionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L475). The attribute's comment: “the functor”.
 
 > Completion of a coherent sheaf along a quasi-coherent ideal, as a coherent adic inverse
 > system.
@@ -171,7 +171,7 @@ public noncomputable def completionFunctor (X : Scheme.{u})
       Stacks.Coherent.CoherentAdicSystems I
 ```
 
-**`Stacks.Algebraization.completionFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L488). The attribute's comment: “object formula”.
+**`Stacks.Algebraization.completionFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L488). The attribute's comment: “object formula”.
 
 > The `n`-th term of the completion is the quotient by `I ^ (n+1)`.
 
@@ -182,7 +182,7 @@ public theorem completionFunctor_obj (X : Scheme.{u})
     ((completionFunctor X I).obj F).obj.obj (op n) = idealPowerQuotient I (n + 1) F.obj
 ```
 
-**`Stacks.Algebraization.completionProjection_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L504). The attribute's comment: “transition maps”.
+**`Stacks.Algebraization.completionProjection_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L504). The attribute's comment: “transition maps”.
 
 > The projections are compatible with the transition maps of the inverse system.
 
@@ -195,7 +195,7 @@ public theorem completionProjection_transition (X : Scheme.{u})
       completionProjection X I F n
 ```
 
-**`Stacks.Algebraization.completionFunctor_map_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L515). The attribute's comment: “morphism maps”.
+**`Stacks.Algebraization.completionFunctor_map_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Basic.lean#L515). The attribute's comment: “morphism maps”.
 
 > Completion maps are exactly the maps induced on the successive quotients.
 
@@ -211,7 +211,7 @@ public theorem completionFunctor_map_quotient (X : Scheme.{u})
 
 [Tag 0881](https://stacks.math.columbia.edu/tag/0881) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Exactness.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Exactness.lean#L389).
+**`Stacks.Algebraization.completionFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Exactness.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/Exactness.lean#L389).
 
 > **Stacks 0881: the completion functor `Coh(𝒪_X) ⥤ Coh(X, I)` of Stacks 0880 is exact.**
 >
@@ -228,7 +228,7 @@ public theorem completionFunctor_exact :
 
 [Tag 0882](https://stacks.math.columbia.edu/tag/0882) in the Stacks Project.
 
-**`Stacks.Algebraization.completionInternalHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/InternalHomCompletion.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/InternalHomCompletion.lean#L228). References: SGA 2 X (2.2), “partial”.
+**`Stacks.Algebraization.completionInternalHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/InternalHomCompletion.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/InternalHomCompletion.lean#L228). References: SGA 2 X (2.2), “partial”.
 
 > **Stacks 0882.** Let `X` be a locally Noetherian scheme, `I` a quasi-coherent sheaf of ideals
 > on `X` and `G`, `F` coherent `𝒪_X`-modules; put `H = SheafHom(G, F)`. Then
@@ -260,7 +260,7 @@ public noncomputable def completionInternalHomEquiv (X : Scheme.{u}) [IsLocallyN
 
 [Tag 0889](https://stacks.math.columbia.edu/tag/0889) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_unique_algebraization_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Algebraize.lean, line 863](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Algebraize.lean#L863). The attribute's comment: “part (1): algebraization of a map into a completion”.
+**`Stacks.Algebraization.exists_unique_algebraization_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Algebraize.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Algebraize.lean#L863). The attribute's comment: “part (1): algebraization of a map into a completion”.
 
 > **Stacks 0889 (1) on a Noetherian scheme.** Let `X` be a Noetherian scheme, `ℐ` a
 > quasi-coherent ideal sheaf, `G` a coherent `𝒪_X`-module and `(F_n)` a coherent `ℐ`-adic system. A
@@ -301,7 +301,7 @@ public theorem exists_unique_algebraization_of_isNoetherian {X : Scheme.{u}} [Is
                     β.hom ≫ ((completionFunctor X I).map d.hom).hom = β'.hom
 ```
 
-**`Stacks.Algebraization.exists_unique_algebraization_dual_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizeDualTheorem.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizeDualTheorem.lean#L395). The attribute's comment: “part (2): algebraization of a map out of a completion”.
+**`Stacks.Algebraization.exists_unique_algebraization_dual_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizeDualTheorem.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizeDualTheorem.lean#L395). The attribute's comment: “part (2): algebraization of a map out of a completion”.
 
 > **Stacks 0889 (2).** Let `X` be a Noetherian scheme, `ℐ` a quasi-coherent ideal sheaf, `G` a
 > coherent `𝒪_X`-module and `(F_n)` a coherent `ℐ`-adic system. A morphism `α : G^∧ ⟶ (F_n)` whose
@@ -341,7 +341,7 @@ public theorem exists_unique_algebraization_dual_of_isNoetherian {X : Scheme.{u}
 
 [Tag 0EHP](https://stacks.math.columbia.edu/tag/0EHP) in the Stacks Project.
 
-**`Stacks.Algebraization.essImage_and_bijective_of_isPowerAnnihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/TorsionExtBijective.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/TorsionExtBijective.lean#L532).
+**`Stacks.Algebraization.essImage_and_bijective_of_isPowerAnnihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/TorsionExtBijective.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/TorsionExtBijective.lean#L532).
 
 > **[Stacks, Tag 0EHP].** Let `X` be a Noetherian scheme and `ℐ ⊂ 𝒪_X` a quasi-coherent sheaf
 > of ideals.
@@ -374,7 +374,7 @@ public theorem essImage_and_bijective_of_isPowerAnnihilated (X : Scheme.{u}) [Is
 
 [Tag 087Z](https://stacks.math.columbia.edu/tag/087Z) in the Stacks Project.
 
-**`Stacks.Coherent.finiteTypeAssociatedGradedData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/AssociatedGraded/GradedModuleFiniteType.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/AssociatedGraded/GradedModuleFiniteType.lean#L670).
+**`Stacks.Coherent.finiteTypeAssociatedGradedData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/AssociatedGraded/GradedModuleFiniteType.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/AssociatedGraded/GradedModuleFiniteType.lean#L670).
 
 > **Stacks Project, Tag 087Z.** For a Noetherian scheme `X` and a quasi-coherent sheaf of
 > ideals `ℐ`, the transition kernels of an object of `Coh(X, ℐ)` form a finite type, graded,
@@ -390,7 +390,7 @@ public theorem finiteTypeAssociatedGradedData {X : Scheme.{u}} [IsNoetherian X]
 
 [Tag 0887](https://stacks.math.columbia.edu/tag/0887) in the Stacks Project.
 
-**`Stacks.Coherent.coherentAdicPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L200). The attribute's comment: “the functor f^*”.
+**`Stacks.Coherent.coherentAdicPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L200). The attribute's comment: “the functor f^*”.
 
 > **Stacks 0887: the functor `f^* : Coh(Y, 𝒥) ⟶ Coh(X, ℐ)`.** For a morphism `f : X ⟶ Y` of
 > Noetherian schemes and a quasi-coherent sheaf of ideals `𝒥` on `Y`, termwise pullback is a functor
@@ -405,7 +405,7 @@ public def coherentAdicPullback {X Y : Scheme.{u}} [IsNoetherian X] [IsNoetheria
     CoherentAdicSystems J ⥤ CoherentAdicSystems (J.comap f)
 ```
 
-**`Stacks.Coherent.coherentAdicPullback_obj_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L210). The attribute's comment: “the functor sends (G n) to (f^* G n)”.
+**`Stacks.Coherent.coherentAdicPullback_obj_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L210). The attribute's comment: “the functor sends (G n) to (f^* G n)”.
 
 > **The functor of Stacks 0887 sends the system `(G_n)` to the system `(f^*G_n)`.**
 
@@ -416,7 +416,7 @@ public theorem coherentAdicPullback_obj_obj {X Y : Scheme.{u}} [IsNoetherian X] 
       (Scheme.Modules.pullback f).obj (G.obj.obj n)
 ```
 
-**`Stacks.Coherent.coherentAdicPullback_rightExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L233). The attribute's comment: “right exactness”.
+**`Stacks.Coherent.coherentAdicPullback_rightExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L233). The attribute's comment: “right exactness”.
 
 > **Stacks 0887: the pullback functor on coherent adic systems is right exact.**
 >
@@ -431,7 +431,7 @@ public theorem coherentAdicPullback_rightExact {X Y : Scheme.{u}} [IsNoetherian 
     rightExactFunctor _ _ (coherentAdicPullback f J)
 ```
 
-**`Stacks.Coherent.coherentAdicPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L351). The attribute's comment: “exactness when f is flat”.
+**`Stacks.Coherent.coherentAdicPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/Pullback.lean#L351). The attribute's comment: “exactness when f is flat”.
 
 > **Stacks 0887: along a flat morphism the pullback functor on coherent adic systems is
 > exact.**
@@ -446,7 +446,7 @@ public theorem coherentAdicPullback_exact {X Y : Scheme.{u}} [IsNoetherian X] [I
 
 [Tag 0EHQ](https://stacks.math.columbia.edu/tag/0EHQ) in the Stacks Project.
 
-**`Stacks.Coherent.coherentAdicPullback_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/PullbackEquivalence.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/PullbackEquivalence.lean#L737).
+**`Stacks.Coherent.coherentAdicPullback_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/PullbackEquivalence.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/PullbackEquivalence.lean#L737).
 
 > **[Stacks, Tag 0EHQ].** Let `f : X ⟶ Y` be a flat morphism of Noetherian schemes, let
 > `𝒥 ⊆ 𝒪_Y` be a quasi-coherent sheaf of ideals cutting out `Z ⊆ Y`, and let
@@ -471,7 +471,7 @@ public theorem coherentAdicPullback_isEquivalence {X Y : Scheme.{u}} [IsNoetheri
 
 [Tag 0EHR](https://stacks.math.columbia.edu/tag/0EHR) in the Stacks Project.
 
-**`Stacks.Coherent.coherentAdicSystemsEquivOfSupportEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/IdealChange.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/IdealChange.lean#L616).
+**`Stacks.Coherent.coherentAdicSystemsEquivOfSupportEq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/IdealChange.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/IdealChange.lean#L616).
 
 > **[Stacks, Tag 0EHR].** Let `X` be a Noetherian scheme and let `ℐ, 𝒥 ⊆ 𝒪_X` be quasi-coherent
 > sheaves of ideals. If `V(ℐ) = V(𝒥)` as closed subsets of `X`, then the categories `Coh(X, ℐ)` and
@@ -493,4 +493,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.23, Tag 0EHN](https://stacks.math.columbia.edu/tag/0EHN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

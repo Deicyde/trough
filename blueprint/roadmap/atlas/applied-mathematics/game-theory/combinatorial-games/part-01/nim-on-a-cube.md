@@ -7,7 +7,7 @@ statement: formalized
 
 # Nim on a cube
 
-16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html).
+16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html).
 
 ## Rotation move on the cube
 
@@ -24,7 +24,7 @@ of the rotation.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 2 (the variation `C_R`).
 
-Formalized by `MetaMathlibExt.CubeRotationMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-move).
+Formalized by `MetaMathlibExt.CubeRotationMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-move).
 
 ## Rotation moves at the empty cube
 
@@ -37,7 +37,7 @@ no rotation move from the empty position.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 2 (the variation `C_R`).
 
-Formalized by `MetaMathlibExt.cubeRotationMove_examples`, a theorem declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-move-examples).
+Formalized by `MetaMathlibExt.cubeRotationMove_examples`, a theorem declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-move-examples).
 
 ## Vertex move on the cube
 
@@ -53,7 +53,7 @@ token in total is removed from the three faces at one vertex.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 1 (the variation `C_V`).
 
-Formalized by `MetaMathlibExt.CubeVertexMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-move).
+Formalized by `MetaMathlibExt.CubeVertexMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-move).
 
 ## Edge move on the cube
 
@@ -69,7 +69,7 @@ edge.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 1 (the variation `C_E`).
 
-Formalized by `MetaMathlibExt.CubeEdgeMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-edge-move).
+Formalized by `MetaMathlibExt.CubeEdgeMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-edge-move).
 
 ## Face move on the cube
 
@@ -84,7 +84,7 @@ face. So $C_F$ is Nim with six heaps.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 1 (the variation `C_F`).
 
-Formalized by `MetaMathlibExt.CubeFaceMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-face-move).
+Formalized by `MetaMathlibExt.CubeFaceMove`, a definition declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-face-move).
 
 ## Examples of vertex, edge and face moves
 
@@ -99,7 +99,7 @@ the empty position.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Section 1.
 
-Formalized by `MetaMathlibExt.cubeVertexEdgeFaceMove_examples`, a theorem declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-edge-face-move-examples).
+Formalized by `MetaMathlibExt.cubeVertexEdgeFaceMove_examples`, a theorem declared in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-edge-face-move-examples).
 
 ## P-positions of rotation Nim on a cube
 
@@ -117,7 +117,7 @@ P-positions (second-player wins) under normal play.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.cubeRotationNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeRotationNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-nim-p-positions).
 
 ## P-positions of vertex Nim on a cube
 
@@ -136,7 +136,7 @@ Since every play terminates, these two properties make $P$ the set of P-position
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.cubeVertexNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeVertexNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-nim-p-positions).
 
 ## P-positions of edge Nim on a cube
 
@@ -155,7 +155,7 @@ P-positions (second-player wins) under normal play.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.cubeEdgeNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-edge-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeEdgeNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-edge-nim-p-positions).
 
 ## Misère P-positions of vertex Nim on a cube
 
@@ -173,7 +173,7 @@ of $(0, 0, 0, 0, 0, 1)$, $(0, 1, 1, 0, 1, 1)$ and $(1, 1, 1, 1, 1, 1)$.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.cubeVertexNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-nim-misere-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeVertexNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-vertex-nim-misere-p-positions).
 
 ## Misère P-positions of rotation Nim on a cube
 
@@ -191,7 +191,7 @@ $p = (1, 1, 1, 1, 1, 1)$.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.cubeRotationNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-nim-misere-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeRotationNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-rotation-nim-misere-p-positions).
 
 ## Misère P-positions of face Nim on a cube
 
@@ -210,7 +210,7 @@ $p \in \mathcal P$ if and only if either $C \ge 2$ and $a \oplus b \oplus c \opl
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.cubeFaceNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-face-nim-misere-p-positions).
+Stated but not proved: `MetaMathlibExt.cubeFaceNim_misere_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#cube-face-nim-misere-p-positions).
 
 ## P-positions of slow vertex Nim on a cube
 
@@ -230,7 +230,7 @@ game under normal play.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.slowCubeVertexNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-vertex-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.slowCubeVertexNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-vertex-nim-p-positions).
 
 ## P-positions of slow edge Nim on a cube
 
@@ -250,7 +250,7 @@ game under normal play.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.slowCubeEdgeNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-edge-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.slowCubeEdgeNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-edge-nim-p-positions).
 
 ## P-positions of slow face Nim on a cube
 
@@ -267,7 +267,7 @@ game under normal play.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.slowCubeFaceNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-face-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.slowCubeFaceNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-face-nim-p-positions).
 
 ## P-positions of slow rotation Nim on a cube
 
@@ -286,7 +286,7 @@ $(1, 1, 1, 0, 0, 0)$ and $(1, 1, 1, 1, 1, 1)$.
 
 - Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.slowCubeRotationNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-rotation-nim-p-positions).
+Stated but not proved: `MetaMathlibExt.slowCubeRotationNim_pPositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CubeRotationNimWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CubeRotationNimWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html#slow-cube-rotation-nim-p-positions).
 
 ## Depends on
 
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nim on a cube](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/nim-on-a-cube/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/nim-on-a-cube)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/nim-on-a-cube)

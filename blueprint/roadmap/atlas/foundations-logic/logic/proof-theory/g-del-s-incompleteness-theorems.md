@@ -8,7 +8,7 @@ proof: formalized
 
 # Gödel's incompleteness theorems
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html).
 
 ## Abstract Gödel–Rosser incompleteness theorem
 
@@ -44,7 +44,7 @@ consistency and representability as in Rosser (1936) and Smith, 2nd ed., Chapter
 
 - Kurt Gödel, *Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I*, Monatshefte für Mathematik und Physik 38 (1931), 173–198; J. Barkley Rosser, *Extensions of some theorems of Gödel and Church*, Journal of Symbolic Logic 1 (1936), 87–91.
 
-Formalized by `MetaMathlibExt.godel_rosser_abstract_schema`, a theorem declared in [MathlibExt/Logic/GodelRosserAbstractSchema.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Logic/GodelRosserAbstractSchema.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html#godel-rosser-abstract-schema).
+Formalized by `MetaMathlibExt.godel_rosser_abstract_schema`, a theorem declared in [MathlibExt/Logic/GodelRosserAbstractSchema.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Logic/GodelRosserAbstractSchema.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html#godel-rosser-abstract-schema).
 
 ## Gödel's second incompleteness theorem, abstract Hilbert–Bernays–Löb form
 
@@ -73,7 +73,7 @@ of Hilbert–Bernays (1939) and Löb (1955), as presented by Boolos, Ch. 3, and 
 
 - Kurt Gödel, *Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I*, Monatshefte für Mathematik und Physik 38 (1931), 173–198; Martin H. Löb, *Solution of a problem of Leon Henkin*, Journal of Symbolic Logic 20 (1955), 115–118.
 
-Formalized by `MetaMathlibExt.hilbert_bernays_lob_second_incompleteness`, a theorem declared in [MathlibExt/Logic/HilbertBernaysLob.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Logic/HilbertBernaysLob.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html#hilbert-bernays-lob-second-incompletenes).
+Formalized by `MetaMathlibExt.hilbert_bernays_lob_second_incompleteness`, a theorem declared in [MathlibExt/Logic/HilbertBernaysLob.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Logic/HilbertBernaysLob.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html#hilbert-bernays-lob-second-incompletenes).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gödel's incompleteness theorems](https://deicyde.github.io/atlas-lean/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/proof-theory/g-del-s-incompleteness-theorems)

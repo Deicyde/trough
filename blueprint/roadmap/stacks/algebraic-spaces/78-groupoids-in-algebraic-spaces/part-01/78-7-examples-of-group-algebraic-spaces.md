@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.7 Examples of group algebraic spaces
 
-Section 78.7 of the Stacks Project, [Tag 06P7](https://stacks.math.columbia.edu/tag/06P7). 6 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.7 of the Stacks Project, [Tag 06P7](https://stacks.math.columbia.edu/tag/06P7). 6 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 043J, an example
 
 [Tag 043J](https://stacks.math.columbia.edu/tag/043J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L74). The attribute's comment: “the multiplicative group scheme as an object of the site”.
+**`AlgebraicGeometry.Space.multiplicativeGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L74). The attribute's comment: “the multiplicative group scheme as an object of the site”.
 
 > **Stacks Project, Tag 043J.** The multiplicative group scheme over `S`, read as an object of
 > the big fppf site over `S`.
@@ -23,7 +23,7 @@ Section 78.7 of the Stacks Project, [Tag 06P7](https://stacks.math.columbia.edu/
 noncomputable def multiplicativeGroupSiteObject : BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L93).
+**`AlgebraicGeometry.Space.multiplicativeGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L93).
 
 > **Stacks Project, Tag 043J.** The multiplicative group algebraic space
 > `Gₘ,B = B ×_S Gₘ,S` over an algebraic space `B` over `S`.
@@ -33,7 +33,7 @@ noncomputable def multiplicativeGroupSpace (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
     (hB : IsAlgebraicSpace 𝒞 S hS B) : GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L101). The attribute's comment: “the underlying base change”.
+**`AlgebraicGeometry.Space.multiplicativeGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L101). The attribute's comment: “the underlying base change”.
 
 > **Stacks Project, Tag 043J.** The algebraic space underlying the multiplicative group
 > algebraic space is the fibre product `B ×_S Gₘ,S`.
@@ -46,7 +46,7 @@ theorem multiplicativeGroupSpace_obj_X (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Ty
         B ⨯ (multiplicativeGroupPointsOnSite 𝒞 S hS ⋙ forget GrpCat) ⟶ B) : Over B)
 ```
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L111). The attribute's comment: “the functor of global units”.
+**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L111). The attribute's comment: “the functor of global units”.
 
 > **Stacks Project, Tag 043J.** The group of points of the multiplicative group algebraic
 > space over a scheme `T` over `B` is the group of units in the global sections of `T`.
@@ -60,7 +60,7 @@ noncomputable def multiplicativeGroupSpacePoints (B : (BigFppfOver 𝒞 S hS)ᵒ
       (globalUnits S).obj (Opposite.op ((toSchemeOver 𝒞 S hS).obj T))
 ```
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L124). The attribute's comment: “the functor of global units”.
+**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L124). The attribute's comment: “the functor of global units”.
 
 > `AlgebraicGeometry.Space.multiplicativeGroupSpacePoints` reads a point through the second
 > projection of the fibre product and the canonical identification of **Stacks 022U**.
@@ -77,7 +77,7 @@ theorem multiplicativeGroupSpacePoints_apply (B : (BigFppfOver 𝒞 S hS)ᵒᵖ 
           B ⨯ (multiplicativeGroupPointsOnSite 𝒞 S hS ⋙ forget GrpCat) ⟶ _)))
 ```
 
-**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L139). The attribute's comment: “the functor of global units”.
+**`AlgebraicGeometry.Space.multiplicativeGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Multiplicative.lean#L139). The attribute's comment: “the functor of global units”.
 
 > `AlgebraicGeometry.Space.multiplicativeGroupSpacePoints` is natural in the scheme over `B`,
 > so what is asserted is representability of the functor of global units and not a family of
@@ -99,7 +99,7 @@ theorem multiplicativeGroupSpacePoints_naturality (B : (BigFppfOver 𝒞 S hS)�
 
 [Tag 043K](https://stacks.math.columbia.edu/tag/043K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.rootsOfUnitySiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L156). The attribute's comment: “the roots-of-unity group scheme as an object of the site”. References: SGA 1 XI (6.1).
+**`AlgebraicGeometry.Space.rootsOfUnitySiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L156). The attribute's comment: “the roots-of-unity group scheme as an object of the site”. References: SGA 1 XI (6.1).
 
 > **Stacks Project, Tag 043K.** The group scheme `μₙ,S` of `n`-th roots of unity over `S`,
 > read as an object of the big fppf site over `S`.
@@ -108,7 +108,7 @@ theorem multiplicativeGroupSpacePoints_naturality (B : (BigFppfOver 𝒞 S hS)�
 noncomputable def rootsOfUnitySiteObject : BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.rootsOfUnitySpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L175).
+**`AlgebraicGeometry.Space.rootsOfUnitySpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L175).
 
 > **Stacks Project, Tag 043K.** The group algebraic space `μₙ,B = B ×_S μₙ,S` of `n`-th roots
 > of unity over an algebraic space `B` over `S`.
@@ -118,7 +118,7 @@ noncomputable def rootsOfUnitySpace [Fact (0 < n)] (B : (BigFppfOver 𝒞 S hS)�
     (hB : IsAlgebraicSpace 𝒞 S hS B) : GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.rootsOfUnitySpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L183). The attribute's comment: “the underlying base change”.
+**`AlgebraicGeometry.Space.rootsOfUnitySpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L183). The attribute's comment: “the underlying base change”.
 
 > **Stacks Project, Tag 043K.** The algebraic space underlying the group algebraic space of
 > `n`-th roots of unity is the fibre product `B ×_S μₙ,S`.
@@ -131,7 +131,7 @@ theorem rootsOfUnitySpace_obj_X [Fact (0 < n)] (B : (BigFppfOver 𝒞 S hS)ᵒ�
         B ⨯ (rootsOfUnityPointsOnSite 𝒞 S hS n ⋙ forget GrpCat) ⟶ B) : Over B)
 ```
 
-**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L194). The attribute's comment: “the functor of roots of unity”.
+**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L194). The attribute's comment: “the functor of roots of unity”.
 
 > **Stacks Project, Tag 043K.** The group of points of the group algebraic space of `n`-th
 > roots of unity over a scheme `T` over `B` is the group of `n`-th roots of unity in the global
@@ -147,7 +147,7 @@ noncomputable def rootsOfUnitySpacePoints [Fact (0 < n)]
         (Opposite.op ((toSchemeOver 𝒞 S hS).obj T))
 ```
 
-**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L208). The attribute's comment: “the functor of roots of unity”.
+**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L208). The attribute's comment: “the functor of roots of unity”.
 
 > `AlgebraicGeometry.Space.rootsOfUnitySpacePoints` reads a point through the second
 > projection of the fibre product and the canonical identification of **Stacks 040M**.
@@ -164,7 +164,7 @@ theorem rootsOfUnitySpacePoints_apply [Fact (0 < n)]
           B ⨯ (rootsOfUnityPointsOnSite 𝒞 S hS n ⋙ forget GrpCat) ⟶ _)))
 ```
 
-**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L223). The attribute's comment: “the functor of roots of unity”.
+**`AlgebraicGeometry.Space.rootsOfUnitySpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/RootsOfUnity.lean#L223). The attribute's comment: “the functor of roots of unity”.
 
 > `AlgebraicGeometry.Space.rootsOfUnitySpacePoints` is natural in the scheme over `B`, so
 > what is asserted is representability of the functor of roots of unity and not a family of
@@ -188,7 +188,7 @@ theorem rootsOfUnitySpacePoints_naturality [Fact (0 < n)]
 
 [Tag 043L](https://stacks.math.columbia.edu/tag/043L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.additiveGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L64). The attribute's comment: “the additive group scheme as an object of the site”.
+**`AlgebraicGeometry.Space.additiveGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L64). The attribute's comment: “the additive group scheme as an object of the site”.
 
 > The additive group scheme over `S`, read as an object of the big fppf site over `S`.
 
@@ -196,7 +196,7 @@ theorem rootsOfUnitySpacePoints_naturality [Fact (0 < n)]
 noncomputable def additiveGroupSiteObject : BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.additiveGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L82).
+**`AlgebraicGeometry.Space.additiveGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L82).
 
 > The additive group algebraic space `Gₐ,B = B ×_S Gₐ,S` over an algebraic space `B` over
 > `S`.
@@ -206,7 +206,7 @@ noncomputable def additiveGroupSpace (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type
     (hB : IsAlgebraicSpace 𝒞 S hS B) : GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.additiveGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L90). The attribute's comment: “the underlying base change”.
+**`AlgebraicGeometry.Space.additiveGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L90). The attribute's comment: “the underlying base change”.
 
 > The algebraic space underlying the additive group algebraic space is the fibre product
 > `B ×_S Gₐ,S`.
@@ -219,7 +219,7 @@ theorem additiveGroupSpace_obj_X (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type u)
         B ⨯ (additiveGroupPointsOnSite 𝒞 S hS ⋙ forget GrpCat) ⟶ B) : Over B)
 ```
 
-**`AlgebraicGeometry.Space.additiveGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L100). The attribute's comment: “the functor of global sections”.
+**`AlgebraicGeometry.Space.additiveGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L100). The attribute's comment: “the functor of global sections”.
 
 > The group of points of the additive group algebraic space over a scheme `T` over `B` is the
 > additive group of global sections of `T`.
@@ -233,7 +233,7 @@ noncomputable def additiveGroupSpacePoints (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
       (globalSectionsAdditive S).obj (Opposite.op ((toSchemeOver 𝒞 S hS).obj T))
 ```
 
-**`AlgebraicGeometry.Space.additiveGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L113). The attribute's comment: “the functor of global sections”.
+**`AlgebraicGeometry.Space.additiveGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L113). The attribute's comment: “the functor of global sections”.
 
 > `AlgebraicGeometry.Space.additiveGroupSpacePoints` reads a point through the second
 > projection of the fibre product and the canonical identification of **Stacks 022V**.
@@ -250,7 +250,7 @@ theorem additiveGroupSpacePoints_apply (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Ty
           B ⨯ (additiveGroupPointsOnSite 𝒞 S hS ⋙ forget GrpCat) ⟶ _)))
 ```
 
-**`AlgebraicGeometry.Space.additiveGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L126). The attribute's comment: “the functor of global sections”.
+**`AlgebraicGeometry.Space.additiveGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/Additive.lean#L126). The attribute's comment: “the functor of global sections”.
 
 > `AlgebraicGeometry.Space.additiveGroupSpacePoints` is natural in the scheme over `B`.
 
@@ -270,7 +270,7 @@ theorem additiveGroupSpacePoints_naturality (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
 
 [Tag 043M](https://stacks.math.columbia.edu/tag/043M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.generalLinearSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L78). The attribute's comment: “the general linear group scheme as an object of the site”.
+**`AlgebraicGeometry.Space.generalLinearSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L78). The attribute's comment: “the general linear group scheme as an object of the site”.
 
 > The general linear group scheme over `S`, read as an object of the big fppf site over `S`.
 
@@ -278,7 +278,7 @@ theorem additiveGroupSpacePoints_naturality (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
 noncomputable def generalLinearSiteObject : BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.generalLinearSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L97).
+**`AlgebraicGeometry.Space.generalLinearSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L97).
 
 > The general linear group algebraic space `GLₙ,B = B ×_S GLₙ,S` over an algebraic space `B`
 > over `S`.
@@ -288,7 +288,7 @@ noncomputable def generalLinearSpace (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type
     (hB : IsAlgebraicSpace 𝒞 S hS B) : GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.generalLinearSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L105). The attribute's comment: “the underlying base change”.
+**`AlgebraicGeometry.Space.generalLinearSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L105). The attribute's comment: “the underlying base change”.
 
 > The algebraic space underlying the general linear group algebraic space is the fibre product
 > `B ×_S GLₙ,S`.
@@ -301,7 +301,7 @@ theorem generalLinearSpace_obj_X (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type u)
         B ⨯ (generalLinearPointsOnSite 𝒞 S hS n ⋙ forget GrpCat) ⟶ B) : Over B)
 ```
 
-**`AlgebraicGeometry.Space.generalLinearSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L115). The attribute's comment: “the functor of invertible matrices”.
+**`AlgebraicGeometry.Space.generalLinearSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L115). The attribute's comment: “the functor of invertible matrices”.
 
 > The group of points of the general linear group algebraic space over a scheme `T` over `B` is
 > the group of invertible `n × n` matrices over the global sections of `T`.
@@ -316,7 +316,7 @@ noncomputable def generalLinearSpacePoints (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
         (Opposite.op ((toSchemeOver 𝒞 S hS).obj T))
 ```
 
-**`AlgebraicGeometry.Space.generalLinearSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L129). The attribute's comment: “the functor of invertible matrices”.
+**`AlgebraicGeometry.Space.generalLinearSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L129). The attribute's comment: “the functor of invertible matrices”.
 
 > `AlgebraicGeometry.Space.generalLinearSpacePoints` sends a point to the image of its second
 > projection to `GLₙ,S` under the canonical identification of **Stacks 022W**.
@@ -333,7 +333,7 @@ theorem generalLinearSpacePoints_apply (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Ty
           B ⨯ (generalLinearPointsOnSite 𝒞 S hS n ⋙ forget GrpCat) ⟶ _)))
 ```
 
-**`AlgebraicGeometry.Space.generalLinearSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L142). The attribute's comment: “the functor of invertible matrices”.
+**`AlgebraicGeometry.Space.generalLinearSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/GeneralLinear.lean#L142). The attribute's comment: “the functor of invertible matrices”.
 
 > `AlgebraicGeometry.Space.generalLinearSpacePoints` is natural in the scheme over `B`.
 
@@ -354,7 +354,7 @@ theorem generalLinearSpacePoints_naturality (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
 
 [Tag 043N](https://stacks.math.columbia.edu/tag/043N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.determinantGroupSpaceMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L200).
+**`AlgebraicGeometry.Space.determinantGroupSpaceMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L200).
 
 > **Stacks Project, Tag 043N.** The determinant, as a morphism of group algebraic spaces
 > `GLₙ,B ⟶ Gₘ,B` over an algebraic space `B` over `S`.  It is the base change to `B` of the
@@ -366,7 +366,7 @@ noncomputable def determinantGroupSpaceMorphism (B : (BigFppfOver 𝒞 S hS)ᵒ�
     generalLinearSpace 𝒞 S hS n B hB ⟶ multiplicativeGroupSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.determinantGroupSpaceMorphism_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L214). The attribute's comment: “base change of the determinant morphism over the base scheme”.
+**`AlgebraicGeometry.Space.determinantGroupSpaceMorphism_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L214). The attribute's comment: “base change of the determinant morphism over the base scheme”.
 
 > **Stacks Project, Tag 043N.** The morphism over `B` underlying the determinant morphism of
 > group algebraic spaces is the product of the identity of `B` with the determinant morphism of
@@ -379,7 +379,7 @@ theorem determinantGroupSpaceMorphism_hom (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤
       determinantSpaceHom 𝒞 S hS n B
 ```
 
-**`AlgebraicGeometry.Space.determinantSpaceHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L246). The attribute's comment: “the determinant on points”.
+**`AlgebraicGeometry.Space.determinantSpaceHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Determinant.lean#L246). The attribute's comment: “the determinant on points”.
 
 > **Stacks Project, Tag 043N.** On every scheme `T` over `B` the determinant morphism of group
 > algebraic spaces sends a point of `GLₙ,B`, that is an invertible `n × n` matrix over the global
@@ -400,7 +400,7 @@ theorem determinantSpaceHom_apply (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type u)
 
 [Tag 043O](https://stacks.math.columbia.edu/tag/043O) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.constantGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L80). The attribute's comment: “the constant group scheme as an object of the site”.
+**`AlgebraicGeometry.Space.constantGroupSiteObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L80). The attribute's comment: “the constant group scheme as an object of the site”.
 
 > **Stacks Project, Tag 043O.** The constant group scheme `G_S` of **Stacks 03YW**, read as an
 > object of the big fppf site over `S`.  That it belongs to the site is a size hypothesis on the
@@ -411,7 +411,7 @@ noncomputable def constantGroupSiteObject
     (hG : 𝒞.Contains (constantGroupScheme G S).X.left) : BigFppfOver 𝒞 S hS
 ```
 
-**`AlgebraicGeometry.Space.constantGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L102).
+**`AlgebraicGeometry.Space.constantGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L102).
 
 > **Stacks Project, Tag 043O.** The constant group algebraic space `G_B = B ×_S G_S` over an
 > algebraic space `B` over `S`, for an abstract group `G`.
@@ -423,7 +423,7 @@ noncomputable def constantGroupSpace (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type
     GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.constantGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L112). The attribute's comment: “the underlying base change”.
+**`AlgebraicGeometry.Space.constantGroupSpace_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L112). The attribute's comment: “the underlying base change”.
 
 > **Stacks Project, Tag 043O.** The algebraic space underlying the constant group algebraic
 > space is the fibre product `B ×_S G_S`.
@@ -437,7 +437,7 @@ theorem constantGroupSpace_obj_X (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Type u)
         B ⨯ (constantGroupPointsOnSite 𝒞 S hS G hG ⋙ forget GrpCat) ⟶ B) : Over B)
 ```
 
-**`AlgebraicGeometry.Space.constantGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L123). The attribute's comment: “the functor of locally constant maps”. References: SGA 3 I (4.1), “Hom = loc const maps”.
+**`AlgebraicGeometry.Space.constantGroupSpacePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L123). The attribute's comment: “the functor of locally constant maps”. References: SGA 3 I (4.1), “Hom = loc const maps”.
 
 > **Stacks Project, Tag 043O.** The group of points of the constant group algebraic space over
 > a scheme `T` over `B` is the group of locally constant `G`-valued maps on `T`.
@@ -452,7 +452,7 @@ noncomputable def constantGroupSpacePoints (B : (BigFppfOver 𝒞 S hS)ᵒᵖ �
       (locallyConstantMapsOver G S).obj (Opposite.op ((toSchemeOver 𝒞 S hS).obj T))
 ```
 
-**`AlgebraicGeometry.Space.constantGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L139). The attribute's comment: “the functor of locally constant maps”.
+**`AlgebraicGeometry.Space.constantGroupSpacePoints_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L139). The attribute's comment: “the functor of locally constant maps”.
 
 > `AlgebraicGeometry.Space.constantGroupSpacePoints` reads a point through the second
 > projection of the fibre product and the canonical identification of **Stacks 03YW**.
@@ -471,7 +471,7 @@ theorem constantGroupSpacePoints_apply (B : (BigFppfOver 𝒞 S hS)ᵒᵖ ⥤ Ty
           B ⨯ (constantGroupPointsOnSite 𝒞 S hS G hG ⋙ forget GrpCat) ⟶ _))))
 ```
 
-**`AlgebraicGeometry.Space.constantGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L156). The attribute's comment: “the functor of locally constant maps”.
+**`AlgebraicGeometry.Space.constantGroupSpacePoints_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ConstantGroup.lean#L156). The attribute's comment: “the functor of locally constant maps”.
 
 > `AlgebraicGeometry.Space.constantGroupSpacePoints` is natural in the scheme over `B`, so
 > what is asserted is representability of the functor of locally constant maps and not a family of
@@ -498,4 +498,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.7, Tag 06P7](https://stacks.math.columbia.edu/tag/06P7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

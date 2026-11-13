@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.19 Automorphism groups
 
-Section 101.19 of the Stacks Project, [Tag 0DTR](https://stacks.math.columbia.edu/tag/0DTR). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.19 of the Stacks Project, [Tag 0DTR](https://stacks.math.columbia.edu/tag/0DTR). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DTS, a lemma
 
 [Tag 0DTS](https://stacks.math.columbia.edu/tag/0DTS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentable_pointAutomorphismSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupScheme.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupScheme.lean#L83). The attribute's comment: “the automorphism group algebraic space of a field-valued point is a scheme under any of the six conditions”.
+**`AlgebraicGeometry.Stack.isRepresentable_pointAutomorphismSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupScheme.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupScheme.lean#L83). The attribute's comment: “the automorphism group algebraic space of a field-valued point is a scheme under any of the six conditions”.
 
 > **Stacks 0DTS.** Let `𝒳` be an algebraic stack over `S` and let `x : Spec k ⟶ 𝒳` be a
 > field-valued point with automorphism group algebraic space `G_x = Isom_𝒳(x, x)` over `Spec k`.
@@ -44,7 +44,7 @@ theorem isRepresentable_pointAutomorphismSpace (𝒳 : AlgebraicStacks.{u, w} B 
 
 [Tag 0DTT](https://stacks.math.columbia.edu/tag/0DTT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_pointAutomorphismSpace_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean#L531).
+**`AlgebraicGeometry.Stack.exists_pointAutomorphismSpace_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean#L531).
 
 > **Stacks 0DTT.** Let `𝒳` be an algebraic stack, let `q ∈ |𝒳|` be a point and let `P` be a
 > property of algebraic spaces over fields which is invariant under ground field extensions. Then
@@ -68,7 +68,7 @@ theorem exists_pointAutomorphismSpace_iff_forall
 
 [Tag 0DTU](https://stacks.math.columbia.edu/tag/0DTU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AutomorphismGroupHasProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean#L105). The attribute's comment: “the definition: the automorphism group of a stack at a point has P when the automorphism group algebraic space of every field-valued representative has P”.
+**`AlgebraicGeometry.Stack.AutomorphismGroupHasProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean#L105). The attribute's comment: “the definition: the automorphism group of a stack at a point has P when the automorphism group algebraic space of every field-valued representative has P”.
 
 > **Stacks 0DTU.** Let `P` be a property of algebraic spaces over fields and let `q` be a point
 > of `|𝒳|` for an algebraic stack `𝒳`. The *automorphism group of `𝒳` at `q` has `P`* when the
@@ -89,7 +89,7 @@ def AutomorphismGroupHasProperty
     (q : points B S hS 𝒳.val.val 𝒳.val.isFiberedInGroupoids) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.automorphismGroupHasProperty_iff_of_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean#L148). The attribute's comment: “the phrase is well posed: for a property invariant under ground field extensions, an arbitrary single field-valued representative decides it”.
+**`AlgebraicGeometry.Stack.automorphismGroupHasProperty_iff_of_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupProperty.lean#L148). The attribute's comment: “the phrase is well posed: for a property invariant under ground field extensions, an arbitrary single field-valued representative decides it”.
 
 > **Stacks 0DTU: the phrase is well posed.** For a property `P` of algebraic spaces over fields
 > which is invariant under ground field extensions, the statement that the automorphism group of
@@ -113,7 +113,7 @@ theorem automorphismGroupHasProperty_iff_of_representative
 
 [Tag 0DTV](https://stacks.math.columbia.edu/tag/0DTV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inducesIsomorphismAt_iff_forall_representatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean#L325). The attribute's comment: “for the lifts of one field-valued representative: some lift, hence any lift”.
+**`AlgebraicGeometry.Stack.inducesIsomorphismAt_iff_forall_representatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean#L326). The attribute's comment: “for the lifts of one field-valued representative: some lift, hence any lift”.
 
 > A 1-morphism of algebraic stacks induces an isomorphism between automorphism groups at a
 > point of `|𝒳|` exactly when it does so at *every* object lying above *every* field-valued
@@ -140,7 +140,7 @@ theorem inducesIsomorphismAt_iff_forall_representatives (f : 𝒳 ⟶ 𝒴)
           InducesIsomorphismAtObject B S hS f p.obj
 ```
 
-**`AlgebraicGeometry.Stack.exists_isIso_pointAutomorphismSpaceMap_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean#L698).
+**`AlgebraicGeometry.Stack.exists_isIso_pointAutomorphismSpaceMap_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupGroundFieldExtension.lean#L698).
 
 > **Stacks 0DTV.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks and let `x` be a point
 > of `|𝒳|`. The map `G_x ⟶ G_y` of automorphism group algebraic spaces, where `y = f ∘ x`, is an
@@ -167,7 +167,7 @@ theorem exists_isIso_pointAutomorphismSpaceMap_iff_forall (f : 𝒳 ⟶ 𝒴)
 
 [Tag 0DTW](https://stacks.math.columbia.edu/tag/0DTW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.InducesIsomorphismAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean#L279). The attribute's comment: “f induces an isomorphism between automorphism groups at a point”.
+**`AlgebraicGeometry.Stack.InducesIsomorphismAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupAtPoint.lean#L280). The attribute's comment: “f induces an isomorphism between automorphism groups at a point”.
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks *induces an isomorphism between automorphism
 > groups at a point* `q` of `|𝒳|` and at `f(q)` — in the literature, `f` is *stabilizer
@@ -192,4 +192,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.19, Tag 0DTR](https://stacks.math.columbia.edu/tag/0DTR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

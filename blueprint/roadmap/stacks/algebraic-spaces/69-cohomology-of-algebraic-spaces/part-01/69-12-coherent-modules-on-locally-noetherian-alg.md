@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.12 Coherent modules on locally Noetherian algebraic spaces
 
-Section 69.12 of the Stacks Project, [Tag 07U9](https://stacks.math.columbia.edu/tag/07U9). 9 tags here are carried by 33 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.12 of the Stacks Project, [Tag 07U9](https://stacks.math.columbia.edu/tag/07U9). 9 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07UA, a definition
 
 [Tag 07UA](https://stacks.math.columbia.edu/tag/07UA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentModules.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentModules.lean#L389).
+**`AlgebraicGeometry.Space.IsCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentModules.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentModules.lean#L389).
 
 > A coherent module on an algebraic space is a quasi-coherent module which is coherent on its
 > small étale ringed site.
@@ -33,7 +33,7 @@ class IsCoherent (M : Modules.{u, m} B S hS F hF) : Prop
 
 [Tag 07UB](https://stacks.math.columbia.edu/tag/07UB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_iff_forall_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L149). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.Space.isCoherent_iff_forall_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L149). The attribute's comment: “conditions (1) and (4)”.
 
 > **Stacks 07UB, conditions (1) and (4).**  A module on an algebraic space is coherent if and
 > only if its restriction to the slice at every étale chart is coherent there.
@@ -51,7 +51,7 @@ theorem isCoherent_iff_forall_over (M : Modules.{u, u} B S hS F hF) :
             ((smallEtaleRingedSite B S hS F hF).over U).O)) (M.over U)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_iff_exists_surjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L168). The attribute's comment: “conditions (1) and (5)”.
+**`AlgebraicGeometry.Space.isCoherent_iff_exists_surjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L168). The attribute's comment: “conditions (1) and (5)”.
 
 > **Stacks 07UB, conditions (1) and (5).**  A module on an algebraic space is coherent if and
 > only if there is an étale chart whose structure morphism is surjective on points and whose
@@ -72,7 +72,7 @@ theorem isCoherent_iff_exists_surjective_over (M : Modules.{u, u} B S hS F hF) :
             ((smallEtaleRingedSite B S hS F hF).over U).O)) (M.over U)
 ```
 
-**`AlgebraicGeometry.Space.forall_over_iff_exists_surjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L190). The attribute's comment: “conditions (4) and (5)”.
+**`AlgebraicGeometry.Space.forall_over_iff_exists_surjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentEtaleChartTfae.lean#L190). The attribute's comment: “conditions (4) and (5)”.
 
 > **Stacks 07UB, conditions (4) and (5).**  The slice restriction of a module on an algebraic
 > space is coherent at *every* étale chart if and only if it is coherent at *one* étale chart
@@ -97,7 +97,7 @@ theorem forall_over_iff_exists_surjective_over (M : Modules.{u, m} B S hS F hF) 
             ((smallEtaleRingedSite B S hS F hF).over U).O)) (M.over U)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_iff_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentFinitePresentation.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentFinitePresentation.lean#L44). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isCoherent_iff_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentFinitePresentation.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentFinitePresentation.lean#L44). The attribute's comment: “conditions (1) and (3)”.
 
 > A module on a locally Noetherian algebraic space is coherent if and only if it is an
 > `𝒪_F`-module of finite presentation.
@@ -109,7 +109,7 @@ theorem isCoherent_iff_isFinitePresentationOnSite
     IsCoherent B S hS F hF M ↔ M.IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_structureSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStructureSheaf.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStructureSheaf.lean#L391). The attribute's comment: “structure sheaf”.
+**`AlgebraicGeometry.Space.isCoherent_structureSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStructureSheaf.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStructureSheaf.lean#L391). The attribute's comment: “structure sheaf”.
 
 > **Stacks 07UB, the structure sheaf.**  The structure sheaf of a locally Noetherian
 > algebraic space is a coherent `𝒪_F`-module.
@@ -127,7 +127,7 @@ instance isCoherent_structureSheaf
       (SheafOfModules.unit (ringSheaf (smallEtaleRingedSite B S hS F hF).O))
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_iff_isQuasicoherentOnSite_and_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean#L124). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isCoherent_iff_isQuasicoherentOnSite_and_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean#L126). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 07UB, conditions (1) and (2).**  A module on a locally Noetherian algebraic space
 > is coherent if and only if it is quasi-coherent and of finite type.
@@ -146,7 +146,7 @@ theorem isCoherent_iff_isQuasicoherentOnSite_and_isFiniteType
         PresheafOfModules.IsFiniteType (smallEtaleRingedSite B S hS F hF).J M.val)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_of_fact_isFiniteLocallyFreeOnSite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCoherent.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCoherent.lean#L567). The attribute's comment: “finite locally free modules”.
+**`AlgebraicGeometry.Space.isCoherent_of_fact_isFiniteLocallyFreeOnSite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCoherent.lean, line 567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCoherent.lean#L567). The attribute's comment: “finite locally free modules”.
 
 > **Stacks 07UB, finite locally free modules.**  A finite locally free module on a locally
 > Noetherian algebraic space is coherent, as an instance.
@@ -164,7 +164,7 @@ instance isCoherent_of_fact_isFiniteLocallyFreeOnSite
     IsCoherent B S hS F hF M
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_of_isInvertible_instance`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleCoherent.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleCoherent.lean#L636). The attribute's comment: “invertible modules”.
+**`AlgebraicGeometry.Space.isCoherent_of_isInvertible_instance`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleCoherent.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleCoherent.lean#L634). The attribute's comment: “invertible modules”.
 
 > **Stacks 07UB, invertible modules.**  An invertible module on a locally Noetherian algebraic
 > space is coherent, as an instance.
@@ -194,7 +194,7 @@ instance isCoherent_of_isInvertible_instance
 
 [Tag 07UC](https://stacks.math.columbia.edu/tag/07UC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L94). The attribute's comment: “kernel”.
+**`AlgebraicGeometry.Space.isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L94). The attribute's comment: “kernel”.
 
 > **[Stacks, Tag 07UC].** The kernel of a map of coherent modules on an algebraic space is
 > coherent.
@@ -207,7 +207,7 @@ theorem isCoherent_kernel {M N : Modules.{u, u} B S hS F hF} (hM : IsCoherent B 
     (hN : IsCoherent B S hS F hF N) (φ : M ⟶ N) : IsCoherent B S hS F hF (kernel φ)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L106). The attribute's comment: “cokernel”.
+**`AlgebraicGeometry.Space.isCoherent_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L106). The attribute's comment: “cokernel”.
 
 > **[Stacks, Tag 07UC].** The cokernel of a map of coherent modules on an algebraic space is
 > coherent.
@@ -220,7 +220,7 @@ theorem isCoherent_cokernel {M N : Modules.{u, u} B S hS F hF} (hM : IsCoherent 
     (hN : IsCoherent B S hS F hF N) (φ : M ⟶ N) : IsCoherent B S hS F hF (cokernel φ)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L122). The attribute's comment: “extensions”.
+**`AlgebraicGeometry.Space.isCoherent_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L122). The attribute's comment: “extensions”.
 
 > **[Stacks, Tag 07UC].** An extension of coherent modules on an algebraic space is coherent:
 > the middle term of a short exact sequence of `𝒪_F`-modules whose outer terms are coherent is
@@ -237,7 +237,7 @@ theorem isCoherent_X₂_of_shortExact {T : ShortComplex (Modules.{u, u} B S hS F
     (h₃ : IsCoherent B S hS F hF T.X₃) : IsCoherent B S hS F hF T.X₂
 ```
 
-**`AlgebraicGeometry.Space.nonempty_abelian_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L166). The attribute's comment: “abelian category”.
+**`AlgebraicGeometry.Space.nonempty_abelian_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAbelian.lean#L166). The attribute's comment: “abelian category”.
 
 > **[Stacks, Tag 07UC].** The category `Coh(𝒪_F)` of coherent modules on an algebraic space is
 > abelian.
@@ -257,7 +257,7 @@ theorem nonempty_abelian_coherentModules :
 
 [Tag 07UD](https://stacks.math.columbia.edu/tag/07UD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_of_mono_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L359). The attribute's comment: “a quasi-coherent submodule of a coherent module is coherent”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_of_mono_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L359). The attribute's comment: “a quasi-coherent submodule of a coherent module is coherent”.
 
 > **The submodule clause of Stacks 07UD on the small étale ringed site.**  A quasi-coherent
 > submodule of a module coherent on the small étale ringed site of a locally Noetherian algebraic
@@ -276,7 +276,7 @@ theorem isCoherentOnSite_of_mono_of_isQuasicoherentOnSite
     SheafOfModules.IsCoherentOnSite N
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_of_mono_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L371). The attribute's comment: “a quasi-coherent submodule of a coherent module is coherent”.
+**`AlgebraicGeometry.Space.isCoherent_of_mono_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L371). The attribute's comment: “a quasi-coherent submodule of a coherent module is coherent”.
 
 > **The submodule clause of Stacks 07UD.**  A quasi-coherent submodule of a coherent module on a
 > locally Noetherian algebraic space is coherent, for the predicate
@@ -290,7 +290,7 @@ theorem isCoherent_of_mono_of_isQuasicoherentOnSite
     IsCoherent B S hS F hF N
 ```
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_of_epi_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L391). The attribute's comment: “a quasi-coherent quotient module of a coherent module is coherent”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_of_epi_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L391). The attribute's comment: “a quasi-coherent quotient module of a coherent module is coherent”.
 
 > **The quotient clause of Stacks 07UD on the small étale ringed site.**  A quasi-coherent
 > quotient module of a module coherent on the small étale ringed site of a locally Noetherian
@@ -311,7 +311,7 @@ theorem isCoherentOnSite_of_epi_of_isQuasicoherentOnSite
     SheafOfModules.IsCoherentOnSite Q
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_of_epi_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L408). The attribute's comment: “a quasi-coherent quotient module of a coherent module is coherent”.
+**`AlgebraicGeometry.Space.isCoherent_of_epi_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubquotientNoetherian.lean#L408). The attribute's comment: “a quasi-coherent quotient module of a coherent module is coherent”.
 
 > **The quotient clause of Stacks 07UD.**  A quasi-coherent quotient module of a coherent module
 > on a locally Noetherian algebraic space is coherent, for the predicate
@@ -329,7 +329,7 @@ theorem isCoherent_of_epi_of_isQuasicoherentOnSite
 
 [Tag 07UE](https://stacks.math.columbia.edu/tag/07UE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_smallEtaleInternalHomSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean#L164). The attribute's comment: “internal Hom”.
+**`AlgebraicGeometry.Space.isCoherent_smallEtaleInternalHomSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean#L164). The attribute's comment: “internal Hom”.
 
 > **Stacks 07UE, the sheaf-hom clause.**  The internal Hom `𝓗om_{𝒪_F}(M, N)` of two coherent
 > `𝒪_F`-modules on an algebraic space is coherent.
@@ -340,7 +340,7 @@ theorem isCoherent_smallEtaleInternalHomSmall (M N : Modules.{u, u} B S hS F hF)
     IsCoherent B S hS F hF (smallEtaleInternalHomSmall B S hS F hF M N)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_tensorModule_and_smallEtaleInternalHomSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean#L174).
+**`AlgebraicGeometry.Space.isCoherent_tensorModule_and_smallEtaleInternalHomSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentInternalHom.lean#L174).
 
 > **Stacks 07UE.**  Let `F` be an algebraic space over a scheme `S` and let `M`, `N` be
 > coherent `𝒪_F`-modules.  Then `M ⊗_{𝒪_F} N` and `𝓗om_{𝒪_F}(M, N)` are coherent.
@@ -353,7 +353,7 @@ theorem isCoherent_tensorModule_and_smallEtaleInternalHomSmall
       IsCoherent B S hS F hF (smallEtaleInternalHomSmall B S hS F hF M N)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_tensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentTensorProduct.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentTensorProduct.lean#L78). The attribute's comment: “tensor product”.
+**`AlgebraicGeometry.Space.isCoherent_tensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentTensorProduct.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentTensorProduct.lean#L78). The attribute's comment: “tensor product”.
 
 > The tensor product `AlgebraicGeometry.Space.tensorModule` of two coherent `𝒪_F`-modules on an
 > algebraic space is coherent.
@@ -368,7 +368,7 @@ theorem isCoherent_tensorModule (M N : Modules.{u, u} B S hS F hF)
 
 [Tag 07UF](https://stacks.math.columbia.edu/tag/07UF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpen_isZero_restrictToOpenPoints_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L458). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.exists_isOpen_isZero_restrictToOpenPoints_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L458). The attribute's comment: “part (1)”.
 
 > **Stacks 07UF, part (1).**  A coherent `𝒪_X`-module whose stalk at a geometric point `x̄`
 > vanishes vanishes on an open subspace of `X` containing the image of `x̄`.
@@ -386,7 +386,7 @@ theorem exists_isOpen_isZero_restrictToOpenPoints_of_isCoherent (X : AlgebraicSp
       IsZero ((restrictToOpenPoints.{u, u} B S hS X W hW).obj M)
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpen_mono_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L475). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_isOpen_mono_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L475). The attribute's comment: “part (2)”.
 
 > **Stacks 07UF, part (2).**  A morphism of coherent `𝒪_X`-modules injective on the stalk at a
 > geometric point `x̄` is a monomorphism after restriction to an open subspace of `X` containing
@@ -406,7 +406,7 @@ theorem exists_isOpen_mono_restrictToOpenPoints_map (X : AlgebraicSpaces B S hS)
       Mono ((restrictToOpenPoints.{u, u} B S hS X W hW).map φ)
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpen_epi_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L496). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.exists_isOpen_epi_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L496). The attribute's comment: “part (3)”.
 
 > **Stacks 07UF, part (3).**  A morphism of coherent `𝒪_X`-modules surjective on the stalk at
 > a geometric point `x̄` is an epimorphism after restriction to an open subspace of `X` containing
@@ -426,7 +426,7 @@ theorem exists_isOpen_epi_restrictToOpenPoints_map (X : AlgebraicSpaces B S hS)
       Epi ((restrictToOpenPoints.{u, u} B S hS X W hW).map φ)
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpen_isIso_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L518). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.exists_isOpen_isIso_restrictToOpenPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentStalkLocalProperties.lean#L518). The attribute's comment: “part (4)”.
 
 > **Stacks 07UF, part (4).**  A morphism of coherent `𝒪_X`-modules bijective on the stalk at a
 > geometric point `x̄` becomes an isomorphism after restriction to an open subspace of `X`
@@ -451,7 +451,7 @@ theorem exists_isOpen_isIso_restrictToOpenPoints_map (X : AlgebraicSpaces B S hS
 
 [Tag 07UG](https://stacks.math.columbia.edu/tag/07UG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean#L142).
+**`AlgebraicGeometry.Space.isCoherent_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean#L142).
 
 > **Stacks 07UG.**  Let `X` be a locally Noetherian algebraic space over `S`, let `F` be a
 > coherent `𝒪_X`-module, let `i : Z → X` be the scheme-theoretic support of `F` and let `G` be
@@ -479,7 +479,7 @@ theorem isCoherent_module_on_schemeTheoreticSupport
       (closedSubspaceToSpace B S hS X ⟨schemeTheoreticSupport B S hS X F, hZ⟩).2 G
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_module_on_coherentSchemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean#L166).
+**`AlgebraicGeometry.Space.isCoherent_module_on_coherentSchemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSchemeTheoreticSupport.lean#L166).
 
 > **Stacks 07UG.**  Let `X` be a locally Noetherian algebraic space over `S`, let `F` be a
 > coherent `𝒪_X`-module, let `i : Z → X` be the scheme-theoretic support of `F` and let `G` be
@@ -508,7 +508,7 @@ theorem isCoherent_module_on_coherentSchemeTheoreticSupport
 
 [Tag 08AM](https://stacks.math.columbia.edu/tag/08AM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushforwardCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCoherentEquivalence.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCoherentEquivalence.lean#L299).
+**`AlgebraicGeometry.Space.pushforwardCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCoherentEquivalence.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionCoherentEquivalence.lean#L299).
 
 > **Stacks 08AM.**  Let `S` be a scheme, let `i : Z ⟶ X` be a closed immersion of locally
 > Noetherian algebraic spaces over `S` and let `ℐ ⊆ 𝒪_X` be the quasi-coherent sheaf of ideals
@@ -541,7 +541,7 @@ def pushforwardCoherentEquivalence
         ObjectProperty.ι _ ⋙ modulePushforward B S hS i
 ```
 
-**`AlgebraicGeometry.Space.coherentModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L340). The attribute's comment: “the induced functor into the modules annihilated by the ideal”.
+**`AlgebraicGeometry.Space.coherentModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L340). The attribute's comment: “the induced functor into the modules annihilated by the ideal”.
 
 > **Stacks 08AM**, the induced functor, with the target weakened: direct image as a functor
 > `Coh(𝒪_X) ⥤ {𝓕 ∈ Mod(𝒪_Y) | 𝓘𝓕 = 0}` from the coherent modules of Stacks 07UA.
@@ -555,7 +555,7 @@ def coherentModulePushforward (f : X ⟶ Y) :
       (annihilatedByKerIdeal B S hS f).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulCoherentModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L361). The attribute's comment: “full faithfulness of the direct image on coherent modules”.
+**`AlgebraicGeometry.Space.fullyFaithfulCoherentModulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModulePushforward.lean#L361). The attribute's comment: “full faithfulness of the direct image on coherent modules”.
 
 > **Stacks 08AM**, the full-faithfulness half of the equivalence: direct image along a closed
 > immersion of algebraic spaces is fully faithful on coherent modules.
@@ -573,63 +573,23 @@ def fullyFaithfulCoherentModulePushforward (f : X ⟶ Y)
 
 [Tag 07UH](https://stacks.math.columbia.edu/tag/07UH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean#L150). The attribute's comment: “vanishing of the higher direct images, granted the étale-affine case h03DW of Stacks 03DW”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_and_isCoherent_modulePushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherentVanishing.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherentVanishing.lean#L50).
 
-> **The vanishing assertion of Stacks 07UH, granted the chart case `h03DW`.**  Let
-> `f : X ⟶ Y` be a finite morphism of algebraic spaces over `S` whose chart base changes have
-> vanishing degree-`n` higher direct images.  Then `R^n f_*𝓕 = 0`.
->
-> A finite morphism is affine, `AlgebraicGeometry.Space.IsFinite.isAffineHom`, so this is
-> `AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isAffineHom`, the reduction of
-> Stacks 073H through Equation 69.3.0.1 of Stacks 071Z.  The source's hypotheses that `Y` be
-> locally Noetherian, that `𝓕` be coherent and that `n > 0` are not used; `h03DW` is the
-> étale-site form of Stacks 01Y6, that is Stacks 03DW, which this development does not carry.
+> **Stacks 07UH.**  Let `f : X ⟶ Y` be a finite morphism of algebraic spaces over `S` with `Y`
+> locally Noetherian, and let `𝓕` be a coherent `𝒪_X`-module.  Then `R^p f_*𝓕 = 0` for every
+> `p > 0`, and `f_*𝓕` is a coherent `𝒪_Y`-module.
 
 ```lean
-theorem isZero_rightDerived_modulePushforward_of_isFinite (f : X ⟶ Y)
-    (hf : IsFinite B S hS f.hom) (G : Modules.{u, u} B S hS X.obj X.property) (n : ℕ)
-    (h03DW : ChartwiseIsZeroHigherDirectImage B S hS f
-      (relativelyRepresentable_of_isAffineHom B S hS f hf.isAffineHom)
-      G n) :
-    have := hasInjectiveResolutions_modules B S hS X.obj X.property
-    IsZero (((modulePushforward B S hS f).rightDerived n).obj G)
-```
-
-**`AlgebraicGeometry.Space.isCoherent_modulePushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageCoherence.lean#L206). The attribute's comment: “coherence of the direct image, granted the chart case hchart of Stacks 03DW”.
-
-> **The coherence assertion of Stacks 07UH, granted the chart case `hchart`.**  Let
-> `f : X ⟶ Y` be a finite morphism of algebraic spaces over `S` with `Y` locally Noetherian, let
-> `𝓕` be a coherent `𝒪_X`-module, and let `V` be an étale scheme chart of `Y` surjective on
-> points.  Then `f_*𝓕` is coherent.
->
-> Coherence is tested on `V` by Stacks 07UB (1) and (5) and over `V` the direct image is the
-> localized direct image of Stacks 04CF, by
-> `AlgebraicGeometry.Space.isCoherentOnSite_modulePushforward_of_over_of_isSurjective`.  The two
-> geometric premises of `hchart` are discharged: the base change of `f` along `V` is finite by
-> Stacks 03ZS, and `V` is locally Noetherian by Stacks 03E8.  So `hchart` is the étale-site form
-> of Stacks 01Y6, that is Stacks 03DW, which this development does not carry.
->
-> Unlike `AlgebraicGeometry.Space.isCoherent_modulePushforward_of_isFinite_of_chartCase` the chart
-> is the caller's, not the atlas that `hY` supplies, which is what lets `hchart` be met at an
-> *affine* chart; that is possible here because local Noetherianity of an arbitrary chart is
-> available, by `AlgebraicGeometry.Space.isLocallyNoetherian_chart`.
-
-```lean
-theorem isCoherent_modulePushforward_of_isFinite (f : X ⟶ Y) (hf : IsFinite B S hS f.hom)
+theorem isZero_rightDerived_and_isCoherent_modulePushforward_of_isFinite
+    {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y) (hf : IsFinite B S hS f.hom)
     (hY : HasEtaleLocalProperty B S hS Y.1 (fun T : Scheme.{u} ↦ IsLocallyNoetherian T))
-    (G : Modules.{u, u} B S hS X.1 X.2) (hG : IsCoherent B S hS X.1 X.2 G)
-    (V : SmallEtale B S hS Y.1) (hsurj : IsSurjective B S hS V.1.hom)
-    (hchart : IsFinite B S hS (chartBaseChangeProjection B S hS f V).hom →
-      HasEtaleLocalProperty B S hS
-        ((SpacesEtale.toSpaces B S hS Y).obj ((comparisonFunctor B S hS Y).obj V)).1
-        (fun T : Scheme.{u} ↦ IsLocallyNoetherian T) →
-      IsCoherent B S hS X.1 X.2 G →
-      ((chartLocalizedModulePushforward B S hS f V).obj
-        ((moduleChartBaseChangeRestriction B S hS f V).obj G)).IsCoherentOnSite) :
-    IsCoherent B S hS Y.1 Y.2 ((modulePushforward B S hS f).obj G)
+    (G : Modules.{u, u} B S hS X.1 X.2) (hG : IsCoherent B S hS X.1 X.2 G) :
+    (have := hasInjectiveResolutions_modules B S hS X.1 X.2
+      ∀ p : ℕ, 0 < p → IsZero (((modulePushforward B S hS f).rightDerived p).obj G)) ∧
+      IsCoherent B S hS Y.1 Y.2 ((modulePushforward B S hS f).obj G)
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishingUnconditional.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishingUnconditional.lean#L81). The attribute's comment: “vanishing of the higher direct images, with nothing carried”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishingUnconditional.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishingUnconditional.lean#L81). The attribute's comment: “vanishing of the higher direct images, with nothing carried”.
 
 > **The vanishing half of Stacks 07UH.**  For a finite morphism `f : X ⟶ Y` of algebraic
 > spaces over `S`, a coherent `𝒪_X`-module `𝓕` and `p > 0`, the higher direct image vanishes:
@@ -640,7 +600,7 @@ theorem isCoherent_modulePushforward_of_isFinite (f : X ⟶ Y) (hf : IsFinite B 
 > `AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isQuasicoherentOnSite`.
 >
 > `AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite` is the same
-> statement with the affine case carried as the hypothesis `h03DW` and with `𝓕` only required to
+> statement with the affine case carried as the hypothesis `hchart` and with `𝓕` only required to
 > be a module; that hypothesis is now discharged by
 > `AlgebraicGeometry.Space.chartwiseIsZeroHigherDirectImage_of_isAffineHom`, which asks for `𝓕`
 > quasi-coherent and `p > 0` — exactly what the source assumes here.
@@ -657,7 +617,7 @@ theorem isZero_rightDerived_modulePushforward_of_isFinite_of_isCoherent
     IsZero (((modulePushforward B S hS f).rightDerived p).obj G)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_modulePushforward_of_isFinite'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperRepresentableDirectImageCoherence.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperRepresentableDirectImageCoherence.lean#L189). The attribute's comment: “coherence of the direct image”.
+**`AlgebraicGeometry.Space.isCoherent_modulePushforward_of_isFinite'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperRepresentableDirectImageCoherence.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperRepresentableDirectImageCoherence.lean#L190). The attribute's comment: “coherence of the direct image”.
 
 > **Stacks 07UH, coherence of the direct image.**  Let `f : X ⟶ Y` be a finite morphism of
 > algebraic spaces over `S` with `Y` locally Noetherian, and let `𝓕` be a coherent `𝒪_X`-module.
@@ -667,7 +627,8 @@ theorem isZero_rightDerived_modulePushforward_of_isFinite_of_isCoherent
 > (`AlgebraicGeometry.Space.relativelyRepresentable_of_isAffineHom`), and proper by Stacks 04NZ
 > (`AlgebraicGeometry.Space.isFinite_iff_isAffineHom_and_isProper`), so this is
 > `AlgebraicGeometry.Space.isCoherent_modulePushforward_of_isProper`.  The vanishing assertion of
-> Stacks 07UH is `AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite`.
+> Stacks 07UH is
+> `AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isCoherent`.
 
 ```lean
 theorem isCoherent_modulePushforward_of_isFinite' (f : X ⟶ Y) (hf : IsFinite B S hS f.hom)
@@ -678,7 +639,7 @@ theorem isCoherent_modulePushforward_of_isFinite' (f : X ⟶ Y) (hf : IsFinite B
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishing.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean#L127) (StacksFrontier): “vanishing of the higher direct images R^p f\_* F, p > 0”.
+- [`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishing.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean#L127) (StacksFrontier): “vanishing of the higher direct images R^p f\_* F, p > 0”.
 
 ## Depends on
 
@@ -687,4 +648,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.12, Tag 07U9](https://stacks.math.columbia.edu/tag/07U9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

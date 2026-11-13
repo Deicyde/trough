@@ -7,7 +7,7 @@ statement: formalized
 
 # Goldwasser–Sipser theorem
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html).
 
 ## Public-coin interactive-proof game
 
@@ -26,7 +26,7 @@ $T$, and transcript $t$ extended by $m$ and then $a$; otherwise the outcome is f
 So the verifier's message and the prover's reply in a round see only the coins revealed up to
 that round, while the final decision may use the whole coin string.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.PubIPGame`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#pub-ipgame).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.PubIPGame`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#pub-ipgame).
 
 ## Public-coin interactive proofs
 
@@ -42,7 +42,7 @@ initial transcript. Then for every bitstring $x$: if $L(x)$ is true, some prover
 $G(P, c)$ true for at least $2/3$ of the coin strings $c \in \{0,1\}^{r(|x|) k(|x|)}$; and if
 $L(x)$ is false, every prover $P$ makes $G(P, c)$ true for at most $1/3$ of them.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.PubIP`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#pub-ip).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.PubIP`, a definition declared in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#pub-ip).
 
 ## Goldwasser-Sipser: private coins add no power to interactive proofs
 
@@ -55,7 +55,7 @@ rounds.
 
 - S. Goldwasser and M. Sipser, "Private coins versus public coins in interactive proof systems", Proceedings of the Eighteenth Annual ACM Symposium on Theory of Computing (STOC 1986), 59-68 (journal version in Advances in Computing Research 5 (1989), 73-90).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.goldwasser_sipser` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#goldwasser-sipser).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GoldwasserSipser.goldwasser_sipser` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GoldwasserSipserWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html#goldwasser-sipser).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Goldwasser–Sipser theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/goldwasser-sipser-theorem)

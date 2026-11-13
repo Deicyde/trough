@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Ascending descending base… to Factorial distance to nearest…
+# Ascending descending base… to Recurrence involving LCM: $a(n)…
 
+- [Ascending descending base exponent transform of squares](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of.md)
+- [Ascending descending base exponent transform of factorials](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of-2.md)
 - [Ascending descending base exponent transform of $2^n$](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of-3.md)
 - [Number of prime powers $q<=n$ such that also $q+2$ is a prime power](../../../../../oeis/part-08/number-of-prime-powers-q-n-such-that-also-q-2-is.md)
 - [Difference between first odd semiprime $> 2^n$ and $2^n$](../../../../../oeis/part-08/difference-between-first-odd-semiprime-2-n-and-2.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Ratio of product of GCDs to product of factorials of floor divisions](../../../../../oeis/part-09/ratio-of-product-of-gcds-to-product-of-factorial.md)
 - [Odious primes minus evil primes among first $n$ primes](../../../../../oeis/part-09/odious-primes-minus-evil-primes-among-first-n-pr.md)
 - [Recurrence involving LCM: $a(n) = x(n+1)/x(n) - 2$](../../../../../oeis/part-09/recurrence-involving-lcm-a-n-x-n-1-x-n-2.md)
-- [Number of Abelian cubes of length $3n$ over an alphabet of size 3](../../../../../oeis/part-09/number-of-abelian-cubes-of-length-3n-over-an-alp.md)
-- [Factorial distance to nearest square](../../../../../oeis/part-09/factorial-distance-to-nearest-square.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.5 More general supports
 
-Section 51.5 of the Stacks Project, [Tag 0EEY](https://stacks.math.columbia.edu/tag/0EEY). 9 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.5 of the Stacks Project, [Tag 0EEY](https://stacks.math.columbia.edu/tag/0EEY). 9 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EEZ, a lemma
 
 [Tag 0EEZ](https://stacks.math.columbia.edu/tag/0EEZ) in the Stacks Project.
 
-**`Stacks.LocalCohomology.sectionsWithSupportIn_eq_top_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L113). The attribute's comment: “equivalence”. References: EGA IV (5.9.12), “affine module case”.
+**`Stacks.LocalCohomology.sectionsWithSupportIn_eq_top_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L113). The attribute's comment: “equivalence”. References: EGA IV (5.9.12), “affine module case”.
 
 > Degree-zero sections with support in `T` fill `M` if and only if the support of `M` is
 > contained in `T`.
@@ -25,7 +25,7 @@ theorem sectionsWithSupportIn_eq_top_iff (A : Type u) [CommRing A]
     sectionsWithSupportIn A T M = ⊤ ↔ Module.support A M ⊆ T
 ```
 
-**`Stacks.LocalCohomology.supportModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L126). The attribute's comment: “Serre subcategory”. References: EGA IV (5.9.12), “(i) C\_Z is Serre, affine”.
+**`Stacks.LocalCohomology.supportModuleProperty_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L126). The attribute's comment: “Serre subcategory”. References: EGA IV (5.9.12), “(i) C\_Z is Serre, affine”.
 
 > Modules whose support is contained in `T` form a Serre subcategory of `A`-modules.
 
@@ -35,7 +35,7 @@ instance supportModuleProperty_isSerreClass (A : Type u) [CommRing A]
     (supportModuleProperty A T : ObjectProperty (ModuleCat.{v} A)).IsSerreClass
 ```
 
-**`Stacks.LocalCohomology.supportModuleProperty_isClosedUnderCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L183). The attribute's comment: “closed under direct sums”.
+**`Stacks.LocalCohomology.supportModuleProperty_isClosedUnderCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModulesSupportedIn.lean#L183). The attribute's comment: “closed under direct sums”.
 
 > Modules whose support is contained in `T` are closed under arbitrary direct sums.
 
@@ -50,7 +50,7 @@ instance supportModuleProperty_isClosedUnderCoproducts (A : Type u) [CommRing A]
 
 [Tag 0EF0](https://stacks.math.columbia.edu/tag/0EF0) in the Stacks Project.
 
-**`Stacks.LocalCohomology.derivedInclusion_adj_derivedSupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean#L173). The attribute's comment: “adjunction”.
+**`Stacks.LocalCohomology.derivedInclusion_adj_derivedSupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean#L173). The attribute's comment: “adjunction”.
 
 > Let `A` be a Noetherian ring and `T ⊆ Spec A` be stable under specialization. Then
 > `RH⁰_T : D(A) ⥤ D(Mod_{A,T})` is right adjoint to the functor `D(Mod_{A,T}) ⥤ D(A)` induced by
@@ -65,7 +65,7 @@ theorem derivedInclusion_adj_derivedSupportedSections (A : Type u) [CommRing A]
         derivedSupportedSections.{u, v} A T)
 ```
 
-**`Stacks.LocalCohomology.derivedSupportedSections_comp_inclusion_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean#L280). The attribute's comment: “comparison with ambient derived sections”.
+**`Stacks.LocalCohomology.derivedSupportedSections_comp_inclusion_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SupportedSectionsAdjunction.lean#L280). The attribute's comment: “comparison with ambient derived sections”.
 
 > Let `A` be a Noetherian ring and `T ⊆ Spec A` be stable under specialization. Composing
 > `RH⁰_T : D(A) ⥤ D(Mod_{A,T})` with the derived inclusion recovers the derived sections with
@@ -85,7 +85,7 @@ theorem derivedSupportedSections_comp_inclusion_iso (A : Type u) [CommRing A]
 
 [Tag 0EF1](https://stacks.math.columbia.edu/tag/0EF1) in the Stacks Project.
 
-**`Stacks.LocalCohomology.colimitClosedSupportComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/ClosedSupportColimit.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/ClosedSupportColimit.lean#L699).
+**`Stacks.LocalCohomology.colimitClosedSupportComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/ClosedSupportColimit.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/ClosedSupportColimit.lean#L699).
 
 > **Stacks Project, Tag 0EF1.** For a Noetherian ring `A` and a specialization-stable subset
 > `T` of its spectrum, the canonical comparison from the filtered colimit of local cohomology with
@@ -102,7 +102,7 @@ theorem colimitClosedSupportComparison_isIso (A : Type u) [CommRing A] [IsNoethe
 
 [Tag 0EF2](https://stacks.math.columbia.edu/tag/0EF2) in the Stacks Project.
 
-**`Module.exists_supportedModulesDerivedPlusEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/GeneralSupports/SupportedDerivedCategory.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/GeneralSupports/SupportedDerivedCategory.lean#L380).
+**`Module.exists_supportedModulesDerivedPlusEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/GeneralSupports/SupportedDerivedCategory.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/GeneralSupports/SupportedDerivedCategory.lean#L380).
 
 > **Stacks Project, Tag 0EF2.** For a specialization-closed subset `T` of the spectrum of a
 > Noetherian ring `A`, the canonical functor from the bounded-below derived category of modules
@@ -128,7 +128,7 @@ public theorem exists_supportedModulesDerivedPlusEquivalence
 
 [Tag 0EF3](https://stacks.math.columbia.edu/tag/0EF3) in the Stacks Project.
 
-**`Stacks.LocalCohomology.supportedModulesComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedModulesEquivalence.lean, line 862](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedModulesEquivalence.lean#L862).
+**`Stacks.LocalCohomology.supportedModulesComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedModulesEquivalence.lean, line 862](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedModulesEquivalence.lean#L862).
 
 > **Stacks Project, Tag 0EF3.** Let `A` be a Noetherian ring of finite Krull dimension and let
 > `T ⊆ Spec(A)` be stable under specialization. The canonical functor from the derived category of
@@ -146,7 +146,7 @@ theorem supportedModulesComparison_isEquivalence (A : Type u) [CommRing A]
 
 [Tag 0EF4](https://stacks.math.columbia.edu/tag/0EF4) in the Stacks Project.
 
-**`Stacks.LocalCohomology.nonempty_derivedSectionsWithSupportInPlus_comp_inclusion_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean#L101). The attribute's comment: “cohomology\_calculation”. References: SGA 4 XVII (1.2.4), “special case”.
+**`Stacks.LocalCohomology.nonempty_derivedSectionsWithSupportInPlus_comp_inclusion_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean#L101). The attribute's comment: “cohomology\_calculation”. References: SGA 4 XVII (1.2.4), “special case”.
 
 > The bounded-below and unbounded right derived functors of sections with support in `T` agree
 > after including bounded-below complexes in the unbounded derived category.
@@ -158,7 +158,7 @@ theorem nonempty_derivedSectionsWithSupportInPlus_comp_inclusion_iso :
         DerivedCategory.Plus.ι ⋙ derivedSectionsWithSupportIn.{u, v} A T)
 ```
 
-**`Stacks.LocalCohomology.sectionsWithSupportInFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L80). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
+**`Stacks.LocalCohomology.sectionsWithSupportInFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L80). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
 
 > Degree-zero sections with support in `T`, functorial in the module: on objects, the
 > filtered colimit of the `I`-power-torsion submodules over ideals whose zero locus is contained
@@ -169,7 +169,7 @@ def sectionsWithSupportInFunctor (A : Type u) [CommRing A]
     (T : Set (PrimeSpectrum A)) : ModuleCat.{max u v} A ⥤ ModuleCat.{max u v} A
 ```
 
-**`Stacks.LocalCohomology.derivedSectionsWithSupportInPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L115). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
+**`Stacks.LocalCohomology.derivedSectionsWithSupportInPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L115). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
 
 > The total right derived functor of degree-zero sections with support in `T`, on bounded-below
 > derived objects.
@@ -181,7 +181,7 @@ noncomputable def derivedSectionsWithSupportInPlus (A : Type u) [CommRing A]
       DerivedCategory.Plus (ModuleCat.{max u v} A)
 ```
 
-**`Stacks.LocalCohomology.derivedSectionsWithSupportIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L143). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
+**`Stacks.LocalCohomology.derivedSectionsWithSupportIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L143). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
 
 > The total right derived functor of degree-zero sections with support in `T`, on the unbounded
 > derived category.
@@ -193,7 +193,7 @@ noncomputable def derivedSectionsWithSupportIn (A : Type u) [CommRing A]
       DerivedCategory (ModuleCat.{max u v} A)
 ```
 
-**`Stacks.LocalCohomology.localCohomologyWithSupportInPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L181). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
+**`Stacks.LocalCohomology.localCohomologyWithSupportInPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L181). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
 
 > The `i`-th local cohomology module with support in `T` of a bounded-below derived object.
 
@@ -204,7 +204,7 @@ noncomputable abbrev localCohomologyWithSupportInPlus
     ModuleCat.{max u v} A
 ```
 
-**`Stacks.LocalCohomology.localCohomologyWithSupportIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L190). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
+**`Stacks.LocalCohomology.localCohomologyWithSupportIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SectionsWithSupport.lean#L190). The attribute's comment: “local\_cohomology\_with\_support\_in\_t”.
 
 > The `i`-th local cohomology module with support in `T` of an unbounded derived object.
 
@@ -214,7 +214,7 @@ noncomputable abbrev localCohomologyWithSupportIn
     (K : DerivedCategory (ModuleCat.{max u v} A)) (i : ℤ) : ModuleCat.{max u v} A
 ```
 
-**`Stacks.LocalCohomology.isColimitClosedSupportCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L81). The attribute's comment: “cohomology\_colimit”.
+**`Stacks.LocalCohomology.isColimitClosedSupportCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L81). The attribute's comment: “cohomology\_colimit”.
 
 > **Stacks Project, Tag 0EF4, the colimit formula.** Let `A` be a Noetherian ring and
 > `T ⊆ Spec(A)` stable under specialization. For every `K` in `D(A)` and every `i`, the canonical
@@ -229,7 +229,7 @@ def isColimitClosedSupportCocone [IsNoetherianRing A]
     IsColimit (closedSupportCocone.{u, v} A T i K)
 ```
 
-**`Stacks.LocalCohomology.colimitClosedSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L95). The attribute's comment: “cohomology\_colimit”.
+**`Stacks.LocalCohomology.colimitClosedSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L95). The attribute's comment: “cohomology\_colimit”.
 
 > **Stacks Project, Tag 0EF4, the colimit formula.** The isomorphism
 > `colim_{Z ⊆ T closed} H^i_Z(K) ≅ H^i_T(K)` for `K` in `D(A)`, induced by the canonical maps
@@ -243,7 +243,7 @@ def colimitClosedSupportIso [IsNoetherianRing A]
       localCohomologyWithSupportIn A T K i
 ```
 
-**`Stacks.LocalCohomology.nonempty_colimitClosedSupportIsoPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L119). The attribute's comment: “cohomology\_colimit”.
+**`Stacks.LocalCohomology.nonempty_colimitClosedSupportIsoPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedCohomologyColimit.lean#L119). The attribute's comment: “cohomology\_colimit”.
 
 > **Stacks Project, Tag 0EF4, the colimit formula on `D^+(A)`.** Let `A` be a Noetherian ring
 > and `T ⊆ Spec(A)` stable under specialization. For `K` in `D^+(A)`, local cohomology with support
@@ -259,7 +259,7 @@ theorem nonempty_colimitClosedSupportIsoPlus [IsNoetherianRing A]
         localCohomologyWithSupportInPlus A T K i)
 ```
 
-**`Stacks.LocalCohomology.inclusion_adj_derivedSupportedSectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean#L69). The attribute's comment: “unbounded\_adjunction”.
+**`Stacks.LocalCohomology.inclusion_adj_derivedSupportedSectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean#L69). The attribute's comment: “unbounded\_adjunction”.
 
 > **Stacks Project, Tag 0EF4, unbounded adjunction.** Let `A` be a Noetherian ring of finite
 > Krull dimension and `T ⊆ Spec(A)` stable under specialization. The composite of `RH⁰_T` with the
@@ -275,7 +275,7 @@ theorem inclusion_adj_derivedSupportedSectionsComparison [IsNoetherianRing A]
           supportedModulesComparison.{u, max u v} A T))
 ```
 
-**`Stacks.LocalCohomology.inclusion_adj_derivedSupportedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean#L200). The attribute's comment: “bounded\_adjunction”.
+**`Stacks.LocalCohomology.inclusion_adj_derivedSupportedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedDerivedAdjunction.lean#L200). The attribute's comment: “bounded\_adjunction”.
 
 > **Stacks Project, Tag 0EF4, bounded adjunction.** Let `A` be a Noetherian ring and
 > `T ⊆ Spec(A)` stable under specialization. The composite of the bounded-below derived functor of
@@ -291,7 +291,7 @@ theorem inclusion_adj_derivedSupportedSectionsPlus [IsNoetherianRing A]
           comparisonPlus.{u, v} A T hT))
 ```
 
-**`Stacks.LocalCohomology.nonempty_inclusion_adj_and_localCohomologyWithSupportIn_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedUpshot.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedUpshot.lean#L126).
+**`Stacks.LocalCohomology.nonempty_inclusion_adj_and_localCohomologyWithSupportIn_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedUpshot.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/SupportedUpshot.lean#L126).
 
 > **Stacks Project, Tag 0EF4.** Let `A` be a Noetherian ring and `T ⊆ Spec(A)` a subset
 > stable under specialization. Write `RΓ_T` for `RH^0_T` followed by the comparison
@@ -367,13 +367,13 @@ theorem nonempty_inclusion_adj_and_localCohomologyWithSupportIn_colimit
 
 Declarations registered for the tag:
 
-- [`colimitClosedSupportComparison_isIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=colimitClosedSupportComparison_isIso#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean#L108) (StacksFrontier): “cohomology\_calculation”.
+- [`colimitClosedSupportComparison_isIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=colimitClosedSupportComparison_isIso#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/BoundedComparison.lean#L108) (StacksFrontier): “cohomology\_calculation”.
 
 ## Tag 0EF5, a lemma
 
 [Tag 0EF5](https://stacks.math.columbia.edu/tag/0EF5) in the Stacks Project.
 
-**`Stacks.LocalCohomology.derivedSectionsWithSupportInPlusBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean#L388). The attribute's comment: “bounded-below case”. References: EGA IV (5.9.4), “affine case”.
+**`Stacks.LocalCohomology.derivedSectionsWithSupportInPlusBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean#L388). The attribute's comment: “bounded-below case”. References: EGA IV (5.9.4), “affine case”.
 
 > **Stacks Project, Tag 0EF5, the bounded-below case.** Let `f : A →+* B` be a flat
 > homomorphism of Noetherian rings, let `T ⊆ Spec A` be stable under specialization and put
@@ -400,7 +400,7 @@ def derivedSectionsWithSupportInPlusBaseChangeIso (f : A →+* B) (hf : f.Flat)
               ((derivedSectionsWithSupportInPlusAugmentation.{u, max uB v} A T).app K)) }
 ```
 
-**`Stacks.LocalCohomology.derivedSectionsWithSupportInBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean#L432). The attribute's comment: “unbounded case”. References: EGA IV (5.9.4), “affine, finite dim”.
+**`Stacks.LocalCohomology.derivedSectionsWithSupportInBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/BaseChangeGeneralSupport/BaseChangeIso.lean#L432). The attribute's comment: “unbounded case”. References: EGA IV (5.9.4), “affine, finite dim”.
 
 > **Stacks Project, Tag 0EF5, the unbounded case.** Let `f : A →+* B` be a flat homomorphism
 > of Noetherian rings of finite Krull dimension, let `T ⊆ Spec A` be stable under specialization
@@ -430,7 +430,7 @@ def derivedSectionsWithSupportInBaseChangeIso (f : A →+* B) (hf : f.Flat)
 
 [Tag 0EF6](https://stacks.math.columbia.edu/tag/0EF6) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_localCohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SpectralSequence.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SpectralSequence.lean#L156).
+**`Stacks.LocalCohomology.exists_localCohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SpectralSequence.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SpectralSequence.lean#L156).
 
 > **Stacks 0EF6.** The Grothendieck spectral sequence for local cohomology with two
 > supports: for specialization-closed subsets `T` and `T'` of the spectrum of a Noetherian
@@ -493,7 +493,7 @@ theorem exists_localCohomologySpectralSequence
 
 [Tag 0EF7](https://stacks.math.columbia.edu/tag/0EF7) in the Stacks Project.
 
-**`Stacks.LocalCohomology.derivedCategoryB_tensor_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L750). The attribute's comment: “support, left factor”.
+**`Stacks.LocalCohomology.derivedCategoryB_tensor_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L749). The attribute's comment: “support, left factor”.
 
 > **Stacks 0EF7.** Over a Noetherian ring of finite dimension, the derived tensor product of
 > an object of `D_T(A)` with an arbitrary object of `D(A)` again lies in `D_T(A)`.
@@ -508,7 +508,7 @@ theorem derivedCategoryB_tensor_left (hT : StableUnderSpecialization T)
       ((CechFormula.derivedTensorProductBifunctor A).obj (K, L))
 ```
 
-**`Stacks.LocalCohomology.derivedCategoryB_tensor_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L764). The attribute's comment: “support, right factor”.
+**`Stacks.LocalCohomology.derivedCategoryB_tensor_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L763). The attribute's comment: “support, right factor”.
 
 > **Stacks 0EF7.** Over a Noetherian ring of finite dimension, the derived tensor product of
 > an arbitrary object of `D(A)` with an object of `D_T(A)` again lies in `D_T(A)`.
@@ -523,7 +523,7 @@ theorem derivedCategoryB_tensor_right (hT : StableUnderSpecialization T)
       ((CechFormula.derivedTensorProductBifunctor A).obj (K, L))
 ```
 
-**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L781). The attribute's comment: “tensor formula, left factor”.
+**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 780](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L780). The attribute's comment: “tensor formula, left factor”.
 
 > **Stacks 0EF7.** Local cohomology with support in `T` of a derived tensor product is the
 > derived tensor product with local cohomology taken in the left factor, by an isomorphism of
@@ -545,7 +545,7 @@ theorem exists_derivedSectionsWithSupportIn_tensorIso_left
             ((CechFormula.derivedTensorProductBifunctor A).obj (K, L))
 ```
 
-**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L807). The attribute's comment: “tensor formula, right factor”.
+**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 806](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L806). The attribute's comment: “tensor formula, right factor”.
 
 > **Stacks 0EF7.** Local cohomology with support in `T` of a derived tensor product is the
 > derived tensor product with local cohomology taken in the right factor, by an isomorphism of
@@ -567,7 +567,7 @@ theorem exists_derivedSectionsWithSupportIn_tensorIso_right
             ((CechFormula.derivedTensorProductBifunctor A).obj (K, L))
 ```
 
-**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_both`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 831](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L831). The attribute's comment: “tensor formula, both factors”.
+**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_tensorIso_both`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 830](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L830). The attribute's comment: “tensor formula, both factors”.
 
 > **Stacks 0EF7.** Applying local cohomology with support in `T` in both tensor factors agrees
 > with applying it to the tensor product, again compatibly with the augmentations.
@@ -590,7 +590,7 @@ theorem exists_derivedSectionsWithSupportIn_tensorIso_both
             ((CechFormula.derivedTensorProductBifunctor A).obj (K, L))
 ```
 
-**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_isoTensorUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 921](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L921). The attribute's comment: “tensor formula”.
+**`Stacks.LocalCohomology.exists_derivedSectionsWithSupportIn_isoTensorUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean, line 920](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Sweep/TensorFormula.lean#L920). The attribute's comment: “tensor formula”.
 
 > **Stacks 0EF7.** Local cohomology with support in `T` is the derived tensor product with the
 > local cohomology of the ring, by an isomorphism whose inverse is the canonical map
@@ -618,4 +618,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.5, Tag 0EEY](https://stacks.math.columbia.edu/tag/0EEY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

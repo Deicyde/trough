@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.24 Meromorphic functions and sections
 
-Section 31.24 of the Stacks Project, [Tag 01X1](https://stacks.math.columbia.edu/tag/01X1). 10 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.24 of the Stacks Project, [Tag 01X1](https://stacks.math.columbia.edu/tag/01X1). 10 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01X2, a definition
 
 [Tag 01X2](https://stacks.math.columbia.edu/tag/01X2) in the Stacks Project.
 
-**`AlgebraicGeometry.MeromorphicFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L70). The attribute's comment: “a meromorphic function”. References: EGA IV (20.1.3), “M(X)”.
+**`AlgebraicGeometry.MeromorphicFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L70). The attribute's comment: “a meromorphic function”. References: EGA IV (20.1.3), “M(X)”.
 
 > A meromorphic function on a locally ringed space is a global section of its sheaf of
 > meromorphic functions, the sheaf of total quotient rings of its structure sheaf.
@@ -25,13 +25,13 @@ abbrev MeromorphicFunction (O : TopCat.Sheaf CommRingCat.{u} X) : Type u
 
 Declarations registered for the tag:
 
-- [`totalQuotientSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=totalQuotientSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L138) (StacksFrontier): “the sheaf of meromorphic functions”.
+- [`totalQuotientSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=totalQuotientSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L138) (StacksFrontier): “the sheaf of meromorphic functions”.
 
 ## Tag 01X3, an example
 
 [Tag 01X3](https://stacks.math.columbia.edu/tag/01X3) in the Stacks Project.
 
-**`AlgebraicGeometry.NoChange.noChangeRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L71). The attribute's comment: “the ring”.
+**`AlgebraicGeometry.NoChange.noChangeRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L71). The attribute's comment: “the ring”.
 
 > The ring `ℂ[x, {y_α}]/((x-α)y_α, y_α y_β)`.
 
@@ -39,7 +39,7 @@ Declarations registered for the tag:
 abbrev noChangeRing
 ```
 
-**`AlgebraicGeometry.NoChange.normalForm_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L479). The attribute's comment: “unique normal form”.
+**`AlgebraicGeometry.NoChange.normalForm_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L479). The attribute's comment: “unique normal form”.
 
 > Every element of the example ring has a unique displayed normal form.
 
@@ -47,7 +47,7 @@ abbrev noChangeRing
 theorem normalForm_bijective : Function.Bijective normalForm
 ```
 
-**`AlgebraicGeometry.NoChange.isUnit_of_isRegular_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L487). The attribute's comment: “nonzerodivisors on principal opens”.
+**`AlgebraicGeometry.NoChange.isUnit_of_isRegular_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L487). The attribute's comment: “nonzerodivisors on principal opens”.
 
 > On every principal open of `Spec A`, a nonzerodivisor is a unit.
 
@@ -56,7 +56,7 @@ theorem isUnit_of_isRegular_localizationAway (f : noChangeRing)
     (a : Localization.Away f) (ha : IsRegular a) : IsUnit a
 ```
 
-**`AlgebraicGeometry.NoChange.isIso_toTotalQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L676). The attribute's comment: “equality of sheaves”.
+**`AlgebraicGeometry.NoChange.isIso_toTotalQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/NoChange.lean#L676). The attribute's comment: “equality of sheaves”.
 
 > The canonical map from the structure sheaf of `Spec A` to its sheaf of
 > meromorphic functions is an isomorphism.
@@ -71,7 +71,7 @@ theorem isIso_toTotalQuotientSheaf :
 
 [Tag 01X4](https://stacks.math.columbia.edu/tag/01X4) in the Stacks Project.
 
-**`AlgebraicGeometry.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L61). The attribute's comment: “part (1)”. References: EGA IV (20.1.3), “M\_X(F)”.
+**`AlgebraicGeometry.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L61). The attribute's comment: “part (1)”. References: EGA IV (20.1.3), “M\_X(F)”.
 
 > The sheaf `K_X(F)` of meromorphic sections of `F`, obtained by extension of scalars from
 > `O` to its sheaf of total quotient rings.
@@ -84,7 +84,7 @@ noncomputable abbrev meromorphicSectionSheaf (O : TopCat.Sheaf CommRingCat.{u} X
       (J := Opens.grothendieckTopology X) (totalQuotientSheaf (X := X) O))
 ```
 
-**`AlgebraicGeometry.MeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L75). The attribute's comment: “part (2)”. References: EGA IV (20.1.3), “M(X,F)”.
+**`AlgebraicGeometry.MeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L75). The attribute's comment: “part (2)”. References: EGA IV (20.1.3), “M(X,F)”.
 
 > A meromorphic section of `F` is a global section of `K_X(F)`.
 
@@ -98,7 +98,7 @@ abbrev MeromorphicSection (O : TopCat.Sheaf CommRingCat.{u} X)
 
 [Tag 02OT](https://stacks.math.columbia.edu/tag/02OT) in the Stacks Project.
 
-**`AlgebraicGeometry.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean#L105). References: EGA IV (20.1.11), “M\_f = M\_X condition”.
+**`AlgebraicGeometry.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean#L105). References: EGA IV (20.1.11), “M\_f = M\_X condition”.
 
 > Pullbacks of meromorphic functions are defined for `f` when the pullback to every compatible
 > pair of opens sends regular sections of the target structure sheaf to regular sections of the
@@ -113,7 +113,7 @@ noncomputable abbrev PullbacksMeromorphicSections
 
 [Tag 02OU](https://stacks.math.columbia.edu/tag/02OU) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_mapsTo_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L86). The attribute's comment: “weakly\_associated”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_mapsTo_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L86). The attribute's comment: “weakly\_associated”.
 
 > If a morphism of schemes maps every weakly associated point of its source to the generic
 > point of an irreducible component of its target, then pullbacks of meromorphic functions are
@@ -126,7 +126,7 @@ lemma pullbacksMeromorphicSections_of_mapsTo_genericPoints
     PullbacksMeromorphicSections f.1
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L127). The attribute's comment: “reduced\_source”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L127). The attribute's comment: “reduced\_source”.
 
 > **Stacks Project, Tag 02OU (reduced source).** If a morphism from a reduced scheme sends
 > every generic point of an irreducible component to a generic point of an irreducible component,
@@ -138,7 +138,7 @@ theorem pullbacksMeromorphicSections_of_reduced {X Y : Scheme.{u}} (f : X ⟶ Y)
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L137). The attribute's comment: “integral\_source”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L137). The attribute's comment: “integral\_source”.
 
 > **Stacks Project, Tag 02OU (integral source).** If the source of a morphism of schemes is
 > integral and its generic point maps to a generic point of an irreducible component of the target,
@@ -151,7 +151,7 @@ lemma pullbacksMeromorphicSections_of_isIntegral
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L146). The attribute's comment: “dominant\_integral”. References: EGA IV (21.4.5), “(iii), X,X' integral”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L146). The attribute's comment: “dominant\_integral”. References: EGA IV (21.4.5), “(iii), X,X' integral”.
 
 > **Stacks Project, Tag 02OU.** Pullbacks of meromorphic functions are defined along a
 > dominant morphism between integral schemes.
@@ -162,7 +162,7 @@ lemma pullbacksMeromorphicSections_of_isDominant
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L158). The attribute's comment: “associated\_points”. References: EGA IV (21.4.5), “(ii), to generic points”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L158). The attribute's comment: “associated\_points”. References: EGA IV (21.4.5), “(ii), to generic points”.
 
 > **Stacks Project, Tag 02OU (associated points).** If every associated point of a locally
 > Noetherian source scheme maps to the generic point of an irreducible component of the target,
@@ -176,7 +176,7 @@ theorem pullbacksMeromorphicSections_of_associatedPoints
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L175). The attribute's comment: “no\_embedded\_points”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L175). The attribute's comment: “no\_embedded\_points”.
 
 > **Stacks Project, Tag 02OU (no embedded points).** If a morphism from a locally Noetherian
 > scheme without embedded points sends every generic point of an irreducible component to a
@@ -191,7 +191,7 @@ theorem pullbacksMeromorphicSections_of_noEmbeddedPoints
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L197). The attribute's comment: “flat”. References: EGA IV (21.4.5), “(i)”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L197). The attribute's comment: “flat”. References: EGA IV (21.4.5), “(i)”.
 
 > Pullbacks of meromorphic functions are defined along a flat morphism of schemes.
 
@@ -205,7 +205,7 @@ theorem pullbacksMeromorphicSections_of_flat
 
 [Tag 0EMF](https://stacks.math.columbia.edu/tag/0EMF) in the Stacks Project.
 
-**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L139). The attribute's comment: “regular\_elements\_in\_stalks”.
+**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L139). The attribute's comment: “regular\_elements\_in\_stalks”.
 
 > If weakly associated points are generic points of irreducible components and
 > quasi-compact opens have finitely many irreducible components, then the germs of regular
@@ -224,7 +224,7 @@ lemma regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_ge
       nonZeroDivisors (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L183). The attribute's comment: “stalk\_total\_quotient\_ring”.
+**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L183). The attribute's comment: “stalk\_total\_quotient\_ring”.
 
 > If every weakly associated point of a scheme is a generic point of an irreducible component
 > and every quasi-compact open has finitely many irreducible components, then the stalk of the
@@ -242,7 +242,7 @@ lemma stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subse
     IsFractionRing (X.presheaf.stalk x) (X.presheaf.totalQuotientPresheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean#L85). The attribute's comment: “stalk\_total\_quotient\_ring”.
+**`AlgebraicGeometry.stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean#L85). The attribute's comment: “stalk\_total\_quotient\_ring”.
 
 > If every weakly associated point of a scheme is a generic point of an irreducible component
 > and every quasi-compact open has finitely many irreducible components, then the stalk `K_{X, x}`
@@ -261,7 +261,7 @@ lemma stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated
     IsFractionRing (X.presheaf.stalk x) (X.totalQuotientSheaf.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.isIso_toGenericPointStalkProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L268). The attribute's comment: “generic\_point\_decomposition”.
+**`AlgebraicGeometry.isIso_toGenericPointStalkProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L268). The attribute's comment: “generic\_point\_decomposition”.
 
 > The comparison map of sheaves of rings is an isomorphism: it is so on stalks, because the
 > presheaf-level comparison is bijective on the affine opens and the sheafification unit is an
@@ -274,7 +274,7 @@ lemma isIso_toGenericPointStalkProduct
     IsIso (toGenericPointStalkProduct X)
 ```
 
-**`AlgebraicGeometry.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L363). The attribute's comment: “generic\_point\_decomposition”.
+**`AlgebraicGeometry.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L363). The attribute's comment: “generic\_point\_decomposition”.
 
 > **Stacks 0EMF.** The `𝒪_X`-module of meromorphic functions is the product of the
 > pushed-forward structure sheaves of the local schemes at the generic points of the irreducible
@@ -291,7 +291,7 @@ theorem meromorphicFunctions_iso_product_genericPointStalks
       ∏ᶜ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L247). The attribute's comment: “generic\_point\_decomposition”.
+**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L247). The attribute's comment: “generic\_point\_decomposition”.
 
 > **Stacks 0EMF, displayed direct-sum decomposition.** For a scheme whose weakly associated
 > points are generic points of irreducible components and whose quasi-compact opens have finitely
@@ -307,7 +307,7 @@ theorem meromorphicFunctions_iso_coproduct_genericPointStalks (X : Scheme.{u})
       ∐ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`AlgebraicGeometry.isLocalization_totalQuotientSheaf_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L185). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.isLocalization_totalQuotientSheaf_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L187). The attribute's comment: “part (5)”.
 
 > **Part (5) of [Stacks, Tag 0EMF].** On an affine open `U` of a scheme whose weakly associated
 > points are generic points of irreducible components and whose quasi-compact opens have finitely
@@ -325,7 +325,7 @@ theorem isLocalization_totalQuotientSheaf_obj
     IsLocalization (nonZeroDivisors Γ(X, U)) (X.totalQuotientSheaf.obj.obj (op U))
 ```
 
-**`AlgebraicGeometry.nonempty_meromorphicSections_iso_pi_genericPointStalkModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 624](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L624). The attribute's comment: “part (2), product”.
+**`AlgebraicGeometry.nonempty_meromorphicSections_iso_pi_genericPointStalkModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L626). The attribute's comment: “part (2), product”.
 
 > **Part (2) of [Stacks, Tag 0EMF], the product decomposition.** For a quasi-coherent module `F`
 > on a scheme whose weakly associated points are generic points of irreducible components and whose
@@ -342,7 +342,7 @@ theorem nonempty_meromorphicSections_iso_pi_genericPointStalkModuleOf
       ∏ᶜ fun η : genericPoints X ↦ genericPointStalkModuleOf X F η)
 ```
 
-**`AlgebraicGeometry.nonempty_meromorphicSections_iso_sigma_genericPointStalkModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L636). The attribute's comment: “part (2), direct sum”.
+**`AlgebraicGeometry.nonempty_meromorphicSections_iso_sigma_genericPointStalkModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L638). The attribute's comment: “part (2), direct sum”.
 
 > **Part (2) of [Stacks, Tag 0EMF], the direct-sum decomposition.** The family of generic-point
 > contributions is locally finite, so the product of the previous theorem is also their direct
@@ -357,7 +357,7 @@ theorem nonempty_meromorphicSections_iso_sigma_genericPointStalkModuleOf
       ∐ fun η : genericPoints X ↦ genericPointStalkModuleOf X F η)
 ```
 
-**`AlgebraicGeometry.meromorphicSections_isQuasicoherent_of_genericHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L649). The attribute's comment: “part (2), quasi-coherence”.
+**`AlgebraicGeometry.meromorphicSections_isQuasicoherent_of_genericHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean, line 651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Globalization.lean#L651). The attribute's comment: “part (2), quasi-coherence”.
 
 > **Part (2) of [Stacks, Tag 0EMF], quasi-coherence.** The sheaf `K_X(F)` of meromorphic
 > sections of a quasi-coherent module `F` is quasi-coherent, being the product of the generic-point
@@ -371,7 +371,7 @@ theorem meromorphicSections_isQuasicoherent_of_genericHypotheses
     (meromorphicSections X F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicQuasicoherent.meromorphicFunctions_isQuasicoherent_of_genericHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean#L60). The attribute's comment: “part (1)”.
+**`Stacks.AlgebraicGeometry.MeromorphicQuasicoherent.meromorphicFunctions_isQuasicoherent_of_genericHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MeromorphicQuasicoherent/Criteria.lean#L60). The attribute's comment: “part (1)”.
 
 > **Part (1) of [Stacks, Tag 0EMF].** On a scheme whose weakly associated points are generic
 > points of irreducible components and whose quasi-compact opens have finitely many irreducible
@@ -385,7 +385,7 @@ theorem meromorphicFunctions_isQuasicoherent_of_genericHypotheses {X : Scheme.{u
     (meromorphicFunctions X).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean#L608). The attribute's comment: “part (6)”. References: EGA I (7.1.3), “special case”.
+**`AlgebraicGeometry.exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/Meromorphic.lean#L608). The attribute's comment: “part (6)”. References: EGA I (7.1.3), “special case”.
 
 > **Part (6) of [Stacks, Tag 0EMF]**, with the commutative ring structure on the rational
 > functions constructed rather than assumed: it is transported from the global sections of the sheaf
@@ -407,7 +407,7 @@ theorem exists_commRing_rationalFunctions_ringEquiv_totalQuotientSheaf_top (X : 
 
 [Tag 02OX](https://stacks.math.columbia.edu/tag/02OX) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRegularMeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L83). References: EGA IV (20.1.8), “regular section defn”.
+**`AlgebraicGeometry.IsRegularMeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L83). References: EGA IV (20.1.8), “regular section defn”.
 
 > A meromorphic section is regular if its induced map from the total quotient sheaf
 > to the meromorphic section sheaf is injective.
@@ -423,7 +423,7 @@ noncomputable abbrev IsRegularMeromorphicSection (O : TopCat.Sheaf CommRingCat.{
 
 [Tag 02OY](https://stacks.math.columbia.edu/tag/02OY) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullback.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullback.lean#L216). The attribute's comment: “part (1)”. References: EGA IV (20.1.11), “mero section pullback”.
+**`AlgebraicGeometry.pullbackMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullback.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullback.lean#L216). The attribute's comment: “part (1)”. References: EGA IV (20.1.11), “mero section pullback”.
 
 > **The canonical pullback map on meromorphic sections.** When pullbacks of meromorphic
 > functions are defined for `f`, a meromorphic section of a sheaf of `𝒪_Y`-modules `F` pulls
@@ -436,7 +436,7 @@ noncomputable def pullbackMeromorphicSection (s : MeromorphicSection Y.sheaf F) 
       ((RingedSpaceModuleAdjunction.modulePullback f.toShHom).obj F)
 ```
 
-**`AlgebraicGeometry.isRegularMeromorphicSection_pullbackMeromorphicSection_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullbackRegularGeneral.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullbackRegularGeneral.lean#L49). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isRegularMeromorphicSection_pullbackMeromorphicSection_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullbackRegularGeneral.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionPullbackRegularGeneral.lean#L49). The attribute's comment: “part (2)”.
 
 > **Stacks 02OY part (2).** Let `f : X ⟶ Y` be a morphism of locally ringed spaces for which
 > pullbacks of meromorphic functions are defined and let `L` be an invertible `𝒪_Y`-module. The
@@ -457,7 +457,7 @@ theorem isRegularMeromorphicSection_pullbackMeromorphicSection_of_isInvertible
 
 [Tag 02P0](https://stacks.math.columbia.edu/tag/02P0) in the Stacks Project.
 
-**`Stacks.DenominatorIdeal.denominatorIdeal_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean#L117). The attribute's comment: “the denominator rule”.
+**`Stacks.DenominatorIdeal.denominatorIdeal_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean#L117). The attribute's comment: “the denominator rule”.
 
 > A section of the structure sheaf is a denominator of the meromorphic section `s` exactly when
 > its product with `s` is a section of `L`.
@@ -472,7 +472,7 @@ theorem denominatorIdeal_sections (U : Opens X)
         (toK X L).val.app (op U) t)
 ```
 
-**`Stacks.DenominatorIdeal.denominatorIdeal_section_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean#L167). The attribute's comment: “multiplication is injective”.
+**`Stacks.DenominatorIdeal.denominatorIdeal_section_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdeal/Basic.lean#L167). The attribute's comment: “multiplication is injective”.
 
 > Multiplication by a regular meromorphic section embeds its denominator ideal in `L`.
 
@@ -481,7 +481,7 @@ theorem denominatorIdeal_section_mono (hs : IsRegularMeromorphicSection X.sheaf 
     Mono (denominatorIdealMul X L s)
 ```
 
-**`Stacks.DenominatorIdealInvertible.denominatorIdeal_inclusion_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealInvertible/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdealInvertible/Basic.lean#L140). The attribute's comment: “inclusion is injective”.
+**`Stacks.DenominatorIdealInvertible.denominatorIdeal_inclusion_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealInvertible/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdealInvertible/Basic.lean#L140). The attribute's comment: “inclusion is injective”.
 
 > **The denominator ideal of a meromorphic section of an invertible sheaf embeds in the
 > structure sheaf.** Stacks Tag 02P0, "inclusion is injective".
@@ -492,7 +492,7 @@ theorem denominatorIdeal_inclusion_mono (s : MeromorphicSection.{u, u} X.sheaf L
     Mono (denominatorIdealι X L s)
 ```
 
-**`Stacks.DenominatorIdealQcoh.denominatorIdeal_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/Basic.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/Basic.lean#L276). The attribute's comment: “quasi-coherence”. References: EGA IV (20.2.14), “special case”.
+**`Stacks.DenominatorIdealQcoh.denominatorIdeal_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/Basic.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/Basic.lean#L276). The attribute's comment: “quasi-coherence”. References: EGA IV (20.2.14), “special case”.
 
 > **The denominator ideal of a meromorphic section of an invertible sheaf is quasi-coherent.**
 >
@@ -508,7 +508,7 @@ theorem denominatorIdeal_isQuasicoherent
     (denominatorIdeal X L s).IsQuasicoherent
 ```
 
-**`Stacks.DenominatorIdealQcoh.denominatorIdealData_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean#L189). The attribute's comment: “affine denominator ideal”.
+**`Stacks.DenominatorIdealQcoh.denominatorIdealData_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean#L189). The attribute's comment: “affine denominator ideal”.
 
 > **On each affine open the ideal-sheaf data are exactly the denominators.**
 >
@@ -524,7 +524,7 @@ theorem denominatorIdealData_ideal
       ((denominatorIdealι X L s).val.app (op U.1)).hom.range
 ```
 
-**`Stacks.DenominatorIdealQcoh.denominatorIdealData_support_isNowhereDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean#L204). The attribute's comment: “support of the denominator ideal”.
+**`Stacks.DenominatorIdealQcoh.denominatorIdealData_support_isNowhereDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorIdealQcoh/IdealData.lean#L204). The attribute's comment: “support of the denominator ideal”.
 
 > **The closed support of the denominator ideal is nowhere dense.**
 >
@@ -539,7 +539,7 @@ theorem denominatorIdealData_support_isNowhereDense
     IsNowhereDense ((denominatorIdealData X L s).support : Set X)
 ```
 
-**`Stacks.DenominatorCokernel.denominatorIdeal_inclusion_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/Cokernels.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/Cokernels.lean#L189). The attribute's comment: “support of the first cokernel”.
+**`Stacks.DenominatorCokernel.denominatorIdeal_inclusion_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/Cokernels.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/Cokernels.lean#L189). The attribute's comment: “support of the first cokernel”.
 
 > **The cokernel of the inclusion of the denominator ideal in the structure sheaf is supported
 > on a closed nowhere dense subset.**
@@ -551,7 +551,7 @@ theorem denominatorIdeal_inclusion_support
       (asModuleSheaf X (cokernel (denominatorIdealι X L s))).supp ⊆ T
 ```
 
-**`Stacks.DenominatorCokernel.denominatorIdeal_section_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/MulCokernel.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/MulCokernel.lean#L112). The attribute's comment: “support of the second cokernel”.
+**`Stacks.DenominatorCokernel.denominatorIdeal_section_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/MulCokernel.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DenominatorLocalRatio/MulCokernel.lean#L112). The attribute's comment: “support of the second cokernel”.
 
 > **The cokernel of multiplication by a regular meromorphic section of an invertible sheaf is
 > supported on a closed nowhere dense subset.**  Stacks Tag 02P0, "support of the second
@@ -565,7 +565,7 @@ theorem denominatorIdeal_section_support
       (asModuleSheaf X (cokernel (denominatorIdealMul X L s))).supp ⊆ T
 ```
 
-**`AlgebraicGeometry.exists_denominatorIdeal_inclusion_app_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorRule.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorRule.lean#L93). The attribute's comment: “the denominator rule”.
+**`AlgebraicGeometry.exists_denominatorIdeal_inclusion_app_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorRule.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorRule.lean#L93). The attribute's comment: “the denominator rule”.
 
 > **Stacks Project, Tag 02P0**, the denominator rule. A section `f` of `𝒪_X` over `V` lies in
 > the ideal of denominators of a meromorphic section `s` of `L` exactly when `f s` is a section
@@ -588,7 +588,7 @@ theorem exists_denominatorIdeal_inclusion_app_eq_iff
         (toMeromorphicSectionSheafAsModule X L).val.app (op V) t)
 ```
 
-**`AlgebraicGeometry.denominatorIdeal_section_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean#L241). The attribute's comment: “multiplication is injective”.
+**`AlgebraicGeometry.denominatorIdeal_section_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean#L241). The attribute's comment: “multiplication is injective”.
 
 > **Stacks Project, Tag 02P0**, injectivity of multiplication by the section. For a regular
 > meromorphic section `s` of `L`, multiplication by `s` embeds the ideal of denominators of `s`
@@ -606,7 +606,7 @@ theorem denominatorIdeal_section_mono
     Mono (denominatorIdealMul X L s)
 ```
 
-**`AlgebraicGeometry.denominatorIdeal_inclusion_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorsInclusion.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorsInclusion.lean#L473). The attribute's comment: “inclusion is injective”.
+**`AlgebraicGeometry.denominatorIdeal_inclusion_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorsInclusion.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DenominatorsInclusion.lean#L473). The attribute's comment: “inclusion is injective”.
 
 > **Stacks Project, Tag 02P0**, injectivity of the ideal inclusion. For an invertible sheaf of
 > modules `L` and a meromorphic section `s` of `L`, the ideal of denominators of `s` embeds in the
@@ -623,7 +623,7 @@ theorem denominatorIdeal_inclusion_mono
     Mono (denominatorIdealι X L s)
 ```
 
-**`AlgebraicGeometry.denominatorIdealData_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean#L228). The attribute's comment: “affine denominator ideal”.
+**`AlgebraicGeometry.denominatorIdealData_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean#L228). The attribute's comment: “affine denominator ideal”.
 
 > **Stacks Project, Tag 02P0**, the affine denominator ideal. For an invertible sheaf of
 > modules `L` and a meromorphic section `s` of `L`, the component of
@@ -642,7 +642,7 @@ theorem denominatorIdealData_ideal
       ((denominatorIdealι X L s).val.app (op U.1)).hom.range
 ```
 
-**`AlgebraicGeometry.denominatorIdealData_support_isNowhereDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean#L256). The attribute's comment: “support of the denominator ideal”.
+**`AlgebraicGeometry.denominatorIdealData_support_isNowhereDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorIdealData.lean#L256). The attribute's comment: “support of the denominator ideal”.
 
 > **Stacks Project, Tag 02P0**, the support of the ideal of denominators. For an invertible
 > sheaf of modules `L` and a meromorphic section `s` of `L`, the support of
@@ -665,7 +665,7 @@ theorem denominatorIdealData_support_isNowhereDense
     IsNowhereDense ((denominatorIdealData X L s).support : Set X)
 ```
 
-**`AlgebraicGeometry.denominatorIdeal_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorQuasicoherent.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorQuasicoherent.lean#L411). The attribute's comment: “quasi-coherence”. References: EGA IV (20.2.14), “special case”.
+**`AlgebraicGeometry.denominatorIdeal_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorQuasicoherent.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorQuasicoherent.lean#L411). The attribute's comment: “quasi-coherence”. References: EGA IV (20.2.14), “special case”.
 
 > **Stacks Project, Tag 02P0**, quasi-coherence of the ideal of denominators. For an
 > invertible sheaf of modules `L` and a meromorphic section `s` of `L`, the ideal of denominators
@@ -688,7 +688,7 @@ theorem denominatorIdeal_isQuasicoherent
     (denominatorIdeal X L s).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.denominatorIdeal_inclusion_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean#L350). The attribute's comment: “support of the first cokernel”.
+**`AlgebraicGeometry.denominatorIdeal_inclusion_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean#L350). The attribute's comment: “support of the first cokernel”.
 
 > **Stacks Project, Tag 02P0**, the support of the first cokernel. For an invertible sheaf of
 > modules `L` and a meromorphic section `s` of `L`, the cokernel of the inclusion of the ideal of
@@ -713,7 +713,7 @@ theorem denominatorIdeal_inclusion_support
           RingedSpace.ModuleSheaf.{u} X.toRingedSpace).supp ⊆ T
 ```
 
-**`AlgebraicGeometry.denominatorIdeal_section_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean#L580). The attribute's comment: “support of the second cokernel”.
+**`AlgebraicGeometry.denominatorIdeal_section_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Meromorphic/DenominatorSupport.lean#L580). The attribute's comment: “support of the second cokernel”.
 
 > **Stacks Project, Tag 02P0**, the support of the second cokernel. For an invertible sheaf of
 > modules `L` and a *regular* meromorphic section `s` of `L`, the cokernel of multiplication by
@@ -744,7 +744,7 @@ theorem denominatorIdeal_section_support
 
 [Tag 02P1](https://stacks.math.columbia.edu/tag/02P1) in the Stacks Project.
 
-**`AlgebraicGeometry.denominatorIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean#L190). The attribute's comment: “the ideal sheaf of denominators of `s`”. References: EGA IV (20.2.14), “definition”.
+**`AlgebraicGeometry.denominatorIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Denominators.lean#L190). The attribute's comment: “the ideal sheaf of denominators of `s`”. References: EGA IV (20.2.14), “definition”.
 
 > The sheaf of denominators of a meromorphic section, as the fibre product of the structure
 > sheaf and `L` over `K_X(L)`. Its sections over `V` are the pairs `(f, t)` with `f s = t` in
@@ -766,4 +766,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.24, Tag 01X1](https://stacks.math.columbia.edu/tag/01X1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

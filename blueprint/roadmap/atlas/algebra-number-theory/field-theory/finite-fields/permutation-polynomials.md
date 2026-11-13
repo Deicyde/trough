@@ -7,14 +7,14 @@ statement: formalized
 
 # Permutation polynomials
 
-20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html).
+20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html).
 
 ## Permutation polynomial over a finite field
 
 A polynomial $f$ over a finite field $F$ is a
 permutation polynomial when its evaluation map $F \to F$, $x \mapsto f(x)$, is bijective.
 
-Formalized by `Polynomial.IsPermutationPolynomial`, a definition declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial).
+Formalized by `Polynomial.IsPermutationPolynomial`, a definition declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial).
 
 ## Polynomial complete to level $k$
 
@@ -26,7 +26,7 @@ as an element of $F$.
 The source considers only positive levels $k$; here every natural level is allowed, and
 completeness to level $0$ says that $f$ itself is a permutation polynomial.
 
-Formalized by `Polynomial.IsKComplete`, a definition declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete).
+Formalized by `Polynomial.IsKComplete`, a definition declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete).
 
 ## Unfolded form of $k$-completeness
 
@@ -35,21 +35,21 @@ natural number. Then $f$ is complete to level $k$ if and only if for every natur
 $i \le k$ the map $F \to F$, $x \mapsto (f + iX)(x)$, is bijective, where $i$ is viewed as an
 element of $F$.
 
-Formalized by `Polynomial.isKComplete_iff`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-iff).
+Formalized by `Polynomial.isKComplete_iff`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-iff).
 
 ## Completeness at a lower level
 
 Let $F$ be a finite field, $f \in F[X]$ and let $j \le k$
 be natural numbers. If $f$ is complete to level $k$, then $f$ is complete to level $j$.
 
-Formalized by `Polynomial.isKComplete_mono`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-mono).
+Formalized by `Polynomial.isKComplete_mono`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-mono).
 
 ## Completeness at level zero
 
 Let $F$ be a finite field and $f \in F[X]$. Then $f$ is
 complete to level $0$ if and only if $f$ is a permutation polynomial.
 
-Formalized by `Polynomial.isKComplete_zero`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-zero).
+Formalized by `Polynomial.isKComplete_zero`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-zero).
 
 ## Completeness at the next level
 
@@ -57,7 +57,7 @@ Let $F$ be a finite field, $f \in F[X]$ and $k$ a natural
 number. Then $f$ is complete to level $k + 1$ if and only if $f$ is complete to level $k$ and
 $f + (k + 1)X$ is a permutation polynomial, where $k + 1$ is viewed as an element of $F$.
 
-Formalized by `Polynomial.isKComplete_succ_iff`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-succ-iff).
+Formalized by `Polynomial.isKComplete_succ_iff`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-succ-iff).
 
 ## A $k$-complete polynomial is a permutation polynomial
 
@@ -65,7 +65,7 @@ Let $F$ be a finite field,
 $f \in F[X]$ and $k$ a natural number. If $f$ is complete to level $k$, then $f$ is a
 permutation polynomial.
 
-Formalized by `Polynomial.isKComplete_self`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-self).
+Formalized by `Polynomial.isKComplete_self`, a theorem declared in [MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Finite/PermutationPolynomial.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-kcomplete-self).
 
 ## Hermite–Dickson criterion
 
@@ -79,7 +79,7 @@ $p \nmid t$, the remainder of $f^t$ upon division by $X^q - X$ has degree at mos
 
 - Brian G. Kronenthal, "An Integer Sequence Motivated by Generalized Quadrangles", Journal of Integer Sequences 18 (2015), Article 15.7.8, https://cs.uwaterloo.ca/journals/JIS/VOL18/Kronenthal/kron3.tex, Hermite–Dickson statement at lines 120–126.
 
-Formalized by `MathlibExt.FieldTheory.HermiteDickson.hermite_dickson_permutation_criterion`, a theorem declared in [MathlibExt/FieldTheory/HermiteDickson.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/HermiteDickson.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#hermite-dickson-permutation-criterion).
+Formalized by `MathlibExt.FieldTheory.HermiteDickson.hermite_dickson_permutation_criterion`, a theorem declared in [MathlibExt/FieldTheory/HermiteDickson.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/HermiteDickson.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#hermite-dickson-permutation-criterion).
 
 ## Monomial permutation polynomials of a finite field
 
@@ -94,7 +94,7 @@ holds, but $X^0 = 1$ is constant.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_X_pow_iff_coprime` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-x-pow-iff-copr).
+Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_X_pow_iff_coprime` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-x-pow-iff-copr).
 
 ## Power-sum criterion for distinct elements of a finite field
 
@@ -107,7 +107,7 @@ $\sum_{i=1}^{q} a_i^{q-1} = -1$, where $0^0 = 1$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.injective_iff_sum_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#injective-iff-sum-pow-eq).
+Stated but not proved: `MetaMathlibExt.injective_iff_sum_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#injective-iff-sum-pow-eq).
 
 ## Alternating binomial sums of powers
 
@@ -122,7 +122,7 @@ and if $m < n$, then $\sum_{i=0}^{n} (-1)^i \binom{n}{i} (kx + iy)^m = 0$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_mul_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#sum-neg-one-pow-choose-mul-pow).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_mul_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#sum-neg-one-pow-choose-mul-pow).
 
 ## Shifted power-sum permutation polynomials of a prime field
 
@@ -136,7 +136,7 @@ of $\mathbb{F}_p$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_sum_pow_mul_X_pow_add` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-sum-pow-mul-x).
+Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_sum_pow_mul_X_pow_add` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-sum-pow-mul-x).
 
 ## Dilated power-sum permutation polynomials of a prime field
 
@@ -150,7 +150,7 @@ permutation polynomial of $\mathbb{F}_p$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_sum_mul_pow_mul_X_pow_mul` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-sum-mul-pow-mu).
+Stated but not proved: `MetaMathlibExt.isPermutationPolynomial_sum_mul_pow_mul_X_pow_mul` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#is-permutation-polynomial-sum-mul-pow-mu).
 
 ## Rational form of the power-weighted geometric sum
 
@@ -168,7 +168,7 @@ right-hand side at $x$ divided by $(1 - x)^{t+1}$, which is the form the source 
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.one_sub_X_pow_mul_sum_pow_mul_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#one-sub-x-pow-mul-sum-pow-mul-x-pow).
+Stated but not proved: `MetaMathlibExt.one_sub_X_pow_mul_sum_pow_mul_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#one-sub-x-pow-mul-sum-pow-mul-x-pow).
 
 ## Vishwakarma–Singh congruence for ordered partitions
 
@@ -189,7 +189,7 @@ $k = 1$, $s = 2$, $t = 1$ the sum is $1$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_prod_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-prod-pow).
+Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_prod_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-prod-pow).
 
 ## Vishwakarma–Singh congruence for ordered partitions, linear case
 
@@ -210,7 +210,7 @@ for $p = 3$, $k = 7$, $s = 2$ the sum is $400 \equiv 1 \pmod{3}$.
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_prod` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-prod).
+Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_prod` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-prod).
 
 ## Vishwakarma–Singh congruence for ordered partitions into multiples
 
@@ -235,7 +235,7 @@ $s$-th power of $\sum_{n=1}^{k} (an)^t X^{an}$, to which the proof applies Hermi
 
 - Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_mul_prod_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-mul-prod-pow).
+Stated but not proved: `MetaMathlibExt.prime_dvd_sum_compositions_mul_prod_pow` is written with `theorem_wanted` in [WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/OrderedPartitionPermutationPolynomialsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#prime-dvd-sum-compositions-mul-prod-pow).
 
 ## Power sums over $\mathbb{Z}/p\mathbb{Z}$
 
@@ -247,7 +247,7 @@ and $0$ otherwise.
 
 - Zhiguo Ding and Michael E. Zieve, "Permutation Polynomials of the Form `∑_{n=1}^k h(n) X^n`", Lemma 1.
 
-Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.sum_zmod_pow_eq_ite` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#sum-zmod-pow-eq-ite).
+Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.sum_zmod_pow_eq_ite` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#sum-zmod-pow-eq-ite).
 
 ## Permutation polynomials $\sum_{n=1}^k n^t X^n$ over $\mathbb{F}_p$
 
@@ -262,7 +262,7 @@ Ding and Zieve quote this result from an earlier paper.
 
 - Zhiguo Ding and Michael E. Zieve, "Permutation Polynomials of the Form `∑_{n=1}^k h(n) X^n`", Theorem 1.
 
-Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.bijective_sum_pow_mul_pow_zmod` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#bijective-sum-pow-mul-pow-zmod).
+Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.bijective_sum_pow_mul_pow_zmod` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#bijective-sum-pow-mul-pow-zmod).
 
 ## When $\sum_{n=1}^k h(n) X^n$ induces the identity on $\mathbb{F}_q$
 
@@ -277,7 +277,7 @@ and either $k \equiv 1 \pmod{p^2}$ or $\sum_{j=1}^{\lfloor d/(p-1) \rfloor} h_{j
 
 - Zhiguo Ding and Michael E. Zieve, "Permutation Polynomials of the Form `∑_{n=1}^k h(n) X^n`", Theorem 2.
 
-Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.finiteField_sum_eval_mul_pow_eq_id_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#finite-field-sum-eval-mul-pow-eq-id-iff).
+Stated but not proved: `MathlibExt.Algebra.PermutationPolynomialsWanted.finiteField_sum_eval_mul_pow_eq_id_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PermutationPolynomialsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PermutationPolynomialsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html#finite-field-sum-eval-mul-pow-eq-id-iff).
 
 ## Depends on
 
@@ -286,4 +286,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutation polynomials](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/finite-fields/permutation-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/FieldTheory/finite-fields/permutation-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/FieldTheory/finite-fields/permutation-polynomials)

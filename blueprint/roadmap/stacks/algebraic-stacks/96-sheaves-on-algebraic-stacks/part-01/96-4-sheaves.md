@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.4 Sheaves
 
-Section 96.4 of the Stacks Project, [Tag 06TN](https://stacks.math.columbia.edu/tag/06TN). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.4 of the Stacks Project, [Tag 06TN](https://stacks.math.columbia.edu/tag/06TN). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06TP, a definition
 
 [Tag 06TP](https://stacks.math.columbia.edu/tag/06TP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.associatedTopology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSite.lean#L53).
+**`AlgebraicGeometry.Stack.associatedTopology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSite.lean#L53).
 
 > The site associated to a category `p : 𝒳 ⥤ (Sch/S)` over the big fppf category of `S` and a
 > topology `τ` on the underlying category of schemes of `B`: the topology `𝒳` inherits from the
@@ -29,7 +29,7 @@ abbrev associatedTopology {X : Type v} [Category.{w} X] (p : X ⥤ BigFppfOver B
 
 [Tag 06TR](https://stacks.math.columbia.edu/tag/06TR) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.IsSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L99). The attribute's comment: “sheaf conditions for the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.IsSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L99). The attribute's comment: “sheaf conditions for the five topologies”.
 
 > **Stacks 06TR.** A presheaf of sets on a category `p : 𝒳 ⥤ (Sch/S)` over the big fppf
 > category of `S` is a *sheaf for the topology `τ`* when it is a sheaf on the associated site
@@ -40,7 +40,7 @@ abbrev associatedTopology {X : Type v} [Category.{w} X] (p : X ⥤ BigFppfOver B
 abbrev IsSheaf (τ : SiteKind) (F : Xᵒᵖ ⥤ Type t) : Prop
 ```
 
-**`AlgebraicGeometry.BigFppfOver.AssociatedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L106). The attribute's comment: “categories and morphisms of sheaves”.
+**`AlgebraicGeometry.BigFppfOver.AssociatedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L106). The attribute's comment: “categories and morphisms of sheaves”.
 
 > **Stacks 06TR.** The category `Sh(𝒳_τ)` of sheaves of sets on the associated site `𝒳_τ`
 > of Stacks 06TP, for `τ` one of the five topologies. Its morphisms are morphisms of the
@@ -54,7 +54,7 @@ abbrev AssociatedSheaf (τ : SiteKind)
 
 [Tag 06TS](https://stacks.math.columbia.edu/tag/06TS) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isSheaf_comp_op_and_isSheaf_ran_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L101). The attribute's comment: “the functors f^p and \{}\_pf of presheaves of sets transform tau sheaves into tau sheaves”.
+**`AlgebraicGeometry.BigFppfOver.isSheaf_comp_op_and_isSheaf_ran_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L101). The attribute's comment: “the functors f^p and \{}\_pf of presheaves of sets transform tau sheaves into tau sheaves”.
 
 > **Stacks 06TS**, preservation of sheaves. For a 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in
 > groupoids over the big fppf category of `S` and `τ` one of the five topologies, the pullback
@@ -70,7 +70,7 @@ theorem isSheaf_comp_op_and_isSheaf_ran_obj :
       IsSheaf B S hS 𝒴.val.p τ ((CatFiberedInGroupoids.homFunctor G).op.ran.obj ℱ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L121). The attribute's comment: “the morphism of topoi f : Sh(X\_tau) -> Sh(Y\_tau) defined by f^p and \{}\_pf, for sheaves of sets”.
+**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L121). The attribute's comment: “the morphism of topoi f : Sh(X\_tau) -> Sh(Y\_tau) defined by f^p and \{}\_pf, for sheaves of sets”.
 
 > **Stacks 06TS**, the morphism of topoi. A 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in
 > groupoids over the big fppf category of `S` defines, for each of the five topologies `τ`, a
@@ -84,7 +84,7 @@ noncomputable def morphismOfTopoi_associatedSheaf :
       (AssociatedSheaf.{u, v, w, max v w t} B S hS 𝒴.val.p τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf_pushforwardCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L137). The attribute's comment: “the direct image of the morphism of topoi is the pushforward \{}\_pf of presheaves”.
+**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf_pushforwardCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L137). The attribute's comment: “the direct image of the morphism of topoi is the pushforward \{}\_pf of presheaves”.
 
 > **Stacks 06TS**, `f_* = {}_pG`. The direct image of the morphism of topoi
 > `AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf` is the pushforward of presheaves:
@@ -98,7 +98,7 @@ noncomputable def morphismOfTopoi_associatedSheaf_pushforwardCompSheafToPresheaf
         (CatFiberedInGroupoids.homFunctor G).op.ran
 ```
 
-**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf_inverseImageCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L148). The attribute's comment: “the inverse image of the morphism of topoi is the pullback f^p of presheaves”.
+**`AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf_inverseImageCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L148). The attribute's comment: “the inverse image of the morphism of topoi is the pullback f^p of presheaves”.
 
 > **Stacks 06TS**, `f⁻¹ = G^p`. The inverse image of the morphism of topoi
 > `AlgebraicGeometry.BigFppfOver.morphismOfTopoi_associatedSheaf` is the pullback of presheaves:
@@ -112,7 +112,7 @@ noncomputable def morphismOfTopoi_associatedSheaf_inverseImageCompSheafToPreshea
         (Functor.whiskeringLeft _ _ _).obj (CatFiberedInGroupoids.homFunctor G).op
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isContinuous_and_isCocontinuous_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L169). The attribute's comment: “preservation of sheaves by both functors”.
+**`AlgebraicGeometry.BigFppfOver.isContinuous_and_isCocontinuous_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L169). The attribute's comment: “preservation of sheaves by both functors”.
 
 > **Stacks 06TS**, preservation of sheaves by both functors. For each of the five topologies
 > `τ`, the functor underlying a 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the
@@ -133,7 +133,7 @@ public theorem isContinuous_and_isCocontinuous_associatedTopology (G : 𝒳 ⟶ 
         (associatedTopology B S hS 𝒳.val.p τ) (associatedTopology B S hS 𝒴.val.p τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.inverseImageCompSheafToPresheafIso_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L187). The attribute's comment: “inverse image is restriction”.
+**`AlgebraicGeometry.BigFppfOver.inverseImageCompSheafToPresheafIso_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L187). The attribute's comment: “inverse image is restriction”.
 
 > **Stacks 06TS**, `f⁻¹ = G^p`. The inverse image of the induced morphism of topoi
 > `Sh(𝒳_τ) ⟶ Sh(𝒴_τ)` is plain restriction along `G.op`: as a functor to presheaves on `𝒳` it is
@@ -153,7 +153,7 @@ public def inverseImageCompSheafToPresheafIso_associatedTopology :
         (Functor.whiskeringLeft _ _ _).obj (CatFiberedInGroupoids.homFunctor G).op
 ```
 
-**`AlgebraicGeometry.BigFppfOver.inverseImage_obj_obj_obj_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L206). The attribute's comment: “objectwise inverse image formula”.
+**`AlgebraicGeometry.BigFppfOver.inverseImage_obj_obj_obj_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L206). The attribute's comment: “objectwise inverse image formula”.
 
 > **Stacks 06TS**, the objectwise formula `f⁻¹(𝒢)(x) = 𝒢(G x)`: the sections of the inverse
 > image of a `τ` sheaf `𝒢` on `𝒴` over an object `x` of `𝒳` are the sections of `𝒢` over `G x`.
@@ -172,7 +172,7 @@ public theorem inverseImage_obj_obj_obj_associatedTopology :
         𝒢.obj.obj (Opposite.op ((CatFiberedInGroupoids.homFunctor G).obj x))
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesFiniteLimits_inverseImage_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L223). The attribute's comment: “left exactness of inverse image”.
+**`AlgebraicGeometry.BigFppfOver.preservesFiniteLimits_inverseImage_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L223). The attribute's comment: “left exactness of inverse image”.
 
 > **Stacks 06TS**, exactness of the inverse image. The inverse image of the induced morphism of
 > topoi preserves finite limits, which is the remaining clause in "morphism of topoi".
@@ -188,7 +188,7 @@ public theorem preservesFiniteLimits_inverseImage_associatedTopology [Limits.Has
       (associatedTopology B S hS 𝒳.val.p τ) (associatedTopology B S hS 𝒴.val.p τ))
 ```
 
-**`AlgebraicGeometry.BigFppfOver.directImageCompSheafToPresheafIso_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L238). The attribute's comment: “direct image is right Kan extension”.
+**`AlgebraicGeometry.BigFppfOver.directImageCompSheafToPresheafIso_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L238). The attribute's comment: “direct image is right Kan extension”.
 
 > **Stacks 06TS**, `f_* = {}_pG`. The direct image of the induced morphism of topoi is the
 > right Kan extension along `G.op`, taken on sheaves: as a functor to presheaves on `𝒴` it is
@@ -210,7 +210,7 @@ public noncomputable def directImageCompSheafToPresheafIso_associatedTopology
         (CatFiberedInGroupoids.homFunctor G).op.ran
 ```
 
-**`AlgebraicGeometry.BigFppfOver.sheafAdjunction_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L264). The attribute's comment: “adjunction defining the morphism of topoi”.
+**`AlgebraicGeometry.BigFppfOver.sheafAdjunction_associatedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L264). The attribute's comment: “adjunction defining the morphism of topoi”.
 
 > **Stacks 06TS**, the morphism of topoi itself. A 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred
 > in groupoids over the big fppf category of `S` induces, for each of the five topologies `τ`, a
@@ -240,7 +240,7 @@ public noncomputable def sheafAdjunction_associatedTopology
 
 [Tag 06TT](https://stacks.math.columbia.edu/tag/06TT) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.sheafAdjunction_associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L341). The attribute's comment: “the associated morphism of tau topoi f = (f^\{-1}, f\_*), for each of the five”.
+**`AlgebraicGeometry.BigFppfOver.sheafAdjunction_associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedSheaves.lean#L341). The attribute's comment: “the associated morphism of tau topoi f = (f^\{-1}, f\_*), for each of the five”.
 
 > **Stacks 06TT.** The *associated morphism of `τ` topoi*
 > `f = (f⁻¹, f_*) : Sh(𝒳_τ) ⟶ Sh(𝒴_τ)` of a 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.4, Tag 06TN](https://stacks.math.columbia.edu/tag/06TN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

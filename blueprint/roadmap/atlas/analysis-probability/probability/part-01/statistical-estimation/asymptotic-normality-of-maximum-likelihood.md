@@ -1,51 +1,43 @@
 ---
 declaration: section
 origin: cited
-lean: MeasureTheory.tendstoInMeasure_of_tendstoInDistribution_const, MeasureTheory.TendstoInDistribution.mul_tendstoInMeasure_zero, MeasureTheory.tendstoInMeasure_zero_of_abs_le, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.score, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.integral_score_sq, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_score, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_estimatingEquation, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_likelihoodEquation
+lean: MeasureTheory.TendstoInDistribution.mul_tendstoInMeasure_zero, MeasureTheory.tendstoInMeasure_zero_of_abs_le, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.score, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.integral_score_sq, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_score, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_estimatingEquation, MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_likelihoodEquation
 statement: formalized
 proof: formalized
 ---
 
 # Asymptotic normality of maximum likelihood
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html).
 
 ## Measure Theory
-
-## Convergence in distribution to a constant implies convergence in probability
-
-If the
-random variables `X i` on one probability space converge in distribution to the constant `c`,
-then they converge to `c` in probability.
-
-Formalized by `MeasureTheory.tendstoInMeasure_of_tendstoInDistribution_const`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-measure-of-tendsto-in-distrib).
 
 ## Product of a distributionally convergent and a vanishing sequence
 
 A sequence `A i` converging in distribution, times a sequence `η i` converging in
 probability to `0`, converges in probability to `0` (a consequence of Slutsky's theorem).
 
-Formalized by `MeasureTheory.TendstoInDistribution.mul_tendstoInMeasure_zero`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#mul-tendsto-in-measure-zero).
+Formalized by `MeasureTheory.TendstoInDistribution.mul_tendstoInMeasure_zero`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#mul-tendsto-in-measure-zero).
 
 ## Convergence to zero in probability by domination on likely events
 
 If `|W i| ≤ V i` on events `G i` whose complements have probability tending to `0`, and
 `V i` tends to `0` in probability, then `W i` tends to `0` in probability.
 
-Formalized by `MeasureTheory.tendstoInMeasure_zero_of_abs_le`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-measure-zero-of-abs-le).
+Formalized by `MeasureTheory.tendstoInMeasure_zero_of_abs_le`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-measure-zero-of-abs-le).
 
 ## Score function
 
 The **score** `∂_θ log p θ x` of a one-parameter family of densities `p`.
 
-Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.score`, a definition declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#score).
+Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.score`, a definition declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#score).
 
 ## Fisher information is the second moment of the score
 
 For a positive density family, `E_θ [score²] = I(θ)`: the Fisher information of
 `FisherInformation.fisherInformation` is the second moment of the score under `p θ ν`.
 
-Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.integral_score_sq`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#integral-score-sq).
+Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.integral_score_sq`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#integral-score-sq).
 
 ## Central limit theorem for the score
 
@@ -58,7 +50,7 @@ distribution to `N(0, I(θ₀))`.
 
 - Lehmann & Casella (1998), §6.3; van der Vaart (1998), ch. 5.
 
-Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_score`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-score).
+Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_score`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-score).
 
 ## Asymptotic normality of a consistent root of an estimating equation
 
@@ -75,7 +67,7 @@ estimators that solve `∑_{i<n} ψ θ (X i) = 0` with probability tending to on
 
 - van der Vaart (1998), Theorem 5.41 (one-dimensional case, with the third-derivative envelope of Cramér (1946), §33.3); Lehmann & Casella (1998), §6.3.
 
-Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_estimatingEquation`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-sqrt-mul-sub-of).
+Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_estimatingEquation`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-sqrt-mul-sub-of).
 
 ## Asymptotic normality of consistent roots of the likelihood equation
 
@@ -105,7 +97,7 @@ likelihood).
 
 - Cramér (1946), §33.3; Lehmann & Casella (1998), Theorem 6.3.10; van der Vaart (1998), Theorem 5.41.
 
-Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_likelihoodEquation`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-sqrt-mul-sub-of-2).
+Formalized by `MathlibExt.Probability.Statistics.MLEAsymptoticNormality.tendstoInDistribution_sqrt_mul_sub_of_likelihoodEquation`, a theorem declared in [MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/MLEAsymptoticNormality.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html#tendsto-in-distribution-sqrt-mul-sub-of-2).
 
 ## Depends on
 
@@ -114,4 +106,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotic normality of maximum likelihood](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood)

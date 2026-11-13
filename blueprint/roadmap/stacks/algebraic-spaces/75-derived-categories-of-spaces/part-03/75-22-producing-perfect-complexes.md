@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.22 Producing perfect complexes
 
-Section 75.22 of the Stacks Project, [Tag 0A1L](https://stacks.math.columbia.edu/tag/0A1L). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.22 of the Stacks Project, [Tag 0A1L](https://stacks.math.columbia.edu/tag/0A1L). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08IS, a lemma
 
 [Tag 08IS](https://stacks.math.columbia.edu/tag/08IS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectImage.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectImage.lean#L208). References: SGA 6 IV (2.12), “partial”.
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectImage.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectImage.lean#L208). References: SGA 6 IV (2.12), “partial”.
 
 > **Perfect direct images.**  Let `S` be a scheme, `Y` a Noetherian algebraic space over `S` and
 > `f : X ⟶ Y` a morphism of algebraic spaces which is locally of finite type and quasi-separated.
@@ -52,7 +52,7 @@ theorem isPerfect_derivedModulePushforward_of_hasProperSupport
 
 [Tag 0DKJ](https://stacks.math.columbia.edu/tag/0DKJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardTensor.lean#L90).
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardTensor.lean#L90).
 
 > **Stacks 0DKJ.**  Let `Y` be a Noetherian algebraic space and `f : X ⟶ Y` a morphism locally
 > of finite type and quasi-separated.  Let `E` be a perfect object of `D(𝒪_X)` and `𝒢^•` a bounded
@@ -79,7 +79,7 @@ theorem isPerfect_derivedModulePushforward_derivedTensor (hTop : B.Contains (⊤
 
 [Tag 0DKK](https://stacks.math.columbia.edu/tag/0DKK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardInternalHom.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardInternalHom.lean#L62).
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardInternalHom.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectPushforwardInternalHom.lean#L62).
 
 > **Stacks 0DKK.**  Let `Y` be a Noetherian algebraic space and `f : X ⟶ Y` a morphism locally
 > of finite type and quasi-separated.  Let `E` be a perfect object of `D(𝒪_X)` and `𝒢^•` a bounded
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.22, Tag 0A1L](https://stacks.math.columbia.edu/tag/0A1L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

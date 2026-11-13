@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.19 Relative effective Cartier divisors
 
-Section 31.19 of the Stacks Project, [Tag 056P](https://stacks.math.columbia.edu/tag/056P). 9 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.19 of the Stacks Project, [Tag 056P](https://stacks.math.columbia.edu/tag/056P). 9 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 056Q, a lemma
 
 [Tag 056Q](https://stacks.math.columbia.edu/tag/056Q) in the Stacks Project.
 
-**`AlgebraicGeometry.isEffectiveCartierDivisor_comap_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/BaseChangeDivisor.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/BaseChangeDivisor.lean#L123). References: EGA IV (21.15.9), “partial”.
+**`AlgebraicGeometry.isEffectiveCartierDivisor_comap_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/BaseChangeDivisor.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/BaseChangeDivisor.lean#L123). References: EGA IV (21.15.9), “partial”.
 
 > A relative effective Cartier divisor stays effective Cartier under arbitrary base
 > change.
@@ -32,7 +32,7 @@ theorem isEffectiveCartierDivisor_comap_pullback {X S S' : Scheme.{u}}
 
 [Tag 062T](https://stacks.math.columbia.edu/tag/062T) in the Stacks Project.
 
-**`Stacks.Divisors.IsRelativeEffectiveCartierDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/RelativeEffectiveCartier.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/RelativeEffectiveCartier.lean#L46).
+**`Stacks.Divisors.IsRelativeEffectiveCartierDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/RelativeEffectiveCartier.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/RelativeEffectiveCartier.lean#L46).
 
 > **Stacks Project, Tag 062T.** A closed subscheme of `X` is a *relative effective Cartier
 > divisor* over `S` when it is an effective Cartier divisor on `X` and its structure morphism to
@@ -47,7 +47,7 @@ abbrev IsRelativeEffectiveCartierDivisor {X S : Scheme.{u}}
 
 [Tag 0B8U](https://stacks.math.columbia.edu/tag/0B8U) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeSum.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeSum.lean#L204).
+**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeSum.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeSum.lean#L204).
 
 > **Stacks Project, Tag 0B8U.**  The sum of two relative effective Cartier divisors on `X`
 > over `S` is a relative effective Cartier divisor over `S`.
@@ -64,7 +64,7 @@ theorem isRelativeEffectiveCartierDivisor_mul {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0B8V](https://stacks.math.columbia.edu/tag/0B8V) in the Stacks Project.
 
-**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/RelativeDifference.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/RelativeDifference.lean#L288).
+**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/RelativeDifference.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/RelativeDifference.lean#L288).
 
 > **Stacks Project, Tag 0B8V.** An effective Cartier divisor which is the difference of two
 > relative effective Cartier divisors is itself relative.
@@ -83,7 +83,7 @@ theorem isRelativeEffectiveCartierDivisor_of_mul_eq
 
 [Tag 062U](https://stacks.math.columbia.edu/tag/062U) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlatAt_of_relativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatAtDivisor.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatAtDivisor.lean#L185).
+**`AlgebraicGeometry.isFlatAt_of_relativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatAtDivisor.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatAtDivisor.lean#L185).
 
 > **Stacks Project, Tag 062U.**  The ambient morphism is flat at a point of a relative
 > effective Cartier divisor whose ambient local ring is Noetherian.
@@ -101,7 +101,7 @@ theorem isFlatAt_of_relativeEffectiveCartierDivisor
 
 [Tag 062V](https://stacks.math.columbia.edu/tag/062V) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_open_flat_of_isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean#L538).
+**`Stacks.AlgebraicGeometry.exists_open_flat_of_isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean#L537).
 
 > A relative effective Cartier divisor lies in an open subscheme on which the ambient morphism is
 > flat, provided that morphism is locally of finite presentation.
@@ -118,7 +118,7 @@ theorem exists_open_flat_of_isRelativeEffectiveCartierDivisor
 
 [Tag 062W](https://stacks.math.columbia.edu/tag/062W) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_of_flat_off_relativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatOffDivisor.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatOffDivisor.lean#L214).
+**`AlgebraicGeometry.flat_of_flat_off_relativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatOffDivisor.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatOffDivisor.lean#L214).
 
 > A morphism flat away from a relative effective Cartier divisor is flat.
 
@@ -135,7 +135,7 @@ theorem flat_of_flat_off_relativeEffectiveCartierDivisor
 
 [Tag 062X](https://stacks.math.columbia.edu/tag/062X) in the Stacks Project.
 
-**`AlgebraicGeometry.NonflatAmbient.not_flat_ambientRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L149). The attribute's comment: “ambient ring not flat”.
+**`AlgebraicGeometry.NonflatAmbient.not_flat_ambientRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L149). The attribute's comment: “ambient ring not flat”.
 
 > The ring `B` is not flat over `k[t]`.
 
@@ -143,7 +143,7 @@ theorem flat_of_flat_off_relativeEffectiveCartierDivisor
 theorem not_flat_ambientRing : ¬ RingHom.Flat (baseMap k)
 ```
 
-**`AlgebraicGeometry.NonflatAmbient.quotientByX_equiv_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L436). The attribute's comment: “quotient by x”.
+**`AlgebraicGeometry.NonflatAmbient.quotientByX_equiv_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L436). The attribute's comment: “quotient by x”.
 
 > The quotient `B / xB` is isomorphic to `k[t]` by a ring isomorphism carrying the class of `t`
 > to the coordinate and constants to constants.
@@ -157,7 +157,7 @@ theorem quotientByX_equiv_polynomial :
             (algebraMap k (ambientRing k) a)) = Polynomial.C a
 ```
 
-**`AlgebraicGeometry.NonflatAmbient.quotientByX_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L508). The attribute's comment: “quotient by x flat”.
+**`AlgebraicGeometry.NonflatAmbient.quotientByX_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L508). The attribute's comment: “quotient by x flat”.
 
 > The quotient `B / xB` is flat over `k[t]`.
 
@@ -167,7 +167,7 @@ theorem quotientByX_flat :
       ((Ideal.Quotient.mk (Ideal.span {x k})).comp (baseMap k))
 ```
 
-**`AlgebraicGeometry.NonflatAmbient.x_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L531). The attribute's comment: “x nonzerodivisor”.
+**`AlgebraicGeometry.NonflatAmbient.x_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L531). The attribute's comment: “x nonzerodivisor”.
 
 > The element `x` is a nonzerodivisor of `B`.
 
@@ -175,7 +175,7 @@ theorem quotientByX_flat :
 theorem x_isRegular : IsRegular (x k)
 ```
 
-**`AlgebraicGeometry.NonflatAmbient.divisor_isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L593). The attribute's comment: “relative effective Cartier divisor”.
+**`AlgebraicGeometry.NonflatAmbient.divisor_isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L593). The attribute's comment: “relative effective Cartier divisor”.
 
 > The closed subscheme of `Spec B` cut out by `x` is a relative effective Cartier divisor over
 > `Spec k[t]`.
@@ -186,7 +186,7 @@ theorem divisor_isRelativeEffectiveCartierDivisor :
       (Spec.map (CommRingCat.ofHom (baseMap k))) (divisor k)
 ```
 
-**`AlgebraicGeometry.NonflatAmbient.no_flat_neighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L717). The attribute's comment: “no flat neighbourhood”.
+**`AlgebraicGeometry.NonflatAmbient.no_flat_neighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean, line 717](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/NonflatAmbientExample.lean#L717). The attribute's comment: “no flat neighbourhood”.
 
 > No open subscheme of `Spec B` containing the divisor is flat over `Spec k[t]`.
 
@@ -201,7 +201,7 @@ theorem no_flat_neighbourhood
 
 [Tag 062Y](https://stacks.math.columbia.edu/tag/062Y) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean#L313). The attribute's comment: “local\_containing\_divisor”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean#L313). The attribute's comment: “local\_containing\_divisor”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let `Z` be a closed subscheme of
 > `X` and let `x` be a point of `Z` whose fibre over `f x` is an effective Cartier divisor in a
@@ -219,7 +219,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_containing (f : X ⟶ S) [Flat 
           D.comap ((U.ι ≫ f).fiberι (f x))
 ```
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L296). The attribute's comment: “flat\_finitely\_presented\_case”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L296). The attribute's comment: “flat\_finitely\_presented\_case”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let `Z` be a closed subscheme of
 > `X` of finite presentation over `X` and let `x` be a point of `Z` at which `Z` is flat over `S` and
@@ -238,7 +238,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation (
       IsRelativeEffectiveCartierDivisor (V.ι ≫ f) (Z.comap V.ι)
 ```
 
-**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_flat_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L313). The attribute's comment: “flat\_fibres\_global\_case”. References: EGA IV (21.15.3.3), “converse”.
+**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_flat_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L313). The attribute's comment: “flat\_fibres\_global\_case”. References: EGA IV (21.15.3.3), “converse”.
 
 > A closed subscheme of a scheme flat and locally of finite presentation over `S`, itself flat
 > and locally of finite presentation over `S`, all of whose fibres are effective Cartier divisors, is
@@ -252,7 +252,7 @@ theorem isRelativeEffectiveCartierDivisor_of_flat_of_fibres (f : X ⟶ S) [Flat 
     IsRelativeEffectiveCartierDivisor f Z
 ```
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L393). The attribute's comment: “locally\_principal\_case”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L393). The attribute's comment: “locally\_principal\_case”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let
 > `Z` be a closed subscheme of `X` and let `x` be a point of `Z` whose fibre over `f x` is an
@@ -270,7 +270,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal (f : X ⟶
       IsRelativeEffectiveCartierDivisor (V.ι ≫ f) (Z.comap V.ι)
 ```
 
-**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_isLocallyPrincipal_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L411). The attribute's comment: “locally\_principal\_global\_case”. References: EGA IV (21.15.3.3), “forward direction”.
+**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_isLocallyPrincipal_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L411). The attribute's comment: “locally\_principal\_global\_case”. References: EGA IV (21.15.3.3), “forward direction”.
 
 > A locally principal closed subscheme of a scheme flat and locally of finite presentation over
 > `S`, all of whose fibres are effective Cartier divisors, is a relative effective Cartier divisor
@@ -290,4 +290,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.19, Tag 056P](https://stacks.math.columbia.edu/tag/056P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

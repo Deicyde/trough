@@ -8,7 +8,7 @@ proof: formalized
 
 # Exact covering systems
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html).
 
 ## Multiplicity of an indexed system of residue classes
 
@@ -19,7 +19,7 @@ multiplicity of an integer $z$ is the number of indices $i < k$ with $z \equiv r
 Indices are counted separately, so a residue class listed several times is counted that many
 times; a modulus $m_i = 0$ makes the condition $z = r_i$.
 
-Formalized by `Int.indexedCoverMultiplicity`, a definition declared in [MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#indexed-cover-multiplicity).
+Formalized by `Int.indexedCoverMultiplicity`, a definition declared in [MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#indexed-cover-multiplicity).
 
 ## Exact covers by residue classes
 
@@ -32,7 +32,7 @@ $z \notin T$ satisfies $z \equiv r_i \pmod{m_i}$ for no index $i < k$.
 
 Indices are counted separately, so a residue class listed several times counts that many times.
 
-Formalized by `Int.IsExactCoverOf`, a definition declared in [MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#is-exact-cover-of).
+Formalized by `Int.IsExactCoverOf`, a definition declared in [MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CoveringSystem/ExactCover.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#is-exact-cover-of).
 
 ## Fraenkel's Bernoulli recurrence for exact covers by any number of classes
 
@@ -51,7 +51,7 @@ where $B_s$ is the $s$-th Bernoulli number, with the convention $B_1 = -\frac{1}
 
 The source assumes $q \ge 2$; the identity holds without that assumption.
 
-Formalized by `MetaMathlibExt.fraenkel_exact_M_cover_bernoulli_recurrence_general`, a theorem declared in [MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#fraenkel-exact-m-cover-bernoulli-recurre).
+Formalized by `MetaMathlibExt.fraenkel_exact_M_cover_bernoulli_recurrence_general`, a theorem declared in [MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#fraenkel-exact-m-cover-bernoulli-recurre).
 
 ## Fraenkel's Bernoulli recurrence for exact covers
 
@@ -75,7 +75,7 @@ a parameter $x$, and Porubsky's weighted variant are not.
 
 - Yevgenya Movshovich, "Raabe's Identity and Covering Systems," Journal of Integer Sequences 23 (2020), Article 20.2.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Movshovich/movsho5.tex>. Equation (23); lines 228–241.
 
-Formalized by `MetaMathlibExt.fraenkel_exact_M_cover_bernoulli_recurrence`, a theorem declared in [MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#fraenkel-exact-m-cover-bernoulli-recurre-2).
+Formalized by `MetaMathlibExt.fraenkel_exact_M_cover_bernoulli_recurrence`, a theorem declared in [MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FraenkelCoveringBernoulli.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html#fraenkel-exact-m-cover-bernoulli-recurre-2).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Exact covering systems](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/covering-systems/exact-covering-systems)

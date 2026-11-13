@@ -22,7 +22,7 @@ statement: formalized
 >   (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Wikipedia/SidorenkoConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SidorenkoConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 18 research or textbook statements: 2 open and 16 solved. It also has 9 API statements, counted here but not shown.
 
@@ -49,7 +49,7 @@ theorem sidorenko_conjecture :
       homDensity (completeGraph (Fin 2)) G ^ H.edgeFinset.card ≤ homDensity H G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L72).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L72).
 
 ## `SidorenkoConjecture.sidorenko_conjecture_graphon`
 
@@ -74,7 +74,7 @@ theorem sidorenko_conjecture_graphon :
         (graphonEdgeDensity W) ^ H.edgeFinset.card ≤ graphonHomDensity H W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L93).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L93).
 
 ## `SidorenkoConjecture.sidorenko_tree_graphon`
 
@@ -91,7 +91,7 @@ theorem sidorenko_tree_graphon {V : Type*} [Fintype V] [DecidableEq V]
     (graphonEdgeDensity W) ^ H.edgeFinset.card ≤ graphonHomDensity H W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L108).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L108).
 
 ## `SidorenkoConjecture.sidorenko_even_cycle_graphon`
 
@@ -108,7 +108,7 @@ theorem sidorenko_even_cycle_graphon (k : ℕ) (hk : 1 ≤ k)
       graphonHomDensity (cycleGraph (2 * k)) W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L120).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L120).
 
 ## `SidorenkoConjecture.sidorenko_completeBipartiteGraph_graphon`
 
@@ -125,7 +125,7 @@ theorem sidorenko_completeBipartiteGraph_graphon {A B : Type*} [Fintype A] [Fint
       graphonHomDensity (completeBipartiteGraph A B) W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L133).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L133).
 
 ## `SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture`
 
@@ -152,7 +152,7 @@ theorem tournament_anti_sidorenko_trees_conjecture :
           Digraph.homDensity D G ≤ (1 / 2 : ℝ) ^ T.edgeFinset.card
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L151).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L151).
 
 ## `SidorenkoConjecture.tournament_anti_sidorenko_trees_conjecture_tournamenton`
 
@@ -177,7 +177,7 @@ theorem tournament_anti_sidorenko_trees_conjecture_tournamenton :
           tournamentonHomDensity D W ≤ (1 / 2 : ℝ) ^ T.edgeFinset.card
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 172](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L172).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 172](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L172).
 
 ## `SidorenkoConjecture.tournament_anti_sidorenko_single_even_degree_tree`
 
@@ -200,7 +200,7 @@ theorem tournament_anti_sidorenko_single_even_degree_tree {V : Type*} [Fintype V
         Digraph.homDensity D G ≤ (1 / 2 : ℝ) ^ T.edgeFinset.card
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L189).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L189).
 
 ## `SidorenkoConjecture.tournament_anti_sidorenko_spider234`
 
@@ -224,7 +224,7 @@ theorem tournament_anti_sidorenko_spider234 {V : Type*} [Fintype V] [DecidableEq
         Digraph.homDensity D G ≤ (1 / 2 : ℝ) ^ T.edgeFinset.card
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L226).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L226).
 
 ## `SidorenkoConjecture.sidorenko_K2`
 
@@ -247,7 +247,7 @@ theorem sidorenko_K2 {W : Type} [Fintype W] [DecidableEq W]
       homDensity (completeGraph (Fin 2)) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 249](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L249).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 249](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L249).
 
 ## `SidorenkoConjecture.sidorenko_K22`
 
@@ -282,7 +282,7 @@ theorem sidorenko_K22 {W : Type} [Fintype W] [DecidableEq W]
       homDensity (completeBipartiteGraph (Fin 2) (Fin 2)) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 535](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L535).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 535](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L535).
 
 ## `SidorenkoConjecture.sidorenko_tree_subsingleton`
 
@@ -302,7 +302,7 @@ theorem sidorenko_tree_subsingleton {V W : Type} [Fintype V] [Fintype W]
     homDensity (completeGraph (Fin 2)) G ^ (H.edgeFinset.card) ≤ homDensity H G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 704](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L704).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 704](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L704).
 
 ## `SidorenkoConjecture.sidorenko_tree`
 
@@ -333,7 +333,7 @@ theorem sidorenko_tree {V W : Type} [Fintype V] [Fintype W]
     homDensity (completeGraph (Fin 2)) G ^ (H.edgeFinset.card) ≤ homDensity H G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 737](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L737).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 737](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L737).
 
 ## `SidorenkoConjecture.sidorenko_conjecture.variants.complete_bipartite`
 
@@ -357,7 +357,7 @@ theorem sidorenko_conjecture.variants.complete_bipartite (s t : ℕ)
       homDensity (completeBipartiteGraph (Fin s) (Fin t)) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 776](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L776).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 776](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L776).
 
 ## `SidorenkoConjecture.sidorenko_conjecture.variants.even_cycle`
 
@@ -380,7 +380,7 @@ theorem sidorenko_conjecture.variants.even_cycle (k : ℕ) (hk : 2 ≤ k)
       homDensity (cycleGraph (2 * k)) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 795](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L795).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 795](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L795).
 
 ## `SidorenkoConjecture.sidorenko_conjecture.variants.path_blakley_roy`
 
@@ -404,7 +404,7 @@ theorem sidorenko_conjecture.variants.path_blakley_roy (n : ℕ)
       homDensity (pathGraph n) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 814](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L814).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 814](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L814).
 
 ## `SidorenkoConjecture.sidorenko_conjecture.variants.star`
 
@@ -432,7 +432,7 @@ theorem sidorenko_conjecture.variants.star (m : ℕ)
       homDensity (completeBipartiteGraph (Fin 1) (Fin m)) G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 933](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L933).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 933](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L933).
 
 ## `SidorenkoConjecture.sidorenko_conjecture.variants.non_bipartite_necessary`
 
@@ -458,7 +458,7 @@ theorem sidorenko_conjecture.variants.non_bipartite_necessary :
         ((completeGraph (Fin 3)).edgeFinset.card)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 992](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L992).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SidorenkoConjecture.lean, line 992](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean#L992).
 
 ## Depends on
 
@@ -466,5 +466,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SidorenkoConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SidorenkoConjecture.lean)
+- [FormalConjectures/Wikipedia/SidorenkoConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SidorenkoConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Sidorenko%27s_conjecture)

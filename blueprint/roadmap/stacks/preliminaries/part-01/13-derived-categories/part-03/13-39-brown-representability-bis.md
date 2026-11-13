@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.39 Brown representability, bis
 
-Section 13.39 of the Stacks Project, [Tag 0GYF](https://stacks.math.columbia.edu/tag/0GYF). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.39 of the Stacks Project, [Tag 0GYF](https://stacks.math.columbia.edu/tag/0GYF). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GYG, a lemma
 
 [Tag 0GYG](https://stacks.math.columbia.edu/tag/0GYG) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_preadditiveYoneda_of_generating_of_factorsThroughSigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/WeakBrownRepresentability.lean, line 803](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/WeakBrownRepresentability.lean#L803).
+**`CategoryTheory.Pretriangulated.exists_iso_preadditiveYoneda_of_generating_of_factorsThroughSigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/WeakBrownRepresentability.lean, line 803](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/WeakBrownRepresentability.lean#L803).
 
 > **Brown representability**, weak version: let `𝒟` be a triangulated category with direct
 > sums and let `E : ι → 𝒟` be a family of objects such that every nonzero object of `𝒟` receives a
@@ -40,7 +40,7 @@ public theorem exists_iso_preadditiveYoneda_of_generating_of_factorsThroughSigma
 
 [Tag 0GYH](https://stacks.math.columbia.edu/tag/0GYH) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_isTriangulated_rightAdjoint_of_generating_of_factorsThroughSigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L636). References: SGA 4 XVII (2.2.13.1), “Triangulated case”.
+**`CategoryTheory.Pretriangulated.exists_isTriangulated_rightAdjoint_of_generating_of_factorsThroughSigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L637). References: SGA 4 XVII (2.2.13.1), “Triangulated case”.
 
 > Let `D` be a triangulated category with direct sums and let `E : ι → D` be a family of
 > objects satisfying conditions (1) and (2) of weak Brown representability
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.39, Tag 0GYF](https://stacks.math.columbia.edu/tag/0GYF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

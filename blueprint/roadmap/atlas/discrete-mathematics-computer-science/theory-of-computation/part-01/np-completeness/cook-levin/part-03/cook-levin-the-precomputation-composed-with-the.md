@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: the precomputation, composed with the assembled generator
 
-53 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html).
+53 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html).
 
 ## Counter-view additions: decrement, multi-target transfer, the power loop
 
@@ -17,7 +17,7 @@ proof: formalized
 For a list $y_1, \dots, y_j$ of counters, the list
 of transfer targets that pushes one unit on each counter $y_i$, in the same order.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.tg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tg).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.tg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tg).
 
 ## Counters after a multi-target transfer
 
@@ -26,7 +26,7 @@ counter $x \in C$ and a list $Y$ of counters, the counter values after transferr
 form the function that sends $x$ to $0$, sends every $z \ne x$ occurring in $Y$ to
 $F(z) + F(x)$, and sends every other $z$ to $F(z)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.xf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#xf).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.xf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#xf).
 
 ## Multi-target transfer
 
@@ -41,7 +41,7 @@ to label $\ell'$ with state false, output stack $o$ and the counter values after
 $x$ to $Y$: counter $x$ becomes $0$, each counter of $Y$ gains $F(x)$, and every other counter
 keeps its value.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.xferS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#xfer-s).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.xferS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#xfer-s).
 
 ## Stages of the power loop
 
@@ -49,7 +49,7 @@ The labels of one power-loop site: a head stage, a
 multiplication stage $\mathrm{mul}(s)$ for each stage $s$ of a multiplication site, a drain stage
 and a move stage.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.PW`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pw).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.PW`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pw).
 
 ## Power-loop program
 
@@ -64,7 +64,7 @@ of $q$ onto $p$ and returns to the head stage.
 When the six counters are distinct and $q = a = t = 0$ at the start, each round multiplies $p$ by
 $b$, so the loop replaces $p$ by $p \cdot b^k$ and ends with $k = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.powS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-s).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.powS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-s).
 
 ## Step budget of the power loop
 
@@ -72,7 +72,7 @@ For natural numbers $j$ (the number of rounds), $p$ (the
 start value) and $b$ (the base), the step budget of the power loop is
 $j \, (p \, (b + 1)^j \, (3 b + 5) + 5) + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.powB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-b).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.powB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-b).
 
 ## The power loop
 
@@ -86,7 +86,7 @@ output $o$ to the label $\nu$ with flag false, output $o$, and counters $F$ exce
 $F(p) \cdot F(b)^j$ and $k$ holds $0$, within $j\,(F(p)\,(F(b) + 1)^j\,(3F(b) + 5) + 5) + 1$
 steps, the step budget of the power loop for $j$ rounds, start value $F(p)$ and base $F(b)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.pow_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.pow_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pow-run).
 
 ## Stages of a Horner round
 
@@ -95,7 +95,7 @@ stage $s$ of a multiplication site, and the three stages $\mathsf{drn}$, $\maths
 $\mathsf{add}$. In a Horner round they label the multiplication, draining the accumulator,
 moving the product into the accumulator, and adding the coefficient.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.HW`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#hw).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.HW`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#hw).
 
 ## The statements of one Horner round
 
@@ -107,7 +107,7 @@ and scratch counter $t$), then the drain stage empties $\mathit{acc}$, the move 
 $q$ into $\mathit{acc}$, and the add stage pushes $a$ units onto $\mathit{acc}$ and continues at
 $\nu$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-s).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-s).
 
 ## Step count of one Horner round
 
@@ -115,7 +115,7 @@ For an accumulator value $A$ and a base $b$, the number
 $A(2b + 3) + A + 2 + (A + 1) + (Ab + 1) + 1$: the exact number of steps one Horner round takes
 from $\mathit{acc} = A$ with base $b$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornStep`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-step).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornStep`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-step).
 
 ## One Horner round
 
@@ -129,7 +129,7 @@ first multiplication stage $\mu(\mathrm{mul\ head})$ with flag $v$, counters $F$
 in exactly $h(F(\mathit{acc}), F(b))$ steps to the label $\nu$ with flag false, output $o$, and
 counters $F$ except that $\mathit{acc}$ holds $F(\mathit{acc}) \cdot F(b) + a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.horn_round`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-round).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.horn_round`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-round).
 
 ## Horner value
 
@@ -138,7 +138,7 @@ and $A$, the Horner value of $c_1, \dots, c_\ell$ with base $b$ from accumulator
 obtained from the starting value $x = A$ by replacing $x$ by $x b + c_i$ for $i = 1, \dots, \ell$
 in turn; for the empty list it is $A$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val).
 
 ## Step count of the Horner rounds
 
@@ -147,7 +147,7 @@ accumulator value $A$: $0$ if $cs$ is empty, and if $cs$ is $a$ followed by $cs'
 $h(A, b)$ of one Horner round from $A$ with base $b$ plus the step count of $cs'$ with base $b$
 from accumulator $A b + a$. This is the exact number of steps of the Horner rounds.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-t).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-t).
 
 ## Horner rounds
 
@@ -166,7 +166,7 @@ $c_i, \dots, c_{\ell-1}$ with base $F(b)$ from accumulator $F(\mathit{acc})$. He
 step count of the Horner rounds over $c_i, \dots, c_{\ell-1}$ with base $F(b)$ from accumulator
 $F(\mathit{acc})$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.horner_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horner-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.horner_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horner-run).
 
 ## Splitting off the starting accumulator in Horner evaluation
 
@@ -176,7 +176,7 @@ Horner value of $c_1, \dots, c_\ell$ with base $b$ from accumulator $x$: the num
 from the starting value $x$ by replacing the current value $y$ by $y b + c_i$ for
 $i = 1, \dots, \ell$ in turn. Then $h(A) = A b^{\ell} + h(0)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val-eq).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val-eq).
 
 ## Coefficient list of a polynomial
 
@@ -184,7 +184,7 @@ For a polynomial $p$ with natural-number coefficients
 and natural degree $d$ (where $d = 0$ when $p = 0$), the coefficient list of $p$ is
 $[p_d, p_{d-1}, \dots, p_1, p_0]$, where $p_i$ is the coefficient of $X^i$ in $p$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.coeffs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#coeffs).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.coeffs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#coeffs).
 
 ## Horner's rule
 
@@ -192,7 +192,7 @@ For every polynomial $p$ with natural coefficients and every
 $b \in \mathbb{N}$, running Horner rounds with base $b$ on the coefficients of $p$ (highest degree
 first), starting from accumulator $0$, yields $p(b)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal_coeffs`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val-coeffs).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hornVal_coeffs`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-val-coeffs).
 
 ## Scratch counters of the counter program
 
@@ -200,7 +200,7 @@ The type of the twelve private counters of the
 precomputation's counter program, with constructors $N$, $P$, $Q$, $AD$, $TMP$, $KC$, $Mc$, $B$,
 $Tc$, $Fx$, $Dd$, $Hc$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#ps).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#ps).
 
 ## Target counters of the counter program
 
@@ -210,7 +210,7 @@ $hT$, $hH$, $aT$, $aH$, $iT$, $iX$, $iE$, $iF$.
 
 They hold the twelve preloads of the assembled generator's run.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.PT`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pt).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.PT`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pt).
 
 ## Counters of the counter program
 
@@ -219,7 +219,7 @@ counter $s(x)$, for one of the twelve scratch counter names $x$, or a target cou
 one of the twelve target counter names $y$: the counters are the disjoint union of the scratch
 counters and the target counters.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.CC`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cc).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.CC`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cc).
 
 ## Labels of the counter program
 
@@ -230,7 +230,7 @@ $w_2(s)$ for each power-loop stage $s$; $x_9$; a label $\mathrm{ml}(s)$ for each
 multiplication site; the labels $x_{10}, x_{11}, x_{12}, x_{13}, x_{14}$; and
 $\mathrm{done}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.PL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pl).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.PL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pl).
 
 ## Horner-round labels indexed by natural numbers
 
@@ -240,7 +240,7 @@ Horner round $i$ if $i < D$, and otherwise the label $x_1$ that follows the Horn
 
 Indices $i \ge D$ are never reached.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.hlab`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#hlab).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.hlab`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#hlab).
 
 ## The counter program
 
@@ -263,7 +263,7 @@ Started with $n$ on $N$ and every other counter empty, the program computes $P =
 Horner's rule, $m = n + 1 + k(n)$ on $Mc$, $T = (m + c)^e$ on $Tc$, $dT + d + 1$ on $Fx$ and
 $m + dT + d + 1$ on $Hc$, and so loads the twelve target counters.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.cprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cprog).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.cprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cprog).
 
 ## Total length bound
 
@@ -273,21 +273,21 @@ $n \in \mathbb{N}$, the total length bound is $m = n + 1 + k(n)$.
 So a word $x$ of length $n + 1$ followed by a word $y$ has length at most $m$ exactly when $y$
 has length at most $k(n)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.mOf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#m-of).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.mOf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#m-of).
 
 ## The precomputed time bound
 
 For a polynomial $k$ with natural coefficients and
 $c, e, n \in \mathbb{N}$, the time bound is $T = (m + c)^e$, where $m = n + 1 + k(n)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.TOf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tof).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.TOf`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tof).
 
 ## Start counter values
 
 For a natural number $n$, the start counter values of the counter
 program give the scratch counter $N$ the value $n$ and every other counter the value $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.F0`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f0).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.F0`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f0).
 
 ## Counter values after the Horner loop
 
@@ -298,7 +298,7 @@ value $k(n)$, and every other counter the value $0$.
 
 The counter program reaches these values after its Horner loop has evaluated $k(n)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.F1`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f1).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.F1`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f1).
 
 ## Counter values before the power loop
 
@@ -309,7 +309,7 @@ $B$, $\mathit{KC}$ and $\mathit{Tc}$ the values $m$, $m + c$, $e$ and $1$, the t
 $\mathit{iX}$ and $\mathit{iE}$ the values $n + 1$ and $k(n)$, and every other counter the value
 $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.F2`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f2).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.F2`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f2).
 
 ## Counter values after the power loop
 
@@ -319,7 +319,7 @@ values to the counters of the counter program that gives the scratch counters $\
 $B$ and $\mathit{Tc}$ the values $m$, $m + c$ and $(m + c)^e$, the target counters $\mathit{iX}$
 and $\mathit{iE}$ the values $n + 1$ and $k(n)$, and every other counter the value $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.F3`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f3).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.F3`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f3).
 
 ## Target counter values
 
@@ -331,7 +331,7 @@ $i_X$, $k(n)$ to $i_E$ and $(T + 1)d + 1$ to $i_F$.
 
 In particular the value at $i_F$ is $H - m$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.tv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tv).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.tv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tv).
 
 ## Counter values at the end of the counter program
 
@@ -344,7 +344,7 @@ $\mathit{iT}$; $m + (T + 1)d + 1$ for $\mathit{uH}$, $\mathit{sH}$, $\mathit{hH}
 $\mathit{aH}$; $n + 1$ for $\mathit{iX}$; $k(n)$ for $\mathit{iE}$; $(T + 1)d + 1$ for
 $\mathit{iF}$), and gives every other scratch counter the value $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.F4`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f4).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.F4`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f4).
 
 ## Step budget of the counter program
 
@@ -361,7 +361,7 @@ where $h$ is the exact step count of the Horner rounds over the coefficient list
 base $n$ from accumulator $0$, and $p = e\left((m + c + 1)^e (3(m + c) + 5) + 5\right) + 1$ is
 the step budget of the power loop with $e$ rounds, start value $1$ and base $m + c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.cB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#c-b).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.cB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#c-b).
 
 ## The counter program's run
 
@@ -375,14 +375,14 @@ $uT, sT, hT, aT, iT$; $m + (T + 1)d + 1$ on the targets $uH, sH, hH, aH$; $n + 1
 $k(n)$ on $iE$; $(T + 1)d + 1$ on $iF$; $m + c$ on the scratch counter $B$; $d$ on the scratch
 counter $Dd$; and $0$ on every other counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.cprog_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cprog-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.cprog_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#cprog-run).
 
 ## Stacks of the full machine
 
 The full machine has one stack for each host stack, one
 stack for the raw input, and one stack for each scratch counter of the counter program.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.FK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fk).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.FK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fk).
 
 ## Alphabets of the full machine
 
@@ -391,7 +391,7 @@ full machine is the host's alphabet with $g$ input codes on each host stack,
 $\{0, 1, \dots, r - 1\}$ on the raw input stack, and the one-point type on each private
 counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.FΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.FΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#f).
 
 ## Labels of the full machine
 
@@ -399,7 +399,7 @@ For $D \in \mathbb{N}$ and a type $\Lambda$ of host labels,
 the labels of the full machine are the read-loop label, one label for each label of the counter
 program with $D$ Horner rounds, and one label for each element of $\Lambda$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.FL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fl).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.FL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fl).
 
 ## Host counter of each target
 
@@ -409,7 +409,7 @@ situation-definition generator's block, $hT$ and $hH$ to those of the shift gene
 $aT$ and $aH$ to those of the accept generator's block, and $iT$, $iX$, $iE$, $iF$ to the counters
 $T_n$, $X_n$, $E_n$, $F_n$ of the init generator's block.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.tgt`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tgt).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.tgt`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#tgt).
 
 ## Stack renaming of the counter program
 
@@ -418,7 +418,7 @@ full machine sends the output stack to the host's output stack, each scratch cou
 full machine's private counter for $x$, and each target counter $y$ to the host counter that
 receives $y$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.eC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#e-c).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.eC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#e-c).
 
 ## Embedding of the counter program's stacks
 
@@ -428,7 +428,7 @@ renames stacks by the stack renaming of the counter program and identifies the a
 stack with that of its image by the identity (Booleans on the output stack, the one-point type
 on each counter).
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.embC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#emb-c).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.embC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#emb-c).
 
 ## Embedding of the host's stacks
 
@@ -436,7 +436,7 @@ For natural numbers $g, r$, the stack embedding of the
 host into the full machine with $g$ input codes and $r$ raw input symbols sends each host stack
 to the same host stack of the full machine and identifies their alphabets by the identity.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.embH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#emb-h).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.embH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#emb-h).
 
 ## The read loop
 
@@ -450,7 +450,7 @@ the flag to false and goes to the first label of the counter program.
 
 The full program takes $L$ to be all of $\mathrm{Fin}\,r$, so each step reads one input symbol.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.rdT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#rd-t).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.rdT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#rd-t).
 
 ## Stacks during the read loop
 
@@ -462,7 +462,7 @@ every other stack is empty.
 
 During the read loop, $s$ is the unread rest of the input and $w$ holds the codes read so far.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.fst`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fst).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.fst`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fst).
 
 ## The read loop's run
 
@@ -475,7 +475,7 @@ exactly $\ell + 1$ steps to the counter program's first label, with flag false, 
 empty, input stack $c_s, c_f(s_\ell), \dots, c_f(s_1)$ followed by $w$, scratch counter
 $N = n + \ell$, output stack $o$ and every other stack empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.read_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 711](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L711). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#read-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.read_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 711](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L711). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#read-run).
 
 ## The full program
 
@@ -491,7 +491,7 @@ the corresponding host counters and its output on the host output; at the final 
 label, a step that sets the state to false and jumps to the host label $\lambda_0$; and at a host
 label $l$, the statement $h(l)$ on the host stacks.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.fprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fprog).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.fprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#fprog).
 
 ## The precomputation
 
@@ -509,7 +509,7 @@ receiving targets is empty.
 
 These are the preloads that the assembled generator's run expects.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.pre_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pre-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.pre_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 776](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L776). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#pre-run).
 
 ## The full program on the real generators
 
@@ -522,7 +522,7 @@ code of $\iota(i)$ under $E$, the separator code is the code of $\sigma$ under $
 $d = \operatorname{depth} M$, the host program is the host running the real generators of $M$
 for $Y$ and $a$, and the host starts at the start label of its initial-row generator.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.fullProg`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-prog).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.fullProg`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-prog).
 
 ## Step bound of the full machine
 
@@ -535,7 +535,7 @@ and $T$.
 
 It bounds the number of steps of the full machine on a raw input of length $n$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.fullB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-b).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.fullB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-b).
 
 ## The composed machine, raw input to formula
 
@@ -544,7 +544,7 @@ empty, output `o`), the full machine halts its host part at `fin` within `fullB`
 prepended exactly `encodeCNF (Phi …)` for `x = s.map ι ++ [sep]`, `m = |s| + 1 + k(|s|)`,
 `T = (m + c)^e`. **No hypotheses** (`|x| ≤ m` is discharged here).
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.full_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 835](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-run).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.full_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 835](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-run).
 
 ## The full machine as a finite multi-stack Turing machine
 
@@ -558,7 +558,7 @@ start label the read label, internal states the booleans with initial state fals
 the full program built from these data. Its input stack is the raw input stack and its output
 stack is the host's output stack.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.fullTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 888](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-tm).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.fullTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 888](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-tm).
 
 ## Initial configuration of the full machine
 
@@ -572,7 +572,7 @@ the read-loop label with internal state false, its raw-input stack holds $s$, an
 stacks (the code stack, the output stack, the scratch counters and the remaining host stacks)
 are empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.initList_full`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 901](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L901). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#init-list-full).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.initList_full`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 901](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L901). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#init-list-full).
 
 ## Polynomial functions on the naturals
 
@@ -580,7 +580,7 @@ A function $f : \mathbb{N} \to \mathbb{N}$ is
 polynomial when there is a polynomial $p$ with natural-number coefficients such that
 $f(n) = p(n)$ for every $n \in \mathbb{N}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.IsPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 917](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L917). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#is-poly).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.IsPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 917](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L917). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#is-poly).
 
 ## The Horner step count is polynomial
 
@@ -590,7 +590,7 @@ natural-number coefficients such that $A(n) = q(n)$ for all $n$. Then $n \mapsto
 polynomial function in the same sense, where $h(b, a)$ is the step count of the Horner rounds over
 $cs$ with base $b$ from accumulator $a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.IsPoly.hornT`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-t-2).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.IsPoly.hornT`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 937](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L937). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#horn-t-2).
 
 ## Polynomial time bound of the composed machine
 
@@ -608,7 +608,7 @@ every other stack empty, reaches the host's final label within $p(n)$ steps, wit
 some stack contents in which the host output stack holds the dense encoding of the formula
 $\Phi(x, Y, a, m, T)$ emitted by the host, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Precompute.full_time_poly`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-time-poly).
+Formalized by `Cslib.Complexity.CookLevin.Precompute.full_time_poly`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Precompute.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Precompute.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html#full-time-poly).
 
 ## Depends on
 
@@ -617,4 +617,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: the precomputation, composed with the assembled generator](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-precomputation-composed-with-the)

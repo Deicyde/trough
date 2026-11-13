@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.27 Blowing up and flatness
 
-Section 15.27 of the Stacks Project, [Tag 0535](https://stacks.math.columbia.edu/tag/0535). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.27 of the Stacks Project, [Tag 0535](https://stacks.math.columbia.edu/tag/0535). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 053H, a definition
 
 [Tag 053H](https://stacks.math.columbia.edu/tag/053H) in the Stacks Project.
 
-**`strictTransform`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/StrictTransform.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/StrictTransform.lean#L45).
+**`strictTransform`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/StrictTransform.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Blowup/StrictTransform.lean#L45).
 
 > The strict transform of an `R`-module `M` along the affine blowup algebra `R → R[I/a]`:
 > the scalar extension `R[I/a] ⊗[R] M`, modulo the elements annihilated by some power of the
@@ -29,7 +29,7 @@ noncomputable def strictTransform (I : Ideal R) (a : R) [Fact (a ∈ I)]
 
 [Tag 053I](https://stacks.math.columbia.edu/tag/053I) in the Stacks Project.
 
-**`Stacks.Flatness.BlowupFlattening.stacks053I`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BlowupFlattenAssembly.lean, line 1046](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/BlowupFlattenAssembly.lean#L1046).
+**`Stacks.Flatness.BlowupFlattening.stacks053I`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BlowupFlattenAssembly.lean, line 1039](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/BlowupFlattenAssembly.lean#L1039).
 
 > **Stacks Tag 053I: flattening by blowing up.** Let `(R, 𝔪)` be a local domain with fraction
 > field `K` and `𝔪 ≠ 0`, let `S` be a finite type `R`-algebra, let `M` be a finite `S`-module and
@@ -67,7 +67,7 @@ theorem stacks053I (hdom : Dominates R A) (hm : IsLocalRing.maximalIdeal R ≠ �
 
 [Tag 0CZM](https://stacks.math.columbia.edu/tag/0CZM) in the Stacks Project.
 
-**`fittingIdeal_strictTransform_affineBlowup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Blowup.lean#L182).
+**`fittingIdeal_strictTransform_affineBlowup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Blowup.lean#L182).
 
 > **Stacks Tag 0CZM.** Let `M` be a finite module over a commutative ring `R`, and let `I` be
 > its `k`th Fitting ideal.  On the affine blowup chart `R[I/a]` associated to any `a ∈ I`, the
@@ -92,7 +92,7 @@ theorem fittingIdeal_strictTransform_affineBlowup_eq_top
 
 [Tag 0CZN](https://stacks.math.columbia.edu/tag/0CZN) in the Stacks Project.
 
-**`isFiniteLocallyFreeOfRank_strictTransform_affineBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Blowup.lean#L306).
+**`isFiniteLocallyFreeOfRank_strictTransform_affineBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Blowup.lean#L306).
 
 > **Stacks Tag 0CZN.** Let `M` be a finite module over a commutative ring `R`, and let `I` be
 > its `k`th Fitting ideal.  Suppose that the localization of `M` at every prime outside `V(I)` is
@@ -122,7 +122,7 @@ theorem isFiniteLocallyFreeOfRank_strictTransform_affineBlowup
 
 [Tag 0BBJ](https://stacks.math.columbia.edu/tag/0BBJ) in the Stacks Project.
 
-**`exists_fg_ideal_strictTransform_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Blowup.lean#L616).
+**`exists_fg_ideal_strictTransform_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Blowup.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Blowup.lean#L616).
 
 > **Stacks Tag 0BBJ.** Let `M` be a finite module over a commutative ring `R`.  If the
 > localization of `M` away from `f` is finite locally free of rank `r`, then there is a finitely
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.27, Tag 0535](https://stacks.math.columbia.edu/tag/0535)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Emirps to First Hardy–Littlewood…
+# Elliott–Halberstam conjecture to Grimm's conjecture
 
+- [Elliott–Halberstam conjecture](../../../../../wikipedia/part-03/elliott-halberstam-conjecture.md)
+- [Some conjectures about ranks of elliptic curves over ℚ](../../../../../wikipedia/part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
 - [Emirps](../../../../../wikipedia/part-03/emirps.md)
 - [The Erdős–Moser equation](../../../../../wikipedia/part-03/the-erdos-moser-equation.md)
 - [Euclid Numbers conjecture](../../../../../wikipedia/part-03/euclid-numbers-conjecture.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Goldbach's conjecture](../../../../../wikipedia/part-04/goldbachs-conjecture.md)
 - [The Goormaghtigh conjecture](../../../../../wikipedia/part-04/the-goormaghtigh-conjecture.md)
 - [Grimm's conjecture](../../../../../wikipedia/part-04/grimms-conjecture.md)
-- [Hall's conjecture](../../../../../wikipedia/part-04/halls-conjecture.md)
-- [First Hardy–Littlewood conjecture](../../../../../wikipedia/part-04/first-hardy-littlewood-conjecture.md)

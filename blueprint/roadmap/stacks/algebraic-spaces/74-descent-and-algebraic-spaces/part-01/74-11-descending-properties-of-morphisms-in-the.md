@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.11 Descending properties of morphisms in the fpqc topology
 
-Section 74.11 of the Stacks Project, [Tag 041K](https://stacks.math.columbia.edu/tag/041K). 30 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.11 of the Stacks Project, [Tag 041K](https://stacks.math.columbia.edu/tag/041K). 30 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 041L, a lemma
 
 [Tag 041L](https://stacks.math.columbia.edu/tag/041L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasiCompact_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactFpqcLocalAtTarget.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactFpqcLocalAtTarget.lean#L218). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.quasiCompact_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactFpqcLocalAtTarget.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactFpqcLocalAtTarget.lean#L218). References: SGA 4 IV (8.5.5), “more general”.
 
 > Quasi-compactness of morphisms of algebraic spaces over `S` is local on
 > the base for the fpqc topology.
@@ -29,7 +29,7 @@ instance quasiCompact_isLocalAtTarget_fpqc :
 
 [Tag 041N](https://stacks.math.columbia.edu/tag/041N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFpqcLocalAtTarget.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFpqcLocalAtTarget.lean#L147). References: EGA IV (2.7.1), “more general”; SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFpqcLocalAtTarget.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFpqcLocalAtTarget.lean#L147). References: EGA IV (2.7.1), “more general”; SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 041N.** Quasi-separatedness of a morphism of algebraic spaces over `S` is local on
 > the target for the fpqc topology.
@@ -50,7 +50,7 @@ instance isQuasiSeparated_isLocalAtTarget_fpqc :
 
 [Tag 041O](https://stacks.math.columbia.edu/tag/041O) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyClosed.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyClosed.lean#L221).
+**`AlgebraicGeometry.Space.universallyClosed_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyClosed.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyClosed.lean#L221).
 
 > **Stacks 041O.** Universal closedness of morphisms of algebraic spaces over `S` is local on
 > the base for the fpqc topology.
@@ -71,7 +71,7 @@ instance universallyClosed_isLocalAtTarget_fpqc :
 
 [Tag 041P](https://stacks.math.columbia.edu/tag/041P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyOpen.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyOpen.lean#L228). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.universallyOpen_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyOpen.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallyOpen.lean#L228). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 041P.** Universal openness of morphisms of algebraic spaces over `S` is local on
 > the base for the fpqc topology.
@@ -86,7 +86,7 @@ instance universallyOpen_isLocalAtTarget_fpqc :
 
 [Tag 0CFW](https://stacks.math.columbia.edu/tag/0CFW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallySubmersive_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallySubmersive.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallySubmersive.lean#L152).
+**`AlgebraicGeometry.Space.universallySubmersive_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallySubmersive.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/UniversallySubmersive.lean#L152).
 
 > Universal submersiveness of morphisms of algebraic spaces over `S` is local on the base for the
 > fpqc topology.
@@ -101,7 +101,7 @@ instance universallySubmersive_isLocalAtTarget_fpqc :
 
 [Tag 041Q](https://stacks.math.columbia.edu/tag/041Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.surjective_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L223). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.surjective_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L223). References: SGA 4 IV (8.5.5), “more general”.
 
 > Surjectivity of morphisms of algebraic spaces over `S` is local on the base for the fpqc
 > topology.
@@ -112,7 +112,7 @@ instance surjective_isLocalAtTarget_fpqc :
       (Topology.precoverage.{u, v} .fpqc B S hS)
 ```
 
-**`AlgebraicGeometry.Space.surjective_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L252). The attribute's comment: “the fppf precoverage”.
+**`AlgebraicGeometry.Space.surjective_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L252). The attribute's comment: “the fppf precoverage”.
 
 > **Stacks 041Q** at the fppf precoverage: surjectivity of morphisms of algebraic spaces over
 > `S` is local at the target for the fppf topology. This is the form in which the relative
@@ -129,7 +129,7 @@ instance surjective_isLocalAtTarget_fppf :
 
 [Tag 041R](https://stacks.math.columbia.edu/tag/041R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFpqcLocalAtTarget.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFpqcLocalAtTarget.lean#L145).
+**`AlgebraicGeometry.Space.universallyInjective_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFpqcLocalAtTarget.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFpqcLocalAtTarget.lean#L146).
 
 > **Stacks 041R.** Universal injectivity of morphisms of algebraic spaces over `S` is local
 > on the base for the fpqc topology.
@@ -144,7 +144,7 @@ instance universallyInjective_isLocalAtTarget_fpqc :
 
 [Tag 0CFX](https://stacks.math.columbia.edu/tag/0CFX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universalHomeomorphism_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalHomeomorphismFpqcLocalAtTarget.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalHomeomorphismFpqcLocalAtTarget.lean#L264). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.universalHomeomorphism_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalHomeomorphismFpqcLocalAtTarget.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalHomeomorphismFpqcLocalAtTarget.lean#L264). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0CFX.** Being a universal homeomorphism is, for morphisms of algebraic spaces over
 > `S`, local on the base for the fpqc topology of Stacks 03YH: such a morphism is a universal
@@ -166,7 +166,7 @@ instance universalHomeomorphism_isLocalAtTarget_fpqc :
 
 [Tag 041S](https://stacks.math.columbia.edu/tag/041S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyOfFiniteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean#L54).
+**`AlgebraicGeometry.Space.locallyOfFiniteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean#L54).
 
 > Being locally of finite type is, for morphisms of algebraic spaces over `S`, local on the
 > base for the fpqc topology.
@@ -182,7 +182,7 @@ instance locallyOfFiniteType_isLocalAtTarget_fpqc :
 
 [Tag 041T](https://stacks.math.columbia.edu/tag/041T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationFpqcLocalAtTarget.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationFpqcLocalAtTarget.lean#L355). References: EGA IV (2.7.1), “more general”; SGA 3 VIB (10.8), “(i)⇒(ii)”; SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationFpqcLocalAtTarget.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationFpqcLocalAtTarget.lean#L355). References: EGA IV (2.7.1), “more general”; SGA 3 VIB (10.8), “(i)⇒(ii)”; SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks Project, Tag 041T** (Lemma 74.11.10 of Chapter 74, *Descent and Algebraic
 > Spaces*). The property `𝒫(f)` = "`f` is locally of finite presentation" of morphisms of
@@ -216,7 +216,7 @@ instance isLocallyOfFinitePresentation_isLocalAtTarget_fpqc
 
 [Tag 041U](https://stacks.math.columbia.edu/tag/041U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeFpqcLocalAtTarget.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeFpqcLocalAtTarget.lean#L81).
+**`AlgebraicGeometry.Space.isFiniteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeFpqcLocalAtTarget.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeFpqcLocalAtTarget.lean#L82).
 
 > **Stacks 041U.** Being of finite type, as a property of morphisms of algebraic spaces over
 > `S`, is local on the target for the fpqc topology.
@@ -231,7 +231,7 @@ instance isFiniteType_isLocalAtTarget_fpqc :
       (Topology.fpqc.precoverage.{u, v} B S hS)
 ```
 
-**`AlgebraicGeometry.Space.finiteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean#L66).
+**`AlgebraicGeometry.Space.finiteType_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitenessFpqcLocality.lean#L66).
 
 > Being of finite type is, for morphisms of algebraic spaces over `S`, local on the base for
 > the fpqc topology.
@@ -247,7 +247,7 @@ instance finiteType_isLocalAtTarget_fpqc :
 
 [Tag 041V](https://stacks.math.columbia.edu/tag/041V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finitePresentation_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitePresentationFpqcLocality.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitePresentationFpqcLocality.lean#L71). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.finitePresentation_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitePresentationFpqcLocality.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FinitePresentationFpqcLocality.lean#L71). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 041V.** Being of finite presentation is, for morphisms of algebraic spaces over
 > `S`, local on the base for the fpqc topology of Stacks 03YH.
@@ -266,7 +266,7 @@ instance finitePresentation_isLocalAtTarget_fpqc :
 
 [Tag 041W](https://stacks.math.columbia.edu/tag/041W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFpqcLocality.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFpqcLocality.lean#L111).
+**`AlgebraicGeometry.Space.isFlat_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFpqcLocality.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFpqcLocality.lean#L111).
 
 > **Stacks 041W.** Flatness of a morphism of algebraic spaces over `S` is local on the target
 > for the fpqc topology.
@@ -279,7 +279,7 @@ instance isFlat_isLocalAtTarget_fpqc
       (Topology.fpqc.precoverage.{u, v} B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isFlat_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L87). The attribute's comment: “the fppf precoverage”.
+**`AlgebraicGeometry.Space.isFlat_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L87). The attribute's comment: “the fppf precoverage”.
 
 > **Stacks 041W** at the fppf precoverage: flatness of morphisms of algebraic spaces over `S`
 > is local at the target for the fppf topology. It follows from the fpqc form
@@ -301,7 +301,7 @@ theorem isFlat_isLocalAtTarget_fppf (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 041X](https://stacks.math.columbia.edu/tag/041X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.openImmersion_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionFpqcLocalAtTarget.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionFpqcLocalAtTarget.lean#L371).
+**`AlgebraicGeometry.Space.openImmersion_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionFpqcLocalAtTarget.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionFpqcLocalAtTarget.lean#L371).
 
 > **Stacks 041X.** Being an open immersion of algebraic spaces over `S` is local on the base
 > for the fpqc topology.
@@ -317,7 +317,7 @@ instance openImmersion_isLocalAtTarget_fpqc
 
 [Tag 041Y](https://stacks.math.columbia.edu/tag/041Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isomorphisms_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsomorphismFpqcLocalAtTarget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsomorphismFpqcLocalAtTarget.lean#L122). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isomorphisms_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsomorphismFpqcLocalAtTarget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IsomorphismFpqcLocalAtTarget.lean#L122). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 041Y.** Being an isomorphism is, for morphisms of algebraic spaces over `S`, local
 > on the base for the fpqc topology of Stacks 03YH: such a morphism is an isomorphism exactly
@@ -338,7 +338,7 @@ instance isomorphisms_isLocalAtTarget_fpqc :
 
 [Tag 041Z](https://stacks.math.columbia.edu/tag/041Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalAtTarget_isAffineHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcSheaf.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcSheaf.lean#L86).
+**`AlgebraicGeometry.Space.isLocalAtTarget_isAffineHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcSheaf.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcSheaf.lean#L86).
 
 > **Affineness of morphisms of algebraic spaces is fpqc local on the base**, which is
 > [Stacks, Tag 041Z](https://stacks.math.columbia.edu/tag/041Z).
@@ -356,7 +356,7 @@ theorem isLocalAtTarget_isAffineHom_fpqc (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 0420](https://stacks.math.columbia.edu/tag/0420) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedImmersion_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFppfLocalAtTarget.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFppfLocalAtTarget.lean#L72). The attribute's comment: “the fppf precoverage”.
+**`AlgebraicGeometry.Space.isClosedImmersion_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFppfLocalAtTarget.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFppfLocalAtTarget.lean#L72). The attribute's comment: “the fppf precoverage”.
 
 > **Stacks 0420** at the fppf precoverage: being a closed immersion is local on the base for
 > the fppf topology for morphisms of algebraic spaces over `S`, so such a morphism is a closed
@@ -373,7 +373,7 @@ instance isClosedImmersion_isLocalAtTarget_fppf :
       (Topology.precoverage.{u, v} .fppf B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isClosedImmersion_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFpqcLocalAtTarget.lean, line 758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFpqcLocalAtTarget.lean#L758). References: SGA 3 IV (6.4.1), “(N')”.
+**`AlgebraicGeometry.Space.isClosedImmersion_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFpqcLocalAtTarget.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionFpqcLocalAtTarget.lean#L759). References: SGA 3 IV (6.4.1), “(N')”.
 
 > **Stacks 0420.** Being a closed immersion is fpqc local on the base for morphisms of
 > algebraic spaces over `S`: such a morphism is a closed immersion exactly when its base change
@@ -391,7 +391,7 @@ theorem isClosedImmersion_isLocalAtTarget_fpqc
 
 [Tag 0421](https://stacks.math.columbia.edu/tag/0421) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.separated_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedFpqcLocalAtTarget.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedFpqcLocalAtTarget.lean#L78). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.separated_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedFpqcLocalAtTarget.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedFpqcLocalAtTarget.lean#L78). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0421.** Separatedness of morphisms of algebraic spaces over `S` is local on the
 > base for the fpqc topology: a morphism is separated exactly when its base change to every member
@@ -412,7 +412,7 @@ instance separated_isLocalAtTarget_fpqc :
 
 [Tag 0422](https://stacks.math.columbia.edu/tag/0422) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProperULift_of_isPullback_uliftYoneda_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean#L87). The attribute's comment: “for a family of morphisms of the site, in the value universe of a formal algebraic space”. References: SGA 1 VIII (4.8), “partial”.
+**`AlgebraicGeometry.Space.isProperULift_of_isPullback_uliftYoneda_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean#L87). The attribute's comment: “for a family of morphisms of the site, in the value universe of a formal algebraic space”. References: SGA 1 VIII (4.8), “partial”.
 
 > **Stacks 0422 for a family of morphisms of the site, in the value universe `Type (u + 1)`.**
 > Let `p : F ⟶ U` be a morphism of presheaves on the big fppf site of `S` with values in
@@ -442,7 +442,7 @@ theorem isProperULift_of_isPullback_uliftYoneda_family
     IsProperULift.{u + 1} B S hS p
 ```
 
-**`AlgebraicGeometry.Space.isProperULift_of_isPullback_uliftYoneda_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean#L195). The attribute's comment: “for one surjective étale morphism of the site, in the value universe of a formal algebraic space”.
+**`AlgebraicGeometry.Space.isProperULift_of_isPullback_uliftYoneda_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperEtaleDescent.lean#L195). The attribute's comment: “for one surjective étale morphism of the site, in the value universe of a formal algebraic space”.
 
 > **Stacks 0422 for a single surjective étale morphism of the site, in the value universe
 > `Type (u + 1)`.** Let `p : F ⟶ U` be a morphism of presheaves on the big fppf site of `S` with
@@ -468,7 +468,7 @@ theorem isProperULift_of_isPullback_uliftYoneda_map
     IsProperULift.{u + 1} B S hS p
 ```
 
-**`AlgebraicGeometry.Space.proper_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFpqcLocalAtTarget.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFpqcLocalAtTarget.lean#L65). References: SGA 1 VIII (4.8), “more general”; SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.proper_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFpqcLocalAtTarget.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFpqcLocalAtTarget.lean#L65). References: SGA 1 VIII (4.8), “more general”; SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0422.** Properness of morphisms of algebraic spaces over `S` is local on the base
 > for the fpqc topology: a morphism is proper exactly when its base change to every member of some
@@ -488,7 +488,7 @@ instance proper_isLocalAtTarget_fpqc :
 
 [Tag 0423](https://stacks.math.columbia.edu/tag/0423) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocalAtTarget_isQuasiAffineHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcChartDescent.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcChartDescent.lean#L647). References: EGA IV (2.7.1), “more general”; SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isLocalAtTarget_isQuasiAffineHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcChartDescent.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcChartDescent.lean#L648). References: EGA IV (2.7.1), “more general”; SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0423** (Lemma 74.11.20 of Chapter 74, *Descent and Algebraic Spaces*). The
 > property "`f` is quasi-affine" of morphisms of algebraic spaces over `S` is fpqc local on the
@@ -520,7 +520,7 @@ theorem isLocalAtTarget_isQuasiAffineHom_fpqc (B : BigFppfSite.{u}) (S : Scheme.
 
 [Tag 0424](https://stacks.math.columbia.edu/tag/0424) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.immersion_inf_quasiCompact_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactImmersionFpqcLocalAtTarget.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactImmersionFpqcLocalAtTarget.lean#L235). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.immersion_inf_quasiCompact_isLocalAtTarget_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactImmersionFpqcLocalAtTarget.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactImmersionFpqcLocalAtTarget.lean#L235). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0424.** Being a quasi-compact immersion is fpqc local on the base for morphisms of
 > algebraic spaces over `S`: such a morphism is a quasi-compact immersion exactly when its base
@@ -536,7 +536,7 @@ theorem immersion_inf_quasiCompact_isLocalAtTarget_fpqc :
 
 [Tag 0425](https://stacks.math.columbia.edu/tag/0425) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.integralMorphismProperty_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/Integral.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/Integral.lean#L162). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.integralMorphismProperty_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/Integral.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Fpqc/Integral.lean#L162). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0425.** Integrality of morphisms of algebraic spaces over `S` is local on the base
 > for the fpqc topology of Stacks 03YH.
@@ -555,7 +555,7 @@ instance integralMorphismProperty_isLocalAtTarget_fpqc :
 
 [Tag 0426](https://stacks.math.columbia.edu/tag/0426) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpqcLocalAtTarget.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpqcLocalAtTarget.lean#L97). References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpqcLocalAtTarget.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpqcLocalAtTarget.lean#L97). References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0426.** Finiteness of morphisms of algebraic spaces over `S` is local on the base
 > for the fpqc topology of Stacks 03YH: a morphism is finite exactly when its base change to every
@@ -575,7 +575,7 @@ instance isFinite_isLocalAtTarget_fpqc :
 
 [Tag 0427](https://stacks.math.columbia.edu/tag/0427) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean#L59). The attribute's comment: “locally quasi-finite case”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean#L59). The attribute's comment: “locally quasi-finite case”.
 
 > **Stacks 0427**, the locally quasi-finite case.  Local quasi-finiteness of a morphism of
 > algebraic spaces over `S` is local on the base for the fpqc topology of Stacks 03YH.
@@ -587,7 +587,7 @@ instance isLocallyQuasiFinite_isLocalAtTarget_fpqc :
       (Topology.precoverage.{u, v} .fpqc B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean#L79). The attribute's comment: “quasi-finite case”. References: SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.isQuasiFinite_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteFpqcLocalAtTarget.lean#L79). The attribute's comment: “quasi-finite case”. References: SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 0427**, the quasi-finite case.  Quasi-finiteness of a morphism of algebraic spaces
 > over `S` is local on the base for the fpqc topology of Stacks 03YH.
@@ -606,7 +606,7 @@ instance isQuasiFinite_isLocalAtTarget_fpqc :
 
 [Tag 0428](https://stacks.math.columbia.edu/tag/0428) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.syntomic_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicFpqcLocalAtTarget.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicFpqcLocalAtTarget.lean#L49).
+**`AlgebraicGeometry.Space.syntomic_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicFpqcLocalAtTarget.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicFpqcLocalAtTarget.lean#L49).
 
 > **Stacks 0428.**  Syntomicity of a morphism of algebraic spaces over `S` is local on the
 > base for the fpqc topology of Stacks 03YH.
@@ -622,7 +622,7 @@ instance syntomic_isLocalAtTarget_fpqc :
 
 [Tag 0429](https://stacks.math.columbia.edu/tag/0429) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smooth_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L474). The attribute's comment: “the fppf precoverage”.
+**`AlgebraicGeometry.Space.smooth_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L474). The attribute's comment: “the fppf precoverage”.
 
 > **Stacks 0429** at the fppf precoverage: smoothness of morphisms of algebraic spaces over
 > `S` is local at the target for the fppf topology. The fpqc form is
@@ -637,7 +637,7 @@ instance smooth_isLocalAtTarget_fppf (B : BigFppfSite.{u}) (S : Scheme.{u})
       (Topology.fppf.precoverage.{u, v} B S hS)
 ```
 
-**`AlgebraicGeometry.Space.smooth_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFpqcLocalAtTarget.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFpqcLocalAtTarget.lean#L791).
+**`AlgebraicGeometry.Space.smooth_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFpqcLocalAtTarget.lean, line 791](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFpqcLocalAtTarget.lean#L791).
 
 > Smoothness of algebraic-space morphisms is fpqc local on the base.
 
@@ -652,7 +652,7 @@ instance smooth_isLocalAtTarget_fpqc (B : BigFppfSite.{u})
 
 [Tag 042A](https://stacks.math.columbia.edu/tag/042A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L243).
+**`AlgebraicGeometry.Space.isUnramified_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L243).
 
 > Unramifiedness of a morphism of algebraic spaces over `S` is local on the target for the
 > fpqc topology.
@@ -666,7 +666,7 @@ public instance isUnramified_isLocalAtTarget_fpqc
       (Topology.fpqc.precoverage.{u, v} B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_iff_forall_pullbackSnd_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L285). The attribute's comment: “Definition 03YH unfolded: f unramified iff every Yᵢ ×\_Y X → Yᵢ is”.
+**`AlgebraicGeometry.Space.isUnramified_iff_forall_pullbackSnd_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L285). The attribute's comment: “Definition 03YH unfolded: f unramified iff every Yᵢ ×\_Y X → Yᵢ is”.
 
 > Let `{gᵢ : Yᵢ ⟶ Y}` be an fpqc covering of algebraic spaces over `S`, indexed by a type `I`
 > in any universe, and `f : X ⟶ Y` a morphism of algebraic spaces over `S`. Then `f` is unramified
@@ -684,7 +684,7 @@ theorem isUnramified_iff_forall_pullbackSnd_of_isFpqcCovering
 
 [Tag 042B](https://stacks.math.columbia.edu/tag/042B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleFpqcLocalAtTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleFpqcLocalAtTarget.lean#L54).
+**`AlgebraicGeometry.Space.isEtale_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleFpqcLocalAtTarget.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleFpqcLocalAtTarget.lean#L54).
 
 > **Stacks 042B.**  Étaleness of a morphism of algebraic spaces over `S` is local on the base
 > for the fpqc topology of Stacks 03YH.
@@ -700,7 +700,7 @@ instance isEtale_isLocalAtTarget_fpqc :
 
 [Tag 042C](https://stacks.math.columbia.edu/tag/042C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcLocalAtTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcLocalAtTarget.lean#L116).
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcLocalAtTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFpqcLocalAtTarget.lean#L116).
 
 > **Stacks 042C.** Being finite locally free is, for morphisms of algebraic spaces over `S`,
 > local on the base for the fpqc topology of Stacks 03YH: such a morphism is finite locally free
@@ -722,7 +722,7 @@ instance isFiniteLocallyFree_isLocalAtTarget_fpqc :
 
 [Tag 042D](https://stacks.math.columbia.edu/tag/042D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismFpqcLocalAtTarget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismFpqcLocalAtTarget.lean#L133). References: SGA 3 IV (4.5.8), “special case”; SGA 4 IV (8.5.5), “more general”.
+**`AlgebraicGeometry.Space.mono_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismFpqcLocalAtTarget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismFpqcLocalAtTarget.lean#L133). References: SGA 3 IV (4.5.8), “special case”; SGA 4 IV (8.5.5), “more general”.
 
 > **Stacks 042D.** Monomorphy of morphisms of algebraic spaces over `S` is local on the base for
 > the fpqc topology: a morphism is a monomorphism exactly when its base change to every member of
@@ -746,4 +746,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.11, Tag 041K](https://stacks.math.columbia.edu/tag/041K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

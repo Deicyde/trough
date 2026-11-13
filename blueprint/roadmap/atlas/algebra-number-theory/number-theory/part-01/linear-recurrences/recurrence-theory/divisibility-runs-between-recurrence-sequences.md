@@ -7,7 +7,7 @@ statement: formalized
 
 # Divisibility runs between recurrence sequences
 
-18 results, 4 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html).
+18 results, 4 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html).
 
 ## Divisibility runs
 
@@ -24,7 +24,7 @@ least $L$; the paper indexes the sequences from $1$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Equation (1) and Proposition 3.
 
-Formalized by `MetaMathlibExt.IsDivRunUpTo`, a definition declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to).
+Formalized by `MetaMathlibExt.IsDivRunUpTo`, a definition declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to).
 
 ## Divisibility runs of length zero
 
@@ -39,7 +39,7 @@ no natural number $i$ satisfies $i < 0$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Equation (1).
 
-Formalized by `MetaMathlibExt.isDivRunUpTo_zero`, a theorem declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to-zero).
+Formalized by `MetaMathlibExt.isDivRunUpTo_zero`, a theorem declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to-zero).
 
 ## Gibonacci terms two apart have the gcd of the initial values
 
@@ -54,7 +54,7 @@ The paper indexes the sequence from $1$ and states this for $n \ge 3$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.int_gcd_gibonacciNumber_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#int-gcd-gibonacci-number-sub-two).
+Stated but not proved: `MetaMathlibExt.int_gcd_gibonacciNumber_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#int-gcd-gibonacci-number-sub-two).
 
 ## Backward recurrence for Gibonacci numbers
 
@@ -68,7 +68,7 @@ The paper indexes the sequence from $1$ and states these identities for $n \ge 4
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.gibonacciNumber_backward` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-number-backward).
+Stated but not proved: `MetaMathlibExt.gibonacciNumber_backward` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-number-backward).
 
 ## Gibonacci numbers in terms of Fibonacci numbers
 
@@ -83,7 +83,7 @@ The paper indexes $P$ from $1$ and states this as $P_n = F_{n-2}\,x + F_{n-1}\,y
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.gibonacciNumber_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-number-eq-fib).
+Stated but not proved: `MetaMathlibExt.gibonacciNumber_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-number-eq-fib).
 
 ## Basis sequences for generalized Tribonacci sequences
 
@@ -98,7 +98,7 @@ Tribonacci sequence with initial values $a, b, c$ equals $u_n a + v_n b + w_n c$
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.exists_generalizedTribonacci_basis` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#exists-generalized-tribonacci-basis).
+Stated but not proved: `MetaMathlibExt.exists_generalizedTribonacci_basis` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#exists-generalized-tribonacci-basis).
 
 ## Divisibility runs of length one, two and three
 
@@ -114,7 +114,7 @@ $x \ne 0$, $x \mid a$, $y \ne 0$, $y \mid b$, $x + y \ne 0$ and $x + y \mid c$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.isDivRunUpTo_small` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to-small).
+Stated but not proved: `MetaMathlibExt.isDivRunUpTo_small` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#is-div-run-up-to-small).
 
 ## Divisibility by a Gibonacci sequence forces a Tribonacci sequence to vanish
 
@@ -128,7 +128,7 @@ for every $n \ge 0$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedTribonacci_eq_zero_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#generalized-tribonacci-eq-zero-of-dvd).
+Stated but not proved: `MetaMathlibExt.generalizedTribonacci_eq_zero_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#generalized-tribonacci-eq-zero-of-dvd).
 
 ## Growth bounds for Gibonacci and generalized Tribonacci sequences
 
@@ -150,7 +150,7 @@ threshold is the one the paper uses in its proof of Theorem 2.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 1, with the threshold as used in the proof of Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.gibonacci_generalizedTribonacci_growth_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-generalized-tribonacci-growth).
+Stated but not proved: `MetaMathlibExt.gibonacci_generalizedTribonacci_growth_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#gibonacci-generalized-tribonacci-growth).
 
 ## Counting configurations with long divisibility runs
 
@@ -168,7 +168,7 @@ $\mathcal{C}_B$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Equation (2).
 
-Formalized by `MetaMathlibExt.divRunCount`, a definition declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count).
+Formalized by `MetaMathlibExt.divRunCount`, a definition declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count).
 
 ## Run count at bound 1 and length 1
 
@@ -180,7 +180,7 @@ divisibility run of length at least $1$; that is, $A_1(1) = 156$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 4.
 
-Formalized by `MetaMathlibExt.divRunCount_one_one`, a theorem declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one-one).
+Formalized by `MetaMathlibExt.divRunCount_one_one`, a theorem declared in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one-one).
 
 ## Divisibility runs have logarithmic length
 
@@ -199,7 +199,7 @@ over these configurations.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.divRun_length_le_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-length-le-log).
+Stated but not proved: `MetaMathlibExt.divRun_length_le_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-length-le-log).
 
 ## Exact formula for the length-one run count
 
@@ -214,7 +214,7 @@ $$A_B(1) = 4(2B+1)^3 D(B) + 2B(2B+1)\left((2B+1)^2 - 1\right).$$
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one).
+Stated but not proved: `MetaMathlibExt.divRunCount_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one).
 
 ## Asymptotics of the length-one run count
 
@@ -228,7 +228,7 @@ $A_B(1) = 32 B^4 \log B + O(B^4)$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_one_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one-asymptotic).
+Stated but not proved: `MetaMathlibExt.divRunCount_one_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-one-asymptotic).
 
 ## Exact formula for the length-two run count
 
@@ -242,7 +242,7 @@ $S(B) = 2 \sum_{m=1}^{B} \lfloor B/m \rfloor + B$ and $A_B(2) = 4(2B+1) S(B)^2 -
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-two).
+Stated but not proved: `MetaMathlibExt.divRunCount_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-two).
 
 ## Asymptotics of the length-two run count
 
@@ -256,7 +256,7 @@ $A_B(2) = 32 B^3 (\log B)^2 + O(B^3 \log B)$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_two_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-two-asymptotic).
+Stated but not proved: `MetaMathlibExt.divRunCount_two_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-two-asymptotic).
 
 ## Exact formula for the length-three run count
 
@@ -279,7 +279,7 @@ $$
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-three).
+Stated but not proved: `MetaMathlibExt.divRunCount_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-three).
 
 ## Divisor-sum formula for the length-four run count
 
@@ -304,7 +304,7 @@ paper's $\sum \chi_{x,y}(\alpha, \beta, \gamma)$.
 
 - Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.divRunCount_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-four).
+Stated but not proved: `MetaMathlibExt.divRunCount_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisibilityRunsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisibilityRunsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html#div-run-count-four).
 
 ## Depends on
 
@@ -313,4 +313,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Divisibility runs between recurrence sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/divisibility-runs-between-recurrence-sequences)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.5 Infinitesimal neighbourhoods
 
-Section 37.5 of the Stacks Project, [Tag 05YW](https://stacks.math.columbia.edu/tag/05YW). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.5 of the Stacks Project, [Tag 05YW](https://stacks.math.columbia.edu/tag/05YW). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04EY, a definition
 
 [Tag 04EY](https://stacks.math.columbia.edu/tag/04EY) in the Stacks Project.
 
-**`Stacks.Thickenings.nthOrderInfinitesimalNeighbourhood`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L81). The attribute's comment: “part (2): nth-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “special case”; EGA IV (19.4.6); SGA 2 XI (3.18), “more general”.
+**`Stacks.Thickenings.nthOrderInfinitesimalNeighbourhood`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L81). The attribute's comment: “part (2): nth-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “special case”; EGA IV (19.4.6); SGA 2 XI (3.18), “more general”.
 
 > **Stacks Project, Tag 04EY, part (2).** The `n`th-order infinitesimal neighbourhood of `Z`
 > in `X` for an immersion `i : Z ⟶ X`: the closed subscheme of the canonical open neighbourhood
@@ -25,7 +25,7 @@ Section 37.5 of the Stacks Project, [Tag 05YW](https://stacks.math.columbia.edu/
 def nthOrderInfinitesimalNeighbourhood (n : ℕ) : Scheme.{u}
 ```
 
-**`Stacks.Thickenings.firstOrderInfinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L88). The attribute's comment: “part (1): first-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “Y^\{(1)}, immersions”.
+**`Stacks.Thickenings.firstOrderInfinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L88). The attribute's comment: “part (1): first-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “Y^\{(1)}, immersions”.
 
 > **Stacks Project, Tag 04EY, part (1).** The first-order infinitesimal neighbourhood of `Z`
 > in `X`, cut out by the square of the defining ideal sheaf of the immersion.
@@ -34,7 +34,7 @@ def nthOrderInfinitesimalNeighbourhood (n : ℕ) : Scheme.{u}
 abbrev firstOrderInfinitesimalNeighbourhood : Scheme.{u}
 ```
 
-**`Stacks.Thickenings.nthOrderInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L111). The attribute's comment: “part (2): inclusion into the nth-order neighbourhood”. References: EGA IV (16.1.2), “Y^\{(n)} inclusion”.
+**`Stacks.Thickenings.nthOrderInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L111). The attribute's comment: “part (2): inclusion into the nth-order neighbourhood”. References: EGA IV (16.1.2), “Y^\{(n)} inclusion”.
 
 > The inclusion of `Z` into its `n`th-order infinitesimal neighbourhood.
 
@@ -42,7 +42,7 @@ abbrev firstOrderInfinitesimalNeighbourhood : Scheme.{u}
 def nthOrderInclusion (n : ℕ) : Z ⟶ nthOrderInfinitesimalNeighbourhood i n
 ```
 
-**`Stacks.Thickenings.nthOrderToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L120). The attribute's comment: “part (2): map from the nth-order neighbourhood to the base”.
+**`Stacks.Thickenings.nthOrderToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L120). The attribute's comment: “part (2): map from the nth-order neighbourhood to the base”.
 
 > The structure morphism from the `n`th-order infinitesimal neighbourhood of `Z` in `X`
 > to `X`.
@@ -51,7 +51,7 @@ def nthOrderInclusion (n : ℕ) : Z ⟶ nthOrderInfinitesimalNeighbourhood i n
 def nthOrderToBase (n : ℕ) : nthOrderInfinitesimalNeighbourhood i n ⟶ X
 ```
 
-**`Stacks.Thickenings.nthOrderInclusion_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L141). The attribute's comment: “part (2): factorization over the base”.
+**`Stacks.Thickenings.nthOrderInclusion_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L141). The attribute's comment: “part (2): factorization over the base”.
 
 > The inclusion of `Z` into its `n`th-order infinitesimal neighbourhood, followed by the
 > structure morphism to `X`, is the original immersion.
@@ -61,7 +61,7 @@ theorem nthOrderInclusion_toBase (n : ℕ) :
     nthOrderInclusion i n ≫ nthOrderToBase i n = i
 ```
 
-**`Stacks.Thickenings.nthOrderInclusion_isNthOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L181). The attribute's comment: “part (2): nth-order thickening”.
+**`Stacks.Thickenings.nthOrderInclusion_isNthOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L181). The attribute's comment: “part (2): nth-order thickening”.
 
 > **Stacks Project, Tag 04EY, part (2).** The inclusion of `Z` into its `n`th-order
 > infinitesimal neighbourhood is an `n`th-order thickening: it is a closed immersion whose
@@ -76,7 +76,7 @@ theorem nthOrderInclusion_isNthOrderThickening (n : ℕ) :
     IsNthOrderThickening n (nthOrderInclusion i n)
 ```
 
-**`Stacks.Thickenings.nthOrderInclusion_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L216). The attribute's comment: “part (1): first-order thickening”.
+**`Stacks.Thickenings.nthOrderInclusion_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L216). The attribute's comment: “part (1): first-order thickening”.
 
 > **Stacks Project, Tag 04EY, part (1).** The inclusion of `Z` into its first-order
 > infinitesimal neighbourhood is a first-order thickening.
@@ -90,7 +90,7 @@ theorem nthOrderInclusion_isFirstOrderThickening :
 
 [Tag 04EZ](https://stacks.math.columbia.edu/tag/04EZ) in the Stacks Project.
 
-**`Stacks.Thickenings.existsUnique_nthOrderLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L385). The attribute's comment: “part (2): nth-order universal property”.
+**`Stacks.Thickenings.existsUnique_nthOrderLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L385). The attribute's comment: “part (2): nth-order universal property”.
 
 > **Stacks Project, Tag 04EZ, part (2).** The universal property of the `n`th-order
 > infinitesimal neighbourhood: given an `n`th-order thickening `j : T ⟶ T'`, a morphism
@@ -115,7 +115,7 @@ theorem existsUnique_nthOrderLift {T T' : Scheme.{u}}
       (j ≫ a' = a ≫ nthOrderInclusion i n) ∧ (a' ≫ nthOrderToBase i n = b)
 ```
 
-**`Stacks.Thickenings.existsUnique_firstOrderLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L432). The attribute's comment: “part (1): first-order universal property”.
+**`Stacks.Thickenings.existsUnique_firstOrderLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L432). The attribute's comment: “part (1): first-order universal property”.
 
 > **Stacks Project, Tag 04EZ, part (1).** The universal property of the first-order
 > infinitesimal neighbourhood, the case `n = 1` of
@@ -133,7 +133,7 @@ theorem existsUnique_firstOrderLift {T T' : Scheme.{u}}
 
 [Tag 04F0](https://stacks.math.columbia.edu/tag/04F0) in the Stacks Project.
 
-**`Stacks.Thickenings.isIso_conormalTransitivityMap_nthOrderInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/InfinitesimalConormalSheaf.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/InfinitesimalConormalSheaf.lean#L460).
+**`Stacks.Thickenings.isIso_conormalTransitivityMap_nthOrderInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/InfinitesimalConormalSheaf.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/InfinitesimalConormalSheaf.lean#L460).
 
 > **Stacks Project, Tag 04F0.** For an immersion `i : Z ⟶ X` with first-order infinitesimal
 > neighbourhood `Z ⊂ Z'` of [Stacks Project, Tag 04EY], the canonical map of conormal sheaves
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.5, Tag 05YW](https://stacks.math.columbia.edu/tag/05YW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

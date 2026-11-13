@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.5 Colimits and cohomology
 
-Section 69.5 of the Stacks Project, [Tag 073D](https://stacks.math.columbia.edu/tag/073D). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.5 of the Stacks Project, [Tag 073D](https://stacks.math.columbia.edu/tag/073D). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 073E, a lemma
 
 [Tag 073E](https://stacks.math.columbia.edu/tag/073E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_colimit_post_rightDerived_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean#L713). References: SGA 4 VII (3.3).
+**`AlgebraicGeometry.Space.isIso_colimit_post_rightDerived_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean, line 715](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean#L715). References: SGA 4 VII (3.3).
 
 > **Stacks 073E.** On a quasi-compact and quasi-separated algebraic space,
 > the canonical map from a filtered colimit of étale cohomology groups to the
@@ -40,7 +40,7 @@ theorem isIso_colimit_post_rightDerived_globalSections
 
 [Tag 07U6](https://stacks.math.columbia.edu/tag/07U6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_colimit_post_rightDerived_smallEtaleAbelianPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean#L890). References: SGA 4 VI (5.1), “étale alg. spaces”.
+**`AlgebraicGeometry.Space.isIso_colimit_post_rightDerived_smallEtaleAbelianPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean, line 892](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleCohomologyFilteredColimits.lean#L892). References: SGA 4 VI (5.1), “étale alg. spaces”.
 
 > **Stacks 07U6.** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces over `S`. For every degree `p` and every filtered diagram `F` of abelian
@@ -71,7 +71,7 @@ theorem isIso_colimit_post_rightDerived_smallEtaleAbelianPushforward
 
 [Tag 07U7](https://stacks.math.columbia.edu/tag/07U7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.preservesColimitsOfShape_coyoneda_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModelCoveringSet.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModelCoveringSet.lean#L408).
+**`AlgebraicGeometry.Space.preservesColimitsOfShape_coyoneda_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModelCoveringSet.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModelCoveringSet.lean#L408).
 
 > Let `X` be a quasi-compact and quasi-separated algebraic space over a scheme `S`, let `G` be
 > an `𝒪_X`-module of finite presentation and let `λ ↦ F_λ` be a filtered system of `𝒪_X`-modules.
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.5, Tag 073D](https://stacks.math.columbia.edu/tag/073D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

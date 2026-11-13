@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.16 Scheme theoretic image
 
-Section 67.16 of the Stacks Project, [Tag 082W](https://stacks.math.columbia.edu/tag/082W). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.16 of the Stacks Project, [Tag 082W](https://stacks.math.columbia.edu/tag/082W). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 082X, a lemma
 
 [Tag 082X](https://stacks.math.columbia.edu/tag/082X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L155). The attribute's comment: “underlying subfunctor construction”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L155). The attribute's comment: “underlying subfunctor construction”.
 
 > **Stacks 082X.** The scheme-theoretic image of a morphism of algebraic spaces over `S`:
 > the intersection of all closed subspaces of the target containing the image of the
@@ -24,7 +24,7 @@ Section 67.16 of the Stacks Project, [Tag 082W](https://stacks.math.columbia.edu
 def schemeTheoreticImageSubfunctor (f : X ⟶ Y) : Subfunctor Y
 ```
 
-**`AlgebraicGeometry.Space.range_le_schemeTheoreticImageSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L161). The attribute's comment: “the morphism factors through the image”.
+**`AlgebraicGeometry.Space.range_le_schemeTheoreticImageSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L161). The attribute's comment: “the morphism factors through the image”.
 
 > **Stacks 082X.** A morphism of algebraic spaces over `S` factors through its
 > scheme-theoretic image.
@@ -34,7 +34,7 @@ theorem range_le_schemeTheoreticImageSubfunctor (f : X ⟶ Y) :
     Subfunctor.range f ≤ schemeTheoreticImageSubfunctor B S hS f
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L168). The attribute's comment: “minimality of the image”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L168). The attribute's comment: “minimality of the image”.
 
 > **Stacks 082X.** The scheme-theoretic image is contained in every closed subspace of the
 > target through which the morphism factors.
@@ -45,7 +45,7 @@ theorem schemeTheoreticImageSubfunctor_le (f : X ⟶ Y) {Z : Subfunctor Y}
     schemeTheoreticImageSubfunctor B S hS f ≤ Z
 ```
 
-**`AlgebraicGeometry.Space.isClosedSubspace_schemeTheoreticImageSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L175). The attribute's comment: “the image is a closed subspace”.
+**`AlgebraicGeometry.Space.isClosedSubspace_schemeTheoreticImageSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L175). The attribute's comment: “the image is a closed subspace”.
 
 > **Stacks 082X.** The scheme-theoretic image is a closed subspace of the target.
 
@@ -59,7 +59,7 @@ theorem isClosedSubspace_schemeTheoreticImageSubfunctor (f : X ⟶ Y)
 
 [Tag 082Y](https://stacks.math.columbia.edu/tag/082Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L155). The attribute's comment: “the scheme-theoretic image”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L155). The attribute's comment: “the scheme-theoretic image”.
 
 > **Stacks 082X.** The scheme-theoretic image of a morphism of algebraic spaces over `S`:
 > the intersection of all closed subspaces of the target containing the image of the
@@ -73,7 +73,7 @@ def schemeTheoreticImageSubfunctor (f : X ⟶ Y) : Subfunctor Y
 
 [Tag 082Z](https://stacks.math.columbia.edu/tag/082Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageEtaleLocal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageEtaleLocal.lean#L96). The attribute's comment: “part (3): compatibility with étale localization of the target”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageEtaleLocal.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageEtaleLocal.lean#L96). The attribute's comment: “part (3): compatibility with étale localization of the target”.
 
 > **Stacks 082Z, part (3).** The scheme-theoretic image of a *quasi-compact* morphism
 > `f : X ⟶ Y` of algebraic spaces over `S` commutes with étale base change of the target: for
@@ -92,7 +92,7 @@ theorem schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale_of_isQuasiCompact
       (schemeTheoreticImageSubfunctor B S hS f.hom).preimage g.hom
 ```
 
-**`AlgebraicGeometry.Space.definingIdealSheaf_schemeTheoreticImage_eq_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageIdeal.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageIdeal.lean#L126). The attribute's comment: “part (2): the image is the closed subspace cut out by that ideal”.
+**`AlgebraicGeometry.Space.definingIdealSheaf_schemeTheoreticImage_eq_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageIdeal.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactImageIdeal.lean#L126). The attribute's comment: “part (2): the image is the closed subspace cut out by that ideal”.
 
 > **Stacks 082Z.** For a quasi-compact morphism `f : X ⟶ Y` of algebraic spaces over `S` the
 > scheme-theoretic image of `f` is the closed subspace of `Y` cut out by the kernel of the
@@ -105,7 +105,7 @@ theorem definingIdealSheaf_schemeTheoreticImage_eq_kernelIdealSheaf (f : X ⟶ Y
       kernelIdealSheaf B S hS f
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_ι_schemeTheoreticImage_eq_closure_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean#L54). The attribute's comment: “part (4): the image is dense in the scheme-theoretic image”.
+**`AlgebraicGeometry.Space.range_pointsMap_ι_schemeTheoreticImage_eq_closure_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean#L54). The attribute's comment: “part (4): the image is dense in the scheme-theoretic image”.
 
 > **Stacks 082Z, part (4).** The set of points of the scheme-theoretic image of a quasi-compact
 > morphism of algebraic spaces is the closure of the image of its point map.
@@ -119,7 +119,7 @@ theorem range_pointsMap_ι_schemeTheoreticImage_eq_closure_of_isQuasiCompact (f 
       closure (Set.range (pointsMap B S hS X f))
 ```
 
-**`AlgebraicGeometry.Space.denseRange_pointsMap_toSchemeTheoreticImage_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean#L68). The attribute's comment: “part (4): density of the image on points”.
+**`AlgebraicGeometry.Space.denseRange_pointsMap_toSchemeTheoreticImage_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactSchemeTheoreticImageDense.lean#L68). The attribute's comment: “part (4): density of the image on points”.
 
 > **Stacks 082Z, part (4)**, read inside the scheme-theoretic image: a quasi-compact morphism of
 > algebraic spaces has dense image on the points of its scheme-theoretic image.
@@ -131,7 +131,7 @@ theorem denseRange_pointsMap_toSchemeTheoreticImage_of_isQuasiCompact (f : X ⟶
     DenseRange (pointsMap B S hS X (toSchemeTheoreticImage B S hS f))
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactKernelQuasicoherent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactKernelQuasicoherent.lean#L84). The attribute's comment: “part (1): the ideal sheaf of the image is quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_kernelIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactKernelQuasicoherent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactKernelQuasicoherent.lean#L84). The attribute's comment: “part (1): the ideal sheaf of the image is quasi-coherent”.
 
 > **The kernel of the structure map of a quasi-compact morphism of algebraic spaces is a
 > quasi-coherent sheaf of ideals.**
@@ -146,7 +146,7 @@ theorem isQuasicoherentOnSite_kernelIdealSheaf (f : X ⟶ Y)
 
 [Tag 0830](https://stacks.math.columbia.edu/tag/0830) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_eq_reducedClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L370). The attribute's comment: “part (1): the image is the reduced induced structure on the closure”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_eq_reducedClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L370). The attribute's comment: “part (1): the image is the reduced induced structure on the closure”.
 
 > **Stacks 0830, part (1).** The scheme-theoretic image of a morphism out of a reduced
 > algebraic space is the reduced closed subspace supported on the closure of the image of its
@@ -171,7 +171,7 @@ theorem schemeTheoreticImageSubfunctor_eq_reducedClosedSubspace (f : X ⟶ Y)
         (closure (Set.range (pointsMap B S hS X f))) isClosed_closure
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L407). The attribute's comment: “part (2): compatibility with étale base change of the target”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L407). The attribute's comment: “part (2): compatibility with étale base change of the target”.
 
 > **Stacks 0830, part (2).** The scheme-theoretic image of a morphism out of a reduced
 > algebraic space commutes with étale base change of the target: for an étale morphism
@@ -202,7 +202,7 @@ theorem schemeTheoreticImageSubfunctor_pullback_snd_of_isEtale
 
 [Tag 089B](https://stacks.math.columbia.edu/tag/089B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_valuativeSquare_toSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImageValuativePoint.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImageValuativePoint.lean#L188).
+**`AlgebraicGeometry.Space.exists_valuativeSquare_toSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImageValuativePoint.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImageValuativePoint.lean#L189).
 
 > Let `f : X ⟶ Y` be a quasi-compact morphism of algebraic spaces over `S`,
 > let `Z` be its scheme-theoretic image and let `z` be a point of `|Z|`. There is a valuation
@@ -225,7 +225,7 @@ theorem exists_valuativeSquare_toSchemeTheoreticImage (f : X ⟶ Y)
 
 [Tag 0CP2](https://stacks.math.columbia.edu/tag/0CP2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L235). The attribute's comment: “the induced morphism of scheme-theoretic images”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L235). The attribute's comment: “the induced morphism of scheme-theoretic images”.
 
 > **Stacks 0CP2.** The morphism of scheme-theoretic images induced by a commutative square
 > of algebraic spaces over `S`.
@@ -237,7 +237,7 @@ def schemeTheoreticImageMap (hY₁ : IsAlgebraicSpace B S hS Y₁)
       (schemeTheoreticImageSubfunctor B S hS f₂).toFunctor
 ```
 
-**`AlgebraicGeometry.Space.schemeTheoreticImageMap_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L245). The attribute's comment: “the right square”.
+**`AlgebraicGeometry.Space.schemeTheoreticImageMap_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L245). The attribute's comment: “the right square”.
 
 > **Stacks 0CP2**, the right square: the induced morphism of scheme-theoretic images is
 > compatible with their inclusions into the targets.
@@ -250,7 +250,7 @@ theorem schemeTheoreticImageMap_ι (hY₁ : IsAlgebraicSpace B S hS Y₁)
       (schemeTheoreticImageSubfunctor B S hS f₁).ι ≫ q
 ```
 
-**`AlgebraicGeometry.Space.toSchemeTheoreticImage_comp_schemeTheoreticImageMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L269). The attribute's comment: “the left square”.
+**`AlgebraicGeometry.Space.toSchemeTheoreticImage_comp_schemeTheoreticImageMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImage.lean#L269). The attribute's comment: “the left square”.
 
 > **Stacks 0CP2**, the left square: a morphism of scheme-theoretic images compatible with the
 > inclusions into the targets is also compatible with the factorizations of the horizontal
@@ -269,7 +269,7 @@ theorem toSchemeTheoreticImage_comp_schemeTheoreticImageMap (hsq : f₁ ≫ q = 
 
 [Tag 0CP3](https://stacks.math.columbia.edu/tag/0CP3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_pullback_snd_schemeTheoreticImageSubfunctor_comp_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImagePartialSection.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImagePartialSection.lean#L137).
+**`AlgebraicGeometry.Space.isIso_pullback_snd_schemeTheoreticImageSubfunctor_comp_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImagePartialSection.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SchemeTheoreticImagePartialSection.lean#L139).
 
 > **Stacks 0CP3.** Let `f : X ⟶ Y` be a separated morphism of algebraic spaces over `S`, let
 > `V ⊆ Y` be an open subspace whose inclusion into `Y` is quasi-compact, and let `s : V ⟶ X`
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.16, Tag 082W](https://stacks.math.columbia.edu/tag/082W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

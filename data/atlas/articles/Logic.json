@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "Logic/first-order-logic/embedding-propositional-logic-into-first-order-l/bool-structure.md",
@@ -213,7 +213,7 @@
    "declaration": "Cslib.Logic.FOL.formula_relabel_eq_rename",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 268,
+    "line": 383,
     "kind": "theorem",
     "sorry": false
    }
@@ -237,7 +237,7 @@
    "declaration": "Cslib.Logic.FOL.freeVarFinset_rename",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 373,
+    "line": 488,
     "kind": "theorem",
     "sorry": false
    }
@@ -249,7 +249,7 @@
    "declaration": "Cslib.Logic.FOL.instantiate_all",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 106,
+    "line": 114,
     "kind": "theorem",
     "sorry": false
    }
@@ -261,7 +261,7 @@
    "declaration": "Cslib.Logic.FOL.instantiateTerm_var_succ",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 80,
+    "line": 88,
     "kind": "theorem",
     "sorry": false
    }
@@ -273,7 +273,7 @@
    "declaration": "Cslib.Logic.FOL.instantiateTerm_var_zero",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 76,
+    "line": 84,
     "kind": "theorem",
     "sorry": false
    }
@@ -285,7 +285,7 @@
    "declaration": "Cslib.Logic.FOL.instantiateTerm",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 58,
+    "line": 66,
     "kind": "def",
     "sorry": false
    }
@@ -297,7 +297,7 @@
    "declaration": "Cslib.Logic.FOL.instantiate",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 65,
+    "line": 73,
     "kind": "def",
     "sorry": false
    }
@@ -333,7 +333,7 @@
    "declaration": "Cslib.Logic.FOL.realize_all_formula",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 178,
+    "line": 186,
     "kind": "theorem",
     "sorry": false
    }
@@ -345,7 +345,7 @@
    "declaration": "Cslib.Logic.FOL.realize_congr",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 185,
+    "line": 193,
     "kind": "theorem",
     "sorry": false
    }
@@ -357,7 +357,7 @@
    "declaration": "Cslib.Logic.FOL.realize_instantiate_formula",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 172,
+    "line": 180,
     "kind": "theorem",
     "sorry": false
    }
@@ -369,7 +369,7 @@
    "declaration": "Cslib.Logic.FOL.realize_rename",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 227,
+    "line": 342,
     "kind": "theorem",
     "sorry": false
    }
@@ -381,7 +381,7 @@
    "declaration": "Cslib.Logic.FOL.relabel_inl_comp_eq_castLE_rename",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 241,
+    "line": 356,
     "kind": "theorem",
     "sorry": false
    }
@@ -393,7 +393,7 @@
    "declaration": "Cslib.Logic.FOL.rename_congr",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 340,
+    "line": 455,
     "kind": "theorem",
     "sorry": false
    }
@@ -405,7 +405,7 @@
    "declaration": "Cslib.Logic.FOL.renameTerm",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 196,
+    "line": 311,
     "kind": "def",
     "sorry": false
    }
@@ -417,7 +417,7 @@
    "declaration": "Cslib.Logic.FOL.rename",
    "lean": {
     "file": "CSLibExt/Logics/FirstOrder/Syntax.lean",
-    "line": 200,
+    "line": 315,
     "kind": "def",
     "sorry": false
    }

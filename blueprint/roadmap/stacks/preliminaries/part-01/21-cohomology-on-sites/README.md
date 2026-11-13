@@ -1,6 +1,6 @@
 # 21 Cohomology on Sites
 
-Chapter 21 of the Stacks Project, *Cohomology on Sites*, [Tag 01FQ](https://stacks.math.columbia.edu/tag/01FQ): the 51 sections of its 53 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 320 tags are carried by 999 declarations of the repository (all in StacksFrontier) and 45 registered declarations.
+Chapter 21 of the Stacks Project, *Cohomology on Sites*, [Tag 01FQ](https://stacks.math.columbia.edu/tag/01FQ): the 51 sections of its 53 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 320 tags are carried by 988 declarations of the repository (all in StacksFrontier) and 42 registered declarations.
 
 ## [21.2 Cohomology of sheaves to 21.16 Cohomology and colimits](part-01/README.md)
 
@@ -20,7 +20,7 @@ Chapter 21 of the Stacks Project, *Cohomology on Sites*, [Tag 01FQ](https://stac
 - [21.15 The base change map](part-01/21-15-the-base-change-map.md)
 - [21.16 Cohomology and colimits](part-01/21-16-cohomology-and-colimits.md)
 
-## [21.17 Flat resolutions to 21.26 Mayer-Vietoris](part-02/README.md)
+## [21.17 Flat resolutions to 21.25 Bounded cohomological…](part-02/README.md)
 
 - [21.17 Flat resolutions](part-02/21-17-flat-resolutions.md)
 - [21.18 Derived pullback](part-02/21-18-derived-pullback.md)
@@ -31,10 +31,10 @@ Chapter 21 of the Stacks Project, *Cohomology on Sites*, [Tag 01FQ](https://stac
 - [21.23 Derived and homotopy limits](part-02/21-23-derived-and-homotopy-limits.md)
 - [21.24 Producing K-injective resolutions](part-02/21-24-producing-k-injective-resolutions.md)
 - [21.25 Bounded cohomological dimension](part-02/21-25-bounded-cohomological-dimension.md)
-- [21.26 Mayer-Vietoris](part-02/21-26-mayer-vietoris.md)
 
-## [21.28 Formalities on… to 21.34 Hom complexes](part-03/README.md)
+## [21.26 Mayer-Vietoris to 21.34 Hom complexes](part-03/README.md)
 
+- [21.26 Mayer-Vietoris](part-03/21-26-mayer-vietoris.md)
 - [21.28 Formalities on cohomological descent](part-03/21-28-formalities-on-cohomological-descent.md)
 - [21.29 Comparing two topologies, II](part-03/21-29-comparing-two-topologies-ii.md)
 - [21.30 Comparing cohomology](part-03/21-30-comparing-cohomology.md)

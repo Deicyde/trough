@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.20 Strong formal effectiveness
 
-Section 98.20 of the Stacks Project, [Tag 0CXR](https://stacks.math.columbia.edu/tag/0CXR). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.20 of the Stacks Project, [Tag 0CXR](https://stacks.math.columbia.edu/tag/0CXR). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G2S, a lemma
 
 [Tag 0G2S](https://stacks.math.columbia.edu/tag/0G2S) in the Stacks Project.
 
-**`Deformation.Artin.exists_sequence_firstOrderThickenings_without_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/NonversalThickeningSequence.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/NonversalThickeningSequence.lean#L1354).
+**`Deformation.Artin.exists_sequence_firstOrderThickenings_without_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/NonversalThickeningSequence.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/NonversalThickeningSequence.lean#L1354).
 
 > **Stacks Project, Tag 0G2S.** Let `𝒳` be a category fibred in groupoids over the big
 > fppf site of a locally Noetherian scheme `S`, satisfying (RS*), and let `x` be an object of
@@ -74,7 +74,7 @@ public theorem exists_sequence_firstOrderThickenings_without_localRetraction
 
 [Tag 0CXT](https://stacks.math.columbia.edu/tag/0CXT) in the Stacks Project.
 
-**`Deformation.Artin.IsEffectiveSystem`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L63). The attribute's comment: “effectivity\_of\_a\_system\_of\_objects”.
+**`Deformation.Artin.IsEffectiveSystem`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L63). The attribute's comment: “effectivity\_of\_a\_system\_of\_objects”.
 
 > A diagram in a category over a base is effective over a specified base cocone when
 > that cocone comes from a cocone of the objects. In a category fibred in groupoids, the
@@ -86,7 +86,7 @@ public abbrev IsEffectiveSystem {J : Type u₁} [Category.{v₁} J] {X : Type u�
     (c : Cocone (ξ ⋙ p)) : Prop
 ```
 
-**`Deformation.Artin.IsStronglyFormallyEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L81). The attribute's comment: “strong\_formal\_effectiveness”.
+**`Deformation.Artin.IsStronglyFormallyEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L81). The attribute's comment: “strong\_formal\_effectiveness”.
 
 > Strong formal effectiveness for a category fibred in groupoids over the big
 > fppf site of a locally Noetherian scheme.
@@ -103,7 +103,7 @@ public abbrev IsStronglyFormallyEffective
 
 [Tag 0CXU](https://stacks.math.columbia.edu/tag/0CXU) in the Stacks Project.
 
-**`Deformation.Artin.isOpenVersality_of_isSquareZeroEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessOfVersality.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/OpennessOfVersality.lean#L443).
+**`Deformation.Artin.isOpenVersality_of_isSquareZeroEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessOfVersality.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessOfVersality.lean#L443).
 
 > **Stacks 0CXU.** Let `S` be a locally Noetherian scheme and `𝒳` a category fibred in
 > groupoids over the big fppf site of `S` such that
@@ -140,7 +140,7 @@ public theorem isOpenVersality_of_isSquareZeroEffective [IsLocallyNoetherian S]
 
 [Tag 0CXV](https://stacks.math.columbia.edu/tag/0CXV) in the Stacks Project.
 
-**`Deformation.Artin.isOpenVersality_diagonal_of_isFullyFaithfulOnSquareZeroTowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/DiagonalOpenness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/DiagonalOpenness.lean#L81).
+**`Deformation.Artin.isOpenVersality_diagonal_of_isFullyFaithfulOnSquareZeroTowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/DiagonalOpenness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/DiagonalOpenness.lean#L81).
 
 > Let `S` be a locally Noetherian scheme and `𝒳` a category fibred in groupoids over the big fppf
 > site of `S` whose second diagonal is representable by algebraic spaces, which satisfies (RS*),
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.20, Tag 0CXR](https://stacks.math.columbia.edu/tag/0CXR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

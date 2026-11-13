@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.18 Change of big site
 
-Section 94.18 of the Stacks Project, [Tag 04X1](https://stacks.math.columbia.edu/tag/04X1). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.18 of the Stacks Project, [Tag 04X1](https://stacks.math.columbia.edu/tag/04X1). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04X2, a lemma
 
 [Tag 04X2](https://stacks.math.columbia.edu/tag/04X2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_pullbackStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean#L182). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_pullbackStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean#L182). The attribute's comment: “part (3)”.
 
 > **Stacks 04X2, part (3).** Let `B` be a big fppf site contained in a larger one `B'`, let `S`
 > be a scheme of `B` and let `f` be the morphism of sites determined by the localized inclusion.
@@ -30,7 +30,7 @@ theorem isAlgebraicStack_pullbackStack {B B' : BigFppfSite.{u}}
     IsAlgebraicStack.{u, w} B' S (largerContains h hS) (pullbackStack h S hS 𝒳.val)
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_pullbackStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean#L217). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_pullbackStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteAlgebraicStack.lean#L217). The attribute's comment: “part (4)”.
 
 > **Stacks 04X2, part (4).** Let `B` be a big fppf site contained in a larger one `B'`, let `S`
 > be a scheme of `B` and let `f` be the morphism of sites determined by the localized inclusion.
@@ -55,7 +55,7 @@ theorem isDeligneMumfordStack_pullbackStack {B B' : BigFppfSite.{u}}
     IsDeligneMumfordStackUniv.{u, w} B' S (largerContains h hS) (pullbackStack h S hS 𝒳.val)
 ```
 
-**`AlgebraicGeometry.Stack.pullbackStack_equivalenceOfSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean#L256). The attribute's comment: “representability by an algebraic space: the inverse image of a stack represented by an algebraic space is represented by the inverse image of that same algebraic space”.
+**`AlgebraicGeometry.Stack.pullbackStack_equivalenceOfSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean#L256). The attribute's comment: “representability by an algebraic space: the inverse image of a stack represented by an algebraic space is represented by the inverse image of that same algebraic space”.
 
 > **Stacks 04X2, representability by an algebraic space.** A stack over the localized big fppf
 > site of `S` represented by an algebraic space `F` has inverse image represented by the inverse
@@ -74,7 +74,7 @@ theorem pullbackStack_equivalenceOfSpace (S : Scheme.{u}) (hS : B.Contains S)
         (((changeBigSite B B' h S hS).obj F).obj ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.pullbackStack_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean#L289). The attribute's comment: “representability by a scheme: the inverse image of a stack represented by a scheme of the smaller big fppf site is represented by that same scheme, read in the larger one”.
+**`AlgebraicGeometry.Stack.pullbackStack_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteRepresentableStack.lean#L289). The attribute's comment: “representability by a scheme: the inverse image of a stack represented by a scheme of the smaller big fppf site is represented by that same scheme, read in the larger one”.
 
 > **Stacks 04X2, representability by a scheme.** A stack over the localized big fppf site of `S`
 > represented by a scheme `X` of the smaller site has inverse image represented by the *same*
@@ -95,7 +95,7 @@ theorem pullbackStack_representableBy (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 04X3](https://stacks.math.columbia.edu/tag/04X3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ChangeOfBigSite.pullbackPseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean#L287). The attribute's comment: “the functor of 2-categories”.
+**`AlgebraicGeometry.Stack.ChangeOfBigSite.pullbackPseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean#L287). The attribute's comment: “the functor of 2-categories”.
 
 > **The 2-functor `𝒳 ↦ f⁻¹𝒳`** from the algebraic stacks over `S` for the smaller big fppf site
 > to those for the larger one. Its value at `𝒳` is `pullbackObj`, equivalent over the larger site to
@@ -108,7 +108,7 @@ noncomputable def pullbackPseudofunctor :
     AlgebraicStacks.{u, w} B S hS ⥤ᵖ AlgebraicStacks.{u, w} B' S (largerContains h hS)
 ```
 
-**`AlgebraicGeometry.Stack.ChangeOfBigSite.isEquivalence_mapFunctor_pullbackPseudofunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean#L299). The attribute's comment: “the equivalences of morphism categories”.
+**`AlgebraicGeometry.Stack.ChangeOfBigSite.isEquivalence_mapFunctor_pullbackPseudofunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSitePseudofunctor.lean#L299). The attribute's comment: “the equivalences of morphism categories”.
 
 > **The 2-functor `𝒳 ↦ f⁻¹𝒳` induces equivalences of morphism categories**
 > `Mor(𝒳, 𝒴) ≌ Mor(f⁻¹𝒳, f⁻¹𝒴)`.
@@ -118,7 +118,7 @@ theorem isEquivalence_mapFunctor_pullbackPseudofunctor (𝒳 𝒴 : AlgebraicSta
     ((pullbackPseudofunctor h S hS).mapFunctor 𝒳 𝒴).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.hasChangeBigSitePresentation_of_isPullbackOfAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L205). The attribute's comment: “the characterization of the essential image, 'only if' half: a category over the enlarged localized big fppf site equivalent to the inverse image of an algebraic stack over the smaller one has a presentation by the inverse image of a smooth groupoid in algebraic spaces over the smaller site”.
+**`AlgebraicGeometry.Stack.hasChangeBigSitePresentation_of_isPullbackOfAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L205). The attribute's comment: “the characterization of the essential image, 'only if' half: a category over the enlarged localized big fppf site equivalent to the inverse image of an algebraic stack over the smaller one has a presentation by the inverse image of a smooth groupoid in algebraic spaces over the smaller site”.
 
 > **Stacks 04X3, the "only if" half of the characterization of the essential image.** If `𝒳'`
 > is equivalent over the enlarged localized big fppf site to the inverse image of an algebraic stack
@@ -137,7 +137,7 @@ theorem hasChangeBigSitePresentation_of_isPullbackOfAlgebraicStack
     HasChangeBigSitePresentation h S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isPullbackOfAlgebraicStack_of_hasChangeBigSitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L240). The attribute's comment: “the characterization of the essential image, 'if' half: a category over the enlarged localized big fppf site with a presentation by the inverse image of a smooth groupoid in algebraic spaces over the smaller site is equivalent to the inverse image of an algebraic stack over the smaller site”.
+**`AlgebraicGeometry.Stack.isPullbackOfAlgebraicStack_of_hasChangeBigSitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L240). The attribute's comment: “the characterization of the essential image, 'if' half: a category over the enlarged localized big fppf site with a presentation by the inverse image of a smooth groupoid in algebraic spaces over the smaller site is equivalent to the inverse image of an algebraic stack over the smaller site”.
 
 > **Stacks 04X3, the "if" half of the characterization of the essential image.** If `𝒳'` has a
 > presentation `[U'/R']` with `U'`, `R'` the inverse images of `U`, `R`, then `𝒳'` is equivalent
@@ -159,7 +159,7 @@ theorem isPullbackOfAlgebraicStack_of_hasChangeBigSitePresentation
     IsPullbackOfAlgebraicStack.{u, w} h S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isPullbackOfAlgebraicStack_iff_hasChangeBigSitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L264). The attribute's comment: “the characterization of the essential image”.
+**`AlgebraicGeometry.Stack.isPullbackOfAlgebraicStack_iff_hasChangeBigSitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBigSiteStackEssentialImage.lean#L264). The attribute's comment: “the characterization of the essential image”.
 
 > **Stacks 04X3, the characterization of the essential image.** A category `𝒳'` over the
 > enlarged localized big fppf site is equivalent to the inverse image `f⁻¹𝒳` of an algebraic stack
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.18, Tag 04X1](https://stacks.math.columbia.edu/tag/04X1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

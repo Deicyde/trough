@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.9 Morphisms representable by algebraic spaces
 
-Section 94.9 of the Stacks Project, [Tag 04SX](https://stacks.math.columbia.edu/tag/04SX). 12 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.9 of the Stacks Project, [Tag 04SX](https://stacks.math.columbia.edu/tag/04SX). 12 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02ZW, a definition
 
 [Tag 02ZW](https://stacks.math.columbia.edu/tag/02ZW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L80).
+**`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L80).
 
 > **Stacks 02ZW.** A 1-morphism of categories over the big fppf site of `S` is *representable
 > by algebraic spaces* if, for every scheme `U` over `S` and every scheme-valued point
@@ -34,7 +34,7 @@ abbrev IsRepresentableByAlgebraicSpaces
 
 [Tag 0402](https://stacks.math.columbia.edu/tag/0402) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_algebraicSpace_over_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicSpace.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicSpace.lean#L43).
+**`AlgebraicGeometry.Stack.exists_algebraicSpace_over_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicSpace.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicSpace.lean#L43).
 
 > The algebraic space representing the 2-fibre product of a 1-morphism representable by
 > algebraic spaces with a scheme-valued point `y` of its target, viewed over the original base,
@@ -63,7 +63,7 @@ theorem exists_algebraicSpace_over_baseChange
           (Fy.1.hom.app (op W) s).left = (ι.hom.app (op W) s).1.1
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L99). The attribute's comment: “the representing algebraic space F\_y”.
+**`AlgebraicGeometry.Stack.baseChangeSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L99). The attribute's comment: “the representing algebraic space F\_y”.
 
 > **Stacks 0402.** The algebraic space `F_y` over `U` representing the 2-fibre product
 > `(Sch/U)_fppf ×_{y, 𝒴} 𝒳` of a 1-morphism `f` representable by algebraic spaces along a point
@@ -75,7 +75,7 @@ theorem exists_algebraicSpace_over_baseChange
 noncomputable def baseChangeSpace : AlgebraicSpaces B U.left.1 U.left.2
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_equivalenceOver_baseChangeSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L106). The attribute's comment: “F\_y represents the 2-fibre product”.
+**`AlgebraicGeometry.Stack.nonempty_equivalenceOver_baseChangeSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L106). The attribute's comment: “F\_y represents the 2-fibre product”.
 
 > **Stacks 0402, the squiggly arrow.** The category of elements of
 > `AlgebraicGeometry.Stack.baseChangeSpace` is equivalent, over the big fppf site of `U`, to the
@@ -88,7 +88,7 @@ theorem nonempty_equivalenceOver_baseChangeSpace :
       (presheafOfCategories ((baseChangeSpace B S hS f hf U y hy).1 ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeStructureMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L124). The attribute's comment: “the structure morphism f\_y”.
+**`AlgebraicGeometry.Stack.baseChangeStructureMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L124). The attribute's comment: “the structure morphism f\_y”.
 
 > **Stacks 0402.** The structure morphism `f_y : F_y ⟶ U` of the display, as a morphism of
 > algebraic spaces over `S` from `AlgebraicGeometry.Stack.baseChangeSpace` to the representable
@@ -106,7 +106,7 @@ noncomputable abbrev baseChangeStructureMap :
 
 [Tag 02ZY](https://stacks.math.columbia.edu/tag/02ZY) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_iff_associatedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/MorphismRepresentableBySpaces/Criterion.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/MorphismRepresentableBySpaces/Criterion.lean#L756).
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_iff_associatedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/MorphismRepresentableBySpaces/Criterion.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/MorphismRepresentableBySpaces/Criterion.lean#L756).
 
 > **Stacks 02ZY.** A morphism of categories fibred in groupoids is representable by
 > algebraic spaces if and only if its functors on fibres are faithful and, for every
@@ -132,7 +132,7 @@ public theorem isRepresentableByAlgebraicSpaces_iff_associatedMap
 
 [Tag 0457](https://stacks.math.columbia.edu/tag/0457) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityInvariance.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityInvariance.lean#L93).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityInvariance.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityInvariance.lean#L93).
 
 > Representability by algebraic spaces of a morphism of categories fibred in groupoids is
 > invariant under horizontal equivalences in a 2-commutative square.
@@ -161,7 +161,7 @@ theorem isRepresentableByAlgebraicSpaces_iff_of_equivalences
 
 [Tag 02ZZ](https://stacks.math.columbia.edu/tag/02ZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStack.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStack.lean#L213).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStack.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicSpaceStack.lean#L213).
 
 > **Stacks 02ZZ.** A 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` whose source and target are both representable by algebraic spaces over `S` is representable
@@ -185,7 +185,7 @@ theorem isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace
 
 [Tag 0458](https://stacks.math.columbia.edu/tag/0458) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.associatedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L65). The attribute's comment: “associated morphism”.
+**`AlgebraicGeometry.Stack.associatedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L65). The attribute's comment: “associated morphism”.
 
 > The 1-morphism of categories fibred in groupoids induced by a map `a` of set-valued
 > presheaves, together with its value on objects: it sends `(U, x)` to `(U, a_U(x))`.
@@ -200,7 +200,7 @@ def associatedMap
             (Discrete.as (show Discrete (F.obj (Opposite.op x.base)) from x.fiber))))}
 ```
 
-**`AlgebraicGeometry.Stack.associatedMap_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L99). The attribute's comment: “the associated morphism on objects”.
+**`AlgebraicGeometry.Stack.associatedMap_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L99). The attribute's comment: “the associated morphism on objects”.
 
 > The 1-morphism attached to a map `a : F ⟶ G` of set-valued presheaves sends the pair
 > `(U, x)` to the pair `(U, a_U(x))`.
@@ -213,7 +213,7 @@ theorem associatedMap_obj
       ⟨x.base, Discrete.mk (a.app (Opposite.op x.base) x.fiber.as)⟩
 ```
 
-**`AlgebraicGeometry.Stack.associatedMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L174). The attribute's comment: “functoriality of the associated morphism”.
+**`AlgebraicGeometry.Stack.associatedMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresheafFibredCategory.lean#L174). The attribute's comment: “functoriality of the associated morphism”.
 
 > The 1-morphism attached to a composite of maps of presheaves is the composite of the two
 > attached 1-morphisms.
@@ -224,7 +224,7 @@ theorem associatedMap_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (a : 
       (associatedMap B S hS a).1 ≫ (associatedMap B S hS b).1
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_iff_associatedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean#L146). The attribute's comment: “representability equivalence”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_iff_associatedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean#L146). The attribute's comment: “representability equivalence”.
 
 > **Stacks 0458**, representability equivalence. A map `a : F ⟶ G` of set-valued presheaves on
 > the big fppf site of `S` is representable by algebraic spaces exactly when the 1-morphism of
@@ -247,35 +247,35 @@ theorem isRepresentableByAlgebraicSpaces_iff_associatedMap
 
 [Tag 04SY](https://stacks.math.columbia.edu/tag/04SY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isoClassMap_isRepresentableByAlgebraicSpaces_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentability.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentability.lean#L256).
+**`AlgebraicGeometry.Stack.isoClassMap_isRepresentableByAlgebraicSpacesULift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentabilityLarge.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentabilityLarge.lean#L574). The attribute's comment: “total objects in any universe; `a` tested on universe-lifted points”.
 
-> For categories fibred in setoids, representability by algebraic spaces of
-> the induced map of isomorphism-class presheaves is equivalent to
-> representability of the original morphism.
+> **Stacks 04SY.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in setoids over the
+> big fppf site of `S`, whose total objects lie in an arbitrary universe `w`, and let
+> `a : F ⟶ G` be the map of presheaves of isomorphism classes corresponding to `f`, i.e. sending
+> the class of `x` to the class of `f x`. Then `a` is representable by algebraic spaces (Stacks
+> 02YQ, tested on the universe-lifted scheme-valued points of `G`, since `F` and `G` take values
+> in `Type w`) if and only if `f` is representable by algebraic spaces.
 
 ```lean
-public theorem isoClassMap_isRepresentableByAlgebraicSpaces_iff
-    (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
-    {𝒳 𝒴 : CatFiberedInSetoids.{u, v, u + 1, u}
-      (BigFppfOver B S hS)} (f : 𝒳 ⟶ 𝒴)
+public theorem isoClassMap_isRepresentableByAlgebraicSpacesULift_iff
+    {𝒳 𝒴 : CatFiberedInSetoids.{u, v, u + 1, w} (BigFppfOver B S hS)} (f : 𝒳 ⟶ 𝒴)
     (a : 𝒳.val.p.isoClassPresheaf ⟶ 𝒴.val.p.isoClassPresheaf)
     (ha : ∀ (U : BigFppfOver B S hS) (x : 𝒳.val.p.Fiber U),
-      a.app (Opposite.op U) (Functor.isoClassMk 𝒳.val.p x) =
+      a.app (op U) (Functor.isoClassMk 𝒳.val.p x) =
         Functor.isoClassMk 𝒴.val.p
           ((Functor.Fiber.mapOfComp 𝒳.val.p 𝒴.val.p
             (CatFiberedInGroupoids.homFunctor f)
             (CatFiberedInGroupoids.homFunctor_comp_p f) U).obj x)) :
-    AlgebraicGeometry.Space.IsRepresentableByAlgebraicSpaces B S hS
-        a ↔
-      AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpaces B S hS
-        (CatFiberedInSetoids.inclusion.map f).hom
+    Space.IsRepresentableByAlgebraicSpacesULift.{w} B S hS
+        (Functor.whiskerRight a uliftFunctor.{u}) ↔
+      IsRepresentableByAlgebraicSpaces B S hS (CatFiberedInSetoids.inclusion.map f).hom
 ```
 
 ## Tag 0302, a lemma
 
 [Tag 0302](https://stacks.math.columbia.edu/tag/0302) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_twoFibreProductFst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L91).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_twoFibreProductFst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L91).
 
 > If `f : 𝒳 ⟶ 𝒴` is a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces and `g : 𝒵 ⟶ 𝒴` is any 1-morphism, then the base
@@ -296,7 +296,7 @@ theorem isRepresentableByAlgebraicSpaces_twoFibreProductFst
 
 [Tag 0300](https://stacks.math.columbia.edu/tag/0300) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L110).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L110).
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces, let `g : 𝒵 ⟶ 𝒴` be any 1-morphism, and assume
@@ -318,7 +318,7 @@ theorem isRepresentableByAlgebraicSpace_twoFibreProduct
 
 [Tag 0301](https://stacks.math.columbia.edu/tag/0301) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityComp.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityComp.lean#L332).
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityComp.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentabilityComp.lean#L332).
 
 > The composition of two morphisms representable by algebraic spaces is
 > representable by algebraic spaces.
@@ -338,7 +338,7 @@ theorem isRepresentableByAlgebraicSpaces_comp
 
 [Tag 0303](https://stacks.math.columbia.edu/tag/0303) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_productMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProductMorphism.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProductMorphism.lean#L360).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_productMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProductMorphism.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProductMorphism.lean#L360).
 
 > **Stacks 0303.** The product `f₁ × f₂` of two 1-morphisms of categories fibred in groupoids
 > over the big fppf site of `S`, each representable by algebraic spaces, is representable by
@@ -359,7 +359,7 @@ theorem isRepresentableByAlgebraicSpaces_productMap (f₁ : 𝒳₁ ⟶ 𝒴₁)
 
 [Tag 0CKY](https://stacks.math.columbia.edu/tag/0CKY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStack_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean, line 842](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean#L842).
+**`AlgebraicGeometry.Stack.isStack_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean, line 842](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismStack.lean#L842).
 
 > **Stacks 0CKY.** Let `𝒳 ⟶ 𝒵` and `𝒴 ⟶ 𝒵` be 1-morphisms of categories fibred in groupoids
 > over the big fppf site of `S`. If `𝒳 ⟶ 𝒵` is representable by algebraic spaces and `𝒴` is a
@@ -385,4 +385,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.9, Tag 04SX](https://stacks.math.columbia.edu/tag/04SX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.12 Finiteness of pushforwards, II
 
-Section 51.12 of the Stacks Project, [Tag 0BJX](https://stacks.math.columbia.edu/tag/0BJX). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.12 of the Stacks Project, [Tag 0BJX](https://stacks.math.columbia.edu/tag/0BJX). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BJY, a lemma
 
 [Tag 0BJY](https://stacks.math.columbia.edu/tag/0BJY) in the Stacks Project.
 
-**`Stacks.LocalCohomologySequence.forall_lt_depth_add_ringKrullDim_iff_forall_isCoherent_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/DepthDimensionCriterionGlobal.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/DepthDimensionCriterionGlobal.lean#L391). References: SGA 2 VIII (2.3), “(i) ⇔ (iv)”.
+**`Stacks.LocalCohomologySequence.forall_lt_depth_add_ringKrullDim_iff_forall_isCoherent_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/DepthDimensionCriterionGlobal.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/DepthDimensionCriterionGlobal.lean#L391). References: SGA 2 VIII (2.3), “(i) ⇔ (iv)”.
 
 > **[Stacks, Tag 0BJY].** Let `X` be a locally Noetherian scheme, let `j : U → X` be the
 > inclusion of an open subscheme with complement `Z`, let `ℱ` be a coherent `𝒪_U`-module and let
@@ -61,7 +61,7 @@ public theorem forall_lt_depth_add_ringKrullDim_iff_forall_isCoherent_rightDeriv
 
 [Tag 0BLT](https://stacks.math.columbia.edu/tag/0BLT) in the Stacks Project.
 
-**`Stacks.LocalCohomologySequence.isCoherent_rightDerived_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplement.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplement.lean#L183).
+**`Stacks.LocalCohomologySequence.isCoherent_rightDerived_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplement.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplement.lean#L183).
 
 > **[Stacks, Tag 0BLT].** Let `X` be a locally Noetherian scheme, let `j : U → X` be the
 > inclusion of an open subscheme and let `n ≥ 0`.  If `R^p j_* 𝒪_U` is coherent for `0 ≤ p < n`,
@@ -93,7 +93,7 @@ public theorem isCoherent_rightDerived_of_isFiniteLocallyFree {U X : Scheme.{u}}
 
 [Tag 0BM5](https://stacks.math.columbia.edu/tag/0BM5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_pow_smul_derivedGlobalSections_eq_zero_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/FiniteLocallyFree.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/FiniteLocallyFree.lean#L484).
+**`AlgebraicGeometry.exists_pow_smul_derivedGlobalSections_eq_zero_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/FiniteLocallyFree.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/FiniteLocallyFree.lean#L484).
 
 > Let `I` be a finitely generated ideal of `A`, let `J ≤ I` and let `U` be the complement of
 > `V(I)` in `Spec A`.  If a power of `J` annihilates the degree `p` cohomology of the structure
@@ -130,4 +130,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.12, Tag 0BJX](https://stacks.math.columbia.edu/tag/0BJX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

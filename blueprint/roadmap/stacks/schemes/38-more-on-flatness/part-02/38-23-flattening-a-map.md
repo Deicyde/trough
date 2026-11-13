@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.mono_pullbackPushforwardUnit_of_relativeAssassin_subset_range, AlgebraicGeometry.mono_baseChange_pullbackPushforwardUnit_of_relativeAssassin_subset_range, Module.exists_ideal_bijective_rTensor_iff_map_eq_bot, Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor, Stacks.Flatness.isomorphismFunctor_representableBy_closedImmersion_of_affineTests, Stacks.Flatness.finitePresentation_hom_of_representableBy_isomorphismFunctor, Stacks.Flatness.isomorphismFunctor_representableBy_closedImmersion_of_projective_sections, Stacks.Flatness.weilRestriction_representableBy_closedImmersion_of_affineTests
+lean: AlgebraicGeometry.mono_pullbackPushforwardUnit_of_relativeAssassin_subset_range, AlgebraicGeometry.mono_baseChange_pullbackPushforwardUnit_of_relativeAssassin_subset_range, Module.exists_ideal_bijective_rTensor_iff_map_eq_bot, Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor_finitePresentation, Stacks.Flatness.weilRestriction_representableBy_closedImmersion_of_affineTests, Stacks.Flatness.finitePresentation_hom_of_representableBy_weilRestrictionFunctor
 statement: formalized
 proof: formalized
 ---
 
 # 38.23 Flattening a map
 
-Section 38.23 of the Stacks Project, [Tag 05PC](https://stacks.math.columbia.edu/tag/05PC). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.23 of the Stacks Project, [Tag 05PC](https://stacks.math.columbia.edu/tag/05PC). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05PD, a lemma
 
 [Tag 05PD](https://stacks.math.columbia.edu/tag/05PD) in the Stacks Project.
 
-**`AlgebraicGeometry.mono_pullbackPushforwardUnit_of_relativeAssassin_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean#L88). The attribute's comment: “injectivity”.
+**`AlgebraicGeometry.mono_pullbackPushforwardUnit_of_relativeAssassin_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean#L88). The attribute's comment: “injectivity”.
 
 > **Stacks Project, Tag 05PD.** Let `S` be a scheme, let `g : X' ⟶ X` be a flat morphism of
 > schemes over `S` with `X` locally of finite type over `S`, and let `F` be a finite type
@@ -31,7 +31,7 @@ theorem mono_pullbackPushforwardUnit_of_relativeAssassin_subset_range
     Mono ((Scheme.Modules.pullbackPushforwardAdjunction g).unit.app F)
 ```
 
-**`AlgebraicGeometry.mono_baseChange_pullbackPushforwardUnit_of_relativeAssassin_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean#L102). The attribute's comment: “after arbitrary base change”.
+**`AlgebraicGeometry.mono_baseChange_pullbackPushforwardUnit_of_relativeAssassin_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningInjective.lean#L102). The attribute's comment: “after arbitrary base change”.
 
 > **Stacks Project, Tag 05PD.** The canonical map of the preceding statement remains injective
 > after an arbitrary base change `h : T ⟶ S`: the map
@@ -53,7 +53,7 @@ theorem mono_baseChange_pullbackPushforwardUnit_of_relativeAssassin_subset_range
 
 [Tag 05PE](https://stacks.math.columbia.edu/tag/05PE) in the Stacks Project.
 
-**`Module.exists_ideal_bijective_rTensor_iff_map_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean#L91).
+**`Module.exists_ideal_bijective_rTensor_iff_map_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean#L91).
 
 > **Stacks Project, Tag 05PE.** A surjection from a projective module has a
 > flattening ideal: after every base change, the map is an isomorphism exactly
@@ -70,108 +70,45 @@ theorem exists_ideal_bijective_rTensor_iff_map_eq_bot
 
 [Tag 05PF](https://stacks.math.columbia.edu/tag/05PF) in the Stacks Project.
 
-**`Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/EtaleLocalRepresentability.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/EtaleLocalRepresentability.lean#L638). The attribute's comment: “representability by a closed immersion”.
+**`Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean#L188). The attribute's comment: “both assertions: representability by a closed immersion, which is of finite presentation when `G` is”.
 
-> **Stacks Project, Tag 05PF, first assertion.** Let `f : X ⟶ S` be of finite presentation and
-> let `u : F ⟶ G` be a surjection of quasi-coherent modules on `X` with `F` of finite presentation,
-> flat over `S` and pure relative to `S`.  Then the locus where `u` becomes an isomorphism after
-> base change is represented by a closed immersion into `S`.
+> **Stacks Project, Tag 05PF.** Let `f : X ⟶ S` be a morphism of finite presentation (locally
+> of finite presentation, quasi-compact and quasi-separated, Tag 01TP) and let `u : F ⟶ G` be a
+> surjection of quasi-coherent modules on `X` with `F` of finite presentation, flat over `S` and
+> pure relative to `S`.  Then the functor `F_iso` on schemes over `S`, whose value at
+> `T` is a point exactly when the base change `u_T` is an isomorphism, is represented by a closed
+> immersion `Z ⟶ S`; moreover `Z ⟶ S` is of finite presentation if `G` is of finite presentation.
 >
-> The source's devissage: purity reduces the question, étale locally on `S`, to an affine situation
-> whose module of sections is projective, where the locus is cut out by the flattening ideal of Tag
-> 05PE; the étale base changes cover `S` in the fpqc topology and the functor is an fpqc sheaf, so
-> the local closed subschemes glue.
+> The representing closed immersion comes from the étale-local devissage
+> `Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor`: purity reduces the
+> question étale locally on `S` to an affine situation with projective sections, cut out by the
+> flattening ideal of Tag 05PE, and the local closed subschemes glue by fpqc descent (Tags 05MJ,
+> 03I0).  Its finite presentation is
+> `Stacks.Flatness.finitePresentation_hom_of_representableBy_isomorphismFunctor`, from Tag 05MJ(4)
+> and Tag 05LX.
+>
+> The instance `F.IsFiniteType` is part of the statement because purity relative to `S` is phrased
+> for modules of finite type; it follows from `F.IsFinitePresentation` by
+> `Stacks.AlgebraicGeometry.CoherentTFAE.isQuasicoherent_isFiniteType_of_isFinitePresentation`, so
+> it adds nothing to the source's assumptions.
 
 ```lean
-theorem exists_closedImmersion_representableBy_isomorphismFunctor
-    (D : ModuleMapBaseChangeSituation.{u})
-    [LocallyOfFinitePresentation D.f] [QuasiCompact D.f] [QuasiSeparated D.f]
-    [D.F.IsFinitePresentation] [D.F.IsFiniteType] [Epi D.hom]
-    (hflat : IsFlatOver D.f.toLRSHom.toShHom D.F)
-    (hpure : AlgebraicGeometry.IsPureRelative D.f D.F) :
-    ∃ W : Over D.S, IsClosedImmersion W.hom ∧
-      Nonempty (D.isomorphismFunctor.RepresentableBy W)
-```
-
-**`Stacks.Flatness.isomorphismFunctor_representableBy_closedImmersion_of_affineTests`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean#L121). The attribute's comment: “representability by a closed immersion”.
-
-> **Stacks Project, Tag 05PF.** The isomorphism-after-base-change functor of a surjection from
-> a finitely presented, flat and pure module is represented by a closed immersion into the base.
->
-> The representing closed subscheme is cut out by an ideal sheaf which it suffices to exhibit on
-> *affine* schemes over the base, by
-> `Stacks.Flatness.ModuleMapBaseChangeSituation.isFlatteningIdeal_of_isFlatteningIdealOnAffines`;
-> étale localization on the base reduces the construction to an affine situation whose module of
-> sections is projective, where the ideal sheaf is the flattening ideal of Tag 05PE.  That
-> devissage is
-> `Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor`.
-
-```lean
-theorem isomorphismFunctor_representableBy_closedImmersion_of_affineTests
+theorem exists_closedImmersion_representableBy_isomorphismFunctor_finitePresentation
     (D : ModuleMapBaseChangeSituation.{u})
     [LocallyOfFinitePresentation D.f] [QuasiCompact D.f] [QuasiSeparated D.f]
     [D.F.IsFinitePresentation] [D.F.IsFiniteType] [Epi D.hom]
     (hflat : IsFlatOver D.f.toLRSHom.toShHom D.F)
     (hpure : IsPureRelative D.f D.F) :
     ∃ W : Over D.S, IsClosedImmersion W.hom ∧
-      Nonempty (D.isomorphismFunctor.RepresentableBy W)
-```
-
-**`Stacks.Flatness.finitePresentation_hom_of_representableBy_isomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusAffineTests.lean#L147). The attribute's comment: “finite presentation of the representing closed immersion”.
-
-> **Stacks Project, Tag 05PF.** A closed immersion `Z ⟶ S` representing the
-> isomorphism-after-base-change functor is of finite presentation as soon as the target module `G`
-> is of finite presentation.
->
-> Local finite presentation is Tag 01ZC: by Tag 05MJ(4) the isomorphism functor turns a cofiltered
-> inverse limit of affine schemes over the base into a filtered colimit, so the functor of points
-> of `Z` is limit preserving in the sense of Tag 05LX.  Quasi-compactness holds because a closed
-> immersion is an affine morphism, and quasi-separatedness because the functor is subterminal, so
-> that `Z ⟶ S` is a monomorphism.
->
-> The hypotheses are about the morphism `i` at hand, and they are satisfiable: a closed immersion
-> representing the functor exists under the source's own hypotheses, by
-> `Stacks.Flatness.isomorphismFunctor_representableBy_closedImmersion_of_affineTests`.  Stating the
-> assertion for an arbitrary representative rather than for that one is no weaker, since any two
-> representatives of a functor are isomorphic over the base.
-
-```lean
-theorem finitePresentation_hom_of_representableBy_isomorphismFunctor
-    (D : ModuleMapBaseChangeSituation.{u}) [QuasiCompact D.f]
-    [D.F.IsFiniteType] [D.G.IsFinitePresentation]
-    {Z : Scheme.{u}} (i : Z ⟶ D.S) [IsClosedImmersion i]
-    (e : D.isomorphismFunctor.RepresentableBy (Over.mk i)) :
-    FinitePresentation i
-```
-
-**`Stacks.Flatness.isomorphismFunctor_representableBy_closedImmersion_of_projective_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusProjectiveSections.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/IsoLocusProjectiveSections.lean#L419). The attribute's comment: “representability by a closed immersion, for an affine situation whose source module has projective global sections: this is the terminal case of the source's devissage, Step 4 of its proof together with Tag 05PE. The étale localization of Steps 1-3, which reduces the general case to this one, is `Stacks.Flatness.exists_closedImmersion_representableBy_isomorphismFunctor`”. References: SGA 3 VIB (6.2.3), “(i), special case”; SGA 3 VIII (6.4), “special case”.
-
-> **Stacks Project, Tag 05PF.** The isomorphism-after-base-change functor of a surjection
-> `u : F ⟶ G` of quasi-coherent modules on an affine scheme `X` over an affine base `S`, whose
-> source has projective module of global sections over `Γ(S, 𝒪_S)`, is represented by a closed
-> immersion `Z ⟶ S`.
->
-> This is the situation in which the devissage of the source's proof terminates: the representing
-> closed subscheme is cut out by the ideal of `Γ(S, 𝒪_S)` supplied by Tag 05PE, which after every
-> base change vanishes exactly when `u` becomes an isomorphism.  The hypotheses of the source — that
-> `f` and `F` be of finite presentation and that `F` be flat and pure relative to `S` — are what the
-> source's étale localization uses to reduce the general case to this one; they are not needed once
-> the situation is affine with projective sections, and are therefore absent here.
-
-```lean
-theorem isomorphismFunctor_representableBy_closedImmersion_of_projective_sections
-    (D : ModuleMapBaseChangeSituation.{u}) [IsAffine D.X] [IsAffine D.S] [Epi D.hom]
-    (hproj : letI : Module Γ(D.S, ⊤) Γ(D.F, ⊤) := Module.compHom Γ(D.F, ⊤) D.f.appTop.hom
-      Module.Projective Γ(D.S, ⊤) Γ(D.F, ⊤)) :
-    ∃ W : Over D.S, IsClosedImmersion W.hom ∧
-      Nonempty (D.isomorphismFunctor.RepresentableBy W)
+      Nonempty (D.isomorphismFunctor.RepresentableBy W) ∧
+      (D.G.IsFinitePresentation → FinitePresentation W.hom)
 ```
 
 ## Tag 07AI, a lemma
 
 [Tag 07AI](https://stacks.math.columbia.edu/tag/07AI) in the Stacks Project.
 
-**`Stacks.Flatness.weilRestriction_representableBy_closedImmersion_of_affineTests`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean#L434). The attribute's comment: “representability by a closed immersion”.
+**`Stacks.Flatness.weilRestriction_representableBy_closedImmersion_of_affineTests`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean#L434). The attribute's comment: “representability by a closed immersion”.
 
 > **Stacks Project, Tag 07AI.** The Weil restriction `f_* Y` of a closed subscheme `Y` of `X`
 > along a morphism `f : X ⟶ S` which is of finite presentation, flat and pure is represented by a
@@ -193,7 +130,7 @@ theorem weilRestriction_representableBy_closedImmersion_of_affineTests
       Nonempty ((weilRestrictionFunctor i f).RepresentableBy W)
 ```
 
-**`Stacks.Flatness.finitePresentation_hom_of_representableBy_weilRestrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean#L469). The attribute's comment: “finite presentation of the representing closed immersion”. References: SGA 3 VIB (6.2.3), “(ii)”; SGA 3 VIB (6.5.2), “special case”; SGA 3 XI (6.8), “special case”.
+**`Stacks.Flatness.finitePresentation_hom_of_representableBy_weilRestrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/WeilRestriction.lean#L469). The attribute's comment: “finite presentation of the representing closed immersion”. References: SGA 3 VIB (6.2.3), “(ii)”; SGA 3 VIB (6.5.2), “special case”; SGA 3 XI (6.8), “special case”.
 
 > **Stacks Project, Tag 07AI.** If the closed subscheme `Y` is of finite presentation over `S`,
 > every closed immersion representing the Weil restriction `f_* Y` is of finite presentation.
@@ -222,4 +159,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.23, Tag 05PC](https://stacks.math.columbia.edu/tag/05PC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

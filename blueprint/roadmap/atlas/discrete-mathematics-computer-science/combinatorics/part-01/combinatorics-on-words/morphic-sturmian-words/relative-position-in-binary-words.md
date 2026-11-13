@@ -7,7 +7,7 @@ statement: formalized
 
 # Relative position in binary words
 
-63 results, 13 proved and 50 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html).
+63 results, 13 proved and 50 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html).
 
 ## Binary words in which both letters occur infinitely often
 
@@ -20,7 +20,7 @@ with $\ell_i = a$ and infinitely many positions $i$ with $\ell_i = b$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of `𝒲`).
 
-Formalized by `MetaMathlibExt.BothLettersInfinite`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#both-letters-infinite).
+Formalized by `MetaMathlibExt.BothLettersInfinite`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#both-letters-infinite).
 
 ## Position function of a letter
 
@@ -36,7 +36,7 @@ $p_\alpha(0) = p_\alpha(1)$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of position functions).
 
-Formalized by `MetaMathlibExt.letterPosition`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position).
+Formalized by `MetaMathlibExt.letterPosition`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position).
 
 ## Relative position function
 
@@ -50,7 +50,7 @@ $r(n) = p_b(n) - p_a(n)$, $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the relative position function).
 
-Formalized by `MetaMathlibExt.relativePosition`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position).
+Formalized by `MetaMathlibExt.relativePosition`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position).
 
 ## Position of the first occurrence of the initial letter
 
@@ -62,7 +62,7 @@ that is, $p_\alpha(1) = 0$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of position functions).
 
-Formalized by `MetaMathlibExt.letterPosition_one_of_head`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-one-of-head).
+Formalized by `MetaMathlibExt.letterPosition_one_of_head`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-one-of-head).
 
 ## Relative position of a word starting with $ab$
 
@@ -73,7 +73,7 @@ starts with $ab$, then its relative position function satisfies $r(1) = 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the relative position function).
 
-Formalized by `MetaMathlibExt.relativePosition_one_of_head_ab`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-one-of-head-ab).
+Formalized by `MetaMathlibExt.relativePosition_one_of_head_ab`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-one-of-head-ab).
 
 ## Characterization of the position functions
 
@@ -91,7 +91,7 @@ $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 4 (`jis-2025-25.1.5-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.exists_word_letterPosition_eq_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-letter-position-eq-iff).
+Stated but not proved: `MetaMathlibExt.exists_word_letterPosition_eq_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-letter-position-eq-iff).
 
 ## The relative position function determines the word
 
@@ -104,7 +104,7 @@ $r_w(n) = r_{w'}(n)$ for every $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 5 (`jis-2025-25.1.5-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.eq_iff_relativePosition_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#eq-iff-relative-position-eq).
+Stated but not proved: `MetaMathlibExt.eq_iff_relativePosition_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#eq-iff-relative-position-eq).
 
 ## Non-decreasing functions as relative position functions
 
@@ -118,7 +118,7 @@ $r_w(n) = r(n)$ for every $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 8 (`jis-2025-25.1.5-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.exists_word_relativePosition_eq_of_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-relative-position-eq-of-mono).
+Stated but not proved: `MetaMathlibExt.exists_word_relativePosition_eq_of_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-relative-position-eq-of-mono).
 
 ## Non-increasing functions as relative position functions
 
@@ -132,7 +132,7 @@ for every $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 9 (`jis-2025-25.1.5-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.exists_word_relativePosition_eq_of_antitone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-relative-position-eq-of-anti).
+Stated but not proved: `MetaMathlibExt.exists_word_relativePosition_eq_of_antitone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#exists-word-relative-position-eq-of-anti).
 
 ## Runs of one letter and gaps between letter positions
 
@@ -150,7 +150,7 @@ $n \ge 1$ with $p_a(n+j+1) - p_a(n+j) = 1$ for all $0 \le j < k - 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 13 (`jis-2025-25.1.5-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.subword_run_iff_letterPosition_diff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#subword-run-iff-letter-position-diff).
+Stated but not proved: `MetaMathlibExt.subword_run_iff_letterPosition_diff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#subword-run-iff-letter-position-diff).
 
 ## Monotonicity of the relative position function and runs of letters
 
@@ -167,7 +167,7 @@ of $w$, then there is $n \ge 0$ with $\Delta r(n+j) \ge 0$ for all $1 \le j \le 
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 14 (`jis-2025-25.1.5-lem-14`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_monotonicity_runs` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-monotonicity-runs).
+Stated but not proved: `MetaMathlibExt.relativePosition_monotonicity_runs` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-monotonicity-runs).
 
 ## Relative position increments without long runs of b
 
@@ -184,7 +184,7 @@ $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 15 (`jis-2025-25.1.5-lem-15`).
 
-Stated but not proved: `MetaMathlibExt.abs_relativePosition_diff_sub_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#abs-relative-position-diff-sub-le).
+Stated but not proved: `MetaMathlibExt.abs_relativePosition_diff_sub_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#abs-relative-position-diff-sub-le).
 
 ## Periodicity of a word and of the gaps between occurrences of its letters
 
@@ -203,7 +203,7 @@ $\Delta p_b(n + j) = \Delta p_b(n)$ for all $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 16 (`jis-2025-25.1.5-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.periodic_iff_letterPosition_diff_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#periodic-iff-letter-position-diff-period).
+Stated but not proved: `MetaMathlibExt.periodic_iff_letterPosition_diff_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#periodic-iff-letter-position-diff-period).
 
 ## Periodicity of the relative position differences
 
@@ -220,7 +220,7 @@ $\Delta r(n + \operatorname{lcm}(k, j)) = \Delta r(n)$ for all $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 17 (`jis-2025-25.1.5-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_diff_periodic_of_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-diff-periodic-of-perio).
+Stated but not proved: `MetaMathlibExt.relativePosition_diff_periodic_of_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-diff-periodic-of-perio).
 
 ## Bounds on position functions for words with bounded runs
 
@@ -240,7 +240,7 @@ longest run.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 25 (`jis-2025-25.1.5-lem-25`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_le_of_run_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-le-of-run-le).
+Stated but not proved: `MetaMathlibExt.letterPosition_le_of_run_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-le-of-run-le).
 
 ## Linear bounds for words with bounded runs
 
@@ -255,7 +255,7 @@ $p_b(n) \le (c+1)n - 1$ and $-cn \le r(n) \le cn$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 27 (`jis-2025-25.1.5-cor-27`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_le_of_run_le'` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-le-of-run-le-2).
+Stated but not proved: `MetaMathlibExt.letterPosition_le_of_run_le'` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-le-of-run-le-2).
 
 ## Deleting the first occurrence of a letter
 
@@ -270,7 +270,7 @@ and, when $\alpha$ does not occur in $w$, it is $w$ with its first letter delete
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the deletion operators `D_a`, `D_b`).
 
-Formalized by `MetaMathlibExt.deleteFirst`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#delete-first).
+Formalized by `MetaMathlibExt.deleteFirst`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#delete-first).
 
 ## The deletion operator
 
@@ -284,7 +284,7 @@ deleted.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the deletion operator `D`).
 
-Formalized by `MetaMathlibExt.deletion`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#deletion).
+Formalized by `MetaMathlibExt.deletion`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#deletion).
 
 ## Deleting a leading letter
 
@@ -299,7 +299,7 @@ position $i$ is $\ell_{i+1}$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 2 (definition of the deletion operators).
 
-Formalized by `MetaMathlibExt.deleteFirst_of_head`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#delete-first-of-head).
+Formalized by `MetaMathlibExt.deleteFirst_of_head`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#delete-first-of-head).
 
 ## Letter-counting function
 
@@ -312,7 +312,7 @@ the first $m$ letters $\ell_0, \dots, \ell_{m-1}$ of $w$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 3 (definition of the counting function).
 
-Formalized by `MetaMathlibExt.letterCount`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count).
+Formalized by `MetaMathlibExt.letterCount`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count).
 
 ## The letter-counting function at zero
 
@@ -324,7 +324,7 @@ the first $m$ letters of $w$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 3 (definition of the counting function).
 
-Formalized by `MetaMathlibExt.letterCount_zero`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count-zero).
+Formalized by `MetaMathlibExt.letterCount_zero`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count-zero).
 
 ## Recursion for the letter-counting function
 
@@ -337,7 +337,7 @@ $\#_\alpha(m) + 1$ if $\ell_m = \alpha$, and $\#_\alpha(m)$ otherwise.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 3 (definition of the counting function).
 
-Formalized by `MetaMathlibExt.letterCount_succ`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count-succ).
+Formalized by `MetaMathlibExt.letterCount_succ`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-count-succ).
 
 ## Reconstruction of a binary word from its relative position function
 
@@ -357,7 +357,7 @@ positions. Since $r(1) \ne 0$, the paper's "otherwise" in the first step is the 
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 6 (`jis-2025-25.1.5-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_reconstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-reconstruction).
+Stated but not proved: `MetaMathlibExt.letterPosition_reconstruction` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-reconstruction).
 
 ## Reflection of binary words and relative position
 
@@ -374,7 +374,7 @@ $w, w' \in \mathcal{W}$, $\bar w = w'$ if and only if $r_w(n) = -r_{w'}(n)$ for 
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 11 (`jis-2025-25.1.5-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.reflection_image_and_relativePosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#reflection-image-and-relative-position).
+Stated but not proved: `MetaMathlibExt.reflection_image_and_relativePosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#reflection-image-and-relative-position).
 
 ## Periodicity of the gaps between the $b$'s
 
@@ -390,7 +390,7 @@ positions $i + q$ and $i$ are equal.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 19 (`jis-2025-25.1.5-lem-19`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_diff_periodic_iff_deleteFirst_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-periodic-iff-delete).
+Stated but not proved: `MetaMathlibExt.letterPosition_diff_periodic_iff_deleteFirst_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-periodic-iff-delete).
 
 ## Prepending an equilibrious word is undone by deletion
 
@@ -406,7 +406,7 @@ words.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 21 (`jis-2025-25.1.5-lem-21`).
 
-Stated but not proved: `MetaMathlibExt.isEquilibriousWord_iff_deletion_iterate_prepend` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-equilibrious-word-iff-deletion-iterat).
+Stated but not proved: `MetaMathlibExt.isEquilibriousWord_iff_deletion_iterate_prepend` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-equilibrious-word-iff-deletion-iterat).
 
 ## Prepending an equilibrious word shifts the position functions
 
@@ -422,7 +422,7 @@ and $r_{uw}(n+k) = r_w(n)$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 22 (`jis-2025-25.1.5-lem-22`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_prepend_equilibrious` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-prepend-equilibrious).
+Stated but not proved: `MetaMathlibExt.letterPosition_prepend_equilibrious` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-prepend-equilibrious).
 
 ## Position functions of a cloned word
 
@@ -444,7 +444,7 @@ vacuous for $k = 0$, so no bound on $k$ is assumed.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 24 (`jis-2025-25.1.5-lem-24`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_clone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-clone).
+Stated but not proved: `MetaMathlibExt.letterPosition_clone` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-clone).
 
 ## Letter frequency and growth of letter positions
 
@@ -461,7 +461,7 @@ only if $p_\alpha(n)/n \to \infty$ as $n \to \infty$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 28 (`jis-2025-25.1.5-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_letterCount_div_iff_tendsto_letterPosition_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#tendsto-letter-count-div-iff-tendsto-let).
+Stated but not proved: `MetaMathlibExt.tendsto_letterCount_div_iff_tendsto_letterPosition_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#tendsto-letter-count-div-iff-tendsto-let).
 
 ## Upper and lower densities of a letter from its position function
 
@@ -478,7 +478,7 @@ Both sequences are bounded, so these are the classical upper and lower limits in
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 29 (`jis-2025-25.1.5-cor-29`).
 
-Stated but not proved: `MetaMathlibExt.limsup_liminf_letterCount_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#limsup-liminf-letter-count-div).
+Stated but not proved: `MetaMathlibExt.limsup_liminf_letterCount_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#limsup-liminf-letter-count-div).
 
 ## Letter frequencies and the growth of the position functions
 
@@ -494,7 +494,7 @@ $p_a(n)/n \to 1/(1 - d)$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 30 (`jis-2025-25.1.5-thm-30`).
 
-Stated but not proved: `MetaMathlibExt.letter_frequency_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-frequency-tfae).
+Stated but not proved: `MetaMathlibExt.letter_frequency_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-frequency-tfae).
 
 ## Relative position of a word with given letter frequency
 
@@ -512,7 +512,7 @@ occur infinitely often is needed.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 31 (`jis-2025-25.1.5-cor-31`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_relativePosition_div_of_frequency` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#tendsto-relative-position-div-of-frequen).
+Stated but not proved: `MetaMathlibExt.tendsto_relativePosition_div_of_frequency` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#tendsto-relative-position-div-of-frequen).
 
 ## The frequency of $b$ from the growth of the relative position
 
@@ -528,7 +528,7 @@ $(2 + L - \sqrt{4 + L^2})/(2L)$ if $L$ is a nonzero real number.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 33 (`jis-2025-25.1.5-prop-33`).
 
-Stated but not proved: `MetaMathlibExt.frequency_of_tendsto_relativePosition_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#frequency-of-tendsto-relative-position-d).
+Stated but not proved: `MetaMathlibExt.frequency_of_tendsto_relativePosition_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#frequency-of-tendsto-relative-position-d).
 
 ## Mean values of the position functions
 
@@ -546,7 +546,7 @@ then $p_b(n)/n \to 1$ and $p_a(n)/n \to \infty$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 34 (`jis-2025-25.1.5-thm-34`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_letterPosition_mean_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-letter-position-mean-v).
+Stated but not proved: `MetaMathlibExt.relativePosition_letterPosition_mean_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-letter-position-mean-v).
 
 ## Image of an infinite word under a substitution
 
@@ -565,7 +565,7 @@ the empty word, would make every infinite word an image of every other.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 1 (binary substitutions as homomorphisms of words) and Section 3 (images `ϱ(w)`).
 
-Formalized by `MetaMathlibExt.IsSubstitutionImage`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-substitution-image).
+Formalized by `MetaMathlibExt.IsSubstitutionImage`, a definition declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-substitution-image).
 
 ## Every word is fixed by the identity substitution
 
@@ -576,7 +576,7 @@ its own image under the identity substitution $a \mapsto a$, $b \mapsto b$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Section 1 (binary substitutions as homomorphisms of words).
 
-Formalized by `MetaMathlibExt.isSubstitutionImage_id`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-substitution-image-id).
+Formalized by `MetaMathlibExt.isSubstitutionImage_id`, a theorem declared in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#is-substitution-image-id).
 
 ## Letter frequencies of a substitution image
 
@@ -600,7 +600,7 @@ and $\mu(w) = (ab)^\omega$ has frequency of $a$ equal to $1/2$, while $L = 0$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 35 (`jis-2025-25.1.5-thm-35`).
 
-Stated but not proved: `MetaMathlibExt.frequency_substitution_image` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 542](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L542). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#frequency-substitution-image).
+Stated but not proved: `MetaMathlibExt.frequency_substitution_image` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 542](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L542). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#frequency-substitution-image).
 
 ## Integer matrices with the golden eigenvector
 
@@ -619,7 +619,7 @@ $n + m\tau'$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 39 (`jis-2025-25.1.5-lem-39`).
 
-Stated but not proved: `MetaMathlibExt.golden_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#golden-eigenvector-iff).
+Stated but not proved: `MetaMathlibExt.golden_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#golden-eigenvector-iff).
 
 ## Integer matrices with a Pisa eigenvector
 
@@ -640,7 +640,7 @@ $\tau_{1,2} = 2$ and $M (2, 1)^T = (0, 3)^T$ is not a multiple of $(2, 1)^T$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 63 (`jis-2025-25.1.5-thm-63`).
 
-Stated but not proved: `MetaMathlibExt.pisa_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-eigenvector-iff).
+Stated but not proved: `MetaMathlibExt.pisa_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-eigenvector-iff).
 
 ## Integer matrices with a metallic-mean eigenvector
 
@@ -655,7 +655,7 @@ of $M$ are $n + m\tau_k$ and $n + m\tau_k'$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 66 (`jis-2025-25.1.5-lem-66`).
 
-Stated but not proved: `MetaMathlibExt.metallic_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 599](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L599). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#metallic-eigenvector-iff).
+Stated but not proved: `MetaMathlibExt.metallic_eigenvector_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 599](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L599). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#metallic-eigenvector-iff).
 
 ## Position differences in the Fibonacci word
 
@@ -674,7 +674,7 @@ $a$. The codings above are the ones derived in the paper's proof.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 38 (`jis-2025-25.1.5-thm-38`).
 
-Stated but not proved: `MetaMathlibExt.fibonacciWord_letterPosition_diff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-word-letter-position-diff).
+Stated but not proved: `MetaMathlibExt.fibonacciWord_letterPosition_diff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-word-letter-position-diff).
 
 ## Relative position of the deleted Fibonacci word
 
@@ -689,7 +689,7 @@ $n \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 43 (`jis-2025-25.1.5-thm-43`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_deletion_fibonacciWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-deletion-fibonacci-wor).
+Stated but not proved: `MetaMathlibExt.relativePosition_deletion_fibonacciWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-deletion-fibonacci-wor).
 
 ## Relative position of iterated deletions of the Fibonacci word
 
@@ -705,7 +705,7 @@ $r_{D^k(f)}(n) = n + k$ for all $n > N$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 44 (`jis-2025-25.1.5-thm-44`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_deletion_iterate_fibonacciWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-deletion-iterate-fibon).
+Stated but not proved: `MetaMathlibExt.relativePosition_deletion_iterate_fibonacciWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-deletion-iterate-fibon).
 
 ## The Fibonacci switch
 
@@ -721,7 +721,7 @@ supertile $aba$ by $aab$ and keeping each $ab$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 45 (`jis-2025-25.1.5-thm-45`).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_switch` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-switch).
+Stated but not proved: `MetaMathlibExt.fibonacci_switch` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-switch).
 
 ## Gap codings single out the Fibonacci word among words starting with $a$
 
@@ -745,7 +745,7 @@ for every such $w$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 46 (`jis-2025-25.1.5-thm-46`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_diff_codings_iff_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-codings-iff-fibonac).
+Stated but not proved: `MetaMathlibExt.letterPosition_diff_codings_iff_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-codings-iff-fibonac).
 
 ## Gap codings single out the reflected Fibonacci word among words starting with $b$
 
@@ -769,7 +769,7 @@ and $\Delta p_b$ are constant, so they are not injective codings.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 48 (`jis-2025-25.1.5-cor-48`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_diff_codings_iff_fibonacci_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-codings-iff-fibonac-2).
+Stated but not proved: `MetaMathlibExt.letterPosition_diff_codings_iff_fibonacci_reflect` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-codings-iff-fibonac-2).
 
 ## The Fibonacci word and its reflection are the words isomorphic to their gap sequences
 
@@ -790,7 +790,7 @@ The paper's word "aperiodic" is dropped, as in Theorem 46 and Corollary 48.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 49 (`jis-2025-25.1.5-cor-49`).
 
-Stated but not proved: `MetaMathlibExt.letterPosition_diff_isomorphic_iff_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 703](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L703). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-isomorphic-iff-fibo).
+Stated but not proved: `MetaMathlibExt.letterPosition_diff_isomorphic_iff_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 703](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L703). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#letter-position-diff-isomorphic-iff-fibo).
 
 ## Fibonacci and iccanobiF iterates of a
 
@@ -805,7 +805,7 @@ $ba\,\varrho_F^{2n-1}(a) = (\varrho_F')^{2n-1}(a)\,ab$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 51 (`jis-2025-25.1.5-prop-51`).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_iccanobiF_conjugate_a` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 717](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L717). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-iccanobi-f-conjugate-a).
+Stated but not proved: `MetaMathlibExt.fibonacci_iccanobiF_conjugate_a` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 717](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L717). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-iccanobi-f-conjugate-a).
 
 ## Conjugacy of the Fibonacci and iccanobiF iterates of $b$
 
@@ -824,7 +824,7 @@ and $ba\,\varrho_F^{2n}(b) = (\varrho_F')^{2n}(b)\,ab$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 52 (`jis-2025-25.1.5-prop-52`).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_iccanobiF_conjugate_b` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 732](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L732). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-iccanobi-f-conjugate-b).
+Stated but not proved: `MetaMathlibExt.fibonacci_iccanobiF_conjugate_b` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 732](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L732). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#fibonacci-iccanobi-f-conjugate-b).
 
 ## The iccanobiF iterates approximate $abf$ and $baf$
 
@@ -841,7 +841,7 @@ $r_{abf}(1) = 1$, $r_{baf}(1) = -1$ and $r_{abf}(n) = r_{baf}(n) = n - 1$ for ev
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 53 (`jis-2025-25.1.5-thm-53`).
 
-Stated but not proved: `MetaMathlibExt.iccanobiF_fixed_points` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#iccanobi-f-fixed-points).
+Stated but not proved: `MetaMathlibExt.iccanobiF_fixed_points` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#iccanobi-f-fixed-points).
 
 ## Relative positions of the Fibonacci word with an equilibrious word prepended
 
@@ -856,7 +856,7 @@ $1 \le n \le j$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 55 (`jis-2025-25.1.5-thm-55`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_prepend_equilibrious_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-prepend-equilibrious-f).
+Stated but not proved: `MetaMathlibExt.relativePosition_prepend_equilibrious_fibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-prepend-equilibrious-f).
 
 ## Position identities for the extended Pisa substitution
 
@@ -880,7 +880,7 @@ and whose functions $r$ and $p_a$ satisfy the second identity for all $n \ge 1$ 
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 57 (`jis-2025-25.1.5-thm-57`).
 
-Stated but not proved: `MetaMathlibExt.pisa_letterPosition_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-letter-position-identity).
+Stated but not proved: `MetaMathlibExt.pisa_letterPosition_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-letter-position-identity).
 
 ## Relative position of the extended Pisa fixed point via the positions of $b$
 
@@ -897,7 +897,7 @@ $$r(n) = \frac{m - 1}{m}\,p_b(n) + \frac{k + l + 1 - m}{m}\,n + \frac{m - l - 1}
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 58 (`jis-2025-25.1.5-cor-58`).
 
-Stated but not proved: `MetaMathlibExt.pisa_relativePosition_of_letterPosition_b` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-relative-position-of-letter-positio).
+Stated but not proved: `MetaMathlibExt.pisa_relativePosition_of_letterPosition_b` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-relative-position-of-letter-positio).
 
 ## Letter frequencies and mean positions of primitive fixed points
 
@@ -921,7 +921,7 @@ $(u, 1)^T$ is a right Perron–Frobenius eigenvector of $M$ and $\lambda$ is its
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 32 (`jis-2025-25.1.5-lem-32`).
 
-Stated but not proved: `MetaMathlibExt.primitive_fixed_point_mean_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-fixed-point-mean-values).
+Stated but not proved: `MetaMathlibExt.primitive_fixed_point_mean_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-fixed-point-mean-values).
 
 ## Relative position asymptotic to $n$ and the golden ratio
 
@@ -942,7 +942,7 @@ eigenvector of $M$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Lemma 41 (`jis-2025-25.1.5-lem-41`).
 
-Stated but not proved: `MetaMathlibExt.primitive_relativePosition_div_tendsto_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-relative-position-div-tendsto).
+Stated but not proved: `MetaMathlibExt.primitive_relativePosition_div_tendsto_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-relative-position-div-tendsto).
 
 ## Frequency and position criteria for an eigenvector of a primitive substitution
 
@@ -972,7 +972,7 @@ $\tau = j + 1 = m$, so (i) and (ii) read $0/0$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 62 (`jis-2025-25.1.5-prop-62`).
 
-Stated but not proved: `MetaMathlibExt.pisa_frequency_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 865](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L865). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-frequency-tfae).
+Stated but not proved: `MetaMathlibExt.pisa_frequency_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 865](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L865). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#pisa-frequency-tfae).
 
 ## Words with linear relative position function
 
@@ -993,7 +993,7 @@ The paper writes $k \ge 0$ in (c), but $\sigma_{1,k-1,1}$ needs $k \ge 1$.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 64 (`jis-2025-25.1.5-thm-64`).
 
-Stated but not proved: `MetaMathlibExt.linear_relativePosition_examples` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#linear-relative-position-examples).
+Stated but not proved: `MetaMathlibExt.linear_relativePosition_examples` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#linear-relative-position-examples).
 
 ## Eventually linear relative position functions with positive slope
 
@@ -1020,7 +1020,7 @@ the range $0 \le c \le k - 1$ is then empty.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 65 (`jis-2025-25.1.5-prop-65`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_eventually_eq_linear` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 920](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L920). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-eventually-eq-linear).
+Stated but not proved: `MetaMathlibExt.relativePosition_eventually_eq_linear` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 920](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L920). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-eventually-eq-linear).
 
 ## Primitive substitutions with asymptotically linear relative position
 
@@ -1046,7 +1046,7 @@ being its right Perron–Frobenius eigenvector.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 67 (`jis-2025-25.1.5-thm-67`).
 
-Stated but not proved: `MetaMathlibExt.primitive_asymptotically_linear_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 942](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-asymptotically-linear-classifi).
+Stated but not proved: `MetaMathlibExt.primitive_asymptotically_linear_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 942](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L942). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#primitive-asymptotically-linear-classifi).
 
 ## Relative positions of a word made of $ab$ and $ba$ blocks
 
@@ -1063,7 +1063,7 @@ $w$ is needed.
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Proposition 69 (`jis-2025-25.1.5-prop-69`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_of_dimers` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 980](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L980). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-of-dimers).
+Stated but not proved: `MetaMathlibExt.relativePosition_of_dimers` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 980](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L980). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-of-dimers).
 
 ## Characterization of the Thue–Morse word by its relative positions
 
@@ -1078,7 +1078,7 @@ $a$ and $1$ as $b$).
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 70 (`jis-2025-25.1.5-thm-70`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_self_coding_iff_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 990](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L990). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-self-coding-iff-thue-m).
+Stated but not proved: `MetaMathlibExt.relativePosition_self_coding_iff_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 990](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L990). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-self-coding-iff-thue-m).
 
 ## Characterization of the Thue–Morse word among words starting with $abba$
 
@@ -1093,7 +1093,7 @@ sequence with $0$ read as $a$ and $1$ as $b$).
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Corollary 71 (`jis-2025-25.1.5-cor-71`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_isomorphic_iff_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-isomorphic-iff-thue-mo).
+Stated but not proved: `MetaMathlibExt.relativePosition_isomorphic_iff_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-isomorphic-iff-thue-mo).
 
 ## Characterization of the cloned Thue–Morse words by their relative positions
 
@@ -1109,7 +1109,7 @@ sequence with $0$ read as $a$ and $1$ as $b$).
 
 - Michael Coons, Christopher Ramsey and Nicolae Strungaru, *Relative Position in Binary Substitutions*, Journal of Integer Sequences 28 (2025), Article 25.1.5, Theorem 72 (`jis-2025-25.1.5-thm-72`).
 
-Stated but not proved: `MetaMathlibExt.relativePosition_self_coding_iff_clone_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 1012](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L1012). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-self-coding-iff-clone).
+Stated but not proved: `MetaMathlibExt.relativePosition_self_coding_iff_clone_thueMorse` is written with `theorem_wanted` in [WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean, line 1012](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RelativePositionBinaryWordsWanted.lean#L1012). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html#relative-position-self-coding-iff-clone).
 
 ## Depends on
 
@@ -1118,4 +1118,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Relative position in binary words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/relative-position-in-binary-words)

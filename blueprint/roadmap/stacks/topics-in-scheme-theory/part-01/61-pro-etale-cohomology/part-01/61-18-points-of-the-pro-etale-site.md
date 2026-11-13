@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.18 Points of the pro-étale site
 
-Section 61.18 of the Stacks Project, [Tag 0991](https://stacks.math.columbia.edu/tag/0991). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.18 of the Stacks Project, [Tag 0991](https://stacks.math.columbia.edu/tag/0991). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0992, a lemma
 
 [Tag 0992](https://stacks.math.columbia.edu/tag/0992) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.proetale_hasEnoughPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughPoints.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughPoints.lean#L530).
+**`AlgebraicGeometry.ProEtale.proetale_hasEnoughPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughPoints.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughPoints.lean#L530).
 
 > **Stacks 0992.** The pro-étale sites of schemes, the small pro-étale site of a scheme, the
 > big pro-étale site over it, the affine objects of the small site and the affine objects of the
@@ -35,7 +35,7 @@ public theorem proetale_hasEnoughPoints
 
 [Tag 0F6C](https://stacks.math.columbia.edu/tag/0F6C) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_geometricPoint_lift_of_proetaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/GeometricPoints.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/GeometricPoints.lean#L115).
+**`AlgebraicGeometry.ProEtale.exists_geometricPoint_lift_of_proetaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/GeometricPoints.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/GeometricPoints.lean#L115).
 
 > A geometric point of a scheme lifts to a member of any pro-étale covering family.
 
@@ -52,7 +52,7 @@ theorem exists_geometricPoint_lift_of_proetaleCover
 
 [Tag 0993](https://stacks.math.columbia.edu/tag/0993) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricPointToStrictHenselization_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L222). The attribute's comment: “the canonical geometric point”.
+**`AlgebraicGeometry.geometricPointToStrictHenselization_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L222). The attribute's comment: “the canonical geometric point”.
 
 > **Stacks Project, Tag 0993.** The canonical lift of a geometric point to its strict
 > henselization lies over that geometric point, so the strict henselization is a pro-étale
@@ -64,7 +64,7 @@ public theorem geometricPointToStrictHenselization_comp :
       s.hom
 ```
 
-**`AlgebraicGeometry.weaklyEtale_strictHenselizationToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L262). The attribute's comment: “the pro-étale object”.
+**`AlgebraicGeometry.weaklyEtale_strictHenselizationToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L262). The attribute's comment: “the pro-étale object”.
 
 > **Stacks Project, Tag 0993.** The canonical morphism from the strict henselization of `S` at
 > a geometric point `s` is weakly étale, so the strict henselization is an object of the small
@@ -76,7 +76,7 @@ theorem weaklyEtale_strictHenselizationToBase :
     WeaklyEtale (strictHenselizationToBase B S hS s)
 ```
 
-**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L336). The attribute's comment: “the stalk comparison”.
+**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L337). The attribute's comment: “the stalk comparison”.
 
 > **Stacks Project, Tag 0993.** Sections of a presheaf on the small pro-étale site over the
 > strict henselization at a geometric point are canonically the stalk of the presheaf at that
@@ -87,7 +87,7 @@ def strictHenselizationSectionsEquivStalk (F : (S.ProEt)ᵒᵖ ⥤ Type (max (u 
     F.obj (op (strictHenselizationProEt B S hS s)) ≃ proetaleStalk S s F
 ```
 
-**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L350). The attribute's comment: “the canonical stalk comparison”.
+**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L351). The attribute's comment: “the canonical stalk comparison”.
 
 > **Stacks Project, Tag 0993.** The comparison of sections over the strict henselization with
 > the stalk is the colimit insertion at the canonical pro-étale neighbourhood; this is what makes
@@ -103,7 +103,7 @@ theorem strictHenselizationSectionsEquivStalk_apply
         (strictHenselizationPoint B S hS s))) x
 ```
 
-**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L362). The attribute's comment: “functoriality of the stalk comparison”.
+**`AlgebraicGeometry.strictHenselizationSectionsEquivStalk_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/GeometricPointStalk.lean#L363). The attribute's comment: “functoriality of the stalk comparison”.
 
 > **Stacks Project, Tag 0993.** The comparison of sections over the strict henselization with
 > the stalk is functorial in the presheaf.
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.18, Tag 0991](https://stacks.math.columbia.edu/tag/0991)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

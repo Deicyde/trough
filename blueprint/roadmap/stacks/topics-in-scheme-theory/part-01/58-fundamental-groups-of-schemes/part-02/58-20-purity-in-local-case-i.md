@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.20 Purity in local case, I
 
-Section 58.20 of the Stacks Project, [Tag 0BM7](https://stacks.math.columbia.edu/tag/0BM7). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.20 of the Stacks Project, [Tag 0BM7](https://stacks.math.columbia.edu/tag/0BM7). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BM8, a lemma
 
 [Tag 0BM8](https://stacks.math.columbia.edu/tag/0BM8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iso_spec_sections_punctured_spectrum`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/Basic.lean#L134).
+**`AlgebraicGeometry.exists_iso_spec_sections_punctured_spectrum`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/Basic.lean#L134).
 
 > **Stacks Project, Tag 0BM8.** A scheme finite over the spectrum of a Noetherian local ring,
 > whose local rings at closed points all have depth at least two, is canonically the spectrum of
@@ -39,7 +39,7 @@ lemma exists_iso_spec_sections_punctured_spectrum
 
 [Tag 0BLK](https://stacks.math.columbia.edu/tag/0BLK) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtale_extension_iff_globalSections_finiteEtale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/GlobalSectionsCriterion.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/GlobalSectionsCriterion.lean#L274).
+**`AlgebraicGeometry.exists_finiteEtale_extension_iff_globalSections_finiteEtale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/GlobalSectionsCriterion.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/GlobalSectionsCriterion.lean#L274).
 
 > **Stacks Project, Tag 0BLK.** For a Noetherian local ring of depth at least two, a finite
 > étale scheme over the punctured spectrum extends to a finite étale scheme over the whole
@@ -63,7 +63,7 @@ lemma exists_finiteEtale_extension_iff_globalSections_finiteEtale
 
 [Tag 0BM9](https://stacks.math.columbia.edu/tag/0BM9) in the Stacks Project.
 
-**`AlgebraicGeometry.NormalPurity.globalSections_isEquivalence_normalFiniteEtaleAwayAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean#L992). The attribute's comment: “the equivalence”.
+**`AlgebraicGeometry.NormalPurity.globalSections_isEquivalence_normalFiniteEtaleAwayAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean, line 992](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean#L992). The attribute's comment: “the equivalence”.
 
 > **Stacks Project, Tag 0BM9.** On a Noetherian normal local ring of dimension at least two,
 > global sections give an equivalence from the opposite of the category of finite étale covers of
@@ -80,7 +80,7 @@ public theorem globalSections_isEquivalence_normalFiniteEtaleAwayAlgebra
         (F ⋙ ObjectProperty.ι _ ≅ globalSections A)
 ```
 
-**`AlgebraicGeometry.NormalPurity.exists_finiteEtale_extension_iff_globalSections_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean#L1019). The attribute's comment: “the extension criterion”.
+**`AlgebraicGeometry.NormalPurity.exists_finiteEtale_extension_iff_globalSections_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NormalEquivalence.lean#L1019). The attribute's comment: “the extension criterion”.
 
 > **Stacks Project, Tag 0BM9.** A finite étale cover of the punctured spectrum extends to a
 > finite étale cover of the whole spectrum exactly when its ring of global sections is finite
@@ -104,7 +104,7 @@ public theorem exists_finiteEtale_extension_iff_globalSections_finiteEtale
 
 [Tag 0BLL](https://stacks.math.columbia.edu/tag/0BLL) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtale_extension_iff_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompletionCriterion.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompletionCriterion.lean#L50).
+**`AlgebraicGeometry.exists_finiteEtale_extension_iff_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompletionCriterion.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompletionCriterion.lean#L50).
 
 > **Stacks Project, Tag 0BLL.** A finite étale cover of the punctured spectrum of a
 > Noetherian local ring extends over the spectrum exactly when its base change to the adic
@@ -137,7 +137,7 @@ lemma exists_finiteEtale_extension_iff_completion
 
 [Tag 0EK6](https://stacks.math.columbia.edu/tag/0EK6) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L243).
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L243).
 
 > **[Stacks, Tag 0EK6].** In the local Lefschetz situation (Tag 0BLF) let `V` be finite étale
 > over `U`. Assume
@@ -196,7 +196,7 @@ public theorem exists_finiteEtale_extension_of_dualizingComplex
 
 [Tag 0BLS](https://stacks.math.columbia.edu/tag/0BLS) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_localCohomology_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L288).
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_localCohomology_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L289). The attribute's comment: “Hⁱ\_𝔪(A) is local cohomology in the coreflection model of Stacks 0A6Q; V₀ = Y₀ ×\_\{X₀} U₀ and V = Y ×\_X U are recorded as cartesian squares”.
 
 > **[Stacks, Tag 0BLS].** In the local Lefschetz situation let `V` be finite étale over `U` and
 > assume (1) `H¹_𝔪(A)` and `H²_𝔪(A)` are annihilated by a power of `f`, and (2) `V ×_U U₀` is
@@ -233,7 +233,7 @@ public theorem exists_finiteEtale_extension_of_localCohomology_annihilated
 
 [Tag 0BLM](https://stacks.math.columbia.edu/tag/0BLM) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_three_le_depth_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L317).
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_three_le_depth_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/ExtensionFromHypersurface.lean#L318).
 
 > **[Stacks, Tag 0BLM].** In the local Lefschetz situation let `V` be finite étale over `U` and
 > assume (1) `A` has depth at least `3`, and (2) `V ×_U U₀` is `Y₀ ×_{X₀} U₀` for some `Y₀ → X₀`
@@ -256,7 +256,7 @@ public theorem exists_finiteEtale_extension_of_three_le_depth_self
       IsFinite p ∧ Etale p ∧ IsPullback pi g S.UOpen.ι p
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_three_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThree.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThree.lean#L178). The attribute's comment: “the unrestricted Stacks 0BLS is carried as a named general hypothesis”.
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_extension_of_three_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThree.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThree.lean#L178). The attribute's comment: “the unrestricted Stacks 0BLS is carried as a named general hypothesis”.
 
 > **[Stacks, Tag 0BLM]** In the local Lefschetz situation let `V` be finite étale over `U` and
 > assume (1) `A` has depth at least `3`, and (2) `V ×_U U₀` is `Y₀ ×_{X₀} U₀` for some
@@ -299,7 +299,7 @@ public theorem exists_finiteEtale_extension_of_three_le_depth
       IsFinite p ∧ Etale p ∧ IsPullback pi g S.UOpen.ι p
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_lift_of_three_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThreeCompletion.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThreeCompletion.lean#L65).
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_finiteEtale_lift_of_three_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThreeCompletion.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LiftFromDepthThreeCompletion.lean#L65).
 
 > **[Stacks, Tag 0BLM]** In the local Lefschetz situation let `V` be finite étale over `U`
 > and assume (1) `A` has depth at least `3`, and (2) `V ×_U U₀` is `Y₀ ×_{X₀} U₀` for some
@@ -328,4 +328,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.20, Tag 0BM7](https://stacks.math.columbia.edu/tag/0BM7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

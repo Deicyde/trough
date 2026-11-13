@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.25 Points of finite type
 
-Section 67.25 of the Stacks Project, [Tag 06EE](https://stacks.math.columbia.edu/tag/06EE). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.25 of the Stacks Project, [Tag 06EE](https://stacks.math.columbia.edu/tag/06EE). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06EF, a lemma
 
 [Tag 06EF](https://stacks.math.columbia.edu/tag/06EF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L396).
+**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L397).
 
 > **Stacks 06EF**, and the assertion of **Stacks 06EH** for arbitrary scheme charts. A point
 > of an algebraic space over `S` is a finite type point exactly when it is the image of a closed
@@ -36,7 +36,7 @@ theorem isFiniteTypePoint_iff_exists_isClosed_etaleChart
 
 [Tag 06EG](https://stacks.math.columbia.edu/tag/06EG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L190). The attribute's comment: “finite type point”.
+**`AlgebraicGeometry.Space.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L191). The attribute's comment: “finite type point”.
 
 > **Stacks 06EG.** A point of an algebraic space over `S` is a *finite type point* when some
 > field-valued point representing it has a morphism to the space which is locally of finite
@@ -46,7 +46,7 @@ theorem isFiniteTypePoint_iff_exists_isClosed_etaleChart
 abbrev IsFiniteTypePoint (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L197). The attribute's comment: “set of finite type points”.
+**`AlgebraicGeometry.Space.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L198). The attribute's comment: “set of finite type points”.
 
 > **Stacks 06EG.** The set `X_{ft-pts}` of finite type points of an algebraic space
 > over `S`.
@@ -59,7 +59,7 @@ abbrev finiteTypePoints (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Set (point
 
 [Tag 06EH](https://stacks.math.columbia.edu/tag/06EH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L396). The attribute's comment: “all scheme charts”.
+**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L397). The attribute's comment: “all scheme charts”.
 
 > **Stacks 06EF**, and the assertion of **Stacks 06EH** for arbitrary scheme charts. A point
 > of an algebraic space over `S` is a finite type point exactly when it is the image of a closed
@@ -77,7 +77,7 @@ theorem isFiniteTypePoint_iff_exists_isClosed_etaleChart
           pointsMap B S hS (yoneda.obj U) φ (p.class B S hS (yoneda.obj U)) = x
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isAffine_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L416). The attribute's comment: “affine scheme charts”.
+**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_exists_isAffine_isClosed_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L417). The attribute's comment: “affine scheme charts”.
 
 > **Stacks 06EH**, the assertion for affine scheme charts. A point of an algebraic space
 > over `S` is a finite type point exactly when it is the image of a closed point of an affine
@@ -99,7 +99,7 @@ theorem isFiniteTypePoint_iff_exists_isAffine_isClosed_etaleChart
 
 [Tag 06EI](https://stacks.math.columbia.edu/tag/06EI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mapsTo_finiteTypePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L283).
+**`AlgebraicGeometry.Space.mapsTo_finiteTypePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L284).
 
 > A locally finite type morphism of algebraic spaces over `S` carries finite type points to
 > finite type points. This is the algebraic-space counterpart of Stacks 02J3, and is the easy
@@ -117,7 +117,7 @@ theorem mapsTo_finiteTypePoints {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f
 
 [Tag 06EJ](https://stacks.math.columbia.edu/tag/06EJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.image_finiteTypePoints_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L494).
+**`AlgebraicGeometry.Space.image_finiteTypePoints_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L495).
 
 > **Stacks 06EJ.** A surjective morphism of algebraic spaces over `S` which is locally of
 > finite type maps the finite type points of its source onto the finite type points of its
@@ -140,7 +140,7 @@ theorem image_finiteTypePoints_eq {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} 
 
 [Tag 06EK](https://stacks.math.columbia.edu/tag/06EK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.inter_finiteTypePoints_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L443). The attribute's comment: “locally closed subsets”.
+**`AlgebraicGeometry.Space.inter_finiteTypePoints_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L444). The attribute's comment: “locally closed subsets”.
 
 > **Stacks 06EK**, locally closed subsets. A nonempty locally closed set of points of an
 > algebraic space over `S` contains a finite type point.
@@ -157,7 +157,7 @@ theorem inter_finiteTypePoints_nonempty (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type
     (T ∩ finiteTypePoints B S hS X).Nonempty
 ```
 
-**`AlgebraicGeometry.Space.closure_inter_finiteTypePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L472). The attribute's comment: “closed subsets”.
+**`AlgebraicGeometry.Space.closure_inter_finiteTypePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L473). The attribute's comment: “closed subsets”.
 
 > **Stacks 06EK**, closed subsets. The finite type points lying in a closed set of points of
 > an algebraic space over `S` are dense in it.
@@ -172,7 +172,7 @@ theorem closure_inter_finiteTypePoints (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 06EL](https://stacks.math.columbia.edu/tag/06EL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypePoint_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePointTfae.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePointTfae.lean#L78).
+**`AlgebraicGeometry.Space.isFiniteTypePoint_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePointTfae.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePointTfae.lean#L78).
 
 > Let `S` be a scheme, let `X` be an algebraic space over `S` and let `x` be a point of
 > `X`. The following are equivalent:
@@ -213,4 +213,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.25, Tag 06EE](https://stacks.math.columbia.edu/tag/06EE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

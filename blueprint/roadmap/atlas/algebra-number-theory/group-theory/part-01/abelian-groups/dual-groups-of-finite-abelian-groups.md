@@ -8,7 +8,7 @@ proof: formalized
 
 # Dual groups of finite abelian groups
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html).
 
 ## A finite abelian group is isomorphic to its dual group
 
@@ -26,7 +26,7 @@ case, then products of cyclic groups.
 
 - K. Conrad, Characters of finite abelian groups, https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf, Theorem 3.13.
 
-Formalized by `MathlibExt.GroupTheory.FiniteAbelianDualWanted.finite_abelian_dual_iso`, a theorem declared in [MathlibExt/GroupTheory/FiniteAbelianDual.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/FiniteAbelianDual.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html#finite-abelian-dual-iso).
+Formalized by `MathlibExt.GroupTheory.FiniteAbelianDualWanted.finite_abelian_dual_iso`, a theorem declared in [MathlibExt/GroupTheory/FiniteAbelianDual.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/FiniteAbelianDual.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html#finite-abelian-dual-iso).
 
 ## Characters of a product of abelian groups
 
@@ -45,7 +45,7 @@ inverse removes the finiteness assumption.
 
 - K. Conrad, Characters of finite abelian groups, https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf, Lemma 3.12.
 
-Formalized by `MathlibExt.GroupTheory.FiniteAbelianDualWanted.dual_prod`, a theorem declared in [MathlibExt/GroupTheory/FiniteAbelianDual.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/FiniteAbelianDual.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html#dual-prod).
+Formalized by `MathlibExt.GroupTheory.FiniteAbelianDualWanted.dual_prod`, a theorem declared in [MathlibExt/GroupTheory/FiniteAbelianDual.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/FiniteAbelianDual.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html#dual-prod).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dual groups of finite abelian groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/abelian-groups/dual-groups-of-finite-abelian-groups)

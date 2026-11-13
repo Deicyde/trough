@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.27 Relative dualizing complexes
 
-Section 47.27 of the Stacks Project, [Tag 0E2B](https://stacks.math.columbia.edu/tag/0E2B). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.27 of the Stacks Project, [Tag 0E2B](https://stacks.math.columbia.edu/tag/0E2B). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E2C, a definition
 
 [Tag 0E2C](https://stacks.math.columbia.edu/tag/0E2C) in the Stacks Project.
 
-**`Dualizing.IsRelativeDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Relative.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Relative.lean#L152).
+**`Dualizing.IsRelativeDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Relative.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Relative.lean#L152).
 
 > **Stacks Project, Tag 0E2C.** A relative dualizing complex for a flat, finitely
 > presented map `R → A` is an `R`-perfect object `K` of `D(A)` such that
@@ -30,7 +30,7 @@ structure IsRelativeDualizingComplex (R A : Type u) [CommRing R] [CommRing A]
 
 [Tag 0E2D](https://stacks.math.columbia.edu/tag/0E2D) in the Stacks Project.
 
-**`Dualizing.IsRelativeDualizingComplex.nonempty_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeUniquenessTensor.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeUniquenessTensor.lean#L41).
+**`Dualizing.IsRelativeDualizingComplex.nonempty_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeUniquenessTensor.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeUniquenessTensor.lean#L41).
 
 > Let `R → A` be a flat ring map of finite presentation. Any two relative dualizing complexes
 > for `R → A` are isomorphic.
@@ -47,7 +47,7 @@ theorem IsRelativeDualizingComplex.nonempty_iso {R A : Type u} [CommRing R] [Com
 
 [Tag 0E2E](https://stacks.math.columbia.edu/tag/0E2E) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingDiagonal.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingDiagonal.lean#L370).
+**`Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingDiagonal.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingDiagonal.lean#L362).
 
 > **Stacks Project, Tag 0E2E.**  Let `φ : R → A` be a flat homomorphism of finite type of
 > Noetherian rings.  Then the relative dualizing complex `ω^•_{A/R} = φ^!(R)` is a relative
@@ -78,7 +78,7 @@ theorem relativeDualizingComplex_isRelativeDualizingComplex
 
 [Tag 0E2F](https://stacks.math.columbia.edu/tag/0E2F) in the Stacks Project.
 
-**`Dualizing.exists_isRelativeDualizingComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L206). The attribute's comment: “(1)”.
+**`Dualizing.exists_isRelativeDualizingComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L202). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 0E2F (1).** A flat ring map of finite presentation `R → A` admits a
 > relative dualizing complex.
@@ -93,7 +93,7 @@ theorem exists_isRelativeDualizingComplex_of_flat (R A : Type u) [CommRing R] [C
     ∃ K : DerivedCategory (ModuleCat.{u} A), IsRelativeDualizingComplex R A K
 ```
 
-**`Dualizing.IsRelativeDualizingComplex.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L215). The attribute's comment: “(2)”.
+**`Dualizing.IsRelativeDualizingComplex.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L211). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0E2F (2).** Let `R → A` be a flat ring map of finite presentation, `K`
 > a relative dualizing complex for `R → A` and `R → R'` any ring map. Then
@@ -112,7 +112,7 @@ theorem IsRelativeDualizingComplex.baseChange {R A : Type u} [CommRing R] [CommR
         (Algebra.TensorProduct.includeLeftRingHom : A →+* A ⊗[R] R')).functor.obj K)
 ```
 
-**`Dualizing.IsRelativeDualizingComplex.span_derivedBaseChange_diagonalGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L235). The attribute's comment: “moreover clause”.
+**`Dualizing.IsRelativeDualizingComplex.span_derivedBaseChange_diagonalGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeExistenceInputs.lean#L231). The attribute's comment: “moreover clause”.
 
 > **Stacks Project, Tag 0E2F, the "moreover" clause.** Let `R → A` be flat of finite
 > presentation, `K` a relative dualizing complex for `R → A`, and `ξ : A ⟶ K ⊗ᴸ_A (A ⊗_R A)` a
@@ -148,7 +148,7 @@ theorem IsRelativeDualizingComplex.span_derivedBaseChange_diagonalGenerator {R A
 
 [Tag 0E2G](https://stacks.math.columbia.edu/tag/0E2G) in the Stacks Project.
 
-**`Dualizing.isIso_relativeHomothety_of_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeHomothetyGeneral.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeHomothetyGeneral.lean#L241).
+**`Dualizing.isIso_relativeHomothety_of_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeHomothetyGeneral.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeHomothetyGeneral.lean#L241).
 
 > **Stacks Project, Tag 0E2G.**  Let `R → A` be a flat ring map of finite presentation and let
 > `K` be a relative dualizing complex for `R → A` ([stacks 0E2C]).  Then the canonical map
@@ -173,7 +173,7 @@ theorem isIso_relativeHomothety_of_isRelativeDualizingComplex
 
 [Tag 0E2H](https://stacks.math.columbia.edu/tag/0E2H) in the Stacks Project.
 
-**`Dualizing.isRelativeDualizingComplex_derivedTensorProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeCompositionTag.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeCompositionTag.lean#L175).
+**`Dualizing.isRelativeDualizingComplex_derivedTensorProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeCompositionTag.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeCompositionTag.lean#L176).
 
 > **Stacks 0E2H.**  Let `R → A → B` be ring maps which are flat and of finite presentation,
 > let `K_{A/R}` be a relative dualizing complex for `R → A` and `K_{B/A}` one for `A → B`.  Then
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.27, Tag 0E2B](https://stacks.math.columbia.edu/tag/0E2B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

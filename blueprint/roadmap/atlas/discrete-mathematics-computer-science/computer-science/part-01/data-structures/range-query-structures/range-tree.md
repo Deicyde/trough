@@ -8,7 +8,7 @@ proof: formalized
 
 # Range tree
 
-29 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html).
+29 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html).
 
 ## Range Tree
 
@@ -20,7 +20,7 @@ right subtree. The integers $l$ and $h$ are meant to cache the interval $[l, h]$
 leaf values of the node's subtree; the type does not enforce this, the bounds-correctness
 predicate does.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#range-tree).
+Formalized by `Cslib.Algorithms.Lean.RangeTree`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#range-tree).
 
 ## Leaf traversal of a range tree with an accumulator
 
@@ -32,14 +32,14 @@ is a node with left subtree $L$ and right subtree $R$.
 Equivalently, $\operatorname{aux}(t, a)$ is the leaf list of $t$ followed by $a$, so the leaf list
 is computed in linear time rather than by repeatedly appending left leaf lists.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.toListAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-aux).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.toListAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-aux).
 
 ## Leaf list of a range tree
 
 The leaf list of a range tree $t$ is the list of the integers
 stored at its leaves, read from left to right and with repetitions.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.toList`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.toList`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list).
 
 ## Range-tree leaf traversal appends to its accumulator
 
@@ -47,7 +47,7 @@ For every range tree $t$ and every
 list $a$ of integers, the accumulator leaf traversal of $t$ started from $a$ equals the leaf list
 of $t$ followed by $a$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.toListAux_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-aux-eq).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.toListAux_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-aux-eq).
 
 ## Leaf list of a range-tree node
 
@@ -55,21 +55,21 @@ For all integers $lo$, $hi$ and range trees $L$, $R$, the
 leaf list of the node with stored bounds $lo$, $hi$, left subtree $L$ and right subtree $R$ is
 the leaf list of $L$ followed by the leaf list of $R$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.toList_node`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-node).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.toList_node`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-node).
 
 ## Number of leaves of a range tree
 
 The size of a range tree is its number of leaves: $0$ for
 the empty tree, $1$ for a leaf, and the sum of the sizes of the two children for a node.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.size`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#size).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.size`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#size).
 
 ## Length of the leaf list of a range tree
 
 For every range tree $t$, the list of leaf values
 of $t$ read from left to right has length equal to the number of leaves of $t$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.length_toList`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#length-to-list).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.length_toList`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#length-to-list).
 
 ## Cached lower bound of a range tree
 
@@ -81,7 +81,7 @@ The value $0$ for the empty tree is a sentinel without meaning. Computing
 $\operatorname{tmin}(t)$ takes constant time: it reads the bound cached at the root and does not
 traverse the tree.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.tmin`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#tmin).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.tmin`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#tmin).
 
 ## Cached upper bound of a range tree
 
@@ -91,7 +91,7 @@ $hi$ if $t$ is a node with stored bounds $lo$, $hi$ and two subtrees.
 
 The value $0$ for the empty tree is a sentinel without meaning.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.tmax`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#tmax).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.tmax`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#tmax).
 
 ## Bounds-valid range trees
 
@@ -107,7 +107,7 @@ the node cache would only enclose the leaves (a node over an empty child and the
 could cache $[0, 5]$), not equal their true interval. In a bounds-valid tree every leaf value lies
 in the cached interval, and if the tree has a leaf, both cached bounds are leaf values.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.BoundsOk`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-ok).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.BoundsOk`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-ok).
 
 ## Valid range tree
 
@@ -116,14 +116,14 @@ has two subtrees with nonempty leaf lists, and its stored lower and upper bounds
 of the lower bounds and the maximum of the upper bounds of its two subtrees, recursively) and
 its leaf list is sorted in nondecreasing order.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.Valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#valid).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.Valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#valid).
 
 ## Valid range trees have sorted leaves
 
 If a range tree $t$ is valid, then its list of leaf
 values, read from left to right, is sorted in nondecreasing order.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.Valid.pairwise_toList`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#pairwise-to-list).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.Valid.pairwise_toList`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#pairwise-to-list).
 
 ## Leaf values of a bounds-valid tree lie between the cached bounds
 
@@ -131,7 +131,7 @@ Let $t$ be a
 bounds-valid range tree, and write $t_{\min}$ and $t_{\max}$ for its cached lower and upper
 bounds. Then every leaf value $x$ of $t$ satisfies $t_{\min} \le x \le t_{\max}$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.bounds_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-of-mem).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.bounds_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-of-mem).
 
 ## The cached bounds of a nonempty bounds-valid range tree are leaf values
 
@@ -142,7 +142,7 @@ upper bound of $t$ are both leaf values of $t$.
 Together with the fact that every leaf value lies between the cached bounds, this shows that the
 cached interval is exactly the interval spanned by the leaves, not merely an enclosing one.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.bounds_mem_toList_of_ne_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-mem-to-list-of-ne-nil).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.bounds_mem_toList_of_ne_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-mem-to-list-of-ne-nil).
 
 ## Accumulator range report
 
@@ -157,14 +157,14 @@ starting from $\mathit{acc}$.
 
 The cached bounds make each pruning test constant-time.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.reportAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-aux).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.reportAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-aux).
 
 ## Range report
 
 The range report of a range tree $t$ for integers $a$ and $b$ is the
 accumulator range report of $t$ for $[a, b]$ starting from the empty list.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.report`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.report`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report).
 
 ## Accumulator range report of a bounds-valid range tree
 
@@ -174,7 +174,7 @@ accumulator range report of $t$ for $[a, b]$ starting from $\mathit{acc}$ is the
 values $x$ of $t$ with $a \le x \le b$, in left-to-right order and with repetitions, followed by
 $\mathit{acc}$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.reportAux_eq_filter_append`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-aux-eq-filter-append).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.reportAux_eq_filter_append`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-aux-eq-filter-append).
 
 ## Correctness of the range report
 
@@ -183,7 +183,7 @@ predicate: every node has two subtrees with at least one leaf each and caches th
 greatest leaf value of its subtree. For all integers $a$ and $b$, the range report of $t$ for
 $[a, b]$ equals the list of leaf values $x$ of $t$ with $a \le x \le b$, in left-to-right order.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.report_eq_filter`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-eq-filter).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.report_eq_filter`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-eq-filter).
 
 ## Membership in a range report
 
@@ -192,7 +192,7 @@ predicate: every node has two subtrees with at least one leaf each and caches th
 greatest leaf value of its subtree. For all integers $a$, $b$ and $x$, the value $x$ occurs in the
 range report of $t$ for $[a, b]$ if and only if $x$ is a leaf value of $t$ and $a \le x \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.mem_report_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#mem-report-iff).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.mem_report_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#mem-report-iff).
 
 ## Range count
 
@@ -201,7 +201,7 @@ $[a, b]$ is the length of the range report of $t$ for $[a, b]$.
 
 On a bounds-valid tree this is the number of leaves whose value lies in $[a, b]$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.count`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.count`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count).
 
 ## Range count of a bounds-valid tree
 
@@ -209,7 +209,7 @@ Let $t$ be a bounds-valid range tree and let $a$ and
 $b$ be integers. Then the range count of $t$ over $[a, b]$ equals the number of leaves of $t$
 whose value lies in $[a, b]$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.count_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count-eq).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.count_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count-eq).
 
 ## Building a range tree from a list
 
@@ -223,28 +223,28 @@ $[\min(\ell_{\min}, r_{\min}), \max(\ell_{\max}, r_{\max})]$.
 
 The entries of $L$ are kept in their given order; $L$ is not sorted first.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.build`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.build`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#build).
 
 ## Building a range tree preserves the list
 
 For every list $xs$ of integers, the leaf list
 of the range tree built from $xs$ is $xs$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.toList_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.toList_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#to-list-build).
 
 ## Size of a built range tree
 
 For every list $\mathit{xs}$ of integers, the range tree built
 from $\mathit{xs}$ has exactly as many leaves as $\mathit{xs}$ has elements.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.size_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#size-build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.size_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#size-build).
 
 ## Built range trees are bounds-valid
 
 For every list $L$ of integers, the range tree built
 from $L$ by recursive halving is bounds-valid.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.boundsOk_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-ok-build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.boundsOk_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#bounds-ok-build).
 
 ## Building from a sorted list gives a valid range tree
 
@@ -254,7 +254,7 @@ is sorted in nondecreasing order, the range tree built from $xs$ is valid.
 Without the sortedness hypothesis the built tree still has correct cached bounds, but it need not
 be valid.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.valid_build_of_sorted`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#valid-build-of-sorted).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.valid_build_of_sorted`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#valid-build-of-sorted).
 
 ## Range report on a built tree
 
@@ -262,7 +262,7 @@ For every list $\mathit{xs}$ of integers and all integers $a$
 and $b$, the range report for $[a, b]$ on the range tree built from $\mathit{xs}$ equals the list
 of elements $x$ of $\mathit{xs}$ with $a \le x \le b$, in their original order.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.report_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.report_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#report-build).
 
 ## Range counting on a built tree
 
@@ -270,7 +270,7 @@ For every list $L$ of integers and all integers $a$ and
 $b$, the range count over $[a, b]$ of the range tree built from $L$ equals the number of entries
 of $L$, counted with multiplicity, that lie in $[a, b]$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.count_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count-build).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.count_build`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#count-build).
 
 ## Range report membership on a built tree
 
@@ -278,7 +278,7 @@ For every list $L$ of integers and all integers
 $a$, $b$ and $x$, the value $x$ occurs in the range report for $[a, b]$ on the range tree built
 from $L$ if and only if $x$ is an entry of $L$ and $a \le x \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.RangeTree.mem_report_build_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#mem-report-build-iff).
+Formalized by `Cslib.Algorithms.Lean.RangeTree.mem_report_build_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/RangeTree.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html#mem-report-build-iff).
 
 ## Depends on
 
@@ -287,4 +287,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Range tree](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/range-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/data-structures/range-query-structures/range-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/data-structures/range-query-structures/range-tree)

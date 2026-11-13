@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.31 Perfect complexes
 
-Section 36.31 of the Stacks Project, [Tag 0BDH](https://stacks.math.columbia.edu/tag/0BDH). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.31 of the Stacks Project, [Tag 0BDH](https://stacks.math.columbia.edu/tag/0BDH). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BDI, a lemma
 
 [Tag 0BDI](https://stacks.math.columbia.edu/tag/0BDI) in the Stacks Project.
 
-**`AlgebraicGeometry.DerivedFibreBetti.isPseudoCoherent_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean#L229). The attribute's comment: “base\_change”.
+**`AlgebraicGeometry.DerivedFibreBetti.isPseudoCoherent_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean#L229). The attribute's comment: “base\_change”.
 
 > **Tag 0BDI, base change: the derived pullback of a pseudo-coherent object is
 > pseudo-coherent.**  This is what makes the derived-fibre Betti function of `Lf^* E` available
@@ -32,7 +32,7 @@ public theorem isPseudoCoherent_derivedPullback
       ((Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback f.toLRSHom.toShHom).obj E)
 ```
 
-**`AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean#L256). The attribute's comment: “base\_change”.
+**`AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiBaseChange.lean#L256). The attribute's comment: “base\_change”.
 
 > **Tag 0BDI, base change: the derived-fibre Betti function commutes with base change.**  For a
 > morphism of schemes `f : Y ⟶ X` the `i`-th derived-fibre Betti function of `Lf^* E` is the
@@ -55,7 +55,7 @@ public theorem derivedFiberBetti_derivedPullback
       derivedFiberBetti X E hE i ∘ f.base
 ```
 
-**`AlgebraicGeometry.DerivedFibreBetti.isLocallyConstructible_derivedFiberBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiConstructible.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiConstructible.lean#L104). The attribute's comment: “part (3): for E a pseudo-coherent object of D(O\_X) on a scheme X, the level sets of the functions beta\_i are locally constructible in X. beta\_i is AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti, the dimension over the residue field of the degree-i cohomology of the derived fibre read through global sections on Spec kappa(x), the level set at n is the preimage of the singleton n, and pseudo-coherence of E is the only hypothesis. The affine case is proved, not assumed: it is StacksDraft.Perfect.isConstructible\_fibreBetti\_preimage, which runs the source's argument through the rank loci of a bounded-above finite free model -- over a field the ideal of r-by-r minors of a matrix is the unit ideal exactly when r is at most its rank (StacksDraft.MinorRank.minorIdeal\_eq\_top\_iff\_le\_rank), so the locus where the rank at p is at least r is the complement of the zero locus of a finitely generated ideal and hence retrocompact, which is what semi-continuity does not give”.
+**`AlgebraicGeometry.DerivedFibreBetti.isLocallyConstructible_derivedFiberBetti_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiConstructible.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiConstructible.lean#L104). The attribute's comment: “part (3): for E a pseudo-coherent object of D(O\_X) on a scheme X, the level sets of the functions beta\_i are locally constructible in X. beta\_i is AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti, the dimension over the residue field of the degree-i cohomology of the derived fibre read through global sections on Spec kappa(x), the level set at n is the preimage of the singleton n, and pseudo-coherence of E is the only hypothesis. The affine case is proved, not assumed: it is StacksDraft.Perfect.isConstructible\_fibreBetti\_preimage, which runs the source's argument through the rank loci of a bounded-above finite free model -- over a field the ideal of r-by-r minors of a matrix is the unit ideal exactly when r is at most its rank (StacksDraft.MinorRank.minorIdeal\_eq\_top\_iff\_le\_rank), so the locus where the rank at p is at least r is the complement of the zero locus of a finitely generated ideal and hence retrocompact, which is what semi-continuity does not give”.
 
 > **[Stacks, Tag 0BDI], part (3): the level sets of the derived-fibre Betti functions are
 > locally constructible.**  Let `X` be a scheme and let `E` be a pseudo-coherent object of
@@ -75,7 +75,7 @@ public theorem isLocallyConstructible_derivedFiberBetti_preimage (X : Scheme.{u}
     IsLocallyConstructible (derivedFiberBetti X E hE i ⁻¹' {n})
 ```
 
-**`AlgebraicGeometry.DerivedFibreBetti.upperSemicontinuous_derivedFiberBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiSemicontinuity.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiSemicontinuity.lean#L84). The attribute's comment: “part (2): for E a pseudo-coherent object of D(O\_X) on a scheme X, the function beta\_i sending x to dim\_\{kappa(x)} H^i(Li\_x^* E) is upper semi-continuous. beta\_i is AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti, the dimension over the residue field of the degree-i cohomology of the derived fibre read through global sections on Spec kappa(x), and pseudo-coherence of E is the only hypothesis”.
+**`AlgebraicGeometry.DerivedFibreBetti.upperSemicontinuous_derivedFiberBetti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiSemicontinuity.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreBettiSemicontinuity.lean#L84). The attribute's comment: “part (2): for E a pseudo-coherent object of D(O\_X) on a scheme X, the function beta\_i sending x to dim\_\{kappa(x)} H^i(Li\_x^* E) is upper semi-continuous. beta\_i is AlgebraicGeometry.DerivedFibreBetti.derivedFiberBetti, the dimension over the residue field of the degree-i cohomology of the derived fibre read through global sections on Spec kappa(x), and pseudo-coherence of E is the only hypothesis”.
 
 > **[Stacks, Tag 0BDI], part (2): the derived-fibre Betti functions are upper
 > semi-continuous.**  Let `X` be a scheme and let `E` be a pseudo-coherent object of `D(𝒪_X)`.  For
@@ -96,7 +96,7 @@ public theorem upperSemicontinuous_derivedFiberBetti (X : Scheme.{u})
 
 [Tag 0BDJ](https://stacks.math.columbia.edu/tag/0BDJ) in the Stacks Project.
 
-**`AlgebraicGeometry.DerivedFibreBetti.isLocallyConstant_chiDerivedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreEulerCharacteristic.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreEulerCharacteristic.lean#L348). References: EGA III (7.9.3), “more general”; SGA 6 III (5.4.1), “a) rank, scheme case”; SGA 6 III (5.5), “(i), scheme case”.
+**`AlgebraicGeometry.DerivedFibreBetti.isLocallyConstant_chiDerivedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreEulerCharacteristic.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedFibreEulerCharacteristic.lean#L348). References: EGA III (7.9.3), “more general”; SGA 6 III (5.4.1), “a) rank, scheme case”; SGA 6 III (5.5), “(i), scheme case”.
 
 > **Stacks 0BDJ.** The derived-fibre Euler characteristic of a perfect object of `D(𝒪_X)` on a
 > scheme is locally constant.
@@ -117,7 +117,7 @@ public theorem isLocallyConstant_chiDerivedFibre (X : Scheme.{u})
 
 [Tag 0BDK](https://stacks.math.columbia.edu/tag/0BDK) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.nonempty_iso_singleFunctor_restrict_iff_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L305). The attribute's comment: “the open description”.
+**`AlgebraicGeometry.Scheme.Modules.nonempty_iso_singleFunctor_restrict_iff_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L305). The attribute's comment: “the open description”.
 
 > **The open subscheme of [stacks 0BDK] is characterised by the first description.** An open of
 > `X` is contained in `singleDegreeRankOpen` exactly when the restriction of `E` to it is isomorphic
@@ -133,7 +133,7 @@ theorem nonempty_iso_singleFunctor_restrict_iff_le (V : X.Opens) :
       V ≤ singleDegreeRankOpen E i r
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isZero_homology_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L316). The attribute's comment: “the open description”.
+**`AlgebraicGeometry.Scheme.Modules.isZero_homology_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L316). The attribute's comment: “the open description”.
 
 > **The cohomology of `E` vanishes outside degree `i` on the open subscheme of [stacks 0BDK].**
 
@@ -144,7 +144,7 @@ theorem isZero_homology_singleDegreeRankOpen (j : ℤ) (hj : j ≠ i) :
       ((restrictFunctor (singleDegreeRankOpen E i r).ι).mapDerivedCategory.obj E))
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.nonempty_iso_singleFunctor_restrict_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L327). The attribute's comment: “the open description”.
+**`AlgebraicGeometry.Scheme.Modules.nonempty_iso_singleFunctor_restrict_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L327). The attribute's comment: “the open description”.
 
 > **On the open subscheme of [stacks 0BDK] the derived module `E` is its own degree-`i`
 > cohomology sheaf placed in degree `i`.** This is the first half of description (1) of the tag.
@@ -158,7 +158,7 @@ theorem nonempty_iso_singleFunctor_restrict_singleDegreeRankOpen :
           ((restrictFunctor (singleDegreeRankOpen E i r).ι).mapDerivedCategory.obj E)))
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFiniteLocallyFreeOfRank_homology_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L339). The attribute's comment: “the open description”.
+**`AlgebraicGeometry.Scheme.Modules.isFiniteLocallyFreeOfRank_homology_singleDegreeRankOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L339). The attribute's comment: “the open description”.
 
 > **On the open subscheme of [stacks 0BDK] the degree-`i` cohomology sheaf of `E` is finite
 > locally free of rank `r`.** This is the second half of description (1) of the tag.
@@ -171,7 +171,7 @@ theorem isFiniteLocallyFreeOfRank_homology_singleDegreeRankOpen :
         ((restrictFunctor (singleDegreeRankOpen E i r).ι).mapDerivedCategory.obj E)) r
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.factorsThrough_singleDegreeRankOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L354). The attribute's comment: “the universal property for open immersions, restriction for the derived pullback”.
+**`AlgebraicGeometry.Scheme.Modules.factorsThrough_singleDegreeRankOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpen.lean#L354). The attribute's comment: “the universal property for open immersions, restriction for the derived pullback”.
 
 > **The universal property of the open subscheme of [stacks 0BDK], for open immersions.** An open
 > immersion `f : Y ⟶ X` factors through `singleDegreeRankOpen` exactly when the restriction of `E`
@@ -192,7 +192,7 @@ theorem factorsThrough_singleDegreeRankOpen_iff {Y : Scheme.{u}} (f : Y ⟶ X)
             (DerivedCategory.singleFunctor Y.Modules i).obj M)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.existsUnique_opens_singleDegreeRank_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenInt.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenInt.lean#L111). The attribute's comment: “THE WHOLE TAG, at the source's INTEGER rank: the existence of an open subscheme satisfying description (1), both of its clauses, and description (2) in both directions for an ARBITRARY morphism of schemes and the derived pullback Lf^*E, together with the UNIQUENESS that makes the two descriptions a characterisation. The only premise is the source's own, that E be perfect. The rank clause is read at each point, as the source states it; for a non-negative rank the witness is AlgebraicGeometry.Scheme.Modules.singleDegreeRankOpen and the statement is AlgebraicGeometry.Scheme.Modules.existsUnique\_opens\_singleDegreeRank, and for a negative rank the witness is the empty open subscheme”.
+**`AlgebraicGeometry.Scheme.Modules.existsUnique_opens_singleDegreeRank_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenInt.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenInt.lean#L111). The attribute's comment: “THE WHOLE TAG, at the source's INTEGER rank: the existence of an open subscheme satisfying description (1), both of its clauses, and description (2) in both directions for an ARBITRARY morphism of schemes and the derived pullback Lf^*E, together with the UNIQUENESS that makes the two descriptions a characterisation. The only premise is the source's own, that E be perfect. The rank clause is read at each point, as the source states it; for a non-negative rank the witness is AlgebraicGeometry.Scheme.Modules.singleDegreeRankOpen and the statement is AlgebraicGeometry.Scheme.Modules.existsUnique\_opens\_singleDegreeRank, and for a negative rank the witness is the empty open subscheme”.
 
 > **[Stacks, Tag 0BDK].** Let `X` be a scheme, let `E ∈ D(𝒪_X)` be perfect and let `i, r` be
 > integers. There is a unique open subscheme `U ⊆ X` characterised by the following:
@@ -229,7 +229,7 @@ theorem existsUnique_opens_singleDegreeRank_int (E : DerivedCategory X.Modules)
                   (DerivedCategory.singleFunctor Y.Modules i).obj M)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.factorsThrough_singleDegreeRankOpen_iff_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenUniversal.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenUniversal.lean#L405). The attribute's comment: “part (2): the universal property along an arbitrary morphism, rank r : N”.
+**`AlgebraicGeometry.Scheme.Modules.factorsThrough_singleDegreeRankOpen_iff_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenUniversal.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SingleDegreeRankOpenUniversal.lean#L405). The attribute's comment: “part (2): the universal property along an arbitrary morphism, rank r : N”.
 
 > Let `E` be a perfect object of `D(𝒪_X)`, `i` an integer and `r` a natural number. A morphism
 > of schemes `f : Y ⟶ X` factors through `singleDegreeRankOpen E i r` exactly when `Lf^*E` is
@@ -251,7 +251,7 @@ theorem factorsThrough_singleDegreeRankOpen_iff_derivedPullback
 
 [Tag 0BDL](https://stacks.math.columbia.edu/tag/0BDL) in the Stacks Project.
 
-**`AlgebraicGeometry.BottomRankStratum.isBottomRankStratum_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L335). The attribute's comment: “parts (1) and (2), for E a finite type quasi-coherent module placed in degree a”.
+**`AlgebraicGeometry.BottomRankStratum.isBottomRankStratum_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L335). The attribute's comment: “parts (1) and (2), for E a finite type quasi-coherent module placed in degree a”.
 
 > **The rank `s` Fitting stratum is a bottom rank `s` stratum for a module placed in degree
 > `a`.** Its structural morphism is a locally closed immersion and it represents the rank `s`
@@ -268,7 +268,7 @@ public theorem isBottomRankStratum_fittingRankStratum (F : X.Modules) [F.IsFinit
       (fittingRankStratum F s).hom
 ```
 
-**`AlgebraicGeometry.BottomRankStratum.pullbackHomologySingleCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L371). The attribute's comment: “part (3), for E a module placed in degree a”.
+**`AlgebraicGeometry.BottomRankStratum.pullbackHomologySingleCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L371). The attribute's comment: “part (3), for E a module placed in degree a”.
 
 > **`H^a(L(g ∘ j)^* E) ≅ g^* H^a(Lj^* E)` for `E` a module placed in degree `a`.** This is
 > part (3) of [stacks 0BDL]: a morphism factoring as `Y ⟶ Z ⟶ X` has its degree-`a` cohomology of
@@ -287,7 +287,7 @@ public def pullbackHomologySingleCompIso (F : X.Modules) (a : ℤ) {Y Z : Scheme
         (pullbackHomology ((DerivedCategory.singleFunctor X.Modules a).obj F) a j)
 ```
 
-**`AlgebraicGeometry.BottomRankStratum.factorsThrough_fittingRankStratum_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L388). The attribute's comment: “part (4), (a) iff (b), for E a finite type quasi-coherent module in degree a”.
+**`AlgebraicGeometry.BottomRankStratum.factorsThrough_fittingRankStratum_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L388). The attribute's comment: “part (4), (a) iff (b), for E a finite type quasi-coherent module in degree a”.
 
 > **A morphism factors through the rank `s` Fitting stratum exactly when `H^a(Lf^* E)` is
 > finite locally free of rank `s`.** This is the equivalence of (a) and (b) in part (4) of
@@ -305,7 +305,7 @@ public theorem factorsThrough_fittingRankStratum_iff (F : X.Modules) [F.IsFinite
         (pullbackHomology ((DerivedCategory.singleFunctor X.Modules a).obj F) a f) s
 ```
 
-**`AlgebraicGeometry.BottomRankStratum.isBottomRankStratum_finitePresentation_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L405). The attribute's comment: “parts (1), (2) and finite presentation, E a finitely presented module in degree a”.
+**`AlgebraicGeometry.BottomRankStratum.isBottomRankStratum_finitePresentation_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L405). The attribute's comment: “parts (1), (2) and finite presentation, E a finitely presented module in degree a”.
 
 > **The rank `s` Fitting stratum of a finitely presented module is a bottom rank `s` stratum
 > whose structural morphism is of finite presentation.** This is descriptions (1) and (2) of
@@ -327,7 +327,7 @@ public theorem isBottomRankStratum_finitePresentation_fittingRankStratum (F : X.
           (SheafOfModules.instIsQuasicoherentOfIsFinitePresentation F) s).hom
 ```
 
-**`AlgebraicGeometry.BottomRankStratum.isClosedImmersion_fittingRankStratum_of_isGeneratedByNear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L443). The attribute's comment: “part (4), closedness of j, E a module in degree a, Betti bound as generation”.
+**`AlgebraicGeometry.BottomRankStratum.isClosedImmersion_fittingRankStratum_of_isGeneratedByNear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratum.lean#L443). The attribute's comment: “part (4), closedness of j, E a module in degree a, Betti bound as generation”.
 
 > **When the module is generated by `s` sections near every point, the rank `s` Fitting stratum
 > is a closed subscheme.** This is the closedness assertion of part (4) of [stacks 0BDL] for `E` a
@@ -346,7 +346,7 @@ public theorem isClosedImmersion_fittingRankStratum_of_isGeneratedByNear (F : X.
     IsClosedImmersion (fittingRankStratum F s).hom
 ```
 
-**`AlgebraicGeometry.BottomRankStratum.exists_isBottomRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratumMain.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratumMain.lean#L355).
+**`AlgebraicGeometry.BottomRankStratum.exists_isBottomRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratumMain.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BottomRankStratumMain.lean#L355).
 
 > **The bottom rank stratum of a perfect complex.** Let `E` be perfect of Tor amplitude in
 > `[a, b]` and `r` a natural number. There is a locally closed immersion `j : Z ⟶ X` with
@@ -382,4 +382,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.31, Tag 0BDH](https://stacks.math.columbia.edu/tag/0BDH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

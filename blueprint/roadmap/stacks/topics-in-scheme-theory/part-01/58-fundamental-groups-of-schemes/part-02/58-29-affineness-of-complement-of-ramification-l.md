@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.29 Affineness of complement of ramification locus
 
-Section 58.29 of the Stacks Project, [Tag 0ECA](https://stacks.math.columbia.edu/tag/0ECA). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.29 of the Stacks Project, [Tag 0ECA](https://stacks.math.columbia.edu/tag/0ECA). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ECB, a lemma
 
 [Tag 0ECB](https://stacks.math.columbia.edu/tag/0ECB) in the Stacks Project.
 
-**`Stacks.EtalePuncturedSpectrum.exists_directSum_injectiveHull_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumCohomology.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumCohomology.lean#L641).
+**`Stacks.EtalePuncturedSpectrum.exists_directSum_injectiveHull_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumCohomology.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumCohomology.lean#L640).
 
 > **Stacks Project, Tag 0ECB.** Let `A` be a regular local ring containing a field `k`, let
 > `f : V ⟶ Spec A` be étale and quasi-compact, and suppose `f` factors as `g ≫ U.ι` through the
@@ -39,7 +39,7 @@ theorem exists_directSum_injectiveHull_residueField
 
 [Tag 0ECC](https://stacks.math.columbia.edu/tag/0ECC) in the Stacks Project.
 
-**`Stacks.SpectralSequence.isZero_derivedTensorHomology_zero_singleHomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/OriginVanishing.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/OriginVanishing.lean#L188). The attribute's comment: “the cohomological step: the tensor spectral sequence at the origin”.
+**`Stacks.SpectralSequence.isZero_derivedTensorHomology_zero_singleHomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/OriginVanishing.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/OriginVanishing.lean#L188). The attribute's comment: “the cohomological step: the tensor spectral sequence at the origin”.
 
 > Let `K` and `L` be bounded-above objects of the derived category of `A`-modules. Suppose
 >
@@ -60,7 +60,7 @@ theorem isZero_derivedTensorHomology_zero_singleHomology_zero
     IsZero (derivedTensorHomology A (singleHomology A K.1 0) L.1 0)
 ```
 
-**`Stacks.PuncturedSpectrum.isAffine_of_cohomologyOverBase_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineOfCohomologyVanishing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/AffineOfCohomologyVanishing.lean#L196). The attribute's comment: “the proof assembled under the source's own hypotheses: the cohomology vanishing above dim(A) - 1 is the hypothesis of the tag, and both cited inputs are proved — the abutment H⁰(RΓ(V,𝒪\_V) ⊗^L\_A A/𝔪) = 0 by computing the derived tensor product on an injective resolution against the Koszul complex of a generating family of the maximal ideal, which is acyclic because the standard opens of the generators cover V, and the Tor vanishing from Tags 0ECB and 0EBT”.
+**`Stacks.PuncturedSpectrum.isAffine_of_cohomologyOverBase_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineOfCohomologyVanishing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/AffineOfCohomologyVanishing.lean#L196). The attribute's comment: “the proof assembled under the source's own hypotheses: the cohomology vanishing above dim(A) - 1 is the hypothesis of the tag, and both cited inputs are proved — the abutment H⁰(RΓ(V,𝒪\_V) ⊗^L\_A A/𝔪) = 0 by computing the derived tensor product on an injective resolution against the Koszul complex of a generating family of the maximal ideal, which is acyclic because the standard opens of the generators cover V, and the Tor vanishing from Tags 0ECB and 0EBT”.
 
 > **[Stacks, Tag 0ECC], the proof assembled, with the source's own degree bound.** In the
 > situation of [Stacks, Tag 0ECB], write `d` for the Krull dimension of `A`. If
@@ -84,7 +84,7 @@ theorem isAffine_of_cohomologyOverBase_vanishing (A k : Type u) [CommRing A]
     IsAffine V
 ```
 
-**`Stacks.PuncturedSpectrum.isAffine_of_subsingleton_quotTensor_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineOverPuncturedSpectrum.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/AffineOverPuncturedSpectrum.lean#L272). The attribute's comment: “the final step: affineness once the residue field kills the global sections”.
+**`Stacks.PuncturedSpectrum.isAffine_of_subsingleton_quotTensor_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineOverPuncturedSpectrum.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/AffineOverPuncturedSpectrum.lean#L272). The attribute's comment: “the final step: affineness once the residue field kills the global sections”.
 
 > **[Stacks, Tag 0ECC], the final step of the proof.** In the situation of [Stacks, Tag 0ECB] —
 > `A` a regular local ring containing a field `k`, `f : V ⟶ Spec A` étale and quasi-compact, and
@@ -114,7 +114,7 @@ theorem isAffine_of_subsingleton_quotTensor_globalSections
     IsAffine V
 ```
 
-**`Stacks.PuncturedSpectrum.isZero_derivedTensorHomology_cohomologyOverBase_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/PuncturedSpectrumResidueFieldTor.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/PuncturedSpectrumResidueFieldTor.lean#L116). The attribute's comment: “the incoming terms of the tensor spectral sequence: Tor\_r(H ⁿ(V,𝒪\_V), A/𝔪) = 0 for n > 0 and r ≠ dim A, from Tags 0ECB and 0EBT”.
+**`Stacks.PuncturedSpectrum.isZero_derivedTensorHomology_cohomologyOverBase_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/PuncturedSpectrumResidueFieldTor.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/PuncturedSpectrumResidueFieldTor.lean#L116). The attribute's comment: “the incoming terms of the tensor spectral sequence: Tor\_r(H ⁿ(V,𝒪\_V), A/𝔪) = 0 for n > 0 and r ≠ dim A, from Tags 0ECB and 0EBT”.
 
 > **The incoming terms of the tensor spectral sequence of [Stacks, Tag 0ECC].** In the situation
 > of [Stacks, Tag 0ECB] — `A` a regular local ring containing a field `k`, `f : V ⟶ Spec A` étale
@@ -143,7 +143,7 @@ theorem isZero_derivedTensorHomology_cohomologyOverBase_residueField (A k : Type
         (ModuleCat.of A (A ⧸ IsLocalRing.maximalIdeal A))) (-r))
 ```
 
-**`Stacks.LocalCohomology.derivedSectionsMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HigherDegree/DerivedSectionsOverBase.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/HigherDegree/DerivedSectionsOverBase.lean#L219). The attribute's comment: “the complex RΓ(V, 𝒪\_V) of A-modules, bounded above and concentrated in degrees ≥ 0”.
+**`Stacks.LocalCohomology.derivedSectionsMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HigherDegree/DerivedSectionsOverBase.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/HigherDegree/DerivedSectionsOverBase.lean#L220). The attribute's comment: “the complex RΓ(V, 𝒪\_V) of A-modules, bounded above and concentrated in degrees ≥ 0”.
 
 > **`RΓ(V, F)` as an object of the bounded above derived category `D⁻(A)`,** given a bound
 > above which the cohomology of `F` on `V` vanishes.
@@ -168,7 +168,7 @@ def derivedSectionsMinus (f : V ⟶ Spec (.of A))
 
 [Tag 0ECD](https://stacks.math.columbia.edu/tag/0ECD) in the Stacks Project.
 
-**`AlgebraicGeometry.MaximalEtaleOpen.isAffineHom_maximalEtaleOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineMaximalEtaleOpen.lean, line 1451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/AffineMaximalEtaleOpen.lean#L1451). References: EGA IV (21.12.14), “special case”.
+**`AlgebraicGeometry.MaximalEtaleOpen.isAffineHom_maximalEtaleOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/AffineMaximalEtaleOpen.lean, line 1451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/AffineMaximalEtaleOpen.lean#L1451). References: EGA IV (21.12.14), “special case”.
 
 > **Stacks Project, Tag 0ECD.** Let `Y` be an excellent regular scheme over a field `k`, let
 > `f : X ⟶ Y` be a morphism of finite type with `X` normal, and let `V ⊆ X` be the maximal open
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.29, Tag 0ECA](https://stacks.math.columbia.edu/tag/0ECA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

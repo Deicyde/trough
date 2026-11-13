@@ -8,7 +8,7 @@ proof: formalized
 
 # Products of rings and fields
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html).
 
 ## Coordinate restriction
 
@@ -18,7 +18,7 @@ coordinate restriction is the $K$-algebra homomorphism
 $\prod_{i \in \iota} F_i \to \prod_{i \in S} F_i$ sending $(x_i)_{i \in \iota}$ to
 $(x_i)_{i \in S}$.
 
-Formalized by `PiFieldQuotient.restrict`, a definition declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict).
+Formalized by `PiFieldQuotient.restrict`, a definition declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict).
 
 ## Coordinates of a restriction
 
@@ -27,7 +27,7 @@ fields that are $K$-algebras indexed by a type $\iota$, and $S \subseteq \iota$ 
 For $x \in \prod_{i \in \iota} F_i$ and $s \in S$, the $s$-th coordinate of the coordinate
 restriction of $x$ to $S$ is $x_s$.
 
-Formalized by `PiFieldQuotient.restrict_apply`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict-apply).
+Formalized by `PiFieldQuotient.restrict_apply`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict-apply).
 
 ## Coordinate restriction is surjective
 
@@ -38,7 +38,7 @@ surjective.
 
 A preimage is obtained by extending by zero outside $S$.
 
-Formalized by `PiFieldQuotient.restrict_surjective`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict-surjective).
+Formalized by `PiFieldQuotient.restrict_surjective`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#restrict-surjective).
 
 ## Kernel of coordinate restriction
 
@@ -47,7 +47,7 @@ fields that are $K$-algebras indexed by a type $\iota$, and $S \subseteq \iota$ 
 An element $x \in \prod_{i \in \iota} F_i$ is sent to $0$ by the coordinate restriction
 $\prod_{i \in \iota} F_i \to \prod_{i \in S} F_i$ if and only if $x_i = 0$ for every $i \in S$.
 
-Formalized by `PiFieldQuotient.mem_ker_restrict_iff`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-ker-restrict-iff).
+Formalized by `PiFieldQuotient.mem_ker_restrict_iff`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-ker-restrict-iff).
 
 ## Selected indices of a homomorphism
 
@@ -57,7 +57,7 @@ $\varphi : \prod_{i \in \iota} F_i \to B$ a $K$-algebra homomorphism. The select
 $\varphi$ form the finite set of those $i \in \iota$ for which the ideal of $F_i$ generated by the
 image of $\ker \varphi$ under the $i$-th projection $\prod_{j \in \iota} F_j \to F_i$ is zero.
 
-Formalized by `PiFieldQuotient.selected`, a definition declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#selected).
+Formalized by `PiFieldQuotient.selected`, a definition declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#selected).
 
 ## Membership in the selected indices
 
@@ -67,7 +67,7 @@ $\varphi : \prod_{i \in \iota} F_i \to B$ a $K$-algebra homomorphism. An index $
 belongs to the selected indices of $\varphi$ if and only if the ideal of $F_i$ generated by the
 image of $\ker \varphi$ under the $i$-th projection $\prod_{j \in \iota} F_j \to F_i$ is zero.
 
-Formalized by `PiFieldQuotient.mem_selected`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-selected).
+Formalized by `PiFieldQuotient.mem_selected`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-selected).
 
 ## Kernel membership in a finite product of fields is componentwise
 
@@ -78,7 +78,7 @@ homomorphism. For $x \in \prod_{i \in \iota} F_i$, $\varphi(x) = 0$ if and only 
 $i \in \iota$ the coordinate $x_i$ lies in the ideal of $F_i$ generated by the image of
 $\ker \varphi$ under the $i$-th projection $\prod_{j \in \iota} F_j \to F_i$.
 
-Formalized by `PiFieldQuotient.mem_ker_iff`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-ker-iff).
+Formalized by `PiFieldQuotient.mem_ker_iff`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#mem-ker-iff).
 
 ## Surjections from a finite product of fields are coordinate restrictions up to isomorphism
 
@@ -88,7 +88,7 @@ $\varphi : \prod_{i \in \iota} F_i \to B$ there are a finite subset $S \subseteq
 $K$-algebra isomorphism $e : B \to \prod_{i \in S} F_i$ such that $e \circ \varphi$ is the
 coordinate restriction $(x_i)_{i \in \iota} \mapsto (x_i)_{i \in S}$.
 
-Formalized by `PiFieldQuotient.exists_algEquiv_restrict`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-alg-equiv-restrict).
+Formalized by `PiFieldQuotient.exists_algEquiv_restrict`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-alg-equiv-restrict).
 
 ## A surjective image of a finite product of fields is isomorphic to a subproduct
 
@@ -98,7 +98,7 @@ $B$ a commutative $K$-algebra. If $\varphi : \prod_{i \in \iota} F_i \to B$ is a
 $K$-algebra homomorphism, then there is a finite subset $S \subseteq \iota$ such that $B$ is
 isomorphic as a $K$-algebra to $\prod_{i \in S} F_i$.
 
-Formalized by `PiFieldQuotient.exists_algEquiv`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldQuotient.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-alg-equiv).
+Formalized by `PiFieldQuotient.exists_algEquiv`, a theorem declared in [MathlibExt/RingTheory/PiFieldQuotient.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldQuotient.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-alg-equiv).
 
 ## Uniqueness of a finite product of fields up to permutation
 
@@ -112,7 +112,7 @@ $G_{\sigma(i)}$ as a $K$-algebra for every $i \in I$.
 
 - ATLAS N83, Corollary 4.33.
 
-Formalized by `PiFieldQuotient.exists_indexEquiv_algEquiv`, a theorem declared in [MathlibExt/RingTheory/PiFieldDecomposition.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PiFieldDecomposition.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-index-equiv-alg-equiv).
+Formalized by `PiFieldQuotient.exists_indexEquiv_algEquiv`, a theorem declared in [MathlibExt/RingTheory/PiFieldDecomposition.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PiFieldDecomposition.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#exists-index-equiv-alg-equiv).
 
 ## Product decompositions and idempotents
 
@@ -122,7 +122,7 @@ with $e \neq 0$ and $e \neq 1$.
 
 In the reverse direction the two factors are the quotients $Q/(e)$ and $Q/(1 - e)$.
 
-Formalized by `ProductRings.ring_product_iff_nontrivial_idempotent`, a theorem declared in [MathlibExt/RingTheory/ProductRings.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/ProductRings.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#ring-product-iff-nontrivial-idempotent).
+Formalized by `ProductRings.ring_product_iff_nontrivial_idempotent`, a theorem declared in [MathlibExt/RingTheory/ProductRings.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/ProductRings.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html#ring-product-iff-nontrivial-idempotent).
 
 ## Depends on
 
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Products of rings and fields](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ideals-and-constructions/products-of-rings-and-fields)

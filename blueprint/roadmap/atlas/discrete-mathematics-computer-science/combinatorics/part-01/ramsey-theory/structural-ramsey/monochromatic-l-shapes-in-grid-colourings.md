@@ -7,7 +7,7 @@ statement: formalized
 
 # Monochromatic L-shapes in grid colourings
 
-11 results, 4 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html).
+11 results, 4 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html).
 
 ## Grid Ramsey property for Ls
 
@@ -26,7 +26,7 @@ in $n$, so $R_k(L) \le N$ says exactly that $(k, N)$ has it.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 1 and the definition of `R_k(L)` following it.
 
-Formalized by `MetaMathlibExt.GridLRamseyProperty`, a definition declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property).
+Formalized by `MetaMathlibExt.GridLRamseyProperty`, a definition declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property).
 
 ## Monotonicity of the grid Ramsey property for Ls
 
@@ -42,7 +42,7 @@ larger grid contains every L of a smaller one.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21 (definition of `R_k(L)`).
 
-Formalized by `MetaMathlibExt.GridLRamseyProperty.mono`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#mono).
+Formalized by `MetaMathlibExt.GridLRamseyProperty.mono`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#mono).
 
 ## One color does not force an L on the $1 \times 1$ grid
 
@@ -57,7 +57,7 @@ $x, d \ge 1$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21 (definition of an L).
 
-Formalized by `MetaMathlibExt.not_gridLRamseyProperty_one_one`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#not-grid-lramsey-property-one-one).
+Formalized by `MetaMathlibExt.not_gridLRamseyProperty_one_one`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#not-grid-lramsey-property-one-one).
 
 ## With one color the 2 × 2 grid contains an L
 
@@ -75,7 +75,7 @@ $R_1(L) = 2$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21 (definition of `R_k(L)`).
 
-Formalized by `MetaMathlibExt.gridLRamseyProperty_one_two`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-one-two).
+Formalized by `MetaMathlibExt.gridLRamseyProperty_one_two`, a theorem declared in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-one-two).
 
 ## Grid Ramsey theorem for Ls
 
@@ -89,7 +89,7 @@ same color.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 1 (quoted there from earlier work).
 
-Stated but not proved: `MetaMathlibExt.exists_gridLRamseyProperty` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#exists-grid-lramsey-property).
+Stated but not proved: `MetaMathlibExt.exists_gridLRamseyProperty` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#exists-grid-lramsey-property).
 
 ## Three-coloring the 2593 × 2593 grid forces a monochromatic L
 
@@ -104,7 +104,7 @@ $3$ colors contains a monochromatic L, is at most $2593$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 2 (quoted there from earlier work).
 
-Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_2593` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-2593).
+Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_2593` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-2593).
 
 ## Three-coloring the 1804 × 1804 grid forces a monochromatic L
 
@@ -119,7 +119,7 @@ $3$ colors contains a monochromatic L, is at most $1804$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_1804` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-1804).
+Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_1804` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-1804).
 
 ## Three-coloring the 1573 × 1573 grid forces a monochromatic L
 
@@ -134,7 +134,7 @@ $3$ colors contains a monochromatic L, is at most $1573$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_1573` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-1573).
+Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_1573` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-1573).
 
 ## Three-coloring the 772 × 772 grid forces a monochromatic L
 
@@ -149,7 +149,7 @@ $3$ colors contains a monochromatic L, is at most $772$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_772` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-772).
+Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_772` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-772).
 
 ## Three-coloring the 493 × 493 grid forces a monochromatic L
 
@@ -167,7 +167,7 @@ the bounds $772$, $1573$, $1804$ and $2593$.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_493` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-493).
+Stated but not proved: `MetaMathlibExt.gridLRamseyProperty_three_493` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#grid-lramsey-property-three-493).
 
 ## Forced blue points on a diagonal give a monochromatic L
 
@@ -191,7 +191,7 @@ $s = 1$ there are two forced blue points and no monochromatic L.
 
 - Isaac Mammel, William Smith, and Carl Yerger, *Ramsey Theory on the Integer Grid: The "L" Problem*, INTEGERS 25 (2025), Article A21, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_mono_L_of_forced_blue_diagonal` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GridLRamseyWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#exists-mono-l-of-forced-blue-diagonal).
+Stated but not proved: `MetaMathlibExt.exists_mono_L_of_forced_blue_diagonal` is written with `theorem_wanted` in [WantedExt/Combinatorics/GridLRamseyWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GridLRamseyWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html#exists-mono-l-of-forced-blue-diagonal).
 
 ## Depends on
 
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monochromatic L-shapes in grid colourings](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-l-shapes-in-grid-colourings)

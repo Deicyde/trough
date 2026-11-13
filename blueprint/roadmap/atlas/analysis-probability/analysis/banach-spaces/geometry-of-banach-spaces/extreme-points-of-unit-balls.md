@@ -8,7 +8,7 @@ proof: formalized
 
 # Extreme points of unit balls
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html).
 
 ## Extreme points of the unit ball of continuous real functions
 
@@ -16,13 +16,13 @@ The extreme points of the closed unit ball of `C(X, ℝ)`, for `X`
 compact Hausdorff, are exactly the functions with `|f x| = 1` for every
 `x`.
 
-Formalized by `MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.extremePoints_closedBall_continuousMap`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-continuous-ma).
+Formalized by `MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.extremePoints_closedBall_continuousMap`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-continuous-ma).
 
 ## Membership criterion for extreme points of the unit ball of $C(X)$
 
 Membership form of `extremePoints_closedBall_continuousMap`.
 
-Formalized by `MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.mem_extremePoints_closedBall_continuousMap`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#mem-extreme-points-closed-ball-continuou).
+Formalized by `MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall.mem_extremePoints_closedBall_continuousMap`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/ExtremePointsContinuousMapBall.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#mem-extreme-points-closed-ball-continuou).
 
 ## Extreme points of the unit ball of finite $\ell^\infty$
 
@@ -34,7 +34,7 @@ with all coordinates of norm `1` that is a convex combination of two ball
 points must agree with both of them coordinatewise, by strict convexity
 of the scalar field.
 
-Formalized by `MathlibExt.Analysis.Convex.ExtremePointsLpBalls.extremePoints_closedBall_piLp_top`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-pi-lp-top).
+Formalized by `MathlibExt.Analysis.Convex.ExtremePointsLpBalls.extremePoints_closedBall_piLp_top`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-pi-lp-top).
 
 ## Extreme points of the unit ball of finite $\ell^1$
 
@@ -49,7 +49,7 @@ extreme: a convex combination equalling it must have total norm `1`,
 hence coordinatewise triangle equality, hence vanishing off the
 coordinate, and strict convexity of the scalar field at the coordinate.
 
-Formalized by `MathlibExt.Analysis.Convex.ExtremePointsLpBalls.extremePoints_closedBall_piLp_one`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-pi-lp-one).
+Formalized by `MathlibExt.Analysis.Convex.ExtremePointsLpBalls.extremePoints_closedBall_piLp_one`, a theorem declared in [MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/ExtremePointsLpBalls.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html#extreme-points-closed-ball-pi-lp-one).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Extreme points of unit balls](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/extreme-points-of-unit-balls)

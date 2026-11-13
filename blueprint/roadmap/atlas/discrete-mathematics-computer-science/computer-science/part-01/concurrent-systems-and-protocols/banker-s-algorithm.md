@@ -8,7 +8,7 @@ proof: formalized
 
 # Banker's algorithm
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html).
 
 ## Banker
 
@@ -20,7 +20,7 @@ $\mathrm{claim}(p)$ is the maximum demand of process $p$ for each resource type 
 $\mathrm{alloc}(p)$ is the amount of each resource type currently allocated to $p$. No
 inequality between the two is required.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System`, a structure declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#system).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System`, a structure declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#system).
 
 ## Remaining need
 
@@ -29,7 +29,7 @@ vector $\mathrm{claim}(p) - \mathrm{alloc}(p)$: the maximum claim of $p$ minus i
 allocation, computed for each resource type by truncated subtraction of natural numbers, so it
 is $0$ for every resource type where the allocation exceeds the claim.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.need`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#need).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.need`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#need).
 
 ## Safe sequence
 
@@ -44,7 +44,7 @@ the empty list is a safe sequence from every $w$.
 Thus each process in turn can be given its remaining need from what is free, finish, and
 release its allocation.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe-seq).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe-seq).
 
 ## Safe state
 
@@ -53,7 +53,7 @@ resource types $R$. A list of pending processes is safe from the free resource v
 $w : R \to \mathbb{N}$ when it has no repetitions and some permutation of it is a safe sequence
 from $w$: the pending processes can all finish, one after another, in some order.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.Safe`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.Safe`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe).
 
 ## Safe sequences are monotone in the free resources
 
@@ -62,7 +62,7 @@ maximum claims and current allocations, and let $\sigma$ be a list of processes.
 safe sequence for $S$ from a vector $w$ of free resources (a natural number for each resource
 type), and $w \le w'$ componentwise, then $\sigma$ is also a safe sequence for $S$ from $w'$.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq.mono`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#mono).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq.mono`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#mono).
 
 ## Removing a process from a safe sequence
 
@@ -76,7 +76,7 @@ $\mathrm{alloc}(p)$ is the current allocation of $p$ and the sum is taken compon
 In other words, letting a member of a safe sequence finish first and release its allocation
 leaves the rest of the sequence safe. This is why the greedy safety check is complete.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq.erase`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#erase).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.SafeSeq.erase`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#erase).
 
 ## A safe state is not deadlocked
 
@@ -86,7 +86,7 @@ type), and let $L$ be a nonempty list of pending processes. If $S$ is safe from 
 some process $p$ in $L$ has remaining need $\mathrm{need}(p) \le w$ componentwise, so it can be
 given its whole remaining need.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.Safe.exists_runnable`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#exists-runnable).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.Safe.exists_runnable`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#exists-runnable).
 
 ## Letting a process that fits finish preserves safety
 
@@ -98,7 +98,7 @@ componentwise, then $S$ is safe from $w$ for $L$ if and only if $S$ is safe from
 $w + \mathrm{alloc}(p)$ for the list obtained from $L$ by removing $p$, where
 $\mathrm{alloc}(p)$ is the current allocation of $p$ and the sum is taken componentwise.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safe_iff_safe_erase`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe-iff-safe-erase).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safe_iff_safe_erase`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safe-iff-safe-erase).
 
 ## Banker's safety algorithm with fuel
 
@@ -112,7 +112,7 @@ the first such process $p$ in the list, removes that occurrence of $p$ from the 
 $\mathrm{alloc}(p)$ to $w$ and continues with fuel $n - 1$; if $n = 0$ or no pending process
 fits, it fails.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheckAux`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check-aux).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheckAux`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check-aux).
 
 ## Banker's safety algorithm
 
@@ -125,7 +125,7 @@ most the free resources componentwise finish and adds its allocation to the free
 for at most one round per pending process, and it succeeds exactly when no pending process is
 left at the end.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheck`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheck`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check).
 
 ## Correctness of the safety algorithm
 
@@ -134,7 +134,7 @@ a finite set $R$ of resource types, every free resource vector $w : R \to \mathb
 list of pending processes, the banker's safety algorithm succeeds on $w$ and the list if and
 only if the list is a safe state from $w$.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheck_iff`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check-iff).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.safetyCheck_iff`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#safety-check-iff).
 
 ## Granting a request
 
@@ -144,7 +144,7 @@ the system obtained by granting $r$ to $p$ has the same maximum claims as $S$, g
 allocation $\mathrm{alloc}(p) + r$ (componentwise sum, where $\mathrm{alloc}(p)$ is the current
 allocation of $p$ in $S$), and leaves the allocation of every other process unchanged.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.grant`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#grant).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.grant`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#grant).
 
 ## Remaining need after a grant
 
@@ -154,7 +154,7 @@ type), the remaining need of $p$ in the system obtained by granting $r$ to $p$ e
 $\mathrm{need}(p) - r$, where $\mathrm{need}(p)$ is the remaining need of $p$ in $S$ and the
 subtraction is truncated subtraction of natural numbers, taken componentwise.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.need_grant_self`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#need-grant-self).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.need_grant_self`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#need-grant-self).
 
 ## Resource-request algorithm
 
@@ -172,7 +172,7 @@ No result covers the error case of the textbook algorithm (a request beyond the 
 claim), the cases where the process must wait, and malformed input (a requester that is not
 pending, or a pending list with repetitions).
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request`, a definition declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request).
 
 ## The request algorithm grants exactly the safe requests within the claim and the free resources
 
@@ -187,7 +187,7 @@ system $S'$ if and only if $p$ occurs in $L$, $L$ has no repetitions, both
 $r \le \mathrm{need}(p)$ and $r \le a$ hold componentwise, $T$ is safe from $a - r$ for $L$,
 $a' = a - r$, and $S' = T$.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request-eq-some-iff).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request_eq_some_iff`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request-eq-some-iff).
 
 ## Granted requests lead to safe states
 
@@ -197,7 +197,7 @@ processes, $p$ a process and $r$ a resource vector. If the resource-request algo
 request of $r$ by $p$, returning the free vector $a'$ and the system $S'$, then $S'$ is safe from
 $a'$ for $L$.
 
-Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request_safe`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Concurrency/Banker.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request-safe).
+Formalized by `Cslib.Algorithms.Concurrency.Banker.System.request_safe`, a theorem declared in [CSLibExt/Algorithms/Concurrency/Banker.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Concurrency/Banker.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html#request-safe).
 
 ## Depends on
 
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Banker's algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/banker-s-algorithm)

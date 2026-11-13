@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.18 Flattening over a closed subset of the base
 
-Section 15.18 of the Stacks Project, [Tag 05LK](https://stacks.math.columbia.edu/tag/05LK). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.18 of the Stacks Project, [Tag 05LK](https://stacks.math.columbia.edu/tag/05LK). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 052W, an equation
 
 [Tag 052W](https://stacks.math.columbia.edu/tag/052W) in the Stacks Project.
 
-**`Module.FlatAlongZeroLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L45).
+**`Module.FlatAlongZeroLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L45).
 
 > An `S`-module `M` is flat over `R` along the inverse image of the zero
 > locus of an ideal `I` of `R` if the localization `M_q` is flat over `R` for every prime ideal `q`
@@ -31,7 +31,7 @@ def Module.FlatAlongZeroLocus
 
 [Tag 052X](https://stacks.math.columbia.edu/tag/052X) in the Stacks Project.
 
-**`Module.FlatAlongZeroLocus.baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L57).
+**`Module.FlatAlongZeroLocus.baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L57).
 
 > Let `T` be a pushout of maps of commutative rings `R → S` and `R → R'`.
 > If an `S`-module `M` is flat over `R` along the inverse image of the zero locus of `I`, and the
@@ -55,7 +55,7 @@ lemma Module.FlatAlongZeroLocus.baseChange
 
 [Tag 05LL](https://stacks.math.columbia.edu/tag/05LL) in the Stacks Project.
 
-**`Module.FlatAlongZeroLocus.of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L345).
+**`Module.FlatAlongZeroLocus.of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ClosedSubset/FlatAlongZeroLocus.lean#L344).
 
 > Flatness along the inverse image of a closed subset descends after a
 > base change which is surjective onto that closed subset and whose local rings there are flat
@@ -83,7 +83,7 @@ theorem Module.FlatAlongZeroLocus.of_baseChange
 
 [Tag 05LM](https://stacks.math.columbia.edu/tag/05LM) in the Stacks Project.
 
-**`Module.exists_flatAlongZeroLocus_baseChange_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/ColimitDescent.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ClosedSubset/ColimitDescent.lean#L615).
+**`Module.exists_flatAlongZeroLocus_baseChange_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ClosedSubset/ColimitDescent.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ClosedSubset/ColimitDescent.lean#L615).
 
 > Flatness of a finitely presented module along the closed subset defined
 > by a compatible family of ideals in a directed system descends from the colimit to one stage.
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.18, Tag 05LK](https://stacks.math.columbia.edu/tag/05LK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

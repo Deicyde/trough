@@ -8,7 +8,7 @@ proof: formalized
 
 # Symmetric functions and skew Young tableaux
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html).
 
 ## The omega homomorphism on symmetric polynomials
 
@@ -24,7 +24,7 @@ symmetric polynomials in $R[x_v : v \in V]$ to themselves given by
 $\omega(P(e_1, \dots, e_n)) = P(h_1, \dots, h_n)$; equivalently, it is the unique $R$-algebra
 homomorphism with $\omega(e_k) = h_k$ for $1 \le k \le n$.
 
-Formalized by `MetaMathlibExt.MvPolynomial.omegaAlgHom`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#omega-alg-hom).
+Formalized by `MetaMathlibExt.MvPolynomial.omegaAlgHom`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#omega-alg-hom).
 
 ## Exponential specialization
 
@@ -39,7 +39,7 @@ power series in one variable $t$
 
 $$\operatorname{ex}(f) = \sum_{m \ge 0} \frac{[x_1 \cdots x_m] f}{m!} \, t^m \in \mathbb{Q}[[t]].$$
 
-Formalized by `MvPowerSeries.exponentialSpecialization`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#exponential-specialization).
+Formalized by `MvPowerSeries.exponentialSpecialization`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#exponential-specialization).
 
 ## Scalar product of symmetric polynomials
 
@@ -57,7 +57,7 @@ $$\langle f, g \rangle_n = \sum_{\lambda} c_\lambda(a_\delta f) \, c_\lambda(a_\
 
 the sum taken over all sequences $\lambda$ as above; only finitely many terms are nonzero.
 
-Formalized by `MetaMathlibExt.symmetricScalarProduct`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#symmetric-scalar-product).
+Formalized by `MetaMathlibExt.symmetricScalarProduct`, a definition declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#symmetric-scalar-product).
 
 ## Skew shape
 
@@ -70,7 +70,7 @@ its diagram. For partitions $\lambda$ and $\mu$ write $\mu \subseteq \lambda$ wh
 $D(\mu) \subseteq D(\lambda)$. A skew shape $\lambda/\mu$ is an ordered pair of partitions, an
 outer partition $\lambda$ and an inner partition $\mu$, with $\mu \subseteq \lambda$.
 
-Formalized by `MetaMathlibExt.SkewShape`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-shape).
+Formalized by `MetaMathlibExt.SkewShape`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-shape).
 
 ## Semistandard Young tableau of skew shape
 
@@ -86,7 +86,7 @@ $\lambda/\mu$ with $j < j'$ (rows weakly increase); $T_{i,j} < T_{i',j}$ wheneve
 $(i', j)$ are cells of $\lambda/\mu$ with $i < i'$ (columns strictly increase); and $T_{i,j} = 0$
 for every pair $(i, j)$ that is not a cell of $\lambda/\mu$.
 
-Formalized by `MetaMathlibExt.SkewSemistandardYoungTableau`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-semistandard-young-tableau).
+Formalized by `MetaMathlibExt.SkewSemistandardYoungTableau`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-semistandard-young-tableau).
 
 ## Standard Young tableau of skew shape
 
@@ -98,7 +98,7 @@ $(i, j) \mapsto T_{i,j}$ sends the cells of $\lambda/\mu$ bijectively onto $[n]$
 $\mu = \emptyset$, a standard Young tableau of shape $\lambda/\emptyset$ is also called a standard
 Young tableau of shape $\lambda$.
 
-Formalized by `MetaMathlibExt.SkewStandardYoungTableau`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-standard-young-tableau).
+Formalized by `MetaMathlibExt.SkewStandardYoungTableau`, a structure declared in [MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SymmetricFunctionsYoungTableaux.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html#skew-standard-young-tableau).
 
 ## Depends on
 
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Symmetric functions and skew Young tableaux](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/symmetric-functions-and-skew-young-tableaux)

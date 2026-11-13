@@ -8,7 +8,7 @@ proof: formalized
 
 # 5.13 Locally quasi-compact spaces
 
-Section 5.13 of the Stacks Project, [Tag 08ZQ](https://stacks.math.columbia.edu/tag/08ZQ). 7 tags here are carried by 4 declarations of the repository (1 in StacksCore and 3 in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.13 of the Stacks Project, [Tag 08ZQ](https://stacks.math.columbia.edu/tag/08ZQ). 7 tags here are carried by 4 declarations of the repository (1 in StacksCore and 3 in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0068, a definition
 
@@ -16,7 +16,7 @@ Section 5.13 of the Stacks Project, [Tag 08ZQ](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`LocallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyQuasiCompact.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/LocallyQuasiCompact.lean#L30) (StacksCore): “a locally quasi-compact space”.
+- [`LocallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyQuasiCompact.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/LocallyQuasiCompact.lean#L30) (StacksCore): “a locally quasi-compact space”.
 
 ## Tag 08ZR, a lemma
 
@@ -24,8 +24,8 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`WeaklyLocallyCompactSpace.exists_compact_mem_nhds`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=WeaklyLocallyCompactSpace.exists_compact_mem_nhds#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyHausdorff.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/LocallyHausdorff.lean#L21) (StacksCore): “every point of a locally quasi-compact space has a quasi-compact neighbourhood”.
-- [`WeaklyLocallyCompactSpace.locallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=WeaklyLocallyCompactSpace.locallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyHausdorff.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/LocallyHausdorff.lean#L23) (StacksCore): “conversely, an R₁ (in particular Hausdorff) space in which every point has a quasi-compact neighbourhood is locally quasi-compact”.
+- [`WeaklyLocallyCompactSpace.exists_compact_mem_nhds`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=WeaklyLocallyCompactSpace.exists_compact_mem_nhds#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyHausdorff.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/LocallyHausdorff.lean#L21) (StacksCore): “every point of a locally quasi-compact space has a quasi-compact neighbourhood”.
+- [`WeaklyLocallyCompactSpace.locallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=WeaklyLocallyCompactSpace.locallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/LocallyHausdorff.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/LocallyHausdorff.lean#L23) (StacksCore): “conversely, an R₁ (in particular Hausdorff) space in which every point has a quasi-compact neighbourhood is locally quasi-compact”.
 
 ## Tag 0CQN, a lemma
 
@@ -33,14 +33,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`BaireSpace.of_t2Space_locallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=BaireSpace.of_t2Space_locallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/Baire.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/Baire.lean#L23) (StacksCore): “a locally quasi-compact Hausdorff space is a Baire space”.
-- [`dense_iInter_of_isOpen_nat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=dense_iInter_of_isOpen_nat#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/Baire.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/Baire.lean#L25) (StacksCore): “a countable intersection of dense opens is dense”.
+- [`BaireSpace.of_t2Space_locallyCompactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=BaireSpace.of_t2Space_locallyCompactSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/Baire.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/Baire.lean#L23) (StacksCore): “a locally quasi-compact Hausdorff space is a Baire space”.
+- [`dense_iInter_of_isOpen_nat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=dense_iInter_of_isOpen_nat#doc) registered with `add_to_stacks` in [StacksCore/Topology/Compact/Baire.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/Baire.lean#L25) (StacksCore): “a countable intersection of dense opens is dense”.
 
 ## Tag 09UV, a lemma
 
 [Tag 09UV](https://stacks.math.columbia.edu/tag/09UV) in the Stacks Project.
 
-**`relatively_compact_refinement`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Compact/ShrinkCover.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Compact/ShrinkCover.lean#L33).
+**`relatively_compact_refinement`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Compact/ShrinkCover.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Compact/ShrinkCover.lean#L33).
 
 > **Stacks 09UV.** Let `X` be a quasi-compact Hausdorff space and `U : I → Set X` an open cover.
 > Then there is an open cover `V : I → Set X` with the same index set such that
@@ -63,7 +63,7 @@ theorem relatively_compact_refinement
 
 [Tag 09UW](https://stacks.math.columbia.edu/tag/09UW) in the Stacks Project.
 
-**`exists_cover_closure_subset_and_refines`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/RefineCover.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Compact/RefineCover.lean#L354).
+**`exists_cover_closure_subset_and_refines`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/RefineCover.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Compact/RefineCover.lean#L354).
 
 > **Stacks 09UW**.
 > Let `(U i)` be an open cover of a compact Hausdorff space `X` and let `(W i k)` be, for each
@@ -101,7 +101,7 @@ theorem exists_cover_closure_subset_and_refines
 
 [Tag 09UX](https://stacks.math.columbia.edu/tag/09UX) in the Stacks Project.
 
-**`shrinking_open_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/ShrinkCoverSubset.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Compact/ShrinkCoverSubset.lean#L284).
+**`shrinking_open_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/ShrinkCoverSubset.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Compact/ShrinkCoverSubset.lean#L284).
 
 > Stacks Project, Tag 09UX (Shrinking an open covering).
 >
@@ -134,7 +134,7 @@ theorem shrinking_open_covering
 
 [Tag 0CY5](https://stacks.math.columbia.edu/tag/0CY5) in the Stacks Project.
 
-**`TopologicalSpace.exists_isOpen_refinement_of_isCompact_of_pairwiseSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/ShrinkingCover.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Compact/ShrinkingCover.lean#L299).
+**`TopologicalSpace.exists_isOpen_refinement_of_isCompact_of_pairwiseSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compact/ShrinkingCover.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Compact/ShrinkingCover.lean#L299).
 
 > **Stacks 0CY5.** Let `Z` be a quasi-compact subset of a topological space `X` whose
 > distinct points can be separated by disjoint opens of `X`, let `U : I → Set X` be an open
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.13, Tag 08ZQ](https://stacks.math.columbia.edu/tag/08ZQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

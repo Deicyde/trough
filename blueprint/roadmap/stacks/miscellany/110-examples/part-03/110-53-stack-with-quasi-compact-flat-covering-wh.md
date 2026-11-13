@@ -1,38 +1,36 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Stack.isFiniteType_of_smoothSchemeCovering_classifyingStack
+lean: AlgebraicGeometry.Stack.isFiniteType_classifyingStack_of_smoothSchemeCovering
 statement: formalized
 proof: formalized
 ---
 
 # 110.53 Stack with quasi-compact flat covering which is not algebraic
 
-Section 110.53 of the Stacks Project, [Tag 04AG](https://stacks.math.columbia.edu/tag/04AG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.53 of the Stacks Project, [Tag 04AG](https://stacks.math.columbia.edu/tag/04AG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04AH, a lemma
 
 [Tag 04AH](https://stacks.math.columbia.edu/tag/04AH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFiniteType_of_smoothSchemeCovering_classifyingStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ClassifyingStackSmoothCovering.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Stacks/ClassifyingStackSmoothCovering.lean#L125). The attribute's comment: “conditional on Stacks 04WZ, that the diagonal of a quotient stack is representable by algebraic spaces, and on the implication of Stacks 06PL that an algebraic classifying stack has a group locally of finite presentation over the base”.
+**`AlgebraicGeometry.Stack.isFiniteType_classifyingStack_of_smoothSchemeCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean#L69).
 
 > **Stacks 04AH.** Let `k` be a field and let `G` be an affine group scheme over `k`. If the
 > classifying stack `[Spec(k)/G]` has a smooth surjective covering by a scheme, then `G` is of
 > finite type over `k`.
 >
-> The covering hypothesis is the third clause of Stacks 026O for the classifying stack. The
-> hypotheses `hdiag` and `hfp` are Stacks 04WZ and the forward implication of Stacks 06PL, which
-> this library does not have.
+> The covering hypothesis is the third clause of Stacks 026O for the classifying stack. By
+> Stacks 04WZ the classifying stack is then algebraic, and by the half of Stacks 06PL going from
+> algebraicity to flatness and local finite presentation, the group is locally of finite
+> presentation over `k`.
 
 ```lean
-theorem isFiniteType_of_smoothSchemeCovering_classifyingStack
+theorem isFiniteType_classifyingStack_of_smoothSchemeCovering
     (G : Space.GroupAlgebraicSpace C (Spec (.of k)) hk
       (Space.terminalSpace C (Spec (.of k)) hk).obj
       (Space.terminalSpace C (Spec (.of k)) hk).property)
     (hAffine : Space.IsAffineHom C (Spec (.of k)) hk G.obj.X.hom)
-    (hdiag : HasRepresentableDiagonal C (Spec (.of k)) hk (classifyingStack C hk G))
-    (hfp : IsAlgebraicStack.{u, u} C (Spec (.of k)) hk (classifyingStack C hk G).val →
-      Space.IsLocallyOfFinitePresentation C (Spec (.of k)) hk G.obj.X.hom)
     (hcov :
       ∃ (U : BigFppfOver C (Spec (.of k)) hk)
         (f : (schemeFibredCategory C (Spec (.of k)) hk U).val ⥤ᵇ
@@ -63,4 +61,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.53, Tag 04AG](https://stacks.math.columbia.edu/tag/04AG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

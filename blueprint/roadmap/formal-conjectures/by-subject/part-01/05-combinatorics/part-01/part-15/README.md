@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 775 to Erdős Problem 816
+# Erdős Problem 772 to Erdős Problem 813
 
+- [Erdős Problem 772](../../../../../erdos-problems/700-799/part-04/erdos-problem-772.md)
+- [Erdős Problem 774](../../../../../erdos-problems/700-799/part-04/erdos-problem-774.md)
 - [Erdős Problem 775](../../../../../erdos-problems/700-799/part-04/erdos-problem-775.md)
 - [Erdős Problem 777](../../../../../erdos-problems/700-799/part-04/erdos-problem-777.md)
 - [Erdős Problem 780](../../../../../erdos-problems/700-799/part-04/erdos-problem-780.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdős Problem 810](../../../../../erdos-problems/800-899/part-01/erdos-problem-810.md)
 - [Erdős Problem 812](../../../../../erdos-problems/800-899/part-01/erdos-problem-812.md)
 - [Erdős Problem 813](../../../../../erdos-problems/800-899/part-01/erdos-problem-813.md)
-- [Erdős Problem 814](../../../../../erdos-problems/800-899/part-01/erdos-problem-814.md)
-- [Erdős Problem 816](../../../../../erdos-problems/800-899/part-01/erdos-problem-816.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.15 Topological invariance of the étale topology
 
-Section 41.15 of the Stacks Project, [Tag 06NE](https://stacks.math.columbia.edu/tag/06NE). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.15 of the Stacks Project, [Tag 06NE](https://stacks.math.columbia.edu/tag/06NE). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 025H, a theorem
 
 [Tag 025H](https://stacks.math.columbia.edu/tag/025H) in the Stacks Project.
 
-**`Stacks.Etale.bijective_pullbackHom_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/EtaleDescentIntegral.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/EtaleDescentIntegral.lean#L345). References: EGA IV (18.1.3); EGA IV (18.1.2), “fully faithful”; SGA 1 I (5.5); SGA 1 IX (1.7), “fully faithful”.
+**`Stacks.Etale.bijective_pullbackHom_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/EtaleDescentIntegral.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/EtaleDescentIntegral.lean#L345). References: EGA IV (18.1.3); EGA IV (18.1.2), “fully faithful”; SGA 1 I (5.5); SGA 1 IX (1.7), “fully faithful”.
 
 > Base change along a closed immersion with the same underlying space induces a bijection on
 > morphisms into an étale scheme.
@@ -30,7 +30,7 @@ theorem bijective_pullbackHom_of_etale
 
 [Tag 039R](https://stacks.math.columbia.edu/tag/039R) in the Stacks Project.
 
-**`Stacks.Etale.etalePullback_isEquivalence_of_surjective_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TopologicalInvarianceThickening.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TopologicalInvarianceThickening.lean#L99). References: EGA IV (18.1.2); SGA 3 X (2.0); SGA 1 IX (1.7); SGA 1 I (5.5), “special case”.
+**`Stacks.Etale.etalePullback_isEquivalence_of_surjective_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TopologicalInvarianceThickening.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TopologicalInvarianceThickening.lean#L99). References: EGA IV (18.1.2); SGA 3 X (2.0); SGA 1 IX (1.7); SGA 1 I (5.5), “special case”.
 
 > **Une équivalence remarquable de catégories.** Let `S₀ ⊆ S` be a closed subscheme with the same
 > underlying topological space. Base change along the closed immersion is an equivalence from the
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.15, Tag 06NE](https://stacks.math.columbia.edu/tag/06NE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

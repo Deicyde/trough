@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.18 The local duality theorem
 
-Section 47.18 of the Stacks Project, [Tag 0A81](https://stacks.math.columbia.edu/tag/0A81). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.18 of the Stacks Project, [Tag 0A81](https://stacks.math.columbia.edu/tag/0A81). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A82, a lemma
 
 [Tag 0A82](https://stacks.math.columbia.edu/tag/0A82) in the Stacks Project.
 
-**`Dualizing.LocalDuality.exists_isInjectiveHull_homology_zero_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean#L663). The attribute's comment: “injective hull”.
+**`Dualizing.LocalDuality.exists_isInjectiveHull_homology_zero_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean#L663). The attribute's comment: “injective hull”.
 
 > The degree-zero local cohomology of a normalized dualizing complex at the closed point is an
 > injective hull of the residue field.
@@ -35,7 +35,7 @@ public theorem exists_isInjectiveHull_homology_zero_localCohomology
       @Module.IsInjectiveHull (ModuleCat.{max v u} A) _ _ _ _ _ i hi
 ```
 
-**`Dualizing.LocalDuality.nonempty_localCohomology_iso_single_homology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean#L687). The attribute's comment: “concentration in degree zero”.
+**`Dualizing.LocalDuality.nonempty_localCohomology_iso_single_homology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/NormalizedDualizingComplex/InjectiveHull.lean#L687). The attribute's comment: “concentration in degree zero”.
 
 > Local cohomology of a normalized dualizing complex at the closed point is its degree-zero
 > cohomology module placed in degree zero.
@@ -57,7 +57,7 @@ public theorem nonempty_localCohomology_iso_single_homology_zero
 
 [Tag 0A83](https://stacks.math.columbia.edu/tag/0A83) in the Stacks Project.
 
-**`Dualizing.LocalDuality.nonempty_localCohomology_iso_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L71). The attribute's comment: “the realization is independent of the normalized dualizing complex”.
+**`Dualizing.LocalDuality.nonempty_localCohomology_iso_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L71). The attribute's comment: “the realization is independent of the normalized dualizing complex”.
 
 > Let `(A, 𝔪, κ)` be a Noetherian local ring and let `Z = V(𝔪)`. If `ω` and `ω'` are normalized
 > dualizing complexes for `A`, then `RΓ_Z(ω) ≅ RΓ_Z(ω')` in `D(A)`.
@@ -79,7 +79,7 @@ public theorem nonempty_localCohomology_iso_localCohomology
               (IsNoetherian.noetherian _)).obj ω'))
 ```
 
-**`Dualizing.LocalDuality.injectiveHullUnitsMulEquivUnitsAdicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L101). The attribute's comment: “the automorphism group of an injective hull of the residue field is the units of the completion”.
+**`Dualizing.LocalDuality.injectiveHullUnitsMulEquivUnitsAdicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L101). The attribute's comment: “the automorphism group of an injective hull of the residue field is the units of the completion”.
 
 > Let `(A, 𝔪, κ)` be a Noetherian local ring and let `i : κ ⟶ E` present `E` as an injective
 > hull of the residue field. The units of `End_A(E)` are the units of the `𝔪`-adic completion
@@ -94,7 +94,7 @@ public def injectiveHullUnitsMulEquivUnitsAdicCompletion
     (Module.End A E)ˣ ≃* (AdicCompletion (IsLocalRing.maximalIdeal A) A)ˣ
 ```
 
-**`Dualizing.IsNormalizedDualizingComplex.nonempty_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean#L108). The attribute's comment: “a normalized dualizing complex is unique up to isomorphism; stated at the ring's own module universe”.
+**`Dualizing.IsNormalizedDualizingComplex.nonempty_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean#L108). The attribute's comment: “a normalized dualizing complex is unique up to isomorphism; stated at the ring's own module universe”.
 
 > **A normalized dualizing complex over a Noetherian local ring is unique up to isomorphism.**
 > Two dualizing complexes differ by derived tensor product with an invertible object
@@ -114,7 +114,7 @@ public theorem IsNormalizedDualizingComplex.nonempty_iso
     Nonempty (ω ≅ ω')
 ```
 
-**`Dualizing.IsDualizingComplex.autMulEquivUnits`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean#L173). The attribute's comment: “the automorphism group of a dualizing complex is the group of units of the base ring; proved for every dualizing complex, not only a normalized one, and stated at the ring's own module universe”.
+**`Dualizing.IsDualizingComplex.autMulEquivUnits`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedUniqueness.lean#L173). The attribute's comment: “the automorphism group of a dualizing complex is the group of units of the base ring; proved for every dualizing complex, not only a normalized one, and stated at the ring's own module universe”.
 
 > **The automorphism group of a dualizing complex is the unit group of the base ring.** Reading
 > off the units of `Dualizing.IsDualizingComplex.endAlgEquiv`: an automorphism of `ω` in `D(A)` is
@@ -135,15 +135,15 @@ public def IsDualizingComplex.autMulEquivUnits
 
 Declarations registered for the tag:
 
-- [`exists_isInjectiveHull_homology_zero_localCohomology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=exists_isInjectiveHull_homology_zero_localCohomology#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L109) (StacksFrontier): “the opening sentence, that `RΓ_Z(ω)` is an injective hull of the residue field: the hull half, read from Stacks 0A82”.
-- [`nonempty_localCohomology_iso_single_homology_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=nonempty_localCohomology_iso_single_homology_zero#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L113) (StacksFrontier): “the opening sentence, that `RΓ_Z(ω)` is an injective hull of the residue field placed in degree zero: the concentration half, read from Stacks 0A82”.
-- [`Module.exists_iso_of_isInjectiveHull`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L210), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L117) (StacksFrontier): “an injective hull of the residue field is unique up to isomorphism; proved for an arbitrary object of an arbitrary abelian category, which is Stacks 08Y4”.
+- [`exists_isInjectiveHull_homology_zero_localCohomology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=exists_isInjectiveHull_homology_zero_localCohomology#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L109) (StacksFrontier): “the opening sentence, that `RΓ_Z(ω)` is an injective hull of the residue field: the hull half, read from Stacks 0A82”.
+- [`nonempty_localCohomology_iso_single_homology_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=nonempty_localCohomology_iso_single_homology_zero#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L113) (StacksFrontier): “the opening sentence, that `RΓ_Z(ω)` is an injective hull of the residue field placed in degree zero: the concentration half, read from Stacks 0A82”.
+- [`Module.exists_iso_of_isInjectiveHull`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L210), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L117) (StacksFrontier): “an injective hull of the residue field is unique up to isomorphism; proved for an arbitrary object of an arbitrary abelian category, which is Stacks 08Y4”.
 
 ## Tag 0A84, a theorem
 
 [Tag 0A84](https://stacks.math.columbia.edu/tag/0A84) in the Stacks Project.
 
-**`Dualizing.LocalDuality.nonempty_derivedCompletion_derivedHom_iso_derivedHom_injectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L145).
+**`Dualizing.LocalDuality.nonempty_derivedCompletion_derivedHom_iso_derivedHom_injectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L145).
 
 > The local duality theorem. Let `(A, 𝔪, κ)` be a Noetherian local ring, let `ω` be a
 > normalized dualizing complex, let `i : κ ⟶ E` be an injective hull of the residue field, and let
@@ -172,7 +172,7 @@ public theorem nonempty_derivedCompletion_derivedHom_iso_derivedHom_injectiveHul
             (DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj E))
 ```
 
-**`Dualizing.LocalDuality.nonempty_localDualityNatIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L180). The attribute's comment: “natural in K”.
+**`Dualizing.LocalDuality.nonempty_localDualityNatIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDuality.lean#L180). The attribute's comment: “natural in K”.
 
 > The local duality theorem, natural in `K`. Let `(A, 𝔪, κ)` be a Noetherian local ring, let
 > `ω` be a normalized dualizing complex, let `i : κ ⟶ E` be an injective hull of the residue
@@ -200,7 +200,7 @@ public theorem nonempty_localDualityNatIso
 
 [Tag 0AAK](https://stacks.math.columbia.edu/tag/0AAK) in the Stacks Project.
 
-**`Dualizing.LocalDuality.nonempty_adicCompletion_ext_linearEquiv_linearMap_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L771). References: SGA 2 V (2.1), “Ext^\{-i}≅Hom(H^i,E)”.
+**`Dualizing.LocalDuality.nonempty_adicCompletion_ext_linearEquiv_linearMap_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 771](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L771). References: SGA 2 V (2.1), “Ext^\{-i}≅Hom(H^i,E)”.
 
 > Let `(A, 𝔪, κ)` be a Noetherian local ring, let `ω` be a normalized dualizing complex, let
 > `ι : κ ⟶ E` be an injective hull of the residue field, and let `K` be an object of `D_Coh(A)`,
@@ -232,7 +232,7 @@ public theorem nonempty_adicCompletion_ext_linearEquiv_linearMap_localCohomology
                 (IsNoetherian.noetherian _)).obj K)) →ₗ[A] E))
 ```
 
-**`Dualizing.LocalDuality.exists_localDualityExtNatEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 878](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L878). The attribute's comment: “natural in K”.
+**`Dualizing.LocalDuality.exists_localDualityExtNatEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 878](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L878). The attribute's comment: “natural in K”.
 
 > Let `(A, 𝔪, κ)` be a Noetherian local ring, let `ω` be a normalized dualizing complex, let
 > `ι : κ ⟶ E` be an injective hull of the residue field, and let `Z = V(𝔪)`. For every integer
@@ -288,7 +288,7 @@ public theorem exists_localDualityExtNatEquiv
                 (IsNoetherian.noetherian _)).map g)).hom
 ```
 
-**`Stacks.LocalCohomology.nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L339). The attribute's comment: “the module form, with the support-closed-subset model of local cohomology in place of the torsion-complex model”.
+**`Stacks.LocalCohomology.nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L339). The attribute's comment: “the module form, with the support-closed-subset model of local cohomology in place of the torsion-complex model”.
 
 > **Stacks Project, Tag 0AAK** in the spelling of local cohomology with support in `V(𝔪)`.
 > Over a Noetherian local ring with a normalized dualizing complex, the `𝔪`-adic completion of
@@ -311,7 +311,7 @@ theorem nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomology
           A (PrimeSpectrum.zeroLocus (maximalIdeal A : Set A)) K i →ₗ[A] E))
 ```
 
-**`Stacks.LocalCohomology.nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomologyPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L377). The attribute's comment: “the module form for a bounded-below complex, with the support-closed-subset model of local cohomology”.
+**`Stacks.LocalCohomology.nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomologyPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L377). The attribute's comment: “the module form for a bounded-below complex, with the support-closed-subset model of local cohomology”.
 
 > **Stacks Project, Tag 0AAK** for a bounded-below complex.
 
@@ -333,7 +333,7 @@ theorem nonempty_adicCompletion_ext_linearEquiv_matlisDual_localCohomologyPlus
           A (PrimeSpectrum.zeroLocus (maximalIdeal A : Set A)) K i →ₗ[A] E))
 ```
 
-**`Stacks.LocalCohomology.nonempty_adicCompletion_localizedDualCohomology_linearEquiv_matlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L726). The attribute's comment: “local duality at an arbitrary prime of a Noetherian ring with a dualizing complex, reached from the local case through the normalizing shift of 0A7Z and flat base change of Ext; objectwise, with no naturality in the complex”.
+**`Stacks.LocalCohomology.nonempty_adicCompletion_localizedDualCohomology_linearEquiv_matlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/LocalDuality.lean#L726). The attribute's comment: “local duality at an arbitrary prime of a Noetherian ring with a dualizing complex, reached from the local case through the normalizing shift of 0A7Z and flat base change of Ext; objectwise, with no naturality in the complex”.
 
 > **Local duality at an arbitrary prime.** Let `A` be Noetherian with dualizing complex `ω`
 > and dimension function `δ`, let `q` be a prime, and let `E` be an injective hull of the residue
@@ -377,4 +377,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.18, Tag 0A81](https://stacks.math.columbia.edu/tag/0A81)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

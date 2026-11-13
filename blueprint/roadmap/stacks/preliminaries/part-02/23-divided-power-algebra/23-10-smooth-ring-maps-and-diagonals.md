@@ -8,13 +8,13 @@ proof: formalized
 
 # 23.10 Smooth ring maps and diagonals
 
-Section 23.10 of the Stacks Project, [Tag 0FCV](https://stacks.math.columbia.edu/tag/0FCV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 23.10 of the Stacks Project, [Tag 0FCV](https://stacks.math.columbia.edu/tag/0FCV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FCW, a lemma
 
 [Tag 0FCW](https://stacks.math.columbia.edu/tag/0FCW) in the Stacks Project.
 
-**`StacksDraft.Smooth.exists_smooth_isLocalization_of_hasProjectiveDimensionLT_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean, line 1211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean#L1211).
+**`StacksDraft.Smooth.exists_smooth_isLocalization_of_hasProjectiveDimensionLT_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean, line 1187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean#L1187).
 
 > **Stacks 0FCW.** Let `A → B` be a flat ring map, essentially of finite type, from a Noetherian
 > ring to a local ring. If `B` has finite projective dimension over `B ⊗[A] B`, then `B` is the
@@ -41,7 +41,7 @@ public theorem exists_smooth_isLocalization_of_hasProjectiveDimensionLT_diagonal
 
 [Tag 0FCX](https://stacks.math.columbia.edu/tag/0FCX) in the Stacks Project.
 
-**`StacksDraft.Smooth.smooth_of_flat_of_hasProjectiveDimensionLT_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean, line 1384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean#L1384).
+**`StacksDraft.Smooth.smooth_of_flat_of_hasProjectiveDimensionLT_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/PerfectDiagonal.lean#L1354).
 
 > **Stacks 0FCX.** Let `A → B` be a flat finite type ring map from a Noetherian ring. If `B` has
 > finite projective dimension over `B ⊗[A] B`, then `B` is a smooth `A`-algebra.
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 23.10, Tag 0FCV](https://stacks.math.columbia.edu/tag/0FCV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

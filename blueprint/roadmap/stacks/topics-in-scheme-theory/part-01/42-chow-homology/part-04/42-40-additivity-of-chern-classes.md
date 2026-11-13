@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.chernClass_eq_of_shortExact_of_iso_unit, Stacks.Chow.chernCap_top_eq_zero, Stacks.Chow.chernCap_castSucc_eq, Stacks.Chow.chernClassCapExt_succ_eq_add_firstChernCap, Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact_of_isInvertible, Stacks.Chow.chernCapOnChow_eq_sum_of_shortExact, Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact, Stacks.Chow.chernClassCapExt_eq_elemSymmChernCap
+lean: Stacks.Chow.chernClass_eq_of_shortExact_of_iso_unit, Stacks.Chow.chernClassCapExt_succ_eq_add_firstChernCap, Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact_of_isInvertible, Stacks.Chow.chernCapOnChow_eq_sum_of_shortExact, Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact, Stacks.Chow.chernClassCapExt_eq_elemSymmChernCap, Stacks.Chow.totalChernClassCohomology_eq_prod_of_filtration
 statement: formalized
 proof: formalized
 ---
 
 # 42.40 Additivity of Chern classes
 
-Section 42.40 of the Stacks Project, [Tag 02UF](https://stacks.math.columbia.edu/tag/02UF). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.40 of the Stacks Project, [Tag 02UF](https://stacks.math.columbia.edu/tag/02UF). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02UG, a lemma
 
 [Tag 02UG](https://stacks.math.columbia.edu/tag/02UG) in the Stacks Project.
 
-**`Stacks.Chow.chernClass_eq_of_shortExact_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean#L162). The attribute's comment: “c\_r(E) = 0 and c\_j(E) = c\_j(F) for j = 0, ..., r - 1 in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> O\_X -> E -> F -> 0 on X locally of finite type over the base with E, F finite locally free of ranks r, r - 1; c\_j is the bivariant Chern class of Stacks 0B7H in A^j(X)”.
+**`Stacks.Chow.chernClass_eq_of_shortExact_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean#L164). The attribute's comment: “c\_r(E) = 0 and c\_j(E) = c\_j(F) for j = 0, ..., r - 1 in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> O\_X -> E -> F -> 0 on X locally of finite type over the base with E, F finite locally free of ranks r, r - 1; c\_j is the bivariant Chern class of Stacks 0B7H in A^j(X); unconditional, under exactly the source's hypotheses”.
 
 > **Stacks 02UG.** Let `X` be locally of finite type over the base and let
 > `0 ⟶ 𝒪_X ⟶ ℰ ⟶ ℱ ⟶ 0` be a short exact sequence of `𝒪_X`-modules with `ℰ`, `ℱ` finite locally
@@ -23,7 +23,9 @@ Section 42.40 of the Stacks Project, [Tag 02UF](https://stacks.math.columbia.edu
 >   `c_r(ℰ) = 0`,  `c_j(ℰ) = c_j(ℱ)`, `j = 0, …, r - 1`,
 >
 > in the Chow cohomology ring `A^*(X) = ⨁_p A^p(X)` of Stacks 0B7E, the `c_j` being the bivariant
-> Chern classes of Stacks 0B7H placed in their degree.
+> Chern classes of Stacks 0B7H placed in their degree. No hypothesis beyond the source's is taken.
+> The equivalent form on cap products is
+> `Stacks.Chow.GenuineChern.chernCap_eq_of_shortExact_of_iso_unit`.
 
 ```lean
 theorem chernClass_eq_of_shortExact_of_iso_unit (S : ShortComplex Y.Modules) (hS : S.ShortExact)
@@ -39,102 +41,11 @@ theorem chernClass_eq_of_shortExact_of_iso_unit (S : ShortComplex Y.Modules) (hS
             (j : ℤ) (GenuineChern.chernClass C sY S.X₃ (r - 1) ⟨j, by omega⟩)
 ```
 
-**`Stacks.Chow.chernCap_top_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/TrivialSubsheaf.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/TrivialSubsheaf.lean#L338). The attribute's comment: “the vanishing c\_\{r+2}(E) cap alpha = 0, stated degreewise on the cap products of 02U5 rather than in A^*(X), which has no multiplication here; ranks r + 2 and r + 1, so the source's r = 1 is excluded; bundles, twists, iota, 02TX injectivity and 02TR+02SU are inputs”.
-
-> **Stacks 02UG, the vanishing of the top Chern class, on cap products.** Let
->
->   `0 ⟶ O_X ⟶ ℰ ⟶ ℱ ⟶ 0`
->
-> be a short exact sequence of finite locally free modules on `X` with `ℰ` of rank `r + 2` and `ℱ`
-> of rank `r + 1`. Then for every `k` and every class `α ∈ A_k(X)`,
->
->   `c_{r+2}(ℰ) ∩ α = 0`  in  `A_{k-r-2}(X)`.
->
-> The cap products are the members of families satisfying the characterization of Stacks 02U6,
-> which is how they exist in this repository at all: `hc` and `he` are those families for `ℰ` and
-> for `ℱ`. The proof is the proof of the source: the family of `ℱ` extended by zero satisfies the
-> relation over the bundle of `ℰ`, by Stacks 02TR and 02SU, and the uniqueness of Stacks 02U6
-> identifies it with the family of `ℰ`, whose top member is therefore zero.
->
-> Stacks 02S1 for the two projections is supplied from
-> `Stacks.Chow.flatPullbackFactorsThroughRationalEquivalence_general` and is not an argument. The
-> projective bundles themselves, their twists `O_P(1)` and `O_Q(1)`, the closed immersion `ι`, the
-> injectivity half of Stacks 02TX over `P` and the summandwise form `hcompat` of Stacks 02TR and
-> 02SU are arguments, because Stacks 02TX and the representability of the twists (Stacks 01O4) are
-> not in this repository; see the module documentation.
-
-```lean
-theorem chernCap_top_eq_zero
-    (hinj : ProjectiveBundleRelationInjective C sX sP π hsP (r + 2) hπ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      twistP)
-    (hcompat : ChernTermsCompatibleWithTrivialSubbundle C sX sP sQ π hsP ϖ hsQ r hπ hϖ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      (flatPullbackFactorsThroughRationalEquivalence_general C sQ sX ϖ hsQ (r + 1 - 1) hϖ)
-      twistP twistQ ι hι)
-    (_S : ShortComplex X.Modules)
-    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} _S.X₂ (r + 2)]
-    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} _S.X₃ (r + 1)]
-    (_hunit : _S.X₁ ≅ (SheafOfModules.unit X.ringCatSheaf : X.Modules))
-    (_hexact : _S.ShortExact) (k : ℤ) (α : chowGroup C sX k)
-    (c : ∀ j : Fin (r + 3), chowGroup C sX (k - (j : ℤ)))
-    (e : ∀ j : Fin (r + 2), chowGroup C sX (k - (j : ℤ)))
-    (hc : IsChernCapFamily C sX sP π hsP (r + 2) hπ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      twistP k α c)
-    (he : IsChernCapFamily C sX sQ ϖ hsQ (r + 1) hϖ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sQ sX ϖ hsQ (r + 1 - 1) hϖ)
-      twistQ k α e) :
-    c (Fin.last (r + 2)) = 0
-```
-
-**`Stacks.Chow.chernCap_castSucc_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/TrivialSubsheaf.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/TrivialSubsheaf.lean#L383). The attribute's comment: “the agreement c\_j(E) cap alpha = c\_j(F) cap alpha for j <= r + 1, stated degreewise on the cap products of 02U5 rather than in A^*(X), which has no multiplication here; ranks r + 2 and r + 1; bundles, twists, iota, 02TX and 02TR+02SU are inputs”.
-
-> **Stacks 02UG, the agreement of the lower Chern classes, on cap products.** Let
->
->   `0 ⟶ O_X ⟶ ℰ ⟶ ℱ ⟶ 0`
->
-> be a short exact sequence of finite locally free modules on `X` with `ℰ` of rank `r + 2` and `ℱ`
-> of rank `r + 1`. Then for every `k`, every class `α ∈ A_k(X)` and every `j ≤ r + 1`,
->
->   `c_j(ℰ) ∩ α = c_j(ℱ) ∩ α`  in  `A_{k-j}(X)`.
->
-> As for the vanishing above, the cap products are the members of families satisfying the
-> characterization of Stacks 02U6, and the proof is the uniqueness of that characterization applied
-> to the family of `ℱ` extended by zero. The inputs are the ones listed at
-> `Stacks.Chow.chernCap_top_eq_zero`, Stacks 02S1 for the two projections again being supplied from
-> `Stacks.Chow.flatPullbackFactorsThroughRationalEquivalence_general`.
-
-```lean
-theorem chernCap_castSucc_eq
-    (hinj : ProjectiveBundleRelationInjective C sX sP π hsP (r + 2) hπ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      twistP)
-    (hcompat : ChernTermsCompatibleWithTrivialSubbundle C sX sP sQ π hsP ϖ hsQ r hπ hϖ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      (flatPullbackFactorsThroughRationalEquivalence_general C sQ sX ϖ hsQ (r + 1 - 1) hϖ)
-      twistP twistQ ι hι)
-    (_S : ShortComplex X.Modules)
-    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} _S.X₂ (r + 2)]
-    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} _S.X₃ (r + 1)]
-    (_hunit : _S.X₁ ≅ (SheafOfModules.unit X.ringCatSheaf : X.Modules))
-    (_hexact : _S.ShortExact) (k : ℤ) (α : chowGroup C sX k)
-    (c : ∀ j : Fin (r + 3), chowGroup C sX (k - (j : ℤ)))
-    (e : ∀ j : Fin (r + 2), chowGroup C sX (k - (j : ℤ)))
-    (hc : IsChernCapFamily C sX sP π hsP (r + 2) hπ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sP sX π hsP (r + 2 - 1) hπ)
-      twistP k α c)
-    (he : IsChernCapFamily C sX sQ ϖ hsQ (r + 1) hϖ
-      (flatPullbackFactorsThroughRationalEquivalence_general C sQ sX ϖ hsQ (r + 1 - 1) hϖ)
-      twistQ k α e) (j : Fin (r + 2)) :
-    c j.castSucc = e j
-```
-
 ## Tag 02UH, a lemma
 
 [Tag 02UH](https://stacks.math.columbia.edu/tag/02UH) in the Stacks Project.
 
-**`Stacks.Chow.chernClassCapExt_succ_eq_add_firstChernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/CapProductRelation.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/CapProductRelation.lean#L212). The attribute's comment: “CORRECTION OF FORM: the source states c(E) = c(L)c(F) in the bivariant ring A^*(X). That product is not stated here, and cannot be: this development has no ring structure on bivariant classes and no total Chern class, because Chern classes are built as operations CycleGroup C p k -> chowGroup C p (k - j) on X's own cycles (Stacks 02U5) rather than as bivariant classes over all Y -> X -- the source's formulation needs proper pushforward on Chow groups, Stacks 0GU8, which this repository does not have. What is proved instead is the componentwise identity c\_\{i+1}(E) = c\_\{i+1}(F) + c₁(L)c\_i(F) that the source's own proof reduces the product to, for every n and every cycle alpha in CycleGroup C p n. Carried: hbinom (the equality of binomial transforms that Stacks 02UD at the twists by the inverse of the invertible subsheaf gives once Stacks 02UG is applied to them), the Stacks 02U0 data chernE and chernF, and Stacks 02TI for c₁ of the subsheaf as hfac”.
+**`Stacks.Chow.chernClassCapExt_succ_eq_add_firstChernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/CapProductRelation.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/CapProductRelation.lean#L212). The attribute's comment: “CORRECTION OF FORM: the source states c(E) = c(L)c(F) in the bivariant ring A^*(X). That product is not stated here, and cannot be: this development has no ring structure on bivariant classes and no total Chern class, because Chern classes are built as operations CycleGroup C p k -> chowGroup C p (k - j) on X's own cycles (Stacks 02U5) rather than as bivariant classes over all Y -> X -- the source's formulation needs proper pushforward on Chow groups, Stacks 0GU8, which this repository does not have. What is proved instead is the componentwise identity c\_\{i+1}(E) = c\_\{i+1}(F) + c₁(L)c\_i(F) that the source's own proof reduces the product to, for every n and every cycle alpha in CycleGroup C p n. Carried: hbinom (the equality of binomial transforms that Stacks 02UD at the twists by the inverse of the invertible subsheaf gives once Stacks 02UG is applied to them), the Stacks 02U0 data chernE and chernF, and Stacks 02TI for c₁ of the subsheaf as hfac”.
 
 > **Stacks 02UH, componentwise on cap products.** For a short exact sequence
 > `0 ⟶ S.X₁ ⟶ S.X₂ ⟶ S.X₃ ⟶ 0` of finite locally free modules with `S.X₁` invertible, `S.X₂` of
@@ -172,7 +83,7 @@ theorem chernClassCapExt_succ_eq_add_firstChernCap (C : ChowSituation.{u}) {X : 
           (chernClassCapExt C p n S.X₃ r hrankF chernF i α)
 ```
 
-**`Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean#L189). The attribute's comment: “c(E) = c(L) c(F) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> L -> E -> F -> 0 on X locally of finite type over the base with L invertible and E, F finite locally free of ranks r, r - 1; c(G) is the sum in A^*(X) of the bivariant Chern classes c\_j(G) of Stacks 0B7H”.
+**`Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/InvertibleSubsheaf.lean#L191). The attribute's comment: “c(E) = c(L) c(F) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> L -> E -> F -> 0 on X locally of finite type over the base with L invertible and E, F finite locally free of ranks r, r - 1; c(G) is the sum in A^*(X) of the bivariant Chern classes c\_j(G) of Stacks 0B7H”.
 
 > **Stacks 02UH.** Let `X` be locally of finite type over the base and let
 > `0 ⟶ ℒ ⟶ ℰ ⟶ ℱ ⟶ 0` be a short exact sequence of `𝒪_X`-modules with `ℒ` invertible and `ℰ`, `ℱ`
@@ -199,7 +110,7 @@ theorem totalChernClassCohomology_eq_mul_of_shortExact_of_isInvertible
 
 [Tag 02UI](https://stacks.math.columbia.edu/tag/02UI) in the Stacks Project.
 
-**`Stacks.Chow.chernCapOnChow_eq_sum_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/ShortExactSequence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/ShortExactSequence.lean#L419). The attribute's comment: “CORRECTION OF FORM: the source states c(E) = c(E₁)c(E₂) in the bivariant ring A^*(X). That product is not stated here, and cannot be: this development has no ring structure on bivariant classes and no total Chern class, for the reasons recorded on Stacks 02UH in StacksFrontier.AlgebraicGeometry.Chow.ChernWhitney.CapProductRelation -- Chern classes are built as operations on X's own cycles rather than as bivariant classes over all Y -> X, and the source's formulation needs proper pushforward on Chow groups, Stacks 0GU8, which this repository does not have. What is proved instead is the componentwise identity c\_m(E) cap alpha = sum over i + j = m of c\_i(E₁) cap (c\_j(E₂) cap alpha), at arbitrary ranks r₁ of E₁ and r₂ of E₂, for every k and every class alpha in A\_k(X) -- which is what the product says once it is expanded, and is the reduction the source's own proof performs. Carried: cap, the Chern cap products on Chow groups of Stacks 0B7G (built there from Stacks 02U5 and Stacks 02U7, neither of which is in this repository); hbase, the relation when E₁ has rank at most one, whose rank-one case is Stacks 02UH -- proved in this repository, but in the vocabulary of the cap product on cycles and under its own carried hypotheses, so it does not supply this statement -- and whose rank-zero case needs the normalisation c\_0 = 1 of Stacks 02U0 together with invariance of the cap products under an isomorphism of modules, neither of which holds of a cap rule that is itself a parameter; and hsplit, the splitting datum of the source's induction, namely the projective space bundle of E₁ with its flat pullback injective (Stacks 02TX) and compatible with the cap products (Stacks 02U8), its twist (Stacks 01O4), and the three short exact sequences the source forms on it. The rank of the middle term is an instance hypothesis rather than derived, as it is for Stacks 02UH; AlgebraicGeometry.SheafOfModules.rank\_add\_of\_shortExact shows r₁ + r₂ is its only possible value. NOT carried, and proved here: the associativity of the convolution, the descent along the injective pullback, and the induction on r₁ itself”.
+**`Stacks.Chow.chernCapOnChow_eq_sum_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/ShortExactSequence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/ShortExactSequence.lean#L419). The attribute's comment: “CORRECTION OF FORM: the source states c(E) = c(E₁)c(E₂) in the bivariant ring A^*(X). That product is not stated here, and cannot be: this development has no ring structure on bivariant classes and no total Chern class, for the reasons recorded on Stacks 02UH in StacksFrontier.AlgebraicGeometry.Chow.ChernWhitney.CapProductRelation -- Chern classes are built as operations on X's own cycles rather than as bivariant classes over all Y -> X, and the source's formulation needs proper pushforward on Chow groups, Stacks 0GU8, which this repository does not have. What is proved instead is the componentwise identity c\_m(E) cap alpha = sum over i + j = m of c\_i(E₁) cap (c\_j(E₂) cap alpha), at arbitrary ranks r₁ of E₁ and r₂ of E₂, for every k and every class alpha in A\_k(X) -- which is what the product says once it is expanded, and is the reduction the source's own proof performs. Carried: cap, the Chern cap products on Chow groups of Stacks 0B7G (built there from Stacks 02U5 and Stacks 02U7, neither of which is in this repository); hbase, the relation when E₁ has rank at most one, whose rank-one case is Stacks 02UH -- proved in this repository, but in the vocabulary of the cap product on cycles and under its own carried hypotheses, so it does not supply this statement -- and whose rank-zero case needs the normalisation c\_0 = 1 of Stacks 02U0 together with invariance of the cap products under an isomorphism of modules, neither of which holds of a cap rule that is itself a parameter; and hsplit, the splitting datum of the source's induction, namely the projective space bundle of E₁ with its flat pullback injective (Stacks 02TX) and compatible with the cap products (Stacks 02U8), its twist (Stacks 01O4), and the three short exact sequences the source forms on it. The rank of the middle term is an instance hypothesis rather than derived, as it is for Stacks 02UH; AlgebraicGeometry.SheafOfModules.rank\_add\_of\_shortExact shows r₁ + r₂ is its only possible value. NOT carried, and proved here: the associativity of the convolution, the descent along the injective pullback, and the induction on r₁ itself”.
 
 > **Stacks 02UI, componentwise on cap products.** For a short exact sequence
 > `0 ⟶ S.X₁ ⟶ S.X₂ ⟶ S.X₃ ⟶ 0` of finite locally free modules of ranks `r₁`, `r₁ + r₂` and `r₂`,
@@ -235,7 +146,7 @@ theorem chernCapOnChow_eq_sum_of_shortExact (C : ChowSituation.{u})
             (chernCapFamilyOnChow C cap q S.X₃ r₂ k (j.val) α))
 ```
 
-**`Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/WhitneyChowCohomology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/WhitneyChowCohomology.lean#L223). The attribute's comment: “c(E) = c(E₁) c(E₂) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> E₁ -> E -> E₂ -> 0 on X locally of finite type over the base with E₁, E₂ finite locally free of ranks r₁, r₂ (E is then finite locally free of rank r₁ + r₂); c(F) is the sum in A^*(X) of the bivariant Chern classes c\_j(F) of Stacks 0B7H”.
+**`Stacks.Chow.totalChernClassCohomology_eq_mul_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/WhitneyChowCohomology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/WhitneyChowCohomology.lean#L223). The attribute's comment: “c(E) = c(E₁) c(E₂) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for a short exact sequence 0 -> E₁ -> E -> E₂ -> 0 on X locally of finite type over the base with E₁, E₂ finite locally free of ranks r₁, r₂ (E is then finite locally free of rank r₁ + r₂); c(F) is the sum in A^*(X) of the bivariant Chern classes c\_j(F) of Stacks 0B7H”.
 
 > **Stacks 02UI, the Whitney sum formula.** Let `X` be locally of finite type over the base and
 > let `0 ⟶ ℰ₁ ⟶ ℰ ⟶ ℰ₂ ⟶ 0` be a short exact sequence of `𝒪_X`-modules with `ℰ₁`, `ℰ₂` finite
@@ -260,7 +171,7 @@ theorem totalChernClassCohomology_eq_mul_of_shortExact (S : ShortComplex Y.Modul
 
 [Tag 02UJ](https://stacks.math.columbia.edu/tag/02UJ) in the Stacks Project.
 
-**`Stacks.Chow.chernClassCapExt_eq_elemSymmChernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FilteredAdditivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FilteredAdditivity.lean#L275). The attribute's comment: “the degree-k coefficients of c(E) = prod (1 + c\_1(L\_i)), stated on the cap products of 02U5 for k >= 1 rather than as a product in A^*(X), which has no multiplication here; the filtration enters as the tower of its quotients; 02U0, 02TI, 02UD+02UG are inputs”.
+**`Stacks.Chow.chernClassCapExt_eq_elemSymmChernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FilteredAdditivity.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FilteredAdditivity.lean#L275). The attribute's comment: “the degree-k coefficients of c(E) = prod (1 + c\_1(L\_i)), stated on the cap products of 02U5 for k >= 1 rather than as a product in A^*(X), which has no multiplication here; the filtration enters as the tower of its quotients; 02U0, 02TI, 02UD+02UG are inputs”.
 
 > **Stacks 02UJ, componentwise on cap products.** Let `ℰ = Q_r` be finite locally free of rank
 > `r` with a filtration whose successive quotients are the invertible modules `L 0, …, L (r-1)`,
@@ -302,7 +213,7 @@ theorem chernClassCapExt_eq_elemSymmChernCap (Q : ℕ → X.Modules)
         (QuotientAddGroup.mk' (rationalEquivalences C p n) α)
 ```
 
-**`Stacks.Chow.totalChernClassCohomology_eq_prod_of_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FiltrationChowCohomology.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FiltrationChowCohomology.lean#L249). The attribute's comment: “c(E) = prod\_\{i=1}^r (1 + c\_1(L\_i)) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for E with a filtration 0 = E\_0 ⊂ E\_1 ⊂ ... ⊂ E\_r = E by subobjects with E\_i/E\_\{i-1} ≅ L\_i invertible, on X locally of finite type over the base; c\_1(L\_i) is the class of Stacks 0B77 and E is shown to be finite locally free of rank r”.
+**`Stacks.Chow.totalChernClassCohomology_eq_prod_of_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FiltrationChowCohomology.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernWhitney/FiltrationChowCohomology.lean#L249). The attribute's comment: “c(E) = prod\_\{i=1}^r (1 + c\_1(L\_i)) in the Chow cohomology ring A^*(X) of Stacks 0B7E, for E with a filtration 0 = E\_0 ⊂ E\_1 ⊂ ... ⊂ E\_r = E by subobjects with E\_i/E\_\{i-1} ≅ L\_i invertible, on X locally of finite type over the base; c\_1(L\_i) is the class of Stacks 0B77 and E is shown to be finite locally free of rank r”.
 
 > **Stacks 02UJ.** Let `X` be locally of finite type over the base, let `ℒ_1, …, ℒ_r` be
 > invertible `𝒪_X`-modules and let `ℰ` be an `𝒪_X`-module with a filtration by submodules
@@ -339,4 +250,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.40, Tag 02UF](https://stacks.math.columbia.edu/tag/02UF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

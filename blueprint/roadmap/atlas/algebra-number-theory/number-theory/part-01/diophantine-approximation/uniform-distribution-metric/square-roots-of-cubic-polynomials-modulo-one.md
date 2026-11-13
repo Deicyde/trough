@@ -7,7 +7,7 @@ statement: formalized
 
 # Square roots of cubic polynomials modulo one
 
-10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html).
+10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html).
 
 ## Second-derivative test for exponential sums
 
@@ -27,7 +27,7 @@ this loses nothing.
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Lemma 4 (`jis-2026-26.5.5-lem-4`), quoted there from Kuipers and Niederreiter, *Uniform Distribution of Sequences*, Thm. 2.7.
 
-Stated but not proved: `MetaMathlibExt.norm_sum_exp_two_pi_I_le_of_iteratedDeriv_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#norm-sum-exp-two-pi-i-le-of-iterated-der).
+Stated but not proved: `MetaMathlibExt.norm_sum_exp_two_pi_I_le_of_iteratedDeriv_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#norm-sum-exp-two-pi-i-le-of-iterated-der).
 
 ## Square roots of cubics with positive leading coefficient are uniformly distributed modulo one
 
@@ -51,7 +51,7 @@ C \bigl(|\gamma|^{1/2} N^{3/4} + |\gamma| N^{1/2} + |\gamma|^{-1/2} N^{1/4} + 1\
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Proposition 6 (`jis-2026-26.5.5-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.exists_sqrt_cubic_equidistributed_mod_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#exists-sqrt-cubic-equidistributed-mod-on).
+Stated but not proved: `MetaMathlibExt.exists_sqrt_cubic_equidistributed_mod_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#exists-sqrt-cubic-equidistributed-mod-on).
 
 ## Square pyramidal number
 
@@ -62,7 +62,7 @@ is $P_n = 1^2 + 2^2 + \dots + n^2 = \sum_{i=1}^{n} i^2$ (so $P_0 = 0$).
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, equation (defn: square pyramidal number) of arXiv:2412.10097v2.
 
-Formalized by `MetaMathlibExt.squarePyramidalNumber`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-number).
+Formalized by `MetaMathlibExt.squarePyramidalNumber`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-number).
 
 ## Distance from a square pyramidal number to the nearest square
 
@@ -81,7 +81,7 @@ No ties occur, since the midpoint $m^2 + m + 1/2$ of two consecutive squares is 
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, equation (a_n first definition) of arXiv:2412.10097v2 (OEIS A351830).
 
-Formalized by `MetaMathlibExt.squarePyramidalSquareDistance`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance).
+Formalized by `MetaMathlibExt.squarePyramidalSquareDistance`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance).
 
 ## Small square pyramidal numbers and their distances to squares
 
@@ -94,7 +94,7 @@ $4$); $P_{24} = 4900 = 70^2$; and $a_{24} = 0$ (the cannonball solution).
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Introduction.
 
-Formalized by `MetaMathlibExt.squarePyramidalSquareDistance_examples`, a theorem declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-example).
+Formalized by `MetaMathlibExt.squarePyramidalSquareDistance_examples`, a theorem declared in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-example).
 
 ## Average distance from square pyramidal numbers to the nearest square
 
@@ -111,7 +111,7 @@ that is, $A(x) = x^{3/2} / (5\sqrt{3}) + O(x^{5/4})$ with an absolute implied co
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Theorem 1 (`jis-2026-26.5.5-thm-1`); arXiv:2412.10097v2 states the error `O(x^{17/12})`.
 
-Stated but not proved: `MetaMathlibExt.squarePyramidalSquareDistance_average_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-average).
+Stated but not proved: `MetaMathlibExt.squarePyramidalSquareDistance_average_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-average).
 
 ## Moments of the distance from square pyramidal numbers to the nearest square
 
@@ -126,7 +126,7 @@ $$\Bigl|M_k(x) - \frac{x^{3k/2 + 1}}{3^{k/2} (3k/2 + 1)(k + 1)}\Bigr| \le C_k x^
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Theorem 3 (`jis-2026-26.5.5-thm-3`); arXiv:2412.10097v2 states the error `O_k(x^{3k/2 + 11/12})`.
 
-Stated but not proved: `MetaMathlibExt.squarePyramidalSquareDistance_moment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-moment).
+Stated but not proved: `MetaMathlibExt.squarePyramidalSquareDistance_moment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-square-distance-moment).
 
 ## The distance from the square root of a square pyramidal number to the nearest integer is uniformly distributed
 
@@ -149,7 +149,7 @@ equivalent to the limit along integers $N$.
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Proposition 9 (`jis-2026-26.5.5-prop-9`).
 
-Stated but not proved: `MetaMathlibExt.squarePyramidal_dist_nearest_square_root_equidistributed` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-dist-nearest-square-roo).
+Stated but not proved: `MetaMathlibExt.squarePyramidal_dist_nearest_square_root_equidistributed` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#square-pyramidal-dist-nearest-square-roo).
 
 ## Fourier expansion of a power of the distance to the nearest integer
 
@@ -168,7 +168,7 @@ $$\Bigl|g(u) - c(0) - \sum_{0 < |m| \le H} c(m)\, e(mu)\Bigr| \le \frac{C'}{H}.$
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Lemma 10 (`jis-2026-26.5.5-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.dist_round_pow_fourier_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#dist-round-pow-fourier-expansion).
+Stated but not proved: `MetaMathlibExt.dist_round_pow_fourier_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#dist-round-pow-fourier-expansion).
 
 ## Power sums of the distance from the square root of a square pyramidal number to the nearest integer
 
@@ -188,7 +188,7 @@ The source writes $h(n) = \sqrt{n(n+1)(2n+1)/6}$, which is $\sqrt{P_n}$.
 
 - Anji Dong, Katerina Saettone, Kendra Song and Alexandru Zaharescu, *An Equidistribution Result for Differences Associated with Square Pyramidal Numbers*, Journal of Integer Sequences 29 (2026), Article 26.5.5, Lemma 11 (`jis-2026-26.5.5-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.sum_dist_round_sqrt_squarePyramidal_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#sum-dist-round-sqrt-square-pyramidal-pow).
+Stated but not proved: `MetaMathlibExt.sum_dist_round_sqrt_squarePyramidal_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/SqrtCubicEquidistributionWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html#sum-dist-round-sqrt-square-pyramidal-pow).
 
 ## Depends on
 
@@ -197,4 +197,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Square roots of cubic polynomials modulo one](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/square-roots-of-cubic-polynomials-modulo-one)

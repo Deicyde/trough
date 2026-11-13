@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.9 Completion is not exact
 
-Section 110.9 of the Stacks Project, [Tag 05JF](https://stacks.math.columbia.edu/tag/05JF). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.9 of the Stacks Project, [Tag 05JF](https://stacks.math.columbia.edu/tag/05JF). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05JG, a lemma
 
 [Tag 05JG](https://stacks.math.columbia.edu/tag/05JG) in the Stacks Project.
 
-**`Stacks.Examples.exists_not_left_exact_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompletionNotExact.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompletionNotExact.lean#L99). The attribute's comment: “failure of left exactness”.
+**`Stacks.Examples.exists_not_left_exact_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompletionNotExact.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/CompletionNotExact.lean#L99). The attribute's comment: “failure of left exactness”.
 
 > **Stacks 05JG.** Adic completion need not preserve the exactness of a short exact sequence
 > at its middle term, so it is not left exact in general.
@@ -30,7 +30,7 @@ theorem exists_not_left_exact_adicCompletion :
           (AdicCompletion.map I (Submodule.mkQ (J : Submodule R R)))
 ```
 
-**`Stacks.Examples.exists_not_right_exact_adicCompletion_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompletionNotExact.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompletionNotExact.lean#L152). The attribute's comment: “failure of right exactness on finitely presented modules”.
+**`Stacks.Examples.exists_not_right_exact_adicCompletion_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompletionNotExact.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Completion/CompletionNotExact.lean#L152). The attribute's comment: “failure of right exactness on finitely presented modules”.
 
 > **Stacks 05JG.** Completion is not right exact even on finitely presented modules over a
 > ring, with a principal ideal of definition.
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.9, Tag 05JF](https://stacks.math.columbia.edu/tag/05JF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

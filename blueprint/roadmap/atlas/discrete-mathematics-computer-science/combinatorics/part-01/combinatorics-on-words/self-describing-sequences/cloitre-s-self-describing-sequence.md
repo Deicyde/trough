@@ -8,7 +8,7 @@ proof: formalized
 
 # Cloitre's self-describing sequence
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html).
 
 ## First-letter complement of a word
 
@@ -20,7 +20,7 @@ or with a $1$ not followed by another $1$) are left unchanged.
 Every word this is applied to in Cloitre's construction begins with $1, 1$ or with $2$, so the
 last case does not arise there.
 
-Formalized by `MetaMathlibExt.cloitreComplementFirst`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-complement-first).
+Formalized by `MetaMathlibExt.cloitreComplementFirst`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-complement-first).
 
 ## Mirror image with first-letter complement
 
@@ -30,7 +30,7 @@ $2$ of the reversed list becomes $1, 1$, two leading letters $1, 1$ become $2$, 
 is left unchanged. For example $(1, 1, 2)^r = (1, 1, 1, 1)$ and
 $(1, 1, 2, 1, 1, 1, 1)^r = (2, 1, 1, 2, 1, 1)$.
 
-Formalized by `MetaMathlibExt.cloitreMirror`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-mirror).
+Formalized by `MetaMathlibExt.cloitreMirror`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-mirror).
 
 ## Approximants of Cloitre's sequence
 
@@ -42,7 +42,7 @@ $2$, and otherwise leave it unchanged.
 For example $A_1 = (1, 1, 2)$, $A_2 = (1, 1, 2, 1, 1, 1, 1)$ and
 $A_3 = (1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1)$, and $A_4$ continues with $2, 2$.
 
-Formalized by `MetaMathlibExt.cloitreApprox`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-approx).
+Formalized by `MetaMathlibExt.cloitreApprox`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-approx).
 
 ## Cloitre's sequence
 
@@ -55,7 +55,7 @@ position $n$ (counting from $0$) of $A_{n+2}$, or $0$ if $A_{n+2}$ has at most $
 Each approximant is a prefix of the next and $A_{n+2}$ has more than $n$ letters, so $s$ is the
 limit of the approximants. It begins $1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, \ldots$
 
-Formalized by `MetaMathlibExt.cloitreSequence`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-sequence).
+Formalized by `MetaMathlibExt.cloitreSequence`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-sequence).
 
 ## Run boundaries of a sequence
 
@@ -66,7 +66,7 @@ from each value of $s$ on the next block $[b(n+1), b(n+2))$.
 
 Because $b$ is strictly increasing with $b(0) = 0$, the blocks partition $\mathbb{N}$.
 
-Formalized by `MetaMathlibExt.IsRunBoundary`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#is-run-boundary).
+Formalized by `MetaMathlibExt.IsRunBoundary`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#is-run-boundary).
 
 ## Sum of a sequence over a run
 
@@ -74,7 +74,7 @@ For sequences $s, b : \mathbb{N} \to \mathbb{N}$ and
 $n \in \mathbb{N}$, the $n$-th run sum is $\sum_{b(n) \le j < b(n+1)} s(j)$, the sum of $s$ over
 the block $[b(n), b(n+1))$; it is $0$ when $b(n+1) \le b(n)$.
 
-Formalized by `MetaMathlibExt.cloitreRunSum`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-run-sum).
+Formalized by `MetaMathlibExt.cloitreRunSum`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#cloitre-run-sum).
 
 ## Cloitre's self-describing property
 
@@ -88,7 +88,7 @@ In words, for every $n$ the $n$-th term $s(n)$ is half the sum of the $n$-th run
 stated with $2 s(n)$ to avoid truncated division in $\mathbb{N}$. For example, run sums
 $2, 2, 4, 2, 2, 2, 2, 4, \ldots$ correspond to the terms $1, 1, 2, 1, 1, 1, 1, 2, \ldots$
 
-Formalized by `MetaMathlibExt.IsCloitreSelfDescribing`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#is-cloitre-self-describing).
+Formalized by `MetaMathlibExt.IsCloitreSelfDescribing`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/CloitreSequence.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html#is-cloitre-self-describing).
 
 ## Depends on
 
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cloitre's self-describing sequence](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/cloitre-s-self-describing-sequence)

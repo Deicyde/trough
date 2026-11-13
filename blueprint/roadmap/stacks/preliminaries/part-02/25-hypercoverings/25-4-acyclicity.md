@@ -8,7 +8,7 @@ proof: formalized
 
 # 25.4 Acyclicity
 
-Section 25.4 of the Stacks Project, [Tag 01GA](https://stacks.math.columbia.edu/tag/01GA). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.4 of the Stacks Project, [Tag 01GA](https://stacks.math.columbia.edu/tag/01GA). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01GB, a definition
 
@@ -16,13 +16,13 @@ Section 25.4 of the Stacks Project, [Tag 01GA](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.sheafHomology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L433), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean#L120) (StacksFrontier).
+- [`CategoryTheory.SimplicialObject.sheafHomology`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L431), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean#L120) (StacksFrontier).
 
 ## Tag 01GC, a lemma
 
 [Tag 01GC](https://stacks.math.columbia.edu/tag/01GC) in the Stacks Project.
 
-**`CategoryTheory.Presheaf.isZero_sheafHomology_cechNerve_of_isLocallySurjective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L530). The attribute's comment: “positive degrees”.
+**`CategoryTheory.Presheaf.isZero_sheafHomology_cechNerve_of_isLocallySurjective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L528). The attribute's comment: “positive degrees”.
 
 > The positive homology sheaves of the Čech nerve of a locally surjective morphism of
 > presheaves of sets vanish.
@@ -33,7 +33,7 @@ lemma isZero_sheafHomology_cechNerve_of_isLocallySurjective (hf : IsLocallySurje
     IsZero (SimplicialObject.sheafHomology J (Arrow.mk f).cechNerve n)
 ```
 
-**`CategoryTheory.Presheaf.isIso_cechNerveSheafHomologyZeroAugmentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L547). The attribute's comment: “degree zero”.
+**`CategoryTheory.Presheaf.isIso_cechNerveSheafHomologyZeroAugmentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CechNerveHomology.lean#L545). The attribute's comment: “degree zero”.
 
 > The augmentation of the Čech nerve of a locally surjective morphism induces an isomorphism
 > from its degree-zero homology sheaf to the free abelian sheaf on the target.
@@ -47,7 +47,7 @@ lemma isIso_cechNerveSheafHomologyZeroAugmentation (hf : IsLocallySurjective J f
 
 [Tag 01GD](https://stacks.math.columbia.edu/tag/01GD) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.isIso_sheafHomologyFunctor_map_of_coskeletal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean#L507). References: SGA 4 V (7.2.1), “homology iso”.
+**`CategoryTheory.SimplicialObject.isIso_sheafHomologyFunctor_map_of_coskeletal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoskeletalAcyclicity.lean#L507). References: SGA 4 V (7.2.1), “homology iso”.
 
 > **Stacks Project, Tag 01GD.** A morphism between `n`-coskeletal simplicial
 > presheaves which is an isomorphism in degrees below `n` and locally surjective
@@ -69,7 +69,7 @@ theorem isIso_sheafHomologyFunctor_map_of_coskeletal
 
 [Tag 01GE](https://stacks.math.columbia.edu/tag/01GE) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Augmented.isZero_sheafHomology_of_isLocallySurjective_matchingMaps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean#L568). The attribute's comment: “positive-degree vanishing”. References: SGA 4 V (7.3.2), “more general”.
+**`CategoryTheory.SimplicialObject.Augmented.isZero_sheafHomology_of_isLocallySurjective_matchingMaps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean#L566). The attribute's comment: “positive-degree vanishing”. References: SGA 4 V (7.3.2), “more general”.
 
 > **Stacks Project, Tag 01GE (positive degrees).** An augmented simplicial presheaf whose
 > degree-zero augmentation, relation map and matching maps are all locally surjective has zero
@@ -89,7 +89,7 @@ theorem isZero_sheafHomology_of_isLocallySurjective_matchingMaps
     IsZero (SimplicialObject.sheafHomology J K.left i)
 ```
 
-**`CategoryTheory.SimplicialObject.Augmented.sheafHomologyZeroIso_of_isLocallySurjective_matchingMaps`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean#L588). The attribute's comment: “degree-zero identification”.
+**`CategoryTheory.SimplicialObject.Augmented.sheafHomologyZeroIso_of_isLocallySurjective_matchingMaps`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/AugmentedAcyclicity.lean#L586). The attribute's comment: “degree-zero identification”.
 
 > **Stacks Project, Tag 01GE (degree zero).** The degree-zero homology sheaf of an augmented
 > simplicial presheaf whose degree-zero augmentation, relation map and matching maps are all
@@ -113,7 +113,7 @@ noncomputable def sheafHomologyZeroIso_of_isLocallySurjective_matchingMaps
 
 [Tag 01GF](https://stacks.math.columbia.edu/tag/01GF) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isZero_sheafHomology_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean#L90). The attribute's comment: “positive-degree vanishing”. References: SGA 4 V (7.3.2), “3) positive degrees”.
+**`Stacks.CategoryTheory.Hypercovering.isZero_sheafHomology_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean#L90). The attribute's comment: “positive-degree vanishing”. References: SGA 4 V (7.3.2), “3) positive degrees”.
 
 > **Stacks Project, Tag 01GF (positive degrees).** The homology of the simplicial presheaf
 > associated to a hypercovering vanishes in every positive degree.
@@ -124,7 +124,7 @@ theorem isZero_sheafHomology_of_isHypercovering (hK : IsHypercovering J K) (i : 
       (SectionsOver.associatedSimplicialPresheaf.{w} K) i)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.sheafHomologyZeroIso_of_isHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean#L100). The attribute's comment: “degree-zero identification”. References: SGA 4 V (7.3.2), “3) degree zero”.
+**`Stacks.CategoryTheory.Hypercovering.sheafHomologyZeroIso_of_isHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectAcyclicity.lean#L100). The attribute's comment: “degree-zero identification”. References: SGA 4 V (7.3.2), “3) degree zero”.
 
 > **Stacks Project, Tag 01GF (degree zero).** The degree-zero homology of the simplicial
 > presheaf associated to a hypercovering is the free abelian sheaf on the represented object.
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.4, Tag 01GA](https://stacks.math.columbia.edu/tag/01GA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

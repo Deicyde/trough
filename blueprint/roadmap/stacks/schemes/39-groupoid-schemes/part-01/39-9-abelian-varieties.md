@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.9 Abelian varieties
 
-Section 39.9 of the Stacks Project, [Tag 0BF9](https://stacks.math.columbia.edu/tag/0BF9). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.9 of the Stacks Project, [Tag 0BF9](https://stacks.math.columbia.edu/tag/0BF9). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03RO, a definition
 
 [Tag 03RO](https://stacks.math.columbia.edu/tag/03RO) in the Stacks Project.
 
-**`Stacks.Groupoids.IsAbelianVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety.lean#L52).
+**`Stacks.Groupoids.IsAbelianVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety.lean#L52).
 
 > A group scheme over a field is an abelian variety if its structure morphism makes its
 > underlying scheme a proper, geometrically integral variety.
@@ -24,7 +24,7 @@ class IsAbelianVariety (k : Type u) [Field k] (A : Over (Spec (.of k))) [GrpObj 
     extends IsProperVariety k A.hom, GeometricallyIntegral A.hom
 ```
 
-**`AlgebraicGeometry.IsAbelianVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L68).
+**`AlgebraicGeometry.IsAbelianVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L68).
 
 > **Stacks Project, Tag 03RO.** A group scheme over a field is an abelian variety if its
 > structure morphism makes its underlying scheme a proper, geometrically integral variety.
@@ -38,7 +38,7 @@ class IsAbelianVariety (k : Type u) [Field k] (A : Over (Spec (.of k)))
 
 [Tag 0BFA](https://stacks.math.columbia.edu/tag/0BFA) in the Stacks Project.
 
-**`AlgebraicGeometry.isProjective_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L69).
+**`AlgebraicGeometry.isProjective_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L69).
 
 > **Stacks Project, Tag 0BFA.** Let `k` be a field and let `A` be an abelian variety over `k`.
 > Then `A` is projective over `k`.
@@ -56,7 +56,7 @@ theorem isProjective_of_isAbelianVariety (k : Type u) [Field k] (A : Over (Spec 
 
 [Tag 0BFB](https://stacks.math.columbia.edu/tag/0BFB) in the Stacks Project.
 
-**`AlgebraicGeometry.isAbelianVariety_pullbackObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L82).
+**`AlgebraicGeometry.isAbelianVariety_pullbackObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L82).
 
 > **Stacks Project, Tag 0BFB.** For a field extension `K/k`, the base change `A_K` of an
 > abelian variety `A` over `k` is an abelian variety over `K`.
@@ -74,13 +74,13 @@ instance isAbelianVariety_pullbackObj (A : Over (Spec (.of k))) [GrpObj A]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.smooth_of_isAbelianVariety`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L218), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L293) (StacksFrontier).
+- [`AlgebraicGeometry.smooth_of_isAbelianVariety`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L218), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L293) (StacksFrontier).
 
 ## Tag 0BFE, a lemma
 
 [Tag 0BFE](https://stacks.math.columbia.edu/tag/0BFE) in the Stacks Project.
 
-**`Stacks.Groupoids.nonempty_cubeRelation_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cube/TheoremOfTheCube.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cube/TheoremOfTheCube.lean#L602).
+**`Stacks.Groupoids.nonempty_cubeRelation_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cube/TheoremOfTheCube.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cube/TheoremOfTheCube.lean#L602).
 
 > **Stacks Project, Tag 0BFE.** Let `k` be a field, let `A` be an abelian variety over `k`
 > and let `L` be an invertible `𝒪_A`-module. Then
@@ -110,7 +110,7 @@ theorem nonempty_cubeRelation_of_isAbelianVariety [IsAbelianVariety k A]
           (pullbackOver (cubeProj₂ A * cubeProj₃ A) L))
 ```
 
-**`Stacks.Groupoids.nonempty_cubeRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/CubeRelation.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/CubeRelation.lean#L468). The attribute's comment: “assuming the theorem of the cube (Tag 0BF4) for the triple self-product of A”.
+**`Stacks.Groupoids.nonempty_cubeRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/CubeRelation.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/CubeRelation.lean#L468). The attribute's comment: “assuming the theorem of the cube (Tag 0BF4) for the triple self-product of A”.
 
 > Let `A` be an abelian variety over a field `k` satisfying the theorem of the cube
 > `HasTheoremOfTheCube A`, and let `L` be an invertible `𝒪_A`-module. Then
@@ -144,7 +144,7 @@ theorem nonempty_cubeRelation [AlgebraicGeometry.IsAbelianVariety k A]
 
 [Tag 0BFF](https://stacks.math.columbia.edu/tag/0BFF) in the Stacks Project.
 
-**`Stacks.Groupoids.nonempty_zpowId_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullback.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullback.lean#L369). The attribute's comment: “for every integer n, assuming the theorem of the cube (Tag 0BF4) for A”.
+**`Stacks.Groupoids.nonempty_zpowId_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullback.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullback.lean#L369). The attribute's comment: “for every integer n, assuming the theorem of the cube (Tag 0BF4) for A”.
 
 > Let `k` be a field, let `A` be an abelian variety over `k` satisfying the theorem of the
 > cube for its triple self-product, and let `L` be an invertible `𝒪_A`-module. Then
@@ -163,7 +163,7 @@ theorem nonempty_zpowId_pullback_iso [AlgebraicGeometry.IsAbelianVariety k A]
           (isInvertible_pullbackOver (ι : A ⟶ A) L hL) (n * (n - 1) / 2)))
 ```
 
-**`Stacks.Groupoids.nonempty_zpowId_pullback_iso_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullbackFormula.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullbackFormula.lean#L308).
+**`Stacks.Groupoids.nonempty_zpowId_pullback_iso_of_isAbelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullbackFormula.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowPullbackFormula.lean#L308).
 
 > Let `k` be a field, let `A` be an abelian variety over `k` and let `L` be an invertible
 > `𝒪_A`-module. Then for every integer `n`
@@ -186,7 +186,7 @@ theorem nonempty_zpowId_pullback_iso_of_isAbelianVariety (n : ℤ) :
 
 [Tag 0BFG](https://stacks.math.columbia.edu/tag/0BFG) in the Stacks Project.
 
-**`Stacks.Groupoids.isFiniteLocallyFreeOfRank_zpow_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L61). The attribute's comment: “for n nonzero, the degree n^(2 dim A) read as |n|^(2 dim A): the source's statement fails for n = 0 when dim A >= 1, since [0] factors through the unit point and its fibre over the unit is all of A”.
+**`Stacks.Groupoids.isFiniteLocallyFreeOfRank_zpow_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L61). The attribute's comment: “for n nonzero, the degree n^(2 dim A) read as |n|^(2 dim A): the source's statement fails for n = 0 when dim A >= 1, since [0] factors through the unit point and its fibre over the unit is all of A”.
 
 > Let `k` be a field, let `A` be an abelian variety over `k` and let `[n] = (𝟙 A) ^ n : A ⟶ A`
 > be multiplication by a nonzero integer `n` in the group `A ⟶ A`. Then `[n]` is finite locally free
@@ -202,7 +202,7 @@ theorem isFiniteLocallyFreeOfRank_zpow_id (n : ℤ) (hn : n ≠ 0) :
 
 [Tag 0BFH](https://stacks.math.columbia.edu/tag/0BFH) in the Stacks Project.
 
-**`Stacks.Groupoids.etale_zpow_id_iff_isUnit_intCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/ZPowEtaleCriterion.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/ZPowEtaleCriterion.lean#L232).
+**`Stacks.Groupoids.etale_zpow_id_iff_isUnit_intCast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/ZPowEtaleCriterion.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/ZPowEtaleCriterion.lean#L232).
 
 > **Stacks Project, Tag 0BFH.** Let `k` be a field and let `A` be a nonzero abelian variety
 > over `k`.  Then `[d] : A → A` is étale if and only if `d` is invertible in `k`.
@@ -223,7 +223,7 @@ theorem etale_zpow_id_iff_isUnit_intCast (k : Type u) [Field k] (A : Over (Spec 
 
 [Tag 0C0Y](https://stacks.math.columbia.edu/tag/0C0Y) in the Stacks Project.
 
-**`Stacks.Groupoids.cardinalMk_fiber_multiplication_by_char_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowCharFibre.lean, line 1574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowCharFibre.lean#L1574).
+**`Stacks.Groupoids.cardinalMk_fiber_multiplication_by_char_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowCharFibre.lean, line 1576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/ZPowCharFibre.lean#L1576).
 
 > Let `k` be a field of characteristic `p > 0` and `A` an abelian variety of dimension `g` over
 > `k`. The fibre of `[p] : A → A` over the identity has at most `p ^ g` distinct points. The fibre is
@@ -243,7 +243,7 @@ theorem cardinalMk_fiber_multiplication_by_char_le {k : Type u} [Field k]
 
 [Tag 03RP](https://stacks.math.columbia.edu/tag/03RP) in the Stacks Project.
 
-**`Stacks.Groupoids.etale_torsion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/Torsion.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/Torsion.lean#L88). The attribute's comment: “part (6), with the zero-dimensional case added”. References: SGA 3 XII (4.4.2), “partial”.
+**`Stacks.Groupoids.etale_torsion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/Torsion.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/Torsion.lean#L88). The attribute's comment: “part (6), with the zero-dimensional case added”. References: SGA 3 XII (4.4.2), “partial”.
 
 > **Stacks Project, Tag 03RP, part (6).** Let `A` be an abelian variety over a field `k` and
 > `n` an integer.  The `n`-torsion group scheme `A[n] = Ker([n] : A → A)` is étale over `k` if and
@@ -259,7 +259,7 @@ theorem etale_torsion_iff (k : Type u) [Field k] (A : Over (Spec (.of k))) [GrpO
     Etale (GrpObj.torsion A n).X.hom ↔ topologicalKrullDim A.left = 0 ∨ IsUnit (n : k)
 ```
 
-**`Stacks.Groupoids.surjective_zpow_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L68). The attribute's comment: “part (3), for every nonzero n”. References: SGA 7 IX (2.2.1), “more general”.
+**`Stacks.Groupoids.surjective_zpow_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L68). The attribute's comment: “part (3), for every nonzero n”. References: SGA 7 IX (2.2.1), “more general”.
 
 > Multiplication by a nonzero integer `n` on an abelian variety is surjective.
 
@@ -267,7 +267,7 @@ theorem etale_torsion_iff (k : Type u) [Field k] (A : Over (Spec (.of k))) [GrpO
 theorem surjective_zpow_id (n : ℤ) (hn : n ≠ 0) : Surjective ((𝟙 A : A ⟶ A) ^ n).left
 ```
 
-**`Stacks.Groupoids.exists_pow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L76). The attribute's comment: “part (4)”. References: SGA 3 VIII (7.11), “special case”.
+**`Stacks.Groupoids.exists_pow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L76). The attribute's comment: “part (4)”. References: SGA 3 VIII (7.11), “special case”.
 
 > If `k` is algebraically closed, the group `A(k)` of rational points of an abelian variety is
 > divisible: for every `n ≥ 1`, every rational point is an `n`-th power.
@@ -277,7 +277,7 @@ theorem exists_pow_eq [IsAlgClosed k] (n : ℕ) (hn : n ≠ 0)
     (x : 𝟙_ (Over (Spec (.of k))) ⟶ A) : ∃ y : 𝟙_ (Over (Spec (.of k))) ⟶ A, y ^ n = x
 ```
 
-**`Stacks.Groupoids.isFiniteLocallyFreeOfRank_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L85). The attribute's comment: “part (5), for every nonzero n”.
+**`Stacks.Groupoids.isFiniteLocallyFreeOfRank_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L85). The attribute's comment: “part (5), for every nonzero n”.
 
 > For a nonzero integer `n`, the `n`-torsion group scheme `A[n] = Ker([n] : A → A)` of an
 > abelian variety `A` of dimension `g` is finite locally free of degree `|n| ^ 2g` over `k`.
@@ -288,7 +288,7 @@ theorem isFiniteLocallyFreeOfRank_torsion (n : ℤ) (hn : n ≠ 0) :
       (n.natAbs ^ (2 * abelianVarietyDimension A))
 ```
 
-**`Stacks.Groupoids.nonempty_torsionBy_addEquiv_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L95). The attribute's comment: “part (7)”.
+**`Stacks.Groupoids.nonempty_torsionBy_addEquiv_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L95). The attribute's comment: “part (7)”.
 
 > Let `A` be an abelian variety of dimension `g` over an algebraically closed field `k`, and `n`
 > a natural number invertible in `k`. Then the `n`-torsion `A(k)[n]` of the group of rational points
@@ -300,7 +300,7 @@ theorem nonempty_torsionBy_addEquiv_of_isUnit [IsAlgClosed k] (n : ℕ) (hn : Is
       (Fin (2 * abelianVarietyDimension A) → ZMod n))
 ```
 
-**`Stacks.Groupoids.exists_torsionBy_char_pow_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L111). The attribute's comment: “part (8)”.
+**`Stacks.Groupoids.exists_torsionBy_char_pow_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/AbelianVariety/TorsionDegree.lean#L111). The attribute's comment: “part (8)”.
 
 > Let `A` be an abelian variety of dimension `g` over an algebraically closed field `k` of
 > characteristic `p > 0`. There is an integer `0 ≤ f ≤ g` such that `A(k)[p ^ m] ≅ (ℤ/p^mℤ) ^ f` for
@@ -315,14 +315,14 @@ theorem exists_torsionBy_char_pow_addEquiv [IsAlgClosed k] (p : ℕ) [CharP k p]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isCommMonObj_of_isProper_of_geometricallyIntegral`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isCommMonObj_of_isProper_of_geometricallyIntegral#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L98) (StacksFrontier): “commutative”. References: SGA 3 VIB (12.3), “special case”.
-- [`AlgebraicGeometry.isProjective_of_isAbelianVariety`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L78) (StacksFrontier): “projective”.
+- [`AlgebraicGeometry.isCommMonObj_of_isProper_of_geometricallyIntegral`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isCommMonObj_of_isProper_of_geometricallyIntegral#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVariety.lean#L98) (StacksFrontier): “commutative”. References: SGA 3 VIB (12.3), “special case”.
+- [`AlgebraicGeometry.isProjective_of_isAbelianVariety`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyProjective.lean#L78) (StacksFrontier): “projective”.
 
 ## Tag 0H2U, a remark
 
 [Tag 0H2U](https://stacks.math.columbia.edu/tag/0H2U) in the Stacks Project.
 
-**`AlgebraicGeometry.isAbelianVariety_iff_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L265). References: EGA IV (15.6.10), “special case”; SGA 3 VIB (12.3), “more general”; SGA 3 VIB (7.8), “special case”; SGA 3 XV (4.6), “special case”; SGA 7 VIII (4.1), “Proper group schemes”.
+**`AlgebraicGeometry.isAbelianVariety_iff_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/AbelianVarietyEquivalentDefinitions.lean#L265). References: EGA IV (15.6.10), “special case”; SGA 3 VIB (12.3), “more general”; SGA 3 VIB (7.8), “special case”; SGA 3 XV (4.6), “special case”; SGA 7 VIII (4.1), “Proper group schemes”.
 
 > **Stacks Project, Tag 0H2U.** Let `k` be a field and `A` a group scheme over `k`. Pick one
 > property from each of the three sets
@@ -357,4 +357,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.9, Tag 0BF9](https://stacks.math.columbia.edu/tag/0BF9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

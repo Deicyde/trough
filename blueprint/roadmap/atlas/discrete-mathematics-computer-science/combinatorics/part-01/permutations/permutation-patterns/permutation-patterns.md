@@ -8,7 +8,7 @@ proof: formalized
 
 # Permutation patterns: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html).
 
 Classical, consecutive, mesh and signed patterns in permutations and in inversion and ascent sequences, pattern-avoidance counts, pattern-replacement classes, stack sorting, and king and separable permutations.
 
@@ -28,7 +28,7 @@ an odd entry and avoid $312$ and $231$.
 
 - Per Alexandersson, Samuel Asefa Fufa, and Frether Getachew Kebede, "Pattern-Avoidance and Fuss–Catalan Numbers", Journal of Integer Sequences 26 (2023), Article 23.4.2, Proposition lines 1757-1759, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Getachew/get3.tex>.
 
-Formalized by `MetaMathlibExt.fibonacci_card_parity_alternating_avoiding_312_231`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FibonacciPAPAvoidance.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/FibonacciPAPAvoidance.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#fibonacci-card-parity-alternating-avoidi).
+Formalized by `MetaMathlibExt.fibonacci_card_parity_alternating_avoiding_312_231`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FibonacciPAPAvoidance.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/FibonacciPAPAvoidance.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#fibonacci-card-parity-alternating-avoidi).
 
 ## Nontrivial classes under \{1234, 3412}-pattern replacement
 
@@ -51,7 +51,7 @@ in $S_8$. Point insertion then gives a recurrence, whose solution is the display
 
 - Quinn Perian, Bella Xu, and Alexander Lu Zhang, "Counting the Nontrivial Equivalence Classes of Sn Under {1234,3412}-Pattern-Replacement", Journal of Integer Sequences 23 (2020), Article 20.10.2, Theorem `thm:nontrivial`, lines 172-175, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Zhang/zhang6.tex>.
 
-Formalized by `MetaMathlibExt.card_nontrivial_1234_3412_classes`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Nontrivial1234_3412Classes.lean, line 10824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Nontrivial1234_3412Classes.lean#L10824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#card-nontrivial-1234-3412-classes).
+Formalized by `MetaMathlibExt.card_nontrivial_1234_3412_classes`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Nontrivial1234_3412Classes.lean, line 10824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Nontrivial1234_3412Classes.lean#L10824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#card-nontrivial-1234-3412-classes).
 
 ## Peaks of 231-avoiding permutations
 
@@ -67,7 +67,7 @@ exponent $n - 2k - 1$ is truncated at $0$ and the division rounds down.
 
 - Lara Pudwell, Jacob Roth, and Teresa Wheeland, "Distributions of Statistics over Pattern-Avoiding Permutations", Journal of Integer Sequences 22 (2019), Article 19.2.6, Theorem `T:pk231`, line 228, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Pudwell/pudwell6.tex>.
 
-Formalized by `MetaMathlibExt.card_permutations_avoiding_231_with_peak_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PeakStatistic231.lean, line 1567](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PeakStatistic231.lean#L1567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#card-permutations-avoiding-231-with-peak).
+Formalized by `MetaMathlibExt.card_permutations_avoiding_231_with_peak_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PeakStatistic231.lean, line 1567](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PeakStatistic231.lean#L1567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html#card-permutations-avoiding-231-with-peak).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutation patterns](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns)

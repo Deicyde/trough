@@ -8,7 +8,7 @@ proof: formalized
 
 # Levi decomposition
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html).
 
 ## Weyl's complete reducibility theorem
 
@@ -17,7 +17,7 @@ algebra over a field $K$ of characteristic zero, and let $M$ be a finite-dimensi
 over $L$ and $K$. Then every Lie submodule $W$ of $M$ has a complement: there is a Lie submodule
 $U$ of $M$ with $W \cap U = 0$ and $W + U = M$.
 
-Formalized by `LieModule.exists_isCompl_of_isSemisimple`, a theorem declared in [MathlibExt/Algebra/Lie/LeviDecomposition.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Lie/LeviDecomposition.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html#exists-is-compl-of-is-semisimple).
+Formalized by `LieModule.exists_isCompl_of_isSemisimple`, a theorem declared in [MathlibExt/Algebra/Lie/LeviDecomposition.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Lie/LeviDecomposition.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html#exists-is-compl-of-is-semisimple).
 
 ## Levi decomposition
 
@@ -35,7 +35,7 @@ through the derived ideal of the radical.
 
 - E. E. Levi, Atti Accad. Sci. Torino 1905 and A. I. Malcev, Izv. Akad. Nauk SSSR 1945; Bourbaki, Lie I; Lean states K-module direct sum form over char-zero fields.
 
-Formalized by `MathlibExt.Algebra.Lie.LandmarkWanted.levi_decomposition`, a theorem declared in [MathlibExt/Algebra/Lie/LeviDecomposition.lean, line 1713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Lie/LeviDecomposition.lean#L1713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html#levi-decomposition).
+Formalized by `MathlibExt.Algebra.Lie.LandmarkWanted.levi_decomposition`, a theorem declared in [MathlibExt/Algebra/Lie/LeviDecomposition.lean, line 1713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Lie/LeviDecomposition.lean#L1713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html#levi-decomposition).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Levi decomposition](https://deicyde.github.io/atlas-lean/roadmap/Algebra/nonassociative-algebras/levi-decomposition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/nonassociative-algebras/levi-decomposition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/nonassociative-algebras/levi-decomposition)

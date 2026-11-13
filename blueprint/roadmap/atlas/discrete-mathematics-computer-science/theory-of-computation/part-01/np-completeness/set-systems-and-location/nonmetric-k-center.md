@@ -7,7 +7,7 @@ statement: formalized
 
 # Nonmetric k-center
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html).
 
 ## k-center instances
 
@@ -16,14 +16,14 @@ of a finite list $D$ of rows, each a finite list of natural numbers (row $c$ lis
 client $c$ to the locations), and natural numbers $K$, the bound on the number of locations, and
 $B$, the radius.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.KCenterInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#kcenter-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.KCenterInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#kcenter-instance).
 
 ## Well-formed k-center instances
 
 A k-center instance $(D, K, B)$ is well formed when all
 rows of $D$ have the same length.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#well-formed).
 
 ## Feasible k-center instances
 
@@ -34,7 +34,7 @@ $0$, and set $D_c(f) = 0$ if $D_c$ has at most $f$ entries. The instance is feas
 is a set $S$ of at most $K$ locations $f < n$ such that every client $c < m$ has some $f \in S$
 with $D_c(f) \le B$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.KCenterFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#kcenter-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.KCenterFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#kcenter-feasible).
 
 ## Generalized nonmetric k-center as a decision problem
 
@@ -43,7 +43,7 @@ bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, 
 instance that is well formed and feasible; bitstrings that do not decode to an instance are
 rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.kCenterDec`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#k-center-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KCenter.kCenterDec`, a definition declared in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#k-center-dec).
 
 ## k-CENTER (GENERALIZED, NONMETRIC) is NP-complete
 
@@ -55,7 +55,7 @@ NP has a polynomial-time many-one reduction to it.
 
 - O. Kariv and S. L. Hakimi, "An algorithmic approach to network location problems. I: The p-centers", SIAM Journal on Applied Mathematics 37 (1979), 513-538.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.KCenter.kCenter_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#k-center-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.KCenter.kCenter_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/KCenterWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KCenterWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html#k-center-np-complete).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nonmetric k-center](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-center)

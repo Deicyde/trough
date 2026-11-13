@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.5 The lifting problem
 
-Section 16.5 of the Stacks Project, [Tag 07CJ](https://stacks.math.columbia.edu/tag/07CJ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.5 of the Stacks Project, [Tag 07CJ](https://stacks.math.columbia.edu/tag/07CJ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07CK, a lemma
 
 [Tag 07CK](https://stacks.math.columbia.edu/tag/07CK) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_smooth_quotient_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L422).
+**`Stacks.Smoothing.exists_smooth_quotient_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L422).
 
 > **The lifting problem.** Let `R → Λ` be a ring map and `I ⊂ R` an ideal with `I² = 0` such
 > that `Λ/IΛ` is a filtered colimit of smooth `R/I`-algebras. Then every `R`-algebra map
@@ -41,7 +41,7 @@ theorem exists_smooth_quotient_factorization
 
 [Tag 07CL](https://stacks.math.columbia.edu/tag/07CL) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_smooth_factorization_of_fg_le_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L772).
+**`Stacks.Smoothing.exists_smooth_factorization_of_fg_le_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L772).
 
 > **Stacks Project, Tag 07CL.** Let `I ⊂ R` be an ideal with `I² = 0` such that `Λ/IΛ` is a
 > filtered colimit of smooth `R/I`-algebras, and let `Λ` be flat over `R`. Then an `R`-algebra map
@@ -67,7 +67,7 @@ theorem exists_smooth_factorization_of_fg_le_map
 
 [Tag 07CM](https://stacks.math.columbia.edu/tag/07CM) in the Stacks Project.
 
-**`Stacks.Smoothing.ind_smooth_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 939](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L939).
+**`Stacks.Smoothing.ind_smooth_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean, line 939](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/LiftingProblem.lean#L939).
 
 > **Stacks Project, Tag 07CM: ind-smoothness of an algebra is stable under infinitesimal
 > deformations.** Let `R → Λ` be a ring map and `I ⊂ R` a nilpotent ideal. If `Λ/IΛ` is a filtered
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.5, Tag 07CJ](https://stacks.math.columbia.edu/tag/07CJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Explicit bounds for the nth prime
 
-20 results, 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html).
+20 results, 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html).
 
 ## Axler's lower bound for the $n$th prime
 
@@ -20,7 +20,7 @@ $p_n > n \left(\log n + \log\log n - 1 + \frac{\log\log n - 2}{\log n} -
 
 - Christian Axler, "New Estimates for the nth Prime Number," Journal of Integer Sequences 22 (2019), Article 19.4.2, Theorem `thm104`, equation (1.14), lines 190--196 of https://cs.uwaterloo.ca/journals/JIS/VOL22/Axler/axler17.tex.
 
-Stated but not proved: `MetaMathlibExt.axler_nth_prime_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeLowerBoundWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeLowerBoundWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#axler-nth-prime-lower-bound).
+Stated but not proved: `MetaMathlibExt.axler_nth_prime_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeLowerBoundWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeLowerBoundWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#axler-nth-prime-lower-bound).
 
 ## Axler's upper bound for the $n$th prime
 
@@ -33,7 +33,7 @@ $p_n < n \left(\log n + \log\log n - 1 + \frac{\log\log n - 2}{\log n} -
 
 - Christian Axler, "New Estimates for the nth Prime Number," Journal of Integer Sequences 22 (2019), Article 19.4.2, Theorem `thm101`, equation (1.12), lines 160–166 of https://cs.uwaterloo.ca/journals/JIS/VOL22/Axler/axler17.tex. Context at lines 148–158 distinguishes this refinement from the weaker earlier Dusart bound.
 
-Stated but not proved: `MetaMathlibExt.axler_nth_prime_upper_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeUpperBoundWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeUpperBoundWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#axler-nth-prime-upper-bound).
+Stated but not proved: `MetaMathlibExt.axler_nth_prime_upper_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeUpperBoundWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerNthPrimeUpperBoundWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#axler-nth-prime-upper-bound).
 
 ## Mandl's inequality for the sum of the first $n$ primes
 
@@ -47,7 +47,7 @@ Dusart proved the inequality for every $n \ge 9$, as quoted by Axler.
 
 - Christian Axler, "On a Sequence Involving Prime Numbers," Journal of Integer Sequences 18 (2015), source equation (101), lines 89-107, https://cs.uwaterloo.ca/journals/JIS/VOL18/Axler/axler6.tex.
 
-Stated but not proved: `MetaMathlibExt.mandl_prime_sum_inequality` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlPrimeSumWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlPrimeSumWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-prime-sum-inequality).
+Stated but not proved: `MetaMathlibExt.mandl_prime_sum_inequality` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlPrimeSumWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlPrimeSumWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-prime-sum-inequality).
 
 ## The Rosser–Schoenfeld lower bound $x / \log x$ for the prime-counting function
 
@@ -59,7 +59,7 @@ $x / \log x < \pi(x)$.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_gt_div_log_of_seventeen_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-gt-div-log-of-seventeen-l).
+Stated but not proved: `MetaMathlibExt.primeCounting_gt_div_log_of_seventeen_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-gt-div-log-of-seventeen-l).
 
 ## For $n \ge 7$, the $n$th prime is less than $n$ times its logarithm
 
@@ -70,7 +70,7 @@ $n \ge 7$, the $n$th prime $p_n$ (counting from $p_1 = 2$) satisfies $p_n < n \l
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 2, inequality (2).
 
-Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime).
+Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime).
 
 ## Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function
 
@@ -82,7 +82,7 @@ $\pi(x) < x / (\log x - 1.1)$.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_eleven_tenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-lt-div-log-sub-eleven-ten).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_eleven_tenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-lt-div-log-sub-eleven-ten).
 
 ## An upper bound for the $n$-th prime in terms of its logarithm
 
@@ -97,7 +97,7 @@ $6076(\log 60169 - 1.1) \approx 60182.2$.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 3, inequality (4).
 
-Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime-sub-one).
+Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime-sub-one).
 
 ## Lower bound $x / (\log x - 1 - 1 / \log x)$ for the prime-counting function
 
@@ -109,7 +109,7 @@ $\pi(x) > x / (\log x - 1 - 1 / \log x)$.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_gt_div_log_sub_one_sub_inv_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-gt-div-log-sub-one-sub-in).
+Stated but not proved: `MetaMathlibExt.primeCounting_gt_div_log_sub_one_sub_inv_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#prime-counting-gt-div-log-sub-one-sub-in).
 
 ## A second-order upper bound for the $n$-th prime in terms of its logarithm
 
@@ -124,7 +124,7 @@ Here $39071 = \pi(468049)$, where $\pi(x)$ denotes the number of primes at most 
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 4, inequality (5).
 
-Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one_sub_inv_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime-sub-one-s).
+Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one_sub_inv_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-nth-prime-sub-one-s).
 
 ## Lower bound for $\log n$ in terms of the logarithm of the $n$-th prime
 
@@ -136,7 +136,7 @@ $\log n \ge 0.914 \log p_n$.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 6, inequality (15).
 
-Stated but not proved: `MetaMathlibExt.mul_log_nthPrime_le_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mul-log-nth-prime-le-log).
+Stated but not proved: `MetaMathlibExt.mul_log_nthPrime_le_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mul-log-nth-prime-le-log).
 
 ## An explicit inequality between $n$ and the $n$th prime
 
@@ -150,7 +150,7 @@ $$118.676119576 \, n^2 (\log p_n)^3 + 709.7856 \, n \, p_n (\log p_n)^2
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.nthPrime_sq_log_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-sq-log-bound).
+Stated but not proved: `MetaMathlibExt.nthPrime_sq_log_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-sq-log-bound).
 
 ## An auxiliary inequality in $\log n$ and $\log\log n$
 
@@ -164,7 +164,7 @@ $$\frac{4.151332(\log L - 2)}{L} + \frac{3.151332(\log L - 1)}{L} +
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 3, inequality (25).
 
-Stated but not proved: `MetaMathlibExt.loglog_ratio_sum_le_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#loglog-ratio-sum-le-one).
+Stated but not proved: `MetaMathlibExt.loglog_ratio_sum_le_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#loglog-ratio-sum-le-one).
 
 ## Lower bounds for the $n$-th prime in terms of its logarithm
 
@@ -182,7 +182,7 @@ $p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.024334}{L^2} - \frac{12.975666}{L^3}
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.nthPrime_gt_mul_log_sub_corollary_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-gt-mul-log-sub-corollary-one).
+Stated but not proved: `MetaMathlibExt.nthPrime_gt_mul_log_sub_corollary_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-gt-mul-log-sub-corollary-one).
 
 ## Zhang–Xiong upper bounds for the $n$th prime
 
@@ -200,7 +200,7 @@ $$
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_sub_corollary_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-sub-corollary-two).
+Stated but not proved: `MetaMathlibExt.nthPrime_lt_mul_log_sub_corollary_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#nth-prime-lt-mul-log-sub-corollary-two).
 
 ## Lower bound for the logarithm of the $n$-th prime
 
@@ -217,7 +217,7 @@ $-0.9715$), so $n \ge 3$ is assumed.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 8, inequality (17).
 
-Stated but not proved: `MetaMathlibExt.log_nthPrime_ge_log_add_loglog` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#log-nth-prime-ge-log-add-loglog).
+Stated but not proved: `MetaMathlibExt.log_nthPrime_ge_log_add_loglog` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#log-nth-prime-ge-log-add-loglog).
 
 ## Bounds for $n$ times the $n$-th prime minus the sum of the first $n$ primes
 
@@ -237,7 +237,7 @@ $$S(n) \le p_n^2\left(\frac{1}{2L} + \frac{3}{4L^2} + \frac{7}{4L^3} + \frac{45.
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.mul_nthPrime_sub_sum_primes_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mul-nth-prime-sub-sum-primes-bounds).
+Stated but not proved: `MetaMathlibExt.mul_nthPrime_sub_sum_primes_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mul-nth-prime-sub-sum-primes-bounds).
 
 ## Explicit lower bound in Mandl's inequality
 
@@ -257,7 +257,7 @@ $$M(n) > \frac{n^2}{4} + \frac{n^2}{4\ell} - \frac{n^2 \log \ell}{4\ell^2} +
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.mandl_sum_gt_omega_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-gt-omega-bound).
+Stated but not proved: `MetaMathlibExt.mandl_sum_gt_omega_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-gt-omega-bound).
 
 ## Explicit upper bound in Mandl's inequality
 
@@ -281,7 +281,7 @@ $$M(n) < \frac{n^2}{4} + \frac{n^2}{4\ell} - \frac{n^2 \log \ell}{4\ell^2} +
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.mandl_sum_lt_Omega_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-lt-omega-bound).
+Stated but not proved: `MetaMathlibExt.mandl_sum_lt_Omega_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-lt-omega-bound).
 
 ## Zhang–Xiong refinement of Mandl's inequality
 
@@ -298,7 +298,7 @@ $n \ge 234057667276344608$, and $M(n) < B_\beta(n)$ for every integer $n \ge 644
 
 - Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.mandl_sum_between_B_alpha_B_beta` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-between-b-alpha-b-beta).
+Stated but not proved: `MetaMathlibExt.mandl_sum_between_B_alpha_B_beta` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/MandlRefinementsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#mandl-sum-between-b-alpha-b-beta).
 
 ## Rosser's lower bound for the $n$th prime
 
@@ -311,7 +311,7 @@ For $n = 1$ the bound reads $2 > 0$.
 
 - Christian Axler, "New Estimates for the nth Prime Number", Journal of Integer Sequences 22 (2019), Article 19.4.2, equation (1.3), line 115, with Rosser's theorem stated at lines 115–120, attributed there to Rosser, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Axler/axler17.tex>.
 
-Stated but not proved: `MetaMathlibExt.rosser_nthPrime_lower_bound_zeroBased` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/RosserNthPrimeWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/RosserNthPrimeWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#rosser-nth-prime-lower-bound-zero-based).
+Stated but not proved: `MetaMathlibExt.rosser_nthPrime_lower_bound_zeroBased` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/RosserNthPrimeWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/RosserNthPrimeWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html#rosser-nth-prime-lower-bound-zero-based).
 
 ## Depends on
 
@@ -320,4 +320,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Explicit bounds for the nth prime](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-nth-prime)

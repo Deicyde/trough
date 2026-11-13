@@ -7,7 +7,7 @@ statement: formalized
 
 # Integer multiplication in time O(n log n)
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html).
 
 ## Encoding of pairs
 
@@ -18,7 +18,7 @@ $(\Gamma_A \cup \{\bot\}) \times (\Gamma_B \cup \{\bot\})$ by zipping: its lengt
 the lengths of $e_A(a)$ and $e_B(b)$, and its $i$-th entry is the pair of the $i$-th entries of
 $e_A(a)$ and $e_B(b)$, where an entry missing from the shorter list is replaced by $\bot$.
 
-Formalized by `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.encodeProd`, a definition declared in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#encode-prod).
+Formalized by `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.encodeProd`, a definition declared in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#encode-prod).
 
 ## Binary encoding of natural numbers
 
@@ -35,7 +35,7 @@ with the unary encoding that bound could not hold.
 
 - Lean variant; this replaces the upstream unary encoding `Computability.encodeNat`.
 
-Formalized by `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.encodeNatBinary`, a definition declared in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#encode-nat-binary).
+Formalized by `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.encodeNatBinary`, a definition declared in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#encode-nat-binary).
 
 ## Harvey–van der Hoeven: integer multiplication in time $O(n \log n)$
 
@@ -50,7 +50,7 @@ $n \to \infty$.
 
 - D. Harvey and J. van der Hoeven, `Integer multiplication in time O(n log n)`, Annals of Math, 193 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_integer_multiplication` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.theorem_1_1` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.theorem_1_1` is written with `theorem_wanted` in [WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/TheoryOfComputation/IntegerMultiplicationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Integer multiplication in time O(n log n)](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/algebraic-complexity/integer-multiplication-in-time-o-n-log-n)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.28 Groups of invertible functions
 
-Section 33.28 of the Stacks Project, [Tag 04L3](https://stacks.math.columbia.edu/tag/04L3). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.28 of the Stacks Project, [Tag 04L3](https://stacks.math.columbia.edu/tag/04L3). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04L4, a lemma
 
 [Tag 04L4](https://stacks.math.columbia.edu/tag/04L4) in the Stacks Project.
 
-**`AlgebraicGeometry.fg_units_quotient_of_isOpenImmersion_into_properVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/NormalModel.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/NormalModel.lean#L44).
+**`AlgebraicGeometry.fg_units_quotient_of_isOpenImmersion_into_properVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/NormalModel.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/NormalModel.lean#L44).
 
 > **Stacks Project, Tag 04L4.** Let `k` be an algebraically closed field, let `Xbar` be a
 > proper variety over `k`, and let `X` be a normal open subscheme of `Xbar`. Then the group of
@@ -37,7 +37,7 @@ theorem fg_units_quotient_of_isOpenImmersion_into_properVariety
 
 [Tag 04L5](https://stacks.math.columbia.edu/tag/04L5) in the Stacks Project.
 
-**`AlgebraicGeometry.fg_units_quotient_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/FiniteType.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/FiniteType.lean#L178).
+**`AlgebraicGeometry.fg_units_quotient_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/FiniteType.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/FiniteType.lean#L178).
 
 > **Stacks Project, Tag 04L5.** Let `k` be an algebraically closed field and let `X` be an
 > integral scheme locally of finite type over `k`.  Then the group of invertible global functions on
@@ -58,7 +58,7 @@ theorem fg_units_quotient_of_locallyOfFiniteType (k : Type u) [Field k] [IsAlgCl
 
 [Tag 04L6](https://stacks.math.columbia.edu/tag/04L6) in the Stacks Project.
 
-**`AlgebraicGeometry.fg_units_quotient_of_connectedSpace_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReduced.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReduced.lean#L228).
+**`AlgebraicGeometry.fg_units_quotient_of_connectedSpace_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReduced.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReduced.lean#L228).
 
 > Let `k` be an algebraically closed field and let `X` be a connected reduced scheme which is
 > locally of finite type over `k` and has finitely many irreducible components.  Then `𝒪^*(X)/k^*`,
@@ -77,7 +77,7 @@ theorem fg_units_quotient_of_connectedSpace_of_isReduced (k : Type u) [Field k] 
 
 [Tag 04MI](https://stacks.math.columbia.edu/tag/04MI) in the Stacks Project.
 
-**`AlgebraicGeometry.integralClosure_globalSections_isField`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/GlobalSections.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/GlobalSections.lean#L49).
+**`AlgebraicGeometry.integralClosure_globalSections_isField`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/GlobalSections.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/GlobalSections.lean#L49).
 
 > The integral closure of the ground field in the global sections of a
 > connected reduced scheme over that field is a field.
@@ -94,7 +94,7 @@ public lemma integralClosure_globalSections_isField
 
 [Tag 04L7](https://stacks.math.columbia.edu/tag/04L7) in the Stacks Project.
 
-**`AlgebraicGeometry.fg_units_quotient_of_integrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L234). The attribute's comment: “integral\_closure\_of\_ground\_field\_is\_ground\_field”.
+**`AlgebraicGeometry.fg_units_quotient_of_integrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L234). The attribute's comment: “integral\_closure\_of\_ground\_field\_is\_ground\_field”.
 
 > **Stacks Project, Tag 04L7 under its condition (1).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible
@@ -122,7 +122,7 @@ theorem fg_units_quotient_of_integrallyClosed (k : Type u) [Field k] (X : Scheme
       (((Scheme.ΓSpecIso (.of k)).inv ≫ f.appTop).hom).toMonoidHom).range)
 ```
 
-**`AlgebraicGeometry.fg_units_quotient_of_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L438). The attribute's comment: “rational\_point”.
+**`AlgebraicGeometry.fg_units_quotient_of_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L438). The attribute's comment: “rational\_point”.
 
 > **Stacks Project, Tag 04L7 under its condition (2).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible
@@ -141,7 +141,7 @@ theorem fg_units_quotient_of_rationalPoint (k : Type u) [Field k] (X : Scheme.{u
       (((Scheme.ΓSpecIso (.of k)).inv ≫ f.appTop).hom).toMonoidHom).range)
 ```
 
-**`AlgebraicGeometry.fg_units_quotient_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean#L92). The attribute's comment: “geometrically\_integral”.
+**`AlgebraicGeometry.fg_units_quotient_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean#L92). The attribute's comment: “geometrically\_integral”.
 
 > **Stacks Project, Tag 04L7 under its condition (3).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible
@@ -164,7 +164,7 @@ theorem fg_units_quotient_of_geometricallyIntegral (k : Type u) [Field k] (X : S
 
 [Tag 04L8](https://stacks.math.columbia.edu/tag/04L8) in the Stacks Project.
 
-**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_isAlgClosedIn_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L149). The attribute's comment: “condition (2) implies condition (1); the source omits this verification”.
+**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_isAlgClosedIn_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L149). The attribute's comment: “condition (2) implies condition (1); the source omits this verification”.
 
 > **Stacks Project, Tag 04L8, condition (2) implies condition (1).** Let `k` be a field and let
 > `X` be an integral scheme over `k`.  If `k` is algebraically closed in the function field of `X`,
@@ -184,7 +184,7 @@ theorem integralClosure_globalSections_eq_bot_of_isAlgClosedIn_functionField
     IsAlgClosedIn k X.functionField → integralClosure k Γ(X, ⊤) = ⊥
 ```
 
-**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L176). The attribute's comment: “condition (4) implies condition (1); the source omits this verification”.
+**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L176). The attribute's comment: “condition (4) implies condition (1); the source omits this verification”.
 
 > **Stacks Project, Tag 04L8, condition (4) implies condition (1).** Let `k` be a field and let
 > `X` be a connected reduced scheme over `k`.  Suppose that every field extension `L` of `k` which
@@ -207,7 +207,7 @@ theorem integralClosure_globalSections_eq_bot_of_closedPoints
     integralClosure k Γ(X, ⊤) = ⊥
 ```
 
-**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L231). The attribute's comment: “condition (3) implies condition (1); the source omits this verification”.
+**`AlgebraicGeometry.integralClosure_globalSections_eq_bot_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L231). The attribute's comment: “condition (3) implies condition (1); the source omits this verification”.
 
 > **Stacks Project, Tag 04L8, condition (3) implies condition (1).** Let `k` be a field and let
 > `X` be an integral scheme over `k` which is geometrically integral.  Then the integral closure of
@@ -226,7 +226,7 @@ theorem integralClosure_globalSections_eq_bot_of_geometricallyIntegral
     integralClosure k Γ(X, ⊤) = ⊥
 ```
 
-**`AlgebraicGeometry.fg_units_quotient_of_isVariety_of_field_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L279).
+**`AlgebraicGeometry.fg_units_quotient_of_isVariety_of_field_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/VarietyFieldConditions.lean#L279).
 
 > **Stacks Project, Tag 04L8.** Let `k` be a field and let `X` be a variety over `k`.  Then the
 > group of invertible global functions on `X` modulo the constants coming from `k` is finitely
@@ -265,4 +265,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.28, Tag 04L3](https://stacks.math.columbia.edu/tag/04L3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

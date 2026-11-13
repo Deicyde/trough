@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.34 Hilbert Nullstellensatz
 
-Section 10.34 of the Stacks Project, [Tag 00FS](https://stacks.math.columbia.edu/tag/00FS). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.34 of the Stacks Project, [Tag 00FS](https://stacks.math.columbia.edu/tag/00FS). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00FV, a theorem
 
 [Tag 00FV](https://stacks.math.columbia.edu/tag/00FV) in the Stacks Project.
 
-**`Stacks.HilbertNullstellensatz.module_finite_quotient_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L54). The attribute's comment: “part (1), for an arbitrary finite type algebra over the field”. References: EGA IV (10.4.5), “a⇒b′ over a field”.
+**`Stacks.HilbertNullstellensatz.module_finite_quotient_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L54). The attribute's comment: “part (1), for an arbitrary finite type algebra over the field”. References: EGA IV (10.4.5), “a⇒b′ over a field”.
 
 > **Hilbert Nullstellensatz**, part (1), for a finite type algebra: if `A` is a `k`-algebra of
 > finite type over a field `k` and `𝔪 ⊆ A` is a maximal ideal, then the residue field
@@ -29,7 +29,7 @@ public theorem module_finite_quotient_of_finiteType (k A : Type*) [Field k] [Com
     Module.Finite k (A ⧸ 𝔪)
 ```
 
-**`Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L68). The attribute's comment: “part (2), for an arbitrary finite type algebra over the field”. References: EGA IV (10.4.6), “partial”.
+**`Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L68). The attribute's comment: “part (2), for an arbitrary finite type algebra over the field”. References: EGA IV (10.4.6), “partial”.
 
 > **Hilbert Nullstellensatz**, part (2), for a finite type algebra: a radical ideal `I` of a
 > `k`-algebra `A` of finite type over a field `k` is the infimum of the maximal ideals of `A`
@@ -44,7 +44,7 @@ public theorem eq_sInf_isMaximal_of_finiteType (k A : Type*) [Field k] [CommRing
     I = sInf {J : Ideal A | I ≤ J ∧ J.IsMaximal}
 ```
 
-**`Stacks.HilbertNullstellensatz.module_finite_quotient_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L88). The attribute's comment: “part (1)”.
+**`Stacks.HilbertNullstellensatz.module_finite_quotient_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L88). The attribute's comment: “part (1)”.
 
 > **Hilbert Nullstellensatz**, part (1): for a field `k`, finitely many variables `ι` and a
 > maximal ideal `𝔪` of the polynomial ring `k[x_i : i ∈ ι]`, the residue field
@@ -56,7 +56,7 @@ public theorem module_finite_quotient_mvPolynomial (k : Type*) [Field k] (ι : T
     Module.Finite k (MvPolynomial ι k ⧸ 𝔪)
 ```
 
-**`Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L97). The attribute's comment: “part (2)”.
+**`Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L97). The attribute's comment: “part (2)”.
 
 > **Hilbert Nullstellensatz**, part (2): for a field `k` and finitely many variables `ι`, a
 > radical ideal `I` of the polynomial ring `k[x_i : i ∈ ι]` is the infimum of the maximal ideals
@@ -68,7 +68,7 @@ public theorem eq_sInf_isMaximal_mvPolynomial (k : Type*) [Field k] (ι : Type*)
     I = sInf {J : Ideal (MvPolynomial ι k) | I ≤ J ∧ J.IsMaximal}
 ```
 
-**`Stacks.HilbertNullstellensatz.coe_eq_iInter_isMaximal_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L106). The attribute's comment: “part (2), as an intersection of the underlying sets”.
+**`Stacks.HilbertNullstellensatz.coe_eq_iInter_isMaximal_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L106). The attribute's comment: “part (2), as an intersection of the underlying sets”.
 
 > **Hilbert Nullstellensatz**, part (2), as an equality of sets: a radical ideal `I` of the
 > polynomial ring `k[x_i : i ∈ ι]` over a field `k` in finitely many variables is, as a subset of
@@ -84,14 +84,14 @@ public theorem coe_eq_iInter_isMaximal_mvPolynomial (k : Type*) [Field k] (ι : 
 
 Declarations registered for the tag:
 
-- [`finite_of_finite_type_of_isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=finite_of_finite_type_of_isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L118) (StacksFrontier): “part (1) is this applied to the field `A ⧸ 𝔪`, which is of finite type over `k`; see `Stacks.HilbertNullstellensatz.module_finite_quotient_of_finiteType`”. References: EGA IV (10.4.5), “a⇒b′”.
-- [`MvPolynomial.isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L124) (StacksFrontier): “part (2): a radical ideal of a Jacobson ring equals its Jacobson radical, which is the infimum of the maximal ideals containing it; see `Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_mvPolynomial`”.
+- [`finite_of_finite_type_of_isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=finite_of_finite_type_of_isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L118) (StacksFrontier): “part (1) is this applied to the field `A ⧸ 𝔪`, which is of finite type over `k`; see `Stacks.HilbertNullstellensatz.module_finite_quotient_of_finiteType`”. References: EGA IV (10.4.5), “a⇒b′”.
+- [`MvPolynomial.isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/HilbertNullstellensatz.lean#L124) (StacksFrontier): “part (2): a radical ideal of a Jacobson ring equals its Jacobson radical, which is the infimum of the maximal ideals containing it; see `Stacks.HilbertNullstellensatz.eq_sInf_isMaximal_mvPolynomial`”.
 
 ## Tag 00FY, a lemma
 
 [Tag 00FY](https://stacks.math.columbia.edu/tag/00FY) in the Stacks Project.
 
-**`exists_isField_localizationAway_and_finite_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L108).
+**`exists_isField_localizationAway_and_finite_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L108).
 
 > Let `R ⊂ K` with `K` a field and `K` of finite type over `R` as an `R`-algebra. Then there
 > exists `f ∈ R` such that the localization `R_f` is a field, and `K` is a finite extension of
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.34, Tag 00FS](https://stacks.math.columbia.edu/tag/00FS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

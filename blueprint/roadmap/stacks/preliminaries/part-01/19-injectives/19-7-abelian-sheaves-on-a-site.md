@@ -8,13 +8,13 @@ proof: formalized
 
 # 19.7 Abelian Sheaves on a site
 
-Section 19.7 of the Stacks Project, [Tag 01DL](https://stacks.math.columbia.edu/tag/01DL). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 19.7 of the Stacks Project, [Tag 01DL](https://stacks.math.columbia.edu/tag/01DL). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01DM, a lemma
 
 [Tag 01DM](https://stacks.math.columbia.edu/tag/01DM) in the Stacks Project.
 
-**`Stacks.Injectives.SheafificationTowerFactorization.exists_extension_towerIota_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean#L428).
+**`Stacks.Injectives.SheafificationTowerFactorization.exists_extension_towerIota_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean#L428).
 
 > Let `F` be an abelian sheaf and `α ≤ β` a non-maximal stage of the tower, so that
 > `α + 1 ≤ β` as well. Let `ι : G₁ ⟶ G₂` be an injective (i.e. monomorphic) map of abelian sheaves
@@ -34,7 +34,7 @@ theorem exists_extension_towerIota_succ (β : Ordinal.{u}) (α : Set.Iic β) (h�
 
 [Tag 01DN](https://stacks.math.columbia.edu/tag/01DN) in the Stacks Project.
 
-**`Stacks.Injectives.SheafificationTowerFactorization.exists_ordinal_towerFactorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean, line 835](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean#L835).
+**`Stacks.Injectives.SheafificationTowerFactorization.exists_ordinal_towerFactorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean, line 835](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/SheafificationTowerFactorization.lean#L835).
 
 > Let `{G i}_{i : I}` be a set of abelian sheaves on `C`. There is an ordinal `β`, depending
 > only on `J` and the family `{G i}`, such that for every abelian sheaf `F`, every index `i`, and
@@ -56,13 +56,13 @@ theorem exists_ordinal_towerFactorsThrough {I : Type u} (G : I → AbSheaf J) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Sheaf.freeYonedaHomEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.freeYonedaHomEquiv#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Sites/Adjunction.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Sites/Adjunction.lean#L33) (StacksCore): “Mor\_\{Ab(C)}(Z\_X^#, G) = G(X)”.
+- [`CategoryTheory.Sheaf.freeYonedaHomEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.freeYonedaHomEquiv#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Sites/Adjunction.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Sites/Adjunction.lean#L33) (StacksCore): “Mor\_\{Ab(C)}(Z\_X^#, G) = G(X)”.
 
 ## Tag 01DO, a lemma
 
 [Tag 01DO](https://stacks.math.columbia.edu/tag/01DO) in the Stacks Project.
 
-**`Stacks.Injectives.BaerCriterion.injective_of_extends_freeAbSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/BaerCriterion.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/BaerCriterion.lean#L557).
+**`Stacks.Injectives.BaerCriterion.injective_of_extends_freeAbSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/BaerCriterion.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/BaerCriterion.lean#L557).
 
 > Let `𝒥` be a sheaf of abelian groups such that for every object `X` of `C`, every abelian
 > subsheaf `S ⊆ Z_X^#`, and every morphism `φ : S → 𝒥`, there exists a morphism `ψ : Z_X^# → 𝒥`
@@ -80,7 +80,7 @@ theorem injective_of_extends_freeAbSheaf
 
 [Tag 01DP](https://stacks.math.columbia.edu/tag/01DP) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.hasFunctorialInjectiveEmbeddings_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean#L111). The attribute's comment: “functorial injective embeddings”. References: SGA 4½ Arcata (1.6.3), “enough injectives”; SGA 4 V (0.1.1), “sheaves on a site”.
+**`CategoryTheory.Sheaf.hasFunctorialInjectiveEmbeddings_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean#L111). The attribute's comment: “functorial injective embeddings”. References: SGA 4½ Arcata (1.6.3), “enough injectives”; SGA 4 V (0.1.1), “sheaves on a site”.
 
 > **Stacks Project, Tag 01DP.** The category of sheaves of abelian groups on a site has
 > functorial injective embeddings in the sense of [Stacks, Tag 0139].
@@ -91,7 +91,7 @@ theorem hasFunctorialInjectiveEmbeddings_addCommGrpCat [HasSheafify J AddCommGrp
     HasFunctorialInjectiveEmbeddings (Sheaf J AddCommGrpCat.{w})
 ```
 
-**`CategoryTheory.Sheaf.enoughInjectives_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean#L126). The attribute's comment: “enough injectives”. References: SGA 4½ Arcata (1.6.3), “enough injectives”; SGA 4 V (0.1.1), “sheaves on a site”; SGA 3 I (3.1.2), “special case”; SGA 4 I (7.13), “special case”; SGA 4 V (0.2.1), “special case”; SGA 4 V (2.5.2), “special case”.
+**`CategoryTheory.Sheaf.enoughInjectives_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/FunctorialInjectiveEmbeddings.lean#L126). The attribute's comment: “enough injectives”. References: SGA 4½ Arcata (1.6.3), “enough injectives”; SGA 4 V (0.1.1), “sheaves on a site”; SGA 3 I (3.1.2), “special case”; SGA 4 I (7.13), “special case”; SGA 4 V (0.2.1), “special case”; SGA 4 V (2.5.2), “special case”.
 
 > **Stacks Project, Tag 01DP.** The category of sheaves of abelian groups on a site has
 > enough injectives. This is deduced from the functorial statement
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 19.7, Tag 01DL](https://stacks.math.columbia.edu/tag/01DL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

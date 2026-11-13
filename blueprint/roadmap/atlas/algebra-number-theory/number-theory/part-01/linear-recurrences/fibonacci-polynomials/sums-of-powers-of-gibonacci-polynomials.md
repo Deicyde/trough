@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of powers of gibonacci polynomials
 
-29 results, 29 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html).
+29 results, 29 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html).
 
 ## Catalan-type identities for Fibonacci and Lucas polynomials
 
@@ -30,7 +30,7 @@ The source quotes this lemma from Koshy.
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.gibonacciPoly_mul_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#gibonacci-poly-mul-sub-sq).
+Stated but not proved: `MetaMathlibExt.gibonacciPoly_mul_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#gibonacci-poly-mul-sub-sq).
 
 ## Telescoping inverse-power series of gibonacci polynomials at odd indices, odd shift
 
@@ -49,7 +49,7 @@ $1/g_{2n-k}^{\lambda} - 1/g_{2n+k}^{\lambda}$; here the summation index is shift
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_sub_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-sub-odd).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_sub_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-sub-odd).
 
 ## Telescoping inverse-power series of gibonacci polynomials at even indices, even shift
 
@@ -68,7 +68,7 @@ $1/g_{2n-k}^{\lambda} - 1/g_{2n+k}^{\lambda}$; here the summation index is shift
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.3.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_sub_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-sub-even).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_sub_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-sub-even).
 
 ## Telescoping inverse-power series of gibonacci polynomials at even indices, odd shift
 
@@ -88,7 +88,7 @@ at $0$.
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.4.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_succ_sub_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-succ-sub-odd).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_succ_sub_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-succ-sub-odd).
 
 ## Telescoping inverse-power series of gibonacci polynomials at odd indices, even shift
 
@@ -108,7 +108,7 @@ at $0$.
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 2.5.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_succ_sub_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-succ-sub-eve).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_gibonacciPoly_succ_sub_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-inv-pow-gibonacci-poly-succ-sub-eve).
 
 ## Even powers of Fibonacci polynomials at $n \pm k$
 
@@ -128,7 +128,7 @@ $0$).
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 3.1.
 
-Stated but not proved: `MetaMathlibExt.fibPoly_pow_even_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#fib-poly-pow-even-sub).
+Stated but not proved: `MetaMathlibExt.fibPoly_pow_even_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#fib-poly-pow-even-sub).
 
 ## Even powers of Lucas polynomials at $n \pm k$
 
@@ -148,7 +148,7 @@ in $\mathbb{Z}[x]$.
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.lucasPoly_pow_even_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#lucas-poly-pow-even-sub).
+Stated but not proved: `MetaMathlibExt.lucasPoly_pow_even_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#lucas-poly-pow-even-sub).
 
 ## Odd powers of Fibonacci polynomials at $n \pm k$
 
@@ -173,7 +173,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 4.1.
 
-Stated but not proved: `MetaMathlibExt.fibPoly_pow_odd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#fib-poly-pow-odd-sub).
+Stated but not proved: `MetaMathlibExt.fibPoly_pow_odd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#fib-poly-pow-odd-sub).
 
 ## Odd powers of Lucas polynomials at $n \pm k$
 
@@ -198,7 +198,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Lemma 4.2.
 
-Stated but not proved: `MetaMathlibExt.lucasPoly_pow_odd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#lucas-poly-pow-odd-sub).
+Stated but not proved: `MetaMathlibExt.lucasPoly_pow_odd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#lucas-poly-pow-odd-sub).
 
 ## Cubic-denominator series for even-index Fibonacci polynomials
 
@@ -221,7 +221,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.3.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-cube-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-cube-even-index).
 
 ## Cubic series over even-indexed Lucas polynomials
 
@@ -242,7 +242,7 @@ $$\sum_{n=2}^{\infty} \frac{x(x^4 + 4x^2 + 3) f_{6n} + 3x f_{2n}}
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.5.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-cube-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-cube-even-index).
 
 ## Cubic-denominator series for odd-index Fibonacci polynomials
 
@@ -267,7 +267,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.7.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-cube-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-cube-odd-index).
 
 ## Cubic sums with odd-index Lucas polynomial denominators
 
@@ -287,7 +287,7 @@ $$\sum_{n \ge 1} \frac{x (x^4 + 4x^2 + 3) f_{6n+3} - 3x f_{2n+1}}{(\ell_{2n+1}^2
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.9.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-cube-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-cube-odd-index).
 
 ## Cubic-denominator series for even-index Fibonacci numbers
 
@@ -305,7 +305,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.4.
 
-Stated but not proved: `MetaMathlibExt.tsum_fib_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-cube-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_fib_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-cube-even-index).
 
 ## Cubic series over even-indexed Lucas numbers
 
@@ -323,7 +323,7 @@ $$\sum_{n=2}^{\infty} \frac{8F_{6n} + 3F_{2n}}{(L_{2n}^2 + 5)^3} = \frac{74}{926
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.6.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucas_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-cube-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucas_cube_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-cube-even-index).
 
 ## Cubic-denominator series for odd-index Fibonacci numbers
 
@@ -345,7 +345,7 @@ $45/8 - 124/25 = 133/200$.
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.8.
 
-Stated but not proved: `MetaMathlibExt.tsum_fib_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-cube-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_fib_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-cube-odd-index).
 
 ## Cubic series over odd-indexed Lucas numbers
 
@@ -363,7 +363,7 @@ $$\sum_{n=1}^{\infty} \frac{8F_{6n+3} - 3F_{2n+1}}{(L_{2n+1}^2 - 5)^3} = \frac{1
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.10.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucas_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-cube-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucas_cube_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-cube-odd-index).
 
 ## Series of even powers of Fibonacci polynomials at even indices
 
@@ -382,7 +382,7 @@ $$
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_even_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-even-pow-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_even_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-even-pow-even-index).
 
 ## Even-power sums with even-index Lucas polynomial denominators
 
@@ -400,7 +400,7 @@ $$\sum_{n \ge L} \frac{\sum_{j=0}^{m-1} \binom{2m}{j} (-1)^{kj} f_{2k(m-j)} f_{4
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_even_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-even-pow-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_even_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-even-pow-even-index).
 
 ## Even-power series over odd-indexed Fibonacci polynomials
 
@@ -419,7 +419,7 @@ This is the source's sum over $n \ge M$ with the summation index shifted to star
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_even_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-even-pow-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_even_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-even-pow-odd-index).
 
 ## Even-power sums with odd-index Lucas polynomial denominators
 
@@ -437,7 +437,7 @@ $$\sum_{n \ge M} \frac{\sum_{j=0}^{m-1} \binom{2m}{j} (-1)^{(k+1)j} f_{2k(m-j)} 
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_even_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-even-pow-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_even_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-even-pow-odd-index).
 
 ## Odd-power series over even-indexed Fibonacci polynomials
 
@@ -463,7 +463,7 @@ These are the source's sums over $n \ge L$ with the summation index shifted to s
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.5.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_odd_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-odd-pow-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_odd_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-odd-pow-even-index).
 
 ## Odd-power sums with even-index Lucas polynomial denominators
 
@@ -487,7 +487,7 @@ $$\sum_{n \ge L} \frac{\sum_{j=0}^{m} \binom{2m+1}{j} f_{2n(2m+1-2j)} f_{k(2m+1-
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.6.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_odd_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-odd-pow-even-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_odd_pow_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-odd-pow-even-index).
 
 ## Odd-power series over odd-indexed Fibonacci polynomials
 
@@ -513,7 +513,7 @@ These are the source's sums over $n \ge M$ with the summation index shifted to s
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.7.
 
-Stated but not proved: `MetaMathlibExt.tsum_fibPoly_odd_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-odd-pow-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_fibPoly_odd_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-poly-odd-pow-odd-index).
 
 ## Odd-power sums with odd-index Lucas polynomial denominators
 
@@ -537,7 +537,7 @@ $$\sum_{n \ge M} \frac{\sum_{j=0}^{m} (-1)^j \binom{2m+1}{j} f_{(2n+1)(2m+1-2j)}
 
 - Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Theorem 1.8.
 
-Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_odd_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-odd-pow-odd-index).
+Stated but not proved: `MetaMathlibExt.tsum_lucasPoly_odd_pow_odd_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialPowerSumsWanted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-lucas-poly-odd-pow-odd-index).
 
 ## Telescoping sum of powers of gibonacci polynomial ratios
 
@@ -555,7 +555,7 @@ $$\sum_{n \ge 0} \left(\frac{g_{(2n+1)k+r}^\lambda}{g_{(2n+1)k}^\lambda} -
 
 - Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_pow_ratio_telescope` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-gibonacci-poly-pow-ratio-telescope).
+Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_pow_ratio_telescope` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-gibonacci-poly-pow-ratio-telescope).
 
 ## Telescoping sum of powers of inverse gibonacci polynomial ratios
 
@@ -573,7 +573,7 @@ $$\sum_{n \ge 0} \left(\frac{g_{(2n+1)k}^\lambda}{g_{(2n+1)k+r}^\lambda} -
 
 - Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_pow_inv_ratio_telescope` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-gibonacci-poly-pow-inv-ratio-telesc).
+Stated but not proved: `MetaMathlibExt.tsum_gibonacciPoly_pow_inv_ratio_telescope` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-gibonacci-poly-pow-inv-ratio-telesc).
 
 ## Gibonacci polynomial square sums at even multiples of the index
 
@@ -595,7 +595,7 @@ paper's proof and its corollaries use the sign stated here.
 
 - Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.tsum_fib_mul_div_gibonacciPoly_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-mul-div-gibonacci-poly-sq-add).
+Stated but not proved: `MetaMathlibExt.tsum_fib_mul_div_gibonacciPoly_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-mul-div-gibonacci-poly-sq-add).
 
 ## Gibonacci polynomial square sums at shifted even multiples of the index
 
@@ -613,7 +613,7 @@ $$\sum_{n \ge 1} \frac{(-1)^k \mu \nu f_r f_{2k}}{g_{2nk+r}^2 + (-1)^{r+k} \mu \
 
 - Thomas Koshy, *More Sums Involving Gibonacci Polynomial Squares Revisited*, The Fibonacci Quarterly 62 (2024), Article koshy07202023, Theorem 3.2.
 
-Stated but not proved: `MetaMathlibExt.tsum_fib_mul_div_gibonacciPoly_shift_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-mul-div-gibonacci-poly-shift-sq).
+Stated but not proved: `MetaMathlibExt.tsum_fib_mul_div_gibonacciPoly_shift_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GibonacciPolynomialSquareSumsRevisitedWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html#tsum-fib-mul-div-gibonacci-poly-shift-sq).
 
 ## Depends on
 
@@ -622,4 +622,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of powers of gibonacci polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/sums-of-powers-of-gibonacci-polynomials)

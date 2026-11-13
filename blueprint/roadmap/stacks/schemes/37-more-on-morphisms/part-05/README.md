@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 37.53 Stein factorization to 37.67 Pushouts in the category…
+# 37.52 Closed points in fibres to 37.66 Ind-quasi-affine morphisms
 
+- [37.52 Closed points in fibres](37-52-closed-points-in-fibres.md)
 - [37.53 Stein factorization](37-53-stein-factorization.md)
 - [37.54 Generic flatness stratification](37-54-generic-flatness-stratification.md)
 - [37.55 Stratifying a morphism](37-55-stratifying-a-morphism.md)
@@ -17,4 +18,3 @@ navigation: transparent
 - [37.64 Weakly étale morphisms](37-64-weakly-etale-morphisms.md)
 - [37.65 Reduced fibre theorem](37-65-reduced-fibre-theorem.md)
 - [37.66 Ind-quasi-affine morphisms](37-66-ind-quasi-affine-morphisms.md)
-- [37.67 Pushouts in the category of schemes, II](37-67-pushouts-in-the-category-of-schemes-ii.md)

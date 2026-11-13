@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.20 P-resolutions
 
-Section 22.20 of the Stacks Project, [Tag 09KK](https://stacks.math.columbia.edu/tag/09KK). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.20 of the Stacks Project, [Tag 09KK](https://stacks.math.columbia.edu/tag/09KK). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09KK, the section
 
 [Tag 09KK](https://stacks.math.columbia.edu/tag/09KK) in the Stacks Project.
 
-**`DifferentialGradedModule.PropertyPFiltration`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L315). The attribute's comment: “a filtration as in property (P): exhaustive, admissible inclusions, graded pieces direct sums of shifts A[k]; bundled encoding”.
+**`DifferentialGradedModule.PropertyPFiltration`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L315). The attribute's comment: “a filtration as in property (P): exhaustive, admissible inclusions, graded pieces direct sums of shifts A[k]; bundled encoding”.
 
 > A *property-(P) filtration* of a differential graded `A`-module `P` (Tag 09KK): an
 > exhaustive increasing filtration `0 = F_{-1} ⊆ F_0 ⊆ F_1 ⊆ ⋯ ⊆ P` by differential graded
@@ -32,13 +32,13 @@ structure PropertyPFiltration (P : DifferentialGradedModule.{u, u, u} A)
 
 Declarations registered for the tag:
 
-- [`Stacks.DifferentialGraded.DGModule.PropertyPFiltration`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Basic.lean#L375), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L354) (StacksFrontier): “a filtration as in property (P); unbundled encoding”.
+- [`Stacks.DifferentialGraded.DGModule.PropertyPFiltration`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Basic.lean#L375), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L354) (StacksFrontier): “a filtration as in property (P); unbundled encoding”.
 
 ## Tag 09KL, a lemma
 
 [Tag 09KL](https://stacks.math.columbia.edu/tag/09KL) in the Stacks Project.
 
-**`Stacks.DifferentialGraded.DGModule.admissible_ses_of_propertyP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Telescope.lean, line 907](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Telescope.lean#L907).
+**`Stacks.DifferentialGraded.DGModule.admissible_ses_of_propertyP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Telescope.lean, line 908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Telescope.lean#L908).
 
 > **Stacks Tag 09KL (Lemma 22.20.1).**
 > Let `(A, d)` be a *lawful* differential graded algebra, `P` a lawful differential graded
@@ -78,7 +78,7 @@ theorem admissible_ses_of_propertyP
 
 [Tag 09KM](https://stacks.math.columbia.edu/tag/09KM) in the Stacks Project.
 
-**`DifferentialGradedModule.leftOrthogonal_acyclic_of_propertyP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/LeftOrthogonalAcyclic.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/LeftOrthogonalAcyclic.lean#L126).
+**`DifferentialGradedModule.leftOrthogonal_acyclic_of_propertyP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/LeftOrthogonalAcyclic.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/LeftOrthogonalAcyclic.lean#L126).
 
 > **Stacks Tag 09KM.** *"Let `(A, d)` be a differential graded algebra. Let `P` be a
 > differential graded `A`-module with property (P). Then `Hom_{K(Mod_(A,d))}(P, N) = 0` for all
@@ -99,7 +99,7 @@ theorem leftOrthogonal_acyclic_of_propertyP {P : DifferentialGradedModule A}
 
 [Tag 09KN](https://stacks.math.columbia.edu/tag/09KN) in the Stacks Project.
 
-**`DifferentialGraded.LeftModule.exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/LeftNativeCover.lean, line 913](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/LeftNativeCover.lean#L913).
+**`DifferentialGraded.LeftModule.exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/LeftNativeCover.lean, line 913](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/LeftNativeCover.lean#L913).
 
 > **Stacks 09KN for left differential graded modules.** Let `(A, d)` be a differential graded
 > algebra over a commutative ring `R` and let `N` be a *left* differential graded `A`-module. Then
@@ -139,7 +139,7 @@ theorem exists_cover (A : DifferentialGradedAlgebra R) (N : LeftModule A) :
         IsAdmissibleShortExact i p
 ```
 
-**`DifferentialGradedModule.exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/NativeCoverBundled.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/NativeCoverBundled.lean#L77).
+**`DifferentialGradedModule.exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/NativeCoverBundled.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/NativeCoverBundled.lean#L77).
 
 > **Stacks 09KN** in the bundled encoding. Let `(A, d)` be a differential graded algebra over
 > a commutative ring `R` and let `M` be a right differential graded `A`-module. Then there is a
@@ -170,7 +170,7 @@ theorem exists_cover (A : DifferentialGradedAlgebra R) (M : DifferentialGradedMo
         IsAdmissibleShortExact i p
 ```
 
-**`DifferentialGraded.NativeCover.exists_dgModule_surjective_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/NativeCover/Assembly.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/NativeCover/Assembly.lean#L639).
+**`DifferentialGraded.NativeCover.exists_dgModule_surjective_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/NativeCover/Assembly.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/NativeCover/Assembly.lean#L639).
 
 > **Theorem (Stacks Project, Tag 09KN, Lemma 22.20.3).**
 >
@@ -213,7 +213,7 @@ theorem exists_dgModule_surjective_cover
 
 [Tag 09KP](https://stacks.math.columbia.edu/tag/09KP) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L635).
+**`DifferentialGradedModule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyP.lean#L635).
 
 > **Property-(P) resolutions exist** (Tag 09KP). Every right differential graded module `M`
 > over a differential graded algebra `(A, d)` receives a quasi-isomorphism from a differential
@@ -228,7 +228,7 @@ theorem exists_propertyP_resolution (A : DifferentialGradedAlgebra.{u, u} R)
       QuasiIso ((forgetToCochainComplex A).map f) ∧ Nonempty (PropertyPFiltration P)
 ```
 
-**`Stacks.DifferentialGraded.DGModule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/PropertyPResolution.lean, line 1297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/PropertyPResolution.lean#L1297).
+**`Stacks.DifferentialGraded.DGModule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/PropertyPResolution.lean, line 1297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/PropertyPResolution.lean#L1297).
 
 > **Property-(P) resolutions exist.** Every lawful differential graded module `M` over a lawful
 > differential graded algebra `A` receives a quasi-isomorphism from a lawful differential graded
@@ -251,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.20, Tag 09KK](https://stacks.math.columbia.edu/tag/09KK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

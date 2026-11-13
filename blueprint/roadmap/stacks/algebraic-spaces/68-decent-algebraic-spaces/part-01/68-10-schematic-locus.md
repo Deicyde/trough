@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.10 Schematic locus
 
-Section 68.10 of the Stacks Project, [Tag 06NN](https://stacks.math.columbia.edu/tag/06NN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.10 of the Stacks Project, [Tag 06NN](https://stacks.math.columbia.edu/tag/06NN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03JI, a proposition
 
 [Tag 03JI](https://stacks.math.columbia.edu/tag/03JI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableDenseSchematicLocus.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableDenseSchematicLocus.lean#L206).
+**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableDenseSchematicLocus.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableDenseSchematicLocus.lean#L206).
 
 > **Stacks 03JI.** The schematic locus of a reasonable algebraic space is dense: a reasonable
 > algebraic space `X` over a scheme `S` has a representable open subspace whose point set is dense
@@ -50,7 +50,7 @@ theorem exists_denseRange_isRepresentable_isOpenSubspace_of_isReasonableSpace
 
 [Tag 086U](https://stacks.math.columbia.edu/tag/086U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusDecent.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusDecent.lean#L322).
+**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusDecent.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusDecent.lean#L322).
 
 > **Stacks 086U (David Rydh).** A decent algebraic space over a scheme has a dense open
 > subspace which is a scheme: its schematic locus of Stacks 03JH is a representable open subspace
@@ -74,7 +74,7 @@ theorem exists_denseRange_isRepresentable_isOpenSubspace_of_isDecentSpace
 
 [Tag 0BA1](https://stacks.math.columbia.edu/tag/0BA1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mem_range_pointsMap_schematicLocus_iff_exists_isAffine_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean#L804).
+**`AlgebraicGeometry.Space.mem_range_pointsMap_schematicLocus_iff_exists_isAffine_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean, line 804](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean#L804).
 
 > **Stacks 0BA1.** Let `X ⟶ Y` be a surjective finite locally free morphism of algebraic
 > spaces over a scheme `S`, and let `y` be a point of `Y`. Then the following are equivalent:
@@ -117,7 +117,7 @@ theorem mem_range_pointsMap_schematicLocus_iff_exists_isAffine_isOpenImmersion
 
 [Tag 06NG](https://stacks.math.columbia.edu/tag/06NG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_finite_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteEtaleAtlasSchematicLocus.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteEtaleAtlasSchematicLocus.lean#L106).
+**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_of_finite_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteEtaleAtlasSchematicLocus.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteEtaleAtlasSchematicLocus.lean#L106).
 
 > **Stacks 06NG.** An algebraic space over `S` admitting a finite étale surjective morphism
 > from a scheme over `S` has a representable open subspace whose point set is dense: such a
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.10, Tag 06NN](https://stacks.math.columbia.edu/tag/06NN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

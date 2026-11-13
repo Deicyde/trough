@@ -8,7 +8,7 @@ proof: formalized
 
 # Multiple harmonic sums
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html).
 
 ## Dilcher's finite multiple harmonic identity for every exponent
 
@@ -23,7 +23,7 @@ $$
 where the right side sums over all weakly increasing tuples $(j_1, \ldots, j_m)$ of integers
 between $1$ and $n$; for $m = 0$ there is only the empty tuple, whose term is $1$.
 
-Formalized by `MetaMathlibExt.dilcher_finite_multiple_harmonic_identity_general`, a theorem declared in [MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#dilcher-finite-multiple-harmonic-identit).
+Formalized by `MetaMathlibExt.dilcher_finite_multiple_harmonic_identity_general`, a theorem declared in [MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#dilcher-finite-multiple-harmonic-identit).
 
 ## Dilcher's finite multiple harmonic identity
 
@@ -41,7 +41,7 @@ between $1$ and $n$.
 
 - Khristo N. Boyadzhiev, "Harmonic Number Identities Via Euler's Transform", Journal of Integer Sequences 12 (2009), Article 09.6.1, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Boyadzhiev/boyadzhiev3.tex>, controlling statement equation (26), lines 323–331. Boyadzhiev attributes the identity to Karl Dilcher, "Some q-series identities related to divisor functions", Discrete Mathematics 145 (1995), 83–93, DOI 10.1016/0012-365X(95)00092-B (the JIS bibliography prints "divisor factors").
 
-Formalized by `MetaMathlibExt.dilcher_finite_multiple_harmonic_identity`, a theorem declared in [MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#dilcher-finite-multiple-harmonic-identit-2).
+Formalized by `MetaMathlibExt.dilcher_finite_multiple_harmonic_identity`, a theorem declared in [MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DilcherFiniteMultipleHarmonic.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#dilcher-finite-multiple-harmonic-identit-2).
 
 ## Multiple harmonic sums
 
@@ -59,7 +59,7 @@ whenever $k$ is a unit modulo $p$). In particular $H_r^{(0)} = 1$, and $H_r^{(n)
 
 - Mattarei–Tauraso, "Congruences of Multiple Sums Involving Sequences Invariant Under the Binomial Transform", J. Integer Sequences, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex>, Lemma.
 
-Formalized by `MetaMathlibExt.multipleHarmonic`, a definition declared in [MathlibExt/NumberTheory/MultipleHarmonic.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleHarmonic.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#multiple-harmonic).
+Formalized by `MetaMathlibExt.multipleHarmonic`, a definition declared in [MathlibExt/NumberTheory/MultipleHarmonic.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleHarmonic.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#multiple-harmonic).
 
 ## Mattarei–Tauraso polynomial congruence for multiple harmonic sums
 
@@ -74,7 +74,7 @@ $$\sum_{k=1}^{p-1} H_{k-1}^{(n-1)} k^{-1} x^k = (-1)^{n-1} \sum_{k=1}^{p-1} (k^{
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex>, Lemma `Gg`.
 
-Formalized by `MetaMathlibExt.multiple_harmonic_polynomial_congruence`, a theorem declared in [MathlibExt/NumberTheory/MultipleHarmonicPolynomialCongruence.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleHarmonicPolynomialCongruence.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#multiple-harmonic-polynomial-congruence).
+Formalized by `MetaMathlibExt.multiple_harmonic_polynomial_congruence`, a theorem declared in [MathlibExt/NumberTheory/MultipleHarmonicPolynomialCongruence.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleHarmonicPolynomialCongruence.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html#multiple-harmonic-polynomial-congruence).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multiple harmonic sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/multiple-harmonic-sums)

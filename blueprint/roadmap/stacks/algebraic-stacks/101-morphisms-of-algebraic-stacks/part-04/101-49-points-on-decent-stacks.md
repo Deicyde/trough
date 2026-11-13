@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.49 Points on decent stacks
 
-Section 101.49 of the Stacks Project, [Tag 0GW6](https://stacks.math.columbia.edu/tag/0GW6). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.49 of the Stacks Project, [Tag 0GW6](https://stacks.math.columbia.edu/tag/0GW6). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GW7, a lemma
 
 [Tag 0GW7](https://stacks.math.columbia.edu/tag/0GW7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.t0Space_points_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackKolmogorov.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackKolmogorov.lean#L130).
+**`AlgebraicGeometry.Stack.t0Space_points_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackKolmogorov.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackKolmogorov.lean#L130).
 
 > **Stacks 0GW7.** The space of points of a decent algebraic stack over `S` is Kolmogorov: two
 > points of `|𝒳|` with the same open neighbourhoods are equal.
@@ -39,7 +39,7 @@ theorem t0Space_points_of_isDecent
 
 [Tag 0GW8](https://stacks.math.columbia.edu/tag/0GW8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.stacksSober_and_isLocallyNoetherianSpace_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSober.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSober.lean#L76).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.stacksSober_and_isLocallyNoetherianSpace_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSober.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSober.lean#L76).
 
 > **Stacks 0GW8.** The space of points of Stacks 04XL of a decent, locally Noetherian
 > algebraic stack over `S` is a sober, locally Noetherian topological space.
@@ -62,7 +62,7 @@ theorem stacksSober_and_isLocallyNoetherianSpace_points
 
 [Tag 0GW9](https://stacks.math.columbia.edu/tag/0GW9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.stacksSober_points_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSoberInertia.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSoberInertia.lean#L140).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.stacksSober_points_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSoberInertia.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DecentStackSoberInertia.lean#L140).
 
 > **Stacks 0GW9.** Let `𝒳` be a decent algebraic stack over `S` such that the inertia projection
 > `I_𝒳 ⟶ 𝒳` is quasi-compact. Then the space of points `|𝒳|` is sober.
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.49, Tag 0GW6](https://stacks.math.columbia.edu/tag/0GW6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.17 Rig-smooth homomorphisms
 
-Section 88.17 of the Stacks Project, [Tag 0GCH](https://stacks.math.columbia.edu/tag/0GCH). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.17 of the Stacks Project, [Tag 0GCH](https://stacks.math.columbia.edu/tag/0GCH). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GCI, a lemma
 
 [Tag 0GCI](https://stacks.math.columbia.edu/tag/0GCI) in the Stacks Project.
 
-**`Rig.isRigSmooth_iff_forall_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L186).
+**`Rig.isRigSmooth_iff_forall_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L186).
 
 > **Stacks Project, Tag 0GCI.** Rig-smoothness of a finite-type morphism of Noetherian
 > weakly admissible rings does not depend on the ideal of definition of its source.
@@ -37,7 +37,7 @@ public theorem isRigSmooth_iff_forall_idealOfDefinition
 
 [Tag 0GCJ](https://stacks.math.columbia.edu/tag/0GCJ) in the Stacks Project.
 
-**`RingHom.IsRigSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L251).
+**`RingHom.IsRigSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L251).
 
 > **Stacks Project, Tag 0GCJ.** A continuous homomorphism of Noetherian adic topological
 > rings is *rig-smooth* when it is adic of topologically finite type — condition (6) of Tag 0GBW
@@ -57,7 +57,7 @@ public abbrev IsRigSmooth {A : Type u} {B : Type v}
 
 [Tag 0GCK](https://stacks.math.columbia.edu/tag/0GCK) in the Stacks Project.
 
-**`Rig.rigSmooth_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothLocality.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothLocality.lean#L451).
+**`Rig.rigSmooth_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothLocality.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothLocality.lean#L451).
 
 > **Stacks 0GCK.** Rig-smoothness is a local property of arrows of `WAdm^Noeth`: it ascends
 > along a completed étale localization diagram, descends along one whose target-side horizontal
@@ -71,7 +71,7 @@ public theorem rigSmooth_isLocalNoetherian :
         RingHom.IsRigSmoothArrow φ)
 ```
 
-**`Rig.rigSmooth_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothLocalityRefined.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothLocalityRefined.lean#L124).
+**`Rig.rigSmooth_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothLocalityRefined.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothLocalityRefined.lean#L124).
 
 > **Stacks 0GCK.** Rig-smoothness is a local property of arrows of `WAdm^Noeth`: it is
 > independent of the presentations of its source and target, ascends along a completed étale
@@ -90,7 +90,7 @@ public theorem rigSmooth_isLocalNoetherian' :
 
 [Tag 0GCL](https://stacks.math.columbia.edu/tag/0GCL) in the Stacks Project.
 
-**`TopologicalRing.rigSmooth_completedTensorProduct_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStability.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothStability.lean#L771).
+**`TopologicalRing.rigSmooth_completedTensorProduct_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStability.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothStability.lean#L772).
 
 > Rig-smoothness (Tag 0GCJ) is stable under base change by adic morphisms (Tag 0GBR) in the
 > sense of Remark 0GBG: if `B → A` is rig-smooth and `B → C` is adic, both arrows of
@@ -119,7 +119,7 @@ public theorem rigSmooth_completedTensorProduct_of_isAdic
 
 [Tag 0GCM](https://stacks.math.columbia.edu/tag/0GCM) in the Stacks Project.
 
-**`Rig.rigSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L401).
+**`Rig.rigSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L401).
 
 > **Stacks Project, Tag 0GCM.**  Rig-smoothness of arrows of `WAdm^Noeth` is stable under
 > composition: if `f : B →+* A` and `g : C →+* B` are continuous rig-smooth homomorphisms of
@@ -150,7 +150,7 @@ public theorem rigSmooth_comp
 
 [Tag 0GH1](https://stacks.math.columbia.edu/tag/0GH1) in the Stacks Project.
 
-**`Rig.isRigFlat_and_exists_isRegular_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothRigFlat.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothRigFlat.lean#L640).
+**`Rig.isRigFlat_and_exists_isRegular_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothRigFlat.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothRigFlat.lean#L640).
 
 > **Stacks Project, Tag 0GH1.**  Let `φ : A → B` be an arrow of `WAdm^{Noeth}` — a continuous
 > homomorphism of Noetherian adic topological rings — which is rig-smooth.  Then `φ` is rig-flat,
@@ -190,7 +190,7 @@ public theorem isRigFlat_and_exists_isRegular_of_isRigSmooth
 
 [Tag 0GH2](https://stacks.math.columbia.edu/tag/0GH2) in the Stacks Project.
 
-**`Rig.CompletedPolynomialPresentation.exists_pow_adicIdeal_le_annihilator_ker_onH₁_chainMapInl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedRigSmooth.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedRigSmooth.lean#L566).
+**`Rig.CompletedPolynomialPresentation.exists_pow_adicIdeal_le_annihilator_ker_onH₁_chainMapInl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedRigSmooth.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedRigSmooth.lean#L565).
 
 > **Stacks Project, Tag 0GH2.**  Let `A → B → C` be morphisms of (0AL4), so that `B` and `C`
 > are adic and topologically of finite type over `A`, and suppose `B → C` is rig-smooth, i.e. `C`
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.17, Tag 0GCH](https://stacks.math.columbia.edu/tag/0GCH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

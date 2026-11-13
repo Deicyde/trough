@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.16 Quasi-finite Gorenstein morphisms
 
-Section 49.16 of the Stacks Project, [Tag 0C14](https://stacks.math.columbia.edu/tag/0C14). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.16 of the Stacks Project, [Tag 0C14](https://stacks.math.columbia.edu/tag/0C14). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C16, a lemma
 
 [Tag 0C16](https://stacks.math.columbia.edu/tag/0C16) in the Stacks Project.
 
-**`Stacks.Discriminant.isInvertible_of_isGorenstein_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L211). The attribute's comment: “(2) implies (3)”.
+**`Stacks.Discriminant.isInvertible_of_isGorenstein_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L211). The attribute's comment: “(2) implies (3)”.
 
 > **[Stacks, Tag 0C16], (2) implies (3).** For a quasi-finite flat morphism of Noetherian
 > schemes whose fibres are Gorenstein schemes, the relative dualizing module `ω_{Y/X}` is an
@@ -31,7 +31,7 @@ theorem isInvertible_of_isGorenstein_fiber [Flat f] (ω : RelativeDualizingModul
       (structureSheafRing Y.toRingedSpace).property ω.sheaf
 ```
 
-**`Stacks.Discriminant.isInvertible_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L230). The attribute's comment: “(1) implies (3)”.
+**`Stacks.Discriminant.isInvertible_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L230). The attribute's comment: “(1) implies (3)”.
 
 > **[Stacks, Tag 0C16], (1) implies (3).** The relative dualizing module of a quasi-finite
 > Gorenstein morphism of Noetherian schemes is an invertible `𝒪_Y`-module.
@@ -47,7 +47,7 @@ theorem isInvertible_of_isGorenstein (hF : ∀ x : X, IsLocallyNoetherian (f.fib
       (structureSheafRing Y.toRingedSpace).property ω.sheaf
 ```
 
-**`Stacks.Discriminant.isGorenstein_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L308).
+**`Stacks.Discriminant.isGorenstein_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L308).
 
 > **[Stacks, Tag 0C16].** For a quasi-finite morphism `f : Y ⟶ X` of Noetherian schemes the
 > following are equivalent:
@@ -76,7 +76,7 @@ theorem isGorenstein_tfae :
             Module.Invertible Γ(Y, V.1) (dualizingModule F)]
 ```
 
-**`Stacks.Discriminant.isInvertible_iff_exists_chart_dualizingModule_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean#L177). The attribute's comment: “(3) iff (4)”.
+**`Stacks.Discriminant.isInvertible_iff_exists_chart_dualizingModule_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean#L177). The attribute's comment: “(3) iff (4)”.
 
 > **[Stacks, Tag 0C16], conditions (3) and (4).** For a quasi-finite morphism of locally
 > Noetherian schemes with relative dualizing module `ω_{Y/X}`, the module `ω_{Y/X}` is an
@@ -101,13 +101,13 @@ theorem isInvertible_iff_exists_chart_dualizingModule_invertible
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Hom.isGorenstein_iff_flat_and_isGorenstein_fiber`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean#L311) (StacksFrontier): “(1) iff (2)”.
+- [`AlgebraicGeometry.Scheme.Hom.isGorenstein_iff_flat_and_isGorenstein_fiber`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/QuasiFiniteGorenstein.lean#L311) (StacksFrontier): “(1) iff (2)”.
 
 ## Tag 0C17, a remark
 
 [Tag 0C17](https://stacks.math.columbia.edu/tag/0C17) in the Stacks Project.
 
-**`Stacks.Discriminant.exists_affineOpens_different_isPrincipal_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L359). The attribute's comment: “(1)”.
+**`Stacks.Discriminant.exists_affineOpens_different_isPrincipal_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L359). The attribute's comment: “(1)”.
 
 > **[Stacks, Tag 0C17 (1)].** The different of a quasi-finite Gorenstein morphism of Noetherian
 > schemes is a locally principal ideal: every point of `Y` has an affine open neighbourhood
@@ -122,7 +122,7 @@ theorem exists_affineOpens_different_isPrincipal_of_isGorenstein
         (show Ideal Γ(Y, V.1) from (different ω τ).toSubmodule.obj (op V.1)).IsPrincipal
 ```
 
-**`Stacks.Discriminant.isLocallyPrincipal_differentIdealSheaf_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L372). The attribute's comment: “(2)”.
+**`Stacks.Discriminant.isLocallyPrincipal_differentIdealSheaf_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L372). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 0C17 (2)].** The closed subscheme `R ⊆ Y` cut out by the different of a
 > quasi-finite Gorenstein morphism of Noetherian schemes is a locally principal closed
@@ -136,7 +136,7 @@ theorem isLocallyPrincipal_differentIdealSheaf_of_isGorenstein
       Stacks.Divisors.IsLocallyPrincipal (differentIdealSheaf ω τ)
 ```
 
-**`Stacks.Discriminant.different_sections_eq_noetherDifferent_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L384). The attribute's comment: “(3)”.
+**`Stacks.Discriminant.different_sections_eq_noetherDifferent_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L384). The attribute's comment: “(3)”.
 
 > **[Stacks, Tag 0C17 (3)].** On affine opens `V = Spec B ⊆ Y` and `U = Spec A ⊆ X` with
 > `f(V) ⊆ U`, the different of a quasi-finite Gorenstein morphism of Noetherian schemes is the
@@ -159,7 +159,7 @@ theorem different_sections_eq_noetherDifferent_of_isGorenstein
         noetherDifferent Γ(X, U.1) Γ(Y, V.1)
 ```
 
-**`Stacks.Discriminant.isEffectiveCartierDivisor_and_invertibleSheafIso_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L409). The attribute's comment: “(6)”.
+**`Stacks.Discriminant.isEffectiveCartierDivisor_and_invertibleSheafIso_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L409). The attribute's comment: “(6)”.
 
 > **[Stacks, Tag 0C17 (6)].** If a quasi-finite Gorenstein morphism of Noetherian schemes is
 > étale at the associated points of `Y`, then the closed subscheme `R ⊆ Y` cut out by the different
@@ -182,7 +182,7 @@ theorem isEffectiveCartierDivisor_and_invertibleSheafIso_of_isGorenstein
               τ.sect
 ```
 
-**`Stacks.Discriminant.discriminantIdeal_eq_normIdealSheaf_differentIdealSheaf_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L440). The attribute's comment: “(5)”.
+**`Stacks.Discriminant.discriminantIdeal_eq_normIdealSheaf_differentIdealSheaf_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L440). The attribute's comment: “(5)”.
 
 > **[Stacks, Tag 0C17 (5)].** If a finite Gorenstein morphism of Noetherian schemes has
 > relative dualizing module `ω_{Y/X}` and trace element `τ_{Y/X}`, then the norm of the closed
@@ -203,7 +203,7 @@ theorem discriminantIdeal_eq_normIdealSheaf_differentIdealSheaf_of_isGorenstein
       discriminantIdeal f = Stacks.Norm.normIdealSheaf f (differentIdealSheaf ω τ)
 ```
 
-**`Stacks.Discriminant.isIso_different_baseChange_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L471). The attribute's comment: “(4)”.
+**`Stacks.Discriminant.isIso_different_baseChange_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/GorensteinInvertible.lean#L471). The attribute's comment: “(4)”.
 
 > **[Stacks, Tag 0C17 (4)].** Formation of the closed subscheme `R ⊆ Y` cut out by the
 > different of a quasi-finite Gorenstein morphism of Noetherian schemes commutes with base change
@@ -228,7 +228,7 @@ theorem isIso_different_baseChange_of_isGorenstein {R R' : Scheme.{u}}
 
 [Tag 0C18](https://stacks.math.columbia.edu/tag/0C18) in the Stacks Project.
 
-**`Stacks.Duality.existsUnique_invertibleSheafIso_upperShriekDualSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L88). The attribute's comment: “if f is finite: O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
+**`Stacks.Duality.existsUnique_invertibleSheafIso_upperShriekDualSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L88). The attribute's comment: “if f is finite: O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
 
 > **Stacks Project, Tag 0C18, the finite case.** Let `f : X ⟶ Y` be a finite Gorenstein
 > morphism of schemes separated and of finite type over a Noetherian base, with `X` Cohen–Macaulay
@@ -257,10 +257,133 @@ theorem existsUnique_invertibleSheafIso_upperShriekDualSection [IsFinite f.left]
         upperShriekDualSection f (pushforwardTrace f.left) j
 ```
 
-**`Stacks.Duality.nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L212). The attribute's comment: “omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R)”.
+**`Stacks.Duality.invertibleSheafIsoOfIsGorenstein_hom_app_eq_upperShriekDualSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L246). The attribute's comment: “if f is finite: the named iso O\_X(R) = omega\_\{X/Y} sends 1\_R to tau\_\{X/Y}, dual to Trace\_f”.
+
+> **Stacks Project, Tag 0C18, the finite case, for the named isomorphism.** If `f` is
+> moreover finite and `ω_{X/Y} = H⁰(f^!𝒪_Y)` (Tag 0BUL) with its trace element, the isomorphism
+> `invertibleSheafIsoOfIsGorenstein : 𝒪_X(R) ≅ ω_{X/Y}` sends `1_R` to the section `τ_{X/Y}` of
+> `H⁰(f^!𝒪_Y)` corresponding under duality to `Trace_f : f_*𝒪_X ⟶ 𝒪_Y` (Tag 0BVI).
+
+```lean
+theorem invertibleSheafIsoOfIsGorenstein_hom_app_eq_upperShriekDualSection [IsFinite f.left]
+    [Flat f.left] (hGor : f.left.IsGorenstein (isLocallyNoetherian_fiber_left f))
+    (hX : IsCohenMacaulay X.left) (hét : ∀ x ∈ genericPoints X.left, EtaleAt f.left x) :
+    Scheme.Modules.Hom.app (invertibleSheafIsoOfIsGorenstein f hGor hX hét
+        (upperShriekRelativeDualizingModuleData f j)
+        (relativeTraceSectionData (upperShriekRelativeDualizingModuleData f j))).hom ⊤
+        ((Stacks.Divisors.canonicalSection' (differentIdealSheaf
+          (upperShriekRelativeDualizingModuleData f j)
+          (relativeTraceSectionData (upperShriekRelativeDualizingModuleData f j)))).eval
+            (op ⊤)) =
+      upperShriekDualSection f (pushforwardTrace f.left) j
+```
+
+**`Stacks.Duality.homologyUpperShriekCompIsoPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L278). The attribute's comment: “the composite isomorphism omega\_X = f^* omega\_Y (x) omega\_\{X/Y}, combining 0C10, the flat cohomology iso and 0BUL”.
+
+> **Stacks Project, Tag 0C18, the isomorphism `ω_X ≅ f^*ω_Y ⊗ ω_{X/Y}`.** Let `f : X ⟶ Y`
+> be a quasi-finite Gorenstein morphism of `FTS S`, `πX = f ≫ πY` and `ω_T` bounded below, with
+> `ω_Y^• = π_Y^!ω_T` and `ω_X^• = π_X^!ω_T`, and let `ω_{X/Y}` be a relative dualizing module.
+> In every degree `i` this is the composite
+> `Hⁱ(ω_X^•) ≅ Hⁱ(Lf^*ω_Y^• ⊗ᴸ H⁰(f^!𝒪_Y)[0]) ≅ f^*Hⁱ(ω_Y^•) ⊗ H⁰(f^!𝒪_Y) ≅ f^*Hⁱ(ω_Y^•) ⊗ ω_{X/Y}`
+> of
+> * `Hⁱ` of the isomorphism `ω_X^• ≅ Lf^*ω_Y^• ⊗ᴸ ω_{X/Y}[0]` of Tag 0C10
+>   (`upperShriekCompIsoPullbackTensorShiftOfIso`: the composition isomorphism
+>   `(f ≫ πY)^! ≅ f^!πY^!`, the inverse of the canonical comparison `μ_{f,ω_Y^•}` of Tag 0B6U,
+>   which is an isomorphism since `f` is perfect, and the concentration `f^!𝒪_Y ≅ H⁰(f^!𝒪_Y)[0]`);
+> * the flat cohomology isomorphism `Hⁱ(Lf^*K ⊗ᴸ G[0]) ≅ f^*Hⁱ(K) ⊗ G`
+>   (`homologyDerivedTensorDerivedPullbackIso`, `H⁰(f^!𝒪_Y)` being flat over `Y`);
+> * the isomorphism `H⁰(f^!𝒪_Y) ≅ ω_{X/Y}` of Tag 0BUL (`upperShriekStructureSheafZerothIsoOfData`).
+>
+> The auxiliary choices (a K-flat resolution, a representative complex, a complex in degree `0`)
+> are made inside these constructions.
+
+```lean
+def homologyUpperShriekCompIsoPullbackTensor [Flat f.left]
+    (hGor : f.left.IsGorenstein (isLocallyNoetherian_fiber_left f))
+    {T : FTS S} (πY : Y ⟶ T) (πX : X ⟶ T) (hπ : f ≫ πY = πX)
+    (jY : CompactificationOf (Over.mk πY.left)) (jX : CompactificationOf (Over.mk πX.left))
+    (ωT : quasiCoherentDerivedCategory T.left) (hωT : DerivedCategoryB.IsBoundedBelow ωT.obj)
+    (i : ℤ) (ω : RelativeDualizingModuleData f.left) :
+    (DerivedCategory.homologyFunctor X.left.Modules i).obj ((upperShriek πX jX).obj ωT).obj ≅
+      ((Stacks.SheafOfModules.Tensor.sheafTensor X.left.sheaf).obj
+        ((Scheme.Modules.pullback f.left).obj
+          ((DerivedCategory.homologyFunctor Y.left.Modules i).obj
+            ((upperShriek πY jY).obj ωT).obj))).obj ω.sheaf
+```
+
+**`Stacks.Duality.homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L318). The attribute's comment: “the composite isomorphism omega\_X = f^* omega\_Y (x) O\_X(R), through 0C17”.
+
+> **Stacks Project, Tag 0C18, the isomorphism `ω_X ≅ f^*ω_Y ⊗ 𝒪_X(R)`.** In the situation of
+> `homologyUpperShriekCompIsoPullbackTensor`, with `X` Cohen–Macaulay, `f` étale at the generic
+> points of `X`, `τ` the trace element of `ω_{X/Y}` and `R` cut out by the different: in every
+> degree `i`, the isomorphism `Hⁱ(ω_X^•) ≅ f^*Hⁱ(ω_Y^•) ⊗ ω_{X/Y}` followed by `f^*Hⁱ(ω_Y^•) ⊗ -`
+> of the inverse of the isomorphism `𝒪_X(R) ≅ ω_{X/Y}` of Tag 0C17
+> (`invertibleSheafIsoOfIsGorenstein`, the unique one sending `1_R` to `τ`).
+
+```lean
+def homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf [Flat f.left]
+    (hGor : f.left.IsGorenstein (isLocallyNoetherian_fiber_left f))
+    (hX : IsCohenMacaulay X.left) (hét : ∀ x ∈ genericPoints X.left, EtaleAt f.left x)
+    {T : FTS S} (πY : Y ⟶ T) (πX : X ⟶ T) (hπ : f ≫ πY = πX)
+    (jY : CompactificationOf (Over.mk πY.left)) (jX : CompactificationOf (Over.mk πX.left))
+    (ωT : quasiCoherentDerivedCategory T.left) (hωT : DerivedCategoryB.IsBoundedBelow ωT.obj)
+    (i : ℤ) (ω : RelativeDualizingModuleData f.left) (τ : RelativeTraceSection ω) :
+    (DerivedCategory.homologyFunctor X.left.Modules i).obj ((upperShriek πX jX).obj ωT).obj ≅
+      ((Stacks.SheafOfModules.Tensor.sheafTensor X.left.sheaf).obj
+        ((Scheme.Modules.pullback f.left).obj
+          ((DerivedCategory.homologyFunctor Y.left.Modules i).obj
+            ((upperShriek πY jY).obj ωT).obj))).obj
+        (Stacks.Divisors.invertibleSheaf' (differentIdealSheaf ω τ))
+```
+
+**`Stacks.Duality.exists_isZero_homology_and_homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L350). The attribute's comment: “the canonical iso omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R) in the degree of the dualizing modules”.
 
 > **Stacks Project, Tag 0C18.** Let `S` be Noetherian, `f : X ⟶ Y` a quasi-finite Gorenstein
-> morphism of `FTS S` étale at the generic points of `X`, with `X` Cohen–Macaulay, and let
+> morphism of `FTS S`, with `X` and `Y` Cohen–Macaulay, `Y` connected and `f` étale at the generic
+> points of `X`; let `ω_T` be a dualizing complex, `πX = f ≫ πY`, `ω_Y^• = π_Y^!ω_T` and
+> `ω_X^• = π_X^!ω_T`. Then both are concentrated in one degree `m`, so their cohomology sheaves
+> `ω_Y`, `ω_X` there are the dualizing modules, and for every relative dualizing module `ω_{X/Y}`
+> with trace element `τ` and different `R`, the canonical isomorphism
+> `homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf : ω_X ≅ f^*ω_Y ⊗ 𝒪_X(R)` is
+> `homologyUpperShriekCompIsoPullbackTensor : ω_X ≅ f^*ω_Y ⊗ ω_{X/Y}` (from Tag 0C10) followed by
+> `f^*ω_Y ⊗ -` of the inverse of any isomorphism `𝒪_X(R) ≅ ω_{X/Y}` sending `1_R` to `τ`
+> (Tag 0C17).
+
+```lean
+theorem exists_isZero_homology_and_homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf_eq
+    (hGor : f.left.IsGorenstein (isLocallyNoetherian_fiber_left f))
+    (hX : IsCohenMacaulay X.left) (hét : ∀ x ∈ genericPoints X.left, EtaleAt f.left x)
+    {T : FTS S} (πY : Y ⟶ T) (πX : X ⟶ T) (hπ : f ≫ πY = πX)
+    (jY : CompactificationOf (Over.mk πY.left)) (jX : CompactificationOf (Over.mk πX.left))
+    (ωT : quasiCoherentDerivedCategory T.left) (hωT : IsDualizingComplex ωT.obj)
+    [ConnectedSpace Y.left] (hY : IsCohenMacaulay Y.left) :
+    letI : Flat f.left := ((Scheme.Hom.isGorenstein_iff_flat_and_isGorenstein_fiber f.left
+      (isLocallyNoetherian_fiber_left f)).mp hGor).1
+    ∃ m : ℤ,
+      (∀ i : ℤ, i ≠ m → IsZero ((DerivedCategory.homologyFunctor Y.left.Modules i).obj
+        ((upperShriek πY jY).obj ωT).obj)) ∧
+      (∀ i : ℤ, i ≠ m → IsZero ((DerivedCategory.homologyFunctor X.left.Modules i).obj
+        ((upperShriek πX jX).obj ωT).obj)) ∧
+      ∀ (ω : RelativeDualizingModuleData f.left) (τ : RelativeTraceSection ω)
+        (e : Stacks.Divisors.invertibleSheaf' (differentIdealSheaf ω τ) ≅ ω.sheaf),
+        Scheme.Modules.Hom.app e.hom ⊤
+            ((Stacks.Divisors.canonicalSection' (differentIdealSheaf ω τ)).eval (op ⊤)) =
+          τ.sect →
+        homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf f j hGor hX hét πY πX hπ jY jX ωT
+            (isBoundedBelow_of_isDualizingComplex _ hωT) m ω τ =
+          homologyUpperShriekCompIsoPullbackTensor f j hGor πY πX hπ jY jX ωT
+              (isBoundedBelow_of_isDualizingComplex _ hωT) m ω ≪≫
+            ((Stacks.SheafOfModules.Tensor.sheafTensor X.left.sheaf).obj
+              ((Scheme.Modules.pullback f.left).obj
+                ((DerivedCategory.homologyFunctor Y.left.Modules m).obj
+                  ((upperShriek πY jY).obj ωT).obj))).mapIso e.symm
+```
+
+**`Stacks.Duality.nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L406). The attribute's comment: “existence form: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R) hold in every degree; the canonical maps are homologyUpperShriekCompIsoPullbackTensor and homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf”.
+
+> **Stacks Project, Tag 0C18, existence form.** Let `S` be Noetherian, `f : X ⟶ Y` a
+> quasi-finite Gorenstein morphism of `FTS S` étale at the generic points of `X`, with `X`
+> Cohen–Macaulay, and let
 > `ω_Y^• = π_Y^!ω_T`, `ω_X^• = π_X^!ω_T` for `π_X = f ≫ π_Y` and `ω_T` bounded below (for instance
 > a dualizing complex on the base). Let `ω_{X/Y}` be any relative dualizing module (Tag 0BVG; by
 > Tag 0BUL it is `H⁰(f^!𝒪_Y)`), `τ` its trace element and `R` the closed subscheme cut out by the
@@ -269,6 +392,12 @@ theorem existsUnique_invertibleSheafIso_upperShriekDualSection [IsFinite f.left]
 > When `X` and `Y` are Cohen–Macaulay and `ω_T` is dualizing, `ω_X^•` and `ω_Y^•` have a single
 > nonzero cohomology sheaf on each connected component, in the same degree; `ω_X` and `ω_Y` are
 > these sheaves, and the displayed isomorphisms are `ω_X = f^*ω_Y ⊗ ω_{X/Y} = f^*ω_Y ⊗ 𝒪_X(R)`.
+>
+> This only asserts that the isomorphisms exist; the canonical isomorphisms of the remark are the
+> named maps `homologyUpperShriekCompIsoPullbackTensor` and
+> `homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf` (computed here at the chosen
+> compactification of `f`), described in
+> `exists_isZero_homology_and_homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf_eq`.
 
 ```lean
 theorem nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein
@@ -296,7 +425,7 @@ theorem nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein
           (Stacks.Divisors.invertibleSheaf' (differentIdealSheaf ω τ)))
 ```
 
-**`Stacks.Duality.upperShriek_quasiFinite_isGorenstein_dualizing_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L276). The attribute's comment: “the whole remark: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R), and for f finite O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
+**`Stacks.Duality.upperShriek_quasiFinite_isGorenstein_dualizing_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L457). The attribute's comment: “the whole remark, part 1 in existence form: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R), and for f finite O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
 
 > **Stacks Project, Tag 0C18**, the whole remark. Let `S` be Noetherian and `f : X ⟶ Y` a
 > quasi-finite Gorenstein morphism of schemes separated and of finite type over `S`, with `X`
@@ -311,6 +440,10 @@ theorem nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein
 > 2. if moreover `f` is finite, the isomorphism `𝒪_X(R) ≅ ω_{X/Y} = H⁰(f^!𝒪_Y)` is the unique one
 >    sending the canonical section `1_R` to the section `τ_{X/Y}` which corresponds under duality to
 >    `Trace_f : f_*𝒪_X ⟶ 𝒪_Y` (Tag 0BVI).
+>
+> Part 1 is stated in existence form; the canonical isomorphisms are
+> `homologyUpperShriekCompIsoPullbackTensor` and
+> `homologyUpperShriekCompIsoPullbackTensorInvertibleSheaf`.
 
 ```lean
 theorem upperShriek_quasiFinite_isGorenstein_dualizing_iso
@@ -355,4 +488,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.16, Tag 0C14](https://stacks.math.columbia.edu/tag/0C14)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

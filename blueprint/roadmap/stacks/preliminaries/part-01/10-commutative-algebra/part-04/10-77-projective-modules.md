@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.77 Projective modules
 
-Section 10.77 of the Stacks Project, [Tag 05CD](https://stacks.math.columbia.edu/tag/05CD). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.77 of the Stacks Project, [Tag 05CD](https://stacks.math.columbia.edu/tag/05CD). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05CE, a definition
 
 [Tag 05CE](https://stacks.math.columbia.edu/tag/05CE) in the Stacks Project.
 
-**`Module.projective_iff_homLeft_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L65). The attribute's comment: “elementwise form, any ring”.
+**`Module.projective_iff_homLeft_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L65). The attribute's comment: “elementwise form, any ring”.
 
 > An `R`-module `P` is projective if and only if `Hom_R(P, -)` carries every short exact
 > sequence `0 → N₁ → N₂ → N₃ → 0` to a short exact sequence
@@ -31,7 +31,7 @@ theorem projective_iff_homLeft_shortExact :
         Function.Surjective (LinearMap.compRight (M := P) ℕ g)
 ```
 
-**`Module.projective_iff_shortExact_map_linearCoyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L91).
+**`Module.projective_iff_shortExact_map_linearCoyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L91).
 
 > An `R`-module `P` is projective if and only if the functor
 > `Hom_R(P, -) : ModuleCat R ⥤ ModuleCat R` sends short exact sequences to short exact
@@ -44,7 +44,7 @@ theorem projective_iff_shortExact_map_linearCoyoneda :
         (op (ModuleCat.of R P)))).ShortExact
 ```
 
-**`Module.projective_iff_preservesFiniteLimits_and_preservesFiniteColimits_linearCoyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L121). The attribute's comment: “exact functor as preserving finite limits and finite colimits”.
+**`Module.projective_iff_preservesFiniteLimits_and_preservesFiniteColimits_linearCoyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/HomExact.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/HomExact.lean#L121). The attribute's comment: “exact functor as preserving finite limits and finite colimits”.
 
 > An `R`-module `P` is projective if and only if the functor
 > `Hom_R(P, -) : ModuleCat R ⥤ ModuleCat R` is exact, in the sense that it preserves finite
@@ -63,7 +63,7 @@ theorem projective_iff_preservesFiniteLimits_and_preservesFiniteColimits_linearC
 
 [Tag 05CF](https://stacks.math.columbia.edu/tag/05CF) in the Stacks Project.
 
-**`characterize_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Characterization.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Characterization.lean#L130). References: EGA 0 (17.2.1), “n = 0”; SGA 5 XV (3.Lemma3), “more general”.
+**`characterize_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Characterization.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Characterization.lean#L130). References: EGA 0 (17.2.1), “n = 0”; SGA 5 XV (3.Lemma3), “more general”.
 
 > Theorem (Stacks Tag 05CF). For an `R`-module `P`, the three conditions
 > "`P` is projective (lifting property)", "`P` is a direct summand of a free
@@ -79,7 +79,7 @@ theorem characterize_projective (P : Type u) [AddCommGroup P] [Module R P] :
 
 [Tag 0G8T](https://stacks.math.columbia.edu/tag/0G8T) in the Stacks Project.
 
-**`projective_of_ext_one_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ext/Finiteness.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ext/Finiteness.lean#L607). References: EGA 0 (17.2.1), “n = 0”; EGA 0 (17.2.8), “special case”.
+**`projective_of_ext_one_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ext/Finiteness.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ext/Finiteness.lean#L607). References: EGA 0 (17.2.1), “n = 0”; EGA 0 (17.2.8), “special case”.
 
 > Stacks tag 0G8T (Lemma 10.77.3): a finite module `P` over a Noetherian ring `R` is
 > projective as soon as `Ext¹_R(P, M)` vanishes for every finite `R`-module `M`.
@@ -98,13 +98,13 @@ theorem projective_of_ext_one_eq_zero {R : Type} [CommRing R] [IsNoetherianRing 
 
 Declarations registered for the tag:
 
-- [`Module.instProjectiveDFinsupp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.instProjectiveDFinsupp#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Module/Projective/Characterization.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Characterization.lean#L150) (StacksFrontier): “a direct sum of projective modules is projective”.
+- [`Module.instProjectiveDFinsupp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.instProjectiveDFinsupp#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Module/Projective/Characterization.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Characterization.lean#L150) (StacksFrontier): “a direct sum of projective modules is projective”.
 
 ## Tag 07LV, a lemma
 
 [Tag 07LV](https://stacks.math.columbia.edu/tag/07LV) in the Stacks Project.
 
-**`Module.exists_projective_quotient_smul_top_linearEquiv_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L376). References: SGA 5 XV (3.Lemma3), “(ii), existence”.
+**`Module.exists_projective_quotient_smul_top_linearEquiv_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L376). References: SGA 5 XV (3.Lemma3), “(ii), existence”.
 
 > **Stacks 07LV.** Let `R` be a ring, let `I ⊆ R` be a nilpotent two-sided ideal and let `Q` be
 > a projective `R ⧸ I`-module. Then there is a projective `R`-module `P` together with an
@@ -122,7 +122,7 @@ public theorem Module.exists_projective_quotient_smul_top_linearEquiv_of_isNilpo
 
 [Tag 0D47](https://stacks.math.columbia.edu/tag/0D47) in the Stacks Project.
 
-**`lift_finite_projective_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L393). References: SGA 5 XV (3.Lemma3), “(ii) existence, finite”.
+**`lift_finite_projective_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L393). References: SGA 5 XV (3.Lemma3), “(ii) existence, finite”.
 
 > **Stacks Tag 0D47 (Lemma 10.77.6).**
 > Let `R` be a commutative ring and `I ⊆ R` a locally nilpotent ideal. Let `Pbar` be a
@@ -144,7 +144,7 @@ theorem lift_finite_projective_of_locallyNilpotent
 
 [Tag 05CG](https://stacks.math.columbia.edu/tag/05CG) in the Stacks Project.
 
-**`Module.Flat.projective_of_isNilpotent_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/NilpotentIdeal.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/NilpotentIdeal.lean#L193). References: SGA 5 XV (3.Lemma3), “(ii) flat ⇒ projective”.
+**`Module.Flat.projective_of_isNilpotent_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/NilpotentIdeal.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/NilpotentIdeal.lean#L193). References: SGA 5 XV (3.Lemma3), “(ii) flat ⇒ projective”.
 
 > **Stacks 05CG.** Let `R` be a ring, let `I ⊆ R` be a nilpotent ideal and let `M` be a flat
 > `R`-module such that `M/IM` is a projective `R ⧸ I`-module. Then `M` is a projective
@@ -162,7 +162,7 @@ public theorem Module.Flat.projective_of_isNilpotent_of_projective_quotient_smul
 
 [Tag 0H7M](https://stacks.math.columbia.edu/tag/0H7M) in the Stacks Project.
 
-**`projective_of_projective_quotient_inter_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 943](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L943).
+**`projective_of_projective_quotient_inter_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Lifting.lean, line 943](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Lifting.lean#L943).
 
 > Stacks Tag 0H7M, Lemma 10.77.8: if $I \cap J = 0$ and both $P/IP$ (as an
 > $R/I$-module) and $P/JP$ (as an $R/J$-module) are projective, then $P$ is a
@@ -184,4 +184,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.77, Tag 05CD](https://stacks.math.columbia.edu/tag/05CD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

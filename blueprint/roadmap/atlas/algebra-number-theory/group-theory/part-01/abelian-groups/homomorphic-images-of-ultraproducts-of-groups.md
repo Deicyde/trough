@@ -7,7 +7,7 @@ statement: formalized
 
 # Homomorphic images of ultraproducts of groups
 
-9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html).
+9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html).
 
 ## Ultraproduct kernel
 
@@ -16,7 +16,7 @@ $(G_i)_{i \in \mathbb{N}}$ of groups, the normal subgroup of $\prod_i G_i$ gener
 sequences $(g_i)_i$ with $\{i : g_i = 1\} \in U$. These sequences already form a normal subgroup,
 so the kernel consists of exactly them.
 
-Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.ultraproductKernel`, an abbreviation declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#ultraproduct-kernel).
+Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.ultraproductKernel`, an abbreviation declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#ultraproduct-kernel).
 
 ## Ultraproduct of a sequence of groups
 
@@ -25,7 +25,7 @@ $(G_i)_{i \in \mathbb{N}}$ of groups, the ultraproduct $\left(\prod_i G_i\right)
 of the direct product $\prod_i G_i$ by the ultraproduct kernel, the normal subgroup of sequences
 $(g_i)_i$ with $\{i : g_i = 1\} \in U$.
 
-Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.Ultraproduct`, an abbreviation declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#ultraproduct).
+Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.Ultraproduct`, an abbreviation declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#ultraproduct).
 
 ## Kourovka Problem 20.13(a) (Bergman)
 
@@ -36,7 +36,7 @@ homomorphism from the ultraproduct $\left(\prod_i G_i\right)/U$ onto $A$, then t
 $(H_i)_{i \in \mathbb{N}}$ of abelian groups and a nonprincipal ultrafilter $V$ on $\mathbb{N}$
 with a surjective homomorphism from $\left(\prod_i H_i\right)/V$ onto $A$.
 
-Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct`, a definition declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-ultraproduct-is-image-o).
+Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct`, a definition declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-ultraproduct-is-image-o).
 
 ## Kourovka Problem 20.13(b) (Bergman)
 
@@ -45,7 +45,7 @@ homomorphic image of a direct product $\prod_{i \in I} G_i$ of an infinite famil
 of finite (not necessarily abelian) groups is also a homomorphic image of the direct product
 $\prod_{j \in J} H_j$ of some family $(H_j)_{j \in J}$ of finite abelian groups.
 
-Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfProductOfFiniteIsImageOfAbelianProduct`, a definition declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-product-of-finite-is-im).
+Formalized by `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfProductOfFiniteIsImageOfAbelianProduct`, a definition declared in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-product-of-finite-is-im).
 
 ## Abelian images of ultraproducts are images of abelian ultraproducts
 
@@ -60,7 +60,7 @@ $\mathbb{N}$ with a surjective homomorphism from $\left(\prod_i H_i\right)/V$ on
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.13 (G. M. Bergman); resolution: S. M. Corson, On homomorphic images of ultraproducts, preprint, arXiv:2503.09228 (2025), Theorem 17 with Proposition 10: an abelian group is cotorsion iff it is an image of (∏ G_i)/(⊕ G_i) for some sequence of groups, iff an image of a product of finite cyclic groups, iff an image of a product of finite groups, and cotorsion groups are images of nonprincipal ultraproducts of abelian groups; Questions 1 and 2 (Kourovka 20.13(a), (b)) are answered affirmatively, https://arxiv.org/abs/2503.09228.
 
-Stated but not proved: `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-ultraproduct-is-image-o-2).
+Stated but not proved: `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfUltraproductIsImageOfAbelianUltraproduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-ultraproduct-is-image-o-2).
 
 ## Abelian images of products of finite groups
 
@@ -75,7 +75,7 @@ Corson proves more: such an $A$ is a homomorphic image of a direct product of fi
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 20.13 (G. M. Bergman); resolution: S. M. Corson, On homomorphic images of ultraproducts, preprint, arXiv:2503.09228 (2025), Theorem 17 with Proposition 10: an abelian group is cotorsion iff it is an image of (∏ G_i)/(⊕ G_i) for some sequence of groups, iff an image of a product of finite cyclic groups, iff an image of a product of finite groups, and cotorsion groups are images of nonprincipal ultraproducts of abelian groups; Questions 1 and 2 (Kourovka 20.13(a), (b)) are answered affirmatively, https://arxiv.org/abs/2503.09228.
 
-Stated but not proved: `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfProductOfFiniteIsImageOfAbelianProduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-product-of-finite-is-im-2).
+Stated but not proved: `MathlibExt.GroupTheory.AbelianImagesUltraproductsKourovka20Problem13Wanted.abelianImageOfProductOfFiniteIsImageOfAbelianProduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AbelianImagesUltraproductsKourovka20Problem13Wanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#abelian-image-of-product-of-finite-is-im-2).
 
 ## Groups locally an image of the ultrapower $\mathbb{Z}^{\mathbb{N}}/U$
 
@@ -86,7 +86,7 @@ homomorphic image of $\mathbb{Z}^{\mathbb{N}}/U$: there is a surjective homomorp
 the additive group $\mathbb{Z}^{\mathbb{N}}$ of integer sequences onto $H$ such that $\psi(f) = 1$
 for every sequence $f$ with $f_i = 0$ for $U$-almost every $i$.
 
-Formalized by `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.IsLocallyUltrapowerImage`, a definition declared in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#is-locally-ultrapower-image).
+Formalized by `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.IsLocallyUltrapowerImage`, a definition declared in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#is-locally-ultrapower-image).
 
 ## Bergman's question on images of countable ultraproducts (Kourovka 21.12)
 
@@ -101,7 +101,7 @@ with $f_i = 1$ for $U$-almost every $i$.
 The question is posed for a fixed nonprincipal $U$; it is stated here for some $U$, so that its
 refutation covers every $U$.
 
-Formalized by `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.locallyUltrapowerImageIsUltraproductImage`, a definition declared in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#locally-ultrapower-image-is-ultraproduct).
+Formalized by `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.locallyUltrapowerImageIsUltraproductImage`, a definition declared in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#locally-ultrapower-image-is-ultraproduct).
 
 ## Bergman's question 21.12 has a negative answer
 
@@ -121,7 +121,7 @@ nonprincipal countable ultraproduct. The Kourovka Notebook marks 21.12 solved ("
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 21.12 (G. M. Bergman); resolution: S. M. Corson, On homomorphic images of ultraproducts, J. Algebra 681 (2025), 306-317, arXiv:2503.09228, Section 2, proof of the negative answer to Question 3 (Bergman's Question 19): for every nonprincipal ultrafilter U on ω the group ⊕ₙ Cₙ, Cₙ finite cyclic of unbounded orders, has each element in a homomorphic image of (∏ ℤ)/U but is not a homomorphic image of any nonprincipal ultraproduct (∏ Gᵢ)/V; Kourovka Notebook (21st issue), Problem 21.12: No, it need not, https://arxiv.org/abs/2503.09228.
 
-Stated but not proved: `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.locallyUltrapowerImageIsUltraproductImage_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#locally-ultrapower-image-is-ultraproduct-2).
+Stated but not proved: `MathlibExt.GroupTheory.UltraproductImageKourovka21Problem12Wanted.locallyUltrapowerImageIsUltraproductImage_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UltraproductImageKourovka21Problem12Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html#locally-ultrapower-image-is-ultraproduct-2).
 
 ## Depends on
 
@@ -130,4 +130,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Homomorphic images of ultraproducts of groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/abelian-groups/homomorphic-images-of-ultraproducts-of-groups)

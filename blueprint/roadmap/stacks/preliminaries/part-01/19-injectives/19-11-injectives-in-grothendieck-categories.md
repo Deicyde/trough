@@ -8,13 +8,13 @@ proof: formalized
 
 # 19.11 Injectives in Grothendieck categories
 
-Section 19.11 of the Stacks Project, [Tag 05AB](https://stacks.math.columbia.edu/tag/05AB). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 19.11 of the Stacks Project, [Tag 05AB](https://stacks.math.columbia.edu/tag/05AB). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E8N, a lemma
 
 [Tag 0E8N](https://stacks.math.columbia.edu/tag/0E8N) in the Stacks Project.
 
-**`Stacks.Injectives.eventuallyConst_subobject_of_monotone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean#L79). The attribute's comment: “eventually constant”.
+**`Stacks.Injectives.eventuallyConst_subobject_of_monotone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean#L79). The attribute's comment: “eventually constant”.
 
 > **Stacks 0E8N.** An increasing well-ordered chain of subobjects is eventually constant if
 > the cofinality of the index order exceeds the number of morphisms from a separator to the
@@ -28,7 +28,7 @@ theorem eventuallyConst_subobject_of_monotone {U X : C} (hU : IsSeparator U)
     atTop.EventuallyConst f
 ```
 
-**`Stacks.Injectives.eventuallyConst_subobject_of_antitone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean#L96). The attribute's comment: “eventually constant”.
+**`Stacks.Injectives.eventuallyConst_subobject_of_antitone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/EventuallyConstantChains.lean#L96). The attribute's comment: “eventually constant”.
 
 > **Stacks 0E8N.** A decreasing well-ordered chain of subobjects is eventually constant if
 > the cofinality of the index order exceeds the number of morphisms from a separator to the
@@ -42,7 +42,7 @@ theorem eventuallyConst_subobject_of_antitone {U X : C} (hU : IsSeparator U)
     atTop.EventuallyConst f
 ```
 
-**`Stacks.Injectives.mk_subobject_le_two_pow_mk_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L64). The attribute's comment: “subobject cardinality”.
+**`Stacks.Injectives.mk_subobject_le_two_pow_mk_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L64). The attribute's comment: “subobject cardinality”.
 
 > The collection of subobjects of an object has cardinality at most the cardinality of the
 > power set of the morphisms to it from a separator.
@@ -53,7 +53,7 @@ theorem mk_subobject_le_two_pow_mk_hom {U X : C} (hU : IsSeparator U) :
       (2 : Cardinal.{max u v}) ^ Cardinal.lift.{u} (Cardinal.mk (U ⟶ X))
 ```
 
-**`Stacks.Injectives.cardinality_le_hom_of_strictMono_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L191). The attribute's comment: “chain bound”.
+**`Stacks.Injectives.cardinality_le_hom_of_strictMono_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L191). The attribute's comment: “chain bound”.
 
 > A strictly increasing chain of subobjects has cardinality at most the cardinality of the
 > set of morphisms from a separator to the ambient object.
@@ -65,7 +65,7 @@ theorem cardinality_le_hom_of_strictMono_subobject {U X : C} (hU : IsSeparator U
     Cardinal.lift.{v} (Cardinal.mk ι) ≤ Cardinal.lift.{w} (Cardinal.mk (U ⟶ X))
 ```
 
-**`Stacks.Injectives.cardinality_le_hom_of_strictAnti_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L206). The attribute's comment: “chain bound”.
+**`Stacks.Injectives.cardinality_le_hom_of_strictAnti_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/SubobjectCardinality.lean#L206). The attribute's comment: “chain bound”.
 
 > A strictly decreasing chain of subobjects has cardinality at most the cardinality of the
 > set of morphisms from a separator to the ambient object.
@@ -81,7 +81,7 @@ theorem cardinality_le_hom_of_strictAnti_subobject {U X : C} (hU : IsSeparator U
 
 [Tag 079C](https://stacks.math.columbia.edu/tag/079C) in the Stacks Project.
 
-**`Stacks.Injectives.Size.size`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/Defs.lean#L41).
+**`Stacks.Injectives.Size.size`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/Defs.lean#L41).
 
 > The *size* of an object `M` of an abelian category: the cardinality of the set of
 > subobjects of `M`.
@@ -94,7 +94,7 @@ noncomputable def size {C : Type*} [Category C] [Abelian C] (M : C) : Cardinal
 
 [Tag 079D](https://stacks.math.columbia.edu/tag/079D) in the Stacks Project.
 
-**`Stacks.Injectives.Size.size_X₁_le_size_X₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/Defs.lean#L48).
+**`Stacks.Injectives.Size.size_X₁_le_size_X₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/Defs.lean#L48).
 
 > For a short exact sequence `0 → M' → M → M'' → 0` in a Grothendieck abelian
 > category, the size of `M'` is at most the size of `M`: there is an injection from the
@@ -106,7 +106,7 @@ theorem size_X₁_le_size_X₂ {C : Type*} [Category C] [Abelian C] [IsGrothendi
     size S.X₁ ≤ size S.X₂
 ```
 
-**`Stacks.Injectives.Size.size_X₃_le_size_X₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/Defs.lean#L86).
+**`Stacks.Injectives.Size.size_X₃_le_size_X₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/Defs.lean#L86).
 
 > For a short exact sequence `0 → M' → M → M'' → 0`, the size of `M''` is at most the
 > size of `M`: there is an injection from the subobjects of `M''` into the subobjects of
@@ -122,7 +122,7 @@ theorem size_X₃_le_size_X₂ {C : Type*} [Category C] [Abelian C] [IsGrothendi
 
 [Tag 079E](https://stacks.math.columbia.edu/tag/079E) in the Stacks Project.
 
-**`Stacks.Injectives.exists_epi_coproduct_of_subobject_cardinality_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean#L102). The attribute's comment: “part (1)”.
+**`Stacks.Injectives.exists_epi_coproduct_of_subobject_cardinality_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean#L102). The attribute's comment: “part (1)”.
 
 > If the cardinality of the set of subobjects of `M` is at most `κ`, then `M` is a
 > quotient of a coproduct, indexed by a type of cardinality at most `κ`, of copies of the
@@ -137,7 +137,7 @@ theorem exists_epi_coproduct_of_subobject_cardinality_le (U M : C) (hU : IsSepar
       ∃ (f : (∐ fun (_ : ι) => U) ⟶ M), Epi f
 ```
 
-**`Stacks.Injectives.essentiallySmall_subobject_cardinality_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean#L113). The attribute's comment: “part (2)”.
+**`Stacks.Injectives.essentiallySmall_subobject_cardinality_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/BoundedSizeObjects.lean#L113). The attribute's comment: “part (2)”.
 
 > For every cardinal `κ`, the objects whose sets of subobjects have cardinality at most
 > `κ` have only a set of isomorphism classes.
@@ -153,7 +153,7 @@ theorem essentiallySmall_subobject_cardinality_le (κ : Cardinal.{w}) :
 
 [Tag 079F](https://stacks.math.columbia.edu/tag/079F) in the Stacks Project.
 
-**`Stacks.Injectives.isSmallWithRespectTo_monomorphisms_of_hasCardinalLT_subobject_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SmallWithRespectToInjections.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/SmallWithRespectToInjections.lean#L76).
+**`Stacks.Injectives.isSmallWithRespectTo_monomorphisms_of_hasCardinalLT_subobject_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SmallWithRespectToInjections.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/SmallWithRespectToInjections.lean#L76).
 
 > **Stacks 079F.** Let `A` be a Grothendieck abelian category, let `M` be an object of `A`
 > and let `κ = |M|` be the cardinality of the set of subobjects of `M`. If `α` is an ordinal
@@ -172,7 +172,7 @@ theorem isSmallWithRespectTo_monomorphisms_of_hasCardinalLT_subobject_cof
 
 [Tag 079G](https://stacks.math.columbia.edu/tag/079G) in the Stacks Project.
 
-**`CategoryTheory.injective_iff_exists_extension_of_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean#L76).
+**`CategoryTheory.injective_iff_exists_extension_of_subobject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean#L76).
 
 > **Stacks Tag 079G.** An object `I` of a Grothendieck abelian category is injective if and
 > only if, for every subobject `M` of a separator `G`, every morphism `M ⟶ I` extends along
@@ -189,7 +189,7 @@ theorem injective_iff_exists_extension_of_subobject [Abelian C] [IsGrothendieckA
       ∀ (M : Subobject G) (f : (M : C) ⟶ I), ∃ g : G ⟶ I, M.arrow ≫ g = f
 ```
 
-**`CategoryTheory.exists_monomorphisms_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean#L98). The attribute's comment: “set-indexed form”.
+**`CategoryTheory.exists_monomorphisms_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Injective/DetectingMonomorphisms.lean#L98). The attribute's comment: “set-indexed form”.
 
 > **Tag 079G in set-indexed form.** A Grothendieck abelian category has a set `T` and, for
 > each `t : T`, a monomorphism `N t ⟶ N' t` such that an object `I` is injective precisely when
@@ -212,7 +212,7 @@ theorem exists_monomorphisms_injective_iff (C : Type u) [Category.{v} C] [Abelia
 
 [Tag 079H](https://stacks.math.columbia.edu/tag/079H) in the Stacks Project.
 
-**`Stacks.Injectives.FunctorialEmbedding.hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/GrothendieckFunctorial.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Preadditive/Injective/GrothendieckFunctorial.lean#L107). The attribute's comment: “functorial form; Mathlib's enoughInjectives has the non-functorial half”. References: SGA 4 V (0.1.1), “enough injectives”.
+**`Stacks.Injectives.FunctorialEmbedding.hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Injective/GrothendieckFunctorial.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Injective/GrothendieckFunctorial.lean#L107). The attribute's comment: “functorial form; Mathlib's enoughInjectives has the non-functorial half”. References: SGA 4 V (0.1.1), “enough injectives”.
 
 > **Stacks Project, Tag 079H.** A Grothendieck abelian category has functorial injective
 > embeddings in the sense of [Stacks, Tag 0139].
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 19.11, Tag 05AB](https://stacks.math.columbia.edu/tag/05AB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

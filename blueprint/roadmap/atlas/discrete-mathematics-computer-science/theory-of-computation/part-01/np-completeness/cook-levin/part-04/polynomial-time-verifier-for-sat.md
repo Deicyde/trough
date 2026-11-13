@@ -8,7 +8,7 @@ proof: formalized
 
 # Polynomial-time verifier for SAT
 
-146 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/index.html).
+146 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/index.html).
 
 ## Occurrence list of a CNF formula
 
@@ -17,7 +17,7 @@ occurrence list of $\varphi$ is the list of the variable indices of its literals
 variables of the literals of $C_1$ in order, then those of $C_2$, and so on up to $C_m$.
 Duplicates are kept, so a variable appears once for each literal in which it occurs.
 
-Formalized by `Cslib.CookLevin.varsOf`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#vars-of).
+Formalized by `Cslib.CookLevin.varsOf`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#vars-of).
 
 ## Witness lookup
 
@@ -31,7 +31,7 @@ no further cost.
 It is used with $N$ the variables occurring in a formula and $w$ the witness values, so the first
 occurrence of a variable wins.
 
-Formalized by `Cslib.CookLevin.lookupVar`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var).
+Formalized by `Cslib.CookLevin.lookupVar`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var).
 
 ## Clause check against a witness
 
@@ -43,7 +43,7 @@ lookup, and returns true if the value found equals the polarity $b$; otherwise i
 next literal. When the literals are exhausted it returns false at no further cost; in particular
 the empty clause fails.
 
-Formalized by `Cslib.CookLevin.checkClause`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause).
+Formalized by `Cslib.CookLevin.checkClause`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause).
 
 ## Formula check against a witness
 
@@ -53,7 +53,7 @@ computation that runs the clause check against $N$ and $w$ on the clauses of $\v
 adding up their costs, and returns false as soon as one of them returns false. If every clause
 check returns true, in particular if $\varphi$ has no clauses, it returns true.
 
-Formalized by `Cslib.CookLevin.checkCNF`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf).
+Formalized by `Cslib.CookLevin.checkCNF`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf).
 
 ## The SAT verifier
 
@@ -66,7 +66,7 @@ $\varphi$ in order of occurrence.
 
 Decoding the input is uncharged preprocessing: it adds nothing to the declared cost.
 
-Formalized by `Cslib.CookLevin.satVerifier`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier).
+Formalized by `Cslib.CookLevin.satVerifier`, a definition declared in [CSLibExt/Computability/SatTimeM.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier).
 
 ## Cost bound for witness lookup
 
@@ -74,7 +74,7 @@ For every list $N$ of natural numbers, every list $w$ of
 booleans and every natural number $x$, the cost of looking up $x$ in $N$ and $w$ is at most the
 length of $N$.
 
-Formalized by `Cslib.CookLevin.lookupVar_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var-time-le).
+Formalized by `Cslib.CookLevin.lookupVar_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var-time-le).
 
 ## Lookup in the witness of an assignment
 
@@ -83,7 +83,7 @@ the booleans, $N = (n_1, \dots, n_k)$ a list of natural numbers and $x$ a natura
 up $x$ in $N$ and the list $(v(n_1), \dots, v(n_k))$ returns $v(x)$ if $x$ occurs in $N$, and false
 otherwise.
 
-Formalized by `Cslib.CookLevin.lookupVar_ret_map`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var-ret-map).
+Formalized by `Cslib.CookLevin.lookupVar_ret_map`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#lookup-var-ret-map).
 
 ## Correctness of the witness clause check
 
@@ -92,7 +92,7 @@ of booleans and $C$ a CNF clause. The check of $C$ against $N$ and $w$ returns t
 if $C$ is satisfied by the assignment that sends each natural number $x$ to the value returned by
 looking up $x$ in $N$ and $w$.
 
-Formalized by `Cslib.CookLevin.checkClause_ret`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause-ret).
+Formalized by `Cslib.CookLevin.checkClause_ret`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause-ret).
 
 ## Cost bound for the witness clause check
 
@@ -103,7 +103,7 @@ length of $N$.
 
 Each literal examined costs one tick plus one lookup, and a lookup costs at most $|N|$.
 
-Formalized by `Cslib.CookLevin.checkClause_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause-time-le).
+Formalized by `Cslib.CookLevin.checkClause_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-clause-time-le).
 
 ## Correctness of the witness formula check
 
@@ -112,7 +112,7 @@ of booleans and $\varphi$ a CNF formula. The check of $\varphi$ against $N$ and 
 and only if $\varphi$ is satisfied by the assignment that sends each natural number $x$ to the value
 returned by looking up $x$ in $N$ and $w$.
 
-Formalized by `Cslib.CookLevin.checkCNF_ret`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf-ret).
+Formalized by `Cslib.CookLevin.checkCNF_ret`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf-ret).
 
 ## Cost bound for the witness formula check
 
@@ -121,7 +121,7 @@ of booleans and $\varphi$ a CNF formula, and let $L$ be the sum of the lengths o
 $\varphi$ (its total number of literals). The cost of checking $\varphi$ against $N$ and $w$ is at
 most $L \cdot (|N| + 1)$, where $|N|$ is the length of $N$.
 
-Formalized by `Cslib.CookLevin.checkCNF_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf-time-le).
+Formalized by `Cslib.CookLevin.checkCNF_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#check-cnf-time-le).
 
 ## Length of the occurrence list
 
@@ -129,7 +129,7 @@ For every CNF formula $\varphi$, the length of the
 occurrence list of $\varphi$ equals the total number of literals of $\varphi$, that is, the sum
 over the clauses of $\varphi$ of their lengths.
 
-Formalized by `Cslib.CookLevin.varsOf_length`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#vars-of-length).
+Formalized by `Cslib.CookLevin.varsOf_length`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#vars-of-length).
 
 ## Variables of a formula occur in its occurrence list
 
@@ -137,7 +137,7 @@ Let $\varphi$ be a CNF formula, $C$ a
 clause of $\varphi$ and $(x, b)$ a literal of $C$. Then $x$ belongs to the list of variables
 occurring in $\varphi$.
 
-Formalized by `Cslib.CookLevin.mem_varsOf`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#mem-vars-of).
+Formalized by `Cslib.CookLevin.mem_varsOf`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#mem-vars-of).
 
 ## The literal count is at most the code length
 
@@ -147,7 +147,7 @@ most the length of the length-prefixed binary code of $\varphi$.
 
 Each encoded clause contributes at least its literal count.
 
-Formalized by `Cslib.CookLevin.sum_length_le_encodeCNF_length`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sum-length-le-encode-cnf-length).
+Formalized by `Cslib.CookLevin.sum_length_le_encodeCNF_length`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sum-length-le-encode-cnf-length).
 
 ## The SAT verifier rejects undecodable inputs
 
@@ -155,7 +155,7 @@ For all lists of Booleans $x$ and $w$, if
 the complete CNF decoder fails on $x$, then the SAT verifier on $(x, w)$ returns false at
 declared time cost $0$.
 
-Formalized by `Cslib.CookLevin.satVerifier_none`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-none).
+Formalized by `Cslib.CookLevin.satVerifier_none`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-none).
 
 ## The SAT verifier on a decodable input
 
@@ -164,7 +164,7 @@ CNF formula $\varphi$, if the complete CNF decoder returns $\varphi$ on $x$, the
 on $(x, w)$ coincides with the CNF check of $\varphi$ against the witness $w$ and the occurrence
 list of $\varphi$: both the returned Boolean and the declared time cost are the same.
 
-Formalized by `Cslib.CookLevin.satVerifier_some`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-some).
+Formalized by `Cslib.CookLevin.satVerifier_some`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-some).
 
 ## Declared time bound of the SAT verifier
 
@@ -175,7 +175,7 @@ where $N = |x| + |w|$ is the sum of their lengths.
 If $x$ decodes to a formula with $n$ literals, then $n \le N$ and the check costs at most
 $n(n + 1) \le N(N + 1)$.
 
-Formalized by `Cslib.CookLevin.satVerifier_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-time-le).
+Formalized by `Cslib.CookLevin.satVerifier_time_le`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-time-le).
 
 ## The SAT verifier has polynomial declared time
 
@@ -185,7 +185,7 @@ the declared time cost of the SAT verifier on $(x, w)$ is at most $q(|x| + |w|)$
 
 One can take $q = X^2 + X$. This bounds only the trusted cost annotation.
 
-Formalized by `Cslib.CookLevin.satVerifier_verifierInDeclaredPolyTime`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-verifier-in-declared-poly-t).
+Formalized by `Cslib.CookLevin.satVerifier_verifierInDeclaredPolyTime`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-verifier-in-declared-poly-t).
 
 ## The SAT verifier verifies SAT
 
@@ -197,7 +197,7 @@ that the SAT verifier on $(x, w)$ returns true.
 The intended witness lists values for the variables occurring in the decoded formula, in order of
 occurrence; its length is the literal count, which is at most the input length.
 
-Formalized by `Cslib.CookLevin.satVerifier_verifies`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-verifies).
+Formalized by `Cslib.CookLevin.satVerifier_verifies`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-verifier-verifies).
 
 ## SAT is in NP if its verifier is polynomial-time
 
@@ -210,7 +210,7 @@ This hypothesis must be proved separately: it does not follow from the polynomia
 SAT verifier's declared time, which constrains only a trusted cost annotation and leaves the
 decoding of the input uncharged.
 
-Formalized by `Cslib.CookLevin.satDec_mem_NP_of_isPolyTime`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/SatTimeM.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-dec-mem-np-of-is-poly-time).
+Formalized by `Cslib.CookLevin.satDec_mem_NP_of_isPolyTime`, a theorem declared in [CSLibExt/Computability/SatTimeM.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/SatTimeM.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-01/index.html#sat-dec-mem-np-of-is-poly-time).
 
 ## Stack alphabet of the SAT verifier
 
@@ -218,14 +218,14 @@ The symbols of the token and table stacks are a name
 bit $b$ for each boolean $b$, a polarity marker for each polarity $p$, a clause end marker, a
 value marker for each boolean $b$, and a dead marker. Equality of symbols is decidable.
 
-Formalized by `Cslib.Complexity.SatVerifier.Sym`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#sym).
+Formalized by `Cslib.Complexity.SatVerifier.Sym`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#sym).
 
 ## Reading a symbol as a name bit
 
 A symbol of the token and table stacks that is the name
 bit $b$ reads as the bit $b$; every other symbol reads as no bit, and so ends a name block.
 
-Formalized by `Cslib.Complexity.SatVerifier.Sym.bit?`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#bit).
+Formalized by `Cslib.Complexity.SatVerifier.Sym.bit?`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#bit).
 
 ## Tokens of a literal
 
@@ -234,14 +234,14 @@ the token list is one bit symbol for each bit of the canonical binary representa
 (least significant bit first, empty for $n = 0$), in order, followed by the polarity marker
 symbol for $p$.
 
-Formalized by `Cslib.Complexity.SatVerifier.litToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#lit-toks).
+Formalized by `Cslib.Complexity.SatVerifier.litToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#lit-toks).
 
 ## Tokens of a clause
 
 The tokens of a CNF clause are the tokens of its literals, in order,
 followed by the clause-end symbol.
 
-Formalized by `Cslib.Complexity.SatVerifier.clauseToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#clause-toks).
+Formalized by `Cslib.Complexity.SatVerifier.clauseToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#clause-toks).
 
 ## Token sequence of a CNF formula
 
@@ -255,21 +255,21 @@ marker for $p$.
 
 The verifier's token stack holds this sequence in reverse order.
 
-Formalized by `Cslib.Complexity.SatVerifier.toks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#toks).
+Formalized by `Cslib.Complexity.SatVerifier.toks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#toks).
 
 ## Table entries
 
 A table entry is a pair of a name, which is a list of bits, and an optional
 bit, its value; the value is absent for occurrences past the end of the witness.
 
-Formalized by `Cslib.Complexity.SatVerifier.Ent`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ent).
+Formalized by `Cslib.Complexity.SatVerifier.Ent`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ent).
 
 ## Closing marker of a table entry
 
 The marker closing a table entry whose value is the
 boolean $b$ is the value symbol for $b$; for an entry with no value it is the dead symbol.
 
-Formalized by `Cslib.Complexity.SatVerifier.markOf`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#mark-of).
+Formalized by `Cslib.Complexity.SatVerifier.markOf`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#mark-of).
 
 ## Symbols of a table entry
 
@@ -277,7 +277,7 @@ The symbols of a table entry with name $q$ and value $v$ are the
 bits of $q$ as name-bit symbols, in order, followed by one closing marker: the value marker of $b$
 if $v$ is a bit $b$, and the dead marker if $v$ is absent.
 
-Formalized by `Cslib.Complexity.SatVerifier.entToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ent-toks).
+Formalized by `Cslib.Complexity.SatVerifier.entToks`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ent-toks).
 
 ## Table stack of an entry list
 
@@ -286,7 +286,7 @@ name followed by its closing marker (the value symbol for its value, or the dead
 has no value), and concatenate these in the order of the list. The table stack is the reverse
 of this sequence, with the head as the top of the stack, so the first entry lies at the bottom.
 
-Formalized by `Cslib.Complexity.SatVerifier.tblStk`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#tbl-stk).
+Formalized by `Cslib.Complexity.SatVerifier.tblStk`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#tbl-stk).
 
 ## Occurrence table of a list of variables
 
@@ -295,7 +295,7 @@ list $w$ of bits, the occurrence table is the list of $k$ table entries whose $i
 name the binary code of $n_i$ (Mathlib's encoding of natural numbers as bit lists) and as value
 the bit $w_i$ if $i$ is less than the length of $w$, and no value otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.entsOf`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ents-of).
+Formalized by `Cslib.Complexity.SatVerifier.entsOf`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ents-of).
 
 ## Occurrence table of a formula and a witness
 
@@ -306,7 +306,7 @@ entry pairs the binary name of $n_i$ (its canonical binary representation, least
 bit first, empty for $0$) with the value $w_i$ if $i$ is less than the length of $w$, and with
 no value otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.ents`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ents).
+Formalized by `Cslib.Complexity.SatVerifier.ents`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#ents).
 
 ## Live value of a name in a table
 
@@ -315,7 +315,7 @@ bit string) with either a boolean value or no value, and a bit string $q$, the l
 $q$ is the value of the first entry whose name is $q$ and which carries a value, or false if
 there is no such entry.
 
-Formalized by `Cslib.Complexity.SatVerifier.liveVal`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#live-val).
+Formalized by `Cslib.Complexity.SatVerifier.liveVal`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#live-val).
 
 ## Clause check against an occurrence table
 
@@ -325,7 +325,7 @@ $(x, p)$ whose live value equals its polarity $p$. Here the live value of $x$ is
 first entry of $es$ that is named by the binary code of $x$ and has a value, and false if there
 is no such entry.
 
-Formalized by `Cslib.Complexity.SatVerifier.checkSpec`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#check-spec).
+Formalized by `Cslib.Complexity.SatVerifier.checkSpec`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#check-spec).
 
 ## Tokenizer of the SAT verifier
 
@@ -334,7 +334,7 @@ Given bit strings $x$ and $w$, the tokenizer rejects
 $\varphi$, it returns the pair consisting of the token stack, the reverse of the tokens of
 $\varphi$ in reading order, and the table stack of the occurrence table of $\varphi$ and $w$.
 
-Formalized by `Cslib.Complexity.SatVerifier.tokenize`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#tokenize).
+Formalized by `Cslib.Complexity.SatVerifier.tokenize`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#tokenize).
 
 ## The binary code of natural numbers is injective
 
@@ -342,7 +342,7 @@ For natural numbers $m$ and $n$, the
 binary codes of $m$ and $n$ (Mathlib's encoding of natural numbers as bit lists) are equal if and
 only if $m = n$.
 
-Formalized by `Cslib.Complexity.SatVerifier.encodeNat_inj`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#encode-nat-inj).
+Formalized by `Cslib.Complexity.SatVerifier.encodeNat_inj`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#encode-nat-inj).
 
 ## Canonical binary names
 
@@ -350,7 +350,7 @@ For every list $l$ of bits, encoding the natural number that $l$
 decodes to (Mathlib's binary code of natural numbers, least significant bit first) gives back $l$
 if and only if $l$ is empty or its last bit is true.
 
-Formalized by `Cslib.Complexity.SatVerifier.encodeNat_decodeNat_eq_iff`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#encode-nat-decode-nat-eq-iff).
+Formalized by `Cslib.Complexity.SatVerifier.encodeNat_decodeNat_eq_iff`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#encode-nat-decode-nat-eq-iff).
 
 ## Table lookup agrees with the verifier's variable lookup
 
@@ -364,7 +364,7 @@ false if there is none) equals the return value of the verifier's lookup of $x$ 
 $n$ and $w$: the value $w_i$ for the first $i$ below both $k$ and the length of $w$ with
 $n_i = x$, or false if there is none.
 
-Formalized by `Cslib.Complexity.SatVerifier.liveVal_entsOf`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#live-val-ents-of).
+Formalized by `Cslib.Complexity.SatVerifier.liveVal_entsOf`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#live-val-ents-of).
 
 ## The clause check on the occurrence table is the formula check
 
@@ -374,7 +374,7 @@ of $\varphi$ and $w$ equals the value returned (ignoring the time count) by the 
 $\varphi$ against $w$ that uses the variable occurrences of $\varphi$, in order, as its variable
 list.
 
-Formalized by `Cslib.Complexity.SatVerifier.checkSpec_ents`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#check-spec-ents).
+Formalized by `Cslib.Complexity.SatVerifier.checkSpec_ents`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#check-spec-ents).
 
 ## The SAT verifier's answer through the occurrence table
 
@@ -383,21 +383,21 @@ the value returned by the SAT verifier on $(x, w)$, ignoring the time count, is 
 complete length-prefixed CNF decoder fails on $x$, and is the clause check of $\varphi$ against
 the occurrence table of $\varphi$ and $w$ if $x$ decodes to the CNF formula $\varphi$.
 
-Formalized by `Cslib.Complexity.SatVerifier.satVerifier_ret_eq`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#sat-verifier-ret-eq).
+Formalized by `Cslib.Complexity.SatVerifier.satVerifier_ret_eq`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#sat-verifier-ret-eq).
 
 ## A clause has at most as many tokens as code bits
 
 For every CNF clause $C$, the number
 of tokens of $C$ is at most the length of the binary code of $C$.
 
-Formalized by `Cslib.Complexity.SatVerifier.clauseToks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#clause-toks-length-le).
+Formalized by `Cslib.Complexity.SatVerifier.clauseToks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-02/index.html#clause-toks-length-le).
 
 ## Token count is bounded by the encoding length
 
 For every CNF formula $\varphi$, the
 number of tokens of $\varphi$ is at most the length of the binary encoding of $\varphi$.
 
-Formalized by `Cslib.Complexity.SatVerifier.toks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#toks-length-le).
+Formalized by `Cslib.Complexity.SatVerifier.toks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierSpec.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierSpec.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#toks-length-le).
 
 ## Stacks of the clause check
 
@@ -405,7 +405,7 @@ The eight stacks of the clause-check machine: $T$ (tokens),
 $B$ (table), $S$ (the lookup's stash), $A$ and $C$ (the lookup's scratch stacks), $V$ (looked-up
 value), $P$ (polarity) and $F$ (clause flag).
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#k).
+Formalized by `Cslib.Complexity.SatVerifier.Check.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#k).
 
 ## Driver labels of the clause check
 
@@ -413,7 +413,7 @@ The seven labels of the clause-check driver: start
 (begin the next clause), lits (read the next literal), ret (return from the lookup), drop
 (discard a literal's name bits), endc (end of a clause), yes (accept) and no (reject).
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.DLab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#dlab).
+Formalized by `Cslib.Complexity.SatVerifier.Check.DLab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#dlab).
 
 ## Clause-check statements
 
@@ -422,7 +422,7 @@ machine with the eight driver stacks, each over the symbols of the token and tab
 labels in $D \sqcup L$, where $D$ is the set of driver labels, and with a Boolean internal
 state.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#stmt).
+Formalized by `Cslib.Complexity.SatVerifier.Check.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#stmt).
 
 ## Configurations of the clause-check machine
 
@@ -433,7 +433,7 @@ and the contents of the eight stacks $T$, $B$, $S$, $A$, $C$, $V$, $P$, $F$ of t
 each a list of symbols of the token and table stacks (name bits, literal and clause markers, and
 table markers).
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.Cfg`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#cfg).
+Formalized by `Cslib.Complexity.SatVerifier.Check.Cfg`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#cfg).
 
 ## Calling the lookup
 
@@ -441,7 +441,7 @@ For the lookup's start label $l_0$ and a polarity $p$, the statement
 that pops the top of the token stack $T$, pushes the bit $p$ onto the polarity stack $P$, and
 then goes to label $l_0$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.callS`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#call-s).
+Formalized by `Cslib.Complexity.SatVerifier.Check.callS`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#call-s).
 
 ## The clause-check driver
 
@@ -455,7 +455,7 @@ true onto it; in either case then pop $V$, pop $P$ and go to drop. At drop: if t
 is a bit, pop it and go to drop; otherwise go to lits. At endc: if the top of $F$ is the bit
 true, pop it and go to start; otherwise go to no. At yes and at no: halt.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.drv`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#drv).
+Formalized by `Cslib.Complexity.SatVerifier.Check.drv`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#drv).
 
 ## The clause-check driver with a lookup sub-program
 
@@ -464,7 +464,7 @@ label set $L$ and an entry label $l_0 \in L$, this is the program on the labels 
 $D$ is the set of driver labels: at a driver label $d$ it runs the driver's statement for $d$
 (the driver calls the lookup by jumping to $l_0$), and at a label $l \in L$ it runs $lk(l)$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#prog).
+Formalized by `Cslib.Complexity.SatVerifier.Check.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#prog).
 
 ## The lookup contract
 
@@ -477,7 +477,7 @@ token stack $T$, $B_{es}$ on $B$, and $S$, $A$, $C$, $V$ empty. Then it reaches 
 most $a \cdot |B_{es}| + b$ steps, with some internal state, with $V$ holding exactly the bit
 that is the live value of $q$ in $es$, and with every other stack unchanged.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.LookupSpec`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lookup-spec).
+Formalized by `Cslib.Complexity.SatVerifier.Check.LookupSpec`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lookup-spec).
 
 ## A literal's tokens on the token stack
 
@@ -486,7 +486,7 @@ polarity $p$, the list of symbols consisting of the literal marker of polarity $
 the bits of the binary encoding of $n$ (least significant bit first, empty for $n = 0$) in
 reverse order.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.litRev`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lit-rev).
+Formalized by `Cslib.Complexity.SatVerifier.Check.litRev`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lit-rev).
 
 ## A clause's tokens on the token stack
 
@@ -496,7 +496,7 @@ $l_{k-1}$, down to $l_1$, where the stack tokens of a literal $(n, p)$ are the l
 polarity $p$ followed by the bits of the binary encoding of $n$ (least significant bit first,
 empty for $n = 0$) in reverse order.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.clRev`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#cl-rev).
+Formalized by `Cslib.Complexity.SatVerifier.Check.clRev`, a definition declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#cl-rev).
 
 ## Literal loop of the clause check
 
@@ -515,7 +515,7 @@ $R$, with $F$ holding the single bit that is true exactly when $s$ is true or so
 $l_i = (n, p)$ has live value of the binary encoding of $n$ in $es$ equal to $p$, and with
 every other stack unchanged.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lits-run).
+Formalized by `Cslib.Complexity.SatVerifier.Check.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lits-run).
 
 ## Clause loop of the clause check
 
@@ -533,7 +533,7 @@ $N \cdot (a \cdot |B_{es}| + b + 5) + 1$ steps it reaches, with some internal st
 stack contents, label yes if every clause $D_j$ has a literal $(n, p)$ such that the live value
 of the binary encoding of $n$ in $es$ is $p$, and label no otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.clauses_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#clauses-run).
+Formalized by `Cslib.Complexity.SatVerifier.Check.clauses_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#clauses-run).
 
 ## The clause check
 
@@ -548,7 +548,7 @@ polarity equals the value of its variable, and it reaches the label no otherwise
 of a variable $n$ is the value of the first entry of $es$ that is named by the binary encoding of
 $n$ and has a value, or false if there is no such entry.
 
-Formalized by `Cslib.Complexity.SatVerifier.Check.run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatCheck.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#run).
+Formalized by `Cslib.Complexity.SatVerifier.Check.run`, a theorem declared in [CSLibExt/Computability/Complexity/SatCheck.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatCheck.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#run).
 
 ## Stacks of the lookup machine
 
@@ -556,7 +556,7 @@ The lookup machine has six stacks: the query stack $T$, the
 table stack $B$, the stash $S$, the two scratch stacks $A$ and $C$ used for comparisons, and the
 value stack $V$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#k-2).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#k-2).
 
 ## Labels of the lookup machine
 
@@ -565,7 +565,7 @@ $\mathsf{scan}$, $\mathsf{cmp}(b)$ and $\mathsf{put}(b)$ for each bit $b$, $\mat
 $\mathsf{rstB}$, $\mathsf{mvN}$, $\mathsf{back}$, $\mathsf{mark}$ and $\mathsf{done}$. The labels
 $\mathsf{cmp}(b)$ and $\mathsf{put}(b)$ serve a live table entry with value $b$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lab).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#lab).
 
 ## Moving a symbol between stacks
 
@@ -573,7 +573,7 @@ For stacks $a$ and $b$, a symbol $x$ and a map $f$ from
 symbols to labels, this machine instruction pops the top of $a$ (if any), pushes $x$ onto $b$ and
 goes to the label $f(x)$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.mvSym`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#mv-sym).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.mvSym`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#mv-sym).
 
 ## Moving a table marker between stacks
 
@@ -585,7 +585,7 @@ $e$ and leaves the stacks unchanged.
 
 The invariants of the lookup machine rule out another symbol on top of $a$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.mvMark`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#mv-mark).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.mvMark`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#mv-mark).
 
 ## Next label of the lookup scan
 
@@ -593,7 +593,7 @@ The label at which the lookup scan continues after moving
 a marker symbol $x$: the comparison label $\mathsf{cmp}(b)$ if $x$ is the value marker
 $\mathsf{val}(b)$, and the name-moving label $\mathsf{mvN}$ for every other symbol.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.scanNext`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#scan-next).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.scanNext`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#scan-next).
 
 ## The lookup program
 
@@ -614,14 +614,14 @@ $\mathsf{mvN}$, $\mathsf{scan}$ and $\mathsf{mark}$ respectively. At $\mathsf{ma
 of $S$ is a table marker it moves that marker onto $B$ and goes to $\mathsf{back}$; if $S$ is
 empty or has another symbol on top it goes to $\mathsf{done}$. At $\mathsf{done}$ it halts.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#prog-2).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-03/index.html#prog-2).
 
 ## Start label of the lookup machine
 
 The lookup program starts at its initialization label
 $\mathsf{init}$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.start`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#start).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.start`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#start).
 
 ## Stack contents of the lookup machine
 
@@ -629,14 +629,14 @@ For lists of symbols $t$, $b$, $s$, $a$, $c$, $v$,
 the assignment of contents to the six stacks of the lookup machine that gives $T$ the list $t$,
 $B$ the list $b$, $S$ the list $s$, $A$ the list $a$, $C$ the list $c$ and $V$ the list $v$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.stk`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#stk).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.stk`, a definition declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#stk).
 
 ## A name bit reads as itself
 
 For every bit $b$, the name-bit symbol for $b$ reads as the
 bit $b$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.bit?_bit`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#bit-bit).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.bit?_bit`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#bit-bit).
 
 ## Initialization step of the lookup machine
 
@@ -646,7 +646,7 @@ $v$, stack $T$ holding $t$, stack $B$ holding $b$ and the stacks $S$, $A$, $C$, 
 label $\mathsf{scan}$ with internal bit $v$, the same contents of $T$, $B$, $S$, $A$ and $C$, and
 stack $V$ holding the single symbol name bit false.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.init_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#init-run).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.init_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#init-run).
 
 ## Restoring and stashing after a comparison in the lookup machine
 
@@ -662,7 +662,7 @@ $2(|c| + 1) + (|n| + 1)$ steps the program is at label $\mathsf{scan}$, with som
 where $T$ holds the reverse of $\bar q$ followed by $R$, $B$ holds $r$, $S$ holds $\bar n$
 followed by $s$, $A$ and $C$ are empty, and $V$ holds $w$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#tail-run).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#tail-run).
 
 ## Serving a live table entry
 
@@ -676,7 +676,7 @@ program reaches, in at most $4|n| + 5$ steps, label $\mathsf{scan}$ with some in
 $\overleftarrow{q}R$ on $T$, $r$ on $B$, $\overrightarrow{n}s$ on $S$, the stacks $A$ and $C$
 empty and on $V$ alone the bit symbol of $b$ if $n = q$ and of $x$ otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#cmp-run).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#cmp-run).
 
 ## One scan step of the lookup
 
@@ -693,7 +693,7 @@ $4|n| + 6$ steps, label $\mathsf{scan}$ with some internal state, $\overleftarro
 on $B$, $\tau(eE)$ on $S$, the stacks $A$ and $C$ empty and the bit symbol of
 $\mathrm{val}_{eE}(q)$ alone on $V$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.entry_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#entry-run).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.entry_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#entry-run).
 
 ## The scan loop of the lookup machine
 
@@ -710,7 +710,7 @@ empty, $S$ holds the symbols of the entries of $pre$ followed by $post$ in readi
 entry on top, $V$ holds the single name bit carrying the live value of $q$ in $pre$ followed by
 $post$, and $T$, $A$ and $C$ are unchanged.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.scan_loop`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#scan-loop).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.scan_loop`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#scan-loop).
 
 ## The return loop of the lookup machine
 
@@ -723,7 +723,7 @@ Then within $2m + 2$ steps the program reaches label $\mathsf{done}$, with some 
 where $B$ holds the table stack of the entry list $pre$ followed by $post$, the stacks $S$, $A$
 and $C$ are empty, and $T$ and $V$ still hold $t$ and $w$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.back_loop`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#back-loop).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.back_loop`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#back-loop).
 
 ## Correctness of the SAT-verifier lookup machine
 
@@ -737,7 +737,7 @@ there $V$ holds the single name bit carrying the live value of $q$ in $es$ (the 
 first entry of $es$ named $q$ that has a value, or false if there is none), and every other
 stack is as it started.
 
-Formalized by `Cslib.Complexity.SatVerifier.Lookup.run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatLookup.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#run).
+Formalized by `Cslib.Complexity.SatVerifier.Lookup.run`, a theorem declared in [CSLibExt/Computability/Complexity/SatLookup.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatLookup.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#run).
 
 ## Stacks of the SAT tokenizer
 
@@ -745,7 +745,7 @@ The SAT tokenizer has six stacks: $X$ for the formula bits,
 $W$ for the witness bits, $T$ for the token output, $B$ for the table output, and the clause
 counter $\mathsf{CC}$ and the literal counter $\mathsf{LC}$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#k).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.K`, an inductive type declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#k).
 
 ## Labels of the SAT tokenizer
 
@@ -758,7 +758,7 @@ first one); $\mathsf{pol}$, which reads the polarity and the next witness bit; $
 which checks that the formula stack $X$ is used up; and the halting labels $\mathsf{acc}$ and
 $\mathsf{rej}$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#lab).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#lab).
 
 ## Testing whether the top symbol is a given bit
 
@@ -767,7 +767,7 @@ a stack (a symbol, or nothing when the stack is empty), this is true exactly whe
 symbol is the bit symbol carrying $b$; it is false for an empty stack and for every other
 symbol.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.topIsBit`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#top-is-bit).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.topIsBit`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#top-is-bit).
 
 ## Instruction for reading a unary count
 
@@ -782,7 +782,7 @@ When $k$ is not $X$ and the instruction is placed at label $s$, a run on a formu
 starts with $m$ bits true followed by a bit false pops these $m + 1$ bits, pushes $m$ copies
 of $\mathsf{cl}$ onto $k$ and goes to $t$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.unary`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#unary).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.unary`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#unary).
 
 ## The tokenizer program
 
@@ -818,14 +818,14 @@ stores the bit read ($s$, $p$ or the witness bit $s$); the remaining pops and al
 internal bit unchanged. So after popping a bit of a unary count, or the closing bit false of a name
 block, the internal bit is true.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#prog).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.prog`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#prog).
 
 ## Start label of the SAT tokenizer
 
 The tokenizer starts at the label $\mathrm{un}(1)$,
 which reads a unary count from the input stack $X$ onto the clause counter $CC$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.start`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#start-2).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.start`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#start-2).
 
 ## Tokenizer stack contents
 
@@ -834,7 +834,7 @@ assigns to the tokenizer's stacks $X$, $W$, $T$, $B$ the lists $x$, $w$, $t$, $b
 counter stacks $CC$ and $LC$ the lists of $c$ and $\ell$ copies of the clause-end symbol
 $\mathrm{cl}$ (the counters in unary).
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.st`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#st).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.st`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#st).
 
 ## Rejection of the SAT tokenizer within a step bound
 
@@ -843,7 +843,7 @@ configuration $c$ of the tokenizer, the tokenizer rejects from $c$ within $n$ st
 an internal bit $v$ and stacks $S$ such that it runs in at most $n$ steps from $c$ to the
 configuration with label $\mathsf{rej}$, internal bit $v$ and stacks $S$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.Rej`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#rej).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.Rej`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#rej).
 
 ## One step to rejection
 
@@ -853,7 +853,7 @@ bit $v$ and stacks $S$ yields a configuration with label $\mathsf{rej}$, then th
 reaches $\mathsf{rej}$ within one step from the configuration with label $\ell$, internal bit $v$
 and stacks $S$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.rej_one`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#rej-one).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.rej_one`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#rej-one).
 
 ## Reading a unary count
 
@@ -866,7 +866,7 @@ and $\mathrm{lits}$ if $c = 0$, whose Boolean variable is $1$, whose stack $X$ h
 $r$, whose stacks $W$, $T$, $B$ still hold $w$, $t$, $b$, and whose counters hold $m + n$ and
 $\ell$ if $c = 1$, and $m$ and $\ell + n$ if $c = 0$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.un_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#un-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.un_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-04/index.html#un-run).
 
 ## An unterminated unary count is rejected
 
@@ -876,7 +876,7 @@ value of the Boolean variable, the tokenizer started at the label $\mathrm{un}(c
 holding the bits of $r$, with $W$, $T$, $B$ holding $w$, $t$, $b$, and with the counters $CC$
 and $LC$ holding $m$ and $\ell$ in unary reaches the rejecting label within $|r| + 1$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.un_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#un-fail).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.un_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#un-fail).
 
 ## Name-loop outcome
 
@@ -886,7 +886,7 @@ the bit false and $\mathsf{pol}$ otherwise, and for $u = c\,u'$ it is the outcom
 and the string $u'$. So it is $\mathsf{rej}$ exactly when the string formed by $\ell$ (if present)
 followed by $u$ is non-empty and ends in false, and $\mathsf{pol}$ otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nmEnd`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-end).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nmEnd`, a definition declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-end).
 
 ## Name-loop outcome from the start of a name
 
@@ -895,7 +895,7 @@ outcome with no previous bit after $u$ is the label $\mathsf{pol}$ if $u$ is a c
 that is, encoding the natural number that $u$ decodes to gives back $u$, and the label
 $\mathsf{rej}$ otherwise.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nmEnd_none`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-end-none).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nmEnd_none`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-end-none).
 
 ## Reading a name block
 
@@ -908,7 +908,7 @@ configuration whose label is the name-loop outcome for $\ell$ and $u$, with inte
 bits of $r$ on $X$, $w$ on $W$, the bits of $u$ in reverse order (last bit on top) above $t$ on $T$
 and above $b$ on $B$, and the same counters.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nm_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nm_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-run).
 
 ## Rejecting an unterminated name block
 
@@ -919,7 +919,7 @@ $\mathsf{nm}(\ell)$ with internal bit $v$, the bits of $r$ on the formula stack 
 witness stack $W$, $t$ on the token stack $T$, $b$ on the table stack $B$, clause counter $c$ and
 literal counter $l$ reaches the label $\mathsf{rej}$ within $|r| + 1$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nm_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-fail).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.nm_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#nm-fail).
 
 ## Reading a polarity
 
@@ -933,7 +933,7 @@ counters. If $w$ starts with the bit $w_1$, the internal bit becomes $w_1$ and t
 $\mathsf{val}(w_1)$ is pushed onto $b$; if $w$ is empty, the internal bit becomes false and the
 marker $\mathsf{dead}$ is pushed onto $b$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.pol_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#pol-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.pol_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#pol-run).
 
 ## Tokenizer run on one literal
 
@@ -953,7 +953,7 @@ literal $(n, p)$ (the bits of $q$, then the polarity marker of $p$) and $\eta$ i
 of the table entry $(q, o)$ (the bits of $q$, then the value marker of $o$, which is dead if $o$
 is none).
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lit-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lit-run).
 
 ## Tokenizer rejects an undecodable literal
 
@@ -967,7 +967,7 @@ $i, j \in \mathbb{N}$ and $v$ a bit. Then from
 $\langle \mathsf{nm}(\mathrm{none}), v \mid r, w, t, b, i, j\rangle$ the tokenizer reaches the
 label $\mathsf{rej}$ within $|r| + 2$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lit_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lit-fail).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lit_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lit-fail).
 
 ## Occurrence table of a nonempty list
 
@@ -977,7 +977,7 @@ the entry whose name is the binary code of $n$ and whose value is the first bit 
 if $w$ is empty), followed by the occurrence table of $L$ with $w$ minus its first bit (with the
 empty list if $w$ is empty).
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.entsOf_cons`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#ents-of-cons).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.entsOf_cons`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#ents-of-cons).
 
 ## Reading the literals of a clause
 
@@ -993,7 +993,7 @@ $\mathsf{cl}$ on top) above $t$ on $T$, the table stack of the entries $e_1, \do
 on $B$, clause counter $c$ and literal counter $0$. Here $e_i$ pairs the binary name of $n_i$ with
 the $i$-th bit of $w$, or with no value when $w$ has fewer than $i$ bits.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lits-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lits-run).
 
 ## Tokenizer rejects undecodable literals
 
@@ -1006,7 +1006,7 @@ suppose that decoding $k$ literals from the front of $r$ fails. Then from
 $\langle \mathsf{lits}, v \mid r, w, t, b, c, k\rangle$ the tokenizer reaches the label
 $\mathsf{rej}$ within $2|r| + 3$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lits_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lits-fail).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.lits_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#lits-fail).
 
 ## Tokenizer run on one clause
 
@@ -1023,7 +1023,7 @@ $\langle \mathsf{cls}, \mathsf{false} \mid r, w', \mathrm{rev}(\tau) \mathbin{+\
 \beta \mathbin{+\!\!+} b, c, 0\rangle$, where $\tau$ is the token list of $C$ and $\beta$ is the
 table stack of the occurrence table of $N$ against $w$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clause-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clause-run).
 
 ## Tokenizer run on all clauses
 
@@ -1040,7 +1040,7 @@ to $\langle \mathsf{fin}, \mathsf{false} \mid r, w', \mathrm{rev}(\tau) \mathbin
 \beta \mathbin{+\!\!+} b, 0, 0\rangle$, where $\tau$ is the token list of $\varphi$ and $\beta$ is
 the table stack of the occurrence table of $N$ against $w$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clauses_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clauses-run).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clauses_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clauses-run).
 
 ## Tokenizer rejects undecodable clauses
 
@@ -1054,7 +1054,7 @@ literals) from the front of $r$ fails. Then from
 $\langle \mathsf{cls}, v \mid r, w, t, b, n, 0\rangle$ the tokenizer reaches the label
 $\mathsf{rej}$ within $2|r| + n + 2$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clauses_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clauses-fail).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.clauses_fail`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#clauses-fail).
 
 ## The tokenizer accepts when the formula stack is empty
 
@@ -1064,7 +1064,7 @@ label $\mathsf{fin}$ with internal bit $v$, empty formula stack $X$, stacks $W$,
 $w$, $t$, $b$, and $i$ and $j$ marks on the clause and literal counters, to the label
 $\mathsf{acc}$ with internal bit false and all stacks unchanged.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.fin_acc`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#fin-acc).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.fin_acc`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#fin-acc).
 
 ## Accepting run of the SAT tokenizer
 
@@ -1078,7 +1078,7 @@ number of literal occurrences in $\varphi$, $T$ holds the reversed token list of
 of the original contents of $T$, and $B$ holds the table stack of the occurrence table of
 $\varphi$ and $w$ on top of the original contents of $B$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.run_some`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#run-some).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.run_some`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#run-some).
 
 ## Rejecting run
 
@@ -1088,7 +1088,7 @@ of $w$ on the witness stack $W$, and both counter stacks $CC$ and $LC$ empty, th
 started at its start label with internal bit $v$ and stacks $S$ reaches a configuration with label
 $\mathsf{rej}$ within $2|x| + 2$ steps.
 
-Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.run_none`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatTokenizer.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#run-none).
+Formalized by `Cslib.Complexity.SatVerifier.Tokenizer.run_none`, a theorem declared in [CSLibExt/Computability/Complexity/SatTokenizer.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatTokenizer.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#run-none).
 
 ## Input alphabet of the SAT verifier host
 
@@ -1098,7 +1098,7 @@ pair alphabet $\mathrm{Bool} \oplus \mathrm{Option}\ \mathrm{Bool}$ of the dense
 In the encoding of a pair $(x, w)$, a formula bit $b$ is $\mathrm{inl}\ b$, the separator $\#$ is
 $\mathrm{inr}\ \mathrm{none}$ and a certificate bit $b$ is $\mathrm{inr}\ (\mathrm{some}\ b)$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.G`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#g).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.G`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#g).
 
 ## Stacks of the SAT verifier host
 
@@ -1108,7 +1108,7 @@ certificate bits, two scratch stacks used to move them in phase 0, the token and
 six further stacks of the clause-check driver, two further stacks of the tokenizer, and one
 further stack of the 3-clause filter.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.HK`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#hk).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.HK`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#hk).
 
 ## Stack alphabets of the SAT verifier host
 
@@ -1116,7 +1116,7 @@ Each stack of the SAT verifier host has an
 alphabet: the input stack has the input alphabet $G$, the output stack has alphabet
 $\mathrm{Bool}$, and every other stack has the token alphabet $\mathrm{Sym}$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.HΓ`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#h).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.HΓ`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-05/index.html#h).
 
 ## Phase-0 labels of the SAT verifier host
 
@@ -1124,7 +1124,7 @@ The five labels of phase 0 of the SAT verifier
 host: $m_1$ and $m_2$ move the formula bits $x$ off the input (in two passes), $\mathsf{sep}$
 drops the separator, and $m_3$ and $m_4$ move the witness bits $w$ (in two passes).
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.P0`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#p0).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.P0`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#p0).
 
 ## Labels of the SAT verifier host
 
@@ -1133,7 +1133,7 @@ following: a phase-0 label; a label of the tokenizer; a label of the 3-clause fi
 the clause-check driver or of the lookup embedded in it; a cleanup label carrying an answer bit;
 or an output label carrying an answer bit.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.HLab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#hlab).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.HLab`, an inductive type declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#hlab).
 
 ## Host labels as a sum type
 
@@ -1146,7 +1146,7 @@ or lookup label goes to itself in its summand, a cleanup label with answer $a$ g
 first copy of $\mathrm{Bool}$, and a final label with answer $a$ goes to $a$ in the second copy.
 The bijection gives the host labels their finiteness instance.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.HLab.equiv`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#equiv).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.HLab.equiv`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#equiv).
 
 ## Placement of the tokenizer's stacks in the host
 
@@ -1155,7 +1155,7 @@ bits $X$, the witness bits $W$, the token output $T$, the table output $B$, and 
 literal counters $CC$ and $LC$) are placed in the host machine by the map that sends each of them
 to the host stack of the same name.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.eT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-t).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.eT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-t).
 
 ## Stack embedding of the tokenizer into the host
 
@@ -1164,7 +1164,7 @@ $\mathrm{Sym}$. The tokenizer is embedded in the host machine by sending each of
 $W$, $T$, $B$, $CC$, $LC$ to the host stack of the same name (an injective map) and identifying
 the alphabet of each with that of its image, which is again $\mathrm{Sym}$, by the identity.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.embT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-t).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.embT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-t).
 
 ## Placement of the lookup's stacks in the clause-check driver
 
@@ -1173,7 +1173,7 @@ The stacks of the lookup
 are placed in the clause-check driver by the map that sends each of them to the driver stack of
 the same name.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.eL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-l).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.eL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-l).
 
 ## Stack embedding of the lookup into the clause-check driver
 
@@ -1182,7 +1182,7 @@ of the clause-check driver has alphabet $\mathrm{Sym}$. The lookup is embedded i
 sending each of its stacks $T$, $B$, $S$, $A$, $C$, $V$ to the driver stack of the same name (an
 injective map) and identifying the alphabets by the identity of $\mathrm{Sym}$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.embL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-l).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.embL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-l).
 
 ## Lookup labels in the clause-check driver
 
@@ -1192,7 +1192,7 @@ lookup's labels: the lookup's final label $\mathsf{done}$ goes to the driver's r
 $\mathsf{ret}$, and every other lookup label $l$ goes to the copy of $l$ among the lookup's
 labels.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.φL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#l).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.φL`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#l).
 
 ## The embedded lookup program
 
@@ -1202,14 +1202,14 @@ the driver's stack of the same name (the lookup's stacks $T$, $B$, $S$, $A$, $C$
 jump target relabelled by the lookup-label map, which sends $\mathsf{done}$ to the driver's
 return label $\mathsf{ret}$ and keeps every other label.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.lkH`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#lk-h).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.lkH`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#lk-h).
 
 ## Driver stacks in the SAT host
 
 The map from the stacks of the clause-check driver into
 the host stacks sends each driver stack to the host stack of the same name.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.eC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-c).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.eC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-c).
 
 ## Stack embedding of the clause-check driver into the host
 
@@ -1219,7 +1219,7 @@ its stacks $T$, $B$, $S$, $A$, $C$, $V$, $P$, $F$ to the host stack of the same 
 map) and identifying the alphabet of each with that of its image, which is again $\mathrm{Sym}$,
 by the identity.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.embC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-c).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.embC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-c).
 
 ## Placement of the filter's stacks in the host
 
@@ -1227,7 +1227,7 @@ The two stacks of the clause-length filter,
 the token stack $T$ and the side stack $U$, are placed in the host machine by the map that sends
 $T$ to the host stack $T$ and $U$ to the host stack $U$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.eF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-f).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.eF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#e-f).
 
 ## Stack embedding of the clause-length filter into the host
 
@@ -1237,7 +1237,7 @@ sending its stacks $T$ and $U$ to the host stacks of the same names (an injectiv
 identifying the alphabet of each with that of its image, which is again $\mathrm{Sym}$, by the
 identity.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.embF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-f).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.embF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#emb-f).
 
 ## Filter exits in the SAT verifier host
 
@@ -1246,7 +1246,7 @@ into the labels of the SAT verifier host sends the filter's exit label *pass* to
 of the clause-check driver, its exit label *fail* to the cleanup label with answer false, and
 every other filter label $l$ to the host's copy of $l$ among its filter labels.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.φF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#f).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.φF`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#f).
 
 ## Tokenizer labels in the host machine
 
@@ -1255,7 +1255,7 @@ the host SAT verifier sends the tokenizer's accepting label to the start label o
 clause-length filter, its rejecting label to the cleanup label with answer false, and every
 other label $l$ to the host label that runs the tokenizer at $l$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.φT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#t).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.φT`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#t).
 
 ## Driver labels in the SAT host
 
@@ -1265,7 +1265,7 @@ for the answer yes to the cleanup label with answer true, its label for the answ
 cleanup label with answer false, and every other label $l$ to the host label running the
 driver at $l$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.φC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#c).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.φC`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#c).
 
 ## Reading a formula bit in the SAT host
 
@@ -1273,7 +1273,7 @@ The input alphabet of the SAT host consists of
 the formula bits, the separator and the witness bits. This partial map sends a formula bit $b$
 to $b$ and is undefined on the separator and on witness bits.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.dX`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#d-x).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.dX`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#d-x).
 
 ## Reading a witness bit in the SAT host
 
@@ -1281,7 +1281,7 @@ The input alphabet of the SAT host consists of
 the formula bits, the separator and the witness bits. This partial map sends a witness bit $b$
 to $b$ and is undefined on formula bits and on the separator.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.dW`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#d-w).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.dW`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#d-w).
 
 ## Stacks emptied by the SAT verifier's cleanup
 
@@ -1290,7 +1290,7 @@ empties the list of stacks made of the input stack followed by the work stacks $
 $S$, $A$, $C$, $V$, $P$, $F$, $CC$, $LC$, $X1$, $W1$, $U$, in that order: every host stack except
 the output stack.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.workKs`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#work-ks).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.workKs`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#work-ks).
 
 ## Program of the SAT verifier host
 
@@ -1315,7 +1315,7 @@ output stack once, repeats this while anything was popped, and then goes to the 
 with answer $b$, where it pushes $b$ onto the output stack, sets its internal state to false and
 halts.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.hprog`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#hprog).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.hprog`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-06/index.html#hprog).
 
 ## The SAT verifier machine
 
@@ -1326,7 +1326,7 @@ bits), the output stack (alphabet the booleans) as output, the host alphabets on
 host labels as labels, the first phase-0 label as start label, a boolean internal state
 initially false, and the host program with flag $\mathit{cap}$ as program.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.tm`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#tm).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.tm`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#tm).
 
 ## Phase 0 of the SAT verifier host
 
@@ -1339,7 +1339,7 @@ configuration at the start label of the tokenizer with internal state $v'$ and s
 stack $X$ of $S'$ holds the bits of $x$ in order and the stack $W$ holds the bits of $w$ in
 order, each as a name-bit symbol, and every other stack of $S'$ is empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.phase0_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#phase0-run).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.phase0_run`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#phase0-run).
 
 ## The tokenizer embeds in the SAT verifier host
 
@@ -1352,7 +1352,7 @@ for every tokenizer label $\ell$, either the tokenizer's statement at $\ell$ is 
 statement, or the host program's statement at the image of $\ell$ is the tokenizer's statement
 at $\ell$ translated along this embedding and label map.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.embeds_tok`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#embeds-tok).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.embeds_tok`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#embeds-tok).
 
 ## The embedded lookup meets the lookup contract
 
@@ -1365,14 +1365,14 @@ reaches the driver's return label within $8m + 4$ steps, where $m$ is the length
 stack, with $V$ holding the single bit of the live value of $q$ in $es$ and every other stack
 unchanged.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.lookupSpec`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#lookup-spec).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.lookupSpec`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#lookup-spec).
 
 ## The cleanup stacks are distinct
 
 The list of stacks emptied by the cleanup of the SAT
 verifier host has no repeated entries.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.workKs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#work-ks-nodup).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.workKs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#work-ks-nodup).
 
 ## Cleanup of the SAT host
 
@@ -1382,7 +1382,7 @@ every flag $c$, answer bit $a$ and internal state $v$, the host program with fla
 most $m + 1$ steps from the cleanup label with answer $a$, internal state $v$ and stacks $S$ to
 the final label with answer $a$, internal state false and every stack empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.clean_host`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#clean-host).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.clean_host`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#clean-host).
 
 ## Name lengths in an occurrence table
 
@@ -1391,14 +1391,14 @@ numbers and every list $w$ of bits, the names of the entries of the occurrence t
 $n_0, \dots, n_{k-1}$ and $w$, in order, have the lengths of the binary codes of
 $n_0, \dots, n_{k-1}$ (Mathlib's encoding of natural numbers as bit lists).
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.entsOf_map_length`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#ents-of-map-length).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.entsOf_map_length`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#ents-of-map-length).
 
 ## Initial stacks of the SAT verifier host
 
 For a word $l$ over the input alphabet $G$, the
 initial host stacks on $l$ hold $l$ on the input stack and leave every other stack empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.initS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#init-s).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.initS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#init-s).
 
 ## Tokenizer stacks after phase 0
 
@@ -1407,7 +1407,7 @@ put the bits of $x$ on the formula stack $X$ and the bits of $w$ on the witness 
 bit as a bit symbol), and leave every other tokenizer stack (token, table and the two counters)
 empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.tokS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#tok-s).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.tokS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#tok-s).
 
 ## Driver stacks after tokenization
 
@@ -1417,7 +1417,7 @@ the token stack holds the token list of $\varphi$ reversed, the table stack hold
 table-stack encoding of the occurrence table of $\varphi$ and $w$, and every other stack is
 empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.chkS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#chk-s).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.chkS`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#chk-s).
 
 ## Step budget before the cleanup
 
@@ -1427,7 +1427,7 @@ $(2N + 5) + (2N + 2) + (2N + 2) + (N(8N + 9) + 1)$.
 It budgets the host steps before the cleanup: its four summands budget phase 0, the tokenizer,
 the clause-length filter and the clause-check driver.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.preSteps`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#pre-steps).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.preSteps`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#pre-steps).
 
 ## Cleanup phase of the SAT verifier host
 
@@ -1438,7 +1438,7 @@ program runs in exactly $n$ steps from the configuration at the cleanup label wi
 internal state $v$ and stacks $S$ to the halted configuration with internal state false, the
 one-symbol word $b$ on the output stack and every other stack empty.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.finish`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#finish).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.finish`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#finish).
 
 ## Answer of the SAT host
 
@@ -1450,7 +1450,7 @@ if $i \ge |w|$. Then the answer is true exactly when both (a) $c$ is false or ev
 $\varphi$ has at most three literals, and (b) every clause of $\varphi$ contains a literal
 $(n, b)$ whose variable $n$ has value $b$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.ans`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#ans).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.ans`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#ans).
 
 ## Explicit step bound of the SAT verifier machine
 
@@ -1462,7 +1462,7 @@ with that flag. The total step bound is $s(N) + (N + p \cdot s(N)) + 2$.
 When the cleanup starts, every stack has length at most $N + p \cdot s(N)$; the cleanup and the
 output step then take at most that many steps plus $2$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.totalSteps`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#total-steps).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.totalSteps`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#total-steps).
 
 ## Initial configuration of the SAT verifier machine
 
@@ -1472,7 +1472,7 @@ with flag $c$ on $l$ (its start label, its initial internal state, $l$ on the in
 every other stack empty) is the configuration at the phase-0 label $m_1$ with internal state
 false and the initial host stacks on $l$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.initList_tm`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#init-list-tm).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.initList_tm`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#init-list-tm).
 
 ## Step bound of the SAT verifier machine
 
@@ -1481,7 +1481,7 @@ per-step push budget of the host machine with that flag (the sum over its labels
 of push instructions in each label's statement). The step bound is the polynomial
 $(p + 1)(8X^2 + 15X + 10) + X + 2$ with natural-number coefficients, in the input length $X$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.time`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#time).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.time`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#time).
 
 ## The `TM2` SAT verifier
 
@@ -1494,7 +1494,7 @@ $\mathrm{ans}_{\mathit{cap}}(x, w)$ is false unless $x$ decodes to a CNF formula
 case it is true exactly when $\varphi$ passes the clause check against the table built from $w$
 and, if $\mathit{cap}$ is true, every clause of $\varphi$ has at most three literals.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.verifier`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#verifier).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.verifier`, a definition declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#verifier).
 
 ## The SAT host's answer is polynomial-time
 
@@ -1503,7 +1503,7 @@ For each value of the flag $\mathit{cap}$
 $(x, w)$ of bit strings to Booleans, is polynomial-time computable under the canonical bitstring
 encodings.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.isPolyTime_ans`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#is-poly-time-ans).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.isPolyTime_ans`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#is-poly-time-ans).
 
 ## The SAT verifier is polynomial-time
 
@@ -1511,7 +1511,7 @@ The function that maps a pair $(x, w)$ of bit
 strings to the Boolean answer of the SAT verifier on $(x, w)$ (its return value, ignoring its
 declared time cost) is polynomial-time computable under the canonical bitstring encodings.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.isPolyTime_satVerifier`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#is-poly-time-sat-verifier).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.isPolyTime_satVerifier`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#is-poly-time-sat-verifier).
 
 ## SAT is in NP
 
@@ -1520,7 +1520,7 @@ a satisfiable CNF formula, belongs to the class NP.
 
 Variable indices are binary-coded in the encoding of formulas.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.satDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#sat-dec-mem-np).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.satDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-07/index.html#sat-dec-mem-np).
 
 ## Cook–Levin theorem
 
@@ -1528,7 +1528,7 @@ CNF satisfiability is NP-complete: the decision problem accepting
 exactly the bit strings that encode a satisfiable CNF formula is in NP, and every decision
 problem in NP has a polynomial-time many-one reduction to it.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.cook_levin_SAT_np_complete`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#cook-levin-sat-np-complete).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.cook_levin_SAT_np_complete`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#cook-levin-sat-np-complete).
 
 ## Answer of the SAT host with the three-literal filter
 
@@ -1538,7 +1538,7 @@ is false if the complete length-prefixed CNF decoder fails on $x$; if $x$ decode
 formula $\varphi$, it is true exactly when every clause of $\varphi$ has at most three literals.
 The second is the return value of the SAT verifier on $(x, w)$.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.ans_true`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#ans-true).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.ans_true`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#ans-true).
 
 ## 3SAT is in NP
 
@@ -1549,26 +1549,26 @@ class NP.
 The verifier is the SAT verifier host with the three-literal clause filter switched on, and
 witnesses no longer than the input suffice.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.sat3Dec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 669](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L669). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#sat3-dec-mem-np).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.sat3Dec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 669](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L669). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#sat3-dec-mem-np).
 
 ## Token length bound for the SAT verifier (moved alias)
 
 Moved to `SatVerifier.toks_length_le` (`SatVerifierSpec`).
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.toks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#toks-length-le).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.toks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#toks-length-le).
 
 ## Clause token length bound for the SAT verifier (moved alias)
 
 Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`).
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.clauseToks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 700](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L700). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#clause-toks-length-le).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.clauseToks_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 700](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L700). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#clause-toks-length-le).
 
 ## Finiteness of the SAT verifier alphabet (moved alias)
 
 Moved to the instance `SatVerifier.Sym.instFintype` (`SatVerifierSpec`); kept as a
 definition, not an instance, so instance search sees one `Fintype Sym`.
 
-Formalized by `Cslib.Complexity.SatVerifier.Machine.Sym.instFintype`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#inst-fintype).
+Formalized by `Cslib.Complexity.SatVerifier.Machine.Sym.instFintype`, an abbreviation declared in [CSLibExt/Computability/Complexity/SatVerifierTM.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SatVerifierTM.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/part-08/index.html#inst-fintype).
 
 ## Depends on
 
@@ -1577,4 +1577,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Polynomial-time verifier for SAT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/polynomial-time-verifier-for-sat)

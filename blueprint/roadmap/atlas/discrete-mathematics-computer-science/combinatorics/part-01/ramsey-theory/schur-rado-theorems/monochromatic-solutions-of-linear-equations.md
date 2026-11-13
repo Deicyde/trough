@@ -7,7 +7,7 @@ statement: formalized
 
 # Monochromatic solutions of linear equations
 
-12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html).
+12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html).
 
 ## Canceling partition
 
@@ -21,7 +21,7 @@ we have $\sigma(\sigma(i)) = i$, $\sigma(i) \ne i$ and $a_i + a_{\sigma(i)} = 0$
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Section 1 (definition of canceling partition).
 
-Formalized by `MetaMathlibExt.HasCancelingPartition`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#has-canceling-partition).
+Formalized by `MetaMathlibExt.HasCancelingPartition`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#has-canceling-partition).
 
 ## A canceling partition for $x_1 + 2x_2 - x_3 - 2x_4 = 0$
 
@@ -33,7 +33,7 @@ partition.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Section 1.
 
-Formalized by `MetaMathlibExt.hasCancelingPartition_one_two_neg_one_neg_two`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#has-canceling-partition-one-two-neg-one).
+Formalized by `MetaMathlibExt.hasCancelingPartition_one_two_neg_one_neg_two`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#has-canceling-partition-one-two-neg-one).
 
 ## The equation $x_1 + x_2 = 0$ has no canceling partition
 
@@ -44,7 +44,7 @@ $x_1 + x_2 = 0$, with coefficient vector $(1, 1)$, has no canceling partition.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Section 1.
 
-Formalized by `MetaMathlibExt.not_hasCancelingPartition_one_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-has-canceling-partition-one-one).
+Formalized by `MetaMathlibExt.not_hasCancelingPartition_one_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-has-canceling-partition-one-one).
 
 ## Uncommon equations over a finite abelian group
 
@@ -66,7 +66,7 @@ is below $r^{1-k}|S|$, its value for the uniform weights $w_c(x) = 1/r$.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Sections 1-2 (equation (2.1)).
 
-Formalized by `MetaMathlibExt.IsUncommonOverFiniteGroup`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-finite-group).
+Formalized by `MetaMathlibExt.IsUncommonOverFiniteGroup`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-finite-group).
 
 ## No equation is 1-uncommon over a finite abelian group
 
@@ -78,7 +78,7 @@ $a_1 x_1 + \dots + a_k x_k = 0$ is not $1$-uncommon over $G$.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Sections 1-2.
 
-Formalized by `MetaMathlibExt.not_isUncommonOverFiniteGroup_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-is-uncommon-over-finite-group-one).
+Formalized by `MetaMathlibExt.not_isUncommonOverFiniteGroup_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-is-uncommon-over-finite-group-one).
 
 ## Uncommon equations over the integers
 
@@ -98,7 +98,7 @@ $r$-colouring of $[n]$ has at least $(1 - o(1)) r^{1-k}|S_n|$ monochromatic solu
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Section 1 (`r`-common over the integers).
 
-Formalized by `MetaMathlibExt.IsUncommonOverIntegers`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers).
+Formalized by `MetaMathlibExt.IsUncommonOverIntegers`, a definition declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers).
 
 ## No equation is 1-uncommon over the integers
 
@@ -110,7 +110,7 @@ integers.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Section 1.
 
-Formalized by `MetaMathlibExt.not_isUncommonOverIntegers_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-is-uncommon-over-integers-one).
+Formalized by `MetaMathlibExt.not_isUncommonOverIntegers_one`, a theorem declared in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#not-is-uncommon-over-integers-one).
 
 ## Uncommonness of odd-length equations over finite abelian groups
 
@@ -125,7 +125,7 @@ Since $|G| \ge 2$, coprimality forces every $a_i$ to be nonzero.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isUncommonOverFiniteGroup_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-finite-group-of-odd).
+Stated but not proved: `MetaMathlibExt.isUncommonOverFiniteGroup_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-finite-group-of-odd).
 
 ## Uncommonness of odd-length equations over the integers
 
@@ -141,7 +141,7 @@ in positive integers and for which the proportion of monochromatic solutions is 
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-odd).
+Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-odd).
 
 ## Two-colour uncommonness over the integers extends to more colours
 
@@ -154,7 +154,7 @@ over the integers for every $r \ge 3$.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-two).
+Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-two).
 
 ## Uncommonness of even-length equations without a canceling partition
 
@@ -170,7 +170,7 @@ canceling partition and no solutions in positive integers.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_not_hasCancelingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-not-has-can).
+Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_of_not_hasCancelingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-of-not-has-can).
 
 ## Uncommonness of $x + 2y - z - 2w = 0$ over the integers
 
@@ -181,7 +181,7 @@ the equation $x + 2y - z - 2w = 0$ is $r$-uncommon over the integers.
 
 - Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_one_two_neg_one_neg_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-one-two-neg-on).
+Stated but not proved: `MetaMathlibExt.isUncommonOverIntegers_one_two_neg_one_neg_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticLinearEquationsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html#is-uncommon-over-integers-one-two-neg-on).
 
 ## Depends on
 
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monochromatic solutions of linear equations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/monochromatic-solutions-of-linear-equations)

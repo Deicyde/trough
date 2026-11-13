@@ -7,7 +7,7 @@ statement: formalized
 
 # Binomid indices and generalized binomial coefficients
 
-52 results, 21 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html).
+52 results, 21 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html).
 
 ## Binomid index
 
@@ -19,7 +19,7 @@ $1 \le k \le n$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53; definition as restated in arXiv:2505.20018, Section 1.
 
-Formalized by `MetaMathlibExt.IsBinomidIndex`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index).
+Formalized by `MetaMathlibExt.IsBinomidIndex`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index).
 
 ## Constant sequences are binomid indices
 
@@ -30,7 +30,7 @@ sequence $(c, c, c, \dots)$ is a binomid index.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.
 
-Formalized by `MetaMathlibExt.isBinomidIndex_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-const).
+Formalized by `MetaMathlibExt.isBinomidIndex_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-const).
 
 ## Lex-minimal extension
 
@@ -44,7 +44,7 @@ $e_i = g_i$ for all $i < j$ and $e_j < g_j$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53; definition as restated in arXiv:2505.20018, Section 1.
 
-Formalized by `MetaMathlibExt.IsLexMinimalExtensionOf`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of).
+Formalized by `MetaMathlibExt.IsLexMinimalExtensionOf`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of).
 
 ## Lex-minimal extensions
 
@@ -56,7 +56,7 @@ $(e_1, \dots, e_m)$. The set of all lex-minimal extensions is denoted $L$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.
 
-Formalized by `MetaMathlibExt.IsLexMinimalExtension`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension).
+Formalized by `MetaMathlibExt.IsLexMinimalExtension`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension).
 
 ## The zero sequence is lex-minimal
 
@@ -67,7 +67,7 @@ $(0, 0, \dots)$ is the lex-minimal extension of its first $m$ entries.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.
 
-Formalized by `MetaMathlibExt.isLexMinimalExtensionOf_zero`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-zero).
+Formalized by `MetaMathlibExt.isLexMinimalExtensionOf_zero`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-zero).
 
 ## Right shift of a sequence
 
@@ -80,7 +80,7 @@ and its $(l + i)$-th entry is $e_i$ for every $i \ge 1$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53; definition as restated in arXiv:2505.20018, Section 1.
 
-Formalized by `MetaMathlibExt.binomidShift`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift).
+Formalized by `MetaMathlibExt.binomidShift`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift).
 
 ## Shifting by zero places is the identity
 
@@ -91,7 +91,7 @@ integers, $\sigma^0(\eta) = \eta$, where $\sigma^l$ is the right shift that prep
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53.
 
-Formalized by `MetaMathlibExt.binomidShift_zero`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift-zero).
+Formalized by `MetaMathlibExt.binomidShift_zero`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift-zero).
 
 ## Monotone sequences are binomid indices
 
@@ -102,7 +102,7 @@ $e_1 \le e_2 \le \cdots$ of nonnegative integers is an infinite binomid index.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.isBinomidIndex_of_monotone` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-of-monotone).
+Stated but not proved: `MetaMathlibExt.isBinomidIndex_of_monotone` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-of-monotone).
 
 ## Partial-sum characterization of binomid indices
 
@@ -120,7 +120,7 @@ where the maximum over the empty range (for $n = 1$) is taken to be $0$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.isBinomidIndex_iff_partialSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-iff-partial-sum).
+Stated but not proved: `MetaMathlibExt.isBinomidIndex_iff_partialSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-binomid-index-iff-partial-sum).
 
 ## Monotone finite binomid indices extend periodically
 
@@ -134,7 +134,7 @@ A non-decreasing finite sequence is automatically a finite binomid index.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_periodic_of_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-periodic-of).
+Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_periodic_of_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-periodic-of).
 
 ## A lex-minimal extension periodic from its second entry is periodic
 
@@ -147,7 +147,7 @@ period $p$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.apply_period_eq_apply_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#apply-period-eq-apply-zero).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.apply_period_eq_apply_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#apply-period-eq-apply-zero).
 
 ## Periodic binomid indices are lex-minimal extensions
 
@@ -160,7 +160,7 @@ $(e_1, \dots, e_m)$ for some $m \ge 0$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.isLexMinimalExtension_of_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-periodic).
+Stated but not proved: `MetaMathlibExt.isLexMinimalExtension_of_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-periodic).
 
 ## Lex-minimal extensions are closed under addition
 
@@ -175,7 +175,7 @@ is a monoid under componentwise addition.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#add).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#add).
 
 ## Distinct shifts of lex-minimal extensions meet only in zero
 
@@ -189,7 +189,7 @@ the zero sequence.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.binomidShift_image_inter_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift-image-inter-eq-zero).
+Stated but not proved: `MetaMathlibExt.binomidShift_image_inter_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-shift-image-inter-eq-zero).
 
 ## Primes divide all inner binomial coefficients of infinitely many rows
 
@@ -201,7 +201,7 @@ $\binom{n}{k}$ for every $k$ with $1 \le k < n$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-choose).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-choose).
 
 ## Primes divide all inner Fibonomial coefficients of infinitely many rows
 
@@ -214,7 +214,7 @@ Fibonomial coefficient $F_n! / (F_k! \, F_{n-k}!)$ is an integer multiple of $p$
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_fibonomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-fibonomial).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_fibonomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-fibonomial).
 
 ## The lex-minimal extension is computed greedily
 
@@ -233,7 +233,7 @@ for some such $k$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_of_greedy` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-of-greedy).
+Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_of_greedy` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-of-greedy).
 
 ## Lex-minimal extensions have a nomid coefficient equal to one
 
@@ -248,7 +248,7 @@ with $1 \le k < n$ and $[n, k]_f = 1$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_nomid_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-nomid-eq-one).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_nomid_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-nomid-eq-one).
 
 ## Nomid coefficients of binomid indices that are not lex-minimal extensions
 
@@ -263,7 +263,7 @@ with $1 \le k < n$ the coefficient $[n, k]_f$ is an integer multiple of $p$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_nomid_of_not_isLexMinimalExtension` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-nomid-of-not-i).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_dvd_nomid_of_not_isLexMinimalExtension` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#infinite-set-of-prime-dvd-nomid-of-not-i).
 
 ## Initial averages of a sequence
 
@@ -276,7 +276,7 @@ the value is $A_{0,0}(\eta) = 0$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Section 3; the same average is the sequence `Ave(η)` of Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 2.
 
-Formalized by `MetaMathlibExt.binomidAverage`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average).
+Formalized by `MetaMathlibExt.binomidAverage`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average).
 
 ## Averages of a constant sequence
 
@@ -288,7 +288,7 @@ equals $c$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.binomidAverage_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-const).
+Formalized by `MetaMathlibExt.binomidAverage_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-const).
 
 ## Upper average of a sequence
 
@@ -301,7 +301,7 @@ the extended real numbers; it is $+\infty$ when $s_i / i$ is unbounded.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.binomidUpperAverage`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average).
+Formalized by `MetaMathlibExt.binomidUpperAverage`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average).
 
 ## Upper average of a constant sequence
 
@@ -312,7 +312,7 @@ $A_0$ of the constant sequence $(c, c, c, \dots)$ equals $c$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.binomidUpperAverage_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average-const).
+Formalized by `MetaMathlibExt.binomidUpperAverage_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average-const).
 
 ## The Average Condition
 
@@ -325,7 +325,7 @@ real line, equals $A_{i,0}(\eta)$ for some $i \ge 1$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 3.
 
-Formalized by `MetaMathlibExt.BinomidAverageCondition`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition).
+Formalized by `MetaMathlibExt.BinomidAverageCondition`, a definition declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition).
 
 ## Constant sequences satisfy the Average Condition
 
@@ -336,7 +336,7 @@ constant sequence $(c, c, c, \dots)$ satisfies the Average Condition.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 3.
 
-Formalized by `MetaMathlibExt.binomidAverageCondition_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition-const).
+Formalized by `MetaMathlibExt.binomidAverageCondition_const`, a theorem declared in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition-const).
 
 ## Averages of a binomid index
 
@@ -350,7 +350,7 @@ $A_{i+l,0} = \frac{i}{i+l} A_{i,l} + \frac{l}{l+i} A_{l,0}$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.IsBinomidIndex.binomidAverage_props` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-props).
+Stated but not proved: `MetaMathlibExt.IsBinomidIndex.binomidAverage_props` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-props).
 
 ## The upper average of a binomid index is the supremum of its averages
 
@@ -363,7 +363,7 @@ Then, in the extended real numbers, $A_0(\eta) = \sup_{i \ge 1} A_{i,0}(\eta)$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.IsBinomidIndex.binomidUpperAverage_eq_iSup` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average-eq-i-sup).
+Stated but not proved: `MetaMathlibExt.IsBinomidIndex.binomidUpperAverage_eq_iSup` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-upper-average-eq-i-sup).
 
 ## Lex-minimal extensions satisfy the Average Condition
 
@@ -374,7 +374,7 @@ satisfies the Average Condition.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.binomidAverageCondition` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition-2).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtension.binomidAverageCondition` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-condition-2).
 
 ## The Average Condition gives eventually periodic lex-minimal extensions
 
@@ -388,7 +388,7 @@ $e_{n+p} = e_n$ for all $n \ge N$.
 
 - Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.IsBinomidIndex.isLexMinimalExtension_and_eventually_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomidIndexWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-and-eventually).
+Stated but not proved: `MetaMathlibExt.IsBinomidIndex.isLexMinimalExtension_and_eventually_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomidIndexWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomidIndexWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-and-eventually).
 
 ## The first average is the first entry
 
@@ -399,7 +399,7 @@ nonnegative integers, the initial average $A_{1,0}(\eta)$ of its first entry equ
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 2.
 
-Formalized by `MetaMathlibExt.binomidAverage_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-one).
+Formalized by `MetaMathlibExt.binomidAverage_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-one).
 
 ## Indices of maximal average
 
@@ -414,7 +414,7 @@ $A_{\max} = \max \{A_i \mid 1 \le i \le m\}$, and for $m = 0$ the set is empty.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3 (the set `{i ≤ m | A_max = A_i}`).
 
-Formalized by `MetaMathlibExt.maxAverageIndices`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#max-average-indices).
+Formalized by `MetaMathlibExt.maxAverageIndices`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#max-average-indices).
 
 ## Maximal-average indices for $m = 1$
 
@@ -426,7 +426,7 @@ $1 \le i \le m$ at which $A_i$ is maximal among $A_1, \dots, A_m$ is $\{1\}$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 3.
 
-Formalized by `MetaMathlibExt.maxAverageIndices_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#max-average-indices-one).
+Formalized by `MetaMathlibExt.maxAverageIndices_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#max-average-indices-one).
 
 ## Basis of a submonoid
 
@@ -445,7 +445,7 @@ nonempty $B$; its uniqueness proof uses distinct entries.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (definition of a basis).
 
-Formalized by `MetaMathlibExt.IsAddMonoidBasis`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis).
+Formalized by `MetaMathlibExt.IsAddMonoidBasis`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis).
 
 ## A monoid basis does not contain zero
 
@@ -456,7 +456,7 @@ let $M$ and $B$ be subsets of $\alpha$. If $B$ is a basis of $M$, then $0 \notin
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4.
 
-Formalized by `MetaMathlibExt.IsAddMonoidBasis.zero_notMem`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#zero-not-mem).
+Formalized by `MetaMathlibExt.IsAddMonoidBasis.zero_notMem`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#zero-not-mem).
 
 ## The empty set is a basis of the zero submonoid
 
@@ -467,7 +467,7 @@ the empty set is a basis of the subset $\{0\}$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4.
 
-Formalized by `MetaMathlibExt.isAddMonoidBasis_empty`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-empty).
+Formalized by `MetaMathlibExt.isAddMonoidBasis_empty`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-empty).
 
 ## Atomic binomid index
 
@@ -480,7 +480,7 @@ termwise with $\eta_1$ and $\eta_2$ binomid indices, $\eta_1 = 0$ or $\eta_2 = 0
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (definition of atomic).
 
-Formalized by `MetaMathlibExt.IsAtomicBinomidIndex`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-atomic-binomid-index).
+Formalized by `MetaMathlibExt.IsAtomicBinomidIndex`, a definition declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-atomic-binomid-index).
 
 ## The constant sequence $1$ is atomic
 
@@ -492,7 +492,7 @@ binomid indices.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Section 4 (example of `(E_m)^∞` with `m = 1`).
 
-Formalized by `MetaMathlibExt.isAtomicBinomidIndex_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-atomic-binomid-index-one).
+Formalized by `MetaMathlibExt.isAtomicBinomidIndex_one`, a theorem declared in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-atomic-binomid-index-one).
 
 ## Partial-sum criterion for lex-minimal extensions
 
@@ -510,7 +510,7 @@ $\Delta_\eta(r) = \min \{S_r - S_i - S_j : i + j = r,\ i, j \ge 1\}$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_iff_forall_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-iff-forall-l).
+Stated but not proved: `MetaMathlibExt.isLexMinimalExtensionOf_iff_forall_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-lex-minimal-extension-of-iff-forall-l).
 
 ## Partial sums of a lex-minimal extension solve a knapsack problem
 
@@ -526,7 +526,7 @@ $\sum_{i=1}^m n'_i S_i \le \sum_{i=1}^m n_i S_i$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_knapsack` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-knapsack).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_knapsack` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-knapsack).
 
 ## The largest of the first $m$ averages is the largest average
 
@@ -539,7 +539,7 @@ $A_j = \max \{A_i \mid 1 \le i \le m\}$, then $A_i \le A_j$ for every $i \ge 1$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.binomidAverage_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-le).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.binomidAverage_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#binomid-average-le).
 
 ## Every index with maximal average is a multiple of the gcd of those up to $m$
 
@@ -556,7 +556,7 @@ $i \ge 1$ with $A_i = A_j$ for some $j \in J$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#gcd-max-average-indices-dvd).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#gcd-max-average-indices-dvd).
 
 ## The gcd of the maximizing indices divides the minimal period
 
@@ -570,7 +570,7 @@ such that $e_{i+q} = e_i$ for all sufficiently large $i$, then $g$ divides $p$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd_minimalPeriod` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#gcd-max-average-indices-dvd-minimal-peri).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd_minimalPeriod` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#gcd-max-average-indices-dvd-minimal-peri).
 
 ## Minimal period of a lex-minimal extension
 
@@ -586,7 +586,7 @@ all sufficiently large $i$ satisfies $g \le q$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.isLeast_period_gcd_maxAverageIndices` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-least-period-gcd-max-average-indices).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.isLeast_period_gcd_maxAverageIndices` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-least-period-gcd-max-average-indices).
 
 ## A preperiod bound for lex-minimal extensions
 
@@ -600,7 +600,7 @@ $N = k m (m + 1)/2$: there is $p \ge 1$ with $e_{i+p} = e_i$ for all $i > N$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_period_from_preperiod_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-period-from-preperiod-bound).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_period_from_preperiod_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-period-from-preperiod-bound).
 
 ## Summands of a lex-minimal extension are lex-minimal
 
@@ -617,7 +617,7 @@ extension, then so are $\eta_1$ and $\eta_2$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.of_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#of-add).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.of_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#of-add).
 
 ## Atoms are the unique basis of an atom-generated submonoid
 
@@ -632,7 +632,7 @@ the unique basis of $M$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_iff_eq_atoms` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-iff-eq-atoms).
+Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_iff_eq_atoms` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-iff-eq-atoms).
 
 ## Basis of the monoid of lex-minimal extensions
 
@@ -645,7 +645,7 @@ of nonzero atomic binomid indices that belong to $L$. Hence that set is the uniq
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_lexMinimalExtensions_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-lex-minimal-extensio).
+Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_lexMinimalExtensions_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-lex-minimal-extensio).
 
 ## Basis of the span of the lex-minimal extensions of length $k$
 
@@ -660,7 +660,7 @@ basis of this submonoid.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_closure_lexMinimalExtensionsOf_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-closure-lex-minimal).
+Stated but not proved: `MetaMathlibExt.isAddMonoidBasis_closure_lexMinimalExtensionsOf_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#is-add-monoid-basis-closure-lex-minimal).
 
 ## Late partial sums of a lex-minimal extension split
 
@@ -677,7 +677,7 @@ statement here holds for every $l$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-path).
+Stated but not proved: `MetaMathlibExt.IsLexMinimalExtensionOf.exists_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-path).
 
 ## Spans of lex-minimal extensions of a fixed length are finitely generated
 
@@ -692,7 +692,7 @@ nonzero binomid indices.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.fg_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#fg-closure-lex-minimal-extensions-of).
+Stated but not proved: `MetaMathlibExt.fg_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#fg-closure-lex-minimal-extensions-of).
 
 ## Spans of lex-minimal extensions of a fixed length are finitely presented
 
@@ -708,7 +708,7 @@ is the kernel congruence of $f$, which relates $x$ and $y$ exactly when $f(x) = 
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.exists_finitePresentation_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-finite-presentation-closure-lex-m).
+Stated but not proved: `MetaMathlibExt.exists_finitePresentation_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#exists-finite-presentation-closure-lex-m).
 
 ## The monoid of lex-minimal extensions is a directed union
 
@@ -726,7 +726,7 @@ $k$ the submonoid generated by $\mathcal{A}_k$ is $\langle L_k \rangle$.
 
 - Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.iUnion_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#i-union-closure-lex-minimal-extensions-o).
+Stated but not proved: `MetaMathlibExt.iUnion_closure_lexMinimalExtensionsOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LexMinimalExtensionMonoidWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html#i-union-closure-lex-minimal-extensions-o).
 
 ## Depends on
 
@@ -735,4 +735,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomid indices and generalized binomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/binomid-indices-and-generalized-binomial-coeffic)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.56 Weak normalization
 
-Section 29.56 of the Stacks Project, [Tag 0H3I](https://stacks.math.columbia.edu/tag/0H3I). 11 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.56 of the Stacks Project, [Tag 0H3I](https://stacks.math.columbia.edu/tag/0H3I). 11 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H3J, a lemma
 
 [Tag 0H3J](https://stacks.math.columbia.edu/tag/0H3J) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeWeakNormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L251). The attribute's comment: “the algebra”.
+**`AlgebraicGeometry.relativeWeakNormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L251). The attribute's comment: “the algebra”.
 
 > The relative weak normalization of `A` in `B`: the largest `A`-subalgebra of `B` whose
 > spectrum is a universal homeomorphism over `Spec(A)`.
@@ -24,7 +24,7 @@ def relativeWeakNormalization (A B : Type u) [CommRing A] [CommRing B] [Algebra 
     Subalgebra A B
 ```
 
-**`AlgebraicGeometry.relativeWeakNormalization_isUniversalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L260). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.relativeWeakNormalization_isUniversalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L260). The attribute's comment: “part (1)”.
 
 > If `Spec(B) → Spec(A)` is dominant, the relative weak normalization has spectrum
 > universally homeomorphic to `Spec(A)`.
@@ -38,7 +38,7 @@ theorem relativeWeakNormalization_isUniversalHomeomorphism
         (CommRingCat.ofHom (algebraMap A (relativeWeakNormalization A B))).op)
 ```
 
-**`AlgebraicGeometry.range_le_relativeWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L271). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.range_le_relativeWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeWeakNormalization.lean#L271). The attribute's comment: “part (2)”.
 
 > The image of every intermediate `A`-algebra universally homeomorphic over `Spec(A)` is
 > contained in the relative weak normalization.
@@ -57,7 +57,7 @@ theorem range_le_relativeWeakNormalization
 
 [Tag 0H3K](https://stacks.math.columbia.edu/tag/0H3K) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeWeakNormalization_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Localization.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Localization.lean#L595).
+**`AlgebraicGeometry.relativeWeakNormalization_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Localization.lean, line 596](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Localization.lean#L596). The attribute's comment: “formation of B' commutes with localization at any multiplicative subset S of A: S⁻¹B' = (S⁻¹B)' as S⁻¹A-subalgebras of S⁻¹B, for Spec B → Spec A dominant”.
 
 > Relative weak normalization commutes with localization at a submonoid of the base.
 
@@ -81,7 +81,7 @@ public theorem relativeWeakNormalization_localization
 
 [Tag 0H3L](https://stacks.math.columbia.edu/tag/0H3L) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeSeminormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L466). The attribute's comment: “the algebra”.
+**`AlgebraicGeometry.relativeSeminormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L466). The attribute's comment: “the algebra”.
 
 > The relative seminormalization of `A` in `B`, for a dominant map `Spec B ⟶ Spec A`.
 
@@ -93,7 +93,7 @@ public noncomputable def relativeSeminormalization
     Subalgebra A B
 ```
 
-**`AlgebraicGeometry.relativeSeminormalization_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L478). The attribute's comment: “part (1), universal homeomorphism”.
+**`AlgebraicGeometry.relativeSeminormalization_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L478). The attribute's comment: “part (1), universal homeomorphism”.
 
 > The spectrum of the relative seminormalization is universally homeomorphic to the spectrum of
 > the base.
@@ -108,7 +108,7 @@ public theorem relativeSeminormalization_universalHomeomorphism
         (algebraMap A (relativeSeminormalization A B hdom))).op)
 ```
 
-**`AlgebraicGeometry.relativeSeminormalization_residueFieldMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L489). The attribute's comment: “part (1), residue fields”.
+**`AlgebraicGeometry.relativeSeminormalization_residueFieldMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L489). The attribute's comment: “part (1), residue fields”.
 
 > The relative seminormalization induces isomorphisms on all residue fields.
 
@@ -122,7 +122,7 @@ public theorem relativeSeminormalization_residueFieldMap_isIso
     ∀ x, IsIso (f.residueFieldMap x)
 ```
 
-**`AlgebraicGeometry.map_mem_relativeSeminormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L501). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.map_mem_relativeSeminormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeSeminormalization.lean#L501). The attribute's comment: “part (2)”.
 
 > Every intermediate algebra universally homeomorphic to the base and with unchanged residue
 > fields maps into the relative seminormalization.
@@ -144,13 +144,16 @@ public theorem map_mem_relativeSeminormalization
 
 [Tag 0H3M](https://stacks.math.columbia.edu/tag/0H3M) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_relativeSeminormalization_localization_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationLocalization.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationLocalization.lean#L485).
+**`AlgebraicGeometry.mem_relativeSeminormalization_localization_iff_fraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationLocalization.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationLocalization.lean#L737). The attribute's comment: “The equality `S⁻¹B' = (S⁻¹B)'` of subalgebras of `S⁻¹B`, stated elementwise for any localizations `S⁻¹A` and `S⁻¹B`; the dominance of the localized map, which `(S⁻¹B)'` requires, is derived from that of `Spec B → Spec A`.”.
 
-> An element of the relative seminormalization after localization is exactly a fraction whose
-> numerator belongs to the original relative seminormalization.
+> Formation of the relative seminormalization commutes with localization: for a ring map
+> `A → B` inducing a dominant morphism `Spec B → Spec A` and a submonoid `S` of `A`, the map
+> `Spec(S⁻¹B) → Spec(S⁻¹A)` is dominant (`isDominant_spec_localization_of_isDominant`), and an
+> element of `S⁻¹B` lies in `(S⁻¹B)'` exactly when it is a fraction `b / s` with `b ∈ B'` and
+> `s ∈ S`, that is, `(S⁻¹B)' = S⁻¹B'`.
 
 ```lean
-public theorem mem_relativeSeminormalization_localization_iff
+public theorem mem_relativeSeminormalization_localization_iff_fraction
     (A B Aₛ Bₛ : Type u) [CommRing A] [CommRing B] [CommRing Aₛ] [CommRing Bₛ]
     [Algebra A B] (S : Submonoid A)
     [Algebra A Aₛ] [IsLocalization S Aₛ]
@@ -159,10 +162,9 @@ public theorem mem_relativeSeminormalization_localization_iff
     [Algebra Aₛ Bₛ] [IsScalarTower A Aₛ Bₛ]
     (hdom : IsDominant
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A B)).op))
-    (hdomₛ : IsDominant
-      (Scheme.Spec.map (CommRingCat.ofHom (algebraMap Aₛ Bₛ)).op))
     (x : Bₛ) :
-    x ∈ relativeSeminormalization Aₛ Bₛ hdomₛ ↔
+    x ∈ relativeSeminormalization Aₛ Bₛ
+        (isDominant_spec_localization_of_isDominant A B Aₛ Bₛ S hdom) ↔
       ∃ (b : B), b ∈ relativeSeminormalization A B hdom ∧
         ∃ s : S, x = IsLocalization.mk' Bₛ b
           ⟨algebraMap A B s.1, Submonoid.mem_map.mpr ⟨s.1, s.2, rfl⟩⟩
@@ -172,7 +174,7 @@ public theorem mem_relativeSeminormalization_localization_iff
 
 [Tag 0H3N](https://stacks.math.columbia.edu/tag/0H3N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_initial_universalHomeomorphismFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean, line 1150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1150). The attribute's comment: “weak\_initial”.
+**`AlgebraicGeometry.exists_initial_universalHomeomorphismFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean, line 1149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1149). The attribute's comment: “weak\_initial”.
 
 > **Relative weak normalization** ([Stacks, Tag 0H3N]). A quasi-compact, quasi-separated,
 > dominant morphism `f : Y ⟶ X` has an initial factorization `Y ⟶ X' ⟶ X` with `X' ⟶ X` a universal
@@ -186,7 +188,7 @@ public theorem exists_initial_universalHomeomorphismFactorization
       Nonempty (Limits.IsInitial F) ∧ Nonempty F.AffineGluingData
 ```
 
-**`AlgebraicGeometry.weakNormalization_isPullback_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean, line 732](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean#L732). The attribute's comment: “weak\_open”.
+**`AlgebraicGeometry.weakNormalization_isPullback_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean, line 732](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean#L732). The attribute's comment: “weak\_open”.
 
 > Relative weak normalization commutes with restriction to an open subscheme
 > of the target, as a factorization of the restricted morphism.
@@ -203,7 +205,7 @@ public theorem weakNormalization_isPullback_open
       F_U.toMiddle ≫ h = (f ⁻¹ᵁ U).ι ≫ F.toMiddle
 ```
 
-**`AlgebraicGeometry.exists_initial_subintegralFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean#L536). The attribute's comment: “part (2), the seminormalization factorization”.
+**`AlgebraicGeometry.exists_initial_subintegralFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean#L536). The attribute's comment: “part (2), the seminormalization factorization”.
 
 > The category of factorizations through universal homeomorphisms inducing
 > isomorphisms on residue fields has an initial object.
@@ -215,7 +217,7 @@ public theorem exists_initial_subintegralFactorization
     ∃ F : SubintegralFactorization f, Nonempty (Limits.IsInitial F)
 ```
 
-**`AlgebraicGeometry.existsUnique_isPullback_seminormalizationFactorization_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/OpenRestriction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/OpenRestriction.lean#L395). The attribute's comment: “part (3), compatibility with restriction to opens”.
+**`AlgebraicGeometry.existsUnique_isPullback_seminormalizationFactorization_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/OpenRestriction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/OpenRestriction.lean#L395). The attribute's comment: “part (3), compatibility with restriction to opens”.
 
 > **Stacks Project, Tag 0H3N.** Formation of the relative seminormalization factorization
 > commutes with base change to an open subscheme of the target: the intermediate scheme of the
@@ -241,14 +243,14 @@ public theorem existsUnique_isPullback_seminormalizationFactorization_restrict
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.seminormalizationFactorization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean#L544), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean#L28) (StacksFrontier): “part (1)”.
-- [`AlgebraicGeometry.weakNormalizationFactorization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1159), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean#L30) (StacksFrontier): “part (2)”.
+- [`AlgebraicGeometry.seminormalizationFactorization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Seminormalization/SeminormalizationInitial/Initiality.lean#L544), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean#L28) (StacksFrontier): “part (1)”.
+- [`AlgebraicGeometry.weakNormalizationFactorization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1158), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Seminormalization/RelativeSeminormalizationFactorization.lean#L30) (StacksFrontier): “part (2)”.
 
 ## Tag 0H3Q, a lemma
 
 [Tag 0H3Q](https://stacks.math.columbia.edu/tag/0H3Q) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_iso_seminormalization_seminormalizationFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationInNormalization.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationInNormalization.lean#L169). The attribute's comment: “the seminormalization of `X` in its normalization agrees with the seminormalization of `X`; the only hypothesis is the tag's own assumption `hX` that every quasi-compact open of `X` has finitely many irreducible components, which is what makes the normalization of `X` exist”.
+**`AlgebraicGeometry.existsUnique_iso_seminormalization_seminormalizationFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationInNormalization.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationInNormalization.lean#L169). The attribute's comment: “the seminormalization of `X` in its normalization agrees with the seminormalization of `X`; the only hypothesis is the tag's own assumption `hX` that every quasi-compact open of `X` has finitely many irreducible components, which is what makes the normalization of `X` exist”.
 
 > **Stacks Project, Tag 0H3Q.** If every quasi-compact open of `X` has finitely many
 > irreducible components, the seminormalization of `X` in its normalization is canonically
@@ -270,7 +272,7 @@ theorem existsUnique_iso_seminormalization_seminormalizationFactorization (X : S
 
 [Tag 0H3R](https://stacks.math.columbia.edu/tag/0H3R) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.weakNormalizationFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean#L75).
+**`AlgebraicGeometry.Scheme.weakNormalizationFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean#L75).
 
 > The weak normalization of `X` in its normalization, as a factorization.
 
@@ -284,7 +286,7 @@ public noncomputable abbrev weakNormalizationFactorization (X : Scheme.{u})
 
 [Tag 0H3S](https://stacks.math.columbia.edu/tag/0H3S) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IsWeaklyNormal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean#L103).
+**`AlgebraicGeometry.Scheme.IsWeaklyNormal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalScheme.lean#L103).
 
 > A scheme is weakly normal if its weak normalization morphism is an isomorphism.
 
@@ -297,7 +299,7 @@ public abbrev IsWeaklyNormal (X : Scheme.{u})
 
 [Tag 0H3T](https://stacks.math.columbia.edu/tag/0H3T) in the Stacks Project.
 
-**`AlgebraicGeometry.isWeaklyNormal_spec_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AffineWeaklyNormal.lean, line 809](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AffineWeaklyNormal.lean#L809).
+**`AlgebraicGeometry.isWeaklyNormal_spec_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AffineWeaklyNormal.lean, line 809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AffineWeaklyNormal.lean#L809).
 
 > **Stacks Project, Tag 0H3T.** An affine scheme with finitely many irreducible components
 > is weakly normal exactly when its coordinate ring is seminormal and satisfies the prime-power
@@ -314,7 +316,7 @@ theorem isWeaklyNormal_spec_iff (A : Type u) [CommRing A]
 
 [Tag 0H3U](https://stacks.math.columbia.edu/tag/0H3U) in the Stacks Project.
 
-**`AlgebraicGeometry.isWeaklyNormal_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean#L305). The attribute's comment: “open subschemes”.
+**`AlgebraicGeometry.isWeaklyNormal_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean#L305). The attribute's comment: “open subschemes”.
 
 > **Stacks Project, Tag 0H3U.** Every open subscheme of a weakly normal scheme is weakly
 > normal.
@@ -328,7 +330,7 @@ theorem isWeaklyNormal_open {X : Scheme.{u}}
       Scheme.IsWeaklyNormal U.toScheme hU
 ```
 
-**`AlgebraicGeometry.isWeaklyNormal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean#L322). The attribute's comment: “equivalent conditions”.
+**`AlgebraicGeometry.isWeaklyNormal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/WeaklyNormalLocal.lean#L322). The attribute's comment: “equivalent conditions”.
 
 > **Stacks Project, Tag 0H3U.** For a scheme whose quasi-compact opens have finitely many
 > irreducible components, weak normality is equivalent to the two ring conditions of Tag 0H3T on
@@ -357,4 +359,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.56, Tag 0H3I](https://stacks.math.columbia.edu/tag/0H3I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

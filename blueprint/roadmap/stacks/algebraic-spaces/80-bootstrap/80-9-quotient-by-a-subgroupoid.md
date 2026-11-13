@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.9 Quotient by a subgroupoid
 
-Section 80.9 of the Stacks Project, [Tag 04S3](https://stacks.math.columbia.edu/tag/04S3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 80.9 of the Stacks Project, [Tag 04S3](https://stacks.math.columbia.edu/tag/04S3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04S4, a lemma
 
 [Tag 04S4](https://stacks.math.columbia.edu/tag/04S4) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_division_isField_quotient_of_isoSpecField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean#L180). The attribute's comment: “all four conclusions, at an object scheme which is the spectrum of a field and with only finiteness assumed of the source and target of the subgroupoid, together with the quotient being the spectrum of a field”.
+**`AlgebraicGeometry.GroupoidScheme.exists_division_isField_quotient_of_isoSpecField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean#L180). The attribute's comment: “all four conclusions, at an object scheme which is the spectrum of a field and with only finiteness assumed of the source and target of the subgroupoid, together with the quotient being the spectrum of a field”.
 
 > **Stacks Project, Tag 04S4, at an object scheme which is the spectrum of a field.**  A
 > subgroupoid on the same object scheme whose pre-relation is a monomorphism and whose source and
@@ -41,7 +41,7 @@ theorem exists_division_isField_quotient_of_isoSpecField {S : Scheme.{u}} (G H :
     ∃ D : Division G H i hobj, IsField Γ(D.quotient.left, ⊤)
 ```
 
-**`AlgebraicGeometry.exists_finiteFlatQuotient_isAffine_of_mono_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivision.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivision.lean#L494). References: SGA 3 V (4.1), “special case”.
+**`AlgebraicGeometry.exists_finiteFlatQuotient_isAffine_of_mono_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivision.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivision.lean#L494). References: SGA 3 V (4.1), “special case”.
 
 > **Stacks Project, Tag 04S4.** Let `(U, R, s, t, c)` be a groupoid scheme `G` over `S` and
 > let `(U, P, s|_P, t|_P, c|_P)` be a groupoid scheme `H` mapping to it by a morphism `i` which is
@@ -80,7 +80,7 @@ theorem exists_finiteFlatQuotient_isAffine_of_mono_groupoidPreRelation (G H : Gr
           ∀ T : Over S, Nonempty (F.evaluation T).FullyFaithful
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_division`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean#L1075). The attribute's comment: “all four conclusions: the affine quotient Ū = U/P as the fppf-sheaf coequalizer, its finite locally free surjective quotient map, the kernel-pair square P = U ×\_Ū U, and the descent of the ambient groupoid R to a groupoid on Ū of which it is the restriction”.
+**`AlgebraicGeometry.GroupoidScheme.exists_division`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean#L1075). The attribute's comment: “all four conclusions: the affine quotient Ū = U/P as the fppf-sheaf coequalizer, its finite locally free surjective quotient map, the kernel-pair square P = U ×\_Ū U, and the descent of the ambient groupoid R to a groupoid on Ū of which it is the restriction”.
 
 > A finite locally free subgroupoid equivalence relation on an affine scheme can be
 > divided out, and a separated locally quasi-finite ambient groupoid descends to the quotient.
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.9, Tag 04S3](https://stacks.math.columbia.edu/tag/04S3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

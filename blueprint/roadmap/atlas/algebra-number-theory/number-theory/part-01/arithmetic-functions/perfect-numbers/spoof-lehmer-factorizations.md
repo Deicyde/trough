@@ -7,7 +7,7 @@ statement: formalized
 
 # Spoof Lehmer factorizations
 
-38 results, 21 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html).
+38 results, 21 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html).
 
 ## Spoof factorizations
 
@@ -19,7 +19,7 @@ if every base $x_i$ and every exponent $a_i$ is positive.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 1.
 
-Formalized by `MetaMathlibExt.IsSpoofFactorization`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-factorization).
+Formalized by `MetaMathlibExt.IsSpoofFactorization`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-factorization).
 
 ## Spoof evaluation
 
@@ -31,7 +31,7 @@ $F$ is the integer $\tilde e(F) = x_1^{a_1} \cdots x_r^{a_r} = \prod_{i=1}^{r} x
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 2.
 
-Formalized by `MetaMathlibExt.spoofEval`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval).
+Formalized by `MetaMathlibExt.spoofEval`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval).
 
 ## Spoof totient
 
@@ -44,7 +44,7 @@ the exponent $a_i - 1$ is truncated at $0$, so a pair with $a_i = 0$ contributes
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 3.
 
-Formalized by `MetaMathlibExt.spoofTotient`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-totient).
+Formalized by `MetaMathlibExt.spoofTotient`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-totient).
 
 ## Spoof evaluation and spoof totient of $3 \cdot 3$
 
@@ -56,7 +56,7 @@ is $\tilde e(3 \cdot 3) = 9$ and its spoof totient is $\tilde\varphi(3 \cdot 3) 
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definitions 2 and 3.
 
-Formalized by `MetaMathlibExt.spoofEval_spoofTotient_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval-spoof-totient-three-three).
+Formalized by `MetaMathlibExt.spoofEval_spoofTotient_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval-spoof-totient-three-three).
 
 ## Spoof Lehmer factorizations
 
@@ -72,7 +72,7 @@ whose exponent is greater than $1$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 4.
 
-Formalized by `MetaMathlibExt.IsSpoofLehmer`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer).
+Formalized by `MetaMathlibExt.IsSpoofLehmer`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer).
 
 ## $3 \cdot 3$ is a $2$-Lehmer factorization
 
@@ -83,7 +83,7 @@ $2$-Lehmer factorization; indeed $2 \cdot (3 - 1)(3 - 1) = 3 \cdot 3 - 1$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Table 1.
 
-Formalized by `MetaMathlibExt.isSpoofLehmer_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer-three-three).
+Formalized by `MetaMathlibExt.isSpoofLehmer_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer-three-three).
 
 ## The factorizations $1^a \cdot 1^b$ are Lehmer for every $k$
 
@@ -95,7 +95,7 @@ factorization.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Example 1.
 
-Formalized by `MetaMathlibExt.isSpoofLehmer_one_one`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer-one-one).
+Formalized by `MetaMathlibExt.isSpoofLehmer_one_one`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-spoof-lehmer-one-one).
 
 ## Trivial spoof factorizations
 
@@ -107,7 +107,7 @@ occurring in $F$ equals $1$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 6.
 
-Formalized by `MetaMathlibExt.IsTrivialSpoof`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-trivial-spoof).
+Formalized by `MetaMathlibExt.IsTrivialSpoof`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-trivial-spoof).
 
 ## Odd spoof factorizations
 
@@ -121,7 +121,7 @@ A spoof factorization that is not odd is called even.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 7.
 
-Formalized by `MetaMathlibExt.IsOddSpoof`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-odd-spoof).
+Formalized by `MetaMathlibExt.IsOddSpoof`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-odd-spoof).
 
 ## Factorization with all exponents one
 
@@ -134,7 +134,7 @@ exponent $1$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Remark 3.
 
-Formalized by `MetaMathlibExt.spoofOfBases`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-of-bases).
+Formalized by `MetaMathlibExt.spoofOfBases`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-of-bases).
 
 ## The exponent-one factorization on the bases 3 and 3
 
@@ -146,7 +146,7 @@ copies of the pair $(3, 1)$, that is, $3 \cdot 3 = 3^1 \cdot 3^1$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Remark 3.
 
-Formalized by `MetaMathlibExt.spoofOfBases_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-of-bases-three-three).
+Formalized by `MetaMathlibExt.spoofOfBases_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-of-bases-three-three).
 
 ## Solutions of the Lehmer equation
 
@@ -159,7 +159,7 @@ with multiplicity and are computed in $\mathbb{Z}$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Equation (1).
 
-Formalized by `MetaMathlibExt.IsLehmerEquationSolution`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-lehmer-equation-solution).
+Formalized by `MetaMathlibExt.IsLehmerEquationSolution`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-lehmer-equation-solution).
 
 ## The multiset $\{3, 3\}$ solves the Lehmer equation
 
@@ -173,7 +173,7 @@ with multiplicity.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Table 1.
 
-Formalized by `MetaMathlibExt.isLehmerEquationSolution_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-lehmer-equation-solution-three-three).
+Formalized by `MetaMathlibExt.isLehmerEquationSolution_three_three`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-lehmer-equation-solution-three-three).
 
 ## The Lehmer function $\kappa_r$
 
@@ -187,7 +187,7 @@ with division by zero giving $0$ (so $\kappa_r(t) = 0$ when some $t_i = 1$).
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 8.
 
-Formalized by `MetaMathlibExt.lehmerKappa`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa).
+Formalized by `MetaMathlibExt.lehmerKappa`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa).
 
 ## The Lehmer function at $(2, 2)$
 
@@ -198,7 +198,7 @@ $\kappa_2(t_1, t_2) = (t_1 t_2 - 1) / ((t_1 - 1)(t_2 - 1))$ takes the value $\ka
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 8 and proof of Theorem 5.
 
-Formalized by `MetaMathlibExt.lehmerKappa_two_two`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa-two-two).
+Formalized by `MetaMathlibExt.lehmerKappa_two_two`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa-two-two).
 
 ## Admissible completions for the Lehmer bounds
 
@@ -211,7 +211,7 @@ $t_1, \dots, t_s, u_1, \dots, u_m$ is nondecreasing and $u_j \ge 2$ for every $j
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 9.
 
-Formalized by `MetaMathlibExt.lehmerCompletions`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-completions).
+Formalized by `MetaMathlibExt.lehmerCompletions`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-completions).
 
 ## The lower Lehmer bound
 
@@ -228,7 +228,7 @@ below.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 9.
 
-Formalized by `MetaMathlibExt.lehmerLower`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower).
+Formalized by `MetaMathlibExt.lehmerLower`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower).
 
 ## Upper Lehmer bound $U(t; r)$
 
@@ -245,7 +245,7 @@ convention it is $0$ when $t$ has no admissible completion or these values are n
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 9.
 
-Formalized by `MetaMathlibExt.lehmerUpper`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-upper).
+Formalized by `MetaMathlibExt.lehmerUpper`, a definition declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-upper).
 
 ## A full-length nondecreasing list has only the empty completion
 
@@ -259,7 +259,7 @@ at least $2$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 9.
 
-Formalized by `MetaMathlibExt.lehmerCompletions_length`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-completions-length).
+Formalized by `MetaMathlibExt.lehmerCompletions_length`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-completions-length).
 
 ## The Lehmer bounds of a full-length list
 
@@ -273,7 +273,7 @@ The only admissible completion of such a list to its own length $r$ is the empty
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Definition 9 and proof of Lemma 3.
 
-Formalized by `MetaMathlibExt.lehmerLower_upper_length`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-length).
+Formalized by `MetaMathlibExt.lehmerLower_upper_length`, a theorem declared in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-length).
 
 ## Spoof Lehmer factorizations with a base $1$ are trivial
 
@@ -285,7 +285,7 @@ $F$ has base $x = 1$, then every base of $F$ equals $1$, that is, $F$ is trivial
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.isTrivialSpoof_of_isSpoofLehmer_of_one_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-trivial-spoof-of-is-spoof-lehmer-of-o).
+Stated but not proved: `MetaMathlibExt.isTrivialSpoof_of_isSpoofLehmer_of_one_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#is-trivial-spoof-of-is-spoof-lehmer-of-o).
 
 ## Nontrivial spoof Lehmer factorizations have all exponents $1$
 
@@ -296,7 +296,7 @@ $k$-Lehmer factorization for some integer $k$, then every exponent of $F$ is $1$
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_exponents_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-exponents-eq-one).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_exponents_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-exponents-eq-one).
 
 ## Bases of a spoof Lehmer factorization modulo divisors of its evaluation
 
@@ -315,7 +315,7 @@ proof reaches $0 \equiv -1 \pmod n$, which is a contradiction only when $n \nmid
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one).
 
 ## Bases of a nontrivial spoof Lehmer factorization are not $1$ modulo one another
 
@@ -328,7 +328,7 @@ integer $k$, then $x_i \not\equiv 1 \pmod{x_j}$ for all $i$ and $j$, including $
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one-base).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one-base).
 
 ## Primes dividing the evaluation of a spoof Lehmer factorization
 
@@ -342,7 +342,7 @@ every $i$. Moreover, if $F$ is even (not every base is odd), then every base $x_
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one-prime).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_base_not_modEq_one_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-base-not-mod-eq-one-prime).
 
 ## Bounds and monotonicity of the Lehmer function
 
@@ -360,7 +360,7 @@ lower bound fails and $\kappa_1$ is not strictly decreasing.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.lehmerKappa_antitone_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa-antitone-bounds).
+Stated but not proved: `MetaMathlibExt.lehmerKappa_antitone_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-kappa-antitone-bounds).
 
 ## Formulas for the Lehmer bounds
 
@@ -386,7 +386,7 @@ $L(\emptyset; 0) = \kappa_0 = 0$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.lehmerLower_upper_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-formula).
+Stated but not proved: `MetaMathlibExt.lehmerLower_upper_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-formula).
 
 ## Monotonicity of the Lehmer bounds
 
@@ -402,7 +402,7 @@ $U(t'; r) \le U(t; r)$.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.lehmerLower_upper_antitone` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-antitone).
+Stated but not proved: `MetaMathlibExt.lehmerLower_upper_antitone` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-lower-upper-antitone).
 
 ## Lehmer bounds at the initial segments of a spoof Lehmer factorization
 
@@ -421,7 +421,7 @@ $L(x_1, \dots, x_s; r) = k$ if and only if $s = r$. Moreover $1 < k \le 2^r - 1$
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_lower_le_le_upper` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-lower-le-le-upper).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_lower_le_le_upper` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-lower-le-le-upper).
 
 ## Finitely many solutions of the Lehmer equation in $r$ variables
 
@@ -437,7 +437,7 @@ this statement.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.lehmerEquation_solutions_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-equation-solutions-finite).
+Stated but not proved: `MetaMathlibExt.lehmerEquation_solutions_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-equation-solutions-finite).
 
 ## Solutions of the Lehmer equation with at most six variables
 
@@ -453,7 +453,7 @@ Solutions are counted as multisets, that is, up to the order of the $x_i$, as in
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.lehmerEquation_solutions_count` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-equation-solutions-count).
+Stated but not proved: `MetaMathlibExt.lehmerEquation_solutions_count` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#lehmer-equation-solutions-count).
 
 ## Finitely many nontrivial spoof Lehmer factorizations with $r$ factors
 
@@ -469,7 +469,7 @@ claim is not part of this statement.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-finite).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-finite).
 
 ## Spoof Lehmer factorizations with at most six factors
 
@@ -510,7 +510,7 @@ statement.
 
 - Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.spoofLehmer_atMostSix_tables` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-at-most-six-tables).
+Stated but not proved: `MetaMathlibExt.spoofLehmer_atMostSix_tables` is written with `theorem_wanted` in [WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SpoofLehmerFactorizationWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-lehmer-at-most-six-tables).
 
 ## Spoof totient of a unitary factorization
 
@@ -523,7 +523,7 @@ totient $\tilde{\varphi}^*(x_1 \cdots x_r)$.
 
 - Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Section 1 (definition of `φ̃*`).
 
-Formalized by `MetaMathlibExt.spoofTotient_spoofOfBases`, a theorem declared in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-totient-spoof-of-bases).
+Formalized by `MetaMathlibExt.spoofTotient_spoofOfBases`, a theorem declared in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-totient-spoof-of-bases).
 
 ## Nielsen's bound
 
@@ -540,7 +540,7 @@ when $r = 0$.
 
 - Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Lemma 1, citing P. Nielsen, Math. Comp. 84 (2015), Lemma 1.4.
 
-Stated but not proved: `MetaMathlibExt.nielsen_prod_one_sub_inv_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#nielsen-prod-one-sub-inv-bound).
+Stated but not proved: `MetaMathlibExt.nielsen_prod_one_sub_inv_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#nielsen-prod-one-sub-inv-bound).
 
 ## Bound on unitary Lehmer factorizations
 
@@ -556,7 +556,7 @@ evaluation to be $1$.
 
 - Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.spoofEval_le_of_isSpoofLehmer_spoofOfBases` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval-le-of-is-spoof-lehmer-spoof-o).
+Stated but not proved: `MetaMathlibExt.spoofEval_le_of_isSpoofLehmer_spoofOfBases` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#spoof-eval-le-of-is-spoof-lehmer-spoof-o).
 
 ## Repeated unitary Lehmer factorizations
 
@@ -574,7 +574,7 @@ treats only $x = 2$, $x = 3$ and $x \ge 4$. When $x \ge 2$, the hypothesis force
 
 - Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.eq_two_or_eq_three_of_isSpoofLehmer_replicate` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#eq-two-or-eq-three-of-is-spoof-lehmer-re).
+Stated but not proved: `MetaMathlibExt.eq_two_or_eq_three_of_isSpoofLehmer_replicate` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#eq-two-or-eq-three-of-is-spoof-lehmer-re).
 
 ## Lehmer's lemma for unitary spoof factorizations
 
@@ -591,7 +591,7 @@ every finite multiset of integers and every integer $k$.
 
 - Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.unitary_spoof_lehmer_lemma` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#unitary-spoof-lehmer-lemma).
+Stated but not proved: `MetaMathlibExt.unitary_spoof_lehmer_lemma` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitarySpoofLehmerWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html#unitary-spoof-lehmer-lemma).
 
 ## Depends on
 
@@ -600,4 +600,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spoof Lehmer factorizations](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/perfect-numbers/spoof-lehmer-factorizations)

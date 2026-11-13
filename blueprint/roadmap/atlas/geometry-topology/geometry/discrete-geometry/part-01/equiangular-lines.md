@@ -7,7 +7,7 @@ statement: formalized
 
 # Equiangular lines
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html).
 
 ## Equiangular systems of unit vectors
 
@@ -20,7 +20,7 @@ $|\langle x, y \rangle| = \alpha$.
 
 - Z. Jiang, J. Tidor, Y. Yao, S. Zhang, and Y. Zhao, `Equiangular lines with a fixed angle`, Annals of Math, 194 (3) 2021, third paragraph of the introduction.
 
-Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.EquiangularLines`, a structure declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#equiangular-lines).
+Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.EquiangularLines`, a structure declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#equiangular-lines).
 
 ## Maximum number of equiangular lines
 
@@ -38,7 +38,7 @@ through the origin in $\mathbb{R}^d$ with pairwise angle $\arccos \alpha$.
 
 - Z. Jiang, J. Tidor, Y. Yao, S. Zhang, and Y. Zhao, `Equiangular lines with a fixed angle`, Annals of Math, 194 (3) 2021, third paragraph of the introduction.
 
-Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.N`, a definition declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#n).
+Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.N`, a definition declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#n).
 
 ## Spectral radius order
 
@@ -53,7 +53,7 @@ The source defines $k(\lambda)$ only for $\lambda > 0$, where $\max(\lambda, 0) 
 
 - Z. Jiang, J. Tidor, Y. Yao, S. Zhang, and Y. Zhao, `Equiangular lines with a fixed angle`, Annals of Math, 194 (3) 2021, Definition 1.1.
 
-Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.spectralRadiusOrder`, a definition declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#spectral-radius-order).
+Formalized by `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.spectralRadiusOrder`, a definition declared in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#spectral-radius-order).
 
 ## Equiangular lines with a fixed angle
 
@@ -69,7 +69,7 @@ large $d$;
 
 - Z. Jiang, J. Tidor, Y. Yao, S. Zhang, and Y. Zhao, `Equiangular lines with a fixed angle`, Annals of Math, 194 (3) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_equiangular_lines_fixed_angle` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/EquiangularLinesFixedAngleWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html#theorem-1-2).
 
 ## Depends on
 
@@ -78,4 +78,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Equiangular lines](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/discrete-geometry/part-01/equiangular-lines)

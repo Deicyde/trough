@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.8 Rig-étale algebras
 
-Section 88.8 of the Stacks Project, [Tag 0ALP](https://stacks.math.columbia.edu/tag/0ALP). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.8 of the Stacks Project, [Tag 0ALP](https://stacks.math.columbia.edu/tag/0ALP). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GAY, a definition
 
 [Tag 0GAY](https://stacks.math.columbia.edu/tag/0GAY) in the Stacks Project.
 
-**`Rig.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean#L73).
+**`Rig.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean#L73).
 
 > **Stacks Project, Tag 0GAY.** An adically complete algebra of finite type modulo `I` is
 > rig-étale over `(A, I)` if some power of `I` acts by zero on its completed naive cotangent
@@ -29,7 +29,7 @@ public abbrev IsRigEtale (B : AdicFiniteTypeAlgebra.{u, v} A I) : Prop
 
 [Tag 0AJU](https://stacks.math.columbia.edu/tag/0AJU) in the Stacks Project.
 
-**`Rig.CompletedNaiveCotangentComplex.exists_annihilator_twoTerm_iff_forall_reducedComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Annihilation.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Annihilation.lean#L399). The attribute's comment: “(3) iff (4) for the reduced complexes”.
+**`Rig.CompletedNaiveCotangentComplex.exists_annihilator_twoTerm_iff_forall_reducedComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Annihilation.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Annihilation.lean#L399). The attribute's comment: “(3) iff (4) for the reduced complexes”.
 
 > **Stacks 0AJU, the equivalence of (0AJW) and (0AJX).**  For a completed polynomial
 > presentation `B = A⟨x₁, …, x_r⟩ / J` of an object `B` of the category (Stacks 0AL4) over a
@@ -60,7 +60,7 @@ public theorem exists_annihilator_twoTerm_iff_forall_reducedComplex [IsNoetheria
         (K.reducedComplex n)
 ```
 
-**`Rig.isCohomologyAnnihilated_iff_isReductionCohomologyAnnihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/ReductionIdentification.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/ReductionIdentification.lean#L418). The attribute's comment: “(3) iff (4)”.
+**`Rig.isCohomologyAnnihilated_iff_isReductionCohomologyAnnihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/ReductionIdentification.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/ReductionIdentification.lean#L418). The attribute's comment: “(3) iff (4)”.
 
 > **Stacks 0AJU, the equivalence of conditions (3) and (4).**  For a completed polynomial
 > presentation `B = A⟨x₁, …, x_r⟩ / J` of an object `B` of the category (Stacks 0AL4) over a
@@ -109,7 +109,7 @@ public theorem isCohomologyAnnihilated_iff_isReductionCohomologyAnnihilated
                   (B.carrier ⧸ (I ^ n).map (algebraMap A B.carrier))).homology 0))
 ```
 
-**`Rig.isRigEtale_iff_exists_annihilator_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleCriterion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleCriterion.lean#L191). The attribute's comment: “(1) iff (3)”.
+**`Rig.isRigEtale_iff_exists_annihilator_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleCriterion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleCriterion.lean#L191). The attribute's comment: “(1) iff (3)”.
 
 > **Stacks 0AJU, (1) ⇔ (3).**  For an `I`-adically complete `A`-algebra `B` of finite type
 > modulo `I` over a Noetherian ring `A`, and any completed polynomial presentation
@@ -138,7 +138,7 @@ public theorem isRigEtale_iff_exists_annihilator_cohomology
               LinearMap.range (completedNaiveCotangentComplex B P).differential)
 ```
 
-**`Rig.isArtinJacobian_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLifting.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleLifting.lean#L309). The attribute's comment: “(1) implies (6)”.
+**`Rig.isArtinJacobian_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLifting.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleLifting.lean#L309). The attribute's comment: “(1) implies (6)”.
 
 > **Stacks 0AJU, (1) implies (6).**  A rig-étale adic algebra satisfies the elementwise
 > Jacobian criterion: for every `a ∈ I` there are an exponent `c` and elements
@@ -167,7 +167,7 @@ public theorem isArtinJacobian_of_isRigEtale (B : AdicFiniteTypeAlgebra.{u, v} A
             Ideal.span (Set.range fun i => (f i : P.completedPolynomialRing)) + P.ker ^ 2
 ```
 
-**`Rig.isArtinPreliminary_of_isArtinJacobian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L244). The attribute's comment: “(6) implies (5)”.
+**`Rig.isArtinPreliminary_of_isArtinJacobian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L245). The attribute's comment: “(6) implies (5)”.
 
 > **Stacks 0AJU, (6) ⇒ (5).**  If the Jacobian determinant of `f₁, …, f_r ∈ J` divides
 > `a ^ c`, then `a ^ c` annihilates `H⁰(NL^∧_{B/A})`.
@@ -183,7 +183,7 @@ public theorem isArtinPreliminary_of_isArtinJacobian (B : AdicFiniteTypeAlgebra.
     IsArtinPreliminary B P
 ```
 
-**`Rig.isCohomologyAnnihilated_of_isArtinPreliminary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L374). The attribute's comment: “(5) implies (3)”.
+**`Rig.isCohomologyAnnihilated_of_isArtinPreliminary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L375). The attribute's comment: “(5) implies (3)”.
 
 > **Stacks 0AJU, (5) ⇒ (3).**  Condition (5) gives, for each `a ∈ I`, a power of `a`
 > annihilating both cohomology modules of `NL^∧_{B/A}`: for `H⁰` this is its first half and for
@@ -197,7 +197,7 @@ public theorem isCohomologyAnnihilated_of_isArtinPreliminary
     (h : IsArtinPreliminary B P) : IsCohomologyAnnihilated B P
 ```
 
-**`Rig.isRigEtale_iff_isJacobianCramerBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L410). The attribute's comment: “(1) iff (7)”.
+**`Rig.isRigEtale_iff_isJacobianCramerBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L411). The attribute's comment: “(1) iff (7)”.
 
 > **Stacks 0AJU, (1) ⇔ (7).**  Rig-étaleness of `B` over `(A, I)` is equivalent to the
 > Jacobian ideal and the Cramer ideal of *every* finite generating family of `J` each containing
@@ -214,7 +214,7 @@ public theorem isRigEtale_iff_isJacobianCramerBounded (B : AdicFiniteTypeAlgebra
     IsRigEtale B ↔ IsJacobianCramerBounded B P
 ```
 
-**`Rig.tfae_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L443).
+**`Rig.tfae_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleTFAE.lean#L444).
 
 > **Stacks 0AJU.**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal, `B` an `I`-adically
 > complete `A`-algebra of finite type modulo `I` and `B = A⟨x₁, …, x_r⟩ / J` a completed
@@ -246,7 +246,7 @@ public theorem tfae_isRigEtale (B : AdicFiniteTypeAlgebra.{u, v} A I)
 
 [Tag 0AJY](https://stacks.math.columbia.edu/tag/0AJY) in the Stacks Project.
 
-**`Rig.isRigEtale_iff_exists_pow_le_completedJacobianIdeal_and_completedCramerIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/JacobianCramerCriterion.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/JacobianCramerCriterion.lean#L180). The attribute's comment: “(7) of 0AJU, as an equivalence with rig-étaleness”.
+**`Rig.isRigEtale_iff_exists_pow_le_completedJacobianIdeal_and_completedCramerIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/JacobianCramerCriterion.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/JacobianCramerCriterion.lean#L180). The attribute's comment: “(7) of 0AJU, as an equivalence with rig-étaleness”.
 
 > **Stacks 0AJY**, part (7) of Stacks 0AJU.  For an `I`-adically complete `A`-algebra `B` of
 > finite type modulo `I` over a Noetherian ring `A`, a completed polynomial presentation
@@ -267,7 +267,7 @@ public theorem isRigEtale_iff_exists_pow_le_completedJacobianIdeal_and_completed
 
 [Tag 0GB1](https://stacks.math.columbia.edu/tag/0GB1) in the Stacks Project.
 
-**`Rig.isRigSmooth_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigEtale.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigEtale.lean#L95).
+**`Rig.isRigSmooth_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigEtale.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigEtale.lean#L95).
 
 > **Stacks 0GB1.** A rig-étale adically finite type algebra over `(A, I)` is rig-smooth.
 
@@ -281,7 +281,7 @@ theorem isRigSmooth_of_isRigEtale {A : Type u} [CommRing A] [IsNoetherianRing A]
 
 [Tag 0ALQ](https://stacks.math.columbia.edu/tag/0ALQ) in the Stacks Project.
 
-**`Rig.isRigEtale_adicCompletionObj_of_isEtaleOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L434). The attribute's comment: “part (1)”.
+**`Rig.isRigEtale_adicCompletionObj_of_isEtaleOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L434). The attribute's comment: “part (1)”.
 
 > **Stacks 0ALQ, part (1).**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` a finite
 > type `A`-algebra.  If `Spec(B) → Spec(A)` is étale over `Spec(A) ∖ V(I)`, then the `I`-adic
@@ -298,7 +298,7 @@ public theorem isRigEtale_adicCompletionObj_of_isEtaleOutside (h : IsEtaleOutsid
     IsRigEtale (adicCompletionObj I (B := B))
 ```
 
-**`Rig.exists_isEtaleOutside_localization_of_isRigEtale_adicCompletionObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L471). The attribute's comment: “part (2)”.
+**`Rig.exists_isEtaleOutside_localization_of_isRigEtale_adicCompletionObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L471). The attribute's comment: “part (2)”.
 
 > **Stacks 0ALQ, part (2).**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` a finite
 > type `A`-algebra.  If the `I`-adic completion `B^` satisfies the equivalent conditions of
@@ -317,7 +317,7 @@ public theorem exists_isEtaleOutside_localization_of_isRigEtale_adicCompletionOb
     ∃ g : B, g - 1 ∈ I.map (algebraMap A B) ∧ IsEtaleOutside I (Localization.Away g)
 ```
 
-**`Rig.isEtaleOutside_and_isRigEtale_adicCompletionObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L529).
+**`Rig.isEtaleOutside_and_isRigEtale_adicCompletionObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L529).
 
 > **Stacks 0ALQ.**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` a finite type
 > `A`-algebra, and write `B^` for the `I`-adic completion of `B`.
@@ -341,7 +341,7 @@ public theorem isEtaleOutside_and_isRigEtale_adicCompletionObj :
 
 [Tag 0AK2](https://stacks.math.columbia.edu/tag/0AK2) in the Stacks Project.
 
-**`Rig.smul_id_of_completedBaseChangeFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeSmulId.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeSmulId.lean#L102).
+**`Rig.smul_id_of_completedBaseChangeFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeSmulId.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeSmulId.lean#L102).
 
 > With `(A₁, I₁) → (A₂, I₂)` as in Stacks Remark 0AL5, witnessed by `hc` and `hmap`, a scalar
 > `f₁ ∈ B₁` acting by zero on `NL^∧_{B₁/A₁}` in `D(B₁)` has its image
@@ -364,7 +364,7 @@ public theorem smul_id_of_completedBaseChangeFunctor
 
 [Tag 0GB2](https://stacks.math.columbia.edu/tag/0GB2) in the Stacks Project.
 
-**`Rig.isRigEtale_completedBaseChangeOfIsNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleBaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleBaseChange.lean#L227). The attribute's comment: “preservation of rig-étaleness”.
+**`Rig.isRigEtale_completedBaseChangeOfIsNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleBaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleBaseChange.lean#L227). The attribute's comment: “preservation of rig-étaleness”.
 
 > Let `A₁ → A₂` be a map of Noetherian rings and let `Iᵢ ⊆ Aᵢ` be ideals with
 > `V(I₁ A₂) = V(I₂)`. Let `B₁` be adically of finite type over `(A₁, I₁)` and let
@@ -385,7 +385,7 @@ public theorem isRigEtale_completedBaseChangeOfIsNoetherianRing
 
 [Tag 0AKJ](https://stacks.math.columbia.edu/tag/0AKJ) in the Stacks Project.
 
-**`Rig.exists_etale_factorization_algHom_henselization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Henselization.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Henselization.lean#L322). The attribute's comment: “étale factorization”.
+**`Rig.exists_etale_factorization_algHom_henselization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Henselization.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Henselization.lean#L322). The attribute's comment: “étale factorization”.
 
 > **Stacks Project, Tag 0AKJ (étale factorization).** Every map from a
 > finite type algebra to the henselization of `(C, IC)` factors through an
@@ -415,7 +415,7 @@ public lemma exists_etale_factorization_algHom_henselization
         (k.restrictScalars A).comp g = f
 ```
 
-**`Rig.exists_unique_algHom_henselization_of_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/HenselizationDescent.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/HenselizationDescent.lean#L963). The attribute's comment: “descent and uniqueness”.
+**`Rig.exists_unique_algHom_henselization_of_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/HenselizationDescent.lean, line 962](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/HenselizationDescent.lean#L962). The attribute's comment: “descent and uniqueness”.
 
 > **Stacks Project, Tag 0AKJ (descent and uniqueness).**  Let `A` be a Noetherian ring,
 > `I ⊆ A` an ideal and `B` a finite type `A`-algebra such that `Spec(B) → Spec(A)` is étale over
@@ -458,4 +458,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.8, Tag 0ALP](https://stacks.math.columbia.edu/tag/0ALP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

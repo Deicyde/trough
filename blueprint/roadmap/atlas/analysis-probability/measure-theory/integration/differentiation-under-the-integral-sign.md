@@ -7,14 +7,14 @@ statement: formalized
 
 # Differentiation under the integral sign
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html).
 
 ## Smoothness of compactly supported parameter integrals
 
 The integral `p ↦ ∫ x, w x • Ψ (c x, p) ∂μ` of a smooth compactly
 supported function is smooth in the parameter `p`.
 
-Formalized by `MeasureTheory.contDiff_integral_smul_comp_of_contDiff_of_hasCompactSupport`, a theorem declared in [MathlibExt/MeasureTheory/Measure/ParamSmooth.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Measure/ParamSmooth.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html#cont-diff-integral-smul-comp-of-cont-dif).
+Formalized by `MeasureTheory.contDiff_integral_smul_comp_of_contDiff_of_hasCompactSupport`, a theorem declared in [MathlibExt/MeasureTheory/Measure/ParamSmooth.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Measure/ParamSmooth.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html#cont-diff-integral-smul-comp-of-cont-dif).
 
 ## Differentiating an integral of a series term by term
 
@@ -49,7 +49,7 @@ hypotheses but not the conclusion.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_50`, with the change above.
 
-Stated but not proved: `MathlibExt.MeasureTheory.DerivIntegralSeriesAbsContWanted.exists_hasDerivAt_integral_tsum_ae` is written with `theorem_wanted` in [WantedExt/MeasureTheory/DerivIntegralSeriesAbsContWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/DerivIntegralSeriesAbsContWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html#exists-has-deriv-at-integral-tsum-ae).
+Stated but not proved: `MathlibExt.MeasureTheory.DerivIntegralSeriesAbsContWanted.exists_hasDerivAt_integral_tsum_ae` is written with `theorem_wanted` in [WantedExt/MeasureTheory/DerivIntegralSeriesAbsContWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/DerivIntegralSeriesAbsContWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html#exists-has-deriv-at-integral-tsum-ae).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Differentiation under the integral sign](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/integration/differentiation-under-the-integral-sign)

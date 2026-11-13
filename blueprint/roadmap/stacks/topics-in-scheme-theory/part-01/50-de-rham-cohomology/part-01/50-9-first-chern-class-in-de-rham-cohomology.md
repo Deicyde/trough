@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.9 First Chern class in de Rham cohomology
 
-Section 50.9 of the Stacks Project, [Tag 0FLE](https://stacks.math.columbia.edu/tag/0FLE). 3 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.9 of the Stacks Project, [Tag 0FLE](https://stacks.math.columbia.edu/tag/0FLE). 3 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FLE, the section
 
 [Tag 0FLE](https://stacks.math.columbia.edu/tag/0FLE) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.logarithmicDifferentialComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L313). The attribute's comment: “d log as a map of complexes”.
+**`AlgebraicGeometry.SheafOfModules.logarithmicDifferentialComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L313). The attribute's comment: “d log as a map of complexes”.
 
 > **Stacks Project, Tag 0FLE.** **Logarithmic differentiation as a morphism of complexes of
 > abelian sheaves** `𝒪_X^*[-1] ⟶ Ω^•_{𝒪_X/A}`. There is a single condition to check, that
@@ -25,7 +25,7 @@ Section 50.9 of the Stacks Project, [Tag 0FLE](https://stacks.math.columbia.edu/
 def logarithmicDifferentialComplexMap : unitsComplex X ⟶ deRhamAbelianComplexInt B D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L552). The attribute's comment: “the de Rham first Chern class”.
+**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L552). The attribute's comment: “the de Rham first Chern class”.
 
 > **Stacks Project, Tag 0FLE.** **The first Chern class in relative de Rham cohomology**, in
 > the abelian-sheaf realization: the image of a Picard class under the map on degree-two
@@ -37,7 +37,7 @@ def deRhamFirstChernClassAbelian :
       deRhamCohomologyAbelian B D 2
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFirstChernClassAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L614). The attribute's comment: “the Hodge first Chern class, for a ringed space over a base ring sheaf”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFirstChernClassAbelian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L614). The attribute's comment: “the Hodge first Chern class, for a ringed space over a base ring sheaf”.
 
 > **Stacks Project, Tag 0FLE.** **The first Chern class in Hodge cohomology**
 > `c₁^{Hodge} : Pic(X) ⟶ H¹(X, Ω¹_{𝒪_X/A})`, in the abelian-sheaf realization: the identification
@@ -57,7 +57,7 @@ def hodgeFirstChernClassAbelian :
       hodgeCohomologyOneAbelian B D
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logarithmicDifferentialSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L133). The attribute's comment: “d log into the sheaf of relative differentials”.
+**`AlgebraicGeometry.Scheme.Hom.logarithmicDifferentialSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L133). The attribute's comment: “d log into the sheaf of relative differentials”.
 
 > **Logarithmic differentiation as a morphism of sheaves of abelian groups**
 > `𝒪_X^* ⟶ Ω_{X/S}`, the sheaf of units being written additively.
@@ -67,7 +67,7 @@ def logarithmicDifferentialSheafHom :
     unitsSheaf X.toRingedSpace ⟶ relativeDifferentialsAbelian p
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.hodgeFirstChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L220). The attribute's comment: “the Hodge first Chern class”.
+**`AlgebraicGeometry.Scheme.Hom.hodgeFirstChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L220). The attribute's comment: “the Hodge first Chern class”.
 
 > **The first Chern class in Hodge cohomology** `c₁^{Hodge} : Pic(X) ⟶ H¹(X, Ω_{X/S})`: the
 > identification `Pic(X) = H¹(X, 𝒪_X^*)` of Stacks Tag 09NU followed by the map on first cohomology
@@ -82,7 +82,7 @@ def hodgeFirstChernClass {X S : Scheme.{u}} (p : X ⟶ S) :
 
 [Tag 0FMD](https://stacks.math.columbia.edu/tag/0FMD) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamFirstChernClassAbelian_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/DeRhamFirstChernClassSquare.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/DeRhamFirstChernClassSquare.lean#L229). The attribute's comment: “the de Rham square”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamFirstChernClassAbelian_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/DeRhamFirstChernClassSquare.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/DeRhamFirstChernClassSquare.lean#L229). The attribute's comment: “the de Rham square”.
 
 > **Stacks Project, Tag 0FMD.** **The de Rham first Chern class commutes with pullback**: for
 > a commutative square of schemes with horizontal arrows `f : X' ⟶ X` and `g : S' ⟶ S`, the square
@@ -101,7 +101,7 @@ theorem deRhamFirstChernClassAbelian_schemePullbackClassHom (c : Stacks.Picard.o
           (Stacks.GluePicard.picardModelAddEquiv X.toRingedSpace c))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.hodgeFirstChernClass_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L266). The attribute's comment: “the Hodge square”.
+**`AlgebraicGeometry.Scheme.Hom.hodgeFirstChernClass_schemePullbackClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/HodgeFirstChernClass.lean#L266). The attribute's comment: “the Hodge square”.
 
 > **The Hodge first Chern class commutes with pullback**: for a commutative square of schemes
 > with horizontal arrows `f : X' ⟶ X` and `g : S' ⟶ S`, the square formed by `c₁^{Hodge}`, by
@@ -117,7 +117,7 @@ theorem hodgeFirstChernClass_schemePullbackClassHom (c : Stacks.Picard.ofScheme 
 
 [Tag 0FME](https://stacks.math.columbia.edu/tag/0FME) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.filteredChernProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L195). The attribute's comment: “Remark 50.9.2, clause F of A-I: the a-fold cup product ξ = γ₁(L₁) ∪ … ∪ γ₁(L\_a) ∈ H^\{2a}(X, σ^\{≥a}Ω^•), for every a, formed with the cup product of Section 50.7 on the hypercohomology of the brutal truncations (`hodgeFiltrationCup`, the cup product of Cohomology Section 0FKU along the multiplication of the Hodge filtration) from the class γ₁ of clause B”.
+**`AlgebraicGeometry.SheafOfModules.filteredChernProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L195). The attribute's comment: “Remark 50.9.2, clause F of A-I: the a-fold cup product ξ = γ₁(L₁) ∪ … ∪ γ₁(L\_a) ∈ H^\{2a}(X, σ^\{≥a}Ω^•), for every a, formed with the cup product of Section 50.7 on the hypercohomology of the brutal truncations (`hodgeFiltrationCup`, the cup product of Cohomology Section 0FKU along the multiplication of the Hodge filtration) from the class γ₁ of clause B”.
 
 > **Stacks Project, Tag 0FME.** **The `a`-fold cup product
 > `ξ = γ₁(L₁) ∪ … ∪ γ₁(L_a) ∈ H^{2a}(X, σ^{≥a}Ω^•_{𝒪_X/A})`** of Hodge-filtered first Chern
@@ -135,7 +135,7 @@ def filteredChernProduct : (k : ℕ) →
       truncatedDeRhamCohomologyAbelian B D (cupLength k) (cupDegree k)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.truncatedDeRhamCohomologyAbelianMap_filteredChernProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L356). The attribute's comment: “Remark 50.9.2, clause G of A-I: the map σ^\{≥a}Ω^• ⟶ Ω^• sends ξ to the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a) in H^\{2a}\_dR(X/S), for every a, both cup products being those of Cohomology Section 0FKU (`hodgeFiltrationCup` and `deRhamCup`)”.
+**`AlgebraicGeometry.SheafOfModules.truncatedDeRhamCohomologyAbelianMap_filteredChernProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L356). The attribute's comment: “Remark 50.9.2, clause G of A-I: the map σ^\{≥a}Ω^• ⟶ Ω^• sends ξ to the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a) in H^\{2a}\_dR(X/S), for every a, both cup products being those of Cohomology Section 0FKU (`hodgeFiltrationCup` and `deRhamCup`)”.
 
 > **Stacks Project, Tag 0FME.** **The image of `ξ = γ₁(L₁) ∪ … ∪ γ₁(L_a)` under
 > `σ^{≥a}Ω^• ⟶ Ω^•` is `c₁^{dR}(L₁) ∪ … ∪ c₁^{dR}(L_a)` in `H^{2a}_{dR}(X/S)`.**
@@ -153,7 +153,7 @@ theorem truncatedDeRhamCohomologyAbelianMap_filteredChernProduct (k : ℕ)
         (filteredChernProduct B D k L) = deRhamChernProduct B D k L
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamChernProduct_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L377). The attribute's comment: “Remark 50.9.2, clause H of A-I: the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a), for the cup product of Cohomology Section 0FKU on de Rham cohomology (`deRhamCup`), is contained in the a-th step F^a H^\{2a}\_dR(X/S) of the Hodge filtration, for every a”.
+**`AlgebraicGeometry.SheafOfModules.deRhamChernProduct_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L377). The attribute's comment: “Remark 50.9.2, clause H of A-I: the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a), for the cup product of Cohomology Section 0FKU on de Rham cohomology (`deRhamCup`), is contained in the a-th step F^a H^\{2a}\_dR(X/S) of the Hodge filtration, for every a”.
 
 > **Stacks Project, Tag 0FME.** **`c₁^{dR}(L₁) ∪ … ∪ c₁^{dR}(L_a)` lies in
 > `F^a H^{2a}_{dR}(X/S)`**, the `a`-th step of the Hodge filtration of Tag 0FM8.
@@ -174,7 +174,7 @@ theorem deRhamChernProduct_mem_hodgeFiltrationAbelian (k : ℕ)
         deRhamChernProduct B D k L
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeGradedIso_inv_gradedPieceProjection_filteredChernProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L433). The attribute's comment: “Remark 50.9.2, clause I of A-I, with the sign the identifications force: the map σ^\{≥a}Ω^• ⟶ Ω^a[-a] sends ξ to (-1)^\{a(a-1)/2} · c₁^Hodge(L₁) ∪ … ∪ c₁^Hodge(L\_a) in H^\{2a}(X, Ω^a[-a]) = H^a(X, Ω^a), for every a, the cup product being the Hodge cup product of Tag 0FM4 (`hodgeCup`: the cup product of Cohomology Section 0FKU along the wedge product Ω^p ⊗ Ω^q ⟶ Ω^\{p+q} on the sheaves of forms in degree 0). The source states it without the sign; the sign is -1 for a ≡ 2, 3 mod 4”.
+**`AlgebraicGeometry.SheafOfModules.hodgeGradedIso_inv_gradedPieceProjection_filteredChernProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L433). The attribute's comment: “Remark 50.9.2, clause I of A-I, with the sign the identifications force: the map σ^\{≥a}Ω^• ⟶ Ω^a[-a] sends ξ to (-1)^\{a(a-1)/2} · c₁^Hodge(L₁) ∪ … ∪ c₁^Hodge(L\_a) in H^\{2a}(X, Ω^a[-a]) = H^a(X, Ω^a), for every a, the cup product being the Hodge cup product of Tag 0FM4 (`hodgeCup`: the cup product of Cohomology Section 0FKU along the wedge product Ω^p ⊗ Ω^q ⟶ Ω^\{p+q} on the sheaves of forms in degree 0). The source states it without the sign; the sign is -1 for a ≡ 2, 3 mod 4”.
 
 > **Stacks Project, Tag 0FME.** **The image of `ξ = γ₁(L₁) ∪ … ∪ γ₁(L_a)` under
 > `σ^{≥a}Ω^• ⟶ Ω^a_{𝒪_X/A}[-a]`, read in `H^a(X, Ω^a_{𝒪_X/A})`, is
@@ -209,7 +209,7 @@ theorem hodgeGradedIso_inv_gradedPieceProjection_filteredChernProduct (k : ℕ)
       hodgeChernSign k • hodgeCupChernProduct B D k L
 ```
 
-**`AlgebraicGeometry.SheafOfModules.remark_filteredFirstChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L478). The attribute's comment: “Remark 50.9.2 IN FULL: ALL NINE CLAUSES A-I, FOR EVERY a. The conjuncts in order are A (d log as a map into σ^\{≥1}Ω^•, pinned down to d log), B (the class γ₁(L), the morphism `filteredFirstChernClass` the conjuncts speak of), C (its image in H²\_dR is c₁^dR), D (so c₁^dR ∈ F¹H²\_dR), E (its image in H²(Ω¹[-1]) = H¹(Ω¹) is c₁^Hodge), F (the a-fold product ξ, the class `filteredChernProduct` the conjuncts speak of), G (its image in H^\{2a}\_dR is the a-fold product of the c₁^dR), H (so that product lies in F^a H^\{2a}\_dR) and I (its image in H^\{2a}(Ω^a[-a]) = H^a(Ω^a) is (-1)^\{a(a-1)/2} times the a-fold Hodge cup product of Tag 0FM4 of the c₁^Hodge, the sign being the one the identifications force, absent from the source). Every cup product is the one of Cohomology Section 0FKU along the multiplication the source names”.
+**`AlgebraicGeometry.SheafOfModules.remark_filteredFirstChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/CanonicalChernCupProduct.lean#L478). The attribute's comment: “Remark 50.9.2 IN FULL: ALL NINE CLAUSES A-I, FOR EVERY a. The conjuncts in order are A (d log as a map into σ^\{≥1}Ω^•, pinned down to d log), B (the class γ₁(L), the morphism `filteredFirstChernClass` the conjuncts speak of), C (its image in H²\_dR is c₁^dR), D (so c₁^dR ∈ F¹H²\_dR), E (its image in H²(Ω¹[-1]) = H¹(Ω¹) is c₁^Hodge), F (the a-fold product ξ, the class `filteredChernProduct` the conjuncts speak of), G (its image in H^\{2a}\_dR is the a-fold product of the c₁^dR), H (so that product lies in F^a H^\{2a}\_dR) and I (its image in H^\{2a}(Ω^a[-a]) = H^a(Ω^a) is (-1)^\{a(a-1)/2} times the a-fold Hodge cup product of Tag 0FM4 of the c₁^Hodge, the sign being the one the identifications force, absent from the source). Every cup product is the one of Cohomology Section 0FKU along the multiplication the source names”.
 
 > **Stacks Project, Tag 0FME.** **Remark 50.9.2 in full**: all nine clauses of the remark, for
 > every number `a = k + 1` of invertible modules, in one statement. In order:
@@ -267,7 +267,7 @@ theorem remark_filteredFirstChernClass (k : ℕ)
       hodgeChernSign k • hodgeCupChernProduct B D k L)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.filteredLogarithmicDifferentialComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L326). The attribute's comment: “d log as a map to the first step of the Hodge filtration”.
+**`AlgebraicGeometry.SheafOfModules.filteredLogarithmicDifferentialComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L326). The attribute's comment: “d log as a map to the first step of the Hodge filtration”.
 
 > **Stacks Project, Tag 0FME.** **Logarithmic differentiation as a morphism of complexes into
 > the first step of the Hodge filtration**, `d log : 𝒪_X^*[-1] ⟶ σ^{≥1}Ω^•_{𝒪_X/A}`.
@@ -281,7 +281,7 @@ def filteredLogarithmicDifferentialComplexMap :
     unitsComplex X ⟶ (deRhamAbelianComplexInt B D).stupidTrunc (embeddingUpIntGE 1)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.filteredLogarithmicDifferentialComplexMap_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L339). The attribute's comment: “Remark 50.9.2, clause A of A-I, the theorem half: the factorization of d log through σ^\{≥1}Ω^• IS d log, composing with σ^\{≥1}Ω^• ⟶ Ω^• back to the unfiltered one. This is what pins `filteredLogarithmicDifferentialComplexMap` down to the source's map rather than to some morphism into the truncation. The covering set here is the a = 1 case, clauses A-E; the a ≥ 2 clauses F-I are proved for every a in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`”.
+**`AlgebraicGeometry.SheafOfModules.filteredLogarithmicDifferentialComplexMap_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L339). The attribute's comment: “Remark 50.9.2, clause A of A-I, the theorem half: the factorization of d log through σ^\{≥1}Ω^• IS d log, composing with σ^\{≥1}Ω^• ⟶ Ω^• back to the unfiltered one. This is what pins `filteredLogarithmicDifferentialComplexMap` down to the source's map rather than to some morphism into the truncation. The covering set here is the a = 1 case, clauses A-E; the a ≥ 2 clauses F-I are proved for every a in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`”.
 
 > The factorization of `d log` through the brutal truncation is one: composing it with the
 > inclusion of the truncation returns the unfiltered logarithmic differential.
@@ -294,7 +294,7 @@ theorem filteredLogarithmicDifferentialComplexMap_ι :
       logarithmicDifferentialComplexMap B D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.filteredFirstChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L542). The attribute's comment: “the filtered first Chern class”.
+**`AlgebraicGeometry.SheafOfModules.filteredFirstChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L542). The attribute's comment: “the filtered first Chern class”.
 
 > **Stacks Project, Tag 0FME.** **The first Chern class in Hodge-filtered de Rham
 > cohomology.** Logarithmic differentiation is a morphism of complexes of abelian sheaves
@@ -308,7 +308,7 @@ def filteredFirstChernClass :
       truncatedDeRhamCohomologyAbelian B D 1 2
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L568). The attribute's comment: “Remark 50.9.2, clause C of A-I: the image of γ₁(L) under σ^\{≥1}Ω^• ⟶ Ω^• is the de Rham first Chern class c₁^dR(L). The a = 1 case; the a ≥ 2 analogue, clause G, is `truncatedDeRhamCohomologyAbelianMap_filteredChernProduct` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`, which this is the base case of”.
+**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L568). The attribute's comment: “Remark 50.9.2, clause C of A-I: the image of γ₁(L) under σ^\{≥1}Ω^• ⟶ Ω^• is the de Rham first Chern class c₁^dR(L). The a = 1 case; the a ≥ 2 analogue, clause G, is `truncatedDeRhamCohomologyAbelianMap_filteredChernProduct` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`, which this is the base case of”.
 
 > **The de Rham first Chern class is the image of the Hodge-filtered one** under the map
 > `H²(X, σ^{≥1}Ω^•) ⟶ H²_{dR}` induced by the inclusion of the first filtered step. In
@@ -324,7 +324,7 @@ theorem deRhamFirstChernClassAbelian_eq
       (truncatedDeRhamCohomologyAbelianMap B D 1 2).hom (filteredFirstChernClass B D c)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L589). The attribute's comment: “Remark 50.9.2, clause D of A-I: c₁^dR(L) lies in the first step F¹H²\_dR of the Hodge filtration. The a = 1 case; the a ≥ 2 analogue, clause H, that the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a) lies in F^a H^\{2a}\_dR, is `deRhamChernProduct_mem_hodgeFiltrationAbelian` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`”.
+**`AlgebraicGeometry.SheafOfModules.deRhamFirstChernClassAbelian_mem_hodgeFiltrationAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L589). The attribute's comment: “Remark 50.9.2, clause D of A-I: c₁^dR(L) lies in the first step F¹H²\_dR of the Hodge filtration. The a = 1 case; the a ≥ 2 analogue, clause H, that the a-fold product c₁^dR(L₁) ∪ … ∪ c₁^dR(L\_a) lies in F^a H^\{2a}\_dR, is `deRhamChernProduct_mem_hodgeFiltrationAbelian` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`”.
 
 > **Stacks Project, Tag 0FME.** **`c₁^{dR}(L)` lies in `F¹H²_{dR}(X/S)`**, the first step of
 > the Hodge filtration of Tag 0FM8.
@@ -343,7 +343,7 @@ theorem deRhamFirstChernClassAbelian_mem_hodgeFiltrationAbelian
         deRhamFirstChernClassAbelian B D c
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeFirstChernClassAbelian_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L635). The attribute's comment: “Remark 50.9.2, clause E of A-I: the image of γ₁(L) under σ^\{≥1}Ω^• ⟶ Ω¹[-1] is the Hodge first Chern class c₁^Hodge(L) ∈ H¹(X, Ω¹). The a = 1 case; the a ≥ 2 analogue, clause I, is `hodgeGradedIso_inv_gradedPieceProjection_filteredChernProduct` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`, which this is the base case of”.
+**`AlgebraicGeometry.SheafOfModules.hodgeFirstChernClassAbelian_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L635). The attribute's comment: “Remark 50.9.2, clause E of A-I: the image of γ₁(L) under σ^\{≥1}Ω^• ⟶ Ω¹[-1] is the Hodge first Chern class c₁^Hodge(L) ∈ H¹(X, Ω¹). The a = 1 case; the a ≥ 2 analogue, clause I, is `hodgeGradedIso_inv_gradedPieceProjection_filteredChernProduct` in `StacksFrontier.AlgebraicGeometry.DeRham.FirstChernClass.CanonicalChernCupProduct`, which this is the base case of”.
 
 > **Stacks Project, Tag 0FME.** **The image of `γ₁(L)` under `σ^{≥1}Ω^• ⟶ Ω¹_{𝒪_X/A}[-1]`
 > recovers `c₁^{Hodge}(L)`**, read through the identification `H¹(X, Ω¹) ≅ H²(X, Ω¹[-1])` of
@@ -365,7 +365,7 @@ theorem hodgeFirstChernClassAbelian_eq
         (hodgeFirstChernClassAbelian B D c)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.filteredFirstChernClassOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L674). The attribute's comment: “the filtered first Chern class of an invertible module”.
+**`AlgebraicGeometry.SheafOfModules.filteredFirstChernClassOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/FirstChernClass/FilteredFirstChernClass.lean#L674). The attribute's comment: “the filtered first Chern class of an invertible module”.
 
 > **Stacks Project, Tag 0FME.** The Hodge-filtered first Chern class of an invertible
 > module.
@@ -383,4 +383,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.9, Tag 0FLE](https://stacks.math.columbia.edu/tag/0FLE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

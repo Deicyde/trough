@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.60 Pseudo-coherent morphisms
 
-Section 37.60 of the Stacks Project, [Tag 067X](https://stacks.math.columbia.edu/tag/067X). 13 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.60 of the Stacks Project, [Tag 067X](https://stacks.math.columbia.edu/tag/067X). 13 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 067Y, a lemma
 
 [Tag 067Y](https://stacks.math.columbia.edu/tag/067Y) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L114). The attribute's comment: “the equivalence of (1) and (2)”.
+**`AlgebraicGeometry.pseudoCoherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L114). The attribute's comment: “the equivalence of (1) and (2)”.
 
 > For a morphism of schemes the following are equivalent: there is an affine open cover of the
 > base and, over each of its members, an affine open cover of its inverse image on which the maps on
@@ -41,7 +41,7 @@ public theorem pseudoCoherent_tfae {X S : Scheme.{u}} (f : X ⟶ S) :
           ∀ (h : U ≤ f ⁻¹ᵁ V), pseudoCoherentOn V U h]
 ```
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_of_pseudoCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L162). The attribute's comment: “condition (2) implies the finite-type half of condition (3)”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_of_pseudoCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L162). The attribute's comment: “condition (2) implies the finite-type half of condition (3)”.
 
 > **Stacks 0682.** A pseudo-coherent morphism of schemes is locally of finite presentation.
 >
@@ -58,7 +58,7 @@ public instance (priority := 100) locallyOfFinitePresentation_of_pseudoCoherent 
     (f : X ⟶ S) [hf : PseudoCoherent f] : LocallyOfFinitePresentation f
 ```
 
-**`AlgebraicGeometry.pseudoCoherent_tfae_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StructureSheafComparison.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StructureSheafComparison.lean#L442). The attribute's comment: “the full three-condition equivalence”.
+**`AlgebraicGeometry.pseudoCoherent_tfae_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StructureSheafComparison.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StructureSheafComparison.lean#L442). The attribute's comment: “the full three-condition equivalence”.
 
 > **Stacks 067Y.** For a morphism of schemes `f : X ⟶ S` the following are equivalent: there
 > are an affine open covering of `S` and, over each of its members, an affine open covering of its
@@ -98,7 +98,7 @@ public theorem pseudoCoherent_tfae_three :
 
 [Tag 067Z](https://stacks.math.columbia.edu/tag/067Z) in the Stacks Project.
 
-**`AlgebraicGeometry.PseudoCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L71).
+**`AlgebraicGeometry.PseudoCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L71).
 
 > A morphism of schemes `f : X ⟶ S` is pseudo-coherent if for every affine open `V ⊆ S` and every
 > affine open `U ⊆ X` with `U ⊆ f ⁻¹ᵁ V` the induced map on sections `Γ(S, V) ⟶ Γ(X, U)` is a
@@ -112,7 +112,7 @@ public class PseudoCoherent {X S : Scheme.{u}} (f : X ⟶ S) : Prop
 
 [Tag 0680](https://stacks.math.columbia.edu/tag/0680) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_of_isPullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FlatBaseChange.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FlatBaseChange.lean#L160).
+**`AlgebraicGeometry.pseudoCoherent_of_isPullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FlatBaseChange.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FlatBaseChange.lean#L160).
 
 > **Stacks 0680.** A flat base change of a pseudo-coherent morphism of schemes is
 > pseudo-coherent: if `f : X ⟶ S` is pseudo-coherent, `g : S' ⟶ S` is flat and the square with
@@ -128,7 +128,7 @@ theorem pseudoCoherent_of_isPullback_of_flat {X X' S S' : Scheme.{u}} {f : X ⟶
 
 [Tag 0681](https://stacks.math.columbia.edu/tag/0681) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_comp`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean#L82).
+**`AlgebraicGeometry.pseudoCoherent_comp`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean#L82).
 
 > **Stacks 0681.** A composition of pseudo-coherent morphisms of schemes is pseudo-coherent.
 
@@ -141,7 +141,7 @@ instance pseudoCoherent_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ Z)
 
 [Tag 0682](https://stacks.math.columbia.edu/tag/0682) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_of_pseudoCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L162).
+**`AlgebraicGeometry.locallyOfFinitePresentation_of_pseudoCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/PseudoCoherent.lean#L162).
 
 > **Stacks 0682.** A pseudo-coherent morphism of schemes is locally of finite presentation.
 >
@@ -162,7 +162,7 @@ public instance (priority := 100) locallyOfFinitePresentation_of_pseudoCoherent 
 
 [Tag 0695](https://stacks.math.columbia.edu/tag/0695) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_of_flat_of_locallyOfFinitePresentation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FinitePresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FinitePresentation.lean#L57).
+**`AlgebraicGeometry.pseudoCoherent_of_flat_of_locallyOfFinitePresentation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FinitePresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FinitePresentation.lean#L57).
 
 > **Stacks 0695.** A flat morphism of schemes which is locally of finite presentation is
 > pseudo-coherent.
@@ -180,7 +180,7 @@ instance pseudoCoherent_of_flat_of_locallyOfFinitePresentation {X S : Scheme.{u}
 
 [Tag 0683](https://stacks.math.columbia.edu/tag/0683) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean#L95). References: SGA 6 III (1.14), “special case”.
+**`AlgebraicGeometry.pseudoCoherent_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Composition.lean#L95). References: SGA 6 III (1.14), “special case”.
 
 > **Stacks 0683.** If `X` and `Y` are pseudo-coherent over a base scheme `S`, then any morphism
 > `f : X ⟶ Y` over `S` is pseudo-coherent.
@@ -200,7 +200,7 @@ theorem pseudoCoherent_of_comp {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S)
 
 [Tag 0AVX](https://stacks.math.columbia.edu/tag/0AVX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.isPseudoCoherentSite_pushforward_derivedStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSitePseudoCoherent.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSitePseudoCoherent.lean#L55). The attribute's comment: “for a closed immersion, at the site notion of pseudo-coherence”.
+**`AlgebraicGeometry.Scheme.isPseudoCoherentSite_pushforward_derivedStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSitePseudoCoherent.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportSitePseudoCoherent.lean#L55). The attribute's comment: “for a closed immersion, at the site notion of pseudo-coherence”.
 
 > If a closed immersion of schemes `i : Z ⟶ X` is pseudo-coherent, then `Ri_* 𝒪_Z` is a
 > pseudo-coherent object of `D(𝒪_X)` at the ringed site of opens of `X`, in the sense of
@@ -214,7 +214,7 @@ theorem isPseudoCoherentSite_pushforward_derivedStructureSheaf (hi : PseudoCoher
           (RingedSite.derivedStructureSheaf (Stacks.SheafOfModules.ringedSite Z.sheaf)))
 ```
 
-**`AlgebraicGeometry.pseudoCoherent_iff_isPseudoCoherent_pushforward_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteMorphism.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteMorphism.lean#L144).
+**`AlgebraicGeometry.pseudoCoherent_iff_isPseudoCoherent_pushforward_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteMorphism.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FiniteMorphism.lean#L144).
 
 > **Stacks 0AVX.** A finite morphism of schemes `f : X ⟶ S` is pseudo-coherent if and only if
 > the direct image `f_*𝒪_X` of its structure sheaf is a pseudo-coherent `𝒪_S`-module, that is, if
@@ -233,7 +233,7 @@ public theorem pseudoCoherent_iff_isPseudoCoherent_pushforward_unit {X S : Schem
 
 [Tag 0684](https://stacks.math.columbia.edu/tag/0684) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_iff_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Noetherian.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Noetherian.lean#L76). References: SGA 6 III (1.3), “loc. noetherian case”.
+**`AlgebraicGeometry.pseudoCoherent_iff_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Noetherian.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/Noetherian.lean#L76). References: SGA 6 III (1.3), “loc. noetherian case”.
 
 > **Stacks 0684.** A morphism of schemes whose target is locally Noetherian is pseudo-coherent
 > if and only if it is locally of finite type.
@@ -252,7 +252,7 @@ theorem pseudoCoherent_iff_locallyOfFiniteType {X S : Scheme.{u}} [IsLocallyNoet
 
 [Tag 0696](https://stacks.math.columbia.edu/tag/0696) in the Stacks Project.
 
-**`AlgebraicGeometry.pseudoCoherent_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FpqcLocalAtTarget.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FpqcLocalAtTarget.lean#L347).
+**`AlgebraicGeometry.pseudoCoherent_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FpqcLocalAtTarget.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FpqcLocalAtTarget.lean#L347).
 
 > **Stacks 0696.** Pseudo-coherence of a morphism of schemes is fpqc local on the base: a
 > morphism is pseudo-coherent if and only if its base change along every member of an fpqc
@@ -271,7 +271,7 @@ instance pseudoCoherent_isLocalAtTarget_fpqc :
 
 [Tag 0697](https://stacks.math.columbia.edu/tag/0697) in the Stacks Project.
 
-**`Algebra.pseudoCoherent_quotient_iff_isModulePseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Quotient.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/PseudoCoherentMap/Quotient.lean#L123).
+**`Algebra.pseudoCoherent_quotient_iff_isModulePseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Quotient.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Quotient.lean#L123).
 
 > **Stacks 0697.** Let `A → B` be a flat ring map of finite presentation and let `I` be an
 > ideal of `B`. Then `A → B ⧸ I` is pseudo-coherent if and only if `I` is pseudo-coherent as a
@@ -292,7 +292,7 @@ theorem pseudoCoherent_quotient_iff_isModulePseudoCoherent
 
 [Tag 0698](https://stacks.math.columbia.edu/tag/0698) in the Stacks Project.
 
-**`AlgebraicGeometry.PseudoCoherent.isLocalAtSource_syntomicPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/SyntomicDescent.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/SyntomicDescent.lean#L79).
+**`AlgebraicGeometry.PseudoCoherent.isLocalAtSource_syntomicPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/SyntomicDescent.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/SyntomicDescent.lean#L79).
 
 > **Stacks 0698.** Pseudo-coherence of morphisms of schemes is local on the source for the
 > syntomic topology.
@@ -312,7 +312,7 @@ instance PseudoCoherent.isLocalAtSource_syntomicPrecoverage :
 
 [Tag 0699](https://stacks.math.columbia.edu/tag/0699) in the Stacks Project.
 
-**`AlgebraicGeometry.PseudoCoherent.isLocalAtSource_fppfPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FppfDescent.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FppfDescent.lean#L56).
+**`AlgebraicGeometry.PseudoCoherent.isLocalAtSource_fppfPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FppfDescent.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentMorphism/FppfDescent.lean#L56).
 
 > **Stacks 0699.** Pseudo-coherence of morphisms of schemes is local on the source for the
 > fppf topology: a morphism is pseudo-coherent exactly when its composites with the members of an
@@ -336,4 +336,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.60, Tag 067X](https://stacks.math.columbia.edu/tag/067X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

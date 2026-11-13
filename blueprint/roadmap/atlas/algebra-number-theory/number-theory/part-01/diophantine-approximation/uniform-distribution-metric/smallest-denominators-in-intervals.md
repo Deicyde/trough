@@ -7,7 +7,7 @@ statement: formalized
 
 # Smallest denominators in intervals
 
-12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html).
+12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html).
 
 ## Smallest denominator in an interval
 
@@ -21,7 +21,7 @@ then $q_{\min}(x, \delta) = 0$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.smallestDenominator`, a definition declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator).
+Formalized by `MetaMathlibExt.smallestDenominator`, a definition declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator).
 
 ## Denominators of nearby rationals bound the smallest denominator
 
@@ -33,7 +33,7 @@ then the smallest denominator satisfies $q_{\min}(x, \delta) \le q$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.smallestDenominator_le`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-le).
+Formalized by `MetaMathlibExt.smallestDenominator_le`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-le).
 
 ## Every real number has arbitrarily close rationals
 
@@ -47,7 +47,7 @@ $|x - p/q| \le 1/(2q) < \delta/2$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.exists_denominator_mem_window`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#exists-denominator-mem-window).
+Formalized by `MetaMathlibExt.exists_denominator_mem_window`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#exists-denominator-mem-window).
 
 ## The smallest denominator is positive and attained
 
@@ -59,7 +59,7 @@ integer $p$ with $|x - p/q| < \delta/2$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.smallestDenominator_spec`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-spec).
+Formalized by `MetaMathlibExt.smallestDenominator_spec`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-spec).
 
 ## Minimality of the smallest denominator
 
@@ -71,7 +71,7 @@ denominator. Then there is no integer $p$ with $|x - p/q| < \delta/2$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.not_mem_window_of_lt_smallestDenominator`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#not-mem-window-of-lt-smallest-denominato).
+Formalized by `MetaMathlibExt.not_mem_window_of_lt_smallestDenominator`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#not-mem-window-of-lt-smallest-denominato).
 
 ## Upper bounds on the smallest denominator
 
@@ -84,7 +84,7 @@ $p$ with $|x - p/q'| < \delta/2$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.smallestDenominator_le_iff`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-le-iff).
+Formalized by `MetaMathlibExt.smallestDenominator_le_iff`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-le-iff).
 
 ## Wide intervals have smallest denominator one
 
@@ -98,7 +98,7 @@ integer.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.1).
 
-Formalized by `MetaMathlibExt.smallestDenominator_eq_one`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-eq-one).
+Formalized by `MetaMathlibExt.smallestDenominator_eq_one`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#smallest-denominator-eq-one).
 
 ## Density of the logarithmic smallest denominator
 
@@ -121,7 +121,7 @@ $q_{\min}(x, \delta)$ is the smallest denominator of a rational in $(x - \delta/
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.3).
 
-Formalized by `MetaMathlibExt.logSmallestDenominatorDensity`, a definition declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density).
+Formalized by `MetaMathlibExt.logSmallestDenominatorDensity`, a definition declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density).
 
 ## Value of the log smallest-denominator density at zero
 
@@ -132,7 +132,7 @@ logarithmic smallest denominator satisfies $\eta_{\log}(0) = 6/\pi^2$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.3).
 
-Formalized by `MetaMathlibExt.logSmallestDenominatorDensity_zero`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density-zero).
+Formalized by `MetaMathlibExt.logSmallestDenominatorDensity_zero`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density-zero).
 
 ## The log smallest-denominator density for nonpositive arguments
 
@@ -144,7 +144,7 @@ $\eta_{\log}(s) = \frac{6}{\pi^2} e^{2s}$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Equation (1.3).
 
-Formalized by `MetaMathlibExt.logSmallestDenominatorDensity_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density-of-nonp).
+Formalized by `MetaMathlibExt.logSmallestDenominatorDensity_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#log-smallest-denominator-density-of-nonp).
 
 ## Limit law of the smallest denominator
 
@@ -163,7 +163,7 @@ The interval is taken closed; its endpoints do not affect the measures.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_volume_log_smallestDenominator_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#tendsto-volume-log-smallest-denominator).
+Stated but not proved: `MetaMathlibExt.tendsto_volume_log_smallestDenominator_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#tendsto-volume-log-smallest-denominator).
 
 ## Convergence of the log moments of smallest denominators
 
@@ -187,7 +187,7 @@ the correct limit $1$.
 
 - Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.tendsto_integral_log_smallestDenominator_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#tendsto-integral-log-smallest-denominato).
+Stated but not proved: `MetaMathlibExt.tendsto_integral_log_smallestDenominator_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallestDenominatorLogMomentsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html#tendsto-integral-log-smallest-denominato).
 
 ## Depends on
 
@@ -196,4 +196,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Smallest denominators in intervals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/smallest-denominators-in-intervals)

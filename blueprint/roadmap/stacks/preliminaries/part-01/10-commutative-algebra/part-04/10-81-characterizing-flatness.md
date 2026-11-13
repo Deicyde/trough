@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.81 Characterizing flatness
 
-Section 10.81 of the Stacks Project, [Tag 058C](https://stacks.math.columbia.edu/tag/058C). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.81 of the Stacks Project, [Tag 058C](https://stacks.math.columbia.edu/tag/058C). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 058E, a lemma
 
 [Tag 058E](https://stacks.math.columbia.edu/tag/058E) in the Stacks Project.
 
-**`Module.Flat.iff_exists_factorization_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EquationalCriterion.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/EquationalCriterion.lean#L172).
+**`Module.Flat.iff_exists_factorization_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EquationalCriterion.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/EquationalCriterion.lean#L172).
 
 > **Stacks 058E.** An `R`-module `M` is flat if and only if every `R`-linear map to `M` from a
 > finitely presented `R`-module `P` factors through a free finite `R`-module: there are `k : ℕ` and
@@ -32,7 +32,7 @@ public theorem Module.Flat.iff_exists_factorization_of_finitePresentation {R : T
 
 [Tag 058F](https://stacks.math.columbia.edu/tag/058F) in the Stacks Project.
 
-**`Module.Flat.iff_surjective_compRight_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EquationalCriterion.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/EquationalCriterion.lean#L250).
+**`Module.Flat.iff_surjective_compRight_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EquationalCriterion.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/EquationalCriterion.lean#L250).
 
 > **Stacks 058F.** An `R`-module `M` is flat if and only if for every finitely presented
 > `R`-module `P` and every surjection `φ : N → M` of `R`-modules the induced map
@@ -51,7 +51,7 @@ public theorem Module.Flat.iff_surjective_compRight_of_finitePresentation {R : T
 
 [Tag 058G](https://stacks.math.columbia.edu/tag/058G) in the Stacks Project.
 
-**`flat_iff_directLimit_free_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Lazard.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Lazard.lean#L714). References: EGA 0 (6.1.2), “special case”; EGA 0 (6.2.3), “special case”; EGA 0 (6.3.4), “partial”; SGA 3 VIIA (4.2.1), “more general”; SGA 4 V (1.2), “Reverse implication only”; SGA 4 V (8.2.12), “special case”; SGA 4 VI (8.6.4), “special case”; SGA 4 XVII (5.5.1.1), “special case”; SGA 4 XVII (5.5.1.2), “partial”; SGA 4 XVII (5.5.6.3), “partial”.
+**`flat_iff_directLimit_free_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Lazard.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Lazard.lean#L714). References: EGA 0 (6.1.2), “special case”; EGA 0 (6.2.3), “special case”; EGA 0 (6.3.4), “partial”; SGA 3 VIIA (4.2.1), “more general”; SGA 4 V (1.2), “Reverse implication only”; SGA 4 V (8.2.12), “special case”; SGA 4 VI (8.6.4), “special case”; SGA 4 XVII (5.5.1.1), “special case”; SGA 4 XVII (5.5.1.2), “partial”; SGA 4 XVII (5.5.6.3), “partial”.
 
 > **Lazard's theorem.**
 > An `R`-module `M` over a commutative ring `R` is flat if and only if `M` is the
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.81, Tag 058C](https://stacks.math.columbia.edu/tag/058C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

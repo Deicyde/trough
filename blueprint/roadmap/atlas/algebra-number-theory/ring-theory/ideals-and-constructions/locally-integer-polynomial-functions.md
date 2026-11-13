@@ -7,7 +7,7 @@ statement: formalized
 
 # Locally integer polynomial functions
 
-37 results, 8 proved and 29 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html).
+37 results, 8 proved and 29 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html).
 
 ## The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions
 
@@ -21,7 +21,7 @@ for all $x \in X$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Definitions 1 and 2.
 
-Formalized by `MetaMathlibExt.lipSubring`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring).
+Formalized by `MetaMathlibExt.lipSubring`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring).
 
 ## Membership in $\mathrm{LIP}(U)$
 
@@ -33,7 +33,7 @@ polynomial $p \in \mathbb{Z}[x]$ with $p(x) = f(x)$ for all $x \in X$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Definition 1.
 
-Formalized by `MetaMathlibExt.mem_lipSubring_iff`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-lip-subring-iff).
+Formalized by `MetaMathlibExt.mem_lipSubring_iff`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-lip-subring-iff).
 
 ## The triangular-number function is not LIP on the integers
 
@@ -46,7 +46,7 @@ since $1 - (-1)$ must divide $p(1) - p(-1)$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Section 1 and Example 2.
 
-Formalized by `MetaMathlibExt.triangular_not_mem_lipSubring_univ`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#triangular-not-mem-lip-subring-univ).
+Formalized by `MetaMathlibExt.triangular_not_mem_lipSubring_univ`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#triangular-not-mem-lip-subring-univ).
 
 ## The evaluation map from $\mathbb{Z}(x)$ to $\mathrm{LIP}(U)$
 
@@ -59,7 +59,7 @@ $U \to \mathbb{Z}$, $u \mapsto p(u)$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 1.
 
-Formalized by `MetaMathlibExt.polynomialToLIP`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip).
+Formalized by `MetaMathlibExt.polynomialToLIP`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip).
 
 ## Values of the evaluation map into LIP(U)
 
@@ -71,7 +71,7 @@ $\mathbb{Z}[x] \to \mathrm{LIP}(U)$ takes the value $p(u)$ at $u$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 1.
 
-Formalized by `MetaMathlibExt.polynomialToLIP_apply`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip-apply).
+Formalized by `MetaMathlibExt.polynomialToLIP_apply`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip-apply).
 
 ## Interpolation polynomial
 
@@ -84,7 +84,7 @@ degree less than $|X|$ such that $f_X(x) = f(x)$ for every $x \in X$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Section 1 and Definition 3.
 
-Formalized by `MetaMathlibExt.interpolationPoly`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#interpolation-poly).
+Formalized by `MetaMathlibExt.interpolationPoly`, a definition declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#interpolation-poly).
 
 ## The interpolation polynomial agrees with the function on its nodes
 
@@ -96,7 +96,7 @@ $f_X \in \mathbb{Q}[x]$ of $f$ on $X$ satisfies $f_X(x) = f(x)$ for every $x \in
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.eval_interpolationPoly`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#eval-interpolation-poly).
+Formalized by `MetaMathlibExt.eval_interpolationPoly`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#eval-interpolation-poly).
 
 ## Degree bound for the interpolation polynomial
 
@@ -108,7 +108,7 @@ has degree less than $|X|$, where the zero polynomial has degree $-\infty$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.degree_interpolationPoly_lt`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#degree-interpolation-poly-lt).
+Formalized by `MetaMathlibExt.degree_interpolationPoly_lt`, a theorem declared in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#degree-interpolation-poly-lt).
 
 ## Integer polynomials embed in LIP(U)
 
@@ -123,7 +123,7 @@ $U \to \mathbb{Z}$, holds by construction.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.polynomialToLIP_injective` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip-injective).
+Stated but not proved: `MetaMathlibExt.polynomialToLIP_injective` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#polynomial-to-lip-injective).
 
 ## Integrality of low-degree interpolants
 
@@ -136,7 +136,7 @@ $\mathbb{Q}[x]$ of a polynomial in $\mathbb{Z}[x]$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.mem_lifts_of_degree_lt_of_eval_eq` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-lifts-of-degree-lt-of-eval-eq).
+Stated but not proved: `MetaMathlibExt.mem_lifts_of_degree_lt_of_eval_eq` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-lifts-of-degree-lt-of-eval-eq).
 
 ## A locally integer polynomial function with infinitely many zeros is zero
 
@@ -149,7 +149,7 @@ $f(x) = 0$ for every $x \in U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.lip_eq_zero_of_infinite_zeros` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-eq-zero-of-infinite-zeros).
+Stated but not proved: `MetaMathlibExt.lip_eq_zero_of_infinite_zeros` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-eq-zero-of-infinite-zeros).
 
 ## Locally integer polynomial functions agreeing on an infinite subset are equal
 
@@ -162,7 +162,7 @@ every $x \in U$, then $f = g$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.lip_restrict_injective` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-restrict-injective).
+Stated but not proved: `MetaMathlibExt.lip_restrict_injective` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-restrict-injective).
 
 ## Locally integer polynomial functions on an infinite set form a domain
 
@@ -174,7 +174,7 @@ $U \to \mathbb{Z}$ is an integral domain.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.lipSubring_isDomain` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-is-domain).
+Stated but not proved: `MetaMathlibExt.lipSubring_isDomain` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-is-domain).
 
 ## Units of $\mathrm{LIP}(U)$
 
@@ -186,7 +186,7 @@ constant functions $1$ and $-1$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.lipSubring_units_eq` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-units-eq).
+Stated but not proved: `MetaMathlibExt.lipSubring_units_eq` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-units-eq).
 
 ## Integer polynomials take a large value at a small nonnegative integer
 
@@ -198,7 +198,7 @@ $|f(x)| \ge d!/2^d$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.exists_factorial_div_two_pow_le_abs_eval` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-factorial-div-two-pow-le-abs-eval).
+Stated but not proved: `MetaMathlibExt.exists_factorial_div_two_pow_le_abs_eval` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-factorial-div-two-pow-le-abs-eval).
 
 ## Exchange formula for interpolation polynomials
 
@@ -213,7 +213,7 @@ $$f_{X \cup \{a\}} = f_{X \cup \{b\}} + c\,(a - b) \prod_{z \in X} (x - z).$$
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.interpolationPoly_exchange` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#interpolation-poly-exchange).
+Stated but not proved: `MetaMathlibExt.interpolationPoly_exchange` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#interpolation-poly-exchange).
 
 ## Denominator of the top coefficient on a circuit
 
@@ -229,7 +229,7 @@ $a, b \in X$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 7, with the circuit definition preceding it.
 
-Stated but not proved: `MetaMathlibExt.circuit_coeff_den` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#circuit-coeff-den).
+Stated but not proved: `MetaMathlibExt.circuit_coeff_den` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#circuit-coeff-den).
 
 ## Intersection of two arithmetic progressions of natural numbers
 
@@ -244,7 +244,7 @@ $a_3 \in \mathbb{N}$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.natProgression_inter` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#nat-progression-inter).
+Stated but not proved: `MetaMathlibExt.natProgression_inter` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#nat-progression-inter).
 
 ## Two intersecting progressions share infinitely many terms with a third
 
@@ -259,7 +259,7 @@ $\{\min(a, b) + |a - b|\, n : n \in \mathbb{N}\}$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.natProgression_inter_infinite` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#nat-progression-inter-infinite).
+Stated but not proved: `MetaMathlibExt.natProgression_inter_infinite` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#nat-progression-inter-infinite).
 
 ## Newton series of locally integer polynomial functions
 
@@ -279,7 +279,7 @@ is the formal series $\sum_{k \ge 0} a_k \prod_{i < k} (x - \sigma(i))$ evaluate
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 1, reindexed from `σ(1), σ(2), …`.
 
-Stated but not proved: `MetaMathlibExt.lipSubring_newton_series` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-newton-series).
+Stated but not proved: `MetaMathlibExt.lipSubring_newton_series` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-subring-newton-series).
 
 ## LIP functions with infinitely many prime values are irreducible
 
@@ -293,7 +293,7 @@ prime number for infinitely many $x \in U$, then $f$ is irreducible in the ring 
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.irreducible_of_infinite_prime_values` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#irreducible-of-infinite-prime-values).
+Stated but not proved: `MetaMathlibExt.irreducible_of_infinite_prime_values` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#irreducible-of-infinite-prime-values).
 
 ## A LIP function bounded by $C|x|^d$ infinitely often is a polynomial
 
@@ -306,7 +306,7 @@ polynomial $p \in \mathbb{Z}[x]$ with $f(x) = p(x)$ for all $x \in U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_bound` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-bound).
+Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_bound` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-bound).
 
 ## Prime integer polynomials stay prime in LIP(U)
 
@@ -319,7 +319,7 @@ the evaluation map $\mathbb{Z}[x] \to \mathrm{LIP}(U)$, is a prime element of $\
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.prime_polynomialToLIP` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#prime-polynomial-to-lip).
+Stated but not proved: `MetaMathlibExt.prime_polynomialToLIP` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#prime-polynomial-to-lip).
 
 ## $\mathbb{Z}(x)$ is algebraically closed in $\mathrm{LIP}(U)$
 
@@ -334,7 +334,7 @@ $p \in \mathbb{Z}[x]$ with $f(u) = p(u)$ for all $u \in U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_isAlgebraic` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-is-algebr).
+Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_isAlgebraic` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-is-algebr).
 
 ## Infinite ascending chains of principal ideals in LIP rings
 
@@ -351,7 +351,7 @@ In particular $\mathrm{LIP}(U)$ is not Noetherian.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.exists_strictMono_principal_ideals` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-strict-mono-principal-ideals).
+Stated but not proved: `MetaMathlibExt.exists_strictMono_principal_ideals` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-strict-mono-principal-ideals).
 
 ## $\mathrm{LIP}(\mathbb{Z})$ is closed under composition
 
@@ -363,7 +363,7 @@ $\mathbb{Z} \to \mathbb{Z}$, then so does the composite $x \mapsto f(g(x))$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.lip_univ_comp` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-univ-comp).
+Stated but not proved: `MetaMathlibExt.lip_univ_comp` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-univ-comp).
 
 ## $\mathrm{LIP}(\mathbb{Z})$ is closed under the discrete derivative
 
@@ -375,7 +375,7 @@ $\mathbb{Z} \to \mathbb{Z}$, then so does the function $x \mapsto f(x) - f(x - 1
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.lip_univ_sub_shift` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-univ-sub-shift).
+Stated but not proved: `MetaMathlibExt.lip_univ_sub_shift` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-univ-sub-shift).
 
 ## Non-polynomial LIP functions on the integers that are small on an infinite set
 
@@ -391,7 +391,7 @@ set $X \subseteq \mathbb{Z}$ such that $|f(x)| < |x|^{\tau(|x|)}$ for every $x \
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.exists_lip_univ_not_polynomial_lt_rpow` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-lip-univ-not-polynomial-lt-rpow).
+Stated but not proved: `MetaMathlibExt.exists_lip_univ_not_polynomial_lt_rpow` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#exists-lip-univ-not-polynomial-lt-rpow).
 
 ## LIP functions on $\mathbb{Z}$ below the factorial bound are polynomials
 
@@ -405,7 +405,7 @@ $x \in \mathbb{Z}$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_factorial_bound` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-factorial).
+Stated but not proved: `MetaMathlibExt.mem_range_polynomialToLIP_of_factorial_bound` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#mem-range-polynomial-to-lip-of-factorial).
 
 ## LIP continuation at two points
 
@@ -428,7 +428,7 @@ This is the form of Theorem 8 established in its proof in the source.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.lip_continuation_two_points` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-continuation-two-points).
+Stated but not proved: `MetaMathlibExt.lip_continuation_two_points` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-continuation-two-points).
 
 ## Locally integer polynomial functions on a union of sets
 
@@ -445,7 +445,7 @@ restriction of $f$ to $V_i$ lies in $\mathrm{LIP}(V_i)$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.lip_iUnion_iff` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-i-union-iff).
+Stated but not proved: `MetaMathlibExt.lip_iUnion_iff` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-i-union-iff).
 
 ## Locally integer polynomial functions on cofinite sets of positive integers
 
@@ -465,7 +465,7 @@ a nonempty open set $U$ is LIP on $U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_nat` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-nat).
+Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_nat` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-nat).
 
 ## Locally integer polynomial functions on cofinite subsets of the integers
 
@@ -484,7 +484,7 @@ a nonempty open set $U$ is LIP on $U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_int` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-int).
+Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_int` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-int).
 
 ## Locally integer polynomial functions on density one sets of positive integers
 
@@ -504,7 +504,7 @@ point of a nonempty open set $U$ is LIP on $U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.lip_sheaf_densityOne_nat` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-density-one-nat).
+Stated but not proved: `MetaMathlibExt.lip_sheaf_densityOne_nat` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-density-one-nat).
 
 ## Locally integer polynomial functions on density one subsets of the integers
 
@@ -524,7 +524,7 @@ open set $U$ is LIP on $U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.lip_sheaf_densityOne_int` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-density-one-int).
+Stated but not proved: `MetaMathlibExt.lip_sheaf_densityOne_int` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-density-one-int).
 
 ## Locally integer polynomial functions on cofinite sets of primes
 
@@ -543,7 +543,7 @@ open set $U$ is LIP on $U$.
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_primes` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-primes).
+Stated but not proved: `MetaMathlibExt.lip_sheaf_cofinite_primes` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-sheaf-cofinite-primes).
 
 ## Gluing LIP functions on two intersecting progressions
 
@@ -557,7 +557,7 @@ then the restriction of $f$ to $U_1 \cup U_2$ lies in $\mathrm{LIP}(U_1 \cup U_2
 
 - Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.lip_union_natProgression` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-union-nat-progression).
+Stated but not proved: `MetaMathlibExt.lip_union_natProgression` is written with `theorem_wanted` in [WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/LocallyIntegerPolynomialWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html#lip-union-nat-progression).
 
 ## Depends on
 
@@ -566,4 +566,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Locally integer polynomial functions](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ideals-and-constructions/locally-integer-polynomial-functions)

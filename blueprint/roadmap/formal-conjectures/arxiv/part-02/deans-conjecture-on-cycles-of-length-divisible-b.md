@@ -19,7 +19,7 @@ statement: formalized
 > - [LuMaZh26] Luo, Yufan and Ma, Jie and Zhao, Ziyuan, Dean's conjecture and cycles modulo k.
 >   [arXiv:2601.13552](https://arxiv.org/abs/2601.13552) (2026).
 
-*Quoted from [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open and 3 solved. It also has 2 test statements, counted here but not shown.
 
@@ -41,7 +41,7 @@ theorem dean_conjecture :
         ∃ m ∈ G.cycleLengths, k ∣ m
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L51).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L51).
 
 ## `Arxiv.«2605.02731».dean_conjecture.variants.five`
 
@@ -55,7 +55,7 @@ theorem dean_conjecture.variants.five :
       [DecidableRel G.Adj], 5 ≤ G.minDegree → ∃ m ∈ G.cycleLengths, 5 ∣ m
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L61).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L61).
 
 ## `Arxiv.«2605.02731».dean_conjecture.variants.three`
 
@@ -69,7 +69,7 @@ theorem dean_conjecture.variants.three {V : Type} [Fintype V] [DecidableEq V]
     ∃ m ∈ G.cycleLengths, 3 ∣ m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L70).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L70).
 
 ## `Arxiv.«2605.02731».dean_conjecture.variants.four`
 
@@ -83,7 +83,7 @@ theorem dean_conjecture.variants.four {V : Type} [Fintype V] [DecidableEq V]
     ∃ m ∈ G.cycleLengths, 4 ∣ m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L79).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L79).
 
 ## `Arxiv.«2605.02731».dean_conjecture.variants.six_le`
 
@@ -98,7 +98,7 @@ theorem dean_conjecture.variants.six_le {V : Type} [Fintype V] [DecidableEq V] {
     ∃ m ∈ G.cycleLengths, k ∣ m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L89).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean#L89).
 
 ## Depends on
 
@@ -106,5 +106,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean)
+- [FormalConjectures/Arxiv/2605.02731/DeanCycles.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.02731/DeanCycles.lean)
 - [arxiv/2605.02731](https://arxiv.org/abs/2605.02731)

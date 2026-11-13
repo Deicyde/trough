@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.26 Double complexes of abelian groups
 
-Section 12.26 of the Stacks Project, [Tag 0E1P](https://stacks.math.columbia.edu/tag/0E1P). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 12.26 of the Stacks Project, [Tag 0E1P](https://stacks.math.columbia.edu/tag/0E1P). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E1Q, a lemma
 
 [Tag 0E1Q](https://stacks.math.columbia.edu/tag/0E1Q) in the Stacks Project.
 
-**`quasiIso_of_isRightResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L550).
+**`quasiIso_of_isRightResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L550).
 
 > Let `M^•` be a cochain complex of abelian groups and let
 > `0 → M^• → A_0^• → A_1^• → …` be an exact complex of complexes of abelian
@@ -36,7 +36,7 @@ theorem quasiIso_of_isRightResolution
 
 [Tag 09IZ](https://stacks.math.columbia.edu/tag/09IZ) in the Stacks Project.
 
-**`quasiIso_of_goodResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 940](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L940).
+**`quasiIso_of_goodResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 940](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L940).
 
 > A good resolution `A → M` yields a chain map `A.total shZ ⟶ M` whose
 > per-degree components agree with `canonicalMapF`, and this chain map is a
@@ -57,7 +57,7 @@ theorem quasiIso_of_goodResolution
 
 [Tag 09J0](https://stacks.math.columbia.edu/tag/09J0) in the Stacks Project.
 
-**`HomologicalComplex₂.quasiIso_toProductTotal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/AbelianGroupComplexResolutions.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/AbelianGroupComplexResolutions.lean#L631).
+**`HomologicalComplex₂.quasiIso_toProductTotal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/AbelianGroupComplexResolutions.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/AbelianGroupComplexResolutions.lean#L631).
 
 > Let `0 → M^• → A_0^• → A_1^• → ⋯` be an exact complex of complexes of abelian groups such
 > that for every `p` the induced complex `0 → Coker(d_M^p) → Coker(d_{A_0}^p) → ⋯` is exact. Then
@@ -77,7 +77,7 @@ theorem quasiIso_toProductTotal (ε : M ⟶ K.X 0) (w : ε ≫ K.d 0 1 = 0)
 
 [Tag 0E1R](https://stacks.math.columbia.edu/tag/0E1R) in the Stacks Project.
 
-**`quasiIso_productTotalAug`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 1289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L1289).
+**`quasiIso_productTotalAug`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Grp/TotalComplex.lean, line 1289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Grp/TotalComplex.lean#L1289).
 
 > The natural map from the product total complex of an exact left resolution
 > by complexes to `M` is a quasi-isomorphism.
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.26, Tag 0E1P](https://stacks.math.columbia.edu/tag/0E1P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

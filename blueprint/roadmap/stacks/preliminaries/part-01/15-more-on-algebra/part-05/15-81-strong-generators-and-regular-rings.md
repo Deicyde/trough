@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.81 Strong generators and regular rings
 
-Section 15.81 of the Stacks Project, [Tag 0FXG](https://stacks.math.columbia.edu/tag/0FXG). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.81 of the Stacks Project, [Tag 0FXG](https://stacks.math.columbia.edu/tag/0FXG). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FXH, a lemma
 
 [Tag 0FXH](https://stacks.math.columbia.edu/tag/0FXH) in the Stacks Project.
 
-**`StrongGeneration.comp_eq_zero_of_mem_triangEnvelopeIter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L406).
+**`StrongGeneration.comp_eq_zero_of_mem_triangEnvelopeIter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L406).
 
 > **Stacks 0FXH**.
 > If `K` belongs to `⟨R⟩ₙ` in the derived category of a ring and a chain of `n` morphisms beginning
@@ -39,7 +39,7 @@ theorem comp_eq_zero_of_mem_triangEnvelopeIter
 
 [Tag 0FXI](https://stacks.math.columbia.edu/tag/0FXI) in the Stacks Project.
 
-**`StrongGeneration.isRegularRing_and_ringKrullDim_ne_top_of_isStrongGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L629).
+**`StrongGeneration.isRegularRing_and_ringKrullDim_ne_top_of_isStrongGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L629).
 
 > **Stacks 0FXI**.
 > A Noetherian ring for which `R` strongly generates its perfect derived category — that is, for
@@ -62,7 +62,7 @@ theorem isRegularRing_and_ringKrullDim_ne_top_of_isStrongGenerator
 
 [Tag 0FXJ](https://stacks.math.columbia.edu/tag/0FXJ) in the Stacks Project.
 
-**`StrongGeneration.subsingleton_hom_of_isGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 861](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L861).
+**`StrongGeneration.subsingleton_hom_of_isGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 861](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L861).
 
 > **Stacks 0FXJ**.
 > Let `R` be a regular Noetherian ring of finite dimension `d`. If `K` and `L` are bounded-above
@@ -81,7 +81,7 @@ theorem subsingleton_hom_of_isGE_of_isLE [IsRegularRing R]
 
 [Tag 0FXK](https://stacks.math.columbia.edu/tag/0FXK) in the Stacks Project.
 
-**`StrongGeneration.iso_biproduct_truncations_of_cohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 879](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L879).
+**`StrongGeneration.iso_biproduct_truncations_of_cohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 879](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L879).
 
 > **Stacks 0FXK**.
 > Let `R` be a regular Noetherian ring of finite positive dimension `d`. If a perfect derived
@@ -105,7 +105,7 @@ theorem iso_biproduct_truncations_of_cohomology_isZero [IsRegularRing R]
 
 [Tag 0FXL](https://stacks.math.columbia.edu/tag/0FXL) in the Stacks Project.
 
-**`StrongGeneration.exists_triangEnvelopeIter_eq_isPerfect_of_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 1268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L1268).
+**`StrongGeneration.exists_triangEnvelopeIter_eq_isPerfect_of_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 1268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L1268).
 
 > **Stacks 0FXL**.
 > Over a regular ring of finite Krull dimension, the regular module placed in degree zero is a strong
@@ -127,7 +127,7 @@ theorem exists_triangEnvelopeIter_eq_isPerfect_of_isRegularRing
 
 [Tag 0FXM](https://stacks.math.columbia.edu/tag/0FXM) in the Stacks Project.
 
-**`StrongGeneration.isRegularRing_and_ringKrullDim_ne_top_iff_hasStrongGenerator_iff_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 1298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L1298).
+**`StrongGeneration.isRegularRing_and_ringKrullDim_ne_top_iff_hasStrongGenerator_iff_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean, line 1298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/StrongGenerator.lean#L1298).
 
 > **Stacks 0FXM**.
 > For a Noetherian ring `R` the following are equivalent: `R` is regular of finite Krull dimension;
@@ -160,4 +160,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.81, Tag 0FXG](https://stacks.math.columbia.edu/tag/0FXG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

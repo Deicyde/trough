@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.72 Depth
 
-Section 10.72 of the Stacks Project, [Tag 00LE](https://stacks.math.columbia.edu/tag/00LE). 11 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.72 of the Stacks Project, [Tag 00LE](https://stacks.math.columbia.edu/tag/00LE). 11 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00LI, a definition
 
 [Tag 00LI](https://stacks.math.columbia.edu/tag/00LI) in the Stacks Project.
 
-**`Module.depth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Defs/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Defs/Defs.lean#L53). References: EGA 0 (16.4.5), “more general”; EGA IV (5.7.1), “more general”; EGA IV (6.10.3); SGA 2 III (2.8), “special case”; SGA 2 IV (5.3); SGA 2 XI (3.10).
+**`Module.depth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Defs/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Defs/Defs.lean#L53). References: EGA 0 (16.4.5), “more general”; EGA IV (5.7.1), “more general”; EGA IV (6.10.3); SGA 2 III (2.8), “special case”; SGA 2 IV (5.3); SGA 2 XI (3.10).
 
 > The `I`-depth of an `R`-module `M`, for `I` an ideal of `R`: the supremum in
 > `ℕ∞ = {0, 1, 2, …, ∞}` of the lengths of the `M`-regular sequences with all terms in `I`,
@@ -29,7 +29,7 @@ public noncomputable def Module.depth (R : Type*) [CommRing R] (I : Ideal R) (M 
 
 [Tag 0AUI](https://stacks.math.columbia.edu/tag/0AUI) in the Stacks Project.
 
-**`Module.depth_eq_iSup_isWeaklyRegular_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Criteria.lean#L202). References: EGA 0 (16.4.5), “more general”.
+**`Module.depth_eq_iSup_isWeaklyRegular_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Criteria.lean#L202). References: EGA 0 (16.4.5), “more general”.
 
 > The `I`-depth of a finite `R`-module `M` is the supremum of the lengths of the sequences
 > `f₁, …, f_r ∈ I` such that `fᵢ` is a nonzerodivisor on `M/(f₁, …, f_{i-1})M`; that is, the
@@ -48,7 +48,7 @@ public theorem depth_eq_iSup_isWeaklyRegular_length (R : Type*) [CommRing R] (I 
 
 [Tag 00LK](https://stacks.math.columbia.edu/tag/00LK) in the Stacks Project.
 
-**`Module.depth_le_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Dimension.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Dimension.lean#L264). References: EGA 0 (16.4.5), “(16.4.5.1)”.
+**`Module.depth_le_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Dimension.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Dimension.lean#L264). References: EGA 0 (16.4.5), “(16.4.5.1)”.
 
 > **Depth is at most the dimension of the support.** If `M` is a finite `R`-module and `I` is
 > an ideal of `R` with `I • M ≠ M`, then `depth_I(M) ≤ dim(Supp(M))`. For `R` Noetherian local,
@@ -64,7 +64,7 @@ public theorem depth_le_supportDim (R : Type*) [CommRing R] (I : Ideal R) (M : T
 
 [Tag 0AUJ](https://stacks.math.columbia.edu/tag/0AUJ) in the Stacks Project.
 
-**`Module.depth_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Dimension.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Dimension.lean#L470).
+**`Module.depth_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Dimension.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Dimension.lean#L470).
 
 > **Depth along an ideal is finite over a Noetherian ring.** If `R` is Noetherian, `M` is a
 > finite `R`-module and `I` is an ideal of `R` with `I • M ≠ M`, then `depth_I(M) < ∞`; that is,
@@ -82,7 +82,7 @@ public theorem depth_lt_top (R : Type*) [CommRing R] [IsNoetherianRing R] (I : I
 
 [Tag 00LW](https://stacks.math.columbia.edu/tag/00LW) in the Stacks Project.
 
-**`depth_eq_least_nonzero_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Ext.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Ext.lean#L1002). References: EGA 0 (16.4.4), “depth = least n Ext≠0”; EGA 0 (16.4.5), “partial”; SGA 2 III (2.8), “local case”; SGA 2 III (3.4), “(1) <=> (3)”; SGA 2 III (2.4), “(3)⇔(4)”; SGA 2 III (2.7), “special case”; SGA 2 III (3.3), “special case”.
+**`depth_eq_least_nonzero_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Ext.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Ext.lean#L1002). References: EGA 0 (16.4.4), “depth = least n Ext≠0”; EGA 0 (16.4.5), “partial”; SGA 2 III (2.8), “local case”; SGA 2 III (3.4), “(1) <=> (3)”; SGA 2 III (2.4), “(3)⇔(4)”; SGA 2 III (2.7), “special case”; SGA 2 III (3.3), “special case”.
 
 > **Stacks Tag 00LW (Lemma 10.72.5).** Let `R` be a Noetherian local ring with
 > maximal ideal `𝔪`, residue field `κ = R/𝔪`, and let `M` be a nonzero finite
@@ -106,7 +106,7 @@ theorem depth_eq_least_nonzero_ext {R : Type u} [CommRing R] [IsNoetherianRing R
 
 [Tag 00LX](https://stacks.math.columbia.edu/tag/00LX) in the Stacks Project.
 
-**`Module.min_depth_le_depth_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/ShortExact.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279).
+**`Module.min_depth_le_depth_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/ShortExact.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279).
 
 > **Depth in a short exact sequence.** Let `R` be a Noetherian ring, `I ⊆ R` an ideal, and let
 > `0 → N' → N → N'' → 0` be a short exact sequence of finite `R`-modules, given by `f : N' →ₗ[R] N`
@@ -133,7 +133,7 @@ public theorem min_depth_le_depth_of_exact {R : Type*} [CommRing R] [IsNoetheria
 
 [Tag 090R](https://stacks.math.columbia.edu/tag/090R) in the Stacks Project.
 
-**`Module.depth_quotSMulTop_succ_eq_depth_and_exists_isRegular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Criteria.lean#L612). The attribute's comment: “Stated for an arbitrary ideal of a Noetherian ring; `M` nonzero is used only as `I • M ≠ M`, and only by part (2), so both parameters are bound inside the conclusion.”. References: SGA 2 III (2.6).
+**`Module.depth_quotSMulTop_succ_eq_depth_and_exists_isRegular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Criteria.lean#L612). The attribute's comment: “Stated for an arbitrary ideal of a Noetherian ring; `M` nonzero is used only as `I • M ≠ M`, and only by part (2), so both parameters are bound inside the conclusion.”. References: SGA 2 III (2.6).
 
 > **Depth drops by one modulo a nonzerodivisor, and regular sequences extend to length equal
 > to the depth.** Let `R` be a Noetherian ring, `I ⊆ R` an ideal and `M` a finite `R`-module.
@@ -161,7 +161,7 @@ public theorem depth_quotSMulTop_succ_eq_depth_and_exists_isRegular_append {R : 
 
 [Tag 0CN5](https://stacks.math.columbia.edu/tag/0CN5) in the Stacks Project.
 
-**`exists_mem_associatedPrimes_quotSMulTop_pow_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/MinimalPrimes.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/MinimalPrimes.lean#L221). The attribute's comment: “Stated over an arbitrary Noetherian ring for an arbitrary `x`: the source's locality is unused, and `x ∈ 𝔪` is implied to the extent it matters by `𝔮` being a minimal prime over `𝔭 + (x)`.”.
+**`exists_mem_associatedPrimes_quotSMulTop_pow_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/MinimalPrimes.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/MinimalPrimes.lean#L221). The attribute's comment: “Stated over an arbitrary Noetherian ring for an arbitrary `x`: the source's locality is unused, and `x ∈ 𝔪` is implied to the extent it matters by `𝔮` being a minimal prime over `𝔭 + (x)`.”.
 
 > **A minimal prime over `𝔭 + (x)` is an associated prime of `M/xⁿM`.** Let `R` be a
 > Noetherian ring, `M` a finite `R`-module and `x ∈ R`. If `𝔭` is an associated prime of `M` and
@@ -183,7 +183,7 @@ public theorem exists_mem_associatedPrimes_quotSMulTop_pow_of_mem_minimalPrimes 
 
 [Tag 0BK4](https://stacks.math.columbia.edu/tag/0BK4) in the Stacks Project.
 
-**`Module.depth_le_ringKrullDim_quotient_of_mem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Criteria.lean#L865). References: EGA 0 (16.4.6), “(iii), first inequality”.
+**`Module.depth_le_ringKrullDim_quotient_of_mem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Criteria.lean, line 865](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Criteria.lean#L865). References: EGA 0 (16.4.6), “(iii), first inequality”.
 
 > **Stacks 0BK4**. Let `(R, 𝔪)` be a Noetherian local ring and `M` a finite `R`-module. If `𝔭`
 > is an associated prime of `M`, then `depth(M) ≤ dim(R/𝔭)`, the depth being taken along `𝔪`.
@@ -201,7 +201,7 @@ public theorem depth_le_ringKrullDim_quotient_of_mem_associatedPrimes {R : Type*
 
 [Tag 0FCC](https://stacks.math.columbia.edu/tag/0FCC) in the Stacks Project.
 
-**`Module.depth_le_depth_localized_add_ringKrullDim_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Localization.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Localization.lean#L702). The attribute's comment: “Stated in `WithBot ℕ∞` with the smaller side on the left, for `Module.depth` (Tag 00LI) along the maximal ideals of `R` and of `Rₚ`, and with the localizations presented by `IsLocalization.AtPrime` and `IsLocalizedModule`. See the module docstring.”.
+**`Module.depth_le_depth_localized_add_ringKrullDim_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Localization.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Localization.lean#L702). The attribute's comment: “Stated in `WithBot ℕ∞` with the smaller side on the left, for `Module.depth` (Tag 00LI) along the maximal ideals of `R` and of `Rₚ`, and with the localizations presented by `IsLocalization.AtPrime` and `IsLocalizedModule`. See the module docstring.”.
 
 > **Depth drops by at most `dim(R/𝔭)` under localization.** Let `(R, 𝔪)` be a Noetherian
 > local ring, `M` a finite `R`-module and `𝔭 ⊆ R` a prime ideal. Then
@@ -224,7 +224,7 @@ public theorem depth_le_depth_localized_add_ringKrullDim_quotient {R : Type*} [C
 
 [Tag 0AUK](https://stacks.math.columbia.edu/tag/0AUK) in the Stacks Project.
 
-**`Module.depth_eq_iInf_depth_isLocalized_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Localization.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Localization.lean#L438). References: EGA 0 (16.4.8), “B finite over A”; SGA 2 III (2.10), “S finite over local R”.
+**`Module.depth_eq_iInf_depth_isLocalized_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/Localization.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Localization.lean#L438). References: EGA 0 (16.4.8), “B finite over A”; SGA 2 III (2.10), “S finite over local R”.
 
 > **Depth is the minimum of the depths of the localizations at the maximal ideals.** Let
 > `(R, 𝔪)` be a Noetherian local ring, let `R → S` be a finite ring map and let `N` be a finite
@@ -256,4 +256,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.72, Tag 00LE](https://stacks.math.columbia.edu/tag/00LE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

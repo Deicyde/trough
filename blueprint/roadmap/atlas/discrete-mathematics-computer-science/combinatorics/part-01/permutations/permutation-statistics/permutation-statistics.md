@@ -7,7 +7,7 @@ statement: formalized
 
 # Permutation statistics and cycle structure: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html).
 
 Descents, peaks, major index, left-to-right maxima, fixed points and derangements, cycle counts and the smallest cycle of a random permutation, products of cyclic permutations, Stirling and flattened Stirling permutations, Josephus permutations and permutation-guessing puzzles.
 
@@ -21,7 +21,7 @@ derangements of $n$ objects.
 
 - Jean-Christophe Pain, *A Sum Rule for Derangements*, INTEGERS 25 (2025), Article A84, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.sum_mul_numDerangements_eq_floor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DerangementSumRuleWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DerangementSumRuleWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html#sum-mul-num-derangements-eq-floor).
+Stated but not proved: `MetaMathlibExt.sum_mul_numDerangements_eq_floor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DerangementSumRuleWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DerangementSumRuleWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html#sum-mul-num-derangements-eq-floor).
 
 ## Zagier's formula for products of two cyclic permutations
 
@@ -44,7 +44,7 @@ matching Stirling recurrence; descending induction on the cycle count finishes.
 
 - R. Cori and G. Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem [Zagier], lines 351-359, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Hetyei/hetyei2.tex>, quoting D. Zagier.
 
-Formalized by `MetaMathlibExt.zagier_probability_product_two_cyclic_permutations`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ZagierCyclicPermutationProduct.lean, line 6184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ZagierCyclicPermutationProduct.lean#L6184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html#zagier-probability-product-two-cyclic-pe).
+Formalized by `MetaMathlibExt.zagier_probability_product_two_cyclic_permutations`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ZagierCyclicPermutationProduct.lean, line 6184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ZagierCyclicPermutationProduct.lean#L6184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html#zagier-probability-product-two-cyclic-pe).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutation statistics and cycle structure](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-statistics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-statistics)

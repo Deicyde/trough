@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.25 Purity in local case, II
 
-Section 58.25 of the Stacks Project, [Tag 0BPB](https://stacks.math.columbia.edu/tag/0BPB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.25 of the Stacks Project, [Tag 0BPB](https://stacks.math.columbia.edu/tag/0BPB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DXZ, a lemma
 
 [Tag 0DXZ](https://stacks.math.columbia.edu/tag/0DXZ) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.hasPurity_quotientRing_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean#L175). The attribute's comment: “purity for A/fA under the tag's four hypotheses; nothing beyond them is assumed”.
+**`AlgebraicGeometry.LocalLefschetzSituation.hasPurity_quotientRing_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean#L175). The attribute's comment: “purity for A/fA under the tag's four hypotheses; nothing beyond them is assumed”.
 
 > **Stacks Project, Tag 0DXZ.**  Let `(A, 𝔪)` be a Noetherian local ring and let `f ∈ 𝔪`.
 > Write `X = Spec A`.  Assume
@@ -62,7 +62,7 @@ theorem hasPurity_quotientRing_of_dualizing [HasDerivedCategory.{w} (ModuleCat.{
 
 [Tag 0BPC](https://stacks.math.columbia.edu/tag/0BPC) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.hasPurity_quotientRing_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean#L275). The attribute's comment: “purity for A/fA under the tag's five hypotheses; nothing beyond them is assumed”.
+**`AlgebraicGeometry.LocalLefschetzSituation.hasPurity_quotientRing_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean#L275). The attribute's comment: “purity for A/fA under the tag's five hypotheses; nothing beyond them is assumed”.
 
 > **Stacks Project, Tag 0BPC.**  Let `(A, 𝔪)` be a Noetherian local ring and let `f ∈ 𝔪`.
 > Assume
@@ -97,7 +97,7 @@ theorem hasPurity_quotientRing_of_isAdicComplete
 
 [Tag 0BPD](https://stacks.math.columbia.edu/tag/0BPD) in the Stacks Project.
 
-**`AlgebraicGeometry.hasPurity_of_isCompleteIntersectionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompleteIntersectionPurity.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompleteIntersectionPurity.lean#L512). The attribute's comment: “purity for a complete intersection local ring of dimension at least three; the complete intersection hypothesis is `LocalCompleteIntersection.IsCompleteIntersectionRing` (Tag 09Q3 (1)) and purity is `AlgebraicGeometry.HasPurity`”. References: SGA 2 X (3.4), “3.4(ii)”; SGA 2 XII (3.5), “partial”; SGA 2 XII (4.9), “Clause a)”.
+**`AlgebraicGeometry.hasPurity_of_isCompleteIntersectionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompleteIntersectionPurity.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/CompleteIntersectionPurity.lean#L512). The attribute's comment: “purity for a complete intersection local ring of dimension at least three; the complete intersection hypothesis is `LocalCompleteIntersection.IsCompleteIntersectionRing` (Tag 09Q3 (1)) and purity is `AlgebraicGeometry.HasPurity`”. References: SGA 2 X (3.4), “3.4(ii)”; SGA 2 XII (3.5), “partial”; SGA 2 XII (4.9), “Clause a)”.
 
 > **Purity for a complete intersection of dimension at least three, [Stacks, Tag 0BPD].** Let
 > `(A, 𝔪)` be a Noetherian local ring which is a complete intersection of dimension at least
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.25, Tag 0BPB](https://stacks.math.columbia.edu/tag/0BPB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

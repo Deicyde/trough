@@ -1,82 +1,71 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.DifferentialGradedModule.DeltaFunctor.exists_deltaFunctorStructure_δ_eq, DifferentialGradedModule.canonicalDeltaFunctorStructure, DifferentialGradedModule.canonicalDeltaFunctorStructure_δ_eq, DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit
+lean: DifferentialGradedModule.exists_deltaFunctorStructure_δ_eq_neg, DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit
 statement: formalized
 proof: formalized
 ---
 
 # 22.23 The canonical delta-functor
 
-Section 22.23 of the Stacks Project, [Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.23 of the Stacks Project, [Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09L0, a lemma
 
 [Tag 09L0](https://stacks.math.columbia.edu/tag/09L0) in the Stacks Project.
 
-**`Stacks.DifferentialGradedModule.DeltaFunctor.exists_deltaFunctorStructure_δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DeltaFunctor.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DeltaFunctor.lean#L506).
+**`DifferentialGradedModule.exists_deltaFunctorStructure_δ_eq_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean#L156). The attribute's comment: “delta-functor structure with δ = -p ∘ q⁻¹, Stacks sign convention”.
 
-> **Stacks Project, Tag 09L0.** The canonical functor from differential graded modules to
-> their derived category is a `δ`-functor, with connecting arrow the third arrow of the cone
-> triangle read after inverting the cone-to-quotient quasi-isomorphism.
-
-```lean
-theorem exists_deltaFunctorStructure_δ_eq :
-    ∃ h : (canonicalFunctor.{u, v, w} A).DeltaFunctorStructure
-        (DifferentialGradedModule.{u, v, w} A) (derivedCategory.{u, v, w} A),
-      ∀ (S : ShortComplex (DifferentialGradedModule.{u, v, w} A)) (hS : S.ShortExact),
-        ∃ q : coneModule S.f ⟶ S.X₃,
-          (∀ x : (coneModule S.f).M,
-            q.toFun x = S.g.toFun ((cone S.f).coordinates x).1) ∧
-          (coneInclusion S.f ≫ q = S.g) ∧
-          quasiIsomorphisms A ((toHomotopyCategory A).map q) ∧
-          ∃ _ : IsIso ((canonicalFunctor A).map q),
-            h.δ hS =
-              inv ((canonicalFunctor A).map q) ≫
-                (quasiIsomorphisms A).Q.map (coneTriangle S.f).mor₃ ≫
-                  ((quasiIsomorphisms A).Q.commShiftIso (1 : ℤ)).hom.app
-                    ((toHomotopyCategory A).obj S.X₁)
-```
-
-**`DifferentialGradedModule.canonicalDeltaFunctorStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctor.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctor.lean#L304). The attribute's comment: “the delta-functor structure”.
-
-> *"Let `(A, d)` be a differential graded algebra. The functor `Mod_{(A, d)} → D(A, d)` has the
-> natural structure of a `δ`-functor."* The connecting morphism is
-> `DifferentialGradedModule.shortExactδ`, identified with `- p ∘ q⁻¹` in
-> `DifferentialGradedModule.canonicalDeltaFunctorStructure_δ_eq`.
-
-```lean
-def canonicalDeltaFunctorStructure (A : DifferentialGradedAlgebra R) :
-    (toDerivedCategory A).DeltaFunctorStructure (DifferentialGradedModule A)
-      (derivedCategory A)
-```
-
-**`DifferentialGradedModule.canonicalDeltaFunctorStructure_δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctor.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctor.lean#L372). The attribute's comment: “the connecting morphism”.
-
-> The formula for the connecting morphism of the canonical `δ`-functor structure:
-> *"`δ_{K → L → M} = - p ∘ q⁻¹` with `p` and `q` as explained above"*. Here `q` is the comparison
-> `C(f) ⟶ M`, which on the underlying module `L × K` is `(l, k) ↦ g l` and restricts along the
-> inclusion of `L` to `g`, and which is invertible in `D(A, d)`; and `- p` is the third morphism of
-> the cone triangle, the *signed* cone projection `C(f) ⟶ K[1]`.
+> **Stacks Project, Tag 09L0**, in the sign convention of the Stacks project. *"Let `(A, d)` be
+> a differential graded algebra. The functor `Mod_{(A, d)} → D(A, d)` defined has the natural
+> structure of a `δ`-functor, with `δ_{K → L → M} = - p ∘ q⁻¹` with `p` and `q` as explained
+> above."*
+>
+> Here `D(A, d)` is `DifferentialGradedModule.derivedCategory' A`, the localization at the
+> quasi-isomorphisms of the homotopy category with the triangulation of Tag 09KH, whose
+> distinguished triangles are those isomorphic to the triangle of an admissible short exact
+> sequence, so that `(K, L, C(f), f, i, -p)` is distinguished (Tag 09KF,
+> `DifferentialGradedModule.mappingConeTriangle_mem_distTriang`). The statement gives a
+> `δ`-functor structure on the canonical functor together with, for every short exact sequence
+> `0 → K → L → M → 0`, the comparison `q : C(f) ⟶ M`, `(l, k) ↦ g l`, which restricts to `g`
+> along the cone inclusion `i` and is a quasi-isomorphism, hence invertible in `D(A, d)`, and the
+> identification of the connecting morphism with `- p ∘ q⁻¹`: the inverse of `q` followed by the
+> class of the negated cone projection `-p : C(f) ⟶ K[1]` (composed with the commutation of the
+> localization with the shift), which is the third arrow of
+> `DifferentialGradedModule.mappingConeTriangle` by
+> `DifferentialGradedModule.mappingConeTriangle_mor₃_eq_neg`. Since the remaining fields of a
+> `δ`-functor structure are `Prop`-valued, this formula determines the structure.
+>
+> Sign dictionary: the library's default triangulation of the homotopy category,
+> `DifferentialGradedModule.instPretriangulatedHomotopyCategory`, declares the unsigned cone
+> triangle `(K, L, C(f), f, i, p)` distinguished instead; against it and its localization
+> `DifferentialGradedModule.derivedCategory` the same statement holds with `δ = p ∘ q⁻¹`, which is
+> `DifferentialGradedModule.canonicalDeltaFunctorStructure_δ_eq`. A triangle is distinguished for
+> one structure exactly when negating its third arrow makes it distinguished for the other
+> (`DifferentialGradedModule.mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_negMor₃`).
 
 ```lean
-theorem canonicalDeltaFunctorStructure_δ_eq
-    {S : ShortComplex (DifferentialGradedModule A)} (hS : S.ShortExact) :
-    (∀ x : (coneObject S.f).M, (coneDescShortComplex S).toFun x = S.g.toFun x.1) ∧
-      coneIncl S.f ≫ coneDescShortComplex S = S.g ∧
-      ∃ _ : IsIso ((toDerivedCategory A).map (coneDescShortComplex S)),
-        (canonicalDeltaFunctorStructure A).δ hS =
-          inv ((toDerivedCategory A).map (coneDescShortComplex S)) ≫
-            (quasiIsomorphisms A).Q.map (coneTriangle S.f).mor₃ ≫
-              ((quasiIsomorphisms A).Q.commShiftIso (1 : ℤ)).hom.app
-                ((toHomotopyCategory A).obj S.X₁)
+theorem exists_deltaFunctorStructure_δ_eq_neg :
+    ∃ d : (toDerivedCategory' A).DeltaFunctorStructure (DifferentialGradedModule A)
+        (derivedCategory' A),
+      ∀ {S : ShortComplex (DifferentialGradedModule A)} (hS : S.ShortExact),
+        (∀ x : (coneObject S.f).M, (coneDescShortComplex S).toFun x = S.g.toFun x.1) ∧
+        coneIncl S.f ≫ coneDescShortComplex S = S.g ∧
+        quasiIsomorphisms' A ((toHomotopyCategory A).map (coneDescShortComplex S)) ∧
+        ∃ _ : IsIso ((toDerivedCategory' A).map (coneDescShortComplex S)),
+          d.δ hS =
+            inv ((toDerivedCategory' A).map (coneDescShortComplex S)) ≫
+              (quasiIsomorphisms' A).Q.map
+                (-((toHomotopyCategory A).map (coneProj S.f) ≫ (quotientShiftIso S.X₁ 1).hom)) ≫
+                ((quasiIsomorphisms' A).Q.commShiftIso (1 : ℤ)).hom.app
+                  ((toHomotopyCategory A).obj S.X₁)
 ```
 
 ## Tag 0CRL, a lemma
 
 [Tag 0CRL](https://stacks.math.columbia.edu/tag/0CRL) in the Stacks Project.
 
-**`DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L298).
+**`DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L298).
 
 > Let `(A, d)` be a differential graded algebra and `Mₙ` a system of differential graded
 > modules. Then the derived colimit `hocolim Mₙ` in `D(A, d)` is represented by the differential
@@ -95,4 +84,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.23, Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

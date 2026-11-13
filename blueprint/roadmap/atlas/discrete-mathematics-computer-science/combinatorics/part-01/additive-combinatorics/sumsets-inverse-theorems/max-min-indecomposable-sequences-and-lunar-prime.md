@@ -7,7 +7,7 @@ statement: formalized
 
 # Max-min indecomposable sequences and lunar primes
 
-34 results, 22 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html).
+34 results, 22 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html).
 
 ## Max-min product
 
@@ -20,7 +20,7 @@ of the max-min semiring $(\mathbb{N}, \max, \min)$ on coefficient sequences.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (the max-min semiring and its polynomials).
 
-Formalized by `MetaMathlibExt.maxMinMul`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul).
+Formalized by `MetaMathlibExt.maxMinMul`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul).
 
 ## Constant coefficient of a max-min product
 
@@ -32,7 +32,7 @@ $(g \otimes h)_0 = \min(g_0, h_0)$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (the max-min semiring and its polynomials).
 
-Formalized by `MetaMathlibExt.maxMinMul_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul-zero).
+Formalized by `MetaMathlibExt.maxMinMul_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul-zero).
 
 ## Linear coefficient of a max-min product
 
@@ -44,7 +44,7 @@ $(g \otimes h)_1 = \max(\min(g_0, h_1), \min(g_1, h_0))$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (the max-min semiring and its polynomials).
 
-Formalized by `MetaMathlibExt.maxMinMul_one`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul-one).
+Formalized by `MetaMathlibExt.maxMinMul_one`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-mul-one).
 
 ## Monomials over the max-min semiring
 
@@ -56,7 +56,7 @@ entries is nonzero, that is, when it is $c x^i$ for some index $i$ and some coef
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (definition of indecomposable).
 
-Formalized by `MetaMathlibExt.IsMaxMinMonomial`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-monomial).
+Formalized by `MetaMathlibExt.IsMaxMinMonomial`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-monomial).
 
 ## The zero sequence is not a monomial
 
@@ -68,7 +68,7 @@ entry, and the zero sequence has none.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (definition of indecomposable).
 
-Formalized by `MetaMathlibExt.not_isMaxMinMonomial_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-max-min-monomial-zero).
+Formalized by `MetaMathlibExt.not_isMaxMinMonomial_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-max-min-monomial-zero).
 
 ## Max-min indecomposable sequences
 
@@ -85,7 +85,7 @@ applying the digit map $x \mapsto \min(x, b - 1)$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (definition of indecomposable).
 
-Formalized by `MetaMathlibExt.IsMaxMinIndecomposable`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-indecomposable).
+Formalized by `MetaMathlibExt.IsMaxMinIndecomposable`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-indecomposable).
 
 ## The zero sequence is decomposable
 
@@ -98,7 +98,7 @@ monomial.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 1 (definition of indecomposable).
 
-Formalized by `MetaMathlibExt.not_isMaxMinIndecomposable_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-max-min-indecomposable-zero).
+Formalized by `MetaMathlibExt.not_isMaxMinIndecomposable_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-max-min-indecomposable-zero).
 
 ## Coefficient sequence of a digit string
 
@@ -111,7 +111,7 @@ $k < n$ and $0$ for $k \ge n$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (lunar numbers `ℒ_b` as polynomials over `ℬ_b = {0, …, b - 1}`).
 
-Formalized by `MetaMathlibExt.digitSeq`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-seq).
+Formalized by `MetaMathlibExt.digitSeq`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-seq).
 
 ## A digit string has no coefficients beyond its length
 
@@ -123,7 +123,7 @@ for every $k \ge n$, the $k$-th term of the coefficient sequence of $a$ is $0$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (lunar numbers `ℒ_b` as polynomials over `ℬ_b = {0, …, b - 1}`).
 
-Formalized by `MetaMathlibExt.digitSeq_of_le`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-seq-of-le).
+Formalized by `MetaMathlibExt.digitSeq_of_le`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-seq-of-le).
 
 ## Lunar unit
 
@@ -138,7 +138,7 @@ For sequences with all terms less than $b$, the lunar unit is the identity of th
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime lunar numbers).
 
-Formalized by `MetaMathlibExt.lunarUnit`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-unit).
+Formalized by `MetaMathlibExt.lunarUnit`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-unit).
 
 ## The lunar unit is a monomial
 
@@ -150,7 +150,7 @@ has exactly one nonzero term.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime lunar numbers).
 
-Formalized by `MetaMathlibExt.isMaxMinMonomial_lunarUnit`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-monomial-lunar-unit).
+Formalized by `MetaMathlibExt.isMaxMinMonomial_lunarUnit`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-max-min-monomial-lunar-unit).
 
 ## Lunar primes
 
@@ -164,7 +164,7 @@ $g \otimes h = f$, where $\otimes$ is the max-min product, $g$ or $h$ is the lun
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime lunar numbers).
 
-Formalized by `MetaMathlibExt.IsLunarPrime`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime).
+Formalized by `MetaMathlibExt.IsLunarPrime`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime).
 
 ## Zero is not a lunar prime
 
@@ -176,7 +176,7 @@ lunar unit, the constant polynomial $b - 1$ with coefficient sequence $(b - 1, 0
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime lunar numbers).
 
-Formalized by `MetaMathlibExt.not_isLunarPrime_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-lunar-prime-zero).
+Formalized by `MetaMathlibExt.not_isLunarPrime_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#not-is-lunar-prime-zero).
 
 ## Lunar prime candidates
 
@@ -190,7 +190,7 @@ the largest coefficient of $f$ is $b - 1$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime candidate).
 
-Formalized by `MetaMathlibExt.IsLunarPrimeCandidate`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-candidate).
+Formalized by `MetaMathlibExt.IsLunarPrimeCandidate`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-candidate).
 
 ## The lunar unit is a prime candidate
 
@@ -202,7 +202,7 @@ in base $b$: its constant term is nonzero and one of its terms equals $b - 1$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2 (definition of prime candidate).
 
-Formalized by `MetaMathlibExt.isLunarPrimeCandidate_lunarUnit`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-candidate-lunar-unit).
+Formalized by `MetaMathlibExt.isLunarPrimeCandidate_lunarUnit`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-candidate-lunar-unit).
 
 ## Shitov's theorem: almost all Boolean polynomials with nonzero constant term are prime
 
@@ -215,7 +215,7 @@ these which are lunar primes in base $2$ tends to $1$ as $n \to \infty$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Theorem 10 (`jis-2025-25.2.7-thm-10`), quoting Shitov (2014), Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.shitov_boolean_prime_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#shitov-boolean-prime-density).
+Stated but not proved: `MetaMathlibExt.shitov_boolean_prime_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#shitov-boolean-prime-density).
 
 ## Almost all max-min polynomials are indecomposable
 
@@ -228,7 +228,7 @@ are indecomposable over the max-min semiring tends to $1$ as $n \to \infty$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Theorem 11 (`jis-2025-25.2.7-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.maxMin_indecomposable_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-indecomposable-density).
+Stated but not proved: `MetaMathlibExt.maxMin_indecomposable_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#max-min-indecomposable-density).
 
 ## Asymptotic count of lunar primes
 
@@ -243,7 +243,7 @@ Sloane.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Corollary 12 (`jis-2025-25.2.7-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.lunar_prime_count_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-prime-count-is-equivalent).
+Stated but not proved: `MetaMathlibExt.lunar_prime_count_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-prime-count-is-equivalent).
 
 ## Monotone digit maps are lunar homomorphisms
 
@@ -260,7 +260,7 @@ map on $\mathbb{N}$; a base-$b$ digit map, a nondecreasing map on the digits, ex
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Theorem 15 (`jis-2025-25.2.7-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.digitMap_lunar_hom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-map-lunar-hom).
+Stated but not proved: `MetaMathlibExt.digitMap_lunar_hom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#digit-map-lunar-hom).
 
 ## Counting Boolean factor pairs with a small sumset
 
@@ -278,7 +278,7 @@ support of their max-min product $f \otimes g$ is $A + B$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 19 (`jis-2025-25.2.7-lem-19`).
 
-Stated but not proved: `MetaMathlibExt.boolean_close_factor_pairs_card_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#boolean-close-factor-pairs-card-le).
+Stated but not proved: `MetaMathlibExt.boolean_close_factor_pairs_card_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#boolean-close-factor-pairs-card-le).
 
 ## Indecomposable prime candidates are lunar primes
 
@@ -293,7 +293,7 @@ This is Lemma 30 (Applegate, LeBrun and Sloane).
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 30 (`jis-2025-25.2.7-lem-30`).
 
-Stated but not proved: `MetaMathlibExt.isLunarPrime_of_indecomposable_candidate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-of-indecomposable-candida).
+Stated but not proved: `MetaMathlibExt.isLunarPrime_of_indecomposable_candidate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#is-lunar-prime-of-indecomposable-candida).
 
 ## Level counts of a lunar number
 
@@ -310,7 +310,7 @@ and $f_i$ is not a monomial if and only if $|f_i| \ge 2$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2, Definitions 13 and 16.
 
-Formalized by `MetaMathlibExt.lunarLevelCount`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count).
+Formalized by `MetaMathlibExt.lunarLevelCount`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count).
 
 ## Level counts of $1 \oplus 2x^2$ in base $3$
 
@@ -322,7 +322,7 @@ $1$ and exactly one digit is at least $2$: $|f_1| = 2$ and $|f_2| = 1$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2, Definitions 13 and 16.
 
-Formalized by `MetaMathlibExt.lunarLevelCount_example`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count-example).
+Formalized by `MetaMathlibExt.lunarLevelCount_example`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count-example).
 
 ## Decomposable lunar numbers
 
@@ -341,7 +341,7 @@ $\mathcal{L}_b^n$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2, before Proposition 21.
 
-Formalized by `MetaMathlibExt.lunarDecomposableSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-decomposable-set).
+Formalized by `MetaMathlibExt.lunarDecomposableSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-decomposable-set).
 
 ## Level-decomposable lunar numbers
 
@@ -361,7 +361,7 @@ of degree at most $n$, and one writes $\mathcal{I}_b^n = \Sigma_b^n \setminus \m
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2, before Remark 22.
 
-Formalized by `MetaMathlibExt.lunarLevelDecomposableSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-decomposable-set).
+Formalized by `MetaMathlibExt.lunarLevelDecomposableSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-decomposable-set).
 
 ## Hoeffding extremal lunar numbers
 
@@ -378,7 +378,7 @@ with $\bigl||f_i| + |g_i| - (b - i)(n + 1)/b\bigr| > d/2$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Definition 23.
 
-Formalized by `MetaMathlibExt.lunarHoeffdingExtremalSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-hoeffding-extremal-set).
+Formalized by `MetaMathlibExt.lunarHoeffdingExtremalSet`, a definition declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-hoeffding-extremal-set).
 
 ## A decomposable lunar number in base 2
 
@@ -394,7 +394,7 @@ where $\otimes$ is the max-min product and $1 \oplus x$ has digit string $(1, 1,
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Section 2, before Proposition 21 and Remark 22.
 
-Formalized by `MetaMathlibExt.mem_lunarDecomposableSet_example`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#mem-lunar-decomposable-set-example).
+Formalized by `MetaMathlibExt.mem_lunarDecomposableSet_example`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#mem-lunar-decomposable-set-example).
 
 ## An example of a Hoeffding extremal lunar number
 
@@ -407,7 +407,7 @@ $1$ is $0$, and $\left|0 - (2 - 1) \cdot 2 / 2\right| = 1 > 1/2$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Definition 23.
 
-Formalized by `MetaMathlibExt.zero_mem_lunarHoeffdingExtremalSet`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#zero-mem-lunar-hoeffding-extremal-set).
+Formalized by `MetaMathlibExt.zero_mem_lunarHoeffdingExtremalSet`, a theorem declared in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#zero-mem-lunar-hoeffding-extremal-set).
 
 ## Upper bound on the number of decomposable lunar numbers
 
@@ -422,7 +422,7 @@ v n^{2d+2} 2^v b^{d/2-n/b} + n^2 2^{-v}\Big).$$
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Proposition 21 (`jis-2025-25.2.7-prop-21`).
 
-Stated but not proved: `MetaMathlibExt.lunarDecomposableSet_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-decomposable-set-ncard-le).
+Stated but not proved: `MetaMathlibExt.lunarDecomposableSet_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-decomposable-set-ncard-le).
 
 ## Bound on the number of Hoeffding extremal lunar numbers
 
@@ -435,7 +435,7 @@ has at most $C n^2 e^{-d^2/(4(n+2))} b^n$ elements.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 24 (`jis-2025-25.2.7-lem-24`).
 
-Stated but not proved: `MetaMathlibExt.lunarHoeffdingExtremalSet_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-hoeffding-extremal-set-ncard-le).
+Stated but not proved: `MetaMathlibExt.lunarHoeffdingExtremalSet_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-hoeffding-extremal-set-ncard-le).
 
 ## Level counts of a product that is not Hoeffding extremal
 
@@ -453,7 +453,7 @@ base $b$ and degree at most $n$, which is not needed, and prints $|b_i|$ for $|g
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 25 (`jis-2025-25.2.7-lem-25`).
 
-Stated but not proved: `MetaMathlibExt.lunarLevelCount_le_of_not_mem_lunarHoeffdingExtremalSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count-le-of-not-mem-lunar-ho).
+Stated but not proved: `MetaMathlibExt.lunarLevelCount_le_of_not_mem_lunarHoeffdingExtremalSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-count-le-of-not-mem-lunar-ho).
 
 ## Bound on level-decomposable lunar numbers that are not Hoeffding extremal
 
@@ -467,7 +467,7 @@ $n$ and $\mathcal{H}_b^n(d)$ is the set of $d$-Hoeffding extremal ones.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 26 (`jis-2025-25.2.7-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.lunarLevelDecomposableSet_diff_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-decomposable-set-diff-ncard).
+Stated but not proved: `MetaMathlibExt.lunarLevelDecomposableSet_diff_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-level-decomposable-set-diff-ncard).
 
 ## Decomposable lunar numbers with a low-degree factor
 
@@ -489,7 +489,7 @@ but the bound is $8192 \cdot 10^{-4} \cdot 2^{10^{-4}} < 1$.
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 27 (`jis-2025-25.2.7-lem-27`).
 
-Stated but not proved: `MetaMathlibExt.lunar_low_degree_factor_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-low-degree-factor-ncard-le).
+Stated but not proved: `MetaMathlibExt.lunar_low_degree_factor_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-low-degree-factor-ncard-le).
 
 ## Bound on decomposable lunar numbers neither level decomposable nor extremal
 
@@ -507,7 +507,7 @@ C \Big(v n^{2d+2} 2^v b^{(b-1)n/b + d/2} + n^2 2^{-v} b^{n+1}\Big).$$
 
 - Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 28 (`jis-2025-25.2.7-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.lunarIndecomposableLevel_diff_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-indecomposable-level-diff-ncard-le).
+Stated but not proved: `MetaMathlibExt.lunarIndecomposableLevel_diff_ncard_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/MaxMinIndecomposabilityWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html#lunar-indecomposable-level-diff-ncard-le).
 
 ## Depends on
 
@@ -516,4 +516,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Max-min indecomposable sequences and lunar primes](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/max-min-indecomposable-sequences-and-lunar-prime)

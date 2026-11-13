@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.45 Applications of Zariski's Main Theorem, II
 
-Section 37.45 of the Stacks Project, [Tag 0F2Q](https://stacks.math.columbia.edu/tag/0F2Q). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.45 of the Stacks Project, [Tag 0F2Q](https://stacks.math.columbia.edu/tag/0F2Q). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07S0, a lemma
 
 [Tag 07S0](https://stacks.math.columbia.edu/tag/07S0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_containing_finite_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiFinite.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiFinite.lean#L168).
+**`AlgebraicGeometry.exists_isAffineOpen_containing_finite_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiFinite.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiFinite.lean#L168).
 
 > **Stacks Project, Tag 07S0.** Let `f : X ⟶ S` be a separated quasi-finite morphism of
 > schemes with affine target. Then every finite set of points of `X` is contained in a single
@@ -35,7 +35,7 @@ theorem exists_isAffineOpen_containing_finite_of_locallyQuasiFinite [IsSeparated
 
 [Tag 03I1](https://stacks.math.columbia.edu/tag/03I1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dense_open_isFinite_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteOverDenseOpen.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteOverDenseOpen.lean#L208).
+**`AlgebraicGeometry.exists_dense_open_isFinite_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteOverDenseOpen.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteOverDenseOpen.lean#L208).
 
 > **Stacks Project, Tag 03I1.** A quasi-finite morphism of schemes is finite over a dense open
 > subscheme of its target. This is also the statement of [Stacks Project, Tag 03HZ], the remark
@@ -51,7 +51,7 @@ theorem exists_dense_open_isFinite_of_quasiFinite {Y X : Scheme.{u}} (f : Y ⟶ 
 
 [Tag 07RY](https://stacks.math.columbia.edu/tag/07RY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_closed_filtration_characterizing_finiteLocallyFree_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean#L760).
+**`AlgebraicGeometry.exists_closed_filtration_characterizing_finiteLocallyFree_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean, line 760](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean#L760).
 
 > **Stacks Project, Tag 07RY.** A separated, flat, locally finitely presented, locally
 > quasi-finite morphism with universally bounded fibres admits a finite closed filtration whose
@@ -75,7 +75,7 @@ public theorem exists_closed_filtration_characterizing_finiteLocallyFree_rank
 
 [Tag 07RZ](https://stacks.math.columbia.edu/tag/07RZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_quasiCompact_stratification_of_finiteLocallyFree_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean#L1181).
+**`AlgebraicGeometry.exists_quasiCompact_stratification_of_finiteLocallyFree_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeStratification.lean#L1181).
 
 > **Stacks Project, Tag 07RZ.** A flat, locally finitely presented, separated and quasi-finite
 > morphism admits an increasing sequence of closed subsets of its target whose successive
@@ -103,7 +103,7 @@ public theorem exists_quasiCompact_stratification_of_finiteLocallyFree_rank
 
 [Tag 086R](https://stacks.math.columbia.edu/tag/086R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_antitone_opens_iff_fiber_degree_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeOpenness.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeOpenness.lean#L443).
+**`AlgebraicGeometry.exists_antitone_opens_iff_fiber_degree_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeOpenness.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/DegreeOpenness.lean#L443).
 
 > A flat, locally finitely presented, separated and locally quasi-finite morphism of schemes has
 > a decreasing sequence of open subschemes of its target through which a field-valued point factors
@@ -125,7 +125,7 @@ public theorem exists_antitone_opens_iff_fiber_degree_ge {X S : Scheme.{u}} (f :
 
 [Tag 082V](https://stacks.math.columbia.edu/tag/082V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_injective_ideal_sum_with_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/SectionIdealSumCapture.lean, line 1471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/SectionIdealSumCapture.lean#L1471).
+**`AlgebraicGeometry.exists_open_injective_ideal_sum_with_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/SectionIdealSumCapture.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/SectionIdealSumCapture.lean#L1470).
 
 > **Stacks 082V.** For `f : X ⟶ S` flat, locally of finite presentation and locally
 > quasi-finite and `g` a nonzero global function on `X`, there are opens `V ⊆ f ⁻¹ U` on which `g`
@@ -155,7 +155,7 @@ public theorem exists_open_injective_ideal_sum_with_section
 
 [Tag 09Z0](https://stacks.math.columbia.edu/tag/09Z0) in the Stacks Project.
 
-**`Stacks.MoreMorphisms.exists_isIntegralHom_surjective_zariskiLocallyFactors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinement.lean, line 907](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinement.lean#L907). The attribute's comment: “the existence assertion: a surjective étale covering of a quasi-compact and quasi-separated scheme is refined by a surjective integral morphism factoring through it Zariski-locally. The closing sentence, that the refinement may be taken finite and of finite presentation, is `Stacks.MoreMorphisms.exists_isFinite_finitePresentation_surjective_zariskiLocallyFactors`”.
+**`Stacks.MoreMorphisms.exists_isIntegralHom_surjective_zariskiLocallyFactors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinement.lean, line 907](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinement.lean#L907). The attribute's comment: “the existence assertion: a surjective étale covering of a quasi-compact and quasi-separated scheme is refined by a surjective integral morphism factoring through it Zariski-locally. The closing sentence, that the refinement may be taken finite and of finite presentation, is `Stacks.MoreMorphisms.exists_isFinite_finitePresentation_surjective_zariskiLocallyFactors`”.
 
 > **Stacks, Tag 09Z0: a surjective étale covering is refined by a surjective integral morphism
 > which factors through it Zariski-locally.** Let `p : U ⟶ X` be a surjective étale morphism of
@@ -182,7 +182,7 @@ public theorem exists_isIntegralHom_surjective_zariskiLocallyFactors (p : U ⟶ 
       ZariskiLocallyFactors f p
 ```
 
-**`Stacks.MoreMorphisms.exists_isFinite_finitePresentation_surjective_zariskiLocallyFactors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinementFinite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinementFinite.lean#L140). The attribute's comment: “the whole statement: the surjective refinement factoring through the covering Zariski-locally, and the closing sentence that it may be taken finite and of finite presentation”.
+**`Stacks.MoreMorphisms.exists_isFinite_finitePresentation_surjective_zariskiLocallyFactors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinementFinite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IntegralRefinementFinite.lean#L140). The attribute's comment: “the whole statement: the surjective refinement factoring through the covering Zariski-locally, and the closing sentence that it may be taken finite and of finite presentation”.
 
 > **Stacks, Tag 09Z0: the refinement may be taken finite and of finite presentation.** Let
 > `p : U ⟶ X` be a surjective étale morphism of schemes with `X` quasi-compact and quasi-separated.
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.45, Tag 0F2Q](https://stacks.math.columbia.edu/tag/0F2Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

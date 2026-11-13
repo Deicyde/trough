@@ -1,6 +1,6 @@
 # 4 Categories
 
-Chapter 4 of the Stacks Project, *Categories*, [Tag 0011](https://stacks.math.columbia.edu/tag/0011): the 41 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 226 tags are carried by 285 declarations of the repository (16 in StacksCore and 269 in StacksFrontier) and 192 registered declarations.
+Chapter 4 of the Stacks Project, *Categories*, [Tag 0011](https://stacks.math.columbia.edu/tag/0011): the 41 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 232 tags are carried by 336 declarations of the repository (16 in StacksCore and 320 in StacksFrontier) and 200 registered declarations.
 
 ## [4.2 Definitions to 4.23 Exact functors](part-01/README.md)
 

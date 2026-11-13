@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.10 Curves of genus zero
 
-Section 53.10 of the Stacks Project, [Tag 0C6L](https://stacks.math.columbia.edu/tag/0C6L). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.10 of the Stacks Project, [Tag 0C6L](https://stacks.math.columbia.edu/tag/0C6L). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C6M, a lemma
 
 [Tag 0C6M](https://stacks.math.columbia.edu/tag/0C6M) in the Stacks Project.
 
-**`AlgebraicGeometry.isTrivial_of_genus_eq_zero_of_invertibleCurveDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroDegreeZero.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroDegreeZero.lean#L46).
+**`AlgebraicGeometry.isTrivial_of_genus_eq_zero_of_invertibleCurveDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroDegreeZero.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroDegreeZero.lean#L46).
 
 > Let `X` be a proper curve over a field `k` with `H⁰(X, 𝒪_X) = k`. If `X` has genus `0`, then
 > every invertible `𝒪_X`-module `ℒ` of degree `0` is trivial.
@@ -33,7 +33,7 @@ public theorem isTrivial_of_genus_eq_zero_of_invertibleCurveDegree_eq_zero [IsCu
 
 [Tag 0C6T](https://stacks.math.columbia.edu/tag/0C6T) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_cohomologyOverField_one_of_genus_zero_of_degree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean#L211). The attribute's comment: “part (1), the clause `dim_k H¹(X, ℒ) = 0`”.
+**`AlgebraicGeometry.isZero_cohomologyOverField_one_of_genus_zero_of_degree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean#L211). The attribute's comment: “part (1), the clause `dim_k H¹(X, ℒ) = 0`”.
 
 > **[Stacks, Tag 0C6T]: the vanishing `H¹(X, ℒ) = 0` of assertion (1).** Let `X` be a proper
 > curve over a field `k` with `H⁰(X, 𝒪_X) = k` and genus zero, and let `ℒ` be an invertible
@@ -48,7 +48,7 @@ public theorem isZero_cohomologyOverField_one_of_genus_zero_of_degree_pos [IsPro
     IsZero (cohomologyOverField k f L 1)
 ```
 
-**`AlgebraicGeometry.finrank_cohomologyOverField_zero_eq_degree_add_one_of_genus_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean#L247). The attribute's comment: “part (1), the clause `dim_k H⁰(X, ℒ) = d + 1`”.
+**`AlgebraicGeometry.finrank_cohomologyOverField_zero_eq_degree_add_one_of_genus_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/Basic.lean#L247). The attribute's comment: “part (1), the clause `dim_k H⁰(X, ℒ) = d + 1`”.
 
 > **[Stacks, Tag 0C6T]: the dimension count `dim_k H⁰(X, ℒ) = d + 1` of assertion (1).** On a
 > proper curve over a field with `H⁰(X, 𝒪_X) = k` and genus zero, an invertible module `ℒ` whose
@@ -64,7 +64,7 @@ public theorem finrank_cohomologyOverField_zero_eq_degree_add_one_of_genus_zero
       invertibleCurveDegree k f hdim L + 1
 ```
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_and_isClosedImmersion_of_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveEmbedding.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveEmbedding.lean#L170). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isRelativelyVeryAmple_and_isClosedImmersion_of_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveEmbedding.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveEmbedding.lean#L170). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0C6T] part (2).** Let `X` be a proper integral scheme of dimension at most one
 > over a field `k` with `H⁰(X, 𝒪_X) = k` and genus `0`, and let `ℒ` be an invertible `𝒪_X`-module of
@@ -89,7 +89,7 @@ theorem isRelativelyVeryAmple_and_isClosedImmersion_of_basis [IsProper f] [IsInt
 
 [Tag 0C6N](https://stacks.math.columbia.edu/tag/0C6N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_planeCurveData_deg_two_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/GorensteinConic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/GorensteinConic.lean#L44).
+**`AlgebraicGeometry.exists_planeCurveData_deg_two_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/GorensteinConic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/GorensteinConic.lean#L44).
 
 > Let `X` be a proper curve over a field `k` with `H⁰(X, 𝒪_X) = k`. If `X` is Gorenstein and
 > has genus `0`, then `X` is isomorphic over `k` to a plane curve of degree `2`.
@@ -106,7 +106,7 @@ theorem exists_planeCurveData_deg_two_of_isGorenstein [IsCurve k f] [IsProper f]
 
 [Tag 0C6U](https://stacks.math.columbia.edu/tag/0C6U) in the Stacks Project.
 
-**`AlgebraicGeometry.projectiveLine_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveLineEquivalences.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveLineEquivalences.lean#L53). The attribute's comment: “the final item (9) of the source is the placeholder `add more here`”.
+**`AlgebraicGeometry.projectiveLine_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveLineEquivalences.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/GenusZeroPositiveDegree/ProjectiveLineEquivalences.lean#L53). The attribute's comment: “the final item (9) of the source is the placeholder `add more here`”.
 
 > **Stacks Project, Tag 0C6U.** Let `X` be a proper curve over a field `k`. The following are
 > equivalent:
@@ -158,7 +158,7 @@ theorem projectiveLine_tfae [IsCurve k f] [IsProper f] :
             Module.finrank k (X.residueField (x i))) = 1]
 ```
 
-**`AlgebraicGeometry.ProjectiveLineCriterion.projectiveLine_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/Characterization.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/Characterization.lean#L177).
+**`AlgebraicGeometry.ProjectiveLineCriterion.projectiveLine_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/Characterization.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/Characterization.lean#L177).
 
 > **Stacks Project, Tag 0C6U (characterization of the projective line).** For a proper curve
 > `X` over a field `k` the following are equivalent:
@@ -212,7 +212,7 @@ theorem projectiveLine_tfae [IsProper f] [IsCurve k f] :
               Module.finrank k (X.residueField (x i))) = 1]
 ```
 
-**`AlgebraicGeometry.ProjectiveLineCriterion.exists_iso_projectiveLine_of_invertibleCurveDegree_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/ProjectiveLine.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/ProjectiveLine.lean#L252). The attribute's comment: “condition (6) implies condition (1)”.
+**`AlgebraicGeometry.ProjectiveLineCriterion.exists_iso_projectiveLine_of_invertibleCurveDegree_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/ProjectiveLine.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLineCriterion/ProjectiveLine.lean#L252). The attribute's comment: “condition (6) implies condition (1)”.
 
 > **A genus-zero curve with an invertible module of degree one is isomorphic to `ℙ¹_k` over
 > `k`.** Let `X` be a proper integral scheme of dimension at most one over a field `k` with
@@ -235,7 +235,7 @@ theorem exists_iso_projectiveLine_of_invertibleCurveDegree_eq_one [IsProper f] [
 
 [Tag 0DJB](https://stacks.math.columbia.edu/tag/0DJB) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_projectiveLine_normalization_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SingularGenusZero.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SingularGenusZero.lean#L793).
+**`AlgebraicGeometry.exists_projectiveLine_normalization_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SingularGenusZero.lean, line 793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SingularGenusZero.lean#L793).
 
 > **[Stacks, Tag 0DJB].** Let `X` be a proper curve over a field `k` with `H⁰(X, 𝒪_X) = k`,
 > singular and of genus zero, and let `ν : X' ⟶ X` be its normalization. Then there are a field
@@ -311,7 +311,7 @@ theorem exists_projectiveLine_normalization_of_genus_eq_zero (k : Type u) [Field
 
 [Tag 0DJC](https://stacks.math.columbia.edu/tag/0DJC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_pinchedProjectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PinchedProjectiveLine/Basic/NormalizationAndGenus.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PinchedProjectiveLine/Basic/NormalizationAndGenus.lean#L573).
+**`AlgebraicGeometry.exists_pinchedProjectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PinchedProjectiveLine/Basic/NormalizationAndGenus.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PinchedProjectiveLine/Basic/NormalizationAndGenus.lean#L573).
 
 > **Stacks Project, Tag 0DJC.** For a nontrivial finite extension `K/k`, the pinched
 > projective line over `k`: a scheme with the prescribed affine gluing of `Spec A` to `Spec K[Y]`
@@ -362,4 +362,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.10, Tag 0C6L](https://stacks.math.columbia.edu/tag/0C6L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Smallest parts in overpartitions
 
-15 results, 4 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html).
+15 results, 4 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html).
 
 ## Smallest-even-part contribution of an overpartition
 
@@ -20,7 +20,7 @@ smallest part, contributes $0$.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1 (definition of `spt2‾(n)`).
 
-Formalized by `MetaMathlibExt.overpartitionSpt2Contribution`, a definition declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-contribution).
+Formalized by `MetaMathlibExt.overpartitionSpt2Contribution`, a definition declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-contribution).
 
 ## Number of smallest even parts in overpartitions
 
@@ -36,7 +36,7 @@ does not count; the values for $n = 0, \dots, 8$ are $0, 0, 1, 0, 3, 2, 6, 6, 15
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.overpartitionSpt2`, a definition declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2).
+Formalized by `MetaMathlibExt.overpartitionSpt2`, a definition declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2).
 
 ## $\overline{\mathrm{spt2}}$ vanishes at zero
 
@@ -49,7 +49,7 @@ no smallest part.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.overpartitionSpt2_zero`, a theorem declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-zero).
+Formalized by `MetaMathlibExt.overpartitionSpt2_zero`, a theorem declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-zero).
 
 ## Overpartitions with odd smallest part contribute nothing
 
@@ -61,7 +61,7 @@ contribution of $O$ is $0$.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.overpartitionSpt2Contribution_eq_zero_of_odd`, a theorem declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-contribution-eq-zero).
+Formalized by `MetaMathlibExt.overpartitionSpt2Contribution_eq_zero_of_odd`, a theorem declared in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-contribution-eq-zero).
 
 ## Three congruences modulo 4 for $\overline{\mathrm{spt2}}$
 
@@ -74,7 +74,7 @@ $\overline{\mathrm{spt2}}(48n + 34)$ and $\overline{\mathrm{spt2}}(72n + 42)$ is
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.overpartitionSpt2_basic_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-basic-congruences).
+Stated but not proved: `MetaMathlibExt.overpartitionSpt2_basic_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-basic-congruences).
 
 ## Congruences modulo 4 for $\overline{\mathrm{spt2}}$ along powers of 2
 
@@ -90,7 +90,7 @@ $N = 2^{j+4} \cdot 5 n + 17 \cdot 2^{j+1}$ and $N = 2^{j+4} \cdot 5 n + 33 \cdot
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.overpartitionSpt2_dyadic_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-dyadic-congruences).
+Stated but not proved: `MetaMathlibExt.overpartitionSpt2_dyadic_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-dyadic-congruences).
 
 ## Congruences modulo 4 for $\overline{\mathrm{spt2}}$ at primes $p \equiv 5, 7 \pmod 8$
 
@@ -104,7 +104,7 @@ $\overline{\mathrm{spt2}}(32 p^{2k+1} m + 24 p^{2k+2})$ is divisible by $4$.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.overpartitionSpt2_prime_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-prime-congruence).
+Stated but not proved: `MetaMathlibExt.overpartitionSpt2_prime_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#overpartition-spt2-prime-congruence).
 
 ## 2-dissection of the square of Euler's product
 
@@ -118,7 +118,7 @@ $$f_1^2 = \frac{f_2 f_8^5}{f_4^2 f_{16}^2} - 2q \frac{f_2 f_{16}^2}{f_8}.$$
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_two_dissection_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-two-dissection-square).
+Stated but not proved: `MetaMathlibExt.qPochhammer_two_dissection_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-two-dissection-square).
 
 ## 2-dissection of the reciprocal square of Euler's product
 
@@ -132,7 +132,7 @@ $$\frac{1}{f_1^2} = \frac{f_8^5}{f_2^5 f_{16}^2} + 2q \frac{f_4^2 f_{16}^2}{f_2^
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_two_dissection_inverse_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-two-dissection-inverse-squa).
+Stated but not proved: `MetaMathlibExt.qPochhammer_two_dissection_inverse_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-two-dissection-inverse-squa).
 
 ## The 3-dissection of $f_1^3$ for complex $q$
 
@@ -148,7 +148,7 @@ $$
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-cube).
+Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-cube).
 
 ## The 3-dissection of $f_4/f_1$ for complex $q$
 
@@ -165,7 +165,7 @@ $$
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_ratio_four_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-ratio-four).
+Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_ratio_four_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-ratio-four).
 
 ## The 3-dissection of $f_1 f_2$ for complex $q$
 
@@ -181,7 +181,7 @@ $$
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_product_one_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-product-on).
+Stated but not proved: `MetaMathlibExt.qPochhammer_three_dissection_product_one_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#q-pochhammer-three-dissection-product-on).
 
 ## 3-dissection of the product form of Ramanujan's psi function
 
@@ -199,7 +199,7 @@ $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.ramanujanPsi_three_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-psi-three-dissection).
+Stated but not proved: `MetaMathlibExt.ramanujanPsi_three_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-psi-three-dissection).
 
 ## 3-dissection of the product form of Ramanujan's psi function at negated argument
 
@@ -218,7 +218,7 @@ $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$ is Ramanujan's theta function.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.ramanujanPsi_neg_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-psi-neg-dissection).
+Stated but not proved: `MetaMathlibExt.ramanujanPsi_neg_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-psi-neg-dissection).
 
 ## 3-dissection of the product form of Ramanujan's phi function at negated argument
 
@@ -236,7 +236,7 @@ $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ is Ramanujan's theta function.
 
 - Robson da Silva, *Extending Congruences for the Number of Smallest Parts in Overpartitions with Smallest Part Even*, INTEGERS 26 (2026), Article A62, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.ramanujanPhi_neg_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-phi-neg-dissection).
+Stated but not proved: `MetaMathlibExt.ramanujanPhi_neg_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OverpartitionSpt2CongruencesWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html#ramanujan-phi-neg-dissection).
 
 ## Depends on
 
@@ -245,4 +245,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Smallest parts in overpartitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/smallest-parts-in-overpartitions)

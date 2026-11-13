@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.6 First cohomology and invertible sheaves
 
-Section 20.6 of the Stacks Project, [Tag 09NT](https://stacks.math.columbia.edu/tag/09NT). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.6 of the Stacks Project, [Tag 09NT](https://stacks.math.columbia.edu/tag/09NT). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09NU, a lemma
 
 [Tag 09NU](https://stacks.math.columbia.edu/tag/09NU) in the Stacks Project.
 
-**`Stacks.Cohomology.Generators.generatorTorsorOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/GeneratorTorsorOfAnInvertibleModule.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/GeneratorTorsorOfAnInvertibleModule.lean#L71). The attribute's comment: “the generator torsor”. References: EGA IV (21.13.13), “special case”.
+**`Stacks.Cohomology.Generators.generatorTorsorOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/GeneratorTorsorOfAnInvertibleModule.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/GeneratorTorsorOfAnInvertibleModule.lean#L71). The attribute's comment: “the generator torsor”. References: EGA IV (21.13.13), “special case”.
 
 > The sections of an invertible module `L` that trivialize it form a sheaf of sets on which
 > the sheaf of units acts simply transitively: the *generator torsor* of `L`.  The identification
@@ -30,7 +30,7 @@ def generatorTorsorOfInvertible (X : RingedSpace.{u, u})
     GeneratorTorsor X L
 ```
 
-**`Stacks.Cohomology.Generators.h1UnitsAddEquivPicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean#L294). The attribute's comment: “the additive equivalence”. References: EGA 0 (5.4.7), “special case”; EGA IV (21.3.6), “special case”; SGA 4½ Arcata (2.2.3), “ringed space case”; SGA 1 XI (6.4), “more general”; SGA 3 VIII (4.4), “Pic(S) ≅ H¹(S, O\_S^×)”.
+**`Stacks.Cohomology.Generators.h1UnitsAddEquivPicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean#L294). The attribute's comment: “the additive equivalence”. References: EGA 0 (5.4.7), “special case”; EGA IV (21.3.6), “special case”; SGA 4½ Arcata (2.2.3), “ringed space case”; SGA 1 XI (6.4), “more general”; SGA 3 VIII (4.4), “Pic(S) ≅ H¹(S, O\_S^×)”.
 
 > For a ringed space all of whose stalks are local rings, the first cohomology of the sheaf of
 > units is canonically isomorphic, as an abelian group, to the Picard group.
@@ -42,7 +42,7 @@ def h1UnitsAddEquivPicardGroup :
         (structureSheaf X.sheaf).property
 ```
 
-**`Stacks.Cohomology.Generators.h1UnitsAddEquivPicardGroup_symm_classOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean#L304). The attribute's comment: “characterization by generator torsors”.
+**`Stacks.Cohomology.Generators.h1UnitsAddEquivPicardGroup_symm_classOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PicardGroupAndFirstCohomology.lean#L304). The attribute's comment: “characterization by generator torsors”.
 
 > The inverse of the canonical isomorphism `H^1(X, 𝒪_X^*) ≅ Pic(X)` sends the class of an
 > invertible module to the first-cohomology class of its torsor of generators.
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.6, Tag 09NT](https://stacks.math.columbia.edu/tag/09NT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

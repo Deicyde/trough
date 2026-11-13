@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.16 Cohomology and colimits
 
-Section 21.16 of the Stacks Project, [Tag 0737](https://stacks.math.columbia.edu/tag/0737). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.16 of the Stacks Project, [Tag 0737](https://stacks.math.columbia.edu/tag/0737). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0739, a lemma
 
 [Tag 0739](https://stacks.math.columbia.edu/tag/0739) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_colimit_post_rightDerived_sheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/FilteredColimitsAndCohomology.lean, line 994](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/FilteredColimitsAndCohomology.lean#L994).
+**`Stacks.Cohomology.isIso_colimit_post_rightDerived_sheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/FilteredColimitsAndCohomology.lean, line 994](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Recovery21/FilteredColimitsAndCohomology.lean#L994).
 
 > **Stacks 0739.** On a site, suppose a collection of finite covering families is cofinal
 > among the coverings of each object in `B`, and all nonempty iterated fibre products occurring
@@ -41,7 +41,7 @@ public theorem isIso_colimit_post_rightDerived_sheafSections
 
 [Tag 0GN3](https://stacks.math.columbia.edu/tag/0GN3) in the Stacks Project.
 
-**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomology.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomology.lean#L140).
+**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomology.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomology.lean#L140).
 
 > **Stacks 0GN3.** Let `C` be a site and let `S` be a set of sheaves of sets on `C` such that
 >
@@ -83,7 +83,7 @@ theorem isIso_colimit_post_rightDerived_globalSections
     IsIso (colimit.post F ((Sheaf.Γ J (Ab.{u})).rightDerived p))
 ```
 
-**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_coveringSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomologyOnALargeSite.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomologyOnALargeSite.lean#L446). The attribute's comment: “for a site whose objects and morphisms need not share a universe”.
+**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_coveringSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomologyOnALargeSite.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/GlobalCohomologyOnALargeSite.lean#L446). The attribute's comment: “for a site whose objects and morphisms need not share a universe”.
 
 > **Stacks 0GN3 for an arbitrary site.** Let `C` be a site with objects in `Type u₁` and
 > morphisms in `Type v`, and let `S` be a set of sheaves of sets on `C` with sections at the join
@@ -123,7 +123,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_of_coveringSet
 
 [Tag 0GN4](https://stacks.math.columbia.edu/tag/0GN4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_equalizerLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean#L598). The attribute's comment: “condition (4) for the fppf site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
+**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_equalizerLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean#L598). The attribute's comment: “condition (4) for the fppf site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
 
 > **Condition (4) of Stacks 0GN4 for the fppf site of an algebraic stack quasi-separated over a
 > quasi-separated base scheme**, in the shape
@@ -157,7 +157,7 @@ theorem exists_fin_affineObjects_isLocallySurjective_equalizerLift :
                   congrArg (Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).map (hp i)))
 ```
 
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_equalizerLift_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean#L135). The attribute's comment: “condition (4) for the étale site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
+**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_equalizerLift_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean#L135). The attribute's comment: “condition (4) for the étale site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
 
 > **Condition (4) of Stacks 0GN4 for the étale site of an algebraic stack quasi-separated over a
 > quasi-separated base scheme**, in the shape
@@ -204,7 +204,7 @@ theorem exists_fin_affineObjects_isLocallySurjective_equalizerLift_etale
                     (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).map (hp i)))
 ```
 
-**`Stacks.Cohomology.ColimitsOfCohomology.isQuasiCompact_of_finiteCoproductSheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean#L168). The attribute's comment: “quasi-compactness assertion”.
+**`Stacks.Cohomology.ColimitsOfCohomology.isQuasiCompact_of_finiteCoproductSheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean#L168). The attribute's comment: “quasi-compactness assertion”.
 
 > **Stacks 0GN4, quasi-compactness assertion.** If every covering of every `U ∈ B` is refined by
 > a finite covering family with sources in `B` — condition (2) — then every finite coproduct of
@@ -222,7 +222,7 @@ theorem isQuasiCompact_of_finiteCoproductSheafifiedYoneda {C : Type u} [Category
     Sheaf.IsQuasiCompact K
 ```
 
-**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_finite_covers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean#L516). The attribute's comment: “criterion”.
+**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_finite_covers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoproductsOfRepresentables.lean#L517). The attribute's comment: “criterion”.
 
 > **Stacks 0GN4, the criterion.** Let `C` be a small site and `B ⊆ Ob(C)`, and assume
 >
@@ -272,7 +272,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_of_finite_covers
     IsIso (colimit.post F ((Sheaf.Γ J (Ab.{u})).rightDerived n))
 ```
 
-**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_covers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoveringCriterionOnALargeSite.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoveringCriterionOnALargeSite.lean#L523). The attribute's comment: “criterion, for a site whose objects and morphisms need not share a universe”.
+**`Stacks.Cohomology.ColimitsOfCohomology.isIso_colimit_post_rightDerived_globalSections_of_covers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoveringCriterionOnALargeSite.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FilteredColimits/FiniteCoveringCriterionOnALargeSite.lean#L523). The attribute's comment: “criterion, for a site whose objects and morphisms need not share a universe”.
 
 > **Stacks 0GN4 for an arbitrary site.** Let `C` be a site with objects in `Type u₁` and
 > morphisms in `Type v`, let `B ⊆ Ob(C)`, and assume
@@ -335,7 +335,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_of_covers
 
 [Tag 0H7B](https://stacks.math.columbia.edu/tag/0H7B) in the Stacks Project.
 
-**`Stacks.Cohomology.HigherDirectImage.preservesColimit_rightDerived_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/HigherDirectImage/FilteredColimits.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/HigherDirectImage/FilteredColimits.lean#L409).
+**`Stacks.Cohomology.HigherDirectImage.preservesColimit_rightDerived_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/HigherDirectImage/FilteredColimits.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/HigherDirectImage/FilteredColimits.lean#L409).
 
 > Let `u : D ⥤ C` be the continuous functor associated to a morphism of sites and let `F` be
 > a diagram of abelian sheaves on `C`. If every object of `D` has a cover by objects over which
@@ -362,7 +362,7 @@ public theorem preservesColimit_rightDerived_sheafPushforwardContinuous
 
 [Tag 0EXZ](https://stacks.math.columbia.edu/tag/0EXZ) in the Stacks Project.
 
-**`InverseSystemOfFiniteSites.AbelianSheafSystem.exists_mono_to_pointwise_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean#L1053). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings)”.
+**`InverseSystemOfFiniteSites.AbelianSheafSystem.exists_mono_to_pointwise_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean, line 1055](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean#L1055). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings)”.
 
 > **Stacks 0EXZ.** Every system of abelian sheaves on an inverse system of sites admits a
 > levelwise monomorphism to a system whose sheaf at every index is injective.
@@ -374,7 +374,7 @@ theorem exists_mono_to_pointwise_injective {D : InverseSystemOfFiniteSites.{v, u
       (∀ i, Mono (f.app i)) ∧ ∀ i, Injective (G.obj i)
 ```
 
-**`InverseSystemOfSites.AbelianSheafSystem.exists_mono_to_pointwise_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/InjectiveSystemsOnStrongSystems.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/InjectiveSystemsOnStrongSystems.lean#L90).
+**`InverseSystemOfSites.AbelianSheafSystem.exists_mono_to_pointwise_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/InjectiveSystemsOnStrongSystems.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/InjectiveSystemsOnStrongSystems.lean#L90).
 
 > **Stacks 0EXZ.** Every system of abelian sheaves on an inverse system of sites admits a
 > levelwise monomorphism to a system whose sheaf at every index is injective.
@@ -397,7 +397,7 @@ theorem AbelianSheafSystem.exists_mono_to_pointwise_injective
 
 [Tag 09YP](https://stacks.math.columbia.edu/tag/09YP) in the Stacks Project.
 
-**`Stacks.WeakSites.ColimitSiteCohomology.cohomologyCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean, line 2443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean#L2443). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): canonical cohomology diagram and cocone”.
+**`Stacks.WeakSites.ColimitSiteCohomology.cohomologyCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean, line 2443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean#L2443). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): canonical cohomology diagram and cocone”.
 
 > **Stacks 09YP, the canonical cohomology diagram and its cocone.** In the situation of
 > Stacks 0EXZ, with the functors `uC i` exhibiting `C` as the colimit of the sites of the system
@@ -409,7 +409,7 @@ theorem AbelianSheafSystem.exists_mono_to_pointwise_injective
 public def cohomologyCocone : CohomologyCocone.{v, u, max u v w, max u v w} D uC hu K F 𝒢 ι i X p
 ```
 
-**`Stacks.WeakSites.ColimitSiteCohomology.isColimitCohomologyCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean, line 2521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean#L2521). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the canonical cocone is a colimit cocone”.
+**`Stacks.WeakSites.ColimitSiteCohomology.isColimitCohomologyCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean, line 2521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/CohomologyColimit.lean#L2521). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the canonical cocone is a colimit cocone”.
 
 > **Stacks 09YP.** In the situation of Stacks 0EXZ, set `𝒢 = colim fᵢ⁻¹Fᵢ`. For every index
 > `i`, every object `X` of the site at `i` and every `p`, the cohomology `Hᵖ(uᵢ(X), 𝒢)` is the
@@ -434,4 +434,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.16, Tag 0737](https://stacks.math.columbia.edu/tag/0737)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

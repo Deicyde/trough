@@ -8,7 +8,7 @@ proof: formalized
 
 # Foundations of probability: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html).
 
 Construction of probability measures and processes (Kolmogorov extension, measures from Stieltjes functions), independence, conditional expectation and regular conditional distributions, exchangeability and de Finetti's theorem, and zero–one laws for sequences (Hewitt–Savage); zero–one laws for continuous processes go to Brownian motion and stochastic calculus, tail sigma-algebras of random walks to Random walks.
 
@@ -28,7 +28,7 @@ i \in B\} = \int_{[0, 1]} p^{|A|} (1 - p)^{|B|} \, d\nu(p).$$
 
 - B. de Finetti, Funzione caratteristica di un fenomeno aleatorio, Atti Accad. Naz. Lincei 4 (1931) and La prévision: ses lois logiques (1937); textbook in Kallenberg, Probabilistic Symmetries and Invariance Principles; also Durrett, Probability Theory and Examples
 
-Formalized by `MathlibExt.Probability.DeFinettiWanted.deFinetti_binary`, a theorem declared in [MathlibExt/Probability/DeFinetti.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/DeFinetti.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html#de-finetti-binary).
+Formalized by `MathlibExt.Probability.DeFinettiWanted.deFinetti_binary`, a theorem declared in [MathlibExt/Probability/DeFinetti.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/DeFinetti.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html#de-finetti-binary).
 
 ## Kolmogorov extension theorem
 
@@ -44,7 +44,7 @@ $\prod_{j \in J} \alpha_j$ is $P_J$ for every finite $J \subseteq \iota$.
 
 - A. N. Kolmogorov, Grundbegriffe der Wahrscheinlichkeitsrechnung, 1933; P. J. Daniell 1918 precursor; textbook in Kallenberg, Foundations of Modern Probability, 3rd ed. (Kolmogorov extension) and Tao, Introduction to Measure Theory Lean Polish Borel projective-limit version; full general version handles standard Borel factors.
 
-Formalized by `MathlibExt.Probability.KolmogorovExtensionWanted.kolmogorov_extension`, a theorem declared in [MathlibExt/Probability/KolmogorovExtension.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/KolmogorovExtension.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html#kolmogorov-extension).
+Formalized by `MathlibExt.Probability.KolmogorovExtensionWanted.kolmogorov_extension`, a theorem declared in [MathlibExt/Probability/KolmogorovExtension.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/KolmogorovExtension.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html#kolmogorov-extension).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Foundations of probability](https://deicyde.github.io/atlas-lean/roadmap/Probability/foundations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/foundations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/foundations)

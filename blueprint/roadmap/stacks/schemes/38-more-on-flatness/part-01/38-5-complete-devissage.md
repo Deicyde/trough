@@ -1,26 +1,29 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.CompleteDevissage, AlgebraicGeometry.CompleteDevissageAt, AlgebraicGeometry.exists_completeDevissage_baseChange, AlgebraicGeometry.CompleteDevissageAt.exists_isBaseChange, AlgebraicGeometry.NonemptyCompleteDevissageAt.StandardShrinking, AlgebraicGeometry.exists_standardShrinking_finalTarget, AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base, AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source
+lean: AlgebraicGeometry.NonemptyCompleteDevissage, AlgebraicGeometry.NonemptyCompleteDevissageAt, AlgebraicGeometry.exists_completeDevissage_baseChange, AlgebraicGeometry.CompleteDevissageAt.exists_isBaseChange, AlgebraicGeometry.NonemptyCompleteDevissageAt.StandardShrinking, AlgebraicGeometry.exists_standardShrinking_finalTarget, AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base, AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source
 statement: formalized
 proof: formalized
 ---
 
 # 38.5 Complete dévissage
 
-Section 38.5 of the Stacks Project, [Tag 05HG](https://stacks.math.columbia.edu/tag/05HG). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.5 of the Stacks Project, [Tag 05HG](https://stacks.math.columbia.edu/tag/05HG). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05HH, a definition
 
 [Tag 05HH](https://stacks.math.columbia.edu/tag/05HH) in the Stacks Project.
 
-**`AlgebraicGeometry.CompleteDevissage`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean#L151).
+**`AlgebraicGeometry.NonemptyCompleteDevissage`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean#L166).
 
-> A complete dévissage of `F/X/S` over `s`: either the empty dévissage, which exists
-> precisely for the zero module, or a finite nonempty chain of stages.
+> A complete dévissage of `F/X/S` over `s`: a finite chain of stages
+> `(Z_k, Y_k, i_k, π_k, G_k, α_k)_{k = 1, …, n}`, with `n ≥ 1`, whose first stage is a one-step
+> dévissage of `F/X/S` over `s`, whose `k`-th stage for `k ≥ 2` is a one-step dévissage of
+> `Coker(α_{k-1})/Y_{k-1}/S` over `s`, each `α_k` inducing an isomorphism over the residue field
+> of the generic point of `(Y_k)_s`, and with `Coker(α_n) = 0`.
 
 ```lean
-inductive CompleteDevissage {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (s : S)
+structure NonemptyCompleteDevissage {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (s : S)
     [hl : LocallyOfFiniteType f] [hq : F.IsQuasicoherent] [ht : F.IsFiniteType]
 ```
 
@@ -28,13 +31,17 @@ inductive CompleteDevissage {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (s 
 
 [Tag 05HI](https://stacks.math.columbia.edu/tag/05HI) in the Stacks Project.
 
-**`AlgebraicGeometry.CompleteDevissageAt`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean#L212).
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete.lean#L243).
 
-> A complete dévissage of `F/X/S` at `x`: either the empty dévissage, which exists precisely
-> for the zero module, or a nonempty chain of stages with compatible distinguished points.
+> A complete dévissage of `F/X/S` at `x`, as in the source: a nonempty complete dévissage
+> over the image of `x` whose first stage is a one-step dévissage at `x` and each later stage a
+> one-step dévissage at the distinguished point of the preceding smooth scheme. Its first stage
+> places `x` in the support of the fibre module
+> (`AlgebraicGeometry.NonemptyCompleteDevissageAt.mem_fiber_support`), so the zero module has
+> none.
 
 ```lean
-inductive CompleteDevissageAt {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x : X)
+structure NonemptyCompleteDevissageAt {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x : X)
     [hl : LocallyOfFiniteType f] [hq : F.IsQuasicoherent] [ht : F.IsFiniteType]
 ```
 
@@ -42,7 +49,7 @@ inductive CompleteDevissageAt {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (
 
 [Tag 05HJ](https://stacks.math.columbia.edu/tag/05HJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_completeDevissage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChange.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChange.lean#L410).
+**`AlgebraicGeometry.exists_completeDevissage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChange.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChange.lean#L410).
 
 > **Stacks 05HJ.** A complete dévissage of `F/X/S` over `s` base-changes, stage by stage, to
 > a complete dévissage of the base-changed module over `s'`, for any cartesian square whose
@@ -61,7 +68,7 @@ theorem exists_completeDevissage_baseChange {X X' : Scheme.{u}} {f : X ⟶ S} {f
 
 [Tag 05HK](https://stacks.math.columbia.edu/tag/05HK) in the Stacks Project.
 
-**`AlgebraicGeometry.CompleteDevissageAt.exists_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChangeAt.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChangeAt.lean#L349).
+**`AlgebraicGeometry.CompleteDevissageAt.exists_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChangeAt.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/BaseChangeAt.lean#L349).
 
 > **Stacks 05HK.** Let `(S', s') → (S, s)` be a morphism of pointed schemes inducing an
 > isomorphism of residue fields, with `S'` affine, let `X'` be the base change of `X` and `F'`
@@ -87,7 +94,7 @@ theorem CompleteDevissageAt.exists_isBaseChange {h : S' ⟶ S} [IsAffine S']
 
 [Tag 05HL](https://stacks.math.columbia.edu/tag/05HL) in the Stacks Project.
 
-**`AlgebraicGeometry.NonemptyCompleteDevissageAt.StandardShrinking`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/StandardShrinking.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/StandardShrinking.lean#L195).
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt.StandardShrinking`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/StandardShrinking.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/StandardShrinking.lean#L195).
 
 > A standard shrinking of a complete dévissage of `F/X/S` at `x`: standard opens of the
 > base and of the source, and standard opens in every stage, containing the distinguished
@@ -103,7 +110,7 @@ structure StandardShrinking {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x 
 
 [Tag 05HM](https://stacks.math.columbia.edu/tag/05HM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_standardShrinking_finalTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean#L339). The attribute's comment: “final\_target\_shrinking”.
+**`AlgebraicGeometry.exists_standardShrinking_finalTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean#L339). The attribute's comment: “final\_target\_shrinking”.
 
 > **Stacks 05HM, final target shrinking.** Let `W` be a principal open neighbourhood of the
 > distinguished point of the smooth scheme of the last stage of a complete dévissage of `F/X/S` at
@@ -125,7 +132,7 @@ theorem exists_standardShrinking_finalTarget {X S : Scheme.{u}} (f : X ⟶ S) (F
         E.restricted_stages W
 ```
 
-**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean#L169). The attribute's comment: “base\_shrinking”.
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean#L169). The attribute's comment: “base\_shrinking”.
 
 > **Stacks 05HM, base shrinking.** Restricting a complete dévissage at `x` over a standard
 > open neighbourhood of `f x` gives a standard shrinking whose base and source are that open
@@ -144,7 +151,7 @@ theorem exists_standardShrinking_base {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Mo
          PointedChainIsBaseChange E.S'.ι E.X'.ι D.pointed E.restricted_devissage.pointed)
 ```
 
-**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean#L101). The attribute's comment: “source\_shrinking”.
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean#L101). The attribute's comment: “source\_shrinking”.
 
 > **Stacks 05HM, source shrinking.** A complete dévissage of `F/X/S` at `x` admits a standard
 > shrinking whose source open lies inside any prescribed open neighbourhood of `x`.
@@ -160,7 +167,7 @@ theorem exists_standardShrinking_source {X S : Scheme.{u}} (f : X ⟶ S) (F : X.
 
 [Tag 05HR](https://stacks.math.columbia.edu/tag/05HR) in the Stacks Project.
 
-**`AlgebraicGeometry.hasEtaleNeighborhoodCompleteDevissageAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean#L619).
+**`AlgebraicGeometry.hasEtaleNeighborhoodCompleteDevissageAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean#L619).
 
 > **Stacks Project, Tag 05HR.** A finite-type quasi-coherent module on a scheme locally of
 > finite type over `S` acquires a complete dévissage at any chosen point after elementary étale
@@ -179,7 +186,7 @@ theorem hasEtaleNeighborhoodCompleteDevissageAt {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 05HU](https://stacks.math.columbia.edu/tag/05HU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_completeDevissage_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean#L1041).
+**`AlgebraicGeometry.exists_etaleNeighborhood_completeDevissage_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/Existence.lean#L1041).
 
 > **Stacks Project, Tag 05HU.** Let `X ⟶ S` be a finite-type morphism of schemes and `F` a
 > finite-type quasi-coherent module on `X`. For every point `s` of `S` there is an elementary étale
@@ -211,4 +218,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.5, Tag 05HG](https://stacks.math.columbia.edu/tag/05HG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.9 Constructing elementary distinguished squares
 
-Section 81.9 of the Stacks Project, [Tag 0DVH](https://stacks.math.columbia.edu/tag/0DVH). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.9 of the Stacks Project, [Tag 0DVH](https://stacks.math.columbia.edu/tag/0DVH). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DVI, a lemma
 
 [Tag 0DVI](https://stacks.math.columbia.edu/tag/0DVI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPushout_elementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquarePushout.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquarePushout.lean#L340).
+**`AlgebraicGeometry.Space.isPushout_elementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquarePushout.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquarePushout.lean#L341).
 
 > **Stacks 0DVI.** An elementary distinguished square is a pushout square in the category
 > of algebraic spaces over the base scheme: the target is glued from the open subspace and the
@@ -46,7 +46,7 @@ theorem isPushout_elementaryDistinguishedSquare
 
 [Tag 0DVJ](https://stacks.math.columbia.edu/tag/0DVJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_pushout_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquareGluing.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquareGluing.lean#L1158).
+**`AlgebraicGeometry.Space.exists_pushout_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquareGluing.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ElementaryDistinguishedSquareGluing.lean#L1166).
 
 > **Stacks 0DVJ.** Let `V` and `U` be algebraic spaces over `S`, let `V'` be an open
 > subspace of `V` and let `f' : V' ⟶ U` be a separated étale morphism. Then there is an algebraic
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.9, Tag 0DVH](https://stacks.math.columbia.edu/tag/0DVH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

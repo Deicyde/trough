@@ -7,7 +7,7 @@ statement: formalized
 
 # Hajnal–Szemerédi theorem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html).
 
 ## Equitable coloring with more colors than the maximum degree
 
@@ -17,7 +17,7 @@ $\Delta(G) < k$. Then $G$ has a proper coloring with the $k$ colors $0, 1, \dots
 equitable: for any two colors $i$ and $j$, the number of vertices of color $i$ is at most one more
 than the number of vertices of color $j$.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.exists_equitable_coloring_of_maxDegree_lt`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean, line 3531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean#L3531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#exists-equitable-coloring-of-max-degree).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.exists_equitable_coloring_of_maxDegree_lt`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean, line 3531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean#L3531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#exists-equitable-coloring-of-max-degree).
 
 ## Hajnal–Szemerédi theorem
 
@@ -30,7 +30,7 @@ number of vertices of color $i$ is at most one more than the number of vertices 
 
 - A. Hajnal and E. Szemerédi, "Proof of a conjecture of P. Erdős", Combinatorial Theory and Its Applications II, Colloq. Math. Soc. János Bolyai 4 (1970), 601-623.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.hajnal_szemeredi_equitable_coloring`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean, line 3572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean#L3572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#hajnal-szemeredi-equitable-coloring).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.hajnal_szemeredi_equitable_coloring`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean, line 3572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/HajnalSzemeredi.lean#L3572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#hajnal-szemeredi-equitable-coloring).
 
 ## Erdős Problem 914 on clique factors and equitable colourings
 
@@ -41,7 +41,7 @@ pairwise disjoint cliques of $r$ vertices each, and (b) if every vertex of $G$ h
 $m - 1$, then $G$ has a proper colouring with $m$ colours in which every colour class has exactly
 $r$ vertices.
 
-Formalized by `MathlibExt.Combinatorics.ErdosProblem914Wanted.conjecture`, a definition declared in [WantedExt/Combinatorics/ErdosProblem914Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem914Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.ErdosProblem914Wanted.conjecture`, a definition declared in [WantedExt/Combinatorics/ErdosProblem914Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem914Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#conjecture).
 
 ## Hajnal–Szemerédi theorem in clique-factor and equitable-colouring form
 
@@ -59,7 +59,7 @@ reformulation, obtained by applying (a) to the complement of $G$.
 
 - A. Hajnal and E. Szemerédi, Proof of a conjecture of P. Erdős (1970), 601–623, https://mathscinet.ams.org/mathscinet-getitem?mr=297607; External Lean proof of Erdős Problem 914, plby/lean-proofs, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos914.lean.
 
-Stated but not proved: `MathlibExt.Combinatorics.ErdosProblem914Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ErdosProblem914Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem914Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.ErdosProblem914Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ErdosProblem914Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem914Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hajnal–Szemerédi theorem](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring/part-01/hajnal-szemer-di-theorem)

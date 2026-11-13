@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.13 Lifting complexes
 
-Section 36.13 of the Stacks Project, [Tag 08EC](https://stacks.math.columbia.edu/tag/08EC). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.13 of the Stacks Project, [Tag 08EC](https://stacks.math.columbia.edu/tag/08EC). 12 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08ED, a lemma
 
 [Tag 08ED](https://stacks.math.columbia.edu/tag/08ED) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_quasicoherentDerived_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L129). The attribute's comment: “unbounded derived category”.
+**`AlgebraicGeometry.exists_quasicoherentDerived_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L129). The attribute's comment: “unbounded derived category”.
 
 > **Stacks Project, Tag 08ED.** Every quasi-coherent derived object on a quasi-compact open
 > subscheme extends to a quasi-coherent derived object on the ambient scheme: the functor
@@ -26,7 +26,7 @@ theorem exists_quasicoherentDerived_lift (E : QuasicoherentDerivedCategory U) :
       Nonempty ((derivedPullback j.toLRSHom.toShHom).obj F.obj ≅ E.obj)
 ```
 
-**`AlgebraicGeometry.exists_quasicoherentDerived_plus_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L141). The attribute's comment: “bounded-below derived category”.
+**`AlgebraicGeometry.exists_quasicoherentDerived_plus_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L141). The attribute's comment: “bounded-below derived category”.
 
 > **Stacks Project, Tag 08ED.** A bounded-below quasi-coherent derived object on a
 > quasi-compact open subscheme has a bounded-below quasi-coherent lift: the functor
@@ -43,7 +43,7 @@ theorem exists_quasicoherentDerived_plus_lift (E : QuasicoherentDerivedCategory 
       Nonempty ((derivedPullback j.toLRSHom.toShHom).obj F.obj ≅ E.obj)
 ```
 
-**`AlgebraicGeometry.exists_quasicoherentDerived_minus_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L159). The attribute's comment: “bounded-above derived category”.
+**`AlgebraicGeometry.exists_quasicoherentDerived_minus_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L159). The attribute's comment: “bounded-above derived category”.
 
 > **Stacks Project, Tag 08ED.** A bounded-above quasi-coherent derived object on a
 > quasi-compact open subscheme of a quasi-compact scheme has a bounded-above quasi-coherent lift:
@@ -60,7 +60,7 @@ theorem exists_quasicoherentDerived_minus_lift [CompactSpace X]
       Nonempty ((derivedPullback j.toLRSHom.toShHom).obj F.obj ≅ E.obj)
 ```
 
-**`AlgebraicGeometry.exists_quasicoherentDerived_bounded_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L177). The attribute's comment: “bounded derived category”.
+**`AlgebraicGeometry.exists_quasicoherentDerived_bounded_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/EssentialSurjectivity.lean#L177). The attribute's comment: “bounded derived category”.
 
 > **Stacks Project, Tag 08ED.** A bounded quasi-coherent derived object on a quasi-compact
 > open subscheme of a quasi-compact scheme has a bounded quasi-coherent lift: the functor
@@ -78,7 +78,7 @@ theorem exists_quasicoherentDerived_bounded_lift [CompactSpace X]
 
 [Tag 0G48](https://stacks.math.columbia.edu/tag/0G48) in the Stacks Project.
 
-**`AlgebraicGeometry.essSurj_coherentDerivedBoundedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedCoherent/EssSurjRestrictOpen.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedCoherent/EssSurjRestrictOpen.lean#L88).
+**`AlgebraicGeometry.essSurj_coherentDerivedBoundedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedCoherent/EssSurjRestrictOpen.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedCoherent/EssSurjRestrictOpen.lean#L88).
 
 > **[Stacks, Tag 0G48].** On a Noetherian scheme, restriction to an open subscheme is
 > essentially surjective as a functor `D^b_Coh(𝒪_X) ⥤ D^b_Coh(𝒪_U)`: every bounded complex of
@@ -93,7 +93,7 @@ theorem essSurj_coherentDerivedBoundedRestrict {X : Scheme.{u}} [IsNoetherian X]
 
 [Tag 08EE](https://stacks.math.columbia.edu/tag/08EE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_boundedAbove_finiteFree_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/FiniteFreeComplex.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/FiniteFreeComplex.lean#L1188).
+**`AlgebraicGeometry.exists_boundedAbove_finiteFree_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/FiniteFreeComplex.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/FiniteFreeComplex.lean#L1188).
 
 > A pseudo-coherent derived object on a quasi-compact open of an affine
 > scheme is the restriction of a bounded-above complex of finite free modules.
@@ -119,7 +119,7 @@ theorem exists_boundedAbove_finiteFree_lift
 
 [Tag 08EF](https://stacks.math.columbia.edu/tag/08EF) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.exists_pos_subsingleton_hom_singleFunctor_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/EventualExtVanishing.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/EventualExtVanishing.lean#L589).
+**`Stacks.DerivedQCoh.exists_pos_subsingleton_hom_singleFunctor_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/EventualExtVanishing.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/EventualExtVanishing.lean#L589).
 
 > **Stacks Project, Tag 08EF.** Let `X` be a quasi-compact and quasi-separated scheme and let
 > `E ∈ D^b_{QCoh}(𝒪_X)`. There exists an integer `n₀ > 0` such that
@@ -144,7 +144,7 @@ theorem exists_pos_subsingleton_hom_singleFunctor_of_isFiniteLocallyFree
 
 [Tag 09M4](https://stacks.math.columbia.edu/tag/09M4) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.exists_window_subsingleton_hom_of_isPerfect_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L147). The attribute's comment: “part (1)”.
+**`Stacks.DerivedQCoh.exists_window_subsingleton_hom_of_isPerfect_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L147). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 09M4], part (1).** Let `X` be a quasi-compact and quasi-separated scheme and
 > let `K` be a perfect object of `D(𝒪_X)`. Then there are integers `a ≤ b` such that every
@@ -166,7 +166,7 @@ theorem exists_window_subsingleton_hom_of_isPerfect_qcqs (K : DerivedCategory X.
         Subsingleton (K ⟶ L)
 ```
 
-**`Stacks.DerivedQCoh.finite_setOf_not_subsingleton_hom_shift_of_isPerfect_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L164). The attribute's comment: “part (2)”.
+**`Stacks.DerivedQCoh.finite_setOf_not_subsingleton_hom_shift_of_isPerfect_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L164). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 09M4], part (2).** Let `X` be a quasi-compact and quasi-separated scheme, let
 > `K` be a perfect object of `D(𝒪_X)` and let `L` be a bounded object of `D_QCoh(𝒪_X)`. Then
@@ -188,7 +188,7 @@ theorem finite_setOf_not_subsingleton_hom_shift_of_isPerfect_qcqs (K : DerivedCa
 
 [Tag 08EG](https://stacks.math.columbia.edu/tag/08EG) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.OpenLift.exists_finiteLocallyFree_biprod_iso_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/ShiftedBundleSummand.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/ShiftedBundleSummand.lean#L428).
+**`Stacks.DerivedQCoh.OpenLift.exists_finiteLocallyFree_biprod_iso_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/ShiftedBundleSummand.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/ShiftedBundleSummand.lean#L428).
 
 > **[Stacks, Tag 08EG].** Let `X` be an affine scheme and `U ⊆ X` a quasi-compact open. For
 > every perfect object `E` of `D(𝒪_U)` there are an integer `r`, a finite locally free
@@ -213,7 +213,7 @@ theorem exists_finiteLocallyFree_biprod_iso_restrict_of_isPerfect
 
 [Tag 08EH](https://stacks.math.columbia.edu/tag/08EH) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfect_derivedTensor_lift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean#L245).
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfect_derivedTensor_lift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean#L245).
 
 > Let `X` be an affine scheme and `U ⊆ X` a quasi-compact open. Let `E, E'` be objects of
 > `D_QCoh(𝒪_X)` with `E` perfect. For every morphism `α : E|_U ⟶ E'|_U` there are a perfect object
@@ -244,7 +244,7 @@ theorem exists_isPerfect_derivedTensor_lift_of_isAffine (X : Scheme.{u}) [IsAffi
 
 [Tag 08EI](https://stacks.math.columbia.edu/tag/08EI) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_restrict_iso_biprod_shift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean#L361).
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_restrict_iso_biprod_shift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineLift.lean#L361).
 
 > Let `X` be an affine scheme and `U ⊆ X` a quasi-compact open. For every perfect object `F` of
 > `D(𝒪_U)` the object `F ⊕ F[1]` is the restriction of a perfect object of `D(𝒪_X)`: there is a
@@ -266,7 +266,7 @@ theorem exists_isPerfectComplex_restrict_iso_biprod_shift_of_isAffine (X : Schem
 
 [Tag 08EJ](https://stacks.math.columbia.edu/tag/08EJ) in the Stacks Project.
 
-**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean#L152). The attribute's comment: “on an affine scheme, in D(𝒪\_X); the base case of the induction over the quasi-compact opens that gives the quasi-compact quasi-separated case”.
+**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean#L152). The attribute's comment: “on an affine scheme, in D(𝒪\_X); the base case of the induction over the quasi-compact opens that gives the quasi-compact quasi-separated case”.
 
 > **[Stacks, Tag 08EJ] on an affine scheme.** Let `R` be a commutative ring, let `f : R` and
 > let `X = Spec R`. Let `α : E ⟶ E'` be a morphism of `D_QCoh(𝒪_X)` such that `E` is perfect and
@@ -299,7 +299,7 @@ theorem exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn (f : R)
     ∃ k : ℕ, f ^ k • α = 0
 ```
 
-**`Stacks.DerivedQCoh.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PowerTorsionAffineOpen.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PowerTorsionAffineOpen.lean#L215). The attribute's comment: “on a quasi-compact quasi-separated scheme, the statement in full”.
+**`Stacks.DerivedQCoh.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PowerTorsionAffineOpen.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PowerTorsionAffineOpen.lean#L215). The attribute's comment: “on a quasi-compact quasi-separated scheme, the statement in full”.
 
 > Let `X` be a quasi-compact quasi-separated scheme and let
 > `f ∈ Γ(X, 𝒪_X)`. Let `E` and `E'` be objects of `D_QCoh(𝒪_X)` with `E` perfect and `E'`
@@ -317,7 +317,7 @@ public theorem exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn {X 
     ∃ n : ℕ, globalScalar X.ringCatSheaf f ^ n • α = 0
 ```
 
-**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/QcqsPowerTorsion.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/QcqsPowerTorsion.lean#L412).
+**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/QcqsPowerTorsion.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/QcqsPowerTorsion.lean#L412).
 
 > **[Stacks, Tag 08EJ].** Let `X` be a quasi-compact quasi-separated scheme and let
 > `f ∈ Γ(X, 𝒪_X)`. Let `α : E ⟶ E'` be a morphism of `D_QCoh(𝒪_X)` such that `E` is perfect and
@@ -345,7 +345,7 @@ theorem exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn_qcqs {X : 
     ∃ k : ℕ, f ^ k • α = 0
 ```
 
-**`StacksDraft.Perfect.exists_pow_smul_eq_zero_of_isPerfect_of_support_subset_zeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/PowerTorsionTarget.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/PowerTorsionTarget.lean#L182). The attribute's comment: “affine case, in D(A); the geometric form on an affine scheme, and the quasi-compact quasi-separated case, are in the AlgebraicGeometry directory”.
+**`StacksDraft.Perfect.exists_pow_smul_eq_zero_of_isPerfect_of_support_subset_zeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/PowerTorsionTarget.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/PowerTorsionTarget.lean#L182). The attribute's comment: “affine case, in D(A); the geometric form on an affine scheme, and the quasi-compact quasi-separated case, are in the AlgebraicGeometry directory”.
 
 > Let `A` be a commutative ring and let `f : A`. Let `α : E ⟶ E'` be a morphism in `D(A)` such
 > that `E` is perfect and `E'` is supported on `T = V(f)`, that is, every cohomology module of `E'`
@@ -364,7 +364,7 @@ public theorem exists_pow_smul_eq_zero_of_isPerfect_of_support_subset_zeroLocus 
 
 [Tag 08EK](https://stacks.math.columbia.edu/tag/08EK) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_supported_restrict_iso_biprod_shift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineSupportedLift.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineSupportedLift.lean#L44).
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_supported_restrict_iso_biprod_shift_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineSupportedLift.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/AffineSupportedLift.lean#L44).
 
 > Let `X` be an affine scheme, `T ⊆ X` a closed subset with
 > `X ∖ T` quasi-compact and `U ⊆ X` a quasi-compact open. For every perfect object `F` of
@@ -393,7 +393,7 @@ theorem exists_isPerfectComplex_supported_restrict_iso_biprod_shift_of_isAffine
 
 [Tag 09IM](https://stacks.math.columbia.edu/tag/09IM) in the Stacks Project.
 
-**`Stacks.Perfect.LiftingComplexes.exists_isPerfect_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LiftingComplexes/General.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LiftingComplexes/General.lean#L341).
+**`Stacks.Perfect.LiftingComplexes.exists_isPerfect_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LiftingComplexes/General.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LiftingComplexes/General.lean#L341).
 
 > **[Stacks, Tag 09IM].** Let `X` be a quasi-compact quasi-separated scheme, `U ⊆ X` a
 > quasi-compact open, `T ⊆ X` a closed subset whose complement is retrocompact in `X`, and `E` an
@@ -427,7 +427,7 @@ theorem exists_isPerfect_lift {X : Scheme.{u}} [CompactSpace X] [QuasiSeparatedS
 
 [Tag 09IN](https://stacks.math.columbia.edu/tag/09IN) in the Stacks Project.
 
-**`Stacks.Perfect.SupportedLiftDegree.exists_isPerfect_supported_hom_biprod_sumShifts_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportedLiftDegree.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportedLiftDegree.lean#L204). The attribute's comment: “The complement of `P` in `R|_U` is a finite biproduct of positive shifts of `P`, and for every degree `n` the construction can be iterated so that the complement has vanishing cohomology in all degrees `≥ n`, which is the agreement of the cohomology sheaves of `R|_U` and of `P` above `n`.”.
+**`Stacks.Perfect.SupportedLiftDegree.exists_isPerfect_supported_hom_biprod_sumShifts_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportedLiftDegree.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SupportedLiftDegree.lean#L204). The attribute's comment: “The complement of `P` in `R|_U` is a finite biproduct of positive shifts of `P`, and for every degree `n` the construction can be iterated so that the complement has vanishing cohomology in all degrees `≥ n`, which is the agreement of the cohomology sheaves of `R|_U` and of `P` above `n`.”.
 
 > **[Stacks, Tag 09IN].** Let `X` be a quasi-compact quasi-separated scheme, `U ⊆ X` a
 > quasi-compact open, `T ⊆ X` closed with `X ∖ T` retrocompact, and `E` an object of `D(𝒪_X)` with
@@ -495,4 +495,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.13, Tag 08EC](https://stacks.math.columbia.edu/tag/08EC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Bayes estimators for squared and absolute loss
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html).
 
 ## Posterior means for squared loss
 
@@ -17,7 +17,7 @@ proof: formalized
 The squared loss of predicting $y \in \mathbb{R}$ when the true value is
 $\theta \in \mathbb{R}$ is $(\theta - y)^2$, regarded as an element of $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.sqLoss`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#sq-loss).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.sqLoss`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#sq-loss).
 
 ## The mean minimizes the expected squared loss
 
@@ -32,7 +32,7 @@ where both integrals are taken in $[0, \infty]$.
 When the right side is infinite the inequality is trivial; otherwise $\nu$ has a second moment and
 the variance decomposition applies.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.lintegral_sqLoss_integral_le`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#lintegral-sq-loss-integral-le).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.lintegral_sqLoss_integral_le`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#lintegral-sq-loss-integral-le).
 
 ## Posterior mean
 
@@ -43,7 +43,7 @@ $\mathcal{X}$ sending $x$ to $\int \theta \, d(P^\dagger\pi)(x)(\theta)$, the me
 distribution given the observation $x$ (taken to be $0$ when that distribution has no finite
 first moment).
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.posteriorMean`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#posterior-mean).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.posteriorMean`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#posterior-mean).
 
 ## Measurable versions of the posterior mean
 
@@ -56,7 +56,7 @@ of the posterior mean if $f$ is measurable and $f(x) = \int \theta \, d(P^\dagge
 every $x$ with respect to the marginal distribution of the data, the measure
 $A \mapsto \int P_\theta(A) \, d\pi(\theta)$ on $\mathcal{X}$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMean`, a structure declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-posterior-mean).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMean`, a structure declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-posterior-mean).
 
 ## The posterior mean is a Bayes estimator for squared loss
 
@@ -70,14 +70,14 @@ $\int \int (\theta - f(x))^2 \, dP_\theta(x) \, d\pi(\theta)$ equals the Bayes r
 of the average risks of all Markov kernels from $\mathcal{X}$ to $\mathbb{R}$, where risks take
 values in $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMean.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-bayes-estimator).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMean.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-bayes-estimator).
 
 ## Absolute loss
 
 The absolute loss of predicting $y \in \mathbb{R}$ when the true value is
 $\theta \in \mathbb{R}$ is $|\theta - y|$, regarded as an element of $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.absLoss`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#abs-loss).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.absLoss`, a definition declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#abs-loss).
 
 ## The expected absolute loss is minimized at every median
 
@@ -88,7 +88,7 @@ $$\int |\theta - m| \, d\nu(\theta) \le \int |\theta - y| \, d\nu(\theta),$$
 
 where both integrals are taken in $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.lintegral_absLoss_le_of_isMedian`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#lintegral-abs-loss-le-of-is-median).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.lintegral_absLoss_le_of_isMedian`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#lintegral-abs-loss-le-of-is-median).
 
 ## Measurable choices of posterior medians
 
@@ -100,7 +100,7 @@ medians if $f$ is measurable and, for almost every $x$ with respect to the margi
 $A \mapsto \int P_\theta(A) \, d\pi(\theta)$ of the data, $f(x)$ is a median of the posterior
 distribution $(P^\dagger\pi)(x)$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMedian`, a structure declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-posterior-median).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMedian`, a structure declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-posterior-median).
 
 ## A posterior median is a Bayes estimator for absolute loss
 
@@ -114,7 +114,7 @@ $\int \int |\theta - f(x)| \, dP_\theta(x) \, d\pi(\theta)$ equals the Bayes ris
 of the average risks of all Markov kernels from $\mathcal{X}$ to $\mathbb{R}$, where risks take
 values in $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMedian.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-bayes-estimator-2).
+Formalized by `Cslib.MachineLearning.OptimalPredictors.IsPosteriorMedian.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Regression/OptimalPredictors.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Regression/OptimalPredictors.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html#is-bayes-estimator-2).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bayes estimators for squared and absolute loss](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-estimators-for-squared-and-absolute-loss)

@@ -1,37 +1,47 @@
 ---
 declaration: section
 origin: cited
-lean: Deformation.Artin.FormalObject.IsVersal, Deformation.Artin.hatX, Deformation.Artin.IsVersalAt, Deformation.Artin.isVersalAt_iff_isVersal, Deformation.Artin.smoothAt_iff_isVersalAt, Deformation.Artin.isSmooth_mapPredeformationCategory_of_isVersalAt, Deformation.Artin.BaseChange.isSmoothAt_baseChange_of_isVersalAt, Deformation.Artin.exists_finiteType_versal_approximation
+lean: Deformation.Artin.FormalObject.IsVersalOverScheme, Deformation.Artin.hatX, Deformation.Artin.IsVersalAt, Deformation.Artin.isVersalAt_iff_isVersal, Deformation.Artin.smoothAt_iff_isVersalAt, Deformation.Artin.isSmooth_mapPredeformationCategory_of_isVersalAt, Deformation.Artin.BaseChange.isSmoothAt_baseChange_of_isVersalAt, Deformation.Artin.exists_finiteType_versal_approximation
 statement: formalized
 proof: formalized
 ---
 
 # 98.12 Versality
 
-Section 98.12 of the Stacks Project, [Tag 07XD](https://stacks.math.columbia.edu/tag/07XD). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.12 of the Stacks Project, [Tag 07XD](https://stacks.math.columbia.edu/tag/07XD). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CXJ, a definition
 
 [Tag 0CXJ](https://stacks.math.columbia.edu/tag/0CXJ) in the Stacks Project.
 
-**`Deformation.Artin.FormalObject.IsVersal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Versal.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Versal.lean#L124).
+**`Deformation.Artin.FormalObject.IsVersalOverScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Versal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/Versal.lean#L164). The attribute's comment: “versal for one, equivalently every, affine open `Spec Λ ⊆ S` through which the closed point factors; the independence is `FormalObject.isVersal_iff_of_isOpenImmersion`”.
 
-> A formal object `ξ` of a category fibred in groupoids over the big fppf site of `S` is
-> versal, relative to a ring `Λ` through which the structure morphism of its complete local base
-> factors, when the formal object of the predeformation category of its closed fibre determined
-> by `ξ` is versal.
+> **Stacks 0CXJ.** A formal object `ξ = (R, ξ_n, f_n)` of a category fibred in groupoids over
+> the big fppf site of `S`, with `k = R / 𝔪` and `x₀ = ξ_0`, is *versal* when `ξ`, read as a
+> formal object of the predeformation category `𝓕_{𝒳,k,x₀}` (**Stacks 0CXH**), is versal in the
+> sense of **Stacks 06HR**.
+>
+> The predeformation category is built over `𝒞_Λ` for an affine open `Spec Λ ⊆ S` through which
+> `Spec k ⟶ S` factors (**Stacks 07T2**): here `iΛ : Spec Λ ⟶ S` is an open immersion and the
+> `Λ`-algebra structure of `R` is the one factoring the structure morphism of `ξ` through
+> `Spec Λ` (it exists and is unique, `Spec R` being local and `iΛ` a monomorphism). The
+> definition asks for one such affine open; by
+> `Deformation.Artin.FormalObject.isVersal_iff_of_isOpenImmersion` the answer is the same for
+> every one of them, which is the independence of the choice noted in **Stacks 07T2**, and
+> `Deformation.Artin.FormalObject.isVersalOverScheme_iff_forall` restates it with all affine
+> opens. In particular it is the same for the affine opens with `Λ → k` finite that
+> **Stacks 07T2** picks.
 
 ```lean
-def FormalObject.IsVersal (hp : p.IsFiberedInGroupoids) (ξ : FormalObject B S hS p)
-    (Λ : Type u) [CommRing Λ] [Algebra Λ ξ.base.R] (iΛ : Spec (.of Λ) ⟶ S)
-    (hR : Spec.map (CommRingCat.ofHom (algebraMap Λ ξ.base.R)) ≫ iΛ = ξ.base.toS) : Prop
+def FormalObject.IsVersalOverScheme (hp : p.IsFiberedInGroupoids)
+    (ξ : FormalObject B S hS p) : Prop
 ```
 
 ## Tag 07XE, an equation
 
 [Tag 07XE](https://stacks.math.columbia.edu/tag/07XE) in the Stacks Project.
 
-**`Deformation.Artin.hatX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality.lean#L214).
+**`Deformation.Artin.hatX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality.lean#L214).
 
 > The map `\hat x : 𝓕_{(Sch/U)_{fppf},k,u₀} ⟶ 𝓕_{𝓧,k,x₀}` over
 > `𝒞_Λ`, for the 2-Yoneda functor associated to the given object over `U`.
@@ -46,7 +56,7 @@ public noncomputable def hatX
 
 [Tag 07XF](https://stacks.math.columbia.edu/tag/07XF) in the Stacks Project.
 
-**`Deformation.Artin.IsVersalAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality.lean#L108).
+**`Deformation.Artin.IsVersalAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality.lean#L108).
 
 > An object `x` over `U` is versal at `u₀` if the induced map of predeformation categories is
 > smooth: for a surjection `B ⟶ A` of Artinian local algebras, an arrow `y ⟶ z` over
@@ -62,7 +72,7 @@ public noncomputable abbrev IsVersalAt
 
 [Tag 0CXK](https://stacks.math.columbia.edu/tag/0CXK) in the Stacks Project.
 
-**`Deformation.Artin.isVersalAt_iff_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FormalObjectVersal/VersalityCriterion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/FormalObjectVersal/VersalityCriterion.lean#L293).
+**`Deformation.Artin.isVersalAt_iff_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FormalObjectVersal/VersalityCriterion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/FormalObjectVersal/VersalityCriterion.lean#L293).
 
 > With the notation of **Stacks 07XF**, let `R` be the completed local ring of `U` at a finite
 > type point `u₀`, presented by a ring equivalence `e`, and let `ξ` be the formal object attached
@@ -111,7 +121,7 @@ public theorem isVersalAt_iff_isVersal
 
 [Tag 0CXL](https://stacks.math.columbia.edu/tag/0CXL) in the Stacks Project.
 
-**`Deformation.Artin.smoothAt_iff_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/Versality.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/Versality.lean#L214).
+**`Deformation.Artin.smoothAt_iff_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/Versality.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/Versality.lean#L214).
 
 > Smoothness at a finite-type point is equivalent to versality of the
 > corresponding object of the slice fibred over schemes over `S`.
@@ -132,7 +142,7 @@ public theorem smoothAt_iff_isVersalAt
 
 [Tag 07XG](https://stacks.math.columbia.edu/tag/07XG) in the Stacks Project.
 
-**`Deformation.Artin.isSmooth_mapPredeformationCategory_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FiniteResidueFieldExtension/Smoothness.lean, line 1235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/FiniteResidueFieldExtension/Smoothness.lean#L1235).
+**`Deformation.Artin.isSmooth_mapPredeformationCategory_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FiniteResidueFieldExtension/Smoothness.lean, line 1229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/FiniteResidueFieldExtension/Smoothness.lean#L1229).
 
 > **Stacks 07XG.** Let `𝒳` be a category fibred in groupoids over the big fppf site of a
 > locally Noetherian scheme `S`, let `x` be an object of `𝒳` over a scheme `U` locally of
@@ -169,7 +179,7 @@ public theorem isSmooth_mapPredeformationCategory_of_isVersalAt
 
 [Tag 0CXM](https://stacks.math.columbia.edu/tag/0CXM) in the Stacks Project.
 
-**`Deformation.Artin.BaseChange.isSmoothAt_baseChange_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/VersalBaseChange/Smoothness.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/VersalBaseChange/Smoothness.lean#L268).
+**`Deformation.Artin.BaseChange.isSmoothAt_baseChange_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/VersalBaseChange/Smoothness.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/VersalBaseChange/Smoothness.lean#L268).
 
 > **Stacks 0CXM.** Let `𝒳` be a category fibred in groupoids over the big fppf site of a
 > locally Noetherian scheme `S`, let `x` be an object of `𝒳` over a scheme `U` locally of finite
@@ -237,7 +247,7 @@ public theorem isSmoothAt_baseChange_of_isVersalAt
 
 [Tag 07XH](https://stacks.math.columbia.edu/tag/07XH) in the Stacks Project.
 
-**`Deformation.Artin.exists_finiteType_versal_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FormalObjectApproximation/StalkBaseVersality.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/FormalObjectApproximation/StalkBaseVersality.lean#L905). The attribute's comment: “the whole statement, unconditionally: Stacks 07QZ — Artin approximation over a G-ring — is proved in this library, so the Stacks 07XB that this uses is itself unconditional”.
+**`Deformation.Artin.exists_finiteType_versal_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/FormalObjectApproximation/StalkBaseVersality.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/FormalObjectApproximation/StalkBaseVersality.lean#L905). The attribute's comment: “the whole statement, unconditionally: Stacks 07QZ — Artin approximation over a G-ring — is proved in this library, so the Stacks 07XB that this uses is itself unconditional”.
 
 > An effective versal formal object over a locally Noetherian base whose local ring at the
 > image point is a G-ring is the system of infinitesimal restrictions of an object over a
@@ -275,10 +285,10 @@ public theorem exists_finiteType_versal_approximation
        letI : IsLocalRing ξ.base.R := ξ.base.localRing
        Nonempty (U.left.residueField u₀ ≃+* ResidueField ξ.base.R)) ∧
       Deformation.Artin.IsVersalAt U (𝒳.val.p ⋙ Over.post B.inclusion) u₀ x.1 hx ∧
-      ∃ (xR : Deformation.Artin.CompleteLocalObjects B S hS 𝒳.val.p)
-        (e : ξ ≅ (Deformation.Artin.approximationFunctor B S hS 𝒳.val.p
-          𝒳.property).obj xR)
-        (r : xR.obj.1 ⟶ x.1)
+      ∃ (xR : Deformation.Artin.CompleteLocalObjects B S hS 𝒳.val.p),
+        Nonempty (ξ ≅ (Deformation.Artin.approximationFunctor B S hS 𝒳.val.p
+          𝒳.property).obj xR) ∧
+      ∃ (r : xR.obj.1 ⟶ x.1)
         (eR : AlgebraicGeometry.Scheme.completedLocalRing U.left u₀ ≃+*
           (Deformation.Artin.chosenBase B S hS 𝒳.val.p xR.obj).R),
         𝒳.val.p.IsCartesian (𝒳.val.p.map r) r ∧
@@ -296,7 +306,7 @@ public theorem exists_finiteType_versal_approximation
 
 [Tag 07XI](https://stacks.math.columbia.edu/tag/07XI) in the Stacks Project.
 
-**`Deformation.Artin.GRingCounterexample.stack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L210). The attribute's comment: “the Example's construction: the functor `F` on the big fppf site of `S = Spec(Λ)`, which is a one-point set on a `T` whose structure morphism factors through `S' = (S ∖ {𝔪}) ⨿ Spec(C)` and empty otherwise, and the category `𝒳 = 𝒮_F` fibred in sets that it defines. The source's three assertions about them are `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, `Deformation.Artin.GRingCounterexample.isEffective_formalObject` and `Deformation.Artin.GRingCounterexample.isVersal_formalObject`, about the formal object `Deformation.Artin.GRingCounterexample.formalObject`; the Example whole -- those assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
+**`Deformation.Artin.GRingCounterexample.stack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L210). The attribute's comment: “the Example's construction: the functor `F` on the big fppf site of `S = Spec(Λ)`, which is a one-point set on a `T` whose structure morphism factors through `S' = (S ∖ {𝔪}) ⨿ Spec(C)` and empty otherwise, and the category `𝒳 = 𝒮_F` fibred in sets that it defines. The source's three assertions about them are `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, `Deformation.Artin.GRingCounterexample.isEffective_formalObject` and `Deformation.Artin.GRingCounterexample.isVersal_formalObject`, about the formal object `Deformation.Artin.GRingCounterexample.formalObject`; the Example whole -- those assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
 
 > **The category `𝒳 = 𝒮_F` fibred in groupoids over the big fppf site of `S`,** built from
 > the functor `F` via the Grothendieck construction of **Stacks 0458**.
@@ -307,7 +317,7 @@ public def stack (m : Ideal Λ) [m.IsMaximal] (C : Type u) [CommRing C] (φ : Λ
     CategoryTheory.CatFiberedInGroupoids (BigFppfOver B (Spec (.of Λ)) hS)
 ```
 
-**`Deformation.Artin.GRingCounterexample.formalObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L367). The attribute's comment: “the formal object `ξ` over `R = Λ_𝔪^∧` whose existence the Example asserts: the complete local base `R` over `S = Spec(Λ)`, the level of `ξ` at each infinitesimal neighbourhood of the closed point of `Spec(R)`, and the transitions. That `ξ` is effective (`Deformation.Artin.FormalObject.IsEffective`, Stacks 07X7) is `Deformation.Artin.GRingCounterexample.isEffective_formalObject`, and that it is versal (`Deformation.Artin.FormalObject.IsVersal`, Stacks 0CXJ) is `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole -- the three assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
+**`Deformation.Artin.GRingCounterexample.formalObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L367). The attribute's comment: “the formal object `ξ` over `R = Λ_𝔪^∧` whose existence the Example asserts: the complete local base `R` over `S = Spec(Λ)`, the level of `ξ` at each infinitesimal neighbourhood of the closed point of `Spec(R)`, and the transitions. That `ξ` is effective (`Deformation.Artin.FormalObject.IsEffective`, Stacks 07X7) is `Deformation.Artin.GRingCounterexample.isEffective_formalObject`, and that it is versal (`Deformation.Artin.FormalObject.IsVersal`, Stacks 0CXJ) is `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole -- the three assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
 
 > **The formal object `ξ` over `R = Λ_𝔪^∧`** of the Example. Each level is the unique point
 > of `F(Spec(R/𝔪_R^{n+1}))`, which is nonempty because the Example's factorization
@@ -323,7 +333,7 @@ public def formalObject (ψ : C →+* completion m)
     Deformation.Artin.FormalObject B (Spec (.of Λ)) hS (stack m C φ B hS).val.p
 ```
 
-**`Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L481). The attribute's comment: “the Example's assertion that `𝒳 = 𝒮_F ⟶ (Sch/S)_{fppf}` is limit preserving on objects. The construction of `F` and `𝒳` is `Deformation.Artin.GRingCounterexample.stack`, and the other two assertions, about the formal object `ξ` over `R = Λ_𝔪^∧`, are `Deformation.Artin.GRingCounterexample.isEffective_formalObject` and `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
+**`Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingCounterexample.lean#L481). The attribute's comment: “the Example's assertion that `𝒳 = 𝒮_F ⟶ (Sch/S)_{fppf}` is limit preserving on objects. The construction of `F` and `𝒳` is `Deformation.Artin.GRingCounterexample.stack`, and the other two assertions, about the formal object `ξ` over `R = Λ_𝔪^∧`, are `Deformation.Artin.GRingCounterexample.isEffective_formalObject` and `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`.”.
 
 > **`𝒳 = 𝒮_F` is limit preserving on objects**, the first of the Example's three assertions
 > about `𝒳`.
@@ -338,7 +348,7 @@ public theorem isLimitPreservingOnObjects_stack [IsNoetherianRing Λ]
         (stack m C φ B hS))
 ```
 
-**`Deformation.Artin.GRingCounterexample.isEffective_formalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleEffective.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleEffective.lean#L116). The attribute's comment: “the Example's assertion that the formal object `ξ` over `R = Λ_𝔪^∧` is effective. The construction of `F`, `𝒳 = 𝒮_F` and `ξ` is in `StacksFrontier.Deformation.Artin.Versality.GRingCounterexample`, limit preservation on objects is `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, and versality is `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole -- these three assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`. NOT covered, and formalized nowhere: the Example's closing step from solvability in the henselization to `Λ_𝔪^h` and `Λ_𝔪` being G-rings, which the Stacks Project itself defers ("insert future reference here"), so there is no statement to formalize against.”.
+**`Deformation.Artin.GRingCounterexample.isEffective_formalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleEffective.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleEffective.lean#L116). The attribute's comment: “the Example's assertion that the formal object `ξ` over `R = Λ_𝔪^∧` is effective. The construction of `F`, `𝒳 = 𝒮_F` and `ξ` is in `StacksFrontier.Deformation.Artin.Versality.GRingCounterexample`, limit preservation on objects is `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, and versality is `Deformation.Artin.GRingCounterexample.isVersal_formalObject`. The Example whole -- these three assertions together with the Example's conditional conclusion, which assumes the conclusion of Stacks 07XH for these `𝒳` rather than any G-ring property -- is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`. NOT covered, and formalized nowhere: the Example's closing step from solvability in the henselization to `Λ_𝔪^h` and `Λ_𝔪` being G-rings, which the Stacks Project itself defers ("insert future reference here"), so there is no statement to formalize against.”.
 
 > **The formal object `ξ` over `R = Λ_𝔪^∧` is effective**, the first of the Example's two
 > assertions about `ξ`.
@@ -349,7 +359,7 @@ public theorem isEffective_formalObject :
       ((stack m C φ B hS).isFiberedInGroupoids) (formalObject m C φ B hS ψ hψ hR)
 ```
 
-**`Deformation.Artin.GRingCounterexample.isVersal_formalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleVersal.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleVersal.lean#L75). The attribute's comment: “the Example's assertion that the formal object `ξ` over `R = Λ_𝔪^∧` is versal, relative to `Λ_𝔪`, through which the structure morphism of `R` factors. The construction of `F`, `𝒳 = 𝒮_F` and `ξ` is in `StacksFrontier.Deformation.Artin.Versality.GRingCounterexample`, limit preservation on objects is `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, and effectivity is `Deformation.Artin.GRingCounterexample.isEffective_formalObject`. Versality relative to the local ring of `S` at `𝔪`, which is the form Stacks 07XH consumes, is `Deformation.Artin.GRingCounterexample.isVersal_formalObject_stalk`, and the Example whole is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`. NOT covered, and formalized nowhere: the Example's closing step from solvability in the henselization to `Λ_𝔪^h` and `Λ_𝔪` being G-rings, which the Stacks Project itself defers ("insert future reference here"), so there is no statement to formalize against.”.
+**`Deformation.Artin.GRingCounterexample.isVersal_formalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleVersal.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingCounterexampleVersal.lean#L75). The attribute's comment: “the Example's assertion that the formal object `ξ` over `R = Λ_𝔪^∧` is versal, relative to `Λ_𝔪`, through which the structure morphism of `R` factors. The construction of `F`, `𝒳 = 𝒮_F` and `ξ` is in `StacksFrontier.Deformation.Artin.Versality.GRingCounterexample`, limit preservation on objects is `Deformation.Artin.GRingCounterexample.isLimitPreservingOnObjects_stack`, and effectivity is `Deformation.Artin.GRingCounterexample.isEffective_formalObject`. Versality relative to the local ring of `S` at `𝔪`, which is the form Stacks 07XH consumes, is `Deformation.Artin.GRingCounterexample.isVersal_formalObject_stalk`, and the Example whole is `Deformation.Artin.GRingCounterexample.exists_algHom_henselian`. NOT covered, and formalized nowhere: the Example's closing step from solvability in the henselization to `Λ_𝔪^h` and `Λ_𝔪` being G-rings, which the Stacks Project itself defers ("insert future reference here"), so there is no statement to formalize against.”.
 
 > **The formal object `ξ` over `R = Λ_𝔪^∧` is versal**, the last of the Example's three
 > assertions about `𝒳 = 𝒮_F`. Versality is relative to `Λ_𝔪`, through which the structure morphism
@@ -362,7 +372,7 @@ public theorem isVersal_formalObject :
       (Localization.AtPrime m) (localChart m) (base_toS_eq m C φ B hS ψ hψ hR)
 ```
 
-**`Deformation.Artin.GRingCounterexample.exists_algHom_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingExample.lean, line 844](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingExample.lean#L844). The attribute's comment: “the Example whole, in the Example's own logical direction: the functor `F` on the big fppf site of `S = Spec(Λ)` (`Deformation.Artin.GRingCounterexample.functor`, whose displayed defining property -- a one-point set on a `T` whose structure morphism factors through `S' = (S ∖ {𝔪}) ⨿ Spec(C)`, empty otherwise -- is the first conjunct below), the category `𝒳 = 𝒮_F` fibred in sets it defines (`Deformation.Artin.GRingCounterexample.stack`), the formal object `ξ` over `R = Λ_𝔪^∧` (`Deformation.Artin.GRingCounterexample.formalObject`), the source's three assertions about them -- limit preservation on objects, effectivity and versality of `ξ` -- and the Example's conditional conclusion: IF the conclusion of Stacks 07XH holds for all these `𝒳`, i.e. if every finite type factorization `Λ → C' → R` carries the three-item datum the Example reads off it (`Deformation.Artin.AlgebraizesFiniteTypeFactorizations`: a finite type `Λ`-algebra `A`, a maximal ideal `𝔪_A` over `𝔪` with `κ(𝔪) = κ(𝔪_A)` and condition (4) of Stacks 02HT, and a `Λ`-algebra map `C' → A`), THEN `C` maps over `Λ` to every henselian local `Λ`-algebra whose maximal ideal contracts to `𝔪` and every polynomial system over `Λ` with a solution in `R` has a solution in a henselization of `Λ_𝔪` -- the approximation property for `Λ_𝔪^h`, which is the source's closing sentence. The G-ring property is NOT hypothesised anywhere here: in the Example it is the *conclusion* drawn from that approximation property (\"In this example we show that the local ring `O_{S, s}` has to be a G-ring in order for the result of Lemma 07XH to be true\"), and the conclusion of 07XH is assumed, in the antecedent, rather than derived from a G-ring assumption. NOT covered: the source's final step, from the approximation property of `Λ_𝔪^h` to `Λ_𝔪^h` and then `Λ_𝔪` being G-rings, which the Stacks Project itself defers (\"insert future reference here\"), so there is no statement to formalize against.”.
+**`Deformation.Artin.GRingCounterexample.exists_algHom_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingExample.lean, line 844](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingExample.lean#L844). The attribute's comment: “the Example whole, in the Example's own logical direction: the functor `F` on the big fppf site of `S = Spec(Λ)` (`Deformation.Artin.GRingCounterexample.functor`, whose displayed defining property -- a one-point set on a `T` whose structure morphism factors through `S' = (S ∖ {𝔪}) ⨿ Spec(C)`, empty otherwise -- is the first conjunct below), the category `𝒳 = 𝒮_F` fibred in sets it defines (`Deformation.Artin.GRingCounterexample.stack`), the formal object `ξ` over `R = Λ_𝔪^∧` (`Deformation.Artin.GRingCounterexample.formalObject`), the source's three assertions about them -- limit preservation on objects, effectivity and versality of `ξ` -- and the Example's conditional conclusion: IF the conclusion of Stacks 07XH holds for all these `𝒳`, i.e. if every finite type factorization `Λ → C' → R` carries the three-item datum the Example reads off it (`Deformation.Artin.AlgebraizesFiniteTypeFactorizations`: a finite type `Λ`-algebra `A`, a maximal ideal `𝔪_A` over `𝔪` with `κ(𝔪) = κ(𝔪_A)` and condition (4) of Stacks 02HT, and a `Λ`-algebra map `C' → A`), THEN `C` maps over `Λ` to every henselian local `Λ`-algebra whose maximal ideal contracts to `𝔪` and every polynomial system over `Λ` with a solution in `R` has a solution in a henselization of `Λ_𝔪` -- the approximation property for `Λ_𝔪^h`, which is the source's closing sentence. The G-ring property is NOT hypothesised anywhere here: in the Example it is the *conclusion* drawn from that approximation property (\"In this example we show that the local ring `O_{S, s}` has to be a G-ring in order for the result of Lemma 07XH to be true\"), and the conclusion of 07XH is assumed, in the antecedent, rather than derived from a G-ring assumption. NOT covered: the source's final step, from the approximation property of `Λ_𝔪^h` to `Λ_𝔪^h` and then `Λ_𝔪` being G-rings, which the Stacks Project itself defers (\"insert future reference here\"), so there is no statement to formalize against.”.
 
 > Let `Λ` be a Noetherian ring, let `𝔪 ⊂ Λ` be a maximal
 > ideal, let `R = Λ_𝔪^∧`, and let `Λ → C → R` be a factorization with `C` of finite type over
@@ -421,7 +431,7 @@ public theorem exists_algHom_henselian (hφ : RingHom.FiniteType φ) :
               ∃ b : Fin n → H, ∀ j, MvPolynomial.aeval b (f j) = 0)
 ```
 
-**`Deformation.Artin.GRingNecessity.hasApproximationProperty_and_isGRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L87). The attribute's comment: “the approximation property of the henselization `Λ_𝔪^h` and, by Rotthaus' theorem (the reference the source leaves missing), that `Λ_𝔪^h` is a G-ring”.
+**`Deformation.Artin.GRingNecessity.hasApproximationProperty_and_isGRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L87). The attribute's comment: “the approximation property of the henselization `Λ_𝔪^h` and, by Rotthaus' theorem (the reference the source leaves missing), that `Λ_𝔪^h` is a G-ring”.
 
 > **Stacks Example 98.12.8 (Tag 07XI), the approximation property of `Λ_𝔪^h`.** If the
 > conclusion of Lemma 98.12.7 holds for the categories `𝒳 = 𝒮_F` and formal objects `ξ` of the
@@ -441,7 +451,7 @@ theorem hasApproximationProperty_and_isGRing_henselization
     HasApproximationProperty H ∧ IsGRing H
 ```
 
-**`Deformation.Artin.GRingNecessity.isGRing_of_forall_algebraizationConclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L113). The attribute's comment: “the conclusion of the Example: if the conclusion of Lemma 98.12.7 (07XH) holds for every `𝒳 = 𝒮_F` as above, then `Λ_𝔪` is a G-ring; the conclusion of 07XH is `AlgebraizationConclusion`, copied verbatim from the formalization of 07XH”.
+**`Deformation.Artin.GRingNecessity.isGRing_of_forall_algebraizationConclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L113). The attribute's comment: “the conclusion of the Example: if the conclusion of Lemma 98.12.7 (07XH) holds for every `𝒳 = 𝒮_F` as above, then `Λ_𝔪` is a G-ring; the conclusion of 07XH is `AlgebraizationConclusion`, copied verbatim from the formalization of 07XH”.
 
 > **Stacks Example 98.12.8 (Tag 07XI).** Let `Λ` be a Noetherian ring and `𝔪` a maximal ideal
 > of `Λ`. If for every finite type `Λ`-algebra `C` and every `Λ`-algebra map `φ : C → Λ_𝔪^∧` the
@@ -458,7 +468,7 @@ theorem isGRing_of_forall_algebraizationConclusion
     IsGRing (Localization.AtPrime 𝔪)
 ```
 
-**`Deformation.Artin.GRingNecessity.isGRing_of_forall_algebraizationLemmaHolds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L130). The attribute's comment: “with Lemma 98.12.7 assumed in lemma form (for every formal object of `𝒳` satisfying its hypotheses other than the G-ring hypothesis): `Λ_𝔪` is a G-ring”.
+**`Deformation.Artin.GRingNecessity.isGRing_of_forall_algebraizationLemmaHolds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingNecessity.lean#L130). The attribute's comment: “with Lemma 98.12.7 assumed in lemma form (for every formal object of `𝒳` satisfying its hypotheses other than the G-ring hypothesis): `Λ_𝔪` is a G-ring”.
 
 > **Stacks Example 98.12.8 (Tag 07XI), with Lemma 98.12.7 assumed in lemma form.** If for
 > every finite type `Λ`-algebra `C` the statement of Lemma 98.12.7 (Tag 07XH) without its G-ring
@@ -472,7 +482,7 @@ theorem isGRing_of_forall_algebraizationLemmaHolds
     IsGRing (Localization.AtPrime 𝔪)
 ```
 
-**`Deformation.Artin.GRingNecessity.exists_lift_smallExtension_of_algebraizationConclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Datum.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Datum.lean#L147). The attribute's comment: “the datum read off the conclusion of 07XH: `A` of finite type, `𝔪_A` over `𝔪` with `κ(𝔪) = κ(𝔪_A)`, condition (4) of 02HT for `Λ → A` at `𝔪_A`, and `C → A`”.
+**`Deformation.Artin.GRingNecessity.exists_lift_smallExtension_of_algebraizationConclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Datum.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Datum.lean#L147). The attribute's comment: “the datum read off the conclusion of 07XH: `A` of finite type, `𝔪_A` over `𝔪` with `κ(𝔪) = κ(𝔪_A)`, condition (4) of 02HT for `Λ → A` at `𝔪_A`, and `C → A`”.
 
 > **Stacks Example 98.12.8, from the conclusion of Stacks 07XH to the datum.** Let `C` be a
 > finite type `Λ`-algebra (as in the source; the proof does not use this) and `φ : C → Λ_𝔪^∧` a
@@ -499,7 +509,7 @@ theorem exists_lift_smallExtension_of_algebraizationConclusion [Algebra.FiniteTy
         Nonempty (C →ₐ[Λ] A)
 ```
 
-**`Deformation.Artin.GRingNecessity.isLimitPreservingOnObjects_and_formalObject_isEffective_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Hypotheses.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Hypotheses.lean#L60). The attribute's comment: “first assertion of the Example: `𝒳 = 𝒮_F` is limit preserving on objects and has an effective, versal formal object `ξ` over `R = Λ_𝔪^∧`”.
+**`Deformation.Artin.GRingNecessity.isLimitPreservingOnObjects_and_formalObject_isEffective_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Hypotheses.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/GRingNecessity/Hypotheses.lean#L60). The attribute's comment: “first assertion of the Example: `𝒳 = 𝒮_F` is limit preserving on objects and has an effective, versal formal object `ξ` over `R = Λ_𝔪^∧`”.
 
 > **Stacks Example 98.12.8 (Tag 07XI), the properties of `𝒳` and `ξ`.** Let `C` be a finite
 > type `Λ`-algebra and `φ : C → Λ_𝔪^∧` a `Λ`-algebra map. The category `𝒳 = 𝒮_F` fibred in sets
@@ -547,4 +557,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.12, Tag 07XD](https://stacks.math.columbia.edu/tag/07XD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

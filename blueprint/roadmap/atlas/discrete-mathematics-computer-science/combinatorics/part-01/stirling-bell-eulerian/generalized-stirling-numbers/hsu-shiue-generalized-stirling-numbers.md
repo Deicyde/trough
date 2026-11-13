@@ -8,7 +8,7 @@ proof: formalized
 
 # Hsu–Shiue generalized Stirling numbers
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html).
 
 ## Factorization of the generalized Stirling matrix
 
@@ -33,7 +33,7 @@ $(0, \beta, 0)$ (second kind).
 
 - Jiaqiang Pan, “Matrix Decomposition of the Unified Generalized Stirling Numbers and Inversion of the Generalized Factorial Matrices,” Journal of Integer Sequences 15 (2012), Article 12.6.6, Theorem `t:Decomposition`, lines 250-256, <https://cs.uwaterloo.ca/journals/JIS/VOL15/Pan/pan19.tex>.
 
-Formalized by `MetaMathlibExt.generalized_stirling_matrix_factorization`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedStirlingMatrixFactorization.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/GeneralizedStirlingMatrixFactorization.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#generalized-stirling-matrix-factorizatio).
+Formalized by `MetaMathlibExt.generalized_stirling_matrix_factorization`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedStirlingMatrixFactorization.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/GeneralizedStirlingMatrixFactorization.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#generalized-stirling-matrix-factorizatio).
 
 ## Generalized falling factorial
 
@@ -42,7 +42,7 @@ $z, \alpha \in K$ the generalized falling factorial with increment $\alpha$ is t
 defined by $(z \mid \alpha)_0 = 1$ and $(z \mid \alpha)_{n+1} = (z \mid \alpha)_n \, (z - n\alpha)$
 for $n \ge 0$, so that $(z \mid \alpha)_n = z (z - \alpha) \cdots (z - (n-1)\alpha)$ for $n \ge 1$.
 
-Formalized by `MetaMathlibExt.generalizedFallingFactorial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#generalized-falling-factorial).
+Formalized by `MetaMathlibExt.generalizedFallingFactorial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#generalized-falling-factorial).
 
 ## Characterization of the Hsu–Shiue generalized Stirling numbers
 
@@ -61,7 +61,7 @@ The last condition is the source recurrence
 $S(n+1, k) = S(n, k-1) + (k\beta - n\alpha + r) S(n, k)$ at the indices $k \ge 1$; the initial
 column and the triangular support fix the remaining values.
 
-Formalized by `MetaMathlibExt.IsHsuShiueFamily`, a definition declared in [MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#is-hsu-shiue-family).
+Formalized by `MetaMathlibExt.IsHsuShiueFamily`, a definition declared in [MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HsuShiueGeneralizedStirlingNumber.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html#is-hsu-shiue-family).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hsu–Shiue generalized Stirling numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/hsu-shiue-generalized-stirling-numbers)

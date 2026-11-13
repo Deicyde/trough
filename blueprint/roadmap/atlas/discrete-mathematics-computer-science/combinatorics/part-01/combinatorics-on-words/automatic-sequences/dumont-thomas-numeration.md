@@ -7,7 +7,7 @@ statement: formalized
 
 # Dumont–Thomas numeration
 
-51 results, 31 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html).
+51 results, 31 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html).
 
 ## Substitutions in the sense of Labbé and Lepšová
 
@@ -22,7 +22,7 @@ finite.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (Preliminaries).
 
-Formalized by `MetaMathlibExt.IsSubstitution`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-substitution).
+Formalized by `MetaMathlibExt.IsSubstitution`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-substitution).
 
 ## Substitutions are non-erasing
 
@@ -33,7 +33,7 @@ Lepšová is non-erasing: $\eta(a)$ is a nonempty word for every letter $a$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2.
 
-Formalized by `MetaMathlibExt.IsSubstitution.isNonErasing`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-non-erasing).
+Formalized by `MetaMathlibExt.IsSubstitution.isNonErasing`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-non-erasing).
 
 ## Admissible sequence
 
@@ -46,7 +46,7 @@ when the word $m_i a_i$ is a prefix of $\eta(a_{i+1})$ for every $i < k$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Definition 3.1 (after Dumont and Thomas).
 
-Formalized by `MetaMathlibExt.IsAdmissibleSequence`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-admissible-sequence).
+Formalized by `MetaMathlibExt.IsAdmissibleSequence`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-admissible-sequence).
 
 ## Admissible sequences starting from a letter
 
@@ -60,7 +60,7 @@ prefix of $\eta(a)$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Definition 3.1.
 
-Formalized by `MetaMathlibExt.IsLetterAdmissibleSequence`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-letter-admissible-sequence).
+Formalized by `MetaMathlibExt.IsLetterAdmissibleSequence`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-letter-admissible-sequence).
 
 ## One-term sequences are admissible
 
@@ -73,7 +73,7 @@ for a sequence with the single index $0$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Definition 3.1.
 
-Formalized by `MetaMathlibExt.isAdmissibleSequence_zero`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-admissible-sequence-zero).
+Formalized by `MetaMathlibExt.isAdmissibleSequence_zero`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-admissible-sequence-zero).
 
 ## Substitution automaton
 
@@ -94,7 +94,7 @@ $\{0, \dots, \max_c |\eta(c)| - 1\}$ are never readable, so the accepted languag
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (the DFAO `𝒜_{η,a}`).
 
-Formalized by `MetaMathlibExt.substitutionAutomaton`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton).
+Formalized by `MetaMathlibExt.substitutionAutomaton`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton).
 
 ## The substitution automaton on the empty word
 
@@ -106,7 +106,7 @@ state $b$ after reading the empty digit word.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2.
 
-Formalized by `MetaMathlibExt.substitutionAutomaton_nil`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-nil).
+Formalized by `MetaMathlibExt.substitutionAutomaton_nil`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-nil).
 
 ## Reading a nonempty digit word
 
@@ -120,7 +120,7 @@ $i \ge |\eta(b)|$, the run on $iw$ is undefined.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2.
 
-Formalized by `MetaMathlibExt.substitutionAutomaton_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-cons).
+Formalized by `MetaMathlibExt.substitutionAutomaton_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-cons).
 
 ## Two runs of the Fibonacci automaton
 
@@ -133,7 +133,7 @@ undefined, so $11$ is rejected.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 and Proposition 9.2 (Fibonacci substitution).
 
-Formalized by `MetaMathlibExt.substitutionAutomaton_fibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-fibonacci-small).
+Formalized by `MetaMathlibExt.substitutionAutomaton_fibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-fibonacci-small).
 
 ## Dumont–Thomas numeration
 
@@ -151,7 +151,7 @@ same properties, then $k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i \le 
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Theorem 3.2 (Dumont and Thomas, Theorem 1.5).
 
-Stated but not proved: `MetaMathlibExt.dumontThomas_numeration` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration).
+Stated but not proved: `MetaMathlibExt.dumontThomas_numeration` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration).
 
 ## Weighted length of an admissible sequence
 
@@ -165,7 +165,7 @@ $\eta^j$ is the $j$-th iterate of $\eta$ and $|w|$ is the length of a word $w$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.3 (Dumont and Thomas, Lemma 1.1).
 
-Stated but not proved: `MetaMathlibExt.admissibleSequence_weightedLength_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#admissible-sequence-weighted-length-lt).
+Stated but not proved: `MetaMathlibExt.admissibleSequence_weightedLength_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#admissible-sequence-weighted-length-lt).
 
 ## Admissible sequences are determined by their weighted length
 
@@ -179,7 +179,7 @@ $(m_i, a_i) = (m'_i, a'_i)$ for every $i \le k$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.4 (Dumont and Thomas, Lemma 1.3).
 
-Stated but not proved: `MetaMathlibExt.letterAdmissibleSequence_eq_of_weightedLength_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#letter-admissible-sequence-eq-of-weighte).
+Stated but not proved: `MetaMathlibExt.letterAdmissibleSequence_eq_of_weightedLength_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#letter-admissible-sequence-eq-of-weighte).
 
 ## Decomposition of a proper prefix of an iterated image
 
@@ -193,7 +193,7 @@ proper prefix of $\eta^{\ell-1}(a')$, and $m = \eta^{\ell-1}(m')\,m''$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.5 (Dumont and Thomas, Lemma 1.4).
 
-Stated but not proved: `MetaMathlibExt.properPrefix_morphIterate_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#proper-prefix-morph-iterate-decompositio).
+Stated but not proved: `MetaMathlibExt.properPrefix_morphIterate_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#proper-prefix-morph-iterate-decompositio).
 
 ## The automaton reads off the letters of an admissible sequence
 
@@ -207,7 +207,7 @@ the lengths of $m_{k-1}, \dots, m_i$ in this order.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.6.
 
-Stated but not proved: `MetaMathlibExt.substitutionAutomaton_admissibleSequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-admissible-sequen).
+Stated but not proved: `MetaMathlibExt.substitutionAutomaton_admissibleSequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#substitution-automaton-admissible-sequen).
 
 ## Accepted digit words come from admissible sequences
 
@@ -221,7 +221,7 @@ sequence $(m_i, a_i)_{0 \le i \le k-1}$ with $|m_i| = v_i$ for every $i < k$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.8.
 
-Stated but not proved: `MetaMathlibExt.exists_letterAdmissibleSequence_of_accepted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#exists-letter-admissible-sequence-of-acc).
+Stated but not proved: `MetaMathlibExt.exists_letterAdmissibleSequence_of_accepted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#exists-letter-admissible-sequence-of-acc).
 
 ## Proper prefixes of iterated images have unique admissible expansions
 
@@ -236,7 +236,7 @@ at every index $i < p$; and $m = \eta^{p-1}(m_{p-1}) \cdots \eta^1(m_1) \eta^0(m
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.9.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_letterAdmissibleSequence_of_properPrefix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#exists-unique-letter-admissible-sequence).
+Stated but not proved: `MetaMathlibExt.existsUnique_letterAdmissibleSequence_of_properPrefix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#exists-unique-letter-admissible-sequence).
 
 ## Letters of an iterated image are read by the automaton
 
@@ -255,7 +255,7 @@ $x$-admissible sequences correspond bijectively to the positions $\ell < |\eta^p
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.11.
 
-Stated but not proved: `MetaMathlibExt.morphIterate_getElem_eq_substitutionAutomaton_tail` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#morph-iterate-get-elem-eq-substitution-a).
+Stated but not proved: `MetaMathlibExt.morphIterate_getElem_eq_substitutionAutomaton_tail` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#morph-iterate-get-elem-eq-substitution-a).
 
 ## Tails are injective and order-preserving
 
@@ -271,7 +271,7 @@ compared as natural numbers.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 3.12.
 
-Stated but not proved: `MetaMathlibExt.tail_injective_and_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#tail-injective-and-strict-mono).
+Stated but not proved: `MetaMathlibExt.tail_injective_and_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#tail-injective-and-strict-mono).
 
 ## Dumont–Thomas numeration for right-infinite periodic points
 
@@ -290,7 +290,7 @@ $k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i < k$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.dumontThomas_numeration_rightPeriodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration-right-periodic).
+Stated but not proved: `MetaMathlibExt.dumontThomas_numeration_rightPeriodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration-right-periodic).
 
 ## Dumont–Thomas numeration for left-infinite periodic points
 
@@ -310,7 +310,7 @@ $k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i < k$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Theorem 4.2.
 
-Stated but not proved: `MetaMathlibExt.dumontThomas_numeration_leftPeriodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration-left-periodic).
+Stated but not proved: `MetaMathlibExt.dumontThomas_numeration_leftPeriodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-numeration-left-periodic).
 
 ## Two-sided periodic points
 
@@ -331,7 +331,7 @@ $\eta(u_{-1})$ and $\eta(u_0)$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2 (periodic points `Per(η)`).
 
-Formalized by `MetaMathlibExt.IsTwoSidedPeriodicPoint`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-two-sided-periodic-point).
+Formalized by `MetaMathlibExt.IsTwoSidedPeriodicPoint`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-two-sided-periodic-point).
 
 ## Periods of two-sided periodic points are positive
 
@@ -343,7 +343,7 @@ periodic point of $\eta$ with period $p$, then $p \ge 1$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 2.
 
-Formalized by `MetaMathlibExt.IsTwoSidedPeriodicPoint.one_le`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#one-le).
+Formalized by `MetaMathlibExt.IsTwoSidedPeriodicPoint.one_le`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#one-le).
 
 ## Two-sided periodic points with growing seed
 
@@ -361,7 +361,7 @@ This is the standing hypothesis of Sections 4 to 9 of the source.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Sections 2 and 4 (two-sided periodic point with growing seed `s = u₋₁|u₀`, and its period).
 
-Formalized by `MetaMathlibExt.IsPeriodicPointWithGrowingSeed`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-periodic-point-with-growing-seed).
+Formalized by `MetaMathlibExt.IsPeriodicPointWithGrowingSeed`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-periodic-point-with-growing-seed).
 
 ## Periodic points with growing seed are two-sided periodic points
 
@@ -375,7 +375,7 @@ $\eta$ with period $p$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4.
 
-Formalized by `MetaMathlibExt.IsPeriodicPointWithGrowingSeed.isTwoSidedPeriodicPoint`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-two-sided-periodic-point-2).
+Formalized by `MetaMathlibExt.IsPeriodicPointWithGrowingSeed.isTwoSidedPeriodicPoint`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-two-sided-periodic-point-2).
 
 ## Dumont–Thomas complement representations
 
@@ -400,7 +400,7 @@ when $N = L_k$) and $w$ is the digit word $1, |m_{k-1}|, \ldots, |m_0|$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of Dumont–Thomas complement numeration systems for `ℤ`).
 
-Formalized by `MetaMathlibExt.IsDumontThomasRep`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep).
+Formalized by `MetaMathlibExt.IsDumontThomasRep`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep).
 
 ## A Dumont–Thomas representation of zero
 
@@ -413,7 +413,7 @@ representation of the integer $0$ with respect to $\eta$, $u$ and $p$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of `rep_u`).
 
-Formalized by `MetaMathlibExt.isDumontThomasRep_zero`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep-zero).
+Formalized by `MetaMathlibExt.isDumontThomasRep_zero`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep-zero).
 
 ## Dumont–Thomas representation of minus one
 
@@ -427,7 +427,7 @@ $u$ or $p$ is needed.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 4 (definition of `rep_u`).
 
-Formalized by `MetaMathlibExt.isDumontThomasRep_neg_one`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep-neg-one).
+Formalized by `MetaMathlibExt.isDumontThomasRep_neg_one`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#is-dumont-thomas-rep-neg-one).
 
 ## Seed automaton
 
@@ -443,7 +443,7 @@ and undefined on every word whose first digit is at least $2$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6 (the automaton `𝒜_{η,s}`).
 
-Formalized by `MetaMathlibExt.seedAutomaton`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton).
+Formalized by `MetaMathlibExt.seedAutomaton`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton).
 
 ## Seed automaton after reading the digit 0
 
@@ -457,7 +457,7 @@ $w$: either both are undefined, or both are the same state.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6, Equation (automata relations).
 
-Formalized by `MetaMathlibExt.seedAutomaton_zero_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-zero-cons).
+Formalized by `MetaMathlibExt.seedAutomaton_zero_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-zero-cons).
 
 ## Seed automaton after reading the digit 1
 
@@ -471,7 +471,7 @@ $w$: either both are undefined, or both are the same state.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6, Equation (automata relations).
 
-Formalized by `MetaMathlibExt.seedAutomaton_one_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-one-cons).
+Formalized by `MetaMathlibExt.seedAutomaton_one_cons`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-one-cons).
 
 ## The seed automaton rejects the empty word
 
@@ -483,7 +483,7 @@ the seed $s = b|a$ does not accept the empty word.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 6.
 
-Formalized by `MetaMathlibExt.seedAutomaton_nil`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-nil).
+Formalized by `MetaMathlibExt.seedAutomaton_nil`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-nil).
 
 ## Digit word along last letters
 
@@ -506,7 +506,7 @@ $W_{\min} = 0^p$ are used.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 7 (the words `W_min` and `W_max`).
 
-Formalized by `MetaMathlibExt.lastLetterDigits`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits).
+Formalized by `MetaMathlibExt.lastLetterDigits`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits).
 
 ## Recurrence for the last-letter digit word
 
@@ -523,7 +523,7 @@ last-letter digit word of $k$ steps from $d$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 7.
 
-Formalized by `MetaMathlibExt.lastLetterDigits_succ_of_getLast?`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits-succ-of-get-last).
+Formalized by `MetaMathlibExt.lastLetterDigits_succ_of_getLast?`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits-succ-of-get-last).
 
 ## Last-letter digit word for the Fibonacci substitution
 
@@ -542,7 +542,7 @@ period $p = 2$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, proof of Proposition 9.2 (`W_max = 01`).
 
-Formalized by `MetaMathlibExt.lastLetterDigits_fibonacci`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits-fibonacci).
+Formalized by `MetaMathlibExt.lastLetterDigits_fibonacci`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#last-letter-digits-fibonacci).
 
 ## The complement radix order
 
@@ -560,7 +560,7 @@ On the words starting with $0$ or $1$ this is the order $\prec$ of the paper.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 8 (definition of the total order `≺`).
 
-Formalized by `MetaMathlibExt.ComplementRadixLT`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#complement-radix-lt).
+Formalized by `MetaMathlibExt.ComplementRadixLT`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#complement-radix-lt).
 
 ## Examples of the complement radix order
 
@@ -573,7 +573,7 @@ $\cdots \prec 111 \prec 10 \prec 1 \prec 0 \prec 00 \prec 01 \prec 000$ given in
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 8 (example after the definition of `≺`).
 
-Formalized by `MetaMathlibExt.complementRadixLT_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#complement-radix-lt-examples).
+Formalized by `MetaMathlibExt.complementRadixLT_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#complement-radix-lt-examples).
 
 ## The Dumont–Thomas image language
 
@@ -591,7 +591,7 @@ with the word $1 W_{\max}$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 8.3 and Theorem 8.4.
 
-Formalized by `MetaMathlibExt.dumontThomasLanguage`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-language).
+Formalized by `MetaMathlibExt.dumontThomasLanguage`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-language).
 
 ## Membership in the Dumont–Thomas image language
 
@@ -608,7 +608,7 @@ from $u_{-1}$.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 8.3.
 
-Formalized by `MetaMathlibExt.mem_dumontThomasLanguage`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 509](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L509). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#mem-dumont-thomas-language).
+Formalized by `MetaMathlibExt.mem_dumontThomasLanguage`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 509](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L509). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#mem-dumont-thomas-language).
 
 ## Quotient and remainder for positive Dumont–Thomas representations
 
@@ -634,7 +634,7 @@ $u$-remainder of $N$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 4.9 (with the `u`-quotient and `u`-remainder of Section 4).
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_quotient_remainder_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-quotient-remainder-pos).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_quotient_remainder_pos` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-quotient-remainder-pos).
 
 ## Quotient and remainder for negative positions
 
@@ -655,7 +655,7 @@ $u$ and $p$; and $(m_i, a_i)_{0 \le i \le p-1}$ is $u_q$-admissible.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 4.9 (with the `u`-quotient and `u`-remainder of Section 4).
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_quotient_remainder_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-quotient-remainder-neg).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_quotient_remainder_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-quotient-remainder-neg).
 
 ## Two-sided periodic points are automatic
 
@@ -671,7 +671,7 @@ is such a representation of $n$ is accepted by $\mathcal{A}_{\eta,s}$ with outpu
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Theorem 6.1.
 
-Stated but not proved: `MetaMathlibExt.seedAutomaton_dumontThomasRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-dumont-thomas-rep).
+Stated but not proved: `MetaMathlibExt.seedAutomaton_dumontThomasRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-dumont-thomas-rep).
 
 ## Neutral words of the seed automaton
 
@@ -690,7 +690,7 @@ output.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 7.1.
 
-Stated but not proved: `MetaMathlibExt.seedAutomaton_neutral_padding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-neutral-padding).
+Stated but not proved: `MetaMathlibExt.seedAutomaton_neutral_padding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#seed-automaton-neutral-padding).
 
 ## The Dumont–Thomas representation is increasing
 
@@ -705,7 +705,7 @@ Then $w \prec w'$ in the complement radix order $\prec$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Proposition 8.2.
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 603](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L603). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-strict-mono).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 603](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L603). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-strict-mono).
 
 ## The image of the Dumont–Thomas complement representation
 
@@ -725,7 +725,7 @@ along last letters with $p$ steps starting from $u_{-1}$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Lemma 8.3.
 
-Stated but not proved: `MetaMathlibExt.range_dumontThomasRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#range-dumont-thomas-rep).
+Stated but not proved: `MetaMathlibExt.range_dumontThomasRep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#range-dumont-thomas-rep).
 
 ## Characterization of Dumont–Thomas complement representations
 
@@ -742,7 +742,7 @@ and $f(0)$ is the one-letter word $0$.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Theorem 8.4.
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_iff_strictMono_range` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-iff-strict-mono-range).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_iff_strictMono_range` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-iff-strict-mono-range).
 
 ## Two's complement value
 
@@ -755,7 +755,7 @@ For a binary word (all digits in $\{0, 1\}$) this is the usual two's complement 
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.1.
 
-Formalized by `MetaMathlibExt.twosComplementValue`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 632](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L632). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#twos-complement-value).
+Formalized by `MetaMathlibExt.twosComplementValue`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 632](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L632). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#twos-complement-value).
 
 ## Two's complement values of small words
 
@@ -767,7 +767,7 @@ and $3$ respectively.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.1 (table of `rep_{2c}`).
 
-Formalized by `MetaMathlibExt.twosComplementValue_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#twos-complement-value-examples).
+Formalized by `MetaMathlibExt.twosComplementValue_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#twos-complement-value-examples).
 
 ## Two's complement as a Dumont–Thomas numeration system
 
@@ -788,7 +788,7 @@ $2$-uniformity, and period $1$ is automatically the least period.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Proposition 9.1.
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_uniform_two_iff_twosComplement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-uniform-two-iff-twos-c).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_uniform_two_iff_twosComplement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-uniform-two-iff-twos-c).
 
 ## Fibonacci complement value
 
@@ -802,7 +802,7 @@ $k \ge 1$, and $0$ when $w$ is empty.
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.2.
 
-Formalized by `MetaMathlibExt.fibonacciComplementValue`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#fibonacci-complement-value).
+Formalized by `MetaMathlibExt.fibonacciComplementValue`, a definition declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#fibonacci-complement-value).
 
 ## Values of small Fibonacci complement words
 
@@ -814,7 +814,7 @@ $2$, respectively.
 
 - Labbé and Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Section 9.2.
 
-Formalized by `MetaMathlibExt.fibonacciComplementValue_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#fibonacci-complement-value-examples).
+Formalized by `MetaMathlibExt.fibonacciComplementValue_examples`, a theorem declared in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#fibonacci-complement-value-examples).
 
 ## Fibonacci complement numeration
 
@@ -833,7 +833,7 @@ Period $2$ is automatically the least period here, since $\varphi(1) = 0$ does n
 
 - Sébastien Labbé and Jana Lepšová, *Dumont-Thomas Complement Numeration Systems for ℤ*, INTEGERS 24 (2024), Article A112, Proposition 9.2.
 
-Stated but not proved: `MetaMathlibExt.dumontThomasRep_fibonacci_iff_fibonacciComplement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-fibonacci-iff-fibonacc).
+Stated but not proved: `MetaMathlibExt.dumontThomasRep_fibonacci_iff_fibonacciComplement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DumontThomasNumerationWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html#dumont-thomas-rep-fibonacci-iff-fibonacc).
 
 ## Depends on
 
@@ -842,4 +842,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dumont–Thomas numeration](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/dumont-thomas-numeration)

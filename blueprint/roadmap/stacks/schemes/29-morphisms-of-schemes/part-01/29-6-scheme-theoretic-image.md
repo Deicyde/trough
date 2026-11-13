@@ -8,7 +8,7 @@ proof: formalized
 
 # 29.6 Scheme theoretic image
 
-Section 29.6 of the Stacks Project, [Tag 01R5](https://stacks.math.columbia.edu/tag/01R5). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 13 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.6 of the Stacks Project, [Tag 01R5](https://stacks.math.columbia.edu/tag/01R5). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 13 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01R6, a lemma
 
@@ -16,13 +16,13 @@ Section 29.6 of the Stacks Project, [Tag 01R5](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L41) (StacksFrontier): “scheme-theoretic image”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L42) (StacksFrontier): “closed inclusion”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.toImage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.toImage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L47) (StacksFrontier): “factorization map”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.toImage_imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.toImage_imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L52) (StacksFrontier): “factorization”. References: EGA I (9.5.1), “factorization clause”; EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.le_ker_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.le_ker_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L55) (StacksFrontier): “minimality of the kernel”.
-- [`AlgebraicGeometry.IsClosedImmersion.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsClosedImmersion.lift#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L56) (StacksFrontier): “minimality map”.
-- [`AlgebraicGeometry.IsClosedImmersion.lift_fac`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsClosedImmersion.lift_fac#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L57) (StacksFrontier): “minimality map commutes”.
+- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L41) (StacksFrontier): “scheme-theoretic image”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L42) (StacksFrontier): “closed inclusion”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.toImage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.toImage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L47) (StacksFrontier): “factorization map”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.toImage_imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.toImage_imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L52) (StacksFrontier): “factorization”. References: EGA I (9.5.1), “factorization clause”; EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.le_ker_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.le_ker_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L55) (StacksFrontier): “minimality of the kernel”.
+- [`AlgebraicGeometry.IsClosedImmersion.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsClosedImmersion.lift#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L56) (StacksFrontier): “minimality map”.
+- [`AlgebraicGeometry.IsClosedImmersion.lift_fac`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsClosedImmersion.lift_fac#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImage.lean#L57) (StacksFrontier): “minimality map commutes”.
 
 ## Tag 01R7, a definition
 
@@ -30,14 +30,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean#L20) (StacksFrontier): “the scheme-theoretic image as a closed subscheme of the target”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean#L22) (StacksFrontier): “its closed immersion into the target”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean#L20) (StacksFrontier): “the scheme-theoretic image as a closed subscheme of the target”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.imageι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.imageι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/SchemeTheoreticImageDefinition.lean#L22) (StacksFrontier): “its closed immersion into the target”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
 
 ## Tag 01R8, a lemma
 
 [Tag 01R8](https://stacks.math.columbia.edu/tag/01R8) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasicoherent_kernel_unitToPushforwardObjUnit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L117). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isQuasicoherent_kernel_unitToPushforwardObjUnit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L117). The attribute's comment: “part (1)”.
 
 > The sheaf of ideals cutting out the image of a quasi-compact morphism is quasi-coherent.
 
@@ -47,7 +47,7 @@ public instance isQuasicoherent_kernel_unitToPushforwardObjUnit
     (kernel (SheafOfModules.unitToPushforwardObjUnit f.toRingCatSheafHom)).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.ker_morphismRestrict_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L129). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.ker_morphismRestrict_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L129). The attribute's comment: “part (3)”.
 
 > Scheme-theoretic images commute with restriction to an open subscheme of the target.
 
@@ -57,7 +57,7 @@ public theorem ker_morphismRestrict_eq_comap
     (f ∣_ U).ker = f.ker.comap U.ι
 ```
 
-**`AlgebraicGeometry.imageMorphismRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L140). The attribute's comment: “part (3): canonical closed subscheme”. References: EGA I (9.5.8).
+**`AlgebraicGeometry.imageMorphismRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L140). The attribute's comment: “part (3): canonical closed subscheme”. References: EGA I (9.5.8).
 
 > The scheme-theoretic image restricted to an open target is canonically the
 > intersection of the original image with that open subscheme.
@@ -68,7 +68,7 @@ public noncomputable def imageMorphismRestrictIso
     (f ∣_ U).image ≅ pullback U.ι f.imageι
 ```
 
-**`AlgebraicGeometry.imageMorphismRestrictIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L148). The attribute's comment: “part (3): compatibility with inclusions”. References: EGA I (9.5.8), “identification over V”.
+**`AlgebraicGeometry.imageMorphismRestrictIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L148). The attribute's comment: “part (3): compatibility with inclusions”. References: EGA I (9.5.8), “identification over V”.
 
 > The canonical identification of restricted images respects their embeddings in `U`.
 
@@ -81,16 +81,16 @@ public theorem imageMorphismRestrictIso_hom_fst
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L49) (StacksFrontier): “part (2): image as a closed subscheme”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
-- [`AlgebraicGeometry.Scheme.Hom.ker_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.ker_apply#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L54) (StacksFrontier): “part (2): its ideal on affine opens”. References: SGA 3 VIIA (1.3), “special case”.
-- [`AlgebraicGeometry.Scheme.Hom.support_ker`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.support_ker#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L56) (StacksFrontier): “part (4): dense underlying image”. References: EGA I (9.5.4), “partial”.
-- [`AlgebraicGeometry.Scheme.instIsDominantToImageOfQuasiCompact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.instIsDominantToImageOfQuasiCompact#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L58) (StacksFrontier): “part (4): dominance”. References: EGA I (9.5.4), “partial”.
+- [`AlgebraicGeometry.Scheme.Hom.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.image#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L49) (StacksFrontier): “part (2): image as a closed subscheme”. References: EGA I (9.5.1); EGA I (9.5.2); EGA I (9.5.3); EGA IV (2.3.2).
+- [`AlgebraicGeometry.Scheme.Hom.ker_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.ker_apply#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L54) (StacksFrontier): “part (2): its ideal on affine opens”. References: SGA 3 VIIA (1.3), “special case”.
+- [`AlgebraicGeometry.Scheme.Hom.support_ker`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.support_ker#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L56) (StacksFrontier): “part (4): dense underlying image”. References: EGA I (9.5.4), “partial”.
+- [`AlgebraicGeometry.Scheme.instIsDominantToImageOfQuasiCompact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.instIsDominantToImageOfQuasiCompact#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageQuasicoherent.lean#L58) (StacksFrontier): “part (4): dominance”. References: EGA I (9.5.4), “partial”.
 
 ## Tag 056A, an example
 
 [Tag 056A](https://stacks.math.columbia.edu/tag/056A) in the Stacks Project.
 
-**`AlgebraicGeometry.ker_SpecMap_eq_ker_SpecMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L51). The attribute's comment: “equal closed subschemes”.
+**`AlgebraicGeometry.ker_SpecMap_eq_ker_SpecMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L51). The attribute's comment: “equal closed subschemes”.
 
 > The scheme-theoretic image of `Spec B ⟶ Spec A` and the closed subscheme
 > `Spec (A ⧸ ker φ)` of `Spec A` are cut out by the same ideal sheaf.
@@ -101,7 +101,7 @@ theorem ker_SpecMap_eq_ker_SpecMap_quotientMk :
       (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk (RingHom.ker φ.hom)))).ker
 ```
 
-**`AlgebraicGeometry.imageSpecMapIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L59).
+**`AlgebraicGeometry.imageSpecMapIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L59).
 
 > The scheme-theoretic image of `Spec B ⟶ Spec A` is `Spec (A ⧸ ker φ)`.
 
@@ -110,7 +110,7 @@ noncomputable def imageSpecMapIso :
     (Spec.map φ).image ≅ Spec (.of (A ⧸ RingHom.ker φ.hom))
 ```
 
-**`AlgebraicGeometry.imageSpecMapIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L70). The attribute's comment: “over Spec A”.
+**`AlgebraicGeometry.imageSpecMapIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageSpecMap.lean#L70). The attribute's comment: “over Spec A”.
 
 > The isomorphism `imageSpecMapIso` lies over `Spec A`.
 
@@ -125,7 +125,7 @@ theorem imageSpecMapIso_hom_comp :
 
 [Tag 02JQ](https://stacks.math.columbia.edu/tag/02JQ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_valuationRing_of_image_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean#L192). The attribute's comment: “valuative diagram”.
+**`AlgebraicGeometry.exists_valuationRing_of_image_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean#L192). The attribute's comment: “valuative diagram”.
 
 > Every point of the scheme-theoretic image of a quasi-compact morphism is reached
 > by a map from a valuation ring whose generic point factors through the source.
@@ -141,7 +141,7 @@ public theorem exists_valuationRing_of_image_point
       h (closedPoint A) = z
 ```
 
-**`AlgebraicGeometry.exists_specializes_of_image_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean#L212). The attribute's comment: “specialization consequence”.
+**`AlgebraicGeometry.exists_specializes_of_image_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/ImageValuativeDiagram.lean#L212). The attribute's comment: “specialization consequence”.
 
 > A point of the scheme-theoretic image is a specialization of a point coming
 > from the source.
@@ -156,7 +156,7 @@ public theorem exists_specializes_of_image_point
 
 [Tag 01R9](https://stacks.math.columbia.edu/tag/01R9) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.imageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L92).
+**`AlgebraicGeometry.Scheme.Hom.imageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L94).
 
 > The morphism of scheme-theoretic images induced by a commutative square: for `x : X ⟶ A`,
 > `y : Y ⟶ B`, `f : X ⟶ Y` and `g : A ⟶ B` with `x ≫ g = f ≫ y`, the closed immersion
@@ -167,7 +167,7 @@ noncomputable def imageMap (x : X ⟶ A) (y : Y ⟶ B) (f : X ⟶ Y) (g : A ⟶ 
     (h : x ≫ g = f ≫ y) : x.image ⟶ y.image
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.imageMap_imageι`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L102).
+**`AlgebraicGeometry.Scheme.Hom.imageMap_imageι`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L104).
 
 > The induced morphism `imageMap x y f g h` followed by the closed immersion `y.imageι` is
 > `x.imageι ≫ g`.
@@ -177,7 +177,7 @@ lemma imageMap_imageι (x : X ⟶ A) (y : Y ⟶ B) (f : X ⟶ Y) (g : A ⟶ B)
     (h : x ≫ g = f ≫ y) : imageMap x y f g h ≫ y.imageι = x.imageι ≫ g
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.toImage_imageMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L109).
+**`AlgebraicGeometry.Scheme.Hom.toImage_imageMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Basic.lean#L111).
 
 > The morphism `x.toImage` followed by the induced morphism `imageMap x y f g h` is
 > `f ≫ y.toImage`.
@@ -191,7 +191,7 @@ lemma toImage_imageMap (x : X ⟶ A) (y : Y ⟶ B) (f : X ⟶ Y) (g : A ⟶ B)
 
 [Tag 056B](https://stacks.math.columbia.edu/tag/056B) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.ker_eq_vanishingIdeal_closure_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Reduced.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Reduced.lean#L48). References: EGA I (9.5.4), “partial”.
+**`AlgebraicGeometry.Scheme.Hom.ker_eq_vanishingIdeal_closure_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Reduced.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SchemeTheoreticImage/Reduced.lean#L48). References: EGA I (9.5.4), “partial”.
 
 > The scheme-theoretic image of a morphism `f : X ⟶ Y` with `X` reduced is the reduced induced
 > closed subscheme structure on the closure of `Set.range f`, that is, the closed subscheme cut out
@@ -206,7 +206,7 @@ theorem ker_eq_vanishingIdeal_closure_range [IsReduced X] (f : X ⟶ Y) :
 
 [Tag 0CNG](https://stacks.math.columbia.edu/tag/0CNG) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_pullback_snd_imageι_comp_of_section`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/SchemeTheoreticImage.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/SchemeTheoreticImage.lean#L70).
+**`AlgebraicGeometry.isIso_pullback_snd_imageι_comp_of_section`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/SchemeTheoreticImage.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/SchemeTheoreticImage.lean#L70).
 
 > **Stacks 0CNG.** The scheme-theoretic image of a section over a retrocompact open subset of
 > the target of a separated morphism is isomorphic to that open subset after base change.
@@ -225,4 +225,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.6, Tag 01R5](https://stacks.math.columbia.edu/tag/01R5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
